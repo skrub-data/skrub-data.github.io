@@ -1,28 +1,29 @@
-Contributing to dirty_cat
+Contributing to skrub
 =========================
 
 First off, thanks for taking the time to contribute!
 
 The following is a set of guidelines for contributing to
-`dirty_cat <https://github.com/dirty-cat/dirty_cat>`__.
+`skrub <https://github.com/skrub-data/skrub>`__.
 
 |
 
 .. contents::
    :local:
+
 |
 
 I don’t want to read the whole thing I just have a question
 ------------------------------------------------------------
 
 We use GitHub Discussions for general chat and Q&As. `Check it
-out! <https://github.com/dirty-cat/dirty_cat/discussions>`__
+out! <https://github.com/skrub-data/skrub/discussions>`__
 
 What should I know before I get started?
 ----------------------------------------
 
 If you want to truly understand what are the incentives behind
-dirty_cat, and if scientific literature doesn’t scare you, we greatly
+skrub, and if scientific literature doesn’t scare you, we greatly
 encourage you to read the two papers `Similarity encoding for learning
 with dirty categorical variables <https://hal.inria.fr/hal-01806175>`__
 and `Encoding high-cardinality string categorical
@@ -38,18 +39,18 @@ Even if we unit-test our code, using the library is the best way to
 discover new bugs and limitations.
 
 If you stumble upon one, please `check if a similar or identical issue already
-exists <https://github.com/dirty-cat/dirty_cat/issues?q=is%3Aissue>`__
+exists <https://github.com/skrub-data/skrub/issues?q=is%3Aissue>`__
 
-- If yes: 
+- If yes:
 
-  - **The issue is still open**: leave the emote :+1: on the original message, 
-    which will let us know there are several users affected by this issue 
-  - **The issue has been closed**: 
+  - **The issue is still open**: leave the emote :+1: on the original message,
+    which will let us know there are several users affected by this issue
+  - **The issue has been closed**:
 
-    - **It has been closed by a merged pull request** (1) update your dirty_cat version, 
+    - **It has been closed by a merged pull request** (1) update your skrub version,
       or (2) the fix has not been released in a version yet
-    - **Otherwise**, there might be a ``wontfix`` label, and / or a reason at the bottom of the conversation 
-- If not, `file a new issue <https://github.com/dirty-cat/dirty_cat/issues/new>`__ (see following section)
+    - **Otherwise**, there might be a ``wontfix`` label, and / or a reason at the bottom of the conversation
+- If not, `file a new issue <https://github.com/skrub-data/skrub/issues/new>`__ (see following section)
 
 How do I submit a (good) bug report?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -63,7 +64,7 @@ additional details to help maintainers easily reproduce the problem:
    situations where the bug should have appeared but didn’t
 -  **Include a snippet of code that reproduces the error**, as it allows
    maintainers to reproduce it in a matter of seconds!
--  **Specify versions** of Python, dirty_cat, and other dependencies
+-  **Specify versions** of Python, skrub, and other dependencies
    which might be linked to the issue (e.g., scikit-learn, numpy,
    pandas, etc.). You can get these versions with ``pip3 freeze``
    (``pip freeze`` for Windows)
@@ -75,14 +76,14 @@ Suggesting enhancements
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 This section will guide you through submitting a new enhancement for
-dirty_cat, whether it is a small fix or a new feature.
+skrub, whether it is a small fix or a new feature.
 
 First, you should `check if the feature has not already been proposed or
-implemented <https://github.com/dirty-cat/dirty_cat/pulls?q=is%3Apr>`__.
+implemented <https://github.com/skrub-data/skrub/pulls?q=is%3Apr>`__.
 
 If not, the next thing you should do, before writing any code, is to
 `submit a new
-issue <https://github.com/dirty-cat/dirty_cat/issues/new>`__ proposing
+issue <https://github.com/skrub-data/skrub/issues/new>`__ proposing
 the change.
 
 How do I submit a (good) enhancement proposal?
@@ -100,9 +101,9 @@ kind of enhancement you’re submitting.
 If the enhancement is validated
 '''''''''''''''''''''''''''''''
 
-Let maintainers know whether : 
+Let maintainers know whether :
 
-- **You will write the code and submit a PR**. 
+- **You will write the code and submit a pull request (PR)**.
   Writing the feature yourself is the fastest way to getting it
   implemented in the library, and we’ll help in that process if guidance
   is needed! To go further, refer to the section *Writing your first Pull Request*.
@@ -114,11 +115,11 @@ Let maintainers know whether :
 If the enhancement is refused
 '''''''''''''''''''''''''''''
 
-There are specific incentives behind dirty_cat. While most enhancement
+There are specific incentives behind skrub. While most enhancement
 ideas are good, they don’t always fit in the context of the library.
 
 If you’d like to implement your idea regardless, we’d be very glad if
-you create a new package that builds on top of dirty_cat! In some cases,
+you create a new package that builds on top of skrub! In some cases,
 we might even feature it on the official repository!
 
 Writing your first Pull Request
@@ -146,30 +147,29 @@ So, first step: create your environment.
 
 For this example, we’ll use conda:
 
-.. code:: commandline
+.. code:: console
 
-   conda create python=3.10 --name dirty_cat
-   conda activate dirty_cat
+   conda create python=3.10 --name skrub
+   conda activate skrub
 
 Secondly, clone the repository (you’ll need to have ``git`` installed -
 it is already on most linux distributions).
 
-.. code:: commandline
+.. code:: console
 
-   git clone https://github.com/dirty-cat/dirty_cat
+   git clone https://github.com/skrub-data/skrub
 
-Next, install the project dependencies. Currently, they are listed in
-``requirements.txt``.
+Next, install the project dependencies. They are listed in ``setup.cfg``.
 
-.. code:: commandline
+.. code:: console
 
-   pip install -r requirements.txt
+   pip install -e .[dev]
 
 Code-formatting and linting is automatically done via
 ```pre-commit`` <https://github.com/pre-commit/pre-commit>`__. You
 install this setup using:
 
-.. code:: commandline
+.. code:: console
 
    pip install pre-commit
    pre-commit install
@@ -179,7 +179,7 @@ ignored by ``git blame`` and IDE integrations. The revisions to be
 ignored are listed in ``.git-blame-ignore-revs``, which can be set in
 your local repository with:
 
-.. code:: commandline
+.. code:: console
 
    git config blame.ignoreRevsFile .git-blame-ignore-revs
 
@@ -189,7 +189,7 @@ Implementation
 While writing your implementation, there are a few specific project
 goals to keep in mind:
 
-- Pure Python code - no binary extensions, Cython, etc 
+- Pure Python code - no binary extensions, Cython, etc
 - Make production-friendly code
 
   - Try to target the broadest range of versions (Python and dependencies)
@@ -197,7 +197,7 @@ goals to keep in mind:
   - Make code as backward compatible as possible
 - Prefer performance to readability
 
-  - Optimized code might be hard to read, so 
+  - Optimized code might be hard to read, so
     `please comment it <https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/>`__
 - Use explicit, borderline verbose variables / function names
 - Public functions / methods / variables / class signatures should be documented
@@ -210,12 +210,19 @@ goals to keep in mind:
 Submitting your code
 ^^^^^^^^^^^^^^^^^^^^
 
-First, you’ll want to fork dirty_cat on Github.
+First, you’ll want to fork skrub on Github.
 
 That will enable you to push your commits to a branch *on your fork*.
+It is advised to create a new branch every time you work on a new issue,
+to avoid confusion.
+Use the following command to create a branch:
+
+.. code:: console
+
+   git checkout -b branch_name
 
 Next, you can use the Github “Compare & pull request” button to submit
-the PR.
+your branch code as a PR.
 
 Integration
 ^^^^^^^^^^^

@@ -1,0 +1,12 @@
+﻿:mod:`skrub.datasets`.get_ken_table_aliases
+========================================================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: get_ken_table_aliases
+
+.. include:: skrub.datasets.get_ken_table_aliases.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_auto_examples_01_dirty_categories.py>`
+        :ref:`Go to the end <sphx_glr_download_auto_examples_01_dirty_categories.py>`
         to download the full example code or to run this example in your browser via Binder
 
 .. rst-class:: sphx-glr-example-title
@@ -18,7 +18,6 @@
 .. _sphx_glr_auto_examples_01_dirty_categories.py:
 
 
-==============================================================
 Dirty categories: machine learning with non normalized strings
 ==============================================================
 
@@ -27,13 +26,13 @@ preparation. In particular categories may appear with many morphological
 variants, when they have been manually input or assembled from diverse
 sources.
 
-Here we look at a dataset on wages [#]_ where the column *Employee
-Position Title* contains dirty categories. On such a column, standard
+Here we look at a dataset on wages [#]_ where the column 'Employee
+Position Title' contains dirty categories. On such a column, standard
 categorical encodings leads to very high dimensions and can lose
 information on which categories are similar.
 
 We investigate various encodings of this dirty column for the machine
-learning workflow, predicting the *current annual salary* with gradient
+learning workflow, predicting the 'Current Annual Salary' with gradient
 boosted trees. First we manually assemble a complex encoder for the full
 dataframe, after which we show a much simpler way, albeit with less fine
 control.
@@ -42,8 +41,8 @@ control.
 .. [#] https://www.openml.org/d/42125
 
 
- .. |SV| replace::
-     :class:`~dirty_cat.SuperVectorizer`
+ .. |TV| replace::
+     :class:`~skrub.TableVectorizer`
 
  .. |Pipeline| replace::
      :class:`~sklearn.pipeline.Pipeline`
@@ -58,25 +57,32 @@ control.
      :class:`~sklearn.ensemble.RandomForestRegressor`
 
  .. |Gap| replace::
-     :class:`~dirty_cat.GapEncoder`
+     :class:`~skrub.GapEncoder`
 
- .. |SE| replace:: :class:`~dirty_cat.SimilarityEncoder`
+ .. |MinHash| replace::
+     :class:`~skrub.MinHashEncoder`
+
+ .. |HGBR| replace::
+     :class:`~sklearn.ensemble.HistGradientBoostingRegressor`
+
+ .. |SE| replace::
+     :class:`~skrub.SimilarityEncoder`
 
  .. |permutation importances| replace::
      :func:`~sklearn.inspection.permutation_importance`
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-55
+.. GENERATED FROM PYTHON SOURCE LINES 57-61
 
 The data
-========
+--------
 
 We first retrieve the dataset:
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-60
+.. GENERATED FROM PYTHON SOURCE LINES 61-65
 
 .. code-block:: default
 
-    from dirty_cat.datasets import fetch_employee_salaries
+    from skrub.datasets import fetch_employee_salaries
 
     employee_salaries = fetch_employee_salaries()
 
@@ -88,17 +94,17 @@ We first retrieve the dataset:
 
  .. code-block:: none
 
-    /home/circleci/project/dirty_cat/datasets/_fetching.py:332: UserWarning: Could not find the dataset 42125 locally. Downloading it from OpenML; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/project/dirty_cat/datasets/data.
-      info = fetch_openml_dataset(dataset_id)
+    /home/circleci/project/skrub/datasets/_fetching.py:588: UserWarning: Could not find the dataset 42125 locally. Downloading it from OpenML; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/project/skrub/datasets/data.
+      info = _fetch_openml_dataset(dataset_id, data_directory)
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-62
+.. GENERATED FROM PYTHON SOURCE LINES 66-67
 
 X, the input data (descriptions of employees):
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-65
+.. GENERATED FROM PYTHON SOURCE LINES 67-70
 
 .. code-block:: default
 
@@ -283,11 +289,11 @@ X, the input data (descriptions of employees):
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-67
+.. GENERATED FROM PYTHON SOURCE LINES 71-72
 
-and y, our target column (the annual salary)
+and y, our target column (the annual salary):
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-70
+.. GENERATED FROM PYTHON SOURCE LINES 72-75
 
 .. code-block:: default
 
@@ -307,22 +313,22 @@ and y, our target column (the annual salary)
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-72
+.. GENERATED FROM PYTHON SOURCE LINES 76-77
 
 Now, let's carry out some basic preprocessing:
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-82
+.. GENERATED FROM PYTHON SOURCE LINES 77-87
 
 .. code-block:: default
 
     import pandas as pd
 
-    X['date_first_hired'] = pd.to_datetime(X['date_first_hired'])
-    X['year_first_hired'] = X['date_first_hired'].apply(lambda x: x.year)
-    # Get a mask of the rows with missing values in "gender"
-    mask = X.isna()['gender']
+    X["date_first_hired"] = pd.to_datetime(X["date_first_hired"])
+    X["year_first_hired"] = X["date_first_hired"].apply(lambda x: x.year)
+    # Get a mask of the rows with missing values in 'gender'
+    mask = X.isna()["gender"]
     # And remove them
-    X.dropna(subset=['gender'], inplace=True)
+    X.dropna(subset=["gender"], inplace=True)
     y = y[~mask]
 
 
@@ -332,32 +338,29 @@ Now, let's carry out some basic preprocessing:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-91
+.. GENERATED FROM PYTHON SOURCE LINES 88-93
 
 Assembling a machine-learning pipeline that encodes the data
-============================================================
-
-The learning pipeline
----------------------
+------------------------------------------------------------
 
 To build a learning pipeline, we need to assemble encoders for each
 column, and apply a supervised learning model on top.
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-99
+.. GENERATED FROM PYTHON SOURCE LINES 95-100
 
 The categorical encoders
 ........................
 
 An encoder is needed to turn a categorical column into a numerical
-representation
+representation:
 
-.. GENERATED FROM PYTHON SOURCE LINES 99-103
+.. GENERATED FROM PYTHON SOURCE LINES 100-104
 
 .. code-block:: default
 
     from sklearn.preprocessing import OneHotEncoder
 
-    one_hot = OneHotEncoder(handle_unknown='ignore', sparse=False)
+    one_hot = OneHotEncoder(handle_unknown="ignore", sparse=False)
 
 
 
@@ -366,13 +369,13 @@ representation
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-107
+.. GENERATED FROM PYTHON SOURCE LINES 105-108
 
 We assemble these to apply them to the relevant columns.
-The ColumnTransformer is created by specifying a set of transformers
-alongside with the column names on which each must be applied
+The |ColumnTransformer| is created by specifying a set of transformers
+alongside with the column names on which each must be applied:
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-118
+.. GENERATED FROM PYTHON SOURCE LINES 108-119
 
 .. code-block:: default
 
@@ -380,12 +383,12 @@ alongside with the column names on which each must be applied
     from sklearn.compose import make_column_transformer
 
     encoder = make_column_transformer(
-        (one_hot, ['gender', 'department_name', 'assignment_category']),
-        ('passthrough', ['year_first_hired']),
+        (one_hot, ["gender", "department_name", "assignment_category"]),
+        ("passthrough", ["year_first_hired"]),
         # Last but not least, our dirty column
-        (one_hot, ['employee_position_title']),
-        remainder='drop',
-       )
+        (one_hot, ["employee_position_title"]),
+        remainder="drop",
+    )
 
 
 
@@ -394,29 +397,26 @@ alongside with the column names on which each must be applied
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 119-126
+.. GENERATED FROM PYTHON SOURCE LINES 120-127
 
 Pipelining an encoder with a learner
 ....................................
 
-We will use a HistGradientBoostingRegressor, which is a good predictor
-for data with heterogeneous columns
+We will use a |HGBR|,
+which is a good predictor for data with heterogeneous columns
 (we need to require the experimental feature for scikit-learn versions
-earlier than 1.0)
+earlier than 1.0):
 
-.. GENERATED FROM PYTHON SOURCE LINES 126-139
+.. GENERATED FROM PYTHON SOURCE LINES 127-137
 
 .. code-block:: default
 
-    import sklearn
-    from sklearn.utils.fixes import parse_version
-    if parse_version(sklearn.__version__) < parse_version("1.0"):
-        from sklearn.experimental import enable_hist_gradient_boosting
-    # We can now import the HGBR from ensemble
+    from sklearn.experimental import enable_hist_gradient_boosting
+
+    # We can now import the |HGBR| from ensemble
     from sklearn.ensemble import HistGradientBoostingRegressor
 
     # We then create a pipeline chaining our encoders to a learner
-
     from sklearn.pipeline import make_pipeline
 
     pipeline = make_pipeline(encoder, HistGradientBoostingRegressor())
@@ -425,14 +425,21 @@ earlier than 1.0)
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/experimental/enable_hist_gradient_boosting.py:16: UserWarning: Since version 1.0, it is not needed to import enable_hist_gradient_boosting anymore. HistGradientBoostingClassifier and HistGradientBoostingRegressor are now stable and can be normally imported from sklearn.ensemble.
+      warnings.warn(
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 140-141
 
-The pipeline can be readily applied to the dataframe for prediction
+.. GENERATED FROM PYTHON SOURCE LINES 138-139
 
-.. GENERATED FROM PYTHON SOURCE LINES 141-143
+The pipeline can be readily applied to the dataframe for prediction:
+
+.. GENERATED FROM PYTHON SOURCE LINES 139-141
 
 .. code-block:: default
 
@@ -441,6 +448,15 @@ The pipeline can be readily applied to the dataframe for prediction
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
 
 
 .. raw:: html
@@ -487,15 +503,15 @@ The pipeline can be readily applied to the dataframe for prediction
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-149
+.. GENERATED FROM PYTHON SOURCE LINES 142-147
 
-Dirty-category encoding
+Dirty category encoding
 -----------------------
 
-The one-hot encoder is actually not well suited to the 'Employee
+The |OneHotEncoder| is actually not well suited to the 'Employee
 Position Title' column, as this column contains 400 different entries:
 
-.. GENERATED FROM PYTHON SOURCE LINES 149-153
+.. GENERATED FROM PYTHON SOURCE LINES 147-151
 
 .. code-block:: default
 
@@ -517,48 +533,47 @@ Position Title' column, as this column contains 400 different entries:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-156
+.. GENERATED FROM PYTHON SOURCE LINES 152-156
+
+.. _example_minhash_encoder:
 
 We will now experiment with encoders specially made for handling
-dirty columns
+dirty columns:
 
-.. GENERATED FROM PYTHON SOURCE LINES 156-168
+.. GENERATED FROM PYTHON SOURCE LINES 156-172
 
 .. code-block:: default
 
 
-    from dirty_cat import (SimilarityEncoder, TargetEncoder,
-                           MinHashEncoder, GapEncoder)
+    from skrub import (
+        SimilarityEncoder,
+        TargetEncoder,
+        MinHashEncoder,
+        GapEncoder,
+    )
 
     encoders = {
-        'one-hot': one_hot,
-        'similarity': SimilarityEncoder(),
-        'target': TargetEncoder(handle_unknown='ignore'),
-        'minhash': MinHashEncoder(n_components=100),
-        'gap': GapEncoder(n_components=100),
+        "one-hot": one_hot,
+        "similarity": SimilarityEncoder(),
+        "target": TargetEncoder(handle_unknown="ignore"),
+        "minhash": MinHashEncoder(n_components=100),
+        "gap": GapEncoder(n_components=100),
     }
 
 
 
 
 
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    /home/circleci/project/examples/01_dirty_categories.py:162: UserWarning: The "similarity" argument is deprecated since dirty_cat 0.3, and will be removed in 0.5.The n-gram similarity is the only one currently supported. 
-      'similarity': SimilarityEncoder(),
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 169-172
+.. GENERATED FROM PYTHON SOURCE LINES 173-176
 
 We now loop over the different encoding methods,
 instantiate a new |Pipeline| each time, fit it
 and store the returned cross-validation score:
 
-.. GENERATED FROM PYTHON SOURCE LINES 172-193
+.. GENERATED FROM PYTHON SOURCE LINES 176-196
 
 .. code-block:: default
 
@@ -569,18 +584,17 @@ and store the returned cross-validation score:
 
     for name, method in encoders.items():
         encoder = make_column_transformer(
-            (one_hot, ['gender', 'department_name', 'assignment_category']),
-            ('passthrough', ['year_first_hired']),
+            (one_hot, ["gender", "department_name", "assignment_category"]),
+            ("passthrough", ["year_first_hired"]),
             # Last but not least, our dirty column
-            (method, ['employee_position_title']),
-            remainder='drop',
+            (method, ["employee_position_title"]),
+            remainder="drop",
         )
 
         pipeline = make_pipeline(encoder, HistGradientBoostingRegressor())
         scores = cross_val_score(pipeline, X, y)
-        print(f'{name} encoding')
-        print(f'r2 score:  mean: {np.mean(scores):.3f}; '
-              f'std: {np.std(scores):.3f}\n')
+        print(f"{name} encoding")
+        print(f"r2 score:  mean: {np.mean(scores):.3f}; std: {np.std(scores):.3f}\n")
         all_scores[name] = scores
 
 
@@ -591,33 +605,93 @@ and store the returned cross-validation score:
 
  .. code-block:: none
 
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
     one-hot encoding
     r2 score:  mean: 0.776; std: 0.028
 
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
     similarity encoding
     r2 score:  mean: 0.923; std: 0.014
 
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
     target encoding
     r2 score:  mean: 0.842; std: 0.030
 
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
     minhash encoding
     r2 score:  mean: 0.919; std: 0.012
 
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+      warnings.warn(
     gap encoding
-    r2 score:  mean: 0.912; std: 0.010
+    r2 score:  mean: 0.923; std: 0.016
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 194-198
+.. GENERATED FROM PYTHON SOURCE LINES 197-201
 
 Plotting the results
 ....................
 
 Finally, we plot the scores on a boxplot:
 
-.. GENERATED FROM PYTHON SOURCE LINES 198-209
+.. GENERATED FROM PYTHON SOURCE LINES 201-212
 
 .. code-block:: default
 
@@ -626,9 +700,9 @@ Finally, we plot the scores on a boxplot:
     import matplotlib.pyplot as plt
 
     plt.figure(figsize=(4, 3))
-    ax = seaborn.boxplot(data=pd.DataFrame(all_scores), orient='h')
-    plt.ylabel('Encoding', size=20)
-    plt.xlabel('Prediction accuracy     ', size=20)
+    ax = seaborn.boxplot(data=pd.DataFrame(all_scores), orient="h")
+    plt.ylabel("Encoding", size=20)
+    plt.xlabel("Prediction accuracy     ", size=20)
     plt.yticks(size=20)
     plt.tight_layout()
 
@@ -644,33 +718,33 @@ Finally, we plot the scores on a boxplot:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 210-221
+.. GENERATED FROM PYTHON SOURCE LINES 213-224
 
-The clear trend is that encoders grasping the similarities in the category
-(similarity, minhash, and gap) perform better than those discarding it.
+The clear trend is that encoders grasping similarities between categories
+(|SE|, |MinHash|, and |Gap|) perform better than those discarding it.
 
-SimilarityEncoder is the best performer, but it is less scalable on big
-data than MinHashEncoder and GapEncoder. The most scalable encoder is
-the MinHashEncoder. GapEncoder, on the other hand, has the benefit that
-it provides interpretable features
-(see :ref:`sphx_glr_auto_examples_03_feature_interpretation_gap_encoder.py`)
+|SE| is the best performer, but it is less scalable on big
+data than the |MinHash| and |Gap|. The most scalable encoder is
+the |MinHash|. On the other hand, the |Gap| has the benefit of
+providing interpretable features
+(see :ref:`sphx_glr_auto_examples_02_investigating_skrubegories.py`)
 
 |
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 223-232
+.. GENERATED FROM PYTHON SOURCE LINES 226-235
 
-.. _example_super_vectorizer:
+.. _example_table_vectorizer:
 
 A simpler way: automatic vectorization
-======================================
+--------------------------------------
 
 The code to assemble a column transformer is a bit tedious. We will
 now explore a simpler, automated, way of encoding the data.
 
 Let's start again from the raw data:
 
-.. GENERATED FROM PYTHON SOURCE LINES 232-236
+.. GENERATED FROM PYTHON SOURCE LINES 235-239
 
 .. code-block:: default
 
@@ -685,16 +759,16 @@ Let's start again from the raw data:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 237-239
+.. GENERATED FROM PYTHON SOURCE LINES 240-242
 
-We'll drop the "date_first_hired" column as it's redundant with
-"year_first_hired".
+We'll drop the 'date_first_hired' column as it's redundant with
+'year_first_hired'.
 
-.. GENERATED FROM PYTHON SOURCE LINES 239-241
+.. GENERATED FROM PYTHON SOURCE LINES 242-244
 
 .. code-block:: default
 
-    X = X.drop(['date_first_hired'], axis=1)
+    X = X.drop(["date_first_hired"], axis=1)
 
 
 
@@ -703,11 +777,11 @@ We'll drop the "date_first_hired" column as it's redundant with
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 242-243
+.. GENERATED FROM PYTHON SOURCE LINES 245-246
 
 We still have a complex and heterogeneous dataframe:
 
-.. GENERATED FROM PYTHON SOURCE LINES 243-245
+.. GENERATED FROM PYTHON SOURCE LINES 246-248
 
 .. code-block:: default
 
@@ -879,33 +953,32 @@ We still have a complex and heterogeneous dataframe:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 246-248
+.. GENERATED FROM PYTHON SOURCE LINES 249-251
 
-The |SV| can to turn this dataframe into a form suited for
+The |TV| can to turn this dataframe into a form suited for
 machine learning.
 
-.. GENERATED FROM PYTHON SOURCE LINES 250-259
+.. GENERATED FROM PYTHON SOURCE LINES 253-262
 
-Using the SuperVectorizer in a supervised-learning pipeline
+Using the TableVectorizer in a supervised-learning pipeline
 -----------------------------------------------------------
 
-Assembling the |SV| in a |Pipeline| with a powerful learner,
+Assembling the |TV| in a |Pipeline| with a powerful learner,
 such as gradient boosted trees, gives **a machine-learning method that
 can be readily applied to the dataframe**.
 
-The |SV| requires at least dirty_cat 0.2.0.
+The |TV| requires at least skrub 0.2.0.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 259-267
+.. GENERATED FROM PYTHON SOURCE LINES 262-269
 
 .. code-block:: default
 
 
-    from dirty_cat import SuperVectorizer
+    from skrub import TableVectorizer
 
     pipeline = make_pipeline(
-        SuperVectorizer(auto_cast=True),
-        HistGradientBoostingRegressor()
+        TableVectorizer(auto_cast=True), HistGradientBoostingRegressor()
     )
 
 
@@ -915,22 +988,22 @@ The |SV| requires at least dirty_cat 0.2.0.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 268-269
+.. GENERATED FROM PYTHON SOURCE LINES 270-271
 
-Let's perform a cross-validation to see how well this model predicts
+Let's perform a cross-validation to see how well this model predicts:
 
-.. GENERATED FROM PYTHON SOURCE LINES 269-278
+.. GENERATED FROM PYTHON SOURCE LINES 271-280
 
 .. code-block:: default
 
 
     from sklearn.model_selection import cross_val_score
 
-    scores = cross_val_score(pipeline, X, y, scoring='r2')
+    scores = cross_val_score(pipeline, X, y, scoring="r2")
 
-    print(f'scores={scores}')
-    print(f'mean={np.mean(scores)}')
-    print(f'std={np.std(scores)}')
+    print(f"scores={scores}")
+    print(f"mean={np.mean(scores)}")
+    print(f"std={np.std(scores)}")
 
 
 
@@ -940,32 +1013,32 @@ Let's perform a cross-validation to see how well this model predicts
 
  .. code-block:: none
 
-    scores=[0.92530138 0.89718821 0.91436626 0.92636118 0.92372986]
-    mean=0.9173893754941037
-    std=0.01095920781498854
+    scores=[0.92493404 0.88970347 0.92748784 0.930803   0.93742519]
+    mean=0.9220707064130632
+    std=0.01671642808963907
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 279-282
+.. GENERATED FROM PYTHON SOURCE LINES 281-284
 
 The prediction performed here is pretty much as good as above
 but the code here is much simpler as it does not involve specifying
 columns manually.
 
-.. GENERATED FROM PYTHON SOURCE LINES 284-289
+.. GENERATED FROM PYTHON SOURCE LINES 286-291
 
 Analyzing the features created
 ------------------------------
 
 Let us perform the same workflow, but without the |Pipeline|, so we can
-analyze the SuperVectorizer's mechanisms along the way.
+analyze the TableVectorizer's mechanisms along the way.
 
-.. GENERATED FROM PYTHON SOURCE LINES 289-291
+.. GENERATED FROM PYTHON SOURCE LINES 291-293
 
 .. code-block:: default
 
-    sup_vec = SuperVectorizer(auto_cast=True)
+    table_vec = TableVectorizer(auto_cast=True)
 
 
 
@@ -974,11 +1047,11 @@ analyze the SuperVectorizer's mechanisms along the way.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 292-293
+.. GENERATED FROM PYTHON SOURCE LINES 294-295
 
 We split the data between train and test, and transform them:
 
-.. GENERATED FROM PYTHON SOURCE LINES 293-302
+.. GENERATED FROM PYTHON SOURCE LINES 295-304
 
 .. code-block:: default
 
@@ -988,8 +1061,8 @@ We split the data between train and test, and transform them:
         X, y, test_size=0.15, random_state=42
     )
 
-    X_train_enc = sup_vec.fit_transform(X_train, y_train)
-    X_test_enc = sup_vec.transform(X_test)
+    X_train_enc = table_vec.fit_transform(X_train, y_train)
+    X_test_enc = table_vec.transform(X_test)
 
 
 
@@ -998,11 +1071,11 @@ We split the data between train and test, and transform them:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 303-304
+.. GENERATED FROM PYTHON SOURCE LINES 305-306
 
 The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
-.. GENERATED FROM PYTHON SOURCE LINES 304-306
+.. GENERATED FROM PYTHON SOURCE LINES 306-308
 
 .. code-block:: default
 
@@ -1018,7 +1091,7 @@ The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
 
     array([[0.00000000e+00, 1.00000000e+00, 0.00000000e+00, ...,
-            1.36159070e-01, 5.68172319e-02, 2.00700000e+03],
+            6.60363754e-02, 5.70383758e-02, 2.00700000e+03],
            [1.00000000e+00, 0.00000000e+00, 0.00000000e+00, ...,
             5.00000000e-02, 5.00000000e-02, 2.00500000e+03],
            [1.00000000e+00, 0.00000000e+00, 0.00000000e+00, ...,
@@ -1033,11 +1106,11 @@ The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 307-308
+.. GENERATED FROM PYTHON SOURCE LINES 309-310
 
 They have more columns than the original dataframe, but not much more:
 
-.. GENERATED FROM PYTHON SOURCE LINES 308-310
+.. GENERATED FROM PYTHON SOURCE LINES 310-312
 
 .. code-block:: default
 
@@ -1056,21 +1129,21 @@ They have more columns than the original dataframe, but not much more:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 311-316
+.. GENERATED FROM PYTHON SOURCE LINES 313-318
 
 Inspecting the features created
 ...............................
 
-The |SV| assigns a transformer for each column. We can inspect this
+The |TV| assigns a transformer for each column. We can inspect this
 choice:
 
-.. GENERATED FROM PYTHON SOURCE LINES 316-320
+.. GENERATED FROM PYTHON SOURCE LINES 318-322
 
 .. code-block:: default
 
     from pprint import pprint
 
-    pprint(sup_vec.transformers_)
+    pprint(table_vec.transformers_)
 
 
 
@@ -1081,7 +1154,7 @@ choice:
  .. code-block:: none
 
     [('low_card_cat',
-      OneHotEncoder(drop='if_binary'),
+      OneHotEncoder(drop='if_binary', handle_unknown='ignore'),
       ['gender', 'department', 'department_name', 'assignment_category']),
      ('high_card_cat',
       GapEncoder(n_components=30),
@@ -1091,11 +1164,11 @@ choice:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 321-334
+.. GENERATED FROM PYTHON SOURCE LINES 323-336
 
 This is what is being passed to the |ColumnTransformer| under the hood.
 If you're familiar with how the latter works, it should be very intuitive.
-We can notice it classified the columns "gender" and "assignment_category"
+We can notice it classified the columns 'gender' and 'assignment_category'
 as low cardinality string variables.
 A |OneHotEncoder| will be applied to these columns.
 
@@ -1107,7 +1180,7 @@ Next, we can have a look at the encoded feature names.
 
 Before encoding:
 
-.. GENERATED FROM PYTHON SOURCE LINES 334-336
+.. GENERATED FROM PYTHON SOURCE LINES 336-338
 
 .. code-block:: default
 
@@ -1126,15 +1199,15 @@ Before encoding:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 337-338
+.. GENERATED FROM PYTHON SOURCE LINES 339-340
 
 After encoding (we only plot the first 8 feature names):
 
-.. GENERATED FROM PYTHON SOURCE LINES 338-341
+.. GENERATED FROM PYTHON SOURCE LINES 340-343
 
 .. code-block:: default
 
-    feature_names = sup_vec.get_feature_names_out()
+    feature_names = table_vec.get_feature_names_out()
     feature_names[:8]
 
 
@@ -1150,16 +1223,16 @@ After encoding (we only plot the first 8 feature names):
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 342-348
+.. GENERATED FROM PYTHON SOURCE LINES 344-350
 
 As we can see, it gave us interpretable columns.
-This is because we used |Gap| on the column "division",
+This is because we used the |Gap| on the column 'division',
 which was classified as a high cardinality string variable.
-(default values, see |SV|'s docstring).
+(default values, see |TV|'s docstring).
 
-In total, we have reasonable number of encoded columns.
+In total, we have a reasonable number of encoded columns:
 
-.. GENERATED FROM PYTHON SOURCE LINES 348-351
+.. GENERATED FROM PYTHON SOURCE LINES 350-353
 
 .. code-block:: default
 
@@ -1179,22 +1252,22 @@ In total, we have reasonable number of encoded columns.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 352-364
+.. GENERATED FROM PYTHON SOURCE LINES 354-366
 
 Feature importances in the statistical model
 --------------------------------------------
 
-In this section, we will train a regressor, and plot the feature importances
+In this section, we will train a regressor, and plot the feature importances.
 
 .. topic:: Note:
 
-   To minimize compute time, use the feature importances computed by the
+   To minimize computation time, we use the feature importances computed by the
    |RandomForestRegressor|, but you should prefer |permutation importances|
-   instead (which are less subject to biases)
+   instead (which are less subject to biases).
 
-First, let's train the |RandomForestRegressor|,
+First, let's train the |RandomForestRegressor|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 364-370
+.. GENERATED FROM PYTHON SOURCE LINES 366-372
 
 .. code-block:: default
 
@@ -1217,23 +1290,17 @@ First, let's train the |RandomForestRegressor|,
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 371-372
+.. GENERATED FROM PYTHON SOURCE LINES 373-374
 
-Retrieving the feature importances
+Retrieving the feature importances:
 
-.. GENERATED FROM PYTHON SOURCE LINES 372-385
+.. GENERATED FROM PYTHON SOURCE LINES 374-381
 
 .. code-block:: default
 
 
     importances = regressor.feature_importances_
-    std = np.std(
-        [
-            tree.feature_importances_
-            for tree in regressor.estimators_
-        ],
-        axis=0
-    )
+    std = np.std([tree.feature_importances_ for tree in regressor.estimators_], axis=0)
     indices = np.argsort(importances)
     # Sort from least to most
     indices = list(reversed(indices))
@@ -1245,11 +1312,11 @@ Retrieving the feature importances
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 386-387
+.. GENERATED FROM PYTHON SOURCE LINES 382-383
 
 Plotting the results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 387-400
+.. GENERATED FROM PYTHON SOURCE LINES 383-396
 
 .. code-block:: default
 
@@ -1278,24 +1345,24 @@ Plotting the results:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 401-412
+.. GENERATED FROM PYTHON SOURCE LINES 397-408
 
 We can deduce from this data that the three factors that define the
 most the salary are: being hired for a long time, being a manager, and
 having a permanent, full-time job :)
 
 
-.. topic:: The SuperVectorizer automates preprocessing
+.. topic:: The |TV| automates preprocessing
 
   As this notebook demonstrates, many preprocessing steps can be
-  automated by the |SV|, and the resulting pipeline can still be
+  automated by the |TV|, and the resulting pipeline can still be
   inspected, even with non-normalized entries.
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 3 minutes  2.153 seconds)
+   **Total running time of the script:** ( 3 minutes  32.484 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_dirty_categories.py:
@@ -1308,9 +1375,11 @@ having a permanent, full-time job :)
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/dirty-cat/dirty-cat.github.io/master?filepath=dev/auto_examples/01_dirty_categories.ipynb
+        :target: https://mybinder.org/v2/gh/skrub/skrub/main?urlpath=lab/tree/notebooks/auto_examples/01_dirty_categories.ipynb
         :alt: Launch binder
         :width: 150 px
+
+
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
