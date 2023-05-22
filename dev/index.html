@@ -103,7 +103,7 @@
 
 <script>
 document.write(`<div class="bd-header-announcement"></div>`);
-fetch("https://raw.githubusercontent.com/skrub_data/skrub/main/docs/announcement.html")
+fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.html")
   .then(res => {return res.text();})
   .then(data => {
     div = document.querySelector(".bd-header-announcement");
@@ -111,7 +111,7 @@ fetch("https://raw.githubusercontent.com/skrub_data/skrub/main/docs/announcement
     div.innerHTML = `<div class="bd-header-announcement__content">${data}</div>`;
   })
   .catch(error => {
-    console.log("[PST]: Failed to load announcement at: https://raw.githubusercontent.com/skrub_data/skrub/main/docs/announcement.html");
+    console.log("[PST]: Failed to load announcement at: https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.html");
   });
 </script>
   
@@ -416,45 +416,46 @@ document.write(`
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<div class="flex-container">
-<div class="flex-content">
-<span class="container-title">Assembling
-</span><ul class="simple">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-4">
+<div class="sd-card sd-shadow-sm">
+<div class="card-body">
+<h4 class="card-title">Assembling</h4><ul class="simple">
 <li><p><a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, Joining tables on non-normalized categories with
 approximate matching. <a class="reference internal" href="auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html#example-fuzzy-join"><span class="std std-ref">Example</span></a></p></li>
 <li><p><a class="reference internal" href="generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code></a>, a transformer for joining multiple tables together.
 <a class="reference internal" href="auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html#example-feature-augmenter"><span class="std std-ref">Example</span></a></p></li>
 </ul>
 </div>
-<div class="flex-content">
-<span class="container-title">Encoding</span><p>Feature matrices from dataframes:</p>
-<ul>
-<li><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>: <strong>easily turn a pandas
-dataframe into a numpy array</strong> suitable for machine learning
+</div>
+</div>
+<div class="col-lg-4">
+<div class="sd-card sd-shadow-sm">
+<div class="card-body">
+<h4 class="card-title">Encoding</h4><ul class="simple">
+<li><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>: <strong>turn a pandas
+dataframe into a numerical array</strong> for machine learning
 <a class="reference internal" href="auto_examples/01_dirty_categories.html#example-table-vectorizer"><span class="std std-ref">An example</span></a></p></li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>, OneHotEncoder but robust to typos or</dt><dd><p>non-normalized categories</p>
-</dd>
-</dl>
-<p><a class="reference internal" href="auto_examples/02_investigating_dirty_categories.html#example-gap-encoder"><span class="std std-ref">Example</span></a></p>
-</li>
+<li><p><a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>, OneHotEncoder but robust to typos or
+non-normalized categories <a class="reference internal" href="auto_examples/02_investigating_dirty_categories.html#example-gap-encoder"><span class="std std-ref">An example</span></a></p></li>
 </ul>
 </div>
-<div class="flex-content">
-<span class="container-title">Cleaning</span><p>Deduplication <a class="reference internal" href="generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a>, merging categories of similar
-morphology (spelling).</p>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="sd-card sd-shadow-sm">
+<div class="card-body">
+<h4 class="card-title">Cleaning</h4><p>Deduplication: merge categories of similar
+morphology (spelling) with <a class="reference internal" href="generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a>.</p>
 <p class="centered"><a class="reference internal" href="auto_examples/05_deduplication.html#example-deduplication"><span class="std std-ref">An example</span></a></p>
+</div>
+</div>
+</div>
 </div>
 </div><div class="right-align docutils container">
 <p><a class="reference external" href="CHANGES.html">Recent changes</a></p>
 <p><a class="reference external" href="development.html">Contributing</a></p>
-</div>
-<div class="install-instructions docutils container">
-<dl class="field-list simple">
-<dt class="field-odd">Installing<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">--upgrade</span> <span class="pre">skrub</span></code></p>
-</dd>
-</dl>
 </div>
 <div class="toctree-wrapper compound">
 </div>

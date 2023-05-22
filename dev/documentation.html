@@ -104,7 +104,7 @@
 
 <script>
 document.write(`<div class="bd-header-announcement"></div>`);
-fetch("https://raw.githubusercontent.com/skrub_data/skrub/main/docs/announcement.html")
+fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.html")
   .then(res => {return res.text();})
   .then(data => {
     div = document.querySelector(".bd-header-announcement");
@@ -112,7 +112,7 @@ fetch("https://raw.githubusercontent.com/skrub_data/skrub/main/docs/announcement
     div.innerHTML = `<div class="bd-header-announcement__content">${data}</div>`;
   })
   .catch(error => {
-    console.log("[PST]: Failed to load announcement at: https://raw.githubusercontent.com/skrub_data/skrub/main/docs/announcement.html");
+    console.log("[PST]: Failed to load announcement at: https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.html");
   });
 </script>
   
