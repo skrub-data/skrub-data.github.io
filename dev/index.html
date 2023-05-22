@@ -13,8 +13,8 @@
 <meta property="og:url" content="https://skrub-data.github.io/stable/index.html" />
 <meta property="og:site_name" content="skrub" />
 <meta property="og:description" content="Built for scikit-learn., Robust to dirty data., Easy learning on pandas dataframes.., fuzzy_join(), Joining tables on non-normalized categories with approximate matching. Example, FeatureAugmenter,..." />
-<meta property="og:image" content="https://skrub-data.github.io/stable/_images/sphx_glr_01_dirty_categories_thumb.png" />
-<meta property="og:image:alt" content="" />
+<meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
+<meta property="og:image:alt" content="skrub" />
 <meta name="description" content="Built for scikit-learn., Robust to dirty data., Easy learning on pandas dataframes.., fuzzy_join(), Joining tables on non-normalized categories with approximate matching. Example, FeatureAugmenter,..." />
 
     <title>skrub: Prepping tables for machine learning &#8212; skrub</title>
@@ -55,7 +55,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Dirty categories: machine learning with non normalized strings" href="auto_examples/01_dirty_categories.html" />
+    <link rel="next" title="User guide" href="documentation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -99,6 +99,21 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+<script>
+document.write(`<div class="bd-header-announcement"></div>`);
+fetch("https://raw.githubusercontent.com/skrub_data/skrub/main/docs/announcement.html")
+  .then(res => {return res.text();})
+  .then(data => {
+    div = document.querySelector(".bd-header-announcement");
+    div.classList.add(...["bd-header-announcement", "container-fluid"]);
+    div.innerHTML = `<div class="bd-header-announcement__content">${data}</div>`;
+  })
+  .catch(error => {
+    console.log("[PST]: Failed to load announcement at: https://raw.githubusercontent.com/skrub_data/skrub/main/docs/announcement.html");
+  });
+</script>
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
 <div class="bd-header__inner bd-page-width">
@@ -130,7 +145,7 @@
   </div>
   
   
-  <div class="col-lg-9 navbar-header-items">
+  <div class=" navbar-header-items">
     
     <div class="me-auto navbar-header-items__center">
       
@@ -144,208 +159,25 @@
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="auto_examples/01_dirty_categories.html">
-                        Dirty categories: machine learning with non normalized strings
+                      <a class="nav-link nav-internal" href="documentation.html">
+                        User guide
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="auto_examples/02_investigating_dirty_categories.html">
-                        Investigating and interpreting dirty categories
+                      <a class="nav-link nav-internal" href="api.html">
+                        API
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="auto_examples/03_datetime_encoder.html">
-                        Handling datetime features with the DatetimeEncoder
+                      <a class="nav-link nav-internal" href="auto_examples/index.html">
+                        Examples
                       </a>
                     </li>
                 
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html">
-                        Fuzzy joining dirty tables and the FeatureAugmenter
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="auto_examples/05_deduplication.html">
-                        Deduplicating misspelled categories with deduplicate
-                      </a>
-                    </li>
-                
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="auto_examples/06_ken_embeddings_example.html">
-                        Wikipedia embeddings to enrich the data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.TableVectorizer.html">
-                        skrub.TableVectorizer
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.GapEncoder.html">
-                        skrub.GapEncoder
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.MinHashEncoder.html">
-                        skrub.MinHashEncoder
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.SimilarityEncoder.html">
-                        skrub.SimilarityEncoder
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.TargetEncoder.html">
-                        skrub.TargetEncoder
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.DatetimeEncoder.html">
-                        skrub.DatetimeEncoder
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.fuzzy_join.html">
-                        skrub.fuzzy_join
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.FeatureAugmenter.html">
-                        skrub.FeatureAugmenter
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.deduplicate.html">
-                        skrub.deduplicate
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_employee_salaries.html">
-                        skrub.datasets.fetch_employee_salaries
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_medical_charge.html">
-                        skrub.datasets.fetch_medical_charge
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_midwest_survey.html">
-                        skrub.datasets.fetch_midwest_survey
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_open_payments.html">
-                        skrub.datasets.fetch_open_payments
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_road_safety.html">
-                        skrub.datasets.fetch_road_safety
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_traffic_violations.html">
-                        skrub.datasets.fetch_traffic_violations
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_drug_directory.html">
-                        skrub.datasets.fetch_drug_directory
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_world_bank_indicator.html">
-                        skrub.datasets.fetch_world_bank_indicator
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.get_ken_table_aliases.html">
-                        skrub.datasets.get_ken_table_aliases
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.get_ken_types.html">
-                        skrub.datasets.get_ken_types
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.get_ken_embeddings.html">
-                        skrub.datasets.get_ken_embeddings
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.get_data_dir.html">
-                        skrub.datasets.get_data_dir
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.make_deduplication_data.html">
-                        skrub.datasets.make_deduplication_data
-                      </a>
-                    </li>
-                
-                </div>
-            </div>
-            
   </ul>
 </nav></div>
       
@@ -376,6 +208,46 @@ document.write(`
   </button>
 `);
 </script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/skrub_data" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/skrub" title="PyPI" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-custom fa-pypi"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+</ul></div>
       
     </div>
     
@@ -424,208 +296,25 @@ document.write(`
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="auto_examples/01_dirty_categories.html">
-                        Dirty categories: machine learning with non normalized strings
+                      <a class="nav-link nav-internal" href="documentation.html">
+                        User guide
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="auto_examples/02_investigating_dirty_categories.html">
-                        Investigating and interpreting dirty categories
+                      <a class="nav-link nav-internal" href="api.html">
+                        API
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="auto_examples/03_datetime_encoder.html">
-                        Handling datetime features with the DatetimeEncoder
+                      <a class="nav-link nav-internal" href="auto_examples/index.html">
+                        Examples
                       </a>
                     </li>
                 
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html">
-                        Fuzzy joining dirty tables and the FeatureAugmenter
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="auto_examples/05_deduplication.html">
-                        Deduplicating misspelled categories with deduplicate
-                      </a>
-                    </li>
-                
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="auto_examples/06_ken_embeddings_example.html">
-                        Wikipedia embeddings to enrich the data
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.TableVectorizer.html">
-                        skrub.TableVectorizer
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.GapEncoder.html">
-                        skrub.GapEncoder
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.MinHashEncoder.html">
-                        skrub.MinHashEncoder
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.SimilarityEncoder.html">
-                        skrub.SimilarityEncoder
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.TargetEncoder.html">
-                        skrub.TargetEncoder
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.DatetimeEncoder.html">
-                        skrub.DatetimeEncoder
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.fuzzy_join.html">
-                        skrub.fuzzy_join
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.FeatureAugmenter.html">
-                        skrub.FeatureAugmenter
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.deduplicate.html">
-                        skrub.deduplicate
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_employee_salaries.html">
-                        skrub.datasets.fetch_employee_salaries
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_medical_charge.html">
-                        skrub.datasets.fetch_medical_charge
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_midwest_survey.html">
-                        skrub.datasets.fetch_midwest_survey
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_open_payments.html">
-                        skrub.datasets.fetch_open_payments
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_road_safety.html">
-                        skrub.datasets.fetch_road_safety
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_traffic_violations.html">
-                        skrub.datasets.fetch_traffic_violations
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_drug_directory.html">
-                        skrub.datasets.fetch_drug_directory
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.fetch_world_bank_indicator.html">
-                        skrub.datasets.fetch_world_bank_indicator
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.get_ken_table_aliases.html">
-                        skrub.datasets.get_ken_table_aliases
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.get_ken_types.html">
-                        skrub.datasets.get_ken_types
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.get_ken_embeddings.html">
-                        skrub.datasets.get_ken_embeddings
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.get_data_dir.html">
-                        skrub.datasets.get_data_dir
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="generated/skrub.datasets.make_deduplication_data.html">
-                        skrub.datasets.make_deduplication_data
-                      </a>
-                    </li>
-                
-                </div>
-            </div>
-            
   </ul>
 </nav></div>
         
@@ -645,6 +334,46 @@ document.write(`
   </button>
 `);
 </script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/skrub_data" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/skrub" title="PyPI" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-custom fa-pypi"></i></span>
+            <label class="sr-only">PyPI</label></a>
+        </li>
+</ul></div>
         
       </div>
     
@@ -727,189 +456,8 @@ morphology (spelling).</p>
 </dd>
 </dl>
 </div>
-<section id="usage-examples">
-<span id="id1"></span><h2>Usage examples<a class="headerlink" href="#usage-examples" title="Permalink to this heading">#</a></h2>
-<div class="larger-container docutils container">
-<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Including strings that represent categories often calls for much data preparation. In particula..."><img alt="" src="_images/sphx_glr_01_dirty_categories_thumb.png" />
-<p><a class="reference internal" href="auto_examples/01_dirty_categories.html#sphx-glr-auto-examples-01-dirty-categories-py"><span class="std std-ref">Dirty categories: machine learning with non normalized strings</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Dirty categories: machine learning with non normalized strings</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="What are dirty categorical variables and how can a good encoding help with statistical learning..."><img alt="" src="_images/sphx_glr_02_investigating_dirty_categories_thumb.png" />
-<p><a class="reference internal" href="auto_examples/02_investigating_dirty_categories.html#sphx-glr-auto-examples-02-investigating-dirty-categories-py"><span class="std std-ref">Investigating and interpreting dirty categories</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Investigating and interpreting dirty categories</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="We illustrate here how to handle datetime features with the DatetimeEncoder."><img alt="" src="_images/sphx_glr_03_datetime_encoder_thumb.png" />
-<p><a class="reference internal" href="auto_examples/03_datetime_encoder.html#sphx-glr-auto-examples-03-datetime-encoder-py"><span class="std std-ref">Handling datetime features with the DatetimeEncoder</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Handling datetime features with the DatetimeEncoder</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Here we show how to combine data from different sources, with a vocabulary not well normalized."><img alt="" src="_images/sphx_glr_04_fuzzy_joining_and_FeatureAugmenter_thumb.png" />
-<p><a class="reference internal" href="auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html#sphx-glr-auto-examples-04-fuzzy-joining-and-featureaugmenter-py"><span class="std std-ref">Fuzzy joining dirty tables and the FeatureAugmenter</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Fuzzy joining dirty tables and the FeatureAugmenter</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Real world datasets often come with slight misspellings in the category names, for instance if ..."><img alt="" src="_images/sphx_glr_05_deduplication_thumb.png" />
-<p><a class="reference internal" href="auto_examples/05_deduplication.html#sphx-glr-auto-examples-05-deduplication-py"><span class="std std-ref">Deduplicating misspelled categories with deduplicate</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories with deduplicate</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="When the data comprises common entities (cities, companies or famous people), bringing new info..."><img alt="" src="_images/sphx_glr_06_ken_embeddings_example_thumb.png" />
-<p><a class="reference internal" href="auto_examples/06_ken_embeddings_example.html#sphx-glr-auto-examples-06-ken-embeddings-example-py"><span class="std std-ref">Wikipedia embeddings to enrich the data</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Wikipedia embeddings to enrich the data</div>
-</div></div><div class="toctree-wrapper compound">
+<div class="toctree-wrapper compound">
 </div>
-</div>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<div class="video" style="border: 0px;">
-<iframe style="display: block; margin: auto; width: 100%;" width="560" height="315"
- src="https://www.youtube.com/embed/_GNaaeEI2tg" frameborder="0"
- allow="accelerometer; autoplay; clipboard-write;
- encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-></iframe></div>
-<div class="flex-content" style="border: 0px;"></div><p>For a detailed description of the problem of encoding dirty categorical data,
-see <a class="reference external" href="https://hal.inria.fr/hal-01806175">Similarity encoding for learning with dirty categorical variables</a> <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and <a class="reference external" href="https://hal.inria.fr/hal-02171256v4">Encoding high-cardinality
-string categorical variables</a> <a class="footnote-reference brackets" href="#id5" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.</p>
-</section>
-<section id="api-documentation">
-<h2>API documentation<a class="headerlink" href="#api-documentation" title="Permalink to this heading">#</a></h2>
-<section id="vectorizing-a-dataframe">
-<h3>Vectorizing a dataframe<a class="headerlink" href="#vectorizing-a-dataframe" title="Permalink to this heading">#</a></h3>
-<table class="autosummary longtable table autosummary">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></p></td>
-<td><p>Automatically transform a heterogeneous dataframe to a numerical array.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="dirty-category-encoders">
-<h3>Dirty category encoders<a class="headerlink" href="#dirty-category-encoders" title="Permalink to this heading">#</a></h3>
-<table class="autosummary longtable table autosummary">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a></p></td>
-<td><p>Constructs latent topics with continuous encoding.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a></p></td>
-<td><p>Encode string categorical features by applying the MinHash method to n-gram decompositions of strings.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.SimilarityEncoder.html#skrub.SimilarityEncoder" title="skrub.SimilarityEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimilarityEncoder</span></code></a></p></td>
-<td><p>Encode string categorical features to a similarity matrix.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.TargetEncoder.html#skrub.TargetEncoder" title="skrub.TargetEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TargetEncoder</span></code></a></p></td>
-<td><p>Encode categorical features as a numeric array given a target vector.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="other-encoders">
-<h3>Other encoders<a class="headerlink" href="#other-encoders" title="Permalink to this heading">#</a></h3>
-<table class="autosummary longtable table autosummary">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a></p></td>
-<td><p>Transforms each datetime column into several numeric columns for temporal features (e.g year, month, day...).</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="joining-tables">
-<h3>Joining tables<a class="headerlink" href="#joining-tables" title="Permalink to this heading">#</a></h3>
-<table class="autosummary longtable table autosummary">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fuzzy_join</span></code></a></p></td>
-<td><p>Join two tables with categorical columns based on approximate matching of morphological similarity.</p></td>
-</tr>
-</tbody>
-</table>
-<table class="autosummary longtable table autosummary">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code></a></p></td>
-<td><p>Augment a main table by automatically joining multiple auxiliary tables on it.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="deduplication-merging-variants-of-the-same-entry">
-<h3>Deduplication: merging variants of the same entry<a class="headerlink" href="#deduplication-merging-variants-of-the-same-entry" title="Permalink to this heading">#</a></h3>
-<table class="autosummary longtable table autosummary">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deduplicate</span></code></a></p></td>
-<td><p>Deduplicate categorical data by hierarchically clustering similar strings.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="data-download-and-generation">
-<h3>Data download and generation<a class="headerlink" href="#data-download-and-generation" title="Permalink to this heading">#</a></h3>
-<table class="autosummary longtable table autosummary">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_employee_salaries.html#skrub.datasets.fetch_employee_salaries" title="skrub.datasets.fetch_employee_salaries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.fetch_employee_salaries</span></code></a></p></td>
-<td><p>Fetches the employee salaries dataset (regression), available at <a class="reference external" href="https://openml.org/d/42125">https://openml.org/d/42125</a></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_medical_charge.html#skrub.datasets.fetch_medical_charge" title="skrub.datasets.fetch_medical_charge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.fetch_medical_charge</span></code></a></p></td>
-<td><p>Fetches the medical charge dataset (regression), available at <a class="reference external" href="https://openml.org/d/42720">https://openml.org/d/42720</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_midwest_survey.html#skrub.datasets.fetch_midwest_survey" title="skrub.datasets.fetch_midwest_survey"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.fetch_midwest_survey</span></code></a></p></td>
-<td><p>Fetches the midwest survey dataset (classification), available at <a class="reference external" href="https://openml.org/d/42805">https://openml.org/d/42805</a></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_open_payments.html#skrub.datasets.fetch_open_payments" title="skrub.datasets.fetch_open_payments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.fetch_open_payments</span></code></a></p></td>
-<td><p>Fetches the open payments dataset (classification), available at <a class="reference external" href="https://openml.org/d/42738">https://openml.org/d/42738</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_road_safety.html#skrub.datasets.fetch_road_safety" title="skrub.datasets.fetch_road_safety"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.fetch_road_safety</span></code></a></p></td>
-<td><p>Fetches the road safety dataset (classification), available at <a class="reference external" href="https://openml.org/d/42803">https://openml.org/d/42803</a></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_traffic_violations.html#skrub.datasets.fetch_traffic_violations" title="skrub.datasets.fetch_traffic_violations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.fetch_traffic_violations</span></code></a></p></td>
-<td><p>Fetches the traffic violations dataset (classification), available at <a class="reference external" href="https://openml.org/d/42132">https://openml.org/d/42132</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_drug_directory.html#skrub.datasets.fetch_drug_directory" title="skrub.datasets.fetch_drug_directory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.fetch_drug_directory</span></code></a></p></td>
-<td><p>Fetches the drug directory dataset (classification), available at <a class="reference external" href="https://openml.org/d/43044">https://openml.org/d/43044</a></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.fetch_world_bank_indicator</span></code></a></p></td>
-<td><p>Fetches a dataset of an indicator from the World Bank open data platform.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.get_ken_table_aliases.html#skrub.datasets.get_ken_table_aliases" title="skrub.datasets.get_ken_table_aliases"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.get_ken_table_aliases</span></code></a></p></td>
-<td><p>Get the supported aliases of embedded KEN entities tables.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.get_ken_types.html#skrub.datasets.get_ken_types" title="skrub.datasets.get_ken_types"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.get_ken_types</span></code></a></p></td>
-<td><p>Helper function to search for KEN entity types.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.get_ken_embeddings.html#skrub.datasets.get_ken_embeddings" title="skrub.datasets.get_ken_embeddings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.get_ken_embeddings</span></code></a></p></td>
-<td><p>Download Wikipedia embeddings by type.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.get_data_dir.html#skrub.datasets.get_data_dir" title="skrub.datasets.get_data_dir"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.get_data_dir</span></code></a></p></td>
-<td><p>Returns the directory in which skrub looks for data.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.make_deduplication_data.html#skrub.datasets.make_deduplication_data" title="skrub.datasets.make_deduplication_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datasets.make_deduplication_data</span></code></a></p></td>
-<td><p>Duplicates examples with spelling mistakes.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="about">
-<h2>About<a class="headerlink" href="#about" title="Permalink to this heading">#</a></h2>
-<p>skrub is a young project born from research. We really need people
-giving feedback on successes and failures with the different techniques on real
-world data, and pointing us to open datasets on which we can do more
-empirical work.
-skrub received funding from <a class="reference external" href="https://project.inria.fr/dirtydata/">project DirtyData</a> (ANR-17-CE23-0018).</p>
-<aside class="footnote brackets" id="id4" role="note">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
-<p>Patricio Cerda, Gaël Varoquaux. Encoding high-cardinality string categorical variables. 2020. IEEE Transactions on Knowledge &amp; Data Engineering.</p>
-</aside>
-<aside class="footnote brackets" id="id5" role="note">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
-<p>Patricio Cerda, Gaël Varoquaux, Balázs Kégl. Similarity encoding for learning with dirty categorical variables. 2018. Machine Learning journal, Springer.</p>
-</aside>
-</section>
-<section id="related-projects">
-<h2>Related projects<a class="headerlink" href="#related-projects" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/scikit-learn/scikit-learn">scikit-learn</a>
-- a very popular machine learning library; <em>skrub</em> inherits its API</p></li>
-<li><p><a class="reference external" href="https://contrib.scikit-learn.org/category_encoders/">categorical-encoding</a>
-- scikit-learn compatible classic categorical encoding schemes</p></li>
-<li><p><a class="reference external" href="https://github.com/rakutentech/spark-dirty-cat">spark-dirty-cat</a>
-- a Scala implementation of skrub for Spark ML</p></li>
-<li><p><a class="reference external" href="https://github.com/alan-turing-institute/CleverCSV">CleverCSV</a>
-- a package for dealing with dirty csv files</p></li>
-<li><p><a class="reference external" href="https://github.com/openml-labs/gama">GAMA</a>
-- a modular AutoML assistant that uses <em>skrub</em> as part of its search space</p></li>
-</ul>
-</section>
 </section>
 
 
@@ -924,11 +472,11 @@ skrub received funding from <a class="reference external" href="https://project.
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
-       href="auto_examples/01_dirty_categories.html"
+       href="documentation.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Dirty categories: machine learning with non normalized strings</p>
+        <p class="prev-next-title">User guide</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -945,27 +493,19 @@ skrub received funding from <a class="reference external" href="https://project.
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/skrub_data/skrub/edit/main/docs/index.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage-examples">Usage examples</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-documentation">API documentation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vectorizing-a-dataframe">Vectorizing a dataframe</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-category-encoders">Dirty category encoders</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-encoders">Other encoders</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#joining-tables">Joining tables</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deduplication-merging-variants-of-the-same-entry">Deduplication: merging variants of the same entry</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-download-and-generation">Data download and generation</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about">About</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#related-projects">Related projects</a></li>
-</ul>
-  </nav></div>
+</div>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">

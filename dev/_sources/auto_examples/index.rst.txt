@@ -1,6 +1,6 @@
 :orphan:
 
-Using skrub
+Examples
 ===========
 
 
