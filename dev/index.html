@@ -12,10 +12,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/index.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Built for scikit-learn., Robust to dirty data., Easy learning on pandas dataframes.., fuzzy_join(), Joining tables on non-normalized categories with approximate matching. Example, FeatureAugmenter,..." />
+<meta property="og:description" content="Built for scikit-learn., Robust to dirty data., Easy learning on pandas dataframes..,, fuzzy_join(), Joining tables on non-normalized categories with approximate matching. Example FeatureAugmenter,..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Built for scikit-learn., Robust to dirty data., Easy learning on pandas dataframes.., fuzzy_join(), Joining tables on non-normalized categories with approximate matching. Example, FeatureAugmenter,..." />
+<meta name="description" content="Built for scikit-learn., Robust to dirty data., Easy learning on pandas dataframes..,, fuzzy_join(), Joining tables on non-normalized categories with approximate matching. Example FeatureAugmenter,..." />
 
     <title>skrub: Prepping tables for machine learning &#8212; skrub</title>
   
@@ -42,6 +42,7 @@
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
@@ -406,14 +407,15 @@ document.write(`
 <h1>skrub: Prepping tables for machine learning<a class="headerlink" href="#skrub-prepping-tables-for-machine-learning" title="Permalink to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<div class="larger-container docutils container">
 <ul class="simple">
 <li><p>Built for scikit-learn.</p></li>
 <li><p>Robust to dirty data.</p></li>
 <li><p>Easy learning on pandas dataframes.</p></li>
 </ul>
-</div>
 <div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="_images/skrub_pipeline.svg" src="_images/skrub_pipeline.svg" /><div class="line-block">
 <div class="line"><br /></div>
 </div>
 <div class="container-fluid">
@@ -421,41 +423,33 @@ document.write(`
 <div class="col-lg-4">
 <div class="sd-card sd-shadow-sm">
 <div class="card-body">
-<h4 class="card-title">Assembling</h4><ul class="simple">
-<li><p><a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, Joining tables on non-normalized categories with
-approximate matching. <a class="reference internal" href="auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html#example-fuzzy-join"><span class="std std-ref">Example</span></a></p></li>
-<li><p><a class="reference internal" href="generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code></a>, a transformer for joining multiple tables together.
-<a class="reference internal" href="auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html#example-feature-augmenter"><span class="std std-ref">Example</span></a></p></li>
-</ul>
+<h4 class="card-title">Assembling</h4><p><a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, Joining tables on non-normalized categories with approximate matching. <a class="reference internal" href="auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html#example-fuzzy-join"><span class="std std-ref">Example</span></a></p>
+<p><a class="reference internal" href="generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code></a>, a transformer for joining multiple tables together. <a class="reference internal" href="auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html#example-feature-augmenter"><span class="std std-ref">Example</span></a></p>
 </div>
 </div>
 </div>
 <div class="col-lg-4">
 <div class="sd-card sd-shadow-sm">
 <div class="card-body">
-<h4 class="card-title">Encoding</h4><ul class="simple">
-<li><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>: <strong>turn a pandas
-dataframe into a numerical array</strong> for machine learning
-<a class="reference internal" href="auto_examples/01_dirty_categories.html#example-table-vectorizer"><span class="std std-ref">An example</span></a></p></li>
-<li><p><a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>, OneHotEncoder but robust to typos or
-non-normalized categories <a class="reference internal" href="auto_examples/02_investigating_dirty_categories.html#example-gap-encoder"><span class="std std-ref">An example</span></a></p></li>
-</ul>
+<h4 class="card-title">Encoding</h4><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>: <strong>turn a pandas dataframe into a numerical array</strong> for machine learning. <a class="reference internal" href="auto_examples/01_dirty_categories.html#example-table-vectorizer"><span class="std std-ref">Example</span></a></p>
+<p><a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>, OneHotEncoder but robust to typos or non-normalized categories. <a class="reference internal" href="auto_examples/02_investigating_dirty_categories.html#example-gap-encoder"><span class="std std-ref">Example</span></a></p>
 </div>
 </div>
 </div>
 <div class="col-lg-4">
 <div class="sd-card sd-shadow-sm">
 <div class="card-body">
-<h4 class="card-title">Cleaning</h4><p>Deduplication: merge categories of similar
-morphology (spelling) with <a class="reference internal" href="generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a>.</p>
-<p class="centered"><a class="reference internal" href="auto_examples/05_deduplication.html#example-deduplication"><span class="std std-ref">An example</span></a></p>
+<h4 class="card-title">Cleaning</h4><p><a class="reference internal" href="generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a>: merge categories of similar morphology (spelling). <a class="reference internal" href="auto_examples/05_deduplication.html#example-deduplication"><span class="std std-ref">Example</span></a></p>
 </div>
 </div>
 </div>
 </div>
-</div><div class="right-align docutils container">
+</div><div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="right-align docutils container">
 <p><a class="reference external" href="CHANGES.html">Recent changes</a></p>
-<p><a class="reference external" href="development.html">Contributing</a></p>
+<p><a class="reference external" href="CONTRIBUTING.html">Contributing</a></p>
 </div>
 <div class="toctree-wrapper compound">
 </div>
