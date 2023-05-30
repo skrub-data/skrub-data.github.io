@@ -502,11 +502,11 @@ the Euclidean distance.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>left</strong><span class="classifier"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></span></dt><dd><p>A table to merge.</p>
+<dt><strong>left</strong><span class="classifier"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></span></dt><dd><p>A table to merge.</p>
 </dd>
-<dt><strong>right</strong><span class="classifier"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></span></dt><dd><p>A table used to merge with.</p>
+<dt><strong>right</strong><span class="classifier"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></span></dt><dd><p>A table used to merge with.</p>
 </dd>
-<dt><strong>how</strong><span class="classifier">{‘left’, ‘right’}, default=’left’</span></dt><dd><p>Type of merge to be performed. Note that unlike <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html#pandas.merge" title="(in pandas v2.0.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.merge()</span></code></a>,
+<dt><strong>how</strong><span class="classifier">{‘left’, ‘right’}, default=’left’</span></dt><dd><p>Type of merge to be performed. Note that unlike <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html#pandas.merge" title="(in pandas v2.0.2)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.merge()</span></code></a>,
 only “left” and “right” are supported so far, as the fuzzy-join comes
 with its own mechanism to resolve lack of correspondence between
 left and right tables.</p>
@@ -553,7 +553,7 @@ between the matches.</p>
 </dd>
 <dt><strong>drop_unmatched</strong><span class="classifier">bool, default=False</span></dt><dd><p>Remove categories for which a match was not found in the two tables.</p>
 </dd>
-<dt><strong>sort</strong><span class="classifier">bool, default=False</span></dt><dd><p>Sort the join keys lexicographically in the resulting <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a>.
+<dt><strong>sort</strong><span class="classifier">bool, default=False</span></dt><dd><p>Sort the join keys lexicographically in the resulting <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a>.
 If False, the order of the join keys depends on the join type
 (<cite>how</cite> keyword).</p>
 </dd>
@@ -564,7 +564,7 @@ column names.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl>
-<dt><strong>df_joined</strong><span class="classifier"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></span></dt><dd><p>The joined table returned as a <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a>.
+<dt><strong>df_joined</strong><span class="classifier"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></span></dt><dd><p>The joined table returned as a <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a>.
 If <cite>return_score=True</cite>, another column will be added
 to the DataFrame containing the matching scores.</p>
 </dd>
@@ -580,9 +580,9 @@ to the DataFrame containing the matching scores.</p>
 </div>
 <p class="rubric">Notes</p>
 <p>For regular joins, the output of fuzzy_join is identical
-to <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html#pandas.merge" title="(in pandas v2.0.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.merge()</span></code></a>, except that both key columns are returned.</p>
+to <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html#pandas.merge" title="(in pandas v2.0.2)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.merge()</span></code></a>, except that both key columns are returned.</p>
 <p>Joining on indexes and multiple columns is not supported.</p>
-<p>When <cite>return_score=True</cite>, the returned <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a> gives
+<p>When <cite>return_score=True</cite>, the returned <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a> gives
 the distances between the closest matches in a [0, 1] interval.
 0 corresponds to no matching n-grams, while 1 is a
 perfect match.</p>
