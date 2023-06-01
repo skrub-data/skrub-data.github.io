@@ -12,10 +12,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/documentation.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Encoding dirty categories: For a detailed description of the problem of encoding dirty categorical data, see Similarity encoding for learning with dirty categorical variables 1 and Encoding high-ca..." />
+<meta property="og:description" content="Encoding: creating feature matrices- Turning a dataframe into a numerical feature matrix, Encoding open-ended entries and dirty categories, Encoding dates., About, Related projects." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Encoding dirty categories: For a detailed description of the problem of encoding dirty categorical data, see Similarity encoding for learning with dirty categorical variables 1 and Encoding high-ca..." />
+<meta name="description" content="Encoding: creating feature matrices- Turning a dataframe into a numerical feature matrix, Encoding open-ended entries and dirty categories, Encoding dates., About, Related projects." />
 
     <title>User guide &#8212; skrub</title>
   
@@ -54,9 +54,10 @@
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'documentation';</script>
+    <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="API" href="api.html" />
+    <link rel="next" title="Encoding: creating feature matrices" href="encoding.html" />
     <link rel="prev" title="skrub: Prepping tables for machine learning" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -279,7 +280,7 @@ document.write(`
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -381,6 +382,19 @@ document.write(`
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
@@ -432,43 +446,18 @@ document.write(`
                   
   <section id="user-guide">
 <h1>User guide<a class="headerlink" href="#user-guide" title="Permalink to this heading">#</a></h1>
-<section id="encoding-dirty-categories">
-<h2>Encoding dirty categories<a class="headerlink" href="#encoding-dirty-categories" title="Permalink to this heading">#</a></h2>
-<p>For a detailed description of the problem of encoding dirty categorical data,
-see <a class="reference external" href="https://hal.inria.fr/hal-01806175">Similarity encoding for learning with dirty categorical variables</a> <a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and <a class="reference external" href="https://hal.inria.fr/hal-02171256v4">Encoding high-cardinality
-string categorical variables</a> <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.</p>
-</section>
-<section id="about">
-<h2>About<a class="headerlink" href="#about" title="Permalink to this heading">#</a></h2>
-<p>skrub is a young project born from research. We really need people
-giving feedback on successes and failures with the different techniques on real
-world data, and pointing us to open datasets on which we can do more
-empirical work.
-skrub received funding from <a class="reference external" href="https://project.inria.fr/dirtydata/">project DirtyData</a> (ANR-17-CE23-0018).</p>
-<aside class="footnote brackets" id="id3" role="note">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>Patricio Cerda, Gaël Varoquaux. Encoding high-cardinality string categorical variables. 2020. IEEE Transactions on Knowledge &amp; Data Engineering.</p>
-</aside>
-<aside class="footnote brackets" id="id4" role="note">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
-<p>Patricio Cerda, Gaël Varoquaux, Balázs Kégl. Similarity encoding for learning with dirty categorical variables. 2018. Machine Learning journal, Springer.</p>
-</aside>
-</section>
-<section id="related-projects">
-<h2>Related projects<a class="headerlink" href="#related-projects" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/scikit-learn/scikit-learn">scikit-learn</a>
-- a very popular machine learning library; <em>skrub</em> inherits its API</p></li>
-<li><p><a class="reference external" href="https://contrib.scikit-learn.org/category_encoders/">categorical-encoding</a>
-- scikit-learn compatible classic categorical encoding schemes</p></li>
-<li><p><a class="reference external" href="https://github.com/rakutentech/spark-dirty-cat">spark-dirty-cat</a>
-- a Scala implementation of skrub for Spark ML</p></li>
-<li><p><a class="reference external" href="https://github.com/alan-turing-institute/CleverCSV">CleverCSV</a>
-- a package for dealing with dirty csv files</p></li>
-<li><p><a class="reference external" href="https://github.com/openml-labs/gama">GAMA</a>
-- a modular AutoML assistant that uses <em>skrub</em> as part of its search space</p></li>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="encoding.html#turning-a-dataframe-into-a-numerical-feature-matrix">Turning a dataframe into a numerical feature matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="encoding.html#encoding-open-ended-entries-and-dirty-categories">Encoding open-ended entries and dirty categories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="encoding.html#encoding-dates">Encoding dates</a></li>
 </ul>
-</section>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html#related-projects">Related projects</a></li>
+</ul>
+</div>
 </section>
 
 
@@ -492,11 +481,11 @@ skrub received funding from <a class="reference external" href="https://project.
       </div>
     </a>
     <a class="right-next"
-       href="api.html"
+       href="encoding.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">API</p>
+        <p class="prev-next-title">Encoding: creating feature matrices</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -511,18 +500,6 @@ skrub received funding from <a class="reference external" href="https://project.
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-dirty-categories">Encoding dirty categories</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about">About</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#related-projects">Related projects</a></li>
-</ul>
-  </nav></div>
 
   <div class="sidebar-secondary-item">
   

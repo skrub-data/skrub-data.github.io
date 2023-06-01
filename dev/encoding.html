@@ -8,14 +8,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<meta property="og:title" content="skrub.datasets.fetch_midwest_survey" />
+<meta property="og:title" content="Encoding: creating feature matrices" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/generated/skrub.datasets.fetch_midwest_survey.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/encoding.html" />
 <meta property="og:site_name" content="skrub" />
+<meta property="og:description" content="Encoding or vectorizing creates numerical features from the data, converting dataframes, strings, dates… Different encoders are suited for different types of data. Turning a dataframe into a numeri..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
+<meta name="description" content="Encoding or vectorizing creates numerical features from the data, converting dataframes, strings, dates… Different encoders are suited for different types of data. Turning a dataframe into a numeri..." />
 
-    <title>skrub.datasets.fetch_midwest_survey &#8212; skrub</title>
+    <title>Encoding: creating feature matrices &#8212; skrub</title>
   
   
   
@@ -25,38 +27,38 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sg_gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.datasets.fetch_midwest_survey';</script>
-    <link rel="author" title="About these documents" href="../about.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="skrub.datasets.fetch_open_payments" href="skrub.datasets.fetch_open_payments.html" />
-    <link rel="prev" title="skrub.datasets.fetch_medical_charge" href="skrub.datasets.fetch_medical_charge.html" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'encoding';</script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="About" href="about.html" />
+    <link rel="prev" title="User guide" href="documentation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -84,7 +86,7 @@
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="../search.html"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -127,7 +129,7 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
       <div class="navbar-item">
   
 
-<a class="navbar-brand logo" href="../index.html">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -137,8 +139,8 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
       
     
     
-    <img src="../_static/skrub.svg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/skrub.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/skrub.svg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/skrub.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -159,22 +161,22 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../documentation.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="documentation.html">
                         User guide
                       </a>
                     </li>
                 
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="../api.html">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="api.html">
                         API
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../auto_examples/index.html">
+                      <a class="nav-link nav-internal" href="auto_examples/index.html">
                         Examples
                       </a>
                     </li>
@@ -296,22 +298,22 @@ document.write(`
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../documentation.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="documentation.html">
                         User guide
                       </a>
                     </li>
                 
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="../api.html">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="api.html">
                         API
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../auto_examples/index.html">
+                      <a class="nav-link nav-internal" href="auto_examples/index.html">
                         Examples
                       </a>
                     </li>
@@ -384,41 +386,10 @@ document.write(`
         <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.TableVectorizer.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.TableVectorizer</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.GapEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.GapEncoder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.MinHashEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.MinHashEncoder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.SimilarityEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.SimilarityEncoder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.TargetEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.TargetEncoder</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.DatetimeEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.DatetimeEncoder</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.fuzzy_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.FeatureAugmenter.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.deduplicate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.deduplicate</a></li>
-</ul>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_employee_salaries.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_employee_salaries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_medical_charge.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_medical_charge</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_midwest_survey</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_open_payments.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_open_payments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_road_safety.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_road_safety</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_traffic_violations.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_traffic_violations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_drug_directory.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_drug_directory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_world_bank_indicator.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_world_bank_indicator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.get_ken_table_aliases.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.get_ken_table_aliases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.get_ken_types.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.get_ken_types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.get_ken_embeddings.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.get_ken_embeddings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.get_data_dir.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.get_data_dir</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.make_deduplication_data.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.make_deduplication_data</a></li>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Encoding: creating feature matrices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+
 </ul>
 </div>
 </nav></div>
@@ -452,14 +423,14 @@ document.write(`
   <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
     
     <li class="breadcrumb-item breadcrumb-home">
-      <a href="../index.html" class="nav-link" aria-label="Home">
+      <a href="index.html" class="nav-link" aria-label="Home">
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../api.html" class="nav-link">API</a></li>
+    <li class="breadcrumb-item"><a href="documentation.html" class="nav-link">User guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_midwest_survey</li>
+    <li class="breadcrumb-item active" aria-current="page">Encoding: creating feature matrices</li>
   </ul>
 </nav>
 </div>
@@ -476,29 +447,62 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="skrub-datasets-fetch-midwest-survey">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_midwest_survey<a class="headerlink" href="#skrub-datasets-fetch-midwest-survey" title="Permalink to this heading">#</a></h1>
-<dl class="py function">
-<dt class="sig sig-object py" id="skrub.datasets.fetch_midwest_survey">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_midwest_survey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">load_dataframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/22df454/skrub/datasets/_fetching.py#L762"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_midwest_survey" title="Permalink to this definition">#</a></dt>
-<dd><p>Fetches the midwest survey dataset (classification), available at <a class="reference external" href="https://openml.org/d/42805">https://openml.org/d/42805</a></p>
-<dl class="simple">
-<dt>Description of the dataset:</dt><dd><p>Survey to know if people self-identify as Midwesterners.</p>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><a class="reference internal" href="skrub.datasets.DatasetAll.html#skrub.datasets.DatasetAll" title="skrub.datasets.DatasetAll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatasetAll</span></code></a></dt><dd><p>If <cite>load_dataframe=True</cite></p>
-</dd>
-<dt><a class="reference internal" href="skrub.datasets.DatasetInfoOnly.html#skrub.datasets.DatasetInfoOnly" title="skrub.datasets.DatasetInfoOnly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatasetInfoOnly</span></code></a></dt><dd><p>If <cite>load_dataframe=False</cite></p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<div class="clearer"></div></section>
+  <section id="encoding-creating-feature-matrices">
+<h1>Encoding: creating feature matrices<a class="headerlink" href="#encoding-creating-feature-matrices" title="Permalink to this heading">#</a></h1>
+<p>Encoding or vectorizing creates numerical features from the data,
+converting dataframes, strings, dates… Different encoders are suited
+for different types of data.</p>
+<section id="turning-a-dataframe-into-a-numerical-feature-matrix">
+<h2>Turning a dataframe into a numerical feature matrix<a class="headerlink" href="#turning-a-dataframe-into-a-numerical-feature-matrix" title="Permalink to this heading">#</a></h2>
+<p>A dataframe can comprise columns of all kind of types. A good numerical
+representation of these columns help analytics and statistical learning.</p>
+<p>The <a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> gives a turn-key solution by applying
+different data-specific encoder to the different columns. It makes
+heuristic choices that are not necessarily optimal but is typically a
+very good baseline.</p>
+</section>
+<section id="encoding-open-ended-entries-and-dirty-categories">
+<span id="dirty-categories"></span><h2>Encoding open-ended entries and dirty categories<a class="headerlink" href="#encoding-open-ended-entries-and-dirty-categories" title="Permalink to this heading">#</a></h2>
+<p>String columns can be seen categories for statistical analysis, but
+standard tools to represent categories fail if these strings are not
+normalized into a small number of well-identified form, if they have
+typos, or if there are too many categories.</p>
+<p>Skrub provides encoders that represent well open-ended strings or dirty
+categories, eg to replace <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a>:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>: infers latent categories and represent the data on
+these. Very interpretable, sometimes slow</p></li>
+<li><p><a class="reference internal" href="generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>: a very scalable encoding of strings capturing
+their similarities. Particularly useful on large databases and well
+suited for learners such as trees (boosted trees or random forests)</p></li>
+<li><p><a class="reference internal" href="generated/skrub.SimilarityEncoder.html#skrub.SimilarityEncoder" title="skrub.SimilarityEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimilarityEncoder</span></code></a>: a simple encoder that works by representing
+strings similarities with all the different categories in the data.
+Useful when there are a small number of categories, but we still want
+to capture the links between them (eg: “west”, “north”, “north-west”)</p></li>
+</ul>
+<aside class="topic">
+<p class="topic-title">References::</p>
+<p>For a detailed description of the problem of encoding dirty
+categorical data, see <a class="reference external" href="https://hal.inria.fr/hal-01806175">Similarity encoding for learning with dirty
+categorical variables</a> <a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and
+<a class="reference external" href="https://hal.inria.fr/hal-02171256v4">Encoding high-cardinality string categorical variables</a> <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.</p>
+</aside>
+<aside class="footnote brackets" id="id3" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Patricio Cerda, Gaël Varoquaux. Encoding high-cardinality string categorical variables. 2020. IEEE Transactions on Knowledge &amp; Data Engineering.</p>
+</aside>
+<aside class="footnote brackets" id="id4" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Patricio Cerda, Gaël Varoquaux, Balázs Kégl. Similarity encoding for learning with dirty categorical variables. 2018. Machine Learning journal, Springer.</p>
+</aside>
+</section>
+<section id="encoding-dates">
+<h2>Encoding dates<a class="headerlink" href="#encoding-dates" title="Permalink to this heading">#</a></h2>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">DateTimeEncoder</span></code> encodes date and time: it represent them as
+time in seconds since a fixed date, but also added features useful to
+capture regularities: week of the day, month of the year…</p>
+</section>
+</section>
 
 
                 </article>
@@ -512,20 +516,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.datasets.fetch_medical_charge.html"
+       href="documentation.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_medical_charge</p>
+        <p class="prev-next-title">User guide</p>
       </div>
     </a>
     <a class="right-next"
-       href="skrub.datasets.fetch_open_payments.html"
+       href="about.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_open_payments</p>
+        <p class="prev-next-title">About</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -542,9 +546,21 @@ document.write(`
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turning-a-dataframe-into-a-numerical-feature-matrix">Turning a dataframe into a numerical feature matrix</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-open-ended-entries-and-dirty-categories">Encoding open-ended entries and dirty categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-dates">Encoding dates</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/skrub_data/skrub/edit/main/docs/generated/skrub.datasets.fetch_midwest_survey.rst">
+    <a href="https://github.com/skrub_data/skrub/edit/main/docs/encoding.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -558,7 +574,7 @@ document.write(`
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="../_sources/generated/skrub.datasets.fetch_midwest_survey.rst.txt">
+    <a href="_sources/encoding.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
@@ -577,8 +593,8 @@ document.write(`
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
