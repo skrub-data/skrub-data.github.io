@@ -295,7 +295,7 @@ Then another table, with life expectancy by country:
 
 .. code-block:: default
 
-    life_exp = fetch_world_bank_indicator("SP.DYN.LE00.IN", "life_exp").X
+    life_exp = fetch_world_bank_indicator("SP.DYN.LE00.IN").X
     life_exp.head(3)
 
 
@@ -1798,7 +1798,7 @@ results significantly!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.583 seconds)
+   **Total running time of the script:** ( 0 minutes  13.922 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining_and_FeatureAugmenter.py:
