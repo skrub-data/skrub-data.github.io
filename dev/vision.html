@@ -8,16 +8,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<meta property="og:title" content="Assembling: joining multiple tables" />
+<meta property="og:title" content="Vision: where is skrub heading?" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/assembling.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/vision.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Assembling is the process of collecting and joining together tables. Good analytics requires including as much information as possible, often from different sources. skrub allows you to join tables..." />
+<meta property="og:description" content="Vision statement: The goal of skrub is to facilitate building and deploying machine-learning models on tables: pandas dataframe, SQL databases…, Skrub is high-level, with a philosophy and an API ma..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Assembling is the process of collecting and joining together tables. Good analytics requires including as much information as possible, often from different sources. skrub allows you to join tables..." />
+<meta name="description" content="Vision statement: The goal of skrub is to facilitate building and deploying machine-learning models on tables: pandas dataframe, SQL databases…, Skrub is high-level, with a philosophy and an API ma..." />
 
-    <title>Assembling: joining multiple tables &#8212; skrub</title>
+    <title>Vision: where is skrub heading? &#8212; skrub</title>
   
   
   
@@ -53,12 +53,12 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'assembling';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'vision';</script>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Encoding: creating feature matrices" href="encoding.html" />
-    <link rel="prev" title="User guide" href="documentation.html" />
+    <link rel="next" title="About" href="about.html" />
+    <link rel="prev" title="Development" href="development.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -387,11 +387,11 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Assembling: joining multiple tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cleaning.html">Cleaning</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="development.html">Development</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="vision.html">Vision: where is skrub heading?</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="development.html">Development</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Vision: where is skrub heading?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="about.html">About</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CONTRIBUTING.html">Contributing to skrub</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CHANGES.html">Changes</a></li>
@@ -437,7 +437,10 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="documentation.html" class="nav-link">User guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Assembling: joining multiple tables</li>
+    
+    <li class="breadcrumb-item"><a href="development.html" class="nav-link">Development</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Vision: where is skrub heading?</li>
   </ul>
 </nav>
 </div>
@@ -454,49 +457,58 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="assembling-joining-multiple-tables">
-<span id="assembling"></span><h1>Assembling: joining multiple tables<a class="headerlink" href="#assembling-joining-multiple-tables" title="Permalink to this heading">#</a></h1>
-<p>Assembling is the process of collecting and joining together tables.
-Good analytics requires including as much information as possible,
-often from different sources.</p>
-<p>skrub allows you to join tables on keys of different types
-(string, numerical, datetime) with imprecise correspondance.</p>
-<section id="fuzzy-joining-tables">
-<h2>Fuzzy joining tables<a class="headerlink" href="#fuzzy-joining-tables" title="Permalink to this heading">#</a></h2>
-<p>Joining two dataframes can be hard as the corresponding keys may be different.</p>
-<p>The <a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> uses similarities in entries to join tables on one or more
-related columns. Furthermore, it choose the type of fuzzy matching used
-based on the column type (string, numerical or datetime).
-It also outputs a similarity score, to single out bad matches, so that they can be
-dropped or replaced.</p>
-<p>In sum, equivalent to <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html#pandas.merge" title="(in pandas v2.0.2)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.merge()</span></code></a>, the <a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>
-has no need for pre-cleaning.</p>
+  <section id="vision-where-is-skrub-heading">
+<h1>Vision: where is skrub heading?<a class="headerlink" href="#vision-where-is-skrub-heading" title="Permalink to this heading">#</a></h1>
+<section id="vision-statement">
+<h2>Vision statement<a class="headerlink" href="#vision-statement" title="Permalink to this heading">#</a></h2>
+<p>The goal of skrub is to facilitate building and deploying
+machine-learning models on tables: <a class="reference external" href="https://pandas.pydata.org">pandas</a>
+dataframe, SQL databases…</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Skrub is high-level, with a philosophy and an API matching that of
+<a class="reference external" href="http://scikit-learn.org">scikit-learn</a>. It strives to bridge the world
+of databases to that of machine-learning, <strong>enabling imperfect assembly and
+representations of the data when it is noisy</strong>, using the downstream
+target to predict to guide assembly when possible (supervised learing for
+data assembly).</p>
+<p>In the long term, as skrub is built on higher-level APIs, it will make it
+easier for data-scientist to use efficient database patterns and
+backends.</p>
+<p>Skrub seeks tradeoffs in terms of flexibility: its high-level APIs are by
+construction restrictive compared to directly manipulating dataframes.
+This is by design, as skrub does not aim to replace tools such as <a class="reference external" href="https://pandas.pydata.org">Pandas</a>, <a class="reference external" href="https://ibis-project.org">Ibis</a>,
+<a class="reference external" href="https://duckdb.org/">DuckDB</a>.</p>
+<p>To make things simpler, skrub uses defaults that are chosen empirically to
+give good machine learning, even though these are sometimes heuristic, as
+in the <a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>.</p>
 </section>
-<section id="feature-augmentation-for-machine-learning">
-<h2>Feature augmentation for machine learning<a class="headerlink" href="#feature-augmentation-for-machine-learning" title="Permalink to this heading">#</a></h2>
-<p>Joining is pretty straigthforward for two tables: you only need to identify
-the common key.</p>
-<p>However, for more complex analysis, merging multiple tables is necessary.
-skrub provides the <a class="reference internal" href="generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code></a> as a convenient solution:
-multiple fuzzy joins can be performed at the same time, given a set of
-input tables and key columns.</p>
-<p>An advantage is the scikit-learn compatibility of this class:
-easily introduced into machine learning pipelines.</p>
-</section>
-<section id="going-further-embeddings-for-better-analytics">
-<h2>Going further: embeddings for better analytics<a class="headerlink" href="#going-further-embeddings-for-better-analytics" title="Permalink to this heading">#</a></h2>
-<p>Data collection comes before joining, but is also an
-essential process of table assembling.
-Although many datasets are available on the internet, it is not
-always easy to find the right one for your analysis.</p>
-<p>skrub has some very helpful methods that gives you easy
-access to embeddings, or vectorial representations of an entity,
-of all common entities from Wikipedia.
-You can use <a class="reference internal" href="generated/skrub.datasets.get_ken_embeddings.html#skrub.datasets.get_ken_embeddings" title="skrub.datasets.get_ken_embeddings"><code class="xref py py-func docutils literal notranslate"><span class="pre">datasets.get_ken_embeddings()</span></code></a> to search for the right
-embeddings and download them.</p>
-<p>Other methods, such as <a class="reference internal" href="generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator"><code class="xref py py-func docutils literal notranslate"><span class="pre">datasets.fetch_world_bank_indicator()</span></code></a> to
-fetch data of a World Bank indicator can also help you retrieve
-useful data that will be joined to another table.</p>
+<section id="roadmap">
+<h2>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this heading">#</a></h2>
+<p>In an open-source project, roadmaps can be whishful thinking: things
+happen in an iterative way, often guided by the community.</p>
+<p>We however decided to communicate on what we would like to do in the next
+6 months to give a better idea of the vision.</p>
+<p>From shorter term to longer term:</p>
+<ul class="simple">
+<li><p>Make the <a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> fast, robust, and easy to tune (in
+the sense of hyper-parameter tuning)</p></li>
+<li><p>Add a Join-aggregator object, to do feature augmentation on one-to-many
+correspondances</p></li>
+<li><p>fuzzy joining on datetime values</p></li>
+<li><p>Support polars?</p></li>
+<li><p>Support time series (eg in the aggregations)</p></li>
+<li><p>Interpolator join to join across multiple columns without exact
+correspondances in the keys</p></li>
+<li><p>Release (yes we are not planning to release very soon)</p></li>
+<li><p>Data namespaces, lazy data loading, out of core computing using
+database engines (eg duckdb)</p></li>
+<li><p>Join discovery to work in data lakes where the tables are not in a
+clean relational database</p></li>
+<li><p>Automatic feature synthesis in databases, building on the assembling
+features</p></li>
+</ul>
 </section>
 </section>
 
@@ -512,20 +524,20 @@ useful data that will be joined to another table.</p>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="documentation.html"
+       href="development.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">User guide</p>
+        <p class="prev-next-title">Development</p>
       </div>
     </a>
     <a class="right-next"
-       href="encoding.html"
+       href="about.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Encoding: creating feature matrices</p>
+        <p class="prev-next-title">About</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -547,16 +559,15 @@ useful data that will be joined to another table.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuzzy-joining-tables">Fuzzy joining tables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-augmentation-for-machine-learning">Feature augmentation for machine learning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#going-further-embeddings-for-better-analytics">Going further: embeddings for better analytics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vision-statement">Vision statement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roadmap">Roadmap</a></li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/skrub_data/skrub/edit/main/docs/assembling.rst">
+    <a href="https://github.com/skrub_data/skrub/edit/main/docs/vision.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -570,7 +581,7 @@ useful data that will be joined to another table.</p>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="_sources/assembling.rst.txt">
+    <a href="_sources/vision.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>

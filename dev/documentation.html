@@ -12,10 +12,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/documentation.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Assembling: joining multiple tables- Fuzzy joining tables, Feature augmentation for machine learning, Going further: embeddings for better analytics., Encoding: creating feature matrices- Turning a..." />
+<meta property="og:description" content="Skrub facilitates preparing tables for machine learning. It is not a replacement for tools such as SQL or pandas, as these tools are much more versatile. Rather it gives higher-level operations for..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Assembling: joining multiple tables- Fuzzy joining tables, Feature augmentation for machine learning, Going further: embeddings for better analytics., Encoding: creating feature matrices- Turning a..." />
+<meta name="description" content="Skrub facilitates preparing tables for machine learning. It is not a replacement for tools such as SQL or pandas, as these tools are much more versatile. Rather it gives higher-level operations for..." />
 
     <title>User guide &#8212; skrub</title>
   
@@ -390,8 +390,13 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cleaning.html">Cleaning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="development.html">Development</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="vision.html">Vision: where is skrub heading?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CONTRIBUTING.html">Contributing to skrub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html">Changes</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </nav></div>
@@ -448,7 +453,177 @@ document.write(`
                   
   <section id="user-guide">
 <h1>User guide<a class="headerlink" href="#user-guide" title="Permalink to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
+<p>Skrub facilitates preparing tables for machine learning. It is not a
+replacement for tools such as SQL or pandas, as these tools are much more
+versatile. Rather it gives higher-level operations for machine-learning,
+typically with <a class="reference external" href="http://scikit-learn.org">scikit-learn</a> with its
+<a class="reference external" href="https://scikit-learn.org/stable/modules/compose.html">pipelines</a>.</p>
+<aside class="topic">
+<p class="topic-title">Skrub highlights:</p>
+<ul class="simple">
+<li><p>facilitates separating the train and test operations, for model
+selection and to put models in production</p></li>
+<li><p>enables statistical and imperfect assembly, as machine-learning models
+can typically retrieve signals even in noisy data.</p></li>
+</ul>
+</aside>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+ <script>
+ window.addEventListener('DOMContentLoaded', function() {
+      (function($) {
+ //Function to make the index toctree collapsible
+ $(function () {
+     $('main .toctree-l2')
+         .click(function(event){
+             if (event.target.tagName.toLowerCase() != "a") {
+                 if ($(this).children('ul').length > 0) {
+                      $(this).attr('data-content',
+                          (!$(this).children('ul').is(':hidden')) ? '\u25ba' : '\u25bc');
+                     $(this).children('ul').toggle();
+                 }
+                 return true; //Makes links clickable
+             }
+         })
+         .mousedown(function(event){ return false; }) //Firefox highlighting fix
+         .children('ul').hide();
+     // Initialize the values
+     $('main li.toctree-l2:not(:has(ul))').attr('data-content', '-');
+     $('main li.toctree-l2:has(ul)').attr('data-content', '\u25ba');
+     $('main li.toctree-l2:has(ul)').css('cursor', 'pointer');
+
+     $('main .toctree-l2').hover(
+         function () {
+             if ($(this).children('ul').length > 0) {
+                 $(this).css('background-color', '#88888844');
+                 $(this).attr('data-content',
+                     (!$(this).children('ul').is(':hidden')) ? '\u25bc' : '\u25ba');
+             }
+             else {
+                 $(this).css('background-color', '#88888844');
+             }
+         },
+         function () {
+             $(this).css('background-color', '#88888800');
+             if ($(this).children('ul').length > 0) {
+                 $(this).attr('data-content',
+                     (!$(this).children('ul').is(':hidden')) ? '\u25bc' : '\u25ba');
+             }
+         }
+     );
+ });
+      })(jQuery);
+  });
+ </script>
+
+<style type="text/css">
+  main li, div.body ul {
+      transition-duration: 0.2s;
+  }
+
+  main li.toctree-l1 {
+      padding: 5px 0 0;
+      list-style-type: none;
+      font-size: 150%;
+      font-weight: normal;
+      margin-left: 0;
+      margin-bottom: 1.2em;
+      font-weight: bold;
+      }
+
+  main li.toctree-l1 > a {
+      margin-left: 0px;
+  }
+
+  main li.toctree-l1 ul {
+      padding-inline-start: 0em;
+  }
+
+  main li.toctree-l2 {
+      padding: 0.25em 0 0.25em 0 ;
+      list-style-type: none;
+      font-size: 85% ;
+      font-weight: normal;
+      margin-left: 0;
+  }
+
+  main li.toctree-l2 ul {
+      padding-left: 30px ;
+  }
+
+  main li.toctree-l2:before {
+      content: attr(data-content);
+      font-size: 1rem;
+      color: #777;
+      display: inline-block;
+      width: 1.5rem;
+      margin-left: -1.5rem;
+  }
+
+  main li.toctree-l3 {
+      font-size: 88% ;
+      font-weight: normal;
+      margin-left: 0;
+  }
+
+  main li.toctree-l4 {
+      font-size: 93% ;
+      font-weight: normal;
+      margin-left: 0;
+  }
+
+  main div.topic li.toctree-l1 {
+      font-size: 100% ;
+      font-weight: bold;
+      background-color: transparent;
+      margin-bottom: 0;
+      margin-left: 1.5em;
+      display:inline;
+  }
+
+  main div.topic p {
+      font-size: 90% ;
+      margin: 0.4ex;
+  }
+
+  main div.topic p.topic-title {
+      display:inline;
+      font-size: 100% ;
+      margin-bottom: 0;
+  }
+
+  min li {
+      list-style-type: none;
+  }
+
+  main div.toctree-wrapper ul {
+      padding-left: 0;
+  }
+
+  main li.toctree-l1 {
+      padding: 0 0 0.5em 0;
+      font-size: 150%;
+      font-weight: bold;
+  }
+
+  main li.toctree-l2 {
+      font-size: 70%;
+      font-weight: normal;
+      margin-left: 30px;
+  }
+
+  main li.toctree-l3 {
+      font-size: 85%;
+      font-weight: normal;
+      margin-left: 30px;
+  }
+
+  main li.toctree-l4 {
+      margin-left: 30px;
+  }
+
+</style><div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling: joining multiple tables</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="assembling.html#fuzzy-joining-tables">Fuzzy joining tables</a></li>
@@ -466,8 +641,100 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="cleaning.html#deduplicate-merging-variants-of-the-same-entry"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code>: merging variants of the same entry</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="about.html#related-projects">Related projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vision.html">Vision: where is skrub heading?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="vision.html#vision-statement">Vision statement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="vision.html#roadmap">Roadmap</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CONTRIBUTING.html">Contributing to skrub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CONTRIBUTING.html#i-dont-want-to-read-the-whole-thing-i-just-have-a-question">I don’t want to read the whole thing I just have a question</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CONTRIBUTING.html#what-should-i-know-before-i-get-started">What should I know before I get started?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CONTRIBUTING.html#how-can-i-contribute">How can I contribute?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CONTRIBUTING.html#reporting-bugs">Reporting bugs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="CONTRIBUTING.html#how-do-i-submit-a-good-bug-report">How do I submit a (good) bug report?</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="CONTRIBUTING.html#suggesting-enhancements">Suggesting enhancements</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="CONTRIBUTING.html#how-do-i-submit-a-good-enhancement-proposal">How do I submit a (good) enhancement proposal?</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="CONTRIBUTING.html#if-the-enhancement-is-validated">If the enhancement is validated</a></li>
+<li class="toctree-l6"><a class="reference internal" href="CONTRIBUTING.html#if-the-enhancement-is-refused">If the enhancement is refused</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="CONTRIBUTING.html#writing-your-first-pull-request">Writing your first Pull Request</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="CONTRIBUTING.html#preparing-the-ground">Preparing the ground</a></li>
+<li class="toctree-l5"><a class="reference internal" href="CONTRIBUTING.html#setting-up-the-environment">Setting up the environment</a></li>
+<li class="toctree-l5"><a class="reference internal" href="CONTRIBUTING.html#implementation">Implementation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="CONTRIBUTING.html#submitting-your-code">Submitting your code</a></li>
+<li class="toctree-l5"><a class="reference internal" href="CONTRIBUTING.html#integration">Integration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html">Changes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#ongoing-development">Ongoing development</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#major-changes">Major changes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#before-skrub-dirty-cat">Before skrub: dirty_cat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-4-1">Dirty-cat release 0.4.1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id2">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#minor-changes">Minor changes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-4-0">Dirty-cat Release 0.4.0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id3">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id4">Minor changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#bug-fixes">Bug fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-3-0">Dirty-cat Release 0.3.0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id5">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-2-2">Dirty-cat Release 0.2.2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id6">Bug fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-2-1">Dirty-cat Release 0.2.1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id7">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id8">Bug-fixes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id9">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-2-0">Dirty-cat Release 0.2.0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id10">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id11">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-2-0a1">Dirty-cat Release 0.2.0a1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id12">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id13">Bug-fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-1-1">Dirty-cat Release 0.1.1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id14">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id15">Bug-fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-1-0">Dirty-cat Release 0.1.0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id16">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CHANGES.html#id17">Bug-fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-0-7">Dirty-cat Release 0.0.7</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-0-6">Dirty-cat Release 0.0.6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-0-5">Dirty-cat Release 0.0.5</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </section>

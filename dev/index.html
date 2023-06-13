@@ -403,34 +403,34 @@ document.write(`
         
         
 <div class="container-fluid schema-container">
-    <img src="_static/skrub_pipeline.svg" style="max-width:70%">
+    <img src="_static/skrub_pipeline.svg">
 </div>
 
 <article class="bd-article" role="main">
 <div class="bd-content">
-<div class="bd-article-container">
+<div class="landing-container">
 
 <div class="container-fluid">
   <div class="row justify-content-md-center">
     <div class="col-lg-4">
-      <div class="sd-card sd-shadow-sm">
+      <div class="sd-card sd-shadow-sm card-landing">
         <div class="card-body">
           <h4 class="card-title"><a href="assembling.html">Assembling</a></h4>
     <p><a class="reference internal" href="generated/skrub.fuzzy_join.html"
 title="skrub.fuzzy_join"><code class="xref py py-func docutils literal
 notranslate"><span class="pre">fuzzy_join()</span></code></a>, Joining
 tables on non-normalized categories with approximate matching. <a
-class="reference internal" href="example_fuzzy_join.html"><span class="std std-ref">Example</span></a></p>
+class="reference internal" href="auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html"><span class="std std-ref">Example</span></a></p>
 <p><a class="reference internal"
 href="generated/skrub.FeatureAugmenter.html"
 title="skrub.FeatureAugmenter"><code class="xref py py-class docutils
 literal notranslate"><span class="pre">FeatureAugmenter</span></code></a>, a transformer for joining
-multiple tables together. <a class="reference internal" href="example_feature_augmenter.html"><span class="std std-ref">Example</span></a></p>
+multiple tables together. <a class="reference internal" href="auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html"><span class="std std-ref">Example</span></a></p>
     </div>
   </div>
 </div>
 <div class="col-lg-4">
-  <div class="sd-card sd-shadow-sm">
+  <div class="sd-card sd-shadow-sm card-landing">
     <div class="card-body">
       <h4 class="card-title"><a href="encoding.html">Encoding</a></h4><p><a class="reference
 internal"
@@ -438,43 +438,34 @@ href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer"
 title="skrub.TableVectorizer"><code class="xref py py-class docutils
 literal notranslate"><span class="pre">TableVectorizer</span></code></a>:
 <strong>turn a pandas dataframe into a numerical array</strong> for
-machine learning. <a class="reference internal" href="example-table-vectorizer.html"><span class="std std-ref">Example</span></a></p>
+machine learning. <a class="reference internal" href="auto_examples/01_dirty_categories.html#example-table-vectorizer"><span class="std std-ref">Example</span></a></p>
 <p><a class="reference internal"
 href="generated/skrub.GapEncoder.html#skrub.GapEncoder"
 title="skrub.GapEncoder"><code class="xref py py-class docutils literal
 notranslate"><span class="pre">GapEncoder</span></code></a>,
 OneHotEncoder but robust to typos or non-normalized categories. <a
-class="reference internal" href="example_gap_encoder.html"><span class="std std-ref">Example</span></a></p>
+class="reference internal" href="auto_examples/02_investigating_dirty_categories.html#example-gap-encoder"><span class="std std-ref">Example</span></a></p>
     </div>
   </div>
 </div>
 <div class="col-lg-4">
-  <div class="sd-card sd-shadow-sm">
+  <div class="sd-card sd-shadow-sm card-landing">
     <div class="card-body">
       <h4 class="card-title"><a href="cleaning.html">Cleaning</a></h4><p><a class="reference
 internal" href="generated/skrub.deduplicate.html#skrub.deduplicate"
 title="skrub.deduplicate"><code class="xref py py-func docutils literal
 notranslate"><span class="pre">deduplicate()</span></code></a>: merge
-categories of similar morphology (spelling). <a class="reference internal" href="example_deduplication.html"><span class="std std-ref">Example</span></a></p>
+categories of similar morphology (spelling). <a class="reference internal" href="auto_examples/05_deduplication.html"><span class="std std-ref">Example</span></a></p>
         </div>
       </div>
     </div>
   </div>
-<br />
 </div>
-<div class="right-align docutils container">
-<p><a class="reference external" href="CHANGES.html">Recent changes</a></p>
-<p><a class="reference external" href="CONTRIBUTING.html">Contributing</a></p>
-</div>
-<div class="toctree-wrapper compound">
-</div>
-
 </article>
-              
 
-</div>
-</div>
               
+</div>
+</div>
 
       </main>
     </div>
@@ -484,40 +475,15 @@ categories of similar morphology (spelling). <a class="reference internal" href=
   <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
 <script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
-  <footer class="bd-footer">
-<div class="bd-footer__inner bd-page-width">
-  
-    <div class="footer-items__start">
-      
-        <div class="footer-item">
-  <p class="copyright">
-    
-      © Copyright 2018-2023, the skrub developers.
-      <br/>
-    
-  </p>
-</div>
-      
-        <div class="footer-item">
-  <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
-    <br/>
-  </p>
-</div>
-      
+<div class="container-fluid sk-landing-footer">
+  <div class="row justify-content-md-center">
+    <div class="col-lg-4">
+	<p><a href="CHANGES.html">Recent changes</a></p>
     </div>
-  
-  
-    <div class="footer-items__end">
-      
-        <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
-</p></div>
-      
+    <div class="col-lg-4">
+	<p><a href="CONTRIBUTING.html">Contributing</a></p>
     </div>
-  
+  </div>
 </div>
-
-  </footer>
   </body>
 </html>

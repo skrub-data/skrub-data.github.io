@@ -8,16 +8,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<meta property="og:title" content="Assembling: joining multiple tables" />
+<meta property="og:title" content="Development" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/assembling.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/development.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Assembling is the process of collecting and joining together tables. Good analytics requires including as much information as possible, often from different sources. skrub allows you to join tables..." />
+<meta property="og:description" content="While skrub is still being born, we believe in openess and community development from the start. Join us in building a great package to facilitate learning on databases. Vision: where is skrub head..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Assembling is the process of collecting and joining together tables. Good analytics requires including as much information as possible, often from different sources. skrub allows you to join tables..." />
+<meta name="description" content="While skrub is still being born, we believe in openess and community development from the start. Join us in building a great package to facilitate learning on databases. Vision: where is skrub head..." />
 
-    <title>Assembling: joining multiple tables &#8212; skrub</title>
+    <title>Development &#8212; skrub</title>
   
   
   
@@ -53,12 +53,12 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'assembling';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'development';</script>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Encoding: creating feature matrices" href="encoding.html" />
-    <link rel="prev" title="User guide" href="documentation.html" />
+    <link rel="next" title="Vision: where is skrub heading?" href="vision.html" />
+    <link rel="prev" title="Cleaning" href="cleaning.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -387,10 +387,10 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Assembling: joining multiple tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cleaning.html">Cleaning</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="development.html">Development</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Development</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="vision.html">Vision: where is skrub heading?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="about.html">About</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CONTRIBUTING.html">Contributing to skrub</a></li>
@@ -437,7 +437,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="documentation.html" class="nav-link">User guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Assembling: joining multiple tables</li>
+    <li class="breadcrumb-item active" aria-current="page">Development</li>
   </ul>
 </nav>
 </div>
@@ -454,50 +454,259 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="assembling-joining-multiple-tables">
-<span id="assembling"></span><h1>Assembling: joining multiple tables<a class="headerlink" href="#assembling-joining-multiple-tables" title="Permalink to this heading">#</a></h1>
-<p>Assembling is the process of collecting and joining together tables.
-Good analytics requires including as much information as possible,
-often from different sources.</p>
-<p>skrub allows you to join tables on keys of different types
-(string, numerical, datetime) with imprecise correspondance.</p>
-<section id="fuzzy-joining-tables">
-<h2>Fuzzy joining tables<a class="headerlink" href="#fuzzy-joining-tables" title="Permalink to this heading">#</a></h2>
-<p>Joining two dataframes can be hard as the corresponding keys may be different.</p>
-<p>The <a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> uses similarities in entries to join tables on one or more
-related columns. Furthermore, it choose the type of fuzzy matching used
-based on the column type (string, numerical or datetime).
-It also outputs a similarity score, to single out bad matches, so that they can be
-dropped or replaced.</p>
-<p>In sum, equivalent to <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html#pandas.merge" title="(in pandas v2.0.2)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.merge()</span></code></a>, the <a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>
-has no need for pre-cleaning.</p>
-</section>
-<section id="feature-augmentation-for-machine-learning">
-<h2>Feature augmentation for machine learning<a class="headerlink" href="#feature-augmentation-for-machine-learning" title="Permalink to this heading">#</a></h2>
-<p>Joining is pretty straigthforward for two tables: you only need to identify
-the common key.</p>
-<p>However, for more complex analysis, merging multiple tables is necessary.
-skrub provides the <a class="reference internal" href="generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code></a> as a convenient solution:
-multiple fuzzy joins can be performed at the same time, given a set of
-input tables and key columns.</p>
-<p>An advantage is the scikit-learn compatibility of this class:
-easily introduced into machine learning pipelines.</p>
-</section>
-<section id="going-further-embeddings-for-better-analytics">
-<h2>Going further: embeddings for better analytics<a class="headerlink" href="#going-further-embeddings-for-better-analytics" title="Permalink to this heading">#</a></h2>
-<p>Data collection comes before joining, but is also an
-essential process of table assembling.
-Although many datasets are available on the internet, it is not
-always easy to find the right one for your analysis.</p>
-<p>skrub has some very helpful methods that gives you easy
-access to embeddings, or vectorial representations of an entity,
-of all common entities from Wikipedia.
-You can use <a class="reference internal" href="generated/skrub.datasets.get_ken_embeddings.html#skrub.datasets.get_ken_embeddings" title="skrub.datasets.get_ken_embeddings"><code class="xref py py-func docutils literal notranslate"><span class="pre">datasets.get_ken_embeddings()</span></code></a> to search for the right
-embeddings and download them.</p>
-<p>Other methods, such as <a class="reference internal" href="generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator"><code class="xref py py-func docutils literal notranslate"><span class="pre">datasets.fetch_world_bank_indicator()</span></code></a> to
-fetch data of a World Bank indicator can also help you retrieve
-useful data that will be joined to another table.</p>
-</section>
+  <section id="development">
+<h1>Development<a class="headerlink" href="#development" title="Permalink to this heading">#</a></h1>
+<p>While skrub is still being born, we believe in openess and community
+development from the start. Join us in building a great package to
+facilitate learning on databases.</p>
+ <script>
+ window.addEventListener('DOMContentLoaded', function() {
+      (function($) {
+ //Function to make the index toctree collapsible
+ $(function () {
+     $('main .toctree-l2')
+         .click(function(event){
+             if (event.target.tagName.toLowerCase() != "a") {
+                 if ($(this).children('ul').length > 0) {
+                      $(this).attr('data-content',
+                          (!$(this).children('ul').is(':hidden')) ? '\u25ba' : '\u25bc');
+                     $(this).children('ul').toggle();
+                 }
+                 return true; //Makes links clickable
+             }
+         })
+         .mousedown(function(event){ return false; }) //Firefox highlighting fix
+         .children('ul').hide();
+     // Initialize the values
+     $('main li.toctree-l2:not(:has(ul))').attr('data-content', '-');
+     $('main li.toctree-l2:has(ul)').attr('data-content', '\u25ba');
+     $('main li.toctree-l2:has(ul)').css('cursor', 'pointer');
+
+     $('main .toctree-l2').hover(
+         function () {
+             if ($(this).children('ul').length > 0) {
+                 $(this).css('background-color', '#88888844');
+                 $(this).attr('data-content',
+                     (!$(this).children('ul').is(':hidden')) ? '\u25bc' : '\u25ba');
+             }
+             else {
+                 $(this).css('background-color', '#88888844');
+             }
+         },
+         function () {
+             $(this).css('background-color', '#88888800');
+             if ($(this).children('ul').length > 0) {
+                 $(this).attr('data-content',
+                     (!$(this).children('ul').is(':hidden')) ? '\u25bc' : '\u25ba');
+             }
+         }
+     );
+ });
+      })(jQuery);
+  });
+ </script>
+
+<style type="text/css">
+  main li, div.body ul {
+      transition-duration: 0.2s;
+  }
+
+  main li.toctree-l1 {
+      padding: 5px 0 0;
+      list-style-type: none;
+      font-size: 150%;
+      font-weight: normal;
+      margin-left: 0;
+      margin-bottom: 1.2em;
+      font-weight: bold;
+      }
+
+  main li.toctree-l1 > a {
+      margin-left: 0px;
+  }
+
+  main li.toctree-l1 ul {
+      padding-inline-start: 0em;
+  }
+
+  main li.toctree-l2 {
+      padding: 0.25em 0 0.25em 0 ;
+      list-style-type: none;
+      font-size: 85% ;
+      font-weight: normal;
+      margin-left: 0;
+  }
+
+  main li.toctree-l2 ul {
+      padding-left: 30px ;
+  }
+
+  main li.toctree-l2:before {
+      content: attr(data-content);
+      font-size: 1rem;
+      color: #777;
+      display: inline-block;
+      width: 1.5rem;
+      margin-left: -1.5rem;
+  }
+
+  main li.toctree-l3 {
+      font-size: 88% ;
+      font-weight: normal;
+      margin-left: 0;
+  }
+
+  main li.toctree-l4 {
+      font-size: 93% ;
+      font-weight: normal;
+      margin-left: 0;
+  }
+
+  main div.topic li.toctree-l1 {
+      font-size: 100% ;
+      font-weight: bold;
+      background-color: transparent;
+      margin-bottom: 0;
+      margin-left: 1.5em;
+      display:inline;
+  }
+
+  main div.topic p {
+      font-size: 90% ;
+      margin: 0.4ex;
+  }
+
+  main div.topic p.topic-title {
+      display:inline;
+      font-size: 100% ;
+      margin-bottom: 0;
+  }
+
+  min li {
+      list-style-type: none;
+  }
+
+  main div.toctree-wrapper ul {
+      padding-left: 0;
+  }
+
+  main li.toctree-l1 {
+      padding: 0 0 0.5em 0;
+      font-size: 150%;
+      font-weight: bold;
+  }
+
+  main li.toctree-l2 {
+      font-size: 70%;
+      font-weight: normal;
+      margin-left: 30px;
+  }
+
+  main li.toctree-l3 {
+      font-size: 85%;
+      font-weight: normal;
+      margin-left: 30px;
+  }
+
+  main li.toctree-l4 {
+      margin-left: 30px;
+  }
+
+</style><div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="vision.html">Vision: where is skrub heading?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vision.html#vision-statement">Vision statement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vision.html#roadmap">Roadmap</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CONTRIBUTING.html">Contributing to skrub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CONTRIBUTING.html#i-dont-want-to-read-the-whole-thing-i-just-have-a-question">I don’t want to read the whole thing I just have a question</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CONTRIBUTING.html#what-should-i-know-before-i-get-started">What should I know before I get started?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CONTRIBUTING.html#how-can-i-contribute">How can I contribute?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CONTRIBUTING.html#reporting-bugs">Reporting bugs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CONTRIBUTING.html#how-do-i-submit-a-good-bug-report">How do I submit a (good) bug report?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="CONTRIBUTING.html#suggesting-enhancements">Suggesting enhancements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CONTRIBUTING.html#how-do-i-submit-a-good-enhancement-proposal">How do I submit a (good) enhancement proposal?</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="CONTRIBUTING.html#if-the-enhancement-is-validated">If the enhancement is validated</a></li>
+<li class="toctree-l5"><a class="reference internal" href="CONTRIBUTING.html#if-the-enhancement-is-refused">If the enhancement is refused</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="CONTRIBUTING.html#writing-your-first-pull-request">Writing your first Pull Request</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CONTRIBUTING.html#preparing-the-ground">Preparing the ground</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CONTRIBUTING.html#setting-up-the-environment">Setting up the environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CONTRIBUTING.html#implementation">Implementation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CONTRIBUTING.html#submitting-your-code">Submitting your code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CONTRIBUTING.html#integration">Integration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CHANGES.html">Changes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#ongoing-development">Ongoing development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#major-changes">Major changes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#before-skrub-dirty-cat">Before skrub: dirty_cat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-4-1">Dirty-cat release 0.4.1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id2">Major changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#minor-changes">Minor changes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-4-0">Dirty-cat Release 0.4.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id3">Major changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id4">Minor changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#bug-fixes">Bug fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-3-0">Dirty-cat Release 0.3.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id5">Major changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-2-2">Dirty-cat Release 0.2.2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id6">Bug fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-2-1">Dirty-cat Release 0.2.1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id7">Major changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id8">Bug-fixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id9">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-2-0">Dirty-cat Release 0.2.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id10">Major changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id11">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-2-0a1">Dirty-cat Release 0.2.0a1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id12">Major changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id13">Bug-fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-1-1">Dirty-cat Release 0.1.1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id14">Major changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id15">Bug-fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-1-0">Dirty-cat Release 0.1.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id16">Major changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CHANGES.html#id17">Bug-fixes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-0-7">Dirty-cat Release 0.0.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-0-6">Dirty-cat Release 0.0.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html#dirty-cat-release-0-0-5">Dirty-cat Release 0.0.5</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </section>
 
 
@@ -512,20 +721,20 @@ useful data that will be joined to another table.</p>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="documentation.html"
+       href="cleaning.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">User guide</p>
+        <p class="prev-next-title">Cleaning</p>
       </div>
     </a>
     <a class="right-next"
-       href="encoding.html"
+       href="vision.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Encoding: creating feature matrices</p>
+        <p class="prev-next-title">Vision: where is skrub heading?</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -542,21 +751,9 @@ useful data that will be joined to another table.</p>
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuzzy-joining-tables">Fuzzy joining tables</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-augmentation-for-machine-learning">Feature augmentation for machine learning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#going-further-embeddings-for-better-analytics">Going further: embeddings for better analytics</a></li>
-</ul>
-  </nav></div>
-
-  <div class="sidebar-secondary-item">
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/skrub_data/skrub/edit/main/docs/assembling.rst">
+    <a href="https://github.com/skrub_data/skrub/edit/main/docs/development.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -570,7 +767,7 @@ useful data that will be joined to another table.</p>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="_sources/assembling.rst.txt">
+    <a href="_sources/development.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>

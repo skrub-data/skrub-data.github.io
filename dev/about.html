@@ -12,10 +12,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/about.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="skrub is a young project born from research. We really need people giving feedback on successes and failures with the different techniques on real world data, and pointing us to open datasets on wh..." />
+<meta property="og:description" content="skrub shares much of its DNA with scikit-learn. skrub is the continuation of dirty-cat with a broader scope and a broader ambition. skrub is a young project born from research. We really need peopl..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="skrub is a young project born from research. We really need people giving feedback on successes and failures with the different techniques on real world data, and pointing us to open datasets on wh..." />
+<meta name="description" content="skrub shares much of its DNA with scikit-learn. skrub is the continuation of dirty-cat with a broader scope and a broader ambition. skrub is a young project born from research. We really need peopl..." />
 
     <title>About &#8212; skrub</title>
   
@@ -57,8 +57,8 @@
     <link rel="author" title="About these documents" href="#" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="API" href="api.html" />
-    <link rel="prev" title="Cleaning" href="cleaning.html" />
+    <link rel="next" title="Contributing to skrub" href="CONTRIBUTING.html" />
+    <link rel="prev" title="Vision: where is skrub heading?" href="vision.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -390,8 +390,13 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cleaning.html">Cleaning</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">About</a></li>
-
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="development.html">Development</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="vision.html">Vision: where is skrub heading?</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">About</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CONTRIBUTING.html">Contributing to skrub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CHANGES.html">Changes</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </nav></div>
@@ -432,6 +437,9 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="documentation.html" class="nav-link">User guide</a></li>
     
+    
+    <li class="breadcrumb-item"><a href="development.html" class="nav-link">Development</a></li>
+    
     <li class="breadcrumb-item active" aria-current="page">About</li>
   </ul>
 </nav>
@@ -451,26 +459,14 @@ document.write(`
                   
   <section id="about">
 <h1>About<a class="headerlink" href="#about" title="Permalink to this heading">#</a></h1>
+<p>skrub shares much of its DNA with <a class="reference external" href="https://scikit-learn.org">scikit-learn</a>.</p>
+<p>skrub is the continuation of <a class="reference external" href="http://dirty-cat.github.io">dirty-cat</a>
+with a broader scope and a broader ambition.</p>
 <p>skrub is a young project born from research. We really need people
 giving feedback on successes and failures with the different techniques on real
 world data, and pointing us to open datasets on which we can do more
-empirical work.
-skrub received funding from <a class="reference external" href="https://project.inria.fr/dirtydata/">project DirtyData</a> (ANR-17-CE23-0018).</p>
-</section>
-<section id="related-projects">
-<h1>Related projects<a class="headerlink" href="#related-projects" title="Permalink to this heading">#</a></h1>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/scikit-learn/scikit-learn">scikit-learn</a>
-- a very popular machine learning library; <em>skrub</em> inherits its API</p></li>
-<li><p><a class="reference external" href="https://contrib.scikit-learn.org/category_encoders/">categorical-encoding</a>
-- scikit-learn compatible classic categorical encoding schemes</p></li>
-<li><p><a class="reference external" href="https://github.com/rakutentech/spark-dirty-cat">spark-dirty-cat</a>
-- a Scala implementation of skrub for Spark ML</p></li>
-<li><p><a class="reference external" href="https://github.com/alan-turing-institute/CleverCSV">CleverCSV</a>
-- a package for dealing with dirty csv files</p></li>
-<li><p><a class="reference external" href="https://github.com/openml-labs/gama">GAMA</a>
-- a modular AutoML assistant that uses <em>skrub</em> as part of its search space</p></li>
-</ul>
+empirical work.</p>
+<p>skrub received funding from <a class="reference external" href="https://project.inria.fr/dirtydata/">project DirtyData</a> (ANR-17-CE23-0018).</p>
 </section>
 
 
@@ -485,20 +481,20 @@ skrub received funding from <a class="reference external" href="https://project.
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="cleaning.html"
+       href="vision.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Cleaning</p>
+        <p class="prev-next-title">Vision: where is skrub heading?</p>
       </div>
     </a>
     <a class="right-next"
-       href="api.html"
+       href="CONTRIBUTING.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">API</p>
+        <p class="prev-next-title">Contributing to skrub</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -513,18 +509,6 @@ skrub received funding from <a class="reference external" href="https://project.
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">About</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#related-projects">Related projects</a></li>
-</ul>
-
-  </nav></div>
 
   <div class="sidebar-secondary-item">
   
