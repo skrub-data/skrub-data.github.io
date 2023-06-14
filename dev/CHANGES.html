@@ -479,6 +479,11 @@ added to the signature. <a class="reference external" href="https://github.com/s
 <section id="minor-changes">
 <h3>Minor changes<a class="headerlink" href="#minor-changes" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
+<li><p>Removed the <cite>most_frequent</cite> and <cite>k-means</cite> strategies from the <a class="reference internal" href="generated/skrub.SimilarityEncoder.html#skrub.SimilarityEncoder" title="skrub.SimilarityEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimilarityEncoder</span></code></a>.
+These strategy were used for scalability reasons, but we recommend using the <a class="reference internal" href="generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>
+or the <a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> instead. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/596">#596</a> by <a class="reference external" href="https://github.com/LeoGrin">Leo Grinsztajn</a></p></li>
+<li><p>Removed the <cite>similarity</cite> argument from the <a class="reference internal" href="generated/skrub.SimilarityEncoder.html#skrub.SimilarityEncoder" title="skrub.SimilarityEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimilarityEncoder</span></code></a> constructor,
+as we only support the ngram similarity. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/596">#596</a> by <a class="reference external" href="https://github.com/LeoGrin">Leo Grinsztajn</a></p></li>
 <li><p>Some bug fixes for <a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> ( <a class="reference external" href="https://github.com/skrub-data/skrub/pull/579">#579</a>):</p>
 <ul>
 <li><p><cite>check_is_fitted</cite> now looks at <cite>“transformers_”</cite> rather than <cite>“columns_”</cite></p></li>
