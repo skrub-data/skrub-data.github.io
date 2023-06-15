@@ -282,15 +282,15 @@ Extracting entity embeddings
 We will use KEN embeddings to enrich our data.
 
 We will start by checking out the available tables with
-:class:`~skrub.datasets.get_ken_table_aliases`:
+:class:`~skrub.datasets.fetch_ken_table_aliases`:
 
 .. GENERATED FROM PYTHON SOURCE LINES 93-97
 
 .. code-block:: default
 
-    from skrub.datasets import get_ken_table_aliases
+    from skrub.datasets import fetch_ken_table_aliases
 
-    get_ken_table_aliases()
+    fetch_ken_table_aliases()
 
 
 
@@ -301,7 +301,7 @@ We will start by checking out the available tables with
  .. code-block:: none
 
 
-    {'albums', 'movies', 'games', 'companies', 'all_entities', 'schools'}
+    {'movies', 'all_entities', 'schools', 'companies', 'games', 'albums'}
 
 
 
@@ -309,15 +309,15 @@ We will start by checking out the available tables with
 
 The *games* table is the most relevant to our case.
 Let's see what kind of types we can find in it with the function
-:class:`~skrub.datasets.get_ken_types`:
+:class:`~skrub.datasets.fetch_ken_types`:
 
 .. GENERATED FROM PYTHON SOURCE LINES 101-105
 
 .. code-block:: default
 
-    from skrub.datasets import get_ken_types
+    from skrub.datasets import fetch_ken_types
 
-    get_ken_types(embedding_table_id="games")
+    fetch_ken_types(embedding_table_id="games")
 
 
 
@@ -351,23 +351,23 @@ Let's see what kind of types we can find in it with the function
       <tbody>
         <tr>
           <th>0</th>
-          <td>&lt;wikicat_1994_video_games&gt;</td>
+          <td>wikicat_1994_video_games</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>&lt;wikicat_irem_games&gt;</td>
+          <td>wikicat_irem_games</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>&lt;wikicat_ea_guingamp_players&gt;</td>
+          <td>wikicat_ea_guingamp_players</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>&lt;wikicat_video_game_companies_of_the_united_ki...</td>
+          <td>wikicat_video_game_companies_of_the_united_kin...</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>&lt;wikicat_asian_games_medalists_in_swimming&gt;</td>
+          <td>wikicat_asian_games_medalists_in_swimming</td>
         </tr>
         <tr>
           <th>...</th>
@@ -375,23 +375,23 @@ Let's see what kind of types we can find in it with the function
         </tr>
         <tr>
           <th>636</th>
-          <td>&lt;wikicat_college_football_games&gt;</td>
+          <td>wikicat_college_football_games</td>
         </tr>
         <tr>
           <th>637</th>
-          <td>&lt;wikicat_sonic_team_games&gt;</td>
+          <td>wikicat_sonic_team_games</td>
         </tr>
         <tr>
           <th>638</th>
-          <td>&lt;wikicat_space_opera_video_games&gt;</td>
+          <td>wikicat_space_opera_video_games</td>
         </tr>
         <tr>
           <th>639</th>
-          <td>&lt;wikicat_boxers_at_the_2002_asian_games&gt;</td>
+          <td>wikicat_boxers_at_the_2002_asian_games</td>
         </tr>
         <tr>
           <th>640</th>
-          <td>&lt;wikicat_motorcycle_video_games&gt;</td>
+          <td>wikicat_motorcycle_video_games</td>
         </tr>
       </tbody>
     </table>
@@ -405,14 +405,14 @@ Let's see what kind of types we can find in it with the function
 
 Interesting, we have a broad range of topics!
 
-Next, we'll use :class:`~skrub.datasets.get_ken_embeddings`
+Next, we'll use :class:`~skrub.datasets.fetch_ken_embeddings`
 to extract the embeddings of entities we need:
 
 .. GENERATED FROM PYTHON SOURCE LINES 110-112
 
 .. code-block:: default
 
-    from skrub.datasets import get_ken_embeddings
+    from skrub.datasets import fetch_ken_embeddings
 
 
 
@@ -421,22 +421,26 @@ to extract the embeddings of entities we need:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 113-120
+.. GENERATED FROM PYTHON SOURCE LINES 113-124
 
 KEN Embeddings are classified by types.
-The :class:`~skrub.datasets.get_ken_embeddings` function
+See the example on :class:`~skrub.datasets.fetch_ken_embeddings`
+to understand how you can filter types you are interested in.
+
+The :class:`~skrub.datasets.fetch_ken_embeddings` function
 allows us to specify the types to be included and/or excluded
 so as not to load all Wikipedia entity embeddings in a table.
+
 
 In a first table, we include all embeddings with the type name "game"
 and exclude those with type name "companies" or "developer".
 
-.. GENERATED FROM PYTHON SOURCE LINES 120-126
+.. GENERATED FROM PYTHON SOURCE LINES 124-130
 
 .. code-block:: default
 
-    embedding_games = get_ken_embeddings(
-        types="game",
+    embedding_games = fetch_ken_embeddings(
+        search_types="game",
         exclude="companies|developer",
         embedding_table_id="games",
     )
@@ -448,17 +452,17 @@ and exclude those with type name "companies" or "developer".
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 127-129
+.. GENERATED FROM PYTHON SOURCE LINES 131-133
 
 In a second table, we include all embeddings containing the type name
 "game_development_companies", "game_companies" or "game_publish":
 
-.. GENERATED FROM PYTHON SOURCE LINES 129-142
+.. GENERATED FROM PYTHON SOURCE LINES 133-146
 
 .. code-block:: default
 
-    embedding_publisher = get_ken_embeddings(
-        types="game_development_companies|game_companies|game_publish",
+    embedding_publisher = fetch_ken_embeddings(
+        search_types="game_development_companies|game_companies|game_publish",
         embedding_table_id="games",
         suffix="_aux",
     )
@@ -477,7 +481,7 @@ In a second table, we include all embeddings containing the type name
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 143-152
+.. GENERATED FROM PYTHON SOURCE LINES 147-156
 
 Merging the entities
 ....................
@@ -489,7 +493,7 @@ The entities from the 'embedding_games' table will be merged along the
 column "Name" and the ones from 'embedding_publisher' table with the
 column "Publisher"
 
-.. GENERATED FROM PYTHON SOURCE LINES 152-160
+.. GENERATED FROM PYTHON SOURCE LINES 156-164
 
 .. code-block:: default
 
@@ -508,7 +512,7 @@ column "Publisher"
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 161-167
+.. GENERATED FROM PYTHON SOURCE LINES 165-171
 
 Prediction with base features
 -----------------------------
@@ -517,13 +521,13 @@ We will forget for now the KEN Embeddings and build a typical learning
 pipeline, where will we try to predict the amount of sales only using
 the base features contained in the initial table.
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-172
+.. GENERATED FROM PYTHON SOURCE LINES 173-176
 
 We first use scikit-learn's |ColumnTransformer| to define the columns
 that will be included in the learning process and the appropriate encoding of
 categorical variables using the |MinHash| and |OneHotEncoder|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 172-187
+.. GENERATED FROM PYTHON SOURCE LINES 176-191
 
 .. code-block:: default
 
@@ -549,12 +553,12 @@ categorical variables using the |MinHash| and |OneHotEncoder|:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 188-190
+.. GENERATED FROM PYTHON SOURCE LINES 192-194
 
 We incorporate our |ColumnTransformer| into a |Pipeline|.
 We define a predictor, |HGBR|, fast and reliable for big datasets.
 
-.. GENERATED FROM PYTHON SOURCE LINES 190-196
+.. GENERATED FROM PYTHON SOURCE LINES 194-200
 
 .. code-block:: default
 
@@ -571,11 +575,11 @@ We define a predictor, |HGBR|, fast and reliable for big datasets.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 197-198
+.. GENERATED FROM PYTHON SOURCE LINES 201-202
 
 The |Pipeline| can now be readily applied to the dataframe for prediction:
 
-.. GENERATED FROM PYTHON SOURCE LINES 198-219
+.. GENERATED FROM PYTHON SOURCE LINES 202-223
 
 .. code-block:: default
 
@@ -614,7 +618,7 @@ The |Pipeline| can now be readily applied to the dataframe for prediction:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 220-225
+.. GENERATED FROM PYTHON SOURCE LINES 224-229
 
 Prediction with KEN Embeddings
 ------------------------------
@@ -622,11 +626,11 @@ Prediction with KEN Embeddings
 We will now build a second learning pipeline using only the KEN embeddings
 from Wikipedia.
 
-.. GENERATED FROM PYTHON SOURCE LINES 227-228
+.. GENERATED FROM PYTHON SOURCE LINES 231-232
 
 We keep only the embeddings columns:
 
-.. GENERATED FROM PYTHON SOURCE LINES 228-232
+.. GENERATED FROM PYTHON SOURCE LINES 232-236
 
 .. code-block:: default
 
@@ -641,11 +645,11 @@ We keep only the embeddings columns:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 233-234
+.. GENERATED FROM PYTHON SOURCE LINES 237-238
 
 We redefine the |Pipeline|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 234-236
+.. GENERATED FROM PYTHON SOURCE LINES 238-240
 
 .. code-block:: default
 
@@ -658,11 +662,11 @@ We redefine the |Pipeline|:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 237-238
+.. GENERATED FROM PYTHON SOURCE LINES 241-242
 
 Let's look at the results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 238-253
+.. GENERATED FROM PYTHON SOURCE LINES 242-257
 
 .. code-block:: default
 
@@ -690,17 +694,17 @@ Let's look at the results:
  .. code-block:: none
 
     With KEN Embeddings:
-    Mean R2 is 0.36 +- 0.01 and the RMSE is 1.16 +- 0.01
+    Mean R2 is 0.36 +- 0.01 and the RMSE is 1.17 +- 0.01
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 254-256
+.. GENERATED FROM PYTHON SOURCE LINES 258-260
 
 It seems including the embeddings is very relevant for the prediction task
 at hand!
 
-.. GENERATED FROM PYTHON SOURCE LINES 258-264
+.. GENERATED FROM PYTHON SOURCE LINES 262-268
 
 Prediction with KEN Embeddings and base features
 ------------------------------------------------
@@ -709,11 +713,11 @@ As we have seen the predictions scores in the case when embeddings are
 only present and when they are missing, we will do a final prediction
 with all variables included.
 
-.. GENERATED FROM PYTHON SOURCE LINES 266-267
+.. GENERATED FROM PYTHON SOURCE LINES 270-271
 
 We include both the embeddings and the base features:
 
-.. GENERATED FROM PYTHON SOURCE LINES 267-276
+.. GENERATED FROM PYTHON SOURCE LINES 271-280
 
 .. code-block:: default
 
@@ -733,11 +737,11 @@ We include both the embeddings and the base features:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 277-278
+.. GENERATED FROM PYTHON SOURCE LINES 281-282
 
 We redefine the |Pipeline|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 278-280
+.. GENERATED FROM PYTHON SOURCE LINES 282-284
 
 .. code-block:: default
 
@@ -750,11 +754,11 @@ We redefine the |Pipeline|:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 281-282
+.. GENERATED FROM PYTHON SOURCE LINES 285-286
 
 Let's look at the results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 282-297
+.. GENERATED FROM PYTHON SOURCE LINES 286-301
 
 .. code-block:: default
 
@@ -782,19 +786,19 @@ Let's look at the results:
  .. code-block:: none
 
     With KEN Embeddings and base features:
-    Mean R2 is 0.49 +- 0.01 and the RMSE is 1.05 +- 0.01
+    Mean R2 is 0.49 +- 0.01 and the RMSE is 1.04 +- 0.01
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 298-302
+.. GENERATED FROM PYTHON SOURCE LINES 302-306
 
 Plotting the results
 ....................
 
 Finally, we plot the scores on a boxplot:
 
-.. GENERATED FROM PYTHON SOURCE LINES 302-309
+.. GENERATED FROM PYTHON SOURCE LINES 306-313
 
 .. code-block:: default
 
@@ -817,7 +821,7 @@ Finally, we plot the scores on a boxplot:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 310-319
+.. GENERATED FROM PYTHON SOURCE LINES 314-323
 
 There is a clear improvement when including the KEN embeddings among the
 explanatory variables.
@@ -832,7 +836,7 @@ It helped significantly improve the prediction score.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 10 minutes  3.289 seconds)
+   **Total running time of the script:** ( 9 minutes  33.275 seconds)
 
 
 .. _sphx_glr_download_auto_examples_06_ken_embeddings_example.py:

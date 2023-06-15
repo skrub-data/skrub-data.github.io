@@ -7,16 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="skrub.datasets.get_ken_types" />
+<meta property="og:title" content="skrub.datasets.fetch_ken_embeddings" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/generated/skrub.datasets.get_ken_types.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/generated/skrub.datasets.fetch_ken_embeddings.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Examples using skrub.datasets.get_ken_types: Wikipedia embeddings to enrich the data" />
+<meta property="og:description" content="Examples using skrub.datasets.fetch_ken_embeddings: Wikipedia embeddings to enrich the data" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_images/sphx_glr_06_ken_embeddings_example_thumb.png" />
 <meta property="og:image:alt" content="" />
-<meta name="description" content="Examples using skrub.datasets.get_ken_types: Wikipedia embeddings to enrich the data" />
+<meta name="description" content="Examples using skrub.datasets.fetch_ken_embeddings: Wikipedia embeddings to enrich the data" />
 
-    <title>skrub.datasets.get_ken_types &#8212; skrub</title>
+    <title>skrub.datasets.fetch_ken_embeddings &#8212; skrub</title>
   
   
   
@@ -53,12 +53,12 @@
     <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.datasets.get_ken_types';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.datasets.fetch_ken_embeddings';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="skrub.datasets.get_ken_embeddings" href="skrub.datasets.get_ken_embeddings.html" />
-    <link rel="prev" title="skrub.datasets.get_ken_table_aliases" href="skrub.datasets.get_ken_table_aliases.html" />
+    <link rel="next" title="skrub.datasets.make_deduplication_data" href="skrub.datasets.make_deduplication_data.html" />
+    <link rel="prev" title="skrub.datasets.fetch_ken_types" href="skrub.datasets.fetch_ken_types.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -430,10 +430,9 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_traffic_violations.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_traffic_violations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_drug_directory.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_drug_directory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_world_bank_indicator.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_world_bank_indicator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.get_ken_table_aliases.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.get_ken_table_aliases</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.get_ken_types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.get_ken_embeddings.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.get_ken_embeddings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.get_data_dir.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.get_data_dir</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_table_aliases.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_table_aliases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_types.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_types</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_embeddings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.make_deduplication_data.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.make_deduplication_data</a></li>
 </ul>
 </div>
@@ -475,7 +474,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../api.html" class="nav-link">API</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.get_ken_types</li>
+    <li class="breadcrumb-item active" aria-current="page"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_embeddings</li>
   </ul>
 </nav>
 </div>
@@ -492,29 +491,42 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="skrub-datasets-get-ken-types">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.get_ken_types<a class="headerlink" href="#skrub-datasets-get-ken-types" title="Permalink to this heading">#</a></h1>
+  <section id="skrub-datasets-fetch-ken-embeddings">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_embeddings<a class="headerlink" href="#skrub-datasets-fetch-ken-embeddings" title="Permalink to this heading">#</a></h1>
 <dl class="py function">
-<dt class="sig sig-object py" id="skrub.datasets.get_ken_types">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">get_ken_types</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">search</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_table_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all_entities'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f4eec17/skrub/datasets/_ken_embeddings.py#L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.get_ken_types" title="Permalink to this definition">#</a></dt>
-<dd><p>Helper function to search for KEN entity types.</p>
-<p>The result can then be used with <a class="reference internal" href="skrub.datasets.get_ken_embeddings.html#skrub.datasets.get_ken_embeddings" title="skrub.datasets.get_ken_embeddings"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_ken_embeddings()</span></code></a>.</p>
+<dt class="sig sig-object py" id="skrub.datasets.fetch_ken_embeddings">
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_ken_embeddings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">search_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_table_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all_entities'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_type_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pca_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8c83949/skrub/datasets/_ken_embeddings.py#L137"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_ken_embeddings" title="Permalink to this definition">#</a></dt>
+<dd><p>Download Wikipedia embeddings by type.</p>
+<p>More details on the embeddings can be found on
+<a class="reference external" href="https://soda-inria.github.io/ken_embeddings/">https://soda-inria.github.io/ken_embeddings/</a>.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>search</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Substring pattern that filters the types of entities.</p>
+<dt><strong>search_types</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Substring pattern that filters the types of entities.
+Will keep all entity types containing the substring.
+Write in lowercase. If <cite>None</cite>, all types will be passed.</p>
 </dd>
-<dt><strong>exclude</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Substring pattern to exclude from the search.</p>
+<dt><strong>exclude</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Type of embeddings to exclude from the types search.</p>
 </dd>
 <dt><strong>embedding_table_id</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=’all_entities’</span></dt><dd><p>Table of embedded entities from which to extract the embeddings.
-Get the supported tables with <a class="reference internal" href="skrub.datasets.get_ken_table_aliases.html#skrub.datasets.get_ken_table_aliases" title="skrub.datasets.get_ken_table_aliases"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_ken_table_aliases()</span></code></a>.
-It is NOT possible to pass a custom figshare ID.</p>
+Get the supported tables with <a class="reference internal" href="skrub.datasets.fetch_ken_table_aliases.html#skrub.datasets.fetch_ken_table_aliases" title="skrub.datasets.fetch_ken_table_aliases"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_table_aliases()</span></code></a>.
+It is also possible to pass a custom figshare ID.</p>
+</dd>
+<dt><strong>embedding_type_id</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Figshare ID of the file containing the type of embeddings.
+Get the supported tables with <a class="reference internal" href="skrub.datasets.fetch_ken_types.html#skrub.datasets.fetch_ken_types" title="skrub.datasets.fetch_ken_types"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_types()</span></code></a>.
+Ignored unless a custom <cite>embedding_table_id</cite> is provided.</p>
+</dd>
+<dt><strong>pca_components</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Size of the dimensional space on which the embeddings will be projected
+by a principal component analysis.
+If None, the default dimension (200) of the embeddings will be kept.</p>
+</dd>
+<dt><strong>suffix</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code>, default=’’</span></dt><dd><p>Suffix to add to the column names of the embeddings.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></dt><dd><p>The types of entities containing the substring.</p>
+<dt><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></dt><dd><p>The embeddings of entities and the specified type from Wikipedia.</p>
 </dd>
 </dl>
 </dd>
@@ -522,20 +534,67 @@ It is NOT possible to pass a custom figshare ID.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="skrub.datasets.get_ken_embeddings.html#skrub.datasets.get_ken_embeddings" title="skrub.datasets.get_ken_embeddings"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_ken_embeddings()</span></code></a></dt><dd><p>Download Wikipedia embeddings by type.</p>
+<dt><a class="reference internal" href="skrub.datasets.fetch_ken_table_aliases.html#skrub.datasets.fetch_ken_table_aliases" title="skrub.datasets.fetch_ken_table_aliases"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_table_aliases()</span></code></a></dt><dd><p>Get the supported aliases of embedded entities tables.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.datasets.fetch_ken_types.html#skrub.datasets.fetch_ken_types" title="skrub.datasets.fetch_ken_types"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_types()</span></code></a></dt><dd><p>Helper function to search for entity types.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.fuzzy_join()</span></code></a></dt><dd><p>Join two tables (dataframes) based on approximate column matching.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.FeatureAugmenter</span></code></a></dt><dd><p>Transformer to enrich a given table via one or more fuzzy joins to external resources.</p>
 </dd>
 </dl>
 </div>
 <p class="rubric">Notes</p>
-<p>Best used in conjunction with <a class="reference internal" href="skrub.datasets.get_ken_embeddings.html#skrub.datasets.get_ken_embeddings" title="skrub.datasets.get_ken_embeddings"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_ken_embeddings()</span></code></a>.</p>
+<p>The files are read and returned in parquet format, this function needs
+pyarrow installed to run correctly.</p>
+<p>The <cite>search_types</cite> parameter is there to filter the types by the input string
+pattern.
+In case the input is “music”, all types with this string will be included
+(e.g. “wikicat_musician_from_france”, “wikicat_music_label” etc.).
+Going directly for the exact type name (e.g. “wikicat_rock_music_bands”)
+is possible but may not be complete (as some relevant bands may be
+in other similar types).
+For exploring available types, the <a class="reference internal" href="skrub.datasets.fetch_ken_types.html#skrub.datasets.fetch_ken_types" title="skrub.datasets.fetch_ken_types"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_types()</span></code></a>
+function can be used.</p>
 <p class="rubric">References</p>
 <p>For more details, see Cvetkov-Iliev, A., Allauzen, A. &amp; Varoquaux, G.:
 <a class="reference external" href="https://doi.org/10.1007/s10994-022-06277-7">Relational data embeddings for feature enrichment
 with background information.</a></p>
+<p class="rubric">Examples</p>
+<p><a class="reference internal" href="#skrub.datasets.fetch_ken_embeddings" title="skrub.datasets.fetch_ken_embeddings"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_embeddings()</span></code></a> allows you to extract embeddings
+you are interested in. For instance, if we are interested in
+video games:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">games_embedding</span> <span class="o">=</span> <span class="n">fetch_ken_embeddings</span><span class="p">(</span><span class="n">search_types</span><span class="o">=</span><span class="s2">&quot;video_games&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">games_embedding</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="go">                Entity                       Type                       ...      X198      X199</span>
+<span class="go">0       The_Mysterious_Island  wikicat_novels_adapted_into_video_games  ... -0.072814 -0.156973</span>
+<span class="go">1    Storyteller_(video_game)             wikicat_upcoming_video_games  ...  0.059816  0.021077</span>
+<span class="go">2  Skull_&amp;_Bones_(video_game)        wikicat_video_games_about_pirates  ... -0.141682  0.024204</span>
+<span class="go">3               Ethan_Winters   wikicat_male_characters_in_video_games  ... -0.107913 -0.089531</span>
+<span class="go">4                     Cruis&#39;n               wikicat_racing_video_games  ... -0.260757  0.060700</span>
+</pre></div>
+</div>
+<p>Extracts all embeddings with the “games” type. 
+For the list of existing types see <a class="reference internal" href="skrub.datasets.fetch_ken_types.html#skrub.datasets.fetch_ken_types" title="skrub.datasets.fetch_ken_types"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_types()</span></code></a>.</p>
+<p>Some tables are available pre-filtered for us using the 
+<cite>embedding_table_id</cite> parameter:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">games_embedding_fast</span> <span class="o">=</span> <span class="n">fetch_ken_embeddings</span><span class="p">(</span><span class="n">embedding_table_id</span><span class="o">=</span><span class="s2">&quot;games&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">games_embedding_fast</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="go">                 Entity                               Type                      ...      X198      X199</span>
+<span class="go">0              R-Type_Delta                                 wikicat_irem_games  ... -0.125806  0.040006</span>
+<span class="go">1  Just_Add_Water_(company)  wikicat_video_game_companies_of_the_united_kin...  ...  0.067210 -0.025676</span>
+<span class="go">2                 Li_Xiayan          wikicat_asian_games_medalists_in_swimming  ... -0.104818  0.003485</span>
+<span class="go">3             Vampire_Night                        wikicat_vampire_video_games  ... -0.118209 -0.145383</span>
+<span class="go">4               Shatterhand                             wikicat_platform_games  ... -0.138462  0.197820</span>
+</pre></div>
+</div>
+<p>It takes less time to load the wanted output, and is more precise as the
+types have been carefully filtered out.
+For a list of pre-filtered tables, see func:<cite>fetch_ken_table_aliases</cite>.</p>
 </dd></dl>
 
-<section id="examples-using-skrub-datasets-get-ken-types">
-<h2>Examples using <code class="docutils literal notranslate"><span class="pre">skrub.datasets.get_ken_types</span></code><a class="headerlink" href="#examples-using-skrub-datasets-get-ken-types" title="Permalink to this heading">#</a></h2>
+<section id="examples-using-skrub-datasets-fetch-ken-embeddings">
+<h2>Examples using <code class="docutils literal notranslate"><span class="pre">skrub.datasets.fetch_ken_embeddings</span></code><a class="headerlink" href="#examples-using-skrub-datasets-fetch-ken-embeddings" title="Permalink to this heading">#</a></h2>
 <div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="When the data comprises common entities (cities, companies or famous people), bringing new info..."><img alt="" src="../_images/sphx_glr_06_ken_embeddings_example_thumb.png" />
 <p><a class="reference internal" href="../auto_examples/06_ken_embeddings_example.html#sphx-glr-auto-examples-06-ken-embeddings-example-py"><span class="std std-ref">Wikipedia embeddings to enrich the data</span></a></p>
   <div class="sphx-glr-thumbnail-title">Wikipedia embeddings to enrich the data</div>
@@ -554,20 +613,20 @@ with background information.</a></p>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.datasets.get_ken_table_aliases.html"
+       href="skrub.datasets.fetch_ken_types.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.get_ken_table_aliases</p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_types</p>
       </div>
     </a>
     <a class="right-next"
-       href="skrub.datasets.get_ken_embeddings.html"
+       href="skrub.datasets.make_deduplication_data.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.get_ken_embeddings</p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.make_deduplication_data</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -589,15 +648,15 @@ with background information.</a></p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.datasets.get_ken_types"><code class="docutils literal notranslate"><span class="pre">get_ken_types()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-using-skrub-datasets-get-ken-types">Examples using <code class="docutils literal notranslate"><span class="pre">skrub.datasets.get_ken_types</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.datasets.fetch_ken_embeddings"><code class="docutils literal notranslate"><span class="pre">fetch_ken_embeddings()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-using-skrub-datasets-fetch-ken-embeddings">Examples using <code class="docutils literal notranslate"><span class="pre">skrub.datasets.fetch_ken_embeddings</span></code></a></li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/skrub_data/skrub/edit/main/docs/generated/skrub.datasets.get_ken_types.rst">
+    <a href="https://github.com/skrub_data/skrub/edit/main/docs/generated/skrub.datasets.fetch_ken_embeddings.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -611,7 +670,7 @@ with background information.</a></p>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="../_sources/generated/skrub.datasets.get_ken_types.rst.txt">
+    <a href="../_sources/generated/skrub.datasets.fetch_ken_embeddings.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
