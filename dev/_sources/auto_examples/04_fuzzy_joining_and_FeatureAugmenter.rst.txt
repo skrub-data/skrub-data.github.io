@@ -1393,14 +1393,11 @@ variables: y
 
 Let us now define the model that will be used to predict the happiness score:
 
-.. GENERATED FROM PYTHON SOURCE LINES 315-325
+.. GENERATED FROM PYTHON SOURCE LINES 315-322
 
 .. code-block:: default
 
-    from sklearn import __version__ as sklearn_version
 
-    if sklearn_version < "1.0":
-        from sklearn.experimental import enable_hist_gradient_boosting
     from sklearn.ensemble import HistGradientBoostingRegressor
     from sklearn.model_selection import KFold
 
@@ -1414,14 +1411,14 @@ Let us now define the model that will be used to predict the happiness score:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 326-330
+.. GENERATED FROM PYTHON SOURCE LINES 323-327
 
 To evaluate our model, we will apply a `4-fold cross-validation`.
 We evaluate our model using the `R2` score.
 
 Let's finally assess the results of our models:
 
-.. GENERATED FROM PYTHON SOURCE LINES 330-338
+.. GENERATED FROM PYTHON SOURCE LINES 327-335
 
 .. code-block:: default
 
@@ -1446,7 +1443,7 @@ Let's finally assess the results of our models:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 339-350
+.. GENERATED FROM PYTHON SOURCE LINES 336-347
 
 We have a satisfying first result: an R2 of 0.66!
 
@@ -1460,7 +1457,7 @@ Data transformation is also often very costly in both time and ressources.
 Now up to you, try improving our model by adding information into it and
 beating our result!
 
-.. GENERATED FROM PYTHON SOURCE LINES 352-359
+.. GENERATED FROM PYTHON SOURCE LINES 349-356
 
 Using the |fa| to fuzzy join multiple tables
 --------------------------------------------
@@ -1470,14 +1467,14 @@ to `X` is to use the |fa|.
 The |fa| is a transformer that can easily chain joins of tables on
 a main table.
 
-.. GENERATED FROM PYTHON SOURCE LINES 361-365
+.. GENERATED FROM PYTHON SOURCE LINES 358-362
 
 .. _example_feature_augmenter:
 
 Instantiating the transformer
 .............................
 
-.. GENERATED FROM PYTHON SOURCE LINES 365-367
+.. GENERATED FROM PYTHON SOURCE LINES 362-364
 
 .. code-block:: default
 
@@ -1490,13 +1487,13 @@ Instantiating the transformer
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 368-371
+.. GENERATED FROM PYTHON SOURCE LINES 365-368
 
 We gather the auxilliary tables into a
 list of (tables, keys) for the `tables` parameter.
 An instance of the transformer with the necessary information is:
 
-.. GENERATED FROM PYTHON SOURCE LINES 371-382
+.. GENERATED FROM PYTHON SOURCE LINES 368-379
 
 .. code-block:: default
 
@@ -1518,14 +1515,14 @@ An instance of the transformer with the necessary information is:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 383-387
+.. GENERATED FROM PYTHON SOURCE LINES 380-384
 
 Fitting and transforming into the final table
 .............................................
 To get our final joined table we will fit and transform the main table (df)
 with our create instance of the |fa|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 387-391
+.. GENERATED FROM PYTHON SOURCE LINES 384-388
 
 .. code-block:: default
 
@@ -1687,13 +1684,13 @@ with our create instance of the |fa|:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 392-395
+.. GENERATED FROM PYTHON SOURCE LINES 389-392
 
 And that's it! As previously, we now have a big table
 ready for machine learning.
 Let's create our machine learning pipeline:
 
-.. GENERATED FROM PYTHON SOURCE LINES 395-413
+.. GENERATED FROM PYTHON SOURCE LINES 392-410
 
 .. code-block:: default
 
@@ -1722,13 +1719,13 @@ Let's create our machine learning pipeline:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 414-417
+.. GENERATED FROM PYTHON SOURCE LINES 411-414
 
 And the best part is that we are now able to evaluate the parameters of the |fj|.
 For instance, the ``match_score`` was manually picked and can now be
 introduced into a grid search:
 
-.. GENERATED FROM PYTHON SOURCE LINES 417-427
+.. GENERATED FROM PYTHON SOURCE LINES 414-424
 
 .. code-block:: default
 
@@ -1755,13 +1752,13 @@ introduced into a grid search:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 428-431
+.. GENERATED FROM PYTHON SOURCE LINES 425-428
 
 The grid searching gave us the best value of 0.5 for the parameter
 ``match_score``. Let's use this value in our regression:
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 431-434
+.. GENERATED FROM PYTHON SOURCE LINES 428-431
 
 .. code-block:: default
 
@@ -1781,7 +1778,7 @@ The grid searching gave us the best value of 0.5 for the parameter
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 435-446
+.. GENERATED FROM PYTHON SOURCE LINES 432-443
 
 .. topic:: Note:
 
@@ -1798,7 +1795,7 @@ results significantly!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  14.085 seconds)
+   **Total running time of the script:** ( 0 minutes  13.015 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining_and_FeatureAugmenter.py:
