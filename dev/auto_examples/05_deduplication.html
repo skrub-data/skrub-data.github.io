@@ -487,13 +487,11 @@ misspelled category names in an unsupervised manner.</p>
 <h2>An example dataset<a class="headerlink" href="#an-example-dataset" title="Permalink to this heading">#</a></h2>
 <p>Imagine the following example:
 As a data scientist, our job is to analyze the data from a hospital ward.
-We notice that most of the cases involve the prescription of one of three different medications:</p>
-<blockquote>
-<div><p>“Contrivan”, “Genericon”, or “Zipholan”.</p>
-</div></blockquote>
-<p>However, data entry is manual and - either because the prescribing doctor’s handwriting
-was hard to decipher, or due to mistakes during data input - there are multiple
-spelling mistakes for these three medications.</p>
+We notice that most of the cases involve the prescription of one of three different
+medications: “Contrivan”, “Genericon”, or “Zipholan”.
+However, data entry is manual and - either because the prescribing doctor’s
+handwriting was hard to decipher, or due to mistakes during data input - there are
+multiple spelling mistakes for these three medications.</p>
 <p>Let’s generate some example data that demonstrate this.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">skrub.datasets</span> <span class="kn">import</span> <a href="../generated/skrub.datasets.make_deduplication_data.html#skrub.datasets.make_deduplication_data" title="skrub.datasets.make_deduplication_data" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">make_deduplication_data</span></a>
@@ -655,7 +653,7 @@ correspondance for the last entry as such:</p>
 <span class="k">assert</span> <span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">new_deduplicated_names</span></a> <span class="o">==</span> <span class="s2">&quot;Completely new category&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span>
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  4.769 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  4.227 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-05-deduplication-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/05_deduplication.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

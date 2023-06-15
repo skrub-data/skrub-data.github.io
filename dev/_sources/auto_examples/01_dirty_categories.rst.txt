@@ -678,7 +678,7 @@ and store the returned cross-validation score:
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
       warnings.warn(
     gap encoding
-    r2 score:  mean: 0.920; std: 0.013
+    r2 score:  mean: 0.925; std: 0.014
 
 
 
@@ -727,7 +727,7 @@ The clear trend is that encoders grasping similarities between categories
 data than the |MinHash| and |Gap|. The most scalable encoder is
 the |MinHash|. On the other hand, the |Gap| has the benefit of
 providing interpretable features
-(see :ref:`sphx_glr_auto_examples_02_investigating_skrubegories.py`)
+(see :ref:`sphx_glr_auto_examples_02_investigating_dirty_categories.py`)
 
 |
 
@@ -1013,9 +1013,9 @@ Let's perform a cross-validation to see how well this model predicts:
 
  .. code-block:: none
 
-    scores=[0.93041073 0.90081561 0.92892392 0.9362048  0.93060474]
-    mean=0.9253919604887282
-    std=0.012535952031418102
+    scores=[0.91887171 0.90101092 0.93211123 0.93078923 0.93029534]
+    mean=0.9226156852681807
+    std=0.011804513837937191
 
 
 
@@ -1091,7 +1091,7 @@ The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
 
     array([[2.00700000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-            5.57870734e-02, 5.70357147e-02, 5.69951409e-02],
+            5.33132452e-02, 5.57926167e-02, 7.26228159e-02],
            [2.00500000e+03, 1.00000000e+00, 0.00000000e+00, ...,
             5.00000000e-02, 5.00000000e-02, 5.00000000e-02],
            [2.00900000e+03, 1.00000000e+00, 0.00000000e+00, ...,
@@ -1362,7 +1362,7 @@ having a permanent, full-time job :)
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 2 minutes  54.811 seconds)
+   **Total running time of the script:** ( 2 minutes  51.770 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_dirty_categories.py:
