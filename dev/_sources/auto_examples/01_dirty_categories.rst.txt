@@ -678,7 +678,7 @@ and store the returned cross-validation score:
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:868: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
       warnings.warn(
     gap encoding
-    r2 score:  mean: 0.923; std: 0.018
+    r2 score:  mean: 0.922; std: 0.014
 
 
 
@@ -1013,9 +1013,9 @@ Let's perform a cross-validation to see how well this model predicts:
 
  .. code-block:: none
 
-    scores=[0.91698858 0.90050499 0.92882267 0.92703513 0.93227638]
-    mean=0.9211255481903514
-    std=0.011496362468762258
+    scores=[0.92337354 0.89793351 0.92275086 0.93821126 0.93168212]
+    mean=0.9227902587471742
+    std=0.013675322505259288
 
 
 
@@ -1091,7 +1091,7 @@ The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
 
     array([[2.00700000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-            5.63883026e-02, 5.59842819e-02, 5.11371036e-02],
+            5.54726528e-02, 5.55829243e-02, 8.00972781e-02],
            [2.00500000e+03, 1.00000000e+00, 0.00000000e+00, ...,
             5.00000000e-02, 5.00000000e-02, 5.00000000e-02],
            [2.00900000e+03, 1.00000000e+00, 0.00000000e+00, ...,
@@ -1362,7 +1362,7 @@ having a permanent, full-time job :)
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 2 minutes  24.435 seconds)
+   **Total running time of the script:** ( 2 minutes  51.563 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_dirty_categories.py:
