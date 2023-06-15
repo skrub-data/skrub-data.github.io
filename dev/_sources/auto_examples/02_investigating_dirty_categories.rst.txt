@@ -129,6 +129,7 @@ As we can see, some entries have many unique values:
 
  .. code-block:: none
 
+    employee_position_title
     Abandoned Vehicle Code Enforcement Specialist        4
     Accountant/Auditor I                                 3
     Accountant/Auditor II                                1
@@ -140,7 +141,7 @@ As we can see, some entries have many unique values:
     Work Force Leader II                                28
     Work Force Leader III                                2
     Work Force Leader IV                                 9
-    Name: employee_position_title, Length: 385, dtype: int64
+    Name: count, Length: 385, dtype: int64
 
 
 
@@ -242,7 +243,7 @@ representation to get an intuition of what the |SE| is doing:
 
  .. code-block:: none
 
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.9/site-packages/sklearn/manifold/_mds.py:299: FutureWarning: The default value of `normalized_stress` will change to `'auto'` in version 1.4. To suppress this warning, manually set the value of `normalized_stress`.
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/manifold/_mds.py:299: FutureWarning: The default value of `normalized_stress` will change to `'auto'` in version 1.4. To suppress this warning, manually set the value of `normalized_stress`.
       warnings.warn(
     (385, 2)
     (385,)
@@ -549,7 +550,7 @@ effect latent categories captured from the data.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.396 seconds)
+   **Total running time of the script:** ( 0 minutes  8.506 seconds)
 
 
 .. _sphx_glr_download_auto_examples_02_investigating_dirty_categories.py:
