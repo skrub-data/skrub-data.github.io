@@ -37,6 +37,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
@@ -50,6 +51,8 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/05_deduplication';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -158,6 +161,13 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../documentation.html">
                         User guide
@@ -295,6 +305,13 @@ document.write(`
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../documentation.html">
                         User guide
@@ -638,7 +655,7 @@ correspondance for the last entry as such:</p>
 <span class="k">assert</span> <span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">new_deduplicated_names</span></a> <span class="o">==</span> <span class="s2">&quot;Completely new category&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span>
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  4.680 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  4.170 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-05-deduplication-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/05_deduplication.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -755,7 +772,7 @@ correspondance for the last entry as such:</p>
         <div class="footer-item">
   <p class="copyright">
     
-      © Copyright 2018-2023, the skrub developers.
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2023, the skrub developers.
       <br/>
     
   </p>

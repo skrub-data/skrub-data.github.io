@@ -37,6 +37,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
@@ -50,6 +51,8 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/06_ken_embeddings_example';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -157,6 +160,13 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../documentation.html">
                         User guide
@@ -294,6 +304,13 @@ document.write(`
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../documentation.html">
                         User guide
@@ -620,7 +637,7 @@ Name: Global_Sales, Length: 16572, dtype: float64
 <a href="../generated/skrub.datasets.get_ken_table_aliases.html#skrub.datasets.get_ken_table_aliases" title="skrub.datasets.get_ken_table_aliases" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">get_ken_table_aliases</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;movies&#39;, &#39;schools&#39;, &#39;albums&#39;, &#39;games&#39;, &#39;companies&#39;, &#39;all_entities&#39;}
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;schools&#39;, &#39;companies&#39;, &#39;all_entities&#39;, &#39;games&#39;, &#39;movies&#39;, &#39;albums&#39;}
 </pre></div>
 </div>
 <p>The <em>games</em> table is the most relevant to our case.
@@ -914,7 +931,7 @@ explanatory variables.</p>
 additional background information on the game and the publisher of the
 game that would otherwise be missed.</p>
 <p>It helped significantly improve the prediction score.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 10 minutes  28.638 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 9 minutes  37.072 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-06-ken-embeddings-example-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/06_ken_embeddings_example.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -1030,7 +1047,7 @@ game that would otherwise be missed.</p>
         <div class="footer-item">
   <p class="copyright">
     
-      © Copyright 2018-2023, the skrub developers.
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2023, the skrub developers.
       <br/>
     
   </p>

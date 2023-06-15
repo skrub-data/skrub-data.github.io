@@ -37,6 +37,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
@@ -50,6 +51,8 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.MinHashEncoder';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -158,6 +161,13 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../documentation.html">
                         User guide
@@ -296,6 +306,13 @@ document.write(`
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="../documentation.html">
                         User guide
                       </a>
@@ -384,6 +401,12 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.fuzzy_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.FeatureAugmenter.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.TableVectorizer.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.TableVectorizer</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
@@ -394,12 +417,6 @@ document.write(`
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.DatetimeEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.DatetimeEncoder</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.fuzzy_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.FeatureAugmenter.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.deduplicate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.deduplicate</a></li>
@@ -480,7 +497,7 @@ document.write(`
 <p class="side-comment">Usage examples at the bottom of this page.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.MinHashEncoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">MinHashEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hashing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'fast'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minmax_hash</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_missing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zero_impute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/_minhash_encoder.py#L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">MinHashEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hashing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'fast'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minmax_hash</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_missing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zero_impute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/_minhash_encoder.py#L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder" title="Permalink to this definition">#</a></dt>
 <dd><p>Encode string categorical features by applying the MinHash method to n-gram decompositions of strings.</p>
 <p>The principle is as follows:</p>
 <ol class="arabic simple">
@@ -498,25 +515,25 @@ instead.
 With this procedure, strings that share many n-grams have a greater
 probability of having the same encoding value. These encodings thus capture
 morphological similarities between strings.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>n_components</strong><span class="classifier">int, default=30</span></dt><dd><p>The number of dimension of encoded strings. Numbers around 300 tend to
+<dd class="field-odd"><dl>
+<dt><strong>n_components</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=30</span></dt><dd><p>The number of dimension of encoded strings. Numbers around 300 tend to
 lead to good prediction performance, but with more computational cost.</p>
 </dd>
-<dt><strong>ngram_range</strong><span class="classifier">2-tuple of int, default=(2, 4)</span></dt><dd><p>The lower and upper boundaries of the range of n-values for different
+<dt><strong>ngram_range</strong><span class="classifier">2-tuple <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=(2, 4)</span></dt><dd><p>The lower and upper boundaries of the range of n-values for different
 n-grams used in the string similarity. All values of <cite>n</cite> such
 that <code class="docutils literal notranslate"><span class="pre">min_n</span> <span class="pre">&lt;=</span> <span class="pre">n</span> <span class="pre">&lt;=</span> <span class="pre">max_n</span></code> will be used.</p>
 </dd>
 <dt><strong>hashing</strong><span class="classifier">{‘fast’, ‘murmur’}, default=’fast’</span></dt><dd><p>Hashing function. <cite>fast</cite> is faster than <cite>murmur</cite> but
 might have some concern with its entropy.</p>
 </dd>
-<dt><strong>minmax_hash</strong><span class="classifier">bool, default=False</span></dt><dd><p>If <cite>True</cite>, returns the min and max hashes concatenated.</p>
+<dt><strong>minmax_hash</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>If <cite>True</cite>, returns the min and max hashes concatenated.</p>
 </dd>
 <dt><strong>handle_missing</strong><span class="classifier">{‘error’, ‘zero_impute’}, default=’zero_impute’</span></dt><dd><p>Whether to raise an error or encode missing values (NaN) with
 vectors filled with zeros.</p>
 </dd>
-<dt><strong>n_jobs</strong><span class="classifier">int, optional</span></dt><dd><p>The number of jobs to run in parallel.
+<dt><strong>n_jobs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>The number of jobs to run in parallel.
 The hash computations for all unique elements are parallelized.
 <cite>None</cite> means 1 unless in a <code class="xref py py-class docutils literal notranslate"><span class="pre">joblib.parallel_backend</span></code>.
 -1 means using all processors.
@@ -563,10 +580,10 @@ See <a class="reference external" href="https://scikit-learn.org/stable/glossary
 <span class="go">        -1.45918266e+09, -1.58098831e+09]])</span>
 </pre></div>
 </div>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Attributes<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>hash_dict_</strong><span class="classifier">LRUDict</span></dt><dd><p>Computed hashes.</p>
+<dd class="field-odd"><dl>
+<dt><strong>hash_dict_</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LRUDict</span></code></span></dt><dd><p>Computed hashes.</p>
 </dd>
 </dl>
 </dd>
@@ -596,16 +613,16 @@ See <a class="reference external" href="https://scikit-learn.org/stable/glossary
 </table>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.MinHashEncoder.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/_minhash_encoder.py#L228"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder.fit" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/_minhash_encoder.py#L228"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder.fit" title="Permalink to this definition">#</a></dt>
 <dd><p>Fit the MinHashEncoder to <cite>X</cite>.</p>
 <p>In practice, just initializes a dictionary
 to store encodings to speed up computation.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>X</strong><span class="classifier">array-like, shape (n_samples, ) or (n_samples, n_columns)</span></dt><dd><p>The string data to encode. Only here for compatibility.</p>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.24)"><span>array_like</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, ) <code class="xref py py-obj docutils literal notranslate"><span class="pre">or</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_columns</span></code>)</span></dt><dd><p>The string data to encode. Only here for compatibility.</p>
 </dd>
-<dt><strong>y</strong><span class="classifier">None</span></dt><dd><p>Unused, only here for compatibility.</p>
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Unused, only here for compatibility.</p>
 </dd>
 </dl>
 </dd>
@@ -620,24 +637,24 @@ to store encodings to speed up computation.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.MinHashEncoder.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/../sklearn/base.py#L850"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder.fit_transform" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/../sklearn/base.py#L850"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder.fit_transform" title="Permalink to this definition">#</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to <cite>X</cite> and <cite>y</cite> with optional parameters <cite>fit_params</cite>
 and returns a transformed version of <cite>X</cite>.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>X</strong><span class="classifier">array-like of shape (n_samples, n_features)</span></dt><dd><p>Input samples.</p>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.24)"><span>array_like</span></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_features</span></code>)</span></dt><dd><p>Input samples.</p>
 </dd>
-<dt><strong>y</strong><span class="classifier">array-like of shape (n_samples,) or (n_samples, n_outputs),                 default=None</span></dt><dd><p>Target values (None for unsupervised transformations).</p>
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.24)"><span>array_like</span></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (n_samples,) <code class="xref py py-obj docutils literal notranslate"><span class="pre">or</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_outputs</span></code>),                 default=None</span></dt><dd><p>Target values (None for unsupervised transformations).</p>
 </dd>
-<dt><strong>**fit_params</strong><span class="classifier">dict</span></dt><dd><p>Additional fit parameters.</p>
+<dt><strong>**fit_params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Additional fit parameters.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>X_new</strong><span class="classifier">ndarray array of shape (n_samples, n_features_new)</span></dt><dd><p>Transformed array.</p>
+<dd class="field-even"><dl>
+<dt><strong>X_new</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a> <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">array</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_features_new</span></code>)</span></dt><dd><p>Transformed array.</p>
 </dd>
 </dl>
 </dd>
@@ -646,19 +663,19 @@ and returns a transformed version of <cite>X</cite>.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.MinHashEncoder.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/../sklearn/base.py#L153"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder.get_params" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/../sklearn/base.py#L153"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder.get_params" title="Permalink to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>deep</strong><span class="classifier">bool, default=True</span></dt><dd><p>If True, will return the parameters for this estimator and
+<dd class="field-odd"><dl>
+<dt><strong>deep</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>If True, will return the parameters for this estimator and
 contained subobjects that are estimators.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>params</strong><span class="classifier">dict</span></dt><dd><p>Parameter names mapped to their values.</p>
+<dd class="field-even"><dl>
+<dt><strong>params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Parameter names mapped to their values.</p>
 </dd>
 </dl>
 </dd>
@@ -667,11 +684,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.MinHashEncoder.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/../sklearn/utils/_set_output.py#L208"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder.set_output" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/../sklearn/utils/_set_output.py#L208"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder.set_output" title="Permalink to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.2)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>transform</strong><span class="classifier">{“default”, “pandas”}, default=None</span></dt><dd><p>Configure output of <cite>transform</cite> and <cite>fit_transform</cite>.</p>
@@ -684,8 +701,8 @@ for an example on how to use the API.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>self</strong><span class="classifier">estimator instance</span></dt><dd><p>Estimator instance.</p>
+<dd class="field-even"><dl>
+<dt><strong>self</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">estimator</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">instance</span></code></span></dt><dd><p>Estimator instance.</p>
 </dd>
 </dl>
 </dd>
@@ -694,22 +711,22 @@ for an example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.MinHashEncoder.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/../sklearn/base.py#L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder.set_params" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/../sklearn/base.py#L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder.set_params" title="Permalink to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
 parameters of the form <code class="docutils literal notranslate"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it’s
 possible to update each component of a nested object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>**params</strong><span class="classifier">dict</span></dt><dd><p>Estimator parameters.</p>
+<dd class="field-odd"><dl>
+<dt><strong>**params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Estimator parameters.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>self</strong><span class="classifier">estimator instance</span></dt><dd><p>Estimator instance.</p>
+<dd class="field-even"><dl>
+<dt><strong>self</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">estimator</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">instance</span></code></span></dt><dd><p>Estimator instance.</p>
 </dd>
 </dl>
 </dd>
@@ -718,18 +735,18 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.MinHashEncoder.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/_minhash_encoder.py#L259"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder.transform" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/_minhash_encoder.py#L259"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MinHashEncoder.transform" title="Permalink to this definition">#</a></dt>
 <dd><p>Transform <cite>X</cite> using specified encoding scheme.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>X</strong><span class="classifier">array-like, shape (n_samples, ) or (n_samples, n_columns)</span></dt><dd><p>The string data to encode.</p>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.24)"><span>array_like</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, ) <code class="xref py py-obj docutils literal notranslate"><span class="pre">or</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_columns</span></code>)</span></dt><dd><p>The string data to encode.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a> of shape (n_samples, n_columns * n_components)</dt><dd><p>Transformed input.</p>
+<dt><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_columns</span></code> * <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_components</span></code>)</dt><dd><p>Transformed input.</p>
 </dd>
 </dl>
 </dd>
@@ -856,7 +873,7 @@ possible to update each component of a nested object.</p>
         <div class="footer-item">
   <p class="copyright">
     
-      © Copyright 2018-2023, the skrub developers.
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2023, the skrub developers.
       <br/>
     
   </p>

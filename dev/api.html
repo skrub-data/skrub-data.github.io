@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/api.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="This page lists all the functions and classes of skrub: Vectorizing a dataframe: Dirty category encoders: Other encoders: Joining tables: Deduplication: merging variants of the same entry: Data dow..." />
+<meta property="og:description" content="This page lists all available functions and classes of skrub Joining tables: Vectorizing a dataframe: Dirty category encoders: Other encoders: Deduplication: merging variants of the same entry: Dat..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="This page lists all the functions and classes of skrub: Vectorizing a dataframe: Dirty category encoders: Other encoders: Joining tables: Deduplication: merging variants of the same entry: Data dow..." />
+<meta name="description" content="This page lists all available functions and classes of skrub Joining tables: Vectorizing a dataframe: Dirty category encoders: Other encoders: Deduplication: merging variants of the same entry: Dat..." />
 
     <title>API &#8212; skrub</title>
   
@@ -37,6 +37,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css" />
@@ -50,11 +51,13 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'api';</script>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="skrub.TableVectorizer" href="generated/skrub.TableVectorizer.html" />
+    <link rel="next" title="skrub.fuzzy_join" href="generated/skrub.fuzzy_join.html" />
     <link rel="prev" title="Changes" href="CHANGES.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -158,6 +161,13 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="documentation.html">
                         User guide
@@ -296,6 +306,13 @@ document.write(`
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="documentation.html">
                         User guide
                       </a>
@@ -384,6 +401,12 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.fuzzy_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.FeatureAugmenter.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.TableVectorizer.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.TableVectorizer</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -394,12 +417,6 @@ document.write(`
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.DatetimeEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.DatetimeEncoder</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.fuzzy_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.FeatureAugmenter.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.deduplicate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.deduplicate</a></li>
@@ -474,7 +491,24 @@ document.write(`
                   
   <section id="api">
 <h1>API<a class="headerlink" href="#api" title="Permalink to this heading">#</a></h1>
-<p>This page lists all the functions and classes of skrub:</p>
+<p>This page lists all available functions and classes of skrub</p>
+<section id="joining-tables">
+<h2>Joining tables<a class="headerlink" href="#joining-tables" title="Permalink to this heading">#</a></h2>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fuzzy_join</span></code></a></p></td>
+<td><p>Join two tables based on approximate matching using the appropriate similarity metric.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code></a></p></td>
+<td><p>Augment a main table by automatically joining multiple auxiliary tables on it.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="vectorizing-a-dataframe">
 <h2>Vectorizing a dataframe<a class="headerlink" href="#vectorizing-a-dataframe" title="Permalink to this heading">#</a></h2>
 <table class="autosummary longtable table autosummary">
@@ -510,23 +544,6 @@ document.write(`
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a></p></td>
 <td><p>Transforms each datetime column into several numeric columns for temporal features (e.g year, month, day...).</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="joining-tables">
-<h2>Joining tables<a class="headerlink" href="#joining-tables" title="Permalink to this heading">#</a></h2>
-<table class="autosummary longtable table autosummary">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fuzzy_join</span></code></a></p></td>
-<td><p>Join two tables based on approximate matching using the appropriate similarity metric.</p></td>
-</tr>
-</tbody>
-</table>
-<table class="autosummary longtable table autosummary">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code></a></p></td>
-<td><p>Augment a main table by automatically joining multiple auxiliary tables on it.</p></td>
 </tr>
 </tbody>
 </table>
@@ -610,11 +627,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="generated/skrub.TableVectorizer.html"
+       href="generated/skrub.fuzzy_join.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.TableVectorizer</p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -636,12 +653,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vectorizing-a-dataframe">Vectorizing a dataframe</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-category-encoders">Dirty category encoders</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-encoders">Other encoders</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#joining-tables">Joining tables</a><ul class="nav section-nav flex-column">
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vectorizing-a-dataframe">Vectorizing a dataframe</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-category-encoders">Dirty category encoders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-encoders">Other encoders</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deduplication-merging-variants-of-the-same-entry">Deduplication: merging variants of the same entry</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-download-and-generation">Data download and generation</a></li>
 </ul>
@@ -694,7 +711,7 @@ document.write(`
         <div class="footer-item">
   <p class="copyright">
     
-      © Copyright 2018-2023, the skrub developers.
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2023, the skrub developers.
       <br/>
     
   </p>

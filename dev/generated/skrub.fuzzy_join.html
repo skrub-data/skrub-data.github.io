@@ -37,6 +37,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
@@ -50,12 +51,14 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.fuzzy_join';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="skrub.FeatureAugmenter" href="skrub.FeatureAugmenter.html" />
-    <link rel="prev" title="skrub.DatetimeEncoder" href="skrub.DatetimeEncoder.html" />
+    <link rel="prev" title="API" href="../api.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -158,6 +161,13 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../documentation.html">
                         User guide
@@ -296,6 +306,13 @@ document.write(`
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="../documentation.html">
                         User guide
                       </a>
@@ -383,7 +400,13 @@ document.write(`
         <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.FeatureAugmenter.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.TableVectorizer.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.TableVectorizer</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -394,12 +417,6 @@ document.write(`
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.DatetimeEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.DatetimeEncoder</a></li>
-</ul>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.FeatureAugmenter.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.deduplicate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.deduplicate</a></li>
@@ -479,7 +496,7 @@ document.write(`
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join<a class="headerlink" href="#skrub-fuzzy-join" title="Permalink to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.fuzzy_join">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">fuzzy_join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">how</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">left_on</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right_on</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">match_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_unmatched</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffixes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('_x',</span> <span class="pre">'_y')</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/_fuzzy_join.py#L196"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.fuzzy_join" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">fuzzy_join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">how</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">left_on</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right_on</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">match_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_unmatched</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffixes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('_x',</span> <span class="pre">'_y')</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/_fuzzy_join.py#L196"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.fuzzy_join" title="Permalink to this definition">#</a></dt>
 <dd><p>Join two tables based on approximate matching using the appropriate similarity metric.</p>
 <p>The principle is as follows:</p>
 <ol class="arabic simple">
@@ -506,16 +523,16 @@ only “left” and “right” are supported so far, as the fuzzy-join comes
 with its own mechanism to resolve lack of correspondence between
 left and right tables.</p>
 </dd>
-<dt><strong>left_on</strong><span class="classifier">str or list of str, optional</span></dt><dd><p>Name of left table column(s) to join.</p>
+<dt><strong>left_on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Name of left table column(s) to join.</p>
 </dd>
-<dt><strong>right_on</strong><span class="classifier">str or list of str, optional</span></dt><dd><p>Name of right table key column(s) to join
+<dt><strong>right_on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Name of right table key column(s) to join
 with left table key column(s).</p>
 </dd>
-<dt><strong>on</strong><span class="classifier">str or list of str or int, optional</span></dt><dd><p>Name of common left and right table join key columns.
+<dt><strong>on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Name of common left and right table join key columns.
 Must be found in both DataFrames. Use only if <cite>left_on</cite>
 and <cite>right_on</cite> parameters are not specified.</p>
 </dd>
-<dt><strong>encoder</strong><span class="classifier">vectorizer instance, optional</span></dt><dd><p>Encoder parameter for the Vectorizer.
+<dt><strong>encoder</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vectorizer</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">instance</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Encoder parameter for the Vectorizer.
 By default, uses a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.HashingVectorizer.html#sklearn.feature_extraction.text.HashingVectorizer" title="(in scikit-learn v1.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HashingVectorizer</span></code></a>.
 It is possible to pass a vectorizer instance inheriting
 <code class="xref py py-class docutils literal notranslate"><span class="pre">_VectorizerMixin</span></code>
@@ -528,27 +545,27 @@ word counts or character n-gram counts.
 Option <cite>char_wb</cite> creates character n-grams only from text inside word
 boundaries; n-grams at the edges of words are padded with space.</p>
 </dd>
-<dt><strong>ngram_range</strong><span class="classifier">2-tuple of int, default=(2, 4)</span></dt><dd><p>The lower and upper boundaries of the range of n-values for different
+<dt><strong>ngram_range</strong><span class="classifier">2-tuple <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=(2, 4)</span></dt><dd><p>The lower and upper boundaries of the range of n-values for different
 n-grams used in the string similarity. All values of <cite>n</cite> such
 that <code class="docutils literal notranslate"><span class="pre">min_n</span> <span class="pre">&lt;=</span> <span class="pre">n</span> <span class="pre">&lt;=</span> <span class="pre">max_n</span></code> will be used.</p>
 </dd>
-<dt><strong>return_score</strong><span class="classifier">bool, default=True</span></dt><dd><p>Whether to return matching score based on the distance between
+<dt><strong>return_score</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>Whether to return matching score based on the distance between
 the nearest matched categories.</p>
 </dd>
-<dt><strong>match_score</strong><span class="classifier">float, default=0.0</span></dt><dd><p>Distance score between the closest matches that will be accepted.
+<dt><strong>match_score</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>, default=0.0</span></dt><dd><p>Distance score between the closest matches that will be accepted.
 In a [0, 1] interval. 1 means that only a perfect match will be
 accepted, and zero means that the closest match will be accepted,
 no matter how distant.
 For numerical joins, this defines the maximum Euclidean distance
 between the matches.</p>
 </dd>
-<dt><strong>drop_unmatched</strong><span class="classifier">bool, default=False</span></dt><dd><p>Remove categories for which a match was not found in the two tables.</p>
+<dt><strong>drop_unmatched</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>Remove categories for which a match was not found in the two tables.</p>
 </dd>
-<dt><strong>sort</strong><span class="classifier">bool, default=False</span></dt><dd><p>Sort the join keys lexicographically in the resulting <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a>.
+<dt><strong>sort</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>Sort the join keys lexicographically in the resulting <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a>.
 If False, the order of the join keys depends on the join type
 (<cite>how</cite> keyword).</p>
 </dd>
-<dt><strong>suffixes</strong><span class="classifier">2-tuple of str, default=(‘_x’, ‘_y’)</span></dt><dd><p>A list of strings indicating the suffix to add when overlaping
+<dt><strong>suffixes</strong><span class="classifier">2-tuple <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=(‘_x’, ‘_y’)</span></dt><dd><p>A list of strings indicating the suffix to add when overlaping
 column names.</p>
 </dd>
 </dl>
@@ -644,12 +661,12 @@ we can use the <cite>match_score</cite> argument:</p>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.DatetimeEncoder.html"
+       href="../api.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.DatetimeEncoder</p>
+        <p class="prev-next-title">API</p>
       </div>
     </a>
     <a class="right-next"
@@ -731,7 +748,7 @@ we can use the <cite>match_score</cite> argument:</p>
         <div class="footer-item">
   <p class="copyright">
     
-      © Copyright 2018-2023, the skrub developers.
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2023, the skrub developers.
       <br/>
     
   </p>

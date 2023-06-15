@@ -37,6 +37,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css" />
@@ -50,6 +51,8 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'CONTRIBUTING';</script>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
@@ -158,6 +161,13 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="documentation.html">
                         User guide
@@ -295,6 +305,13 @@ document.write(`
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="documentation.html">
                         User guide
@@ -613,39 +630,8 @@ enhancement proposal?</em> for more information.</p>
 </section>
 <section id="setting-up-the-environment">
 <h4><a class="toc-backref" href="#id12" role="doc-backlink">Setting up the environment</a><a class="headerlink" href="#setting-up-the-environment" title="Permalink to this heading">#</a></h4>
-<p>Using a dedicated Python environment is highly recommended!</p>
-<p>Different solutions are available, the most common being
-<a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/index.html">conda</a>
-and <a class="reference external" href="https://github.com/pyenv/pyenv">pyenv</a>.</p>
-<p>So, first step: create your environment.</p>
-<p>For this example, we’ll use conda:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">conda create python=3.10 --name skrub</span>
-<span class="go">conda activate skrub</span>
-</pre></div>
-</div>
-<p>Secondly, clone the repository (you’ll need to have <code class="docutils literal notranslate"><span class="pre">git</span></code> installed -
-it is already on most linux distributions).</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone https://github.com/skrub-data/skrub</span>
-</pre></div>
-</div>
-<p>Next, install the project dependencies. They are listed in <code class="docutils literal notranslate"><span class="pre">setup.cfg</span></code>.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install -e .[dev]</span>
-</pre></div>
-</div>
-<p>Code-formatting and linting is automatically done via
-<code class="docutils literal notranslate"><span class="pre">`pre-commit</span></code> &lt;<a class="github reference external" href="https://github.com/pre-commit/pre-commit">pre-commit/pre-commit</a>&gt;`__. You
-install this setup using:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install pre-commit</span>
-<span class="go">pre-commit install</span>
-</pre></div>
-</div>
-<p>A few revisions (formatting the whole code-base for instance) better be
-ignored by <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">blame</span></code> and IDE integrations. The revisions to be
-ignored are listed in <code class="docutils literal notranslate"><span class="pre">.git-blame-ignore-revs</span></code>, which can be set in
-your local repository with:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git config blame.ignoreRevsFile .git-blame-ignore-revs</span>
-</pre></div>
-</div>
+<p>For this process, please refer to the [installation process](<a class="reference external" href="https://skrub-data.org/stable/install.html#advanced-usage-for-contributors">https://skrub-data.org/stable/install.html#advanced-usage-for-contributors</a>),
+section <em>Advanced usage, for contributors</em>.</p>
 </section>
 <section id="implementation">
 <h4><a class="toc-backref" href="#id13" role="doc-backlink">Implementation</a><a class="headerlink" href="#implementation" title="Permalink to this heading">#</a></h4>
@@ -679,7 +665,7 @@ does not start with an underscore.</p></li>
 </section>
 <section id="submitting-your-code">
 <h4><a class="toc-backref" href="#id14" role="doc-backlink">Submitting your code</a><a class="headerlink" href="#submitting-your-code" title="Permalink to this heading">#</a></h4>
-<p>First, you’ll want to fork skrub on Github.</p>
+<p>First, you’ll want to [fork skrub on Github](<a class="github reference external" href="https://github.com/skrub-data/skrub/fork">skrub-data/skrub</a>).</p>
 <p>That will enable you to push your commits to a branch <em>on your fork</em>.
 It is advised to create a new branch every time you work on a new issue,
 to avoid confusion.
@@ -824,7 +810,7 @@ cannot guarantee how much time it will take to review the changes.</p>
         <div class="footer-item">
   <p class="copyright">
     
-      © Copyright 2018-2023, the skrub developers.
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2023, the skrub developers.
       <br/>
     
   </p>

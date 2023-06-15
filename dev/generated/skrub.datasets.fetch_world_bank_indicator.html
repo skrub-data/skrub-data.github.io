@@ -37,6 +37,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
@@ -50,6 +51,8 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.datasets.fetch_world_bank_indicator';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -158,6 +161,13 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../documentation.html">
                         User guide
@@ -296,6 +306,13 @@ document.write(`
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="../documentation.html">
                         User guide
                       </a>
@@ -384,6 +401,12 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.fuzzy_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.FeatureAugmenter.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.TableVectorizer.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.TableVectorizer</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -394,12 +417,6 @@ document.write(`
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.DatetimeEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.DatetimeEncoder</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.fuzzy_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.FeatureAugmenter.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.deduplicate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.deduplicate</a></li>
@@ -479,7 +496,7 @@ document.write(`
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_world_bank_indicator<a class="headerlink" href="#skrub-datasets-fetch-world-bank-indicator" title="Permalink to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_world_bank_indicator">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_world_bank_indicator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indicator_id</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_dataframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/datasets/_fetching.py#L900"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_world_bank_indicator" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_world_bank_indicator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indicator_id</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_dataframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/datasets/_fetching.py#L900"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_world_bank_indicator" title="Permalink to this definition">#</a></dt>
 <dd><p>Fetches a dataset of an indicator from the World Bank open data platform.</p>
 <dl class="simple">
 <dt>Description of the dataset:</dt><dd><p>The dataset contains two columns: the indicator value and the
@@ -606,7 +623,7 @@ at <a class="reference external" href="https://data.worldbank.org/indicator">htt
         <div class="footer-item">
   <p class="copyright">
     
-      © Copyright 2018-2023, the skrub developers.
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2023, the skrub developers.
       <br/>
     
   </p>

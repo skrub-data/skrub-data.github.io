@@ -37,6 +37,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
@@ -50,6 +51,8 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.SimilarityEncoder';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -158,6 +161,13 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../documentation.html">
                         User guide
@@ -296,6 +306,13 @@ document.write(`
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../install.html">
+                        Installing
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="../documentation.html">
                         User guide
                       </a>
@@ -384,6 +401,12 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.fuzzy_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.FeatureAugmenter.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.TableVectorizer.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.TableVectorizer</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
@@ -394,12 +417,6 @@ document.write(`
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.DatetimeEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.DatetimeEncoder</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.fuzzy_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.FeatureAugmenter.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.deduplicate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.deduplicate</a></li>
@@ -480,7 +497,7 @@ document.write(`
 <p class="side-comment">Usage examples at the bottom of this page.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.SimilarityEncoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">SimilarityEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range=(2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">categories='auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype=&lt;class</span> <span class="pre">'numpy.float64'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_unknown='ignore'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_missing=''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hashing_dim=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs=None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/_similarity_encoder.py#L130"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">SimilarityEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range=(2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">categories='auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype=&lt;class</span> <span class="pre">'numpy.float64'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_unknown='ignore'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_missing=''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hashing_dim=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs=None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/_similarity_encoder.py#L130"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder" title="Permalink to this definition">#</a></dt>
 <dd><p>Encode string categories to a similarity matrix, to capture fuzziness across a few categories.</p>
 <p>The input to this transformer should be an array-like of strings.
 The method is based on calculating the morphological similarities
@@ -507,11 +524,11 @@ two strings.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>ngram_range</strong><span class="classifier">int 2-tuple (min_n, max_n), default=(2, 4)</span></dt><dd><p>The lower and upper boundaries of the range of n-values for different
+<dt><strong>ngram_range</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a> 2-tuple (<code class="xref py py-obj docutils literal notranslate"><span class="pre">min_n</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">max_n</span></code>), default=(2, 4)</span></dt><dd><p>The lower and upper boundaries of the range of n-values for different
 n-grams used in the string similarity. All values of <cite>n</cite> such
 that <code class="docutils literal notranslate"><span class="pre">min_n</span> <span class="pre">&lt;=</span> <span class="pre">n</span> <span class="pre">&lt;=</span> <span class="pre">max_n</span></code> will be used.</p>
 </dd>
-<dt><strong>categories</strong><span class="classifier">{‘auto’} or list of list of str</span></dt><dd><p>Categories (unique values) per feature:</p>
+<dt><strong>categories</strong><span class="classifier">{‘auto’} <code class="xref py py-obj docutils literal notranslate"><span class="pre">or</span></code> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>Categories (unique values) per feature:</p>
 <ul class="simple">
 <li><p>‘auto’ : Determine categories automatically from the training data.</p></li>
 <li><p>list : <cite>categories[i]</cite> holds the categories expected in the i-th
@@ -521,7 +538,7 @@ strings and numeric values.</p></li>
 <p>The categories used can be found in the
 <code class="xref py py-attr docutils literal notranslate"><span class="pre">categories_</span></code> attribute.</p>
 </dd>
-<dt><strong>dtype</strong><span class="classifier">number type, default <code class="xref py py-class docutils literal notranslate"><span class="pre">float64</span></code></span></dt><dd><p>Desired dtype of output.</p>
+<dt><strong>dtype</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">number</span></code> <a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">default</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">float64</span></code></span></dt><dd><p>Desired dtype of output.</p>
 </dd>
 <dt><strong>handle_unknown</strong><span class="classifier">‘error’ or ‘ignore’, default=’’</span></dt><dd><p>Whether to raise an error or ignore if an unknown categorical feature
 is present during transform (default is to ignore). When this parameter
@@ -537,13 +554,13 @@ during fit_transform, the resulting encoded columns for this feature
 will be all zeros. In the inverse transform, the missing category
 will be denoted as None.</p>
 </dd>
-<dt><strong>hashing_dim</strong><span class="classifier">int, optional</span></dt><dd><p>If <cite>None</cite>, the base vectorizer is a
+<dt><strong>hashing_dim</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>If <cite>None</cite>, the base vectorizer is a
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer" title="(in scikit-learn v1.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CountVectorizer</span></code></a>,
 otherwise it is a
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.HashingVectorizer.html#sklearn.feature_extraction.text.HashingVectorizer" title="(in scikit-learn v1.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HashingVectorizer</span></code></a>
 with a number of features equal to <cite>hashing_dim</cite>.</p>
 </dd>
-<dt><strong>n_jobs</strong><span class="classifier">int, optional</span></dt><dd><p>Maximum number of processes used to compute similarity matrices. Used
+<dt><strong>n_jobs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Maximum number of processes used to compute similarity matrices. Used
 only if <cite>fast=True</cite> in <a class="reference internal" href="#skrub.SimilarityEncoder.transform" title="skrub.SimilarityEncoder.transform"><code class="xref py py-func docutils literal notranslate"><span class="pre">transform()</span></code></a>.</p>
 </dd>
 </dl>
@@ -604,7 +621,7 @@ instead of a discrete one based on exact matches:</p>
 <dl class="field-list">
 <dt class="field-odd">Attributes<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>categories_</strong><span class="classifier">list of <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a></span></dt><dd><p>The categories of each feature determined during fitting
+<dt><strong>categories_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a></span></dt><dd><p>The categories of each feature determined during fitting
 (in the same order as the output of <a class="reference internal" href="#skrub.SimilarityEncoder.transform" title="skrub.SimilarityEncoder.transform"><code class="xref py py-func docutils literal notranslate"><span class="pre">transform()</span></code></a>).</p>
 </dd>
 </dl>
@@ -641,14 +658,14 @@ instead of a discrete one based on exact matches:</p>
 </table>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SimilarityEncoder.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/_similarity_encoder.py#L295"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.fit" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/_similarity_encoder.py#L295"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.fit" title="Permalink to this definition">#</a></dt>
 <dd><p>Fit the instance to <cite>X</cite>.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>X</strong><span class="classifier">array-like, shape [n_samples, n_features]</span></dt><dd><p>The data to determine the categories of each feature.</p>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.24)"><span>array_like</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> [<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_features</span></code>]</span></dt><dd><p>The data to determine the categories of each feature.</p>
 </dd>
-<dt><strong>y</strong><span class="classifier">None</span></dt><dd><p>Unused, only here for compatibility.</p>
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Unused, only here for compatibility.</p>
 </dd>
 </dl>
 </dd>
@@ -663,24 +680,24 @@ instead of a discrete one based on exact matches:</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SimilarityEncoder.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/../sklearn/base.py#L850"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.fit_transform" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/../sklearn/base.py#L850"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.fit_transform" title="Permalink to this definition">#</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to <cite>X</cite> and <cite>y</cite> with optional parameters <cite>fit_params</cite>
 and returns a transformed version of <cite>X</cite>.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>X</strong><span class="classifier">array-like of shape (n_samples, n_features)</span></dt><dd><p>Input samples.</p>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.24)"><span>array_like</span></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_features</span></code>)</span></dt><dd><p>Input samples.</p>
 </dd>
-<dt><strong>y</strong><span class="classifier">array-like of shape (n_samples,) or (n_samples, n_outputs),                 default=None</span></dt><dd><p>Target values (None for unsupervised transformations).</p>
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.24)"><span>array_like</span></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (n_samples,) <code class="xref py py-obj docutils literal notranslate"><span class="pre">or</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_outputs</span></code>),                 default=None</span></dt><dd><p>Target values (None for unsupervised transformations).</p>
 </dd>
-<dt><strong>**fit_params</strong><span class="classifier">dict</span></dt><dd><p>Additional fit parameters.</p>
+<dt><strong>**fit_params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Additional fit parameters.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>X_new</strong><span class="classifier">ndarray array of shape (n_samples, n_features_new)</span></dt><dd><p>Transformed array.</p>
+<dd class="field-even"><dl>
+<dt><strong>X_new</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a> <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">array</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_features_new</span></code>)</span></dt><dd><p>Transformed array.</p>
 </dd>
 </dl>
 </dd>
@@ -689,12 +706,12 @@ and returns a transformed version of <cite>X</cite>.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SimilarityEncoder.get_feature_names_out">
-<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/../sklearn/preprocessing/_encoders.py#L1081"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.get_feature_names_out" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/../sklearn/preprocessing/_encoders.py#L1081"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.get_feature_names_out" title="Permalink to this definition">#</a></dt>
 <dd><p>Get output feature names for transformation.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>input_features</strong><span class="classifier">array-like of str or None, default=None</span></dt><dd><p>Input features.</p>
+<dd class="field-odd"><dl>
+<dt><strong>input_features</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.24)"><span>array_like</span></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=None</span></dt><dd><p>Input features.</p>
 <ul class="simple">
 <li><p>If <cite>input_features</cite> is <cite>None</cite>, then <cite>feature_names_in_</cite> is
 used as feature names in. If <cite>feature_names_in_</cite> is not defined,
@@ -707,8 +724,8 @@ match <cite>feature_names_in_</cite> if <cite>feature_names_in_</cite> is define
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>feature_names_out</strong><span class="classifier">ndarray of str objects</span></dt><dd><p>Transformed feature names.</p>
+<dd class="field-even"><dl>
+<dt><strong>feature_names_out</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">objects</span></code></span></dt><dd><p>Transformed feature names.</p>
 </dd>
 </dl>
 </dd>
@@ -717,19 +734,19 @@ match <cite>feature_names_in_</cite> if <cite>feature_names_in_</cite> is define
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SimilarityEncoder.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/../sklearn/base.py#L153"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.get_params" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/../sklearn/base.py#L153"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.get_params" title="Permalink to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>deep</strong><span class="classifier">bool, default=True</span></dt><dd><p>If True, will return the parameters for this estimator and
+<dd class="field-odd"><dl>
+<dt><strong>deep</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>If True, will return the parameters for this estimator and
 contained subobjects that are estimators.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>params</strong><span class="classifier">dict</span></dt><dd><p>Parameter names mapped to their values.</p>
+<dd class="field-even"><dl>
+<dt><strong>params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Parameter names mapped to their values.</p>
 </dd>
 </dl>
 </dd>
@@ -744,7 +761,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SimilarityEncoder.inverse_transform">
-<span class="sig-name descname"><span class="pre">inverse_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/../sklearn/preprocessing/_encoders.py#L962"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.inverse_transform" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">inverse_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/../sklearn/preprocessing/_encoders.py#L962"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.inverse_transform" title="Permalink to this definition">#</a></dt>
 <dd><p>Convert the data back to the original representation.</p>
 <p>When unknown categories are encountered (all zeros in the
 one-hot encoding), <code class="docutils literal notranslate"><span class="pre">None</span></code> is used to represent this category. If the
@@ -752,16 +769,16 @@ feature with the unknown category has a dropped category, the dropped
 category will be its inverse.</p>
 <p>For a given input feature, if there is an infrequent category,
 ‘infrequent_sklearn’ will be used to represent the infrequent category.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>X</strong><span class="classifier">{array-like, sparse matrix} of shape                 (n_samples, n_encoded_features)</span></dt><dd><p>The transformed data.</p>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier">{<a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.24)"><span>array_like</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">sparse</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">matrix</span></code>} <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code>                 (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_encoded_features</span></code>)</span></dt><dd><p>The transformed data.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>X_tr</strong><span class="classifier">ndarray of shape (n_samples, n_features)</span></dt><dd><p>Inverse transformed array.</p>
+<dd class="field-even"><dl>
+<dt><strong>X_tr</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_features</span></code>)</span></dt><dd><p>Inverse transformed array.</p>
 </dd>
 </dl>
 </dd>
@@ -770,11 +787,11 @@ category will be its inverse.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SimilarityEncoder.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/../sklearn/utils/_set_output.py#L208"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.set_output" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/../sklearn/utils/_set_output.py#L208"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.set_output" title="Permalink to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.2)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>transform</strong><span class="classifier">{“default”, “pandas”}, default=None</span></dt><dd><p>Configure output of <cite>transform</cite> and <cite>fit_transform</cite>.</p>
@@ -787,8 +804,8 @@ for an example on how to use the API.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>self</strong><span class="classifier">estimator instance</span></dt><dd><p>Estimator instance.</p>
+<dd class="field-even"><dl>
+<dt><strong>self</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">estimator</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">instance</span></code></span></dt><dd><p>Estimator instance.</p>
 </dd>
 </dl>
 </dd>
@@ -797,22 +814,22 @@ for an example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SimilarityEncoder.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/../sklearn/base.py#L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.set_params" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/../sklearn/base.py#L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.set_params" title="Permalink to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
 parameters of the form <code class="docutils literal notranslate"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it’s
 possible to update each component of a nested object.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>**params</strong><span class="classifier">dict</span></dt><dd><p>Estimator parameters.</p>
+<dd class="field-odd"><dl>
+<dt><strong>**params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Estimator parameters.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>self</strong><span class="classifier">estimator instance</span></dt><dd><p>Estimator instance.</p>
+<dd class="field-even"><dl>
+<dt><strong>self</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">estimator</span></code> <code class="xref py py-obj docutils literal notranslate"><span class="pre">instance</span></code></span></dt><dd><p>Estimator instance.</p>
 </dd>
 </dl>
 </dd>
@@ -821,20 +838,20 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SimilarityEncoder.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0cd2c12/skrub/_similarity_encoder.py#L419"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.transform" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fast</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f4422/skrub/_similarity_encoder.py#L419"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SimilarityEncoder.transform" title="Permalink to this definition">#</a></dt>
 <dd><p>Transform <cite>X</cite> using specified encoding scheme.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>X</strong><span class="classifier">array-like, shape [n_samples, n_features]</span></dt><dd><p>The data to encode.</p>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.24)"><span>array_like</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> [<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_features</span></code>]</span></dt><dd><p>The data to encode.</p>
 </dd>
-<dt><strong>fast</strong><span class="classifier">bool, default=True</span></dt><dd><p>Whether to use the fast computation of ngrams.</p>
+<dt><strong>fast</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>Whether to use the fast computation of ngrams.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a>, shape [n_samples, n_features_new]</dt><dd><p>Transformed input.</p>
+<dt><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.24)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> [<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_features_new</span></code>]</dt><dd><p>Transformed input.</p>
 </dd>
 </dl>
 </dd>
@@ -964,7 +981,7 @@ possible to update each component of a nested object.</p>
         <div class="footer-item">
   <p class="copyright">
     
-      © Copyright 2018-2023, the skrub developers.
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2023, the skrub developers.
       <br/>
     
   </p>
