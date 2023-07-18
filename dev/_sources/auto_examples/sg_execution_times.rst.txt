@@ -6,18 +6,18 @@
 
 Computation times
 =================
-**16:21.601** total execution time for **auto_examples** files:
+**15:06.234** total execution time for **auto_examples** files:
 
 +-----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_06_ken_embeddings_example.py` (``06_ken_embeddings_example.py``)                         | 12:32.313 | 0.0 MB |
+| :ref:`sphx_glr_auto_examples_06_ken_embeddings_example.py` (``06_ken_embeddings_example.py``)                         | 11:46.261 | 0.0 MB |
 +-----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_01_dirty_categories.py` (``01_dirty_categories.py``)                                     | 03:14.766 | 0.0 MB |
+| :ref:`sphx_glr_auto_examples_01_dirty_categories.py` (``01_dirty_categories.py``)                                     | 02:49.382 | 0.0 MB |
 +-----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_04_fuzzy_joining_and_FeatureAugmenter.py` (``04_fuzzy_joining_and_FeatureAugmenter.py``) | 00:15.546 | 0.0 MB |
+| :ref:`sphx_glr_auto_examples_04_fuzzy_joining_and_FeatureAugmenter.py` (``04_fuzzy_joining_and_FeatureAugmenter.py``) | 00:13.555 | 0.0 MB |
 +-----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_02_investigating_dirty_categories.py` (``02_investigating_dirty_categories.py``)         | 00:09.178 | 0.0 MB |
+| :ref:`sphx_glr_auto_examples_02_investigating_dirty_categories.py` (``02_investigating_dirty_categories.py``)         | 00:08.502 | 0.0 MB |
 +-----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_05_deduplication.py` (``05_deduplication.py``)                                           | 00:05.278 | 0.0 MB |
+| :ref:`sphx_glr_auto_examples_05_deduplication.py` (``05_deduplication.py``)                                           | 00:04.601 | 0.0 MB |
 +-----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_03_datetime_encoder.py` (``03_datetime_encoder.py``)                                     | 00:04.519 | 0.0 MB |
+| :ref:`sphx_glr_auto_examples_03_datetime_encoder.py` (``03_datetime_encoder.py``)                                     | 00:03.933 | 0.0 MB |
 +-----------------------------------------------------------------------------------------------------------------------+-----------+--------+
