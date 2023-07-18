@@ -509,6 +509,7 @@ document.write(`
 <li><p><a class="reference internal" href="#integration" id="id16">Integration</a></p></li>
 </ul>
 </li>
+<li><p><a class="reference internal" href="#continuous-integration-ci" id="id17">Continuous Integration (CI)</a></p></li>
 </ul>
 </li>
 </ul>
@@ -686,6 +687,48 @@ merging the PR.</p>
 cannot guarantee how much time it will take to review the changes.</p>
 </section>
 </section>
+<section id="continuous-integration-ci">
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">Continuous Integration (CI)</a><a class="headerlink" href="#continuous-integration-ci" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Github Actions are used for various tasks including testing skrub on Linux, Mac
+and Windows, with different dependencies and settings.</p></li>
+<li><p>CircleCI is used to build the documentation.</p></li>
+</ul>
+<p>If any of the following markers appears in the commit message, the following
+actions are taken.</p>
+<blockquote>
+<div><table class="table">
+<tbody>
+<tr class="row-odd"><td><p>Commit Message Marker</p></td>
+<td><p>Action Taken by CI</p></td>
+</tr>
+<tr class="row-even"><td><p>[ci skip]</p></td>
+<td><p>CI is skipped completely</p></td>
+</tr>
+<tr class="row-odd"><td><p>[skip ci]</p></td>
+<td><p>CI is skipped completely</p></td>
+</tr>
+<tr class="row-even"><td><p>[skip github]</p></td>
+<td><p>CI is skipped completely</p></td>
+</tr>
+<tr class="row-odd"><td><p>[deps nightly]</p></td>
+<td><p>CI is run with the nightly builds of dependencies</p></td>
+</tr>
+<tr class="row-even"><td><p>[doc skip]</p></td>
+<td><p>Docs are not built</p></td>
+</tr>
+<tr class="row-odd"><td><p>[doc quick]</p></td>
+<td><p>Docs built, but excludes example gallery plots</p></td>
+</tr>
+<tr class="row-even"><td><p>[doc build]</p></td>
+<td><p>Docs built including example gallery plots (longer)</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Note that by default the documentation is built, but only the examples that are
+directly modified by the pull request are executed.</p>
+</section>
 </section>
 </section>
 
@@ -759,6 +802,7 @@ cannot guarantee how much time it will take to review the changes.</p>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">Integration</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-integration-ci">Continuous Integration (CI)</a></li>
 </ul>
 </li>
 </ul>
