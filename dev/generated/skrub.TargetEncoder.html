@@ -505,7 +505,7 @@ document.write(`
 <p class="side-comment">Usage examples at the bottom of this page.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.TargetEncoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">TargetEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">categories='auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clf_type='binary-clf'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype=&lt;class</span> <span class="pre">'numpy.float64'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_unknown='error'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_missing=''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0a73df6/skrub/_target_encoder.py#L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">TargetEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">categories='auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clf_type='binary-clf'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype=&lt;class</span> <span class="pre">'numpy.float64'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_unknown='error'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_missing=''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5076514/skrub/_target_encoder.py#L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder" title="Permalink to this definition">#</a></dt>
 <dd><p>Encode categorical features as a numeric array given a target vector.</p>
 <p>Each category is encoded given the effect that it has in the
 target variable <a class="reference external" href="https://scikit-learn.org/stable/glossary.html#term-y" title="(in scikit-learn v1.3)"><span class="xref std std-term">y</span></a>. The method considers that categorical
@@ -535,10 +535,10 @@ transform, the encoded columns for this feature
 will be assigned the prior mean of the target variable.</p>
 </dd>
 <dt><strong>handle_missing</strong><span class="classifier">{‘error’, ‘’}, default=’’</span></dt><dd><p>Whether to raise an error or impute with blank string ‘’ if missing
-values (NaN) are present during <a class="reference internal" href="#skrub.TargetEncoder.fit" title="skrub.TargetEncoder.fit"><code class="xref py py-func docutils literal notranslate"><span class="pre">fit()</span></code></a>
+values (NaN) are present during TargetEncoder.fit
 (default is to impute).
 When this parameter is set to ‘’, and a missing value is encountered
-during <a class="reference internal" href="#skrub.TargetEncoder.fit_transform" title="skrub.TargetEncoder.fit_transform"><code class="xref py py-func docutils literal notranslate"><span class="pre">fit_transform()</span></code></a>, the resulting encoded
+during TargetEncoder.fit_transform, the resulting encoded
 columns for this feature will be all zeros.</p>
 </dd>
 </dl>
@@ -547,11 +547,11 @@ columns for this feature will be all zeros.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.GapEncoder</span></code></a></dt><dd><p>Encodes dirty categories (strings) by constructing latent topics with continuous encoding.</p>
+<dt><a class="reference internal" href="skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a></dt><dd><p>Encodes dirty categories (strings) by constructing latent topics with continuous encoding.</p>
 </dd>
-<dt><a class="reference internal" href="skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.MinHashEncoder</span></code></a></dt><dd><p>Encode string columns as a numeric array with the minhash method.</p>
+<dt><a class="reference internal" href="skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a></dt><dd><p>Encode string columns as a numeric array with the minhash method.</p>
 </dd>
-<dt><a class="reference internal" href="skrub.SimilarityEncoder.html#skrub.SimilarityEncoder" title="skrub.SimilarityEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.SimilarityEncoder</span></code></a></dt><dd><p>Encode string columns as a numeric array with n-gram string similarity.</p>
+<dt><a class="reference internal" href="skrub.SimilarityEncoder.html#skrub.SimilarityEncoder" title="skrub.SimilarityEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimilarityEncoder</span></code></a></dt><dd><p>Encode string columns as a numeric array with n-gram string similarity.</p>
 </dd>
 </dl>
 </div>
@@ -591,10 +591,10 @@ The unknown categories were assigned the mean of the target variable.</p>
 <dl class="field-list">
 <dt class="field-odd">Attributes<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>n_features_in_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a></span></dt><dd><p>Number of features in the data seen during <a class="reference internal" href="#skrub.TargetEncoder.fit" title="skrub.TargetEncoder.fit"><code class="xref py py-func docutils literal notranslate"><span class="pre">fit()</span></code></a>.</p>
+<dt><strong>n_features_in_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a></span></dt><dd><p>Number of features in the data seen during TargetEncoder.fit.</p>
 </dd>
-<dt><strong>categories_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.25)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a></span></dt><dd><p>The categories of each feature determined during <a class="reference internal" href="#skrub.TargetEncoder.fit" title="skrub.TargetEncoder.fit"><code class="xref py py-func docutils literal notranslate"><span class="pre">fit()</span></code></a>
-(in order corresponding with output of <a class="reference internal" href="#skrub.TargetEncoder.transform" title="skrub.TargetEncoder.transform"><code class="xref py py-func docutils literal notranslate"><span class="pre">transform()</span></code></a>).</p>
+<dt><strong>categories_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.25)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a></span></dt><dd><p>The categories of each feature determined during TargetEncoder.fit
+(in order corresponding with output of TargetEncoder.transform).</p>
 </dd>
 <dt><strong>n_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a></span></dt><dd><p>Length of <a class="reference external" href="https://scikit-learn.org/stable/glossary.html#term-y" title="(in scikit-learn v1.3)"><span class="xref std std-term">y</span></a></p>
 </dd>
@@ -629,7 +629,7 @@ The unknown categories were assigned the mean of the target variable.</p>
 </table>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TargetEncoder.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0a73df6/skrub/_target_encoder.py#L138"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.fit" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5076514/skrub/_target_encoder.py#L138"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.fit" title="Permalink to this definition">#</a></dt>
 <dd><p>Fit the instance to <cite>X</cite>.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -642,7 +642,7 @@ The unknown categories were assigned the mean of the target variable.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="#skrub.TargetEncoder" title="skrub.TargetEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TargetEncoder</span></code></a></dt><dd><p>Fitted <a class="reference internal" href="#skrub.TargetEncoder" title="skrub.TargetEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TargetEncoder</span></code></a> instance (self).</p>
+<dt><a class="reference internal" href="#skrub.TargetEncoder" title="skrub.TargetEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TargetEncoder</span></code></a></dt><dd><p>Fitted TargetEncoder instance (self).</p>
 </dd>
 </dl>
 </dd>
@@ -651,7 +651,7 @@ The unknown categories were assigned the mean of the target variable.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TargetEncoder.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0a73df6/skrub/../sklearn/base.py#L887"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.fit_transform" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5076514/skrub/../sklearn/base.py#L887"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.fit_transform" title="Permalink to this definition">#</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to <cite>X</cite> and <cite>y</cite> with optional parameters <cite>fit_params</cite>
 and returns a transformed version of <cite>X</cite>.</p>
@@ -677,7 +677,7 @@ and returns a transformed version of <cite>X</cite>.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TargetEncoder.get_metadata_routing">
-<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0a73df6/skrub/../sklearn/utils/_metadata_requests.py#L1243"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.get_metadata_routing" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5076514/skrub/../sklearn/utils/_metadata_requests.py#L1243"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.get_metadata_routing" title="Permalink to this definition">#</a></dt>
 <dd><p>Get metadata routing of this object.</p>
 <p>Please check <a class="reference external" href="https://scikit-learn.org/stable/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.3)"><span class="xref std std-ref">User Guide</span></a> on how the routing
 mechanism works.</p>
@@ -694,7 +694,7 @@ routing information.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TargetEncoder.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0a73df6/skrub/../sklearn/base.py#L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.get_params" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5076514/skrub/../sklearn/base.py#L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.get_params" title="Permalink to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -715,7 +715,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TargetEncoder.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0a73df6/skrub/../sklearn/utils/_set_output.py#L213"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.set_output" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5076514/skrub/../sklearn/utils/_set_output.py#L213"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.set_output" title="Permalink to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.3)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
@@ -742,7 +742,7 @@ for an example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TargetEncoder.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0a73df6/skrub/../sklearn/base.py#L201"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.set_params" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5076514/skrub/../sklearn/base.py#L201"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.set_params" title="Permalink to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -766,7 +766,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TargetEncoder.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0a73df6/skrub/_target_encoder.py#L231"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.transform" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5076514/skrub/_target_encoder.py#L231"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TargetEncoder.transform" title="Permalink to this definition">#</a></dt>
 <dd><p>Transform <cite>X</cite> using the specified encoding scheme.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -777,7 +777,7 @@ possible to update each component of a nested object.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt>2-d <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.25)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a></dt><dd><p>Transformed input.</p>
+<dt>2-d <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.25)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a></dt><dd><p>Transformed input.</p>
 </dd>
 </dl>
 </dd>

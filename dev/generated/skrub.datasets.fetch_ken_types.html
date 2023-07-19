@@ -504,9 +504,9 @@ document.write(`
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_types<a class="headerlink" href="#skrub-datasets-fetch-ken-types" title="Permalink to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_ken_types">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_ken_types</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">search</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_table_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all_entities'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0a73df6/skrub/datasets/_ken_embeddings.py#L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_ken_types" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_ken_types</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">search</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_table_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all_entities'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5076514/skrub/datasets/_ken_embeddings.py#L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_ken_types" title="Permalink to this definition">#</a></dt>
 <dd><p>Helper function to search for KEN entity types.</p>
-<p>The result can then be used with <a class="reference internal" href="skrub.datasets.fetch_ken_embeddings.html#skrub.datasets.fetch_ken_embeddings" title="skrub.datasets.fetch_ken_embeddings"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_embeddings()</span></code></a>.</p>
+<p>The result can then be used with fetch_ken_embeddings.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
@@ -515,7 +515,7 @@ document.write(`
 <dt><strong>exclude</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">optional</span></code></span></dt><dd><p>Substring pattern to exclude from the search.</p>
 </dd>
 <dt><strong>embedding_table_id</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=’all_entities’</span></dt><dd><p>Table of embedded entities from which to extract the embeddings.
-Get the supported tables with <a class="reference internal" href="skrub.datasets.fetch_ken_table_aliases.html#skrub.datasets.fetch_ken_table_aliases" title="skrub.datasets.fetch_ken_table_aliases"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_table_aliases()</span></code></a>.
+Get the supported tables with fetch_ken_table_aliases.
 It is NOT possible to pass a custom figshare ID.</p>
 </dd>
 </dl>
@@ -530,12 +530,12 @@ It is NOT possible to pass a custom figshare ID.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="skrub.datasets.fetch_ken_embeddings.html#skrub.datasets.fetch_ken_embeddings" title="skrub.datasets.fetch_ken_embeddings"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_embeddings()</span></code></a></dt><dd><p>Download Wikipedia embeddings by type.</p>
+<dt><a class="reference internal" href="skrub.datasets.fetch_ken_embeddings.html#skrub.datasets.fetch_ken_embeddings" title="skrub.datasets.fetch_ken_embeddings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_ken_embeddings</span></code></a></dt><dd><p>Download Wikipedia embeddings by type.</p>
 </dd>
 </dl>
 </div>
 <p class="rubric">Notes</p>
-<p>Best used in conjunction with <a class="reference internal" href="skrub.datasets.fetch_ken_embeddings.html#skrub.datasets.fetch_ken_embeddings" title="skrub.datasets.fetch_ken_embeddings"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_embeddings()</span></code></a>.</p>
+<p>Best used in conjunction with fetch_ken_embeddings.</p>
 <p>This function requires <cite>pyarrow</cite> to be installed.</p>
 <p class="rubric">References</p>
 <p>For more details, see Cvetkov-Iliev, A., Allauzen, A. &amp; Varoquaux, G.:

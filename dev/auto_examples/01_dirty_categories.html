@@ -501,7 +501,7 @@ control.</p>
 <a href="../generated/skrub.datasets.DatasetAll.html#skrub.datasets.DatasetAll" title="skrub.datasets.DatasetAll" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">employee_salaries</span></a> <span class="o">=</span> <a href="../generated/skrub.datasets.fetch_employee_salaries.html#skrub.datasets.fetch_employee_salaries" title="skrub.datasets.fetch_employee_salaries" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_employee_salaries</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:591: UserWarning: Could not find the dataset 42125 locally. Downloading it from OpenML; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/data.
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:588: UserWarning: Could not find the dataset 42125 locally. Downloading it from OpenML; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/data.
   info = _fetch_openml_dataset(dataset_id, data_directory)
 </pre></div>
 </div>
@@ -919,7 +919,7 @@ r2 score:  mean: 0.919; std: 0.012
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
   warnings.warn(
 gap encoding
-r2 score:  mean: 0.922; std: 0.013
+r2 score:  mean: 0.922; std: 0.018
 </pre></div>
 </div>
 <section id="plotting-the-results">
@@ -1150,9 +1150,9 @@ can be readily applied to the dataframe</strong>.</p>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;std=</span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>scores=[0.92837936 0.89756251 0.9274118  0.9367523  0.93336542]
-mean=0.9246942778553441
-std=0.01398343606134868
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>scores=[0.92235652 0.90435889 0.9299852  0.93746669 0.92574045]
+mean=0.9239815523014215
+std=0.01103336779900978
 </pre></div>
 </div>
 <p>The prediction performed here is pretty much as good as above
@@ -1182,7 +1182,7 @@ analyze the TableVectorizer’s mechanisms along the way.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([[2.00700000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-        5.26838887e-02, 5.36106589e-02, 5.47948705e-02],
+        2.60177173e+01, 5.48810795e-02, 7.82895945e-02],
        [2.00500000e+03, 1.00000000e+00, 0.00000000e+00, ...,
         5.00000000e-02, 5.00000000e-02, 5.00000000e-02],
        [2.00900000e+03, 1.00000000e+00, 0.00000000e+00, ...,
@@ -1309,7 +1309,7 @@ having a permanent, full-time job :)</p>
 automated by the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, and the resulting pipeline can still be
 inspected, even with non-normalized entries.</p>
 </aside>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 2 minutes  51.380 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 2 minutes  54.099 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-01-dirty-categories-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/01_dirty_categories.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
