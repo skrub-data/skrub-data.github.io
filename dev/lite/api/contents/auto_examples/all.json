@@ -1,0 +1,85 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2023-07-19T12:21:33.076290Z",
+      "format": null,
+      "last_modified": "2023-07-19T12:21:31.468292Z",
+      "mimetype": null,
+      "name": "01_dirty_categories.ipynb",
+      "path": "auto_examples/01_dirty_categories.ipynb",
+      "size": 21194,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2023-07-19T12:21:33.080290Z",
+      "format": null,
+      "last_modified": "2023-07-19T12:21:31.472292Z",
+      "mimetype": null,
+      "name": "02_investigating_dirty_categories.ipynb",
+      "path": "auto_examples/02_investigating_dirty_categories.ipynb",
+      "size": 13070,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2023-07-19T12:21:33.080290Z",
+      "format": null,
+      "last_modified": "2023-07-19T12:21:31.472292Z",
+      "mimetype": null,
+      "name": "03_datetime_encoder.ipynb",
+      "path": "auto_examples/03_datetime_encoder.ipynb",
+      "size": 12878,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2023-07-19T12:21:33.080290Z",
+      "format": null,
+      "last_modified": "2023-07-19T12:21:31.472292Z",
+      "mimetype": null,
+      "name": "04_fuzzy_joining_and_FeatureAugmenter.ipynb",
+      "path": "auto_examples/04_fuzzy_joining_and_FeatureAugmenter.ipynb",
+      "size": 22306,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2023-07-19T12:21:33.080290Z",
+      "format": null,
+      "last_modified": "2023-07-19T12:21:31.476292Z",
+      "mimetype": null,
+      "name": "05_deduplication.ipynb",
+      "path": "auto_examples/05_deduplication.ipynb",
+      "size": 10102,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2023-07-19T12:21:33.080290Z",
+      "format": null,
+      "last_modified": "2023-07-19T12:21:31.476292Z",
+      "mimetype": null,
+      "name": "06_ken_embeddings_example.ipynb",
+      "path": "auto_examples/06_ken_embeddings_example.ipynb",
+      "size": 17654,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2023-07-19T12:21:33.080290Z",
+  "format": "json",
+  "last_modified": "2023-07-19T12:21:33.080290Z",
+  "mimetype": null,
+  "name": "auto_examples",
+  "path": "auto_examples",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

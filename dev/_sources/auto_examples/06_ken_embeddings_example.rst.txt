@@ -11,7 +11,7 @@
         :class: sphx-glr-download-link-note
 
         :ref:`Go to the end <sphx_glr_download_auto_examples_06_ken_embeddings_example.py>`
-        to download the full example code or to run this example in your browser via Binder
+        to download the full example code or to run this example in your browser via JupyterLite or Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -304,7 +304,7 @@ We will start by checking out the available tables with
  .. code-block:: none
 
 
-    {'all_entities', 'albums', 'schools', 'games', 'movies', 'companies'}
+    {'all_entities', 'albums', 'movies', 'companies', 'games', 'schools'}
 
 
 
@@ -839,7 +839,7 @@ It helped significantly improve the prediction score.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 11 minutes  4.770 seconds)
+   **Total running time of the script:** ( 10 minutes  58.156 seconds)
 
 
 .. _sphx_glr_download_auto_examples_06_ken_embeddings_example.py:
@@ -857,6 +857,13 @@ It helped significantly improve the prediction score.
         :width: 150 px
 
 
+
+    .. container:: lite-badge
+
+      .. image:: images/jupyterlite_badge_logo.svg
+        :target: ../lite/lab/?path=auto_examples/06_ken_embeddings_example.ipynb
+        :alt: Launch JupyterLite
+        :width: 150 px
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
