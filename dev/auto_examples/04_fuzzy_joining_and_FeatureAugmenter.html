@@ -480,8 +480,9 @@ with a vocabulary not well normalized.</p>
 an exact match on the other side.</p>
 <p>The <a class="reference internal" href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> function enables to join tables without cleaning the data by
 accounting for the label variations.</p>
-<p>To illustrate, we will join data from the <a class="reference external" href="https://worldhappiness.report/">2022 World Happiness Report</a>.
-with tables provided in <a class="reference external" href="https://data.worldbank.org/">the World Bank open data platform</a>
+<p>To illustrate, we will join data from the
+<a class="reference external" href="https://worldhappiness.report/">2022 World Happiness Report</a>, with tables
+provided in <a class="reference external" href="https://data.worldbank.org/">the World Bank open data platform</a>
 in order to create a first prediction model.</p>
 <p>Moreover, the <a class="reference internal" href="../generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter"><code class="xref py py-func docutils literal notranslate"><span class="pre">FeatureAugmenter()</span></code></a> is a scikit-learn Transformer that makes it easy to
 use such fuzzy joining multiple tables to bring in information in a
@@ -493,7 +494,7 @@ machine-learning pipeline. In particular, it enables tuning parameters of
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html#pandas.read_csv" title="pandas.read_csv" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-function"><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span></a><span class="p">(</span>
-    <span class="s2">&quot;https://raw.githubusercontent.com/dirty-cat/datasets/master/data/Happiness_report_2022.csv&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;https://raw.githubusercontent.com/dirty-cat/datasets/master/data/Happiness_report_2022.csv&quot;</span><span class="p">,</span>  <span class="c1"># noqa</span>
     <span class="n">thousands</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span>
 <span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df</span><span class="o">.</span><span class="n">drop</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html#pandas.DataFrame.tail" title="pandas.DataFrame.tail" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df</span><span class="o">.</span><span class="n">tail</span></a><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -901,13 +902,14 @@ on one side, whereas the other table only has country-level data.</p>
 <h2>Joining tables with imperfect correspondance<a class="headerlink" href="#joining-tables-with-imperfect-correspondance" title="Permalink to this heading">#</a></h2>
 <p>We will now join our initial table, df, with the 3 additional ones that
 we have extracted.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># We will ignore the warnings:</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+</pre></div>
+</div>
 <section id="joining-gdp-per-capita-table">
 <span id="example-fuzzy-join"></span><h3>1. Joining GDP per capita table<a class="headerlink" href="#joining-gdp-per-capita-table" title="Permalink to this heading">#</a></h3>
 <p>To join them with skrub, we only need to do the following:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a>
-
-<span class="c1"># We will ignore the warnings:</span>
-<span class="kn">import</span> <span class="nn">warnings</span>
 
 <a href="https://docs.python.org/3/library/warnings.html#warnings.filterwarnings" title="warnings.filterwarnings" class="sphx-glr-backref-module-warnings sphx-glr-backref-type-py-function"><span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span></a><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
 
@@ -1127,7 +1129,7 @@ even though some country names differ between tables.</p>
 <aside class="topic">
 <p class="topic-title">Note:</p>
 <p>This would all be missed out if we were using other methods such as
-<a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html">pandas.merge</a>,
+<a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html">pandas.merge</a>,  # noqa
 which can only find exact matches.
 In this case, to reach the best result, we would have to <cite>manually</cite> clean
 the data (e.g. remove the * after country name) and look
@@ -1724,8 +1726,8 @@ with our create instance of the <a class="reference internal" href="../generated
 <br /><p>And that’s it! As previously, we now have a big table
 ready for machine learning.
 Let’s create our machine learning pipeline:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a>
-<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.make_column_transformer.html#sklearn.compose.make_column_transformer" title="sklearn.compose.make_column_transformer" class="sphx-glr-backref-module-sklearn-compose sphx-glr-backref-type-py-function"><span class="n">make_column_transformer</span></a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.make_column_transformer.html#sklearn.compose.make_column_transformer" title="sklearn.compose.make_column_transformer" class="sphx-glr-backref-module-sklearn-compose sphx-glr-backref-type-py-function"><span class="n">make_column_transformer</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a>
 
 <span class="c1"># We include only the columns that will be pertinent for our regression:</span>
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="sklearn.compose.ColumnTransformer" class="sphx-glr-backref-module-sklearn-compose sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">encoder</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.make_column_transformer.html#sklearn.compose.make_column_transformer" title="sklearn.compose.make_column_transformer" class="sphx-glr-backref-module-sklearn-compose sphx-glr-backref-type-py-function"><span class="n">make_column_transformer</span></a><span class="p">(</span>
@@ -1777,7 +1779,7 @@ refitting the pipeline on the data.</p>
 </aside>
 <p>Great, by evaluating the correct <code class="docutils literal notranslate"><span class="pre">match_score</span></code> we improved our
 results significantly!</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  14.868 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  15.539 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-04-fuzzy-joining-and-featureaugmenter-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining_and_FeatureAugmenter.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

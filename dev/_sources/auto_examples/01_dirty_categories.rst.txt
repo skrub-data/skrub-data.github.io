@@ -529,17 +529,12 @@ Position Title' column, as this column contains 400 different entries:
 We will now experiment with encoders specially made for handling
 dirty columns:
 
-.. GENERATED FROM PYTHON SOURCE LINES 152-168
+.. GENERATED FROM PYTHON SOURCE LINES 152-163
 
 .. code-block:: default
 
 
-    from skrub import (
-        SimilarityEncoder,
-        TargetEncoder,
-        MinHashEncoder,
-        GapEncoder,
-    )
+    from skrub import GapEncoder, MinHashEncoder, SimilarityEncoder, TargetEncoder
 
     encoders = {
         "one-hot": one_hot,
@@ -556,13 +551,13 @@ dirty columns:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-172
+.. GENERATED FROM PYTHON SOURCE LINES 164-167
 
 We now loop over the different encoding methods,
 instantiate a new |Pipeline| each time, fit it
 and store the returned cross-validation score:
 
-.. GENERATED FROM PYTHON SOURCE LINES 172-192
+.. GENERATED FROM PYTHON SOURCE LINES 167-187
 
 .. code-block:: default
 
@@ -687,26 +682,26 @@ and store the returned cross-validation score:
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
       warnings.warn(
     gap encoding
-    r2 score:  mean: 0.921; std: 0.016
+    r2 score:  mean: 0.923; std: 0.018
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 193-197
+.. GENERATED FROM PYTHON SOURCE LINES 188-192
 
 Plotting the results
 ....................
 
 Finally, we plot the scores on a boxplot:
 
-.. GENERATED FROM PYTHON SOURCE LINES 197-208
+.. GENERATED FROM PYTHON SOURCE LINES 192-203
 
 .. code-block:: default
 
 
-    import seaborn
     import matplotlib.pyplot as plt
+    import seaborn
 
     plt.figure(figsize=(4, 3))
     ax = seaborn.boxplot(data=pd.DataFrame(all_scores), orient="h")
@@ -727,7 +722,7 @@ Finally, we plot the scores on a boxplot:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 209-220
+.. GENERATED FROM PYTHON SOURCE LINES 204-215
 
 The clear trend is that encoders grasping similarities between categories
 (|SE|, |MinHash|, and |Gap|) perform better than those discarding it.
@@ -741,7 +736,7 @@ providing interpretable features
 |
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 222-231
+.. GENERATED FROM PYTHON SOURCE LINES 217-226
 
 .. _example_table_vectorizer:
 
@@ -753,7 +748,7 @@ now explore a simpler, automated, way of encoding the data.
 
 Let's start again from the raw data:
 
-.. GENERATED FROM PYTHON SOURCE LINES 231-235
+.. GENERATED FROM PYTHON SOURCE LINES 226-230
 
 .. code-block:: default
 
@@ -768,12 +763,12 @@ Let's start again from the raw data:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 236-238
+.. GENERATED FROM PYTHON SOURCE LINES 231-233
 
 We'll drop the 'date_first_hired' column as it's redundant with
 'year_first_hired'.
 
-.. GENERATED FROM PYTHON SOURCE LINES 238-240
+.. GENERATED FROM PYTHON SOURCE LINES 233-235
 
 .. code-block:: default
 
@@ -786,11 +781,11 @@ We'll drop the 'date_first_hired' column as it's redundant with
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 241-242
+.. GENERATED FROM PYTHON SOURCE LINES 236-237
 
 We still have a complex and heterogeneous dataframe:
 
-.. GENERATED FROM PYTHON SOURCE LINES 242-244
+.. GENERATED FROM PYTHON SOURCE LINES 237-239
 
 .. code-block:: default
 
@@ -962,12 +957,12 @@ We still have a complex and heterogeneous dataframe:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 245-247
+.. GENERATED FROM PYTHON SOURCE LINES 240-242
 
 The |TV| can to turn this dataframe into a form suited for
 machine learning.
 
-.. GENERATED FROM PYTHON SOURCE LINES 249-258
+.. GENERATED FROM PYTHON SOURCE LINES 244-253
 
 Using the TableVectorizer in a supervised-learning pipeline
 -----------------------------------------------------------
@@ -979,7 +974,7 @@ can be readily applied to the dataframe**.
 The |TV| requires at least skrub 0.2.0.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 258-265
+.. GENERATED FROM PYTHON SOURCE LINES 253-260
 
 .. code-block:: default
 
@@ -997,11 +992,11 @@ The |TV| requires at least skrub 0.2.0.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 266-267
+.. GENERATED FROM PYTHON SOURCE LINES 261-262
 
 Let's perform a cross-validation to see how well this model predicts:
 
-.. GENERATED FROM PYTHON SOURCE LINES 267-276
+.. GENERATED FROM PYTHON SOURCE LINES 262-271
 
 .. code-block:: default
 
@@ -1022,20 +1017,20 @@ Let's perform a cross-validation to see how well this model predicts:
 
  .. code-block:: none
 
-    scores=[0.92746964 0.89345527 0.92602938 0.94056378 0.92626925]
-    mean=0.9227574639806377
-    std=0.015626426969562835
+    scores=[0.92431462 0.88619383 0.93291217 0.93434334 0.93758863]
+    mean=0.9230705177498579
+    std=0.018953352393059376
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 277-280
+.. GENERATED FROM PYTHON SOURCE LINES 272-275
 
 The prediction performed here is pretty much as good as above
 but the code here is much simpler as it does not involve specifying
 columns manually.
 
-.. GENERATED FROM PYTHON SOURCE LINES 282-287
+.. GENERATED FROM PYTHON SOURCE LINES 277-282
 
 Analyzing the features created
 ------------------------------
@@ -1043,7 +1038,7 @@ Analyzing the features created
 Let us perform the same workflow, but without the |Pipeline|, so we can
 analyze the TableVectorizer's mechanisms along the way.
 
-.. GENERATED FROM PYTHON SOURCE LINES 287-289
+.. GENERATED FROM PYTHON SOURCE LINES 282-284
 
 .. code-block:: default
 
@@ -1056,11 +1051,11 @@ analyze the TableVectorizer's mechanisms along the way.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 290-291
+.. GENERATED FROM PYTHON SOURCE LINES 285-286
 
 We split the data between train and test, and transform them:
 
-.. GENERATED FROM PYTHON SOURCE LINES 291-300
+.. GENERATED FROM PYTHON SOURCE LINES 286-295
 
 .. code-block:: default
 
@@ -1080,11 +1075,11 @@ We split the data between train and test, and transform them:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 301-302
+.. GENERATED FROM PYTHON SOURCE LINES 296-297
 
 The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
-.. GENERATED FROM PYTHON SOURCE LINES 302-304
+.. GENERATED FROM PYTHON SOURCE LINES 297-299
 
 .. code-block:: default
 
@@ -1100,7 +1095,7 @@ The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
 
     array([[2.00700000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-            7.33332225e-02, 1.28435049e-01, 5.42457073e-02],
+            5.41709154e-02, 5.11907679e-02, 7.34665872e-02],
            [2.00500000e+03, 1.00000000e+00, 0.00000000e+00, ...,
             5.00000000e-02, 5.00000000e-02, 5.00000000e-02],
            [2.00900000e+03, 1.00000000e+00, 0.00000000e+00, ...,
@@ -1115,11 +1110,11 @@ The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 305-306
+.. GENERATED FROM PYTHON SOURCE LINES 300-301
 
 They have more columns than the original dataframe, but not much more:
 
-.. GENERATED FROM PYTHON SOURCE LINES 306-308
+.. GENERATED FROM PYTHON SOURCE LINES 301-303
 
 .. code-block:: default
 
@@ -1138,7 +1133,7 @@ They have more columns than the original dataframe, but not much more:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 309-314
+.. GENERATED FROM PYTHON SOURCE LINES 304-309
 
 Inspecting the features created
 ...............................
@@ -1146,7 +1141,7 @@ Inspecting the features created
 The |TV| assigns a transformer for each column. We can inspect this
 choice:
 
-.. GENERATED FROM PYTHON SOURCE LINES 314-318
+.. GENERATED FROM PYTHON SOURCE LINES 309-313
 
 .. code-block:: default
 
@@ -1173,7 +1168,7 @@ choice:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 319-332
+.. GENERATED FROM PYTHON SOURCE LINES 314-327
 
 This is what is being passed to the |ColumnTransformer| under the hood.
 If you're familiar with how the latter works, it should be very intuitive.
@@ -1189,7 +1184,7 @@ Next, we can have a look at the encoded feature names.
 
 Before encoding:
 
-.. GENERATED FROM PYTHON SOURCE LINES 332-334
+.. GENERATED FROM PYTHON SOURCE LINES 327-329
 
 .. code-block:: default
 
@@ -1208,11 +1203,11 @@ Before encoding:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 335-336
+.. GENERATED FROM PYTHON SOURCE LINES 330-331
 
 After encoding (we only plot the first 8 feature names):
 
-.. GENERATED FROM PYTHON SOURCE LINES 336-339
+.. GENERATED FROM PYTHON SOURCE LINES 331-334
 
 .. code-block:: default
 
@@ -1232,7 +1227,7 @@ After encoding (we only plot the first 8 feature names):
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 340-346
+.. GENERATED FROM PYTHON SOURCE LINES 335-341
 
 As we can see, it gave us interpretable columns.
 This is because we used the |Gap| on the column 'division',
@@ -1241,7 +1236,7 @@ which was classified as a high cardinality string variable.
 
 In total, we have a reasonable number of encoded columns:
 
-.. GENERATED FROM PYTHON SOURCE LINES 346-349
+.. GENERATED FROM PYTHON SOURCE LINES 341-344
 
 .. code-block:: default
 
@@ -1261,7 +1256,7 @@ In total, we have a reasonable number of encoded columns:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 350-362
+.. GENERATED FROM PYTHON SOURCE LINES 345-357
 
 Feature importances in the statistical model
 --------------------------------------------
@@ -1276,7 +1271,7 @@ In this section, we will train a regressor, and plot the feature importances.
 
 First, let's train the |RandomForestRegressor|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 362-368
+.. GENERATED FROM PYTHON SOURCE LINES 357-363
 
 .. code-block:: default
 
@@ -1299,11 +1294,11 @@ First, let's train the |RandomForestRegressor|:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 369-370
+.. GENERATED FROM PYTHON SOURCE LINES 364-365
 
 Retrieving the feature importances:
 
-.. GENERATED FROM PYTHON SOURCE LINES 370-377
+.. GENERATED FROM PYTHON SOURCE LINES 365-372
 
 .. code-block:: default
 
@@ -1321,11 +1316,11 @@ Retrieving the feature importances:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 378-379
+.. GENERATED FROM PYTHON SOURCE LINES 373-374
 
 Plotting the results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 379-392
+.. GENERATED FROM PYTHON SOURCE LINES 374-387
 
 .. code-block:: default
 
@@ -1354,7 +1349,7 @@ Plotting the results:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 393-404
+.. GENERATED FROM PYTHON SOURCE LINES 388-399
 
 We can deduce from this data that the three factors that define the
 most the salary are: being hired for a long time, being a manager, and
@@ -1371,7 +1366,7 @@ having a permanent, full-time job :)
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 2 minutes  58.592 seconds)
+   **Total running time of the script:** ( 2 minutes  41.947 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_dirty_categories.py:

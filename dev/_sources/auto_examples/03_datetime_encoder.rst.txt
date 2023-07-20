@@ -70,7 +70,7 @@ on the date and the time of measurement.
     import pandas as pd
 
     data = pd.read_csv(
-        "https://raw.githubusercontent.com/pandas-dev/pandas/main/doc/data/air_quality_no2_long.csv"
+        "https://raw.githubusercontent.com/pandas-dev/pandas/main/doc/data/air_quality_no2_long.csv"  # noqa
     )
     y = data["value"]
     X = data[["city", "date.utc"]]
@@ -178,11 +178,12 @@ Encoding the data to numerical representations
 Encoders for categorical and datetime features
 ..............................................
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-69
+.. GENERATED FROM PYTHON SOURCE LINES 49-70
 
 .. code-block:: default
 
     from sklearn.preprocessing import OneHotEncoder
+
     from skrub import DatetimeEncoder
 
     cat_encoder = OneHotEncoder(handle_unknown="ignore")
@@ -209,7 +210,7 @@ Encoders for categorical and datetime features
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-76
+.. GENERATED FROM PYTHON SOURCE LINES 71-77
 
 Transforming the input data
 ...........................
@@ -218,7 +219,7 @@ been replaced by features for the month, day, hour, and day of the week.
 Note that the year and minute features have been removed by the encoder
 because they are constant.
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-78
+.. GENERATED FROM PYTHON SOURCE LINES 77-79
 
 .. code-block:: default
 
@@ -240,7 +241,7 @@ because they are constant.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-81
+.. GENERATED FROM PYTHON SOURCE LINES 80-82
 
 .. code-block:: default
 
@@ -265,19 +266,20 @@ because they are constant.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-86
+.. GENERATED FROM PYTHON SOURCE LINES 83-87
 
 One-liner with the |TV|
 .......................
 The |DtE| is used by default in the |TV|, which
 automatically detects datetime features.
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-93
+.. GENERATED FROM PYTHON SOURCE LINES 87-95
 
 .. code-block:: default
 
-    from skrub import TableVectorizer
     from pprint import pprint
+
+    from skrub import TableVectorizer
 
     table_vec = TableVectorizer()
     table_vec.fit_transform(X)
@@ -301,11 +303,11 @@ automatically detects datetime features.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-95
+.. GENERATED FROM PYTHON SOURCE LINES 96-97
 
 If we want the day of the week, we can just replace |TV|'s default parameter:
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-101
+.. GENERATED FROM PYTHON SOURCE LINES 97-103
 
 .. code-block:: default
 
@@ -328,12 +330,12 @@ If we want the day of the week, we can just replace |TV|'s default parameter:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 102-104
+.. GENERATED FROM PYTHON SOURCE LINES 104-106
 
 We can see that the |TV| is indeed using
 a |DtE| for the datetime features.
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-106
+.. GENERATED FROM PYTHON SOURCE LINES 106-108
 
 .. code-block:: default
 
@@ -355,7 +357,7 @@ a |DtE| for the datetime features.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-112
+.. GENERATED FROM PYTHON SOURCE LINES 109-114
 
 Predictions with date features
 ------------------------------
@@ -363,7 +365,7 @@ For prediction tasks, we recommend using the |TV| inside a
 pipeline, combined with a model that uses the features extracted by the
 |DtE|.
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-122
+.. GENERATED FROM PYTHON SOURCE LINES 114-124
 
 .. code-block:: default
 
@@ -384,7 +386,7 @@ pipeline, combined with a model that uses the features extracted by the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 123-130
+.. GENERATED FROM PYTHON SOURCE LINES 125-132
 
 Evaluating the model
 ....................
@@ -394,7 +396,7 @@ standard tools like cross-validation do not respect the time ordering.
 Instead, we can use the :class:`~sklearn.model_selection.TimeSeriesSplit`,
 which makes sure that the test set is always in the future.
 
-.. GENERATED FROM PYTHON SOURCE LINES 130-145
+.. GENERATED FROM PYTHON SOURCE LINES 132-147
 
 .. code-block:: default
 
@@ -427,14 +429,14 @@ which makes sure that the test set is always in the future.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 146-150
+.. GENERATED FROM PYTHON SOURCE LINES 148-152
 
 Plotting the prediction
 .......................
 The mean squared error is not obvious to interpret, so we compare
 visually the prediction of our model with the actual values.
 
-.. GENERATED FROM PYTHON SOURCE LINES 150-181
+.. GENERATED FROM PYTHON SOURCE LINES 152-183
 
 .. code-block:: default
 
@@ -481,11 +483,11 @@ visually the prediction of our model with the actual values.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 182-183
+.. GENERATED FROM PYTHON SOURCE LINES 184-185
 
 Let's zoom on a few days:
 
-.. GENERATED FROM PYTHON SOURCE LINES 183-217
+.. GENERATED FROM PYTHON SOURCE LINES 185-219
 
 .. code-block:: default
 
@@ -535,7 +537,7 @@ Let's zoom on a few days:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 218-225
+.. GENERATED FROM PYTHON SOURCE LINES 220-227
 
 Feature importances
 -------------------
@@ -545,7 +547,7 @@ importance of the features created by the |DtE|, using the
 :func:`~sklearn.inspection.permutation_importance` function, which
 basically shuffles a feature and sees how the model changes its prediction.
 
-.. GENERATED FROM PYTHON SOURCE LINES 227-253
+.. GENERATED FROM PYTHON SOURCE LINES 229-255
 
 .. code-block:: default
 
@@ -587,7 +589,7 @@ basically shuffles a feature and sees how the model changes its prediction.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 254-256
+.. GENERATED FROM PYTHON SOURCE LINES 256-258
 
 We can see that the hour of the day is the most important feature,
 which seems reasonable.
@@ -595,7 +597,7 @@ which seems reasonable.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.250 seconds)
+   **Total running time of the script:** ( 0 minutes  4.237 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:

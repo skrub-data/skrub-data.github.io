@@ -608,8 +608,8 @@ Name: Global_Sales, Length: 16572, dtype: float64
 </pre></div>
 </div>
 <p>Let’s take a look at the distribution of our target variable:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
 <a href="http://seaborn.pydata.org/generated/seaborn.set_theme.html#seaborn.set_theme" title="seaborn.set_theme" class="sphx-glr-backref-module-seaborn sphx-glr-backref-type-py-function"><span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span></a><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;ticks&quot;</span><span class="p">)</span>
 
@@ -644,7 +644,7 @@ Name: Global_Sales, Length: 16572, dtype: float64
 <a href="../generated/skrub.datasets.fetch_ken_table_aliases.html#skrub.datasets.fetch_ken_table_aliases" title="skrub.datasets.fetch_ken_table_aliases" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_ken_table_aliases</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;schools&#39;, &#39;companies&#39;, &#39;all_entities&#39;, &#39;albums&#39;, &#39;movies&#39;, &#39;games&#39;}
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;games&#39;, &#39;all_entities&#39;, &#39;movies&#39;, &#39;albums&#39;, &#39;companies&#39;, &#39;schools&#39;}
 </pre></div>
 </div>
 <p>The <em>games</em> table is the most relevant to our case.
@@ -792,8 +792,8 @@ the base features contained in the initial table.</p>
 that will be included in the learning process and the appropriate encoding of
 categorical variables using the <a class="reference internal" href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> and <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.make_column_transformer.html#sklearn.compose.make_column_transformer" title="sklearn.compose.make_column_transformer" class="sphx-glr-backref-module-sklearn-compose sphx-glr-backref-type-py-function"><span class="n">make_column_transformer</span></a>
-
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="sklearn.preprocessing.OneHotEncoder" class="sphx-glr-backref-module-sklearn-preprocessing sphx-glr-backref-type-py-class"><span class="n">OneHotEncoder</span></a>
+
 <span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">MinHashEncoder</span></a>
 
 <a href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">min_hash</span></a> <span class="o">=</span> <a href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">MinHashEncoder</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
@@ -940,7 +940,7 @@ explanatory variables.</p>
 additional background information on the game and the publisher of the
 game that would otherwise be missed.</p>
 <p>It helped significantly improve the prediction score.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 11 minutes  42.829 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 11 minutes  23.949 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-06-ken-embeddings-example-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/06_ken_embeddings_example.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

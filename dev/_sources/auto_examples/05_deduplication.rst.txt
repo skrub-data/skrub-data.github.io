@@ -54,13 +54,14 @@ multiple spelling mistakes for these three medications.
 
 Let's generate some example data that demonstrate this.
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-65
+.. GENERATED FROM PYTHON SOURCE LINES 37-66
 
 .. code-block:: default
 
 
 
     import numpy as np
+
     from skrub.datasets import make_deduplication_data
 
     # our three medication names
@@ -104,12 +105,12 @@ Let's generate some example data that demonstrate this.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-68
+.. GENERATED FROM PYTHON SOURCE LINES 67-69
 
 Visualize the data
 ------------------
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-75
+.. GENERATED FROM PYTHON SOURCE LINES 69-76
 
 .. code-block:: default
 
@@ -138,7 +139,7 @@ Visualize the data
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-83
+.. GENERATED FROM PYTHON SOURCE LINES 77-84
 
 We can now see clearly the structure of the data: The three original medications
 are the most common ones, however there are many spelling mistakes and hence
@@ -148,23 +149,25 @@ The idea is to use the fact that the string-distance of each misspelled medicati
 name will be closest to either the correctly or incorrectly spelled orginal
 medication name - and therefore form clusters.
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-92
+.. GENERATED FROM PYTHON SOURCE LINES 86-94
 
 We can visualize the pair-wise distance between all medication names
 --------------------------------------------------------------------
 
 Below we use a heatmap to visualize the pairwise-distance between medication names.
-A darker color means that two medication names are closer together (i.e. more similar),
-a lighter color means a larger distance. We can see that we are dealing with three
-clusters - the original medication names and their misspellings that cluster around them.
+A darker color means that two medication names are closer together
+(i.e. more similar), a lighter color means a larger distance. We can see that we are
+dealing with three clusters - the original medication names and their misspellings
+that cluster around them.
 
-.. GENERATED FROM PYTHON SOURCE LINES 92-106
+.. GENERATED FROM PYTHON SOURCE LINES 94-109
 
 .. code-block:: default
 
 
-    from skrub import compute_ngram_distance
     from scipy.spatial.distance import squareform
+
+    from skrub import compute_ngram_distance
 
     ngram_distances = compute_ngram_distance(unique_examples)
     square_distances = squareform(ngram_distances)
@@ -194,7 +197,7 @@ clusters - the original medication names and their misspellings that cluster aro
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-118
+.. GENERATED FROM PYTHON SOURCE LINES 110-121
 
 .. _example_deduplication:
 
@@ -206,9 +209,9 @@ string similarities to group duplicated names
 
 The number of clusters will need some adjustment depending on the data you have.
 If no fixed number of clusters is given, |dd| tries to set it automatically
-via the `silhouette score <https://scikit-learn.org/stable/modules/clustering.html#silhouette-coefficient>`_.
+via the `silhouette score <https://scikit-learn.org/stable/modules/clustering.html#silhouette-coefficient>`_.  # noqa
 
-.. GENERATED FROM PYTHON SOURCE LINES 118-123
+.. GENERATED FROM PYTHON SOURCE LINES 121-126
 
 .. code-block:: default
 
@@ -224,11 +227,11 @@ via the `silhouette score <https://scikit-learn.org/stable/modules/clustering.ht
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 124-125
+.. GENERATED FROM PYTHON SOURCE LINES 127-128
 
 We can visualize the distribution of categories in the deduplicated data:
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-135
+.. GENERATED FROM PYTHON SOURCE LINES 128-138
 
 .. code-block:: default
 
@@ -260,18 +263,18 @@ We can visualize the distribution of categories in the deduplicated data:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 136-144
+.. GENERATED FROM PYTHON SOURCE LINES 139-147
 
 In this example we can correct all spelling mistakes by using the ideal number
 of clusters as determined by the silhouette score.
 
-However, often the translation/deduplication won't be perfect and will require some tweaks.
-In this case, we can construct and update a translation table based on the data
-returned by |dd|.
+However, often the translation/deduplication won't be perfect and will require some
+tweaks. In this case, we can construct and update a translation table based on the
+data returned by |dd|.
 It consists of the (potentially) misspelled category names as indices and the
 (potentially) correct categories as values.
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-151
+.. GENERATED FROM PYTHON SOURCE LINES 147-154
 
 .. code-block:: default
 
@@ -289,13 +292,13 @@ It consists of the (potentially) misspelled category names as indices and the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 152-155
+.. GENERATED FROM PYTHON SOURCE LINES 155-158
 
 Since the number of correct spellings will likely be much smaller than the
 number of original categories, we can print the estimated cluster and their
 most common exemplars (the guessed correct spelling):
 
-.. GENERATED FROM PYTHON SOURCE LINES 155-168
+.. GENERATED FROM PYTHON SOURCE LINES 158-171
 
 .. code-block:: default
 
@@ -340,13 +343,13 @@ most common exemplars (the guessed correct spelling):
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-172
+.. GENERATED FROM PYTHON SOURCE LINES 172-175
 
 In case we want to adapt the translation table post-hoc we can easily
 modified it manually and apply it, for instance modifying the
 correspondance for the last entry as such:
 
-.. GENERATED FROM PYTHON SOURCE LINES 172-176
+.. GENERATED FROM PYTHON SOURCE LINES 175-179
 
 .. code-block:: default
 
@@ -364,7 +367,7 @@ correspondance for the last entry as such:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.456 seconds)
+   **Total running time of the script:** ( 0 minutes  5.235 seconds)
 
 
 .. _sphx_glr_download_auto_examples_05_deduplication.py:

@@ -497,6 +497,7 @@ handwriting was hard to decipher, or due to mistakes during data input - there a
 multiple spelling mistakes for these three medications.</p>
 <p>Let’s generate some example data that demonstrate this.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
 <span class="kn">from</span> <span class="nn">skrub.datasets</span> <span class="kn">import</span> <a href="../generated/skrub.datasets.make_deduplication_data.html#skrub.datasets.make_deduplication_data" title="skrub.datasets.make_deduplication_data" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">make_deduplication_data</span></a>
 
 <span class="c1"># our three medication names</span>
@@ -554,11 +555,13 @@ medication name - and therefore form clusters.</p>
 <section id="we-can-visualize-the-pair-wise-distance-between-all-medication-names">
 <h2>We can visualize the pair-wise distance between all medication names<a class="headerlink" href="#we-can-visualize-the-pair-wise-distance-between-all-medication-names" title="Permalink to this heading">#</a></h2>
 <p>Below we use a heatmap to visualize the pairwise-distance between medication names.
-A darker color means that two medication names are closer together (i.e. more similar),
-a lighter color means a larger distance. We can see that we are dealing with three
-clusters - the original medication names and their misspellings that cluster around them.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <span class="n">compute_ngram_distance</span>
-<span class="kn">from</span> <span class="nn">scipy.spatial.distance</span> <span class="kn">import</span> <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.squareform.html#scipy.spatial.distance.squareform" title="scipy.spatial.distance.squareform" class="sphx-glr-backref-module-scipy-spatial-distance sphx-glr-backref-type-py-function"><span class="n">squareform</span></a>
+A darker color means that two medication names are closer together
+(i.e. more similar), a lighter color means a larger distance. We can see that we are
+dealing with three clusters - the original medication names and their misspellings
+that cluster around them.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.spatial.distance</span> <span class="kn">import</span> <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.squareform.html#scipy.spatial.distance.squareform" title="scipy.spatial.distance.squareform" class="sphx-glr-backref-module-scipy-spatial-distance sphx-glr-backref-type-py-function"><span class="n">squareform</span></a>
+
+<span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <span class="n">compute_ngram_distance</span>
 
 <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ngram_distances</span></a> <span class="o">=</span> <span class="n">compute_ngram_distance</span><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">unique_examples</span></a><span class="p">)</span>
 <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">square_distances</span></a> <span class="o">=</span> <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.squareform.html#scipy.spatial.distance.squareform" title="scipy.spatial.distance.squareform" class="sphx-glr-backref-module-scipy-spatial-distance sphx-glr-backref-type-py-function"><span class="n">squareform</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ngram_distances</span></a><span class="p">)</span>
@@ -581,7 +584,7 @@ clusters - the original medication names and their misspellings that cluster aro
 string similarities to group duplicated names</p>
 <p>The number of clusters will need some adjustment depending on the data you have.
 If no fixed number of clusters is given, <a class="reference internal" href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> tries to set it automatically
-via the <a class="reference external" href="https://scikit-learn.org/stable/modules/clustering.html#silhouette-coefficient">silhouette score</a>.</p>
+via the <a class="reference external" href="https://scikit-learn.org/stable/modules/clustering.html#silhouette-coefficient">silhouette score</a>.  # noqa</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">deduplicate</span></a>
 
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">deduplicated_data</span></a> <span class="o">=</span> <a href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">deduplicate</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">duplicated_names</span></a><span class="p">)</span>
@@ -603,9 +606,9 @@ via the <a class="reference external" href="https://scikit-learn.org/stable/modu
 </div>
 <p>In this example we can correct all spelling mistakes by using the ideal number
 of clusters as determined by the silhouette score.</p>
-<p>However, often the translation/deduplication won’t be perfect and will require some tweaks.
-In this case, we can construct and update a translation table based on the data
-returned by <a class="reference internal" href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a>.
+<p>However, often the translation/deduplication won’t be perfect and will require some
+tweaks. In this case, we can construct and update a translation table based on the
+data returned by <a class="reference internal" href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a>.
 It consists of the (potentially) misspelled category names as indices and the
 (potentially) correct categories as values.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># create a table that maps original -&gt; corrected categories</span>
@@ -656,7 +659,7 @@ correspondance for the last entry as such:</p>
 <span class="k">assert</span> <span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">new_deduplicated_names</span></a> <span class="o">==</span> <span class="s2">&quot;Completely new category&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span>
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  5.456 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  5.235 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-05-deduplication-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/05_deduplication.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
