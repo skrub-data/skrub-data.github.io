@@ -94,7 +94,7 @@ We first retrieve the dataset:
 
  .. code-block:: none
 
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:588: UserWarning: Could not find the dataset 42125 locally. Downloading it from OpenML; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/data.
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:616: UserWarning: Could not find the dataset 42125 locally. Downloading it from OpenML; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/data.
       info = _fetch_openml_dataset(dataset_id, data_directory)
 
 
@@ -667,7 +667,7 @@ and store the returned cross-validation score:
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
       warnings.warn(
     gap encoding
-    r2 score:  mean: 0.925; std: 0.015
+    r2 score:  mean: 0.921; std: 0.012
 
 
 
@@ -1002,9 +1002,9 @@ Let's perform a cross-validation to see how well this model predicts:
 
  .. code-block:: none
 
-    scores=[0.92578792 0.90138078 0.93404973 0.93543378 0.93184222]
-    mean=0.9256988873038582
-    std=0.012598598445897932
+    scores=[0.92968606 0.90067893 0.92672269 0.93481409 0.93333366]
+    mean=0.9250470871292524
+    std=0.012507569204806265
 
 
 
@@ -1080,7 +1080,7 @@ The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
 
     array([[2.00700000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-            1.41919198e+00, 5.59541873e-02, 9.71791311e-02],
+            5.72201741e-02, 1.11277302e-01, 5.55870912e-02],
            [2.00500000e+03, 1.00000000e+00, 0.00000000e+00, ...,
             5.00000000e-02, 5.00000000e-02, 5.00000000e-02],
            [2.00900000e+03, 1.00000000e+00, 0.00000000e+00, ...,
@@ -1351,7 +1351,7 @@ having a permanent, full-time job :)
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 3 minutes  19.537 seconds)
+   **Total running time of the script:** ( 3 minutes  3.665 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_dirty_categories.py:
