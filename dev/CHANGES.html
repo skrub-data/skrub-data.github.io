@@ -508,6 +508,10 @@ with <cite>pyodide</cite>.
 - scikit-learn &gt;= 1.2.1
 - pandas &gt;= 1.5.3 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/613">#613</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
 <li><p>Removed <cite>requests</cite> from the requirements. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/613">#613</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
+<li><p>Do not support 1-D array (and pandas Series) in <a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>. Pass a
+2-D array (or a pandas DataFrame) with a single column instead. This change is for
+compliance with the scikit-learn API.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/647">#647</a> by <a class="reference external" href="https://github.com/glemaitre">Guillaume Lemaitre</a></p></li>
 </ul>
 </section>
 <section id="minor-changes">
