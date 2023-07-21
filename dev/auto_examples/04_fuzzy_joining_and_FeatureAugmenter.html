@@ -494,7 +494,7 @@ machine-learning pipeline. In particular, it enables tuning parameters of
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html#pandas.read_csv" title="pandas.read_csv" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-function"><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span></a><span class="p">(</span>
-    <span class="s2">&quot;https://raw.githubusercontent.com/dirty-cat/datasets/master/data/Happiness_report_2022.csv&quot;</span><span class="p">,</span>  <span class="c1"># noqa</span>
+    <span class="s2">&quot;https://raw.githubusercontent.com/skrub-data/datasets/master/data/Happiness_report_2022.csv&quot;</span><span class="p">,</span>  <span class="c1"># noqa</span>
     <span class="n">thousands</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span>
 <span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df</span><span class="o">.</span><span class="n">drop</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html#pandas.DataFrame.tail" title="pandas.DataFrame.tail" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df</span><span class="o">.</span><span class="n">tail</span></a><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1779,7 +1779,7 @@ refitting the pipeline on the data.</p>
 </aside>
 <p>Great, by evaluating the correct <code class="docutils literal notranslate"><span class="pre">match_score</span></code> we improved our
 results significantly!</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  13.065 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  14.039 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-04-fuzzy-joining-and-featureaugmenter-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining_and_FeatureAugmenter.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
