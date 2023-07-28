@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta property="og:title" content="Wikipedia embeddings to enrich the data" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/auto_examples/06_ken_embeddings_example.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/auto_examples/06_ken_embeddings.html" />
 <meta property="og:site_name" content="skrub" />
 <meta property="og:description" content="When the data comprises common entities (cities, companies or famous people), bringing new information assembled from external sources may be the key to improving the analysis. Embeddings, or vecto..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
@@ -56,11 +56,11 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/jupyterlite_sphinx.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/06_ken_embeddings_example';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/06_ken_embeddings';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Deduplicating misspelled categories with deduplicate" href="05_deduplication.html" />
+    <link rel="prev" title="Deduplicating misspelled categories" href="05_deduplication.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -407,7 +407,7 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="02_investigating_dirty_categories.html">Investigating and interpreting dirty categories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_datetime_encoder.html">Handling datetime features with the DatetimeEncoder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_fuzzy_joining_and_FeatureAugmenter.html">Fuzzy joining dirty tables and the FeatureAugmenter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_deduplication.html">Deduplicating misspelled categories with deduplicate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_deduplication.html">Deduplicating misspelled categories</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Wikipedia embeddings to enrich the data</a></li>
 </ul>
 </div>
@@ -468,11 +468,11 @@ document.write(`
                   
   <div class="sphx-glr-download-link-note admonition note">
 <p class="admonition-title">Note</p>
-<p><a class="reference internal" href="#sphx-glr-download-auto-examples-06-ken-embeddings-example-py"><span class="std std-ref">Go to the end</span></a>
+<p><a class="reference internal" href="#sphx-glr-download-auto-examples-06-ken-embeddings-py"><span class="std std-ref">Go to the end</span></a>
 to download the full example code or to run this example in your browser via JupyterLite or Binder</p>
 </div>
 <section class="sphx-glr-example-title" id="wikipedia-embeddings-to-enrich-the-data">
-<span id="sphx-glr-auto-examples-06-ken-embeddings-example-py"></span><h1>Wikipedia embeddings to enrich the data<a class="headerlink" href="#wikipedia-embeddings-to-enrich-the-data" title="Permalink to this heading">#</a></h1>
+<span id="sphx-glr-auto-examples-06-ken-embeddings-py"></span><h1>Wikipedia embeddings to enrich the data<a class="headerlink" href="#wikipedia-embeddings-to-enrich-the-data" title="Permalink to this heading">#</a></h1>
 <p>When the data comprises common entities (cities,
 companies or famous people), bringing new information assembled from external
 sources may be the key to improving the analysis.</p>
@@ -617,7 +617,7 @@ Name: Global_Sales, Length: 16572, dtype: float64
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_06_ken_embeddings_example_001.png" srcset="../_images/sphx_glr_06_ken_embeddings_example_001.png" alt="06 ken embeddings example" class = "sphx-glr-single-img"/><p>It seems better to take the log of sales rather than the absolute values:</p>
+<img src="../_images/sphx_glr_06_ken_embeddings_001.png" srcset="../_images/sphx_glr_06_ken_embeddings_001.png" alt="06 ken embeddings" class = "sphx-glr-single-img"/><p>It seems better to take the log of sales rather than the absolute values:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ufunc.html#numpy.ufunc" title="numpy.ufunc" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">np</span><span class="o">.</span><span class="n">log</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
@@ -625,7 +625,7 @@ Name: Global_Sales, Length: 16572, dtype: float64
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_06_ken_embeddings_example_002.png" srcset="../_images/sphx_glr_06_ken_embeddings_example_002.png" alt="06 ken embeddings example" class = "sphx-glr-single-img"/><p>Before moving further, let’s carry out some basic preprocessing:</p>
+<img src="../_images/sphx_glr_06_ken_embeddings_002.png" srcset="../_images/sphx_glr_06_ken_embeddings_002.png" alt="06 ken embeddings" class = "sphx-glr-single-img"/><p>Before moving further, let’s carry out some basic preprocessing:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get a mask of the rows with missing values in &quot;Publisher&quot; and &quot;Global_Sales&quot;</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">mask</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.isna.html#pandas.DataFrame.isna" title="pandas.DataFrame.isna" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">X</span><span class="o">.</span><span class="n">isna</span></a><span class="p">()[</span><span class="s2">&quot;Publisher&quot;</span><span class="p">]</span> <span class="o">|</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.isna.html#pandas.DataFrame.isna" title="pandas.DataFrame.isna" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">X</span><span class="o">.</span><span class="n">isna</span></a><span class="p">()[</span><span class="s2">&quot;Global_Sales&quot;</span><span class="p">]</span>
 <span class="c1"># And remove them</span>
@@ -644,7 +644,7 @@ Name: Global_Sales, Length: 16572, dtype: float64
 <a href="../generated/skrub.datasets.fetch_ken_table_aliases.html#skrub.datasets.fetch_ken_table_aliases" title="skrub.datasets.fetch_ken_table_aliases" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_ken_table_aliases</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;movies&#39;, &#39;all_entities&#39;, &#39;games&#39;, &#39;albums&#39;, &#39;schools&#39;, &#39;companies&#39;}
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;movies&#39;, &#39;companies&#39;, &#39;schools&#39;, &#39;games&#39;, &#39;all_entities&#39;, &#39;albums&#39;}
 </pre></div>
 </div>
 <p>The <em>games</em> table is the most relevant to our case.
@@ -934,25 +934,25 @@ Mean R2 is 0.49 +- 0.01 and the RMSE is 1.04 +- 0.01
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html#matplotlib.pyplot.tight_layout" title="matplotlib.pyplot.tight_layout" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_06_ken_embeddings_example_003.png" srcset="../_images/sphx_glr_06_ken_embeddings_example_003.png" alt="06 ken embeddings example" class = "sphx-glr-single-img"/><p>There is a clear improvement when including the KEN embeddings among the
+<img src="../_images/sphx_glr_06_ken_embeddings_003.png" srcset="../_images/sphx_glr_06_ken_embeddings_003.png" alt="06 ken embeddings" class = "sphx-glr-single-img"/><p>There is a clear improvement when including the KEN embeddings among the
 explanatory variables.</p>
 <p>In this case, the embeddings from Wikipedia introduced
 additional background information on the game and the publisher of the
 game that would otherwise be missed.</p>
 <p>It helped significantly improve the prediction score.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 10 minutes  47.138 seconds)</p>
-<div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-06-ken-embeddings-example-py">
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 10 minutes  27.647 seconds)</p>
+<div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-06-ken-embeddings-py">
 <div class="binder-badge docutils container">
-<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/06_ken_embeddings_example.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/06_ken_embeddings.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
 </div>
 <div class="lite-badge docutils container">
-<a class="reference external image-reference" href="../lite/lab/?path=auto_examples/06_ken_embeddings_example.ipynb"><img alt="Launch JupyterLite" src="../_images/jupyterlite_badge_logo.svg" width="150px" /></a>
+<a class="reference external image-reference" href="../lite/lab/?path=auto_examples/06_ken_embeddings.ipynb"><img alt="Launch JupyterLite" src="../_images/jupyterlite_badge_logo.svg" width="150px" /></a>
 </div>
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
-<p><a class="reference download internal" download="" href="../_downloads/b3de648d8693368de3f37cd39bbd395e/06_ken_embeddings_example.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">06_ken_embeddings_example.py</span></code></a></p>
+<p><a class="reference download internal" download="" href="../_downloads/216656c2e8e8a33463fe5d69fd4a4e00/06_ken_embeddings.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">06_ken_embeddings.py</span></code></a></p>
 </div>
 <div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
-<p><a class="reference download internal" download="" href="../_downloads/98ff6bc43500f885cfce94ee5ac735ca/06_ken_embeddings_example.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">06_ken_embeddings_example.ipynb</span></code></a></p>
+<p><a class="reference download internal" download="" href="../_downloads/707aeb51609bd2078f67c6216133ecc4/06_ken_embeddings.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">06_ken_embeddings.ipynb</span></code></a></p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
@@ -977,7 +977,7 @@ game that would otherwise be missed.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Deduplicating misspelled categories with deduplicate</p>
+        <p class="prev-next-title">Deduplicating misspelled categories</p>
       </div>
     </a>
 </div></div>
@@ -1015,7 +1015,7 @@ game that would otherwise be missed.</p>
   <div class="sidebar-secondary-item">
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/skrub-data/skrub/edit/main/doc/auto_examples/06_ken_embeddings_example.rst">
+    <a href="https://github.com/skrub-data/skrub/edit/main/doc/auto_examples/06_ken_embeddings.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -1029,7 +1029,7 @@ game that would otherwise be missed.</p>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="../_sources/auto_examples/06_ken_embeddings_example.rst.txt">
+    <a href="../_sources/auto_examples/06_ken_embeddings.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
