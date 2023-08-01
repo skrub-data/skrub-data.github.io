@@ -2,23 +2,23 @@
   "content": [
     {
       "content": null,
-      "created": "2023-07-31T12:54:16.867461Z",
+      "created": "2023-08-01T12:58:29.456122Z",
       "format": null,
-      "last_modified": "2023-07-31T12:54:16.867461Z",
+      "last_modified": "2023-08-01T12:58:29.456122Z",
       "mimetype": null,
       "name": "auto_examples",
-      "path": "auto_examples",
+      "path": "./auto_examples",
       "size": null,
       "type": "directory",
       "writable": true
     }
   ],
-  "created": "2023-07-31T12:54:16.863461Z",
+  "created": "2023-08-01T12:58:29.456122Z",
   "format": "json",
-  "last_modified": "2023-07-31T12:54:16.863461Z",
+  "last_modified": "2023-08-01T12:58:29.456122Z",
   "mimetype": null,
-  "name": "",
-  "path": "",
+  "name": ".",
+  "path": ".",
   "size": null,
   "type": "directory",
   "writable": true
