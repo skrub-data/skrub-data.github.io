@@ -93,7 +93,7 @@ Let's generate this example dataset:
  .. code-block:: none
 
 
-    ['Contrivan', 'Contrivan', 'Contrivan', 'Coctrivan', 'Contriwan']
+    ['Contrivan', 'Czntrivan', 'Contrivan', 'Coptrivan', 'Contriuan']
 
 
 
@@ -172,10 +172,10 @@ Let's deduplicate our data:
 
 
     Contrivan    Contrivan
+    Czntrivan    Contrivan
     Contrivan    Contrivan
-    Contrivan    Contrivan
-    Coctrivan    Contrivan
-    Contriwan    Contrivan
+    Coptrivan    Contrivan
+    Contriuan    Contrivan
     dtype: object
 
 
@@ -256,10 +256,10 @@ data returned by |deduplicate|.
 
 
     Contrivan    Contrivan
-    Coctrivan    Contrivan
-    Contriwan    Contrivan
-    Conthivan    Contrivan
-    tontrivan    Contrivan
+    Czntrivan    Contrivan
+    Coptrivan    Contrivan
+    Contriuan    Contrivan
+    Contgivan    Contrivan
     dtype: object
 
 
@@ -335,7 +335,7 @@ or |MinHash|.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.678 seconds)
+   **Total running time of the script:** ( 0 minutes  4.240 seconds)
 
 
 .. _sphx_glr_download_auto_examples_05_deduplication.py:

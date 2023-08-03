@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: Skrub has not been released yet. It is currently undergoing fast development and backward compatability is not ensured. Major changes: fuzzy_join() and FeatureAugmenter can now..." />
+<meta property="og:description" content="Ongoing development: Skrub has not been released yet. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: fuzzy_join() and FeatureAugmenter can now..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: Skrub has not been released yet. It is currently undergoing fast development and backward compatability is not ensured. Major changes: fuzzy_join() and FeatureAugmenter can now..." />
+<meta name="description" content="Ongoing development: Skrub has not been released yet. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: fuzzy_join() and FeatureAugmenter can now..." />
 
     <title>Changes &#8212; skrub</title>
   
@@ -479,7 +479,7 @@ document.write(`
 <section id="ongoing-development">
 <h2>Ongoing development<a class="headerlink" href="#ongoing-development" title="Permalink to this heading">#</a></h2>
 <p>Skrub has not been released yet. It is currently undergoing fast
-development and backward compatability is not ensured.</p>
+development and backward compatibility is not ensured.</p>
 <section id="major-changes">
 <h3>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
@@ -556,6 +556,13 @@ categorical columns with missing values.
 increasing the <cite>sparse_threshold</cite> parameter. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/646">#646</a> by <a class="reference external" href="https://github.com/LeoGrin">Leo Grinsztajn</a></p></li>
 <li><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> doesn’t fail anymore if an infered type doesn’t work during transform.
 The new entries not matching the type are replaced by missing values. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/666">#666</a> by <a class="reference external" href="https://github.com/LeoGrin">Leo Grinsztajn</a></p></li>
+</ul>
+<ul class="simple">
+<li><p>Dataset fetcher <a class="reference internal" href="generated/skrub.datasets.fetch_employee_salaries.html#skrub.datasets.fetch_employee_salaries" title="skrub.datasets.fetch_employee_salaries"><code class="xref py py-func docutils literal notranslate"><span class="pre">datasets.fetch_employee_salaries()</span></code></a> now has a parameter
+<cite>overload_job_titles</cite> to allow overloading the job titles
+(<cite>employee_position_title</cite>) with the column <cite>underfilled_job_title</cite>,
+which provides some more information about the job title.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/581">#581</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
 </ul>
 </section>
 </section>

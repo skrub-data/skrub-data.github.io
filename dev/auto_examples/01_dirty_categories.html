@@ -535,7 +535,6 @@ control.</p>
       <th>division</th>
       <th>assignment_category</th>
       <th>employee_position_title</th>
-      <th>underfilled_job_title</th>
       <th>date_first_hired</th>
       <th>year_first_hired</th>
     </tr>
@@ -549,7 +548,6 @@ control.</p>
       <td>MSB Information Mgmt and Tech Division Records...</td>
       <td>Fulltime-Regular</td>
       <td>Office Services Coordinator</td>
-      <td>NaN</td>
       <td>09/22/1986</td>
       <td>1986</td>
     </tr>
@@ -561,7 +559,6 @@ control.</p>
       <td>ISB Major Crimes Division Fugitive Section</td>
       <td>Fulltime-Regular</td>
       <td>Master Police Officer</td>
-      <td>NaN</td>
       <td>09/12/1988</td>
       <td>1988</td>
     </tr>
@@ -573,7 +570,6 @@ control.</p>
       <td>Adult Protective and Case Management Services</td>
       <td>Fulltime-Regular</td>
       <td>Social Worker IV</td>
-      <td>NaN</td>
       <td>11/19/1989</td>
       <td>1989</td>
     </tr>
@@ -585,7 +581,6 @@ control.</p>
       <td>PRRS Facility and Security</td>
       <td>Fulltime-Regular</td>
       <td>Resident Supervisor II</td>
-      <td>NaN</td>
       <td>05/05/2014</td>
       <td>2014</td>
     </tr>
@@ -597,13 +592,11 @@ control.</p>
       <td>Affordable Housing Programs</td>
       <td>Fulltime-Regular</td>
       <td>Planning Specialist III</td>
-      <td>NaN</td>
       <td>03/05/2007</td>
       <td>2007</td>
     </tr>
     <tr>
       <th>...</th>
-      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -621,7 +614,6 @@ control.</p>
       <td>School Based Health Centers</td>
       <td>Fulltime-Regular</td>
       <td>Community Health Nurse II</td>
-      <td>NaN</td>
       <td>11/03/2015</td>
       <td>2015</td>
     </tr>
@@ -633,7 +625,6 @@ control.</p>
       <td>Human Resources Division</td>
       <td>Fulltime-Regular</td>
       <td>Fire/Rescue Division Chief</td>
-      <td>NaN</td>
       <td>11/28/1988</td>
       <td>1988</td>
     </tr>
@@ -645,7 +636,6 @@ control.</p>
       <td>Child and Adolescent Mental Health Clinic Serv...</td>
       <td>Parttime-Regular</td>
       <td>Medical Doctor IV - Psychiatrist</td>
-      <td>NaN</td>
       <td>04/30/2001</td>
       <td>2001</td>
     </tr>
@@ -657,7 +647,6 @@ control.</p>
       <td>Council Central Staff</td>
       <td>Fulltime-Regular</td>
       <td>Manager II</td>
-      <td>NaN</td>
       <td>09/05/2006</td>
       <td>2006</td>
     </tr>
@@ -669,13 +658,12 @@ control.</p>
       <td>Licensure, Regulation and Education</td>
       <td>Fulltime-Regular</td>
       <td>Alcohol/Tobacco Enforcement Specialist II</td>
-      <td>NaN</td>
       <td>01/30/2012</td>
       <td>2012</td>
     </tr>
   </tbody>
 </table>
-<p>9228 rows × 9 columns</p>
+<p>9228 rows × 8 columns</p>
 </div>
 </div>
 <br />
@@ -862,7 +850,7 @@ and store the returned cross-validation score:</p>
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
   warnings.warn(
 one-hot encoding
-r2 score:  mean: 0.776; std: 0.028
+r2 score:  mean: 0.770; std: 0.032
 
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
   warnings.warn(
@@ -875,7 +863,7 @@ r2 score:  mean: 0.776; std: 0.028
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
   warnings.warn(
 similarity encoding
-r2 score:  mean: 0.923; std: 0.014
+r2 score:  mean: 0.928; std: 0.014
 
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
   warnings.warn(
@@ -888,7 +876,7 @@ r2 score:  mean: 0.923; std: 0.014
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
   warnings.warn(
 target encoding
-r2 score:  mean: 0.842; std: 0.030
+r2 score:  mean: 0.846; std: 0.031
 
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
   warnings.warn(
@@ -921,7 +909,7 @@ r2 score:  mean: 0.842; std: 0.030
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but MinHashEncoder was fitted with feature names
   warnings.warn(
 minhash encoding
-r2 score:  mean: 0.919; std: 0.012
+r2 score:  mean: 0.923; std: 0.013
 
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
   warnings.warn(
@@ -934,7 +922,7 @@ r2 score:  mean: 0.919; std: 0.012
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
   warnings.warn(
 gap encoding
-r2 score:  mean: 0.923; std: 0.014
+r2 score:  mean: 0.928; std: 0.017
 </pre></div>
 </div>
 <section id="plotting-the-results">
@@ -1007,7 +995,6 @@ now explore a simpler, automated, way of encoding the data.</p>
       <th>division</th>
       <th>assignment_category</th>
       <th>employee_position_title</th>
-      <th>underfilled_job_title</th>
       <th>year_first_hired</th>
     </tr>
   </thead>
@@ -1020,7 +1007,6 @@ now explore a simpler, automated, way of encoding the data.</p>
       <td>MSB Information Mgmt and Tech Division Records...</td>
       <td>Fulltime-Regular</td>
       <td>Office Services Coordinator</td>
-      <td>NaN</td>
       <td>1986</td>
     </tr>
     <tr>
@@ -1031,7 +1017,6 @@ now explore a simpler, automated, way of encoding the data.</p>
       <td>ISB Major Crimes Division Fugitive Section</td>
       <td>Fulltime-Regular</td>
       <td>Master Police Officer</td>
-      <td>NaN</td>
       <td>1988</td>
     </tr>
     <tr>
@@ -1042,7 +1027,6 @@ now explore a simpler, automated, way of encoding the data.</p>
       <td>Adult Protective and Case Management Services</td>
       <td>Fulltime-Regular</td>
       <td>Social Worker IV</td>
-      <td>NaN</td>
       <td>1989</td>
     </tr>
     <tr>
@@ -1053,7 +1037,6 @@ now explore a simpler, automated, way of encoding the data.</p>
       <td>PRRS Facility and Security</td>
       <td>Fulltime-Regular</td>
       <td>Resident Supervisor II</td>
-      <td>NaN</td>
       <td>2014</td>
     </tr>
     <tr>
@@ -1064,12 +1047,10 @@ now explore a simpler, automated, way of encoding the data.</p>
       <td>Affordable Housing Programs</td>
       <td>Fulltime-Regular</td>
       <td>Planning Specialist III</td>
-      <td>NaN</td>
       <td>2007</td>
     </tr>
     <tr>
       <th>...</th>
-      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -1086,7 +1067,6 @@ now explore a simpler, automated, way of encoding the data.</p>
       <td>School Based Health Centers</td>
       <td>Fulltime-Regular</td>
       <td>Community Health Nurse II</td>
-      <td>NaN</td>
       <td>2015</td>
     </tr>
     <tr>
@@ -1097,7 +1077,6 @@ now explore a simpler, automated, way of encoding the data.</p>
       <td>Human Resources Division</td>
       <td>Fulltime-Regular</td>
       <td>Fire/Rescue Division Chief</td>
-      <td>NaN</td>
       <td>1988</td>
     </tr>
     <tr>
@@ -1108,7 +1087,6 @@ now explore a simpler, automated, way of encoding the data.</p>
       <td>Child and Adolescent Mental Health Clinic Serv...</td>
       <td>Parttime-Regular</td>
       <td>Medical Doctor IV - Psychiatrist</td>
-      <td>NaN</td>
       <td>2001</td>
     </tr>
     <tr>
@@ -1119,7 +1097,6 @@ now explore a simpler, automated, way of encoding the data.</p>
       <td>Council Central Staff</td>
       <td>Fulltime-Regular</td>
       <td>Manager II</td>
-      <td>NaN</td>
       <td>2006</td>
     </tr>
     <tr>
@@ -1130,12 +1107,11 @@ now explore a simpler, automated, way of encoding the data.</p>
       <td>Licensure, Regulation and Education</td>
       <td>Fulltime-Regular</td>
       <td>Alcohol/Tobacco Enforcement Specialist II</td>
-      <td>NaN</td>
       <td>2012</td>
     </tr>
   </tbody>
 </table>
-<p>9228 rows × 8 columns</p>
+<p>9228 rows × 7 columns</p>
 </div>
 </div>
 <br />
@@ -1165,9 +1141,9 @@ can be readily applied to the dataframe</strong>.</p>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;std=</span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>scores=[0.92410165 0.89422242 0.93126806 0.93870151 0.93140998]
-mean=0.9239407246161294
-std=0.015559976616804468
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>scores=[0.92621199 0.90321194 0.92721638 0.93618401 0.9369223 ]
+mean=0.9259493224797956
+std=0.012196869660319985
 </pre></div>
 </div>
 <p>The prediction performed here is pretty much as good as above
@@ -1197,25 +1173,25 @@ analyze the TableVectorizer’s mechanisms along the way.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([[2.00700000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-        2.32379660e+01, 5.17261725e-02, 5.30561193e-02],
+        1.57819850e-01, 2.97038754e-01, 1.10892148e-01],
        [2.00500000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        5.00000000e-02, 5.00000000e-02, 5.00000000e-02],
+        5.30779155e-02, 5.63936398e-02, 5.76978755e-02],
        [2.00900000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        5.00000000e-02, 5.00000000e-02, 5.00000000e-02],
+        9.87053953e-02, 5.32960453e-02, 6.85698280e-02],
        ...,
        [1.99000000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        5.00000000e-02, 5.00000000e-02, 5.00000000e-02],
+        6.53876472e-02, 7.33240489e-02, 8.94976087e-02],
        [2.01200000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-        5.00000000e-02, 5.00000000e-02, 5.00000000e-02],
+        5.08693201e+01, 5.54027894e-02, 5.51949881e-02],
        [2.01400000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        5.00000000e-02, 5.00000000e-02, 5.00000000e-02]])
+        6.21701202e-02, 5.30492625e-02, 5.55764630e-02]])
 </pre></div>
 </div>
 <p>They have more columns than the original dataframe, but not much more:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html#pandas.DataFrame.shape" title="pandas.DataFrame.shape" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-property"><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span></a><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#tuple" title="builtins.tuple" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train_enc</span><span class="o">.</span><span class="n">shape</span></a>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>((7843, 8), (7843, 169))
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>((7843, 7), (7843, 139))
 </pre></div>
 </div>
 <section id="inspecting-the-features-created">
@@ -1233,7 +1209,7 @@ choice:</p>
   [&#39;gender&#39;, &#39;department&#39;, &#39;department_name&#39;, &#39;assignment_category&#39;]),
  (&#39;high_card_cat&#39;,
   GapEncoder(n_components=30),
-  [&#39;division&#39;, &#39;employee_position_title&#39;, &#39;underfilled_job_title&#39;])]
+  [&#39;division&#39;, &#39;employee_position_title&#39;])]
 </pre></div>
 </div>
 <p>This is what is being passed to the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ColumnTransformer</span></code></a> under the hood.
@@ -1249,7 +1225,7 @@ A <a class="reference external" href="https://scikit-learn.org/stable/modules/ge
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Index.to_list.html#pandas.Index.to_list" title="pandas.Index.to_list" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;gender&#39;, &#39;department&#39;, &#39;department_name&#39;, &#39;division&#39;, &#39;assignment_category&#39;, &#39;employee_position_title&#39;, &#39;underfilled_job_title&#39;, &#39;year_first_hired&#39;]
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;gender&#39;, &#39;department&#39;, &#39;department_name&#39;, &#39;division&#39;, &#39;assignment_category&#39;, &#39;employee_position_title&#39;, &#39;year_first_hired&#39;]
 </pre></div>
 </div>
 <p>After encoding (we only plot the first 8 feature names):</p>
@@ -1268,7 +1244,7 @@ which was classified as a high cardinality string variable.
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">feature_names</span></a><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>169
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>139
 </pre></div>
 </div>
 </section>
@@ -1324,7 +1300,7 @@ having a permanent, full-time job :)</p>
 automated by the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, and the resulting pipeline can still be
 inspected, even with non-normalized entries.</p>
 </aside>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 3 minutes  2.839 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 2 minutes  42.683 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-01-dirty-categories-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/01_dirty_categories.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
