@@ -2,9 +2,9 @@
   "content": [
     {
       "content": null,
-      "created": "2023-08-01T12:58:29.456122Z",
+      "created": "2023-08-03T07:23:41.255931Z",
       "format": null,
-      "last_modified": "2023-08-01T12:58:27.804111Z",
+      "last_modified": "2023-08-03T07:23:39.471881Z",
       "mimetype": null,
       "name": "01_dirty_categories.ipynb",
       "path": "auto_examples/01_dirty_categories.ipynb",
@@ -14,9 +14,9 @@
     },
     {
       "content": null,
-      "created": "2023-08-01T12:58:29.456122Z",
+      "created": "2023-08-03T07:23:41.255931Z",
       "format": null,
-      "last_modified": "2023-08-01T12:58:27.804111Z",
+      "last_modified": "2023-08-03T07:23:39.471881Z",
       "mimetype": null,
       "name": "02_investigating_dirty_categories.ipynb",
       "path": "auto_examples/02_investigating_dirty_categories.ipynb",
@@ -26,9 +26,9 @@
     },
     {
       "content": null,
-      "created": "2023-08-01T12:58:29.456122Z",
+      "created": "2023-08-03T07:23:41.255931Z",
       "format": null,
-      "last_modified": "2023-08-01T12:58:27.808111Z",
+      "last_modified": "2023-08-03T07:23:39.471881Z",
       "mimetype": null,
       "name": "03_datetime_encoder.ipynb",
       "path": "auto_examples/03_datetime_encoder.ipynb",
@@ -38,9 +38,9 @@
     },
     {
       "content": null,
-      "created": "2023-08-01T12:58:29.456122Z",
+      "created": "2023-08-03T07:23:41.255931Z",
       "format": null,
-      "last_modified": "2023-08-01T12:58:27.808111Z",
+      "last_modified": "2023-08-03T07:23:39.471881Z",
       "mimetype": null,
       "name": "04_fuzzy_joining_and_FeatureAugmenter.ipynb",
       "path": "auto_examples/04_fuzzy_joining_and_FeatureAugmenter.ipynb",
@@ -50,9 +50,9 @@
     },
     {
       "content": null,
-      "created": "2023-08-01T12:58:29.456122Z",
+      "created": "2023-08-03T07:23:41.259931Z",
       "format": null,
-      "last_modified": "2023-08-01T12:58:27.808111Z",
+      "last_modified": "2023-08-03T07:23:39.475882Z",
       "mimetype": null,
       "name": "05_deduplication.ipynb",
       "path": "auto_examples/05_deduplication.ipynb",
@@ -62,9 +62,9 @@
     },
     {
       "content": null,
-      "created": "2023-08-01T12:58:29.456122Z",
+      "created": "2023-08-03T07:23:41.259931Z",
       "format": null,
-      "last_modified": "2023-08-01T12:58:27.808111Z",
+      "last_modified": "2023-08-03T07:23:39.475882Z",
       "mimetype": null,
       "name": "06_ken_embeddings.ipynb",
       "path": "auto_examples/06_ken_embeddings.ipynb",
@@ -73,9 +73,9 @@
       "writable": true
     }
   ],
-  "created": "2023-08-01T12:58:29.456122Z",
+  "created": "2023-08-03T07:23:41.259931Z",
   "format": "json",
-  "last_modified": "2023-08-01T12:58:29.456122Z",
+  "last_modified": "2023-08-03T07:23:41.259931Z",
   "mimetype": null,
   "name": "auto_examples",
   "path": "auto_examples",
