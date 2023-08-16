@@ -407,9 +407,10 @@ document.write(`
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Dirty categories: machine learning with non normalized strings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_investigating_dirty_categories.html">Investigating and interpreting dirty categories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_datetime_encoder.html">Handling datetime features with the DatetimeEncoder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_fuzzy_joining_and_FeatureAugmenter.html">Fuzzy joining dirty tables and the FeatureAugmenter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_fuzzy_joining_and_FeatureAugmenter.html">Fuzzy joining dirty tables with the Joiner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_deduplication.html">Deduplicating misspelled categories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06_ken_embeddings.html">Wikipedia embeddings to enrich the data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_multiple_key_join.html">Spatial join for flight data: Joining across multiple columns</a></li>
 </ul>
 </div>
 </nav></div>
@@ -922,7 +923,7 @@ r2 score:  mean: 0.923; std: 0.013
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
   warnings.warn(
 gap encoding
-r2 score:  mean: 0.928; std: 0.018
+r2 score:  mean: 0.932; std: 0.013
 </pre></div>
 </div>
 <section id="plotting-the-results">
@@ -1141,9 +1142,9 @@ can be readily applied to the dataframe</strong>.</p>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;std=</span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>scores=[0.93035345 0.89159413 0.93164568 0.93536528 0.92997452]
-mean=0.9237866110112026
-std=0.01620863656057158
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>scores=[0.92127003 0.89727714 0.93160526 0.93390875 0.92454596]
+mean=0.9217214296127636
+std=0.013053165472194133
 </pre></div>
 </div>
 <p>The prediction performed here is pretty much as good as above
@@ -1173,18 +1174,18 @@ analyze the TableVectorizer’s mechanisms along the way.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([[2.00700000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-        3.19006735e+00, 1.31821281e-01, 6.47010758e-02],
+        1.08730293e+00, 7.53833685e-02, 1.72586235e-01],
        [2.00500000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        5.02000813e-02, 5.27425150e-02, 5.06019861e-02],
+        5.31917074e-02, 5.18706427e-02, 5.23029825e-02],
        [2.00900000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        3.23387571e-01, 1.59971844e+01, 5.72397066e-02],
+        1.15576333e-01, 1.26773496e+00, 6.77847426e-02],
        ...,
        [1.99000000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        5.00987041e-02, 1.05498201e-01, 2.30543762e-01],
+        6.60214176e-02, 5.51831407e-02, 5.88830906e-02],
        [2.01200000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-        5.41546487e-02, 6.31096864e-02, 8.36855410e-02],
+        5.08862475e+01, 5.13718697e-02, 5.26924507e-02],
        [2.01400000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        5.02058179e-02, 5.96967876e-02, 5.44315221e-02]])
+        6.25806780e-02, 5.09230080e-02, 5.73092554e-02]])
 </pre></div>
 </div>
 <p>They have more columns than the original dataframe, but not much more:</p>
@@ -1300,7 +1301,7 @@ having a permanent, full-time job :)</p>
 automated by the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, and the resulting pipeline can still be
 inspected, even with non-normalized entries.</p>
 </aside>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 2 minutes  49.573 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 3 minutes  5.015 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-01-dirty-categories-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/01_dirty_categories.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

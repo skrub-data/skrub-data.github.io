@@ -1,5 +1,5 @@
-﻿:mod:`skrub`.FeatureAugmenter
-====================================
+﻿:mod:`skrub`.Joiner
+==========================
 
 .. rst-class:: side_comment
 
@@ -7,14 +7,14 @@
 
 .. currentmodule:: skrub
 
-.. autoclass:: FeatureAugmenter
+.. autoclass:: Joiner
    :inherited-members:
 
    
 
    
 
-.. include:: skrub.FeatureAugmenter.examples
+.. include:: skrub.Joiner.examples
 
 .. raw:: html
 

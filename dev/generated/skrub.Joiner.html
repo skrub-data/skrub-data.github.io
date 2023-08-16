@@ -7,16 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="skrub.FeatureAugmenter" />
+<meta property="og:title" content="skrub.Joiner" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/generated/skrub.FeatureAugmenter.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/generated/skrub.Joiner.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Usage examples at the bottom of this page. Examples using skrub.FeatureAugmenter: Fuzzy joining dirty tables and the FeatureAugmenter Wikipedia embeddings to enrich the data" />
+<meta property="og:description" content="Usage examples at the bottom of this page. Examples using skrub.Joiner: Fuzzy joining dirty tables with the Joiner Wikipedia embeddings to enrich the data Spatial join for flight data: Joining acro..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_images/sphx_glr_04_fuzzy_joining_and_FeatureAugmenter_thumb.png" />
 <meta property="og:image:alt" content="" />
-<meta name="description" content="Usage examples at the bottom of this page. Examples using skrub.FeatureAugmenter: Fuzzy joining dirty tables and the FeatureAugmenter Wikipedia embeddings to enrich the data" />
+<meta name="description" content="Usage examples at the bottom of this page. Examples using skrub.Joiner: Fuzzy joining dirty tables with the Joiner Wikipedia embeddings to enrich the data Spatial join for flight data: Joining acro..." />
 
-    <title>skrub.FeatureAugmenter &#8212; skrub</title>
+    <title>skrub.Joiner &#8212; skrub</title>
   
   
   
@@ -56,7 +56,7 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=fd10adb8"></script>
     <script src="../_static/jupyterlite_sphinx.js?v=0b35d31f"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.FeatureAugmenter';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.Joiner';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -408,7 +408,7 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="skrub.fuzzy_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.Joiner</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectorizing a dataframe</span></p>
 <ul class="nav bd-sidenav">
@@ -483,7 +483,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../api.html" class="nav-link">API reference</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter</li>
+    <li class="breadcrumb-item active" aria-current="page"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.Joiner</li>
   </ul>
 </nav>
 </div>
@@ -500,12 +500,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="skrub-featureaugmenter">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.FeatureAugmenter<a class="headerlink" href="#skrub-featureaugmenter" title="Permalink to this heading">#</a></h1>
+  <section id="skrub-joiner">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.Joiner<a class="headerlink" href="#skrub-joiner" title="Permalink to this heading">#</a></h1>
 <p class="side-comment">Usage examples at the bottom of this page.</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="skrub.FeatureAugmenter">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">FeatureAugmenter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main_key</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">match_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/82d31c9/skrub/_feature_augmenter.py#L14"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.FeatureAugmenter" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.Joiner">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">Joiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main_key</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">match_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2473cd8/skrub/_joiner.py#L15"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Joiner" title="Permalink to this definition">#</a></dt>
 <dd><p>Augment a main table by automatically joining multiple auxiliary tables on it.</p>
 <p>Given a list of tables and key column names,
 fuzzy join them to the main table.</p>
@@ -513,20 +513,21 @@ fuzzy join them to the main table.</p>
 <ol class="arabic simple">
 <li><p>The main table and the key column name are provided at initialisation.</p></li>
 <li><p>The auxiliary tables are provided for fitting, and will be joined
-sequentially when FeatureAugmenter.transform is called.</p></li>
+sequentially when Joiner.transform is called.</p></li>
 </ol>
 <p>It is advised to use hyperparameter tuning tools such as GridSearchCV
 to determine the best <cite>match_score</cite> parameter, as this can significantly
 improve your results.
-(see example ‘Fuzzy joining dirty tables with the FeatureAugmenter’
+(see example ‘Fuzzy joining dirty tables with the Joiner’
 for an illustration)</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>tables</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> 2-tuples <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>)</span></dt><dd><p>List of (table, column name) tuples, the tables to join.</p>
+<dt><strong>tables</strong><span class="classifier">2-tuple or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> 2-tuple (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>)</span></dt><dd><p>List of (table, column name) tuples, the tables to join.
+Can be a tuple if only one table to join.</p>
 </dd>
-<dt><strong>main_key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The key column name in the main table (passed during fit) on which
-the join will be performed.</p>
+<dt><strong>main_key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> <code class="xref py py-obj docutils literal notranslate"><span class="pre">of</span></code> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The key column names from the main table on which the join will
+be performed.</p>
 </dd>
 <dt><strong>match_score</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>, default=0</span></dt><dd><p>Distance score between the closest matches that will be accepted.
 In a [0, 1] interval. 1 means that only a perfect match will be
@@ -610,46 +611,46 @@ that <code class="docutils literal notranslate"><span class="pre">min_n</span> <
 <span class="go">                  (aux_table_3, &quot;Countries&quot;)]</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fa</span> <span class="o">=</span> <span class="n">FeatureAugmenter</span><span class="p">(</span><span class="n">tables</span><span class="o">=</span><span class="n">aux_tables</span><span class="p">,</span> <span class="n">main_key</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">joiner</span> <span class="o">=</span> <span class="n">Joiner</span><span class="p">(</span><span class="n">tables</span><span class="o">=</span><span class="n">aux_tables</span><span class="p">,</span> <span class="n">main_key</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">augmented_table</span> <span class="o">=</span> <span class="n">fa</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">augmented_table</span> <span class="o">=</span> <span class="n">joiner</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">augmented_table</span>
 <span class="go">    Country Country_aux  Population Country name  GDP (billion) Countries Capital</span>
 <span class="go">0   France      France    68000000  French Republic       2937    France   Paris</span>
-<span class="go">1  Germany     Germany    84000000      Germany           4223   Germany  Berlin</span>
-<span class="go">2    Italy       Italy    59000000        Italy           2099    Italia    Rome</span>
+<span class="go">1   Germany     Germany   84000000      Germany           4223   Germany   Berlin</span>
+<span class="go">2    Italy       Italy    59000000        Italy           2099    Italia   Rome</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.FeatureAugmenter.fit" title="skrub.FeatureAugmenter.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X[, y])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.Joiner.fit" title="skrub.Joiner.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X[, y])</p></td>
 <td><p>Fit the instance to the main table.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.FeatureAugmenter.fit_transform" title="skrub.FeatureAugmenter.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(X[, y])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.Joiner.fit_transform" title="skrub.Joiner.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(X[, y])</p></td>
 <td><p>Fit to data, then transform it.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.FeatureAugmenter.get_metadata_routing" title="skrub.FeatureAugmenter.get_metadata_routing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_metadata_routing</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.Joiner.get_metadata_routing" title="skrub.Joiner.get_metadata_routing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_metadata_routing</span></code></a>()</p></td>
 <td><p>Get metadata routing of this object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.FeatureAugmenter.get_params" title="skrub.FeatureAugmenter.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.Joiner.get_params" title="skrub.Joiner.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
 <td><p>Get parameters for this estimator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.FeatureAugmenter.set_output" title="skrub.FeatureAugmenter.set_output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_output</span></code></a>(*[, transform])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.Joiner.set_output" title="skrub.Joiner.set_output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_output</span></code></a>(*[, transform])</p></td>
 <td><p>Set output container.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.FeatureAugmenter.set_params" title="skrub.FeatureAugmenter.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.Joiner.set_params" title="skrub.Joiner.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
 <td><p>Set the parameters of this estimator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.FeatureAugmenter.transform" title="skrub.FeatureAugmenter.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X[, y])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.Joiner.transform" title="skrub.Joiner.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X[, y])</p></td>
 <td><p>Transform <cite>X</cite> using the specified encoding scheme.</p></td>
 </tr>
 </tbody>
 </table>
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.FeatureAugmenter.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/82d31c9/skrub/_feature_augmenter.py#L138"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.FeatureAugmenter.fit" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.Joiner.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2473cd8/skrub/_joiner.py#L140"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Joiner.fit" title="Permalink to this definition">#</a></dt>
 <dd><p>Fit the instance to the main table.</p>
 <p>In practice, just checks if the key columns in X,
 the main table, and in the auxiliary tables exist.</p>
@@ -664,7 +665,7 @@ the main table, and in the auxiliary tables exist.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code></a></dt><dd><p>Fitted FeatureAugmenter instance (self).</p>
+<dt><a class="reference internal" href="#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Joiner</span></code></a></dt><dd><p>Fitted Joiner instance (self).</p>
 </dd>
 </dl>
 </dd>
@@ -672,8 +673,8 @@ the main table, and in the auxiliary tables exist.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.FeatureAugmenter.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/82d31c9/skrub/../sklearn/base.py#L887"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.FeatureAugmenter.fit_transform" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.Joiner.fit_transform">
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2473cd8/skrub/../sklearn/base.py#L887"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Joiner.fit_transform" title="Permalink to this definition">#</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to <cite>X</cite> and <cite>y</cite> with optional parameters <cite>fit_params</cite>
 and returns a transformed version of <cite>X</cite>.</p>
@@ -698,8 +699,8 @@ and returns a transformed version of <cite>X</cite>.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.FeatureAugmenter.get_metadata_routing">
-<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/82d31c9/skrub/../sklearn/utils/_metadata_requests.py#L1243"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.FeatureAugmenter.get_metadata_routing" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.Joiner.get_metadata_routing">
+<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2473cd8/skrub/../sklearn/utils/_metadata_requests.py#L1243"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Joiner.get_metadata_routing" title="Permalink to this definition">#</a></dt>
 <dd><p>Get metadata routing of this object.</p>
 <p>Please check <a class="reference external" href="https://scikit-learn.org/stable/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.3)"><span class="xref std std-ref">User Guide</span></a> on how the routing
 mechanism works.</p>
@@ -715,8 +716,8 @@ routing information.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.FeatureAugmenter.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/82d31c9/skrub/../sklearn/base.py#L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.FeatureAugmenter.get_params" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.Joiner.get_params">
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2473cd8/skrub/../sklearn/base.py#L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Joiner.get_params" title="Permalink to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -736,8 +737,8 @@ contained subobjects that are estimators.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.FeatureAugmenter.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/82d31c9/skrub/../sklearn/utils/_set_output.py#L213"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.FeatureAugmenter.set_output" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.Joiner.set_output">
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2473cd8/skrub/../sklearn/utils/_set_output.py#L213"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Joiner.set_output" title="Permalink to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.3)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
@@ -763,8 +764,8 @@ for an example on how to use the API.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.FeatureAugmenter.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/82d31c9/skrub/../sklearn/base.py#L201"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.FeatureAugmenter.set_params" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.Joiner.set_params">
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2473cd8/skrub/../sklearn/base.py#L201"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Joiner.set_params" title="Permalink to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -787,8 +788,8 @@ possible to update each component of a nested object.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.FeatureAugmenter.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/82d31c9/skrub/_feature_augmenter.py#L170"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.FeatureAugmenter.transform" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.Joiner.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2473cd8/skrub/_joiner.py#L184"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Joiner.transform" title="Permalink to this definition">#</a></dt>
 <dd><p>Transform <cite>X</cite> using the specified encoding scheme.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -810,14 +811,17 @@ possible to update each component of a nested object.</p>
 
 </dd></dl>
 
-<section id="examples-using-skrub-featureaugmenter">
-<h2>Examples using <code class="docutils literal notranslate"><span class="pre">skrub.FeatureAugmenter</span></code><a class="headerlink" href="#examples-using-skrub-featureaugmenter" title="Permalink to this heading">#</a></h2>
+<section id="examples-using-skrub-joiner">
+<h2>Examples using <code class="docutils literal notranslate"><span class="pre">skrub.Joiner</span></code><a class="headerlink" href="#examples-using-skrub-joiner" title="Permalink to this heading">#</a></h2>
 <div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Here we show how to combine data from different sources, with a vocabulary not well normalized."><img alt="" src="../_images/sphx_glr_04_fuzzy_joining_and_FeatureAugmenter_thumb.png" />
-<p><a class="reference internal" href="../auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html#sphx-glr-auto-examples-04-fuzzy-joining-and-featureaugmenter-py"><span class="std std-ref">Fuzzy joining dirty tables and the FeatureAugmenter</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Fuzzy joining dirty tables and the FeatureAugmenter</div>
+<p><a class="reference internal" href="../auto_examples/04_fuzzy_joining_and_FeatureAugmenter.html#sphx-glr-auto-examples-04-fuzzy-joining-and-featureaugmenter-py"><span class="std std-ref">Fuzzy joining dirty tables with the Joiner</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Fuzzy joining dirty tables with the Joiner</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="When the data comprises common entities (cities, companies or famous people), bringing new info..."><img alt="" src="../_images/sphx_glr_06_ken_embeddings_thumb.png" />
 <p><a class="reference internal" href="../auto_examples/06_ken_embeddings.html#sphx-glr-auto-examples-06-ken-embeddings-py"><span class="std std-ref">Wikipedia embeddings to enrich the data</span></a></p>
   <div class="sphx-glr-thumbnail-title">Wikipedia embeddings to enrich the data</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Joining tables may be difficult if one entry on one side does not have an exact match on the ot..."><img alt="" src="../_images/sphx_glr_07_multiple_key_join_thumb.png" />
+<p><a class="reference internal" href="../auto_examples/07_multiple_key_join.html#sphx-glr-auto-examples-07-multiple-key-join-py"><span class="std std-ref">Spatial join for flight data: Joining across multiple columns</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Spatial join for flight data: Joining across multiple columns</div>
 </div></div><div class="clearer"></div></section>
 </section>
 
@@ -868,24 +872,24 @@ possible to update each component of a nested object.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.FeatureAugmenter"><code class="docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.FeatureAugmenter.fit"><code class="docutils literal notranslate"><span class="pre">FeatureAugmenter.fit()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.FeatureAugmenter.fit_transform"><code class="docutils literal notranslate"><span class="pre">FeatureAugmenter.fit_transform()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.FeatureAugmenter.get_metadata_routing"><code class="docutils literal notranslate"><span class="pre">FeatureAugmenter.get_metadata_routing()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.FeatureAugmenter.get_params"><code class="docutils literal notranslate"><span class="pre">FeatureAugmenter.get_params()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.FeatureAugmenter.set_output"><code class="docutils literal notranslate"><span class="pre">FeatureAugmenter.set_output()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.FeatureAugmenter.set_params"><code class="docutils literal notranslate"><span class="pre">FeatureAugmenter.set_params()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.FeatureAugmenter.transform"><code class="docutils literal notranslate"><span class="pre">FeatureAugmenter.transform()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.Joiner"><code class="docutils literal notranslate"><span class="pre">Joiner</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.Joiner.fit"><code class="docutils literal notranslate"><span class="pre">Joiner.fit()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.Joiner.fit_transform"><code class="docutils literal notranslate"><span class="pre">Joiner.fit_transform()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.Joiner.get_metadata_routing"><code class="docutils literal notranslate"><span class="pre">Joiner.get_metadata_routing()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.Joiner.get_params"><code class="docutils literal notranslate"><span class="pre">Joiner.get_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.Joiner.set_output"><code class="docutils literal notranslate"><span class="pre">Joiner.set_output()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.Joiner.set_params"><code class="docutils literal notranslate"><span class="pre">Joiner.set_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.Joiner.transform"><code class="docutils literal notranslate"><span class="pre">Joiner.transform()</span></code></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-using-skrub-featureaugmenter">Examples using <code class="docutils literal notranslate"><span class="pre">skrub.FeatureAugmenter</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-using-skrub-joiner">Examples using <code class="docutils literal notranslate"><span class="pre">skrub.Joiner</span></code></a></li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/skrub-data/skrub/edit/main/doc/generated/skrub.FeatureAugmenter.rst">
+    <a href="https://github.com/skrub-data/skrub/edit/main/doc/generated/skrub.Joiner.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -899,7 +903,7 @@ possible to update each component of a nested object.</p>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="../_sources/generated/skrub.FeatureAugmenter.rst.txt">
+    <a href="../_sources/generated/skrub.Joiner.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>

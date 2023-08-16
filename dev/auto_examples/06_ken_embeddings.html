@@ -60,6 +60,7 @@
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Spatial join for flight data: Joining across multiple columns" href="07_multiple_key_join.html" />
     <link rel="prev" title="Deduplicating misspelled categories" href="05_deduplication.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -406,9 +407,10 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="01_dirty_categories.html">Dirty categories: machine learning with non normalized strings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_investigating_dirty_categories.html">Investigating and interpreting dirty categories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_datetime_encoder.html">Handling datetime features with the DatetimeEncoder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_fuzzy_joining_and_FeatureAugmenter.html">Fuzzy joining dirty tables and the FeatureAugmenter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_fuzzy_joining_and_FeatureAugmenter.html">Fuzzy joining dirty tables with the Joiner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_deduplication.html">Deduplicating misspelled categories</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Wikipedia embeddings to enrich the data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_multiple_key_join.html">Spatial join for flight data: Joining across multiple columns</a></li>
 </ul>
 </div>
 </nav></div>
@@ -644,7 +646,7 @@ Name: Global_Sales, Length: 16572, dtype: float64
 <a href="../generated/skrub.datasets.fetch_ken_table_aliases.html#skrub.datasets.fetch_ken_table_aliases" title="skrub.datasets.fetch_ken_table_aliases" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_ken_table_aliases</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;albums&#39;, &#39;all_entities&#39;, &#39;games&#39;, &#39;movies&#39;, &#39;companies&#39;, &#39;schools&#39;}
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;companies&#39;, &#39;games&#39;, &#39;all_entities&#39;, &#39;movies&#39;, &#39;schools&#39;, &#39;albums&#39;}
 </pre></div>
 </div>
 <p>The <em>games</em> table is the most relevant to our case.
@@ -772,13 +774,13 @@ in our video game sales table:</p>
 <p>The entities from the ‘embedding_games’ table will be merged along the
 column “Name” and the ones from ‘embedding_publisher’ table with the
 column “Publisher”</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">FeatureAugmenter</span></a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a>
 
-<a href="../generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">fa1</span></a> <span class="o">=</span> <a href="../generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">FeatureAugmenter</span></a><span class="p">(</span><span class="n">tables</span><span class="o">=</span><span class="p">[(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">embedding_games</span></a><span class="p">,</span> <span class="s2">&quot;Entity&quot;</span><span class="p">)],</span> <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
-<a href="../generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">fa2</span></a> <span class="o">=</span> <a href="../generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter" title="skrub.FeatureAugmenter" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">FeatureAugmenter</span></a><span class="p">(</span><span class="n">tables</span><span class="o">=</span><span class="p">[(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">embedding_publisher</span></a><span class="p">,</span> <span class="s2">&quot;Entity&quot;</span><span class="p">)],</span> <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;Publisher&quot;</span><span class="p">)</span>
+<a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">fa1</span></a> <span class="o">=</span> <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">(</span><span class="n">tables</span><span class="o">=</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">embedding_games</span></a><span class="p">,</span> <span class="s2">&quot;Entity&quot;</span><span class="p">),</span> <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
+<a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">fa2</span></a> <span class="o">=</span> <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">(</span><span class="n">tables</span><span class="o">=</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">embedding_publisher</span></a><span class="p">,</span> <span class="s2">&quot;Entity&quot;</span><span class="p">),</span> <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;Publisher&quot;</span><span class="p">)</span>
 
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_full</span></a> <span class="o">=</span> <a href="../generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter.fit_transform" title="skrub.FeatureAugmenter.fit_transform" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">fa1</span><span class="o">.</span><span class="n">fit_transform</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">)</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_full</span></a> <span class="o">=</span> <a href="../generated/skrub.FeatureAugmenter.html#skrub.FeatureAugmenter.fit_transform" title="skrub.FeatureAugmenter.fit_transform" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">fa2</span><span class="o">.</span><span class="n">fit_transform</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_full</span></a><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_full</span></a> <span class="o">=</span> <a href="../generated/skrub.Joiner.html#skrub.Joiner.fit_transform" title="skrub.Joiner.fit_transform" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">fa1</span><span class="o">.</span><span class="n">fit_transform</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_full</span></a> <span class="o">=</span> <a href="../generated/skrub.Joiner.html#skrub.Joiner.fit_transform" title="skrub.Joiner.fit_transform" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">fa2</span><span class="o">.</span><span class="n">fit_transform</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_full</span></a><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -940,7 +942,7 @@ explanatory variables.</p>
 additional background information on the game and the publisher of the
 game that would otherwise be missed.</p>
 <p>It helped significantly improve the prediction score.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 11 minutes  7.883 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 11 minutes  30.021 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-06-ken-embeddings-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/06_ken_embeddings.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -979,6 +981,15 @@ game that would otherwise be missed.</p>
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Deduplicating misspelled categories</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="07_multiple_key_join.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Spatial join for flight data: Joining across multiple columns</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
