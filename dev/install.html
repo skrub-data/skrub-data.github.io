@@ -42,7 +42,7 @@
     <link rel="stylesheet" type="text/css" href="_static/jupyterlite_sphinx.css?v=13b285a0" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css?v=61a4c737" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
-    <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=e5fbc548" />
+    <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-rendered-html.css?v=1277b6f3" />
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=01d92578" />
   
@@ -50,9 +50,9 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=7ca01c33"></script>
+    <script src="_static/documentation_options.js?v=abb4f5fb"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=fd10adb8"></script>
     <script src="_static/jupyterlite_sphinx.js?v=0b35d31f"></script>
@@ -449,7 +449,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="installing">
-<h1>Installing<a class="headerlink" href="#installing" title="Permalink to this heading">#</a></h1>
+<h1>Installing<a class="headerlink" href="#installing" title="Link to this heading">#</a></h1>
 <div class="container mt-4">
 
 <ul class="nav nav-pills nav-fill" id="installation" role="tablist">
@@ -488,7 +488,7 @@ document.write(`
 </div>
 <div class="tab-pane fade show active" id="source-tab-pane" role="tabpanel" aria-labelledby="source-tab" tabindex="0">
     <hr /><section id="recommended-usage-for-users">
-<h2>Recommended usage, for users<a class="headerlink" href="#recommended-usage-for-users" title="Permalink to this heading">#</a></h2>
+<h2>Recommended usage, for users<a class="headerlink" href="#recommended-usage-for-users" title="Link to this heading">#</a></h2>
 <p>To install from <a class="reference external" href="https://github.com/skrub-data/skrub">the source</a> using pip,
 run the following command in a shell command line:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/skrub-data/skrub.git
@@ -496,7 +496,7 @@ run the following command in a shell command line:</p>
 </div>
 </section>
 <section id="advanced-usage-for-contributors">
-<h2>Advanced usage, for contributors<a class="headerlink" href="#advanced-usage-for-contributors" title="Permalink to this heading">#</a></h2>
+<h2>Advanced usage, for contributors<a class="headerlink" href="#advanced-usage-for-contributors" title="Link to this heading">#</a></h2>
 <p>If you want to contribute to the project, you can install the development version
 of skrub from the source code:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/skrub-data/skrub
@@ -510,7 +510,7 @@ of skrub from the source code:</p>
 <p>Then, install the local package in editable mode,
 with the development requirements:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>skrub
-<span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="o">[</span>dev<span class="o">]</span>
+<span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s1">&#39;.[dev]&#39;</span>
 </pre></div>
 </div>
 <p>Next step, enable the pre-commit hooks:</p>
@@ -638,7 +638,7 @@ the <a class="reference external" href="https://skrub-data.org/stable/CONTRIBUTI
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.2.
     <br/>
   </p>
 </div>

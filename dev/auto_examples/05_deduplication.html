@@ -42,7 +42,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/jupyterlite_sphinx.css?v=13b285a0" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=61a4c737" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
-    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=e5fbc548" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=01d92578" />
   
@@ -50,9 +50,9 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=7ca01c33"></script>
+    <script src="../_static/documentation_options.js?v=abb4f5fb"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
-    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=fd10adb8"></script>
     <script src="../_static/jupyterlite_sphinx.js?v=0b35d31f"></script>
@@ -474,7 +474,7 @@ document.write(`
 to download the full example code or to run this example in your browser via JupyterLite or Binder</p>
 </div>
 <section class="sphx-glr-example-title" id="deduplicating-misspelled-categories">
-<span id="examples-deduplication"></span><span id="sphx-glr-auto-examples-05-deduplication-py"></span><h1>Deduplicating misspelled categories<a class="headerlink" href="#deduplicating-misspelled-categories" title="Permalink to this heading">#</a></h1>
+<span id="examples-deduplication"></span><span id="sphx-glr-auto-examples-05-deduplication-py"></span><h1>Deduplicating misspelled categories<a class="headerlink" href="#deduplicating-misspelled-categories" title="Link to this heading">#</a></h1>
 <p>Real world datasets often come with misspellings, for instance
 in manually inputted categorical variables.
 Such misspelling break data analysis steps that require
@@ -488,7 +488,7 @@ find clusters of strings that are similar to each other (e.g. differ only
 by a misspelling) and hence, flag and regroup potentially
 misspelled category names in an unsupervised manner.</p>
 <section id="a-typical-use-case">
-<h2>A typical use case<a class="headerlink" href="#a-typical-use-case" title="Permalink to this heading">#</a></h2>
+<h2>A typical use case<a class="headerlink" href="#a-typical-use-case" title="Link to this heading">#</a></h2>
 <p>Let’s take an example:
 as a data scientist, your job is to analyze the data from a hospital ward.
 In the data, we notice that in most cases, the doctor prescribes
@@ -538,7 +538,7 @@ closest to their original (most frequent) medication name
 - and therefore form clusters.</p>
 </section>
 <section id="deduplication-suggest-corrections-of-misspelled-names">
-<h2>Deduplication: suggest corrections of misspelled names<a class="headerlink" href="#deduplication-suggest-corrections-of-misspelled-names" title="Permalink to this heading">#</a></h2>
+<h2>Deduplication: suggest corrections of misspelled names<a class="headerlink" href="#deduplication-suggest-corrections-of-misspelled-names" title="Link to this heading">#</a></h2>
 <p>The <a class="reference internal" href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> function uses clustering based on
 string similarities to group duplicated names.</p>
 <p>Let’s deduplicate our data:</p>
@@ -607,7 +607,7 @@ If we want to adapt the translation table, we can
 modify it manually.</p>
 </section>
 <section id="visualizing-string-pair-wise-distance-between-names">
-<h2>Visualizing string pair-wise distance between names<a class="headerlink" href="#visualizing-string-pair-wise-distance-between-names" title="Permalink to this heading">#</a></h2>
+<h2>Visualizing string pair-wise distance between names<a class="headerlink" href="#visualizing-string-pair-wise-distance-between-names" title="Link to this heading">#</a></h2>
 <p>Below, we use a heatmap to visualize the pairwise-distance between medication
 names. A darker color means that two medication names are closer together
 (i.e. more similar), a lighter color means a larger distance.</p>
@@ -630,7 +630,7 @@ names. A darker color means that two medication names are closer together
 names and their misspellings that form a cluster around them.</p>
 </section>
 <section id="conclusion">
-<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
 <p>In this example, we have seen how to use the <a class="reference internal" href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> function to
 automatically detect and correct misspelled category names.</p>
 <p>Note that deduplication is especially useful when we either
@@ -639,7 +639,7 @@ or when the similarity across strings does not
 carry useful information for our machine learning task.
 Otherwise, we prefer using encoding methods such as <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>
 or <a class="reference internal" href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  4.317 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 4.170 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-05-deduplication-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/05_deduplication.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -767,7 +767,7 @@ or <a class="reference internal" href="../generated/skrub.MinHashEncoder.html#sk
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.2.
     <br/>
   </p>
 </div>

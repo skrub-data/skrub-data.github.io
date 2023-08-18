@@ -42,7 +42,7 @@
     <link rel="stylesheet" type="text/css" href="_static/jupyterlite_sphinx.css?v=13b285a0" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css?v=61a4c737" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
-    <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=e5fbc548" />
+    <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-rendered-html.css?v=1277b6f3" />
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=01d92578" />
   
@@ -50,9 +50,9 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=7ca01c33"></script>
+    <script src="_static/documentation_options.js?v=abb4f5fb"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=fd10adb8"></script>
     <script src="_static/jupyterlite_sphinx.js?v=0b35d31f"></script>
@@ -472,12 +472,12 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="encoding-creating-feature-matrices">
-<span id="encoding"></span><h1>Encoding: creating feature matrices<a class="headerlink" href="#encoding-creating-feature-matrices" title="Permalink to this heading">#</a></h1>
+<span id="encoding"></span><h1>Encoding: creating feature matrices<a class="headerlink" href="#encoding-creating-feature-matrices" title="Link to this heading">#</a></h1>
 <p>Encoding or vectorizing creates numerical features from the data,
 converting dataframes, strings, dates… Different encoders are suited
 for different types of data.</p>
 <section id="turning-a-dataframe-into-a-numerical-feature-matrix">
-<h2>Turning a dataframe into a numerical feature matrix<a class="headerlink" href="#turning-a-dataframe-into-a-numerical-feature-matrix" title="Permalink to this heading">#</a></h2>
+<h2>Turning a dataframe into a numerical feature matrix<a class="headerlink" href="#turning-a-dataframe-into-a-numerical-feature-matrix" title="Link to this heading">#</a></h2>
 <p>A dataframe can comprise columns of all kind of types. A good numerical
 representation of these columns help analytics and statistical learning.</p>
 <p>The <a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> gives a turn-key solution by applying
@@ -486,7 +486,7 @@ heuristic choices that are not necessarily optimal but is typically a
 very good baseline.</p>
 </section>
 <section id="encoding-open-ended-entries-and-dirty-categories">
-<span id="dirty-categories"></span><h2>Encoding open-ended entries and dirty categories<a class="headerlink" href="#encoding-open-ended-entries-and-dirty-categories" title="Permalink to this heading">#</a></h2>
+<span id="dirty-categories"></span><h2>Encoding open-ended entries and dirty categories<a class="headerlink" href="#encoding-open-ended-entries-and-dirty-categories" title="Link to this heading">#</a></h2>
 <p>String columns can be seen categories for statistical analysis, but
 standard tools to represent categories fail if these strings are not
 normalized into a small number of well-identified form, if they have
@@ -523,7 +523,7 @@ categorical variables</a> <a class="footnote-reference brackets" href="#id3" id=
 </aside>
 </section>
 <section id="encoding-dates">
-<h2>Encoding dates<a class="headerlink" href="#encoding-dates" title="Permalink to this heading">#</a></h2>
+<h2>Encoding dates<a class="headerlink" href="#encoding-dates" title="Link to this heading">#</a></h2>
 <p>The <a class="reference internal" href="generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> encodes date and time: it represent them as
 time in seconds since a fixed date, but also added features useful to
 capture regularities: week of the day, month of the year…</p>
@@ -638,7 +638,7 @@ capture regularities: week of the day, month of the year…</p>
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.2.
     <br/>
   </p>
 </div>

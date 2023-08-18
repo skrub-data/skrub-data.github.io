@@ -42,7 +42,7 @@
     <link rel="stylesheet" type="text/css" href="_static/jupyterlite_sphinx.css?v=13b285a0" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css?v=61a4c737" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
-    <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=e5fbc548" />
+    <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-rendered-html.css?v=1277b6f3" />
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=01d92578" />
   
@@ -50,9 +50,9 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=7ca01c33"></script>
+    <script src="_static/documentation_options.js?v=abb4f5fb"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=fd10adb8"></script>
     <script src="_static/jupyterlite_sphinx.js?v=0b35d31f"></script>
@@ -472,14 +472,14 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="assembling-joining-multiple-tables">
-<span id="assembling"></span><h1>Assembling: joining multiple tables<a class="headerlink" href="#assembling-joining-multiple-tables" title="Permalink to this heading">#</a></h1>
+<span id="assembling"></span><h1>Assembling: joining multiple tables<a class="headerlink" href="#assembling-joining-multiple-tables" title="Link to this heading">#</a></h1>
 <p>Assembling is the process of collecting and joining together tables.
 Good analytics requires including as much information as possible,
 often from different sources.</p>
 <p>skrub allows you to join tables on keys of different types
 (string, numerical, datetime) with imprecise correspondance.</p>
 <section id="fuzzy-joining-tables">
-<h2>Fuzzy joining tables<a class="headerlink" href="#fuzzy-joining-tables" title="Permalink to this heading">#</a></h2>
+<h2>Fuzzy joining tables<a class="headerlink" href="#fuzzy-joining-tables" title="Link to this heading">#</a></h2>
 <p>Joining two dataframes can be hard as the corresponding keys may be different.</p>
 <p>The <a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> uses similarities in entries to join tables on one or more
 related columns. Furthermore, it choose the type of fuzzy matching used
@@ -490,7 +490,7 @@ dropped or replaced.</p>
 has no need for pre-cleaning.</p>
 </section>
 <section id="joining-external-tables-for-machine-learning">
-<h2>Joining external tables for machine learning<a class="headerlink" href="#joining-external-tables-for-machine-learning" title="Permalink to this heading">#</a></h2>
+<h2>Joining external tables for machine learning<a class="headerlink" href="#joining-external-tables-for-machine-learning" title="Link to this heading">#</a></h2>
 <p>Joining is pretty straigthforward for two tables: you only need to identify
 the common key.</p>
 <p>However, for more complex analysis, merging multiple tables is necessary.
@@ -501,7 +501,7 @@ input tables and key columns.</p>
 easily introduced into machine learning pipelines.</p>
 </section>
 <section id="going-further-embeddings-for-better-analytics">
-<h2>Going further: embeddings for better analytics<a class="headerlink" href="#going-further-embeddings-for-better-analytics" title="Permalink to this heading">#</a></h2>
+<h2>Going further: embeddings for better analytics<a class="headerlink" href="#going-further-embeddings-for-better-analytics" title="Link to this heading">#</a></h2>
 <p>Data collection comes before joining, but is also an
 essential process of table assembling.
 Although many datasets are available on the internet, it is not
@@ -625,7 +625,7 @@ useful data that will be joined to another table.</p>
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.2.
     <br/>
   </p>
 </div>
