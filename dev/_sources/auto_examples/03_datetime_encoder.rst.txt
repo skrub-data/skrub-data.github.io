@@ -51,13 +51,10 @@ It is used by default in the |TableVectorizer|.
 .. |make_column_transformer| replace::
     :class:`~sklearn.compose.make_column_transformer`
 
-.. |TimeSeriesSplit| replace::
-    :class:`~sklearn.model_selection.TimeSeriesSplit`
-
 .. |HGBR| replace::
     :class:`~sklearn.ensemble.HistGradientBoostingRegressor`
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-46
+.. GENERATED FROM PYTHON SOURCE LINES 38-43
 
 .. code-block:: default
 
@@ -73,7 +70,7 @@ It is used by default in the |TableVectorizer|.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-53
+.. GENERATED FROM PYTHON SOURCE LINES 44-50
 
 A problem with relevant datetime features
 -----------------------------------------
@@ -82,7 +79,7 @@ We will use a dataset of air quality measurements in different cities.
 In this setting, we want to predict the NO2 air concentration, based
 on the location, date and time of measurement.
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-66
+.. GENERATED FROM PYTHON SOURCE LINES 50-63
 
 .. code-block:: default
 
@@ -193,7 +190,7 @@ on the location, date and time of measurement.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-78
+.. GENERATED FROM PYTHON SOURCE LINES 64-75
 
 Encoding the features
 .....................
@@ -207,7 +204,7 @@ to extract the day of the week, and that we don't want to extract anything
 finer than minutes. This is because we don't want to extract seconds and
 lower units, as they are probably unimportant.
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-94
+.. GENERATED FROM PYTHON SOURCE LINES 75-91
 
 .. code-block:: default
 
@@ -243,7 +240,7 @@ lower units, as they are probably unimportant.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-101
+.. GENERATED FROM PYTHON SOURCE LINES 92-98
 
 We see that the encoder is working as expected: the "date.utc" column has
 been replaced by features extracting the month, day, hour, and day of the
@@ -252,7 +249,7 @@ week information.
 Note the year and minute features are not present, this is because they
 have been removed by the encoder as they are constant the whole period.
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-108
+.. GENERATED FROM PYTHON SOURCE LINES 100-105
 
 One-liner with the |TableVectorizer|
 ....................................
@@ -260,7 +257,7 @@ One-liner with the |TableVectorizer|
 As mentioned earlier, the |TableVectorizer| makes use of the
 |DatetimeEncoder| by default.
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-118
+.. GENERATED FROM PYTHON SOURCE LINES 105-115
 
 .. code-block:: default
 
@@ -292,14 +289,14 @@ As mentioned earlier, the |TableVectorizer| makes use of the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 119-123
+.. GENERATED FROM PYTHON SOURCE LINES 116-120
 
 If we want to customize the |DatetimeEncoder| inside the |TableVectorizer|,
 we can replace its default parameter with a new, custom instance:
 
 Here, for example, we want it to extract the day of the week.
 
-.. GENERATED FROM PYTHON SOURCE LINES 123-130
+.. GENERATED FROM PYTHON SOURCE LINES 120-127
 
 .. code-block:: default
 
@@ -323,7 +320,7 @@ Here, for example, we want it to extract the day of the week.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 131-137
+.. GENERATED FROM PYTHON SOURCE LINES 128-134
 
 .. note:
     For more information on how to customize the |TableVectorizer|, see
@@ -332,7 +329,7 @@ Here, for example, we want it to extract the day of the week.
 Inspecting the |TableVectorizer| further, we can check that the
 |DatetimeEncoder| is used on the correct column(s).
 
-.. GENERATED FROM PYTHON SOURCE LINES 137-139
+.. GENERATED FROM PYTHON SOURCE LINES 134-136
 
 .. code-block:: default
 
@@ -354,7 +351,7 @@ Inspecting the |TableVectorizer| further, we can check that the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 140-154
+.. GENERATED FROM PYTHON SOURCE LINES 137-151
 
 Prediction with datetime features
 ---------------------------------
@@ -371,7 +368,7 @@ Here's we'll use a |HGBR| as our learner.
    from sklearn.experimental import enable_hist_gradient_boosting
    ```
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-164
+.. GENERATED FROM PYTHON SOURCE LINES 151-161
 
 .. code-block:: default
 
@@ -392,7 +389,7 @@ Here's we'll use a |HGBR| as our learner.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 165-174
+.. GENERATED FROM PYTHON SOURCE LINES 162-171
 
 Evaluating the model
 ....................
@@ -404,7 +401,7 @@ the standard settings of the cross-validation do not respect time ordering.
 Instead, we can use the |TimeSeriesSplit|,
 which ensures that the test set is always in the future.
 
-.. GENERATED FROM PYTHON SOURCE LINES 174-190
+.. GENERATED FROM PYTHON SOURCE LINES 171-187
 
 .. code-block:: default
 
@@ -438,7 +435,7 @@ which ensures that the test set is always in the future.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 191-196
+.. GENERATED FROM PYTHON SOURCE LINES 188-193
 
 Plotting the prediction
 .......................
@@ -446,7 +443,7 @@ Plotting the prediction
 The mean squared error is not obvious to interpret, so we compare
 visually the prediction of our model with the actual values.
 
-.. GENERATED FROM PYTHON SOURCE LINES 196-231
+.. GENERATED FROM PYTHON SOURCE LINES 193-228
 
 .. code-block:: default
 
@@ -497,11 +494,11 @@ visually the prediction of our model with the actual values.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 232-233
+.. GENERATED FROM PYTHON SOURCE LINES 229-230
 
 Let's zoom on a few days:
 
-.. GENERATED FROM PYTHON SOURCE LINES 233-266
+.. GENERATED FROM PYTHON SOURCE LINES 230-263
 
 .. code-block:: default
 
@@ -550,7 +547,7 @@ Let's zoom on a few days:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 267-275
+.. GENERATED FROM PYTHON SOURCE LINES 264-272
 
 Features importance
 -------------------
@@ -561,7 +558,7 @@ importance of the features created by the |DatetimeEncoder|, using the
 :func:`~sklearn.inspection.permutation_importance` function, which
 basically shuffles a feature and sees how the model changes its prediction.
 
-.. GENERATED FROM PYTHON SOURCE LINES 277-303
+.. GENERATED FROM PYTHON SOURCE LINES 274-300
 
 .. code-block:: default
 
@@ -603,7 +600,7 @@ basically shuffles a feature and sees how the model changes its prediction.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 304-314
+.. GENERATED FROM PYTHON SOURCE LINES 301-311
 
 We can see that the hour of the day is the most important feature,
 which seems reasonable.
@@ -619,7 +616,7 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 3.838 seconds)
+   **Total running time of the script:** (0 minutes 3.594 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:
