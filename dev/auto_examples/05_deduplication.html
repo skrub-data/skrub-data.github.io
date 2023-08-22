@@ -512,7 +512,7 @@ there are multiple spelling mistakes in the dataset.</p>
 <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">duplicated_names</span></a><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;Contrivan&#39;, &#39;Czntrivan&#39;, &#39;Contrivan&#39;, &#39;Coptrivan&#39;, &#39;Contriuan&#39;]
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;Contrivan&#39;, &#39;Cvntrivan&#39;, &#39;Contrivan&#39;, &#39;Coqtrivan&#39;, &#39;Contriian&#39;]
 </pre></div>
 </div>
 <p>We then extract the unique medication names in the data and
@@ -550,10 +550,10 @@ string similarities to group duplicated names.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Contrivan    Contrivan
-Czntrivan    Contrivan
+Cvntrivan    Contrivan
 Contrivan    Contrivan
-Coptrivan    Contrivan
-Contriuan    Contrivan
+Coqtrivan    Contrivan
+Contriian    Contrivan
 dtype: object
 </pre></div>
 </div>
@@ -594,10 +594,10 @@ data returned by <a class="reference internal" href="../generated/skrub.deduplic
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Contrivan    Contrivan
-Czntrivan    Contrivan
-Coptrivan    Contrivan
-Contriuan    Contrivan
-Contgivan    Contrivan
+Cvntrivan    Contrivan
+Coqtrivan    Contrivan
+Contriian    Contrivan
+Contaivan    Contrivan
 dtype: object
 </pre></div>
 </div>
@@ -639,7 +639,7 @@ or when the similarity across strings does not
 carry useful information for our machine learning task.
 Otherwise, we prefer using encoding methods such as <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>
 or <a class="reference internal" href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 4.096 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 4.582 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-05-deduplication-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/05_deduplication.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
