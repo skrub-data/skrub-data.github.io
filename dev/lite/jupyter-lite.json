@@ -10,7 +10,7 @@
       {
         "extension": "./extension",
         "liteExtension": true,
-        "load": "static/remoteEntry.bd2bfd0ce69397caf915.js",
+        "load": "static/remoteEntry.1c8491cf58b5de6123d1.js",
         "name": "@jupyterlite/pyodide-kernel-extension"
       },
       {
@@ -301,7 +301,7 @@
     "litePluginSettings": {
       "@jupyterlite/pyodide-kernel-extension:kernel": {
         "pipliteUrls": [
-          "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=b6d0412064832b1ada1d8fdc283e2fea5c426a854663747a8e51e1e83f65cd12"
+          "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=5e9ce9e49c39bfa29aa60dbee0e272614a3111b97116f8902630cf36bdc58634"
         ],
         "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"
       }
