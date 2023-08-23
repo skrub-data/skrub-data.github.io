@@ -670,7 +670,7 @@ and store the returned cross-validation score:
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
       warnings.warn(
     gap encoding
-    r2 score:  mean: 0.925; std: 0.017
+    r2 score:  mean: 0.927; std: 0.018
 
 
 
@@ -993,9 +993,9 @@ Let's perform a cross-validation to see how well this model predicts:
 
  .. code-block:: none
 
-    scores=[0.92448253 0.89913809 0.92756597 0.93176971 0.93299177]
-    mean=0.923189612792998
-    std=0.012401615790242378
+    scores=[0.92568911 0.89457662 0.93281011 0.93199911 0.92763017]
+    mean=0.9225410225976184
+    std=0.014231844370346676
 
 
 
@@ -1071,18 +1071,18 @@ The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
 
     array([[2.00700000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-            5.26908597e-02, 1.55110162e-01, 1.09719860e+00],
+            2.28566162e+00, 5.85316109e-02, 1.42820123e+00],
            [2.00500000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-            5.10621063e-02, 5.40594183e-02, 8.57120337e-02],
+            5.20888041e-02, 5.07340510e-02, 5.00000000e-02],
            [2.00900000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-            5.26990464e-02, 5.91020287e-02, 5.00026990e-02],
+            5.14064831e+00, 6.54467264e-02, 3.34337034e-01],
            ...,
            [1.99000000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-            5.21540989e-02, 5.87187539e-02, 2.36633599e+00],
+            5.97474169e-02, 5.27450746e-02, 5.00945356e-02],
            [2.01200000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-            5.00287520e-02, 5.16991089e-02, 5.32060985e-02],
+            5.38080148e-02, 5.14234222e-02, 5.09535385e-02],
            [2.01400000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-            5.10309095e-02, 5.44404997e-02, 8.19332117e-02]])
+            5.51841234e-02, 5.00000033e-02, 5.00000000e-02]])
 
 
 
@@ -1342,7 +1342,7 @@ having a permanent, full-time job :)
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (2 minutes 57.743 seconds)
+   **Total running time of the script:** (2 minutes 28.619 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_dirty_categories.py:
