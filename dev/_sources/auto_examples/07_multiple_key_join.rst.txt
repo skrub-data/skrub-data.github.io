@@ -199,14 +199,47 @@ The main table: flights dataset
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-59
+.. GENERATED FROM PYTHON SOURCE LINES 55-56
+
+Let us see the arrival delay of the flights in the dataset:
+
+.. GENERATED FROM PYTHON SOURCE LINES 56-64
+
+.. code-block:: default
+
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+
+    sns.set_theme(style="ticks")
+
+    sns.histplot(data=flights, x="ArrDelay", log_scale=(False, True))
+    plt.show()
+
+
+
+
+.. image-sg:: /auto_examples/images/sphx_glr_07_multiple_key_join_001.png
+   :alt: 07 multiple key join
+   :srcset: /auto_examples/images/sphx_glr_07_multiple_key_join_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 65-67
+
+Interesting, most delays are relatively short (<100 min), but there
+are some very long ones.
+
+.. GENERATED FROM PYTHON SOURCE LINES 69-73
 
 Airport data: an auxiliary table from the same database
 .......................................................
     - The "airports" dataset, with information such as their name
       and location (longitude, latitude).
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-63
+.. GENERATED FROM PYTHON SOURCE LINES 73-77
 
 .. code-block:: default
 
@@ -307,7 +340,7 @@ Airport data: an auxiliary table from the same database
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-69
+.. GENERATED FROM PYTHON SOURCE LINES 78-83
 
 Weather data: auxiliary tables from external sources
 ....................................................
@@ -315,7 +348,7 @@ Weather data: auxiliary tables from external sources
       Both tables are from the Global Historical Climatology Network.
       Here, we consider only weather measurements from 2008.
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-75
+.. GENERATED FROM PYTHON SOURCE LINES 83-89
 
 .. code-block:: default
 
@@ -406,12 +439,12 @@ Weather data: auxiliary tables from external sources
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-78
+.. GENERATED FROM PYTHON SOURCE LINES 90-92
 
 - The "stations" dataset. Provides location of all the weather
   measurement stations in the US.
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-82
+.. GENERATED FROM PYTHON SOURCE LINES 92-96
 
 .. code-block:: default
 
@@ -524,13 +557,13 @@ Weather data: auxiliary tables from external sources
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-86
+.. GENERATED FROM PYTHON SOURCE LINES 97-100
 
 Joining: feature augmentation across tables
 -------------------------------------------
 First we join the stations with weather on the ID (exact join):
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-90
+.. GENERATED FROM PYTHON SOURCE LINES 100-104
 
 .. code-block:: default
 
@@ -667,12 +700,12 @@ First we join the stations with weather on the ID (exact join):
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-93
+.. GENERATED FROM PYTHON SOURCE LINES 105-107
 
 Then we join this table with the airports so that we get all auxilliary
 tables into one.
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-102
+.. GENERATED FROM PYTHON SOURCE LINES 107-116
 
 .. code-block:: default
 
@@ -856,12 +889,12 @@ tables into one.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-105
+.. GENERATED FROM PYTHON SOURCE LINES 117-119
 
 Joining airports with flights data:
 Let's instanciate another multiple key joiner on the date and the airport:
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-113
+.. GENERATED FROM PYTHON SOURCE LINES 119-127
 
 .. code-block:: default
 
@@ -1063,14 +1096,14 @@ Let's instanciate another multiple key joiner on the date and the airport:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-118
+.. GENERATED FROM PYTHON SOURCE LINES 128-132
 
 Training data is then passed through a |Pipeline|:
 - We will combine all the information from our pool of tables into "flights",
 our main table.
 - We will use this main table to model the prediction of flight delay.
 
-.. GENERATED FROM PYTHON SOURCE LINES 118-128
+.. GENERATED FROM PYTHON SOURCE LINES 132-142
 
 .. code-block:: default
 
@@ -1091,11 +1124,11 @@ our main table.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 129-130
+.. GENERATED FROM PYTHON SOURCE LINES 143-144
 
 We isolate our target variable and remove useless ID variables:
 
-.. GENERATED FROM PYTHON SOURCE LINES 130-134
+.. GENERATED FROM PYTHON SOURCE LINES 144-148
 
 .. code-block:: default
 
@@ -1110,7 +1143,7 @@ We isolate our target variable and remove useless ID variables:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 135-140
+.. GENERATED FROM PYTHON SOURCE LINES 149-154
 
 We want to frame this as a classification problem:
 suppose that your company is obliged to reimburse the ticket
@@ -1118,7 +1151,7 @@ price if the flight is delayed.
 We have a binary classification problem:
 the flight was delayed (1) or not (0).
 
-.. GENERATED FROM PYTHON SOURCE LINES 140-144
+.. GENERATED FROM PYTHON SOURCE LINES 154-158
 
 .. code-block:: default
 
@@ -1142,11 +1175,11 @@ the flight was delayed (1) or not (0).
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 145-146
+.. GENERATED FROM PYTHON SOURCE LINES 159-160
 
 The results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 146-152
+.. GENERATED FROM PYTHON SOURCE LINES 160-166
 
 .. code-block:: default
 
@@ -1169,7 +1202,7 @@ The results:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 153-161
+.. GENERATED FROM PYTHON SOURCE LINES 167-175
 
 Conclusion
 ----------
@@ -1183,7 +1216,7 @@ Our final cross-validated accuracy score is 0.6.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (38 minutes 15.921 seconds)
+   **Total running time of the script:** (38 minutes 23.884 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:
