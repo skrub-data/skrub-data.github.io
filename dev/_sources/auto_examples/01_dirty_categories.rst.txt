@@ -305,11 +305,12 @@ and y, our target column (the annual salary):
 
 Now, let's carry out some basic preprocessing:
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-87
+.. GENERATED FROM PYTHON SOURCE LINES 77-88
 
 .. code-block:: default
 
     import pandas as pd
+    import numpy as np
 
     X["date_first_hired"] = pd.to_datetime(X["date_first_hired"])
     X["year_first_hired"] = X["date_first_hired"].apply(lambda x: x.year)
@@ -326,7 +327,7 @@ Now, let's carry out some basic preprocessing:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 88-93
+.. GENERATED FROM PYTHON SOURCE LINES 89-94
 
 Assembling a machine-learning pipeline that encodes the data
 ------------------------------------------------------------
@@ -334,7 +335,7 @@ Assembling a machine-learning pipeline that encodes the data
 To build a learning pipeline, we need to assemble encoders for each
 column, and apply a supervised learning model on top.
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-100
+.. GENERATED FROM PYTHON SOURCE LINES 96-101
 
 The categorical encoders
 ........................
@@ -342,13 +343,13 @@ The categorical encoders
 An encoder is needed to turn a categorical column into a numerical
 representation:
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-104
+.. GENERATED FROM PYTHON SOURCE LINES 101-105
 
 .. code-block:: default
 
     from sklearn.preprocessing import OneHotEncoder
 
-    one_hot = OneHotEncoder(handle_unknown="ignore", sparse=False)
+    one_hot = OneHotEncoder(handle_unknown="ignore", sparse_output=False)
 
 
 
@@ -357,13 +358,13 @@ representation:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-108
+.. GENERATED FROM PYTHON SOURCE LINES 106-109
 
 We assemble these to apply them to the relevant columns.
 The |ColumnTransformer| is created by specifying a set of transformers
 alongside with the column names on which each must be applied:
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-119
+.. GENERATED FROM PYTHON SOURCE LINES 109-120
 
 .. code-block:: default
 
@@ -385,7 +386,7 @@ alongside with the column names on which each must be applied:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 120-125
+.. GENERATED FROM PYTHON SOURCE LINES 121-126
 
 Pipelining an encoder with a learner
 ....................................
@@ -393,7 +394,7 @@ Pipelining an encoder with a learner
 We will use a |HGBR|,
 which is a good predictor for data with heterogeneous columns
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-133
+.. GENERATED FROM PYTHON SOURCE LINES 126-134
 
 .. code-block:: default
 
@@ -412,11 +413,11 @@ which is a good predictor for data with heterogeneous columns
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 134-135
+.. GENERATED FROM PYTHON SOURCE LINES 135-136
 
 The pipeline can be readily applied to the dataframe for prediction:
 
-.. GENERATED FROM PYTHON SOURCE LINES 135-137
+.. GENERATED FROM PYTHON SOURCE LINES 136-138
 
 .. code-block:: default
 
@@ -426,15 +427,6 @@ The pipeline can be readily applied to the dataframe for prediction:
 
 
 
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-
 
 .. raw:: html
 
@@ -442,45 +434,45 @@ The pipeline can be readily applied to the dataframe for prediction:
     <style>#sk-container-id-1 {color: black;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;columntransformer&#x27;,
                      ColumnTransformer(transformers=[(&#x27;onehotencoder-1&#x27;,
                                                       OneHotEncoder(handle_unknown=&#x27;ignore&#x27;,
-                                                                    sparse=False),
+                                                                    sparse_output=False),
                                                       [&#x27;gender&#x27;, &#x27;department_name&#x27;,
                                                        &#x27;assignment_category&#x27;]),
                                                      (&#x27;passthrough&#x27;, &#x27;passthrough&#x27;,
                                                       [&#x27;year_first_hired&#x27;]),
                                                      (&#x27;onehotencoder-2&#x27;,
                                                       OneHotEncoder(handle_unknown=&#x27;ignore&#x27;,
-                                                                    sparse=False),
+                                                                    sparse_output=False),
                                                       [&#x27;employee_position_title&#x27;])])),
                     (&#x27;histgradientboostingregressor&#x27;,
                      HistGradientBoostingRegressor())])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" ><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[(&#x27;columntransformer&#x27;,
                      ColumnTransformer(transformers=[(&#x27;onehotencoder-1&#x27;,
                                                       OneHotEncoder(handle_unknown=&#x27;ignore&#x27;,
-                                                                    sparse=False),
+                                                                    sparse_output=False),
                                                       [&#x27;gender&#x27;, &#x27;department_name&#x27;,
                                                        &#x27;assignment_category&#x27;]),
                                                      (&#x27;passthrough&#x27;, &#x27;passthrough&#x27;,
                                                       [&#x27;year_first_hired&#x27;]),
                                                      (&#x27;onehotencoder-2&#x27;,
                                                       OneHotEncoder(handle_unknown=&#x27;ignore&#x27;,
-                                                                    sparse=False),
+                                                                    sparse_output=False),
                                                       [&#x27;employee_position_title&#x27;])])),
                     (&#x27;histgradientboostingregressor&#x27;,
                      HistGradientBoostingRegressor())])</pre></div></div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" ><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">columntransformer: ColumnTransformer</label><div class="sk-toggleable__content"><pre>ColumnTransformer(transformers=[(&#x27;onehotencoder-1&#x27;,
                                      OneHotEncoder(handle_unknown=&#x27;ignore&#x27;,
-                                                   sparse=False),
+                                                   sparse_output=False),
                                      [&#x27;gender&#x27;, &#x27;department_name&#x27;,
                                       &#x27;assignment_category&#x27;]),
                                     (&#x27;passthrough&#x27;, &#x27;passthrough&#x27;,
                                      [&#x27;year_first_hired&#x27;]),
                                     (&#x27;onehotencoder-2&#x27;,
                                      OneHotEncoder(handle_unknown=&#x27;ignore&#x27;,
-                                                   sparse=False),
-                                     [&#x27;employee_position_title&#x27;])])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" ><label for="sk-estimator-id-3" class="sk-toggleable__label sk-toggleable__label-arrow">onehotencoder-1</label><div class="sk-toggleable__content"><pre>[&#x27;gender&#x27;, &#x27;department_name&#x27;, &#x27;assignment_category&#x27;]</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" ><label for="sk-estimator-id-4" class="sk-toggleable__label sk-toggleable__label-arrow">OneHotEncoder</label><div class="sk-toggleable__content"><pre>OneHotEncoder(handle_unknown=&#x27;ignore&#x27;, sparse=False)</pre></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" ><label for="sk-estimator-id-5" class="sk-toggleable__label sk-toggleable__label-arrow">passthrough</label><div class="sk-toggleable__content"><pre>[&#x27;year_first_hired&#x27;]</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" ><label for="sk-estimator-id-6" class="sk-toggleable__label sk-toggleable__label-arrow">passthrough</label><div class="sk-toggleable__content"><pre>passthrough</pre></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" ><label for="sk-estimator-id-7" class="sk-toggleable__label sk-toggleable__label-arrow">onehotencoder-2</label><div class="sk-toggleable__content"><pre>[&#x27;employee_position_title&#x27;]</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-8" type="checkbox" ><label for="sk-estimator-id-8" class="sk-toggleable__label sk-toggleable__label-arrow">OneHotEncoder</label><div class="sk-toggleable__content"><pre>OneHotEncoder(handle_unknown=&#x27;ignore&#x27;, sparse=False)</pre></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-9" type="checkbox" ><label for="sk-estimator-id-9" class="sk-toggleable__label sk-toggleable__label-arrow">HistGradientBoostingRegressor</label><div class="sk-toggleable__content"><pre>HistGradientBoostingRegressor()</pre></div></div></div></div></div></div></div>
+                                                   sparse_output=False),
+                                     [&#x27;employee_position_title&#x27;])])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" ><label for="sk-estimator-id-3" class="sk-toggleable__label sk-toggleable__label-arrow">onehotencoder-1</label><div class="sk-toggleable__content"><pre>[&#x27;gender&#x27;, &#x27;department_name&#x27;, &#x27;assignment_category&#x27;]</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" ><label for="sk-estimator-id-4" class="sk-toggleable__label sk-toggleable__label-arrow">OneHotEncoder</label><div class="sk-toggleable__content"><pre>OneHotEncoder(handle_unknown=&#x27;ignore&#x27;, sparse_output=False)</pre></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" ><label for="sk-estimator-id-5" class="sk-toggleable__label sk-toggleable__label-arrow">passthrough</label><div class="sk-toggleable__content"><pre>[&#x27;year_first_hired&#x27;]</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" ><label for="sk-estimator-id-6" class="sk-toggleable__label sk-toggleable__label-arrow">passthrough</label><div class="sk-toggleable__content"><pre>passthrough</pre></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" ><label for="sk-estimator-id-7" class="sk-toggleable__label sk-toggleable__label-arrow">onehotencoder-2</label><div class="sk-toggleable__content"><pre>[&#x27;employee_position_title&#x27;]</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-8" type="checkbox" ><label for="sk-estimator-id-8" class="sk-toggleable__label sk-toggleable__label-arrow">OneHotEncoder</label><div class="sk-toggleable__content"><pre>OneHotEncoder(handle_unknown=&#x27;ignore&#x27;, sparse_output=False)</pre></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-9" type="checkbox" ><label for="sk-estimator-id-9" class="sk-toggleable__label sk-toggleable__label-arrow">HistGradientBoostingRegressor</label><div class="sk-toggleable__content"><pre>HistGradientBoostingRegressor()</pre></div></div></div></div></div></div></div>
     </div>
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 138-143
+.. GENERATED FROM PYTHON SOURCE LINES 139-144
 
 Dirty category encoding
 -----------------------
@@ -488,13 +480,11 @@ Dirty category encoding
 The |OneHotEncoder| is actually not well suited to the 'Employee
 Position Title' column, as this column contains 400 different entries:
 
-.. GENERATED FROM PYTHON SOURCE LINES 143-147
+.. GENERATED FROM PYTHON SOURCE LINES 144-146
 
 .. code-block:: default
 
-    import numpy as np
-
-    np.unique(y)
+    X["employee_position_title"].value_counts()
 
 
 
@@ -505,19 +495,30 @@ Position Title' column, as this column contains 400 different entries:
  .. code-block:: none
 
 
-    array([  9196.  ,  11147.24,  13244.5 , ..., 233003.  , 239566.  ,
-           303091.  ])
+    employee_position_title
+    Bus Operator                                         638
+    Police Officer III                                   620
+    Firefighter/Rescuer III                              388
+    Manager III                                          243
+    Firefighter/Rescuer II                               219
+                                                        ... 
+    SCBA Technician                                        1
+    Senior Water Quality Specialist                        1
+    Director Office of Human Resources                     1
+    Director Criminal Justice Coordinating Commission      1
+    Legal Secretary I                                      1
+    Name: count, Length: 442, dtype: int64
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 148-152
+.. GENERATED FROM PYTHON SOURCE LINES 147-151
 
 .. _example_minhash_encoder:
 
 We will now experiment with encoders specially made for handling
 dirty columns:
 
-.. GENERATED FROM PYTHON SOURCE LINES 152-163
+.. GENERATED FROM PYTHON SOURCE LINES 151-162
 
 .. code-block:: default
 
@@ -539,13 +540,13 @@ dirty columns:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 164-167
+.. GENERATED FROM PYTHON SOURCE LINES 163-166
 
 We now loop over the different encoding methods,
 instantiate a new |Pipeline| each time, fit it
 and store the returned cross-validation score:
 
-.. GENERATED FROM PYTHON SOURCE LINES 167-187
+.. GENERATED FROM PYTHON SOURCE LINES 166-186
 
 .. code-block:: default
 
@@ -577,80 +578,30 @@ and store the returned cross-validation score:
 
  .. code-block:: none
 
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
     one-hot encoding
     r2 score:  mean: 0.770; std: 0.032
 
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
     similarity encoding
     r2 score:  mean: 0.928; std: 0.014
 
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
     target encoding
     r2 score:  mean: 0.846; std: 0.031
 
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but MinHashEncoder was fitted with feature names
+      warnings.warn(
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but MinHashEncoder was fitted with feature names
       warnings.warn(
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but MinHashEncoder was fitted with feature names
       warnings.warn(
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but MinHashEncoder was fitted with feature names
       warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but MinHashEncoder was fitted with feature names
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but MinHashEncoder was fitted with feature names
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
       warnings.warn(
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but MinHashEncoder was fitted with feature names
       warnings.warn(
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but MinHashEncoder was fitted with feature names
       warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but MinHashEncoder was fitted with feature names
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but MinHashEncoder was fitted with feature names
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
       warnings.warn(
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but MinHashEncoder was fitted with feature names
       warnings.warn(
@@ -659,31 +610,21 @@ and store the returned cross-validation score:
     minhash encoding
     r2 score:  mean: 0.923; std: 0.013
 
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
-      warnings.warn(
     gap encoding
-    r2 score:  mean: 0.930; std: 0.015
+    r2 score:  mean: 0.932; std: 0.012
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 188-192
+.. GENERATED FROM PYTHON SOURCE LINES 187-191
 
 Plotting the results
 ....................
 
 Finally, we plot the scores on a boxplot:
 
-.. GENERATED FROM PYTHON SOURCE LINES 192-203
+.. GENERATED FROM PYTHON SOURCE LINES 191-202
 
 .. code-block:: default
 
@@ -710,7 +651,7 @@ Finally, we plot the scores on a boxplot:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 204-215
+.. GENERATED FROM PYTHON SOURCE LINES 203-214
 
 The clear trend is that encoders grasping similarities between categories
 (|SE|, |MinHash|, and |Gap|) perform better than those discarding it.
@@ -724,7 +665,7 @@ providing interpretable features
 |
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 217-226
+.. GENERATED FROM PYTHON SOURCE LINES 216-225
 
 .. _example_table_vectorizer:
 
@@ -736,7 +677,7 @@ now explore a simpler, automated, way of encoding the data.
 
 Let's start again from the raw data:
 
-.. GENERATED FROM PYTHON SOURCE LINES 226-230
+.. GENERATED FROM PYTHON SOURCE LINES 225-229
 
 .. code-block:: default
 
@@ -751,12 +692,12 @@ Let's start again from the raw data:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 231-233
+.. GENERATED FROM PYTHON SOURCE LINES 230-232
 
 We'll drop the 'date_first_hired' column as it's redundant with
 'year_first_hired'.
 
-.. GENERATED FROM PYTHON SOURCE LINES 233-235
+.. GENERATED FROM PYTHON SOURCE LINES 232-234
 
 .. code-block:: default
 
@@ -769,11 +710,11 @@ We'll drop the 'date_first_hired' column as it's redundant with
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 236-237
+.. GENERATED FROM PYTHON SOURCE LINES 235-236
 
 We still have a complex and heterogeneous dataframe:
 
-.. GENERATED FROM PYTHON SOURCE LINES 237-239
+.. GENERATED FROM PYTHON SOURCE LINES 236-238
 
 .. code-block:: default
 
@@ -933,12 +874,12 @@ We still have a complex and heterogeneous dataframe:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 240-242
+.. GENERATED FROM PYTHON SOURCE LINES 239-241
 
 The |TV| can to turn this dataframe into a form suited for
 machine learning.
 
-.. GENERATED FROM PYTHON SOURCE LINES 244-253
+.. GENERATED FROM PYTHON SOURCE LINES 243-252
 
 Using the TableVectorizer in a supervised-learning pipeline
 -----------------------------------------------------------
@@ -950,7 +891,7 @@ can be readily applied to the dataframe**.
 The |TV| requires at least skrub 0.2.0.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 253-260
+.. GENERATED FROM PYTHON SOURCE LINES 252-259
 
 .. code-block:: default
 
@@ -968,11 +909,11 @@ The |TV| requires at least skrub 0.2.0.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 261-262
+.. GENERATED FROM PYTHON SOURCE LINES 260-261
 
 Let's perform a cross-validation to see how well this model predicts:
 
-.. GENERATED FROM PYTHON SOURCE LINES 262-271
+.. GENERATED FROM PYTHON SOURCE LINES 261-270
 
 .. code-block:: default
 
@@ -993,20 +934,20 @@ Let's perform a cross-validation to see how well this model predicts:
 
  .. code-block:: none
 
-    scores=[0.92056114 0.89730562 0.92878384 0.93337961 0.93028791]
-    mean=0.9220636218400461
-    std=0.01308485947815853
+    scores=[0.92358591 0.89377457 0.92475585 0.93265591 0.93417216]
+    mean=0.9217888808398744
+    std=0.014616918980854272
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 272-275
+.. GENERATED FROM PYTHON SOURCE LINES 271-274
 
 The prediction performed here is pretty much as good as above
 but the code here is much simpler as it does not involve specifying
 columns manually.
 
-.. GENERATED FROM PYTHON SOURCE LINES 277-282
+.. GENERATED FROM PYTHON SOURCE LINES 276-281
 
 Analyzing the features created
 ------------------------------
@@ -1014,7 +955,7 @@ Analyzing the features created
 Let us perform the same workflow, but without the |Pipeline|, so we can
 analyze the TableVectorizer's mechanisms along the way.
 
-.. GENERATED FROM PYTHON SOURCE LINES 282-284
+.. GENERATED FROM PYTHON SOURCE LINES 281-283
 
 .. code-block:: default
 
@@ -1027,11 +968,11 @@ analyze the TableVectorizer's mechanisms along the way.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 285-286
+.. GENERATED FROM PYTHON SOURCE LINES 284-285
 
 We split the data between train and test, and transform them:
 
-.. GENERATED FROM PYTHON SOURCE LINES 286-295
+.. GENERATED FROM PYTHON SOURCE LINES 285-294
 
 .. code-block:: default
 
@@ -1051,11 +992,11 @@ We split the data between train and test, and transform them:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 296-297
+.. GENERATED FROM PYTHON SOURCE LINES 295-296
 
 The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
-.. GENERATED FROM PYTHON SOURCE LINES 297-299
+.. GENERATED FROM PYTHON SOURCE LINES 296-298
 
 .. code-block:: default
 
@@ -1071,26 +1012,26 @@ The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
 
     array([[2.00700000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-            1.24673886e-01, 4.40891537e-01, 5.12100433e-02],
+            1.04021041e-01, 8.85102839e-02, 2.46097429e+01],
            [2.00500000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-            5.45416137e-02, 5.26593553e-02, 5.05822543e-02],
+            5.11701023e-02, 5.29149425e-02, 5.23014012e-02],
            [2.00900000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-            5.34365387e-02, 5.65863178e-02, 5.06782772e-02],
+            9.51375385e-02, 7.85784089e-02, 3.28364338e-01],
            ...,
            [1.99000000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-            5.93558076e-02, 6.19080285e-02, 5.30300517e-02],
+            7.61260208e-02, 6.42149096e-02, 7.03262887e-02],
            [2.01200000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-            5.57846724e-02, 5.09402611e-02, 5.01829255e-02],
+            5.42130763e-02, 5.08673655e+01, 5.26494694e-02],
            [2.01400000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-            5.73357849e-02, 5.25889296e-02, 5.09757566e-02]])
+            5.20039430e-02, 6.53578788e-02, 5.48378160e-02]])
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 300-301
+.. GENERATED FROM PYTHON SOURCE LINES 299-300
 
 They have more columns than the original dataframe, but not much more:
 
-.. GENERATED FROM PYTHON SOURCE LINES 301-303
+.. GENERATED FROM PYTHON SOURCE LINES 300-302
 
 .. code-block:: default
 
@@ -1109,7 +1050,7 @@ They have more columns than the original dataframe, but not much more:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 304-309
+.. GENERATED FROM PYTHON SOURCE LINES 303-308
 
 Inspecting the features created
 ...............................
@@ -1117,7 +1058,7 @@ Inspecting the features created
 The |TV| assigns a transformer for each column. We can inspect this
 choice:
 
-.. GENERATED FROM PYTHON SOURCE LINES 309-313
+.. GENERATED FROM PYTHON SOURCE LINES 308-312
 
 .. code-block:: default
 
@@ -1144,7 +1085,7 @@ choice:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 314-327
+.. GENERATED FROM PYTHON SOURCE LINES 313-326
 
 This is what is being passed to the |ColumnTransformer| under the hood.
 If you're familiar with how the latter works, it should be very intuitive.
@@ -1160,7 +1101,7 @@ Next, we can have a look at the encoded feature names.
 
 Before encoding:
 
-.. GENERATED FROM PYTHON SOURCE LINES 327-329
+.. GENERATED FROM PYTHON SOURCE LINES 326-328
 
 .. code-block:: default
 
@@ -1179,11 +1120,11 @@ Before encoding:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 330-331
+.. GENERATED FROM PYTHON SOURCE LINES 329-330
 
 After encoding (we only plot the first 8 feature names):
 
-.. GENERATED FROM PYTHON SOURCE LINES 331-334
+.. GENERATED FROM PYTHON SOURCE LINES 330-333
 
 .. code-block:: default
 
@@ -1203,7 +1144,7 @@ After encoding (we only plot the first 8 feature names):
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 335-341
+.. GENERATED FROM PYTHON SOURCE LINES 334-340
 
 As we can see, it gave us interpretable columns.
 This is because we used the |Gap| on the column 'division',
@@ -1212,7 +1153,7 @@ which was classified as a high cardinality string variable.
 
 In total, we have a reasonable number of encoded columns:
 
-.. GENERATED FROM PYTHON SOURCE LINES 341-344
+.. GENERATED FROM PYTHON SOURCE LINES 340-343
 
 .. code-block:: default
 
@@ -1232,7 +1173,7 @@ In total, we have a reasonable number of encoded columns:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 345-357
+.. GENERATED FROM PYTHON SOURCE LINES 344-356
 
 Feature importances in the statistical model
 --------------------------------------------
@@ -1247,7 +1188,7 @@ In this section, we will train a regressor, and plot the feature importances.
 
 First, let's train the |RandomForestRegressor|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 357-363
+.. GENERATED FROM PYTHON SOURCE LINES 356-362
 
 .. code-block:: default
 
@@ -1270,11 +1211,11 @@ First, let's train the |RandomForestRegressor|:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 364-365
+.. GENERATED FROM PYTHON SOURCE LINES 363-364
 
 Retrieving the feature importances:
 
-.. GENERATED FROM PYTHON SOURCE LINES 365-372
+.. GENERATED FROM PYTHON SOURCE LINES 364-371
 
 .. code-block:: default
 
@@ -1292,11 +1233,11 @@ Retrieving the feature importances:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 373-374
+.. GENERATED FROM PYTHON SOURCE LINES 372-373
 
 Plotting the results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 374-387
+.. GENERATED FROM PYTHON SOURCE LINES 373-386
 
 .. code-block:: default
 
@@ -1325,7 +1266,7 @@ Plotting the results:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 388-399
+.. GENERATED FROM PYTHON SOURCE LINES 387-398
 
 We can deduce from this data that the three factors that define the
 most the salary are: being hired for a long time, being a manager, and
@@ -1342,7 +1283,7 @@ having a permanent, full-time job :)
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (2 minutes 54.631 seconds)
+   **Total running time of the script:** (3 minutes 39.167 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_dirty_categories.py:
