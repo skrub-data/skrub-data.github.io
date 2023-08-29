@@ -923,7 +923,7 @@ r2 score:  mean: 0.923; std: 0.013
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:972: FutureWarning: `sparse` was renamed to `sparse_output` in version 1.2 and will be removed in 1.4. `sparse_output` is ignored unless you leave `sparse` to its default value.
   warnings.warn(
 gap encoding
-r2 score:  mean: 0.930; std: 0.017
+r2 score:  mean: 0.930; std: 0.015
 </pre></div>
 </div>
 <section id="plotting-the-results">
@@ -1142,9 +1142,9 @@ can be readily applied to the dataframe</strong>.</p>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;std=</span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>scores=[0.91921132 0.89640238 0.92312561 0.92672174 0.93504845]
-mean=0.9201019025528625
-std=0.012952413196674019
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>scores=[0.92056114 0.89730562 0.92878384 0.93337961 0.93028791]
+mean=0.9220636218400461
+std=0.01308485947815853
 </pre></div>
 </div>
 <p>The prediction performed here is pretty much as good as above
@@ -1174,18 +1174,18 @@ analyze the TableVectorizer’s mechanisms along the way.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([[2.00700000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-        2.03520966e+00, 9.01685217e-02, 4.04073777e-01],
+        1.24673886e-01, 4.40891537e-01, 5.12100433e-02],
        [2.00500000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        5.02979842e-02, 5.24513603e-02, 5.29482700e-02],
+        5.45416137e-02, 5.26593553e-02, 5.05822543e-02],
        [2.00900000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        1.13117659e-01, 6.51784436e-02, 7.92679973e-02],
+        5.34365387e-02, 5.65863178e-02, 5.06782772e-02],
        ...,
        [1.99000000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        5.01033790e-02, 1.31423225e-01, 6.54145184e-02],
+        5.93558076e-02, 6.19080285e-02, 5.30300517e-02],
        [2.01200000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-        5.16182885e-02, 5.84541097e-02, 5.08566991e+01],
+        5.57846724e-02, 5.09402611e-02, 5.01829255e-02],
        [2.01400000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        5.00979428e-02, 5.31172168e-02, 6.32770646e-02]])
+        5.73357849e-02, 5.25889296e-02, 5.09757566e-02]])
 </pre></div>
 </div>
 <p>They have more columns than the original dataframe, but not much more:</p>
@@ -1301,7 +1301,7 @@ having a permanent, full-time job :)</p>
 automated by the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, and the resulting pipeline can still be
 inspected, even with non-normalized entries.</p>
 </aside>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (2 minutes 34.274 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (2 minutes 54.631 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-01-dirty-categories-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/01_dirty_categories.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
