@@ -611,7 +611,7 @@ and store the returned cross-validation score:
     r2 score:  mean: 0.923; std: 0.013
 
     gap encoding
-    r2 score:  mean: 0.932; std: 0.012
+    r2 score:  mean: 0.927; std: 0.016
 
 
 
@@ -647,6 +647,21 @@ Finally, we plot the scores on a boxplot:
    :srcset: /auto_examples/images/sphx_glr_01_dirty_categories_001.png
    :class: sphx-glr-single-img
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+      if pd.api.types.is_categorical_dtype(vector):
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+      if pd.api.types.is_categorical_dtype(vector):
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+      if pd.api.types.is_categorical_dtype(vector):
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+      if pd.api.types.is_categorical_dtype(vector):
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_oldcore.py:1498: FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead
+      if pd.api.types.is_categorical_dtype(vector):
 
 
 
@@ -934,9 +949,9 @@ Let's perform a cross-validation to see how well this model predicts:
 
  .. code-block:: none
 
-    scores=[0.92358591 0.89377457 0.92475585 0.93265591 0.93417216]
-    mean=0.9217888808398744
-    std=0.014616918980854272
+    scores=[0.9205234  0.89794896 0.92917836 0.93122637 0.94167259]
+    mean=0.9241099356081441
+    std=0.014710808188510938
 
 
 
@@ -1012,18 +1027,18 @@ The encoded data, X_train_enc and X_test_enc are numerical arrays:
 
 
     array([[2.00700000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-            1.04021041e-01, 8.85102839e-02, 2.46097429e+01],
+            7.63869544e-02, 2.46631408e-01, 1.09143696e-01],
            [2.00500000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-            5.11701023e-02, 5.29149425e-02, 5.23014012e-02],
+            5.21855743e-02, 5.28769154e-02, 5.41137780e-02],
            [2.00900000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-            9.51375385e-02, 7.85784089e-02, 3.28364338e-01],
+            1.19205694e-01, 1.66445307e+01, 7.87429987e-02],
            ...,
            [1.99000000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-            7.61260208e-02, 6.42149096e-02, 7.03262887e-02],
+            6.43799193e-02, 5.26213923e-01, 5.84094513e-02],
            [2.01200000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-            5.42130763e-02, 5.08673655e+01, 5.26494694e-02],
+            6.35239618e-02, 6.60446028e-02, 6.94921503e-02],
            [2.01400000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-            5.20039430e-02, 6.53578788e-02, 5.48378160e-02]])
+            5.34402020e-02, 6.10590242e-02, 5.32311196e-02]])
 
 
 
@@ -1283,7 +1298,7 @@ having a permanent, full-time job :)
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (3 minutes 39.167 seconds)
+   **Total running time of the script:** (2 minutes 11.797 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_dirty_categories.py:

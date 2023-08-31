@@ -491,16 +491,16 @@ In the example below we select 3 labels to summarize each topic.
 
  .. code-block:: none
 
-    Topic n°0: officer, office, police
+    Topic n°0: officer, police, office
     Topic n°1: firefighter, rescuer, rescue
-    Topic n°2: equipment, operator, bus
-    Topic n°3: manager, sheriff, deputy
-    Topic n°4: technician, technology, mechanic
-    Topic n°5: correctional, correction, recreation
-    Topic n°6: enforcement, permitting, engineer
-    Topic n°7: specialist, program, special
-    Topic n°8: administrative, legislative, administration
-    Topic n°9: assistant, crossing, therapist
+    Topic n°2: equipment, operator, development
+    Topic n°3: manager, worker, engineer
+    Topic n°4: technician, mechanic, community
+    Topic n°5: correctional, correction, corporal
+    Topic n°6: services, sergeant, service
+    Topic n°7: specialist, special, planning
+    Topic n°8: administrative, legislative, principal
+    Topic n°9: assistant, crossing, library
 
 
 
@@ -550,7 +550,7 @@ effect latent categories captured from the data.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 12.602 seconds)
+   **Total running time of the script:** (0 minutes 8.309 seconds)
 
 
 .. _sphx_glr_download_auto_examples_02_investigating_dirty_categories.py:
