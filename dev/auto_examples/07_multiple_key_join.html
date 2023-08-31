@@ -495,7 +495,7 @@ We have a pool of tables that we will use to improve our prediction.</p>
 <h3>The main table: flights dataset<a class="headerlink" href="#the-main-table-flights-dataset" title="Link to this heading">#</a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>The “flights” datasets. It contains all US flights date, origin
+<li><p>The <cite>flights</cite> datasets. It contains all US flights date, origin
 and destination airports and flight time.
 Here, we consider only flights from 2008.</p></li>
 </ul>
@@ -640,7 +640,7 @@ are some very long ones.</p>
 <h3>Airport data: an auxiliary table from the same database<a class="headerlink" href="#airport-data-an-auxiliary-table-from-the-same-database" title="Link to this heading">#</a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>The “airports” dataset, with information such as their name
+<li><p>The <code class="docutils literal notranslate"><span class="pre">airports</span></code> dataset, with information such as their name
 and location (longitude, latitude).</p></li>
 </ul>
 </div></blockquote>
@@ -737,7 +737,7 @@ and location (longitude, latitude).</p></li>
 <h3>Weather data: auxiliary tables from external sources<a class="headerlink" href="#weather-data-auxiliary-tables-from-external-sources" title="Link to this heading">#</a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>The “weather” table. Weather details by measurement station.
+<li><p>The <code class="docutils literal notranslate"><span class="pre">weather</span></code> table. Weather details by measurement station.
 Both tables are from the Global Historical Climatology Network.
 Here, we consider only weather measurements from 2008.</p></li>
 </ul>
@@ -821,7 +821,7 @@ Here, we consider only weather measurements from 2008.</p></li>
 </div>
 <br />
 <br /><ul class="simple">
-<li><p>The “stations” dataset. Provides location of all the weather
+<li><p>The <code class="docutils literal notranslate"><span class="pre">stations</span></code> dataset. Provides location of all the weather
 measurement stations in the US.</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">stations</span></a> <span class="o">=</span> <span class="n">fetch_figshare</span><span class="p">(</span><span class="s2">&quot;41710524&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
@@ -1438,8 +1438,8 @@ our main table.
 </div>
 <p>We want to frame this as a classification problem:
 suppose that your company is obliged to reimburse the ticket
-price if the flight is delayed.
-We have a binary classification problem:
+price if the flight is delayed.</p>
+<p>We have a binary classification problem:
 the flight was delayed (1) or not (0).</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">=</span> <span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html#pandas.Series.value_counts" title="pandas.Series.value_counts" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">y</span><span class="o">.</span><span class="n">value_counts</span></a><span class="p">()</span>
@@ -1468,7 +1468,7 @@ Name: count, dtype: int64
 on imprecise and multiple-key correspondences.
 This is made easy by skrub’s <a class="reference internal" href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> transformer.</p>
 <p>Our final cross-validated accuracy score is 0.6.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (27 minutes 48.854 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (27 minutes 0.662 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-07-multiple-key-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

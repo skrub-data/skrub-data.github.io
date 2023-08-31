@@ -847,7 +847,7 @@ minhash encoding
 r2 score:  mean: 0.923; std: 0.013
 
 gap encoding
-r2 score:  mean: 0.928; std: 0.016
+r2 score:  mean: 0.925; std: 0.015
 </pre></div>
 </div>
 <section id="plotting-the-results">
@@ -1078,9 +1078,9 @@ can be readily applied to the dataframe</strong>.</p>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;std=</span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>scores=[0.91839665 0.89580204 0.92889079 0.93165735 0.93245558]
-mean=0.9214404835614649
-std=0.013768211765833656
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>scores=[0.91248283 0.90757873 0.93339886 0.93061851 0.93043831]
+mean=0.922903448818302
+std=0.010676013733225274
 </pre></div>
 </div>
 <p>The prediction performed here is pretty much as good as above
@@ -1110,18 +1110,18 @@ analyze the TableVectorizer’s mechanisms along the way.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([[2.00700000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-        1.19787348e+01, 4.84210760e-01, 6.76567068e-02],
+        1.07493305e-01, 9.80379104e-02, 7.38474012e-02],
        [2.00500000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        5.50058655e-02, 5.20023163e-02, 5.00044449e-02],
+        5.32217481e-02, 5.70383642e-02, 5.44601848e-02],
        [2.00900000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        5.24473532e-02, 8.05199500e-01, 8.96600940e-02],
+        1.77010437e+00, 8.13690778e-02, 1.40357861e+00],
        ...,
        [1.99000000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        1.14571914e-01, 6.51245241e-02, 7.05503918e-02],
+        7.06651831e+00, 9.55071343e-02, 1.77732995e+01],
        [2.01200000e+03, 0.00000000e+00, 1.00000000e+00, ...,
-        6.47300647e-02, 6.20739996e-02, 6.42038287e-02],
+        6.84640460e-02, 5.44901008e-02, 5.10572249e-02],
        [2.01400000e+03, 1.00000000e+00, 0.00000000e+00, ...,
-        7.95409688e-02, 5.53933453e-02, 5.44086833e-02]])
+        5.64686523e-02, 6.05841762e-02, 5.94129691e-02]])
 </pre></div>
 </div>
 <p>They have more columns than the original dataframe, but not much more:</p>
@@ -1237,7 +1237,7 @@ having a permanent, full-time job :)</p>
 automated by the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, and the resulting pipeline can still be
 inspected, even with non-normalized entries.</p>
 </aside>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (2 minutes 8.493 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (2 minutes 14.202 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-01-dirty-categories-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/01_dirty_categories.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

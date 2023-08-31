@@ -59,7 +59,7 @@ The following tables are at our disposal:
 
 The main table: flights dataset
 ...............................
-    - The "flights" datasets. It contains all US flights date, origin
+    - The `flights` datasets. It contains all US flights date, origin
       and destination airports and flight time.
       Here, we consider only flights from 2008.
 
@@ -236,7 +236,7 @@ are some very long ones.
 
 Airport data: an auxiliary table from the same database
 .......................................................
-    - The "airports" dataset, with information such as their name
+    - The ``airports`` dataset, with information such as their name
       and location (longitude, latitude).
 
 .. GENERATED FROM PYTHON SOURCE LINES 73-77
@@ -344,7 +344,7 @@ Airport data: an auxiliary table from the same database
 
 Weather data: auxiliary tables from external sources
 ....................................................
-    - The "weather" table. Weather details by measurement station.
+    - The ``weather`` table. Weather details by measurement station.
       Both tables are from the Global Historical Climatology Network.
       Here, we consider only weather measurements from 2008.
 
@@ -441,7 +441,7 @@ Weather data: auxiliary tables from external sources
 
 .. GENERATED FROM PYTHON SOURCE LINES 90-92
 
-- The "stations" dataset. Provides location of all the weather
+- The ``stations`` dataset. Provides location of all the weather
   measurement stations in the US.
 
 .. GENERATED FROM PYTHON SOURCE LINES 92-96
@@ -1143,15 +1143,16 @@ We isolate our target variable and remove useless ID variables:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 149-154
+.. GENERATED FROM PYTHON SOURCE LINES 149-155
 
 We want to frame this as a classification problem:
 suppose that your company is obliged to reimburse the ticket
 price if the flight is delayed.
+
 We have a binary classification problem:
 the flight was delayed (1) or not (0).
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-158
+.. GENERATED FROM PYTHON SOURCE LINES 155-159
 
 .. code-block:: default
 
@@ -1175,11 +1176,11 @@ the flight was delayed (1) or not (0).
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 159-160
+.. GENERATED FROM PYTHON SOURCE LINES 160-161
 
 The results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 160-166
+.. GENERATED FROM PYTHON SOURCE LINES 161-167
 
 .. code-block:: default
 
@@ -1202,7 +1203,7 @@ The results:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 167-175
+.. GENERATED FROM PYTHON SOURCE LINES 168-176
 
 Conclusion
 ----------
@@ -1216,7 +1217,7 @@ Our final cross-validated accuracy score is 0.6.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (27 minutes 48.854 seconds)
+   **Total running time of the script:** (27 minutes 0.662 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:
