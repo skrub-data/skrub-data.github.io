@@ -73,7 +73,7 @@ The main table: flights dataset
 
     flights = fetch_figshare("41771418").X
     # Sampling for faster computation.
-    flights = flights.sample(50_000, random_state=1, ignore_index=True)
+    flights = flights.sample(20_000, random_state=1, ignore_index=True)
     flights.head()
 
 
@@ -394,9 +394,9 @@ Weather data: auxiliary tables from external sources
       <tbody>
         <tr>
           <th>0</th>
-          <td>GME00127822</td>
-          <td>2008-08-29</td>
-          <td>206.0</td>
+          <td>ASN00041037</td>
+          <td>2008-06-18</td>
+          <td>NaN</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
@@ -410,25 +410,25 @@ Weather data: auxiliary tables from external sources
         </tr>
         <tr>
           <th>2</th>
-          <td>MXN00015282</td>
-          <td>2008-10-30</td>
-          <td>211.0</td>
-          <td>0.0</td>
+          <td>US1ILSP0008</td>
+          <td>2008-08-19</td>
           <td>NaN</td>
+          <td>0.0</td>
+          <td>0.0</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>EN000026038</td>
-          <td>2008-12-17</td>
-          <td>-19.0</td>
-          <td>3.0</td>
+          <td>USC00164931</td>
+          <td>2008-10-05</td>
           <td>NaN</td>
+          <td>0.0</td>
+          <td>0.0</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>ASN00086351</td>
-          <td>2008-10-29</td>
-          <td>229.0</td>
+          <td>NOE00111309</td>
+          <td>2008-08-18</td>
+          <td>NaN</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
@@ -615,33 +615,33 @@ First we join the stations with weather on the ID (exact join):
       <tbody>
         <tr>
           <th>0</th>
-          <td>AEM00041194</td>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>10.4</td>
-          <td>DUBAI INTL</td>
+          <td>AE000041196</td>
+          <td>25.333</td>
+          <td>55.517</td>
+          <td>34.0</td>
+          <td>SHARJAH INTER. AIRP</td>
           <td>None</td>
-          <td>None</td>
-          <td>41194.0</td>
+          <td>GSN</td>
+          <td>41196.0</td>
           <td>NaN</td>
-          <td>2008-07-24</td>
-          <td>453.0</td>
+          <td>2008-08-15</td>
+          <td>422.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>AEM00041194</td>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>10.4</td>
-          <td>DUBAI INTL</td>
+          <td>AE000041196</td>
+          <td>25.333</td>
+          <td>55.517</td>
+          <td>34.0</td>
+          <td>SHARJAH INTER. AIRP</td>
           <td>None</td>
-          <td>None</td>
-          <td>41194.0</td>
+          <td>GSN</td>
+          <td>41196.0</td>
           <td>NaN</td>
-          <td>2008-01-21</td>
-          <td>221.0</td>
+          <td>2008-05-08</td>
+          <td>374.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
@@ -656,41 +656,41 @@ First we join the stations with weather on the ID (exact join):
           <td>None</td>
           <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-06-21</td>
-          <td>393.0</td>
+          <td>2008-04-04</td>
+          <td>288.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>AEM00041217</td>
-          <td>24.433</td>
-          <td>54.651</td>
-          <td>26.8</td>
-          <td>ABU DHABI INTL</td>
+          <td>AEM00041194</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>10.4</td>
+          <td>DUBAI INTL</td>
           <td>None</td>
           <td>None</td>
-          <td>41217.0</td>
+          <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-03-03</td>
-          <td>305.0</td>
-          <td>NaN</td>
+          <td>2008-05-21</td>
+          <td>365.0</td>
+          <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>AEM00041217</td>
-          <td>24.433</td>
-          <td>54.651</td>
-          <td>26.8</td>
-          <td>ABU DHABI INTL</td>
+          <td>AEM00041194</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>10.4</td>
+          <td>DUBAI INTL</td>
           <td>None</td>
           <td>None</td>
-          <td>41217.0</td>
+          <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-07-18</td>
-          <td>419.0</td>
-          <td>NaN</td>
+          <td>2008-01-21</td>
+          <td>221.0</td>
+          <td>0.0</td>
           <td>NaN</td>
         </tr>
       </tbody>
@@ -769,17 +769,17 @@ tables into one.
       <tbody>
         <tr>
           <th>0</th>
-          <td>AEM00041194</td>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>10.4</td>
-          <td>DUBAI INTL</td>
+          <td>AE000041196</td>
+          <td>25.333</td>
+          <td>55.517</td>
+          <td>34.0</td>
+          <td>SHARJAH INTER. AIRP</td>
           <td>None</td>
-          <td>None</td>
-          <td>41194.0</td>
+          <td>GSN</td>
+          <td>41196.0</td>
           <td>NaN</td>
-          <td>2008-07-24</td>
-          <td>453.0</td>
+          <td>2008-08-15</td>
+          <td>422.0</td>
           <td>0.0</td>
           <td>NaN</td>
           <td>ROP</td>
@@ -792,17 +792,17 @@ tables into one.
         </tr>
         <tr>
           <th>1</th>
-          <td>AEM00041194</td>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>10.4</td>
-          <td>DUBAI INTL</td>
+          <td>AE000041196</td>
+          <td>25.333</td>
+          <td>55.517</td>
+          <td>34.0</td>
+          <td>SHARJAH INTER. AIRP</td>
           <td>None</td>
-          <td>None</td>
-          <td>41194.0</td>
+          <td>GSN</td>
+          <td>41196.0</td>
           <td>NaN</td>
-          <td>2008-01-21</td>
-          <td>221.0</td>
+          <td>2008-05-08</td>
+          <td>374.0</td>
           <td>0.0</td>
           <td>NaN</td>
           <td>ROP</td>
@@ -824,8 +824,8 @@ tables into one.
           <td>None</td>
           <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-06-21</td>
-          <td>393.0</td>
+          <td>2008-04-04</td>
+          <td>288.0</td>
           <td>0.0</td>
           <td>NaN</td>
           <td>ROP</td>
@@ -838,18 +838,18 @@ tables into one.
         </tr>
         <tr>
           <th>3</th>
-          <td>AEM00041217</td>
-          <td>24.433</td>
-          <td>54.651</td>
-          <td>26.8</td>
-          <td>ABU DHABI INTL</td>
+          <td>AEM00041194</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>10.4</td>
+          <td>DUBAI INTL</td>
           <td>None</td>
           <td>None</td>
-          <td>41217.0</td>
+          <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-03-03</td>
-          <td>305.0</td>
-          <td>NaN</td>
+          <td>2008-05-21</td>
+          <td>365.0</td>
+          <td>0.0</td>
           <td>NaN</td>
           <td>ROP</td>
           <td>Prachinburi</td>
@@ -861,18 +861,18 @@ tables into one.
         </tr>
         <tr>
           <th>4</th>
-          <td>AEM00041217</td>
-          <td>24.433</td>
-          <td>54.651</td>
-          <td>26.8</td>
-          <td>ABU DHABI INTL</td>
+          <td>AEM00041194</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>10.4</td>
+          <td>DUBAI INTL</td>
           <td>None</td>
           <td>None</td>
-          <td>41217.0</td>
+          <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-07-18</td>
-          <td>419.0</td>
-          <td>NaN</td>
+          <td>2008-01-21</td>
+          <td>221.0</td>
+          <td>0.0</td>
           <td>NaN</td>
           <td>ROP</td>
           <td>Prachinburi</td>
@@ -1024,86 +1024,87 @@ Let's instanciate another multiple key joiner on the date and the airport:
           <td>...</td>
         </tr>
         <tr>
-          <th>49995</th>
-          <td>2008-04-01</td>
-          <td>2</td>
-          <td>1900-01-01 17:15:00</td>
-          <td>1900-01-01 18:59:00</td>
-          <td>MQ</td>
-          <td>104.0</td>
-          <td>16.0</td>
-          <td>BOS</td>
-          <td>DCA</td>
-          <td>399.0</td>
-        </tr>
-        <tr>
-          <th>49996</th>
-          <td>2008-03-18</td>
-          <td>2</td>
-          <td>1900-01-01 15:50:00</td>
-          <td>1900-01-01 17:55:00</td>
-          <td>MQ</td>
-          <td>125.0</td>
-          <td>NaN</td>
-          <td>CVG</td>
-          <td>LGA</td>
-          <td>585.0</td>
-        </tr>
-        <tr>
-          <th>49997</th>
-          <td>2008-01-05</td>
-          <td>6</td>
-          <td>1900-01-01 18:37:00</td>
-          <td>1900-01-01 20:43:00</td>
-          <td>AS</td>
-          <td>126.0</td>
-          <td>92.0</td>
-          <td>SFO</td>
+          <th>19995</th>
+          <td>2008-01-14</td>
+          <td>1</td>
+          <td>1900-01-01 09:50:00</td>
+          <td>1900-01-01 11:45:00</td>
+          <td>WN</td>
+          <td>115.0</td>
+          <td>-7.0</td>
+          <td>SMF</td>
           <td>SEA</td>
-          <td>679.0</td>
+          <td>605.0</td>
         </tr>
         <tr>
-          <th>49998</th>
-          <td>2008-01-20</td>
-          <td>7</td>
-          <td>1900-01-01 11:25:00</td>
-          <td>1900-01-01 14:30:00</td>
+          <th>19996</th>
+          <td>2008-03-19</td>
+          <td>3</td>
+          <td>1900-01-01 13:55:00</td>
+          <td>1900-01-01 18:40:00</td>
+          <td>AA</td>
+          <td>165.0</td>
+          <td>-27.0</td>
+          <td>LAS</td>
+          <td>DFW</td>
+          <td>1055.0</td>
+        </tr>
+        <tr>
+          <th>19997</th>
+          <td>2008-03-15</td>
+          <td>6</td>
+          <td>1900-01-01 12:00:00</td>
+          <td>1900-01-01 18:50:00</td>
+          <td>WN</td>
+          <td>230.0</td>
+          <td>-29.0</td>
+          <td>PHX</td>
+          <td>PIT</td>
+          <td>1813.0</td>
+        </tr>
+        <tr>
+          <th>19998</th>
+          <td>2008-02-27</td>
+          <td>3</td>
+          <td>1900-01-01 07:20:00</td>
+          <td>1900-01-01 09:00:00</td>
           <td>MQ</td>
-          <td>125.0</td>
-          <td>9.0</td>
+          <td>100.0</td>
+          <td>NaN</td>
+          <td>XNA</td>
           <td>ORD</td>
-          <td>HPN</td>
-          <td>738.0</td>
+          <td>522.0</td>
         </tr>
         <tr>
-          <th>49999</th>
-          <td>2008-04-01</td>
+          <th>19999</th>
+          <td>2008-03-04</td>
           <td>2</td>
-          <td>1900-01-01 13:15:00</td>
-          <td>1900-01-01 14:55:00</td>
-          <td>OO</td>
-          <td>100.0</td>
-          <td>45.0</td>
-          <td>BZN</td>
-          <td>DEN</td>
-          <td>525.0</td>
+          <td>1900-01-01 06:20:00</td>
+          <td>1900-01-01 08:01:00</td>
+          <td>9E</td>
+          <td>101.0</td>
+          <td>-8.0</td>
+          <td>IAH</td>
+          <td>MEM</td>
+          <td>469.0</td>
         </tr>
       </tbody>
     </table>
-    <p>50000 rows × 10 columns</p>
+    <p>20000 rows × 10 columns</p>
     </div>
     </div>
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 128-132
+.. GENERATED FROM PYTHON SOURCE LINES 128-133
 
 Training data is then passed through a |Pipeline|:
+
 - We will combine all the information from our pool of tables into "flights",
 our main table.
 - We will use this main table to model the prediction of flight delay.
 
-.. GENERATED FROM PYTHON SOURCE LINES 132-142
+.. GENERATED FROM PYTHON SOURCE LINES 133-143
 
 .. code-block:: default
 
@@ -1124,11 +1125,11 @@ our main table.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 143-144
+.. GENERATED FROM PYTHON SOURCE LINES 144-145
 
 We isolate our target variable and remove useless ID variables:
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-148
+.. GENERATED FROM PYTHON SOURCE LINES 145-149
 
 .. code-block:: default
 
@@ -1143,7 +1144,7 @@ We isolate our target variable and remove useless ID variables:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 149-155
+.. GENERATED FROM PYTHON SOURCE LINES 150-156
 
 We want to frame this as a classification problem:
 suppose that your company is obliged to reimburse the ticket
@@ -1152,7 +1153,7 @@ price if the flight is delayed.
 We have a binary classification problem:
 the flight was delayed (1) or not (0).
 
-.. GENERATED FROM PYTHON SOURCE LINES 155-159
+.. GENERATED FROM PYTHON SOURCE LINES 156-160
 
 .. code-block:: default
 
@@ -1170,17 +1171,17 @@ the flight was delayed (1) or not (0).
 
 
     ArrDelay
-    0    26739
-    1    23261
+    0    10686
+    1     9314
     Name: count, dtype: int64
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 160-161
+.. GENERATED FROM PYTHON SOURCE LINES 161-162
 
 The results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 161-167
+.. GENERATED FROM PYTHON SOURCE LINES 162-168
 
 .. code-block:: default
 
@@ -1199,11 +1200,11 @@ The results:
  .. code-block:: none
 
 
-    0.60454
+    0.58395
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 168-176
+.. GENERATED FROM PYTHON SOURCE LINES 169-177
 
 Conclusion
 ----------
@@ -1212,12 +1213,12 @@ In this example, we have combined multiple tables with complex joins
 on imprecise and multiple-key correspondences.
 This is made easy by skrub's |Joiner| transformer.
 
-Our final cross-validated accuracy score is 0.6.
+Our final cross-validated accuracy score is 0.58.
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (27 minutes 0.662 seconds)
+   **Total running time of the script:** (10 minutes 48.334 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:

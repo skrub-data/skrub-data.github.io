@@ -505,7 +505,7 @@ Here, we consider only flights from 2008.</p></li>
 
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">flights</span></a> <span class="o">=</span> <span class="n">fetch_figshare</span><span class="p">(</span><span class="s2">&quot;41771418&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
 <span class="c1"># Sampling for faster computation.</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">flights</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sample.html#pandas.DataFrame.sample" title="pandas.DataFrame.sample" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">flights</span><span class="o">.</span><span class="n">sample</span></a><span class="p">(</span><span class="mi">50_000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">flights</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sample.html#pandas.DataFrame.sample" title="pandas.DataFrame.sample" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">flights</span><span class="o">.</span><span class="n">sample</span></a><span class="p">(</span><span class="mi">20_000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">flights</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
 </pre></div>
 </div>
@@ -777,9 +777,9 @@ Here, we consider only weather measurements from 2008.</p></li>
   <tbody>
     <tr>
       <th>0</th>
-      <td>GME00127822</td>
-      <td>2008-08-29</td>
-      <td>206.0</td>
+      <td>ASN00041037</td>
+      <td>2008-06-18</td>
+      <td>NaN</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
@@ -793,25 +793,25 @@ Here, we consider only weather measurements from 2008.</p></li>
     </tr>
     <tr>
       <th>2</th>
-      <td>MXN00015282</td>
-      <td>2008-10-30</td>
-      <td>211.0</td>
-      <td>0.0</td>
+      <td>US1ILSP0008</td>
+      <td>2008-08-19</td>
       <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>EN000026038</td>
-      <td>2008-12-17</td>
-      <td>-19.0</td>
-      <td>3.0</td>
+      <td>USC00164931</td>
+      <td>2008-10-05</td>
       <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>ASN00086351</td>
-      <td>2008-10-29</td>
-      <td>229.0</td>
+      <td>NOE00111309</td>
+      <td>2008-08-18</td>
+      <td>NaN</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
@@ -970,33 +970,33 @@ measurement stations in the US.</p></li>
   <tbody>
     <tr>
       <th>0</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
+      <td>AE000041196</td>
+      <td>25.333</td>
+      <td>55.517</td>
+      <td>34.0</td>
+      <td>SHARJAH INTER. AIRP</td>
       <td>None</td>
-      <td>None</td>
-      <td>41194.0</td>
+      <td>GSN</td>
+      <td>41196.0</td>
       <td>NaN</td>
-      <td>2008-07-24</td>
-      <td>453.0</td>
+      <td>2008-08-15</td>
+      <td>422.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
+      <td>AE000041196</td>
+      <td>25.333</td>
+      <td>55.517</td>
+      <td>34.0</td>
+      <td>SHARJAH INTER. AIRP</td>
       <td>None</td>
-      <td>None</td>
-      <td>41194.0</td>
+      <td>GSN</td>
+      <td>41196.0</td>
       <td>NaN</td>
-      <td>2008-01-21</td>
-      <td>221.0</td>
+      <td>2008-05-08</td>
+      <td>374.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
@@ -1011,41 +1011,41 @@ measurement stations in the US.</p></li>
       <td>None</td>
       <td>41194.0</td>
       <td>NaN</td>
-      <td>2008-06-21</td>
-      <td>393.0</td>
+      <td>2008-04-04</td>
+      <td>288.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>AEM00041217</td>
-      <td>24.433</td>
-      <td>54.651</td>
-      <td>26.8</td>
-      <td>ABU DHABI INTL</td>
+      <td>AEM00041194</td>
+      <td>25.255</td>
+      <td>55.364</td>
+      <td>10.4</td>
+      <td>DUBAI INTL</td>
       <td>None</td>
       <td>None</td>
-      <td>41217.0</td>
+      <td>41194.0</td>
       <td>NaN</td>
-      <td>2008-03-03</td>
-      <td>305.0</td>
-      <td>NaN</td>
+      <td>2008-05-21</td>
+      <td>365.0</td>
+      <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>AEM00041217</td>
-      <td>24.433</td>
-      <td>54.651</td>
-      <td>26.8</td>
-      <td>ABU DHABI INTL</td>
+      <td>AEM00041194</td>
+      <td>25.255</td>
+      <td>55.364</td>
+      <td>10.4</td>
+      <td>DUBAI INTL</td>
       <td>None</td>
       <td>None</td>
-      <td>41217.0</td>
+      <td>41194.0</td>
       <td>NaN</td>
-      <td>2008-07-18</td>
-      <td>419.0</td>
-      <td>NaN</td>
+      <td>2008-01-21</td>
+      <td>221.0</td>
+      <td>0.0</td>
       <td>NaN</td>
     </tr>
   </tbody>
@@ -1108,17 +1108,17 @@ tables into one.</p>
   <tbody>
     <tr>
       <th>0</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
+      <td>AE000041196</td>
+      <td>25.333</td>
+      <td>55.517</td>
+      <td>34.0</td>
+      <td>SHARJAH INTER. AIRP</td>
       <td>None</td>
-      <td>None</td>
-      <td>41194.0</td>
+      <td>GSN</td>
+      <td>41196.0</td>
       <td>NaN</td>
-      <td>2008-07-24</td>
-      <td>453.0</td>
+      <td>2008-08-15</td>
+      <td>422.0</td>
       <td>0.0</td>
       <td>NaN</td>
       <td>ROP</td>
@@ -1131,17 +1131,17 @@ tables into one.</p>
     </tr>
     <tr>
       <th>1</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
+      <td>AE000041196</td>
+      <td>25.333</td>
+      <td>55.517</td>
+      <td>34.0</td>
+      <td>SHARJAH INTER. AIRP</td>
       <td>None</td>
-      <td>None</td>
-      <td>41194.0</td>
+      <td>GSN</td>
+      <td>41196.0</td>
       <td>NaN</td>
-      <td>2008-01-21</td>
-      <td>221.0</td>
+      <td>2008-05-08</td>
+      <td>374.0</td>
       <td>0.0</td>
       <td>NaN</td>
       <td>ROP</td>
@@ -1163,8 +1163,8 @@ tables into one.</p>
       <td>None</td>
       <td>41194.0</td>
       <td>NaN</td>
-      <td>2008-06-21</td>
-      <td>393.0</td>
+      <td>2008-04-04</td>
+      <td>288.0</td>
       <td>0.0</td>
       <td>NaN</td>
       <td>ROP</td>
@@ -1177,18 +1177,18 @@ tables into one.</p>
     </tr>
     <tr>
       <th>3</th>
-      <td>AEM00041217</td>
-      <td>24.433</td>
-      <td>54.651</td>
-      <td>26.8</td>
-      <td>ABU DHABI INTL</td>
+      <td>AEM00041194</td>
+      <td>25.255</td>
+      <td>55.364</td>
+      <td>10.4</td>
+      <td>DUBAI INTL</td>
       <td>None</td>
       <td>None</td>
-      <td>41217.0</td>
+      <td>41194.0</td>
       <td>NaN</td>
-      <td>2008-03-03</td>
-      <td>305.0</td>
-      <td>NaN</td>
+      <td>2008-05-21</td>
+      <td>365.0</td>
+      <td>0.0</td>
       <td>NaN</td>
       <td>ROP</td>
       <td>Prachinburi</td>
@@ -1200,18 +1200,18 @@ tables into one.</p>
     </tr>
     <tr>
       <th>4</th>
-      <td>AEM00041217</td>
-      <td>24.433</td>
-      <td>54.651</td>
-      <td>26.8</td>
-      <td>ABU DHABI INTL</td>
+      <td>AEM00041194</td>
+      <td>25.255</td>
+      <td>55.364</td>
+      <td>10.4</td>
+      <td>DUBAI INTL</td>
       <td>None</td>
       <td>None</td>
-      <td>41217.0</td>
+      <td>41194.0</td>
       <td>NaN</td>
-      <td>2008-07-18</td>
-      <td>419.0</td>
-      <td>NaN</td>
+      <td>2008-01-21</td>
+      <td>221.0</td>
+      <td>0.0</td>
       <td>NaN</td>
       <td>ROP</td>
       <td>Prachinburi</td>
@@ -1347,79 +1347,81 @@ Let’s instanciate another multiple key joiner on the date and the airport:</p>
       <td>...</td>
     </tr>
     <tr>
-      <th>49995</th>
-      <td>2008-04-01</td>
-      <td>2</td>
-      <td>1900-01-01 17:15:00</td>
-      <td>1900-01-01 18:59:00</td>
-      <td>MQ</td>
-      <td>104.0</td>
-      <td>16.0</td>
-      <td>BOS</td>
-      <td>DCA</td>
-      <td>399.0</td>
-    </tr>
-    <tr>
-      <th>49996</th>
-      <td>2008-03-18</td>
-      <td>2</td>
-      <td>1900-01-01 15:50:00</td>
-      <td>1900-01-01 17:55:00</td>
-      <td>MQ</td>
-      <td>125.0</td>
-      <td>NaN</td>
-      <td>CVG</td>
-      <td>LGA</td>
-      <td>585.0</td>
-    </tr>
-    <tr>
-      <th>49997</th>
-      <td>2008-01-05</td>
-      <td>6</td>
-      <td>1900-01-01 18:37:00</td>
-      <td>1900-01-01 20:43:00</td>
-      <td>AS</td>
-      <td>126.0</td>
-      <td>92.0</td>
-      <td>SFO</td>
+      <th>19995</th>
+      <td>2008-01-14</td>
+      <td>1</td>
+      <td>1900-01-01 09:50:00</td>
+      <td>1900-01-01 11:45:00</td>
+      <td>WN</td>
+      <td>115.0</td>
+      <td>-7.0</td>
+      <td>SMF</td>
       <td>SEA</td>
-      <td>679.0</td>
+      <td>605.0</td>
     </tr>
     <tr>
-      <th>49998</th>
-      <td>2008-01-20</td>
-      <td>7</td>
-      <td>1900-01-01 11:25:00</td>
-      <td>1900-01-01 14:30:00</td>
+      <th>19996</th>
+      <td>2008-03-19</td>
+      <td>3</td>
+      <td>1900-01-01 13:55:00</td>
+      <td>1900-01-01 18:40:00</td>
+      <td>AA</td>
+      <td>165.0</td>
+      <td>-27.0</td>
+      <td>LAS</td>
+      <td>DFW</td>
+      <td>1055.0</td>
+    </tr>
+    <tr>
+      <th>19997</th>
+      <td>2008-03-15</td>
+      <td>6</td>
+      <td>1900-01-01 12:00:00</td>
+      <td>1900-01-01 18:50:00</td>
+      <td>WN</td>
+      <td>230.0</td>
+      <td>-29.0</td>
+      <td>PHX</td>
+      <td>PIT</td>
+      <td>1813.0</td>
+    </tr>
+    <tr>
+      <th>19998</th>
+      <td>2008-02-27</td>
+      <td>3</td>
+      <td>1900-01-01 07:20:00</td>
+      <td>1900-01-01 09:00:00</td>
       <td>MQ</td>
-      <td>125.0</td>
-      <td>9.0</td>
+      <td>100.0</td>
+      <td>NaN</td>
+      <td>XNA</td>
       <td>ORD</td>
-      <td>HPN</td>
-      <td>738.0</td>
+      <td>522.0</td>
     </tr>
     <tr>
-      <th>49999</th>
-      <td>2008-04-01</td>
+      <th>19999</th>
+      <td>2008-03-04</td>
       <td>2</td>
-      <td>1900-01-01 13:15:00</td>
-      <td>1900-01-01 14:55:00</td>
-      <td>OO</td>
-      <td>100.0</td>
-      <td>45.0</td>
-      <td>BZN</td>
-      <td>DEN</td>
-      <td>525.0</td>
+      <td>1900-01-01 06:20:00</td>
+      <td>1900-01-01 08:01:00</td>
+      <td>9E</td>
+      <td>101.0</td>
+      <td>-8.0</td>
+      <td>IAH</td>
+      <td>MEM</td>
+      <td>469.0</td>
     </tr>
   </tbody>
 </table>
-<p>50000 rows × 10 columns</p>
+<p>20000 rows × 10 columns</p>
 </div>
 </div>
 <br />
-<br /><p>Training data is then passed through a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>:
-- We will combine all the information from our pool of tables into “flights”,
-our main table.
+<br /><p>Training data is then passed through a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>:</p>
+<ul class="simple">
+<li><p>We will combine all the information from our pool of tables into “flights”,</p></li>
+</ul>
+<p>our main table.
 - We will use this main table to model the prediction of flight delay.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingClassifier</span></a>
@@ -1446,8 +1448,8 @@ the flight was delayed (1) or not (0).</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>ArrDelay
-0    26739
-1    23261
+0    10686
+1     9314
 Name: count, dtype: int64
 </pre></div>
 </div>
@@ -1458,7 +1460,7 @@ Name: count, dtype: int64
 <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>0.60454
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>0.58395
 </pre></div>
 </div>
 </section>
@@ -1467,8 +1469,8 @@ Name: count, dtype: int64
 <p>In this example, we have combined multiple tables with complex joins
 on imprecise and multiple-key correspondences.
 This is made easy by skrub’s <a class="reference internal" href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> transformer.</p>
-<p>Our final cross-validated accuracy score is 0.6.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (27 minutes 0.662 seconds)</p>
+<p>Our final cross-validated accuracy score is 0.58.</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (10 minutes 48.334 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-07-multiple-key-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
