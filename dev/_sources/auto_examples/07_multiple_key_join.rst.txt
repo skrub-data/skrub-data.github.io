@@ -394,9 +394,9 @@ Weather data: auxiliary tables from external sources
       <tbody>
         <tr>
           <th>0</th>
-          <td>GME00127822</td>
-          <td>2008-08-29</td>
-          <td>206.0</td>
+          <td>ASN00041037</td>
+          <td>2008-06-18</td>
+          <td>NaN</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
@@ -410,25 +410,25 @@ Weather data: auxiliary tables from external sources
         </tr>
         <tr>
           <th>2</th>
-          <td>MXN00015282</td>
-          <td>2008-10-30</td>
-          <td>211.0</td>
-          <td>0.0</td>
+          <td>US1ILSP0008</td>
+          <td>2008-08-19</td>
           <td>NaN</td>
+          <td>0.0</td>
+          <td>0.0</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>EN000026038</td>
-          <td>2008-12-17</td>
-          <td>-19.0</td>
-          <td>3.0</td>
+          <td>USC00164931</td>
+          <td>2008-10-05</td>
           <td>NaN</td>
+          <td>0.0</td>
+          <td>0.0</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>ASN00086351</td>
-          <td>2008-10-29</td>
-          <td>229.0</td>
+          <td>NOE00111309</td>
+          <td>2008-08-18</td>
+          <td>NaN</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
@@ -615,33 +615,33 @@ First we join the stations with weather on the ID (exact join):
       <tbody>
         <tr>
           <th>0</th>
-          <td>AEM00041194</td>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>10.4</td>
-          <td>DUBAI INTL</td>
+          <td>AE000041196</td>
+          <td>25.333</td>
+          <td>55.517</td>
+          <td>34.0</td>
+          <td>SHARJAH INTER. AIRP</td>
           <td>None</td>
-          <td>None</td>
-          <td>41194.0</td>
+          <td>GSN</td>
+          <td>41196.0</td>
           <td>NaN</td>
-          <td>2008-07-24</td>
-          <td>453.0</td>
+          <td>2008-08-15</td>
+          <td>422.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>AEM00041194</td>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>10.4</td>
-          <td>DUBAI INTL</td>
+          <td>AE000041196</td>
+          <td>25.333</td>
+          <td>55.517</td>
+          <td>34.0</td>
+          <td>SHARJAH INTER. AIRP</td>
           <td>None</td>
-          <td>None</td>
-          <td>41194.0</td>
+          <td>GSN</td>
+          <td>41196.0</td>
           <td>NaN</td>
-          <td>2008-01-21</td>
-          <td>221.0</td>
+          <td>2008-05-08</td>
+          <td>374.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
@@ -656,41 +656,41 @@ First we join the stations with weather on the ID (exact join):
           <td>None</td>
           <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-06-21</td>
-          <td>393.0</td>
+          <td>2008-04-04</td>
+          <td>288.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>AEM00041217</td>
-          <td>24.433</td>
-          <td>54.651</td>
-          <td>26.8</td>
-          <td>ABU DHABI INTL</td>
+          <td>AEM00041194</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>10.4</td>
+          <td>DUBAI INTL</td>
           <td>None</td>
           <td>None</td>
-          <td>41217.0</td>
+          <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-03-03</td>
-          <td>305.0</td>
-          <td>NaN</td>
+          <td>2008-05-21</td>
+          <td>365.0</td>
+          <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>AEM00041217</td>
-          <td>24.433</td>
-          <td>54.651</td>
-          <td>26.8</td>
-          <td>ABU DHABI INTL</td>
+          <td>AEM00041194</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>10.4</td>
+          <td>DUBAI INTL</td>
           <td>None</td>
           <td>None</td>
-          <td>41217.0</td>
+          <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-07-18</td>
-          <td>419.0</td>
-          <td>NaN</td>
+          <td>2008-01-21</td>
+          <td>221.0</td>
+          <td>0.0</td>
           <td>NaN</td>
         </tr>
       </tbody>
@@ -769,17 +769,17 @@ tables into one.
       <tbody>
         <tr>
           <th>0</th>
-          <td>AEM00041194</td>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>10.4</td>
-          <td>DUBAI INTL</td>
+          <td>AE000041196</td>
+          <td>25.333</td>
+          <td>55.517</td>
+          <td>34.0</td>
+          <td>SHARJAH INTER. AIRP</td>
           <td>None</td>
-          <td>None</td>
-          <td>41194.0</td>
+          <td>GSN</td>
+          <td>41196.0</td>
           <td>NaN</td>
-          <td>2008-07-24</td>
-          <td>453.0</td>
+          <td>2008-08-15</td>
+          <td>422.0</td>
           <td>0.0</td>
           <td>NaN</td>
           <td>ROP</td>
@@ -792,17 +792,17 @@ tables into one.
         </tr>
         <tr>
           <th>1</th>
-          <td>AEM00041194</td>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>10.4</td>
-          <td>DUBAI INTL</td>
+          <td>AE000041196</td>
+          <td>25.333</td>
+          <td>55.517</td>
+          <td>34.0</td>
+          <td>SHARJAH INTER. AIRP</td>
           <td>None</td>
-          <td>None</td>
-          <td>41194.0</td>
+          <td>GSN</td>
+          <td>41196.0</td>
           <td>NaN</td>
-          <td>2008-01-21</td>
-          <td>221.0</td>
+          <td>2008-05-08</td>
+          <td>374.0</td>
           <td>0.0</td>
           <td>NaN</td>
           <td>ROP</td>
@@ -824,8 +824,8 @@ tables into one.
           <td>None</td>
           <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-06-21</td>
-          <td>393.0</td>
+          <td>2008-04-04</td>
+          <td>288.0</td>
           <td>0.0</td>
           <td>NaN</td>
           <td>ROP</td>
@@ -838,18 +838,18 @@ tables into one.
         </tr>
         <tr>
           <th>3</th>
-          <td>AEM00041217</td>
-          <td>24.433</td>
-          <td>54.651</td>
-          <td>26.8</td>
-          <td>ABU DHABI INTL</td>
+          <td>AEM00041194</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>10.4</td>
+          <td>DUBAI INTL</td>
           <td>None</td>
           <td>None</td>
-          <td>41217.0</td>
+          <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-03-03</td>
-          <td>305.0</td>
-          <td>NaN</td>
+          <td>2008-05-21</td>
+          <td>365.0</td>
+          <td>0.0</td>
           <td>NaN</td>
           <td>ROP</td>
           <td>Prachinburi</td>
@@ -861,18 +861,18 @@ tables into one.
         </tr>
         <tr>
           <th>4</th>
-          <td>AEM00041217</td>
-          <td>24.433</td>
-          <td>54.651</td>
-          <td>26.8</td>
-          <td>ABU DHABI INTL</td>
+          <td>AEM00041194</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>10.4</td>
+          <td>DUBAI INTL</td>
           <td>None</td>
           <td>None</td>
-          <td>41217.0</td>
+          <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-07-18</td>
-          <td>419.0</td>
-          <td>NaN</td>
+          <td>2008-01-21</td>
+          <td>221.0</td>
+          <td>0.0</td>
           <td>NaN</td>
           <td>ROP</td>
           <td>Prachinburi</td>
@@ -1200,7 +1200,7 @@ The results:
  .. code-block:: none
 
 
-    0.5823
+    0.58395
 
 
 
@@ -1218,7 +1218,7 @@ Our final cross-validated accuracy score is 0.58.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (11 minutes 42.941 seconds)
+   **Total running time of the script:** (11 minutes 9.592 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:

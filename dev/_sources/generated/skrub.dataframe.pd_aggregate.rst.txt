@@ -1,0 +1,12 @@
+﻿:mod:`skrub.dataframe`.pd_aggregate
+================================================
+
+.. currentmodule:: skrub.dataframe
+
+.. autofunction:: pd_aggregate
+
+.. include:: skrub.dataframe.pd_aggregate.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

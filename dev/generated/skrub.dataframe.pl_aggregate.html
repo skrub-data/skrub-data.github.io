@@ -7,14 +7,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="skrub.datasets.fetch_road_safety" />
+<meta property="og:title" content="skrub.dataframe.pl_aggregate" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/generated/skrub.datasets.fetch_road_safety.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/generated/skrub.dataframe.pl_aggregate.html" />
 <meta property="og:site_name" content="skrub" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
 
-    <title>skrub.datasets.fetch_road_safety &#8212; skrub</title>
+    <title>skrub.dataframe.pl_aggregate &#8212; skrub</title>
   
   
   
@@ -55,12 +55,12 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=fd10adb8"></script>
     <script src="../_static/jupyterlite_sphinx.js?v=1cca63f7"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.datasets.fetch_road_safety';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.dataframe.pl_aggregate';</script>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="skrub.datasets.fetch_traffic_violations" href="skrub.datasets.fetch_traffic_violations.html" />
-    <link rel="prev" title="skrub.datasets.fetch_open_payments" href="skrub.datasets.fetch_open_payments.html" />
+    <link rel="next" title="skrub.dataframe.pl_join" href="skrub.dataframe.pl_join.html" />
+    <link rel="prev" title="skrub.dataframe.is_polars" href="skrub.dataframe.is_polars.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -452,18 +452,18 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.pd_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pd_join</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Polars operations</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.is_polars.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.is_polars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.pl_aggregate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pl_aggregate</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pl_aggregate</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.pl_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pl_join</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data download and generation</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_employee_salaries.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_employee_salaries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_medical_charge.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_medical_charge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_midwest_survey.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_midwest_survey</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_open_payments.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_open_payments</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_road_safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_road_safety.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_road_safety</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_traffic_violations.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_traffic_violations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_drug_directory.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_drug_directory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_world_bank_indicator.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_world_bank_indicator</a></li>
@@ -528,25 +528,35 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="skrub-datasets-fetch-road-safety">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_road_safety<a class="headerlink" href="#skrub-datasets-fetch-road-safety" title="Link to this heading">#</a></h1>
+  <section id="skrub-dataframe-pl-aggregate">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pl_aggregate<a class="headerlink" href="#skrub-dataframe-pl-aggregate" title="Link to this heading">#</a></h1>
 <dl class="py function">
-<dt class="sig sig-object py" id="skrub.datasets.fetch_road_safety">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_road_safety</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_dataframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e595ec0/skrub/datasets/_fetching.py#L738"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_road_safety" title="Link to this definition">#</a></dt>
-<dd><p>Fetches the road safety dataset (classification), available at <a class="reference external" href="https://openml.org/d/42803">https://openml.org/d/42803</a></p>
-<dl class="simple">
-<dt>Description of the dataset:</dt><dd><p>Data reported to the police about the circumstances of personal injury
-road accidents in Great Britain from 1979, and the maker and model
-information of vehicles involved in the respective accident.
-This version includes data up to 2015.</p>
+<dt class="sig sig-object py" id="skrub.dataframe.pl_aggregate">
+<span class="sig-prename descclassname"><span class="pre">skrub.dataframe.</span></span><span class="sig-name descname"><span class="pre">pl_aggregate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols_to_agg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_operations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('mean',)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">categ_operations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('mode',)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e595ec0/skrub/dataframe/_polars.py#L17"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.dataframe.pl_aggregate" title="Link to this definition">#</a></dt>
+<dd><p>Aggregate a <code class="xref py py-obj docutils literal notranslate"><span class="pre">polars.DataFrame</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">polars.LazyFrame</span></code>.</p>
+<p>This function uses the <code class="docutils literal notranslate"><span class="pre">dataframe.group_by(key).agg</span></code> method from Polars.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>table</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.DataFrame</span></code> or pl.LazyFrame,</span></dt><dd><p>The input dataframe to aggregate.</p>
+</dd>
+<dt><strong>key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">Iterable</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>],</span></dt><dd><p>The columns used as keys to aggregate on.</p>
+</dd>
+<dt><strong>cols_to_agg</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">Iterable</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>],</span></dt><dd><p>The columns to aggregate.</p>
+</dd>
+<dt><strong>num_operations</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">Iterable</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>],</span></dt><dd><p>The reduction functions to apply on numerical columns
+in <code class="docutils literal notranslate"><span class="pre">cols_to_agg</span></code> during the aggregation.</p>
+</dd>
+<dt><strong>categ_operations</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">Iterable</span></code>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>],</span></dt><dd><p>The reduction functions to apply on categorical columns
+in <code class="docutils literal notranslate"><span class="pre">cols_to_agg</span></code> during the aggregation.</p>
+</dd>
+<dt><strong>suffix</strong><span class="classifier">str,</span></dt><dd><p>The suffix appended to output columns.</p>
 </dd>
 </dl>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><a class="reference internal" href="skrub.datasets.DatasetAll.html#skrub.datasets.DatasetAll" title="skrub.datasets._fetching.DatasetAll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatasetAll</span></code></a></dt><dd><p>If <cite>load_dataframe=True</cite></p>
 </dd>
-<dt><a class="reference internal" href="skrub.datasets.DatasetInfoOnly.html#skrub.datasets.DatasetInfoOnly" title="skrub.datasets._fetching.DatasetInfoOnly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatasetInfoOnly</span></code></a></dt><dd><p>If <cite>load_dataframe=False</cite></p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl>
+<dt><strong>group</strong><span class="classifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pl.DataFrame</span></code> or pl.LazyFrame,</span></dt><dd><p>The aggregated output.</p>
 </dd>
 </dl>
 </dd>
@@ -566,20 +576,20 @@ This version includes data up to 2015.</p>
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.datasets.fetch_open_payments.html"
+       href="skrub.dataframe.is_polars.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_open_payments</p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.is_polars</p>
       </div>
     </a>
     <a class="right-next"
-       href="skrub.datasets.fetch_traffic_violations.html"
+       href="skrub.dataframe.pl_join.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_traffic_violations</p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pl_join</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -598,14 +608,14 @@ This version includes data up to 2015.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.datasets.fetch_road_safety"><code class="docutils literal notranslate"><span class="pre">fetch_road_safety()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.dataframe.pl_aggregate"><code class="docutils literal notranslate"><span class="pre">pl_aggregate()</span></code></a></li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/skrub-data/skrub/edit/main/doc/generated/skrub.datasets.fetch_road_safety.rst">
+    <a href="https://github.com/skrub-data/skrub/edit/main/doc/generated/skrub.dataframe.pl_aggregate.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -619,7 +629,7 @@ This version includes data up to 2015.</p>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="../_sources/generated/skrub.datasets.fetch_road_safety.rst.txt">
+    <a href="../_sources/generated/skrub.dataframe.pl_aggregate.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>

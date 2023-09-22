@@ -62,7 +62,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="skrub.datasets.fetch_medical_charge" href="skrub.datasets.fetch_medical_charge.html" />
-    <link rel="prev" title="skrub.deduplicate" href="skrub.deduplicate.html" />
+    <link rel="prev" title="skrub.dataframe.pl_join" href="skrub.dataframe.pl_join.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -443,6 +443,22 @@ document.write(`
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.deduplicate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.deduplicate</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">DataFrames operations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.get_df_namespace.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.get_df_namespace</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pandas operations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.is_pandas.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.is_pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.pd_aggregate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pd_aggregate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.pd_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pd_join</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Polars operations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.is_polars.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.is_polars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.pl_aggregate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pl_aggregate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.pl_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pl_join</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data download and generation</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_employee_salaries</a></li>
@@ -518,7 +534,7 @@ document.write(`
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_employee_salaries<a class="headerlink" href="#skrub-datasets-fetch-employee-salaries" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_employee_salaries">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_employee_salaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_dataframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_linked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_irrelevant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overload_job_titles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f981247/skrub/datasets/_fetching.py#L666"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_employee_salaries" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_employee_salaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_dataframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_linked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_irrelevant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overload_job_titles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e595ec0/skrub/datasets/_fetching.py#L666"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_employee_salaries" title="Link to this definition">#</a></dt>
 <dd><p>Fetches the employee salaries dataset (regression), available at <a class="reference external" href="https://openml.org/d/42125">https://openml.org/d/42125</a></p>
 <dl class="simple">
 <dt>Description of the dataset:</dt><dd><p>Annual salary information including gross pay and overtime pay for all
@@ -576,12 +592,12 @@ information about the job title.</p>
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.deduplicate.html"
+       href="skrub.dataframe.pl_join.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.deduplicate</p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pl_join</p>
       </div>
     </a>
     <a class="right-next"

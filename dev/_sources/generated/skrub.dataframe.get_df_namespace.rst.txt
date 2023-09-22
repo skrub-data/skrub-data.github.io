@@ -1,0 +1,12 @@
+﻿:mod:`skrub.dataframe`.get_df_namespace
+====================================================
+
+.. currentmodule:: skrub.dataframe
+
+.. autofunction:: get_df_namespace
+
+.. include:: skrub.dataframe.get_df_namespace.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

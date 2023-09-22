@@ -1,0 +1,12 @@
+﻿:mod:`skrub.dataframe`.is_polars
+=============================================
+
+.. currentmodule:: skrub.dataframe
+
+.. autofunction:: is_polars
+
+.. include:: skrub.dataframe.is_polars.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

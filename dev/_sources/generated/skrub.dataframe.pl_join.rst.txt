@@ -1,0 +1,12 @@
+﻿:mod:`skrub.dataframe`.pl_join
+===========================================
+
+.. currentmodule:: skrub.dataframe
+
+.. autofunction:: pl_join
+
+.. include:: skrub.dataframe.pl_join.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

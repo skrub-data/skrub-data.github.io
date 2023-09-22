@@ -443,6 +443,22 @@ document.write(`
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.deduplicate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.deduplicate</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">DataFrames operations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.dataframe.get_df_namespace.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.get_df_namespace</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pandas operations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.dataframe.is_pandas.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.is_pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.dataframe.pd_aggregate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pd_aggregate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.dataframe.pd_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pd_join</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Polars operations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.dataframe.is_polars.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.is_polars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.dataframe.pl_aggregate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pl_aggregate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.dataframe.pl_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pl_join</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data download and generation</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_employee_salaries.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_employee_salaries</a></li>
@@ -566,6 +582,39 @@ article section h2 {
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deduplicate</span></code></a></p></td>
 <td><p>Deduplicate categorical data by hierarchically clustering similar strings.</p></td>
+</tr>
+</tbody>
+</table>
+<h2>Dataframes operations</h2><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.dataframe.get_df_namespace.html#skrub.dataframe.get_df_namespace" title="skrub.dataframe.get_df_namespace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataframe.get_df_namespace</span></code></a></p></td>
+<td><p>Get the namespaces of dataframes.</p></td>
+</tr>
+</tbody>
+</table>
+<h3>Pandas</h3><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.dataframe.is_pandas.html#skrub.dataframe.is_pandas" title="skrub.dataframe.is_pandas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataframe.is_pandas</span></code></a></p></td>
+<td><p>Check whether the input is a Pandas dataframe.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.dataframe.pd_aggregate.html#skrub.dataframe.pd_aggregate" title="skrub.dataframe.pd_aggregate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataframe.pd_aggregate</span></code></a></p></td>
+<td><p>Aggregates a <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.dataframe.pd_join.html#skrub.dataframe.pd_join" title="skrub.dataframe.pd_join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataframe.pd_join</span></code></a></p></td>
+<td><p>Left join two <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a>.</p></td>
+</tr>
+</tbody>
+</table>
+<h3>Polars</h3><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.dataframe.is_polars.html#skrub.dataframe.is_polars" title="skrub.dataframe.is_polars"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataframe.is_polars</span></code></a></p></td>
+<td><p>Check whether the input is a Polars dataframe or lazyframe.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.dataframe.pl_aggregate.html#skrub.dataframe.pl_aggregate" title="skrub.dataframe.pl_aggregate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataframe.pl_aggregate</span></code></a></p></td>
+<td><p>Aggregate a <code class="xref py py-obj docutils literal notranslate"><span class="pre">polars.DataFrame</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">polars.LazyFrame</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.dataframe.pl_join.html#skrub.dataframe.pl_join" title="skrub.dataframe.pl_join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataframe.pl_join</span></code></a></p></td>
+<td><p>Left join two <code class="xref py py-obj docutils literal notranslate"><span class="pre">polars.DataFrame</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">polars.LazyFrame</span></code>.</p></td>
 </tr>
 </tbody>
 </table>

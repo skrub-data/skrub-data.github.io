@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: Skrub has not been released yet. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: FeatureAugmenter is renamed to Joiner.#67..." />
+<meta property="og:description" content="Ongoing development: Skrub has not been released yet. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: dataframe.pd_join(), dataframe.pd_aggrega..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: Skrub has not been released yet. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: FeatureAugmenter is renamed to Joiner.#67..." />
+<meta name="description" content="Ongoing development: Skrub has not been released yet. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: dataframe.pd_join(), dataframe.pd_aggrega..." />
 
     <title>Changes &#8212; skrub</title>
   
@@ -497,6 +497,10 @@ development and backward compatibility is not ensured.</p>
 <section id="major-changes">
 <h3>Major changes<a class="headerlink" href="#major-changes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="generated/skrub.dataframe.pd_join.html#skrub.dataframe.pd_join" title="skrub.dataframe.pd_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">dataframe.pd_join()</span></code></a>, <a class="reference internal" href="generated/skrub.dataframe.pd_aggregate.html#skrub.dataframe.pd_aggregate" title="skrub.dataframe.pd_aggregate"><code class="xref py py-func docutils literal notranslate"><span class="pre">dataframe.pd_aggregate()</span></code></a>,
+<a class="reference internal" href="generated/skrub.dataframe.pl_join.html#skrub.dataframe.pl_join" title="skrub.dataframe.pl_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">dataframe.pl_join()</span></code></a> and <a class="reference internal" href="generated/skrub.dataframe.pl_aggregate.html#skrub.dataframe.pl_aggregate" title="skrub.dataframe.pl_aggregate"><code class="xref py py-func docutils literal notranslate"><span class="pre">dataframe.pl_aggregate()</span></code></a>
+are now available in the dataframe submodule.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/733">#733</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a></p></li>
 <li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code> is renamed to <a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a>.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/674">#674</a> by <a class="reference external" href="https://github.com/jovan-stojanovic">Jovan Stojanovic</a></p></li>
 <li><p><a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> and <code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code> can now join on datetime columns.
