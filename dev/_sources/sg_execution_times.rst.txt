@@ -6,20 +6,50 @@
 
 Computation times
 =================
-**24:48.912** total execution time for 7 files **from all galleries**:
+**24:33.116** total execution time for 7 files **from all galleries**:
 
-+---------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_07_multiple_key_join.py` (``../examples/07_multiple_key_join.py``)                           | 11:09.592 | 0.0 MB |
-+---------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_06_ken_embeddings.py` (``../examples/06_ken_embeddings.py``)                                 | 10:49.789 | 0.0 MB |
-+---------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_01_dirty_categories.py` (``../examples/01_dirty_categories.py``)                             | 02:17.730 | 0.0 MB |
-+---------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_04_fuzzy_joining.py` (``../examples/04_fuzzy_joining.py``)                                   | 00:14.159 | 0.0 MB |
-+---------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_02_investigating_dirty_categories.py` (``../examples/02_investigating_dirty_categories.py``) | 00:08.867 | 0.0 MB |
-+---------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_05_deduplication.py` (``../examples/05_deduplication.py``)                                   | 00:05.113 | 0.0 MB |
-+---------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_auto_examples_03_datetime_encoder.py` (``../examples/03_datetime_encoder.py``)                             | 00:03.663 | 0.0 MB |
-+---------------------------------------------------------------------------------------------------------------------------+-----------+--------+
+.. container::
+
+  .. raw:: html
+
+    <style scoped>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('table.sg-datatable').DataTable({order: [[1, 'desc']]});
+    } );
+    </script>
+
+  .. list-table::
+   :header-rows: 1
+   :class: table table-striped sg-datatable
+
+   * - Example
+     - Time
+     - Mem (MB)
+   * - :ref:`sphx_glr_auto_examples_06_ken_embeddings.py` (``../examples/06_ken_embeddings.py``)
+     - 11:02.609
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_07_multiple_key_join.py` (``../examples/07_multiple_key_join.py``)
+     - 10:44.353
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_01_dirty_categories.py` (``../examples/01_dirty_categories.py``)
+     - 02:13.690
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_04_fuzzy_joining.py` (``../examples/04_fuzzy_joining.py``)
+     - 00:13.901
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_02_investigating_dirty_categories.py` (``../examples/02_investigating_dirty_categories.py``)
+     - 00:09.532
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_05_deduplication.py` (``../examples/05_deduplication.py``)
+     - 00:05.103
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_03_datetime_encoder.py` (``../examples/03_datetime_encoder.py``)
+     - 00:03.928
+     - 0.0
