@@ -609,6 +609,11 @@ The new entries not matching the type are replaced by missing values. <a class="
 which provides some more information about the job title.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/581">#581</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
 </ul>
+<ul class="simple">
+<li><p>Fix bugs which was triggered when <cite>extract_until</cite> was “year”, “month”, “microseconds”
+or “nanoseconds”, and add the option to set it to <cite>None</cite> to only extract <cite>total_time</cite>,
+the time from epoch. <a class="reference internal" href="generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/743">#743</a> by <a class="reference external" href="https://github.com/LeoGrin">Leo Grinsztajn</a></p></li>
+</ul>
 </section>
 </section>
 <section id="before-skrub-dirty-cat">
