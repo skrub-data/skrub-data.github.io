@@ -65,7 +65,7 @@ The main table: flights dataset
 
 .. GENERATED FROM PYTHON SOURCE LINES 45-54
 
-.. code-block:: default
+.. code-block:: Python
 
 
     import pandas as pd
@@ -205,7 +205,7 @@ Let us see the arrival delay of the flights in the dataset:
 
 .. GENERATED FROM PYTHON SOURCE LINES 56-64
 
-.. code-block:: default
+.. code-block:: Python
 
     import matplotlib.pyplot as plt
     import seaborn as sns
@@ -241,7 +241,7 @@ Airport data: an auxiliary table from the same database
 
 .. GENERATED FROM PYTHON SOURCE LINES 73-77
 
-.. code-block:: default
+.. code-block:: Python
 
 
     airports = fetch_figshare("41710257").X
@@ -350,7 +350,7 @@ Weather data: auxiliary tables from external sources
 
 .. GENERATED FROM PYTHON SOURCE LINES 83-89
 
-.. code-block:: default
+.. code-block:: Python
 
 
     weather = fetch_figshare("41771457").X
@@ -446,7 +446,7 @@ Weather data: auxiliary tables from external sources
 
 .. GENERATED FROM PYTHON SOURCE LINES 92-96
 
-.. code-block:: default
+.. code-block:: Python
 
 
     stations = fetch_figshare("41710524").X
@@ -565,7 +565,7 @@ First we join the stations with weather on the ID (exact join):
 
 .. GENERATED FROM PYTHON SOURCE LINES 100-104
 
-.. code-block:: default
+.. code-block:: Python
 
 
     aux = pd.merge(stations, weather, on="ID")
@@ -707,7 +707,7 @@ tables into one.
 
 .. GENERATED FROM PYTHON SOURCE LINES 107-116
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from skrub import Joiner
@@ -896,7 +896,7 @@ Let's instanciate another multiple key joiner on the date and the airport:
 
 .. GENERATED FROM PYTHON SOURCE LINES 119-127
 
-.. code-block:: default
+.. code-block:: Python
 
 
     joiner = Joiner(
@@ -1106,7 +1106,7 @@ our main table.
 
 .. GENERATED FROM PYTHON SOURCE LINES 133-143
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from skrub import TableVectorizer
@@ -1131,7 +1131,7 @@ We isolate our target variable and remove useless ID variables:
 
 .. GENERATED FROM PYTHON SOURCE LINES 145-149
 
-.. code-block:: default
+.. code-block:: Python
 
 
     y = flights["ArrDelay"]
@@ -1155,7 +1155,7 @@ the flight was delayed (1) or not (0).
 
 .. GENERATED FROM PYTHON SOURCE LINES 156-160
 
-.. code-block:: default
+.. code-block:: Python
 
 
     y = (y > 0).astype(int)
@@ -1183,7 +1183,7 @@ The results:
 
 .. GENERATED FROM PYTHON SOURCE LINES 162-168
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from sklearn.model_selection import cross_val_score
@@ -1218,7 +1218,7 @@ Our final cross-validated accuracy score is 0.58.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (11 minutes 0.590 seconds)
+   **Total running time of the script:** (11 minutes 6.768 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:
@@ -1227,15 +1227,12 @@ Our final cross-validated accuracy score is 0.58.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
         :target: https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb
         :alt: Launch binder
         :width: 150 px
-
-
 
     .. container:: lite-badge
 
@@ -1244,13 +1241,13 @@ Our final cross-validated accuracy score is 0.58.
         :alt: Launch JupyterLite
         :width: 150 px
 
-    .. container:: sphx-glr-download sphx-glr-download-python
-
-      :download:`Download Python source code: 07_multiple_key_join.py <07_multiple_key_join.py>`
-
     .. container:: sphx-glr-download sphx-glr-download-jupyter
 
       :download:`Download Jupyter notebook: 07_multiple_key_join.ipynb <07_multiple_key_join.ipynb>`
+
+    .. container:: sphx-glr-download sphx-glr-download-python
+
+      :download:`Download Python source code: 07_multiple_key_join.py <07_multiple_key_join.py>`
 
 
 .. only:: html

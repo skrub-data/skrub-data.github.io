@@ -64,7 +64,7 @@ Let's retrieve the dataset:
 
 .. GENERATED FROM PYTHON SOURCE LINES 45-56
 
-.. code-block:: default
+.. code-block:: Python
 
     import pandas as pd
 
@@ -172,7 +172,7 @@ Our goal will be to predict the sales amount (y, our target column):
 
 .. GENERATED FROM PYTHON SOURCE LINES 58-62
 
-.. code-block:: default
+.. code-block:: Python
 
     y = X["Global_Sales"]
     y
@@ -208,7 +208,7 @@ Let's take a look at the distribution of our target variable:
 
 .. GENERATED FROM PYTHON SOURCE LINES 64-72
 
-.. code-block:: default
+.. code-block:: Python
 
     import matplotlib.pyplot as plt
     import seaborn as sns
@@ -236,7 +236,7 @@ It seems better to take the log of sales rather than the absolute values:
 
 .. GENERATED FROM PYTHON SOURCE LINES 74-80
 
-.. code-block:: default
+.. code-block:: Python
 
     import numpy as np
 
@@ -262,7 +262,7 @@ Before moving further, let's carry out some basic preprocessing:
 
 .. GENERATED FROM PYTHON SOURCE LINES 82-89
 
-.. code-block:: default
+.. code-block:: Python
 
 
     # Get a mask of the rows with missing values in "Publisher" and "Global_Sales"
@@ -290,7 +290,7 @@ We will start by checking out the available tables with
 
 .. GENERATED FROM PYTHON SOURCE LINES 97-101
 
-.. code-block:: default
+.. code-block:: Python
 
     from skrub.datasets import fetch_ken_table_aliases
 
@@ -305,7 +305,7 @@ We will start by checking out the available tables with
  .. code-block:: none
 
 
-    {'companies', 'albums', 'games', 'movies', 'all_entities', 'schools'}
+    {'schools', 'companies', 'games', 'all_entities', 'albums', 'movies'}
 
 
 
@@ -317,7 +317,7 @@ Let's see what kind of types we can find in it with the function
 
 .. GENERATED FROM PYTHON SOURCE LINES 105-109
 
-.. code-block:: default
+.. code-block:: Python
 
     from skrub.datasets import fetch_ken_types
 
@@ -414,7 +414,7 @@ to extract the embeddings of entities we need:
 
 .. GENERATED FROM PYTHON SOURCE LINES 114-116
 
-.. code-block:: default
+.. code-block:: Python
 
     from skrub.datasets import fetch_ken_embeddings
 
@@ -441,7 +441,7 @@ and exclude those with type name "companies" or "developer".
 
 .. GENERATED FROM PYTHON SOURCE LINES 128-134
 
-.. code-block:: default
+.. code-block:: Python
 
     embedding_games = fetch_ken_embeddings(
         search_types="game",
@@ -463,7 +463,7 @@ In a second table, we include all embeddings containing the type name
 
 .. GENERATED FROM PYTHON SOURCE LINES 137-150
 
-.. code-block:: default
+.. code-block:: Python
 
     embedding_publisher = fetch_ken_embeddings(
         search_types="game_development_companies|game_companies|game_publish",
@@ -499,7 +499,7 @@ column "Publisher"
 
 .. GENERATED FROM PYTHON SOURCE LINES 160-168
 
-.. code-block:: default
+.. code-block:: Python
 
     from skrub import Joiner
 
@@ -533,7 +533,7 @@ categorical variables using the |MinHash| and |OneHotEncoder|:
 
 .. GENERATED FROM PYTHON SOURCE LINES 180-195
 
-.. code-block:: default
+.. code-block:: Python
 
     from sklearn.compose import make_column_transformer
     from sklearn.preprocessing import OneHotEncoder
@@ -564,7 +564,7 @@ We define a predictor, |HGBR|, fast and reliable for big datasets.
 
 .. GENERATED FROM PYTHON SOURCE LINES 198-204
 
-.. code-block:: default
+.. code-block:: Python
 
     from sklearn.ensemble import HistGradientBoostingRegressor
     from sklearn.pipeline import make_pipeline
@@ -585,7 +585,7 @@ The |Pipeline| can now be readily applied to the dataframe for prediction:
 
 .. GENERATED FROM PYTHON SOURCE LINES 206-227
 
-.. code-block:: default
+.. code-block:: Python
 
     from sklearn.model_selection import cross_validate
 
@@ -636,7 +636,7 @@ We keep only the embeddings columns:
 
 .. GENERATED FROM PYTHON SOURCE LINES 236-240
 
-.. code-block:: default
+.. code-block:: Python
 
     encoder2 = make_column_transformer(
         ("passthrough", emb_columns), ("passthrough", emb_columns2), remainder="drop"
@@ -655,7 +655,7 @@ We redefine the |Pipeline|:
 
 .. GENERATED FROM PYTHON SOURCE LINES 242-244
 
-.. code-block:: default
+.. code-block:: Python
 
     pipeline2 = make_pipeline(encoder2, hgb)
 
@@ -672,7 +672,7 @@ Let's look at the results:
 
 .. GENERATED FROM PYTHON SOURCE LINES 246-261
 
-.. code-block:: default
+.. code-block:: Python
 
     cv_results = cross_validate(
         pipeline2, X_full, y, scoring=["r2", "neg_root_mean_squared_error"]
@@ -723,7 +723,7 @@ We include both the embeddings and the base features:
 
 .. GENERATED FROM PYTHON SOURCE LINES 275-284
 
-.. code-block:: default
+.. code-block:: Python
 
     encoder3 = make_column_transformer(
         ("passthrough", emb_columns),
@@ -747,7 +747,7 @@ We redefine the |Pipeline|:
 
 .. GENERATED FROM PYTHON SOURCE LINES 286-288
 
-.. code-block:: default
+.. code-block:: Python
 
     pipeline3 = make_pipeline(encoder3, hgb)
 
@@ -764,7 +764,7 @@ Let's look at the results:
 
 .. GENERATED FROM PYTHON SOURCE LINES 290-305
 
-.. code-block:: default
+.. code-block:: Python
 
     cv_results = cross_validate(
         pipeline3, X_full, y, scoring=["r2", "neg_root_mean_squared_error"]
@@ -804,7 +804,7 @@ Finally, we plot the scores on a boxplot:
 
 .. GENERATED FROM PYTHON SOURCE LINES 310-317
 
-.. code-block:: default
+.. code-block:: Python
 
     plt.figure(figsize=(5, 3))
     # sphinx_gallery_thumbnail_number = -1
@@ -840,7 +840,7 @@ It helped significantly improve the prediction score.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (10 minutes 59.680 seconds)
+   **Total running time of the script:** (10 minutes 58.040 seconds)
 
 
 .. _sphx_glr_download_auto_examples_06_ken_embeddings.py:
@@ -849,15 +849,12 @@ It helped significantly improve the prediction score.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
         :target: https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/06_ken_embeddings.ipynb
         :alt: Launch binder
         :width: 150 px
-
-
 
     .. container:: lite-badge
 
@@ -866,13 +863,13 @@ It helped significantly improve the prediction score.
         :alt: Launch JupyterLite
         :width: 150 px
 
-    .. container:: sphx-glr-download sphx-glr-download-python
-
-      :download:`Download Python source code: 06_ken_embeddings.py <06_ken_embeddings.py>`
-
     .. container:: sphx-glr-download sphx-glr-download-jupyter
 
       :download:`Download Jupyter notebook: 06_ken_embeddings.ipynb <06_ken_embeddings.ipynb>`
+
+    .. container:: sphx-glr-download sphx-glr-download-python
+
+      :download:`Download Python source code: 06_ken_embeddings.py <06_ken_embeddings.py>`
 
 
 .. only:: html

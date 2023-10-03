@@ -54,7 +54,7 @@ We import the happiness score table first:
 
 .. GENERATED FROM PYTHON SOURCE LINES 35-43
 
-.. code-block:: default
+.. code-block:: Python
 
     import pandas as pd
 
@@ -77,7 +77,7 @@ Let's look at the table:
 
 .. GENERATED FROM PYTHON SOURCE LINES 45-47
 
-.. code-block:: default
+.. code-block:: Python
 
     df.head(3)
 
@@ -188,7 +188,7 @@ variable of interest: the 'Happiness score'.
 
 .. GENERATED FROM PYTHON SOURCE LINES 56-58
 
-.. code-block:: default
+.. code-block:: Python
 
     df = df[["Country", "Happiness score"]]
 
@@ -213,7 +213,7 @@ function:
 
 .. GENERATED FROM PYTHON SOURCE LINES 68-70
 
-.. code-block:: default
+.. code-block:: Python
 
     from skrub.datasets import fetch_world_bank_indicator
 
@@ -230,7 +230,7 @@ We extract the table containing GDP per capita by country:
 
 .. GENERATED FROM PYTHON SOURCE LINES 72-75
 
-.. code-block:: default
+.. code-block:: Python
 
     gdppc = fetch_world_bank_indicator(indicator_id="NY.GDP.PCAP.CD").X
     gdppc.head(3)
@@ -294,7 +294,7 @@ Then another table, with life expectancy by country:
 
 .. GENERATED FROM PYTHON SOURCE LINES 77-80
 
-.. code-block:: default
+.. code-block:: Python
 
     life_exp = fetch_world_bank_indicator("SP.DYN.LE00.IN").X
     life_exp.head(3)
@@ -358,7 +358,7 @@ And a table with legal rights strength by country:
 
 .. GENERATED FROM PYTHON SOURCE LINES 82-85
 
-.. code-block:: default
+.. code-block:: Python
 
     legal_rights = fetch_world_bank_indicator("IC.LGL.CRED.XQ").X
     legal_rights.head(3)
@@ -427,7 +427,7 @@ original table (df), and those that we downloaded from the worldbank
 
 .. GENERATED FROM PYTHON SOURCE LINES 92-95
 
-.. code-block:: default
+.. code-block:: Python
 
 
     df.sort_values(by="Country").tail(7)
@@ -507,7 +507,7 @@ original table (df), and those that we downloaded from the worldbank
 
 .. GENERATED FROM PYTHON SOURCE LINES 96-98
 
-.. code-block:: default
+.. code-block:: Python
 
     gdppc.sort_values(by="Country Name").tail(7)
 
@@ -603,7 +603,7 @@ we have extracted.
 
 .. GENERATED FROM PYTHON SOURCE LINES 112-118
 
-.. code-block:: default
+.. code-block:: Python
 
 
     # We will ignore the warnings:
@@ -629,7 +629,7 @@ To join them with skrub, we only need to do the following:
 
 .. GENERATED FROM PYTHON SOURCE LINES 125-138
 
-.. code-block:: default
+.. code-block:: Python
 
     from skrub import fuzzy_join
 
@@ -878,7 +878,7 @@ us an overview of the situation:
 
 .. GENERATED FROM PYTHON SOURCE LINES 166-169
 
-.. code-block:: default
+.. code-block:: Python
 
 
     df1.sort_values("matching_score").head(4)
@@ -970,7 +970,7 @@ so as to include only precise-enough matches:
 
 .. GENERATED FROM PYTHON SOURCE LINES 178-188
 
-.. code-block:: default
+.. code-block:: Python
 
     df1 = fuzzy_join(
         df,
@@ -1062,7 +1062,7 @@ We will remove them using the drop_unmatched parameter:
 
 .. GENERATED FROM PYTHON SOURCE LINES 191-203
 
-.. code-block:: default
+.. code-block:: Python
 
 
     df1 = fuzzy_join(
@@ -1090,7 +1090,7 @@ and happiness:
 
 .. GENERATED FROM PYTHON SOURCE LINES 206-223
 
-.. code-block:: default
+.. code-block:: Python
 
     import matplotlib.pyplot as plt
     import seaborn as sns
@@ -1138,7 +1138,7 @@ life_exp table:
 
 .. GENERATED FROM PYTHON SOURCE LINES 235-247
 
-.. code-block:: default
+.. code-block:: Python
 
     df2 = fuzzy_join(
         df1,
@@ -1219,7 +1219,7 @@ Let's plot this relation:
 
 .. GENERATED FROM PYTHON SOURCE LINES 249-261
 
-.. code-block:: default
+.. code-block:: Python
 
     plt.figure(figsize=(4, 3))
     fig = sns.regplot(
@@ -1259,7 +1259,7 @@ And the table with a measure of legal rights strength in the country:
 
 .. GENERATED FROM PYTHON SOURCE LINES 271-283
 
-.. code-block:: default
+.. code-block:: Python
 
     df3 = fuzzy_join(
         df2,
@@ -1344,7 +1344,7 @@ Let's take a look at their correspondance in a figure:
 
 .. GENERATED FROM PYTHON SOURCE LINES 285-297
 
-.. code-block:: default
+.. code-block:: Python
 
     plt.figure(figsize=(4, 3))
     fig = sns.regplot(
@@ -1390,7 +1390,7 @@ variables: y
 
 .. GENERATED FROM PYTHON SOURCE LINES 311-314
 
-.. code-block:: default
+.. code-block:: Python
 
     X = df3.drop("Happiness score", axis=1).select_dtypes(exclude=object)
     y = df3[["Happiness score"]]
@@ -1408,7 +1408,7 @@ Let us now define the model that will be used to predict the happiness score:
 
 .. GENERATED FROM PYTHON SOURCE LINES 316-323
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from sklearn.ensemble import HistGradientBoostingRegressor
@@ -1433,7 +1433,7 @@ Let's finally assess the results of our models:
 
 .. GENERATED FROM PYTHON SOURCE LINES 328-336
 
-.. code-block:: default
+.. code-block:: Python
 
     from sklearn.model_selection import cross_validate
 
@@ -1489,7 +1489,7 @@ Instantiating the transformer
 
 .. GENERATED FROM PYTHON SOURCE LINES 363-365
 
-.. code-block:: default
+.. code-block:: Python
 
 
     y = df["Happiness score"]
@@ -1508,7 +1508,7 @@ An instance of the transformer with the necessary information is:
 
 .. GENERATED FROM PYTHON SOURCE LINES 369-380
 
-.. code-block:: default
+.. code-block:: Python
 
     from skrub import Joiner
 
@@ -1537,7 +1537,7 @@ with our create instance of the |joiner|:
 
 .. GENERATED FROM PYTHON SOURCE LINES 385-389
 
-.. code-block:: default
+.. code-block:: Python
 
     df_final = joiner.fit_transform(df)
 
@@ -1705,7 +1705,7 @@ Let's create our machine learning pipeline:
 
 .. GENERATED FROM PYTHON SOURCE LINES 393-411
 
-.. code-block:: default
+.. code-block:: Python
 
     from sklearn.compose import make_column_transformer
     from sklearn.pipeline import make_pipeline
@@ -1740,7 +1740,7 @@ introduced into a grid search:
 
 .. GENERATED FROM PYTHON SOURCE LINES 415-425
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from sklearn.model_selection import GridSearchCV
@@ -1773,7 +1773,7 @@ The grid searching gave us the best value of 0.5 for the parameter
 
 .. GENERATED FROM PYTHON SOURCE LINES 429-432
 
-.. code-block:: default
+.. code-block:: Python
 
 
     print(f"Mean R2 score with pipeline is {grid.score(df, y):.2f}")
@@ -1808,7 +1808,7 @@ results significantly!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 12.650 seconds)
+   **Total running time of the script:** (0 minutes 13.454 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining.py:
@@ -1817,15 +1817,12 @@ results significantly!
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
         :target: https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb
         :alt: Launch binder
         :width: 150 px
-
-
 
     .. container:: lite-badge
 
@@ -1834,13 +1831,13 @@ results significantly!
         :alt: Launch JupyterLite
         :width: 150 px
 
-    .. container:: sphx-glr-download sphx-glr-download-python
-
-      :download:`Download Python source code: 04_fuzzy_joining.py <04_fuzzy_joining.py>`
-
     .. container:: sphx-glr-download sphx-glr-download-jupyter
 
       :download:`Download Jupyter notebook: 04_fuzzy_joining.ipynb <04_fuzzy_joining.ipynb>`
+
+    .. container:: sphx-glr-download sphx-glr-download-python
+
+      :download:`Download Python source code: 04_fuzzy_joining.py <04_fuzzy_joining.py>`
 
 
 .. only:: html

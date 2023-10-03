@@ -535,8 +535,8 @@ document.write(`
 <p class="side-comment">Usage examples at the bottom of this page.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">DatetimeEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extract_until</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hour'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_day_of_the_week</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/887145d/skrub/_datetime_encoder.py#L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder" title="Link to this definition">#</a></dt>
-<dd><p>Transforms each datetime column into several numeric columns for temporal features (e.g year, month, day…).</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">DatetimeEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extract_until</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hour'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_day_of_the_week</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/fade200/skrub/_datetime_encoder.py#L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder" title="Link to this definition">#</a></dt>
+<dd><p>Transform each datetime column into several numeric columns     for temporal features (e.g. “year”, “month”, “day”…).</p>
 <p>Constant extracted features are dropped; for instance, if the year is
 always the same in a feature, the extracted “year” column won’t be added.
 If the dates are timezone aware, all the features extracted will correspond
@@ -544,12 +544,13 @@ to the provided timezone.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>extract_until</strong><span class="classifier">{‘year’, ‘month’, ‘day’, ‘hour’, ‘minute’, ‘second’, ‘microsecond’, ‘nanosecond’, <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>}, default=’hour’</span></dt><dd><p>Extract up to this granularity.
-If all non-constant features have not been extracted, add the ‘total_time’ feature,
-which contains the time to epoch (in seconds).
-For instance, if you specify ‘day’, only ‘year’, ‘month’, ‘day’ and
-‘total_time’ features will be created.
-If None, only the ‘total_time’ feature will be created.</p>
+<dt><strong>extract_until</strong><span class="classifier">{“year”, “month”, “day”, “hour”, “minute”, “second”,</span></dt><dd><p>“microsecond”, “nanosecond”, None}, default=”hour”
+Extract up to this granularity.
+If all non-constant features have not been extracted,
+add the “total_time” feature, which contains the time to epoch (in seconds).
+For instance, if you specify “day”, only “year”, “month”, “day” and
+“total_time” features will be created.
+If None, only the “total_time” feature will be created.</p>
 </dd>
 <dt><strong>add_day_of_the_week</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>Add day of the week feature (if day is extracted).
 This is a numerical feature from 0 (Monday) to 6 (Sunday).</p>
@@ -560,7 +561,7 @@ This is a numerical feature from 0 (Monday) to 6 (Sunday).</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a></dt><dd><p>Encodes dirty categories (strings) by constructing latent topics with continuous encoding.</p>
+<dt><a class="reference internal" href="skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a></dt><dd><p>Encode dirty categories (strings) by constructing latent topics with continuous encoding.</p>
 </dd>
 <dt><a class="reference internal" href="skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a></dt><dd><p>Encode string columns as a numeric array with the minhash method.</p>
 </dd>
@@ -581,7 +582,7 @@ This is a numerical feature from 0 (Monday) to 6 (Sunday).</p>
 </pre></div>
 </div>
 <p>The encoder will output a transformed array
-with four columns (year, month, day and hour):</p>
+with four columns (“year”, “month”, “day” and “hour”):</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">enc</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="go">array([[2022.,   10.,   15.,    0.],</span>
 <span class="go">       [2021.,   12.,   25.,    0.],</span>
@@ -609,7 +610,7 @@ if input data was a pandas DataFrame, otherwise None.</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.fit" title="skrub.DatetimeEncoder.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X[, y])</p></td>
-<td><p>Fit the instance to X.</p></td>
+<td><p>Fit the instance to <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.fit_transform" title="skrub.DatetimeEncoder.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(X[, y])</p></td>
 <td><p>Fit to data, then transform it.</p></td>
@@ -630,20 +631,20 @@ if input data was a pandas DataFrame, otherwise None.</p>
 <td><p>Set the parameters of this estimator.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.transform" title="skrub.DatetimeEncoder.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X[, y])</p></td>
-<td><p>Transform <cite>X</cite> by replacing each datetime column with corresponding numerical features.</p></td>
+<td><p>Transform <code class="docutils literal notranslate"><span class="pre">X</span></code> by replacing each datetime column with         corresponding numerical features.</p></td>
 </tr>
 </tbody>
 </table>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/887145d/skrub/_datetime_encoder.py#L166"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.fit" title="Link to this definition">#</a></dt>
-<dd><p>Fit the instance to X.</p>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/fade200/skrub/_datetime_encoder.py#L165"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.fit" title="Link to this definition">#</a></dt>
+<dd><p>Fit the instance to <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p>
 <p>In practice, just check keywords and input validity,
 and stores which extracted features are not constant.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.26)"><span>array_like</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_features</span></code>)</span></dt><dd><p>Data where each column is a datetime feature.</p>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.26)"><span>array_like</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="docutils literal notranslate"><span class="pre">n_features</span></code>)</span></dt><dd><p>Data where each column is a datetime feature.</p>
 </dd>
 <dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Unused, only here for compatibility.</p>
 </dd>
@@ -660,7 +661,7 @@ and stores which extracted features are not constant.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/887145d/skrub/../sklearn/base.py#L888"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/fade200/skrub/../sklearn/base.py#L888"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to <cite>X</cite> and <cite>y</cite> with optional parameters <cite>fit_params</cite>
 and returns a transformed version of <cite>X</cite>.</p>
@@ -686,7 +687,7 @@ and returns a transformed version of <cite>X</cite>.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.get_feature_names_out">
-<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/887145d/skrub/_datetime_encoder.py#L264"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_feature_names_out" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/fade200/skrub/_datetime_encoder.py#L264"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_feature_names_out" title="Link to this definition">#</a></dt>
 <dd><p>Return clean feature names.</p>
 <p>Feature names are formatted like: “&lt;column_name&gt;_&lt;new_feature&gt;”
 if the original data has column names, otherwise with format
@@ -711,7 +712,7 @@ if the original data has column names, otherwise with format
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.get_metadata_routing">
-<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/887145d/skrub/../sklearn/utils/_metadata_requests.py#L1243"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_metadata_routing" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/fade200/skrub/../sklearn/utils/_metadata_requests.py#L1243"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_metadata_routing" title="Link to this definition">#</a></dt>
 <dd><p>Get metadata routing of this object.</p>
 <p>Please check <a class="reference external" href="https://scikit-learn.org/stable/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.3)"><span class="xref std std-ref">User Guide</span></a> on how the routing
 mechanism works.</p>
@@ -728,7 +729,7 @@ routing information.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/887145d/skrub/../sklearn/base.py#L178"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/fade200/skrub/../sklearn/base.py#L178"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -749,7 +750,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/887145d/skrub/../sklearn/utils/_set_output.py#L230"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/fade200/skrub/../sklearn/utils/_set_output.py#L230"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.3)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
@@ -776,7 +777,7 @@ for an example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/887145d/skrub/../sklearn/base.py#L202"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/fade200/skrub/../sklearn/base.py#L202"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -800,12 +801,12 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/887145d/skrub/_datetime_encoder.py#L228"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.transform" title="Link to this definition">#</a></dt>
-<dd><p>Transform <cite>X</cite> by replacing each datetime column with corresponding numerical features.</p>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/fade200/skrub/_datetime_encoder.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.transform" title="Link to this definition">#</a></dt>
+<dd><p>Transform <code class="docutils literal notranslate"><span class="pre">X</span></code> by replacing each datetime column with         corresponding numerical features.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.26)"><span>array_like</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">n_features</span></code>)</span></dt><dd><p>The data to transform, where each column is a datetime feature.</p>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.26)"><span>array_like</span></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="docutils literal notranslate"><span class="pre">n_features</span></code>)</span></dt><dd><p>The data to transform, where each column is a datetime feature.</p>
 </dd>
 <dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Unused, only here for compatibility.</p>
 </dd>
@@ -813,7 +814,7 @@ possible to update each component of a nested object.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.26)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">n_samples</span></code>, <cite>n_features_out_</cite>)</dt><dd><p>Transformed input.</p>
+<dt><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.26)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">shape</span></code> (<code class="docutils literal notranslate"><span class="pre">n_samples</span></code>, <code class="docutils literal notranslate"><span class="pre">n_features_out_</span></code>)</dt><dd><p>Transformed input.</p>
 </dd>
 </dl>
 </dd>

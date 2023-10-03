@@ -61,7 +61,7 @@ Let's first retrieve the dataset:
 
 .. GENERATED FROM PYTHON SOURCE LINES 42-47
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from skrub.datasets import fetch_employee_salaries
@@ -82,7 +82,7 @@ the annual salary (our target column):
 
 .. GENERATED FROM PYTHON SOURCE LINES 50-56
 
-.. code-block:: default
+.. code-block:: Python
 
 
     X = dataset.X
@@ -270,7 +270,7 @@ pipeline and train it:
 
 .. GENERATED FROM PYTHON SOURCE LINES 66-74
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from sklearn.ensemble import HistGradientBoostingRegressor
@@ -308,7 +308,7 @@ Let's explore the internals of our encoder, the |TableVectorizer|:
 
 .. GENERATED FROM PYTHON SOURCE LINES 81-89
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from pprint import pprint
@@ -350,7 +350,7 @@ corresponding columns:
 
 .. GENERATED FROM PYTHON SOURCE LINES 96-99
 
-.. code-block:: default
+.. code-block:: Python
 
 
     tv.named_transformers_["low_card_cat"].get_feature_names_out()
@@ -426,7 +426,7 @@ corresponding columns:
 
 .. GENERATED FROM PYTHON SOURCE LINES 103-106
 
-.. code-block:: default
+.. code-block:: Python
 
 
     tv.named_transformers_["high_card_cat"].get_feature_names_out()
@@ -440,7 +440,7 @@ corresponding columns:
  .. code-block:: none
 
 
-    ['rockville, twinbrook, downtown', 'animal, supervision, virtual', 'squad, district, patrol', 'gaithersburg, clarksburg, the', 'receivable, director, officer', 'behavioral, health, school', 'family, crimes, laboratory', 'traffic, safety, alcohol', 'silver, spring, urine', '5th, 4th, 6th', 'emergency, commuter, duplicating', 'management, budget, fleet', 'station, battalion, fifth', 'nicholson, transit, taxicab', 'security, custody, mcdc', 'services, highway, service', 'operations, delivery, admin', 'protective, projects, project', 'communications, communication, division', 'development, automotive, equipment', 'planning, training, recruit', 'technology, systems, information', 'welfare, children, childhood', 'special, urban, team', 'treatment, ombudsman, clinical', 'warehouse, liquor, stock', 'supports, support, toddlers', 'investigative, investigations, criminal', 'regulatory, environmental, meadows', 'maintenance, facilities, eligibility', 'community, health, nurse', 'crossing, purchasing, guard', 'firefighter, rescuer, recruit', 'operator, bus, operations', 'officer, office, police', 'captain, rescue, chief', 'assistance, assistant, income', 'program, programs, projects', 'emergency, plumber, vehicle', 'administrator, administration, administrative', 'information, recreation, renovation', 'librarian, library, libraries', 'correctional, correction, corporal', 'manager, budget, management', 'school, room, behavioral', 'legislative, principal, executive', 'coordinator, transit, coordinating', 'enforcement, inspector, force', 'communications, telecommunications, safety', 'specialist, special, resource', 'warehouse, welfare, liquor', 'equipment, auditor, accountant', 'technician, mechanic, supply', 'worker, social, works', 'supervisor, supervisory, resident', 'candidate, psychiatric, psychiatrist', 'lieutenant, shift, maintenance', 'sergeant, team, volunteer', 'planning, engineer, senior', 'sheriff, deputy, autobody']
+    ['patrol, 5th, 6th', 'development, avenue, review', 'district, squad, payroll', 'programs, projects, project', 'silver, spring, ride', 'behavioral, health, school', 'gaithersburg, clarksburg, the', 'traffic, safety, alcohol', 'criminal, laboratory, animal', 'investigative, investigations, explosive', 'welfare, childhood, child', 'nicholson, transit, taxicab', 'station, state, estate', 'equipment, automotive, fleet', 'twinbrook, rockville, warehouse', 'administration, battalion, administrative', 'communications, communication, division', 'toddlers, custody, members', 'officer, office, solid', 'security, mc311, mccf', 'services, highway, service', 'maintenance, facilities, eligibility', 'technology, telephone, systems', 'supports, support, network', 'emergency, centers, center', 'community, wheaton, lawton', 'assault, family, sexual', 'planning, training, recruit', 'operations, special, delivery', 'management, mangement, parking', 'craftsworker, public, urban', 'lieutenant, attendant, shift', 'operator, bus, operations', 'master, registered, meter', 'manager, projects, project', 'candidate, police, office', 'community, nurse, unit', 'information, technology, technologist', 'liquor, clerk, store', 'recreation, renovation, occupational', 'officer, iii, office', 'accountant, assistant, library', 'therapist, program, programs', 'firefighter, recruit, rescuer', 'coordinator, services, service', 'correctional, correction, corporal', 'enforcement, permitting, inspector', 'representative, legislative, executive', 'supervisory, supervisor, emergency', 'school, health, room', 'technician, mechanic, supply', 'equipment, investment, investigator', 'communications, telecommunications, safety', 'crossing, purchasing, background', 'captain, rescue, chief', 'sergeant, sheriff, deputy', 'income, assistance, client', 'administrative, principal, administration', 'specialist, special, planning', 'warehouse, welfare, caseworker']
 
 
 
@@ -451,7 +451,7 @@ corresponding columns:
 
 .. GENERATED FROM PYTHON SOURCE LINES 109-112
 
-.. code-block:: default
+.. code-block:: Python
 
 
     tv.named_transformers_["datetime"].get_feature_names_out()
@@ -477,7 +477,7 @@ In total, we have a reasonable number of encoded columns:
 
 .. GENERATED FROM PYTHON SOURCE LINES 116-121
 
-.. code-block:: default
+.. code-block:: Python
 
 
     feature_names = tv.get_feature_names_out()
@@ -503,7 +503,7 @@ Let's look at the cross-validated R2 score of our model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 123-130
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from sklearn.model_selection import cross_val_score
@@ -520,7 +520,7 @@ Let's look at the cross-validated R2 score of our model:
 
  .. code-block:: none
 
-    R2 score:  mean: 0.919; std: 0.012
+    R2 score:  mean: 0.920; std: 0.011
 
 
 
@@ -547,7 +547,7 @@ First, let's train another scikit-learn regressor, the |RandomForestRegressor|:
 
 .. GENERATED FROM PYTHON SOURCE LINES 146-154
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from sklearn.ensemble import RandomForestRegressor
@@ -578,7 +578,7 @@ We are retrieving the feature importances:
 
 .. GENERATED FROM PYTHON SOURCE LINES 156-163
 
-.. code-block:: default
+.. code-block:: Python
 
 
     avg_importances = regressor.feature_importances_
@@ -600,7 +600,7 @@ And plotting the results:
 
 .. GENERATED FROM PYTHON SOURCE LINES 165-183
 
-.. code-block:: default
+.. code-block:: Python
 
 
     import matplotlib.pyplot as plt
@@ -655,7 +655,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 11.621 seconds)
+   **Total running time of the script:** (1 minutes 18.477 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:
@@ -664,15 +664,12 @@ to plot the feature importances.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
         :target: https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/01_encodings.ipynb
         :alt: Launch binder
         :width: 150 px
-
-
 
     .. container:: lite-badge
 
@@ -681,13 +678,13 @@ to plot the feature importances.
         :alt: Launch JupyterLite
         :width: 150 px
 
-    .. container:: sphx-glr-download sphx-glr-download-python
-
-      :download:`Download Python source code: 01_encodings.py <01_encodings.py>`
-
     .. container:: sphx-glr-download sphx-glr-download-jupyter
 
       :download:`Download Jupyter notebook: 01_encodings.ipynb <01_encodings.ipynb>`
+
+    .. container:: sphx-glr-download sphx-glr-download-python
+
+      :download:`Download Python source code: 01_encodings.py <01_encodings.py>`
 
 
 .. only:: html

@@ -49,7 +49,7 @@ Let's look at the dataset:
 
 .. GENERATED FROM PYTHON SOURCE LINES 30-37
 
-.. code-block:: default
+.. code-block:: Python
 
     from skrub import datasets
 
@@ -85,7 +85,7 @@ Here is the number of unique entries per column:
 
 .. GENERATED FROM PYTHON SOURCE LINES 39-41
 
-.. code-block:: default
+.. code-block:: Python
 
     print(data.nunique())
 
@@ -116,7 +116,7 @@ As we can see, some entries have many unique values:
 
 .. GENERATED FROM PYTHON SOURCE LINES 43-45
 
-.. code-block:: default
+.. code-block:: Python
 
     print(data["employee_position_title"].value_counts().sort_index())
 
@@ -170,7 +170,7 @@ employee's position title:
 
 .. GENERATED FROM PYTHON SOURCE LINES 66-70
 
-.. code-block:: default
+.. code-block:: Python
 
 
     values = data[["employee_position_title", "gender"]]
@@ -196,7 +196,7 @@ creates a similarity matrix based on an n-gram representation of the data.
 
 .. GENERATED FROM PYTHON SOURCE LINES 79-87
 
-.. code-block:: default
+.. code-block:: Python
 
 
     sorted_values = values["employee_position_title"].sort_values().unique()
@@ -223,7 +223,7 @@ representation to get an intuition of what the |SE| is doing:
 
 .. GENERATED FROM PYTHON SOURCE LINES 93-103
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from sklearn.manifold import MDS
@@ -257,7 +257,7 @@ We first quickly fit a KNN so that the plots does not get too busy:
 
 .. GENERATED FROM PYTHON SOURCE LINES 105-119
 
-.. code-block:: default
+.. code-block:: Python
 
 
     import numpy as np
@@ -286,7 +286,7 @@ Then we plot it, adding the categories in the scatter plot:
 
 .. GENERATED FROM PYTHON SOURCE LINES 121-136
 
-.. code-block:: default
+.. code-block:: Python
 
 
     import matplotlib.pyplot as plt
@@ -330,7 +330,7 @@ We can also plot the distance matrix for those observations:
 
 .. GENERATED FROM PYTHON SOURCE LINES 141-153
 
-.. code-block:: default
+.. code-block:: Python
 
 
     f2, ax2 = plt.subplots(figsize=(6, 6))
@@ -381,7 +381,7 @@ First, let's retrieve the dirty column to encode:
 
 .. GENERATED FROM PYTHON SOURCE LINES 173-179
 
-.. code-block:: default
+.. code-block:: Python
 
 
     dirty_column = "employee_position_title"
@@ -420,7 +420,7 @@ Then, we'll create an instance of the |Gap| with 10 components:
 
 .. GENERATED FROM PYTHON SOURCE LINES 186-191
 
-.. code-block:: default
+.. code-block:: Python
 
 
     from skrub import GapEncoder
@@ -441,7 +441,7 @@ in order to obtain encoded vectors of size 10:
 
 .. GENERATED FROM PYTHON SOURCE LINES 194-198
 
-.. code-block:: default
+.. code-block:: Python
 
 
     X_enc = enc.fit_transform(X_dirty)
@@ -475,7 +475,7 @@ In the example below we select 3 labels to summarize each topic.
 
 .. GENERATED FROM PYTHON SOURCE LINES 209-215
 
-.. code-block:: default
+.. code-block:: Python
 
 
     topic_labels = enc.get_feature_names_out(n_labels=3)
@@ -515,7 +515,7 @@ This enables us to understand the encoding of different samples
 
 .. GENERATED FROM PYTHON SOURCE LINES 221-233
 
-.. code-block:: default
+.. code-block:: Python
 
 
     encoded_labels = enc.transform(X_dirty[:20])
@@ -550,7 +550,7 @@ effect latent categories captured from the data.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 8.100 seconds)
+   **Total running time of the script:** (0 minutes 8.558 seconds)
 
 
 .. _sphx_glr_download_auto_examples_02_investigating_dirty_categories.py:
@@ -559,15 +559,12 @@ effect latent categories captured from the data.
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
         :target: https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/02_investigating_dirty_categories.ipynb
         :alt: Launch binder
         :width: 150 px
-
-
 
     .. container:: lite-badge
 
@@ -576,13 +573,13 @@ effect latent categories captured from the data.
         :alt: Launch JupyterLite
         :width: 150 px
 
-    .. container:: sphx-glr-download sphx-glr-download-python
-
-      :download:`Download Python source code: 02_investigating_dirty_categories.py <02_investigating_dirty_categories.py>`
-
     .. container:: sphx-glr-download sphx-glr-download-jupyter
 
       :download:`Download Jupyter notebook: 02_investigating_dirty_categories.ipynb <02_investigating_dirty_categories.ipynb>`
+
+    .. container:: sphx-glr-download sphx-glr-download-python
+
+      :download:`Download Python source code: 02_investigating_dirty_categories.py <02_investigating_dirty_categories.py>`
 
 
 .. only:: html
