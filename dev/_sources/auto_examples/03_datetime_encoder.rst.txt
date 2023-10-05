@@ -54,23 +54,7 @@ It is used by default in the |TableVectorizer|.
 .. |HGBR| replace::
     :class:`~sklearn.ensemble.HistGradientBoostingRegressor`
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-43
-
-.. code-block:: Python
-
-
-    import warnings
-
-    warnings.filterwarnings("ignore")
-
-
-
-
-
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 44-50
+.. GENERATED FROM PYTHON SOURCE LINES 41-47
 
 A problem with relevant datetime features
 -----------------------------------------
@@ -79,10 +63,12 @@ We will use a dataset of air quality measurements in different cities.
 In this setting, we want to predict the NO2 air concentration, based
 on the location, date and time of measurement.
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-63
+.. GENERATED FROM PYTHON SOURCE LINES 47-62
 
 .. code-block:: Python
 
+
+    from pprint import pprint
 
     import pandas as pd
 
@@ -190,7 +176,7 @@ on the location, date and time of measurement.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-75
+.. GENERATED FROM PYTHON SOURCE LINES 63-74
 
 Encoding the features
 .....................
@@ -204,7 +190,7 @@ to extract the day of the week, and that we don't want to extract anything
 finer than minutes. This is because we don't want to extract seconds and
 lower units, as they are probably unimportant.
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-91
+.. GENERATED FROM PYTHON SOURCE LINES 74-90
 
 .. code-block:: Python
 
@@ -222,7 +208,7 @@ lower units, as they are probably unimportant.
     )
 
     X_enc = encoder.fit_transform(X)
-    encoder.get_feature_names_out()
+    pprint(encoder.get_feature_names_out())
 
 
 
@@ -232,7 +218,6 @@ lower units, as they are probably unimportant.
 
  .. code-block:: none
 
-
     array(['onehotencoder__city_Antwerpen', 'onehotencoder__city_London',
            'onehotencoder__city_Paris', 'datetimeencoder__date.utc_month',
            'datetimeencoder__date.utc_day', 'datetimeencoder__date.utc_hour',
@@ -240,7 +225,8 @@ lower units, as they are probably unimportant.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 92-98
+
+.. GENERATED FROM PYTHON SOURCE LINES 91-97
 
 We see that the encoder is working as expected: the "date.utc" column has
 been replaced by features extracting the month, day, hour, and day of the
@@ -249,7 +235,7 @@ week information.
 Note the year and minute features are not present, this is because they
 have been removed by the encoder as they are constant the whole period.
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-105
+.. GENERATED FROM PYTHON SOURCE LINES 99-104
 
 One-liner with the |TableVectorizer|
 ....................................
@@ -257,13 +243,10 @@ One-liner with the |TableVectorizer|
 As mentioned earlier, the |TableVectorizer| makes use of the
 |DatetimeEncoder| by default.
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-115
+.. GENERATED FROM PYTHON SOURCE LINES 104-111
 
 .. code-block:: Python
 
-
-    from skrub import TableVectorizer
-    from pprint import pprint
 
     from skrub import TableVectorizer
 
@@ -289,14 +272,14 @@ As mentioned earlier, the |TableVectorizer| makes use of the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 116-120
+.. GENERATED FROM PYTHON SOURCE LINES 112-116
 
 If we want to customize the |DatetimeEncoder| inside the |TableVectorizer|,
 we can replace its default parameter with a new, custom instance:
 
 Here, for example, we want it to extract the day of the week.
 
-.. GENERATED FROM PYTHON SOURCE LINES 120-127
+.. GENERATED FROM PYTHON SOURCE LINES 116-123
 
 .. code-block:: Python
 
@@ -305,7 +288,7 @@ Here, for example, we want it to extract the day of the week.
         datetime_transformer=DatetimeEncoder(add_day_of_the_week=True),
     )
     table_vec.fit_transform(X)
-    table_vec.get_feature_names_out()
+    pprint(table_vec.get_feature_names_out())
 
 
 
@@ -315,12 +298,18 @@ Here, for example, we want it to extract the day of the week.
 
  .. code-block:: none
 
+    ['date.utc_month',
+     'date.utc_day',
+     'date.utc_hour',
+     'date.utc_dayofweek',
+     'city_Antwerpen',
+     'city_London',
+     'city_Paris']
 
-    ['date.utc_month', 'date.utc_day', 'date.utc_hour', 'date.utc_dayofweek', 'city_Antwerpen', 'city_London', 'city_Paris']
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 128-134
+.. GENERATED FROM PYTHON SOURCE LINES 124-130
 
 .. note:
     For more information on how to customize the |TableVectorizer|, see
@@ -329,7 +318,7 @@ Here, for example, we want it to extract the day of the week.
 Inspecting the |TableVectorizer| further, we can check that the
 |DatetimeEncoder| is used on the correct column(s).
 
-.. GENERATED FROM PYTHON SOURCE LINES 134-136
+.. GENERATED FROM PYTHON SOURCE LINES 130-132
 
 .. code-block:: Python
 
@@ -351,7 +340,7 @@ Inspecting the |TableVectorizer| further, we can check that the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 137-151
+.. GENERATED FROM PYTHON SOURCE LINES 133-147
 
 Prediction with datetime features
 ---------------------------------
@@ -368,7 +357,7 @@ Here's we'll use a |HGBR| as our learner.
    from sklearn.experimental import enable_hist_gradient_boosting
    ```
 
-.. GENERATED FROM PYTHON SOURCE LINES 151-161
+.. GENERATED FROM PYTHON SOURCE LINES 147-157
 
 .. code-block:: Python
 
@@ -389,7 +378,7 @@ Here's we'll use a |HGBR| as our learner.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 162-171
+.. GENERATED FROM PYTHON SOURCE LINES 158-167
 
 Evaluating the model
 ....................
@@ -401,12 +390,11 @@ the standard settings of the cross-validation do not respect time ordering.
 Instead, we can use the |TimeSeriesSplit|,
 which ensures that the test set is always in the future.
 
-.. GENERATED FROM PYTHON SOURCE LINES 171-187
+.. GENERATED FROM PYTHON SOURCE LINES 167-182
 
 .. code-block:: Python
 
 
-    X["date.utc"] = pd.to_datetime(X["date.utc"])
     sorted_indices = np.argsort(X["date.utc"])
     X = X.iloc[sorted_indices]
     y = y.iloc[sorted_indices]
@@ -435,7 +423,7 @@ which ensures that the test set is always in the future.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 188-193
+.. GENERATED FROM PYTHON SOURCE LINES 183-188
 
 Plotting the prediction
 .......................
@@ -443,7 +431,7 @@ Plotting the prediction
 The mean squared error is not obvious to interpret, so we compare
 visually the prediction of our model with the actual values.
 
-.. GENERATED FROM PYTHON SOURCE LINES 193-228
+.. GENERATED FROM PYTHON SOURCE LINES 188-223
 
 .. code-block:: Python
 
@@ -494,17 +482,17 @@ visually the prediction of our model with the actual values.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 229-230
+.. GENERATED FROM PYTHON SOURCE LINES 224-225
 
 Let's zoom on a few days:
 
-.. GENERATED FROM PYTHON SOURCE LINES 230-263
+.. GENERATED FROM PYTHON SOURCE LINES 225-258
 
 .. code-block:: Python
 
 
-    X_zoomed = X[X["date.utc"] <= "2019-06-04"][X["date.utc"] >= "2019-06-01"]
-    y_zoomed = y[X["date.utc"] <= "2019-06-04"][X["date.utc"] >= "2019-06-01"]
+    X_zoomed = X[(X["date.utc"] <= "2019-06-04") & (X["date.utc"] >= "2019-06-01")]
+    y_zoomed = y[(X["date.utc"] <= "2019-06-04") & (X["date.utc"] >= "2019-06-01")]
 
     X_train_zoomed = X_zoomed[X_zoomed["date.utc"] < "2019-06-03"]
     X_test_zoomed = X_zoomed[X_zoomed["date.utc"] >= "2019-06-03"]
@@ -547,7 +535,7 @@ Let's zoom on a few days:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 264-272
+.. GENERATED FROM PYTHON SOURCE LINES 259-267
 
 Features importance
 -------------------
@@ -558,7 +546,7 @@ importance of the features created by the |DatetimeEncoder|, using the
 :func:`~sklearn.inspection.permutation_importance` function, which
 basically shuffles a feature and sees how the model changes its prediction.
 
-.. GENERATED FROM PYTHON SOURCE LINES 274-300
+.. GENERATED FROM PYTHON SOURCE LINES 269-295
 
 .. code-block:: Python
 
@@ -600,7 +588,7 @@ basically shuffles a feature and sees how the model changes its prediction.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 301-311
+.. GENERATED FROM PYTHON SOURCE LINES 296-306
 
 We can see that the hour of the day is the most important feature,
 which seems reasonable.
@@ -616,7 +604,7 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 3.571 seconds)
+   **Total running time of the script:** (0 minutes 8.354 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:
