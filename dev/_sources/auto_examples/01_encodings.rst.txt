@@ -440,7 +440,7 @@ corresponding columns:
  .. code-block:: none
 
 
-    ['officer, office, officers', 'accountability, programs, accounts', 'services, highway, service', 'district, patrol, 3rd', 'station, state, estate', 'gaithersburg, clarksburg, the', 'safety, traffic, alcohol', 'behavioral, health, school', 'custody, toddlers, westwood', 'investigative, investigations, legislative', 'welfare, children, child', 'emergency, centers, center', 'management, equipment, automotive', 'communications, communication, immunization', 'silver, spring, ride', 'facilities, maintenance, rockville', 'security, mc311, mccf', 'warehouse, delivery, liquor', 'nicholson, transit, taxicab', 'eligibility, assistance, medical', 'training, director, recruit', 'administration, battalion, admin', 'development, personnel, abandoned', 'supports, support, sports', 'assignment, electrical, residential', 'division, family, crimes', 'collection, inspections, operations', 'technology, systems, information', 'projects, mangement, parking', 'planning, building, construction', 'manager, projects, project', 'firefighter, rescuer, recruit', 'officer, office, police', 'warehouse, welfare, caseworker', 'administrative, principal, executive', 'coordinator, coordinating, transit', 'operator, equipment, bus', 'specialist, special, therapist', 'technician, mechanic, supply', 'captain, chief, mcfrs', 'liquor, clerk, store', 'correctional, correction, corporal', 'crossing, planning, purchasing', 'information, technology, technologist', 'school, room, behavioral', 'services, service, customer', 'community, health, nurse', 'communications, telecommunications, safety', 'environmental, enviromental, procurement', 'librarian, library, libraries', 'program, programs, property', 'enforcement, inspector, permitting', 'income, assistance, client', 'sergeant, supervisor, supervisory', 'assistant, attorney, county', 'recreation, renovation, construction', 'candidate, sheriff, deputy', 'craftsworker, public, urban', 'master, registered, meter', 'lieutenant, facilities, maintenance']
+    ['maintenance, facilities, library', 'station, state, estate', 'district, patrol, 3rd', 'silver, spring, ride', 'traffic, safety, alcohol', 'medical, eligibility, media', 'gaithersburg, clarksburg, the', 'health, school, behavioral', 'criminal, section, labor', 'services, highway, service', 'emergency, commuter, centers', 'management, mangement, parking', 'nicholson, transit, transport', 'communications, division, communication', 'equipment, fleet, automotive', 'technology, systems, telephone', 'rockville, downtown, development', 'members, toddlers, mobile', 'custody, mcdc, customer', 'assault, family, sexual', 'environmental, regulatory, adolescent', 'welfare, child, childhood', 'investigative, investigations, explosive', 'security, mc311, mccf', 'supports, support, network', 'accounting, accounts, central', 'training, planning, recruit', 'protective, assessment, project', 'delivery, warehouse, operations', 'engineering, studies, urban', 'operator, equipment, bus', 'master, meter, registered', 'program, programs, procurement', 'candidate, police, licensed', 'officer, office, security', 'worker, social, leader', 'manager, projects, project', 'school, room, behavioral', 'coordinator, coordinating, depot', 'administrative, legislative, principal', 'correctional, correction, corporal', 'liquor, clerk, store', 'librarian, library, libraries', 'lieutenant, attendant, facilities', 'captain, chief, battalion', 'firefighter, recruit, rescuer', 'communications, telecommunications, safety', 'technician, mechanic, supply', 'community, health, nurse', 'information, technology, recreation', 'crossing, purchasing, engineer', 'sergeant, cadet, emergency', 'specialist, special, resource', 'assistance, assistant, income', 'warehouse, craftsworker, welfare', 'services, service, urban', 'representative, accountant, autobody', 'enforcement, permitting, inspector', 'therapist, sheriff, plumber', 'supervisor, supervisory, transit']
 
 
 
@@ -520,7 +520,7 @@ Let's look at the cross-validated R2 score of our model:
 
  .. code-block:: none
 
-    R2 score:  mean: 0.925; std: 0.011
+    R2 score:  mean: 0.918; std: 0.014
 
 
 
@@ -655,7 +655,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 9.895 seconds)
+   **Total running time of the script:** (1 minutes 9.725 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:

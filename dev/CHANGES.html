@@ -513,6 +513,12 @@ positionally now have to be passed as keywords.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/514">#514</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a>.</p></li>
 <li><p>Parallelized the <a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> column-wise. Parameters <cite>n_jobs</cite> and <cite>verbose</cite>
 added to the signature. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/582">#582</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
+<li><p>Introducing <a class="reference internal" href="generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>, a transformer performing
+aggregation on auxiliary tables followed by left-joining on a base table.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/600">#600</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a>.</p></li>
+<li><p>Introducing <a class="reference internal" href="generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggTarget</span></code></a>, a transformer performing
+aggregation on the target y, followed by left-joining on a base table.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/600">#600</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a>.</p></li>
 </ul>
 </section>
 <section id="minor-changes">
@@ -662,7 +668,7 @@ tries pandas default inference if it fails.
 on string similarities and the nearest neighbors matches are found for each category.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/291">#291</a> by <a class="reference external" href="https://github.com/jovan-stojanovic">Jovan Stojanovic</a> and <a class="reference external" href="https://github.com/LeoGrin">Leo Grinsztajn</a></p></li>
 <li><p>New experimental feature: <code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code>, a transformer
-that augments with <a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> the number of features in a main table by using information from auxilliary tables.
+that augments with <a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> the number of features in a main table by using information from auxiliary tables.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/409">#409</a> by <a class="reference external" href="https://github.com/jovan-stojanovic">Jovan Stojanovic</a></p></li>
 <li><p>Unnecessary API has been made private: everything (files, functions, classes)
 starting with an underscore shouldn’t be imported in your code. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/331">#331</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>

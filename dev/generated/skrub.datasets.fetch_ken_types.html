@@ -423,6 +423,8 @@ document.write(`
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.Joiner.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.Joiner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.AggJoiner.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.AggJoiner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.AggTarget.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.AggTarget</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectorizing a dataframe</span></p>
 <ul class="nav bd-sidenav">
@@ -469,6 +471,7 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_traffic_violations.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_traffic_violations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_drug_directory.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_drug_directory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_world_bank_indicator.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_world_bank_indicator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_movielens.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_movielens</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_table_aliases.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_table_aliases</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_embeddings.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_embeddings</a></li>
@@ -534,7 +537,7 @@ document.write(`
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_types<a class="headerlink" href="#skrub-datasets-fetch-ken-types" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_ken_types">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_ken_types</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">search</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_table_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all_entities'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/17b74a0/skrub/datasets/_ken_embeddings.py#L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_ken_types" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_ken_types</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">search</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_table_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all_entities'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b8b6254/skrub/datasets/_ken_embeddings.py#L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_ken_types" title="Link to this definition">#</a></dt>
 <dd><p>Helper function to search for KEN entity types.</p>
 <p>The result can then be used with fetch_ken_embeddings.</p>
 <dl class="field-list">
@@ -573,9 +576,9 @@ It is NOT possible to pass a custom figshare ID.</p>
 with background information.</a></p>
 <p class="rubric">Examples</p>
 <p>To get all the existing KEN types of entities:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">embedding_types</span> <span class="o">=</span> <span class="n">fetch_ken_types</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">embedding_types</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-<span class="go">                            Type</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">embedding_types</span> <span class="o">=</span> <span class="n">fetch_ken_types</span><span class="p">()</span>  
+<span class="gp">&gt;&gt;&gt; </span><span class="n">embedding_types</span><span class="o">.</span><span class="n">head</span><span class="p">()</span> 
+<span class="go">                                                Type</span>
 <span class="go">0                 wikicat_italian_male_screenwriters</span>
 <span class="go">1  wikicat_21st-century_roman_catholic_archbishop...</span>
 <span class="go">2                 wikicat_2000s_romantic_drama_films</span>
@@ -584,10 +587,10 @@ with background information.</a></p>
 </pre></div>
 </div>
 <p>Let’s search for all KEN types with the strings “dance” or “music”:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">embedding_filtered_types</span> <span class="o">=</span> <span class="n">fetch_ken_types</span><span class="p">(</span><span class="n">search</span><span class="o">=</span><span class="s2">&quot;dance|music&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">embedding_filtered_types</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-<span class="go">                                Type</span>
-<span class="go">0                    wikicat_music_festivals_in_france</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">embedding_filtered_types</span> <span class="o">=</span> <span class="n">fetch_ken_types</span><span class="p">(</span><span class="n">search</span><span class="o">=</span><span class="s2">&quot;dance|music&quot;</span><span class="p">)</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="n">embedding_filtered_types</span><span class="o">.</span><span class="n">head</span><span class="p">()</span> 
+<span class="go">                                                Type</span>
+<span class="go">0                  wikicat_music_festivals_in_france</span>
 <span class="go">1  wikicat_films_scored_by_bharadwaj_(music_direc...</span>
 <span class="go">2                  wikicat_english_music_journalists</span>
 <span class="go">3       wikicat_20th-century_american_male_musicians</span>

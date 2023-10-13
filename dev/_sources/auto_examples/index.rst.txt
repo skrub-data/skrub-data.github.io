@@ -131,6 +131,23 @@ Examples
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="MovieLens is a famous movie dataset used for both explicit and implicit recommender systems. It...">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_08_join_aggregation_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_08_join_aggregation.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Self-aggregation on MovieLens</div>
+    </div>
+
+
+.. raw:: html
+
     </div>
 
 
@@ -144,6 +161,7 @@ Examples
    /auto_examples/05_deduplication
    /auto_examples/06_ken_embeddings
    /auto_examples/07_multiple_key_join
+   /auto_examples/08_join_aggregation
 
 
 

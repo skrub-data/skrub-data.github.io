@@ -421,6 +421,8 @@ document.write(`
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.Joiner.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.Joiner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.AggJoiner.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.AggJoiner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.AggTarget.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.AggTarget</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Vectorizing a dataframe</span></p>
 <ul class="nav bd-sidenav">
@@ -467,6 +469,7 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_traffic_violations.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_traffic_violations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_drug_directory.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_drug_directory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_world_bank_indicator.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_world_bank_indicator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_movielens.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_movielens</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_table_aliases.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_table_aliases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_types.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_embeddings.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_ken_embeddings</a></li>
@@ -532,7 +535,7 @@ document.write(`
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pd_join<a class="headerlink" href="#skrub-dataframe-pd-join" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.dataframe.pd_join">
-<span class="sig-prename descclassname"><span class="pre">skrub.dataframe.</span></span><span class="sig-name descname"><span class="pre">pd_join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">left_on</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right_on</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/17b74a0/skrub/dataframe/_pandas.py#L109"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.dataframe.pd_join" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.dataframe.</span></span><span class="sig-name descname"><span class="pre">pd_join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">left_on</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right_on</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b8b6254/skrub/dataframe/_pandas.py#L109"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.dataframe.pd_join" title="Link to this definition">#</a></dt>
 <dd><p>Left join two <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a>.</p>
 <p>This function uses the <code class="docutils literal notranslate"><span class="pre">dataframe.merge</span></code> method from Pandas.</p>
 <dl class="field-list">
@@ -542,9 +545,9 @@ document.write(`
 </dd>
 <dt><strong>right</strong><span class="classifier">pd.DataFrame,</span></dt><dd><p>The right dataframe to left-join.</p>
 </dd>
-<dt><strong>left_on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or Iterable[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>],</span></dt><dd><p>Left keys to merge on.</p>
+<dt><strong>left_on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or Iterable[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>]</span></dt><dd><p>Left keys to merge on.</p>
 </dd>
-<dt><strong>right_on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or Iterable[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>],</span></dt><dd><p>Right keys to merge on.</p>
+<dt><strong>right_on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or Iterable[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>]</span></dt><dd><p>Right keys to merge on.</p>
 </dd>
 </dl>
 </dd>

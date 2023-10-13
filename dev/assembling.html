@@ -505,14 +505,20 @@ has no need for pre-cleaning.</p>
 </section>
 <section id="joining-external-tables-for-machine-learning">
 <h2>Joining external tables for machine learning<a class="headerlink" href="#joining-external-tables-for-machine-learning" title="Link to this heading">#</a></h2>
-<p>Joining is pretty straigthforward for two tables: you only need to identify
+<p>Joining is straigthforward for two tables because you only need to identify
 the common key.</p>
-<p>However, for more complex analysis, merging multiple tables is necessary.
-skrub provides the <a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a> as a convenient solution:
-multiple fuzzy joins can be performed at the same time, given a set of
-input tables and key columns.</p>
-<p>An advantage is the scikit-learn compatibility of this class:
-easily introduced into machine learning pipelines.</p>
+<p>In addition, skrub also enable more advanced analysis:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a>: fuzzy-join multiple external tables using a scikit-learn
+transformer, which can be used in a scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>.
+Pipelines are useful for cross-validation and hyper-parameter search, but also
+for model deployment.</p></li>
+<li><p><a class="reference internal" href="generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>: instead of performing 1:1 joins like Joiner, AggJoiner performs 1:N
+joins. It aggregate external tables first, then join them on the main table.</p></li>
+<li><p><a class="reference internal" href="generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggTarget</span></code></a>: in some settings, one can derive powerful features from
+the target <cite>y</cite> itself. AggTarget aggregates the target without risking data
+leakage, then join the result back on the main table, similar to AggJoiner.</p></li>
+</ul>
 </section>
 <section id="going-further-embeddings-for-better-analytics">
 <h2>Going further: embeddings for better analytics<a class="headerlink" href="#going-further-embeddings-for-better-analytics" title="Link to this heading">#</a></h2>
