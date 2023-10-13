@@ -440,7 +440,7 @@ corresponding columns:
  .. code-block:: none
 
 
-    ['maintenance, facilities, library', 'station, state, estate', 'district, patrol, 3rd', 'silver, spring, ride', 'traffic, safety, alcohol', 'medical, eligibility, media', 'gaithersburg, clarksburg, the', 'health, school, behavioral', 'criminal, section, labor', 'services, highway, service', 'emergency, commuter, centers', 'management, mangement, parking', 'nicholson, transit, transport', 'communications, division, communication', 'equipment, fleet, automotive', 'technology, systems, telephone', 'rockville, downtown, development', 'members, toddlers, mobile', 'custody, mcdc, customer', 'assault, family, sexual', 'environmental, regulatory, adolescent', 'welfare, child, childhood', 'investigative, investigations, explosive', 'security, mc311, mccf', 'supports, support, network', 'accounting, accounts, central', 'training, planning, recruit', 'protective, assessment, project', 'delivery, warehouse, operations', 'engineering, studies, urban', 'operator, equipment, bus', 'master, meter, registered', 'program, programs, procurement', 'candidate, police, licensed', 'officer, office, security', 'worker, social, leader', 'manager, projects, project', 'school, room, behavioral', 'coordinator, coordinating, depot', 'administrative, legislative, principal', 'correctional, correction, corporal', 'liquor, clerk, store', 'librarian, library, libraries', 'lieutenant, attendant, facilities', 'captain, chief, battalion', 'firefighter, recruit, rescuer', 'communications, telecommunications, safety', 'technician, mechanic, supply', 'community, health, nurse', 'information, technology, recreation', 'crossing, purchasing, engineer', 'sergeant, cadet, emergency', 'specialist, special, resource', 'assistance, assistant, income', 'warehouse, craftsworker, welfare', 'services, service, urban', 'representative, accountant, autobody', 'enforcement, permitting, inspector', 'therapist, sheriff, plumber', 'supervisor, supervisory, transit']
+    ['payroll, 1st, 2nd', 'behavioral, health, school', 'administration, battalion, admin', 'maintenance, facilities, recruit', 'silver, spring, urban', 'security, mccf, unit', 'safety, collision, instruction', 'welfare, children, childhood', 'engineering, planning, parking', 'eligibility, assistance, assisted', 'services, highway, service', 'supports, support, network', 'investigative, investigations, explosive', 'protective, programs, program', '5th, 4th, 6th', 'gaithersburg, clarksburg, the', 'district, patrol, 3rd', 'nicholson, transit, taxicab', 'emergency, centers, commuter', 'delivery, warehouse, operations', 'custody, members, customer', 'management, equipment, budget', 'director, automated, office', 'communications, communication, applications', 'family, abandoned, crimes', 'station, state, estate', 'animal, supervision, division', 'rockville, twinbrook, downtown', 'technology, systems, telephone', 'development, accounting, residential', 'corporal, pfc, private', 'therapist, psychiatrist, plumber', 'officer, office, traffic', 'firefighter, rescuer, master', 'mechanic, hvac, vehicle', 'specialist, special, resource', 'manager, budget, management', 'information, technology, recreation', 'school, room, behavioral', 'community, health, nurse', 'operator, equipment, bus', 'coordinator, coordinating, forest', 'liquor, clerk, store', 'legislative, principal, executive', 'captain, rescue, chief', 'communications, telecommunications, safety', 'crossing, background, engineer', 'income, assistance, client', 'supervisor, supervisory, transit', 'sergeant, police, cadet', 'accountant, assistant, library', 'warehouse, welfare, caseworker', 'enforcement, permitting, inspector', 'program, programs, projects', 'lieutenant, crew, maintenance', 'candidate, sheriff, deputy', 'administrative, administration, administrator', 'regional, correctional, attendant', 'services, service, urban', 'supply, electrician, systems']
 
 
 
@@ -632,13 +632,14 @@ And plotting the results:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 184-187
+.. GENERATED FROM PYTHON SOURCE LINES 184-188
 
-We can deduce from this data that the three factors that define the most
-the salary are: being hired for a long time, being a manager,
-and having a permanent, full-time job.
+We can see that features such the time elapsed since being hired, having a full-time employment, and the position, seem to be the most informative for prediction.
+However, feature importances must not be over-interpreted -- they capture statistical associations `rather than causal effects <https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation>`_.
+Moreover, the fast feature importance method used here suffers from biases favouring features with larger cardinality, as illustrated in a scikit-learn `example <https://scikit-learn.org/dev/auto_examples/inspection/plot_permutation_importance.html#sphx-glr-auto-examples-inspection-plot-permutation-importance-py>`_.
+In general we should prefer |permutation importances|, but it is a slower method.
 
-.. GENERATED FROM PYTHON SOURCE LINES 189-200
+.. GENERATED FROM PYTHON SOURCE LINES 190-201
 
 Conclusion
 ----------
@@ -655,7 +656,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 9.725 seconds)
+   **Total running time of the script:** (1 minutes 16.833 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:

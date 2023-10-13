@@ -44,7 +44,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=01d92578" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=1b6571a4" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
@@ -770,8 +770,8 @@ function:</p>
 </div>
 <br />
 <br /></section>
-<section id="a-correspondance-problem">
-<h2>A correspondance problem<a class="headerlink" href="#a-correspondance-problem" title="Link to this heading">#</a></h2>
+<section id="a-correspondence-problem">
+<h2>A correspondence problem<a class="headerlink" href="#a-correspondence-problem" title="Link to this heading">#</a></h2>
 <p>Alas, the entries for countries do not perfectly match between our
 original table (df), and those that we downloaded from the worldbank
 (gdppc):</p>
@@ -911,11 +911,11 @@ original table (df), and those that we downloaded from the worldbank
 <br />
 <br /><p>We can see that Yemen is written “Yemen*” on one side, and
 “Yemen, Rep.” on the other.</p>
-<p>We also have entries that probably do not have correspondances: “World”
+<p>We also have entries that probably do not have correspondences: “World”
 on one side, whereas the other table only has country-level data.</p>
 </section>
-<section id="joining-tables-with-imperfect-correspondance">
-<h2>Joining tables with imperfect correspondance<a class="headerlink" href="#joining-tables-with-imperfect-correspondance" title="Link to this heading">#</a></h2>
+<section id="joining-tables-with-imperfect-correspondence">
+<h2>Joining tables with imperfect correspondence<a class="headerlink" href="#joining-tables-with-imperfect-correspondence" title="Link to this heading">#</a></h2>
 <p>We will now join our initial table, df, with the 3 additional ones that
 we have extracted.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># We will ignore the warnings:</span>
@@ -1498,7 +1498,7 @@ Countries with higher life expectancy are also happier.</p>
 </div>
 </div>
 <br />
-<br /><p>Let’s take a look at their correspondance in a figure:</p>
+<br /><p>Let’s take a look at their correspondence in a figure:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes" class="sphx-glr-backref-module-matplotlib-axes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">fig</span></a> <span class="o">=</span> <a href="http://seaborn.pydata.org/generated/seaborn.regplot.html#seaborn.regplot" title="seaborn.regplot" class="sphx-glr-backref-module-seaborn sphx-glr-backref-type-py-function"><span class="n">sns</span><span class="o">.</span><span class="n">regplot</span></a><span class="p">(</span>
     <span class="n">data</span><span class="o">=</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df3</span></a><span class="p">,</span>
@@ -1795,7 +1795,7 @@ refitting the pipeline on the data.</p>
 </aside>
 <p>Great, by evaluating the correct <code class="docutils literal notranslate"><span class="pre">match_score</span></code> we improved our
 results significantly!</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 12.406 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 14.630 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-04-fuzzy-joining-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -1860,8 +1860,8 @@ results significantly!</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-importing-and-preprocessing">Data Importing and preprocessing</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-tables-from-other-sources">Additional tables from other sources</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-correspondance-problem">A correspondance problem</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#joining-tables-with-imperfect-correspondance">Joining tables with imperfect correspondance</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-correspondence-problem">A correspondence problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#joining-tables-with-imperfect-correspondence">Joining tables with imperfect correspondence</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#joining-gdp-per-capita-table">1. Joining GDP per capita table</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#joining-life-expectancy-table">2. Joining life expectancy table</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#joining-legal-rights-strength-table">3. Joining legal rights strength table</a></li>

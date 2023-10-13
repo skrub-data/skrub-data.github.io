@@ -418,7 +418,7 @@ And a table with legal rights strength by country:
 
 .. GENERATED FROM PYTHON SOURCE LINES 86-92
 
-A correspondance problem
+A correspondence problem
 ------------------------
 
 Alas, the entries for countries do not perfectly match between our
@@ -589,12 +589,12 @@ original table (df), and those that we downloaded from the worldbank
 We can see that Yemen is written "Yemen*" on one side, and
 "Yemen, Rep." on the other.
 
-We also have entries that probably do not have correspondances: "World"
+We also have entries that probably do not have correspondences: "World"
 on one side, whereas the other table only has country-level data.
 
 .. GENERATED FROM PYTHON SOURCE LINES 106-112
 
-Joining tables with imperfect correspondance
+Joining tables with imperfect correspondence
 --------------------------------------------
 
 We will now join our initial table, df, with the 3 additional ones that
@@ -1340,7 +1340,7 @@ And the table with a measure of legal rights strength in the country:
 
 .. GENERATED FROM PYTHON SOURCE LINES 284-285
 
-Let's take a look at their correspondance in a figure:
+Let's take a look at their correspondence in a figure:
 
 .. GENERATED FROM PYTHON SOURCE LINES 285-297
 
@@ -1808,7 +1808,7 @@ results significantly!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 12.406 seconds)
+   **Total running time of the script:** (0 minutes 14.630 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining.py:
