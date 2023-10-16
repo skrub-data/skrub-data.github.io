@@ -221,14 +221,16 @@ Plotting the new representation using multi-dimensional scaling
 Let's now plot a couple of points at random using a low-dimensional
 representation to get an intuition of what the |SE| is doing:
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-103
+.. GENERATED FROM PYTHON SOURCE LINES 93-105
 
 .. code-block:: Python
 
 
     from sklearn.manifold import MDS
 
-    mds = MDS(dissimilarity="precomputed", n_init=10, random_state=42)
+    mds = MDS(
+        dissimilarity="precomputed", n_init=10, random_state=42, normalized_stress=False
+    )
     two_dim_data = mds.fit_transform(1 - transformed_values)
     # transformed values lie in the 0-1 range,
     # so 1-transformed_value yields a positive dissimilarity matrix
@@ -243,19 +245,17 @@ representation to get an intuition of what the |SE| is doing:
 
  .. code-block:: none
 
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/manifold/_mds.py:298: FutureWarning: The default value of `normalized_stress` will change to `'auto'` in version 1.4. To suppress this warning, manually set the value of `normalized_stress`.
-      warnings.warn(
     (443, 2)
     (443,)
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-105
+.. GENERATED FROM PYTHON SOURCE LINES 106-107
 
 We first quickly fit a KNN so that the plots does not get too busy:
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-119
+.. GENERATED FROM PYTHON SOURCE LINES 107-121
 
 .. code-block:: Python
 
@@ -280,11 +280,11 @@ We first quickly fit a KNN so that the plots does not get too busy:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 120-121
+.. GENERATED FROM PYTHON SOURCE LINES 122-123
 
 Then we plot it, adding the categories in the scatter plot:
 
-.. GENERATED FROM PYTHON SOURCE LINES 121-136
+.. GENERATED FROM PYTHON SOURCE LINES 123-138
 
 .. code-block:: Python
 
@@ -321,14 +321,14 @@ Then we plot it, adding the categories in the scatter plot:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 137-141
+.. GENERATED FROM PYTHON SOURCE LINES 139-143
 
 Heatmap of the similarity matrix
 ................................
 
 We can also plot the distance matrix for those observations:
 
-.. GENERATED FROM PYTHON SOURCE LINES 141-153
+.. GENERATED FROM PYTHON SOURCE LINES 143-155
 
 .. code-block:: Python
 
@@ -356,7 +356,7 @@ We can also plot the distance matrix for those observations:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-160
+.. GENERATED FROM PYTHON SOURCE LINES 156-162
 
 As shown in the previous plot, we see that the nearest neighbor of
 "Communication Equipment Technician"
@@ -365,13 +365,13 @@ very close to senior "Supply Technician": therefore, we grasp the
 "Communication" part (not initially present in the category as a unique word)
 as well as the "Technician" part of this category.
 
-.. GENERATED FROM PYTHON SOURCE LINES 163-166
+.. GENERATED FROM PYTHON SOURCE LINES 165-168
 
 Feature interpretation with the |Gap|
 -------------------------------------
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 168-173
+.. GENERATED FROM PYTHON SOURCE LINES 170-175
 
 The |Gap| is a better encoder than the
 |SE| in the sense that it is more scalable and
@@ -379,7 +379,7 @@ interpretable, which we will present now.
 
 First, let's retrieve the dirty column to encode:
 
-.. GENERATED FROM PYTHON SOURCE LINES 173-179
+.. GENERATED FROM PYTHON SOURCE LINES 175-181
 
 .. code-block:: Python
 
@@ -409,7 +409,7 @@ First, let's retrieve the dirty column to encode:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 180-186
+.. GENERATED FROM PYTHON SOURCE LINES 182-188
 
 .. _example_gap_encoder:
 
@@ -418,7 +418,7 @@ Encoding dirty job titles
 
 Then, we'll create an instance of the |Gap| with 10 components:
 
-.. GENERATED FROM PYTHON SOURCE LINES 186-191
+.. GENERATED FROM PYTHON SOURCE LINES 188-193
 
 .. code-block:: Python
 
@@ -434,12 +434,12 @@ Then, we'll create an instance of the |Gap| with 10 components:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 192-194
+.. GENERATED FROM PYTHON SOURCE LINES 194-196
 
 Finally, we'll fit the model on the dirty categorical data and transform it
 in order to obtain encoded vectors of size 10:
 
-.. GENERATED FROM PYTHON SOURCE LINES 194-198
+.. GENERATED FROM PYTHON SOURCE LINES 196-200
 
 .. code-block:: Python
 
@@ -460,7 +460,7 @@ in order to obtain encoded vectors of size 10:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 199-209
+.. GENERATED FROM PYTHON SOURCE LINES 201-211
 
 Interpreting encoded vectors
 ............................
@@ -473,7 +473,7 @@ To interpret these latent topics, we select for each of them a few labels
 from the input data with the highest activations.
 In the example below we select 3 labels to summarize each topic.
 
-.. GENERATED FROM PYTHON SOURCE LINES 209-215
+.. GENERATED FROM PYTHON SOURCE LINES 211-217
 
 .. code-block:: Python
 
@@ -505,7 +505,7 @@ In the example below we select 3 labels to summarize each topic.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 216-221
+.. GENERATED FROM PYTHON SOURCE LINES 218-223
 
 As expected, topics capture labels that frequently co-occur. For instance,
 the labels "firefighter", "rescuer", "rescue" appear together in
@@ -513,7 +513,7 @@ the labels "firefighter", "rescuer", "rescue" appear together in
 
 This enables us to understand the encoding of different samples
 
-.. GENERATED FROM PYTHON SOURCE LINES 221-233
+.. GENERATED FROM PYTHON SOURCE LINES 223-235
 
 .. code-block:: Python
 
@@ -541,7 +541,7 @@ This enables us to understand the encoding of different samples
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 234-237
+.. GENERATED FROM PYTHON SOURCE LINES 236-239
 
 As we can see, each dirty category encodes on a small number of topics,
 These can thus be reliably used to summarize each topic, which are in
@@ -550,7 +550,7 @@ effect latent categories captured from the data.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 9.723 seconds)
+   **Total running time of the script:** (0 minutes 8.679 seconds)
 
 
 .. _sphx_glr_download_auto_examples_02_investigating_dirty_categories.py:
