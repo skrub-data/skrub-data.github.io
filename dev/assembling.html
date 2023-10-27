@@ -522,6 +522,16 @@ the target <cite>y</cite> itself. AggTarget aggregates the target without riskin
 leakage, then join the result back on the main table, similar to AggJoiner.</p></li>
 </ul>
 </section>
+<section id="column-selection-inside-a-pipeline">
+<h2>Column selection inside a pipeline<a class="headerlink" href="#column-selection-inside-a-pipeline" title="Link to this heading">#</a></h2>
+<p>Besides joins, another common operation on a dataframe is to select a subset of its columns (also known as a projection).
+We sometimes need to perform such a selection in the middle of a pipeline, for example if we need a column for a join (with <a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a>), but in a subsequent step we want to drop that column before fitting an estimator.</p>
+<p>skrub provides transformers to perform such an operation:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectCols</span></code></a> allows specifying the columns we want to keep.</p></li>
+<li><p>Conversely <a class="reference internal" href="generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropCols</span></code></a> allows specifying the columns we want to discard.</p></li>
+</ul>
+</section>
 <section id="going-further-embeddings-for-better-analytics">
 <h2>Going further: embeddings for better analytics<a class="headerlink" href="#going-further-embeddings-for-better-analytics" title="Link to this heading">#</a></h2>
 <p>Data collection comes before joining, but is also an
@@ -584,6 +594,7 @@ useful data that will be joined to another table.</p>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuzzy-joining-tables">Fuzzy joining tables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#joining-external-tables-for-machine-learning">Joining external tables for machine learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#column-selection-inside-a-pipeline">Column selection inside a pipeline</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#going-further-embeddings-for-better-analytics">Going further: embeddings for better analytics</a></li>
 </ul>
   </nav></div>

@@ -629,10 +629,6 @@ function:</p>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">gdppc</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:678: UserWarning: Could not find the dataset &#39;NY.GDP.PCAP.CD&#39; locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/NY.GDP.PCAP.CD.csv.
-  info = _fetch_world_bank_data(dataset_id, data_directory)
-</pre></div>
-</div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>
 <style scoped>
@@ -682,10 +678,6 @@ function:</p>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">life_exp</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:678: UserWarning: Could not find the dataset &#39;SP.DYN.LE00.IN&#39; locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/SP.DYN.LE00.IN.csv.
-  info = _fetch_world_bank_data(dataset_id, data_directory)
-</pre></div>
-</div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>
 <style scoped>
@@ -733,10 +725,6 @@ function:</p>
 <br /><p>And a table with legal rights strength by country:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">legal_rights</span></a> <span class="o">=</span> <a href="../generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_world_bank_indicator</span></a><span class="p">(</span><span class="s2">&quot;IC.LGL.CRED.XQ&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">legal_rights</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:678: UserWarning: Could not find the dataset &#39;IC.LGL.CRED.XQ&#39; locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/IC.LGL.CRED.XQ.csv.
-  info = _fetch_world_bank_data(dataset_id, data_directory)
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -1581,198 +1569,30 @@ a main table.</p>
 <section id="instantiating-the-transformer">
 <span id="example-joiner"></span><h3>Instantiating the transformer<a class="headerlink" href="#instantiating-the-transformer" title="Link to this heading">#</a></h3>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="p">[</span><span class="s2">&quot;Happiness score&quot;</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>We gather the auxilliary tables into a
-list of (tables, keys) for the <cite>tables</cite> parameter.
-An instance of the transformer with the necessary information is:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df</span><span class="o">.</span><span class="n">drop</span></a><span class="p">(</span><span class="s2">&quot;Happiness score&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
-<a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">joiner</span></a> <span class="o">=</span> <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">(</span>
-    <span class="n">tables</span><span class="o">=</span><span class="p">[</span>
-        <span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">gdppc</span></a><span class="p">,</span> <span class="s2">&quot;Country Name&quot;</span><span class="p">),</span>
-        <span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">life_exp</span></a><span class="p">,</span> <span class="s2">&quot;Country Name&quot;</span><span class="p">),</span>
-        <span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">legal_rights</span></a><span class="p">,</span> <span class="s2">&quot;Country Name&quot;</span><span class="p">),</span>
-    <span class="p">],</span>
-    <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="fitting-and-transforming-into-the-final-table">
-<h3>Fitting and transforming into the final table<a class="headerlink" href="#fitting-and-transforming-into-the-final-table" title="Link to this heading">#</a></h3>
-<p>To get our final joined table we will fit and transform the main table (df)
-with our create instance of the <a class="reference internal" href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a>:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df_final</span></a> <span class="o">=</span> <a href="../generated/skrub.Joiner.html#skrub.Joiner.fit_transform" title="skrub.Joiner.fit_transform" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">joiner</span><span class="o">.</span><span class="n">fit_transform</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="p">)</span>
-
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df_final</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="output_subarea output_html rendered_html output_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Country</th>
-      <th>Happiness score</th>
-      <th>Country Name</th>
-      <th>GDP per capita (current US$)</th>
-      <th>Country Name_aux</th>
-      <th>Life expectancy at birth, total (years)</th>
-      <th>Country Name_aux</th>
-      <th>Strength of legal rights index (0=weak to 12=strong)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Finland</td>
-      <td>7821.0</td>
-      <td>Finland</td>
-      <td>50536.624467</td>
-      <td>Finland</td>
-      <td>81.934146</td>
-      <td>Finland</td>
-      <td>6.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Denmark</td>
-      <td>7636.0</td>
-      <td>Denmark</td>
-      <td>66983.132002</td>
-      <td>Denmark</td>
-      <td>81.404878</td>
-      <td>Denmark</td>
-      <td>8.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Iceland</td>
-      <td>7557.0</td>
-      <td>Iceland</td>
-      <td>72902.979954</td>
-      <td>Iceland</td>
-      <td>83.117073</td>
-      <td>Iceland</td>
-      <td>4.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Switzerland</td>
-      <td>7512.0</td>
-      <td>Switzerland</td>
-      <td>92101.469741</td>
-      <td>Switzerland</td>
-      <td>83.851220</td>
-      <td>Switzerland</td>
-      <td>6.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Netherlands</td>
-      <td>7415.0</td>
-      <td>Netherlands</td>
-      <td>55985.403426</td>
-      <td>Netherlands</td>
-      <td>81.460976</td>
-      <td>Netherlands</td>
-      <td>2.0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Luxembourg*</td>
-      <td>7404.0</td>
-      <td>Luxembourg</td>
-      <td>126426.089934</td>
-      <td>Luxembourg</td>
-      <td>82.748780</td>
-      <td>Luxembourg</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Sweden</td>
-      <td>7384.0</td>
-      <td>Sweden</td>
-      <td>55873.220811</td>
-      <td>Sweden</td>
-      <td>83.156098</td>
-      <td>Sweden</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Norway</td>
-      <td>7365.0</td>
-      <td>Norway</td>
-      <td>106148.778628</td>
-      <td>Norway</td>
-      <td>83.163415</td>
-      <td>Norway</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Israel</td>
-      <td>7364.0</td>
-      <td>Israel</td>
-      <td>54659.753964</td>
-      <td>Israel</td>
-      <td>82.500000</td>
-      <td>Israel</td>
-      <td>6.0</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>New Zealand</td>
-      <td>7200.0</td>
-      <td>New Zealand</td>
-      <td>48249.264015</td>
-      <td>New Zealand</td>
-      <td>82.207317</td>
-      <td>New Zealand</td>
-      <td>12.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-<br />
-<br /><p>And that’s it! As previously, we now have a big table
-ready for machine learning.
-Let’s create our machine learning pipeline:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.make_column_transformer.html#sklearn.compose.make_column_transformer" title="sklearn.compose.make_column_transformer" class="sphx-glr-backref-module-sklearn-compose sphx-glr-backref-type-py-function"><span class="n">make_column_transformer</span></a>
+<span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">,</span> <a href="../generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">SelectCols</span></a><span class="p">,</span> <a href="../generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">DropCols</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a>
 
-<span class="c1"># We include only the columns that will be pertinent for our regression:</span>
-<a href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="sklearn.compose.ColumnTransformer" class="sphx-glr-backref-module-sklearn-compose sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">encoder</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.make_column_transformer.html#sklearn.compose.make_column_transformer" title="sklearn.compose.make_column_transformer" class="sphx-glr-backref-module-sklearn-compose sphx-glr-backref-type-py-function"><span class="n">make_column_transformer</span></a><span class="p">(</span>
-    <span class="p">(</span>
-        <span class="s2">&quot;passthrough&quot;</span><span class="p">,</span>
-        <span class="p">[</span>
-            <span class="s2">&quot;GDP per capita (current US$)&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Life expectancy at birth, total (years)&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Strength of legal rights index (0=weak to 12=strong)&quot;</span><span class="p">,</span>
-        <span class="p">],</span>
-    <span class="p">),</span>
-    <span class="n">remainder</span><span class="o">=</span><span class="s2">&quot;drop&quot;</span><span class="p">,</span>
-<span class="p">)</span>
+<span class="c1"># We create a selector that we will insert at the end of our pipeline, to</span>
+<span class="c1"># select the relevant columns before fitting the regressor</span>
 
-<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a><span class="p">(</span><a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">joiner</span></a><span class="p">,</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="sklearn.compose.ColumnTransformer" class="sphx-glr-backref-module-sklearn-compose sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">encoder</span></a><span class="p">,</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a><span class="p">())</span>
+<a href="../generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">selector</span></a> <span class="o">=</span> <a href="../generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">SelectCols</span></a><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;GDP per capita (current US$)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Life expectancy at birth, total (years)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Strength of legal rights index (0=weak to 12=strong)&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a><span class="p">(</span>
+    <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">((</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">gdppc</span></a><span class="p">,</span> <span class="s2">&quot;Country Name&quot;</span><span class="p">),</span> <span class="s2">&quot;Country&quot;</span><span class="p">),</span>
+    <a href="../generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">DropCols</span></a><span class="p">(</span><span class="s2">&quot;Country Name&quot;</span><span class="p">),</span>
+    <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">((</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">life_exp</span></a><span class="p">,</span> <span class="s2">&quot;Country Name&quot;</span><span class="p">),</span> <span class="s2">&quot;Country&quot;</span><span class="p">),</span>
+    <a href="../generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">DropCols</span></a><span class="p">(</span><span class="s2">&quot;Country Name&quot;</span><span class="p">),</span>
+    <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">((</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">legal_rights</span></a><span class="p">,</span> <span class="s2">&quot;Country Name&quot;</span><span class="p">),</span> <span class="s2">&quot;Country&quot;</span><span class="p">),</span>
+    <a href="../generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">selector</span></a><span class="p">,</span>
+    <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a><span class="p">(),</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 <p>And the best part is that we are now able to evaluate the parameters of the <a class="reference internal" href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>.
@@ -1781,7 +1601,11 @@ introduced into a grid search:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="sklearn.model_selection.GridSearchCV" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class"><span class="n">GridSearchCV</span></a>
 
 <span class="c1"># We will test four possible values of match_score:</span>
-<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">params</span></a> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;joiner__match_score&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]}</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">params</span></a> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;joiner-1__match_score&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">],</span>
+    <span class="s2">&quot;joiner-2__match_score&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">],</span>
+    <span class="s2">&quot;joiner-3__match_score&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">],</span>
+<span class="p">}</span>
 
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="sklearn.model_selection.GridSearchCV" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">grid</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="sklearn.model_selection.GridSearchCV" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class"><span class="n">GridSearchCV</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">params</span></a><span class="p">)</span>
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV.fit" title="sklearn.model_selection.GridSearchCV.fit" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-method"><span class="n">grid</span><span class="o">.</span><span class="n">fit</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
@@ -1789,7 +1613,7 @@ introduced into a grid search:</p>
 <span class="nb">print</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">grid</span><span class="o">.</span><span class="n">best_params_</span></a><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;joiner__match_score&#39;: 0.2}
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;joiner-1__match_score&#39;: 0.9, &#39;joiner-2__match_score&#39;: 0.9, &#39;joiner-3__match_score&#39;: 0.9}
 </pre></div>
 </div>
 <p>The grid searching gave us the best value of 0.5 for the parameter
@@ -1797,7 +1621,7 @@ introduced into a grid search:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean R2 score with pipeline is </span><span class="si">{</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV.score" title="sklearn.model_selection.GridSearchCV.score" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-method"><span class="n">grid</span><span class="o">.</span><span class="n">score</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="p">,</span><span class="w"> </span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Mean R2 score with pipeline is 0.83
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Mean R2 score with pipeline is 0.75
 </pre></div>
 </div>
 <aside class="topic">
@@ -1809,7 +1633,7 @@ refitting the pipeline on the data.</p>
 </aside>
 <p>Great, by evaluating the correct <code class="docutils literal notranslate"><span class="pre">match_score</span></code> we improved our
 results significantly!</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 13.991 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 30.919 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-04-fuzzy-joining-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -1884,7 +1708,6 @@ results significantly!</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prediction-model">Prediction model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-joiner-to-fuzzy-join-multiple-tables">Using the <code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code> to fuzzy join multiple tables</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instantiating-the-transformer">Instantiating the transformer</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fitting-and-transforming-into-the-final-table">Fitting and transforming into the final table</a></li>
 </ul>
 </li>
 </ul>
