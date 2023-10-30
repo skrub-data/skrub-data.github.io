@@ -262,12 +262,8 @@ As mentioned earlier, the |TableVectorizer| makes use of the
 
  .. code-block:: none
 
-    ['date.utc_month',
-     'date.utc_day',
-     'date.utc_hour',
-     'city_Antwerpen',
-     'city_London',
-     'city_Paris']
+    array(['date.utc_month', 'date.utc_day', 'date.utc_hour',
+           'city_Antwerpen', 'city_London', 'city_Paris'], dtype=object)
 
 
 
@@ -298,13 +294,9 @@ Here, for example, we want it to extract the day of the week.
 
  .. code-block:: none
 
-    ['date.utc_month',
-     'date.utc_day',
-     'date.utc_hour',
-     'date.utc_dayofweek',
-     'city_Antwerpen',
-     'city_London',
-     'city_Paris']
+    array(['date.utc_month', 'date.utc_day', 'date.utc_hour',
+           'date.utc_dayofweek', 'city_Antwerpen', 'city_London',
+           'city_Paris'], dtype=object)
 
 
 
@@ -610,7 +602,7 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 4.547 seconds)
+   **Total running time of the script:** (0 minutes 4.659 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:
