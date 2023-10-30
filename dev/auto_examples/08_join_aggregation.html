@@ -729,7 +729,16 @@ columns, and doesn’t interact with numerical columns.</p>
 <span class="p">)</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_08_join_aggregation_001.png" srcset="../_images/sphx_glr_08_join_aggregation_001.png" alt="Daily volume of ratings" class = "sphx-glr-single-img"/><p>We also display the distribution of our target <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<img src="../_images/sphx_glr_08_join_aggregation_001.png" srcset="../_images/sphx_glr_08_join_aggregation_001.png" alt="Daily volume of ratings" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/examples/08_join_aggregation.py:109: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x=x, y=y, palette=cmap(norm(y)))
+/home/circleci/project/examples/08_join_aggregation.py:109: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
+  sns.barplot(x=x, y=y, palette=cmap(norm(y)))
+</pre></div>
+</div>
+<p>We also display the distribution of our target <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">rating_count</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html#pandas.Series.value_counts" title="pandas.Series.value_counts" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">y</span><span class="o">.</span><span class="n">value_counts</span></a><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
 
 <span class="n">make_barplot</span><span class="p">(</span>
@@ -739,7 +748,16 @@ columns, and doesn’t interact with numerical columns.</p>
 <span class="p">)</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_08_join_aggregation_002.png" srcset="../_images/sphx_glr_08_join_aggregation_002.png" alt="Distribution of ratings given to movies" class = "sphx-glr-single-img"/></section>
+<img src="../_images/sphx_glr_08_join_aggregation_002.png" srcset="../_images/sphx_glr_08_join_aggregation_002.png" alt="Distribution of ratings given to movies" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/examples/08_join_aggregation.py:109: FutureWarning:
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.barplot(x=x, y=y, palette=cmap(norm(y)))
+/home/circleci/project/examples/08_join_aggregation.py:109: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
+  sns.barplot(x=x, y=y, palette=cmap(norm(y)))
+</pre></div>
+</div>
+</section>
 <section id="aggtarget-aggregate-y-then-join">
 <h2>AggTarget: aggregate y, then join<a class="headerlink" href="#aggtarget-aggregate-y-then-join" title="Link to this heading">#</a></h2>
 <p>We have just extracted datetime features from timestamps.</p>
@@ -1198,7 +1216,7 @@ performance: computing the mean yields a single statistic, whereas histograms
 yield a density over a reduced set of bins, and <code class="docutils literal notranslate"><span class="pre">&quot;value_counts&quot;</span></code> yields an
 exhaustive histogram over all the possible values of ratings
 (here 10 different values, from 0.5 to 5).</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 17.533 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 16.982 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-08-join-aggregation-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/08_join_aggregation.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

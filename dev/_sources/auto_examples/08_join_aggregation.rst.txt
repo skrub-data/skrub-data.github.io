@@ -352,6 +352,18 @@ We can now make a couple of plots and gain some insight on our dataset.
    :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/examples/08_join_aggregation.py:109: FutureWarning: 
+
+    Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+      sns.barplot(x=x, y=y, palette=cmap(norm(y)))
+    /home/circleci/project/examples/08_join_aggregation.py:109: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
+      sns.barplot(x=x, y=y, palette=cmap(norm(y)))
+
 
 
 
@@ -380,6 +392,18 @@ We also display the distribution of our target ``y``.
    :srcset: /auto_examples/images/sphx_glr_08_join_aggregation_002.png
    :class: sphx-glr-single-img
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/examples/08_join_aggregation.py:109: FutureWarning: 
+
+    Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+      sns.barplot(x=x, y=y, palette=cmap(norm(y)))
+    /home/circleci/project/examples/08_join_aggregation.py:109: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
+      sns.barplot(x=x, y=y, palette=cmap(norm(y)))
 
 
 
@@ -979,7 +1003,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 17.533 seconds)
+   **Total running time of the script:** (0 minutes 16.982 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:
