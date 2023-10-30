@@ -431,13 +431,13 @@ Plotting the prediction
 The mean squared error is not obvious to interpret, so we compare
 visually the prediction of our model with the actual values.
 
-.. GENERATED FROM PYTHON SOURCE LINES 188-223
+.. GENERATED FROM PYTHON SOURCE LINES 188-225
 
 .. code-block:: Python
 
 
     import matplotlib.pyplot as plt
-    from matplotlib.dates import ConciseDateFormatter
+    from matplotlib.dates import AutoDateFormatter, AutoDateLocator
 
     X_train = X[X["date.utc"] < "2019-06-01"]
     X_test = X[X["date.utc"] >= "2019-06-01"]
@@ -450,6 +450,7 @@ visually the prediction of our model with the actual values.
     all_cities = X_test["city"].unique()
 
     fig, axs = plt.subplots(nrows=len(all_cities), ncols=1, figsize=(12, 9))
+    fig.subplots_adjust(hspace=0.5)
 
     for i, city in enumerate(all_cities):
         axs[i].plot(
@@ -464,9 +465,10 @@ visually the prediction of our model with the actual values.
         )
         axs[i].set_title(city)
         axs[i].set_ylabel("NO2")
-        axs[i].xaxis.set_major_formatter(
-            ConciseDateFormatter(axs[i].xaxis.get_major_locator())
-        )
+        xtick_locator = AutoDateLocator(maxticks=8)
+        xtick_formatter = AutoDateFormatter(xtick_locator)
+        axs[i].xaxis.set_major_locator(xtick_locator)
+        axs[i].xaxis.set_major_formatter(xtick_formatter)
         axs[i].legend()
     plt.show()
 
@@ -482,11 +484,11 @@ visually the prediction of our model with the actual values.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 224-225
+.. GENERATED FROM PYTHON SOURCE LINES 226-227
 
 Let's zoom on a few days:
 
-.. GENERATED FROM PYTHON SOURCE LINES 225-258
+.. GENERATED FROM PYTHON SOURCE LINES 227-264
 
 .. code-block:: Python
 
@@ -503,6 +505,7 @@ Let's zoom on a few days:
     zoomed_cities = X_test_zoomed["city"].unique()
 
     fig, axs = plt.subplots(nrows=len(zoomed_cities), ncols=1, figsize=(12, 9))
+    fig.subplots_adjust(hspace=0.5)
 
     for i, city in enumerate(zoomed_cities):
         axs[i].plot(
@@ -517,9 +520,12 @@ Let's zoom on a few days:
         )
         axs[i].set_title(city)
         axs[i].set_ylabel("NO2")
-        axs[i].xaxis.set_major_formatter(
-            ConciseDateFormatter(axs[i].xaxis.get_major_locator())
-        )
+
+        xtick_locator = AutoDateLocator(maxticks=8)
+        xtick_formatter = AutoDateFormatter(xtick_locator)
+        axs[i].xaxis.set_major_locator(xtick_locator)
+        axs[i].xaxis.set_major_formatter(xtick_formatter)
+
         axs[i].legend()
     plt.show()
 
@@ -535,7 +541,7 @@ Let's zoom on a few days:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 259-267
+.. GENERATED FROM PYTHON SOURCE LINES 265-273
 
 Features importance
 -------------------
@@ -546,7 +552,7 @@ importance of the features created by the |DatetimeEncoder|, using the
 :func:`~sklearn.inspection.permutation_importance` function, which
 basically shuffles a feature and sees how the model changes its prediction.
 
-.. GENERATED FROM PYTHON SOURCE LINES 269-295
+.. GENERATED FROM PYTHON SOURCE LINES 275-301
 
 .. code-block:: Python
 
@@ -588,7 +594,7 @@ basically shuffles a feature and sees how the model changes its prediction.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 296-306
+.. GENERATED FROM PYTHON SOURCE LINES 302-312
 
 We can see that the hour of the day is the most important feature,
 which seems reasonable.
@@ -604,7 +610,7 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 9.340 seconds)
+   **Total running time of the script:** (0 minutes 4.547 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:
