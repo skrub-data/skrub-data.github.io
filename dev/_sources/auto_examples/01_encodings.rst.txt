@@ -440,7 +440,7 @@ corresponding columns:
  .. code-block:: none
 
 
-    ['twinbrook, rockville, library', 'security, mc311, mccf', 'development, automotive, equipment', 'station, state, estate', 'gaithersburg, clarksburg, the', 'squad, district, 4th', 'administration, battalion, admin', 'health, school, based', 'assessment, protective, projects', 'spring, silver, urban', 'eligibility, maintenance, facilities', 'technology, systems, enforcement', 'selection, family, abused', 'planning, building, resource', 'custody, toddlers, quality', 'traffic, safety, alcohol', 'division, animal, supervision', 'officer, officers, office', 'management, budget, fleet', 'investigative, investigations, criminal', 'nicholson, transit, transport', 'services, highway, service', 'communications, communication, education', 'special, residential, commercial', 'supports, support, sports', 'environmental, regulatory, behavioral', 'patrol, 3rd, psb', 'welfare, child, childhood', 'warehouse, delivery, liquor', 'emergency, centers, duplicating', 'craftsworker, warehouse, worker', 'manager, projects, project', 'firefighter, rescuer, rescue', 'operator, bus, operations', 'assistance, income, client', 'school, room, behavioral', 'counselor, welfare, volunteer', 'program, programs, aquatic', 'officer, office, police', 'information, technology, technologist', 'master, registered, water', 'sergeant, cadet, emergency', 'candidate, sheriff, deputy', 'lieutenant, captain, chief', 'communications, telecommunications, safety', 'assistant, library, librarian', 'coordinator, coordinating, transit', 'liquor, clerk, store', 'crossing, purchasing, background', 'specialist, district, hygienist', 'community, health, nurse', 'correctional, correction, corporal', 'services, service, customer', 'enforcement, permitting, inspector', 'budget, senior, procurement', 'supply, electrician, systems', 'recreation, renovation, resource', 'mechanic, technician, hvac', 'equipment, investment, investigator', 'administrative, legislative, principal']
+    ['technology, abandoned, systems', 'station, state, estate', 'toddlers, violence, sheriff', 'safety, section, collision', 'silver, spring, urban', 'district, patrol, 3rd', 'services, highway, service', 'accounts, programs, courthouse', 'security, custody, mc311', 'maintenance, facilities, finance', 'training, planning, recruit', 'gaithersburg, nicholson, transit', 'operations, personnel, delivery', 'welfare, child, employee', 'family, abused, assault', 'behavioral, health, school', 'downtown, director, stormwater', 'twinbrook, rockville, library', 'building, structural, processing', 'management, equipment, automotive', 'investigative, investigations, criminal', 'supports, support, sports', 'special, assignment, residential', 'emergency, commuter, communications', 'division, animal, volunteer', 'administration, administrative, battalion', 'eligibility, assistance, medical', 'enforcement, automated, traffic', 'collection, solid, waste', 'protective, project, procurement', 'librarian, library, libraries', 'operator, bus, operations', 'officer, office, police', 'master, registered, meter', 'crossing, purchasing, guard', 'firefighter, recruit, rescuer', 'program, programs, procurement', 'manager, iii, image', 'enforcement, inspector, permitting', 'school, health, room', 'information, technology, recreation', 'community, nurse, unit', 'captain, rescue, battalion', 'correctional, correction, corporal', 'sheriff, deputy, autobody', 'technician, mechanic, supply', 'specialist, special, quality', 'administrative, legislative, principal', 'coordinator, services, service', 'equipment, auditor, accountant', 'telecommunications, communications, safety', 'worker, social, works', 'warehouse, welfare, driver', 'budget, management, projects', 'assistance, assistant, income', 'supervisor, supervisory, advisor', 'maintenance, lieutenant, candidate', 'sergeant, urban, district', 'liquor, clerk, store', 'planning, resources, senior']
 
 
 
@@ -520,7 +520,7 @@ Let's look at the cross-validated R2 score of our model:
 
  .. code-block:: none
 
-    R2 score:  mean: 0.923; std: 0.011
+    R2 score:  mean: 0.920; std: 0.018
 
 
 
@@ -656,7 +656,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 13.972 seconds)
+   **Total running time of the script:** (1 minutes 8.509 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:
