@@ -712,7 +712,7 @@ tables into one.
 
     from skrub import Joiner
 
-    joiner = Joiner(tables=(airports, ["lat", "long"]), main_key=["LATITUDE", "LONGITUDE"])
+    joiner = Joiner(airports, aux_key=["lat", "long"], main_key=["LATITUDE", "LONGITUDE"])
 
     aux_augmented = joiner.fit_transform(aux)
 
@@ -894,13 +894,14 @@ tables into one.
 Joining airports with flights data:
 Let's instanciate another multiple key joiner on the date and the airport:
 
-.. GENERATED FROM PYTHON SOURCE LINES 119-127
+.. GENERATED FROM PYTHON SOURCE LINES 119-128
 
 .. code-block:: Python
 
 
     joiner = Joiner(
-        tables=(aux_augmented, ["YEAR/MONTH/DAY", "iata"]),
+        aux_augmented,
+        aux_key=["YEAR/MONTH/DAY", "iata"],
         main_key=["Year_Month_DayofMonth", "Origin"],
     )
 
@@ -1096,7 +1097,7 @@ Let's instanciate another multiple key joiner on the date and the airport:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 128-133
+.. GENERATED FROM PYTHON SOURCE LINES 129-134
 
 Training data is then passed through a |Pipeline|:
 
@@ -1104,7 +1105,7 @@ Training data is then passed through a |Pipeline|:
 our main table.
 - We will use this main table to model the prediction of flight delay.
 
-.. GENERATED FROM PYTHON SOURCE LINES 133-143
+.. GENERATED FROM PYTHON SOURCE LINES 134-144
 
 .. code-block:: Python
 
@@ -1125,11 +1126,11 @@ our main table.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-145
+.. GENERATED FROM PYTHON SOURCE LINES 145-146
 
 We isolate our target variable and remove useless ID variables:
 
-.. GENERATED FROM PYTHON SOURCE LINES 145-149
+.. GENERATED FROM PYTHON SOURCE LINES 146-150
 
 .. code-block:: Python
 
@@ -1144,7 +1145,7 @@ We isolate our target variable and remove useless ID variables:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 150-156
+.. GENERATED FROM PYTHON SOURCE LINES 151-157
 
 We want to frame this as a classification problem:
 suppose that your company is obliged to reimburse the ticket
@@ -1153,7 +1154,7 @@ price if the flight is delayed.
 We have a binary classification problem:
 the flight was delayed (1) or not (0).
 
-.. GENERATED FROM PYTHON SOURCE LINES 156-160
+.. GENERATED FROM PYTHON SOURCE LINES 157-161
 
 .. code-block:: Python
 
@@ -1177,11 +1178,11 @@ the flight was delayed (1) or not (0).
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 161-162
+.. GENERATED FROM PYTHON SOURCE LINES 162-163
 
 The results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 162-168
+.. GENERATED FROM PYTHON SOURCE LINES 163-169
 
 .. code-block:: Python
 
@@ -1214,7 +1215,7 @@ The results:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-177
+.. GENERATED FROM PYTHON SOURCE LINES 170-178
 
 Conclusion
 ----------
@@ -1228,7 +1229,7 @@ Our final cross-validated accuracy score is 0.58.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (11 minutes 21.972 seconds)
+   **Total running time of the script:** (11 minutes 28.633 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:

@@ -1470,7 +1470,7 @@ a main table.
 Instantiating the transformer
 .............................
 
-.. GENERATED FROM PYTHON SOURCE LINES 358-386
+.. GENERATED FROM PYTHON SOURCE LINES 358-385
 
 .. code-block:: Python
 
@@ -1484,20 +1484,19 @@ Instantiating the transformer
     # We create a selector that we will insert at the end of our pipeline, to
     # select the relevant columns before fitting the regressor
 
-    selector = SelectCols(
-        [
-            "GDP per capita (current US$)",
-            "Life expectancy at birth, total (years)",
-            "Strength of legal rights index (0=weak to 12=strong)",
-        ]
-    )
     pipeline = make_pipeline(
-        Joiner((gdppc, "Country Name"), "Country"),
+        Joiner(gdppc, main_key="Country", aux_key="Country Name"),
         DropCols("Country Name"),
-        Joiner((life_exp, "Country Name"), "Country"),
+        Joiner(life_exp, main_key="Country", aux_key="Country Name"),
         DropCols("Country Name"),
-        Joiner((legal_rights, "Country Name"), "Country"),
-        selector,
+        Joiner(legal_rights, main_key="Country", aux_key="Country Name"),
+        SelectCols(
+            [
+                "GDP per capita (current US$)",
+                "Life expectancy at birth, total (years)",
+                "Strength of legal rights index (0=weak to 12=strong)",
+            ]
+        ),
         HistGradientBoostingRegressor(),
     )
 
@@ -1509,13 +1508,13 @@ Instantiating the transformer
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 387-390
+.. GENERATED FROM PYTHON SOURCE LINES 386-389
 
 And the best part is that we are now able to evaluate the parameters of the |fj|.
 For instance, the ``match_score`` was manually picked and can now be
 introduced into a grid search:
 
-.. GENERATED FROM PYTHON SOURCE LINES 390-405
+.. GENERATED FROM PYTHON SOURCE LINES 389-404
 
 .. code-block:: Python
 
@@ -1547,13 +1546,13 @@ introduced into a grid search:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 406-409
+.. GENERATED FROM PYTHON SOURCE LINES 405-408
 
 The grid searching gave us the best value of 0.5 for the parameter
 ``match_score``. Let's use this value in our regression:
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 409-412
+.. GENERATED FROM PYTHON SOURCE LINES 408-411
 
 .. code-block:: Python
 
@@ -1573,7 +1572,7 @@ The grid searching gave us the best value of 0.5 for the parameter
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 413-424
+.. GENERATED FROM PYTHON SOURCE LINES 412-423
 
 .. topic:: Note:
 
@@ -1590,7 +1589,7 @@ results significantly!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 30.459 seconds)
+   **Total running time of the script:** (0 minutes 28.998 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining.py:
