@@ -62,7 +62,7 @@
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="skrub.dataframe.get_df_namespace" href="skrub.dataframe.get_df_namespace.html" />
+    <link rel="next" title="skrub.datasets.fetch_employee_salaries" href="skrub.datasets.fetch_employee_salaries.html" />
     <link rel="prev" title="skrub.DatetimeEncoder" href="skrub.DatetimeEncoder.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -452,22 +452,6 @@ document.write(`
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.deduplicate</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">DataFrames operations</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.get_df_namespace.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.get_df_namespace</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Pandas operations</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.is_pandas.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.is_pandas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.pd_aggregate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pd_aggregate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.pd_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pd_join</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Polars operations</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.is_polars.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.is_polars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.pl_aggregate.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pl_aggregate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.dataframe.pl_join.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.pl_join</a></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data download and generation</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_employee_salaries.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_employee_salaries</a></li>
@@ -544,7 +528,7 @@ document.write(`
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.deduplicate<a class="headerlink" href="#skrub-deduplicate" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.deduplicate">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deduplicate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_clusters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'average'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3ffd9df/skrub/_deduplicate.py#L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deduplicate" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deduplicate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_clusters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'average'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5005364/skrub/_deduplicate.py#L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deduplicate" title="Link to this definition">#</a></dt>
 <dd><p>Deduplicate categorical data by hierarchically clustering similar strings.</p>
 <p>This works best if there is a number of underlying categories that
 sometimes appear in the data with small variations and/or misspellings.</p>
@@ -668,11 +652,11 @@ A deduplicated version of the initial list can easily be created:</p>
       </div>
     </a>
     <a class="right-next"
-       href="skrub.dataframe.get_df_namespace.html"
+       href="skrub.datasets.fetch_employee_salaries.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.dataframe</span></code>.get_df_namespace</p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code>.fetch_employee_salaries</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
