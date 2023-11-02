@@ -529,6 +529,7 @@ selecting a subset of a dataframe’s columns inside of a pipeline. <a class="re
 <section id="minor-changes">
 <h3>Minor changes<a class="headerlink" href="#minor-changes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">inverse_transform</span></code> in <a class="reference internal" href="generated/skrub.SimilarityEncoder.html#skrub.SimilarityEncoder" title="skrub.SimilarityEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimilarityEncoder</span></code></a> now works as expected; it used to raise an exception. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/801">#801</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> propagate the <cite>n_jobs</cite> parameter to the underlying
 transformers except if the underlying transformer already set explicitly <cite>n_jobs</cite>.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/761">#761</a> by <a class="reference external" href="https://github.com/LeoGrin">Leo Grinsztajn</a>, <a class="reference external" href="https://github.com/glemaitre">Guillaume Lemaitre</a>,
