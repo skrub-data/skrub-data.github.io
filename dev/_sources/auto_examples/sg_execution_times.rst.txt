@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**25:32.628** total execution time for 8 files **from auto_examples**:
+**23:34.162** total execution time for 8 files **from auto_examples**:
 
 .. container::
 
@@ -32,27 +32,27 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_auto_examples_07_multiple_key_join.py` (``07_multiple_key_join.py``)
-     - 12:18.586
-     - 0.0
    * - :ref:`sphx_glr_auto_examples_06_ken_embeddings.py` (``06_ken_embeddings.py``)
-     - 10:49.881
+     - 10:41.790
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_07_multiple_key_join.py` (``07_multiple_key_join.py``)
+     - 10:39.774
      - 0.0
    * - :ref:`sphx_glr_auto_examples_01_encodings.py` (``01_encodings.py``)
-     - 01:13.833
+     - 01:11.657
      - 0.0
    * - :ref:`sphx_glr_auto_examples_04_fuzzy_joining.py` (``04_fuzzy_joining.py``)
-     - 00:26.884
+     - 00:25.746
      - 0.0
    * - :ref:`sphx_glr_auto_examples_08_join_aggregation.py` (``08_join_aggregation.py``)
-     - 00:23.449
+     - 00:16.854
      - 0.0
    * - :ref:`sphx_glr_auto_examples_02_investigating_dirty_categories.py` (``02_investigating_dirty_categories.py``)
-     - 00:09.957
+     - 00:08.890
      - 0.0
    * - :ref:`sphx_glr_auto_examples_05_deduplication.py` (``05_deduplication.py``)
-     - 00:05.169
+     - 00:05.090
      - 0.0
    * - :ref:`sphx_glr_auto_examples_03_datetime_encoder.py` (``03_datetime_encoder.py``)
-     - 00:04.869
+     - 00:04.361
      - 0.0
