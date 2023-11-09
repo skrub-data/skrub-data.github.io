@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: Skrub has not been released yet. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Some parameters of Joiner have changed. T..." />
+<meta property="og:description" content="Ongoing development: Skrub has not been released yet. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Pipelines including TableVectorizer can n..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: Skrub has not been released yet. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Some parameters of Joiner have changed. T..." />
+<meta name="description" content="Ongoing development: Skrub has not been released yet. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Pipelines including TableVectorizer can n..." />
 
     <title>Changes &#8212; skrub</title>
   
@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="_static/jupyterlite_sphinx.css?v=13b285a0" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyterlite_sphinx.css?v=f996933d" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css?v=61a4c737" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -56,7 +56,7 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=fd10adb8"></script>
-    <script src="_static/jupyterlite_sphinx.js?v=1cca63f7"></script>
+    <script src="_static/jupyterlite_sphinx.js?v=f09d7af2"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'CHANGES';</script>
     <link rel="icon" href="_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="about.html" />
@@ -499,6 +499,12 @@ development and backward compatibility is not ensured.</p>
 <section id="major-changes">
 <h3>Major changes<a class="headerlink" href="#major-changes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>Pipelines including <a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> can now be grid-searched, since
+we can now call <cite>set_params</cite> on the default transformers of <a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/814">#814</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a></p></li>
+<li><p><a class="reference internal" href="generated/skrub.to_datetime.html#skrub.to_datetime" title="skrub.to_datetime"><code class="xref py py-func docutils literal notranslate"><span class="pre">to_datetime()</span></code></a> is now available to support pandas.to_datetime
+over dataframes and 2d arrays.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/784">#784</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a></p></li>
 <li><p>Some parameters of <a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a> have changed. The goal is to harmonize
 parameters across all estimator that perform join(-like) operations, as
 discussed in <a class="reference external" href="https://github.com/skrub-data/skrub/discussions/751">#751</a>.
@@ -533,6 +539,11 @@ selecting a subset of a dataframe’s columns inside of a pipeline. <a class="re
 <section id="minor-changes">
 <h3>Minor changes<a class="headerlink" href="#minor-changes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> doesn’t remove constant features anymore.
+It also supports an ‘errors’ argument to raise or coerce errors during
+transform, and a ‘add_total_seconds’ argument to include the number of
+seconds since Epoch.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/784">#784</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a></p></li>
 <li><p>Scaling of <code class="docutils literal notranslate"><span class="pre">matching_score</span></code> in <a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is now between 0 and 1; it used to be between 0.5 and 1. Moreover, the division by 0 error that occurred when all rows had a perfect match has been fixed. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/802">#802</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> is now able to apply parallelism at the column level rather than the transformer level. This is the default for univariate transformers, like <a class="reference internal" href="generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>, and <a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/592">#592</a> by <a class="reference external" href="https://github.com/LeoGrin">Leo Grinsztajn</a></p></li>
