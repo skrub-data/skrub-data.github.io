@@ -428,6 +428,7 @@ document.write(`
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Wikipedia embeddings to enrich the data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_multiple_key_join.html">Spatial join for flight data: Joining across multiple columns</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_join_aggregation.html">Self-aggregation on MovieLens</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_interpolation_join.html">Interpolation join: infer missing rows when joining two tables</a></li>
 </ul>
 </div>
 </nav></div>
@@ -663,7 +664,7 @@ Name: Global_Sales, Length: 16572, dtype: float64
 <a href="../generated/skrub.datasets.fetch_ken_table_aliases.html#skrub.datasets.fetch_ken_table_aliases" title="skrub.datasets.fetch_ken_table_aliases" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_ken_table_aliases</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;games&#39;, &#39;schools&#39;, &#39;albums&#39;, &#39;all_entities&#39;, &#39;movies&#39;, &#39;companies&#39;}
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;games&#39;, &#39;movies&#39;, &#39;albums&#39;, &#39;schools&#39;, &#39;all_entities&#39;, &#39;companies&#39;}
 </pre></div>
 </div>
 <p>The <em>games</em> table is the most relevant to our case.
@@ -672,6 +673,10 @@ Let’s see what kind of types we can find in it with the function
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub.datasets</span> <span class="kn">import</span> <a href="../generated/skrub.datasets.fetch_ken_types.html#skrub.datasets.fetch_ken_types" title="skrub.datasets.fetch_ken_types" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_ken_types</span></a>
 
 <a href="../generated/skrub.datasets.fetch_ken_types.html#skrub.datasets.fetch_ken_types" title="skrub.datasets.fetch_ken_types" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_ken_types</span></a><span class="p">(</span><span class="n">embedding_table_id</span><span class="o">=</span><span class="s2">&quot;games&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:680: UserWarning: Could not find the dataset 40019788 locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_40019788.parquet.
+  info = _fetch_figshare(dataset_id, data_directory)
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -766,6 +771,12 @@ and exclude those with type name “companies” or “developer”.</p>
     <span class="n">exclude</span><span class="o">=</span><span class="s2">&quot;companies|developer&quot;</span><span class="p">,</span>
     <span class="n">embedding_table_id</span><span class="o">=</span><span class="s2">&quot;games&quot;</span><span class="p">,</span>
 <span class="p">)</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:680: UserWarning: Could not find the dataset 39266678 locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_39266678.parquet.
+  info = _fetch_figshare(dataset_id, data_directory)
+/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:680: UserWarning: Could not find the dataset 39254360 locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_39254360.parquet.
+  info = _fetch_figshare(dataset_id, data_directory)
 </pre></div>
 </div>
 <p>In a second table, we include all embeddings containing the type name
@@ -959,7 +970,7 @@ explanatory variables.</p>
 additional background information on the game and the publisher of the
 game that would otherwise be missed.</p>
 <p>It helped significantly improve the prediction score.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (11 minutes 22.056 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (10 minutes 57.282 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-06-ken-embeddings-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/06_ken_embeddings.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

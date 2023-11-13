@@ -148,6 +148,23 @@ Examples
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="We illustrate the InterpolationJoiner, which is a type of join where values from the second tab...">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_09_interpolation_join_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_09_interpolation_join.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Interpolation join: infer missing rows when joining two tables</div>
+    </div>
+
+
+.. raw:: html
+
     </div>
 
 
@@ -162,6 +179,7 @@ Examples
    /auto_examples/06_ken_embeddings
    /auto_examples/07_multiple_key_join
    /auto_examples/08_join_aggregation
+   /auto_examples/09_interpolation_join
 
 
 
