@@ -62,7 +62,7 @@
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Investigating and interpreting dirty categories" href="02_investigating_dirty_categories.html" />
+    <link rel="next" title="Feature interpretation with the GapEncoder" href="02_feature_interpretation_with_gapencoder.html" />
     <link rel="prev" title="Examples" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -421,7 +421,7 @@ document.write(`
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Encoding: from a dataframe to a numerical matrix for machine learning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_investigating_dirty_categories.html">Investigating and interpreting dirty categories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_feature_interpretation_with_gapencoder.html">Feature interpretation with the GapEncoder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_datetime_encoder.html">Handling datetime features with the DatetimeEncoder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_fuzzy_joining.html">Fuzzy joining dirty tables with the Joiner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_deduplication.html">Deduplicating misspelled categories</a></li>
@@ -789,7 +789,7 @@ categorical columns.</p></li>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer.named_transformers_" title="skrub.TableVectorizer.named_transformers_" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-property"><span class="n">tv</span><span class="o">.</span><span class="n">named_transformers_</span></a><span class="p">[</span><span class="s2">&quot;high_card_cat&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;family, crimes, sexual&#39;, &#39;station, mediation, accreditation&#39;, &#39;district, squad, 3rd&#39;, &#39;nicholson, transit, taxicab&#39;, &#39;services, highway, service&#39;, &#39;gaithersburg, clarksburg, the&#39;, &#39;acquisition, compensation, state&#39;, &#39;assessment, protective, director&#39;, &#39;traffic, safety, alcohol&#39;, &#39;supports, support, network&#39;, &#39;maintenance, facilities, recruiting&#39;, &#39;silver, spring, urban&#39;, &#39;security, custody, mcdc&#39;, &#39;communications, communication, division&#39;, &#39;technology, telephone, infants&#39;, &#39;equipment, automotive, fleet&#39;, &#39;development, accounts, members&#39;, &#39;behavioral, health, school&#39;, &#39;mechanical, assisted, medical&#39;, &#39;investigative, investigations, explosive&#39;, &#39;welfare, children, childhood&#39;, &#39;warehouse, delivery, liquor&#39;, &#39;rockville, twinbrook, downtown&#39;, &#39;enforcement, compliance, processing&#39;, &#39;special, inspections, inspection&#39;, &#39;construction, building, instruction&#39;, &#39;mangement, engineering, parking&#39;, &#39;administration, battalion, administrative&#39;, &#39;emergency, centers, center&#39;, &#39;patrol, 6th, 4th&#39;, &#39;equipment, investment, investigator&#39;, &#39;manager, projects, project&#39;, &#39;master, registered, water&#39;, &#39;officer, office, police&#39;, &#39;school, room, behavioral&#39;, &#39;specialist, special, environmental&#39;, &#39;operator, bus, operations&#39;, &#39;legislative, principal, executive&#39;, &#39;assistance, income, client&#39;, &#39;community, nurse, health&#39;, &#39;firefighter, rescuer, recruit&#39;, &#39;lieutenant, attendant, shift&#39;, &#39;sergeant, cadet, compliance&#39;, &#39;coordinator, coordinating, transit&#39;, &#39;technician, mechanic, supply&#39;, &#39;program, programs, aquatic&#39;, &#39;worker, social, caseworker&#39;, &#39;accountant, assistant, library&#39;, &#39;supervisor, resident, president&#39;, &#39;enforcement, permitting, inspector&#39;, &#39;correctional, correction, corporal&#39;, &#39;crossing, engineer, purchasing&#39;, &#39;craftsworker, warehouse, driver&#39;, &#39;candidate, sheriff, deputy&#39;, &#39;captain, chief, battalion&#39;, &#39;administrative, administration, administrator&#39;, &#39;liquor, clerk, store&#39;, &#39;communications, telecommunications, safety&#39;, &#39;information, technology, technologist&#39;, &#39;analyst, budget, ombudsman&#39;]
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;management, budget, fleet&#39;, &#39;director, projects, project&#39;, &#39;gaithersburg, clarksburg, the&#39;, &#39;traffic, safety, alcohol&#39;, &#39;administration, operations, battalion&#39;, &#39;station, state, estate&#39;, &#39;silver, spring, hearings&#39;, &#39;assignment, special, residential&#39;, &#39;4th, 6th, 5th&#39;, &#39;eligibility, assistance, medical&#39;, &#39;investigative, investigations, criminal&#39;, &#39;welfare, child, employee&#39;, &#39;supports, support, network&#39;, &#39;behavioral, health, school&#39;, &#39;security, custody, mc311&#39;, &#39;nicholson, transit, taxicab&#39;, &#39;assault, protective, family&#39;, &#39;laboratory, section, labor&#39;, &#39;division, animal, agricultural&#39;, &#39;rockville, downtown, twinbrook&#39;, &#39;district, squad, patrol&#39;, &#39;communications, communication, commuter&#39;, &#39;environmental, regulatory, adolescent&#39;, &#39;training, recruit, crossing&#39;, &#39;highway, services, service&#39;, &#39;technology, information, telephone&#39;, &#39;maintenance, facilities, facility&#39;, &#39;accounts, toddlers, council&#39;, &#39;engineering, cloverly, delivery&#39;, &#39;transport, construction, instruction&#39;, &#39;sergeant, urban, disposal&#39;, &#39;operator, equipment, bus&#39;, &#39;officer, police, office&#39;, &#39;master, registered, meter&#39;, &#39;assistance, assistant, income&#39;, &#39;lieutenant, maintenance, crew&#39;, &#39;program, programs, projects&#39;, &#39;information, technology, recreation&#39;, &#39;manager, budget, management&#39;, &#39;coordinator, services, service&#39;, &#39;communications, telecommunications, safety&#39;, &#39;technician, mechanic, supply&#39;, &#39;administrative, administration, administrator&#39;, &#39;community, health, nurse&#39;, &#39;correctional, correction, corporal&#39;, &#39;specialist, special, quality&#39;, &#39;legislative, principal, executive&#39;, &#39;firefighter, recruit, rescuer&#39;, &#39;candidate, sheriff, deputy&#39;, &#39;school, room, behavioral&#39;, &#39;permitting, planning, resources&#39;, &#39;enforcement, inspector, force&#39;, &#39;crossing, purchasing, engineer&#39;, &#39;liquor, clerk, store&#39;, &#39;warehouse, welfare, caseworker&#39;, &#39;captain, chief, battalion&#39;, &#39;accountant, attorney, auditor&#39;, &#39;customer, representative, referral&#39;, &#39;librarian, library, associate&#39;, &#39;supervisory, supervisor, therapist&#39;]
 </pre></div>
 </div>
 <ul class="simple">
@@ -820,7 +820,7 @@ can encode datetime columns for machine learning.</p></li>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;R2 score:  mean: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; std: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.920; std: 0.014
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.921; std: 0.017
 </pre></div>
 </div>
 <p>The simple pipeline applied on this complex dataset gave us very good results.</p>
@@ -889,7 +889,7 @@ pipeline, which we built using the <a class="reference internal" href="../genera
 <p>We saw that by default, it works well on a heterogeneous dataset.</p>
 <p>To better understand our dataset, and without much effort, we were also able
 to plot the feature importances.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 18.137 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 15.358 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-01-encodings-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/01_encodings.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -928,11 +928,11 @@ to plot the feature importances.</p>
       </div>
     </a>
     <a class="right-next"
-       href="02_investigating_dirty_categories.html"
+       href="02_feature_interpretation_with_gapencoder.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Investigating and interpreting dirty categories</p>
+        <p class="prev-next-title">Feature interpretation with the GapEncoder</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
