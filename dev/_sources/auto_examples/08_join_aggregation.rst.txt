@@ -57,7 +57,7 @@ this example, we showcase hyper-parameter optimization on the whole pipeline.
      :class:`~skrub.DatetimeEncoder`
 
 .. |TargetEncoder| replace::
-     :class:`~skrub.TargetEncoder`
+     :class:`~sklearn.preprocessing.TargetEncoder`
 
 .. |make_pipeline| replace::
      :class:`~sklearn.pipeline.make_pipeline`
@@ -844,75 +844,75 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split1_test_score</th>
-          <td>0.046946</td>
-          <td>0.049032</td>
-          <td>0.076813</td>
-          <td>0.071303</td>
-          <td>0.080662</td>
+          <td>0.062816</td>
+          <td>0.050624</td>
+          <td>0.077097</td>
+          <td>0.076047</td>
+          <td>0.066428</td>
         </tr>
         <tr>
           <th>split2_test_score</th>
-          <td>0.077192</td>
-          <td>0.081028</td>
-          <td>0.093258</td>
-          <td>0.090443</td>
-          <td>0.097033</td>
+          <td>0.080609</td>
+          <td>0.089211</td>
+          <td>0.095012</td>
+          <td>0.087590</td>
+          <td>0.088676</td>
         </tr>
         <tr>
           <th>split3_test_score</th>
-          <td>0.036230</td>
-          <td>0.061726</td>
-          <td>0.065612</td>
-          <td>0.063315</td>
-          <td>0.079677</td>
+          <td>0.031164</td>
+          <td>0.065914</td>
+          <td>0.070724</td>
+          <td>0.063258</td>
+          <td>0.070188</td>
         </tr>
         <tr>
           <th>split4_test_score</th>
-          <td>0.141390</td>
-          <td>0.134508</td>
-          <td>0.137066</td>
-          <td>0.147731</td>
-          <td>0.153061</td>
+          <td>0.132025</td>
+          <td>0.126813</td>
+          <td>0.147126</td>
+          <td>0.153014</td>
+          <td>0.148481</td>
         </tr>
         <tr>
           <th>split5_test_score</th>
-          <td>0.101785</td>
-          <td>0.114397</td>
-          <td>0.108391</td>
-          <td>0.111195</td>
-          <td>0.114687</td>
+          <td>0.103889</td>
+          <td>0.115582</td>
+          <td>0.110645</td>
+          <td>0.110649</td>
+          <td>0.116344</td>
         </tr>
         <tr>
           <th>split6_test_score</th>
-          <td>0.080628</td>
-          <td>0.105417</td>
-          <td>0.104221</td>
-          <td>0.104976</td>
-          <td>0.110442</td>
+          <td>0.077169</td>
+          <td>0.101386</td>
+          <td>0.103703</td>
+          <td>0.103639</td>
+          <td>0.107874</td>
         </tr>
         <tr>
           <th>split7_test_score</th>
-          <td>0.069866</td>
-          <td>0.065266</td>
-          <td>0.054665</td>
-          <td>0.057629</td>
-          <td>0.084410</td>
+          <td>0.068384</td>
+          <td>0.064995</td>
+          <td>0.071444</td>
+          <td>0.067665</td>
+          <td>0.076568</td>
         </tr>
         <tr>
           <th>split8_test_score</th>
-          <td>0.108676</td>
-          <td>0.112844</td>
-          <td>0.112581</td>
-          <td>0.111461</td>
-          <td>0.127374</td>
+          <td>0.108237</td>
+          <td>0.115855</td>
+          <td>0.119356</td>
+          <td>0.119022</td>
+          <td>0.128692</td>
         </tr>
         <tr>
           <th>split9_test_score</th>
-          <td>0.114759</td>
-          <td>0.158681</td>
-          <td>0.158102</td>
-          <td>0.165868</td>
-          <td>0.179644</td>
+          <td>0.120806</td>
+          <td>0.151594</td>
+          <td>0.166545</td>
+          <td>0.162189</td>
+          <td>0.179049</td>
         </tr>
       </tbody>
     </table>
@@ -1003,7 +1003,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 19.019 seconds)
+   **Total running time of the script:** (0 minutes 19.209 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:

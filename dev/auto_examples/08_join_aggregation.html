@@ -770,7 +770,7 @@ with multiple dataframe operations yourself is to end up leaking the target.</p>
 aggregate the target <code class="docutils literal notranslate"><span class="pre">y</span></code> before joining it on the main table, without
 risk of leaking. Note that to perform aggregation then joining on the features
 <code class="docutils literal notranslate"><span class="pre">X</span></code>, you need to use <a class="reference internal" href="../generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a> instead.</p>
-<p>You can also think of it as a generalization of the <a class="reference internal" href="../generated/skrub.TargetEncoder.html#skrub.TargetEncoder" title="skrub.TargetEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TargetEncoder</span></code></a>, which
+<p>You can also think of it as a generalization of the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TargetEncoder</span></code></a>, which
 encodes categorical features based on the target.</p>
 <p>We only focus on aggregating the target by <strong>users</strong>, but later we will
 also consider aggregating by <strong>movies</strong>. Here, we compute the histogram of the
@@ -1088,75 +1088,75 @@ operation maximizing our validation score.</p>
     </tr>
     <tr>
       <th>split1_test_score</th>
-      <td>0.046946</td>
-      <td>0.049032</td>
-      <td>0.076813</td>
-      <td>0.071303</td>
-      <td>0.080662</td>
+      <td>0.062816</td>
+      <td>0.050624</td>
+      <td>0.077097</td>
+      <td>0.076047</td>
+      <td>0.066428</td>
     </tr>
     <tr>
       <th>split2_test_score</th>
-      <td>0.077192</td>
-      <td>0.081028</td>
-      <td>0.093258</td>
-      <td>0.090443</td>
-      <td>0.097033</td>
+      <td>0.080609</td>
+      <td>0.089211</td>
+      <td>0.095012</td>
+      <td>0.087590</td>
+      <td>0.088676</td>
     </tr>
     <tr>
       <th>split3_test_score</th>
-      <td>0.036230</td>
-      <td>0.061726</td>
-      <td>0.065612</td>
-      <td>0.063315</td>
-      <td>0.079677</td>
+      <td>0.031164</td>
+      <td>0.065914</td>
+      <td>0.070724</td>
+      <td>0.063258</td>
+      <td>0.070188</td>
     </tr>
     <tr>
       <th>split4_test_score</th>
-      <td>0.141390</td>
-      <td>0.134508</td>
-      <td>0.137066</td>
-      <td>0.147731</td>
-      <td>0.153061</td>
+      <td>0.132025</td>
+      <td>0.126813</td>
+      <td>0.147126</td>
+      <td>0.153014</td>
+      <td>0.148481</td>
     </tr>
     <tr>
       <th>split5_test_score</th>
-      <td>0.101785</td>
-      <td>0.114397</td>
-      <td>0.108391</td>
-      <td>0.111195</td>
-      <td>0.114687</td>
+      <td>0.103889</td>
+      <td>0.115582</td>
+      <td>0.110645</td>
+      <td>0.110649</td>
+      <td>0.116344</td>
     </tr>
     <tr>
       <th>split6_test_score</th>
-      <td>0.080628</td>
-      <td>0.105417</td>
-      <td>0.104221</td>
-      <td>0.104976</td>
-      <td>0.110442</td>
+      <td>0.077169</td>
+      <td>0.101386</td>
+      <td>0.103703</td>
+      <td>0.103639</td>
+      <td>0.107874</td>
     </tr>
     <tr>
       <th>split7_test_score</th>
-      <td>0.069866</td>
-      <td>0.065266</td>
-      <td>0.054665</td>
-      <td>0.057629</td>
-      <td>0.084410</td>
+      <td>0.068384</td>
+      <td>0.064995</td>
+      <td>0.071444</td>
+      <td>0.067665</td>
+      <td>0.076568</td>
     </tr>
     <tr>
       <th>split8_test_score</th>
-      <td>0.108676</td>
-      <td>0.112844</td>
-      <td>0.112581</td>
-      <td>0.111461</td>
-      <td>0.127374</td>
+      <td>0.108237</td>
+      <td>0.115855</td>
+      <td>0.119356</td>
+      <td>0.119022</td>
+      <td>0.128692</td>
     </tr>
     <tr>
       <th>split9_test_score</th>
-      <td>0.114759</td>
-      <td>0.158681</td>
-      <td>0.158102</td>
-      <td>0.165868</td>
-      <td>0.179644</td>
+      <td>0.120806</td>
+      <td>0.151594</td>
+      <td>0.166545</td>
+      <td>0.162189</td>
+      <td>0.179049</td>
     </tr>
   </tbody>
 </table>
@@ -1212,13 +1212,13 @@ and uses this average to predict the ratings in the test set.</p>
 that our extracted features brought some predictive power.</p>
 <p>It seems that using the <code class="docutils literal notranslate"><span class="pre">&quot;value_counts&quot;</span></code> as an aggregation operator for
 <a class="reference internal" href="../generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggTarget</span></code></a> yields better performances than using the mean (which is
-equivalent to using the <a class="reference internal" href="../generated/skrub.TargetEncoder.html#skrub.TargetEncoder" title="skrub.TargetEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TargetEncoder</span></code></a>).</p>
+equivalent to using the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TargetEncoder</span></code></a>).</p>
 <p>Here, the number of bins encoding the target is proportional to the
 performance: computing the mean yields a single statistic, whereas histograms
 yield a density over a reduced set of bins, and <code class="docutils literal notranslate"><span class="pre">&quot;value_counts&quot;</span></code> yields an
 exhaustive histogram over all the possible values of ratings
 (here 10 different values, from 0.5 to 5).</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 19.019 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 19.209 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-08-join-aggregation-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/08_join_aggregation.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
