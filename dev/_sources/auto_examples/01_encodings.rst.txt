@@ -440,7 +440,44 @@ corresponding columns:
  .. code-block:: none
 
 
-    ['programs, projects, project', 'behavioral, health, school', 'accounts, council, members', 'training, recruit, office', 'safety, traffic, collision', 'district, squad, 3rd', 'spring, silver, ride', 'station, state, estate', 'custody, planning, toddlers', 'supports, support, network', 'highway, welfare, services', 'gaithersburg, clarksburg, the', 'security, mc311, mccf', 'medical, animal, fiscal', 'management, equipment, automotive', 'technology, administration, parking', 'central, montrose, duplicating', 'communications, communication, telecommunications', 'warehouse, employee, liquor', 'patrol, 4th, 6th', 'divisioincrime, family, pedophile', 'compliance, assistance, emergency', 'delivery, cloverly, operations', 'eligibility, maintenance, facilities', 'recycling, collection, solid', 'nicholson, transit, taxicab', 'building, director, resource', 'rockville, twinbrook, downtown', 'environmental, regulatory, centers', 'investigative, investigations, criminal', 'liquor, clerk, store', 'officer, office, police', 'supervisory, supervisor, librarian', 'operator, bus, operations', 'manager, engineer, management', 'planning, senior, background', 'therapist, the, estate', 'school, health, room', 'firefighter, rescuer, recruit', 'communications, telecommunications, safety', 'income, assistance, client', 'coordinator, services, service', 'crossing, guard, parking', 'community, nurse, security', 'information, technology, renovation', 'enforcement, permitting, inspector', 'master, registered, meter', 'specialist, special, environmental', 'lieutenant, maintenance, shift', 'sergeant, cadet, police', 'accountant, assistant, county', 'equipment, investigator, investment', 'program, programs, projects', 'captain, chief, mcfrs', 'representative, legislative, executive', 'technician, mechanic, supply', 'correctional, correction, corporal', 'candidate, sheriff, deputy', 'warehouse, craftsworker, welfare', 'administrative, principal, administration']
+    array(['emergency, crossing, recruit', 'silver, spring, ride',
+           'district, squad, 3rd', 'station, state, estate',
+           'investigative, investigations, criminal', 'patrol, 6th, 4th',
+           'rockville, twinbrook, downtown', 'traffic, safety, alcohol',
+           'development, receivable, programs', 'warehouse, delivery, liquor',
+           'services, highway, service', 'supports, support, sports',
+           'toddlers, custody, council',
+           'environmental, regulatory, behavioral',
+           'gaithersburg, clarksburg, the',
+           'administration, administrative, battalion',
+           'welfare, childhood, child', 'equipment, automotive, budget',
+           'communications, communication, special',
+           'nicholson, transit, taxicab', 'division, animal, fiscal',
+           'engineering, avenue, studies',
+           'mangement, management, protective', 'security, mccf, unit',
+           'technology, systems, inmate', 'outreach, assault, family',
+           'personnel, background, crisis', 'school, health, based',
+           'planning, building, construction',
+           'eligibility, maintenance, facilities',
+           'technician, mechanic, supply', 'officer, office, police',
+           'manager, budget, projects', 'coordinator, services, service',
+           'master, registered, meter', 'specialist, therapist, special',
+           'operator, equipment, bus',
+           'information, technology, technologist',
+           'school, room, behavioral', 'legislative, principal, executive',
+           'firefighter, rescuer, recruit',
+           'enforcement, inspector, investment', 'captain, chief, mcfrs',
+           'community, health, nurse', 'correctional, correction, regional',
+           'communications, telecommunications, safety',
+           'crossing, purchasing, engineer', 'liquor, clerk, store',
+           'sergeant, supervisor, supervisory',
+           'administrative, administration, administrator',
+           'assistant, library, librarian', 'income, assistance, client',
+           'sheriff, deputy, urban', 'corporal, erp, behavioral',
+           'permitting, planning, resources',
+           'lieutenant, shift, maintenance', 'program, programs, property',
+           'warehouse, welfare, caseworker', 'accountant, attorney, auditor',
+           'recreation, renovation, construction'], dtype=object)
 
 
 
@@ -465,7 +502,9 @@ corresponding columns:
  .. code-block:: none
 
 
-    ['date_first_hired_year', 'date_first_hired_month', 'date_first_hired_day', 'date_first_hired_total_seconds']
+    array(['date_first_hired_year', 'date_first_hired_month',
+           'date_first_hired_day', 'date_first_hired_total_seconds'],
+          dtype=object)
 
 
 
@@ -520,7 +559,7 @@ Let's look at the cross-validated R2 score of our model:
 
  .. code-block:: none
 
-    R2 score:  mean: 0.923; std: 0.012
+    R2 score:  mean: 0.924; std: 0.014
 
 
 
@@ -606,7 +645,7 @@ And plotting the results:
     import matplotlib.pyplot as plt
 
     top_indices = indices[:20]
-    labels = np.array(feature_names)[top_indices]
+    labels = feature_names[top_indices]
 
     plt.figure(figsize=(12, 9))
     plt.barh(
@@ -656,7 +695,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 24.938 seconds)
+   **Total running time of the script:** (1 minutes 29.942 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:

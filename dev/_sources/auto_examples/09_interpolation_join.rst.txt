@@ -139,8 +139,8 @@ Thus, the values from the right side table of the join are inferred, whereas the
           <th>0</th>
           <td>25.333</td>
           <td>55.517</td>
-          <td>2008-07-26</td>
-          <td>42.6</td>
+          <td>2008-09-16</td>
+          <td>40.1</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
@@ -148,36 +148,36 @@ Thus, the values from the right side table of the join are inferred, whereas the
           <th>1</th>
           <td>25.333</td>
           <td>55.517</td>
-          <td>2008-03-07</td>
-          <td>26.9</td>
-          <td>NaN</td>
+          <td>2008-04-27</td>
+          <td>39.6</td>
+          <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>2</th>
           <td>25.333</td>
           <td>55.517</td>
-          <td>2008-09-13</td>
-          <td>41.6</td>
+          <td>2008-02-07</td>
+          <td>20.5</td>
           <td>NaN</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>2008-07-14</td>
-          <td>46.6</td>
+          <td>25.333</td>
+          <td>55.517</td>
+          <td>2008-05-24</td>
+          <td>39.4</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>2008-10-10</td>
-          <td>36.1</td>
-          <td>0.0</td>
+          <td>25.333</td>
+          <td>55.517</td>
+          <td>2008-03-28</td>
+          <td>37.3</td>
+          <td>NaN</td>
           <td>NaN</td>
         </tr>
       </tbody>
@@ -232,45 +232,45 @@ Thus, the values from the right side table of the join are inferred, whereas the
       <tbody>
         <tr>
           <th>50000</th>
-          <td>39.3745</td>
-          <td>104.8145</td>
-          <td>2008-08-19</td>
+          <td>39.6429</td>
+          <td>104.9972</td>
+          <td>2008-11-08</td>
           <td>NaN</td>
-          <td>3.0</td>
+          <td>0.0</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>50001</th>
-          <td>39.3745</td>
-          <td>104.8145</td>
-          <td>2008-12-12</td>
+          <td>39.6429</td>
+          <td>104.9972</td>
+          <td>2008-10-09</td>
           <td>NaN</td>
           <td>0.0</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>50002</th>
-          <td>39.4850</td>
-          <td>104.9089</td>
-          <td>2008-10-08</td>
+          <td>39.6429</td>
+          <td>104.9972</td>
+          <td>2008-01-16</td>
           <td>NaN</td>
           <td>0.0</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>50003</th>
-          <td>39.4850</td>
-          <td>104.9089</td>
-          <td>2008-07-06</td>
+          <td>39.6429</td>
+          <td>104.9972</td>
+          <td>2008-08-16</td>
           <td>NaN</td>
-          <td>0.0</td>
+          <td>173.0</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>50004</th>
-          <td>39.4850</td>
-          <td>104.9089</td>
-          <td>2008-08-06</td>
+          <td>39.6429</td>
+          <td>104.9972</td>
+          <td>2008-09-02</td>
           <td>NaN</td>
           <td>0.0</td>
           <td>0.0</td>
@@ -346,61 +346,61 @@ To avoid clashes in the column names, we use the ``suffix`` parameter to append 
           <th>0</th>
           <td>25.333</td>
           <td>55.517</td>
-          <td>2008-07-26</td>
-          <td>42.6</td>
+          <td>2008-09-16</td>
+          <td>40.1</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>33.998881</td>
-          <td>56.909072</td>
-          <td>0.211345</td>
+          <td>29.570500</td>
+          <td>45.644162</td>
+          <td>-0.058086</td>
         </tr>
         <tr>
           <th>1</th>
           <td>25.333</td>
           <td>55.517</td>
-          <td>2008-03-07</td>
-          <td>26.9</td>
+          <td>2008-04-27</td>
+          <td>39.6</td>
+          <td>0.0</td>
           <td>NaN</td>
-          <td>NaN</td>
-          <td>27.533636</td>
-          <td>90.893584</td>
-          <td>0.470756</td>
+          <td>29.662263</td>
+          <td>20.981355</td>
+          <td>0.060485</td>
         </tr>
         <tr>
           <th>2</th>
           <td>25.333</td>
           <td>55.517</td>
-          <td>2008-09-13</td>
-          <td>41.6</td>
+          <td>2008-02-07</td>
+          <td>20.5</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>31.349549</td>
-          <td>34.419323</td>
-          <td>0.211345</td>
+          <td>25.416103</td>
+          <td>32.979714</td>
+          <td>-0.435148</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>2008-07-14</td>
-          <td>46.6</td>
+          <td>25.333</td>
+          <td>55.517</td>
+          <td>2008-05-24</td>
+          <td>39.4</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>33.681213</td>
-          <td>46.492658</td>
-          <td>0.211345</td>
+          <td>31.337859</td>
+          <td>31.967762</td>
+          <td>-0.064609</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>2008-10-10</td>
-          <td>36.1</td>
-          <td>0.0</td>
+          <td>25.333</td>
+          <td>55.517</td>
+          <td>2008-03-28</td>
+          <td>37.3</td>
           <td>NaN</td>
-          <td>30.075242</td>
-          <td>17.335894</td>
-          <td>0.211345</td>
+          <td>NaN</td>
+          <td>26.711083</td>
+          <td>20.514047</td>
+          <td>0.077251</td>
         </tr>
       </tbody>
     </table>
@@ -580,7 +580,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>MI</td>
           <td>42.212059</td>
           <td>-83.348836</td>
-          <td>0.735120</td>
+          <td>1.485101</td>
         </tr>
         <tr>
           <th>1</th>
@@ -592,7 +592,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>MI</td>
           <td>42.212059</td>
           <td>-83.348836</td>
-          <td>16.005616</td>
+          <td>15.607116</td>
         </tr>
         <tr>
           <th>2</th>
@@ -604,7 +604,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>MI</td>
           <td>42.212059</td>
           <td>-83.348836</td>
-          <td>5.850041</td>
+          <td>6.904376</td>
         </tr>
         <tr>
           <th>3</th>
@@ -616,7 +616,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>MI</td>
           <td>42.212059</td>
           <td>-83.348836</td>
-          <td>6.668609</td>
+          <td>6.829648</td>
         </tr>
         <tr>
           <th>4</th>
@@ -628,7 +628,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>MI</td>
           <td>42.212059</td>
           <td>-83.348836</td>
-          <td>7.519688</td>
+          <td>6.117917</td>
         </tr>
       </tbody>
     </table>
@@ -678,11 +678,11 @@ States with the lowest average predicted temperatures: Alaska, Montana, North Da
 
 
     state
-    AK   -2.061724
-    WA    0.070022
-    MT    0.149228
-    ND    0.888255
-    MN    1.326700
+    AK   -5.524740
+    MT   -0.100401
+    WA    0.114961
+    ND    1.293988
+    MN    1.705857
     Name: TMAX, dtype: float64
 
 
@@ -707,11 +707,11 @@ States with the highest predicted temperatures: Puerto Rico, Virgin Islands, Haw
 
 
     state
-    LA    21.808522
-    FL    24.591762
-    HI    26.664157
-    VI    30.497361
-    PR    31.081785
+    LA    21.610107
+    FL    24.881543
+    VI    25.924247
+    HI    25.996421
+    PR    26.593925
     Name: TMAX, dtype: float64
 
 
@@ -787,7 +787,7 @@ It is a generalization of the :func:`~skrub.fuzzy_join`, as :func:`~skrub.fuzzy_
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 7.112 seconds)
+   **Total running time of the script:** (0 minutes 5.352 seconds)
 
 
 .. _sphx_glr_download_auto_examples_09_interpolation_join.py:
