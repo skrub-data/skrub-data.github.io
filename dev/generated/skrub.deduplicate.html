@@ -542,36 +542,36 @@ document.write(`
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.deduplicate<a class="headerlink" href="#skrub-deduplicate" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.deduplicate">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deduplicate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_clusters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'average'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6312f70/skrub/_deduplicate.py#L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deduplicate" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deduplicate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_clusters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linkage_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'average'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/43848ef/skrub/_deduplicate.py#L133"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deduplicate" title="Link to this definition">#</a></dt>
 <dd><p>Deduplicate categorical data by hierarchically clustering similar strings.</p>
 <p>This works best if there is a number of underlying categories that
 sometimes appear in the data with small variations and/or misspellings.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>data</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.12)"><span>sequence</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The data to be deduplicated.</p>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.12)"><span>sequence</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The data to be deduplicated.</p>
 </dd>
-<dt><strong>n_clusters</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, optional</span></dt><dd><p>Number of clusters to use for hierarchical clustering, if <cite>None</cite> use the
+<dt><strong>n_clusters</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=None</span></dt><dd><p>Number of clusters to use for hierarchical clustering, if <cite>None</cite> use the
 number of clusters that lead to the lowest silhouette score.</p>
 </dd>
 <dt><strong>ngram_range</strong><span class="classifier">2-tuple of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=(2, 4)</span></dt><dd><p>The lower and upper boundaries of the range of n-values for different
 n-grams used in the string similarity. All values of <cite>n</cite> such
 that <code class="docutils literal notranslate"><span class="pre">min_n</span> <span class="pre">&lt;=</span> <span class="pre">n</span> <span class="pre">&lt;=</span> <span class="pre">max_n</span></code> will be used.</p>
 </dd>
-<dt><strong>analyzer</strong><span class="classifier">{‘word’, ‘char’, ‘char_wb’}, default=`char_wb`</span></dt><dd><p>Analyzer parameter for the CountVectorizer
+<dt><strong>analyzer</strong><span class="classifier">{‘word’, ‘char’, ‘char_wb’}, default=’char_wb’</span></dt><dd><p>Analyzer parameter for the CountVectorizer
 used for the string similarities.
 Describes whether the matrix <cite>V</cite> to factorize should be made of
 word counts or character n-gram counts.
 Option <cite>char_wb</cite> creates character n-grams only from text inside word
 boundaries; n-grams at the edges of words are padded with space.</p>
 </dd>
-<dt><strong>method</strong><span class="classifier">{<cite>single</cite>, <cite>complete</cite>, <cite>average</cite>, <cite>centroid</cite>, <cite>median</cite>, <cite>ward</cite>},</span></dt><dd><p>default=`average`
+<dt><strong>linkage_method</strong><span class="classifier">{‘single’, ‘complete’, ‘average’, ‘centroid’, ‘median’, ‘ward’},</span></dt><dd><p>default=’average’
 Linkage method parameter to use for merging clusters via
 <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html#scipy.cluster.hierarchy.linkage" title="(in SciPy v1.11.4)"><code class="xref py py-func docutils literal notranslate"><span class="pre">scipy.cluster.hierarchy.linkage()</span></code></a>.
-Option <cite>average</cite> calculates the distance between two clusters as the
+Option ‘average’ calculates the distance between two clusters as the
 average distance between data points in the first and second cluster.</p>
 </dd>
-<dt><strong>n_jobs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, optional</span></dt><dd><p>The number of jobs to run in parallel.</p>
+<dt><strong>n_jobs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=None</span></dt><dd><p>The number of jobs to run in parallel.</p>
 </dd>
 </dl>
 </dd>
@@ -635,7 +635,6 @@ A deduplicated version of the initial list can easily be created:</p>
 <span class="go">[&#39;black&#39;, &#39;black&#39;, &#39;black&#39;, &#39;black&#39;, &#39;black&#39;, &#39;white&#39;, &#39;white&#39;, &#39;white&#39;, &#39;white&#39;, &#39;white&#39;]</span>
 </pre></div>
 </div>
-<p>We have our dirty categories deduplicated.</p>
 </dd></dl>
 
 <section id="examples-using-skrub-deduplicate">
