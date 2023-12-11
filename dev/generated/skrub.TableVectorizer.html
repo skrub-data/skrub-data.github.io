@@ -543,7 +543,7 @@ document.write(`
 <p class="side-comment">Usage examples at the bottom of this page.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.TableVectorizer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">TableVectorizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cardinality_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low_cardinality_transformer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OneHotEncoder(drop='if_binary',</span> <span class="pre">handle_unknown='ignore',</span> <span class="pre">sparse_output=False)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_cardinality_transformer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">GapEncoder(n_components=30)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numerical_transformer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'passthrough'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetime_transformer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">DatetimeEncoder()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specific_transformers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_cast</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">impute_missing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remainder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'passthrough'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sparse_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transformer_weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose_feature_names_out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/063a086/skrub/_table_vectorizer.py#L212"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">TableVectorizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cardinality_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low_cardinality_transformer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OneHotEncoder(drop='if_binary',</span> <span class="pre">handle_unknown='ignore',</span> <span class="pre">sparse_output=False)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_cardinality_transformer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">GapEncoder(n_components=30)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numerical_transformer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'passthrough'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetime_transformer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">DatetimeEncoder()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specific_transformers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_cast</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remainder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'passthrough'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sparse_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transformer_weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose_feature_names_out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3c0d9d0/skrub/_table_vectorizer.py#L172"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer" title="Link to this definition">#</a></dt>
 <dd><p>Automatically transform a heterogeneous dataframe to a numerical array.</p>
 <p>Easily transforms a heterogeneous data table
 (such as a <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.4)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a>) to a numerical array for machine
@@ -563,14 +563,26 @@ Note: currently, missing values are counted as a single unique value
 </dd>
 <dt><strong>low_cardinality_transformer</strong><span class="classifier">{‘drop’, ‘remainder’, ‘passthrough’}         or <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.TransformerMixin.html#sklearn.base.TransformerMixin" title="(in scikit-learn v1.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Transformer</span></code></a>, optional</span></dt><dd><p>Transformer used on categorical/string features with low cardinality
 (threshold is defined by <cite>cardinality_threshold</cite>).
-Can either be a transformer object instance (e.g. OneHotEncoder),
-a Pipeline containing the preprocessing steps,
-‘drop’ for dropping the columns,
-‘remainder’ for applying <cite>remainder</cite>,
-‘passthrough’ to return the unencoded columns.
-The default transformer is             <code class="docutils literal notranslate"><span class="pre">OneHotEncoder(handle_unknown=&quot;ignore&quot;,</span> <span class="pre">drop=&quot;if_binary&quot;)</span></code>.
-Features classified under this category are imputed based on the
-strategy defined with <cite>impute_missing</cite>.</p>
+Can either be a:
+- transformer object instance (e.g. OneHotEncoder)
+- a Pipeline containing the preprocessing steps
+- ‘drop’ for dropping the columns
+- ‘remainder’ for applying <cite>remainder</cite>
+- ‘passthrough’ to return the unencoded columns</p>
+<dl>
+<dt>The default transformer is</dt><dd><p><a href="#id1"><span class="problematic" id="id2">``</span></a>`
+OneHotEncoder(</p>
+<blockquote>
+<div><p>handle_unknown=’ignore’,
+drop=’if_binary’,
+sparse_output=False,</p>
+</div></blockquote>
+</dd>
+</dl>
+<p>When the downstream estimator is a tree-based model
+(e.g., scikit-learn HistGradientBoostingRegressor), the OneHotEncoder
+may lead to lower performances than other transformers,
+such as the OrdinalEncoder.</p>
 </dd>
 <dt><strong>high_cardinality_transformer</strong><span class="classifier">{‘drop’, ‘remainder’, ‘passthrough’}         or <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.TransformerMixin.html#sklearn.base.TransformerMixin" title="(in scikit-learn v1.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Transformer</span></code></a>, optional</span></dt><dd><p>Transformer used on categorical/string features with high cardinality
 (threshold is defined by <cite>cardinality_threshold</cite>).
@@ -579,18 +591,14 @@ Can either be a transformer object instance
 ‘drop’ for dropping the columns,
 ‘remainder’ for applying <cite>remainder</cite>,
 or ‘passthrough’ to return the unencoded columns.
-The default transformer is <code class="docutils literal notranslate"><span class="pre">GapEncoder(n_components=30)</span></code>.
-Features classified under this category are imputed based on the
-strategy defined with <cite>impute_missing</cite>.</p>
+The default transformer is <code class="docutils literal notranslate"><span class="pre">GapEncoder(n_components=30)</span></code></p>
 </dd>
 <dt><strong>numerical_transformer</strong><span class="classifier">{‘drop’, ‘remainder’, ‘passthrough’}         or <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.TransformerMixin.html#sklearn.base.TransformerMixin" title="(in scikit-learn v1.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Transformer</span></code></a>, optional</span></dt><dd><p>Transformer used on numerical features.
 Can either be a transformer object instance (e.g. StandardScaler),
 a Pipeline containing the preprocessing steps,
 ‘drop’ for dropping the columns,
 ‘remainder’ for applying <cite>remainder</cite>,
-or ‘passthrough’ to return the unencoded columns (default).
-Features classified under this category are not imputed at all
-(regardless of <cite>impute_missing</cite>).</p>
+or ‘passthrough’ to return the unencoded columns (default).</p>
 </dd>
 <dt><strong>datetime_transformer</strong><span class="classifier">{‘drop’, ‘remainder’, ‘passthrough’} or <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.TransformerMixin.html#sklearn.base.TransformerMixin" title="(in scikit-learn v1.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Transformer</span></code></a>, optional</span></dt><dd><p>Transformer used on datetime features.
 Can either be a transformer object instance (e.g. DatetimeEncoder),
@@ -598,9 +606,7 @@ a Pipeline containing the preprocessing steps,
 ‘drop’ for dropping the columns,
 ‘remainder’ for applying <cite>remainder</cite>,
 ‘passthrough’ to return the unencoded columns.
-The default transformer is <code class="docutils literal notranslate"><span class="pre">DatetimeEncoder()</span></code>.
-Features classified under this category are not imputed at all
-(regardless of <cite>impute_missing</cite>).</p>
+The default transformer is <code class="docutils literal notranslate"><span class="pre">DatetimeEncoder()</span></code>.</p>
 </dd>
 <dt><strong>specific_transformers</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of tuples ({‘drop’, ‘remainder’, ‘passthrough’} or         <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.TransformerMixin.html#sklearn.base.TransformerMixin" title="(in scikit-learn v1.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Transformer</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>) or (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, {‘drop’, ‘remainder’, ‘passthrough’}             or <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.TransformerMixin.html#sklearn.base.TransformerMixin" title="(in scikit-learn v1.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Transformer</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>), optional</span></dt><dd><p>On top of the default column type classification (see parameters above),
 this parameter allows you to manually specify transformers for
@@ -614,38 +620,37 @@ This parameter can take two different formats, either:
 In the latter format, you can specify the name of the assignment.
 Mixing the two is not supported.</p>
 </dd>
-<dt><strong>auto_cast</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>If set to <cite>True</cite>, will try to convert each column to the best possible
-data type (dtype).</p>
-</dd>
-<dt><strong>impute_missing</strong><span class="classifier">{‘auto’, ‘force’, ‘skip’}, default=’auto’</span></dt><dd><p>When to impute missing values in categorical (textual) columns.
-‘auto’ will impute missing values if it is considered appropriate
-(we are using an encoder that does not support missing values and/or
-specific versions of pandas, numpy and scikit-learn).
-‘force’ will impute missing values in all categorical columns.
-‘skip’ will not impute at all.
-When imputed, missing values are replaced by the string ‘missing’
-before being encoded.
-As imputation logic for numerical features can be quite intricate,
-it is left to the user to manage.
-See also attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">imputed_columns_</span></code>.</p>
+<dt><strong>auto_cast</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>If set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, calling <code class="docutils literal notranslate"><span class="pre">fit</span></code>, <code class="docutils literal notranslate"><span class="pre">transform</span></code> or <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code>
+will call <code class="docutils literal notranslate"><span class="pre">_auto_cast</span></code> to convert each column to the “optimal” dtype
+for scikit-learn estimators.
+The main heuristics are the following:
+- pandas extension dtypes conversion to numpy dtype
+- datetime conversion using <code class="docutils literal notranslate"><span class="pre">skrub.to_datetime</span></code>
+- numeric conversion using <code class="docutils literal notranslate"><span class="pre">pandas.to_numeric</span></code>
+- numeric columns with missing values are converted to float to input np.nan
+- categorical columns dtypes are updated with the new entries (if any)</p>
+<blockquote>
+<div><p>during transform.</p>
+</div></blockquote>
 </dd>
 <dt><strong>remainder</strong><span class="classifier">{‘drop’, ‘passthrough’} or <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.TransformerMixin.html#sklearn.base.TransformerMixin" title="(in scikit-learn v1.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Transformer</span></code></a>, default=’passthrough’</span></dt><dd><p>By default, all remaining columns that were not specified in <cite>transformers</cite>
 will be automatically passed through. This subset of columns is concatenated
 with the output of the transformers. (default ‘passthrough’).
-By specifying <cite>remainder=’drop’</cite>, only the specified columns
+By specifying <code class="docutils literal notranslate"><span class="pre">remainder='drop'</span></code>, only the specified columns
 in <cite>transformers</cite> are transformed and combined in the output, and the
 non-specified columns are dropped.
 By setting <cite>remainder</cite> to be an estimator, the remaining
 non-specified columns will use the <cite>remainder</cite> estimator. The
-estimator must support <a class="reference external" href="https://scikit-learn.org/stable/glossary.html#term-fit" title="(in scikit-learn v1.3)"><span class="xref std std-term">fit</span></a> and <a class="reference external" href="https://scikit-learn.org/stable/glossary.html#term-transform" title="(in scikit-learn v1.3)"><span class="xref std std-term">transform</span></a>.
+estimator must support <code class="docutils literal notranslate"><span class="pre">fit</span></code> and <code class="docutils literal notranslate"><span class="pre">transform</span></code>.
 Note that using this feature requires that the DataFrame columns
-input at <a class="reference external" href="https://scikit-learn.org/stable/glossary.html#term-fit" title="(in scikit-learn v1.3)"><span class="xref std std-term">fit</span></a> and <a class="reference external" href="https://scikit-learn.org/stable/glossary.html#term-transform" title="(in scikit-learn v1.3)"><span class="xref std std-term">transform</span></a> have identical order.</p>
+input at <code class="docutils literal notranslate"><span class="pre">fit</span></code> and <code class="docutils literal notranslate"><span class="pre">transform</span></code> have identical order.</p>
 </dd>
 <dt><strong>sparse_threshold</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>, default=0.0</span></dt><dd><p>If the output of the different transformers contains sparse matrices,
 these will be stacked as a sparse matrix if the overall density is
-lower than this value. Use <cite>sparse_threshold=0</cite> to always return dense.
+lower than this value. Use <code class="docutils literal notranslate"><span class="pre">sparse_threshold=0</span></code> to always return dense.
 When the transformed output consists of all dense data, the stacked
-result will be dense, and this keyword will be ignored.</p>
+result will be dense, and this keyword will be ignored.
+Note that with the default encoders, the output will never be sparse.</p>
 </dd>
 <dt><strong>n_jobs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=None</span></dt><dd><p>Number of jobs to run in parallel. This number of jobs will be dispatched to
 the underlying transformers, if those support parallelization and they do not
@@ -709,7 +714,7 @@ to <code class="docutils literal notranslate"><span class="pre">TableVectorizer.
 </div>
 <p>Now, we can inspect the transformers assigned to each column:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tv</span><span class="o">.</span><span class="n">transformers_</span>
-<span class="go">[(&#39;numeric&#39;, &#39;passthrough&#39;, [&#39;year_first_hired&#39;]), (&#39;datetime&#39;, DatetimeEncoder(), [&#39;date_first_hired&#39;]), (&#39;low_card_cat&#39;, OneHotEncoder(drop=&#39;if_binary&#39;, handle_unknown=&#39;ignore&#39;, sparse_output=False), [&#39;gender&#39;, &#39;department&#39;, &#39;department_name&#39;, &#39;assignment_category&#39;]), (&#39;high_card_cat&#39;, GapEncoder(n_components=30), [&#39;division&#39;, &#39;employee_position_title&#39;])]</span>
+<span class="go">[(&#39;numeric&#39;, &#39;passthrough&#39;, [&#39;year_first_hired&#39;]), (&#39;datetime&#39;, DatetimeEncoder(), [&#39;date_first_hired&#39;]), (&#39;low_cardinality&#39;, OneHotEncoder(drop=&#39;if_binary&#39;, handle_unknown=&#39;ignore&#39;, sparse_output=False), [&#39;gender&#39;, &#39;department&#39;, &#39;department_name&#39;, &#39;assignment_category&#39;]), (&#39;high_cardinality&#39;, GapEncoder(n_components=30),     [&#39;division&#39;, &#39;employee_position_title&#39;])]</span>
 </pre></div>
 </div>
 <dl class="field-list">
@@ -717,11 +722,7 @@ to <code class="docutils literal notranslate"><span class="pre">TableVectorizer.
 <dd class="field-odd"><dl>
 <dt><a class="reference internal" href="#skrub.TableVectorizer.transformers_" title="skrub.TableVectorizer.transformers_"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transformers_</span></code></a><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of 3-tuples (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.TransformerMixin.html#sklearn.base.TransformerMixin" title="(in scikit-learn v1.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Transformer</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>)</span></dt><dd><p>Transformers applied to the different columns.</p>
 </dd>
-<dt><strong>types_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a> mapping of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a> to type</span></dt><dd><p>A mapping of inferred types per column.
-Key is the index of a column, value is the inferred dtype.
-Exists only if <cite>auto_cast=True</cite>.</p>
-</dd>
-<dt><strong>imputed_columns_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The list of columns in which we imputed the missing values.</p>
+<dt><strong>inferred_column_types_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a> mapping of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a> to type</span></dt><dd><p>A mapping of inferred types per column.</p>
 </dd>
 </dl>
 </dd>
@@ -751,13 +752,13 @@ Exists only if <cite>auto_cast=True</cite>.</p>
 <td><p>Set the parameters of this estimator.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.TableVectorizer.transform" title="skrub.TableVectorizer.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X)</p></td>
-<td><p>Transform <cite>X</cite> by applying the fitted transformers on the columns.</p></td>
+<td><p>Transform <code class="docutils literal notranslate"><span class="pre">X</span></code> by applying the fitted transformers on the columns.</p></td>
 </tr>
 </tbody>
 </table>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/063a086/skrub/_table_vectorizer.py#L696"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.fit" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3c0d9d0/skrub/_table_vectorizer.py#L603"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.fit" title="Link to this definition">#</a></dt>
 <dd><p>Fit all transformers using X.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -780,13 +781,18 @@ transformers.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/063a086/skrub/_table_vectorizer.py#L718"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3c0d9d0/skrub/_table_vectorizer.py#L625"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit all transformers, transform the data, and concatenate the results.</p>
-<p>In practice, it (1) converts features to their best possible types
-if <cite>auto_cast=True</cite>, (2) classify columns based on their data type,
-(3) replaces “false missing” (see _replace_false_missing),
-and imputes categorical columns depending on <cite>impute_missing</cite>, and
-finally, transforms <cite>X</cite>.</p>
+<p>In practice, it:
+- Converts features to their best possible types for scikit-learn estimators</p>
+<blockquote>
+<div><p>if <code class="docutils literal notranslate"><span class="pre">auto_cast=True</span></code> (see <code class="docutils literal notranslate"><span class="pre">auto_cast</span></code> docstring).</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Classify columns based on their data types and match them to each
+dtype-specific transformers.</p></li>
+<li><p>Use scikit-learn ColumnTransformer to run fit_transform on all transformers.</p></li>
+</ul>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
@@ -811,7 +817,7 @@ sparse matrices.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.get_feature_names_out">
-<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/063a086/skrub/_table_vectorizer.py#L885"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_feature_names_out" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3c0d9d0/skrub/_table_vectorizer.py#L749"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_feature_names_out" title="Link to this definition">#</a></dt>
 <dd><p>Return clean feature names.</p>
 <p>Feature names are formatted like:
 “&lt;column_name&gt;_&lt;value&gt;” if encoded by OneHotEncoder or alike,
@@ -834,7 +840,7 @@ sparse matrices.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.get_metadata_routing">
-<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/063a086/skrub/../sklearn/utils/_metadata_requests.py#L1243"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_metadata_routing" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3c0d9d0/skrub/../sklearn/utils/_metadata_requests.py#L1243"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_metadata_routing" title="Link to this definition">#</a></dt>
 <dd><p>Get metadata routing of this object.</p>
 <p>Please check <a class="reference external" href="https://scikit-learn.org/stable/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.3)"><span class="xref std std-ref">User Guide</span></a> on how the routing
 mechanism works.</p>
@@ -851,7 +857,7 @@ routing information.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/063a086/skrub/../sklearn/base.py#L178"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3c0d9d0/skrub/../sklearn/base.py#L178"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -891,7 +897,7 @@ feature(s).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/063a086/skrub/../sklearn/utils/_set_output.py#L230"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3c0d9d0/skrub/../sklearn/utils/_set_output.py#L230"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.3)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
@@ -918,7 +924,7 @@ for an example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/063a086/skrub/../sklearn/base.py#L202"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3c0d9d0/skrub/../sklearn/base.py#L202"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -951,8 +957,8 @@ of the individual transformers and the <cite>sparse_threshold</cite> keyword.</p
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/063a086/skrub/_table_vectorizer.py#L860"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.transform" title="Link to this definition">#</a></dt>
-<dd><p>Transform <cite>X</cite> by applying the fitted transformers on the columns.</p>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3c0d9d0/skrub/_table_vectorizer.py#L725"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.transform" title="Link to this definition">#</a></dt>
+<dd><p>Transform <code class="docutils literal notranslate"><span class="pre">X</span></code> by applying the fitted transformers on the columns.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>

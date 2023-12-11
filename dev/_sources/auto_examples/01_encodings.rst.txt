@@ -328,10 +328,10 @@ Let's explore the internals of our encoder, the |TableVectorizer|:
 
     [('numeric', 'passthrough', ['year_first_hired']),
      ('datetime', DatetimeEncoder(), ['date_first_hired']),
-     ('low_card_cat',
+     ('low_cardinality',
       OneHotEncoder(drop='if_binary', handle_unknown='ignore', sparse_output=False),
       ['gender', 'department', 'department_name', 'assignment_category']),
-     ('high_card_cat',
+     ('high_cardinality',
       GapEncoder(n_components=30),
       ['division', 'employee_position_title'])]
 
@@ -353,7 +353,7 @@ corresponding columns:
 .. code-block:: Python
 
 
-    tv.named_transformers_["low_card_cat"].get_feature_names_out()
+    tv.named_transformers_["low_cardinality"].get_feature_names_out()
 
 
 
@@ -429,7 +429,7 @@ corresponding columns:
 .. code-block:: Python
 
 
-    tv.named_transformers_["high_card_cat"].get_feature_names_out()
+    tv.named_transformers_["high_cardinality"].get_feature_names_out()
 
 
 
@@ -440,45 +440,40 @@ corresponding columns:
  .. code-block:: none
 
 
-    array(['district, patrol, 3rd', 'station, mediation, transportation',
-           'welfare, childhood, child', 'spring, silver, ride',
-           'behavioral, health, school', 'eligibility, assistance, medical',
-           'delivery, warehouse, liquor', 'criminal, laboratory, forensic',
-           'inspections, inspection, special', 'custody, mcdc, customer',
-           'traffic, safety, alcohol',
-           'communications, communication, commuter',
-           'technology, systems, telephone',
-           'gaithersburg, nicholson, transit',
-           'personnel, background, abandoned',
-           'management, mangement, budget',
-           'investigative, explosive, investigations',
-           'officer, office, chief', 'services, highway, service',
-           'twinbrook, rockville, purchasing', 'supports, support, network',
-           'development, automotive, equipment', 'security, mc311, mccf',
-           'planning, training, recruit', 'maintenance, facilities, finance',
-           'administration, battalion, admin', 'animal, virtual, bureau',
-           'protective, assault, program', 'regulation, region, compensation',
-           'accounts, accounting, centers', 'operator, equipment, bus',
-           'officer, office, traffic', 'enforcement, inspector, force',
-           'environmental, scientist, enviromental',
-           'librarian, psychiatric, psychiatrist',
-           'technician, mechanic, supply', 'firefighter, rescuer, recruit',
-           'correctional, recreation, correction',
-           'manager, engineer, investigator', 'corporal, pfc, dietary',
-           'worker, social, works', 'school, health, room',
-           'community, nurse, unit',
-           'telecommunications, communications, safety',
+    array(['engineering, parking, kensington', 'technology, systems, inmate',
+           'behavioral, health, school', 'gaithersburg, clarksburg, the',
+           'district, squad, 3rd', 'silver, spring, ride',
+           'welfare, children, childhood', 'family, background, personnel',
+           'traffic, safety, alcohol', 'eligibility, assistance, disability',
+           'management, budget, engagement', 'director, officer, sheriff',
+           'station, state, estate', 'development, stormwater, avenue',
+           'security, custody, mc311', 'services, highway, service',
+           'maintenance, facilities, finance',
+           'investigative, investigations, criminal', 'patrol, 6th, 4th',
+           'nicholson, transit, taxicab', 'rockville, downtown, library',
+           'recruit, transport, resource', 'commercial, mechanical, special',
+           'division, animal, divison',
+           'administration, operations, delivery',
+           'supports, support, network', 'battalion, regulation, fifth',
+           'protective, assessment, projects', 'emergency, centers, accounts',
+           'warehouse, liquor, stock', 'telephone, urban, district',
+           'officer, office, security', 'specialist, special, estate',
+           'firefighter, rescuer, recruit', 'manager, projects, project',
+           'operator, equipment, apprentice', 'master, registered, meter',
+           'school, health, room', 'income, assistance, client',
            'coordinator, services, service',
-           'legislative, principal, executive',
-           'information, technology, technologist',
-           'sheriff, deputy, autobody', 'specialist, special, resource',
-           'accountant, assistant, library', 'candidate, master, facilities',
-           'income, assistance, compliance',
-           'warehouse, welfare, representative',
-           'lieutenant, captain, rescue', 'program, programs, projects',
-           'crossing, purchasing, background', 'liquor, clerk, store',
-           'administrative, administration, administrator',
-           'sergeant, police, cadet', 'supervisor, planning, supervisory'],
+           'enforcement, permitting, inspector', 'community, nurse, unit',
+           'correctional, correction, corporal', 'program, programs, project',
+           'communications, telecommunications, safety',
+           'assistant, attorney, chief', 'sergeant, police, cadet',
+           'librarian, library, associate',
+           'information, renovation, recreation',
+           'therapist, plumber, psychiatrist', 'warehouse, welfare, worker',
+           'liquor, clerk, store', 'candidate, sheriff, deputy',
+           'technician, mechanic, supply', 'lieutenant, captain, rescue',
+           'supervisor, supervisory, transit', 'planning, engineer, senior',
+           'legislative, administrative, principal',
+           'environmental, budget, procurement', 'crossing, parking, guard'],
           dtype=object)
 
 
@@ -561,7 +556,7 @@ Let's look at the cross-validated R2 score of our model:
 
  .. code-block:: none
 
-    R2 score:  mean: 0.921; std: 0.015
+    R2 score:  mean: 0.920; std: 0.012
 
 
 
@@ -697,7 +692,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 16.264 seconds)
+   **Total running time of the script:** (1 minutes 8.952 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:

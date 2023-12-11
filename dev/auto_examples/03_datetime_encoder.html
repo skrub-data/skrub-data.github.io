@@ -694,7 +694,7 @@ we can replace its default parameter with a new, custom instance:</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(&#39;datetime&#39;, DatetimeEncoder(add_day_of_the_week=True), [&#39;date.utc&#39;]),
- (&#39;low_card_cat&#39;,
+ (&#39;low_cardinality&#39;,
   OneHotEncoder(drop=&#39;if_binary&#39;, handle_unknown=&#39;ignore&#39;, sparse_output=False),
   [&#39;city&#39;])]
 </pre></div>
@@ -850,7 +850,7 @@ are the most important feature, which seems reasonable.</p>
 features from a date column.
 Also check out the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, which automatically recognizes
 and transforms datetime columns by default.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 4.717 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 4.366 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-03-datetime-encoder-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/03_datetime_encoder.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
