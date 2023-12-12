@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/install.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Recommended usage, for users: To install from the source using pip, run the following command in a shell command line: Advanced usage, for contributors: If you want to contribute to the project, yo..." />
+<meta property="og:description" content="Advanced usage, for contributors: If you want to contribute to the project, you can install the development version of skrub from the source code: Create a virtual environment, here for example, us..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Recommended usage, for users: To install from the source using pip, run the following command in a shell command line: Advanced usage, for contributors: If you want to contribute to the project, yo..." />
+<meta name="description" content="Advanced usage, for contributors: If you want to contribute to the project, you can install the development version of skrub from the source code: Create a virtual environment, here for example, us..." />
 
     <title>Installing &#8212; skrub</title>
   
@@ -477,7 +477,7 @@ document.write(`
 
 <ul class="nav nav-pills nav-fill" id="installation" role="tablist">
     <li class="nav-item" role="presentation">
-        <a class="nav-link" id="pip-tab" data-bs-toggle="tab" data-bs-target="#pip-tab-pane" type="button" role="tab" aria-controls="pip" aria-selected="false">Using pip</a>
+        <a class="nav-link active" id="pip-tab" data-bs-toggle="tab" data-bs-target="#pip-tab-pane" type="button" role="tab" aria-controls="pip" aria-selected="true">Using pip</a>
     </li>
     <li class="nav-item" role="presentation">
         <a class="nav-link" id="conda-tab" data-bs-toggle="tab" data-bs-target="#conda-tab-pane" type="button" role="tab" aria-controls="conda" aria-selected="false">Using conda</a>
@@ -486,39 +486,28 @@ document.write(`
         <a class="nav-link" id="mamba-tab" data-bs-toggle="tab" data-bs-target="#mamba-tab-pane" type="button" role="tab" aria-controls="mamba" aria-selected="false">Using mamba</a>
     </li>
     <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="source-tab" data-bs-toggle="tab" data-bs-target="#source-tab-pane" type="button" role="tab" aria-controls="source" aria-selected="true">From source</a>
+        <a class="nav-link" id="source-tab" data-bs-toggle="tab" data-bs-target="#source-tab-pane" type="button" role="tab" aria-controls="source" aria-selected="false">From source</a>
     </li>
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade" id="pip-tab-pane" role="tabpanel" aria-labelledby="pip-tab" tabindex="0">
-        <hr /><div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>skrub has not yet been released. See the “From source” tab.</p>
+    <div class="tab-pane fade show active" id="pip-tab-pane" role="tabpanel" aria-labelledby="pip-tab" tabindex="0">
+        <hr /><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>skrub<span class="w"> </span>-U
+</pre></div>
 </div>
 </div>
-<div class="tab-pane fade" id="conda-tab-pane" role="tabpanel" aria-labelledby="conda-tab" tabindex="0">
-    <hr /><div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>skrub has not yet been released. See the “From source” tab.</p>
+      <div class="tab-pane fade" id="conda-tab-pane" role="tabpanel" aria-labelledby="conda-tab" tabindex="0">
+        <hr /><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>skrub
+</pre></div>
 </div>
 </div>
 <div class="tab-pane fade" id="mamba-tab-pane" role="tabpanel" aria-labelledby="mamba-tab" tabindex="0">
-    <hr /><div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>skrub has not yet been released. See the “From source” tab.</p>
-</div>
-</div>
-<div class="tab-pane fade show active" id="source-tab-pane" role="tabpanel" aria-labelledby="source-tab" tabindex="0">
-    <hr /><section id="recommended-usage-for-users">
-<h2>Recommended usage, for users<a class="headerlink" href="#recommended-usage-for-users" title="Link to this heading">#</a></h2>
-<p>To install from <a class="reference external" href="https://github.com/skrub-data/skrub">the source</a> using pip,
-run the following command in a shell command line:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/skrub-data/skrub.git
+    <hr /><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>skrub
 </pre></div>
 </div>
-</section>
-<section id="advanced-usage-for-contributors">
+</div>
+<div class="tab-pane fade" id="source-tab-pane" role="tabpanel" aria-labelledby="source-tab" tabindex="0">
+    <hr /><section id="advanced-usage-for-contributors">
 <h2>Advanced usage, for contributors<a class="headerlink" href="#advanced-usage-for-contributors" title="Link to this heading">#</a></h2>
 <p>If you want to contribute to the project, you can install the development version
 of skrub from the source code:</p>
@@ -526,14 +515,14 @@ of skrub from the source code:</p>
 </pre></div>
 </div>
 <p>Create a virtual environment, here for example, using <a class="reference external" href="https://docs.conda.io/en/latest/">conda</a>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>skrub<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>skrub<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10<span class="w"> </span><span class="c1"># or any later python version</span>
 <span class="gp">$ </span>conda<span class="w"> </span>activate<span class="w"> </span>skrub
 </pre></div>
 </div>
 <p>Then, install the local package in editable mode,
 with the development requirements:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>skrub
-<span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s1">&#39;.[dev]&#39;</span>
+<span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[dev]&quot;</span>
 </pre></div>
 </div>
 <p>Next step, enable the pre-commit hooks:</p>
@@ -598,7 +587,6 @@ the <a class="reference external" href="https://skrub-data.org/stable/CONTRIBUTI
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommended-usage-for-users">Recommended usage, for users</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-usage-for-contributors">Advanced usage, for contributors</a></li>
 </ul>
   </nav></div>

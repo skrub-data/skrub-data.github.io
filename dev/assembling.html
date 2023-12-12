@@ -62,8 +62,8 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Encoding: creating feature matrices" href="encoding.html" />
-    <link rel="prev" title="User guide" href="documentation.html" />
+    <link rel="next" title="Cleaning" href="cleaning.html" />
+    <link rel="prev" title="Encoding: creating feature matrices" href="encoding.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -428,8 +428,8 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cleaning.html">Cleaning</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="development.html">Development</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="vision.html">Vision: where is skrub heading?</a></li>
@@ -505,11 +505,10 @@ often from different sources.</p>
 <section id="fuzzy-joining-tables">
 <h2>Fuzzy joining tables<a class="headerlink" href="#fuzzy-joining-tables" title="Link to this heading">#</a></h2>
 <p>Joining two dataframes can be hard as the corresponding keys may be different.</p>
-<p>The <a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> uses similarities in entries to join tables on one or more
-related columns. Furthermore, it choose the type of fuzzy matching used
-based on the column type (string, numerical or datetime).
-It also outputs a similarity score, to single out bad matches, so that they can be
-dropped or replaced.</p>
+<p><a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> uses similarities in entries to join tables on one or more
+related columns. Furthermore, it chooses the type of fuzzy matching used based
+on the column type (string, numerical or datetime). It also outputs a similarity
+score, to single out bad matches, so that they can be dropped or replaced.</p>
 <p>In sum, equivalent to <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html#pandas.merge" title="(in pandas v2.1.4)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.merge()</span></code></a>, the <a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>
 has no need for pre-cleaning.</p>
 </section>
@@ -568,20 +567,20 @@ useful data that will be joined to another table.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="documentation.html"
+       href="encoding.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">User guide</p>
+        <p class="prev-next-title">Encoding: creating feature matrices</p>
       </div>
     </a>
     <a class="right-next"
-       href="encoding.html"
+       href="cleaning.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Encoding: creating feature matrices</p>
+        <p class="prev-next-title">Cleaning</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
