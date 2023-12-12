@@ -1130,6 +1130,9 @@ tables into one.</p>
       <th>country</th>
       <th>lat</th>
       <th>long</th>
+      <th>skrub_Joiner_distance</th>
+      <th>skrub_Joiner_rescaled_distance</th>
+      <th>skrub_Joiner_match_accepted</th>
     </tr>
   </thead>
   <tbody>
@@ -1155,6 +1158,9 @@ tables into one.</p>
       <td>Thailand</td>
       <td>14.078333</td>
       <td>101.378334</td>
+      <td>2.418437</td>
+      <td>3.314381</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1178,6 +1184,9 @@ tables into one.</p>
       <td>Thailand</td>
       <td>14.078333</td>
       <td>101.378334</td>
+      <td>2.418437</td>
+      <td>3.314381</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1201,6 +1210,9 @@ tables into one.</p>
       <td>Thailand</td>
       <td>14.078333</td>
       <td>101.378334</td>
+      <td>2.418780</td>
+      <td>3.314851</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1224,6 +1236,9 @@ tables into one.</p>
       <td>Thailand</td>
       <td>14.078333</td>
       <td>101.378334</td>
+      <td>2.418780</td>
+      <td>3.314851</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1247,6 +1262,9 @@ tables into one.</p>
       <td>Thailand</td>
       <td>14.078333</td>
       <td>101.378334</td>
+      <td>2.418780</td>
+      <td>3.314851</td>
+      <td>True</td>
     </tr>
   </tbody>
 </table>
@@ -1494,12 +1512,8 @@ Name: count, dtype: int64
   warnings.warn(
 /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:228: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as all zeros
   warnings.warn(
-/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:228: UserWarning: Found unknown categories in columns [1, 3] during transform. These unknown categories will be encoded as all zeros
-  warnings.warn(
-/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:228: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as all zeros
-  warnings.warn(
 
-0.58635
+0.5880500000000001
 </pre></div>
 </div>
 </section>
@@ -1509,7 +1523,7 @@ Name: count, dtype: int64
 on imprecise and multiple-key correspondences.
 This is made easy by skrub’s <a class="reference internal" href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> transformer.</p>
 <p>Our final cross-validated accuracy score is 0.58.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (11 minutes 23.657 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (11 minutes 10.577 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-07-multiple-key-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

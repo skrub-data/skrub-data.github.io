@@ -634,8 +634,8 @@ function:</p>
 </pre></div>
 </div>
 <p>We extract the table containing GDP per capita by country:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">gdppc</span></a> <span class="o">=</span> <a href="../generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_world_bank_indicator</span></a><span class="p">(</span><span class="n">indicator_id</span><span class="o">=</span><span class="s2">&quot;NY.GDP.PCAP.CD&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">gdppc</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">gdp_per_capita</span></a> <span class="o">=</span> <a href="../generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_world_bank_indicator</span></a><span class="p">(</span><span class="n">indicator_id</span><span class="o">=</span><span class="s2">&quot;NY.GDP.PCAP.CD&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">gdp_per_capita</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -785,7 +785,7 @@ function:</p>
 <h2>A correspondence problem<a class="headerlink" href="#a-correspondence-problem" title="Link to this heading">#</a></h2>
 <p>Alas, the entries for countries do not perfectly match between our
 original table (df), and those that we downloaded from the worldbank
-(gdppc):</p>
+(gdp_per_capita):</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html#pandas.DataFrame.sort_values" title="pandas.DataFrame.sort_values" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span></a><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -853,7 +853,7 @@ original table (df), and those that we downloaded from the worldbank
 </div>
 </div>
 <br />
-<br /><div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html#pandas.DataFrame.sort_values" title="pandas.DataFrame.sort_values" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">gdppc</span><span class="o">.</span><span class="n">sort_values</span></a><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<br /><div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html#pandas.DataFrame.sort_values" title="pandas.DataFrame.sort_values" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">gdp_per_capita</span><span class="o">.</span><span class="n">sort_values</span></a><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -934,15 +934,16 @@ we have extracted.</p>
 <p>To join them with skrub, we only need to do the following:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a>
 
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df1</span></a> <span class="o">=</span> <a href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a><span class="p">(</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">augmented_df</span></a> <span class="o">=</span> <a href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a><span class="p">(</span>
     <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="p">,</span>  <span class="c1"># our table to join</span>
-    <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">gdppc</span></a><span class="p">,</span>  <span class="c1"># the table to join with</span>
+    <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">gdp_per_capita</span></a><span class="p">,</span>  <span class="c1"># the table to join with</span>
     <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>  <span class="c1"># the first join key column</span>
     <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">,</span>  <span class="c1"># the second join key column</span>
-    <span class="n">return_score</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">add_match_info</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html#pandas.DataFrame.tail" title="pandas.DataFrame.tail" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df1</span><span class="o">.</span><span class="n">tail</span></a><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.tail.html#pandas.DataFrame.tail" title="pandas.DataFrame.tail" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">augmented_df</span><span class="o">.</span><span class="n">tail</span></a><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+
 <span class="c1"># We merged the first World Bank table to our initial one.</span>
 </pre></div>
 </div>
@@ -969,7 +970,9 @@ we have extracted.</p>
       <th>Happiness score</th>
       <th>Country Name</th>
       <th>GDP per capita (current US$)</th>
-      <th>matching_score</th>
+      <th>skrub_Joiner_distance</th>
+      <th>skrub_Joiner_rescaled_distance</th>
+      <th>skrub_Joiner_match_accepted</th>
     </tr>
   </thead>
   <tbody>
@@ -979,7 +982,9 @@ we have extracted.</p>
       <td>4362.0</td>
       <td>Sri Lanka</td>
       <td>3354.383408</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>127</th>
@@ -987,7 +992,9 @@ we have extracted.</p>
       <td>4339.0</td>
       <td>Madagascar</td>
       <td>505.035528</td>
-      <td>0.558621</td>
+      <td>0.616018</td>
+      <td>0.440370</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>128</th>
@@ -995,7 +1002,9 @@ we have extracted.</p>
       <td>4288.0</td>
       <td>Egypt, Arab Rep.</td>
       <td>4295.407496</td>
-      <td>0.255220</td>
+      <td>0.957242</td>
+      <td>0.684299</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>129</th>
@@ -1003,7 +1012,9 @@ we have extracted.</p>
       <td>4251.0</td>
       <td>Chad</td>
       <td>716.804381</td>
-      <td>0.318124</td>
+      <td>0.921325</td>
+      <td>0.658623</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>130</th>
@@ -1011,7 +1022,9 @@ we have extracted.</p>
       <td>4241.0</td>
       <td>Ethiopia</td>
       <td>1027.585918</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>131</th>
@@ -1019,7 +1032,9 @@ we have extracted.</p>
       <td>4197.0</td>
       <td>Yemen, Rep.</td>
       <td>676.928385</td>
-      <td>0.254184</td>
+      <td>0.989239</td>
+      <td>0.707172</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>132</th>
@@ -1027,7 +1042,9 @@ we have extracted.</p>
       <td>4153.0</td>
       <td>Mauritania</td>
       <td>2190.700205</td>
-      <td>0.592422</td>
+      <td>0.618608</td>
+      <td>0.442221</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>133</th>
@@ -1035,7 +1052,9 @@ we have extracted.</p>
       <td>4152.0</td>
       <td>Jordan</td>
       <td>4204.505640</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>134</th>
@@ -1043,7 +1062,9 @@ we have extracted.</p>
       <td>4112.0</td>
       <td>Togo</td>
       <td>918.376756</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>135</th>
@@ -1051,7 +1072,9 @@ we have extracted.</p>
       <td>3777.0</td>
       <td>India</td>
       <td>2388.621198</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>136</th>
@@ -1059,7 +1082,9 @@ we have extracted.</p>
       <td>3760.0</td>
       <td>Zambia</td>
       <td>1487.907764</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>137</th>
@@ -1067,7 +1092,9 @@ we have extracted.</p>
       <td>3750.0</td>
       <td>Malawi</td>
       <td>645.158692</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>138</th>
@@ -1075,7 +1102,9 @@ we have extracted.</p>
       <td>3702.0</td>
       <td>Tanzania</td>
       <td>1192.403809</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>139</th>
@@ -1083,7 +1112,9 @@ we have extracted.</p>
       <td>3574.0</td>
       <td>Sierra Leone</td>
       <td>461.361138</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>140</th>
@@ -1091,7 +1122,9 @@ we have extracted.</p>
       <td>3512.0</td>
       <td>Lesotho</td>
       <td>1107.395298</td>
-      <td>0.472890</td>
+      <td>0.719706</td>
+      <td>0.514492</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>141</th>
@@ -1099,7 +1132,9 @@ we have extracted.</p>
       <td>3471.0</td>
       <td>Botswana</td>
       <td>7737.654681</td>
-      <td>0.560316</td>
+      <td>0.638844</td>
+      <td>0.456687</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>142</th>
@@ -1107,7 +1142,9 @@ we have extracted.</p>
       <td>3268.0</td>
       <td>Rwanda</td>
       <td>966.327110</td>
-      <td>0.471537</td>
+      <td>0.754071</td>
+      <td>0.539059</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>143</th>
@@ -1115,7 +1152,9 @@ we have extracted.</p>
       <td>2995.0</td>
       <td>Zimbabwe</td>
       <td>1266.996031</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>144</th>
@@ -1123,7 +1162,9 @@ we have extracted.</p>
       <td>2955.0</td>
       <td>Lebanon</td>
       <td>4136.146575</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>145</th>
@@ -1131,7 +1172,9 @@ we have extracted.</p>
       <td>2404.0</td>
       <td>Afghanistan</td>
       <td>363.674087</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>True</td>
     </tr>
   </tbody>
 </table>
@@ -1140,26 +1183,27 @@ we have extracted.</p>
 <br />
 <br /><aside class="topic">
 <p class="topic-title">Note:</p>
-<p>We fix the <code class="docutils literal notranslate"><span class="pre">return_score</span></code> parameter to <cite>True</cite> so as to keep the matching
-score, that we will use later to show what are the worst matches.</p>
+<p>We set the <code class="docutils literal notranslate"><span class="pre">add_match_info</span></code> parameter to <cite>True</cite> to show distances
+between the rows that have been matched, that we will use later to show
+what are the worst matches.</p>
 </aside>
 <p>We see that our <a class="reference internal" href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> succesfully identified the countries,
 even though some country names differ between tables.</p>
-<p>For instance, “Czechia” is well identified as “Czech Republic” and
-“Luxembourg*” as “Luxembourg”.</p>
+<p>For instance, “Egypt” and “Egypt, Arab Rep.” are correctly matched, as are
+“Lesotho*” and “Lesotho”.</p>
 <aside class="topic">
 <p class="topic-title">Note:</p>
 <p>This would all be missed out if we were using other methods such as
-<a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html">pandas.merge</a>,  # noqa
+<a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html">pandas.merge</a>,
 which can only find exact matches.
 In this case, to reach the best result, we would have to <cite>manually</cite> clean
 the data (e.g. remove the * after country name) and look
 for matching patterns in every observation.</p>
 </aside>
 <p>Let’s do some more inspection of the merging done.</p>
-<p>Let’s print the four worst matches, which will give
+<p>Let’s print the worst matches, which will give
 us an overview of the situation:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html#pandas.DataFrame.sort_values" title="pandas.DataFrame.sort_values" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df1</span><span class="o">.</span><span class="n">sort_values</span></a><span class="p">(</span><span class="s2">&quot;matching_score&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html#pandas.DataFrame.sort_values" title="pandas.DataFrame.sort_values" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">augmented_df</span><span class="o">.</span><span class="n">sort_values</span></a><span class="p">(</span><span class="s2">&quot;skrub_Joiner_rescaled_distance&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -1185,33 +1229,71 @@ us an overview of the situation:</p>
       <th>Happiness score</th>
       <th>Country Name</th>
       <th>GDP per capita (current US$)</th>
-      <th>matching_score</th>
+      <th>skrub_Joiner_distance</th>
+      <th>skrub_Joiner_rescaled_distance</th>
+      <th>skrub_Joiner_match_accepted</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>87</th>
-      <td>Ivory Coast</td>
-      <td>5235.0</td>
-      <td>East Asia &amp; Pacific</td>
-      <td>12906.694014</td>
-      <td>0.000000</td>
+      <th>124</th>
+      <td>Eswatini, Kingdom of*</td>
+      <td>4396.0</td>
+      <td>Eswatini</td>
+      <td>4039.518036</td>
+      <td>0.983023</td>
+      <td>0.702729</td>
+      <td>True</td>
     </tr>
     <tr>
-      <th>121</th>
-      <td>Palestinian Territories*</td>
-      <td>4483.0</td>
-      <td>Palau</td>
-      <td>12083.888149</td>
-      <td>0.002512</td>
+      <th>131</th>
+      <td>Yemen*</td>
+      <td>4197.0</td>
+      <td>Yemen, Rep.</td>
+      <td>676.928385</td>
+      <td>0.989239</td>
+      <td>0.707172</td>
+      <td>True</td>
     </tr>
     <tr>
-      <th>94</th>
-      <td>Laos</td>
-      <td>5140.0</td>
-      <td>Lao PDR</td>
-      <td>2088.377182</td>
-      <td>0.124818</td>
+      <th>34</th>
+      <td>Slovakia</td>
+      <td>6391.0</td>
+      <td>Slovak Republic</td>
+      <td>21258.114135</td>
+      <td>0.989245</td>
+      <td>0.707177</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>Kyrgyzstan</td>
+      <td>5828.0</td>
+      <td>Kyrgyz Republic</td>
+      <td>1606.668075</td>
+      <td>0.990845</td>
+      <td>0.708320</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>Iran</td>
+      <td>4888.0</td>
+      <td>Iraq</td>
+      <td>5937.195466</td>
+      <td>1.055793</td>
+      <td>0.754750</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Taiwan Province of China</td>
+      <td>6512.0</td>
+      <td>China</td>
+      <td>12720.215640</td>
+      <td>1.084546</td>
+      <td>0.775304</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>111</th>
@@ -1219,7 +1301,39 @@ us an overview of the situation:</p>
       <td>4744.0</td>
       <td>Turkiye</td>
       <td>10616.061045</td>
-      <td>0.134366</td>
+      <td>1.134734</td>
+      <td>0.811182</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>Laos</td>
+      <td>5140.0</td>
+      <td>Lao PDR</td>
+      <td>2088.377182</td>
+      <td>1.144947</td>
+      <td>0.818483</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>Palestinian Territories*</td>
+      <td>4483.0</td>
+      <td>Palau</td>
+      <td>12083.888149</td>
+      <td>1.310487</td>
+      <td>0.936821</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>Ivory Coast</td>
+      <td>5235.0</td>
+      <td>East Asia &amp; Pacific</td>
+      <td>12906.694014</td>
+      <td>1.320558</td>
+      <td>0.944021</td>
+      <td>True</td>
     </tr>
   </tbody>
 </table>
@@ -1229,17 +1343,17 @@ us an overview of the situation:</p>
 <br /><p>We see that some matches were unsuccesful
 (e.g “Palestinian Territories*” and “Palau”),
 because there is simply no match in the two tables.</p>
-<p>In this case, it is better to use the threshold parameter
+<p>In this case, it is better to use the threshold parameter (<code class="docutils literal notranslate"><span class="pre">max_dist</span></code>)
 so as to include only precise-enough matches:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df1</span></a> <span class="o">=</span> <a href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a><span class="p">(</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">augmented_df</span></a> <span class="o">=</span> <a href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a><span class="p">(</span>
     <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="p">,</span>
-    <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">gdppc</span></a><span class="p">,</span>
+    <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">gdp_per_capita</span></a><span class="p">,</span>
     <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
     <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">,</span>
-    <span class="n">match_score</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
-    <span class="n">return_score</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">max_dist</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span>
+    <span class="n">add_match_info</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html#pandas.DataFrame.sort_values" title="pandas.DataFrame.sort_values" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df1</span><span class="o">.</span><span class="n">sort_values</span></a><span class="p">(</span><span class="s2">&quot;matching_score&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html#pandas.DataFrame.sort_values" title="pandas.DataFrame.sort_values" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">augmented_df</span><span class="o">.</span><span class="n">sort_values</span></a><span class="p">(</span><span class="s2">&quot;skrub_Joiner_rescaled_distance&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -1265,7 +1379,9 @@ so as to include only precise-enough matches:</p>
       <th>Happiness score</th>
       <th>Country Name</th>
       <th>GDP per capita (current US$)</th>
-      <th>matching_score</th>
+      <th>skrub_Joiner_distance</th>
+      <th>skrub_Joiner_rescaled_distance</th>
+      <th>skrub_Joiner_match_accepted</th>
     </tr>
   </thead>
   <tbody>
@@ -1273,17 +1389,21 @@ so as to include only precise-enough matches:</p>
       <th>87</th>
       <td>Ivory Coast</td>
       <td>5235.0</td>
-      <td>&lt;NA&gt;</td>
-      <td>&lt;NA&gt;</td>
-      <td>0.000000</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.320558</td>
+      <td>0.944021</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>121</th>
       <td>Palestinian Territories*</td>
       <td>4483.0</td>
-      <td>&lt;NA&gt;</td>
-      <td>&lt;NA&gt;</td>
-      <td>0.002512</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.310487</td>
+      <td>0.936821</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>94</th>
@@ -1291,7 +1411,9 @@ so as to include only precise-enough matches:</p>
       <td>5140.0</td>
       <td>Lao PDR</td>
       <td>2088.377182</td>
-      <td>0.124818</td>
+      <td>1.144947</td>
+      <td>0.818483</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>111</th>
@@ -1299,7 +1421,19 @@ so as to include only precise-enough matches:</p>
       <td>4744.0</td>
       <td>Turkiye</td>
       <td>10616.061045</td>
-      <td>0.134366</td>
+      <td>1.134734</td>
+      <td>0.811182</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Taiwan Province of China</td>
+      <td>6512.0</td>
+      <td>China</td>
+      <td>12720.215640</td>
+      <td>1.084546</td>
+      <td>0.775304</td>
+      <td>True</td>
     </tr>
   </tbody>
 </table>
@@ -1307,17 +1441,18 @@ so as to include only precise-enough matches:</p>
 </div>
 <br />
 <br /><p>Matches that are not available (or precise enough) are marked as <cite>NaN</cite>.
-We will remove them using the drop_unmatched parameter:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df1</span></a> <span class="o">=</span> <a href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a><span class="p">(</span>
+We will remove them using the <code class="docutils literal notranslate"><span class="pre">drop_unmatched</span></code> parameter:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">augmented_df</span></a> <span class="o">=</span> <a href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a><span class="p">(</span>
     <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="p">,</span>
-    <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">gdppc</span></a><span class="p">,</span>
+    <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">gdp_per_capita</span></a><span class="p">,</span>
     <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
     <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">,</span>
-    <span class="n">match_score</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
     <span class="n">drop_unmatched</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">max_dist</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span>
+    <span class="n">add_match_info</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df1</span><span class="o">.</span><span class="n">drop</span></a><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Country Name&quot;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">augmented_df</span><span class="o">.</span><span class="n">drop</span></a><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Country Name&quot;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>We can finally plot and look at the link between GDP per capital
@@ -1329,7 +1464,7 @@ and happiness:</p>
 
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes" class="sphx-glr-backref-module-matplotlib-axes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a> <span class="o">=</span> <a href="http://seaborn.pydata.org/generated/seaborn.regplot.html#seaborn.regplot" title="seaborn.regplot" class="sphx-glr-backref-module-seaborn sphx-glr-backref-type-py-function"><span class="n">sns</span><span class="o">.</span><span class="n">regplot</span></a><span class="p">(</span>
-    <span class="n">data</span><span class="o">=</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df1</span></a><span class="p">,</span>
+    <span class="n">data</span><span class="o">=</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">augmented_df</span></a><span class="p">,</span>
     <span class="n">x</span><span class="o">=</span><span class="s2">&quot;GDP per capita (current US$)&quot;</span><span class="p">,</span>
     <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="o">=</span><span class="s2">&quot;Happiness score&quot;</span><span class="p">,</span>
     <span class="n">lowess</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
@@ -1349,17 +1484,18 @@ of GDP per capita. We have to search for other patterns.</p>
 <h3>2. Joining life expectancy table<a class="headerlink" href="#joining-life-expectancy-table" title="Link to this heading">#</a></h3>
 <p>Now let’s include other information that may be relevant, such as in the
 life_exp table:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df2</span></a> <span class="o">=</span> <a href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a><span class="p">(</span>
-    <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df1</span></a><span class="p">,</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">augmented_df</span></a> <span class="o">=</span> <a href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a><span class="p">(</span>
+    <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">augmented_df</span></a><span class="p">,</span>
     <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">life_exp</span></a><span class="p">,</span>
     <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
     <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">,</span>
-    <span class="n">match_score</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">max_dist</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span>
+    <span class="n">add_match_info</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df2</span><span class="o">.</span><span class="n">drop</span></a><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Country Name&quot;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">augmented_df</span><span class="o">.</span><span class="n">drop</span></a><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Country Name&quot;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df2</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">augmented_df</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -1384,6 +1520,9 @@ life_exp table:</p>
       <th>Country</th>
       <th>Happiness score</th>
       <th>GDP per capita (current US$)</th>
+      <th>skrub_Joiner_distance</th>
+      <th>skrub_Joiner_rescaled_distance</th>
+      <th>skrub_Joiner_match_accepted</th>
       <th>Life expectancy at birth, total (years)</th>
     </tr>
   </thead>
@@ -1393,6 +1532,9 @@ life_exp table:</p>
       <td>Finland</td>
       <td>7821.0</td>
       <td>50536.624467</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>True</td>
       <td>81.934146</td>
     </tr>
     <tr>
@@ -1400,6 +1542,9 @@ life_exp table:</p>
       <td>Denmark</td>
       <td>7636.0</td>
       <td>66983.132002</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>True</td>
       <td>81.404878</td>
     </tr>
     <tr>
@@ -1407,6 +1552,9 @@ life_exp table:</p>
       <td>Iceland</td>
       <td>7557.0</td>
       <td>72902.979954</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>True</td>
       <td>83.117073</td>
     </tr>
   </tbody>
@@ -1417,7 +1565,7 @@ life_exp table:</p>
 <br /><p>Let’s plot this relation:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes" class="sphx-glr-backref-module-matplotlib-axes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">fig</span></a> <span class="o">=</span> <a href="http://seaborn.pydata.org/generated/seaborn.regplot.html#seaborn.regplot" title="seaborn.regplot" class="sphx-glr-backref-module-seaborn sphx-glr-backref-type-py-function"><span class="n">sns</span><span class="o">.</span><span class="n">regplot</span></a><span class="p">(</span>
-    <span class="n">data</span><span class="o">=</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df2</span></a><span class="p">,</span>
+    <span class="n">data</span><span class="o">=</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">augmented_df</span></a><span class="p">,</span>
     <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Life expectancy at birth, total (years)&quot;</span><span class="p">,</span>
     <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="o">=</span><span class="s2">&quot;Happiness score&quot;</span><span class="p">,</span>
     <span class="n">lowess</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
@@ -1434,17 +1582,18 @@ Countries with higher life expectancy are also happier.</p>
 <section id="joining-legal-rights-strength-table">
 <h3>3. Joining legal rights strength table<a class="headerlink" href="#joining-legal-rights-strength-table" title="Link to this heading">#</a></h3>
 <p>And the table with a measure of legal rights strength in the country:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df3</span></a> <span class="o">=</span> <a href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a><span class="p">(</span>
-    <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df2</span></a><span class="p">,</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">augmented_df</span></a> <span class="o">=</span> <a href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a><span class="p">(</span>
+    <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">augmented_df</span></a><span class="p">,</span>
     <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">legal_rights</span></a><span class="p">,</span>
     <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
     <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">,</span>
-    <span class="n">match_score</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">max_dist</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span>
+    <span class="n">add_match_info</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df3</span><span class="o">.</span><span class="n">drop</span></a><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Country Name&quot;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">augmented_df</span><span class="o">.</span><span class="n">drop</span></a><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Country Name&quot;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df3</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">augmented_df</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -1469,6 +1618,9 @@ Countries with higher life expectancy are also happier.</p>
       <th>Country</th>
       <th>Happiness score</th>
       <th>GDP per capita (current US$)</th>
+      <th>skrub_Joiner_distance</th>
+      <th>skrub_Joiner_rescaled_distance</th>
+      <th>skrub_Joiner_match_accepted</th>
       <th>Life expectancy at birth, total (years)</th>
       <th>Strength of legal rights index (0=weak to 12=strong)</th>
     </tr>
@@ -1479,6 +1631,9 @@ Countries with higher life expectancy are also happier.</p>
       <td>Finland</td>
       <td>7821.0</td>
       <td>50536.624467</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>True</td>
       <td>81.934146</td>
       <td>6.0</td>
     </tr>
@@ -1487,6 +1642,9 @@ Countries with higher life expectancy are also happier.</p>
       <td>Denmark</td>
       <td>7636.0</td>
       <td>66983.132002</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>True</td>
       <td>81.404878</td>
       <td>8.0</td>
     </tr>
@@ -1495,6 +1653,9 @@ Countries with higher life expectancy are also happier.</p>
       <td>Iceland</td>
       <td>7557.0</td>
       <td>72902.979954</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>True</td>
       <td>83.117073</td>
       <td>4.0</td>
     </tr>
@@ -1506,7 +1667,7 @@ Countries with higher life expectancy are also happier.</p>
 <br /><p>Let’s take a look at their correspondence in a figure:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes" class="sphx-glr-backref-module-matplotlib-axes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">fig</span></a> <span class="o">=</span> <a href="http://seaborn.pydata.org/generated/seaborn.regplot.html#seaborn.regplot" title="seaborn.regplot" class="sphx-glr-backref-module-seaborn sphx-glr-backref-type-py-function"><span class="n">sns</span><span class="o">.</span><span class="n">regplot</span></a><span class="p">(</span>
-    <span class="n">data</span><span class="o">=</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df3</span></a><span class="p">,</span>
+    <span class="n">data</span><span class="o">=</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">augmented_df</span></a><span class="p">,</span>
     <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Strength of legal rights index (0=weak to 12=strong)&quot;</span><span class="p">,</span>
     <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="o">=</span><span class="s2">&quot;Happiness score&quot;</span><span class="p">,</span>
     <span class="n">lowess</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
@@ -1526,9 +1687,9 @@ And now we are ready to apply a first machine learning model to it!</p>
 <section id="prediction-model">
 <h2>Prediction model<a class="headerlink" href="#prediction-model" title="Link to this heading">#</a></h2>
 <p>We now separate our covariates (X), from the target (or exogenous)
-variables: y</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df3</span></a><span class="p">[</span><span class="s2">&quot;Happiness score&quot;</span><span class="p">]</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df3</span><span class="o">.</span><span class="n">drop</span></a><span class="p">([</span><span class="s2">&quot;Happiness score&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+variables: y.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">augmented_df</span></a><span class="p">[</span><span class="s2">&quot;Happiness score&quot;</span><span class="p">]</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">augmented_df</span><span class="o">.</span><span class="n">drop</span></a><span class="p">([</span><span class="s2">&quot;Happiness score&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Let us now define the model that will be used to predict the happiness score:</p>
@@ -1551,7 +1712,7 @@ We evaluate our model using the <cite>R2</cite> score.</p>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean R² score is </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv_r2_t</span></a><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> +- </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv_r2_t</span></a><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Mean R² score is 0.63 +- 0.10
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Mean R² score is 0.64 +- 0.08
 </pre></div>
 </div>
 <p>We have a satisfying first result: an R² of 0.63!</p>
@@ -1565,34 +1726,36 @@ beating our result!</p>
 </section>
 <section id="using-the-joiner-to-fuzzy-join-multiple-tables">
 <h2>Using the <a class="reference internal" href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> to fuzzy join multiple tables<a class="headerlink" href="#using-the-joiner-to-fuzzy-join-multiple-tables" title="Link to this heading">#</a></h2>
-<p>A faster way to merge different tables from the World Bank
-to <cite>X</cite> is to use the <a class="reference internal" href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a>.</p>
-<p>The <a class="reference internal" href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> is a transformer that can easily chain joins of tables on
+<p>A convenient way to merge different tables from the World Bank
+to <cite>X</cite> in a scikit-learn Pipeline and tune the parameters is to use the <a class="reference internal" href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a>.</p>
+<p>The <a class="reference internal" href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> is a transformer that can fuzzy-join a table on
 a main table.</p>
 <section id="instantiating-the-transformer">
 <span id="example-joiner"></span><h3>Instantiating the transformer<a class="headerlink" href="#instantiating-the-transformer" title="Link to this heading">#</a></h3>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="p">[</span><span class="s2">&quot;Happiness score&quot;</span><span class="p">]</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">df</span><span class="o">.</span><span class="n">drop</span></a><span class="p">(</span><span class="s2">&quot;Happiness score&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">,</span> <a href="../generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">SelectCols</span></a><span class="p">,</span> <a href="../generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">DropCols</span></a>
+<span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">,</span> <a href="../generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">SelectCols</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a>
 
 <span class="c1"># We create a selector that we will insert at the end of our pipeline, to</span>
 <span class="c1"># select the relevant columns before fitting the regressor</span>
+<a href="../generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">selector</span></a> <span class="o">=</span> <a href="../generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">SelectCols</span></a><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;GDP per capita (current US$) gdp&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Life expectancy at birth, total (years) life_exp&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Strength of legal rights index (0=weak to 12=strong) legal_rights&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">)</span>
 
+<span class="c1"># And we can now put together the pipeline</span>
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a><span class="p">(</span>
-    <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">gdppc</span></a><span class="p">,</span> <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span> <span class="n">aux_key</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">),</span>
-    <a href="../generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">DropCols</span></a><span class="p">(</span><span class="s2">&quot;Country Name&quot;</span><span class="p">),</span>
-    <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">life_exp</span></a><span class="p">,</span> <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span> <span class="n">aux_key</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">),</span>
-    <a href="../generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">DropCols</span></a><span class="p">(</span><span class="s2">&quot;Country Name&quot;</span><span class="p">),</span>
-    <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">legal_rights</span></a><span class="p">,</span> <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span> <span class="n">aux_key</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">),</span>
-    <a href="../generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">SelectCols</span></a><span class="p">(</span>
-        <span class="p">[</span>
-            <span class="s2">&quot;GDP per capita (current US$)&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Life expectancy at birth, total (years)&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Strength of legal rights index (0=weak to 12=strong)&quot;</span><span class="p">,</span>
-        <span class="p">]</span>
+    <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">gdp_per_capita</span></a><span class="p">,</span> <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span> <span class="n">aux_key</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot; gdp&quot;</span><span class="p">),</span>
+    <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">life_exp</span></a><span class="p">,</span> <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span> <span class="n">aux_key</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot; life_exp&quot;</span><span class="p">),</span>
+    <a href="../generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">(</span>
+        <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">legal_rights</span></a><span class="p">,</span> <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span> <span class="n">aux_key</span><span class="o">=</span><span class="s2">&quot;Country Name&quot;</span><span class="p">,</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot; legal_rights&quot;</span>
     <span class="p">),</span>
+    <a href="../generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">selector</span></a><span class="p">,</span>
     <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a><span class="p">(),</span>
 <span class="p">)</span>
 </pre></div>
@@ -1602,26 +1765,23 @@ For instance, the <code class="docutils literal notranslate"><span class="pre">m
 introduced into a grid search:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="sklearn.model_selection.GridSearchCV" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class"><span class="n">GridSearchCV</span></a>
 
-<span class="c1"># We will test four possible values of match_score:</span>
+<span class="c1"># We will test 2 possible values of max_dist:</span>
 <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">params</span></a> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;joiner-1__match_score&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">],</span>
-    <span class="s2">&quot;joiner-2__match_score&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">],</span>
-    <span class="s2">&quot;joiner-3__match_score&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">],</span>
+    <span class="s2">&quot;joiner-1__max_dist&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">],</span>
+    <span class="s2">&quot;joiner-2__max_dist&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">],</span>
+    <span class="s2">&quot;joiner-3__max_dist&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">],</span>
 <span class="p">}</span>
 
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="sklearn.model_selection.GridSearchCV" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">grid</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="sklearn.model_selection.GridSearchCV" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class"><span class="n">GridSearchCV</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">params</span></a><span class="p">,</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv</span></a><span class="o">=</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv</span></a><span class="p">)</span>
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV.fit" title="sklearn.model_selection.GridSearchCV.fit" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-method"><span class="n">grid</span><span class="o">.</span><span class="n">fit</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best parameters:&quot;</span><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">grid</span><span class="o">.</span><span class="n">best_params_</span></a><span class="p">)</span>
-
-<span class="c1"># The gridsearch selects a stricter threshold on the matching_score than what</span>
-<span class="c1"># we had set manually for the GDP and legal rights joins.</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Best parameters: {&#39;joiner-1__match_score&#39;: 0.9, &#39;joiner-2__match_score&#39;: 0.1, &#39;joiner-3__match_score&#39;: 0.9}
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Best parameters: {&#39;joiner-1__max_dist&#39;: 0.1, &#39;joiner-2__max_dist&#39;: 0.9, &#39;joiner-3__max_dist&#39;: 0.1}
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 22.864 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 18.621 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-04-fuzzy-joining-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

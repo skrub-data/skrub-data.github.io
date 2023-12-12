@@ -764,6 +764,9 @@ tables into one.
           <th>country</th>
           <th>lat</th>
           <th>long</th>
+          <th>skrub_Joiner_distance</th>
+          <th>skrub_Joiner_rescaled_distance</th>
+          <th>skrub_Joiner_match_accepted</th>
         </tr>
       </thead>
       <tbody>
@@ -789,6 +792,9 @@ tables into one.
           <td>Thailand</td>
           <td>14.078333</td>
           <td>101.378334</td>
+          <td>2.418437</td>
+          <td>3.314381</td>
+          <td>True</td>
         </tr>
         <tr>
           <th>1</th>
@@ -812,6 +818,9 @@ tables into one.
           <td>Thailand</td>
           <td>14.078333</td>
           <td>101.378334</td>
+          <td>2.418437</td>
+          <td>3.314381</td>
+          <td>True</td>
         </tr>
         <tr>
           <th>2</th>
@@ -835,6 +844,9 @@ tables into one.
           <td>Thailand</td>
           <td>14.078333</td>
           <td>101.378334</td>
+          <td>2.418780</td>
+          <td>3.314851</td>
+          <td>True</td>
         </tr>
         <tr>
           <th>3</th>
@@ -858,6 +870,9 @@ tables into one.
           <td>Thailand</td>
           <td>14.078333</td>
           <td>101.378334</td>
+          <td>2.418780</td>
+          <td>3.314851</td>
+          <td>True</td>
         </tr>
         <tr>
           <th>4</th>
@@ -881,6 +896,9 @@ tables into one.
           <td>Thailand</td>
           <td>14.078333</td>
           <td>101.378334</td>
+          <td>2.418780</td>
+          <td>3.314851</td>
+          <td>True</td>
         </tr>
       </tbody>
     </table>
@@ -1206,12 +1224,8 @@ The results:
       warnings.warn(
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:228: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as all zeros
       warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:228: UserWarning: Found unknown categories in columns [1, 3] during transform. These unknown categories will be encoded as all zeros
-      warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:228: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as all zeros
-      warnings.warn(
 
-    0.58635
+    0.5880500000000001
 
 
 
@@ -1229,7 +1243,7 @@ Our final cross-validated accuracy score is 0.58.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (11 minutes 23.657 seconds)
+   **Total running time of the script:** (11 minutes 10.577 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:

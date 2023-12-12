@@ -542,85 +542,103 @@ document.write(`
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.fuzzy_join<a class="headerlink" href="#skrub-fuzzy-join" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.fuzzy_join">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">fuzzy_join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">how</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">left_on</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right_on</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">match_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_unmatched</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffixes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('_x',</span> <span class="pre">'_y')</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3c0d9d0/skrub/_fuzzy_join.py#L193"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.fuzzy_join" title="Link to this definition">#</a></dt>
-<dd><p>Join two tables based on approximate matching using the appropriate similarity     metric.</p>
-<p>The principle is as follows:</p>
-<ol class="arabic simple">
-<li><p>We embed and transform the key string, numerical or datetime columns.</p></li>
-<li><p>For each category, we use the nearest neighbor method to find its
-closest neighbor and establish a match.</p></li>
-<li><p>We match the tables using the previous information.</p></li>
-</ol>
-<p>For string columns, categories from the two tables that share many sub-strings
-(n-grams) have greater probability of being matched together. The join is based on
-morphological similarities between strings.</p>
-<p>Simultaneous joins on multiple columns (e.g. longitude, latitude) is supported.</p>
-<p>Joining on numerical columns is also possible based on
-the Euclidean distance.</p>
-<p>Joining on datetime columns is based on the time difference.</p>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">fuzzy_join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">left_on=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right_on=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix=''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dist=inf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_dist='random_pairs'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">string_encoder=Pipeline(steps=[('functiontransformer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FunctionTransformer(func=&lt;function</span> <span class="pre">_as_str&gt;))</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">('hashingvectorizer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">HashingVectorizer(analyzer='char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range=(2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">4)))</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">('tfidftransformer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TfidfTransformer())])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_match_info=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_unmatched=False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/74ccfc2/skrub/_fuzzy_join.py#L10"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.fuzzy_join" title="Link to this definition">#</a></dt>
+<dd><p>Fuzzy (approximate) join.</p>
+<p>Rows in the left table are joined to their closest match from the right
+table. The resulting table has the same rows (in the same order) as the
+left table, unless <code class="docutils literal notranslate"><span class="pre">drop_unmatched</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, in which case rows that
+are too far from their closest match will not appear in the result. Each
+row from the left table appears at most once in the result; if there are
+several equally good matching rows in the right table one of them will be
+used; which one is unspecified.</p>
+<p>To identify the best match for each row, values from the matching columns
+(<code class="docutils literal notranslate"><span class="pre">left_key</span></code> and <code class="docutils literal notranslate"><span class="pre">right_key</span></code>) are vectorized, ie represented by vectors of
+continuous values. Then, the Euclidean distances between these vectors are
+computed to find, for each left table row, its nearest neighbor within the
+right table.</p>
+<p>Optionally, a maximum distance threshold, <code class="docutils literal notranslate"><span class="pre">max_dist</span></code>, can be set. Matches
+between vectors that are separated by a distance (strictly) greater than
+<code class="docutils literal notranslate"><span class="pre">max_dist</span></code> will be rejected. We will consider that left table rows that
+are farther than <code class="docutils literal notranslate"><span class="pre">max_dist</span></code> from their nearest neighbor do not have a
+matching row in the right table, and the output will contain nulls for
+the entries that would normally have come from the right table (as in a
+traditional left join).</p>
+<p>To make it easier to set a <code class="docutils literal notranslate"><span class="pre">max_dist</span></code> threshold, the distances are
+rescaled by dividing them by a reference distance, which can be chosen with
+<code class="docutils literal notranslate"><span class="pre">ref_dist</span></code>. The default is <code class="docutils literal notranslate"><span class="pre">'random_pairs'</span></code>. The possible choices are:</p>
+<dl class="simple">
+<dt>‘random_pairs’</dt><dd><p>Pairs of rows are sampled randomly from the right table and their
+distance is computed. The reference distance is the first quartile of
+those distances.</p>
+</dd>
+<dt>‘second_neighbor’</dt><dd><p>The reference distance is the distance to the <em>second</em> nearest neighbor
+in the right table.</p>
+</dd>
+<dt>‘self_join_neighbor’</dt><dd><p>Once the match candidate (ie the nearest neigbor from the right
+table) has been found, we find its nearest neighbor in the right
+table (excluding itself). The reference distance is the distance that
+separates those 2 right rows.</p>
+</dd>
+<dt>‘no_rescaling’</dt><dd><p>The reference distance is 1.0, ie no rescaling of the distances is
+applied.</p>
+</dd>
+</dl>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>left</strong><span class="classifier"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.4)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></span></dt><dd><p>A table to merge.</p>
+<dt><strong>left</strong><span class="classifier"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.4)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></span></dt><dd><p>Left operand of the join.</p>
 </dd>
-<dt><strong>right</strong><span class="classifier"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.4)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></span></dt><dd><p>A table used to merge with.</p>
+<dt><strong>right</strong><span class="classifier"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.4)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></span></dt><dd><p>Right operand of the join.</p>
 </dd>
-<dt><strong>how</strong><span class="classifier">{‘left’, ‘right’}, default=’left’</span></dt><dd><p>Type of merge to be performed. Note that unlike pandas.merge,
-only “left” and “right” are supported so far, as the fuzzy-join comes
-with its own mechanism to resolve lack of correspondence between
-left and right tables.</p>
+<dt><strong>left_on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>The column names in the left table on which the join will be performed.
+Can be a string if joining on a single column.
+If <code class="docutils literal notranslate"><span class="pre">None</span></code>, <cite>right_on</cite> must also be <code class="docutils literal notranslate"><span class="pre">None</span></code> and <cite>on</cite> must be provided.</p>
 </dd>
-<dt><strong>left_on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, optional</span></dt><dd><p>Name of left table column(s) to join.</p>
+<dt><strong>right_on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>The column names in the right table on which the join will
+be performed. Can be a string if joining on a single column.
+If <code class="docutils literal notranslate"><span class="pre">None</span></code>, <cite>left_on</cite> must also be <code class="docutils literal notranslate"><span class="pre">None</span></code> and <cite>on</cite> must be provided.</p>
 </dd>
-<dt><strong>right_on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, optional</span></dt><dd><p>Name of right table key column(s) to join
-with left table key column(s).</p>
+<dt><strong>on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>The column names to use for both <code class="docutils literal notranslate"><span class="pre">left_on</span></code> and <code class="docutils literal notranslate"><span class="pre">right_on</span></code> when they
+are the same. Provide either <code class="docutils literal notranslate"><span class="pre">on</span></code> or both <code class="docutils literal notranslate"><span class="pre">left_on</span></code> and <code class="docutils literal notranslate"><span class="pre">right_on</span></code>.</p>
 </dd>
-<dt><strong>on</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, optional</span></dt><dd><p>Name of common left and right table join key columns.
-Must be found in both DataFrames. Use only if <cite>left_on</cite>
-and <cite>right_on</cite> parameters are not specified.</p>
+<dt><strong>suffix</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=””</span></dt><dd><p>Suffix to append to the <code class="docutils literal notranslate"><span class="pre">right</span></code> table’s column names. You can use it
+to avoid duplicate column names in the join.</p>
 </dd>
-<dt><strong>encoder</strong><span class="classifier">vectorizer instance, optional</span></dt><dd><p>Encoder parameter for the Vectorizer.
-By default, uses a HashingVectorizer.
-It is possible to pass a vectorizer instance inheriting
-_VectorizerMixin to tweak the parameters of the encoder.</p>
+<dt><strong>max_dist</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>, default=np.inf</span></dt><dd><p>Maximum acceptable (rescaled) distance between a row in the
+<code class="docutils literal notranslate"><span class="pre">left</span></code> table and its nearest neighbor in the <code class="docutils literal notranslate"><span class="pre">right</span></code> table. Rows that
+are farther apart are not considered to match. By default, the distance
+is rescaled so that a value between 0 and 1 is typically a good choice,
+although rescaled distances can be greater than 1 for some choices of
+<code class="docutils literal notranslate"><span class="pre">ref_dist</span></code>. <code class="docutils literal notranslate"><span class="pre">None</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;inf&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">float(&quot;inf&quot;)</span></code> or <code class="docutils literal notranslate"><span class="pre">numpy.inf</span></code>
+mean that no matches are rejected.</p>
 </dd>
-<dt><strong>analyzer</strong><span class="classifier">{‘word’, ‘char’, ‘char_wb’}, default=’char_wb’</span></dt><dd><p>Analyzer parameter for the HashingVectorizer
-passed to the encoder and used for the string similarities.
-Describes whether the matrix <cite>V</cite> to factorize should be made of
-word counts or character n-gram counts.
-Option <cite>char_wb</cite> creates character n-grams only from text inside word
-boundaries; n-grams at the edges of words are padded with space.</p>
+<dt><strong>ref_dist</strong><span class="classifier">reference distance for rescaling, default = ‘random_pairs’</span></dt><dd><p>Options are {“random_pairs”, “second_neighbor”, “self_join_neighbor”,
+“no_rescaling”}. See above for a description of each option. To
+facilitate the choice of <code class="docutils literal notranslate"><span class="pre">max_dist</span></code>, distances between rows in
+<code class="docutils literal notranslate"><span class="pre">left</span></code> table and their nearest neighbor in <code class="docutils literal notranslate"><span class="pre">right</span></code> table will be
+rescaled by this reference distance.</p>
 </dd>
-<dt><strong>ngram_range</strong><span class="classifier">2-tuple of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=(2, 4)</span></dt><dd><p>The lower and upper boundaries of the range of n-values for different
-n-grams used in the string similarity. All values of <cite>n</cite> such
-that <code class="docutils literal notranslate"><span class="pre">min_n</span> <span class="pre">&lt;=</span> <span class="pre">n</span> <span class="pre">&lt;=</span> <span class="pre">max_n</span></code> will be used.</p>
+<dt><strong>string_encoder</strong><span class="classifier">scikit-learn transformer used to vectorize text columns</span></dt><dd><p>By default a <code class="docutils literal notranslate"><span class="pre">HashingVectorizer</span></code> combined with a <code class="docutils literal notranslate"><span class="pre">TfidfTransformer</span></code>
+is used. Here we use raw TF-IDF features rather than transforming them
+for example with <code class="docutils literal notranslate"><span class="pre">GapEncoder</span></code> or <code class="docutils literal notranslate"><span class="pre">MinHashEncoder</span></code> because it is
+faster, these features are only used to find nearest neighbors and not
+used by downstream estimators, and distances between TF-IDF vectors
+have a somewhat simpler interpretation.</p>
 </dd>
-<dt><strong>return_score</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>Whether to return matching score based on the distance between
-the nearest matched categories.</p>
+<dt><strong>add_match_info</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>Insert columns whose names start with <cite>skrub_Joiner</cite> containing
+the distance, rescaled distance and whether the rescaled distance is
+above the threshold. Those values can be helpful for an estimator that
+uses the joined features, or to inspect the result of the join and set
+a <code class="docutils literal notranslate"><span class="pre">max_dist</span></code> threshold.</p>
 </dd>
-<dt><strong>match_score</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>, default=0.0</span></dt><dd><p>Distance score between the closest matches that will be accepted.
-In a [0, 1] interval. 1 means that only a perfect match will be
-accepted, and zero means that the closest match will be accepted,
-no matter how distant.
-For numerical joins, this defines the maximum Euclidean distance
-between the matches.</p>
-</dd>
-<dt><strong>drop_unmatched</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>Remove categories for which a match was not found in the two tables.</p>
-</dd>
-<dt><strong>sort</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>Sort the join keys lexicographically in the resulting <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.4)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a>.
-If False, the order of the join keys depends on the join type
-(<cite>how</cite> keyword).</p>
-</dd>
-<dt><strong>suffixes</strong><span class="classifier">2-tuple of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=(‘_x’, ‘_y’)</span></dt><dd><p>A list of strings indicating the suffix to add when overlaping
-column names.</p>
+<dt><strong>drop_unmatched</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>Remove rows for which a match was not found in the right table (ie for
+which the nearest neighbor is further than <cite>max_dist</cite>).</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl>
-<dt><strong>df_joined</strong><span class="classifier"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.4)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></span></dt><dd><p>The joined table returned as a <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.4)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a>.
-If <cite>return_score=True</cite>, another column will be added
-to the DataFrame containing the matching scores.</p>
+<dd class="field-even"><dl class="simple">
+<dt><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.4)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a></dt><dd><p>The joined tables.</p>
 </dd>
 </dl>
 </dd>
@@ -628,63 +646,63 @@ to the DataFrame containing the matching scores.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Joiner</span></code></a></dt><dd><p>Transformer to enrich a given table via one or more fuzzy joins to external resources.</p>
+<dt><a class="reference internal" href="skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Joiner</span></code></a></dt><dd><p>Same as fuzzy_join but as a scikit-learn transformer.</p>
 </dd>
 </dl>
 </div>
-<p class="rubric">Notes</p>
-<p>For regular joins, the output of fuzzy_join is identical
-to pandas.merge, except that both key columns are returned.</p>
-<p>Joining on indexes and multiple columns is not supported.</p>
-<p>When <cite>return_score=True</cite>, the returned <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.1.4)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a> gives
-the distances between the closest matches in a [0, 1] interval.
-0 corresponds to no matching n-grams, while 1 is a
-perfect match.</p>
-<p>When we use <cite>match_score=0</cite>, the function will be forced to impute the
-nearest match (of the left table category) across all possible matching
-options in the right table column.</p>
-<p>When the neighbors are distant, we may use the <cite>match_score</cite> parameter
-with a value bigger than 0 to define the minimal level of matching
-score tolerated. If it is not reached, matches will be
-considered as not found and NaN values will be imputed.</p>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ana&#39;</span><span class="p">,</span> <span class="s1">&#39;lala&#39;</span><span class="p">,</span> <span class="s1">&#39;nana&#39;</span><span class="p">],</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]})</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;anna&#39;</span><span class="p">,</span> <span class="s1">&#39;lala&#39;</span><span class="p">,</span> <span class="s1">&#39;ana&#39;</span><span class="p">,</span> <span class="s1">&#39;nnana&#39;</span><span class="p">],</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]})</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">left_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Country&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;France&quot;</span><span class="p">,</span> <span class="s2">&quot;Italia&quot;</span><span class="p">,</span> <span class="s2">&quot;Spain&quot;</span><span class="p">]})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">right_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span> <span class="p">{</span><span class="s2">&quot;Country&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Germany&quot;</span><span class="p">,</span> <span class="s2">&quot;France&quot;</span><span class="p">,</span> <span class="s2">&quot;Italy&quot;</span><span class="p">],</span>
+<span class="gp">... </span>                           <span class="s2">&quot;Capital&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Berlin&quot;</span><span class="p">,</span> <span class="s2">&quot;Paris&quot;</span><span class="p">,</span> <span class="s2">&quot;Rome&quot;</span><span class="p">]}</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">left_table</span>
+<span class="go">  Country</span>
+<span class="go">0  France</span>
+<span class="go">1  Italia</span>
+<span class="go">2   Spain</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">right_table</span>
+<span class="go">   Country Capital</span>
+<span class="go">0  Germany  Berlin</span>
+<span class="go">1   France   Paris</span>
+<span class="go">2    Italy    Rome</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzy_join</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">left_table</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">right_table</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">on</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;_capitals&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">max_dist</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">add_match_info</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="go">  Country Country_capitals Capital_capitals</span>
+<span class="go">0  France           France            Paris</span>
+<span class="go">1  Italia            Italy             Rome</span>
+<span class="go">2   Spain              NaN              NaN</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzy_join</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">left_table</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">right_table</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">on</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;_capitals&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">drop_unmatched</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">max_dist</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">add_match_info</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="go">  Country Country_capitals Capital_capitals</span>
+<span class="go">0  France           France            Paris</span>
+<span class="go">1  Italia            Italy             Rome</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzy_join</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">left_table</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">right_table</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">on</span><span class="o">=</span><span class="s2">&quot;Country&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;_capitals&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">max_dist</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="s2">&quot;inf&quot;</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="n">add_match_info</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="go">  Country Country_capitals Capital_capitals</span>
+<span class="go">0  France           France            Paris</span>
+<span class="go">1  Italia            Italy             Rome</span>
+<span class="go">2   Spain          Germany           Berlin</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df1</span>
-<span class="go">      a  b</span>
-<span class="go">0   ana  1</span>
-<span class="go">1  lala  2</span>
-<span class="go">2  nana  3</span>
-</pre></div>
-</div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df2</span>
-<span class="go">       a  c</span>
-<span class="go">0   anna  5</span>
-<span class="go">1   lala  6</span>
-<span class="go">2    ana  7</span>
-<span class="go">3  nnana  8</span>
-</pre></div>
-</div>
-<p>To do a simple join based on the nearest match:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzy_join</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
-<span class="go">    a_x  b    a_y  c</span>
-<span class="go">0   ana  1    ana  7</span>
-<span class="go">1  lala  2   lala  6</span>
-<span class="go">2  nana  3  nnana  8</span>
-</pre></div>
-</div>
-<p>When we want to accept only a certain match precision,
-we can use the <cite>match_score</cite> argument:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fuzzy_join</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">match_score</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">return_score</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="go">    a_x  b   a_y     c  matching_score</span>
-<span class="go">0   ana  1   ana     7             1.0</span>
-<span class="go">1  lala  2  lala     6             1.0</span>
-<span class="go">2  nana  3  &lt;NA&gt;  &lt;NA&gt;             0.0</span>
-</pre></div>
-</div>
-<p>As expected, the category “nana” has no exact match (<cite>match_score=1</cite>).</p>
 </dd></dl>
 
 <section id="examples-using-skrub-fuzzy-join">
