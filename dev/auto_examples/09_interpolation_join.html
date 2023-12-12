@@ -756,9 +756,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>42.6</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>34.878686</td>
-      <td>37.129261</td>
-      <td>0.050828</td>
+      <td>33.716148</td>
+      <td>41.589122</td>
+      <td>0.018188</td>
     </tr>
     <tr>
       <th>1</th>
@@ -768,9 +768,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>26.9</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>27.058180</td>
-      <td>130.763557</td>
-      <td>0.280217</td>
+      <td>27.380062</td>
+      <td>42.302625</td>
+      <td>0.269481</td>
     </tr>
     <tr>
       <th>2</th>
@@ -780,9 +780,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>41.6</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>31.507542</td>
-      <td>40.114888</td>
-      <td>0.050828</td>
+      <td>31.787785</td>
+      <td>20.856937</td>
+      <td>0.025427</td>
     </tr>
     <tr>
       <th>3</th>
@@ -792,9 +792,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>46.6</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>34.303253</td>
-      <td>69.554727</td>
-      <td>0.050828</td>
+      <td>33.391780</td>
+      <td>48.597671</td>
+      <td>0.025427</td>
     </tr>
     <tr>
       <th>4</th>
@@ -804,9 +804,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>36.1</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>30.545819</td>
-      <td>18.932268</td>
-      <td>0.025450</td>
+      <td>29.670464</td>
+      <td>20.051925</td>
+      <td>-0.324064</td>
     </tr>
   </tbody>
 </table>
@@ -922,7 +922,7 @@ Then, we use it to transform the flights table – it adds a <code class="docuti
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>0.234938</td>
+      <td>2.376250</td>
     </tr>
     <tr>
       <th>1</th>
@@ -934,7 +934,7 @@ Then, we use it to transform the flights table – it adds a <code class="docuti
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>16.630184</td>
+      <td>16.317214</td>
     </tr>
     <tr>
       <th>2</th>
@@ -946,7 +946,7 @@ Then, we use it to transform the flights table – it adds a <code class="docuti
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>5.355190</td>
+      <td>6.046771</td>
     </tr>
     <tr>
       <th>3</th>
@@ -958,7 +958,7 @@ Then, we use it to transform the flights table – it adds a <code class="docuti
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>6.571580</td>
+      <td>7.358061</td>
     </tr>
     <tr>
       <th>4</th>
@@ -970,7 +970,7 @@ Then, we use it to transform the flights table – it adds a <code class="docuti
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>6.990975</td>
+      <td>7.231007</td>
     </tr>
   </tbody>
 </table>
@@ -990,11 +990,11 @@ We can perform a few basic sanity checks.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -4.171651
-WA   -0.519330
-MT   -0.175537
-ND    0.980667
-MN    1.432880
+AK   -3.917652
+WA    0.256538
+MT    0.262500
+ND    1.274181
+MN    1.477319
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1003,11 +1003,11 @@ Name: TMAX, dtype: float64
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-LA    21.694852
-FL    24.578018
-HI    26.461159
-VI    30.132990
-PR    30.892942
+LA    21.762651
+FL    24.722613
+HI    26.490150
+VI    29.783983
+PR    30.530414
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1036,7 +1036,7 @@ But at least the <a class="reference internal" href="../generated/skrub.Interpol
 <p>We have seen how to fit an <a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> transformer: we give it a table (the weather data) and a set of matching columns (here date, latitude, longitude) and it learns to predict the other columns’ values  (such as the max daily temperature).
 Then, it transforms tables by <em>predicting</em> values that a matching row would contain, rather than by searching for an actual match.
 It is a generalization of the <a class="reference internal" href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an <a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.621 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.227 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-09-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/09_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
