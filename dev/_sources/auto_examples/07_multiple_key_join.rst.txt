@@ -203,7 +203,7 @@ The main table: flights dataset
 
 Let us see the arrival delay of the flights in the dataset:
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-64
+.. GENERATED FROM PYTHON SOURCE LINES 56-65
 
 .. code-block:: Python
 
@@ -212,7 +212,8 @@ Let us see the arrival delay of the flights in the dataset:
 
     sns.set_theme(style="ticks")
 
-    sns.histplot(data=flights, x="ArrDelay", log_scale=(False, True))
+    ax = sns.histplot(data=flights, x="ArrDelay")
+    ax.set_yscale("log")
     plt.show()
 
 
@@ -227,19 +228,19 @@ Let us see the arrival delay of the flights in the dataset:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-67
+.. GENERATED FROM PYTHON SOURCE LINES 66-68
 
 Interesting, most delays are relatively short (<100 min), but there
 are some very long ones.
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-73
+.. GENERATED FROM PYTHON SOURCE LINES 70-74
 
 Airport data: an auxiliary table from the same database
 .......................................................
     - The ``airports`` dataset, with information such as their name
       and location (longitude, latitude).
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-77
+.. GENERATED FROM PYTHON SOURCE LINES 74-78
 
 .. code-block:: Python
 
@@ -340,7 +341,7 @@ Airport data: an auxiliary table from the same database
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-83
+.. GENERATED FROM PYTHON SOURCE LINES 79-84
 
 Weather data: auxiliary tables from external sources
 ....................................................
@@ -348,7 +349,7 @@ Weather data: auxiliary tables from external sources
       Both tables are from the Global Historical Climatology Network.
       Here, we consider only weather measurements from 2008.
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-89
+.. GENERATED FROM PYTHON SOURCE LINES 84-90
 
 .. code-block:: Python
 
@@ -439,12 +440,12 @@ Weather data: auxiliary tables from external sources
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 90-92
+.. GENERATED FROM PYTHON SOURCE LINES 91-93
 
 - The ``stations`` dataset. Provides location of all the weather
   measurement stations in the US.
 
-.. GENERATED FROM PYTHON SOURCE LINES 92-96
+.. GENERATED FROM PYTHON SOURCE LINES 93-97
 
 .. code-block:: Python
 
@@ -557,13 +558,13 @@ Weather data: auxiliary tables from external sources
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-100
+.. GENERATED FROM PYTHON SOURCE LINES 98-101
 
 Joining: feature augmentation across tables
 -------------------------------------------
 First we join the stations with weather on the ID (exact join):
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-104
+.. GENERATED FROM PYTHON SOURCE LINES 101-105
 
 .. code-block:: Python
 
@@ -700,12 +701,12 @@ First we join the stations with weather on the ID (exact join):
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-107
+.. GENERATED FROM PYTHON SOURCE LINES 106-108
 
 Then we join this table with the airports so that we get all auxilliary
 tables into one.
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-116
+.. GENERATED FROM PYTHON SOURCE LINES 108-117
 
 .. code-block:: Python
 
@@ -907,12 +908,12 @@ tables into one.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 117-119
+.. GENERATED FROM PYTHON SOURCE LINES 118-120
 
 Joining airports with flights data:
 Let's instanciate another multiple key joiner on the date and the airport:
 
-.. GENERATED FROM PYTHON SOURCE LINES 119-128
+.. GENERATED FROM PYTHON SOURCE LINES 120-129
 
 .. code-block:: Python
 
@@ -1115,7 +1116,7 @@ Let's instanciate another multiple key joiner on the date and the airport:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 129-134
+.. GENERATED FROM PYTHON SOURCE LINES 130-135
 
 Training data is then passed through a |Pipeline|:
 
@@ -1123,7 +1124,7 @@ Training data is then passed through a |Pipeline|:
 our main table.
 - We will use this main table to model the prediction of flight delay.
 
-.. GENERATED FROM PYTHON SOURCE LINES 134-144
+.. GENERATED FROM PYTHON SOURCE LINES 135-145
 
 .. code-block:: Python
 
@@ -1144,11 +1145,11 @@ our main table.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 145-146
+.. GENERATED FROM PYTHON SOURCE LINES 146-147
 
 We isolate our target variable and remove useless ID variables:
 
-.. GENERATED FROM PYTHON SOURCE LINES 146-150
+.. GENERATED FROM PYTHON SOURCE LINES 147-151
 
 .. code-block:: Python
 
@@ -1163,7 +1164,7 @@ We isolate our target variable and remove useless ID variables:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 151-157
+.. GENERATED FROM PYTHON SOURCE LINES 152-158
 
 We want to frame this as a classification problem:
 suppose that your company is obliged to reimburse the ticket
@@ -1172,7 +1173,7 @@ price if the flight is delayed.
 We have a binary classification problem:
 the flight was delayed (1) or not (0).
 
-.. GENERATED FROM PYTHON SOURCE LINES 157-161
+.. GENERATED FROM PYTHON SOURCE LINES 158-162
 
 .. code-block:: Python
 
@@ -1196,11 +1197,11 @@ the flight was delayed (1) or not (0).
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 162-163
+.. GENERATED FROM PYTHON SOURCE LINES 163-164
 
 The results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 163-169
+.. GENERATED FROM PYTHON SOURCE LINES 164-170
 
 .. code-block:: Python
 
@@ -1225,11 +1226,11 @@ The results:
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:228: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as all zeros
       warnings.warn(
 
-    0.5862
+    0.5864
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 170-178
+.. GENERATED FROM PYTHON SOURCE LINES 171-179
 
 Conclusion
 ----------
@@ -1243,7 +1244,7 @@ Our final cross-validated accuracy score is 0.58.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (11 minutes 33.172 seconds)
+   **Total running time of the script:** (11 minutes 55.303 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:
