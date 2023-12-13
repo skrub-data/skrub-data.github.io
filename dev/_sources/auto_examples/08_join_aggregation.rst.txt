@@ -844,75 +844,75 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split1_test_score</th>
-          <td>0.055862</td>
-          <td>0.054600</td>
-          <td>0.059239</td>
-          <td>0.059972</td>
-          <td>0.065813</td>
+          <td>0.036909</td>
+          <td>0.058637</td>
+          <td>0.077171</td>
+          <td>0.067359</td>
+          <td>0.078952</td>
         </tr>
         <tr>
           <th>split2_test_score</th>
-          <td>0.076425</td>
-          <td>0.088908</td>
-          <td>0.084551</td>
-          <td>0.083249</td>
-          <td>0.098098</td>
+          <td>0.069030</td>
+          <td>0.087387</td>
+          <td>0.096002</td>
+          <td>0.090886</td>
+          <td>0.090888</td>
         </tr>
         <tr>
           <th>split3_test_score</th>
-          <td>0.050083</td>
-          <td>0.053440</td>
-          <td>0.063966</td>
-          <td>0.068172</td>
-          <td>0.073481</td>
+          <td>0.028397</td>
+          <td>0.058033</td>
+          <td>0.066822</td>
+          <td>0.069889</td>
+          <td>0.073798</td>
         </tr>
         <tr>
           <th>split4_test_score</th>
-          <td>0.136130</td>
-          <td>0.126573</td>
-          <td>0.139578</td>
-          <td>0.143297</td>
-          <td>0.152479</td>
+          <td>0.140638</td>
+          <td>0.129701</td>
+          <td>0.151907</td>
+          <td>0.148068</td>
+          <td>0.145786</td>
         </tr>
         <tr>
           <th>split5_test_score</th>
-          <td>0.112680</td>
-          <td>0.113682</td>
-          <td>0.109027</td>
-          <td>0.103463</td>
-          <td>0.112808</td>
+          <td>0.098521</td>
+          <td>0.114921</td>
+          <td>0.107541</td>
+          <td>0.113829</td>
+          <td>0.116355</td>
         </tr>
         <tr>
           <th>split6_test_score</th>
-          <td>0.086353</td>
-          <td>0.109921</td>
-          <td>0.111564</td>
-          <td>0.110062</td>
-          <td>0.109870</td>
+          <td>0.081077</td>
+          <td>0.098700</td>
+          <td>0.107773</td>
+          <td>0.108854</td>
+          <td>0.101905</td>
         </tr>
         <tr>
           <th>split7_test_score</th>
-          <td>0.066944</td>
-          <td>0.068434</td>
-          <td>0.064931</td>
-          <td>0.071073</td>
-          <td>0.081729</td>
+          <td>0.070933</td>
+          <td>0.070139</td>
+          <td>0.070375</td>
+          <td>0.061284</td>
+          <td>0.076785</td>
         </tr>
         <tr>
           <th>split8_test_score</th>
-          <td>0.114445</td>
-          <td>0.111275</td>
-          <td>0.122564</td>
-          <td>0.125687</td>
-          <td>0.128252</td>
+          <td>0.107976</td>
+          <td>0.119940</td>
+          <td>0.112415</td>
+          <td>0.117968</td>
+          <td>0.121377</td>
         </tr>
         <tr>
           <th>split9_test_score</th>
-          <td>0.133432</td>
-          <td>0.155193</td>
-          <td>0.169940</td>
-          <td>0.162923</td>
-          <td>0.177446</td>
+          <td>0.125748</td>
+          <td>0.147719</td>
+          <td>0.166608</td>
+          <td>0.168740</td>
+          <td>0.183495</td>
         </tr>
       </tbody>
     </table>
@@ -1003,7 +1003,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 16.811 seconds)
+   **Total running time of the script:** (0 minutes 19.938 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:
@@ -1015,7 +1015,7 @@ exhaustive histogram over all the possible values of ratings
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/08_join_aggregation.ipynb
+        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/08_join_aggregation.ipynb
         :alt: Launch binder
         :width: 150 px
 
