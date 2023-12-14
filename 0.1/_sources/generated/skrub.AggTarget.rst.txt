@@ -1,0 +1,21 @@
+﻿:mod:`skrub`.AggTarget
+=============================
+
+.. rst-class:: side_comment
+
+    Usage examples at the bottom of this page.
+
+.. currentmodule:: skrub
+
+.. autoclass:: AggTarget
+   :inherited-members:
+
+   
+
+   
+
+.. include:: skrub.AggTarget.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

@@ -1,0 +1,12 @@
+﻿:mod:`skrub.datasets`.fetch_road_safety
+====================================================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_road_safety
+
+.. include:: skrub.datasets.fetch_road_safety.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

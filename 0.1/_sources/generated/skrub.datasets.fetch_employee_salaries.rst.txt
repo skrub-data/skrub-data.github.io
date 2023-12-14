@@ -1,0 +1,12 @@
+﻿:mod:`skrub.datasets`.fetch_employee_salaries
+==========================================================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_employee_salaries
+
+.. include:: skrub.datasets.fetch_employee_salaries.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
