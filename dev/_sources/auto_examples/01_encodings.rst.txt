@@ -440,46 +440,44 @@ corresponding columns:
  .. code-block:: none
 
 
-    array(['regulatory, environmental, centers',
-           'rockville, twinbrook, library',
-           'administrative, administration, battalion',
-           'nicholson, transit, taxicab', 'welfare, children, child',
-           'management, equipment, automotive', 'traffic, safety, alcohol',
-           'district, patrol, squad', 'behavioral, health, school',
-           'investigative, investigations, criminal',
-           'technology, systems, telephone', 'gaithersburg, the, clarksburg',
-           'station, state, estate', 'silver, spring, ride',
-           'assistance, eligibility, medical', 'custody, mcdc, muddy',
-           'training, director, planning', 'supports, support, sports',
-           'development, delivery, inspections',
-           'communications, communication, immunization',
-           'accounts, programs, council', 'personnel, family, abused',
-           'waste, solid, mcerp', 'building, construction, instruction',
-           'maintenance, facilities, compliance',
-           'mangement, projects, engagement', 'division, animal, fiscal',
-           'cloverly, wheaton, urban', 'security, mc311, mccf',
-           'highway, services, service', 'sergeant, cadet, emergency',
-           'manager, budget, management', 'community, nurse, unit',
-           'officer, office, police', 'equipment, investment, investigator',
-           'school, health, room', 'master, registered, meter',
-           'coordinator, services, service',
-           'administrative, administration, administrator',
-           'income, assistance, client',
-           'information, technology, recreation',
-           'firefighter, rescuer, oversight',
-           'accountant, assistant, library',
-           'technician, mechanic, electrician',
-           'crossing, purchasing, background',
-           'correctional, correction, regional', 'operator, bus, operations',
-           'specialist, special, environmental',
-           'program, programs, projects', 'enforcement, inspector, abandoned',
-           'warehouse, welfare, caseworker', 'liquor, clerk, store',
+    array(['welfare, officer, office', 'patrol, 4th, 6th',
+           'station, state, mediation', 'mechanical, central, fiscal',
+           'silver, spring, urban', 'behavioral, health, school',
+           'security, mccf, unit', 'services, highway, service',
+           'warehouse, delivery, liquor', 'rockville, twinbrook, downtown',
+           'building, structural, design', 'supports, accounts, support',
+           'traffic, safety, alcohol', 'management, equipment, budget',
+           'gaithersburg, the, clarksburg',
+           'development, technology, director', 'nicholson, transit, taxicab',
+           'administration, battalion, admin',
+           'communications, communication, commuter',
+           'planning, training, recruit', 'special, laboratory, financials',
+           'district, squad, 3rd', 'investigative, investigations, criminal',
+           'assessment, protective, projects', 'recycling, solid, collection',
+           'geographic, system, graphic', 'division, abandoned, family',
+           'maintenance, facilities, facility', 'toddlers, custody, council',
+           'emergency, assistance, eligibility',
+           'firefighter, rescuer, master', 'librarian, library, attendant',
+           'specialist, special, quality', 'officer, office, security',
+           'school, room, behavioral', 'program, programs, projects',
+           'operator, bus, operations', 'coordinator, coordinating, depot',
+           'candidate, sheriff, deputy',
+           'information, technology, technologist',
+           'technician, mechanic, supply', 'warehouse, welfare, caseworker',
+           'correctional, correction, corporal',
+           'services, service, customer', 'liquor, clerk, store',
            'legislative, principal, executive',
-           'supervisory, supervisor, therapist', 'corporal, erp, behavioral',
-           'telecommunications, communications, safety',
-           'planning, permitting, senior', 'captain, recruit, rescue',
-           'candidate, sheriff, deputy', 'lieutenant, attendant, maintenance'],
-          dtype=object)
+           'enforcement, inspector, permitting',
+           'assistance, assistant, income',
+           'supervisory, supervisor, therapist',
+           'purchasing, crossing, plumber',
+           'communications, telecommunications, safety',
+           'environmental, analyst, budget',
+           'recreation, renovation, resource', 'sergeant, police, cadet',
+           'manager, iii, management', 'lieutenant, captain, chief',
+           'community, health, nurse', 'planning, engineer, senior',
+           'administrative, administration, administrator',
+           'equipment, auditor, investigator'], dtype=object)
 
 
 
@@ -561,7 +559,7 @@ Let's look at the cross-validated R2 score of our model:
 
  .. code-block:: none
 
-    R2 score:  mean: 0.921; std: 0.011
+    R2 score:  mean: 0.919; std: 0.014
 
 
 
@@ -697,7 +695,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 28.645 seconds)
+   **Total running time of the script:** (1 minutes 17.202 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:
