@@ -2,7 +2,7 @@
   "jupyter-config-data": {
     "appName": "JupyterLite",
     "appUrl": "./lab",
-    "appVersion": "0.2.1",
+    "appVersion": "0.2.3",
     "baseUrl": "./",
     "defaultKernelName": "python",
     "faviconUrl": "./lab/favicon.ico",
@@ -10,7 +10,7 @@
       {
         "extension": "./extension",
         "liteExtension": true,
-        "load": "static/remoteEntry.b251ea2aad2b76ca95d7.js",
+        "load": "static/remoteEntry.56b1d891a24a2cc674e1.js",
         "name": "@jupyterlite/pyodide-kernel-extension"
       },
       {
@@ -300,7 +300,7 @@
     "litePluginSettings": {
       "@jupyterlite/pyodide-kernel-extension:kernel": {
         "pipliteUrls": [
-          "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=a5d23eb46ae5db36bf940297c66261c3224b813a7ba8d214f13e3387a9905697"
+          "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=39797aa5a010c14d980945936127dbfe731c3680271118cb19b6af002503c3b6"
         ],
         "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.24.0/full/pyodide.js"
       }

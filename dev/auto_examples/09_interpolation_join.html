@@ -26,15 +26,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -47,16 +47,16 @@
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=1083c8fd" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../_static/documentation_options.js?v=01f34227"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=fd10adb8"></script>
-    <script src="../_static/jupyterlite_sphinx.js?v=f09d7af2"></script>
+    <script src="../_static/jupyterlite_sphinx.js?v=f25406b8"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/09_interpolation_join';</script>
     <link rel="icon" href="../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../about.html" />
@@ -72,10 +72,9 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -131,7 +130,7 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
   });
 </script>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
 <div class="bd-header__inner bd-page-width">
   <label class="sidebar-toggle primary-toggle" for="__primary">
     <span class="fa-solid fa-bars"></span>
@@ -169,12 +168,6 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
       
         <div class="navbar-item">
 <nav class="navbar-nav">
-  <p class="sidebar-header-items__title"
-     role="heading"
-     aria-level="1"
-     aria-label="Site Navigation">
-    Site Navigation
-  </p>
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
@@ -305,10 +298,13 @@ document.write(`
   
 </div>
 
-    </nav>
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -321,12 +317,6 @@ document.write(`
         
           <div class="navbar-item">
 <nav class="navbar-nav">
-  <p class="sidebar-header-items__title"
-     role="heading"
-     aria-level="1"
-     aria-label="Site Navigation">
-    Site Navigation
-  </p>
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
@@ -491,7 +481,7 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <div class="sphx-glr-download-link-note admonition note">
 <p class="admonition-title">Note</p>
@@ -756,9 +746,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>40.1</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>29.259711</td>
-      <td>79.718482</td>
-      <td>0.015491</td>
+      <td>29.434572</td>
+      <td>30.716030</td>
+      <td>-0.012324</td>
     </tr>
     <tr>
       <th>1</th>
@@ -768,9 +758,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>39.6</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>29.285050</td>
-      <td>21.155480</td>
-      <td>0.042051</td>
+      <td>29.473927</td>
+      <td>14.561546</td>
+      <td>0.030016</td>
     </tr>
     <tr>
       <th>2</th>
@@ -780,9 +770,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>20.5</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>25.412625</td>
-      <td>34.248480</td>
-      <td>0.007145</td>
+      <td>25.567408</td>
+      <td>35.869333</td>
+      <td>0.354727</td>
     </tr>
     <tr>
       <th>3</th>
@@ -792,9 +782,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>39.4</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>30.293699</td>
-      <td>51.635413</td>
-      <td>0.015491</td>
+      <td>31.417770</td>
+      <td>21.121055</td>
+      <td>-0.015113</td>
     </tr>
     <tr>
       <th>4</th>
@@ -804,9 +794,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>37.3</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>26.631558</td>
-      <td>19.526615</td>
-      <td>0.175097</td>
+      <td>28.116925</td>
+      <td>17.026104</td>
+      <td>0.094577</td>
     </tr>
   </tbody>
 </table>
@@ -922,55 +912,55 @@ Then, we use it to transform the flights table – it adds a <code class="docuti
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>2.965844</td>
+      <td>2.445391</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2008-04-29</td>
-      <td>DTW</td>
-      <td>-11.0</td>
-      <td>DTW</td>
-      <td>Detroit Metropolitan-Wayne County</td>
-      <td>MI</td>
-      <td>42.212059</td>
-      <td>-83.348836</td>
-      <td>16.240187</td>
+      <td>2008-03-02</td>
+      <td>DFW</td>
+      <td>65.0</td>
+      <td>DFW</td>
+      <td>Dallas-Fort Worth International</td>
+      <td>TX</td>
+      <td>32.895951</td>
+      <td>-97.037200</td>
+      <td>19.006449</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2008-03-31</td>
-      <td>DTW</td>
-      <td>7.0</td>
-      <td>DTW</td>
-      <td>Detroit Metropolitan-Wayne County</td>
-      <td>MI</td>
-      <td>42.212059</td>
-      <td>-83.348836</td>
-      <td>7.471953</td>
+      <td>2008-03-16</td>
+      <td>GSO</td>
+      <td>-15.0</td>
+      <td>GSO</td>
+      <td>Piedmont Triad International</td>
+      <td>NC</td>
+      <td>36.097747</td>
+      <td>-79.937297</td>
+      <td>17.140317</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2008-03-19</td>
-      <td>DTW</td>
-      <td>84.0</td>
-      <td>DTW</td>
-      <td>Detroit Metropolitan-Wayne County</td>
-      <td>MI</td>
-      <td>42.212059</td>
-      <td>-83.348836</td>
-      <td>6.270639</td>
+      <td>2008-04-27</td>
+      <td>ORD</td>
+      <td>26.0</td>
+      <td>ORD</td>
+      <td>Chicago O'Hare International</td>
+      <td>IL</td>
+      <td>41.979595</td>
+      <td>-87.904464</td>
+      <td>16.398789</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2008-01-07</td>
-      <td>DTW</td>
-      <td>-11.0</td>
-      <td>DTW</td>
-      <td>Detroit Metropolitan-Wayne County</td>
-      <td>MI</td>
-      <td>42.212059</td>
-      <td>-83.348836</td>
-      <td>4.351701</td>
+      <td>2008-01-27</td>
+      <td>DFW</td>
+      <td>-10.0</td>
+      <td>DFW</td>
+      <td>Dallas-Fort Worth International</td>
+      <td>TX</td>
+      <td>32.895951</td>
+      <td>-97.037200</td>
+      <td>12.513037</td>
     </tr>
   </tbody>
 </table>
@@ -990,11 +980,11 @@ We can perform a few basic sanity checks.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -2.623816
-MT    1.508959
-WA    1.724816
-MN    2.220250
-OR    2.714397
+AK   -4.647790
+MT    0.650437
+WA    1.048342
+ND    2.101548
+MN    2.144767
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1003,11 +993,11 @@ Name: TMAX, dtype: float64
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-LA    21.431996
-FL    24.211084
-HI    24.911745
-VI    24.936864
-PR    25.558690
+LA    21.666044
+FL    24.700309
+HI    25.903574
+VI    26.837353
+PR    27.499910
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1036,7 +1026,7 @@ But at least the <a class="reference internal" href="../generated/skrub.Interpol
 <p>We have seen how to fit an <a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> transformer: we give it a table (the weather data) and a set of matching columns (here date, latitude, longitude) and it learns to predict the other columns’ values  (such as the max daily temperature).
 Then, it transforms tables by <em>predicting</em> values that a matching row would contain, rather than by searching for an actual match.
 It is a generalization of the <a class="reference internal" href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an <a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 9.079 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.931 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-09-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/09_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -1083,12 +1073,14 @@ It is a generalization of the <a class="reference internal" href="../generated/s
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
-  <div class="sidebar-secondary-item">
 
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
-  <nav class="bd-toc-nav page-toc">
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-weather-data">Load weather data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolationjoiner-with-a-ground-truth-joining-the-weather-table-on-itself">InterpolationJoiner with a ground truth: joining the weather table on itself</a></li>
@@ -1139,8 +1131,8 @@ It is a generalization of the <a class="reference internal" href="../generated/s
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1151,7 +1143,7 @@ It is a generalization of the <a class="reference internal" href="../generated/s
 
   <p class="copyright">
     
-      © Copyright 2018-2023, the dirty_cat developers, 2023-2023, the skrub developers.
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2024, the skrub developers.
       <br/>
     
   </p>
@@ -1173,7 +1165,7 @@ It is a generalization of the <a class="reference internal" href="../generated/s
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.4.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
 </p></div>
       
     </div>
