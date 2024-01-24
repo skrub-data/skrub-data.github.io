@@ -1194,43 +1194,45 @@ categorical columns.</p></li>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer.named_transformers_" title="skrub.TableVectorizer.named_transformers_" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-property"><span class="n">tv</span><span class="o">.</span><span class="n">named_transformers_</span></a><span class="p">[</span><span class="s2">&quot;high_cardinality&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([&#39;district, patrol, squad&#39;, &#39;rockville, twinbrook, library&#39;,
-       &#39;station, state, estate&#39;, &#39;welfare, children, child&#39;,
-       &#39;nicholson, transit, taxicab&#39;, &#39;silver, spring, urban&#39;,
-       &#39;special, commercial, mechanical&#39;, &#39;security, mc311, mccf&#39;,
-       &#39;fleet, adult, ombudsman&#39;,
-       &#39;investigative, investigations, criminal&#39;,
-       &#39;behavioral, health, school&#39;, &#39;services, highway, service&#39;,
-       &#39;supports, support, network&#39;, &#39;management, mangement, engineering&#39;,
-       &#39;custody, mcdc, muddy&#39;, &#39;traffic, safety, alcohol&#39;,
-       &#39;building, structural, design&#39;, &#39;technology, systems, telephone&#39;,
-       &#39;family, animal, major&#39;, &#39;gaithersburg, the, clarksburg&#39;,
-       &#39;communications, communication, division&#39;,
-       &#39;transport, transportation, section&#39;,
-       &#39;accounts, programs, council&#39;,
-       &#39;administrative, administration, battalion&#39;,
-       &#39;warehouse, delivery, liquor&#39;,
-       &#39;development, automotive, equipment&#39;,
-       &#39;eligibility, assistance, medical&#39;, &#39;training, planning, recruit&#39;,
-       &#39;emergency, commuter, centers&#39;, &#39;maintenance, facilities, finance&#39;,
-       &#39;sergeant, cadet, police&#39;, &#39;accountant, attorney, attendant&#39;,
-       &#39;firefighter, rescuer, recruit&#39;, &#39;manager, budget, management&#39;,
-       &#39;officer, office, police&#39;, &#39;assistance, assistant, income&#39;,
-       &#39;equipment, apprentice, facilities&#39;,
-       &#39;telecommunications, communications, safety&#39;,
-       &#39;administrative, legislative, principal&#39;,
-       &#39;specialist, special, environmental&#39;, &#39;operator, bus, operations&#39;,
-       &#39;correctional, correction, regional&#39;,
-       &#39;technician, mechanic, electrician&#39;, &#39;candidate, sheriff, deputy&#39;,
-       &#39;corporal, erp, behavioral&#39;, &#39;librarian, library, associate&#39;,
-       &#39;coordinator, services, service&#39;, &#39;crossing, purchasing, planning&#39;,
-       &#39;information, technology, senior&#39;,
-       &#39;enforcement, permitting, inspector&#39;, &#39;school, health, room&#39;,
-       &#39;lieutenant, captain, chief&#39;, &#39;master, registered, meter&#39;,
-       &#39;community, nurse, unit&#39;, &#39;recreation, renovation, resource&#39;,
-       &#39;liquor, clerk, store&#39;, &#39;craftsworker, worker, social&#39;,
-       &#39;warehouse, welfare, caseworker&#39;, &#39;program, programs, property&#39;,
-       &#39;supervisory, supervisor, therapist&#39;], dtype=object)
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([&#39;administration, operations, administrative&#39;,
+       &#39;behavioral, health, school&#39;, &#39;traffic, safety, alcohol&#39;,
+       &#39;silver, spring, urban&#39;, &#39;warehouse, programs, director&#39;,
+       &#39;division, family, crimes&#39;, &#39;management, equipment, automotive&#39;,
+       &#39;maintenance, facilities, compliance&#39;, &#39;station, state, estate&#39;,
+       &#39;training, recruit, recruiting&#39;, &#39;district, squad, 3rd&#39;,
+       &#39;ombudsman, waste, solid&#39;, &#39;rockville, twinbrook, library&#39;,
+       &#39;highway, services, service&#39;, &#39;technology, systems, telephone&#39;,
+       &#39;security, mccf, unit&#39;, &#39;violence, domestic, sheriff&#39;,
+       &#39;eligibility, assistance, medical&#39;, &#39;welfare, children, childhood&#39;,
+       &#39;gaithersburg, clarksburg, the&#39;, &#39;nicholson, transit, taxicab&#39;,
+       &#39;investigative, investigations, explosive&#39;,
+       &#39;supports, support, sports&#39;, &#39;enforcement, engineering, parking&#39;,
+       &#39;accounts, council, members&#39;,
+       &#39;communications, communication, telecommunications&#39;,
+       &#39;custody, mcdc, customer&#39;, &#39;patrol, 6th, 4th&#39;,
+       &#39;building, construction, instruction&#39;,
+       &#39;development, residential, special&#39;, &#39;engineer, plumber, welder&#39;,
+       &#39;sergeant, cadet, emergency&#39;, &#39;firefighter, rescuer, master&#39;,
+       &#39;specialist, special, quality&#39;, &#39;school, health, room&#39;,
+       &#39;manager, projects, project&#39;, &#39;officer, office, police&#39;,
+       &#39;coordinator, services, service&#39;, &#39;operator, equipment, bus&#39;,
+       &#39;legislative, principal, executive&#39;,
+       &#39;information, technology, technologist&#39;,
+       &#39;administrator, administration, administrative&#39;,
+       &#39;purchasing, crossing, background&#39;,
+       &#39;lieutenant, maintenance, facilities&#39;,
+       &#39;correctional, correction, corporal&#39;, &#39;income, assistance, client&#39;,
+       &#39;community, nurse, security&#39;, &#39;liquor, clerk, store&#39;,
+       &#39;technician, mechanic, supply&#39;,
+       &#39;enforcement, inspector, abandoned&#39;,
+       &#39;accountant, assistant, attorney&#39;, &#39;captain, rescue, chief&#39;,
+       &#39;environmental, budget, enviromental&#39;,
+       &#39;representative, construction, recreation&#39;,
+       &#39;warehouse, worker, truck&#39;,
+       &#39;communications, telecommunications, safety&#39;,
+       &#39;program, programs, sr&#39;, &#39;permitting, planning, senior&#39;,
+       &#39;candidate, sheriff, deputy&#39;, &#39;librarian, supervisory, supervisor&#39;],
+      dtype=object)
 </pre></div>
 </div>
 <ul class="simple">
@@ -1263,7 +1265,7 @@ can encode datetime columns for machine learning.</p></li>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;R2 score:  mean: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; std: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.921; std: 0.015
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.922; std: 0.013
 </pre></div>
 </div>
 <p>The simple pipeline applied on this complex dataset gave us very good results.</p>
@@ -1736,7 +1738,7 @@ pipeline, which we built using the <a class="reference internal" href="../genera
 <p>We saw that by default, it works well on a heterogeneous dataset.</p>
 <p>To better understand our dataset, and without much effort, we were also able
 to plot the feature importances.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 8.838 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 19.301 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-01-encodings-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/01_encodings.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

@@ -305,7 +305,7 @@ We will start by checking out the available tables with
  .. code-block:: none
 
 
-    {'schools', 'companies', 'movies', 'games', 'albums', 'all_entities'}
+    {'albums', 'games', 'movies', 'all_entities', 'companies', 'schools'}
 
 
 
@@ -857,7 +857,7 @@ It helped significantly improve the prediction score.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (11 minutes 20.472 seconds)
+   **Total running time of the script:** (11 minutes 41.284 seconds)
 
 
 .. _sphx_glr_download_auto_examples_06_ken_embeddings.py:
