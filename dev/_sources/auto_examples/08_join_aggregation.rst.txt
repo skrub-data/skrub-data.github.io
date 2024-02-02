@@ -363,20 +363,6 @@ We can now make a couple of plots and gain some insight on our dataset.
       sns.barplot(x=x, y=y, palette=cmap(norm(y)))
     /home/circleci/project/examples/08_join_aggregation.py:109: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
       sns.barplot(x=x, y=y, palette=cmap(norm(y)))
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
 
 
 
@@ -418,26 +404,6 @@ We also display the distribution of our target ``y``.
       sns.barplot(x=x, y=y, palette=cmap(norm(y)))
     /home/circleci/project/examples/08_join_aggregation.py:109: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
       sns.barplot(x=x, y=y, palette=cmap(norm(y)))
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
 
 
 
@@ -1282,75 +1248,75 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split1_test_score</th>
-          <td>0.048643</td>
-          <td>0.027592</td>
-          <td>0.068392</td>
-          <td>0.048778</td>
-          <td>0.071470</td>
+          <td>0.042252</td>
+          <td>0.060926</td>
+          <td>0.063391</td>
+          <td>0.058702</td>
+          <td>0.078062</td>
         </tr>
         <tr>
           <th>split2_test_score</th>
-          <td>0.078028</td>
-          <td>0.082063</td>
-          <td>0.095433</td>
-          <td>0.093926</td>
-          <td>0.089129</td>
+          <td>0.067242</td>
+          <td>0.066752</td>
+          <td>0.097311</td>
+          <td>0.085783</td>
+          <td>0.089980</td>
         </tr>
         <tr>
           <th>split3_test_score</th>
-          <td>0.042842</td>
-          <td>0.070539</td>
-          <td>0.067098</td>
-          <td>0.054071</td>
-          <td>0.068934</td>
+          <td>0.049556</td>
+          <td>0.064409</td>
+          <td>0.054721</td>
+          <td>0.064737</td>
+          <td>0.068588</td>
         </tr>
         <tr>
           <th>split4_test_score</th>
-          <td>0.134479</td>
-          <td>0.127624</td>
-          <td>0.138937</td>
-          <td>0.140672</td>
-          <td>0.143654</td>
+          <td>0.137404</td>
+          <td>0.128282</td>
+          <td>0.157756</td>
+          <td>0.145116</td>
+          <td>0.140877</td>
         </tr>
         <tr>
           <th>split5_test_score</th>
-          <td>0.107158</td>
-          <td>0.114014</td>
-          <td>0.105925</td>
-          <td>0.110832</td>
-          <td>0.117450</td>
+          <td>0.108309</td>
+          <td>0.111799</td>
+          <td>0.109771</td>
+          <td>0.109307</td>
+          <td>0.116897</td>
         </tr>
         <tr>
           <th>split6_test_score</th>
-          <td>0.082649</td>
-          <td>0.094892</td>
-          <td>0.102370</td>
-          <td>0.109465</td>
-          <td>0.104754</td>
+          <td>0.075220</td>
+          <td>0.098098</td>
+          <td>0.110020</td>
+          <td>0.109725</td>
+          <td>0.109883</td>
         </tr>
         <tr>
           <th>split7_test_score</th>
-          <td>0.065326</td>
-          <td>0.073433</td>
-          <td>0.071523</td>
-          <td>0.064290</td>
-          <td>0.073089</td>
+          <td>0.072458</td>
+          <td>0.062815</td>
+          <td>0.061255</td>
+          <td>0.070957</td>
+          <td>0.077433</td>
         </tr>
         <tr>
           <th>split8_test_score</th>
-          <td>0.111572</td>
-          <td>0.114294</td>
-          <td>0.119153</td>
-          <td>0.114041</td>
-          <td>0.128553</td>
+          <td>0.113679</td>
+          <td>0.117063</td>
+          <td>0.117655</td>
+          <td>0.122320</td>
+          <td>0.132786</td>
         </tr>
         <tr>
           <th>split9_test_score</th>
-          <td>0.123788</td>
-          <td>0.154327</td>
-          <td>0.170666</td>
-          <td>0.164228</td>
-          <td>0.182308</td>
+          <td>0.115747</td>
+          <td>0.148132</td>
+          <td>0.165982</td>
+          <td>0.168360</td>
+          <td>0.175135</td>
         </tr>
       </tbody>
     </table>
@@ -1420,35 +1386,6 @@ and uses this average to predict the ratings in the test set.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/categorical.py:640: FutureWarning: SeriesGroupBy.grouper is deprecated and will be removed in a future version of pandas.
-      positions = grouped.grouper.result_index.to_numpy(dtype=float)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/categorical.py:640: FutureWarning: SeriesGroupBy.grouper is deprecated and will be removed in a future version of pandas.
-      positions = grouped.grouper.result_index.to_numpy(dtype=float)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/categorical.py:640: FutureWarning: SeriesGroupBy.grouper is deprecated and will be removed in a future version of pandas.
-      positions = grouped.grouper.result_index.to_numpy(dtype=float)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/categorical.py:640: FutureWarning: SeriesGroupBy.grouper is deprecated and will be removed in a future version of pandas.
-      positions = grouped.grouper.result_index.to_numpy(dtype=float)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/categorical.py:640: FutureWarning: SeriesGroupBy.grouper is deprecated and will be removed in a future version of pandas.
-      positions = grouped.grouper.result_index.to_numpy(dtype=float)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/categorical.py:640: FutureWarning: SeriesGroupBy.grouper is deprecated and will be removed in a future version of pandas.
-      positions = grouped.grouper.result_index.to_numpy(dtype=float)
-
 
 
 
@@ -1470,7 +1407,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 17.712 seconds)
+   **Total running time of the script:** (0 minutes 16.713 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:

@@ -305,7 +305,7 @@ We will start by checking out the available tables with
  .. code-block:: none
 
 
-    {'albums', 'games', 'movies', 'all_entities', 'companies', 'schools'}
+    {'companies', 'all_entities', 'games', 'schools', 'movies', 'albums'}
 
 
 
@@ -822,23 +822,6 @@ Finally, we plot the scores on a boxplot:
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/categorical.py:640: FutureWarning: SeriesGroupBy.grouper is deprecated and will be removed in a future version of pandas.
-      positions = grouped.grouper.result_index.to_numpy(dtype=float)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/categorical.py:640: FutureWarning: SeriesGroupBy.grouper is deprecated and will be removed in a future version of pandas.
-      positions = grouped.grouper.result_index.to_numpy(dtype=float)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/_base.py:949: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
-      data_subset = grouped_data.get_group(pd_key)
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/seaborn/categorical.py:640: FutureWarning: SeriesGroupBy.grouper is deprecated and will be removed in a future version of pandas.
-      positions = grouped.grouper.result_index.to_numpy(dtype=float)
-
 
 
 
@@ -857,7 +840,7 @@ It helped significantly improve the prediction score.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (11 minutes 41.284 seconds)
+   **Total running time of the script:** (11 minutes 2.407 seconds)
 
 
 .. _sphx_glr_download_auto_examples_06_ken_embeddings.py:
