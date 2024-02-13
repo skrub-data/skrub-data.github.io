@@ -527,7 +527,10 @@ Note that we use the light version (100k rows).</p>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html#pandas.DataFrame.shape" title="pandas.DataFrame.shape" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-property"><span class="n">X</span><span class="o">.</span><span class="n">shape</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.shape.html#pandas.Series.shape" title="pandas.Series.shape" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-property"><span class="n">y</span><span class="o">.</span><span class="n">shape</span></a>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>((100836, 3), (100836,))
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:682: UserWarning: Could not find the dataset &#39;ratings&#39; locally. Downloading it from MovieLens; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data.
+  info = _fetch_movielens(dataset_id, data_directory)
+
+((100836, 3), (100836,))
 </pre></div>
 </div>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">X</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
@@ -1490,75 +1493,75 @@ operation maximizing our validation score.</p>
     </tr>
     <tr>
       <th>split1_test_score</th>
-      <td>0.042252</td>
-      <td>0.060926</td>
-      <td>0.063391</td>
-      <td>0.058702</td>
-      <td>0.078062</td>
+      <td>0.069283</td>
+      <td>0.056368</td>
+      <td>0.073899</td>
+      <td>0.057680</td>
+      <td>0.057553</td>
     </tr>
     <tr>
       <th>split2_test_score</th>
-      <td>0.067242</td>
-      <td>0.066752</td>
-      <td>0.097311</td>
-      <td>0.085783</td>
-      <td>0.089980</td>
+      <td>0.072798</td>
+      <td>0.088786</td>
+      <td>0.096752</td>
+      <td>0.102521</td>
+      <td>0.089380</td>
     </tr>
     <tr>
       <th>split3_test_score</th>
-      <td>0.049556</td>
-      <td>0.064409</td>
-      <td>0.054721</td>
-      <td>0.064737</td>
-      <td>0.068588</td>
+      <td>0.043244</td>
+      <td>0.063236</td>
+      <td>0.064828</td>
+      <td>0.071958</td>
+      <td>0.075321</td>
     </tr>
     <tr>
       <th>split4_test_score</th>
-      <td>0.137404</td>
-      <td>0.128282</td>
-      <td>0.157756</td>
-      <td>0.145116</td>
-      <td>0.140877</td>
+      <td>0.142250</td>
+      <td>0.134551</td>
+      <td>0.147813</td>
+      <td>0.143780</td>
+      <td>0.143111</td>
     </tr>
     <tr>
       <th>split5_test_score</th>
-      <td>0.108309</td>
-      <td>0.111799</td>
-      <td>0.109771</td>
-      <td>0.109307</td>
-      <td>0.116897</td>
+      <td>0.102343</td>
+      <td>0.113315</td>
+      <td>0.106883</td>
+      <td>0.108460</td>
+      <td>0.115449</td>
     </tr>
     <tr>
       <th>split6_test_score</th>
-      <td>0.075220</td>
-      <td>0.098098</td>
-      <td>0.110020</td>
-      <td>0.109725</td>
-      <td>0.109883</td>
+      <td>0.084894</td>
+      <td>0.098099</td>
+      <td>0.105918</td>
+      <td>0.105323</td>
+      <td>0.108140</td>
     </tr>
     <tr>
       <th>split7_test_score</th>
-      <td>0.072458</td>
-      <td>0.062815</td>
-      <td>0.061255</td>
-      <td>0.070957</td>
-      <td>0.077433</td>
+      <td>0.067123</td>
+      <td>0.067532</td>
+      <td>0.063589</td>
+      <td>0.062274</td>
+      <td>0.090337</td>
     </tr>
     <tr>
       <th>split8_test_score</th>
-      <td>0.113679</td>
-      <td>0.117063</td>
-      <td>0.117655</td>
-      <td>0.122320</td>
-      <td>0.132786</td>
+      <td>0.101810</td>
+      <td>0.119498</td>
+      <td>0.120624</td>
+      <td>0.119870</td>
+      <td>0.126702</td>
     </tr>
     <tr>
       <th>split9_test_score</th>
-      <td>0.115747</td>
-      <td>0.148132</td>
-      <td>0.165982</td>
-      <td>0.168360</td>
-      <td>0.175135</td>
+      <td>0.117192</td>
+      <td>0.150777</td>
+      <td>0.159269</td>
+      <td>0.159434</td>
+      <td>0.178770</td>
     </tr>
   </tbody>
 </table>
@@ -1620,7 +1623,7 @@ performance: computing the mean yields a single statistic, whereas histograms
 yield a density over a reduced set of bins, and <code class="docutils literal notranslate"><span class="pre">&quot;value_counts&quot;</span></code> yields an
 exhaustive histogram over all the possible values of ratings
 (here 10 different values, from 0.5 to 5).</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 16.713 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 19.169 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-08-join-aggregation-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/08_join_aggregation.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
