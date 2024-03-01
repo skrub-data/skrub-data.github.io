@@ -350,9 +350,9 @@ To avoid clashes in the column names, we use the ``suffix`` parameter to append 
           <td>40.1</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>30.586856</td>
-          <td>60.843492</td>
-          <td>-0.004976</td>
+          <td>28.793065</td>
+          <td>36.405488</td>
+          <td>0.028923</td>
         </tr>
         <tr>
           <th>1</th>
@@ -362,9 +362,9 @@ To avoid clashes in the column names, we use the ``suffix`` parameter to append 
           <td>39.6</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>29.940090</td>
-          <td>22.613147</td>
-          <td>0.030998</td>
+          <td>29.934053</td>
+          <td>23.814175</td>
+          <td>0.056715</td>
         </tr>
         <tr>
           <th>2</th>
@@ -374,9 +374,9 @@ To avoid clashes in the column names, we use the ``suffix`` parameter to append 
           <td>20.5</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>25.841483</td>
-          <td>36.655105</td>
-          <td>0.408144</td>
+          <td>25.691471</td>
+          <td>61.294862</td>
+          <td>0.036142</td>
         </tr>
         <tr>
           <th>3</th>
@@ -386,9 +386,9 @@ To avoid clashes in the column names, we use the ``suffix`` parameter to append 
           <td>39.4</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>31.564117</td>
-          <td>34.013521</td>
-          <td>-0.024416</td>
+          <td>31.083335</td>
+          <td>18.782720</td>
+          <td>-0.056641</td>
         </tr>
         <tr>
           <th>4</th>
@@ -398,9 +398,9 @@ To avoid clashes in the column names, we use the ``suffix`` parameter to append 
           <td>37.3</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>27.716471</td>
-          <td>22.731031</td>
-          <td>0.030721</td>
+          <td>27.021425</td>
+          <td>15.758833</td>
+          <td>-0.048054</td>
         </tr>
       </tbody>
     </table>
@@ -580,7 +580,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>MI</td>
           <td>42.212059</td>
           <td>-83.348836</td>
-          <td>3.709108</td>
+          <td>2.086271</td>
         </tr>
         <tr>
           <th>1</th>
@@ -592,7 +592,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>TX</td>
           <td>32.895951</td>
           <td>-97.037200</td>
-          <td>18.808205</td>
+          <td>19.039737</td>
         </tr>
         <tr>
           <th>2</th>
@@ -604,7 +604,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>NC</td>
           <td>36.097747</td>
           <td>-79.937297</td>
-          <td>16.934809</td>
+          <td>17.402124</td>
         </tr>
         <tr>
           <th>3</th>
@@ -616,7 +616,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>IL</td>
           <td>41.979595</td>
           <td>-87.904464</td>
-          <td>17.067165</td>
+          <td>15.957930</td>
         </tr>
         <tr>
           <th>4</th>
@@ -628,7 +628,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>TX</td>
           <td>32.895951</td>
           <td>-97.037200</td>
-          <td>13.514435</td>
+          <td>13.279960</td>
         </tr>
       </tbody>
     </table>
@@ -678,11 +678,11 @@ States with the lowest average predicted temperatures: Alaska, Montana, North Da
 
 
     state
-    AK   -1.919501
-    MT    1.642075
-    WA    1.754522
-    MN    2.639093
-    OR    2.783316
+    AK   -5.434837
+    MT    0.747835
+    WA    1.276608
+    MN    1.695421
+    ND    2.126488
     Name: TMAX, dtype: float64
 
 
@@ -707,11 +707,11 @@ States with the highest predicted temperatures: Puerto Rico, Virgin Islands, Haw
 
 
     state
-    LA    21.733102
-    FL    23.835112
-    HI    24.662882
-    VI    25.021615
-    PR    25.833912
+    LA    21.582258
+    FL    24.666959
+    VI    24.802627
+    HI    25.498273
+    PR    25.657998
     Name: TMAX, dtype: float64
 
 
@@ -787,7 +787,7 @@ It is a generalization of the :func:`~skrub.fuzzy_join`, as :func:`~skrub.fuzzy_
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 5.780 seconds)
+   **Total running time of the script:** (0 minutes 5.573 seconds)
 
 
 .. _sphx_glr_download_auto_examples_09_interpolation_join.py:

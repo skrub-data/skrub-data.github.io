@@ -581,7 +581,7 @@ original table (df), and those that we downloaded from the worldbank
         <tr>
           <th>255</th>
           <td>World</td>
-          <td>12743.851677</td>
+          <td>12687.741894</td>
         </tr>
         <tr>
           <th>258</th>
@@ -1062,7 +1062,7 @@ us an overview of the situation:
           <td>Ivory Coast</td>
           <td>5235.0</td>
           <td>East Asia &amp; Pacific</td>
-          <td>12920.480003</td>
+          <td>12930.691675</td>
           <td>1.320558</td>
           <td>0.944021</td>
           <td>True</td>
@@ -1332,7 +1332,7 @@ life_exp table:
           <th>0</th>
           <td>Finland</td>
           <td>7821.0</td>
-          <td>50916.280465</td>
+          <td>50871.930451</td>
           <td>0.0</td>
           <td>0.0</td>
           <td>True</td>
@@ -1467,7 +1467,7 @@ And the table with a measure of legal rights strength in the country:
           <th>0</th>
           <td>Finland</td>
           <td>7821.0</td>
-          <td>50916.280465</td>
+          <td>50871.930451</td>
           <td>0.0</td>
           <td>0.0</td>
           <td>True</td>
@@ -1732,7 +1732,7 @@ introduced into a grid search:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 19.581 seconds)
+   **Total running time of the script:** (0 minutes 17.162 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining.py:

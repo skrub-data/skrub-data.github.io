@@ -532,9 +532,9 @@ document.write(`
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.to_datetime<a class="headerlink" href="#skrub-to-datetime" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.to_datetime">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">errors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'coerce'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6d18147/skrub/_datetime_encoder.py#L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.to_datetime" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">errors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'coerce'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e9e3e11/skrub/_datetime_encoder.py#L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.to_datetime" title="Link to this definition">#</a></dt>
 <dd><p>Convert the columns of a dataframe or 2d array into a datetime representation.</p>
-<p>This function augments <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html#pandas.to_datetime" title="(in pandas v2.2.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.to_datetime()</span></code></a> by supporting dataframes
+<p>This function augments <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html#pandas.to_datetime" title="(in pandas v2.2.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.to_datetime()</span></code></a> by supporting dataframes
 and 2d array inputs. It only attempts to convert columns whose dtype are
 object or string. Numeric columns are skip and preserved in the output.</p>
 <p>Use the ‘format’ keyword to force a specific datetime format. See more details in
@@ -569,7 +569,7 @@ match this format to <code class="docutils literal notranslate"><span class="pre
 <dt><strong>random_state</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://numpy.org/doc/stable/reference/random/legacy.html#numpy.random.RandomState" title="(in NumPy v1.26)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RandomState</span></code></a> instance or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=None</span></dt><dd><p>Determines random number generation for the subsampling during
 datetime guessing. Use an int to make the randomness deterministic.</p>
 </dd>
-<dt><strong>**kwargs</strong><span class="classifier">key, value mappings</span></dt><dd><p>Other keyword arguments are passed down to <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html#pandas.to_datetime" title="(in pandas v2.2.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.to_datetime()</span></code></a>.</p>
+<dt><strong>**kwargs</strong><span class="classifier">key, value mappings</span></dt><dd><p>Other keyword arguments are passed down to <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html#pandas.to_datetime" title="(in pandas v2.2.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.to_datetime()</span></code></a>.</p>
 <p>One notable argument is ‘format’. Setting a format overwrites
 the datetime format guessing behavior of this function for all columns.</p>
 <p>Note that we don’t encourage you to use dayfirst or monthfirst argument, since
@@ -584,7 +584,7 @@ whereas in <code class="docutils literal notranslate"><span class="pre">skrub.to
 <dd class="field-even"><dl class="simple">
 <dt>datetime</dt><dd><p>Return type depends on input.
 - dataframes, series and 2d arrays return the same type
-- otherwise return the same output as <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html#pandas.to_datetime" title="(in pandas v2.2.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.to_datetime()</span></code></a>.</p>
+- otherwise return the same output as <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html#pandas.to_datetime" title="(in pandas v2.2.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.to_datetime()</span></code></a>.</p>
 </dd>
 </dl>
 </dd>
@@ -592,7 +592,7 @@ whereas in <code class="docutils literal notranslate"><span class="pre">skrub.to
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html#pandas.to_datetime" title="(in pandas v2.2.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.to_datetime()</span></code></a></dt><dd><p>Convert argument to datetime.</p>
+<dt><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html#pandas.to_datetime" title="(in pandas v2.2.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.to_datetime()</span></code></a></dt><dd><p>Convert argument to datetime.</p>
 </dd>
 </dl>
 </div>
