@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Minor changes: skrub release 0.1.0: Major ..." />
+<meta property="og:description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Added the MultiAggJoiner that allows to au..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Minor changes: skrub release 0.1.0: Major ..." />
+<meta name="description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Added the MultiAggJoiner that allows to au..." />
 
     <title>Changes &#8212; skrub</title>
   
@@ -496,6 +496,14 @@ document.write(`
 It is currently undergoing fast development and backward compatibility is not ensured.</p>
 <section id="major-changes">
 <h3>Major changes<a class="headerlink" href="#major-changes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Added the <a class="reference internal" href="generated/skrub.MultiAggJoiner.html#skrub.MultiAggJoiner" title="skrub.MultiAggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiAggJoiner</span></code></a> that allows to augment a main table with
+multiple auxiliary tables. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/876">#876</a> by <a class="reference external" href="https://github.com/TheooJ">Théo Jolivet</a>.</p></li>
+<li><p><a class="reference internal" href="generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a> now only accepts a single table as an input, and some of its
+parameters were renamed to be consistent with the <a class="reference internal" href="generated/skrub.MultiAggJoiner.html#skrub.MultiAggJoiner" title="skrub.MultiAggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiAggJoiner</span></code></a>.
+It now has a <code class="docutils literal notranslate"><span class="pre">key`</span></code> parameter that allows to join main and auxiliary tables that share
+the same column names. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/876">#876</a> by <a class="reference external" href="https://github.com/TheooJ">Théo Jolivet</a>.</p></li>
+</ul>
 </section>
 <section id="minor-changes">
 <h3>Minor changes<a class="headerlink" href="#minor-changes" title="Link to this heading">#</a></h3>
