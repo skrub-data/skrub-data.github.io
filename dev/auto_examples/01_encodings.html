@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../_static/jupyterlite_sphinx.css?v=ca70e7f1" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyterlite_sphinx.css?v=13b285a0" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=61a4c737" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -52,11 +52,11 @@
   <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../_static/documentation_options.js?v=01f34227"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=fd10adb8"></script>
-    <script src="../_static/jupyterlite_sphinx.js?v=d6bdf5f8"></script>
+    <script src="../_static/jupyterlite_sphinx.js?v=1cca63f7"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/01_encodings';</script>
     <link rel="icon" href="../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../about.html" />
@@ -487,7 +487,7 @@ document.write(`
   <div class="sphx-glr-download-link-note admonition note">
 <p class="admonition-title">Note</p>
 <p><a class="reference internal" href="#sphx-glr-download-auto-examples-01-encodings-py"><span class="std std-ref">Go to the end</span></a>
-to download the full example code or to run this example in your browser via JupyterLite or Binder</p>
+to download the full example code. or to run this example in your browser via JupyterLite or Binder</p>
 </div>
 <section class="sphx-glr-example-title" id="encoding-from-a-dataframe-to-a-numerical-matrix-for-machine-learning">
 <span id="example-encodings"></span><span id="sphx-glr-auto-examples-01-encodings-py"></span><h1>Encoding: from a dataframe to a numerical matrix for machine learning<a class="headerlink" href="#encoding-from-a-dataframe-to-a-numerical-matrix-for-machine-learning" title="Link to this heading">#</a></h1>
@@ -1194,43 +1194,43 @@ categorical columns.</p></li>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer.named_transformers_" title="skrub.TableVectorizer.named_transformers_" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-property"><span class="n">tv</span><span class="o">.</span><span class="n">named_transformers_</span></a><span class="p">[</span><span class="s2">&quot;high_cardinality&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([&#39;behavioral, health, school&#39;, &#39;programs, receivable, accounting&#39;,
-       &#39;6th, 4th, 5th&#39;, &#39;station, state, estate&#39;,
-       &#39;traffic, safety, alcohol&#39;, &#39;nicholson, transit, taxicab&#39;,
-       &#39;gaithersburg, clarksburg, the&#39;, &#39;services, highway, service&#39;,
-       &#39;assessment, protective, projects&#39;,
-       &#39;development, stormwater, landlord&#39;, &#39;silver, spring, ride&#39;,
-       &#39;special, operations, section&#39;, &#39;supports, support, toddlers&#39;,
-       &#39;administration, battalion, administrative&#39;,
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([&#39;eligibility, assistance, disability&#39;,
+       &#39;development, engineering, kingsview&#39;, &#39;station, state, estate&#39;,
+       &#39;silver, spring, urban&#39;, &#39;services, highway, service&#39;,
+       &#39;district, patrol, squad&#39;, &#39;ombudsman, human, bureau&#39;,
+       &#39;emergency, commuter, centers&#39;, &#39;director, recruit, office&#39;,
+       &#39;maintenance, facilities, compliance&#39;, &#39;warehouse, liquor, stock&#39;,
+       &#39;traffic, safety, alcohol&#39;, &#39;gaithersburg, clarksburg, the&#39;,
+       &#39;mechanical, clinical, fiscal&#39;, &#39;welfare, childhood, children&#39;,
+       &#39;family, crimes, animal&#39;,
        &#39;investigative, investigations, criminal&#39;,
-       &#39;security, custody, mcdc&#39;, &#39;patrol, 3rd, district&#39;,
-       &#39;management, equipment, budget&#39;, &#39;director, officer, resource&#39;,
-       &#39;individual, animal, regional&#39;, &#39;emergency, centers, center&#39;,
-       &#39;communications, communication, division&#39;,
-       &#39;rockville, twinbrook, downtown&#39;, &#39;divisioincrime, family, sexual&#39;,
-       &#39;engineering, building, kingsview&#39;,
-       &#39;technology, mechanical, technical&#39;, &#39;warehouse, delivery, liquor&#39;,
-       &#39;welfare, children, childhood&#39;,
-       &#39;maintenance, facilities, eligibility&#39;, &#39;squad, 1st, 2nd&#39;,
-       &#39;coordinator, services, service&#39;, &#39;operator, bus, operations&#39;,
-       &#39;firefighter, rescuer, recruit&#39;, &#39;officer, office, police&#39;,
-       &#39;recreation, renovation, resource&#39;,
-       &#39;administrative, administration, administrator&#39;,
-       &#39;program, programs, projects&#39;, &#39;income, assistance, client&#39;,
-       &#39;warehouse, welfare, caseworker&#39;, &#39;school, health, room&#39;,
-       &#39;correctional, correction, regional&#39;,
-       &#39;assistant, library, librarian&#39;, &#39;community, nurse, unit&#39;,
-       &#39;liquor, clerk, store&#39;, &#39;manager, budget, management&#39;,
-       &#39;enforcement, permitting, inspector&#39;,
-       &#39;technician, mechanic, electrician&#39;,
-       &#39;information, technology, technologist&#39;, &#39;captain, chief, mcfrs&#39;,
-       &#39;telecommunications, communications, safety&#39;,
-       &#39;specialist, special, environmental&#39;, &#39;sergeant, cadet, emergency&#39;,
-       &#39;master, registered, meter&#39;, &#39;lieutenant, attendant, maintenance&#39;,
-       &#39;corporal, erp, behavioral&#39;, &#39;crossing, planning, purchasing&#39;,
-       &#39;legislative, principal, executive&#39;,
-       &#39;equipment, auditor, investment&#39;, &#39;candidate, sheriff, deputy&#39;,
-       &#39;supervisory, supervisor, therapist&#39;], dtype=object)
+       &#39;administration, operations, battalion&#39;,
+       &#39;rockville, twinbrook, library&#39;, &#39;nicholson, transit, taxicab&#39;,
+       &#39;behavioral, health, school&#39;, &#39;security, custody, mc311&#39;,
+       &#39;management, equipment, automotive&#39;, &#39;accounts, toddlers, council&#39;,
+       &#39;technology, systems, information&#39;, &#39;protective, process, program&#39;,
+       &#39;planning, training, building&#39;, &#39;supports, support, network&#39;,
+       &#39;communications, communication, immunization&#39;,
+       &#39;collection, recycling, solid&#39;, &#39;firefighter, rescuer, recruit&#39;,
+       &#39;operator, equipment, bus&#39;, &#39;officer, office, security&#39;,
+       &#39;manager, projects, project&#39;, &#39;specialist, program, special&#39;,
+       &#39;school, room, behavioral&#39;, &#39;coordinator, coordinating, depot&#39;,
+       &#39;community, health, nurse&#39;, &#39;sergeant, police, cadet&#39;,
+       &#39;correctional, correction, corporal&#39;, &#39;liquor, clerk, store&#39;,
+       &#39;candidate, sheriff, deputy&#39;, &#39;captain, chief, battalion&#39;,
+       &#39;accountant, assistant, library&#39;, &#39;master, registered, meter&#39;,
+       &#39;supervisor, supervisory, advisor&#39;,
+       &#39;enforcement, permitting, inspector&#39;, &#39;assistance, income, client&#39;,
+       &#39;communications, telecommunications, safety&#39;,
+       &#39;administrative, legislative, executive&#39;,
+       &#39;services, service, building&#39;,
+       &#39;representative, construction, government&#39;,
+       &#39;information, technology, recreation&#39;,
+       &#39;technician, mechanic, supply&#39;, &#39;therapist, psychiatrist, plumber&#39;,
+       &#39;crossing, purchasing, engineer&#39;,
+       &#39;lieutenant, attendant, maintenance&#39;, &#39;principal, aide, print&#39;,
+       &#39;warehouse, welfare, caseworker&#39;, &#39;budget, senior, procurement&#39;],
+      dtype=object)
 </pre></div>
 </div>
 <ul class="simple">
@@ -1263,7 +1263,7 @@ can encode datetime columns for machine learning.</p></li>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;R2 score:  mean: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; std: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.920; std: 0.014
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.920; std: 0.010
 </pre></div>
 </div>
 <p>The simple pipeline applied on this complex dataset gave us very good results.</p>
@@ -1736,7 +1736,7 @@ pipeline, which we built using the <a class="reference internal" href="../genera
 <p>We saw that by default, it works well on a heterogeneous dataset.</p>
 <p>To better understand our dataset, and without much effort, we were also able
 to plot the feature importances.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 17.773 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 11.050 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-01-encodings-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/01_encodings.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -1866,7 +1866,7 @@ to plot the feature importances.</p>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
     <br/>
   </p>
 </div>

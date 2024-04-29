@@ -11,7 +11,7 @@
         :class: sphx-glr-download-link-note
 
         :ref:`Go to the end <sphx_glr_download_auto_examples_01_encodings.py>`
-        to download the full example code or to run this example in your browser via JupyterLite or Binder
+        to download the full example code. or to run this example in your browser via JupyterLite or Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -847,43 +847,43 @@ corresponding columns:
  .. code-block:: none
 
 
-    array(['behavioral, health, school', 'programs, receivable, accounting',
-           '6th, 4th, 5th', 'station, state, estate',
-           'traffic, safety, alcohol', 'nicholson, transit, taxicab',
-           'gaithersburg, clarksburg, the', 'services, highway, service',
-           'assessment, protective, projects',
-           'development, stormwater, landlord', 'silver, spring, ride',
-           'special, operations, section', 'supports, support, toddlers',
-           'administration, battalion, administrative',
+    array(['eligibility, assistance, disability',
+           'development, engineering, kingsview', 'station, state, estate',
+           'silver, spring, urban', 'services, highway, service',
+           'district, patrol, squad', 'ombudsman, human, bureau',
+           'emergency, commuter, centers', 'director, recruit, office',
+           'maintenance, facilities, compliance', 'warehouse, liquor, stock',
+           'traffic, safety, alcohol', 'gaithersburg, clarksburg, the',
+           'mechanical, clinical, fiscal', 'welfare, childhood, children',
+           'family, crimes, animal',
            'investigative, investigations, criminal',
-           'security, custody, mcdc', 'patrol, 3rd, district',
-           'management, equipment, budget', 'director, officer, resource',
-           'individual, animal, regional', 'emergency, centers, center',
-           'communications, communication, division',
-           'rockville, twinbrook, downtown', 'divisioincrime, family, sexual',
-           'engineering, building, kingsview',
-           'technology, mechanical, technical', 'warehouse, delivery, liquor',
-           'welfare, children, childhood',
-           'maintenance, facilities, eligibility', 'squad, 1st, 2nd',
-           'coordinator, services, service', 'operator, bus, operations',
-           'firefighter, rescuer, recruit', 'officer, office, police',
-           'recreation, renovation, resource',
-           'administrative, administration, administrator',
-           'program, programs, projects', 'income, assistance, client',
-           'warehouse, welfare, caseworker', 'school, health, room',
-           'correctional, correction, regional',
-           'assistant, library, librarian', 'community, nurse, unit',
-           'liquor, clerk, store', 'manager, budget, management',
-           'enforcement, permitting, inspector',
-           'technician, mechanic, electrician',
-           'information, technology, technologist', 'captain, chief, mcfrs',
-           'telecommunications, communications, safety',
-           'specialist, special, environmental', 'sergeant, cadet, emergency',
-           'master, registered, meter', 'lieutenant, attendant, maintenance',
-           'corporal, erp, behavioral', 'crossing, planning, purchasing',
-           'legislative, principal, executive',
-           'equipment, auditor, investment', 'candidate, sheriff, deputy',
-           'supervisory, supervisor, therapist'], dtype=object)
+           'administration, operations, battalion',
+           'rockville, twinbrook, library', 'nicholson, transit, taxicab',
+           'behavioral, health, school', 'security, custody, mc311',
+           'management, equipment, automotive', 'accounts, toddlers, council',
+           'technology, systems, information', 'protective, process, program',
+           'planning, training, building', 'supports, support, network',
+           'communications, communication, immunization',
+           'collection, recycling, solid', 'firefighter, rescuer, recruit',
+           'operator, equipment, bus', 'officer, office, security',
+           'manager, projects, project', 'specialist, program, special',
+           'school, room, behavioral', 'coordinator, coordinating, depot',
+           'community, health, nurse', 'sergeant, police, cadet',
+           'correctional, correction, corporal', 'liquor, clerk, store',
+           'candidate, sheriff, deputy', 'captain, chief, battalion',
+           'accountant, assistant, library', 'master, registered, meter',
+           'supervisor, supervisory, advisor',
+           'enforcement, permitting, inspector', 'assistance, income, client',
+           'communications, telecommunications, safety',
+           'administrative, legislative, executive',
+           'services, service, building',
+           'representative, construction, government',
+           'information, technology, recreation',
+           'technician, mechanic, supply', 'therapist, psychiatrist, plumber',
+           'crossing, purchasing, engineer',
+           'lieutenant, attendant, maintenance', 'principal, aide, print',
+           'warehouse, welfare, caseworker', 'budget, senior, procurement'],
+          dtype=object)
 
 
 
@@ -965,7 +965,7 @@ Let's look at the cross-validated R2 score of our model:
 
  .. code-block:: none
 
-    R2 score:  mean: 0.920; std: 0.014
+    R2 score:  mean: 0.920; std: 0.010
 
 
 
@@ -1505,7 +1505,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 17.773 seconds)
+   **Total running time of the script:** (1 minutes 11.050 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:

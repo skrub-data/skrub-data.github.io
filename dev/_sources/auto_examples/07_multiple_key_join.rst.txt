@@ -11,7 +11,7 @@
         :class: sphx-glr-download-link-note
 
         :ref:`Go to the end <sphx_glr_download_auto_examples_07_multiple_key_join.py>`
-        to download the full example code or to run this example in your browser via JupyterLite or Binder
+        to download the full example code. or to run this example in your browser via JupyterLite or Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -1256,7 +1256,7 @@ The results:
     /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:241: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as all zeros
       warnings.warn(
 
-    0.5895
+    0.58825
 
 
 
@@ -1274,7 +1274,7 @@ Our final cross-validated accuracy score is 0.58.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (6 minutes 35.477 seconds)
+   **Total running time of the script:** (6 minutes 4.282 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:

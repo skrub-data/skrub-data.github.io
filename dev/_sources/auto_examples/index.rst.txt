@@ -9,6 +9,7 @@ Examples
 
     <div class="sphx-glr-thumbnails">
 
+.. thumbnail-parent-div-open
 
 .. raw:: html
 
@@ -162,6 +163,8 @@ Examples
       <div class="sphx-glr-thumbnail-title">Interpolation join: infer missing rows when joining two tables</div>
     </div>
 
+
+.. thumbnail-parent-div-close
 
 .. raw:: html
 

@@ -11,7 +11,7 @@
         :class: sphx-glr-download-link-note
 
         :ref:`Go to the end <sphx_glr_download_auto_examples_09_interpolation_join.py>`
-        to download the full example code or to run this example in your browser via JupyterLite or Binder
+        to download the full example code. or to run this example in your browser via JupyterLite or Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -350,9 +350,9 @@ To avoid clashes in the column names, we use the ``suffix`` parameter to append 
           <td>40.1</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>30.537286</td>
-          <td>45.290352</td>
-          <td>-0.009947</td>
+          <td>29.248321</td>
+          <td>36.642261</td>
+          <td>0.075906</td>
         </tr>
         <tr>
           <th>1</th>
@@ -362,9 +362,9 @@ To avoid clashes in the column names, we use the ``suffix`` parameter to append 
           <td>39.6</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>29.913518</td>
-          <td>30.055519</td>
-          <td>-0.010875</td>
+          <td>29.251961</td>
+          <td>17.047852</td>
+          <td>0.092516</td>
         </tr>
         <tr>
           <th>2</th>
@@ -374,9 +374,9 @@ To avoid clashes in the column names, we use the ``suffix`` parameter to append 
           <td>20.5</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>26.726665</td>
-          <td>35.700775</td>
-          <td>-0.066825</td>
+          <td>26.270562</td>
+          <td>42.899027</td>
+          <td>-0.049635</td>
         </tr>
         <tr>
           <th>3</th>
@@ -386,9 +386,9 @@ To avoid clashes in the column names, we use the ``suffix`` parameter to append 
           <td>39.4</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>31.996741</td>
-          <td>21.828390</td>
-          <td>-0.010875</td>
+          <td>30.488966</td>
+          <td>24.680410</td>
+          <td>0.075906</td>
         </tr>
         <tr>
           <th>4</th>
@@ -398,9 +398,9 @@ To avoid clashes in the column names, we use the ``suffix`` parameter to append 
           <td>37.3</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>28.966220</td>
-          <td>19.733741</td>
-          <td>-0.062850</td>
+          <td>26.916719</td>
+          <td>12.554871</td>
+          <td>0.218021</td>
         </tr>
       </tbody>
     </table>
@@ -580,7 +580,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>MI</td>
           <td>42.212059</td>
           <td>-83.348836</td>
-          <td>3.980285</td>
+          <td>4.242307</td>
         </tr>
         <tr>
           <th>1</th>
@@ -592,7 +592,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>TX</td>
           <td>32.895951</td>
           <td>-97.037200</td>
-          <td>18.726387</td>
+          <td>18.598563</td>
         </tr>
         <tr>
           <th>2</th>
@@ -604,7 +604,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>NC</td>
           <td>36.097747</td>
           <td>-79.937297</td>
-          <td>17.567899</td>
+          <td>16.648015</td>
         </tr>
         <tr>
           <th>3</th>
@@ -616,7 +616,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>IL</td>
           <td>41.979595</td>
           <td>-87.904464</td>
-          <td>16.874039</td>
+          <td>17.235687</td>
         </tr>
         <tr>
           <th>4</th>
@@ -628,7 +628,7 @@ Then, we use it to transform the flights table -- it adds a ``'TMAX'`` column co
           <td>TX</td>
           <td>32.895951</td>
           <td>-97.037200</td>
-          <td>14.305983</td>
+          <td>14.528987</td>
         </tr>
       </tbody>
     </table>
@@ -678,11 +678,11 @@ States with the lowest average predicted temperatures: Alaska, Montana, North Da
 
 
     state
-    AK   -1.893936
-    MT    1.738997
-    WA    1.870444
-    MN    2.562429
-    ID    3.145427
+    AK   -3.141221
+    MT    1.344948
+    WA    1.506128
+    MN    2.162670
+    OR    2.554634
     Name: TMAX, dtype: float64
 
 
@@ -707,11 +707,11 @@ States with the highest predicted temperatures: Puerto Rico, Virgin Islands, Haw
 
 
     state
-    LA    21.908996
-    FL    24.509991
-    VI    24.911482
-    HI    25.281835
-    PR    25.673434
+    LA    21.682459
+    FL    24.071014
+    HI    25.166021
+    VI    25.820348
+    PR    26.537344
     Name: TMAX, dtype: float64
 
 
@@ -787,7 +787,7 @@ It is a generalization of the :func:`~skrub.fuzzy_join`, as :func:`~skrub.fuzzy_
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 5.507 seconds)
+   **Total running time of the script:** (0 minutes 4.788 seconds)
 
 
 .. _sphx_glr_download_auto_examples_09_interpolation_join.py:
