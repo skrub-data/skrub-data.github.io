@@ -847,43 +847,42 @@ corresponding columns:
  .. code-block:: none
 
 
-    array(['nicholson, transit, taxicab', 'development, resource, hampden',
-           'district, squad, payroll', 'station, state, accreditation',
-           'services, highway, service', 'delivery, warehouse, liquor',
-           'welfare, childhood, child', 'security, mccf, unit',
-           'behavioral, health, school',
-           'administrative, administration, training',
-           'traffic, safety, alcohol',
-           'compensation, acquisition, classification',
-           'gaithersburg, clarksburg, the', 'management, equipment, budget',
-           'rockville, twinbrook, downtown', 'engineering, planning, parking',
-           'custody, toddlers, mcdc', 'investigative, explosive, criminal',
-           '5th, 4th, 6th', 'supports, support, network',
-           'silver, spring, ride',
+    array(['engineering, cloverly, kensington',
+           'supports, support, compliance', 'station, mc311, state',
+           'director, training, recruit', 'patrol, 4th, 6th',
+           'services, highway, service',
+           'investigative, investigations, explosive',
+           'traffic, safety, alcohol', 'silver, spring, ride',
+           'technology, systems, telephone', 'gaithersburg, clarksburg, the',
+           'security, mccf, unit', 'mangement, projects, engagement',
+           'welfare, children, childhood', 'emergency, centers, center',
+           'behavioral, health, school', 'nicholson, transit, taxicab',
+           'warehouse, delivery, operations', 'district, squad, 3rd',
            'communications, communication, immunization',
-           'inspections, inspection, special',
-           'technology, telephone, systems', 'emergency, commuter, centers',
-           'accounts, accounting, programs', '3rd, patrol, 2nd',
-           'sexual, family, abused', 'maintenance, facilities, eligibility',
-           'assessment, protective, treatment',
+           'toddlers, custody, members', 'transport, planning, warrant',
+           'facilities, maintenance, twinbrook', 'assault, sexual, family',
+           'administration, battalion, admin',
+           'development, stormwater, neighborhood',
+           'equipment, automotive, fleet', 'processing, programs, building',
+           'special, financial, financials', 'mobile, disability, licensure',
+           'representative, legislative, consumer',
+           'operator, bus, operations', 'coordinator, transit, coordinating',
+           'correctional, recreation, correction',
+           'firefighter, rescuer, recruit', 'officer, office, traffic',
+           'programs, program, employee', 'librarian, library, associate',
            'information, technology, technologist',
-           'therapist, sheriff, deputy', 'officer, office, traffic',
-           'program, programs, property', 'lieutenant, attendant, facilities',
-           'firefighter, rescuer, master', 'assistance, income, client',
-           'community, security, nurse', 'coordinator, coordinating, records',
-           'school, room, behavioral', 'corporal, pfc, dietary',
-           'accountant, assistant, library', 'technician, mechanic, hvac',
-           'correctional, correction, regional',
-           'legislative, principal, executive', 'operator, equipment, bus',
-           'worker, social, leader', 'manager, budget, projects',
-           'sergeant, police, cadet', 'liquor, clerk, store',
+           'assistance, assistant, income', 'manager, projects, management',
+           'administrative, principal, executive', 'corporal, pfc, private',
+           'lieutenant, attendant, maintenance',
+           'technician, mechanic, supply', 'services, service, urban',
+           'school, room, behavioral', 'crossing, parking, guard',
+           'liquor, clerk, store', 'captain, chief, battalion',
+           'warehouse, craftsworker, welfare',
            'communications, telecommunications, safety',
-           'administrative, administration, administrator',
-           'crossing, engineer, purchasing',
-           'specialist, special, procurement', 'supply, transit, systems',
-           'services, service, president',
-           'enforcement, permitting, inspector', 'captain, rescue, chief',
-           'warehouse, welfare, driver', 'recreation, renovation, resource'],
+           'equipment, auditor, accountant', 'planning, engineer, senior',
+           'sergeant, police, cadet', 'community, health, nurse',
+           'specialist, special, quality', 'candidate, sheriff, deputy',
+           'master, meter, registered', 'enforcement, permitting, inspector'],
           dtype=object)
 
 
@@ -966,7 +965,7 @@ Let's look at the cross-validated R2 score of our model:
 
  .. code-block:: none
 
-    R2 score:  mean: 0.920; std: 0.013
+    R2 score:  mean: 0.922; std: 0.011
 
 
 
@@ -1506,7 +1505,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 12.192 seconds)
+   **Total running time of the script:** (1 minutes 13.209 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:
