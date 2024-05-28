@@ -239,13 +239,6 @@ We extract the table containing GDP per capita by country:
 
 
 
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:678: UserWarning: Could not find the dataset 'NY.GDP.PCAP.CD' locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/NY.GDP.PCAP.CD.csv.
-      info = _fetch_world_bank_data(dataset_id, data_directory)
-
 
 .. raw:: html
 
@@ -310,13 +303,6 @@ Then another table, with life expectancy by country:
 
 
 
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:678: UserWarning: Could not find the dataset 'SP.DYN.LE00.IN' locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/SP.DYN.LE00.IN.csv.
-      info = _fetch_world_bank_data(dataset_id, data_directory)
-
 
 .. raw:: html
 
@@ -380,13 +366,6 @@ And a table with legal rights strength by country:
 
 
 
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:678: UserWarning: Could not find the dataset 'IC.LGL.CRED.XQ' locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/IC.LGL.CRED.XQ.csv.
-      info = _fetch_world_bank_data(dataset_id, data_directory)
 
 
 .. raw:: html
@@ -1732,7 +1711,7 @@ introduced into a grid search:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 15.793 seconds)
+   **Total running time of the script:** (0 minutes 7.745 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining.py:

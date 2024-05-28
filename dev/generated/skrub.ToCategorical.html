@@ -7,16 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="skrub.DatetimeEncoder" />
+<meta property="og:title" content="skrub.ToCategorical" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/generated/skrub.DatetimeEncoder.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/generated/skrub.ToCategorical.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Usage examples at the bottom of this page. Examples using skrub.DatetimeEncoder: Encoding: from a dataframe to a numerical matrix for machine learning Handling datetime features with the DatetimeEn..." />
+<meta property="og:description" content="Usage examples at the bottom of this page. Examples using skrub.ToCategorical: Encoding: from a dataframe to a numerical matrix for machine learning" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_images/sphx_glr_01_encodings_thumb.png" />
 <meta property="og:image:alt" content="" />
-<meta name="description" content="Usage examples at the bottom of this page. Examples using skrub.DatetimeEncoder: Encoding: from a dataframe to a numerical matrix for machine learning Handling datetime features with the DatetimeEn..." />
+<meta name="description" content="Usage examples at the bottom of this page. Examples using skrub.ToCategorical: Encoding: from a dataframe to a numerical matrix for machine learning" />
 
-    <title>skrub.DatetimeEncoder &#8212; skrub</title>
+    <title>skrub.ToCategorical &#8212; skrub</title>
   
   
   
@@ -57,13 +57,13 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=fd10adb8"></script>
     <script src="../_static/jupyterlite_sphinx.js?v=d6bdf5f8"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.DatetimeEncoder';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'generated/skrub.ToCategorical';</script>
     <link rel="icon" href="../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="skrub.ToDatetime" href="skrub.ToDatetime.html" />
-    <link rel="prev" title="skrub.ToCategorical" href="skrub.ToCategorical.html" />
+    <link rel="next" title="skrub.DatetimeEncoder" href="skrub.DatetimeEncoder.html" />
+    <link rel="prev" title="skrub.SimilarityEncoder" href="skrub.SimilarityEncoder.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -440,15 +440,15 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="skrub.TableVectorizer.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.TableVectorizer</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Dirty category encoders</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.GapEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.GapEncoder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.MinHashEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.MinHashEncoder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.SimilarityEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.SimilarityEncoder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.ToCategorical.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.ToCategorical</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.ToCategorical</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Other encoders</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.DatetimeEncoder</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.DatetimeEncoder.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.DatetimeEncoder</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Converting datetime columns in a table</span></p>
 <ul class="nav bd-sidenav">
@@ -533,16 +533,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="skrub-datetimeencoder">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.DatetimeEncoder<a class="headerlink" href="#skrub-datetimeencoder" title="Link to this heading">#</a></h1>
+  <section id="skrub-tocategorical">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.ToCategorical<a class="headerlink" href="#skrub-tocategorical" title="Link to this heading">#</a></h1>
 <p class="side-comment">Usage examples at the bottom of this page.</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="skrub.DatetimeEncoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">DatetimeEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hour'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_weekday</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_total_seconds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/_datetime_encoder.py#L72"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder" title="Link to this definition">#</a></dt>
-<dd><p>Extract temporal features such as month, day of the week, … from a datetime column.</p>
+<dt class="sig sig-object py" id="skrub.ToCategorical">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">ToCategorical</span></span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/_to_categorical.py#L7"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToCategorical" title="Link to this definition">#</a></dt>
+<dd><p>Convert a string column to Categorical dtype.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code> is a type of single-column transformer. Unlike
+<p><code class="docutils literal notranslate"><span class="pre">ToCategorical</span></code> is a type of single-column transformer. Unlike
 most scikit-learn estimators, its <code class="docutils literal notranslate"><span class="pre">fit</span></code>, <code class="docutils literal notranslate"><span class="pre">transform</span></code> and
 <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> methods expect a single column (a pandas or
 polars Series) rather than a full dataframe. To apply this
@@ -550,216 +550,162 @@ transformer to one or more columns in a dataframe, use it as a
 parameter in a <code class="docutils literal notranslate"><span class="pre">skrub.TableVectorizer</span></code> or
 <code class="docutils literal notranslate"><span class="pre">sklearn.compose.ColumnTransformer</span></code>.</p>
 </div>
-<p>All extracted features are provided as float32 columns.</p>
-<p>No timezone conversion is performed: if the input column is timezone aware, the
-extracted features will be in the column’s timezone.</p>
-<p>An input column that does not have a Date or Datetime dtype will be
-rejected by raising a <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> exception. See <code class="docutils literal notranslate"><span class="pre">ToDatetime</span></code> for
-converting strings to proper datetimes. <strong>Note:</strong> the <code class="docutils literal notranslate"><span class="pre">TableVectorizer</span></code>
-only sends datetime columns to its <code class="docutils literal notranslate"><span class="pre">datetime_encoder</span></code>. Therefore it is
-always safe to use a <code class="docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code> as the <code class="docutils literal notranslate"><span class="pre">TableVectorizer</span></code>’s
-<code class="docutils literal notranslate"><span class="pre">datetime_encoder</span></code> parameter.</p>
-<dl class="field-list">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
-<dt><strong>resolution</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=”hour”</span></dt><dd><p>If a string, extract up to this resolution. Must be “year”, “month”,
-“day”, “hour”, “minute”, “second”, “microsecond”, or “nanosecond”. For
-example, <code class="docutils literal notranslate"><span class="pre">resolution=&quot;day&quot;</span></code> generates the features “year”, “month”,
-and “day” only. If the input column contains dates with no time
-information, time features (“hour”, “minute”, … ) are never extracted.
-If <code class="docutils literal notranslate"><span class="pre">None</span></code>, the features listed above are not extracted (but day of
-the week and total seconds may still be extracted, see below).</p>
-</dd>
-<dt><strong>add_weekday</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>Extract the day of the week as a numerical feature from 1 (Monday) to 7
-(Sunday).</p>
-</dd>
-<dt><strong>add_total_seconds</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>Add the total number of seconds since the Unix epoch (00:00:00 UTC on 1
-January 1970).</p>
-</dd>
-</dl>
-</dd>
-</dl>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<dl class="simple">
-<dt><a class="reference internal" href="skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToDatetime</span></code></a></dt><dd><p>Convert strings to datetimes.</p>
-</dd>
-</dl>
-</div>
+<p>The main benefit is that categorical columns can then be recognized by
+scikit-learn’s <code class="docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code> and
+<code class="docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code> with their
+<code class="docutils literal notranslate"><span class="pre">categorical_features='from_dtype'</span></code> option. This transformer is therefore
+particularly useful as the <code class="docutils literal notranslate"><span class="pre">low_cardinality_transformer</span></code> parameter of the
+<code class="docutils literal notranslate"><span class="pre">TableVectorizer</span></code> when combined with one of those supervised learners.</p>
+<p>A pandas column with dtype <code class="docutils literal notranslate"><span class="pre">string</span></code> or <code class="docutils literal notranslate"><span class="pre">object</span></code> containing strings, or
+a polars column with dtype <code class="docutils literal notranslate"><span class="pre">String</span></code>, is converted to a categorical
+column. Categorical columns are passed through.</p>
+<p>Any other type of column is rejected by raising a <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code>
+exception. <strong>Note:</strong> the <code class="docutils literal notranslate"><span class="pre">TableVectorizer</span></code> only sends string or
+categorical columns to its <code class="docutils literal notranslate"><span class="pre">low_cardinality_transformer</span></code>. Therefore it is
+always safe to use a <code class="docutils literal notranslate"><span class="pre">ToCategorical</span></code> instance as the
+<code class="docutils literal notranslate"><span class="pre">low_cardinality_transformer</span></code>.</p>
+<p>The output of <code class="docutils literal notranslate"><span class="pre">transform</span></code> also always has a Categorical dtype. The categories
+are not necessarily the same across different calls to <code class="docutils literal notranslate"><span class="pre">transform</span></code>. Indeed,
+scikit-learn estimators do not inspect the dtype’s categories but the actual
+values. Converting to a Categorical is therefore just a way to mark a
+column and indicate to downstream estimators that this column should be treated
+as categorical. Ensuring they are encoded consistently, handling unseen
+categories at test time, etc. is the responsibility of encoders such as
+<code class="docutils literal notranslate"><span class="pre">OneHotEncoder</span></code> and <code class="docutils literal notranslate"><span class="pre">LabelEncoder</span></code>, or of estimators that handle categories
+themselves such as <code class="docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code>.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <span class="n">ToCategorical</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;2024-05-13T12:05:36&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;2024-05-15T13:46:02&quot;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;login&quot;</span><span class="p">)</span>
-<span class="gp">... </span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">login</span>
-<span class="go">0   2024-05-13 12:05:36</span>
-<span class="go">1                   NaT</span>
-<span class="go">2   2024-05-15 13:46:02</span>
-<span class="go">Name: login, dtype: datetime64[ns]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <span class="n">DatetimeEncoder</span>
-</pre></div>
-</div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">DatetimeEncoder</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)</span>
-<span class="go">   login_year  login_month  login_day  login_hour  login_total_seconds</span>
-<span class="go">0      2024.0          5.0       13.0        12.0         1.715602e+09</span>
-<span class="go">1         NaN          NaN        NaN         NaN                  NaN</span>
-<span class="go">2      2024.0          5.0       15.0        13.0         1.715781e+09</span>
-</pre></div>
-</div>
-<p>We can ask for a finer resolution:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="s1">&#39;second&#39;</span><span class="p">,</span> <span class="n">add_total_seconds</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)</span>
-<span class="go">   login_year  login_month  login_day  login_hour  login_minute  login_second</span>
-<span class="go">0      2024.0          5.0       13.0        12.0           5.0          36.0</span>
-<span class="go">1         NaN          NaN        NaN         NaN           NaN           NaN</span>
-<span class="go">2      2024.0          5.0       15.0        13.0          46.0           2.0</span>
-</pre></div>
-</div>
-<p>We can also ask for the day of the week. The week starts at 1 on Monday and ends
-at 7 on Sunday. This is consistent with the ISO week date system
-(<a class="reference external" href="https://en.wikipedia.org/wiki/ISO_week_date">https://en.wikipedia.org/wiki/ISO_week_date</a>), the standard library
-<code class="docutils literal notranslate"><span class="pre">datetime.isoweekday()</span></code> and polars <code class="docutils literal notranslate"><span class="pre">weekday</span></code>, but not with pandas
-<code class="docutils literal notranslate"><span class="pre">day_of_week</span></code>, which counts days from 0.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%A = %w&#39;</span><span class="p">)</span>
-<span class="go">0       Monday = 1</span>
-<span class="go">1              NaN</span>
-<span class="go">2    Wednesday = 3</span>
-<span class="go">Name: login, dtype: object</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">login</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">day_of_week</span>
-<span class="go">0    0.0</span>
-<span class="go">1    NaN</span>
-<span class="go">2    2.0</span>
-<span class="go">Name: login, dtype: float64</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">add_weekday</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">add_total_seconds</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)</span>
-<span class="go">   login_year  login_month  login_day  login_hour  login_weekday</span>
-<span class="go">0      2024.0          5.0       13.0        12.0            1.0</span>
-<span class="go">1         NaN          NaN        NaN         NaN            NaN</span>
-<span class="go">2      2024.0          5.0       15.0        13.0            3.0</span>
-</pre></div>
-</div>
-<p>When a column contains only dates without time information, the time features
-are discarded, regardless of <code class="docutils literal notranslate"><span class="pre">resolution</span></code>.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">birthday</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;2024-04-14&#39;</span><span class="p">,</span> <span class="s1">&#39;2024-05-15&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;birthday&#39;</span><span class="p">))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="s1">&#39;second&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">birthday</span><span class="p">)</span>
-<span class="go">   birthday_year  birthday_month  birthday_day  birthday_total_seconds</span>
-<span class="go">0         2024.0             4.0          14.0            1.713053e+09</span>
-<span class="go">1         2024.0             5.0          15.0            1.715731e+09</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">extracted_features_</span>
-<span class="go">[&#39;year&#39;, &#39;month&#39;, &#39;day&#39;, &#39;total_seconds&#39;]</span>
-</pre></div>
-</div>
-<p>(The number of seconds since Epoch can still be extracted but not “hour”,
-“minute”, etc.)</p>
-<p>Non-datetime columns are rejected by raising a <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> exception.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;2024-04-14&#39;</span><span class="p">,</span> <span class="s1">&#39;2024-05-15&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;birthday&#39;</span><span class="p">)</span>
+<p>A string column is converted to a categorical column.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
-<span class="go">0    2024-04-14</span>
-<span class="go">1    2024-05-15</span>
-<span class="go">Name: birthday, dtype: object</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">DatetimeEncoder</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">0     one</span>
+<span class="go">1     two</span>
+<span class="go">2    None</span>
+<span class="go">Name: c, dtype: object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_cat</span> <span class="o">=</span> <span class="n">ToCategorical</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_cat</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">0    one</span>
+<span class="go">1    two</span>
+<span class="go">2    NaN</span>
+<span class="go">Name: c, dtype: category</span>
+<span class="go">Categories (2, object): [&#39;one&#39;, &#39;two&#39;]</span>
+</pre></div>
+</div>
+<p>The dtypes (the list of categories) of the outputs of <code class="docutils literal notranslate"><span class="pre">transform</span></code> may
+vary. This transformer only ensures the dtype is Categorical to mark the
+column as such for downstream encoders which will perform the actual
+encoding.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;four&#39;</span><span class="p">,</span> <span class="s1">&#39;five&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_cat</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">0    four</span>
+<span class="go">1    five</span>
+<span class="go">Name: c, dtype: category</span>
+<span class="go">Categories (2, object): [&#39;five&#39;, &#39;four&#39;]</span>
+</pre></div>
+</div>
+<p>Columns that already have a Categorical dtype are passed through:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_cat</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="ow">is</span> <span class="n">s</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Columns that are not strings nor categorical are rejected:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_cat</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">))</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">skrub._on_each_column.RejectColumn</span>: <span class="n">Column &#39;birthday&#39; does not have Date or Datetime dtype.</span>
+<span class="gr">skrub._on_each_column.RejectColumn</span>: <span class="n">Column &#39;c&#39; does not contain strings.</span>
 </pre></div>
 </div>
-<p><a class="reference internal" href="skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a>: can be used for converting strings to datetimes.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <span class="n">ToDatetime</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">make_pipeline</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">make_pipeline</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">DatetimeEncoder</span><span class="p">())</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="go">   birthday_year  birthday_month  birthday_day  birthday_total_seconds</span>
-<span class="go">0         2024.0             4.0          14.0            1.713053e+09</span>
-<span class="go">1         2024.0             5.0          15.0            1.715731e+09</span>
+<p><code class="docutils literal notranslate"><span class="pre">object</span></code> columns that do not contain only strings are also rejected:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_cat</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="w">    </span><span class="o">...</span>
+<span class="gr">skrub._on_each_column.RejectColumn</span>: <span class="n">Column &#39;c&#39; does not contain strings.</span>
 </pre></div>
 </div>
-<p><strong>Time zones</strong></p>
-<p>If the input column has a time zone, the extracted features are in this timezone.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;2024-05-13T12:05:36&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;2024-05-15T13:46:02&quot;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;login&quot;</span><span class="p">)</span>
-<span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">tz_localize</span><span class="p">(</span><span class="s1">&#39;Europe/Paris&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">DatetimeEncoder</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)[</span><span class="s1">&#39;login_hour&#39;</span><span class="p">]</span>
-<span class="go">0    12.0</span>
-<span class="go">1     NaN</span>
-<span class="go">2    13.0</span>
-<span class="go">Name: login_hour, dtype: float32</span>
+<p>No special handling of <code class="docutils literal notranslate"><span class="pre">StringDtype</span></code> vs <code class="docutils literal notranslate"><span class="pre">object</span></code> columns is done, the
+behavior is the same as <code class="docutils literal notranslate"><span class="pre">pd.astype('category')</span></code>: if the input uses the
+extension dtype, the categories of the output will, too.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;cat A&#39;</span><span class="p">,</span> <span class="s1">&#39;cat B&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;string&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">0    cat A</span>
+<span class="go">1    cat B</span>
+<span class="go">2     &lt;NA&gt;</span>
+<span class="go">Name: c, dtype: string</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_cat</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">0    cat A</span>
+<span class="go">1    cat B</span>
+<span class="go">2     &lt;NA&gt;</span>
+<span class="go">Name: c, dtype: category</span>
+<span class="go">Categories (2, string): [cat A, cat B]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span><span class="o">.</span><span class="n">cat</span><span class="o">.</span><span class="n">categories</span><span class="o">.</span><span class="n">dtype</span>
+<span class="go">string[python]</span>
 </pre></div>
 </div>
-<p>No special care is taken to convert inputs to <code class="docutils literal notranslate"><span class="pre">transform</span></code> to the same time
-zone as the column the encoder was fitted on. The features are always in the
-time zone of the input.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login_sp</span> <span class="o">=</span> <span class="n">login</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">tz_convert</span><span class="p">(</span><span class="s1">&#39;America/Sao_Paulo&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">login_sp</span>
-<span class="go">0   2024-05-13 07:05:36-03:00</span>
-<span class="go">1                         NaT</span>
-<span class="go">2   2024-05-15 08:46:02-03:00</span>
-<span class="go">Name: login, dtype: datetime64[ns, America/Sao_Paulo]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">login_sp</span><span class="p">)[</span><span class="s1">&#39;login_hour&#39;</span><span class="p">]</span>
-<span class="go">0    7.0</span>
-<span class="go">1    NaN</span>
-<span class="go">2    8.0</span>
-<span class="go">Name: login_hour, dtype: float32</span>
+<p>Polars string columns are converted to the <code class="docutils literal notranslate"><span class="pre">Categorical</span></code> dtype (not <code class="docutils literal notranslate"><span class="pre">Enum</span></code>). As
+for pandas, categories may vary across calls to <code class="docutils literal notranslate"><span class="pre">transform</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pytest</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pl</span> <span class="o">=</span> <span class="n">pytest</span><span class="o">.</span><span class="n">importorskip</span><span class="p">(</span><span class="s2">&quot;polars&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_cat</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">shape: (3,)</span>
+<span class="go">Series: &#39;c&#39; [cat]</span>
+<span class="go">[</span>
+<span class="go">    &quot;one&quot;</span>
+<span class="go">    &quot;two&quot;</span>
+<span class="go">    null</span>
+<span class="go">]</span>
 </pre></div>
 </div>
-<p>To ensure datetime columns are in a consistent timezones, use <code class="docutils literal notranslate"><span class="pre">ToDatetime</span></code>.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">DatetimeEncoder</span><span class="p">())</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)[</span><span class="s1">&#39;login_hour&#39;</span><span class="p">]</span>
-<span class="go">0    12.0</span>
-<span class="go">1     NaN</span>
-<span class="go">2    13.0</span>
-<span class="go">Name: login_hour, dtype: float32</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">login_sp</span><span class="p">)[</span><span class="s1">&#39;login_hour&#39;</span><span class="p">]</span>
-<span class="go">0    12.0</span>
-<span class="go">1     NaN</span>
-<span class="go">2    13.0</span>
-<span class="go">Name: login_hour, dtype: float32</span>
+<p>Polars Categorical or Enum columns are passed through:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">pl</span><span class="o">.</span><span class="n">Enum</span><span class="p">([</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">shape: (2,)</span>
+<span class="go">Series: &#39;c&#39; [enum]</span>
+<span class="go">[</span>
+<span class="go">    &quot;one&quot;</span>
+<span class="go">    &quot;two&quot;</span>
+<span class="go">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_cat</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="ow">is</span> <span class="n">s</span>
+<span class="go">True</span>
 </pre></div>
 </div>
-<p>Here we can see the input to <code class="docutils literal notranslate"><span class="pre">transform</span></code> has been converted back to the
-timezone used during <code class="docutils literal notranslate"><span class="pre">fit</span></code> and that we get the same result for “hour”.</p>
-<p># noqa</p>
-<dl class="field-list">
-<dt class="field-odd">Attributes<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
-<dt><strong>extracted_features_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of strings</span></dt><dd><p>The features that are extracted, a subset of [“year”, …, “nanosecond”,
-“weekday”, “total_seconds”]</p>
-</dd>
-</dl>
-</dd>
-</dl>
 <p class="rubric">Methods</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.fit" title="skrub.DatetimeEncoder.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(column[, y])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.ToCategorical.fit" title="skrub.ToCategorical.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(column[, y])</p></td>
 <td><p>Fit the transformer.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.fit_transform" title="skrub.DatetimeEncoder.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(column[, y])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.ToCategorical.fit_transform" title="skrub.ToCategorical.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(column[, y])</p></td>
 <td><p>Fit the encoder and transform a column.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.get_metadata_routing" title="skrub.DatetimeEncoder.get_metadata_routing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_metadata_routing</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.ToCategorical.get_metadata_routing" title="skrub.ToCategorical.get_metadata_routing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_metadata_routing</span></code></a>()</p></td>
 <td><p>Get metadata routing of this object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.get_params" title="skrub.DatetimeEncoder.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.ToCategorical.get_params" title="skrub.ToCategorical.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
 <td><p>Get parameters for this estimator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.set_fit_request" title="skrub.DatetimeEncoder.set_fit_request"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_fit_request</span></code></a>(*[, column])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.ToCategorical.set_fit_request" title="skrub.ToCategorical.set_fit_request"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_fit_request</span></code></a>(*[, column])</p></td>
 <td><p>Request metadata passed to the <code class="docutils literal notranslate"><span class="pre">fit</span></code> method.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.set_params" title="skrub.DatetimeEncoder.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.ToCategorical.set_params" title="skrub.ToCategorical.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
 <td><p>Set the parameters of this estimator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.set_transform_request" title="skrub.DatetimeEncoder.set_transform_request"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_transform_request</span></code></a>(*[, column])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.ToCategorical.set_transform_request" title="skrub.ToCategorical.set_transform_request"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_transform_request</span></code></a>(*[, column])</p></td>
 <td><p>Request metadata passed to the <code class="docutils literal notranslate"><span class="pre">transform</span></code> method.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.transform" title="skrub.DatetimeEncoder.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(column)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.ToCategorical.transform" title="skrub.ToCategorical.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(column)</p></td>
 <td><p>Transform a column.</p></td>
 </tr>
 </tbody>
 </table>
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.DatetimeEncoder.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/_on_each_column.py#L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.fit" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.ToCategorical.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/_on_each_column.py#L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToCategorical.fit" title="Link to this definition">#</a></dt>
 <dd><p>Fit the transformer.</p>
 <p>Subclasses should implement <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> and <code class="docutils literal notranslate"><span class="pre">transform</span></code>.</p>
 <dl class="field-list">
@@ -782,21 +728,21 @@ transform a single column, not a whole dataframe.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.DatetimeEncoder.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/_datetime_encoder.py#L259"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.fit_transform" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.ToCategorical.fit_transform">
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/_to_categorical.py#L140"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToCategorical.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit the encoder and transform a column.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>column</strong><span class="classifier">pandas or polars <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.2.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a> with dtype Date or Datetime</span></dt><dd><p>The input to transform.</p>
+<dt><strong>column</strong><span class="classifier">pandas or polars <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.2.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a></span></dt><dd><p>The input to transform.</p>
 </dd>
 <dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Ignored.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>transformed</strong><span class="classifier">DataFrame</span></dt><dd><p>The extracted features.</p>
+<dd class="field-even"><dl>
+<dt><strong>transformed</strong><span class="classifier">pandas or polars <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.2.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a></span></dt><dd><p>The input transformed to Categorical.</p>
 </dd>
 </dl>
 </dd>
@@ -804,8 +750,8 @@ transform a single column, not a whole dataframe.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.DatetimeEncoder.get_metadata_routing">
-<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/../sklearn/utils/_metadata_requests.py#L1495"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_metadata_routing" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.ToCategorical.get_metadata_routing">
+<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/../sklearn/utils/_metadata_requests.py#L1495"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToCategorical.get_metadata_routing" title="Link to this definition">#</a></dt>
 <dd><p>Get metadata routing of this object.</p>
 <p>Please check <a class="reference external" href="https://scikit-learn.org/stable/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.5)"><span class="xref std std-ref">User Guide</span></a> on how the routing
 mechanism works.</p>
@@ -821,8 +767,8 @@ routing information.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.DatetimeEncoder.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/../sklearn/base.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_params" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.ToCategorical.get_params">
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/../sklearn/base.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToCategorical.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -842,8 +788,8 @@ contained subobjects that are estimators.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.DatetimeEncoder.set_fit_request">
-<span class="sig-name descname"><span class="pre">set_fit_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/../sklearn/utils/_metadata_requests.py#L1249"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_fit_request" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.ToCategorical.set_fit_request">
+<span class="sig-name descname"><span class="pre">set_fit_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/../sklearn/utils/_metadata_requests.py#L1249"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToCategorical.set_fit_request" title="Link to this definition">#</a></dt>
 <dd><p>Request metadata passed to the <code class="docutils literal notranslate"><span class="pre">fit</span></code> method.</p>
 <p>Note that this method is only relevant if
 <code class="docutils literal notranslate"><span class="pre">enable_metadata_routing=True</span></code> (see <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.set_config.html#sklearn.set_config" title="(in scikit-learn v1.5)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.set_config()</span></code></a>).
@@ -885,8 +831,8 @@ sub-estimator of a meta-estimator, e.g. used inside a
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.DatetimeEncoder.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/../sklearn/base.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_params" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.ToCategorical.set_params">
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/../sklearn/base.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToCategorical.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -909,8 +855,8 @@ possible to update each component of a nested object.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.DatetimeEncoder.set_transform_request">
-<span class="sig-name descname"><span class="pre">set_transform_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/../sklearn/utils/_metadata_requests.py#L1249"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_transform_request" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.ToCategorical.set_transform_request">
+<span class="sig-name descname"><span class="pre">set_transform_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/../sklearn/utils/_metadata_requests.py#L1249"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToCategorical.set_transform_request" title="Link to this definition">#</a></dt>
 <dd><p>Request metadata passed to the <code class="docutils literal notranslate"><span class="pre">transform</span></code> method.</p>
 <p>Note that this method is only relevant if
 <code class="docutils literal notranslate"><span class="pre">enable_metadata_routing=True</span></code> (see <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.set_config.html#sklearn.set_config" title="(in scikit-learn v1.5)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.set_config()</span></code></a>).
@@ -952,19 +898,19 @@ sub-estimator of a meta-estimator, e.g. used inside a
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.DatetimeEncoder.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/_datetime_encoder.py#L294"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.transform" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="skrub.ToCategorical.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5b30ddd/skrub/_to_categorical.py#L162"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToCategorical.transform" title="Link to this definition">#</a></dt>
 <dd><p>Transform a column.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>column</strong><span class="classifier">pandas or polars <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.2.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a> with dtype Date or Datetime</span></dt><dd><p>The input to transform.</p>
+<dt><strong>column</strong><span class="classifier">pandas or polars <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.2.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a></span></dt><dd><p>The input to transform.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>transformed</strong><span class="classifier">DataFrame</span></dt><dd><p>The extracted features.</p>
+<dd class="field-even"><dl>
+<dt><strong>transformed</strong><span class="classifier">pandas or polars <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.2.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a></span></dt><dd><p>The input transformed to Categorical.</p>
 </dd>
 </dl>
 </dd>
@@ -973,17 +919,11 @@ sub-estimator of a meta-estimator, e.g. used inside a
 
 </dd></dl>
 
-<section id="examples-using-skrub-datetimeencoder">
-<h2>Examples using <code class="docutils literal notranslate"><span class="pre">skrub.DatetimeEncoder</span></code><a class="headerlink" href="#examples-using-skrub-datetimeencoder" title="Link to this heading">#</a></h2>
+<section id="examples-using-skrub-tocategorical">
+<h2>Examples using <code class="docutils literal notranslate"><span class="pre">skrub.ToCategorical</span></code><a class="headerlink" href="#examples-using-skrub-tocategorical" title="Link to this heading">#</a></h2>
 <div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numer..."><img alt="" src="../_images/sphx_glr_01_encodings_thumb.png" />
 <p><a class="reference internal" href="../auto_examples/01_encodings.html#sphx-glr-auto-examples-01-encodings-py"><span class="std std-ref">Encoding: from a dataframe to a numerical matrix for machine learning</span></a></p>
   <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we illustrate how to better integrate datetime features in machine learning mo..."><img alt="" src="../_images/sphx_glr_03_datetime_encoder_thumb.png" />
-<p><a class="reference internal" href="../auto_examples/03_datetime_encoder.html#sphx-glr-auto-examples-03-datetime-encoder-py"><span class="std std-ref">Handling datetime features with the DatetimeEncoder</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Handling datetime features with the DatetimeEncoder</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="MovieLens is a famous movie dataset used for both explicit and implicit recommender systems. It..."><img alt="" src="../_images/sphx_glr_08_join_aggregation_thumb.png" />
-<p><a class="reference internal" href="../auto_examples/08_join_aggregation.html#sphx-glr-auto-examples-08-join-aggregation-py"><span class="std std-ref">Self-aggregation on MovieLens</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Self-aggregation on MovieLens</div>
 </div></div><div class="clearer"></div></section>
 </section>
 
@@ -998,20 +938,20 @@ sub-estimator of a meta-estimator, e.g. used inside a
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.ToCategorical.html"
+       href="skrub.SimilarityEncoder.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.ToCategorical</p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.SimilarityEncoder</p>
       </div>
     </a>
     <a class="right-next"
-       href="skrub.ToDatetime.html"
+       href="skrub.DatetimeEncoder.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.ToDatetime</p>
+        <p class="prev-next-title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.DatetimeEncoder</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1033,18 +973,18 @@ sub-estimator of a meta-estimator, e.g. used inside a
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.fit"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.fit()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.fit_transform"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.fit_transform()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.get_metadata_routing"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.get_metadata_routing()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.get_params"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.get_params()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.set_fit_request"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.set_fit_request()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.set_params"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.set_params()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.set_transform_request"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.set_transform_request()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.transform"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.transform()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ToCategorical"><code class="docutils literal notranslate"><span class="pre">ToCategorical</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ToCategorical.fit"><code class="docutils literal notranslate"><span class="pre">ToCategorical.fit()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ToCategorical.fit_transform"><code class="docutils literal notranslate"><span class="pre">ToCategorical.fit_transform()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ToCategorical.get_metadata_routing"><code class="docutils literal notranslate"><span class="pre">ToCategorical.get_metadata_routing()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ToCategorical.get_params"><code class="docutils literal notranslate"><span class="pre">ToCategorical.get_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ToCategorical.set_fit_request"><code class="docutils literal notranslate"><span class="pre">ToCategorical.set_fit_request()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ToCategorical.set_params"><code class="docutils literal notranslate"><span class="pre">ToCategorical.set_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ToCategorical.set_transform_request"><code class="docutils literal notranslate"><span class="pre">ToCategorical.set_transform_request()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ToCategorical.transform"><code class="docutils literal notranslate"><span class="pre">ToCategorical.transform()</span></code></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-using-skrub-datetimeencoder">Examples using <code class="docutils literal notranslate"><span class="pre">skrub.DatetimeEncoder</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-using-skrub-tocategorical">Examples using <code class="docutils literal notranslate"><span class="pre">skrub.ToCategorical</span></code></a></li>
 </ul>
   </nav></div>
 
@@ -1052,7 +992,7 @@ sub-estimator of a meta-estimator, e.g. used inside a
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/skrub-data/skrub/edit/main/doc/generated/skrub.DatetimeEncoder.rst">
+    <a href="https://github.com/skrub-data/skrub/edit/main/doc/generated/skrub.ToCategorical.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -1067,7 +1007,7 @@ sub-estimator of a meta-estimator, e.g. used inside a
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../_sources/generated/skrub.DatetimeEncoder.rst.txt">
+    <a href="../_sources/generated/skrub.ToCategorical.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>

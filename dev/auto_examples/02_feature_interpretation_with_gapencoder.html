@@ -801,16 +801,16 @@ In the example below we select 3 labels to summarize each topic.</p>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Topic n°</span><span class="si">{</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">k</span></a><span class="si">}</span><span class="s2">: </span><span class="si">{</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">labels</span></a><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Topic n°0: administrative, administration, legislative
-Topic n°1: equipment, operator, liquor
-Topic n°2: correctional, correction, officer
-Topic n°3: firefighter, rescuer, rescue
-Topic n°4: technology, technician, mechanic
-Topic n°5: enforcement, crossing, warehouse
-Topic n°6: manager, worker, program
-Topic n°7: communications, community, safety
-Topic n°8: specialist, special, planning
-Topic n°9: services, supervisor, coordinator
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Topic n°0: employee_position_title: administrative, administration, legislative
+Topic n°1: employee_position_title: equipment, operator, liquor
+Topic n°2: employee_position_title: correctional, correction, officer
+Topic n°3: employee_position_title: firefighter, rescuer, rescue
+Topic n°4: employee_position_title: technology, technician, mechanic
+Topic n°5: employee_position_title: enforcement, crossing, warehouse
+Topic n°6: employee_position_title: manager, worker, program
+Topic n°7: employee_position_title: communications, community, safety
+Topic n°8: employee_position_title: specialist, special, planning
+Topic n°9: employee_position_title: services, supervisor, coordinator
 </pre></div>
 </div>
 <p>As expected, topics capture labels that frequently co-occur. For instance,
@@ -840,7 +840,7 @@ effect latent categories captured from the data.</p>
 <p>In this notebook, we have seen how to interpret the output of the
 <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>, and how it can be used to summarize categorical variables
 as a set of latent topics.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 1.796 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 1.582 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-02-feature-interpretation-with-gapencoder-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/02_feature_interpretation_with_gapencoder.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

@@ -232,28 +232,16 @@ lower units, as they are probably unimportant.
 
     encoder = make_column_transformer(
         (OneHotEncoder(handle_unknown="ignore"), ["city"]),
-        (DatetimeEncoder(add_day_of_the_week=True, resolution="minute"), ["date.utc"]),
+        (DatetimeEncoder(add_weekday=True, resolution="minute"), "date.utc"),
         remainder="drop",
     )
 
     X_enc = encoder.fit_transform(X)
-    pprint(encoder.get_feature_names_out())
+    # pprint(encoder.get_feature_names_out())
 
 
 
 
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    array(['onehotencoder__city_Antwerpen', 'onehotencoder__city_London',
-           'onehotencoder__city_Paris', 'datetimeencoder__date.utc_year',
-           'datetimeencoder__date.utc_month', 'datetimeencoder__date.utc_day',
-           'datetimeencoder__date.utc_hour',
-           'datetimeencoder__date.utc_minute',
-           'datetimeencoder__date.utc_total_seconds',
-           'datetimeencoder__date.utc_day_of_week'], dtype=object)
 
 
 
@@ -290,9 +278,9 @@ As mentioned earlier, the |TableVectorizer| makes use of the
 
  .. code-block:: none
 
-    array(['date.utc_year', 'date.utc_month', 'date.utc_day', 'date.utc_hour',
-           'date.utc_total_seconds', 'city_Antwerpen', 'city_London',
-           'city_Paris'], dtype=object)
+    array(['city_Antwerpen', 'city_London', 'city_Paris', 'date.utc_year',
+           'date.utc_month', 'date.utc_day', 'date.utc_hour',
+           'date.utc_total_seconds'], dtype='<U22')
 
 
 
@@ -310,7 +298,7 @@ Here, for example, we want it to extract the day of the week.
 
 
     table_vec = TableVectorizer(
-        datetime_transformer=DatetimeEncoder(add_day_of_the_week=True),
+        datetime_transformer=DatetimeEncoder(add_weekday=True),
     ).fit(X)
     pprint(table_vec.get_feature_names_out())
 
@@ -322,9 +310,9 @@ Here, for example, we want it to extract the day of the week.
 
  .. code-block:: none
 
-    array(['date.utc_year', 'date.utc_month', 'date.utc_day', 'date.utc_hour',
-           'date.utc_total_seconds', 'date.utc_day_of_week', 'city_Antwerpen',
-           'city_London', 'city_Paris'], dtype=object)
+    array(['city_Antwerpen', 'city_London', 'city_Paris', 'date.utc_year',
+           'date.utc_month', 'date.utc_day', 'date.utc_hour',
+           'date.utc_total_seconds', 'date.utc_weekday'], dtype='<U22')
 
 
 
@@ -352,10 +340,9 @@ Inspecting the |TableVectorizer| further, we can check that the
 
  .. code-block:: none
 
-    [('datetime', DatetimeEncoder(add_day_of_the_week=True), ['date.utc']),
-     ('low_cardinality',
-      OneHotEncoder(drop='if_binary', handle_unknown='ignore', sparse_output=False),
-      ['city'])]
+    {'city': OneHotEncoder(drop='if_binary', dtype='float32', handle_unknown='ignore',
+                  sparse_output=False),
+     'date.utc': DatetimeEncoder(add_weekday=True)}
 
 
 
@@ -551,14 +538,14 @@ importance of the features created by the |DatetimeEncoder|, using the
 :func:`~sklearn.inspection.permutation_importance` function, which
 basically shuffles a feature and sees how the model changes its prediction.
 
-.. GENERATED FROM PYTHON SOURCE LINES 257-284
+.. GENERATED FROM PYTHON SOURCE LINES 257-295
 
 .. code-block:: Python
 
     from sklearn.inspection import permutation_importance
 
     table_vec = TableVectorizer(
-        datetime_transformer=DatetimeEncoder(add_day_of_the_week=True),
+        datetime_transformer=DatetimeEncoder(add_weekday=True),
     )
 
     # In this case, we don't use a pipeline, because we want to compute the
@@ -581,7 +568,18 @@ basically shuffles a feature and sees how the model changes its prediction.
         y="importances", x="feature_names", title="Feature Importances", figsize=(12, 9)
     )
     plt.tight_layout()
+    plt.show()
 
+    # We can see that the total seconds since Epoch and the hour of the day
+    # are the most important feature, which seems reasonable.
+    #
+    # Conclusion
+    # ----------
+    #
+    # In this example, we saw how to use the |DatetimeEncoder| to create
+    # features from a date column.
+    # Also check out the |TableVectorizer|, which automatically recognizes
+    # and transforms datetime columns by default.
 
 
 
@@ -594,23 +592,10 @@ basically shuffles a feature and sees how the model changes its prediction.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 285-295
-
-We can see that the total seconds since Epoch and the hour of the day
-are the most important feature, which seems reasonable.
-
-Conclusion
-----------
-
-In this example, we saw how to use the |DatetimeEncoder| to create
-features from a date column.
-Also check out the |TableVectorizer|, which automatically recognizes
-and transforms datetime columns by default.
-
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 4.198 seconds)
+   **Total running time of the script:** (0 minutes 3.421 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:

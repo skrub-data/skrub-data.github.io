@@ -13,7 +13,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to transform a somewhat complicated dataframe to a matrix well su...">
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numer...">
 
 .. only:: html
 

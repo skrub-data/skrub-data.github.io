@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/auto_examples/01_encodings.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="This example demonstrates how to transform a somewhat complicated dataframe to a matrix well suited for machine-learning. We study the case of predicting wages using the employee salaries dataset. ..." />
+<meta property="og:description" content="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="This example demonstrates how to transform a somewhat complicated dataframe to a matrix well suited for machine-learning. We study the case of predicting wages using the employee salaries dataset. ..." />
+<meta name="description" content="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages..." />
 
     <title>Encoding: from a dataframe to a numerical matrix for machine learning &#8212; skrub</title>
   
@@ -491,23 +491,22 @@ to download the full example code. or to run this example in your browser via Ju
 </div>
 <section class="sphx-glr-example-title" id="encoding-from-a-dataframe-to-a-numerical-matrix-for-machine-learning">
 <span id="example-encodings"></span><span id="sphx-glr-auto-examples-01-encodings-py"></span><h1>Encoding: from a dataframe to a numerical matrix for machine learning<a class="headerlink" href="#encoding-from-a-dataframe-to-a-numerical-matrix-for-machine-learning" title="Link to this heading">#</a></h1>
-<p>This example demonstrates how to transform a somewhat complicated dataframe
-to a matrix well suited for machine-learning. We study the case of predicting wages
-using the <a class="reference external" href="https://www.openml.org/d/42125">employee salaries</a> dataset.</p>
-<section id="a-simple-prediction-pipeline">
-<h2>A simple prediction pipeline<a class="headerlink" href="#a-simple-prediction-pipeline" title="Link to this heading">#</a></h2>
-<p>Let’s first retrieve the dataset:</p>
+<p>This example shows how to transform a rich dataframe with columns of various types
+into a numerical matrix on which machine-learning algorithms can be applied.
+We study the case of predicting wages using the
+<a class="reference external" href="https://www.openml.org/d/42125">employee salaries</a> dataset.</p>
+<section id="easily-encoding-a-dataframe">
+<h2>Easily encoding a dataframe<a class="headerlink" href="#easily-encoding-a-dataframe" title="Link to this heading">#</a></h2>
+<p>Let’s first retrieve the dataset, using one of the downloaders from the <code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub.datasets</span></code> module.
+As all the downloaders, <a class="reference internal" href="../generated/skrub.datasets.fetch_employee_salaries.html#skrub.datasets.fetch_employee_salaries" title="skrub.datasets.fetch_employee_salaries"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_employee_salaries()</span></code></a> returns a dataset with attributes <code class="docutils literal notranslate"><span class="pre">X</span></code>, and <code class="docutils literal notranslate"><span class="pre">y</span></code>.
+<code class="docutils literal notranslate"><span class="pre">X</span></code> is a dataframe which contains the features (aka design matrix, explanatory variables, independent variables).
+<code class="docutils literal notranslate"><span class="pre">y</span></code> is a column (pandas Series) which contains the target (aka dependent, response variable) that we want to learn to predict from <code class="docutils literal notranslate"><span class="pre">X</span></code>.
+In this case <code class="docutils literal notranslate"><span class="pre">y</span></code> is the annual salary.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub.datasets</span> <span class="kn">import</span> <a href="../generated/skrub.datasets.fetch_employee_salaries.html#skrub.datasets.fetch_employee_salaries" title="skrub.datasets.fetch_employee_salaries" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_employee_salaries</span></a>
 
 <a href="../generated/skrub.datasets.DatasetAll.html#skrub.datasets.DatasetAll" title="skrub.datasets.DatasetAll" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset</span></a> <span class="o">=</span> <a href="../generated/skrub.datasets.fetch_employee_salaries.html#skrub.datasets.fetch_employee_salaries" title="skrub.datasets.fetch_employee_salaries" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_employee_salaries</span></a><span class="p">()</span>
-</pre></div>
-</div>
-<p>We denote <em>X</em>, employees characteristics (our input data), and <em>y</em>,
-the annual salary (our target column):</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset</span><span class="o">.</span><span class="n">X</span></a>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset</span><span class="o">.</span><span class="n">y</span></a>
-
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">employees</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">salaries</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset</span><span class="o">.</span><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset</span><span class="o">.</span><span class="n">y</span></a>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">employees</span></a>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -667,24 +666,1084 @@ the annual salary (our target column):</p>
 </div>
 </div>
 <br />
-<br /><dl class="simple">
-<dt>We observe diverse columns in the dataset:</dt><dd><ul class="simple">
-<li><p>binary (<code class="docutils literal notranslate"><span class="pre">'gender'</span></code>),</p></li>
-<li><p>numerical (<code class="docutils literal notranslate"><span class="pre">'employee_annual_salary'</span></code>),</p></li>
-<li><p>categorical (<code class="docutils literal notranslate"><span class="pre">'department'</span></code>, <code class="docutils literal notranslate"><span class="pre">'department_name'</span></code>, <code class="docutils literal notranslate"><span class="pre">'assignment_category'</span></code>),</p></li>
-<li><p>datetime (<code class="docutils literal notranslate"><span class="pre">'date_first_hired'</span></code>)</p></li>
-<li><p>dirty categorical (<code class="docutils literal notranslate"><span class="pre">'employee_position_title'</span></code>, <code class="docutils literal notranslate"><span class="pre">'division'</span></code>).</p></li>
+<br /><div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">salaries</span></a>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>0        69222.18
+1        97392.47
+2       104717.28
+3        52734.57
+4        93396.00
+          ...
+9223     72094.53
+9224    169543.85
+9225    102736.52
+9226    153747.50
+9227     75484.08
+Name: current_annual_salary, Length: 9228, dtype: float64
+</pre></div>
+</div>
+<dl class="simple">
+<dt>We observe diverse columns in the <code class="docutils literal notranslate"><span class="pre">employees</span></code> dataframe:</dt><dd><ul class="simple">
+<li><p>numeric (<code class="docutils literal notranslate"><span class="pre">'year_first_hired'</span></code>)</p></li>
+<li><p>dates (<code class="docutils literal notranslate"><span class="pre">'date_first_hired'</span></code>)</p></li>
+<li><p>low-cardinality categorical (<code class="docutils literal notranslate"><span class="pre">'gender'</span></code>, <code class="docutils literal notranslate"><span class="pre">'department'</span></code>, <code class="docutils literal notranslate"><span class="pre">'department_name'</span></code>, <code class="docutils literal notranslate"><span class="pre">'assignment_category'</span></code>)</p></li>
+<li><p>high-cardinality categorical (<code class="docutils literal notranslate"><span class="pre">'employee_position_title'</span></code>, <code class="docutils literal notranslate"><span class="pre">'division'</span></code>).</p></li>
 </ul>
 </dd>
 </dl>
-<p>Using skrub’s <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, we can now already build a machine-learning
-pipeline and train it:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a>
-<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a>
-<span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a>
+<p>Most machine-learning algorithms work with arrays of numbers.
+Therefore our complex, heterogeneous table needs to be processed to extract numeric features.
+Transforming a complex real-world object such as a date into a vector of numeric features —more adequate for machine learning— is often called <em>vectorizing</em> it.</p>
+<p>We can easily do this using skrub’s <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a>
 
-<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a><span class="p">(</span><a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a><span class="p">(),</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a><span class="p">())</span>
-<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.fit" title="sklearn.pipeline.Pipeline.fit" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-method"><span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
+<a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span></a> <span class="o">=</span> <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a><span class="p">()</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorized_employees</span></a> <span class="o">=</span> <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer.fit_transform" title="skrub.TableVectorizer.fit_transform" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">employees</span></a><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorized_employees</span></a>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gender_F</th>
+      <th>gender_M</th>
+      <th>gender_nan</th>
+      <th>department_BOA</th>
+      <th>department_BOE</th>
+      <th>department_CAT</th>
+      <th>department_CCL</th>
+      <th>department_CEC</th>
+      <th>department_CEX</th>
+      <th>department_COR</th>
+      <th>department_CUS</th>
+      <th>department_DEP</th>
+      <th>department_DGS</th>
+      <th>department_DHS</th>
+      <th>department_DLC</th>
+      <th>department_DOT</th>
+      <th>department_DPS</th>
+      <th>department_DTS</th>
+      <th>department_ECM</th>
+      <th>department_FIN</th>
+      <th>department_FRS</th>
+      <th>department_HCA</th>
+      <th>department_HHS</th>
+      <th>department_HRC</th>
+      <th>department_IGR</th>
+      <th>department_LIB</th>
+      <th>department_MPB</th>
+      <th>department_NDA</th>
+      <th>department_OAG</th>
+      <th>department_OCP</th>
+      <th>department_OHR</th>
+      <th>department_OIG</th>
+      <th>department_OLO</th>
+      <th>department_OMB</th>
+      <th>department_PIO</th>
+      <th>department_POL</th>
+      <th>department_PRO</th>
+      <th>department_REC</th>
+      <th>department_SHF</th>
+      <th>department_ZAH</th>
+      <th>...</th>
+      <th>division: administrative, investigative, administration</th>
+      <th>division: development, meadows, avenue</th>
+      <th>division: division, animal, supervision</th>
+      <th>division: district, squad, 3rd</th>
+      <th>assignment_category_Parttime-Regular</th>
+      <th>employee_position_title: coordinator, coordinating, depot</th>
+      <th>employee_position_title: program, programs, graphic</th>
+      <th>employee_position_title: officer, office, traffic</th>
+      <th>employee_position_title: crossing, purchasing, engineer</th>
+      <th>employee_position_title: manager, projects, project</th>
+      <th>employee_position_title: corporal, erp, behavioral</th>
+      <th>employee_position_title: school, room, behavioral</th>
+      <th>employee_position_title: firefighter, rescuer, master</th>
+      <th>employee_position_title: technician, mechanic, systems</th>
+      <th>employee_position_title: liquor, clerk, store</th>
+      <th>employee_position_title: equipment, auditor, investigator</th>
+      <th>employee_position_title: community, health, nurse</th>
+      <th>employee_position_title: operator, bus, operations</th>
+      <th>employee_position_title: information, technology, recreation</th>
+      <th>employee_position_title: administrative, legislative, principal</th>
+      <th>employee_position_title: enforcement, inspector, abandoned</th>
+      <th>employee_position_title: lieutenant, captain, chief</th>
+      <th>employee_position_title: assistance, assistant, income</th>
+      <th>employee_position_title: worker, social, psychiatrist</th>
+      <th>employee_position_title: specialist, special, paralegal</th>
+      <th>employee_position_title: librarian, library, attendant</th>
+      <th>employee_position_title: communications, telecommunications, safety</th>
+      <th>employee_position_title: services, service, mcfrs</th>
+      <th>employee_position_title: candidate, sheriff, deputy</th>
+      <th>employee_position_title: supervisor, supervisory, transit</th>
+      <th>employee_position_title: budget, senior, scientist</th>
+      <th>employee_position_title: warehouse, welfare, driver</th>
+      <th>employee_position_title: correctional, correction, protection</th>
+      <th>employee_position_title: permitting, planning, resources</th>
+      <th>employee_position_title: sergeant, police, cadet</th>
+      <th>date_first_hired_year</th>
+      <th>date_first_hired_month</th>
+      <th>date_first_hired_day</th>
+      <th>date_first_hired_total_seconds</th>
+      <th>year_first_hired</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.087149</td>
+      <td>0.067325</td>
+      <td>0.362835</td>
+      <td>0.079844</td>
+      <td>0.0</td>
+      <td>37.292274</td>
+      <td>0.050665</td>
+      <td>0.096635</td>
+      <td>0.052381</td>
+      <td>0.054011</td>
+      <td>0.062765</td>
+      <td>0.051789</td>
+      <td>0.054740</td>
+      <td>0.051515</td>
+      <td>0.058939</td>
+      <td>0.054871</td>
+      <td>0.052407</td>
+      <td>0.067716</td>
+      <td>0.052358</td>
+      <td>0.052614</td>
+      <td>0.055165</td>
+      <td>0.054708</td>
+      <td>0.054627</td>
+      <td>0.052838</td>
+      <td>0.052874</td>
+      <td>0.051145</td>
+      <td>0.053991</td>
+      <td>0.087661</td>
+      <td>0.054044</td>
+      <td>0.059496</td>
+      <td>0.052242</td>
+      <td>0.053511</td>
+      <td>0.062090</td>
+      <td>0.061853</td>
+      <td>0.088077</td>
+      <td>1986.0</td>
+      <td>9.0</td>
+      <td>22.0</td>
+      <td>5.277312e+08</td>
+      <td>1986.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>4.713551</td>
+      <td>0.055511</td>
+      <td>0.131231</td>
+      <td>0.059937</td>
+      <td>0.0</td>
+      <td>0.062346</td>
+      <td>0.058824</td>
+      <td>25.812273</td>
+      <td>0.051422</td>
+      <td>0.143695</td>
+      <td>0.060949</td>
+      <td>0.057395</td>
+      <td>2.149817</td>
+      <td>0.063714</td>
+      <td>0.074860</td>
+      <td>0.051885</td>
+      <td>0.050623</td>
+      <td>0.054522</td>
+      <td>0.074383</td>
+      <td>0.060984</td>
+      <td>0.051576</td>
+      <td>0.057746</td>
+      <td>0.261970</td>
+      <td>0.054467</td>
+      <td>0.092583</td>
+      <td>0.082453</td>
+      <td>0.056961</td>
+      <td>0.057571</td>
+      <td>0.055072</td>
+      <td>0.052645</td>
+      <td>0.062593</td>
+      <td>0.053752</td>
+      <td>0.062858</td>
+      <td>0.077130</td>
+      <td>0.092930</td>
+      <td>1988.0</td>
+      <td>9.0</td>
+      <td>12.0</td>
+      <td>5.900256e+08</td>
+      <td>1988.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.133696</td>
+      <td>0.059407</td>
+      <td>0.089169</td>
+      <td>0.063961</td>
+      <td>0.0</td>
+      <td>0.051947</td>
+      <td>0.057531</td>
+      <td>0.057269</td>
+      <td>0.050231</td>
+      <td>0.062471</td>
+      <td>0.059085</td>
+      <td>0.055065</td>
+      <td>0.055512</td>
+      <td>0.054367</td>
+      <td>0.055860</td>
+      <td>0.053781</td>
+      <td>0.052175</td>
+      <td>0.053333</td>
+      <td>0.056013</td>
+      <td>0.059797</td>
+      <td>0.053064</td>
+      <td>0.050007</td>
+      <td>0.052220</td>
+      <td>20.892965</td>
+      <td>0.063468</td>
+      <td>0.051101</td>
+      <td>0.052713</td>
+      <td>0.051582</td>
+      <td>0.052263</td>
+      <td>0.055082</td>
+      <td>0.057055</td>
+      <td>0.066179</td>
+      <td>0.059577</td>
+      <td>0.057113</td>
+      <td>0.051177</td>
+      <td>1989.0</td>
+      <td>11.0</td>
+      <td>19.0</td>
+      <td>6.274368e+08</td>
+      <td>1989.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.051784</td>
+      <td>0.052834</td>
+      <td>0.069067</td>
+      <td>0.052607</td>
+      <td>0.0</td>
+      <td>0.073761</td>
+      <td>0.067857</td>
+      <td>0.127819</td>
+      <td>0.055746</td>
+      <td>0.590222</td>
+      <td>0.084005</td>
+      <td>0.052364</td>
+      <td>0.297783</td>
+      <td>0.065013</td>
+      <td>0.071569</td>
+      <td>4.695704</td>
+      <td>0.061933</td>
+      <td>0.059414</td>
+      <td>0.062033</td>
+      <td>0.115408</td>
+      <td>0.154562</td>
+      <td>0.104534</td>
+      <td>0.065530</td>
+      <td>0.167768</td>
+      <td>0.077420</td>
+      <td>0.071724</td>
+      <td>0.056985</td>
+      <td>1.134901</td>
+      <td>0.087449</td>
+      <td>22.713015</td>
+      <td>0.115538</td>
+      <td>0.055325</td>
+      <td>0.073711</td>
+      <td>0.085284</td>
+      <td>0.055622</td>
+      <td>2014.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>1.399248e+09</td>
+      <td>2014.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.057136</td>
+      <td>0.065194</td>
+      <td>0.060237</td>
+      <td>0.070496</td>
+      <td>0.0</td>
+      <td>0.052176</td>
+      <td>0.144121</td>
+      <td>0.073625</td>
+      <td>0.068589</td>
+      <td>0.104491</td>
+      <td>0.066842</td>
+      <td>0.059912</td>
+      <td>0.059312</td>
+      <td>0.083182</td>
+      <td>0.055756</td>
+      <td>0.059704</td>
+      <td>0.058020</td>
+      <td>0.051648</td>
+      <td>0.082510</td>
+      <td>0.057102</td>
+      <td>0.077092</td>
+      <td>0.053278</td>
+      <td>0.080531</td>
+      <td>0.079694</td>
+      <td>8.031970</td>
+      <td>0.063431</td>
+      <td>0.072129</td>
+      <td>0.060707</td>
+      <td>0.064233</td>
+      <td>0.055840</td>
+      <td>0.091222</td>
+      <td>0.050177</td>
+      <td>0.056278</td>
+      <td>23.026184</td>
+      <td>0.060242</td>
+      <td>2007.0</td>
+      <td>3.0</td>
+      <td>5.0</td>
+      <td>1.173053e+09</td>
+      <td>2007.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>9223</th>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.051221</td>
+      <td>0.154114</td>
+      <td>0.053496</td>
+      <td>0.069322</td>
+      <td>0.0</td>
+      <td>0.052141</td>
+      <td>0.052777</td>
+      <td>0.055184</td>
+      <td>0.050261</td>
+      <td>0.055796</td>
+      <td>0.054929</td>
+      <td>0.066640</td>
+      <td>0.052161</td>
+      <td>0.054533</td>
+      <td>0.052289</td>
+      <td>0.052421</td>
+      <td>34.420906</td>
+      <td>0.050000</td>
+      <td>0.052102</td>
+      <td>0.051937</td>
+      <td>0.053618</td>
+      <td>0.050939</td>
+      <td>0.054255</td>
+      <td>0.054877</td>
+      <td>0.054575</td>
+      <td>0.053143</td>
+      <td>0.060673</td>
+      <td>0.069515</td>
+      <td>0.058280</td>
+      <td>0.051923</td>
+      <td>0.051739</td>
+      <td>0.052450</td>
+      <td>0.053162</td>
+      <td>0.053009</td>
+      <td>0.053763</td>
+      <td>2015.0</td>
+      <td>11.0</td>
+      <td>3.0</td>
+      <td>1.446509e+09</td>
+      <td>2015.0</td>
+    </tr>
+    <tr>
+      <th>9224</th>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.071742</td>
+      <td>14.496548</td>
+      <td>15.686185</td>
+      <td>0.059097</td>
+      <td>0.0</td>
+      <td>0.604161</td>
+      <td>0.054409</td>
+      <td>0.052208</td>
+      <td>0.147167</td>
+      <td>0.050002</td>
+      <td>0.070476</td>
+      <td>0.066075</td>
+      <td>0.089398</td>
+      <td>0.075194</td>
+      <td>0.053110</td>
+      <td>0.060008</td>
+      <td>0.052500</td>
+      <td>0.050001</td>
+      <td>2.740312</td>
+      <td>0.105713</td>
+      <td>0.051026</td>
+      <td>28.684570</td>
+      <td>0.226943</td>
+      <td>0.056685</td>
+      <td>0.091833</td>
+      <td>0.085498</td>
+      <td>0.065874</td>
+      <td>0.271780</td>
+      <td>0.061219</td>
+      <td>1.729564</td>
+      <td>0.060675</td>
+      <td>1.532099</td>
+      <td>0.187671</td>
+      <td>0.063373</td>
+      <td>0.060454</td>
+      <td>1988.0</td>
+      <td>11.0</td>
+      <td>28.0</td>
+      <td>5.966784e+08</td>
+      <td>1988.0</td>
+    </tr>
+    <tr>
+      <th>9225</th>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.101220</td>
+      <td>0.093688</td>
+      <td>0.075894</td>
+      <td>0.057923</td>
+      <td>1.0</td>
+      <td>0.402701</td>
+      <td>0.066291</td>
+      <td>0.100533</td>
+      <td>0.054654</td>
+      <td>0.054927</td>
+      <td>0.074655</td>
+      <td>0.130697</td>
+      <td>0.052333</td>
+      <td>0.782866</td>
+      <td>0.117738</td>
+      <td>2.003498</td>
+      <td>0.052118</td>
+      <td>0.217390</td>
+      <td>0.112054</td>
+      <td>0.640121</td>
+      <td>2.705885</td>
+      <td>0.091800</td>
+      <td>1.006522</td>
+      <td>35.188068</td>
+      <td>0.988800</td>
+      <td>0.123476</td>
+      <td>0.191266</td>
+      <td>0.105582</td>
+      <td>0.156890</td>
+      <td>0.075484</td>
+      <td>0.084118</td>
+      <td>0.472908</td>
+      <td>0.280915</td>
+      <td>0.090559</td>
+      <td>0.075149</td>
+      <td>2001.0</td>
+      <td>4.0</td>
+      <td>30.0</td>
+      <td>9.885888e+08</td>
+      <td>2001.0</td>
+    </tr>
+    <tr>
+      <th>9226</th>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.070428</td>
+      <td>0.061059</td>
+      <td>0.081797</td>
+      <td>0.069107</td>
+      <td>0.0</td>
+      <td>0.051566</td>
+      <td>0.052724</td>
+      <td>0.066026</td>
+      <td>0.050089</td>
+      <td>11.923824</td>
+      <td>0.058165</td>
+      <td>0.051432</td>
+      <td>0.060486</td>
+      <td>0.054826</td>
+      <td>0.053860</td>
+      <td>0.056069</td>
+      <td>0.052703</td>
+      <td>0.052019</td>
+      <td>0.051706</td>
+      <td>0.050003</td>
+      <td>0.055291</td>
+      <td>0.050993</td>
+      <td>0.051656</td>
+      <td>0.067608</td>
+      <td>0.053079</td>
+      <td>0.052455</td>
+      <td>0.050917</td>
+      <td>0.053680</td>
+      <td>0.055585</td>
+      <td>0.052980</td>
+      <td>0.053991</td>
+      <td>0.051864</td>
+      <td>0.057584</td>
+      <td>0.052453</td>
+      <td>0.054364</td>
+      <td>2006.0</td>
+      <td>9.0</td>
+      <td>5.0</td>
+      <td>1.157414e+09</td>
+      <td>2006.0</td>
+    </tr>
+    <tr>
+      <th>9227</th>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.075404</td>
+      <td>0.129710</td>
+      <td>0.075209</td>
+      <td>0.056076</td>
+      <td>0.0</td>
+      <td>0.060027</td>
+      <td>0.188462</td>
+      <td>0.128224</td>
+      <td>6.368966</td>
+      <td>0.054116</td>
+      <td>0.065228</td>
+      <td>0.117976</td>
+      <td>0.051770</td>
+      <td>0.062481</td>
+      <td>0.059629</td>
+      <td>2.332531</td>
+      <td>0.060409</td>
+      <td>0.055471</td>
+      <td>0.166883</td>
+      <td>0.054852</td>
+      <td>31.226679</td>
+      <td>0.054188</td>
+      <td>0.083859</td>
+      <td>0.070083</td>
+      <td>13.165082</td>
+      <td>0.059467</td>
+      <td>0.078953</td>
+      <td>0.060356</td>
+      <td>0.055605</td>
+      <td>0.069772</td>
+      <td>4.696906</td>
+      <td>0.064848</td>
+      <td>0.059153</td>
+      <td>0.180176</td>
+      <td>0.247847</td>
+      <td>2012.0</td>
+      <td>1.0</td>
+      <td>30.0</td>
+      <td>1.327882e+09</td>
+      <td>2012.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>9228 rows × 143 columns</p>
+</div>
+</div>
+<br />
+<br /><p>From our 8 columns, the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> has extracted 143 numerical
+features. Most of them are one-hot encoded representations of the categorical
+features. For example, we can see that 3 columns <code class="docutils literal notranslate"><span class="pre">'gender_F'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gender_M'</span></code>,
+<code class="docutils literal notranslate"><span class="pre">'gender_nan'</span></code> were created to encode the <code class="docutils literal notranslate"><span class="pre">'gender'</span></code> column.</p>
+<p>By performing appropriate transformations on our complex data, the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> produced numeric features that we can use for machine-learning:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a>
+
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorized_employees</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">salaries</span></a><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -1092,197 +2151,24 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-3);
 }
-</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
-                (&#x27;histgradientboostingregressor&#x27;,
-                 HistGradientBoostingRegressor())])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" ><label for="sk-estimator-id-1" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;Pipeline<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.4/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
-                (&#x27;histgradientboostingregressor&#x27;,
-                 HistGradientBoostingRegressor())])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" ><label for="sk-estimator-id-2" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">tablevectorizer: TableVectorizer</label><div class="sk-toggleable__content fitted"><pre>TableVectorizer()</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" ><label for="sk-estimator-id-3" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">datetime_transformer: DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" ><label for="sk-estimator-id-4" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" ><label for="sk-estimator-id-5" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">high_cardinality_transformer: GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" ><label for="sk-estimator-id-6" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" ><label for="sk-estimator-id-7" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">low_cardinality_transformer: OneHotEncoder</label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, handle_unknown=&#x27;ignore&#x27;, sparse_output=False)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-8" type="checkbox" ><label for="sk-estimator-id-8" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;OneHotEncoder<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.4/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, handle_unknown=&#x27;ignore&#x27;, sparse_output=False)</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-9" type="checkbox" ><label for="sk-estimator-id-9" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;HistGradientBoostingRegressor<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.4/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a></label><div class="sk-toggleable__content fitted"><pre>HistGradientBoostingRegressor()</pre></div> </div></div></div></div></div></div>
+</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>HistGradientBoostingRegressor()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;HistGradientBoostingRegressor<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>HistGradientBoostingRegressor()</pre></div> </div></div></div></div>
 </div>
 <br />
-<br /><p>What just happened here?</p>
-<p>We actually gave our dataframe as an input to the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and it
-returned an output useful for the scikit-learn model.</p>
-<p>Let’s explore the internals of our encoder, the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <a href="https://docs.python.org/3/library/pprint.html#pprint.pprint" title="pprint.pprint" class="sphx-glr-backref-module-pprint sphx-glr-backref-type-py-function"><span class="n">pprint</span></a>
-
-<span class="c1"># Recover the TableVectorizer from the Pipeline</span>
-<a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">tv</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.named_steps" title="sklearn.pipeline.Pipeline.named_steps" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-property"><span class="n">pipeline</span><span class="o">.</span><span class="n">named_steps</span></a><span class="p">[</span><span class="s2">&quot;tablevectorizer&quot;</span><span class="p">]</span>
-
-<a href="https://docs.python.org/3/library/pprint.html#pprint.pprint" title="pprint.pprint" class="sphx-glr-backref-module-pprint sphx-glr-backref-type-py-function"><span class="n">pprint</span></a><span class="p">(</span><a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer.transformers_" title="skrub.TableVectorizer.transformers_" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-property"><span class="n">tv</span><span class="o">.</span><span class="n">transformers_</span></a><span class="p">)</span>
-</pre></div>
-</div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(&#39;numeric&#39;,
-  FunctionTransformer(accept_sparse=True, check_inverse=False,
-                    feature_names_out=&#39;one-to-one&#39;),
-  [&#39;year_first_hired&#39;]),
- (&#39;datetime&#39;, DatetimeEncoder(), [&#39;date_first_hired&#39;]),
- (&#39;low_cardinality&#39;,
-  OneHotEncoder(drop=&#39;if_binary&#39;, handle_unknown=&#39;ignore&#39;, sparse_output=False),
-  [&#39;gender&#39;, &#39;department&#39;, &#39;department_name&#39;, &#39;assignment_category&#39;]),
- (&#39;high_cardinality&#39;,
-  GapEncoder(n_components=30),
-  [&#39;division&#39;, &#39;employee_position_title&#39;])]
-</pre></div>
-</div>
-<p>We observe it has automatically assigned an appropriate encoder to
-corresponding columns:</p>
-<ul class="simple">
-<li><p>The <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a> for low cardinality string variables, the columns
-<code class="docutils literal notranslate"><span class="pre">'gender'</span></code>, <code class="docutils literal notranslate"><span class="pre">'department'</span></code>, <code class="docutils literal notranslate"><span class="pre">'department_name'</span></code> and <code class="docutils literal notranslate"><span class="pre">'assignment_category'</span></code>.</p></li>
-</ul>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer.named_transformers_" title="skrub.TableVectorizer.named_transformers_" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-property"><span class="n">tv</span><span class="o">.</span><span class="n">named_transformers_</span></a><span class="p">[</span><span class="s2">&quot;low_cardinality&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
-</pre></div>
-</div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([&#39;gender_F&#39;, &#39;gender_M&#39;, &#39;gender_nan&#39;, &#39;department_BOA&#39;,
-       &#39;department_BOE&#39;, &#39;department_CAT&#39;, &#39;department_CCL&#39;,
-       &#39;department_CEC&#39;, &#39;department_CEX&#39;, &#39;department_COR&#39;,
-       &#39;department_CUS&#39;, &#39;department_DEP&#39;, &#39;department_DGS&#39;,
-       &#39;department_DHS&#39;, &#39;department_DLC&#39;, &#39;department_DOT&#39;,
-       &#39;department_DPS&#39;, &#39;department_DTS&#39;, &#39;department_ECM&#39;,
-       &#39;department_FIN&#39;, &#39;department_FRS&#39;, &#39;department_HCA&#39;,
-       &#39;department_HHS&#39;, &#39;department_HRC&#39;, &#39;department_IGR&#39;,
-       &#39;department_LIB&#39;, &#39;department_MPB&#39;, &#39;department_NDA&#39;,
-       &#39;department_OAG&#39;, &#39;department_OCP&#39;, &#39;department_OHR&#39;,
-       &#39;department_OIG&#39;, &#39;department_OLO&#39;, &#39;department_OMB&#39;,
-       &#39;department_PIO&#39;, &#39;department_POL&#39;, &#39;department_PRO&#39;,
-       &#39;department_REC&#39;, &#39;department_SHF&#39;, &#39;department_ZAH&#39;,
-       &#39;department_name_Board of Appeals Department&#39;,
-       &#39;department_name_Board of Elections&#39;,
-       &#39;department_name_Community Engagement Cluster&#39;,
-       &#39;department_name_Community Use of Public Facilities&#39;,
-       &#39;department_name_Correction and Rehabilitation&#39;,
-       &quot;department_name_County Attorney&#39;s Office&quot;,
-       &#39;department_name_County Council&#39;,
-       &#39;department_name_Department of Environmental Protection&#39;,
-       &#39;department_name_Department of Finance&#39;,
-       &#39;department_name_Department of General Services&#39;,
-       &#39;department_name_Department of Health and Human Services&#39;,
-       &#39;department_name_Department of Housing and Community Affairs&#39;,
-       &#39;department_name_Department of Liquor Control&#39;,
-       &#39;department_name_Department of Permitting Services&#39;,
-       &#39;department_name_Department of Police&#39;,
-       &#39;department_name_Department of Public Libraries&#39;,
-       &#39;department_name_Department of Recreation&#39;,
-       &#39;department_name_Department of Technology Services&#39;,
-       &#39;department_name_Department of Transportation&#39;,
-       &#39;department_name_Ethics Commission&#39;,
-       &#39;department_name_Fire and Rescue Services&#39;,
-       &#39;department_name_Merit System Protection Board Department&#39;,
-       &#39;department_name_Non-Departmental Account&#39;,
-       &#39;department_name_Office of Agriculture&#39;,
-       &#39;department_name_Office of Consumer Protection&#39;,
-       &#39;department_name_Office of Emergency Management and Homeland Security&#39;,
-       &#39;department_name_Office of Human Resources&#39;,
-       &#39;department_name_Office of Human Rights&#39;,
-       &#39;department_name_Office of Intergovernmental Relations Department&#39;,
-       &#39;department_name_Office of Legislative Oversight&#39;,
-       &#39;department_name_Office of Management and Budget&#39;,
-       &#39;department_name_Office of Procurement&#39;,
-       &#39;department_name_Office of Public Information&#39;,
-       &#39;department_name_Office of Zoning and Administrative Hearings&#39;,
-       &#39;department_name_Office of the Inspector General&#39;,
-       &#39;department_name_Offices of the County Executive&#39;,
-       &quot;department_name_Sheriff&#39;s Office&quot;,
-       &#39;assignment_category_Parttime-Regular&#39;], dtype=object)
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>The <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> for high cardinality string columns, <code class="docutils literal notranslate"><span class="pre">'employee_position_title'</span></code>
-and <code class="docutils literal notranslate"><span class="pre">'division'</span></code>. The <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> is a powerful encoder that can handle dirty
-categorical columns.</p></li>
-</ul>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer.named_transformers_" title="skrub.TableVectorizer.named_transformers_" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-property"><span class="n">tv</span><span class="o">.</span><span class="n">named_transformers_</span></a><span class="p">[</span><span class="s2">&quot;high_cardinality&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
-</pre></div>
-</div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([&#39;environmental, regulatory, adolescent&#39;, &#39;station, state, estate&#39;,
-       &#39;traffic, safety, alcohol&#39;, &#39;district, squad, 4th&#39;,
-       &#39;behavioral, health, school&#39;, &#39;welfare, child, childhood&#39;,
-       &#39;communications, communication, education&#39;,
-       &#39;investigative, investigations, criminal&#39;,
-       &#39;gaithersburg, clarksburg, the&#39;, &#39;resource, resources, planning&#39;,
-       &#39;twinbrook, rockville, downtown&#39;, &#39;services, highway, service&#39;,
-       &#39;technology, telephone, systems&#39;, &#39;development, goshen, building&#39;,
-       &#39;administrative, administration, training&#39;,
-       &#39;management, equipment, automotive&#39;, &#39;patrol, 3rd, 2nd&#39;,
-       &#39;inspections, inspection, special&#39;, &#39;spring, silver, urban&#39;,
-       &#39;emergency, commuter, duplicating&#39;, &#39;abandoned, analysis, mgmt&#39;,
-       &#39;nicholson, transit, taxicab&#39;, &#39;custody, mcdc, customer&#39;,
-       &#39;security, mccf, unit&#39;, &#39;director, projects, protective&#39;,
-       &#39;eligibility, maintenance, facilities&#39;,
-       &#39;accounts, programs, accounting&#39;, &#39;delivery, warehouse, liquor&#39;,
-       &#39;supports, support, network&#39;, &#39;sexual, family, crimes&#39;,
-       &#39;communications, telecommunications, safety&#39;,
-       &#39;therapist, accountant, auditor&#39;, &#39;officer, office, traffic&#39;,
-       &#39;master, registered, water&#39;, &#39;income, assistance, client&#39;,
-       &#39;operator, equipment, apprentice&#39;,
-       &#39;information, renovation, technology&#39;,
-       &#39;legislative, principal, executive&#39;,
-       &#39;specialist, special, resource&#39;, &#39;program, programs, sr&#39;,
-       &#39;captain, chief, rescue&#39;, &#39;school, room, behavioral&#39;,
-       &#39;plumber, analyst, budget&#39;, &#39;technician, mechanic, supply&#39;,
-       &#39;sergeant, police, cadet&#39;, &#39;enforcement, permitting, inspector&#39;,
-       &#39;worker, social, leader&#39;, &#39;firefighter, recruit, rescuer&#39;,
-       &#39;liquor, clerk, store&#39;, &#39;community, security, health&#39;,
-       &#39;assistant, library, librarian&#39;, &#39;coordinator, services, service&#39;,
-       &#39;lieutenant, maintenance, crew&#39;, &#39;warehouse, welfare, driver&#39;,
-       &#39;correctional, correction, corporal&#39;,
-       &#39;supervisor, supervisory, regional&#39;, &#39;sheriff, deputy, customer&#39;,
-       &#39;crossing, planning, purchasing&#39;,
-       &#39;administrative, administration, administrator&#39;,
-       &#39;manager, engineer, iii&#39;], dtype=object)
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>The <a class="reference internal" href="../generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> to the <code class="docutils literal notranslate"><span class="pre">'date_first_hired'</span></code> column. The <a class="reference internal" href="../generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a>
-can encode datetime columns for machine learning.</p></li>
-</ul>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer.named_transformers_" title="skrub.TableVectorizer.named_transformers_" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-property"><span class="n">tv</span><span class="o">.</span><span class="n">named_transformers_</span></a><span class="p">[</span><span class="s2">&quot;datetime&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
-</pre></div>
-</div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([&#39;date_first_hired_year&#39;, &#39;date_first_hired_month&#39;,
-       &#39;date_first_hired_day&#39;, &#39;date_first_hired_total_seconds&#39;],
-      dtype=object)
-</pre></div>
-</div>
-<p>As we can see, it gave us interpretable column names.</p>
-<p>In total, we have a reasonable number of encoded columns:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">feature_names</span></a> <span class="o">=</span> <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer.get_feature_names_out" title="skrub.TableVectorizer.get_feature_names_out" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">tv</span><span class="o">.</span><span class="n">get_feature_names_out</span></a><span class="p">()</span>
-
-<span class="nb">len</span><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">feature_names</span></a><span class="p">)</span>
-</pre></div>
-</div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>143
-</pre></div>
-</div>
-<p>Let’s look at the cross-validated R2 score of our model:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html#sklearn.model_selection.cross_val_score" title="sklearn.model_selection.cross_val_score" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_val_score</span></a>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html#sklearn.model_selection.cross_val_score" title="sklearn.model_selection.cross_val_score" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_val_score</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;R2 score:  mean: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; std: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.926; std: 0.011
-</pre></div>
-</div>
-<p>The simple pipeline applied on this complex dataset gave us very good results.</p>
+<br /><p>The <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> bridges the gap between tabular data and machine-learning pipelines.
+It allows us to apply a machine-learning estimator to our dataframe without manual data wrangling and feature extraction.</p>
 </section>
-<section id="feature-importances-in-the-statistical-model">
-<h2>Feature importances in the statistical model<a class="headerlink" href="#feature-importances-in-the-statistical-model" title="Link to this heading">#</a></h2>
-<p>In this section, after training a regressor, we will plot the feature importances.</p>
-<aside class="topic">
-<p class="topic-title">Note:</p>
-<p>To minimize computation time, we use the feature importances computed by the
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="(in scikit-learn v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomForestRegressor</span></code></a>, but you should prefer <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html#sklearn.inspection.permutation_importance" title="(in scikit-learn v1.4)"><code class="xref py py-func docutils literal notranslate"><span class="pre">permutation_importance()</span></code></a>
-instead (which are less subject to biases).</p>
-</aside>
-<p>First, let’s train another scikit-learn regressor, the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="(in scikit-learn v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomForestRegressor</span></code></a>:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="sklearn.ensemble.RandomForestRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class"><span class="n">RandomForestRegressor</span></a>
-
-<a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="sklearn.ensemble.RandomForestRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">regressor</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="sklearn.ensemble.RandomForestRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class"><span class="n">RandomForestRegressor</span></a><span class="p">()</span>
-
-<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a><span class="p">(</span><a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a><span class="p">(),</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="sklearn.ensemble.RandomForestRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">regressor</span></a><span class="p">)</span>
-<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.fit" title="sklearn.pipeline.Pipeline.fit" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-method"><span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
+<section id="inspecting-the-tablevectorizer">
+<h2>Inspecting the TableVectorizer<a class="headerlink" href="#inspecting-the-tablevectorizer" title="Link to this heading">#</a></h2>
+<p>The <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> distinguishes between 4 basic kinds of columns (more may be added in the future).
+For each kind, it applies a different transformation, which we can configure.
+The kinds of columns and the default transformation for each of them are:</p>
+<ul class="simple">
+<li><p>numeric columns: simply casting to floating-point</p></li>
+<li><p>datetime columns: extracting features such as year, day, hour with the <a class="reference internal" href="../generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a></p></li>
+<li><p>low-cardinality categorical columns: one-hot encoding</p></li>
+<li><p>high-cardinality categorical columns: a simple and effective text representation pipeline provided by the <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a></p></li>
+</ul>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span></a>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -1690,9 +2576,1109 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-3);
 }
-</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
-                (&#x27;randomforestregressor&#x27;, RandomForestRegressor())])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-10" type="checkbox" ><label for="sk-estimator-id-10" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;Pipeline<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.4/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
-                (&#x27;randomforestregressor&#x27;, RandomForestRegressor())])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-11" type="checkbox" ><label for="sk-estimator-id-11" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">tablevectorizer: TableVectorizer</label><div class="sk-toggleable__content fitted"><pre>TableVectorizer()</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-12" type="checkbox" ><label for="sk-estimator-id-12" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">datetime_transformer: DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-13" type="checkbox" ><label for="sk-estimator-id-13" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-14" type="checkbox" ><label for="sk-estimator-id-14" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">high_cardinality_transformer: GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-15" type="checkbox" ><label for="sk-estimator-id-15" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-16" type="checkbox" ><label for="sk-estimator-id-16" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">low_cardinality_transformer: OneHotEncoder</label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, handle_unknown=&#x27;ignore&#x27;, sparse_output=False)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-17" type="checkbox" ><label for="sk-estimator-id-17" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;OneHotEncoder<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.4/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, handle_unknown=&#x27;ignore&#x27;, sparse_output=False)</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-18" type="checkbox" ><label for="sk-estimator-id-18" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;RandomForestRegressor<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.4/modules/generated/sklearn.ensemble.RandomForestRegressor.html">?<span>Documentation for RandomForestRegressor</span></a></label><div class="sk-toggleable__content fitted"><pre>RandomForestRegressor()</pre></div> </div></div></div></div></div></div>
+</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>TableVectorizer()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" ><label for="sk-estimator-id-2" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;TableVectorizer<span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>TableVectorizer()</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" ><label for="sk-estimator-id-3" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">datetime_transformer: DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" ><label for="sk-estimator-id-4" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" ><label for="sk-estimator-id-5" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">high_cardinality_transformer: GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" ><label for="sk-estimator-id-6" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" ><label for="sk-estimator-id-7" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">low_cardinality_transformer: OneHotEncoder</label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
+              sparse_output=False)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-8" type="checkbox" ><label for="sk-estimator-id-8" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;OneHotEncoder<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
+              sparse_output=False)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-9" type="checkbox" ><label for="sk-estimator-id-9" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">numeric_transformer: PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-10" type="checkbox" ><label for="sk-estimator-id-10" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div></div></div></div></div></div></div></div>
+</div>
+<br />
+<br /><p>We can inspect which transformation was chosen for a each column and retrieve the fitted transformer.
+<code class="docutils literal notranslate"><span class="pre">vectorizer.kind_to_columns_</span></code> provides an overview of how the vectorizer categorized columns in our input:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span><span class="o">.</span><span class="n">kind_to_columns_</span></a>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;numeric&#39;: [&#39;year_first_hired&#39;], &#39;datetime&#39;: [&#39;date_first_hired&#39;], &#39;low_cardinality&#39;: [&#39;gender&#39;, &#39;department&#39;, &#39;department_name&#39;, &#39;assignment_category&#39;], &#39;high_cardinality&#39;: [&#39;division&#39;, &#39;employee_position_title&#39;], &#39;specific&#39;: []}
+</pre></div>
+</div>
+<p>The reverse mapping is given by:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span><span class="o">.</span><span class="n">column_to_kind_</span></a>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;year_first_hired&#39;: &#39;numeric&#39;, &#39;date_first_hired&#39;: &#39;datetime&#39;, &#39;gender&#39;: &#39;low_cardinality&#39;, &#39;department&#39;: &#39;low_cardinality&#39;, &#39;department_name&#39;: &#39;low_cardinality&#39;, &#39;assignment_category&#39;: &#39;low_cardinality&#39;, &#39;division&#39;: &#39;high_cardinality&#39;, &#39;employee_position_title&#39;: &#39;high_cardinality&#39;}
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">vectorizer.transformers_</span></code> gives us a dictionary which maps column names to the corresponding transformer.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span><span class="o">.</span><span class="n">transformers_</span></a><span class="p">[</span><span class="s2">&quot;date_first_hired&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<style>#sk-container-id-3 {
+  /* Definition of color scheme common for light and dark mode */
+  --sklearn-color-text: black;
+  --sklearn-color-line: gray;
+  /* Definition of color scheme for unfitted estimators */
+  --sklearn-color-unfitted-level-0: #fff5e6;
+  --sklearn-color-unfitted-level-1: #f6e4d2;
+  --sklearn-color-unfitted-level-2: #ffe0b3;
+  --sklearn-color-unfitted-level-3: chocolate;
+  /* Definition of color scheme for fitted estimators */
+  --sklearn-color-fitted-level-0: #f0f8ff;
+  --sklearn-color-fitted-level-1: #d4ebff;
+  --sklearn-color-fitted-level-2: #b3dbfd;
+  --sklearn-color-fitted-level-3: cornflowerblue;
+
+  /* Specific color for light theme */
+  --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+  --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, white)));
+  --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+  --sklearn-color-icon: #696969;
+
+  @media (prefers-color-scheme: dark) {
+    /* Redefinition of color scheme for dark theme */
+    --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+    --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, #111)));
+    --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+    --sklearn-color-icon: #878787;
+  }
+}
+
+#sk-container-id-3 {
+  color: var(--sklearn-color-text);
+}
+
+#sk-container-id-3 pre {
+  padding: 0;
+}
+
+#sk-container-id-3 input.sk-hidden--visually {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#sk-container-id-3 div.sk-dashed-wrapped {
+  border: 1px dashed var(--sklearn-color-line);
+  margin: 0 0.4em 0.5em 0.4em;
+  box-sizing: border-box;
+  padding-bottom: 0.4em;
+  background-color: var(--sklearn-color-background);
+}
+
+#sk-container-id-3 div.sk-container {
+  /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
+     but bootstrap.min.css set `[hidden] { display: none !important; }`
+     so we also need the `!important` here to be able to override the
+     default hidden behavior on the sphinx rendered scikit-learn.org.
+     See: https://github.com/scikit-learn/scikit-learn/issues/21755 */
+  display: inline-block !important;
+  position: relative;
+}
+
+#sk-container-id-3 div.sk-text-repr-fallback {
+  display: none;
+}
+
+div.sk-parallel-item,
+div.sk-serial,
+div.sk-item {
+  /* draw centered vertical line to link estimators */
+  background-image: linear-gradient(var(--sklearn-color-text-on-default-background), var(--sklearn-color-text-on-default-background));
+  background-size: 2px 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Parallel-specific style estimator block */
+
+#sk-container-id-3 div.sk-parallel-item::after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
+  flex-grow: 1;
+}
+
+#sk-container-id-3 div.sk-parallel {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: var(--sklearn-color-background);
+  position: relative;
+}
+
+#sk-container-id-3 div.sk-parallel-item {
+  display: flex;
+  flex-direction: column;
+}
+
+#sk-container-id-3 div.sk-parallel-item:first-child::after {
+  align-self: flex-end;
+  width: 50%;
+}
+
+#sk-container-id-3 div.sk-parallel-item:last-child::after {
+  align-self: flex-start;
+  width: 50%;
+}
+
+#sk-container-id-3 div.sk-parallel-item:only-child::after {
+  width: 0;
+}
+
+/* Serial-specific style estimator block */
+
+#sk-container-id-3 div.sk-serial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sklearn-color-background);
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+
+/* Toggleable style: style used for estimator/Pipeline/ColumnTransformer box that is
+clickable and can be expanded/collapsed.
+- Pipeline and ColumnTransformer use this feature and define the default style
+- Estimators will overwrite some part of the style using the `sk-estimator` class
+*/
+
+/* Pipeline and ColumnTransformer style (default) */
+
+#sk-container-id-3 div.sk-toggleable {
+  /* Default theme specific background. It is overwritten whether we have a
+  specific estimator or a Pipeline/ColumnTransformer */
+  background-color: var(--sklearn-color-background);
+}
+
+/* Toggleable label */
+#sk-container-id-3 label.sk-toggleable__label {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0.5em;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#sk-container-id-3 label.sk-toggleable__label-arrow:before {
+  /* Arrow on the left of the label */
+  content: "▸";
+  float: left;
+  margin-right: 0.25em;
+  color: var(--sklearn-color-icon);
+}
+
+#sk-container-id-3 label.sk-toggleable__label-arrow:hover:before {
+  color: var(--sklearn-color-text);
+}
+
+/* Toggleable content - dropdown */
+
+#sk-container-id-3 div.sk-toggleable__content {
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+  text-align: left;
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-3 div.sk-toggleable__content.fitted {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+#sk-container-id-3 div.sk-toggleable__content pre {
+  margin: 0.2em;
+  border-radius: 0.25em;
+  color: var(--sklearn-color-text);
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-3 div.sk-toggleable__content.fitted pre {
+  /* unfitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+#sk-container-id-3 input.sk-toggleable__control:checked~div.sk-toggleable__content {
+  /* Expand drop-down */
+  max-height: 200px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+#sk-container-id-3 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
+  content: "▾";
+}
+
+/* Pipeline/ColumnTransformer-specific style */
+
+#sk-container-id-3 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-3 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Estimator-specific style */
+
+/* Colorize estimator box */
+#sk-container-id-3 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-3 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+#sk-container-id-3 div.sk-label label.sk-toggleable__label,
+#sk-container-id-3 div.sk-label label {
+  /* The background is the default theme color */
+  color: var(--sklearn-color-text-on-default-background);
+}
+
+/* On hover, darken the color of the background */
+#sk-container-id-3 div.sk-label:hover label.sk-toggleable__label {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+/* Label box, darken color on hover, fitted */
+#sk-container-id-3 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Estimator label */
+
+#sk-container-id-3 div.sk-label label {
+  font-family: monospace;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.2em;
+}
+
+#sk-container-id-3 div.sk-label-container {
+  text-align: center;
+}
+
+/* Estimator-specific */
+#sk-container-id-3 div.sk-estimator {
+  font-family: monospace;
+  border: 1px dotted var(--sklearn-color-border-box);
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-3 div.sk-estimator.fitted {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+/* on hover */
+#sk-container-id-3 div.sk-estimator:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-3 div.sk-estimator.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Specification for estimator info (e.g. "i" and "?") */
+
+/* Common style for "i" and "?" */
+
+.sk-estimator-doc-link,
+a:link.sk-estimator-doc-link,
+a:visited.sk-estimator-doc-link {
+  float: right;
+  font-size: smaller;
+  line-height: 1em;
+  font-family: monospace;
+  background-color: var(--sklearn-color-background);
+  border-radius: 1em;
+  height: 1em;
+  width: 1em;
+  text-decoration: none !important;
+  margin-left: 1ex;
+  /* unfitted */
+  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+  color: var(--sklearn-color-unfitted-level-1);
+}
+
+.sk-estimator-doc-link.fitted,
+a:link.sk-estimator-doc-link.fitted,
+a:visited.sk-estimator-doc-link.fitted {
+  /* fitted */
+  border: var(--sklearn-color-fitted-level-1) 1pt solid;
+  color: var(--sklearn-color-fitted-level-1);
+}
+
+/* On hover */
+div.sk-estimator:hover .sk-estimator-doc-link:hover,
+.sk-estimator-doc-link:hover,
+div.sk-label-container:hover .sk-estimator-doc-link:hover,
+.sk-estimator-doc-link:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+div.sk-estimator.fitted:hover .sk-estimator-doc-link.fitted:hover,
+.sk-estimator-doc-link.fitted:hover,
+div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
+.sk-estimator-doc-link.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+/* Span, style for the box shown on hovering the info icon */
+.sk-estimator-doc-link span {
+  display: none;
+  z-index: 9999;
+  position: relative;
+  font-weight: normal;
+  right: .2ex;
+  padding: .5ex;
+  margin: .5ex;
+  width: min-content;
+  min-width: 20ex;
+  max-width: 50ex;
+  color: var(--sklearn-color-text);
+  box-shadow: 2pt 2pt 4pt #999;
+  /* unfitted */
+  background: var(--sklearn-color-unfitted-level-0);
+  border: .5pt solid var(--sklearn-color-unfitted-level-3);
+}
+
+.sk-estimator-doc-link.fitted span {
+  /* fitted */
+  background: var(--sklearn-color-fitted-level-0);
+  border: var(--sklearn-color-fitted-level-3);
+}
+
+.sk-estimator-doc-link:hover span {
+  display: block;
+}
+
+/* "?"-specific style due to the `<a>` HTML tag */
+
+#sk-container-id-3 a.estimator_doc_link {
+  float: right;
+  font-size: 1rem;
+  line-height: 1em;
+  font-family: monospace;
+  background-color: var(--sklearn-color-background);
+  border-radius: 1rem;
+  height: 1rem;
+  width: 1rem;
+  text-decoration: none;
+  /* unfitted */
+  color: var(--sklearn-color-unfitted-level-1);
+  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+}
+
+#sk-container-id-3 a.estimator_doc_link.fitted {
+  /* fitted */
+  border: var(--sklearn-color-fitted-level-1) 1pt solid;
+  color: var(--sklearn-color-fitted-level-1);
+}
+
+/* On hover */
+#sk-container-id-3 a.estimator_doc_link:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+#sk-container-id-3 a.estimator_doc_link.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-3);
+}
+</style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>DatetimeEncoder()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-11" type="checkbox" checked><label for="sk-estimator-id-11" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;DatetimeEncoder<span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div>
+</div>
+<br />
+<br /><p>We can also see which features in the vectorizer’s output were derived from a given input column.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span><span class="o">.</span><span class="n">input_to_outputs_</span></a><span class="p">[</span><span class="s2">&quot;date_first_hired&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;date_first_hired_year&#39;, &#39;date_first_hired_month&#39;, &#39;date_first_hired_day&#39;, &#39;date_first_hired_total_seconds&#39;]
+</pre></div>
+</div>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorized_employees</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span><span class="o">.</span><span class="n">input_to_outputs_</span></a><span class="p">[</span><span class="s2">&quot;date_first_hired&quot;</span><span class="p">]]</span>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date_first_hired_year</th>
+      <th>date_first_hired_month</th>
+      <th>date_first_hired_day</th>
+      <th>date_first_hired_total_seconds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1986.0</td>
+      <td>9.0</td>
+      <td>22.0</td>
+      <td>5.277312e+08</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1988.0</td>
+      <td>9.0</td>
+      <td>12.0</td>
+      <td>5.900256e+08</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1989.0</td>
+      <td>11.0</td>
+      <td>19.0</td>
+      <td>6.274368e+08</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2014.0</td>
+      <td>5.0</td>
+      <td>5.0</td>
+      <td>1.399248e+09</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2007.0</td>
+      <td>3.0</td>
+      <td>5.0</td>
+      <td>1.173053e+09</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>9223</th>
+      <td>2015.0</td>
+      <td>11.0</td>
+      <td>3.0</td>
+      <td>1.446509e+09</td>
+    </tr>
+    <tr>
+      <th>9224</th>
+      <td>1988.0</td>
+      <td>11.0</td>
+      <td>28.0</td>
+      <td>5.966784e+08</td>
+    </tr>
+    <tr>
+      <th>9225</th>
+      <td>2001.0</td>
+      <td>4.0</td>
+      <td>30.0</td>
+      <td>9.885888e+08</td>
+    </tr>
+    <tr>
+      <th>9226</th>
+      <td>2006.0</td>
+      <td>9.0</td>
+      <td>5.0</td>
+      <td>1.157414e+09</td>
+    </tr>
+    <tr>
+      <th>9227</th>
+      <td>2012.0</td>
+      <td>1.0</td>
+      <td>30.0</td>
+      <td>1.327882e+09</td>
+    </tr>
+  </tbody>
+</table>
+<p>9228 rows × 4 columns</p>
+</div>
+</div>
+<br />
+<br /><p>Finally, we can go in the opposite direction: given a column in the input, find out from which input column it was derived.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span><span class="o">.</span><span class="n">output_to_input_</span></a><span class="p">[</span><span class="s2">&quot;department_BOA&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;department&#39;
+</pre></div>
+</div>
+<section id="dataframe-preprocessing">
+<h3>Dataframe preprocessing<a class="headerlink" href="#dataframe-preprocessing" title="Link to this heading">#</a></h3>
+<p>Note that <code class="docutils literal notranslate"><span class="pre">&quot;date_first_hired&quot;</span></code> has been recognized and processed as a datetime column.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span><span class="o">.</span><span class="n">column_to_kind_</span></a><span class="p">[</span><span class="s2">&quot;date_first_hired&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;datetime&#39;
+</pre></div>
+</div>
+<p>But looking closer at our original dataframe, it was encoded as a string.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">employees</span></a><span class="p">[</span><span class="s2">&quot;date_first_hired&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>0       09/22/1986
+1       09/12/1988
+2       11/19/1989
+3       05/05/2014
+4       03/05/2007
+           ...
+9223    11/03/2015
+9224    11/28/1988
+9225    04/30/2001
+9226    09/05/2006
+9227    01/30/2012
+Name: date_first_hired, Length: 9228, dtype: object
+</pre></div>
+</div>
+<p>Note the <code class="docutils literal notranslate"><span class="pre">dtype:</span> <span class="pre">object</span></code> in the output above.
+Before applying the transformers we specify, the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> performs a few preprocessing steps.</p>
+<p>For example, strings commonly used to represent missing values such as <code class="docutils literal notranslate"><span class="pre">&quot;N/A&quot;</span></code> are replaced with actual <code class="docutils literal notranslate"><span class="pre">null</span></code>.
+As we saw above, columns containing strings that represent dates (e.g. <code class="docutils literal notranslate"><span class="pre">'2024-05-15'</span></code>) are detected and converted  to proper datetimes.</p>
+<p>We can inspect the list of steps that were applied to a given column:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span><span class="o">.</span><span class="n">all_processing_steps_</span></a><span class="p">[</span><span class="s2">&quot;date_first_hired&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[CleanNullStrings(), ToDatetime(), DatetimeEncoder(), {&#39;date_first_hired_day&#39;: ToFloat32(), &#39;date_first_hired_month&#39;: ToFloat32(), ...}]
+</pre></div>
+</div>
+<p>These preprocessing steps depend on the column:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span><span class="o">.</span><span class="n">all_processing_steps_</span></a><span class="p">[</span><span class="s2">&quot;department&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[CleanNullStrings(), ToStr(), OneHotEncoder(drop=&#39;if_binary&#39;, dtype=&#39;float32&#39;, handle_unknown=&#39;ignore&#39;,
+              sparse_output=False), {&#39;department_BOA&#39;: ToFloat32(), &#39;department_BOE&#39;: ToFloat32(), ...}]
+</pre></div>
+</div>
+</section>
+</section>
+<section id="a-simple-pipeline-for-tabular-data">
+<h2>A simple Pipeline for tabular data<a class="headerlink" href="#a-simple-pipeline-for-tabular-data" title="Link to this heading">#</a></h2>
+<p>The <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> outputs data that can be understood by a scikit-learn
+estimator. Therefore we can easily build a 2-step scikit-learn <code class="docutils literal notranslate"><span class="pre">Pipeline</span></code>
+that we can fit, test or cross-validate and that works well on tabular data.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="sklearn.model_selection.cross_validate" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_validate</span></a>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a><span class="p">(</span><a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a><span class="p">(),</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a><span class="p">())</span>
+
+<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="sklearn.model_selection.cross_validate" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_validate</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">employees</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">salaries</span></a><span class="p">)</span>
+<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;test_score&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;R2 score:  mean: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; std: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;mean fit time: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s1">&#39;fit_time&#39;</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> seconds&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.924; std: 0.011
+mean fit time: 6.010 seconds
+</pre></div>
+</div>
+</section>
+<section id="specializing-the-tablevectorizer-for-histgradientboosting">
+<h2>Specializing the TableVectorizer for HistGradientBoosting<a class="headerlink" href="#specializing-the-tablevectorizer-for-histgradientboosting" title="Link to this heading">#</a></h2>
+<p>The encoders used by default by the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> are safe choices for a wide range of downstream estimators.
+If we know we want to use it with a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a> (or classifier) model, we can make some different choices that are only well-suited for tree-based models but can yield a faster pipeline.
+We make 2 changes.</p>
+<p>The <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a> has built-in support for categorical features, so we do not need to one-hot encode them.
+We do need to tell it which features should be treated as categorical with the <code class="docutils literal notranslate"><span class="pre">categorical_features</span></code> parameter.
+In recent versions of scikit-learn, we can set <code class="docutils literal notranslate"><span class="pre">categorical_features='from_dtype'</span></code>, and it will treat all columns in the input that have a <code class="docutils literal notranslate"><span class="pre">Categorical</span></code> dtype as such.
+Therefore we change the encoder for low-cardinality columns: instead of <code class="docutils literal notranslate"><span class="pre">OneHotEncoder</span></code>, we use skrub’s <code class="docutils literal notranslate"><span class="pre">ToCategorical</span></code>.
+This transformer will simply ensure our columns have an actual <code class="docutils literal notranslate"><span class="pre">Categorical</span></code> dtype (as opposed to string for example), so that they can be recognized by the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>.</p>
+<p>The second change replaces the <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> with a <a class="reference internal" href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>.
+The <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> is a topic model.
+It produces interpretable embeddings in a vector space where distances are meaningful, which is great for interpretation and necessary for some downstream supervised learners such as linear models.
+However fitting the topic model is costly in computation time and memory.
+The <a class="reference internal" href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> produces features that are not easy to interpret, but that decision trees can efficiently use to test for the occurrence of particular character n-grams (more details are provided in its documentation).
+Therefore it can be a faster and very effective alternative, when the supervised learner is built on top of decision trees, which is the case for the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.ToCategorical.html#skrub.ToCategorical" title="skrub.ToCategorical" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">ToCategorical</span></a><span class="p">,</span> <a href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">MinHashEncoder</span></a>
+
+<a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span></a> <span class="o">=</span> <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a><span class="p">(</span>
+    <span class="n">low_cardinality_transformer</span><span class="o">=</span><a href="../generated/skrub.ToCategorical.html#skrub.ToCategorical" title="skrub.ToCategorical" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">ToCategorical</span></a><span class="p">(),</span>
+    <span class="n">high_cardinality_transformer</span><span class="o">=</span><a href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">MinHashEncoder</span></a><span class="p">(),</span>
+<span class="p">)</span>
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a><span class="p">(</span>
+    <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span></a><span class="p">,</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a><span class="p">(</span><span class="n">categorical_features</span><span class="o">=</span><span class="s2">&quot;from_dtype&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+
+<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="sklearn.model_selection.cross_validate" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_validate</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">employees</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">salaries</span></a><span class="p">)</span>
+<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;test_score&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;R2 score:  mean: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; std: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;mean fit time: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s1">&#39;fit_time&#39;</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> seconds&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.911; std: 0.014
+mean fit time: 0.955 seconds
+</pre></div>
+</div>
+<p>We can see that this new pipeline achieves a similar score but is fitted much faster.
+This is mostly due to replacing <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> with <a class="reference internal" href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> (however this makes the features less interpretable).</p>
+</section>
+<section id="feature-importances-in-the-statistical-model">
+<h2>Feature importances in the statistical model<a class="headerlink" href="#feature-importances-in-the-statistical-model" title="Link to this heading">#</a></h2>
+<p>As we just saw, we can fit a <a class="reference internal" href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> faster than a <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>.
+However, the <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> has a crucial advantage: each dimension of its output space is associated with a topic which can be inspected and interpreted.
+In this section, after training a regressor, we will plot the feature importances.</p>
+<aside class="topic">
+<p class="topic-title">Note:</p>
+<p>To minimize computation time, we use the feature importances computed by the
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomForestRegressor</span></code></a>, but you should prefer <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html#sklearn.inspection.permutation_importance" title="(in scikit-learn v1.5)"><code class="xref py py-func docutils literal notranslate"><span class="pre">permutation_importance()</span></code></a>
+instead (which are less subject to biases).</p>
+</aside>
+<p>First, we train another scikit-learn regressor, the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomForestRegressor</span></code></a>:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="sklearn.ensemble.RandomForestRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class"><span class="n">RandomForestRegressor</span></a>
+
+<a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span></a> <span class="o">=</span> <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a><span class="p">()</span>  <span class="c1"># now using the default GapEncoder</span>
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="sklearn.ensemble.RandomForestRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">regressor</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="sklearn.ensemble.RandomForestRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class"><span class="n">RandomForestRegressor</span></a><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a><span class="p">(</span><a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span></a><span class="p">,</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="sklearn.ensemble.RandomForestRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">regressor</span></a><span class="p">)</span>
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.fit" title="sklearn.pipeline.Pipeline.fit" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-method"><span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">employees</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">salaries</span></a><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<style>#sk-container-id-4 {
+  /* Definition of color scheme common for light and dark mode */
+  --sklearn-color-text: black;
+  --sklearn-color-line: gray;
+  /* Definition of color scheme for unfitted estimators */
+  --sklearn-color-unfitted-level-0: #fff5e6;
+  --sklearn-color-unfitted-level-1: #f6e4d2;
+  --sklearn-color-unfitted-level-2: #ffe0b3;
+  --sklearn-color-unfitted-level-3: chocolate;
+  /* Definition of color scheme for fitted estimators */
+  --sklearn-color-fitted-level-0: #f0f8ff;
+  --sklearn-color-fitted-level-1: #d4ebff;
+  --sklearn-color-fitted-level-2: #b3dbfd;
+  --sklearn-color-fitted-level-3: cornflowerblue;
+
+  /* Specific color for light theme */
+  --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+  --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, white)));
+  --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+  --sklearn-color-icon: #696969;
+
+  @media (prefers-color-scheme: dark) {
+    /* Redefinition of color scheme for dark theme */
+    --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+    --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, #111)));
+    --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+    --sklearn-color-icon: #878787;
+  }
+}
+
+#sk-container-id-4 {
+  color: var(--sklearn-color-text);
+}
+
+#sk-container-id-4 pre {
+  padding: 0;
+}
+
+#sk-container-id-4 input.sk-hidden--visually {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#sk-container-id-4 div.sk-dashed-wrapped {
+  border: 1px dashed var(--sklearn-color-line);
+  margin: 0 0.4em 0.5em 0.4em;
+  box-sizing: border-box;
+  padding-bottom: 0.4em;
+  background-color: var(--sklearn-color-background);
+}
+
+#sk-container-id-4 div.sk-container {
+  /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
+     but bootstrap.min.css set `[hidden] { display: none !important; }`
+     so we also need the `!important` here to be able to override the
+     default hidden behavior on the sphinx rendered scikit-learn.org.
+     See: https://github.com/scikit-learn/scikit-learn/issues/21755 */
+  display: inline-block !important;
+  position: relative;
+}
+
+#sk-container-id-4 div.sk-text-repr-fallback {
+  display: none;
+}
+
+div.sk-parallel-item,
+div.sk-serial,
+div.sk-item {
+  /* draw centered vertical line to link estimators */
+  background-image: linear-gradient(var(--sklearn-color-text-on-default-background), var(--sklearn-color-text-on-default-background));
+  background-size: 2px 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Parallel-specific style estimator block */
+
+#sk-container-id-4 div.sk-parallel-item::after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
+  flex-grow: 1;
+}
+
+#sk-container-id-4 div.sk-parallel {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: var(--sklearn-color-background);
+  position: relative;
+}
+
+#sk-container-id-4 div.sk-parallel-item {
+  display: flex;
+  flex-direction: column;
+}
+
+#sk-container-id-4 div.sk-parallel-item:first-child::after {
+  align-self: flex-end;
+  width: 50%;
+}
+
+#sk-container-id-4 div.sk-parallel-item:last-child::after {
+  align-self: flex-start;
+  width: 50%;
+}
+
+#sk-container-id-4 div.sk-parallel-item:only-child::after {
+  width: 0;
+}
+
+/* Serial-specific style estimator block */
+
+#sk-container-id-4 div.sk-serial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sklearn-color-background);
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+
+/* Toggleable style: style used for estimator/Pipeline/ColumnTransformer box that is
+clickable and can be expanded/collapsed.
+- Pipeline and ColumnTransformer use this feature and define the default style
+- Estimators will overwrite some part of the style using the `sk-estimator` class
+*/
+
+/* Pipeline and ColumnTransformer style (default) */
+
+#sk-container-id-4 div.sk-toggleable {
+  /* Default theme specific background. It is overwritten whether we have a
+  specific estimator or a Pipeline/ColumnTransformer */
+  background-color: var(--sklearn-color-background);
+}
+
+/* Toggleable label */
+#sk-container-id-4 label.sk-toggleable__label {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0.5em;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#sk-container-id-4 label.sk-toggleable__label-arrow:before {
+  /* Arrow on the left of the label */
+  content: "▸";
+  float: left;
+  margin-right: 0.25em;
+  color: var(--sklearn-color-icon);
+}
+
+#sk-container-id-4 label.sk-toggleable__label-arrow:hover:before {
+  color: var(--sklearn-color-text);
+}
+
+/* Toggleable content - dropdown */
+
+#sk-container-id-4 div.sk-toggleable__content {
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+  text-align: left;
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-4 div.sk-toggleable__content.fitted {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+#sk-container-id-4 div.sk-toggleable__content pre {
+  margin: 0.2em;
+  border-radius: 0.25em;
+  color: var(--sklearn-color-text);
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-4 div.sk-toggleable__content.fitted pre {
+  /* unfitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+#sk-container-id-4 input.sk-toggleable__control:checked~div.sk-toggleable__content {
+  /* Expand drop-down */
+  max-height: 200px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+#sk-container-id-4 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
+  content: "▾";
+}
+
+/* Pipeline/ColumnTransformer-specific style */
+
+#sk-container-id-4 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-4 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Estimator-specific style */
+
+/* Colorize estimator box */
+#sk-container-id-4 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-4 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+#sk-container-id-4 div.sk-label label.sk-toggleable__label,
+#sk-container-id-4 div.sk-label label {
+  /* The background is the default theme color */
+  color: var(--sklearn-color-text-on-default-background);
+}
+
+/* On hover, darken the color of the background */
+#sk-container-id-4 div.sk-label:hover label.sk-toggleable__label {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+/* Label box, darken color on hover, fitted */
+#sk-container-id-4 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Estimator label */
+
+#sk-container-id-4 div.sk-label label {
+  font-family: monospace;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.2em;
+}
+
+#sk-container-id-4 div.sk-label-container {
+  text-align: center;
+}
+
+/* Estimator-specific */
+#sk-container-id-4 div.sk-estimator {
+  font-family: monospace;
+  border: 1px dotted var(--sklearn-color-border-box);
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-4 div.sk-estimator.fitted {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+/* on hover */
+#sk-container-id-4 div.sk-estimator:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-4 div.sk-estimator.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Specification for estimator info (e.g. "i" and "?") */
+
+/* Common style for "i" and "?" */
+
+.sk-estimator-doc-link,
+a:link.sk-estimator-doc-link,
+a:visited.sk-estimator-doc-link {
+  float: right;
+  font-size: smaller;
+  line-height: 1em;
+  font-family: monospace;
+  background-color: var(--sklearn-color-background);
+  border-radius: 1em;
+  height: 1em;
+  width: 1em;
+  text-decoration: none !important;
+  margin-left: 1ex;
+  /* unfitted */
+  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+  color: var(--sklearn-color-unfitted-level-1);
+}
+
+.sk-estimator-doc-link.fitted,
+a:link.sk-estimator-doc-link.fitted,
+a:visited.sk-estimator-doc-link.fitted {
+  /* fitted */
+  border: var(--sklearn-color-fitted-level-1) 1pt solid;
+  color: var(--sklearn-color-fitted-level-1);
+}
+
+/* On hover */
+div.sk-estimator:hover .sk-estimator-doc-link:hover,
+.sk-estimator-doc-link:hover,
+div.sk-label-container:hover .sk-estimator-doc-link:hover,
+.sk-estimator-doc-link:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+div.sk-estimator.fitted:hover .sk-estimator-doc-link.fitted:hover,
+.sk-estimator-doc-link.fitted:hover,
+div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
+.sk-estimator-doc-link.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+/* Span, style for the box shown on hovering the info icon */
+.sk-estimator-doc-link span {
+  display: none;
+  z-index: 9999;
+  position: relative;
+  font-weight: normal;
+  right: .2ex;
+  padding: .5ex;
+  margin: .5ex;
+  width: min-content;
+  min-width: 20ex;
+  max-width: 50ex;
+  color: var(--sklearn-color-text);
+  box-shadow: 2pt 2pt 4pt #999;
+  /* unfitted */
+  background: var(--sklearn-color-unfitted-level-0);
+  border: .5pt solid var(--sklearn-color-unfitted-level-3);
+}
+
+.sk-estimator-doc-link.fitted span {
+  /* fitted */
+  background: var(--sklearn-color-fitted-level-0);
+  border: var(--sklearn-color-fitted-level-3);
+}
+
+.sk-estimator-doc-link:hover span {
+  display: block;
+}
+
+/* "?"-specific style due to the `<a>` HTML tag */
+
+#sk-container-id-4 a.estimator_doc_link {
+  float: right;
+  font-size: 1rem;
+  line-height: 1em;
+  font-family: monospace;
+  background-color: var(--sklearn-color-background);
+  border-radius: 1rem;
+  height: 1rem;
+  width: 1rem;
+  text-decoration: none;
+  /* unfitted */
+  color: var(--sklearn-color-unfitted-level-1);
+  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+}
+
+#sk-container-id-4 a.estimator_doc_link.fitted {
+  /* fitted */
+  border: var(--sklearn-color-fitted-level-1) 1pt solid;
+  color: var(--sklearn-color-fitted-level-1);
+}
+
+/* On hover */
+#sk-container-id-4 a.estimator_doc_link:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+#sk-container-id-4 a.estimator_doc_link.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-3);
+}
+</style><div id="sk-container-id-4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
+                (&#x27;randomforestregressor&#x27;,
+                 RandomForestRegressor(max_depth=20, n_estimators=50,
+                                       random_state=0))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-12" type="checkbox" ><label for="sk-estimator-id-12" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;Pipeline<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
+                (&#x27;randomforestregressor&#x27;,
+                 RandomForestRegressor(max_depth=20, n_estimators=50,
+                                       random_state=0))])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-13" type="checkbox" ><label for="sk-estimator-id-13" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">tablevectorizer: TableVectorizer</label><div class="sk-toggleable__content fitted"><pre>TableVectorizer()</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-14" type="checkbox" ><label for="sk-estimator-id-14" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">datetime_transformer: DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-15" type="checkbox" ><label for="sk-estimator-id-15" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-16" type="checkbox" ><label for="sk-estimator-id-16" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">high_cardinality_transformer: GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-17" type="checkbox" ><label for="sk-estimator-id-17" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-18" type="checkbox" ><label for="sk-estimator-id-18" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">low_cardinality_transformer: OneHotEncoder</label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
+              sparse_output=False)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-19" type="checkbox" ><label for="sk-estimator-id-19" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;OneHotEncoder<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
+              sparse_output=False)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-20" type="checkbox" ><label for="sk-estimator-id-20" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">numeric_transformer: PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-21" type="checkbox" ><label for="sk-estimator-id-21" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-22" type="checkbox" ><label for="sk-estimator-id-22" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;RandomForestRegressor<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.RandomForestRegressor.html">?<span>Documentation for RandomForestRegressor</span></a></label><div class="sk-toggleable__content fitted"><pre>RandomForestRegressor(max_depth=20, n_estimators=50, random_state=0)</pre></div> </div></div></div></div></div></div>
 </div>
 <br />
 <br /><p>We are retrieving the feature importances:</p>
@@ -1707,11 +3693,11 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">top_indices</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">indices</span></a><span class="p">[:</span><span class="mi">20</span><span class="p">]</span>
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">labels</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">feature_names</span></a><span class="p">[</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">top_indices</span></a><span class="p">]</span>
+<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">labels</span></a> <span class="o">=</span> <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer.get_feature_names_out" title="skrub.TableVectorizer.get_feature_names_out" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">vectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span></a><span class="p">()[</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">top_indices</span></a><span class="p">]</span>
 
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.barh.html#matplotlib.pyplot.barh" title="matplotlib.pyplot.barh" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">barh</span></a><span class="p">(</span>
-    <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="o">=</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">labels</span></a><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">labels</span></a><span class="p">,</span>
     <span class="n">width</span><span class="o">=</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">avg_importances</span></a><span class="p">[</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">top_indices</span></a><span class="p">],</span>
     <span class="n">yerr</span><span class="o">=</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">std_importances</span></a><span class="p">[</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">top_indices</span></a><span class="p">],</span>
     <span class="n">color</span><span class="o">=</span><span class="s2">&quot;b&quot;</span><span class="p">,</span>
@@ -1722,20 +3708,23 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_01_encodings_001.png" srcset="../_images/sphx_glr_01_encodings_001.png" alt="Feature importances" class = "sphx-glr-single-img"/><p>We can see that features such the time elapsed since being hired, having a full-time employment, and the position, seem to be the most informative for prediction.
+<img src="../_images/sphx_glr_01_encodings_001.png" srcset="../_images/sphx_glr_01_encodings_001.png" alt="Feature importances" class = "sphx-glr-single-img"/><p>The <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> creates feature names that show the first 3 most important words in the topic associated with each feature.
+As we can see in the plot above, this helps inspecting the model.
+If we had used a <a class="reference internal" href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> instead, the features would be much less helpful, with names such as <code class="docutils literal notranslate"><span class="pre">employee_position_title_0</span></code>, <code class="docutils literal notranslate"><span class="pre">employee_position_title_1</span></code>, etc.</p>
+<p>We can see that features such the time elapsed since being hired, having a full-time employment, and the position, seem to be the most informative for prediction.
 However, feature importances must not be over-interpreted – they capture statistical associations <a class="reference external" href="https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation">rather than causal effects</a>.
 Moreover, the fast feature importance method used here suffers from biases favouring features with larger cardinality, as illustrated in a scikit-learn <a class="reference external" href="https://scikit-learn.org/dev/auto_examples/inspection/plot_permutation_importance.html#sphx-glr-auto-examples-inspection-plot-permutation-importance-py">example</a>.
-In general we should prefer <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html#sklearn.inspection.permutation_importance" title="(in scikit-learn v1.4)"><code class="xref py py-func docutils literal notranslate"><span class="pre">permutation_importance()</span></code></a>, but it is a slower method.</p>
+In general we should prefer <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html#sklearn.inspection.permutation_importance" title="(in scikit-learn v1.5)"><code class="xref py py-func docutils literal notranslate"><span class="pre">permutation_importance()</span></code></a>, but it is a slower method.</p>
 </section>
 <section id="conclusion">
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
 <p>In this example, we motivated the need for a simple machine learning
 pipeline, which we built using the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and a
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>.</p>
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>.</p>
 <p>We saw that by default, it works well on a heterogeneous dataset.</p>
 <p>To better understand our dataset, and without much effort, we were also able
 to plot the feature importances.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 11.633 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 3.875 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-01-encodings-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/01_encodings.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -1800,7 +3789,13 @@ to plot the feature importances.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-simple-prediction-pipeline">A simple prediction pipeline</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#easily-encoding-a-dataframe">Easily encoding a dataframe</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inspecting-the-tablevectorizer">Inspecting the TableVectorizer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataframe-preprocessing">Dataframe preprocessing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-simple-pipeline-for-tabular-data">A simple Pipeline for tabular data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specializing-the-tablevectorizer-for-histgradientboosting">Specializing the TableVectorizer for HistGradientBoosting</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-importances-in-the-statistical-model">Feature importances in the statistical model</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
 </ul>
