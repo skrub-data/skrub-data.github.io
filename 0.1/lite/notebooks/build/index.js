@@ -30,7 +30,6 @@ const disabled = [
   "@jupyterlab/application-extension:tree-resolver",
   "@jupyterlab/apputils-extension:announcements",
   "@jupyterlab/apputils-extension:kernel-status",
-  "@jupyterlab/apputils-extension:notification",
   "@jupyterlab/apputils-extension:palette-restorer",
   "@jupyterlab/apputils-extension:print",
   "@jupyterlab/apputils-extension:resolver",
@@ -52,11 +51,14 @@ const disabled = [
   "@jupyterlab/fileeditor-extension:editor-syntax-status",
   "@jupyterlab/fileeditor-extension:language-server",
   "@jupyterlab/fileeditor-extension:search",
+  "@jupyterlab/help-extension:about",
+  "@jupyterlab/help-extension:open",
   "@jupyterlab/notebook-extension:execution-indicator",
   "@jupyterlab/notebook-extension:kernel-status",
   "@jupyter-notebook/application-extension:logo",
   "@jupyter-notebook/application-extension:opener",
   "@jupyter-notebook/application-extension:path-opener",
+  "@jupyter-notebook/help-extension:about",
 ];
 
 async function createModule(scope, module) {
@@ -155,6 +157,16 @@ export async function main() {
       console.error(e);
     }
   }
+  if (!federatedExtensionNames.has('@jupyterlab/mermaid-extension')) {
+    try {
+      let ext = require('@jupyterlab/mermaid-extension/lib/mime.js');
+      for (let plugin of activePlugins(ext)) {
+        mimeExtensions.push(plugin);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }
   if (!federatedExtensionNames.has('@jupyterlab/vega5-extension')) {
     try {
       let ext = require('@jupyterlab/vega5-extension');
@@ -212,6 +224,16 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/cell-toolbar-extension')) {
     try {
       let ext = require('@jupyterlab/cell-toolbar-extension');
+      for (let plugin of activePlugins(ext)) {
+        pluginsToRegister.push(plugin);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }
+  if (!federatedExtensionNames.has('@jupyterlab/celltags-extension')) {
+    try {
+      let ext = require('@jupyterlab/celltags-extension');
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -289,6 +311,16 @@ export async function main() {
       console.error(e);
     }
   }
+  if (!federatedExtensionNames.has('@jupyterlab/help-extension')) {
+    try {
+      let ext = require('@jupyterlab/help-extension');
+      for (let plugin of activePlugins(ext)) {
+        pluginsToRegister.push(plugin);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }
   if (!federatedExtensionNames.has('@jupyterlab/lsp-extension')) {
     try {
       let ext = require('@jupyterlab/lsp-extension');
@@ -322,6 +354,16 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/mathjax-extension')) {
     try {
       let ext = require('@jupyterlab/mathjax-extension');
+      for (let plugin of activePlugins(ext)) {
+        pluginsToRegister.push(plugin);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }
+  if (!federatedExtensionNames.has('@jupyterlab/mermaid-extension')) {
+    try {
+      let ext = require('@jupyterlab/mermaid-extension');
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }

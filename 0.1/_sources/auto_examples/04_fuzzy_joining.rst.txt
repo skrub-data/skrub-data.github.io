@@ -11,7 +11,7 @@
         :class: sphx-glr-download-link-note
 
         :ref:`Go to the end <sphx_glr_download_auto_examples_04_fuzzy_joining.py>`
-        to download the full example code or to run this example in your browser via JupyterLite or Binder
+        to download the full example code. or to run this example in your browser via JupyterLite or Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -269,17 +269,17 @@ We extract the table containing GDP per capita by country:
         <tr>
           <th>0</th>
           <td>Aruba</td>
-          <td>29342.100730</td>
+          <td>33300.838819</td>
         </tr>
         <tr>
           <th>1</th>
           <td>Africa Eastern and Southern</td>
-          <td>1622.391720</td>
+          <td>1644.062829</td>
         </tr>
         <tr>
           <th>2</th>
           <td>Afghanistan</td>
-          <td>363.674087</td>
+          <td>355.777826</td>
         </tr>
       </tbody>
     </table>
@@ -545,12 +545,12 @@ original table (df), and those that we downloaded from the worldbank
         <tr>
           <th>253</th>
           <td>Viet Nam</td>
-          <td>4163.514300</td>
+          <td>4163.514299</td>
         </tr>
         <tr>
           <th>252</th>
           <td>Virgin Islands (U.S.)</td>
-          <td>39552.168595</td>
+          <td>41976.008312</td>
         </tr>
         <tr>
           <th>193</th>
@@ -560,22 +560,22 @@ original table (df), and those that we downloaded from the worldbank
         <tr>
           <th>255</th>
           <td>World</td>
-          <td>12647.480789</td>
+          <td>12687.741894</td>
         </tr>
         <tr>
           <th>258</th>
           <td>Yemen, Rep.</td>
-          <td>676.928385</td>
+          <td>650.272218</td>
         </tr>
         <tr>
           <th>260</th>
           <td>Zambia</td>
-          <td>1487.907764</td>
+          <td>1456.901570</td>
         </tr>
         <tr>
           <th>261</th>
           <td>Zimbabwe</td>
-          <td>1266.996031</td>
+          <td>1676.821489</td>
         </tr>
       </tbody>
     </table>
@@ -679,7 +679,7 @@ To join them with skrub, we only need to do the following:
           <td>Madagascar*</td>
           <td>4339.0</td>
           <td>Madagascar</td>
-          <td>505.035528</td>
+          <td>516.592616</td>
           <td>0.616018</td>
           <td>0.440370</td>
           <td>True</td>
@@ -709,7 +709,7 @@ To join them with skrub, we only need to do the following:
           <td>Ethiopia</td>
           <td>4241.0</td>
           <td>Ethiopia</td>
-          <td>1027.585918</td>
+          <td>1027.585911</td>
           <td>0.000000</td>
           <td>0.000000</td>
           <td>True</td>
@@ -719,7 +719,7 @@ To join them with skrub, we only need to do the following:
           <td>Yemen*</td>
           <td>4197.0</td>
           <td>Yemen, Rep.</td>
-          <td>676.928385</td>
+          <td>650.272218</td>
           <td>0.989239</td>
           <td>0.707172</td>
           <td>True</td>
@@ -729,7 +729,7 @@ To join them with skrub, we only need to do the following:
           <td>Mauritania*</td>
           <td>4153.0</td>
           <td>Mauritania</td>
-          <td>2190.700205</td>
+          <td>2065.155516</td>
           <td>0.618608</td>
           <td>0.442221</td>
           <td>True</td>
@@ -739,7 +739,7 @@ To join them with skrub, we only need to do the following:
           <td>Jordan</td>
           <td>4152.0</td>
           <td>Jordan</td>
-          <td>4204.505640</td>
+          <td>4311.000046</td>
           <td>0.000000</td>
           <td>0.000000</td>
           <td>True</td>
@@ -749,7 +749,7 @@ To join them with skrub, we only need to do the following:
           <td>Togo</td>
           <td>4112.0</td>
           <td>Togo</td>
-          <td>918.376756</td>
+          <td>942.649902</td>
           <td>0.000000</td>
           <td>0.000000</td>
           <td>True</td>
@@ -759,7 +759,7 @@ To join them with skrub, we only need to do the following:
           <td>India</td>
           <td>3777.0</td>
           <td>India</td>
-          <td>2388.621198</td>
+          <td>2410.888021</td>
           <td>0.000000</td>
           <td>0.000000</td>
           <td>True</td>
@@ -769,7 +769,7 @@ To join them with skrub, we only need to do the following:
           <td>Zambia</td>
           <td>3760.0</td>
           <td>Zambia</td>
-          <td>1487.907764</td>
+          <td>1456.901570</td>
           <td>0.000000</td>
           <td>0.000000</td>
           <td>True</td>
@@ -789,7 +789,7 @@ To join them with skrub, we only need to do the following:
           <td>Tanzania</td>
           <td>3702.0</td>
           <td>Tanzania</td>
-          <td>1192.403809</td>
+          <td>1192.766479</td>
           <td>0.000000</td>
           <td>0.000000</td>
           <td>True</td>
@@ -799,7 +799,7 @@ To join them with skrub, we only need to do the following:
           <td>Sierra Leone</td>
           <td>3574.0</td>
           <td>Sierra Leone</td>
-          <td>461.361138</td>
+          <td>475.795728</td>
           <td>0.000000</td>
           <td>0.000000</td>
           <td>True</td>
@@ -809,7 +809,7 @@ To join them with skrub, we only need to do the following:
           <td>Lesotho*</td>
           <td>3512.0</td>
           <td>Lesotho</td>
-          <td>1107.395298</td>
+          <td>969.935760</td>
           <td>0.719706</td>
           <td>0.514492</td>
           <td>True</td>
@@ -819,7 +819,7 @@ To join them with skrub, we only need to do the following:
           <td>Botswana*</td>
           <td>3471.0</td>
           <td>Botswana</td>
-          <td>7737.654681</td>
+          <td>7738.878804</td>
           <td>0.638844</td>
           <td>0.456687</td>
           <td>True</td>
@@ -829,7 +829,7 @@ To join them with skrub, we only need to do the following:
           <td>Rwanda*</td>
           <td>3268.0</td>
           <td>Rwanda</td>
-          <td>966.327110</td>
+          <td>966.232071</td>
           <td>0.754071</td>
           <td>0.539059</td>
           <td>True</td>
@@ -839,7 +839,7 @@ To join them with skrub, we only need to do the following:
           <td>Zimbabwe</td>
           <td>2995.0</td>
           <td>Zimbabwe</td>
-          <td>1266.996031</td>
+          <td>1676.821489</td>
           <td>0.000000</td>
           <td>0.000000</td>
           <td>True</td>
@@ -859,7 +859,7 @@ To join them with skrub, we only need to do the following:
           <td>Afghanistan</td>
           <td>2404.0</td>
           <td>Afghanistan</td>
-          <td>363.674087</td>
+          <td>355.777826</td>
           <td>0.000000</td>
           <td>0.000000</td>
           <td>True</td>
@@ -951,7 +951,7 @@ us an overview of the situation:
           <td>Eswatini, Kingdom of*</td>
           <td>4396.0</td>
           <td>Eswatini</td>
-          <td>4039.518036</td>
+          <td>3986.886637</td>
           <td>0.983023</td>
           <td>0.702729</td>
           <td>True</td>
@@ -961,7 +961,7 @@ us an overview of the situation:
           <td>Yemen*</td>
           <td>4197.0</td>
           <td>Yemen, Rep.</td>
-          <td>676.928385</td>
+          <td>650.272218</td>
           <td>0.989239</td>
           <td>0.707172</td>
           <td>True</td>
@@ -971,7 +971,7 @@ us an overview of the situation:
           <td>Slovakia</td>
           <td>6391.0</td>
           <td>Slovak Republic</td>
-          <td>21258.114135</td>
+          <td>21256.808427</td>
           <td>0.989245</td>
           <td>0.707177</td>
           <td>True</td>
@@ -981,7 +981,7 @@ us an overview of the situation:
           <td>Kyrgyzstan</td>
           <td>5828.0</td>
           <td>Kyrgyz Republic</td>
-          <td>1606.668075</td>
+          <td>1655.072698</td>
           <td>0.990845</td>
           <td>0.708320</td>
           <td>True</td>
@@ -1001,7 +1001,7 @@ us an overview of the situation:
           <td>Taiwan Province of China</td>
           <td>6512.0</td>
           <td>China</td>
-          <td>12720.215640</td>
+          <td>12720.216318</td>
           <td>1.084546</td>
           <td>0.775304</td>
           <td>True</td>
@@ -1011,7 +1011,7 @@ us an overview of the situation:
           <td>Turkey</td>
           <td>4744.0</td>
           <td>Turkiye</td>
-          <td>10616.061045</td>
+          <td>10674.504173</td>
           <td>1.134734</td>
           <td>0.811182</td>
           <td>True</td>
@@ -1021,7 +1021,7 @@ us an overview of the situation:
           <td>Laos</td>
           <td>5140.0</td>
           <td>Lao PDR</td>
-          <td>2088.377182</td>
+          <td>2054.430781</td>
           <td>1.144947</td>
           <td>0.818483</td>
           <td>True</td>
@@ -1031,7 +1031,7 @@ us an overview of the situation:
           <td>Palestinian Territories*</td>
           <td>4483.0</td>
           <td>Palau</td>
-          <td>12083.888149</td>
+          <td>12921.827321</td>
           <td>1.310487</td>
           <td>0.936821</td>
           <td>True</td>
@@ -1041,7 +1041,7 @@ us an overview of the situation:
           <td>Ivory Coast</td>
           <td>5235.0</td>
           <td>East Asia &amp; Pacific</td>
-          <td>12906.694014</td>
+          <td>12930.691675</td>
           <td>1.320558</td>
           <td>0.944021</td>
           <td>True</td>
@@ -1140,7 +1140,7 @@ so as to include only precise-enough matches:
           <td>Laos</td>
           <td>5140.0</td>
           <td>Lao PDR</td>
-          <td>2088.377182</td>
+          <td>2054.430781</td>
           <td>1.144947</td>
           <td>0.818483</td>
           <td>True</td>
@@ -1150,7 +1150,7 @@ so as to include only precise-enough matches:
           <td>Turkey</td>
           <td>4744.0</td>
           <td>Turkiye</td>
-          <td>10616.061045</td>
+          <td>10674.504173</td>
           <td>1.134734</td>
           <td>0.811182</td>
           <td>True</td>
@@ -1160,7 +1160,7 @@ so as to include only precise-enough matches:
           <td>Taiwan Province of China</td>
           <td>6512.0</td>
           <td>China</td>
-          <td>12720.215640</td>
+          <td>12720.216318</td>
           <td>1.084546</td>
           <td>0.775304</td>
           <td>True</td>
@@ -1311,7 +1311,7 @@ life_exp table:
           <th>0</th>
           <td>Finland</td>
           <td>7821.0</td>
-          <td>50536.624467</td>
+          <td>50871.930451</td>
           <td>0.0</td>
           <td>0.0</td>
           <td>True</td>
@@ -1321,7 +1321,7 @@ life_exp table:
           <th>1</th>
           <td>Denmark</td>
           <td>7636.0</td>
-          <td>66983.132002</td>
+          <td>67790.053992</td>
           <td>0.0</td>
           <td>0.0</td>
           <td>True</td>
@@ -1331,7 +1331,7 @@ life_exp table:
           <th>2</th>
           <td>Iceland</td>
           <td>7557.0</td>
-          <td>72902.979954</td>
+          <td>73466.778667</td>
           <td>0.0</td>
           <td>0.0</td>
           <td>True</td>
@@ -1446,7 +1446,7 @@ And the table with a measure of legal rights strength in the country:
           <th>0</th>
           <td>Finland</td>
           <td>7821.0</td>
-          <td>50536.624467</td>
+          <td>50871.930451</td>
           <td>0.0</td>
           <td>0.0</td>
           <td>True</td>
@@ -1457,7 +1457,7 @@ And the table with a measure of legal rights strength in the country:
           <th>1</th>
           <td>Denmark</td>
           <td>7636.0</td>
-          <td>66983.132002</td>
+          <td>67790.053992</td>
           <td>0.0</td>
           <td>0.0</td>
           <td>True</td>
@@ -1468,7 +1468,7 @@ And the table with a measure of legal rights strength in the country:
           <th>2</th>
           <td>Iceland</td>
           <td>7557.0</td>
-          <td>72902.979954</td>
+          <td>73466.778667</td>
           <td>0.0</td>
           <td>0.0</td>
           <td>True</td>
@@ -1595,7 +1595,7 @@ Let's finally assess the results of our models:
 
  .. code-block:: none
 
-    Mean R² score is 0.64 +- 0.08
+    Mean R² score is 0.62 +- 0.09
 
 
 
@@ -1711,7 +1711,7 @@ introduced into a grid search:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 22.931 seconds)
+   **Total running time of the script:** (0 minutes 8.124 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining.py:
@@ -1723,7 +1723,7 @@ introduced into a grid search:
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb
+        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.1.1?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb
         :alt: Launch binder
         :width: 150 px
 

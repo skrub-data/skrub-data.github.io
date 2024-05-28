@@ -11,7 +11,7 @@
         :class: sphx-glr-download-link-note
 
         :ref:`Go to the end <sphx_glr_download_auto_examples_07_multiple_key_join.py>`
-        to download the full example code or to run this example in your browser via JupyterLite or Binder
+        to download the full example code. or to run this example in your browser via JupyterLite or Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -1219,14 +1219,14 @@ The results:
 
  .. code-block:: none
 
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:228: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as all zeros
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as all zeros
       warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:228: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as all zeros
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as all zeros
       warnings.warn(
-    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:228: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as all zeros
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [1] during transform. These unknown categories will be encoded as all zeros
       warnings.warn(
 
-    0.58445
+    0.5849
 
 
 
@@ -1244,7 +1244,7 @@ Our final cross-validated accuracy score is 0.58.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (13 minutes 12.928 seconds)
+   **Total running time of the script:** (6 minutes 59.143 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:
@@ -1256,7 +1256,7 @@ Our final cross-validated accuracy score is 0.58.
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb
+        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.1.1?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb
         :alt: Launch binder
         :width: 150 px
 
