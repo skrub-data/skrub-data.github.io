@@ -22,19 +22,19 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -47,9 +47,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=1083c8fd" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
     <script src="../_static/documentation_options.js?v=01f34227"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -72,27 +72,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -115,26 +111,17 @@
 </form></div>
   </div>
 
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+  <aside class="bd-header-announcement d-print-none d-none" aria-label="Announcement" data-pst-announcement-url="https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.html"></aside>
+</div>
 
-<script>
-document.write(`<div class="bd-header-announcement"></div>`);
-fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.html")
-  .then(res => {return res.text();})
-  .then(data => {
-    div = document.querySelector(".bd-header-announcement");
-    div.classList.add(...["bd-header-announcement", "container-fluid"]);
-    div.innerHTML = `<div class="bd-header-announcement__content">${data}</div>`;
-  })
-  .catch(error => {
-    console.log("[PST]: Failed to load announcement at: https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.html");
-  });
-</script>
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <label class="sidebar-toggle primary-toggle" for="__primary">
+  <button class="sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
-  </label>
+  </button>
   
   
   <div class=" navbar-header-items__start">
@@ -170,33 +157,33 @@ fetch("https://raw.githubusercontent.com/skrub-data/skrub/main/doc/announcement.
 <nav class="navbar-nav">
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../install.html">
-                        Installing
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../install.html">
+    Installing
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../documentation.html">
-                        User guide
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../api.html">
-                        API reference
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../documentation.html">
+    User guide
+  </a>
+</li>
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="index.html">
-                        Examples
-                      </a>
-                    </li>
-                
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../api.html">
+    API reference
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Examples
+  </a>
+</li>
+
   </ul>
 </nav></div>
       
@@ -292,9 +279,9 @@ document.write(`
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+    <button class="sidebar-toggle secondary-toggle" aria-label="On this page">
       <span class="fa-solid fa-outdent"></span>
-    </label>
+    </button>
   
 </div>
 
@@ -315,39 +302,42 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item">
+          
+          
+            <div class="navbar-item">
 <nav class="navbar-nav">
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../install.html">
-                        Installing
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../install.html">
+    Installing
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../documentation.html">
-                        User guide
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../api.html">
-                        API reference
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../documentation.html">
+    User guide
+  </a>
+</li>
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="index.html">
-                        Examples
-                      </a>
-                    </li>
-                
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../api.html">
+    API reference
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Examples
+  </a>
+</li>
+
   </ul>
 </nav></div>
+          
         
       </div>
     
@@ -440,13 +430,13 @@ document.write(`
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -455,7 +445,7 @@ document.write(`
 
 
 
-<nav aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb" class="d-print-none">
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
@@ -746,9 +736,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>42.6</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>33.747523</td>
-      <td>98.871395</td>
-      <td>0.045009</td>
+      <td>33.829303</td>
+      <td>28.163801</td>
+      <td>0.021609</td>
     </tr>
     <tr>
       <th>1</th>
@@ -758,9 +748,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>26.9</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>26.592269</td>
-      <td>24.172661</td>
-      <td>0.333128</td>
+      <td>27.046728</td>
+      <td>73.125578</td>
+      <td>0.321464</td>
     </tr>
     <tr>
       <th>2</th>
@@ -770,9 +760,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>41.6</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>31.804475</td>
-      <td>46.181811</td>
-      <td>0.045009</td>
+      <td>31.817834</td>
+      <td>24.111483</td>
+      <td>0.021609</td>
     </tr>
     <tr>
       <th>3</th>
@@ -782,9 +772,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>46.6</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>33.904076</td>
-      <td>55.423168</td>
-      <td>0.045009</td>
+      <td>33.495420</td>
+      <td>59.540533</td>
+      <td>0.021609</td>
     </tr>
     <tr>
       <th>4</th>
@@ -794,9 +784,9 @@ To avoid clashes in the column names, we use the <code class="docutils literal n
       <td>36.1</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>29.512741</td>
-      <td>26.763375</td>
-      <td>0.027722</td>
+      <td>29.515037</td>
+      <td>20.637147</td>
+      <td>0.037781</td>
     </tr>
   </tbody>
 </table>
@@ -912,7 +902,7 @@ Then, we use it to transform the flights table – it adds a <code class="docuti
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>1.768879</td>
+      <td>0.802162</td>
     </tr>
     <tr>
       <th>1</th>
@@ -924,7 +914,7 @@ Then, we use it to transform the flights table – it adds a <code class="docuti
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>20.369773</td>
+      <td>21.040879</td>
     </tr>
     <tr>
       <th>2</th>
@@ -936,7 +926,7 @@ Then, we use it to transform the flights table – it adds a <code class="docuti
       <td>NC</td>
       <td>36.097747</td>
       <td>-79.937297</td>
-      <td>17.074311</td>
+      <td>17.665832</td>
     </tr>
     <tr>
       <th>3</th>
@@ -948,7 +938,7 @@ Then, we use it to transform the flights table – it adds a <code class="docuti
       <td>IL</td>
       <td>41.979595</td>
       <td>-87.904464</td>
-      <td>16.395880</td>
+      <td>16.031528</td>
     </tr>
     <tr>
       <th>4</th>
@@ -960,7 +950,7 @@ Then, we use it to transform the flights table – it adds a <code class="docuti
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>13.984977</td>
+      <td>11.825388</td>
     </tr>
   </tbody>
 </table>
@@ -980,11 +970,11 @@ We can perform a few basic sanity checks.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -4.707998
-WA   -0.688280
-MT    0.036650
-ND    0.976120
-MN    1.629974
+AK   -1.624341
+MT   -0.011575
+WA    0.046581
+MN    1.210692
+ND    1.364371
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -993,11 +983,11 @@ Name: TMAX, dtype: float64
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-LA    21.862501
-FL    24.884782
-HI    26.659150
-VI    28.961900
-PR    29.740190
+LA    21.573427
+FL    24.737861
+HI    26.731804
+VI    29.728956
+PR    30.442256
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1026,7 +1016,7 @@ But at least the <a class="reference internal" href="../generated/skrub.Interpol
 <p>We have seen how to fit an <a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> transformer: we give it a table (the weather data) and a set of matching columns (here date, latitude, longitude) and it learns to predict the other columns’ values  (such as the max daily temperature).
 Then, it transforms tables by <em>predicting</em> values that a matching row would contain, rather than by searching for an actual match.
 It is a generalization of the <a class="reference internal" href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an <a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.161 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.135 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-09-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/09_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -1052,7 +1042,7 @@ It is a generalization of the <a class="reference internal" href="../generated/s
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -1131,8 +1121,8 @@ It is a generalization of the <a class="reference internal" href="../generated/s
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1165,7 +1155,7 @@ It is a generalization of the <a class="reference internal" href="../generated/s
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.3.
 </p></div>
       
     </div>
