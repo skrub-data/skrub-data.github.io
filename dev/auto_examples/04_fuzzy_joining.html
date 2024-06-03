@@ -618,6 +618,10 @@ function:</p>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">gdp_per_capita</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:678: UserWarning: Could not find the dataset &#39;NY.GDP.PCAP.CD&#39; locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/NY.GDP.PCAP.CD.csv.
+  info = _fetch_world_bank_data(dataset_id, data_directory)
+</pre></div>
+</div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>
 <style scoped>
@@ -667,6 +671,10 @@ function:</p>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">life_exp</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:678: UserWarning: Could not find the dataset &#39;SP.DYN.LE00.IN&#39; locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/SP.DYN.LE00.IN.csv.
+  info = _fetch_world_bank_data(dataset_id, data_directory)
+</pre></div>
+</div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>
 <style scoped>
@@ -694,17 +702,17 @@ function:</p>
     <tr>
       <th>0</th>
       <td>Aruba</td>
-      <td>74.62600</td>
+      <td>74.992000</td>
     </tr>
     <tr>
       <th>1</th>
       <td>Africa Eastern and Southern</td>
-      <td>62.45459</td>
+      <td>62.899031</td>
     </tr>
     <tr>
       <th>2</th>
       <td>Afghanistan</td>
-      <td>61.98200</td>
+      <td>62.879000</td>
     </tr>
   </tbody>
 </table>
@@ -714,6 +722,10 @@ function:</p>
 <br /><p>And a table with legal rights strength by country:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">legal_rights</span></a> <span class="o">=</span> <a href="../generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_world_bank_indicator</span></a><span class="p">(</span><span class="s2">&quot;IC.LGL.CRED.XQ&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">legal_rights</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:678: UserWarning: Could not find the dataset &#39;IC.LGL.CRED.XQ&#39; locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/IC.LGL.CRED.XQ.csv.
+  info = _fetch_world_bank_data(dataset_id, data_directory)
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -1515,7 +1527,7 @@ life_exp table:</p>
       <td>0.0</td>
       <td>0.0</td>
       <td>True</td>
-      <td>81.934146</td>
+      <td>81.187805</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1525,7 +1537,7 @@ life_exp table:</p>
       <td>0.0</td>
       <td>0.0</td>
       <td>True</td>
-      <td>81.404878</td>
+      <td>81.304878</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1535,7 +1547,7 @@ life_exp table:</p>
       <td>0.0</td>
       <td>0.0</td>
       <td>True</td>
-      <td>83.117073</td>
+      <td>82.170732</td>
     </tr>
   </tbody>
 </table>
@@ -1614,7 +1626,7 @@ Countries with higher life expectancy are also happier.</p>
       <td>0.0</td>
       <td>0.0</td>
       <td>True</td>
-      <td>81.934146</td>
+      <td>81.187805</td>
       <td>6.0</td>
     </tr>
     <tr>
@@ -1625,7 +1637,7 @@ Countries with higher life expectancy are also happier.</p>
       <td>0.0</td>
       <td>0.0</td>
       <td>True</td>
-      <td>81.404878</td>
+      <td>81.304878</td>
       <td>8.0</td>
     </tr>
     <tr>
@@ -1636,7 +1648,7 @@ Countries with higher life expectancy are also happier.</p>
       <td>0.0</td>
       <td>0.0</td>
       <td>True</td>
-      <td>83.117073</td>
+      <td>82.170732</td>
       <td>4.0</td>
     </tr>
   </tbody>
@@ -1692,7 +1704,7 @@ We evaluate our model using the <cite>R2</cite> score.</p>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean R² score is </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv_r2_t</span></a><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> +- </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv_r2_t</span></a><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Mean R² score is 0.62 +- 0.09
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Mean R² score is 0.64 +- 0.09
 </pre></div>
 </div>
 <p>We have a satisfying first result: an R² of 0.63!</p>
@@ -1761,7 +1773,7 @@ introduced into a grid search:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Best parameters: {&#39;joiner-1__max_dist&#39;: 0.1, &#39;joiner-2__max_dist&#39;: 0.9, &#39;joiner-3__max_dist&#39;: 0.1}
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 7.773 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 8.917 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-04-fuzzy-joining-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

@@ -106,6 +106,8 @@ Note that we use the light version (100k rows).
 
  .. code-block:: none
 
+    /home/circleci/project/miniconda/envs/testenv/lib/python3.10/site-packages/skrub/datasets/_fetching.py:682: UserWarning: Could not find the dataset 'ratings' locally. Downloading it from MovieLens; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data.
+      info = _fetch_movielens(dataset_id, data_directory)
 
     ((100836, 3), (100836,))
 
@@ -1249,75 +1251,75 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split1_test_score</th>
-          <td>0.033878</td>
-          <td>0.057253</td>
-          <td>0.063367</td>
-          <td>0.058649</td>
-          <td>0.083812</td>
+          <td>0.033265</td>
+          <td>0.053479</td>
+          <td>0.076590</td>
+          <td>0.078723</td>
+          <td>0.078002</td>
         </tr>
         <tr>
           <th>split2_test_score</th>
-          <td>0.089792</td>
-          <td>0.085448</td>
-          <td>0.083597</td>
-          <td>0.099184</td>
-          <td>0.099575</td>
+          <td>0.075585</td>
+          <td>0.089317</td>
+          <td>0.090446</td>
+          <td>0.095760</td>
+          <td>0.095038</td>
         </tr>
         <tr>
           <th>split3_test_score</th>
-          <td>0.031654</td>
-          <td>0.056697</td>
-          <td>0.063179</td>
-          <td>0.056046</td>
-          <td>0.069009</td>
+          <td>0.046483</td>
+          <td>0.062026</td>
+          <td>0.051127</td>
+          <td>0.071094</td>
+          <td>0.069956</td>
         </tr>
         <tr>
           <th>split4_test_score</th>
-          <td>0.140212</td>
-          <td>0.133774</td>
-          <td>0.154372</td>
-          <td>0.155109</td>
-          <td>0.142380</td>
+          <td>0.136684</td>
+          <td>0.134872</td>
+          <td>0.140665</td>
+          <td>0.150439</td>
+          <td>0.146609</td>
         </tr>
         <tr>
           <th>split5_test_score</th>
-          <td>0.112998</td>
-          <td>0.108532</td>
-          <td>0.108830</td>
-          <td>0.111401</td>
-          <td>0.116856</td>
+          <td>0.108223</td>
+          <td>0.113426</td>
+          <td>0.110395</td>
+          <td>0.110912</td>
+          <td>0.116528</td>
         </tr>
         <tr>
           <th>split6_test_score</th>
-          <td>0.078658</td>
-          <td>0.097631</td>
-          <td>0.102748</td>
-          <td>0.108609</td>
-          <td>0.108962</td>
+          <td>0.081275</td>
+          <td>0.106571</td>
+          <td>0.106740</td>
+          <td>0.111388</td>
+          <td>0.115181</td>
         </tr>
         <tr>
           <th>split7_test_score</th>
-          <td>0.066244</td>
-          <td>0.069202</td>
-          <td>0.069340</td>
-          <td>0.068001</td>
-          <td>0.078573</td>
+          <td>0.066597</td>
+          <td>0.070733</td>
+          <td>0.062465</td>
+          <td>0.079432</td>
+          <td>0.077320</td>
         </tr>
         <tr>
           <th>split8_test_score</th>
-          <td>0.104440</td>
-          <td>0.109713</td>
-          <td>0.120793</td>
-          <td>0.125812</td>
-          <td>0.123326</td>
+          <td>0.106990</td>
+          <td>0.123157</td>
+          <td>0.113800</td>
+          <td>0.122584</td>
+          <td>0.119608</td>
         </tr>
         <tr>
           <th>split9_test_score</th>
-          <td>0.119919</td>
-          <td>0.152114</td>
-          <td>0.171799</td>
-          <td>0.168676</td>
-          <td>0.178510</td>
+          <td>0.101792</td>
+          <td>0.151984</td>
+          <td>0.171952</td>
+          <td>0.155247</td>
+          <td>0.176872</td>
         </tr>
       </tbody>
     </table>
@@ -1416,7 +1418,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 16.441 seconds)
+   **Total running time of the script:** (0 minutes 17.808 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:
