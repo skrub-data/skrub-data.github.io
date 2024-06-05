@@ -538,7 +538,7 @@ importance of the features created by the |DatetimeEncoder|, using the
 :func:`~sklearn.inspection.permutation_importance` function, which
 basically shuffles a feature and sees how the model changes its prediction.
 
-.. GENERATED FROM PYTHON SOURCE LINES 257-295
+.. GENERATED FROM PYTHON SOURCE LINES 257-285
 
 .. code-block:: Python
 
@@ -570,16 +570,6 @@ basically shuffles a feature and sees how the model changes its prediction.
     plt.tight_layout()
     plt.show()
 
-    # We can see that the total seconds since Epoch and the hour of the day
-    # are the most important feature, which seems reasonable.
-    #
-    # Conclusion
-    # ----------
-    #
-    # In this example, we saw how to use the |DatetimeEncoder| to create
-    # features from a date column.
-    # Also check out the |TableVectorizer|, which automatically recognizes
-    # and transforms datetime columns by default.
 
 
 
@@ -592,10 +582,23 @@ basically shuffles a feature and sees how the model changes its prediction.
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 286-296
+
+We can see that the total seconds since Epoch and the hour of the day
+are the most important feature, which seems reasonable.
+
+Conclusion
+----------
+
+In this example, we saw how to use the |DatetimeEncoder| to create
+features from a date column.
+Also check out the |TableVectorizer|, which automatically recognizes
+and transforms datetime columns by default.
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 3.561 seconds)
+   **Total running time of the script:** (0 minutes 3.504 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:

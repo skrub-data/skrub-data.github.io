@@ -810,20 +810,18 @@ basically shuffles a feature and sees how the model changes its prediction.</p>
 <span class="p">)</span>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html#matplotlib.pyplot.tight_layout" title="matplotlib.pyplot.tight_layout" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span></a><span class="p">()</span>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
-
-<span class="c1"># We can see that the total seconds since Epoch and the hour of the day</span>
-<span class="c1"># are the most important feature, which seems reasonable.</span>
-<span class="c1">#</span>
-<span class="c1"># Conclusion</span>
-<span class="c1"># ----------</span>
-<span class="c1">#</span>
-<span class="c1"># In this example, we saw how to use the |DatetimeEncoder| to create</span>
-<span class="c1"># features from a date column.</span>
-<span class="c1"># Also check out the |TableVectorizer|, which automatically recognizes</span>
-<span class="c1"># and transforms datetime columns by default.</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_03_datetime_encoder_003.png" srcset="../_images/sphx_glr_03_datetime_encoder_003.png" alt="Feature Importances" class = "sphx-glr-single-img"/><p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 3.561 seconds)</p>
+<img src="../_images/sphx_glr_03_datetime_encoder_003.png" srcset="../_images/sphx_glr_03_datetime_encoder_003.png" alt="Feature Importances" class = "sphx-glr-single-img"/><p>We can see that the total seconds since Epoch and the hour of the day
+are the most important feature, which seems reasonable.</p>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<p>In this example, we saw how to use the <a class="reference internal" href="../generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> to create
+features from a date column.
+Also check out the <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, which automatically recognizes
+and transforms datetime columns by default.</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 3.504 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-03-datetime-encoder-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/03_datetime_encoder.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
@@ -899,6 +897,7 @@ basically shuffles a feature and sees how the model changes its prediction.</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features-importance">Features importance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
 </ul>
   </nav></div>
 
