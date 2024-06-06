@@ -241,7 +241,7 @@ Let's look at the job titles, the column containing dirty data we want to encode
 .. code-block:: Python
 
 
-    X_dirty = X[["employee_position_title"]]
+    X_dirty = X["employee_position_title"]
 
 
 
@@ -259,104 +259,35 @@ Let's have a look at a sample of the job titles:
 .. code-block:: Python
 
 
-    X_dirty.sort_values(by="employee_position_title").tail(15)
+    X_dirty.sort_values().tail(15)
 
 
 
 
 
+.. rst-class:: sphx-glr-script-out
 
-.. raw:: html
+ .. code-block:: none
 
-    <div class="output_subarea output_html rendered_html output_result">
-    <div>
-    <style scoped>
-        .dataframe tbody tr th:only-of-type {
-            vertical-align: middle;
-        }
 
-        .dataframe tbody tr th {
-            vertical-align: top;
-        }
+    7753     Work Force Leader II
+    1231     Work Force Leader II
+    3206     Work Force Leader II
+    2602     Work Force Leader II
+    6872    Work Force Leader III
+    3601    Work Force Leader III
+    6922     Work Force Leader IV
+    502      Work Force Leader IV
+    3469     Work Force Leader IV
+    353      Work Force Leader IV
+    5838     Work Force Leader IV
+    4961     Work Force Leader IV
+    2766     Work Force Leader IV
+    4556     Work Force Leader IV
+    7478     Work Force Leader IV
+    Name: employee_position_title, dtype: object
 
-        .dataframe thead th {
-            text-align: right;
-        }
-    </style>
-    <table border="1" class="dataframe">
-      <thead>
-        <tr style="text-align: right;">
-          <th></th>
-          <th>employee_position_title</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>7753</th>
-          <td>Work Force Leader II</td>
-        </tr>
-        <tr>
-          <th>1231</th>
-          <td>Work Force Leader II</td>
-        </tr>
-        <tr>
-          <th>3206</th>
-          <td>Work Force Leader II</td>
-        </tr>
-        <tr>
-          <th>2602</th>
-          <td>Work Force Leader II</td>
-        </tr>
-        <tr>
-          <th>6872</th>
-          <td>Work Force Leader III</td>
-        </tr>
-        <tr>
-          <th>3601</th>
-          <td>Work Force Leader III</td>
-        </tr>
-        <tr>
-          <th>6922</th>
-          <td>Work Force Leader IV</td>
-        </tr>
-        <tr>
-          <th>502</th>
-          <td>Work Force Leader IV</td>
-        </tr>
-        <tr>
-          <th>3469</th>
-          <td>Work Force Leader IV</td>
-        </tr>
-        <tr>
-          <th>353</th>
-          <td>Work Force Leader IV</td>
-        </tr>
-        <tr>
-          <th>5838</th>
-          <td>Work Force Leader IV</td>
-        </tr>
-        <tr>
-          <th>4961</th>
-          <td>Work Force Leader IV</td>
-        </tr>
-        <tr>
-          <th>2766</th>
-          <td>Work Force Leader IV</td>
-        </tr>
-        <tr>
-          <th>4556</th>
-          <td>Work Force Leader IV</td>
-        </tr>
-        <tr>
-          <th>7478</th>
-          <td>Work Force Leader IV</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-    </div>
-    <br />
-    <br />
+
 
 .. GENERATED FROM PYTHON SOURCE LINES 56-59
 
@@ -504,7 +435,7 @@ as a set of latent topics.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 1.622 seconds)
+   **Total running time of the script:** (0 minutes 1.636 seconds)
 
 
 .. _sphx_glr_download_auto_examples_02_feature_interpretation_with_gapencoder.py:

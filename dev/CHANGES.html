@@ -494,6 +494,10 @@ independently to each column, i.e. it does not perform multivariate
 transformations (ii) in <code class="docutils literal notranslate"><span class="pre">specific_transformers</span></code> the same column may not be
 used twice (go through 2 different transformers).
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/902">#902</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p>The <a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> is now a single-column transformer: its <code class="docutils literal notranslate"><span class="pre">fit</span></code>,
+<code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> and <code class="docutils literal notranslate"><span class="pre">transform</span></code> methods accept a single column (a pandas
+or polars Series). Dataframes and numpy arrays are not accepted.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/920">#920</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>Added the <a class="reference internal" href="generated/skrub.MultiAggJoiner.html#skrub.MultiAggJoiner" title="skrub.MultiAggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiAggJoiner</span></code></a> that allows to augment a main table with
 multiple auxiliary tables. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/876">#876</a> by <a class="reference external" href="https://github.com/TheooJ">Théo Jolivet</a>.</p></li>
 <li><p><a class="reference internal" href="generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a> now only accepts a single table as an input, and some of its

@@ -528,8 +528,18 @@ document.write(`
 <p class="side-comment">Usage examples at the bottom of this page.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.GapEncoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">GapEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1024</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma_shape_prior</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma_scale_prior</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.95</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rescale_rho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hashing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hashing_n_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4096</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'k-means++'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rescale_W</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_iter_e_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_no_improvement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_missing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zero_impute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90c3b98/skrub/_gap_encoder.py#L591"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">GapEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1024</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma_shape_prior</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gamma_scale_prior</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.95</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rescale_rho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hashing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hashing_n_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4096</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'k-means++'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rescale_W</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_iter_e_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_no_improvement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handle_missing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zero_impute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1dae4b0/skrub/_gap_encoder.py#L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder" title="Link to this definition">#</a></dt>
 <dd><p>Constructs latent topics with continuous encoding.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">GapEncoder</span></code> is a type of single-column transformer. Unlike
+most scikit-learn estimators, its <code class="docutils literal notranslate"><span class="pre">fit</span></code>, <code class="docutils literal notranslate"><span class="pre">transform</span></code> and
+<code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> methods expect a single column (a pandas or
+polars Series) rather than a full dataframe. To apply this
+transformer to one or more columns in a dataframe, use it as a
+parameter in a <code class="docutils literal notranslate"><span class="pre">skrub.TableVectorizer</span></code> or
+<code class="docutils literal notranslate"><span class="pre">sklearn.compose.ColumnTransformer</span></code>.</p>
+</div>
 <p>This encoder can be understood as a continuous encoding on a set of latent
 categories estimated from the data. The latent categories are built by
 capturing combinations of substrings that frequently co-occur.</p>
@@ -554,6 +564,8 @@ We thus optimize <cite>H</cite> and <cite>W</cite> with the multiplicative updat
 <p>“Gap” stands for “Gamma-Poisson”, the families of distributions that are
 used to model the importance of topics in a document (Gamma), and the term
 frequencies in a document (Poisson).</p>
+<p>Input columns that do not have a string or Categorical dtype are rejected
+by raising a <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> exception.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
@@ -614,17 +626,10 @@ that do not yield an improvement on the smoothed cost function.
 To disable early stopping and run the process fully,
 set <code class="docutils literal notranslate"><span class="pre">max_no_improvement=None</span></code>.</p>
 </dd>
-<dt><strong>handle_missing</strong><span class="classifier">{‘error’, ‘empty_impute’}, default=’empty_impute’</span></dt><dd><p>Whether to raise an error or impute with empty string (‘’) if missing
+<dt><strong>handle_missing</strong><span class="classifier">{‘error’, ‘zero_impute’}, default=’zero_impute’</span></dt><dd><p>Whether to raise an error or impute with empty string (‘’) if missing
 values (NaN) are present during GapEncoder.fit (default is to impute).
-In GapEncoder.inverse_transform, the missing categories will
-be denoted as <cite>None</cite>.
 “Missing values” are any value for which <code class="docutils literal notranslate"><span class="pre">pandas.isna</span></code> returns
 <code class="docutils literal notranslate"><span class="pre">True</span></code>, such as <code class="docutils literal notranslate"><span class="pre">numpy.nan</span></code> or <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
-</dd>
-<dt><strong>n_jobs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, optional</span></dt><dd><p>The number of jobs to run in parallel.
-The process is parallelized column-wise,
-meaning each column is fitted in parallel. Thus, having
-<cite>n_jobs</cite> &gt; X.shape[1] will not speed up the computation.</p>
 </dd>
 <dt><strong>verbose</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=0</span></dt><dd><p>Verbosity level. The higher, the more granular the logging.</p>
 </dd>
@@ -646,20 +651,21 @@ meaning each column is fitted in parallel. Thus, having
 <p>For a detailed description of the method, see
 <a class="reference external" href="https://hal.inria.fr/hal-02171256v4">Encoding high-cardinality string categorical variables</a> by Cerda, Varoquaux (2019).</p>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <span class="n">GapEncoder</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <span class="n">GapEncoder</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">enc</span> <span class="o">=</span> <span class="n">GapEncoder</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Let’s encode the following non-normalized data:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;paris, FR&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Paris&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;London, UK&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Paris, France&#39;</span><span class="p">],</span>
-<span class="gp">... </span>     <span class="p">[</span><span class="s1">&#39;london&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;London, England&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;London&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Pqris&#39;</span><span class="p">]]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;Paris, FR&#39;</span><span class="p">,</span> <span class="s1">&#39;Paris&#39;</span><span class="p">,</span> <span class="s1">&#39;London, UK&#39;</span><span class="p">,</span> <span class="s1">&#39;Paris, France&#39;</span><span class="p">,</span>
+<span class="gp">... </span>               <span class="s1">&#39;london&#39;</span><span class="p">,</span> <span class="s1">&#39;London, England&#39;</span><span class="p">,</span> <span class="s1">&#39;London&#39;</span><span class="p">,</span> <span class="s1">&#39;Pqris&#39;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">enc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="go">GapEncoder(n_components=2, random_state=0)</span>
 </pre></div>
 </div>
 <p>The GapEncoder has found the following two topics:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">enc</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
-<span class="go">array([&#39;england, london, uk&#39;, &#39;france, paris, pqris&#39;], dtype=object)</span>
+<span class="go">[&#39;england, london, uk&#39;, &#39;france, paris, pqris&#39;]</span>
 </pre></div>
 </div>
 <p>It got it right, reccuring topics are “London” and “England” on the
@@ -667,14 +673,15 @@ one side and “Paris” and “France” on the other.</p>
 <p>As this is a continuous encoding, we can look at the level of
 activation of each topic for each category:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">enc</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-<span class="go">array([[ 0.051..., 10.548...],</span>
-<span class="go">       [ 0.050...,  4.549...],</span>
-<span class="go">       [12.046...,  0.053...],</span>
-<span class="go">       [ 0.052..., 16.547...],</span>
-<span class="go">       [ 6.049...,  0.050...],</span>
-<span class="go">       [19.545...,  0.054...],</span>
-<span class="go">       [ 6.049...,  0.050...],</span>
-<span class="go">       [ 0.060...,  4.539...]])</span>
+<span class="go">   england, london, uk  france, paris, pqris</span>
+<span class="go">0             0.051816             10.548184</span>
+<span class="go">1             0.050134              4.549866</span>
+<span class="go">2            12.046517              0.053483</span>
+<span class="go">3             0.052270             16.547730</span>
+<span class="go">4             6.049970              0.050030</span>
+<span class="go">5            19.545227              0.054773</span>
+<span class="go">6             6.049970              0.050030</span>
+<span class="go">7             0.060120              4.539880</span>
 </pre></div>
 </div>
 <p>The higher the value, the bigger the correspondence with the topic.</p>
@@ -694,12 +701,12 @@ activation of each topic for each category:</p>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#skrub.GapEncoder.fit" title="skrub.GapEncoder.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X[, y])</p></td>
-<td><p>Fit the instance on X.</p></td>
+<td><p>Fit the GapEncoder on <cite>X</cite>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.GapEncoder.fit_transform" title="skrub.GapEncoder.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(X[, y])</p></td>
 <td><p>Fit to data, then transform it.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.GapEncoder.get_feature_names_out" title="skrub.GapEncoder.get_feature_names_out"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_feature_names_out</span></code></a>([col_names, n_labels, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.GapEncoder.get_feature_names_out" title="skrub.GapEncoder.get_feature_names_out"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_feature_names_out</span></code></a>([n_labels, prefix])</p></td>
 <td><p>Return the labels that best summarize the learned components/topics.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.GapEncoder.get_metadata_routing" title="skrub.GapEncoder.get_metadata_routing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_metadata_routing</span></code></a>()</p></td>
@@ -709,18 +716,21 @@ activation of each topic for each category:</p>
 <td><p>Get parameters for this estimator.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.GapEncoder.partial_fit" title="skrub.GapEncoder.partial_fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">partial_fit</span></code></a>(X[, y])</p></td>
-<td><p>Partial fit this instance on X.</p></td>
+<td><p>Partial fit this instance on <cite>X</cite>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.GapEncoder.score" title="skrub.GapEncoder.score"><code class="xref py py-obj docutils literal notranslate"><span class="pre">score</span></code></a>(X[, y])</p></td>
-<td><p>Score this instance on <cite>X</cite>.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.GapEncoder.score" title="skrub.GapEncoder.score"><code class="xref py py-obj docutils literal notranslate"><span class="pre">score</span></code></a>(X)</p></td>
+<td><p>Score this instance of <cite>X</cite>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.GapEncoder.set_output" title="skrub.GapEncoder.set_output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_output</span></code></a>(*[, transform])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.GapEncoder.set_fit_request" title="skrub.GapEncoder.set_fit_request"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_fit_request</span></code></a>(*[, column])</p></td>
+<td><p>Request metadata passed to the <code class="docutils literal notranslate"><span class="pre">fit</span></code> method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.GapEncoder.set_output" title="skrub.GapEncoder.set_output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_output</span></code></a>(*[, transform])</p></td>
 <td><p>Set output container.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.GapEncoder.set_params" title="skrub.GapEncoder.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.GapEncoder.set_params" title="skrub.GapEncoder.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
 <td><p>Set the parameters of this estimator.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.GapEncoder.transform" title="skrub.GapEncoder.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.GapEncoder.transform" title="skrub.GapEncoder.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X)</p></td>
 <td><p>Return the encoded vectors (activations) <cite>H</cite> of input strings in <cite>X</cite>.</p></td>
 </tr>
 </tbody>
@@ -728,12 +738,12 @@ activation of each topic for each category:</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.GapEncoder.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90c3b98/skrub/_gap_encoder.py#L847"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.fit" title="Link to this definition">#</a></dt>
-<dd><p>Fit the instance on X.</p>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1dae4b0/skrub/_gap_encoder.py#L430"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.fit" title="Link to this definition">#</a></dt>
+<dd><p>Fit the GapEncoder on <cite>X</cite>.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.26)"><span>array_like</span></a>, shape (n_samples, n_features)</span></dt><dd><p>The string data to fit the model on.</p>
+<dt><strong>X</strong><span class="classifier">Column, shape (n_samples, )</span></dt><dd><p>The string data to fit the model on.</p>
 </dd>
 <dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Unused, only here for compatibility.</p>
 </dd>
@@ -741,7 +751,7 @@ activation of each topic for each category:</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a></dt><dd><p>The fitted GapEncoder instance (self).</p>
+<dt>GapEncoderColumn</dt><dd><p>The fitted GapEncoderColumn instance (self).</p>
 </dd>
 </dl>
 </dd>
@@ -750,7 +760,7 @@ activation of each topic for each category:</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.GapEncoder.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90c3b98/skrub/../sklearn/base.py#L1043"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1dae4b0/skrub/../sklearn/base.py#L1043"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to <cite>X</cite> and <cite>y</cite> with optional parameters <cite>fit_params</cite>
 and returns a transformed version of <cite>X</cite>.</p>
@@ -776,34 +786,21 @@ and returns a transformed version of <cite>X</cite>.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.GapEncoder.get_feature_names_out">
-<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col_names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'if_named_columns'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90c3b98/skrub/_gap_encoder.py#L951"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.get_feature_names_out" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1dae4b0/skrub/_gap_encoder.py#L518"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.get_feature_names_out" title="Link to this definition">#</a></dt>
 <dd><p>Return the labels that best summarize the learned components/topics.</p>
 <p>For each topic, labels with the highest activations are selected.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>col_names</strong><span class="classifier">‘auto’ or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, optional</span></dt><dd><p>The column names to be added as prefixes before the labels.
-If <cite>col_names=None</cite>, no prefixes are used.
-If <cite>col_names=’auto’</cite>, column names are automatically defined:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>if the input data was a <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.2.2)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataFrame</span></code></a>,
-its column names are used,</p></li>
-<li><p>otherwise, ‘col1’, …, ‘colN’ are used as prefixes.</p></li>
-</ul>
-</div></blockquote>
-<p>Prefixes can be manually set by passing a list for <cite>col_names</cite>.</p>
-</dd>
 <dt><strong>n_labels</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=3</span></dt><dd><p>The number of labels used to describe each topic.</p>
 </dd>
-<dt><strong>input_features</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Unused, only here for compatibility.</p>
+<dt><strong>prefix</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=’’</span></dt><dd><p>Used as a prefix for the categories.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></dt><dd><p>The labels that best describe each topic.
-Each element contains the labels joined by a comma.</p>
+<dt><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></dt><dd><p>The labels that best describe each topic.</p>
 </dd>
 </dl>
 </dd>
@@ -812,7 +809,7 @@ Each element contains the labels joined by a comma.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.GapEncoder.get_metadata_routing">
-<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90c3b98/skrub/../sklearn/utils/_metadata_requests.py#L1495"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.get_metadata_routing" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1dae4b0/skrub/../sklearn/utils/_metadata_requests.py#L1495"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.get_metadata_routing" title="Link to this definition">#</a></dt>
 <dd><p>Get metadata routing of this object.</p>
 <p>Please check <a class="reference external" href="https://scikit-learn.org/stable/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.5)"><span class="xref std std-ref">User Guide</span></a> on how the routing
 mechanism works.</p>
@@ -829,7 +826,7 @@ routing information.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.GapEncoder.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90c3b98/skrub/../sklearn/base.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1dae4b0/skrub/../sklearn/base.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -850,14 +847,14 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.GapEncoder.partial_fit">
-<span class="sig-name descname"><span class="pre">partial_fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90c3b98/skrub/_gap_encoder.py#L916"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.partial_fit" title="Link to this definition">#</a></dt>
-<dd><p>Partial fit this instance on X.</p>
+<span class="sig-name descname"><span class="pre">partial_fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1dae4b0/skrub/_gap_encoder.py#L613"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.partial_fit" title="Link to this definition">#</a></dt>
+<dd><p>Partial fit this instance on <cite>X</cite>.</p>
 <p>To be used in an online learning procedure where batches of data are
 coming one by one.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.26)"><span>array_like</span></a>, shape (n_samples, n_features)</span></dt><dd><p>The string data to fit the model on.</p>
+<dt><strong>X</strong><span class="classifier">Column, shape (n_samples, )</span></dt><dd><p>The string data to fit the model on.</p>
 </dd>
 <dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Unused, only here for compatibility.</p>
 </dd>
@@ -865,7 +862,7 @@ coming one by one.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a></dt><dd><p>The fitted GapEncoder instance (self).</p>
+<dt>GapEncoderColumn</dt><dd><p>The fitted GapEncoderColumn instance (self).</p>
 </dd>
 </dl>
 </dd>
@@ -874,17 +871,14 @@ coming one by one.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.GapEncoder.score">
-<span class="sig-name descname"><span class="pre">score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90c3b98/skrub/_gap_encoder.py#L1008"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.score" title="Link to this definition">#</a></dt>
-<dd><p>Score this instance on <cite>X</cite>.</p>
-<p>Returns the sum over the columns of <cite>X</cite> of the Kullback-Leibler
-divergence between the n-grams counts matrix <cite>V</cite> of <cite>X</cite>, and its
-non-negative factorization <cite>HW</cite>.</p>
-<dl class="field-list">
+<span class="sig-name descname"><span class="pre">score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1dae4b0/skrub/_gap_encoder.py#L568"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.score" title="Link to this definition">#</a></dt>
+<dd><p>Score this instance of <cite>X</cite>.</p>
+<p>Returns the Kullback-Leibler divergence between the n-grams counts
+matrix <cite>V</cite> of <cite>X</cite>, and its non-negative factorization <cite>HW</cite>.</p>
+<dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
-<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.26)"><span>array_like</span></a>, shape (n_samples, n_features)</span></dt><dd><p>The data to encode.</p>
-</dd>
-<dt><strong>y</strong><span class="classifier">Ignored</span></dt><dd><p>Not used, present for API consistency by convention.</p>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X</strong><span class="classifier">Column, shape (n_samples, )</span></dt><dd><p>The data to encode.</p>
 </dd>
 </dl>
 </dd>
@@ -898,8 +892,51 @@ non-negative factorization <cite>HW</cite>.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="skrub.GapEncoder.set_fit_request">
+<span class="sig-name descname"><span class="pre">set_fit_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1dae4b0/skrub/../sklearn/utils/_metadata_requests.py#L1249"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.set_fit_request" title="Link to this definition">#</a></dt>
+<dd><p>Request metadata passed to the <code class="docutils literal notranslate"><span class="pre">fit</span></code> method.</p>
+<p>Note that this method is only relevant if
+<code class="docutils literal notranslate"><span class="pre">enable_metadata_routing=True</span></code> (see <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.set_config.html#sklearn.set_config" title="(in scikit-learn v1.5)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.set_config()</span></code></a>).
+Please see <a class="reference external" href="https://scikit-learn.org/stable/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.5)"><span class="xref std std-ref">User Guide</span></a> on how the routing
+mechanism works.</p>
+<p>The options for each parameter are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>: metadata is requested, and passed to <code class="docutils literal notranslate"><span class="pre">fit</span></code> if provided. The request is ignored if metadata is not provided.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code>: metadata is not requested and the meta-estimator will not pass it to <code class="docutils literal notranslate"><span class="pre">fit</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code>: metadata is not requested, and the meta-estimator will raise an error if the user provides it.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">str</span></code>: metadata should be passed to the meta-estimator with this given alias instead of the original name.</p></li>
+</ul>
+<p>The default (<code class="docutils literal notranslate"><span class="pre">sklearn.utils.metadata_routing.UNCHANGED</span></code>) retains the
+existing request. This allows you to change the request for some
+parameters and not others.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 1.3.</span></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is only relevant if this estimator is used as a
+sub-estimator of a meta-estimator, e.g. used inside a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>. Otherwise it has no effect.</p>
+</div>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>column</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">True</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">False</span></code></a>, or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>,                     default=sklearn.utils.metadata_routing.UNCHANGED</span></dt><dd><p>Metadata routing for <code class="docutils literal notranslate"><span class="pre">column</span></code> parameter in <code class="docutils literal notranslate"><span class="pre">fit</span></code>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">object</span></dt><dd><p>The updated object.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="skrub.GapEncoder.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90c3b98/skrub/../sklearn/utils/_set_output.py#L386"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1dae4b0/skrub/../sklearn/utils/_set_output.py#L386"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.5)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
@@ -930,7 +967,7 @@ for an example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.GapEncoder.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90c3b98/skrub/../sklearn/base.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1dae4b0/skrub/../sklearn/base.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -954,24 +991,18 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.GapEncoder.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90c3b98/skrub/_gap_encoder.py#L884"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1dae4b0/skrub/_gap_encoder.py#L711"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.GapEncoder.transform" title="Link to this definition">#</a></dt>
 <dd><p>Return the encoded vectors (activations) <cite>H</cite> of input strings in <cite>X</cite>.</p>
-<p>Given the learnt topics <cite>W</cite>, the activations <cite>H</cite> are tuned to fit
-<code class="docutils literal notranslate"><span class="pre">V</span> <span class="pre">=</span> <span class="pre">HW</span></code>. When <cite>X</cite> has several columns, they are encoded separately
-and then concatenated.</p>
-<p>Remark: calling transform multiple times in a row on the same
-input <cite>X</cite> can give slightly different encodings. This is expected
-due to a caching mechanism to speed things up.</p>
-<dl class="field-list">
+<dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
-<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v1.26)"><span>array_like</span></a>, shape (n_samples, n_features)</span></dt><dd><p>The string data to encode.</p>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X</strong><span class="classifier">Column, shape (n_samples)</span></dt><dd><p>The string data to encode.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.26)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a>, shape (n_samples, n_topics * n_features)</dt><dd><p>Transformed input.</p>
+<dt>DataFrame, shape (n_samples, n_topics)</dt><dd><p>Transformed input.</p>
 </dd>
 </dl>
 </dd>
@@ -1048,6 +1079,7 @@ due to a caching mechanism to speed things up.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.GapEncoder.get_params"><code class="docutils literal notranslate"><span class="pre">GapEncoder.get_params()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.GapEncoder.partial_fit"><code class="docutils literal notranslate"><span class="pre">GapEncoder.partial_fit()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.GapEncoder.score"><code class="docutils literal notranslate"><span class="pre">GapEncoder.score()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.GapEncoder.set_fit_request"><code class="docutils literal notranslate"><span class="pre">GapEncoder.set_fit_request()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.GapEncoder.set_output"><code class="docutils literal notranslate"><span class="pre">GapEncoder.set_output()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.GapEncoder.set_params"><code class="docutils literal notranslate"><span class="pre">GapEncoder.set_params()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.GapEncoder.transform"><code class="docutils literal notranslate"><span class="pre">GapEncoder.transform()</span></code></a></li>
