@@ -507,7 +507,6 @@ Note that we use the light version (100k rows).</p>
 
 <span class="kn">from</span> <span class="nn">skrub.datasets</span> <span class="kn">import</span> <a href="../generated/skrub.datasets.fetch_movielens.html#skrub.datasets.fetch_movielens" title="skrub.datasets.fetch_movielens" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_movielens</span></a>
 
-
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ratings</span></a> <span class="o">=</span> <a href="../generated/skrub.datasets.fetch_movielens.html#skrub.datasets.fetch_movielens" title="skrub.datasets.fetch_movielens" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_movielens</span></a><span class="p">(</span><span class="n">dataset_id</span><span class="o">=</span><span class="s2">&quot;ratings&quot;</span><span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ratings</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ratings</span><span class="o">.</span><span class="n">X</span><span class="o">.</span><span class="n">sort_values</span></a><span class="p">(</span><span class="s2">&quot;timestamp&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ratings</span></a><span class="p">[</span><span class="s2">&quot;timestamp&quot;</span><span class="p">]</span> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html#pandas.to_datetime" title="pandas.to_datetime" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-function"><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ratings</span></a><span class="p">[</span><span class="s2">&quot;timestamp&quot;</span><span class="p">],</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>
@@ -589,8 +588,7 @@ Note that we use the light version (100k rows).</p>
 <p>Our first step is to extract features from the timestamp, using the
 <a class="reference internal" href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>. Natively, it uses the <a class="reference internal" href="../generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> on datetime
 columns, and doesn’t interact with numerical columns.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a><span class="p">,</span> <a href="../generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">DatetimeEncoder</span></a>
-
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">DatetimeEncoder</span></a><span class="p">,</span> <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a>
 
 <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table_vectorizer</span></a> <span class="o">=</span> <a href="../generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a><span class="p">(</span>
     <span class="n">datetime_transformer</span><span class="o">=</span><a href="../generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">DatetimeEncoder</span></a><span class="p">(</span><span class="n">add_weekday</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -690,8 +688,8 @@ columns, and doesn’t interact with numerical columns.</p>
 </div>
 <br />
 <br /><p>We can now make a couple of plots and gain some insight on our dataset.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 
 <a href="http://seaborn.pydata.org/generated/seaborn.set_style.html#seaborn.set_style" title="seaborn.set_style" class="sphx-glr-backref-module-seaborn sphx-glr-backref-type-py-function"><span class="n">sns</span><span class="o">.</span><span class="n">set_style</span></a><span class="p">(</span><span class="s2">&quot;darkgrid&quot;</span><span class="p">)</span>
 
@@ -718,12 +716,12 @@ columns, and doesn’t interact with numerical columns.</p>
 <span class="p">)</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_08_join_aggregation_001.png" srcset="../_images/sphx_glr_08_join_aggregation_001.png" alt="Daily volume of ratings" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/examples/08_join_aggregation.py:109: FutureWarning:
+<img src="../_images/sphx_glr_08_join_aggregation_001.png" srcset="../_images/sphx_glr_08_join_aggregation_001.png" alt="Daily volume of ratings" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/examples/08_join_aggregation.py:107: FutureWarning:
 
 Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
 
   sns.barplot(x=x, y=y, palette=cmap(norm(y)), ax=ax)
-/home/circleci/project/examples/08_join_aggregation.py:109: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
+/home/circleci/project/examples/08_join_aggregation.py:107: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
   sns.barplot(x=x, y=y, palette=cmap(norm(y)), ax=ax)
 </pre></div>
 </div>
@@ -737,12 +735,12 @@ Passing `palette` without assigning `hue` is deprecated and will be removed in v
 <span class="p">)</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_08_join_aggregation_002.png" srcset="../_images/sphx_glr_08_join_aggregation_002.png" alt="Distribution of ratings given to movies" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/examples/08_join_aggregation.py:109: FutureWarning:
+<img src="../_images/sphx_glr_08_join_aggregation_002.png" srcset="../_images/sphx_glr_08_join_aggregation_002.png" alt="Distribution of ratings given to movies" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/examples/08_join_aggregation.py:107: FutureWarning:
 
 Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
 
   sns.barplot(x=x, y=y, palette=cmap(norm(y)), ax=ax)
-/home/circleci/project/examples/08_join_aggregation.py:109: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
+/home/circleci/project/examples/08_join_aggregation.py:107: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
   sns.barplot(x=x, y=y, palette=cmap(norm(y)), ax=ax)
 </pre></div>
 </div>
@@ -765,7 +763,6 @@ target with 3 bins, before joining it back on the initial table.</p>
 <p>This feature answer questions like
 <em>“How many times has this user given a bad, medium or good rate to movies?”</em>.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">AggTarget</span></a>
-
 
 <a href="../generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">agg_target_user</span></a> <span class="o">=</span> <a href="../generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">AggTarget</span></a><span class="p">(</span>
     <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;userId&quot;</span><span class="p">,</span>
@@ -1429,7 +1426,7 @@ operation maximizing our validation score.</p>
 <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">operations</span></a> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;hist(3)&quot;</span><span class="p">,</span> <span class="s2">&quot;hist(5)&quot;</span><span class="p">,</span> <span class="s2">&quot;hist(7)&quot;</span><span class="p">,</span> <span class="s2">&quot;value_counts&quot;</span><span class="p">]</span>
 <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">param_grid</span></a> <span class="o">=</span> <span class="p">[</span>
     <span class="p">{</span>
-        <span class="sa">f</span><span class="s2">&quot;aggtarget-2__operation&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">op</span><span class="p">],</span>
+        <span class="s2">&quot;aggtarget-2__operation&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">op</span><span class="p">],</span>
     <span class="p">}</span>
     <span class="k">for</span> <span class="n">op</span> <span class="ow">in</span> <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">operations</span></a>
 <span class="p">]</span>
@@ -1481,75 +1478,75 @@ operation maximizing our validation score.</p>
     </tr>
     <tr>
       <th>split1_test_score</th>
-      <td>0.044830</td>
-      <td>0.033484</td>
-      <td>0.081950</td>
-      <td>0.079404</td>
-      <td>0.071181</td>
+      <td>0.054291</td>
+      <td>0.046256</td>
+      <td>0.077496</td>
+      <td>0.053958</td>
+      <td>0.072743</td>
     </tr>
     <tr>
       <th>split2_test_score</th>
-      <td>0.056963</td>
-      <td>0.059727</td>
-      <td>0.104146</td>
-      <td>0.093122</td>
-      <td>0.094280</td>
+      <td>0.073090</td>
+      <td>0.080162</td>
+      <td>0.094306</td>
+      <td>0.094422</td>
+      <td>0.094126</td>
     </tr>
     <tr>
       <th>split3_test_score</th>
-      <td>0.039881</td>
-      <td>0.069760</td>
-      <td>0.064116</td>
-      <td>0.065596</td>
-      <td>0.078634</td>
+      <td>0.040857</td>
+      <td>0.059777</td>
+      <td>0.063089</td>
+      <td>0.055284</td>
+      <td>0.079006</td>
     </tr>
     <tr>
       <th>split4_test_score</th>
-      <td>0.140851</td>
-      <td>0.122408</td>
-      <td>0.138247</td>
-      <td>0.146908</td>
-      <td>0.145387</td>
+      <td>0.131741</td>
+      <td>0.132793</td>
+      <td>0.138339</td>
+      <td>0.146040</td>
+      <td>0.151080</td>
     </tr>
     <tr>
       <th>split5_test_score</th>
-      <td>0.110908</td>
-      <td>0.110162</td>
-      <td>0.111893</td>
-      <td>0.110805</td>
-      <td>0.116296</td>
+      <td>0.110553</td>
+      <td>0.111874</td>
+      <td>0.105114</td>
+      <td>0.110696</td>
+      <td>0.114973</td>
     </tr>
     <tr>
       <th>split6_test_score</th>
-      <td>0.081552</td>
-      <td>0.100285</td>
-      <td>0.107814</td>
-      <td>0.106693</td>
-      <td>0.109797</td>
+      <td>0.084504</td>
+      <td>0.100755</td>
+      <td>0.103847</td>
+      <td>0.111550</td>
+      <td>0.109646</td>
     </tr>
     <tr>
       <th>split7_test_score</th>
-      <td>0.080625</td>
-      <td>0.065243</td>
-      <td>0.044890</td>
-      <td>0.066880</td>
-      <td>0.080612</td>
+      <td>0.053904</td>
+      <td>0.068226</td>
+      <td>0.057764</td>
+      <td>0.074080</td>
+      <td>0.077263</td>
     </tr>
     <tr>
       <th>split8_test_score</th>
-      <td>0.111113</td>
-      <td>0.115724</td>
-      <td>0.120171</td>
-      <td>0.124425</td>
-      <td>0.133765</td>
+      <td>0.106506</td>
+      <td>0.111695</td>
+      <td>0.122601</td>
+      <td>0.120597</td>
+      <td>0.132749</td>
     </tr>
     <tr>
       <th>split9_test_score</th>
-      <td>0.123649</td>
-      <td>0.154439</td>
-      <td>0.166833</td>
-      <td>0.157643</td>
-      <td>0.179801</td>
+      <td>0.104927</td>
+      <td>0.148085</td>
+      <td>0.169691</td>
+      <td>0.158120</td>
+      <td>0.181488</td>
     </tr>
   </tbody>
 </table>
@@ -1602,7 +1599,7 @@ and uses this average to predict the ratings in the test set.</p>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html#matplotlib.pyplot.tight_layout" title="matplotlib.pyplot.tight_layout" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<img src="../_images/sphx_glr_08_join_aggregation_003.png" srcset="../_images/sphx_glr_08_join_aggregation_003.png" alt="Hyper parameters grid-search results" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/examples/08_join_aggregation.py:293: UserWarning: The figure layout has changed to tight
+<img src="../_images/sphx_glr_08_join_aggregation_003.png" srcset="../_images/sphx_glr_08_join_aggregation_003.png" alt="Hyper parameters grid-search results" class = "sphx-glr-single-img"/><div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/examples/08_join_aggregation.py:290: UserWarning: The figure layout has changed to tight
   plt.tight_layout()
 </pre></div>
 </div>
@@ -1616,7 +1613,7 @@ performance: computing the mean yields a single statistic, whereas histograms
 yield a density over a reduced set of bins, and <code class="docutils literal notranslate"><span class="pre">&quot;value_counts&quot;</span></code> yields an
 exhaustive histogram over all the possible values of ratings
 (here 10 different values, from 0.5 to 5).</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 17.366 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 16.882 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-08-join-aggregation-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/08_join_aggregation.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

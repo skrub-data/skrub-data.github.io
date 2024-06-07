@@ -66,13 +66,14 @@ there are multiple spelling mistakes in the dataset.
 
 Let's generate this example dataset:
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-63
+.. GENERATED FROM PYTHON SOURCE LINES 49-64
 
 .. code-block:: Python
 
 
-    import pandas as pd
     import numpy as np
+    import pandas as pd
+
     from skrub.datasets import make_deduplication_data
 
     duplicated_names = make_deduplication_data(
@@ -97,12 +98,12 @@ Let's generate this example dataset:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-66
+.. GENERATED FROM PYTHON SOURCE LINES 65-67
 
 We then extract the unique medication names in the data and
 visualize how often they appear:
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-77
+.. GENERATED FROM PYTHON SOURCE LINES 67-78
 
 .. code-block:: Python
 
@@ -129,7 +130,7 @@ visualize how often they appear:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-87
+.. GENERATED FROM PYTHON SOURCE LINES 79-88
 
 We clearly see the structure of the data:
 the three original medications ("Contrivan", "Genericon" and "Zipholan")
@@ -141,7 +142,7 @@ the string distance of misspelled medications will be
 closest to their original (most frequent) medication name
 - and therefore form clusters.
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-96
+.. GENERATED FROM PYTHON SOURCE LINES 90-97
 
 Deduplication: suggest corrections of misspelled names
 ------------------------------------------------------
@@ -151,7 +152,7 @@ string similarities to group duplicated names.
 
 Let's deduplicate our data:
 
-.. GENERATED FROM PYTHON SOURCE LINES 96-103
+.. GENERATED FROM PYTHON SOURCE LINES 97-104
 
 .. code-block:: Python
 
@@ -180,7 +181,7 @@ Let's deduplicate our data:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-112
+.. GENERATED FROM PYTHON SOURCE LINES 105-113
 
 And that's it! We now have the deduplicated data.
 
@@ -191,11 +192,11 @@ And that's it! We now have the deduplicated data.
    automatically via the
    `silhouette score <https://scikit-learn.org/stable/modules/clustering.html#silhouette-coefficient>`_.
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-115
+.. GENERATED FROM PYTHON SOURCE LINES 115-116
 
 We can visualize the distribution of categories in the deduplicated data:
 
-.. GENERATED FROM PYTHON SOURCE LINES 115-127
+.. GENERATED FROM PYTHON SOURCE LINES 116-128
 
 .. code-block:: Python
 
@@ -223,7 +224,7 @@ We can visualize the distribution of categories in the deduplicated data:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 128-135
+.. GENERATED FROM PYTHON SOURCE LINES 129-136
 
 Here, the silhouette score finds the ideal number of
 clusters (3) and groups the spelling mistakes.
@@ -233,7 +234,7 @@ and require some tweaks.
 In this case, we can construct and update a translation table based on the
 data returned by |deduplicate|.
 
-.. GENERATED FROM PYTHON SOURCE LINES 135-144
+.. GENERATED FROM PYTHON SOURCE LINES 136-145
 
 .. code-block:: Python
 
@@ -264,14 +265,14 @@ data returned by |deduplicate|.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 145-149
+.. GENERATED FROM PYTHON SOURCE LINES 146-150
 
 In this table, we have the category name on the left,
 and the cluster it was translated to on the right.
 If we want to adapt the translation table, we can
 modify it manually.
 
-.. GENERATED FROM PYTHON SOURCE LINES 151-158
+.. GENERATED FROM PYTHON SOURCE LINES 152-159
 
 Visualizing string pair-wise distance between names
 ---------------------------------------------------
@@ -281,13 +282,14 @@ names. A darker color means that two medication names are closer together
 (i.e. more similar), a lighter color means a larger distance.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 158-173
+.. GENERATED FROM PYTHON SOURCE LINES 159-175
 
 .. code-block:: Python
 
 
-    from skrub import compute_ngram_distance
     from scipy.spatial.distance import squareform
+
+    from skrub import compute_ngram_distance
 
     ngram_distances = compute_ngram_distance(unique_examples)
     square_distances = squareform(ngram_distances)
@@ -312,12 +314,12 @@ names. A darker color means that two medication names are closer together
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 174-176
+.. GENERATED FROM PYTHON SOURCE LINES 176-178
 
 We have three clusters appearing - the original medication
 names and their misspellings that form a cluster around them.
 
-.. GENERATED FROM PYTHON SOURCE LINES 178-190
+.. GENERATED FROM PYTHON SOURCE LINES 180-192
 
 Conclusion
 ----------
@@ -335,7 +337,7 @@ or |MinHash|.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 4.723 seconds)
+   **Total running time of the script:** (0 minutes 5.005 seconds)
 
 
 .. _sphx_glr_download_auto_examples_05_deduplication.py:

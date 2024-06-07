@@ -56,18 +56,20 @@ We study the case of predicting wages using the
 .. |permutation importances| replace::
      :func:`~sklearn.inspection.permutation_importance`
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-50
+.. GENERATED FROM PYTHON SOURCE LINES 42-52
 
 Easily encoding a dataframe
 ---------------------------
 
-Let's first retrieve the dataset, using one of the downloaders from the :mod:`skrub.datasets` module.
-As all the downloaders, :func:`~skrub.datasets.fetch_employee_salaries` returns a dataset with attributes ``X``, and ``y``.
-``X`` is a dataframe which contains the features (aka design matrix, explanatory variables, independent variables).
-``y`` is a column (pandas Series) which contains the target (aka dependent, response variable) that we want to learn to predict from ``X``.
-In this case ``y`` is the annual salary.
+Let's first retrieve the dataset, using one of the downloaders from the
+:mod:`skrub.datasets` module. As all the downloaders,
+:func:`~skrub.datasets.fetch_employee_salaries` returns a dataset with attributes
+``X``, and ``y``. ``X`` is a dataframe which contains the features (aka design matrix,
+explanatory variables, independent variables). ``y`` is a column (pandas Series) which
+contains the target (aka dependent, response variable) that we want to learn to
+predict from ``X``. In this case ``y`` is the annual salary.
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-57
+.. GENERATED FROM PYTHON SOURCE LINES 52-59
 
 .. code-block:: Python
 
@@ -244,7 +246,7 @@ In this case ``y`` is the annual salary.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-60
+.. GENERATED FROM PYTHON SOURCE LINES 60-62
 
 .. code-block:: Python
 
@@ -274,21 +276,23 @@ In this case ``y`` is the annual salary.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-72
+.. GENERATED FROM PYTHON SOURCE LINES 63-76
 
 We observe diverse columns in the ``employees`` dataframe:
   - numeric (``'year_first_hired'``)
   - dates (``'date_first_hired'``)
-  - low-cardinality categorical (``'gender'``, ``'department'``, ``'department_name'``, ``'assignment_category'``)
+  - low-cardinality categorical (``'gender'``, ``'department'``,
+    ``'department_name'``, ``'assignment_category'``)
   - high-cardinality categorical (``'employee_position_title'``, ``'division'``).
 
-Most machine-learning algorithms work with arrays of numbers.
-Therefore our complex, heterogeneous table needs to be processed to extract numeric features.
-Transforming a complex real-world object such as a date into a vector of numeric features —more adequate for machine learning— is often called *vectorizing* it.
+Most machine-learning algorithms work with arrays of numbers. Therefore our complex,
+heterogeneous table needs to be processed to extract numeric features. Transforming a
+complex real-world object such as a date into a vector of numeric features —more
+adequate for machine learning— is often called *vectorizing* it.
 
 We can easily do this using skrub's |TableVectorizer|.
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-79
+.. GENERATED FROM PYTHON SOURCE LINES 76-83
 
 .. code-block:: Python
 
@@ -366,41 +370,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <th>department_SHF</th>
           <th>department_ZAH</th>
           <th>...</th>
-          <th>division: recycling, solid, waste</th>
-          <th>division: patrol, 5th, 4th</th>
-          <th>division: emergency, commuter, mechanical</th>
-          <th>division: centers, crossing, housing</th>
+          <th>division: twinbrook, warehouse, rockville</th>
+          <th>division: administration, battalion, admin</th>
+          <th>division: delivery, legislative, defense</th>
+          <th>division: supports, support, network</th>
           <th>assignment_category_Parttime-Regular</th>
+          <th>employee_position_title: enforcement, inspector, auditor</th>
+          <th>employee_position_title: officer, office, police</th>
+          <th>employee_position_title: manager, projects, project</th>
+          <th>employee_position_title: school, room, behavioral</th>
+          <th>employee_position_title: firefighter, rescuer, master</th>
+          <th>employee_position_title: administrative, legislative, principal</th>
+          <th>employee_position_title: specialist, special, district</th>
           <th>employee_position_title: operator, equipment, bus</th>
-          <th>employee_position_title: manager, budget, investigator</th>
-          <th>employee_position_title: officer, police, office</th>
-          <th>employee_position_title: master, registered, water</th>
-          <th>employee_position_title: recreation, renovation, background</th>
-          <th>employee_position_title: specialist, special, environmental</th>
-          <th>employee_position_title: correctional, correction, corporal</th>
-          <th>employee_position_title: school, health, room</th>
-          <th>employee_position_title: coordinator, services, service</th>
-          <th>employee_position_title: administrative, principal, executive</th>
-          <th>employee_position_title: community, nurse, security</th>
-          <th>employee_position_title: supply, electrician, systems</th>
-          <th>employee_position_title: enforcement, permitting, inspector</th>
-          <th>employee_position_title: accountant, assistant, library</th>
-          <th>employee_position_title: information, technology, senior</th>
-          <th>employee_position_title: captain, rescue, revenue</th>
-          <th>employee_position_title: candidate, sheriff, deputy</th>
-          <th>employee_position_title: mechanic, hvac, vehicle</th>
-          <th>employee_position_title: sergeant, craftsworker, urban</th>
+          <th>employee_position_title: correctional, correction, regional</th>
+          <th>employee_position_title: coordinator, services, coordinating</th>
+          <th>employee_position_title: assistant, library, librarian</th>
+          <th>employee_position_title: program, programs, income</th>
+          <th>employee_position_title: information, technology, technologist</th>
+          <th>employee_position_title: community, health, nurse</th>
+          <th>employee_position_title: sergeant, cadet, emergency</th>
+          <th>employee_position_title: lieutenant, attendant, maintenance</th>
+          <th>employee_position_title: technician, mechanic, hvac</th>
+          <th>employee_position_title: permitting, planning, senior</th>
+          <th>employee_position_title: telecommunications, communications, safety</th>
+          <th>employee_position_title: president, resident, customer</th>
+          <th>employee_position_title: therapist, sheriff, deputy</th>
           <th>employee_position_title: liquor, clerk, store</th>
-          <th>employee_position_title: firefighter, recruit, rescuer</th>
-          <th>employee_position_title: battalion, attendant, repairer</th>
-          <th>employee_position_title: program, programs, projects</th>
-          <th>employee_position_title: assistance, income, client</th>
-          <th>employee_position_title: crossing, engineer, purchasing</th>
-          <th>employee_position_title: communications, telecommunications, safety</th>
-          <th>employee_position_title: lieutenant, shift, commander</th>
-          <th>employee_position_title: warehouse, worker, social</th>
-          <th>employee_position_title: therapist, plumber, employee</th>
-          <th>employee_position_title: supervisor, supervisory, transit</th>
+          <th>employee_position_title: warehouse, welfare, caseworker</th>
+          <th>employee_position_title: recreation, renovation, background</th>
+          <th>employee_position_title: captain, rescue, chief</th>
+          <th>employee_position_title: environmental, enviromental, budget</th>
+          <th>employee_position_title: craftsworker, public, service</th>
+          <th>employee_position_title: corporal, erp, behavioral</th>
+          <th>employee_position_title: crossing, purchasing, engineer</th>
+          <th>employee_position_title: supply, systems, electrician</th>
           <th>date_first_hired_year</th>
           <th>date_first_hired_month</th>
           <th>date_first_hired_day</th>
@@ -452,41 +456,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.076993</td>
-          <td>0.165379</td>
-          <td>0.065527</td>
-          <td>0.067552</td>
+          <td>0.056290</td>
+          <td>0.065428</td>
+          <td>0.067743</td>
+          <td>0.063527</td>
           <td>0.0</td>
-          <td>0.067060</td>
-          <td>0.053229</td>
-          <td>0.103831</td>
-          <td>0.054524</td>
-          <td>0.051598</td>
-          <td>0.050870</td>
-          <td>0.063557</td>
-          <td>0.051902</td>
-          <td>37.349846</td>
-          <td>0.053958</td>
-          <td>0.052497</td>
-          <td>0.051017</td>
-          <td>0.054679</td>
-          <td>0.051441</td>
-          <td>0.053254</td>
-          <td>0.056349</td>
-          <td>0.054462</td>
-          <td>0.051759</td>
-          <td>0.076811</td>
-          <td>0.059755</td>
-          <td>0.054141</td>
-          <td>0.053554</td>
-          <td>0.052228</td>
-          <td>0.054416</td>
-          <td>0.053363</td>
-          <td>0.054002</td>
-          <td>0.053807</td>
-          <td>0.052839</td>
-          <td>0.051096</td>
-          <td>0.058152</td>
+          <td>0.054876</td>
+          <td>0.098513</td>
+          <td>0.053614</td>
+          <td>0.051796</td>
+          <td>0.054713</td>
+          <td>0.052662</td>
+          <td>0.052976</td>
+          <td>0.065010</td>
+          <td>0.059103</td>
+          <td>37.297039</td>
+          <td>0.050851</td>
+          <td>0.052749</td>
+          <td>0.052402</td>
+          <td>0.052664</td>
+          <td>0.082437</td>
+          <td>0.053380</td>
+          <td>0.051975</td>
+          <td>0.062188</td>
+          <td>0.053965</td>
+          <td>0.075706</td>
+          <td>0.053138</td>
+          <td>0.059027</td>
+          <td>0.052881</td>
+          <td>0.051876</td>
+          <td>0.055679</td>
+          <td>0.051030</td>
+          <td>0.079955</td>
+          <td>0.063759</td>
+          <td>0.052621</td>
+          <td>0.051414</td>
           <td>1986.0</td>
           <td>9.0</td>
           <td>22.0</td>
@@ -536,41 +540,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.076110</td>
-          <td>0.060061</td>
-          <td>0.055999</td>
-          <td>0.057952</td>
+          <td>0.054749</td>
+          <td>0.056742</td>
+          <td>0.085966</td>
+          <td>0.065099</td>
           <td>0.0</td>
-          <td>0.053919</td>
-          <td>0.066198</td>
-          <td>21.629885</td>
-          <td>6.757525</td>
-          <td>0.066126</td>
-          <td>0.056557</td>
-          <td>0.061920</td>
-          <td>0.052473</td>
-          <td>0.064375</td>
-          <td>0.055014</td>
-          <td>0.050846</td>
-          <td>0.054275</td>
-          <td>0.051776</td>
-          <td>0.059384</td>
-          <td>0.056565</td>
-          <td>0.051981</td>
-          <td>0.053429</td>
-          <td>0.053884</td>
-          <td>0.063883</td>
-          <td>0.059845</td>
-          <td>0.059545</td>
-          <td>0.059418</td>
-          <td>0.061395</td>
-          <td>0.075178</td>
-          <td>0.051173</td>
-          <td>0.053544</td>
-          <td>0.055458</td>
-          <td>0.053653</td>
-          <td>0.058962</td>
-          <td>0.051815</td>
+          <td>0.051696</td>
+          <td>26.030201</td>
+          <td>0.123353</td>
+          <td>0.056054</td>
+          <td>2.095420</td>
+          <td>0.061600</td>
+          <td>0.084171</td>
+          <td>0.054001</td>
+          <td>0.057931</td>
+          <td>0.062021</td>
+          <td>0.103854</td>
+          <td>0.085665</td>
+          <td>0.075876</td>
+          <td>0.050728</td>
+          <td>0.075506</td>
+          <td>0.069395</td>
+          <td>0.060005</td>
+          <td>0.075380</td>
+          <td>0.056734</td>
+          <td>0.054211</td>
+          <td>0.063557</td>
+          <td>0.076859</td>
+          <td>0.053663</td>
+          <td>0.067686</td>
+          <td>0.051736</td>
+          <td>0.068111</td>
+          <td>0.062144</td>
+          <td>0.061857</td>
+          <td>0.052151</td>
+          <td>0.058432</td>
           <td>1988.0</td>
           <td>9.0</td>
           <td>12.0</td>
@@ -620,41 +624,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.222629</td>
-          <td>0.057789</td>
-          <td>0.072430</td>
-          <td>0.068261</td>
+          <td>0.055215</td>
+          <td>0.055223</td>
+          <td>0.063560</td>
+          <td>0.054973</td>
           <td>0.0</td>
-          <td>0.053415</td>
-          <td>0.068686</td>
-          <td>0.059972</td>
-          <td>0.054705</td>
-          <td>0.065697</td>
-          <td>0.070781</td>
-          <td>0.063832</td>
-          <td>0.057473</td>
-          <td>0.052296</td>
-          <td>0.057287</td>
-          <td>0.052347</td>
-          <td>0.057179</td>
-          <td>0.055104</td>
-          <td>0.051426</td>
-          <td>0.058092</td>
-          <td>0.050005</td>
-          <td>0.052227</td>
-          <td>0.055646</td>
-          <td>0.056629</td>
-          <td>0.057919</td>
-          <td>0.058710</td>
-          <td>0.051612</td>
-          <td>0.058989</td>
-          <td>0.055252</td>
-          <td>0.050147</td>
-          <td>0.053766</td>
-          <td>0.050113</td>
-          <td>20.862345</td>
-          <td>0.053489</td>
-          <td>0.054860</td>
+          <td>0.056436</td>
+          <td>0.061036</td>
+          <td>0.068750</td>
+          <td>0.057258</td>
+          <td>0.057872</td>
+          <td>0.056754</td>
+          <td>0.066123</td>
+          <td>0.053475</td>
+          <td>0.063964</td>
+          <td>0.052437</td>
+          <td>0.051403</td>
+          <td>0.057168</td>
+          <td>0.057975</td>
+          <td>0.052679</td>
+          <td>0.051795</td>
+          <td>0.050110</td>
+          <td>0.055836</td>
+          <td>0.060637</td>
+          <td>0.054325</td>
+          <td>0.052460</td>
+          <td>0.052930</td>
+          <td>0.058158</td>
+          <td>20.846878</td>
+          <td>0.059790</td>
+          <td>0.050024</td>
+          <td>0.058237</td>
+          <td>0.065811</td>
+          <td>0.063647</td>
+          <td>0.050193</td>
+          <td>0.055843</td>
           <td>1989.0</td>
           <td>11.0</td>
           <td>19.0</td>
@@ -704,41 +708,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.060082</td>
-          <td>0.051562</td>
-          <td>0.062585</td>
-          <td>0.056869</td>
+          <td>0.058758</td>
+          <td>0.055354</td>
+          <td>0.061978</td>
+          <td>0.052463</td>
           <td>0.0</td>
-          <td>0.057434</td>
-          <td>1.547038</td>
-          <td>0.096958</td>
-          <td>0.084244</td>
-          <td>0.059887</td>
-          <td>0.077592</td>
-          <td>0.072480</td>
-          <td>0.051888</td>
-          <td>0.074110</td>
-          <td>0.069515</td>
-          <td>0.071185</td>
-          <td>0.063492</td>
-          <td>4.075932</td>
-          <td>0.066286</td>
-          <td>0.063419</td>
-          <td>0.092892</td>
-          <td>0.083834</td>
-          <td>0.059271</td>
-          <td>0.062415</td>
-          <td>0.072221</td>
-          <td>0.258703</td>
-          <td>0.082632</td>
-          <td>0.075752</td>
-          <td>0.058415</td>
-          <td>0.052833</td>
-          <td>0.055068</td>
-          <td>0.083589</td>
-          <td>0.086422</td>
-          <td>0.068241</td>
-          <td>23.776253</td>
+          <td>5.531807</td>
+          <td>0.088944</td>
+          <td>0.139675</td>
+          <td>0.050659</td>
+          <td>0.155778</td>
+          <td>0.080969</td>
+          <td>0.159613</td>
+          <td>0.077887</td>
+          <td>0.073622</td>
+          <td>0.085940</td>
+          <td>0.135936</td>
+          <td>0.091247</td>
+          <td>0.076233</td>
+          <td>0.052441</td>
+          <td>0.116981</td>
+          <td>0.081598</td>
+          <td>0.052699</td>
+          <td>0.141103</td>
+          <td>0.068830</td>
+          <td>9.367480</td>
+          <td>0.088549</td>
+          <td>0.099417</td>
+          <td>0.090167</td>
+          <td>0.116486</td>
+          <td>0.085392</td>
+          <td>0.233077</td>
+          <td>0.128043</td>
+          <td>0.080499</td>
+          <td>0.061595</td>
+          <td>13.887333</td>
           <td>2014.0</td>
           <td>5.0</td>
           <td>5.0</td>
@@ -788,41 +792,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.060015</td>
-          <td>0.061898</td>
-          <td>0.053623</td>
-          <td>27.025419</td>
+          <td>5.859244</td>
+          <td>0.059728</td>
+          <td>0.056537</td>
+          <td>0.144580</td>
           <td>0.0</td>
-          <td>0.051437</td>
-          <td>0.262570</td>
-          <td>0.073119</td>
-          <td>0.050750</td>
-          <td>15.150228</td>
-          <td>12.668523</td>
-          <td>0.060870</td>
-          <td>0.060122</td>
-          <td>0.053204</td>
-          <td>0.063173</td>
-          <td>0.065671</td>
-          <td>0.093661</td>
-          <td>0.082365</td>
-          <td>0.062502</td>
-          <td>0.070357</td>
-          <td>0.053479</td>
-          <td>0.066690</td>
-          <td>0.091793</td>
-          <td>0.056339</td>
-          <td>0.055056</td>
-          <td>0.064559</td>
-          <td>0.052149</td>
-          <td>0.060869</td>
-          <td>0.081288</td>
-          <td>3.228244</td>
-          <td>0.068098</td>
-          <td>0.056891</td>
-          <td>0.065312</td>
-          <td>0.074317</td>
-          <td>0.056364</td>
+          <td>0.076413</td>
+          <td>0.073143</td>
+          <td>0.095519</td>
+          <td>0.059018</td>
+          <td>0.059359</td>
+          <td>0.056002</td>
+          <td>14.157066</td>
+          <td>0.051556</td>
+          <td>0.054973</td>
+          <td>0.052100</td>
+          <td>0.064489</td>
+          <td>0.105336</td>
+          <td>0.074638</td>
+          <td>0.057121</td>
+          <td>0.059966</td>
+          <td>0.057017</td>
+          <td>0.076841</td>
+          <td>16.874018</td>
+          <td>0.074759</td>
+          <td>0.066263</td>
+          <td>0.071792</td>
+          <td>0.055643</td>
+          <td>0.067011</td>
+          <td>0.087712</td>
+          <td>0.051319</td>
+          <td>0.138735</td>
+          <td>0.054205</td>
+          <td>0.066572</td>
+          <td>0.086799</td>
+          <td>0.074617</td>
           <td>2007.0</td>
           <td>3.0</td>
           <td>5.0</td>
@@ -956,41 +960,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.136832</td>
-          <td>0.056839</td>
-          <td>0.061341</td>
-          <td>19.498184</td>
+          <td>0.065699</td>
+          <td>0.407379</td>
+          <td>0.066566</td>
+          <td>0.051914</td>
           <td>0.0</td>
-          <td>0.050001</td>
-          <td>0.056394</td>
-          <td>0.053946</td>
-          <td>0.050001</td>
-          <td>0.052706</td>
-          <td>0.054784</td>
-          <td>0.054424</td>
-          <td>0.081457</td>
-          <td>0.051953</td>
-          <td>0.052263</td>
-          <td>34.433346</td>
-          <td>0.053520</td>
-          <td>0.052765</td>
-          <td>0.052138</td>
-          <td>0.052355</td>
-          <td>0.050938</td>
-          <td>0.056695</td>
-          <td>0.053687</td>
-          <td>0.053464</td>
-          <td>0.051956</td>
-          <td>0.052413</td>
-          <td>0.051639</td>
-          <td>0.051726</td>
-          <td>0.053923</td>
-          <td>0.050163</td>
-          <td>0.060508</td>
-          <td>0.051019</td>
-          <td>0.054329</td>
-          <td>0.054534</td>
-          <td>0.050954</td>
+          <td>0.053779</td>
+          <td>0.054861</td>
+          <td>0.055198</td>
+          <td>0.067731</td>
+          <td>0.052120</td>
+          <td>0.051827</td>
+          <td>0.055158</td>
+          <td>0.050000</td>
+          <td>0.052976</td>
+          <td>0.051898</td>
+          <td>0.052201</td>
+          <td>0.053615</td>
+          <td>0.052053</td>
+          <td>34.421219</td>
+          <td>0.053261</td>
+          <td>0.050745</td>
+          <td>0.054134</td>
+          <td>0.052798</td>
+          <td>0.061378</td>
+          <td>0.074798</td>
+          <td>0.056988</td>
+          <td>0.052159</td>
+          <td>0.054108</td>
+          <td>0.051489</td>
+          <td>0.050925</td>
+          <td>0.052369</td>
+          <td>0.052098</td>
+          <td>0.054759</td>
+          <td>0.050147</td>
+          <td>0.053206</td>
           <td>2015.0</td>
           <td>11.0</td>
           <td>3.0</td>
@@ -1040,41 +1044,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.828034</td>
-          <td>0.057365</td>
-          <td>0.053488</td>
-          <td>15.979181</td>
+          <td>0.059868</td>
+          <td>0.077567</td>
+          <td>0.060858</td>
+          <td>0.053331</td>
           <td>0.0</td>
+          <td>0.053834</td>
+          <td>0.051918</td>
           <td>0.050001</td>
-          <td>0.050015</td>
-          <td>0.052808</td>
-          <td>0.102730</td>
-          <td>0.083188</td>
-          <td>0.065426</td>
-          <td>0.061272</td>
-          <td>0.057100</td>
-          <td>0.089011</td>
-          <td>0.091519</td>
-          <td>0.050801</td>
-          <td>0.057952</td>
-          <td>0.050554</td>
-          <td>0.105508</td>
-          <td>0.074145</td>
-          <td>13.000150</td>
-          <td>0.053896</td>
-          <td>0.058026</td>
-          <td>0.069026</td>
-          <td>0.052838</td>
-          <td>0.127225</td>
-          <td>20.666388</td>
+          <td>0.058581</td>
+          <td>0.079853</td>
+          <td>0.483485</td>
+          <td>0.118804</td>
           <td>0.050002</td>
-          <td>0.090462</td>
-          <td>0.091734</td>
-          <td>0.059172</td>
-          <td>0.143030</td>
-          <td>0.059306</td>
-          <td>0.078320</td>
-          <td>1.858395</td>
+          <td>0.120829</td>
+          <td>0.182512</td>
+          <td>0.183304</td>
+          <td>0.074135</td>
+          <td>0.109455</td>
+          <td>0.050658</td>
+          <td>0.064889</td>
+          <td>0.087503</td>
+          <td>0.061702</td>
+          <td>0.065411</td>
+          <td>0.070317</td>
+          <td>0.062313</td>
+          <td>0.065612</td>
+          <td>0.052358</td>
+          <td>0.098964</td>
+          <td>3.320094</td>
+          <td>29.226938</td>
+          <td>0.057140</td>
+          <td>1.896869</td>
+          <td>0.065111</td>
+          <td>0.242197</td>
+          <td>0.395207</td>
           <td>1988.0</td>
           <td>11.0</td>
           <td>28.0</td>
@@ -1124,41 +1128,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.141120</td>
-          <td>0.056032</td>
-          <td>0.141377</td>
-          <td>2.613469</td>
+          <td>0.061336</td>
+          <td>0.111958</td>
+          <td>0.058016</td>
+          <td>0.061267</td>
           <td>1.0</td>
-          <td>0.349242</td>
-          <td>0.075285</td>
-          <td>0.106653</td>
-          <td>0.053794</td>
-          <td>0.074716</td>
-          <td>0.069541</td>
-          <td>0.122872</td>
-          <td>0.116607</td>
-          <td>0.139851</td>
-          <td>0.208030</td>
-          <td>0.052223</td>
-          <td>0.142409</td>
-          <td>3.423630</td>
-          <td>0.066551</td>
-          <td>0.104771</td>
-          <td>0.066024</td>
-          <td>0.061933</td>
-          <td>0.613120</td>
-          <td>0.078618</td>
-          <td>0.144658</td>
-          <td>0.059023</td>
-          <td>0.565743</td>
-          <td>0.061345</td>
-          <td>0.061846</td>
-          <td>0.051284</td>
-          <td>0.090235</td>
-          <td>0.055088</td>
-          <td>3.521119</td>
-          <td>35.898708</td>
-          <td>0.065081</td>
+          <td>5.105234</td>
+          <td>0.110528</td>
+          <td>0.064521</td>
+          <td>0.141681</td>
+          <td>0.055298</td>
+          <td>0.247156</td>
+          <td>0.144543</td>
+          <td>0.212920</td>
+          <td>0.371723</td>
+          <td>0.192817</td>
+          <td>0.069523</td>
+          <td>0.071983</td>
+          <td>0.096150</td>
+          <td>0.057504</td>
+          <td>0.063874</td>
+          <td>0.058240</td>
+          <td>0.955041</td>
+          <td>0.094242</td>
+          <td>0.110734</td>
+          <td>0.058538</td>
+          <td>33.005604</td>
+          <td>0.113760</td>
+          <td>4.420093</td>
+          <td>0.086335</td>
+          <td>0.106850</td>
+          <td>0.074218</td>
+          <td>0.132075</td>
+          <td>0.136502</td>
+          <td>0.052429</td>
+          <td>0.089883</td>
           <td>2001.0</td>
           <td>4.0</td>
           <td>30.0</td>
@@ -1208,41 +1212,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.056570</td>
-          <td>0.062310</td>
-          <td>0.110717</td>
-          <td>4.464673</td>
+          <td>0.052859</td>
+          <td>0.058034</td>
+          <td>0.051144</td>
+          <td>0.058339</td>
           <td>0.0</td>
-          <td>0.052095</td>
-          <td>11.871030</td>
-          <td>0.063434</td>
-          <td>0.056671</td>
-          <td>0.050416</td>
-          <td>0.053115</td>
-          <td>0.056931</td>
-          <td>0.051250</td>
-          <td>0.051973</td>
-          <td>0.050029</td>
-          <td>0.052502</td>
-          <td>0.053818</td>
-          <td>0.054933</td>
-          <td>0.051996</td>
-          <td>0.051928</td>
-          <td>0.050002</td>
-          <td>0.054393</td>
-          <td>0.054170</td>
-          <td>0.054664</td>
-          <td>0.053813</td>
-          <td>0.061820</td>
-          <td>0.050535</td>
-          <td>0.126282</td>
-          <td>0.051455</td>
-          <td>0.050118</td>
-          <td>0.050670</td>
-          <td>0.053009</td>
-          <td>0.060527</td>
-          <td>0.053503</td>
-          <td>0.052917</td>
+          <td>0.057980</td>
+          <td>0.067173</td>
+          <td>11.917131</td>
+          <td>0.051532</td>
+          <td>0.061457</td>
+          <td>0.050004</td>
+          <td>0.054098</td>
+          <td>0.051921</td>
+          <td>0.056458</td>
+          <td>0.051733</td>
+          <td>0.052499</td>
+          <td>0.052292</td>
+          <td>0.052229</td>
+          <td>0.053003</td>
+          <td>0.055452</td>
+          <td>0.053069</td>
+          <td>0.055139</td>
+          <td>0.052387</td>
+          <td>0.051113</td>
+          <td>0.055214</td>
+          <td>0.055849</td>
+          <td>0.054136</td>
+          <td>0.061572</td>
+          <td>0.050115</td>
+          <td>0.050003</td>
+          <td>0.057835</td>
+          <td>0.055170</td>
+          <td>0.059223</td>
+          <td>0.050049</td>
+          <td>0.054164</td>
           <td>2006.0</td>
           <td>9.0</td>
           <td>5.0</td>
@@ -1292,41 +1296,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.157854</td>
-          <td>0.061471</td>
-          <td>0.127262</td>
-          <td>1.505702</td>
+          <td>0.061856</td>
+          <td>0.071522</td>
+          <td>0.153565</td>
+          <td>0.125185</td>
           <td>0.0</td>
-          <td>0.055575</td>
-          <td>0.059217</td>
-          <td>0.196587</td>
-          <td>0.051103</td>
-          <td>0.169395</td>
-          <td>16.601698</td>
-          <td>0.063697</td>
-          <td>0.104234</td>
-          <td>0.060540</td>
-          <td>0.055760</td>
-          <td>0.059071</td>
-          <td>0.057453</td>
-          <td>34.315872</td>
-          <td>0.134324</td>
-          <td>0.122542</td>
-          <td>0.050019</td>
-          <td>0.053206</td>
-          <td>0.063731</td>
-          <td>0.061322</td>
-          <td>0.059141</td>
-          <td>0.051856</td>
-          <td>0.066609</td>
-          <td>0.051207</td>
-          <td>0.084355</td>
-          <td>7.028891</td>
-          <td>0.069684</td>
-          <td>0.053328</td>
-          <td>0.065546</td>
-          <td>0.069170</td>
-          <td>0.064864</td>
+          <td>30.633371</td>
+          <td>0.143113</td>
+          <td>0.053139</td>
+          <td>0.103619</td>
+          <td>0.051560</td>
+          <td>0.055298</td>
+          <td>9.506925</td>
+          <td>0.055263</td>
+          <td>0.060773</td>
+          <td>0.060433</td>
+          <td>0.059962</td>
+          <td>0.123253</td>
+          <td>0.192724</td>
+          <td>0.057393</td>
+          <td>0.142991</td>
+          <td>0.053653</td>
+          <td>0.060864</td>
+          <td>0.094400</td>
+          <td>0.083364</td>
+          <td>0.058198</td>
+          <td>0.060319</td>
+          <td>0.059586</td>
+          <td>0.067345</td>
+          <td>0.161086</td>
+          <td>0.057066</td>
+          <td>11.132173</td>
+          <td>0.064225</td>
+          <td>0.064324</td>
+          <td>6.623194</td>
+          <td>0.060385</td>
           <td>2012.0</td>
           <td>1.0</td>
           <td>30.0</td>
@@ -1341,18 +1345,19 @@ We can easily do this using skrub's |TableVectorizer|.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-84
+.. GENERATED FROM PYTHON SOURCE LINES 84-88
 
 From our 8 columns, the |TableVectorizer| has extracted 143 numerical
 features. Most of them are one-hot encoded representations of the categorical
 features. For example, we can see that 3 columns ``'gender_F'``, ``'gender_M'``,
 ``'gender_nan'`` were created to encode the ``'gender'`` column.
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-87
+.. GENERATED FROM PYTHON SOURCE LINES 90-92
 
-By performing appropriate transformations on our complex data, the |TableVectorizer| produced numeric features that we can use for machine-learning:
+By performing appropriate transformations on our complex data, the |TableVectorizer|
+produced numeric features that we can use for machine-learning:
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-92
+.. GENERATED FROM PYTHON SOURCE LINES 92-97
 
 .. code-block:: Python
 
@@ -1778,27 +1783,31 @@ By performing appropriate transformations on our complex data, the |TableVectori
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-96
+.. GENERATED FROM PYTHON SOURCE LINES 98-102
 
-The |TableVectorizer| bridges the gap between tabular data and machine-learning pipelines.
-It allows us to apply a machine-learning estimator to our dataframe without manual data wrangling and feature extraction.
+The |TableVectorizer| bridges the gap between tabular data and machine-learning
+pipelines. It allows us to apply a machine-learning estimator to our dataframe without
+manual data wrangling and feature extraction.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-109
+.. GENERATED FROM PYTHON SOURCE LINES 104-118
 
 Inspecting the TableVectorizer
 ------------------------------
 
-The |TableVectorizer| distinguishes between 4 basic kinds of columns (more may be added in the future).
-For each kind, it applies a different transformation, which we can configure.
-The kinds of columns and the default transformation for each of them are:
+The |TableVectorizer| distinguishes between 4 basic kinds of columns (more may be
+added in the future).
+For each kind, it applies a different transformation, which we can configure. The
+kinds of columns and the default transformation for each of them are:
 
 - numeric columns: simply casting to floating-point
-- datetime columns: extracting features such as year, day, hour with the |DatetimeEncoder|
+- datetime columns: extracting features such as year, day, hour with the
+  |DatetimeEncoder|
 - low-cardinality categorical columns: one-hot encoding
-- high-cardinality categorical columns: a simple and effective text representation pipeline provided by the |GapEncoder|
+- high-cardinality categorical columns: a simple and effective text representation
+  pipeline provided by the |GapEncoder|
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-112
+.. GENERATED FROM PYTHON SOURCE LINES 118-121
 
 .. code-block:: Python
 
@@ -2224,12 +2233,13 @@ The kinds of columns and the default transformation for each of them are:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 113-115
+.. GENERATED FROM PYTHON SOURCE LINES 122-125
 
-We can inspect which transformation was chosen for a each column and retrieve the fitted transformer.
-``vectorizer.kind_to_columns_`` provides an overview of how the vectorizer categorized columns in our input:
+We can inspect which transformation was chosen for a each column and retrieve the
+fitted transformer. ``vectorizer.kind_to_columns_`` provides an overview of how the
+vectorizer categorized columns in our input:
 
-.. GENERATED FROM PYTHON SOURCE LINES 115-118
+.. GENERATED FROM PYTHON SOURCE LINES 125-128
 
 .. code-block:: Python
 
@@ -2249,11 +2259,11 @@ We can inspect which transformation was chosen for a each column and retrieve th
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 119-120
+.. GENERATED FROM PYTHON SOURCE LINES 129-130
 
 The reverse mapping is given by:
 
-.. GENERATED FROM PYTHON SOURCE LINES 120-123
+.. GENERATED FROM PYTHON SOURCE LINES 130-133
 
 .. code-block:: Python
 
@@ -2273,11 +2283,12 @@ The reverse mapping is given by:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 124-125
+.. GENERATED FROM PYTHON SOURCE LINES 134-136
 
-``vectorizer.transformers_`` gives us a dictionary which maps column names to the corresponding transformer.
+``vectorizer.transformers_`` gives us a dictionary which maps column names to the
+corresponding transformer.
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-128
+.. GENERATED FROM PYTHON SOURCE LINES 136-139
 
 .. code-block:: Python
 
@@ -2701,11 +2712,12 @@ The reverse mapping is given by:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 129-130
+.. GENERATED FROM PYTHON SOURCE LINES 140-142
 
-We can also see which features in the vectorizer's output were derived from a given input column.
+We can also see which features in the vectorizer's output were derived from a given
+input column.
 
-.. GENERATED FROM PYTHON SOURCE LINES 130-133
+.. GENERATED FROM PYTHON SOURCE LINES 142-145
 
 .. code-block:: Python
 
@@ -2725,7 +2737,7 @@ We can also see which features in the vectorizer's output were derived from a gi
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 134-137
+.. GENERATED FROM PYTHON SOURCE LINES 146-149
 
 .. code-block:: Python
 
@@ -2850,11 +2862,12 @@ We can also see which features in the vectorizer's output were derived from a gi
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 138-139
+.. GENERATED FROM PYTHON SOURCE LINES 150-152
 
-Finally, we can go in the opposite direction: given a column in the input, find out from which input column it was derived.
+Finally, we can go in the opposite direction: given a column in the input, find out
+from which input column it was derived.
 
-.. GENERATED FROM PYTHON SOURCE LINES 139-143
+.. GENERATED FROM PYTHON SOURCE LINES 152-156
 
 .. code-block:: Python
 
@@ -2875,14 +2888,15 @@ Finally, we can go in the opposite direction: given a column in the input, find 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-148
+.. GENERATED FROM PYTHON SOURCE LINES 157-162
 
 Dataframe preprocessing
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Note that ``"date_first_hired"`` has been recognized and processed as a datetime column.
+Note that ``"date_first_hired"`` has been recognized and processed as a datetime
+ßcolumn.
 
-.. GENERATED FROM PYTHON SOURCE LINES 148-151
+.. GENERATED FROM PYTHON SOURCE LINES 162-165
 
 .. code-block:: Python
 
@@ -2902,11 +2916,11 @@ Note that ``"date_first_hired"`` has been recognized and processed as a datetime
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 152-153
+.. GENERATED FROM PYTHON SOURCE LINES 166-167
 
 But looking closer at our original dataframe, it was encoded as a string.
 
-.. GENERATED FROM PYTHON SOURCE LINES 153-156
+.. GENERATED FROM PYTHON SOURCE LINES 167-170
 
 .. code-block:: Python
 
@@ -2937,17 +2951,20 @@ But looking closer at our original dataframe, it was encoded as a string.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 157-164
+.. GENERATED FROM PYTHON SOURCE LINES 171-181
 
 Note the ``dtype: object`` in the output above.
-Before applying the transformers we specify, the |TableVectorizer| performs a few preprocessing steps.
+Before applying the transformers we specify, the |TableVectorizer| performs a few
+preprocessing steps.
 
-For example, strings commonly used to represent missing values such as ``"N/A"`` are replaced with actual ``null``.
-As we saw above, columns containing strings that represent dates (e.g. ``'2024-05-15'``) are detected and converted  to proper datetimes.
+For example, strings commonly used to represent missing values such as ``"N/A"`` are
+replaced with actual ``null``. As we saw above, columns containing strings that
+represent dates (e.g. ``'2024-05-15'``) are detected and converted  to proper
+datetimes.
 
 We can inspect the list of steps that were applied to a given column:
 
-.. GENERATED FROM PYTHON SOURCE LINES 164-167
+.. GENERATED FROM PYTHON SOURCE LINES 181-184
 
 .. code-block:: Python
 
@@ -2967,11 +2984,11 @@ We can inspect the list of steps that were applied to a given column:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 168-169
+.. GENERATED FROM PYTHON SOURCE LINES 185-186
 
 These preprocessing steps depend on the column:
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-172
+.. GENERATED FROM PYTHON SOURCE LINES 186-189
 
 .. code-block:: Python
 
@@ -2992,7 +3009,7 @@ These preprocessing steps depend on the column:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 176-182
+.. GENERATED FROM PYTHON SOURCE LINES 193-199
 
 A simple Pipeline for tabular data
 ----------------------------------
@@ -3001,15 +3018,15 @@ The |TableVectorizer| outputs data that can be understood by a scikit-learn
 estimator. Therefore we can easily build a 2-step scikit-learn ``Pipeline``
 that we can fit, test or cross-validate and that works well on tabular data.
 
-.. GENERATED FROM PYTHON SOURCE LINES 182-195
+.. GENERATED FROM PYTHON SOURCE LINES 199-212
 
 .. code-block:: Python
 
 
-    from sklearn.ensemble import HistGradientBoostingRegressor
-    from sklearn.pipeline import make_pipeline
-    from sklearn.model_selection import cross_validate
     import numpy as np
+    from sklearn.ensemble import HistGradientBoostingRegressor
+    from sklearn.model_selection import cross_validate
+    from sklearn.pipeline import make_pipeline
 
     pipeline = make_pipeline(TableVectorizer(), HistGradientBoostingRegressor())
 
@@ -3026,40 +3043,51 @@ that we can fit, test or cross-validate and that works well on tabular data.
 
  .. code-block:: none
 
-    R2 score:  mean: 0.918; std: 0.014
-    mean fit time: 5.252 seconds
+    R2 score:  mean: 0.924; std: 0.012
+    mean fit time: 5.978 seconds
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 196-215
+.. GENERATED FROM PYTHON SOURCE LINES 213-243
 
 Specializing the TableVectorizer for HistGradientBoosting
 ---------------------------------------------------------
 
-The encoders used by default by the |TableVectorizer| are safe choices for a wide range of downstream estimators.
-If we know we want to use it with a |HGBR| (or classifier) model, we can make some different choices that are only well-suited for tree-based models but can yield a faster pipeline.
+The encoders used by default by the |TableVectorizer| are safe choices for a wide
+range of downstream estimators. If we know we want to use it with a |HGBR| (or
+classifier) model, we can make some different choices that are only well-suited for
+tree-based models but can yield a faster pipeline.
 We make 2 changes.
 
-The |HGBR| has built-in support for categorical features, so we do not need to one-hot encode them.
-We do need to tell it which features should be treated as categorical with the ``categorical_features`` parameter.
-In recent versions of scikit-learn, we can set ``categorical_features='from_dtype'``, and it will treat all columns in the input that have a ``Categorical`` dtype as such.
-Therefore we change the encoder for low-cardinality columns: instead of ``OneHotEncoder``, we use skrub's ``ToCategorical``.
-This transformer will simply ensure our columns have an actual ``Categorical`` dtype (as opposed to string for example), so that they can be recognized by the |HGBR|.
+The |HGBR| has built-in support for categorical features, so we do not need to one-hot
+encode them.
+We do need to tell it which features should be treated as categorical with the
+``categorical_features`` parameter. In recent versions of scikit-learn, we can set
+``categorical_features='from_dtype'``, and it will treat all columns in the input that
+have a ``Categorical`` dtype as such. Therefore we change the encoder for
+low-cardinality columns: instead of ``OneHotEncoder``, we use skrub's
+``ToCategorical``. This transformer will simply ensure our columns have an actual
+``Categorical`` dtype (as opposed to string for example), so that they can be
+recognized by the |HGBR|.
 
 The second change replaces the |GapEncoder| with a |MinHashEncoder|.
 The |GapEncoder| is a topic model.
-It produces interpretable embeddings in a vector space where distances are meaningful, which is great for interpretation and necessary for some downstream supervised learners such as linear models.
-However fitting the topic model is costly in computation time and memory.
-The |MinHashEncoder| produces features that are not easy to interpret, but that decision trees can efficiently use to test for the occurrence of particular character n-grams (more details are provided in its documentation).
-Therefore it can be a faster and very effective alternative, when the supervised learner is built on top of decision trees, which is the case for the |HGBR|.
+It produces interpretable embeddings in a vector space where distances are meaningful,
+which is great for interpretation and necessary for some downstream supervised
+learners such as linear models. However fitting the topic model is costly in
+computation time and memory. The |MinHashEncoder| produces features that are not easy
+to interpret, but that decision trees can efficiently use to test for the occurrence
+of particular character n-grams (more details are provided in its documentation).
+Therefore it can be a faster and very effective alternative, when the supervised
+learner is built on top of decision trees, which is the case for the |HGBR|.
 
-.. GENERATED FROM PYTHON SOURCE LINES 215-231
+.. GENERATED FROM PYTHON SOURCE LINES 243-259
 
 .. code-block:: Python
 
 
-    from skrub import ToCategorical, MinHashEncoder
+    from skrub import MinHashEncoder, ToCategorical
 
     vectorizer = TableVectorizer(
         low_cardinality_transformer=ToCategorical(),
@@ -3083,23 +3111,25 @@ Therefore it can be a faster and very effective alternative, when the supervised
  .. code-block:: none
 
     R2 score:  mean: 0.911; std: 0.014
-    mean fit time: 0.887 seconds
+    mean fit time: 0.997 seconds
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 232-234
+.. GENERATED FROM PYTHON SOURCE LINES 260-263
 
 We can see that this new pipeline achieves a similar score but is fitted much faster.
-This is mostly due to replacing |GapEncoder| with |MinHashEncoder| (however this makes the features less interpretable).
+This is mostly due to replacing |GapEncoder| with |MinHashEncoder| (however this makes
+the features less interpretable).
 
-.. GENERATED FROM PYTHON SOURCE LINES 236-250
+.. GENERATED FROM PYTHON SOURCE LINES 265-280
 
 Feature importances in the statistical model
 --------------------------------------------
 
-As we just saw, we can fit a |MinHashEncoder| faster than a |GapEncoder|.
-However, the |GapEncoder| has a crucial advantage: each dimension of its output space is associated with a topic which can be inspected and interpreted.
+As we just saw, we can fit a |MinHashEncoder| faster than a |GapEncoder|. However, the
+|GapEncoder| has a crucial advantage: each dimension of its output space is associated
+with a topic which can be inspected and interpreted.
 In this section, after training a regressor, we will plot the feature importances.
 
 .. topic:: Note:
@@ -3110,7 +3140,7 @@ In this section, after training a regressor, we will plot the feature importance
 
 First, we train another scikit-learn regressor, the |RandomForestRegressor|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 250-259
+.. GENERATED FROM PYTHON SOURCE LINES 280-289
 
 .. code-block:: Python
 
@@ -3548,11 +3578,11 @@ First, we train another scikit-learn regressor, the |RandomForestRegressor|:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 260-261
+.. GENERATED FROM PYTHON SOURCE LINES 290-291
 
 We are retrieving the feature importances:
 
-.. GENERATED FROM PYTHON SOURCE LINES 261-268
+.. GENERATED FROM PYTHON SOURCE LINES 291-298
 
 .. code-block:: Python
 
@@ -3570,11 +3600,11 @@ We are retrieving the feature importances:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 269-270
+.. GENERATED FROM PYTHON SOURCE LINES 299-300
 
 And plotting the results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 270-288
+.. GENERATED FROM PYTHON SOURCE LINES 300-318
 
 .. code-block:: Python
 
@@ -3608,20 +3638,27 @@ And plotting the results:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 289-292
+.. GENERATED FROM PYTHON SOURCE LINES 319-324
 
-The |GapEncoder| creates feature names that show the first 3 most important words in the topic associated with each feature.
-As we can see in the plot above, this helps inspecting the model.
-If we had used a |MinHashEncoder| instead, the features would be much less helpful, with names such as ``employee_position_title_0``, ``employee_position_title_1``, etc.
+The |GapEncoder| creates feature names that show the first 3 most important words in
+the topic associated with each feature. As we can see in the plot above, this helps
+inspecting the model. If we had used a |MinHashEncoder| instead, the features would be
+much less helpful, with names such as ``employee_position_title_0``,
+``employee_position_title_1``, etc.
 
-.. GENERATED FROM PYTHON SOURCE LINES 294-298
+.. GENERATED FROM PYTHON SOURCE LINES 326-335
 
-We can see that features such the time elapsed since being hired, having a full-time employment, and the position, seem to be the most informative for prediction.
-However, feature importances must not be over-interpreted -- they capture statistical associations `rather than causal effects <https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation>`_.
-Moreover, the fast feature importance method used here suffers from biases favouring features with larger cardinality, as illustrated in a scikit-learn `example <https://scikit-learn.org/dev/auto_examples/inspection/plot_permutation_importance.html#sphx-glr-auto-examples-inspection-plot-permutation-importance-py>`_.
+We can see that features such the time elapsed since being hired, having a full-time
+employment, and the position, seem to be the most informative for prediction. However,
+feature importances must not be over-interpreted -- they capture statistical
+associations `rather than causal effects
+<https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation>`_. Moreover, the
+fast feature importance method used here suffers from biases favouring features with
+larger cardinality, as illustrated in a scikit-learn `example
+<https://scikit-learn.org/dev/auto_examples/inspection/plot_permutation_importance.html#sphx-glr-auto-examples-inspection-plot-permutation-importance-py>`_.
 In general we should prefer |permutation importances|, but it is a slower method.
 
-.. GENERATED FROM PYTHON SOURCE LINES 300-311
+.. GENERATED FROM PYTHON SOURCE LINES 337-348
 
 Conclusion
 ----------
@@ -3638,7 +3675,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 59.188 seconds)
+   **Total running time of the script:** (1 minutes 6.931 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:

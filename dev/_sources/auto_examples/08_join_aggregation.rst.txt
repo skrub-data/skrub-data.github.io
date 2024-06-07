@@ -82,14 +82,13 @@ The data
 We begin with loading the ratings table from MovieLens.
 Note that we use the light version (100k rows).
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-77
+.. GENERATED FROM PYTHON SOURCE LINES 65-76
 
 .. code-block:: Python
 
     import pandas as pd
 
     from skrub.datasets import fetch_movielens
-
 
     ratings = fetch_movielens(dataset_id="ratings")
     ratings = ratings.X.sort_values("timestamp").reset_index(drop=True)
@@ -111,7 +110,7 @@ Note that we use the light version (100k rows).
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-80
+.. GENERATED FROM PYTHON SOURCE LINES 77-79
 
 .. code-block:: Python
 
@@ -186,7 +185,7 @@ Note that we use the light version (100k rows).
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-87
+.. GENERATED FROM PYTHON SOURCE LINES 80-86
 
 Encoding the timestamp with a TableVectorizer
 ---------------------------------------------
@@ -195,12 +194,11 @@ Our first step is to extract features from the timestamp, using the
 |TableVectorizer|. Natively, it uses the |DatetimeEncoder| on datetime
 columns, and doesn't interact with numerical columns.
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-96
+.. GENERATED FROM PYTHON SOURCE LINES 86-94
 
 .. code-block:: Python
 
-    from skrub import TableVectorizer, DatetimeEncoder
-
+    from skrub import DatetimeEncoder, TableVectorizer
 
     table_vectorizer = TableVectorizer(
         datetime_transformer=DatetimeEncoder(add_weekday=True)
@@ -307,16 +305,16 @@ columns, and doesn't interact with numerical columns.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-98
+.. GENERATED FROM PYTHON SOURCE LINES 95-96
 
 We can now make a couple of plots and gain some insight on our dataset.
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-125
+.. GENERATED FROM PYTHON SOURCE LINES 96-123
 
 .. code-block:: Python
 
-    from matplotlib import pyplot as plt
     import seaborn as sns
+    from matplotlib import pyplot as plt
 
     sns.set_style("darkgrid")
 
@@ -355,22 +353,22 @@ We can now make a couple of plots and gain some insight on our dataset.
 
  .. code-block:: none
 
-    /home/circleci/project/examples/08_join_aggregation.py:109: FutureWarning: 
+    /home/circleci/project/examples/08_join_aggregation.py:107: FutureWarning: 
 
     Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
 
       sns.barplot(x=x, y=y, palette=cmap(norm(y)), ax=ax)
-    /home/circleci/project/examples/08_join_aggregation.py:109: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
+    /home/circleci/project/examples/08_join_aggregation.py:107: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
       sns.barplot(x=x, y=y, palette=cmap(norm(y)), ax=ax)
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 126-127
+.. GENERATED FROM PYTHON SOURCE LINES 124-125
 
 We also display the distribution of our target ``y``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 127-136
+.. GENERATED FROM PYTHON SOURCE LINES 125-134
 
 .. code-block:: Python
 
@@ -396,18 +394,18 @@ We also display the distribution of our target ``y``.
 
  .. code-block:: none
 
-    /home/circleci/project/examples/08_join_aggregation.py:109: FutureWarning: 
+    /home/circleci/project/examples/08_join_aggregation.py:107: FutureWarning: 
 
     Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
 
       sns.barplot(x=x, y=y, palette=cmap(norm(y)), ax=ax)
-    /home/circleci/project/examples/08_join_aggregation.py:109: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
+    /home/circleci/project/examples/08_join_aggregation.py:107: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
       sns.barplot(x=x, y=y, palette=cmap(norm(y)), ax=ax)
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 137-160
+.. GENERATED FROM PYTHON SOURCE LINES 135-158
 
 AggTarget: aggregate y, then join
 ---------------------------------
@@ -433,12 +431,11 @@ target with 3 bins, before joining it back on the initial table.
 This feature answer questions like
 *"How many times has this user given a bad, medium or good rate to movies?"*.
 
-.. GENERATED FROM PYTHON SOURCE LINES 160-171
+.. GENERATED FROM PYTHON SOURCE LINES 158-168
 
 .. code-block:: Python
 
     from skrub import AggTarget
-
 
     agg_target_user = AggTarget(
         main_key="userId",
@@ -461,7 +458,7 @@ This feature answer questions like
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 172-174
+.. GENERATED FROM PYTHON SOURCE LINES 169-171
 
 .. code-block:: Python
 
@@ -554,14 +551,14 @@ This feature answer questions like
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 175-179
+.. GENERATED FROM PYTHON SOURCE LINES 172-176
 
 Similarly, we join on ``movieId`` instead of ``userId``.
 
 This feature answer questions like
 *"How many times has this movie received a bad, medium or good rate from users?"*.
 
-.. GENERATED FROM PYTHON SOURCE LINES 179-186
+.. GENERATED FROM PYTHON SOURCE LINES 176-183
 
 .. code-block:: Python
 
@@ -585,7 +582,7 @@ This feature answer questions like
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 187-189
+.. GENERATED FROM PYTHON SOURCE LINES 184-186
 
 .. code-block:: Python
 
@@ -678,7 +675,7 @@ This feature answer questions like
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 190-196
+.. GENERATED FROM PYTHON SOURCE LINES 187-193
 
 Chaining everything together in a pipeline
 ------------------------------------------
@@ -687,7 +684,7 @@ To perform cross-validation and enable hyper-parameter tuning, we gather
 all elements into a scikit-learn |Pipeline| by using |make_pipeline|,
 and define a scikit-learn |HGBR|.
 
-.. GENERATED FROM PYTHON SOURCE LINES 196-208
+.. GENERATED FROM PYTHON SOURCE LINES 193-205
 
 .. code-block:: Python
 
@@ -1140,7 +1137,7 @@ and define a scikit-learn |HGBR|.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 209-221
+.. GENERATED FROM PYTHON SOURCE LINES 206-218
 
 Hyper-parameters tuning and cross validation
 --------------------------------------------
@@ -1155,7 +1152,7 @@ hyper-parameters search.
 
 You can lookup the name of the pipeline elements by doing:
 
-.. GENERATED FROM PYTHON SOURCE LINES 221-223
+.. GENERATED FROM PYTHON SOURCE LINES 218-220
 
 .. code-block:: Python
 
@@ -1174,7 +1171,7 @@ You can lookup the name of the pipeline elements by doing:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 224-229
+.. GENERATED FROM PYTHON SOURCE LINES 221-226
 
 Alternatively, you can use scikit-learn |Pipeline| to name your transformers:
 ``Pipeline([("agg_target_user", agg_target_user), ...])``
@@ -1182,7 +1179,7 @@ Alternatively, you can use scikit-learn |Pipeline| to name your transformers:
 We now perform the grid search over the ``AggTarget`` transformers to find the
 operation maximizing our validation score.
 
-.. GENERATED FROM PYTHON SOURCE LINES 229-248
+.. GENERATED FROM PYTHON SOURCE LINES 226-245
 
 .. code-block:: Python
 
@@ -1191,7 +1188,7 @@ operation maximizing our validation score.
     operations = ["mean", "hist(3)", "hist(5)", "hist(7)", "value_counts"]
     param_grid = [
         {
-            f"aggtarget-2__operation": [op],
+            "aggtarget-2__operation": [op],
         }
         for op in operations
     ]
@@ -1249,75 +1246,75 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split1_test_score</th>
-          <td>0.044830</td>
-          <td>0.033484</td>
-          <td>0.081950</td>
-          <td>0.079404</td>
-          <td>0.071181</td>
+          <td>0.054291</td>
+          <td>0.046256</td>
+          <td>0.077496</td>
+          <td>0.053958</td>
+          <td>0.072743</td>
         </tr>
         <tr>
           <th>split2_test_score</th>
-          <td>0.056963</td>
-          <td>0.059727</td>
-          <td>0.104146</td>
-          <td>0.093122</td>
-          <td>0.094280</td>
+          <td>0.073090</td>
+          <td>0.080162</td>
+          <td>0.094306</td>
+          <td>0.094422</td>
+          <td>0.094126</td>
         </tr>
         <tr>
           <th>split3_test_score</th>
-          <td>0.039881</td>
-          <td>0.069760</td>
-          <td>0.064116</td>
-          <td>0.065596</td>
-          <td>0.078634</td>
+          <td>0.040857</td>
+          <td>0.059777</td>
+          <td>0.063089</td>
+          <td>0.055284</td>
+          <td>0.079006</td>
         </tr>
         <tr>
           <th>split4_test_score</th>
-          <td>0.140851</td>
-          <td>0.122408</td>
-          <td>0.138247</td>
-          <td>0.146908</td>
-          <td>0.145387</td>
+          <td>0.131741</td>
+          <td>0.132793</td>
+          <td>0.138339</td>
+          <td>0.146040</td>
+          <td>0.151080</td>
         </tr>
         <tr>
           <th>split5_test_score</th>
-          <td>0.110908</td>
-          <td>0.110162</td>
-          <td>0.111893</td>
-          <td>0.110805</td>
-          <td>0.116296</td>
+          <td>0.110553</td>
+          <td>0.111874</td>
+          <td>0.105114</td>
+          <td>0.110696</td>
+          <td>0.114973</td>
         </tr>
         <tr>
           <th>split6_test_score</th>
-          <td>0.081552</td>
-          <td>0.100285</td>
-          <td>0.107814</td>
-          <td>0.106693</td>
-          <td>0.109797</td>
+          <td>0.084504</td>
+          <td>0.100755</td>
+          <td>0.103847</td>
+          <td>0.111550</td>
+          <td>0.109646</td>
         </tr>
         <tr>
           <th>split7_test_score</th>
-          <td>0.080625</td>
-          <td>0.065243</td>
-          <td>0.044890</td>
-          <td>0.066880</td>
-          <td>0.080612</td>
+          <td>0.053904</td>
+          <td>0.068226</td>
+          <td>0.057764</td>
+          <td>0.074080</td>
+          <td>0.077263</td>
         </tr>
         <tr>
           <th>split8_test_score</th>
-          <td>0.111113</td>
-          <td>0.115724</td>
-          <td>0.120171</td>
-          <td>0.124425</td>
-          <td>0.133765</td>
+          <td>0.106506</td>
+          <td>0.111695</td>
+          <td>0.122601</td>
+          <td>0.120597</td>
+          <td>0.132749</td>
         </tr>
         <tr>
           <th>split9_test_score</th>
-          <td>0.123649</td>
-          <td>0.154439</td>
-          <td>0.166833</td>
-          <td>0.157643</td>
-          <td>0.179801</td>
+          <td>0.104927</td>
+          <td>0.148085</td>
+          <td>0.169691</td>
+          <td>0.158120</td>
+          <td>0.181488</td>
         </tr>
       </tbody>
     </table>
@@ -1326,7 +1323,7 @@ operation maximizing our validation score.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 249-258
+.. GENERATED FROM PYTHON SOURCE LINES 246-255
 
 The score used in this regression task is the R2. Remember that the R2
 evaluates the relative performance compared to the naive baseline consisting
@@ -1338,7 +1335,7 @@ To get a better sense of the learning performances of our simple pipeline,
 we also compute the average rating of each movie in the training set,
 and uses this average to predict the ratings in the test set.
 
-.. GENERATED FROM PYTHON SOURCE LINES 258-295
+.. GENERATED FROM PYTHON SOURCE LINES 255-292
 
 .. code-block:: Python
 
@@ -1392,13 +1389,13 @@ and uses this average to predict the ratings in the test set.
 
  .. code-block:: none
 
-    /home/circleci/project/examples/08_join_aggregation.py:293: UserWarning: The figure layout has changed to tight
+    /home/circleci/project/examples/08_join_aggregation.py:290: UserWarning: The figure layout has changed to tight
       plt.tight_layout()
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 296-308
+.. GENERATED FROM PYTHON SOURCE LINES 293-305
 
 The naive estimator has a lower performance than our pipeline, which means
 that our extracted features brought some predictive power.
@@ -1416,7 +1413,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 17.366 seconds)
+   **Total running time of the script:** (0 minutes 16.882 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:
