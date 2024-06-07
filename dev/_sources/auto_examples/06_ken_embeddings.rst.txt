@@ -305,7 +305,7 @@ We will start by checking out the available tables with
  .. code-block:: none
 
 
-    {'all_entities', 'games', 'companies', 'albums', 'movies', 'schools'}
+    {'albums', 'all_entities', 'games', 'companies', 'schools', 'movies'}
 
 
 
@@ -546,7 +546,7 @@ categorical variables using the |MinHash| and |OneHotEncoder|:
     encoder = make_column_transformer(
         ("passthrough", ["Year"]),
         (ohe, ["Genre"]),
-        (min_hash, ["Platform"]),
+        (min_hash, "Platform"),
         remainder="drop",
     )
 
@@ -730,7 +730,7 @@ We include both the embeddings and the base features:
         ("passthrough", emb_columns2),
         ("passthrough", ["Year"]),
         (ohe, ["Genre"]),
-        (min_hash, ["Platform"]),
+        (min_hash, "Platform"),
         remainder="drop",
     )
 
@@ -840,7 +840,7 @@ It helped significantly improve the prediction score.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (2 minutes 0.608 seconds)
+   **Total running time of the script:** (2 minutes 12.837 seconds)
 
 
 .. _sphx_glr_download_auto_examples_06_ken_embeddings.py:
