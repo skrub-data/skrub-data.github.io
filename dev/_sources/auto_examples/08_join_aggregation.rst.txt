@@ -1246,75 +1246,75 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split1_test_score</th>
-          <td>0.058376</td>
-          <td>0.048418</td>
-          <td>0.075848</td>
-          <td>0.075810</td>
-          <td>0.088245</td>
+          <td>0.047764</td>
+          <td>0.054050</td>
+          <td>0.079876</td>
+          <td>0.072209</td>
+          <td>0.060506</td>
         </tr>
         <tr>
           <th>split2_test_score</th>
-          <td>0.082306</td>
-          <td>0.087392</td>
-          <td>0.092579</td>
-          <td>0.096204</td>
-          <td>0.087903</td>
+          <td>0.079500</td>
+          <td>0.082344</td>
+          <td>0.095900</td>
+          <td>0.083956</td>
+          <td>0.096080</td>
         </tr>
         <tr>
           <th>split3_test_score</th>
-          <td>0.041615</td>
-          <td>0.060007</td>
-          <td>0.070483</td>
-          <td>0.063598</td>
-          <td>0.083233</td>
+          <td>0.049661</td>
+          <td>0.068514</td>
+          <td>0.055875</td>
+          <td>0.062987</td>
+          <td>0.073468</td>
         </tr>
         <tr>
           <th>split4_test_score</th>
-          <td>0.135292</td>
-          <td>0.133122</td>
-          <td>0.159623</td>
-          <td>0.143449</td>
-          <td>0.133769</td>
+          <td>0.138938</td>
+          <td>0.128451</td>
+          <td>0.145132</td>
+          <td>0.155434</td>
+          <td>0.153151</td>
         </tr>
         <tr>
           <th>split5_test_score</th>
-          <td>0.105486</td>
-          <td>0.114159</td>
-          <td>0.108606</td>
-          <td>0.111042</td>
-          <td>0.116610</td>
+          <td>0.109387</td>
+          <td>0.110470</td>
+          <td>0.112200</td>
+          <td>0.105256</td>
+          <td>0.112429</td>
         </tr>
         <tr>
           <th>split6_test_score</th>
-          <td>0.079106</td>
-          <td>0.099115</td>
-          <td>0.105617</td>
-          <td>0.101460</td>
-          <td>0.108305</td>
+          <td>0.085279</td>
+          <td>0.100331</td>
+          <td>0.102321</td>
+          <td>0.109068</td>
+          <td>0.107446</td>
         </tr>
         <tr>
           <th>split7_test_score</th>
-          <td>0.067311</td>
-          <td>0.068962</td>
-          <td>0.055575</td>
-          <td>0.077600</td>
-          <td>0.074862</td>
+          <td>0.062721</td>
+          <td>0.068506</td>
+          <td>0.059141</td>
+          <td>0.065551</td>
+          <td>0.076977</td>
         </tr>
         <tr>
           <th>split8_test_score</th>
-          <td>0.102741</td>
-          <td>0.110256</td>
-          <td>0.117791</td>
-          <td>0.120586</td>
-          <td>0.118729</td>
+          <td>0.102897</td>
+          <td>0.111240</td>
+          <td>0.117159</td>
+          <td>0.127226</td>
+          <td>0.130489</td>
         </tr>
         <tr>
           <th>split9_test_score</th>
-          <td>0.103866</td>
-          <td>0.165190</td>
-          <td>0.175158</td>
-          <td>0.162110</td>
-          <td>0.183825</td>
+          <td>0.115456</td>
+          <td>0.158246</td>
+          <td>0.165746</td>
+          <td>0.167034</td>
+          <td>0.181140</td>
         </tr>
       </tbody>
     </table>
@@ -1413,7 +1413,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 18.170 seconds)
+   **Total running time of the script:** (0 minutes 21.223 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:
