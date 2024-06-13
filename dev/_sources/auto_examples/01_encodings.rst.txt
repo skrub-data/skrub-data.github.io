@@ -370,41 +370,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <th>department_SHF</th>
           <th>department_ZAH</th>
           <th>...</th>
-          <th>division: behavioral, health, school</th>
-          <th>division: security, mc311, mccf</th>
-          <th>division: rockville, twinbrook, downtown</th>
-          <th>division: family, crimes, outreach</th>
+          <th>division: operations, delivery, collection</th>
+          <th>division: warehouse, liquor, employee</th>
+          <th>division: environmental, regulatory, adolescent</th>
+          <th>division: special, assignment, residential</th>
           <th>assignment_category_Parttime-Regular</th>
-          <th>employee_position_title: planning, senior, paralegal</th>
-          <th>employee_position_title: police, candidate, security</th>
+          <th>employee_position_title: firefighter, rescuer, master</th>
+          <th>employee_position_title: officer, office, police</th>
+          <th>employee_position_title: program, programs, projects</th>
+          <th>employee_position_title: administrative, administration, administrator</th>
+          <th>employee_position_title: information, renovation, recreation</th>
+          <th>employee_position_title: school, room, behavioral</th>
+          <th>employee_position_title: librarian, library, libraries</th>
           <th>employee_position_title: operator, bus, operations</th>
-          <th>employee_position_title: firefighter, rescuer, recruit</th>
+          <th>employee_position_title: communications, telecommunications, safety</th>
+          <th>employee_position_title: community, nurse, security</th>
+          <th>employee_position_title: income, assistance, compliance</th>
+          <th>employee_position_title: therapist, planning, background</th>
+          <th>employee_position_title: candidate, sheriff, deputy</th>
+          <th>employee_position_title: coordinator, coordinating, transit</th>
           <th>employee_position_title: liquor, clerk, store</th>
           <th>employee_position_title: worker, social, leader</th>
-          <th>employee_position_title: manager, projects, project</th>
-          <th>employee_position_title: school, room, behavioral</th>
-          <th>employee_position_title: specialist, environmental, special</th>
-          <th>employee_position_title: community, health, nurse</th>
-          <th>employee_position_title: correctional, correction, corporal</th>
-          <th>employee_position_title: assistance, income, client</th>
           <th>employee_position_title: lieutenant, captain, chief</th>
-          <th>employee_position_title: coordinator, coordinating, depot</th>
-          <th>employee_position_title: administrative, principal, legislative</th>
-          <th>employee_position_title: information, technology, recreation</th>
           <th>employee_position_title: warehouse, welfare, driver</th>
-          <th>employee_position_title: assistant, library, librarian</th>
-          <th>employee_position_title: program, programs, project</th>
-          <th>employee_position_title: technician, mechanic, supply</th>
+          <th>employee_position_title: correctional, correction, corporal</th>
           <th>employee_position_title: enforcement, permitting, inspector</th>
-          <th>employee_position_title: supervisor, sergeant, supervisory</th>
-          <th>employee_position_title: therapist, sheriff, deputy</th>
-          <th>employee_position_title: attendant, accountant, psychiatrist</th>
-          <th>employee_position_title: crossing, purchasing, engineer</th>
-          <th>employee_position_title: master, registered, meter</th>
-          <th>employee_position_title: services, service, aide</th>
-          <th>employee_position_title: officer, office, iii</th>
-          <th>employee_position_title: equipment, investigator, investment</th>
-          <th>employee_position_title: communications, telecommunications, safety</th>
+          <th>employee_position_title: crossing, guard, plumber</th>
+          <th>employee_position_title: mechanic, engineer, senior</th>
+          <th>employee_position_title: equipment, auditor, investigator</th>
+          <th>employee_position_title: legislative, principal, executive</th>
+          <th>employee_position_title: sergeant, cadet, emergency</th>
+          <th>employee_position_title: specialist, special, quality</th>
+          <th>employee_position_title: technician, supply, systems</th>
+          <th>employee_position_title: services, supervisor, service</th>
+          <th>employee_position_title: manager, budget, management</th>
+          <th>employee_position_title: assistant, scientist, county</th>
           <th>date_first_hired_year</th>
           <th>date_first_hired_month</th>
           <th>date_first_hired_day</th>
@@ -456,41 +456,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.067155</td>
-          <td>0.732709</td>
-          <td>0.053677</td>
-          <td>0.343639</td>
+          <td>0.076395</td>
+          <td>0.073328</td>
+          <td>0.098587</td>
+          <td>0.081258</td>
           <td>0.0</td>
-          <td>0.054070</td>
-          <td>0.098057</td>
-          <td>0.068913</td>
-          <td>0.054656</td>
-          <td>0.058973</td>
-          <td>0.052845</td>
-          <td>0.054044</td>
-          <td>0.051823</td>
-          <td>0.051298</td>
-          <td>0.052392</td>
-          <td>0.062696</td>
-          <td>0.054385</td>
-          <td>0.054769</td>
-          <td>37.295425</td>
-          <td>0.053458</td>
-          <td>0.052222</td>
-          <td>0.053206</td>
-          <td>0.050931</td>
-          <td>0.050542</td>
-          <td>0.051450</td>
-          <td>0.055181</td>
-          <td>0.061464</td>
-          <td>0.053237</td>
-          <td>0.052700</td>
-          <td>0.052858</td>
-          <td>0.055200</td>
-          <td>0.089833</td>
-          <td>0.093087</td>
-          <td>0.056179</td>
-          <td>0.054106</td>
+          <td>0.054728</td>
+          <td>0.097353</td>
+          <td>0.052313</td>
+          <td>0.053770</td>
+          <td>0.052419</td>
+          <td>0.051768</td>
+          <td>0.050530</td>
+          <td>0.067801</td>
+          <td>0.054181</td>
+          <td>0.052516</td>
+          <td>0.054381</td>
+          <td>0.052290</td>
+          <td>0.054178</td>
+          <td>37.316616</td>
+          <td>0.059067</td>
+          <td>0.053041</td>
+          <td>0.054487</td>
+          <td>0.053520</td>
+          <td>0.061240</td>
+          <td>0.054640</td>
+          <td>0.052492</td>
+          <td>0.053158</td>
+          <td>0.055190</td>
+          <td>0.052659</td>
+          <td>0.079225</td>
+          <td>0.051182</td>
+          <td>0.051409</td>
+          <td>0.098367</td>
+          <td>0.053608</td>
+          <td>0.051868</td>
           <td>1986.0</td>
           <td>9.0</td>
           <td>22.0</td>
@@ -540,41 +540,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.055069</td>
-          <td>0.162626</td>
-          <td>0.052960</td>
-          <td>53.566040</td>
+          <td>0.073383</td>
+          <td>0.061328</td>
+          <td>0.056824</td>
+          <td>0.055295</td>
           <td>0.0</td>
-          <td>0.059280</td>
-          <td>21.530777</td>
-          <td>0.054791</td>
-          <td>0.060098</td>
-          <td>0.059213</td>
-          <td>0.054945</td>
-          <td>0.071395</td>
-          <td>0.052112</td>
-          <td>0.055711</td>
-          <td>0.050610</td>
-          <td>0.065063</td>
-          <td>0.065968</td>
-          <td>0.052993</td>
-          <td>0.064561</td>
-          <td>0.054597</td>
-          <td>0.056051</td>
-          <td>0.052664</td>
-          <td>0.060062</td>
-          <td>0.052812</td>
-          <td>0.053501</td>
-          <td>0.051679</td>
-          <td>0.051926</td>
-          <td>0.055429</td>
-          <td>0.055386</td>
-          <td>0.050477</td>
-          <td>6.627590</td>
-          <td>0.055017</td>
-          <td>0.319217</td>
-          <td>0.052939</td>
-          <td>0.053136</td>
+          <td>2.587290</td>
+          <td>25.323809</td>
+          <td>0.084504</td>
+          <td>0.091027</td>
+          <td>0.075733</td>
+          <td>0.056978</td>
+          <td>0.064374</td>
+          <td>0.054563</td>
+          <td>0.056035</td>
+          <td>0.050686</td>
+          <td>0.122457</td>
+          <td>0.090596</td>
+          <td>0.061006</td>
+          <td>0.062521</td>
+          <td>0.077566</td>
+          <td>0.054494</td>
+          <td>0.057351</td>
+          <td>0.053541</td>
+          <td>0.059831</td>
+          <td>0.051563</td>
+          <td>0.050092</td>
+          <td>0.055749</td>
+          <td>0.052050</td>
+          <td>0.062142</td>
+          <td>0.078760</td>
+          <td>0.073838</td>
+          <td>0.066187</td>
+          <td>0.057232</td>
+          <td>0.139088</td>
+          <td>0.228937</td>
           <td>1988.0</td>
           <td>9.0</td>
           <td>12.0</td>
@@ -624,41 +624,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.078980</td>
-          <td>0.057420</td>
-          <td>0.054790</td>
-          <td>0.085145</td>
+          <td>0.059485</td>
+          <td>0.067434</td>
+          <td>0.098992</td>
+          <td>0.059858</td>
           <td>0.0</td>
-          <td>0.061429</td>
-          <td>0.053736</td>
-          <td>0.053255</td>
-          <td>0.055943</td>
-          <td>0.055730</td>
-          <td>20.902660</td>
-          <td>0.061515</td>
-          <td>0.054995</td>
-          <td>0.061161</td>
-          <td>0.051823</td>
-          <td>0.059017</td>
-          <td>0.053812</td>
-          <td>0.050011</td>
-          <td>0.051970</td>
-          <td>0.060775</td>
-          <td>0.055037</td>
-          <td>0.065406</td>
-          <td>0.050948</td>
-          <td>0.056293</td>
-          <td>0.054321</td>
-          <td>0.052944</td>
-          <td>0.053845</td>
-          <td>0.052302</td>
-          <td>0.051795</td>
-          <td>0.050141</td>
-          <td>0.053700</td>
-          <td>0.051638</td>
-          <td>0.057950</td>
-          <td>0.053822</td>
-          <td>0.052027</td>
+          <td>0.055318</td>
+          <td>0.057056</td>
+          <td>0.056002</td>
+          <td>0.063596</td>
+          <td>0.055463</td>
+          <td>0.055144</td>
+          <td>0.053014</td>
+          <td>0.053302</td>
+          <td>0.051777</td>
+          <td>0.051779</td>
+          <td>0.053332</td>
+          <td>0.058033</td>
+          <td>0.051551</td>
+          <td>0.051917</td>
+          <td>0.055688</td>
+          <td>20.897585</td>
+          <td>0.050008</td>
+          <td>0.064684</td>
+          <td>0.058863</td>
+          <td>0.052783</td>
+          <td>0.050030</td>
+          <td>0.054089</td>
+          <td>0.053708</td>
+          <td>0.059581</td>
+          <td>0.051489</td>
+          <td>0.064578</td>
+          <td>0.054676</td>
+          <td>0.052275</td>
+          <td>0.061548</td>
+          <td>0.051131</td>
           <td>1989.0</td>
           <td>11.0</td>
           <td>19.0</td>
@@ -708,41 +708,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.054169</td>
-          <td>4.834073</td>
-          <td>0.054230</td>
-          <td>0.069735</td>
+          <td>0.053327</td>
+          <td>0.056487</td>
+          <td>0.059050</td>
+          <td>0.060350</td>
           <td>0.0</td>
-          <td>0.073882</td>
-          <td>0.057128</td>
-          <td>0.061140</td>
-          <td>0.834136</td>
-          <td>0.074750</td>
-          <td>0.184700</td>
-          <td>0.359709</td>
-          <td>0.052074</td>
-          <td>0.116425</td>
-          <td>0.060227</td>
-          <td>0.080430</td>
-          <td>0.066222</td>
-          <td>0.097680</td>
-          <td>0.067808</td>
-          <td>0.068390</td>
-          <td>0.061025</td>
-          <td>0.058535</td>
-          <td>0.075345</td>
-          <td>0.064865</td>
-          <td>0.063652</td>
-          <td>0.139315</td>
-          <td>20.929020</td>
-          <td>0.085639</td>
-          <td>0.062407</td>
-          <td>0.058289</td>
-          <td>0.091078</td>
-          <td>2.715196</td>
-          <td>0.254085</td>
-          <td>4.531693</td>
-          <td>0.055159</td>
+          <td>0.131533</td>
+          <td>0.095592</td>
+          <td>0.073060</td>
+          <td>0.078345</td>
+          <td>0.070288</td>
+          <td>0.051046</td>
+          <td>0.054982</td>
+          <td>0.088971</td>
+          <td>0.059789</td>
+          <td>0.054310</td>
+          <td>0.077930</td>
+          <td>0.087197</td>
+          <td>0.061164</td>
+          <td>0.063956</td>
+          <td>0.092703</td>
+          <td>0.154769</td>
+          <td>0.078639</td>
+          <td>0.063761</td>
+          <td>0.080848</td>
+          <td>0.159429</td>
+          <td>0.078048</td>
+          <td>0.065397</td>
+          <td>6.035462</td>
+          <td>0.064917</td>
+          <td>0.079024</td>
+          <td>0.090395</td>
+          <td>0.065473</td>
+          <td>22.253962</td>
+          <td>0.454911</td>
+          <td>0.634100</td>
           <td>2014.0</td>
           <td>5.0</td>
           <td>5.0</td>
@@ -792,41 +792,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.069265</td>
-          <td>0.050025</td>
-          <td>0.229347</td>
-          <td>0.068836</td>
+          <td>0.054160</td>
+          <td>6.673355</td>
+          <td>0.056304</td>
+          <td>0.061506</td>
           <td>0.0</td>
-          <td>18.145479</td>
-          <td>0.052707</td>
-          <td>0.051733</td>
-          <td>0.065289</td>
-          <td>0.056005</td>
-          <td>0.080328</td>
-          <td>0.103469</td>
-          <td>0.057483</td>
-          <td>12.683705</td>
-          <td>0.057901</td>
-          <td>0.062181</td>
-          <td>0.092705</td>
-          <td>0.053529</td>
-          <td>0.052675</td>
-          <td>0.057750</td>
-          <td>0.072972</td>
-          <td>0.050227</td>
-          <td>0.064030</td>
-          <td>0.105221</td>
-          <td>0.077479</td>
-          <td>0.097925</td>
-          <td>0.056755</td>
-          <td>0.081295</td>
-          <td>0.055950</td>
-          <td>0.338252</td>
-          <td>0.050863</td>
-          <td>0.061935</td>
-          <td>0.093362</td>
-          <td>0.057439</td>
-          <td>0.063356</td>
+          <td>0.055795</td>
+          <td>0.063691</td>
+          <td>0.058563</td>
+          <td>0.165217</td>
+          <td>0.076540</td>
+          <td>0.061896</td>
+          <td>0.059755</td>
+          <td>0.052069</td>
+          <td>0.063974</td>
+          <td>0.057921</td>
+          <td>0.083651</td>
+          <td>30.590899</td>
+          <td>0.059539</td>
+          <td>0.053374</td>
+          <td>0.054805</td>
+          <td>0.070176</td>
+          <td>0.054375</td>
+          <td>0.050427</td>
+          <td>0.057735</td>
+          <td>0.076223</td>
+          <td>0.094497</td>
+          <td>0.085200</td>
+          <td>0.053150</td>
+          <td>0.060252</td>
+          <td>0.059872</td>
+          <td>0.458640</td>
+          <td>0.085927</td>
+          <td>0.056311</td>
+          <td>0.116410</td>
+          <td>0.063119</td>
           <td>2007.0</td>
           <td>3.0</td>
           <td>5.0</td>
@@ -960,41 +960,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>27.831734</td>
-          <td>0.051646</td>
-          <td>0.063620</td>
-          <td>0.059080</td>
+          <td>0.067788</td>
+          <td>0.069072</td>
+          <td>0.903890</td>
+          <td>0.079471</td>
           <td>0.0</td>
-          <td>0.053745</td>
-          <td>0.051724</td>
+          <td>0.052122</td>
+          <td>0.055004</td>
+          <td>0.051954</td>
+          <td>0.054311</td>
+          <td>0.051845</td>
+          <td>0.068720</td>
+          <td>0.052685</td>
           <td>0.050000</td>
-          <td>0.053070</td>
-          <td>0.052187</td>
-          <td>0.055196</td>
-          <td>0.055450</td>
-          <td>0.067762</td>
-          <td>0.054137</td>
-          <td>34.428810</td>
-          <td>0.054348</td>
-          <td>0.054535</td>
-          <td>0.050838</td>
-          <td>0.052026</td>
-          <td>0.052168</td>
-          <td>0.051677</td>
-          <td>0.052356</td>
-          <td>0.052340</td>
-          <td>0.052511</td>
-          <td>0.054361</td>
-          <td>0.053346</td>
-          <td>0.052262</td>
-          <td>0.058409</td>
-          <td>0.051399</td>
-          <td>0.050138</td>
-          <td>0.050002</td>
-          <td>0.067523</td>
-          <td>0.056612</td>
-          <td>0.051402</td>
-          <td>0.059661</td>
+          <td>0.059522</td>
+          <td>34.429459</td>
+          <td>0.054727</td>
+          <td>0.054528</td>
+          <td>0.055771</td>
+          <td>0.051980</td>
+          <td>0.052248</td>
+          <td>0.055148</td>
+          <td>0.050873</td>
+          <td>0.052562</td>
+          <td>0.054224</td>
+          <td>0.053075</td>
+          <td>0.050100</td>
+          <td>0.053715</td>
+          <td>0.051403</td>
+          <td>0.051888</td>
+          <td>0.053309</td>
+          <td>0.053494</td>
+          <td>0.054544</td>
+          <td>0.060578</td>
+          <td>0.058554</td>
+          <td>0.051658</td>
           <td>2015.0</td>
           <td>11.0</td>
           <td>3.0</td>
@@ -1044,41 +1044,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.073583</td>
-          <td>0.087649</td>
-          <td>0.065719</td>
-          <td>1.716298</td>
+          <td>0.068453</td>
+          <td>0.061979</td>
+          <td>0.120354</td>
+          <td>0.065945</td>
           <td>0.0</td>
-          <td>0.067349</td>
-          <td>0.053378</td>
-          <td>0.050001</td>
-          <td>0.096763</td>
-          <td>0.053420</td>
-          <td>0.057589</td>
-          <td>0.050001</td>
-          <td>0.063558</td>
-          <td>0.061166</td>
-          <td>0.050813</td>
-          <td>0.083347</td>
-          <td>0.091057</td>
-          <td>27.467030</td>
-          <td>0.118620</td>
-          <td>0.537408</td>
-          <td>2.950440</td>
-          <td>0.153461</td>
-          <td>0.113506</td>
-          <td>0.054036</td>
-          <td>0.069600</td>
-          <td>0.050950</td>
-          <td>1.415625</td>
-          <td>0.054134</td>
-          <td>3.269145</td>
-          <td>0.119299</td>
-          <td>0.085583</td>
-          <td>0.093391</td>
-          <td>0.052335</td>
-          <td>0.050574</td>
-          <td>0.066421</td>
+          <td>0.093180</td>
+          <td>0.052343</td>
+          <td>0.050004</td>
+          <td>0.114216</td>
+          <td>3.233814</td>
+          <td>0.064634</td>
+          <td>0.072242</td>
+          <td>0.050003</td>
+          <td>0.073829</td>
+          <td>0.050782</td>
+          <td>0.075077</td>
+          <td>0.063669</td>
+          <td>0.067227</td>
+          <td>0.418927</td>
+          <td>0.053398</td>
+          <td>0.055058</td>
+          <td>28.361090</td>
+          <td>1.306898</td>
+          <td>0.096990</td>
+          <td>0.050842</td>
+          <td>0.102985</td>
+          <td>0.067818</td>
+          <td>0.059372</td>
+          <td>0.113230</td>
+          <td>0.058365</td>
+          <td>0.058842</td>
+          <td>0.072147</td>
+          <td>1.749742</td>
+          <td>0.050015</td>
+          <td>0.763259</td>
           <td>1988.0</td>
           <td>11.0</td>
           <td>28.0</td>
@@ -1128,41 +1128,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>34.970169</td>
-          <td>0.062338</td>
-          <td>0.091236</td>
-          <td>0.062216</td>
+          <td>0.054511</td>
+          <td>0.057082</td>
+          <td>59.958500</td>
+          <td>0.065672</td>
           <td>1.0</td>
-          <td>0.081313</td>
-          <td>0.075091</td>
-          <td>0.068055</td>
-          <td>0.058891</td>
-          <td>0.069483</td>
-          <td>3.467485</td>
-          <td>0.071258</td>
-          <td>0.100484</td>
-          <td>0.081190</td>
-          <td>0.054066</td>
-          <td>0.073065</td>
-          <td>0.070109</td>
-          <td>0.057932</td>
-          <td>0.065889</td>
-          <td>0.240792</td>
-          <td>0.077580</td>
-          <td>0.080482</td>
-          <td>0.068614</td>
-          <td>0.064707</td>
-          <td>0.166510</td>
-          <td>0.082310</td>
-          <td>0.055155</td>
-          <td>0.059401</td>
-          <td>40.795326</td>
-          <td>0.051222</td>
-          <td>0.053192</td>
-          <td>0.056525</td>
-          <td>0.082840</td>
-          <td>0.099497</td>
-          <td>0.071534</td>
+          <td>0.056371</td>
+          <td>0.146959</td>
+          <td>0.061648</td>
+          <td>1.743888</td>
+          <td>0.102591</td>
+          <td>0.171722</td>
+          <td>32.636539</td>
+          <td>0.133523</td>
+          <td>0.127307</td>
+          <td>0.055452</td>
+          <td>0.121844</td>
+          <td>0.121895</td>
+          <td>0.063530</td>
+          <td>0.216463</td>
+          <td>0.141958</td>
+          <td>3.369744</td>
+          <td>0.076405</td>
+          <td>0.086632</td>
+          <td>0.298667</td>
+          <td>2.522978</td>
+          <td>0.050299</td>
+          <td>0.830528</td>
+          <td>2.332918</td>
+          <td>0.268822</td>
+          <td>0.073887</td>
+          <td>0.109565</td>
+          <td>0.165816</td>
+          <td>0.077904</td>
+          <td>0.064743</td>
+          <td>0.269400</td>
           <td>2001.0</td>
           <td>4.0</td>
           <td>30.0</td>
@@ -1212,41 +1212,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.066866</td>
-          <td>0.059017</td>
-          <td>0.061087</td>
-          <td>0.061504</td>
+          <td>0.054579</td>
+          <td>0.054763</td>
+          <td>0.065526</td>
+          <td>0.092504</td>
           <td>0.0</td>
-          <td>0.051908</td>
-          <td>0.055070</td>
-          <td>0.052014</td>
-          <td>0.063245</td>
-          <td>0.053934</td>
-          <td>0.069205</td>
-          <td>11.915425</td>
-          <td>0.051403</td>
-          <td>0.053685</td>
-          <td>0.052887</td>
-          <td>0.057929</td>
-          <td>0.052017</td>
-          <td>0.051023</td>
-          <td>0.051538</td>
-          <td>0.050010</td>
-          <td>0.051632</td>
-          <td>0.051902</td>
+          <td>0.060011</td>
+          <td>0.064471</td>
+          <td>0.111854</td>
+          <td>0.051831</td>
+          <td>0.051441</td>
+          <td>0.051245</td>
+          <td>0.052294</td>
           <td>0.052326</td>
-          <td>0.052582</td>
-          <td>0.054894</td>
-          <td>0.055256</td>
-          <td>0.054002</td>
-          <td>0.056326</td>
-          <td>0.051496</td>
-          <td>0.050097</td>
-          <td>0.055915</td>
-          <td>0.054178</td>
-          <td>0.072020</td>
-          <td>0.055386</td>
-          <td>0.050694</td>
+          <td>0.050547</td>
+          <td>0.052029</td>
+          <td>0.051711</td>
+          <td>0.052504</td>
+          <td>0.053570</td>
+          <td>0.051682</td>
+          <td>0.053774</td>
+          <td>0.066675</td>
+          <td>0.051083</td>
+          <td>0.052047</td>
+          <td>0.056730</td>
+          <td>0.054105</td>
+          <td>0.050011</td>
+          <td>0.053010</td>
+          <td>0.054355</td>
+          <td>0.050005</td>
+          <td>0.054563</td>
+          <td>0.051863</td>
+          <td>0.054112</td>
+          <td>0.053031</td>
+          <td>11.885806</td>
+          <td>0.051310</td>
           <td>2006.0</td>
           <td>9.0</td>
           <td>5.0</td>
@@ -1296,41 +1296,41 @@ We can easily do this using skrub's |TableVectorizer|.
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.101039</td>
-          <td>0.066416</td>
-          <td>0.068458</td>
-          <td>0.058121</td>
+          <td>0.093673</td>
+          <td>0.079854</td>
+          <td>28.857595</td>
+          <td>0.053102</td>
           <td>0.0</td>
-          <td>0.080025</td>
-          <td>0.295385</td>
-          <td>0.061850</td>
-          <td>0.051855</td>
-          <td>0.061833</td>
-          <td>0.062447</td>
-          <td>0.053224</td>
-          <td>0.100242</td>
-          <td>33.838142</td>
-          <td>0.060187</td>
-          <td>0.069548</td>
-          <td>0.078131</td>
-          <td>0.053780</td>
-          <td>0.070461</td>
-          <td>0.053151</td>
-          <td>0.117128</td>
-          <td>0.068710</td>
-          <td>0.058538</td>
-          <td>0.071047</td>
-          <td>0.057358</td>
-          <td>14.032510</td>
-          <td>0.060398</td>
-          <td>0.056692</td>
-          <td>3.394467</td>
-          <td>6.719504</td>
-          <td>0.050577</td>
-          <td>0.059204</td>
-          <td>0.113312</td>
-          <td>0.088212</td>
-          <td>0.062082</td>
+          <td>0.051493</td>
+          <td>0.085250</td>
+          <td>0.051267</td>
+          <td>0.089240</td>
+          <td>0.103505</td>
+          <td>0.073450</td>
+          <td>0.054038</td>
+          <td>0.058852</td>
+          <td>0.062705</td>
+          <td>0.058713</td>
+          <td>0.077767</td>
+          <td>37.968967</td>
+          <td>0.053798</td>
+          <td>0.066572</td>
+          <td>0.059895</td>
+          <td>0.064708</td>
+          <td>0.052990</td>
+          <td>0.058886</td>
+          <td>0.067005</td>
+          <td>16.522646</td>
+          <td>0.051274</td>
+          <td>0.061888</td>
+          <td>3.609995</td>
+          <td>0.052803</td>
+          <td>0.083937</td>
+          <td>0.211893</td>
+          <td>0.057206</td>
+          <td>0.061114</td>
+          <td>0.057798</td>
+          <td>0.070343</td>
           <td>2012.0</td>
           <td>1.0</td>
           <td>30.0</td>
@@ -3043,8 +3043,8 @@ that we can fit, test or cross-validate and that works well on tabular data.
 
  .. code-block:: none
 
-    R2 score:  mean: 0.920; std: 0.014
-    mean fit time: 5.994 seconds
+    R2 score:  mean: 0.919; std: 0.011
+    mean fit time: 6.522 seconds
 
 
 
@@ -3111,7 +3111,7 @@ learner is built on top of decision trees, which is the case for the |HGBR|.
  .. code-block:: none
 
     R2 score:  mean: 0.911; std: 0.014
-    mean fit time: 0.960 seconds
+    mean fit time: 1.076 seconds
 
 
 
@@ -3675,7 +3675,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 7.099 seconds)
+   **Total running time of the script:** (1 minutes 11.567 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:
