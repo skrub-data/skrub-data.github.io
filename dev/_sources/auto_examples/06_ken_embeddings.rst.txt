@@ -305,7 +305,7 @@ We will start by checking out the available tables with
  .. code-block:: none
 
 
-    {'games', 'all_entities', 'companies', 'movies', 'schools', 'albums'}
+    {'albums', 'games', 'companies', 'movies', 'schools', 'all_entities'}
 
 
 
@@ -453,6 +453,13 @@ and exclude those with type name "companies" or "developer".
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_fetching.py:686: UserWarning: Could not find the dataset np.int64(47119717) locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_47119717.parquet.
+      info = _fetch_figshare(dataset_id, data_directory)
+
 
 
 
@@ -461,14 +468,13 @@ and exclude those with type name "companies" or "developer".
 In a second table, we include all embeddings containing the type name
 "game_development_companies", "game_companies" or "game_publish":
 
-.. GENERATED FROM PYTHON SOURCE LINES 137-150
+.. GENERATED FROM PYTHON SOURCE LINES 137-149
 
 .. code-block:: Python
 
     embedding_publisher = fetch_ken_embeddings(
         search_types="game_development_companies|game_companies|game_publish",
         embedding_table_id="games",
-        suffix="_aux",
     )
 
     # We keep the 200 embeddings column names in a list (for the |Pipeline|):
@@ -485,7 +491,7 @@ In a second table, we include all embeddings containing the type name
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 151-160
+.. GENERATED FROM PYTHON SOURCE LINES 150-159
 
 Merging the entities
 ....................
@@ -497,7 +503,7 @@ The entities from the 'embedding_games' table will be merged along the
 column "Name" and the ones from 'embedding_publisher' table with the
 column "Publisher"
 
-.. GENERATED FROM PYTHON SOURCE LINES 160-168
+.. GENERATED FROM PYTHON SOURCE LINES 159-167
 
 .. code-block:: Python
 
@@ -516,7 +522,7 @@ column "Publisher"
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-175
+.. GENERATED FROM PYTHON SOURCE LINES 168-174
 
 Prediction with base features
 -----------------------------
@@ -525,13 +531,13 @@ We will forget for now the KEN Embeddings and build a typical learning
 pipeline, where will we try to predict the amount of sales only using
 the base features contained in the initial table.
 
-.. GENERATED FROM PYTHON SOURCE LINES 177-180
+.. GENERATED FROM PYTHON SOURCE LINES 176-179
 
 We first use scikit-learn's |ColumnTransformer| to define the columns
 that will be included in the learning process and the appropriate encoding of
 categorical variables using the |MinHash| and |OneHotEncoder|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 180-195
+.. GENERATED FROM PYTHON SOURCE LINES 179-194
 
 .. code-block:: Python
 
@@ -557,12 +563,12 @@ categorical variables using the |MinHash| and |OneHotEncoder|:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 196-198
+.. GENERATED FROM PYTHON SOURCE LINES 195-197
 
 We incorporate our |ColumnTransformer| into a |Pipeline|.
 We define a predictor, |HGBR|, fast and reliable for big datasets.
 
-.. GENERATED FROM PYTHON SOURCE LINES 198-204
+.. GENERATED FROM PYTHON SOURCE LINES 197-203
 
 .. code-block:: Python
 
@@ -579,11 +585,11 @@ We define a predictor, |HGBR|, fast and reliable for big datasets.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 205-206
+.. GENERATED FROM PYTHON SOURCE LINES 204-205
 
 The |Pipeline| can now be readily applied to the dataframe for prediction:
 
-.. GENERATED FROM PYTHON SOURCE LINES 206-227
+.. GENERATED FROM PYTHON SOURCE LINES 205-226
 
 .. code-block:: Python
 
@@ -622,7 +628,7 @@ The |Pipeline| can now be readily applied to the dataframe for prediction:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 228-233
+.. GENERATED FROM PYTHON SOURCE LINES 227-232
 
 Prediction with KEN Embeddings
 ------------------------------
@@ -630,11 +636,11 @@ Prediction with KEN Embeddings
 We will now build a second learning pipeline using only the KEN embeddings
 from Wikipedia.
 
-.. GENERATED FROM PYTHON SOURCE LINES 235-236
+.. GENERATED FROM PYTHON SOURCE LINES 234-235
 
 We keep only the embeddings columns:
 
-.. GENERATED FROM PYTHON SOURCE LINES 236-240
+.. GENERATED FROM PYTHON SOURCE LINES 235-239
 
 .. code-block:: Python
 
@@ -649,11 +655,11 @@ We keep only the embeddings columns:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 241-242
+.. GENERATED FROM PYTHON SOURCE LINES 240-241
 
 We redefine the |Pipeline|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 242-244
+.. GENERATED FROM PYTHON SOURCE LINES 241-243
 
 .. code-block:: Python
 
@@ -666,11 +672,11 @@ We redefine the |Pipeline|:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 245-246
+.. GENERATED FROM PYTHON SOURCE LINES 244-245
 
 Let's look at the results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 246-261
+.. GENERATED FROM PYTHON SOURCE LINES 245-260
 
 .. code-block:: Python
 
@@ -703,12 +709,12 @@ Let's look at the results:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 262-264
+.. GENERATED FROM PYTHON SOURCE LINES 261-263
 
 It seems including the embeddings is very relevant for the prediction task
 at hand!
 
-.. GENERATED FROM PYTHON SOURCE LINES 266-272
+.. GENERATED FROM PYTHON SOURCE LINES 265-271
 
 Prediction with KEN Embeddings and base features
 ------------------------------------------------
@@ -717,11 +723,11 @@ As we have seen the predictions scores in the case when embeddings are
 only present and when they are missing, we will do a final prediction
 with all variables included.
 
-.. GENERATED FROM PYTHON SOURCE LINES 274-275
+.. GENERATED FROM PYTHON SOURCE LINES 273-274
 
 We include both the embeddings and the base features:
 
-.. GENERATED FROM PYTHON SOURCE LINES 275-284
+.. GENERATED FROM PYTHON SOURCE LINES 274-283
 
 .. code-block:: Python
 
@@ -741,11 +747,11 @@ We include both the embeddings and the base features:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 285-286
+.. GENERATED FROM PYTHON SOURCE LINES 284-285
 
 We redefine the |Pipeline|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 286-288
+.. GENERATED FROM PYTHON SOURCE LINES 285-287
 
 .. code-block:: Python
 
@@ -758,11 +764,11 @@ We redefine the |Pipeline|:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 289-290
+.. GENERATED FROM PYTHON SOURCE LINES 288-289
 
 Let's look at the results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 290-305
+.. GENERATED FROM PYTHON SOURCE LINES 289-304
 
 .. code-block:: Python
 
@@ -795,14 +801,14 @@ Let's look at the results:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 306-310
+.. GENERATED FROM PYTHON SOURCE LINES 305-309
 
 Plotting the results
 ....................
 
 Finally, we plot the scores on a boxplot:
 
-.. GENERATED FROM PYTHON SOURCE LINES 310-317
+.. GENERATED FROM PYTHON SOURCE LINES 309-316
 
 .. code-block:: Python
 
@@ -825,7 +831,7 @@ Finally, we plot the scores on a boxplot:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 318-327
+.. GENERATED FROM PYTHON SOURCE LINES 317-326
 
 There is a clear improvement when including the KEN embeddings among the
 explanatory variables.
@@ -840,7 +846,7 @@ It helped significantly improve the prediction score.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 57.970 seconds)
+   **Total running time of the script:** (1 minutes 6.896 seconds)
 
 
 .. _sphx_glr_download_auto_examples_06_ken_embeddings.py:
@@ -852,7 +858,7 @@ It helped significantly improve the prediction score.
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/06_ken_embeddings.ipynb
+        :target: https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/06_ken_embeddings.ipynb
         :alt: Launch binder
         :width: 150 px
 

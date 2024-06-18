@@ -51,7 +51,7 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
-    <script src="_static/documentation_options.js?v=01f34227"></script>
+    <script src="_static/documentation_options.js?v=130a53a1"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -505,14 +505,24 @@ multiple auxiliary tables. <a class="reference external" href="https://github.co
 parameters were renamed to be consistent with the <a class="reference internal" href="generated/skrub.MultiAggJoiner.html#skrub.MultiAggJoiner" title="skrub.MultiAggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiAggJoiner</span></code></a>.
 It now has a <code class="docutils literal notranslate"><span class="pre">key`</span></code> parameter that allows to join main and auxiliary tables that share
 the same column names. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/876">#876</a> by <a class="reference external" href="https://github.com/TheooJ">Théo Jolivet</a>.</p></li>
+<li><p><a class="reference internal" href="generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a> has been added to easily create a supervised
+learner that works well on tabular data. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/926">#926</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 </ul>
 </section>
 <section id="minor-changes">
 <h3>Minor changes<a class="headerlink" href="#minor-changes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> and <a class="reference internal" href="generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> used to modify their input
+in-place, replacing missing values with a string. They no longer do so. Their
+parameter <cite>handle_missing</cite> has been removed; now missing values are always
+treated as the empty string.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/930">#930</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>The minimum supported python version is now 3.9
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/939">#939</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>Skrub supports numpy 2. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/946">#946</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p><a class="reference internal" href="generated/skrub.datasets.fetch_ken_embeddings.html#skrub.datasets.fetch_ken_embeddings" title="skrub.datasets.fetch_ken_embeddings"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_embeddings()</span></code></a> now add suffix even with the default
+value for the parameter <cite>pca_components</cite>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/956">#956</a> by <a class="reference external" href="https://github.com/glemaitre">Guillaume Lemaitre</a>.</p></li>
 </ul>
 </section>
 </section>

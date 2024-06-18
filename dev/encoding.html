@@ -51,7 +51,7 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
-    <script src="_static/documentation_options.js?v=01f34227"></script>
+    <script src="_static/documentation_options.js?v=130a53a1"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -488,6 +488,11 @@ representation of these columns help analytics and statistical learning.</p>
 different data-specific encoder to the different columns. It makes
 heuristic choices that are not necessarily optimal but is typically a
 very good baseline.</p>
+<p>The function <a class="reference internal" href="generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a> is an easy way to create a machine-learning
+model that works well on tabular data. It is given a scikit-learn estimator and
+creates a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a> combining a
+<a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, optional missing value imputation and the provided
+estimator.</p>
 </section>
 <section id="encoding-open-ended-entries-and-dirty-categories">
 <span id="dirty-categories"></span><h2>Encoding open-ended entries and dirty categories<a class="headerlink" href="#encoding-open-ended-entries-and-dirty-categories" title="Link to this heading">#</a></h2>

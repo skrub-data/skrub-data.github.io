@@ -151,31 +151,31 @@ Note that we use the light version (100k rows).
         <tr>
           <th>0</th>
           <td>429</td>
-          <td>22</td>
+          <td>165</td>
           <td>1996-03-29 18:36:55</td>
         </tr>
         <tr>
           <th>1</th>
           <td>429</td>
-          <td>150</td>
+          <td>161</td>
           <td>1996-03-29 18:36:55</td>
         </tr>
         <tr>
           <th>2</th>
           <td>429</td>
-          <td>161</td>
+          <td>150</td>
           <td>1996-03-29 18:36:55</td>
         </tr>
         <tr>
           <th>3</th>
           <td>429</td>
-          <td>165</td>
+          <td>22</td>
           <td>1996-03-29 18:36:55</td>
         </tr>
         <tr>
           <th>4</th>
           <td>429</td>
-          <td>218</td>
+          <td>432</td>
           <td>1996-03-29 18:36:55</td>
         </tr>
       </tbody>
@@ -246,7 +246,7 @@ columns, and doesn't interact with numerical columns.
         <tr>
           <th>0</th>
           <td>429.0</td>
-          <td>22.0</td>
+          <td>165.0</td>
           <td>1996.0</td>
           <td>3.0</td>
           <td>29.0</td>
@@ -257,7 +257,7 @@ columns, and doesn't interact with numerical columns.
         <tr>
           <th>1</th>
           <td>429.0</td>
-          <td>150.0</td>
+          <td>161.0</td>
           <td>1996.0</td>
           <td>3.0</td>
           <td>29.0</td>
@@ -268,7 +268,7 @@ columns, and doesn't interact with numerical columns.
         <tr>
           <th>2</th>
           <td>429.0</td>
-          <td>161.0</td>
+          <td>150.0</td>
           <td>1996.0</td>
           <td>3.0</td>
           <td>29.0</td>
@@ -279,7 +279,7 @@ columns, and doesn't interact with numerical columns.
         <tr>
           <th>3</th>
           <td>429.0</td>
-          <td>165.0</td>
+          <td>22.0</td>
           <td>1996.0</td>
           <td>3.0</td>
           <td>29.0</td>
@@ -290,7 +290,7 @@ columns, and doesn't interact with numerical columns.
         <tr>
           <th>4</th>
           <td>429.0</td>
-          <td>218.0</td>
+          <td>432.0</td>
           <td>1996.0</td>
           <td>3.0</td>
           <td>29.0</td>
@@ -502,7 +502,7 @@ This feature answer questions like
         <tr>
           <th>0</th>
           <td>429</td>
-          <td>22</td>
+          <td>165</td>
           <td>1996-03-29 18:36:55</td>
           <td>2</td>
           <td>14</td>
@@ -511,7 +511,7 @@ This feature answer questions like
         <tr>
           <th>1</th>
           <td>429</td>
-          <td>150</td>
+          <td>161</td>
           <td>1996-03-29 18:36:55</td>
           <td>2</td>
           <td>14</td>
@@ -520,7 +520,7 @@ This feature answer questions like
         <tr>
           <th>2</th>
           <td>429</td>
-          <td>161</td>
+          <td>150</td>
           <td>1996-03-29 18:36:55</td>
           <td>2</td>
           <td>14</td>
@@ -529,7 +529,7 @@ This feature answer questions like
         <tr>
           <th>3</th>
           <td>429</td>
-          <td>165</td>
+          <td>22</td>
           <td>1996-03-29 18:36:55</td>
           <td>2</td>
           <td>14</td>
@@ -538,7 +538,7 @@ This feature answer questions like
         <tr>
           <th>4</th>
           <td>429</td>
-          <td>218</td>
+          <td>432</td>
           <td>1996-03-29 18:36:55</td>
           <td>2</td>
           <td>14</td>
@@ -626,23 +626,14 @@ This feature answer questions like
         <tr>
           <th>0</th>
           <td>429</td>
-          <td>22</td>
+          <td>165</td>
           <td>1996-03-29 18:36:55</td>
-          <td>4</td>
-          <td>24</td>
-          <td>8</td>
+          <td>14</td>
+          <td>64</td>
+          <td>66</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>429</td>
-          <td>150</td>
-          <td>1996-03-29 18:36:55</td>
-          <td>13</td>
-          <td>61</td>
-          <td>127</td>
-        </tr>
-        <tr>
-          <th>2</th>
           <td>429</td>
           <td>161</td>
           <td>1996-03-29 18:36:55</td>
@@ -651,22 +642,31 @@ This feature answer questions like
           <td>57</td>
         </tr>
         <tr>
+          <th>2</th>
+          <td>429</td>
+          <td>150</td>
+          <td>1996-03-29 18:36:55</td>
+          <td>13</td>
+          <td>61</td>
+          <td>127</td>
+        </tr>
+        <tr>
           <th>3</th>
           <td>429</td>
-          <td>165</td>
+          <td>22</td>
           <td>1996-03-29 18:36:55</td>
-          <td>14</td>
-          <td>64</td>
-          <td>66</td>
+          <td>4</td>
+          <td>24</td>
+          <td>8</td>
         </tr>
         <tr>
           <th>4</th>
           <td>429</td>
-          <td>218</td>
+          <td>432</td>
           <td>1996-03-29 18:36:55</td>
-          <td>3</td>
-          <td>4</td>
-          <td>7</td>
+          <td>18</td>
+          <td>29</td>
+          <td>8</td>
         </tr>
       </tbody>
     </table>
@@ -1246,75 +1246,75 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split1_test_score</th>
-          <td>0.047162</td>
-          <td>0.059433</td>
-          <td>0.073297</td>
-          <td>0.060398</td>
-          <td>0.083929</td>
+          <td>0.054463</td>
+          <td>0.046122</td>
+          <td>0.080346</td>
+          <td>0.069388</td>
+          <td>0.075261</td>
         </tr>
         <tr>
           <th>split2_test_score</th>
-          <td>0.074429</td>
-          <td>0.083207</td>
-          <td>0.094998</td>
-          <td>0.091920</td>
-          <td>0.094812</td>
+          <td>0.061494</td>
+          <td>0.068737</td>
+          <td>0.089393</td>
+          <td>0.094356</td>
+          <td>0.087026</td>
         </tr>
         <tr>
           <th>split3_test_score</th>
-          <td>0.042405</td>
-          <td>0.063531</td>
-          <td>0.058621</td>
-          <td>0.068696</td>
-          <td>0.069731</td>
+          <td>0.044446</td>
+          <td>0.056702</td>
+          <td>0.061511</td>
+          <td>0.050444</td>
+          <td>0.073179</td>
         </tr>
         <tr>
           <th>split4_test_score</th>
-          <td>0.146837</td>
-          <td>0.141527</td>
-          <td>0.149569</td>
-          <td>0.158737</td>
-          <td>0.153616</td>
+          <td>0.136572</td>
+          <td>0.114219</td>
+          <td>0.145751</td>
+          <td>0.143555</td>
+          <td>0.151631</td>
         </tr>
         <tr>
           <th>split5_test_score</th>
-          <td>0.109760</td>
-          <td>0.110148</td>
-          <td>0.105033</td>
-          <td>0.110091</td>
-          <td>0.112991</td>
+          <td>0.110569</td>
+          <td>0.116141</td>
+          <td>0.110432</td>
+          <td>0.112796</td>
+          <td>0.113174</td>
         </tr>
         <tr>
           <th>split6_test_score</th>
-          <td>0.080174</td>
-          <td>0.097458</td>
-          <td>0.102113</td>
-          <td>0.103453</td>
-          <td>0.106780</td>
+          <td>0.082746</td>
+          <td>0.105560</td>
+          <td>0.104033</td>
+          <td>0.110764</td>
+          <td>0.107833</td>
         </tr>
         <tr>
           <th>split7_test_score</th>
-          <td>0.070519</td>
-          <td>0.058398</td>
-          <td>0.052246</td>
-          <td>0.073233</td>
-          <td>0.079169</td>
+          <td>0.073750</td>
+          <td>0.070139</td>
+          <td>0.053699</td>
+          <td>0.057717</td>
+          <td>0.068587</td>
         </tr>
         <tr>
           <th>split8_test_score</th>
-          <td>0.098665</td>
-          <td>0.122603</td>
-          <td>0.123162</td>
-          <td>0.126128</td>
-          <td>0.124723</td>
+          <td>0.109433</td>
+          <td>0.115764</td>
+          <td>0.115971</td>
+          <td>0.121953</td>
+          <td>0.126370</td>
         </tr>
         <tr>
           <th>split9_test_score</th>
-          <td>0.102387</td>
-          <td>0.159651</td>
-          <td>0.170743</td>
-          <td>0.169846</td>
-          <td>0.183536</td>
+          <td>0.110361</td>
+          <td>0.156602</td>
+          <td>0.165910</td>
+          <td>0.156807</td>
+          <td>0.178592</td>
         </tr>
       </tbody>
     </table>
@@ -1413,7 +1413,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 19.171 seconds)
+   **Total running time of the script:** (0 minutes 17.169 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:
@@ -1425,7 +1425,7 @@ exhaustive histogram over all the possible values of ratings
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.1.0?urlpath=lab/tree/notebooks/auto_examples/08_join_aggregation.ipynb
+        :target: https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/08_join_aggregation.ipynb
         :alt: Launch binder
         :width: 150 px
 
