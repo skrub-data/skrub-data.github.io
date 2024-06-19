@@ -531,7 +531,7 @@ document.write(`
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.tabular_learner<a class="headerlink" href="#skrub-tabular-learner" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.tabular_learner">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ef4ebf8/skrub/_tabular_learner.py#L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_learner" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e0f60f3/skrub/_tabular_learner.py#L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_learner" title="Link to this definition">#</a></dt>
 <dd><p>Get a simple machine-learning pipeline for tabular data.</p>
 <p>Given a scikit-learn <code class="docutils literal notranslate"><span class="pre">estimator</span></code>, this function creates a
 machine-learning pipeline that preprocesses tabular data to extract numeric
@@ -554,18 +554,26 @@ missing. This step is only added if the <code class="docutils literal notranslat
 missing values itself.</p></li>
 <li><p>the last step is the provided <code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p></li>
 </ul>
-<p><strong>Note:</strong> <code class="docutils literal notranslate"><span class="pre">tabular_learner</span></code> is a recent addition and the heuristics used
+<p>Read more in the <a class="reference internal" href="../encoding.html#table-vectorizer"><span class="std std-ref">User Guide</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">tabular_learner</span></code> is a recent addition and the heuristics used
 to define an appropriate preprocessing based on the <code class="docutils literal notranslate"><span class="pre">estimator</span></code> may change
 in future releases.</p>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>estimator</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or scikit-learn estimator</span></dt><dd><p>The estimator to use as the final step in the pipeline. Appropriate
-choices are made for previous steps depending on the <code class="docutils literal notranslate"><span class="pre">estimator</span></code>. Can
-be the string <code class="docutils literal notranslate"><span class="pre">'regressor'</span></code> to use a
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a> or
-<code class="docutils literal notranslate"><span class="pre">'classifier'</span></code> to use a
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>.</p>
+<dt><strong>estimator</strong><span class="classifier">{“regressor”, “classifier”} or scikit-learn estimator</span></dt><dd><p>The estimator to use as the final step in the pipeline. Based on the type of
+estimator, the previous preprocessing steps and their respective parameters are
+chosen. The possible values are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'regressor'</span></code>: a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>
+is used as the final step;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'classifier'</span></code>: a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>
+is used as the final step;</p></li>
+<li><p>a scikit-learn estimator: the provided estimator is used as the final step.</p></li>
+</ul>
 </dd>
 <dt><strong>n_jobs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=None</span></dt><dd><p>Number of jobs to run in parallel in the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> step.
 <code class="docutils literal notranslate"><span class="pre">None</span></code> means 1 unless in a joblib <code class="docutils literal notranslate"><span class="pre">parallel_backend</span></code> context.
@@ -581,12 +589,28 @@ preprocessing and the provided <code class="docutils literal notranslate"><span 
 </dl>
 </dd>
 </dl>
+<p class="rubric">Notes</p>
+<p>The parameter values for the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> might differ depending on the
+version of scikit-learn:</p>
+<ul class="simple">
+<li><p>support for categorical features in
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a> and
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a> was added in
+scikit-learn 1.4. Therefore, before this version, a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code></a> is used for low-cardinality
+features.</p></li>
+<li><p>support for missing values in
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomForestClassifier</span></code></a> and
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomForestRegressor</span></code></a> was added in scikit-learn 1.4.
+Therefore, before this version, a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a> is used
+to impute missing values.</p></li>
+</ul>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <span class="n">tabular_learner</span>
 </pre></div>
 </div>
-<p>We can easily get a default pipeline for classification or regression:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;regressor&#39;</span><span class="p">)</span>                             
+<p>We can easily get a default pipeline for regression or classification:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;regressor&#39;</span><span class="p">)</span>                                    
 <span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
 <span class="go">                 TableVectorizer(high_cardinality_transformer=MinHashEncoder(),</span>
 <span class="go">                                 low_cardinality_transformer=ToCategorical())),</span>
@@ -594,7 +618,9 @@ preprocessing and the provided <code class="docutils literal notranslate"><span 
 <span class="go">                 HistGradientBoostingRegressor(categorical_features=&#39;from_dtype&#39;))])</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">)</span>                            
+<p>When requesting a <code class="docutils literal notranslate"><span class="pre">'regressor'</span></code>, the last step of the pipeline is set to a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">)</span>                                   
 <span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
 <span class="go">                 TableVectorizer(high_cardinality_transformer=MinHashEncoder(),</span>
 <span class="go">                                 low_cardinality_transformer=ToCategorical())),</span>
@@ -602,6 +628,8 @@ preprocessing and the provided <code class="docutils literal notranslate"><span 
 <span class="go">                 HistGradientBoostingClassifier(categorical_features=&#39;from_dtype&#39;))])</span>
 </pre></div>
 </div>
+<p>When requesting a <code class="docutils literal notranslate"><span class="pre">'classifier'</span></code>, the last step of the pipeline is set to a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>.</p>
 <p>This pipeline can be applied to rich tabular data:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
@@ -612,7 +640,7 @@ preprocessing and the provided <code class="docutils literal notranslate"><span 
 <span class="gp">... </span>        <span class="s2">&quot;fasting_glucose&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">35</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">137</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span>
 <span class="go">   last_visit   medication insulin_prescriptions  fasting_glucose</span>
 <span class="go">0  2020-01-02         None                   N/A               35</span>
@@ -623,14 +651,11 @@ preprocessing and the provided <code class="docutils literal notranslate"><span 
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-<span class="go">array([False, False, False, False])</span>
+<span class="go">array([0, 0, 0, 0])</span>
 </pre></div>
 </div>
-<p>If we pass <code class="docutils literal notranslate"><span class="pre">estimator=&quot;regressor&quot;</span></code>, the last step of the pipeline is a
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>. If we pass
-<code class="docutils literal notranslate"><span class="pre">estimator=&quot;classifier&quot;</span></code>, it is a
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>. Rather than using
-the default estimator, we can provide our own:</p>
+<p>Rather than using the default estimator, we can provide our own scikit-learn
+estimator:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">tabular_learner</span><span class="p">(</span><span class="n">LogisticRegression</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
@@ -639,10 +664,10 @@ the default estimator, we can provide our own:</p>
 <span class="go">                (&#39;logisticregression&#39;, LogisticRegression())])</span>
 </pre></div>
 </div>
-<p>By applying only the first pipeline step we can see the transformed data
-that is sent to the supervised estimator (see the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>
-documentation for details):</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">&#39;tablevectorizer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>            
+<p>By applying only the first pipeline step we can see the transformed data that is
+sent to the supervised estimator (see the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> documentation for
+details):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">&#39;tablevectorizer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>               
 <span class="go">   last_visit_year  last_visit_month  ...  insulin_prescriptions  fasting_glucose</span>
 <span class="go">0           2020.0               1.0  ...                    NaN             35.0</span>
 <span class="go">1           2021.0               4.0  ...                   13.0            140.0</span>
@@ -650,21 +675,21 @@ documentation for details):</p>
 <span class="go">3           2023.0               8.0  ...                   17.0            137.0</span>
 </pre></div>
 </div>
-<p>The parameters of the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> depend on the provided
-<code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p>
+<p>The parameters of the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> depend on the provided <code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="n">LogisticRegression</span><span class="p">())</span>
 <span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;, TableVectorizer()),</span>
 <span class="go">                (&#39;simpleimputer&#39;, SimpleImputer(add_indicator=True)),</span>
 <span class="go">                (&#39;logisticregression&#39;, LogisticRegression())])</span>
 </pre></div>
 </div>
-<p>We see that for the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a> we get
-the default configuration of the <code class="docutils literal notranslate"><span class="pre">TableVectorizer</span></code> which is intended to
-work well for a wide variety of downstream estimators. Moreover, as the
-<code class="docutils literal notranslate"><span class="pre">LogisticRegression</span></code> cannot handle missing values, an imputation step is
-added.</p>
-<p>On the other hand, For the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">)</span>                             
+<p>We see that for the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a> we get the
+default configuration of the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> which is intended to work well
+for a wide variety of downstream estimators. Moreover, as the
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a> cannot handle missing values, an
+imputation step is added.</p>
+<p>On the other hand, For the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>
+(generated with the string <code class="docutils literal notranslate"><span class="pre">&quot;classifier&quot;</span></code>):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">)</span>                                   
 <span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
 <span class="go">                 TableVectorizer(high_cardinality_transformer=MinHashEncoder(),</span>
 <span class="go">                                 low_cardinality_transformer=ToCategorical())),</span>
