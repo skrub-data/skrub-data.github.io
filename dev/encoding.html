@@ -518,7 +518,7 @@ type of the final estimator.</p>
 <tr class="row-even"><td><p>Numerical preprocessor</p></td>
 <td><p>No processing</p></td>
 <td><p>No processing</p></td>
-<td><p>No processing</p></td>
+<td><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">StandardScaler</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Date preprocessor</p></td>
 <td><p><a class="reference internal" href="generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a></p></td>
@@ -547,11 +547,14 @@ categorical features. It does not provide interpretable features as the default
 <a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> but it is much faster. For low-cardinality, these models relies on
 either the native support of the model or the
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code></a>.</p>
-<p>With linear models or unknown models, the default values of the different parameters are
-used. Therefore, the <a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> is used for high-cardinality categorical features
-and the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a> for low-cardinality ones. If the
-final estimator does not support missing values, a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a>
-is added before the final estimator. Those choices are not optimal but they are
+<p>With linear models or unknown models, the default values of the different
+parameters are used. Therefore, the <a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> is used for
+high-cardinality categorical features and the
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a> for low-cardinality ones. If the
+final estimator does not support missing values, a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a> is added before the final estimator.
+Finally, a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> is added to the
+pipeline. Those choices may not be optimal in all cases but they are
 methodologically safe.</p>
 </section>
 <section id="encoding-open-ended-entries-and-dirty-categories">
