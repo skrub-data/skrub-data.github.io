@@ -452,7 +452,7 @@ This feature answer questions like
  .. code-block:: none
 
 
-    (100836, 6)
+    (100836, 7)
 
 
 
@@ -491,6 +491,7 @@ This feature answer questions like
           <th>userId</th>
           <th>movieId</th>
           <th>timestamp</th>
+          <th>index</th>
           <th>rating_(0.499, 2.0]_user</th>
           <th>rating_(2.0, 3.5]_user</th>
           <th>rating_(3.5, 5.0]_user</th>
@@ -502,6 +503,7 @@ This feature answer questions like
           <td>429</td>
           <td>165</td>
           <td>1996-03-29 18:36:55</td>
+          <td>428</td>
           <td>2</td>
           <td>14</td>
           <td>42</td>
@@ -511,6 +513,7 @@ This feature answer questions like
           <td>429</td>
           <td>161</td>
           <td>1996-03-29 18:36:55</td>
+          <td>428</td>
           <td>2</td>
           <td>14</td>
           <td>42</td>
@@ -520,6 +523,7 @@ This feature answer questions like
           <td>429</td>
           <td>150</td>
           <td>1996-03-29 18:36:55</td>
+          <td>428</td>
           <td>2</td>
           <td>14</td>
           <td>42</td>
@@ -529,6 +533,7 @@ This feature answer questions like
           <td>429</td>
           <td>22</td>
           <td>1996-03-29 18:36:55</td>
+          <td>428</td>
           <td>2</td>
           <td>14</td>
           <td>42</td>
@@ -538,6 +543,7 @@ This feature answer questions like
           <td>429</td>
           <td>432</td>
           <td>1996-03-29 18:36:55</td>
+          <td>428</td>
           <td>2</td>
           <td>14</td>
           <td>42</td>
@@ -576,7 +582,7 @@ This feature answer questions like
  .. code-block:: none
 
 
-    (100836, 6)
+    (100836, 7)
 
 
 
@@ -615,6 +621,7 @@ This feature answer questions like
           <th>userId</th>
           <th>movieId</th>
           <th>timestamp</th>
+          <th>index</th>
           <th>rating_(0.499, 2.0]_movie</th>
           <th>rating_(2.0, 3.5]_movie</th>
           <th>rating_(3.5, 5.0]_movie</th>
@@ -626,6 +633,7 @@ This feature answer questions like
           <td>429</td>
           <td>165</td>
           <td>1996-03-29 18:36:55</td>
+          <td>138</td>
           <td>14</td>
           <td>64</td>
           <td>66</td>
@@ -635,6 +643,7 @@ This feature answer questions like
           <td>429</td>
           <td>161</td>
           <td>1996-03-29 18:36:55</td>
+          <td>134</td>
           <td>8</td>
           <td>38</td>
           <td>57</td>
@@ -644,6 +653,7 @@ This feature answer questions like
           <td>429</td>
           <td>150</td>
           <td>1996-03-29 18:36:55</td>
+          <td>123</td>
           <td>13</td>
           <td>61</td>
           <td>127</td>
@@ -653,6 +663,7 @@ This feature answer questions like
           <td>429</td>
           <td>22</td>
           <td>1996-03-29 18:36:55</td>
+          <td>21</td>
           <td>4</td>
           <td>24</td>
           <td>8</td>
@@ -662,6 +673,7 @@ This feature answer questions like
           <td>429</td>
           <td>432</td>
           <td>1996-03-29 18:36:55</td>
+          <td>376</td>
           <td>18</td>
           <td>29</td>
           <td>8</td>
@@ -1204,6 +1216,1413 @@ operation maximizing our validation score.
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_71586c5e__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_7bbb2052__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_f66e5fea__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_bfd0a3bb__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_ec8e70e7__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_97cacd56__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_31e3cafd__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_b9a61069__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_84e66dd0__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_000cfbae__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_077e8198__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_6241bb1e__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_118ecd96__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_f4d2c726__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_2c119780__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_534a642a__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_a812574f__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_f04887d2__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_ed73cc14__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_74c6f576__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_bb989baf__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_b9b4e9ab__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_798ac520__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_02028eec__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_e2c78d46__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_077d2c3d__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_8e1fc5c7__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_a749695a__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_4342ba01__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_6cdc7f4b__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_b2e3c8cb__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_2b40237d__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_ea742a50__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_30a96a99__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_78928524__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_e5ed1962__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_6876456b__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_c8afe005__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_731edc96__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_02a50122__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_1fef2c22__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_8a5955ec__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_72f1782b__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_72b22caa__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_20a8cbf4__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_30d19dbb__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_35e29b31__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_4a01f1c4__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_101ddb0e__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_c699a469__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_3a914bf6__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_bc6502a9__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_10014cc1__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_fd6cb6b8__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_1f10ea8c__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_f326384b__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_9cac82f1__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_59ded025__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_314f4dbf__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_475af98f__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_034dbcd3__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_b150d1d2__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_8aa61173__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_d3b426d5__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_95436bb5__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_c9a9f5d0__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_9f71bea9__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_39449c76__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_74525b68__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_81511aea__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_847f9547__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_1ce16744__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_eece7b74__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_031b14de__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_050e7c19__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_4651c00f__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_01e138e6__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_185116aa__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+    Traceback (most recent call last):
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 971, in _score
+        scores = scorer(estimator, X_test, y_test, **score_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/metrics/_scorer.py", line 455, in __call__
+        return estimator.score(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/pipeline.py", line 1007, in score
+        return self.steps[-1][1].score(Xt, y, **score_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 848, in score
+        y_pred = self.predict(X)
+                 ^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1769, in predict
+        return self._loss.link.inverse(self._raw_predict(X).ravel())
+                                       ^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 1278, in _raw_predict
+        X = self._preprocess_X(X, reset=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py", line 268, in _preprocess_X
+        return self._validate_data(X, reset=False, **check_X_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 608, in _validate_data
+        self._check_feature_names(X, reset=reset)
+      File "/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py", line 535, in _check_feature_names
+        raise ValueError(message)
+    ValueError: The feature names should match those that were passed during fit.
+    Feature names unseen at fit time:
+    - index__skrub_348dae37__
+    Feature names seen at fit time, yet now missing:
+    - index__skrub_d93df3c9__
+
+
+      warnings.warn(
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_search.py:1052: UserWarning: One or more of the test scores are non-finite: [0.0842811       nan       nan       nan       nan]
+      warnings.warn(
+
 
 .. raw:: html
 
@@ -1237,82 +2656,82 @@ operation maximizing our validation score.
         <tr>
           <th>split0_test_score</th>
           <td>0.034264</td>
-          <td>0.027167</td>
-          <td>0.009765</td>
-          <td>0.009765</td>
-          <td>0.009765</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>split1_test_score</th>
-          <td>0.063916</td>
-          <td>0.058114</td>
-          <td>0.069936</td>
-          <td>0.079609</td>
-          <td>0.073004</td>
+          <td>0.043361</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>split2_test_score</th>
-          <td>0.076880</td>
-          <td>0.074581</td>
-          <td>0.093808</td>
-          <td>0.090941</td>
-          <td>0.085261</td>
+          <td>0.086969</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>split3_test_score</th>
-          <td>0.040804</td>
-          <td>0.068131</td>
-          <td>0.071340</td>
-          <td>0.057854</td>
-          <td>0.071382</td>
+          <td>0.038222</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>split4_test_score</th>
-          <td>0.144380</td>
-          <td>0.127193</td>
-          <td>0.144171</td>
-          <td>0.148482</td>
-          <td>0.150566</td>
+          <td>0.143955</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>split5_test_score</th>
-          <td>0.105768</td>
-          <td>0.116994</td>
-          <td>0.106779</td>
-          <td>0.111770</td>
-          <td>0.116436</td>
+          <td>0.111003</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>split6_test_score</th>
-          <td>0.085345</td>
-          <td>0.101782</td>
-          <td>0.103742</td>
-          <td>0.102632</td>
-          <td>0.094760</td>
+          <td>0.084533</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>split7_test_score</th>
-          <td>0.066611</td>
-          <td>0.063045</td>
-          <td>0.056341</td>
-          <td>0.067255</td>
-          <td>0.077756</td>
+          <td>0.065682</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>split8_test_score</th>
-          <td>0.108591</td>
-          <td>0.115411</td>
-          <td>0.115062</td>
-          <td>0.121034</td>
-          <td>0.132329</td>
+          <td>0.100736</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>split9_test_score</th>
-          <td>0.109407</td>
-          <td>0.154915</td>
-          <td>0.165946</td>
-          <td>0.164202</td>
-          <td>0.183856</td>
+          <td>0.134086</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>NaN</td>
         </tr>
       </tbody>
     </table>
@@ -1411,7 +2830,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 16.743 seconds)
+   **Total running time of the script:** (0 minutes 21.144 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:

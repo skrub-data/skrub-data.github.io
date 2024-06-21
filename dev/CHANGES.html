@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: The TableVectorizer now consistently appli..." />
+<meta property="og:description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: The Joiner has been adapted to support pol..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: The TableVectorizer now consistently appli..." />
+<meta name="description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: The Joiner has been adapted to support pol..." />
 
     <title>Changes &#8212; skrub</title>
   
@@ -487,6 +487,7 @@ It is currently undergoing fast development and backward compatibility is not en
 <section id="major-changes">
 <h3>Major changes<a class="headerlink" href="#major-changes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>The <a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a> has been adapted to support polars dataframes. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/945">#945</a> by <a class="reference external" href="https://github.com/TheooJ">Théo Jolivet</a>.</p></li>
 <li><p>The <a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> now consistently applies the same transformation
 across different calls to <cite>transform</cite>. There also have been some breaking
 changes to its functionality: (i) all transformations are now applied
