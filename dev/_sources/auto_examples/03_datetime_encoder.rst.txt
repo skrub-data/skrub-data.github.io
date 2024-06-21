@@ -294,14 +294,12 @@ we can replace its default parameter with a new, custom instance:
 
 Here, for example, we want it to extract the day of the week.
 
-.. GENERATED FROM PYTHON SOURCE LINES 122-128
+.. GENERATED FROM PYTHON SOURCE LINES 122-126
 
 .. code-block:: Python
 
 
-    table_vec = TableVectorizer(
-        datetime_transformer=DatetimeEncoder(add_weekday=True),
-    ).fit(X)
+    table_vec = TableVectorizer(datetime=DatetimeEncoder(add_weekday=True)).fit(X)
     pprint(table_vec.get_feature_names_out())
 
 
@@ -319,7 +317,7 @@ Here, for example, we want it to extract the day of the week.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 129-135
+.. GENERATED FROM PYTHON SOURCE LINES 127-133
 
 .. note:
     For more information on how to customize the |TableVectorizer|, see
@@ -328,7 +326,7 @@ Here, for example, we want it to extract the day of the week.
 Inspecting the |TableVectorizer| further, we can check that the
 |DatetimeEncoder| is used on the correct column(s).
 
-.. GENERATED FROM PYTHON SOURCE LINES 135-137
+.. GENERATED FROM PYTHON SOURCE LINES 133-135
 
 .. code-block:: Python
 
@@ -349,7 +347,7 @@ Inspecting the |TableVectorizer| further, we can check that the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 138-152
+.. GENERATED FROM PYTHON SOURCE LINES 136-150
 
 Prediction with datetime features
 ---------------------------------
@@ -366,7 +364,7 @@ Here's we'll use a |HGBR| as our learner.
    from sklearn.experimental import enable_hist_gradient_boosting
    ```
 
-.. GENERATED FROM PYTHON SOURCE LINES 152-157
+.. GENERATED FROM PYTHON SOURCE LINES 150-155
 
 .. code-block:: Python
 
@@ -382,7 +380,7 @@ Here's we'll use a |HGBR| as our learner.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 158-167
+.. GENERATED FROM PYTHON SOURCE LINES 156-165
 
 Evaluating the model
 ....................
@@ -394,7 +392,7 @@ the standard settings of the cross-validation do not respect time ordering.
 Instead, we can use the |TimeSeriesSplit|,
 which ensures that the test set is always in the future.
 
-.. GENERATED FROM PYTHON SOURCE LINES 167-177
+.. GENERATED FROM PYTHON SOURCE LINES 165-175
 
 .. code-block:: Python
 
@@ -422,7 +420,7 @@ which ensures that the test set is always in the future.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 178-183
+.. GENERATED FROM PYTHON SOURCE LINES 176-181
 
 Plotting the prediction
 .......................
@@ -430,7 +428,7 @@ Plotting the prediction
 The mean squared error is not obvious to interpret, so we compare
 visually the prediction of our model with the actual values.
 
-.. GENERATED FROM PYTHON SOURCE LINES 183-216
+.. GENERATED FROM PYTHON SOURCE LINES 181-214
 
 .. code-block:: Python
 
@@ -479,11 +477,11 @@ visually the prediction of our model with the actual values.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 217-218
+.. GENERATED FROM PYTHON SOURCE LINES 215-216
 
 Let's zoom on a few days:
 
-.. GENERATED FROM PYTHON SOURCE LINES 218-247
+.. GENERATED FROM PYTHON SOURCE LINES 216-245
 
 .. code-block:: Python
 
@@ -528,7 +526,7 @@ Let's zoom on a few days:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 248-256
+.. GENERATED FROM PYTHON SOURCE LINES 246-254
 
 Features importance
 -------------------
@@ -539,15 +537,13 @@ importance of the features created by the |DatetimeEncoder|, using the
 :func:`~sklearn.inspection.permutation_importance` function, which
 basically shuffles a feature and sees how the model changes its prediction.
 
-.. GENERATED FROM PYTHON SOURCE LINES 258-286
+.. GENERATED FROM PYTHON SOURCE LINES 256-282
 
 .. code-block:: Python
 
     from sklearn.inspection import permutation_importance
 
-    table_vec = TableVectorizer(
-        datetime_transformer=DatetimeEncoder(add_weekday=True),
-    )
+    table_vec = TableVectorizer(datetime=DatetimeEncoder(add_weekday=True))
 
     # In this case, we don't use a pipeline, because we want to compute the
     # importance of the features created by the DatetimeEncoder
@@ -583,7 +579,7 @@ basically shuffles a feature and sees how the model changes its prediction.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 287-297
+.. GENERATED FROM PYTHON SOURCE LINES 283-293
 
 We can see that the total seconds since Epoch and the hour of the day
 are the most important feature, which seems reasonable.
@@ -599,7 +595,7 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 3.266 seconds)
+   **Total running time of the script:** (0 minutes 3.296 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:

@@ -194,15 +194,13 @@ Our first step is to extract features from the timestamp, using the
 |TableVectorizer|. Natively, it uses the |DatetimeEncoder| on datetime
 columns, and doesn't interact with numerical columns.
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-94
+.. GENERATED FROM PYTHON SOURCE LINES 86-92
 
 .. code-block:: Python
 
     from skrub import DatetimeEncoder, TableVectorizer
 
-    table_vectorizer = TableVectorizer(
-        datetime_transformer=DatetimeEncoder(add_weekday=True)
-    )
+    table_vectorizer = TableVectorizer(datetime=DatetimeEncoder(add_weekday=True))
     X_date_encoded = table_vectorizer.fit_transform(X)
     X_date_encoded.head()
 
@@ -305,11 +303,11 @@ columns, and doesn't interact with numerical columns.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-96
+.. GENERATED FROM PYTHON SOURCE LINES 93-94
 
 We can now make a couple of plots and gain some insight on our dataset.
 
-.. GENERATED FROM PYTHON SOURCE LINES 96-123
+.. GENERATED FROM PYTHON SOURCE LINES 94-121
 
 .. code-block:: Python
 
@@ -353,22 +351,22 @@ We can now make a couple of plots and gain some insight on our dataset.
 
  .. code-block:: none
 
-    /home/circleci/project/examples/08_join_aggregation.py:107: FutureWarning: 
+    /home/circleci/project/examples/08_join_aggregation.py:105: FutureWarning: 
 
     Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
 
       sns.barplot(x=x, y=y, palette=cmap(norm(y)), ax=ax)
-    /home/circleci/project/examples/08_join_aggregation.py:107: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
+    /home/circleci/project/examples/08_join_aggregation.py:105: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
       sns.barplot(x=x, y=y, palette=cmap(norm(y)), ax=ax)
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 124-125
+.. GENERATED FROM PYTHON SOURCE LINES 122-123
 
 We also display the distribution of our target ``y``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-134
+.. GENERATED FROM PYTHON SOURCE LINES 123-132
 
 .. code-block:: Python
 
@@ -394,18 +392,18 @@ We also display the distribution of our target ``y``.
 
  .. code-block:: none
 
-    /home/circleci/project/examples/08_join_aggregation.py:107: FutureWarning: 
+    /home/circleci/project/examples/08_join_aggregation.py:105: FutureWarning: 
 
     Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
 
       sns.barplot(x=x, y=y, palette=cmap(norm(y)), ax=ax)
-    /home/circleci/project/examples/08_join_aggregation.py:107: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
+    /home/circleci/project/examples/08_join_aggregation.py:105: UserWarning: Numpy array is not a supported type for `palette`. Please convert your palette to a list. This will become an error in v0.14
       sns.barplot(x=x, y=y, palette=cmap(norm(y)), ax=ax)
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 135-158
+.. GENERATED FROM PYTHON SOURCE LINES 133-156
 
 AggTarget: aggregate y, then join
 ---------------------------------
@@ -431,7 +429,7 @@ target with 3 bins, before joining it back on the initial table.
 This feature answer questions like
 *"How many times has this user given a bad, medium or good rate to movies?"*.
 
-.. GENERATED FROM PYTHON SOURCE LINES 158-168
+.. GENERATED FROM PYTHON SOURCE LINES 156-166
 
 .. code-block:: Python
 
@@ -458,7 +456,7 @@ This feature answer questions like
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-171
+.. GENERATED FROM PYTHON SOURCE LINES 167-169
 
 .. code-block:: Python
 
@@ -551,14 +549,14 @@ This feature answer questions like
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 172-176
+.. GENERATED FROM PYTHON SOURCE LINES 170-174
 
 Similarly, we join on ``movieId`` instead of ``userId``.
 
 This feature answer questions like
 *"How many times has this movie received a bad, medium or good rate from users?"*.
 
-.. GENERATED FROM PYTHON SOURCE LINES 176-183
+.. GENERATED FROM PYTHON SOURCE LINES 174-181
 
 .. code-block:: Python
 
@@ -582,7 +580,7 @@ This feature answer questions like
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 184-186
+.. GENERATED FROM PYTHON SOURCE LINES 182-184
 
 .. code-block:: Python
 
@@ -675,7 +673,7 @@ This feature answer questions like
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 187-193
+.. GENERATED FROM PYTHON SOURCE LINES 185-191
 
 Chaining everything together in a pipeline
 ------------------------------------------
@@ -684,7 +682,7 @@ To perform cross-validation and enable hyper-parameter tuning, we gather
 all elements into a scikit-learn |Pipeline| by using |make_pipeline|,
 and define a scikit-learn |HGBR|.
 
-.. GENERATED FROM PYTHON SOURCE LINES 193-205
+.. GENERATED FROM PYTHON SOURCE LINES 191-203
 
 .. code-block:: Python
 
@@ -1113,7 +1111,7 @@ and define a scikit-learn |HGBR|.
       background-color: var(--sklearn-color-fitted-level-3);
     }
     </style><div id="sk-container-id-6" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;,
-                     TableVectorizer(datetime_transformer=DatetimeEncoder(add_weekday=True))),
+                     TableVectorizer(datetime=DatetimeEncoder(add_weekday=True))),
                     (&#x27;aggtarget-1&#x27;,
                      AggTarget(main_key=&#x27;userId&#x27;, operation=&#x27;hist(3)&#x27;,
                                suffix=&#x27;_user&#x27;)),
@@ -1122,7 +1120,7 @@ and define a scikit-learn |HGBR|.
                                suffix=&#x27;_movie&#x27;)),
                     (&#x27;histgradientboostingregressor&#x27;,
                      HistGradientBoostingRegressor(max_depth=4, max_iter=40))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-34" type="checkbox" ><label for="sk-estimator-id-34" class="sk-toggleable__label  sk-toggleable__label-arrow ">&nbsp;&nbsp;Pipeline<a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></label><div class="sk-toggleable__content "><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;,
-                     TableVectorizer(datetime_transformer=DatetimeEncoder(add_weekday=True))),
+                     TableVectorizer(datetime=DatetimeEncoder(add_weekday=True))),
                     (&#x27;aggtarget-1&#x27;,
                      AggTarget(main_key=&#x27;userId&#x27;, operation=&#x27;hist(3)&#x27;,
                                suffix=&#x27;_user&#x27;)),
@@ -1130,14 +1128,14 @@ and define a scikit-learn |HGBR|.
                      AggTarget(main_key=&#x27;movieId&#x27;, operation=&#x27;hist(3)&#x27;,
                                suffix=&#x27;_movie&#x27;)),
                     (&#x27;histgradientboostingregressor&#x27;,
-                     HistGradientBoostingRegressor(max_depth=4, max_iter=40))])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-35" type="checkbox" ><label for="sk-estimator-id-35" class="sk-toggleable__label  sk-toggleable__label-arrow ">tablevectorizer: TableVectorizer</label><div class="sk-toggleable__content "><pre>TableVectorizer(datetime_transformer=DatetimeEncoder(add_weekday=True))</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-36" type="checkbox" ><label for="sk-estimator-id-36" class="sk-toggleable__label  sk-toggleable__label-arrow ">datetime_transformer: DatetimeEncoder</label><div class="sk-toggleable__content "><pre>DatetimeEncoder(add_weekday=True)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-37" type="checkbox" ><label for="sk-estimator-id-37" class="sk-toggleable__label  sk-toggleable__label-arrow ">DatetimeEncoder</label><div class="sk-toggleable__content "><pre>DatetimeEncoder(add_weekday=True)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-38" type="checkbox" ><label for="sk-estimator-id-38" class="sk-toggleable__label  sk-toggleable__label-arrow ">high_cardinality_transformer: GapEncoder</label><div class="sk-toggleable__content "><pre>GapEncoder(n_components=30)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-39" type="checkbox" ><label for="sk-estimator-id-39" class="sk-toggleable__label  sk-toggleable__label-arrow ">GapEncoder</label><div class="sk-toggleable__content "><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-40" type="checkbox" ><label for="sk-estimator-id-40" class="sk-toggleable__label  sk-toggleable__label-arrow ">low_cardinality_transformer: OneHotEncoder</label><div class="sk-toggleable__content "><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
+                     HistGradientBoostingRegressor(max_depth=4, max_iter=40))])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-35" type="checkbox" ><label for="sk-estimator-id-35" class="sk-toggleable__label  sk-toggleable__label-arrow ">tablevectorizer: TableVectorizer</label><div class="sk-toggleable__content "><pre>TableVectorizer(datetime=DatetimeEncoder(add_weekday=True))</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-36" type="checkbox" ><label for="sk-estimator-id-36" class="sk-toggleable__label  sk-toggleable__label-arrow ">datetime: DatetimeEncoder</label><div class="sk-toggleable__content "><pre>DatetimeEncoder(add_weekday=True)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-37" type="checkbox" ><label for="sk-estimator-id-37" class="sk-toggleable__label  sk-toggleable__label-arrow ">DatetimeEncoder</label><div class="sk-toggleable__content "><pre>DatetimeEncoder(add_weekday=True)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-38" type="checkbox" ><label for="sk-estimator-id-38" class="sk-toggleable__label  sk-toggleable__label-arrow ">high_cardinality: GapEncoder</label><div class="sk-toggleable__content "><pre>GapEncoder(n_components=30)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-39" type="checkbox" ><label for="sk-estimator-id-39" class="sk-toggleable__label  sk-toggleable__label-arrow ">GapEncoder</label><div class="sk-toggleable__content "><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-40" type="checkbox" ><label for="sk-estimator-id-40" class="sk-toggleable__label  sk-toggleable__label-arrow ">low_cardinality: OneHotEncoder</label><div class="sk-toggleable__content "><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
                   sparse_output=False)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-41" type="checkbox" ><label for="sk-estimator-id-41" class="sk-toggleable__label  sk-toggleable__label-arrow ">&nbsp;OneHotEncoder<a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></label><div class="sk-toggleable__content "><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
-                  sparse_output=False)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-42" type="checkbox" ><label for="sk-estimator-id-42" class="sk-toggleable__label  sk-toggleable__label-arrow ">numeric_transformer: PassThrough</label><div class="sk-toggleable__content "><pre>PassThrough()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-43" type="checkbox" ><label for="sk-estimator-id-43" class="sk-toggleable__label  sk-toggleable__label-arrow ">PassThrough</label><div class="sk-toggleable__content "><pre>PassThrough()</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-44" type="checkbox" ><label for="sk-estimator-id-44" class="sk-toggleable__label  sk-toggleable__label-arrow ">AggTarget</label><div class="sk-toggleable__content "><pre>AggTarget(main_key=&#x27;userId&#x27;, operation=&#x27;hist(3)&#x27;, suffix=&#x27;_user&#x27;)</pre></div> </div></div><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-45" type="checkbox" ><label for="sk-estimator-id-45" class="sk-toggleable__label  sk-toggleable__label-arrow ">AggTarget</label><div class="sk-toggleable__content "><pre>AggTarget(main_key=&#x27;movieId&#x27;, operation=&#x27;hist(3)&#x27;, suffix=&#x27;_movie&#x27;)</pre></div> </div></div><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-46" type="checkbox" ><label for="sk-estimator-id-46" class="sk-toggleable__label  sk-toggleable__label-arrow ">&nbsp;HistGradientBoostingRegressor<a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a></label><div class="sk-toggleable__content "><pre>HistGradientBoostingRegressor(max_depth=4, max_iter=40)</pre></div> </div></div></div></div></div></div>
+                  sparse_output=False)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-42" type="checkbox" ><label for="sk-estimator-id-42" class="sk-toggleable__label  sk-toggleable__label-arrow ">numeric: PassThrough</label><div class="sk-toggleable__content "><pre>PassThrough()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-43" type="checkbox" ><label for="sk-estimator-id-43" class="sk-toggleable__label  sk-toggleable__label-arrow ">PassThrough</label><div class="sk-toggleable__content "><pre>PassThrough()</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-44" type="checkbox" ><label for="sk-estimator-id-44" class="sk-toggleable__label  sk-toggleable__label-arrow ">AggTarget</label><div class="sk-toggleable__content "><pre>AggTarget(main_key=&#x27;userId&#x27;, operation=&#x27;hist(3)&#x27;, suffix=&#x27;_user&#x27;)</pre></div> </div></div><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-45" type="checkbox" ><label for="sk-estimator-id-45" class="sk-toggleable__label  sk-toggleable__label-arrow ">AggTarget</label><div class="sk-toggleable__content "><pre>AggTarget(main_key=&#x27;movieId&#x27;, operation=&#x27;hist(3)&#x27;, suffix=&#x27;_movie&#x27;)</pre></div> </div></div><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-46" type="checkbox" ><label for="sk-estimator-id-46" class="sk-toggleable__label  sk-toggleable__label-arrow ">&nbsp;HistGradientBoostingRegressor<a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a></label><div class="sk-toggleable__content "><pre>HistGradientBoostingRegressor(max_depth=4, max_iter=40)</pre></div> </div></div></div></div></div></div>
     </div>
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 206-218
+.. GENERATED FROM PYTHON SOURCE LINES 204-216
 
 Hyper-parameters tuning and cross validation
 --------------------------------------------
@@ -1152,7 +1150,7 @@ hyper-parameters search.
 
 You can lookup the name of the pipeline elements by doing:
 
-.. GENERATED FROM PYTHON SOURCE LINES 218-220
+.. GENERATED FROM PYTHON SOURCE LINES 216-218
 
 .. code-block:: Python
 
@@ -1171,7 +1169,7 @@ You can lookup the name of the pipeline elements by doing:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 221-226
+.. GENERATED FROM PYTHON SOURCE LINES 219-224
 
 Alternatively, you can use scikit-learn |Pipeline| to name your transformers:
 ``Pipeline([("agg_target_user", agg_target_user), ...])``
@@ -1179,7 +1177,7 @@ Alternatively, you can use scikit-learn |Pipeline| to name your transformers:
 We now perform the grid search over the ``AggTarget`` transformers to find the
 operation maximizing our validation score.
 
-.. GENERATED FROM PYTHON SOURCE LINES 226-245
+.. GENERATED FROM PYTHON SOURCE LINES 224-243
 
 .. code-block:: Python
 
@@ -1246,75 +1244,75 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split1_test_score</th>
-          <td>0.042012</td>
-          <td>0.054310</td>
-          <td>0.083149</td>
-          <td>0.069661</td>
-          <td>0.069617</td>
+          <td>0.063916</td>
+          <td>0.058114</td>
+          <td>0.069936</td>
+          <td>0.079609</td>
+          <td>0.073004</td>
         </tr>
         <tr>
           <th>split2_test_score</th>
-          <td>0.077616</td>
-          <td>0.078472</td>
-          <td>0.095980</td>
-          <td>0.083939</td>
-          <td>0.096214</td>
+          <td>0.076880</td>
+          <td>0.074581</td>
+          <td>0.093808</td>
+          <td>0.090941</td>
+          <td>0.085261</td>
         </tr>
         <tr>
           <th>split3_test_score</th>
-          <td>0.037048</td>
-          <td>0.059534</td>
-          <td>0.064899</td>
-          <td>0.061136</td>
-          <td>0.076948</td>
+          <td>0.040804</td>
+          <td>0.068131</td>
+          <td>0.071340</td>
+          <td>0.057854</td>
+          <td>0.071382</td>
         </tr>
         <tr>
           <th>split4_test_score</th>
-          <td>0.128967</td>
-          <td>0.134169</td>
-          <td>0.144494</td>
-          <td>0.155328</td>
-          <td>0.141380</td>
+          <td>0.144380</td>
+          <td>0.127193</td>
+          <td>0.144171</td>
+          <td>0.148482</td>
+          <td>0.150566</td>
         </tr>
         <tr>
           <th>split5_test_score</th>
-          <td>0.108723</td>
-          <td>0.109439</td>
-          <td>0.109045</td>
-          <td>0.109042</td>
-          <td>0.110732</td>
+          <td>0.105768</td>
+          <td>0.116994</td>
+          <td>0.106779</td>
+          <td>0.111770</td>
+          <td>0.116436</td>
         </tr>
         <tr>
           <th>split6_test_score</th>
-          <td>0.079180</td>
-          <td>0.097918</td>
-          <td>0.105319</td>
-          <td>0.109190</td>
-          <td>0.104990</td>
+          <td>0.085345</td>
+          <td>0.101782</td>
+          <td>0.103742</td>
+          <td>0.102632</td>
+          <td>0.094760</td>
         </tr>
         <tr>
           <th>split7_test_score</th>
-          <td>0.070444</td>
-          <td>0.061121</td>
-          <td>0.050353</td>
-          <td>0.058025</td>
-          <td>0.084134</td>
+          <td>0.066611</td>
+          <td>0.063045</td>
+          <td>0.056341</td>
+          <td>0.067255</td>
+          <td>0.077756</td>
         </tr>
         <tr>
           <th>split8_test_score</th>
-          <td>0.110719</td>
-          <td>0.109606</td>
-          <td>0.120724</td>
-          <td>0.120285</td>
-          <td>0.129403</td>
+          <td>0.108591</td>
+          <td>0.115411</td>
+          <td>0.115062</td>
+          <td>0.121034</td>
+          <td>0.132329</td>
         </tr>
         <tr>
           <th>split9_test_score</th>
-          <td>0.129720</td>
-          <td>0.146482</td>
-          <td>0.167775</td>
-          <td>0.164440</td>
-          <td>0.183396</td>
+          <td>0.109407</td>
+          <td>0.154915</td>
+          <td>0.165946</td>
+          <td>0.164202</td>
+          <td>0.183856</td>
         </tr>
       </tbody>
     </table>
@@ -1323,7 +1321,7 @@ operation maximizing our validation score.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 246-255
+.. GENERATED FROM PYTHON SOURCE LINES 244-253
 
 The score used in this regression task is the R2. Remember that the R2
 evaluates the relative performance compared to the naive baseline consisting
@@ -1335,7 +1333,7 @@ To get a better sense of the learning performances of our simple pipeline,
 we also compute the average rating of each movie in the training set,
 and uses this average to predict the ratings in the test set.
 
-.. GENERATED FROM PYTHON SOURCE LINES 255-292
+.. GENERATED FROM PYTHON SOURCE LINES 253-290
 
 .. code-block:: Python
 
@@ -1389,13 +1387,13 @@ and uses this average to predict the ratings in the test set.
 
  .. code-block:: none
 
-    /home/circleci/project/examples/08_join_aggregation.py:290: UserWarning: The figure layout has changed to tight
+    /home/circleci/project/examples/08_join_aggregation.py:288: UserWarning: The figure layout has changed to tight
       plt.tight_layout()
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 293-305
+.. GENERATED FROM PYTHON SOURCE LINES 291-303
 
 The naive estimator has a lower performance than our pipeline, which means
 that our extracted features brought some predictive power.
@@ -1413,7 +1411,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 19.950 seconds)
+   **Total running time of the script:** (0 minutes 16.743 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:

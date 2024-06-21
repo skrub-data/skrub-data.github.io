@@ -531,7 +531,7 @@ document.write(`
 <h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">skrub</span></code>.tabular_learner<a class="headerlink" href="#skrub-tabular-learner" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.tabular_learner">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/adfe24d/skrub/_tabular_learner.py#L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_learner" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a47c0a5/skrub/_tabular_learner.py#L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_learner" title="Link to this definition">#</a></dt>
 <dd><p>Get a simple machine-learning pipeline for tabular data.</p>
 <p>Given a scikit-learn <code class="docutils literal notranslate"><span class="pre">estimator</span></code>, this function creates a
 machine-learning pipeline that preprocesses tabular data to extract numeric
@@ -616,8 +616,8 @@ to impute missing values.</p></li>
 <p>We can easily get a default pipeline for regression or classification:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;regressor&#39;</span><span class="p">)</span>                                    
 <span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
-<span class="go">                 TableVectorizer(high_cardinality_transformer=MinHashEncoder(),</span>
-<span class="go">                                 low_cardinality_transformer=ToCategorical())),</span>
+<span class="go">                 TableVectorizer(high_cardinality=MinHashEncoder(),</span>
+<span class="go">                                 low_cardinality=ToCategorical())),</span>
 <span class="go">                (&#39;histgradientboostingregressor&#39;,</span>
 <span class="go">                 HistGradientBoostingRegressor(categorical_features=&#39;from_dtype&#39;))])</span>
 </pre></div>
@@ -626,8 +626,8 @@ to impute missing values.</p></li>
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">)</span>                                   
 <span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
-<span class="go">                 TableVectorizer(high_cardinality_transformer=MinHashEncoder(),</span>
-<span class="go">                                 low_cardinality_transformer=ToCategorical())),</span>
+<span class="go">                 TableVectorizer(high_cardinality=MinHashEncoder(),</span>
+<span class="go">                                 low_cardinality=ToCategorical())),</span>
 <span class="go">                (&#39;histgradientboostingclassifier&#39;,</span>
 <span class="go">                 HistGradientBoostingClassifier(categorical_features=&#39;from_dtype&#39;))])</span>
 </pre></div>
@@ -699,22 +699,22 @@ is added.</p>
 (generated with the string <code class="docutils literal notranslate"><span class="pre">&quot;classifier&quot;</span></code>):</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">)</span>                                   
 <span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
-<span class="go">                 TableVectorizer(high_cardinality_transformer=MinHashEncoder(),</span>
-<span class="go">                                 low_cardinality_transformer=ToCategorical())),</span>
+<span class="go">                 TableVectorizer(high_cardinality=MinHashEncoder(),</span>
+<span class="go">                                 low_cardinality=ToCategorical())),</span>
 <span class="go">                (&#39;histgradientboostingclassifier&#39;,</span>
 <span class="go">                 HistGradientBoostingClassifier(categorical_features=&#39;from_dtype&#39;))])</span>
 </pre></div>
 </div>
 <ul class="simple">
 <li><p>A <a class="reference internal" href="skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> is used as the
-<code class="docutils literal notranslate"><span class="pre">high_cardinality_transformer</span></code>. This encoder provides good
+<code class="docutils literal notranslate"><span class="pre">high_cardinality</span></code>. This encoder provides good
 performance when the supervised estimator is based on a decision tree
 or ensemble of trees, as is the case for the
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>. Unlike the
 default <a class="reference internal" href="skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>, the <a class="reference internal" href="skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> does not produce
 interpretable features. However, it is much faster and uses less
 memory.</p></li>
-<li><p>The <code class="docutils literal notranslate"><span class="pre">low_cardinality_transformer</span></code> does not one-hot encode features.
+<li><p>The <code class="docutils literal notranslate"><span class="pre">low_cardinality</span></code> does not one-hot encode features.
 The <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a> has built-in
 support for categorical data which is more efficient than one-hot
 encoding. Therefore the selected encoder, <a class="reference internal" href="skrub.ToCategorical.html#skrub.ToCategorical" title="skrub.ToCategorical"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToCategorical</span></code></a>, simply
