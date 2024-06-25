@@ -529,6 +529,10 @@ treated as the empty string.
 <li><p><a class="reference internal" href="generated/skrub.datasets.fetch_ken_embeddings.html#skrub.datasets.fetch_ken_embeddings" title="skrub.datasets.fetch_ken_embeddings"><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_ken_embeddings()</span></code></a> now add suffix even with the default
 value for the parameter <cite>pca_components</cite>.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/956">#956</a> by <a class="reference external" href="https://github.com/glemaitre">Guillaume Lemaitre</a>.</p></li>
+<li><p><a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a> now performs some preprocessing (the same as done by the
+<a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, eg trying to parse dates, converting pandas object
+columns with mixed types to a single type) on the joining columns before
+vectorizing them. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/972">#972</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 </ul>
 </section>
 </section>
