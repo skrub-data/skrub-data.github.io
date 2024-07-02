@@ -1249,9 +1249,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_b1958b41__
+    - index__skrub_478a80b7__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_354aa0d6__
+    - index__skrub_a13654cf__
 
 
       warnings.warn(
@@ -1284,9 +1284,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_1e6ef078__
+    - index__skrub_4778b992__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_19b778ff__
+    - index__skrub_542cf2db__
 
 
       warnings.warn(
@@ -1319,9 +1319,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_4577e612__
+    - index__skrub_b76f23c4__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_1b5e0b21__
+    - index__skrub_db44ca48__
 
 
       warnings.warn(
@@ -1354,9 +1354,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_64331769__
+    - index__skrub_3fd25cd5__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_c3f65d70__
+    - index__skrub_032ba65b__
 
 
       warnings.warn(
@@ -1389,9 +1389,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_001ba6a5__
+    - index__skrub_74be8d71__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_6bb97881__
+    - index__skrub_e8fcb30d__
 
 
       warnings.warn(
@@ -1424,9 +1424,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_66adf93e__
+    - index__skrub_7383790d__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_cd1d69d4__
+    - index__skrub_1281f239__
 
 
       warnings.warn(
@@ -1459,9 +1459,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_55f79a79__
+    - index__skrub_b2d9caae__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_bd283a83__
+    - index__skrub_fde8d4cf__
 
 
       warnings.warn(
@@ -1494,9 +1494,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_dd7cf4ce__
+    - index__skrub_cdc6d848__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_b48ca647__
+    - index__skrub_2da1afa7__
 
 
       warnings.warn(
@@ -1529,9 +1529,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_330292ec__
+    - index__skrub_6dd11bf7__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_08b29c0f__
+    - index__skrub_d106e12f__
 
 
       warnings.warn(
@@ -1564,9 +1564,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_b0967c79__
+    - index__skrub_3e1fa331__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_430c7dd2__
+    - index__skrub_0c6ccb1d__
 
 
       warnings.warn(
@@ -1599,9 +1599,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_e8281985__
+    - index__skrub_b6307511__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_fd330caa__
+    - index__skrub_20c1f1a3__
 
 
       warnings.warn(
@@ -1634,9 +1634,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_f4cb9acb__
+    - index__skrub_d6506498__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_b8e9828b__
+    - index__skrub_7b080228__
 
 
       warnings.warn(
@@ -1669,9 +1669,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_b72057f8__
+    - index__skrub_267fc399__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_6bb35dcc__
+    - index__skrub_7b003bbd__
 
 
       warnings.warn(
@@ -1704,9 +1704,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_fc403b32__
+    - index__skrub_7b30fd96__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_8cf6591d__
+    - index__skrub_f2590042__
 
 
       warnings.warn(
@@ -1739,9 +1739,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_cf583857__
+    - index__skrub_44143b6a__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_0fbf1b95__
+    - index__skrub_02b4160e__
 
 
       warnings.warn(
@@ -1774,9 +1774,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_284b0914__
+    - index__skrub_aa71d194__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_e987a64c__
+    - index__skrub_8679a193__
 
 
       warnings.warn(
@@ -1809,9 +1809,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_ea8535e7__
+    - index__skrub_4a44b865__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_0c364b11__
+    - index__skrub_c6b5538b__
 
 
       warnings.warn(
@@ -1844,9 +1844,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_a7bce55c__
+    - index__skrub_ab7e6340__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_79364308__
+    - index__skrub_50869499__
 
 
       warnings.warn(
@@ -1879,9 +1879,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_95aa4dc6__
+    - index__skrub_1944fe56__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_68435214__
+    - index__skrub_2a330167__
 
 
       warnings.warn(
@@ -1914,9 +1914,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_a0e7d2f1__
+    - index__skrub_394acff6__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_8ea6a3c0__
+    - index__skrub_6d0f4033__
 
 
       warnings.warn(
@@ -1949,9 +1949,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_d57c51a5__
+    - index__skrub_1dce6442__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_e3263c17__
+    - index__skrub_72de6841__
 
 
       warnings.warn(
@@ -1984,9 +1984,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_76d6ce12__
+    - index__skrub_54720dc8__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_b67ba834__
+    - index__skrub_66d5f59e__
 
 
       warnings.warn(
@@ -2019,9 +2019,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_4b95b675__
+    - index__skrub_e9fa37e5__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_901cd445__
+    - index__skrub_d927f75d__
 
 
       warnings.warn(
@@ -2054,9 +2054,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_fe8c5c2e__
+    - index__skrub_bc981d5c__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_8fed698c__
+    - index__skrub_7d7d5a75__
 
 
       warnings.warn(
@@ -2089,9 +2089,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_ac6b3881__
+    - index__skrub_5890f516__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_0899fdf3__
+    - index__skrub_8a805877__
 
 
       warnings.warn(
@@ -2124,9 +2124,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_49af7097__
+    - index__skrub_6cd21bf4__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_c4e9ad05__
+    - index__skrub_edec4a8a__
 
 
       warnings.warn(
@@ -2159,9 +2159,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_193a192b__
+    - index__skrub_bd95ad16__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_b21f9370__
+    - index__skrub_f5c7241b__
 
 
       warnings.warn(
@@ -2194,9 +2194,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_500ac964__
+    - index__skrub_6ae796f8__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_7e063afc__
+    - index__skrub_31fce985__
 
 
       warnings.warn(
@@ -2229,9 +2229,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_0ff2e9df__
+    - index__skrub_c72fd2c1__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_41d31f73__
+    - index__skrub_29ab2692__
 
 
       warnings.warn(
@@ -2264,9 +2264,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_96cba351__
+    - index__skrub_956c7657__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_b68f49c3__
+    - index__skrub_72ba47f9__
 
 
       warnings.warn(
@@ -2299,9 +2299,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_876a2c9f__
+    - index__skrub_fb1dcdb7__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_bf35ca1d__
+    - index__skrub_f74dadea__
 
 
       warnings.warn(
@@ -2334,9 +2334,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_dbd42e60__
+    - index__skrub_7ec965c5__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_212b6f85__
+    - index__skrub_f59a3125__
 
 
       warnings.warn(
@@ -2369,9 +2369,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_6a5966fd__
+    - index__skrub_372eda25__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_39a6dc97__
+    - index__skrub_008c6a6e__
 
 
       warnings.warn(
@@ -2404,9 +2404,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_ffda538c__
+    - index__skrub_3dffe8e4__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_7d6d0437__
+    - index__skrub_6288df52__
 
 
       warnings.warn(
@@ -2439,9 +2439,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_55a5fe50__
+    - index__skrub_b7ee05c8__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_5e94654c__
+    - index__skrub_d64523ac__
 
 
       warnings.warn(
@@ -2474,9 +2474,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_08349a5b__
+    - index__skrub_4c01d7bc__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_f1d1b1ce__
+    - index__skrub_6df414b6__
 
 
       warnings.warn(
@@ -2509,9 +2509,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_3bc28f2f__
+    - index__skrub_31291ff5__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_7e996786__
+    - index__skrub_5085e806__
 
 
       warnings.warn(
@@ -2544,9 +2544,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_3f941dc2__
+    - index__skrub_36d3c1e9__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_8922688a__
+    - index__skrub_e3ff4add__
 
 
       warnings.warn(
@@ -2579,9 +2579,9 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_599013e7__
+    - index__skrub_2c1f7631__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_d95c4efa__
+    - index__skrub_685d6019__
 
 
       warnings.warn(
@@ -2614,13 +2614,13 @@ operation maximizing our validation score.
         raise ValueError(message)
     ValueError: The feature names should match those that were passed during fit.
     Feature names unseen at fit time:
-    - index__skrub_e7e835e5__
+    - index__skrub_4a9c4677__
     Feature names seen at fit time, yet now missing:
-    - index__skrub_f9c00a6c__
+    - index__skrub_4bd4d269__
 
 
       warnings.warn(
-    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_search.py:1052: UserWarning: One or more of the test scores are non-finite: [0.08086454        nan        nan        nan        nan]
+    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/model_selection/_search.py:1052: UserWarning: One or more of the test scores are non-finite: [0.08147855        nan        nan        nan        nan]
       warnings.warn(
 
 
@@ -2663,7 +2663,7 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split1_test_score</th>
-          <td>0.046393</td>
+          <td>0.022695</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
@@ -2671,7 +2671,7 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split2_test_score</th>
-          <td>0.083236</td>
+          <td>0.077965</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
@@ -2679,7 +2679,7 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split3_test_score</th>
-          <td>0.035526</td>
+          <td>0.053387</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
@@ -2687,7 +2687,7 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split4_test_score</th>
-          <td>0.136884</td>
+          <td>0.131845</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
@@ -2695,7 +2695,7 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split5_test_score</th>
-          <td>0.106513</td>
+          <td>0.103830</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
@@ -2703,7 +2703,7 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split6_test_score</th>
-          <td>0.084313</td>
+          <td>0.085836</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
@@ -2711,7 +2711,7 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split7_test_score</th>
-          <td>0.072118</td>
+          <td>0.067891</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
@@ -2719,7 +2719,7 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split8_test_score</th>
-          <td>0.101686</td>
+          <td>0.113581</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
@@ -2727,7 +2727,7 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split9_test_score</th>
-          <td>0.107713</td>
+          <td>0.123491</td>
           <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
@@ -2830,7 +2830,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 18.264 seconds)
+   **Total running time of the script:** (0 minutes 18.205 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:
