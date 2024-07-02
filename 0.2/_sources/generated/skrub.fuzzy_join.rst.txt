@@ -1,0 +1,12 @@
+﻿:mod:`skrub`.fuzzy_join
+====================================
+
+.. currentmodule:: skrub
+
+.. autofunction:: fuzzy_join
+
+.. include:: skrub.fuzzy_join.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
