@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-rendered-html.css?v=1277b6f3" />
-    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=c2a3dc93" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=28d27fb6" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -179,6 +179,28 @@
   </a>
 </li>
 
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="CHANGES.html">
+    Release history
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="development.html">
+    Development
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
   </ul>
 </nav></div>
       
@@ -286,6 +308,8 @@ document.write(`
 	<div class="col-md-6 mb-3 mb-md-0">
 	    <h1 class="sk-landing-header text-white text-monospace">skrub</h1>
 	    <h4 class="sk-landing-subheader text-white font-italic mb-3"><i>Prepping tables for machine learning</i></h4>
+      <a class="btn sk-btn-orange mb-1" href="CONTRIBUTING.html" role="button">Contribute</code></a>
+      <a class="btn sk-btn-orange mb-1" href="CHANGES.html" role="button">Recent changes</a>
 	</div>
 	<div class="col-md-6 d-flex">
 	    <ul class="sk-landing-header-body">
@@ -345,6 +369,20 @@ document.write(`
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="auto_examples/index.html">
     Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="CHANGES.html">
+    Release history
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="development.html">
+    Development
   </a>
 </li>
 
@@ -636,15 +674,5 @@ class="pre">df</span></code>: <i>(expand for full code)</i></summary>
   <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
 <script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-<div class="container-fluid sk-landing-footer">
-  <div class="row justify-content-md-center">
-    <div class="col-lg-4">
-	<p><a href="CHANGES.html">Recent changes</a></p>
-    </div>
-    <div class="col-lg-4">
-	<p><a href="CONTRIBUTING.html">Contributing</a></p>
-    </div>
-  </div>
-</div>
   </body>
 </html>
