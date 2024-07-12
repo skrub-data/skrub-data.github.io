@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/documentation.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Skrub facilitates preparing tables for machine learning. It is not a replacement for tools such as SQL or pandas, as these tools are much more versatile. Rather it gives higher-level operations for..." />
+<meta property="og:description" content="Skrub eases preparing tables for machine learning. Starting from rich, complex data stored in one or several dataframes, it helps performing the data wrangling necessary to produce a numeric array ..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Skrub facilitates preparing tables for machine learning. It is not a replacement for tools such as SQL or pandas, as these tools are much more versatile. Rather it gives higher-level operations for..." />
+<meta name="description" content="Skrub eases preparing tables for machine learning. Starting from rich, complex data stored in one or several dataframes, it helps performing the data wrangling necessary to produce a numeric array ..." />
 
     <title>User guide &#8212; skrub</title>
   
@@ -506,16 +506,26 @@ document.write(`
                   
   <section id="user-guide">
 <h1>User guide<a class="headerlink" href="#user-guide" title="Link to this heading">#</a></h1>
-<p>Skrub facilitates preparing tables for machine learning. It is not a
-replacement for tools such as SQL or pandas, as these tools are much more
-versatile. Rather it gives higher-level operations for machine-learning,
-typically with <a class="reference external" href="http://scikit-learn.org">scikit-learn</a> with its
-<a class="reference external" href="https://scikit-learn.org/stable/modules/compose.html">pipelines</a>.</p>
+<p>Skrub eases preparing tables for machine learning.</p>
+<p>Starting from rich, complex data stored in one or several dataframes, it helps
+performing the data wrangling necessary to produce a numeric array that is fed
+to a machine-learning model. This wrangling comprises joining tables (possibly
+with inexact matches), parsing text into structured data such as dates,
+extracting numeric features, etc.</p>
+<p>For those tasks, skrub does not replace a dataframe library. Instead, it
+leverages polars or pandas to provide more high-level building blocks that are
+typically needed in a machine-learning pipeline.</p>
+<p>Crucially, the transformations implemented by skrub are <em>stateful</em>: skrub
+records the transformations that were applied to the training data and replays the
+same operations when the pipeline is applied to make predictions on unseen
+data. Implementing data-wrangling steps as transformers that can be fitted is
+essential to prevent data leakage and ensure generalization.</p>
 <aside class="topic">
 <p class="topic-title">Skrub highlights:</p>
 <ul class="simple">
-<li><p>facilitates separating the train and test operations, for model
-selection and to put models in production</p></li>
+<li><p>eases separating the train and test operations, allowing to tune
+preprocessing steps to the data and improving the generalization of tabular
+machine-learning models.</p></li>
 <li><p>enables statistical and imperfect assembly, as machine-learning models
 can typically retrieve signals even in noisy data.</p></li>
 </ul>
