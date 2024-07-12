@@ -1,0 +1,12 @@
+﻿fetch_traffic_violations
+===========================================================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_traffic_violations
+
+.. include:: skrub.datasets.fetch_traffic_violations.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

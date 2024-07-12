@@ -1,0 +1,21 @@
+﻿SimilarityEncoder
+=====================================
+
+.. rst-class:: side_comment
+
+    Usage examples at the bottom of this page.
+
+.. currentmodule:: skrub
+
+.. autoclass:: SimilarityEncoder
+   :inherited-members:
+
+   
+
+   
+
+.. include:: skrub.SimilarityEncoder.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

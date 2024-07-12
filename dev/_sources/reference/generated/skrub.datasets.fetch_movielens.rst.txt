@@ -1,0 +1,12 @@
+﻿fetch_movielens
+==================================================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_movielens
+
+.. include:: skrub.datasets.fetch_movielens.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

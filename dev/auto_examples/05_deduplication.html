@@ -175,7 +175,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../api.html">
+  <a class="nav-link nav-internal" href="../reference/index.html">
     API reference
   </a>
 </li>
@@ -348,7 +348,7 @@ document.write(`
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../api.html">
+  <a class="nav-link nav-internal" href="../reference/index.html">
     API reference
   </a>
 </li>
@@ -524,7 +524,7 @@ in manually inputted categorical variables.
 Such misspelling break data analysis steps that require
 exact matching, such as a <code class="docutils literal notranslate"><span class="pre">GROUP</span> <span class="pre">BY</span></code> operation.</p>
 <p>Merging multiple variants of the same category is known as
-<em>deduplication</em>. It is implemented in skrub with the <a class="reference internal" href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> function.</p>
+<em>deduplication</em>. It is implemented in skrub with the <a class="reference internal" href="../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> function.</p>
 <p>Deduplication relies on <em>unsupervised learning</em>. It finds structures in
 the data without providing a-priori known and explicit labels/categories.
 Specifically, measuring the distance between strings can be used to
@@ -545,9 +545,9 @@ there are multiple spelling mistakes in the dataset.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="kn">from</span> <span class="nn">skrub.datasets</span> <span class="kn">import</span> <a href="../generated/skrub.datasets.make_deduplication_data.html#skrub.datasets.make_deduplication_data" title="skrub.datasets.make_deduplication_data" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">make_deduplication_data</span></a>
+<span class="kn">from</span> <span class="nn">skrub.datasets</span> <span class="kn">import</span> <a href="../reference/generated/skrub.datasets.make_deduplication_data.html#skrub.datasets.make_deduplication_data" title="skrub.datasets.make_deduplication_data" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">make_deduplication_data</span></a>
 
-<a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">duplicated_names</span></a> <span class="o">=</span> <a href="../generated/skrub.datasets.make_deduplication_data.html#skrub.datasets.make_deduplication_data" title="skrub.datasets.make_deduplication_data" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">make_deduplication_data</span></a><span class="p">(</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">duplicated_names</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.datasets.make_deduplication_data.html#skrub.datasets.make_deduplication_data" title="skrub.datasets.make_deduplication_data" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">make_deduplication_data</span></a><span class="p">(</span>
     <span class="n">examples</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Contrivan&quot;</span><span class="p">,</span> <span class="s2">&quot;Genericon&quot;</span><span class="p">,</span> <span class="s2">&quot;Zipholan&quot;</span><span class="p">],</span>  <span class="c1"># our three medication names</span>
     <span class="n">entries_per_example</span><span class="o">=</span><span class="p">[</span><span class="mi">500</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1500</span><span class="p">],</span>  <span class="c1"># their respective number of occurrences</span>
     <span class="n">prob_mistake_per_letter</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span>  <span class="c1"># 5% probability of typo per letter</span>
@@ -577,19 +577,19 @@ visualize how often they appear:</p>
 the three original medications (“Contrivan”, “Genericon” and “Zipholan”)
 are the most common ones, but there are many spelling mistakes or
 slight variations of the original names.</p>
-<p>The idea behind <a class="reference internal" href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> is to use the fact that
+<p>The idea behind <a class="reference internal" href="../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> is to use the fact that
 the string distance of misspelled medications will be
 closest to their original (most frequent) medication name
 - and therefore form clusters.</p>
 </section>
 <section id="deduplication-suggest-corrections-of-misspelled-names">
 <h2>Deduplication: suggest corrections of misspelled names<a class="headerlink" href="#deduplication-suggest-corrections-of-misspelled-names" title="Link to this heading">#</a></h2>
-<p>The <a class="reference internal" href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> function uses clustering based on
+<p>The <a class="reference internal" href="../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> function uses clustering based on
 string similarities to group duplicated names.</p>
 <p>Let’s deduplicate our data:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">deduplicate</span></a>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">deduplicate</span></a>
 
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">deduplicated_data</span></a> <span class="o">=</span> <a href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">deduplicate</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">duplicated_names</span></a><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">deduplicated_data</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">deduplicate</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">duplicated_names</span></a><span class="p">)</span>
 
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">deduplicated_data</span></a><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
@@ -606,7 +606,7 @@ dtype: object
 <aside class="topic">
 <p class="topic-title">Note:</p>
 <p>The number of clusters will need some adjustment depending on the data.
-If no fixed number of clusters is given, <a class="reference internal" href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> tries to set it
+If no fixed number of clusters is given, <a class="reference internal" href="../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> tries to set it
 automatically via the
 <a class="reference external" href="https://scikit-learn.org/stable/modules/clustering.html#silhouette-coefficient">silhouette score</a>.</p>
 </aside>
@@ -628,7 +628,7 @@ clusters (3) and groups the spelling mistakes.</p>
 <p>In practice, the translation/deduplication will often be imperfect
 and require some tweaks.
 In this case, we can construct and update a translation table based on the
-data returned by <a class="reference internal" href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a>.</p>
+data returned by <a class="reference internal" href="../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a>.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="c1"># create a table that maps original to corrected categories</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">translation_table</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class"><span class="n">pd</span><span class="o">.</span><span class="n">Series</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">deduplicated_data</span></a><span class="p">,</span> <span class="n">index</span><span class="o">=</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">duplicated_names</span></a><span class="p">)</span>
 
@@ -677,15 +677,15 @@ names and their misspellings that form a cluster around them.</p>
 </section>
 <section id="conclusion">
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
-<p>In this example, we have seen how to use the <a class="reference internal" href="../generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> function to
+<p>In this example, we have seen how to use the <a class="reference internal" href="../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> function to
 automatically detect and correct misspelled category names.</p>
 <p>Note that deduplication is especially useful when we either
 know our ground truth (e.g. the original medication names),
 or when the similarity across strings does not
 carry useful information for our machine learning task.
-Otherwise, we prefer using encoding methods such as <a class="reference internal" href="../generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>
-or <a class="reference internal" href="../generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 4.743 seconds)</p>
+Otherwise, we prefer using encoding methods such as <a class="reference internal" href="../reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>
+or <a class="reference internal" href="../reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>.</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.136 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-05-deduplication-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/05_deduplication.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>

@@ -175,7 +175,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="api.html">
+  <a class="nav-link nav-internal" href="reference/index.html">
     API reference
   </a>
 </li>
@@ -348,7 +348,7 @@ document.write(`
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="api.html">
+  <a class="nav-link nav-internal" href="reference/index.html">
     API reference
   </a>
 </li>
@@ -516,11 +516,11 @@ often from different sources.</p>
 <section id="fuzzy-joining-tables">
 <h2>Fuzzy joining tables<a class="headerlink" href="#fuzzy-joining-tables" title="Link to this heading">#</a></h2>
 <p>Joining two dataframes can be hard as the corresponding keys may be different.</p>
-<p><a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> uses similarities in entries to join tables on one or more
+<p><a class="reference internal" href="reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> uses similarities in entries to join tables on one or more
 related columns. Furthermore, it chooses the type of fuzzy matching used based
 on the column type (string, numerical or datetime). It also outputs a similarity
 score, to single out bad matches, so that they can be dropped or replaced.</p>
-<p>In sum, equivalent to <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html#pandas.merge" title="(in pandas v2.2.2)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.merge()</span></code></a>, the <a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>
+<p>In sum, equivalent to <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html#pandas.merge" title="(in pandas v2.2.2)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.merge()</span></code></a>, the <a class="reference internal" href="reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>
 has no need for pre-cleaning.</p>
 </section>
 <section id="joining-external-tables-for-machine-learning">
@@ -529,28 +529,28 @@ has no need for pre-cleaning.</p>
 the common key.</p>
 <p>In addition, skrub also enable more advanced analysis:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a>: fuzzy-joins an external table using a scikit-learn
+<li><p><a class="reference internal" href="reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a>: fuzzy-joins an external table using a scikit-learn
 transformer, which can be used in a scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>.
 Pipelines are useful for cross-validation and hyper-parameter search, but also
 for model deployment.</p></li>
-<li><p><a class="reference internal" href="generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>: instead of performing 1:1 joins like <a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a>, <a class="reference internal" href="generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>
+<li><p><a class="reference internal" href="reference/generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>: instead of performing 1:1 joins like <a class="reference internal" href="reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a>, <a class="reference internal" href="reference/generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>
 aggregates the external table first, then joins it on the main table.
 Alternatively, it can aggregate the main table and then join it back onto itself.</p></li>
-<li><p><a class="reference internal" href="generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggTarget</span></code></a>: in some settings, one can derive powerful features from
+<li><p><a class="reference internal" href="reference/generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggTarget</span></code></a>: in some settings, one can derive powerful features from
 the target <cite>y</cite> itself. AggTarget aggregates the target without risking data
 leakage, then joins the result back on the main table, similar to AggJoiner.</p></li>
-<li><p><a class="reference internal" href="generated/skrub.MultiAggJoiner.html#skrub.MultiAggJoiner" title="skrub.MultiAggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiAggJoiner</span></code></a>: extension of the <a class="reference internal" href="generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a> that joins multiple
+<li><p><a class="reference internal" href="reference/generated/skrub.MultiAggJoiner.html#skrub.MultiAggJoiner" title="skrub.MultiAggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiAggJoiner</span></code></a>: extension of the <a class="reference internal" href="reference/generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a> that joins multiple
 auxiliary tables onto the main table.</p></li>
 </ul>
 </section>
 <section id="column-selection-inside-a-pipeline">
 <h2>Column selection inside a pipeline<a class="headerlink" href="#column-selection-inside-a-pipeline" title="Link to this heading">#</a></h2>
 <p>Besides joins, another common operation on a dataframe is to select a subset of its columns (also known as a projection).
-We sometimes need to perform such a selection in the middle of a pipeline, for example if we need a column for a join (with <a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a>), but in a subsequent step we want to drop that column before fitting an estimator.</p>
+We sometimes need to perform such a selection in the middle of a pipeline, for example if we need a column for a join (with <a class="reference internal" href="reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a>), but in a subsequent step we want to drop that column before fitting an estimator.</p>
 <p>skrub provides transformers to perform such an operation:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectCols</span></code></a> allows specifying the columns we want to keep.</p></li>
-<li><p>Conversely <a class="reference internal" href="generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropCols</span></code></a> allows specifying the columns we want to discard.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectCols</span></code></a> allows specifying the columns we want to keep.</p></li>
+<li><p>Conversely <a class="reference internal" href="reference/generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropCols</span></code></a> allows specifying the columns we want to discard.</p></li>
 </ul>
 </section>
 <section id="going-further-embeddings-for-better-analytics">
@@ -564,7 +564,7 @@ access to embeddings, or vectorial representations of an entity,
 of all common entities from Wikipedia.
 You can use <code class="xref py py-func docutils literal notranslate"><span class="pre">datasets.get_ken_embeddings()</span></code> to search for the right
 embeddings and download them.</p>
-<p>Other methods, such as <a class="reference internal" href="generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator"><code class="xref py py-func docutils literal notranslate"><span class="pre">datasets.fetch_world_bank_indicator()</span></code></a> to
+<p>Other methods, such as <a class="reference internal" href="reference/generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator"><code class="xref py py-func docutils literal notranslate"><span class="pre">datasets.fetch_world_bank_indicator()</span></code></a> to
 fetch data of a World Bank indicator can also help you retrieve
 useful data that will be joined to another table.</p>
 </section>

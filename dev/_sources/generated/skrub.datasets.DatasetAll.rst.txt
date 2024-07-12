@@ -1,4 +1,4 @@
-﻿:mod:`skrub.datasets`.DatasetAll
+﻿DatasetAll
 =======================================
 
 .. rst-class:: side_comment

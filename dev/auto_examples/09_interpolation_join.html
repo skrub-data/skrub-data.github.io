@@ -175,7 +175,7 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../api.html">
+  <a class="nav-link nav-internal" href="../reference/index.html">
     API reference
   </a>
 </li>
@@ -348,7 +348,7 @@ document.write(`
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../api.html">
+  <a class="nav-link nav-internal" href="../reference/index.html">
     API reference
   </a>
 </li>
@@ -519,12 +519,12 @@ to download the full example code. or to run this example in your browser via Ju
 </div>
 <section class="sphx-glr-example-title" id="interpolation-join-infer-missing-rows-when-joining-two-tables">
 <span id="sphx-glr-auto-examples-09-interpolation-join-py"></span><h1>Interpolation join: infer missing rows when joining two tables<a class="headerlink" href="#interpolation-join-infer-missing-rows-when-joining-two-tables" title="Link to this heading">#</a></h1>
-<p>We illustrate the <a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a>, which is a type of join where
+<p>We illustrate the <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a>, which is a type of join where
 values from the second table are inferred with machine-learning, rather than looked up
 in the table. It is useful when exact matches are not available but we have rows that
 are close enough to make an educated guess – in this sense it is a generalization of a
-<a class="reference internal" href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>.</p>
-<p>The <a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> is therefore a transformer that adds the outputs
+<a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>.</p>
+<p>The <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> is therefore a transformer that adds the outputs
 of one or more machine-learning models as new columns to the table it operates on.</p>
 <p>In this example we want our transformer to add weather data (temperature, rain, etc.) to
 the table it operates on. We have a table containing information about commercial
@@ -535,7 +535,7 @@ delayed by bad weather.</p>
 as temperature, rain and snow at many time points. Unfortunately, our weather stations
 are not inside the airports, and the measurements are not timed according to the flight
 schedule. Therefore, a simple equi-join would not yield any matching pair of rows from
-our two tables. Instead, we use the <a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> to <em>infer</em> the
+our two tables. Instead, we use the <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> to <em>infer</em> the
 temperature at the airport at take-off time. We train supervised
 machine-learning models using the weather table, then query them with the times
 and locations in the flights table.</p>
@@ -562,7 +562,7 @@ temperature that day was 29.7℃. We convert it to degrees for readability</p>
 </section>
 <section id="interpolationjoiner-with-a-ground-truth-joining-the-weather-table-on-itself">
 <h2>InterpolationJoiner with a ground truth: joining the weather table on itself<a class="headerlink" href="#interpolationjoiner-with-a-ground-truth-joining-the-weather-table-on-itself" title="Link to this heading">#</a></h2>
-<p>As a first simple example, we apply the <a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> in a
+<p>As a first simple example, we apply the <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> in a
 situation where the ground truth is known. We split the weather table in half and join
 the second half on the first half. Thus, the values from the right side table of the
 join are inferred, whereas the corresponding columns from the left side contain the
@@ -604,8 +604,8 @@ ground truth and we can compare them.</p>
       <th>0</th>
       <td>25.333</td>
       <td>55.517</td>
-      <td>2008-09-16</td>
-      <td>40.1</td>
+      <td>2008-07-26</td>
+      <td>42.6</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
@@ -613,36 +613,36 @@ ground truth and we can compare them.</p>
       <th>1</th>
       <td>25.333</td>
       <td>55.517</td>
-      <td>2008-04-27</td>
-      <td>39.6</td>
-      <td>0.0</td>
+      <td>2008-03-07</td>
+      <td>26.9</td>
+      <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>2</th>
       <td>25.333</td>
       <td>55.517</td>
-      <td>2008-02-07</td>
-      <td>20.5</td>
+      <td>2008-09-13</td>
+      <td>41.6</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>25.333</td>
-      <td>55.517</td>
-      <td>2008-05-24</td>
-      <td>39.4</td>
+      <td>25.255</td>
+      <td>55.364</td>
+      <td>2008-07-14</td>
+      <td>46.6</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>25.333</td>
-      <td>55.517</td>
-      <td>2008-03-28</td>
-      <td>37.3</td>
-      <td>NaN</td>
+      <td>25.255</td>
+      <td>55.364</td>
+      <td>2008-10-10</td>
+      <td>36.1</td>
+      <td>0.0</td>
       <td>NaN</td>
     </tr>
   </tbody>
@@ -684,45 +684,45 @@ ground truth and we can compare them.</p>
   <tbody>
     <tr>
       <th>50000</th>
-      <td>39.6429</td>
-      <td>104.9972</td>
-      <td>2008-11-08</td>
+      <td>39.3745</td>
+      <td>104.8145</td>
+      <td>2008-08-19</td>
       <td>NaN</td>
-      <td>0.0</td>
+      <td>3.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>50001</th>
-      <td>39.6429</td>
-      <td>104.9972</td>
-      <td>2008-10-09</td>
+      <td>39.3745</td>
+      <td>104.8145</td>
+      <td>2008-12-12</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>50002</th>
-      <td>39.6429</td>
-      <td>104.9972</td>
-      <td>2008-01-16</td>
+      <td>39.4850</td>
+      <td>104.9089</td>
+      <td>2008-10-08</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>50003</th>
-      <td>39.6429</td>
-      <td>104.9972</td>
-      <td>2008-08-16</td>
+      <td>39.4850</td>
+      <td>104.9089</td>
+      <td>2008-07-06</td>
       <td>NaN</td>
-      <td>173.0</td>
+      <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>50004</th>
-      <td>39.6429</td>
-      <td>104.9972</td>
-      <td>2008-09-02</td>
+      <td>39.4850</td>
+      <td>104.9089</td>
+      <td>2008-08-06</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -735,18 +735,18 @@ ground truth and we can compare them.</p>
 <br /></section>
 <section id="joining-the-tables">
 <h2>Joining the tables<a class="headerlink" href="#joining-the-tables" title="Link to this heading">#</a></h2>
-<p>Now we join our two tables and check how well the <a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a>
+<p>Now we join our two tables and check how well the <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a>
 can reconstruct the matching rows that are missing from the right side table. To avoid
 clashes in the column names, we use the <code class="docutils literal notranslate"><span class="pre">suffix</span></code> parameter to append <code class="docutils literal notranslate"><span class="pre">&quot;predicted&quot;</span></code>
 to the right side table column names.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">InterpolationJoiner</span></a>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">InterpolationJoiner</span></a>
 
-<a href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">joiner</span></a> <span class="o">=</span> <a href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">InterpolationJoiner</span></a><span class="p">(</span>
+<a href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">joiner</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">InterpolationJoiner</span></a><span class="p">(</span>
     <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">aux_table</span></a><span class="p">,</span>
     <span class="n">key</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;LATITUDE&quot;</span><span class="p">,</span> <span class="s2">&quot;LONGITUDE&quot;</span><span class="p">,</span> <span class="s2">&quot;YEAR/MONTH/DAY&quot;</span><span class="p">],</span>
     <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;_predicted&quot;</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">main_table</span></a><span class="p">)</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">join</span></a> <span class="o">=</span> <a href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner.transform" title="skrub.InterpolationJoiner.transform" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">joiner</span><span class="o">.</span><span class="n">transform</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">main_table</span></a><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">join</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner.transform" title="skrub.InterpolationJoiner.transform" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">joiner</span><span class="o">.</span><span class="n">transform</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">main_table</span></a><span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">join</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
 </pre></div>
 </div>
@@ -785,61 +785,61 @@ to the right side table column names.</p>
       <th>0</th>
       <td>25.333</td>
       <td>55.517</td>
-      <td>2008-09-16</td>
-      <td>40.1</td>
+      <td>2008-07-26</td>
+      <td>42.6</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>28.934234</td>
-      <td>33.449921</td>
-      <td>0.056530</td>
+      <td>34.442480</td>
+      <td>62.972290</td>
+      <td>-0.320643</td>
     </tr>
     <tr>
       <th>1</th>
       <td>25.333</td>
       <td>55.517</td>
-      <td>2008-04-27</td>
-      <td>39.6</td>
-      <td>0.0</td>
+      <td>2008-03-07</td>
+      <td>26.9</td>
       <td>NaN</td>
-      <td>29.918616</td>
-      <td>2.749116</td>
-      <td>0.170281</td>
+      <td>NaN</td>
+      <td>26.783102</td>
+      <td>72.298386</td>
+      <td>0.002496</td>
     </tr>
     <tr>
       <th>2</th>
       <td>25.333</td>
       <td>55.517</td>
-      <td>2008-02-07</td>
-      <td>20.5</td>
+      <td>2008-09-13</td>
+      <td>41.6</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>25.639770</td>
-      <td>-3.564602</td>
-      <td>0.356733</td>
+      <td>31.269734</td>
+      <td>25.742764</td>
+      <td>-0.320643</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>25.333</td>
-      <td>55.517</td>
-      <td>2008-05-24</td>
-      <td>39.4</td>
+      <td>25.255</td>
+      <td>55.364</td>
+      <td>2008-07-14</td>
+      <td>46.6</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>30.549438</td>
-      <td>11.009682</td>
-      <td>0.056530</td>
+      <td>34.073523</td>
+      <td>40.804659</td>
+      <td>-0.320643</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>25.333</td>
-      <td>55.517</td>
-      <td>2008-03-28</td>
-      <td>37.3</td>
+      <td>25.255</td>
+      <td>55.364</td>
+      <td>2008-10-10</td>
+      <td>36.1</td>
+      <td>0.0</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>27.598100</td>
-      <td>3.570321</td>
-      <td>0.422839</td>
+      <td>29.012195</td>
+      <td>24.786623</td>
+      <td>-0.314920</td>
     </tr>
   </tbody>
 </table>
@@ -907,12 +907,12 @@ Name: 0, dtype: object
 <p>As before, we initialize our join transformer with the weather table. Then, we use it
 to transform the flights table – it adds a <code class="docutils literal notranslate"><span class="pre">'TMAX'</span></code> column containing the predicted
 maximum daily temperature.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">joiner</span></a> <span class="o">=</span> <a href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">InterpolationJoiner</span></a><span class="p">(</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">joiner</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">InterpolationJoiner</span></a><span class="p">(</span>
     <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">aux_table</span></a><span class="p">,</span>
     <span class="n">main_key</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;long&quot;</span><span class="p">,</span> <span class="s2">&quot;Year_Month_DayofMonth&quot;</span><span class="p">],</span>
     <span class="n">aux_key</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;LATITUDE&quot;</span><span class="p">,</span> <span class="s2">&quot;LONGITUDE&quot;</span><span class="p">,</span> <span class="s2">&quot;YEAR/MONTH/DAY&quot;</span><span class="p">],</span>
 <span class="p">)</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">join</span></a> <span class="o">=</span> <a href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner.fit_transform" title="skrub.InterpolationJoiner.fit_transform" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">joiner</span><span class="o">.</span><span class="n">fit_transform</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">flights</span></a><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">join</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner.fit_transform" title="skrub.InterpolationJoiner.fit_transform" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">joiner</span><span class="o">.</span><span class="n">fit_transform</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">flights</span></a><span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">join</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
 </pre></div>
 </div>
@@ -957,7 +957,7 @@ maximum daily temperature.</p>
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>3.391385</td>
+      <td>0.157569</td>
     </tr>
     <tr>
       <th>1</th>
@@ -969,7 +969,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>18.451684</td>
+      <td>20.876848</td>
     </tr>
     <tr>
       <th>2</th>
@@ -981,7 +981,7 @@ maximum daily temperature.</p>
       <td>NC</td>
       <td>36.097747</td>
       <td>-79.937297</td>
-      <td>17.071025</td>
+      <td>17.250910</td>
     </tr>
     <tr>
       <th>3</th>
@@ -993,7 +993,7 @@ maximum daily temperature.</p>
       <td>IL</td>
       <td>41.979595</td>
       <td>-87.904464</td>
-      <td>16.261843</td>
+      <td>16.023247</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1005,7 +1005,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>14.419579</td>
+      <td>13.159282</td>
     </tr>
   </tbody>
 </table>
@@ -1026,11 +1026,11 @@ Washington, Minnesota.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -1.565397
-MT    1.844565
-WA    1.923995
-MN    2.840510
-OR    3.117485
+AK   -3.410317
+MT    0.741775
+WA    0.986518
+MN    1.279391
+ND    1.380300
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1040,11 +1040,11 @@ Florida, Louisiana.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-LA    21.695588
-FL    24.269111
-VI    24.792568
-HI    24.977686
-PR    25.726977
+LA    21.654601
+FL    24.715331
+HI    27.050566
+VI    30.878438
+PR    31.071600
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1069,20 +1069,20 @@ April</p>
 </div>
 <img src="../_images/sphx_glr_09_interpolation_join_003.png" srcset="../_images/sphx_glr_09_interpolation_join_003.png" alt="09 interpolation join" class = "sphx-glr-single-img"/><p>Of course these checks do not guarantee that the inferred values in our <code class="docutils literal notranslate"><span class="pre">join</span></code>
 table’s <code class="docutils literal notranslate"><span class="pre">'TMAX'</span></code> column are accurate. But at least the
-<a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> seems to have learned a few reasonable trends from
+<a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> seems to have learned a few reasonable trends from
 its training table.</p>
 </section>
 <section id="conclusion">
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
-<p>We have seen how to fit an <a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> transformer: we give it
+<p>We have seen how to fit an <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> transformer: we give it
 a table (the weather data) and a set of matching columns (here date, latitude,
 longitude) and it learns to predict the other columns’ values  (such as the max daily
 temperature). Then, it transforms tables by <em>predicting</em> values that a matching row
 would contain, rather than by searching for an actual match. It is a generalization of
-the <a class="reference internal" href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an
-<a class="reference internal" href="../generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor
+the <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an
+<a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor
 estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 4.489 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.556 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-09-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/09_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" width="150px" /></a>
