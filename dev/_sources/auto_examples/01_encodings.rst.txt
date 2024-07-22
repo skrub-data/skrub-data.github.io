@@ -307,1518 +307,6 @@ The estimator returned by :obj:`tabular_learner` combines 2 steps:
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <style>#sk-container-id-1 {
-      /* Definition of color scheme common for light and dark mode */
-      --sklearn-color-text: black;
-      --sklearn-color-line: gray;
-      /* Definition of color scheme for unfitted estimators */
-      --sklearn-color-unfitted-level-0: #fff5e6;
-      --sklearn-color-unfitted-level-1: #f6e4d2;
-      --sklearn-color-unfitted-level-2: #ffe0b3;
-      --sklearn-color-unfitted-level-3: chocolate;
-      /* Definition of color scheme for fitted estimators */
-      --sklearn-color-fitted-level-0: #f0f8ff;
-      --sklearn-color-fitted-level-1: #d4ebff;
-      --sklearn-color-fitted-level-2: #b3dbfd;
-      --sklearn-color-fitted-level-3: cornflowerblue;
-
-      /* Specific color for light theme */
-      --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
-      --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, white)));
-      --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
-      --sklearn-color-icon: #696969;
-
-      @media (prefers-color-scheme: dark) {
-        /* Redefinition of color scheme for dark theme */
-        --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
-        --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, #111)));
-        --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
-        --sklearn-color-icon: #878787;
-      }
-    }
-
-    #sk-container-id-1 {
-      color: var(--sklearn-color-text);
-    }
-
-    #sk-container-id-1 pre {
-      padding: 0;
-    }
-
-    #sk-container-id-1 input.sk-hidden--visually {
-      border: 0;
-      clip: rect(1px 1px 1px 1px);
-      clip: rect(1px, 1px, 1px, 1px);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-    }
-
-    #sk-container-id-1 div.sk-dashed-wrapped {
-      border: 1px dashed var(--sklearn-color-line);
-      margin: 0 0.4em 0.5em 0.4em;
-      box-sizing: border-box;
-      padding-bottom: 0.4em;
-      background-color: var(--sklearn-color-background);
-    }
-
-    #sk-container-id-1 div.sk-container {
-      /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
-         but bootstrap.min.css set `[hidden] { display: none !important; }`
-         so we also need the `!important` here to be able to override the
-         default hidden behavior on the sphinx rendered scikit-learn.org.
-         See: https://github.com/scikit-learn/scikit-learn/issues/21755 */
-      display: inline-block !important;
-      position: relative;
-    }
-
-    #sk-container-id-1 div.sk-text-repr-fallback {
-      display: none;
-    }
-
-    div.sk-parallel-item,
-    div.sk-serial,
-    div.sk-item {
-      /* draw centered vertical line to link estimators */
-      background-image: linear-gradient(var(--sklearn-color-text-on-default-background), var(--sklearn-color-text-on-default-background));
-      background-size: 2px 100%;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-
-    /* Parallel-specific style estimator block */
-
-    #sk-container-id-1 div.sk-parallel-item::after {
-      content: "";
-      width: 100%;
-      border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
-      flex-grow: 1;
-    }
-
-    #sk-container-id-1 div.sk-parallel {
-      display: flex;
-      align-items: stretch;
-      justify-content: center;
-      background-color: var(--sklearn-color-background);
-      position: relative;
-    }
-
-    #sk-container-id-1 div.sk-parallel-item {
-      display: flex;
-      flex-direction: column;
-    }
-
-    #sk-container-id-1 div.sk-parallel-item:first-child::after {
-      align-self: flex-end;
-      width: 50%;
-    }
-
-    #sk-container-id-1 div.sk-parallel-item:last-child::after {
-      align-self: flex-start;
-      width: 50%;
-    }
-
-    #sk-container-id-1 div.sk-parallel-item:only-child::after {
-      width: 0;
-    }
-
-    /* Serial-specific style estimator block */
-
-    #sk-container-id-1 div.sk-serial {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: var(--sklearn-color-background);
-      padding-right: 1em;
-      padding-left: 1em;
-    }
-
-
-    /* Toggleable style: style used for estimator/Pipeline/ColumnTransformer box that is
-    clickable and can be expanded/collapsed.
-    - Pipeline and ColumnTransformer use this feature and define the default style
-    - Estimators will overwrite some part of the style using the `sk-estimator` class
-    */
-
-    /* Pipeline and ColumnTransformer style (default) */
-
-    #sk-container-id-1 div.sk-toggleable {
-      /* Default theme specific background. It is overwritten whether we have a
-      specific estimator or a Pipeline/ColumnTransformer */
-      background-color: var(--sklearn-color-background);
-    }
-
-    /* Toggleable label */
-    #sk-container-id-1 label.sk-toggleable__label {
-      cursor: pointer;
-      display: block;
-      width: 100%;
-      margin-bottom: 0;
-      padding: 0.5em;
-      box-sizing: border-box;
-      text-align: center;
-    }
-
-    #sk-container-id-1 label.sk-toggleable__label-arrow:before {
-      /* Arrow on the left of the label */
-      content: "▸";
-      float: left;
-      margin-right: 0.25em;
-      color: var(--sklearn-color-icon);
-    }
-
-    #sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {
-      color: var(--sklearn-color-text);
-    }
-
-    /* Toggleable content - dropdown */
-
-    #sk-container-id-1 div.sk-toggleable__content {
-      max-height: 0;
-      max-width: 0;
-      overflow: hidden;
-      text-align: left;
-      /* unfitted */
-      background-color: var(--sklearn-color-unfitted-level-0);
-    }
-
-    #sk-container-id-1 div.sk-toggleable__content.fitted {
-      /* fitted */
-      background-color: var(--sklearn-color-fitted-level-0);
-    }
-
-    #sk-container-id-1 div.sk-toggleable__content pre {
-      margin: 0.2em;
-      border-radius: 0.25em;
-      color: var(--sklearn-color-text);
-      /* unfitted */
-      background-color: var(--sklearn-color-unfitted-level-0);
-    }
-
-    #sk-container-id-1 div.sk-toggleable__content.fitted pre {
-      /* unfitted */
-      background-color: var(--sklearn-color-fitted-level-0);
-    }
-
-    #sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {
-      /* Expand drop-down */
-      max-height: 200px;
-      max-width: 100%;
-      overflow: auto;
-    }
-
-    #sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
-      content: "▾";
-    }
-
-    /* Pipeline/ColumnTransformer-specific style */
-
-    #sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
-      color: var(--sklearn-color-text);
-      background-color: var(--sklearn-color-unfitted-level-2);
-    }
-
-    #sk-container-id-1 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
-      background-color: var(--sklearn-color-fitted-level-2);
-    }
-
-    /* Estimator-specific style */
-
-    /* Colorize estimator box */
-    #sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
-      /* unfitted */
-      background-color: var(--sklearn-color-unfitted-level-2);
-    }
-
-    #sk-container-id-1 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
-      /* fitted */
-      background-color: var(--sklearn-color-fitted-level-2);
-    }
-
-    #sk-container-id-1 div.sk-label label.sk-toggleable__label,
-    #sk-container-id-1 div.sk-label label {
-      /* The background is the default theme color */
-      color: var(--sklearn-color-text-on-default-background);
-    }
-
-    /* On hover, darken the color of the background */
-    #sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {
-      color: var(--sklearn-color-text);
-      background-color: var(--sklearn-color-unfitted-level-2);
-    }
-
-    /* Label box, darken color on hover, fitted */
-    #sk-container-id-1 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
-      color: var(--sklearn-color-text);
-      background-color: var(--sklearn-color-fitted-level-2);
-    }
-
-    /* Estimator label */
-
-    #sk-container-id-1 div.sk-label label {
-      font-family: monospace;
-      font-weight: bold;
-      display: inline-block;
-      line-height: 1.2em;
-    }
-
-    #sk-container-id-1 div.sk-label-container {
-      text-align: center;
-    }
-
-    /* Estimator-specific */
-    #sk-container-id-1 div.sk-estimator {
-      font-family: monospace;
-      border: 1px dotted var(--sklearn-color-border-box);
-      border-radius: 0.25em;
-      box-sizing: border-box;
-      margin-bottom: 0.5em;
-      /* unfitted */
-      background-color: var(--sklearn-color-unfitted-level-0);
-    }
-
-    #sk-container-id-1 div.sk-estimator.fitted {
-      /* fitted */
-      background-color: var(--sklearn-color-fitted-level-0);
-    }
-
-    /* on hover */
-    #sk-container-id-1 div.sk-estimator:hover {
-      /* unfitted */
-      background-color: var(--sklearn-color-unfitted-level-2);
-    }
-
-    #sk-container-id-1 div.sk-estimator.fitted:hover {
-      /* fitted */
-      background-color: var(--sklearn-color-fitted-level-2);
-    }
-
-    /* Specification for estimator info (e.g. "i" and "?") */
-
-    /* Common style for "i" and "?" */
-
-    .sk-estimator-doc-link,
-    a:link.sk-estimator-doc-link,
-    a:visited.sk-estimator-doc-link {
-      float: right;
-      font-size: smaller;
-      line-height: 1em;
-      font-family: monospace;
-      background-color: var(--sklearn-color-background);
-      border-radius: 1em;
-      height: 1em;
-      width: 1em;
-      text-decoration: none !important;
-      margin-left: 1ex;
-      /* unfitted */
-      border: var(--sklearn-color-unfitted-level-1) 1pt solid;
-      color: var(--sklearn-color-unfitted-level-1);
-    }
-
-    .sk-estimator-doc-link.fitted,
-    a:link.sk-estimator-doc-link.fitted,
-    a:visited.sk-estimator-doc-link.fitted {
-      /* fitted */
-      border: var(--sklearn-color-fitted-level-1) 1pt solid;
-      color: var(--sklearn-color-fitted-level-1);
-    }
-
-    /* On hover */
-    div.sk-estimator:hover .sk-estimator-doc-link:hover,
-    .sk-estimator-doc-link:hover,
-    div.sk-label-container:hover .sk-estimator-doc-link:hover,
-    .sk-estimator-doc-link:hover {
-      /* unfitted */
-      background-color: var(--sklearn-color-unfitted-level-3);
-      color: var(--sklearn-color-background);
-      text-decoration: none;
-    }
-
-    div.sk-estimator.fitted:hover .sk-estimator-doc-link.fitted:hover,
-    .sk-estimator-doc-link.fitted:hover,
-    div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
-    .sk-estimator-doc-link.fitted:hover {
-      /* fitted */
-      background-color: var(--sklearn-color-fitted-level-3);
-      color: var(--sklearn-color-background);
-      text-decoration: none;
-    }
-
-    /* Span, style for the box shown on hovering the info icon */
-    .sk-estimator-doc-link span {
-      display: none;
-      z-index: 9999;
-      position: relative;
-      font-weight: normal;
-      right: .2ex;
-      padding: .5ex;
-      margin: .5ex;
-      width: min-content;
-      min-width: 20ex;
-      max-width: 50ex;
-      color: var(--sklearn-color-text);
-      box-shadow: 2pt 2pt 4pt #999;
-      /* unfitted */
-      background: var(--sklearn-color-unfitted-level-0);
-      border: .5pt solid var(--sklearn-color-unfitted-level-3);
-    }
-
-    .sk-estimator-doc-link.fitted span {
-      /* fitted */
-      background: var(--sklearn-color-fitted-level-0);
-      border: var(--sklearn-color-fitted-level-3);
-    }
-
-    .sk-estimator-doc-link:hover span {
-      display: block;
-    }
-
-    /* "?"-specific style due to the `<a>` HTML tag */
-
-    #sk-container-id-1 a.estimator_doc_link {
-      float: right;
-      font-size: 1rem;
-      line-height: 1em;
-      font-family: monospace;
-      background-color: var(--sklearn-color-background);
-      border-radius: 1rem;
-      height: 1rem;
-      width: 1rem;
-      text-decoration: none;
-      /* unfitted */
-      color: var(--sklearn-color-unfitted-level-1);
-      border: var(--sklearn-color-unfitted-level-1) 1pt solid;
-    }
-
-    #sk-container-id-1 a.estimator_doc_link.fitted {
-      /* fitted */
-      border: var(--sklearn-color-fitted-level-1) 1pt solid;
-      color: var(--sklearn-color-fitted-level-1);
-    }
-
-    /* On hover */
-    #sk-container-id-1 a.estimator_doc_link:hover {
-      /* unfitted */
-      background-color: var(--sklearn-color-unfitted-level-3);
-      color: var(--sklearn-color-background);
-      text-decoration: none;
-    }
-
-    #sk-container-id-1 a.estimator_doc_link.fitted:hover {
-      /* fitted */
-      background-color: var(--sklearn-color-fitted-level-3);
-    }
-    </style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;,
-                     TableVectorizer(high_cardinality=MinHashEncoder(),
-                                     low_cardinality=ToCategorical())),
-                    (&#x27;histgradientboostingregressor&#x27;,
-                     HistGradientBoostingRegressor(categorical_features=&#x27;from_dtype&#x27;))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" ><label for="sk-estimator-id-1" class="sk-toggleable__label  sk-toggleable__label-arrow ">&nbsp;&nbsp;Pipeline<a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></label><div class="sk-toggleable__content "><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;,
-                     TableVectorizer(high_cardinality=MinHashEncoder(),
-                                     low_cardinality=ToCategorical())),
-                    (&#x27;histgradientboostingregressor&#x27;,
-                     HistGradientBoostingRegressor(categorical_features=&#x27;from_dtype&#x27;))])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" ><label for="sk-estimator-id-2" class="sk-toggleable__label  sk-toggleable__label-arrow ">tablevectorizer: TableVectorizer</label><div class="sk-toggleable__content "><pre>TableVectorizer(high_cardinality=MinHashEncoder(),
-                    low_cardinality=ToCategorical())</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" ><label for="sk-estimator-id-3" class="sk-toggleable__label  sk-toggleable__label-arrow ">datetime: DatetimeEncoder</label><div class="sk-toggleable__content "><pre>DatetimeEncoder()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" ><label for="sk-estimator-id-4" class="sk-toggleable__label  sk-toggleable__label-arrow ">DatetimeEncoder</label><div class="sk-toggleable__content "><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" ><label for="sk-estimator-id-5" class="sk-toggleable__label  sk-toggleable__label-arrow ">high_cardinality: MinHashEncoder</label><div class="sk-toggleable__content "><pre>MinHashEncoder()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" ><label for="sk-estimator-id-6" class="sk-toggleable__label  sk-toggleable__label-arrow ">MinHashEncoder</label><div class="sk-toggleable__content "><pre>MinHashEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" ><label for="sk-estimator-id-7" class="sk-toggleable__label  sk-toggleable__label-arrow ">low_cardinality: ToCategorical</label><div class="sk-toggleable__content "><pre>ToCategorical()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-8" type="checkbox" ><label for="sk-estimator-id-8" class="sk-toggleable__label  sk-toggleable__label-arrow ">ToCategorical</label><div class="sk-toggleable__content "><pre>ToCategorical()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-9" type="checkbox" ><label for="sk-estimator-id-9" class="sk-toggleable__label  sk-toggleable__label-arrow ">numeric: PassThrough</label><div class="sk-toggleable__content "><pre>PassThrough()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-10" type="checkbox" ><label for="sk-estimator-id-10" class="sk-toggleable__label  sk-toggleable__label-arrow ">PassThrough</label><div class="sk-toggleable__content "><pre>PassThrough()</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-11" type="checkbox" ><label for="sk-estimator-id-11" class="sk-toggleable__label  sk-toggleable__label-arrow ">&nbsp;HistGradientBoostingRegressor<a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a></label><div class="sk-toggleable__content "><pre>HistGradientBoostingRegressor(categorical_features=&#x27;from_dtype&#x27;)</pre></div> </div></div></div></div></div></div>
-    </div>
-    <br />
-    <br />
-
-.. GENERATED FROM PYTHON SOURCE LINES 88-92
-
-In the rest of this example, we focus on the first step and explore the
-capabilities of skrub's |TableVectorizer|.
-
-|
-
-.. GENERATED FROM PYTHON SOURCE LINES 94-96
-
-More details on encoding tabular data
--------------------------------------
-
-.. GENERATED FROM PYTHON SOURCE LINES 96-103
-
-.. code-block:: Python
-
-
-    from skrub import TableVectorizer
-
-    vectorizer = TableVectorizer()
-    vectorized_employees = vectorizer.fit_transform(employees)
-    vectorized_employees
-
-
-
-
-
-
-.. raw:: html
-
-    <div class="output_subarea output_html rendered_html output_result">
-    <div>
-    <style scoped>
-        .dataframe tbody tr th:only-of-type {
-            vertical-align: middle;
-        }
-
-        .dataframe tbody tr th {
-            vertical-align: top;
-        }
-
-        .dataframe thead th {
-            text-align: right;
-        }
-    </style>
-    <table border="1" class="dataframe">
-      <thead>
-        <tr style="text-align: right;">
-          <th></th>
-          <th>gender_F</th>
-          <th>gender_M</th>
-          <th>gender_nan</th>
-          <th>department_BOA</th>
-          <th>department_BOE</th>
-          <th>department_CAT</th>
-          <th>department_CCL</th>
-          <th>department_CEC</th>
-          <th>department_CEX</th>
-          <th>department_COR</th>
-          <th>department_CUS</th>
-          <th>department_DEP</th>
-          <th>department_DGS</th>
-          <th>department_DHS</th>
-          <th>department_DLC</th>
-          <th>department_DOT</th>
-          <th>department_DPS</th>
-          <th>department_DTS</th>
-          <th>department_ECM</th>
-          <th>department_FIN</th>
-          <th>department_FRS</th>
-          <th>department_HCA</th>
-          <th>department_HHS</th>
-          <th>department_HRC</th>
-          <th>department_IGR</th>
-          <th>department_LIB</th>
-          <th>department_MPB</th>
-          <th>department_NDA</th>
-          <th>department_OAG</th>
-          <th>department_OCP</th>
-          <th>department_OHR</th>
-          <th>department_OIG</th>
-          <th>department_OLO</th>
-          <th>department_OMB</th>
-          <th>department_PIO</th>
-          <th>department_POL</th>
-          <th>department_PRO</th>
-          <th>department_REC</th>
-          <th>department_SHF</th>
-          <th>department_ZAH</th>
-          <th>...</th>
-          <th>division: welfare, child, solid</th>
-          <th>division: centers, refugee, center</th>
-          <th>division: environmental, behavioral, regulatory</th>
-          <th>division: patrol, 6th, 4th</th>
-          <th>assignment_category_Parttime-Regular</th>
-          <th>employee_position_title: worker, social, leader</th>
-          <th>employee_position_title: technician, mechanic, electrician</th>
-          <th>employee_position_title: firefighter, recruit, rescuer</th>
-          <th>employee_position_title: operator, bus, operations</th>
-          <th>employee_position_title: manager, engineer, iii</th>
-          <th>employee_position_title: officer, office, police</th>
-          <th>employee_position_title: correctional, correction, corporal</th>
-          <th>employee_position_title: program, programs, production</th>
-          <th>employee_position_title: school, room, behavioral</th>
-          <th>employee_position_title: liquor, clerk, store</th>
-          <th>employee_position_title: enforcement, permitting, inspector</th>
-          <th>employee_position_title: information, recreation, technology</th>
-          <th>employee_position_title: captain, rescue, fire</th>
-          <th>employee_position_title: services, service, urban</th>
-          <th>employee_position_title: administrative, legislative, principal</th>
-          <th>employee_position_title: specialist, special, planning</th>
-          <th>employee_position_title: coordinator, coordinating, depot</th>
-          <th>employee_position_title: communications, telecommunications, safety</th>
-          <th>employee_position_title: sheriff, deputy, autobody</th>
-          <th>employee_position_title: community, health, nurse</th>
-          <th>employee_position_title: candidate, attendant, cashier</th>
-          <th>employee_position_title: assistant, library, crossing</th>
-          <th>employee_position_title: equipment, auditor, investigator</th>
-          <th>employee_position_title: sergeant, police, emergency</th>
-          <th>employee_position_title: warehouse, welfare, driver</th>
-          <th>employee_position_title: lieutenant, regional, records</th>
-          <th>employee_position_title: environmental, budget, background</th>
-          <th>employee_position_title: assistance, income, client</th>
-          <th>employee_position_title: projects, project, capital</th>
-          <th>employee_position_title: supervisory, supervisor, therapist</th>
-          <th>date_first_hired_year</th>
-          <th>date_first_hired_month</th>
-          <th>date_first_hired_day</th>
-          <th>date_first_hired_total_seconds</th>
-          <th>year_first_hired</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>0</th>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>...</td>
-          <td>0.065861</td>
-          <td>0.074813</td>
-          <td>0.072881</td>
-          <td>0.194650</td>
-          <td>0.0</td>
-          <td>0.052937</td>
-          <td>0.051516</td>
-          <td>0.054760</td>
-          <td>0.067524</td>
-          <td>0.053974</td>
-          <td>0.098173</td>
-          <td>0.062287</td>
-          <td>0.050629</td>
-          <td>0.051747</td>
-          <td>0.059040</td>
-          <td>0.055183</td>
-          <td>0.052774</td>
-          <td>0.055574</td>
-          <td>0.108518</td>
-          <td>0.052608</td>
-          <td>0.052875</td>
-          <td>37.284607</td>
-          <td>0.054005</td>
-          <td>0.053768</td>
-          <td>0.052581</td>
-          <td>0.058946</td>
-          <td>0.050892</td>
-          <td>0.055863</td>
-          <td>0.086927</td>
-          <td>0.053525</td>
-          <td>0.052868</td>
-          <td>0.051000</td>
-          <td>0.054444</td>
-          <td>0.053622</td>
-          <td>0.056835</td>
-          <td>1986.0</td>
-          <td>9.0</td>
-          <td>22.0</td>
-          <td>5.277312e+08</td>
-          <td>1986.0</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>...</td>
-          <td>0.066931</td>
-          <td>0.063261</td>
-          <td>0.055081</td>
-          <td>0.060471</td>
-          <td>0.0</td>
-          <td>0.056307</td>
-          <td>0.053824</td>
-          <td>0.089876</td>
-          <td>0.056417</td>
-          <td>0.071109</td>
-          <td>17.523148</td>
-          <td>0.066866</td>
-          <td>0.053263</td>
-          <td>0.052531</td>
-          <td>0.061542</td>
-          <td>0.052264</td>
-          <td>0.055907</td>
-          <td>0.052701</td>
-          <td>0.058392</td>
-          <td>0.053620</td>
-          <td>0.058725</td>
-          <td>0.067257</td>
-          <td>0.054043</td>
-          <td>0.053854</td>
-          <td>0.050654</td>
-          <td>10.807177</td>
-          <td>0.057537</td>
-          <td>0.053122</td>
-          <td>0.094674</td>
-          <td>0.053793</td>
-          <td>0.054064</td>
-          <td>0.054551</td>
-          <td>0.064404</td>
-          <td>0.061904</td>
-          <td>0.056477</td>
-          <td>1988.0</td>
-          <td>9.0</td>
-          <td>12.0</td>
-          <td>5.900256e+08</td>
-          <td>1988.0</td>
-        </tr>
-        <tr>
-          <th>2</th>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>...</td>
-          <td>0.107101</td>
-          <td>0.073340</td>
-          <td>0.095933</td>
-          <td>0.064129</td>
-          <td>0.0</td>
-          <td>20.902637</td>
-          <td>0.054308</td>
-          <td>0.055452</td>
-          <td>0.053270</td>
-          <td>0.066218</td>
-          <td>0.057418</td>
-          <td>0.058506</td>
-          <td>0.056589</td>
-          <td>0.054856</td>
-          <td>0.055877</td>
-          <td>0.052842</td>
-          <td>0.056177</td>
-          <td>0.050047</td>
-          <td>0.051666</td>
-          <td>0.059941</td>
-          <td>0.063447</td>
-          <td>0.051911</td>
-          <td>0.052711</td>
-          <td>0.051793</td>
-          <td>0.051804</td>
-          <td>0.050625</td>
-          <td>0.050482</td>
-          <td>0.053995</td>
-          <td>0.051454</td>
-          <td>0.066033</td>
-          <td>0.053190</td>
-          <td>0.056702</td>
-          <td>0.053912</td>
-          <td>0.052600</td>
-          <td>0.053534</td>
-          <td>1989.0</td>
-          <td>11.0</td>
-          <td>19.0</td>
-          <td>6.274368e+08</td>
-          <td>1989.0</td>
-        </tr>
-        <tr>
-          <th>3</th>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>...</td>
-          <td>0.059935</td>
-          <td>0.054621</td>
-          <td>0.055420</td>
-          <td>0.051629</td>
-          <td>0.0</td>
-          <td>0.118932</td>
-          <td>0.055724</td>
-          <td>0.254225</td>
-          <td>0.060631</td>
-          <td>0.629070</td>
-          <td>0.092986</td>
-          <td>0.074751</td>
-          <td>0.058689</td>
-          <td>0.050898</td>
-          <td>0.088476</td>
-          <td>0.123872</td>
-          <td>0.066198</td>
-          <td>0.198285</td>
-          <td>2.140305</td>
-          <td>0.267273</td>
-          <td>0.062106</td>
-          <td>0.069739</td>
-          <td>0.056064</td>
-          <td>0.092094</td>
-          <td>0.053755</td>
-          <td>0.057080</td>
-          <td>0.063189</td>
-          <td>4.854625</td>
-          <td>0.061788</td>
-          <td>0.059812</td>
-          <td>0.079001</td>
-          <td>0.097548</td>
-          <td>0.057990</td>
-          <td>0.053942</td>
-          <td>21.500952</td>
-          <td>2014.0</td>
-          <td>5.0</td>
-          <td>5.0</td>
-          <td>1.399248e+09</td>
-          <td>2014.0</td>
-        </tr>
-        <tr>
-          <th>4</th>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>...</td>
-          <td>0.052786</td>
-          <td>0.166920</td>
-          <td>0.065543</td>
-          <td>0.052835</td>
-          <td>0.0</td>
-          <td>0.067719</td>
-          <td>0.105558</td>
-          <td>0.055497</td>
-          <td>0.051681</td>
-          <td>0.186569</td>
-          <td>0.063086</td>
-          <td>0.057611</td>
-          <td>0.090903</td>
-          <td>0.063652</td>
-          <td>0.054450</td>
-          <td>3.402540</td>
-          <td>0.070094</td>
-          <td>0.050983</td>
-          <td>0.058197</td>
-          <td>0.055606</td>
-          <td>27.572567</td>
-          <td>0.052183</td>
-          <td>0.066065</td>
-          <td>0.060013</td>
-          <td>0.055198</td>
-          <td>0.058311</td>
-          <td>0.078131</td>
-          <td>0.053497</td>
-          <td>0.076556</td>
-          <td>0.050187</td>
-          <td>0.071392</td>
-          <td>0.127309</td>
-          <td>0.093857</td>
-          <td>0.088532</td>
-          <td>0.062055</td>
-          <td>2007.0</td>
-          <td>3.0</td>
-          <td>5.0</td>
-          <td>1.173053e+09</td>
-          <td>2007.0</td>
-        </tr>
-        <tr>
-          <th>...</th>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <th>9223</th>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>...</td>
-          <td>0.087059</td>
-          <td>20.643753</td>
-          <td>0.089023</td>
-          <td>0.055836</td>
-          <td>0.0</td>
-          <td>0.055031</td>
-          <td>0.054357</td>
-          <td>0.052129</td>
-          <td>0.050000</td>
-          <td>0.058105</td>
-          <td>0.055016</td>
-          <td>0.054315</td>
-          <td>0.052719</td>
-          <td>0.067474</td>
-          <td>0.052239</td>
-          <td>0.053070</td>
-          <td>0.052127</td>
-          <td>0.051098</td>
-          <td>0.064520</td>
-          <td>0.051859</td>
-          <td>0.054407</td>
-          <td>0.051938</td>
-          <td>0.060143</td>
-          <td>0.058276</td>
-          <td>34.429531</td>
-          <td>0.051027</td>
-          <td>0.051406</td>
-          <td>0.051683</td>
-          <td>0.053910</td>
-          <td>0.052314</td>
-          <td>0.051471</td>
-          <td>0.052360</td>
-          <td>0.054442</td>
-          <td>0.050471</td>
-          <td>0.052558</td>
-          <td>2015.0</td>
-          <td>11.0</td>
-          <td>3.0</td>
-          <td>1.446509e+09</td>
-          <td>2015.0</td>
-        </tr>
-        <tr>
-          <th>9224</th>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>...</td>
-          <td>0.264378</td>
-          <td>0.278649</td>
-          <td>0.091697</td>
-          <td>0.054858</td>
-          <td>0.0</td>
-          <td>0.058019</td>
-          <td>0.073770</td>
-          <td>0.075878</td>
-          <td>0.050002</td>
-          <td>0.050003</td>
-          <td>0.051613</td>
-          <td>0.100537</td>
-          <td>0.054098</td>
-          <td>0.065065</td>
-          <td>0.052657</td>
-          <td>0.051625</td>
-          <td>1.787993</td>
-          <td>28.546556</td>
-          <td>0.148482</td>
-          <td>0.277541</td>
-          <td>0.099731</td>
-          <td>0.114957</td>
-          <td>0.075067</td>
-          <td>0.052010</td>
-          <td>0.050627</td>
-          <td>2.748217</td>
-          <td>0.141045</td>
-          <td>0.053885</td>
-          <td>0.051127</td>
-          <td>0.549123</td>
-          <td>0.077233</td>
-          <td>0.059311</td>
-          <td>0.091342</td>
-          <td>0.050434</td>
-          <td>1.842052</td>
-          <td>1988.0</td>
-          <td>11.0</td>
-          <td>28.0</td>
-          <td>5.966784e+08</td>
-          <td>1988.0</td>
-        </tr>
-        <tr>
-          <th>9225</th>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>...</td>
-          <td>3.479045</td>
-          <td>0.694141</td>
-          <td>62.867340</td>
-          <td>0.060317</td>
-          <td>1.0</td>
-          <td>4.189300</td>
-          <td>0.322287</td>
-          <td>0.055181</td>
-          <td>0.170698</td>
-          <td>0.070329</td>
-          <td>0.093743</td>
-          <td>0.153780</td>
-          <td>0.060484</td>
-          <td>0.162284</td>
-          <td>0.099150</td>
-          <td>1.378942</td>
-          <td>0.091586</td>
-          <td>0.078134</td>
-          <td>0.074350</td>
-          <td>0.254446</td>
-          <td>0.112546</td>
-          <td>0.136063</td>
-          <td>0.102092</td>
-          <td>0.064324</td>
-          <td>0.056027</td>
-          <td>2.320750</td>
-          <td>0.063778</td>
-          <td>2.897569</td>
-          <td>0.062023</td>
-          <td>0.100029</td>
-          <td>0.089049</td>
-          <td>0.068719</td>
-          <td>0.072716</td>
-          <td>0.071782</td>
-          <td>33.027836</td>
-          <td>2001.0</td>
-          <td>4.0</td>
-          <td>30.0</td>
-          <td>9.885888e+08</td>
-          <td>2001.0</td>
-        </tr>
-        <tr>
-          <th>9226</th>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>...</td>
-          <td>0.067640</td>
-          <td>20.429182</td>
-          <td>0.069260</td>
-          <td>0.066815</td>
-          <td>0.0</td>
-          <td>0.062989</td>
-          <td>0.054046</td>
-          <td>0.058192</td>
-          <td>0.051864</td>
-          <td>11.893744</td>
-          <td>0.061998</td>
-          <td>0.056204</td>
-          <td>0.051966</td>
-          <td>0.051268</td>
-          <td>0.053296</td>
-          <td>0.053795</td>
-          <td>0.051328</td>
-          <td>0.050002</td>
-          <td>0.052891</td>
-          <td>0.050012</td>
-          <td>0.051965</td>
-          <td>0.051564</td>
-          <td>0.050719</td>
-          <td>0.053632</td>
-          <td>0.052038</td>
-          <td>0.051828</td>
-          <td>0.051298</td>
-          <td>0.053967</td>
-          <td>0.055239</td>
-          <td>0.051675</td>
-          <td>0.054067</td>
-          <td>0.053827</td>
-          <td>0.051627</td>
-          <td>0.109981</td>
-          <td>0.052979</td>
-          <td>2006.0</td>
-          <td>9.0</td>
-          <td>5.0</td>
-          <td>1.157414e+09</td>
-          <td>2006.0</td>
-        </tr>
-        <tr>
-          <th>9227</th>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>1.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
-          <td>...</td>
-          <td>0.070921</td>
-          <td>0.570822</td>
-          <td>11.425532</td>
-          <td>0.054424</td>
-          <td>0.0</td>
-          <td>0.070819</td>
-          <td>0.058009</td>
-          <td>0.052280</td>
-          <td>0.066168</td>
-          <td>0.058142</td>
-          <td>0.093151</td>
-          <td>0.075343</td>
-          <td>0.087120</td>
-          <td>0.068234</td>
-          <td>0.066632</td>
-          <td>12.911395</td>
-          <td>0.109237</td>
-          <td>0.050991</td>
-          <td>0.061929</td>
-          <td>0.053419</td>
-          <td>0.130569</td>
-          <td>0.079596</td>
-          <td>0.070399</td>
-          <td>0.055159</td>
-          <td>0.061915</td>
-          <td>0.059409</td>
-          <td>0.056022</td>
-          <td>0.165507</td>
-          <td>0.083707</td>
-          <td>0.057798</td>
-          <td>0.060334</td>
-          <td>45.028145</td>
-          <td>0.091905</td>
-          <td>0.051438</td>
-          <td>0.065231</td>
-          <td>2012.0</td>
-          <td>1.0</td>
-          <td>30.0</td>
-          <td>1.327882e+09</td>
-          <td>2012.0</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>9228 rows × 143 columns</p>
-    </div>
-    </div>
-    <br />
-    <br />
-
-.. GENERATED FROM PYTHON SOURCE LINES 104-108
-
-From our 8 columns, the |TableVectorizer| has extracted 143 numerical
-features. Most of them are one-hot encoded representations of the categorical
-features. For example, we can see that 3 columns ``'gender_F'``, ``'gender_M'``,
-``'gender_nan'`` were created to encode the ``'gender'`` column.
-
-.. GENERATED FROM PYTHON SOURCE LINES 110-112
-
-By performing appropriate transformations on our complex data, the |TableVectorizer|
-produced numeric features that we can use for machine-learning:
-
-.. GENERATED FROM PYTHON SOURCE LINES 112-117
-
-.. code-block:: Python
-
-
-    from sklearn.ensemble import HistGradientBoostingRegressor
-
-    HistGradientBoostingRegressor().fit(vectorized_employees, salaries)
-
-
-
-
-
-
-.. raw:: html
-
-    <div class="output_subarea output_html rendered_html output_result">
     <style>#sk-container-id-2 {
       /* Definition of color scheme common for light and dark mode */
       --sklearn-color-text: black;
@@ -2223,41 +711,1105 @@ produced numeric features that we can use for machine-learning:
       /* fitted */
       background-color: var(--sklearn-color-fitted-level-3);
     }
-    </style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>HistGradientBoostingRegressor()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-12" type="checkbox" checked><label for="sk-estimator-id-12" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;HistGradientBoostingRegressor<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>HistGradientBoostingRegressor()</pre></div> </div></div></div></div>
+    </style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;,
+                     TableVectorizer(high_cardinality=MinHashEncoder(),
+                                     low_cardinality=ToCategorical())),
+                    (&#x27;histgradientboostingregressor&#x27;,
+                     HistGradientBoostingRegressor(categorical_features=&#x27;from_dtype&#x27;))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" ><label for="sk-estimator-id-2" class="sk-toggleable__label  sk-toggleable__label-arrow ">&nbsp;&nbsp;Pipeline<a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></label><div class="sk-toggleable__content "><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;,
+                     TableVectorizer(high_cardinality=MinHashEncoder(),
+                                     low_cardinality=ToCategorical())),
+                    (&#x27;histgradientboostingregressor&#x27;,
+                     HistGradientBoostingRegressor(categorical_features=&#x27;from_dtype&#x27;))])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" ><label for="sk-estimator-id-3" class="sk-toggleable__label  sk-toggleable__label-arrow ">tablevectorizer: TableVectorizer</label><div class="sk-toggleable__content "><pre>TableVectorizer(high_cardinality=MinHashEncoder(),
+                    low_cardinality=ToCategorical())</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" ><label for="sk-estimator-id-4" class="sk-toggleable__label  sk-toggleable__label-arrow ">datetime: DatetimeEncoder</label><div class="sk-toggleable__content "><pre>DatetimeEncoder()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" ><label for="sk-estimator-id-5" class="sk-toggleable__label  sk-toggleable__label-arrow ">DatetimeEncoder</label><div class="sk-toggleable__content "><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" ><label for="sk-estimator-id-6" class="sk-toggleable__label  sk-toggleable__label-arrow ">high_cardinality: MinHashEncoder</label><div class="sk-toggleable__content "><pre>MinHashEncoder()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" ><label for="sk-estimator-id-7" class="sk-toggleable__label  sk-toggleable__label-arrow ">MinHashEncoder</label><div class="sk-toggleable__content "><pre>MinHashEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-8" type="checkbox" ><label for="sk-estimator-id-8" class="sk-toggleable__label  sk-toggleable__label-arrow ">low_cardinality: ToCategorical</label><div class="sk-toggleable__content "><pre>ToCategorical()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-9" type="checkbox" ><label for="sk-estimator-id-9" class="sk-toggleable__label  sk-toggleable__label-arrow ">ToCategorical</label><div class="sk-toggleable__content "><pre>ToCategorical()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-10" type="checkbox" ><label for="sk-estimator-id-10" class="sk-toggleable__label  sk-toggleable__label-arrow ">numeric: PassThrough</label><div class="sk-toggleable__content "><pre>PassThrough()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-11" type="checkbox" ><label for="sk-estimator-id-11" class="sk-toggleable__label  sk-toggleable__label-arrow ">PassThrough</label><div class="sk-toggleable__content "><pre>PassThrough()</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-12" type="checkbox" ><label for="sk-estimator-id-12" class="sk-toggleable__label  sk-toggleable__label-arrow ">&nbsp;HistGradientBoostingRegressor<a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a></label><div class="sk-toggleable__content "><pre>HistGradientBoostingRegressor(categorical_features=&#x27;from_dtype&#x27;)</pre></div> </div></div></div></div></div></div>
     </div>
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 118-122
+.. GENERATED FROM PYTHON SOURCE LINES 88-92
 
-The |TableVectorizer| bridges the gap between tabular data and machine-learning
-pipelines. It allows us to apply a machine-learning estimator to our dataframe without
-manual data wrangling and feature extraction.
+In the rest of this example, we focus on the first step and explore the
+capabilities of skrub's |TableVectorizer|.
 
+|
 
-.. GENERATED FROM PYTHON SOURCE LINES 124-138
+.. GENERATED FROM PYTHON SOURCE LINES 94-96
 
-Inspecting the TableVectorizer
-------------------------------
+More details on encoding tabular data
+-------------------------------------
 
-The |TableVectorizer| distinguishes between 4 basic kinds of columns (more may be
-added in the future).
-For each kind, it applies a different transformation, which we can configure. The
-kinds of columns and the default transformation for each of them are:
-
-- numeric columns: simply casting to floating-point
-- datetime columns: extracting features such as year, day, hour with the
-  |DatetimeEncoder|
-- low-cardinality categorical columns: one-hot encoding
-- high-cardinality categorical columns: a simple and effective text representation
-  pipeline provided by the |GapEncoder|
-
-.. GENERATED FROM PYTHON SOURCE LINES 138-141
+.. GENERATED FROM PYTHON SOURCE LINES 96-103
 
 .. code-block:: Python
 
 
-    vectorizer
+    from skrub import TableVectorizer
+
+    vectorizer = TableVectorizer()
+    vectorized_employees = vectorizer.fit_transform(employees)
+    vectorized_employees
+
+
+
+
+
+
+.. raw:: html
+
+    <div class="output_subarea output_html rendered_html output_result">
+    <div>
+    <style scoped>
+        .dataframe tbody tr th:only-of-type {
+            vertical-align: middle;
+        }
+
+        .dataframe tbody tr th {
+            vertical-align: top;
+        }
+
+        .dataframe thead th {
+            text-align: right;
+        }
+    </style>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>gender_F</th>
+          <th>gender_M</th>
+          <th>gender_nan</th>
+          <th>department_BOA</th>
+          <th>department_BOE</th>
+          <th>department_CAT</th>
+          <th>department_CCL</th>
+          <th>department_CEC</th>
+          <th>department_CEX</th>
+          <th>department_COR</th>
+          <th>department_CUS</th>
+          <th>department_DEP</th>
+          <th>department_DGS</th>
+          <th>department_DHS</th>
+          <th>department_DLC</th>
+          <th>department_DOT</th>
+          <th>department_DPS</th>
+          <th>department_DTS</th>
+          <th>department_ECM</th>
+          <th>department_FIN</th>
+          <th>department_FRS</th>
+          <th>department_HCA</th>
+          <th>department_HHS</th>
+          <th>department_HRC</th>
+          <th>department_IGR</th>
+          <th>department_LIB</th>
+          <th>department_MPB</th>
+          <th>department_NDA</th>
+          <th>department_OAG</th>
+          <th>department_OCP</th>
+          <th>department_OHR</th>
+          <th>department_OIG</th>
+          <th>department_OLO</th>
+          <th>department_OMB</th>
+          <th>department_PIO</th>
+          <th>department_POL</th>
+          <th>department_PRO</th>
+          <th>department_REC</th>
+          <th>department_SHF</th>
+          <th>department_ZAH</th>
+          <th>...</th>
+          <th>division: accounting, countywide, receivable</th>
+          <th>division: supports, support, compliance</th>
+          <th>division: technology, systems, telephone</th>
+          <th>division: eligibility, assistance, assisted</th>
+          <th>assignment_category_Parttime-Regular</th>
+          <th>employee_position_title: specialist, special, disposal</th>
+          <th>employee_position_title: firefighter, rescuer, master</th>
+          <th>employee_position_title: officer, office, police</th>
+          <th>employee_position_title: librarian, psychiatric, employee</th>
+          <th>employee_position_title: operator, equipment, bus</th>
+          <th>employee_position_title: legislative, principal, executive</th>
+          <th>employee_position_title: community, nurse, unit</th>
+          <th>employee_position_title: school, health, room</th>
+          <th>employee_position_title: program, programs, projects</th>
+          <th>employee_position_title: warehouse, worker, social</th>
+          <th>employee_position_title: correctional, correction, records</th>
+          <th>employee_position_title: information, technology, technologist</th>
+          <th>employee_position_title: coordinator, services, service</th>
+          <th>employee_position_title: enforcement, permitting, inspector</th>
+          <th>employee_position_title: candidate, sheriff, deputy</th>
+          <th>employee_position_title: sergeant, police, cadet</th>
+          <th>employee_position_title: recreation, renovation, resource</th>
+          <th>employee_position_title: environmental, budget, ombudsman</th>
+          <th>employee_position_title: lieutenant, captain, chief</th>
+          <th>employee_position_title: supervisor, supervisory, advisor</th>
+          <th>employee_position_title: technician, mechanic, supply</th>
+          <th>employee_position_title: manager, engineer, investigator</th>
+          <th>employee_position_title: crossing, purchasing, planning</th>
+          <th>employee_position_title: corporal, erp, behavioral</th>
+          <th>employee_position_title: telecommunications, communications, safety</th>
+          <th>employee_position_title: income, assistance, client</th>
+          <th>employee_position_title: liquor, clerk, store</th>
+          <th>employee_position_title: accountant, assistant, library</th>
+          <th>employee_position_title: representative, customer, president</th>
+          <th>employee_position_title: administrative, administration, administrator</th>
+          <th>date_first_hired_year</th>
+          <th>date_first_hired_month</th>
+          <th>date_first_hired_day</th>
+          <th>date_first_hired_total_seconds</th>
+          <th>year_first_hired</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>0</th>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>...</td>
+          <td>0.097801</td>
+          <td>0.065607</td>
+          <td>80.311752</td>
+          <td>0.060855</td>
+          <td>0.0</td>
+          <td>0.050792</td>
+          <td>0.054464</td>
+          <td>0.109839</td>
+          <td>0.051007</td>
+          <td>0.066248</td>
+          <td>0.052917</td>
+          <td>0.052678</td>
+          <td>0.051909</td>
+          <td>0.052270</td>
+          <td>0.052844</td>
+          <td>0.059390</td>
+          <td>0.053275</td>
+          <td>37.319397</td>
+          <td>0.055514</td>
+          <td>0.053980</td>
+          <td>0.079022</td>
+          <td>0.051940</td>
+          <td>0.050917</td>
+          <td>0.055008</td>
+          <td>0.068626</td>
+          <td>0.051432</td>
+          <td>0.053644</td>
+          <td>0.053188</td>
+          <td>0.066166</td>
+          <td>0.053853</td>
+          <td>0.054787</td>
+          <td>0.059798</td>
+          <td>0.051680</td>
+          <td>0.059136</td>
+          <td>0.054279</td>
+          <td>1986.0</td>
+          <td>9.0</td>
+          <td>22.0</td>
+          <td>5.277312e+08</td>
+          <td>1986.0</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>...</td>
+          <td>0.061526</td>
+          <td>0.069967</td>
+          <td>0.072949</td>
+          <td>0.076565</td>
+          <td>0.0</td>
+          <td>0.079198</td>
+          <td>2.307160</td>
+          <td>25.740273</td>
+          <td>0.063503</td>
+          <td>0.053760</td>
+          <td>0.059690</td>
+          <td>0.050717</td>
+          <td>0.056798</td>
+          <td>0.083173</td>
+          <td>0.053861</td>
+          <td>0.057583</td>
+          <td>0.076734</td>
+          <td>0.061662</td>
+          <td>0.052637</td>
+          <td>0.055166</td>
+          <td>0.081361</td>
+          <td>0.071094</td>
+          <td>0.066673</td>
+          <td>0.057331</td>
+          <td>0.058785</td>
+          <td>0.063934</td>
+          <td>0.123895</td>
+          <td>0.054894</td>
+          <td>0.061721</td>
+          <td>0.056131</td>
+          <td>0.120258</td>
+          <td>0.076537</td>
+          <td>0.105290</td>
+          <td>0.063911</td>
+          <td>0.086271</td>
+          <td>1988.0</td>
+          <td>9.0</td>
+          <td>12.0</td>
+          <td>5.900256e+08</td>
+          <td>1988.0</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>...</td>
+          <td>0.060465</td>
+          <td>0.056683</td>
+          <td>0.086670</td>
+          <td>0.087582</td>
+          <td>0.0</td>
+          <td>0.068263</td>
+          <td>0.057074</td>
+          <td>0.059941</td>
+          <td>0.054729</td>
+          <td>0.053512</td>
+          <td>0.056510</td>
+          <td>0.052410</td>
+          <td>0.057545</td>
+          <td>0.058206</td>
+          <td>20.841873</td>
+          <td>0.062770</td>
+          <td>0.058450</td>
+          <td>0.052343</td>
+          <td>0.055276</td>
+          <td>0.052696</td>
+          <td>0.051317</td>
+          <td>0.064497</td>
+          <td>0.057915</td>
+          <td>0.050003</td>
+          <td>0.056914</td>
+          <td>0.056130</td>
+          <td>0.071979</td>
+          <td>0.050162</td>
+          <td>0.063492</td>
+          <td>0.053833</td>
+          <td>0.054947</td>
+          <td>0.057697</td>
+          <td>0.051351</td>
+          <td>0.054191</td>
+          <td>0.063973</td>
+          <td>1989.0</td>
+          <td>11.0</td>
+          <td>19.0</td>
+          <td>6.274368e+08</td>
+          <td>1989.0</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>...</td>
+          <td>0.064131</td>
+          <td>0.052397</td>
+          <td>0.059827</td>
+          <td>0.090661</td>
+          <td>0.0</td>
+          <td>0.084000</td>
+          <td>0.089767</td>
+          <td>0.090171</td>
+          <td>0.055752</td>
+          <td>0.082515</td>
+          <td>0.228804</td>
+          <td>0.058638</td>
+          <td>0.051140</td>
+          <td>0.069965</td>
+          <td>0.086476</td>
+          <td>0.063183</td>
+          <td>0.069390</td>
+          <td>0.068860</td>
+          <td>3.608802</td>
+          <td>0.081654</td>
+          <td>0.062381</td>
+          <td>0.061408</td>
+          <td>0.632585</td>
+          <td>0.062968</td>
+          <td>13.844439</td>
+          <td>0.057640</td>
+          <td>1.068669</td>
+          <td>0.061664</td>
+          <td>0.073782</td>
+          <td>0.057192</td>
+          <td>0.065595</td>
+          <td>0.077045</td>
+          <td>0.094486</td>
+          <td>10.423500</td>
+          <td>0.067527</td>
+          <td>2014.0</td>
+          <td>5.0</td>
+          <td>5.0</td>
+          <td>1.399248e+09</td>
+          <td>2014.0</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>...</td>
+          <td>35.067150</td>
+          <td>0.073685</td>
+          <td>0.122812</td>
+          <td>0.054037</td>
+          <td>0.0</td>
+          <td>18.541698</td>
+          <td>0.059279</td>
+          <td>0.074803</td>
+          <td>0.067950</td>
+          <td>0.052165</td>
+          <td>0.065657</td>
+          <td>0.073785</td>
+          <td>0.070294</td>
+          <td>0.062254</td>
+          <td>0.066742</td>
+          <td>0.053886</td>
+          <td>0.092616</td>
+          <td>0.052137</td>
+          <td>0.074291</td>
+          <td>0.065581</td>
+          <td>0.066936</td>
+          <td>0.116309</td>
+          <td>0.129539</td>
+          <td>0.054866</td>
+          <td>0.055151</td>
+          <td>0.168782</td>
+          <td>0.938665</td>
+          <td>11.222157</td>
+          <td>0.069166</td>
+          <td>0.079867</td>
+          <td>0.087419</td>
+          <td>0.055180</td>
+          <td>0.063915</td>
+          <td>0.056566</td>
+          <td>0.362343</td>
+          <td>2007.0</td>
+          <td>3.0</td>
+          <td>5.0</td>
+          <td>1.173053e+09</td>
+          <td>2007.0</td>
+        </tr>
+        <tr>
+          <th>...</th>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th>9223</th>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>...</td>
+          <td>0.060448</td>
+          <td>0.051349</td>
+          <td>0.059048</td>
+          <td>0.177632</td>
+          <td>0.0</td>
+          <td>0.054385</td>
+          <td>0.051608</td>
+          <td>0.053954</td>
+          <td>0.051654</td>
+          <td>0.050002</td>
+          <td>0.051929</td>
+          <td>34.436058</td>
+          <td>0.077356</td>
+          <td>0.051492</td>
+          <td>0.054113</td>
+          <td>0.052849</td>
+          <td>0.052355</td>
+          <td>0.051862</td>
+          <td>0.052971</td>
+          <td>0.057565</td>
+          <td>0.054067</td>
+          <td>0.052241</td>
+          <td>0.052074</td>
+          <td>0.050830</td>
+          <td>0.050886</td>
+          <td>0.053408</td>
+          <td>0.057010</td>
+          <td>0.050284</td>
+          <td>0.054521</td>
+          <td>0.059212</td>
+          <td>0.053688</td>
+          <td>0.051912</td>
+          <td>0.051979</td>
+          <td>0.053897</td>
+          <td>0.053837</td>
+          <td>2015.0</td>
+          <td>11.0</td>
+          <td>3.0</td>
+          <td>1.446509e+09</td>
+          <td>2015.0</td>
+        </tr>
+        <tr>
+          <th>9224</th>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>...</td>
+          <td>0.969851</td>
+          <td>0.058289</td>
+          <td>0.156224</td>
+          <td>0.063289</td>
+          <td>0.0</td>
+          <td>0.056283</td>
+          <td>0.093938</td>
+          <td>0.052391</td>
+          <td>0.294961</td>
+          <td>0.050001</td>
+          <td>0.264472</td>
+          <td>0.050745</td>
+          <td>0.062702</td>
+          <td>0.050003</td>
+          <td>0.102204</td>
+          <td>0.146321</td>
+          <td>0.132010</td>
+          <td>0.138272</td>
+          <td>0.050832</td>
+          <td>0.057822</td>
+          <td>0.051531</td>
+          <td>3.307625</td>
+          <td>0.055504</td>
+          <td>28.246235</td>
+          <td>3.090031</td>
+          <td>0.066613</td>
+          <td>0.050022</td>
+          <td>0.114029</td>
+          <td>0.071039</td>
+          <td>0.072630</td>
+          <td>0.081775</td>
+          <td>0.053174</td>
+          <td>0.149059</td>
+          <td>0.245689</td>
+          <td>0.242087</td>
+          <td>1988.0</td>
+          <td>11.0</td>
+          <td>28.0</td>
+          <td>5.966784e+08</td>
+          <td>1988.0</td>
+        </tr>
+        <tr>
+          <th>9225</th>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>...</td>
+          <td>0.064505</td>
+          <td>0.075153</td>
+          <td>0.081973</td>
+          <td>3.428494</td>
+          <td>1.0</td>
+          <td>0.122922</td>
+          <td>0.062912</td>
+          <td>0.171614</td>
+          <td>40.558552</td>
+          <td>0.117903</td>
+          <td>0.141227</td>
+          <td>0.052141</td>
+          <td>0.079001</td>
+          <td>0.068377</td>
+          <td>1.408260</td>
+          <td>0.113092</td>
+          <td>0.111891</td>
+          <td>0.105812</td>
+          <td>1.138079</td>
+          <td>0.053018</td>
+          <td>0.066457</td>
+          <td>0.089049</td>
+          <td>0.072617</td>
+          <td>0.056154</td>
+          <td>0.086985</td>
+          <td>0.114589</td>
+          <td>0.128940</td>
+          <td>0.051413</td>
+          <td>0.107984</td>
+          <td>0.083518</td>
+          <td>0.090852</td>
+          <td>0.120587</td>
+          <td>0.097636</td>
+          <td>0.086691</td>
+          <td>0.941727</td>
+          <td>2001.0</td>
+          <td>4.0</td>
+          <td>30.0</td>
+          <td>9.885888e+08</td>
+          <td>2001.0</td>
+        </tr>
+        <tr>
+          <th>9226</th>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>...</td>
+          <td>0.072875</td>
+          <td>0.066270</td>
+          <td>0.052896</td>
+          <td>0.092793</td>
+          <td>0.0</td>
+          <td>0.052848</td>
+          <td>0.058265</td>
+          <td>0.061769</td>
+          <td>0.052859</td>
+          <td>0.051697</td>
+          <td>0.050002</td>
+          <td>0.052288</td>
+          <td>0.051222</td>
+          <td>0.113626</td>
+          <td>0.059142</td>
+          <td>0.054653</td>
+          <td>0.051664</td>
+          <td>0.051683</td>
+          <td>0.054480</td>
+          <td>0.054229</td>
+          <td>0.055123</td>
+          <td>0.050328</td>
+          <td>0.057069</td>
+          <td>0.051161</td>
+          <td>0.051821</td>
+          <td>0.053546</td>
+          <td>11.892915</td>
+          <td>0.050150</td>
+          <td>0.056464</td>
+          <td>0.050591</td>
+          <td>0.051337</td>
+          <td>0.053070</td>
+          <td>0.051598</td>
+          <td>0.052870</td>
+          <td>0.051529</td>
+          <td>2006.0</td>
+          <td>9.0</td>
+          <td>5.0</td>
+          <td>1.157414e+09</td>
+          <td>2006.0</td>
+        </tr>
+        <tr>
+          <th>9227</th>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>1.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>...</td>
+          <td>0.071105</td>
+          <td>0.110448</td>
+          <td>0.070939</td>
+          <td>0.140973</td>
+          <td>0.0</td>
+          <td>1.204095</td>
+          <td>0.052029</td>
+          <td>0.232041</td>
+          <td>0.056403</td>
+          <td>0.063104</td>
+          <td>0.053518</td>
+          <td>0.063417</td>
+          <td>0.195818</td>
+          <td>0.051617</td>
+          <td>0.075312</td>
+          <td>0.067702</td>
+          <td>0.182545</td>
+          <td>0.073771</td>
+          <td>14.010027</td>
+          <td>0.053409</td>
+          <td>0.312421</td>
+          <td>0.106226</td>
+          <td>42.178925</td>
+          <td>0.052057</td>
+          <td>0.058804</td>
+          <td>0.058546</td>
+          <td>0.058364</td>
+          <td>0.174024</td>
+          <td>0.078872</td>
+          <td>0.074629</td>
+          <td>0.090050</td>
+          <td>0.064018</td>
+          <td>0.079697</td>
+          <td>0.061280</td>
+          <td>0.117278</td>
+          <td>2012.0</td>
+          <td>1.0</td>
+          <td>30.0</td>
+          <td>1.327882e+09</td>
+          <td>2012.0</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>9228 rows × 143 columns</p>
+    </div>
+    </div>
+    <br />
+    <br />
+
+.. GENERATED FROM PYTHON SOURCE LINES 104-108
+
+From our 8 columns, the |TableVectorizer| has extracted 143 numerical
+features. Most of them are one-hot encoded representations of the categorical
+features. For example, we can see that 3 columns ``'gender_F'``, ``'gender_M'``,
+``'gender_nan'`` were created to encode the ``'gender'`` column.
+
+.. GENERATED FROM PYTHON SOURCE LINES 110-112
+
+By performing appropriate transformations on our complex data, the |TableVectorizer|
+produced numeric features that we can use for machine-learning:
+
+.. GENERATED FROM PYTHON SOURCE LINES 112-117
+
+.. code-block:: Python
+
+
+    from sklearn.ensemble import HistGradientBoostingRegressor
+
+    HistGradientBoostingRegressor().fit(vectorized_employees, salaries)
 
 
 
@@ -2671,74 +2223,41 @@ kinds of columns and the default transformation for each of them are:
       /* fitted */
       background-color: var(--sklearn-color-fitted-level-3);
     }
-    </style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>TableVectorizer()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-13" type="checkbox" ><label for="sk-estimator-id-13" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;TableVectorizer<span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>TableVectorizer()</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-14" type="checkbox" ><label for="sk-estimator-id-14" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">datetime: DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-15" type="checkbox" ><label for="sk-estimator-id-15" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-16" type="checkbox" ><label for="sk-estimator-id-16" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">high_cardinality: GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-17" type="checkbox" ><label for="sk-estimator-id-17" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-18" type="checkbox" ><label for="sk-estimator-id-18" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">low_cardinality: OneHotEncoder</label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
-                  sparse_output=False)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-19" type="checkbox" ><label for="sk-estimator-id-19" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;OneHotEncoder<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
-                  sparse_output=False)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-20" type="checkbox" ><label for="sk-estimator-id-20" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">numeric: PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-21" type="checkbox" ><label for="sk-estimator-id-21" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div></div></div></div></div></div></div></div>
+    </style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>HistGradientBoostingRegressor()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-13" type="checkbox" checked><label for="sk-estimator-id-13" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;HistGradientBoostingRegressor<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>HistGradientBoostingRegressor()</pre></div> </div></div></div></div>
     </div>
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 142-145
+.. GENERATED FROM PYTHON SOURCE LINES 118-122
 
-We can inspect which transformation was chosen for a each column and retrieve the
-fitted transformer. ``vectorizer.kind_to_columns_`` provides an overview of how the
-vectorizer categorized columns in our input:
-
-.. GENERATED FROM PYTHON SOURCE LINES 145-148
-
-.. code-block:: Python
+The |TableVectorizer| bridges the gap between tabular data and machine-learning
+pipelines. It allows us to apply a machine-learning estimator to our dataframe without
+manual data wrangling and feature extraction.
 
 
-    vectorizer.kind_to_columns_
+.. GENERATED FROM PYTHON SOURCE LINES 124-138
 
+Inspecting the TableVectorizer
+------------------------------
 
+The |TableVectorizer| distinguishes between 4 basic kinds of columns (more may be
+added in the future).
+For each kind, it applies a different transformation, which we can configure. The
+kinds of columns and the default transformation for each of them are:
 
+- numeric columns: simply casting to floating-point
+- datetime columns: extracting features such as year, day, hour with the
+  |DatetimeEncoder|
+- low-cardinality categorical columns: one-hot encoding
+- high-cardinality categorical columns: a simple and effective text representation
+  pipeline provided by the |GapEncoder|
 
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-
-    {'numeric': ['year_first_hired'], 'datetime': ['date_first_hired'], 'low_cardinality': ['gender', 'department', 'department_name', 'assignment_category'], 'high_cardinality': ['division', 'employee_position_title'], 'specific': []}
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 149-150
-
-The reverse mapping is given by:
-
-.. GENERATED FROM PYTHON SOURCE LINES 150-153
+.. GENERATED FROM PYTHON SOURCE LINES 138-141
 
 .. code-block:: Python
 
 
-    vectorizer.column_to_kind_
-
-
-
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-
-    {'year_first_hired': 'numeric', 'date_first_hired': 'datetime', 'gender': 'low_cardinality', 'department': 'low_cardinality', 'department_name': 'low_cardinality', 'assignment_category': 'low_cardinality', 'division': 'high_cardinality', 'employee_position_title': 'high_cardinality'}
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 154-156
-
-``vectorizer.transformers_`` gives us a dictionary which maps column names to the
-corresponding transformer.
-
-.. GENERATED FROM PYTHON SOURCE LINES 156-159
-
-.. code-block:: Python
-
-
-    vectorizer.transformers_["date_first_hired"]
+    vectorizer
 
 
 
@@ -3152,22 +2671,25 @@ corresponding transformer.
       /* fitted */
       background-color: var(--sklearn-color-fitted-level-3);
     }
-    </style><div id="sk-container-id-4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>DatetimeEncoder()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-22" type="checkbox" checked><label for="sk-estimator-id-22" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;DatetimeEncoder<span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div>
+    </style><div id="sk-container-id-4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>TableVectorizer()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-14" type="checkbox" ><label for="sk-estimator-id-14" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;TableVectorizer<span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>TableVectorizer()</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-15" type="checkbox" ><label for="sk-estimator-id-15" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">datetime: DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-16" type="checkbox" ><label for="sk-estimator-id-16" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-17" type="checkbox" ><label for="sk-estimator-id-17" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">high_cardinality: GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-18" type="checkbox" ><label for="sk-estimator-id-18" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-19" type="checkbox" ><label for="sk-estimator-id-19" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">low_cardinality: OneHotEncoder</label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
+                  sparse_output=False)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-20" type="checkbox" ><label for="sk-estimator-id-20" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;OneHotEncoder<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
+                  sparse_output=False)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-21" type="checkbox" ><label for="sk-estimator-id-21" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">numeric: PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-22" type="checkbox" ><label for="sk-estimator-id-22" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div></div></div></div></div></div></div></div>
     </div>
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 160-162
+.. GENERATED FROM PYTHON SOURCE LINES 142-145
 
-We can also see which features in the vectorizer's output were derived from a given
-input column.
+We can inspect which transformation was chosen for a each column and retrieve the
+fitted transformer. ``vectorizer.kind_to_columns_`` provides an overview of how the
+vectorizer categorized columns in our input:
 
-.. GENERATED FROM PYTHON SOURCE LINES 162-165
+.. GENERATED FROM PYTHON SOURCE LINES 145-148
 
 .. code-block:: Python
 
 
-    vectorizer.input_to_outputs_["date_first_hired"]
+    vectorizer.kind_to_columns_
 
 
 
@@ -3178,147 +2700,20 @@ input column.
  .. code-block:: none
 
 
-    ['date_first_hired_year', 'date_first_hired_month', 'date_first_hired_day', 'date_first_hired_total_seconds']
+    {'numeric': ['year_first_hired'], 'datetime': ['date_first_hired'], 'low_cardinality': ['gender', 'department', 'department_name', 'assignment_category'], 'high_cardinality': ['division', 'employee_position_title'], 'specific': []}
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 166-169
+.. GENERATED FROM PYTHON SOURCE LINES 149-150
 
-.. code-block:: Python
+The reverse mapping is given by:
 
-
-    vectorized_employees[vectorizer.input_to_outputs_["date_first_hired"]]
-
-
-
-
-
-
-.. raw:: html
-
-    <div class="output_subarea output_html rendered_html output_result">
-    <div>
-    <style scoped>
-        .dataframe tbody tr th:only-of-type {
-            vertical-align: middle;
-        }
-
-        .dataframe tbody tr th {
-            vertical-align: top;
-        }
-
-        .dataframe thead th {
-            text-align: right;
-        }
-    </style>
-    <table border="1" class="dataframe">
-      <thead>
-        <tr style="text-align: right;">
-          <th></th>
-          <th>date_first_hired_year</th>
-          <th>date_first_hired_month</th>
-          <th>date_first_hired_day</th>
-          <th>date_first_hired_total_seconds</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>0</th>
-          <td>1986.0</td>
-          <td>9.0</td>
-          <td>22.0</td>
-          <td>5.277312e+08</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>1988.0</td>
-          <td>9.0</td>
-          <td>12.0</td>
-          <td>5.900256e+08</td>
-        </tr>
-        <tr>
-          <th>2</th>
-          <td>1989.0</td>
-          <td>11.0</td>
-          <td>19.0</td>
-          <td>6.274368e+08</td>
-        </tr>
-        <tr>
-          <th>3</th>
-          <td>2014.0</td>
-          <td>5.0</td>
-          <td>5.0</td>
-          <td>1.399248e+09</td>
-        </tr>
-        <tr>
-          <th>4</th>
-          <td>2007.0</td>
-          <td>3.0</td>
-          <td>5.0</td>
-          <td>1.173053e+09</td>
-        </tr>
-        <tr>
-          <th>...</th>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-          <td>...</td>
-        </tr>
-        <tr>
-          <th>9223</th>
-          <td>2015.0</td>
-          <td>11.0</td>
-          <td>3.0</td>
-          <td>1.446509e+09</td>
-        </tr>
-        <tr>
-          <th>9224</th>
-          <td>1988.0</td>
-          <td>11.0</td>
-          <td>28.0</td>
-          <td>5.966784e+08</td>
-        </tr>
-        <tr>
-          <th>9225</th>
-          <td>2001.0</td>
-          <td>4.0</td>
-          <td>30.0</td>
-          <td>9.885888e+08</td>
-        </tr>
-        <tr>
-          <th>9226</th>
-          <td>2006.0</td>
-          <td>9.0</td>
-          <td>5.0</td>
-          <td>1.157414e+09</td>
-        </tr>
-        <tr>
-          <th>9227</th>
-          <td>2012.0</td>
-          <td>1.0</td>
-          <td>30.0</td>
-          <td>1.327882e+09</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>9228 rows × 4 columns</p>
-    </div>
-    </div>
-    <br />
-    <br />
-
-.. GENERATED FROM PYTHON SOURCE LINES 170-172
-
-Finally, we can go in the opposite direction: given a column in the input, find out
-from which input column it was derived.
-
-.. GENERATED FROM PYTHON SOURCE LINES 172-176
+.. GENERATED FROM PYTHON SOURCE LINES 150-153
 
 .. code-block:: Python
 
 
-    vectorizer.output_to_input_["department_BOA"]
-
+    vectorizer.column_to_kind_
 
 
 
@@ -3329,276 +2724,21 @@ from which input column it was derived.
  .. code-block:: none
 
 
-    'department'
+    {'year_first_hired': 'numeric', 'date_first_hired': 'datetime', 'gender': 'low_cardinality', 'department': 'low_cardinality', 'department_name': 'low_cardinality', 'assignment_category': 'low_cardinality', 'division': 'high_cardinality', 'employee_position_title': 'high_cardinality'}
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 177-182
+.. GENERATED FROM PYTHON SOURCE LINES 154-156
 
-Dataframe preprocessing
-~~~~~~~~~~~~~~~~~~~~~~~
+``vectorizer.transformers_`` gives us a dictionary which maps column names to the
+corresponding transformer.
 
-Note that ``"date_first_hired"`` has been recognized and processed as a datetime
-ßcolumn.
-
-.. GENERATED FROM PYTHON SOURCE LINES 182-185
+.. GENERATED FROM PYTHON SOURCE LINES 156-159
 
 .. code-block:: Python
 
 
-    vectorizer.column_to_kind_["date_first_hired"]
-
-
-
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-
-    'datetime'
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 186-187
-
-But looking closer at our original dataframe, it was encoded as a string.
-
-.. GENERATED FROM PYTHON SOURCE LINES 187-190
-
-.. code-block:: Python
-
-
-    employees["date_first_hired"]
-
-
-
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-
-    0       09/22/1986
-    1       09/12/1988
-    2       11/19/1989
-    3       05/05/2014
-    4       03/05/2007
-               ...    
-    9223    11/03/2015
-    9224    11/28/1988
-    9225    04/30/2001
-    9226    09/05/2006
-    9227    01/30/2012
-    Name: date_first_hired, Length: 9228, dtype: object
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 191-201
-
-Note the ``dtype: object`` in the output above.
-Before applying the transformers we specify, the |TableVectorizer| performs a few
-preprocessing steps.
-
-For example, strings commonly used to represent missing values such as ``"N/A"`` are
-replaced with actual ``null``. As we saw above, columns containing strings that
-represent dates (e.g. ``'2024-05-15'``) are detected and converted  to proper
-datetimes.
-
-We can inspect the list of steps that were applied to a given column:
-
-.. GENERATED FROM PYTHON SOURCE LINES 201-204
-
-.. code-block:: Python
-
-
-    vectorizer.all_processing_steps_["date_first_hired"]
-
-
-
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-
-    [CleanNullStrings(), ToDatetime(), DatetimeEncoder(), {'date_first_hired_day': ToFloat32(), 'date_first_hired_month': ToFloat32(), ...}]
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 205-206
-
-These preprocessing steps depend on the column:
-
-.. GENERATED FROM PYTHON SOURCE LINES 206-209
-
-.. code-block:: Python
-
-
-    vectorizer.all_processing_steps_["department"]
-
-
-
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-
-    [CleanNullStrings(), ToStr(), OneHotEncoder(drop='if_binary', dtype='float32', handle_unknown='ignore',
-                  sparse_output=False), {'department_BOA': ToFloat32(), 'department_BOE': ToFloat32(), ...}]
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 213-219
-
-A simple Pipeline for tabular data
-----------------------------------
-
-The |TableVectorizer| outputs data that can be understood by a scikit-learn
-estimator. Therefore we can easily build a 2-step scikit-learn ``Pipeline``
-that we can fit, test or cross-validate and that works well on tabular data.
-
-.. GENERATED FROM PYTHON SOURCE LINES 219-232
-
-.. code-block:: Python
-
-
-    import numpy as np
-    from sklearn.ensemble import HistGradientBoostingRegressor
-    from sklearn.model_selection import cross_validate
-    from sklearn.pipeline import make_pipeline
-
-    pipeline = make_pipeline(TableVectorizer(), HistGradientBoostingRegressor())
-
-    results = cross_validate(pipeline, employees, salaries)
-    scores = results["test_score"]
-    print(f"R2 score:  mean: {np.mean(scores):.3f}; std: {np.std(scores):.3f}")
-    print(f"mean fit time: {np.mean(results['fit_time']):.3f} seconds")
-
-
-
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    R2 score:  mean: 0.927; std: 0.012
-    mean fit time: 5.972 seconds
-
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 233-266
-
-Specializing the TableVectorizer for HistGradientBoosting
----------------------------------------------------------
-
-The encoders used by default by the |TableVectorizer| are safe choices for a wide
-range of downstream estimators. If we know we want to use it with a |HGBR| (or
-classifier) model, we can make some different choices that are only well-suited for
-tree-based models but can yield a faster pipeline.
-We make 2 changes.
-
-The |HGBR| has built-in support for categorical features, so we do not need to one-hot
-encode them.
-We do need to tell it which features should be treated as categorical with the
-``categorical_features`` parameter. In recent versions of scikit-learn, we can set
-``categorical_features='from_dtype'``, and it will treat all columns in the input that
-have a ``Categorical`` dtype as such. Therefore we change the encoder for
-low-cardinality columns: instead of ``OneHotEncoder``, we use skrub's
-``ToCategorical``. This transformer will simply ensure our columns have an actual
-``Categorical`` dtype (as opposed to string for example), so that they can be
-recognized by the |HGBR|.
-
-The second change replaces the |GapEncoder| with a |MinHashEncoder|.
-The |GapEncoder| is a topic model.
-It produces interpretable embeddings in a vector space where distances are meaningful,
-which is great for interpretation and necessary for some downstream supervised
-learners such as linear models. However fitting the topic model is costly in
-computation time and memory. The |MinHashEncoder| produces features that are not easy
-to interpret, but that decision trees can efficiently use to test for the occurrence
-of particular character n-grams (more details are provided in its documentation).
-Therefore it can be a faster and very effective alternative, when the supervised
-learner is built on top of decision trees, which is the case for the |HGBR|.
-
-The resulting pipeline is identical to the one produced by default by
-:obj:`tabular_learner`.
-
-.. GENERATED FROM PYTHON SOURCE LINES 266-281
-
-.. code-block:: Python
-
-
-    from skrub import MinHashEncoder, ToCategorical
-
-    vectorizer = TableVectorizer(
-        low_cardinality=ToCategorical(), high_cardinality=MinHashEncoder()
-    )
-    pipeline = make_pipeline(
-        vectorizer, HistGradientBoostingRegressor(categorical_features="from_dtype")
-    )
-
-    results = cross_validate(pipeline, employees, salaries)
-    scores = results["test_score"]
-    print(f"R2 score:  mean: {np.mean(scores):.3f}; std: {np.std(scores):.3f}")
-    print(f"mean fit time: {np.mean(results['fit_time']):.3f} seconds")
-
-
-
-
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    R2 score:  mean: 0.911; std: 0.014
-    mean fit time: 1.063 seconds
-
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 282-285
-
-We can see that this new pipeline achieves a similar score but is fitted much faster.
-This is mostly due to replacing |GapEncoder| with |MinHashEncoder| (however this makes
-the features less interpretable).
-
-.. GENERATED FROM PYTHON SOURCE LINES 287-302
-
-Feature importances in the statistical model
---------------------------------------------
-
-As we just saw, we can fit a |MinHashEncoder| faster than a |GapEncoder|. However, the
-|GapEncoder| has a crucial advantage: each dimension of its output space is associated
-with a topic which can be inspected and interpreted.
-In this section, after training a regressor, we will plot the feature importances.
-
-.. topic:: Note:
-
-  To minimize computation time, we use the feature importances computed by the
-  |RandomForestRegressor|, but you should prefer |permutation importances|
-  instead (which are less subject to biases).
-
-First, we train another scikit-learn regressor, the |RandomForestRegressor|:
-
-.. GENERATED FROM PYTHON SOURCE LINES 302-311
-
-.. code-block:: Python
-
-
-    from sklearn.ensemble import RandomForestRegressor
-
-    vectorizer = TableVectorizer()  # now using the default GapEncoder
-    regressor = RandomForestRegressor(n_estimators=50, max_depth=20, random_state=0)
-
-    pipeline = make_pipeline(vectorizer, regressor)
-    pipeline.fit(employees, salaries)
+    vectorizer.transformers_["date_first_hired"]
 
 
 
@@ -4012,15 +3152,875 @@ First, we train another scikit-learn regressor, the |RandomForestRegressor|:
       /* fitted */
       background-color: var(--sklearn-color-fitted-level-3);
     }
-    </style><div id="sk-container-id-5" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
+    </style><div id="sk-container-id-5" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>DatetimeEncoder()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-23" type="checkbox" checked><label for="sk-estimator-id-23" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;DatetimeEncoder<span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div>
+    </div>
+    <br />
+    <br />
+
+.. GENERATED FROM PYTHON SOURCE LINES 160-162
+
+We can also see which features in the vectorizer's output were derived from a given
+input column.
+
+.. GENERATED FROM PYTHON SOURCE LINES 162-165
+
+.. code-block:: Python
+
+
+    vectorizer.input_to_outputs_["date_first_hired"]
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+
+    ['date_first_hired_year', 'date_first_hired_month', 'date_first_hired_day', 'date_first_hired_total_seconds']
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 166-169
+
+.. code-block:: Python
+
+
+    vectorized_employees[vectorizer.input_to_outputs_["date_first_hired"]]
+
+
+
+
+
+
+.. raw:: html
+
+    <div class="output_subarea output_html rendered_html output_result">
+    <div>
+    <style scoped>
+        .dataframe tbody tr th:only-of-type {
+            vertical-align: middle;
+        }
+
+        .dataframe tbody tr th {
+            vertical-align: top;
+        }
+
+        .dataframe thead th {
+            text-align: right;
+        }
+    </style>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>date_first_hired_year</th>
+          <th>date_first_hired_month</th>
+          <th>date_first_hired_day</th>
+          <th>date_first_hired_total_seconds</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>0</th>
+          <td>1986.0</td>
+          <td>9.0</td>
+          <td>22.0</td>
+          <td>5.277312e+08</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>1988.0</td>
+          <td>9.0</td>
+          <td>12.0</td>
+          <td>5.900256e+08</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>1989.0</td>
+          <td>11.0</td>
+          <td>19.0</td>
+          <td>6.274368e+08</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>2014.0</td>
+          <td>5.0</td>
+          <td>5.0</td>
+          <td>1.399248e+09</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>2007.0</td>
+          <td>3.0</td>
+          <td>5.0</td>
+          <td>1.173053e+09</td>
+        </tr>
+        <tr>
+          <th>...</th>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th>9223</th>
+          <td>2015.0</td>
+          <td>11.0</td>
+          <td>3.0</td>
+          <td>1.446509e+09</td>
+        </tr>
+        <tr>
+          <th>9224</th>
+          <td>1988.0</td>
+          <td>11.0</td>
+          <td>28.0</td>
+          <td>5.966784e+08</td>
+        </tr>
+        <tr>
+          <th>9225</th>
+          <td>2001.0</td>
+          <td>4.0</td>
+          <td>30.0</td>
+          <td>9.885888e+08</td>
+        </tr>
+        <tr>
+          <th>9226</th>
+          <td>2006.0</td>
+          <td>9.0</td>
+          <td>5.0</td>
+          <td>1.157414e+09</td>
+        </tr>
+        <tr>
+          <th>9227</th>
+          <td>2012.0</td>
+          <td>1.0</td>
+          <td>30.0</td>
+          <td>1.327882e+09</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>9228 rows × 4 columns</p>
+    </div>
+    </div>
+    <br />
+    <br />
+
+.. GENERATED FROM PYTHON SOURCE LINES 170-172
+
+Finally, we can go in the opposite direction: given a column in the input, find out
+from which input column it was derived.
+
+.. GENERATED FROM PYTHON SOURCE LINES 172-176
+
+.. code-block:: Python
+
+
+    vectorizer.output_to_input_["department_BOA"]
+
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+
+    'department'
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 177-182
+
+Dataframe preprocessing
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Note that ``"date_first_hired"`` has been recognized and processed as a datetime
+ßcolumn.
+
+.. GENERATED FROM PYTHON SOURCE LINES 182-185
+
+.. code-block:: Python
+
+
+    vectorizer.column_to_kind_["date_first_hired"]
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+
+    'datetime'
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 186-187
+
+But looking closer at our original dataframe, it was encoded as a string.
+
+.. GENERATED FROM PYTHON SOURCE LINES 187-190
+
+.. code-block:: Python
+
+
+    employees["date_first_hired"]
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+
+    0       09/22/1986
+    1       09/12/1988
+    2       11/19/1989
+    3       05/05/2014
+    4       03/05/2007
+               ...    
+    9223    11/03/2015
+    9224    11/28/1988
+    9225    04/30/2001
+    9226    09/05/2006
+    9227    01/30/2012
+    Name: date_first_hired, Length: 9228, dtype: object
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 191-201
+
+Note the ``dtype: object`` in the output above.
+Before applying the transformers we specify, the |TableVectorizer| performs a few
+preprocessing steps.
+
+For example, strings commonly used to represent missing values such as ``"N/A"`` are
+replaced with actual ``null``. As we saw above, columns containing strings that
+represent dates (e.g. ``'2024-05-15'``) are detected and converted  to proper
+datetimes.
+
+We can inspect the list of steps that were applied to a given column:
+
+.. GENERATED FROM PYTHON SOURCE LINES 201-204
+
+.. code-block:: Python
+
+
+    vectorizer.all_processing_steps_["date_first_hired"]
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+
+    [CleanNullStrings(), ToDatetime(), DatetimeEncoder(), {'date_first_hired_day': ToFloat32(), 'date_first_hired_month': ToFloat32(), ...}]
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 205-206
+
+These preprocessing steps depend on the column:
+
+.. GENERATED FROM PYTHON SOURCE LINES 206-209
+
+.. code-block:: Python
+
+
+    vectorizer.all_processing_steps_["department"]
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+
+    [CleanNullStrings(), ToStr(), OneHotEncoder(drop='if_binary', dtype='float32', handle_unknown='ignore',
+                  sparse_output=False), {'department_BOA': ToFloat32(), 'department_BOE': ToFloat32(), ...}]
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 213-219
+
+A simple Pipeline for tabular data
+----------------------------------
+
+The |TableVectorizer| outputs data that can be understood by a scikit-learn
+estimator. Therefore we can easily build a 2-step scikit-learn ``Pipeline``
+that we can fit, test or cross-validate and that works well on tabular data.
+
+.. GENERATED FROM PYTHON SOURCE LINES 219-232
+
+.. code-block:: Python
+
+
+    import numpy as np
+    from sklearn.ensemble import HistGradientBoostingRegressor
+    from sklearn.model_selection import cross_validate
+    from sklearn.pipeline import make_pipeline
+
+    pipeline = make_pipeline(TableVectorizer(), HistGradientBoostingRegressor())
+
+    results = cross_validate(pipeline, employees, salaries)
+    scores = results["test_score"]
+    print(f"R2 score:  mean: {np.mean(scores):.3f}; std: {np.std(scores):.3f}")
+    print(f"mean fit time: {np.mean(results['fit_time']):.3f} seconds")
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    R2 score:  mean: 0.920; std: 0.015
+    mean fit time: 6.421 seconds
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 233-266
+
+Specializing the TableVectorizer for HistGradientBoosting
+---------------------------------------------------------
+
+The encoders used by default by the |TableVectorizer| are safe choices for a wide
+range of downstream estimators. If we know we want to use it with a |HGBR| (or
+classifier) model, we can make some different choices that are only well-suited for
+tree-based models but can yield a faster pipeline.
+We make 2 changes.
+
+The |HGBR| has built-in support for categorical features, so we do not need to one-hot
+encode them.
+We do need to tell it which features should be treated as categorical with the
+``categorical_features`` parameter. In recent versions of scikit-learn, we can set
+``categorical_features='from_dtype'``, and it will treat all columns in the input that
+have a ``Categorical`` dtype as such. Therefore we change the encoder for
+low-cardinality columns: instead of ``OneHotEncoder``, we use skrub's
+``ToCategorical``. This transformer will simply ensure our columns have an actual
+``Categorical`` dtype (as opposed to string for example), so that they can be
+recognized by the |HGBR|.
+
+The second change replaces the |GapEncoder| with a |MinHashEncoder|.
+The |GapEncoder| is a topic model.
+It produces interpretable embeddings in a vector space where distances are meaningful,
+which is great for interpretation and necessary for some downstream supervised
+learners such as linear models. However fitting the topic model is costly in
+computation time and memory. The |MinHashEncoder| produces features that are not easy
+to interpret, but that decision trees can efficiently use to test for the occurrence
+of particular character n-grams (more details are provided in its documentation).
+Therefore it can be a faster and very effective alternative, when the supervised
+learner is built on top of decision trees, which is the case for the |HGBR|.
+
+The resulting pipeline is identical to the one produced by default by
+:obj:`tabular_learner`.
+
+.. GENERATED FROM PYTHON SOURCE LINES 266-281
+
+.. code-block:: Python
+
+
+    from skrub import MinHashEncoder, ToCategorical
+
+    vectorizer = TableVectorizer(
+        low_cardinality=ToCategorical(), high_cardinality=MinHashEncoder()
+    )
+    pipeline = make_pipeline(
+        vectorizer, HistGradientBoostingRegressor(categorical_features="from_dtype")
+    )
+
+    results = cross_validate(pipeline, employees, salaries)
+    scores = results["test_score"]
+    print(f"R2 score:  mean: {np.mean(scores):.3f}; std: {np.std(scores):.3f}")
+    print(f"mean fit time: {np.mean(results['fit_time']):.3f} seconds")
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    R2 score:  mean: 0.911; std: 0.014
+    mean fit time: 1.084 seconds
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 282-285
+
+We can see that this new pipeline achieves a similar score but is fitted much faster.
+This is mostly due to replacing |GapEncoder| with |MinHashEncoder| (however this makes
+the features less interpretable).
+
+.. GENERATED FROM PYTHON SOURCE LINES 287-302
+
+Feature importances in the statistical model
+--------------------------------------------
+
+As we just saw, we can fit a |MinHashEncoder| faster than a |GapEncoder|. However, the
+|GapEncoder| has a crucial advantage: each dimension of its output space is associated
+with a topic which can be inspected and interpreted.
+In this section, after training a regressor, we will plot the feature importances.
+
+.. topic:: Note:
+
+  To minimize computation time, we use the feature importances computed by the
+  |RandomForestRegressor|, but you should prefer |permutation importances|
+  instead (which are less subject to biases).
+
+First, we train another scikit-learn regressor, the |RandomForestRegressor|:
+
+.. GENERATED FROM PYTHON SOURCE LINES 302-311
+
+.. code-block:: Python
+
+
+    from sklearn.ensemble import RandomForestRegressor
+
+    vectorizer = TableVectorizer()  # now using the default GapEncoder
+    regressor = RandomForestRegressor(n_estimators=50, max_depth=20, random_state=0)
+
+    pipeline = make_pipeline(vectorizer, regressor)
+    pipeline.fit(employees, salaries)
+
+
+
+
+
+
+.. raw:: html
+
+    <div class="output_subarea output_html rendered_html output_result">
+    <style>#sk-container-id-6 {
+      /* Definition of color scheme common for light and dark mode */
+      --sklearn-color-text: black;
+      --sklearn-color-line: gray;
+      /* Definition of color scheme for unfitted estimators */
+      --sklearn-color-unfitted-level-0: #fff5e6;
+      --sklearn-color-unfitted-level-1: #f6e4d2;
+      --sklearn-color-unfitted-level-2: #ffe0b3;
+      --sklearn-color-unfitted-level-3: chocolate;
+      /* Definition of color scheme for fitted estimators */
+      --sklearn-color-fitted-level-0: #f0f8ff;
+      --sklearn-color-fitted-level-1: #d4ebff;
+      --sklearn-color-fitted-level-2: #b3dbfd;
+      --sklearn-color-fitted-level-3: cornflowerblue;
+
+      /* Specific color for light theme */
+      --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+      --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, white)));
+      --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+      --sklearn-color-icon: #696969;
+
+      @media (prefers-color-scheme: dark) {
+        /* Redefinition of color scheme for dark theme */
+        --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+        --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, #111)));
+        --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+        --sklearn-color-icon: #878787;
+      }
+    }
+
+    #sk-container-id-6 {
+      color: var(--sklearn-color-text);
+    }
+
+    #sk-container-id-6 pre {
+      padding: 0;
+    }
+
+    #sk-container-id-6 input.sk-hidden--visually {
+      border: 0;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px, 1px, 1px, 1px);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    #sk-container-id-6 div.sk-dashed-wrapped {
+      border: 1px dashed var(--sklearn-color-line);
+      margin: 0 0.4em 0.5em 0.4em;
+      box-sizing: border-box;
+      padding-bottom: 0.4em;
+      background-color: var(--sklearn-color-background);
+    }
+
+    #sk-container-id-6 div.sk-container {
+      /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
+         but bootstrap.min.css set `[hidden] { display: none !important; }`
+         so we also need the `!important` here to be able to override the
+         default hidden behavior on the sphinx rendered scikit-learn.org.
+         See: https://github.com/scikit-learn/scikit-learn/issues/21755 */
+      display: inline-block !important;
+      position: relative;
+    }
+
+    #sk-container-id-6 div.sk-text-repr-fallback {
+      display: none;
+    }
+
+    div.sk-parallel-item,
+    div.sk-serial,
+    div.sk-item {
+      /* draw centered vertical line to link estimators */
+      background-image: linear-gradient(var(--sklearn-color-text-on-default-background), var(--sklearn-color-text-on-default-background));
+      background-size: 2px 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    /* Parallel-specific style estimator block */
+
+    #sk-container-id-6 div.sk-parallel-item::after {
+      content: "";
+      width: 100%;
+      border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
+      flex-grow: 1;
+    }
+
+    #sk-container-id-6 div.sk-parallel {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      background-color: var(--sklearn-color-background);
+      position: relative;
+    }
+
+    #sk-container-id-6 div.sk-parallel-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #sk-container-id-6 div.sk-parallel-item:first-child::after {
+      align-self: flex-end;
+      width: 50%;
+    }
+
+    #sk-container-id-6 div.sk-parallel-item:last-child::after {
+      align-self: flex-start;
+      width: 50%;
+    }
+
+    #sk-container-id-6 div.sk-parallel-item:only-child::after {
+      width: 0;
+    }
+
+    /* Serial-specific style estimator block */
+
+    #sk-container-id-6 div.sk-serial {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--sklearn-color-background);
+      padding-right: 1em;
+      padding-left: 1em;
+    }
+
+
+    /* Toggleable style: style used for estimator/Pipeline/ColumnTransformer box that is
+    clickable and can be expanded/collapsed.
+    - Pipeline and ColumnTransformer use this feature and define the default style
+    - Estimators will overwrite some part of the style using the `sk-estimator` class
+    */
+
+    /* Pipeline and ColumnTransformer style (default) */
+
+    #sk-container-id-6 div.sk-toggleable {
+      /* Default theme specific background. It is overwritten whether we have a
+      specific estimator or a Pipeline/ColumnTransformer */
+      background-color: var(--sklearn-color-background);
+    }
+
+    /* Toggleable label */
+    #sk-container-id-6 label.sk-toggleable__label {
+      cursor: pointer;
+      display: block;
+      width: 100%;
+      margin-bottom: 0;
+      padding: 0.5em;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    #sk-container-id-6 label.sk-toggleable__label-arrow:before {
+      /* Arrow on the left of the label */
+      content: "▸";
+      float: left;
+      margin-right: 0.25em;
+      color: var(--sklearn-color-icon);
+    }
+
+    #sk-container-id-6 label.sk-toggleable__label-arrow:hover:before {
+      color: var(--sklearn-color-text);
+    }
+
+    /* Toggleable content - dropdown */
+
+    #sk-container-id-6 div.sk-toggleable__content {
+      max-height: 0;
+      max-width: 0;
+      overflow: hidden;
+      text-align: left;
+      /* unfitted */
+      background-color: var(--sklearn-color-unfitted-level-0);
+    }
+
+    #sk-container-id-6 div.sk-toggleable__content.fitted {
+      /* fitted */
+      background-color: var(--sklearn-color-fitted-level-0);
+    }
+
+    #sk-container-id-6 div.sk-toggleable__content pre {
+      margin: 0.2em;
+      border-radius: 0.25em;
+      color: var(--sklearn-color-text);
+      /* unfitted */
+      background-color: var(--sklearn-color-unfitted-level-0);
+    }
+
+    #sk-container-id-6 div.sk-toggleable__content.fitted pre {
+      /* unfitted */
+      background-color: var(--sklearn-color-fitted-level-0);
+    }
+
+    #sk-container-id-6 input.sk-toggleable__control:checked~div.sk-toggleable__content {
+      /* Expand drop-down */
+      max-height: 200px;
+      max-width: 100%;
+      overflow: auto;
+    }
+
+    #sk-container-id-6 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
+      content: "▾";
+    }
+
+    /* Pipeline/ColumnTransformer-specific style */
+
+    #sk-container-id-6 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
+      color: var(--sklearn-color-text);
+      background-color: var(--sklearn-color-unfitted-level-2);
+    }
+
+    #sk-container-id-6 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+      background-color: var(--sklearn-color-fitted-level-2);
+    }
+
+    /* Estimator-specific style */
+
+    /* Colorize estimator box */
+    #sk-container-id-6 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
+      /* unfitted */
+      background-color: var(--sklearn-color-unfitted-level-2);
+    }
+
+    #sk-container-id-6 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+      /* fitted */
+      background-color: var(--sklearn-color-fitted-level-2);
+    }
+
+    #sk-container-id-6 div.sk-label label.sk-toggleable__label,
+    #sk-container-id-6 div.sk-label label {
+      /* The background is the default theme color */
+      color: var(--sklearn-color-text-on-default-background);
+    }
+
+    /* On hover, darken the color of the background */
+    #sk-container-id-6 div.sk-label:hover label.sk-toggleable__label {
+      color: var(--sklearn-color-text);
+      background-color: var(--sklearn-color-unfitted-level-2);
+    }
+
+    /* Label box, darken color on hover, fitted */
+    #sk-container-id-6 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
+      color: var(--sklearn-color-text);
+      background-color: var(--sklearn-color-fitted-level-2);
+    }
+
+    /* Estimator label */
+
+    #sk-container-id-6 div.sk-label label {
+      font-family: monospace;
+      font-weight: bold;
+      display: inline-block;
+      line-height: 1.2em;
+    }
+
+    #sk-container-id-6 div.sk-label-container {
+      text-align: center;
+    }
+
+    /* Estimator-specific */
+    #sk-container-id-6 div.sk-estimator {
+      font-family: monospace;
+      border: 1px dotted var(--sklearn-color-border-box);
+      border-radius: 0.25em;
+      box-sizing: border-box;
+      margin-bottom: 0.5em;
+      /* unfitted */
+      background-color: var(--sklearn-color-unfitted-level-0);
+    }
+
+    #sk-container-id-6 div.sk-estimator.fitted {
+      /* fitted */
+      background-color: var(--sklearn-color-fitted-level-0);
+    }
+
+    /* on hover */
+    #sk-container-id-6 div.sk-estimator:hover {
+      /* unfitted */
+      background-color: var(--sklearn-color-unfitted-level-2);
+    }
+
+    #sk-container-id-6 div.sk-estimator.fitted:hover {
+      /* fitted */
+      background-color: var(--sklearn-color-fitted-level-2);
+    }
+
+    /* Specification for estimator info (e.g. "i" and "?") */
+
+    /* Common style for "i" and "?" */
+
+    .sk-estimator-doc-link,
+    a:link.sk-estimator-doc-link,
+    a:visited.sk-estimator-doc-link {
+      float: right;
+      font-size: smaller;
+      line-height: 1em;
+      font-family: monospace;
+      background-color: var(--sklearn-color-background);
+      border-radius: 1em;
+      height: 1em;
+      width: 1em;
+      text-decoration: none !important;
+      margin-left: 1ex;
+      /* unfitted */
+      border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+      color: var(--sklearn-color-unfitted-level-1);
+    }
+
+    .sk-estimator-doc-link.fitted,
+    a:link.sk-estimator-doc-link.fitted,
+    a:visited.sk-estimator-doc-link.fitted {
+      /* fitted */
+      border: var(--sklearn-color-fitted-level-1) 1pt solid;
+      color: var(--sklearn-color-fitted-level-1);
+    }
+
+    /* On hover */
+    div.sk-estimator:hover .sk-estimator-doc-link:hover,
+    .sk-estimator-doc-link:hover,
+    div.sk-label-container:hover .sk-estimator-doc-link:hover,
+    .sk-estimator-doc-link:hover {
+      /* unfitted */
+      background-color: var(--sklearn-color-unfitted-level-3);
+      color: var(--sklearn-color-background);
+      text-decoration: none;
+    }
+
+    div.sk-estimator.fitted:hover .sk-estimator-doc-link.fitted:hover,
+    .sk-estimator-doc-link.fitted:hover,
+    div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
+    .sk-estimator-doc-link.fitted:hover {
+      /* fitted */
+      background-color: var(--sklearn-color-fitted-level-3);
+      color: var(--sklearn-color-background);
+      text-decoration: none;
+    }
+
+    /* Span, style for the box shown on hovering the info icon */
+    .sk-estimator-doc-link span {
+      display: none;
+      z-index: 9999;
+      position: relative;
+      font-weight: normal;
+      right: .2ex;
+      padding: .5ex;
+      margin: .5ex;
+      width: min-content;
+      min-width: 20ex;
+      max-width: 50ex;
+      color: var(--sklearn-color-text);
+      box-shadow: 2pt 2pt 4pt #999;
+      /* unfitted */
+      background: var(--sklearn-color-unfitted-level-0);
+      border: .5pt solid var(--sklearn-color-unfitted-level-3);
+    }
+
+    .sk-estimator-doc-link.fitted span {
+      /* fitted */
+      background: var(--sklearn-color-fitted-level-0);
+      border: var(--sklearn-color-fitted-level-3);
+    }
+
+    .sk-estimator-doc-link:hover span {
+      display: block;
+    }
+
+    /* "?"-specific style due to the `<a>` HTML tag */
+
+    #sk-container-id-6 a.estimator_doc_link {
+      float: right;
+      font-size: 1rem;
+      line-height: 1em;
+      font-family: monospace;
+      background-color: var(--sklearn-color-background);
+      border-radius: 1rem;
+      height: 1rem;
+      width: 1rem;
+      text-decoration: none;
+      /* unfitted */
+      color: var(--sklearn-color-unfitted-level-1);
+      border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+    }
+
+    #sk-container-id-6 a.estimator_doc_link.fitted {
+      /* fitted */
+      border: var(--sklearn-color-fitted-level-1) 1pt solid;
+      color: var(--sklearn-color-fitted-level-1);
+    }
+
+    /* On hover */
+    #sk-container-id-6 a.estimator_doc_link:hover {
+      /* unfitted */
+      background-color: var(--sklearn-color-unfitted-level-3);
+      color: var(--sklearn-color-background);
+      text-decoration: none;
+    }
+
+    #sk-container-id-6 a.estimator_doc_link.fitted:hover {
+      /* fitted */
+      background-color: var(--sklearn-color-fitted-level-3);
+    }
+    </style><div id="sk-container-id-6" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
                     (&#x27;randomforestregressor&#x27;,
                      RandomForestRegressor(max_depth=20, n_estimators=50,
-                                           random_state=0))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-23" type="checkbox" ><label for="sk-estimator-id-23" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;Pipeline<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
+                                           random_state=0))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-24" type="checkbox" ><label for="sk-estimator-id-24" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;Pipeline<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
                     (&#x27;randomforestregressor&#x27;,
                      RandomForestRegressor(max_depth=20, n_estimators=50,
-                                           random_state=0))])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-24" type="checkbox" ><label for="sk-estimator-id-24" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">tablevectorizer: TableVectorizer</label><div class="sk-toggleable__content fitted"><pre>TableVectorizer()</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-25" type="checkbox" ><label for="sk-estimator-id-25" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">datetime: DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-26" type="checkbox" ><label for="sk-estimator-id-26" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-27" type="checkbox" ><label for="sk-estimator-id-27" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">high_cardinality: GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-28" type="checkbox" ><label for="sk-estimator-id-28" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-29" type="checkbox" ><label for="sk-estimator-id-29" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">low_cardinality: OneHotEncoder</label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
-                  sparse_output=False)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-30" type="checkbox" ><label for="sk-estimator-id-30" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;OneHotEncoder<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
-                  sparse_output=False)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-31" type="checkbox" ><label for="sk-estimator-id-31" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">numeric: PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-32" type="checkbox" ><label for="sk-estimator-id-32" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-33" type="checkbox" ><label for="sk-estimator-id-33" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;RandomForestRegressor<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.RandomForestRegressor.html">?<span>Documentation for RandomForestRegressor</span></a></label><div class="sk-toggleable__content fitted"><pre>RandomForestRegressor(max_depth=20, n_estimators=50, random_state=0)</pre></div> </div></div></div></div></div></div>
+                                           random_state=0))])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-25" type="checkbox" ><label for="sk-estimator-id-25" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">tablevectorizer: TableVectorizer</label><div class="sk-toggleable__content fitted"><pre>TableVectorizer()</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-26" type="checkbox" ><label for="sk-estimator-id-26" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">datetime: DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-27" type="checkbox" ><label for="sk-estimator-id-27" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-28" type="checkbox" ><label for="sk-estimator-id-28" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">high_cardinality: GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-29" type="checkbox" ><label for="sk-estimator-id-29" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-30" type="checkbox" ><label for="sk-estimator-id-30" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">low_cardinality: OneHotEncoder</label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
+                  sparse_output=False)</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-31" type="checkbox" ><label for="sk-estimator-id-31" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;OneHotEncoder<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
+                  sparse_output=False)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-32" type="checkbox" ><label for="sk-estimator-id-32" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">numeric: PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-33" type="checkbox" ><label for="sk-estimator-id-33" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-34" type="checkbox" ><label for="sk-estimator-id-34" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;RandomForestRegressor<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.RandomForestRegressor.html">?<span>Documentation for RandomForestRegressor</span></a></label><div class="sk-toggleable__content fitted"><pre>RandomForestRegressor(max_depth=20, n_estimators=50, random_state=0)</pre></div> </div></div></div></div></div></div>
     </div>
     <br />
     <br />
@@ -4122,7 +4122,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 13.684 seconds)
+   **Total running time of the script:** (1 minutes 18.883 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:

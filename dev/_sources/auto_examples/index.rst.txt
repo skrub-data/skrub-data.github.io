@@ -13,18 +13,18 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Skrub provides some tools to easily start analyzing and learning from tabular data.">
+    <div class="sphx-glr-thumbcontainer" tooltip="This guide showcases the features of skrub, an open-source package that aims at bridging the ga...">
 
 .. only:: html
 
-  .. image:: /auto_examples/images/thumb/sphx_glr_00_quick_start_thumb.svg
+  .. image:: /auto_examples/images/thumb/sphx_glr_00_getting_started_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_00_quick_start.py`
+  :ref:`sphx_glr_auto_examples_00_getting_started.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Quick start to skrub</div>
+      <div class="sphx-glr-thumbnail-title">Getting Started</div>
     </div>
 
 
@@ -191,7 +191,7 @@ Examples
 .. toctree::
    :hidden:
 
-   /auto_examples/00_quick_start
+   /auto_examples/00_getting_started
    /auto_examples/01_encodings
    /auto_examples/02_feature_interpretation_with_gapencoder
    /auto_examples/03_datetime_encoder
