@@ -1256,75 +1256,75 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split1_test_score</th>
-          <td>0.053616</td>
-          <td>0.027330</td>
-          <td>0.049705</td>
-          <td>0.070460</td>
-          <td>0.086368</td>
+          <td>0.046191</td>
+          <td>0.056465</td>
+          <td>0.061047</td>
+          <td>0.041252</td>
+          <td>0.082689</td>
         </tr>
         <tr>
           <th>split2_test_score</th>
-          <td>0.083865</td>
-          <td>0.087933</td>
-          <td>0.089025</td>
-          <td>0.097919</td>
-          <td>0.089950</td>
+          <td>0.066931</td>
+          <td>0.066261</td>
+          <td>0.087032</td>
+          <td>0.083543</td>
+          <td>0.094243</td>
         </tr>
         <tr>
           <th>split3_test_score</th>
-          <td>0.038372</td>
-          <td>0.063379</td>
-          <td>0.059396</td>
-          <td>0.068932</td>
-          <td>0.067463</td>
+          <td>0.040765</td>
+          <td>0.065056</td>
+          <td>0.059812</td>
+          <td>0.062139</td>
+          <td>0.083502</td>
         </tr>
         <tr>
           <th>split4_test_score</th>
-          <td>0.141609</td>
-          <td>0.123082</td>
-          <td>0.146261</td>
-          <td>0.152227</td>
-          <td>0.145872</td>
+          <td>0.134064</td>
+          <td>0.127548</td>
+          <td>0.149639</td>
+          <td>0.147270</td>
+          <td>0.162325</td>
         </tr>
         <tr>
           <th>split5_test_score</th>
-          <td>0.113651</td>
-          <td>0.110671</td>
-          <td>0.107370</td>
-          <td>0.106334</td>
-          <td>0.119772</td>
+          <td>0.110305</td>
+          <td>0.116210</td>
+          <td>0.105901</td>
+          <td>0.110001</td>
+          <td>0.111106</td>
         </tr>
         <tr>
           <th>split6_test_score</th>
-          <td>0.080417</td>
-          <td>0.104012</td>
-          <td>0.102848</td>
-          <td>0.109714</td>
-          <td>0.103884</td>
+          <td>0.082618</td>
+          <td>0.101978</td>
+          <td>0.098004</td>
+          <td>0.104695</td>
+          <td>0.107654</td>
         </tr>
         <tr>
           <th>split7_test_score</th>
-          <td>0.074250</td>
-          <td>0.069265</td>
-          <td>0.061621</td>
-          <td>0.070715</td>
-          <td>0.073457</td>
+          <td>0.067691</td>
+          <td>0.072858</td>
+          <td>0.061600</td>
+          <td>0.064162</td>
+          <td>0.081929</td>
         </tr>
         <tr>
           <th>split8_test_score</th>
-          <td>0.092820</td>
-          <td>0.114975</td>
-          <td>0.118640</td>
-          <td>0.124170</td>
-          <td>0.132655</td>
+          <td>0.108171</td>
+          <td>0.113429</td>
+          <td>0.118229</td>
+          <td>0.121933</td>
+          <td>0.121243</td>
         </tr>
         <tr>
           <th>split9_test_score</th>
-          <td>0.122061</td>
-          <td>0.158261</td>
-          <td>0.169014</td>
-          <td>0.156866</td>
-          <td>0.178519</td>
+          <td>0.121038</td>
+          <td>0.152064</td>
+          <td>0.162844</td>
+          <td>0.158684</td>
+          <td>0.179385</td>
         </tr>
       </tbody>
     </table>
@@ -1423,7 +1423,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 19.927 seconds)
+   **Total running time of the script:** (0 minutes 19.604 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:
@@ -1442,7 +1442,7 @@ exhaustive histogram over all the possible values of ratings
     .. container:: lite-badge
 
       .. image:: images/jupyterlite_badge_logo.svg
-        :target: ../lite/lab/?path=auto_examples/08_join_aggregation.ipynb
+        :target: ../lite/lab/index.html?path=auto_examples/08_join_aggregation.ipynb
         :alt: Launch JupyterLite
         :width: 150 px
 
@@ -1453,6 +1453,10 @@ exhaustive histogram over all the possible values of ratings
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: 08_join_aggregation.py <08_join_aggregation.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: 08_join_aggregation.zip <08_join_aggregation.zip>`
 
 
 .. only:: html

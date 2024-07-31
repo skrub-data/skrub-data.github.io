@@ -519,8 +519,8 @@ which ensures that the test set is always in the future.
  .. code-block:: none
 
 
-    array([ -6664.06809097,  -6520.55512687, -21139.48809623, -13093.15739011,
-           -13918.46429586])
+    array([ -6664.06809097,  -6520.55512687, -21139.48809623, -14004.97213854,
+           -14054.11214879])
 
 
 
@@ -685,7 +685,7 @@ and transforms datetime columns by default.
     .. container:: lite-badge
 
       .. image:: images/jupyterlite_badge_logo.svg
-        :target: ../lite/lab/?path=auto_examples/03_datetime_encoder.ipynb
+        :target: ../lite/lab/index.html?path=auto_examples/03_datetime_encoder.ipynb
         :alt: Launch JupyterLite
         :width: 150 px
 
@@ -696,6 +696,10 @@ and transforms datetime columns by default.
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: 03_datetime_encoder.py <03_datetime_encoder.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: 03_datetime_encoder.zip <03_datetime_encoder.zip>`
 
 
 .. only:: html

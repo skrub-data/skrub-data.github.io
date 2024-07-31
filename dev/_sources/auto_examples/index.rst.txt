@@ -13,7 +13,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This guide showcases the features of skrub, an open-source package that aims at bridging the ga...">
+    <div class="sphx-glr-thumbcontainer" tooltip="This guide showcases the features of skrub, an open-source package that aims at bridging the gap between tabular data sources and machine-learning models.">
 
 .. only:: html
 
@@ -30,7 +30,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numer...">
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset.">
 
 .. only:: html
 
@@ -47,7 +47,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="In this notebook, we will explore the output and inner workings of the |GapEncoder|, one of the...">
+    <div class="sphx-glr-thumbcontainer" tooltip="In this notebook, we will explore the output and inner workings of the |GapEncoder|, one of the high cardinality categorical encoders provided by skrub.">
 
 .. only:: html
 
@@ -64,7 +64,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we illustrate how to better integrate datetime features in machine learning mo...">
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we illustrate how to better integrate datetime features in machine learning models with the |DatetimeEncoder|.">
 
 .. only:: html
 
@@ -98,7 +98,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Real world datasets often come with misspellings, for instance in manually inputted categorical...">
+    <div class="sphx-glr-thumbcontainer" tooltip="Real world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspelling break data analysis steps that require exact matching, such as a GROUP BY operation.">
 
 .. only:: html
 
@@ -115,7 +115,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="When the data comprises common entities (cities, companies or famous people), bringing new info...">
+    <div class="sphx-glr-thumbcontainer" tooltip="When the data comprises common entities (cities, companies or famous people), bringing new information assembled from external sources may be the key to improving the analysis.">
 
 .. only:: html
 
@@ -132,7 +132,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Joining tables may be difficult if one entry on one side does not have an exact match on the ot...">
+    <div class="sphx-glr-thumbcontainer" tooltip="Joining tables may be difficult if one entry on one side does not have an exact match on the other side.">
 
 .. only:: html
 
@@ -149,7 +149,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="MovieLens is a famous movie dataset used for both explicit and implicit recommender systems. It...">
+    <div class="sphx-glr-thumbcontainer" tooltip="MovieLens is a famous movie dataset used for both explicit and implicit recommender systems. It provides a main table, &quot;ratings&quot;, that can be viewed as logs or transactions, comprised of only 4 columns: userId, movieId, rating and timestamp. MovieLens also gives a contextual table &quot;movies&quot;, including movieId, title and types, to enable content-based feature extraction.">
 
 .. only:: html
 
@@ -166,7 +166,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="We illustrate the InterpolationJoiner, which is a type of join where values from the second tab...">
+    <div class="sphx-glr-thumbcontainer" tooltip="We illustrate the InterpolationJoiner, which is a type of join where values from the second table are inferred with machine-learning, rather than looked up in the table. It is useful when exact matches are not available but we have rows that are close enough to make an educated guess -- in this sense it is a generalization of a fuzzy_join.">
 
 .. only:: html
 

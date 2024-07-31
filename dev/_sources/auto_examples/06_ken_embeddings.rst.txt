@@ -305,7 +305,7 @@ We will start by checking out the available tables with
  .. code-block:: none
 
 
-    {'games', 'movies', 'companies', 'schools', 'albums', 'all_entities'}
+    {'companies', 'schools', 'movies', 'all_entities', 'albums', 'games'}
 
 
 
@@ -839,7 +839,7 @@ It helped significantly improve the prediction score.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 8.482 seconds)
+   **Total running time of the script:** (1 minutes 20.449 seconds)
 
 
 .. _sphx_glr_download_auto_examples_06_ken_embeddings.py:
@@ -858,7 +858,7 @@ It helped significantly improve the prediction score.
     .. container:: lite-badge
 
       .. image:: images/jupyterlite_badge_logo.svg
-        :target: ../lite/lab/?path=auto_examples/06_ken_embeddings.ipynb
+        :target: ../lite/lab/index.html?path=auto_examples/06_ken_embeddings.ipynb
         :alt: Launch JupyterLite
         :width: 150 px
 
@@ -869,6 +869,10 @@ It helped significantly improve the prediction score.
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: 06_ken_embeddings.py <06_ken_embeddings.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: 06_ken_embeddings.zip <06_ken_embeddings.zip>`
 
 
 .. only:: html

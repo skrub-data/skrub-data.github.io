@@ -1715,7 +1715,7 @@ introduced into a grid search:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 11.753 seconds)
+   **Total running time of the script:** (0 minutes 14.293 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining.py:
@@ -1734,7 +1734,7 @@ introduced into a grid search:
     .. container:: lite-badge
 
       .. image:: images/jupyterlite_badge_logo.svg
-        :target: ../lite/lab/?path=auto_examples/04_fuzzy_joining.ipynb
+        :target: ../lite/lab/index.html?path=auto_examples/04_fuzzy_joining.ipynb
         :alt: Launch JupyterLite
         :width: 150 px
 
@@ -1745,6 +1745,10 @@ introduced into a grid search:
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: 04_fuzzy_joining.py <04_fuzzy_joining.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: 04_fuzzy_joining.zip <04_fuzzy_joining.zip>`
 
 
 .. only:: html
