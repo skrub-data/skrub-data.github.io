@@ -553,6 +553,11 @@ saved as a static HTML page. <a class="reference external" href="https://github.
 <section id="minor-changes">
 <h3>Minor changes<a class="headerlink" href="#minor-changes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a> and <a class="reference internal" href="reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> used to raise an error when columns
+with the same name appeared in the main and auxiliary table (after adding the
+suffix). This is now allowed and a random string is inserted in the duplicate
+column to ensure all names are unique.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1014">#1014</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a> and <a class="reference internal" href="reference/generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggTarget</span></code></a> could produce outputs whose column
 names varied across calls to <cite>transform</cite> in some cases in the presence of
 duplicate column names, now the output names are always the same.
