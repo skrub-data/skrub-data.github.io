@@ -452,7 +452,7 @@ This feature answer questions like
  .. code-block:: none
 
 
-    (100836, 7)
+    (100836, 6)
 
 
 
@@ -491,7 +491,6 @@ This feature answer questions like
           <th>userId</th>
           <th>movieId</th>
           <th>timestamp</th>
-          <th>index</th>
           <th>rating_(0.499, 2.0]_user</th>
           <th>rating_(2.0, 3.5]_user</th>
           <th>rating_(3.5, 5.0]_user</th>
@@ -503,7 +502,6 @@ This feature answer questions like
           <td>429</td>
           <td>165</td>
           <td>1996-03-29 18:36:55</td>
-          <td>428</td>
           <td>2</td>
           <td>14</td>
           <td>42</td>
@@ -513,7 +511,6 @@ This feature answer questions like
           <td>429</td>
           <td>161</td>
           <td>1996-03-29 18:36:55</td>
-          <td>428</td>
           <td>2</td>
           <td>14</td>
           <td>42</td>
@@ -523,7 +520,6 @@ This feature answer questions like
           <td>429</td>
           <td>150</td>
           <td>1996-03-29 18:36:55</td>
-          <td>428</td>
           <td>2</td>
           <td>14</td>
           <td>42</td>
@@ -533,7 +529,6 @@ This feature answer questions like
           <td>429</td>
           <td>22</td>
           <td>1996-03-29 18:36:55</td>
-          <td>428</td>
           <td>2</td>
           <td>14</td>
           <td>42</td>
@@ -543,7 +538,6 @@ This feature answer questions like
           <td>429</td>
           <td>432</td>
           <td>1996-03-29 18:36:55</td>
-          <td>428</td>
           <td>2</td>
           <td>14</td>
           <td>42</td>
@@ -582,7 +576,7 @@ This feature answer questions like
  .. code-block:: none
 
 
-    (100836, 7)
+    (100836, 6)
 
 
 
@@ -621,7 +615,6 @@ This feature answer questions like
           <th>userId</th>
           <th>movieId</th>
           <th>timestamp</th>
-          <th>index</th>
           <th>rating_(0.499, 2.0]_movie</th>
           <th>rating_(2.0, 3.5]_movie</th>
           <th>rating_(3.5, 5.0]_movie</th>
@@ -633,7 +626,6 @@ This feature answer questions like
           <td>429</td>
           <td>165</td>
           <td>1996-03-29 18:36:55</td>
-          <td>138</td>
           <td>14</td>
           <td>64</td>
           <td>66</td>
@@ -643,7 +635,6 @@ This feature answer questions like
           <td>429</td>
           <td>161</td>
           <td>1996-03-29 18:36:55</td>
-          <td>134</td>
           <td>8</td>
           <td>38</td>
           <td>57</td>
@@ -653,7 +644,6 @@ This feature answer questions like
           <td>429</td>
           <td>150</td>
           <td>1996-03-29 18:36:55</td>
-          <td>123</td>
           <td>13</td>
           <td>61</td>
           <td>127</td>
@@ -663,7 +653,6 @@ This feature answer questions like
           <td>429</td>
           <td>22</td>
           <td>1996-03-29 18:36:55</td>
-          <td>21</td>
           <td>4</td>
           <td>24</td>
           <td>8</td>
@@ -673,7 +662,6 @@ This feature answer questions like
           <td>429</td>
           <td>432</td>
           <td>1996-03-29 18:36:55</td>
-          <td>376</td>
           <td>18</td>
           <td>29</td>
           <td>8</td>
@@ -1256,75 +1244,75 @@ operation maximizing our validation score.
         </tr>
         <tr>
           <th>split1_test_score</th>
-          <td>0.054983</td>
-          <td>0.068373</td>
-          <td>0.061712</td>
-          <td>0.080938</td>
-          <td>0.066562</td>
+          <td>0.049487</td>
+          <td>0.040752</td>
+          <td>0.062915</td>
+          <td>0.076193</td>
+          <td>0.071893</td>
         </tr>
         <tr>
           <th>split2_test_score</th>
-          <td>0.083555</td>
-          <td>0.080163</td>
-          <td>0.093490</td>
-          <td>0.097295</td>
-          <td>0.086832</td>
+          <td>0.077065</td>
+          <td>0.077811</td>
+          <td>0.095112</td>
+          <td>0.094719</td>
+          <td>0.086862</td>
         </tr>
         <tr>
           <th>split3_test_score</th>
-          <td>0.035390</td>
-          <td>0.067037</td>
-          <td>0.065751</td>
-          <td>0.062382</td>
-          <td>0.084197</td>
+          <td>0.053022</td>
+          <td>0.071945</td>
+          <td>0.063712</td>
+          <td>0.062260</td>
+          <td>0.079019</td>
         </tr>
         <tr>
           <th>split4_test_score</th>
-          <td>0.138622</td>
-          <td>0.119579</td>
-          <td>0.139995</td>
-          <td>0.155387</td>
-          <td>0.152931</td>
+          <td>0.142178</td>
+          <td>0.124076</td>
+          <td>0.140563</td>
+          <td>0.146654</td>
+          <td>0.148306</td>
         </tr>
         <tr>
           <th>split5_test_score</th>
-          <td>0.112104</td>
-          <td>0.113522</td>
-          <td>0.109460</td>
-          <td>0.109013</td>
-          <td>0.113840</td>
+          <td>0.112554</td>
+          <td>0.112936</td>
+          <td>0.108078</td>
+          <td>0.107982</td>
+          <td>0.117042</td>
         </tr>
         <tr>
           <th>split6_test_score</th>
-          <td>0.080485</td>
-          <td>0.091664</td>
-          <td>0.104076</td>
-          <td>0.107170</td>
-          <td>0.106557</td>
+          <td>0.080523</td>
+          <td>0.102180</td>
+          <td>0.102008</td>
+          <td>0.107310</td>
+          <td>0.101187</td>
         </tr>
         <tr>
           <th>split7_test_score</th>
-          <td>0.070085</td>
-          <td>0.060581</td>
-          <td>0.082456</td>
-          <td>0.070969</td>
-          <td>0.068782</td>
+          <td>0.071494</td>
+          <td>0.069616</td>
+          <td>0.063037</td>
+          <td>0.076267</td>
+          <td>0.079367</td>
         </tr>
         <tr>
           <th>split8_test_score</th>
-          <td>0.110047</td>
-          <td>0.119441</td>
-          <td>0.115263</td>
-          <td>0.122148</td>
-          <td>0.126300</td>
+          <td>0.107693</td>
+          <td>0.117104</td>
+          <td>0.126153</td>
+          <td>0.117805</td>
+          <td>0.129416</td>
         </tr>
         <tr>
           <th>split9_test_score</th>
-          <td>0.093337</td>
-          <td>0.150151</td>
-          <td>0.168107</td>
-          <td>0.162626</td>
-          <td>0.186230</td>
+          <td>0.135833</td>
+          <td>0.149572</td>
+          <td>0.151964</td>
+          <td>0.169299</td>
+          <td>0.181072</td>
         </tr>
       </tbody>
     </table>
@@ -1423,7 +1411,7 @@ exhaustive histogram over all the possible values of ratings
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 18.010 seconds)
+   **Total running time of the script:** (0 minutes 18.350 seconds)
 
 
 .. _sphx_glr_download_auto_examples_08_join_aggregation.py:
