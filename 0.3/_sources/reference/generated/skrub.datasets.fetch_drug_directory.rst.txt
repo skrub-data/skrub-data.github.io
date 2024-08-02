@@ -1,0 +1,12 @@
+﻿fetch_drug_directory
+=======================================================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_drug_directory
+
+.. include:: skrub.datasets.fetch_drug_directory.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

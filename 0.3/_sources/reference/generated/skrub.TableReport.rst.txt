@@ -1,0 +1,21 @@
+﻿TableReport
+===============================
+
+.. rst-class:: side_comment
+
+    Usage examples at the bottom of this page.
+
+.. currentmodule:: skrub
+
+.. autoclass:: TableReport
+   :inherited-members:
+
+   
+
+   
+
+.. include:: skrub.TableReport.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

@@ -1,0 +1,12 @@
+﻿fetch_world_bank_indicator
+=============================================================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_world_bank_indicator
+
+.. include:: skrub.datasets.fetch_world_bank_indicator.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

@@ -1,0 +1,12 @@
+﻿fetch_ken_embeddings
+=======================================================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_ken_embeddings
+
+.. include:: skrub.datasets.fetch_ken_embeddings.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>

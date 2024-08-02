@@ -1,0 +1,12 @@
+﻿make_deduplication_data
+==========================================================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: make_deduplication_data
+
+.. include:: skrub.datasets.make_deduplication_data.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
