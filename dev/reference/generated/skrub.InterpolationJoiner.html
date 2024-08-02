@@ -605,7 +605,7 @@ document.write(`
 <p class="side-comment">Usage examples at the bottom of this page.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.InterpolationJoiner">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">InterpolationJoiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aux_table</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aux_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regressor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">HistGradientBoostingRegressor()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classifier</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">HistGradientBoostingClassifier()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vectorizer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">TableVectorizer(high_cardinality=MinHashEncoder())</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_estimator_failure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'warn'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b5962f7/skrub/_interpolation_joiner.py#L24"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">InterpolationJoiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aux_table</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aux_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regressor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">HistGradientBoostingRegressor()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classifier</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">HistGradientBoostingClassifier()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vectorizer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">TableVectorizer(high_cardinality=MinHashEncoder())</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_estimator_failure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'warn'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/acdda0c/skrub/_interpolation_joiner.py#L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner" title="Link to this definition">#</a></dt>
 <dd><p>Join with a table augmented by machine-learning predictions.</p>
 <p>This is similar to a usual equi-join, but instead of looking for actual
 rows in the right table that satisfy the join condition, we estimate what
@@ -628,7 +628,7 @@ rather than retrieved, when requested. This is done with:</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>aux_table</strong><span class="classifier">DataFrame</span></dt><dd><p>The (auxiliary) table to be joined to the <cite>main_table</cite> (which is the
+<dt><strong>aux_table</strong><span class="classifier">DataFrame</span></dt><dd><p>The (auxiliary) table to be joined to the <code class="docutils literal notranslate"><span class="pre">main_table</span></code> (which is the
 argument of <code class="docutils literal notranslate"><span class="pre">transform</span></code>). <code class="docutils literal notranslate"><span class="pre">aux_table</span></code> is used to train a model that
 takes as inputs the contents of the columns listed in <code class="docutils literal notranslate"><span class="pre">aux_key</span></code>, and
 predicts the contents of the other columns. In the example above, we
@@ -636,10 +636,10 @@ want our transformer to add temperature data to the table it is
 operating on. Therefore, <code class="docutils literal notranslate"><span class="pre">aux_table</span></code> is the <code class="docutils literal notranslate"><span class="pre">annual_avg_temp</span></code>
 table.</p>
 </dd>
-<dt><strong>key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>Column names to use for both <cite>main_key</cite> and <cite>aux_key</cite>, when they are
-the same. Provide either <cite>key</cite> (only) or both <cite>main_key</cite> and <cite>aux_key</cite>.</p>
+<dt><strong>key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>Column names to use for both <code class="docutils literal notranslate"><span class="pre">main_key</span></code> and <code class="docutils literal notranslate"><span class="pre">aux_key</span></code>, when they are
+the same. Provide either <code class="docutils literal notranslate"><span class="pre">key</span></code> (only) or both <code class="docutils literal notranslate"><span class="pre">main_key</span></code> and <code class="docutils literal notranslate"><span class="pre">aux_key</span></code>.</p>
 </dd>
-<dt><strong>main_key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The columns in the main table used for joining. The main table is the
+<dt><strong>main_key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>The columns in the main table used for joining. The main table is the
 argument of <code class="docutils literal notranslate"><span class="pre">transform</span></code>, to which we add information inferred using
 <code class="docutils literal notranslate"><span class="pre">aux_table</span></code>. The column names listed in <code class="docutils literal notranslate"><span class="pre">main_key</span></code> will provide the
 inputs (features) of the interpolators at prediction (joining) time. In
@@ -648,18 +648,19 @@ refer to columns in the <code class="docutils literal notranslate"><span class="
 column, we can pass its name rather than a list: <code class="docutils literal notranslate"><span class="pre">&quot;latitude&quot;</span></code> is
 equivalent to <code class="docutils literal notranslate"><span class="pre">[&quot;latitude&quot;]</span></code>.</p>
 </dd>
-<dt><strong>aux_key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The columns in <code class="docutils literal notranslate"><span class="pre">aux_table</span></code> used for joining. Their number and types
+<dt><strong>aux_key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>The columns in <code class="docutils literal notranslate"><span class="pre">aux_table</span></code> used for joining. Their number and types
 must match those of the <code class="docutils literal notranslate"><span class="pre">main_key</span></code> columns in the main table. These
 columns provide the features for the estimators to be fitted. As for
 <code class="docutils literal notranslate"><span class="pre">main_key</span></code>, it is possible to pass a string when using a single
 column.</p>
 </dd>
-<dt><strong>suffix</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>Suffix to append to the <code class="docutils literal notranslate"><span class="pre">aux_table</span></code>’s column names. You can use it
-to avoid duplicate column names in the join.</p>
+<dt><strong>suffix</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=””</span></dt><dd><p>Suffix to append to the <code class="docutils literal notranslate"><span class="pre">aux_table</span></code>’s column names. If duplicate column
+names are found, a __skrub_&lt;random string&gt;__ is added at the end of columns
+that would otherwise be duplicates.</p>
 </dd>
-<dt><strong>regressor</strong><span class="classifier">scikit-learn regressor</span></dt><dd><p>Model used to predict the numerical columns of <code class="docutils literal notranslate"><span class="pre">aux_table</span></code>.</p>
+<dt><strong>regressor</strong><span class="classifier">scikit-learn regressor, default=HistGradientBoostingRegressor</span></dt><dd><p>Model used to predict the numerical columns of <code class="docutils literal notranslate"><span class="pre">aux_table</span></code>.</p>
 </dd>
-<dt><strong>classifier</strong><span class="classifier">scikit-learn classifier</span></dt><dd><p>Model used to predict the categorical (string) columns of <code class="docutils literal notranslate"><span class="pre">aux_table</span></code>.</p>
+<dt><strong>classifier</strong><span class="classifier">scikit-learn classifier, default=HistGradientBoostingClassifier</span></dt><dd><p>Model used to predict the string and categorical columns of <code class="docutils literal notranslate"><span class="pre">aux_table</span></code>.</p>
 </dd>
 <dt><strong>vectorizer</strong><span class="classifier">scikit-learn transformer that can operate on a DataFrame</span></dt><dd><p>Used to transform the feature columns before passing them to the
 scikit-learn estimators. This is useful if we are joining on columns
@@ -673,7 +674,7 @@ with models such as nearest-neighbors or linear models, consider
 passing <code class="docutils literal notranslate"><span class="pre">vectorizer=TableVectorizer()</span></code> which will encode text with a
 <code class="docutils literal notranslate"><span class="pre">GapEncoder</span></code> rather than a <code class="docutils literal notranslate"><span class="pre">MinHashEncoder</span></code>.</p>
 </dd>
-<dt><strong>n_jobs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Number of jobs to run in parallel. <code class="docutils literal notranslate"><span class="pre">None</span></code> means 1 unless in a
+<dt><strong>n_jobs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=None</span></dt><dd><p>Number of jobs to run in parallel. <code class="docutils literal notranslate"><span class="pre">None</span></code> means 1 unless in a
 <code class="docutils literal notranslate"><span class="pre">joblib.parallel_backend</span></code> context. -1 means using all processors.
 Depending on the estimators used and the contents of <code class="docutils literal notranslate"><span class="pre">aux_table</span></code>,
 several estimators may need to be fitted – for example one for
@@ -682,7 +683,7 @@ continuous outputs (regressor) and one for categorical outputs
 not support multi-output tasks. Fitting and querying these estimators
 can be done in parallel.</p>
 </dd>
-<dt><strong>on_estimator_failure</strong><span class="classifier">“warn”, “raise” or “pass”</span></dt><dd><p>How to handle exceptions raised when fitting one of the estimators
+<dt><strong>on_estimator_failure</strong><span class="classifier">“warn”, “raise” or “pass”, default=”warn”</span></dt><dd><p>How to handle exceptions raised when fitting one of the estimators
 (regressors and classifiers) or querying them for a prediction. If
 “raise”, exceptions are propagated. If “pass” (i) if an exception is
 raised during <code class="docutils literal notranslate"><span class="pre">fit</span></code> the corresponding columns are ignored – they
@@ -755,7 +756,7 @@ trained to predict).</p>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#skrub.InterpolationJoiner.fit" title="skrub.InterpolationJoiner.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X[, y])</p></td>
-<td><p>Fit estimators to the <cite>aux_table</cite> provided during initialization.</p></td>
+<td><p>Fit estimators to the <code class="docutils literal notranslate"><span class="pre">aux_table</span></code> provided during initialization.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.InterpolationJoiner.fit_transform" title="skrub.InterpolationJoiner.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(X[, y])</p></td>
 <td><p>Fit to data, then transform it.</p></td>
@@ -780,15 +781,15 @@ trained to predict).</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.InterpolationJoiner.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b5962f7/skrub/_interpolation_joiner.py#L203"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.fit" title="Link to this definition">#</a></dt>
-<dd><p>Fit estimators to the <cite>aux_table</cite> provided during initialization.</p>
-<p><cite>X</cite> and <cite>y</cite> are mostly for scikit-learn compatibility.</p>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/acdda0c/skrub/_interpolation_joiner.py#L203"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.fit" title="Link to this definition">#</a></dt>
+<dd><p>Fit estimators to the <code class="docutils literal notranslate"><span class="pre">aux_table</span></code> provided during initialization.</p>
+<p><code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> are mostly for scikit-learn compatibility.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v2.0)"><span>array_like</span></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>The main table to which <code class="docutils literal notranslate"><span class="pre">self.aux_table</span></code> could be joined. If <cite>X</cite>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v2.0)"><span>array_like</span></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>The main table to which <code class="docutils literal notranslate"><span class="pre">self.aux_table</span></code> could be joined. If <code class="docutils literal notranslate"><span class="pre">X</span></code>
 is not <code class="docutils literal notranslate"><span class="pre">None</span></code>, an error is raised if any of the matching columns
-listed in <code class="docutils literal notranslate"><span class="pre">self.main_key</span></code> (or <code class="docutils literal notranslate"><span class="pre">self.key</span></code>) is missing from <cite>X</cite>.</p>
+listed in <code class="docutils literal notranslate"><span class="pre">self.main_key</span></code> (or <code class="docutils literal notranslate"><span class="pre">self.key</span></code>) are missing from <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p>
 </dd>
 <dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v2.0)"><span>array_like</span></a></span></dt><dd><p>Ignored; only exists for compatibility with scikit-learn.</p>
 </dd>
@@ -796,7 +797,7 @@ listed in <code class="docutils literal notranslate"><span class="pre">self.main
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><strong>self</strong><span class="classifier">InterpolationJoiner</span></dt><dd><p>Returns self.</p>
+<dt>InterpolationJoiner</dt><dd><p>Fitted <a class="reference internal" href="#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> instance (self).</p>
 </dd>
 </dl>
 </dd>
@@ -805,7 +806,7 @@ listed in <code class="docutils literal notranslate"><span class="pre">self.main
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.InterpolationJoiner.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b5962f7/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L1043"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">fit_params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/acdda0c/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L1043"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to <cite>X</cite> and <cite>y</cite> with optional parameters <cite>fit_params</cite>
 and returns a transformed version of <cite>X</cite>.</p>
@@ -831,7 +832,7 @@ and returns a transformed version of <cite>X</cite>.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.InterpolationJoiner.get_metadata_routing">
-<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b5962f7/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1495"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.get_metadata_routing" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/acdda0c/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1495"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.get_metadata_routing" title="Link to this definition">#</a></dt>
 <dd><p>Get metadata routing of this object.</p>
 <p>Please check <a class="reference external" href="https://scikit-learn.org/stable/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.5)"><span class="xref std std-ref">User Guide</span></a> on how the routing
 mechanism works.</p>
@@ -848,7 +849,7 @@ routing information.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.InterpolationJoiner.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b5962f7/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/acdda0c/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -869,7 +870,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.InterpolationJoiner.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b5962f7/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L386"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/acdda0c/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L386"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.5)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
@@ -900,7 +901,7 @@ for an example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.InterpolationJoiner.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b5962f7/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/acdda0c/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -924,11 +925,11 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.InterpolationJoiner.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b5962f7/skrub/_interpolation_joiner.py#L271"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/acdda0c/skrub/_interpolation_joiner.py#L271"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.InterpolationJoiner.transform" title="Link to this definition">#</a></dt>
 <dd><p>Transform a table by joining inferred values to it.</p>
-<p>The values of the <cite>main_key</cite> columns in <cite>X</cite> (the main table) are used
+<p>The values of the <code class="docutils literal notranslate"><span class="pre">main_key</span></code> columns in <code class="docutils literal notranslate"><span class="pre">X</span></code> (the main table) are used
 to predict likely values for the contents of a matching row in
-<cite>self.aux_table</cite> (the auxiliary table).</p>
+<code class="docutils literal notranslate"><span class="pre">aux_table</span></code> (the auxiliary table).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -938,8 +939,7 @@ to predict likely values for the contents of a matching row in
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><strong>join</strong><span class="classifier">DataFrame</span></dt><dd><p>The result of the join between <cite>X</cite> and inferred rows from
-<code class="docutils literal notranslate"><span class="pre">self.aux_table</span></code>.</p>
+<dt>DataFrame</dt><dd><p>The result of the join between <code class="docutils literal notranslate"><span class="pre">X</span></code> and inferred rows from <code class="docutils literal notranslate"><span class="pre">aux_table</span></code>.</p>
 </dd>
 </dl>
 </dd>
