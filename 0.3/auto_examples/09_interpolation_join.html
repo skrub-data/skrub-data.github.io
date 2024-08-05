@@ -61,7 +61,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.3.0';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = true;
         </script>
     <link rel="icon" href="../_static/skrub.svg"/>
@@ -834,9 +834,9 @@ to the right side table column names.</p>
       <td>42.6</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>34.276499</td>
-      <td>65.406466</td>
-      <td>0.163086</td>
+      <td>34.251593</td>
+      <td>54.731331</td>
+      <td>-0.183249</td>
     </tr>
     <tr>
       <th>1</th>
@@ -846,9 +846,9 @@ to the right side table column names.</p>
       <td>26.9</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>26.978684</td>
-      <td>97.708272</td>
-      <td>0.418654</td>
+      <td>27.308563</td>
+      <td>108.039255</td>
+      <td>-0.026267</td>
     </tr>
     <tr>
       <th>2</th>
@@ -858,9 +858,9 @@ to the right side table column names.</p>
       <td>41.6</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>31.108415</td>
-      <td>14.137886</td>
-      <td>0.163086</td>
+      <td>31.419892</td>
+      <td>44.048169</td>
+      <td>-0.150922</td>
     </tr>
     <tr>
       <th>3</th>
@@ -870,9 +870,9 @@ to the right side table column names.</p>
       <td>46.6</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>33.898800</td>
-      <td>55.473775</td>
-      <td>0.163086</td>
+      <td>33.528052</td>
+      <td>64.795879</td>
+      <td>-0.203094</td>
     </tr>
     <tr>
       <th>4</th>
@@ -882,9 +882,9 @@ to the right side table column names.</p>
       <td>36.1</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>30.064954</td>
-      <td>21.805688</td>
-      <td>0.163086</td>
+      <td>29.720107</td>
+      <td>25.176130</td>
+      <td>-0.388360</td>
     </tr>
   </tbody>
 </table>
@@ -1002,7 +1002,7 @@ maximum daily temperature.</p>
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>2.419186</td>
+      <td>2.087655</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1014,7 +1014,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>20.984480</td>
+      <td>20.428433</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1026,7 +1026,7 @@ maximum daily temperature.</p>
       <td>NC</td>
       <td>36.097747</td>
       <td>-79.937297</td>
-      <td>16.854528</td>
+      <td>17.299431</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1038,7 +1038,7 @@ maximum daily temperature.</p>
       <td>IL</td>
       <td>41.979595</td>
       <td>-87.904464</td>
-      <td>16.409621</td>
+      <td>14.691508</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1050,7 +1050,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>13.377843</td>
+      <td>12.848711</td>
     </tr>
   </tbody>
 </table>
@@ -1071,11 +1071,11 @@ Washington, Minnesota.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -2.979360
-MT    0.456435
-WA    0.698748
-ND    1.249394
-MN    1.480738
+AK   -3.914175
+MT    0.395049
+WA    0.587100
+ND    0.989055
+MN    1.300648
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1085,11 +1085,11 @@ Florida, Louisiana.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-LA    21.749930
-FL    24.588648
-HI    27.717257
-VI    30.227617
-PR    30.817155
+LA    21.951617
+FL    24.682998
+HI    26.906050
+VI    30.054756
+PR    30.639780
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1127,7 +1127,7 @@ would contain, rather than by searching for an actual match. It is a generalizat
 the <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an
 <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor
 estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.912 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.892 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-09-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.3.0?urlpath=lab/tree/notebooks/auto_examples/09_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
