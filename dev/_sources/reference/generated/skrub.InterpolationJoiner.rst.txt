@@ -1,21 +1,13 @@
 ﻿InterpolationJoiner
-=======================================
-
-.. rst-class:: side_comment
-
-    Usage examples at the bottom of this page.
+===================
 
 .. currentmodule:: skrub
 
 .. autoclass:: InterpolationJoiner
+   :members:
    :inherited-members:
+   :special-members: __call__
 
-   
-
-   
-
-.. include:: skrub.InterpolationJoiner.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.InterpolationJoiner skrub.InterpolationJoiner.__init__ skrub.InterpolationJoiner.fit skrub.InterpolationJoiner.fit_transform skrub.InterpolationJoiner.get_metadata_routing skrub.InterpolationJoiner.get_params skrub.InterpolationJoiner.set_output skrub.InterpolationJoiner.set_params skrub.InterpolationJoiner.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

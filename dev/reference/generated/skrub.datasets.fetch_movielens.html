@@ -11,8 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.datasets.fetch_movielens.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
-<meta property="og:image:alt" content="skrub" />
+<meta property="og:description" content="Gallery examples: Self-aggregation on MovieLens" />
+<meta property="og:image" content="https://skrub-data.github.io/stable/_images/sphx_glr_08_join_aggregation_thumb.png" />
+<meta property="og:image:alt" content="" />
+<meta name="description" content="Gallery examples: Self-aggregation on MovieLens" />
 
     <title>fetch_movielens &#8212; skrub</title>
   
@@ -602,7 +604,7 @@ document.write(`
 <h1>fetch_movielens<a class="headerlink" href="#fetch-movielens" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_movielens">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_movielens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ratings'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_dataframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4779e63/skrub/datasets/_fetching.py#L1070"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_movielens" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_movielens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ratings'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_dataframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6180410/skrub/datasets/_fetching.py#L1070"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_movielens" title="Link to this definition">#</a></dt>
 <dd><p>Fetches a dataset from Movielens.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -613,16 +615,22 @@ document.write(`
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="../../generated/skrub.datasets.DatasetAll.html#skrub.datasets.DatasetAll" title="skrub.datasets.DatasetAll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatasetAll</span></code></a></dt><dd><p>If <cite>load_dataframe=True</cite></p>
+<dt><a class="reference internal" href="skrub.datasets.DatasetAll.html#skrub.datasets.DatasetAll" title="skrub.datasets.DatasetAll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatasetAll</span></code></a></dt><dd><p>If <cite>load_dataframe=True</cite></p>
 </dd>
-<dt><a class="reference internal" href="../../generated/skrub.datasets.DatasetInfoOnly.html#skrub.datasets.DatasetInfoOnly" title="skrub.datasets.DatasetInfoOnly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatasetInfoOnly</span></code></a></dt><dd><p>If <cite>load_dataframe=False</cite></p>
+<dt><a class="reference internal" href="skrub.datasets.DatasetInfoOnly.html#skrub.datasets.DatasetInfoOnly" title="skrub.datasets.DatasetInfoOnly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatasetInfoOnly</span></code></a></dt><dd><p>If <cite>load_dataframe=False</cite></p>
 </dd>
 </dl>
 </dd>
 </dl>
 </dd></dl>
 
-<div class="clearer"></div></section>
+<section id="gallery-examples">
+<h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="MovieLens is a famous movie dataset used for both explicit and implicit recommender systems. It provides a main table, &quot;ratings&quot;, that can be viewed as logs or transactions, comprised of only 4 columns: userId, movieId, rating and timestamp. MovieLens also gives a contextual table &quot;movies&quot;, including movieId, title and types, to enable content-based feature extraction."><img alt="" src="../../_images/sphx_glr_08_join_aggregation_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/08_join_aggregation.html#sphx-glr-auto-examples-08-join-aggregation-py"><span class="std std-ref">Self-aggregation on MovieLens</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Self-aggregation on MovieLens</div>
+</div></div></section>
+</section>
 
 
                 </article>
@@ -671,6 +679,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.datasets.fetch_movielens"><code class="docutils literal notranslate"><span class="pre">fetch_movielens()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery-examples">Gallery examples</a></li>
 </ul>
   </nav></div>
 

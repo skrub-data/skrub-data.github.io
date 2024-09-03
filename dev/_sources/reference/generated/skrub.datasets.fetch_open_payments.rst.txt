@@ -1,12 +1,10 @@
-﻿fetch_open_payments
-======================================================
+﻿fetch\_open\_payments
+=====================
 
 .. currentmodule:: skrub.datasets
 
 .. autofunction:: fetch_open_payments
 
-.. include:: skrub.datasets.fetch_open_payments.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.datasets.fetch_open_payments
+   :add-heading: Gallery examples
+   :heading-level: -

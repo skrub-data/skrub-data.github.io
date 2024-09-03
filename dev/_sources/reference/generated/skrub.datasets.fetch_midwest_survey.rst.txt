@@ -1,12 +1,10 @@
-﻿fetch_midwest_survey
-=======================================================
+﻿fetch\_midwest\_survey
+======================
 
 .. currentmodule:: skrub.datasets
 
 .. autofunction:: fetch_midwest_survey
 
-.. include:: skrub.datasets.fetch_midwest_survey.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.datasets.fetch_midwest_survey
+   :add-heading: Gallery examples
+   :heading-level: -

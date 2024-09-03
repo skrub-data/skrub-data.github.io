@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.TableVectorizer.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Usage examples at the bottom of this page." />
+<meta property="og:description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Handling datetime features with the DatetimeEncoder Spatial join for flight data: Joining acr..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Usage examples at the bottom of this page." />
+<meta name="description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Handling datetime features with the DatetimeEncoder Spatial join for flight data: Joining acr..." />
 
     <title>TableVectorizer &#8212; skrub</title>
   
@@ -602,10 +602,9 @@ document.write(`
                   
   <section id="tablevectorizer">
 <h1>TableVectorizer<a class="headerlink" href="#tablevectorizer" title="Link to this heading">#</a></h1>
-<p class="side-comment">Usage examples at the bottom of this page.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.TableVectorizer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">TableVectorizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cardinality_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low_cardinality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OneHotEncoder(drop='if_binary',</span> <span class="pre">dtype='float32',</span> <span class="pre">handle_unknown='ignore',</span> <span class="pre">sparse_output=False)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_cardinality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">GapEncoder(n_components=30)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numeric</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">PassThrough()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">DatetimeEncoder()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specific_transformers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4779e63/skrub/_table_vectorizer.py#L113"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">TableVectorizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cardinality_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low_cardinality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OneHotEncoder(drop='if_binary',</span> <span class="pre">dtype='float32',</span> <span class="pre">handle_unknown='ignore',</span> <span class="pre">sparse_output=False)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_cardinality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">GapEncoder(n_components=30)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numeric</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">PassThrough()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">DatetimeEncoder()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specific_transformers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6180410/skrub/_table_vectorizer.py#L113"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer" title="Link to this definition">#</a></dt>
 <dd><p>Transform a dataframe to a numerical (vectorized) representation.</p>
 <p>Applies a different transformation to each of several kinds of columns:</p>
 <ul class="simple">
@@ -926,7 +925,7 @@ in <code class="docutils literal notranslate"><span class="pre">specific_columns
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4779e63/skrub/_table_vectorizer.py#L431"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.fit" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6180410/skrub/_table_vectorizer.py#L431"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.fit" title="Link to this definition">#</a></dt>
 <dd><p>Fit transformer.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -949,7 +948,7 @@ transformations).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4779e63/skrub/_table_vectorizer.py#L452"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6180410/skrub/_table_vectorizer.py#L452"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit transformer and transform dataframe.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -972,7 +971,7 @@ transformations).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.get_feature_names_out">
-<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4779e63/skrub/_table_vectorizer.py#L640"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_feature_names_out" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6180410/skrub/_table_vectorizer.py#L640"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_feature_names_out" title="Link to this definition">#</a></dt>
 <dd><p>Return the column names of the output of <code class="docutils literal notranslate"><span class="pre">transform</span></code> as a list of strings.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -986,7 +985,7 @@ transformations).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.get_metadata_routing">
-<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4779e63/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1495"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_metadata_routing" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6180410/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1495"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_metadata_routing" title="Link to this definition">#</a></dt>
 <dd><p>Get metadata routing of this object.</p>
 <p>Please check <a class="reference external" href="https://scikit-learn.org/stable/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.5)"><span class="xref std std-ref">User Guide</span></a> on how the routing
 mechanism works.</p>
@@ -1003,7 +1002,7 @@ routing information.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4779e63/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6180410/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1024,7 +1023,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4779e63/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L386"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6180410/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L386"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.5)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
@@ -1055,7 +1054,7 @@ for an example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4779e63/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6180410/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -1079,7 +1078,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4779e63/skrub/_table_vectorizer.py#L483"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6180410/skrub/_table_vectorizer.py#L483"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.transform" title="Link to this definition">#</a></dt>
 <dd><p>Transform dataframe.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1099,7 +1098,37 @@ possible to update each component of a nested object.</p>
 
 </dd></dl>
 
-<div class="clearer"></div></section>
+<section id="gallery-examples">
+<h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This guide showcases the features of skrub, an open-source package that aims at bridging the gap between tabular data sources and machine-learning models."><img alt="" src="../../_images/sphx_glr_00_getting_started_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/00_getting_started.html#sphx-glr-auto-examples-00-getting-started-py"><span class="std std-ref">Getting Started</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Getting Started</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset."><img alt="" src="../../_images/sphx_glr_01_encodings_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/01_encodings.html#sphx-glr-auto-examples-01-encodings-py"><span class="std std-ref">Encoding: from a dataframe to a numerical matrix for machine learning</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we illustrate how to better integrate datetime features in machine learning models with the |DatetimeEncoder|."><img alt="" src="../../_images/sphx_glr_03_datetime_encoder_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/03_datetime_encoder.html#sphx-glr-auto-examples-03-datetime-encoder-py"><span class="std std-ref">Handling datetime features with the DatetimeEncoder</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Handling datetime features with the DatetimeEncoder</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Joining tables may be difficult if one entry on one side does not have an exact match on the other side."><img alt="" src="../../_images/sphx_glr_07_multiple_key_join_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/07_multiple_key_join.html#sphx-glr-auto-examples-07-multiple-key-join-py"><span class="std std-ref">Spatial join for flight data: Joining across multiple columns</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Spatial join for flight data: Joining across multiple columns</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="MovieLens is a famous movie dataset used for both explicit and implicit recommender systems. It provides a main table, &quot;ratings&quot;, that can be viewed as logs or transactions, comprised of only 4 columns: userId, movieId, rating and timestamp. MovieLens also gives a contextual table &quot;movies&quot;, including movieId, title and types, to enable content-based feature extraction."><img alt="" src="../../_images/sphx_glr_08_join_aggregation_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/08_join_aggregation.html#sphx-glr-auto-examples-08-join-aggregation-py"><span class="std std-ref">Self-aggregation on MovieLens</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Self-aggregation on MovieLens</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset."><img alt="" src="../../_images/sphx_glr_01_encodings_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/01_encodings.html#sphx-glr-auto-examples-01-encodings-py"><span class="std std-ref">Encoding: from a dataframe to a numerical matrix for machine learning</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="MovieLens is a famous movie dataset used for both explicit and implicit recommender systems. It provides a main table, &quot;ratings&quot;, that can be viewed as logs or transactions, comprised of only 4 columns: userId, movieId, rating and timestamp. MovieLens also gives a contextual table &quot;movies&quot;, including movieId, title and types, to enable content-based feature extraction."><img alt="" src="../../_images/sphx_glr_08_join_aggregation_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/08_join_aggregation.html#sphx-glr-auto-examples-08-join-aggregation-py"><span class="std std-ref">Self-aggregation on MovieLens</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Self-aggregation on MovieLens</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset."><img alt="" src="../../_images/sphx_glr_01_encodings_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/01_encodings.html#sphx-glr-auto-examples-01-encodings-py"><span class="std std-ref">Encoding: from a dataframe to a numerical matrix for machine learning</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we illustrate how to better integrate datetime features in machine learning models with the |DatetimeEncoder|."><img alt="" src="../../_images/sphx_glr_03_datetime_encoder_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/03_datetime_encoder.html#sphx-glr-auto-examples-03-datetime-encoder-py"><span class="std std-ref">Handling datetime features with the DatetimeEncoder</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Handling datetime features with the DatetimeEncoder</div>
+</div></div></section>
+</section>
 
 
                 </article>
@@ -1158,6 +1187,7 @@ possible to update each component of a nested object.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.TableVectorizer.transform"><code class="docutils literal notranslate"><span class="pre">TableVectorizer.transform()</span></code></a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery-examples">Gallery examples</a></li>
 </ul>
   </nav></div>
 

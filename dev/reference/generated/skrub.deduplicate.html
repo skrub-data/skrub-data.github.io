@@ -11,8 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.deduplicate.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
-<meta property="og:image:alt" content="skrub" />
+<meta property="og:description" content="Gallery examples: Deduplicating misspelled categories" />
+<meta property="og:image" content="https://skrub-data.github.io/stable/_images/sphx_glr_05_deduplication_thumb.png" />
+<meta property="og:image:alt" content="" />
+<meta name="description" content="Gallery examples: Deduplicating misspelled categories" />
 
     <title>deduplicate &#8212; skrub</title>
   
@@ -602,7 +604,7 @@ document.write(`
 <h1>deduplicate<a class="headerlink" href="#deduplicate" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.deduplicate">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deduplicate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_clusters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linkage_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'average'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4779e63/skrub/_deduplicate.py#L129"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deduplicate" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deduplicate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_clusters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linkage_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'average'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6180410/skrub/_deduplicate.py#L129"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deduplicate" title="Link to this definition">#</a></dt>
 <dd><p>Deduplicate categorical data by hierarchically clustering similar strings.</p>
 <p>This works best if there are a number of underlying categories that
 sometimes appear in the data with small variations and/or misspellings.</p>
@@ -696,7 +698,13 @@ A deduplicated version of the initial list can easily be created:</p>
 </div>
 </dd></dl>
 
-<div class="clearer"></div></section>
+<section id="gallery-examples">
+<h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Real world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspelling break data analysis steps that require exact matching, such as a GROUP BY operation."><img alt="" src="../../_images/sphx_glr_05_deduplication_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/05_deduplication.html#sphx-glr-auto-examples-05-deduplication-py"><span class="std std-ref">Deduplicating misspelled categories</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
+</div></div></section>
+</section>
 
 
                 </article>
@@ -745,6 +753,7 @@ A deduplicated version of the initial list can easily be created:</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.deduplicate"><code class="docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery-examples">Gallery examples</a></li>
 </ul>
   </nav></div>
 

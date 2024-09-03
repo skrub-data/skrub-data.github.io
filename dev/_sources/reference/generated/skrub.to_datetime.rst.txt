@@ -1,12 +1,10 @@
-﻿to_datetime
-=====================================
+﻿to\_datetime
+============
 
 .. currentmodule:: skrub
 
 .. autofunction:: to_datetime
 
-.. include:: skrub.to_datetime.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.to_datetime
+   :add-heading: Gallery examples
+   :heading-level: -

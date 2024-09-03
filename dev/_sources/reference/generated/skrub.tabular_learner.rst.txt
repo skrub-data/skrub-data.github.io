@@ -1,12 +1,10 @@
-﻿tabular_learner
-=========================================
+﻿tabular\_learner
+================
 
 .. currentmodule:: skrub
 
 .. autofunction:: tabular_learner
 
-.. include:: skrub.tabular_learner.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.tabular_learner
+   :add-heading: Gallery examples
+   :heading-level: -

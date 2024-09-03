@@ -11,8 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.datasets.fetch_employee_salaries.html" />
 <meta property="og:site_name" content="skrub" />
+<meta property="og:description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Feature interpretation with the GapEncoder" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
+<meta name="description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Feature interpretation with the GapEncoder" />
 
     <title>fetch_employee_salaries &#8212; skrub</title>
   
@@ -602,7 +604,7 @@ document.write(`
 <h1>fetch_employee_salaries<a class="headerlink" href="#fetch-employee-salaries" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_employee_salaries">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_employee_salaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_dataframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_linked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_irrelevant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overload_job_titles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4779e63/skrub/datasets/_fetching.py#L733"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_employee_salaries" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_employee_salaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_dataframe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_linked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_irrelevant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overload_job_titles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6180410/skrub/datasets/_fetching.py#L733"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_employee_salaries" title="Link to this definition">#</a></dt>
 <dd><p>Fetches the employee salaries dataset (regression), available at <a class="reference external" href="https://openml.org/d/42125">https://openml.org/d/42125</a></p>
 <dl class="simple">
 <dt>Description of the dataset:</dt><dd><p>Annual salary information including gross pay and overtime pay for all
@@ -629,16 +631,28 @@ information about the job title.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference internal" href="../../generated/skrub.datasets.DatasetAll.html#skrub.datasets.DatasetAll" title="skrub.datasets._fetching.DatasetAll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatasetAll</span></code></a></dt><dd><p>If <cite>load_dataframe=True</cite></p>
+<dt><a class="reference internal" href="skrub.datasets.DatasetAll.html#skrub.datasets.DatasetAll" title="skrub.datasets._fetching.DatasetAll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatasetAll</span></code></a></dt><dd><p>If <cite>load_dataframe=True</cite></p>
 </dd>
-<dt><a class="reference internal" href="../../generated/skrub.datasets.DatasetInfoOnly.html#skrub.datasets.DatasetInfoOnly" title="skrub.datasets._fetching.DatasetInfoOnly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatasetInfoOnly</span></code></a></dt><dd><p>If <cite>load_dataframe=False</cite></p>
+<dt><a class="reference internal" href="skrub.datasets.DatasetInfoOnly.html#skrub.datasets.DatasetInfoOnly" title="skrub.datasets._fetching.DatasetInfoOnly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatasetInfoOnly</span></code></a></dt><dd><p>If <cite>load_dataframe=False</cite></p>
 </dd>
 </dl>
 </dd>
 </dl>
 </dd></dl>
 
-<div class="clearer"></div></section>
+<section id="gallery-examples">
+<h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This guide showcases the features of skrub, an open-source package that aims at bridging the gap between tabular data sources and machine-learning models."><img alt="" src="../../_images/sphx_glr_00_getting_started_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/00_getting_started.html#sphx-glr-auto-examples-00-getting-started-py"><span class="std std-ref">Getting Started</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Getting Started</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset."><img alt="" src="../../_images/sphx_glr_01_encodings_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/01_encodings.html#sphx-glr-auto-examples-01-encodings-py"><span class="std std-ref">Encoding: from a dataframe to a numerical matrix for machine learning</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this notebook, we will explore the output and inner workings of the |GapEncoder|, one of the high cardinality categorical encoders provided by skrub."><img alt="" src="../../_images/sphx_glr_02_feature_interpretation_with_gapencoder_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/02_feature_interpretation_with_gapencoder.html#sphx-glr-auto-examples-02-feature-interpretation-with-gapencoder-py"><span class="std std-ref">Feature interpretation with the GapEncoder</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Feature interpretation with the GapEncoder</div>
+</div></div></section>
+</section>
 
 
                 </article>
@@ -687,6 +701,7 @@ information about the job title.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.datasets.fetch_employee_salaries"><code class="docutils literal notranslate"><span class="pre">fetch_employee_salaries()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery-examples">Gallery examples</a></li>
 </ul>
   </nav></div>
 

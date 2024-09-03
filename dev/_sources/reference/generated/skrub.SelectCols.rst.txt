@@ -1,21 +1,13 @@
 ﻿SelectCols
-==============================
-
-.. rst-class:: side_comment
-
-    Usage examples at the bottom of this page.
+==========
 
 .. currentmodule:: skrub
 
 .. autoclass:: SelectCols
+   :members:
    :inherited-members:
+   :special-members: __call__
 
-   
-
-   
-
-.. include:: skrub.SelectCols.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.SelectCols skrub.SelectCols.__init__ skrub.SelectCols.fit skrub.SelectCols.fit_transform skrub.SelectCols.get_metadata_routing skrub.SelectCols.get_params skrub.SelectCols.set_output skrub.SelectCols.set_params skrub.SelectCols.transform 
+   :add-heading: Gallery examples
+   :heading-level: -
