@@ -81,6 +81,13 @@ The main table: flights dataset
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_fetching.py:687: UserWarning: Could not find the dataset '41771418' locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_41771418.parquet.
+      info = _fetch_figshare(dataset_id, data_directory)
+
 
 .. raw:: html
 
@@ -253,6 +260,13 @@ Airport data: an auxiliary table from the same database
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_fetching.py:687: UserWarning: Could not find the dataset '41710257' locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_41710257.parquet.
+      info = _fetch_figshare(dataset_id, data_directory)
+
 
 .. raw:: html
 
@@ -364,6 +378,13 @@ Weather data: auxiliary tables from external sources
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_fetching.py:687: UserWarning: Could not find the dataset '41771457' locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_41771457.parquet.
+      info = _fetch_figshare(dataset_id, data_directory)
+
 
 .. raw:: html
 
@@ -396,9 +417,9 @@ Weather data: auxiliary tables from external sources
       <tbody>
         <tr>
           <th>0</th>
-          <td>ASN00041037</td>
-          <td>2008-06-18</td>
-          <td>NaN</td>
+          <td>GME00127822</td>
+          <td>2008-08-29</td>
+          <td>206.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
@@ -412,25 +433,25 @@ Weather data: auxiliary tables from external sources
         </tr>
         <tr>
           <th>2</th>
-          <td>US1ILSP0008</td>
-          <td>2008-08-19</td>
+          <td>MXN00015282</td>
+          <td>2008-10-30</td>
+          <td>211.0</td>
+          <td>0.0</td>
           <td>NaN</td>
-          <td>0.0</td>
-          <td>0.0</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>USC00164931</td>
-          <td>2008-10-05</td>
+          <td>EN000026038</td>
+          <td>2008-12-17</td>
+          <td>-19.0</td>
+          <td>3.0</td>
           <td>NaN</td>
-          <td>0.0</td>
-          <td>0.0</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>NOE00111309</td>
-          <td>2008-08-18</td>
-          <td>NaN</td>
+          <td>ASN00086351</td>
+          <td>2008-10-29</td>
+          <td>229.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
@@ -457,6 +478,13 @@ Weather data: auxiliary tables from external sources
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_fetching.py:687: UserWarning: Could not find the dataset '41710524' locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_41710524.parquet.
+      info = _fetch_figshare(dataset_id, data_directory)
 
 
 .. raw:: html
@@ -617,33 +645,33 @@ First we join the stations with weather on the ID (exact join):
       <tbody>
         <tr>
           <th>0</th>
-          <td>AE000041196</td>
-          <td>25.333</td>
-          <td>55.517</td>
-          <td>34.0</td>
-          <td>SHARJAH INTER. AIRP</td>
+          <td>AEM00041194</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>10.4</td>
+          <td>DUBAI INTL</td>
           <td>None</td>
-          <td>GSN</td>
-          <td>41196.0</td>
+          <td>None</td>
+          <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-08-15</td>
-          <td>422.0</td>
+          <td>2008-07-24</td>
+          <td>453.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>AE000041196</td>
-          <td>25.333</td>
-          <td>55.517</td>
-          <td>34.0</td>
-          <td>SHARJAH INTER. AIRP</td>
+          <td>AEM00041194</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>10.4</td>
+          <td>DUBAI INTL</td>
           <td>None</td>
-          <td>GSN</td>
-          <td>41196.0</td>
+          <td>None</td>
+          <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-05-08</td>
-          <td>374.0</td>
+          <td>2008-01-21</td>
+          <td>221.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
@@ -658,41 +686,41 @@ First we join the stations with weather on the ID (exact join):
           <td>None</td>
           <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-04-04</td>
-          <td>288.0</td>
+          <td>2008-06-21</td>
+          <td>393.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>AEM00041194</td>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>10.4</td>
-          <td>DUBAI INTL</td>
+          <td>AEM00041217</td>
+          <td>24.433</td>
+          <td>54.651</td>
+          <td>26.8</td>
+          <td>ABU DHABI INTL</td>
           <td>None</td>
           <td>None</td>
-          <td>41194.0</td>
+          <td>41217.0</td>
           <td>NaN</td>
-          <td>2008-05-21</td>
-          <td>365.0</td>
-          <td>0.0</td>
+          <td>2008-03-03</td>
+          <td>305.0</td>
+          <td>NaN</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>AEM00041194</td>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>10.4</td>
-          <td>DUBAI INTL</td>
+          <td>AEM00041217</td>
+          <td>24.433</td>
+          <td>54.651</td>
+          <td>26.8</td>
+          <td>ABU DHABI INTL</td>
           <td>None</td>
           <td>None</td>
-          <td>41194.0</td>
+          <td>41217.0</td>
           <td>NaN</td>
-          <td>2008-01-21</td>
-          <td>221.0</td>
-          <td>0.0</td>
+          <td>2008-07-18</td>
+          <td>419.0</td>
+          <td>NaN</td>
           <td>NaN</td>
         </tr>
       </tbody>
@@ -774,17 +802,17 @@ tables into one.
       <tbody>
         <tr>
           <th>0</th>
-          <td>AE000041196</td>
-          <td>25.333</td>
-          <td>55.517</td>
-          <td>34.0</td>
-          <td>SHARJAH INTER. AIRP</td>
+          <td>AEM00041194</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>10.4</td>
+          <td>DUBAI INTL</td>
           <td>None</td>
-          <td>GSN</td>
-          <td>41196.0</td>
+          <td>None</td>
+          <td>41194.0</td>
           <td>NaN</td>
-          <td>2008-08-15</td>
-          <td>422.0</td>
+          <td>2008-07-24</td>
+          <td>453.0</td>
           <td>0.0</td>
           <td>NaN</td>
           <td>ROP</td>
@@ -794,90 +822,12 @@ tables into one.
           <td>Thailand</td>
           <td>14.078333</td>
           <td>101.378334</td>
-          <td>2.418438</td>
-          <td>3.314383</td>
+          <td>2.418781</td>
+          <td>3.314853</td>
           <td>True</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>AE000041196</td>
-          <td>25.333</td>
-          <td>55.517</td>
-          <td>34.0</td>
-          <td>SHARJAH INTER. AIRP</td>
-          <td>None</td>
-          <td>GSN</td>
-          <td>41196.0</td>
-          <td>NaN</td>
-          <td>2008-05-08</td>
-          <td>374.0</td>
-          <td>0.0</td>
-          <td>NaN</td>
-          <td>ROP</td>
-          <td>Prachinburi</td>
-          <td>None</td>
-          <td>None</td>
-          <td>Thailand</td>
-          <td>14.078333</td>
-          <td>101.378334</td>
-          <td>2.418438</td>
-          <td>3.314383</td>
-          <td>True</td>
-        </tr>
-        <tr>
-          <th>2</th>
-          <td>AEM00041194</td>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>10.4</td>
-          <td>DUBAI INTL</td>
-          <td>None</td>
-          <td>None</td>
-          <td>41194.0</td>
-          <td>NaN</td>
-          <td>2008-04-04</td>
-          <td>288.0</td>
-          <td>0.0</td>
-          <td>NaN</td>
-          <td>ROP</td>
-          <td>Prachinburi</td>
-          <td>None</td>
-          <td>None</td>
-          <td>Thailand</td>
-          <td>14.078333</td>
-          <td>101.378334</td>
-          <td>2.418781</td>
-          <td>3.314853</td>
-          <td>True</td>
-        </tr>
-        <tr>
-          <th>3</th>
-          <td>AEM00041194</td>
-          <td>25.255</td>
-          <td>55.364</td>
-          <td>10.4</td>
-          <td>DUBAI INTL</td>
-          <td>None</td>
-          <td>None</td>
-          <td>41194.0</td>
-          <td>NaN</td>
-          <td>2008-05-21</td>
-          <td>365.0</td>
-          <td>0.0</td>
-          <td>NaN</td>
-          <td>ROP</td>
-          <td>Prachinburi</td>
-          <td>None</td>
-          <td>None</td>
-          <td>Thailand</td>
-          <td>14.078333</td>
-          <td>101.378334</td>
-          <td>2.418781</td>
-          <td>3.314853</td>
-          <td>True</td>
-        </tr>
-        <tr>
-          <th>4</th>
           <td>AEM00041194</td>
           <td>25.255</td>
           <td>55.364</td>
@@ -900,6 +850,84 @@ tables into one.
           <td>101.378334</td>
           <td>2.418781</td>
           <td>3.314853</td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>AEM00041194</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>10.4</td>
+          <td>DUBAI INTL</td>
+          <td>None</td>
+          <td>None</td>
+          <td>41194.0</td>
+          <td>NaN</td>
+          <td>2008-06-21</td>
+          <td>393.0</td>
+          <td>0.0</td>
+          <td>NaN</td>
+          <td>ROP</td>
+          <td>Prachinburi</td>
+          <td>None</td>
+          <td>None</td>
+          <td>Thailand</td>
+          <td>14.078333</td>
+          <td>101.378334</td>
+          <td>2.418781</td>
+          <td>3.314853</td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>AEM00041217</td>
+          <td>24.433</td>
+          <td>54.651</td>
+          <td>26.8</td>
+          <td>ABU DHABI INTL</td>
+          <td>None</td>
+          <td>None</td>
+          <td>41217.0</td>
+          <td>NaN</td>
+          <td>2008-03-03</td>
+          <td>305.0</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>ROP</td>
+          <td>Prachinburi</td>
+          <td>None</td>
+          <td>None</td>
+          <td>Thailand</td>
+          <td>14.078333</td>
+          <td>101.378334</td>
+          <td>2.392029</td>
+          <td>3.278190</td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>AEM00041217</td>
+          <td>24.433</td>
+          <td>54.651</td>
+          <td>26.8</td>
+          <td>ABU DHABI INTL</td>
+          <td>None</td>
+          <td>None</td>
+          <td>41217.0</td>
+          <td>NaN</td>
+          <td>2008-07-18</td>
+          <td>419.0</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>ROP</td>
+          <td>Prachinburi</td>
+          <td>None</td>
+          <td>None</td>
+          <td>Thailand</td>
+          <td>14.078333</td>
+          <td>101.378334</td>
+          <td>2.392029</td>
+          <td>3.278190</td>
           <td>True</td>
         </tr>
       </tbody>
@@ -1225,10 +1253,8 @@ The results:
       warnings.warn(
     /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [0] during transform. These unknown categories will be encoded as all zeros
       warnings.warn(
-    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [0] during transform. These unknown categories will be encoded as all zeros
-      warnings.warn(
 
-    np.float64(0.5851999999999999)
+    np.float64(0.5869000000000001)
 
 
 
@@ -1246,7 +1272,7 @@ Our final cross-validated accuracy score is 0.58.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (7 minutes 38.487 seconds)
+   **Total running time of the script:** (7 minutes 31.193 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:
