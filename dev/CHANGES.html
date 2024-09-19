@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Minor changes: The reports created by Tabl..." />
+<meta property="og:description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Minor changes: For tree-based models, tabu..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Minor changes: The reports created by Tabl..." />
+<meta name="description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Minor changes: For tree-based models, tabu..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -569,6 +569,11 @@ It is currently undergoing fast development and backward compatibility is not en
 <section id="minor-changes">
 <h3>Minor changes<a class="headerlink" href="#minor-changes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>For tree-based models, <a class="reference internal" href="reference/generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a> now adds
+<cite>handle_unknown=’use_encoded_value’</cite> to the <cite>OrdinalEncoder</cite>, to avoid
+errors with new categories in the test set. This is consistent with the
+setting of <cite>OneHotEncoder</cite> used by default in the
+<a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1078">#1078</a> by <a class="reference external" href="https://github.com/gaelvaroquaux">Gaël Varoquaux</a></p></li>
 <li><p>The reports created by <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>, when inserted in an html page (or
 displayed in a notebook), now use the same font as the surrounding page.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1038">#1038</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
