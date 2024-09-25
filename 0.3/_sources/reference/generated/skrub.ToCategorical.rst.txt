@@ -1,21 +1,13 @@
 ﻿ToCategorical
-=================================
-
-.. rst-class:: side_comment
-
-    Usage examples at the bottom of this page.
+=============
 
 .. currentmodule:: skrub
 
 .. autoclass:: ToCategorical
+   :members:
    :inherited-members:
+   :special-members: __call__
 
-   
-
-   
-
-.. include:: skrub.ToCategorical.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.ToCategorical skrub.ToCategorical.__init__ skrub.ToCategorical.fit skrub.ToCategorical.fit_transform skrub.ToCategorical.get_metadata_routing skrub.ToCategorical.get_params skrub.ToCategorical.set_fit_request skrub.ToCategorical.set_params skrub.ToCategorical.set_transform_request skrub.ToCategorical.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

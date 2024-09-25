@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/end_to_end_pipeline.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Turning a dataframe into a numerical feature matrix: A dataframe can contain columns of all kind of types. A good numerical representation of these columns help analytics and statistical learning. ..." />
+<meta property="og:description" content="Create baseline predictive models on heterogeneous dataset: Crafting a machine-learning pipeline is a rather daunting task. Choosing the ending learner of such pipeline is usually the easiest part...." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Turning a dataframe into a numerical feature matrix: A dataframe can contain columns of all kind of types. A good numerical representation of these columns help analytics and statistical learning. ..." />
+<meta name="description" content="Create baseline predictive models on heterogeneous dataset: Crafting a machine-learning pipeline is a rather daunting task. Choosing the ending learner of such pipeline is usually the easiest part...." />
 
     <title>End-to-end predictive models &#8212; skrub</title>
   
@@ -44,14 +44,14 @@
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-rendered-html.css?v=1277b6f3" />
-    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=28d27fb6" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=0c3a8733" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=e259d695"></script>
+    <script src="_static/documentation_options.js?v=4621528c"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -61,7 +61,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.3.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.3.1';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = true;
         </script>
     <link rel="icon" href="_static/skrub.svg"/>
@@ -168,7 +168,7 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="install.html">
-    Installation instructions
+    Install
   </a>
 </li>
 
@@ -182,7 +182,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="reference/index.html">
-    API reference
+    API
   </a>
 </li>
 
@@ -307,6 +307,18 @@ document.write(`
           <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
 </ul></div>
       
     </div>
@@ -360,7 +372,7 @@ document.write(`
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="install.html">
-    Installation instructions
+    Install
   </a>
 </li>
 
@@ -374,7 +386,7 @@ document.write(`
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="reference/index.html">
-    API reference
+    API
   </a>
 </li>
 
@@ -478,6 +490,18 @@ document.write(`
           <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
 </ul></div>
         
       </div>
@@ -553,21 +577,21 @@ document.write(`
                   
   <section id="end-to-end-predictive-models">
 <span id="end-to-end-pipeline"></span><h1>End-to-end predictive models<a class="headerlink" href="#end-to-end-predictive-models" title="Link to this heading">#</a></h1>
-<section id="turning-a-dataframe-into-a-numerical-feature-matrix">
-<span id="table-vectorizer"></span><h2>Turning a dataframe into a numerical feature matrix<a class="headerlink" href="#turning-a-dataframe-into-a-numerical-feature-matrix" title="Link to this heading">#</a></h2>
-<p>A dataframe can contain columns of all kind of types. A good numerical
-representation of these columns help analytics and statistical learning.</p>
-<p>The <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> gives a turn-key solution by applying
-different data-specific encoders to the different columns. It makes reasonable
-heuristic choices that are not necessarily optimal since it is not aware of the learner
-used for the machine learning task). However, it already provides a typically very good
-baseline.</p>
-<p>The function <a class="reference internal" href="reference/generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a> goes the extra mile by creating a machine-learning
-model that works well on tabular data. This model combines a <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>
-with a provided scikit-learn estimator. Depending whether or not the final estimator
-natively supports missing values, a missing value imputer step is added before the
-final estimator. The parameters of the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> are chosen based on the
-type of the final estimator.</p>
+<section id="create-baseline-predictive-models-on-heterogeneous-dataset">
+<span id="tabular-learner"></span><h2>Create baseline predictive models on heterogeneous dataset<a class="headerlink" href="#create-baseline-predictive-models-on-heterogeneous-dataset" title="Link to this heading">#</a></h2>
+<p>Crafting a machine-learning pipeline is a rather daunting task. Choosing the ending
+learner of such pipeline is usually the easiest part. However, it imposes constraints
+regarding the preprocessing steps that are are required ahead of the learner.
+Programmatically defining these steps is the part that requires the most expertise and
+that is cumbersome to write.</p>
+<p>The function <a class="reference internal" href="reference/generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a> provides a factory function that, given a
+scikit-learn estimator, returns a pipeline combining this estimator with the
+appropriate preprocessing steps. These steps correspond to a <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>
+that handles heterogeneous data and, depending on the capabilities
+of the final estimator, a missing value imputer and/or a standard scaler.</p>
+<p>In the next section, we provide more details regarding the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>
+(<a class="reference internal" href="#table-vectorizer"><span class="std std-ref">Turning a dataframe into a numeric feature matrix</span></a>). The parameters of the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> are chosen
+based on the type of the final estimator.</p>
 <div class="pst-scrollable-table-container"><table class="table" id="id1">
 <caption><span class="caption-text">Parameter values choice of <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> when using the <a class="reference internal" href="reference/generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a> function</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
 <thead>
@@ -620,15 +644,56 @@ categorical features. It does not provide interpretable features as the default
 <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> but it is much faster. For low-cardinality, these models relies on
 either the native support of the model or the
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code></a>.</p>
-<p>With linear models or unknown models, the default values of the different
-parameters are used. Therefore, the <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> is used for
-high-cardinality categorical features and the
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a> for low-cardinality ones. If the
-final estimator does not support missing values, a
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a> is added before the final estimator.
-Finally, a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> is added to the
-pipeline. Those choices may not be optimal in all cases but they are
-methodologically safe.</p>
+<p>With linear models or unknown models, the default values of the different parameters are
+used. Therefore, the <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> is used for high-cardinality categorical features
+and the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a> for low-cardinality ones. If the
+final estimator does not support missing values, a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a>
+is added before the final estimator. Finally, a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> is added to the pipeline. Those choices may
+not be optimal in all cases but they are methodologically safe.</p>
+</section>
+<section id="turning-a-dataframe-into-a-numeric-feature-matrix">
+<span id="table-vectorizer"></span><h2>Turning a dataframe into a numeric feature matrix<a class="headerlink" href="#turning-a-dataframe-into-a-numeric-feature-matrix" title="Link to this heading">#</a></h2>
+<p>A dataframe can contain columns of all kinds of types. We usually refer to such data as
+“heterogeneous” data. A good numerical representation of these columns helps with
+analytics and statistical learning.</p>
+<p>The <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> gives a turn-key solution by applying different
+data-specific encoders to the different columns. It makes reasonable heuristic choices
+that are not necessarily optimal since it is not aware of the learner used for the
+machine learning task. However, it already provides a typically very good baseline.</p>
+<p>The <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> handles the following type of data:</p>
+<ul class="simple">
+<li><p>numerical data represented with the data types <cite>bool</cite>, <cite>int</cite>, and <cite>float</cite>;</p></li>
+<li><p>categorical data represented with the data types <cite>str</cite> or categorical (e.g.
+<a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.CategoricalDtype.html#pandas.CategoricalDtype" title="(in pandas v2.2.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pandas.CategoricalDtype</span></code></a> or <a class="reference external" href="https://docs.pola.rs/py-polars/html/reference/api/polars.datatypes.Categorical.html#polars.datatypes.Categorical" title="(in Polars)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">polars.datatypes.Categorical</span></code></a>);</p></li>
+<li><p>date and time data represented by <cite>datetime</cite> data type (e.g. <a class="reference external" href="https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.datetime64" title="(in NumPy v2.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.datetime64</span></code></a>,
+<a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DatetimeTZDtype.html#pandas.DatetimeTZDtype" title="(in pandas v2.2.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pandas.DatetimeTZDtype</span></code></a>, <a class="reference external" href="https://docs.pola.rs/py-polars/html/reference/api/polars.datatypes.Datetime.html#polars.datatypes.Datetime" title="(in Polars)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">polars.datatypes.Datetime</span></code></a>).</p></li>
+</ul>
+<p>Categorical data are subdivided into two groups: columns containing a large number of
+categories (high-cardinality columns) and columns containing a small number of
+categories (low-cardinality columns). A column is considered high-cardinality if the
+number of unique values is greater than a given threshold, which is controlled by the
+parameter cardinality_threshold.</p>
+<p>Each group of data types defined earlier is associated with a specific init parameter
+(e.g. <code class="docutils literal notranslate"><span class="pre">numeric</span></code>, <code class="docutils literal notranslate"><span class="pre">datetime</span></code>, etc.). The value of these parameters follows the same
+convention:</p>
+<ul class="simple">
+<li><p>when set to <code class="docutils literal notranslate"><span class="pre">&quot;passthrough&quot;</span></code>, the input columns are output as they are;</p></li>
+<li><p>when set to <code class="docutils literal notranslate"><span class="pre">&quot;drop&quot;</span></code>, the input columns are dropped;</p></li>
+<li><p>when set to <a class="reference external" href="https://scikit-learn.org/stable/glossary.html#term-transformer">a compatible scikit-learn transformer</a>
+(implementing <code class="docutils literal notranslate"><span class="pre">fit</span></code>, <code class="docutils literal notranslate"><span class="pre">transform</span></code>, and <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> methods), the transformer
+is applied to each column independently. The transformer is cloned (using
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.clone.html#sklearn.base.clone" title="(in scikit-learn v1.5)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.base.clone()</span></code></a>) before calling the <code class="docutils literal notranslate"><span class="pre">fit</span></code> method.</p></li>
+</ul>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
+<p>The following examples provide an in-depth look at how to use the
+<a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> class and the <a class="reference internal" href="reference/generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a>
+function.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="auto_examples/01_encodings.html#sphx-glr-auto-examples-01-encodings-py"><span class="std std-ref">Encoding: from a dataframe to a numerical matrix for machine learning</span></a></p></li>
+</ul>
 </section>
 </section>
 
@@ -678,25 +743,11 @@ methodologically safe.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turning-a-dataframe-into-a-numerical-feature-matrix">Turning a dataframe into a numerical feature matrix</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-baseline-predictive-models-on-heterogeneous-dataset">Create baseline predictive models on heterogeneous dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turning-a-dataframe-into-a-numeric-feature-matrix">Turning a dataframe into a numeric feature matrix</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
 </ul>
   </nav></div>
-
-  <div class="sidebar-secondary-item">
-
-  
-  <div class="tocsection editthispage">
-    <a href="https://github.com/skrub-data/skrub/edit/main/doc/end_to_end_pipeline.rst">
-      <i class="fa-solid fa-pencil"></i>
-      
-      
-        
-          Edit on GitHub
-        
-      
-    </a>
-  </div>
-</div>
 
   <div class="sidebar-secondary-item">
 
@@ -741,7 +792,7 @@ methodologically safe.</p>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
     <br/>
   </p>
 </div>

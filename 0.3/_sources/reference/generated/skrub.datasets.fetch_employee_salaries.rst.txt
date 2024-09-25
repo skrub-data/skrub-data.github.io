@@ -1,12 +1,10 @@
-﻿fetch_employee_salaries
-==========================================================
+﻿fetch\_employee\_salaries
+=========================
 
 .. currentmodule:: skrub.datasets
 
 .. autofunction:: fetch_employee_salaries
 
-.. include:: skrub.datasets.fetch_employee_salaries.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.datasets.fetch_employee_salaries
+   :add-heading: Gallery examples
+   :heading-level: -

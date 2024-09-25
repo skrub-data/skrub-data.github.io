@@ -1,21 +1,13 @@
 ﻿ToDatetime
-==============================
-
-.. rst-class:: side_comment
-
-    Usage examples at the bottom of this page.
+==========
 
 .. currentmodule:: skrub
 
 .. autoclass:: ToDatetime
+   :members:
    :inherited-members:
+   :special-members: __call__
 
-   
-
-   
-
-.. include:: skrub.ToDatetime.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.ToDatetime skrub.ToDatetime.__init__ skrub.ToDatetime.fit skrub.ToDatetime.fit_transform skrub.ToDatetime.get_metadata_routing skrub.ToDatetime.get_params skrub.ToDatetime.set_fit_request skrub.ToDatetime.set_params skrub.ToDatetime.set_transform_request skrub.ToDatetime.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,21 +1,13 @@
 ﻿DropCols
-============================
-
-.. rst-class:: side_comment
-
-    Usage examples at the bottom of this page.
+========
 
 .. currentmodule:: skrub
 
 .. autoclass:: DropCols
+   :members:
    :inherited-members:
+   :special-members: __call__
 
-   
-
-   
-
-.. include:: skrub.DropCols.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.DropCols skrub.DropCols.__init__ skrub.DropCols.fit skrub.DropCols.fit_transform skrub.DropCols.get_metadata_routing skrub.DropCols.get_params skrub.DropCols.set_output skrub.DropCols.set_params skrub.DropCols.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

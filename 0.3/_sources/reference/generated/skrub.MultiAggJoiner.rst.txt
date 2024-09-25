@@ -1,21 +1,13 @@
 ﻿MultiAggJoiner
-==================================
-
-.. rst-class:: side_comment
-
-    Usage examples at the bottom of this page.
+==============
 
 .. currentmodule:: skrub
 
 .. autoclass:: MultiAggJoiner
+   :members:
    :inherited-members:
+   :special-members: __call__
 
-   
-
-   
-
-.. include:: skrub.MultiAggJoiner.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.MultiAggJoiner skrub.MultiAggJoiner.__init__ skrub.MultiAggJoiner.fit skrub.MultiAggJoiner.fit_transform skrub.MultiAggJoiner.get_metadata_routing skrub.MultiAggJoiner.get_params skrub.MultiAggJoiner.set_output skrub.MultiAggJoiner.set_params skrub.MultiAggJoiner.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,21 +1,13 @@
 ﻿TableReport
-===============================
-
-.. rst-class:: side_comment
-
-    Usage examples at the bottom of this page.
+===========
 
 .. currentmodule:: skrub
 
 .. autoclass:: TableReport
+   :members:
    :inherited-members:
+   :special-members: __call__
 
-   
-
-   
-
-.. include:: skrub.TableReport.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.TableReport skrub.TableReport.__init__ skrub.TableReport.html skrub.TableReport.html_snippet skrub.TableReport.json skrub.TableReport.open 
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,21 +1,13 @@
 ﻿Joiner
-==========================
-
-.. rst-class:: side_comment
-
-    Usage examples at the bottom of this page.
+======
 
 .. currentmodule:: skrub
 
 .. autoclass:: Joiner
+   :members:
    :inherited-members:
+   :special-members: __call__
 
-   
-
-   
-
-.. include:: skrub.Joiner.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.Joiner skrub.Joiner.__init__ skrub.Joiner.fit skrub.Joiner.fit_transform skrub.Joiner.get_metadata_routing skrub.Joiner.get_params skrub.Joiner.set_output skrub.Joiner.set_params skrub.Joiner.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

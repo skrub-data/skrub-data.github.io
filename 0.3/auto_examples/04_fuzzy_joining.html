@@ -44,14 +44,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28d27fb6" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0c3a8733" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=e259d695"></script>
+    <script src="../_static/documentation_options.js?v=4621528c"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -61,7 +61,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.3.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.3.1';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = true;
         </script>
     <link rel="icon" href="../_static/skrub.svg"/>
@@ -168,7 +168,7 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../install.html">
-    Installation instructions
+    Install
   </a>
 </li>
 
@@ -182,7 +182,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../reference/index.html">
-    API reference
+    API
   </a>
 </li>
 
@@ -307,6 +307,18 @@ document.write(`
           <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
 </ul></div>
       
     </div>
@@ -360,7 +372,7 @@ document.write(`
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../install.html">
-    Installation instructions
+    Install
   </a>
 </li>
 
@@ -374,7 +386,7 @@ document.write(`
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../reference/index.html">
-    API reference
+    API
   </a>
 </li>
 
@@ -477,6 +489,18 @@ document.write(`
           
           <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
         </li>
 </ul></div>
         
@@ -704,6 +728,10 @@ function:</p>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">gdp_per_capita</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:685: UserWarning: Could not find the dataset &#39;NY.GDP.PCAP.CD&#39; locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/NY.GDP.PCAP.CD.csv.
+  info = _fetch_world_bank_data(dataset_id, data_directory)
+</pre></div>
+</div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>
 <style scoped>
@@ -753,6 +781,10 @@ function:</p>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">life_exp</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:685: UserWarning: Could not find the dataset &#39;SP.DYN.LE00.IN&#39; locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/SP.DYN.LE00.IN.csv.
+  info = _fetch_world_bank_data(dataset_id, data_directory)
+</pre></div>
+</div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>
 <style scoped>
@@ -800,6 +832,10 @@ function:</p>
 <br /><p>And a table with legal rights strength by country:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">legal_rights</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_world_bank_indicator</span></a><span class="p">(</span><span class="s2">&quot;IC.LGL.CRED.XQ&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">legal_rights</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:685: UserWarning: Could not find the dataset &#39;IC.LGL.CRED.XQ&#39; locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/IC.LGL.CRED.XQ.csv.
+  info = _fetch_world_bank_data(dataset_id, data_directory)
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -1227,7 +1263,7 @@ we have extracted.</p>
       <td>Lebanon</td>
       <td>2955.0</td>
       <td>Lebanon</td>
-      <td>3350.297104</td>
+      <td>3823.938069</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1778,7 +1814,7 @@ We evaluate our model using the <cite>R2</cite> score.</p>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean R² score is </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv_r2_t</span></a><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> +- </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv_r2_t</span></a><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Mean R² score is 0.63 +- 0.10
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Mean R² score is 0.64 +- 0.08
 </pre></div>
 </div>
 <p>We have a satisfying first result: an R² of 0.63!</p>
@@ -1848,10 +1884,10 @@ introduced into a grid search:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Best parameters: {&#39;joiner-1__max_dist&#39;: 0.1, &#39;joiner-2__max_dist&#39;: 0.9, &#39;joiner-3__max_dist&#39;: 0.1}
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 11.822 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 11.629 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-04-fuzzy-joining-py">
 <div class="binder-badge docutils container">
-<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.3.0?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.3.1?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
 </a>
 </div>
 <div class="lite-badge docutils container">
@@ -1938,26 +1974,69 @@ introduced into a grid search:</p>
 
   <div class="sidebar-secondary-item">
 
-  
-  <div class="tocsection editthispage">
-    <a href="https://github.com/skrub-data/skrub/edit/main/doc/auto_examples/04_fuzzy_joining.rst">
-      <i class="fa-solid fa-pencil"></i>
-      
-      
-        
-          Edit on GitHub
-        
-      
+  <div class="tocsection sourcelink">
+    <a href="../_sources/auto_examples/04_fuzzy_joining.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
 </div>
 
   <div class="sidebar-secondary-item">
 
-  <div class="tocsection sourcelink">
-    <a href="../_sources/auto_examples/04_fuzzy_joining.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
+
+  <div class="sphx-glr-sidebar-component">
+    
+      
+        <div class="sphx-glr-sidebar-item sphx-glr-download-python-sidebar" title="04_fuzzy_joining.py">
+          <a download href="../_downloads/64f1019ef941c218dbb15293bace7ef0/04_fuzzy_joining.py">
+            <i class="fa-solid fa-download"></i>
+            Download source code
+          </a>
+        </div>
+      
+    
+      
+        <div class="sphx-glr-sidebar-item sphx-glr-download-jupyter-sidebar" title="04_fuzzy_joining.ipynb">
+          <a download href="../_downloads/ba27239b29f2825293dfdf887a176885/04_fuzzy_joining.ipynb">
+            <i class="fa-solid fa-download"></i>
+            Download Jupyter notebook
+          </a>
+        </div>
+      
+    
+      
+        <div class="sphx-glr-sidebar-item sphx-glr-download-zip-sidebar" title="04_fuzzy_joining.zip">
+          <a download href="../_downloads/83483f7235fd079815061ccd8faac253/04_fuzzy_joining.zip">
+            <i class="fa-solid fa-download"></i>
+            Download zipped
+          </a>
+        </div>
+      
+    
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+
+  <div class="sphx-glr-sidebar-component">
+    
+      
+        <div class="sphx-glr-sidebar-item lite-badge-sidebar">
+          <a href="../lite/lab/index.html?path=auto_examples/04_fuzzy_joining.ipynb">
+            <img src="../_images/jupyterlite_badge_logo.svg" alt="Launch JupyterLite">
+          </a>
+        </div>
+      
+    
+      
+        <div class="sphx-glr-sidebar-item binder-badge-sidebar">
+          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/0.3.1?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb">
+            <img src="../_images/binder_badge_logo.svg" alt="Launch binder">
+          </a>
+        </div>
+      
+    
   </div>
 </div>
 
@@ -1995,7 +2074,7 @@ introduced into a grid search:</p>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
     <br/>
   </p>
 </div>

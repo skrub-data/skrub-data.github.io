@@ -242,6 +242,13 @@ We extract the table containing GDP per capita by country:
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_fetching.py:685: UserWarning: Could not find the dataset 'NY.GDP.PCAP.CD' locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/NY.GDP.PCAP.CD.csv.
+      info = _fetch_world_bank_data(dataset_id, data_directory)
+
 
 .. raw:: html
 
@@ -306,6 +313,13 @@ Then another table, with life expectancy by country:
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_fetching.py:685: UserWarning: Could not find the dataset 'SP.DYN.LE00.IN' locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/SP.DYN.LE00.IN.csv.
+      info = _fetch_world_bank_data(dataset_id, data_directory)
+
 
 .. raw:: html
 
@@ -369,6 +383,13 @@ And a table with legal rights strength by country:
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_fetching.py:685: UserWarning: Could not find the dataset 'IC.LGL.CRED.XQ' locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/IC.LGL.CRED.XQ.csv.
+      info = _fetch_world_bank_data(dataset_id, data_directory)
 
 
 .. raw:: html
@@ -852,7 +873,7 @@ To join them with skrub, we only need to do the following:
           <td>Lebanon</td>
           <td>2955.0</td>
           <td>Lebanon</td>
-          <td>3350.297104</td>
+          <td>3823.938069</td>
           <td>0.000000</td>
           <td>0.000000</td>
           <td>True</td>
@@ -1598,7 +1619,7 @@ Let's finally assess the results of our models:
 
  .. code-block:: none
 
-    Mean R² score is 0.63 +- 0.10
+    Mean R² score is 0.64 +- 0.08
 
 
 
@@ -1715,7 +1736,7 @@ introduced into a grid search:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 11.822 seconds)
+   **Total running time of the script:** (0 minutes 11.629 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining.py:
@@ -1727,7 +1748,7 @@ introduced into a grid search:
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.3.0?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb
+        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.3.1?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb
         :alt: Launch binder
         :width: 150 px
 

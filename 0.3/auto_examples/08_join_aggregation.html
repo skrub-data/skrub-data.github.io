@@ -44,14 +44,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28d27fb6" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0c3a8733" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=e259d695"></script>
+    <script src="../_static/documentation_options.js?v=4621528c"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -61,7 +61,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.3.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.3.1';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = true;
         </script>
     <link rel="icon" href="../_static/skrub.svg"/>
@@ -168,7 +168,7 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../install.html">
-    Installation instructions
+    Install
   </a>
 </li>
 
@@ -182,7 +182,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../reference/index.html">
-    API reference
+    API
   </a>
 </li>
 
@@ -307,6 +307,18 @@ document.write(`
           <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
 </ul></div>
       
     </div>
@@ -360,7 +372,7 @@ document.write(`
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../install.html">
-    Installation instructions
+    Install
   </a>
 </li>
 
@@ -374,7 +386,7 @@ document.write(`
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../reference/index.html">
-    API reference
+    API
   </a>
 </li>
 
@@ -477,6 +489,18 @@ document.write(`
           
           <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
         </li>
 </ul></div>
         
@@ -599,7 +623,10 @@ Note that we use the light version (100k rows).</p>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html#pandas.DataFrame.shape" title="pandas.DataFrame.shape" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-property"><span class="n">X</span><span class="o">.</span><span class="n">shape</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.shape.html#pandas.Series.shape" title="pandas.Series.shape" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-property"><span class="n">y</span><span class="o">.</span><span class="n">shape</span></a>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>((100836, 3), (100836,))
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:689: UserWarning: Could not find the dataset &#39;ratings&#39; locally. Downloading it from MovieLens; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data.
+  info = _fetch_movielens(dataset_id, data_directory)
+
+((100836, 3), (100836,))
 </pre></div>
 </div>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">X</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
@@ -1559,75 +1586,75 @@ operation maximizing our validation score.</p>
     </tr>
     <tr>
       <th>split1_test_score</th>
-      <td>0.026148</td>
-      <td>0.053013</td>
-      <td>0.078093</td>
-      <td>0.068545</td>
-      <td>0.078258</td>
+      <td>0.061817</td>
+      <td>0.049951</td>
+      <td>0.075010</td>
+      <td>0.083451</td>
+      <td>0.067440</td>
     </tr>
     <tr>
       <th>split2_test_score</th>
-      <td>0.074921</td>
-      <td>0.078613</td>
-      <td>0.098158</td>
-      <td>0.098795</td>
-      <td>0.085542</td>
+      <td>0.074165</td>
+      <td>0.077128</td>
+      <td>0.082303</td>
+      <td>0.097108</td>
+      <td>0.096692</td>
     </tr>
     <tr>
       <th>split3_test_score</th>
-      <td>0.035969</td>
-      <td>0.069066</td>
-      <td>0.050335</td>
-      <td>0.068803</td>
-      <td>0.079735</td>
+      <td>0.038579</td>
+      <td>0.060527</td>
+      <td>0.071091</td>
+      <td>0.072484</td>
+      <td>0.063654</td>
     </tr>
     <tr>
       <th>split4_test_score</th>
-      <td>0.132960</td>
-      <td>0.130554</td>
-      <td>0.143061</td>
-      <td>0.149123</td>
-      <td>0.153345</td>
+      <td>0.139948</td>
+      <td>0.113807</td>
+      <td>0.136876</td>
+      <td>0.149235</td>
+      <td>0.147553</td>
     </tr>
     <tr>
       <th>split5_test_score</th>
-      <td>0.109028</td>
-      <td>0.114373</td>
-      <td>0.105723</td>
-      <td>0.106827</td>
-      <td>0.115047</td>
+      <td>0.111803</td>
+      <td>0.110122</td>
+      <td>0.104111</td>
+      <td>0.105324</td>
+      <td>0.115805</td>
     </tr>
     <tr>
       <th>split6_test_score</th>
-      <td>0.085684</td>
-      <td>0.103785</td>
-      <td>0.100045</td>
-      <td>0.110395</td>
-      <td>0.115609</td>
+      <td>0.087162</td>
+      <td>0.098564</td>
+      <td>0.102176</td>
+      <td>0.109725</td>
+      <td>0.112904</td>
     </tr>
     <tr>
       <th>split7_test_score</th>
-      <td>0.065610</td>
-      <td>0.064281</td>
-      <td>0.057283</td>
-      <td>0.076136</td>
-      <td>0.077422</td>
+      <td>0.068194</td>
+      <td>0.062488</td>
+      <td>0.049287</td>
+      <td>0.073328</td>
+      <td>0.076863</td>
     </tr>
     <tr>
       <th>split8_test_score</th>
-      <td>0.110241</td>
-      <td>0.118473</td>
-      <td>0.122210</td>
-      <td>0.117863</td>
-      <td>0.135453</td>
+      <td>0.105476</td>
+      <td>0.117495</td>
+      <td>0.124957</td>
+      <td>0.120534</td>
+      <td>0.131725</td>
     </tr>
     <tr>
       <th>split9_test_score</th>
-      <td>0.124426</td>
-      <td>0.149673</td>
-      <td>0.168378</td>
-      <td>0.160793</td>
-      <td>0.179083</td>
+      <td>0.135478</td>
+      <td>0.144773</td>
+      <td>0.168385</td>
+      <td>0.161981</td>
+      <td>0.184825</td>
     </tr>
   </tbody>
 </table>
@@ -1694,10 +1721,10 @@ performance: computing the mean yields a single statistic, whereas histograms
 yield a density over a reduced set of bins, and <code class="docutils literal notranslate"><span class="pre">&quot;value_counts&quot;</span></code> yields an
 exhaustive histogram over all the possible values of ratings
 (here 10 different values, from 0.5 to 5).</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 20.411 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 20.577 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-08-join-aggregation-py">
 <div class="binder-badge docutils container">
-<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.3.0?urlpath=lab/tree/notebooks/auto_examples/08_join_aggregation.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.3.1?urlpath=lab/tree/notebooks/auto_examples/08_join_aggregation.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
 </a>
 </div>
 <div class="lite-badge docutils container">
@@ -1774,26 +1801,69 @@ exhaustive histogram over all the possible values of ratings
 
   <div class="sidebar-secondary-item">
 
-  
-  <div class="tocsection editthispage">
-    <a href="https://github.com/skrub-data/skrub/edit/main/doc/auto_examples/08_join_aggregation.rst">
-      <i class="fa-solid fa-pencil"></i>
-      
-      
-        
-          Edit on GitHub
-        
-      
+  <div class="tocsection sourcelink">
+    <a href="../_sources/auto_examples/08_join_aggregation.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
 </div>
 
   <div class="sidebar-secondary-item">
 
-  <div class="tocsection sourcelink">
-    <a href="../_sources/auto_examples/08_join_aggregation.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
+
+  <div class="sphx-glr-sidebar-component">
+    
+      
+        <div class="sphx-glr-sidebar-item sphx-glr-download-python-sidebar" title="08_join_aggregation.py">
+          <a download href="../_downloads/5d5d06b8933ecf90c53caf55625833a1/08_join_aggregation.py">
+            <i class="fa-solid fa-download"></i>
+            Download source code
+          </a>
+        </div>
+      
+    
+      
+        <div class="sphx-glr-sidebar-item sphx-glr-download-jupyter-sidebar" title="08_join_aggregation.ipynb">
+          <a download href="../_downloads/f569ca5b8f2fc9fe3e4ff0e14e60b325/08_join_aggregation.ipynb">
+            <i class="fa-solid fa-download"></i>
+            Download Jupyter notebook
+          </a>
+        </div>
+      
+    
+      
+        <div class="sphx-glr-sidebar-item sphx-glr-download-zip-sidebar" title="08_join_aggregation.zip">
+          <a download href="../_downloads/c1773159d0b6d9e88a5c11e9ebcef36f/08_join_aggregation.zip">
+            <i class="fa-solid fa-download"></i>
+            Download zipped
+          </a>
+        </div>
+      
+    
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+
+  <div class="sphx-glr-sidebar-component">
+    
+      
+        <div class="sphx-glr-sidebar-item lite-badge-sidebar">
+          <a href="../lite/lab/index.html?path=auto_examples/08_join_aggregation.ipynb">
+            <img src="../_images/jupyterlite_badge_logo.svg" alt="Launch JupyterLite">
+          </a>
+        </div>
+      
+    
+      
+        <div class="sphx-glr-sidebar-item binder-badge-sidebar">
+          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/0.3.1?urlpath=lab/tree/notebooks/auto_examples/08_join_aggregation.ipynb">
+            <img src="../_images/binder_badge_logo.svg" alt="Launch binder">
+          </a>
+        </div>
+      
+    
   </div>
 </div>
 
@@ -1831,7 +1901,7 @@ exhaustive histogram over all the possible values of ratings
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
     <br/>
   </p>
 </div>

@@ -1,21 +1,13 @@
 ﻿AggTarget
-=============================
-
-.. rst-class:: side_comment
-
-    Usage examples at the bottom of this page.
+=========
 
 .. currentmodule:: skrub
 
 .. autoclass:: AggTarget
+   :members:
    :inherited-members:
+   :special-members: __call__
 
-   
-
-   
-
-.. include:: skrub.AggTarget.examples
-
-.. raw:: html
-
-    <div class="clearer"></div>
+.. minigallery:: skrub.AggTarget skrub.AggTarget.__init__ skrub.AggTarget.check_inputs skrub.AggTarget.fit skrub.AggTarget.fit_transform skrub.AggTarget.get_metadata_routing skrub.AggTarget.get_params skrub.AggTarget.set_output skrub.AggTarget.set_params skrub.AggTarget.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

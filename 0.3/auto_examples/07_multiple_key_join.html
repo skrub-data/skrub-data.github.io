@@ -44,14 +44,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=28d27fb6" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0c3a8733" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=e259d695"></script>
+    <script src="../_static/documentation_options.js?v=4621528c"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -61,7 +61,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.3.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.3.1';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = true;
         </script>
     <link rel="icon" href="../_static/skrub.svg"/>
@@ -168,7 +168,7 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../install.html">
-    Installation instructions
+    Install
   </a>
 </li>
 
@@ -182,7 +182,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../reference/index.html">
-    API reference
+    API
   </a>
 </li>
 
@@ -307,6 +307,18 @@ document.write(`
           <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
 </ul></div>
       
     </div>
@@ -360,7 +372,7 @@ document.write(`
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../install.html">
-    Installation instructions
+    Install
   </a>
 </li>
 
@@ -374,7 +386,7 @@ document.write(`
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../reference/index.html">
-    API reference
+    API
   </a>
 </li>
 
@@ -477,6 +489,18 @@ document.write(`
           
           <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
         </li>
 </ul></div>
         
@@ -598,6 +622,10 @@ Here, we consider only flights from 2008.</p></li>
 <span class="c1"># Sampling for faster computation.</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">flights</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sample.html#pandas.DataFrame.sample" title="pandas.DataFrame.sample" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">flights</span><span class="o">.</span><span class="n">sample</span></a><span class="p">(</span><span class="mi">20_000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">flights</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:687: UserWarning: Could not find the dataset &#39;41771418&#39; locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_41771418.parquet.
+  info = _fetch_figshare(dataset_id, data_directory)
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -740,6 +768,10 @@ and location (longitude, latitude).</p></li>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">airports</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:687: UserWarning: Could not find the dataset &#39;41710257&#39; locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_41710257.parquet.
+  info = _fetch_figshare(dataset_id, data_directory)
+</pre></div>
+</div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>
 <style scoped>
@@ -840,6 +872,10 @@ Here, we consider only weather measurements from 2008.</p></li>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">weather</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:687: UserWarning: Could not find the dataset &#39;41771457&#39; locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_41771457.parquet.
+  info = _fetch_figshare(dataset_id, data_directory)
+</pre></div>
+</div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>
 <style scoped>
@@ -869,9 +905,9 @@ Here, we consider only weather measurements from 2008.</p></li>
   <tbody>
     <tr>
       <th>0</th>
-      <td>ASN00041037</td>
-      <td>2008-06-18</td>
-      <td>NaN</td>
+      <td>GME00127822</td>
+      <td>2008-08-29</td>
+      <td>206.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
@@ -885,25 +921,25 @@ Here, we consider only weather measurements from 2008.</p></li>
     </tr>
     <tr>
       <th>2</th>
-      <td>US1ILSP0008</td>
-      <td>2008-08-19</td>
+      <td>MXN00015282</td>
+      <td>2008-10-30</td>
+      <td>211.0</td>
+      <td>0.0</td>
       <td>NaN</td>
-      <td>0.0</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>USC00164931</td>
-      <td>2008-10-05</td>
+      <td>EN000026038</td>
+      <td>2008-12-17</td>
+      <td>-19.0</td>
+      <td>3.0</td>
       <td>NaN</td>
-      <td>0.0</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>NOE00111309</td>
-      <td>2008-08-18</td>
-      <td>NaN</td>
+      <td>ASN00086351</td>
+      <td>2008-10-29</td>
+      <td>229.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
@@ -918,6 +954,10 @@ measurement stations in the US.</p></li>
 </ul>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">stations</span></a> <span class="o">=</span> <span class="n">fetch_figshare</span><span class="p">(</span><span class="s2">&quot;41710524&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">stations</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:687: UserWarning: Could not find the dataset &#39;41710524&#39; locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_41710524.parquet.
+  info = _fetch_figshare(dataset_id, data_directory)
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -1062,33 +1102,33 @@ measurement stations in the US.</p></li>
   <tbody>
     <tr>
       <th>0</th>
-      <td>AE000041196</td>
-      <td>25.333</td>
-      <td>55.517</td>
-      <td>34.0</td>
-      <td>SHARJAH INTER. AIRP</td>
+      <td>AEM00041194</td>
+      <td>25.255</td>
+      <td>55.364</td>
+      <td>10.4</td>
+      <td>DUBAI INTL</td>
       <td>None</td>
-      <td>GSN</td>
-      <td>41196.0</td>
+      <td>None</td>
+      <td>41194.0</td>
       <td>NaN</td>
-      <td>2008-08-15</td>
-      <td>422.0</td>
+      <td>2008-07-24</td>
+      <td>453.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>AE000041196</td>
-      <td>25.333</td>
-      <td>55.517</td>
-      <td>34.0</td>
-      <td>SHARJAH INTER. AIRP</td>
+      <td>AEM00041194</td>
+      <td>25.255</td>
+      <td>55.364</td>
+      <td>10.4</td>
+      <td>DUBAI INTL</td>
       <td>None</td>
-      <td>GSN</td>
-      <td>41196.0</td>
+      <td>None</td>
+      <td>41194.0</td>
       <td>NaN</td>
-      <td>2008-05-08</td>
-      <td>374.0</td>
+      <td>2008-01-21</td>
+      <td>221.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
@@ -1103,41 +1143,41 @@ measurement stations in the US.</p></li>
       <td>None</td>
       <td>41194.0</td>
       <td>NaN</td>
-      <td>2008-04-04</td>
-      <td>288.0</td>
+      <td>2008-06-21</td>
+      <td>393.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
+      <td>AEM00041217</td>
+      <td>24.433</td>
+      <td>54.651</td>
+      <td>26.8</td>
+      <td>ABU DHABI INTL</td>
       <td>None</td>
       <td>None</td>
-      <td>41194.0</td>
+      <td>41217.0</td>
       <td>NaN</td>
-      <td>2008-05-21</td>
-      <td>365.0</td>
-      <td>0.0</td>
+      <td>2008-03-03</td>
+      <td>305.0</td>
+      <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
+      <td>AEM00041217</td>
+      <td>24.433</td>
+      <td>54.651</td>
+      <td>26.8</td>
+      <td>ABU DHABI INTL</td>
       <td>None</td>
       <td>None</td>
-      <td>41194.0</td>
+      <td>41217.0</td>
       <td>NaN</td>
-      <td>2008-01-21</td>
-      <td>221.0</td>
-      <td>0.0</td>
+      <td>2008-07-18</td>
+      <td>419.0</td>
+      <td>NaN</td>
       <td>NaN</td>
     </tr>
   </tbody>
@@ -1203,17 +1243,17 @@ tables into one.</p>
   <tbody>
     <tr>
       <th>0</th>
-      <td>AE000041196</td>
-      <td>25.333</td>
-      <td>55.517</td>
-      <td>34.0</td>
-      <td>SHARJAH INTER. AIRP</td>
+      <td>AEM00041194</td>
+      <td>25.255</td>
+      <td>55.364</td>
+      <td>10.4</td>
+      <td>DUBAI INTL</td>
       <td>None</td>
-      <td>GSN</td>
-      <td>41196.0</td>
+      <td>None</td>
+      <td>41194.0</td>
       <td>NaN</td>
-      <td>2008-08-15</td>
-      <td>422.0</td>
+      <td>2008-07-24</td>
+      <td>453.0</td>
       <td>0.0</td>
       <td>NaN</td>
       <td>ROP</td>
@@ -1223,90 +1263,12 @@ tables into one.</p>
       <td>Thailand</td>
       <td>14.078333</td>
       <td>101.378334</td>
-      <td>2.418438</td>
-      <td>3.314383</td>
+      <td>2.418781</td>
+      <td>3.314853</td>
       <td>True</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>AE000041196</td>
-      <td>25.333</td>
-      <td>55.517</td>
-      <td>34.0</td>
-      <td>SHARJAH INTER. AIRP</td>
-      <td>None</td>
-      <td>GSN</td>
-      <td>41196.0</td>
-      <td>NaN</td>
-      <td>2008-05-08</td>
-      <td>374.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>ROP</td>
-      <td>Prachinburi</td>
-      <td>None</td>
-      <td>None</td>
-      <td>Thailand</td>
-      <td>14.078333</td>
-      <td>101.378334</td>
-      <td>2.418438</td>
-      <td>3.314383</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
-      <td>None</td>
-      <td>None</td>
-      <td>41194.0</td>
-      <td>NaN</td>
-      <td>2008-04-04</td>
-      <td>288.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>ROP</td>
-      <td>Prachinburi</td>
-      <td>None</td>
-      <td>None</td>
-      <td>Thailand</td>
-      <td>14.078333</td>
-      <td>101.378334</td>
-      <td>2.418781</td>
-      <td>3.314853</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
-      <td>None</td>
-      <td>None</td>
-      <td>41194.0</td>
-      <td>NaN</td>
-      <td>2008-05-21</td>
-      <td>365.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>ROP</td>
-      <td>Prachinburi</td>
-      <td>None</td>
-      <td>None</td>
-      <td>Thailand</td>
-      <td>14.078333</td>
-      <td>101.378334</td>
-      <td>2.418781</td>
-      <td>3.314853</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>4</th>
       <td>AEM00041194</td>
       <td>25.255</td>
       <td>55.364</td>
@@ -1329,6 +1291,84 @@ tables into one.</p>
       <td>101.378334</td>
       <td>2.418781</td>
       <td>3.314853</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AEM00041194</td>
+      <td>25.255</td>
+      <td>55.364</td>
+      <td>10.4</td>
+      <td>DUBAI INTL</td>
+      <td>None</td>
+      <td>None</td>
+      <td>41194.0</td>
+      <td>NaN</td>
+      <td>2008-06-21</td>
+      <td>393.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>ROP</td>
+      <td>Prachinburi</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Thailand</td>
+      <td>14.078333</td>
+      <td>101.378334</td>
+      <td>2.418781</td>
+      <td>3.314853</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AEM00041217</td>
+      <td>24.433</td>
+      <td>54.651</td>
+      <td>26.8</td>
+      <td>ABU DHABI INTL</td>
+      <td>None</td>
+      <td>None</td>
+      <td>41217.0</td>
+      <td>NaN</td>
+      <td>2008-03-03</td>
+      <td>305.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ROP</td>
+      <td>Prachinburi</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Thailand</td>
+      <td>14.078333</td>
+      <td>101.378334</td>
+      <td>2.392029</td>
+      <td>3.278190</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AEM00041217</td>
+      <td>24.433</td>
+      <td>54.651</td>
+      <td>26.8</td>
+      <td>ABU DHABI INTL</td>
+      <td>None</td>
+      <td>None</td>
+      <td>41217.0</td>
+      <td>NaN</td>
+      <td>2008-07-18</td>
+      <td>419.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>ROP</td>
+      <td>Prachinburi</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Thailand</td>
+      <td>14.078333</td>
+      <td>101.378334</td>
+      <td>2.392029</td>
+      <td>3.278190</td>
       <td>True</td>
     </tr>
   </tbody>
@@ -1576,10 +1616,8 @@ Name: count, dtype: int64
   warnings.warn(
 /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [0] during transform. These unknown categories will be encoded as all zeros
   warnings.warn(
-/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [0] during transform. These unknown categories will be encoded as all zeros
-  warnings.warn(
 
-np.float64(0.5871500000000001)
+np.float64(0.59135)
 </pre></div>
 </div>
 </section>
@@ -1589,10 +1627,10 @@ np.float64(0.5871500000000001)
 on imprecise and multiple-key correspondences.
 This is made easy by skrub’s <a class="reference internal" href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> transformer.</p>
 <p>Our final cross-validated accuracy score is 0.58.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (7 minutes 47.633 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (7 minutes 58.551 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-07-multiple-key-join-py">
 <div class="binder-badge docutils container">
-<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.3.0?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.3.1?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
 </a>
 </div>
 <div class="lite-badge docutils container">
@@ -1672,26 +1710,69 @@ This is made easy by skrub’s <a class="reference internal" href="../reference/
 
   <div class="sidebar-secondary-item">
 
-  
-  <div class="tocsection editthispage">
-    <a href="https://github.com/skrub-data/skrub/edit/main/doc/auto_examples/07_multiple_key_join.rst">
-      <i class="fa-solid fa-pencil"></i>
-      
-      
-        
-          Edit on GitHub
-        
-      
+  <div class="tocsection sourcelink">
+    <a href="../_sources/auto_examples/07_multiple_key_join.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
 </div>
 
   <div class="sidebar-secondary-item">
 
-  <div class="tocsection sourcelink">
-    <a href="../_sources/auto_examples/07_multiple_key_join.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
+
+  <div class="sphx-glr-sidebar-component">
+    
+      
+        <div class="sphx-glr-sidebar-item sphx-glr-download-python-sidebar" title="07_multiple_key_join.py">
+          <a download href="../_downloads/cc8ab1ea72a26d9e8521072ed5f0a86f/07_multiple_key_join.py">
+            <i class="fa-solid fa-download"></i>
+            Download source code
+          </a>
+        </div>
+      
+    
+      
+        <div class="sphx-glr-sidebar-item sphx-glr-download-jupyter-sidebar" title="07_multiple_key_join.ipynb">
+          <a download href="../_downloads/fb7b9b6c1c5f7002e4b82aee06e28f4a/07_multiple_key_join.ipynb">
+            <i class="fa-solid fa-download"></i>
+            Download Jupyter notebook
+          </a>
+        </div>
+      
+    
+      
+        <div class="sphx-glr-sidebar-item sphx-glr-download-zip-sidebar" title="07_multiple_key_join.zip">
+          <a download href="../_downloads/970f51f4bf1a2b1a24e01a2eb2f41575/07_multiple_key_join.zip">
+            <i class="fa-solid fa-download"></i>
+            Download zipped
+          </a>
+        </div>
+      
+    
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+
+  <div class="sphx-glr-sidebar-component">
+    
+      
+        <div class="sphx-glr-sidebar-item lite-badge-sidebar">
+          <a href="../lite/lab/index.html?path=auto_examples/07_multiple_key_join.ipynb">
+            <img src="../_images/jupyterlite_badge_logo.svg" alt="Launch JupyterLite">
+          </a>
+        </div>
+      
+    
+      
+        <div class="sphx-glr-sidebar-item binder-badge-sidebar">
+          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/0.3.1?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb">
+            <img src="../_images/binder_badge_logo.svg" alt="Launch binder">
+          </a>
+        </div>
+      
+    
   </div>
 </div>
 
@@ -1729,7 +1810,7 @@ This is made easy by skrub’s <a class="reference internal" href="../reference/
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
     <br/>
   </p>
 </div>
