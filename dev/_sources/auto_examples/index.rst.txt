@@ -149,7 +149,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="MovieLens is a famous movie dataset used for both explicit and implicit recommender systems. It provides a main table, &quot;ratings&quot;, that can be viewed as logs or transactions, comprised of only 4 columns: userId, movieId, rating and timestamp. MovieLens also gives a contextual table &quot;movies&quot;, including movieId, title and types, to enable content-based feature extraction.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Many problems involve tables whose entities have a one-to-many relationship. To simplify aggregate-then-join operations for machine learning, we can include the |AggJoiner| in our pipeline.">
 
 .. only:: html
 
@@ -160,7 +160,7 @@ Examples
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Self-aggregation on MovieLens</div>
+      <div class="sphx-glr-thumbnail-title">AggJoiner on a credit fraud dataset</div>
     </div>
 
 

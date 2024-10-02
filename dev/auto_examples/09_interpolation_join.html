@@ -69,7 +69,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Release history" href="../CHANGES.html" />
-    <link rel="prev" title="Self-aggregation on MovieLens" href="08_join_aggregation.html" />
+    <link rel="prev" title="AggJoiner on a credit fraud dataset" href="08_join_aggregation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -522,7 +522,7 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="05_deduplication.html">Deduplicating misspelled categories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06_ken_embeddings.html">Wikipedia embeddings to enrich the data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_multiple_key_join.html">Spatial join for flight data: Joining across multiple columns</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08_join_aggregation.html">Self-aggregation on MovieLens</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_join_aggregation.html">AggJoiner on a credit fraud dataset</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Interpolation join: infer missing rows when joining two tables</a></li>
 </ul>
 </div>
@@ -858,9 +858,9 @@ to the right side table column names.</p>
       <td>42.6</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>34.183906</td>
-      <td>124.246443</td>
-      <td>-0.112125</td>
+      <td>34.016554</td>
+      <td>60.221732</td>
+      <td>0.146801</td>
     </tr>
     <tr>
       <th>1</th>
@@ -870,9 +870,9 @@ to the right side table column names.</p>
       <td>26.9</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>26.629333</td>
-      <td>119.756086</td>
-      <td>-0.259413</td>
+      <td>27.389339</td>
+      <td>83.225358</td>
+      <td>0.440140</td>
     </tr>
     <tr>
       <th>2</th>
@@ -882,9 +882,9 @@ to the right side table column names.</p>
       <td>41.6</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>31.427162</td>
-      <td>40.189516</td>
-      <td>-0.112125</td>
+      <td>31.310463</td>
+      <td>19.196909</td>
+      <td>0.146801</td>
     </tr>
     <tr>
       <th>3</th>
@@ -894,9 +894,9 @@ to the right side table column names.</p>
       <td>46.6</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>33.554547</td>
-      <td>77.042921</td>
-      <td>-0.112125</td>
+      <td>33.429145</td>
+      <td>53.017047</td>
+      <td>0.146801</td>
     </tr>
     <tr>
       <th>4</th>
@@ -906,9 +906,9 @@ to the right side table column names.</p>
       <td>36.1</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>29.501742</td>
-      <td>20.919705</td>
-      <td>-0.116241</td>
+      <td>30.312918</td>
+      <td>36.310926</td>
+      <td>0.262846</td>
     </tr>
   </tbody>
 </table>
@@ -1026,7 +1026,7 @@ maximum daily temperature.</p>
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>1.109560</td>
+      <td>1.867857</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1038,7 +1038,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>21.157291</td>
+      <td>21.181435</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1050,7 +1050,7 @@ maximum daily temperature.</p>
       <td>NC</td>
       <td>36.097747</td>
       <td>-79.937297</td>
-      <td>17.450496</td>
+      <td>17.180010</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1062,7 +1062,7 @@ maximum daily temperature.</p>
       <td>IL</td>
       <td>41.979595</td>
       <td>-87.904464</td>
-      <td>15.662476</td>
+      <td>16.801401</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1074,7 +1074,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>15.099532</td>
+      <td>13.456575</td>
     </tr>
   </tbody>
 </table>
@@ -1095,11 +1095,11 @@ Washington, Minnesota.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -3.644300
-WA    0.415551
-MT    0.480678
-ND    1.117037
-MN    1.455587
+AK   -3.732601
+MT    0.159955
+WA    0.739974
+ND    0.951557
+MN    1.410564
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1109,11 +1109,11 @@ Florida, Louisiana.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-LA    21.578521
-FL    24.544186
-HI    26.556188
-VI    28.352946
-PR    28.972430
+LA    21.831033
+FL    24.815112
+HI    27.092572
+VI    30.370775
+PR    30.971560
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1151,7 +1151,7 @@ would contain, rather than by searching for an actual match. It is a generalizat
 the <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an
 <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor
 estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.349 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.611 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-09-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/09_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
@@ -1191,7 +1191,7 @@ estimators.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Self-aggregation on MovieLens</p>
+        <p class="prev-next-title">AggJoiner on a credit fraud dataset</p>
       </div>
     </a>
     <a class="right-next"
