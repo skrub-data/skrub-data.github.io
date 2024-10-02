@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**10:15.019** total execution time for 10 files **from auto_examples**:
+**09:51.066** total execution time for 10 files **from auto_examples**:
 
 .. container::
 
@@ -33,32 +33,32 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_07_multiple_key_join.py` (``07_multiple_key_join.py``)
-     - 07:20.580
+     - 06:51.366
      - 0.0
    * - :ref:`sphx_glr_auto_examples_01_encodings.py` (``01_encodings.py``)
-     - 01:03.564
+     - 01:07.680
      - 0.0
    * - :ref:`sphx_glr_auto_examples_06_ken_embeddings.py` (``06_ken_embeddings.py``)
-     - 01:00.658
+     - 01:00.385
      - 0.0
    * - :ref:`sphx_glr_auto_examples_08_join_aggregation.py` (``08_join_aggregation.py``)
-     - 00:16.938
+     - 00:17.205
      - 0.0
    * - :ref:`sphx_glr_auto_examples_04_fuzzy_joining.py` (``04_fuzzy_joining.py``)
-     - 00:10.647
+     - 00:11.223
      - 0.0
    * - :ref:`sphx_glr_auto_examples_00_getting_started.py` (``00_getting_started.py``)
-     - 00:05.937
+     - 00:06.087
      - 0.0
    * - :ref:`sphx_glr_auto_examples_03_datetime_encoder.py` (``03_datetime_encoder.py``)
-     - 00:05.456
+     - 00:05.571
      - 0.0
    * - :ref:`sphx_glr_auto_examples_09_interpolation_join.py` (``09_interpolation_join.py``)
-     - 00:05.054
+     - 00:05.349
      - 0.0
    * - :ref:`sphx_glr_auto_examples_05_deduplication.py` (``05_deduplication.py``)
-     - 00:04.615
+     - 00:04.562
      - 0.0
    * - :ref:`sphx_glr_auto_examples_02_feature_interpretation_with_gapencoder.py` (``02_feature_interpretation_with_gapencoder.py``)
-     - 00:01.570
+     - 00:01.639
      - 0.0
