@@ -81,8 +81,8 @@ To quickly get an overview of a dataframe's contents, use the
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_8f33676a-wrapper" hidden>
-        <template id="report_8f33676a-template">
+    <div id="report_8208522d-wrapper" hidden>
+        <template id="report_8208522d-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1235,7 +1235,7 @@ To quickly get an overview of a dataframe's contents, use the
     </div>
     </div>
 
-        <div class="horizontal-scroll">
+        <div class="horizontal-scroll" tabindex="-1">
             <table class="pure-table pure-table-striped table-with-selectable-cells"
                    data-manager="SampleTable"
             data-start-i="-2"
@@ -1251,7 +1251,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="5b41336f"
+                    id="3bc44399"
                     class="table-cell ellided-short "
                 
                     data-role="padding"
@@ -1281,7 +1281,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="d2f48227"
+                    id="808912aa"
                     class="table-cell ellided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1315,7 +1315,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="670cc6e5"
+                    id="a679742d"
                     class="table-cell ellided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1349,7 +1349,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="b2bf6696"
+                    id="dfd380ba"
                     class="table-cell ellided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1383,7 +1383,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="43207507"
+                    id="86c84722"
                     class="table-cell ellided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1417,7 +1417,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="132a63ab"
+                    id="36e77063"
                     class="table-cell ellided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1451,7 +1451,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="87b6a26c"
+                    id="b7b0493b"
                     class="table-cell ellided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1485,7 +1485,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="6b4fe8b1"
+                    id="2026d1ef"
                     class="table-cell ellided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1519,7 +1519,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="65ca778f"
+                    id="11c376d7"
                     class="table-cell ellided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1567,7 +1567,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="dc105e36"
+                    id="0ff7486c"
                     class="table-cell ellided-short clickable"
                 
                     data-role="index-level-value"
@@ -1595,7 +1595,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="b124e485"
+                    id="04632ad4"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1625,7 +1625,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="c9ebcda8"
+                    id="67e411d5"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1655,7 +1655,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="16a9a019"
+                    id="b8f84c1a"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1685,7 +1685,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="b075626a"
+                    id="3f082240"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1715,7 +1715,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="83e4a0f4"
+                    id="250810e9"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1745,7 +1745,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="218fba1b"
+                    id="e167554b"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1775,7 +1775,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="1147ae3a"
+                    id="bf39dc02"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1805,7 +1805,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="b758f62a"
+                    id="c4e1f96f"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1839,7 +1839,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="d3a62ad5"
+                    id="d75da04b"
                     class="table-cell ellided-short clickable"
                 
                     data-role="index-level-value"
@@ -1867,7 +1867,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="6d8be9fb"
+                    id="adf40694"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1897,7 +1897,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="e565a01c"
+                    id="2b313946"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1927,7 +1927,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="55d57cbe"
+                    id="c735281d"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1957,7 +1957,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="3a78c76c"
+                    id="4746dc68"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1987,7 +1987,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="36b0e4e0"
+                    id="710a7527"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2017,7 +2017,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="138efc1e"
+                    id="7aaf9ea8"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2047,7 +2047,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="6fbd6412"
+                    id="d3d62b00"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2077,7 +2077,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="810aa355"
+                    id="60f0748a"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2111,7 +2111,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="713dd70e"
+                    id="1b0e25dd"
                     class="table-cell ellided-short clickable"
                 
                     data-role="index-level-value"
@@ -2139,7 +2139,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="a86d61b4"
+                    id="e84b18a3"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2169,7 +2169,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="d8542757"
+                    id="72207c39"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2199,7 +2199,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="97bbdf8a"
+                    id="8e2ec50b"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2229,7 +2229,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="9e2d562a"
+                    id="e8ab81aa"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2259,7 +2259,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="f9c87023"
+                    id="d41da127"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2289,7 +2289,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="eb5982da"
+                    id="d614c6a1"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2319,7 +2319,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="ed84e730"
+                    id="a17f66d3"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2349,7 +2349,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="686943d1"
+                    id="e414af6f"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2383,7 +2383,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="dc287fbd"
+                    id="bbc7d0c1"
                     class="table-cell ellided-short clickable"
                 
                     data-role="index-level-value"
@@ -2411,7 +2411,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="ac125269"
+                    id="957bd27d"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2441,7 +2441,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="45c7bf39"
+                    id="3c42d00d"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2471,7 +2471,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="840228ce"
+                    id="cbedcf25"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2501,7 +2501,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="f4937e49"
+                    id="4a1c854b"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2531,7 +2531,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="2c3ba462"
+                    id="57a294da"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2561,7 +2561,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="8f648566"
+                    id="79907297"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2591,7 +2591,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="55bbac52"
+                    id="380eb64d"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2621,7 +2621,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="57729fe0"
+                    id="b6ae9c84"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2655,7 +2655,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="67cd5b78"
+                    id="ee9d7e0e"
                     class="table-cell ellided-short clickable"
                 
                     data-role="index-level-value"
@@ -2683,7 +2683,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="f5e2867d"
+                    id="d30613ed"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2713,7 +2713,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="eabbc5b6"
+                    id="fef493dd"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2743,7 +2743,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="24241de0"
+                    id="120097fb"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2773,7 +2773,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="31185806"
+                    id="b72822b0"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2803,7 +2803,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="cde39951"
+                    id="cb7b92d0"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2833,7 +2833,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="bb43407a"
+                    id="dc67236e"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2863,7 +2863,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="6344dc3c"
+                    id="563f55d7"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2893,7 +2893,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="8c8e8271"
+                    id="a29f4ba8"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3027,7 +3027,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="d46655d6"
+                    id="280397b7"
                     class="table-cell ellided-short clickable"
                 
                     data-role="index-level-value"
@@ -3055,7 +3055,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="ab709e09"
+                    id="b4db882f"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3085,7 +3085,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="70400d5e"
+                    id="e1191935"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3115,7 +3115,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="1dccec3a"
+                    id="bdf84812"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3145,7 +3145,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="4d1e19ab"
+                    id="16ef9dee"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3175,7 +3175,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="cab22cb5"
+                    id="0d2851c3"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3205,7 +3205,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="b794090c"
+                    id="621783db"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3235,7 +3235,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="707667c5"
+                    id="1b6735d9"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3265,7 +3265,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="d41c6452"
+                    id="0b8b21bb"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3299,7 +3299,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="c8baab27"
+                    id="11b91d5d"
                     class="table-cell ellided-short clickable"
                 
                     data-role="index-level-value"
@@ -3327,7 +3327,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="c12e4237"
+                    id="97270bb5"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3357,7 +3357,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="a8b4bce5"
+                    id="f24bb503"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3387,7 +3387,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="af189589"
+                    id="cff4beb5"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3417,7 +3417,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="f869a696"
+                    id="844bf405"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3447,7 +3447,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="81dfa0d2"
+                    id="db7442d9"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3477,7 +3477,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="2705525d"
+                    id="aa16c870"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3507,7 +3507,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="c26bc523"
+                    id="877a1cff"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3537,7 +3537,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="e02e524f"
+                    id="3aabc5a1"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3571,7 +3571,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="771c54dc"
+                    id="1e4995e9"
                     class="table-cell ellided-short clickable"
                 
                     data-role="index-level-value"
@@ -3599,7 +3599,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="b45e01c3"
+                    id="323c6d49"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3629,7 +3629,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="e384c123"
+                    id="c92d86a6"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3659,7 +3659,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="e268b37f"
+                    id="1af56de4"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3689,7 +3689,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="6ad849a0"
+                    id="1a19b687"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3719,7 +3719,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="f337e9a2"
+                    id="bb8fa465"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3749,7 +3749,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="83becab5"
+                    id="d859f246"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3779,7 +3779,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="241951b0"
+                    id="c1b8a65c"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3809,7 +3809,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="21ca77dc"
+                    id="411af35b"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3843,7 +3843,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="e8d325e8"
+                    id="bdd493e2"
                     class="table-cell ellided-short clickable"
                 
                     data-role="index-level-value"
@@ -3871,7 +3871,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="8d534225"
+                    id="1389b15d"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3901,7 +3901,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="c8b9ed1b"
+                    id="5f12ade6"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3931,7 +3931,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="e6ca7d69"
+                    id="4de3ec06"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3961,7 +3961,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="b59ce6e9"
+                    id="36a970cd"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3991,7 +3991,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="680fbc57"
+                    id="d71ebf53"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4021,7 +4021,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="ae2a8f9a"
+                    id="67b4b814"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4051,7 +4051,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="5df42e55"
+                    id="14c44f76"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4081,7 +4081,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="e84f0aac"
+                    id="2e1de101"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4115,7 +4115,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <th
-                    id="6aa602d3"
+                    id="a91d1373"
                     class="table-cell ellided-short clickable"
                 
                     data-role="index-level-value"
@@ -4143,7 +4143,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="bf43f8e6"
+                    id="ebc64527"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4173,7 +4173,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="f241e480"
+                    id="7978f851"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4203,7 +4203,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="94974136"
+                    id="062959d6"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4233,7 +4233,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="478505b3"
+                    id="1494e599"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4263,7 +4263,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="9b51ce1c"
+                    id="10e82a3c"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4293,7 +4293,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="19a8bfa0"
+                    id="b528e4c8"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4323,7 +4323,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="d3a50f22"
+                    id="f6d72a70"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4353,7 +4353,7 @@ To quickly get an overview of a dataframe's contents, use the
                 
                 
                     <td
-                    id="8ded31a5"
+                    id="d431b99b"
                     class="table-cell ellided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4477,7 +4477,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.238844</dc:date>
+        <dc:date>2024-10-07T09:14:11.743688</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -4514,7 +4514,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 69.493228 23.054545 
     L 22.828125 23.054545 
     z
-    " clip-path="url(#p2c571043f3)" style="fill: #ee854a"/>
+    " clip-path="url(#p02f30c19f4)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 22.828125 20.145455 
@@ -4522,18 +4522,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 91.399554 8.509091 
     L 22.828125 8.509091 
     z
-    " clip-path="url(#p2c571043f3)" style="fill: #ee854a"/>
+    " clip-path="url(#p02f30c19f4)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mc5cdd592c6" d="M 0 0 
+           <path id="m229be506ad" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mc5cdd592c6" x="22.828125" y="36" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m229be506ad" x="22.828125" y="36" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -4569,7 +4569,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mc5cdd592c6" x="85.381882" y="36" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m229be506ad" x="85.381882" y="36" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -4614,12 +4614,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="m8d2c54461d" d="M 0 0 
+           <path id="m8410c5d27c" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m8d2c54461d" x="22.828125" y="28.872727" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8410c5d27c" x="22.828125" y="28.872727" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -4647,7 +4647,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#m8d2c54461d" x="22.828125" y="14.327273" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8410c5d27c" x="22.828125" y="14.327273" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -4819,7 +4819,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p2c571043f3">
+      <clipPath id="p02f30c19f4">
        <rect x="22.828125" y="7.2" width="72" height="28.8"/>
       </clipPath>
      </defs>
@@ -4959,7 +4959,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.334795</dc:date>
+        <dc:date>2024-10-07T09:14:11.821378</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -4996,7 +4996,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 42.696648 149.086214 
     L 36.003125 149.086214 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 36.003125 146.4146 
@@ -5004,7 +5004,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 44.221284 135.728144 
     L 36.003125 135.728144 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 36.003125 133.056529 
@@ -5012,7 +5012,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 49.947965 122.370073 
     L 36.003125 122.370073 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 36.003125 119.698459 
@@ -5020,7 +5020,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 51.026366 109.012003 
     L 36.003125 109.012003 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 36.003125 106.340388 
@@ -5028,7 +5028,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 51.175111 95.653932 
     L 36.003125 95.653932 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 36.003125 92.982318 
@@ -5036,7 +5036,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 53.926893 82.295862 
     L 36.003125 82.295862 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 36.003125 79.624247 
@@ -5044,7 +5044,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 81.593457 68.937791 
     L 36.003125 68.937791 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 36.003125 66.266177 
@@ -5052,7 +5052,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 84.754287 55.579721 
     L 36.003125 55.579721 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 36.003125 52.908106 
@@ -5060,7 +5060,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 93.864916 42.22165 
     L 36.003125 42.22165 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_12">
         <path d="M 36.003125 39.550036 
@@ -5068,18 +5068,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 104.574554 28.86358 
     L 36.003125 28.86358 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mdc591e0532" d="M 0 0 
+           <path id="m6505f9c8a0" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mdc591e0532" x="36.003125" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6505f9c8a0" x="36.003125" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -5115,7 +5115,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mdc591e0532" x="73.189366" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6505f9c8a0" x="73.189366" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -5149,12 +5149,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="ma19f9541db" d="M 0 0 
+           <path id="m3f7c52b517" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -5230,7 +5230,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -5287,7 +5287,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -5352,7 +5352,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -5394,7 +5394,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -5432,7 +5432,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -5498,7 +5498,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -5526,7 +5526,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -5541,7 +5541,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -5556,7 +5556,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -6159,7 +6159,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p5df6ed8152">
+      <clipPath id="pa48ad6c2d0">
        <rect x="36.003125" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -6475,7 +6475,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.456380</dc:date>
+        <dc:date>2024-10-07T09:14:11.928313</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -6512,7 +6512,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 195.135711 149.086214 
     L 188.442187 149.086214 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 188.442187 146.4146 
@@ -6520,7 +6520,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 196.660347 135.728144 
     L 188.442187 135.728144 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 188.442187 133.056529 
@@ -6528,7 +6528,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 202.387028 122.370073 
     L 188.442187 122.370073 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 188.442187 119.698459 
@@ -6536,7 +6536,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 203.465429 109.012003 
     L 188.442187 109.012003 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 188.442187 106.340388 
@@ -6544,7 +6544,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 203.614174 95.653932 
     L 188.442187 95.653932 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 188.442187 92.982318 
@@ -6552,7 +6552,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 206.365956 82.295862 
     L 188.442187 82.295862 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 188.442187 79.624247 
@@ -6560,7 +6560,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 234.032519 68.937791 
     L 188.442187 68.937791 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 188.442187 66.266177 
@@ -6568,7 +6568,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 237.19335 55.579721 
     L 188.442187 55.579721 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 188.442187 52.908106 
@@ -6576,7 +6576,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 246.303979 42.22165 
     L 188.442187 42.22165 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_12">
         <path d="M 188.442187 39.550036 
@@ -6584,18 +6584,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 257.013616 28.86358 
     L 188.442187 28.86358 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m4aeae2160c" d="M 0 0 
+           <path id="ma4c7aebd09" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m4aeae2160c" x="188.442187" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#ma4c7aebd09" x="188.442187" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -6631,7 +6631,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m4aeae2160c" x="225.628429" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#ma4c7aebd09" x="225.628429" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -6665,12 +6665,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="ma13ffc009f" d="M 0 0 
+           <path id="mcfe84ca2a4" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -6907,7 +6907,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -7204,7 +7204,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -7312,7 +7312,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -7381,7 +7381,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -7470,7 +7470,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -7567,7 +7567,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -7620,7 +7620,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -7671,7 +7671,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -7730,7 +7730,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -8114,7 +8114,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p3c2a2bd8ef">
+      <clipPath id="p2247b18957">
        <rect x="188.442187" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -8430,7 +8430,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.595345</dc:date>
+        <dc:date>2024-10-07T09:14:12.042825</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -8467,7 +8467,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 196.140402 149.086214 
     L 165.054688 149.086214 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 165.054688 146.4146 
@@ -8475,7 +8475,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 198.883259 135.728144 
     L 165.054688 135.728144 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 165.054688 133.056529 
@@ -8483,7 +8483,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 199.568973 122.370073 
     L 165.054688 122.370073 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 165.054688 119.698459 
@@ -8491,7 +8491,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 200.940402 109.012003 
     L 165.054688 109.012003 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 165.054688 106.340388 
@@ -8499,7 +8499,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 203.683259 95.653932 
     L 165.054688 95.653932 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 165.054688 92.982318 
@@ -8507,7 +8507,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 207.568973 82.295862 
     L 165.054688 82.295862 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 165.054688 79.624247 
@@ -8515,7 +8515,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 216.71183 68.937791 
     L 165.054688 68.937791 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 165.054688 66.266177 
@@ -8523,7 +8523,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 228.597545 55.579721 
     L 165.054688 55.579721 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 165.054688 52.908106 
@@ -8531,7 +8531,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 233.397545 42.22165 
     L 165.054688 42.22165 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_12">
         <path d="M 165.054688 39.550036 
@@ -8539,18 +8539,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 233.626116 28.86358 
     L 165.054688 28.86358 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m292344f798" d="M 0 0 
+           <path id="m03598a9307" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m292344f798" x="165.054688" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m03598a9307" x="165.054688" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -8586,7 +8586,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m292344f798" x="210.768973" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m03598a9307" x="210.768973" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -8629,12 +8629,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="mc7e334d63f" d="M 0 0 
+           <path id="m6fc1211052" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -9000,7 +9000,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -9159,7 +9159,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -9228,7 +9228,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -9342,7 +9342,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -9449,7 +9449,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -9522,7 +9522,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -9634,7 +9634,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -9727,7 +9727,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -9768,7 +9768,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -10148,7 +10148,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p1fa98527ff">
+      <clipPath id="p8094740ef5">
        <rect x="165.054688" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -10464,7 +10464,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.687541</dc:date>
+        <dc:date>2024-10-07T09:14:12.122149</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -10501,7 +10501,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 105.30678 23.054545 
     L 98.49375 23.054545 
     z
-    " clip-path="url(#p317e33f1ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p4943b8f9a7)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 98.49375 20.145455 
@@ -10509,18 +10509,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 167.065179 8.509091 
     L 98.49375 8.509091 
     z
-    " clip-path="url(#p317e33f1ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p4943b8f9a7)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m8eba1417af" d="M 0 0 
+           <path id="m9a0cfcb90c" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m8eba1417af" x="98.49375" y="36" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m9a0cfcb90c" x="98.49375" y="36" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -10556,7 +10556,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m8eba1417af" x="139.339252" y="36" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m9a0cfcb90c" x="139.339252" y="36" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -10601,12 +10601,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="m4320aeb708" d="M 0 0 
+           <path id="m768ae32855" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m4320aeb708" x="98.49375" y="28.872727" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m768ae32855" x="98.49375" y="28.872727" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -10894,7 +10894,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#m4320aeb708" x="98.49375" y="14.327273" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m768ae32855" x="98.49375" y="14.327273" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -11069,7 +11069,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p317e33f1ef">
+      <clipPath id="p4943b8f9a7">
        <rect x="98.49375" y="7.2" width="72" height="28.8"/>
       </clipPath>
      </defs>
@@ -11209,7 +11209,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.783286</dc:date>
+        <dc:date>2024-10-07T09:14:12.203129</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -11246,7 +11246,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 198.237115 149.086214 
     L 180.503125 149.086214 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 180.503125 146.4146 
@@ -11254,7 +11254,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 198.881988 135.728144 
     L 180.503125 135.728144 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 180.503125 133.056529 
@@ -11262,7 +11262,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 202.428786 122.370073 
     L 180.503125 122.370073 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 180.503125 119.698459 
@@ -11270,7 +11270,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 202.751222 109.012003 
     L 180.503125 109.012003 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 180.503125 106.340388 
@@ -11278,7 +11278,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 203.933488 95.653932 
     L 180.503125 95.653932 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 180.503125 92.982318 
@@ -11286,7 +11286,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 204.040966 82.295862 
     L 180.503125 82.295862 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 180.503125 79.624247 
@@ -11294,7 +11294,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 206.620456 68.937791 
     L 180.503125 68.937791 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 180.503125 66.266177 
@@ -11302,7 +11302,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 222.204872 55.579721 
     L 180.503125 55.579721 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 180.503125 52.908106 
@@ -11310,7 +11310,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 247.139936 42.22165 
     L 180.503125 42.22165 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_12">
         <path d="M 180.503125 39.550036 
@@ -11318,18 +11318,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 249.074554 28.86358 
     L 180.503125 28.86358 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mba72bb183e" d="M 0 0 
+           <path id="m4f7acc8b94" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mba72bb183e" x="180.503125" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m4f7acc8b94" x="180.503125" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -11365,7 +11365,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mba72bb183e" x="234.242489" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m4f7acc8b94" x="234.242489" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -11409,12 +11409,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="m6df8bf6370" d="M 0 0 
+           <path id="m8dc032dd04" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -11785,7 +11785,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -11900,7 +11900,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -12033,7 +12033,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -12110,7 +12110,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -12220,7 +12220,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -12254,7 +12254,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -12277,7 +12277,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -12312,7 +12312,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -12342,7 +12342,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -12810,7 +12810,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="pbf2acbc778">
+      <clipPath id="p858057ec7a">
        <rect x="180.503125" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -13126,7 +13126,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.916093</dc:date>
+        <dc:date>2024-10-07T09:14:12.329946</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -13163,7 +13163,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 110.45819 149.086214 
     L 71.8375 149.086214 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 71.8375 146.4146 
@@ -13171,7 +13171,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 110.45819 135.728144 
     L 71.8375 135.728144 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 71.8375 133.056529 
@@ -13179,7 +13179,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 111.246367 122.370073 
     L 71.8375 122.370073 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 71.8375 119.698459 
@@ -13187,7 +13187,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 116.763608 109.012003 
     L 71.8375 109.012003 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 71.8375 106.340388 
@@ -13195,7 +13195,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 116.763608 95.653932 
     L 71.8375 95.653932 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 71.8375 92.982318 
@@ -13203,7 +13203,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 119.12814 82.295862 
     L 71.8375 82.295862 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 71.8375 79.624247 
@@ -13211,7 +13211,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 127.009914 68.937791 
     L 71.8375 68.937791 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 71.8375 66.266177 
@@ -13219,7 +13219,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 128.586268 55.579721 
     L 71.8375 55.579721 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 71.8375 52.908106 
@@ -13227,7 +13227,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 137.256219 42.22165 
     L 71.8375 42.22165 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_12">
         <path d="M 71.8375 39.550036 
@@ -13235,18 +13235,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 140.408929 28.86358 
     L 71.8375 28.86358 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m6926d4d437" d="M 0 0 
+           <path id="mb459586a57" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m6926d4d437" x="71.8375" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mb459586a57" x="71.8375" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -13282,7 +13282,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m6926d4d437" x="111.246367" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mb459586a57" x="111.246367" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -13325,12 +13325,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="m8e2fd5c225" d="M 0 0 
+           <path id="m39c35f0c88" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -13471,7 +13471,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -13525,7 +13525,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -13547,7 +13547,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -13590,7 +13590,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -13612,7 +13612,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -13675,7 +13675,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -13697,7 +13697,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -13719,7 +13719,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -13741,7 +13741,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -14197,7 +14197,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p2205166322">
+      <clipPath id="p10eac28dc3">
        <rect x="71.8375" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -14526,7 +14526,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.999645</dc:date>
+        <dc:date>2024-10-07T09:14:12.403889</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -14563,7 +14563,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 59.286364 78.976479 
     L 46.195455 78.976479 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_4">
         <path d="M 59.286364 79.2 
@@ -14571,7 +14571,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 72.377273 78.603943 
     L 59.286364 78.603943 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_5">
         <path d="M 72.377273 79.2 
@@ -14579,7 +14579,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 85.468182 76.691592 
     L 72.377273 76.691592 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_6">
         <path d="M 85.468182 79.2 
@@ -14587,7 +14587,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 98.559091 73.736141 
     L 85.468182 73.736141 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_7">
         <path d="M 98.559091 79.2 
@@ -14595,7 +14595,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 111.65 59.629451 
     L 98.559091 59.629451 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_8">
         <path d="M 111.65 79.2 
@@ -14603,7 +14603,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 124.740909 61.119594 
     L 111.65 61.119594 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_9">
         <path d="M 124.740909 79.2 
@@ -14611,7 +14611,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 137.831818 49.595819 
     L 124.740909 49.595819 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_10">
         <path d="M 137.831818 79.2 
@@ -14619,7 +14619,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 150.922727 36.283872 
     L 137.831818 36.283872 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_11">
         <path d="M 150.922727 79.2 
@@ -14627,7 +14627,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 164.013636 37.550494 
     L 150.922727 37.550494 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_12">
         <path d="M 164.013636 79.2 
@@ -14635,18 +14635,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 177.104545 10.628571 
     L 164.013636 10.628571 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="md2fc9370db" d="M 0 0 
+           <path id="md5389c343c" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#md2fc9370db" x="84.698128" y="79.2" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#md5389c343c" x="84.698128" y="79.2" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -14768,7 +14768,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#md2fc9370db" x="136.035027" y="79.2" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#md5389c343c" x="136.035027" y="79.2" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -14812,12 +14812,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="me42fabb083" d="M 0 0 
+           <path id="m8f726b318c" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#me42fabb083" x="39.65" y="79.2" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8f726b318c" x="39.65" y="79.2" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -14830,7 +14830,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#me42fabb083" x="39.65" y="54.364278" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8f726b318c" x="39.65" y="54.364278" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -14846,7 +14846,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#me42fabb083" x="39.65" y="29.528556" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8f726b318c" x="39.65" y="29.528556" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -14873,7 +14873,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p1252159712">
+      <clipPath id="pd94df8b4e1">
        <rect x="39.65" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -15581,7 +15581,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.238844</dc:date>
+        <dc:date>2024-10-07T09:14:11.743688</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -15618,7 +15618,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 69.493228 23.054545 
     L 22.828125 23.054545 
     z
-    " clip-path="url(#p2c571043f3)" style="fill: #ee854a"/>
+    " clip-path="url(#p02f30c19f4)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 22.828125 20.145455 
@@ -15626,18 +15626,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 91.399554 8.509091 
     L 22.828125 8.509091 
     z
-    " clip-path="url(#p2c571043f3)" style="fill: #ee854a"/>
+    " clip-path="url(#p02f30c19f4)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mc5cdd592c6" d="M 0 0 
+           <path id="m229be506ad" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mc5cdd592c6" x="22.828125" y="36" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m229be506ad" x="22.828125" y="36" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -15673,7 +15673,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mc5cdd592c6" x="85.381882" y="36" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m229be506ad" x="85.381882" y="36" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -15718,12 +15718,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="m8d2c54461d" d="M 0 0 
+           <path id="m8410c5d27c" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m8d2c54461d" x="22.828125" y="28.872727" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8410c5d27c" x="22.828125" y="28.872727" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -15751,7 +15751,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#m8d2c54461d" x="22.828125" y="14.327273" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8410c5d27c" x="22.828125" y="14.327273" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -15923,7 +15923,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p2c571043f3">
+      <clipPath id="p02f30c19f4">
        <rect x="22.828125" y="7.2" width="72" height="28.8"/>
       </clipPath>
      </defs>
@@ -16059,7 +16059,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.334795</dc:date>
+        <dc:date>2024-10-07T09:14:11.821378</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -16096,7 +16096,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 42.696648 149.086214 
     L 36.003125 149.086214 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 36.003125 146.4146 
@@ -16104,7 +16104,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 44.221284 135.728144 
     L 36.003125 135.728144 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 36.003125 133.056529 
@@ -16112,7 +16112,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 49.947965 122.370073 
     L 36.003125 122.370073 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 36.003125 119.698459 
@@ -16120,7 +16120,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 51.026366 109.012003 
     L 36.003125 109.012003 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 36.003125 106.340388 
@@ -16128,7 +16128,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 51.175111 95.653932 
     L 36.003125 95.653932 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 36.003125 92.982318 
@@ -16136,7 +16136,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 53.926893 82.295862 
     L 36.003125 82.295862 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 36.003125 79.624247 
@@ -16144,7 +16144,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 81.593457 68.937791 
     L 36.003125 68.937791 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 36.003125 66.266177 
@@ -16152,7 +16152,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 84.754287 55.579721 
     L 36.003125 55.579721 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 36.003125 52.908106 
@@ -16160,7 +16160,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 93.864916 42.22165 
     L 36.003125 42.22165 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="patch_12">
         <path d="M 36.003125 39.550036 
@@ -16168,18 +16168,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 104.574554 28.86358 
     L 36.003125 28.86358 
     z
-    " clip-path="url(#p5df6ed8152)" style="fill: #ee854a"/>
+    " clip-path="url(#pa48ad6c2d0)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mdc591e0532" d="M 0 0 
+           <path id="m6505f9c8a0" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mdc591e0532" x="36.003125" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6505f9c8a0" x="36.003125" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -16215,7 +16215,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mdc591e0532" x="73.189366" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6505f9c8a0" x="73.189366" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -16249,12 +16249,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="ma19f9541db" d="M 0 0 
+           <path id="m3f7c52b517" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -16330,7 +16330,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -16387,7 +16387,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -16452,7 +16452,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -16494,7 +16494,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -16532,7 +16532,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -16598,7 +16598,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -16626,7 +16626,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -16641,7 +16641,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -16656,7 +16656,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#ma19f9541db" x="36.003125" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m3f7c52b517" x="36.003125" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -17259,7 +17259,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p5df6ed8152">
+      <clipPath id="pa48ad6c2d0">
        <rect x="36.003125" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -17571,7 +17571,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.456380</dc:date>
+        <dc:date>2024-10-07T09:14:11.928313</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -17608,7 +17608,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 195.135711 149.086214 
     L 188.442187 149.086214 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 188.442187 146.4146 
@@ -17616,7 +17616,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 196.660347 135.728144 
     L 188.442187 135.728144 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 188.442187 133.056529 
@@ -17624,7 +17624,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 202.387028 122.370073 
     L 188.442187 122.370073 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 188.442187 119.698459 
@@ -17632,7 +17632,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 203.465429 109.012003 
     L 188.442187 109.012003 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 188.442187 106.340388 
@@ -17640,7 +17640,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 203.614174 95.653932 
     L 188.442187 95.653932 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 188.442187 92.982318 
@@ -17648,7 +17648,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 206.365956 82.295862 
     L 188.442187 82.295862 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 188.442187 79.624247 
@@ -17656,7 +17656,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 234.032519 68.937791 
     L 188.442187 68.937791 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 188.442187 66.266177 
@@ -17664,7 +17664,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 237.19335 55.579721 
     L 188.442187 55.579721 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 188.442187 52.908106 
@@ -17672,7 +17672,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 246.303979 42.22165 
     L 188.442187 42.22165 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="patch_12">
         <path d="M 188.442187 39.550036 
@@ -17680,18 +17680,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 257.013616 28.86358 
     L 188.442187 28.86358 
     z
-    " clip-path="url(#p3c2a2bd8ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p2247b18957)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m4aeae2160c" d="M 0 0 
+           <path id="ma4c7aebd09" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m4aeae2160c" x="188.442187" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#ma4c7aebd09" x="188.442187" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -17727,7 +17727,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m4aeae2160c" x="225.628429" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#ma4c7aebd09" x="225.628429" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -17761,12 +17761,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="ma13ffc009f" d="M 0 0 
+           <path id="mcfe84ca2a4" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -18003,7 +18003,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -18300,7 +18300,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -18408,7 +18408,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -18477,7 +18477,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -18566,7 +18566,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -18663,7 +18663,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -18716,7 +18716,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -18767,7 +18767,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -18826,7 +18826,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#ma13ffc009f" x="188.442187" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mcfe84ca2a4" x="188.442187" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -19210,7 +19210,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p3c2a2bd8ef">
+      <clipPath id="p2247b18957">
        <rect x="188.442187" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -19522,7 +19522,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.595345</dc:date>
+        <dc:date>2024-10-07T09:14:12.042825</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -19559,7 +19559,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 196.140402 149.086214 
     L 165.054688 149.086214 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 165.054688 146.4146 
@@ -19567,7 +19567,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 198.883259 135.728144 
     L 165.054688 135.728144 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 165.054688 133.056529 
@@ -19575,7 +19575,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 199.568973 122.370073 
     L 165.054688 122.370073 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 165.054688 119.698459 
@@ -19583,7 +19583,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 200.940402 109.012003 
     L 165.054688 109.012003 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 165.054688 106.340388 
@@ -19591,7 +19591,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 203.683259 95.653932 
     L 165.054688 95.653932 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 165.054688 92.982318 
@@ -19599,7 +19599,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 207.568973 82.295862 
     L 165.054688 82.295862 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 165.054688 79.624247 
@@ -19607,7 +19607,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 216.71183 68.937791 
     L 165.054688 68.937791 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 165.054688 66.266177 
@@ -19615,7 +19615,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 228.597545 55.579721 
     L 165.054688 55.579721 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 165.054688 52.908106 
@@ -19623,7 +19623,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 233.397545 42.22165 
     L 165.054688 42.22165 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="patch_12">
         <path d="M 165.054688 39.550036 
@@ -19631,18 +19631,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 233.626116 28.86358 
     L 165.054688 28.86358 
     z
-    " clip-path="url(#p1fa98527ff)" style="fill: #ee854a"/>
+    " clip-path="url(#p8094740ef5)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m292344f798" d="M 0 0 
+           <path id="m03598a9307" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m292344f798" x="165.054688" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m03598a9307" x="165.054688" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -19678,7 +19678,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m292344f798" x="210.768973" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m03598a9307" x="210.768973" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -19721,12 +19721,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="mc7e334d63f" d="M 0 0 
+           <path id="m6fc1211052" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -20092,7 +20092,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -20251,7 +20251,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -20320,7 +20320,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -20434,7 +20434,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -20541,7 +20541,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -20614,7 +20614,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -20726,7 +20726,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -20819,7 +20819,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -20860,7 +20860,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#mc7e334d63f" x="165.054688" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m6fc1211052" x="165.054688" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -21240,7 +21240,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p1fa98527ff">
+      <clipPath id="p8094740ef5">
        <rect x="165.054688" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -21552,7 +21552,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.687541</dc:date>
+        <dc:date>2024-10-07T09:14:12.122149</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -21589,7 +21589,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 105.30678 23.054545 
     L 98.49375 23.054545 
     z
-    " clip-path="url(#p317e33f1ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p4943b8f9a7)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 98.49375 20.145455 
@@ -21597,18 +21597,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 167.065179 8.509091 
     L 98.49375 8.509091 
     z
-    " clip-path="url(#p317e33f1ef)" style="fill: #ee854a"/>
+    " clip-path="url(#p4943b8f9a7)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m8eba1417af" d="M 0 0 
+           <path id="m9a0cfcb90c" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m8eba1417af" x="98.49375" y="36" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m9a0cfcb90c" x="98.49375" y="36" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -21644,7 +21644,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m8eba1417af" x="139.339252" y="36" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m9a0cfcb90c" x="139.339252" y="36" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -21689,12 +21689,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="m4320aeb708" d="M 0 0 
+           <path id="m768ae32855" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m4320aeb708" x="98.49375" y="28.872727" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m768ae32855" x="98.49375" y="28.872727" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -21982,7 +21982,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#m4320aeb708" x="98.49375" y="14.327273" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m768ae32855" x="98.49375" y="14.327273" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -22157,7 +22157,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p317e33f1ef">
+      <clipPath id="p4943b8f9a7">
        <rect x="98.49375" y="7.2" width="72" height="28.8"/>
       </clipPath>
      </defs>
@@ -22293,7 +22293,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.783286</dc:date>
+        <dc:date>2024-10-07T09:14:12.203129</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -22330,7 +22330,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 198.237115 149.086214 
     L 180.503125 149.086214 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 180.503125 146.4146 
@@ -22338,7 +22338,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 198.881988 135.728144 
     L 180.503125 135.728144 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 180.503125 133.056529 
@@ -22346,7 +22346,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 202.428786 122.370073 
     L 180.503125 122.370073 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 180.503125 119.698459 
@@ -22354,7 +22354,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 202.751222 109.012003 
     L 180.503125 109.012003 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 180.503125 106.340388 
@@ -22362,7 +22362,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 203.933488 95.653932 
     L 180.503125 95.653932 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 180.503125 92.982318 
@@ -22370,7 +22370,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 204.040966 82.295862 
     L 180.503125 82.295862 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 180.503125 79.624247 
@@ -22378,7 +22378,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 206.620456 68.937791 
     L 180.503125 68.937791 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 180.503125 66.266177 
@@ -22386,7 +22386,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 222.204872 55.579721 
     L 180.503125 55.579721 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 180.503125 52.908106 
@@ -22394,7 +22394,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 247.139936 42.22165 
     L 180.503125 42.22165 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="patch_12">
         <path d="M 180.503125 39.550036 
@@ -22402,18 +22402,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 249.074554 28.86358 
     L 180.503125 28.86358 
     z
-    " clip-path="url(#pbf2acbc778)" style="fill: #ee854a"/>
+    " clip-path="url(#p858057ec7a)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mba72bb183e" d="M 0 0 
+           <path id="m4f7acc8b94" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mba72bb183e" x="180.503125" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m4f7acc8b94" x="180.503125" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -22449,7 +22449,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mba72bb183e" x="234.242489" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m4f7acc8b94" x="234.242489" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -22493,12 +22493,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="m6df8bf6370" d="M 0 0 
+           <path id="m8dc032dd04" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -22869,7 +22869,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -22984,7 +22984,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -23117,7 +23117,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -23194,7 +23194,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -23304,7 +23304,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -23338,7 +23338,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -23361,7 +23361,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -23396,7 +23396,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -23426,7 +23426,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m6df8bf6370" x="180.503125" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8dc032dd04" x="180.503125" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -23894,7 +23894,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="pbf2acbc778">
+      <clipPath id="p858057ec7a">
        <rect x="180.503125" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -24206,7 +24206,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.916093</dc:date>
+        <dc:date>2024-10-07T09:14:12.329946</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -24243,7 +24243,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 110.45819 149.086214 
     L 71.8375 149.086214 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 71.8375 146.4146 
@@ -24251,7 +24251,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 110.45819 135.728144 
     L 71.8375 135.728144 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 71.8375 133.056529 
@@ -24259,7 +24259,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 111.246367 122.370073 
     L 71.8375 122.370073 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 71.8375 119.698459 
@@ -24267,7 +24267,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 116.763608 109.012003 
     L 71.8375 109.012003 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 71.8375 106.340388 
@@ -24275,7 +24275,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 116.763608 95.653932 
     L 71.8375 95.653932 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 71.8375 92.982318 
@@ -24283,7 +24283,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 119.12814 82.295862 
     L 71.8375 82.295862 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 71.8375 79.624247 
@@ -24291,7 +24291,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 127.009914 68.937791 
     L 71.8375 68.937791 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 71.8375 66.266177 
@@ -24299,7 +24299,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 128.586268 55.579721 
     L 71.8375 55.579721 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 71.8375 52.908106 
@@ -24307,7 +24307,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 137.256219 42.22165 
     L 71.8375 42.22165 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="patch_12">
         <path d="M 71.8375 39.550036 
@@ -24315,18 +24315,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 140.408929 28.86358 
     L 71.8375 28.86358 
     z
-    " clip-path="url(#p2205166322)" style="fill: #ee854a"/>
+    " clip-path="url(#p10eac28dc3)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m6926d4d437" d="M 0 0 
+           <path id="mb459586a57" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m6926d4d437" x="71.8375" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mb459586a57" x="71.8375" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -24362,7 +24362,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m6926d4d437" x="111.246367" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#mb459586a57" x="111.246367" y="166.318125" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -24405,12 +24405,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="m8e2fd5c225" d="M 0 0 
+           <path id="m39c35f0c88" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="154.429442" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -24551,7 +24551,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="141.071372" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -24605,7 +24605,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="127.713301" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -24627,7 +24627,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="114.355231" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -24670,7 +24670,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="100.99716" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -24692,7 +24692,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="87.63909" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -24755,7 +24755,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="74.281019" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -24777,7 +24777,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="60.922949" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -24799,7 +24799,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="47.564878" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -24821,7 +24821,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m8e2fd5c225" x="71.8375" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m39c35f0c88" x="71.8375" y="34.206808" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -25277,7 +25277,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p2205166322">
+      <clipPath id="p10eac28dc3">
        <rect x="71.8375" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -25602,7 +25602,7 @@ To quickly get an overview of a dataframe's contents, use the
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2024-10-07T09:10:50.999645</dc:date>
+        <dc:date>2024-10-07T09:14:12.403889</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -25639,7 +25639,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 59.286364 78.976479 
     L 46.195455 78.976479 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_4">
         <path d="M 59.286364 79.2 
@@ -25647,7 +25647,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 72.377273 78.603943 
     L 59.286364 78.603943 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_5">
         <path d="M 72.377273 79.2 
@@ -25655,7 +25655,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 85.468182 76.691592 
     L 72.377273 76.691592 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_6">
         <path d="M 85.468182 79.2 
@@ -25663,7 +25663,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 98.559091 73.736141 
     L 85.468182 73.736141 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_7">
         <path d="M 98.559091 79.2 
@@ -25671,7 +25671,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 111.65 59.629451 
     L 98.559091 59.629451 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_8">
         <path d="M 111.65 79.2 
@@ -25679,7 +25679,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 124.740909 61.119594 
     L 111.65 61.119594 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_9">
         <path d="M 124.740909 79.2 
@@ -25687,7 +25687,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 137.831818 49.595819 
     L 124.740909 49.595819 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_10">
         <path d="M 137.831818 79.2 
@@ -25695,7 +25695,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 150.922727 36.283872 
     L 137.831818 36.283872 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_11">
         <path d="M 150.922727 79.2 
@@ -25703,7 +25703,7 @@ To quickly get an overview of a dataframe's contents, use the
     L 164.013636 37.550494 
     L 150.922727 37.550494 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="patch_12">
         <path d="M 164.013636 79.2 
@@ -25711,18 +25711,18 @@ To quickly get an overview of a dataframe's contents, use the
     L 177.104545 10.628571 
     L 164.013636 10.628571 
     z
-    " clip-path="url(#p1252159712)" style="fill: #4878d0"/>
+    " clip-path="url(#pd94df8b4e1)" style="fill: #4878d0"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="md2fc9370db" d="M 0 0 
+           <path id="md5389c343c" d="M 0 0 
     L 0 3.5 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#md2fc9370db" x="84.698128" y="79.2" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#md5389c343c" x="84.698128" y="79.2" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -25844,7 +25844,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#md2fc9370db" x="136.035027" y="79.2" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#md5389c343c" x="136.035027" y="79.2" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -25888,12 +25888,12 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="me42fabb083" d="M 0 0 
+           <path id="m8f726b318c" d="M 0 0 
     L -3.5 0 
     " style="stroke: #000000; stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#me42fabb083" x="39.65" y="79.2" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8f726b318c" x="39.65" y="79.2" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -25906,7 +25906,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#me42fabb083" x="39.65" y="54.364278" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8f726b318c" x="39.65" y="54.364278" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -25922,7 +25922,7 @@ To quickly get an overview of a dataframe's contents, use the
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#me42fabb083" x="39.65" y="29.528556" style="stroke: #000000; stroke-width: 0.8"/>
+           <use xlink:href="#m8f726b318c" x="39.65" y="29.528556" style="stroke: #000000; stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -25949,7 +25949,7 @@ To quickly get an overview of a dataframe's contents, use the
       </g>
      </g>
      <defs>
-      <clipPath id="p1252159712">
+      <clipPath id="pd94df8b4e1">
        <rect x="39.65" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -26005,29 +26005,20 @@ To quickly get an overview of a dataframe's contents, use the
                 </tr>
         
                 <tr>
-                    <td class="ellided">assignment_category</td>
-                    <td class="ellided">employee_position_title</td>
-                    <td
-                        >
-                        0.677
-                    </td>
-                </tr>
-        
-                <tr>
                     <td class="ellided">division</td>
                     <td class="ellided">assignment_category</td>
                     <td
                         >
-                        0.631
+                        0.590
                     </td>
                 </tr>
         
                 <tr>
-                    <td class="ellided">division</td>
+                    <td class="ellided">assignment_category</td>
                     <td class="ellided">employee_position_title</td>
                     <td
                         >
-                        0.526
+                        0.486
                     </td>
                 </tr>
         
@@ -26036,7 +26027,7 @@ To quickly get an overview of a dataframe's contents, use the
                     <td class="ellided">employee_position_title</td>
                     <td
                         >
-                        0.403
+                        0.419
                     </td>
                 </tr>
         
@@ -26045,7 +26036,7 @@ To quickly get an overview of a dataframe's contents, use the
                     <td class="ellided">employee_position_title</td>
                     <td
                         >
-                        0.403
+                        0.419
                     </td>
                 </tr>
         
@@ -26054,7 +26045,7 @@ To quickly get an overview of a dataframe's contents, use the
                     <td class="ellided">assignment_category</td>
                     <td
                         >
-                        0.383
+                        0.415
                     </td>
                 </tr>
         
@@ -26063,7 +26054,34 @@ To quickly get an overview of a dataframe's contents, use the
                     <td class="ellided">assignment_category</td>
                     <td
                         >
-                        0.383
+                        0.415
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td class="ellided">division</td>
+                    <td class="ellided">employee_position_title</td>
+                    <td
+                        >
+                        0.414
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td class="ellided">department</td>
+                    <td class="ellided">division</td>
+                    <td
+                        >
+                        0.369
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td class="ellided">department_name</td>
+                    <td class="ellided">division</td>
+                    <td
+                        >
+                        0.369
                     </td>
                 </tr>
         
@@ -26072,7 +26090,7 @@ To quickly get an overview of a dataframe's contents, use the
                     <td class="ellided">department</td>
                     <td
                         >
-                        0.370
+                        0.365
                     </td>
                 </tr>
         
@@ -26081,25 +26099,7 @@ To quickly get an overview of a dataframe's contents, use the
                     <td class="ellided">department_name</td>
                     <td
                         >
-                        0.370
-                    </td>
-                </tr>
-        
-                <tr>
-                    <td class="ellided">department</td>
-                    <td class="ellided">division</td>
-                    <td
-                        >
-                        0.368
-                    </td>
-                </tr>
-        
-                <tr>
-                    <td class="ellided">department_name</td>
-                    <td class="ellided">division</td>
-                    <td
-                        >
-                        0.368
+                        0.365
                     </td>
                 </tr>
         
@@ -26108,7 +26108,7 @@ To quickly get an overview of a dataframe's contents, use the
                     <td class="ellided">date_first_hired</td>
                     <td
                         >
-                        0.321
+                        0.336
                     </td>
                 </tr>
         
@@ -26117,7 +26117,7 @@ To quickly get an overview of a dataframe's contents, use the
                     <td class="ellided">employee_position_title</td>
                     <td
                         >
-                        0.262
+                        0.264
                     </td>
                 </tr>
         
@@ -26135,7 +26135,7 @@ To quickly get an overview of a dataframe's contents, use the
                     <td class="ellided">division</td>
                     <td
                         >
-                        0.258
+                        0.253
                     </td>
                 </tr>
         
@@ -26144,7 +26144,7 @@ To quickly get an overview of a dataframe's contents, use the
                     <td class="ellided">date_first_hired</td>
                     <td
                         >
-                        0.155
+                        0.154
                     </td>
                 </tr>
         
@@ -26153,16 +26153,7 @@ To quickly get an overview of a dataframe's contents, use the
                     <td class="ellided">date_first_hired</td>
                     <td
                         >
-                        0.155
-                    </td>
-                </tr>
-        
-                <tr>
-                    <td class="ellided">employee_position_title</td>
-                    <td class="ellided">year_first_hired</td>
-                    <td
-                        >
-                        0.147
+                        0.154
                     </td>
                 </tr>
         
@@ -26171,7 +26162,16 @@ To quickly get an overview of a dataframe's contents, use the
                     <td class="ellided">year_first_hired</td>
                     <td
                         >
-                        0.141
+                        0.146
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td class="ellided">employee_position_title</td>
+                    <td class="ellided">year_first_hired</td>
+                    <td
+                        >
+                        0.145
                     </td>
                 </tr>
         
@@ -26197,7 +26197,7 @@ To quickly get an overview of a dataframe's contents, use the
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_8f33676a">
+        <skrub-table-report class="report" id="report_8208522d">
         </skrub-table-report>
 
         <script>
@@ -26530,6 +26530,8 @@ To quickly get an overview of a dataframe's contents, use the
                 this.elem.addEventListener('keydown', (e) => this.onKeyDown(e));
                 this.elem.addEventListener('skrub-keydown', (e) => this.onKeyDown(
                     unwrapSkrubKeyDown(e)));
+                this.elem.tabIndex = "0";
+                this.elem.addEventListener('focus', (e) => this.activateFirstCell());
             }
 
             onKeyDown(event) {
@@ -26614,6 +26616,45 @@ To quickly get an overview of a dataframe's contents, use the
                     j) => (this
                     .stopI <= i));
             }
+
+            /*
+              When no cell is active, the table itself is sequentially focusable.
+              When it receives focus, it redirects it to the first visible data cell
+              (if any). Once a cell is active, the cell is sequentially focusable
+              and the table is not. If a cell is active but the focus is given to
+              the table (by clicking one of the non-clickable elements such as the
+              ellipsis "..." cells), focus is set on the active cell rather than the
+              first one.
+             */
+            activateFirstCell() {
+                const activeCell = this.elem.querySelector("[data-is-active]");
+                if (activeCell){
+                    activeCell.focus();
+                    return;
+                }
+                const firstCell = this.elem.querySelector(
+                    "[data-role='dataframe-data']:not([data-excluded-by-column-filter])"
+                    );
+                if (!firstCell) {
+                    return;
+                }
+                // blur immediately to avoid the focus ring flashing before the cell
+                // grabs keyboard focus.
+                this.elem.blur();
+                this.exchange.send({
+                    kind: "ACTIVATE_SAMPLE_TABLE_CELL",
+                    cellId: firstCell.id
+                });
+            }
+
+            SAMPLE_TABLE_CELL_ACTIVATED() {
+                this.elem.tabIndex = "-1";
+            }
+
+            SAMPLE_TABLE_CELL_DEACTIVATED() {
+                this.elem.tabIndex = "0";
+            }
+
         }
         SkrubTableReport.register(SampleTable);
 
@@ -27033,11 +27074,11 @@ To quickly get an overview of a dataframe's contents, use the
     }
         </script>
         <script>
-         setTimeout(() => {initReport("report_8f33676a");});
+         setTimeout(() => {initReport("report_8208522d");});
         </script>
     </div>
 
-    <div id="report_8f33676a-wrapper-fallback">
+    <div id="report_8208522d-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -27048,8 +27089,8 @@ To quickly get an overview of a dataframe's contents, use the
     </div>
 
     <script>
-     document.getElementById("report_8f33676a-wrapper").removeAttribute("hidden");
-     document.getElementById("report_8f33676a-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_8208522d-wrapper").removeAttribute("hidden");
+     document.getElementById("report_8208522d-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -27914,7 +27955,7 @@ illustrations of the tools that we provide !
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 6.686 seconds)
+   **Total running time of the script:** (0 minutes 6.042 seconds)
 
 
 .. _sphx_glr_download_auto_examples_00_getting_started.py:
