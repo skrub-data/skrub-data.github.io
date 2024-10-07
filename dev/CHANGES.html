@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Minor changes: Display of labels in the pl..." />
+<meta property="og:description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Minor changes: The TableReport now uses th..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Minor changes: Display of labels in the pl..." />
+<meta name="description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. Major changes: Minor changes: The TableReport now uses th..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -569,6 +569,12 @@ It is currently undergoing fast development and backward compatibility is not en
 <section id="minor-changes">
 <h3>Minor changes<a class="headerlink" href="#minor-changes" title="Link to this heading">#</a></h3>
 <ul>
+<li><p>The TableReport now uses the font size of its parent element when inserted
+into another page. This makes it smaller in pages that use a smaller font size
+than the browser default such as VSCode in some configurations. It also makes
+it easier to control its size when inserting it in a web page by setting the
+font size of its parent element. A few other small adjustments have also been
+made to make it a bit more compact. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1098">#1098</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>Display of labels in the plots of the TableReport, especially for other
 scripts than the latin alphabet, has improved.
 - before, some characters could be missing and replaced by empty boxes.
