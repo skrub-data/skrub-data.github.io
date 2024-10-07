@@ -1228,7 +1228,7 @@ The results:
     /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [0] during transform. These unknown categories will be encoded as all zeros
       warnings.warn(
 
-    np.float64(0.5863)
+    np.float64(0.58915)
 
 
 
@@ -1246,7 +1246,7 @@ Our final cross-validated accuracy score is 0.58.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (7 minutes 37.149 seconds)
+   **Total running time of the script:** (9 minutes 36.229 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:
