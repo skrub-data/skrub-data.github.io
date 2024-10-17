@@ -151,8 +151,8 @@ ground truth and we can compare them.
           <th>0</th>
           <td>25.333</td>
           <td>55.517</td>
-          <td>2008-09-16</td>
-          <td>40.1</td>
+          <td>2008-07-26</td>
+          <td>42.6</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
@@ -160,36 +160,36 @@ ground truth and we can compare them.
           <th>1</th>
           <td>25.333</td>
           <td>55.517</td>
-          <td>2008-04-27</td>
-          <td>39.6</td>
-          <td>0.0</td>
+          <td>2008-03-07</td>
+          <td>26.9</td>
+          <td>NaN</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>2</th>
           <td>25.333</td>
           <td>55.517</td>
-          <td>2008-02-07</td>
-          <td>20.5</td>
+          <td>2008-09-13</td>
+          <td>41.6</td>
           <td>NaN</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>25.333</td>
-          <td>55.517</td>
-          <td>2008-05-24</td>
-          <td>39.4</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>2008-07-14</td>
+          <td>46.6</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>25.333</td>
-          <td>55.517</td>
-          <td>2008-03-28</td>
-          <td>37.3</td>
-          <td>NaN</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>2008-10-10</td>
+          <td>36.1</td>
+          <td>0.0</td>
           <td>NaN</td>
         </tr>
       </tbody>
@@ -244,45 +244,45 @@ ground truth and we can compare them.
       <tbody>
         <tr>
           <th>50000</th>
-          <td>39.6429</td>
-          <td>104.9972</td>
-          <td>2008-11-08</td>
+          <td>39.3745</td>
+          <td>104.8145</td>
+          <td>2008-08-19</td>
           <td>NaN</td>
-          <td>0.0</td>
+          <td>3.0</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>50001</th>
-          <td>39.6429</td>
-          <td>104.9972</td>
-          <td>2008-10-09</td>
+          <td>39.3745</td>
+          <td>104.8145</td>
+          <td>2008-12-12</td>
           <td>NaN</td>
           <td>0.0</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>50002</th>
-          <td>39.6429</td>
-          <td>104.9972</td>
-          <td>2008-01-16</td>
+          <td>39.4850</td>
+          <td>104.9089</td>
+          <td>2008-10-08</td>
           <td>NaN</td>
           <td>0.0</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>50003</th>
-          <td>39.6429</td>
-          <td>104.9972</td>
-          <td>2008-08-16</td>
+          <td>39.4850</td>
+          <td>104.9089</td>
+          <td>2008-07-06</td>
           <td>NaN</td>
-          <td>173.0</td>
+          <td>0.0</td>
           <td>0.0</td>
         </tr>
         <tr>
           <th>50004</th>
-          <td>39.6429</td>
-          <td>104.9972</td>
-          <td>2008-09-02</td>
+          <td>39.4850</td>
+          <td>104.9089</td>
+          <td>2008-08-06</td>
           <td>NaN</td>
           <td>0.0</td>
           <td>0.0</td>
@@ -360,61 +360,61 @@ to the right side table column names.
           <th>0</th>
           <td>25.333</td>
           <td>55.517</td>
-          <td>2008-09-16</td>
-          <td>40.1</td>
+          <td>2008-07-26</td>
+          <td>42.6</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>30.152552</td>
-          <td>28.889202</td>
-          <td>0.039919</td>
+          <td>34.057949</td>
+          <td>77.813519</td>
+          <td>0.250123</td>
         </tr>
         <tr>
           <th>1</th>
           <td>25.333</td>
           <td>55.517</td>
-          <td>2008-04-27</td>
-          <td>39.6</td>
-          <td>0.0</td>
+          <td>2008-03-07</td>
+          <td>26.9</td>
           <td>NaN</td>
-          <td>29.684862</td>
-          <td>20.299209</td>
-          <td>0.075710</td>
+          <td>NaN</td>
+          <td>26.788515</td>
+          <td>90.291994</td>
+          <td>0.500715</td>
         </tr>
         <tr>
           <th>2</th>
           <td>25.333</td>
           <td>55.517</td>
-          <td>2008-02-07</td>
-          <td>20.5</td>
+          <td>2008-09-13</td>
+          <td>41.6</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>26.216056</td>
-          <td>24.715894</td>
-          <td>0.285671</td>
+          <td>31.434350</td>
+          <td>25.559380</td>
+          <td>0.250123</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>25.333</td>
-          <td>55.517</td>
-          <td>2008-05-24</td>
-          <td>39.4</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>2008-07-14</td>
+          <td>46.6</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>30.478218</td>
-          <td>21.739139</td>
-          <td>0.039919</td>
+          <td>34.062766</td>
+          <td>67.568688</td>
+          <td>0.250123</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>25.333</td>
-          <td>55.517</td>
-          <td>2008-03-28</td>
-          <td>37.3</td>
+          <td>25.255</td>
+          <td>55.364</td>
+          <td>2008-10-10</td>
+          <td>36.1</td>
+          <td>0.0</td>
           <td>NaN</td>
-          <td>NaN</td>
-          <td>26.975896</td>
-          <td>22.732994</td>
-          <td>0.214679</td>
+          <td>30.087467</td>
+          <td>26.016593</td>
+          <td>0.250123</td>
         </tr>
       </tbody>
     </table>
@@ -596,7 +596,7 @@ maximum daily temperature.
           <td>MI</td>
           <td>42.212059</td>
           <td>-83.348836</td>
-          <td>3.521112</td>
+          <td>0.273140</td>
         </tr>
         <tr>
           <th>1</th>
@@ -608,7 +608,7 @@ maximum daily temperature.
           <td>TX</td>
           <td>32.895951</td>
           <td>-97.037200</td>
-          <td>18.660422</td>
+          <td>20.683915</td>
         </tr>
         <tr>
           <th>2</th>
@@ -620,7 +620,7 @@ maximum daily temperature.
           <td>NC</td>
           <td>36.097747</td>
           <td>-79.937297</td>
-          <td>17.343928</td>
+          <td>17.513572</td>
         </tr>
         <tr>
           <th>3</th>
@@ -632,7 +632,7 @@ maximum daily temperature.
           <td>IL</td>
           <td>41.979595</td>
           <td>-87.904464</td>
-          <td>16.184139</td>
+          <td>15.449792</td>
         </tr>
         <tr>
           <th>4</th>
@@ -644,7 +644,7 @@ maximum daily temperature.
           <td>TX</td>
           <td>32.895951</td>
           <td>-97.037200</td>
-          <td>13.738359</td>
+          <td>11.571447</td>
         </tr>
       </tbody>
     </table>
@@ -695,11 +695,11 @@ Washington, Minnesota.
 
 
     state
-    AK   -2.816219
-    WA    1.346398
-    MT    1.372455
-    MN    2.462753
-    OR    2.604245
+    AK   -3.553071
+    WA   -0.512806
+    MT   -0.015126
+    ND    0.918517
+    MN    1.125584
     Name: TMAX, dtype: float64
 
 
@@ -725,11 +725,11 @@ Florida, Louisiana.
 
 
     state
-    LA    21.690063
-    FL    23.968312
-    VI    24.497226
-    HI    24.742025
-    PR    25.193043
+    LA    21.873153
+    FL    24.777428
+    HI    27.042266
+    VI    30.063943
+    PR    30.498209
     Name: TMAX, dtype: float64
 
 
@@ -814,7 +814,7 @@ estimators.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 5.534 seconds)
+   **Total running time of the script:** (0 minutes 5.122 seconds)
 
 
 .. _sphx_glr_download_auto_examples_09_interpolation_join.py:
