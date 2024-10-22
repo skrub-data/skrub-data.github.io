@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. New features: The patch_display() function has been added..." />
+<meta property="og:description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. New features: The column_associations() function has been..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. New features: The patch_display() function has been added..." />
+<meta name="description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. New features: The column_associations() function has been..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -566,6 +566,10 @@ It is currently undergoing fast development and backward compatibility is not en
 <section id="new-features">
 <h3>New features<a class="headerlink" href="#new-features" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>The <a class="reference internal" href="reference/generated/skrub.column_associations.html#skrub.column_associations" title="skrub.column_associations"><code class="xref py py-func docutils literal notranslate"><span class="pre">column_associations()</span></code></a> function has been added. It computes a
+pairwise measure of statistical dependence between all columns in a dataframe
+(the same as shown in the <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>). <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1109">#1109</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme
+Dockès</a>.</p></li>
 <li><p>The <a class="reference internal" href="reference/generated/skrub.patch_display.html#skrub.patch_display" title="skrub.patch_display"><code class="xref py py-func docutils literal notranslate"><span class="pre">patch_display()</span></code></a> function has been added. It changes the display of
 pandas and polars dataframes in jupyter notebooks to replace them with a
 <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>. This can be undone with <a class="reference internal" href="reference/generated/skrub.unpatch_display.html#skrub.unpatch_display" title="skrub.unpatch_display"><code class="xref py py-func docutils literal notranslate"><span class="pre">unpatch_display()</span></code></a>.
