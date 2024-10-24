@@ -619,6 +619,9 @@ contained datetimes with time zones and missing values; this has been fixed in
 <li><p>In scikit-learn versions older than 1.4 the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> could
 fail on polars dataframes when used with the default parameters. This has been
 fixed in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1122">#1122</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p>The <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> would raise an exception when the input (pandas)
+dataframe contained several columns with the same name. This has been fixed in
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1125">#1125</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 </ul>
 </section>
 </section>
