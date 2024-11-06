@@ -24,17 +24,19 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -46,10 +48,11 @@
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0c3a8733" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
     <script src="../_static/documentation_options.js?v=414d5694"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -59,7 +62,7 @@
     <script src="../_static/jupyterlite_sphinx.js?v=d6bdf5f8"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/09_interpolation_join';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.4.dev0';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = true;
@@ -72,6 +75,7 @@
     <link rel="prev" title="AggJoiner on a credit fraud dataset" href="08_join_aggregation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.4.dev0" />
   </head>
   
   
@@ -87,19 +91,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -107,7 +100,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search the docs ..."
          aria-label="Search the docs ..."
          autocomplete="off"
@@ -115,8 +107,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -151,7 +143,7 @@
     
     
     <img src="../_static/skrub.svg" class="logo__image only-light" alt="skrub - Home"/>
-    <script>document.write(`<img src="../_static/skrub.svg" class="logo__image only-dark" alt="skrub - Home"/>`);</script>
+    <img src="../_static/skrub.svg" class="logo__image only-dark pst-js-only" alt="skrub - Home"/>
   
   
 </a></div>
@@ -233,53 +225,41 @@
         <div class="navbar-item navbar-persistent--container">
           
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
         </div>
       
       
         <div class="navbar-item">
-<script>
-document.write(`
-  <div class="version-switcher__container dropdown">
-    <button id="pst-version-switcher-button-2"
-      type="button"
-      class="version-switcher__button btn btn-sm dropdown-toggle"
-      data-bs-toggle="dropdown"
-      aria-haspopup="listbox"
-      aria-controls="pst-version-switcher-list-2"
-      aria-label="Version switcher list"
-    >
-      Choose version  <!-- this text may get changed later by javascript -->
-      <span class="caret"></span>
-    </button>
-    <div id="pst-version-switcher-list-2"
-      class="version-switcher__menu dropdown-menu list-group-flush py-0"
-      role="listbox" aria-labelledby="pst-version-switcher-button-2">
-      <!-- dropdown will be populated by javascript on page load -->
-    </div>
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
   </div>
-`);
-</script></div>
+</div></div>
       
         <div class="navbar-item">
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script></div>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
       
         <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -328,15 +308,11 @@ document.write(`
   
     <div class="navbar-persistent--mobile">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
     </div>
   
 
@@ -355,7 +331,8 @@ document.write(`
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -429,40 +406,32 @@ document.write(`
       <div class="sidebar-header-items__end">
         
           <div class="navbar-item">
-<script>
-document.write(`
-  <div class="version-switcher__container dropdown">
-    <button id="pst-version-switcher-button-3"
-      type="button"
-      class="version-switcher__button btn btn-sm dropdown-toggle"
-      data-bs-toggle="dropdown"
-      aria-haspopup="listbox"
-      aria-controls="pst-version-switcher-list-3"
-      aria-label="Version switcher list"
-    >
-      Choose version  <!-- this text may get changed later by javascript -->
-      <span class="caret"></span>
-    </button>
-    <div id="pst-version-switcher-list-3"
-      class="version-switcher__menu dropdown-menu list-group-flush py-0"
-      role="listbox" aria-labelledby="pst-version-switcher-button-3">
-      <!-- dropdown will be populated by javascript on page load -->
-    </div>
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
   </div>
-`);
-</script></div>
+</div></div>
         
           <div class="navbar-item">
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script></div>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
         
           <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -551,8 +520,6 @@ document.write(`
       
         <div class="header-article-item">
 
-
-
 <nav aria-label="Breadcrumb" class="d-print-none">
   <ul class="bd-breadcrumbs">
     
@@ -564,7 +531,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Examples</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Interpolatio...</li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Interpolation join: infer missing rows when joining two tables</span></li>
   </ul>
 </nav>
 </div>
@@ -673,8 +640,8 @@ ground truth and we can compare them.</p>
       <th>0</th>
       <td>25.333</td>
       <td>55.517</td>
-      <td>2008-07-26</td>
-      <td>42.6</td>
+      <td>2008-09-16</td>
+      <td>40.1</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
@@ -682,36 +649,36 @@ ground truth and we can compare them.</p>
       <th>1</th>
       <td>25.333</td>
       <td>55.517</td>
-      <td>2008-03-07</td>
-      <td>26.9</td>
-      <td>NaN</td>
+      <td>2008-04-27</td>
+      <td>39.6</td>
+      <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>2</th>
       <td>25.333</td>
       <td>55.517</td>
-      <td>2008-09-13</td>
-      <td>41.6</td>
+      <td>2008-02-07</td>
+      <td>20.5</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>2008-07-14</td>
-      <td>46.6</td>
+      <td>25.333</td>
+      <td>55.517</td>
+      <td>2008-05-24</td>
+      <td>39.4</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>2008-10-10</td>
-      <td>36.1</td>
-      <td>0.0</td>
+      <td>25.333</td>
+      <td>55.517</td>
+      <td>2008-03-28</td>
+      <td>37.3</td>
+      <td>NaN</td>
       <td>NaN</td>
     </tr>
   </tbody>
@@ -753,45 +720,45 @@ ground truth and we can compare them.</p>
   <tbody>
     <tr>
       <th>50000</th>
-      <td>39.3745</td>
-      <td>104.8145</td>
-      <td>2008-08-19</td>
+      <td>39.6429</td>
+      <td>104.9972</td>
+      <td>2008-11-08</td>
       <td>NaN</td>
-      <td>3.0</td>
+      <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>50001</th>
-      <td>39.3745</td>
-      <td>104.8145</td>
-      <td>2008-12-12</td>
+      <td>39.6429</td>
+      <td>104.9972</td>
+      <td>2008-10-09</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>50002</th>
-      <td>39.4850</td>
-      <td>104.9089</td>
-      <td>2008-10-08</td>
+      <td>39.6429</td>
+      <td>104.9972</td>
+      <td>2008-01-16</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>50003</th>
-      <td>39.4850</td>
-      <td>104.9089</td>
-      <td>2008-07-06</td>
+      <td>39.6429</td>
+      <td>104.9972</td>
+      <td>2008-08-16</td>
       <td>NaN</td>
-      <td>0.0</td>
+      <td>173.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>50004</th>
-      <td>39.4850</td>
-      <td>104.9089</td>
-      <td>2008-08-06</td>
+      <td>39.6429</td>
+      <td>104.9972</td>
+      <td>2008-09-02</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -854,61 +821,61 @@ to the right side table column names.</p>
       <th>0</th>
       <td>25.333</td>
       <td>55.517</td>
-      <td>2008-07-26</td>
-      <td>42.6</td>
+      <td>2008-09-16</td>
+      <td>40.1</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>34.758323</td>
-      <td>37.803510</td>
-      <td>0.004665</td>
+      <td>28.441958</td>
+      <td>74.127937</td>
+      <td>-0.087343</td>
     </tr>
     <tr>
       <th>1</th>
       <td>25.333</td>
       <td>55.517</td>
-      <td>2008-03-07</td>
-      <td>26.9</td>
+      <td>2008-04-27</td>
+      <td>39.6</td>
+      <td>0.0</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>26.857206</td>
-      <td>81.247967</td>
-      <td>0.333815</td>
+      <td>28.526904</td>
+      <td>29.473649</td>
+      <td>0.034566</td>
     </tr>
     <tr>
       <th>2</th>
       <td>25.333</td>
       <td>55.517</td>
-      <td>2008-09-13</td>
-      <td>41.6</td>
+      <td>2008-02-07</td>
+      <td>20.5</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>31.851926</td>
-      <td>28.191783</td>
-      <td>0.004665</td>
+      <td>24.827695</td>
+      <td>16.454044</td>
+      <td>2.878927</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>2008-07-14</td>
-      <td>46.6</td>
+      <td>25.333</td>
+      <td>55.517</td>
+      <td>2008-05-24</td>
+      <td>39.4</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>34.907492</td>
-      <td>49.916967</td>
-      <td>0.004665</td>
+      <td>29.124320</td>
+      <td>30.204824</td>
+      <td>-0.087343</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>2008-10-10</td>
-      <td>36.1</td>
-      <td>0.0</td>
+      <td>25.333</td>
+      <td>55.517</td>
+      <td>2008-03-28</td>
+      <td>37.3</td>
       <td>NaN</td>
-      <td>30.428171</td>
-      <td>22.286853</td>
-      <td>-0.007512</td>
+      <td>NaN</td>
+      <td>25.808695</td>
+      <td>21.722582</td>
+      <td>-0.143163</td>
     </tr>
   </tbody>
 </table>
@@ -1026,7 +993,7 @@ maximum daily temperature.</p>
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>0.949417</td>
+      <td>2.399356</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1038,7 +1005,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>19.822583</td>
+      <td>19.821550</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1050,7 +1017,7 @@ maximum daily temperature.</p>
       <td>NC</td>
       <td>36.097747</td>
       <td>-79.937297</td>
-      <td>17.182483</td>
+      <td>16.954273</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1062,7 +1029,7 @@ maximum daily temperature.</p>
       <td>IL</td>
       <td>41.979595</td>
       <td>-87.904464</td>
-      <td>15.450815</td>
+      <td>16.454270</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1074,7 +1041,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>15.510456</td>
+      <td>13.205990</td>
     </tr>
   </tbody>
 </table>
@@ -1095,11 +1062,11 @@ Washington, Minnesota.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -2.690525
-WA    0.084745
-MT    0.387912
-ND    1.340135
-MN    1.478200
+AK   -4.763951
+WA    0.496282
+MT    0.583177
+ND    1.719072
+MN    1.858845
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1109,11 +1076,11 @@ Florida, Louisiana.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-LA    21.688649
-FL    24.700327
-HI    26.667499
-VI    31.073177
-PR    31.397478
+LA    21.578606
+FL    24.935415
+VI    25.652672
+HI    25.875740
+PR    26.360753
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1151,7 +1118,7 @@ would contain, rather than by searching for an actual match. It is a generalizat
 the <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an
 <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor
 estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 6.402 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.824 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-09-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/09_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
@@ -1210,7 +1177,8 @@ estimators.</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -1313,8 +1281,8 @@ estimators.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1347,7 +1315,7 @@ estimators.</p>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.4.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
 </p></div>
       
     </div>

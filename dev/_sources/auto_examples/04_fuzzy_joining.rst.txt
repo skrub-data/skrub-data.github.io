@@ -242,6 +242,13 @@ We extract the table containing GDP per capita by country:
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_fetching.py:686: UserWarning: Could not find the dataset 'NY.GDP.PCAP.CD' locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/NY.GDP.PCAP.CD.csv.
+      info = _fetch_world_bank_data(dataset_id, data_directory)
+
 
 .. raw:: html
 
@@ -306,6 +313,13 @@ Then another table, with life expectancy by country:
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_fetching.py:686: UserWarning: Could not find the dataset 'SP.DYN.LE00.IN' locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/SP.DYN.LE00.IN.csv.
+      info = _fetch_world_bank_data(dataset_id, data_directory)
+
 
 .. raw:: html
 
@@ -369,6 +383,13 @@ And a table with legal rights strength by country:
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_fetching.py:686: UserWarning: Could not find the dataset 'IC.LGL.CRED.XQ' locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/IC.LGL.CRED.XQ.csv.
+      info = _fetch_world_bank_data(dataset_id, data_directory)
 
 
 .. raw:: html
@@ -568,7 +589,7 @@ original table (df), and those that we downloaded from the worldbank
         <tr>
           <th>258</th>
           <td>Yemen, Rep.</td>
-          <td>533.367123</td>
+          <td>701.714865</td>
         </tr>
         <tr>
           <th>260</th>
@@ -722,7 +743,7 @@ To join them with skrub, we only need to do the following:
           <td>Yemen*</td>
           <td>4197.0</td>
           <td>Yemen, Rep.</td>
-          <td>533.367123</td>
+          <td>701.714865</td>
           <td>0.989239</td>
           <td>0.707172</td>
           <td>True</td>
@@ -964,7 +985,7 @@ us an overview of the situation:
           <td>Yemen*</td>
           <td>4197.0</td>
           <td>Yemen, Rep.</td>
-          <td>533.367123</td>
+          <td>701.714865</td>
           <td>0.989239</td>
           <td>0.707172</td>
           <td>True</td>
@@ -1715,7 +1736,7 @@ introduced into a grid search:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 15.344 seconds)
+   **Total running time of the script:** (0 minutes 13.777 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining.py:
