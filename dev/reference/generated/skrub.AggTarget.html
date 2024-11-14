@@ -594,8 +594,8 @@
 <h1>AggTarget<a class="headerlink" href="#aggtarget" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.AggTarget">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">AggTarget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">main_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ac21c8e/skrub/_agg_joiner.py#L335"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget" title="Link to this definition">#</a></dt>
-<dd><p>Aggregate a target <code class="docutils literal notranslate"><span class="pre">y</span></code> before joining its aggregation on a base dataframe.</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">AggTarget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">main_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operations</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_target'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f47250d/skrub/_agg_joiner.py#L396"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget" title="Link to this definition">#</a></dt>
+<dd><p>Aggregate a target <cite>y</cite> before joining its aggregation on a base dataframe.</p>
 <p>Accepts <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.2.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a> or <code class="xref py py-class docutils literal notranslate"><span class="pre">polars.DataFrame</span></code> inputs.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -604,22 +604,16 @@
 the aggregation of the target and during the join operation.</p>
 <p>If <cite>main_key</cite> refer to a single column, a single aggregation
 for this key will be generated and a single join will be performed.</p>
-<p>Otherwise, if <cite>main_key</cite> is a list of keys, the target will be
-aggregated using each key separately, then each aggregation of
-the target will be joined on the main table.</p>
+<p>If <cite>main_key</cite> is a list of keys, a multi-column aggregation will be performed
+on the target.</p>
 </dd>
-<dt><strong>operation</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.13)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, optional</span></dt><dd><p>Aggregation operations to perform on the target.</p>
-<dl class="simple">
-<dt>numerical<span class="classifier">{“sum”, “mean”, “std”, “min”, “max”, “hist”, “value_counts”}</span></dt><dd><p>‘hist’ and ‘value_counts’ accept an integer argument to parametrize
-the binning.</p>
+<dt><strong>operations</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.13)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>Aggregation operations to perform on the target.</p>
+<p>Supported operations are “count”, “mode”, “min”, “max”, “sum”, “median”,
+“mean”, “std”. The operations “sum”, “median”, “mean”, “std” are reserved
+to numeric type targets.</p>
 </dd>
-</dl>
-<p>categorical : {“mode”, “count”, “value_counts”}</p>
-<p>If set to None (the default), [“mean”, “mode”] will be used.</p>
-</dd>
-<dt><strong>suffix</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, optional</span></dt><dd><p>The suffix to append to the columns of the target table if the join
-results in duplicates columns.
-If set to None, “_target” is used.</p>
+<dt><strong>suffix</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=”_target”</span></dt><dd><p>The suffix to append to the columns of the target table if the join
+results in duplicates columns.</p>
 </dd>
 </dl>
 </dd>
@@ -646,29 +640,29 @@ If set to None, “_target” is used.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">agg_target</span> <span class="o">=</span> <span class="n">AggTarget</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="n">main_key</span><span class="o">=</span><span class="s2">&quot;company&quot;</span><span class="p">,</span>
-<span class="gp">... </span>    <span class="n">operation</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;max&quot;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="n">operations</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;max&quot;</span><span class="p">],</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">agg_target</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="go">   flightId  from_airport  ...  y_0_max_target y_0_mean_target</span>
-<span class="go">0         1             1  ...               1        0.666667</span>
-<span class="go">1         2             1  ...               1        0.500000</span>
-<span class="go">2         3             1  ...               1        0.500000</span>
-<span class="go">3         4             2  ...               1        0.666667</span>
-<span class="go">4         5             2  ...               1        0.666667</span>
-<span class="go">5         6             2  ...               1        1.000000</span>
+<span class="go">   flightId  from_airport  ...  y_0_mean_target  y_0_max_target</span>
+<span class="go">0         1             1  ...         0.666667               1</span>
+<span class="go">1         2             1  ...         0.500000               1</span>
+<span class="go">2         3             1  ...         0.500000               1</span>
+<span class="go">3         4             2  ...         0.666667               1</span>
+<span class="go">4         5             2  ...         0.666667               1</span>
+<span class="go">5         6             2  ...         1.000000               1</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.AggTarget.check_inputs" title="skrub.AggTarget.check_inputs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_inputs</span></code></a>(X, y)</p></td>
-<td><p>Perform a check on column names data type and suffixes.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.AggTarget.fit" title="skrub.AggTarget.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X, y)</p></td>
+<td><p>Aggregate the target <cite>y</cite> based on keys from <cite>X</cite>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.AggTarget.fit" title="skrub.AggTarget.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X, y)</p></td>
-<td><p>Aggregate the target <code class="docutils literal notranslate"><span class="pre">y</span></code> based on keys from <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.AggTarget.fit_transform" title="skrub.AggTarget.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(X, y)</p></td>
+<td><p>Aggregate the target <cite>y</cite> based on keys from <cite>X</cite>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.AggTarget.fit_transform" title="skrub.AggTarget.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(X, y)</p></td>
-<td><p>Aggregate the target <code class="docutils literal notranslate"><span class="pre">y</span></code> based on keys from <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.AggTarget.get_feature_names_out" title="skrub.AggTarget.get_feature_names_out"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_feature_names_out</span></code></a>()</p></td>
+<td><p>Get output feature names for transformation.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.AggTarget.get_metadata_routing" title="skrub.AggTarget.get_metadata_routing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_metadata_routing</span></code></a>()</p></td>
 <td><p>Get metadata routing of this object.</p></td>
@@ -683,50 +677,22 @@ If set to None, “_target” is used.</p>
 <td><p>Set the parameters of this estimator.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.AggTarget.transform" title="skrub.AggTarget.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X)</p></td>
-<td><p>Left-join pre-aggregated table on <cite>X</cite>.</p></td>
+<td><p>Left-join pre-aggregated target on <cite>X</cite>.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <dl class="py method">
-<dt class="sig sig-object py" id="skrub.AggTarget.check_inputs">
-<span class="sig-name descname"><span class="pre">check_inputs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ac21c8e/skrub/_agg_joiner.py#L522"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.check_inputs" title="Link to this definition">#</a></dt>
-<dd><p>Perform a check on column names data type and suffixes.</p>
+<dt class="sig sig-object py" id="skrub.AggTarget.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f47250d/skrub/_agg_joiner.py#L545"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.fit" title="Link to this definition">#</a></dt>
+<dd><p>Aggregate the target <cite>y</cite> based on keys from <cite>X</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>X</strong><span class="classifier">DataFrameLike</span></dt><dd><p>The raw input to check.</p>
-</dd>
-<dt><strong>y</strong><span class="classifier">DataFrameLike or SeriesLike or ArrayLike</span></dt><dd><p>The raw target to check.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>y_</strong><span class="classifier">DataFrameLike,</span></dt><dd><p>Transformation of the target.</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="skrub.AggTarget.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ac21c8e/skrub/_agg_joiner.py#L468"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.fit" title="Link to this definition">#</a></dt>
-<dd><p>Aggregate the target <code class="docutils literal notranslate"><span class="pre">y</span></code> based on keys from <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p>
-<dl class="field-list">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
 <dt><strong>X</strong><span class="classifier">DataFrameLike</span></dt><dd><p>Must contains the columns names defined in <cite>main_key</cite>.</p>
 </dd>
-<dt><strong>y</strong><span class="classifier">DataFrameLike or SeriesLike or ArrayLike</span></dt><dd><p><cite>y</cite> length must match <cite>X</cite> length, with matching indices.
+<dt><strong>y</strong><span class="classifier">DataFrameLike or SeriesLike or ArrayLike</span></dt><dd><p><cite>y</cite> length must match <cite>X</cite> length.
 The target can be continuous or discrete, with multiple columns.</p>
-<p>If the target is continuous, only numerical operations,
-listed in <cite>num_operations</cite>, can be applied.</p>
-<p>If the target is discrete, only categorical operations,
-listed in <cite>categ_operations</cite>, can be applied.</p>
-<p>Note that the target type is determined by
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.utils.multiclass.type_of_target.html#sklearn.utils.multiclass.type_of_target" title="(in scikit-learn v1.5)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.utils.multiclass.type_of_target()</span></code></a>.</p>
 </dd>
 </dl>
 </dd>
@@ -741,21 +707,15 @@ listed in <cite>categ_operations</cite>, can be applied.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggTarget.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ac21c8e/skrub/_agg_joiner.py#L415"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.fit_transform" title="Link to this definition">#</a></dt>
-<dd><p>Aggregate the target <code class="docutils literal notranslate"><span class="pre">y</span></code> based on keys from <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p>
-<dl class="field-list">
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f47250d/skrub/_agg_joiner.py#L471"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.fit_transform" title="Link to this definition">#</a></dt>
+<dd><p>Aggregate the target <cite>y</cite> based on keys from <cite>X</cite>.</p>
+<dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
+<dd class="field-odd"><dl class="simple">
 <dt><strong>X</strong><span class="classifier">DataFrameLike</span></dt><dd><p>Must contains the columns names defined in <cite>main_key</cite>.</p>
 </dd>
-<dt><strong>y</strong><span class="classifier">DataFrameLike or SeriesLike or ArrayLike</span></dt><dd><p><cite>y</cite> length must match <cite>X</cite> length, with matching indices.
+<dt><strong>y</strong><span class="classifier">DataFrameLike or SeriesLike or ArrayLike</span></dt><dd><p><cite>y</cite> length must match <cite>X</cite> length.
 The target can be continuous or discrete, with multiple columns.</p>
-<p>If the target is continuous, only numerical operations,
-listed in <cite>num_operations</cite>, can be applied.</p>
-<p>If the target is discrete, only categorical operations,
-listed in <cite>categ_operations</cite>, can be applied.</p>
-<p>Note that the target type is determined by
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.utils.multiclass.type_of_target.html#sklearn.utils.multiclass.type_of_target" title="(in scikit-learn v1.5)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.utils.multiclass.type_of_target()</span></code></a>.</p>
 </dd>
 </dl>
 </dd>
@@ -769,8 +729,22 @@ listed in <cite>categ_operations</cite>, can be applied.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="skrub.AggTarget.get_feature_names_out">
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f47250d/skrub/_agg_joiner.py#L590"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.get_feature_names_out" title="Link to this definition">#</a></dt>
+<dd><p>Get output feature names for transformation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt>List of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></dt><dd><p>Transformed feature names.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggTarget.get_metadata_routing">
-<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ac21c8e/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1496"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.get_metadata_routing" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f47250d/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1496"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.get_metadata_routing" title="Link to this definition">#</a></dt>
 <dd><p>Get metadata routing of this object.</p>
 <p>Please check <a class="reference external" href="https://scikit-learn.org/stable/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.5)"><span class="xref std std-ref">User Guide</span></a> on how the routing
 mechanism works.</p>
@@ -787,7 +761,7 @@ routing information.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggTarget.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ac21c8e/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f47250d/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -808,7 +782,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggTarget.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ac21c8e/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f47250d/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.5)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
@@ -839,7 +813,7 @@ for an example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggTarget.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ac21c8e/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f47250d/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -863,18 +837,18 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggTarget.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ac21c8e/skrub/_agg_joiner.py#L497"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.transform" title="Link to this definition">#</a></dt>
-<dd><p>Left-join pre-aggregated table on <cite>X</cite>.</p>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f47250d/skrub/_agg_joiner.py#L565"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggTarget.transform" title="Link to this definition">#</a></dt>
+<dd><p>Left-join pre-aggregated target on <cite>X</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>X</strong><span class="classifier">DataFrameLike,</span></dt><dd><p>The input data to transform.</p>
+<dt><strong>X</strong><span class="classifier">DataFrameLike</span></dt><dd><p>The input data to transform.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><strong>X_transformed</strong><span class="classifier">DataFrameLike,</span></dt><dd><p>The augmented input.</p>
+<dt><strong>X_transformed</strong><span class="classifier">DataFrameLike</span></dt><dd><p>The augmented input.</p>
 </dd>
 </dl>
 </dd>
@@ -933,9 +907,9 @@ possible to update each component of a nested object.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.AggTarget"><code class="docutils literal notranslate"><span class="pre">AggTarget</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.AggTarget.check_inputs"><code class="docutils literal notranslate"><span class="pre">AggTarget.check_inputs()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.AggTarget.fit"><code class="docutils literal notranslate"><span class="pre">AggTarget.fit()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.AggTarget.fit_transform"><code class="docutils literal notranslate"><span class="pre">AggTarget.fit_transform()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.AggTarget.get_feature_names_out"><code class="docutils literal notranslate"><span class="pre">AggTarget.get_feature_names_out()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.AggTarget.get_metadata_routing"><code class="docutils literal notranslate"><span class="pre">AggTarget.get_metadata_routing()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.AggTarget.get_params"><code class="docutils literal notranslate"><span class="pre">AggTarget.get_params()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.AggTarget.set_output"><code class="docutils literal notranslate"><span class="pre">AggTarget.set_output()</span></code></a></li>
