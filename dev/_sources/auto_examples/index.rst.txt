@@ -47,18 +47,18 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="In this notebook, we will explore the output and inner workings of the |GapEncoder|, one of the high cardinality categorical encoders provided by skrub.">
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we explore the performance of string and categorical encoders available in skrub.">
 
 .. only:: html
 
-  .. image:: /auto_examples/images/thumb/sphx_glr_02_feature_interpretation_with_gapencoder_thumb.png
+  .. image:: /auto_examples/images/thumb/sphx_glr_02_text_with_string_encoders_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_02_feature_interpretation_with_gapencoder.py`
+  :ref:`sphx_glr_auto_examples_02_text_with_string_encoders.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Feature interpretation with the GapEncoder</div>
+      <div class="sphx-glr-thumbnail-title">Various string encoders: a sentiment analysis example</div>
     </div>
 
 
@@ -193,7 +193,7 @@ Examples
 
    /auto_examples/00_getting_started
    /auto_examples/01_encodings
-   /auto_examples/02_feature_interpretation_with_gapencoder
+   /auto_examples/02_text_with_string_encoders
    /auto_examples/03_datetime_encoder
    /auto_examples/04_fuzzy_joining
    /auto_examples/05_deduplication

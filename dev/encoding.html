@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/encoding.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Encoding or vectorizing creates numerical features from the data, converting dataframes, strings, dates… Different encoders are suited for different types of data. Encoding open-ended entries and d..." />
+<meta property="og:description" content="Encoding or vectorizing creates numerical features from the data, converting dataframes, strings, dates… Different encoders are suited for different types of data. Encoding string columns: Non-norm..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Encoding or vectorizing creates numerical features from the data, converting dataframes, strings, dates… Different encoders are suited for different types of data. Encoding open-ended entries and d..." />
+<meta name="description" content="Encoding or vectorizing creates numerical features from the data, converting dataframes, strings, dates… Different encoders are suited for different types of data. Encoding string columns: Non-norm..." />
 
     <title>Encoding: creating feature matrices &#8212; skrub</title>
   
@@ -547,8 +547,10 @@
 <p>Encoding or vectorizing creates numerical features from the data,
 converting dataframes, strings, dates… Different encoders are suited
 for different types of data.</p>
-<section id="encoding-open-ended-entries-and-dirty-categories">
-<span id="dirty-categories"></span><h2>Encoding open-ended entries and dirty categories<a class="headerlink" href="#encoding-open-ended-entries-and-dirty-categories" title="Link to this heading">#</a></h2>
+<section id="encoding-string-columns">
+<span id="dirty-categories"></span><h2>Encoding string columns<a class="headerlink" href="#encoding-string-columns" title="Link to this heading">#</a></h2>
+<section id="non-normalized-entries-and-dirty-categories">
+<h3>Non-normalized entries and dirty categories<a class="headerlink" href="#non-normalized-entries-and-dirty-categories" title="Link to this heading">#</a></h3>
 <p>String columns can be seen categories for statistical analysis, but
 standard tools to represent categories fail if these strings are not
 normalized into a small number of well-identified form, if they have
@@ -567,7 +569,7 @@ Useful when there are a small number of categories, but we still want
 to capture the links between them (eg: “west”, “north”, “north-west”)</p></li>
 </ul>
 <aside class="topic">
-<p class="topic-title">References::</p>
+<p class="topic-title">References</p>
 <p>For a detailed description of the problem of encoding dirty
 categorical data, see <a class="reference external" href="https://hal.inria.fr/hal-01806175">Similarity encoding for learning with dirty
 categorical variables</a> <a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and
@@ -587,6 +589,49 @@ Similarity encoding for learning with dirty categorical variables. 2018.
 Machine Learning journal, Springer.</p>
 </aside>
 </aside>
+</section>
+<section id="text-with-diverse-entries">
+<h3>Text with diverse entries<a class="headerlink" href="#text-with-diverse-entries" title="Link to this heading">#</a></h3>
+<p>When strings in a column are not dirty categories, but rather diverse
+entries of text (names, open-ended or free-flowing text) it is useful to
+use language models of various sizes to represent string columns as embeddings.
+Depending on the task and dataset, this approach may lead to significant improvements
+in the quality of predictions, albeit with potential increases in memory usage and computation time.</p>
+<p>Skrub integrates these language models as scikit-learn transformers, allowing them
+to be easily plugged into <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>.</p>
+<p>These language models are pre-trained deep-learning encoders that have been fine-tuned
+specifically for embedding tasks. Note that skrub does not provide a simple way to
+fine-tune language models directly on your dataset.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These encoders require installing additional dependencies around torch.
+See the “deep learning dependencies” section in the <a class="reference internal" href="install.html#installation-instructions"><span class="std std-ref">Install</span></a>
+guide for more details.</p>
+</div>
+<p>With <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a>, a wrapper around the <a class="reference external" href="https://sbert.net/">sentence-transformers</a>
+package, you can use any sentence embedding model available on the HuggingFace Hub
+or locally stored on your disk. This means you can fine-tune a model using
+the sentence-transformers library and then use it with the <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a>
+like any other pre-trained model. For more information, see the
+<a class="reference external" href="https://sbert.net/docs/sentence_transformer/training_overview.html#why-finetune">sentence-transformers fine-tuning guide</a>.</p>
+<aside class="topic">
+<p class="topic-title">References</p>
+<p>See <a class="reference external" href="https://hal.science/hal-043459">Vectorizing string entries for data processing on tables: when are larger
+language models better?</a> <a class="footnote-reference brackets" href="#id6" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>
+for a comparison between large language models and string-based encoders
+(such as the <a class="reference internal" href="reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>) in the context of dirty categories versus
+diverse entries regimes.</p>
+</aside>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id6" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">3</a><span class="fn-bracket">]</span></span>
+<p>L. Grinsztajn, M. Kim, E. Oyallon, G. Varoquaux.
+Vectorizing string entries for data processing on tables: when are larger
+language models better? 2023.</p>
+</aside>
+</aside>
+</section>
 </section>
 <section id="encoding-dates">
 <h2>Encoding dates<a class="headerlink" href="#encoding-dates" title="Link to this heading">#</a></h2>
@@ -643,7 +688,11 @@ capture regularities: week of the day, month of the year…</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-open-ended-entries-and-dirty-categories">Encoding open-ended entries and dirty categories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-string-columns">Encoding string columns</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-normalized-entries-and-dirty-categories">Non-normalized entries and dirty categories</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#text-with-diverse-entries">Text with diverse entries</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-dates">Encoding dates</a></li>
 </ul>
   </nav></div>

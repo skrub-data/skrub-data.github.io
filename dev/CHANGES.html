@@ -546,6 +546,12 @@ pandas and polars dataframes in jupyter notebooks to replace them with a
 <section id="major-changes">
 <h3>Major changes<a class="headerlink" href="#major-changes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>The <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> is now available to encode string columns with
+diverse entries.
+It allows the representation of table entries as embeddings computed by a deep
+learning language model. The weights of this model can be fetched locally
+or from the HuggingFace Hub.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1077">#1077</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>, <a class="reference internal" href="reference/generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggTarget</span></code></a> and <a class="reference internal" href="reference/generated/skrub.MultiAggJoiner.html#skrub.MultiAggJoiner" title="skrub.MultiAggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiAggJoiner</span></code></a> now require
 the <cite>operations</cite> argument. They do not split columns by type anymore, but
 apply <cite>operations</cite> on all selected cols. “median” is now supported, “hist” and

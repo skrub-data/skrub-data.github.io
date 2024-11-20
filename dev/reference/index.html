@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/index.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="This page lists all available functions and classes of skrub. Joining dataframes: Encoding a column: Building a pipeline: Generating an HTML report: Cleaning a dataframe: Downloading a dataset:" />
+<meta property="og:description" content="This page lists all available functions and classes of skrub. Joining dataframes: Encoding a column: Deep Learning: These encoders require installing additional dependencies around torch. See the “..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="This page lists all available functions and classes of skrub. Joining dataframes: Encoding a column: Building a pipeline: Generating an HTML report: Cleaning a dataframe: Downloading a dataset:" />
+<meta name="description" content="This page lists all available functions and classes of skrub. Joining dataframes: Encoding a column: Deep Learning: These encoders require installing additional dependencies around torch. See the “..." />
 
     <title>API &#8212; skrub</title>
   
@@ -504,6 +504,9 @@
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.to_datetime.html">to_datetime</a></li>
 </ul>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.TextEncoder.html">TextEncoder</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.TableVectorizer.html">TableVectorizer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.DropCols.html">DropCols</a></li>
@@ -628,7 +631,7 @@
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a></p></td>
-<td><p>Constructs latent topics with continuous encoding.</p></td>
+<td><p>Encode string columns by constructing latent topics.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a></p></td>
 <td><p>Encode string categorical features by applying the MinHash method to n-gram     decompositions of strings.</p></td>
@@ -656,6 +659,20 @@
 </tbody>
 </table>
 </div>
+<section id="deep-learning">
+<h3>Deep Learning<a class="headerlink" href="#deep-learning" title="Link to this heading">#</a></h3>
+<p>These encoders require installing additional dependencies around torch.
+See the “deep learning dependencies” section in the <a class="reference internal" href="../install.html#installation-instructions"><span class="std std-ref">Install</span></a>
+guide for more details.</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TextEncoder</span></code></a></p></td>
+<td><p>Encode string features by applying a pretrained language model         downloaded from the HuggingFace Hub.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 </section>
 <section id="building-a-pipeline">
 <span id="building-a-pipeline-ref"></span><h2>Building a pipeline<a class="headerlink" href="#building-a-pipeline" title="Link to this heading">#</a></h2>
@@ -821,6 +838,7 @@
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-a-column">Encoding a column</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deep-learning">Deep Learning</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-a-pipeline">Building a pipeline</a><ul class="nav section-nav flex-column">

@@ -485,7 +485,7 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_encodings.html">Encoding: from a dataframe to a numerical matrix for machine learning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_feature_interpretation_with_gapencoder.html">Feature interpretation with the GapEncoder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_text_with_string_encoders.html">Various string encoders: a sentiment analysis example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_datetime_encoder.html">Handling datetime features with the DatetimeEncoder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_fuzzy_joining.html">Fuzzy joining dirty tables with the Joiner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_deduplication.html">Deduplicating misspelled categories</a></li>
@@ -585,9 +585,11 @@ Here, we consider only flights from 2008.</p></li>
 
 <span class="kn">from</span> <span class="nn">skrub.datasets</span> <span class="kn">import</span> <span class="n">fetch_figshare</span>
 
+<a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">seed</span></a> <span class="o">=</span> <span class="mi">1</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">flights</span></a> <span class="o">=</span> <span class="n">fetch_figshare</span><span class="p">(</span><span class="s2">&quot;41771418&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
+
 <span class="c1"># Sampling for faster computation.</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">flights</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sample.html#pandas.DataFrame.sample" title="pandas.DataFrame.sample" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">flights</span><span class="o">.</span><span class="n">sample</span></a><span class="p">(</span><span class="mi">20_000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">flights</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sample.html#pandas.DataFrame.sample" title="pandas.DataFrame.sample" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">flights</span><span class="o">.</span><span class="n">sample</span></a><span class="p">(</span><span class="mi">5_000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">seed</span></a><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">flights</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
 </pre></div>
 </div>
@@ -827,7 +829,7 @@ Here, we consider only weather measurements from 2008.</p></li>
 </div></blockquote>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">weather</span></a> <span class="o">=</span> <span class="n">fetch_figshare</span><span class="p">(</span><span class="s2">&quot;41771457&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
 <span class="c1"># Sampling for faster computation.</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">weather</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sample.html#pandas.DataFrame.sample" title="pandas.DataFrame.sample" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">weather</span><span class="o">.</span><span class="n">sample</span></a><span class="p">(</span><span class="mi">100_000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">weather</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sample.html#pandas.DataFrame.sample" title="pandas.DataFrame.sample" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">weather</span><span class="o">.</span><span class="n">sample</span></a><span class="p">(</span><span class="mi">10_000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">seed</span></a><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">weather</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
 </pre></div>
 </div>
@@ -1053,81 +1055,81 @@ measurement stations in the US.</p></li>
   <tbody>
     <tr>
       <th>0</th>
-      <td>AE000041196</td>
-      <td>25.333</td>
-      <td>55.517</td>
-      <td>34.0</td>
-      <td>SHARJAH INTER. AIRP</td>
+      <td>AEM00041218</td>
+      <td>24.2620</td>
+      <td>55.6090</td>
+      <td>264.9</td>
+      <td>AL AIN INTL</td>
       <td>None</td>
-      <td>GSN</td>
-      <td>41196.0</td>
+      <td>None</td>
+      <td>41218.0</td>
       <td>NaN</td>
-      <td>2008-08-15</td>
-      <td>422.0</td>
-      <td>0.0</td>
+      <td>2008-02-18</td>
+      <td>310.0</td>
+      <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>AE000041196</td>
-      <td>25.333</td>
-      <td>55.517</td>
-      <td>34.0</td>
-      <td>SHARJAH INTER. AIRP</td>
+      <td>AG000060590</td>
+      <td>30.5667</td>
+      <td>2.8667</td>
+      <td>397.0</td>
+      <td>EL-GOLEA</td>
       <td>None</td>
       <td>GSN</td>
-      <td>41196.0</td>
+      <td>60590.0</td>
       <td>NaN</td>
-      <td>2008-05-08</td>
-      <td>374.0</td>
+      <td>2008-10-09</td>
+      <td>278.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
+      <td>AGE00147716</td>
+      <td>35.1000</td>
+      <td>-1.8500</td>
+      <td>83.0</td>
+      <td>NEMOURS (GHAZAOUET)</td>
       <td>None</td>
       <td>None</td>
-      <td>41194.0</td>
+      <td>60517.0</td>
       <td>NaN</td>
-      <td>2008-04-04</td>
-      <td>288.0</td>
+      <td>2008-09-23</td>
+      <td>301.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
+      <td>AGE00147718</td>
+      <td>34.8500</td>
+      <td>5.7200</td>
+      <td>125.0</td>
+      <td>BISKRA</td>
       <td>None</td>
       <td>None</td>
-      <td>41194.0</td>
+      <td>60525.0</td>
       <td>NaN</td>
-      <td>2008-05-21</td>
-      <td>365.0</td>
+      <td>2008-08-09</td>
+      <td>429.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
+      <td>AGM00060353</td>
+      <td>36.8170</td>
+      <td>5.8830</td>
+      <td>6.0</td>
+      <td>JIJEL-PORT</td>
       <td>None</td>
       <td>None</td>
-      <td>41194.0</td>
+      <td>60353.0</td>
       <td>NaN</td>
-      <td>2008-01-21</td>
-      <td>221.0</td>
+      <td>2008-07-01</td>
+      <td>286.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
@@ -1194,18 +1196,18 @@ tables into one.</p>
   <tbody>
     <tr>
       <th>0</th>
-      <td>AE000041196</td>
-      <td>25.333</td>
-      <td>55.517</td>
-      <td>34.0</td>
-      <td>SHARJAH INTER. AIRP</td>
+      <td>AEM00041218</td>
+      <td>24.2620</td>
+      <td>55.6090</td>
+      <td>264.9</td>
+      <td>AL AIN INTL</td>
       <td>None</td>
-      <td>GSN</td>
-      <td>41196.0</td>
+      <td>None</td>
+      <td>41218.0</td>
       <td>NaN</td>
-      <td>2008-08-15</td>
-      <td>422.0</td>
-      <td>0.0</td>
+      <td>2008-02-18</td>
+      <td>310.0</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>ROP</td>
       <td>Prachinburi</td>
@@ -1214,112 +1216,112 @@ tables into one.</p>
       <td>Thailand</td>
       <td>14.078333</td>
       <td>101.378334</td>
-      <td>2.418438</td>
-      <td>3.314383</td>
+      <td>2.345567</td>
+      <td>3.214517</td>
       <td>True</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>AE000041196</td>
-      <td>25.333</td>
-      <td>55.517</td>
-      <td>34.0</td>
-      <td>SHARJAH INTER. AIRP</td>
+      <td>AG000060590</td>
+      <td>30.5667</td>
+      <td>2.8667</td>
+      <td>397.0</td>
+      <td>EL-GOLEA</td>
       <td>None</td>
       <td>GSN</td>
-      <td>41196.0</td>
+      <td>60590.0</td>
       <td>NaN</td>
-      <td>2008-05-08</td>
-      <td>374.0</td>
+      <td>2008-10-09</td>
+      <td>278.0</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>ROP</td>
-      <td>Prachinburi</td>
-      <td>None</td>
-      <td>None</td>
-      <td>Thailand</td>
-      <td>14.078333</td>
-      <td>101.378334</td>
-      <td>2.418438</td>
-      <td>3.314383</td>
+      <td>X96</td>
+      <td>Cruz Bay Harbor Seaplane Base</td>
+      <td>Cruz Bay</td>
+      <td>VI</td>
+      <td>USA</td>
+      <td>18.336898</td>
+      <td>-64.799583</td>
+      <td>3.303558</td>
+      <td>4.527409</td>
       <td>True</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
+      <td>AGE00147716</td>
+      <td>35.1000</td>
+      <td>-1.8500</td>
+      <td>83.0</td>
+      <td>NEMOURS (GHAZAOUET)</td>
       <td>None</td>
       <td>None</td>
-      <td>41194.0</td>
+      <td>60517.0</td>
       <td>NaN</td>
-      <td>2008-04-04</td>
-      <td>288.0</td>
+      <td>2008-09-23</td>
+      <td>301.0</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>ROP</td>
-      <td>Prachinburi</td>
-      <td>None</td>
-      <td>None</td>
-      <td>Thailand</td>
-      <td>14.078333</td>
-      <td>101.378334</td>
-      <td>2.418781</td>
-      <td>3.314853</td>
+      <td>ACK</td>
+      <td>Nantucket Memorial</td>
+      <td>Nantucket</td>
+      <td>MA</td>
+      <td>USA</td>
+      <td>41.253052</td>
+      <td>-70.060181</td>
+      <td>3.073160</td>
+      <td>4.211656</td>
       <td>True</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
+      <td>AGE00147718</td>
+      <td>34.8500</td>
+      <td>5.7200</td>
+      <td>125.0</td>
+      <td>BISKRA</td>
       <td>None</td>
       <td>None</td>
-      <td>41194.0</td>
+      <td>60525.0</td>
       <td>NaN</td>
-      <td>2008-05-21</td>
-      <td>365.0</td>
+      <td>2008-08-09</td>
+      <td>429.0</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>ROP</td>
-      <td>Prachinburi</td>
-      <td>None</td>
-      <td>None</td>
-      <td>Thailand</td>
-      <td>14.078333</td>
-      <td>101.378334</td>
-      <td>2.418781</td>
-      <td>3.314853</td>
+      <td>ACK</td>
+      <td>Nantucket Memorial</td>
+      <td>Nantucket</td>
+      <td>MA</td>
+      <td>USA</td>
+      <td>41.253052</td>
+      <td>-70.060181</td>
+      <td>3.402099</td>
+      <td>4.662456</td>
       <td>True</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>AEM00041194</td>
-      <td>25.255</td>
-      <td>55.364</td>
-      <td>10.4</td>
-      <td>DUBAI INTL</td>
+      <td>AGM00060353</td>
+      <td>36.8170</td>
+      <td>5.8830</td>
+      <td>6.0</td>
+      <td>JIJEL-PORT</td>
       <td>None</td>
       <td>None</td>
-      <td>41194.0</td>
+      <td>60353.0</td>
       <td>NaN</td>
-      <td>2008-01-21</td>
-      <td>221.0</td>
+      <td>2008-07-01</td>
+      <td>286.0</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>ROP</td>
-      <td>Prachinburi</td>
-      <td>None</td>
-      <td>None</td>
-      <td>Thailand</td>
-      <td>14.078333</td>
-      <td>101.378334</td>
-      <td>2.418781</td>
-      <td>3.314853</td>
+      <td>EPM</td>
+      <td>Eastport Municipal</td>
+      <td>Eastport</td>
+      <td>ME</td>
+      <td>USA</td>
+      <td>44.910111</td>
+      <td>-67.012694</td>
+      <td>3.332759</td>
+      <td>4.567428</td>
       <td>True</td>
     </tr>
   </tbody>
@@ -1449,73 +1451,73 @@ Let’s instanciate another multiple key joiner on the date and the airport:</p>
       <td>...</td>
     </tr>
     <tr>
-      <th>19995</th>
-      <td>2008-01-14</td>
-      <td>1</td>
-      <td>1900-01-01 09:50:00</td>
-      <td>1900-01-01 11:45:00</td>
-      <td>WN</td>
-      <td>115.0</td>
-      <td>-7.0</td>
-      <td>SMF</td>
-      <td>SEA</td>
-      <td>605.0</td>
-    </tr>
-    <tr>
-      <th>19996</th>
-      <td>2008-03-19</td>
-      <td>3</td>
-      <td>1900-01-01 13:55:00</td>
-      <td>1900-01-01 18:40:00</td>
-      <td>AA</td>
-      <td>165.0</td>
-      <td>-27.0</td>
-      <td>LAS</td>
-      <td>DFW</td>
-      <td>1055.0</td>
-    </tr>
-    <tr>
-      <th>19997</th>
-      <td>2008-03-15</td>
-      <td>6</td>
-      <td>1900-01-01 12:00:00</td>
-      <td>1900-01-01 18:50:00</td>
-      <td>WN</td>
-      <td>230.0</td>
-      <td>-29.0</td>
-      <td>PHX</td>
-      <td>PIT</td>
-      <td>1813.0</td>
-    </tr>
-    <tr>
-      <th>19998</th>
-      <td>2008-02-27</td>
-      <td>3</td>
-      <td>1900-01-01 07:20:00</td>
+      <th>4995</th>
+      <td>2008-02-14</td>
+      <td>4</td>
       <td>1900-01-01 09:00:00</td>
-      <td>MQ</td>
-      <td>100.0</td>
-      <td>NaN</td>
-      <td>XNA</td>
-      <td>ORD</td>
-      <td>522.0</td>
+      <td>1900-01-01 11:30:00</td>
+      <td>AS</td>
+      <td>150.0</td>
+      <td>-2.0</td>
+      <td>SEA</td>
+      <td>LAS</td>
+      <td>866.0</td>
     </tr>
     <tr>
-      <th>19999</th>
-      <td>2008-03-04</td>
+      <th>4996</th>
+      <td>2008-03-25</td>
       <td>2</td>
-      <td>1900-01-01 06:20:00</td>
-      <td>1900-01-01 08:01:00</td>
-      <td>9E</td>
-      <td>101.0</td>
-      <td>-8.0</td>
-      <td>IAH</td>
-      <td>MEM</td>
-      <td>469.0</td>
+      <td>1900-01-01 23:20:00</td>
+      <td>1900-01-01 06:21:00</td>
+      <td>US</td>
+      <td>241.0</td>
+      <td>-5.0</td>
+      <td>LAS</td>
+      <td>CLT</td>
+      <td>1916.0</td>
+    </tr>
+    <tr>
+      <th>4997</th>
+      <td>2008-01-20</td>
+      <td>7</td>
+      <td>1900-01-01 06:00:00</td>
+      <td>1900-01-01 07:30:00</td>
+      <td>AQ</td>
+      <td>90.0</td>
+      <td>-13.0</td>
+      <td>LAS</td>
+      <td>OAK</td>
+      <td>407.0</td>
+    </tr>
+    <tr>
+      <th>4998</th>
+      <td>2008-03-28</td>
+      <td>5</td>
+      <td>1900-01-01 09:20:00</td>
+      <td>1900-01-01 11:10:00</td>
+      <td>AA</td>
+      <td>170.0</td>
+      <td>93.0</td>
+      <td>DFW</td>
+      <td>SLC</td>
+      <td>988.0</td>
+    </tr>
+    <tr>
+      <th>4999</th>
+      <td>2008-04-15</td>
+      <td>2</td>
+      <td>1900-01-01 23:59:00</td>
+      <td>1900-01-01 08:00:00</td>
+      <td>B6</td>
+      <td>301.0</td>
+      <td>0.0</td>
+      <td>SEA</td>
+      <td>JFK</td>
+      <td>2421.0</td>
     </tr>
   </tbody>
 </table>
-<p>20000 rows × 10 columns</p>
+<p>5000 rows × 10 columns</p>
 </div>
 </div>
 <br />
@@ -1551,26 +1553,22 @@ the flight was delayed (1) or not (0).</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>ArrDelay
-0    10686
-1     9314
+0    2646
+1    2354
 Name: count, dtype: int64
 </pre></div>
 </div>
 <p>The results:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html#sklearn.model_selection.cross_val_score" title="sklearn.model_selection.cross_val_score" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_val_score</span></a>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="sklearn.model_selection.train_test_split" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">train_test_split</span></a>
 
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html#sklearn.model_selection.cross_val_score" title="sklearn.model_selection.cross_val_score" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_val_score</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline_hgb</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_test</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y_train</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y_test</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="sklearn.model_selection.train_test_split" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">train_test_split</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">seed</span></a><span class="p">)</span>
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.fit" title="sklearn.pipeline.Pipeline.fit" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-method"><span class="n">pipeline_hgb</span><span class="o">.</span><span class="n">fit</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y_train</span></a><span class="p">)</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_test</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y_test</span></a><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [0] during transform. These unknown categories will be encoded as all zeros
   warnings.warn(
-/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [0] during transform. These unknown categories will be encoded as all zeros
-  warnings.warn(
-/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [0] during transform. These unknown categories will be encoded as all zeros
-  warnings.warn(
 
-np.float64(0.5883499999999999)
+0.5544
 </pre></div>
 </div>
 </section>
@@ -1579,8 +1577,8 @@ np.float64(0.5883499999999999)
 <p>In this example, we have combined multiple tables with complex joins
 on imprecise and multiple-key correspondences.
 This is made easy by skrub’s <a class="reference internal" href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> transformer.</p>
-<p>Our final cross-validated accuracy score is 0.58.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (8 minutes 6.079 seconds)</p>
+<p>Our final cross-validated accuracy score is 0.55.</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 17.222 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-07-multiple-key-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />

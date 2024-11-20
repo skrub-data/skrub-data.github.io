@@ -72,7 +72,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Fuzzy joining dirty tables with the Joiner" href="04_fuzzy_joining.html" />
-    <link rel="prev" title="Feature interpretation with the GapEncoder" href="02_feature_interpretation_with_gapencoder.html" />
+    <link rel="prev" title="Various string encoders: a sentiment analysis example" href="02_text_with_string_encoders.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.4.dev0" />
@@ -485,7 +485,7 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_encodings.html">Encoding: from a dataframe to a numerical matrix for machine learning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_feature_interpretation_with_gapencoder.html">Feature interpretation with the GapEncoder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_text_with_string_encoders.html">Various string encoders: a sentiment analysis example</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Handling datetime features with the DatetimeEncoder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_fuzzy_joining.html">Fuzzy joining dirty tables with the Joiner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_deduplication.html">Deduplicating misspelled categories</a></li>
@@ -868,8 +868,8 @@ which ensures that the test set is always in the future.</p>
 <span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([ -6664.06809097,  -6520.55512687, -21139.48809623, -13259.6685327 ,
-       -14320.98018264])
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([ -6664.06809097,  -6520.55512687, -21139.48809623, -13293.47929107,
+       -13939.00601341])
 </pre></div>
 </div>
 </section>
@@ -970,7 +970,7 @@ are the most important features, which seems reasonable.</p>
 features from a datetime column.
 Also check out the <a class="reference internal" href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, which automatically recognizes
 and transforms datetime columns by default.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.838 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.243 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-03-datetime-encoder-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/03_datetime_encoder.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
@@ -1005,12 +1005,12 @@ and transforms datetime columns by default.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="02_feature_interpretation_with_gapencoder.html"
+       href="02_text_with_string_encoders.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Feature interpretation with the GapEncoder</p>
+        <p class="prev-next-title">Various string encoders: a sentiment analysis example</p>
       </div>
     </a>
     <a class="right-next"
