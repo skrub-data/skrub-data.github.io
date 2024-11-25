@@ -590,8 +590,9 @@ reach the dataframe sample table and activate a cell with tab key navigation.
 <li><p>The “Column name” column of the “summary statistics” table in the TableReport
 is now always visible when scrolling the table. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1102">#1102</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme
 Dockès</a>.</p></li>
-<li><p>Added a <cite>DropColumnIfNull</cite> transformer that drops columns that contain only null
-values. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1115">#1115</a> by :user: <cite>Riccardo Cappuzzo &lt;riccardocappuzzo&gt;</cite></p></li>
+<li><p>Added parameter <cite>drop_null_fraction</cite> to <cite>TableVectorizer</cite> to drop columns based
+on whether they contain a fraction of nulls larger than the given threshold.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1115">#1115</a> and <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1149">#1149</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 <li><p>The <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> now provides more helpful output for columns of dtype
 TimeDelta / Duration. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1152">#1152</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>The <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> now also reports the number of unique values for
