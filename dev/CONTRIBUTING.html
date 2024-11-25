@@ -651,8 +651,9 @@ See the relevant sections above on how to do this.</p>
 </section>
 <section id="setting-up-the-environment">
 <h4>Setting up the environment<a class="headerlink" href="#setting-up-the-environment" title="Link to this heading">#</a></h4>
-<p>Follow the steps in the <a class="reference internal" href="install.html#installation-instructions"><span class="std std-ref">Install</span></a> &gt; “From Source” section to
-set up your environment.</p>
+<p>Follow the steps in the <a class="reference internal" href="install.html#installation-instructions"><span class="std std-ref">Install</span></a> &gt; “From Source” section
+to set up your environment, install the required development dependencies, and
+run the tests.</p>
 <p>When starting to work on a new issue, it’s recommended to create a new branch:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git switch -c branch_name</span>
 </pre></div>
@@ -686,6 +687,60 @@ Refer to this <a class="reference external" href="https://stackoverflow.blog/202
 </li>
 </ul>
 </section>
+</section>
+<section id="testing-the-code">
+<h3>Testing the code<a class="headerlink" href="#testing-the-code" title="Link to this heading">#</a></h3>
+<p>Tests for files in a given folder should be located in a sub-folder
+named <code class="docutils literal notranslate"><span class="pre">tests</span></code>: tests for Skrub objects are located in <code class="docutils literal notranslate"><span class="pre">skrub/tests/</span></code>,
+tests for the dataframe API are in <code class="docutils literal notranslate"><span class="pre">skrub/_dataframe/tests/</span></code> and so on.</p>
+<p>Tests should check all functionalities of the code that you are going to
+add. If needed, additional tests should be added to verify that other
+objects behave correctly.</p>
+<p>Consider an example: your contribution is for the
+<code class="docutils literal notranslate"><span class="pre">AmazingTransformer</span></code>, whose code is in
+<code class="docutils literal notranslate"><span class="pre">skrub/_amazing_transformer.py</span></code>. The <code class="docutils literal notranslate"><span class="pre">AmazingTransformer</span></code> is added
+as one of the default transformers for <code class="docutils literal notranslate"><span class="pre">TableVectorizer</span></code>.</p>
+<p>As such, you should add a new file testing the functionality of
+<code class="docutils literal notranslate"><span class="pre">AmazingTransformer</span></code> in <code class="docutils literal notranslate"><span class="pre">skrub/tests/test_amazing_transformer.py</span></code>,
+and update the file <code class="docutils literal notranslate"><span class="pre">skrub/tests/test_table_vectorizer.py</span></code> so that it
+takes into account the new transformer.</p>
+<p>Additionally, you might have updated the internal dataframe API in
+<code class="docutils literal notranslate"><span class="pre">skrub/_dataframe/_common.py</span></code> with a new function,
+<code class="docutils literal notranslate"><span class="pre">amazing_function</span></code>. In this case, you should also update
+<code class="docutils literal notranslate"><span class="pre">skrub/_dataframe/tests/test_common.py</span></code> to add a test for the
+<code class="docutils literal notranslate"><span class="pre">amazing_function</span></code>.</p>
+<p>Run each updated test file using <code class="docutils literal notranslate"><span class="pre">pytest</span></code>:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pytest<span class="w"> </span>-vsl<span class="w"> </span>skrub/tests/test_amazing_transformer.py<span class="w"> </span><span class="se">\</span>
+skrub/_dataframe/tests/test_common.py<span class="w"> </span><span class="se">\</span>
+skrub/_dataframe/tests/test_table_vectorizer.py
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">-vsl</span></code> flag provides more information when running the tests.</p>
+<p>Once you are satisfied with your changes, you can run all the tests to make sure
+that your change did not break code elsewhere:</p>
+<p>Finally, sync your changes with the remote repository and wait for CI to run.</p>
+</section>
+<section id="checking-coverage-on-the-local-machine">
+<h3>Checking coverage on the local machine<a class="headerlink" href="#checking-coverage-on-the-local-machine" title="Link to this heading">#</a></h3>
+<p>Checking coverage is one of the operations that is performed after
+submitting the code. As this operation may take a long time online, it
+is possible to check whether the code coverage is high enough on your
+local machine.</p>
+<p>Run your tests with the <code class="docutils literal notranslate"><span class="pre">--cov</span></code> and <code class="docutils literal notranslate"><span class="pre">--cov-report</span></code> arguments:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pytest<span class="w"> </span>-vsl<span class="w"> </span>skrub/tests/test_amazing_transformer.py<span class="w"> </span>--cov<span class="o">=</span>skrub<span class="w"> </span>--cov-report<span class="o">=</span>html
+</pre></div>
+</div>
+<p>This will create the folder <code class="docutils literal notranslate"><span class="pre">htmlcov</span></code>: by opening
+<code class="docutils literal notranslate"><span class="pre">htmlcov/index.html</span></code> it is possible to check what lines are covered in
+each file.</p>
+</section>
+<section id="updating-doctests">
+<h3>Updating doctests<a class="headerlink" href="#updating-doctests" title="Link to this heading">#</a></h3>
+<p>If you alter the default behavior of an object, then this might affect
+the docstrings. Check for possible problems by running</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pytest<span class="w"> </span>skrub/path/to/file
+</pre></div>
+</div>
 <section id="submitting-your-code">
 <h4>Submitting your code<a class="headerlink" href="#submitting-your-code" title="Link to this heading">#</a></h4>
 <p>Once you have pushed your commits to your remote repository, you can submit
@@ -744,6 +799,18 @@ actions are taken.</p>
 </div></blockquote>
 <p>Note that by default the documentation is built, but only the examples that are
 directly modified by the pull request are executed.</p>
+<ul class="simple">
+<li><p>If the remote repository was changed, you might need to run
+<code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">run</span> <span class="pre">--all-files</span></code> to make sure that the formatting is
+correct.</p></li>
+<li><p>If a specific test environment fails, it is possible to run the tests
+in the environment that is failing by using pixi. For example if the
+env is <code class="docutils literal notranslate"><span class="pre">ci-py309-min-optional-deps</span></code>, it is possible to replicate it
+using the following command:</p></li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pixi<span class="w"> </span>run<span class="w"> </span>-e<span class="w"> </span>ci-py309-min-optional-deps<span class="w">  </span>pytest<span class="w"> </span>skrub/tests/path/to/test
+</pre></div>
+</div>
 </section>
 </section>
 <section id="building-the-documentation">
@@ -836,6 +903,11 @@ specific examples, you can use the following command with a regex pattern:</p>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-the-ground">Preparing the ground</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-the-environment">Setting up the environment</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-guidelines">Implementation Guidelines</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-the-code">Testing the code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-coverage-on-the-local-machine">Checking coverage on the local machine</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#updating-doctests">Updating doctests</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-your-code">Submitting your code</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">Integration</a></li>
 </ul>
