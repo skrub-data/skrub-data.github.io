@@ -1,0 +1,13 @@
+﻿DatasetAll
+==========
+
+.. currentmodule:: skrub.datasets
+
+.. autoclass:: DatasetAll
+   :members:
+   :inherited-members:
+   :special-members: __call__
+
+.. minigallery:: skrub.datasets.DatasetAll skrub.datasets.DatasetAll.__init__ 
+   :add-heading: Gallery examples
+   :heading-level: -

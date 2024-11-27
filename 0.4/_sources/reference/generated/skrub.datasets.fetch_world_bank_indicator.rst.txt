@@ -1,0 +1,10 @@
+﻿fetch\_world\_bank\_indicator
+=============================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_world_bank_indicator
+
+.. minigallery:: skrub.datasets.fetch_world_bank_indicator
+   :add-heading: Gallery examples
+   :heading-level: -

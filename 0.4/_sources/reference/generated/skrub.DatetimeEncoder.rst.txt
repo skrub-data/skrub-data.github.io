@@ -1,0 +1,13 @@
+﻿DatetimeEncoder
+===============
+
+.. currentmodule:: skrub
+
+.. autoclass:: DatetimeEncoder
+   :members:
+   :inherited-members:
+   :special-members: __call__
+
+.. minigallery:: skrub.DatetimeEncoder skrub.DatetimeEncoder.__init__ skrub.DatetimeEncoder.fit skrub.DatetimeEncoder.fit_transform skrub.DatetimeEncoder.get_metadata_routing skrub.DatetimeEncoder.get_params skrub.DatetimeEncoder.set_fit_request skrub.DatetimeEncoder.set_params skrub.DatetimeEncoder.set_transform_request skrub.DatetimeEncoder.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

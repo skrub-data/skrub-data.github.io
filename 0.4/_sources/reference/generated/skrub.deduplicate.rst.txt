@@ -1,0 +1,10 @@
+﻿deduplicate
+===========
+
+.. currentmodule:: skrub
+
+.. autofunction:: deduplicate
+
+.. minigallery:: skrub.deduplicate
+   :add-heading: Gallery examples
+   :heading-level: -

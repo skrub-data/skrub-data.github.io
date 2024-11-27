@@ -1,0 +1,13 @@
+﻿MinHashEncoder
+==============
+
+.. currentmodule:: skrub
+
+.. autoclass:: MinHashEncoder
+   :members:
+   :inherited-members:
+   :special-members: __call__
+
+.. minigallery:: skrub.MinHashEncoder skrub.MinHashEncoder.__init__ skrub.MinHashEncoder.fit skrub.MinHashEncoder.fit_transform skrub.MinHashEncoder.get_feature_names_out skrub.MinHashEncoder.get_metadata_routing skrub.MinHashEncoder.get_params skrub.MinHashEncoder.set_fit_request skrub.MinHashEncoder.set_output skrub.MinHashEncoder.set_params skrub.MinHashEncoder.transform 
+   :add-heading: Gallery examples
+   :heading-level: -
