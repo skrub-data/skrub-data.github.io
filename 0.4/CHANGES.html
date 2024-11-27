@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. New features: The column_associations() function has been..." />
+<meta property="og:description" content="Release 0.4.0: Highlights: The TextEncoder can extract embeddings from a string column with a deep learning language model (possibly downloaded from the HuggingFace Hub)., Several improvements to t..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: Skrub is a very recent package. It is currently undergoing fast development and backward compatibility is not ensured. New features: The column_associations() function has been..." />
+<meta name="description" content="Release 0.4.0: Highlights: The TextEncoder can extract embeddings from a string column with a deep learning language model (possibly downloaded from the HuggingFace Hub)., Several improvements to t..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script src="_static/documentation_options.js?v=414d5694"></script>
+    <script src="_static/documentation_options.js?v=6c02275b"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.4.dev0';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.4.0';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = true;
         </script>
     <link rel="icon" href="_static/skrub.svg"/>
@@ -75,7 +75,7 @@
     <link rel="prev" title="Interpolation join: infer missing rows when joining two tables" href="auto_examples/09_interpolation_join.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.4.dev0" />
+  <meta name="docsearch:version" content="0.4.0" />
   </head>
   
   
@@ -526,13 +526,30 @@
                   
   <section id="release-history">
 <span id="changes"></span><h1>Release history<a class="headerlink" href="#release-history" title="Link to this heading">#</a></h1>
-<section id="ongoing-development">
-<h2>Ongoing development<a class="headerlink" href="#ongoing-development" title="Link to this heading">#</a></h2>
-<p>Skrub is a very recent package.
-It is currently undergoing fast development and backward compatibility is not ensured.</p>
+<section id="release-0-4-0">
+<h2>Release 0.4.0<a class="headerlink" href="#release-0-4-0" title="Link to this heading">#</a></h2>
+<section id="highlights">
+<h3>Highlights<a class="headerlink" href="#highlights" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> can extract embeddings from a string column with  a deep
+learning language model (possibly downloaded from the HuggingFace Hub).</p></li>
+<li><p>Several improvements to the <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> such as better support for
+other scripts than the latin alphabet in the bar plot labels, smaller report
+sizes, clipping the outliers to better see the details of distributions in
+histograms. See the full changelog for details.</p></li>
+<li><p>The <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> can now drop columns that contain a fraction of
+null values above a user-chosen threshold.</p></li>
+</ul>
+</section>
 <section id="new-features">
 <h3>New features<a class="headerlink" href="#new-features" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>The <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> is now available to encode string columns with
+diverse entries.
+It allows the representation of table entries as embeddings computed by a deep
+learning language model. The weights of this model can be fetched locally
+or from the HuggingFace Hub.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1077">#1077</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a>.</p></li>
 <li><p>The <a class="reference internal" href="reference/generated/skrub.column_associations.html#skrub.column_associations" title="skrub.column_associations"><code class="xref py py-func docutils literal notranslate"><span class="pre">column_associations()</span></code></a> function has been added. It computes a
 pairwise measure of statistical dependence between all columns in a dataframe
 (the same as shown in the <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>). <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1109">#1109</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme
@@ -546,12 +563,6 @@ pandas and polars dataframes in jupyter notebooks to replace them with a
 <section id="major-changes">
 <h3>Major changes<a class="headerlink" href="#major-changes" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>The <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> is now available to encode string columns with
-diverse entries.
-It allows the representation of table entries as embeddings computed by a deep
-learning language model. The weights of this model can be fetched locally
-or from the HuggingFace Hub.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1077">#1077</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>, <a class="reference internal" href="reference/generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggTarget</span></code></a> and <a class="reference internal" href="reference/generated/skrub.MultiAggJoiner.html#skrub.MultiAggJoiner" title="skrub.MultiAggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiAggJoiner</span></code></a> now require
 the <cite>operations</cite> argument. They do not split columns by type anymore, but
 apply <cite>operations</cite> on all selected cols. “median” is now supported, “hist” and
@@ -669,8 +680,8 @@ This has been fixed in <a class="reference external" href="https://github.com/sk
 </section>
 <section id="release-0-3-0">
 <h2>Release 0.3.0<a class="headerlink" href="#release-0-3-0" title="Link to this heading">#</a></h2>
-<section id="highlights">
-<h3>Highlights<a class="headerlink" href="#highlights" title="Link to this heading">#</a></h3>
+<section id="id2">
+<h3>Highlights<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Polars dataframes are now supported across all <code class="docutils literal notranslate"><span class="pre">skrub</span></code> estimators.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> generates an interactive report for a dataframe. This
@@ -678,8 +689,8 @@ This has been fixed in <a class="reference external" href="https://github.com/sk
 precomputed examples.</p></li>
 </ul>
 </section>
-<section id="id2">
-<h3>Major changes<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="id3">
+<h3>Major changes<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The <a class="reference internal" href="reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> now supports polars dataframes. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1016">#1016</a>
 by <a class="reference external" href="https://github.com/TheooJ">Théo Jolivet</a>.</p></li>
@@ -689,8 +700,8 @@ between columns. It can be displayed in a jupyter notebook, a browser tab or
 saved as a static HTML page. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/984">#984</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 </ul>
 </section>
-<section id="id3">
-<h3>Minor changes<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<section id="id4">
+<h3>Minor changes<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a> and <a class="reference internal" href="reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> used to raise an error when columns
 with the same name appeared in the main and auxiliary table (after adding the
@@ -710,8 +721,8 @@ This has been corrected.
 </section>
 <section id="release-0-2-0">
 <h2>Release 0.2.0<a class="headerlink" href="#release-0-2-0" title="Link to this heading">#</a></h2>
-<section id="id4">
-<h3>Major changes<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<section id="id5">
+<h3>Major changes<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The <a class="reference internal" href="reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a> has been adapted to support polars dataframes. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/945">#945</a> by <a class="reference external" href="https://github.com/TheooJ">Théo Jolivet</a>.</p></li>
 <li><p>The <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> now consistently applies the same transformation
@@ -741,8 +752,8 @@ the same column names. <a class="reference external" href="https://github.com/sk
 learner that works well on tabular data. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/926">#926</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 </ul>
 </section>
-<section id="id5">
-<h3>Minor changes<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<section id="id6">
+<h3>Minor changes<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> and <a class="reference internal" href="reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> used to modify their input
 in-place, replacing missing values with a string. They no longer do so. Their
@@ -769,8 +780,8 @@ scikit-learn (1.5). There are no major changes to the functionality of skrub.</p
 </section>
 <section id="skrub-release-0-1-0">
 <h2>skrub release 0.1.0<a class="headerlink" href="#skrub-release-0-1-0" title="Link to this heading">#</a></h2>
-<section id="id6">
-<h3>Major changes<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<section id="id7">
+<h3>Major changes<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">TargetEncoder</span></code> has been removed in favor of
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.TargetEncoder.html#sklearn.preprocessing.TargetEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.preprocessing.TargetEncoder</span></code></a>, available since scikit-learn 1.3.</p></li>
@@ -819,8 +830,8 @@ selecting a subset of a dataframe’s columns inside of a pipeline. <a class="re
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 </ul>
 </section>
-<section id="id8">
-<h3>Minor changes<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<section id="id9">
+<h3>Minor changes<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> doesn’t remove constant features anymore.
 It also supports an ‘errors’ argument to raise or coerce errors during
@@ -933,8 +944,8 @@ package.</p>
 </section>
 <section id="dirty-cat-release-0-4-1">
 <h2>Dirty-cat release 0.4.1<a class="headerlink" href="#dirty-cat-release-0-4-1" title="Link to this heading">#</a></h2>
-<section id="id9">
-<h3>Major changes<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<section id="id10">
+<h3>Major changes<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> and <code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureAugmenter</span></code> can now join on numerical columns based on the euclidean distance.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/530">#530</a> by <a class="reference external" href="https://github.com/jovan-stojanovic">Jovan Stojanovic</a></p></li>
@@ -950,8 +961,8 @@ but raises a warning. <a class="reference external" href="https://github.com/skr
 KEN embeddings. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/539">#539</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a>.</p></li>
 </ul>
 </section>
-<section id="id10">
-<h3>Minor changes<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<section id="id11">
+<h3>Minor changes<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Improvement of date column detection and date format inference in <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>. The
 format inference now tries to find a format which works for all non-missing values of the column, and only
@@ -963,8 +974,8 @@ tries pandas default inference if it fails.
 </section>
 <section id="dirty-cat-release-0-4-0">
 <h2>Dirty-cat Release 0.4.0<a class="headerlink" href="#dirty-cat-release-0-4-0" title="Link to this heading">#</a></h2>
-<section id="id11">
-<h3>Major changes<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<section id="id12">
+<h3>Major changes<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><cite>SuperVectorizer</cite> is renamed as <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, a warning is raised when using the old name.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/484">#484</a> by <a class="reference external" href="https://github.com/jovan-stojanovic">Jovan Stojanovic</a></p></li>
@@ -983,8 +994,8 @@ This function works best when there are significantly more duplicates than under
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/339">#339</a> by <a class="reference external" href="https://github.com/mjboos">Moritz Boos</a>.</p></li>
 </ul>
 </section>
-<section id="id12">
-<h3>Minor changes<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<section id="id13">
+<h3>Minor changes<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Add example <cite>Wikipedia embeddings to enrich the data</cite>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/487">#487</a> by <a class="reference external" href="https://github.com/jovan-stojanovic">Jovan Stojanovic</a></p></li>
 <li><p><strong>datasets.fetching</strong>: contains a new function <code class="xref py py-func docutils literal notranslate"><span class="pre">get_ken_embeddings()</span></code> that can be used to download Wikipedia
@@ -1005,8 +1016,8 @@ to <cite>handle_unknown=”ignore”</cite> instead of <cite>handle_unknown=”e
 This means that categories seen only at test time will be encoded by a vector of zeroes instead of raising an error. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/473">#473</a> by <a class="reference external" href="https://github.com/LeoGrin">Leo Grinsztajn</a></p></li>
 </ul>
 </section>
-<section id="id13">
-<h3>Bug fixes<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<section id="id14">
+<h3>Bug fixes<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The <a class="reference internal" href="reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> now considers <cite>None</cite> and empty strings as missing values, rather
 than raising an error. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/378">#378</a> by <a class="reference external" href="https://github.com/GaelVaroquaux">Gael Varoquaux</a></p></li>
@@ -1015,8 +1026,8 @@ than raising an error. <a class="reference external" href="https://github.com/sk
 </section>
 <section id="dirty-cat-release-0-3-0">
 <h2>Dirty-cat Release 0.3.0<a class="headerlink" href="#dirty-cat-release-0-3-0" title="Link to this heading">#</a></h2>
-<section id="id14">
-<h3>Major changes<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<section id="id15">
+<h3>Major changes<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
 <ul>
 <li><p>New encoder: <a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> can transform a datetime column into several numerical columns
 (year, month, day, hour, minute, second, …). It is now the default transformer used
@@ -1060,8 +1071,8 @@ names instead of column indices for the “remainder” columns. <a class="refer
 </section>
 <section id="dirty-cat-release-0-2-2">
 <h2>Dirty-cat Release 0.2.2<a class="headerlink" href="#dirty-cat-release-0-2-2" title="Link to this heading">#</a></h2>
-<section id="id15">
-<h3>Bug fixes<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<section id="id16">
+<h3>Bug fixes<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Fixed a bug in the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> causing a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#FutureWarning" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FutureWarning</span></code></a>
 when using the <code class="xref py py-func docutils literal notranslate"><span class="pre">get_feature_names_out()</span></code> method. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/262">#262</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
@@ -1070,8 +1081,8 @@ when using the <code class="xref py py-func docutils literal notranslate"><span 
 </section>
 <section id="dirty-cat-release-0-2-1">
 <h2>Dirty-cat Release 0.2.1<a class="headerlink" href="#dirty-cat-release-0-2-1" title="Link to this heading">#</a></h2>
-<section id="id16">
-<h3>Major changes<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<section id="id17">
+<h3>Major changes<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
 <ul>
 <li><p>Improvements to the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></p>
 <blockquote>
@@ -1095,16 +1106,16 @@ on multiple columns.</p></li>
 </li>
 </ul>
 </section>
-<section id="id17">
-<h3>Bug-fixes<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<section id="id18">
+<h3>Bug-fixes<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Fixed a bug that resulted in the <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> ignoring the analyzer argument. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/242">#242</a> by <a class="reference external" href="https://github.com/jovan-stojanovic">Jovan Stojanovic</a></p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>’s <cite>get_feature_names_out</cite> now accepts all iterators, not just lists. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/255">#255</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
 <li><p>Fixed <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#DeprecationWarning" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DeprecationWarning</span></code></a> raised by the usage of <cite>distutils.version.LooseVersion</cite>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/261">#261</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
 </ul>
 </section>
-<section id="id18">
-<h3>Notes<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
+<section id="id19">
+<h3>Notes<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Remove trailing imports in the <a class="reference internal" href="reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>.</p></li>
 <li><p>Fix typos and update links for website.</p></li>
@@ -1115,8 +1126,8 @@ on multiple columns.</p></li>
 <section id="dirty-cat-release-0-2-0">
 <h2>Dirty-cat Release 0.2.0<a class="headerlink" href="#dirty-cat-release-0-2-0" title="Link to this heading">#</a></h2>
 <p>Also see pre-release 0.2.0a1 below for additional changes.</p>
-<section id="id19">
-<h3>Major changes<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
+<section id="id20">
+<h3>Major changes<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
 <ul>
 <li><p>Bump minimum dependencies:</p>
 <ul class="simple">
@@ -1150,8 +1161,8 @@ only supports two dimensional inputs of shape (N_samples, 1).
 since <cite>get_feature_names</cite> will be depreciated in scikit-learn 1.2. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/216">#216</a> by <a class="reference external" href="https://github.com/alexis-cvetkov">Alexis Cvetkov</a></p></li>
 </ul>
 </section>
-<section id="id20">
-<h3>Notes<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
+<section id="id21">
+<h3>Notes<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
 <ul>
 <li><p>Removed hard-coded CSV file <cite>dirty_cat/data/FiveThirtyEight_Midwest_Survey.csv</cite>.</p></li>
 <li><p>Improvements to the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></p>
@@ -1176,8 +1187,8 @@ To try it, you have to install it manually using:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">dirty</span><span class="o">-</span><span class="n">cat</span><span class="o">/</span><span class="n">dirty_cat</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
-<section id="id21">
-<h3>Major changes<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<section id="id22">
+<h3>Major changes<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Bump minimum dependencies:</p>
 <ul>
@@ -1199,8 +1210,8 @@ and are then concatenated into a single matrix.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/185">#185</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a> and <a class="reference external" href="https://github.com/alexis-cvetkov">Alexis Cvetkov</a>.</p></li>
 </ul>
 </section>
-<section id="id22">
-<h3>Bug-fixes<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
+<section id="id23">
+<h3>Bug-fixes<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Fix <cite>get_feature_names</cite> for scikit-learn &gt; 0.21. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/216">#216</a> by <a class="reference external" href="https://github.com/alexis-cvetkov">Alexis Cvetkov</a></p></li>
 </ul>
@@ -1208,11 +1219,11 @@ and are then concatenated into a single matrix.
 </section>
 <section id="dirty-cat-release-0-1-1">
 <h2>Dirty-cat Release 0.1.1<a class="headerlink" href="#dirty-cat-release-0-1-1" title="Link to this heading">#</a></h2>
-<section id="id23">
-<h3>Major changes<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
-</section>
 <section id="id24">
-<h3>Bug-fixes<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+<h3>Major changes<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+</section>
+<section id="id25">
+<h3>Bug-fixes<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>RuntimeWarnings due to overflow in <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/161">#161</a> by <a class="reference external" href="https://github.com/alexis-cvetkov">Alexis Cvetkov</a></p></li>
 </ul>
@@ -1220,8 +1231,8 @@ and are then concatenated into a single matrix.
 </section>
 <section id="dirty-cat-release-0-1-0">
 <h2>Dirty-cat Release 0.1.0<a class="headerlink" href="#dirty-cat-release-0-1-0" title="Link to this heading">#</a></h2>
-<section id="id25">
-<h3>Major changes<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
+<section id="id26">
+<h3>Major changes<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>: Added online Gamma-Poisson factorization through the
 <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> class. This method discovers latent categories formed
@@ -1229,8 +1240,8 @@ via combinations of substrings, and encodes string data as combinations of
 these categories. To be used if interpretability is important. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/153">#153</a> by <a class="reference external" href="https://github.com/alexis-cvetkov">Alexis Cvetkov</a></p></li>
 </ul>
 </section>
-<section id="id26">
-<h3>Bug-fixes<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
+<section id="id27">
+<h3>Bug-fixes<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Multiprocessing exception in notebook. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/154">#154</a> by <a class="reference external" href="https://github.com/LilianBoulard">Lilian Boulard</a></p></li>
 </ul>
@@ -1341,7 +1352,8 @@ stateless fitting with the ngram similarity.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ongoing-development">Ongoing development</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#release-0-4-0">Release 0.4.0</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#highlights">Highlights</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new-features">New features</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#major-changes">Major changes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minor-changes">Minor changes</a></li>
@@ -1353,67 +1365,67 @@ stateless fitting with the ngram similarity.</p></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#release-0-3-0">Release 0.3.0</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#highlights">Highlights</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Major changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Minor changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Highlights</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Major changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Minor changes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#release-0-2-0">Release 0.2.0</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Major changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Minor changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Major changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Minor changes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub-release-0-1-1">skrub release 0.1.1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub-release-0-1-0">skrub release 0.1.0</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Major changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Minor changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Major changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Minor changes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-skrub-dirty-cat">Before skrub: dirty_cat</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-cat-release-0-4-1">Dirty-cat release 0.4.1</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Major changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Minor changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Major changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Minor changes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-cat-release-0-4-0">Dirty-cat Release 0.4.0</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Major changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Minor changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Bug fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Major changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Minor changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Bug fixes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-cat-release-0-3-0">Dirty-cat Release 0.3.0</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Major changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Major changes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notes">Notes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-cat-release-0-2-2">Dirty-cat Release 0.2.2</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Bug fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Bug fixes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-cat-release-0-2-1">Dirty-cat Release 0.2.1</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Major changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Bug-fixes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Notes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Major changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Bug-fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Notes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-cat-release-0-2-0">Dirty-cat Release 0.2.0</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Major changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Notes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Major changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Notes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-cat-release-0-2-0a1">Dirty-cat Release 0.2.0a1</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Major changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Bug-fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Major changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Bug-fixes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-cat-release-0-1-1">Dirty-cat Release 0.1.1</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Major changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Bug-fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Major changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Bug-fixes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-cat-release-0-1-0">Dirty-cat Release 0.1.0</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Major changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Bug-fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Major changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Bug-fixes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirty-cat-release-0-0-7">Dirty-cat Release 0.0.7</a></li>
