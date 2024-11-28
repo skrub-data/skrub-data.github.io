@@ -588,12 +588,12 @@ it easier to control its size when inserting it in a web page by setting the
 font size of its parent element. A few other small adjustments have also been
 made to make it a bit more compact. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1098">#1098</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>Display of labels in the plots of the TableReport, especially for other
-scripts than the latin alphabet, has improved.
-- before, some characters could be missing and replaced by empty boxes.
-- before, when the text is truncated, the ellipsis “…” could appear on the</p>
-<blockquote>
-<div><p>wrong side for right-to-left scripts.</p>
-</div></blockquote>
+scripts than the latin alphabet, has improved.</p>
+<ul class="simple">
+<li><p>before, some characters could be missing and replaced by empty boxes.</p></li>
+<li><p>before, when the text is truncated, the ellipsis “…” could appear on the
+wrong side for right-to-left scripts.</p></li>
+</ul>
 <p>Moreover, when the text contains line breaks it now appears all on one line.
 Note this only affects the labels in the plots; the rest of the report did not
 have these problems.
