@@ -884,7 +884,7 @@ To join them with skrub, we only need to do the following:
 
 .. GENERATED FROM PYTHON SOURCE LINES 145-161
 
-We see that our |fj| succesfully identified the countries,
+We see that our |fj| successfully identified the countries,
 even though some country names differ between tables.
 
 For instance, "Egypt" and "Egypt, Arab Rep." are correctly matched, as are
@@ -1058,7 +1058,7 @@ us an overview of the situation:
 
 .. GENERATED FROM PYTHON SOURCE LINES 170-173
 
-We see that some matches were unsuccesful
+We see that some matches were unsuccessful
 (e.g "Palestinian Territories*" and "Palau"),
 because there is simply no match in the two tables.
 
@@ -1611,7 +1611,7 @@ Data cleaning varies from dataset to dataset: there are as
 many ways to clean a table as there are errors. |fj|
 method is generalizable across all datasets.
 
-Data transformation is also often very costly in both time and ressources.
+Data transformation is also often very costly in both time and resources.
 |fj| is fast and easy-to-use.
 
 Now up to you, try improving our model by adding information into it and
@@ -1715,7 +1715,7 @@ introduced into a grid search:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 12.556 seconds)
+   **Total running time of the script:** (0 minutes 11.001 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining.py:

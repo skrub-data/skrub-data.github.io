@@ -558,7 +558,7 @@ to download the full example code. or to run this example in your browser via Ju
 <p>When the data comprises common entities (cities,
 companies or famous people), bringing new information assembled from external
 sources may be the key to improving the analysis.</p>
-<p>Embeddings, or vectorial representations of entities, are a conveniant way to
+<p>Embeddings, or vectorial representations of entities, are a convenient way to
 capture and summarize the information on an entity.
 Relational data embeddings capture all common entities from Wikipedia. <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>
 These will be called <cite>KEN embeddings</cite> in the following example.</p>
@@ -726,7 +726,7 @@ Name: Global_Sales, Length: 16572, dtype: float64
 <a href="../reference/generated/skrub.datasets.fetch_ken_table_aliases.html#skrub.datasets.fetch_ken_table_aliases" title="skrub.datasets.fetch_ken_table_aliases" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_ken_table_aliases</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;companies&#39;, &#39;albums&#39;, &#39;games&#39;, &#39;all_entities&#39;, &#39;schools&#39;, &#39;movies&#39;}
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;movies&#39;, &#39;games&#39;, &#39;all_entities&#39;, &#39;companies&#39;, &#39;albums&#39;, &#39;schools&#39;}
 </pre></div>
 </div>
 <p>The <em>games</em> table is the most relevant to our case.
@@ -900,7 +900,7 @@ We define a predictor, <a class="reference external" href="https://scikit-learn.
 <p>The <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a> can now be readily applied to the dataframe for prediction:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="sklearn.model_selection.cross_validate" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_validate</span></a>
 
-<span class="c1"># We will save the results in a dictionnary:</span>
+<span class="c1"># We will save the results in a dictionary:</span>
 <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">all_r2_scores</span></a> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
 <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">all_rmse_scores</span></a> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
 
@@ -1021,7 +1021,7 @@ explanatory variables.</p>
 additional background information on the game and the publisher of the
 game that would otherwise be missed.</p>
 <p>It helped significantly improve the prediction score.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 44.576 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 16.727 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-06-ken-embeddings-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/06_ken_embeddings.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
