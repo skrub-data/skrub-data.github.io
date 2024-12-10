@@ -556,7 +556,7 @@ standard tools to represent categories fail if these strings are not
 normalized into a small number of well-identified form, if they have
 typos, or if there are too many categories.</p>
 <p>Skrub provides encoders that represent well open-ended strings or dirty
-categories, eg to replace <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a>:</p>
+categories, eg to replace <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a>:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>: infers latent categories and represent the data on
 these. Very interpretable, sometimes slow</p></li>
@@ -599,7 +599,7 @@ Depending on the task and dataset, this approach may lead to significant improve
 in the quality of predictions, albeit with potential increases in memory usage and computation time.</p>
 <p>Skrub integrates these language models as scikit-learn transformers, allowing them
 to be easily plugged into <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>.</p>
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>.</p>
 <p>These language models are pre-trained deep-learning encoders that have been fine-tuned
 specifically for embedding tasks. Note that skrub does not provide a simple way to
 fine-tune language models directly on your dataset.</p>
