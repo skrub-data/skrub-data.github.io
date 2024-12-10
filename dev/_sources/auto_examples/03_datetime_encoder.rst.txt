@@ -519,8 +519,8 @@ which ensures that the test set is always in the future.
  .. code-block:: none
 
 
-    array([ -6664.06809097,  -6520.55512687, -21139.48809623, -13314.67384696,
-           -14012.23728431])
+    array([ -6664.06809097,  -6520.55512687, -21139.48809623, -13016.35760656,
+           -13559.0936502 ])
 
 
 
@@ -666,7 +666,7 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 5.395 seconds)
+   **Total running time of the script:** (0 minutes 5.343 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:
