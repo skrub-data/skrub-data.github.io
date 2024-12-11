@@ -815,41 +815,41 @@ More details on encoding tabular data
           <th>department_SHF</th>
           <th>department_ZAH</th>
           <th>...</th>
-          <th>division: family, crimes, sexual</th>
-          <th>division: administration, battalion, admin</th>
-          <th>division: environmental, regulatory, behavioral</th>
-          <th>division: engineering, parking, marking</th>
+          <th>division: protective, programs, program</th>
+          <th>division: division, personnel, background</th>
+          <th>division: toddlers, members, council</th>
+          <th>division: technology, systems, information</th>
           <th>assignment_category_Parttime-Regular</th>
-          <th>employee_position_title: program, programs, projects</th>
-          <th>employee_position_title: manager, engineer, iii</th>
-          <th>employee_position_title: officer, office, police</th>
-          <th>employee_position_title: technician, mechanic, supply</th>
-          <th>employee_position_title: master, registered, meter</th>
+          <th>employee_position_title: forensics, member, plumber</th>
+          <th>employee_position_title: officer, office, security</th>
+          <th>employee_position_title: recruit, recreation, crew</th>
+          <th>employee_position_title: worker, social, work</th>
           <th>employee_position_title: operator, bus, operations</th>
-          <th>employee_position_title: assistant, library, librarian</th>
-          <th>employee_position_title: legislative, principal, executive</th>
-          <th>employee_position_title: income, assistance, client</th>
-          <th>employee_position_title: correctional, correction, corporal</th>
+          <th>employee_position_title: manager, programs, program</th>
+          <th>employee_position_title: specialist, special, resource</th>
           <th>employee_position_title: coordinator, services, service</th>
-          <th>employee_position_title: school, room, behavioral</th>
-          <th>employee_position_title: information, technology, recreation</th>
-          <th>employee_position_title: firefighter, recruit, rescuer</th>
-          <th>employee_position_title: supervisor, supervisory, plumber</th>
-          <th>employee_position_title: sergeant, emergency, energy</th>
-          <th>employee_position_title: specialist, special, planning</th>
-          <th>employee_position_title: captain, chief, rescue</th>
-          <th>employee_position_title: administrative, administration, administrator</th>
-          <th>employee_position_title: community, health, nurse</th>
-          <th>employee_position_title: warehouse, worker, works</th>
+          <th>employee_position_title: school, health, room</th>
+          <th>employee_position_title: firefighter, rescuer, fire</th>
+          <th>employee_position_title: community, nurse, unit</th>
+          <th>employee_position_title: correctional, correction, corporal</th>
+          <th>employee_position_title: technician, mechanic, supply</th>
+          <th>employee_position_title: lieutenant, shift, maintenance</th>
+          <th>employee_position_title: administrative, principal, executive</th>
           <th>employee_position_title: enforcement, permitting, inspector</th>
-          <th>employee_position_title: equipment, investigator, investment</th>
-          <th>employee_position_title: sheriff, deputy, therapist</th>
+          <th>employee_position_title: income, assistance, client</th>
+          <th>employee_position_title: equipment, investment, investigator</th>
+          <th>employee_position_title: information, technology, renovation</th>
+          <th>employee_position_title: assistant, library, attorney</th>
+          <th>employee_position_title: warehouse, welfare, driver</th>
+          <th>employee_position_title: telecommunications, communications, safety</th>
+          <th>employee_position_title: representative, legislative, customer</th>
+          <th>employee_position_title: sergeant, police, cadet</th>
+          <th>employee_position_title: crossing, purchasing, planning</th>
+          <th>employee_position_title: librarian, psychiatrist, therapist</th>
           <th>employee_position_title: liquor, clerk, store</th>
-          <th>employee_position_title: communications, telecommunications, safety</th>
-          <th>employee_position_title: environmental, budget, ombudsman</th>
-          <th>employee_position_title: lieutenant, shift, commander</th>
-          <th>employee_position_title: crossing, parking, guard</th>
-          <th>employee_position_title: candidate, public, welfare</th>
+          <th>employee_position_title: captain, chief, battalion</th>
+          <th>employee_position_title: master, registered, meter</th>
+          <th>employee_position_title: candidate, sheriff, deputy</th>
           <th>date_first_hired_year</th>
           <th>date_first_hired_month</th>
           <th>date_first_hired_day</th>
@@ -901,41 +901,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.509298</td>
-          <td>0.073438</td>
-          <td>0.074759</td>
-          <td>0.104909</td>
+          <td>0.062335</td>
+          <td>1.550487</td>
+          <td>0.112963</td>
+          <td>83.956177</td>
           <td>0.0</td>
-          <td>0.052125</td>
-          <td>0.053629</td>
-          <td>0.103528</td>
-          <td>0.051418</td>
-          <td>0.054748</td>
-          <td>0.069346</td>
-          <td>0.051020</td>
-          <td>0.052949</td>
-          <td>0.053086</td>
-          <td>0.062833</td>
-          <td>37.328789</td>
-          <td>0.051901</td>
-          <td>0.052910</td>
-          <td>0.054344</td>
-          <td>0.055292</td>
-          <td>0.077639</td>
-          <td>0.051667</td>
-          <td>0.055893</td>
-          <td>0.053809</td>
-          <td>0.052563</td>
-          <td>0.052798</td>
-          <td>0.055375</td>
-          <td>0.056956</td>
-          <td>0.053504</td>
-          <td>0.059437</td>
-          <td>0.061519</td>
-          <td>0.050975</td>
-          <td>0.053856</td>
-          <td>0.053456</td>
-          <td>0.062634</td>
+          <td>0.052777</td>
+          <td>0.106929</td>
+          <td>0.053290</td>
+          <td>0.052484</td>
+          <td>0.070614</td>
+          <td>0.053202</td>
+          <td>0.050857</td>
+          <td>37.327217</td>
+          <td>0.051914</td>
+          <td>0.054531</td>
+          <td>0.052517</td>
+          <td>0.063696</td>
+          <td>0.051342</td>
+          <td>0.053985</td>
+          <td>0.054104</td>
+          <td>0.055333</td>
+          <td>0.054216</td>
+          <td>0.057137</td>
+          <td>0.053009</td>
+          <td>0.051285</td>
+          <td>0.053264</td>
+          <td>0.054034</td>
+          <td>0.067061</td>
+          <td>0.076147</td>
+          <td>0.052962</td>
+          <td>0.050723</td>
+          <td>0.059928</td>
+          <td>0.056267</td>
+          <td>0.054639</td>
+          <td>0.054535</td>
           <td>1986.0</td>
           <td>9.0</td>
           <td>22.0</td>
@@ -985,41 +985,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>52.746006</td>
-          <td>0.062108</td>
-          <td>0.056649</td>
-          <td>0.062047</td>
+          <td>0.154531</td>
+          <td>0.098271</td>
+          <td>0.052257</td>
+          <td>0.073847</td>
           <td>0.0</td>
-          <td>0.061002</td>
-          <td>0.068400</td>
-          <td>21.618046</td>
-          <td>0.054104</td>
-          <td>6.737354</td>
-          <td>0.054337</td>
-          <td>0.060618</td>
-          <td>0.053708</td>
-          <td>0.066961</td>
-          <td>0.061250</td>
-          <td>0.064121</td>
-          <td>0.052639</td>
-          <td>0.055949</td>
-          <td>0.059421</td>
-          <td>0.054192</td>
-          <td>0.078321</td>
-          <td>0.064095</td>
-          <td>0.051873</td>
-          <td>0.059988</td>
-          <td>0.050846</td>
-          <td>0.053794</td>
-          <td>0.051886</td>
-          <td>0.052459</td>
-          <td>0.053158</td>
-          <td>0.059928</td>
-          <td>0.052987</td>
-          <td>0.054580</td>
-          <td>0.055480</td>
-          <td>0.050043</td>
-          <td>0.088462</td>
+          <td>0.053605</td>
+          <td>21.515446</td>
+          <td>0.057115</td>
+          <td>0.054167</td>
+          <td>0.054327</td>
+          <td>0.065328</td>
+          <td>0.057309</td>
+          <td>0.064343</td>
+          <td>0.052613</td>
+          <td>0.059880</td>
+          <td>0.050857</td>
+          <td>0.061147</td>
+          <td>0.054272</td>
+          <td>0.055770</td>
+          <td>0.054126</td>
+          <td>0.053758</td>
+          <td>0.072703</td>
+          <td>0.052492</td>
+          <td>0.057863</td>
+          <td>0.061352</td>
+          <td>0.053165</td>
+          <td>0.054074</td>
+          <td>0.060283</td>
+          <td>0.091329</td>
+          <td>0.054537</td>
+          <td>0.055792</td>
+          <td>0.059613</td>
+          <td>0.051863</td>
+          <td>6.857441</td>
+          <td>0.053431</td>
           <td>1988.0</td>
           <td>9.0</td>
           <td>12.0</td>
@@ -1069,41 +1069,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.084425</td>
-          <td>0.064472</td>
-          <td>0.112514</td>
-          <td>15.257932</td>
+          <td>35.121330</td>
+          <td>0.058831</td>
+          <td>4.234511</td>
+          <td>0.088607</td>
           <td>0.0</td>
-          <td>0.057587</td>
-          <td>0.072408</td>
-          <td>0.060066</td>
-          <td>0.056643</td>
-          <td>0.054263</td>
-          <td>0.053741</td>
-          <td>0.051569</td>
-          <td>0.057385</td>
-          <td>0.057998</td>
-          <td>0.063574</td>
-          <td>0.052401</td>
-          <td>0.057561</td>
-          <td>0.057938</td>
-          <td>0.058254</td>
-          <td>0.052856</td>
-          <td>0.051416</td>
-          <td>0.069915</td>
-          <td>0.050227</td>
-          <td>0.063197</td>
-          <td>0.052686</td>
-          <td>20.866695</td>
-          <td>0.054621</td>
-          <td>0.055186</td>
-          <td>0.053014</td>
-          <td>0.057698</td>
-          <td>0.051170</td>
-          <td>0.058781</td>
-          <td>0.050264</td>
-          <td>0.050011</td>
-          <td>0.050873</td>
+          <td>0.052429</td>
+          <td>0.056564</td>
+          <td>0.054275</td>
+          <td>20.925995</td>
+          <td>0.053347</td>
+          <td>0.058747</td>
+          <td>0.061829</td>
+          <td>0.051957</td>
+          <td>0.054320</td>
+          <td>0.055984</td>
+          <td>0.051410</td>
+          <td>0.058146</td>
+          <td>0.053675</td>
+          <td>0.050032</td>
+          <td>0.058897</td>
+          <td>0.052795</td>
+          <td>0.053693</td>
+          <td>0.053453</td>
+          <td>0.055490</td>
+          <td>0.050793</td>
+          <td>0.064745</td>
+          <td>0.052034</td>
+          <td>0.053798</td>
+          <td>0.051324</td>
+          <td>0.050155</td>
+          <td>0.052975</td>
+          <td>0.055669</td>
+          <td>0.050147</td>
+          <td>0.053576</td>
+          <td>0.051745</td>
           <td>1989.0</td>
           <td>11.0</td>
           <td>19.0</td>
@@ -1153,41 +1153,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.073166</td>
-          <td>0.052556</td>
-          <td>0.055263</td>
-          <td>0.056859</td>
+          <td>0.133672</td>
+          <td>0.054969</td>
+          <td>5.846282</td>
+          <td>0.060157</td>
           <td>0.0</td>
-          <td>0.062342</td>
-          <td>2.402388</td>
-          <td>0.086560</td>
-          <td>0.059733</td>
-          <td>0.106622</td>
-          <td>0.063017</td>
-          <td>0.075602</td>
-          <td>0.575036</td>
-          <td>0.062548</td>
-          <td>0.069231</td>
-          <td>0.094508</td>
-          <td>0.051856</td>
-          <td>0.062805</td>
-          <td>0.430512</td>
-          <td>23.432362</td>
-          <td>0.064449</td>
-          <td>0.071051</td>
-          <td>0.130883</td>
-          <td>0.066529</td>
-          <td>0.056739</td>
-          <td>0.080850</td>
-          <td>0.167388</td>
-          <td>2.579563</td>
-          <td>0.109968</td>
-          <td>0.077223</td>
-          <td>0.111221</td>
-          <td>0.137759</td>
-          <td>0.096712</td>
-          <td>0.055384</td>
-          <td>0.059160</td>
+          <td>26.322041</td>
+          <td>0.110707</td>
+          <td>0.132569</td>
+          <td>0.176740</td>
+          <td>0.066925</td>
+          <td>0.159965</td>
+          <td>0.080009</td>
+          <td>0.197308</td>
+          <td>0.052765</td>
+          <td>1.668893</td>
+          <td>0.077751</td>
+          <td>0.073819</td>
+          <td>0.061759</td>
+          <td>0.079709</td>
+          <td>0.090310</td>
+          <td>0.104822</td>
+          <td>0.062083</td>
+          <td>0.179626</td>
+          <td>0.062633</td>
+          <td>0.066097</td>
+          <td>0.058045</td>
+          <td>0.057410</td>
+          <td>1.003412</td>
+          <td>0.063342</td>
+          <td>0.053226</td>
+          <td>0.071935</td>
+          <td>0.081979</td>
+          <td>0.092092</td>
+          <td>0.101785</td>
+          <td>0.090243</td>
           <td>2014.0</td>
           <td>5.0</td>
           <td>5.0</td>
@@ -1237,41 +1237,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.074488</td>
-          <td>0.059223</td>
-          <td>0.084250</td>
-          <td>11.420120</td>
+          <td>18.086851</td>
+          <td>0.077507</td>
+          <td>0.072049</td>
+          <td>0.075823</td>
           <td>0.0</td>
-          <td>0.057229</td>
-          <td>0.218612</td>
-          <td>0.069280</td>
-          <td>0.079767</td>
-          <td>0.050691</td>
-          <td>0.051232</td>
-          <td>0.060629</td>
-          <td>0.059433</td>
-          <td>0.084223</td>
-          <td>0.059052</td>
-          <td>0.053675</td>
-          <td>0.058076</td>
-          <td>0.065181</td>
-          <td>0.062168</td>
-          <td>0.054176</td>
-          <td>0.058181</td>
-          <td>30.863787</td>
-          <td>0.053869</td>
-          <td>0.124477</td>
-          <td>0.057397</td>
-          <td>0.062821</td>
-          <td>0.077372</td>
-          <td>0.053218</td>
-          <td>0.063888</td>
-          <td>0.054677</td>
-          <td>0.058428</td>
-          <td>0.087737</td>
-          <td>0.055834</td>
-          <td>0.191675</td>
-          <td>0.053215</td>
+          <td>0.064113</td>
+          <td>0.070126</td>
+          <td>0.051686</td>
+          <td>0.079501</td>
+          <td>0.052117</td>
+          <td>0.111989</td>
+          <td>19.330118</td>
+          <td>0.052023</td>
+          <td>0.067362</td>
+          <td>0.064986</td>
+          <td>0.067033</td>
+          <td>0.059654</td>
+          <td>0.144360</td>
+          <td>0.064726</td>
+          <td>0.063316</td>
+          <td>0.076818</td>
+          <td>0.096689</td>
+          <td>0.054383</td>
+          <td>0.079653</td>
+          <td>0.069362</td>
+          <td>0.050230</td>
+          <td>0.069577</td>
+          <td>0.055934</td>
+          <td>0.068869</td>
+          <td>11.735222</td>
+          <td>0.075602</td>
+          <td>0.055275</td>
+          <td>0.051447</td>
+          <td>0.050870</td>
+          <td>0.066959</td>
           <td>2007.0</td>
           <td>3.0</td>
           <td>5.0</td>
@@ -1405,41 +1405,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.059739</td>
-          <td>0.149476</td>
-          <td>2.037740</td>
-          <td>0.102863</td>
+          <td>0.241668</td>
+          <td>0.106292</td>
+          <td>0.592257</td>
+          <td>0.067732</td>
           <td>0.0</td>
-          <td>0.051068</td>
-          <td>0.061109</td>
-          <td>0.054937</td>
-          <td>0.054421</td>
-          <td>0.050002</td>
+          <td>0.051346</td>
+          <td>0.054150</td>
+          <td>0.051043</td>
+          <td>0.055065</td>
           <td>0.050000</td>
-          <td>0.052155</td>
-          <td>0.051962</td>
-          <td>0.053911</td>
-          <td>0.054230</td>
-          <td>0.051955</td>
-          <td>0.067771</td>
-          <td>0.052098</td>
-          <td>0.053026</td>
-          <td>0.050785</td>
-          <td>0.053702</td>
-          <td>0.053414</td>
-          <td>0.051016</td>
-          <td>0.054163</td>
-          <td>34.433479</td>
-          <td>0.054153</td>
-          <td>0.053517</td>
-          <td>0.050746</td>
-          <td>0.059519</td>
-          <td>0.052132</td>
-          <td>0.070176</td>
-          <td>0.052198</td>
-          <td>0.051132</td>
-          <td>0.050011</td>
-          <td>0.051210</td>
+          <td>0.053764</td>
+          <td>0.054352</td>
+          <td>0.051931</td>
+          <td>0.077760</td>
+          <td>0.052782</td>
+          <td>34.440178</td>
+          <td>0.054237</td>
+          <td>0.053542</td>
+          <td>0.051041</td>
+          <td>0.052219</td>
+          <td>0.052841</td>
+          <td>0.053951</td>
+          <td>0.050971</td>
+          <td>0.052405</td>
+          <td>0.052165</td>
+          <td>0.052777</td>
+          <td>0.059042</td>
+          <td>0.053120</td>
+          <td>0.053932</td>
+          <td>0.050422</td>
+          <td>0.055079</td>
+          <td>0.052034</td>
+          <td>0.051072</td>
+          <td>0.050001</td>
+          <td>0.056777</td>
           <td>2015.0</td>
           <td>11.0</td>
           <td>3.0</td>
@@ -1489,41 +1489,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.113492</td>
-          <td>0.062577</td>
-          <td>0.087570</td>
-          <td>0.148399</td>
+          <td>0.071116</td>
+          <td>7.338397</td>
+          <td>15.491271</td>
+          <td>0.093691</td>
           <td>0.0</td>
-          <td>0.050003</td>
-          <td>0.050006</td>
-          <td>0.051836</td>
-          <td>0.061198</td>
-          <td>0.071508</td>
+          <td>0.954973</td>
+          <td>0.051827</td>
+          <td>0.070985</td>
+          <td>0.055154</td>
           <td>0.050002</td>
-          <td>0.100614</td>
-          <td>0.430093</td>
-          <td>0.068977</td>
-          <td>0.075440</td>
-          <td>0.113380</td>
-          <td>0.058016</td>
-          <td>0.151219</td>
-          <td>0.077258</td>
-          <td>3.398734</td>
-          <td>0.052097</td>
-          <td>0.059433</td>
-          <td>31.578211</td>
-          <td>0.178772</td>
-          <td>0.050654</td>
-          <td>0.087371</td>
-          <td>0.050718</td>
-          <td>0.050316</td>
-          <td>0.050193</td>
-          <td>0.052361</td>
-          <td>0.061996</td>
-          <td>0.057565</td>
-          <td>0.085357</td>
-          <td>0.108231</td>
-          <td>0.168441</td>
+          <td>0.050001</td>
+          <td>0.077262</td>
+          <td>0.142776</td>
+          <td>0.057192</td>
+          <td>0.080041</td>
+          <td>0.050637</td>
+          <td>0.076937</td>
+          <td>0.059034</td>
+          <td>0.085563</td>
+          <td>0.164949</td>
+          <td>0.050555</td>
+          <td>0.115542</td>
+          <td>0.050147</td>
+          <td>0.159187</td>
+          <td>0.436384</td>
+          <td>0.353595</td>
+          <td>0.069103</td>
+          <td>2.245158</td>
+          <td>0.052414</td>
+          <td>0.106236</td>
+          <td>0.094896</td>
+          <td>0.052229</td>
+          <td>31.554762</td>
+          <td>0.071992</td>
+          <td>0.060466</td>
           <td>1988.0</td>
           <td>11.0</td>
           <td>28.0</td>
@@ -1573,41 +1573,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.065201</td>
-          <td>0.119265</td>
-          <td>56.023830</td>
-          <td>0.107103</td>
+          <td>0.066873</td>
+          <td>0.056104</td>
+          <td>0.188501</td>
+          <td>0.069039</td>
           <td>1.0</td>
-          <td>0.065313</td>
-          <td>0.109552</td>
-          <td>0.100047</td>
-          <td>0.522965</td>
-          <td>0.055090</td>
-          <td>0.131910</td>
-          <td>0.079004</td>
-          <td>0.132754</td>
-          <td>0.076759</td>
-          <td>0.115092</td>
-          <td>0.083040</td>
-          <td>0.265679</td>
-          <td>0.101394</td>
-          <td>0.063611</td>
-          <td>37.621284</td>
-          <td>0.056096</td>
-          <td>0.097821</td>
-          <td>0.133457</td>
-          <td>0.159936</td>
-          <td>0.060007</td>
-          <td>4.300047</td>
-          <td>1.253576</td>
-          <td>0.380619</td>
-          <td>0.058041</td>
-          <td>0.093680</td>
-          <td>0.076414</td>
-          <td>0.076354</td>
-          <td>0.057444</td>
-          <td>0.050129</td>
-          <td>0.122885</td>
+          <td>0.073069</td>
+          <td>0.116879</td>
+          <td>0.054441</td>
+          <td>3.955195</td>
+          <td>0.232272</td>
+          <td>0.061294</td>
+          <td>0.067105</td>
+          <td>0.137917</td>
+          <td>0.095169</td>
+          <td>0.056347</td>
+          <td>0.053390</td>
+          <td>0.116064</td>
+          <td>0.144976</td>
+          <td>0.053158</td>
+          <td>0.257194</td>
+          <td>0.172256</td>
+          <td>0.066193</td>
+          <td>3.184409</td>
+          <td>0.083851</td>
+          <td>0.066509</td>
+          <td>0.085671</td>
+          <td>0.089493</td>
+          <td>0.101046</td>
+          <td>0.067636</td>
+          <td>0.052367</td>
+          <td>36.743652</td>
+          <td>0.119234</td>
+          <td>0.083263</td>
+          <td>0.053567</td>
+          <td>0.056383</td>
           <td>2001.0</td>
           <td>4.0</td>
           <td>30.0</td>
@@ -1657,41 +1657,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.053165</td>
-          <td>0.058293</td>
-          <td>0.056726</td>
-          <td>0.053871</td>
+          <td>0.060794</td>
+          <td>0.055554</td>
+          <td>9.057234</td>
+          <td>0.053145</td>
           <td>0.0</td>
-          <td>0.100430</td>
-          <td>11.909403</td>
-          <td>0.061108</td>
-          <td>0.053574</td>
-          <td>0.055487</td>
-          <td>0.051895</td>
-          <td>0.051768</td>
-          <td>0.050012</td>
-          <td>0.051519</td>
-          <td>0.055659</td>
-          <td>0.051667</td>
-          <td>0.051232</td>
-          <td>0.051400</td>
-          <td>0.059271</td>
-          <td>0.050993</td>
-          <td>0.055323</td>
-          <td>0.051207</td>
+          <td>0.052896</td>
+          <td>0.070863</td>
+          <td>0.057378</td>
+          <td>0.076820</td>
+          <td>0.052508</td>
+          <td>11.883952</td>
+          <td>0.054145</td>
+          <td>0.052001</td>
+          <td>0.051602</td>
+          <td>0.068938</td>
+          <td>0.054046</td>
+          <td>0.059044</td>
+          <td>0.055485</td>
+          <td>0.053411</td>
+          <td>0.050016</td>
+          <td>0.056152</td>
+          <td>0.052394</td>
+          <td>0.055580</td>
+          <td>0.051916</td>
+          <td>0.052326</td>
+          <td>0.052502</td>
+          <td>0.050990</td>
+          <td>0.053504</td>
+          <td>0.055675</td>
+          <td>0.050331</td>
+          <td>0.057586</td>
+          <td>0.054735</td>
           <td>0.050002</td>
-          <td>0.051545</td>
-          <td>0.051617</td>
-          <td>0.058726</td>
-          <td>0.053838</td>
-          <td>0.053071</td>
-          <td>0.054323</td>
-          <td>0.053064</td>
-          <td>0.051587</td>
-          <td>0.056165</td>
-          <td>0.052958</td>
-          <td>0.050007</td>
-          <td>0.051148</td>
+          <td>0.057307</td>
+          <td>0.055895</td>
           <td>2006.0</td>
           <td>9.0</td>
           <td>5.0</td>
@@ -1741,41 +1741,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.059130</td>
-          <td>0.087307</td>
-          <td>11.235618</td>
-          <td>0.064591</td>
+          <td>0.065077</td>
+          <td>11.193632</td>
+          <td>0.263874</td>
+          <td>0.073703</td>
           <td>0.0</td>
-          <td>0.050694</td>
-          <td>0.058003</td>
-          <td>0.180581</td>
-          <td>0.058429</td>
-          <td>0.050843</td>
-          <td>0.055874</td>
-          <td>0.060250</td>
-          <td>0.053686</td>
-          <td>0.086594</td>
-          <td>0.061065</td>
-          <td>0.059136</td>
-          <td>0.114700</td>
-          <td>0.100229</td>
-          <td>0.052169</td>
-          <td>0.346124</td>
-          <td>0.151028</td>
-          <td>22.385746</td>
-          <td>0.053118</td>
-          <td>0.104580</td>
-          <td>0.057986</td>
-          <td>0.062246</td>
-          <td>31.432678</td>
-          <td>0.085107</td>
-          <td>0.055418</td>
-          <td>0.057774</td>
-          <td>0.055049</td>
-          <td>3.943266</td>
-          <td>0.054732</td>
-          <td>0.053059</td>
-          <td>0.059834</td>
+          <td>5.958538</td>
+          <td>0.146452</td>
+          <td>0.050918</td>
+          <td>0.067284</td>
+          <td>0.056422</td>
+          <td>0.053379</td>
+          <td>15.951792</td>
+          <td>0.060591</td>
+          <td>0.126583</td>
+          <td>0.052573</td>
+          <td>0.057973</td>
+          <td>0.063483</td>
+          <td>0.059871</td>
+          <td>0.055181</td>
+          <td>0.054914</td>
+          <td>28.756723</td>
+          <td>0.092944</td>
+          <td>0.090204</td>
+          <td>0.119381</td>
+          <td>0.062678</td>
+          <td>0.072680</td>
+          <td>0.068503</td>
+          <td>0.063134</td>
+          <td>0.204743</td>
+          <td>7.375917</td>
+          <td>0.059401</td>
+          <td>0.059234</td>
+          <td>0.054155</td>
+          <td>0.051022</td>
+          <td>0.053327</td>
           <td>2012.0</td>
           <td>1.0</td>
           <td>30.0</td>
@@ -3487,8 +3487,8 @@ that we can fit, test or cross-validate and that works well on tabular data.
 
  .. code-block:: none
 
-    R2 score:  mean: 0.922; std: 0.013
-    mean fit time: 5.504 seconds
+    R2 score:  mean: 0.919; std: 0.011
+    mean fit time: 6.182 seconds
 
 
 
@@ -3557,7 +3557,7 @@ The resulting pipeline is identical to the one produced by default by
  .. code-block:: none
 
     R2 score:  mean: 0.911; std: 0.014
-    mean fit time: 0.950 seconds
+    mean fit time: 1.066 seconds
 
 
 
@@ -4120,7 +4120,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 7.906 seconds)
+   **Total running time of the script:** (1 minutes 15.649 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:
