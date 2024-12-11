@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script src="../../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../../_static/documentation_options.js?v=c87aa342"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.4.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.4.1';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = true;
         </script>
     <link rel="icon" href="../../_static/skrub.svg"/>
@@ -75,7 +75,7 @@
     <link rel="prev" title="ToCategorical" href="skrub.ToCategorical.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.4.0" />
+  <meta name="docsearch:version" content="0.4.1" />
   </head>
   
   
@@ -599,7 +599,7 @@
 <h1>ToDatetime<a class="headerlink" href="#todatetime" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.ToDatetime">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">ToDatetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3da6282/skrub/_to_datetime.py#L82"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">ToDatetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/41cd67f/skrub/_to_datetime.py#L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime" title="Link to this definition">#</a></dt>
 <dd><p>Parse datetimes represented as strings and return <code class="docutils literal notranslate"><span class="pre">Datetime</span></code> columns.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -629,7 +629,7 @@ is fitted, entries that fail to be converted during subsequent calls to
 <dd class="field-odd"><dl>
 <dt><strong>format</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, optional, default=None</span></dt><dd><p>Format to use for parsing dates that are stored as strings, e.g.
 <code class="docutils literal notranslate"><span class="pre">&quot;%Y-%m-%dT%H:%M%S&quot;</span></code>.
-If not specfied, the format is inferred from the data when possible.
+If not specified, the format is inferred from the data when possible.
 When doing so, for dates presented as 01/02/2003, it is usually
 possible to infer from the data whether the month comes first (USA
 convention) or the day comes first, ie <code class="docutils literal notranslate"><span class="pre">&quot;%m/%d/%Y&quot;</span></code> vs
@@ -678,7 +678,7 @@ is <code class="docutils literal notranslate"><span class="pre">None</span></cod
 <span class="go">0   2024-05-05 13:17:52</span>
 <span class="go">1                   NaT</span>
 <span class="go">2   2024-05-07 13:17:52</span>
-<span class="go">Name: when, dtype: datetime64[ns]</span>
+<span class="go">Name: when, dtype: datetime64[...]</span>
 </pre></div>
 </div>
 <p>The attributes <code class="docutils literal notranslate"><span class="pre">format_</span></code>, <code class="docutils literal notranslate"><span class="pre">output_dtype_</span></code>, <code class="docutils literal notranslate"><span class="pre">output_time_zone_</span></code>
@@ -686,7 +686,7 @@ record information about the conversion result.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">format_</span>
 <span class="go">&#39;%Y-%m-%dT%H:%M:%S&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">output_dtype_</span>
-<span class="go">dtype(&#39;&lt;M8[ns]&#39;)</span>
+<span class="go">dtype(&#39;&lt;M8[...]&#39;)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">output_time_zone_</span> <span class="ow">is</span> <span class="kc">None</span>
 <span class="go">True</span>
 </pre></div>
@@ -697,7 +697,7 @@ it are rejected.</p>
 <span class="go">0   2024-05-05 13:17:52</span>
 <span class="go">1                   NaT</span>
 <span class="go">2   2024-05-07 13:17:52</span>
-<span class="go">Name: when, dtype: datetime64[ns]</span>
+<span class="go">Name: when, dtype: datetime64[...]</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">/%m/%Y&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
@@ -713,7 +713,7 @@ they are accepted); for those columns the provided format, if any, is ignored.</
 <span class="go">0   2024-05-05 13:17:52+02:00</span>
 <span class="go">1                         NaT</span>
 <span class="go">2   2024-05-07 13:17:52+02:00</span>
-<span class="go">Name: when, dtype: datetime64[ns, Europe/Paris]</span>
+<span class="go">Name: when, dtype: datetime64[..., Europe/Paris]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="ow">is</span> <span class="n">s</span>
 <span class="go">True</span>
 </pre></div>
@@ -722,7 +722,7 @@ they are accepted); for those columns the provided format, if any, is ignored.</
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">format_</span> <span class="ow">is</span> <span class="kc">None</span>
 <span class="go">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">output_dtype_</span>
-<span class="go">datetime64[ns, Europe/Paris]</span>
+<span class="go">datetime64[..., Europe/Paris]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">output_time_zone_</span>
 <span class="go">&#39;Europe/Paris&#39;</span>
 </pre></div>
@@ -754,13 +754,13 @@ fail to be converted result in a null value:</p>
 <span class="go">0   2024-05-05 13:17:52</span>
 <span class="go">1                   NaT</span>
 <span class="go">2   2024-05-07 13:17:52</span>
-<span class="go">Name: when, dtype: datetime64[ns]</span>
+<span class="go">Name: when, dtype: datetime64[...]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;05/05/2024&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;07/05/2024&quot;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;when&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="go">0   NaT</span>
 <span class="go">1   NaT</span>
 <span class="go">2   NaT</span>
-<span class="go">Name: when, dtype: datetime64[ns]</span>
+<span class="go">Name: when, dtype: datetime64[...]</span>
 </pre></div>
 </div>
 <p><strong>Time zones</strong></p>
@@ -770,7 +770,7 @@ in UTC. Mixed offsets are supported and will all be converted to UTC.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="go">0   2020-01-01 02:00:00+00:00</span>
 <span class="go">1   2020-01-01 01:00:00+00:00</span>
-<span class="go">dtype: datetime64[ns, UTC]</span>
+<span class="go">dtype: datetime64[..., UTC]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">format_</span>
 <span class="go">&#39;%Y-%m-%dT%H:%M:%S%z&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">output_time_zone_</span>
@@ -782,7 +782,7 @@ in UTC. Mixed offsets are supported and will all be converted to UTC.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="go">0   2020-01-01 04:00:00</span>
 <span class="go">1   2020-01-01 04:00:00</span>
-<span class="go">dtype: datetime64[ns]</span>
+<span class="go">dtype: datetime64[...]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">output_time_zone_</span> <span class="ow">is</span> <span class="kc">None</span>
 <span class="go">True</span>
 </pre></div>
@@ -795,10 +795,10 @@ during <code class="docutils literal notranslate"><span class="pre">fit</span></
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s_paris</span>
 <span class="go">0   2024-05-07 14:24:49+02:00</span>
 <span class="go">1   2024-05-06 14:24:49+02:00</span>
-<span class="go">dtype: datetime64[ns, Europe/Paris]</span>
+<span class="go">dtype: datetime64[..., Europe/Paris]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span> <span class="o">=</span> <span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">s_paris</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">output_dtype_</span>
-<span class="go">datetime64[ns, Europe/Paris]</span>
+<span class="go">datetime64[..., Europe/Paris]</span>
 </pre></div>
 </div>
 <p>Here our converter is set to output datetimes with nanosecond resolution,
@@ -808,7 +808,7 @@ localized in “Europe/Paris”.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s_london</span>
 <span class="go">0   2024-05-07 13:24:49+01:00</span>
 <span class="go">1   2024-05-06 13:24:49+01:00</span>
-<span class="go">dtype: datetime64[ns, Europe/London]</span>
+<span class="go">dtype: datetime64[..., Europe/London]</span>
 </pre></div>
 </div>
 <p>Here the timezone is “Europe/London” and the times are offset by 1 hour. During
@@ -817,7 +817,7 @@ localized in “Europe/Paris”.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">s_london</span><span class="p">)</span>
 <span class="go">0   2024-05-07 14:24:49+02:00</span>
 <span class="go">1   2024-05-06 14:24:49+02:00</span>
-<span class="go">dtype: datetime64[ns, Europe/Paris]</span>
+<span class="go">dtype: datetime64[..., Europe/Paris]</span>
 </pre></div>
 </div>
 <p>Moreover, we may have to transform a timezone-naive column whereas the
@@ -828,7 +828,7 @@ corner case unlikely to happen in practice if the inputs to <code class="docutil
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s_naive</span>
 <span class="go">0   2024-05-07 12:24:49</span>
 <span class="go">1   2024-05-06 12:24:49</span>
-<span class="go">dtype: datetime64[ns]</span>
+<span class="go">dtype: datetime64[...]</span>
 </pre></div>
 </div>
 <p>In this case, we make the arbitrary choice to assume that the timezone-naive
@@ -836,7 +836,7 @@ datetimes are in UTC.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">s_naive</span><span class="p">)</span>
 <span class="go">0   2024-05-07 14:24:49+02:00</span>
 <span class="go">1   2024-05-06 14:24:49+02:00</span>
-<span class="go">dtype: datetime64[ns, Europe/Paris]</span>
+<span class="go">dtype: datetime64[..., Europe/Paris]</span>
 </pre></div>
 </div>
 <p>Conversely, a transformer fitted on a timezone-naive column can convert
@@ -845,7 +845,7 @@ timezone-aware columns. Here also, we assume the naive datetimes were in UTC.</p
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">s_london</span><span class="p">)</span>
 <span class="go">0   2024-05-07 12:24:49</span>
 <span class="go">1   2024-05-06 12:24:49</span>
-<span class="go">dtype: datetime64[ns]</span>
+<span class="go">dtype: datetime64[...]</span>
 </pre></div>
 </div>
 <p><strong>``%d/%m/%Y`` vs ``%m/%d/%Y``</strong></p>
@@ -855,7 +855,7 @@ the data.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;05/23/2024&quot;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="go">0   2024-05-23</span>
-<span class="go">dtype: datetime64[ns]</span>
+<span class="go">dtype: datetime64[...]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">format_</span>
 <span class="go">&#39;%m/%d/%Y&#39;</span>
 </pre></div>
@@ -865,7 +865,7 @@ Similarly,</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;23/05/2024&quot;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="go">0   2024-05-23</span>
-<span class="go">dtype: datetime64[ns]</span>
+<span class="go">dtype: datetime64[...]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">format_</span>
 <span class="go">&#39;%d/%m/%Y&#39;</span>
 </pre></div>
@@ -874,7 +874,7 @@ Similarly,</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;03/05/2024&quot;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="go">0   2024-03-05</span>
-<span class="go">dtype: datetime64[ns]</span>
+<span class="go">dtype: datetime64[...]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_dt</span><span class="o">.</span><span class="n">format_</span>
 <span class="go">&#39;%m/%d/%Y&#39;</span>
 </pre></div>
@@ -915,7 +915,7 @@ constructor.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3da6282/skrub/_on_each_column.py#L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.fit" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/41cd67f/skrub/_on_each_column.py#L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.fit" title="Link to this definition">#</a></dt>
 <dd><p>Fit the transformer.</p>
 <p>Subclasses should implement <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> and <code class="docutils literal notranslate"><span class="pre">transform</span></code>.</p>
 <dl class="field-list">
@@ -939,7 +939,7 @@ transform a single column, not a whole dataframe.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3da6282/skrub/_to_datetime.py#L357"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/41cd67f/skrub/_to_datetime.py#L359"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit the encoder and transform a column.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -961,7 +961,7 @@ transform a single column, not a whole dataframe.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.get_metadata_routing">
-<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3da6282/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1496"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.get_metadata_routing" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_metadata_routing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/41cd67f/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1496"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.get_metadata_routing" title="Link to this definition">#</a></dt>
 <dd><p>Get metadata routing of this object.</p>
 <p>Please check <a class="reference external" href="https://scikit-learn.org/stable/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.6)"><span class="xref std std-ref">User Guide</span></a> on how the routing
 mechanism works.</p>
@@ -978,7 +978,7 @@ routing information.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3da6282/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/41cd67f/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -999,7 +999,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.set_fit_request">
-<span class="sig-name descname"><span class="pre">set_fit_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3da6282/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1250"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.set_fit_request" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_fit_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/41cd67f/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1250"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.set_fit_request" title="Link to this definition">#</a></dt>
 <dd><p>Request metadata passed to the <code class="docutils literal notranslate"><span class="pre">fit</span></code> method.</p>
 <p>Note that this method is only relevant if
 <code class="docutils literal notranslate"><span class="pre">enable_metadata_routing=True</span></code> (see <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.set_config.html#sklearn.set_config" title="(in scikit-learn v1.6)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.set_config()</span></code></a>).
@@ -1042,7 +1042,7 @@ sub-estimator of a meta-estimator, e.g. used inside a
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3da6282/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/41cd67f/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -1066,7 +1066,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.set_transform_request">
-<span class="sig-name descname"><span class="pre">set_transform_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3da6282/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1250"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.set_transform_request" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_transform_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/41cd67f/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1250"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.set_transform_request" title="Link to this definition">#</a></dt>
 <dd><p>Request metadata passed to the <code class="docutils literal notranslate"><span class="pre">transform</span></code> method.</p>
 <p>Note that this method is only relevant if
 <code class="docutils literal notranslate"><span class="pre">enable_metadata_routing=True</span></code> (see <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.set_config.html#sklearn.set_config" title="(in scikit-learn v1.6)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.set_config()</span></code></a>).
@@ -1109,7 +1109,7 @@ sub-estimator of a meta-estimator, e.g. used inside a
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3da6282/skrub/_to_datetime.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/41cd67f/skrub/_to_datetime.py#L402"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.transform" title="Link to this definition">#</a></dt>
 <dd><p>Transform a column.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>

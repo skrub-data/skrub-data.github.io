@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script src="../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../_static/documentation_options.js?v=c87aa342"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.4.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.4.1';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = true;
         </script>
     <link rel="icon" href="../_static/skrub.svg"/>
@@ -75,7 +75,7 @@
     <link rel="prev" title="Wikipedia embeddings to enrich the data" href="06_ken_embeddings.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.4.0" />
+  <meta name="docsearch:version" content="0.4.1" />
   </head>
   
   
@@ -563,7 +563,7 @@ for <strong>spatial joins</strong> on two columns, typically
 longitude and latitude.</p>
 <p><a class="reference internal" href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> is a scikit-learn compatible transformer that enables
 performing joins across multiple keys,
-independantly of the data type (numerical, string or mixed).</p>
+independently of the data type (numerical, string or mixed).</p>
 <p>The following example uses US domestic flights data
 to illustrate how space and time information from a
 pool of tables are combined for machine learning.</p>
@@ -1138,7 +1138,7 @@ measurement stations in the US.</p></li>
 </div>
 </div>
 <br />
-<br /><p>Then we join this table with the airports so that we get all auxilliary
+<br /><p>Then we join this table with the airports so that we get all auxiliary
 tables into one.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a>
 
@@ -1330,7 +1330,7 @@ tables into one.</p>
 </div>
 <br />
 <br /><p>Joining airports with flights data:
-Let’s instanciate another multiple key joiner on the date and the airport:</p>
+Let’s instantiate another multiple key joiner on the date and the airport:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">joiner</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">(</span>
     <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">aux_augmented</span></a><span class="p">,</span>
     <span class="n">aux_key</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;YEAR/MONTH/DAY&quot;</span><span class="p">,</span> <span class="s2">&quot;iata&quot;</span><span class="p">],</span>
@@ -1578,10 +1578,10 @@ Name: count, dtype: int64
 on imprecise and multiple-key correspondences.
 This is made easy by skrub’s <a class="reference internal" href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> transformer.</p>
 <p>Our final cross-validated accuracy score is 0.55.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 16.391 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 27.247 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-07-multiple-key-join-py">
 <div class="binder-badge docutils container">
-<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.4.0?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.4.1?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
 </a>
 </div>
 <div class="lite-badge docutils container">
@@ -1719,7 +1719,7 @@ This is made easy by skrub’s <a class="reference internal" href="../reference/
     
       
         <div class="sphx-glr-sidebar-item binder-badge-sidebar">
-          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/0.4.0?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb">
+          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/0.4.1?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb">
             <img src="../_images/binder_badge_logo.svg" alt="Launch binder">
           </a>
         </div>
