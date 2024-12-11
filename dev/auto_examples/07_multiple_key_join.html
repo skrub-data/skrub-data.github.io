@@ -593,6 +593,10 @@ Here, we consider only flights from 2008.</p></li>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">flights</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:688: UserWarning: Could not find the dataset &#39;41771418&#39; locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_41771418.parquet.
+  info = _fetch_figshare(dataset_id, data_directory)
+</pre></div>
+</div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>
 <style scoped>
@@ -733,6 +737,10 @@ and location (longitude, latitude).</p></li>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">airports</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:688: UserWarning: Could not find the dataset &#39;41710257&#39; locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_41710257.parquet.
+  info = _fetch_figshare(dataset_id, data_directory)
+</pre></div>
+</div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>
 <style scoped>
@@ -833,6 +841,10 @@ Here, we consider only weather measurements from 2008.</p></li>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">weather</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:688: UserWarning: Could not find the dataset &#39;41771457&#39; locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_41771457.parquet.
+  info = _fetch_figshare(dataset_id, data_directory)
+</pre></div>
+</div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>
 <style scoped>
@@ -862,9 +874,9 @@ Here, we consider only weather measurements from 2008.</p></li>
   <tbody>
     <tr>
       <th>0</th>
-      <td>ASN00041037</td>
-      <td>2008-06-18</td>
-      <td>NaN</td>
+      <td>GME00127822</td>
+      <td>2008-08-29</td>
+      <td>206.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
@@ -878,25 +890,25 @@ Here, we consider only weather measurements from 2008.</p></li>
     </tr>
     <tr>
       <th>2</th>
-      <td>US1ILSP0008</td>
-      <td>2008-08-19</td>
+      <td>MXN00015282</td>
+      <td>2008-10-30</td>
+      <td>211.0</td>
+      <td>0.0</td>
       <td>NaN</td>
-      <td>0.0</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>USC00164931</td>
-      <td>2008-10-05</td>
+      <td>EN000026038</td>
+      <td>2008-12-17</td>
+      <td>-19.0</td>
+      <td>3.0</td>
       <td>NaN</td>
-      <td>0.0</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>NOE00111309</td>
-      <td>2008-08-18</td>
-      <td>NaN</td>
+      <td>ASN00086351</td>
+      <td>2008-10-29</td>
+      <td>229.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
@@ -911,6 +923,10 @@ measurement stations in the US.</p></li>
 </ul>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">stations</span></a> <span class="o">=</span> <span class="n">fetch_figshare</span><span class="p">(</span><span class="s2">&quot;41710524&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">stations</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:688: UserWarning: Could not find the dataset &#39;41710524&#39; locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_41710524.parquet.
+  info = _fetch_figshare(dataset_id, data_directory)
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -1055,82 +1071,82 @@ measurement stations in the US.</p></li>
   <tbody>
     <tr>
       <th>0</th>
-      <td>AEM00041218</td>
-      <td>24.2620</td>
-      <td>55.6090</td>
-      <td>264.9</td>
-      <td>AL AIN INTL</td>
+      <td>AGE00147708</td>
+      <td>36.720</td>
+      <td>4.050</td>
+      <td>222.0</td>
+      <td>TIZI OUZOU</td>
       <td>None</td>
       <td>None</td>
-      <td>41218.0</td>
+      <td>60395.0</td>
       <td>NaN</td>
-      <td>2008-02-18</td>
-      <td>310.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>AG000060590</td>
-      <td>30.5667</td>
-      <td>2.8667</td>
-      <td>397.0</td>
-      <td>EL-GOLEA</td>
-      <td>None</td>
-      <td>GSN</td>
-      <td>60590.0</td>
-      <td>NaN</td>
-      <td>2008-10-09</td>
-      <td>278.0</td>
+      <td>2008-12-27</td>
+      <td>183.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>2</th>
+      <th>1</th>
       <td>AGE00147716</td>
-      <td>35.1000</td>
-      <td>-1.8500</td>
+      <td>35.100</td>
+      <td>-1.850</td>
       <td>83.0</td>
       <td>NEMOURS (GHAZAOUET)</td>
       <td>None</td>
       <td>None</td>
       <td>60517.0</td>
       <td>NaN</td>
-      <td>2008-09-23</td>
-      <td>301.0</td>
+      <td>2008-10-06</td>
+      <td>NaN</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>AGE00147718</td>
-      <td>34.8500</td>
-      <td>5.7200</td>
-      <td>125.0</td>
-      <td>BISKRA</td>
-      <td>None</td>
-      <td>None</td>
-      <td>60525.0</td>
-      <td>NaN</td>
-      <td>2008-08-09</td>
-      <td>429.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>4</th>
+      <th>2</th>
       <td>AGM00060353</td>
-      <td>36.8170</td>
-      <td>5.8830</td>
+      <td>36.817</td>
+      <td>5.883</td>
       <td>6.0</td>
       <td>JIJEL-PORT</td>
       <td>None</td>
       <td>None</td>
       <td>60353.0</td>
       <td>NaN</td>
-      <td>2008-07-01</td>
-      <td>286.0</td>
+      <td>2008-10-19</td>
+      <td>265.0</td>
       <td>0.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AGM00060367</td>
+      <td>36.900</td>
+      <td>8.450</td>
+      <td>13.0</td>
+      <td>EL-KALA</td>
+      <td>None</td>
+      <td>None</td>
+      <td>60367.0</td>
+      <td>NaN</td>
+      <td>2008-09-08</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AGM00060421</td>
+      <td>35.867</td>
+      <td>7.117</td>
+      <td>891.0</td>
+      <td>OUM EL BOUAGHI</td>
+      <td>None</td>
+      <td>None</td>
+      <td>60421.0</td>
+      <td>NaN</td>
+      <td>2008-12-15</td>
+      <td>68.0</td>
+      <td>20.0</td>
       <td>NaN</td>
     </tr>
   </tbody>
@@ -1196,69 +1212,43 @@ tables into one.</p>
   <tbody>
     <tr>
       <th>0</th>
-      <td>AEM00041218</td>
-      <td>24.2620</td>
-      <td>55.6090</td>
-      <td>264.9</td>
-      <td>AL AIN INTL</td>
+      <td>AGE00147708</td>
+      <td>36.720</td>
+      <td>4.050</td>
+      <td>222.0</td>
+      <td>TIZI OUZOU</td>
       <td>None</td>
       <td>None</td>
-      <td>41218.0</td>
+      <td>60395.0</td>
       <td>NaN</td>
-      <td>2008-02-18</td>
-      <td>310.0</td>
+      <td>2008-12-27</td>
+      <td>183.0</td>
+      <td>0.0</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>ROP</td>
-      <td>Prachinburi</td>
-      <td>None</td>
-      <td>None</td>
-      <td>Thailand</td>
-      <td>14.078333</td>
-      <td>101.378334</td>
-      <td>2.345567</td>
-      <td>3.214517</td>
+      <td>EPM</td>
+      <td>Eastport Municipal</td>
+      <td>Eastport</td>
+      <td>ME</td>
+      <td>USA</td>
+      <td>44.910111</td>
+      <td>-67.012694</td>
+      <td>3.259659</td>
+      <td>4.467246</td>
       <td>True</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>AG000060590</td>
-      <td>30.5667</td>
-      <td>2.8667</td>
-      <td>397.0</td>
-      <td>EL-GOLEA</td>
-      <td>None</td>
-      <td>GSN</td>
-      <td>60590.0</td>
-      <td>NaN</td>
-      <td>2008-10-09</td>
-      <td>278.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>X96</td>
-      <td>Cruz Bay Harbor Seaplane Base</td>
-      <td>Cruz Bay</td>
-      <td>VI</td>
-      <td>USA</td>
-      <td>18.336898</td>
-      <td>-64.799583</td>
-      <td>3.303558</td>
-      <td>4.527409</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>2</th>
       <td>AGE00147716</td>
-      <td>35.1000</td>
-      <td>-1.8500</td>
+      <td>35.100</td>
+      <td>-1.850</td>
       <td>83.0</td>
       <td>NEMOURS (GHAZAOUET)</td>
       <td>None</td>
       <td>None</td>
       <td>60517.0</td>
       <td>NaN</td>
-      <td>2008-09-23</td>
-      <td>301.0</td>
+      <td>2008-10-06</td>
+      <td>NaN</td>
       <td>0.0</td>
       <td>NaN</td>
       <td>ACK</td>
@@ -1273,44 +1263,18 @@ tables into one.</p>
       <td>True</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>AGE00147718</td>
-      <td>34.8500</td>
-      <td>5.7200</td>
-      <td>125.0</td>
-      <td>BISKRA</td>
-      <td>None</td>
-      <td>None</td>
-      <td>60525.0</td>
-      <td>NaN</td>
-      <td>2008-08-09</td>
-      <td>429.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>ACK</td>
-      <td>Nantucket Memorial</td>
-      <td>Nantucket</td>
-      <td>MA</td>
-      <td>USA</td>
-      <td>41.253052</td>
-      <td>-70.060181</td>
-      <td>3.402099</td>
-      <td>4.662456</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>4</th>
+      <th>2</th>
       <td>AGM00060353</td>
-      <td>36.8170</td>
-      <td>5.8830</td>
+      <td>36.817</td>
+      <td>5.883</td>
       <td>6.0</td>
       <td>JIJEL-PORT</td>
       <td>None</td>
       <td>None</td>
       <td>60353.0</td>
       <td>NaN</td>
-      <td>2008-07-01</td>
-      <td>286.0</td>
+      <td>2008-10-19</td>
+      <td>265.0</td>
       <td>0.0</td>
       <td>NaN</td>
       <td>EPM</td>
@@ -1322,6 +1286,58 @@ tables into one.</p>
       <td>-67.012694</td>
       <td>3.332759</td>
       <td>4.567428</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AGM00060367</td>
+      <td>36.900</td>
+      <td>8.450</td>
+      <td>13.0</td>
+      <td>EL-KALA</td>
+      <td>None</td>
+      <td>None</td>
+      <td>60367.0</td>
+      <td>NaN</td>
+      <td>2008-09-08</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>EPM</td>
+      <td>Eastport Municipal</td>
+      <td>Eastport</td>
+      <td>ME</td>
+      <td>USA</td>
+      <td>44.910111</td>
+      <td>-67.012694</td>
+      <td>3.437497</td>
+      <td>4.710968</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AGM00060421</td>
+      <td>35.867</td>
+      <td>7.117</td>
+      <td>891.0</td>
+      <td>OUM EL BOUAGHI</td>
+      <td>None</td>
+      <td>None</td>
+      <td>60421.0</td>
+      <td>NaN</td>
+      <td>2008-12-15</td>
+      <td>68.0</td>
+      <td>20.0</td>
+      <td>NaN</td>
+      <td>EPM</td>
+      <td>Eastport Municipal</td>
+      <td>Eastport</td>
+      <td>ME</td>
+      <td>USA</td>
+      <td>44.910111</td>
+      <td>-67.012694</td>
+      <td>3.418916</td>
+      <td>4.685503</td>
       <td>True</td>
     </tr>
   </tbody>
@@ -1568,7 +1584,7 @@ Name: count, dtype: int64
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [0] during transform. These unknown categories will be encoded as all zeros
   warnings.warn(
 
-0.5632
+0.564
 </pre></div>
 </div>
 </section>
@@ -1578,7 +1594,7 @@ Name: count, dtype: int64
 on imprecise and multiple-key correspondences.
 This is made easy by skrub’s <a class="reference internal" href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> transformer.</p>
 <p>Our final cross-validated accuracy score is 0.55.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 15.218 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 35.103 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-07-multiple-key-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
