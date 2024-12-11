@@ -570,9 +570,9 @@ based on the type of the final estimator.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Low-cardinality encoder</p></td>
-<td><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code></a></p></td>
+<td><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code></a></p></td>
 <td><p>Native support <sup>(1)</sup></p></td>
-<td><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a></p></td>
+<td><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>High-cardinality encoder</p></td>
 <td><p><a class="reference internal" href="reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a></p></td>
@@ -582,7 +582,7 @@ based on the type of the final estimator.</p>
 <tr class="row-even"><td><p>Numerical preprocessor</p></td>
 <td><p>No processing</p></td>
 <td><p>No processing</p></td>
-<td><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">StandardScaler</span></code></a></p></td>
+<td><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">StandardScaler</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Date preprocessor</p></td>
 <td><p><a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a></p></td>
@@ -592,7 +592,7 @@ based on the type of the final estimator.</p>
 <tr class="row-even"><td><p>Missing value strategy</p></td>
 <td><p>Native support <sup>(2)</sup></p></td>
 <td><p>Native support</p></td>
-<td><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a></p></td>
+<td><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -600,23 +600,23 @@ based on the type of the final estimator.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><sup>(1)</sup> if scikit-learn installed is lower than 1.4, then
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code></a> is used since native support
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code></a> is used since native support
 for categorical features is not available.</p>
 <p><sup>(2)</sup> if scikit-learn installed is lower than 1.4, then
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.5)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a> is used since native support
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a> is used since native support
 for missing values is not available.</p>
 </div>
 <p>With tree-based models, the <a class="reference internal" href="reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> is used for high-cardinality
 categorical features. It does not provide interpretable features as the default
 <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> but it is much faster. For low-cardinality, these models relies on
 either the native support of the model or the
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code></a>.</p>
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code></a>.</p>
 <p>With linear models or unknown models, the default values of the different parameters are
 used. Therefore, the <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> is used for high-cardinality categorical features
-and the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a> for low-cardinality ones. If the
-final estimator does not support missing values, a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a>
+and the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OneHotEncoder</span></code></a> for low-cardinality ones. If the
+final estimator does not support missing values, a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a>
 is added before the final estimator. Finally, a
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.5)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> is added to the pipeline. Those choices may
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> is added to the pipeline. Those choices may
 not be optimal in all cases but they are methodologically safe.</p>
 </section>
 <section id="turning-a-dataframe-into-a-numeric-feature-matrix">
@@ -650,7 +650,7 @@ convention:</p>
 <li><p>when set to <a class="reference external" href="https://scikit-learn.org/stable/glossary.html#term-transformer">a compatible scikit-learn transformer</a>
 (implementing <code class="docutils literal notranslate"><span class="pre">fit</span></code>, <code class="docutils literal notranslate"><span class="pre">transform</span></code>, and <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> methods), the transformer
 is applied to each column independently. The transformer is cloned (using
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.clone.html#sklearn.base.clone" title="(in scikit-learn v1.5)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.base.clone()</span></code></a>) before calling the <code class="docutils literal notranslate"><span class="pre">fit</span></code> method.</p></li>
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.clone.html#sklearn.base.clone" title="(in scikit-learn v1.6)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.base.clone()</span></code></a>) before calling the <code class="docutils literal notranslate"><span class="pre">fit</span></code> method.</p></li>
 </ul>
 </section>
 <section id="examples">
