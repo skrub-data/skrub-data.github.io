@@ -695,6 +695,10 @@ function:</p>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">gdp_per_capita</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:686: UserWarning: Could not find the dataset &#39;NY.GDP.PCAP.CD&#39; locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/NY.GDP.PCAP.CD.csv.
+  info = _fetch_world_bank_data(dataset_id, data_directory)
+</pre></div>
+</div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>
 <style scoped>
@@ -722,17 +726,17 @@ function:</p>
     <tr>
       <th>0</th>
       <td>Aruba</td>
-      <td>33300.838819</td>
+      <td>33984.790620</td>
     </tr>
     <tr>
       <th>1</th>
       <td>Africa Eastern and Southern</td>
-      <td>1672.505957</td>
+      <td>1659.515290</td>
     </tr>
     <tr>
       <th>2</th>
       <td>Afghanistan</td>
-      <td>352.603733</td>
+      <td>415.707417</td>
     </tr>
   </tbody>
 </table>
@@ -742,6 +746,10 @@ function:</p>
 <br /><p>Then another table, with life expectancy by country:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">life_exp</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_world_bank_indicator</span></a><span class="p">(</span><span class="s2">&quot;SP.DYN.LE00.IN&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">life_exp</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:686: UserWarning: Could not find the dataset &#39;SP.DYN.LE00.IN&#39; locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/SP.DYN.LE00.IN.csv.
+  info = _fetch_world_bank_data(dataset_id, data_directory)
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -776,7 +784,7 @@ function:</p>
     <tr>
       <th>1</th>
       <td>Africa Eastern and Southern</td>
-      <td>62.899031</td>
+      <td>62.888463</td>
     </tr>
     <tr>
       <th>2</th>
@@ -791,6 +799,10 @@ function:</p>
 <br /><p>And a table with legal rights strength by country:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">legal_rights</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_world_bank_indicator</span></a><span class="p">(</span><span class="s2">&quot;IC.LGL.CRED.XQ&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">legal_rights</span><span class="o">.</span><span class="n">head</span></a><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/skrub/datasets/_fetching.py:686: UserWarning: Could not find the dataset &#39;IC.LGL.CRED.XQ&#39; locally. Downloading it from the World Bank; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/world_bank/IC.LGL.CRED.XQ.csv.
+  info = _fetch_world_bank_data(dataset_id, data_directory)
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -940,37 +952,37 @@ original table (df), and those that we downloaded from the worldbank
     <tr>
       <th>253</th>
       <td>Viet Nam</td>
-      <td>4346.768492</td>
+      <td>4282.088517</td>
     </tr>
     <tr>
       <th>252</th>
       <td>Virgin Islands (U.S.)</td>
-      <td>41976.008312</td>
+      <td>44320.909186</td>
     </tr>
     <tr>
       <th>193</th>
       <td>West Bank and Gaza</td>
-      <td>3367.606990</td>
+      <td>3372.349744</td>
     </tr>
     <tr>
       <th>255</th>
       <td>World</td>
-      <td>13138.327546</td>
+      <td>13169.598225</td>
     </tr>
     <tr>
       <th>258</th>
       <td>Yemen, Rep.</td>
-      <td>701.714865</td>
+      <td>477.409029</td>
     </tr>
     <tr>
       <th>260</th>
       <td>Zambia</td>
-      <td>1369.129365</td>
+      <td>1330.727806</td>
     </tr>
     <tr>
       <th>261</th>
       <td>Zimbabwe</td>
-      <td>1592.416574</td>
+      <td>2156.034004</td>
     </tr>
   </tbody>
 </table>
@@ -1038,7 +1050,7 @@ we have extracted.</p>
       <td>Sri Lanka</td>
       <td>4362.0</td>
       <td>Sri Lanka</td>
-      <td>3827.964806</td>
+      <td>3827.964956</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1048,7 +1060,7 @@ we have extracted.</p>
       <td>Madagascar*</td>
       <td>4339.0</td>
       <td>Madagascar</td>
-      <td>528.650155</td>
+      <td>506.159369</td>
       <td>0.616018</td>
       <td>0.440370</td>
       <td>True</td>
@@ -1058,7 +1070,7 @@ we have extracted.</p>
       <td>Egypt</td>
       <td>4288.0</td>
       <td>Egypt, Arab Rep.</td>
-      <td>3512.580065</td>
+      <td>3457.456916</td>
       <td>0.957242</td>
       <td>0.684299</td>
       <td>True</td>
@@ -1068,7 +1080,7 @@ we have extracted.</p>
       <td>Chad*</td>
       <td>4251.0</td>
       <td>Chad</td>
-      <td>719.384875</td>
+      <td>680.639878</td>
       <td>0.921325</td>
       <td>0.658623</td>
       <td>True</td>
@@ -1078,7 +1090,7 @@ we have extracted.</p>
       <td>Ethiopia</td>
       <td>4241.0</td>
       <td>Ethiopia</td>
-      <td>1293.778008</td>
+      <td>1272.016282</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1088,7 +1100,7 @@ we have extracted.</p>
       <td>Yemen*</td>
       <td>4197.0</td>
       <td>Yemen, Rep.</td>
-      <td>701.714865</td>
+      <td>477.409029</td>
       <td>0.989239</td>
       <td>0.707172</td>
       <td>True</td>
@@ -1098,7 +1110,7 @@ we have extracted.</p>
       <td>Mauritania*</td>
       <td>4153.0</td>
       <td>Mauritania</td>
-      <td>2149.414087</td>
+      <td>2120.823204</td>
       <td>0.618608</td>
       <td>0.442221</td>
       <td>True</td>
@@ -1108,7 +1120,7 @@ we have extracted.</p>
       <td>Jordan</td>
       <td>4152.0</td>
       <td>Jordan</td>
-      <td>4482.086026</td>
+      <td>4455.505405</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1118,7 +1130,7 @@ we have extracted.</p>
       <td>Togo</td>
       <td>4112.0</td>
       <td>Togo</td>
-      <td>1012.973873</td>
+      <td>985.697513</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1128,7 +1140,7 @@ we have extracted.</p>
       <td>India</td>
       <td>3777.0</td>
       <td>India</td>
-      <td>2484.845429</td>
+      <td>2480.792087</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1138,7 +1150,7 @@ we have extracted.</p>
       <td>Zambia</td>
       <td>3760.0</td>
       <td>Zambia</td>
-      <td>1369.129365</td>
+      <td>1330.727806</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1148,7 +1160,7 @@ we have extracted.</p>
       <td>Malawi</td>
       <td>3750.0</td>
       <td>Malawi</td>
-      <td>672.869702</td>
+      <td>602.343620</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1158,7 +1170,7 @@ we have extracted.</p>
       <td>Tanzania</td>
       <td>3702.0</td>
       <td>Tanzania</td>
-      <td>1211.058594</td>
+      <td>1224.489624</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1168,7 +1180,7 @@ we have extracted.</p>
       <td>Sierra Leone</td>
       <td>3574.0</td>
       <td>Sierra Leone</td>
-      <td>433.374174</td>
+      <td>757.858336</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1178,7 +1190,7 @@ we have extracted.</p>
       <td>Lesotho*</td>
       <td>3512.0</td>
       <td>Lesotho</td>
-      <td>878.008505</td>
+      <td>916.282979</td>
       <td>0.719706</td>
       <td>0.514492</td>
       <td>True</td>
@@ -1188,7 +1200,7 @@ we have extracted.</p>
       <td>Botswana*</td>
       <td>3471.0</td>
       <td>Botswana</td>
-      <td>7249.799326</td>
+      <td>7820.232404</td>
       <td>0.638844</td>
       <td>0.456687</td>
       <td>True</td>
@@ -1198,7 +1210,7 @@ we have extracted.</p>
       <td>Rwanda*</td>
       <td>3268.0</td>
       <td>Rwanda</td>
-      <td>1000.218923</td>
+      <td>1010.268929</td>
       <td>0.754071</td>
       <td>0.539059</td>
       <td>True</td>
@@ -1208,7 +1220,7 @@ we have extracted.</p>
       <td>Zimbabwe</td>
       <td>2995.0</td>
       <td>Zimbabwe</td>
-      <td>1592.416574</td>
+      <td>2156.034004</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1218,7 +1230,7 @@ we have extracted.</p>
       <td>Lebanon</td>
       <td>2955.0</td>
       <td>Lebanon</td>
-      <td>3823.938069</td>
+      <td>3654.358455</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1228,7 +1240,7 @@ we have extracted.</p>
       <td>Afghanistan</td>
       <td>2404.0</td>
       <td>Afghanistan</td>
-      <td>352.603733</td>
+      <td>415.707417</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>True</td>
@@ -1297,7 +1309,7 @@ us an overview of the situation:</p>
       <td>Eswatini, Kingdom of*</td>
       <td>4396.0</td>
       <td>Eswatini</td>
-      <td>3797.301209</td>
+      <td>3610.608797</td>
       <td>0.983023</td>
       <td>0.702729</td>
       <td>True</td>
@@ -1307,7 +1319,7 @@ us an overview of the situation:</p>
       <td>Yemen*</td>
       <td>4197.0</td>
       <td>Yemen, Rep.</td>
-      <td>701.714865</td>
+      <td>477.409029</td>
       <td>0.989239</td>
       <td>0.707172</td>
       <td>True</td>
@@ -1317,7 +1329,7 @@ us an overview of the situation:</p>
       <td>Slovakia</td>
       <td>6391.0</td>
       <td>Slovak Republic</td>
-      <td>24470.238538</td>
+      <td>24491.377187</td>
       <td>0.989245</td>
       <td>0.707177</td>
       <td>True</td>
@@ -1327,7 +1339,7 @@ us an overview of the situation:</p>
       <td>Kyrgyzstan</td>
       <td>5828.0</td>
       <td>Kyrgyz Republic</td>
-      <td>1969.866481</td>
+      <td>1970.157810</td>
       <td>0.990845</td>
       <td>0.708320</td>
       <td>True</td>
@@ -1337,7 +1349,7 @@ us an overview of the situation:</p>
       <td>Iran</td>
       <td>4888.0</td>
       <td>Iraq</td>
-      <td>5512.475720</td>
+      <td>5565.126446</td>
       <td>1.055793</td>
       <td>0.754750</td>
       <td>True</td>
@@ -1347,7 +1359,7 @@ us an overview of the situation:</p>
       <td>Taiwan Province of China</td>
       <td>6512.0</td>
       <td>China</td>
-      <td>12614.060995</td>
+      <td>12614.061742</td>
       <td>1.084546</td>
       <td>0.775304</td>
       <td>True</td>
@@ -1357,7 +1369,7 @@ us an overview of the situation:</p>
       <td>Turkey</td>
       <td>4744.0</td>
       <td>Turkiye</td>
-      <td>12985.753150</td>
+      <td>13105.658568</td>
       <td>1.134734</td>
       <td>0.811182</td>
       <td>True</td>
@@ -1367,7 +1379,7 @@ us an overview of the situation:</p>
       <td>Laos</td>
       <td>5140.0</td>
       <td>Lao PDR</td>
-      <td>2075.401414</td>
+      <td>2066.949798</td>
       <td>1.144947</td>
       <td>0.818483</td>
       <td>True</td>
@@ -1377,7 +1389,7 @@ us an overview of the situation:</p>
       <td>Palestinian Territories*</td>
       <td>4483.0</td>
       <td>Palau</td>
-      <td>14565.330253</td>
+      <td>15899.422491</td>
       <td>1.310487</td>
       <td>0.936821</td>
       <td>True</td>
@@ -1387,7 +1399,7 @@ us an overview of the situation:</p>
       <td>Ivory Coast</td>
       <td>5235.0</td>
       <td>East Asia &amp; Pacific</td>
-      <td>12927.683808</td>
+      <td>12908.637708</td>
       <td>1.320558</td>
       <td>0.944021</td>
       <td>True</td>
@@ -1467,7 +1479,7 @@ so as to include only precise-enough matches:</p>
       <td>Laos</td>
       <td>5140.0</td>
       <td>Lao PDR</td>
-      <td>2075.401414</td>
+      <td>2066.949798</td>
       <td>1.144947</td>
       <td>0.818483</td>
       <td>True</td>
@@ -1477,7 +1489,7 @@ so as to include only precise-enough matches:</p>
       <td>Turkey</td>
       <td>4744.0</td>
       <td>Turkiye</td>
-      <td>12985.753150</td>
+      <td>13105.658568</td>
       <td>1.134734</td>
       <td>0.811182</td>
       <td>True</td>
@@ -1487,7 +1499,7 @@ so as to include only precise-enough matches:</p>
       <td>Taiwan Province of China</td>
       <td>6512.0</td>
       <td>China</td>
-      <td>12614.060995</td>
+      <td>12614.061742</td>
       <td>1.084546</td>
       <td>0.775304</td>
       <td>True</td>
@@ -1588,7 +1600,7 @@ life_exp table:</p>
       <th>0</th>
       <td>Finland</td>
       <td>7821.0</td>
-      <td>53755.911736</td>
+      <td>52925.689764</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>True</td>
@@ -1598,7 +1610,7 @@ life_exp table:</p>
       <th>1</th>
       <td>Denmark</td>
       <td>7636.0</td>
-      <td>67967.381869</td>
+      <td>68453.876928</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>True</td>
@@ -1608,7 +1620,7 @@ life_exp table:</p>
       <th>2</th>
       <td>Iceland</td>
       <td>7557.0</td>
-      <td>78811.058392</td>
+      <td>79636.954858</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>True</td>
@@ -1687,7 +1699,7 @@ Countries with higher life expectancy are also happier.</p>
       <th>0</th>
       <td>Finland</td>
       <td>7821.0</td>
-      <td>53755.911736</td>
+      <td>52925.689764</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>True</td>
@@ -1698,7 +1710,7 @@ Countries with higher life expectancy are also happier.</p>
       <th>1</th>
       <td>Denmark</td>
       <td>7636.0</td>
-      <td>67967.381869</td>
+      <td>68453.876928</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>True</td>
@@ -1709,7 +1721,7 @@ Countries with higher life expectancy are also happier.</p>
       <th>2</th>
       <td>Iceland</td>
       <td>7557.0</td>
-      <td>78811.058392</td>
+      <td>79636.954858</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>True</td>
@@ -1769,7 +1781,7 @@ We evaluate our model using the <cite>R2</cite> score.</p>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean R² score is </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv_r2_t</span></a><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> +- </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv_r2_t</span></a><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Mean R² score is 0.64 +- 0.08
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Mean R² score is 0.62 +- 0.10
 </pre></div>
 </div>
 <p>We have a satisfying first result: an R² of 0.63!</p>
@@ -1839,7 +1851,7 @@ introduced into a grid search:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Best parameters: {&#39;joiner-1__max_dist&#39;: 0.1, &#39;joiner-2__max_dist&#39;: 0.9, &#39;joiner-3__max_dist&#39;: 0.1}
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 12.793 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 11.367 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-04-fuzzy-joining-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
@@ -2021,7 +2033,7 @@ introduced into a grid search:</p>
 
   <p class="copyright">
     
-      © Copyright 2018-2023, the dirty_cat developers, 2023-2024, the skrub developers.
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2025, the skrub developers.
       <br/>
     
   </p>
