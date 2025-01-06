@@ -8,6 +8,6 @@
    :inherited-members:
    :special-members: __call__
 
-.. minigallery:: skrub.TableReport skrub.TableReport.__init__ skrub.TableReport.html skrub.TableReport.html_snippet skrub.TableReport.json skrub.TableReport.open 
+.. minigallery:: skrub.TableReport skrub.TableReport.__init__ skrub.TableReport.html skrub.TableReport.html_snippet skrub.TableReport.json skrub.TableReport.open skrub.TableReport.write_html 
    :add-heading: Gallery examples
    :heading-level: -
