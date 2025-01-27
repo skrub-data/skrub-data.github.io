@@ -1,0 +1,10 @@
+﻿tabular\_learner
+================
+
+.. currentmodule:: skrub
+
+.. autofunction:: tabular_learner
+
+.. minigallery:: skrub.tabular_learner
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,0 +1,13 @@
+﻿TableVectorizer
+===============
+
+.. currentmodule:: skrub
+
+.. autoclass:: TableVectorizer
+   :members:
+   :inherited-members:
+   :special-members: __call__
+
+.. minigallery:: skrub.TableVectorizer skrub.TableVectorizer.__init__ skrub.TableVectorizer.fit skrub.TableVectorizer.fit_transform skrub.TableVectorizer.get_feature_names_out skrub.TableVectorizer.get_metadata_routing skrub.TableVectorizer.get_params skrub.TableVectorizer.set_output skrub.TableVectorizer.set_params skrub.TableVectorizer.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

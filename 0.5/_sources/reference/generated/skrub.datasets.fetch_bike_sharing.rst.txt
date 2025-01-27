@@ -1,0 +1,10 @@
+﻿fetch\_bike\_sharing
+====================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_bike_sharing
+
+.. minigallery:: skrub.datasets.fetch_bike_sharing
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,0 +1,10 @@
+﻿patch\_display
+==============
+
+.. currentmodule:: skrub
+
+.. autofunction:: patch_display
+
+.. minigallery:: skrub.patch_display
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,0 +1,940 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="tabular_learner" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.tabular_learner.html" />
+<meta property="og:site_name" content="skrub" />
+<meta property="og:description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning" />
+<meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
+<meta property="og:image:alt" content="skrub" />
+<meta name="description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning" />
+
+    <title>tabular_learner &#8212; skrub</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=e3ca86de" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=d2d258e8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=0c3a8733" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=de0fc20e"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=fd10adb8"></script>
+    <script src="../../_static/jupyterlite_sphinx.js?v=d6bdf5f8"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/generated/skrub.tabular_learner';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.dev0';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            true;
+        </script>
+    <link rel="icon" href="../../_static/skrub.svg"/>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="TableReport" href="skrub.TableReport.html" />
+    <link rel="prev" title="DropCols" href="skrub.DropCols.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.5.dev0" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/skrub.svg" class="logo__image only-light" alt="skrub - Home"/>
+    <img src="../../_static/skrub.svg" class="logo__image only-dark pst-js-only" alt="skrub - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../install.html">
+    Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../documentation.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../auto_examples/index.html">
+    Examples
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../CHANGES.html">
+    Release history
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../development.html">
+    Development
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../CONTRIBUTING.html">
+    Contributing to skrub
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/skrub_data" title="Twitter" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-twitter fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../install.html">
+    Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../documentation.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../auto_examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../CHANGES.html">
+    Release history
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../development.html">
+    Development
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../CONTRIBUTING.html">
+    Contributing to skrub
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/skrub_data" title="Twitter" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-twitter fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.Joiner.html">Joiner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.AggJoiner.html">AggJoiner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.MultiAggJoiner.html">MultiAggJoiner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.AggTarget.html">AggTarget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.InterpolationJoiner.html">InterpolationJoiner</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.fuzzy_join.html">fuzzy_join</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.GapEncoder.html">GapEncoder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.MinHashEncoder.html">MinHashEncoder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.SimilarityEncoder.html">SimilarityEncoder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.DatetimeEncoder.html">DatetimeEncoder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.ToCategorical.html">ToCategorical</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.ToDatetime.html">ToDatetime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.StringEncoder.html">StringEncoder</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.TextEncoder.html">TextEncoder</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">tabular_learner</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.TableReport.html">TableReport</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.patch_display.html">patch_display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.unpatch_display.html">unpatch_display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.column_associations.html">column_associations</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_bike_sharing.html">fetch_bike_sharing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_country_happiness.html">fetch_country_happiness</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_credit_fraud.html">fetch_credit_fraud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_drug_directory.html">fetch_drug_directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_employee_salaries.html">fetch_employee_salaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_flight_delays.html">fetch_flight_delays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_embeddings.html">fetch_ken_embeddings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_table_aliases.html">fetch_ken_table_aliases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_types.html">fetch_ken_types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_medical_charge.html">fetch_medical_charge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_midwest_survey.html">fetch_midwest_survey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_movielens.html">fetch_movielens</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_open_payments.html">fetch_open_payments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_toxicity.html">fetch_toxicity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_traffic_violations.html">fetch_traffic_violations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_videogame_sales.html">fetch_videogame_sales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.get_data_dir.html">get_data_dir</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.make_deduplication_data.html">make_deduplication_data</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">API</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">tabular_learner</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="tabular-learner">
+<h1>tabular_learner<a class="headerlink" href="#tabular-learner" title="Link to this heading">#</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="skrub.tabular_learner">
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/d905cd1/skrub/_tabular_learner.py#L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_learner" title="Link to this definition">#</a></dt>
+<dd><p>Get a simple machine-learning pipeline for tabular data.</p>
+<p>Given a scikit-learn <code class="docutils literal notranslate"><span class="pre">estimator</span></code>, this function creates a
+machine-learning pipeline that preprocesses tabular data to extract numeric
+features, impute missing values and scale the data if necessary, then applies the
+<code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p>
+<p>Instead of an actual estimator, <code class="docutils literal notranslate"><span class="pre">estimator</span></code> can also be the special-cased strings
+<code class="docutils literal notranslate"><span class="pre">'regressor'</span></code>, <code class="docutils literal notranslate"><span class="pre">'regression'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classifier'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classification'</span></code> to use a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a> or a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a> with default
+parameters.</p>
+<p><code class="docutils literal notranslate"><span class="pre">tabular_learner</span></code> returns a scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pipeline</span></code></a>
+with several steps:</p>
+<ul class="simple">
+<li><p>A <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> transforms the tabular data into numeric
+features. Its parameters are chosen depending on the provided
+<code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p></li>
+<li><p>An optional <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a> imputes missing values
+by their mean and adds binary columns that indicate which values were
+missing. This step is only added if the <code class="docutils literal notranslate"><span class="pre">estimator</span></code> cannot handle
+missing values itself.</p></li>
+<li><p>An optional <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> centers and
+rescales the data. This step is not added (because it is unnecessary) when
+the <code class="docutils literal notranslate"><span class="pre">estimator</span></code> is a tree ensemble such as random forest or gradient
+boosting.</p></li>
+<li><p>The last step is the provided <code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p></li>
+</ul>
+<p>Read more in the <a class="reference internal" href="../../end_to_end_pipeline.html#table-vectorizer"><span class="std std-ref">User Guide</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">tabular_learner</span></code> is a recent addition and the heuristics used
+to define an appropriate preprocessing based on the <code class="docutils literal notranslate"><span class="pre">estimator</span></code> may change
+in future releases.</p>
+</div>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>estimator</strong><span class="classifier">{“regressor”, “regression”, “classifier”, “classification”} or scikit-learn estimator</span></dt><dd><p>The estimator to use as the final step in the pipeline. Based on the type of
+estimator, the previous preprocessing steps and their respective parameters are
+chosen. The possible values are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'regressor'</span></code> or <code class="docutils literal notranslate"><span class="pre">'regression'</span></code>: a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>
+is used as the final step;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'classifier'</span></code> or <code class="docutils literal notranslate"><span class="pre">'classification'</span></code>: a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>
+is used as the final step;</p></li>
+<li><p>a scikit-learn estimator: the provided estimator is used as the final step.</p></li>
+</ul>
+</dd>
+<dt><strong>n_jobs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=None</span></dt><dd><p>Number of jobs to run in parallel in the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> step.
+<code class="docutils literal notranslate"><span class="pre">None</span></code> means 1 unless in a joblib <code class="docutils literal notranslate"><span class="pre">parallel_backend</span></code> context.
+<code class="docutils literal notranslate"><span class="pre">-1</span></code> means using all processors.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pipeline</span></code></a></dt><dd><p>A scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pipeline</span></code></a> chaining some
+preprocessing and the provided <code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The parameter values for the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> might differ depending on the
+version of scikit-learn:</p>
+<ul class="simple">
+<li><p>support for categorical features in
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a> and
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a> was added in
+scikit-learn 1.4. Therefore, before this version, a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code></a> is used for low-cardinality
+features.</p></li>
+<li><p>support for missing values in
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomForestClassifier</span></code></a> and
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomForestRegressor</span></code></a> was added in scikit-learn 1.4.
+Therefore, before this version, a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a> is used
+to impute missing values.</p></li>
+</ul>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">tabular_learner</span>
+</pre></div>
+</div>
+<p>We can easily get a default pipeline for regression or classification:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;regression&#39;</span><span class="p">)</span>                                    
+<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
+<span class="go">                 TableVectorizer(high_cardinality=MinHashEncoder(),</span>
+<span class="go">                                 low_cardinality=ToCategorical())),</span>
+<span class="go">                (&#39;histgradientboostingregressor&#39;,</span>
+<span class="go">                 HistGradientBoostingRegressor(categorical_features=&#39;from_dtype&#39;))])</span>
+</pre></div>
+</div>
+<p>When requesting a <code class="docutils literal notranslate"><span class="pre">'regression'</span></code>, the last step of the pipeline is set to a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;classification&#39;</span><span class="p">)</span>                                   
+<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
+<span class="go">                 TableVectorizer(high_cardinality=MinHashEncoder(),</span>
+<span class="go">                                 low_cardinality=ToCategorical())),</span>
+<span class="go">                (&#39;histgradientboostingclassifier&#39;,</span>
+<span class="go">                 HistGradientBoostingClassifier(categorical_features=&#39;from_dtype&#39;))])</span>
+</pre></div>
+</div>
+<p>When requesting a <code class="docutils literal notranslate"><span class="pre">'classification'</span></code>, the last step of the pipeline is set to a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>.</p>
+<p>This pipeline can be applied to rich tabular data:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="p">{</span>
+<span class="gp">... </span>        <span class="s2">&quot;last_visit&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;2020-01-02&quot;</span><span class="p">,</span> <span class="s2">&quot;2021-04-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2024-12-05&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-08-10&quot;</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">&quot;medication&quot;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;metformin&quot;</span><span class="p">,</span> <span class="s2">&quot;paracetamol&quot;</span><span class="p">,</span> <span class="s2">&quot;gliclazide&quot;</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">&quot;insulin_prescriptions&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;N/A&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">17</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">&quot;fasting_glucose&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">35</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">137</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="p">}</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span>
+<span class="go">   last_visit   medication insulin_prescriptions  fasting_glucose</span>
+<span class="go">0  2020-01-02         None                   N/A               35</span>
+<span class="go">1  2021-04-01    metformin                    13              140</span>
+<span class="go">2  2024-12-05  paracetamol                     0               44</span>
+<span class="go">3  2023-08-10   gliclazide                    17              137</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="go">array([0, 0, 0, 0])</span>
+</pre></div>
+</div>
+<p>Rather than using the default estimator, we can provide our own scikit-learn
+estimator:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">tabular_learner</span><span class="p">(</span><span class="n">LogisticRegression</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;, TableVectorizer()),</span>
+<span class="go">                (&#39;simpleimputer&#39;, SimpleImputer(add_indicator=True)),</span>
+<span class="go">                (&#39;standardscaler&#39;, StandardScaler()),</span>
+<span class="go">                (&#39;logisticregression&#39;, LogisticRegression())])</span>
+</pre></div>
+</div>
+<p>By applying only the first pipeline step we can see the transformed data that is
+sent to the supervised estimator (see the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> documentation for
+details):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">&#39;tablevectorizer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>               
+<span class="go">   last_visit_year  last_visit_month  ...  insulin_prescriptions  fasting_glucose</span>
+<span class="go">0           2020.0               1.0  ...                    NaN             35.0</span>
+<span class="go">1           2021.0               4.0  ...                   13.0            140.0</span>
+<span class="go">2           2024.0              12.0  ...                    0.0             44.0</span>
+<span class="go">3           2023.0               8.0  ...                   17.0            137.0</span>
+</pre></div>
+</div>
+<p>The parameters of the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> depend on the provided <code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="n">LogisticRegression</span><span class="p">())</span>
+<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;, TableVectorizer()),</span>
+<span class="go">                (&#39;simpleimputer&#39;, SimpleImputer(add_indicator=True)),</span>
+<span class="go">                (&#39;standardscaler&#39;, StandardScaler()),</span>
+<span class="go">                (&#39;logisticregression&#39;, LogisticRegression())])</span>
+</pre></div>
+</div>
+<p>We see that for the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a> we get
+the default configuration of the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> which is intended
+to work well for a wide variety of downstream estimators. Moreover, as the
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a> cannot handle missing
+values, an imputation step is added. Finally, as many models require the
+inputs to be centered and on the same scale, centering and standard scaling
+is added.</p>
+<p>On the other hand, For the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>
+(generated with the string <code class="docutils literal notranslate"><span class="pre">&quot;classifier&quot;</span></code>):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">)</span>                                   
+<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
+<span class="go">                 TableVectorizer(high_cardinality=MinHashEncoder(),</span>
+<span class="go">                                 low_cardinality=ToCategorical())),</span>
+<span class="go">                (&#39;histgradientboostingclassifier&#39;,</span>
+<span class="go">                 HistGradientBoostingClassifier(categorical_features=&#39;from_dtype&#39;))])</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>A <a class="reference internal" href="skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> is used as the
+<code class="docutils literal notranslate"><span class="pre">high_cardinality</span></code>. This encoder provides good
+performance when the supervised estimator is based on a decision tree
+or ensemble of trees, as is the case for the
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>. Unlike the
+default <a class="reference internal" href="skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>, the <a class="reference internal" href="skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> does not produce
+interpretable features. However, it is much faster and uses less
+memory.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">low_cardinality</span></code> does not one-hot encode features.
+The <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a> has built-in
+support for categorical data which is more efficient than one-hot
+encoding. Therefore the selected encoder, <a class="reference internal" href="skrub.ToCategorical.html#skrub.ToCategorical" title="skrub.ToCategorical"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToCategorical</span></code></a>, simply
+makes sure that those features have a categorical dtype so that the
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a> recognizes them
+as such.</p></li>
+<li><p>There is no missing-value imputation because the classifier has its own
+(better) mechanism for dealing with missing values.</p></li>
+<li><p>There is no standard scaling which is unnecessary for trees and ensembles
+of trees.</p></li>
+</ul>
+</dd></dl>
+
+<section id="gallery-examples">
+<h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This guide showcases the features of skrub, an open-source package that aims at bridging the gap between tabular data sources and machine-learning models."><img alt="" src="../../_images/sphx_glr_00_getting_started_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/00_getting_started.html#sphx-glr-auto-examples-00-getting-started-py"><span class="std std-ref">Getting Started</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Getting Started</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset."><img alt="" src="../../_images/sphx_glr_01_encodings_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/01_encodings.html#sphx-glr-auto-examples-01-encodings-py"><span class="std std-ref">Encoding: from a dataframe to a numerical matrix for machine learning</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
+</div></div></section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="skrub.DropCols.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">DropCols</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="skrub.TableReport.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">TableReport</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.tabular_learner"><code class="docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery-examples">Gallery examples</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/reference/generated/skrub.tabular_learner.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2025, the skrub developers.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
