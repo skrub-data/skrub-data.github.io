@@ -24,8 +24,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -35,13 +35,13 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../_static/jupyterlite_sphinx.css?v=ca70e7f1" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyterlite_sphinx.css?v=e3ca86de" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -49,10 +49,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0c3a8733" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=de0fc20e"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -62,10 +62,11 @@
     <script src="../_static/jupyterlite_sphinx.js?v=d6bdf5f8"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/index';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.16.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.dev0';
-        DOCUMENTATION_OPTIONS.show_version_warning_banner = true;
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            true;
         </script>
     <link rel="icon" href="../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../about.html" />
@@ -185,7 +186,9 @@
 </li>
 
             <li class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
                     More
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
@@ -525,19 +528,23 @@
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.deduplicate.html">deduplicate</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_employee_salaries.html">fetch_employee_salaries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_medical_charge.html">fetch_medical_charge</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_midwest_survey.html">fetch_midwest_survey</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_open_payments.html">fetch_open_payments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_road_safety.html">fetch_road_safety</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_traffic_violations.html">fetch_traffic_violations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_drug_directory.html">fetch_drug_directory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_world_bank_indicator.html">fetch_world_bank_indicator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_movielens.html">fetch_movielens</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_bike_sharing.html">fetch_bike_sharing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_country_happiness.html">fetch_country_happiness</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_credit_fraud.html">fetch_credit_fraud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_drug_directory.html">fetch_drug_directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_employee_salaries.html">fetch_employee_salaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_flight_delays.html">fetch_flight_delays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_ken_embeddings.html">fetch_ken_embeddings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_ken_table_aliases.html">fetch_ken_table_aliases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_ken_types.html">fetch_ken_types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_ken_embeddings.html">fetch_ken_embeddings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_medical_charge.html">fetch_medical_charge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_midwest_survey.html">fetch_midwest_survey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_movielens.html">fetch_movielens</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_open_payments.html">fetch_open_payments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_toxicity.html">fetch_toxicity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_traffic_violations.html">fetch_traffic_violations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.fetch_videogame_sales.html">fetch_videogame_sales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.get_data_dir.html">get_data_dir</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.datasets.make_deduplication_data.html">make_deduplication_data</a></li>
 </ul>
 </div>
@@ -546,9 +553,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -738,44 +750,56 @@ guide for more details.</p>
 <span id="downloading-a-dataset-ref"></span><h2>Downloading a dataset<a class="headerlink" href="#downloading-a-dataset" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
 <tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_bike_sharing.html#skrub.datasets.fetch_bike_sharing" title="skrub.datasets.fetch_bike_sharing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_bike_sharing</span></code></a></p></td>
+<td><p>Fetch the bike sharing dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_country_happiness.html#skrub.datasets.fetch_country_happiness" title="skrub.datasets.fetch_country_happiness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_country_happiness</span></code></a></p></td>
+<td><p>Fetch the happiness index dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_credit_fraud.html#skrub.datasets.fetch_credit_fraud" title="skrub.datasets.fetch_credit_fraud"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_credit_fraud</span></code></a></p></td>
+<td><p>Fetch the credit fraud dataset (classification) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_drug_directory.html#skrub.datasets.fetch_drug_directory" title="skrub.datasets.fetch_drug_directory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_drug_directory</span></code></a></p></td>
+<td><p>Fetches the drug directory dataset (classification), available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
+</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_employee_salaries.html#skrub.datasets.fetch_employee_salaries" title="skrub.datasets.fetch_employee_salaries"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_employee_salaries</span></code></a></p></td>
-<td><p>Fetches the employee salaries dataset (regression), available at <a class="reference external" href="https://openml.org/d/42125">https://openml.org/d/42125</a></p></td>
+<td><p>Fetches the employee salaries dataset (regression), available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_medical_charge.html#skrub.datasets.fetch_medical_charge" title="skrub.datasets.fetch_medical_charge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_medical_charge</span></code></a></p></td>
-<td><p>Fetches the medical charge dataset (regression), available at <a class="reference external" href="https://openml.org/d/42720">https://openml.org/d/42720</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_midwest_survey.html#skrub.datasets.fetch_midwest_survey" title="skrub.datasets.fetch_midwest_survey"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_midwest_survey</span></code></a></p></td>
-<td><p>Fetches the midwest survey dataset (classification), available at <a class="reference external" href="https://openml.org/d/42805">https://openml.org/d/42805</a></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_open_payments.html#skrub.datasets.fetch_open_payments" title="skrub.datasets.fetch_open_payments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_open_payments</span></code></a></p></td>
-<td><p>Fetches the open payments dataset (classification), available at <a class="reference external" href="https://openml.org/d/42738">https://openml.org/d/42738</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_road_safety.html#skrub.datasets.fetch_road_safety" title="skrub.datasets.fetch_road_safety"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_road_safety</span></code></a></p></td>
-<td><p>Fetches the road safety dataset (classification), available at <a class="reference external" href="https://openml.org/d/42803">https://openml.org/d/42803</a></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_traffic_violations.html#skrub.datasets.fetch_traffic_violations" title="skrub.datasets.fetch_traffic_violations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_traffic_violations</span></code></a></p></td>
-<td><p>Fetches the traffic violations dataset (classification), available at <a class="reference external" href="https://openml.org/d/42132">https://openml.org/d/42132</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_drug_directory.html#skrub.datasets.fetch_drug_directory" title="skrub.datasets.fetch_drug_directory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_drug_directory</span></code></a></p></td>
-<td><p>Fetches the drug directory dataset (classification), available at <a class="reference external" href="https://openml.org/d/43044">https://openml.org/d/43044</a></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_world_bank_indicator.html#skrub.datasets.fetch_world_bank_indicator" title="skrub.datasets.fetch_world_bank_indicator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_world_bank_indicator</span></code></a></p></td>
-<td><p>Fetches a dataset of an indicator from the World Bank open data platform.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_movielens.html#skrub.datasets.fetch_movielens" title="skrub.datasets.fetch_movielens"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_movielens</span></code></a></p></td>
-<td><p>Fetches a dataset from Movielens.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_credit_fraud.html#skrub.datasets.fetch_credit_fraud" title="skrub.datasets.fetch_credit_fraud"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_credit_fraud</span></code></a></p></td>
-<td><p>Fetch the credit fraud dataset from figshare.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_ken_table_aliases.html#skrub.datasets.fetch_ken_table_aliases" title="skrub.datasets.fetch_ken_table_aliases"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_ken_table_aliases</span></code></a></p></td>
-<td><p>Get the supported aliases of embedded KEN entities tables.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_ken_types.html#skrub.datasets.fetch_ken_types" title="skrub.datasets.fetch_ken_types"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_ken_types</span></code></a></p></td>
-<td><p>Helper function to search for KEN entity types.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_flight_delays.html#skrub.datasets.fetch_flight_delays" title="skrub.datasets.fetch_flight_delays"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_flight_delays</span></code></a></p></td>
+<td><p>Fetch the flight delays dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_ken_embeddings.html#skrub.datasets.fetch_ken_embeddings" title="skrub.datasets.fetch_ken_embeddings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_ken_embeddings</span></code></a></p></td>
 <td><p>Download Wikipedia embeddings by type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_ken_table_aliases.html#skrub.datasets.fetch_ken_table_aliases" title="skrub.datasets.fetch_ken_table_aliases"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_ken_table_aliases</span></code></a></p></td>
+<td><p>Get the supported aliases of embedded KEN entities tables.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_ken_types.html#skrub.datasets.fetch_ken_types" title="skrub.datasets.fetch_ken_types"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_ken_types</span></code></a></p></td>
+<td><p>Helper function to search for KEN entity types.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_medical_charge.html#skrub.datasets.fetch_medical_charge" title="skrub.datasets.fetch_medical_charge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_medical_charge</span></code></a></p></td>
+<td><p>Fetches the medical charge dataset (regression), available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_midwest_survey.html#skrub.datasets.fetch_midwest_survey" title="skrub.datasets.fetch_midwest_survey"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_midwest_survey</span></code></a></p></td>
+<td><p>Fetches the midwest survey dataset (classification), available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_movielens.html#skrub.datasets.fetch_movielens" title="skrub.datasets.fetch_movielens"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_movielens</span></code></a></p></td>
+<td><p>Fetch the movielens dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_open_payments.html#skrub.datasets.fetch_open_payments" title="skrub.datasets.fetch_open_payments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_open_payments</span></code></a></p></td>
+<td><p>Fetches the open payments dataset (classification), available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_toxicity.html#skrub.datasets.fetch_toxicity" title="skrub.datasets.fetch_toxicity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_toxicity</span></code></a></p></td>
+<td><p>Fetch the toxicity dataset (classification) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_traffic_violations.html#skrub.datasets.fetch_traffic_violations" title="skrub.datasets.fetch_traffic_violations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_traffic_violations</span></code></a></p></td>
+<td><p>Fetches the traffic violations dataset (classification), available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_videogame_sales.html#skrub.datasets.fetch_videogame_sales" title="skrub.datasets.fetch_videogame_sales"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_videogame_sales</span></code></a></p></td>
+<td><p>Fetch the videogame sales dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.get_data_dir.html#skrub.datasets.get_data_dir" title="skrub.datasets.get_data_dir"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_data_dir</span></code></a></p></td>
+<td><p>Returns the directory in which skrub looks for data.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.datasets.make_deduplication_data.html#skrub.datasets.make_deduplication_data" title="skrub.datasets.make_deduplication_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">make_deduplication_data</span></code></a></p></td>
 <td><p>Duplicates examples with spelling mistakes.</p></td>
@@ -852,13 +876,13 @@ guide for more details.</p>
   </nav></div>
 
   <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../_sources/reference/index.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/reference/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -873,8 +897,8 @@ guide for more details.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -907,7 +931,8 @@ guide for more details.</p>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

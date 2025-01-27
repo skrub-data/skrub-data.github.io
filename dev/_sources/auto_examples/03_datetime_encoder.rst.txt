@@ -75,10 +75,10 @@ on the date, time and weather conditions.
 
     import pandas as pd
 
-    data = pd.read_csv(
-        "https://raw.githubusercontent.com/skrub-data/datasets/master"
-        "/data/bike-sharing-dataset.csv"
-    )
+    from skrub import datasets
+
+    data = datasets.fetch_bike_sharing().bike_sharing
+
     # Extract our input data (X) and the target column (y)
     y = data["cnt"]
     X = data[["date", "holiday", "temp", "hum", "windspeed", "weathersit"]]
@@ -88,6 +88,12 @@ on the date, time and weather conditions.
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    Downloading 'bike_sharing' from https://github.com/skrub-data/skrub-data-files/raw/refs/heads/main/bike_sharing.zip (attempt 1/3)
 
 
 .. raw:: html
@@ -519,8 +525,8 @@ which ensures that the test set is always in the future.
  .. code-block:: none
 
 
-    array([ -6664.06809097,  -6520.55512687, -21139.48809623, -13132.87197308,
-           -14222.62211699])
+    array([ -6664.06809097,  -6520.55512687, -21139.48809623, -13210.22523657,
+           -14482.00571536])
 
 
 
@@ -666,7 +672,7 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 5.280 seconds)
+   **Total running time of the script:** (0 minutes 5.775 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:

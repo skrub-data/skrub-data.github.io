@@ -24,8 +24,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -35,13 +35,13 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../_static/jupyterlite_sphinx.css?v=ca70e7f1" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyterlite_sphinx.css?v=e3ca86de" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -49,10 +49,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0c3a8733" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=de0fc20e"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
@@ -62,10 +62,11 @@
     <script src="../_static/jupyterlite_sphinx.js?v=d6bdf5f8"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/07_multiple_key_join';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.16.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.dev0';
-        DOCUMENTATION_OPTIONS.show_version_warning_banner = true;
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            true;
         </script>
     <link rel="icon" href="../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../about.html" />
@@ -185,7 +186,9 @@
 </li>
 
             <li class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
                     More
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
@@ -499,9 +502,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -580,16 +588,20 @@ and destination airports and flight time.
 Here, we consider only flights from 2008.</p></li>
 </ul>
 </div></blockquote>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
-<span class="kn">from</span> <span class="nn">skrub.datasets</span> <span class="kn">import</span> <span class="n">fetch_figshare</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">skrub.datasets</span><span class="w"> </span><span class="kn">import</span> <a href="../reference/generated/skrub.datasets.fetch_flight_delays.html#skrub.datasets.fetch_flight_delays" title="skrub.datasets.fetch_flight_delays" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_flight_delays</span></a>
 
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.utils.Bunch.html#sklearn.utils.Bunch" title="sklearn.utils.Bunch" class="sphx-glr-backref-module-sklearn-utils sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.datasets.fetch_flight_delays.html#skrub.datasets.fetch_flight_delays" title="skrub.datasets.fetch_flight_delays" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_flight_delays</span></a><span class="p">()</span>
 <a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">seed</span></a> <span class="o">=</span> <span class="mi">1</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">flights</span></a> <span class="o">=</span> <span class="n">fetch_figshare</span><span class="p">(</span><span class="s2">&quot;41771418&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">flights</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset</span><span class="o">.</span><span class="n">flights</span></a>
 
 <span class="c1"># Sampling for faster computation.</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">flights</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sample.html#pandas.DataFrame.sample" title="pandas.DataFrame.sample" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">flights</span><span class="o">.</span><span class="n">sample</span></a><span class="p">(</span><span class="mi">5_000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">seed</span></a><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">flights</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Downloading &#39;flight_delays&#39; from https://github.com/skrub-data/skrub-data-files/raw/refs/heads/main/flight_delays.zip (attempt 1/3)
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -658,18 +670,18 @@ Here, we consider only flights from 2008.</p></li>
     </tr>
     <tr>
       <th>2</th>
-      <td>2008-04-17</td>
-      <td>4</td>
-      <td>1900-01-01 09:40:00</td>
-      <td>1900-01-01 13:15:00</td>
-      <td>WN</td>
-      <td>1684</td>
-      <td>N642WN</td>
-      <td>155.0</td>
-      <td>-13.0</td>
-      <td>SEA</td>
-      <td>DEN</td>
-      <td>1024.0</td>
+      <td>2008-03-26</td>
+      <td>3</td>
+      <td>1900-01-01 07:00:00</td>
+      <td>1900-01-01 09:38:00</td>
+      <td>US</td>
+      <td>455</td>
+      <td>N627AW</td>
+      <td>98.0</td>
+      <td>-1.0</td>
+      <td>PHX</td>
+      <td>SLC</td>
+      <td>507.0</td>
     </tr>
     <tr>
       <th>3</th>
@@ -707,8 +719,8 @@ Here, we consider only flights from 2008.</p></li>
 </div>
 <br />
 <br /><p>Let us see the arrival delay of the flights in the dataset:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
 
 <a href="http://seaborn.pydata.org/generated/seaborn.set_theme.html#seaborn.set_theme" title="seaborn.set_theme" class="sphx-glr-backref-module-seaborn sphx-glr-backref-type-py-function"><span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span></a><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;ticks&quot;</span><span class="p">)</span>
 
@@ -728,7 +740,7 @@ are some very long ones.</p>
 and location (longitude, latitude).</p></li>
 </ul>
 </div></blockquote>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">airports</span></a> <span class="o">=</span> <span class="n">fetch_figshare</span><span class="p">(</span><span class="s2">&quot;41710257&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">airports</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset</span><span class="o">.</span><span class="n">airports</span></a>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">airports</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
 </pre></div>
 </div>
@@ -826,7 +838,7 @@ Both tables are from the Global Historical Climatology Network.
 Here, we consider only weather measurements from 2008.</p></li>
 </ul>
 </div></blockquote>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">weather</span></a> <span class="o">=</span> <span class="n">fetch_figshare</span><span class="p">(</span><span class="s2">&quot;41771457&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">weather</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset</span><span class="o">.</span><span class="n">weather</span></a>
 <span class="c1"># Sampling for faster computation.</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">weather</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sample.html#pandas.DataFrame.sample" title="pandas.DataFrame.sample" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">weather</span><span class="o">.</span><span class="n">sample</span></a><span class="p">(</span><span class="mi">10_000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">seed</span></a><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">weather</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
@@ -861,40 +873,40 @@ Here, we consider only weather measurements from 2008.</p></li>
   <tbody>
     <tr>
       <th>0</th>
-      <td>ASN00041037</td>
-      <td>2008-06-18</td>
-      <td>NaN</td>
-      <td>0.0</td>
+      <td>RPM00098325</td>
+      <td>2008-08-20</td>
+      <td>290.0</td>
+      <td>856.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>USC00164696</td>
-      <td>2008-01-04</td>
-      <td>39.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
+      <td>ASN00023820</td>
+      <td>2008-07-20</td>
+      <td>NaN</td>
+      <td>28.0</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>US1ILSP0008</td>
-      <td>2008-08-19</td>
+      <td>MXN00024056</td>
+      <td>2008-04-13</td>
+      <td>250.0</td>
+      <td>0.0</td>
       <td>NaN</td>
-      <td>0.0</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>USC00164931</td>
-      <td>2008-10-05</td>
+      <td>GME00126742</td>
+      <td>2008-11-06</td>
+      <td>116.0</td>
+      <td>4.0</td>
       <td>NaN</td>
-      <td>0.0</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>NOE00111309</td>
-      <td>2008-08-18</td>
+      <td>ASN00074201</td>
+      <td>2008-04-12</td>
       <td>NaN</td>
       <td>0.0</td>
       <td>NaN</td>
@@ -908,7 +920,7 @@ Here, we consider only weather measurements from 2008.</p></li>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">stations</span></code> dataset. Provides location of all the weather
 measurement stations in the US.</p></li>
 </ul>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">stations</span></a> <span class="o">=</span> <span class="n">fetch_figshare</span><span class="p">(</span><span class="s2">&quot;41710524&quot;</span><span class="p">)</span><span class="o">.</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">stations</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset</span><span class="o">.</span><span class="n">stations</span></a>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html#pandas.DataFrame.head" title="pandas.DataFrame.head" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">stations</span><span class="o">.</span><span class="n">head</span></a><span class="p">()</span>
 </pre></div>
 </div>
@@ -950,8 +962,8 @@ measurement stations in the US.</p></li>
       <td>-61.7833</td>
       <td>10.1</td>
       <td>ST JOHNS COOLIDGE FLD</td>
-      <td>None</td>
-      <td>None</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -962,8 +974,8 @@ measurement stations in the US.</p></li>
       <td>-61.7833</td>
       <td>19.2</td>
       <td>ST JOHNS</td>
-      <td>None</td>
-      <td>None</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -974,7 +986,7 @@ measurement stations in the US.</p></li>
       <td>55.5170</td>
       <td>34.0</td>
       <td>SHARJAH INTER. AIRP</td>
-      <td>None</td>
+      <td>NaN</td>
       <td>GSN</td>
       <td>41196.0</td>
       <td>NaN</td>
@@ -986,8 +998,8 @@ measurement stations in the US.</p></li>
       <td>55.3640</td>
       <td>10.4</td>
       <td>DUBAI INTL</td>
-      <td>None</td>
-      <td>None</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>41194.0</td>
       <td>NaN</td>
     </tr>
@@ -998,8 +1010,8 @@ measurement stations in the US.</p></li>
       <td>54.6510</td>
       <td>26.8</td>
       <td>ABU DHABI INTL</td>
-      <td>None</td>
-      <td>None</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>41217.0</td>
       <td>NaN</td>
     </tr>
@@ -1054,81 +1066,81 @@ measurement stations in the US.</p></li>
   <tbody>
     <tr>
       <th>0</th>
-      <td>AEM00041218</td>
-      <td>24.2620</td>
-      <td>55.6090</td>
-      <td>264.9</td>
-      <td>AL AIN INTL</td>
-      <td>None</td>
-      <td>None</td>
-      <td>41218.0</td>
+      <td>AGE00147708</td>
+      <td>36.720</td>
+      <td>4.050</td>
+      <td>222.0</td>
+      <td>TIZI OUZOU</td>
       <td>NaN</td>
-      <td>2008-02-18</td>
-      <td>310.0</td>
       <td>NaN</td>
+      <td>60395.0</td>
+      <td>NaN</td>
+      <td>2008-04-17</td>
+      <td>225.0</td>
+      <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>AG000060590</td>
-      <td>30.5667</td>
-      <td>2.8667</td>
-      <td>397.0</td>
-      <td>EL-GOLEA</td>
-      <td>None</td>
-      <td>GSN</td>
-      <td>60590.0</td>
+      <td>AGM00060403</td>
+      <td>36.467</td>
+      <td>7.467</td>
+      <td>228.0</td>
+      <td>GUELMA</td>
       <td>NaN</td>
-      <td>2008-10-09</td>
-      <td>278.0</td>
+      <td>NaN</td>
+      <td>60403.0</td>
+      <td>NaN</td>
+      <td>2008-09-17</td>
+      <td>324.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>AGE00147716</td>
-      <td>35.1000</td>
-      <td>-1.8500</td>
-      <td>83.0</td>
-      <td>NEMOURS (GHAZAOUET)</td>
-      <td>None</td>
-      <td>None</td>
-      <td>60517.0</td>
+      <td>AGM00060403</td>
+      <td>36.467</td>
+      <td>7.467</td>
+      <td>228.0</td>
+      <td>GUELMA</td>
       <td>NaN</td>
-      <td>2008-09-23</td>
-      <td>301.0</td>
+      <td>NaN</td>
+      <td>60403.0</td>
+      <td>NaN</td>
+      <td>2008-04-11</td>
+      <td>245.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>AGE00147718</td>
-      <td>34.8500</td>
-      <td>5.7200</td>
-      <td>125.0</td>
-      <td>BISKRA</td>
-      <td>None</td>
-      <td>None</td>
-      <td>60525.0</td>
+      <td>AGM00060419</td>
+      <td>36.276</td>
+      <td>6.620</td>
+      <td>690.4</td>
+      <td>MOHAMED BOUDIAF INTL</td>
       <td>NaN</td>
-      <td>2008-08-09</td>
-      <td>429.0</td>
+      <td>NaN</td>
+      <td>60419.0</td>
+      <td>NaN</td>
+      <td>2008-06-30</td>
+      <td>340.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>AGM00060353</td>
-      <td>36.8170</td>
-      <td>5.8830</td>
-      <td>6.0</td>
-      <td>JIJEL-PORT</td>
-      <td>None</td>
-      <td>None</td>
-      <td>60353.0</td>
+      <td>AGM00060430</td>
+      <td>36.300</td>
+      <td>2.233</td>
+      <td>721.0</td>
+      <td>MILIANA</td>
       <td>NaN</td>
-      <td>2008-07-01</td>
-      <td>286.0</td>
+      <td>NaN</td>
+      <td>60430.0</td>
+      <td>NaN</td>
+      <td>2008-08-17</td>
+      <td>323.0</td>
       <td>0.0</td>
       <td>NaN</td>
     </tr>
@@ -1139,7 +1151,7 @@ measurement stations in the US.</p></li>
 <br />
 <br /><p>Then we join this table with the airports so that we get all auxiliary
 tables into one.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <a href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a>
 
 <a href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">joiner</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">Joiner</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">airports</span></a><span class="p">,</span> <span class="n">aux_key</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="s2">&quot;long&quot;</span><span class="p">],</span> <span class="n">main_key</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;LATITUDE&quot;</span><span class="p">,</span> <span class="s2">&quot;LONGITUDE&quot;</span><span class="p">])</span>
 
@@ -1195,121 +1207,17 @@ tables into one.</p>
   <tbody>
     <tr>
       <th>0</th>
-      <td>AEM00041218</td>
-      <td>24.2620</td>
-      <td>55.6090</td>
-      <td>264.9</td>
-      <td>AL AIN INTL</td>
-      <td>None</td>
-      <td>None</td>
-      <td>41218.0</td>
-      <td>NaN</td>
-      <td>2008-02-18</td>
-      <td>310.0</td>
+      <td>AGE00147708</td>
+      <td>36.720</td>
+      <td>4.050</td>
+      <td>222.0</td>
+      <td>TIZI OUZOU</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>ROP</td>
-      <td>Prachinburi</td>
-      <td>None</td>
-      <td>None</td>
-      <td>Thailand</td>
-      <td>14.078333</td>
-      <td>101.378334</td>
-      <td>2.345567</td>
-      <td>3.214517</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>AG000060590</td>
-      <td>30.5667</td>
-      <td>2.8667</td>
-      <td>397.0</td>
-      <td>EL-GOLEA</td>
-      <td>None</td>
-      <td>GSN</td>
-      <td>60590.0</td>
+      <td>60395.0</td>
       <td>NaN</td>
-      <td>2008-10-09</td>
-      <td>278.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>X96</td>
-      <td>Cruz Bay Harbor Seaplane Base</td>
-      <td>Cruz Bay</td>
-      <td>VI</td>
-      <td>USA</td>
-      <td>18.336898</td>
-      <td>-64.799583</td>
-      <td>3.303558</td>
-      <td>4.527409</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>AGE00147716</td>
-      <td>35.1000</td>
-      <td>-1.8500</td>
-      <td>83.0</td>
-      <td>NEMOURS (GHAZAOUET)</td>
-      <td>None</td>
-      <td>None</td>
-      <td>60517.0</td>
-      <td>NaN</td>
-      <td>2008-09-23</td>
-      <td>301.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>ACK</td>
-      <td>Nantucket Memorial</td>
-      <td>Nantucket</td>
-      <td>MA</td>
-      <td>USA</td>
-      <td>41.253052</td>
-      <td>-70.060181</td>
-      <td>3.073160</td>
-      <td>4.211656</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>AGE00147718</td>
-      <td>34.8500</td>
-      <td>5.7200</td>
-      <td>125.0</td>
-      <td>BISKRA</td>
-      <td>None</td>
-      <td>None</td>
-      <td>60525.0</td>
-      <td>NaN</td>
-      <td>2008-08-09</td>
-      <td>429.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>ACK</td>
-      <td>Nantucket Memorial</td>
-      <td>Nantucket</td>
-      <td>MA</td>
-      <td>USA</td>
-      <td>41.253052</td>
-      <td>-70.060181</td>
-      <td>3.402099</td>
-      <td>4.662456</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>AGM00060353</td>
-      <td>36.8170</td>
-      <td>5.8830</td>
-      <td>6.0</td>
-      <td>JIJEL-PORT</td>
-      <td>None</td>
-      <td>None</td>
-      <td>60353.0</td>
-      <td>NaN</td>
-      <td>2008-07-01</td>
-      <td>286.0</td>
+      <td>2008-04-17</td>
+      <td>225.0</td>
       <td>0.0</td>
       <td>NaN</td>
       <td>EPM</td>
@@ -1319,8 +1227,112 @@ tables into one.</p>
       <td>USA</td>
       <td>44.910111</td>
       <td>-67.012694</td>
-      <td>3.332759</td>
-      <td>4.567428</td>
+      <td>3.259659</td>
+      <td>4.467246</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AGM00060403</td>
+      <td>36.467</td>
+      <td>7.467</td>
+      <td>228.0</td>
+      <td>GUELMA</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>60403.0</td>
+      <td>NaN</td>
+      <td>2008-09-17</td>
+      <td>324.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>EPM</td>
+      <td>Eastport Municipal</td>
+      <td>Eastport</td>
+      <td>ME</td>
+      <td>USA</td>
+      <td>44.910111</td>
+      <td>-67.012694</td>
+      <td>3.411334</td>
+      <td>4.675112</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AGM00060403</td>
+      <td>36.467</td>
+      <td>7.467</td>
+      <td>228.0</td>
+      <td>GUELMA</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>60403.0</td>
+      <td>NaN</td>
+      <td>2008-04-11</td>
+      <td>245.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>EPM</td>
+      <td>Eastport Municipal</td>
+      <td>Eastport</td>
+      <td>ME</td>
+      <td>USA</td>
+      <td>44.910111</td>
+      <td>-67.012694</td>
+      <td>3.411334</td>
+      <td>4.675112</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AGM00060419</td>
+      <td>36.276</td>
+      <td>6.620</td>
+      <td>690.4</td>
+      <td>MOHAMED BOUDIAF INTL</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>60419.0</td>
+      <td>NaN</td>
+      <td>2008-06-30</td>
+      <td>340.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>EPM</td>
+      <td>Eastport Municipal</td>
+      <td>Eastport</td>
+      <td>ME</td>
+      <td>USA</td>
+      <td>44.910111</td>
+      <td>-67.012694</td>
+      <td>3.382942</td>
+      <td>4.636201</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AGM00060430</td>
+      <td>36.300</td>
+      <td>2.233</td>
+      <td>721.0</td>
+      <td>MILIANA</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>60430.0</td>
+      <td>NaN</td>
+      <td>2008-08-17</td>
+      <td>323.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>EPM</td>
+      <td>Eastport Municipal</td>
+      <td>Eastport</td>
+      <td>ME</td>
+      <td>USA</td>
+      <td>44.910111</td>
+      <td>-67.012694</td>
+      <td>3.199924</td>
+      <td>4.385382</td>
       <td>True</td>
     </tr>
   </tbody>
@@ -1399,16 +1411,16 @@ Let’s instantiate another multiple key joiner on the date and the airport:</p>
     </tr>
     <tr>
       <th>2</th>
-      <td>2008-04-17</td>
-      <td>4</td>
-      <td>1900-01-01 09:40:00</td>
-      <td>1900-01-01 13:15:00</td>
-      <td>WN</td>
-      <td>155.0</td>
-      <td>-13.0</td>
-      <td>SEA</td>
-      <td>DEN</td>
-      <td>1024.0</td>
+      <td>2008-03-26</td>
+      <td>3</td>
+      <td>1900-01-01 07:00:00</td>
+      <td>1900-01-01 09:38:00</td>
+      <td>US</td>
+      <td>98.0</td>
+      <td>-1.0</td>
+      <td>PHX</td>
+      <td>SLC</td>
+      <td>507.0</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1451,29 +1463,29 @@ Let’s instantiate another multiple key joiner on the date and the airport:</p>
     </tr>
     <tr>
       <th>4995</th>
-      <td>2008-02-14</td>
-      <td>4</td>
-      <td>1900-01-01 09:00:00</td>
-      <td>1900-01-01 11:30:00</td>
-      <td>AS</td>
-      <td>150.0</td>
-      <td>-2.0</td>
-      <td>SEA</td>
-      <td>LAS</td>
-      <td>866.0</td>
+      <td>2008-04-01</td>
+      <td>2</td>
+      <td>1900-01-01 10:14:00</td>
+      <td>1900-01-01 10:45:00</td>
+      <td>EV</td>
+      <td>91.0</td>
+      <td>50.0</td>
+      <td>ATL</td>
+      <td>PFN</td>
+      <td>247.0</td>
     </tr>
     <tr>
       <th>4996</th>
-      <td>2008-03-25</td>
-      <td>2</td>
-      <td>1900-01-01 23:20:00</td>
-      <td>1900-01-01 06:21:00</td>
-      <td>US</td>
-      <td>241.0</td>
-      <td>-5.0</td>
-      <td>LAS</td>
-      <td>CLT</td>
-      <td>1916.0</td>
+      <td>2008-02-25</td>
+      <td>1</td>
+      <td>1900-01-01 12:00:00</td>
+      <td>1900-01-01 13:30:00</td>
+      <td>AA</td>
+      <td>210.0</td>
+      <td>-2.0</td>
+      <td>DFW</td>
+      <td>RNO</td>
+      <td>1345.0</td>
     </tr>
     <tr>
       <th>4997</th>
@@ -1490,29 +1502,29 @@ Let’s instantiate another multiple key joiner on the date and the airport:</p>
     </tr>
     <tr>
       <th>4998</th>
-      <td>2008-03-28</td>
+      <td>2008-03-14</td>
       <td>5</td>
-      <td>1900-01-01 09:20:00</td>
-      <td>1900-01-01 11:10:00</td>
-      <td>AA</td>
-      <td>170.0</td>
-      <td>93.0</td>
-      <td>DFW</td>
-      <td>SLC</td>
-      <td>988.0</td>
+      <td>1900-01-01 06:42:00</td>
+      <td>1900-01-01 08:04:00</td>
+      <td>XE</td>
+      <td>82.0</td>
+      <td>-16.0</td>
+      <td>ROC</td>
+      <td>CLE</td>
+      <td>245.0</td>
     </tr>
     <tr>
       <th>4999</th>
-      <td>2008-04-15</td>
-      <td>2</td>
-      <td>1900-01-01 23:59:00</td>
-      <td>1900-01-01 08:00:00</td>
-      <td>B6</td>
-      <td>301.0</td>
-      <td>0.0</td>
-      <td>SEA</td>
-      <td>JFK</td>
-      <td>2421.0</td>
+      <td>2008-04-18</td>
+      <td>5</td>
+      <td>1900-01-01 19:38:00</td>
+      <td>1900-01-01 20:06:00</td>
+      <td>OO</td>
+      <td>88.0</td>
+      <td>-3.0</td>
+      <td>ICT</td>
+      <td>DEN</td>
+      <td>419.0</td>
     </tr>
   </tbody>
 </table>
@@ -1526,10 +1538,10 @@ Let’s instantiate another multiple key joiner on the date and the airport:</p>
 </ul>
 <p>our main table.
 - We will use this main table to model the prediction of flight delay.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingClassifier</span></a>
-<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingClassifier</span></a>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a>
 
-<span class="kn">from</span> <span class="nn">skrub</span> <span class="kn">import</span> <a href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a>
+<span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <a href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a>
 
 <a href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">tv</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a><span class="p">()</span>
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">hgb</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingClassifier</span></a><span class="p">()</span>
@@ -1552,22 +1564,19 @@ the flight was delayed (1) or not (0).</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>ArrDelay
-0    2646
-1    2354
+0    2727
+1    2273
 Name: count, dtype: int64
 </pre></div>
 </div>
 <p>The results:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="sklearn.model_selection.train_test_split" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">train_test_split</span></a>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="sklearn.model_selection.train_test_split" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">train_test_split</span></a>
 
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_test</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y_train</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y_test</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="sklearn.model_selection.train_test_split" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">train_test_split</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">seed</span></a><span class="p">)</span>
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.fit" title="sklearn.pipeline.Pipeline.fit" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-method"><span class="n">pipeline_hgb</span><span class="o">.</span><span class="n">fit</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y_train</span></a><span class="p">)</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_test</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y_test</span></a><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [0] during transform. These unknown categories will be encoded as all zeros
-  warnings.warn(
-
-0.5536
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>0.5616
 </pre></div>
 </div>
 </section>
@@ -1577,7 +1586,7 @@ Name: count, dtype: int64
 on imprecise and multiple-key correspondences.
 This is made easy by skrub’s <a class="reference internal" href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> transformer.</p>
 <p>Our final cross-validated accuracy score is 0.55.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 15.485 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 27.841 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-07-multiple-key-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/07_multiple_key_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
@@ -1660,13 +1669,13 @@ This is made easy by skrub’s <a class="reference internal" href="../reference/
   </nav></div>
 
   <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../_sources/auto_examples/07_multiple_key_join.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/auto_examples/07_multiple_key_join.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
   <div class="sidebar-secondary-item">
 
@@ -1740,8 +1749,8 @@ This is made easy by skrub’s <a class="reference internal" href="../reference/
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1774,7 +1783,8 @@ This is made easy by skrub’s <a class="reference internal" href="../reference/
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

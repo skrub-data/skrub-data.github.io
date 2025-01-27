@@ -62,24 +62,28 @@ The data
 We will take a look at the video game sales dataset.
 Let's retrieve the dataset:
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-56
+.. GENERATED FROM PYTHON SOURCE LINES 45-54
 
 .. code-block:: Python
 
     import pandas as pd
 
-    X = pd.read_csv(
-        "https://raw.githubusercontent.com/William2064888/vgsales.csv/main/vgsales.csv",
-        sep=";",
-        on_bad_lines="skip",
-    )
-    # Shuffle the data
-    X = X.sample(frac=1, random_state=11, ignore_index=True)
+    from skrub import datasets
+
+    data = datasets.fetch_videogame_sales()
+
+    X = data.X
     X.head(3)
 
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    Downloading 'videogame_sales' from https://github.com/skrub-data/skrub-data-files/raw/refs/heads/main/videogame_sales.zip (attempt 1/3)
 
 
 .. raw:: html
@@ -103,61 +107,37 @@ Let's retrieve the dataset:
       <thead>
         <tr style="text-align: right;">
           <th></th>
-          <th>Rank</th>
           <th>Name</th>
           <th>Platform</th>
           <th>Year</th>
           <th>Genre</th>
           <th>Publisher</th>
-          <th>NA_Sales</th>
-          <th>EU_Sales</th>
-          <th>JP_Sales</th>
-          <th>Other_Sales</th>
-          <th>Global_Sales</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th>0</th>
-          <td>6500</td>
-          <td>Star Wars: Bounty Hunter</td>
-          <td>GC</td>
-          <td>2002</td>
-          <td>Shooter</td>
-          <td>LucasArts</td>
-          <td>0.20</td>
-          <td>0.05</td>
-          <td>0.0</td>
-          <td>0.01</td>
-          <td>0.26</td>
+          <td>Wii Sports</td>
+          <td>Wii</td>
+          <td>2006</td>
+          <td>Sports</td>
+          <td>Nintendo</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>13442</td>
-          <td>Thrillville: Off the Rails</td>
-          <td>DS</td>
-          <td>2007</td>
-          <td>Strategy</td>
-          <td>LucasArts</td>
-          <td>0.03</td>
-          <td>0.01</td>
-          <td>0.0</td>
-          <td>0.00</td>
-          <td>0.05</td>
+          <td>Super Mario Bros.</td>
+          <td>NES</td>
+          <td>1985</td>
+          <td>Platform</td>
+          <td>Nintendo</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>15074</td>
-          <td>Thomas and Friends: Steaming around Sodor</td>
-          <td>3DS</td>
-          <td>2015</td>
-          <td>Action</td>
-          <td>Avanquest Software</td>
-          <td>0.00</td>
-          <td>0.02</td>
-          <td>0.0</td>
-          <td>0.00</td>
-          <td>0.02</td>
+          <td>Mario Kart Wii</td>
+          <td>Wii</td>
+          <td>2008</td>
+          <td>Racing</td>
+          <td>Nintendo</td>
         </tr>
       </tbody>
     </table>
@@ -166,15 +146,15 @@ Let's retrieve the dataset:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-58
+.. GENERATED FROM PYTHON SOURCE LINES 55-56
 
 Our goal will be to predict the sales amount (y, our target column):
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-62
+.. GENERATED FROM PYTHON SOURCE LINES 56-60
 
 .. code-block:: Python
 
-    y = X["Global_Sales"]
+    y = data.y
     y
 
 
@@ -187,26 +167,26 @@ Our goal will be to predict the sales amount (y, our target column):
  .. code-block:: none
 
 
-    0        0.26
-    1        0.05
-    2        0.02
-    3        1.16
-    4        0.03
-             ... 
-    16567    0.25
-    16568    0.49
-    16569    0.22
-    16570    0.53
-    16571    0.11
+    0        82.74
+    1        40.24
+    2        35.82
+    3        33.00
+    4        31.37
+             ...  
+    16567     0.01
+    16568     0.01
+    16569     0.01
+    16570     0.01
+    16571     0.01
     Name: Global_Sales, Length: 16572, dtype: float64
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-64
+.. GENERATED FROM PYTHON SOURCE LINES 61-62
 
 Let's take a look at the distribution of our target variable:
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-72
+.. GENERATED FROM PYTHON SOURCE LINES 62-70
 
 .. code-block:: Python
 
@@ -230,11 +210,11 @@ Let's take a look at the distribution of our target variable:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-74
+.. GENERATED FROM PYTHON SOURCE LINES 71-72
 
 It seems better to take the log of sales rather than the absolute values:
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-80
+.. GENERATED FROM PYTHON SOURCE LINES 72-78
 
 .. code-block:: Python
 
@@ -256,19 +236,19 @@ It seems better to take the log of sales rather than the absolute values:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-82
+.. GENERATED FROM PYTHON SOURCE LINES 79-80
 
 Before moving further, let's carry out some basic preprocessing:
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-89
+.. GENERATED FROM PYTHON SOURCE LINES 80-87
 
 .. code-block:: Python
 
 
     # Get a mask of the rows with missing values in "Publisher" and "Global_Sales"
-    mask = X.isna()["Publisher"] | X.isna()["Global_Sales"]
+    mask = X["Publisher"].isna() | y.isna()
     # And remove them
-    X.dropna(subset=["Publisher", "Global_Sales"], inplace=True)
+    X = X[~mask]
     y = y[~mask]
 
 
@@ -278,7 +258,7 @@ Before moving further, let's carry out some basic preprocessing:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 90-97
+.. GENERATED FROM PYTHON SOURCE LINES 88-95
 
 Extracting entity embeddings
 ----------------------------
@@ -288,7 +268,7 @@ We will use KEN embeddings to enrich our data.
 We will start by checking out the available tables with
 :class:`~skrub.datasets.fetch_ken_table_aliases`:
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-101
+.. GENERATED FROM PYTHON SOURCE LINES 95-99
 
 .. code-block:: Python
 
@@ -305,17 +285,17 @@ We will start by checking out the available tables with
  .. code-block:: none
 
 
-    {'all_entities', 'games', 'companies', 'schools', 'movies', 'albums'}
+    {'games', 'albums', 'movies', 'all_entities', 'schools', 'companies'}
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 102-105
+.. GENERATED FROM PYTHON SOURCE LINES 100-103
 
 The *games* table is the most relevant to our case.
 Let's see what kind of types we can find in it with the function
 :class:`~skrub.datasets.fetch_ken_types`:
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-109
+.. GENERATED FROM PYTHON SOURCE LINES 103-107
 
 .. code-block:: Python
 
@@ -405,14 +385,14 @@ Let's see what kind of types we can find in it with the function
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 110-114
+.. GENERATED FROM PYTHON SOURCE LINES 108-112
 
 Interesting, we have a broad range of topics!
 
 Next, we'll use :class:`~skrub.datasets.fetch_ken_embeddings`
 to extract the embeddings of entities we need:
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-116
+.. GENERATED FROM PYTHON SOURCE LINES 112-114
 
 .. code-block:: Python
 
@@ -425,7 +405,7 @@ to extract the embeddings of entities we need:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 117-128
+.. GENERATED FROM PYTHON SOURCE LINES 115-126
 
 KEN Embeddings are classified by types.
 See the example on :class:`~skrub.datasets.fetch_ken_embeddings`
@@ -439,7 +419,7 @@ so as not to load all Wikipedia entity embeddings in a table.
 In a first table, we include all embeddings with the type name "game"
 and exclude those with type name "companies" or "developer".
 
-.. GENERATED FROM PYTHON SOURCE LINES 128-134
+.. GENERATED FROM PYTHON SOURCE LINES 126-132
 
 .. code-block:: Python
 
@@ -456,12 +436,12 @@ and exclude those with type name "companies" or "developer".
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 135-137
+.. GENERATED FROM PYTHON SOURCE LINES 133-135
 
 In a second table, we include all embeddings containing the type name
 "game_development_companies", "game_companies" or "game_publish":
 
-.. GENERATED FROM PYTHON SOURCE LINES 137-149
+.. GENERATED FROM PYTHON SOURCE LINES 135-147
 
 .. code-block:: Python
 
@@ -484,7 +464,7 @@ In a second table, we include all embeddings containing the type name
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 150-159
+.. GENERATED FROM PYTHON SOURCE LINES 148-157
 
 Merging the entities
 ....................
@@ -496,7 +476,7 @@ The entities from the 'embedding_games' table will be merged along the
 column "Name" and the ones from 'embedding_publisher' table with the
 column "Publisher"
 
-.. GENERATED FROM PYTHON SOURCE LINES 159-167
+.. GENERATED FROM PYTHON SOURCE LINES 157-165
 
 .. code-block:: Python
 
@@ -515,7 +495,7 @@ column "Publisher"
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 168-174
+.. GENERATED FROM PYTHON SOURCE LINES 166-172
 
 Prediction with base features
 -----------------------------
@@ -524,13 +504,13 @@ We will forget for now the KEN Embeddings and build a typical learning
 pipeline, where will we try to predict the amount of sales only using
 the base features contained in the initial table.
 
-.. GENERATED FROM PYTHON SOURCE LINES 176-179
+.. GENERATED FROM PYTHON SOURCE LINES 174-177
 
 We first use scikit-learn's |ColumnTransformer| to define the columns
 that will be included in the learning process and the appropriate encoding of
 categorical variables using the |MinHash| and |OneHotEncoder|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 179-194
+.. GENERATED FROM PYTHON SOURCE LINES 177-192
 
 .. code-block:: Python
 
@@ -556,12 +536,12 @@ categorical variables using the |MinHash| and |OneHotEncoder|:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 195-197
+.. GENERATED FROM PYTHON SOURCE LINES 193-195
 
 We incorporate our |ColumnTransformer| into a |Pipeline|.
 We define a predictor, |HGBR|, fast and reliable for big datasets.
 
-.. GENERATED FROM PYTHON SOURCE LINES 197-203
+.. GENERATED FROM PYTHON SOURCE LINES 195-201
 
 .. code-block:: Python
 
@@ -578,22 +558,26 @@ We define a predictor, |HGBR|, fast and reliable for big datasets.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 204-205
+.. GENERATED FROM PYTHON SOURCE LINES 202-203
 
 The |Pipeline| can now be readily applied to the dataframe for prediction:
 
-.. GENERATED FROM PYTHON SOURCE LINES 205-226
+.. GENERATED FROM PYTHON SOURCE LINES 203-228
 
 .. code-block:: Python
 
-    from sklearn.model_selection import cross_validate
+    from sklearn.model_selection import KFold, cross_validate
 
     # We will save the results in a dictionary:
     all_r2_scores = dict()
     all_rmse_scores = dict()
 
+    # The dataset is ordered by rank (most sales first so we need to shuffle before
+    # splitting into cross-validation folds)
+    cv = KFold(shuffle=True, random_state=0)
+
     cv_results = cross_validate(
-        pipeline, X_full, y, scoring=["r2", "neg_root_mean_squared_error"]
+        pipeline, X_full, y, scoring=["r2", "neg_root_mean_squared_error"], cv=cv
     )
 
     all_r2_scores["Base features"] = cv_results["test_r2"]
@@ -621,7 +605,7 @@ The |Pipeline| can now be readily applied to the dataframe for prediction:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 227-232
+.. GENERATED FROM PYTHON SOURCE LINES 229-234
 
 Prediction with KEN Embeddings
 ------------------------------
@@ -629,11 +613,11 @@ Prediction with KEN Embeddings
 We will now build a second learning pipeline using only the KEN embeddings
 from Wikipedia.
 
-.. GENERATED FROM PYTHON SOURCE LINES 234-235
+.. GENERATED FROM PYTHON SOURCE LINES 236-237
 
 We keep only the embeddings columns:
 
-.. GENERATED FROM PYTHON SOURCE LINES 235-239
+.. GENERATED FROM PYTHON SOURCE LINES 237-241
 
 .. code-block:: Python
 
@@ -648,11 +632,11 @@ We keep only the embeddings columns:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 240-241
+.. GENERATED FROM PYTHON SOURCE LINES 242-243
 
 We redefine the |Pipeline|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 241-243
+.. GENERATED FROM PYTHON SOURCE LINES 243-245
 
 .. code-block:: Python
 
@@ -665,16 +649,16 @@ We redefine the |Pipeline|:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 244-245
+.. GENERATED FROM PYTHON SOURCE LINES 246-247
 
 Let's look at the results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 245-260
+.. GENERATED FROM PYTHON SOURCE LINES 247-262
 
 .. code-block:: Python
 
     cv_results = cross_validate(
-        pipeline2, X_full, y, scoring=["r2", "neg_root_mean_squared_error"]
+        pipeline2, X_full, y, scoring=["r2", "neg_root_mean_squared_error"], cv=cv
     )
 
     all_r2_scores["KEN features"] = cv_results["test_r2"]
@@ -697,17 +681,17 @@ Let's look at the results:
  .. code-block:: none
 
     With KEN Embeddings:
-    Mean R2 is 0.36 +- 0.01 and the RMSE is 1.17 +- 0.01
+    Mean R2 is 0.36 +- 0.01 and the RMSE is 1.16 +- 0.01
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 261-263
+.. GENERATED FROM PYTHON SOURCE LINES 263-265
 
 It seems including the embeddings is very relevant for the prediction task
 at hand!
 
-.. GENERATED FROM PYTHON SOURCE LINES 265-271
+.. GENERATED FROM PYTHON SOURCE LINES 267-273
 
 Prediction with KEN Embeddings and base features
 ------------------------------------------------
@@ -716,11 +700,11 @@ As we have seen the predictions scores in the case when embeddings are
 only present and when they are missing, we will do a final prediction
 with all variables included.
 
-.. GENERATED FROM PYTHON SOURCE LINES 273-274
+.. GENERATED FROM PYTHON SOURCE LINES 275-276
 
 We include both the embeddings and the base features:
 
-.. GENERATED FROM PYTHON SOURCE LINES 274-283
+.. GENERATED FROM PYTHON SOURCE LINES 276-285
 
 .. code-block:: Python
 
@@ -740,11 +724,11 @@ We include both the embeddings and the base features:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 284-285
+.. GENERATED FROM PYTHON SOURCE LINES 286-287
 
 We redefine the |Pipeline|:
 
-.. GENERATED FROM PYTHON SOURCE LINES 285-287
+.. GENERATED FROM PYTHON SOURCE LINES 287-289
 
 .. code-block:: Python
 
@@ -757,16 +741,16 @@ We redefine the |Pipeline|:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 288-289
+.. GENERATED FROM PYTHON SOURCE LINES 290-291
 
 Let's look at the results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 289-304
+.. GENERATED FROM PYTHON SOURCE LINES 291-306
 
 .. code-block:: Python
 
     cv_results = cross_validate(
-        pipeline3, X_full, y, scoring=["r2", "neg_root_mean_squared_error"]
+        pipeline3, X_full, y, scoring=["r2", "neg_root_mean_squared_error"], cv=cv
     )
 
     all_r2_scores["Base + KEN features"] = cv_results["test_r2"]
@@ -789,19 +773,19 @@ Let's look at the results:
  .. code-block:: none
 
     With KEN Embeddings and base features:
-    Mean R2 is 0.49 +- 0.01 and the RMSE is 1.04 +- 0.01
+    Mean R2 is 0.49 +- 0.02 and the RMSE is 1.04 +- 0.02
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 305-309
+.. GENERATED FROM PYTHON SOURCE LINES 307-311
 
 Plotting the results
 ....................
 
 Finally, we plot the scores on a boxplot:
 
-.. GENERATED FROM PYTHON SOURCE LINES 309-316
+.. GENERATED FROM PYTHON SOURCE LINES 311-318
 
 .. code-block:: Python
 
@@ -824,7 +808,7 @@ Finally, we plot the scores on a boxplot:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 317-326
+.. GENERATED FROM PYTHON SOURCE LINES 319-328
 
 There is a clear improvement when including the KEN embeddings among the
 explanatory variables.
@@ -839,7 +823,7 @@ It helped significantly improve the prediction score.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 2.659 seconds)
+   **Total running time of the script:** (1 minutes 21.074 seconds)
 
 
 .. _sphx_glr_download_auto_examples_06_ken_embeddings.py:

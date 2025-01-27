@@ -63,17 +63,18 @@ The main table: flights dataset
       and destination airports and flight time.
       Here, we consider only flights from 2008.
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-57
+.. GENERATED FROM PYTHON SOURCE LINES 45-58
 
 .. code-block:: Python
 
 
     import pandas as pd
 
-    from skrub.datasets import fetch_figshare
+    from skrub.datasets import fetch_flight_delays
 
+    dataset = fetch_flight_delays()
     seed = 1
-    flights = fetch_figshare("41771418").X
+    flights = dataset.flights
 
     # Sampling for faster computation.
     flights = flights.sample(5_000, random_state=seed, ignore_index=True)
@@ -82,6 +83,12 @@ The main table: flights dataset
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    Downloading 'flight_delays' from https://github.com/skrub-data/skrub-data-files/raw/refs/heads/main/flight_delays.zip (attempt 1/3)
 
 
 .. raw:: html
@@ -152,18 +159,18 @@ The main table: flights dataset
         </tr>
         <tr>
           <th>2</th>
-          <td>2008-04-17</td>
-          <td>4</td>
-          <td>1900-01-01 09:40:00</td>
-          <td>1900-01-01 13:15:00</td>
-          <td>WN</td>
-          <td>1684</td>
-          <td>N642WN</td>
-          <td>155.0</td>
-          <td>-13.0</td>
-          <td>SEA</td>
-          <td>DEN</td>
-          <td>1024.0</td>
+          <td>2008-03-26</td>
+          <td>3</td>
+          <td>1900-01-01 07:00:00</td>
+          <td>1900-01-01 09:38:00</td>
+          <td>US</td>
+          <td>455</td>
+          <td>N627AW</td>
+          <td>98.0</td>
+          <td>-1.0</td>
+          <td>PHX</td>
+          <td>SLC</td>
+          <td>507.0</td>
         </tr>
         <tr>
           <th>3</th>
@@ -202,11 +209,11 @@ The main table: flights dataset
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-59
+.. GENERATED FROM PYTHON SOURCE LINES 59-60
 
 Let us see the arrival delay of the flights in the dataset:
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-68
+.. GENERATED FROM PYTHON SOURCE LINES 60-69
 
 .. code-block:: Python
 
@@ -231,24 +238,24 @@ Let us see the arrival delay of the flights in the dataset:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-71
+.. GENERATED FROM PYTHON SOURCE LINES 70-72
 
 Interesting, most delays are relatively short (<100 min), but there
 are some very long ones.
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-77
+.. GENERATED FROM PYTHON SOURCE LINES 74-78
 
 Airport data: an auxiliary table from the same database
 .......................................................
     - The ``airports`` dataset, with information such as their name
       and location (longitude, latitude).
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-81
+.. GENERATED FROM PYTHON SOURCE LINES 78-82
 
 .. code-block:: Python
 
 
-    airports = fetch_figshare("41710257").X
+    airports = dataset.airports
     airports.head()
 
 
@@ -344,7 +351,7 @@ Airport data: an auxiliary table from the same database
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-87
+.. GENERATED FROM PYTHON SOURCE LINES 83-88
 
 Weather data: auxiliary tables from external sources
 ....................................................
@@ -352,12 +359,12 @@ Weather data: auxiliary tables from external sources
       Both tables are from the Global Historical Climatology Network.
       Here, we consider only weather measurements from 2008.
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-93
+.. GENERATED FROM PYTHON SOURCE LINES 88-94
 
 .. code-block:: Python
 
 
-    weather = fetch_figshare("41771457").X
+    weather = dataset.weather
     # Sampling for faster computation.
     weather = weather.sample(10_000, random_state=seed, ignore_index=True)
     weather.head()
@@ -398,40 +405,40 @@ Weather data: auxiliary tables from external sources
       <tbody>
         <tr>
           <th>0</th>
-          <td>ASN00041037</td>
-          <td>2008-06-18</td>
-          <td>NaN</td>
-          <td>0.0</td>
+          <td>RPM00098325</td>
+          <td>2008-08-20</td>
+          <td>290.0</td>
+          <td>856.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>USC00164696</td>
-          <td>2008-01-04</td>
-          <td>39.0</td>
-          <td>0.0</td>
-          <td>0.0</td>
+          <td>ASN00023820</td>
+          <td>2008-07-20</td>
+          <td>NaN</td>
+          <td>28.0</td>
+          <td>NaN</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>US1ILSP0008</td>
-          <td>2008-08-19</td>
+          <td>MXN00024056</td>
+          <td>2008-04-13</td>
+          <td>250.0</td>
+          <td>0.0</td>
           <td>NaN</td>
-          <td>0.0</td>
-          <td>0.0</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>USC00164931</td>
-          <td>2008-10-05</td>
+          <td>GME00126742</td>
+          <td>2008-11-06</td>
+          <td>116.0</td>
+          <td>4.0</td>
           <td>NaN</td>
-          <td>0.0</td>
-          <td>0.0</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>NOE00111309</td>
-          <td>2008-08-18</td>
+          <td>ASN00074201</td>
+          <td>2008-04-12</td>
           <td>NaN</td>
           <td>0.0</td>
           <td>NaN</td>
@@ -443,17 +450,17 @@ Weather data: auxiliary tables from external sources
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-96
+.. GENERATED FROM PYTHON SOURCE LINES 95-97
 
 - The ``stations`` dataset. Provides location of all the weather
   measurement stations in the US.
 
-.. GENERATED FROM PYTHON SOURCE LINES 96-100
+.. GENERATED FROM PYTHON SOURCE LINES 97-101
 
 .. code-block:: Python
 
 
-    stations = fetch_figshare("41710524").X
+    stations = dataset.stations
     stations.head()
 
 
@@ -501,8 +508,8 @@ Weather data: auxiliary tables from external sources
           <td>-61.7833</td>
           <td>10.1</td>
           <td>ST JOHNS COOLIDGE FLD</td>
-          <td>None</td>
-          <td>None</td>
+          <td>NaN</td>
+          <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
         </tr>
@@ -513,8 +520,8 @@ Weather data: auxiliary tables from external sources
           <td>-61.7833</td>
           <td>19.2</td>
           <td>ST JOHNS</td>
-          <td>None</td>
-          <td>None</td>
+          <td>NaN</td>
+          <td>NaN</td>
           <td>NaN</td>
           <td>NaN</td>
         </tr>
@@ -525,7 +532,7 @@ Weather data: auxiliary tables from external sources
           <td>55.5170</td>
           <td>34.0</td>
           <td>SHARJAH INTER. AIRP</td>
-          <td>None</td>
+          <td>NaN</td>
           <td>GSN</td>
           <td>41196.0</td>
           <td>NaN</td>
@@ -537,8 +544,8 @@ Weather data: auxiliary tables from external sources
           <td>55.3640</td>
           <td>10.4</td>
           <td>DUBAI INTL</td>
-          <td>None</td>
-          <td>None</td>
+          <td>NaN</td>
+          <td>NaN</td>
           <td>41194.0</td>
           <td>NaN</td>
         </tr>
@@ -549,8 +556,8 @@ Weather data: auxiliary tables from external sources
           <td>54.6510</td>
           <td>26.8</td>
           <td>ABU DHABI INTL</td>
-          <td>None</td>
-          <td>None</td>
+          <td>NaN</td>
+          <td>NaN</td>
           <td>41217.0</td>
           <td>NaN</td>
         </tr>
@@ -561,13 +568,13 @@ Weather data: auxiliary tables from external sources
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-104
+.. GENERATED FROM PYTHON SOURCE LINES 102-105
 
 Joining: feature augmentation across tables
 -------------------------------------------
 First we join the stations with weather on the ID (exact join):
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-108
+.. GENERATED FROM PYTHON SOURCE LINES 105-109
 
 .. code-block:: Python
 
@@ -619,81 +626,81 @@ First we join the stations with weather on the ID (exact join):
       <tbody>
         <tr>
           <th>0</th>
-          <td>AEM00041218</td>
-          <td>24.2620</td>
-          <td>55.6090</td>
-          <td>264.9</td>
-          <td>AL AIN INTL</td>
-          <td>None</td>
-          <td>None</td>
-          <td>41218.0</td>
+          <td>AGE00147708</td>
+          <td>36.720</td>
+          <td>4.050</td>
+          <td>222.0</td>
+          <td>TIZI OUZOU</td>
           <td>NaN</td>
-          <td>2008-02-18</td>
-          <td>310.0</td>
           <td>NaN</td>
+          <td>60395.0</td>
+          <td>NaN</td>
+          <td>2008-04-17</td>
+          <td>225.0</td>
+          <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>AG000060590</td>
-          <td>30.5667</td>
-          <td>2.8667</td>
-          <td>397.0</td>
-          <td>EL-GOLEA</td>
-          <td>None</td>
-          <td>GSN</td>
-          <td>60590.0</td>
+          <td>AGM00060403</td>
+          <td>36.467</td>
+          <td>7.467</td>
+          <td>228.0</td>
+          <td>GUELMA</td>
           <td>NaN</td>
-          <td>2008-10-09</td>
-          <td>278.0</td>
+          <td>NaN</td>
+          <td>60403.0</td>
+          <td>NaN</td>
+          <td>2008-09-17</td>
+          <td>324.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>AGE00147716</td>
-          <td>35.1000</td>
-          <td>-1.8500</td>
-          <td>83.0</td>
-          <td>NEMOURS (GHAZAOUET)</td>
-          <td>None</td>
-          <td>None</td>
-          <td>60517.0</td>
+          <td>AGM00060403</td>
+          <td>36.467</td>
+          <td>7.467</td>
+          <td>228.0</td>
+          <td>GUELMA</td>
           <td>NaN</td>
-          <td>2008-09-23</td>
-          <td>301.0</td>
+          <td>NaN</td>
+          <td>60403.0</td>
+          <td>NaN</td>
+          <td>2008-04-11</td>
+          <td>245.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>AGE00147718</td>
-          <td>34.8500</td>
-          <td>5.7200</td>
-          <td>125.0</td>
-          <td>BISKRA</td>
-          <td>None</td>
-          <td>None</td>
-          <td>60525.0</td>
+          <td>AGM00060419</td>
+          <td>36.276</td>
+          <td>6.620</td>
+          <td>690.4</td>
+          <td>MOHAMED BOUDIAF INTL</td>
           <td>NaN</td>
-          <td>2008-08-09</td>
-          <td>429.0</td>
+          <td>NaN</td>
+          <td>60419.0</td>
+          <td>NaN</td>
+          <td>2008-06-30</td>
+          <td>340.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>AGM00060353</td>
-          <td>36.8170</td>
-          <td>5.8830</td>
-          <td>6.0</td>
-          <td>JIJEL-PORT</td>
-          <td>None</td>
-          <td>None</td>
-          <td>60353.0</td>
+          <td>AGM00060430</td>
+          <td>36.300</td>
+          <td>2.233</td>
+          <td>721.0</td>
+          <td>MILIANA</td>
           <td>NaN</td>
-          <td>2008-07-01</td>
-          <td>286.0</td>
+          <td>NaN</td>
+          <td>60430.0</td>
+          <td>NaN</td>
+          <td>2008-08-17</td>
+          <td>323.0</td>
           <td>0.0</td>
           <td>NaN</td>
         </tr>
@@ -704,12 +711,12 @@ First we join the stations with weather on the ID (exact join):
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-111
+.. GENERATED FROM PYTHON SOURCE LINES 110-112
 
 Then we join this table with the airports so that we get all auxiliary
 tables into one.
 
-.. GENERATED FROM PYTHON SOURCE LINES 111-120
+.. GENERATED FROM PYTHON SOURCE LINES 112-121
 
 .. code-block:: Python
 
@@ -776,121 +783,17 @@ tables into one.
       <tbody>
         <tr>
           <th>0</th>
-          <td>AEM00041218</td>
-          <td>24.2620</td>
-          <td>55.6090</td>
-          <td>264.9</td>
-          <td>AL AIN INTL</td>
-          <td>None</td>
-          <td>None</td>
-          <td>41218.0</td>
-          <td>NaN</td>
-          <td>2008-02-18</td>
-          <td>310.0</td>
+          <td>AGE00147708</td>
+          <td>36.720</td>
+          <td>4.050</td>
+          <td>222.0</td>
+          <td>TIZI OUZOU</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>ROP</td>
-          <td>Prachinburi</td>
-          <td>None</td>
-          <td>None</td>
-          <td>Thailand</td>
-          <td>14.078333</td>
-          <td>101.378334</td>
-          <td>2.345567</td>
-          <td>3.214517</td>
-          <td>True</td>
-        </tr>
-        <tr>
-          <th>1</th>
-          <td>AG000060590</td>
-          <td>30.5667</td>
-          <td>2.8667</td>
-          <td>397.0</td>
-          <td>EL-GOLEA</td>
-          <td>None</td>
-          <td>GSN</td>
-          <td>60590.0</td>
+          <td>60395.0</td>
           <td>NaN</td>
-          <td>2008-10-09</td>
-          <td>278.0</td>
-          <td>0.0</td>
-          <td>NaN</td>
-          <td>X96</td>
-          <td>Cruz Bay Harbor Seaplane Base</td>
-          <td>Cruz Bay</td>
-          <td>VI</td>
-          <td>USA</td>
-          <td>18.336898</td>
-          <td>-64.799583</td>
-          <td>3.303558</td>
-          <td>4.527409</td>
-          <td>True</td>
-        </tr>
-        <tr>
-          <th>2</th>
-          <td>AGE00147716</td>
-          <td>35.1000</td>
-          <td>-1.8500</td>
-          <td>83.0</td>
-          <td>NEMOURS (GHAZAOUET)</td>
-          <td>None</td>
-          <td>None</td>
-          <td>60517.0</td>
-          <td>NaN</td>
-          <td>2008-09-23</td>
-          <td>301.0</td>
-          <td>0.0</td>
-          <td>NaN</td>
-          <td>ACK</td>
-          <td>Nantucket Memorial</td>
-          <td>Nantucket</td>
-          <td>MA</td>
-          <td>USA</td>
-          <td>41.253052</td>
-          <td>-70.060181</td>
-          <td>3.073160</td>
-          <td>4.211656</td>
-          <td>True</td>
-        </tr>
-        <tr>
-          <th>3</th>
-          <td>AGE00147718</td>
-          <td>34.8500</td>
-          <td>5.7200</td>
-          <td>125.0</td>
-          <td>BISKRA</td>
-          <td>None</td>
-          <td>None</td>
-          <td>60525.0</td>
-          <td>NaN</td>
-          <td>2008-08-09</td>
-          <td>429.0</td>
-          <td>0.0</td>
-          <td>NaN</td>
-          <td>ACK</td>
-          <td>Nantucket Memorial</td>
-          <td>Nantucket</td>
-          <td>MA</td>
-          <td>USA</td>
-          <td>41.253052</td>
-          <td>-70.060181</td>
-          <td>3.402099</td>
-          <td>4.662456</td>
-          <td>True</td>
-        </tr>
-        <tr>
-          <th>4</th>
-          <td>AGM00060353</td>
-          <td>36.8170</td>
-          <td>5.8830</td>
-          <td>6.0</td>
-          <td>JIJEL-PORT</td>
-          <td>None</td>
-          <td>None</td>
-          <td>60353.0</td>
-          <td>NaN</td>
-          <td>2008-07-01</td>
-          <td>286.0</td>
+          <td>2008-04-17</td>
+          <td>225.0</td>
           <td>0.0</td>
           <td>NaN</td>
           <td>EPM</td>
@@ -900,8 +803,112 @@ tables into one.
           <td>USA</td>
           <td>44.910111</td>
           <td>-67.012694</td>
-          <td>3.332759</td>
-          <td>4.567428</td>
+          <td>3.259659</td>
+          <td>4.467246</td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>AGM00060403</td>
+          <td>36.467</td>
+          <td>7.467</td>
+          <td>228.0</td>
+          <td>GUELMA</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>60403.0</td>
+          <td>NaN</td>
+          <td>2008-09-17</td>
+          <td>324.0</td>
+          <td>0.0</td>
+          <td>NaN</td>
+          <td>EPM</td>
+          <td>Eastport Municipal</td>
+          <td>Eastport</td>
+          <td>ME</td>
+          <td>USA</td>
+          <td>44.910111</td>
+          <td>-67.012694</td>
+          <td>3.411334</td>
+          <td>4.675112</td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>AGM00060403</td>
+          <td>36.467</td>
+          <td>7.467</td>
+          <td>228.0</td>
+          <td>GUELMA</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>60403.0</td>
+          <td>NaN</td>
+          <td>2008-04-11</td>
+          <td>245.0</td>
+          <td>0.0</td>
+          <td>NaN</td>
+          <td>EPM</td>
+          <td>Eastport Municipal</td>
+          <td>Eastport</td>
+          <td>ME</td>
+          <td>USA</td>
+          <td>44.910111</td>
+          <td>-67.012694</td>
+          <td>3.411334</td>
+          <td>4.675112</td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>AGM00060419</td>
+          <td>36.276</td>
+          <td>6.620</td>
+          <td>690.4</td>
+          <td>MOHAMED BOUDIAF INTL</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>60419.0</td>
+          <td>NaN</td>
+          <td>2008-06-30</td>
+          <td>340.0</td>
+          <td>0.0</td>
+          <td>NaN</td>
+          <td>EPM</td>
+          <td>Eastport Municipal</td>
+          <td>Eastport</td>
+          <td>ME</td>
+          <td>USA</td>
+          <td>44.910111</td>
+          <td>-67.012694</td>
+          <td>3.382942</td>
+          <td>4.636201</td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>AGM00060430</td>
+          <td>36.300</td>
+          <td>2.233</td>
+          <td>721.0</td>
+          <td>MILIANA</td>
+          <td>NaN</td>
+          <td>NaN</td>
+          <td>60430.0</td>
+          <td>NaN</td>
+          <td>2008-08-17</td>
+          <td>323.0</td>
+          <td>0.0</td>
+          <td>NaN</td>
+          <td>EPM</td>
+          <td>Eastport Municipal</td>
+          <td>Eastport</td>
+          <td>ME</td>
+          <td>USA</td>
+          <td>44.910111</td>
+          <td>-67.012694</td>
+          <td>3.199924</td>
+          <td>4.385382</td>
           <td>True</td>
         </tr>
       </tbody>
@@ -911,12 +918,12 @@ tables into one.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 121-123
+.. GENERATED FROM PYTHON SOURCE LINES 122-124
 
 Joining airports with flights data:
 Let's instantiate another multiple key joiner on the date and the airport:
 
-.. GENERATED FROM PYTHON SOURCE LINES 123-132
+.. GENERATED FROM PYTHON SOURCE LINES 124-133
 
 .. code-block:: Python
 
@@ -996,16 +1003,16 @@ Let's instantiate another multiple key joiner on the date and the airport:
         </tr>
         <tr>
           <th>2</th>
-          <td>2008-04-17</td>
-          <td>4</td>
-          <td>1900-01-01 09:40:00</td>
-          <td>1900-01-01 13:15:00</td>
-          <td>WN</td>
-          <td>155.0</td>
-          <td>-13.0</td>
-          <td>SEA</td>
-          <td>DEN</td>
-          <td>1024.0</td>
+          <td>2008-03-26</td>
+          <td>3</td>
+          <td>1900-01-01 07:00:00</td>
+          <td>1900-01-01 09:38:00</td>
+          <td>US</td>
+          <td>98.0</td>
+          <td>-1.0</td>
+          <td>PHX</td>
+          <td>SLC</td>
+          <td>507.0</td>
         </tr>
         <tr>
           <th>3</th>
@@ -1048,29 +1055,29 @@ Let's instantiate another multiple key joiner on the date and the airport:
         </tr>
         <tr>
           <th>4995</th>
-          <td>2008-02-14</td>
-          <td>4</td>
-          <td>1900-01-01 09:00:00</td>
-          <td>1900-01-01 11:30:00</td>
-          <td>AS</td>
-          <td>150.0</td>
-          <td>-2.0</td>
-          <td>SEA</td>
-          <td>LAS</td>
-          <td>866.0</td>
+          <td>2008-04-01</td>
+          <td>2</td>
+          <td>1900-01-01 10:14:00</td>
+          <td>1900-01-01 10:45:00</td>
+          <td>EV</td>
+          <td>91.0</td>
+          <td>50.0</td>
+          <td>ATL</td>
+          <td>PFN</td>
+          <td>247.0</td>
         </tr>
         <tr>
           <th>4996</th>
-          <td>2008-03-25</td>
-          <td>2</td>
-          <td>1900-01-01 23:20:00</td>
-          <td>1900-01-01 06:21:00</td>
-          <td>US</td>
-          <td>241.0</td>
-          <td>-5.0</td>
-          <td>LAS</td>
-          <td>CLT</td>
-          <td>1916.0</td>
+          <td>2008-02-25</td>
+          <td>1</td>
+          <td>1900-01-01 12:00:00</td>
+          <td>1900-01-01 13:30:00</td>
+          <td>AA</td>
+          <td>210.0</td>
+          <td>-2.0</td>
+          <td>DFW</td>
+          <td>RNO</td>
+          <td>1345.0</td>
         </tr>
         <tr>
           <th>4997</th>
@@ -1087,29 +1094,29 @@ Let's instantiate another multiple key joiner on the date and the airport:
         </tr>
         <tr>
           <th>4998</th>
-          <td>2008-03-28</td>
+          <td>2008-03-14</td>
           <td>5</td>
-          <td>1900-01-01 09:20:00</td>
-          <td>1900-01-01 11:10:00</td>
-          <td>AA</td>
-          <td>170.0</td>
-          <td>93.0</td>
-          <td>DFW</td>
-          <td>SLC</td>
-          <td>988.0</td>
+          <td>1900-01-01 06:42:00</td>
+          <td>1900-01-01 08:04:00</td>
+          <td>XE</td>
+          <td>82.0</td>
+          <td>-16.0</td>
+          <td>ROC</td>
+          <td>CLE</td>
+          <td>245.0</td>
         </tr>
         <tr>
           <th>4999</th>
-          <td>2008-04-15</td>
-          <td>2</td>
-          <td>1900-01-01 23:59:00</td>
-          <td>1900-01-01 08:00:00</td>
-          <td>B6</td>
-          <td>301.0</td>
-          <td>0.0</td>
-          <td>SEA</td>
-          <td>JFK</td>
-          <td>2421.0</td>
+          <td>2008-04-18</td>
+          <td>5</td>
+          <td>1900-01-01 19:38:00</td>
+          <td>1900-01-01 20:06:00</td>
+          <td>OO</td>
+          <td>88.0</td>
+          <td>-3.0</td>
+          <td>ICT</td>
+          <td>DEN</td>
+          <td>419.0</td>
         </tr>
       </tbody>
     </table>
@@ -1119,7 +1126,7 @@ Let's instantiate another multiple key joiner on the date and the airport:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 133-138
+.. GENERATED FROM PYTHON SOURCE LINES 134-139
 
 Training data is then passed through a |Pipeline|:
 
@@ -1127,7 +1134,7 @@ Training data is then passed through a |Pipeline|:
 our main table.
 - We will use this main table to model the prediction of flight delay.
 
-.. GENERATED FROM PYTHON SOURCE LINES 138-149
+.. GENERATED FROM PYTHON SOURCE LINES 139-150
 
 .. code-block:: Python
 
@@ -1149,11 +1156,11 @@ our main table.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 150-151
+.. GENERATED FROM PYTHON SOURCE LINES 151-152
 
 We isolate our target variable and remove useless ID variables:
 
-.. GENERATED FROM PYTHON SOURCE LINES 151-155
+.. GENERATED FROM PYTHON SOURCE LINES 152-156
 
 .. code-block:: Python
 
@@ -1168,7 +1175,7 @@ We isolate our target variable and remove useless ID variables:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 156-162
+.. GENERATED FROM PYTHON SOURCE LINES 157-163
 
 We want to frame this as a classification problem:
 suppose that your company is obliged to reimburse the ticket
@@ -1177,7 +1184,7 @@ price if the flight is delayed.
 We have a binary classification problem:
 the flight was delayed (1) or not (0).
 
-.. GENERATED FROM PYTHON SOURCE LINES 162-166
+.. GENERATED FROM PYTHON SOURCE LINES 163-167
 
 .. code-block:: Python
 
@@ -1195,17 +1202,17 @@ the flight was delayed (1) or not (0).
 
 
     ArrDelay
-    0    2646
-    1    2354
+    0    2727
+    1    2273
     Name: count, dtype: int64
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 167-168
+.. GENERATED FROM PYTHON SOURCE LINES 168-169
 
 The results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 168-174
+.. GENERATED FROM PYTHON SOURCE LINES 169-175
 
 .. code-block:: Python
 
@@ -1223,14 +1230,12 @@ The results:
 
  .. code-block:: none
 
-    /home/circleci/project/.pixi/envs/doc/lib/python3.12/site-packages/sklearn/preprocessing/_encoders.py:242: UserWarning: Found unknown categories in columns [0] during transform. These unknown categories will be encoded as all zeros
-      warnings.warn(
 
-    0.5536
+    0.5616
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 175-183
+.. GENERATED FROM PYTHON SOURCE LINES 176-184
 
 Conclusion
 ----------
@@ -1244,7 +1249,7 @@ Our final cross-validated accuracy score is 0.55.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 15.485 seconds)
+   **Total running time of the script:** (0 minutes 27.841 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:

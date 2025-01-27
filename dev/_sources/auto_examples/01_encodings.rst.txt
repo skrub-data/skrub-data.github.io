@@ -309,7 +309,8 @@ The estimator returned by :obj:`tabular_learner` combines 2 steps:
     <div class="output_subarea output_html rendered_html output_result">
     <style>#sk-container-id-2 {
       /* Definition of color scheme common for light and dark mode */
-      --sklearn-color-text: black;
+      --sklearn-color-text: #000;
+      --sklearn-color-text-muted: #666;
       --sklearn-color-line: gray;
       /* Definition of color scheme for unfitted estimators */
       --sklearn-color-unfitted-level-0: #fff5e6;
@@ -454,12 +455,21 @@ The estimator returned by :obj:`tabular_learner` combines 2 steps:
     /* Toggleable label */
     #sk-container-id-2 label.sk-toggleable__label {
       cursor: pointer;
-      display: block;
+      display: flex;
       width: 100%;
       margin-bottom: 0;
       padding: 0.5em;
       box-sizing: border-box;
       text-align: center;
+      align-items: start;
+      justify-content: space-between;
+      gap: 0.5em;
+    }
+
+    #sk-container-id-2 label.sk-toggleable__label .caption {
+      font-size: 0.6rem;
+      font-weight: lighter;
+      color: var(--sklearn-color-text-muted);
     }
 
     #sk-container-id-2 label.sk-toggleable__label-arrow:before {
@@ -612,7 +622,8 @@ The estimator returned by :obj:`tabular_learner` combines 2 steps:
       height: 1em;
       width: 1em;
       text-decoration: none !important;
-      margin-left: 1ex;
+      margin-left: 0.5em;
+      text-align: center;
       /* unfitted */
       border: var(--sklearn-color-unfitted-level-1) 1pt solid;
       color: var(--sklearn-color-unfitted-level-1);
@@ -715,12 +726,12 @@ The estimator returned by :obj:`tabular_learner` combines 2 steps:
                      TableVectorizer(high_cardinality=MinHashEncoder(),
                                      low_cardinality=ToCategorical())),
                     (&#x27;histgradientboostingregressor&#x27;,
-                     HistGradientBoostingRegressor(categorical_features=&#x27;from_dtype&#x27;))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" ><label for="sk-estimator-id-2" class="sk-toggleable__label  sk-toggleable__label-arrow ">&nbsp;&nbsp;Pipeline<a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></label><div class="sk-toggleable__content "><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;,
+                     HistGradientBoostingRegressor())])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" ><label for="sk-estimator-id-2" class="sk-toggleable__label  sk-toggleable__label-arrow"><div><div>Pipeline</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></div></label><div class="sk-toggleable__content "><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;,
                      TableVectorizer(high_cardinality=MinHashEncoder(),
                                      low_cardinality=ToCategorical())),
                     (&#x27;histgradientboostingregressor&#x27;,
-                     HistGradientBoostingRegressor(categorical_features=&#x27;from_dtype&#x27;))])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" ><label for="sk-estimator-id-3" class="sk-toggleable__label  sk-toggleable__label-arrow ">tablevectorizer: TableVectorizer</label><div class="sk-toggleable__content "><pre>TableVectorizer(high_cardinality=MinHashEncoder(),
-                    low_cardinality=ToCategorical())</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><label>numeric</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" ><label for="sk-estimator-id-4" class="sk-toggleable__label  sk-toggleable__label-arrow ">PassThrough</label><div class="sk-toggleable__content "><pre>PassThrough()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><label>datetime</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" ><label for="sk-estimator-id-5" class="sk-toggleable__label  sk-toggleable__label-arrow ">DatetimeEncoder</label><div class="sk-toggleable__content "><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><label>low_cardinality</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" ><label for="sk-estimator-id-6" class="sk-toggleable__label  sk-toggleable__label-arrow ">ToCategorical</label><div class="sk-toggleable__content "><pre>ToCategorical()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><label>high_cardinality</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" ><label for="sk-estimator-id-7" class="sk-toggleable__label  sk-toggleable__label-arrow ">MinHashEncoder</label><div class="sk-toggleable__content "><pre>MinHashEncoder()</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-8" type="checkbox" ><label for="sk-estimator-id-8" class="sk-toggleable__label  sk-toggleable__label-arrow ">&nbsp;HistGradientBoostingRegressor<a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a></label><div class="sk-toggleable__content "><pre>HistGradientBoostingRegressor(categorical_features=&#x27;from_dtype&#x27;)</pre></div> </div></div></div></div></div></div>
+                     HistGradientBoostingRegressor())])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" ><label for="sk-estimator-id-3" class="sk-toggleable__label  sk-toggleable__label-arrow"><div><div>tablevectorizer: TableVectorizer</div></div></label><div class="sk-toggleable__content "><pre>TableVectorizer(high_cardinality=MinHashEncoder(),
+                    low_cardinality=ToCategorical())</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><label>numeric</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" ><label for="sk-estimator-id-4" class="sk-toggleable__label  sk-toggleable__label-arrow"><div><div>PassThrough</div></div></label><div class="sk-toggleable__content "><pre>PassThrough()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><label>datetime</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" ><label for="sk-estimator-id-5" class="sk-toggleable__label  sk-toggleable__label-arrow"><div><div>DatetimeEncoder</div></div></label><div class="sk-toggleable__content "><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><label>low_cardinality</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" ><label for="sk-estimator-id-6" class="sk-toggleable__label  sk-toggleable__label-arrow"><div><div>ToCategorical</div></div></label><div class="sk-toggleable__content "><pre>ToCategorical()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label  sk-toggleable"><label>high_cardinality</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" ><label for="sk-estimator-id-7" class="sk-toggleable__label  sk-toggleable__label-arrow"><div><div>MinHashEncoder</div></div></label><div class="sk-toggleable__content "><pre>MinHashEncoder()</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-8" type="checkbox" ><label for="sk-estimator-id-8" class="sk-toggleable__label  sk-toggleable__label-arrow"><div><div>HistGradientBoostingRegressor</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a></div></label><div class="sk-toggleable__content "><pre>HistGradientBoostingRegressor()</pre></div> </div></div></div></div></div></div>
     </div>
     <br />
     <br />
@@ -815,41 +826,41 @@ More details on encoding tabular data
           <th>department_SHF</th>
           <th>department_ZAH</th>
           <th>...</th>
-          <th>division: squad, urban, district</th>
+          <th>division: accounts, emergency, members</th>
+          <th>division: warehouse, delivery, liquor</th>
+          <th>division: custody, toddlers, infants</th>
           <th>division: eligibility, assistance, medical</th>
-          <th>division: residential, special, central</th>
-          <th>division: director, automated, office</th>
           <th>assignment_category_Parttime-Regular</th>
-          <th>employee_position_title: warehouse, worker, social</th>
-          <th>employee_position_title: officer, office, police</th>
-          <th>employee_position_title: firefighter, rescuer, recruit</th>
-          <th>employee_position_title: school, room, behavioral</th>
-          <th>employee_position_title: manager, projects, project</th>
-          <th>employee_position_title: specialist, special, therapist</th>
-          <th>employee_position_title: coordinator, transit, coordinating</th>
           <th>employee_position_title: operator, bus, operations</th>
-          <th>employee_position_title: assistance, assistant, income</th>
+          <th>employee_position_title: firefighter, rescuer, recruit</th>
+          <th>employee_position_title: supply, systems, field</th>
+          <th>employee_position_title: therapist, sheriff, deputy</th>
+          <th>employee_position_title: officer, office, traffic</th>
+          <th>employee_position_title: program, programs, property</th>
           <th>employee_position_title: enforcement, permitting, inspector</th>
-          <th>employee_position_title: candidate, sheriff, deputy</th>
-          <th>employee_position_title: information, technology, technologist</th>
-          <th>employee_position_title: technician, mechanic, supply</th>
-          <th>employee_position_title: librarian, library, associate</th>
-          <th>employee_position_title: program, programs, procurement</th>
-          <th>employee_position_title: community, health, nurse</th>
-          <th>employee_position_title: liquor, clerk, store</th>
-          <th>employee_position_title: communications, telecommunications, safety</th>
-          <th>employee_position_title: correctional, correction, corporal</th>
-          <th>employee_position_title: crossing, guard, parking</th>
+          <th>employee_position_title: income, assistance, client</th>
+          <th>employee_position_title: information, recreation, technology</th>
+          <th>employee_position_title: specialist, special, environmental</th>
+          <th>employee_position_title: community, nurse, security</th>
+          <th>employee_position_title: coordinator, services, service</th>
+          <th>employee_position_title: equipment, investment, investigator</th>
+          <th>employee_position_title: manager, engineer, iii</th>
+          <th>employee_position_title: lieutenant, captain, chief</th>
           <th>employee_position_title: administrative, legislative, principal</th>
-          <th>employee_position_title: captain, chief, mcfrs</th>
-          <th>employee_position_title: lieutenant, attendant, shift</th>
-          <th>employee_position_title: planning, engineer, senior</th>
-          <th>employee_position_title: sergeant, cadet, emergency</th>
-          <th>employee_position_title: supervisor, supervisory, advisor</th>
-          <th>employee_position_title: master, registered, meter</th>
-          <th>employee_position_title: services, service, customer</th>
-          <th>employee_position_title: equipment, auditor, accountant</th>
-          <th>employee_position_title: recreation, renovation, construction</th>
+          <th>employee_position_title: accountant, assistant, auditor</th>
+          <th>employee_position_title: school, room, behavioral</th>
+          <th>employee_position_title: management, budget, capital</th>
+          <th>employee_position_title: liquor, clerk, store</th>
+          <th>employee_position_title: candidate, psychiatric, psychiatrist</th>
+          <th>employee_position_title: communications, telecommunications, safety</th>
+          <th>employee_position_title: sergeant, police, cadet</th>
+          <th>employee_position_title: correctional, correction, corporal</th>
+          <th>employee_position_title: crossing, planning, purchasing</th>
+          <th>employee_position_title: warehouse, craftsworker, welfare</th>
+          <th>employee_position_title: mechanic, vehicle, hvac</th>
+          <th>employee_position_title: master, registered, water</th>
+          <th>employee_position_title: library, attorney, associate</th>
+          <th>employee_position_title: supervisor, supervisory, production</th>
           <th>date_first_hired_year</th>
           <th>date_first_hired_month</th>
           <th>date_first_hired_day</th>
@@ -901,41 +912,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.073945</td>
-          <td>0.058126</td>
-          <td>0.075862</td>
-          <td>0.088730</td>
+          <td>0.062311</td>
+          <td>0.071394</td>
+          <td>0.415301</td>
+          <td>0.057345</td>
           <td>0.0</td>
-          <td>0.053135</td>
-          <td>0.101023</td>
-          <td>0.054822</td>
-          <td>0.051819</td>
-          <td>0.054007</td>
-          <td>0.052796</td>
-          <td>37.288074</td>
-          <td>0.067613</td>
-          <td>0.054105</td>
-          <td>0.054535</td>
-          <td>0.054097</td>
-          <td>0.052400</td>
-          <td>0.051617</td>
-          <td>0.050448</td>
-          <td>0.050710</td>
-          <td>0.052475</td>
-          <td>0.058988</td>
-          <td>0.053947</td>
-          <td>0.061695</td>
-          <td>0.052905</td>
-          <td>0.052615</td>
-          <td>0.055621</td>
-          <td>0.053360</td>
-          <td>0.053016</td>
-          <td>0.081392</td>
-          <td>0.075542</td>
-          <td>0.055506</td>
-          <td>0.095212</td>
-          <td>0.054671</td>
-          <td>0.051858</td>
+          <td>0.069297</td>
+          <td>0.054278</td>
+          <td>0.051186</td>
+          <td>0.053072</td>
+          <td>0.103986</td>
+          <td>0.051519</td>
+          <td>0.055214</td>
+          <td>0.054197</td>
+          <td>0.052981</td>
+          <td>0.051227</td>
+          <td>0.052451</td>
+          <td>37.328720</td>
+          <td>0.056242</td>
+          <td>0.053707</td>
+          <td>0.055017</td>
+          <td>0.053714</td>
+          <td>0.052408</td>
+          <td>0.051926</td>
+          <td>0.052381</td>
+          <td>0.059673</td>
+          <td>0.051433</td>
+          <td>0.061014</td>
+          <td>0.088521</td>
+          <td>0.064457</td>
+          <td>0.052930</td>
+          <td>0.052981</td>
+          <td>0.051864</td>
+          <td>0.054730</td>
+          <td>0.051476</td>
+          <td>0.057396</td>
           <td>1986.0</td>
           <td>9.0</td>
           <td>22.0</td>
@@ -985,41 +996,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.062376</td>
-          <td>0.070410</td>
-          <td>0.060198</td>
-          <td>0.061486</td>
+          <td>0.053520</td>
+          <td>0.066811</td>
+          <td>0.064852</td>
+          <td>0.067290</td>
           <td>0.0</td>
-          <td>0.053789</td>
-          <td>21.640009</td>
-          <td>0.059377</td>
-          <td>0.052705</td>
-          <td>0.070187</td>
-          <td>0.059531</td>
-          <td>0.063895</td>
-          <td>0.054372</td>
-          <td>0.085181</td>
-          <td>0.051567</td>
-          <td>0.053210</td>
-          <td>0.056979</td>
-          <td>0.054301</td>
-          <td>0.056151</td>
-          <td>0.053012</td>
-          <td>0.050754</td>
-          <td>0.059531</td>
-          <td>0.053602</td>
-          <td>0.061238</td>
-          <td>0.050035</td>
-          <td>0.053760</td>
-          <td>0.051776</td>
-          <td>0.057730</td>
-          <td>0.065665</td>
-          <td>0.086603</td>
-          <td>0.058583</td>
-          <td>6.724645</td>
-          <td>0.055314</td>
-          <td>0.051794</td>
-          <td>0.054705</td>
+          <td>0.054275</td>
+          <td>0.059426</td>
+          <td>0.054747</td>
+          <td>0.055301</td>
+          <td>21.631975</td>
+          <td>0.056203</td>
+          <td>0.053880</td>
+          <td>0.072489</td>
+          <td>0.057116</td>
+          <td>0.058331</td>
+          <td>0.050810</td>
+          <td>0.064292</td>
+          <td>0.052291</td>
+          <td>0.068811</td>
+          <td>0.053533</td>
+          <td>0.054478</td>
+          <td>0.059301</td>
+          <td>0.052632</td>
+          <td>0.062284</td>
+          <td>0.059771</td>
+          <td>0.061842</td>
+          <td>0.053557</td>
+          <td>0.106144</td>
+          <td>0.062871</td>
+          <td>0.055271</td>
+          <td>0.053698</td>
+          <td>0.053931</td>
+          <td>6.708775</td>
+          <td>0.060303</td>
+          <td>0.051664</td>
           <td>1988.0</td>
           <td>9.0</td>
           <td>12.0</td>
@@ -1069,41 +1080,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.061335</td>
-          <td>0.082603</td>
-          <td>0.079867</td>
-          <td>0.070602</td>
+          <td>0.059779</td>
+          <td>0.056732</td>
+          <td>0.086203</td>
+          <td>0.067591</td>
           <td>0.0</td>
-          <td>20.862568</td>
-          <td>0.059630</td>
-          <td>0.057963</td>
-          <td>0.057933</td>
-          <td>0.066135</td>
-          <td>0.065915</td>
-          <td>0.052359</td>
-          <td>0.053846</td>
-          <td>0.052422</td>
-          <td>0.053723</td>
-          <td>0.052472</td>
-          <td>0.058449</td>
-          <td>0.056892</td>
-          <td>0.057349</td>
-          <td>0.061895</td>
-          <td>0.052775</td>
-          <td>0.057507</td>
-          <td>0.054700</td>
-          <td>0.063342</td>
-          <td>0.050168</td>
-          <td>0.057432</td>
-          <td>0.050039</td>
-          <td>0.050226</td>
-          <td>0.063082</td>
-          <td>0.051279</td>
-          <td>0.056651</td>
-          <td>0.054351</td>
-          <td>0.052240</td>
-          <td>0.055049</td>
-          <td>0.061607</td>
+          <td>0.053630</td>
+          <td>0.058793</td>
+          <td>0.057378</td>
+          <td>0.053006</td>
+          <td>0.060824</td>
+          <td>0.058161</td>
+          <td>0.054326</td>
+          <td>0.056810</td>
+          <td>0.058558</td>
+          <td>0.080729</td>
+          <td>0.052899</td>
+          <td>0.052217</td>
+          <td>0.054914</td>
+          <td>0.076209</td>
+          <td>0.050021</td>
+          <td>0.057078</td>
+          <td>0.053339</td>
+          <td>0.058508</td>
+          <td>0.052157</td>
+          <td>0.058034</td>
+          <td>0.054299</td>
+          <td>0.050939</td>
+          <td>0.051181</td>
+          <td>0.063871</td>
+          <td>0.050174</td>
+          <td>20.851118</td>
+          <td>0.056562</td>
+          <td>0.054481</td>
+          <td>0.052612</td>
+          <td>0.057171</td>
           <td>1989.0</td>
           <td>11.0</td>
           <td>19.0</td>
@@ -1153,41 +1164,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.051916</td>
-          <td>0.081957</td>
-          <td>0.057420</td>
-          <td>0.052843</td>
+          <td>0.059659</td>
+          <td>0.053704</td>
+          <td>24.694506</td>
+          <td>0.070898</td>
           <td>0.0</td>
-          <td>0.094930</td>
-          <td>0.100325</td>
-          <td>0.704833</td>
-          <td>0.051594</td>
-          <td>0.185101</td>
-          <td>0.079590</td>
-          <td>0.062846</td>
-          <td>0.064603</td>
-          <td>0.079195</td>
-          <td>0.142696</td>
-          <td>0.084213</td>
-          <td>0.062299</td>
-          <td>0.059851</td>
-          <td>0.063934</td>
-          <td>0.064370</td>
-          <td>0.057344</td>
-          <td>0.086496</td>
-          <td>0.057314</td>
-          <td>0.077741</td>
-          <td>0.062257</td>
-          <td>0.121913</td>
-          <td>0.115978</td>
-          <td>0.099026</td>
-          <td>0.069167</td>
-          <td>0.060468</td>
-          <td>18.487352</td>
-          <td>0.106783</td>
-          <td>3.734992</td>
-          <td>6.387353</td>
-          <td>0.075436</td>
+          <td>0.059009</td>
+          <td>0.278273</td>
+          <td>0.061954</td>
+          <td>0.079026</td>
+          <td>0.085621</td>
+          <td>0.065840</td>
+          <td>0.118693</td>
+          <td>0.061254</td>
+          <td>0.061364</td>
+          <td>0.074629</td>
+          <td>0.057297</td>
+          <td>0.087002</td>
+          <td>3.551517</td>
+          <td>2.229814</td>
+          <td>0.099561</td>
+          <td>0.074598</td>
+          <td>0.082918</td>
+          <td>0.051872</td>
+          <td>0.072898</td>
+          <td>0.069223</td>
+          <td>0.054827</td>
+          <td>0.077930</td>
+          <td>0.056211</td>
+          <td>0.068083</td>
+          <td>0.055041</td>
+          <td>0.074332</td>
+          <td>0.057695</td>
+          <td>0.090182</td>
+          <td>0.072437</td>
+          <td>23.570896</td>
           <td>2014.0</td>
           <td>5.0</td>
           <td>5.0</td>
@@ -1237,41 +1248,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.051892</td>
-          <td>1.754008</td>
-          <td>0.123701</td>
-          <td>5.609348</td>
+          <td>0.254970</td>
+          <td>0.091470</td>
+          <td>0.061964</td>
+          <td>0.085623</td>
           <td>0.0</td>
-          <td>0.067429</td>
-          <td>0.074617</td>
-          <td>0.064450</td>
-          <td>0.058689</td>
-          <td>0.102166</td>
-          <td>12.645587</td>
-          <td>0.052280</td>
-          <td>0.052292</td>
-          <td>0.074580</td>
-          <td>0.083521</td>
-          <td>0.063279</td>
-          <td>0.074063</td>
-          <td>0.079878</td>
-          <td>0.062228</td>
-          <td>0.132558</td>
-          <td>0.057766</td>
-          <td>0.055843</td>
-          <td>0.074062</td>
-          <td>0.061167</td>
-          <td>0.089301</td>
-          <td>0.056190</td>
-          <td>0.051434</td>
-          <td>0.055743</td>
-          <td>18.438601</td>
-          <td>0.058507</td>
-          <td>0.053653</td>
-          <td>0.050681</td>
-          <td>0.065141</td>
-          <td>0.059373</td>
-          <td>0.084922</td>
+          <td>0.051743</td>
+          <td>0.060424</td>
+          <td>0.115206</td>
+          <td>0.068998</td>
+          <td>0.067069</td>
+          <td>0.061995</td>
+          <td>0.071985</td>
+          <td>0.088723</td>
+          <td>0.070990</td>
+          <td>19.563028</td>
+          <td>0.061133</td>
+          <td>0.051932</td>
+          <td>0.052797</td>
+          <td>0.460397</td>
+          <td>0.055092</td>
+          <td>0.061618</td>
+          <td>0.064654</td>
+          <td>0.066591</td>
+          <td>0.071391</td>
+          <td>0.054852</td>
+          <td>0.070832</td>
+          <td>0.060263</td>
+          <td>0.067707</td>
+          <td>0.059273</td>
+          <td>11.129134</td>
+          <td>0.060589</td>
+          <td>0.155521</td>
+          <td>0.050822</td>
+          <td>0.067033</td>
+          <td>0.058209</td>
           <td>2007.0</td>
           <td>3.0</td>
           <td>5.0</td>
@@ -1405,41 +1416,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.062354</td>
-          <td>0.678966</td>
-          <td>7.182783</td>
-          <td>0.068254</td>
+          <td>7.795675</td>
+          <td>0.069448</td>
+          <td>0.102014</td>
+          <td>0.701938</td>
           <td>0.0</td>
-          <td>0.054526</td>
-          <td>0.055183</td>
-          <td>0.053080</td>
-          <td>0.066582</td>
-          <td>0.055579</td>
-          <td>0.055065</td>
-          <td>0.052140</td>
           <td>0.050000</td>
-          <td>0.053929</td>
-          <td>0.053266</td>
-          <td>0.057672</td>
-          <td>0.052122</td>
-          <td>0.054471</td>
-          <td>0.053177</td>
-          <td>0.052763</td>
-          <td>34.422333</td>
-          <td>0.052249</td>
-          <td>0.062529</td>
-          <td>0.054175</td>
-          <td>0.051344</td>
-          <td>0.051984</td>
-          <td>0.051033</td>
-          <td>0.051038</td>
-          <td>0.052214</td>
-          <td>0.053548</td>
-          <td>0.050904</td>
+          <td>0.053077</td>
+          <td>0.054061</td>
+          <td>0.058541</td>
+          <td>0.055086</td>
+          <td>0.052003</td>
+          <td>0.053353</td>
+          <td>0.054269</td>
+          <td>0.052230</td>
+          <td>0.054468</td>
+          <td>34.430477</td>
+          <td>0.052019</td>
+          <td>0.050737</td>
+          <td>0.061224</td>
+          <td>0.050906</td>
+          <td>0.052296</td>
+          <td>0.051654</td>
+          <td>0.069347</td>
+          <td>0.050540</td>
+          <td>0.052276</td>
+          <td>0.051407</td>
+          <td>0.067804</td>
+          <td>0.054035</td>
+          <td>0.054366</td>
+          <td>0.050376</td>
+          <td>0.053943</td>
+          <td>0.054367</td>
           <td>0.050002</td>
-          <td>0.073266</td>
-          <td>0.052301</td>
-          <td>0.051522</td>
+          <td>0.053325</td>
+          <td>0.051809</td>
           <td>2015.0</td>
           <td>11.0</td>
           <td>3.0</td>
@@ -1489,41 +1500,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.066659</td>
-          <td>0.060750</td>
-          <td>0.069147</td>
-          <td>0.066236</td>
+          <td>0.068003</td>
+          <td>0.062348</td>
+          <td>0.112836</td>
+          <td>0.059858</td>
           <td>0.0</td>
-          <td>0.090153</td>
-          <td>0.051942</td>
-          <td>0.080444</td>
-          <td>0.058898</td>
           <td>0.050001</td>
-          <td>0.112173</td>
-          <td>0.149121</td>
-          <td>0.050002</td>
-          <td>0.265908</td>
-          <td>0.050570</td>
-          <td>0.059350</td>
-          <td>0.118196</td>
-          <td>0.061061</td>
-          <td>0.073376</td>
-          <td>0.053338</td>
-          <td>0.051128</td>
-          <td>0.052343</td>
-          <td>0.068333</td>
-          <td>0.080777</td>
-          <td>0.178685</td>
-          <td>0.491171</td>
-          <td>29.995722</td>
-          <td>0.084621</td>
-          <td>0.062934</td>
-          <td>0.051320</td>
-          <td>1.902874</td>
-          <td>0.073923</td>
-          <td>0.063167</td>
-          <td>0.055425</td>
-          <td>2.963043</td>
+          <td>0.093711</td>
+          <td>0.063742</td>
+          <td>0.053795</td>
+          <td>0.052338</td>
+          <td>0.050003</td>
+          <td>0.050869</td>
+          <td>0.073761</td>
+          <td>2.199051</td>
+          <td>0.062093</td>
+          <td>0.050749</td>
+          <td>0.115284</td>
+          <td>0.050697</td>
+          <td>0.050007</td>
+          <td>28.204784</td>
+          <td>0.578375</td>
+          <td>0.709481</td>
+          <td>0.063698</td>
+          <td>0.050846</td>
+          <td>0.053313</td>
+          <td>2.341156</td>
+          <td>0.070152</td>
+          <td>0.051513</td>
+          <td>0.083581</td>
+          <td>0.080974</td>
+          <td>0.076573</td>
+          <td>0.068438</td>
+          <td>0.083191</td>
+          <td>0.077779</td>
+          <td>1.890045</td>
           <td>1988.0</td>
           <td>11.0</td>
           <td>28.0</td>
@@ -1573,41 +1584,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.064587</td>
-          <td>0.180222</td>
-          <td>1.504954</td>
-          <td>0.096804</td>
+          <td>0.122502</td>
+          <td>0.055233</td>
+          <td>0.066673</td>
+          <td>0.085883</td>
           <td>1.0</td>
-          <td>3.359316</td>
-          <td>0.156501</td>
-          <td>0.057461</td>
-          <td>0.204284</td>
-          <td>0.068939</td>
-          <td>0.444150</td>
-          <td>0.243137</td>
-          <td>0.140970</td>
-          <td>0.287010</td>
-          <td>2.634792</td>
-          <td>0.059823</td>
-          <td>0.112455</td>
-          <td>0.582377</td>
-          <td>32.736614</td>
-          <td>0.069269</td>
-          <td>0.058327</td>
-          <td>0.160637</td>
-          <td>0.180759</td>
-          <td>0.591536</td>
-          <td>0.053111</td>
-          <td>0.490533</td>
-          <td>0.734240</td>
-          <td>0.057587</td>
-          <td>0.126352</td>
-          <td>0.072515</td>
-          <td>0.136961</td>
-          <td>0.057856</td>
-          <td>0.062688</td>
-          <td>2.455212</td>
-          <td>0.104586</td>
+          <td>0.159069</td>
+          <td>0.065583</td>
+          <td>0.092142</td>
+          <td>0.061826</td>
+          <td>0.132212</td>
+          <td>0.064935</td>
+          <td>0.171387</td>
+          <td>0.079836</td>
+          <td>0.106278</td>
+          <td>0.109172</td>
+          <td>0.053036</td>
+          <td>0.104420</td>
+          <td>2.365466</td>
+          <td>0.133967</td>
+          <td>0.056824</td>
+          <td>0.400752</td>
+          <td>0.229023</td>
+          <td>0.098158</td>
+          <td>0.060106</td>
+          <td>0.197504</td>
+          <td>39.792141</td>
+          <td>0.067310</td>
+          <td>0.066301</td>
+          <td>0.105100</td>
+          <td>0.051391</td>
+          <td>1.100698</td>
+          <td>0.364501</td>
+          <td>0.058000</td>
+          <td>0.079395</td>
+          <td>0.073464</td>
           <td>2001.0</td>
           <td>4.0</td>
           <td>30.0</td>
@@ -1657,41 +1668,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.065447</td>
-          <td>0.081315</td>
-          <td>24.534544</td>
-          <td>0.070797</td>
+          <td>28.227961</td>
+          <td>0.053497</td>
+          <td>0.056603</td>
+          <td>0.076147</td>
           <td>0.0</td>
-          <td>0.062993</td>
-          <td>0.066705</td>
-          <td>0.063351</td>
-          <td>0.051425</td>
-          <td>11.929596</td>
-          <td>0.053989</td>
-          <td>0.051576</td>
-          <td>0.052083</td>
-          <td>0.051886</td>
-          <td>0.055035</td>
-          <td>0.055319</td>
-          <td>0.052091</td>
-          <td>0.054607</td>
-          <td>0.053152</td>
-          <td>0.052749</td>
-          <td>0.052820</td>
-          <td>0.054044</td>
-          <td>0.051067</td>
-          <td>0.057596</td>
-          <td>0.050109</td>
-          <td>0.050003</td>
-          <td>0.050002</td>
-          <td>0.052609</td>
-          <td>0.051455</td>
-          <td>0.054557</td>
-          <td>0.051918</td>
-          <td>0.056032</td>
-          <td>0.054918</td>
-          <td>0.056110</td>
-          <td>0.050203</td>
+          <td>0.051804</td>
+          <td>0.058936</td>
+          <td>0.052909</td>
+          <td>0.053996</td>
+          <td>0.060756</td>
+          <td>0.084901</td>
+          <td>0.053503</td>
+          <td>0.051468</td>
+          <td>0.051317</td>
+          <td>0.051842</td>
+          <td>0.051600</td>
+          <td>0.051617</td>
+          <td>0.052730</td>
+          <td>11.903922</td>
+          <td>0.051127</td>
+          <td>0.050016</td>
+          <td>0.051145</td>
+          <td>0.051200</td>
+          <td>0.076846</td>
+          <td>0.053133</td>
+          <td>0.052358</td>
+          <td>0.051230</td>
+          <td>0.054402</td>
+          <td>0.055860</td>
+          <td>0.050130</td>
+          <td>0.057816</td>
+          <td>0.053730</td>
+          <td>0.055264</td>
+          <td>0.051777</td>
+          <td>0.052665</td>
           <td>2006.0</td>
           <td>9.0</td>
           <td>5.0</td>
@@ -1741,41 +1752,41 @@ More details on encoding tabular data
           <td>0.0</td>
           <td>0.0</td>
           <td>...</td>
-          <td>0.062851</td>
-          <td>0.102169</td>
-          <td>0.194650</td>
-          <td>0.118622</td>
+          <td>0.066541</td>
+          <td>0.119882</td>
+          <td>0.069693</td>
+          <td>0.074185</td>
           <td>0.0</td>
-          <td>0.063355</td>
-          <td>0.102075</td>
-          <td>0.053176</td>
-          <td>0.080118</td>
-          <td>0.055783</td>
-          <td>6.473789</td>
-          <td>0.062148</td>
-          <td>0.056290</td>
-          <td>0.079423</td>
-          <td>23.615227</td>
-          <td>0.056200</td>
-          <td>0.120882</td>
-          <td>0.059556</td>
-          <td>0.057540</td>
-          <td>0.146246</td>
-          <td>0.059556</td>
-          <td>0.058718</td>
-          <td>0.079159</td>
-          <td>0.065432</td>
-          <td>0.052284</td>
-          <td>0.054254</td>
-          <td>0.052195</td>
-          <td>0.053901</td>
-          <td>24.412296</td>
-          <td>0.100220</td>
-          <td>0.060990</td>
-          <td>0.050838</td>
-          <td>0.059749</td>
-          <td>3.671390</td>
-          <td>0.087214</td>
+          <td>0.056018</td>
+          <td>0.052181</td>
+          <td>0.057281</td>
+          <td>0.060231</td>
+          <td>0.137578</td>
+          <td>0.051411</td>
+          <td>31.144329</td>
+          <td>0.084198</td>
+          <td>0.099109</td>
+          <td>16.778545</td>
+          <td>0.057304</td>
+          <td>0.059588</td>
+          <td>0.110135</td>
+          <td>0.057983</td>
+          <td>0.053810</td>
+          <td>0.053363</td>
+          <td>3.088271</td>
+          <td>0.094916</td>
+          <td>0.137799</td>
+          <td>0.058312</td>
+          <td>0.060749</td>
+          <td>0.055961</td>
+          <td>0.231122</td>
+          <td>0.061467</td>
+          <td>6.993585</td>
+          <td>0.061053</td>
+          <td>0.061356</td>
+          <td>0.050834</td>
+          <td>0.061839</td>
+          <td>0.069673</td>
           <td>2012.0</td>
           <td>1.0</td>
           <td>30.0</td>
@@ -1821,7 +1832,8 @@ produced numeric features that we can use for machine-learning:
     <div class="output_subarea output_html rendered_html output_result">
     <style>#sk-container-id-3 {
       /* Definition of color scheme common for light and dark mode */
-      --sklearn-color-text: black;
+      --sklearn-color-text: #000;
+      --sklearn-color-text-muted: #666;
       --sklearn-color-line: gray;
       /* Definition of color scheme for unfitted estimators */
       --sklearn-color-unfitted-level-0: #fff5e6;
@@ -1966,12 +1978,21 @@ produced numeric features that we can use for machine-learning:
     /* Toggleable label */
     #sk-container-id-3 label.sk-toggleable__label {
       cursor: pointer;
-      display: block;
+      display: flex;
       width: 100%;
       margin-bottom: 0;
       padding: 0.5em;
       box-sizing: border-box;
       text-align: center;
+      align-items: start;
+      justify-content: space-between;
+      gap: 0.5em;
+    }
+
+    #sk-container-id-3 label.sk-toggleable__label .caption {
+      font-size: 0.6rem;
+      font-weight: lighter;
+      color: var(--sklearn-color-text-muted);
     }
 
     #sk-container-id-3 label.sk-toggleable__label-arrow:before {
@@ -2124,7 +2145,8 @@ produced numeric features that we can use for machine-learning:
       height: 1em;
       width: 1em;
       text-decoration: none !important;
-      margin-left: 1ex;
+      margin-left: 0.5em;
+      text-align: center;
       /* unfitted */
       border: var(--sklearn-color-unfitted-level-1) 1pt solid;
       color: var(--sklearn-color-unfitted-level-1);
@@ -2223,7 +2245,7 @@ produced numeric features that we can use for machine-learning:
       /* fitted */
       background-color: var(--sklearn-color-fitted-level-3);
     }
-    </style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>HistGradientBoostingRegressor()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-9" type="checkbox" checked><label for="sk-estimator-id-9" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;HistGradientBoostingRegressor<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>HistGradientBoostingRegressor()</pre></div> </div></div></div></div>
+    </style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>HistGradientBoostingRegressor()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-9" type="checkbox" checked><label for="sk-estimator-id-9" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>HistGradientBoostingRegressor</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html">?<span>Documentation for HistGradientBoostingRegressor</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>HistGradientBoostingRegressor()</pre></div> </div></div></div></div>
     </div>
     <br />
     <br />
@@ -2269,7 +2291,8 @@ kinds of columns and the default transformation for each of them are:
     <div class="output_subarea output_html rendered_html output_result">
     <style>#sk-container-id-4 {
       /* Definition of color scheme common for light and dark mode */
-      --sklearn-color-text: black;
+      --sklearn-color-text: #000;
+      --sklearn-color-text-muted: #666;
       --sklearn-color-line: gray;
       /* Definition of color scheme for unfitted estimators */
       --sklearn-color-unfitted-level-0: #fff5e6;
@@ -2414,12 +2437,21 @@ kinds of columns and the default transformation for each of them are:
     /* Toggleable label */
     #sk-container-id-4 label.sk-toggleable__label {
       cursor: pointer;
-      display: block;
+      display: flex;
       width: 100%;
       margin-bottom: 0;
       padding: 0.5em;
       box-sizing: border-box;
       text-align: center;
+      align-items: start;
+      justify-content: space-between;
+      gap: 0.5em;
+    }
+
+    #sk-container-id-4 label.sk-toggleable__label .caption {
+      font-size: 0.6rem;
+      font-weight: lighter;
+      color: var(--sklearn-color-text-muted);
     }
 
     #sk-container-id-4 label.sk-toggleable__label-arrow:before {
@@ -2572,7 +2604,8 @@ kinds of columns and the default transformation for each of them are:
       height: 1em;
       width: 1em;
       text-decoration: none !important;
-      margin-left: 1ex;
+      margin-left: 0.5em;
+      text-align: center;
       /* unfitted */
       border: var(--sklearn-color-unfitted-level-1) 1pt solid;
       color: var(--sklearn-color-unfitted-level-1);
@@ -2671,8 +2704,8 @@ kinds of columns and the default transformation for each of them are:
       /* fitted */
       background-color: var(--sklearn-color-fitted-level-3);
     }
-    </style><div id="sk-container-id-4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>TableVectorizer()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-10" type="checkbox" ><label for="sk-estimator-id-10" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;TableVectorizer<span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>TableVectorizer()</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-11" type="checkbox" ><label for="sk-estimator-id-11" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">numeric</label><div class="sk-toggleable__content fitted"><pre>[&#x27;year_first_hired&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-12" type="checkbox" ><label for="sk-estimator-id-12" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-13" type="checkbox" ><label for="sk-estimator-id-13" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">datetime</label><div class="sk-toggleable__content fitted"><pre>[&#x27;date_first_hired&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-14" type="checkbox" ><label for="sk-estimator-id-14" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-15" type="checkbox" ><label for="sk-estimator-id-15" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">low_cardinality</label><div class="sk-toggleable__content fitted"><pre>[&#x27;gender&#x27;, &#x27;department&#x27;, &#x27;department_name&#x27;, &#x27;assignment_category&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-16" type="checkbox" ><label for="sk-estimator-id-16" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;OneHotEncoder<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
-                  sparse_output=False)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-17" type="checkbox" ><label for="sk-estimator-id-17" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">high_cardinality</label><div class="sk-toggleable__content fitted"><pre>[&#x27;division&#x27;, &#x27;employee_position_title&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-18" type="checkbox" ><label for="sk-estimator-id-18" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div></div></div></div></div>
+    </style><div id="sk-container-id-4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>TableVectorizer()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-10" type="checkbox" ><label for="sk-estimator-id-10" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>TableVectorizer</div></div><div><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>TableVectorizer()</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-11" type="checkbox" ><label for="sk-estimator-id-11" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>numeric</div></div></label><div class="sk-toggleable__content fitted"><pre>[&#x27;year_first_hired&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-12" type="checkbox" ><label for="sk-estimator-id-12" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>PassThrough</div></div></label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-13" type="checkbox" ><label for="sk-estimator-id-13" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>datetime</div></div></label><div class="sk-toggleable__content fitted"><pre>[&#x27;date_first_hired&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-14" type="checkbox" ><label for="sk-estimator-id-14" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>DatetimeEncoder</div></div></label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-15" type="checkbox" ><label for="sk-estimator-id-15" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>low_cardinality</div></div></label><div class="sk-toggleable__content fitted"><pre>[&#x27;gender&#x27;, &#x27;department&#x27;, &#x27;department_name&#x27;, &#x27;assignment_category&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-16" type="checkbox" ><label for="sk-estimator-id-16" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>OneHotEncoder</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></div></label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
+                  sparse_output=False)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-17" type="checkbox" ><label for="sk-estimator-id-17" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>high_cardinality</div></div></label><div class="sk-toggleable__content fitted"><pre>[&#x27;division&#x27;, &#x27;employee_position_title&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-18" type="checkbox" ><label for="sk-estimator-id-18" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>GapEncoder</div></div></label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div></div></div></div></div>
     </div>
     <br />
     <br />
@@ -2749,7 +2782,8 @@ corresponding transformer.
     <div class="output_subarea output_html rendered_html output_result">
     <style>#sk-container-id-5 {
       /* Definition of color scheme common for light and dark mode */
-      --sklearn-color-text: black;
+      --sklearn-color-text: #000;
+      --sklearn-color-text-muted: #666;
       --sklearn-color-line: gray;
       /* Definition of color scheme for unfitted estimators */
       --sklearn-color-unfitted-level-0: #fff5e6;
@@ -2894,12 +2928,21 @@ corresponding transformer.
     /* Toggleable label */
     #sk-container-id-5 label.sk-toggleable__label {
       cursor: pointer;
-      display: block;
+      display: flex;
       width: 100%;
       margin-bottom: 0;
       padding: 0.5em;
       box-sizing: border-box;
       text-align: center;
+      align-items: start;
+      justify-content: space-between;
+      gap: 0.5em;
+    }
+
+    #sk-container-id-5 label.sk-toggleable__label .caption {
+      font-size: 0.6rem;
+      font-weight: lighter;
+      color: var(--sklearn-color-text-muted);
     }
 
     #sk-container-id-5 label.sk-toggleable__label-arrow:before {
@@ -3052,7 +3095,8 @@ corresponding transformer.
       height: 1em;
       width: 1em;
       text-decoration: none !important;
-      margin-left: 1ex;
+      margin-left: 0.5em;
+      text-align: center;
       /* unfitted */
       border: var(--sklearn-color-unfitted-level-1) 1pt solid;
       color: var(--sklearn-color-unfitted-level-1);
@@ -3151,7 +3195,7 @@ corresponding transformer.
       /* fitted */
       background-color: var(--sklearn-color-fitted-level-3);
     }
-    </style><div id="sk-container-id-5" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>DatetimeEncoder()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-19" type="checkbox" checked><label for="sk-estimator-id-19" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;DatetimeEncoder<span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div>
+    </style><div id="sk-container-id-5" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>DatetimeEncoder()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-19" type="checkbox" checked><label for="sk-estimator-id-19" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>DatetimeEncoder</div></div><div><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div>
     </div>
     <br />
     <br />
@@ -3487,8 +3531,8 @@ that we can fit, test or cross-validate and that works well on tabular data.
 
  .. code-block:: none
 
-    R2 score:  mean: 0.922; std: 0.015
-    mean fit time: 6.091 seconds
+    R2 score:  mean: 0.918; std: 0.013
+    mean fit time: 5.463 seconds
 
 
 
@@ -3557,7 +3601,7 @@ The resulting pipeline is identical to the one produced by default by
  .. code-block:: none
 
     R2 score:  mean: 0.911; std: 0.014
-    mean fit time: 0.954 seconds
+    mean fit time: 0.938 seconds
 
 
 
@@ -3609,7 +3653,8 @@ First, we train another scikit-learn regressor, the |RandomForestRegressor|:
     <div class="output_subarea output_html rendered_html output_result">
     <style>#sk-container-id-6 {
       /* Definition of color scheme common for light and dark mode */
-      --sklearn-color-text: black;
+      --sklearn-color-text: #000;
+      --sklearn-color-text-muted: #666;
       --sklearn-color-line: gray;
       /* Definition of color scheme for unfitted estimators */
       --sklearn-color-unfitted-level-0: #fff5e6;
@@ -3754,12 +3799,21 @@ First, we train another scikit-learn regressor, the |RandomForestRegressor|:
     /* Toggleable label */
     #sk-container-id-6 label.sk-toggleable__label {
       cursor: pointer;
-      display: block;
+      display: flex;
       width: 100%;
       margin-bottom: 0;
       padding: 0.5em;
       box-sizing: border-box;
       text-align: center;
+      align-items: start;
+      justify-content: space-between;
+      gap: 0.5em;
+    }
+
+    #sk-container-id-6 label.sk-toggleable__label .caption {
+      font-size: 0.6rem;
+      font-weight: lighter;
+      color: var(--sklearn-color-text-muted);
     }
 
     #sk-container-id-6 label.sk-toggleable__label-arrow:before {
@@ -3912,7 +3966,8 @@ First, we train another scikit-learn regressor, the |RandomForestRegressor|:
       height: 1em;
       width: 1em;
       text-decoration: none !important;
-      margin-left: 1ex;
+      margin-left: 0.5em;
+      text-align: center;
       /* unfitted */
       border: var(--sklearn-color-unfitted-level-1) 1pt solid;
       color: var(--sklearn-color-unfitted-level-1);
@@ -4014,11 +4069,11 @@ First, we train another scikit-learn regressor, the |RandomForestRegressor|:
     </style><div id="sk-container-id-6" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
                     (&#x27;randomforestregressor&#x27;,
                      RandomForestRegressor(max_depth=20, n_estimators=50,
-                                           random_state=0))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-20" type="checkbox" ><label for="sk-estimator-id-20" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;&nbsp;Pipeline<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></label><div class="sk-toggleable__content fitted"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
+                                           random_state=0))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-20" type="checkbox" ><label for="sk-estimator-id-20" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>Pipeline</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.pipeline.Pipeline.html">?<span>Documentation for Pipeline</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>Pipeline(steps=[(&#x27;tablevectorizer&#x27;, TableVectorizer()),
                     (&#x27;randomforestregressor&#x27;,
                      RandomForestRegressor(max_depth=20, n_estimators=50,
-                                           random_state=0))])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-21" type="checkbox" ><label for="sk-estimator-id-21" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">tablevectorizer: TableVectorizer</label><div class="sk-toggleable__content fitted"><pre>TableVectorizer()</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-22" type="checkbox" ><label for="sk-estimator-id-22" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">numeric</label><div class="sk-toggleable__content fitted"><pre>[&#x27;year_first_hired&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-23" type="checkbox" ><label for="sk-estimator-id-23" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">PassThrough</label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-24" type="checkbox" ><label for="sk-estimator-id-24" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">datetime</label><div class="sk-toggleable__content fitted"><pre>[&#x27;date_first_hired&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-25" type="checkbox" ><label for="sk-estimator-id-25" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">DatetimeEncoder</label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-26" type="checkbox" ><label for="sk-estimator-id-26" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">low_cardinality</label><div class="sk-toggleable__content fitted"><pre>[&#x27;gender&#x27;, &#x27;department&#x27;, &#x27;department_name&#x27;, &#x27;assignment_category&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-27" type="checkbox" ><label for="sk-estimator-id-27" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;OneHotEncoder<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
-                  sparse_output=False)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-28" type="checkbox" ><label for="sk-estimator-id-28" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">high_cardinality</label><div class="sk-toggleable__content fitted"><pre>[&#x27;division&#x27;, &#x27;employee_position_title&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-29" type="checkbox" ><label for="sk-estimator-id-29" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">GapEncoder</label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-30" type="checkbox" ><label for="sk-estimator-id-30" class="sk-toggleable__label fitted sk-toggleable__label-arrow fitted">&nbsp;RandomForestRegressor<a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.RandomForestRegressor.html">?<span>Documentation for RandomForestRegressor</span></a></label><div class="sk-toggleable__content fitted"><pre>RandomForestRegressor(max_depth=20, n_estimators=50, random_state=0)</pre></div> </div></div></div></div></div></div>
+                                           random_state=0))])</pre></div> </div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-21" type="checkbox" ><label for="sk-estimator-id-21" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>tablevectorizer: TableVectorizer</div></div></label><div class="sk-toggleable__content fitted"><pre>TableVectorizer()</pre></div> </div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-22" type="checkbox" ><label for="sk-estimator-id-22" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>numeric</div></div></label><div class="sk-toggleable__content fitted"><pre>[&#x27;year_first_hired&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-23" type="checkbox" ><label for="sk-estimator-id-23" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>PassThrough</div></div></label><div class="sk-toggleable__content fitted"><pre>PassThrough()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-24" type="checkbox" ><label for="sk-estimator-id-24" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>datetime</div></div></label><div class="sk-toggleable__content fitted"><pre>[&#x27;date_first_hired&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-25" type="checkbox" ><label for="sk-estimator-id-25" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>DatetimeEncoder</div></div></label><div class="sk-toggleable__content fitted"><pre>DatetimeEncoder()</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-26" type="checkbox" ><label for="sk-estimator-id-26" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>low_cardinality</div></div></label><div class="sk-toggleable__content fitted"><pre>[&#x27;gender&#x27;, &#x27;department&#x27;, &#x27;department_name&#x27;, &#x27;assignment_category&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-27" type="checkbox" ><label for="sk-estimator-id-27" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>OneHotEncoder</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.preprocessing.OneHotEncoder.html">?<span>Documentation for OneHotEncoder</span></a></div></label><div class="sk-toggleable__content fitted"><pre>OneHotEncoder(drop=&#x27;if_binary&#x27;, dtype=&#x27;float32&#x27;, handle_unknown=&#x27;ignore&#x27;,
+                  sparse_output=False)</pre></div> </div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-28" type="checkbox" ><label for="sk-estimator-id-28" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>high_cardinality</div></div></label><div class="sk-toggleable__content fitted"><pre>[&#x27;division&#x27;, &#x27;employee_position_title&#x27;]</pre></div> </div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-29" type="checkbox" ><label for="sk-estimator-id-29" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>GapEncoder</div></div></label><div class="sk-toggleable__content fitted"><pre>GapEncoder(n_components=30)</pre></div> </div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-30" type="checkbox" ><label for="sk-estimator-id-30" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>RandomForestRegressor</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.ensemble.RandomForestRegressor.html">?<span>Documentation for RandomForestRegressor</span></a></div></label><div class="sk-toggleable__content fitted"><pre>RandomForestRegressor(max_depth=20, n_estimators=50, random_state=0)</pre></div> </div></div></div></div></div></div>
     </div>
     <br />
     <br />
@@ -4120,7 +4175,7 @@ to plot the feature importances.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 11.869 seconds)
+   **Total running time of the script:** (1 minutes 7.817 seconds)
 
 
 .. _sphx_glr_download_auto_examples_01_encodings.py:
