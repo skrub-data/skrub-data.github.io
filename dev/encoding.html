@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/encoding.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Encoding or vectorizing creates numerical features from the data, converting dataframes, strings, dates… Different encoders are suited for different types of data. Summary: StringEncoder should be ..." />
+<meta property="og:description" content="Encoding or vectorizing creates numerical features from the data, converting dataframes, strings, dates… Different encoders are suited for different types of data. String entries: categories and op..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Encoding or vectorizing creates numerical features from the data, converting dataframes, strings, dates… Different encoders are suited for different types of data. Summary: StringEncoder should be ..." />
+<meta name="description" content="Encoding or vectorizing creates numerical features from the data, converting dataframes, strings, dates… Different encoders are suited for different types of data. String entries: categories and op..." />
 
     <title>Encoding: creating feature matrices &#8212; skrub</title>
   
@@ -578,10 +578,12 @@
 <p>Encoding or vectorizing creates numerical features from the data,
 converting dataframes, strings, dates… Different encoders are suited
 for different types of data.</p>
+<section id="string-entries-categories-and-open-ended-entries">
+<h2>String entries: categories and open-ended entries<a class="headerlink" href="#string-entries-categories-and-open-ended-entries" title="Link to this heading">#</a></h2>
 <section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a> should be used in most cases when working with high-cardinality
-features, as it provides good performance on both categorical features (e.g,,
+<h3>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
+<p><a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a> is a good default when working with high-cardinality
+string features, as it provides good performance on both categorical features (e.g,,
 work titles, city names etc.) and free-flowing text (reviews, comments etc.),
 while being very efficient and quick to fit.</p>
 <p><a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> provides better performance on dirty categories, while
@@ -592,7 +594,7 @@ dependencies are needed.</p>
 performance is in general not as good as that of the other methods.</p>
 </section>
 <section id="non-normalized-entries-and-dirty-categories">
-<span id="dirty-categories"></span><h2>Non-normalized entries and dirty categories<a class="headerlink" href="#non-normalized-entries-and-dirty-categories" title="Link to this heading">#</a></h2>
+<span id="dirty-categories"></span><h3>Non-normalized entries and dirty categories<a class="headerlink" href="#non-normalized-entries-and-dirty-categories" title="Link to this heading">#</a></h3>
 <p>String columns can be seen categories for statistical analysis, but
 standard tools to represent categories fail if these strings are not
 normalized into a small number of well-identified form, if they have
@@ -633,7 +635,7 @@ Machine Learning journal, Springer.</p>
 </aside>
 </section>
 <section id="text-with-diverse-entries">
-<h2>Text with diverse entries<a class="headerlink" href="#text-with-diverse-entries" title="Link to this heading">#</a></h2>
+<h3>Text with diverse entries<a class="headerlink" href="#text-with-diverse-entries" title="Link to this heading">#</a></h3>
 <p>When strings in a column are not dirty categories, but rather diverse
 entries of text (names, open-ended or free-flowing text) it is useful to
 use methods that can address the variety of terms that can appear. Skrub provides
@@ -642,8 +644,8 @@ two encoders to handle these to represent string columns as embeddings,
 <p>Depending on the task and dataset, this approach may lead to significant improvements
 in the quality of predictions, albeit with potential increases in memory usage
 and computation time in the case of <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a>.</p>
-<section id="vectorizing-text">
-<h3>Vectorizing text<a class="headerlink" href="#vectorizing-text" title="Link to this heading">#</a></h3>
+<section id="stringencoder-vectorizing-text">
+<h4><a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a>: Vectorizing text<a class="headerlink" href="#stringencoder-vectorizing-text" title="Link to this heading">#</a></h4>
 <p>A lightweight solution for handling diverse strings is to first apply a
 <a class="reference external" href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">tf-idf vectorization</a>, then
 follow it with a dimensionality reduction algorithm such as
@@ -656,8 +658,8 @@ number of times each word appears in all documents (where a document in this cas
 is a string in the column to encode), and then reduces the size of the sparse
 matrix to a limited number of features for the training operation.</p>
 </section>
-<section id="using-language-models">
-<h3>Using language models<a class="headerlink" href="#using-language-models" title="Link to this heading">#</a></h3>
+<section id="textencoder-using-pretrained-language-models">
+<h4><a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a>: Using pretrained language models<a class="headerlink" href="#textencoder-using-pretrained-language-models" title="Link to this heading">#</a></h4>
 <p>Skrub integrates language models as scikit-learn transformers, allowing them
 to be easily plugged into <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>.</p>
@@ -692,6 +694,7 @@ Vectorizing string entries for data processing on tables: when are larger
 language models better? 2023.</p>
 </aside>
 </aside>
+</section>
 </section>
 </section>
 <section id="encoding-dates">
@@ -749,11 +752,14 @@ capture regularities: week of the day, month of the year…</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-normalized-entries-and-dirty-categories">Non-normalized entries and dirty categories</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#text-with-diverse-entries">Text with diverse entries</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vectorizing-text">Vectorizing text</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-language-models">Using language models</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#string-entries-categories-and-open-ended-entries">String entries: categories and open-ended entries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-normalized-entries-and-dirty-categories">Non-normalized entries and dirty categories</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#text-with-diverse-entries">Text with diverse entries</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stringencoder-vectorizing-text"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code>: Vectorizing text</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#textencoder-using-pretrained-language-models"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code>: Using pretrained language models</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-dates">Encoding dates</a></li>
