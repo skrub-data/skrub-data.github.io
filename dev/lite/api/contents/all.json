@@ -2,11 +2,11 @@
   "content": [
     {
       "content": null,
-      "created": "2025-01-27T15:29:47.497029Z",
+      "created": "2025-01-27T16:25:53.736428Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2025-01-27T15:29:47.497029Z",
+      "last_modified": "2025-01-27T16:25:53.736428Z",
       "mimetype": null,
       "name": "auto_examples",
       "path": "auto_examples",
@@ -15,11 +15,11 @@
       "writable": true
     }
   ],
-  "created": "2025-01-27T15:29:47.494029Z",
+  "created": "2025-01-27T16:25:53.732428Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2025-01-27T15:29:47.494029Z",
+  "last_modified": "2025-01-27T16:25:53.732428Z",
   "mimetype": null,
   "name": "",
   "path": "",
