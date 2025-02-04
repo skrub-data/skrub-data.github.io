@@ -303,7 +303,7 @@ We now encode this column with a |DatetimeEncoder|.
 During the instantiation of the |DatetimeEncoder|, we specify that we want
 to extract the day of the week, and that we don't want to extract anything
 finer than hours. This is because we don't want to extract minutes, seconds
-and lower units, as they are unimportant.
+and lower units, as they are unimportant here.
 
 .. GENERATED FROM PYTHON SOURCE LINES 86-93
 
@@ -525,8 +525,8 @@ which ensures that the test set is always in the future.
  .. code-block:: none
 
 
-    array([ -6664.06809097,  -6520.55512687, -21139.48809623, -13000.12445452,
-           -14310.38278273])
+    array([ -6664.06809097,  -6520.55512687, -21139.48809623, -13680.26773197,
+           -14403.0082162 ])
 
 
 
@@ -618,7 +618,7 @@ basically shuffles a feature and sees how the model changes its prediction.
 
     from sklearn.inspection import permutation_importance
 
-    # In this case, we don't use a pipeline, because we want to compute the
+    # In this case, we don't use the whole pipeline, because we want to compute the
     # importance of the features created by the DatetimeEncoder
     X_test_transform = pipeline[:-1].transform(X_test)
 
@@ -672,7 +672,7 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 6.231 seconds)
+   **Total running time of the script:** (0 minutes 5.506 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:

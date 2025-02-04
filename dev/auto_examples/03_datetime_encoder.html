@@ -783,7 +783,7 @@ converted dtype: datetime64[ns]
 <p>During the instantiation of the <a class="reference internal" href="../reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a>, we specify that we want
 to extract the day of the week, and that we don’t want to extract anything
 finer than hours. This is because we don’t want to extract minutes, seconds
-and lower units, as they are unimportant.</p>
+and lower units, as they are unimportant here.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <a href="../reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">DatetimeEncoder</span></a>
 
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">date_enc</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">DatetimeEncoder</span></a><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">date</span></a><span class="p">)</span>
@@ -902,8 +902,8 @@ which ensures that the test set is always in the future.</p>
 <span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([ -6664.06809097,  -6520.55512687, -21139.48809623, -13000.12445452,
-       -14310.38278273])
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([ -6664.06809097,  -6520.55512687, -21139.48809623, -13680.26773197,
+       -14403.0082162 ])
 </pre></div>
 </div>
 </section>
@@ -968,7 +968,7 @@ importance of the features created by the <a class="reference internal" href="..
 basically shuffles a feature and sees how the model changes its prediction.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.inspection</span><span class="w"> </span><span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html#sklearn.inspection.permutation_importance" title="sklearn.inspection.permutation_importance" class="sphx-glr-backref-module-sklearn-inspection sphx-glr-backref-type-py-function"><span class="n">permutation_importance</span></a>
 
-<span class="c1"># In this case, we don&#39;t use a pipeline, because we want to compute the</span>
+<span class="c1"># In this case, we don&#39;t use the whole pipeline, because we want to compute the</span>
 <span class="c1"># importance of the features created by the DatetimeEncoder</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_test_transform</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_test</span></a><span class="p">)</span>
 
@@ -1004,7 +1004,7 @@ are the most important features, which seems reasonable.</p>
 features from a datetime column.
 Also check out the <a class="reference internal" href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, which automatically recognizes
 and transforms datetime columns by default.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 6.231 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 5.506 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-03-datetime-encoder-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/03_datetime_encoder.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
