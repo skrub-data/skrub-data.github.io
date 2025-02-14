@@ -285,7 +285,7 @@ We will start by checking out the available tables with
  .. code-block:: none
 
 
-    {'albums', 'movies', 'schools', 'companies', 'games', 'all_entities'}
+    {'schools', 'games', 'all_entities', 'albums', 'companies', 'movies'}
 
 
 
@@ -306,6 +306,13 @@ Let's see what kind of types we can find in it with the function
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_ken_embeddings.py:165: UserWarning: Could not find the dataset np.int64(40019788) locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_40019788.parquet.
+      info = _fetch_figshare(dataset_id, data_directory)
 
 
 .. raw:: html
@@ -432,6 +439,15 @@ and exclude those with type name "companies" or "developer".
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/circleci/project/skrub/datasets/_ken_embeddings.py:165: UserWarning: Could not find the dataset np.int64(47119717) locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_47119717.parquet.
+      info = _fetch_figshare(dataset_id, data_directory)
+    /home/circleci/project/skrub/datasets/_ken_embeddings.py:165: UserWarning: Could not find the dataset np.int64(39254360) locally. Downloading it from figshare; this might take a while... If it is interrupted, some files might be invalid/incomplete: if on the following run, the fetching raises errors, you can try fixing this issue by deleting the directory /home/circleci/skrub_data/figshare/figshare_39254360.parquet.
+      info = _fetch_figshare(dataset_id, data_directory)
 
 
 
@@ -823,7 +839,7 @@ It helped significantly improve the prediction score.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 29.801 seconds)
+   **Total running time of the script:** (1 minutes 4.539 seconds)
 
 
 .. _sphx_glr_download_auto_examples_06_ken_embeddings.py:
