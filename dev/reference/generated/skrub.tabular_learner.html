@@ -636,7 +636,7 @@
 <h1>tabular_learner<a class="headerlink" href="#tabular-learner" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.tabular_learner">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/df109af/skrub/_tabular_learner.py#L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_learner" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b475c09/skrub/_tabular_learner.py#L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_learner" title="Link to this definition">#</a></dt>
 <dd><p>Get a simple machine-learning pipeline for tabular data.</p>
 <p>Given a scikit-learn <code class="docutils literal notranslate"><span class="pre">estimator</span></code>, this function creates a
 machine-learning pipeline that preprocesses tabular data to extract numeric
@@ -768,7 +768,8 @@ estimator:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">tabular_learner</span><span class="p">(</span><span class="n">LogisticRegression</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;, TableVectorizer()),</span>
+<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
+<span class="go">                TableVectorizer(datetime=DatetimeEncoder(periodic_encoding=&#39;spline&#39;))),</span>
 <span class="go">                (&#39;simpleimputer&#39;, SimpleImputer(add_indicator=True)),</span>
 <span class="go">                (&#39;standardscaler&#39;, StandardScaler()),</span>
 <span class="go">                (&#39;logisticregression&#39;, LogisticRegression())])</span>
@@ -787,14 +788,15 @@ details):</p>
 </div>
 <p>The parameters of the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> depend on the provided <code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="n">LogisticRegression</span><span class="p">())</span>
-<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;, TableVectorizer()),</span>
+<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
+<span class="go">                TableVectorizer(datetime=DatetimeEncoder(periodic_encoding=&#39;spline&#39;))),</span>
 <span class="go">                (&#39;simpleimputer&#39;, SimpleImputer(add_indicator=True)),</span>
 <span class="go">                (&#39;standardscaler&#39;, StandardScaler()),</span>
 <span class="go">                (&#39;logisticregression&#39;, LogisticRegression())])</span>
 </pre></div>
 </div>
 <p>We see that for the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a> we get
-the default configuration of the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> which is intended
+a configuration of the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> which is intended
 to work well for a wide variety of downstream estimators. Moreover, as the
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a> cannot handle missing
 values, an imputation step is added. Finally, as many models require the
@@ -826,6 +828,7 @@ encoding. Therefore the selected encoder, <a class="reference internal" href="sk
 makes sure that those features have a categorical dtype so that the
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.6)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a> recognizes them
 as such.</p></li>
+<li><p>There is no spline encoding of datetimes.</p></li>
 <li><p>There is no missing-value imputation because the classifier has its own
 (better) mechanism for dealing with missing values.</p></li>
 <li><p>There is no standard scaling which is unnecessary for trees and ensembles

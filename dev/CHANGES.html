@@ -591,6 +591,10 @@ vertical space.
 <ul class="simple">
 <li><p><a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a> now works correctly in presence of null values.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1248">#1248</a> by <a class="reference external" href="https://github.com/gaelvaroquaux">Gaël Varoquaux</a></p></li>
+<li><p>The estimator returned by <a class="reference internal" href="reference/generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a> now uses spline encoding of
+datetime features when the supervised learner is not a model based on decision
+trees such as random forests or gradient boosting. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1264">#1264</a> by
+<a class="reference external" href="https://github.com/glemaitre">Guillaume Lemaitre</a>.</p></li>
 </ul>
 </section>
 <section id="id2">
