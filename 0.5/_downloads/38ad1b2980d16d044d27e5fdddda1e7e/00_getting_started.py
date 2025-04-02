@@ -16,6 +16,18 @@ to prepare data in a format that shallow or classic machine-learning models unde
 #
 # The :obj:`~skrub.datasets` module allows us to download tabular datasets and
 # demonstrate ``skrub``'s features.
+#
+# .. note::
+#
+#    You can control the directory where the datasets are stored by:
+#    - setting in your environment the ``SKRUB_DATA_DIRECTORY`` variable to an
+#      absolute directory path,
+#    - using the parameter ``data_directory`` in fetch functions, which takes
+#      precedence over the envar.
+#
+#    By default, the datasets are stored in a folder named "skrub_data" in the
+#    user home folder.
+
 
 # %%
 from skrub.datasets import fetch_employee_salaries
@@ -31,12 +43,14 @@ employees_df, salaries = dataset.X, dataset.y
 # Generating an interactive report for a dataframe
 # -------------------------------------------------
 #
+# The :class:`~skrub.SimpleCleaner` allows to clean the
+# dataframe, parsing nulls, dates, and dropping columns with too many nulls.
 # To quickly get an overview of a dataframe's contents, use the
 # :class:`~skrub.TableReport`.
-
 # %%
-from skrub import TableReport
+from skrub import SimpleCleaner, TableReport
 
+employees_df = SimpleCleaner().fit_transform(employees_df)
 TableReport(employees_df)
 
 # %%

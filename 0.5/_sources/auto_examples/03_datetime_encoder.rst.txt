@@ -51,22 +51,29 @@ It is used by default in the |TableVectorizer|.
 .. |make_column_transformer| replace::
     :class:`~sklearn.compose.make_column_transformer`
 
-.. |HGBR| replace::
-    :class:`~sklearn.ensemble.HistGradientBoostingRegressor`
+.. |RidgeCV| replace::
+    :class:`~sklearn.linear_model.RidgeCV`
+
+.. |SimpleImputer| replace::
+    :class:`~sklearn.impute.SimpleImputer`
+
+.. |StandardScaler| replace::
+    :class:`~sklearn.preprocessing.StandardScaler`
 
 .. |ToDatetime| replace::
     :class:`~skrub.ToDatetime`
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-49
+.. GENERATED FROM PYTHON SOURCE LINES 49-56
 
-A problem with relevant datetime features
------------------------------------------
+##############################################################################
+ A problem with relevant datetime features
+ -----------------------------------------
 
-We will use a dataset of bike sharing demand in 2011 and 2012.
-In this setting, we want to predict the number of bike rentals, based
-on the date, time and weather conditions.
+ We will use a dataset of bike sharing demand in 2011 and 2012.
+ In this setting, we want to predict the number of bike rentals, based
+ on the date, time and weather conditions.
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-64
+.. GENERATED FROM PYTHON SOURCE LINES 56-71
 
 .. code-block:: Python
 
@@ -88,12 +95,6 @@ on the date, time and weather conditions.
 
 
 
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    Downloading 'bike_sharing' from https://github.com/skrub-data/skrub-data-files/raw/refs/heads/main/bike_sharing.zip (attempt 1/3)
 
 
 .. raw:: html
@@ -233,7 +234,7 @@ on the date, time and weather conditions.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-67
+.. GENERATED FROM PYTHON SOURCE LINES 72-74
 
 .. code-block:: Python
 
@@ -263,11 +264,11 @@ on the date, time and weather conditions.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-69
+.. GENERATED FROM PYTHON SOURCE LINES 75-76
 
 We convert the dataframe's ``"date"`` column using |ToDatetime|.
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-76
+.. GENERATED FROM PYTHON SOURCE LINES 76-83
 
 .. code-block:: Python
 
@@ -293,7 +294,7 @@ We convert the dataframe's ``"date"`` column using |ToDatetime|.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-86
+.. GENERATED FROM PYTHON SOURCE LINES 84-93
 
 Encoding the features
 .....................
@@ -301,17 +302,18 @@ Encoding the features
 We now encode this column with a |DatetimeEncoder|.
 
 During the instantiation of the |DatetimeEncoder|, we specify that we want
-to extract the day of the week, and that we don't want to extract anything
-finer than hours. This is because we don't want to extract minutes, seconds
-and lower units, as they are unimportant.
+don't want to extract features with a resolution finer than hours. This is
+because we don't want to extract minutes, seconds and lower units, as they
+are unimportant here.
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-93
+.. GENERATED FROM PYTHON SOURCE LINES 93-101
 
 .. code-block:: Python
 
 
     from skrub import DatetimeEncoder
 
+    # DatetimeEncoder has "hour" as default resolution
     date_enc = DatetimeEncoder().fit_transform(date)
 
     print(date, "\n\nHas been encoded as:\n\n", date_enc)
@@ -357,13 +359,13 @@ and lower units, as they are unimportant.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-97
+.. GENERATED FROM PYTHON SOURCE LINES 102-105
 
 We see that the encoder is working as expected: the column has
 been replaced by features extracting the month, day, hour, day of the
 week and total seconds since Epoch information.
 
-.. GENERATED FROM PYTHON SOURCE LINES 99-106
+.. GENERATED FROM PYTHON SOURCE LINES 107-114
 
 One-liner with the TableVectorizer
 ..................................
@@ -373,7 +375,7 @@ As mentioned earlier, the |TableVectorizer| makes use of the
 a string, but will be automatically transformed into a datetime in the
 |TableVectorizer|.
 
-.. GENERATED FROM PYTHON SOURCE LINES 106-112
+.. GENERATED FROM PYTHON SOURCE LINES 114-120
 
 .. code-block:: Python
 
@@ -398,19 +400,19 @@ a string, but will be automatically transformed into a datetime in the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 113-117
+.. GENERATED FROM PYTHON SOURCE LINES 121-125
 
 If we want to customize the |DatetimeEncoder| inside the |TableVectorizer|,
 we can replace its default parameter with a new, custom instance.
 
 Here, for example, we want it to extract the day of the week:
 
-.. GENERATED FROM PYTHON SOURCE LINES 117-122
+.. GENERATED FROM PYTHON SOURCE LINES 125-130
 
 .. code-block:: Python
 
 
-    # use the ``datetime`` argument to customize how datetimes are handled
+    # use the ``datetime`` argument to use a custom DatetimeEncoder in the TableVectorizer
     table_vec_weekday = TableVectorizer(datetime=DatetimeEncoder(add_weekday=True)).fit(X)
     pprint(table_vec_weekday.get_feature_names_out())
 
@@ -429,7 +431,7 @@ Here, for example, we want it to extract the day of the week:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 123-129
+.. GENERATED FROM PYTHON SOURCE LINES 131-137
 
 .. note:
     For more information on how to customize the |TableVectorizer|, see
@@ -438,7 +440,7 @@ Here, for example, we want it to extract the day of the week:
 Inspecting the |TableVectorizer| further, we can check that the
 |DatetimeEncoder| is used on the correct column(s).
 
-.. GENERATED FROM PYTHON SOURCE LINES 129-131
+.. GENERATED FROM PYTHON SOURCE LINES 137-139
 
 .. code-block:: Python
 
@@ -462,7 +464,37 @@ Inspecting the |TableVectorizer| further, we can check that the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 132-140
+.. GENERATED FROM PYTHON SOURCE LINES 140-149
+
+Feature engineering for linear models
+....................................................................
+
+The |DatetimeEncoder| can generate additional periodic features. These are
+particularly useful for linear models. This is controlled by the
+``periodic encoding`` parameter which can be either  ``circular`` or ``spline``,
+for trigonometric functions or B-Splines respectively. In this example, we use
+``spline``.
+We can also add the day in the year with the parameter ``add_day_of_year``.
+
+.. GENERATED FROM PYTHON SOURCE LINES 150-157
+
+.. code-block:: Python
+
+
+    table_vec_periodic = TableVectorizer(
+        datetime=DatetimeEncoder(
+            add_weekday=True, periodic_encoding="spline", add_day_of_year=True
+        )
+    ).fit(X)
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 158-168
 
 Prediction with datetime features
 ---------------------------------
@@ -470,18 +502,31 @@ Prediction with datetime features
 For prediction tasks, we recommend using the |TableVectorizer| inside a
 pipeline, combined with a model that can use the features extracted by the
 |DatetimeEncoder|.
-Here we'll use a |HGBR| as our learner.
+Here we'll use a |RidgeCV| model as our learner. We also fill null values with
+|SimpleImputer| and then rescale numeric features with |StandardScaler|.
+To test the effect of different datetime encodings on the linear model, we train
+three separate pipelines.
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 140-146
+.. GENERATED FROM PYTHON SOURCE LINES 168-185
 
 .. code-block:: Python
 
-    from sklearn.ensemble import HistGradientBoostingRegressor
+
+    from sklearn.impute import SimpleImputer
+    from sklearn.linear_model import RidgeCV
     from sklearn.pipeline import make_pipeline
+    from sklearn.preprocessing import StandardScaler
 
-    pipeline = make_pipeline(table_vec, HistGradientBoostingRegressor())
-    pipeline_weekday = make_pipeline(table_vec_weekday, HistGradientBoostingRegressor())
+    # Base pipeline with default DatetimeEncoder parameters
+    pipeline = make_pipeline(table_vec, StandardScaler(), SimpleImputer(), RidgeCV())
+    # Datetime encoder with weekday feature
+    pipeline_weekday = make_pipeline(
+        table_vec_weekday, StandardScaler(), SimpleImputer(), RidgeCV()
+    )
+    # Datetime encoder with periodic features
+    pipeline_periodic = make_pipeline(
+        table_vec_periodic, StandardScaler(), SimpleImputer(), RidgeCV()
+    )
 
 
 
@@ -490,7 +535,7 @@ Here we'll use a |HGBR| as our learner.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 147-156
+.. GENERATED FROM PYTHON SOURCE LINES 186-195
 
 Evaluating the model
 ....................
@@ -502,19 +547,39 @@ the standard settings of the cross-validation do not respect time ordering.
 Instead, we can use the |TimeSeriesSplit|,
 which ensures that the test set is always in the future.
 
-.. GENERATED FROM PYTHON SOURCE LINES 156-166
+.. GENERATED FROM PYTHON SOURCE LINES 195-225
 
 .. code-block:: Python
 
     from sklearn.model_selection import TimeSeriesSplit, cross_val_score
 
-    cross_val_score(
+    score_base = cross_val_score(
         pipeline,
         X,
         y,
-        scoring="neg_mean_squared_error",
+        scoring="neg_root_mean_squared_error",
         cv=TimeSeriesSplit(n_splits=5),
     )
+
+    score_weekday = cross_val_score(
+        pipeline_weekday,
+        X,
+        y,
+        scoring="neg_root_mean_squared_error",
+        cv=TimeSeriesSplit(n_splits=5),
+    )
+
+    score_periodic = cross_val_score(
+        pipeline_periodic,
+        X,
+        y,
+        scoring="neg_root_mean_squared_error",
+        cv=TimeSeriesSplit(n_splits=5),
+    )
+
+    print(f"Base transformer - Mean RMSE : {-score_base.mean():.2f}")
+    print(f"Transformer with weekday -  Mean RMSE : {-score_weekday.mean():.2f}")
+    print(f"Transformer with periodic features - Mean RMSE : {-score_periodic.mean():.2f}")
 
 
 
@@ -524,13 +589,19 @@ which ensures that the test set is always in the future.
 
  .. code-block:: none
 
+    Base transformer - Mean RMSE : 183.32
+    Transformer with weekday -  Mean RMSE : 183.56
+    Transformer with periodic features - Mean RMSE : 60418.83
 
-    array([ -6664.06809097,  -6520.55512687, -21139.48809623, -13038.2841335 ,
-           -14308.65841954])
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 167-174
+.. GENERATED FROM PYTHON SOURCE LINES 226-228
+
+As expected for linear models, introducing the periodic features improved
+the RMSE by a noticeable amount.
+
+.. GENERATED FROM PYTHON SOURCE LINES 230-237
 
 Plotting the prediction
 .......................
@@ -540,7 +611,7 @@ compare the prediction of our model with the actual values.
 To do so, we will divide our dataset into a train and a test set:
 we use 2011 data to predict what happened in 2012.
 
-.. GENERATED FROM PYTHON SOURCE LINES 174-215
+.. GENERATED FROM PYTHON SOURCE LINES 237-297
 
 .. code-block:: Python
 
@@ -557,10 +628,16 @@ we use 2011 data to predict what happened in 2012.
     pipeline_weekday.fit(X_train, y_train)
     y_pred_weekday = pipeline_weekday.predict(X_test)
 
+    pipeline_periodic.fit(X_train, y_train)
+    y_pred_periodic = pipeline_periodic.predict(X_test)
+
+    X_plot = pd.to_datetime(X.tail(96)["date"]).values
+    X_test_plot = pd.to_datetime(X_test.tail(96)["date"]).values
+
     fig, ax = plt.subplots(figsize=(12, 3))
-    fig.suptitle("Predictions with tree models")
+    fig.suptitle("Predictions with linear models")
     ax.plot(
-        X.tail(96)["date"],
+        X_plot,
         y.tail(96).values,
         "x-",
         alpha=0.2,
@@ -568,28 +645,41 @@ we use 2011 data to predict what happened in 2012.
         color="black",
     )
     ax.plot(
-        X_test.tail(96)["date"],
+        X_test_plot,
         y_pred[-96:],
         "x-",
-        label="DatetimeEncoder() + HGBR prediction",
+        label="DatetimeEncoder() + RidgeCV prediction",
     )
     ax.plot(
-        X_test.tail(96)["date"],
-        y_pred_weekday[-96:],
+        X_test_plot,
+        y_pred_periodic[-96:],
         "x-",
-        label="DatetimeEncoder(add_weekday=True) + HGBR prediction",
+        label='DatetimeEncoder(periodic_encoding="spline") + RidgeCV prediction',
     )
+
+
+    ax.xaxis.set_major_locator(mdates.DayLocator())
+    ax.xaxis.set_minor_locator(
+        mdates.HourLocator(
+            [0, 6, 12, 18],
+        )
+    )
+
+    # Major formatter: format date as "YYYY-MM-DD"
+    ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
+    # # Minor formatter: format time as "HH:MM"
+    ax.xaxis.set_minor_formatter(mdates.DateFormatter("%H:%M"))
 
     ax.tick_params(axis="x", labelsize=7, labelrotation=75)
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
-    _ = ax.legend()
+    _ = fig.legend(loc="upper left")
     plt.tight_layout()
     plt.show()
 
 
 
 .. image-sg:: /auto_examples/images/sphx_glr_03_datetime_encoder_001.png
-   :alt: Predictions with tree models
+   :alt: Predictions with linear models
    :srcset: /auto_examples/images/sphx_glr_03_datetime_encoder_001.png
    :class: sphx-glr-single-img
 
@@ -597,38 +687,40 @@ we use 2011 data to predict what happened in 2012.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 216-217
+.. GENERATED FROM PYTHON SOURCE LINES 298-302
 
-As we can see, adding the weekday yields better predictions on our test set.
+##############################################################################
+ As we can see, the base RidgeCV model struggles to learn the the pattern well
+ enough, while the model that is trained on the additional periodic features
+ follows the actual demand more accurately.
 
-.. GENERATED FROM PYTHON SOURCE LINES 220-228
+.. GENERATED FROM PYTHON SOURCE LINES 305-313
 
 Feature importances
 -------------------
 
 Using the |DatetimeEncoder| allows us to better understand how the date
-impacts the bike sharing demand. To this aim, we can compute the
-importance of the features created by the |DatetimeEncoder|, using the
-:func:`~sklearn.inspection.permutation_importance` function, which
-basically shuffles a feature and sees how the model changes its prediction.
+impacts the bike sharing demand. To this aim, we can use the function
+:func:`~sklearn.inspection.permutation_importance` to shuffle the features
+created by the |DatetimeEncoder| and measure their importance by observing
+how the model changes its prediction.
 
-.. GENERATED FROM PYTHON SOURCE LINES 230-258
+.. GENERATED FROM PYTHON SOURCE LINES 316-343
 
 .. code-block:: Python
 
     from sklearn.inspection import permutation_importance
 
-    # In this case, we don't use a pipeline, because we want to compute the
+    # In this case, we don't use the whole pipeline, because we want to compute the
     # importance of the features created by the DatetimeEncoder
-    X_test_transform = pipeline[:-1].transform(X_test)
-
+    X_test_transform = pipeline_periodic[:-1].transform(X_test)
     result = permutation_importance(
-        pipeline[-1], X_test_transform, y_test, n_repeats=10, random_state=0
+        pipeline_periodic[-1], X_test_transform, y_test, n_repeats=10, random_state=0
     )
 
     result = pd.DataFrame(
         dict(
-            feature_names=X_test_transform.columns,
+            feature_names=pipeline_periodic[0].all_outputs_,
             std=result.importances_std,
             importances=result.importances_mean,
         )
@@ -656,10 +748,12 @@ basically shuffles a feature and sees how the model changes its prediction.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 259-269
+.. GENERATED FROM PYTHON SOURCE LINES 344-356
 
-We can see that the hour of the day, the temperature and the humidity
-are the most important features, which seems reasonable.
+We can clearly see that some of the hour splines (``date_hour_spline_18``,
+``date_hour_spline_9``) are more important than other features, likely due to
+the fact that they match rush hours in the day. Other features, such as the
+temperature, the month, and the humidity are more important than others.
 
 Conclusion
 ----------
@@ -672,7 +766,7 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 6.022 seconds)
+   **Total running time of the script:** (0 minutes 5.085 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:
@@ -684,7 +778,7 @@ and transforms datetime columns by default.
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.5.1?urlpath=lab/tree/notebooks/auto_examples/03_datetime_encoder.ipynb
+        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.5.2?urlpath=lab/tree/notebooks/auto_examples/03_datetime_encoder.ipynb
         :alt: Launch binder
         :width: 150 px
 

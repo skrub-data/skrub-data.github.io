@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=e3ca86de" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=2c9f8f05" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -52,17 +52,17 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=b9afe91b"></script>
+    <script src="../../_static/documentation_options.js?v=8e576371"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=fd10adb8"></script>
-    <script src="../../_static/jupyterlite_sphinx.js?v=d6bdf5f8"></script>
+    <script src="../../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/generated/skrub.column_associations';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -74,7 +74,7 @@
     <link rel="prev" title="unpatch_display" href="skrub.unpatch_display.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.5.1" />
+  <meta name="docsearch:version" content="0.5.2" />
   </head>
   
   
@@ -533,6 +533,7 @@
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.SimpleCleaner.html">SimpleCleaner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
 </ul>
@@ -633,23 +634,26 @@
 <h1>column_associations<a class="headerlink" href="#column-associations" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.column_associations">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/061daf4/skrub/_column_associations.py#L13"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3302b05/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
 <dd><p>Get measures of statistical associations between all pairs of columns.</p>
-<p>At the moment, the only reported metric is Cramer’s V statistic. More may
-be added in the future.</p>
+<p>Reported metrics include Cramer’s V statistic and Pearson’s Correlation
+Coefficient. More may be added in the future.</p>
 <p>The result is returned as a dataframe with columns:</p>
 <p><code class="docutils literal notranslate"><span class="pre">['left_column_name',</span> <span class="pre">'left_column_idx',</span> <span class="pre">'right_column_name',</span>
-<span class="pre">'right_column_idx',</span> <span class="pre">'cramer_v']</span></code></p>
+<span class="pre">'right_column_idx',</span> <span class="pre">'cramer_v',</span> <span class="pre">'pearson_corr']</span></code></p>
 <p>As the function is commutative, each pair of columns appears only once
 (either <code class="docutils literal notranslate"><span class="pre">col_1</span></code>, <code class="docutils literal notranslate"><span class="pre">col_2</span></code> or <code class="docutils literal notranslate"><span class="pre">col_2</span></code>, <code class="docutils literal notranslate"><span class="pre">col_1</span></code> but not both).
-The results are sorted
-from most associated to least associated.</p>
+The results are sorted from most associated to least associated.</p>
 <p>To compute the Cramer’s V statistic, all columns are discretized. Numeric
 columns are binned with 10 bins. For categorical columns, only the 10 most
 frequent categories are considered. In both cases, nulls are treated as a
 separate category, ie a separate row in the contingency table. Thus
 associations between the values of 2 columns or between their missingness
 patterns may be captured.</p>
+<p>To compute the Pearson’s Correlation Coefficient, only numeric columns are
+considered. The correlation is computed using the Pearson method used in
+pandas or polars, depending on the dataframe. In both case, lines containing NaNs
+are dropped</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -670,6 +674,13 @@ giving a value between 0 and +1 (inclusive).</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Cramér%27s_V">Cramer’s V</a></p></li>
 </ul>
+<p>Pearson’s Correlation Coefficient is a measure of the linear correlation
+between two variables, giving a value between -1 and +1 (inclusive).</p>
+<ul class="simple">
+<li><p><a href="#id1"><span class="problematic" id="id2">`</span></a>Pearson’s Correlation Coefficient</p></li>
+</ul>
+<p>&lt;<a class="reference external" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">https://en.wikipedia.org/wiki/Pearson_correlation_coefficient</a>&gt;`_
+* <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html">pandas.DataFrame.corr</a></p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -689,24 +700,20 @@ giving a value between 0 and +1 (inclusive).</p>
 <span class="go">2  9.0810  9.4011  1.9257  5.7429  6.2358  val 2</span>
 <span class="go">3  2.5425  2.9678  9.7801  9.9879  6.0709  val 3</span>
 <span class="go">4  5.8878  9.3223  5.3840  7.2006  2.1494  val 4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Compute the associations</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">associations</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">column_associations</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">associations</span> 
-<span class="go">   left_column_name  left_column_idx right_column_name  right_column_idx  cramer_v</span>
-<span class="go">0               c_3                3             c_str                 5    0.8215</span>
-<span class="go">1               c_1                1               c_4                 4    0.8215</span>
-<span class="go">2               c_0                0               c_1                 1    0.8215</span>
-<span class="go">3               c_2                2             c_str                 5    0.7551</span>
-<span class="go">4               c_0                0             c_str                 5    0.7551</span>
-<span class="go">5               c_0                0               c_3                 3    0.7551</span>
-<span class="go">6               c_1                1               c_3                 3    0.6837</span>
-<span class="go">7               c_0                0               c_4                 4    0.6837</span>
-<span class="go">8               c_4                4             c_str                 5    0.6837</span>
-<span class="go">9               c_3                3               c_4                 4    0.6053</span>
-<span class="go">10              c_2                2               c_3                 3    0.6053</span>
-<span class="go">11              c_1                1             c_str                 5    0.6053</span>
-<span class="go">12              c_0                0               c_2                 2    0.6053</span>
-<span class="go">13              c_2                2               c_4                 4    0.5169</span>
-<span class="go">14              c_1                1               c_2                 2    0.4122</span>
+<span class="go">   left_column_name  left_column_idx right_column_name  right_column_idx  cramer_v  pearson_corr</span>
+<span class="go">0              c_1                1               c_4                 4    0.8215        0.1597</span>
+<span class="go">1              c_0                0               c_1                 1    0.8215        0.1123</span>
+<span class="go">2              c_0                0               c_3                 3    0.7551        0.3212</span>
+<span class="go">3              c_1                1               c_3                 3    0.6837       -0.1887</span>
+<span class="go">4              c_0                0               c_4                 4    0.6837       -0.3202</span>
+<span class="go">5              c_3                3               c_4                 4    0.6053       -0.0150</span>
+<span class="go">6              c_2                2               c_3                 3    0.6053        0.1757</span>
+<span class="go">7              c_0                0               c_2                 2    0.6053       -0.0578</span>
+<span class="go">8              c_2                2               c_4                 4    0.5169       -0.2885</span>
+<span class="go">9              c_1                1               c_2                 2    0.4122       -0.4986</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pd</span><span class="o">.</span><span class="n">reset_option</span><span class="p">(</span><span class="s1">&#39;display.width&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pd</span><span class="o">.</span><span class="n">reset_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pd</span><span class="o">.</span><span class="n">reset_option</span><span class="p">(</span><span class="s1">&#39;display.precision&#39;</span><span class="p">)</span>
