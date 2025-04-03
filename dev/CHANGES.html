@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: New features: Changes: Bug fixes: Release 0.5.2: New features: The TableReport now switches its visual theme between light and dark according to the user preferences.#1201 by r..." />
+<meta property="og:description" content="Ongoing development: New features: Changes: The SimpleCleaner has been renamed to Cleaner. Use of the name SimpleCleaner is deprecated and will result in an error in some future release of skrub..#..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: New features: Changes: Bug fixes: Release 0.5.2: New features: The TableReport now switches its visual theme between light and dark according to the user preferences.#1201 by r..." />
+<meta name="description" content="Ongoing development: New features: Changes: The SimpleCleaner has been renamed to Cleaner. Use of the name SimpleCleaner is deprecated and will result in an error in some future release of skrub..#..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -564,6 +564,10 @@
 </section>
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleCleaner</span></code> has been renamed to <cite>Cleaner</cite>. Use of the name <cite>SimpleCleaner</cite> is deprecated and will result in an error in some future release of skrub.</p></li>
+</ul>
+<p><a class="reference external" href="https://github.com/skrub-data/skrub/pull/1275">#1275</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p>
 </section>
 <section id="bug-fixes">
 <h3>Bug fixes<a class="headerlink" href="#bug-fixes" title="Link to this heading">#</a></h3>
@@ -584,8 +588,9 @@ with trigonometric functions and B-splines transformers.
 <li><p>The <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> now also compute Pearson’s correlation for numeric values.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1203">#1203</a> by <a class="reference external" href="https://github.com/reshamas">Reshama Shaikh</a> and
 <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a>.</p></li>
-<li><p>The <a class="reference internal" href="reference/generated/skrub.SimpleCleaner.html#skrub.SimpleCleaner" title="skrub.SimpleCleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleCleaner</span></code></a> is now available. This transformer is a lightweight pre-processor that
-applies some of the transformations applied by the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, with a simpler
+<li><p>⚠ The <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleCleaner</span></code> was renamed to <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> in 0.5.3.
+The <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleCleaner</span></code> is now available. This transformer is a lightweight
+pre-processor that applies some of the transformations applied by the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, with a simpler
 interface. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1266">#1266</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a> and <a class="reference external" href="https://github.com/jeromedockes">Jerome Dockes</a> .</p></li>
 </ul>
 </section>
