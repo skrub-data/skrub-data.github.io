@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Release 0.5.2: New features: The TableReport now switches its visual theme between light and dark according to the user preferences.#1201 by rouk1., Adding a new way to control the location of the ..." />
+<meta property="og:description" content="Release 0.5.3: Changes: The SimpleCleaner has been renamed to Cleaner. Use of the name SimpleCleaner is deprecated and will result in an error in some future release of skrub.#1275 by Riccardo Capp..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Release 0.5.2: New features: The TableReport now switches its visual theme between light and dark according to the user preferences.#1201 by rouk1., Adding a new way to control the location of the ..." />
+<meta name="description" content="Release 0.5.3: Changes: The SimpleCleaner has been renamed to Cleaner. Use of the name SimpleCleaner is deprecated and will result in an error in some future release of skrub.#1275 by Riccardo Capp..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="_static/documentation_options.js?v=8e576371"></script>
+    <script src="_static/documentation_options.js?v=2a2fe768"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.2';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.3';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -76,7 +76,7 @@
     <link rel="prev" title="Interpolation join: infer missing rows when joining two tables" href="auto_examples/09_interpolation_join.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.5.2" />
+  <meta name="docsearch:version" content="0.5.3" />
   </head>
   
   
@@ -557,6 +557,21 @@
                   
   <section id="release-history">
 <span id="changes"></span><h1>Release history<a class="headerlink" href="#release-history" title="Link to this heading">#</a></h1>
+<section id="release-0-5-3">
+<h2>Release 0.5.3<a class="headerlink" href="#release-0-5-3" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleCleaner</span></code> has been renamed to <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a>. Use of the
+name <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleCleaner</span></code> is deprecated and will result in an error in some
+future release of skrub. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1275">#1275</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p>A new parameter <code class="docutils literal notranslate"><span class="pre">max_plot_columns</span></code> has been added to the
+<a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> and <a class="reference internal" href="reference/generated/skrub.patch_display.html#skrub.patch_display" title="skrub.patch_display"><code class="xref py py-func docutils literal notranslate"><span class="pre">patch_display()</span></code></a> to skip column plots when the
+number of columns exceeds the specified value. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1255">#1255</a> by <a class="reference external" href="https://github.com/priscilla-b">Priscilla
+Baah</a>.</p></li>
+</ul>
+</section>
+</section>
 <section id="release-0-5-2">
 <h2>Release 0.5.2<a class="headerlink" href="#release-0-5-2" title="Link to this heading">#</a></h2>
 <section id="new-features">
@@ -564,7 +579,7 @@
 <ul class="simple">
 <li><p>The <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> now switches its visual theme between light and dark according to the user preferences.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1201">#1201</a> by <a class="reference external" href="https://github.com/rouk1">rouk1</a>.</p></li>
-<li><p>Adding a new way to control the location of the data directory, using envar <cite>SKRUB_DATA_DIRECTORY</cite>.
+<li><p>Adding a new way to control the location of the data directory, using envar <code class="docutils literal notranslate"><span class="pre">SKRUB_DATA_DIRECTORY</span></code>.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1215">#1215</a> by <a class="reference external" href="https://github.com/thomass-dev">Thomas S.</a></p></li>
 <li><p>The <a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> now supports periodic encoding of datetime features
 with trigonometric functions and B-splines transformers.
@@ -572,13 +587,15 @@ with trigonometric functions and B-splines transformers.
 <li><p>The <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> now also compute Pearson’s correlation for numeric values.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1203">#1203</a> by <a class="reference external" href="https://github.com/reshamas">Reshama Shaikh</a> and
 <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a>.</p></li>
-<li><p>The <a class="reference internal" href="reference/generated/skrub.SimpleCleaner.html#skrub.SimpleCleaner" title="skrub.SimpleCleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleCleaner</span></code></a> is now available. This transformer is a lightweight pre-processor that
-applies some of the transformations applied by the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, with a simpler
-interface. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1266">#1266</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a> and <a class="reference external" href="https://github.com/jeromedockes">Jerome Dockes</a> .</p></li>
+<li><p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleCleaner</span></code> is now available (⚠️ it was renamed to
+<a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> in skrub <code class="docutils literal notranslate"><span class="pre">0.5.3</span></code>.). This transformer is a lightweight
+pre-processor that applies some of the transformations applied by the
+<a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, with a simpler interface. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1266">#1266</a> by
+<a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a> and <a class="reference external" href="https://github.com/jeromedockes">Jerome Dockes</a> .</p></li>
 </ul>
 </section>
-<section id="id1">
-<h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<section id="id2">
+<h3>Changes<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The estimator returned by <a class="reference internal" href="reference/generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a> now uses spline encoding of
 datetime features when the supervised learner is not a model based on decision
@@ -592,9 +609,6 @@ vertical space.
 <li><p>Optimize the <a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a>: lower memory footprint and faster execution in some cases.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1248">#1248</a> by <a class="reference external" href="https://github.com/gaelvaroquaux">Gaël Varoquaux</a></p></li>
 </ul>
-</section>
-<section id="bug-fixes">
-<h3>Bug fixes<a class="headerlink" href="#bug-fixes" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a> now works correctly in presence of null values.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1224">#1224</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
@@ -606,16 +620,16 @@ scikit-learn pipeline by exposing the <cite>input_features</cite> parameter.
 </section>
 <section id="release-0-5-1">
 <h2>Release 0.5.1<a class="headerlink" href="#release-0-5-1" title="Link to this heading">#</a></h2>
-<section id="id2">
-<h3>New features<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="id3">
+<h3>New features<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The <a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a> encodes strings using tf-idf and truncated SVD
 decomposition and provides a cheaper alternative to <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1159">#1159</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 </ul>
 </section>
-<section id="id3">
-<h3>Changes<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<section id="id4">
+<h3>Changes<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>New dataset fetching methods have been added: <code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_videogame_sales()</span></code>,
 <code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_bike_sharing()</span></code>, <code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_flight_delays()</span></code>,
@@ -626,8 +640,8 @@ decomposition and provides a cheaper alternative to <a class="reference internal
 </section>
 <section id="release-0-4-1">
 <h2>Release 0.4.1<a class="headerlink" href="#release-0-4-1" title="Link to this heading">#</a></h2>
-<section id="id4">
-<h3>Changes<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<section id="id5">
+<h3>Changes<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <ul>
 <li><dl class="field-list simple">
 <dt class="field-odd">class<span class="colon">:</span></dt>
@@ -647,8 +661,8 @@ printing of progress information when a table report is being generated.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1180">#1180</a> by <a class="reference external" href="https://github.com/mrastgoo">Mojdeh Rastgoo</a>.</p></li>
 </ul>
 </section>
-<section id="id5">
-<h3>Bug fixes<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<section id="bug-fixes">
+<h3>Bug fixes<a class="headerlink" href="#bug-fixes" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Generating a <code class="docutils literal notranslate"><span class="pre">TableReport</span></code> could have an effect on the matplotib
 configuration which could cause plots not to display inline in jupyter
@@ -1496,20 +1510,23 @@ stateless fitting with the ngram similarity.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#release-0-5-3">Release 0.5.3</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Changes</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#release-0-5-2">Release 0.5.2</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new-features">New features</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bug-fixes">Bug fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Changes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#release-0-5-1">Release 0.5.1</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">New features</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">New features</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Changes</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#release-0-4-1">Release 0.4.1</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Bug fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bug-fixes">Bug fixes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance">Maintenance</a></li>
 </ul>
 </li>
