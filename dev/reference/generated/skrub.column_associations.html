@@ -634,7 +634,7 @@
 <h1>column_associations<a class="headerlink" href="#column-associations" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.column_associations">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/00a6d70/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0c2ca92/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
 <dd><p>Get measures of statistical associations between all pairs of columns.</p>
 <p>Reported metrics include Cramer’s V statistic and Pearson’s Correlation
 Coefficient. More may be added in the future.</p>
@@ -677,10 +677,9 @@ giving a value between 0 and +1 (inclusive).</p>
 <p>Pearson’s Correlation Coefficient is a measure of the linear correlation
 between two variables, giving a value between -1 and +1 (inclusive).</p>
 <ul class="simple">
-<li><p><a href="#id1"><span class="problematic" id="id2">`</span></a>Pearson’s Correlation Coefficient</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson’s Correlation Coefficient</a></p></li>
+<li><p><a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html">pandas.DataFrame.corr</a></p></li>
 </ul>
-<p>&lt;<a class="reference external" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">https://en.wikipedia.org/wiki/Pearson_correlation_coefficient</a>&gt;`_
-* <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html">pandas.DataFrame.corr</a></p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
