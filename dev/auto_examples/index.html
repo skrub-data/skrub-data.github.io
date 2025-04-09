@@ -69,6 +69,7 @@
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
+    <script src="../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
     <link rel="icon" href="../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -521,6 +522,17 @@
 <li class="toctree-l1"><a class="reference internal" href="08_join_aggregation.html">AggJoiner on a credit fraud dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="09_interpolation_join.html">Interpolation join: infer missing rows when joining two tables</a></li>
 </ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="expressions/index.html">Skrub expressions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="expressions/10_expressions_intro.html">Building complex tabular pipelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expressions/11_expressions_explained.html">Skrub expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expressions/12_scikit_learn_estimators_in_expressions.html">Supervised estimators and cross-validation</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="expressions/13_choices.html">Tuning pipelines</a></li>
+</ul>
+</details></li>
+</ul>
 </div>
 </nav></div>
     </div>
@@ -611,6 +623,23 @@
   <div class="sphx-glr-thumbnail-title">Interpolation join: infer missing rows when joining two tables</div>
 </div></div><div class="toctree-wrapper compound">
 </div>
+</section>
+<section id="skrub-expressions">
+<h1>Skrub expressions<a class="headerlink" href="#skrub-expressions" title="Link to this heading">#</a></h1>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Skrub provides an easy way to build complex, flexible machine-learning pipelines. It solves several problems that are not easily addressed with the standard scikit-learn tools such as the Pipeline and ColumnTransformer."><img alt="" src="../_images/sphx_glr_10_expressions_intro_thumb.svg" />
+<p><a class="reference internal" href="expressions/10_expressions_intro.html#sphx-glr-auto-examples-expressions-10-expressions-intro-py"><span class="std std-ref">Building complex tabular pipelines</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Building complex tabular pipelines</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Skrub provides special objects that represent intermediate results in a computation. They record the different operations we perform on them (such as applying operators or calling methods), which allows to later retrieve the whole computation graph as a machine-learning estimator that can be fitted and applied to unseen data."><img alt="" src="../_images/sphx_glr_11_expressions_explained_thumb.svg" />
+<p><a class="reference internal" href="expressions/11_expressions_explained.html#sphx-glr-auto-examples-expressions-11-expressions-explained-py"><span class="std std-ref">Skrub expressions</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Skrub expressions</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="We can use .skb.apply() to add scikit-learn transformers to the computation, but also to add a supervised learner like HistGradientBoostingClassifier or LogisticRegression."><img alt="" src="../_images/sphx_glr_12_scikit_learn_estimators_in_expressions_thumb.svg" />
+<p><a class="reference internal" href="expressions/12_scikit_learn_estimators_in_expressions.html#sphx-glr-auto-examples-expressions-12-scikit-learn-estimators-in-expressions-py"><span class="std std-ref">Supervised estimators and cross-validation</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Supervised estimators and cross-validation</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Our machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not)."><img alt="" src="../_images/sphx_glr_13_choices_thumb.svg" />
+<p><a class="reference internal" href="expressions/13_choices.html#sphx-glr-auto-examples-expressions-13-choices-py"><span class="std std-ref">Tuning pipelines</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Tuning pipelines</div>
+</div></div><div class="toctree-wrapper compound">
+</div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
 </section>
 
@@ -652,6 +681,20 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Examples</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub-expressions">Skrub expressions</a></li>
+</ul>
+
+  </nav></div>
 
   <div class="sidebar-secondary-item">
   <div role="note" aria-label="source link">

@@ -7,6 +7,7 @@
    :members:
    :inherited-members:
    :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
 
 .. minigallery:: skrub.AggJoiner skrub.AggJoiner.__init__ skrub.AggJoiner.fit skrub.AggJoiner.fit_transform skrub.AggJoiner.get_feature_names_out skrub.AggJoiner.get_metadata_routing skrub.AggJoiner.get_params skrub.AggJoiner.set_output skrub.AggJoiner.set_params skrub.AggJoiner.transform 
    :add-heading: Gallery examples

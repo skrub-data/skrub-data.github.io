@@ -1,0 +1,6 @@
+﻿skrub.Expr.skb.match
+====================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: Expr.skb.match

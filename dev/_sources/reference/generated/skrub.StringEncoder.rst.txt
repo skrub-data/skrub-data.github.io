@@ -7,6 +7,7 @@
    :members:
    :inherited-members:
    :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
 
 .. minigallery:: skrub.StringEncoder skrub.StringEncoder.__init__ skrub.StringEncoder.fit skrub.StringEncoder.fit_transform skrub.StringEncoder.get_feature_names_out skrub.StringEncoder.get_metadata_routing skrub.StringEncoder.get_params skrub.StringEncoder.set_fit_request skrub.StringEncoder.set_params skrub.StringEncoder.transform 
    :add-heading: Gallery examples

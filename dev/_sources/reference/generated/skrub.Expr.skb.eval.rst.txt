@@ -1,0 +1,6 @@
+﻿skrub.Expr.skb.eval
+===================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: Expr.skb.eval

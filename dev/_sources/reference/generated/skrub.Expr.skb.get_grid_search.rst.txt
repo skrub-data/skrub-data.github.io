@@ -1,0 +1,6 @@
+﻿skrub.Expr.skb.get_grid_search
+==============================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: Expr.skb.get_grid_search

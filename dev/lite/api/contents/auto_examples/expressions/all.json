@@ -1,0 +1,71 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2025-04-09T14:44:37.074437Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2025-04-09T14:44:34.524444Z",
+      "mimetype": null,
+      "name": "10_expressions_intro.ipynb",
+      "path": "auto_examples/expressions/10_expressions_intro.ipynb",
+      "size": 15736,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2025-04-09T14:44:37.075437Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2025-04-09T14:44:34.525444Z",
+      "mimetype": null,
+      "name": "11_expressions_explained.ipynb",
+      "path": "auto_examples/expressions/11_expressions_explained.ipynb",
+      "size": 22493,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2025-04-09T14:44:37.075437Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2025-04-09T14:44:34.526444Z",
+      "mimetype": null,
+      "name": "12_scikit_learn_estimators_in_expressions.ipynb",
+      "path": "auto_examples/expressions/12_scikit_learn_estimators_in_expressions.ipynb",
+      "size": 17117,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2025-04-09T14:44:37.075437Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2025-04-09T14:44:34.526444Z",
+      "mimetype": null,
+      "name": "13_choices.ipynb",
+      "path": "auto_examples/expressions/13_choices.ipynb",
+      "size": 17384,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2025-04-09T14:44:37.075437Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2025-04-09T14:44:37.075437Z",
+  "mimetype": null,
+  "name": "expressions",
+  "path": "auto_examples/expressions",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

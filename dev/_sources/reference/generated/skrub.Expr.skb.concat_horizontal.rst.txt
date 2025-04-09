@@ -1,0 +1,6 @@
+﻿skrub.Expr.skb.concat_horizontal
+================================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: Expr.skb.concat_horizontal

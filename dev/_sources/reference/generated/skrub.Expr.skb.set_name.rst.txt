@@ -1,0 +1,6 @@
+﻿skrub.Expr.skb.set_name
+=======================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: Expr.skb.set_name

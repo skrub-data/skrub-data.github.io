@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.TableReport.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Gallery examples: Getting Started Various string encoders: a sentiment analysis example AggJoiner on a credit fraud dataset" />
+<meta property="og:description" content="Gallery examples: Getting Started Various string encoders: a sentiment analysis example AggJoiner on a credit fraud dataset Building complex tabular pipelines" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Gallery examples: Getting Started Various string encoders: a sentiment analysis example AggJoiner on a credit fraud dataset" />
+<meta name="description" content="Gallery examples: Getting Started Various string encoders: a sentiment analysis example AggJoiner on a credit fraud dataset Building complex tabular pipelines" />
 
     <title>TableReport &#8212; skrub</title>
   
@@ -68,12 +68,13 @@
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
+    <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
     <link rel="icon" href="../../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="patch_display" href="skrub.patch_display.html" />
-    <link rel="prev" title="tabular_learner" href="skrub.tabular_learner.html" />
+    <link rel="prev" title="ParamSearch" href="skrub.ParamSearch.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.6.dev0" />
@@ -542,6 +543,60 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="skrub.tabular_learner.html">tabular_learner</a></li>
 </ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.as_expr.html">as_expr</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.choose_bool.html">choose_bool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.choose_float.html">choose_float</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.choose_from.html">choose_from</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.choose_int.html">choose_int</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.cross_validate.html">cross_validate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.deferred.html">deferred</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.eval_mode.html">eval_mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.optional.html">optional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.train_test_split.html">train_test_split</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.var.html">var</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.X.html">X</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.y.html">y</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.html">Expr</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.apply.html">skrub.Expr.skb.apply</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.clone.html">skrub.Expr.skb.clone</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.concat_horizontal.html">skrub.Expr.skb.concat_horizontal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.cross_validate.html">skrub.Expr.skb.cross_validate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_param_grid.html">skrub.Expr.skb.describe_param_grid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_steps.html">skrub.Expr.skb.describe_steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.draw_graph.html">skrub.Expr.skb.draw_graph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.drop.html">skrub.Expr.skb.drop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.eval.html">skrub.Expr.skb.eval</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.freeze_after_fit.html">skrub.Expr.skb.freeze_after_fit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.full_report.html">skrub.Expr.skb.full_report</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_data.html">skrub.Expr.skb.get_data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_estimator.html">skrub.Expr.skb.get_estimator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_grid_search.html">skrub.Expr.skb.get_grid_search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_randomized_search.html">skrub.Expr.skb.get_randomized_search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.if_else.html">skrub.Expr.skb.if_else</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_X.html">skrub.Expr.skb.mark_as_X</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_y.html">skrub.Expr.skb.mark_as_y</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.match.html">skrub.Expr.skb.match</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.select.html">skrub.Expr.skb.select</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.set_description.html">skrub.Expr.skb.set_description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.set_name.html">skrub.Expr.skb.set_name</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.train_test_split.html">skrub.Expr.skb.train_test_split</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.description.html">skrub.Expr.skb.description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.is_X.html">skrub.Expr.skb.is_X</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.is_y.html">skrub.Expr.skb.is_y</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.name.html">skrub.Expr.skb.name</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.applied_estimator.html">skrub.Expr.skb.applied_estimator</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="skrub.ExprEstimator.html">ExprEstimator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.ParamSearch.html">ParamSearch</a></li>
+</ul>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">TableReport</a></li>
 </ul>
@@ -636,7 +691,7 @@
 <h1>TableReport<a class="headerlink" href="#tablereport" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.TableReport">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">TableReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order_by</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_plot_columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0c2ca92/skrub/_reporting/_table_report.py#L13"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">TableReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order_by</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_plot_columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f29ea/skrub/_reporting/_table_report.py#L13"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport" title="Link to this definition">#</a></dt>
 <dd><p>Summarize the contents of a dataframe.</p>
 <p>This class summarizes a dataframe, providing information such as the type
 and summary statistics (mean, number of missing values, etc.) for each
@@ -755,7 +810,7 @@ unique values” will be available in the report, selecting columns “a” and
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableReport.html">
-<span class="sig-name descname"><span class="pre">html</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0c2ca92/skrub/_reporting/_table_report.py#L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.html" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">html</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f29ea/skrub/_reporting/_table_report.py#L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.html" title="Link to this definition">#</a></dt>
 <dd><p>Get the report as a full HTML page.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -769,7 +824,7 @@ unique values” will be available in the report, selecting columns “a” and
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableReport.html_snippet">
-<span class="sig-name descname"><span class="pre">html_snippet</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0c2ca92/skrub/_reporting/_table_report.py#L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.html_snippet" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">html_snippet</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f29ea/skrub/_reporting/_table_report.py#L177"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.html_snippet" title="Link to this definition">#</a></dt>
 <dd><p>Get the report as an HTML fragment that can be inserted in a page.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -783,7 +838,7 @@ unique values” will be available in the report, selecting columns “a” and
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableReport.json">
-<span class="sig-name descname"><span class="pre">json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0c2ca92/skrub/_reporting/_table_report.py#L191"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.json" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f29ea/skrub/_reporting/_table_report.py#L191"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.json" title="Link to this definition">#</a></dt>
 <dd><p>Get the report data in JSON format.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -797,13 +852,13 @@ unique values” will be available in the report, selecting columns “a” and
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableReport.open">
-<span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0c2ca92/skrub/_reporting/_table_report.py#L250"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.open" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f29ea/skrub/_reporting/_table_report.py#L250"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.open" title="Link to this definition">#</a></dt>
 <dd><p>Open the HTML report in a web browser.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableReport.write_html">
-<span class="sig-name descname"><span class="pre">write_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0c2ca92/skrub/_reporting/_table_report.py#L212"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.write_html" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">write_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e8f29ea/skrub/_reporting/_table_report.py#L212"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.write_html" title="Link to this definition">#</a></dt>
 <dd><p>Store the report into an HTML file.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -828,6 +883,9 @@ unique values” will be available in the report, selecting columns “a” and
 </div><div class="sphx-glr-thumbcontainer" tooltip="Many problems involve tables whose entities have a one-to-many relationship. To simplify aggregate-then-join operations for machine learning, we can include the |AggJoiner| in our pipeline."><img alt="" src="../../_images/sphx_glr_08_join_aggregation_thumb.png" />
 <p><a class="reference internal" href="../../auto_examples/08_join_aggregation.html#sphx-glr-auto-examples-08-join-aggregation-py"><span class="std std-ref">AggJoiner on a credit fraud dataset</span></a></p>
   <div class="sphx-glr-thumbnail-title">AggJoiner on a credit fraud dataset</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Skrub provides an easy way to build complex, flexible machine-learning pipelines. It solves several problems that are not easily addressed with the standard scikit-learn tools such as the Pipeline and ColumnTransformer."><img alt="" src="../../_images/sphx_glr_10_expressions_intro_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/expressions/10_expressions_intro.html#sphx-glr-auto-examples-expressions-10-expressions-intro-py"><span class="std std-ref">Building complex tabular pipelines</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Building complex tabular pipelines</div>
 </div></div></section>
 </section>
 
@@ -842,12 +900,12 @@ unique values” will be available in the report, selecting columns “a” and
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.tabular_learner.html"
+       href="skrub.ParamSearch.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">tabular_learner</p>
+        <p class="prev-next-title">ParamSearch</p>
       </div>
     </a>
     <a class="right-next"

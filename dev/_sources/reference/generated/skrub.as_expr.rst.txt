@@ -1,0 +1,10 @@
+﻿as\_expr
+========
+
+.. currentmodule:: skrub
+
+.. autofunction:: as_expr
+
+.. minigallery:: skrub.as_expr
+   :add-heading: Gallery examples
+   :heading-level: -

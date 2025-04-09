@@ -7,6 +7,7 @@
    :members:
    :inherited-members:
    :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
 
 .. minigallery:: skrub.Cleaner skrub.Cleaner.__init__ skrub.Cleaner.fit skrub.Cleaner.fit_transform skrub.Cleaner.get_metadata_routing skrub.Cleaner.get_params skrub.Cleaner.set_output skrub.Cleaner.set_params skrub.Cleaner.transform 
    :add-heading: Gallery examples

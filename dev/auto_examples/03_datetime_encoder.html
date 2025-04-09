@@ -68,6 +68,7 @@
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
+    <script src="../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
     <link rel="icon" href="../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -520,6 +521,17 @@
 <li class="toctree-l1"><a class="reference internal" href="08_join_aggregation.html">AggJoiner on a credit fraud dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="09_interpolation_join.html">Interpolation join: infer missing rows when joining two tables</a></li>
 </ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="expressions/index.html">Skrub expressions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="expressions/10_expressions_intro.html">Building complex tabular pipelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expressions/11_expressions_explained.html">Skrub expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expressions/12_scikit_learn_estimators_in_expressions.html">Supervised estimators and cross-validation</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="expressions/13_choices.html">Tuning pipelines</a></li>
+</ul>
+</details></li>
+</ul>
 </div>
 </nav></div>
     </div>
@@ -609,9 +621,6 @@ on the date, time and weather conditions.</p>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">data</span></a><span class="p">[[</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="s2">&quot;holiday&quot;</span><span class="p">,</span> <span class="s2">&quot;temp&quot;</span><span class="p">,</span> <span class="s2">&quot;hum&quot;</span><span class="p">,</span> <span class="s2">&quot;windspeed&quot;</span><span class="p">,</span> <span class="s2">&quot;weathersit&quot;</span><span class="p">]]</span>
 
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a>
-</pre></div>
-</div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Downloading &#39;bike_sharing&#39; from https://github.com/skrub-data/skrub-data-files/raw/refs/heads/main/bike_sharing.zip (attempt 1/3)
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -1077,7 +1086,7 @@ temperature, the month, and the humidity are more important than others.</p>
 features from a datetime column.
 Also check out the <a class="reference internal" href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, which automatically recognizes
 and transforms datetime columns by default.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 4.890 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 4.238 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-03-datetime-encoder-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/03_datetime_encoder.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />

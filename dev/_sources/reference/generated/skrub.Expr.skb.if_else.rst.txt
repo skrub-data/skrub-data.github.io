@@ -1,0 +1,6 @@
+﻿skrub.Expr.skb.if_else
+======================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: Expr.skb.if_else

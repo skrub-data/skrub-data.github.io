@@ -7,6 +7,7 @@
    :members:
    :inherited-members:
    :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
 
 .. minigallery:: skrub.TableReport skrub.TableReport.__init__ skrub.TableReport.html skrub.TableReport.html_snippet skrub.TableReport.json skrub.TableReport.open skrub.TableReport.write_html 
    :add-heading: Gallery examples

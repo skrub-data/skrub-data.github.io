@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: New features: Changes: Bugfixes: Release 0.5.3: Changes: The SimpleCleaner has been renamed to Cleaner. Use of the name SimpleCleaner is deprecated and will result in an error ..." />
+<meta property="og:description" content="Ongoing development: New features: The skrub expressions are new mechanism for building machine-learning pipelines that handle multiple tables and easily describing their hyperparameter spaces. See..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: New features: Changes: Bugfixes: Release 0.5.3: Changes: The SimpleCleaner has been renamed to Cleaner. Use of the name SimpleCleaner is deprecated and will result in an error ..." />
+<meta name="description" content="Ongoing development: New features: The skrub expressions are new mechanism for building machine-learning pipelines that handle multiple tables and easily describing their hyperparameter spaces. See..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -68,12 +68,13 @@
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
+    <script src="_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
     <link rel="icon" href="_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Development" href="development.html" />
-    <link rel="prev" title="Interpolation join: infer missing rows when joining two tables" href="auto_examples/09_interpolation_join.html" />
+    <link rel="prev" title="Tuning pipelines" href="auto_examples/expressions/13_choices.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.6.dev0" />
@@ -561,6 +562,19 @@
 <h2>Ongoing development<a class="headerlink" href="#ongoing-development" title="Link to this heading">#</a></h2>
 <section id="new-features">
 <h3>New features<a class="headerlink" href="#new-features" title="Link to this heading">#</a></h3>
+<p>The skrub expressions are new mechanism for building machine-learning pipelines
+that handle multiple tables and easily describing their hyperparameter spaces.
+See <a class="reference internal" href="auto_examples/expressions/index.html#expressions-examples-ref"><span class="std std-ref">the examples</span></a> for an introduction.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1233">#1233</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>. A lot of work from other
+contributors is not directly visible on the pull request page: <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent
+Maladiere</a> provided very important help by trying the
+expressions on many use-cases and datasets, providing feedback and suggesting
+improvements, improving the examples (including creating all the figures in the
+examples) and adding jitter to the parallel coordinate plots, <a class="reference external" href="https://github.com/rcap107">Riccardo
+Cappuzzo</a> experimented with the expressions, suggested improvements and
+improved the examples, <a class="reference external" href="https://github.com/gaelvaroquaux">Gaël Varoquaux</a> , <a class="reference external" href="https://github.com/glemaitre">Guillaume
+Lemaitre</a>, <a class="reference external" href="https://github.com/adrinjalali">Adrin Jalali</a>, <a class="reference external" href="https://github.com/ogrisel">Olivier Grisel</a> and others participated through many discussions in defining the
+requirements and the public API.</p>
 </section>
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
@@ -1492,12 +1506,12 @@ stateless fitting with the ngram similarity.</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="auto_examples/09_interpolation_join.html"
+       href="auto_examples/expressions/13_choices.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Interpolation join: infer missing rows when joining two tables</p>
+        <p class="prev-next-title">Tuning pipelines</p>
       </div>
     </a>
     <a class="right-next"

@@ -1,0 +1,6 @@
+﻿skrub.Expr.skb.cross_validate
+=============================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: Expr.skb.cross_validate

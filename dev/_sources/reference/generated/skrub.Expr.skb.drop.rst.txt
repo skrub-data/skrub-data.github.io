@@ -1,0 +1,6 @@
+﻿skrub.Expr.skb.drop
+===================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: Expr.skb.drop

@@ -1,0 +1,7 @@
+﻿Expr
+====
+
+.. currentmodule:: skrub
+
+.. autoclass:: Expr
+   :exclude-members: skb, __call__
