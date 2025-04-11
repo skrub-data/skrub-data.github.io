@@ -131,8 +131,8 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_c3f317e1-wrapper" hidden>
-        <template id="report_c3f317e1-template">
+    <div id="report_bddf7abc-wrapper" hidden>
+        <template id="report_bddf7abc-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1526,7 +1526,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="9a8327c8"
+                    id="57e64594"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1556,7 +1556,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="ff9e72a0"
+                    id="d6813412"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1604,7 +1604,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="20e25f35"
+                    id="e6eda2aa"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1632,7 +1632,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="886c5be8"
+                    id="2bd3a1c2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1666,7 +1666,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="1032f69c"
+                    id="c6879a6b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1694,7 +1694,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="65b099e7"
+                    id="1a712b33"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1728,7 +1728,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="abe53d6b"
+                    id="329a0b3b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1756,7 +1756,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="bd6b4611"
+                    id="ea2e50a2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1790,7 +1790,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="f54e7f93"
+                    id="cd414333"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1818,7 +1818,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="8089f87f"
+                    id="b3a9c946"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1852,7 +1852,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="4e691def"
+                    id="331c9baa"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1880,7 +1880,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="1fd23d5d"
+                    id="f173d5ed"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1944,7 +1944,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="671a636c"
+                    id="dd445503"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1972,7 +1972,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="5e5bcea7"
+                    id="0dc63f17"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2006,7 +2006,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="2ab5a17e"
+                    id="c35e93a3"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2034,7 +2034,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="fef4d282"
+                    id="b05590cc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2072,7 +2072,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="812149e6"
+                    id="c2d89679"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2100,7 +2100,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="eb04b120"
+                    id="62cea138"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2142,7 +2142,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="af59051e"
+                    id="bdaa0130"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2170,7 +2170,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="64ea5949"
+                    id="171520b8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2204,7 +2204,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="cc8f568c"
+                    id="6c1b9a83"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2232,7 +2232,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="3c6be457"
+                    id="53f43e0b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2366,7 +2366,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2025-04-11T10:19:17.705292</dc:date>
+        <dc:date>2025-04-11T13:57:59.991814</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -2396,7 +2396,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 149.086214 
     L 205.560937 149.086214 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 205.560937 146.4146 
@@ -2404,7 +2404,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 135.728144 
     L 205.560937 135.728144 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 205.560937 133.056529 
@@ -2412,7 +2412,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 122.370073 
     L 205.560937 122.370073 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 205.560937 119.698459 
@@ -2420,7 +2420,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 109.012003 
     L 205.560937 109.012003 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 205.560937 106.340388 
@@ -2428,7 +2428,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 95.653932 
     L 205.560937 95.653932 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 205.560937 92.982318 
@@ -2436,7 +2436,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 82.295862 
     L 205.560937 82.295862 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 205.560937 79.624247 
@@ -2444,7 +2444,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 68.937791 
     L 205.560937 68.937791 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 205.560937 66.266177 
@@ -2452,7 +2452,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 55.579721 
     L 205.560937 55.579721 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 205.560937 52.908106 
@@ -2460,7 +2460,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 42.22165 
     L 205.560937 42.22165 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 205.560937 39.550036 
@@ -2468,18 +2468,18 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 274.132366 28.86358 
     L 205.560937 28.86358 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mf9625261f8" d="M 0 0 
+           <path id="m9a31c05bff" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mf9625261f8" x="205.560937" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9a31c05bff" x="205.560937" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -2489,7 +2489,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mf9625261f8" x="274.132366" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9a31c05bff" x="274.132366" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -2501,12 +2501,12 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="m56a7de38fa" d="M 0 0 
+           <path id="mc974a66577" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -2516,7 +2516,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -2526,7 +2526,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -2536,7 +2536,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -2546,7 +2546,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -2556,7 +2556,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -2566,7 +2566,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -2576,7 +2576,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -2586,7 +2586,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -2596,7 +2596,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -2650,7 +2650,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
       </g>
      </g>
      <defs>
-      <clipPath id="pa1dce20be0">
+      <clipPath id="p8c4f09f646">
        <rect x="205.560937" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -3396,7 +3396,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2025-04-11T10:19:17.705292</dc:date>
+        <dc:date>2025-04-11T13:57:59.991814</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -3426,7 +3426,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 149.086214 
     L 205.560937 149.086214 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 205.560937 146.4146 
@@ -3434,7 +3434,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 135.728144 
     L 205.560937 135.728144 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 205.560937 133.056529 
@@ -3442,7 +3442,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 122.370073 
     L 205.560937 122.370073 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 205.560937 119.698459 
@@ -3450,7 +3450,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 109.012003 
     L 205.560937 109.012003 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 205.560937 106.340388 
@@ -3458,7 +3458,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 95.653932 
     L 205.560937 95.653932 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 205.560937 92.982318 
@@ -3466,7 +3466,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 82.295862 
     L 205.560937 82.295862 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 205.560937 79.624247 
@@ -3474,7 +3474,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 68.937791 
     L 205.560937 68.937791 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 205.560937 66.266177 
@@ -3482,7 +3482,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 55.579721 
     L 205.560937 55.579721 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 205.560937 52.908106 
@@ -3490,7 +3490,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 239.846652 42.22165 
     L 205.560937 42.22165 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 205.560937 39.550036 
@@ -3498,18 +3498,18 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 274.132366 28.86358 
     L 205.560937 28.86358 
     z
-    " clip-path="url(#pa1dce20be0)" style="fill: #ee854a"/>
+    " clip-path="url(#p8c4f09f646)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mf9625261f8" d="M 0 0 
+           <path id="m9a31c05bff" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mf9625261f8" x="205.560937" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9a31c05bff" x="205.560937" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -3519,7 +3519,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mf9625261f8" x="274.132366" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9a31c05bff" x="274.132366" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -3531,12 +3531,12 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="m56a7de38fa" d="M 0 0 
+           <path id="mc974a66577" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -3546,7 +3546,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -3556,7 +3556,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -3566,7 +3566,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -3576,7 +3576,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -3586,7 +3586,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -3596,7 +3596,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -3606,7 +3606,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -3616,7 +3616,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -3626,7 +3626,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#m56a7de38fa" x="205.560937" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc974a66577" x="205.560937" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -3680,7 +3680,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
       </g>
      </g>
      <defs>
-      <clipPath id="pa1dce20be0">
+      <clipPath id="p8c4f09f646">
        <rect x="205.560937" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -3981,7 +3981,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_c3f317e1">
+        <skrub-table-report class="report" id="report_bddf7abc">
         </skrub-table-report>
 
         <script type="module">
@@ -5079,7 +5079,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         </script>
     </div>
 
-    <div id="report_c3f317e1-wrapper-fallback">
+    <div id="report_bddf7abc-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -5090,8 +5090,8 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     </div>
 
     <script>
-     document.getElementById("report_c3f317e1-wrapper").removeAttribute("hidden");
-     document.getElementById("report_c3f317e1-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_bddf7abc-wrapper").removeAttribute("hidden");
+     document.getElementById("report_bddf7abc-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -5143,8 +5143,8 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_d2a947fe-wrapper" hidden>
-        <template id="report_d2a947fe-template">
+    <div id="report_2cd2bf0b-wrapper" hidden>
+        <template id="report_2cd2bf0b-template">
             <style>
              /*!
     Pure v3.0.0
@@ -6538,7 +6538,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="5105d344"
+                    id="e778842c"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -6568,7 +6568,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="1e6ba3df"
+                    id="6aafd4ae"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6616,7 +6616,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="67666220"
+                    id="01578c78"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6644,7 +6644,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="f2fec65e"
+                    id="4523ef06"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6678,7 +6678,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="3e413952"
+                    id="fe2e0e6c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6706,7 +6706,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="0e3ac981"
+                    id="565b0b95"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6740,7 +6740,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="31bcd88f"
+                    id="76e74dfb"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6768,7 +6768,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="8e7b702d"
+                    id="d8297cfe"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6802,7 +6802,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="70ad1f43"
+                    id="f6c01fdc"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6830,7 +6830,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="14ce341e"
+                    id="741c8cb8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6864,7 +6864,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="a62a1e6f"
+                    id="1c7d6fca"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6892,7 +6892,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="1aa28c0a"
+                    id="e12e9af7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6956,7 +6956,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="86fb6b84"
+                    id="d9587203"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6984,7 +6984,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="847d8ec8"
+                    id="23d584ea"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7018,7 +7018,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="74108963"
+                    id="4a712d28"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7046,7 +7046,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="270f4d27"
+                    id="a1a1d605"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7080,7 +7080,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="525daf21"
+                    id="7cd84520"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7108,7 +7108,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="98288ea8"
+                    id="30899ca6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7142,7 +7142,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="471115dd"
+                    id="805ca1d4"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7170,7 +7170,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="c8b5b569"
+                    id="c55ab903"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7204,7 +7204,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <th
-                    id="8cb02c16"
+                    id="ff022571"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7232,7 +7232,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
                 
                 
                     <td
-                    id="2fec2a31"
+                    id="82fa4c8e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7364,7 +7364,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2025-04-11T10:19:17.897906</dc:date>
+        <dc:date>2025-04-11T13:58:00.175722</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -7394,7 +7394,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 127.605503 23.054545 
     L 59.307812 23.054545 
     z
-    " clip-path="url(#p7576671e92)" style="fill: #ee854a"/>
+    " clip-path="url(#pe897f0b235)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 59.307812 20.145455 
@@ -7402,18 +7402,18 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 127.879241 8.509091 
     L 59.307812 8.509091 
     z
-    " clip-path="url(#p7576671e92)" style="fill: #ee854a"/>
+    " clip-path="url(#pe897f0b235)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m454130c53d" d="M 0 0 
+           <path id="md535c61df6" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m454130c53d" x="59.307812" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md535c61df6" x="59.307812" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -7423,7 +7423,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m454130c53d" x="127.742372" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md535c61df6" x="127.742372" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -7435,12 +7435,12 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="md30fcd046f" d="M 0 0 
+           <path id="m714840514b" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#md30fcd046f" x="59.307812" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m714840514b" x="59.307812" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -7450,7 +7450,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#md30fcd046f" x="59.307812" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m714840514b" x="59.307812" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -7477,7 +7477,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
       </g>
      </g>
      <defs>
-      <clipPath id="p7576671e92">
+      <clipPath id="pe897f0b235">
        <rect x="59.307812" y="7.2" width="72" height="28.8"/>
       </clipPath>
      </defs>
@@ -8043,7 +8043,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2025-04-11T10:19:17.897906</dc:date>
+        <dc:date>2025-04-11T13:58:00.175722</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -8073,7 +8073,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 127.605503 23.054545 
     L 59.307812 23.054545 
     z
-    " clip-path="url(#p7576671e92)" style="fill: #ee854a"/>
+    " clip-path="url(#pe897f0b235)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 59.307812 20.145455 
@@ -8081,18 +8081,18 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     L 127.879241 8.509091 
     L 59.307812 8.509091 
     z
-    " clip-path="url(#p7576671e92)" style="fill: #ee854a"/>
+    " clip-path="url(#pe897f0b235)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m454130c53d" d="M 0 0 
+           <path id="md535c61df6" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m454130c53d" x="59.307812" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md535c61df6" x="59.307812" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -8102,7 +8102,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m454130c53d" x="127.742372" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md535c61df6" x="127.742372" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -8114,12 +8114,12 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="md30fcd046f" d="M 0 0 
+           <path id="m714840514b" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#md30fcd046f" x="59.307812" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m714840514b" x="59.307812" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -8129,7 +8129,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#md30fcd046f" x="59.307812" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m714840514b" x="59.307812" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -8156,7 +8156,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
       </g>
      </g>
      <defs>
-      <clipPath id="p7576671e92">
+      <clipPath id="pe897f0b235">
        <rect x="59.307812" y="7.2" width="72" height="28.8"/>
       </clipPath>
      </defs>
@@ -8277,7 +8277,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_d2a947fe">
+        <skrub-table-report class="report" id="report_2cd2bf0b">
         </skrub-table-report>
 
         <script type="module">
@@ -9375,7 +9375,7 @@ We then encode the text with a ``MinHashEncoder`` and fit a
         </script>
     </div>
 
-    <div id="report_d2a947fe-wrapper-fallback">
+    <div id="report_2cd2bf0b-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -9386,8 +9386,8 @@ We then encode the text with a ``MinHashEncoder`` and fit a
     </div>
 
     <script>
-     document.getElementById("report_d2a947fe-wrapper").removeAttribute("hidden");
-     document.getElementById("report_d2a947fe-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_2cd2bf0b-wrapper").removeAttribute("hidden");
+     document.getElementById("report_2cd2bf0b-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -9605,7 +9605,7 @@ impact on the score.
 
     <div class="output_subarea output_html rendered_html output_result">
     <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.0.0.min.js"></script>                <div id="082573fd-df97-48cd-a853-b972c2082344" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("082573fd-df97-48cd-a853-b972c2082344")) {                    Plotly.newPlot(                        "082573fd-df97-48cd-a853-b972c2082344",                        [{"dimensions":[{"label":"score","values":{"dtype":"f8","bdata":"KlyPwvUo5D+HFtnO91PjP94kBoGVQ+M\u002f4XoUrkfh4j9kO99PjZfiP24Sg8DKoeE\u002f8KfGSzeJ4T9yaJHtfD\u002fhPw=="}},{"label":"lr","ticktext":["0.01","0.012","0.015","0.019","0.023","0.029","0.035","0.043","0.053","0.066"],"tickvals":[-4.60465552107896,-4.395124313884269,-4.185593106689579,-3.976061899494888,-3.766530692300198,-3.556999485105507,-3.3474682779108167,-3.1379370707161263,-2.928405863521436,-2.7188746563267454],"values":{"dtype":"f8","bdata":"Hym\u002fJevSBcA8muOUOd0FwEC0+HZCbQ3A\u002fViJt8qfBsBNoZ03uPARwBW4NcR2Lw7ApDiSYtacD8BgQnBkkWESwA=="}},{"label":"N components","ticktext":["6","7","9","11","13","16","20","25","30","37"],"tickvals":[1.791759469228055,1.993888185163185,2.196016901098315,2.3981456170334448,2.6002743329685747,2.8024030489037046,3.0045317648388346,3.2066604807739645,3.4087891967090944,3.6109179126442243],"values":{"dtype":"f8","bdata":"hYUInxJzCUBBnEm8DyIKQOlyV8jY4gxABC3tlASZBkCBpHFunxsJQCPA\u002fR28JANARsbQum7H\u002fD8rS9XblnACQA=="}},{"label":"fit time","values":{"dtype":"f8","bdata":"KAVHtXa19D8JG5H19bv0P2rx+mRXkfo\u002fT5Matp9e8j+ShtqmqWnyP6aPJLYFIPA\u002fMP0JqTRP6z\u002fBoeufWoPsPw=="}},{"label":"score time","values":{"dtype":"f8","bdata":"V1teTVeqyT9WeshPUI7QPzR+NPVTz9E\u002fUh8q3xSOxj92QUX2lKHJP1U4m\u002fpAQ8M\u002fvj\u002fAx6o\u002ftz9EcKBm+irBPw=="}}],"labelangle":45,"line":{"color":{"dtype":"f8","bdata":"KlyPwvUo5D+HFtnO91PjP94kBoGVQ+M\u002f4XoUrkfh4j9kO99PjZfiP24Sg8DKoeE\u002f8KfGSzeJ4T9yaJHtfD\u002fhPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.0.0.min.js"></script>                <div id="b014e577-f418-45c4-8a83-8d8e1b54e307" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("b014e577-f418-45c4-8a83-8d8e1b54e307")) {                    Plotly.newPlot(                        "b014e577-f418-45c4-8a83-8d8e1b54e307",                        [{"dimensions":[{"label":"score","values":{"dtype":"f8","bdata":"KlyPwvUo5D+HFtnO91PjP94kBoGVQ+M\u002f4XoUrkfh4j9kO99PjZfiP24Sg8DKoeE\u002f8KfGSzeJ4T9yaJHtfD\u002fhPw=="}},{"label":"lr","ticktext":["0.01","0.012","0.015","0.019","0.023","0.029","0.035","0.043","0.053","0.066"],"tickvals":[-4.60465552107896,-4.395124313884269,-4.185593106689579,-3.976061899494888,-3.766530692300198,-3.556999485105507,-3.3474682779108167,-3.1379370707161263,-2.928405863521436,-2.7188746563267454],"values":{"dtype":"f8","bdata":"hkmSfZCwBcCqoaFSEcIFwOPee3vzZw3AwnPJ81OOBsDu1jwpjekRwBBuO1ADHw7ABbTbIUeAD8CejCRPZmoSwA=="}},{"label":"N components","ticktext":["6","7","9","11","13","16","20","25","30","37"],"tickvals":[1.791759469228055,1.993888185163185,2.196016901098315,2.3981456170334448,2.6002743329685747,2.8024030489037046,3.0045317648388346,3.2066604807739645,3.4087891967090944,3.6109179126442243],"values":{"dtype":"f8","bdata":"fnNI8i5+CUByZMSqABoKQLECFkjk8gxAODkoKNq6BkBU+zwWbCEJQGEtP8zaIwNACZXaDX26\u002fD8JRMCp8GkCQA=="}},{"label":"fit time","values":{"dtype":"f8","bdata":"hwKitFWv9T+hEnPvAFj2PwOYpfSLDPs\u002f1HtcD2hH8z9Vj8JO2\u002fjyP07WiP2diPA\u002fipVvvu7H6z9ac153Cj\u002fuPw=="}},{"label":"score time","values":{"dtype":"f8","bdata":"XzpUqC2hyD\u002fygf+p6vXPPwiPpBe1wNI\u002fc5Q6Kl\u002fHwz\u002fS36kJRO7DP7FUzV1azr8\u002fAtDIfF97uD9eTNum20W\u002fPw=="}}],"labelangle":45,"line":{"color":{"dtype":"f8","bdata":"KlyPwvUo5D+HFtnO91PjP94kBoGVQ+M\u002f4XoUrkfh4j9kO99PjZfiP24Sg8DKoeE\u002f8KfGSzeJ4T9yaJHtfD\u002fhPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -9795,8 +9795,8 @@ in words:
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_ea3a74d7-wrapper" hidden>
-        <template id="report_ea3a74d7-template">
+    <div id="report_5bd50065-wrapper" hidden>
+        <template id="report_5bd50065-template">
             <style>
              /*!
     Pure v3.0.0
@@ -11190,7 +11190,7 @@ in words:
                 
                 
                     <th
-                    id="009e490a"
+                    id="300b12c6"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -11220,7 +11220,7 @@ in words:
                 
                 
                     <th
-                    id="731ae581"
+                    id="3e4173f6"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11254,7 +11254,7 @@ in words:
                 
                 
                     <th
-                    id="97135774"
+                    id="4ff339a4"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11302,7 +11302,7 @@ in words:
                 
                 
                     <th
-                    id="6f4cfa29"
+                    id="4940a2b4"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11330,7 +11330,7 @@ in words:
                 
                 
                     <td
-                    id="e4dc9e09"
+                    id="2feee75a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11360,7 +11360,7 @@ in words:
                 
                 
                     <td
-                    id="449453b8"
+                    id="91ea9a7d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11394,7 +11394,7 @@ in words:
                 
                 
                     <th
-                    id="2bce5fa3"
+                    id="20c2abcb"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11422,7 +11422,7 @@ in words:
                 
                 
                     <td
-                    id="a232ed33"
+                    id="f7d144e9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11452,7 +11452,7 @@ in words:
                 
                 
                     <td
-                    id="c85c699e"
+                    id="8fabcccf"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11486,7 +11486,7 @@ in words:
                 
                 
                     <th
-                    id="0d207785"
+                    id="ded6ac53"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11514,7 +11514,7 @@ in words:
                 
                 
                     <td
-                    id="9d8f70c6"
+                    id="f5871131"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11544,7 +11544,7 @@ in words:
                 
                 
                     <td
-                    id="0004c7dd"
+                    id="60870204"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11578,7 +11578,7 @@ in words:
                 
                 
                     <th
-                    id="cae4c51d"
+                    id="fe4c827e"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11606,7 +11606,7 @@ in words:
                 
                 
                     <td
-                    id="50533983"
+                    id="fd6e2d72"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11636,7 +11636,7 @@ in words:
                 
                 
                     <td
-                    id="5982b75f"
+                    id="7a76dcd8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11670,7 +11670,7 @@ in words:
                 
                 
                     <th
-                    id="66e7dc3e"
+                    id="cee23df2"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11698,7 +11698,7 @@ in words:
                 
                 
                     <td
-                    id="fa120a64"
+                    id="19ba7eac"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11728,7 +11728,7 @@ in words:
                 
                 
                     <td
-                    id="bf86179f"
+                    id="d1a76bb8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11802,7 +11802,7 @@ in words:
                 
                 
                     <th
-                    id="74e151ee"
+                    id="2b8877db"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11830,7 +11830,7 @@ in words:
                 
                 
                     <td
-                    id="04d24286"
+                    id="efc5b4b6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11860,7 +11860,7 @@ in words:
                 
                 
                     <td
-                    id="7e5898cb"
+                    id="7becc23b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11894,7 +11894,7 @@ in words:
                 
                 
                     <th
-                    id="f16c45b1"
+                    id="7faa8499"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11922,7 +11922,7 @@ in words:
                 
                 
                     <td
-                    id="0379b048"
+                    id="f7f427e8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11956,7 +11956,7 @@ in words:
                 
                 
                     <td
-                    id="44f3bfa2"
+                    id="85e73c79"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11990,7 +11990,7 @@ in words:
                 
                 
                     <th
-                    id="4291fc12"
+                    id="299fae2c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -12018,7 +12018,7 @@ in words:
                 
                 
                     <td
-                    id="7c5a1d20"
+                    id="e1c4188a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12056,7 +12056,7 @@ in words:
                 
                 
                     <td
-                    id="a4ad3058"
+                    id="48530eb7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12090,7 +12090,7 @@ in words:
                 
                 
                     <th
-                    id="f05f271d"
+                    id="ea1c6e92"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -12118,7 +12118,7 @@ in words:
                 
                 
                     <td
-                    id="d6548b36"
+                    id="7116dc5b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12148,7 +12148,7 @@ in words:
                 
                 
                     <td
-                    id="15bffae0"
+                    id="32fd2014"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12182,7 +12182,7 @@ in words:
                 
                 
                     <th
-                    id="da892fdc"
+                    id="d54bfaed"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -12210,7 +12210,7 @@ in words:
                 
                 
                     <td
-                    id="37ef255f"
+                    id="af35ed31"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12242,7 +12242,7 @@ in words:
                 
                 
                     <td
-                    id="2b13c8fc"
+                    id="5f2b1dce"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12374,7 +12374,7 @@ in words:
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2025-04-11T10:19:38.230503</dc:date>
+        <dc:date>2025-04-11T13:58:21.224256</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -12404,7 +12404,7 @@ in words:
     L 239.846652 149.086214 
     L 205.560937 149.086214 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 205.560937 146.4146 
@@ -12412,7 +12412,7 @@ in words:
     L 239.846652 135.728144 
     L 205.560937 135.728144 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 205.560937 133.056529 
@@ -12420,7 +12420,7 @@ in words:
     L 239.846652 122.370073 
     L 205.560937 122.370073 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 205.560937 119.698459 
@@ -12428,7 +12428,7 @@ in words:
     L 239.846652 109.012003 
     L 205.560937 109.012003 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 205.560937 106.340388 
@@ -12436,7 +12436,7 @@ in words:
     L 239.846652 95.653932 
     L 205.560937 95.653932 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 205.560937 92.982318 
@@ -12444,7 +12444,7 @@ in words:
     L 239.846652 82.295862 
     L 205.560937 82.295862 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 205.560937 79.624247 
@@ -12452,7 +12452,7 @@ in words:
     L 239.846652 68.937791 
     L 205.560937 68.937791 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 205.560937 66.266177 
@@ -12460,7 +12460,7 @@ in words:
     L 239.846652 55.579721 
     L 205.560937 55.579721 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 205.560937 52.908106 
@@ -12468,7 +12468,7 @@ in words:
     L 239.846652 42.22165 
     L 205.560937 42.22165 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 205.560937 39.550036 
@@ -12476,18 +12476,18 @@ in words:
     L 274.132366 28.86358 
     L 205.560937 28.86358 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="md88e7ac6db" d="M 0 0 
+           <path id="m55aa075bfa" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#md88e7ac6db" x="205.560937" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m55aa075bfa" x="205.560937" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -12497,7 +12497,7 @@ in words:
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#md88e7ac6db" x="274.132366" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m55aa075bfa" x="274.132366" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -12509,12 +12509,12 @@ in words:
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="mccd4942456" d="M 0 0 
+           <path id="m01ffc15a1b" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -12524,7 +12524,7 @@ in words:
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -12534,7 +12534,7 @@ in words:
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -12544,7 +12544,7 @@ in words:
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -12554,7 +12554,7 @@ in words:
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -12564,7 +12564,7 @@ in words:
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -12574,7 +12574,7 @@ in words:
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -12584,7 +12584,7 @@ in words:
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -12594,7 +12594,7 @@ in words:
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -12604,7 +12604,7 @@ in words:
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -12658,7 +12658,7 @@ in words:
       </g>
      </g>
      <defs>
-      <clipPath id="p0484ec2316">
+      <clipPath id="p121493f44c">
        <rect x="205.560937" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -13008,7 +13008,7 @@ in words:
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2025-04-11T10:19:38.302395</dc:date>
+        <dc:date>2025-04-11T13:58:21.294218</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -13038,7 +13038,7 @@ in words:
     L 46.378409 18.662383 
     L 33.2875 18.662383 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 46.378409 86.798437 
@@ -13046,7 +13046,7 @@ in words:
     L 59.469318 18.227009 
     L 46.378409 18.227009 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 59.469318 86.798437 
@@ -13054,7 +13054,7 @@ in words:
     L 72.560227 53.927689 
     L 59.469318 53.927689 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 72.560227 86.798437 
@@ -13062,7 +13062,7 @@ in words:
     L 85.651136 67.641975 
     L 72.560227 67.641975 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 85.651136 86.798437 
@@ -13070,7 +13070,7 @@ in words:
     L 98.742045 77.220206 
     L 85.651136 77.220206 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 98.742045 86.798437 
@@ -13078,7 +13078,7 @@ in words:
     L 111.832955 82.662383 
     L 98.742045 82.662383 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 111.832955 86.798437 
@@ -13086,7 +13086,7 @@ in words:
     L 124.923864 82.227009 
     L 111.832955 82.227009 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 124.923864 86.798437 
@@ -13094,7 +13094,7 @@ in words:
     L 138.014773 83.315444 
     L 124.923864 83.315444 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 138.014773 86.798437 
@@ -13102,7 +13102,7 @@ in words:
     L 151.105682 84.40388 
     L 138.014773 84.40388 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 151.105682 86.798437 
@@ -13110,25 +13110,25 @@ in words:
     L 164.196591 86.363063 
     L 151.105682 86.363063 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_12">
         <path d="M 164.196591 86.798437 
     L 164.196591 82.444696 
     L 177.2875 82.444696 
     L 177.2875 86.798437 
-    " clip-path="url(#pb40a12f1c2)" style="fill: #dd0000"/>
+    " clip-path="url(#p558d92f337)" style="fill: #dd0000"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m6349ff84bc" d="M 0 0 
+           <path id="m3fbb45d0b5" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m6349ff84bc" x="95.56464" y="86.798437" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fbb45d0b5" x="95.56464" y="86.798437" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -13138,7 +13138,7 @@ in words:
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m6349ff84bc" x="159.112743" y="86.798437" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fbb45d0b5" x="159.112743" y="86.798437" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -13150,12 +13150,12 @@ in words:
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="m7befbeef97" d="M 0 0 
+           <path id="m6625eb5309" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m7befbeef97" x="33.2875" y="86.798437" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m6625eb5309" x="33.2875" y="86.798437" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -13165,7 +13165,7 @@ in words:
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#m7befbeef97" x="33.2875" y="43.261023" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m6625eb5309" x="33.2875" y="43.261023" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -13176,7 +13176,7 @@ in words:
        <g id="line2d_5">
         <path d="M 164.196591 86.798437 
     L 164.196591 18.398437 
-    " clip-path="url(#pb40a12f1c2)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #dd0000; stroke-width: 1.5"/>
+    " clip-path="url(#p558d92f337)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #dd0000; stroke-width: 1.5"/>
        </g>
        <g id="patch_13">
         <path d="M 33.2875 86.798437 
@@ -13194,7 +13194,7 @@ in words:
       </g>
      </g>
      <defs>
-      <clipPath id="pb40a12f1c2">
+      <clipPath id="p558d92f337">
        <rect x="33.2875" y="14.798437" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -13720,7 +13720,7 @@ in words:
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2025-04-11T10:19:38.230503</dc:date>
+        <dc:date>2025-04-11T13:58:21.224256</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -13750,7 +13750,7 @@ in words:
     L 239.846652 149.086214 
     L 205.560937 149.086214 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 205.560937 146.4146 
@@ -13758,7 +13758,7 @@ in words:
     L 239.846652 135.728144 
     L 205.560937 135.728144 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 205.560937 133.056529 
@@ -13766,7 +13766,7 @@ in words:
     L 239.846652 122.370073 
     L 205.560937 122.370073 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 205.560937 119.698459 
@@ -13774,7 +13774,7 @@ in words:
     L 239.846652 109.012003 
     L 205.560937 109.012003 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 205.560937 106.340388 
@@ -13782,7 +13782,7 @@ in words:
     L 239.846652 95.653932 
     L 205.560937 95.653932 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 205.560937 92.982318 
@@ -13790,7 +13790,7 @@ in words:
     L 239.846652 82.295862 
     L 205.560937 82.295862 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 205.560937 79.624247 
@@ -13798,7 +13798,7 @@ in words:
     L 239.846652 68.937791 
     L 205.560937 68.937791 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 205.560937 66.266177 
@@ -13806,7 +13806,7 @@ in words:
     L 239.846652 55.579721 
     L 205.560937 55.579721 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 205.560937 52.908106 
@@ -13814,7 +13814,7 @@ in words:
     L 239.846652 42.22165 
     L 205.560937 42.22165 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 205.560937 39.550036 
@@ -13822,18 +13822,18 @@ in words:
     L 274.132366 28.86358 
     L 205.560937 28.86358 
     z
-    " clip-path="url(#p0484ec2316)" style="fill: #ee854a"/>
+    " clip-path="url(#p121493f44c)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="md88e7ac6db" d="M 0 0 
+           <path id="m55aa075bfa" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#md88e7ac6db" x="205.560937" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m55aa075bfa" x="205.560937" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -13843,7 +13843,7 @@ in words:
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#md88e7ac6db" x="274.132366" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m55aa075bfa" x="274.132366" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -13855,12 +13855,12 @@ in words:
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="mccd4942456" d="M 0 0 
+           <path id="m01ffc15a1b" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -13870,7 +13870,7 @@ in words:
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -13880,7 +13880,7 @@ in words:
         <g id="ytick_3">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -13890,7 +13890,7 @@ in words:
         <g id="ytick_4">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -13900,7 +13900,7 @@ in words:
         <g id="ytick_5">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -13910,7 +13910,7 @@ in words:
         <g id="ytick_6">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -13920,7 +13920,7 @@ in words:
         <g id="ytick_7">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -13930,7 +13930,7 @@ in words:
         <g id="ytick_8">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -13940,7 +13940,7 @@ in words:
         <g id="ytick_9">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -13950,7 +13950,7 @@ in words:
         <g id="ytick_10">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#mccd4942456" x="205.560937" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01ffc15a1b" x="205.560937" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -14004,7 +14004,7 @@ in words:
       </g>
      </g>
      <defs>
-      <clipPath id="p0484ec2316">
+      <clipPath id="p121493f44c">
        <rect x="205.560937" y="22.318125" width="72" height="144"/>
       </clipPath>
      </defs>
@@ -14350,7 +14350,7 @@ in words:
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2025-04-11T10:19:38.302395</dc:date>
+        <dc:date>2025-04-11T13:58:21.294218</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -14380,7 +14380,7 @@ in words:
     L 46.378409 18.662383 
     L 33.2875 18.662383 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 46.378409 86.798437 
@@ -14388,7 +14388,7 @@ in words:
     L 59.469318 18.227009 
     L 46.378409 18.227009 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 59.469318 86.798437 
@@ -14396,7 +14396,7 @@ in words:
     L 72.560227 53.927689 
     L 59.469318 53.927689 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 72.560227 86.798437 
@@ -14404,7 +14404,7 @@ in words:
     L 85.651136 67.641975 
     L 72.560227 67.641975 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 85.651136 86.798437 
@@ -14412,7 +14412,7 @@ in words:
     L 98.742045 77.220206 
     L 85.651136 77.220206 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 98.742045 86.798437 
@@ -14420,7 +14420,7 @@ in words:
     L 111.832955 82.662383 
     L 98.742045 82.662383 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 111.832955 86.798437 
@@ -14428,7 +14428,7 @@ in words:
     L 124.923864 82.227009 
     L 111.832955 82.227009 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 124.923864 86.798437 
@@ -14436,7 +14436,7 @@ in words:
     L 138.014773 83.315444 
     L 124.923864 83.315444 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 138.014773 86.798437 
@@ -14444,7 +14444,7 @@ in words:
     L 151.105682 84.40388 
     L 138.014773 84.40388 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 151.105682 86.798437 
@@ -14452,25 +14452,25 @@ in words:
     L 164.196591 86.363063 
     L 151.105682 86.363063 
     z
-    " clip-path="url(#pb40a12f1c2)" style="fill: #1f77b4"/>
+    " clip-path="url(#p558d92f337)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_12">
         <path d="M 164.196591 86.798437 
     L 164.196591 82.444696 
     L 177.2875 82.444696 
     L 177.2875 86.798437 
-    " clip-path="url(#pb40a12f1c2)" style="fill: #dd0000"/>
+    " clip-path="url(#p558d92f337)" style="fill: #dd0000"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m6349ff84bc" d="M 0 0 
+           <path id="m3fbb45d0b5" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m6349ff84bc" x="95.56464" y="86.798437" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fbb45d0b5" x="95.56464" y="86.798437" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -14480,7 +14480,7 @@ in words:
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m6349ff84bc" x="159.112743" y="86.798437" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3fbb45d0b5" x="159.112743" y="86.798437" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -14492,12 +14492,12 @@ in words:
         <g id="ytick_1">
          <g id="line2d_3">
           <defs>
-           <path id="m7befbeef97" d="M 0 0 
+           <path id="m6625eb5309" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m7befbeef97" x="33.2875" y="86.798437" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m6625eb5309" x="33.2875" y="86.798437" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -14507,7 +14507,7 @@ in words:
         <g id="ytick_2">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#m7befbeef97" x="33.2875" y="43.261023" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m6625eb5309" x="33.2875" y="43.261023" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -14518,7 +14518,7 @@ in words:
        <g id="line2d_5">
         <path d="M 164.196591 86.798437 
     L 164.196591 18.398437 
-    " clip-path="url(#pb40a12f1c2)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #dd0000; stroke-width: 1.5"/>
+    " clip-path="url(#p558d92f337)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #dd0000; stroke-width: 1.5"/>
        </g>
        <g id="patch_13">
         <path d="M 33.2875 86.798437 
@@ -14536,7 +14536,7 @@ in words:
       </g>
      </g>
      <defs>
-      <clipPath id="pb40a12f1c2">
+      <clipPath id="p558d92f337">
        <rect x="33.2875" y="14.798437" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -14616,7 +14616,7 @@ in words:
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_ea3a74d7">
+        <skrub-table-report class="report" id="report_5bd50065">
         </skrub-table-report>
 
         <script type="module">
@@ -15714,7 +15714,7 @@ in words:
         </script>
     </div>
 
-    <div id="report_ea3a74d7-wrapper-fallback">
+    <div id="report_5bd50065-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -15725,8 +15725,8 @@ in words:
     </div>
 
     <script>
-     document.getElementById("report_ea3a74d7-wrapper").removeAttribute("hidden");
-     document.getElementById("report_ea3a74d7-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_5bd50065-wrapper").removeAttribute("hidden");
+     document.getElementById("report_5bd50065-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -15839,7 +15839,7 @@ hyperparameters of each classifier.
 
     <div class="output_subarea output_html rendered_html output_result">
     <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.0.0.min.js"></script>                <div id="8bcc8fa1-b139-485b-ac3b-6fd5cb3c58da" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("8bcc8fa1-b139-485b-ac3b-6fd5cb3c58da")) {                    Plotly.newPlot(                        "8bcc8fa1-b139-485b-ac3b-6fd5cb3c58da",                        [{"dimensions":[{"label":"score","values":{"dtype":"f8","bdata":"w\u002fUoXI\u002fC6T9Di2zn+6npP8UgsHJokek\u002fm8QgsHJo6T9yaJHtfD\u002fpP9Ii2\u002fl+aug\u002fgpVDi2zn5z+wcmiR7XznPwaBlUOLbOc\u002fTWIQWDm05D81XrpJDALjP5HtfD81XuI\u002f61G4HoXr4T\u002f2KFyPwvXgP3oUrkfheuA\u002ftch2vp8a3z8="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"eDhWmBSeYj87xS4uj2Fnv8y4QaMYAV0\u002fHnT5fyYR8D+8E\u002fd12vnvPy1Ya5RFsHC\u002fkBhWUS2RRr\u002fA6Gtkp140vzdjenR5E\u002fA\u002fDiKLydLh7z85ibi1hjlyP3AtlK1DYVa\u002fvufq+v5wW78GXXifcuXvP4rFjoEaAfA\u002fYHj9hGf\u002f7z8="}},{"label":"lr","ticktext":["NaN","0.024","0.036","0.054","0.081","0.12","0.18","0.27","0.4","0.6","0.89"],"tickvals":[-4.076048786277228,-3.716228744853745,-3.316428698827653,-2.91662865280156,-2.5168286067754675,-2.1170285607493753,-1.7172285147232829,-1.3174284686971904,-0.9176284226710978,-0.5178283766450056,-0.11802833061891337],"values":{"dtype":"f8","bdata":"6c2K\u002fbLd\u002fL+oNkSdlFjmv4brcvx6nLm\u002fvcF92bZJEMAE1v+GkFYQwKOBZ9MUxA3AM3O2\u002fqnoCsBkiBXv6Ivvvz4z1RZiSBDA37QX9BFgEMCdwS4o4QEHwJyJCldGefG\u002fH8E2e7nUA8CnZK5vI1EQwIxurXbtRRDAFZhXaOQ7EMA="}},{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"nF+QKX+zZL9ihw4x6Ahtv2IofKnd\u002f1e\u002fSIRDsql4Tb+YbkljOFBKP5rGv33zGWQ\u002fYLLfF8bvMz8pXEQ9NI9jv21gjL1AtHK\u002feBFUvNxXRD\u002fiOuS6qOnvP2DOoOyX2u8\u002f0wYArnsG8D+hb11BFuPvPyJGFK4\u002fAPA\u002fuHlIx8rl7z8="}},{"label":"N components","ticktext":["5","6","8","10","13","16","21","26","33","42"],"tickvals":[1.6094379124341003,1.845908101972908,2.0823782915117155,2.318848481050523,2.5553186705893305,2.791788860128138,3.028259049666946,3.264729239205754,3.5011994287445614,3.7376696182833684],"values":{"dtype":"f8","bdata":"gPew3aO3CEA+SHLQ6vULQNg8K15W3Q1AnQX1WwqvAEA6AWoREqAAQO+Q9TrmlwFAWGcojAmo+T96snb3lqT8P3maTiodPgtAHr\u002fc8XS3AECG28NUEgAJQFGjbprm1QNA3kfj\u002fjPN\u002fD\u002fvYHnw3R4JQDdFae25JwVA1CLaPKBkAkA="}},{"label":"length","ticktext":["chars","words"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"Yx3eJx1ddD97e15HZRPwP\u002fqSFfHB+ms\u002fu9Nkid89YL+8fgKAy+fvP+iWYGNdZ14\u002f0wcBoQAG8D+A1lJoE7FmP7atIKGrzWG\u002fXLtC+dI6cb+Ijxypzq9xv9gPRThjlks\u002fjpHbBP337z+4BSotFHBRv1AlOcr77UO\u002fwJjz6qrv7z8="}},{"label":"\u03b1","ticktext":["NaN","0.59","1","1.9","3.3","5.8","10","18","32","56","99"],"tickvals":[-1.0325332054288083,-0.5208180953405739,0.04775424920190874,0.6163265937443914,1.184898938286874,1.7534712828293566,2.3220436273718392,2.890615971914322,3.4591883164568045,4.027760660999287,4.59633300554177],"values":{"dtype":"f8","bdata":"t+yXzF8+8L+hVnmNza3wv5vYWXso6PC\u002ftid79muB3r\u002fTHgEaW8fgvxhH6AuiqfC\u002f5Ui6W+yl8L8QvN4qqmbwv745JzLvRxBAan+QwLJzEkCfNEgpnYPwv72c8fL5efC\u002fihJFJK0j8L8JzRfb2OLqPwx5f0JojQ5AABGRm0dhCUA="}},{"label":"fit time","values":{"dtype":"f8","bdata":"XKpAiFx69z9Xw+qjaIH5Pw4eoS6xLPY\u002f3RU9AkUJ4j95lUlEkJfdP0fJF1C\u002f\u002fPI\u002fnZyqPzJ08T8dKqmeRcDyP7usyFyTCuI\u002fBCM2zYxd5z+8Y3edwlD1P7f8UB6nOfA\u002fNB3\u002fZMVj6T97++HFSY\u002fhPwxU\u002f7TUhNc\u002fCx2+xN7J3D8="}},{"label":"score time","values":{"dtype":"f8","bdata":"s1O48FJiyj\u002ffnldp5Y7MPy7k7MK3m9M\u002fJUPsdC4Qxz8JSJyAN5DBP1dvRTA4M9A\u002fwOgZji+MzD\u002fLKjr5hOjKP+dAdvFkYME\u002fFyHfsQXLxT\u002fCknT5Gk\u002fSPyuoY7xHPc8\u002favj2Zv1Axj\u002fNyO1V0v3JP9lQDkI7tsM\u002fGc7jDVG7xD8="}}],"labelangle":45,"line":{"color":{"dtype":"f8","bdata":"w\u002fUoXI\u002fC6T9Di2zn+6npP8UgsHJokek\u002fm8QgsHJo6T9yaJHtfD\u002fpP9Ii2\u002fl+aug\u002fgpVDi2zn5z+wcmiR7XznPwaBlUOLbOc\u002fTWIQWDm05D81XrpJDALjP5HtfD81XuI\u002f61G4HoXr4T\u002f2KFyPwvXgP3oUrkfheuA\u002ftch2vp8a3z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.0.0.min.js"></script>                <div id="e85a5ccc-9bbd-48f6-8407-1e018c1088a5" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e85a5ccc-9bbd-48f6-8407-1e018c1088a5")) {                    Plotly.newPlot(                        "e85a5ccc-9bbd-48f6-8407-1e018c1088a5",                        [{"dimensions":[{"label":"score","values":{"dtype":"f8","bdata":"6iYxCKwc6j\u002fxp8ZLN4npP5zEILByaOk\u002f8tJNYhBY6T\u002fy0k1iEFjpP35qvHSTGOg\u002f2s73U+Ol5z80MzMzMzPnPzMzMzMzM+c\u002fTmIQWDm05D81XrpJDALjP5HtfD81XuI\u002f61G4HoXr4T\u002f2KFyPwvXgP3oUrkfheuA\u002ftch2vp8a3z8="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"5AwubTmDZT8oOjwo\u002fAlwv52GaQOg7e8\u002fwIUOsxLCa78D6D5faRHwPxKBGUTTAmw\u002fyAzNnvE9YD\u002fmVBTRgenvPyNHMdc6bXQ\u002ffg6F7tAB8D+QbiwJD39Ev5GUj67c53E\u002f0JsT4pW+Mb+Gbcf0H\u002f7vP83qkpafAPA\u002f2SE8Keb67z8="}},{"label":"lr","ticktext":["NaN","0.024","0.036","0.054","0.081","0.12","0.18","0.27","0.4","0.6","0.89"],"tickvals":[-4.076048786277228,-3.716228744853745,-3.316428698827653,-2.91662865280156,-2.5168286067754675,-2.1170285607493753,-1.7172285147232829,-1.3174284686971904,-0.9176284226710978,-0.5178283766450056,-0.11802833061891337],"values":{"dtype":"f8","bdata":"5spZC0UH\u002fb+Mr7SCdjK6vzPJ6kNuOxDAVfa0pDEl579EeOPCgE0QwE8wf\u002f4zrA3A8ecBGcneCsDHZOyI50cQwFoiOTZswO+\u002f4tu5buNLEMC3RhAnkQMHwKz1IliPZfG\u002fR1Ay1LX4A8AsO5+rcV4QwJbhfBgoPBDA2MBXAHFOEMA="}},{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"i6N097rXcD\u002fI6CTho5xQv0hUB+YKuEa\u002fu2RWKrPkb79AonN5fY9PvwBDVpG0IPC+UmLehsP\u002fUb\u002flHkl5SdNxv+Jv\u002fOHBT2u\u002fDCY9KjmDVj+vTUKadQDwPwNG1\u002fkCA\u002fA\u002fcaGGQhwJ8D8E4yZvDwnwPzo5+Bj9DPA\u002fM8e+wFsC8D8="}},{"label":"N components","ticktext":["5","6","8","10","13","16","21","26","33","42"],"tickvals":[1.6094379124341003,1.845908101972908,2.0823782915117155,2.318848481050523,2.5553186705893305,2.791788860128138,3.028259049666946,3.264729239205754,3.5011994287445614,3.7376696182833684],"values":{"dtype":"f8","bdata":"BNEVoevLCEBP0phn6dQNQOe7K2xvoABAAI3Hx1nsC0AnaDZIjagAQO029mQPoAFARBw++Naw+T\u002fZ\u002fUlX0kELQFuZNIehrPw\u002ffWjjsbaiAED2gFIqMQAJQGorLeBa9ANAK71mnsui\u002fD8jZ+nxzx0JQBwWKmglIgVAgnlubehcAkA="}},{"label":"length","ticktext":["chars","words"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"FJWsjRg1YD8A0I+PJM8dv58aqpoZBfA\u002fRXTFuYjh7z9wH9EUzWA9P\u002fyB\u002fcJ1hlm\u002foJJp2jnm7z\u002fahhjjHMpvvyvjaJmmgXI\u002fkEXr9hO5cL\u002fav\u002fo+frxpvzDNIvfmOEs\u002fCkcN9Rf77z9mrkqzJCFsP78yHg4C2XC\u002fvKwbKcX37z8="}},{"label":"\u03b1","ticktext":["NaN","0.59","1","1.9","3.3","5.8","10","18","32","56","99"],"tickvals":[-1.0325332054288083,-0.5208180953405739,0.04775424920190874,0.6163265937443914,1.184898938286874,1.7534712828293566,2.3220436273718392,2.890615971914322,3.4591883164568045,4.027760660999287,4.59633300554177],"values":{"dtype":"f8","bdata":"FTr3rnBX8L+inbUoPCnwvzWYmTa1IuG\u002fY7D6tsHU8L\u002fmlODuhR\u002fev2FYZLqFVPC\u002fS5a10Brq8L8SldofXTIQQDjXWv9xFfC\u002fnkHnx\u002f5rEkBrDZq3GYnwv5aryqCDbvC\u002f3g9laSlu8L+194WefBPsP1pA5i5YYg5AB9OaTPh0CUA="}},{"label":"fit time","values":{"dtype":"f8","bdata":"amuYIM6o9j9Hw7ynNlvzP9BT+JDmhdw\u002fGWeMGxp29j\u002fGXWhcKyThP0m9mLIg2fM\u002fx\u002frMWQZE8j9hrAs2BXfgP1GMrcQ\u002f3PE\u002fe5ZUHLd43T\u002fx2G8VQbD1P\u002frWEKv8f\u002fA\u002fKDuGLaOO6D+fgb2udsziP3sxTqJXU9c\u002fla5IbYJr1j8="}},{"label":"score time","values":{"dtype":"f8","bdata":"P50OC0JgyT\u002fA4Nvq8afQP7FRUFLYdsA\u002fd\u002faepm76yz9UcsjzF2zCP5b6bLb0\u002fss\u002f2\u002fE3YN8mzj81okX9vz\u002fCPxTceLixw88\u002f3rTEhqk5wT+670Ww+EvRP+IhXfD9mck\u002fEnxPg\u002flexT8vVsnIeEnLPzlKdAVUvsM\u002f5A2F1x+8xT8="}}],"labelangle":45,"line":{"color":{"dtype":"f8","bdata":"6iYxCKwc6j\u002fxp8ZLN4npP5zEILByaOk\u002f8tJNYhBY6T\u002fy0k1iEFjpP35qvHSTGOg\u002f2s73U+Ol5z80MzMzMzPnPzMzMzMzM+c\u002fTmIQWDm05D81XrpJDALjP5HtfD81XuI\u002f61G4HoXr4T\u002f2KFyPwvXgP3oUrkfheuA\u002ftch2vp8a3z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -16398,7 +16398,7 @@ hyperparameter tuning.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 49.177 seconds)
+   **Total running time of the script:** (0 minutes 48.655 seconds)
 
 
 .. _sphx_glr_download_auto_examples_expressions_13_choices.py:
