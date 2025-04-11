@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**04:49.653** total execution time for 4 files **from auto_examples/expressions**:
+**05:24.864** total execution time for 4 files **from auto_examples/expressions**:
 
 .. container::
 
@@ -33,14 +33,14 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_expressions_10_expressions_intro.py` (``10_expressions_intro.py``)
-     - 02:57.726
+     - 03:16.448
      - 0.0
    * - :ref:`sphx_glr_auto_examples_expressions_12_scikit_learn_estimators_in_expressions.py` (``12_scikit_learn_estimators_in_expressions.py``)
-     - 00:59.560
+     - 01:09.446
      - 0.0
    * - :ref:`sphx_glr_auto_examples_expressions_13_choices.py` (``13_choices.py``)
-     - 00:48.655
+     - 00:54.880
      - 0.0
    * - :ref:`sphx_glr_auto_examples_expressions_11_expressions_explained.py` (``11_expressions_explained.py``)
-     - 00:03.712
+     - 00:04.090
      - 0.0
