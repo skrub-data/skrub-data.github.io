@@ -689,7 +689,7 @@
 <h1>column_associations<a class="headerlink" href="#column-associations" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.column_associations">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8c6c42a/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ec32315/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
 <dd><p>Get measures of statistical associations between all pairs of columns.</p>
 <p>Reported metrics include Cramer’s V statistic and Pearson’s Correlation
 Coefficient. More may be added in the future.</p>
@@ -756,7 +756,7 @@ between two variables, giving a value between -1 and +1 (inclusive).</p>
 <span class="go">4  5.8878  9.3223  5.3840  7.2006  2.1494  val 4</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># Compute the associations</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">associations</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">column_associations</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">associations</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="n">associations</span>
 <span class="go">   left_column_name  left_column_idx right_column_name  right_column_idx  cramer_v  pearson_corr</span>
 <span class="go">0              c_1                1               c_4                 4    0.8215        0.1597</span>
 <span class="go">1              c_0                0               c_1                 1    0.8215        0.1123</span>
@@ -871,7 +871,7 @@ between two variables, giving a value between -1 and +1 (inclusive).</p>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>
