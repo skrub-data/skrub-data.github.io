@@ -216,7 +216,7 @@ Skrub expressions
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Skrub provides an easy way to build complex, flexible machine-learning pipelines. It solves several problems that are not easily addressed with the standard scikit-learn tools such as the Pipeline and ColumnTransformer.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Skrub provides an easy way to build complex, flexible machine-learning pipelines. There are several problems that are not easily addressed with the standard scikit-learn tools such as the Pipeline and ColumnTransformer and for which a skrub pipeline is a solution:">
 
 .. only:: html
 
