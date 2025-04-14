@@ -688,6 +688,7 @@ See the relevant sections above on how to do this.</p>
 <li><p>Set up your environment by forking the repository (<a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">Github doc on
 forking and
 cloning</a>).</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">upstream</span></code> to your remotes with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span> <span class="pre">git&#64;github.com:skrub-data/skrub.git</span></code>.</p></li>
 <li><p>Create and activate a new virtual environment:</p>
 <ul>
 <li><p>With <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a>, create
@@ -714,14 +715,7 @@ take a long time. Some tests may raise warnings such as:</p>
 </div>
 <p>This is expected, and you may proceed with the next steps without worrying about them. However, no tests should fail at this point: if they do fail, then let us know.</p>
 <p>Now that the development environment is ready, you may start working on
-the new issue by creating a new branch:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>my-branch-name-eg-fix-issue-123
-<span class="c1"># make some changes</span>
-git<span class="w"> </span>add<span class="w"> </span>./the/file-i-changed
-git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;my message&quot;</span>
-git<span class="w"> </span>push<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>my-branch-name-eg-fix-issue-123
-</pre></div>
-</div>
+the new issue.</p>
 <p>At this point, if you visit again the <a class="reference external" href="https://github.com/skrub-data/skrub/pulls">pull requests
 page</a> github should show a
 banner asking if you want to open a pull request from your new branch.</p>
