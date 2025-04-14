@@ -63,17 +63,16 @@ It is used by default in the |TableVectorizer|.
 .. |ToDatetime| replace::
     :class:`~skrub.ToDatetime`
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-56
+.. GENERATED FROM PYTHON SOURCE LINES 49-55
 
-##############################################################################
- A problem with relevant datetime features
- -----------------------------------------
+A problem with relevant datetime features
+-----------------------------------------
 
- We will use a dataset of bike sharing demand in 2011 and 2012.
- In this setting, we want to predict the number of bike rentals, based
- on the date, time and weather conditions.
+We will use a dataset of bike sharing demand in 2011 and 2012.
+In this setting, we want to predict the number of bike rentals, based
+on the date, time and weather conditions.
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-71
+.. GENERATED FROM PYTHON SOURCE LINES 55-70
 
 .. code-block:: Python
 
@@ -234,7 +233,7 @@ It is used by default in the |TableVectorizer|.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-74
+.. GENERATED FROM PYTHON SOURCE LINES 71-73
 
 .. code-block:: Python
 
@@ -264,11 +263,11 @@ It is used by default in the |TableVectorizer|.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-76
+.. GENERATED FROM PYTHON SOURCE LINES 74-75
 
 We convert the dataframe's ``"date"`` column using |ToDatetime|.
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-83
+.. GENERATED FROM PYTHON SOURCE LINES 75-82
 
 .. code-block:: Python
 
@@ -294,7 +293,7 @@ We convert the dataframe's ``"date"`` column using |ToDatetime|.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 84-93
+.. GENERATED FROM PYTHON SOURCE LINES 83-92
 
 Encoding the features
 .....................
@@ -306,7 +305,7 @@ don't want to extract features with a resolution finer than hours. This is
 because we don't want to extract minutes, seconds and lower units, as they
 are unimportant here.
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-101
+.. GENERATED FROM PYTHON SOURCE LINES 92-100
 
 .. code-block:: Python
 
@@ -359,13 +358,13 @@ are unimportant here.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 102-105
+.. GENERATED FROM PYTHON SOURCE LINES 101-104
 
 We see that the encoder is working as expected: the column has
 been replaced by features extracting the month, day, hour, day of the
 week and total seconds since Epoch information.
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-114
+.. GENERATED FROM PYTHON SOURCE LINES 106-113
 
 One-liner with the TableVectorizer
 ..................................
@@ -375,7 +374,7 @@ As mentioned earlier, the |TableVectorizer| makes use of the
 a string, but will be automatically transformed into a datetime in the
 |TableVectorizer|.
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-120
+.. GENERATED FROM PYTHON SOURCE LINES 113-119
 
 .. code-block:: Python
 
@@ -400,14 +399,14 @@ a string, but will be automatically transformed into a datetime in the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 121-125
+.. GENERATED FROM PYTHON SOURCE LINES 120-124
 
 If we want to customize the |DatetimeEncoder| inside the |TableVectorizer|,
 we can replace its default parameter with a new, custom instance.
 
 Here, for example, we want it to extract the day of the week:
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-130
+.. GENERATED FROM PYTHON SOURCE LINES 124-129
 
 .. code-block:: Python
 
@@ -431,7 +430,7 @@ Here, for example, we want it to extract the day of the week:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 131-137
+.. GENERATED FROM PYTHON SOURCE LINES 130-136
 
 .. note:
     For more information on how to customize the |TableVectorizer|, see
@@ -440,7 +439,7 @@ Here, for example, we want it to extract the day of the week:
 Inspecting the |TableVectorizer| further, we can check that the
 |DatetimeEncoder| is used on the correct column(s).
 
-.. GENERATED FROM PYTHON SOURCE LINES 137-139
+.. GENERATED FROM PYTHON SOURCE LINES 136-138
 
 .. code-block:: Python
 
@@ -464,7 +463,7 @@ Inspecting the |TableVectorizer| further, we can check that the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 140-149
+.. GENERATED FROM PYTHON SOURCE LINES 139-148
 
 Feature engineering for linear models
 ....................................................................
@@ -476,7 +475,7 @@ for trigonometric functions or B-Splines respectively. In this example, we use
 ``spline``.
 We can also add the day in the year with the parameter ``add_day_of_year``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 150-157
+.. GENERATED FROM PYTHON SOURCE LINES 149-156
 
 .. code-block:: Python
 
@@ -494,7 +493,7 @@ We can also add the day in the year with the parameter ``add_day_of_year``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 158-168
+.. GENERATED FROM PYTHON SOURCE LINES 157-167
 
 Prediction with datetime features
 ---------------------------------
@@ -507,7 +506,7 @@ Here we'll use a |RidgeCV| model as our learner. We also fill null values with
 To test the effect of different datetime encodings on the linear model, we train
 three separate pipelines.
 
-.. GENERATED FROM PYTHON SOURCE LINES 168-185
+.. GENERATED FROM PYTHON SOURCE LINES 167-184
 
 .. code-block:: Python
 
@@ -535,7 +534,7 @@ three separate pipelines.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 186-195
+.. GENERATED FROM PYTHON SOURCE LINES 185-194
 
 Evaluating the model
 ....................
@@ -547,7 +546,7 @@ the standard settings of the cross-validation do not respect time ordering.
 Instead, we can use the |TimeSeriesSplit|,
 which ensures that the test set is always in the future.
 
-.. GENERATED FROM PYTHON SOURCE LINES 195-225
+.. GENERATED FROM PYTHON SOURCE LINES 194-224
 
 .. code-block:: Python
 
@@ -596,12 +595,12 @@ which ensures that the test set is always in the future.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 226-228
+.. GENERATED FROM PYTHON SOURCE LINES 225-227
 
 As expected for linear models, introducing the periodic features improved
 the RMSE by a noticeable amount.
 
-.. GENERATED FROM PYTHON SOURCE LINES 230-237
+.. GENERATED FROM PYTHON SOURCE LINES 229-236
 
 Plotting the prediction
 .......................
@@ -611,7 +610,7 @@ compare the prediction of our model with the actual values.
 To do so, we will divide our dataset into a train and a test set:
 we use 2011 data to predict what happened in 2012.
 
-.. GENERATED FROM PYTHON SOURCE LINES 237-297
+.. GENERATED FROM PYTHON SOURCE LINES 236-296
 
 .. code-block:: Python
 
@@ -687,14 +686,14 @@ we use 2011 data to predict what happened in 2012.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 298-302
+.. GENERATED FROM PYTHON SOURCE LINES 297-301
 
 ##############################################################################
  As we can see, the base RidgeCV model struggles to learn the the pattern well
  enough, while the model that is trained on the additional periodic features
  follows the actual demand more accurately.
 
-.. GENERATED FROM PYTHON SOURCE LINES 305-313
+.. GENERATED FROM PYTHON SOURCE LINES 304-312
 
 Feature importances
 -------------------
@@ -705,7 +704,7 @@ impacts the bike sharing demand. To this aim, we can use the function
 created by the |DatetimeEncoder| and measure their importance by observing
 how the model changes its prediction.
 
-.. GENERATED FROM PYTHON SOURCE LINES 316-343
+.. GENERATED FROM PYTHON SOURCE LINES 315-342
 
 .. code-block:: Python
 
@@ -748,7 +747,7 @@ how the model changes its prediction.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 344-356
+.. GENERATED FROM PYTHON SOURCE LINES 343-355
 
 We can clearly see that some of the hour splines (``date_hour_spline_18``,
 ``date_hour_spline_9``) are more important than other features, likely due to
@@ -766,7 +765,7 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 4.016 seconds)
+   **Total running time of the script:** (0 minutes 4.096 seconds)
 
 
 .. _sphx_glr_download_auto_examples_03_datetime_encoder.py:

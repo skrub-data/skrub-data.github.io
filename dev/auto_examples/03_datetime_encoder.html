@@ -603,11 +603,11 @@ in machine learning models with the <a class="reference internal" href="../refer
 <p>This encoder breaks down passed datetime features into relevant numerical
 features, such as the month, the day of the week, the hour of the day, etc.</p>
 <p>It is used by default in the <a class="reference internal" href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>.</p>
-<blockquote>
-<div><p>We will use a dataset of bike sharing demand in 2011 and 2012.
+<section id="a-problem-with-relevant-datetime-features">
+<h2>A problem with relevant datetime features<a class="headerlink" href="#a-problem-with-relevant-datetime-features" title="Link to this heading">#</a></h2>
+<p>We will use a dataset of bike sharing demand in 2011 and 2012.
 In this setting, we want to predict the number of bike rentals, based
 on the date, time and weather conditions.</p>
-</div></blockquote>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pprint</span><span class="w"> </span><span class="kn">import</span> <a href="https://docs.python.org/3/library/pprint.html#pprint.pprint" title="pprint.pprint" class="sphx-glr-backref-module-pprint sphx-glr-backref-type-py-function"><span class="n">pprint</span></a>
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -787,7 +787,7 @@ converted dtype: datetime64[ns]
 </pre></div>
 </div>
 <section id="encoding-the-features">
-<h2>Encoding the features<a class="headerlink" href="#encoding-the-features" title="Link to this heading">#</a></h2>
+<h3>Encoding the features<a class="headerlink" href="#encoding-the-features" title="Link to this heading">#</a></h3>
 <p>We now encode this column with a <a class="reference internal" href="../reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a>.</p>
 <p>During the instantiation of the <a class="reference internal" href="../reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a>, we specify that we want
 don’t want to extract features with a resolution finer than hours. This is
@@ -837,7 +837,7 @@ been replaced by features extracting the month, day, hour, day of the
 week and total seconds since Epoch information.</p>
 </section>
 <section id="one-liner-with-the-tablevectorizer">
-<h2>One-liner with the TableVectorizer<a class="headerlink" href="#one-liner-with-the-tablevectorizer" title="Link to this heading">#</a></h2>
+<h3>One-liner with the TableVectorizer<a class="headerlink" href="#one-liner-with-the-tablevectorizer" title="Link to this heading">#</a></h3>
 <p>As mentioned earlier, the <a class="reference internal" href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> makes use of the
 <a class="reference internal" href="../reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> by default. Note that <code class="docutils literal notranslate"><span class="pre">X[&quot;date&quot;]</span></code> is still
 a string, but will be automatically transformed into a datetime in the
@@ -881,7 +881,7 @@ we can replace its default parameter with a new, custom instance.</p>
 </div>
 </section>
 <section id="feature-engineering-for-linear-models">
-<h2>Feature engineering for linear models<a class="headerlink" href="#feature-engineering-for-linear-models" title="Link to this heading">#</a></h2>
+<h3>Feature engineering for linear models<a class="headerlink" href="#feature-engineering-for-linear-models" title="Link to this heading">#</a></h3>
 <p>The <a class="reference internal" href="../reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> can generate additional periodic features. These are
 particularly useful for linear models. This is controlled by the
 <code class="docutils literal notranslate"><span class="pre">periodic</span> <span class="pre">encoding</span></code> parameter which can be either  <code class="docutils literal notranslate"><span class="pre">circular</span></code> or <code class="docutils literal notranslate"><span class="pre">spline</span></code>,
@@ -895,8 +895,10 @@ We can also add the day in the year with the parameter <code class="docutils lit
 <span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">)</span>
 </pre></div>
 </div>
+</section>
+</section>
 <section id="prediction-with-datetime-features">
-<h3>Prediction with datetime features<a class="headerlink" href="#prediction-with-datetime-features" title="Link to this heading">#</a></h3>
+<h2>Prediction with datetime features<a class="headerlink" href="#prediction-with-datetime-features" title="Link to this heading">#</a></h2>
 <p>For prediction tasks, we recommend using the <a class="reference internal" href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> inside a
 pipeline, combined with a model that can use the features extracted by the
 <a class="reference internal" href="../reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a>.
@@ -921,10 +923,8 @@ three separate pipelines.</p>
 <span class="p">)</span>
 </pre></div>
 </div>
-</section>
-</section>
 <section id="evaluating-the-model">
-<h2>Evaluating the model<a class="headerlink" href="#evaluating-the-model" title="Link to this heading">#</a></h2>
+<h3>Evaluating the model<a class="headerlink" href="#evaluating-the-model" title="Link to this heading">#</a></h3>
 <p>When using date and time features, we often care about predicting the future.
 In this case, we have to be careful when evaluating our model, because
 the standard settings of the cross-validation do not respect time ordering.</p>
@@ -970,7 +970,7 @@ Transformer with periodic features - Mean RMSE : 60418.83
 the RMSE by a noticeable amount.</p>
 </section>
 <section id="plotting-the-prediction">
-<h2>Plotting the prediction<a class="headerlink" href="#plotting-the-prediction" title="Link to this heading">#</a></h2>
+<h3>Plotting the prediction<a class="headerlink" href="#plotting-the-prediction" title="Link to this heading">#</a></h3>
 <p>The mean squared error is not obvious to interpret, so we visually
 compare the prediction of our model with the actual values.
 To do so, we will divide our dataset into a train and a test set:
@@ -1040,8 +1040,10 @@ we use 2011 data to predict what happened in 2012.</p>
 <img src="../_images/sphx_glr_03_datetime_encoder_001.png" srcset="../_images/sphx_glr_03_datetime_encoder_001.png" alt="Predictions with linear models" class = "sphx-glr-single-img"/><blockquote>
 <div><p>follows the actual demand more accurately.</p>
 </div></blockquote>
+</section>
+</section>
 <section id="feature-importances">
-<h3>Feature importances<a class="headerlink" href="#feature-importances" title="Link to this heading">#</a></h3>
+<h2>Feature importances<a class="headerlink" href="#feature-importances" title="Link to this heading">#</a></h2>
 <p>Using the <a class="reference internal" href="../reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> allows us to better understand how the date
 impacts the bike sharing demand. To this aim, we can use the function
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html#sklearn.inspection.permutation_importance" title="(in scikit-learn v1.6)"><code class="xref py py-func docutils literal notranslate"><span class="pre">permutation_importance()</span></code></a> to shuffle the features
@@ -1081,12 +1083,12 @@ the fact that they match rush hours in the day. Other features, such as the
 temperature, the month, and the humidity are more important than others.</p>
 </section>
 <section id="conclusion">
-<h3>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h3>
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
 <p>In this example, we saw how to use the <a class="reference internal" href="../reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> to create
 features from a datetime column.
 Also check out the <a class="reference internal" href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, which automatically recognizes
 and transforms datetime columns by default.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 4.016 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 4.096 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-03-datetime-encoder-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/03_datetime_encoder.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
@@ -1107,7 +1109,6 @@ and transforms datetime columns by default.</p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</section>
 </section>
 </section>
 
@@ -1158,18 +1159,19 @@ and transforms datetime columns by default.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-the-features">Encoding the features</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-liner-with-the-tablevectorizer">One-liner with the TableVectorizer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-engineering-for-linear-models">Feature engineering for linear models</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prediction-with-datetime-features">Prediction with datetime features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-problem-with-relevant-datetime-features">A problem with relevant datetime features</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-the-features">Encoding the features</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-liner-with-the-tablevectorizer">One-liner with the TableVectorizer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-engineering-for-linear-models">Feature engineering for linear models</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluating-the-model">Evaluating the model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-the-prediction">Plotting the prediction</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-importances">Feature importances</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prediction-with-datetime-features">Prediction with datetime features</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluating-the-model">Evaluating the model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-the-prediction">Plotting the prediction</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-importances">Feature importances</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
 </ul>
   </nav></div>
 
