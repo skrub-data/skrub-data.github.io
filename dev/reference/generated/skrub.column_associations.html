@@ -689,7 +689,7 @@
 <h1>column_associations<a class="headerlink" href="#column-associations" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.column_associations">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/52ba1d0/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/62025e0/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
 <dd><p>Get measures of statistical associations between all pairs of columns.</p>
 <p>Reported metrics include Cramer’s V statistic and Pearson’s Correlation
 Coefficient. More may be added in the future.</p>
@@ -702,13 +702,13 @@ The results are sorted from most associated to least associated.</p>
 <p>To compute the Cramer’s V statistic, all columns are discretized. Numeric
 columns are binned with 10 bins. For categorical columns, only the 10 most
 frequent categories are considered. In both cases, nulls are treated as a
-separate category, ie a separate row in the contingency table. Thus
+separate category, ie a separate row in the contingency table. Thus,
 associations between the values of 2 columns or between their missingness
 patterns may be captured.</p>
 <p>To compute the Pearson’s Correlation Coefficient, only numeric columns are
 considered. The correlation is computed using the Pearson method used in
-pandas or polars, depending on the dataframe. In both case, lines containing NaNs
-are dropped</p>
+pandas or polars, depending on the dataframe. In both cases, lines containing NaNs
+are dropped.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
