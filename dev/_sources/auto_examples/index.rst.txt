@@ -216,7 +216,7 @@ Skrub expressions
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Skrub provides an easy way to build complex, flexible machine-learning pipelines. There are several problems that are not easily addressed with the standard scikit-learn tools such as the Pipeline and ColumnTransformer and for which a skrub pipeline is a solution:">
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show a simple pipeline handling a dataset with 2 tables, which would be difficult to implement, validate, and deploy correctly without skrub.">
 
 .. only:: html
 
@@ -233,48 +233,14 @@ Skrub expressions
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Skrub provides special objects that represent intermediate results in a computation. They record the different operations we perform on them (such as applying operators or calling methods), which allows to later retrieve the whole computation graph as a machine-learning estimator that can be fitted and applied to unseen data.">
-
-.. only:: html
-
-  .. image:: /auto_examples/expressions/images/thumb/sphx_glr_11_expressions_explained_thumb.svg
-    :alt:
-
-  :ref:`sphx_glr_auto_examples_expressions_11_expressions_explained.py`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Skrub expressions</div>
-    </div>
-
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="We can use .skb.apply() to add scikit-learn transformers to the computation, but also to add a supervised learner like HistGradientBoostingClassifier or LogisticRegression.">
-
-.. only:: html
-
-  .. image:: /auto_examples/expressions/images/thumb/sphx_glr_12_scikit_learn_estimators_in_expressions_thumb.svg
-    :alt:
-
-  :ref:`sphx_glr_auto_examples_expressions_12_scikit_learn_estimators_in_expressions.py`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Supervised estimators and cross-validation</div>
-    </div>
-
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="Our machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not).">
 
 .. only:: html
 
-  .. image:: /auto_examples/expressions/images/thumb/sphx_glr_13_choices_thumb.svg
+  .. image:: /auto_examples/expressions/images/thumb/sphx_glr_11_choices_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_expressions_13_choices.py`
+  :ref:`sphx_glr_auto_examples_expressions_11_choices.py`
 
 .. raw:: html
 

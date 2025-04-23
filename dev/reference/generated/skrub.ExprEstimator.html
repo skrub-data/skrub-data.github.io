@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.ExprEstimator.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Gallery examples: Skrub expressions Supervised estimators and cross-validation" />
+<meta property="og:description" content="Gallery examples: Building complex tabular pipelines" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Gallery examples: Skrub expressions Supervised estimators and cross-validation" />
+<meta name="description" content="Gallery examples: Building complex tabular pipelines" />
 
     <title>ExprEstimator &#8212; skrub</title>
   
@@ -691,7 +691,7 @@
 <h1>ExprEstimator<a class="headerlink" href="#exprestimator" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.ExprEstimator">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">ExprEstimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/78eb8b8/skrub/_expressions/_estimator.py#L66"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ExprEstimator" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">ExprEstimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90f1f70/skrub/_expressions/_estimator.py#L66"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ExprEstimator" title="Link to this definition">#</a></dt>
 <dd><p>Estimator that evaluates a skrub expression.</p>
 <p>This class is not meant to be instantiated manually, <code class="docutils literal notranslate"><span class="pre">ExprEstimator</span></code>
 objects are created by calling <a class="reference internal" href="skrub.Expr.skb.get_estimator.html#skrub.Expr.skb.get_estimator" title="skrub.Expr.skb.get_estimator"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.get_estimator()</span></code></a> on an
@@ -727,7 +727,7 @@ expression.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ExprEstimator.find_fitted_estimator">
-<span class="sig-name descname"><span class="pre">find_fitted_estimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/78eb8b8/skrub/_expressions/_estimator.py#L138"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ExprEstimator.find_fitted_estimator" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">find_fitted_estimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90f1f70/skrub/_expressions/_estimator.py#L138"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ExprEstimator.find_fitted_estimator" title="Link to this definition">#</a></dt>
 <dd><p>Find the scikit-learn estimator that has been fitted in a <code class="docutils literal notranslate"><span class="pre">.skb.apply()</span></code> step.</p>
 <p>This can be useful for example to inspect the fitted attributes of the
 estimator. The <code class="docutils literal notranslate"><span class="pre">apply</span></code> step must have been given a name with
@@ -833,7 +833,7 @@ we pass <code class="docutils literal notranslate"><span class="pre">.skb.apply(
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ExprEstimator.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/78eb8b8/skrub/_expressions/_estimator.py#L125"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ExprEstimator.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90f1f70/skrub/_expressions/_estimator.py#L125"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ExprEstimator.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -854,7 +854,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ExprEstimator.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/78eb8b8/skrub/_expressions/_estimator.py#L132"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ExprEstimator.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90f1f70/skrub/_expressions/_estimator.py#L132"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ExprEstimator.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -878,7 +878,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ExprEstimator.sub_estimator">
-<span class="sig-name descname"><span class="pre">sub_estimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/78eb8b8/skrub/_expressions/_estimator.py#L258"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ExprEstimator.sub_estimator" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">sub_estimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/90f1f70/skrub/_expressions/_estimator.py#L258"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ExprEstimator.sub_estimator" title="Link to this definition">#</a></dt>
 <dd><p>Extract the part of the pipeline that leads up to the given step.</p>
 <p>This is similar to slicing a scikit-learn pipeline. It can be useful
 for example to drive the hyperparameter selection with a supervised
@@ -952,12 +952,9 @@ scikit-learn estimator that has been fitted inside of a single step.</p>
 
 <section id="gallery-examples">
 <h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
-<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Skrub provides special objects that represent intermediate results in a computation. They record the different operations we perform on them (such as applying operators or calling methods), which allows to later retrieve the whole computation graph as a machine-learning estimator that can be fitted and applied to unseen data."><img alt="" src="../../_images/sphx_glr_11_expressions_explained_thumb.svg" />
-<p><a class="reference internal" href="../../auto_examples/expressions/11_expressions_explained.html#sphx-glr-auto-examples-expressions-11-expressions-explained-py"><span class="std std-ref">Skrub expressions</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Skrub expressions</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="We can use .skb.apply() to add scikit-learn transformers to the computation, but also to add a supervised learner like HistGradientBoostingClassifier or LogisticRegression."><img alt="" src="../../_images/sphx_glr_12_scikit_learn_estimators_in_expressions_thumb.svg" />
-<p><a class="reference internal" href="../../auto_examples/expressions/12_scikit_learn_estimators_in_expressions.html#sphx-glr-auto-examples-expressions-12-scikit-learn-estimators-in-expressions-py"><span class="std std-ref">Supervised estimators and cross-validation</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Supervised estimators and cross-validation</div>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show a simple pipeline handling a dataset with 2 tables, which would be difficult to implement, validate, and deploy correctly without skrub."><img alt="" src="../../_images/sphx_glr_10_expressions_intro_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/expressions/10_expressions_intro.html#sphx-glr-auto-examples-expressions-10-expressions-intro-py"><span class="std std-ref">Building complex tabular pipelines</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Building complex tabular pipelines</div>
 </div></div></section>
 </section>
 

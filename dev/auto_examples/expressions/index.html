@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/auto_examples/expressions/index.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Building complex tabular pipelines Skrub expressions Supervised estimators and cross-validation Tuning pipelines" />
+<meta property="og:description" content="Building complex tabular pipelines Tuning pipelines" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Building complex tabular pipelines Skrub expressions Supervised estimators and cross-validation Tuning pipelines" />
+<meta name="description" content="Building complex tabular pipelines Tuning pipelines" />
 
     <title>Skrub expressions &#8212; skrub</title>
   
@@ -524,11 +524,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Skrub expressions</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="10_expressions_intro.html">Building complex tabular pipelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="11_expressions_explained.html">Skrub expressions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_scikit_learn_estimators_in_expressions.html">Supervised estimators and cross-validation</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="13_choices.html">Tuning pipelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_choices.html">Tuning pipelines</a></li>
 </ul>
 </details></li>
 </ul>
@@ -593,17 +589,11 @@
                   
   <section id="skrub-expressions">
 <span id="expressions-examples-ref"></span><span id="sphx-glr-auto-examples-expressions"></span><h1>Skrub expressions<a class="headerlink" href="#skrub-expressions" title="Link to this heading">#</a></h1>
-<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Skrub provides an easy way to build complex, flexible machine-learning pipelines. There are several problems that are not easily addressed with the standard scikit-learn tools such as the Pipeline and ColumnTransformer and for which a skrub pipeline is a solution:"><img alt="" src="../../_images/sphx_glr_10_expressions_intro_thumb.svg" />
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show a simple pipeline handling a dataset with 2 tables, which would be difficult to implement, validate, and deploy correctly without skrub."><img alt="" src="../../_images/sphx_glr_10_expressions_intro_thumb.svg" />
 <p><a class="reference internal" href="10_expressions_intro.html#sphx-glr-auto-examples-expressions-10-expressions-intro-py"><span class="std std-ref">Building complex tabular pipelines</span></a></p>
   <div class="sphx-glr-thumbnail-title">Building complex tabular pipelines</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Skrub provides special objects that represent intermediate results in a computation. They record the different operations we perform on them (such as applying operators or calling methods), which allows to later retrieve the whole computation graph as a machine-learning estimator that can be fitted and applied to unseen data."><img alt="" src="../../_images/sphx_glr_11_expressions_explained_thumb.svg" />
-<p><a class="reference internal" href="11_expressions_explained.html#sphx-glr-auto-examples-expressions-11-expressions-explained-py"><span class="std std-ref">Skrub expressions</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Skrub expressions</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="We can use .skb.apply() to add scikit-learn transformers to the computation, but also to add a supervised learner like HistGradientBoostingClassifier or LogisticRegression."><img alt="" src="../../_images/sphx_glr_12_scikit_learn_estimators_in_expressions_thumb.svg" />
-<p><a class="reference internal" href="12_scikit_learn_estimators_in_expressions.html#sphx-glr-auto-examples-expressions-12-scikit-learn-estimators-in-expressions-py"><span class="std std-ref">Supervised estimators and cross-validation</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Supervised estimators and cross-validation</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Our machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not)."><img alt="" src="../../_images/sphx_glr_13_choices_thumb.svg" />
-<p><a class="reference internal" href="13_choices.html#sphx-glr-auto-examples-expressions-13-choices-py"><span class="std std-ref">Tuning pipelines</span></a></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Our machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not)."><img alt="" src="../../_images/sphx_glr_11_choices_thumb.svg" />
+<p><a class="reference internal" href="11_choices.html#sphx-glr-auto-examples-expressions-11-choices-py"><span class="std std-ref">Tuning pipelines</span></a></p>
   <div class="sphx-glr-thumbnail-title">Tuning pipelines</div>
 </div></div><div class="toctree-wrapper compound">
 </div>
