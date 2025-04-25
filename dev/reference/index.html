@@ -598,6 +598,29 @@
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.ParamSearch.html">ParamSearch</a></li>
 </ul>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.all.html">all</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.any_date.html">any_date</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.boolean.html">boolean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.cardinality_below.html">cardinality_below</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.categorical.html">categorical</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.Filter.html">Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.filter.html">filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.filter_names.html">filter_names</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.float.html">float</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.glob.html">glob</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.has_nulls.html">has_nulls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.integer.html">integer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.inv.html">inv</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.make_selector.html">make_selector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.NameFilter.html">NameFilter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.numeric.html">numeric</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.regex.html">regex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.select.html">select</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.Selector.html">Selector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.selectors.string.html">string</a></li>
+</ul>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.TableReport.html">TableReport</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -959,6 +982,81 @@ For more control or in order to build pipelines for more datasets, use the skrub
 </table>
 </div>
 </section>
+<section id="selecting-columns-in-a-dataframe">
+<span id="selectors-ref"></span><h2>Selecting columns in a DataFrame<a class="headerlink" href="#selecting-columns-in-a-dataframe" title="Link to this heading">#</a></h2>
+<p>The srkub selectors provide a flexible way to specify the columns on which a
+transformation should be applied. They are meant to be used for the <code class="docutils literal notranslate"><span class="pre">cols</span></code>
+argument of <a class="reference internal" href="generated/skrub.Expr.skb.apply.html#skrub.Expr.skb.apply" title="skrub.Expr.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.apply()</span></code></a>, <a class="reference internal" href="generated/skrub.Expr.skb.select.html#skrub.Expr.skb.select" title="skrub.Expr.skb.select"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.select()</span></code></a>,
+<a class="reference internal" href="generated/skrub.Expr.skb.drop.html#skrub.Expr.skb.drop" title="skrub.Expr.skb.drop"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.drop()</span></code></a>, <a class="reference internal" href="generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectCols</span></code></a> or <a class="reference internal" href="generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropCols</span></code></a>.</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.all.html#skrub.selectors.all" title="skrub.selectors.all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.all</span></code></a></p></td>
+<td><p>Select all columns.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.any_date.html#skrub.selectors.any_date" title="skrub.selectors.any_date"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.any_date</span></code></a></p></td>
+<td><p>Select columns that have a Date or Datetime data type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.boolean.html#skrub.selectors.boolean" title="skrub.selectors.boolean"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.boolean</span></code></a></p></td>
+<td><p>Select columns that have an Boolean data type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.cardinality_below.html#skrub.selectors.cardinality_below" title="skrub.selectors.cardinality_below"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.cardinality_below</span></code></a></p></td>
+<td><p>Select columns whose cardinality (number of unique values) is (strictly) below <code class="docutils literal notranslate"><span class="pre">threshold</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.categorical.html#skrub.selectors.categorical" title="skrub.selectors.categorical"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.categorical</span></code></a></p></td>
+<td><p>Select columns that have a Categorical (or polars Enum) data type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.cols.html#skrub.selectors.cols" title="skrub.selectors.cols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.cols</span></code></a></p></td>
+<td><p>Select columns by name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.Filter.html#skrub.selectors.Filter" title="skrub.selectors.Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.Filter</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.filter.html#skrub.selectors.filter" title="skrub.selectors.filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.filter</span></code></a></p></td>
+<td><p>Select columns for which <code class="docutils literal notranslate"><span class="pre">predicate</span></code> returns True.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.filter_names.html#skrub.selectors.filter_names" title="skrub.selectors.filter_names"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.filter_names</span></code></a></p></td>
+<td><p>Select columns based on their name.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.float.html#skrub.selectors.float" title="skrub.selectors.float"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.float</span></code></a></p></td>
+<td><p>Select columns that have a floating-point data type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.glob.html#skrub.selectors.glob" title="skrub.selectors.glob"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.glob</span></code></a></p></td>
+<td><p>Select columns by name with Unix shell style 'glob' pattern.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.has_nulls.html#skrub.selectors.has_nulls" title="skrub.selectors.has_nulls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.has_nulls</span></code></a></p></td>
+<td><p>Select columns that contain at least one null value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.integer.html#skrub.selectors.integer" title="skrub.selectors.integer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.integer</span></code></a></p></td>
+<td><p>Select columns that have an integer data type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.inv.html#skrub.selectors.inv" title="skrub.selectors.inv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.inv</span></code></a></p></td>
+<td><p>Invert a selector.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.make_selector.html#skrub.selectors.make_selector" title="skrub.selectors.make_selector"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.make_selector</span></code></a></p></td>
+<td><p>Transform a selector, column name or list of column names into a selector.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.NameFilter.html#skrub.selectors.NameFilter" title="skrub.selectors.NameFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.NameFilter</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.numeric.html#skrub.selectors.numeric" title="skrub.selectors.numeric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.numeric</span></code></a></p></td>
+<td><p>Select columns that have a numeric data type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.regex.html#skrub.selectors.regex" title="skrub.selectors.regex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.regex</span></code></a></p></td>
+<td><p>Select columns by name with a regular expression.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.select.html#skrub.selectors.select" title="skrub.selectors.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.select</span></code></a></p></td>
+<td><p>Apply a selector to a dataframe and return the resulting dataframe.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.Selector.html#skrub.selectors.Selector" title="skrub.selectors.Selector"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.Selector</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.string.html#skrub.selectors.string" title="skrub.selectors.string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.string</span></code></a></p></td>
+<td><p>Select columns that have a String data type.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="generating-an-html-report">
 <span id="generating-a-report-ref"></span><h2>Generating an HTML report<a class="headerlink" href="#generating-an-html-report" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table">
@@ -1119,6 +1217,7 @@ For more control or in order to build pipelines for more datasets, use the skrub
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub-expressions">Skrub Expressions</a><ul class="nav section-nav flex-column">
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-columns-in-a-dataframe">Selecting columns in a DataFrame</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-an-html-report">Generating an HTML report</a><ul class="nav section-nav flex-column">
 </ul>
 </li>
