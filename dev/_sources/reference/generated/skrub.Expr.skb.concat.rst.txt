@@ -1,0 +1,6 @@
+﻿skrub.Expr.skb.concat
+=====================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: Expr.skb.concat
