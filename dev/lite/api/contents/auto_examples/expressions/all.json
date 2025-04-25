@@ -2,11 +2,11 @@
   "content": [
     {
       "content": null,
-      "created": "2025-04-25T10:17:58.152457Z",
+      "created": "2025-04-25T12:39:34.111493Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2025-04-25T10:17:55.691405Z",
+      "last_modified": "2025-04-25T12:39:31.550476Z",
       "mimetype": null,
       "name": "10_expressions_intro.ipynb",
       "path": "auto_examples/expressions/10_expressions_intro.ipynb",
@@ -16,11 +16,11 @@
     },
     {
       "content": null,
-      "created": "2025-04-25T10:17:58.152457Z",
+      "created": "2025-04-25T12:39:34.111493Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2025-04-25T10:17:55.692405Z",
+      "last_modified": "2025-04-25T12:39:31.551476Z",
       "mimetype": null,
       "name": "11_choices.ipynb",
       "path": "auto_examples/expressions/11_choices.ipynb",
@@ -29,11 +29,11 @@
       "writable": true
     }
   ],
-  "created": "2025-04-25T10:17:58.152457Z",
+  "created": "2025-04-25T12:39:34.111493Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2025-04-25T10:17:58.152457Z",
+  "last_modified": "2025-04-25T12:39:34.111493Z",
   "mimetype": null,
   "name": "expressions",
   "path": "auto_examples/expressions",
