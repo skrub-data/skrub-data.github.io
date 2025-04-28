@@ -579,6 +579,12 @@ through many discussions in defining the requirements and the public API.</p></l
 a transformer should be applied in a flexible way. The module was created in
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/895">#895</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a> and added to the public API
 in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1341">#1341</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p>The <a class="reference internal" href="reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a> transformer is now available. This transformer
+employs different heuristics to detect columns that are not likely to bring
+useful information for training a model.
+The current implementation includes detection of columns that contain only a
+single value (constant columns), only missing values, or all unique values (such
+as IDs). <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1313">#1313</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 </ul>
 </section>
 <section id="id1">
@@ -589,6 +595,9 @@ in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/
 exceeds the specified value. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1304">#1304</a> by <a class="reference external" href="https://github.com/victoris93">Victoria Shevchenko</a>.</p></li>
 <li><p>The <cite>packaging</cite> dependency was removed.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1307">#1307</a> by <a class="reference external" href="https://github.com/jovan-stojanovic">Jovan Stojanovic</a></p></li>
+<li><p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">DropIfTooManyNulls</span></code> transformer has been replaced by the
+<a class="reference internal" href="reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a> transformer and will be removed in a future release.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1313">#1313</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a></p></li>
 <li><p>The <code class="xref py py-func docutils literal notranslate"><span class="pre">concat_horizontal()</span></code> function was replaced with <code class="xref py py-func docutils literal notranslate"><span class="pre">concat()</span></code>. Horizontal or vertical concatenation
 is now controlled by the <cite>axis</cite> parameter. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1334">#1334</a> by <a class="reference external" href="https://github.com/pvprajwal">Parasa V Prajwal</a>.</p></li>
 </ul>
