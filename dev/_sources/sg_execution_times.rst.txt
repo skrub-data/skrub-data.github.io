@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**14:17.128** total execution time for 12 files **from all galleries**:
+**13:33.004** total execution time for 12 files **from all galleries**:
 
 .. container::
 
@@ -33,38 +33,38 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_expressions_10_expressions_intro.py` (``../examples/expressions/10_expressions_intro.py``)
-     - 04:38.909
+     - 04:29.388
      - 0.0
    * - :ref:`sphx_glr_auto_examples_02_text_with_string_encoders.py` (``../examples/02_text_with_string_encoders.py``)
-     - 02:56.079
+     - 02:49.264
      - 0.0
    * - :ref:`sphx_glr_auto_examples_08_join_aggregation.py` (``../examples/08_join_aggregation.py``)
-     - 02:16.558
+     - 01:37.615
      - 0.0
    * - :ref:`sphx_glr_auto_examples_06_ken_embeddings.py` (``../examples/06_ken_embeddings.py``)
-     - 01:18.690
+     - 01:27.925
      - 0.0
    * - :ref:`sphx_glr_auto_examples_01_encodings.py` (``../examples/01_encodings.py``)
-     - 01:16.153
+     - 01:13.886
      - 0.0
    * - :ref:`sphx_glr_auto_examples_expressions_11_choices.py` (``../examples/expressions/11_choices.py``)
-     - 00:40.065
+     - 00:42.750
      - 0.0
    * - :ref:`sphx_glr_auto_examples_07_multiple_key_join.py` (``../examples/07_multiple_key_join.py``)
-     - 00:27.236
+     - 00:32.941
      - 0.0
    * - :ref:`sphx_glr_auto_examples_09_interpolation_join.py` (``../examples/09_interpolation_join.py``)
-     - 00:17.878
+     - 00:14.420
      - 0.0
    * - :ref:`sphx_glr_auto_examples_04_fuzzy_joining.py` (``../examples/04_fuzzy_joining.py``)
-     - 00:12.025
+     - 00:12.029
      - 0.0
    * - :ref:`sphx_glr_auto_examples_00_getting_started.py` (``../examples/00_getting_started.py``)
-     - 00:07.698
+     - 00:06.920
      - 0.0
    * - :ref:`sphx_glr_auto_examples_03_datetime_encoder.py` (``../examples/03_datetime_encoder.py``)
-     - 00:04.505
+     - 00:04.597
      - 0.0
    * - :ref:`sphx_glr_auto_examples_05_deduplication.py` (``../examples/05_deduplication.py``)
-     - 00:01.332
+     - 00:01.269
      - 0.0
