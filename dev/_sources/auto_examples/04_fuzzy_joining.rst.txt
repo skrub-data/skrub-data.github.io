@@ -1693,7 +1693,7 @@ introduced into a grid search:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 13.034 seconds)
+   **Total running time of the script:** (0 minutes 11.238 seconds)
 
 
 .. _sphx_glr_download_auto_examples_04_fuzzy_joining.py:

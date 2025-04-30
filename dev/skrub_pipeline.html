@@ -646,32 +646,33 @@ learning estimator—such as “products” or “customers” tables or datafra
 complex expressions. The estimator is constructed implicitly as we apply these
 operations, rather than by specifying an explicit list of transformations.</p>
 <p>We start by declaring inputs:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>We then apply transformations, which we can finally evaluate, by passing a dictionary
 mapping input name to values:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-<span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">})</span>
-<span class="c1"># 16</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">})</span>
+<span class="go">16</span>
 </pre></div>
 </div>
 <p>As shown above, the special <code class="docutils literal notranslate"><span class="pre">.skb</span></code> attribute allows to interact with the expression
 object itself, and <code class="docutils literal notranslate"><span class="pre">.skb.eval()</span></code> evaluate an expression.</p>
 <p>Access to any other attribute is simply added as a new operation in the computation
 graph:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
-<span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="s2">&quot;hello, &quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="s2">&quot;world!&quot;</span><span class="p">})</span>
-<span class="c1"># Hello world!</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="s2">&quot;hello, &quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="s2">&quot;world!&quot;</span><span class="p">})</span>
+<span class="go">&#39;Hello, world!&#39;</span>
 </pre></div>
 </div>
 <p>Finally, we can get an estimator that can be fitted and applied to data.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">()</span>
-<span class="n">pipeline</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">})</span>
-<span class="c1"># 17</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">})</span>
+<span class="go">17</span>
 </pre></div>
 </div>
 </section>
@@ -682,11 +683,14 @@ the result of a pipeline. However, to make interactive development easier withou
 having to call <code class="docutils literal notranslate"><span class="pre">.skb.eval()</span></code> repeatedly, Skrub provides a way to preview the result
 of an expression. When creating a variable, if we pass a value along with its name,
 Skrub will use that value to compute and preview the result of the expression.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-<span class="n">c</span>  <span class="c1"># we don&#39;t need to call .skb.eval anymore!</span>
-<span class="c1"># 16</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span>  <span class="c1"># we don&#39;t need to call .skb.eval anymore!</span>
+<span class="go">&lt;BinOp: add&gt;</span>
+<span class="go">Result:</span>
+<span class="go">―――――――</span>
+<span class="go">16</span>
 </pre></div>
 </div>
 <p>Note that example values are immutable throughout the pipeline. This means that
@@ -696,50 +700,64 @@ the new value.</p>
 <section id="composing-expressions">
 <h2>Composing expressions<a class="headerlink" href="#composing-expressions" title="Link to this heading">#</a></h2>
 <p>Suppose we want to process dataframes that look like this:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-
-<span class="n">orders_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;cup&quot;</span><span class="p">,</span> <span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;fork&quot;</span><span class="p">],</span>
-        <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">],</span>
-        <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
-    <span class="p">}</span>
-<span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="p">{</span>
+<span class="gp">... </span>        <span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;cup&quot;</span><span class="p">,</span> <span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;fork&quot;</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="p">}</span>
+<span class="gp">... </span><span class="p">)</span>
 </pre></div>
 </div>
 <p>We can create a skrub variable to represent that input:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;orders&quot;</span><span class="p">,</span> <span class="n">orders_df</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;orders&quot;</span><span class="p">,</span> <span class="n">orders_df</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Because we know that a dataframe will be provided as input to the computation, we
 can manipulate <code class="docutils literal notranslate"><span class="pre">orders</span></code> as if it were a regular dataframe.</p>
 <p>We can access its attributes:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">orders</span><span class="o">.</span><span class="n">columns</span>
-<span class="c1"># Index([item, price, qty])</span>
-
-<span class="n">orders</span><span class="p">[</span><span class="s2">&quot;item&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-<span class="c1"># 1    cup</span>
-<span class="c1"># 2    pen</span>
-<span class="c1"># 3    fork</span>
-<span class="c1"># Name: item, dtype: object</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">columns</span>
+<span class="go">&lt;GetAttr &#39;columns&#39;&gt;</span>
+<span class="go">Result:</span>
+<span class="go">―――――――</span>
+<span class="go">Index([&#39;item&#39;, &#39;price&#39;, &#39;qty&#39;], dtype=&#39;object&#39;)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="p">[</span><span class="s2">&quot;item&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<span class="go">&lt;GetItem slice(1, None, None)&gt;</span>
+<span class="go">Result:</span>
+<span class="go">―――――――</span>
+<span class="go">1     cup</span>
+<span class="go">2     pen</span>
+<span class="go">3    fork</span>
+<span class="go">Name: item, dtype: object</span>
 </pre></div>
 </div>
 <p>We can apply operators:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">orders</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s2">&quot;qty&quot;</span><span class="p">]</span>
-<span class="c1"># 0    1.5</span>
-<span class="c1"># 1    NaN</span>
-<span class="c1"># 2    3.0</span>
-<span class="c1"># 3    8.8</span>
-<span class="c1"># dtype: float64</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s2">&quot;qty&quot;</span><span class="p">]</span>
+<span class="go">&lt;BinOp: mul&gt;</span>
+<span class="go">Result:</span>
+<span class="go">―――――――</span>
+<span class="go">0    1.5</span>
+<span class="go">1    NaN</span>
+<span class="go">2    3.0</span>
+<span class="go">3    8.8</span>
+<span class="go">dtype: float64</span>
 </pre></div>
 </div>
 <p>We can call methods:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">orders</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">total</span><span class="o">=</span><span class="n">orders</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s2">&quot;qty&quot;</span><span class="p">])</span>
-<span class="c1">#    item  price  qty  total</span>
-<span class="c1"># 0   pen    1.5    1    1.5</span>
-<span class="c1"># 1   cup    NaN    1    NaN</span>
-<span class="c1"># 2   pen    1.5    2    3.0</span>
-<span class="c1"># 3  fork    2.2    4    8.8</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">total</span><span class="o">=</span><span class="n">orders</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s2">&quot;qty&quot;</span><span class="p">])</span>
+<span class="go">&lt;CallMethod &#39;assign&#39;&gt;</span>
+<span class="go">Result:</span>
+<span class="go">―――――――</span>
+<span class="go">   item  price  qty  total</span>
+<span class="go">0   pen    1.5    1    1.5</span>
+<span class="go">1   cup    NaN    1    NaN</span>
+<span class="go">2   pen    1.5    2    3.0</span>
+<span class="go">3  fork    2.2    4    8.8</span>
 </pre></div>
 </div>
 <p>It’s important to note that the original <code class="docutils literal notranslate"><span class="pre">orders</span></code> pipeline is not modified by the
@@ -756,30 +774,30 @@ modifications are possible—Skrub does not allow in-place updates.</p>
 have a special attribute: <code class="docutils literal notranslate"><span class="pre">.skb</span></code>, which gives access to the methods and objects
 provided by Skrub. A particularly important one is
 <code class="docutils literal notranslate"><span class="pre">.skb.apply()</span></code>, which allows to scikit-learn estimators to the pipeline.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">TableVectorizer</span><span class="p">())</span>
-<span class="c1"># &lt;Apply TableVectorizer&gt;</span>
-<span class="c1"># Result:</span>
-<span class="c1"># ―――――――</span>
-<span class="c1">#    item_cup  item_fork  item_pen  price  qty</span>
-<span class="c1"># 0       0.0        0.0       1.0    1.5  1.0</span>
-<span class="c1"># 1       1.0        0.0       0.0    NaN  1.0</span>
-<span class="c1"># 2       0.0        0.0       1.0    1.5  2.0</span>
-<span class="c1"># 3       0.0        1.0       0.0    2.2  4.0</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">TableVectorizer</span><span class="p">())</span>
+<span class="go">&lt;Apply TableVectorizer&gt;</span>
+<span class="go">Result:</span>
+<span class="go">―――――――</span>
+<span class="go">   item_cup  item_fork  item_pen  price  qty</span>
+<span class="go">0       0.0        0.0       1.0    1.5  1.0</span>
+<span class="go">1       1.0        0.0       0.0    NaN  1.0</span>
+<span class="go">2       0.0        0.0       1.0    1.5  2.0</span>
+<span class="go">3       0.0        1.0       0.0    2.2  4.0</span>
 </pre></div>
 </div>
 <p>It is also possible to apply a transformer to a subset of the columns:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">vectorized_orders</span> <span class="o">=</span> <span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
-    <span class="n">skrub</span><span class="o">.</span><span class="n">StringEncoder</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="s2">&quot;item&quot;</span>
-<span class="p">)</span>
-<span class="n">vectorized_orders</span>
-<span class="c1"># &lt;Apply StringEncoder&gt;</span>
-<span class="c1"># Result:</span>
-<span class="c1"># ―――――――</span>
-<span class="c1">#          item_0        item_1        item_2  price  qty</span>
-<span class="c1"># 0  1.000000e+00  4.260130e-08 -2.691092e-09    1.5    1</span>
-<span class="c1"># 1 -1.703285e-07  9.999984e-01  1.792236e-03    NaN    1</span>
-<span class="c1"># 2  1.000000e+00  4.260130e-08 -2.691092e-09    1.5    2</span>
-<span class="c1"># 3  9.629613e-10 -1.792075e-03  9.999982e-01    2.2    4</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vectorized_orders</span> <span class="o">=</span> <span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">skrub</span><span class="o">.</span><span class="n">StringEncoder</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="s2">&quot;item&quot;</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vectorized_orders</span>
+<span class="go">&lt;Apply StringEncoder&gt;</span>
+<span class="go">Result:</span>
+<span class="go">―――――――</span>
+<span class="go">         item_0        item_1        item_2  price  qty</span>
+<span class="go">0  9.999999e-01  1.666000e-08  4.998001e-08    1.5    1</span>
+<span class="go">1 -1.332800e-07 -1.199520e-07  1.000000e+00    NaN    1</span>
+<span class="go">2  9.999999e-01  1.666000e-08  4.998001e-08    1.5    2</span>
+<span class="go">3  3.942477e-08  9.999999e-01  7.884953e-08    2.2    4</span>
 </pre></div>
 </div>
 <p>Again, the crucial point is that when we apply such operations, the returned value
@@ -788,11 +806,11 @@ interested in the output for the example values we provided—we’re building a
 learning estimator that can be fitted and applied to unseen data.</p>
 <p>We can retrieve the estimator, fit it on the data we initially provided, and
 then apply it to new data:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">vectorized_orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">new_orders</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;fork&quot;</span><span class="p">],</span> <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">2.2</span><span class="p">],</span> <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">]})</span>
-<span class="n">pipeline</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;orders&quot;</span><span class="p">:</span> <span class="n">new_orders</span><span class="p">})</span>
-<span class="c1">#          item_0    item_1    item_2  price  qty</span>
-<span class="c1"># 0  3.247730e-09 -0.126657  0.991947    2.2    5</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">vectorized_orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">new_orders</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;fork&quot;</span><span class="p">],</span> <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">2.2</span><span class="p">],</span> <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">]})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;orders&quot;</span><span class="p">:</span> <span class="n">new_orders</span><span class="p">})</span>
+<span class="go">         item_0  item_1        item_2  price  qty</span>
+<span class="go">0  5.984116e-09     1.0 -1.323546e-07    2.2    5</span>
 </pre></div>
 </div>
 </section>
@@ -804,10 +822,11 @@ and call <code class="docutils literal notranslate"><span class="pre">fit()</spa
 <p>This means we can’t use standard Python control flow statements—such as <code class="docutils literal notranslate"><span class="pre">if</span></code>,
 <code class="docutils literal notranslate"><span class="pre">for</span></code>, <code class="docutils literal notranslate"><span class="pre">with</span></code>, etc.—with expressions, because those constructs would execute
 immediately.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">orders</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
-    <span class="k">pass</span>
-<span class="c1"># TypeError: This object is an expression that will be evaluated later, when your</span>
-<span class="c1"># pipeline runs. So it is not possible to eagerly iterate over it now.</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">orders</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">pass</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="w">    </span><span class="o">...</span>
+<span class="gr">TypeError</span>: <span class="n">This object is an expression that will be evaluated later, when your pipeline runs. So it is not possible to eagerly iterate over it now.</span>
 </pre></div>
 </div>
 <p>We get an error because the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement tries to iterate immediately
@@ -816,8 +835,11 @@ columns: it is a Skrub expression that will produce a list of columns, later,
 when we run the computation.</p>
 <p>This remains true even if we have provided a value for <code class="docutils literal notranslate"><span class="pre">orders</span></code> and we can
 see a result for that value:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">orders</span><span class="o">.</span><span class="n">columns</span>
-<span class="c1"># Index([item, price, qty])</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">columns</span>
+<span class="go">&lt;GetAttr &#39;columns&#39;&gt;</span>
+<span class="go">Result:</span>
+<span class="go">―――――――</span>
+<span class="go">Index([&#39;item&#39;, &#39;price&#39;, &#39;qty&#39;], dtype=&#39;object&#39;)</span>
 </pre></div>
 </div>
 <p>So we must delay the execution of the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement until the computation
@@ -827,27 +849,28 @@ we need, and decorating it with <code class="docutils literal notranslate"><span
 of the function: when we call it, it doesn’t run immediately. Instead, it returns
 a Skrub expression that wraps the function call. The original function is only
 executed when the expression is evaluated.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">with_upper_columns</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
-    <span class="n">new_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">set_axis</span><span class="p">(</span><span class="n">new_columns</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">)</span>
-
-<span class="n">with_upper_columns</span><span class="p">(</span><span class="n">orders</span><span class="p">)</span>
-<span class="c1"># &lt;Call &#39;with_upper_columns&#39;&gt;</span>
-<span class="c1"># Result:</span>
-<span class="c1"># ―――――――</span>
-<span class="c1">#    ITEM  PRICE  QTY</span>
-<span class="c1"># 0   pen    1.5    1</span>
-<span class="c1"># 1   cup    NaN    1</span>
-<span class="c1"># 2   pen    1.5    2</span>
-<span class="c1"># 3  fork    2.2    4</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
+<span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">with_upper_columns</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">new_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">set_axis</span><span class="p">(</span><span class="n">new_columns</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">with_upper_columns</span><span class="p">(</span><span class="n">orders</span><span class="p">)</span>
+<span class="go">&lt;Call &#39;with_upper_columns&#39;&gt;</span>
+<span class="go">Result:</span>
+<span class="go">―――――――</span>
+<span class="go">   ITEM  PRICE  QTY</span>
+<span class="go">0   pen    1.5    1</span>
+<span class="go">1   cup    NaN    1</span>
+<span class="go">2   pen    1.5    2</span>
+<span class="go">3  fork    2.2    4</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">skrub.deferred</span></code> is useful not only for our own functions, but also when we
 need to call module-level functions from a library. For example, to delay the
 loading of a CSV file, we could write something like:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">csv_path</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;csv_path&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">deferred</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">)(</span><span class="n">csv_path</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">csv_path</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;csv_path&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">deferred</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">)(</span><span class="n">csv_path</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>For the same reason (we are building a computation graph, not
@@ -855,12 +878,12 @@ immediately computing a single result), any transformation that we have must
 not modify its input, but leave it unchanged and return a new value.</p>
 <p>Think of the transformers in a scikit-learn pipeline: each computes a new
 result without modifying its input.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">orders</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">orders</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s1">&#39;qty&#39;</span><span class="p">]</span>
-<span class="c1"># TypeError: Do not modify an expression in-place. Instead, use a function that</span>
-<span class="c1"># returns a new value.This is necessary to allow chaining several steps in a</span>
-<span class="c1"># sequence of transformations.</span>
-<span class="c1"># For example if df is a pandas DataFrame:</span>
-<span class="c1"># df = df.assign(new_col=...) instead of df[&#39;new_col&#39;] = ...</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">orders</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s1">&#39;qty&#39;</span><span class="p">]</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="w">    </span><span class="o">...</span>
+<span class="gr">TypeError</span>: <span class="n">Do not modify an expression in-place. Instead, use a function that returns a new value. This is necessary to allow chaining several steps in a sequence of transformations.</span>
+<span class="x">For example if df is a pandas DataFrame:</span>
+<span class="x">df = df.assign(new_col=...) instead of df[&#39;new_col&#39;] = ...</span>
 </pre></div>
 </div>
 <p>Finally, there are other situations where using <code class="docutils literal notranslate"><span class="pre">deferred</span></code> can be helpful:</p>
