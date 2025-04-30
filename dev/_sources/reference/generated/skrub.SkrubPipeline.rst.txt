@@ -9,6 +9,6 @@
    :special-members: __call__
    :exclude-members: get_metadata_routing, set_fit_request
 
-.. minigallery:: skrub.SkrubPipeline skrub.SkrubPipeline.__init__ skrub.SkrubPipeline.find_fitted_estimator skrub.SkrubPipeline.fit skrub.SkrubPipeline.get_metadata_routing skrub.SkrubPipeline.get_params skrub.SkrubPipeline.report skrub.SkrubPipeline.set_fit_request skrub.SkrubPipeline.set_params skrub.SkrubPipeline.sub_pipeline 
+.. minigallery:: skrub.SkrubPipeline skrub.SkrubPipeline.__init__ skrub.SkrubPipeline.find_fitted_estimator skrub.SkrubPipeline.fit skrub.SkrubPipeline.get_metadata_routing skrub.SkrubPipeline.get_params skrub.SkrubPipeline.report skrub.SkrubPipeline.set_fit_request skrub.SkrubPipeline.set_params skrub.SkrubPipeline.truncated_after 
    :add-heading: Gallery examples
    :heading-level: -
