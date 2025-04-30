@@ -74,7 +74,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="all" href="skrub.selectors.all.html" />
-    <link rel="prev" title="ExprEstimator" href="skrub.ExprEstimator.html" />
+    <link rel="prev" title="SkrubPipeline" href="skrub.SkrubPipeline.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.6.dev0" />
@@ -588,7 +588,7 @@
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.freeze_after_fit.html">skrub.Expr.skb.freeze_after_fit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.full_report.html">skrub.Expr.skb.full_report</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_data.html">skrub.Expr.skb.get_data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_estimator.html">skrub.Expr.skb.get_estimator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_pipeline.html">skrub.Expr.skb.get_pipeline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_grid_search.html">skrub.Expr.skb.get_grid_search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_randomized_search.html">skrub.Expr.skb.get_randomized_search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.if_else.html">skrub.Expr.skb.if_else</a></li>
@@ -608,7 +608,7 @@
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.applied_estimator.html">skrub.Expr.skb.applied_estimator</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.ExprEstimator.html">ExprEstimator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.SkrubPipeline.html">SkrubPipeline</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">ParamSearch</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -728,8 +728,8 @@
 <h1>ParamSearch<a class="headerlink" href="#paramsearch" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.ParamSearch">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">ParamSearch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/35f573c/skrub/_expressions/_estimator.py#L542"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch" title="Link to this definition">#</a></dt>
-<dd><p>Estimator that evaluates a skrub expression with hyperparameter tuning.</p>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">ParamSearch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6be8f72/skrub/_expressions/_estimator.py#L565"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch" title="Link to this definition">#</a></dt>
+<dd><p>Pipeline that evaluates a skrub expression with hyperparameter tuning.</p>
 <p>This class is not meant to be instantiated manually, <code class="docutils literal notranslate"><span class="pre">ParamSearch</span></code>
 objects are created by calling <a class="reference internal" href="skrub.Expr.skb.get_grid_search.html#skrub.Expr.skb.get_grid_search" title="skrub.Expr.skb.get_grid_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.get_grid_search()</span></code></a> or
 <a class="reference internal" href="skrub.Expr.skb.get_randomized_search.html#skrub.Expr.skb.get_randomized_search" title="skrub.Expr.skb.get_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.get_randomized_search()</span></code></a> on an expression.</p>
@@ -777,7 +777,7 @@ score durations.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ParamSearch.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/35f573c/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L231"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6be8f72/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L231"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -798,7 +798,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ParamSearch.plot_results">
-<span class="sig-name descname"><span class="pre">plot_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorscale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bluered'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/35f573c/skrub/_expressions/_estimator.py#L701"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch.plot_results" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">plot_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorscale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bluered'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6be8f72/skrub/_expressions/_estimator.py#L723"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch.plot_results" title="Link to this definition">#</a></dt>
 <dd><p>Create a parallel coordinate plot of the cross-validation results.</p>
 <p>Plotly must be installed to use this method.</p>
 <dl class="field-list">
@@ -830,7 +830,7 @@ use of the colorscale’s range.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ParamSearch.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/35f573c/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L255"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6be8f72/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L255"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -876,12 +876,12 @@ possible to update each component of a nested object.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.ExprEstimator.html"
+       href="skrub.SkrubPipeline.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">ExprEstimator</p>
+        <p class="prev-next-title">SkrubPipeline</p>
       </div>
     </a>
     <a class="right-next"

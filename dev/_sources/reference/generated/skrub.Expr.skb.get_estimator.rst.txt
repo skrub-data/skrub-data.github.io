@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.get_estimator
-============================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.get_estimator

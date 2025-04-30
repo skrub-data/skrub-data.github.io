@@ -588,7 +588,7 @@
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.freeze_after_fit.html">skrub.Expr.skb.freeze_after_fit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.full_report.html">skrub.Expr.skb.full_report</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.get_data.html">skrub.Expr.skb.get_data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.get_estimator.html">skrub.Expr.skb.get_estimator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.get_pipeline.html">skrub.Expr.skb.get_pipeline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.get_grid_search.html">skrub.Expr.skb.get_grid_search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.get_randomized_search.html">skrub.Expr.skb.get_randomized_search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.if_else.html">skrub.Expr.skb.if_else</a></li>
@@ -608,7 +608,7 @@
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.applied_estimator.html">skrub.Expr.skb.applied_estimator</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="generated/skrub.ExprEstimator.html">ExprEstimator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.SkrubPipeline.html">SkrubPipeline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.ParamSearch.html">ParamSearch</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -859,7 +859,7 @@ For more control or in order to build pipelines for more datasets, use the skrub
 <td><p>Construct a choice of integers from a numeric range.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.cross_validate.html#skrub.cross_validate" title="skrub.cross_validate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cross_validate</span></code></a></p></td>
-<td><p>Cross-validate an estimator built from an expression.</p></td>
+<td><p>Cross-validate a pipeline built from an expression.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deferred</span></code></a></p></td>
 <td><p>Wrap function calls in an expression.</p></td>
@@ -885,7 +885,7 @@ For more control or in order to build pipelines for more datasets, use the skrub
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.html#skrub.Expr" title="skrub.Expr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr</span></code></a></p></td>
-<td><p>Representation of a computation that can be used to build ML estimators.</p></td>
+<td><p>Representation of a computation that can be used to build ML pipelines.</p></td>
 </tr>
 </tbody>
 </table>
@@ -928,8 +928,8 @@ For more control or in order to build pipelines for more datasets, use the skrub
 <tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.get_data.html#skrub.Expr.skb.get_data" title="skrub.Expr.skb.get_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.get_data</span></code></a></p></td>
 <td><p>Collect the values of the variables contained in the expression.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.get_estimator.html#skrub.Expr.skb.get_estimator" title="skrub.Expr.skb.get_estimator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.get_estimator</span></code></a></p></td>
-<td><p>Get a scikit-learn-like estimator for this expression.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.get_pipeline</span></code></a></p></td>
+<td><p>Get a skrub pipeline for this expression.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.get_grid_search.html#skrub.Expr.skb.get_grid_search" title="skrub.Expr.skb.get_grid_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.get_grid_search</span></code></a></p></td>
 <td><p>Find the best parameters with grid search.</p></td>
@@ -986,11 +986,11 @@ For more control or in order to build pipelines for more datasets, use the skrub
 </div>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.ExprEstimator.html#skrub.ExprEstimator" title="skrub.ExprEstimator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExprEstimator</span></code></a></p></td>
-<td><p>Estimator that evaluates a skrub expression.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.SkrubPipeline.html#skrub.SkrubPipeline" title="skrub.SkrubPipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SkrubPipeline</span></code></a></p></td>
+<td><p>Pipeline that evaluates a skrub expression.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.ParamSearch.html#skrub.ParamSearch" title="skrub.ParamSearch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParamSearch</span></code></a></p></td>
-<td><p>Estimator that evaluates a skrub expression with hyperparameter tuning.</p></td>
+<td><p>Pipeline that evaluates a skrub expression with hyperparameter tuning.</p></td>
 </tr>
 </tbody>
 </table>

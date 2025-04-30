@@ -28,7 +28,6 @@ instead of:
 Skrub then inspects
 our pipeline to discover all the places where we used objects like
 ``skrub.choose_from()`` and builds a grid of hyperparameters for us.
-
 """
 
 # %%
@@ -117,7 +116,7 @@ pred = X.skb.apply(encoder).skb.apply(classifier, y=y)
 # We can then obtain an estimator that performs the hyperparameter search with
 # ``.skb.get_grid_search()`` or ``.skb.get_randomized_search()``. They accept
 # the same arguments as their scikit-learn counterparts (e.g. ``scoring`` and
-# ``n_jobs``). Also, like ``.skb.get_estimator()``, they accept a ``fitted``
+# ``n_jobs``). Also, like ``.skb.get_pipeline()``, they accept a ``fitted``
 # argument and if it is ``True`` the search is fitted on the data we provided
 # when initializing our pipeline's variables.
 

@@ -669,8 +669,8 @@ graph:</p>
 </pre></div>
 </div>
 <p>Finally, we can get an estimator that can be fitted and applied to data.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">estimator</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_estimator</span><span class="p">()</span>
-<span class="n">estimator</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">})</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">()</span>
+<span class="n">pipeline</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">})</span>
 <span class="c1"># 17</span>
 </pre></div>
 </div>
@@ -788,9 +788,9 @@ interested in the output for the example values we provided—we’re building a
 learning estimator that can be fitted and applied to unseen data.</p>
 <p>We can retrieve the estimator, fit it on the data we initially provided, and
 then apply it to new data:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">estimator</span> <span class="o">=</span> <span class="n">vectorized_orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_estimator</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">vectorized_orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">new_orders</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;fork&quot;</span><span class="p">],</span> <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">2.2</span><span class="p">],</span> <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">]})</span>
-<span class="n">estimator</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;orders&quot;</span><span class="p">:</span> <span class="n">new_orders</span><span class="p">})</span>
+<span class="n">pipeline</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;orders&quot;</span><span class="p">:</span> <span class="n">new_orders</span><span class="p">})</span>
 <span class="c1">#          item_0    item_1    item_2  price  qty</span>
 <span class="c1"># 0  3.247730e-09 -0.126657  0.991947    2.2    5</span>
 </pre></div>
