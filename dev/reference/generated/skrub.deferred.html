@@ -728,8 +728,8 @@
 <h1>deferred<a class="headerlink" href="#deferred" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.deferred">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deferred</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9e6bcf3/skrub/_expressions/_expressions.py#L1204"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deferred" title="Link to this definition">#</a></dt>
-<dd><p>Wrap function calls in an expression.</p>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deferred</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3262b0d/skrub/_expressions/_expressions.py#L1241"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deferred" title="Link to this definition">#</a></dt>
+<dd><p>Wrap function calls in an expression <a class="reference internal" href="skrub.Expr.html#skrub.Expr" title="skrub.Expr"><code class="xref py py-class docutils literal notranslate"><span class="pre">Expr</span></code></a>.</p>
 <p>When this decorator is applied, the resulting function returns expressions.
 The returned expression wraps the call to the original function, and the
 call is actually executed when the expression is evaluated.</p>
@@ -753,6 +753,15 @@ function.</p>
 </dl>
 </dd>
 </dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.as_expr.html#skrub.as_expr" title="skrub.as_expr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">as_expr</span></code></a></dt><dd><p>Create an expression that evaluates to the given value.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.Expr.html#skrub.Expr" title="skrub.Expr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr</span></code></a></dt><dd><p>Representation of a computation that can be used to build ML estimators.</p>
+</dd>
+</dl>
+</div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>

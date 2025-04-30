@@ -726,7 +726,7 @@
 <h1>cross_validate<a class="headerlink" href="#cross-validate" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.cross_validate">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">cross_validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pipeline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9e6bcf3/skrub/_expressions/_estimator.py#L468"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.cross_validate" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">cross_validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pipeline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3262b0d/skrub/_expressions/_estimator.py#L476"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.cross_validate" title="Link to this definition">#</a></dt>
 <dd><p>Cross-validate a pipeline built from an expression.</p>
 <p>This runs cross-validation from a pipeline that was built from a skrub
 expression with <code class="docutils literal notranslate"><span class="pre">.skb.get_pipeline()</span></code>, <code class="docutils literal notranslate"><span class="pre">.skb.get_grid_search()</span></code> or
@@ -741,7 +741,7 @@ search.</p>
 <dt><strong>environment</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Bindings for variables contained in the expression.</p>
 </dd>
 <dt><strong>kwargs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>All other named arguments are forwarded to
-<code class="docutils literal notranslate"><span class="pre">sklearn.model_selection.cross_validate</span></code>, except that scikit-learn’s
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="(in scikit-learn v1.6)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.cross_validate()</span></code></a>, except that scikit-learn’s
 <code class="docutils literal notranslate"><span class="pre">return_estimator</span></code> parameter is named <code class="docutils literal notranslate"><span class="pre">return_pipeline</span></code> here.</p>
 </dd>
 </dl>
@@ -753,6 +753,19 @@ search.</p>
 </dl>
 </dd>
 </dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="(in scikit-learn v1.6)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.cross_validate()</span></code></a></dt><dd><p>Evaluate metric(s) by cross-validation and also record fit/score times.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.Expr.skb.get_pipeline()</span></code></a></dt><dd><p>Get a skrub pipeline for this expression.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.Expr.skb.get_grid_search.html#skrub.Expr.skb.get_grid_search" title="skrub.Expr.skb.get_grid_search"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.Expr.skb.get_grid_search()</span></code></a></dt><dd><p>Find the best parameters with grid search.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.Expr.skb.get_randomized_search.html#skrub.Expr.skb.get_randomized_search" title="skrub.Expr.skb.get_randomized_search"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.Expr.skb.get_randomized_search()</span></code></a></dt><dd><p>Find the best parameters with grid search.</p>
+</dd>
+</dl>
+</div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_classification</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>

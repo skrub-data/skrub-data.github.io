@@ -726,13 +726,13 @@
 <h1>skrub.Expr.skb.if_else<a class="headerlink" href="#skrub-expr-skb-if-else" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.if_else">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">if_else</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value_if_true</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_if_false</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9e6bcf3/skrub/_expressions/_skrub_namespace.py#L351"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.if_else" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">if_else</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value_if_true</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_if_false</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3262b0d/skrub/_expressions/_skrub_namespace.py#L356"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.if_else" title="Link to this definition">#</a></dt>
 <dd><p>Create a conditional expression.</p>
 <p>If <code class="docutils literal notranslate"><span class="pre">self</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>, the result will be
 <code class="docutils literal notranslate"><span class="pre">value_if_true</span></code>, otherwise <code class="docutils literal notranslate"><span class="pre">value_if_false</span></code>.</p>
 <p>The branch which is not selected is not evaluated, which is the main
 advantage compared to wrapping the conditional statement in a
-<cite>&#64;skrub.deferred</cite> function.</p>
+<code class="docutils literal notranslate"><span class="pre">&#64;skrub.deferred</span></code> function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -748,6 +748,13 @@ advantage compared to wrapping the conditional statement in a
 </dl>
 </dd>
 </dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.Expr.skb.match.html#skrub.Expr.skb.match" title="skrub.Expr.skb.match"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.Expr.skb.match</span></code></a></dt><dd><p>Select based on the value of an expression.</p>
+</dd>
+</dl>
+</div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>

@@ -728,7 +728,7 @@
 <h1>y<a class="headerlink" href="#y" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.y">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">y</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NULL</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9e6bcf3/skrub/_expressions/_expressions.py#L827"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.y" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">y</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NULL</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3262b0d/skrub/_expressions/_expressions.py#L846"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.y" title="Link to this definition">#</a></dt>
 <dd><p>Create a skrub variable and mark it as being <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
 <p>This is just a convenient shortcut for:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
@@ -753,6 +753,17 @@ documentation for <code class="docutils literal notranslate"><span class="pre">s
 </dl>
 </dd>
 </dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.X.html#skrub.X" title="skrub.X"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.X</span></code></a></dt><dd><p>Create a skrub variable and mark it as being <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.var.html#skrub.var" title="skrub.var"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.var</span></code></a></dt><dd><p>Create a skrub variable.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.Expr.skb.mark_as_y.html#skrub.Expr.skb.mark_as_y" title="skrub.Expr.skb.mark_as_y"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.Expr.skb.mark_as_y</span></code></a></dt><dd><p>Mark this expression as being the <code class="docutils literal notranslate"><span class="pre">y</span></code> table.</p>
+</dd>
+</dl>
+</div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">col</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">toy_orders</span><span class="p">()</span><span class="o">.</span><span class="n">delayed</span>
