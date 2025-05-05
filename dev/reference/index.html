@@ -577,6 +577,7 @@
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.apply.html">skrub.Expr.skb.apply</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.apply_func.html">skrub.Expr.skb.apply_func</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.clone.html">skrub.Expr.skb.clone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.concat.html">skrub.Expr.skb.concat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generated/skrub.Expr.skb.cross_validate.html">skrub.Expr.skb.cross_validate</a></li>
@@ -895,70 +896,73 @@ For more control or in order to build pipelines for more datasets, use the skrub
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.apply.html#skrub.Expr.skb.apply" title="skrub.Expr.skb.apply"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.apply</span></code></a></p></td>
 <td><p>Apply a scikit-learn estimator to a dataframe or numpy array.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.clone.html#skrub.Expr.skb.clone" title="skrub.Expr.skb.clone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.clone</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.apply_func.html#skrub.Expr.skb.apply_func" title="skrub.Expr.skb.apply_func"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.apply_func</span></code></a></p></td>
+<td><p>Apply the given function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.clone.html#skrub.Expr.skb.clone" title="skrub.Expr.skb.clone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.clone</span></code></a></p></td>
 <td><p>Get an independent clone of the expression.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.concat.html#skrub.Expr.skb.concat" title="skrub.Expr.skb.concat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.concat</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.concat.html#skrub.Expr.skb.concat" title="skrub.Expr.skb.concat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.concat</span></code></a></p></td>
 <td><p>Concatenate dataframes vertically or horizontally.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.cross_validate.html#skrub.Expr.skb.cross_validate" title="skrub.Expr.skb.cross_validate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.cross_validate</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.cross_validate.html#skrub.Expr.skb.cross_validate" title="skrub.Expr.skb.cross_validate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.cross_validate</span></code></a></p></td>
 <td><p>Cross-validate the expression.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.describe_param_grid.html#skrub.Expr.skb.describe_param_grid" title="skrub.Expr.skb.describe_param_grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.describe_param_grid</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.describe_param_grid.html#skrub.Expr.skb.describe_param_grid" title="skrub.Expr.skb.describe_param_grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.describe_param_grid</span></code></a></p></td>
 <td><p>Describe the hyper-parameters extracted from choices in the expression.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.describe_steps.html#skrub.Expr.skb.describe_steps" title="skrub.Expr.skb.describe_steps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.describe_steps</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.describe_steps.html#skrub.Expr.skb.describe_steps" title="skrub.Expr.skb.describe_steps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.describe_steps</span></code></a></p></td>
 <td><p>Get a text representation of the computation graph.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.draw_graph.html#skrub.Expr.skb.draw_graph" title="skrub.Expr.skb.draw_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.draw_graph</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.draw_graph.html#skrub.Expr.skb.draw_graph" title="skrub.Expr.skb.draw_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.draw_graph</span></code></a></p></td>
 <td><p>Get an SVG string representing the computation graph.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.drop.html#skrub.Expr.skb.drop" title="skrub.Expr.skb.drop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.drop</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.drop.html#skrub.Expr.skb.drop" title="skrub.Expr.skb.drop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.drop</span></code></a></p></td>
 <td><p>Drop some columns.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.eval.html#skrub.Expr.skb.eval" title="skrub.Expr.skb.eval"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.eval</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.eval.html#skrub.Expr.skb.eval" title="skrub.Expr.skb.eval"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.eval</span></code></a></p></td>
 <td><p>Evaluate the expression.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.freeze_after_fit.html#skrub.Expr.skb.freeze_after_fit" title="skrub.Expr.skb.freeze_after_fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.freeze_after_fit</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.freeze_after_fit.html#skrub.Expr.skb.freeze_after_fit" title="skrub.Expr.skb.freeze_after_fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.freeze_after_fit</span></code></a></p></td>
 <td><p>Freeze the result during pipeline fitting.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.full_report.html#skrub.Expr.skb.full_report" title="skrub.Expr.skb.full_report"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.full_report</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.full_report.html#skrub.Expr.skb.full_report" title="skrub.Expr.skb.full_report"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.full_report</span></code></a></p></td>
 <td><p>Generate a full report of the expression's evaluation.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.get_data.html#skrub.Expr.skb.get_data" title="skrub.Expr.skb.get_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.get_data</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.get_data.html#skrub.Expr.skb.get_data" title="skrub.Expr.skb.get_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.get_data</span></code></a></p></td>
 <td><p>Collect the values of the variables contained in the expression.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.get_pipeline</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.get_pipeline</span></code></a></p></td>
 <td><p>Get a skrub pipeline for this expression.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.get_grid_search.html#skrub.Expr.skb.get_grid_search" title="skrub.Expr.skb.get_grid_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.get_grid_search</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.get_grid_search.html#skrub.Expr.skb.get_grid_search" title="skrub.Expr.skb.get_grid_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.get_grid_search</span></code></a></p></td>
 <td><p>Find the best parameters with grid search.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.get_randomized_search.html#skrub.Expr.skb.get_randomized_search" title="skrub.Expr.skb.get_randomized_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.get_randomized_search</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.get_randomized_search.html#skrub.Expr.skb.get_randomized_search" title="skrub.Expr.skb.get_randomized_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.get_randomized_search</span></code></a></p></td>
 <td><p>Find the best parameters with randomized search.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.if_else.html#skrub.Expr.skb.if_else" title="skrub.Expr.skb.if_else"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.if_else</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.if_else.html#skrub.Expr.skb.if_else" title="skrub.Expr.skb.if_else"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.if_else</span></code></a></p></td>
 <td><p>Create a conditional expression.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.mark_as_X.html#skrub.Expr.skb.mark_as_X" title="skrub.Expr.skb.mark_as_X"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.mark_as_X</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.mark_as_X.html#skrub.Expr.skb.mark_as_X" title="skrub.Expr.skb.mark_as_X"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.mark_as_X</span></code></a></p></td>
 <td><p>Mark this expression as being the <code class="docutils literal notranslate"><span class="pre">X</span></code> table.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.mark_as_y.html#skrub.Expr.skb.mark_as_y" title="skrub.Expr.skb.mark_as_y"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.mark_as_y</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.mark_as_y.html#skrub.Expr.skb.mark_as_y" title="skrub.Expr.skb.mark_as_y"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.mark_as_y</span></code></a></p></td>
 <td><p>Mark this expression as being the <code class="docutils literal notranslate"><span class="pre">X</span></code> table.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.match.html#skrub.Expr.skb.match" title="skrub.Expr.skb.match"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.match</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.match.html#skrub.Expr.skb.match" title="skrub.Expr.skb.match"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.match</span></code></a></p></td>
 <td><p>Select based on the value of an expression.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.select.html#skrub.Expr.skb.select" title="skrub.Expr.skb.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.select</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.select.html#skrub.Expr.skb.select" title="skrub.Expr.skb.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.select</span></code></a></p></td>
 <td><p>Select a subset of columns.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.set_description.html#skrub.Expr.skb.set_description" title="skrub.Expr.skb.set_description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.set_description</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.set_description.html#skrub.Expr.skb.set_description" title="skrub.Expr.skb.set_description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.set_description</span></code></a></p></td>
 <td><p>Give a description to this expression.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.set_name.html#skrub.Expr.skb.set_name" title="skrub.Expr.skb.set_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.set_name</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.set_name.html#skrub.Expr.skb.set_name" title="skrub.Expr.skb.set_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.set_name</span></code></a></p></td>
 <td><p>Give a name to this expression.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.train_test_split.html#skrub.Expr.skb.train_test_split" title="skrub.Expr.skb.train_test_split"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.train_test_split</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Expr.skb.train_test_split.html#skrub.Expr.skb.train_test_split" title="skrub.Expr.skb.train_test_split"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.train_test_split</span></code></a></p></td>
 <td><p>Split an environment into a training an testing environments.</p></td>
 </tr>
 </tbody>
