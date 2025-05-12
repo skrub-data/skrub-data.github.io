@@ -727,11 +727,40 @@
 <h1>optional<a class="headerlink" href="#optional" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.optional">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">optional</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/eb963e5/skrub/_expressions/_choosing.py#L433"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.optional" title="Link to this definition">#</a></dt>
-<dd><p>Construct a choice between a value and <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
-<p>This is useful for optional steps in a pipeline. If we want to try our
-pipeline with or without dimensionality reduction, we can add a step such
-as:</p>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">optional</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/783bfcd/skrub/_expressions/_choosing.py#L454"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.optional" title="Link to this definition">#</a></dt>
+<dd><p>A choice between <code class="docutils literal notranslate"><span class="pre">value</span></code> and <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<p>When a pipeline is used <em>without hyperparameter tuning</em>, the outcome of
+this choice is <code class="docutils literal notranslate"><span class="pre">value</span></code>. Pass <code class="docutils literal notranslate"><span class="pre">default=None</span></code> to make <code class="docutils literal notranslate"><span class="pre">None</span></code> the
+default outcome.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>value</strong><span class="classifier">object</span></dt><dd><p>The outcome (when <code class="docutils literal notranslate"><span class="pre">None</span></code> is not chosen).</p>
+</dd>
+<dt><strong>name</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, optional (default=None)</span></dt><dd><p>If not <code class="docutils literal notranslate"><span class="pre">None</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code> is used when displaying search results and
+can also be used to override the choice’s value by setting it in the
+environment containing a pipeline’s inputs.</p>
+</dd>
+<dt><strong>default</strong><span class="classifier">NoneType, optional</span></dt><dd><p>An <code class="docutils literal notranslate"><span class="pre">optional</span></code> is a choice between the provided <code class="docutils literal notranslate"><span class="pre">value</span></code> and
+<code class="docutils literal notranslate"><span class="pre">None</span></code>. Normally, the default outcome when a pipeline is used
+<em>without hyperparameter tuning</em> is the provided <code class="docutils literal notranslate"><span class="pre">value</span></code>. Pass
+<code class="docutils literal notranslate"><span class="pre">default=None</span></code> to make the alternative outcome, <code class="docutils literal notranslate"><span class="pre">None</span></code>, the
+default. <code class="docutils literal notranslate"><span class="pre">None</span></code> is the only allowed value for this parameter.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>Choice</dt><dd><p>An object representing this choice, which can be used in a skrub
+pipeline.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p><code class="docutils literal notranslate"><span class="pre">optional</span></code> is useful for optional steps in a pipeline. If we want to try
+our pipeline with or without dimensionality reduction, we can add a step
+such as:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.decomposition</span><span class="w"> </span><span class="kn">import</span> <span class="n">PCA</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">optional</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">optional</span><span class="p">(</span><span class="n">PCA</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;use dim reduction&#39;</span><span class="p">)</span>
@@ -739,7 +768,22 @@ as:</p>
 </pre></div>
 </div>
 <p>The constructed parameter grid will include a version of the pipeline with
-the PCA and one without.</p>
+the PCA and one without:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">optional</span><span class="p">(</span><span class="n">PCA</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;dim reduction&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">as_expr</span><span class="p">()</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_param_grid</span><span class="p">())</span>
+<span class="go">- dim reduction: [PCA(), None]</span>
+</pre></div>
+</div>
+<p>When a pipeline containing an <code class="docutils literal notranslate"><span class="pre">optional</span></code> step is used <em>without
+hyperparameter tuning</em>, the default outcome is the provided <code class="docutils literal notranslate"><span class="pre">value</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">optional</span><span class="p">(</span><span class="n">PCA</span><span class="p">())</span><span class="o">.</span><span class="n">default</span><span class="p">())</span>
+<span class="go">PCA()</span>
+</pre></div>
+</div>
+<p>This can be overridden by passing <code class="docutils literal notranslate"><span class="pre">default=None</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">optional</span><span class="p">(</span><span class="n">PCA</span><span class="p">(),</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">default</span><span class="p">())</span>
+<span class="go">None</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>

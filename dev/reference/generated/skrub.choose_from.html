@@ -729,8 +729,43 @@
 <h1>choose_from<a class="headerlink" href="#choose-from" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.choose_from">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">choose_from</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outcomes</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/eb963e5/skrub/_expressions/_choosing.py#L351"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.choose_from" title="Link to this definition">#</a></dt>
-<dd><p>Construct a choice among several possible outcomes.</p>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">choose_from</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outcomes</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/783bfcd/skrub/_expressions/_choosing.py#L330"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.choose_from" title="Link to this definition">#</a></dt>
+<dd><p>A choice among several possible outcomes.</p>
+<p>When a pipeline is used <em>without hyperparameter tuning</em>, the outcome of
+this choice is the first value in the <code class="docutils literal notranslate"><span class="pre">outcomes</span></code> list or dict.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>outcomes</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>The possible outcomes to choose from. If a dict, the values are the
+outcomes and the keys give them human-readable names used to display
+hyperparameter search grids and results.</p>
+</dd>
+<dt><strong>name</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, optional (default=None)</span></dt><dd><p>If not <code class="docutils literal notranslate"><span class="pre">None</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code> is used when displaying search results and
+can also be used to override the choice’s value by setting it in the
+environment containing a pipeline’s inputs.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>Choice</dt><dd><p>An object representing this choice, which can be used in a skrub
+pipeline.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.choose_bool.html#skrub.choose_bool" title="skrub.choose_bool"><code class="xref py py-obj docutils literal notranslate"><span class="pre">choose_bool</span></code></a></dt><dd><p>Construct a choice between False and True.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.choose_float.html#skrub.choose_float" title="skrub.choose_float"><code class="xref py py-obj docutils literal notranslate"><span class="pre">choose_float</span></code></a></dt><dd><p>Construct a choice of floating-point numbers from a numeric range.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.choose_int.html#skrub.choose_int" title="skrub.choose_int"><code class="xref py py-obj docutils literal notranslate"><span class="pre">choose_int</span></code></a></dt><dd><p>Construct a choice of integers from a numeric range.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric">Examples</p>
 <p>Outcomes can be provided in a list:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">choose_from</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">choose_from</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;the number&#39;</span><span class="p">)</span>
@@ -742,16 +777,12 @@
 <span class="go">choose_from({&#39;one&#39;: 1, &#39;two&#39;: 2}, name=&#39;the number&#39;)</span>
 </pre></div>
 </div>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<dl class="simple">
-<dt><a class="reference internal" href="skrub.choose_bool.html#skrub.choose_bool" title="skrub.choose_bool"><code class="xref py py-obj docutils literal notranslate"><span class="pre">choose_bool</span></code></a></dt><dd><p>Construct a choice between False and True.</p>
-</dd>
-<dt><a class="reference internal" href="skrub.choose_float.html#skrub.choose_float" title="skrub.choose_float"><code class="xref py py-obj docutils literal notranslate"><span class="pre">choose_float</span></code></a></dt><dd><p>Construct a choice of floating-point numbers from a numeric range.</p>
-</dd>
-<dt><a class="reference internal" href="skrub.choose_int.html#skrub.choose_int" title="skrub.choose_int"><code class="xref py py-obj docutils literal notranslate"><span class="pre">choose_int</span></code></a></dt><dd><p>Construct a choice of integers from a numeric range.</p>
-</dd>
-</dl>
+<p>When a pipeline containing a <code class="docutils literal notranslate"><span class="pre">choose_from</span></code> is used <em>without
+hyperparameter tuning</em>, the default outcome for the choice is used.
+It is the first outcome in the provided list or dict:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">choose_from</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span><span class="o">.</span><span class="n">default</span><span class="p">()</span>
+<span class="go">1</span>
+</pre></div>
 </div>
 </dd></dl>
 

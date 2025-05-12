@@ -729,8 +729,30 @@
 <h1>choose_bool<a class="headerlink" href="#choose-bool" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.choose_bool">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">choose_bool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/eb963e5/skrub/_expressions/_choosing.py#L482"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.choose_bool" title="Link to this definition">#</a></dt>
-<dd><p>Construct a choice between False and True.</p>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">choose_bool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/783bfcd/skrub/_expressions/_choosing.py#L555"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.choose_bool" title="Link to this definition">#</a></dt>
+<dd><p>A choice between <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>When a pipeline is used <em>without hyperparameter tuning</em>, the outcome of
+this choice is <code class="docutils literal notranslate"><span class="pre">True</span></code>. Pass <code class="docutils literal notranslate"><span class="pre">default=False</span></code> to make <code class="docutils literal notranslate"><span class="pre">False</span></code> the
+default outcome.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>name</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, optional (default=None)</span></dt><dd><p>If not <code class="docutils literal notranslate"><span class="pre">None</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code> is used when displaying search results and
+can also be used to override the choice’s value by setting it in the
+environment containing a pipeline’s inputs.</p>
+</dd>
+<dt><strong>default</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, optional (default=True)</span></dt><dd><p>Choice’s default value when hyperparameter search is not used.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>BoolChoice</dt><dd><p>An object representing this choice, which can be used in a skrub
+pipeline.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
@@ -741,6 +763,19 @@
 <dt><a class="reference internal" href="skrub.choose_int.html#skrub.choose_int" title="skrub.choose_int"><code class="xref py py-obj docutils literal notranslate"><span class="pre">choose_int</span></code></a></dt><dd><p>Construct a choice of integers from a numeric range.</p>
 </dd>
 </dl>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_bool</span><span class="p">()</span><span class="o">.</span><span class="n">as_expr</span><span class="p">()</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_param_grid</span><span class="p">())</span>
+<span class="go">- choose_bool(): [True, False]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_bool</span><span class="p">()</span><span class="o">.</span><span class="n">default</span><span class="p">()</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>We can set the default to make it <code class="docutils literal notranslate"><span class="pre">False</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_bool</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">default</span><span class="p">()</span>
+<span class="go">False</span>
+</pre></div>
 </div>
 </dd></dl>
 
