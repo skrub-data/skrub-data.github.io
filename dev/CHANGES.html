@@ -603,6 +603,12 @@ as IDs). <a class="reference external" href="https://github.com/skrub-data/skrub
 </section>
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The default high cardinality encoder for both <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and
+<a class="reference internal" href="reference/generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a> has been changed from <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> to
+<a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1354">#1354</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p>
+</div>
 <ul class="simple">
 <li><p>A new parameter <code class="docutils literal notranslate"><span class="pre">max_association_columns</span></code> has been added to the
 <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> to skip association computation when the number of columns
