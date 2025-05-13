@@ -7,16 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Skrub Pipeline: Cross-validate or tune any data pipeline" />
+<meta property="og:title" content="Skrub Pipeline: fit, tune, and validate arbitrary data wrangling" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/skrub_pipeline.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Introduction: Skrub provides an easy way to build complex, flexible machine learning pipelines. There are several problems that are not easily addressed with standard scikit-learn tools such as Pip..." />
+<meta property="og:description" content="Introduction: Skrub provides an easy way to build complex, flexible machine learning pipelines. There are several needs that are not easily addressed with standard scikit-learn tools such as Pipeli..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Introduction: Skrub provides an easy way to build complex, flexible machine learning pipelines. There are several problems that are not easily addressed with standard scikit-learn tools such as Pip..." />
+<meta name="description" content="Introduction: Skrub provides an easy way to build complex, flexible machine learning pipelines. There are several needs that are not easily addressed with standard scikit-learn tools such as Pipeli..." />
 
-    <title>Skrub Pipeline: Cross-validate or tune any data pipeline &#8212; skrub</title>
+    <title>Skrub Pipeline: fit, tune, and validate arbitrary data wrangling &#8212; skrub</title>
   
   
   
@@ -73,8 +73,8 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="API" href="reference/index.html" />
-    <link rel="prev" title="Cleaning" href="cleaning.html" />
+    <link rel="next" title="Assembling: joining multiple tables" href="assembling.html" />
+    <link rel="prev" title="Encoding: creating feature matrices" href="encoding.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.6.dev0" />
@@ -526,9 +526,9 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="end_to_end_pipeline.html">End-to-end predictive models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Skrub Pipeline: fit, tune, and validate arbitrary data wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cleaning.html">Cleaning</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Skrub Pipeline: Cross-validate or tune any data pipeline</a></li>
 </ul>
 </div>
 </nav></div>
@@ -572,7 +572,7 @@
     
     <li class="breadcrumb-item"><a href="documentation.html" class="nav-link">User guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Skrub Pipeline: Cross-validate or tune any data pipeline</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Skrub Pipeline: fit, tune, and validate arbitrary data wrangling</span></li>
   </ul>
 </nav>
 </div>
@@ -589,30 +589,34 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="skrub-pipeline-cross-validate-or-tune-any-data-pipeline">
-<span id="skrub-pipeline"></span><h1>Skrub Pipeline: Cross-validate or tune any data pipeline<a class="headerlink" href="#skrub-pipeline-cross-validate-or-tune-any-data-pipeline" title="Link to this heading">#</a></h1>
+  <section id="skrub-pipeline-fit-tune-and-validate-arbitrary-data-wrangling">
+<span id="skrub-pipeline"></span><h1>Skrub Pipeline: fit, tune, and validate arbitrary data wrangling<a class="headerlink" href="#skrub-pipeline-fit-tune-and-validate-arbitrary-data-wrangling" title="Link to this heading">#</a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>Skrub provides an easy way to build complex, flexible machine learning pipelines.
-There are several problems that are not easily addressed with standard scikit-learn
+There are several needs that are not easily addressed with standard scikit-learn
 tools such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a> and
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ColumnTransformer</span></code></a>, and for which a Skrub pipeline offers a
 solution:</p>
 <ul class="simple">
-<li><p><strong>Multiple tables</strong>: When there are several tables of different shapes (for example,
-“Customers”, “Orders”, and “Products” tables), standard scikit-learn estimators fall
-short, as they expect a single design matrix <code class="docutils literal notranslate"><span class="pre">X</span></code> and a target array <code class="docutils literal notranslate"><span class="pre">y</span></code>, with one
-row per observation.</p></li>
-<li><p><strong>DataFrame wrangling</strong>: Performing typical DataFrame operations such as projections,
-joins, and aggregations—leveraging the powerful APIs of pandas or polars—is not
-easily expressed in standard pipelines.</p></li>
-<li><p><strong>Iterative development</strong>: Building a pipeline step by step while inspecting
-intermediate results allows for a short feedback loop and early discovery of errors.</p></li>
-<li><p><strong>Hyperparameter tuning</strong>: Choices of estimators, hyperparameters, and even the
-pipeline architecture can be guided by validation scores. Specifying a grid of
-hyperparameters separately from the model (as in
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GridSearchCV</span></code></a>) becomes difficult in complex
+<li><p><strong>Multiple tables</strong>: We often have several tables of different shapes (for
+example, “Customers”, “Orders”, and “Products” tables) that need to be
+processed and assembled into a design matrix <code class="docutils literal notranslate"><span class="pre">X</span></code>. The target <code class="docutils literal notranslate"><span class="pre">y</span></code> may also
+be the result of some data processing. Standard scikit-learn estimators do not
+support this, as they expect right away a single design matrix <code class="docutils literal notranslate"><span class="pre">X</span></code> and a
+target array <code class="docutils literal notranslate"><span class="pre">y</span></code>, with one row per observation.</p></li>
+<li><p><strong>DataFrame wrangling</strong>: Performing typical DataFrame operations such as
+projections, joins, and aggregations should be possible and allow leveraging
+the powerful and familiar APIs of <a class="reference external" href="https://pandas.pydata.org">Pandas</a> or
+<a class="reference external" href="https://docs.pola.rs/">Polars</a>.</p></li>
+<li><p><strong>Hyperparameter tuning</strong>: Choices of estimators, hyperparameters, and even
+the pipeline architecture can be guided by validation scores. Specifying
+ranges of possible values outside of the pipeline itself (as in
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GridSearchCV</span></code></a>) is difficult in complex
 pipelines.</p></li>
+<li><p><strong>Iterative development</strong>: Building a pipeline step by step while inspecting
+intermediate results allows for a short feedback loop and early discovery of
+errors.</p></li>
 </ul>
 <section id="what-is-the-difference-with-scikit-learn-pipeline">
 <h3>What is the difference with scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>?<a class="headerlink" href="#what-is-the-difference-with-scikit-learn-pipeline" title="Link to this heading">#</a></h3>
@@ -634,16 +638,15 @@ environments. Instead, they are a generalization of scikit-learn pipelines, whic
 </section>
 <section id="skrub-expressions">
 <span id="expressions"></span><h2>Skrub expressions<a class="headerlink" href="#skrub-expressions" title="Link to this heading">#</a></h2>
-<p>Skrub pipelines are built using special objects that represent intermediate results in
-a computation. These objects record the operations performed on them—such as applying
-operators or calling methods—allowing the entire computation graph to be retrieved
-later as a machine learning estimator that can be fitted and applied to unseen data.</p>
-<p>Because these Skrub objects encapsulate computations that can be evaluated to produce
-results, we call them <strong>expressions</strong>.</p>
+<p>Skrub pipelines are built using <strong>expressions</strong>: special objects that
+encapsulate computations that can be evaluated to produce a result. Expressions
+record the operations performed on them (such as applying operators or calling
+methods) allowing the entire computation graph to be retrieved later as a
+machine learning pipeline that can be fitted and applied to unseen data.</p>
 <p>The simplest expressions are <strong>variables</strong>, which represent inputs to our machine
-learning estimator—such as “products” or “customers” tables or dataframes.</p>
+learning pipeline—such as “products” or “customers” tables or dataframes.</p>
 <p>These variables can be combined using operators and function calls to build more
-complex expressions. The estimator is constructed implicitly as we apply these
+complex expressions. The pipeline is constructed implicitly as we apply these
 operations, rather than by specifying an explicit list of transformations.</p>
 <p>We start by declaring inputs:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
@@ -653,23 +656,28 @@ operations, rather than by specifying an explicit list of transformations.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>We then apply transformations, which we can finally evaluate, by passing a dictionary
-mapping input name to values:</p>
+<p>We then apply transformations, composing more complex expressions.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span>
+<span class="go">&lt;BinOp: add&gt;</span>
+</pre></div>
+</div>
+<p>Finally, we can evaluate an expression, by passing a dictionary mapping input
+(variable) names to values:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">})</span>
 <span class="go">16</span>
 </pre></div>
 </div>
 <p>As shown above, the special <code class="docutils literal notranslate"><span class="pre">.skb</span></code> attribute allows to interact with the expression
-object itself, and <code class="docutils literal notranslate"><span class="pre">.skb.eval()</span></code> evaluate an expression.</p>
-<p>Access to any other attribute is simply added as a new operation in the computation
-graph:</p>
+object itself, and <a class="reference internal" href="reference/generated/skrub.Expr.skb.eval.html#skrub.Expr.skb.eval" title="skrub.Expr.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.eval()</span></code></a> evaluates an expression.</p>
+<p>Access to any other attribute than <code class="docutils literal notranslate"><span class="pre">.skb</span></code> is simply added as a new operation
+in the computation graph:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="s2">&quot;hello, &quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="s2">&quot;world!&quot;</span><span class="p">})</span>
 <span class="go">&#39;Hello, world!&#39;</span>
 </pre></div>
 </div>
-<p>Finally, we can get an estimator that can be fitted and applied to data.</p>
+<p>Finally, we can get a pipeline that can be fitted and applied to data.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">})</span>
 <span class="go">17</span>
@@ -678,27 +686,37 @@ graph:</p>
 </section>
 <section id="previews">
 <h2>Previews<a class="headerlink" href="#previews" title="Link to this heading">#</a></h2>
-<p>As we saw above, we can call <code class="docutils literal notranslate"><span class="pre">.skb.eval()</span></code> with a dictionary of bindings to compute
-the result of a pipeline. However, to make interactive development easier without
-having to call <code class="docutils literal notranslate"><span class="pre">.skb.eval()</span></code> repeatedly, Skrub provides a way to preview the result
-of an expression. When creating a variable, if we pass a value along with its name,
-Skrub will use that value to compute and preview the result of the expression.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<p>As we saw above, we can call <a class="reference internal" href="reference/generated/skrub.Expr.skb.eval.html#skrub.Expr.skb.eval" title="skrub.Expr.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.eval()</span></code></a> with a dictionary of
+bindings to compute the result of a pipeline. However, to make interactive
+development easier without having to call <code class="docutils literal notranslate"><span class="pre">eval()</span></code> repeatedly, Skrub provides a
+way to preview the result of an expression. When creating a variable, if we pass
+a value along with its name, Skrub will use that value to compute and preview
+the result of the expression.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># we pass the value 10 in addition to the name</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span>  <span class="c1"># we don&#39;t need to call .skb.eval anymore!</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span>  <span class="c1"># now the display of c includes a preview of the result</span>
 <span class="go">&lt;BinOp: add&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
 <span class="go">16</span>
 </pre></div>
 </div>
-<p>Note that example values are immutable throughout the pipeline. This means that
-to change the value of a variable, we need to create the pipeline again with
-the new value.</p>
+<p>Note that seeing results for the values we provided does <em>not</em> change the fact
+that we are building a pipeline that we want to reuse, not just computing the
+result for a fixed input. The displayed result is only preview of the output on
+one example dataset.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+<span class="go">5</span>
+</pre></div>
+</div>
 </section>
 <section id="composing-expressions">
 <h2>Composing expressions<a class="headerlink" href="#composing-expressions" title="Link to this heading">#</a></h2>
+<p>We create complex expressions by applying operations to simpler ones (like
+variables). As the operations are replayed on the actual data when the pipeline
+runs, we can use (most of) the operations that are valid for the types we will
+pass to the pipeline.</p>
 <p>Suppose we want to process dataframes that look like this:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 </pre></div>
@@ -710,6 +728,12 @@ the new value.</p>
 <span class="gp">... </span>        <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">orders_df</span>
+<span class="go">   item  price  qty</span>
+<span class="go">0   pen    1.5    1</span>
+<span class="go">1   cup    NaN    1</span>
+<span class="go">2   pen    1.5    2</span>
+<span class="go">3  fork    2.2    4</span>
 </pre></div>
 </div>
 <p>We can create a skrub variable to represent that input:</p>
@@ -726,6 +750,7 @@ can manipulate <code class="docutils literal notranslate"><span class="pre">orde
 <span class="go">Index([&#39;item&#39;, &#39;price&#39;, &#39;qty&#39;], dtype=&#39;object&#39;)</span>
 </pre></div>
 </div>
+<p>Accessing items, indexing, slicing:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="p">[</span><span class="s2">&quot;item&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
 <span class="go">&lt;GetItem slice(1, None, None)&gt;</span>
 <span class="go">Result:</span>
@@ -760,20 +785,18 @@ can manipulate <code class="docutils literal notranslate"><span class="pre">orde
 <span class="go">3  fork    2.2    4    8.8</span>
 </pre></div>
 </div>
-<p>It’s important to note that the original <code class="docutils literal notranslate"><span class="pre">orders</span></code> pipeline is not modified by the
-operations in the previous cells. Instead, each cell creates a new expression that
-represents the result of the operation.</p>
-<p>This behavior is similar to how Pandas and Polars dataframes work: when we call
-a method on a dataframe, it returns a new dataframe representing the result, rather
-than modifying the original in place. However, unlike Pandas—where in-place
-modifications are possible—Skrub does not allow in-place updates.</p>
+<p>Note that the original <code class="docutils literal notranslate"><span class="pre">orders</span></code> pipeline is not modified by the operations
+above. Instead, each operation creates a new expression. Expressions cannot be
+modified in-place, all operations that we apply must produce a new value. We
+discuss this in more detail in a
+<a class="reference internal" href="#user-guide-deferred-evaluation-ref"><span class="std std-ref">later section</span></a>.</p>
 </section>
 <section id="applying-machine-learning-estimators">
 <h2>Applying machine-learning estimators<a class="headerlink" href="#applying-machine-learning-estimators" title="Link to this heading">#</a></h2>
 <p>As mentioned above, in addition to those usual operations, the expressions
 have a special attribute: <code class="docutils literal notranslate"><span class="pre">.skb</span></code>, which gives access to the methods and objects
 provided by Skrub. A particularly important one is
-<code class="docutils literal notranslate"><span class="pre">.skb.apply()</span></code>, which allows to scikit-learn estimators to the pipeline.</p>
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.apply.html#skrub.Expr.skb.apply" title="skrub.Expr.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply()</span></code></a>, which allows to add scikit-learn estimators to the pipeline.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">TableVectorizer</span><span class="p">())</span>
 <span class="go">&lt;Apply TableVectorizer&gt;</span>
 <span class="go">Result:</span>
@@ -800,12 +823,12 @@ provided by Skrub. A particularly important one is
 <span class="go">3  3.942477e-08  9.999999e-01  7.884953e-08    2.2    4</span>
 </pre></div>
 </div>
-<p>Again, the crucial point is that when we apply such operations, the returned value
-encapsulates the entire computation that produces the result we see. We’re not just
-interested in the output for the example values we provided—we’re building a machine
-learning estimator that can be fitted and applied to unseen data.</p>
-<p>We can retrieve the estimator, fit it on the data we initially provided, and
-then apply it to new data:</p>
+<p>Importantly, when we apply such operations, the returned value
+encapsulates the entire computation that produces the result we see. We are not only
+interested in the output for the example values we provided: we are building a machine
+learning pipeline that can be fitted and applied to unseen data.</p>
+<p>We can retrieve the pipeline with <a class="reference internal" href="reference/generated/skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.get_pipeline()</span></code></a>, fit it on the data we initially provided, and then
+apply it to new data:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">vectorized_orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">new_orders</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;fork&quot;</span><span class="p">],</span> <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">2.2</span><span class="p">],</span> <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">]})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;orders&quot;</span><span class="p">:</span> <span class="n">new_orders</span><span class="p">})</span>
@@ -815,12 +838,13 @@ then apply it to new data:</p>
 </div>
 </section>
 <section id="deferred-evaluation">
-<h2>Deferred evaluation<a class="headerlink" href="#deferred-evaluation" title="Link to this heading">#</a></h2>
-<p>Expressions represent computations that haven’t been executed yet and will only be
-triggered when we call something like <code class="docutils literal notranslate"><span class="pre">eval()</span></code>, or when we retrieve the estimator
-and call <code class="docutils literal notranslate"><span class="pre">fit()</span></code>.</p>
-<p>This means we can’t use standard Python control flow statements—such as <code class="docutils literal notranslate"><span class="pre">if</span></code>,
-<code class="docutils literal notranslate"><span class="pre">for</span></code>, <code class="docutils literal notranslate"><span class="pre">with</span></code>, etc.—with expressions, because those constructs would execute
+<span id="user-guide-deferred-evaluation-ref"></span><h2>Deferred evaluation<a class="headerlink" href="#deferred-evaluation" title="Link to this heading">#</a></h2>
+<p>An expression represents a computation that has not been executed yet, and will
+only be triggered when we call <a class="reference internal" href="reference/generated/skrub.Expr.skb.eval.html#skrub.Expr.skb.eval" title="skrub.Expr.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.eval()</span></code></a>, or when we
+create the pipeline with <a class="reference internal" href="reference/generated/skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.get_pipeline()</span></code></a> and
+call one of its methods such as <code class="docutils literal notranslate"><span class="pre">fit()</span></code>.</p>
+<p>This means we cannot use standard Python control flow statements such as <code class="docutils literal notranslate"><span class="pre">if</span></code>,
+<code class="docutils literal notranslate"><span class="pre">for</span></code>, <code class="docutils literal notranslate"><span class="pre">with</span></code>, etc. with expressions, because those constructs would execute
 immediately.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">orders</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="k">pass</span>
@@ -842,11 +866,16 @@ see a result for that value:</p>
 <span class="go">Index([&#39;item&#39;, &#39;price&#39;, &#39;qty&#39;], dtype=&#39;object&#39;)</span>
 </pre></div>
 </div>
-<p>So we must delay the execution of the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement until the computation
+<p>The “result” we see is an <em>example</em> result that the computation produces for the
+data we provided. But we want to fit our pipeline and apply it to different
+datasets, for which it will return a new object every time. So even if we see a
+preview of the output on the data we provided, <code class="docutils literal notranslate"><span class="pre">orders.columns</span></code> still
+represents a future computation that remains to be evaluated.</p>
+<p>Therefore, we must delay the execution of the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement until the computation
 actually runs and <code class="docutils literal notranslate"><span class="pre">orders.columns</span></code> has been evaluated.</p>
 <p>We can achieve this by defining a function that contains the control flow logic
-we need, and decorating it with <code class="docutils literal notranslate"><span class="pre">skrub.deferred</span></code>. This decorator defers the execution
-of the function: when we call it, it doesn’t run immediately. Instead, it returns
+we need, and decorating it with <a class="reference internal" href="reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a>. This decorator defers the execution
+of the function: when we call it, it does not run immediately. Instead, it returns
 a Skrub expression that wraps the function call. The original function is only
 executed when the expression is evaluated.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
@@ -866,17 +895,39 @@ executed when the expression is evaluated.</p>
 <span class="go">3  fork    2.2    4</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">skrub.deferred</span></code> is useful not only for our own functions, but also when we
+<p>When the computation runs, <code class="docutils literal notranslate"><span class="pre">orders</span></code> will be evaluated first and the result (an
+actual dataframe) will be passed as the <code class="docutils literal notranslate"><span class="pre">df</span></code> argument to our function.</p>
+<p>When the first argument to our function is a skrub expression, rather than
+applying <code class="docutils literal notranslate"><span class="pre">deferred</span></code> and calling the function as shown above we can use
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.apply_func.html#skrub.Expr.skb.apply_func" title="skrub.Expr.skb.apply_func"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply_func()</span></code></a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">with_upper_columns</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">new_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">set_axis</span><span class="p">(</span><span class="n">new_columns</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><span class="n">with_upper_columns</span><span class="p">)</span>
+<span class="go">&lt;Call &#39;with_upper_columns&#39;&gt;</span>
+<span class="go">Result:</span>
+<span class="go">―――――――</span>
+<span class="go">   ITEM  PRICE  QTY</span>
+<span class="go">0   pen    1.5    1</span>
+<span class="go">1   cup    NaN    1</span>
+<span class="go">2   pen    1.5    2</span>
+<span class="go">3  fork    2.2    4</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> is useful not only for our own functions, but also when we
 need to call module-level functions from a library. For example, to delay the
 loading of a CSV file, we could write something like:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">csv_path</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;csv_path&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">deferred</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">)(</span><span class="n">csv_path</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>For the same reason (we are building a computation graph, not
-immediately computing a single result), any transformation that we have must
-not modify its input, but leave it unchanged and return a new value.</p>
-<p>Think of the transformers in a scikit-learn pipeline: each computes a new
+<p>Another consequence of the fact that expressions are evaluated lazily (we are
+building a pipeline, not immediately computing a single result), any
+transformation that we apply must not modify its input, but leave it unchanged
+and return a new value.</p>
+<p>Consider the transformers in a scikit-learn pipeline: each computes a new
 result without modifying its input.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">orders</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s1">&#39;qty&#39;</span><span class="p">]</span>
 <span class="gt">Traceback (most recent call last):</span>
@@ -886,13 +937,18 @@ result without modifying its input.</p>
 <span class="x">df = df.assign(new_col=...) instead of df[&#39;new_col&#39;] = ...</span>
 </pre></div>
 </div>
-<p>Finally, there are other situations where using <code class="docutils literal notranslate"><span class="pre">deferred</span></code> can be helpful:</p>
+<p>Note the suggestion in the error message: using <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.assign.html#pandas.DataFrame.assign" title="(in pandas v2.2.3)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pandas.DataFrame.assign()</span></code></a>.
+When we do need assignments or in-place transformations, we can put them in a
+<a class="reference internal" href="reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> function. But we should make a (shallow) copy of the inputs and
+return a new value.</p>
+<p>Finally, there are other situations where using <a class="reference internal" href="reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> can be helpful:</p>
 <ul class="simple">
 <li><p>When we have many nodes in our graph and want to collapse a sequence of steps into
 a single function call that appears as a single node.</p></li>
-<li><p>When certain steps need to be deferred until the full computation runs, because they
-depend on the runtime environment, or on objects that cannot be pickled with the
-rest of the computation graph (for example, opening and reading a file).</p></li>
+<li><p>When certain function calls need to be deferred until the full computation
+runs, because they depend on the runtime environment, or on objects that
+cannot be pickled with the rest of the computation graph (for example, opening
+and reading a file).</p></li>
 </ul>
 <p class="rubric">Examples</p>
 <ul class="simple">
@@ -915,20 +971,20 @@ skrub pipelines.</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="cleaning.html"
+       href="encoding.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Cleaning</p>
+        <p class="prev-next-title">Encoding: creating feature matrices</p>
       </div>
     </a>
     <a class="right-next"
-       href="reference/index.html"
+       href="assembling.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">API</p>
+        <p class="prev-next-title">Assembling: joining multiple tables</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
