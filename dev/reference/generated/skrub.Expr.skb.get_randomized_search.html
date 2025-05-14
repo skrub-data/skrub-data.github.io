@@ -727,7 +727,7 @@
 <h1>skrub.Expr.skb.get_randomized_search<a class="headerlink" href="#skrub-expr-skb-get-randomized-search" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.get_randomized_search">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">get_randomized_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1830c13/skrub/_expressions/_skrub_namespace.py#L1318"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.get_randomized_search" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">get_randomized_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1604295/skrub/_expressions/_skrub_namespace.py#L1318"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.get_randomized_search" title="Link to this definition">#</a></dt>
 <dd><p>Find the best parameters with randomized search.</p>
 <p>This function returns a <a class="reference internal" href="skrub.ParamSearch.html#skrub.ParamSearch" title="skrub.ParamSearch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSearch</span></code></a>, an object similar to
 scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomizedSearchCV</span></code></a>. The main
@@ -796,17 +796,17 @@ initializing variables in this expression (the data returned by
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_randomized_search</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">search</span><span class="o">.</span><span class="n">results_</span>
-<span class="go">   mean_test_score   k         C  N 🌴 classifier</span>
-<span class="go">0             0.92   4  4.626363  NaN   logistic</span>
-<span class="go">1             0.89  10       NaN  7.0         rf</span>
-<span class="go">2             0.87   7  3.832217  NaN   logistic</span>
-<span class="go">3             0.86  15       NaN  6.0         rf</span>
-<span class="go">4             0.85  10  4.881255  NaN   logistic</span>
-<span class="go">5             0.80  19  3.965675  NaN   logistic</span>
-<span class="go">6             0.77  14       NaN  3.0         rf</span>
-<span class="go">7             0.50   4       NaN  NaN      dummy</span>
-<span class="go">8             0.50   9       NaN  NaN      dummy</span>
-<span class="go">9             0.50   5       NaN  NaN      dummy</span>
+<span class="go">    k         C  N 🌴 classifier mean_test_score</span>
+<span class="go">0   4  4.626363  NaN   logistic             0.92</span>
+<span class="go">1  10       NaN  7.0         rf             0.89</span>
+<span class="go">2   7  3.832217  NaN   logistic             0.87</span>
+<span class="go">3  15       NaN  6.0         rf             0.86</span>
+<span class="go">4  10  4.881255  NaN   logistic             0.85</span>
+<span class="go">5  19  3.965675  NaN   logistic             0.80</span>
+<span class="go">6  14       NaN  3.0         rf             0.77</span>
+<span class="go">7   4       NaN  NaN      dummy             0.50</span>
+<span class="go">8   9       NaN  NaN      dummy             0.50</span>
+<span class="go">9   5       NaN  NaN      dummy             0.50</span>
 </pre></div>
 </div>
 </dd></dl>
