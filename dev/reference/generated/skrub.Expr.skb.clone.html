@@ -594,9 +594,11 @@
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_X.html">skrub.Expr.skb.mark_as_X</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_y.html">skrub.Expr.skb.mark_as_y</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.match.html">skrub.Expr.skb.match</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.preview.html">skrub.Expr.skb.preview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.select.html">skrub.Expr.skb.select</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.set_description.html">skrub.Expr.skb.set_description</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.set_name.html">skrub.Expr.skb.set_name</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.subsample.html">skrub.Expr.skb.subsample</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.train_test_split.html">skrub.Expr.skb.train_test_split</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -727,7 +729,7 @@
 <h1>skrub.Expr.skb.clone<a class="headerlink" href="#skrub-expr-skb-clone" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.clone">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">clone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drop_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2e2a04a/skrub/_expressions/_skrub_namespace.py#L647"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.clone" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">clone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drop_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/cc53e83/skrub/_expressions/_skrub_namespace.py#L789"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.clone" title="Link to this definition">#</a></dt>
 <dd><p>Get an independent clone of the expression.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -772,10 +774,10 @@ variables’ values.</p>
 </div>
 <p>Note that in that case the cache used for previews is still cleared. So
 if we want the preview we need to prime the new expression by
-evaluating it once (either directly or by adding more steps to it):</p>
+accessing the preview once (either directly or by adding more steps to it):</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">clone</span>
 <span class="go">&lt;BinOp: add&gt;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">clone</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">clone</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">preview</span><span class="p">()</span>
 <span class="go">1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clone</span>
 <span class="go">&lt;BinOp: add&gt;</span>

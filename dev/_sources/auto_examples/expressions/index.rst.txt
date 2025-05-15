@@ -49,6 +49,23 @@ Skrub expressions
     </div>
 
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use Expr.skb.subsample to speed-up interactive creation of skrub expressions by subsampling the data when computing preview results.">
+
+.. only:: html
+
+  .. image:: /auto_examples/expressions/images/thumb/sphx_glr_12_subsampling_thumb.svg
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_expressions_12_subsampling.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Subsampling for faster development</div>
+    </div>
+
+
 .. thumbnail-parent-div-close
 
 .. raw:: html
@@ -61,4 +78,5 @@ Skrub expressions
 
    /auto_examples/expressions/10_expressions_intro
    /auto_examples/expressions/11_choices
+   /auto_examples/expressions/12_subsampling
 

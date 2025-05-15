@@ -72,7 +72,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="skrub.Expr.skb.description" href="skrub.Expr.skb.description.html" />
-    <link rel="prev" title="skrub.Expr.skb.set_name" href="skrub.Expr.skb.set_name.html" />
+    <link rel="prev" title="skrub.Expr.skb.subsample" href="skrub.Expr.skb.subsample.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.6.dev0" />
@@ -594,9 +594,11 @@
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_X.html">skrub.Expr.skb.mark_as_X</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_y.html">skrub.Expr.skb.mark_as_y</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.match.html">skrub.Expr.skb.match</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.preview.html">skrub.Expr.skb.preview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.select.html">skrub.Expr.skb.select</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.set_description.html">skrub.Expr.skb.set_description</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.set_name.html">skrub.Expr.skb.set_name</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.subsample.html">skrub.Expr.skb.subsample</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">skrub.Expr.skb.train_test_split</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -727,7 +729,7 @@
 <h1>skrub.Expr.skb.train_test_split<a class="headerlink" href="#skrub-expr-skb-train-test-split" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.train_test_split">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">train_test_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">splitter=&lt;function</span> <span class="pre">train_test_split&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**splitter_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2e2a04a/skrub/_expressions/_skrub_namespace.py#L1159"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.train_test_split" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">train_test_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">splitter=&lt;function</span> <span class="pre">train_test_split&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**splitter_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/cc53e83/skrub/_expressions/_skrub_namespace.py#L1390"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.train_test_split" title="Link to this definition">#</a></dt>
 <dd><p>Split an environment into a training an testing environments.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -735,6 +737,10 @@
 <dt><strong>environment</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a>, optional</span></dt><dd><p>The environment (dict mapping variable names to values) containing the
 full data. If <code class="docutils literal notranslate"><span class="pre">None</span></code> (the default), the data is retrieved from the
 expression.</p>
+</dd>
+<dt><strong>keep_subsampling</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>If True, and if subsampling has been configured (see
+<a class="reference internal" href="skrub.Expr.skb.subsample.html#skrub.Expr.skb.subsample" title="skrub.Expr.skb.subsample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.subsample()</span></code></a>), use a subsample of the data. By
+default subsampling is not applied and all the data is used.</p>
 </dd>
 <dt><strong>splitter</strong><span class="classifier">function, optional</span></dt><dd><p>The function used to split X and y once they have been computed. By
 default, <code class="docutils literal notranslate"><span class="pre">sklearn.train_test_split</span></code> is used.</p>
@@ -807,12 +813,12 @@ unsupervised learning).</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.Expr.skb.set_name.html"
+       href="skrub.Expr.skb.subsample.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">skrub.Expr.skb.set_name</p>
+        <p class="prev-next-title">skrub.Expr.skb.subsample</p>
       </div>
     </a>
     <a class="right-next"

@@ -594,9 +594,11 @@
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_X.html">skrub.Expr.skb.mark_as_X</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_y.html">skrub.Expr.skb.mark_as_y</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.match.html">skrub.Expr.skb.match</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.preview.html">skrub.Expr.skb.preview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.select.html">skrub.Expr.skb.select</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.set_description.html">skrub.Expr.skb.set_description</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.set_name.html">skrub.Expr.skb.set_name</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.subsample.html">skrub.Expr.skb.subsample</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.train_test_split.html">skrub.Expr.skb.train_test_split</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -727,11 +729,11 @@
 <h1>skrub.Expr.skb.eval<a class="headerlink" href="#skrub-expr-skb-eval" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.eval">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2e2a04a/skrub/_expressions/_skrub_namespace.py#L704"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.eval" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/cc53e83/skrub/_expressions/_skrub_namespace.py#L846"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.eval" title="Link to this definition">#</a></dt>
 <dd><p>Evaluate the expression.</p>
 <p>This returns the result produced by evaluating the expression, ie
-running the corresponding pipeline. The result is <strong>always</strong> the output
-of the pipeline’s <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> – the pipeline is refitted to the
+running the corresponding pipeline. The result is always the output
+of the pipeline’s <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> – a pipeline is refitted to the
 provided data.</p>
 <p>If no data is provided, the values passed when creating the variables
 in the expression are used.</p>
@@ -741,6 +743,10 @@ in the expression are used.</p>
 <dt><strong>environment</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, optional</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">None</span></code>, the initial values of the variables contained in the
 expression are used. If a dict, it must map the name of each
 variable to a corresponding value.</p>
+</dd>
+<dt><strong>keep_subsampling</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>If True, and if subsampling has been configured (see
+<a class="reference internal" href="skrub.Expr.skb.subsample.html#skrub.Expr.skb.subsample" title="skrub.Expr.skb.subsample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.subsample()</span></code></a>), use a subsample of the data. By
+default subsampling is not applied and all the data is used.</p>
 </dd>
 </dl>
 </dd>
@@ -752,6 +758,13 @@ pipeline’s <code class="docutils literal notranslate"><span class="pre">fit_tr
 </dl>
 </dd>
 </dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.Expr.skb.preview.html#skrub.Expr.skb.preview" title="skrub.Expr.skb.preview"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expr.skb.preview</span></code></a></dt><dd><p>Access the preview of the result on the variables initial values, with subsampling. Faster than <code class="docutils literal notranslate"><span class="pre">eval</span></code> but does not allow passing new data and always applies subsampling.</p>
+</dd>
+</dl>
+</div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>

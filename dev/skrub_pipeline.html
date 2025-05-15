@@ -959,6 +959,25 @@ expressions on dataframes.</p></li>
 skrub pipelines.</p></li>
 </ul>
 </section>
+<section id="subsampling-to-develop-pipelines-with-reduced-computation">
+<h2>Subsampling to develop pipelines with reduced computation<a class="headerlink" href="#subsampling-to-develop-pipelines-with-reduced-computation" title="Link to this heading">#</a></h2>
+<p>To speed-up the development of our pipeline, we can tell skrub to work on a
+subsample of our data.</p>
+<p>This is done with
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.subsample.html#skrub.Expr.skb.subsample" title="skrub.Expr.skb.subsample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.subsample()</span></code></a>.
+When we use it, the previews shown when printing an expression and returned by
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.preview.html#skrub.Expr.skb.preview" title="skrub.Expr.skb.preview"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.preview()</span></code></a> are computed on a subsample.
+By default, subsampling is only applied for those previews.</p>
+<p>Subsampling <strong>is turned off</strong> by default when we call other methods such as
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.eval.html#skrub.Expr.skb.eval" title="skrub.Expr.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.eval()</span></code></a>,
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.cross_validate.html#skrub.Expr.skb.cross_validate" title="skrub.Expr.skb.cross_validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.cross_validate()</span></code></a>,
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.train_test_split.html#skrub.Expr.skb.train_test_split" title="skrub.Expr.skb.train_test_split"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.train_test_split</span></code></a>,
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.get_pipeline()</span></code></a>,
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.get_randomized_search.html#skrub.Expr.skb.get_randomized_search" title="skrub.Expr.skb.get_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.get_randomized_search()</span></code></a>, etc.
+However, all of those methods have a <code class="docutils literal notranslate"><span class="pre">keep_subsampling</span></code> parameter that we can
+set to <code class="docutils literal notranslate"><span class="pre">True</span></code> to force using the subsampling when we call them.</p>
+<p>See more details in a <a class="reference internal" href="auto_examples/expressions/12_subsampling.html#example-subsampling"><span class="std std-ref">full example</span></a>.</p>
+</section>
 </section>
 
 
@@ -1018,6 +1037,7 @@ skrub pipelines.</p></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#composing-expressions">Composing expressions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-machine-learning-estimators">Applying machine-learning estimators</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deferred-evaluation">Deferred evaluation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subsampling-to-develop-pipelines-with-reduced-computation">Subsampling to develop pipelines with reduced computation</a></li>
 </ul>
   </nav></div>
 

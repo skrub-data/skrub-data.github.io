@@ -1,0 +1,6 @@
+﻿skrub.Expr.skb.preview
+======================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: Expr.skb.preview

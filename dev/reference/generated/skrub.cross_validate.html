@@ -594,9 +594,11 @@
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_X.html">skrub.Expr.skb.mark_as_X</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_y.html">skrub.Expr.skb.mark_as_y</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.match.html">skrub.Expr.skb.match</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.preview.html">skrub.Expr.skb.preview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.select.html">skrub.Expr.skb.select</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.set_description.html">skrub.Expr.skb.set_description</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.set_name.html">skrub.Expr.skb.set_name</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.subsample.html">skrub.Expr.skb.subsample</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.train_test_split.html">skrub.Expr.skb.train_test_split</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -727,7 +729,7 @@
 <h1>cross_validate<a class="headerlink" href="#cross-validate" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.cross_validate">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">cross_validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pipeline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2e2a04a/skrub/_expressions/_estimator.py#L476"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.cross_validate" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">cross_validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pipeline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/cc53e83/skrub/_expressions/_estimator.py#L477"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.cross_validate" title="Link to this definition">#</a></dt>
 <dd><p>Cross-validate a pipeline built from an expression.</p>
 <p>This runs cross-validation from a pipeline that was built from a skrub
 expression with <code class="docutils literal notranslate"><span class="pre">.skb.get_pipeline()</span></code>, <code class="docutils literal notranslate"><span class="pre">.skb.get_grid_search()</span></code> or
@@ -740,6 +742,10 @@ search.</p>
 <dt><strong>pipeline</strong><span class="classifier">skrub pipeline</span></dt><dd><p>A pipeline generated from a skrub expression.</p>
 </dd>
 <dt><strong>environment</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Bindings for variables contained in the expression.</p>
+</dd>
+<dt><strong>keep_subsampling</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>If True, and if subsampling has been configured (see
+<a class="reference internal" href="skrub.Expr.skb.subsample.html#skrub.Expr.skb.subsample" title="skrub.Expr.skb.subsample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.subsample()</span></code></a>), use a subsample of the data. By
+default subsampling is not applied and all the data is used.</p>
 </dd>
 <dt><strong>kwargs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>All other named arguments are forwarded to
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="(in scikit-learn v1.6)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.cross_validate()</span></code></a>, except that scikit-learn’s
