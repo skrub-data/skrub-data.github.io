@@ -1,0 +1,6 @@
+﻿skrub.Expr.skb.describe_defaults
+================================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: Expr.skb.describe_defaults

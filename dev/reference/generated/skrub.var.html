@@ -581,6 +581,7 @@
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.clone.html">skrub.Expr.skb.clone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.concat.html">skrub.Expr.skb.concat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.cross_validate.html">skrub.Expr.skb.cross_validate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_defaults.html">skrub.Expr.skb.describe_defaults</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_param_grid.html">skrub.Expr.skb.describe_param_grid</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_steps.html">skrub.Expr.skb.describe_steps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.draw_graph.html">skrub.Expr.skb.draw_graph</a></li>
@@ -593,6 +594,8 @@
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_grid_search.html">skrub.Expr.skb.get_grid_search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_randomized_search.html">skrub.Expr.skb.get_randomized_search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.if_else.html">skrub.Expr.skb.if_else</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.iter_pipelines_grid.html">skrub.Expr.skb.iter_pipelines_grid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.iter_pipelines_randomized.html">skrub.Expr.skb.iter_pipelines_randomized</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_X.html">skrub.Expr.skb.mark_as_X</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_y.html">skrub.Expr.skb.mark_as_y</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.match.html">skrub.Expr.skb.match</a></li>
@@ -731,7 +734,7 @@
 <h1>var<a class="headerlink" href="#var" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.var">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">var</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NULL</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f0e4f20/skrub/_expressions/_expressions.py#L728"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.var" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">var</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NULL</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9c7015a/skrub/_expressions/_expressions.py#L728"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.var" title="Link to this definition">#</a></dt>
 <dd><p>Create a skrub variable.</p>
 <p>Variables represent inputs to a machine-learning pipeline. They can be
 combined with other variables, constants, operators, function calls etc. to

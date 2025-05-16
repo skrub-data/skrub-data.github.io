@@ -805,6 +805,13 @@ transformations in a pipeline eg <code class="docutils literal notranslate"><spa
 </tbody>
 </table>
 </div>
+<p>The default choices for an expression, those that get used when calling
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.get_pipeline()</span></code></a>, can be inspected with
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.describe_defaults.html#skrub.Expr.skb.describe_defaults" title="skrub.Expr.skb.describe_defaults"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.describe_defaults()</span></code></a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_defaults</span><span class="p">()</span>
+<span class="go">{&#39;α&#39;: 0.316...}</span>
+</pre></div>
+</div>
 <p>We can then find the best hyperparameters.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_randomized_search</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">search</span><span class="o">.</span><span class="n">results_</span>
@@ -819,6 +826,19 @@ transformations in a pipeline eg <code class="docutils literal notranslate"><spa
 <span class="go">7         0.380719  1.398196</span>
 <span class="go">8         0.233172  4.734989</span>
 <span class="go">9         0.168444  7.780156</span>
+</pre></div>
+</div>
+<p>Rather than fitting a randomized or grid search to find the best combination, it is also
+possible to obtain an iterator over different parameter combinations, to inspect
+their outputs or to have manual control over the model selection, using
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.iter_pipelines_grid.html#skrub.Expr.skb.iter_pipelines_grid" title="skrub.Expr.skb.iter_pipelines_grid"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.iter_pipelines_grid()</span></code></a> or
+<a class="reference internal" href="reference/generated/skrub.Expr.skb.iter_pipelines_randomized.html#skrub.Expr.skb.iter_pipelines_randomized" title="skrub.Expr.skb.iter_pipelines_randomized"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.iter_pipelines_randomized()</span></code></a>.
+Those yield the candidate pipelines that are explored by the grid and randomized
+search respectively.</p>
+<p>A human-readable description of parameters for a pipeline can be obtained with
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubPipeline.describe_params()</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search</span><span class="o">.</span><span class="n">best_pipeline_</span><span class="o">.</span><span class="n">describe_params</span><span class="p">()</span>
+<span class="go">{&#39;α&#39;: 0.054...}</span>
 </pre></div>
 </div>
 </section>

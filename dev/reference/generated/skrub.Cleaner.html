@@ -581,6 +581,7 @@
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.clone.html">skrub.Expr.skb.clone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.concat.html">skrub.Expr.skb.concat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.cross_validate.html">skrub.Expr.skb.cross_validate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_defaults.html">skrub.Expr.skb.describe_defaults</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_param_grid.html">skrub.Expr.skb.describe_param_grid</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_steps.html">skrub.Expr.skb.describe_steps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.draw_graph.html">skrub.Expr.skb.draw_graph</a></li>
@@ -593,6 +594,8 @@
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_grid_search.html">skrub.Expr.skb.get_grid_search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_randomized_search.html">skrub.Expr.skb.get_randomized_search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.if_else.html">skrub.Expr.skb.if_else</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.iter_pipelines_grid.html">skrub.Expr.skb.iter_pipelines_grid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.iter_pipelines_randomized.html">skrub.Expr.skb.iter_pipelines_randomized</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_X.html">skrub.Expr.skb.mark_as_X</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_y.html">skrub.Expr.skb.mark_as_y</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.match.html">skrub.Expr.skb.match</a></li>
@@ -731,7 +734,7 @@
 <h1>Cleaner<a class="headerlink" href="#cleaner" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.Cleaner">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">Cleaner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drop_null_fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_if_constant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_if_unique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetime_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f0e4f20/skrub/_table_vectorizer.py#L155"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">Cleaner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drop_null_fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_if_constant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_if_unique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetime_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9c7015a/skrub/_table_vectorizer.py#L155"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner" title="Link to this definition">#</a></dt>
 <dd><p>Column-wise consistency checks and sanitization, eg of null values or dates.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">Cleaner</span></code> performs some consistency checks and basic preprocessing
 such as detecting null values represented as strings (e.g. <code class="docutils literal notranslate"><span class="pre">'N/A'</span></code>) or parsing
@@ -887,7 +890,7 @@ representation.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Cleaner.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f0e4f20/skrub/_table_vectorizer.py#L356"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.fit" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9c7015a/skrub/_table_vectorizer.py#L356"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.fit" title="Link to this definition">#</a></dt>
 <dd><p>Fit transformer.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -910,7 +913,7 @@ transformations).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Cleaner.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f0e4f20/skrub/_table_vectorizer.py#L305"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9c7015a/skrub/_table_vectorizer.py#L305"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit transformer and transform dataframe.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -933,7 +936,7 @@ transformations).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Cleaner.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f0e4f20/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L231"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9c7015a/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L231"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -954,7 +957,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Cleaner.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f0e4f20/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L392"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9c7015a/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L392"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.6)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
@@ -985,7 +988,7 @@ for an example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Cleaner.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f0e4f20/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L255"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9c7015a/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L255"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -1009,7 +1012,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Cleaner.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f0e4f20/skrub/_table_vectorizer.py#L341"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9c7015a/skrub/_table_vectorizer.py#L341"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.transform" title="Link to this definition">#</a></dt>
 <dd><p>Transform dataframe.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>

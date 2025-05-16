@@ -579,6 +579,7 @@
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.clone.html">skrub.Expr.skb.clone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.concat.html">skrub.Expr.skb.concat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.cross_validate.html">skrub.Expr.skb.cross_validate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_defaults.html">skrub.Expr.skb.describe_defaults</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_param_grid.html">skrub.Expr.skb.describe_param_grid</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_steps.html">skrub.Expr.skb.describe_steps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.draw_graph.html">skrub.Expr.skb.draw_graph</a></li>
@@ -591,6 +592,8 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">skrub.Expr.skb.get_grid_search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_randomized_search.html">skrub.Expr.skb.get_randomized_search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.if_else.html">skrub.Expr.skb.if_else</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.iter_pipelines_grid.html">skrub.Expr.skb.iter_pipelines_grid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.iter_pipelines_randomized.html">skrub.Expr.skb.iter_pipelines_randomized</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_X.html">skrub.Expr.skb.mark_as_X</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_y.html">skrub.Expr.skb.mark_as_y</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.match.html">skrub.Expr.skb.match</a></li>
@@ -729,7 +732,7 @@
 <h1>skrub.Expr.skb.get_grid_search<a class="headerlink" href="#skrub-expr-skb-get-grid-search" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.get_grid_search">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">get_grid_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f0e4f20/skrub/_expressions/_skrub_namespace.py#L1473"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.get_grid_search" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">get_grid_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9c7015a/skrub/_expressions/_skrub_namespace.py#L1520"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.get_grid_search" title="Link to this definition">#</a></dt>
 <dd><p>Find the best parameters with grid search.</p>
 <p>This function returns a <a class="reference internal" href="skrub.ParamSearch.html#skrub.ParamSearch" title="skrub.ParamSearch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSearch</span></code></a>, an object similar to
 scikit-learn’s <code class="docutils literal notranslate"><span class="pre">GridSearchCV</span></code>. The main difference is that methods
