@@ -697,39 +697,20 @@ See the relevant sections above on how to do this.</p>
 </section>
 <section id="setting-up-the-environment">
 <h4>Setting up the environment<a class="headerlink" href="#setting-up-the-environment" title="Link to this heading">#</a></h4>
-<p>To contribute, you will first have to run through some steps:</p>
-<ul class="simple">
-<li><p>Set up your environment by forking the repository (<a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">Github doc on
-forking and
-cloning</a>).</p></li>
-<li><p>Add <code class="docutils literal notranslate"><span class="pre">upstream</span></code> to your remotes with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span> <span class="pre">git&#64;github.com:skrub-data/skrub.git</span></code>.</p></li>
-<li><p>Create and activate a new virtual environment:</p>
-<ul>
-<li><p>With <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a>, create
-the env with <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">venv</span> <span class="pre">env_skrub</span></code> and then activate it with
-<code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">env_skrub/bin/activate</span></code>.</p></li>
-<li><p>With
-<a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">conda</a>,
-create the env with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">env_skrub</span></code> and activate it with
-<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">env_skrub</span></code>.</p></li>
-<li><p>While at the root of your local copy of skrub and within the new
-env, install the required development dependencies by running
-<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--editable</span> <span class="pre">&quot;.[dev,</span> <span class="pre">lint,</span> <span class="pre">test,</span> <span class="pre">doc]&quot;</span></code>.</p></li>
-</ul>
-</li>
-<li><p>Run <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">install</span></code> to activate some checks that will run every
-time you do a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> (mostly, formatting checks).</p></li>
-</ul>
-<p>If you want to make sure that everything runs properly, you can run all
-the tests with the command <code class="docutils literal notranslate"><span class="pre">pytest</span> <span class="pre">-s</span> <span class="pre">skrub/tests</span></code>; note that this may
-take a long time. Some tests may raise warnings such as:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>UserWarning:<span class="w"> </span>Only<span class="w"> </span>pandas<span class="w"> </span>and<span class="w"> </span>polars<span class="w"> </span>DataFrames<span class="w"> </span>are<span class="w"> </span>supported,<span class="w"> </span>but<span class="w"> </span>input<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>Numpy<span class="w"> </span>array.<span class="w"> </span>Please<span class="w"> </span>convert<span class="w"> </span>Numpy<span class="w"> </span>arrays<span class="w"> </span>to<span class="w"> </span>DataFrames<span class="w"> </span>before<span class="w"> </span>passing<span class="w"> </span>them<span class="w"> </span>to<span class="w"> </span>skrub<span class="w"> </span>transformers.<span class="w"> </span>Converting<span class="w"> </span>to<span class="w"> </span>pandas<span class="w"> </span>DataFrame<span class="w"> </span>with<span class="w"> </span>columns<span class="w"> </span><span class="o">[</span><span class="s1">&#39;0&#39;</span>,<span class="w"> </span><span class="s1">&#39;1&#39;</span>,<span class="w"> </span>…<span class="o">]</span>.
-<span class="w">  </span>warnings.warn<span class="o">(</span>
+<p>To setup your development environment, you need to follow the steps in “From Source” tab
+present in <a class="reference internal" href="install.html#installing-from-source"><span class="std std-ref">Installing from source</span></a> page.
+After that, you can return to this page to continue.</p>
+<p>Now that the development environment is ready, you may create a new branch and start working on
+the new issue.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># fetch latest updates and start from the current head</span>
+git<span class="w"> </span>fetch<span class="w"> </span>upstream
+git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>my-branch-name-eg-fix-issue-123
+<span class="c1"># make some changes</span>
+git<span class="w"> </span>add<span class="w"> </span>./the/file-i-changed
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;my message&quot;</span>
+git<span class="w"> </span>push<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>my-branch-name-eg-fix-issue-123
 </pre></div>
 </div>
-<p>This is expected, and you may proceed with the next steps without worrying about them. However, no tests should fail at this point: if they do fail, then let us know.</p>
-<p>Now that the development environment is ready, you may start working on
-the new issue.</p>
 <p>At this point, if you visit again the <a class="reference external" href="https://github.com/skrub-data/skrub/pulls">pull requests
 page</a> github should show a
 banner asking if you want to open a pull request from your new branch.</p>
@@ -785,7 +766,7 @@ takes into account the new transformer.</p>
 <code class="docutils literal notranslate"><span class="pre">skrub/_dataframe/tests/test_common.py</span></code> to add a test for the
 <code class="docutils literal notranslate"><span class="pre">amazing_function</span></code>.</p>
 <p>Run each updated test file using <code class="docutils literal notranslate"><span class="pre">pytest</span></code>
-([pytest docs](<a class="reference external" href="https://docs.pytest.org/en/stable/">https://docs.pytest.org/en/stable/</a>)):</p>
+(<a class="reference external" href="https://docs.pytest.org/en/stable">pytest docs</a>):</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pytest<span class="w"> </span>-vsl<span class="w"> </span>skrub/tests/test_amazing_transformer.py<span class="w"> </span><span class="se">\</span>
 skrub/_dataframe/tests/test_common.py<span class="w"> </span><span class="se">\</span>
 skrub/_dataframe/tests/test_table_vectorizer.py
@@ -922,11 +903,6 @@ introduced any new Sphinx warnings by building the documentation locally
 and addressing any issues.</strong></p>
 <p>First, make sure you have properly installed the development version of skrub.
 You can follow the <a class="reference internal" href="install.html#installation-instructions"><span class="std std-ref">Install</span></a> &gt; “From source” section, if needed.</p>
-<p>Building the documentation requires installing some additional packages:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>skrub
-pip<span class="w"> </span>install<span class="w"> </span><span class="s1">&#39;.[doc]&#39;</span>
-</pre></div>
-</div>
 <p>To build the documentation, you need to be in the <code class="docutils literal notranslate"><span class="pre">doc</span></code> folder:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>doc
 </pre></div>
