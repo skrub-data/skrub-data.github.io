@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/cleaning.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="deduplicate(): merging variants of the same entry: deduplicate() is used to merge multiple variants of the same entry into one, for instance typos. Such cleaning is needed to apply subsequent dataf..." />
+<meta property="og:description" content="Cleaner: sanitizing a dataframe: Cleaner sanitizes a dataframe, transforming it to a more consistent data representation which is easier to work with: it detects null values represented as strings,..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="deduplicate(): merging variants of the same entry: deduplicate() is used to merge multiple variants of the same entry into one, for instance typos. Such cleaning is needed to apply subsequent dataf..." />
+<meta name="description" content="Cleaner: sanitizing a dataframe: Cleaner sanitizes a dataframe, transforming it to a more consistent data representation which is easier to work with: it detects null values represented as strings,..." />
 
     <title>Cleaning &#8212; skrub</title>
   
@@ -592,6 +592,35 @@
                   
   <section id="cleaning">
 <span id="id1"></span><h1>Cleaning<a class="headerlink" href="#cleaning" title="Link to this heading">#</a></h1>
+<section id="cleaner-sanitizing-a-dataframe">
+<h2><a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a>: sanitizing a dataframe<a class="headerlink" href="#cleaner-sanitizing-a-dataframe" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> sanitizes a dataframe, transforming it to a more
+consistent data representation which is easier to work with: it detects
+null values represented as strings, parses dates, and removes
+uninformative columns (see docstring: <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a>).</p>
+<p>To have reproducible transformations, it is implemented as a scikit-learn
+transformer:</p>
+<ul>
+<li><p>to sanitize a given dataframe <cite>df</cite>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">Cleaner</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaner</span> <span class="o">=</span> <span class="n">Cleaner</span><span class="p">(</span><span class="n">drop_if_constant</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">clean_df</span> <span class="o">=</span> <span class="n">cleaner</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>to apply the same exact operations to a new dataframe <cite>df_test</cite>
+(new rows with the same columns):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">clean_df_test</span> <span class="o">=</span> <span class="n">cleaner</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df_test</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Reusing the cleaner to transform new data ensures that if columns were
+dropped on the first dataframe, they are dropped on the second.</p>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
 <section id="deduplicate-merging-variants-of-the-same-entry">
 <h2><a class="reference internal" href="reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a>: merging variants of the same entry<a class="headerlink" href="#deduplicate-merging-variants-of-the-same-entry" title="Link to this heading">#</a></h2>
 <p><a class="reference internal" href="reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> is used to merge multiple variants of the same entry
@@ -650,6 +679,7 @@ can suffice.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaner-sanitizing-a-dataframe"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code>: sanitizing a dataframe</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deduplicate-merging-variants-of-the-same-entry"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code>: merging variants of the same entry</a></li>
 </ul>
   </nav></div>
