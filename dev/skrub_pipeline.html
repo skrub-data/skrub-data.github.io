@@ -978,6 +978,84 @@ However, all of those methods have a <code class="docutils literal notranslate">
 set to <code class="docutils literal notranslate"><span class="pre">True</span></code> to force using the subsampling when we call them.</p>
 <p>See more details in a <a class="reference internal" href="auto_examples/expressions/12_subsampling.html#example-subsampling"><span class="std std-ref">full example</span></a>.</p>
 </section>
+<section id="using-only-a-part-of-a-pipeline">
+<h2>Using only a part of a pipeline<a class="headerlink" href="#using-only-a-part-of-a-pipeline" title="Link to this heading">#</a></h2>
+<p>We can give a name to any node with <a class="reference internal" href="reference/generated/skrub.Expr.skb.set_name.html#skrub.Expr.skb.set_name" title="skrub.Expr.skb.set_name"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.set_name()</span></code></a>.
+When this is done we can:</p>
+<ul class="simple">
+<li><p>Bypass the computation of that node and override its result by passing it as a
+key in the <code class="docutils literal notranslate"><span class="pre">environment</span></code> argument.</p></li>
+<li><p>Truncate the pipeline after this node to obtain the intermediate result with
+<a class="reference internal" href="reference/generated/skrub.SkrubPipeline.html#skrub.SkrubPipeline.truncated_after" title="skrub.SkrubPipeline.truncated_after"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubPipeline.truncated_after()</span></code></a>.</p></li>
+<li><p>Retrieve that node and inspect the estimator that was fitted in it, if the
+node was created with <a class="reference internal" href="reference/generated/skrub.Expr.skb.apply.html#skrub.Expr.skb.apply" title="skrub.Expr.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply()</span></code></a>.</p></li>
+</ul>
+<p>Here is a toy example with 3 steps:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">load_data</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;load: &quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">transform</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="p">[</span><span class="n">item</span> <span class="o">*</span> <span class="mi">10</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">agg</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;agg&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">url</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;url&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">output</span> <span class="o">=</span> <span class="p">(</span>
+<span class="gp">... </span>    <span class="n">url</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><span class="n">load_data</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">set_name</span><span class="p">(</span><span class="s2">&quot;loaded&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><span class="n">transform</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">set_name</span><span class="p">(</span><span class="s2">&quot;transformed&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><span class="n">agg</span><span class="p">)</span>
+<span class="gp">... </span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Above, we give a name to each intermediate result with <code class="docutils literal notranslate"><span class="pre">.skb.set_name()</span></code> so
+that we can later refer to it when manipulating a fitted pipeline.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span><span class="p">({</span><span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;file:///example.db&quot;</span><span class="p">})</span>
+<span class="go">load:  file:///example.db</span>
+<span class="go">transform</span>
+<span class="go">agg</span>
+<span class="go">SkrubPipeline(expr=&lt;Call &#39;agg&#39;&gt;)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;file:///example.db&quot;</span><span class="p">})</span>
+<span class="go">load:  file:///example.db</span>
+<span class="go">transform</span>
+<span class="go">agg</span>
+<span class="go">40</span>
+</pre></div>
+</div>
+<p>Below, we bypass the data loading. Because we directly provide a value for the
+intermediate result that we named <code class="docutils literal notranslate"><span class="pre">&quot;loaded&quot;</span></code>, the corresponding computation is
+skipped and the provided value is used instead. We can see that
+<code class="docutils literal notranslate"><span class="pre">&quot;load:</span> <span class="pre">...&quot;</span></code> is not printed and that the rest of the computation proceeds
+using <code class="docutils literal notranslate"><span class="pre">[6,</span> <span class="pre">5,</span> <span class="pre">4]</span></code> (instead of <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4]</span></code> as before).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;loaded&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]})</span>
+<span class="go">transform</span>
+<span class="go">agg</span>
+<span class="go">60</span>
+</pre></div>
+</div>
+<p>Now we show how to stop at the result we named <code class="docutils literal notranslate"><span class="pre">&quot;transformed&quot;</span></code>. With
+<code class="docutils literal notranslate"><span class="pre">truncated_after</span></code>, we obtain a pipeline that computes that intermediate result
+and returns it instead of applying the last transformation; note that <code class="docutils literal notranslate"><span class="pre">&quot;agg&quot;</span></code>
+is not printed and we get the output of <code class="docutils literal notranslate"><span class="pre">transform()</span></code>, not of <code class="docutils literal notranslate"><span class="pre">agg()</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">truncated</span> <span class="o">=</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">truncated_after</span><span class="p">(</span><span class="s2">&quot;transformed&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">truncated</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;file:///example.db&quot;</span><span class="p">})</span>
+<span class="go">load:  file:///example.db</span>
+<span class="go">transform</span>
+<span class="go">[10, 20, 30, 40]</span>
+</pre></div>
+</div>
+</section>
 </section>
 
 
@@ -1038,6 +1116,7 @@ set to <code class="docutils literal notranslate"><span class="pre">True</span><
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-machine-learning-estimators">Applying machine-learning estimators</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deferred-evaluation">Deferred evaluation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subsampling-to-develop-pipelines-with-reduced-computation">Subsampling to develop pipelines with reduced computation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-only-a-part-of-a-pipeline">Using only a part of a pipeline</a></li>
 </ul>
   </nav></div>
 
