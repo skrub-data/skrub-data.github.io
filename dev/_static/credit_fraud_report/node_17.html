@@ -719,9 +719,7 @@ clickable and can be expanded/collapsed.
 /* Toggleable content - dropdown */
 
 #sk-container-id-2 div.sk-toggleable__content {
-  max-height: 0;
-  max-width: 0;
-  overflow: hidden;
+  display: none;
   text-align: left;
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-0);
@@ -747,9 +745,9 @@ clickable and can be expanded/collapsed.
 
 #sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {
   /* Expand drop-down */
-  max-height: 200px;
-  max-width: 100%;
-  overflow: auto;
+  display: block;
+  width: 100%;
+  overflow: visible;
 }
 
 #sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
@@ -954,7 +952,333 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-3);
 }
-</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>HistGradientBoostingClassifier(learning_rate=np.float64(0.09486832980505142))</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" checked><label for="sk-estimator-id-7" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>HistGradientBoostingClassifier</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html">?<span>Documentation for HistGradientBoostingClassifier</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>HistGradientBoostingClassifier(learning_rate=np.float64(0.09486832980505142))</pre></div> </div></div></div></div>
+
+.estimator-table summary {
+    padding: .5rem;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.estimator-table details[open] {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-bottom: 0.3rem;
+}
+
+.estimator-table .parameters-table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.estimator-table .parameters-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.estimator-table .parameters-table tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+.estimator-table .parameters-table tr:hover {
+    background-color: #e0e0e0;
+}
+
+.estimator-table table td {
+    border: 1px solid rgba(106, 105, 104, 0.232);
+}
+
+.user-set td {
+    color:rgb(255, 94, 0);
+    text-align: left;
+}
+
+.user-set td.value pre {
+    color:rgb(255, 94, 0) !important;
+    background-color: transparent !important;
+}
+
+.default td {
+    color: black;
+    text-align: left;
+}
+
+.user-set td i,
+.default td i {
+    color: black;
+}
+
+.copy-paste-icon {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDYuNy4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjUgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTIwOCAwTDMzMi4xIDBjMTIuNyAwIDI0LjkgNS4xIDMzLjkgMTQuMWw2Ny45IDY3LjljOSA5IDE0LjEgMjEuMiAxNC4xIDMzLjlMNDQ4IDMzNmMwIDI2LjUtMjEuNSA0OC00OCA0OGwtMTkyIDBjLTI2LjUgMC00OC0yMS41LTQ4LTQ4bDAtMjg4YzAtMjYuNSAyMS41LTQ4IDQ4LTQ4ek00OCAxMjhsODAgMCAwIDY0LTY0IDAgMCAyNTYgMTkyIDAgMC0zMiA2NCAwIDAgNDhjMCAyNi41LTIxLjUgNDgtNDggNDhMNDggNTEyYy0yNi41IDAtNDgtMjEuNS00OC00OEwwIDE3NmMwLTI2LjUgMjEuNS00OCA0OC00OHoiLz48L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: 0;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+</style><body><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>HistGradientBoostingClassifier(learning_rate=np.float64(0.09486832980505142))</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" checked><label for="sk-estimator-id-7" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>HistGradientBoostingClassifier</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.7/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html">?<span>Documentation for HistGradientBoostingClassifier</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted" data-param-prefix="">
+        <div class="estimator-table">
+            <details>
+                <summary>Parameters</summary>
+                <table class="parameters-table">
+                  <tbody>
+                    
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('loss',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">loss&nbsp;</td>
+            <td class="value">&#x27;log_loss&#x27;</td>
+        </tr>
+    
+
+        <tr class="user-set">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('learning_rate',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">learning_rate&nbsp;</td>
+            <td class="value">np.float64(0....6832980505142)</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('max_iter',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">max_iter&nbsp;</td>
+            <td class="value">100</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('max_leaf_nodes',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">max_leaf_nodes&nbsp;</td>
+            <td class="value">31</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('max_depth',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">max_depth&nbsp;</td>
+            <td class="value">None</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('min_samples_leaf',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">min_samples_leaf&nbsp;</td>
+            <td class="value">20</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('l2_regularization',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">l2_regularization&nbsp;</td>
+            <td class="value">0.0</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('max_features',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">max_features&nbsp;</td>
+            <td class="value">1.0</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('max_bins',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">max_bins&nbsp;</td>
+            <td class="value">255</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('categorical_features',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">categorical_features&nbsp;</td>
+            <td class="value">&#x27;from_dtype&#x27;</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('monotonic_cst',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">monotonic_cst&nbsp;</td>
+            <td class="value">None</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('interaction_cst',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">interaction_cst&nbsp;</td>
+            <td class="value">None</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('warm_start',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">warm_start&nbsp;</td>
+            <td class="value">False</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('early_stopping',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">early_stopping&nbsp;</td>
+            <td class="value">&#x27;auto&#x27;</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('scoring',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">scoring&nbsp;</td>
+            <td class="value">&#x27;loss&#x27;</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('validation_fraction',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">validation_fraction&nbsp;</td>
+            <td class="value">0.1</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('n_iter_no_change',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">n_iter_no_change&nbsp;</td>
+            <td class="value">10</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('tol',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">tol&nbsp;</td>
+            <td class="value">1e-07</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('verbose',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">verbose&nbsp;</td>
+            <td class="value">0</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('random_state',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">random_state&nbsp;</td>
+            <td class="value">None</td>
+        </tr>
+    
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('class_weight',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">class_weight&nbsp;</td>
+            <td class="value">None</td>
+        </tr>
+    
+                  </tbody>
+                </table>
+            </details>
+        </div>
+    </div></div></div></div></div><script>function copyToClipboard(text, element) {
+    // Get the parameter prefix from the closest toggleable content
+    const toggleableContent = element.closest('.sk-toggleable__content');
+    const paramPrefix = toggleableContent ? toggleableContent.dataset.paramPrefix : '';
+    const fullParamName = paramPrefix ? `${paramPrefix}${text}` : text;
+
+    const originalStyle = element.style;
+    const computedStyle = window.getComputedStyle(element);
+    const originalWidth = computedStyle.width;
+    const originalHTML = element.innerHTML.replace('Copied!', '');
+
+    navigator.clipboard.writeText(fullParamName)
+        .then(() => {
+            element.style.width = originalWidth;
+            element.style.color = 'green';
+            element.innerHTML = "Copied!";
+
+            setTimeout(() => {
+                element.innerHTML = originalHTML;
+                element.style = originalStyle;
+            }, 2000);
+        })
+        .catch(err => {
+            console.error('Failed to copy:', err);
+            element.style.color = 'red';
+            element.innerHTML = "Failed!";
+            setTimeout(() => {
+                element.innerHTML = originalHTML;
+                element.style = originalStyle;
+            }, 2000);
+        });
+    return false;
+}
+
+document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
+    const toggleableContent = element.closest('.sk-toggleable__content');
+    const paramPrefix = toggleableContent ? toggleableContent.dataset.paramPrefix : '';
+    const paramName = element.parentElement.nextElementSibling.textContent.trim();
+    const fullParamName = paramPrefix ? `${paramPrefix}${paramName}` : paramName;
+
+    element.setAttribute('title', fullParamName);
+});
+</script></body>
                 </div>
                 
 
@@ -962,8 +1286,8 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
                 <div>
                     <h2>Output of this step</h2>
                     
-<div id="report_866fb1af-wrapper" hidden>
-    <template id="report_866fb1af-template">
+<div id="report_1775dadb-wrapper" hidden>
+    <template id="report_1775dadb-template">
         <style>
          /*!
 Pure v3.0.0
@@ -2341,7 +2665,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
                 
                 
                 <th
-                id="5795f489"
+                id="56a238c1"
                 class="table-cell elided-short "
                 
                 data-role="padding"
@@ -2371,7 +2695,7 @@ data-spans__-1__-1
                 
                 
                 <th
-                id="5acd6c3f"
+                id="58a7a114"
                 class="table-cell elided-short clickable"
                 
                 data-role="columns-level-value"
@@ -2419,7 +2743,7 @@ data-spans__-1__0
                 
                 
                 <th
-                id="9a531920"
+                id="a6f2ccd6"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2447,7 +2771,7 @@ data-spans__0__-1
                 
                 
                 <td
-                id="43710345"
+                id="1839e30d"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2481,7 +2805,7 @@ data-spans__0__0
                 
                 
                 <th
-                id="27cb256f"
+                id="c0429a92"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2509,7 +2833,7 @@ data-spans__1__-1
                 
                 
                 <td
-                id="f69f6d66"
+                id="6621eabb"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2543,7 +2867,7 @@ data-spans__1__0
                 
                 
                 <th
-                id="5b994504"
+                id="917fca7b"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2571,7 +2895,7 @@ data-spans__2__-1
                 
                 
                 <td
-                id="7bc8675f"
+                id="787021cb"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2605,7 +2929,7 @@ data-spans__2__0
                 
                 
                 <th
-                id="7a9725da"
+                id="32f1e13d"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2633,7 +2957,7 @@ data-spans__3__-1
                 
                 
                 <td
-                id="b620aa61"
+                id="ebe4cab4"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2667,7 +2991,7 @@ data-spans__3__0
                 
                 
                 <th
-                id="f975a8c8"
+                id="28a157e4"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2695,7 +3019,7 @@ data-spans__4__-1
                 
                 
                 <td
-                id="7076d997"
+                id="911f7538"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2759,7 +3083,7 @@ data-spans__4__0
                 
                 
                 <th
-                id="ab3e971d"
+                id="1d8fac62"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2787,7 +3111,7 @@ data-spans__5__-1
                 
                 
                 <td
-                id="9b3ec610"
+                id="0baa7454"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2821,7 +3145,7 @@ data-spans__5__0
                 
                 
                 <th
-                id="bf0efc8a"
+                id="2eee61eb"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2849,7 +3173,7 @@ data-spans__6__-1
                 
                 
                 <td
-                id="8f44f65a"
+                id="7d915d09"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2883,7 +3207,7 @@ data-spans__6__0
                 
                 
                 <th
-                id="3a1e388a"
+                id="a6c981a6"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2911,7 +3235,7 @@ data-spans__7__-1
                 
                 
                 <td
-                id="c0e14fc5"
+                id="ef9bddf6"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2945,7 +3269,7 @@ data-spans__7__0
                 
                 
                 <th
-                id="2cfc11c9"
+                id="4ba5451b"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2973,7 +3297,7 @@ data-spans__8__-1
                 
                 
                 <td
-                id="918fa7aa"
+                id="c42ba009"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -3007,7 +3331,7 @@ data-spans__8__0
                 
                 
                 <th
-                id="a046cc29"
+                id="c1057520"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -3035,7 +3359,7 @@ data-spans__9__-1
                 
                 
                 <td
-                id="7a72240e"
+                id="e5e7740e"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -3148,8 +3472,8 @@ data-spans__9__0
 
                 
                 <dt>Mean ± Std</dt>
-                <dd>0.00240 ±
-                    0.0489
+                <dd>0.00258 ±
+                    0.0507
                     
                 </dd>
                 
@@ -3524,10 +3848,10 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
                     
 
                     
-                    <td data-value="0.0024003527048872485" data-numeric>
-                        0.00240</td>
-                    <td data-value="0.048934957990446934" data-numeric>
-                        0.0489</td>
+                    <td data-value="0.002579970934504662" data-numeric>
+                        0.00258</td>
+                    <td data-value="0.050728263371055585" data-numeric>
+                        0.0507</td>
                     
 
                     
@@ -3569,7 +3893,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_866fb1af">
+    <skrub-table-report class="report" id="report_1775dadb">
     </skrub-table-report>
 
     <script type="module">
@@ -4667,7 +4991,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_866fb1af-wrapper-fallback">
+<div id="report_1775dadb-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -4678,8 +5002,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_866fb1af-wrapper").removeAttribute("hidden");
- document.getElementById("report_866fb1af-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_1775dadb-wrapper").removeAttribute("hidden");
+ document.getElementById("report_1775dadb-wrapper-fallback").setAttribute("hidden", "");
 </script>
                 </div>
                 
