@@ -6,6 +6,16 @@ Release history
 
 .. currentmodule:: skrub
 
+
+Release 0.5.4
+=============
+
+Maintenance
+-----------
+* Make ``skrub`` compatible with scikit-learn 1.7.
+  :pr:`1434` by :user:`Vincent Maladiere <Vincent-Maladiere>`.
+
+
 Release 0.5.3
 =============
 
@@ -66,7 +76,6 @@ Changes
 - Optimize the :class:`StringEncoder`: lower memory footprint and faster execution in some cases.
   :pr:`1248` by :user:`Gaël Varoquaux <gaelvaroquaux>`
 
-=======
 Bug fixes
 ---------
 - :class:`StringEncoder` now works correctly in presence of null values.

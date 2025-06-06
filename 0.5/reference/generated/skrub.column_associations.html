@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=2c9f8f05" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -52,7 +52,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=2a2fe768"></script>
+    <script src="../../_static/documentation_options.js?v=e1a677a5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -62,7 +62,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.3';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.4';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -74,7 +74,7 @@
     <link rel="prev" title="unpatch_display" href="skrub.unpatch_display.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.5.3" />
+  <meta name="docsearch:version" content="0.5.4" />
   </head>
   
   
@@ -634,7 +634,7 @@
 <h1>column_associations<a class="headerlink" href="#column-associations" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.column_associations">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a417b/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/403db7d/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
 <dd><p>Get measures of statistical associations between all pairs of columns.</p>
 <p>Reported metrics include Cramer’s V statistic and Pearson’s Correlation
 Coefficient. More may be added in the future.</p>
@@ -677,10 +677,9 @@ giving a value between 0 and +1 (inclusive).</p>
 <p>Pearson’s Correlation Coefficient is a measure of the linear correlation
 between two variables, giving a value between -1 and +1 (inclusive).</p>
 <ul class="simple">
-<li><p><a href="#id1"><span class="problematic" id="id2">`</span></a>Pearson’s Correlation Coefficient</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson’s Correlation Coefficient</a></p></li>
+<li><p><a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html">pandas.DataFrame.corr</a></p></li>
 </ul>
-<p>&lt;<a class="reference external" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">https://en.wikipedia.org/wiki/Pearson_correlation_coefficient</a>&gt;`_
-* <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html">pandas.DataFrame.corr</a></p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -702,7 +701,7 @@ between two variables, giving a value between -1 and +1 (inclusive).</p>
 <span class="go">4  5.8878  9.3223  5.3840  7.2006  2.1494  val 4</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># Compute the associations</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">associations</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">column_associations</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">associations</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="n">associations</span>
 <span class="go">   left_column_name  left_column_idx right_column_name  right_column_idx  cramer_v  pearson_corr</span>
 <span class="go">0              c_1                1               c_4                 4    0.8215        0.1597</span>
 <span class="go">1              c_0                0               c_1                 1    0.8215        0.1123</span>
@@ -817,7 +816,7 @@ between two variables, giving a value between -1 and +1 (inclusive).</p>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>

@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../_static/jupyterlite_sphinx.css?v=2c9f8f05" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=2a2fe768"></script>
+    <script src="../_static/documentation_options.js?v=e1a677a5"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.3';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.4';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -76,7 +76,7 @@
     <link rel="prev" title="Cleaning" href="../cleaning.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.5.3" />
+  <meta name="docsearch:version" content="0.5.4" />
   </head>
   
   
@@ -634,7 +634,7 @@
 <p>This page lists all available functions and classes of <cite>skrub</cite>.</p>
 <section id="joining-dataframes">
 <span id="joining-dataframes-ref"></span><h2>Joining dataframes<a class="headerlink" href="#joining-dataframes" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Joiner</span></code></a></p></td>
 <td><p>Augment features in a main table by fuzzy-joining an auxiliary table to it.</p></td>
@@ -654,7 +654,7 @@
 </tbody>
 </table>
 </div>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fuzzy_join</span></code></a></p></td>
 <td><p>Fuzzy (approximate) join.</p></td>
@@ -665,7 +665,7 @@
 </section>
 <section id="encoding-a-column">
 <span id="encoding-a-column-ref"></span><h2>Encoding a column<a class="headerlink" href="#encoding-a-column" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a></p></td>
 <td><p>Encode string columns by constructing latent topics.</p></td>
@@ -691,7 +691,7 @@
 </tbody>
 </table>
 </div>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.to_datetime.html#skrub.to_datetime" title="skrub.to_datetime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_datetime</span></code></a></p></td>
 <td><p>Convert DataFrame or column to Datetime dtype.</p></td>
@@ -704,7 +704,7 @@
 <p>These encoders require installing additional dependencies around torch.
 See the “deep learning dependencies” section in the <a class="reference internal" href="../install.html#installation-instructions"><span class="std std-ref">Install</span></a>
 guide for more details.</p>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TextEncoder</span></code></a></p></td>
 <td><p>Encode string features by applying a pretrained language model         downloaded from the HuggingFace Hub.</p></td>
@@ -716,13 +716,13 @@ guide for more details.</p>
 </section>
 <section id="building-a-pipeline">
 <span id="building-a-pipeline-ref"></span><h2>Building a pipeline<a class="headerlink" href="#building-a-pipeline" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></p></td>
 <td><p>Transform a dataframe to a numeric (vectorized) representation.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cleaner</span></code></a></p></td>
-<td><p>A light transformer that preprocesses each column of a dataframe.</p></td>
+<td><p>Column-wise consistency checks and sanitization, eg of null values or dates.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SelectCols</span></code></a></p></td>
 <td><p>Select a subset of a DataFrame's columns.</p></td>
@@ -733,7 +733,7 @@ guide for more details.</p>
 </tbody>
 </table>
 </div>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tabular_learner</span></code></a></p></td>
 <td><p>Get a simple machine-learning pipeline for tabular data.</p></td>
@@ -744,7 +744,7 @@ guide for more details.</p>
 </section>
 <section id="generating-an-html-report">
 <span id="generating-a-report-ref"></span><h2>Generating an HTML report<a class="headerlink" href="#generating-an-html-report" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableReport</span></code></a></p></td>
 <td><p>Summarize the contents of a dataframe.</p></td>
@@ -752,7 +752,7 @@ guide for more details.</p>
 </tbody>
 </table>
 </div>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.patch_display.html#skrub.patch_display" title="skrub.patch_display"><code class="xref py py-obj docutils literal notranslate"><span class="pre">patch_display</span></code></a></p></td>
 <td><p>Replace the default DataFrame HTML displays with <code class="docutils literal notranslate"><span class="pre">skrub.TableReport</span></code>.</p></td>
@@ -769,7 +769,7 @@ guide for more details.</p>
 </section>
 <section id="cleaning-a-dataframe">
 <span id="cleaning-a-dataframe-ref"></span><h2>Cleaning a dataframe<a class="headerlink" href="#cleaning-a-dataframe" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deduplicate</span></code></a></p></td>
 <td><p>Deduplicate categorical data by hierarchically clustering similar strings.</p></td>
@@ -780,7 +780,7 @@ guide for more details.</p>
 </section>
 <section id="downloading-a-dataset">
 <span id="downloading-a-dataset-ref"></span><h2>Downloading a dataset<a class="headerlink" href="#downloading-a-dataset" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.datasets.fetch_bike_sharing.html#skrub.datasets.fetch_bike_sharing" title="skrub.datasets.fetch_bike_sharing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch_bike_sharing</span></code></a></p></td>
 <td><p>Fetch the bike sharing dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p></td>
@@ -950,7 +950,7 @@ guide for more details.</p>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>

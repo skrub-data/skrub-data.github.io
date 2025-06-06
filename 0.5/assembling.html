@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="_static/jupyterlite_sphinx.css?v=2c9f8f05" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyterlite_sphinx.css?v=8ee2c72c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="_static/documentation_options.js?v=2a2fe768"></script>
+    <script src="_static/documentation_options.js?v=e1a677a5"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.3';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.5.4';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -76,7 +76,7 @@
     <link rel="prev" title="Encoding: creating feature matrices" href="encoding.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.5.3" />
+  <meta name="docsearch:version" content="0.5.4" />
   </head>
   
   
@@ -587,7 +587,7 @@ often from different sources.</p>
 related columns. Furthermore, it chooses the type of fuzzy matching used based
 on the column type (string, numerical or datetime). It also outputs a similarity
 score, to single out bad matches, so that they can be dropped or replaced.</p>
-<p>In sum, equivalent to <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html#pandas.merge" title="(in pandas v2.2.3)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.merge()</span></code></a>, the <a class="reference internal" href="reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>
+<p>In sum, equivalent to <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html#pandas.merge" title="(in pandas v2.3.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pandas.merge()</span></code></a>, the <a class="reference internal" href="reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>
 has no need for pre-cleaning.</p>
 </section>
 <section id="joining-external-tables-for-machine-learning">
@@ -597,7 +597,7 @@ the common key.</p>
 <p>In addition, skrub also enable more advanced analysis:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a>: fuzzy-joins an external table using a scikit-learn
-transformer, which can be used in a scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>.
+transformer, which can be used in a scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>.
 Pipelines are useful for cross-validation and hyper-parameter search, but also
 for model deployment.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>: instead of performing 1:1 joins like <a class="reference internal" href="reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a>, <a class="reference internal" href="reference/generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>
@@ -734,7 +734,7 @@ useful data that will be joined to another table.</p>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>
