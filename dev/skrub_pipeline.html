@@ -596,8 +596,8 @@
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>Skrub provides an easy way to build complex, flexible machine learning pipelines.
 There are several needs that are not easily addressed with standard scikit-learn
-tools such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a> and
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ColumnTransformer</span></code></a>, and for which a Skrub pipeline offers a
+tools such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a> and
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ColumnTransformer</span></code></a>, and for which a Skrub pipeline offers a
 solution:</p>
 <ul class="simple">
 <li><p><strong>Multiple tables</strong>: We often have several tables of different shapes (for
@@ -613,14 +613,14 @@ the powerful and familiar APIs of <a class="reference external" href="https://pa
 <li><p><strong>Hyperparameter tuning</strong>: Choices of estimators, hyperparameters, and even
 the pipeline architecture can be guided by validation scores. Specifying
 ranges of possible values outside of the pipeline itself (as in
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GridSearchCV</span></code></a>) is difficult in complex
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GridSearchCV</span></code></a>) is difficult in complex
 pipelines.</p></li>
 <li><p><strong>Iterative development</strong>: Building a pipeline step by step while inspecting
 intermediate results allows for a short feedback loop and early discovery of
 errors.</p></li>
 </ul>
 <section id="what-is-the-difference-with-scikit-learn-pipeline">
-<h3>What is the difference with scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>?<a class="headerlink" href="#what-is-the-difference-with-scikit-learn-pipeline" title="Link to this heading">#</a></h3>
+<h3>What is the difference with scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>?<a class="headerlink" href="#what-is-the-difference-with-scikit-learn-pipeline" title="Link to this heading">#</a></h3>
 <p>Scikit-learn pipelines represent a linear sequence of transformations on one
 table with a fixed number of rows.</p>
 <a class="reference internal image-reference" href="_images/sklearn_pipeline.svg"><img alt="_images/sklearn_pipeline.svg" src="_images/sklearn_pipeline.svg" style="width: 500px;" />
@@ -938,7 +938,7 @@ result without modifying its input.</p>
 <span class="x">df = df.assign(new_col=...) instead of df[&#39;new_col&#39;] = ...</span>
 </pre></div>
 </div>
-<p>Note the suggestion in the error message: using <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.assign.html#pandas.DataFrame.assign" title="(in pandas v2.2.3)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pandas.DataFrame.assign()</span></code></a>.
+<p>Note the suggestion in the error message: using <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.assign.html#pandas.DataFrame.assign" title="(in pandas v2.3.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pandas.DataFrame.assign()</span></code></a>.
 When we do need assignments or in-place transformations, we can put them in a
 <a class="reference internal" href="reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> function. But we should make a (shallow) copy of the inputs and
 return a new value.</p>
