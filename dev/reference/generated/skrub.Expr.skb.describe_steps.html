@@ -732,7 +732,7 @@
 <h1>skrub.Expr.skb.describe_steps<a class="headerlink" href="#skrub-expr-skb-describe-steps" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.describe_steps">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">describe_steps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f03ba44/skrub/_expressions/_skrub_namespace.py#L1084"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.describe_steps" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">describe_steps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2ec7ccc/skrub/_expressions/_skrub_namespace.py#L1084"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.describe_steps" title="Link to this definition">#</a></dt>
 <dd><p>Get a text representation of the computation graph.</p>
 <p>Usually the graphical representation provided by <code class="docutils literal notranslate"><span class="pre">draw_graph</span></code> or
 <code class="docutils literal notranslate"><span class="pre">full_report</span></code> is more useful. This is a fallback for inspecting the
@@ -753,13 +753,13 @@ line.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">c</span> <span class="o">*</span> <span class="n">c</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_steps</span><span class="p">())</span>
-<span class="go">VAR &#39;a&#39;</span>
-<span class="go">VAR &#39;b&#39;</span>
-<span class="go">BINOP: add</span>
-<span class="go">( VAR &#39;a&#39; )*</span>
-<span class="go">( VAR &#39;b&#39; )*</span>
-<span class="go">( BINOP: add )*</span>
-<span class="go">BINOP: mul</span>
+<span class="go">Var &#39;a&#39;</span>
+<span class="go">Var &#39;b&#39;</span>
+<span class="go">BinOp: add</span>
+<span class="go">( Var &#39;a&#39; )*</span>
+<span class="go">( Var &#39;b&#39; )*</span>
+<span class="go">( BinOp: add )*</span>
+<span class="go">BinOp: mul</span>
 <span class="go">* Cached, not recomputed</span>
 </pre></div>
 </div>
