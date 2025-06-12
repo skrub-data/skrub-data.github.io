@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/RELEASE_PROCESS.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Target audience: This document is aimed toward established contributors the project. Process: Going further, we assume you have write-access to both the repository and the PyPI project page. To rel..." />
+<meta property="og:description" content="Target audience: This document is aimed at established contributors to the project. Process: Going further, we assume you have write-access to both the repository, PyPI and conda-forge project page..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Target audience: This document is aimed toward established contributors the project. Process: Going further, we assume you have write-access to both the repository and the PyPI project page. To rel..." />
+<meta name="description" content="Target audience: This document is aimed at established contributors to the project. Process: Going further, we assume you have write-access to both the repository, PyPI and conda-forge project page..." />
 
     <title>Release process &#8212; skrub</title>
   
@@ -73,6 +73,7 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Contributing to skrub" href="CONTRIBUTING.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.6.dev0" />
@@ -206,7 +207,7 @@
 </li>
 
 
-<li class=" ">
+<li class=" current active">
   <a class="nav-link dropdown-item nav-internal" href="development.html">
     Development
   </a>
@@ -351,10 +352,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -411,7 +410,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="development.html">
     Development
   </a>
@@ -518,6 +517,21 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="vision.html">Vision: where is skrub heading?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CONTRIBUTING.html">Contributing to skrub</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Release process</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -553,6 +567,9 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
+    
+    <li class="breadcrumb-item"><a href="development.html" class="nav-link">Development</a></li>
+    
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Release process</span></li>
   </ul>
 </nav>
@@ -574,80 +591,175 @@
 <h1>Release process<a class="headerlink" href="#release-process" title="Link to this heading">#</a></h1>
 <section id="target-audience">
 <h2>Target audience<a class="headerlink" href="#target-audience" title="Link to this heading">#</a></h2>
-<p>This document is aimed toward established contributors the project.</p>
+<p>This document is aimed at established contributors to the project.</p>
 </section>
 <section id="process">
 <h2>Process<a class="headerlink" href="#process" title="Link to this heading">#</a></h2>
-<p>Going further, we assume you have write-access to both the repository
-and the PyPI project page.</p>
+<p>Going further, we assume you have write-access to both the repository, PyPI and
+conda-forge project page.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>It is useful to publish a beta version of the package before the
-actual one.</p>
-</div>
-<p>To release a new minor version of <code class="docutils literal notranslate"><span class="pre">skrub</span></code> (e.g. 0.1.0 -&gt; 0.2.0), here are
-the main steps and appropriate resources:</p>
-<ol class="arabic simple">
-<li><p>Update <code class="docutils literal notranslate"><span class="pre">skrub/CHANGES.rst</span></code>. It should be updated at each PR,
-but double-checking before the release is good practice.</p></li>
-<li><p>Create a branch by running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">0.&lt;version&gt;.X</span></code>
-(e.g. <code class="docutils literal notranslate"><span class="pre">0.2.X</span></code>).</p></li>
-<li><p>Update <code class="docutils literal notranslate"><span class="pre">skrub/skrub/VERSION.txt</span></code> with the new version
-number (e.g. <code class="docutils literal notranslate"><span class="pre">0.2.0</span></code>).</p></li>
-<li><p>Update <code class="docutils literal notranslate"><span class="pre">skrub/setup.cfg</span></code> (e.g. Python version supported and dependencies).</p></li>
-<li><p>Commit the changes with a new tag: the version you’re going to push,
-with the commands <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;Bump</span> <span class="pre">to</span> <span class="pre">version</span> <span class="pre">0.2.0&quot;</span></code> and
-<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">0.2.0</span></code>.
-Push the branch to the <code class="docutils literal notranslate"><span class="pre">skrub</span></code> repository.
-The CI will automatically create an associated folder in the documentation repo.</p></li>
-<li><p>In the documentation repository (e.g. <code class="docutils literal notranslate"><span class="pre">https://github.com/skrub-data/skrub-data.github.io</span></code>),
-update the <code class="docutils literal notranslate"><span class="pre">stable</span></code> symlink to the latest stable version: first, unlink <code class="docutils literal notranslate"><span class="pre">stable</span></code>
-(i.e. <code class="docutils literal notranslate"><span class="pre">unlink</span> <span class="pre">stable</span></code>); then, create a new symlink (i.e. <code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span> <span class="pre">0.2</span> <span class="pre">stable</span></code>);
-finally, commit and push the changes into the repository.</p></li>
-<li><p>Create a new release via GitHub: <code class="docutils literal notranslate"><span class="pre">https://github.com/skrub-data/skrub/releases/new</span></code>.
-Provide the tag using the current version, e.g. <code class="docutils literal notranslate"><span class="pre">0.2.0</span></code> and make sure to select
-the target branch created earlier (e.g. <code class="docutils literal notranslate"><span class="pre">0.2.X</span></code>).</p></li>
-<li><p>Next, you will need to install the <code class="docutils literal notranslate"><span class="pre">twine</span></code> and <code class="docutils literal notranslate"><span class="pre">setuptools</span></code> packages with
-<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--upgrade</span> <span class="pre">twine</span> <span class="pre">setuptools</span></code>.</p></li>
-<li><p>Build the source with <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">bdist_wheel</span> <span class="pre">sdist</span></code></p></li>
-<li><p><a class="reference external" href="https://shouldideploy.today/">Check if today is a good day for releasing</a></p></li>
-<li><p>It is advised to first push the version on the test package index
-<code class="docutils literal notranslate"><span class="pre">test.pypi.org</span></code> before the official package index <code class="docutils literal notranslate"><span class="pre">pypi.org</span></code>.
-You can do this with the command
-<code class="docutils literal notranslate"><span class="pre">twine</span> <span class="pre">upload</span> <span class="pre">dist/*</span> <span class="pre">--repository-url</span> <span class="pre">https://test.pypi.org/legacy/</span></code>
-This is useful to test if the build done by twine and the push to
-the package indexer is working.</p></li>
-<li><p>Install the new release from the test package index on a dedicated
-environment with the command
-<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--index-url</span> <span class="pre">https://test.pypi.org/simple/</span> <span class="pre">--extra-index-url</span> <span class="pre">https://test.pypi.org/simple/skrub</span></code>.
-If there are other package install errors, it probably means those packages are not on test.pypi.org.
-Download them from pypi.org directly with just <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code>.</p></li>
-<li><p>Finally, if that works fine, you can push to the official package
-index with <code class="docutils literal notranslate"><span class="pre">twine</span> <span class="pre">upload</span> <span class="pre">dist/*</span></code></p></li>
-<li><p>It is also good practice at this point to create a new environment
-and try installing and using the library (for example by launching examples).
-Be sure to install it with the command <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">skrub==&lt;version&gt;</span></code>
-(e.g. <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">skrub==0.2.0</span></code>), otherwise some package/env managers
-such as conda might use a cached version.</p></li>
-<li><p>Set package version to <code class="docutils literal notranslate"><span class="pre">&lt;next_version&gt;.dev0</span></code>, commit and push.</p></li>
-</ol>
-<p>For the bug fix release (e.g. 0.2.0 -&gt; 0.2.1), the process is similar. You don’t need
-to create the branch <code class="docutils literal notranslate"><span class="pre">0.2.X</span></code> because it exists already. You need to cherry-pick the
-commits from <code class="docutils literal notranslate"><span class="pre">main</span></code> into this branch and then follow the same steps as above:
-bumping the version, update the setup, commit and push the changes and finally create
-and update the wheel.</p>
-</section>
-<section id="resources">
-<h2>Resources<a class="headerlink" href="#resources" title="Link to this heading">#</a></h2>
+<p>We follow scikit-learn versioning conventions:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://packaging.python.org/guides/distributing-packages-using-setuptools/">Packaging and distributing software - Python Packaging User
-Guide</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/GIF3LaRqgXo">Publishing (Perfect) Python Packages on
-PyPi</a></p></li>
-<li><p><a class="reference external" href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository">Managing releases in a
-repository</a></p></li>
-<li><p><a class="reference external" href="https://shouldideploy.today/">Should I deploy today?</a></p></li>
+<li><p>Major/Minor releases are numbered X.Y.0.</p></li>
+<li><p>Bug-fix releases are done as needed between major/minor releases and only apply to
+the last stable version. These releases are numbered X.Y.Z.</p></li>
 </ul>
+</div>
+<p>To release a new minor version of skrub (e.g., from 0.1.0 to 0.2.0), here are the main
+steps and appropriate resources: the main steps and appropriate resources:</p>
+<section id="preparing-the-release-branch">
+<h3>Preparing the release branch<a class="headerlink" href="#preparing-the-release-branch" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Create the <code class="docutils literal notranslate"><span class="pre">0.2.X</span></code> branch, branching from upstream/main, and push it upstream
+(it may already exist). You can also use the GitHub UI to create the branch if you
+disabled <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">upstream</span></code> in your local git config.</p></li>
+<li><p>Edit CHANGES.rst: replace “ongoing development” with <code class="docutils literal notranslate"><span class="pre">0.2.0</span></code></p></li>
+<li><p>Edit VERSION.txt: replace <code class="docutils literal notranslate"><span class="pre">0.2.dev0</span></code> with <code class="docutils literal notranslate"><span class="pre">0.2.0</span></code></p></li>
+<li><p>Build the wheel and test it:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-r</span> <span class="pre">dist</span> <span class="pre">skrub.egg-info</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">build</span></code> (may need <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">build</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">twine</span> <span class="pre">check</span> <span class="pre">dist/*</span></code> (may need <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">twine</span></code>)</p></li>
+<li><p>In a directory outside of the skrub repo:</p>
+<ul>
+<li><p>Install the wheel in a fresh virtualenv</p></li>
+<li><p>Run all tests with <code class="docutils literal notranslate"><span class="pre">pytest</span> <span class="pre">--pyargs</span> <span class="pre">skrub</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>git commit the changes done to CHANGES.rst and VERSION.txt</p></li>
+<li><p>If we are doing a bugfix release (<code class="docutils literal notranslate"><span class="pre">0.2.X</span></code> already existed before) we need to rebase
+on the existing <code class="docutils literal notranslate"><span class="pre">0.2.X</span></code>.</p>
+<ul>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rebase</span> <span class="pre">-i</span> <span class="pre">upstream/0.2.X</span></code></p></li>
+<li><p>All commits that have been made on main that we want to keep will be replayed on
+top of the last release’s tag in <code class="docutils literal notranslate"><span class="pre">0.2.X</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Open a PR targeting <code class="docutils literal notranslate"><span class="pre">0.2.X</span></code>. This will update the doc for the stable release. While
+the update runs, we can prepare a PR on the main branch to be merged after the
+release, see the next section.</p></li>
+</ul>
+</section>
+<section id="meanwhile-preparing-the-post-released-pr">
+<h3>Meanwhile, preparing the post-released PR<a class="headerlink" href="#meanwhile-preparing-the-post-released-pr" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><dl class="simple">
+<dt>For a major/minor (not a patch) release:</dt><dd><ul>
+<li><p>VERSION.txt: update to <code class="docutils literal notranslate"><span class="pre">0.3.dev0</span></code> (the next minor).</p></li>
+<li><p>CHANGES.rst: create a header for the new entries (“ongoing development”).</p></li>
+<li><p>doc/version.json: update the version numbers of the stable release and dev branch.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="the-doc-update-has-succeeded">
+<h3>The doc update has succeeded<a class="headerlink" href="#the-doc-update-has-succeeded" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Merge the PR targeting <code class="docutils literal notranslate"><span class="pre">0.2.X</span></code>, <strong>without squashing the commits</strong>.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This PR should be merged with the rebase mode instead of the usual squash mode
+because we want to keep the history in the <code class="docutils literal notranslate"><span class="pre">0.2.X</span></code> branch close to the history of
+the main branch, which will help for future bug fix releases.</p>
+<p>By default, only the squash &amp; merge option is available to merge PRs on the main
+branch. So, when releasing, we need to temporarily enable the rebase option.
+To do so, head to Settings -&gt; General -&gt; Pull request, enable rebasing, merge the
+PR targeting <code class="docutils literal notranslate"><span class="pre">0.2.X</span></code> with the rebase option, then disable the setting again.</p>
+</div>
+<ul class="simple">
+<li><p>Check the rendering of the doc for the built <code class="docutils literal notranslate"><span class="pre">0.2.X</span></code> branch, the examples and the
+changelog. Ideally, we should go over all features and double check that the docs are
+being rendered correctly, because issues there often go unnoticed.</p></li>
+</ul>
+<p>Next, we’ll build the wheel and push it to Pypi!</p>
+</section>
+<section id="pushing-the-wheel-to-pypi">
+<h3>Pushing the wheel to Pypi<a class="headerlink" href="#pushing-the-wheel-to-pypi" title="Link to this heading">#</a></h3>
+<ul>
+<li><p>Checkout to the release candidate branch:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>fetch<span class="w"> </span>upstream
+git<span class="w"> </span>checkout<span class="w"> </span>upstream/0.2.X
+</pre></div>
+</div>
+</li>
+<li><p>Build the wheel and test it:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-r</span> <span class="pre">dist</span> <span class="pre">skrub.egg-info</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">build</span></code> (may need <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">build</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">twine</span> <span class="pre">check</span> <span class="pre">dist/*</span></code> (may need <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">twine</span></code>)</p></li>
+<li><p>In a directory outside of the skrub repo:</p>
+<ul>
+<li><p>Install the wheel in a fresh virtualenv</p></li>
+<li><p>Run all tests with <code class="docutils literal notranslate"><span class="pre">pytest</span> <span class="pre">--pyargs</span> <span class="pre">skrub</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>If test passed successfully, upload to Pypi: <code class="docutils literal notranslate"><span class="pre">twine</span> <span class="pre">upload</span> <span class="pre">dist/*</span></code>.</p></li>
+<li><p>Tag the release commit and push the tag:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">tag</span> <span class="pre">-s</span> <span class="pre">'0.2.0'</span></code>, <code class="docutils literal notranslate"><span class="pre">-s</span></code> is for signing and is optional.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">upstream</span> <span class="pre">tag</span> <span class="pre">0.2.0</span></code></p></li>
+</ul>
+</li>
+<li><p>Check that your version is now on Pypi.</p></li>
+<li><p>Merge the post-release PR</p></li>
+<li><p>For major/minor releases only, in the documentation branches repository
+<a class="github reference external" href="https://github.com/skrub-data/skrub-data.github.io">skrub-data/skrub-data.github.io</a>, update the documentation symlink
+to stable version, here from 0.1 to 0.2:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>stable
+ln<span class="w"> </span>-s<span class="w"> </span><span class="m">0</span>.2<span class="w"> </span>stable
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">stable</span></code> should point on the latest number release.</p>
+</li>
+</ul>
+</section>
+<section id="update-the-conda-forge-recipe">
+<h3>Update the conda-forge recipe<a class="headerlink" href="#update-the-conda-forge-recipe" title="Link to this heading">#</a></h3>
+<ul>
+<li><p>Create the branch <code class="docutils literal notranslate"><span class="pre">release-0.2.0</span></code> in
+<a class="reference external" href="https://github.com/conda-forge/skrub-feedstock">skrub-feedstock</a></p></li>
+<li><dl>
+<dt>Edit <code class="docutils literal notranslate"><span class="pre">recipe/meta.yml</span></code>, which is the only file we edit manually in that repo:</dt><dd><ul>
+<li><p>Update the version number.</p></li>
+<li><p>Update the sha256 using Pypi hash.</p></li>
+<li><p>If needed, reset the build number to 0.</p></li>
+<li><p>If needed, update the requirements.</p>
+<ul>
+<li><p>Check the new requirements with:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span><span class="m">0</span>.2.0
+git<span class="w"> </span>diff<span class="w"> </span><span class="m">0</span>.1.0<span class="w"> </span>--<span class="w"> </span>pyproject.toml
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Open a PR targeting <code class="docutils literal notranslate"><span class="pre">upstream/skrub-feedstock</span></code> main branch.</p></li>
+<li><p>Use the the checklist posted in the PR template. In particular, it asks to post a
+comment asking a bot to re-render the recipe. Make sure to wait until it has finished.</p></li>
+<li><p>Merge the PR. It takes up to an hour for the package to be available from the
+conda-forge channel.</p></li>
+<li><p>When it becomes available, install it in a fresh environment and run tests.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can add new maintainers to that repo by listing them at the end of meta.yml.</p>
+</div>
+<ul class="simple">
+<li><p>If the new recipe works fine, announce the release on social network channels 🎉!</p></li>
+</ul>
+</section>
 </section>
 </section>
 
@@ -661,6 +773,15 @@ repository</a></p></li>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="CONTRIBUTING.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Contributing to skrub</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
@@ -681,8 +802,14 @@ repository</a></p></li>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#target-audience">Target audience</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#process">Process</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">Resources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#process">Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-the-release-branch">Preparing the release branch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meanwhile-preparing-the-post-released-pr">Meanwhile, preparing the post-released PR</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-doc-update-has-succeeded">The doc update has succeeded</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-the-wheel-to-pypi">Pushing the wheel to Pypi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-conda-forge-recipe">Update the conda-forge recipe</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
