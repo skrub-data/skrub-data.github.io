@@ -739,37 +739,15 @@
 <h1>tabular_learner<a class="headerlink" href="#tabular-learner" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.tabular_learner">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f1050f6/skrub/_tabular_learner.py#L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_learner" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/5ec524d/skrub/_tabular_learner.py#L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_learner" title="Link to this definition">#</a></dt>
 <dd><p>Get a simple machine-learning pipeline for tabular data.</p>
-<p>Given a scikit-learn <code class="docutils literal notranslate"><span class="pre">estimator</span></code>, this function creates a
-machine-learning pipeline that preprocesses tabular data to extract numeric
-features, impute missing values and scale the data if necessary, then applies the
-<code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p>
-<p>Instead of an actual estimator, <code class="docutils literal notranslate"><span class="pre">estimator</span></code> can also be the special-cased strings
-<code class="docutils literal notranslate"><span class="pre">'regressor'</span></code>, <code class="docutils literal notranslate"><span class="pre">'regression'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classifier'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classification'</span></code> to use a
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a> or a
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a> with default
-parameters.</p>
-<p><code class="docutils literal notranslate"><span class="pre">tabular_learner</span></code> returns a scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pipeline</span></code></a>
-with several steps:</p>
-<ul class="simple">
-<li><p>A <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> transforms the tabular data into numeric
-features. Its parameters are chosen depending on the provided
-<code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p></li>
-<li><p>An optional <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a> imputes missing values
-by their mean and adds binary columns that indicate which values were
-missing. This step is only added if the <code class="docutils literal notranslate"><span class="pre">estimator</span></code> cannot handle
-missing values itself.</p></li>
-<li><p>An optional <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> centers and
-rescales the data. This step is not added (because it is unnecessary) when
-the <code class="docutils literal notranslate"><span class="pre">estimator</span></code> is a tree ensemble such as random forest or gradient
-boosting.</p></li>
-<li><p>The last step is the provided <code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p></li>
-</ul>
-<p>Read more in the <a class="reference internal" href="../../end_to_end_pipeline.html#table-vectorizer"><span class="std std-ref">User Guide</span></a>.</p>
+<p>Given either a scikit-learn estimator or one of the special-cased strings
+<code class="docutils literal notranslate"><span class="pre">'regressor'</span></code>, <code class="docutils literal notranslate"><span class="pre">'regression'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classifier'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classification'</span></code>, this
+function creates a scikit-learn pipeline that extracts numeric features,
+imputes missing values and scales the data if necessary, then applies the estimator.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><code class="docutils literal notranslate"><span class="pre">tabular_learner</span></code> is a recent addition and the heuristics used
+<p>The heuristics used by the <code class="docutils literal notranslate"><span class="pre">tabular_learner</span></code>
 to define an appropriate preprocessing based on the <code class="docutils literal notranslate"><span class="pre">estimator</span></code> may change
 in future releases.</p>
 </div>
@@ -806,6 +784,22 @@ preprocessing and the provided <code class="docutils literal notranslate"><span 
 </dd>
 </dl>
 <p class="rubric">Notes</p>
+<p><code class="docutils literal notranslate"><span class="pre">tabular_learner</span></code> returns a scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pipeline</span></code></a>
+with several steps:</p>
+<ul class="simple">
+<li><p>A <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> transforms the tabular data into numeric
+features. Its parameters are chosen depending on the provided
+<code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p></li>
+<li><p>An optional <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a> imputes missing values
+by their mean and adds binary columns that indicate which values were
+missing. This step is only added if the <code class="docutils literal notranslate"><span class="pre">estimator</span></code> cannot handle
+missing values itself.</p></li>
+<li><p>An optional <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> centers and
+rescales the data. This step is not added (because it is unnecessary) when
+the <code class="docutils literal notranslate"><span class="pre">estimator</span></code> is a tree ensemble such as random forest or gradient
+boosting.</p></li>
+<li><p>The last step is the provided <code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p></li>
+</ul>
 <p>The parameter values for the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> might differ depending on the
 version of scikit-learn:</p>
 <ul class="simple">
@@ -821,6 +815,7 @@ features.</p></li>
 Therefore, before this version, a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a> is used
 to impute missing values.</p></li>
 </ul>
+<p>Read more in the <a class="reference internal" href="../../end_to_end_pipeline.html#table-vectorizer"><span class="std std-ref">User Guide</span></a>.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">tabular_learner</span>
 </pre></div>
@@ -828,7 +823,7 @@ to impute missing values.</p></li>
 <p>We can easily get a default pipeline for regression or classification:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;regression&#39;</span><span class="p">)</span>
 <span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
-<span class="go">                 TableVectorizer(high_cardinality=MinHashEncoder(),</span>
+<span class="go">                 TableVectorizer(high_cardinality=StringEncoder(),</span>
 <span class="go">                                 low_cardinality=ToCategorical())),</span>
 <span class="go">                (&#39;histgradientboostingregressor&#39;,</span>
 <span class="go">                 HistGradientBoostingRegressor(categorical_features=&#39;from_dtype&#39;))])</span>
@@ -838,7 +833,7 @@ to impute missing values.</p></li>
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;classification&#39;</span><span class="p">)</span>
 <span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
-<span class="go">                 TableVectorizer(high_cardinality=MinHashEncoder(),</span>
+<span class="go">                 TableVectorizer(high_cardinality=StringEncoder(),</span>
 <span class="go">                                 low_cardinality=ToCategorical())),</span>
 <span class="go">                (&#39;histgradientboostingclassifier&#39;,</span>
 <span class="go">                 HistGradientBoostingClassifier(categorical_features=&#39;from_dtype&#39;))])</span>
@@ -902,32 +897,30 @@ details):</p>
 <span class="go">                (&#39;logisticregression&#39;, LogisticRegression())])</span>
 </pre></div>
 </div>
-<p>We see that for the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a> we get
-a configuration of the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> which is intended
-to work well for a wide variety of downstream estimators. Moreover, as the
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a> cannot handle missing
-values, an imputation step is added. Finally, as many models require the
-inputs to be centered and on the same scale, centering and standard scaling
-is added.</p>
+<p>For a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a>, we get:</p>
+<ul class="simple">
+<li><p>a default configuration of the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> which is intended
+to work well for a wide variety of downstream estimators. The configuration
+adds <code class="docutils literal notranslate"><span class="pre">spline</span></code> periodic features to datetime columns.</p></li>
+<li><p>A <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a>, as the
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a> cannot handle missing values.</p></li>
+<li><p>A <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> for centering and standard
+scaling numerical features.</p></li>
+</ul>
 <p>On the other hand, For the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>
 (generated with the string <code class="docutils literal notranslate"><span class="pre">&quot;classifier&quot;</span></code>):</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_learner</span><span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">)</span>
 <span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
-<span class="go">                 TableVectorizer(high_cardinality=MinHashEncoder(),</span>
+<span class="go">                 TableVectorizer(high_cardinality=StringEncoder(),</span>
 <span class="go">                                 low_cardinality=ToCategorical())),</span>
 <span class="go">                (&#39;histgradientboostingclassifier&#39;,</span>
 <span class="go">                 HistGradientBoostingClassifier(categorical_features=&#39;from_dtype&#39;))])</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>A <a class="reference internal" href="skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> is used as the
-<code class="docutils literal notranslate"><span class="pre">high_cardinality</span></code>. This encoder provides good
-performance when the supervised estimator is based on a decision tree
-or ensemble of trees, as is the case for the
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>. Unlike the
-default <a class="reference internal" href="skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>, the <a class="reference internal" href="skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> does not produce
-interpretable features. However, it is much faster and uses less
-memory.</p></li>
+<li><p>A <a class="reference internal" href="skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StringEncoder</span></code></a> is used as the <code class="docutils literal notranslate"><span class="pre">high_cardinality</span></code> encoder. This
+encoder strikes a good balance between quality and performance in most
+situations.</p></li>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">low_cardinality</span></code> does not one-hot encode features.
 The <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a> has built-in
 support for categorical data which is more efficient than one-hot
@@ -937,9 +930,8 @@ makes sure that those features have a categorical dtype so that the
 as such.</p></li>
 <li><p>There is no spline encoding of datetimes.</p></li>
 <li><p>There is no missing-value imputation because the classifier has its own
-(better) mechanism for dealing with missing values.</p></li>
-<li><p>There is no standard scaling which is unnecessary for trees and ensembles
-of trees.</p></li>
+(better) mechanism for dealing with missing values, and no standard scaling
+because it is unnecessary for tree ensembles.</p></li>
 </ul>
 </dd></dl>
 
