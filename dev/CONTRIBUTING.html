@@ -175,7 +175,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="reference/index.html">
-    API
+    API Reference
   </a>
 </li>
 
@@ -385,7 +385,7 @@
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="reference/index.html">
-    API
+    API Reference
   </a>
 </li>
 
@@ -923,6 +923,18 @@ specific examples, you can use the following command with a regex pattern:</p>
 </div>
 <p>This is especially helpful when you’re only modifying or checking a few examples.</p>
 </section>
+<section id="editing-the-api-reference-documentation">
+<h2>Editing the API reference documentation<a class="headerlink" href="#editing-the-api-reference-documentation" title="Link to this heading">#</a></h2>
+<p>To add a new entry to the <a class="reference internal" href="reference/index.html#api-ref"><span class="std std-ref">API reference documentation</span></a> or change its
+content, head to <code class="docutils literal notranslate"><span class="pre">doc/api_reference.py</span></code>. This data is then used by <code class="docutils literal notranslate"><span class="pre">doc/conf.py</span></code>
+to render templates located at <code class="docutils literal notranslate"><span class="pre">doc/reference/*.rst.template</span></code>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Note that <strong>all public functions and classes must be documented in the API
+reference</strong>, hence when adding a public function or class, a new entry must be
+added, as detailed just above.</p>
+</section>
 </section>
 
 
@@ -1007,6 +1019,7 @@ specific examples, you can use the following command with a regex pattern:</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-documentation">Building the documentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editing-the-api-reference-documentation">Editing the API reference documentation</a></li>
 </ul>
   </nav></div>
 

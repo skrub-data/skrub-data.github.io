@@ -1,0 +1,35 @@
+:html_theme.sidebar_secondary.remove:
+
+
+
+.. title:: joining
+
+
+.. currentmodule:: skrub
+
+
+Joining dataframes
+------------------
+
+
+
+
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :toctree: generated/
+  :template: base.rst
+
+
+  Joiner
+  AggJoiner
+  MultiAggJoiner
+  AggTarget
+  InterpolationJoiner
+  fuzzy_join

@@ -74,7 +74,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Cleaner" href="skrub.Cleaner.html" />
-    <link rel="prev" title="TextEncoder" href="skrub.TextEncoder.html" />
+    <link rel="prev" title="tabular_learner" href="skrub.tabular_learner.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.6.dev0" />
@@ -175,7 +175,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
-    API
+    API Reference
   </a>
 </li>
 
@@ -385,7 +385,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
-    API
+    API Reference
   </a>
 </li>
 
@@ -523,158 +523,142 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.Joiner.html">Joiner</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.AggJoiner.html">AggJoiner</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.MultiAggJoiner.html">MultiAggJoiner</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.AggTarget.html">AggTarget</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.InterpolationJoiner.html">InterpolationJoiner</a></li>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../pipeline.html">pipeline</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="skrub.tabular_learner.html">tabular_learner</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">TableVectorizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Cleaner.html">Cleaner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DropUninformative.html">DropUninformative</a></li>
 </ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.fuzzy_join.html">fuzzy_join</a></li>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../encoders.html">encoders</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.StringEncoder.html">StringEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.TextEncoder.html">TextEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.MinHashEncoder.html">MinHashEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.GapEncoder.html">GapEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SimilarityEncoder.html">SimilarityEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ToCategorical.html">ToCategorical</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DatetimeEncoder.html">DatetimeEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ToDatetime.html">ToDatetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
 </ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.GapEncoder.html">GapEncoder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.MinHashEncoder.html">MinHashEncoder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.SimilarityEncoder.html">SimilarityEncoder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.DatetimeEncoder.html">DatetimeEncoder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.ToCategorical.html">ToCategorical</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.ToDatetime.html">ToDatetime</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.StringEncoder.html">StringEncoder</a></li>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../reporting.html">reporting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.TableReport.html">TableReport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.patch_display.html">patch_display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.unpatch_display.html">unpatch_display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.column_associations.html">column_associations</a></li>
 </ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../cleaning.html">cleaning</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
 </ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.TextEncoder.html">TextEncoder</a></li>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Joiner.html">Joiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.AggJoiner.html">AggJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.MultiAggJoiner.html">MultiAggJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.AggTarget.html">AggTarget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.InterpolationJoiner.html">InterpolationJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.fuzzy_join.html">fuzzy_join</a></li>
 </ul>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">TableVectorizer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Cleaner.html">Cleaner</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.DropUninformative.html">DropUninformative</a></li>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../selectors.html">selectors</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.all.html">all</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.any_date.html">any_date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.boolean.html">boolean</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.glob.html">glob</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.has_nulls.html">has_nulls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.integer.html">integer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.inv.html">inv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.make_selector.html">make_selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.numeric.html">numeric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.regex.html">regex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.select.html">select</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.string.html">string</a></li>
 </ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.tabular_learner.html">tabular_learner</a></li>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../expressions.html">expressions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.var.html">var</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.X.html">X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.y.html">y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.as_expr.html">as_expr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.deferred.html">deferred</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.html">Expr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_bool.html">choose_bool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_float.html">choose_float</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_int.html">choose_int</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_from.html">choose_from</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.optional.html">optional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.cross_validate.html">cross_validate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.eval_mode.html">eval_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.apply.html">skrub.Expr.skb.apply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.apply_func.html">skrub.Expr.skb.apply_func</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.clone.html">skrub.Expr.skb.clone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.concat.html">skrub.Expr.skb.concat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.cross_validate.html">skrub.Expr.skb.cross_validate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.describe_defaults.html">skrub.Expr.skb.describe_defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.describe_param_grid.html">skrub.Expr.skb.describe_param_grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.describe_steps.html">skrub.Expr.skb.describe_steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.draw_graph.html">skrub.Expr.skb.draw_graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.drop.html">skrub.Expr.skb.drop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.eval.html">skrub.Expr.skb.eval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.freeze_after_fit.html">skrub.Expr.skb.freeze_after_fit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.full_report.html">skrub.Expr.skb.full_report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.get_data.html">skrub.Expr.skb.get_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.get_pipeline.html">skrub.Expr.skb.get_pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.get_grid_search.html">skrub.Expr.skb.get_grid_search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.get_randomized_search.html">skrub.Expr.skb.get_randomized_search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.if_else.html">skrub.Expr.skb.if_else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.iter_pipelines_grid.html">skrub.Expr.skb.iter_pipelines_grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.iter_pipelines_randomized.html">skrub.Expr.skb.iter_pipelines_randomized</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.mark_as_X.html">skrub.Expr.skb.mark_as_X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.mark_as_y.html">skrub.Expr.skb.mark_as_y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.match.html">skrub.Expr.skb.match</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.preview.html">skrub.Expr.skb.preview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.select.html">skrub.Expr.skb.select</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.set_description.html">skrub.Expr.skb.set_description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.set_name.html">skrub.Expr.skb.set_name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.subsample.html">skrub.Expr.skb.subsample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.train_test_split.html">skrub.Expr.skb.train_test_split</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.description.html">skrub.Expr.skb.description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.is_X.html">skrub.Expr.skb.is_X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.is_y.html">skrub.Expr.skb.is_y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.name.html">skrub.Expr.skb.name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Expr.skb.applied_estimator.html">skrub.Expr.skb.applied_estimator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SkrubPipeline.html">SkrubPipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ParamSearch.html">ParamSearch</a></li>
 </ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.as_expr.html">as_expr</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.choose_bool.html">choose_bool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.choose_float.html">choose_float</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.choose_from.html">choose_from</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.choose_int.html">choose_int</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.cross_validate.html">cross_validate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.deferred.html">deferred</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.eval_mode.html">eval_mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.optional.html">optional</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.var.html">var</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.X.html">X</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.y.html">y</a></li>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../datasets.html">datasets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_bike_sharing.html">fetch_bike_sharing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_country_happiness.html">fetch_country_happiness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_credit_fraud.html">fetch_credit_fraud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_drug_directory.html">fetch_drug_directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_employee_salaries.html">fetch_employee_salaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_flight_delays.html">fetch_flight_delays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_ken_embeddings.html">fetch_ken_embeddings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_ken_table_aliases.html">fetch_ken_table_aliases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_ken_types.html">fetch_ken_types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_medical_charge.html">fetch_medical_charge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_midwest_survey.html">fetch_midwest_survey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_movielens.html">fetch_movielens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_open_payments.html">fetch_open_payments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_toxicity.html">fetch_toxicity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_traffic_violations.html">fetch_traffic_violations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_videogame_sales.html">fetch_videogame_sales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.get_data_dir.html">get_data_dir</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.make_deduplication_data.html">make_deduplication_data</a></li>
 </ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.html">Expr</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.apply.html">skrub.Expr.skb.apply</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.apply_func.html">skrub.Expr.skb.apply_func</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.clone.html">skrub.Expr.skb.clone</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.concat.html">skrub.Expr.skb.concat</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.cross_validate.html">skrub.Expr.skb.cross_validate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_defaults.html">skrub.Expr.skb.describe_defaults</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_param_grid.html">skrub.Expr.skb.describe_param_grid</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.describe_steps.html">skrub.Expr.skb.describe_steps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.draw_graph.html">skrub.Expr.skb.draw_graph</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.drop.html">skrub.Expr.skb.drop</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.eval.html">skrub.Expr.skb.eval</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.freeze_after_fit.html">skrub.Expr.skb.freeze_after_fit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.full_report.html">skrub.Expr.skb.full_report</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_data.html">skrub.Expr.skb.get_data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_pipeline.html">skrub.Expr.skb.get_pipeline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_grid_search.html">skrub.Expr.skb.get_grid_search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.get_randomized_search.html">skrub.Expr.skb.get_randomized_search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.if_else.html">skrub.Expr.skb.if_else</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.iter_pipelines_grid.html">skrub.Expr.skb.iter_pipelines_grid</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.iter_pipelines_randomized.html">skrub.Expr.skb.iter_pipelines_randomized</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_X.html">skrub.Expr.skb.mark_as_X</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.mark_as_y.html">skrub.Expr.skb.mark_as_y</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.match.html">skrub.Expr.skb.match</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.preview.html">skrub.Expr.skb.preview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.select.html">skrub.Expr.skb.select</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.set_description.html">skrub.Expr.skb.set_description</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.set_name.html">skrub.Expr.skb.set_name</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.subsample.html">skrub.Expr.skb.subsample</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.train_test_split.html">skrub.Expr.skb.train_test_split</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.description.html">skrub.Expr.skb.description</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.is_X.html">skrub.Expr.skb.is_X</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.is_y.html">skrub.Expr.skb.is_y</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.name.html">skrub.Expr.skb.name</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.Expr.skb.applied_estimator.html">skrub.Expr.skb.applied_estimator</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.SkrubPipeline.html">SkrubPipeline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.ParamSearch.html">ParamSearch</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.all.html">all</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.any_date.html">any_date</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.boolean.html">boolean</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.Filter.html">Filter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.glob.html">glob</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.has_nulls.html">has_nulls</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.integer.html">integer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.inv.html">inv</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.make_selector.html">make_selector</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.NameFilter.html">NameFilter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.numeric.html">numeric</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.regex.html">regex</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.select.html">select</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.Selector.html">Selector</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.selectors.string.html">string</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.TableReport.html">TableReport</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.patch_display.html">patch_display</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.unpatch_display.html">unpatch_display</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.column_associations.html">column_associations</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.get_config.html">get_config</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.set_config.html">set_config</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.config_context.html">config_context</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
-</ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_bike_sharing.html">fetch_bike_sharing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_country_happiness.html">fetch_country_happiness</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_credit_fraud.html">fetch_credit_fraud</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_drug_directory.html">fetch_drug_directory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_employee_salaries.html">fetch_employee_salaries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_flight_delays.html">fetch_flight_delays</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_embeddings.html">fetch_ken_embeddings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_table_aliases.html">fetch_ken_table_aliases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_ken_types.html">fetch_ken_types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_medical_charge.html">fetch_medical_charge</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_midwest_survey.html">fetch_midwest_survey</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_movielens.html">fetch_movielens</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_open_payments.html">fetch_open_payments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_toxicity.html">fetch_toxicity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_traffic_violations.html">fetch_traffic_violations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.fetch_videogame_sales.html">fetch_videogame_sales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.get_data_dir.html">get_data_dir</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub.datasets.make_deduplication_data.html">make_deduplication_data</a></li>
+</details></li>
 </ul>
 </div>
 </nav></div>
@@ -716,7 +700,10 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">API</a></li>
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">API Reference</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../pipeline.html" class="nav-link">Building a pipeline</a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">TableVectorizer</span></li>
   </ul>
@@ -739,7 +726,7 @@
 <h1>TableVectorizer<a class="headerlink" href="#tablevectorizer" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.TableVectorizer">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">TableVectorizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">cardinality_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low_cardinality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OneHotEncoder(drop='if_binary',</span> <span class="pre">dtype='float32',</span> <span class="pre">handle_unknown='ignore',</span> <span class="pre">sparse_output=False)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_cardinality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">StringEncoder()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numeric</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">PassThrough()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">DatetimeEncoder()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specific_transformers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_null_fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_if_constant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_if_unique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetime_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0aec0c0/skrub/_table_vectorizer.py#L398"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">TableVectorizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">cardinality_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low_cardinality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OneHotEncoder(drop='if_binary',</span> <span class="pre">dtype='float32',</span> <span class="pre">handle_unknown='ignore',</span> <span class="pre">sparse_output=False)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_cardinality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">StringEncoder()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numeric</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">PassThrough()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">DatetimeEncoder()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specific_transformers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_null_fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_if_constant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_if_unique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetime_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/771f387/skrub/_table_vectorizer.py#L398"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer" title="Link to this definition">#</a></dt>
 <dd><p>Transform a dataframe to a numeric (vectorized) representation.</p>
 <p>Applies a different transformation to each of several kinds of columns:</p>
 <ul class="simple">
@@ -1066,7 +1053,7 @@ in <code class="docutils literal notranslate"><span class="pre">specific_columns
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0aec0c0/skrub/_table_vectorizer.py#L754"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.fit" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/771f387/skrub/_table_vectorizer.py#L754"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.fit" title="Link to this definition">#</a></dt>
 <dd><p>Fit transformer.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1089,7 +1076,7 @@ transformations).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0aec0c0/skrub/_table_vectorizer.py#L775"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/771f387/skrub/_table_vectorizer.py#L775"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit transformer and transform dataframe.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1112,7 +1099,7 @@ transformations).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.get_feature_names_out">
-<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0aec0c0/skrub/_table_vectorizer.py#L995"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_feature_names_out" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/771f387/skrub/_table_vectorizer.py#L995"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_feature_names_out" title="Link to this definition">#</a></dt>
 <dd><p>Return the column names of the output of <code class="docutils literal notranslate"><span class="pre">transform</span></code> as a list of strings.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1132,7 +1119,7 @@ transformations).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0aec0c0/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/771f387/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1153,7 +1140,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0aec0c0/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/771f387/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.7)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
@@ -1184,7 +1171,7 @@ for an example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0aec0c0/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L315"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/771f387/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L315"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -1208,7 +1195,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableVectorizer.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0aec0c0/skrub/_table_vectorizer.py#L806"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/771f387/skrub/_table_vectorizer.py#L806"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableVectorizer.transform" title="Link to this definition">#</a></dt>
 <dd><p>Transform dataframe.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1268,12 +1255,12 @@ possible to update each component of a nested object.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.TextEncoder.html"
+       href="skrub.tabular_learner.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">TextEncoder</p>
+        <p class="prev-next-title">tabular_learner</p>
       </div>
     </a>
     <a class="right-next"
