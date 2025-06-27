@@ -717,12 +717,11 @@ language models better? 2023.</p>
 </section>
 <section id="encoding-dates">
 <h2>Encoding dates<a class="headerlink" href="#encoding-dates" title="Link to this heading">#</a></h2>
-<p>The
-<a class="reference internal" href="reference/generated/skrub.to_datetime.html#skrub.to_datetime" title="skrub.to_datetime"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_datetime()</span></code></a> function and the <a class="reference internal" href="reference/generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a> transformer parse
+<p>The <a class="reference internal" href="reference/generated/skrub.to_datetime.html#skrub.to_datetime" title="skrub.to_datetime"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_datetime()</span></code></a> function and the <a class="reference internal" href="reference/generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a> transformer parse
 common datetime formats and convert columns from string to datetime; additionally,
 if you are working with a specific time format, both objects accept a custom
 <code class="docutils literal notranslate"><span class="pre">format</span></code> to use when converting.</p>
-<p>Feature engineering of datetime features can be done with the :class:<code class="docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code>,
+<p>Feature engineering of datetime features can be done with the <a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a>,
 which converts datetime columns into separate columns that contain each part of
 the datetime (year, month, day etc.), as well as additional simple features like
 the number of seconds from epoch and the day of the week. Periodic features are
