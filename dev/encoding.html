@@ -604,7 +604,8 @@ string features, as it provides good performance on both categorical features (e
 work titles, city names etc.) and free-flowing text (reviews, comments etc.),
 while being very efficient and quick to fit.</p>
 <p><a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> provides better performance on dirty categories, while
-<a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> works better on free-flowing text or when external context helps. However, both encoders
+<a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> works better on free-flowing text or when external context helps.
+However, both encoders
 are much slower to execute, and in the case of <code class="docutils literal notranslate"><span class="pre">TextEncoder</span></code>, additional
 dependencies are needed.</p>
 <p><a class="reference internal" href="reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> may scale better in case of large datasets, but its
@@ -716,9 +717,18 @@ language models better? 2023.</p>
 </section>
 <section id="encoding-dates">
 <h2>Encoding dates<a class="headerlink" href="#encoding-dates" title="Link to this heading">#</a></h2>
-<p>The <a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> encodes date and time: it represent them as
-time in seconds since a fixed date, but also added features useful to
-capture regularities: week of the day, month of the year…</p>
+<p>The
+<a class="reference internal" href="reference/generated/skrub.to_datetime.html#skrub.to_datetime" title="skrub.to_datetime"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_datetime()</span></code></a> function and the <a class="reference internal" href="reference/generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a> transformer parse
+common datetime formats and convert columns from string to datetime; additionally,
+if you are working with a specific time format, both objects accept a custom
+<code class="docutils literal notranslate"><span class="pre">format</span></code> to use when converting.</p>
+<p>Feature engineering of datetime features can be done with the :class:<code class="docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code>,
+which converts datetime columns into separate columns that contain each part of
+the datetime (year, month, day etc.), as well as additional simple features like
+the number of seconds from epoch and the day of the week. Periodic features are
+also supported, and can be added by setting the <code class="docutils literal notranslate"><span class="pre">periodic_encoding</span></code> variable
+to either <code class="docutils literal notranslate"><span class="pre">circular</span></code> (for trigonometric features), or <code class="docutils literal notranslate"><span class="pre">spline</span></code> (for spline
+features).</p>
 </section>
 </section>
 

@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**14:43.771** total execution time for 13 files **from all galleries**:
+**13:08.308** total execution time for 13 files **from all galleries**:
 
 .. container::
 
@@ -33,41 +33,41 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_expressions_10_expressions_intro.py` (``../examples/expressions/10_expressions_intro.py``)
-     - 04:12.170
+     - 04:07.997
      - 0.0
    * - :ref:`sphx_glr_auto_examples_02_text_with_string_encoders.py` (``../examples/02_text_with_string_encoders.py``)
-     - 03:22.895
+     - 02:59.646
      - 0.0
    * - :ref:`sphx_glr_auto_examples_08_join_aggregation.py` (``../examples/08_join_aggregation.py``)
-     - 02:36.241
+     - 02:06.298
      - 0.0
    * - :ref:`sphx_glr_auto_examples_06_ken_embeddings.py` (``../examples/06_ken_embeddings.py``)
-     - 01:41.605
+     - 01:26.763
      - 0.0
    * - :ref:`sphx_glr_auto_examples_01_encodings.py` (``../examples/01_encodings.py``)
-     - 00:44.897
+     - 00:41.788
      - 0.0
    * - :ref:`sphx_glr_auto_examples_expressions_11_choices.py` (``../examples/expressions/11_choices.py``)
-     - 00:43.853
+     - 00:40.587
      - 0.0
    * - :ref:`sphx_glr_auto_examples_07_multiple_key_join.py` (``../examples/07_multiple_key_join.py``)
-     - 00:19.845
-     - 0.0
-   * - :ref:`sphx_glr_auto_examples_09_interpolation_join.py` (``../examples/09_interpolation_join.py``)
-     - 00:18.003
+     - 00:15.165
      - 0.0
    * - :ref:`sphx_glr_auto_examples_expressions_12_subsampling.py` (``../examples/expressions/12_subsampling.py``)
-     - 00:14.454
+     - 00:12.565
      - 0.0
    * - :ref:`sphx_glr_auto_examples_04_fuzzy_joining.py` (``../examples/04_fuzzy_joining.py``)
-     - 00:13.649
+     - 00:12.467
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_09_interpolation_join.py` (``../examples/09_interpolation_join.py``)
+     - 00:11.393
      - 0.0
    * - :ref:`sphx_glr_auto_examples_00_getting_started.py` (``../examples/00_getting_started.py``)
-     - 00:10.114
+     - 00:08.483
      - 0.0
    * - :ref:`sphx_glr_auto_examples_03_datetime_encoder.py` (``../examples/03_datetime_encoder.py``)
-     - 00:04.817
+     - 00:03.924
      - 0.0
    * - :ref:`sphx_glr_auto_examples_05_deduplication.py` (``../examples/05_deduplication.py``)
-     - 00:01.229
+     - 00:01.230
      - 0.0
