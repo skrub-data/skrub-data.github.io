@@ -724,26 +724,12 @@
 <h1>column_associations<a class="headerlink" href="#column-associations" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.column_associations">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c173018/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/d8ce476/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
 <dd><p>Get measures of statistical associations between all pairs of columns.</p>
 <p>Reported metrics include Cramer’s V statistic and Pearson’s Correlation
-Coefficient. More may be added in the future.</p>
-<p>The result is returned as a dataframe with columns:</p>
-<p><code class="docutils literal notranslate"><span class="pre">['left_column_name',</span> <span class="pre">'left_column_idx',</span> <span class="pre">'right_column_name',</span>
-<span class="pre">'right_column_idx',</span> <span class="pre">'cramer_v',</span> <span class="pre">'pearson_corr']</span></code></p>
-<p>As the function is commutative, each pair of columns appears only once
-(either <code class="docutils literal notranslate"><span class="pre">col_1</span></code>, <code class="docutils literal notranslate"><span class="pre">col_2</span></code> or <code class="docutils literal notranslate"><span class="pre">col_2</span></code>, <code class="docutils literal notranslate"><span class="pre">col_1</span></code> but not both).
-The results are sorted from most associated to least associated.</p>
-<p>To compute the Cramer’s V statistic, all columns are discretized. Numeric
-columns are binned with 10 bins. For categorical columns, only the 10 most
-frequent categories are considered. In both cases, nulls are treated as a
-separate category, ie a separate row in the contingency table. Thus,
-associations between the values of 2 columns or between their missingness
-patterns may be captured.</p>
-<p>To compute the Pearson’s Correlation Coefficient, only numeric columns are
-considered. The correlation is computed using the Pearson method used in
-pandas or polars, depending on the dataframe. In both cases, lines containing NaNs
-are dropped.</p>
+Coefficient. The result is returned as a dataframe that contains the column
+name and idx for the left and right table and both associations; results
+are sorted in descending order by Cramer’s V association.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -759,12 +745,28 @@ are dropped.</p>
 </dd>
 </dl>
 <p class="rubric">Notes</p>
-<p>Cramér’s V is a measure of association between two nominal variables,
+<p>The result is returned as a dataframe with columns:</p>
+<p><code class="docutils literal notranslate"><span class="pre">['left_column_name',</span> <span class="pre">'left_column_idx',</span> <span class="pre">'right_column_name',</span>
+<span class="pre">'right_column_idx',</span> <span class="pre">'cramer_v',</span> <span class="pre">'pearson_corr']</span></code></p>
+<p>As the function is commutative, each pair of columns appears only once
+(either <code class="docutils literal notranslate"><span class="pre">col_1</span></code>, <code class="docutils literal notranslate"><span class="pre">col_2</span></code> or <code class="docutils literal notranslate"><span class="pre">col_2</span></code>, <code class="docutils literal notranslate"><span class="pre">col_1</span></code> but not both).
+The results are sorted from most associated to least associated.</p>
+<p>To compute the Cramer’s V statistic, all columns are discretized. Numeric
+columns are binned with 10 bins. For categorical columns, only the 10 most
+frequent categories are considered. In both cases, nulls are treated as a
+separate category, ie a separate row in the contingency table. Thus,
+associations between the values of 2 columns or between their missingness
+patterns may be captured.
+Cramér’s V is a measure of association between two nominal variables,
 giving a value between 0 and +1 (inclusive).</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Cramér%27s_V">Cramer’s V</a></p></li>
 </ul>
-<p>Pearson’s Correlation Coefficient is a measure of the linear correlation
+<p>To compute the Pearson’s Correlation Coefficient, only numeric columns are
+considered. The correlation is computed using the Pearson method used in
+pandas or polars, depending on the dataframe. In both cases, lines containing NaNs
+are dropped.
+Pearson’s Correlation Coefficient is a measure of the linear correlation
 between two variables, giving a value between -1 and +1 (inclusive).</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson’s Correlation Coefficient</a></p></li>

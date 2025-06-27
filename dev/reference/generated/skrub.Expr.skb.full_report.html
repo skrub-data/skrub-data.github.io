@@ -724,20 +724,12 @@
 <h1>skrub.Expr.skb.full_report<a class="headerlink" href="#skrub-expr-skb-full-report" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.full_report">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">full_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c173018/skrub/_expressions/_skrub_namespace.py#L1271"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.full_report" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">full_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/d8ce476/skrub/_expressions/_skrub_namespace.py#L1274"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.full_report" title="Link to this definition">#</a></dt>
 <dd><p>Generate a full report of the expression’s evaluation.</p>
 <p>This creates a report showing the computation graph, and for each
 intermediate computation, some information (such as the line of code
 where it was defined) and a display of the intermediate result (or
 error).</p>
-<p>The pipeline is run doing a <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code>. If <code class="docutils literal notranslate"><span class="pre">environment</span></code> is
-provided, it is used as the bindings for the variables in the
-expression, and otherwise, the <code class="docutils literal notranslate"><span class="pre">value</span></code> attributes of the variables
-are used.</p>
-<p>At the moment, this creates a directory on the filesystem containing
-HTML files. The report can be displayed by visiting the contained
-<code class="docutils literal notranslate"><span class="pre">index.html</span></code> in a webbrowser, or passing <code class="docutils literal notranslate"><span class="pre">open=True</span></code> (the default)
-to this method.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
@@ -768,6 +760,15 @@ way a report is stored at the location indicated by
 </dl>
 </dd>
 </dl>
+<p class="rubric">Notes</p>
+<p>The pipeline is run doing a <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code>. If <code class="docutils literal notranslate"><span class="pre">environment</span></code> is
+provided, it is used as the bindings for the variables in the
+expression, and otherwise, the <code class="docutils literal notranslate"><span class="pre">value</span></code> attributes of the variables
+are used.</p>
+<p>At the moment, this creates a directory on the filesystem containing
+HTML files. The report can be displayed by visiting the contained
+<code class="docutils literal notranslate"><span class="pre">index.html</span></code> in a webbrowser, or passing <code class="docutils literal notranslate"><span class="pre">open=True</span></code> (the default)
+to this method.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># ignore this line:</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span><span class="p">;</span> <span class="n">pytest</span><span class="o">.</span><span class="n">skip</span><span class="p">(</span><span class="s1">&#39;graphviz may not be installed&#39;</span><span class="p">)</span>

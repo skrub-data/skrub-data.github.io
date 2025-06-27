@@ -724,17 +724,13 @@
 <h1>skrub.Expr.skb.get_grid_search<a class="headerlink" href="#skrub-expr-skb-get-grid-search" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.get_grid_search">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">get_grid_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c173018/skrub/_expressions/_skrub_namespace.py#L1548"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.get_grid_search" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">get_grid_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/d8ce476/skrub/_expressions/_skrub_namespace.py#L1545"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.get_grid_search" title="Link to this definition">#</a></dt>
 <dd><p>Find the best parameters with grid search.</p>
 <p>This function returns a <a class="reference internal" href="skrub.ParamSearch.html#skrub.ParamSearch" title="skrub.ParamSearch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSearch</span></code></a>, an object similar to
-scikit-learn’s <code class="docutils literal notranslate"><span class="pre">GridSearchCV</span></code>. The main difference is that methods
-such as <code class="docutils literal notranslate"><span class="pre">fit()</span></code> and <code class="docutils literal notranslate"><span class="pre">predict()</span></code> accept a dictionary of inputs
-rather than <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>. Please refer to the examples gallery for
-an in-depth explanation.</p>
-<p>If the expression contains some numeric ranges (<code class="docutils literal notranslate"><span class="pre">choose_float</span></code>,
-<code class="docutils literal notranslate"><span class="pre">choose_int</span></code>), either discretize them by providing the <code class="docutils literal notranslate"><span class="pre">n_steps</span></code>
-argument or use <code class="docutils literal notranslate"><span class="pre">get_randomized_search</span></code> instead of
-<code class="docutils literal notranslate"><span class="pre">get_grid_search</span></code>.</p>
+scikit-learn’s <code class="docutils literal notranslate"><span class="pre">GridSearchCV</span></code>, where the main difference is that
+<code class="docutils literal notranslate"><span class="pre">fit()</span></code> and <code class="docutils literal notranslate"><span class="pre">predict()</span></code> accept a dictionary of inputs
+rather than <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>. The best pipeline can
+be returned by calling <code class="docutils literal notranslate"><span class="pre">.best_pipeline_</span></code>.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
@@ -759,9 +755,9 @@ effect).</p>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>ParamSearch</dt><dd><p>An object implementing the hyperparameter search. Besides the usual
-<code class="docutils literal notranslate"><span class="pre">fit</span></code>, <code class="docutils literal notranslate"><span class="pre">predict</span></code>, attributes of interest are
-<code class="docutils literal notranslate"><span class="pre">results_</span></code> and <code class="docutils literal notranslate"><span class="pre">plot_results()</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">fit</span></code>, <code class="docutils literal notranslate"><span class="pre">predict</span></code>, attributes of interest are</p>
 </dd>
+<dt><code class="docutils literal notranslate"><span class="pre">results_</span></code>, <code class="docutils literal notranslate"><span class="pre">plot_results()</span></code>, and <a href="#id1"><span class="problematic" id="id2">``</span></a>best_pipeline_`.</dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -809,6 +805,27 @@ effect).</p>
 <span class="go">4   NaN   NaN      dummy             0.50</span>
 </pre></div>
 </div>
+<p>If the expression contains some numeric ranges (<code class="docutils literal notranslate"><span class="pre">choose_float</span></code>,
+<code class="docutils literal notranslate"><span class="pre">choose_int</span></code>), either discretize them by providing the <code class="docutils literal notranslate"><span class="pre">n_steps</span></code>
+argument or use <code class="docutils literal notranslate"><span class="pre">get_randomized_search</span></code> instead of
+<code class="docutils literal notranslate"><span class="pre">get_grid_search</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">logistic</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">C</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_float</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">n_steps</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">logistic</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_param_grid</span><span class="p">())</span>
+<span class="go">- C: choose_float(0.1, 10.0, log=True, n_steps=5, name=&#39;C&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">search</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_grid_search</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">search</span><span class="o">.</span><span class="n">results_</span>
+<span class="go">    C   mean_test_score</span>
+<span class="go">0       0.100000        0.84</span>
+<span class="go">1       0.316228        0.83</span>
+<span class="go">2       1.000000        0.81</span>
+<span class="go">3       3.162278        0.80</span>
+<span class="go">4       10.000000       0.80</span>
+</pre></div>
+</div>
+<p>Please refer to the examples gallery for an in-depth explanation.</p>
 </dd></dl>
 
 </section>

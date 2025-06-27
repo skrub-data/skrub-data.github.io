@@ -724,13 +724,12 @@
 <h1>skrub.Expr.skb.match<a class="headerlink" href="#skrub-expr-skb-match" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.match">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">targets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NULL</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c173018/skrub/_expressions/_skrub_namespace.py#L437"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.match" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">targets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NULL</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/d8ce476/skrub/_expressions/_skrub_namespace.py#L439"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.match" title="Link to this definition">#</a></dt>
 <dd><p>Select based on the value of an expression.</p>
-<p>First, <code class="docutils literal notranslate"><span class="pre">self</span></code> is evaluated. Then, the result is compared to the keys
-in the mapping <code class="docutils literal notranslate"><span class="pre">targets</span></code>. If a key matches, the corresponding value
-is evaluated and the result is returned. If there is no match and
-<code class="docutils literal notranslate"><span class="pre">default</span></code> has been provided, <code class="docutils literal notranslate"><span class="pre">default</span></code> is evaluated and returned.
-If there is no match and no default a <code class="docutils literal notranslate"><span class="pre">KeyError</span></code> is raised.</p>
+<p>Evaluate <code class="docutils literal notranslate"><span class="pre">self</span></code>, then compare the result to the keys in <code class="docutils literal notranslate"><span class="pre">targets</span></code>.
+If there is a match, evaluate the corresponding value and return it. If
+there is no match and <code class="docutils literal notranslate"><span class="pre">default</span></code> has been provided, evaluate and return
+<code class="docutils literal notranslate"><span class="pre">default</span></code>. Otherwise, a <code class="docutils literal notranslate"><span class="pre">KeyError</span></code> is raised.</p>
 <p>Therefore, only one of the branches or the default is evaluated which
 is the main advantage compared to placing the selection inside a
 <code class="docutils literal notranslate"><span class="pre">&#64;skrub.deferred</span></code> function.</p>

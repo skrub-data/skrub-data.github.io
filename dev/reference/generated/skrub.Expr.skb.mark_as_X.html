@@ -724,12 +724,20 @@
 <h1>skrub.Expr.skb.mark_as_X<a class="headerlink" href="#skrub-expr-skb-mark-as-x" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.mark_as_X">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">mark_as_X</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c173018/skrub/_expressions/_skrub_namespace.py#L1956"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.mark_as_X" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">mark_as_X</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/d8ce476/skrub/_expressions/_skrub_namespace.py#L1972"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.mark_as_X" title="Link to this definition">#</a></dt>
 <dd><p>Mark this expression as being the <code class="docutils literal notranslate"><span class="pre">X</span></code> table.</p>
-<p>Returns a copy; the original expression is left unchanged.</p>
-<p>This is used for cross-validation and hyperparameter selection: the
-nodes marked with <code class="docutils literal notranslate"><span class="pre">.skb.mark_as_X()</span></code> and <code class="docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code> define
-the cross-validation splits.</p>
+<p>This is used for cross-validation and hyperparameter selection: operations
+done before <code class="docutils literal notranslate"><span class="pre">.skb.mark_as_X()</span></code> and <code class="docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code> are executed
+on the entire data and cannot benefit from hyperparameter tuning.
+Returns a copy; the original expression is left unchanged.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt>The input expression, which has been marked as being <code class="docutils literal notranslate"><span class="pre">X</span></code></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
 <p>During cross-validation, all the previous steps are first executed,
 until X and y have been materialized. Then, those are split into
 training and testing sets. The following steps in the expression are
@@ -741,15 +749,7 @@ should be careful to start our pipeline by building X and y, and to use
 <code class="docutils literal notranslate"><span class="pre">mark_as_X()</span></code> and <code class="docutils literal notranslate"><span class="pre">mark_as_y()</span></code> as soon as possible.</p>
 <p><code class="docutils literal notranslate"><span class="pre">skrub.X(value)</span></code> can be used as a shorthand for
 <code class="docutils literal notranslate"><span class="pre">skrub.var('X',</span> <span class="pre">value).skb.mark_as_X()</span></code>.</p>
-<p>Please see the examples gallery for more information.</p>
 <p>Note: this marks the expression in-place and also returns it.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt>The input expression, which has been marked as being <code class="docutils literal notranslate"><span class="pre">X</span></code></dt><dd></dd>
-</dl>
-</dd>
-</dl>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;orders&#39;</span><span class="p">,</span> <span class="n">skrub</span><span class="o">.</span><span class="n">toy_orders</span><span class="p">(</span><span class="n">split</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">orders</span><span class="p">)</span>
@@ -784,6 +784,7 @@ should be careful to start our pipeline by building X and y, and to use
 computed. Then, they are split into training and test sets. Then the
 rest of the pipeline (in this case the last step, the
 <code class="docutils literal notranslate"><span class="pre">DummyClassifier</span></code>) is evaluated on those splits.</p>
+<p>Please see the examples gallery for more information.</p>
 </dd></dl>
 
 </section>

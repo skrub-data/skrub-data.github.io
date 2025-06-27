@@ -724,13 +724,13 @@
 <h1>skrub.Expr.skb.get_randomized_search<a class="headerlink" href="#skrub-expr-skb-get-randomized-search" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.get_randomized_search">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">get_randomized_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c173018/skrub/_expressions/_skrub_namespace.py#L1642"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.get_randomized_search" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">get_randomized_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/d8ce476/skrub/_expressions/_skrub_namespace.py#L1656"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.get_randomized_search" title="Link to this definition">#</a></dt>
 <dd><p>Find the best parameters with randomized search.</p>
 <p>This function returns a <a class="reference internal" href="skrub.ParamSearch.html#skrub.ParamSearch" title="skrub.ParamSearch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSearch</span></code></a>, an object similar to
-scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomizedSearchCV</span></code></a>. The main
-difference is that methods such as <code class="docutils literal notranslate"><span class="pre">fit()</span></code> and <code class="docutils literal notranslate"><span class="pre">predict()</span></code> accept a
-dictionary of inputs rather than <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>. Please refer to the examples
-gallery for an in-depth explanation.</p>
+scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomizedSearchCV</span></code></a>, where
+the main difference is <code class="docutils literal notranslate"><span class="pre">fit()</span></code> and <code class="docutils literal notranslate"><span class="pre">predict()</span></code> accept a
+dictionary of inputs rather than <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>. The best pipeline can
+be returned by calling <code class="docutils literal notranslate"><span class="pre">.best_pipeline_</span></code>.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
@@ -756,7 +756,7 @@ effect).</p>
 <dd class="field-even"><dl class="simple">
 <dt>ParamSearch</dt><dd><p>An object implementing the hyperparameter search. Besides the usual
 <code class="docutils literal notranslate"><span class="pre">fit</span></code>, <code class="docutils literal notranslate"><span class="pre">predict</span></code>, attributes of interest are
-<code class="docutils literal notranslate"><span class="pre">results_</span></code> and <code class="docutils literal notranslate"><span class="pre">plot_results()</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">results_</span></code>, <code class="docutils literal notranslate"><span class="pre">plot_results()</span></code>, and <a href="#id1"><span class="problematic" id="id2">``</span></a>best_pipeline_`.</p>
 </dd>
 </dl>
 </dd>
@@ -815,6 +815,7 @@ effect).</p>
 <span class="go">9   5       NaN  NaN      dummy             0.50</span>
 </pre></div>
 </div>
+<p>Please refer to the examples gallery for an in-depth explanation.</p>
 </dd></dl>
 
 </section>
