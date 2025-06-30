@@ -547,8 +547,8 @@ pre, code {
                 <div>
                     <h2>Output of this step</h2>
                     
-<div id="report_7a99c3fa-wrapper" hidden>
-    <template id="report_7a99c3fa-template">
+<div id="report_51345214-wrapper" hidden>
+    <template id="report_51345214-template">
         <style>
          /*!
 Pure v3.0.0
@@ -1314,202 +1314,211 @@ article.wrapper {
 /* The table showing the first few and last rows of the dataframe */
 /* -------------------------------------------------------------- */
 
-td, th {
-    width: var(--spacing-xl);
+td,
+th {
+  width: var(--spacing-xl);
 }
 
 tr {
-    height: var(--font-size-xs);
+  height: var(--font-size-xs);
 }
 
 .table-with-selectable-cells {
-    --arrow-width: var(--base-size);
+  --arrow-width: var(--base-size);
 }
 
 .table-with-selectable-cells {
-    margin: var(--border-m);
-    border: none;
+  margin: var(--border-m);
+  border: none;
 }
 
 .table-with-selectable-cells tbody {
-    border: var(--border-s) solid var(--color-border-secondary);
+  border: var(--border-s) solid var(--color-border-secondary);
 }
 
 .table-with-selectable-cells .table-cell {
-    transition: background-color var(--animation-duration)
-        var(--animation-easing);
+  transition: background-color var(--animation-duration) var(--animation-easing);
 }
 
 .table-with-selectable-cells thead th {
-    vertical-align: top;
-    border: var(--border-s) solid var(--color-border-secondary);
-    background-color: var(--color-background-quaternary);
+  vertical-align: top;
+  border: var(--border-s) solid var(--color-border-secondary);
+  background-color: var(--color-background-quaternary);
 }
 
 .table-with-selectable-cells tbody tr {
-    background-color: var(--color-background-tertiary);
+  background-color: var(--color-background-tertiary);
 }
 
 .table-with-selectable-cells tbody tr:nth-child(2n -1) {
-    background-color: var(--color-background-secondary);
+  background-color: var(--color-background-secondary);
 }
 
 .table-with-selectable-cells thead tr .table-cell[data-is-in-active-column],
 .table-with-selectable-cells tbody tr .table-cell[data-is-in-active-column] {
-    background-color: var(--color-background-highlight-primary);
+  background-color: var(--color-background-highlight-primary);
 }
 
 .table-with-selectable-cells
-    tbody
-    tr:nth-child(2n -1)
-    .table-cell[data-is-in-active-column] {
-    background-color: color-mix(
-        in srgb,
-        var(--color-background-highlight-primary),
-        var(--color-background-primary)
-    );
+  tbody
+  tr:nth-child(2n -1)
+  .table-cell[data-is-in-active-column] {
+  background-color: color-mix(
+    in srgb,
+    var(--color-background-highlight-primary),
+    var(--color-background-primary)
+  );
 }
 
 .table-with-selectable-cells thead tr .table-cell[data-is-active],
 .table-with-selectable-cells thead tr .table-cell[data-is-active]:focus,
 .table-with-selectable-cells tbody tr .table-cell[data-is-active],
 .table-with-selectable-cells tbody tr .table-cell[data-is-active]:focus {
-    background-color: var(--color-background-active);
+  background-color: var(--color-background-active);
 }
 
 .table-with-selectable-cells th[data-role="padding"] {
-    background-color: var(--color-background-primary);
-    border: none;
-    transition: none;
+  background-color: var(--color-background-primary);
+  border: none;
+  transition: none;
 }
 
 #report .table-with-selectable-cells th[data-role="columns-level-name"] {
-    text-align: right;
-    padding-right: calc(calc(2 * var(--spacing-s)) + var(--arrow-width));
-    position: relative;
+  text-align: right;
+  padding-right: calc(calc(2 * var(--spacing-s)) + var(--arrow-width));
+  position: relative;
 }
 
 .table-with-selectable-cells th[data-role="columns-level-name"] > .arrow-icon {
-    position: absolute;
-    width: var(--arrow-width);
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    left: 100%;
-    right: calc(-1 * var(--arrow-width));
-    transform: translateX(calc(-1 * var(--spacing-s) - var(--arrow-width)));
-    display: flex;
-    user-select: none;
+  position: absolute;
+  width: var(--arrow-width);
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: calc(-1 * var(--arrow-width));
+  transform: translateX(calc(-1 * var(--spacing-s) - var(--arrow-width)));
+  display: flex;
+  user-select: none;
 }
 
 .table-with-selectable-cells th[data-role="index-level-name"],
 .table-with-selectable-cells th[data-role="index-level-value"] {
-    background-color: var(--color-background-primary);
-    border: var(--border-s) solid var(--color-border-secondary);
-    text-align: right;
+  background-color: var(--color-background-primary);
+  border: var(--border-s) solid var(--color-border-secondary);
+  text-align: right;
 }
 
 table:not(:focus-within):not(:has(:active)) .table-cell[data-is-active] {
-    outline: var(--border-m) dotted;
+  outline: var(--border-m) dotted;
 }
 
 .table-cell[data-is-active]:focus {
-    outline-width: var(--border-m);
-    outline-style: solid;
+  outline-width: var(--border-m);
+  outline-style: solid;
 }
 
 #report .table-cell[data-is-active][data-just-copied]:focus {
-    outline-width: var(--border-m);
-    outline-style: dashed;
+  outline-width: var(--border-m);
+  outline-style: dashed;
 }
 
 /* The gap separating the head and the tail of the table */
 
 #report .elided-table-part,
 #report .elided-table-part td {
-    border: var(--border-m) dashed var(--color-border-secondary);
-    text-align: center;
-    border-top: 0;
-    border-bottom: 0;
-    background: var(--color-background-primary);
+  border: var(--border-m) dashed var(--color-border-secondary);
+  text-align: center;
+  border-top: 0;
+  border-bottom: 0;
+  background: var(--color-background-primary);
 }
 
 #report .ellipsis-icon {
-    display: flex;
-    flex-direction: column;
-    max-height: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  max-height: var(--spacing-xl);
 }
 
 #report
-    table:has([data-role="index-level-value"])
-    .elided-table-part
-    td:first-child
-    .ellipsis-icon
-    * {
-    align-self: flex-end;
+  table:has([data-role="index-level-value"])
+  .elided-table-part
+  td:first-child
+  .ellipsis-icon
+  * {
+  align-self: flex-end;
 }
 
 .table-bar-wrapper {
-    min-height: calc(var(--line-height) * 1em + 2 * var(--spacing-m));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: var(--spacing-s);
+  min-height: calc(var(--line-height) * 1em + 2 * var(--spacing-m));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: var(--spacing-s);
 }
 
 /* Information below the table: dimensions and keyboard shortcuts */
 
 .table-footer {
-    display: flex;
-    justify-content: flex-start;
-    column-gap: var(--spacing-xxl);
-    padding-top: var(--spacing-s);
+  display: flex;
+  justify-content: flex-start;
+  column-gap: var(--spacing-xxl);
+  padding-top: var(--spacing-s);
 }
 
 .table-footer > * {
-    flex-shrink: 1;
+  flex-shrink: 1;
 }
 
 .keyboard-hints {
-    display: none;
-    flex-basis: max(0px, min(50%, calc((50% - 25ch) * 99999)));
-    min-width: 0px;
-    height: 2em;
-    margin-bottom: calc(-1 * var(--spacing-m));
-    margin-right: var(--spacing-s);
-    overflow: hidden;
-    flex-shrink: 10000;
+  display: none;
+  flex-basis: max(0px, min(50%, calc((50% - 25ch) * 99999)));
+  min-width: 0px;
+  height: 2em;
+  margin-bottom: calc(-1 * var(--spacing-m));
+  margin-right: var(--spacing-s);
+  overflow: hidden;
+  flex-shrink: 10000;
+}
+/*
+To make this computation binary, our two options are:
+- 40ch >= 50% -> flex-basis: 0 (no display of the buttons)
+- 40ch < 50% -> flex-basis: 50% (display of the buttons)
+
+The *99999 makes it impossible to be in the intermediate regime where 0px < 50% - 40ch < 50%
+*/
+.keyboard-hints-when-subsampling {
+  flex-basis: max(0px, min(50%, calc((50% - 40ch) * 99999)));
 }
 
 .keyboard-hints > div {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2em;
 }
 
 :has(.table-with-selectable-cells:focus-within)
-    ~ .table-footer
-    .keyboard-hints {
-    display: block;
+  ~ .table-footer
+  .keyboard-hints {
+  display: block;
 }
 
 .keyboard-key {
-    font-size: var(--font-size-xs);
-    font-family: var(--font-family-monospace);
-    padding: 0 var(--spacing-m);
-    line-height: 1.8;
-    color: var(--color-text-secondary);
-    border: var(--border-s) solid var(--color-border-secondary);
-    border-bottom: var(--border-s) solid var(--color-border-secondary);
-    box-shadow: inset 0 calc(-1 * var(--border-s)) 0
-        var(--color-shadow-keyboard);
-    border-radius: 0.2em;
-    min-width: 1em;
-    text-align: center;
-    margin: var(--spacing-xs);
-    display: inline-block;
-    text-wrap: nowrap;
-    flex-shrink: 0;
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-monospace);
+  padding: 0 var(--spacing-m);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  border: var(--border-s) solid var(--color-border-secondary);
+  border-bottom: var(--border-s) solid var(--color-border-secondary);
+  box-shadow: inset 0 calc(-1 * var(--border-s)) 0 var(--color-shadow-keyboard);
+  border-radius: 0.2em;
+  min-width: 1em;
+  text-align: center;
+  margin: var(--spacing-xs);
+  display: inline-block;
+  text-wrap: nowrap;
+  flex-shrink: 0;
 }
 .summary-stats-table {
   margin: var(--border-m);
@@ -1926,7 +1935,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
                 
                 
                 <th
-                id="ef2c4139"
+                id="144e7b9d"
                 class="table-cell elided-short "
                 
                 data-role="padding"
@@ -1956,7 +1965,7 @@ data-spans__-1__-1
                 
                 
                 <th
-                id="68f076dd"
+                id="fa780834"
                 class="table-cell elided-short clickable"
                 
                 data-role="columns-level-value"
@@ -2004,7 +2013,7 @@ data-spans__-1__0
                 
                 
                 <th
-                id="83554aef"
+                id="329e4db5"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2032,7 +2041,7 @@ data-spans__0__-1
                 
                 
                 <td
-                id="d9ed190d"
+                id="8742db43"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2066,7 +2075,7 @@ data-spans__0__0
                 
                 
                 <th
-                id="f6e3bd71"
+                id="b946b86c"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2094,7 +2103,7 @@ data-spans__1__-1
                 
                 
                 <td
-                id="f6f54781"
+                id="7a47827a"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2128,7 +2137,7 @@ data-spans__1__0
                 
                 
                 <th
-                id="a52623a4"
+                id="9219bdc2"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2156,7 +2165,7 @@ data-spans__2__-1
                 
                 
                 <td
-                id="7275a8ed"
+                id="df61b472"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2190,7 +2199,7 @@ data-spans__2__0
                 
                 
                 <th
-                id="024c1a26"
+                id="63c9998d"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2218,7 +2227,7 @@ data-spans__3__-1
                 
                 
                 <td
-                id="dc5ecd9f"
+                id="9dc35327"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2252,7 +2261,7 @@ data-spans__3__0
                 
                 
                 <th
-                id="5ec7b13b"
+                id="4101c413"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2280,7 +2289,7 @@ data-spans__4__-1
                 
                 
                 <td
-                id="4d9d8dae"
+                id="96df5182"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2344,7 +2353,7 @@ data-spans__4__0
                 
                 
                 <th
-                id="e936d2c8"
+                id="67863c58"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2372,7 +2381,7 @@ data-spans__5__-1
                 
                 
                 <td
-                id="8e1f3ceb"
+                id="d0744048"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2406,7 +2415,7 @@ data-spans__5__0
                 
                 
                 <th
-                id="39c95a82"
+                id="cb3c6dae"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2434,7 +2443,7 @@ data-spans__6__-1
                 
                 
                 <td
-                id="3d1151eb"
+                id="20c6d37a"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2468,7 +2477,7 @@ data-spans__6__0
                 
                 
                 <th
-                id="395bc5c6"
+                id="3e5cb3d6"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2496,7 +2505,7 @@ data-spans__7__-1
                 
                 
                 <td
-                id="edb661aa"
+                id="ae370ed5"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2530,7 +2539,7 @@ data-spans__7__0
                 
                 
                 <th
-                id="e6d32651"
+                id="18ff62c5"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2558,7 +2567,7 @@ data-spans__8__-1
                 
                 
                 <td
-                id="8b248367"
+                id="61aa24fd"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2592,7 +2601,7 @@ data-spans__8__0
                 
                 
                 <th
-                id="8545f069"
+                id="f569684d"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2620,7 +2629,7 @@ data-spans__9__-1
                 
                 
                 <td
-                id="3696df7c"
+                id="a228c140"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2663,7 +2672,7 @@ data-spans__9__0
             data-test="n-columns-display">1</strong> columns
         
     </div>
-    <div class="keyboard-hints">
+    <div class=" keyboard-hints">
         <div>
             
 <span class="keyboard-key">Ctrl-C</span>
@@ -3155,7 +3164,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_7a99c3fa">
+    <skrub-table-report class="report" id="report_51345214">
     </skrub-table-report>
 
     <script type="module">
@@ -4253,7 +4262,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_7a99c3fa-wrapper-fallback">
+<div id="report_51345214-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -4264,8 +4273,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_7a99c3fa-wrapper").removeAttribute("hidden");
- document.getElementById("report_7a99c3fa-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_51345214-wrapper").removeAttribute("hidden");
+ document.getElementById("report_51345214-wrapper-fallback").setAttribute("hidden", "");
 </script>
                 </div>
                 
