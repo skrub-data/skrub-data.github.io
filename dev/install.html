@@ -715,14 +715,11 @@ IDE integrations. These revisions are listed in .git-blame-ignore-revs:</p>
 </pre></div>
 </div>
 <p>Testing should take about 5 minutes.</p>
-<p>If you see some warnings like:
-.. code:: sh</p>
-<blockquote>
-<div><dl class="simple">
-<dt>UserWarning: Only pandas and polars DataFrames are supported, but input is a Numpy array. Please convert Numpy arrays to DataFrames before passing them to skrub transformers. Converting to pandas DataFrame with columns [‘0’, ‘1’, …].</dt><dd><p>warnings.warn(</p>
-</dd>
-</dl>
-</div></blockquote>
+<p>If you see some warnings like:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>UserWarning:<span class="w"> </span>Only<span class="w"> </span>pandas<span class="w"> </span>and<span class="w"> </span>polars<span class="w"> </span>DataFrames<span class="w"> </span>are<span class="w"> </span>supported,<span class="w"> </span>but<span class="w"> </span>input<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>Numpy<span class="w"> </span>array.<span class="w"> </span>Please<span class="w"> </span>convert<span class="w"> </span>Numpy<span class="w"> </span>arrays<span class="w"> </span>to<span class="w"> </span>DataFrames<span class="w"> </span>before<span class="w"> </span>passing<span class="w"> </span>them<span class="w"> </span>to<span class="w"> </span>skrub<span class="w"> </span>transformers.<span class="w"> </span>Converting<span class="w"> </span>to<span class="w"> </span>pandas<span class="w"> </span>DataFrame<span class="w"> </span>with<span class="w"> </span>columns<span class="w"> </span><span class="o">[</span><span class="s1">&#39;0&#39;</span>,<span class="w"> </span><span class="s1">&#39;1&#39;</span>,<span class="w"> </span>…<span class="o">]</span>.
+<span class="w">  </span>warnings.warn<span class="o">(</span>
+</pre></div>
+</div>
 <p>This is expected, and you may proceed with the next steps without worrying about them.
 However, no tests should fail at this point: if they do fail, then let us know.</p>
 <p>After that, your environment is ready for development!</p>
