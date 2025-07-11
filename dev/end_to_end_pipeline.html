@@ -593,13 +593,13 @@
   <section id="end-to-end-predictive-models">
 <span id="end-to-end-pipeline"></span><h1>End-to-end predictive models<a class="headerlink" href="#end-to-end-predictive-models" title="Link to this heading">#</a></h1>
 <section id="create-baseline-predictive-models-on-heterogeneous-dataset">
-<span id="tabular-learner"></span><h2>Create baseline predictive models on heterogeneous dataset<a class="headerlink" href="#create-baseline-predictive-models-on-heterogeneous-dataset" title="Link to this heading">#</a></h2>
+<span id="tabular-pipeline"></span><h2>Create baseline predictive models on heterogeneous dataset<a class="headerlink" href="#create-baseline-predictive-models-on-heterogeneous-dataset" title="Link to this heading">#</a></h2>
 <p>Crafting a machine-learning pipeline is a rather daunting task. Choosing the ending
 learner of such pipeline is usually the easiest part. However, it imposes constraints
 regarding the preprocessing steps that are are required ahead of the learner.
 Programmatically defining these steps is the part that requires the most expertise and
 that is cumbersome to write.</p>
-<p>The function <a class="reference internal" href="reference/generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a> provides a factory function that, given a
+<p>The function <a class="reference internal" href="reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a> provides a factory function that, given a
 scikit-learn estimator, returns a pipeline combining this estimator with the
 appropriate preprocessing steps. These steps correspond to a <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>
 that handles heterogeneous data and, depending on the capabilities
@@ -608,7 +608,7 @@ of the final estimator, a missing value imputer and/or a standard scaler.</p>
 (<a class="reference internal" href="#table-vectorizer"><span class="std std-ref">Turning a dataframe into a numeric feature matrix</span></a>). The parameters of the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> are chosen
 based on the type of the final estimator.</p>
 <div class="pst-scrollable-table-container"><table class="table" id="id1">
-<caption><span class="caption-text">Parameter values choice of <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> when using the <a class="reference internal" href="reference/generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a> function</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<caption><span class="caption-text">Parameter values choice of <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> when using the <a class="reference internal" href="reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a> function</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"></th>
 <th class="head"><p><code class="docutils literal notranslate"><span class="pre">RandomForest</span></code> models</p></th>
@@ -704,7 +704,7 @@ is applied to each column independently. The transformer is cloned (using
 <section id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
 <p>The following examples provide an in-depth look at how to use the
-<a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> class and the <a class="reference internal" href="reference/generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_learner()</span></code></a>
+<a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> class and the <a class="reference internal" href="reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a>
 function.</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="auto_examples/01_encodings.html#sphx-glr-auto-examples-01-encodings-py"><span class="std std-ref">Encoding: from a dataframe to a numerical matrix for machine learning</span></a></p></li>
