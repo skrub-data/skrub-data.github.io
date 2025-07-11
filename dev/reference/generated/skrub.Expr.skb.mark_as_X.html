@@ -724,10 +724,10 @@
 <h1>skrub.Expr.skb.mark_as_X<a class="headerlink" href="#skrub-expr-skb-mark-as-x" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Expr.skb.mark_as_X">
-<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">mark_as_X</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f811a03/skrub/_expressions/_skrub_namespace.py#L1972"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.mark_as_X" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Expr.skb.</span></span><span class="sig-name descname"><span class="pre">mark_as_X</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3bc4715/skrub/_expressions/_skrub_namespace.py#L1980"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Expr.skb.mark_as_X" title="Link to this definition">#</a></dt>
 <dd><p>Mark this expression as being the <code class="docutils literal notranslate"><span class="pre">X</span></code> table.</p>
 <p>This is used for cross-validation and hyperparameter selection: operations
-done before <code class="docutils literal notranslate"><span class="pre">.skb.mark_as_X()</span></code> and <code class="docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code> are executed
+done before <a class="reference internal" href="#skrub.Expr.skb.mark_as_X" title="skrub.Expr.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">skb.mark_as_X()</span></code></a> and <a class="reference internal" href="skrub.Expr.skb.mark_as_y.html#skrub.Expr.skb.mark_as_y" title="skrub.Expr.skb.mark_as_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">skb.mark_as_y()</span></code></a> are executed
 on the entire data and cannot benefit from hyperparameter tuning.
 Returns a copy; the original expression is left unchanged.</p>
 <dl class="field-list simple">
@@ -737,6 +737,13 @@ Returns a copy; the original expression is left unchanged.</p>
 </dl>
 </dd>
 </dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.X.html#skrub.X" title="skrub.X"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.X()</span></code></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">skrub.X(value)</span></code> can be used as a shorthand for <code class="docutils literal notranslate"><span class="pre">skrub.var('X',</span> <span class="pre">value).skb.mark_as_X()</span></code>.</p>
+</dd>
+</dl>
+</div>
 <p class="rubric">Notes</p>
 <p>During cross-validation, all the previous steps are first executed,
 until X and y have been materialized. Then, those are split into
