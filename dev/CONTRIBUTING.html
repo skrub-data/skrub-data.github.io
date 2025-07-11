@@ -918,10 +918,18 @@ and are viewable in a web browser, for instance by opening the local
 <code class="docutils literal notranslate"><span class="pre">_build/html/index.html</span></code> file.</p>
 <p>Running all the examples can take a while, so if you only want to generate
 specific examples, you can use the following command with a regex pattern:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>html<span class="w"> </span><span class="nv">EXAMPLES_PATTERN</span><span class="o">=</span>your_regex_goes_here<span class="w"> </span>make<span class="w"> </span>html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>html<span class="w"> </span><span class="nv">EXAMPLES_PATTERN</span><span class="o">=</span>your_regex_goes_here
 </pre></div>
 </div>
 <p>This is especially helpful when you’re only modifying or checking a few examples.</p>
+<p>It is also possible to build the documentation without running the examples
+by using the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>html-noplot
+</pre></div>
+</div>
+<p>This command generates the documentation without re-executing the examples, which
+can take a long time. This is useful if you are only modifying the
+documentation itself, such as fixing typos or improving explanations.</p>
 </section>
 <section id="editing-the-api-reference-documentation">
 <h2>Editing the API reference documentation<a class="headerlink" href="#editing-the-api-reference-documentation" title="Link to this heading">#</a></h2>
