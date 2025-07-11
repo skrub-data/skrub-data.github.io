@@ -73,7 +73,7 @@
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Skrub expressions" href="expressions/index.html" />
+    <link rel="next" title="Hands-On with Column Selection and Transformers" href="10_apply_on_cols.html" />
     <link rel="prev" title="AggJoiner on a credit fraud dataset" href="08_join_aggregation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -534,6 +534,7 @@
 <li class="toctree-l1"><a class="reference internal" href="07_multiple_key_join.html">Spatial join for flight data: Joining across multiple columns</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_join_aggregation.html">AggJoiner on a credit fraud dataset</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Interpolation join: infer missing rows when joining two tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_apply_on_cols.html">Hands-On with Column Selection and Transformers</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="expressions/index.html">Skrub expressions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -883,9 +884,9 @@ to the right side table column names.</p>
       <td>29.7</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>26.976653</td>
-      <td>18.603877</td>
-      <td>0.039685</td>
+      <td>27.452107</td>
+      <td>18.704339</td>
+      <td>0.043595</td>
     </tr>
     <tr>
       <th>1</th>
@@ -895,9 +896,9 @@ to the right side table column names.</p>
       <td>33.3</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>29.829309</td>
-      <td>27.521270</td>
-      <td>0.138166</td>
+      <td>30.748628</td>
+      <td>16.012177</td>
+      <td>0.119302</td>
     </tr>
     <tr>
       <th>2</th>
@@ -907,9 +908,9 @@ to the right side table column names.</p>
       <td>43.0</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>33.393126</td>
-      <td>71.530182</td>
-      <td>0.066111</td>
+      <td>34.267764</td>
+      <td>21.208932</td>
+      <td>-0.079112</td>
     </tr>
     <tr>
       <th>3</th>
@@ -919,9 +920,9 @@ to the right side table column names.</p>
       <td>26.4</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>25.893041</td>
-      <td>30.658965</td>
-      <td>0.593358</td>
+      <td>28.594166</td>
+      <td>19.444627</td>
+      <td>0.441450</td>
     </tr>
     <tr>
       <th>4</th>
@@ -931,9 +932,9 @@ to the right side table column names.</p>
       <td>29.1</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>25.767625</td>
-      <td>28.454162</td>
-      <td>0.225689</td>
+      <td>27.136382</td>
+      <td>6.615606</td>
+      <td>0.024826</td>
     </tr>
   </tbody>
 </table>
@@ -1053,7 +1054,7 @@ maximum daily temperature.</p>
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>1.188898</td>
+      <td>1.050671</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1065,7 +1066,7 @@ maximum daily temperature.</p>
       <td>PA</td>
       <td>39.871953</td>
       <td>-75.241141</td>
-      <td>10.394064</td>
+      <td>10.982457</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1077,7 +1078,7 @@ maximum daily temperature.</p>
       <td>IL</td>
       <td>41.979595</td>
       <td>-87.904464</td>
-      <td>4.944697</td>
+      <td>4.773277</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1089,7 +1090,7 @@ maximum daily temperature.</p>
       <td>KY</td>
       <td>39.046143</td>
       <td>-84.662172</td>
-      <td>15.048266</td>
+      <td>14.227911</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1101,7 +1102,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>16.003626</td>
+      <td>16.685716</td>
     </tr>
   </tbody>
 </table>
@@ -1122,11 +1123,11 @@ Washington, Minnesota.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -2.248232
-ND    0.980634
-MT    0.992097
-MN    1.432835
-WA    1.773025
+AK   -3.633522
+MT   -0.683209
+ND    0.315435
+WA    0.351869
+MN    1.728229
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1136,11 +1137,11 @@ Florida, Louisiana.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AZ    21.662232
-FL    24.904865
-HI    28.002173
-VI    30.423778
-PR    30.964270
+LA    20.966809
+FL    24.978655
+HI    26.342291
+VI    30.615763
+PR    31.187352
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1178,7 +1179,7 @@ would contain, rather than by searching for an actual match. It is a generalizat
 the <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an
 <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor
 estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 14.450 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 13.051 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-09-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/09_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
@@ -1222,11 +1223,11 @@ estimators.</p>
       </div>
     </a>
     <a class="right-next"
-       href="expressions/index.html"
+       href="10_apply_on_cols.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Skrub expressions</p>
+        <p class="prev-next-title">Hands-On with Column Selection and Transformers</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

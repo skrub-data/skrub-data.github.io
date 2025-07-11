@@ -22,6 +22,7 @@ classes and functions may not be enough to give full guidelines on their use.
   joining <joining>
   selectors <selectors>
   expressions <expressions>
+  config <config>
   datasets <datasets>
 
 .. currentmodule:: skrub
@@ -55,6 +56,12 @@ Building a pipeline
 
 
   DropCols
+
+
+  ApplyToCols
+
+
+  ApplyToFrame
 
 
   DropUninformative
@@ -487,6 +494,32 @@ Expressions
 
 
   ParamSearch
+
+
+
+
+
+Configuration
+-------------
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  get_config
+
+
+  set_config
+
+
+  config_context
 
 
 

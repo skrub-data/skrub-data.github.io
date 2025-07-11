@@ -181,6 +181,23 @@ Examples
     </div>
 
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In previous examples, we saw how skrub provides powerful abstractions like TableVectorizer and tabular_learner to create pipelines.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_10_apply_on_cols_thumb.svg
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_10_apply_on_cols.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Hands-On with Column Selection and Transformers</div>
+    </div>
+
+
 .. thumbnail-parent-div-close
 
 .. raw:: html
@@ -201,6 +218,7 @@ Examples
    /auto_examples/07_multiple_key_join
    /auto_examples/08_join_aggregation
    /auto_examples/09_interpolation_join
+   /auto_examples/10_apply_on_cols
 
 
 Skrub expressions

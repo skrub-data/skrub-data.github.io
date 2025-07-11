@@ -1,0 +1,14 @@
+﻿ApplyToFrame
+============
+
+.. currentmodule:: skrub
+
+.. autoclass:: ApplyToFrame
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.ApplyToFrame skrub.ApplyToFrame.__init__ skrub.ApplyToFrame.fit skrub.ApplyToFrame.fit_transform skrub.ApplyToFrame.get_feature_names_out skrub.ApplyToFrame.get_metadata_routing skrub.ApplyToFrame.get_params skrub.ApplyToFrame.set_output skrub.ApplyToFrame.set_params skrub.ApplyToFrame.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

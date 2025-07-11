@@ -34,4 +34,6 @@ See :ref:`end_to_end_pipeline <end_to_end_pipeline>` for further details. For mo
   Cleaner
   SelectCols
   DropCols
+  ApplyToCols
+  ApplyToFrame
   DropUninformative

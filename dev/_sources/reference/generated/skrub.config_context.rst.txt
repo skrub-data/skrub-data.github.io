@@ -1,0 +1,10 @@
+﻿config\_context
+===============
+
+.. currentmodule:: skrub
+
+.. autofunction:: config_context
+
+.. minigallery:: skrub.config_context
+   :add-heading: Gallery examples
+   :heading-level: -

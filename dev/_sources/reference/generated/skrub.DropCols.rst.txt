@@ -9,6 +9,6 @@
    :special-members: __call__
    :exclude-members: get_metadata_routing, set_fit_request
 
-.. minigallery:: skrub.DropCols skrub.DropCols.__init__ skrub.DropCols.fit skrub.DropCols.fit_transform skrub.DropCols.get_metadata_routing skrub.DropCols.get_params skrub.DropCols.set_output skrub.DropCols.set_params skrub.DropCols.transform 
+.. minigallery:: skrub.DropCols skrub.DropCols.__init__ skrub.DropCols.fit skrub.DropCols.fit_transform skrub.DropCols.get_feature_names_out skrub.DropCols.get_metadata_routing skrub.DropCols.get_params skrub.DropCols.set_output skrub.DropCols.set_params skrub.DropCols.transform 
    :add-heading: Gallery examples
    :heading-level: -
