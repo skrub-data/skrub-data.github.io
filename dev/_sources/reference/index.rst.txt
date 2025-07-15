@@ -596,4 +596,7 @@ Datasets
   datasets.make_deduplication_data
 
 
+  datasets.toy_orders
+
+
 

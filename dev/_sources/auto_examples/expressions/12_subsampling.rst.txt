@@ -80,8 +80,8 @@ expressions by subsampling the data when computing preview results.
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_f6b31fa6-wrapper" hidden>
-        <template id="report_f6b31fa6-template">
+    <div id="report_86433dda-wrapper" hidden>
+        <template id="report_86433dda-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1466,7 +1466,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="ff9fdcca"
+                    id="5e1c4f1f"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1496,7 +1496,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="656f20c1"
+                    id="5893a332"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1530,7 +1530,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="17c091db"
+                    id="f08b92d1"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1564,7 +1564,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="86f33e40"
+                    id="234748b5"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1598,7 +1598,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="99903a67"
+                    id="713901b9"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1632,7 +1632,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="214d22d8"
+                    id="9f4387c2"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1666,7 +1666,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="cfd4dd1e"
+                    id="d3165b7e"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1700,7 +1700,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="9f502aff"
+                    id="ac6f3cd4"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1734,7 +1734,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="319e4429"
+                    id="31f1896e"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1768,7 +1768,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="5c0cd5ec"
+                    id="c357227c"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1816,7 +1816,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="b2bc7a6b"
+                    id="99721aa7"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1844,7 +1844,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="0feb8375"
+                    id="d31b2ade"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1874,7 +1874,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="e8ce687c"
+                    id="cd354726"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1904,7 +1904,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="1870abf6"
+                    id="790ef524"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1934,7 +1934,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="8b6e3bdf"
+                    id="72ea3015"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1964,7 +1964,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="1ecb2038"
+                    id="2831e6ae"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1994,7 +1994,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="391a89dc"
+                    id="11911f96"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2024,7 +2024,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="6082ac66"
+                    id="1bd2d7e7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2054,7 +2054,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="52dcde8b"
+                    id="de515b07"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2084,7 +2084,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="c3c0665e"
+                    id="37f6813c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2118,7 +2118,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="df477589"
+                    id="d29c6a53"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2146,7 +2146,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="e617c629"
+                    id="6b0431c3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2176,7 +2176,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="4518b07c"
+                    id="9dda6dbc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2206,7 +2206,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="a2b7da1a"
+                    id="eacacdeb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2236,7 +2236,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="4805529e"
+                    id="e84a3deb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2266,7 +2266,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="ac42e102"
+                    id="92a59fff"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2296,7 +2296,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="f5a75a4c"
+                    id="ef657362"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2326,7 +2326,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="a866a544"
+                    id="48c1429d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2356,7 +2356,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="9209c025"
+                    id="824e9b37"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2386,7 +2386,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="e8a9135a"
+                    id="9d0dbd8c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2420,7 +2420,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="a335e824"
+                    id="d656cc07"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2448,7 +2448,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="6bee9d06"
+                    id="4ea87739"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2478,7 +2478,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="fe3cd48b"
+                    id="f5232bae"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2508,7 +2508,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="c9904b6f"
+                    id="d6d2337a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2538,7 +2538,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="e0560d64"
+                    id="e569bae8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2568,7 +2568,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="3fcfaa3c"
+                    id="0cd370a8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2598,7 +2598,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="fed9501c"
+                    id="6c7b83d1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2628,7 +2628,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="9d92e0e1"
+                    id="287b4aab"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2658,7 +2658,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="ea9fd9a6"
+                    id="48c14c60"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2688,7 +2688,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="b4e3d9d0"
+                    id="b5a7c72e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2722,7 +2722,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="1a9da431"
+                    id="690cc7ec"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2750,7 +2750,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="f976ce69"
+                    id="076ef040"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2780,7 +2780,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="f9af2603"
+                    id="9d929549"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2810,7 +2810,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="4d4305eb"
+                    id="02a61022"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2840,7 +2840,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="197f0a61"
+                    id="1e5afcf7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2870,7 +2870,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="769e5b46"
+                    id="a6852251"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2900,7 +2900,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="513a1537"
+                    id="9288a464"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2930,7 +2930,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="2190881f"
+                    id="b9a6663b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2960,7 +2960,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="c1f0cc3c"
+                    id="1c781ba6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2990,7 +2990,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="a3122a4c"
+                    id="007f3f4c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3024,7 +3024,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="a78d9ee7"
+                    id="36c6b41e"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3052,7 +3052,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="2793f0f7"
+                    id="6466cb84"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3082,7 +3082,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="077f62a3"
+                    id="98d49c38"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3112,7 +3112,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="b2bbfedb"
+                    id="d1b4d065"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3142,7 +3142,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="30636de2"
+                    id="179bbc2c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3172,7 +3172,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="422fb5b2"
+                    id="f7b45a4f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3202,7 +3202,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="ce18c178"
+                    id="a5b1b82c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3232,7 +3232,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="b8075962"
+                    id="576be107"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3262,7 +3262,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="8fb8c621"
+                    id="33cc26e2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3292,7 +3292,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="930ca4dc"
+                    id="bd550102"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3436,7 +3436,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="54667fcb"
+                    id="5bee50fe"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3464,7 +3464,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="4f4c01f6"
+                    id="e5d4a3f0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3494,7 +3494,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="5b135e5f"
+                    id="0872bc71"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3524,7 +3524,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="df361ee0"
+                    id="8c1d41b2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3554,7 +3554,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="3331c994"
+                    id="8000ced6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3584,7 +3584,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="3f019f3b"
+                    id="dd63360f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3614,7 +3614,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="66977161"
+                    id="0b610588"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3644,7 +3644,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="20c98bac"
+                    id="fcef13b8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3674,7 +3674,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="a7f52e0b"
+                    id="3455bf45"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3704,7 +3704,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="bfb701a9"
+                    id="faa83492"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3738,7 +3738,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="f0ad9e4a"
+                    id="5472d111"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3766,7 +3766,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="2f1f1bab"
+                    id="7a38a96a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3796,7 +3796,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="ec40c1a0"
+                    id="2990b584"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3826,7 +3826,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="e1f1fa1a"
+                    id="cee9a614"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3856,7 +3856,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="788bd777"
+                    id="ae6b427a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3886,7 +3886,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="4eb710e8"
+                    id="c8c51573"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3916,7 +3916,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="c9e7ee4f"
+                    id="098de8b9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3946,7 +3946,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="301bd221"
+                    id="a31c66a2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3976,7 +3976,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="c3640ff2"
+                    id="ea118378"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4006,7 +4006,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="bafefe61"
+                    id="1ef9657c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4040,7 +4040,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="a0e63d22"
+                    id="5f4330d3"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -4068,7 +4068,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="aab2d11a"
+                    id="a93bc4e2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4098,7 +4098,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="247d8a3c"
+                    id="1a67a7d8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4128,7 +4128,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="92f1beb5"
+                    id="f6fa286f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4158,7 +4158,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="8fafd68d"
+                    id="77e3653b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4188,7 +4188,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="8bbd2787"
+                    id="7d62cd37"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4218,7 +4218,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="f669daf4"
+                    id="db46bcf1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4248,7 +4248,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="c7da15e8"
+                    id="73403f48"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4278,7 +4278,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="5166964d"
+                    id="c58a96eb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4308,7 +4308,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="3089248c"
+                    id="3df6a386"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4342,7 +4342,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="8963a352"
+                    id="3aafbdbd"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -4370,7 +4370,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="a573d271"
+                    id="7482c138"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4400,7 +4400,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="69df21e5"
+                    id="dd6e0deb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4430,7 +4430,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="bc611c98"
+                    id="92ffa39d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4460,7 +4460,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="fb94c27b"
+                    id="a6beba52"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4490,7 +4490,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="6a8c3d72"
+                    id="cbf43d6e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4520,7 +4520,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="0e094c17"
+                    id="ec58d11a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4550,7 +4550,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="45eb5130"
+                    id="f5bd632e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4580,7 +4580,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="7df18d45"
+                    id="9e136f7f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4610,7 +4610,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="8334abde"
+                    id="6f4a8c21"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4644,7 +4644,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <th
-                    id="f1c86fac"
+                    id="986d00ce"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -4672,7 +4672,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="931acfaa"
+                    id="88c93e96"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4702,7 +4702,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="cbd6034b"
+                    id="ccdeb792"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4732,7 +4732,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="c65fae64"
+                    id="e5764ad2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4762,7 +4762,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="edb32400"
+                    id="28ee5bd3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4792,7 +4792,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="f6f60521"
+                    id="03279033"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4822,7 +4822,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="ea4b9721"
+                    id="846a5795"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4852,7 +4852,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="e3287819"
+                    id="d716f8ab"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4882,7 +4882,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="4439ef8a"
+                    id="e198abc5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4912,7 +4912,7 @@ expressions by subsampling the data when computing preview results.
                 
                 
                     <td
-                    id="e569872c"
+                    id="51fff8a3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6247,7 +6247,7 @@ expressions by subsampling the data when computing preview results.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_f6b31fa6">
+        <skrub-table-report class="report" id="report_86433dda">
         </skrub-table-report>
 
         <script type="module">
@@ -7345,7 +7345,7 @@ expressions by subsampling the data when computing preview results.
         </script>
     </div>
 
-    <div id="report_f6b31fa6-wrapper-fallback">
+    <div id="report_86433dda-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -7356,8 +7356,8 @@ expressions by subsampling the data when computing preview results.
     </div>
 
     <script>
-     document.getElementById("report_f6b31fa6-wrapper").removeAttribute("hidden");
-     document.getElementById("report_f6b31fa6-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_86433dda-wrapper").removeAttribute("hidden");
+     document.getElementById("report_86433dda-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -7437,8 +7437,8 @@ We can tell skrub to subsample the data when computing the previews, with
     </details>
     <strong><samp>Result (on a subsample):</samp></strong>
 
-    <div id="report_0fe05ca7-wrapper" hidden>
-        <template id="report_0fe05ca7-template">
+    <div id="report_33702cf1-wrapper" hidden>
+        <template id="report_33702cf1-template">
             <style>
              /*!
     Pure v3.0.0
@@ -8823,7 +8823,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="4d38c427"
+                    id="7f174860"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -8853,7 +8853,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="03686437"
+                    id="91ac04de"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8887,7 +8887,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="705b0908"
+                    id="e570d030"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8921,7 +8921,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="065c8c26"
+                    id="419740a2"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8955,7 +8955,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="0d39fefa"
+                    id="850afe26"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8989,7 +8989,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="c1631c16"
+                    id="446e635b"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -9023,7 +9023,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="ed6f7b3c"
+                    id="a4ccda35"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -9057,7 +9057,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="0397da0c"
+                    id="e12fc370"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -9091,7 +9091,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="e08cb5fa"
+                    id="9fccf74d"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -9125,7 +9125,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="53538bb1"
+                    id="aa39c4d3"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -9173,7 +9173,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="91d6f541"
+                    id="47f5c150"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -9201,7 +9201,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="8dec927d"
+                    id="90d3cf6c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9231,7 +9231,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="d5e736ae"
+                    id="720c974a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9261,7 +9261,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="21fc8ba4"
+                    id="15b3dd9b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9291,7 +9291,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="7e361433"
+                    id="171d3a76"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9321,7 +9321,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="9e6f1911"
+                    id="669edc0e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9351,7 +9351,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="5332842b"
+                    id="42374e9b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9381,7 +9381,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="3e1ce15e"
+                    id="3b3080fd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9411,7 +9411,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="e9e94702"
+                    id="93885809"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9441,7 +9441,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="6fd864cf"
+                    id="fe8bd2e5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9475,7 +9475,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="d33fc3c3"
+                    id="7b064cb2"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -9503,7 +9503,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="66ab2380"
+                    id="26f03299"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9533,7 +9533,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="8b4a1faa"
+                    id="dc24ef6e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9563,7 +9563,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="bdee4918"
+                    id="5e926aaf"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9593,7 +9593,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="14bce18d"
+                    id="bbd92be8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9623,7 +9623,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="6d038d2d"
+                    id="9536bc47"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9653,7 +9653,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="50490eb1"
+                    id="5446844d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9683,7 +9683,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="40b11f50"
+                    id="307baf2b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9713,7 +9713,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="93ad191b"
+                    id="d6616cbd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9743,7 +9743,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="373a6d99"
+                    id="7a1b2837"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9777,7 +9777,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="743eacd1"
+                    id="f9900961"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -9805,7 +9805,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="191d5acc"
+                    id="f32b9c42"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9835,7 +9835,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="354a0c27"
+                    id="ccbbd595"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9865,7 +9865,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="a601668e"
+                    id="a72fba3a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9895,7 +9895,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="b25013c8"
+                    id="858fc66a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9925,7 +9925,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="f238bd85"
+                    id="039cf1f3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9955,7 +9955,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="1bd276de"
+                    id="e9634387"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9985,7 +9985,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="3292db97"
+                    id="b38683a7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10015,7 +10015,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="c3e78989"
+                    id="dd7cc33f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10045,7 +10045,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="83c9a5d8"
+                    id="97d800eb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10079,7 +10079,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="5b8f2153"
+                    id="fea871e7"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -10107,7 +10107,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="ae9cf338"
+                    id="20b2bc5c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10137,7 +10137,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="2be6cd2b"
+                    id="1c1e14a0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10167,7 +10167,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="7f65ecd1"
+                    id="6505bf13"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10197,7 +10197,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="e3360bfc"
+                    id="6d19f4ce"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10227,7 +10227,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="ff65ea01"
+                    id="7d8aaa1f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10257,7 +10257,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="d1c5837d"
+                    id="a863f28b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10287,7 +10287,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="d8fb117a"
+                    id="e3f2db1d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10317,7 +10317,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="2a5dbd4f"
+                    id="8d2cb30a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10347,7 +10347,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="c0f37901"
+                    id="49974a93"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10381,7 +10381,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="5103a143"
+                    id="1e43d6fd"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -10409,7 +10409,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="52d23690"
+                    id="a8cf31fb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10439,7 +10439,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="0ccf8f19"
+                    id="be21b864"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10469,7 +10469,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="d2ae45bd"
+                    id="4f6f19a9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10499,7 +10499,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="c4112169"
+                    id="f99fd568"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10529,7 +10529,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="9305e906"
+                    id="6b1ff87f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10559,7 +10559,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="f3b4fa25"
+                    id="dc2c41d2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10589,7 +10589,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="aff02c9b"
+                    id="a11a2b87"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10619,7 +10619,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="9a99c072"
+                    id="e80a8cf8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10649,7 +10649,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="b88d86e3"
+                    id="b00040d4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10793,7 +10793,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="1e491264"
+                    id="65f68308"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -10821,7 +10821,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="80eda473"
+                    id="451ed661"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10851,7 +10851,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="dbcc6464"
+                    id="4089e120"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10881,7 +10881,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="0349c25b"
+                    id="68d1c33b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10911,7 +10911,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="f1794480"
+                    id="127553da"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10941,7 +10941,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="e69c2c0b"
+                    id="03aa2fd3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10971,7 +10971,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="95b699c4"
+                    id="f27c1cc5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11001,7 +11001,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="d242c16b"
+                    id="a58253f1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11031,7 +11031,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="3af6b38f"
+                    id="3d1675df"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11061,7 +11061,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="2d9f0f54"
+                    id="01cc030a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11095,7 +11095,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="bc9a3651"
+                    id="f5de3980"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11123,7 +11123,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="f425aca4"
+                    id="aa012626"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11153,7 +11153,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="b616d96c"
+                    id="afd65559"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11183,7 +11183,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="7239b47e"
+                    id="0e9f4b27"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11213,7 +11213,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="f0b383e5"
+                    id="dab2c82b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11243,7 +11243,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="b1efad70"
+                    id="3ab3d30a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11273,7 +11273,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="4ceb6981"
+                    id="d3ec3661"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11303,7 +11303,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="3966a10e"
+                    id="31196adb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11333,7 +11333,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="e0ade8ec"
+                    id="41fefe7d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11363,7 +11363,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="69ad7d9d"
+                    id="c86b4fda"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11397,7 +11397,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="475b6204"
+                    id="8bb02601"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11425,7 +11425,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="4ca43a96"
+                    id="fc47aa4d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11455,7 +11455,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="df765382"
+                    id="df66fa5d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11485,7 +11485,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="07a5265a"
+                    id="4942c53f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11515,7 +11515,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="634c83b6"
+                    id="a00569c9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11545,7 +11545,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="3d57634d"
+                    id="fd942b4c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11575,7 +11575,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="5dabfe7a"
+                    id="7bdf440d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11605,7 +11605,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="292ca2a8"
+                    id="e8e79862"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11635,7 +11635,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="9b7515bf"
+                    id="3c3dac8e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11665,7 +11665,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="d1458277"
+                    id="85fdc47f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11699,7 +11699,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="4fc50873"
+                    id="6b2b969b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11727,7 +11727,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="b32018f2"
+                    id="81b8ff20"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11757,7 +11757,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="57bcfa8f"
+                    id="30c3f1be"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11787,7 +11787,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="08e24205"
+                    id="8acce318"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11817,7 +11817,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="e8269684"
+                    id="20ac476b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11847,7 +11847,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="1cdc67cf"
+                    id="fd202256"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11877,7 +11877,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="a05e9bc4"
+                    id="97c17a24"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11907,7 +11907,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="8f619426"
+                    id="2c0ab67d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11937,7 +11937,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="1acc2744"
+                    id="2cbc84d6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11967,7 +11967,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="03583f21"
+                    id="a819bb4f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12001,7 +12001,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <th
-                    id="f334f94e"
+                    id="49565221"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -12029,7 +12029,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="d32a3d48"
+                    id="d86315d5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12059,7 +12059,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="40743dac"
+                    id="bb810e47"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12089,7 +12089,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="99b2fb80"
+                    id="2ec56b38"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12119,7 +12119,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="5926498f"
+                    id="0c92b10c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12149,7 +12149,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="f1a39c93"
+                    id="a5af74cc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12179,7 +12179,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="5ffbd452"
+                    id="83fbb64e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12209,7 +12209,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="073bc808"
+                    id="6935ba34"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12239,7 +12239,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="5737ac37"
+                    id="2f0b052f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12269,7 +12269,7 @@ We can tell skrub to subsample the data when computing the previews, with
                 
                 
                     <td
-                    id="17e7f686"
+                    id="67bb847a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13598,7 +13598,7 @@ We can tell skrub to subsample the data when computing the previews, with
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_0fe05ca7">
+        <skrub-table-report class="report" id="report_33702cf1">
         </skrub-table-report>
 
         <script type="module">
@@ -14696,7 +14696,7 @@ We can tell skrub to subsample the data when computing the previews, with
         </script>
     </div>
 
-    <div id="report_0fe05ca7-wrapper-fallback">
+    <div id="report_33702cf1-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -14707,8 +14707,8 @@ We can tell skrub to subsample the data when computing the previews, with
     </div>
 
     <script>
-     document.getElementById("report_0fe05ca7-wrapper").removeAttribute("hidden");
-     document.getElementById("report_0fe05ca7-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_33702cf1-wrapper").removeAttribute("hidden");
+     document.getElementById("report_33702cf1-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -14902,8 +14902,8 @@ computed on a subsample: the result column has only 100 entries.
     </details>
     <strong><samp>Result (on a subsample):</samp></strong>
 
-    <div id="report_01f90f6b-wrapper" hidden>
-        <template id="report_01f90f6b-template">
+    <div id="report_73bbd9fd-wrapper" hidden>
+        <template id="report_73bbd9fd-template">
             <style>
              /*!
     Pure v3.0.0
@@ -16288,7 +16288,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <th
-                    id="c3fc2d0a"
+                    id="7ed0e085"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -16318,7 +16318,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <th
-                    id="ad15120d"
+                    id="2f99b9ed"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -16366,7 +16366,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <th
-                    id="1c914b1d"
+                    id="5fadffac"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -16394,7 +16394,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <td
-                    id="fefb6514"
+                    id="c88af3a2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16415,12 +16415,12 @@ computed on a subsample: the result column has only 100 entries.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="66597.76740423274"
-                    data-value-str="66597.76740423274"
+                    data-value-repr="65041.9534731373"
+                    data-value-str="65041.9534731373"
                 
                     data-column-idx="0"
                 
-                    >6.66e+04</td>
+                    >6.50e+04</td>
                 
                 </tr>
             
@@ -16428,7 +16428,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <th
-                    id="8df8c23d"
+                    id="1f394189"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -16456,7 +16456,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <td
-                    id="e9b3230b"
+                    id="7e2cbdf6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16477,12 +16477,12 @@ computed on a subsample: the result column has only 100 entries.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="101181.16625514887"
-                    data-value-str="101181.16625514887"
+                    data-value-repr="102381.678775258"
+                    data-value-str="102381.678775258"
                 
                     data-column-idx="0"
                 
-                    >1.01e+05</td>
+                    >1.02e+05</td>
                 
                 </tr>
             
@@ -16490,7 +16490,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <th
-                    id="e20c0225"
+                    id="5be6b31a"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -16518,7 +16518,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <td
-                    id="78e2bb30"
+                    id="efe65d9f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16539,12 +16539,12 @@ computed on a subsample: the result column has only 100 entries.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="103611.99279080085"
-                    data-value-str="103611.99279080085"
+                    data-value-repr="100779.94164510941"
+                    data-value-str="100779.94164510941"
                 
                     data-column-idx="0"
                 
-                    >1.04e+05</td>
+                    >1.01e+05</td>
                 
                 </tr>
             
@@ -16552,7 +16552,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <th
-                    id="9f97060c"
+                    id="8bce15a4"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -16580,7 +16580,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <td
-                    id="54d6c267"
+                    id="518d0bc0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16601,12 +16601,12 @@ computed on a subsample: the result column has only 100 entries.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="55081.07041949438"
-                    data-value-str="55081.07041949438"
+                    data-value-repr="57898.96343479368"
+                    data-value-str="57898.96343479368"
                 
                     data-column-idx="0"
                 
-                    >5.51e+04</td>
+                    >5.79e+04</td>
                 
                 </tr>
             
@@ -16614,7 +16614,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <th
-                    id="3800c7d2"
+                    id="0395b0aa"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -16642,7 +16642,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <td
-                    id="7d616c6a"
+                    id="29a0430c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16663,12 +16663,12 @@ computed on a subsample: the result column has only 100 entries.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="97890.85311297863"
-                    data-value-str="97890.85311297863"
+                    data-value-repr="96751.99520336061"
+                    data-value-str="96751.99520336061"
                 
                     data-column-idx="0"
                 
-                    >9.79e+04</td>
+                    >9.68e+04</td>
                 
                 </tr>
             
@@ -16706,7 +16706,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <th
-                    id="1bda763d"
+                    id="ff00d1ba"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -16734,7 +16734,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <td
-                    id="57762079"
+                    id="99402f88"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16755,12 +16755,12 @@ computed on a subsample: the result column has only 100 entries.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="63424.77472537579"
-                    data-value-str="63424.77472537579"
+                    data-value-repr="61772.567181521925"
+                    data-value-str="61772.567181521925"
                 
                     data-column-idx="0"
                 
-                    >6.34e+04</td>
+                    >6.18e+04</td>
                 
                 </tr>
             
@@ -16768,7 +16768,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <th
-                    id="c7778458"
+                    id="827d9ba9"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -16796,7 +16796,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <td
-                    id="808d4dff"
+                    id="273534c9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16817,12 +16817,12 @@ computed on a subsample: the result column has only 100 entries.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="28500.745216848958"
-                    data-value-str="28500.745216848958"
+                    data-value-repr="29175.890822757312"
+                    data-value-str="29175.890822757312"
                 
                     data-column-idx="0"
                 
-                    >2.85e+04</td>
+                    >2.92e+04</td>
                 
                 </tr>
             
@@ -16830,7 +16830,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <th
-                    id="bfd0cafd"
+                    id="b3a625f1"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -16858,7 +16858,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <td
-                    id="926d2e7f"
+                    id="0194354a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16879,12 +16879,12 @@ computed on a subsample: the result column has only 100 entries.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="66987.10525181128"
-                    data-value-str="66987.10525181128"
+                    data-value-repr="67283.47381563019"
+                    data-value-str="67283.47381563019"
                 
                     data-column-idx="0"
                 
-                    >6.70e+04</td>
+                    >6.73e+04</td>
                 
                 </tr>
             
@@ -16892,7 +16892,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <th
-                    id="20391a26"
+                    id="edffc80d"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -16920,7 +16920,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <td
-                    id="105a0ca3"
+                    id="8fe4d86a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16941,12 +16941,12 @@ computed on a subsample: the result column has only 100 entries.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="25927.177840966422"
-                    data-value-str="25927.177840966422"
+                    data-value-repr="27706.33574823168"
+                    data-value-str="27706.33574823168"
                 
                     data-column-idx="0"
                 
-                    >2.59e+04</td>
+                    >2.77e+04</td>
                 
                 </tr>
             
@@ -16954,7 +16954,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <th
-                    id="378db945"
+                    id="83f3990c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -16982,7 +16982,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                 
                     <td
-                    id="db2f9a86"
+                    id="7303dfda"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17003,12 +17003,12 @@ computed on a subsample: the result column has only 100 entries.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="48337.12353731727"
-                    data-value-str="48337.12353731727"
+                    data-value-repr="45794.14019796456"
+                    data-value-str="45794.14019796456"
                 
                     data-column-idx="0"
                 
-                    >4.83e+04</td>
+                    >4.58e+04</td>
                 
                 </tr>
             
@@ -17090,7 +17090,7 @@ computed on a subsample: the result column has only 100 entries.
                 
                     <dt>Unique values</dt>
                     <dd>
-                        96 (96.0%)
+                        97 (97.0%)
                     
                         <span class="toggletip-wrapper">
                             <div class="toggletip" data-manager="Toggletip">
@@ -17110,20 +17110,20 @@ computed on a subsample: the result column has only 100 entries.
                 
                     <dt>Mean ± Std</dt>
                     <dd>6.62e+04 ±
-                        2.87e+04
+                        2.86e+04
                     
                     </dd>
                 
                 
                     <dt>Median ± IQR</dt>
-                    <dd>6.20e+04 ±
+                    <dd>6.34e+04 ±
                         3.74e+04
                     
                     </dd>
 
                     <dt>Min | Max</dt>
                     <dd>
-                        <span class="min-value">2.25e+04</span> |
+                        <span class="min-value">2.03e+04</span> |
                         <span class="max-value">1.55e+05</span>
                     
                     </dd>
@@ -17508,24 +17508,24 @@ computed on a subsample: the result column has only 100 entries.
                         </td>
 
                     
-                        <td data-value="96" data-numeric>
-                            96 (96.0%)
+                        <td data-value="97" data-numeric>
+                            97 (97.0%)
                         </td>
                     
 
                     
-                        <td data-value="66185.25000148102" data-numeric>
+                        <td data-value="66185.24999084859" data-numeric>
                             6.62e+04</td>
-                        <td data-value="28727.252529530702" data-numeric>
-                            2.87e+04</td>
+                        <td data-value="28637.345064018602" data-numeric>
+                            2.86e+04</td>
                     
 
                     
-                        <td data-value="22547.390007475125" data-numeric>
-                            2.25e+04</td>
-                        <td data-value="61956.20623210274" data-numeric>
-                            6.20e+04</td>
-                        <td data-value="154587.26339980878" data-numeric>
+                        <td data-value="20315.957983495497" data-numeric>
+                            2.03e+04</td>
+                        <td data-value="63352.93111130554" data-numeric>
+                            6.34e+04</td>
+                        <td data-value="154887.56323125405" data-numeric>
                             1.55e+05</td>
                     
 
@@ -17559,7 +17559,7 @@ computed on a subsample: the result column has only 100 entries.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_01f90f6b">
+        <skrub-table-report class="report" id="report_73bbd9fd">
         </skrub-table-report>
 
         <script type="module">
@@ -18657,7 +18657,7 @@ computed on a subsample: the result column has only 100 entries.
         </script>
     </div>
 
-    <div id="report_01f90f6b-wrapper-fallback">
+    <div id="report_73bbd9fd-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -18668,8 +18668,8 @@ computed on a subsample: the result column has only 100 entries.
     </div>
 
     <script>
-     document.getElementById("report_01f90f6b-wrapper").removeAttribute("hidden");
-     document.getElementById("report_01f90f6b-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_73bbd9fd-wrapper").removeAttribute("hidden");
+     document.getElementById("report_73bbd9fd-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -18773,33 +18773,33 @@ detect errors in our cross-validation scheme.
       <tbody>
         <tr>
           <th>0</th>
-          <td>0.165258</td>
-          <td>0.064703</td>
-          <td>0.081532</td>
+          <td>0.165782</td>
+          <td>0.065295</td>
+          <td>0.010081</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>0.172600</td>
-          <td>0.063867</td>
-          <td>0.433360</td>
+          <td>0.172832</td>
+          <td>0.064052</td>
+          <td>0.415884</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>0.177924</td>
-          <td>0.064813</td>
-          <td>0.657920</td>
+          <td>0.166734</td>
+          <td>0.068084</td>
+          <td>0.571557</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>0.163901</td>
-          <td>0.064709</td>
-          <td>0.276539</td>
+          <td>0.165025</td>
+          <td>0.064239</td>
+          <td>0.120956</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>0.165837</td>
-          <td>0.064898</td>
-          <td>0.300465</td>
+          <td>0.164228</td>
+          <td>0.065481</td>
+          <td>0.336836</td>
         </tr>
       </tbody>
     </table>
@@ -18857,33 +18857,33 @@ Note the longer ``fit_time`` and much better ``test_score``.
       <tbody>
         <tr>
           <th>0</th>
-          <td>1.894383</td>
-          <td>0.186427</td>
-          <td>0.912998</td>
+          <td>1.917007</td>
+          <td>0.192798</td>
+          <td>0.912244</td>
         </tr>
         <tr>
           <th>1</th>
-          <td>1.879840</td>
-          <td>0.187146</td>
-          <td>0.881846</td>
+          <td>1.983641</td>
+          <td>0.214817</td>
+          <td>0.885875</td>
         </tr>
         <tr>
           <th>2</th>
-          <td>1.876838</td>
-          <td>0.183320</td>
-          <td>0.916099</td>
+          <td>2.022693</td>
+          <td>0.188409</td>
+          <td>0.915532</td>
         </tr>
         <tr>
           <th>3</th>
-          <td>1.889258</td>
-          <td>0.186023</td>
-          <td>0.925034</td>
+          <td>1.927435</td>
+          <td>0.190411</td>
+          <td>0.926340</td>
         </tr>
         <tr>
           <th>4</th>
-          <td>1.839404</td>
-          <td>0.186718</td>
-          <td>0.925449</td>
+          <td>1.925259</td>
+          <td>0.188296</td>
+          <td>0.919429</td>
         </tr>
       </tbody>
     </table>
@@ -18895,7 +18895,7 @@ Note the longer ``fit_time`` and much better ``test_score``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 12.614 seconds)
+   **Total running time of the script:** (0 minutes 13.044 seconds)
 
 
 .. _sphx_glr_download_auto_examples_expressions_12_subsampling.py:
