@@ -28,3 +28,5 @@ Cleaning a dataframe
 
 
   deduplicate
+  Cleaner
+  DropUninformative

@@ -524,12 +524,10 @@
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.tabular_pipeline.html">tabular_pipeline</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.tabular_learner.html">tabular_learner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.TableVectorizer.html">TableVectorizer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/skrub.Cleaner.html">Cleaner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.DropCols.html">DropCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.ApplyToCols.html">ApplyToCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.ApplyToFrame.html">ApplyToFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/skrub.DropUninformative.html">DropUninformative</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="encoders.html">encoders</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -553,6 +551,8 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="cleaning.html">cleaning</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.deduplicate.html">deduplicate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.Cleaner.html">Cleaner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.DropUninformative.html">DropUninformative</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -742,23 +742,17 @@ classes and functions may not be enough to give full guidelines on their use.</p
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></p></td>
 <td><p>Transform a dataframe to a numeric (vectorized) representation.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cleaner</span></code></a></p></td>
-<td><p>Column-wise consistency checks and sanitization of dtypes, null values and dates.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SelectCols</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SelectCols</span></code></a></p></td>
 <td><p>Select a subset of a DataFrame's columns.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DropCols</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DropCols</span></code></a></p></td>
 <td><p>Drop a subset of a DataFrame's columns.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></p></td>
 <td><p>Map a transformer to columns in a dataframe.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a></p></td>
 <td><p>Apply a transformer to part of a dataframe.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DropUninformative</span></code></a></p></td>
-<td><p>Drop column if it is found to be uninformative according to various criteria.</p></td>
 </tr>
 </tbody>
 </table>
@@ -825,6 +819,12 @@ classes and functions may not be enough to give full guidelines on their use.</p
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deduplicate</span></code></a></p></td>
 <td><p>Deduplicate categorical data by hierarchically clustering similar strings.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cleaner</span></code></a></p></td>
+<td><p>Column-wise consistency checks and sanitization of dtypes, null values and dates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DropUninformative</span></code></a></p></td>
+<td><p>Drop column if it is found to be uninformative according to various criteria.</p></td>
 </tr>
 </tbody>
 </table>

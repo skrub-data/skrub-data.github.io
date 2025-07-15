@@ -52,9 +52,6 @@ Building a pipeline
   TableVectorizer
 
 
-  Cleaner
-
-
   SelectCols
 
 
@@ -65,9 +62,6 @@ Building a pipeline
 
 
   ApplyToFrame
-
-
-  DropUninformative
 
 
 
@@ -161,6 +155,12 @@ Cleaning a dataframe
 
 
   deduplicate
+
+
+  Cleaner
+
+
+  DropUninformative
 
 
 
