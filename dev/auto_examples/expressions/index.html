@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/auto_examples/expressions/index.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Building complex tabular pipelines Tuning pipelines Subsampling for faster development" />
+<meta property="og:description" content="Building a predictive model by combining multiple tables with the skrub DataOps Tuning DataOps Subsampling for faster development" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Building complex tabular pipelines Tuning pipelines Subsampling for faster development" />
+<meta name="description" content="Building a predictive model by combining multiple tables with the skrub DataOps Tuning DataOps Subsampling for faster development" />
 
     <title>Skrub expressions &#8212; skrub</title>
   
@@ -73,7 +73,7 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Building complex tabular pipelines" href="10_expressions_intro.html" />
+    <link rel="next" title="Building a predictive model by combining multiple tables with the skrub DataOps" href="10_expressions_intro.html" />
     <link rel="prev" title="Hands-On with Column Selection and Transformers" href="../10_apply_on_cols.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -538,8 +538,8 @@
 </ul>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Skrub expressions</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="10_expressions_intro.html">Building complex tabular pipelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="11_choices.html">Tuning pipelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_expressions_intro.html">Building a predictive model by combining multiple tables with the skrub DataOps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_choices.html">Tuning DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_subsampling.html">Subsampling for faster development</a></li>
 </ul>
 </details></li>
@@ -605,15 +605,15 @@
                   
   <section id="skrub-expressions">
 <span id="expressions-examples-ref"></span><span id="sphx-glr-auto-examples-expressions"></span><h1>Skrub expressions<a class="headerlink" href="#skrub-expressions" title="Link to this heading">#</a></h1>
-<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show a simple pipeline handling a dataset with 2 tables, which would be difficult to implement, validate, and deploy correctly without skrub."><img alt="" src="../../_images/sphx_glr_10_expressions_intro_thumb.svg" />
-<p><a class="reference internal" href="10_expressions_intro.html#sphx-glr-auto-examples-expressions-10-expressions-intro-py"><span class="std std-ref">Building complex tabular pipelines</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Building complex tabular pipelines</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Our machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not)."><img alt="" src="../../_images/sphx_glr_11_choices_thumb.svg" />
-<p><a class="reference internal" href="11_choices.html#sphx-glr-auto-examples-expressions-11-choices-py"><span class="std std-ref">Tuning pipelines</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Tuning pipelines</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use Expr.skb.subsample to speed-up interactive creation of skrub expressions by subsampling the data when computing preview results."><img alt="" src="../../_images/sphx_glr_12_subsampling_thumb.svg" />
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This example introduces the skrub DataOps, that builds complex data processing pipelines handling multiple tables, with hyperparameter tuning and model selection."><img alt="" src="../../_images/sphx_glr_10_expressions_intro_thumb.svg" />
+<p><a class="reference internal" href="10_expressions_intro.html#sphx-glr-auto-examples-expressions-10-expressions-intro-py"><span class="std std-ref">Building a predictive model by combining multiple tables with the skrub DataOps</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Building a predictive model by combining multiple tables with the skrub DataOps</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="We want to tune those choices by trying several options and keeping those that give the best performance on a validation set."><img alt="" src="../../_images/sphx_glr_11_choices_thumb.svg" />
+<p><a class="reference internal" href="11_choices.html#sphx-glr-auto-examples-expressions-11-choices-py"><span class="std std-ref">Tuning DataOps</span></a></p>
+  <div class="sphx-glr-thumbnail-title">A machine-learning pipeline typically contains some values or choices which</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use Expr.skb.subsample to speed-up"><img alt="" src="../../_images/sphx_glr_12_subsampling_thumb.svg" />
 <p><a class="reference internal" href="12_subsampling.html#sphx-glr-auto-examples-expressions-12-subsampling-py"><span class="std std-ref">Subsampling for faster development</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Subsampling for faster development</div>
+  <div class="sphx-glr-thumbnail-title">Here we show how to use Expr.skb.subsample to speed-up</div>
 </div></div><div class="toctree-wrapper compound">
 </div>
 </section>
@@ -642,7 +642,7 @@
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Building complex tabular pipelines</p>
+        <p class="prev-next-title">Building a predictive model by combining multiple tables with the skrub DataOps</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

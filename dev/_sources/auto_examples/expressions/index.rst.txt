@@ -17,7 +17,7 @@ Skrub expressions
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show a simple pipeline handling a dataset with 2 tables, which would be difficult to implement, validate, and deploy correctly without skrub.">
+    <div class="sphx-glr-thumbcontainer" tooltip="This example introduces the skrub DataOps, that builds complex data processing pipelines handling multiple tables, with hyperparameter tuning and model selection.">
 
 .. only:: html
 
@@ -28,13 +28,13 @@ Skrub expressions
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Building complex tabular pipelines</div>
+      <div class="sphx-glr-thumbnail-title">Building a predictive model by combining multiple tables with the skrub DataOps</div>
     </div>
 
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Our machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not).">
+    <div class="sphx-glr-thumbcontainer" tooltip="We want to tune those choices by trying several options and keeping those that give the best performance on a validation set.">
 
 .. only:: html
 
@@ -45,13 +45,13 @@ Skrub expressions
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Tuning pipelines</div>
+      <div class="sphx-glr-thumbnail-title">A machine-learning pipeline typically contains some values or choices which</div>
     </div>
 
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use Expr.skb.subsample to speed-up interactive creation of skrub expressions by subsampling the data when computing preview results.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use Expr.skb.subsample to speed-up">
 
 .. only:: html
 
@@ -62,7 +62,7 @@ Skrub expressions
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Subsampling for faster development</div>
+      <div class="sphx-glr-thumbnail-title">Here we show how to use Expr.skb.subsample to speed-up</div>
     </div>
 
 
