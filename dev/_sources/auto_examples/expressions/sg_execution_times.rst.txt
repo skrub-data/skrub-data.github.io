@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**04:58.641** total execution time for 3 files **from auto_examples/expressions**:
+**05:12.115** total execution time for 3 files **from auto_examples/expressions**:
 
 .. container::
 
@@ -33,11 +33,11 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_expressions_10_expressions_intro.py` (``10_expressions_intro.py``)
-     - 04:05.699
+     - 04:11.076
      - 0.0
    * - :ref:`sphx_glr_auto_examples_expressions_11_choices.py` (``11_choices.py``)
-     - 00:40.971
+     - 00:47.039
      - 0.0
    * - :ref:`sphx_glr_auto_examples_expressions_12_subsampling.py` (``12_subsampling.py``)
-     - 00:11.971
+     - 00:13.1000
      - 0.0
