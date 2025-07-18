@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.clone
-====================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.clone

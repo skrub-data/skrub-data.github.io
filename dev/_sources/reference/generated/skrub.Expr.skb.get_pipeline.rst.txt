@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.get_pipeline
-===========================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.get_pipeline

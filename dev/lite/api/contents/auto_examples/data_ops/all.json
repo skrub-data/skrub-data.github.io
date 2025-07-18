@@ -1,0 +1,57 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2025-07-18T21:01:57.469593Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2025-07-18T21:01:54.985595Z",
+      "mimetype": null,
+      "name": "10_expressions_intro.ipynb",
+      "path": "auto_examples/data_ops/10_expressions_intro.ipynb",
+      "size": 19186,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2025-07-18T21:01:57.469593Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2025-07-18T21:01:54.985595Z",
+      "mimetype": null,
+      "name": "11_choices.ipynb",
+      "path": "auto_examples/data_ops/11_choices.ipynb",
+      "size": 15270,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2025-07-18T21:01:57.470593Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2025-07-18T21:01:54.986595Z",
+      "mimetype": null,
+      "name": "12_subsampling.ipynb",
+      "path": "auto_examples/data_ops/12_subsampling.ipynb",
+      "size": 6399,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2025-07-18T21:01:57.470593Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2025-07-18T21:01:57.470593Z",
+  "mimetype": null,
+  "name": "data_ops",
+  "path": "auto_examples/data_ops",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

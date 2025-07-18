@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.name
-===================
-
-.. currentmodule:: skrub
-
-.. autoaccessorattribute:: Expr.skb.name

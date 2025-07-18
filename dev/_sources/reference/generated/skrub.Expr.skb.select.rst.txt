@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.select
-=====================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.select

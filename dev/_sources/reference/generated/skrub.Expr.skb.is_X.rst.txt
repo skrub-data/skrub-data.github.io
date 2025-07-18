@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.is_X
-===================
-
-.. currentmodule:: skrub
-
-.. autoaccessorattribute:: Expr.skb.is_X

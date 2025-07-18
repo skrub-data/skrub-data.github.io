@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.applied_estimator
-================================
-
-.. currentmodule:: skrub
-
-.. autoaccessorattribute:: Expr.skb.applied_estimator

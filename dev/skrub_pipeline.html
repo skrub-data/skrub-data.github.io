@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Skrub Pipeline: fit, tune, and validate arbitrary data wrangling" />
+<meta property="og:title" content="Skrub DataOps: fit, tune, and validate arbitrary data wrangling" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/skrub_pipeline.html" />
 <meta property="og:site_name" content="skrub" />
@@ -16,7 +16,7 @@
 <meta property="og:image:alt" content="skrub" />
 <meta name="description" content="Introduction: Skrub provides an easy way to build complex, flexible machine learning pipelines. There are several needs that are not easily addressed with standard scikit-learn tools such as Pipeli..." />
 
-    <title>Skrub Pipeline: fit, tune, and validate arbitrary data wrangling &#8212; skrub</title>
+    <title>Skrub DataOps: fit, tune, and validate arbitrary data wrangling &#8212; skrub</title>
   
   
   
@@ -526,7 +526,7 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="end_to_end_pipeline.html">End-to-end predictive models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Skrub Pipeline: fit, tune, and validate arbitrary data wrangling</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub_pipeline_validation.html">Tuning and validating Skrub Pipelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cleaning.html">Cleaning</a></li>
@@ -573,7 +573,7 @@
     
     <li class="breadcrumb-item"><a href="documentation.html" class="nav-link">User guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Skrub Pipeline: fit, tune, and validate arbitrary data wrangling</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</span></li>
   </ul>
 </nav>
 </div>
@@ -590,8 +590,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="skrub-pipeline-fit-tune-and-validate-arbitrary-data-wrangling">
-<span id="skrub-pipeline"></span><h1>Skrub Pipeline: fit, tune, and validate arbitrary data wrangling<a class="headerlink" href="#skrub-pipeline-fit-tune-and-validate-arbitrary-data-wrangling" title="Link to this heading">#</a></h1>
+  <section id="skrub-dataops-fit-tune-and-validate-arbitrary-data-wrangling">
+<span id="skrub-data-ops"></span><h1>Skrub DataOps: fit, tune, and validate arbitrary data wrangling<a class="headerlink" href="#skrub-dataops-fit-tune-and-validate-arbitrary-data-wrangling" title="Link to this heading">#</a></h1>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>Skrub provides an easy way to build complex, flexible machine learning pipelines.
@@ -625,10 +625,10 @@ errors.</p></li>
 table with a fixed number of rows.</p>
 <a class="reference internal image-reference" href="_images/sklearn_pipeline.svg"><img alt="_images/sklearn_pipeline.svg" src="_images/sklearn_pipeline.svg" style="width: 500px;" />
 </a>
-<p>Skrub expressions, on the other hand, can manipulate any number of variables.
+<p>Skrub DataOps, on the other hand, can manipulate any number of variables.
 The transformation they perform is not a linear sequence but any Directed
 Acyclic Graph of computations.</p>
-<img alt="_images/skrub_expressions.svg" src="_images/skrub_expressions.svg" />
+<img alt="_static/skrub_expressions.svg" src="_static/skrub_expressions.svg" />
 </section>
 <section id="what-is-the-difference-with-orchestrators-like-apache-airflow">
 <h3>What is the difference with orchestrators like Apache Airflow?<a class="headerlink" href="#what-is-the-difference-with-orchestrators-like-apache-airflow" title="Link to this heading">#</a></h3>
@@ -637,17 +637,17 @@ and do not offer capabilities for scheduling runs or provisioning resources and
 environments. Instead, they are a generalization of scikit-learn pipelines, which can still be used within an orchestrator.</p>
 </section>
 </section>
-<section id="skrub-expressions">
-<span id="expressions"></span><h2>Skrub expressions<a class="headerlink" href="#skrub-expressions" title="Link to this heading">#</a></h2>
-<p>Skrub pipelines are built using <strong>expressions</strong>: special objects that
-encapsulate computations that can be evaluated to produce a result. Expressions
+<section id="skrub-dataops">
+<span id="data-ops"></span><h2>Skrub DataOps<a class="headerlink" href="#skrub-dataops" title="Link to this heading">#</a></h2>
+<p>Skrub pipelines are built using <strong>DataOps</strong>: special objects that
+encapsulate computations that can be evaluated to produce a result. DataOps
 record the operations performed on them (such as applying operators or calling
 methods) allowing the entire computation graph to be retrieved later as a
 machine learning pipeline that can be fitted and applied to unseen data.</p>
-<p>The simplest expressions are <strong>variables</strong>, which represent inputs to our machine
+<p>The simplest DataOps are <strong>variables</strong>, which represent inputs to our machine
 learning pipeline—such as “products” or “customers” tables or dataframes.</p>
 <p>These variables can be combined using operators and function calls to build more
-complex expressions. The pipeline is constructed implicitly as we apply these
+complex DataOps plans. The pipeline is constructed implicitly as we apply these
 operations, rather than by specifying an explicit list of transformations.</p>
 <p>We start by declaring inputs:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
@@ -657,20 +657,20 @@ operations, rather than by specifying an explicit list of transformations.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>We then apply transformations, composing more complex expressions.</p>
+<p>We then apply transformations, composing more complex DataOps.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">c</span>
 <span class="go">&lt;BinOp: add&gt;</span>
 </pre></div>
 </div>
-<p>Finally, we can evaluate an expression, by passing a dictionary mapping input
+<p>Finally, we can evaluate a DataOp, by passing a dictionary mapping input
 (variable) names to values:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">})</span>
 <span class="go">16</span>
 </pre></div>
 </div>
-<p>As shown above, the special <code class="docutils literal notranslate"><span class="pre">.skb</span></code> attribute allows to interact with the expression
-object itself, and <a class="reference internal" href="reference/generated/skrub.Expr.skb.eval.html#skrub.Expr.skb.eval" title="skrub.Expr.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.eval()</span></code></a> evaluates an expression.</p>
+<p>As shown above, the special <code class="docutils literal notranslate"><span class="pre">.skb</span></code> attribute allows to interact with the DataOp
+object itself, and <a class="reference internal" href="reference/generated/skrub.DataOp.skb.eval.html#skrub.DataOp.skb.eval" title="skrub.DataOp.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.eval()</span></code></a> evaluates a DataOp.</p>
 <p>Access to any other attribute than <code class="docutils literal notranslate"><span class="pre">.skb</span></code> is simply added as a new operation
 in the computation graph:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
@@ -679,7 +679,7 @@ in the computation graph:</p>
 </pre></div>
 </div>
 <p>Finally, we can get a pipeline that can be fitted and applied to data.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">()</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">})</span>
 <span class="go">17</span>
 </pre></div>
@@ -687,12 +687,12 @@ in the computation graph:</p>
 </section>
 <section id="previews">
 <h2>Previews<a class="headerlink" href="#previews" title="Link to this heading">#</a></h2>
-<p>As we saw above, we can call <a class="reference internal" href="reference/generated/skrub.Expr.skb.eval.html#skrub.Expr.skb.eval" title="skrub.Expr.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.eval()</span></code></a> with a dictionary of
+<p>As we saw above, we can call <a class="reference internal" href="reference/generated/skrub.DataOp.skb.eval.html#skrub.DataOp.skb.eval" title="skrub.DataOp.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.eval()</span></code></a> with a dictionary of
 bindings to compute the result of a pipeline. However, to make interactive
 development easier without having to call <code class="docutils literal notranslate"><span class="pre">eval()</span></code> repeatedly, Skrub provides a
-way to preview the result of an expression. When creating a variable, if we pass
+way to preview the result of a DataOp. When creating a variable, if we pass
 a value along with its name, Skrub will use that value to compute and preview
-the result of the expression.</p>
+the result of the DataOp.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># we pass the value 10 in addition to the name</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
@@ -712,9 +712,9 @@ one example dataset.</p>
 </pre></div>
 </div>
 </section>
-<section id="composing-expressions">
-<h2>Composing expressions<a class="headerlink" href="#composing-expressions" title="Link to this heading">#</a></h2>
-<p>We create complex expressions by applying operations to simpler ones (like
+<section id="composing-dataops">
+<h2>Composing DataOps<a class="headerlink" href="#composing-dataops" title="Link to this heading">#</a></h2>
+<p>We create complex DataOps by applying operations to simpler ones (like
 variables). As the operations are replayed on the actual data when the pipeline
 runs, we can use (most of) the operations that are valid for the types we will
 pass to the pipeline.</p>
@@ -787,17 +787,17 @@ can manipulate <code class="docutils literal notranslate"><span class="pre">orde
 </pre></div>
 </div>
 <p>Note that the original <code class="docutils literal notranslate"><span class="pre">orders</span></code> pipeline is not modified by the operations
-above. Instead, each operation creates a new expression. Expressions cannot be
+above. Instead, each operation creates a new DataOp. DataOps cannot be
 modified in-place, all operations that we apply must produce a new value. We
 discuss this in more detail in a
 <a class="reference internal" href="#user-guide-deferred-evaluation-ref"><span class="std std-ref">later section</span></a>.</p>
 </section>
 <section id="applying-machine-learning-estimators">
 <h2>Applying machine-learning estimators<a class="headerlink" href="#applying-machine-learning-estimators" title="Link to this heading">#</a></h2>
-<p>As mentioned above, in addition to those usual operations, the expressions
+<p>As mentioned above, in addition to those usual operations, the DataOps
 have a special attribute: <code class="docutils literal notranslate"><span class="pre">.skb</span></code>, which gives access to the methods and objects
 provided by Skrub. A particularly important one is
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.apply.html#skrub.Expr.skb.apply" title="skrub.Expr.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply()</span></code></a>, which allows to add scikit-learn estimators to the pipeline.</p>
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply()</span></code></a>, which allows to add scikit-learn estimators to the pipeline.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">TableVectorizer</span><span class="p">())</span>
 <span class="go">&lt;Apply TableVectorizer&gt;</span>
 <span class="go">Result:</span>
@@ -828,9 +828,9 @@ provided by Skrub. A particularly important one is
 encapsulates the entire computation that produces the result we see. We are not only
 interested in the output for the example values we provided: we are building a machine
 learning pipeline that can be fitted and applied to unseen data.</p>
-<p>We can retrieve the pipeline with <a class="reference internal" href="reference/generated/skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.get_pipeline()</span></code></a>, fit it on the data we initially provided, and then
+<p>We can retrieve the pipeline with <a class="reference internal" href="reference/generated/skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_learner()</span></code></a>, fit it on the data we initially provided, and then
 apply it to new data:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">vectorized_orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">vectorized_orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">new_orders</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;fork&quot;</span><span class="p">],</span> <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">2.2</span><span class="p">],</span> <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">]})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;orders&quot;</span><span class="p">:</span> <span class="n">new_orders</span><span class="p">})</span>
 <span class="go">         item_0  item_1        item_2  price  qty</span>
@@ -840,23 +840,23 @@ apply it to new data:</p>
 </section>
 <section id="deferred-evaluation">
 <span id="user-guide-deferred-evaluation-ref"></span><h2>Deferred evaluation<a class="headerlink" href="#deferred-evaluation" title="Link to this heading">#</a></h2>
-<p>An expression represents a computation that has not been executed yet, and will
-only be triggered when we call <a class="reference internal" href="reference/generated/skrub.Expr.skb.eval.html#skrub.Expr.skb.eval" title="skrub.Expr.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.eval()</span></code></a>, or when we
-create the pipeline with <a class="reference internal" href="reference/generated/skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.get_pipeline()</span></code></a> and
+<p>DataOps represent computations that have not been executed yet, and will
+only be triggered when we call <a class="reference internal" href="reference/generated/skrub.DataOp.skb.eval.html#skrub.DataOp.skb.eval" title="skrub.DataOp.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.eval()</span></code></a>, or when we
+create the pipeline with <a class="reference internal" href="reference/generated/skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_learner()</span></code></a> and
 call one of its methods such as <code class="docutils literal notranslate"><span class="pre">fit()</span></code>.</p>
 <p>This means we cannot use standard Python control flow statements such as <code class="docutils literal notranslate"><span class="pre">if</span></code>,
-<code class="docutils literal notranslate"><span class="pre">for</span></code>, <code class="docutils literal notranslate"><span class="pre">with</span></code>, etc. with expressions, because those constructs would execute
+<code class="docutils literal notranslate"><span class="pre">for</span></code>, <code class="docutils literal notranslate"><span class="pre">with</span></code>, etc. with DataOps, because those constructs would execute
 immediately.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">orders</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="k">pass</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">TypeError</span>: <span class="n">This object is an expression that will be evaluated later, when your pipeline runs. So it is not possible to eagerly iterate over it now.</span>
+<span class="gr">TypeError</span>: <span class="n">This object is a DataOp that will be evaluated later, when your learner runs. So it is not possible to eagerly iterate over it now.</span>
 </pre></div>
 </div>
 <p>We get an error because the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement tries to iterate immediately
 over the columns. However, <code class="docutils literal notranslate"><span class="pre">orders.columns</span></code> is not an actual list of
-columns: it is a Skrub expression that will produce a list of columns, later,
+columns: it is a Skrub DataOp that will produce a list of columns, later,
 when we run the computation.</p>
 <p>This remains true even if we have provided a value for <code class="docutils literal notranslate"><span class="pre">orders</span></code> and we can
 see a result for that value:</p>
@@ -877,8 +877,8 @@ actually runs and <code class="docutils literal notranslate"><span class="pre">o
 <p>We can achieve this by defining a function that contains the control flow logic
 we need, and decorating it with <a class="reference internal" href="reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a>. This decorator defers the execution
 of the function: when we call it, it does not run immediately. Instead, it returns
-a Skrub expression that wraps the function call. The original function is only
-executed when the expression is evaluated.</p>
+a Skrub DataOp that wraps the function call. The original function is only
+executed when the DataOp is evaluated.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
 <span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">with_upper_columns</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="n">new_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
@@ -898,9 +898,9 @@ executed when the expression is evaluated.</p>
 </div>
 <p>When the computation runs, <code class="docutils literal notranslate"><span class="pre">orders</span></code> will be evaluated first and the result (an
 actual dataframe) will be passed as the <code class="docutils literal notranslate"><span class="pre">df</span></code> argument to our function.</p>
-<p>When the first argument to our function is a skrub expression, rather than
+<p>When the first argument to our function is a skrub DataOp, rather than
 applying <code class="docutils literal notranslate"><span class="pre">deferred</span></code> and calling the function as shown above we can use
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.apply_func.html#skrub.Expr.skb.apply_func" title="skrub.Expr.skb.apply_func"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply_func()</span></code></a>:</p>
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.apply_func.html#skrub.DataOp.skb.apply_func" title="skrub.DataOp.skb.apply_func"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply_func()</span></code></a>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">with_upper_columns</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="n">new_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">set_axis</span><span class="p">(</span><span class="n">new_columns</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">)</span>
@@ -924,7 +924,7 @@ loading of a CSV file, we could write something like:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">deferred</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">)(</span><span class="n">csv_path</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Another consequence of the fact that expressions are evaluated lazily (we are
+<p>Another consequence of the fact that DataOps are evaluated lazily (we are
 building a pipeline, not immediately computing a single result), any
 transformation that we apply must not modify its input, but leave it unchanged
 and return a new value.</p>
@@ -933,7 +933,7 @@ result without modifying its input.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">orders</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s1">&#39;qty&#39;</span><span class="p">]</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">TypeError</span>: <span class="n">Do not modify an expression in-place. Instead, use a function that returns a new value. This is necessary to allow chaining several steps in a sequence of transformations.</span>
+<span class="gr">TypeError</span>: <span class="n">Do not modify a DataOp in-place. Instead, use a function that returns a new value. This is necessary to allow chaining several steps in a sequence of transformations.</span>
 <span class="x">For example if df is a pandas DataFrame:</span>
 <span class="x">df = df.assign(new_col=...) instead of df[&#39;new_col&#39;] = ...</span>
 </pre></div>
@@ -953,10 +953,10 @@ and reading a file).</p></li>
 </ul>
 <p class="rubric">Examples</p>
 <ul class="simple">
-<li><p>See <a class="reference internal" href="auto_examples/expressions/10_expressions_intro.html#example-expressions-intro"><span class="std std-ref">Building a predictive model by combining multiple tables with the skrub DataOps</span></a> for an example of skrub pipelines using
-expressions on dataframes.</p></li>
-<li><p>See <a class="reference internal" href="auto_examples/expressions/11_choices.html#example-tuning-pipelines"><span class="std std-ref">Tuning DataOps</span></a> for an example of hyper-parameter tuning using
-skrub pipelines.</p></li>
+<li><p>See <span class="xref std std-ref">example_data_ops_intro</span> for an example of skrub DataOps plans using
+DataOps on dataframes.</p></li>
+<li><p>See <a class="reference internal" href="auto_examples/data_ops/11_choices.html#example-tuning-pipelines"><span class="std std-ref">Tuning DataOps</span></a> for an example of hyper-parameter tuning using
+skrub DataOps.</p></li>
 </ul>
 </section>
 <section id="subsampling-to-develop-pipelines-with-reduced-computation">
@@ -964,31 +964,31 @@ skrub pipelines.</p></li>
 <p>To speed-up the development of our pipeline, we can tell skrub to work on a
 subsample of our data.</p>
 <p>This is done with
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.subsample.html#skrub.Expr.skb.subsample" title="skrub.Expr.skb.subsample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.subsample()</span></code></a>.
-When we use it, the previews shown when printing an expression and returned by
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.preview.html#skrub.Expr.skb.preview" title="skrub.Expr.skb.preview"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.preview()</span></code></a> are computed on a subsample.
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.subsample.html#skrub.DataOp.skb.subsample" title="skrub.DataOp.skb.subsample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.subsample()</span></code></a>.
+When we use it, the previews shown when printing DataOps and returned by
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.preview.html#skrub.DataOp.skb.preview" title="skrub.DataOp.skb.preview"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.preview()</span></code></a> are computed on a subsample.
 By default, subsampling is only applied for those previews.</p>
 <p>Subsampling <strong>is turned off</strong> by default when we call other methods such as
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.eval.html#skrub.Expr.skb.eval" title="skrub.Expr.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.eval()</span></code></a>,
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.cross_validate.html#skrub.Expr.skb.cross_validate" title="skrub.Expr.skb.cross_validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.cross_validate()</span></code></a>,
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.train_test_split.html#skrub.Expr.skb.train_test_split" title="skrub.Expr.skb.train_test_split"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.train_test_split</span></code></a>,
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.get_pipeline()</span></code></a>,
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.get_randomized_search.html#skrub.Expr.skb.get_randomized_search" title="skrub.Expr.skb.get_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Expr.skb.get_randomized_search()</span></code></a>, etc.
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.eval.html#skrub.DataOp.skb.eval" title="skrub.DataOp.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.eval()</span></code></a>,
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.cross_validate.html#skrub.DataOp.skb.cross_validate" title="skrub.DataOp.skb.cross_validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.cross_validate()</span></code></a>,
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.train_test_split.html#skrub.DataOp.skb.train_test_split" title="skrub.DataOp.skb.train_test_split"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.train_test_split</span></code></a>,
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_learner()</span></code></a>,
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_randomized_search()</span></code></a>, etc.
 However, all of those methods have a <code class="docutils literal notranslate"><span class="pre">keep_subsampling</span></code> parameter that we can
 set to <code class="docutils literal notranslate"><span class="pre">True</span></code> to force using the subsampling when we call them.</p>
-<p>See more details in a <a class="reference internal" href="auto_examples/expressions/12_subsampling.html#example-subsampling"><span class="std std-ref">full example</span></a>.</p>
+<p>See more details in a <a class="reference internal" href="auto_examples/data_ops/12_subsampling.html#example-subsampling"><span class="std std-ref">full example</span></a>.</p>
 </section>
 <section id="using-only-a-part-of-a-pipeline">
 <h2>Using only a part of a pipeline<a class="headerlink" href="#using-only-a-part-of-a-pipeline" title="Link to this heading">#</a></h2>
-<p>We can give a name to any node with <a class="reference internal" href="reference/generated/skrub.Expr.skb.set_name.html#skrub.Expr.skb.set_name" title="skrub.Expr.skb.set_name"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.set_name()</span></code></a>.
+<p>We can give a name to any node with <a class="reference internal" href="reference/generated/skrub.DataOp.skb.set_name.html#skrub.DataOp.skb.set_name" title="skrub.DataOp.skb.set_name"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.set_name()</span></code></a>.
 When this is done we can:</p>
 <ul class="simple">
 <li><p>Bypass the computation of that node and override its result by passing it as a
 key in the <code class="docutils literal notranslate"><span class="pre">environment</span></code> argument.</p></li>
 <li><p>Truncate the pipeline after this node to obtain the intermediate result with
-<a class="reference internal" href="reference/generated/skrub.SkrubPipeline.html#skrub.SkrubPipeline.truncated_after" title="skrub.SkrubPipeline.truncated_after"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubPipeline.truncated_after()</span></code></a>.</p></li>
+<a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.truncated_after" title="skrub.SkrubLearner.truncated_after"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.truncated_after()</span></code></a>.</p></li>
 <li><p>Retrieve that node and inspect the estimator that was fitted in it, if the
-node was created with <a class="reference internal" href="reference/generated/skrub.Expr.skb.apply.html#skrub.Expr.skb.apply" title="skrub.Expr.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply()</span></code></a>.</p></li>
+node was created with <a class="reference internal" href="reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply()</span></code></a>.</p></li>
 </ul>
 <p>Here is a toy example with 3 steps:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">load_data</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
@@ -1018,12 +1018,12 @@ node was created with <a class="reference internal" href="reference/generated/sk
 </div>
 <p>Above, we give a name to each intermediate result with <code class="docutils literal notranslate"><span class="pre">.skb.set_name()</span></code> so
 that we can later refer to it when manipulating a fitted pipeline.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">()</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span><span class="p">({</span><span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;file:///example.db&quot;</span><span class="p">})</span>
 <span class="go">load:  file:///example.db</span>
 <span class="go">transform</span>
 <span class="go">agg</span>
-<span class="go">SkrubPipeline(expr=&lt;Call &#39;agg&#39;&gt;)</span>
+<span class="go">SkrubLearner(data_op=&lt;Call &#39;agg&#39;&gt;)</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;file:///example.db&quot;</span><span class="p">})</span>
@@ -1110,9 +1110,9 @@ is not printed and we get the output of <code class="docutils literal notranslat
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-difference-with-orchestrators-like-apache-airflow">What is the difference with orchestrators like Apache Airflow?</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub-expressions">Skrub expressions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub-dataops">Skrub DataOps</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#previews">Previews</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#composing-expressions">Composing expressions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#composing-dataops">Composing DataOps</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-machine-learning-estimators">Applying machine-learning estimators</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deferred-evaluation">Deferred evaluation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subsampling-to-develop-pipelines-with-reduced-computation">Subsampling to develop pipelines with reduced computation</a></li>

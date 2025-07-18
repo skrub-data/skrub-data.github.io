@@ -74,7 +74,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Assembling: joining multiple tables" href="assembling.html" />
-    <link rel="prev" title="Skrub Pipeline: fit, tune, and validate arbitrary data wrangling" href="skrub_pipeline.html" />
+    <link rel="prev" title="Skrub DataOps: fit, tune, and validate arbitrary data wrangling" href="skrub_pipeline.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.6.dev0" />
@@ -526,7 +526,7 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="end_to_end_pipeline.html">End-to-end predictive models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub_pipeline.html">Skrub Pipeline: fit, tune, and validate arbitrary data wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub_pipeline.html">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Tuning and validating Skrub Pipelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cleaning.html">Cleaning</a></li>
@@ -626,11 +626,11 @@ predictions on unlabelled data, the “target” column will not be available.</
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">&quot;target&quot;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>We use <a class="reference internal" href="reference/generated/skrub.Expr.skb.mark_as_X.html#skrub.Expr.skb.mark_as_X" title="skrub.Expr.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_X()</span></code></a> to indicate that this
+<p>We use <a class="reference internal" href="reference/generated/skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_X()</span></code></a> to indicate that this
 intermediate result (the dataframe obtained after dropping “target”) is the
 <code class="docutils literal notranslate"><span class="pre">X</span></code> design matrix. This is the dataframe that will be split into a training
 and a testing part when we split our dataset or perform cross-validation.</p>
-<p>Similarly for <code class="docutils literal notranslate"><span class="pre">y</span></code>, we use <a class="reference internal" href="reference/generated/skrub.Expr.skb.mark_as_y.html#skrub.Expr.skb.mark_as_y" title="skrub.Expr.skb.mark_as_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code></a>:</p>
+<p>Similarly for <code class="docutils literal notranslate"><span class="pre">y</span></code>, we use <a class="reference internal" href="reference/generated/skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code></a>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;target&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -659,10 +659,10 @@ and a testing part when we split our dataset or perform cross-validation.</p>
 is able to split the dataset and perform cross-validation.</p>
 <section id="splitting">
 <h2>Splitting<a class="headerlink" href="#splitting" title="Link to this heading">#</a></h2>
-<p>We can use <a class="reference internal" href="reference/generated/skrub.Expr.skb.train_test_split.html#skrub.Expr.skb.train_test_split" title="skrub.Expr.skb.train_test_split"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.train_test_split()</span></code></a> to
-perform a single train-test split. Skrub first evaluates the expressions on
-which we used <a class="reference internal" href="reference/generated/skrub.Expr.skb.mark_as_X.html#skrub.Expr.skb.mark_as_X" title="skrub.Expr.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_X()</span></code></a> and
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.mark_as_y.html#skrub.Expr.skb.mark_as_y" title="skrub.Expr.skb.mark_as_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code></a>: the first few steps of the
+<p>We can use <a class="reference internal" href="reference/generated/skrub.DataOp.skb.train_test_split.html#skrub.DataOp.skb.train_test_split" title="skrub.DataOp.skb.train_test_split"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.train_test_split()</span></code></a> to
+perform a single train-test split. Skrub first evaluates the DataOps on
+which we used <a class="reference internal" href="reference/generated/skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_X()</span></code></a> and
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code></a>: the first few steps of the
 pipeline are executed until we have a value for <code class="docutils literal notranslate"><span class="pre">X</span></code> and for <code class="docutils literal notranslate"><span class="pre">y</span></code>. Then, those
 dataframes are split using the provided splitter function (by default
 scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="(in scikit-learn v1.7)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.train_test_split()</span></code></a>).</p>
@@ -674,12 +674,12 @@ scikit-learn’s <a class="reference external" href="https://scikit-learn.org/st
 <p><code class="docutils literal notranslate"><span class="pre">train</span></code> and <code class="docutils literal notranslate"><span class="pre">test</span></code> are the full dictionaries corresponding to the training
 and testing data. The corresponding <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> are the values, in those
 dictionaries, for the nodes marked with
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.mark_as_X.html#skrub.Expr.skb.mark_as_X" title="skrub.Expr.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_X()</span></code></a>
-and <a class="reference internal" href="reference/generated/skrub.Expr.skb.mark_as_y.html#skrub.Expr.skb.mark_as_y" title="skrub.Expr.skb.mark_as_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code></a>.</p>
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_X()</span></code></a>
+and <a class="reference internal" href="reference/generated/skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code></a>.</p>
 <p>We can now fit our pipeline on the training data:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_pipeline</span><span class="p">()</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">])</span>
-<span class="go">SkrubPipeline(expr=&lt;Apply Ridge&gt;)</span>
+<span class="go">SkrubLearner(data_op=&lt;Apply Ridge&gt;)</span>
 </pre></div>
 </div>
 <p>Only the training part of <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> are used. The subsequent steps are
@@ -701,7 +701,7 @@ evaluated, using this data, to fit the rest of the pipeline.</p>
 <h2>Cross-validation<a class="headerlink" href="#cross-validation" title="Link to this heading">#</a></h2>
 <p>We can increase our confidence in our score by using cross-validation instead of
 a single split. The same mechanism is used but we now fit and evaluate the model
-on several splits. This is done with <a class="reference internal" href="reference/generated/skrub.Expr.skb.cross_validate.html#skrub.Expr.skb.cross_validate" title="skrub.Expr.skb.cross_validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.cross_validate()</span></code></a>.</p>
+on several splits. This is done with <a class="reference internal" href="reference/generated/skrub.DataOp.skb.cross_validate.html#skrub.DataOp.skb.cross_validate" title="skrub.DataOp.skb.cross_validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.cross_validate()</span></code></a>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">cross_validate</span><span class="p">()</span>
 <span class="go">   fit_time  score_time  test_score</span>
 <span class="go">0  0.002816    0.001344    0.321665</span>
@@ -729,13 +729,13 @@ for <code class="docutils literal notranslate"><span class="pre">alpha</span></c
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>When we do <a class="reference internal" href="reference/generated/skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.get_pipeline()</span></code></a>, the pipeline
+<p>When we do <a class="reference internal" href="reference/generated/skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_learner()</span></code></a>, the pipeline
 we obtain does not perform any hyperparameter tuning. The pipeline we obtain
 uses default values for each of the choices. For numeric choices it is the
 middle of the range, and for <a class="reference internal" href="reference/generated/skrub.choose_from.html#skrub.choose_from" title="skrub.choose_from"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_from()</span></code></a> it is the first option we
 give it.</p>
 <p>To get a pipeline that runs an internal cross-validation to select the best
-hyperparameters, we must use <a class="reference internal" href="reference/generated/skrub.Expr.skb.get_grid_search.html#skrub.Expr.skb.get_grid_search" title="skrub.Expr.skb.get_grid_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.get_grid_search()</span></code></a> or <a class="reference internal" href="reference/generated/skrub.Expr.skb.get_randomized_search.html#skrub.Expr.skb.get_randomized_search" title="skrub.Expr.skb.get_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.get_randomized_search()</span></code></a>.</p>
+hyperparameters, we must use <a class="reference internal" href="reference/generated/skrub.DataOp.skb.make_grid_search.html#skrub.DataOp.skb.make_grid_search" title="skrub.DataOp.skb.make_grid_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_grid_search()</span></code></a> or <a class="reference internal" href="reference/generated/skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_randomized_search()</span></code></a>.</p>
 </div>
 <p>Here are the different kinds of choices, along with their default outcome when
 we are not using hyperparameter search:</p>
@@ -805,15 +805,15 @@ transformations in a pipeline eg <code class="docutils literal notranslate"><spa
 </tbody>
 </table>
 </div>
-<p>The default choices for an expression, those that get used when calling
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.get_pipeline.html#skrub.Expr.skb.get_pipeline" title="skrub.Expr.skb.get_pipeline"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.get_pipeline()</span></code></a>, can be inspected with
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.describe_defaults.html#skrub.Expr.skb.describe_defaults" title="skrub.Expr.skb.describe_defaults"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.describe_defaults()</span></code></a>:</p>
+<p>The default choices for an DataOp, those that get used when calling
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_learner()</span></code></a>, can be inspected with
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.describe_defaults.html#skrub.DataOp.skb.describe_defaults" title="skrub.DataOp.skb.describe_defaults"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.describe_defaults()</span></code></a>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_defaults</span><span class="p">()</span>
 <span class="go">{&#39;α&#39;: 0.316...}</span>
 </pre></div>
 </div>
 <p>We can then find the best hyperparameters.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_randomized_search</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_randomized_search</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">search</span><span class="o">.</span><span class="n">results_</span>
 <span class="go">   mean_test_score         α</span>
 <span class="go">0         0.478338  0.141359</span>
@@ -831,12 +831,12 @@ transformations in a pipeline eg <code class="docutils literal notranslate"><spa
 <p>Rather than fitting a randomized or grid search to find the best combination, it is also
 possible to obtain an iterator over different parameter combinations, to inspect
 their outputs or to have manual control over the model selection, using
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.iter_pipelines_grid.html#skrub.Expr.skb.iter_pipelines_grid" title="skrub.Expr.skb.iter_pipelines_grid"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.iter_pipelines_grid()</span></code></a> or
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.iter_pipelines_randomized.html#skrub.Expr.skb.iter_pipelines_randomized" title="skrub.Expr.skb.iter_pipelines_randomized"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.iter_pipelines_randomized()</span></code></a>.
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.iter_pipelines_grid()</span></code> or
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.iter_pipelines_randomized()</span></code>.
 Those yield the candidate pipelines that are explored by the grid and randomized
 search respectively.</p>
 <p>A human-readable description of parameters for a pipeline can be obtained with
-<a class="reference internal" href="reference/generated/skrub.SkrubPipeline.html#skrub.SkrubPipeline.describe_params" title="skrub.SkrubPipeline.describe_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubPipeline.describe_params()</span></code></a>:</p>
+<a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.describe_params" title="skrub.SkrubLearner.describe_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.describe_params()</span></code></a>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search</span><span class="o">.</span><span class="n">best_pipeline_</span><span class="o">.</span><span class="n">describe_params</span><span class="p">()</span>
 <span class="go">{&#39;α&#39;: 0.054...}</span>
 </pre></div>
@@ -849,9 +849,9 @@ data that has not been used to select hyperparameters. This can be done with a
 single train-test split or with nested cross-validation.</p>
 <p>Single train-test split:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">search</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_randomized_search</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">search</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_randomized_search</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">])</span>
-<span class="go">ParamSearch(expr=&lt;Apply Ridge&gt;,</span>
+<span class="go">ParamSearch(data_op=&lt;Apply Ridge&gt;,</span>
 <span class="go">            search=RandomizedSearchCV(estimator=None, param_distributions=None))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">search</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">])</span>
 <span class="go">0.4922874902029253</span>
@@ -859,9 +859,9 @@ single train-test split or with nested cross-validation.</p>
 </div>
 <p>For nested cross-validation we use <a class="reference internal" href="reference/generated/skrub.cross_validate.html#skrub.cross_validate" title="skrub.cross_validate"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.cross_validate()</span></code></a>, which accepts a
 <code class="docutils literal notranslate"><span class="pre">pipeline</span></code> parameter (as opposed to
-<a class="reference internal" href="reference/generated/skrub.Expr.skb.cross_validate.html#skrub.Expr.skb.cross_validate" title="skrub.Expr.skb.cross_validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.cross_validate()</span></code></a>
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.cross_validate.html#skrub.DataOp.skb.cross_validate" title="skrub.DataOp.skb.cross_validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.cross_validate()</span></code></a>
 which always uses the default hyperparameters):</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">skrub</span><span class="o">.</span><span class="n">cross_validate</span><span class="p">(</span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_randomized_search</span><span class="p">(),</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_data</span><span class="p">())</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">skrub</span><span class="o">.</span><span class="n">cross_validate</span><span class="p">(</span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_randomized_search</span><span class="p">(),</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_data</span><span class="p">())</span>
 <span class="go">   fit_time  score_time  test_score</span>
 <span class="go">0  0.891390    0.002768    0.412935</span>
 <span class="go">1  0.889267    0.002773    0.519140</span>
@@ -874,9 +874,9 @@ which always uses the default hyperparameters):</p>
 <section id="choices-beyond-estimator-hyperparameters">
 <h2>Choices beyond estimator hyperparameters<a class="headerlink" href="#choices-beyond-estimator-hyperparameters" title="Link to this heading">#</a></h2>
 <p>Choices are not limited to scikit-learn hyperparameters: we can use choices
-wherever we use expressions. The choice of the estimator to use, any argument of
-an expression’s method or <a class="reference internal" href="reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> function call, etc. can be replaced
-with choices. We can also choose between several expressions to compare
+wherever we use DataOps. The choice of the estimator to use, any argument of
+an DataOp’s method or <a class="reference internal" href="reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> function call, etc. can be replaced
+with choices. We can also choose between several DataOps to compare
 different pipelines.</p>
 <p>As an example of choices outside of scikit-learn estimators, we can consider
 several ways to perform an aggregation on a pandas DataFrame:</p>
@@ -889,8 +889,8 @@ several ways to perform an aggregation on a pandas DataFrame:</p>
 </pre></div>
 </div>
 <p>We can also choose between several completely different pipelines by turning a
-choice into an expression, via its <code class="docutils literal notranslate"><span class="pre">as_expr</span></code> method (or by using
-<a class="reference internal" href="reference/generated/skrub.as_expr.html#skrub.as_expr" title="skrub.as_expr"><code class="xref py py-func docutils literal notranslate"><span class="pre">as_expr()</span></code></a> on any object).</p>
+choice into an DataOp, via its <code class="docutils literal notranslate"><span class="pre">as_data_op</span></code> method (or by using
+<a class="reference internal" href="reference/generated/skrub.as_data_op.html#skrub.as_data_op" title="skrub.as_data_op"><code class="xref py py-func docutils literal notranslate"><span class="pre">as_data_op()</span></code></a> on any object).</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">RandomForestRegressor</span>
 </pre></div>
@@ -906,7 +906,7 @@ choice into an expression, via its <code class="docutils literal notranslate"><s
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rf_pred</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_int</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;N 🌴&quot;</span><span class="p">)),</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span>
 <span class="gp">... </span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">choose_from</span><span class="p">({</span><span class="s2">&quot;ridge&quot;</span><span class="p">:</span> <span class="n">ridge_pred</span><span class="p">,</span> <span class="s2">&quot;rf&quot;</span><span class="p">:</span> <span class="n">rf_pred</span><span class="p">})</span><span class="o">.</span><span class="n">as_expr</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">choose_from</span><span class="p">({</span><span class="s2">&quot;ridge&quot;</span><span class="p">:</span> <span class="n">ridge_pred</span><span class="p">,</span> <span class="s2">&quot;rf&quot;</span><span class="p">:</span> <span class="n">rf_pred</span><span class="p">})</span><span class="o">.</span><span class="n">as_data_op</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_param_grid</span><span class="p">())</span>
 <span class="go">- choose_from({&#39;ridge&#39;: …, &#39;rf&#39;: …}): &#39;ridge&#39;</span>
 <span class="go">  optional(StandardScaler()): [StandardScaler(), None]</span>
@@ -988,7 +988,7 @@ imputation but not for scaling.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Skrub Pipeline: fit, tune, and validate arbitrary data wrangling</p>
+        <p class="prev-next-title">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</p>
       </div>
     </a>
     <a class="right-next"

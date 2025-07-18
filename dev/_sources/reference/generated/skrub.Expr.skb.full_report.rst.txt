@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.full_report
-==========================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.full_report

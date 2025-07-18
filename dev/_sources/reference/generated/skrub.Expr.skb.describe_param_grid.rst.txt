@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.describe_param_grid
-==================================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.describe_param_grid

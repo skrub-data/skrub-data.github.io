@@ -1,0 +1,82 @@
+
+
+.. _sphx_glr_auto_examples_data_ops:
+
+.. _data_ops_examples_ref:
+
+Skrub DataOps
+=================
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+.. thumbnail-parent-div-open
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example introduces the skrub DataOps, that builds complex data processing pipelines handling multiple tables, with hyperparameter tuning and model selection.">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_10_expressions_intro_thumb.svg
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_data_ops_10_expressions_intro.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Building a predictive model by combining multiple tables with the skrub DataOps</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="We want to tune those choices by trying several options and keeping those that give the best performance on a validation set.">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_11_choices_thumb.svg
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_data_ops_11_choices.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">A machine-learning pipeline typically contains some values or choices which</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use DataOp.skb.subsample to speed-up">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_12_subsampling_thumb.svg
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_data_ops_12_subsampling.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Here we show how to use DataOp.skb.subsample to speed-up</div>
+    </div>
+
+
+.. thumbnail-parent-div-close
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/data_ops/10_expressions_intro
+   /auto_examples/data_ops/11_choices
+   /auto_examples/data_ops/12_subsampling
+

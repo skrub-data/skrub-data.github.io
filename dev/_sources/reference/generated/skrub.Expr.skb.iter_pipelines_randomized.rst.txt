@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.iter_pipelines_randomized
-========================================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.iter_pipelines_randomized

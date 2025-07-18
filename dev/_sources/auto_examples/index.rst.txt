@@ -221,7 +221,7 @@ Examples
    /auto_examples/10_apply_on_cols
 
 
-Skrub expressions
+Skrub DataOps
 =================
 
 
@@ -238,10 +238,10 @@ Skrub expressions
 
 .. only:: html
 
-  .. image:: /auto_examples/expressions/images/thumb/sphx_glr_10_expressions_intro_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_10_expressions_intro_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_expressions_10_expressions_intro.py`
+  :ref:`sphx_glr_auto_examples_data_ops_10_expressions_intro.py`
 
 .. raw:: html
 
@@ -255,10 +255,10 @@ Skrub expressions
 
 .. only:: html
 
-  .. image:: /auto_examples/expressions/images/thumb/sphx_glr_11_choices_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_11_choices_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_expressions_11_choices.py`
+  :ref:`sphx_glr_auto_examples_data_ops_11_choices.py`
 
 .. raw:: html
 
@@ -268,18 +268,18 @@ Skrub expressions
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use Expr.skb.subsample to speed-up">
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use DataOp.skb.subsample to speed-up">
 
 .. only:: html
 
-  .. image:: /auto_examples/expressions/images/thumb/sphx_glr_12_subsampling_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_12_subsampling_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_expressions_12_subsampling.py`
+  :ref:`sphx_glr_auto_examples_data_ops_12_subsampling.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Here we show how to use Expr.skb.subsample to speed-up</div>
+      <div class="sphx-glr-thumbnail-title">Here we show how to use DataOp.skb.subsample to speed-up</div>
     </div>
 
 
@@ -295,7 +295,7 @@ Skrub expressions
    :includehidden:
 
 
-   /auto_examples/expressions/index.rst
+   /auto_examples/data_ops/index.rst
 
 
 

@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.freeze_after_fit
-===============================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.freeze_after_fit

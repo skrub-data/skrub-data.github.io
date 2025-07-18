@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.apply
-====================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.apply

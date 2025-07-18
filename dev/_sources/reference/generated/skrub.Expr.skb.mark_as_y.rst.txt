@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.mark_as_y
-========================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.mark_as_y

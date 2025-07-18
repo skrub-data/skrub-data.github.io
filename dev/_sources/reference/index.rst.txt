@@ -21,7 +21,7 @@ classes and functions may not be enough to give full guidelines on their use.
   cleaning <cleaning>
   joining <joining>
   selectors <selectors>
-  expressions <expressions>
+  data_ops <data_ops>
   config <config>
   datasets <datasets>
 
@@ -272,8 +272,8 @@ Selectors
 
 
 
-Expressions
------------
+DataOps
+-------
 
 
 
@@ -295,7 +295,7 @@ Expressions
   y
 
 
-  as_expr
+  as_data_op
 
 
   deferred
@@ -309,10 +309,10 @@ Expressions
 
 .. autosummary::
   :nosignatures:
-  :template: expr_class.rst
+  :template: data_op_class.rst
 
 
-  Expr
+  DataOp
 
 
 
@@ -369,91 +369,91 @@ Expressions
   :template: autosummary/accessor_method.rst
 
 
-  Expr.skb.apply
+  DataOp.skb.apply
 
 
-  Expr.skb.apply_func
+  DataOp.skb.apply_func
 
 
-  Expr.skb.clone
+  DataOp.skb.clone
 
 
-  Expr.skb.concat
+  DataOp.skb.concat
 
 
-  Expr.skb.cross_validate
+  DataOp.skb.cross_validate
 
 
-  Expr.skb.describe_defaults
+  DataOp.skb.describe_defaults
 
 
-  Expr.skb.describe_param_grid
+  DataOp.skb.describe_param_grid
 
 
-  Expr.skb.describe_steps
+  DataOp.skb.describe_steps
 
 
-  Expr.skb.draw_graph
+  DataOp.skb.draw_graph
 
 
-  Expr.skb.drop
+  DataOp.skb.drop
 
 
-  Expr.skb.eval
+  DataOp.skb.eval
 
 
-  Expr.skb.freeze_after_fit
+  DataOp.skb.freeze_after_fit
 
 
-  Expr.skb.full_report
+  DataOp.skb.full_report
 
 
-  Expr.skb.get_data
+  DataOp.skb.get_data
 
 
-  Expr.skb.get_pipeline
+  DataOp.skb.make_learner
 
 
-  Expr.skb.get_grid_search
+  DataOp.skb.make_grid_search
 
 
-  Expr.skb.get_randomized_search
+  DataOp.skb.make_randomized_search
 
 
-  Expr.skb.if_else
+  DataOp.skb.if_else
 
 
-  Expr.skb.iter_pipelines_grid
+  DataOp.skb.iter_learners_grid
 
 
-  Expr.skb.iter_pipelines_randomized
+  DataOp.skb.iter_learners_randomized
 
 
-  Expr.skb.mark_as_X
+  DataOp.skb.mark_as_X
 
 
-  Expr.skb.mark_as_y
+  DataOp.skb.mark_as_y
 
 
-  Expr.skb.match
+  DataOp.skb.match
 
 
-  Expr.skb.preview
+  DataOp.skb.preview
 
 
-  Expr.skb.select
+  DataOp.skb.select
 
 
-  Expr.skb.set_description
+  DataOp.skb.set_description
 
 
-  Expr.skb.set_name
+  DataOp.skb.set_name
 
 
-  Expr.skb.subsample
+  DataOp.skb.subsample
 
 
-  Expr.skb.train_test_split
+  DataOp.skb.train_test_split
 
 
 
@@ -467,19 +467,19 @@ Expressions
   :template: autosummary/accessor_attribute.rst
 
 
-  Expr.skb.description
+  DataOp.skb.description
 
 
-  Expr.skb.is_X
+  DataOp.skb.is_X
 
 
-  Expr.skb.is_y
+  DataOp.skb.is_y
 
 
-  Expr.skb.name
+  DataOp.skb.name
 
 
-  Expr.skb.applied_estimator
+  DataOp.skb.applied_estimator
 
 
 
@@ -493,7 +493,7 @@ Expressions
   :template: base.rst
 
 
-  SkrubPipeline
+  SkrubLearner
 
 
   ParamSearch

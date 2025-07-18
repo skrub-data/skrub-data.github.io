@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.set_description
-==============================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.set_description

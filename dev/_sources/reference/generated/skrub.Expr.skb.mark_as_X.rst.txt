@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.mark_as_X
-========================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.mark_as_X

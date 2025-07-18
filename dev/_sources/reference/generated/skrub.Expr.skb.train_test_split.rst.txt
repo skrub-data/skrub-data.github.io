@@ -1,6 +1,0 @@
-﻿skrub.Expr.skb.train_test_split
-===============================
-
-.. currentmodule:: skrub
-
-.. autoaccessormethod:: Expr.skb.train_test_split
