@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta property="og:title" content="Skrub Selectors: helpers for selecting columns in a dataframe" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/selectors.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/userguide_selectors.html" />
 <meta property="og:site_name" content="skrub" />
 <meta property="og:description" content="In Skrub, a selector represents a column selection rule, such as “all columns that have numerical data types, except the column'User ID' ”. Selectors have two main benefits: Expressing complex sele..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
@@ -60,7 +60,7 @@
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=fd10adb8"></script>
     <script src="_static/jupyterlite_sphinx.js?v=96e329c5"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'selectors';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'userguide_selectors';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
@@ -73,6 +73,8 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Skrub DataOps: fit, tune, and validate arbitrary data wrangling" href="skrub_pipeline.html" />
+    <link rel="prev" title="Data Preparation with skrub Transformers" href="userguide_data_cleaning.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.6.dev0" />
@@ -164,9 +166,9 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="documentation.html">
-    User guide
+    User Guide
   </a>
 </li>
 
@@ -351,10 +353,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -376,9 +376,9 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="documentation.html">
-    User guide
+    User Guide
   </a>
 </li>
 
@@ -518,6 +518,27 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="userguide_tablereport.html">Exploring dataframes with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_encoders.html">Feature engineering for categorical data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_datetimes.html">Parsing and encoding datetimes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_tablevectorizer.html">Strong baseline pipelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_data_cleaning.html">Data Preparation with <code class="docutils literal notranslate"><span class="pre">skrub</span></code> Transformers</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Skrub Selectors: helpers for selecting columns in a dataframe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub_pipeline.html">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skrub_pipeline_validation.html">Tuning and validating Skrub Pipelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_joining_tables.html">Assembling: joining multiple tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_utils.html">Example datasets, utilities, and customization</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -553,6 +574,9 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
+    
+    <li class="breadcrumb-item"><a href="documentation.html" class="nav-link">User Guide</a></li>
+    
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Skrub Selectors: helpers for selecting columns in a dataframe</span></li>
   </ul>
 </nav>
@@ -571,7 +595,7 @@
                 <article class="bd-article">
                   
   <section id="skrub-selectors-helpers-for-selecting-columns-in-a-dataframe">
-<span id="selectors"></span><h1>Skrub Selectors: helpers for selecting columns in a dataframe<a class="headerlink" href="#skrub-selectors-helpers-for-selecting-columns-in-a-dataframe" title="Link to this heading">#</a></h1>
+<span id="userguide-selectors"></span><h1>Skrub Selectors: helpers for selecting columns in a dataframe<a class="headerlink" href="#skrub-selectors-helpers-for-selecting-columns-in-a-dataframe" title="Link to this heading">#</a></h1>
 <p>In Skrub, a selector represents a column selection rule, such as “all columns that have
 numerical data types, except the column <code class="docutils literal notranslate"><span class="pre">'User</span> <span class="pre">ID'</span></code>”.</p>
 <p>Selectors have two main benefits:</p>
@@ -751,6 +775,24 @@ lambda or local functions and thus ensure the selector is picklable.</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="userguide_data_cleaning.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Data Preparation with <code class="docutils literal notranslate"><span class="pre">skrub</span></code> Transformers</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="skrub_pipeline.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -780,7 +822,7 @@ lambda or local functions and thus ensure the selector is picklable.</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/selectors.rst.txt"
+      <li><a href="_sources/userguide_selectors.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

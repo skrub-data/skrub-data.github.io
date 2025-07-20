@@ -7,16 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="User guide" />
+<meta property="og:title" content="User Guide" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/documentation.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Skrub eases preparing tables for machine learning. Starting from rich, complex data stored in one or several dataframes, it helps performing the data wrangling necessary to produce a numeric array ..." />
+<meta property="og:description" content="Skrub is a library that eases machine learning with dataframes for machine learning. Starting from rich, complex data stored in one or several dataframes, it helps performing the data wrangling nec..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Skrub eases preparing tables for machine learning. Starting from rich, complex data stored in one or several dataframes, it helps performing the data wrangling necessary to produce a numeric array ..." />
+<meta name="description" content="Skrub is a library that eases machine learning with dataframes for machine learning. Starting from rich, complex data stored in one or several dataframes, it helps performing the data wrangling nec..." />
 
-    <title>User guide &#8212; skrub</title>
+    <title>User Guide &#8212; skrub</title>
   
   
   
@@ -73,7 +73,7 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="End-to-end predictive models" href="end_to_end_pipeline.html" />
+    <link rel="next" title="Exploring dataframes with the TableReport" href="userguide_tablereport.html" />
     <link rel="prev" title="Install" href="install.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -168,7 +168,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    User guide
+    User Guide
   </a>
 </li>
 
@@ -378,7 +378,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    User guide
+    User Guide
   </a>
 </li>
 
@@ -524,12 +524,16 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="end_to_end_pipeline.html">End-to-end predictive models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_tablereport.html">Exploring dataframes with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_encoders.html">Feature engineering for categorical data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_datetimes.html">Parsing and encoding datetimes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_tablevectorizer.html">Strong baseline pipelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_data_cleaning.html">Data Preparation with <code class="docutils literal notranslate"><span class="pre">skrub</span></code> Transformers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_selectors.html">Skrub Selectors: helpers for selecting columns in a dataframe</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub_pipeline.html">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub_pipeline_validation.html">Tuning and validating Skrub Pipelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling: joining multiple tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cleaning.html">Cleaning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_joining_tables.html">Assembling: joining multiple tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_utils.html">Example datasets, utilities, and customization</a></li>
 </ul>
 </div>
 </nav></div>
@@ -570,7 +574,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">User guide</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">User Guide</span></li>
   </ul>
 </nav>
 </div>
@@ -588,34 +592,20 @@
                 <article class="bd-article">
                   
   <section id="user-guide">
-<span id="id1"></span><h1>User guide<a class="headerlink" href="#user-guide" title="Link to this heading">#</a></h1>
-<p>Skrub eases preparing tables for machine learning.</p>
+<span id="id1"></span><h1>User Guide<a class="headerlink" href="#user-guide" title="Link to this heading">#</a></h1>
+<p>Skrub is a library that eases machine learning with dataframes
+for machine learning.</p>
 <p>Starting from rich, complex data stored in one or several dataframes, it helps
 performing the data wrangling necessary to produce a numeric array that is fed
 to a machine-learning model. This wrangling comprises joining tables (possibly
-with inexact matches), parsing text into structured data such as dates,
-extracting numeric features, etc.</p>
-<p>For those tasks, skrub does not replace a dataframe library. Instead, it
-leverages polars or pandas to provide more high-level building blocks that are
-typically needed in a machine-learning pipeline.</p>
-<p>Crucially, the transformations implemented by skrub are <em>stateful</em>: skrub
-records the transformations that were applied to the training data and replays the
-same operations when the pipeline is applied to make predictions on unseen
-data. Implementing data-wrangling steps as transformers that can be fitted is
-essential to prevent data leakage and ensure generalization.</p>
-<aside class="topic">
-<p class="topic-title">Skrub highlights:</p>
-<ul class="simple">
-<li><p>eases separating the train and test operations, allowing to tune
-preprocessing steps to the data and improving the generalization of tabular
-machine-learning models.</p></li>
-<li><p>enables statistical and imperfect assembly, as machine-learning models
-can typically retrieve signals even in noisy data.</p></li>
-</ul>
-</aside>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+with inexact matches), parsing structured data such as datetimes from text,
+and extracting numeric features from non-numeric data.</p>
+<p>For those tasks, skrub does not replace pandas or polars. Instead, it
+leverages the dataframe libraries to provide more high-level building blocks that
+perform the data preprocessing steps that are typically needed in a machine learning
+pipeline.</p>
+<p>This guide demonstrates how to resolve various issues using Skrub’s features.
+See the examples section for full code snippets.</p>
  <script>
  window.addEventListener('DOMContentLoaded', function() {
       (function($) {
@@ -771,15 +761,42 @@ can typically retrieve signals even in noisy data.</p></li>
 
 </style><div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="end_to_end_pipeline.html">End-to-end predictive models</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="end_to_end_pipeline.html#create-baseline-predictive-models-on-heterogeneous-dataset">Create baseline predictive models on heterogeneous dataset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="end_to_end_pipeline.html#turning-a-dataframe-into-a-numeric-feature-matrix">Turning a dataframe into a numeric feature matrix</a></li>
-<li class="toctree-l2"><a class="reference internal" href="end_to_end_pipeline.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_tablereport.html">Exploring dataframes with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userguide_tablereport.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_tablereport.html#altering-the-appearance-of-the-tablereport">Altering the Appearance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_tablereport.html#exporting-and-sharing-the-tablereport">Exporting and Sharing the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_tablereport.html#finding-correlated-columns-in-a-dataframe">Finding Correlated Columns in a DataFrame</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="encoding.html#string-entries-categories-and-open-ended-entries">String entries: categories and open-ended entries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="encoding.html#encoding-dates">Encoding dates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_encoders.html">Feature engineering for categorical data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userguide_encoders.html#stringencoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_encoders.html#textencoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_encoders.html#minhashencoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_encoders.html#gapencoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_encoders.html#comparison-of-the-categorical-encoders">Comparison of the Categorical Encoders</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_datetimes.html">Parsing and encoding datetimes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userguide_datetimes.html#parsing-datetime-strings">Parsing Datetime Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_datetimes.html#encoding-and-feature-engineering-on-datetimes">Encoding and Feature Engineering on Datetimes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_tablevectorizer.html">Strong baseline pipelines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userguide_tablevectorizer.html#tablevectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_tablevectorizer.html#tabular-pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_data_cleaning.html">Data Preparation with <code class="docutils literal notranslate"><span class="pre">skrub</span></code> Transformers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_cleaning.html#cleaning-dataframes-and-parsing-datatypes">Cleaning dataframes and parsing datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_cleaning.html#converting-numeric-dtypes-to-float32-with-the-cleaner">Converting numeric dtypes to <code class="docutils literal notranslate"><span class="pre">float32</span></code> with the <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_cleaning.html#removing-unneeded-columns-with-dropuninformative-and-cleaner">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_cleaning.html#deduplicate-categorical-data-with-deduplicate">Deduplicate categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_selectors.html">Skrub Selectors: helpers for selecting columns in a dataframe</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userguide_selectors.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_selectors.html#type-of-selectors">Type of selectors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_selectors.html#advanced-selectors-filter-and-filter-names">Advanced selectors: filter and filter_names</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="skrub_pipeline.html">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a><ul>
@@ -802,16 +819,17 @@ can typically retrieve signals even in noisy data.</p></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub_pipeline_validation.html#linking-choices">Linking choices</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling: joining multiple tables</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="assembling.html#fuzzy-joining-tables">Fuzzy joining tables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assembling.html#joining-external-tables-for-machine-learning">Joining external tables for machine learning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assembling.html#column-selection-inside-a-pipeline">Column selection inside a pipeline</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assembling.html#going-further-embeddings-for-better-analytics">Going further: embeddings for better analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_joining_tables.html">Assembling: joining multiple tables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userguide_joining_tables.html#fuzzy-joining-tables">Fuzzy joining tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_joining_tables.html#joining-external-tables-for-machine-learning">Joining external tables for machine learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_joining_tables.html#column-selection-inside-a-pipeline">Column selection inside a pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_joining_tables.html#going-further-embeddings-for-better-analytics">Going further: embeddings for better analytics</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="cleaning.html">Cleaning</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cleaning.html#cleaner-sanitizing-a-dataframe"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code>: sanitizing a dataframe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cleaning.html#deduplicate-merging-variants-of-the-same-entry"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code>: merging variants of the same entry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_utils.html">Example datasets, utilities, and customization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userguide_utils.html#customizing-the-default-configuration">Customizing the default configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_utils.html#fetching-the-example-datasets-used-in-skrub">Fetching the example datasets used in <code class="docutils literal notranslate"><span class="pre">skrub</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_utils.html#modifying-the-download-location-of-skrub-datasets">Modifying the download location of <code class="docutils literal notranslate"><span class="pre">skrub</span></code> datasets</a></li>
 </ul>
 </li>
 </ul>
@@ -838,11 +856,11 @@ can typically retrieve signals even in noisy data.</p></li>
       </div>
     </a>
     <a class="right-next"
-       href="end_to_end_pipeline.html"
+       href="userguide_tablereport.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">End-to-end predictive models</p>
+        <p class="prev-next-title">Exploring dataframes with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

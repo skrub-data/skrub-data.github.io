@@ -74,7 +74,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Tuning and validating Skrub Pipelines" href="skrub_pipeline_validation.html" />
-    <link rel="prev" title="Encoding: creating feature matrices" href="encoding.html" />
+    <link rel="prev" title="Skrub Selectors: helpers for selecting columns in a dataframe" href="userguide_selectors.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.6.dev0" />
@@ -168,7 +168,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="documentation.html">
-    User guide
+    User Guide
   </a>
 </li>
 
@@ -378,7 +378,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="documentation.html">
-    User guide
+    User Guide
   </a>
 </li>
 
@@ -524,12 +524,16 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="end_to_end_pipeline.html">End-to-end predictive models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encoding.html">Encoding: creating feature matrices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_tablereport.html">Exploring dataframes with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_encoders.html">Feature engineering for categorical data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_datetimes.html">Parsing and encoding datetimes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_tablevectorizer.html">Strong baseline pipelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_data_cleaning.html">Data Preparation with <code class="docutils literal notranslate"><span class="pre">skrub</span></code> Transformers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_selectors.html">Skrub Selectors: helpers for selecting columns in a dataframe</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skrub_pipeline_validation.html">Tuning and validating Skrub Pipelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling: joining multiple tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cleaning.html">Cleaning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_joining_tables.html">Assembling: joining multiple tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_utils.html">Example datasets, utilities, and customization</a></li>
 </ul>
 </div>
 </nav></div>
@@ -571,7 +575,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="documentation.html" class="nav-link">User guide</a></li>
+    <li class="breadcrumb-item"><a href="documentation.html" class="nav-link">User Guide</a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</span></li>
   </ul>
@@ -628,7 +632,7 @@ table with a fixed number of rows.</p>
 <p>Skrub DataOps, on the other hand, can manipulate any number of variables.
 The transformation they perform is not a linear sequence but any Directed
 Acyclic Graph of computations.</p>
-<img alt="_static/skrub_expressions.svg" src="_static/skrub_expressions.svg" />
+<img alt="_images/skrub_data_ops.svg" src="_images/skrub_data_ops.svg" />
 </section>
 <section id="what-is-the-difference-with-orchestrators-like-apache-airflow">
 <h3>What is the difference with orchestrators like Apache Airflow?<a class="headerlink" href="#what-is-the-difference-with-orchestrators-like-apache-airflow" title="Link to this heading">#</a></h3>
@@ -1069,12 +1073,12 @@ is not printed and we get the output of <code class="docutils literal notranslat
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="encoding.html"
+       href="userguide_selectors.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Encoding: creating feature matrices</p>
+        <p class="prev-next-title">Skrub Selectors: helpers for selecting columns in a dataframe</p>
       </div>
     </a>
     <a class="right-next"
