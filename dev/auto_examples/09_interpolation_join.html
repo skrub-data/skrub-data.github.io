@@ -541,6 +541,7 @@
 <li class="toctree-l2"><a class="reference internal" href="data_ops/10_expressions_intro.html">Building a predictive model by combining multiple tables with the skrub DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/11_choices.html">Tuning DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/12_subsampling.html">Subsampling for faster development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_ops/13_use_case.html">Usecase: developing locally, and avoiding to repeat code in production</a></li>
 </ul>
 </details></li>
 </ul>
@@ -884,9 +885,9 @@ to the right side table column names.</p>
       <td>29.7</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>25.837333</td>
-      <td>14.283289</td>
-      <td>0.501599</td>
+      <td>25.370595</td>
+      <td>19.341972</td>
+      <td>0.029457</td>
     </tr>
     <tr>
       <th>1</th>
@@ -896,9 +897,9 @@ to the right side table column names.</p>
       <td>33.3</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>29.516842</td>
-      <td>16.039640</td>
-      <td>0.678303</td>
+      <td>29.559280</td>
+      <td>25.564526</td>
+      <td>0.176181</td>
     </tr>
     <tr>
       <th>2</th>
@@ -908,9 +909,9 @@ to the right side table column names.</p>
       <td>43.0</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>33.155292</td>
-      <td>73.231703</td>
-      <td>0.501599</td>
+      <td>33.156646</td>
+      <td>70.914448</td>
+      <td>0.029457</td>
     </tr>
     <tr>
       <th>3</th>
@@ -920,9 +921,9 @@ to the right side table column names.</p>
       <td>26.4</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>29.196661</td>
-      <td>13.379604</td>
-      <td>0.944015</td>
+      <td>28.082296</td>
+      <td>38.684817</td>
+      <td>0.445872</td>
     </tr>
     <tr>
       <th>4</th>
@@ -932,9 +933,9 @@ to the right side table column names.</p>
       <td>29.1</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>26.396950</td>
-      <td>16.329699</td>
-      <td>0.575104</td>
+      <td>25.402300</td>
+      <td>13.347169</td>
+      <td>1.243208</td>
     </tr>
   </tbody>
 </table>
@@ -1054,7 +1055,7 @@ maximum daily temperature.</p>
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>0.518353</td>
+      <td>1.325793</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1066,7 +1067,7 @@ maximum daily temperature.</p>
       <td>PA</td>
       <td>39.871953</td>
       <td>-75.241141</td>
-      <td>10.704636</td>
+      <td>10.701003</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1078,7 +1079,7 @@ maximum daily temperature.</p>
       <td>IL</td>
       <td>41.979595</td>
       <td>-87.904464</td>
-      <td>6.053387</td>
+      <td>5.229395</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1090,7 +1091,7 @@ maximum daily temperature.</p>
       <td>KY</td>
       <td>39.046143</td>
       <td>-84.662172</td>
-      <td>14.228324</td>
+      <td>14.133402</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1102,7 +1103,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>17.622677</td>
+      <td>17.323585</td>
     </tr>
   </tbody>
 </table>
@@ -1123,11 +1124,11 @@ Washington, Minnesota.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -4.138060
-MT   -0.507463
-ND    0.490168
-WA    0.844433
-MN    1.604546
+AK   -2.559007
+MT    0.661680
+ND    0.933424
+WA    1.368578
+MN    1.625213
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1137,11 +1138,11 @@ Florida, Louisiana.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-LA    21.208560
-FL    24.726478
-HI    26.956502
-VI    30.132569
-PR    30.679065
+LA    20.920040
+FL    24.851198
+HI    27.501939
+VI    28.884886
+PR    29.477296
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1179,7 +1180,7 @@ would contain, rather than by searching for an actual match. It is a generalizat
 the <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an
 <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor
 estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 14.185 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 14.056 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-09-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/09_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />

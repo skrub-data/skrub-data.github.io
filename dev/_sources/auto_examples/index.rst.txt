@@ -283,6 +283,23 @@ Skrub DataOps
     </div>
 
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Usecase: developing locally, and avoiding to repeat code in production">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_13_use_case_thumb.svg
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_data_ops_13_use_case.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Usecase: developing locally, and avoiding to repeat code in production</div>
+    </div>
+
+
 .. thumbnail-parent-div-close
 
 .. raw:: html
