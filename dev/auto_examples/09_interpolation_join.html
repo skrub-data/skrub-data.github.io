@@ -538,9 +538,10 @@
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="data_ops/index.html">Skrub DataOps</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="data_ops/10_expressions_intro.html">Building a predictive model by combining multiple tables with the skrub DataOps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_ops/11_choices.html">Hyperparameter tuning with DataOps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_ops/12_subsampling.html">Subsampling for faster development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_ops/10_data_ops_intro.html">Introduction to machine-learning pipelines with skrub DataOps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_ops/11_multiple_tables.html">Multiples tables: building machine learning pipelines with DataOps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_ops/12_choices.html">Hyperparameter tuning with DataOps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_ops/13_subsampling.html">Subsampling for faster development</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/13_use_case.html">Usecase: developing locally, and avoiding to repeat code in production</a></li>
 </ul>
 </details></li>
@@ -885,9 +886,9 @@ to the right side table column names.</p>
       <td>29.7</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>27.100964</td>
-      <td>15.373000</td>
-      <td>0.020838</td>
+      <td>24.906566</td>
+      <td>17.322383</td>
+      <td>-0.017820</td>
     </tr>
     <tr>
       <th>1</th>
@@ -897,9 +898,9 @@ to the right side table column names.</p>
       <td>33.3</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>30.492106</td>
-      <td>16.420683</td>
-      <td>0.132008</td>
+      <td>29.227716</td>
+      <td>14.862058</td>
+      <td>0.096920</td>
     </tr>
     <tr>
       <th>2</th>
@@ -909,9 +910,9 @@ to the right side table column names.</p>
       <td>43.0</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>32.927240</td>
-      <td>40.199288</td>
-      <td>-0.023004</td>
+      <td>32.819141</td>
+      <td>73.328419</td>
+      <td>-0.106585</td>
     </tr>
     <tr>
       <th>3</th>
@@ -921,9 +922,9 @@ to the right side table column names.</p>
       <td>26.4</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>29.358932</td>
-      <td>9.976464</td>
-      <td>0.290247</td>
+      <td>28.123114</td>
+      <td>18.239075</td>
+      <td>0.222103</td>
     </tr>
     <tr>
       <th>4</th>
@@ -933,9 +934,9 @@ to the right side table column names.</p>
       <td>29.1</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>25.866198</td>
-      <td>7.808468</td>
-      <td>-0.128743</td>
+      <td>25.961025</td>
+      <td>10.921968</td>
+      <td>0.077976</td>
     </tr>
   </tbody>
 </table>
@@ -1055,7 +1056,7 @@ maximum daily temperature.</p>
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>1.116149</td>
+      <td>0.488640</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1067,7 +1068,7 @@ maximum daily temperature.</p>
       <td>PA</td>
       <td>39.871953</td>
       <td>-75.241141</td>
-      <td>10.887136</td>
+      <td>11.256623</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1079,7 +1080,7 @@ maximum daily temperature.</p>
       <td>IL</td>
       <td>41.979595</td>
       <td>-87.904464</td>
-      <td>5.224103</td>
+      <td>4.625984</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1091,7 +1092,7 @@ maximum daily temperature.</p>
       <td>KY</td>
       <td>39.046143</td>
       <td>-84.662172</td>
-      <td>13.845582</td>
+      <td>14.480341</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1103,7 +1104,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>17.022464</td>
+      <td>16.816394</td>
     </tr>
   </tbody>
 </table>
@@ -1124,11 +1125,11 @@ Washington, Minnesota.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -2.940845
-MT   -0.261760
-ND    0.353374
-WA    0.888140
-MN    1.516467
+AK   -2.739549
+MT    0.444095
+ND    0.621030
+WA    1.606956
+MN    1.640169
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1138,11 +1139,11 @@ Florida, Louisiana.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-LA    21.423415
-FL    24.891108
-HI    27.359481
-VI    30.041344
-PR    30.738368
+LA    20.735770
+FL    24.847743
+HI    27.430017
+VI    31.007768
+PR    31.504879
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1180,7 +1181,7 @@ would contain, rather than by searching for an actual match. It is a generalizat
 the <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an
 <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor
 estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 15.329 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 11.315 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-09-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/09_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />

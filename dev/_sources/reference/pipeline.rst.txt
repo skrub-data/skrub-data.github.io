@@ -16,7 +16,7 @@ Building a pipeline
 
 
 
-See :ref:`end_to_end_pipeline <end_to_end_pipeline>` for further details. For more flexibility and control to build pipelines, see the :ref:`skrub expressions <expressions_ref>`.
+See :ref:`end_to_end_pipeline <end_to_end_pipeline>` for further details. For more flexibility and control to build pipelines, see the :ref:`skrub DataOps <data_ops_examples_ref>`.
 
 
 

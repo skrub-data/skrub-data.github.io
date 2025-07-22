@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.choose_from.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Gallery examples: Hyperparameter tuning with DataOps" />
+<meta property="og:description" content="Gallery examples: Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Gallery examples: Hyperparameter tuning with DataOps" />
+<meta name="description" content="Gallery examples: Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps" />
 
     <title>choose_from &#8212; skrub</title>
   
@@ -736,7 +736,7 @@
 <h1>choose_from<a class="headerlink" href="#choose-from" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.choose_from">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">choose_from</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outcomes</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/7eb27e9/skrub/_data_ops/_choosing.py#L332"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.choose_from" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">choose_from</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outcomes</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/7fb6158/skrub/_data_ops/_choosing.py#L332"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.choose_from" title="Link to this definition">#</a></dt>
 <dd><p>A choice among several possible outcomes.</p>
 <p>When a learner is used <em>without hyperparameter tuning</em>, the outcome of
 this choice is the first value in the <code class="docutils literal notranslate"><span class="pre">outcomes</span></code> list or dict.</p>
@@ -795,8 +795,11 @@ It is the first outcome in the provided list or dict:</p>
 
 <section id="gallery-examples">
 <h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
-<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not)."><img alt="" src="../../_images/sphx_glr_11_choices_thumb.svg" />
-<p><a class="reference internal" href="../../auto_examples/data_ops/11_choices.html#sphx-glr-auto-examples-data-ops-11-choices-py"><span class="std std-ref">Hyperparameter tuning with DataOps</span></a></p>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how to build a DataOps plan to handle pre-processing, validation and hyperparameter tuning of a dataset with multiple tables."><img alt="" src="../../_images/sphx_glr_11_multiple_tables_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/data_ops/11_multiple_tables.html#sphx-glr-auto-examples-data-ops-11-multiple-tables-py"><span class="std std-ref">Multiples tables: building machine learning pipelines with DataOps</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Multiples tables: building machine learning pipelines with DataOps</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not)."><img alt="" src="../../_images/sphx_glr_12_choices_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/data_ops/12_choices.html#sphx-glr-auto-examples-data-ops-12-choices-py"><span class="std std-ref">Hyperparameter tuning with DataOps</span></a></p>
   <div class="sphx-glr-thumbnail-title">Hyperparameter tuning with DataOps</div>
 </div></div></section>
 </section>
