@@ -204,10 +204,10 @@ Examples
 
 .. only:: html
 
-  .. image:: /auto_examples/images/thumb/sphx_glr_10_squashing_scaler_thumb.svg
+  .. image:: /auto_examples/images/thumb/sphx_glr_11_squashing_scaler_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_10_squashing_scaler.py`
+  :ref:`sphx_glr_auto_examples_11_squashing_scaler.py`
 
 .. raw:: html
 
@@ -236,7 +236,7 @@ Examples
    /auto_examples/08_join_aggregation
    /auto_examples/09_interpolation_join
    /auto_examples/10_apply_on_cols
-   /auto_examples/10_squashing_scaler
+   /auto_examples/11_squashing_scaler
 
 
 Skrub DataOps
@@ -324,10 +324,10 @@ Skrub DataOps
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_13_use_case_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_14_use_case_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_13_use_case.py`
+  :ref:`sphx_glr_auto_examples_data_ops_14_use_case.py`
 
 .. raw:: html
 

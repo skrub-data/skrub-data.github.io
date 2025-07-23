@@ -89,10 +89,10 @@ Skrub DataOps
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_13_use_case_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_14_use_case_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_13_use_case.py`
+  :ref:`sphx_glr_auto_examples_data_ops_14_use_case.py`
 
 .. raw:: html
 
@@ -114,5 +114,5 @@ Skrub DataOps
    /auto_examples/data_ops/11_multiple_tables
    /auto_examples/data_ops/12_choices
    /auto_examples/data_ops/13_subsampling
-   /auto_examples/data_ops/13_use_case
+   /auto_examples/data_ops/14_use_case
 

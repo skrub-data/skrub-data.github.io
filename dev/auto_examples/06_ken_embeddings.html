@@ -535,7 +535,7 @@
 <li class="toctree-l1"><a class="reference internal" href="08_join_aggregation.html">AggJoiner on a credit fraud dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="09_interpolation_join.html">Interpolation join: infer missing rows when joining two tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="10_apply_on_cols.html">Hands-On with Column Selection and Transformers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="10_squashing_scaler.html">SquashingScaler: Robust numerical preprocessing for neural networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_squashing_scaler.html">SquashingScaler: Robust numerical preprocessing for neural networks</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="data_ops/index.html">Skrub DataOps</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -543,7 +543,7 @@
 <li class="toctree-l2"><a class="reference internal" href="data_ops/11_multiple_tables.html">Multiples tables: building machine learning pipelines with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/12_choices.html">Hyperparameter tuning with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/13_subsampling.html">Subsampling for faster development</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_ops/13_use_case.html">Usecase: developing locally, and avoiding to repeat code in production</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_ops/14_use_case.html">Usecase: developing locally, and avoiding to repeat code in production</a></li>
 </ul>
 </details></li>
 </ul>
@@ -761,7 +761,7 @@ Name: Global_Sales, Length: 16572, dtype: float64
 <a href="../reference/generated/skrub.datasets.fetch_ken_table_aliases.html#skrub.datasets.fetch_ken_table_aliases" title="skrub.datasets.fetch_ken_table_aliases" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_ken_table_aliases</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;albums&#39;, &#39;schools&#39;, &#39;games&#39;, &#39;movies&#39;, &#39;all_entities&#39;, &#39;companies&#39;}
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;albums&#39;, &#39;schools&#39;, &#39;movies&#39;, &#39;companies&#39;, &#39;games&#39;, &#39;all_entities&#39;}
 </pre></div>
 </div>
 <p>The <em>games</em> table is the most relevant to our case.
@@ -1074,7 +1074,7 @@ explanatory variables.</p>
 additional background information on the game and the publisher of the
 game that would otherwise be missed.</p>
 <p>It helped significantly improve the prediction score.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 20.482 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 13.136 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-06-ken-embeddings-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/06_ken_embeddings.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
