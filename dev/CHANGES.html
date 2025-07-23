@@ -630,6 +630,11 @@ columns in their dataset. <a class="reference external" href="https://github.com
 The parameter <code class="docutils literal notranslate"><span class="pre">float_precision</span></code>
 controls the number of significant digits displayed for floating-point values
 in reports. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1470">#1470</a> by <a class="reference external" href="https://github.com/georgescutelnicu">George S</a>.</p></li>
+<li><p>Added the <a class="reference internal" href="reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> that
+robustly rescales and smoothly clips numerical columns,
+enabling more robust handling of numerical columns
+with neural networks. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1310">#1310</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a> and
+<a class="reference external" href="https://github.com/dholzmueller">David Holzmüller</a>.</p></li>
 <li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">datasets.toy_order()</span></code> is now available to create a toy dataframe and
 corresponding targets for examples.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1485">#1485</a> by <a class="reference external" href="https://github.com/canag">Antoine Canaguier-Durand</a>.</p></li>

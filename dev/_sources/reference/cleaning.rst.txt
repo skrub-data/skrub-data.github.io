@@ -27,6 +27,7 @@ Cleaning a dataframe
   :template: base.rst
 
 
+  SquashingScaler
   deduplicate
   Cleaner
   DropUninformative

@@ -198,6 +198,23 @@ Examples
     </div>
 
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The following example illustrates the use of the SquashingScaler, a transformer that can rescale and squash numerical features to a range that works well with neural networks and perhaps also other related models. Its basic idea is to rescale the features based on quantile statistics (to be robust to outliers), and then perform a smooth squashing function to limit the outputs to a pre-defined range. This transform has been found to even work well when applied to one-hot encoded features.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_10_squashing_scaler_thumb.svg
+    :alt:
+
+  :ref:`sphx_glr_auto_examples_10_squashing_scaler.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">SquashingScaler: Robust numerical preprocessing for neural networks</div>
+    </div>
+
+
 .. thumbnail-parent-div-close
 
 .. raw:: html
@@ -219,6 +236,7 @@ Examples
    /auto_examples/08_join_aggregation
    /auto_examples/09_interpolation_join
    /auto_examples/10_apply_on_cols
+   /auto_examples/10_squashing_scaler
 
 
 Skrub DataOps

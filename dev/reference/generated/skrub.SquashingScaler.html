@@ -1,0 +1,1168 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="SquashingScaler" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.SquashingScaler.html" />
+<meta property="og:site_name" content="skrub" />
+<meta property="og:description" content="Gallery examples: SquashingScaler: Robust numerical preprocessing for neural networks" />
+<meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
+<meta property="og:image:alt" content="skrub" />
+<meta name="description" content="Gallery examples: SquashingScaler: Robust numerical preprocessing for neural networks" />
+
+    <title>SquashingScaler &#8212; skrub</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=d2d258e8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=3bbd54d8" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=a4b979e1"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=fd10adb8"></script>
+    <script src="../../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/generated/skrub.SquashingScaler';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.dev0';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            true;
+        </script>
+    <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
+    <link rel="icon" href="../../_static/skrub.svg"/>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="deduplicate" href="skrub.deduplicate.html" />
+    <link rel="prev" title="Cleaning a dataframe" href="../cleaning.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.6.dev0" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/skrub.svg" class="logo__image only-light" alt="skrub - Home"/>
+    <img src="../../_static/skrub.svg" class="logo__image only-dark pst-js-only" alt="skrub - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../install.html">
+    Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../documentation.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../auto_examples/index.html">
+    Examples
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../learning_materials.html">
+    Learning Materials
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../CHANGES.html">
+    Release history
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../development.html">
+    Development
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../CONTRIBUTING.html">
+    Contributing to skrub
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://bsky.app/profile/skrub-data.bsky.social" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-bluesky fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Bluesky</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://x.com/skrub_data" title="X (ex-Twitter)" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">X (ex-Twitter)</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../install.html">
+    Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../documentation.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../auto_examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../learning_materials.html">
+    Learning Materials
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../CHANGES.html">
+    Release history
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../development.html">
+    Development
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../CONTRIBUTING.html">
+    Contributing to skrub
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://bsky.app/profile/skrub-data.bsky.social" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-bluesky fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Bluesky</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://x.com/skrub_data" title="X (ex-Twitter)" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">X (ex-Twitter)</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../pipeline.html">pipeline</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.tabular_pipeline.html">tabular_pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.tabular_learner.html">tabular_learner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToCols.html">ApplyToCols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToFrame.html">ApplyToFrame</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../encoders.html">encoders</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.StringEncoder.html">StringEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.TextEncoder.html">TextEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.MinHashEncoder.html">MinHashEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.GapEncoder.html">GapEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SimilarityEncoder.html">SimilarityEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ToCategorical.html">ToCategorical</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DatetimeEncoder.html">DatetimeEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ToDatetime.html">ToDatetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../reporting.html">reporting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.TableReport.html">TableReport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.patch_display.html">patch_display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.unpatch_display.html">unpatch_display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.column_associations.html">column_associations</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../cleaning.html">cleaning</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">SquashingScaler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Cleaner.html">Cleaner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DropUninformative.html">DropUninformative</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Joiner.html">Joiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.AggJoiner.html">AggJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.MultiAggJoiner.html">MultiAggJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.AggTarget.html">AggTarget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.InterpolationJoiner.html">InterpolationJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.fuzzy_join.html">fuzzy_join</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../selectors.html">selectors</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.all.html">all</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.any_date.html">any_date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.boolean.html">boolean</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.glob.html">glob</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.has_nulls.html">has_nulls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.integer.html">integer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.inv.html">inv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.make_selector.html">make_selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.numeric.html">numeric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.regex.html">regex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.select.html">select</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.string.html">string</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data_ops.html">data_ops</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.var.html">var</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.X.html">X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.y.html">y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.as_data_op.html">as_data_op</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.deferred.html">deferred</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.html">DataOp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_bool.html">choose_bool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_float.html">choose_float</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_int.html">choose_int</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_from.html">choose_from</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.optional.html">optional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.cross_validate.html">cross_validate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.eval_mode.html">eval_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.apply.html">skrub.DataOp.skb.apply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.apply_func.html">skrub.DataOp.skb.apply_func</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.clone.html">skrub.DataOp.skb.clone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.concat.html">skrub.DataOp.skb.concat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.cross_validate.html">skrub.DataOp.skb.cross_validate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.describe_defaults.html">skrub.DataOp.skb.describe_defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.describe_param_grid.html">skrub.DataOp.skb.describe_param_grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.describe_steps.html">skrub.DataOp.skb.describe_steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.draw_graph.html">skrub.DataOp.skb.draw_graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.drop.html">skrub.DataOp.skb.drop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.eval.html">skrub.DataOp.skb.eval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.freeze_after_fit.html">skrub.DataOp.skb.freeze_after_fit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.full_report.html">skrub.DataOp.skb.full_report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.get_data.html">skrub.DataOp.skb.get_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_learner.html">skrub.DataOp.skb.make_learner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html">skrub.DataOp.skb.make_grid_search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html">skrub.DataOp.skb.make_randomized_search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.if_else.html">skrub.DataOp.skb.if_else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_grid.html">skrub.DataOp.skb.iter_learners_grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_randomized.html">skrub.DataOp.skb.iter_learners_randomized</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html">skrub.DataOp.skb.mark_as_X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.mark_as_y.html">skrub.DataOp.skb.mark_as_y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.match.html">skrub.DataOp.skb.match</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.preview.html">skrub.DataOp.skb.preview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.select.html">skrub.DataOp.skb.select</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.set_description.html">skrub.DataOp.skb.set_description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.set_name.html">skrub.DataOp.skb.set_name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.subsample.html">skrub.DataOp.skb.subsample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.train_test_split.html">skrub.DataOp.skb.train_test_split</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.description.html">skrub.DataOp.skb.description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.is_X.html">skrub.DataOp.skb.is_X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.is_y.html">skrub.DataOp.skb.is_y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.name.html">skrub.DataOp.skb.name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.applied_estimator.html">skrub.DataOp.skb.applied_estimator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SkrubLearner.html">SkrubLearner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ParamSearch.html">ParamSearch</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../config.html">config</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.get_config.html">get_config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.set_config.html">set_config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.config_context.html">config_context</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../datasets.html">datasets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_bike_sharing.html">fetch_bike_sharing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_country_happiness.html">fetch_country_happiness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_credit_fraud.html">fetch_credit_fraud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_drug_directory.html">fetch_drug_directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_employee_salaries.html">fetch_employee_salaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_flight_delays.html">fetch_flight_delays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_ken_embeddings.html">fetch_ken_embeddings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_ken_table_aliases.html">fetch_ken_table_aliases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_ken_types.html">fetch_ken_types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_medical_charge.html">fetch_medical_charge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_midwest_survey.html">fetch_midwest_survey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_movielens.html">fetch_movielens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_open_payments.html">fetch_open_payments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_toxicity.html">fetch_toxicity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_traffic_violations.html">fetch_traffic_violations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_videogame_sales.html">fetch_videogame_sales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.get_data_dir.html">get_data_dir</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.make_deduplication_data.html">make_deduplication_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.toy_orders.html">toy_orders</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">API Reference</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../cleaning.html" class="nav-link">Cleaning a dataframe</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">SquashingScaler</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="squashingscaler">
+<h1>SquashingScaler<a class="headerlink" href="#squashingscaler" title="Link to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="skrub.SquashingScaler">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">SquashingScaler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_absolute_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantile_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(25.0,</span> <span class="pre">75.0)</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1484cba/skrub/_squashing_scaler.py#L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SquashingScaler" title="Link to this definition">#</a></dt>
+<dd><p>Perform robust centering and scaling followed by soft clipping.</p>
+<p>When features have large outliers, smooth clipping prevents the outliers from
+affecting the result too strongly, while robust scaling prevents the outliers from
+affecting the inlier scaling. Infinite values are mapped to the corresponding
+boundaries of the interval. NaN values are preserved.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>max_absolute_value</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>, default=3.0</span></dt><dd><p>Maximum absolute value that the transformed data can take.</p>
+</dd>
+<dt><strong>quantile_range</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">tuple</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>, default=(0.25, 0.75)</span></dt><dd><p>The quantiles used to compute the scaling factor. The first value is the lower
+quantile and the second value is the upper quantile. The default values are the
+25th and 75th percentiles, respectively. The quantiles are used to compute the
+scaling factor for the robust scaling step. The quantiles are computed from the
+finite values in the input column. If the two quantiles are equal, the scaling
+factor is computed from the 0th and 100th percentiles (i.e., the minimum and
+maximum values of the finite values in the input column).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This transformer is applied to each column independently. It uses two stages:</p>
+<ol class="arabic simple">
+<li><p>The first stage centers the median of the data to zero and multiplies the data by a
+scaling factor determined from quantiles of the distribution, using
+scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html#sklearn.preprocessing.RobustScaler" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RobustScaler</span></code></a>. It also handles
+edge-cases in which the two quantiles are equal by following-up with a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html#sklearn.preprocessing.MinMaxScaler" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinMaxScaler</span></code></a>.</p></li>
+<li><p>The second stage applies a soft clipping to the transformed data to limit the
+data to the interval <code class="docutils literal notranslate"><span class="pre">[-max_absolute_value,</span> <span class="pre">max_absolute_value]</span></code> in an
+injective way.</p></li>
+</ol>
+<p>Infinite values will be mapped to the corresponding boundaries of the interval. NaN
+values will be preserved.</p>
+<p>The formula for the transform is:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align*}
+    a &amp;:= \begin{cases}
+        1/(q_{\beta} - q_{\alpha}) &amp;\text{if} \quad q_{\beta} \neq q_{\alpha} \\
+        2/(q_1 - q_0) &amp;\text{if}\quad q_{\beta} = q_{\alpha} \text{ and } q_1
+        \neq q_0 \\ 0 &amp; \text{otherwise}
+    \end{cases} \\ z &amp;:= a.(x - q_{1/2}), \\ x_{\text{out}} &amp;:= \frac{z}{\sqrt{1
+    + (z/B)^2}},
+\end{align*}\end{split}\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x\)</span> is a value in the input column.</p></li>
+<li><p><span class="math notranslate nohighlight">\(q_{\gamma}\)</span> is the <span class="math notranslate nohighlight">\(\gamma\)</span>-quantile of the finite values in X,</p></li>
+<li><p><span class="math notranslate nohighlight">\(B\)</span> is max_abs_value</p></li>
+<li><p><span class="math notranslate nohighlight">\(\alpha\)</span> is the lower quantile</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> is the upper quantile.</p></li>
+</ul>
+<p class="rubric">References</p>
+<p>This method has been introduced as the robust scaling and smooth clipping transform
+in <a class="reference external" href="https://arxiv.org/abs/2407.04491">Better by Default: Strong Pre-Tuned MLPs and Boosted Trees on Tabular Data
+(Holzmüller et al., 2024)</a>.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">SquashingScaler</span>
+</pre></div>
+</div>
+<p>In the general case, this scale uses a RobustScaler:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">col</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">2</span><span class="p">]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">SquashingScaler</span><span class="p">(</span><span class="n">max_absolute_value</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="go">array([[ 3.        ],</span>
+<span class="go">       [-3.        ],</span>
+<span class="go">       [ 0.49319696],</span>
+<span class="go">       [-1.34164079],</span>
+<span class="go">       [        nan],</span>
+<span class="go">       [ 0.        ]])</span>
+</pre></div>
+</div>
+<p>When quantile ranges are equal, this scaler uses a customized MinMaxScaler:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">col</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">SquashingScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="go">array([[-0.9486833],</span>
+<span class="go">       [ 0.       ],</span>
+<span class="go">       [ 0.       ],</span>
+<span class="go">       [ 0.       ],</span>
+<span class="go">       [ 0.9486833],</span>
+<span class="go">       [       nan]])</span>
+</pre></div>
+</div>
+<p>Finally, when the min and max are equal, this scaler fills the column with zeros:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">col</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">SquashingScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="go">array([[ 0.],</span>
+<span class="go">       [ 0.],</span>
+<span class="go">       [ 0.],</span>
+<span class="go">       [nan]])</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.SquashingScaler.fit" title="skrub.SquashingScaler.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X[, y])</p></td>
+<td><p>Fit the transformer to a column.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.SquashingScaler.fit_transform" title="skrub.SquashingScaler.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(X[, y])</p></td>
+<td><p>Fit the transformer and transform a column.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.SquashingScaler.get_feature_names_out" title="skrub.SquashingScaler.get_feature_names_out"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_feature_names_out</span></code></a>([input_features])</p></td>
+<td><p>Get output feature names for transformation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.SquashingScaler.get_params" title="skrub.SquashingScaler.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
+<td><p>Get parameters for this estimator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.SquashingScaler.set_output" title="skrub.SquashingScaler.set_output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_output</span></code></a>(*[, transform])</p></td>
+<td><p>Set output container.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.SquashingScaler.set_params" title="skrub.SquashingScaler.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
+<td><p>Set the parameters of this estimator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.SquashingScaler.transform" title="skrub.SquashingScaler.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X)</p></td>
+<td><p>Transform a column.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SquashingScaler.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1484cba/skrub/_squashing_scaler.py#L196"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SquashingScaler.fit" title="Link to this definition">#</a></dt>
+<dd><p>Fit the transformer to a column.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/index.html#module-numpy" title="(in NumPy v2.3)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">numpy</span></code></a> <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">array</span></code></a>, Pandas or Polars DataFrame of shape (n_samples, n_features)</span></dt><dd><p>The data to transform.</p>
+</dd>
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Unused. Here for compatibility with scikit-learn.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">SquashingScaler</span></dt><dd><p>The fitted transformer.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SquashingScaler.fit_transform">
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1484cba/skrub/_squashing_scaler.py#L216"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SquashingScaler.fit_transform" title="Link to this definition">#</a></dt>
+<dd><p>Fit the transformer and transform a column.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/index.html#module-numpy" title="(in NumPy v2.3)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">numpy</span></code></a> <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">array</span></code></a>, Pandas or Polars DataFrame of shape (n_samples, n_features)</span></dt><dd><p>The data to transform.</p>
+</dd>
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Unused. Here for compatibility with scikit-learn.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>X_out: <a class="reference external" href="https://numpy.org/doc/stable/reference/index.html#module-numpy" title="(in NumPy v2.3)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">numpy</span></code></a> <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">array</span></code></a>, shape (n_samples, n_features)</dt><dd><p>The transformed version of the input.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SquashingScaler.get_feature_names_out">
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1484cba/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L917"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SquashingScaler.get_feature_names_out" title="Link to this definition">#</a></dt>
+<dd><p>Get output feature names for transformation.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>input_features</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v2.3)"><span>array_like</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=None</span></dt><dd><p>Input features.</p>
+<ul class="simple">
+<li><p>If <cite>input_features</cite> is <cite>None</cite>, then <cite>feature_names_in_</cite> is
+used as feature names in. If <cite>feature_names_in_</cite> is not defined,
+then the following input feature names are generated:
+<cite>[“x0”, “x1”, …, “x(n_features_in_ - 1)”]</cite>.</p></li>
+<li><p>If <cite>input_features</cite> is an array-like, then <cite>input_features</cite> must
+match <cite>feature_names_in_</cite> if <cite>feature_names_in_</cite> is defined.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl>
+<dt><strong>feature_names_out</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> objects</span></dt><dd><p>Same as input features.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SquashingScaler.get_params">
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1484cba/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SquashingScaler.get_params" title="Link to this definition">#</a></dt>
+<dd><p>Get parameters for this estimator.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>deep</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>If True, will return the parameters for this estimator and
+contained subobjects that are estimators.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl>
+<dt><strong>params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Parameter names mapped to their values.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SquashingScaler.set_output">
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1484cba/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SquashingScaler.set_output" title="Link to this definition">#</a></dt>
+<dd><p>Set output container.</p>
+<p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.7)"><span>Introducing the set_output API</span></a>
+for an example on how to use the API.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>transform</strong><span class="classifier">{“default”, “pandas”, “polars”}, default=None</span></dt><dd><p>Configure output of <cite>transform</cite> and <cite>fit_transform</cite>.</p>
+<ul class="simple">
+<li><p><cite>“default”</cite>: Default output format of a transformer</p></li>
+<li><p><cite>“pandas”</cite>: DataFrame output</p></li>
+<li><p><cite>“polars”</cite>: Polars output</p></li>
+<li><p><cite>None</cite>: Transform configuration is unchanged</p></li>
+</ul>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 1.4: </span><cite>“polars”</cite> option was added.</p>
+</div>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">estimator instance</span></dt><dd><p>Estimator instance.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SquashingScaler.set_params">
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1484cba/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L315"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SquashingScaler.set_params" title="Link to this definition">#</a></dt>
+<dd><p>Set the parameters of this estimator.</p>
+<p>The method works on simple estimators as well as on nested objects
+(such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
+parameters of the form <code class="docutils literal notranslate"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it’s
+possible to update each component of a nested object.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>**params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Estimator parameters.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">estimator instance</span></dt><dd><p>Estimator instance.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SquashingScaler.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/1484cba/skrub/_squashing_scaler.py#L298"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SquashingScaler.transform" title="Link to this definition">#</a></dt>
+<dd><p>Transform a column.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/index.html#module-numpy" title="(in NumPy v2.3)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">numpy</span></code></a> <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">array</span></code></a>, Pandas or Polars DataFrame of shape (n_samples, n_features)</span></dt><dd><p>The data to transform.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>X_out: <a class="reference external" href="https://numpy.org/doc/stable/reference/index.html#module-numpy" title="(in NumPy v2.3)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">numpy</span></code></a> <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">array</span></code></a> of shape (n_samples, n_features)</dt><dd><p>The transformed version of the input.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<section id="gallery-examples">
+<h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="The following example illustrates the use of the SquashingScaler, a transformer that can rescale and squash numerical features to a range that works well with neural networks and perhaps also other related models. Its basic idea is to rescale the features based on quantile statistics (to be robust to outliers), and then perform a smooth squashing function to limit the outputs to a pre-defined range. This transform has been found to even work well when applied to one-hot encoded features."><img alt="" src="../../_images/sphx_glr_10_squashing_scaler_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/10_squashing_scaler.html#sphx-glr-auto-examples-10-squashing-scaler-py"><span class="std std-ref">SquashingScaler: Robust numerical preprocessing for neural networks</span></a></p>
+  <div class="sphx-glr-thumbnail-title">SquashingScaler: Robust numerical preprocessing for neural networks</div>
+</div></div></section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../cleaning.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Cleaning a dataframe</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="skrub.deduplicate.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">deduplicate</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SquashingScaler"><code class="docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SquashingScaler.fit"><code class="docutils literal notranslate"><span class="pre">SquashingScaler.fit()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SquashingScaler.fit_transform"><code class="docutils literal notranslate"><span class="pre">SquashingScaler.fit_transform()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SquashingScaler.get_feature_names_out"><code class="docutils literal notranslate"><span class="pre">SquashingScaler.get_feature_names_out()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SquashingScaler.get_params"><code class="docutils literal notranslate"><span class="pre">SquashingScaler.get_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SquashingScaler.set_output"><code class="docutils literal notranslate"><span class="pre">SquashingScaler.set_output()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SquashingScaler.set_params"><code class="docutils literal notranslate"><span class="pre">SquashingScaler.set_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SquashingScaler.transform"><code class="docutils literal notranslate"><span class="pre">SquashingScaler.transform()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery-examples">Gallery examples</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/reference/generated/skrub.SquashingScaler.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2025, the skrub developers.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
