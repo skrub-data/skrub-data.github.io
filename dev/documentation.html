@@ -530,8 +530,9 @@
 <li class="toctree-l1"><a class="reference internal" href="userguide_tablevectorizer.html">Strong baseline pipelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_data_cleaning.html">Data Preparation with <code class="docutils literal notranslate"><span class="pre">skrub</span></code> Transformers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_selectors.html">Skrub Selectors: helpers for selecting columns in a dataframe</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub_pipeline.html">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skrub_pipeline_validation.html">Tuning and validating Skrub Pipelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_data_ops.html">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_data_ops_ml_pipeline.html">Assembling Skrub DataOps into complex machine learning pipelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_data_ops_validation.html">Tuning and validating Skrub Pipelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_joining_tables.html">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_utils.html">Example datasets, utilities, and customization</a></li>
 </ul>
@@ -799,24 +800,27 @@ See the examples section for full code snippets.</p>
 <li class="toctree-l2"><a class="reference internal" href="userguide_selectors.html#advanced-selectors-filter-and-filter-names">Advanced selectors: filter and filter_names</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="skrub_pipeline.html">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline.html#introduction">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline.html#skrub-dataops">Skrub DataOps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline.html#previews">Previews</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline.html#composing-dataops">Composing DataOps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline.html#applying-machine-learning-estimators">Applying machine-learning estimators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline.html#deferred-evaluation">Deferred evaluation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline.html#subsampling-to-develop-pipelines-with-reduced-computation">Subsampling to develop pipelines with reduced computation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline.html#using-only-a-part-of-a-pipeline">Using only a part of a pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_data_ops.html">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops.html#what-are-skrub-dataops-and-why-do-we-need-them">What are Skrub DataOps, and why do we need them?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops.html#basics-of-dataops-the-dataops-plan-variables-and-learners">Basics of DataOps: the DataOps plan, variables, and learners</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="skrub_pipeline_validation.html">Tuning and validating Skrub Pipelines</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline_validation.html#splitting">Splitting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline_validation.html#cross-validation">Cross-validation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline_validation.html#tuning-choices">Tuning choices</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline_validation.html#validating-hyperparameter-search-with-nested-cross-validation">Validating hyperparameter search with nested cross-validation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline_validation.html#choices-beyond-estimator-hyperparameters">Choices beyond estimator hyperparameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub_pipeline_validation.html#linking-choices">Linking choices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_data_ops_ml_pipeline.html">Assembling Skrub DataOps into complex machine learning pipelines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops_ml_pipeline.html#applying-machine-learning-estimators">Applying machine-learning estimators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops_ml_pipeline.html#applying-different-transformers-using-skrub-selectors-and-dataops">Applying different transformers using Skrub selectors and DataOps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops_ml_pipeline.html#documenting-the-dataops-plan-with-node-names-and-descriptions">Documenting the DataOps plan with node names and descriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops_ml_pipeline.html#evaluating-and-debugging-the-dataops-plan-with-skb-full-report">Evaluating and debugging the DataOps plan with <code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.full_report()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops_ml_pipeline.html#using-only-a-part-of-a-dataops-plan">Using only a part of a DataOps plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops_ml_pipeline.html#subsampling-data-for-easier-development-and-debugging">Subsampling data for easier development and debugging</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_data_ops_validation.html">Tuning and validating Skrub Pipelines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops_validation.html#splitting-the-data-in-train-and-test-sets">Splitting the data in train and test sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops_validation.html#improving-the-confidence-in-our-score-through-cross-validation">Improving the confidence in our score through cross-validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops_validation.html#using-the-skrub-choose-functions-to-tune-hyperparameters">Using the Skrub <code class="docutils literal notranslate"><span class="pre">choose_*</span></code> functions to tune hyperparameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops_validation.html#validating-hyperparameter-search-with-nested-cross-validation">Validating hyperparameter search with nested cross-validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops_validation.html#going-beyond-estimator-hyperparameters-nesting-choices-and-choosing-pipelines">Going beyond estimator hyperparameters: nesting choices and choosing pipelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userguide_data_ops_validation.html#linking-choices-depending-on-other-choices">Linking choices depending on other choices</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_joining_tables.html">Assembling: joining multiple tables</a><ul>

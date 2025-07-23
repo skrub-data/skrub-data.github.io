@@ -16,7 +16,7 @@ Encoding a column
 
 
 
-See :ref:`encoding <encoding>` for further details.
+See :ref:`encoding <userguide_encoders>` for further details.
 
 
 

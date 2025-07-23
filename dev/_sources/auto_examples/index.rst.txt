@@ -252,7 +252,7 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how we can use Skrub&#x27;s skrub_data_ops to build a machine learning pipeline that pre-processes data, trains a model, and allows for hyperparameter tuning on a simple dataset. We will also show how to save the model, load it back, and then use it to make predictions on new data.">
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how we can use Skrub&#x27;s userguide_data_ops to build a machine learning pipeline that records all the operations involved in pre-processing data and training a model. We will also show how to save the model, load it back, and then use it to make predictions on new, unseen data.">
 
 .. only:: html
 
