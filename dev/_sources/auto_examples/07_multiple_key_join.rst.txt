@@ -1126,7 +1126,7 @@ Let's instantiate another multiple key joiner on the date and the airport:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 134-139
+.. GENERATED FROM PYTHON SOURCE LINES 134-140
 
 Training data is then passed through a |Pipeline|:
 
@@ -1134,7 +1134,8 @@ Training data is then passed through a |Pipeline|:
 our main table.
 - We will use this main table to model the prediction of flight delay.
 
-.. GENERATED FROM PYTHON SOURCE LINES 139-150
+
+.. GENERATED FROM PYTHON SOURCE LINES 140-151
 
 .. code-block:: Python
 
@@ -1156,11 +1157,11 @@ our main table.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 151-152
+.. GENERATED FROM PYTHON SOURCE LINES 152-153
 
 We isolate our target variable and remove useless ID variables:
 
-.. GENERATED FROM PYTHON SOURCE LINES 152-156
+.. GENERATED FROM PYTHON SOURCE LINES 153-157
 
 .. code-block:: Python
 
@@ -1175,7 +1176,7 @@ We isolate our target variable and remove useless ID variables:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 157-163
+.. GENERATED FROM PYTHON SOURCE LINES 158-164
 
 We want to frame this as a classification problem:
 suppose that your company is obliged to reimburse the ticket
@@ -1184,7 +1185,7 @@ price if the flight is delayed.
 We have a binary classification problem:
 the flight was delayed (1) or not (0).
 
-.. GENERATED FROM PYTHON SOURCE LINES 163-167
+.. GENERATED FROM PYTHON SOURCE LINES 164-168
 
 .. code-block:: Python
 
@@ -1208,11 +1209,11 @@ the flight was delayed (1) or not (0).
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 168-169
+.. GENERATED FROM PYTHON SOURCE LINES 169-170
 
 The results:
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-175
+.. GENERATED FROM PYTHON SOURCE LINES 170-176
 
 .. code-block:: Python
 
@@ -1231,11 +1232,11 @@ The results:
  .. code-block:: none
 
 
-    0.548
+    0.5568
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 176-184
+.. GENERATED FROM PYTHON SOURCE LINES 177-185
 
 Conclusion
 ----------
@@ -1249,7 +1250,7 @@ Our final cross-validated accuracy score is 0.55.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 19.229 seconds)
+   **Total running time of the script:** (0 minutes 17.272 seconds)
 
 
 .. _sphx_glr_download_auto_examples_07_multiple_key_join.py:

@@ -16,7 +16,7 @@ DataOps
 
 
 
-Generalizing the scikit-learn pipeline. See :ref:`skrub DataOps <skrub_data_ops>` for further details.
+Generalizing the scikit-learn pipeline. See :ref:`skrub DataOps <userguide_data_ops>` for further details.
 
 
 
