@@ -1,0 +1,10 @@
+﻿fetch\_open\_payments
+=====================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_open_payments
+
+.. minigallery:: skrub.datasets.fetch_open_payments
+   :add-heading: Gallery examples
+   :heading-level: -

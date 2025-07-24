@@ -1,0 +1,14 @@
+﻿Joiner
+======
+
+.. currentmodule:: skrub
+
+.. autoclass:: Joiner
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.Joiner skrub.Joiner.__init__ skrub.Joiner.fit skrub.Joiner.fit_transform skrub.Joiner.get_metadata_routing skrub.Joiner.get_params skrub.Joiner.set_output skrub.Joiner.set_params skrub.Joiner.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

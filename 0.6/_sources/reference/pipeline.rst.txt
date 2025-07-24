@@ -1,0 +1,38 @@
+:html_theme.sidebar_secondary.remove:
+
+.. _pipeline_ref:
+
+.. title:: pipeline
+
+
+.. currentmodule:: skrub
+
+
+Building a pipeline
+-------------------
+
+
+
+
+
+
+See :ref:`End-to-End pipeline <userguide_tablevectorizer>` for further details. For more flexibility and control to build pipelines, see the :ref:`skrub DataOps <userguide_data_ops>`.
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :toctree: generated/
+  :template: base.rst
+
+
+  tabular_pipeline
+  tabular_learner
+  TableVectorizer
+  SelectCols
+  DropCols
+  ApplyToCols
+  ApplyToFrame

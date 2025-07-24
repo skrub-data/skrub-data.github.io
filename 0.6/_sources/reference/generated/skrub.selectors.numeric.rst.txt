@@ -1,0 +1,10 @@
+﻿numeric
+=======
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: numeric
+
+.. minigallery:: skrub.selectors.numeric
+   :add-heading: Gallery examples
+   :heading-level: -

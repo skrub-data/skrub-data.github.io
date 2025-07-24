@@ -1,0 +1,605 @@
+:html_theme.sidebar_secondary.remove:
+
+.. _api_ref:
+
+=============
+API Reference
+=============
+
+This is the class and function reference of skrub. Please refer to the
+:ref:`full user guide <user_guide>` for further details, as the raw specifications of
+classes and functions may not be enough to give full guidelines on their use.
+
+.. toctree::
+  :maxdepth: 1
+  :hidden:
+
+
+  pipeline <pipeline>
+  encoders <encoders>
+  reporting <reporting>
+  cleaning <cleaning>
+  joining <joining>
+  selectors <selectors>
+  data_ops <data_ops>
+  config <config>
+  datasets <datasets>
+
+.. currentmodule:: skrub
+
+
+
+Building a pipeline
+-------------------
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  tabular_pipeline
+
+
+  tabular_learner
+
+
+  TableVectorizer
+
+
+  SelectCols
+
+
+  DropCols
+
+
+  ApplyToCols
+
+
+  ApplyToFrame
+
+
+
+
+
+Encoding a column
+-----------------
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  StringEncoder
+
+
+  TextEncoder
+
+
+  MinHashEncoder
+
+
+  GapEncoder
+
+
+  SimilarityEncoder
+
+
+  ToCategorical
+
+
+  DatetimeEncoder
+
+
+  ToDatetime
+
+
+  to_datetime
+
+
+
+
+
+Exploring a dataframe
+---------------------
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  TableReport
+
+
+  patch_display
+
+
+  unpatch_display
+
+
+  column_associations
+
+
+
+
+
+Cleaning a dataframe
+--------------------
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  SquashingScaler
+
+
+  deduplicate
+
+
+  Cleaner
+
+
+  DropUninformative
+
+
+
+
+
+Joining dataframes
+------------------
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  Joiner
+
+
+  AggJoiner
+
+
+  MultiAggJoiner
+
+
+  AggTarget
+
+
+  InterpolationJoiner
+
+
+  fuzzy_join
+
+
+
+
+
+Selectors
+---------
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  selectors.all
+
+
+  selectors.any_date
+
+
+  selectors.boolean
+
+
+  selectors.cardinality_below
+
+
+  selectors.categorical
+
+
+  selectors.cols
+
+
+  selectors.filter
+
+
+  selectors.filter_names
+
+
+  selectors.float
+
+
+  selectors.glob
+
+
+  selectors.has_nulls
+
+
+  selectors.integer
+
+
+  selectors.inv
+
+
+  selectors.make_selector
+
+
+  selectors.numeric
+
+
+  selectors.regex
+
+
+  selectors.select
+
+
+  selectors.string
+
+
+
+
+
+DataOps
+-------
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  var
+
+
+  X
+
+
+  y
+
+
+  as_data_op
+
+
+  deferred
+
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: data_op_class.rst
+
+
+  DataOp
+
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  choose_bool
+
+
+  choose_float
+
+
+  choose_int
+
+
+  choose_from
+
+
+  optional
+
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  cross_validate
+
+
+  eval_mode
+
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: autosummary/accessor_method.rst
+
+
+  DataOp.skb.apply
+
+
+  DataOp.skb.apply_func
+
+
+  DataOp.skb.clone
+
+
+  DataOp.skb.concat
+
+
+  DataOp.skb.cross_validate
+
+
+  DataOp.skb.describe_defaults
+
+
+  DataOp.skb.describe_param_grid
+
+
+  DataOp.skb.describe_steps
+
+
+  DataOp.skb.draw_graph
+
+
+  DataOp.skb.drop
+
+
+  DataOp.skb.eval
+
+
+  DataOp.skb.freeze_after_fit
+
+
+  DataOp.skb.full_report
+
+
+  DataOp.skb.get_data
+
+
+  DataOp.skb.make_learner
+
+
+  DataOp.skb.make_grid_search
+
+
+  DataOp.skb.make_randomized_search
+
+
+  DataOp.skb.if_else
+
+
+  DataOp.skb.iter_learners_grid
+
+
+  DataOp.skb.iter_learners_randomized
+
+
+  DataOp.skb.mark_as_X
+
+
+  DataOp.skb.mark_as_y
+
+
+  DataOp.skb.match
+
+
+  DataOp.skb.preview
+
+
+  DataOp.skb.select
+
+
+  DataOp.skb.set_description
+
+
+  DataOp.skb.set_name
+
+
+  DataOp.skb.subsample
+
+
+  DataOp.skb.train_test_split
+
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: autosummary/accessor_attribute.rst
+
+
+  DataOp.skb.description
+
+
+  DataOp.skb.is_X
+
+
+  DataOp.skb.is_y
+
+
+  DataOp.skb.name
+
+
+  DataOp.skb.applied_estimator
+
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  SkrubLearner
+
+
+  ParamSearch
+
+
+
+
+
+Configuration
+-------------
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  get_config
+
+
+  set_config
+
+
+  config_context
+
+
+
+
+
+Datasets
+--------
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  datasets.fetch_bike_sharing
+
+
+  datasets.fetch_country_happiness
+
+
+  datasets.fetch_credit_fraud
+
+
+  datasets.fetch_drug_directory
+
+
+  datasets.fetch_employee_salaries
+
+
+  datasets.fetch_flight_delays
+
+
+  datasets.fetch_ken_embeddings
+
+
+  datasets.fetch_ken_table_aliases
+
+
+  datasets.fetch_ken_types
+
+
+  datasets.fetch_medical_charge
+
+
+  datasets.fetch_midwest_survey
+
+
+  datasets.fetch_movielens
+
+
+  datasets.fetch_open_payments
+
+
+  datasets.fetch_toxicity
+
+
+  datasets.fetch_traffic_violations
+
+
+  datasets.fetch_videogame_sales
+
+
+  datasets.get_data_dir
+
+
+  datasets.make_deduplication_data
+
+
+  datasets.toy_orders
+
+
+

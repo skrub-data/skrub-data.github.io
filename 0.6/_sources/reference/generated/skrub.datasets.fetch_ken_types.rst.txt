@@ -1,0 +1,10 @@
+﻿fetch\_ken\_types
+=================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_ken_types
+
+.. minigallery:: skrub.datasets.fetch_ken_types
+   :add-heading: Gallery examples
+   :heading-level: -

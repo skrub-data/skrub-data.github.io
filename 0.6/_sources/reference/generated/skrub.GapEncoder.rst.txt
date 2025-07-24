@@ -1,0 +1,14 @@
+﻿GapEncoder
+==========
+
+.. currentmodule:: skrub
+
+.. autoclass:: GapEncoder
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.GapEncoder skrub.GapEncoder.__init__ skrub.GapEncoder.fit skrub.GapEncoder.fit_transform skrub.GapEncoder.get_feature_names_out skrub.GapEncoder.get_metadata_routing skrub.GapEncoder.get_params skrub.GapEncoder.partial_fit skrub.GapEncoder.score skrub.GapEncoder.set_fit_request skrub.GapEncoder.set_output skrub.GapEncoder.set_params skrub.GapEncoder.transform 
+   :add-heading: Gallery examples
+   :heading-level: -
