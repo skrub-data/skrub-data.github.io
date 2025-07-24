@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**10:20.885** total execution time for 12 files **from auto_examples**:
+**11:12.211** total execution time for 12 files **from auto_examples**:
 
 .. container::
 
@@ -32,39 +32,39 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_auto_examples_02_text_with_string_encoders.py` (``02_text_with_string_encoders.py``)
-     - 03:03.014
-     - 0.0
    * - :ref:`sphx_glr_auto_examples_08_join_aggregation.py` (``08_join_aggregation.py``)
-     - 02:43.940
+     - 03:40.763
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_02_text_with_string_encoders.py` (``02_text_with_string_encoders.py``)
+     - 03:17.975
      - 0.0
    * - :ref:`sphx_glr_auto_examples_06_ken_embeddings.py` (``06_ken_embeddings.py``)
-     - 02:04.348
+     - 01:43.192
      - 0.0
    * - :ref:`sphx_glr_auto_examples_01_encodings.py` (``01_encodings.py``)
-     - 00:47.878
-     - 0.0
-   * - :ref:`sphx_glr_auto_examples_11_squashing_scaler.py` (``11_squashing_scaler.py``)
-     - 00:23.809
+     - 00:47.078
      - 0.0
    * - :ref:`sphx_glr_auto_examples_07_multiple_key_join.py` (``07_multiple_key_join.py``)
-     - 00:21.967
+     - 00:23.061
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_11_squashing_scaler.py` (``11_squashing_scaler.py``)
+     - 00:22.165
      - 0.0
    * - :ref:`sphx_glr_auto_examples_09_interpolation_join.py` (``09_interpolation_join.py``)
-     - 00:15.059
+     - 00:19.815
      - 0.0
    * - :ref:`sphx_glr_auto_examples_04_fuzzy_joining.py` (``04_fuzzy_joining.py``)
-     - 00:13.630
+     - 00:13.266
      - 0.0
    * - :ref:`sphx_glr_auto_examples_00_getting_started.py` (``00_getting_started.py``)
-     - 00:10.982
+     - 00:11.204
      - 0.0
    * - :ref:`sphx_glr_auto_examples_10_apply_on_cols.py` (``10_apply_on_cols.py``)
-     - 00:10.184
+     - 00:08.249
      - 0.0
    * - :ref:`sphx_glr_auto_examples_03_datetime_encoder.py` (``03_datetime_encoder.py``)
-     - 00:04.740
+     - 00:04.023
      - 0.0
    * - :ref:`sphx_glr_auto_examples_05_deduplication.py` (``05_deduplication.py``)
-     - 00:01.332
+     - 00:01.420
      - 0.0
