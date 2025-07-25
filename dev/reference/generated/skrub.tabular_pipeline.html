@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.tabular_pipeline.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Usecase: developing locally, and avoiding to repeat code in production" />
+<meta property="og:description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Hands-On with Column Selection and Transformers Usecase: developing locally, and avoiding to ..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Usecase: developing locally, and avoiding to repeat code in production" />
+<meta name="description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Hands-On with Column Selection and Transformers Usecase: developing locally, and avoiding to ..." />
 
     <title>tabular_pipeline &#8212; skrub</title>
   
@@ -737,7 +737,7 @@
 <h1>tabular_pipeline<a class="headerlink" href="#tabular-pipeline" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.tabular_pipeline">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e4bec2d/skrub/_tabular_pipeline.py#L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_pipeline" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a3ef99a/skrub/_tabular_pipeline.py#L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_pipeline" title="Link to this definition">#</a></dt>
 <dd><p>Get a simple machine-learning pipeline for tabular data.</p>
 <p>Given either a scikit-learn estimator or one of the special-cased strings
 <code class="docutils literal notranslate"><span class="pre">'regressor'</span></code>, <code class="docutils literal notranslate"><span class="pre">'regression'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classifier'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classification'</span></code>, this
@@ -937,6 +937,9 @@ unnecessary for tree ensembles.</p></li>
 </div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset."><img alt="" src="../../_images/sphx_glr_01_encodings_thumb.png" />
 <p><a class="reference internal" href="../../auto_examples/01_encodings.html#sphx-glr-auto-examples-01-encodings-py"><span class="std std-ref">Encoding: from a dataframe to a numerical matrix for machine learning</span></a></p>
   <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In previous examples, we saw how skrub provides powerful abstractions like TableVectorizer and tabular_pipeline to create pipelines."><img alt="" src="../../_images/sphx_glr_10_apply_on_cols_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/10_apply_on_cols.html#sphx-glr-auto-examples-10-apply-on-cols-py"><span class="std std-ref">Hands-On with Column Selection and Transformers</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Hands-On with Column Selection and Transformers</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="Usecase: developing locally, and avoiding to repeat code in production"><img alt="" src="../../_images/sphx_glr_14_use_case_thumb.svg" />
 <p><a class="reference internal" href="../../auto_examples/data_ops/14_use_case.html#sphx-glr-auto-examples-data-ops-14-use-case-py"><span class="std std-ref">Usecase: developing locally, and avoiding to repeat code in production</span></a></p>
   <div class="sphx-glr-thumbnail-title">Usecase: developing locally, and avoiding to repeat code in production</div>
