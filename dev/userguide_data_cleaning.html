@@ -656,6 +656,24 @@ considered “uninformative”:</p>
 <p><a class="reference internal" href="reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a> is used by both <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a>; both accept
 the same parameters to drop columns accordingly.</p>
 </section>
+<section id="robust-scaling-of-numerical-features-using-squashingscaler">
+<h2>Robust scaling of numerical features using <a class="reference internal" href="reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a><a class="headerlink" href="#robust-scaling-of-numerical-features-using-squashingscaler" title="Link to this heading">#</a></h2>
+<p>The <a class="reference internal" href="reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> is a robust scaler for numerical features, particularly
+useful when features include outliers (such as infinite values); missing values
+are left unchanged (they are not interpolated).
+The <a class="reference internal" href="reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> centers and scales the data in such a way that outliers are
+less likely to skew the final result compared to alternative methods.</p>
+<p>Based on the specified <code class="docutils literal notranslate"><span class="pre">quantile_range</span></code> parameter, the scaler employs a scikit-learn
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html#sklearn.preprocessing.RobustScaler" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RobustScaler</span></code></a> to rescale the values in a way that the quantile range occupies
+interval of length two, centering the median to zero. It therefore ensures that
+inliers are spread to a reasonable range. Afterwards, it uses a smooth clipping
+function to ensure all values (including outliers and infinite values) are in the
+range <code class="docutils literal notranslate"><span class="pre">[-max_absolute_value,</span> <span class="pre">max_absolute_value]</span></code>.</p>
+<p>More information about the theory behind the scaler is available in the
+<a class="reference internal" href="reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> documentation, while this
+<a class="reference internal" href="auto_examples/11_squashing_scaler.html#sphx-glr-auto-examples-11-squashing-scaler-py"><span class="std std-ref">working example</span></a> compares
+different scalers when used on data that include outliers.</p>
+</section>
 <section id="deduplicate-categorical-data-with-deduplicate">
 <h2>Deduplicate categorical data with <a class="reference internal" href="reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a><a class="headerlink" href="#deduplicate-categorical-data-with-deduplicate" title="Link to this heading">#</a></h2>
 <p>If you have a series containing strings with typos, the <a class="reference internal" href="reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> function
@@ -714,6 +732,7 @@ and the correct strings. See the documentation for caveats and more detail.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning-dataframes-and-parsing-datatypes">Cleaning dataframes and parsing datatypes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-numeric-dtypes-to-float32-with-the-cleaner">Converting numeric dtypes to <code class="docutils literal notranslate"><span class="pre">float32</span></code> with the <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#removing-unneeded-columns-with-dropuninformative-and-cleaner">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#robust-scaling-of-numerical-features-using-squashingscaler">Robust scaling of numerical features using <code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deduplicate-categorical-data-with-deduplicate">Deduplicate categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
 </ul>
   </nav></div>
