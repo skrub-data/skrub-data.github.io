@@ -73,7 +73,7 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tuning and validating Skrub Pipelines" href="userguide_data_ops_validation.html" />
+    <link rel="next" title="Tuning and validating Skrub DataOps plans" href="userguide_data_ops_validation.html" />
     <link rel="prev" title="Skrub DataOps: fit, tune, and validate arbitrary data wrangling" href="userguide_data_ops.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -532,7 +532,7 @@
 <li class="toctree-l1"><a class="reference internal" href="userguide_selectors.html">Skrub Selectors: helpers for selecting columns in a dataframe</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_data_ops.html">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Assembling Skrub DataOps into complex machine learning pipelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="userguide_data_ops_validation.html">Tuning and validating Skrub Pipelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_data_ops_validation.html">Tuning and validating Skrub DataOps plans</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_joining_tables.html">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_utils.html">Example datasets, utilities, and customization</a></li>
 </ul>
@@ -643,9 +643,9 @@ scikit-learn or Skrub to the data. This is done through the
 </div>
 <p>Then, we can export the transformation as a learner with
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_learner()</span></code></a></p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">vectorized_orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="n">vectorized_orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">new_orders</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;fork&quot;</span><span class="p">],</span> <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">2.2</span><span class="p">],</span> <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">]})</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;orders&quot;</span><span class="p">:</span> <span class="n">new_orders</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;orders&quot;</span><span class="p">:</span> <span class="n">new_orders</span><span class="p">})</span>
 <span class="go">         item_0  item_1        item_2  price  qty</span>
 <span class="go">0  5.984116e-09     1.0 -1.323546e-07    2.2    5</span>
 </pre></div>
@@ -757,7 +757,7 @@ inspected with <a class="reference internal" href="reference/generated/skrub.Dat
 generates a html report that shows the full plan, including all nodes,
 their names, descriptions, and the transformations applied to the data.</p>
 <p>An example of the report can be found
-<a class="reference external" href="../../_static/credit_fraud_report/index.html">here</a>.</p>
+<a class="reference external" href="../_static/credit_fraud_report/index.html">here</a>.</p>
 <p>For each node in the plan, the report shows:</p>
 <ul class="simple">
 <li><p>The name and the description of the node, if present.</p></li>
@@ -780,7 +780,7 @@ has additional functions. By setting a name, we can:</p>
 <ul class="simple">
 <li><p>Bypass the computation of that node and override its result by passing it as a
 key in the <code class="docutils literal notranslate"><span class="pre">environment</span></code> argument.</p></li>
-<li><p>Truncate the pipeline after this node to obtain the intermediate result with
+<li><p>Truncate the computational graph after this node to obtain the intermediate result with
 <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.truncated_after" title="skrub.SkrubLearner.truncated_after"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.truncated_after()</span></code></a>.</p></li>
 <li><p>Retrieve that node and inspect the estimator that was fitted in it, if the
 node was created with <a class="reference internal" href="reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply()</span></code></a>.</p></li>
@@ -812,16 +812,16 @@ node was created with <a class="reference internal" href="reference/generated/sk
 </pre></div>
 </div>
 <p>Above, we give a name to each intermediate result with <code class="docutils literal notranslate"><span class="pre">.skb.set_name()</span></code> so
-that we can later refer to it when manipulating a fitted pipeline.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span><span class="p">({</span><span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;file:///example.db&quot;</span><span class="p">})</span>
+that we can later refer to it when manipulating a fitted learner.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit</span><span class="p">({</span><span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;file:///example.db&quot;</span><span class="p">})</span>
 <span class="go">load:  file:///example.db</span>
 <span class="go">transform</span>
 <span class="go">agg</span>
 <span class="go">SkrubLearner(data_op=&lt;Call &#39;agg&#39;&gt;)</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;file:///example.db&quot;</span><span class="p">})</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;file:///example.db&quot;</span><span class="p">})</span>
 <span class="go">load:  file:///example.db</span>
 <span class="go">transform</span>
 <span class="go">agg</span>
@@ -833,17 +833,17 @@ intermediate result that we named <code class="docutils literal notranslate"><sp
 skipped and the provided value is used instead. We can see that
 <code class="docutils literal notranslate"><span class="pre">&quot;load:</span> <span class="pre">...&quot;</span></code> is not printed and that the rest of the computation proceeds
 using <code class="docutils literal notranslate"><span class="pre">[6,</span> <span class="pre">5,</span> <span class="pre">4]</span></code> (instead of <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4]</span></code> as before).</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pipeline</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;loaded&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]})</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;loaded&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]})</span>
 <span class="go">transform</span>
 <span class="go">agg</span>
 <span class="go">60</span>
 </pre></div>
 </div>
 <p>Now we show how to stop at the result we named <code class="docutils literal notranslate"><span class="pre">&quot;transformed&quot;</span></code>. With
-<code class="docutils literal notranslate"><span class="pre">truncated_after</span></code>, we obtain a pipeline that computes that intermediate result
+<code class="docutils literal notranslate"><span class="pre">truncated_after</span></code>, we obtain a learner that computes that intermediate result
 and returns it instead of applying the last transformation; note that <code class="docutils literal notranslate"><span class="pre">&quot;agg&quot;</span></code>
 is not printed and we get the output of <code class="docutils literal notranslate"><span class="pre">transform()</span></code>, not of <code class="docutils literal notranslate"><span class="pre">agg()</span></code>:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">truncated</span> <span class="o">=</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">truncated_after</span><span class="p">(</span><span class="s2">&quot;transformed&quot;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">truncated</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">truncated_after</span><span class="p">(</span><span class="s2">&quot;transformed&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">truncated</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;file:///example.db&quot;</span><span class="p">})</span>
 <span class="go">load:  file:///example.db</span>
 <span class="go">transform</span>
@@ -900,7 +900,7 @@ even if we set <code class="docutils literal notranslate"><span class="pre">keep
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tuning and validating Skrub Pipelines</p>
+        <p class="prev-next-title">Tuning and validating Skrub DataOps plans</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

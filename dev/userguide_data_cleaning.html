@@ -532,7 +532,7 @@
 <li class="toctree-l1"><a class="reference internal" href="userguide_selectors.html">Skrub Selectors: helpers for selecting columns in a dataframe</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_data_ops.html">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_data_ops_ml_pipeline.html">Assembling Skrub DataOps into complex machine learning pipelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="userguide_data_ops_validation.html">Tuning and validating Skrub Pipelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="userguide_data_ops_validation.html">Tuning and validating Skrub DataOps plans</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_joining_tables.html">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_utils.html">Example datasets, utilities, and customization</a></li>
 </ul>
@@ -617,7 +617,7 @@
 <p>The <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> converts data types and Nan values in dataframes to ease downstream preprocessing. It includes:</p>
 <ul class="simple">
 <li><p>Replacing strings that represent missing values with NA markers</p></li>
-<li><p>Dropping uninformative columns (add cross reference)</p></li>
+<li><p>Dropping uninformative columns (see <a class="reference internal" href="reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a>)</p></li>
 <li><p>Parsing datetimes from datetime strings</p></li>
 <li><p>Forcing consistent categorical typing</p></li>
 <li><p>Converting columns to string, unless they have a more informative datatype (numerical, datetime, categorical)</p></li>

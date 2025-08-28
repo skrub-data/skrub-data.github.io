@@ -7,16 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Tuning and validating Skrub Pipelines" />
+<meta property="og:title" content="Tuning and validating Skrub DataOps plans" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/userguide_data_ops_validation.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="To evaluate the prediction performance of our pipeline, we can fit it on a training dataset, then obtaining prediction on an unseen, test dataset. In scikit-learn, we pass to estimators and pipelin..." />
+<meta property="og:description" content="To evaluate the prediction performance of our plan, we can fit it on a training dataset, then obtaining prediction on an unseen, test dataset. In scikit-learn, we pass to estimators and pipelines a..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="To evaluate the prediction performance of our pipeline, we can fit it on a training dataset, then obtaining prediction on an unseen, test dataset. In scikit-learn, we pass to estimators and pipelin..." />
+<meta name="description" content="To evaluate the prediction performance of our plan, we can fit it on a training dataset, then obtaining prediction on an unseen, test dataset. In scikit-learn, we pass to estimators and pipelines a..." />
 
-    <title>Tuning and validating Skrub Pipelines &#8212; skrub</title>
+    <title>Tuning and validating Skrub DataOps plans &#8212; skrub</title>
   
   
   
@@ -532,7 +532,7 @@
 <li class="toctree-l1"><a class="reference internal" href="userguide_selectors.html">Skrub Selectors: helpers for selecting columns in a dataframe</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_data_ops.html">Skrub DataOps: fit, tune, and validate arbitrary data wrangling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_data_ops_ml_pipeline.html">Assembling Skrub DataOps into complex machine learning pipelines</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tuning and validating Skrub Pipelines</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tuning and validating Skrub DataOps plans</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_joining_tables.html">Assembling: joining multiple tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="userguide_utils.html">Example datasets, utilities, and customization</a></li>
 </ul>
@@ -578,7 +578,7 @@
     
     <li class="breadcrumb-item"><a href="documentation.html" class="nav-link">User Guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Tuning and validating Skrub Pipelines</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Tuning and validating Skrub DataOps plans</span></li>
   </ul>
 </nav>
 </div>
@@ -595,9 +595,9 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="tuning-and-validating-skrub-pipelines">
-<span id="userguide-data-ops-validation"></span><h1>Tuning and validating Skrub Pipelines<a class="headerlink" href="#tuning-and-validating-skrub-pipelines" title="Link to this heading">#</a></h1>
-<p>To evaluate the prediction performance of our pipeline, we can fit it on a training
+  <section id="tuning-and-validating-skrub-dataops-plans">
+<span id="userguide-data-ops-validation"></span><h1>Tuning and validating Skrub DataOps plans<a class="headerlink" href="#tuning-and-validating-skrub-dataops-plans" title="Link to this heading">#</a></h1>
+<p>To evaluate the prediction performance of our plan, we can fit it on a training
 dataset, then obtaining prediction on an unseen, test dataset.</p>
 <p>In scikit-learn, we pass to estimators and pipelines an <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> matrix
 with one row per observation from the start. Therefore, we can split the
@@ -746,73 +746,7 @@ hyperparameters, we must use <a class="reference internal" href="reference/gener
 </div>
 <p>Here are the different kinds of choices, along with their default outcome when
 we are not using hyperparameter search:</p>
-<div class="pst-scrollable-table-container"><span id="choice-defaults-table"></span><table class="table" id="id1">
-<caption><span class="caption-text">default choice outcomes</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
-<thead>
-<tr class="row-odd"><th class="head"><p>choosing function</p></th>
-<th class="head"><p>description</p></th>
-<th class="head"><p>default outcome</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="reference/generated/skrub.choose_from.html#skrub.choose_from" title="skrub.choose_from"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_from([10,</span> <span class="pre">20])</span></code></a></p></td>
-<td><p>choose between the listed options 10 and 20</p></td>
-<td><p>first outcome in the list: <code class="docutils literal notranslate"><span class="pre">10</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="reference/generated/skrub.choose_from.html#skrub.choose_from" title="skrub.choose_from"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_from({&quot;a_name&quot;:</span> <span class="pre">10,</span> <span class="pre">&quot;b_name&quot;:</span> <span class="pre">20})</span></code></a></p></td>
-<td><p>choose between the listed options 10 and 20, dictionary keys are names
-for the options.</p></td>
-<td><p>first outcome in the dict: <code class="docutils literal notranslate"><span class="pre">10</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="reference/generated/skrub.optional.html#skrub.optional" title="skrub.optional"><code class="xref py py-func docutils literal notranslate"><span class="pre">optional(10)</span></code></a></p></td>
-<td><p>choose between the provided value and <code class="docutils literal notranslate"><span class="pre">None</span></code> (useful for optional
-transformations in a pipeline eg <code class="docutils literal notranslate"><span class="pre">optional(StandardScaler())</span></code>).</p></td>
-<td><p>the provided <code class="docutils literal notranslate"><span class="pre">value</span></code>: <code class="docutils literal notranslate"><span class="pre">10</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="reference/generated/skrub.choose_bool.html#skrub.choose_bool" title="skrub.choose_bool"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_bool()</span></code></a></p></td>
-<td><p>choose between True and False.</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="reference/generated/skrub.choose_float.html#skrub.choose_float" title="skrub.choose_float"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_float(1.0,</span> <span class="pre">100.0)</span></code></a></p></td>
-<td><p>sample a floating-point number in a range.</p></td>
-<td><p>the middle of the range: <code class="docutils literal notranslate"><span class="pre">50.5</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="reference/generated/skrub.choose_int.html#skrub.choose_int" title="skrub.choose_int"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_int(1,</span> <span class="pre">100)</span></code></a></p></td>
-<td><p>sample an integer in a range.</p></td>
-<td><p>the int closest to the middle of the range: <code class="docutils literal notranslate"><span class="pre">50</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="reference/generated/skrub.choose_float.html#skrub.choose_float" title="skrub.choose_float"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_float(1.0,</span> <span class="pre">100.0,</span> <span class="pre">log=True)</span></code></a></p></td>
-<td><p>sample a float in a range on a logarithmic scale.</p></td>
-<td><p>the middle of the range on a log scale: <code class="docutils literal notranslate"><span class="pre">10.0</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="reference/generated/skrub.choose_int.html#skrub.choose_int" title="skrub.choose_int"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_int(1,</span> <span class="pre">100,</span> <span class="pre">log=True)</span></code></a></p></td>
-<td><p>sample an int in a range on a logarithmic scale.</p></td>
-<td><p>the int closest to the middle of the range on a log scale: <code class="docutils literal notranslate"><span class="pre">10</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="reference/generated/skrub.choose_float.html#skrub.choose_float" title="skrub.choose_float"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_float(1.0,</span> <span class="pre">100.0,</span> <span class="pre">n_steps=4)</span></code></a></p></td>
-<td><p>sample a float on a grid.</p></td>
-<td><p>the step closest to the middle of the range: <code class="docutils literal notranslate"><span class="pre">34.0</span></code> (here steps are
-<code class="docutils literal notranslate"><span class="pre">[1.0,</span> <span class="pre">34.0,</span> <span class="pre">67.0,</span> <span class="pre">100.0]</span></code>)</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="reference/generated/skrub.choose_int.html#skrub.choose_int" title="skrub.choose_int"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_int(1,</span> <span class="pre">100,</span> <span class="pre">n_steps=4)</span></code></a></p></td>
-<td><p>sample an int on a grid.</p></td>
-<td><p>the (integer) step closest to the middle of the range: <code class="docutils literal notranslate"><span class="pre">34</span></code> (here steps are
-<code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">34,</span> <span class="pre">67,</span> <span class="pre">100]</span></code>)</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="reference/generated/skrub.choose_float.html#skrub.choose_float" title="skrub.choose_float"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_float(1.0,</span> <span class="pre">100.0,</span> <span class="pre">log=True,</span> <span class="pre">n_steps=4)</span></code></a></p></td>
-<td><p>sample a float on a logarithmically-spaced grid.</p></td>
-<td><p>the step closest to the middle of the range on a log scale: <code class="docutils literal notranslate"><span class="pre">4.64</span></code>
-(here steps are <code class="docutils literal notranslate"><span class="pre">[1.0,</span> <span class="pre">4.64,</span> <span class="pre">21.54,</span> <span class="pre">100.0]</span></code>)</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="reference/generated/skrub.choose_int.html#skrub.choose_int" title="skrub.choose_int"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_float(1.0,</span> <span class="pre">100.0,</span> <span class="pre">log=True)</span></code></a></p></td>
-<td><p>sample an int on a logarithmically-spaced grid.</p></td>
-<td><p>the (integer) step closest to the middle of the range on a log scale: <code class="docutils literal notranslate"><span class="pre">5</span></code>
-(here steps are <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">5,</span> <span class="pre">22,</span> <span class="pre">100]</span></code>)</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>The default choices for an DataOp, those that get used when calling
+<p id="choice-defaults-table">The default choices for an DataOp, those that get used when calling
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_learner()</span></code></a>, can be inspected with
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.describe_defaults.html#skrub.DataOp.skb.describe_defaults" title="skrub.DataOp.skb.describe_defaults"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.describe_defaults()</span></code></a>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_defaults</span><span class="p">()</span>
@@ -838,13 +772,13 @@ transformations in a pipeline eg <code class="docutils literal notranslate"><spa
 <p>Rather than fitting a randomized or grid search to find the best combination, it is also
 possible to obtain an iterator over different parameter combinations, to inspect
 their outputs or to have manual control over the model selection, using
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.iter_pipelines_grid()</span></code> or
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.iter_pipelines_randomized()</span></code>.
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.iter_learners_grid.html#skrub.DataOp.skb.iter_learners_grid" title="skrub.DataOp.skb.iter_learners_grid"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.iter_learners_grid()</span></code></a> or
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.iter_learners_randomized.html#skrub.DataOp.skb.iter_learners_randomized" title="skrub.DataOp.skb.iter_learners_randomized"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.iter_learners_randomized()</span></code></a>.
 Those yield the candidate pipelines that are explored by the grid and randomized
 search respectively.</p>
 <p>A human-readable description of parameters for a pipeline can be obtained with
 <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.describe_params" title="skrub.SkrubLearner.describe_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.describe_params()</span></code></a>:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search</span><span class="o">.</span><span class="n">best_pipeline_</span><span class="o">.</span><span class="n">describe_params</span><span class="p">()</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search</span><span class="o">.</span><span class="n">best_learner_</span><span class="o">.</span><span class="n">describe_params</span><span class="p">()</span>
 <span class="go">{&#39;α&#39;: 0.054...}</span>
 </pre></div>
 </div>
@@ -1035,7 +969,7 @@ or in a different environment:</p>
 <span class="go">SkrubLearner(data_op=&lt;Apply TableVectorizer&gt;)</span>
 </pre></div>
 </div>
-<p>See <span class="xref std std-ref">sphx_glr_auto_examples_data_ops_13_use_case.py</span> for an example of how
+<p>See <a class="reference internal" href="auto_examples/data_ops/14_use_case.html#sphx-glr-auto-examples-data-ops-14-use-case-py"><span class="std std-ref">Usecase: developing locally, and avoiding to repeat code in production</span></a> for an example of how
 to use the learner in a microservice.</p>
 </section>
 </section>
