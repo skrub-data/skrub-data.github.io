@@ -737,9 +737,10 @@
 <h1>fetch_flight_delays<a class="headerlink" href="#fetch-flight-delays" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_flight_delays">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_flight_delays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/datasets/_fetching.py#L366"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_flight_delays" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_flight_delays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a8c3389/skrub/datasets/_fetching.py#L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_flight_delays" title="Link to this definition">#</a></dt>
 <dd><p>Fetch the flight delays dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
-<p>This is a regression use-case, where the goal is to predict flight delays.</p>
+<p>This is a regression use-case, where the goal is to predict flight delays.
+Size on disk: 657MB.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -751,20 +752,20 @@
 <dd class="field-even"><dl class="simple">
 <dt><strong>bunch</strong><span class="classifier">sklearn.utils.Bunch</span></dt><dd><p>A dictionary-like object with the following keys:</p>
 <ul class="simple">
-<li><p>flights: information about the flights, including departure and
-arrival airports, and delay.</p></li>
-<li><p>airports: information about airports, such as city and coordinates.
+<li><p><code class="docutils literal notranslate"><span class="pre">flights</span></code>: information about the flights, including departure and
+arrival airports, and delay. Shape: (2370030, 12)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">airports</span></code>: information about airports, such as city and coordinates.
 The airport’s <code class="docutils literal notranslate"><span class="pre">iata</span></code> can be matched to the flights’ <code class="docutils literal notranslate"><span class="pre">Origin</span></code> and
-<code class="docutils literal notranslate"><span class="pre">Dest</span></code>.</p></li>
-<li><p>weather: weather data that could be used to help improve the delay
+<code class="docutils literal notranslate"><span class="pre">Dest</span></code>. Shape: (3376, 7)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">weather</span></code>: weather data that could be used to help improve the delay
 predictions. Note the weather data is not measured at the airports
 directly but at weather stations, whose location and information is
-provided in <code class="docutils literal notranslate"><span class="pre">stations</span></code>.</p></li>
-<li><p>stations: information about the weather stations. <code class="docutils literal notranslate"><span class="pre">weather</span></code> and
+provided in <code class="docutils literal notranslate"><span class="pre">stations</span></code>. Shape: (11282238, 5)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stations</span></code>: information about the weather stations. <code class="docutils literal notranslate"><span class="pre">weather</span></code> and
 <code class="docutils literal notranslate"><span class="pre">stations</span></code> can be joined on their <code class="docutils literal notranslate"><span class="pre">ID</span></code> columns. Weather stations
 can only be matched to the nearest airport based on the latitude and
-longitude.</p></li>
-<li><p>metadata : a dictionary containing the name  of the dataset.</p></li>
+longitude. Shape: (124245, 9)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name  of the dataset.</p></li>
 </ul>
 </dd>
 </dl>

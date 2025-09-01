@@ -735,13 +735,13 @@
 <h1>fetch_traffic_violations<a class="headerlink" href="#fetch-traffic-violations" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_traffic_violations">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_traffic_violations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/datasets/_fetching.py#L148"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_traffic_violations" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_traffic_violations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a8c3389/skrub/datasets/_fetching.py#L158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_traffic_violations" title="Link to this definition">#</a></dt>
 <dd><p>Fetches the traffic violations dataset (classification), available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <dl class="simple">
 <dt>Description of the dataset:</dt><dd><p>This dataset contains traffic violation information from all electronic
 traffic violations issued in the Montgomery County, MD. Any information
 that can be used to uniquely identify the vehicle, the vehicle owner or
-the officer issuing the violation will not be published.</p>
+the officer issuing the violation will not be published. Size on disk: 736MB.</p>
 </dd>
 </dl>
 <dl class="field-list simple">
@@ -755,10 +755,12 @@ the officer issuing the violation will not be published.</p>
 <dd class="field-even"><dl class="simple">
 <dt><strong>bunch</strong><span class="classifier">sklearn.utils.Bunch</span></dt><dd><p>A dictionary-like object with the following keys:</p>
 <ul class="simple">
-<li><p>traffic_violations : pd.DataFrame, the dataframe</p></li>
-<li><p>X : pd.DataFrame, features, i.e. the dataframe without the target labels</p></li>
-<li><p>y : pd.DataFrame, target labels</p></li>
-<li><p>metadata : a dictionary containing the name, description, source and target</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">traffic_violations</span></code> : pd.DataFrame, the dataframe. Shape: (1578154, 43)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">X</span></code> : pd.DataFrame, features, i.e. the dataframe without the target
+labels. Shape: (1578154, 42)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">y</span></code> : pd.DataFrame, target labels. Shape: (1578154, 1)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name, description, source and
+target</p></li>
 </ul>
 </dd>
 </dl>

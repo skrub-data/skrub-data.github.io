@@ -735,11 +735,11 @@
 <h1>fetch_videogame_sales<a class="headerlink" href="#fetch-videogame-sales" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_videogame_sales">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_videogame_sales</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/datasets/_fetching.py#L276"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_videogame_sales" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_videogame_sales</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a8c3389/skrub/datasets/_fetching.py#L296"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_videogame_sales" title="Link to this definition">#</a></dt>
 <dd><p>Fetch the videogame sales dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <p>This is a regression use-case, where the single table contains information
 about videogames such as the publisher and platform, and the goal is to
-predict the number of sales worldwide.</p>
+predict the number of sales worldwide. Size on disk: 1.8MB.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The original dataset is ordered by decreasing number of sales. This
@@ -758,10 +758,11 @@ publication year and splitting by year.</p>
 <dd class="field-even"><dl class="simple">
 <dt><strong>bunch</strong><span class="classifier">sklearn.utils.Bunch</span></dt><dd><p>A dictionary-like object with the following keys:</p>
 <ul class="simple">
-<li><p>videogame_sales : pd.DataFrame, the full dataframe</p></li>
-<li><p>X : pd.DataFrame, features, i.e. the dataframe without the target labels</p></li>
-<li><p>y : pd.DataFrame, target labels</p></li>
-<li><p>metadata : a dictionary containing the name, source and target</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">videogame_sales</span></code> : pd.DataFrame, the full dataframe. Shape: (16572, 11)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">X</span></code> : pd.DataFrame, features, i.e. the dataframe without the target
+labels. Shape: (16572, 5)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">y</span></code> : pd.DataFrame, target labels. Shape: (16572, 1)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name, source and target</p></li>
 </ul>
 </dd>
 </dl>

@@ -737,13 +737,14 @@
 <h1>fetch_employee_salaries<a class="headerlink" href="#fetch-employee-salaries" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_employee_salaries">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_employee_salaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/datasets/_fetching.py#L8"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_employee_salaries" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_employee_salaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a8c3389/skrub/datasets/_fetching.py#L8"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_employee_salaries" title="Link to this definition">#</a></dt>
 <dd><p>Fetches the employee salaries dataset (regression), available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <dl class="simple">
 <dt>Description of the dataset:</dt><dd><p>Annual salary information including gross pay and overtime pay for all
 active, permanent employees of Montgomery County, MD paid in calendar
 year 2016. This dataset is a copy of <a class="reference external" href="https://www.openml.org/d/42125">https://www.openml.org/d/42125</a>
-where some features are dropped to avoid data leaking.</p>
+where some features are dropped to avoid data leaking.
+Size on disk: 1.3MB.</p>
 </dd>
 </dl>
 <div class="admonition note">
@@ -769,10 +770,12 @@ download this dataset using OpenML instead of Github or Figshare, run:</p>
 <dd class="field-even"><dl class="simple">
 <dt><strong>bunch</strong><span class="classifier">sklearn.utils.Bunch</span></dt><dd><p>A dictionary-like object with the following keys:</p>
 <ul class="simple">
-<li><p>employee_salaries : pd.DataFrame, the dataframe</p></li>
-<li><p>X : pd.DataFrame, features, i.e. the dataframe without the target labels</p></li>
-<li><p>y : pd.DataFrame, target labels</p></li>
-<li><p>metadata : a dictionary containing the name, description, source and target</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">employee_salaries</span></code> : pd.DataFrame, the dataframe. Shape: (9228, 9)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">X</span></code> : pd.DataFrame, features, i.e. the dataframe without the target
+labels. Shape: (9228, 8)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">y</span></code> : pd.DataFrame, target labels. Shape: (9228, 1)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name, description, source and
+target</p></li>
 </ul>
 </dd>
 </dl>

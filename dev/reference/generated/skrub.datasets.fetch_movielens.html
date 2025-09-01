@@ -735,10 +735,11 @@
 <h1>fetch_movielens<a class="headerlink" href="#fetch-movielens" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_movielens">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_movielens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/datasets/_fetching.py#L341"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_movielens" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_movielens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a8c3389/skrub/datasets/_fetching.py#L363"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_movielens" title="Link to this definition">#</a></dt>
 <dd><p>Fetch the movielens dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <p>This is a regression use-case, where the goal is to predict movie ratings.
-More details are provided in the output’s <code class="docutils literal notranslate"><span class="pre">metadata['description']</span></code>.</p>
+More details are provided in the output’s <code class="docutils literal notranslate"><span class="pre">metadata['description']</span></code>.
+Size on disk: 3.6MB.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -750,9 +751,9 @@ More details are provided in the output’s <code class="docutils literal notran
 <dd class="field-even"><dl class="simple">
 <dt><strong>bunch</strong><span class="classifier">sklearn.utils.Bunch</span></dt><dd><p>A dictionary-like object with the following keys:</p>
 <ul class="simple">
-<li><p>movies : pd.DataFrame, movie ID, title and genres</p></li>
-<li><p>ratings: pd.DataFrame, user ID, movie ID, rating</p></li>
-<li><p>metadata : a dictionary containing the name source and description</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">movies</span></code> : pd.DataFrame, movie ID, title and genres. Shape: (9742, 3)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ratings</span></code>: pd.DataFrame, user ID, movie ID, rating. Shape: (100836, 4)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name source and description</p></li>
 </ul>
 </dd>
 </dl>

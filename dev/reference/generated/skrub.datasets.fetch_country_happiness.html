@@ -737,11 +737,11 @@
 <h1>fetch_country_happiness<a class="headerlink" href="#fetch-country-happiness" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_country_happiness">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_country_happiness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/datasets/_fetching.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_country_happiness" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_country_happiness</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a8c3389/skrub/datasets/_fetching.py#L424"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_country_happiness" title="Link to this definition">#</a></dt>
 <dd><p>Fetch the happiness index dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <p>This is a regression use-case, where the goal is to predict the happiness
 index. The dataset contains data from the <a class="reference external" href="https://worldhappiness.report/">2022 World Happiness Report</a>, and from <a class="reference external" href="https://data.worldbank.org/">the World Bank open data
-platform</a>.</p>
+platform</a>. Size on disk: 64KB.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -753,9 +753,13 @@ platform</a>.</p>
 <dd class="field-even"><dl class="simple">
 <dt><strong>bunch</strong><span class="classifier">sklearn.utils.Bunch</span></dt><dd><p>A dictionary-like object with the following keys:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">happiness_report</span></code>: dataframe, data from the world happiness report</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">GDP_per_capita</span></code>, <code class="docutils literal notranslate"><span class="pre">life_expectancy</span></code>, <code class="docutils literal notranslate"><span class="pre">legal_rights_index</span></code>:
-corresponding tables from the World Bank.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">happiness_report</span></code>: dataframe, data from the world happiness report.
+Shape: (146, 12)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GDP_per_capita</span></code>: dataframe from the World Bank. Shape: (262, 2)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">life_expectancy</span></code>: dataframe from the World Bank. Shape: (260, 2)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">legal_rights_index</span></code>: dataframe from the World Bank. Shape: (238, 2)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name of the dataset, a
+description and the sources.</p></li>
 </ul>
 </dd>
 </dl>
