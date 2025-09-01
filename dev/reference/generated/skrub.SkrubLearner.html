@@ -737,7 +737,7 @@
 <h1>SkrubLearner<a class="headerlink" href="#skrublearner" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.SkrubLearner">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">SkrubLearner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_op</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/766c5ab/skrub/_data_ops/_estimator.py#L92"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">SkrubLearner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_op</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/_data_ops/_estimator.py#L92"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner" title="Link to this definition">#</a></dt>
 <dd><p>Learner that evaluates a skrub DataOp.</p>
 <p>This class is not meant to be instantiated manually, <code class="docutils literal notranslate"><span class="pre">SkrubLearner</span></code>
 objects are created by calling <a class="reference internal" href="skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_learner()</span></code></a> on a
@@ -779,7 +779,7 @@ DataOp.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.describe_params">
-<span class="sig-name descname"><span class="pre">describe_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/766c5ab/skrub/_data_ops/_estimator.py#L382"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.describe_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">describe_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/_data_ops/_estimator.py#L382"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.describe_params" title="Link to this definition">#</a></dt>
 <dd><p>Describe parameters for this learner.</p>
 <p>Returns a human-readable description (in form of a dict) of the
 parameters (outcomes of <cite>choose_*</cite> objects contained in the
@@ -788,7 +788,7 @@ DataOp).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.find_fitted_estimator">
-<span class="sig-name descname"><span class="pre">find_fitted_estimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/766c5ab/skrub/_data_ops/_estimator.py#L179"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.find_fitted_estimator" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">find_fitted_estimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/_data_ops/_estimator.py#L179"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.find_fitted_estimator" title="Link to this definition">#</a></dt>
 <dd><p>Find the scikit-learn estimator that has been fitted in a <code class="docutils literal notranslate"><span class="pre">.skb.apply()</span></code> step.</p>
 <p>This can be useful for example to inspect the fitted attributes of the
 estimator. The <code class="docutils literal notranslate"><span class="pre">apply</span></code> step must have been given a name with
@@ -903,7 +903,7 @@ we pass <code class="docutils literal notranslate"><span class="pre">.skb.apply(
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/766c5ab/skrub/_data_ops/_estimator.py#L156"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/_data_ops/_estimator.py#L156"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -924,14 +924,14 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.report">
-<span class="sig-name descname"><span class="pre">report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">full_report_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/766c5ab/skrub/_data_ops/_estimator.py#L127"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.report" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">full_report_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/_data_ops/_estimator.py#L127"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.report" title="Link to this definition">#</a></dt>
 <dd><p>Call the method specified by <cite>mode</cite> and return the result and full report.</p>
 <p>See <a class="reference internal" href="skrub.DataOp.skb.full_report.html#skrub.DataOp.skb.full_report" title="skrub.DataOp.skb.full_report"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.full_report()</span></code></a> for more information.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/766c5ab/skrub/_data_ops/_estimator.py#L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/_data_ops/_estimator.py#L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -955,7 +955,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.truncated_after">
-<span class="sig-name descname"><span class="pre">truncated_after</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/766c5ab/skrub/_data_ops/_estimator.py#L307"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.truncated_after" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">truncated_after</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4baec8a/skrub/_data_ops/_estimator.py#L307"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.truncated_after" title="Link to this definition">#</a></dt>
 <dd><p>Extract the part of the learner that leads up to the given step.</p>
 <p>This is similar to slicing a scikit-learn pipeline. It can be useful
 for example to drive the hyperparameter selection with a supervised
@@ -1030,17 +1030,17 @@ step:</p>
 
 <section id="gallery-examples">
 <h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
-<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how we can use Skrub&#x27;s userguide_data_ops to build a machine learning pipeline that records all the operations involved in pre-processing data and training a model. We will also show how to save the model, load it back, and then use it to make predictions on new, unseen data."><img alt="" src="../../_images/sphx_glr_10_data_ops_intro_thumb.svg" />
-<p><a class="reference internal" href="../../auto_examples/data_ops/10_data_ops_intro.html#sphx-glr-auto-examples-data-ops-10-data-ops-intro-py"><span class="std std-ref">Introduction to machine-learning pipelines with skrub DataOps</span></a></p>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how we can use Skrub&#x27;s userguide_data_ops to build a machine learning pipeline that records all the operations involved in pre-processing data and training a model. We will also show how to save the model, load it back, and then use it to make predictions on new, unseen data."><img alt="" src="../../_images/sphx_glr_11_data_ops_intro_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/data_ops/11_data_ops_intro.html#sphx-glr-auto-examples-data-ops-11-data-ops-intro-py"><span class="std std-ref">Introduction to machine-learning pipelines with skrub DataOps</span></a></p>
   <div class="sphx-glr-thumbnail-title">Introduction to machine-learning pipelines with skrub DataOps</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how to build a DataOps plan to handle pre-processing, validation and hyperparameter tuning of a dataset with multiple tables."><img alt="" src="../../_images/sphx_glr_11_multiple_tables_thumb.svg" />
-<p><a class="reference internal" href="../../auto_examples/data_ops/11_multiple_tables.html#sphx-glr-auto-examples-data-ops-11-multiple-tables-py"><span class="std std-ref">Multiples tables: building machine learning pipelines with DataOps</span></a></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how to build a DataOps plan to handle pre-processing, validation and hyperparameter tuning of a dataset with multiple tables."><img alt="" src="../../_images/sphx_glr_12_multiple_tables_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/data_ops/12_multiple_tables.html#sphx-glr-auto-examples-data-ops-12-multiple-tables-py"><span class="std std-ref">Multiples tables: building machine learning pipelines with DataOps</span></a></p>
   <div class="sphx-glr-thumbnail-title">Multiples tables: building machine learning pipelines with DataOps</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not)."><img alt="" src="../../_images/sphx_glr_12_choices_thumb.svg" />
-<p><a class="reference internal" href="../../auto_examples/data_ops/12_choices.html#sphx-glr-auto-examples-data-ops-12-choices-py"><span class="std std-ref">Hyperparameter tuning with DataOps</span></a></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not)."><img alt="" src="../../_images/sphx_glr_13_choices_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/data_ops/13_choices.html#sphx-glr-auto-examples-data-ops-13-choices-py"><span class="std std-ref">Hyperparameter tuning with DataOps</span></a></p>
   <div class="sphx-glr-thumbnail-title">Hyperparameter tuning with DataOps</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Usecase: developing locally, and avoiding to repeat code in production"><img alt="" src="../../_images/sphx_glr_14_use_case_thumb.svg" />
-<p><a class="reference internal" href="../../auto_examples/data_ops/14_use_case.html#sphx-glr-auto-examples-data-ops-14-use-case-py"><span class="std std-ref">Usecase: developing locally, and avoiding to repeat code in production</span></a></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Usecase: developing locally, and avoiding to repeat code in production"><img alt="" src="../../_images/sphx_glr_15_use_case_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/data_ops/15_use_case.html#sphx-glr-auto-examples-data-ops-15-use-case-py"><span class="std std-ref">Usecase: developing locally, and avoiding to repeat code in production</span></a></p>
   <div class="sphx-glr-thumbnail-title">Usecase: developing locally, and avoiding to repeat code in production</div>
 </div></div></section>
 </section>
