@@ -923,13 +923,34 @@ specific examples, you can use the following command with a regex pattern:</p>
 </div>
 <p>This is especially helpful when you’re only modifying or checking a few examples.</p>
 <p>It is also possible to build the documentation without running the examples
-by using the following command:</p>
+without running the examples by using the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>html-noplot
 </pre></div>
 </div>
-<p>This command generates the documentation without re-executing the examples, which
-can take a long time. This is useful if you are only modifying the
-documentation itself, such as fixing typos or improving explanations.</p>
+<p>This command generates the documentation without re-executing the examples, which can
+take a long time. This is useful if you are only modifying the documentation itself, such as fixing
+typos or improving explanations.</p>
+<p><strong>Using pixi</strong></p>
+<p>From the repository root:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build documentation without running examples (faster)</span>
+pixi<span class="w"> </span>run<span class="w"> </span>build-doc-quick
+
+<span class="c1"># Build the full documentation, including examples</span>
+pixi<span class="w"> </span>run<span class="w"> </span>build-doc
+
+<span class="c1"># Clean previously built documentation</span>
+pixi<span class="w"> </span>run<span class="w"> </span>clean-doc
+</pre></div>
+</div>
+<p>The documentation will be generated in the <code class="docutils literal notranslate"><span class="pre">doc/_build/html/</span></code> directory.
+You can view it by opening the local <code class="docutils literal notranslate"><span class="pre">doc/_build/html/index.html</span></code> file.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>On Intel-based macOS systems (<code class="docutils literal notranslate"><span class="pre">osx-64</span></code>), some pixi environments may not
+resolve correctly due to missing upstream package builds (e.g., for PyTorch).
+If you encounter issues, you can always fall back to using <code class="docutils literal notranslate"><span class="pre">make</span></code> as
+described above.</p>
+</div>
 </section>
 <section id="editing-the-api-reference-documentation">
 <h2>Editing the API reference documentation<a class="headerlink" href="#editing-the-api-reference-documentation" title="Link to this heading">#</a></h2>
