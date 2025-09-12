@@ -876,7 +876,7 @@ directly modified by the pull request are executed.</p>
 <p>CI is testing all possible configurations supported by skrub, so tests may fail
 with configurations different from what you are developing with. If this is the
 case,  it is possible to run the tests in the environment that is failing by
-using pixi. For example if the env is <code class="docutils literal notranslate"><span class="pre">ci-py309-min-optional-deps</span></code>, it is
+using <a class="reference external" href="https://pixi.sh/latest/">pixi</a>. For example if the env is <code class="docutils literal notranslate"><span class="pre">ci-py309-min-optional-deps</span></code>, it is
 possible to replicate it using the following command:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pixi<span class="w"> </span>run<span class="w"> </span>-e<span class="w"> </span>ci-py309-min-optional-deps<span class="w">  </span>pytest<span class="w"> </span>skrub/tests/path/to/test
 </pre></div>
@@ -931,6 +931,7 @@ without running the examples by using the following command:</p>
 take a long time. This is useful if you are only modifying the documentation itself, such as fixing
 typos or improving explanations.</p>
 <p><strong>Using pixi</strong></p>
+<p>You can download and install pixi from <a class="reference external" href="https://pixi.sh/latest/">here</a>.</p>
 <p>From the repository root:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build documentation without running examples (faster)</span>
 pixi<span class="w"> </span>run<span class="w"> </span>build-doc-quick
