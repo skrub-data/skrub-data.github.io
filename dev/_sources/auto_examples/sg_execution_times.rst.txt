@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**08:08.095** total execution time for 11 files **from auto_examples**:
+**08:27.005** total execution time for 11 files **from auto_examples**:
 
 .. container::
 
@@ -33,35 +33,35 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_02_text_with_string_encoders.py` (``02_text_with_string_encoders.py``)
-     - 02:51.601
+     - 03:30.298
      - 0.0
    * - :ref:`sphx_glr_auto_examples_07_join_aggregation.py` (``07_join_aggregation.py``)
-     - 02:51.510
+     - 02:26.691
      - 0.0
    * - :ref:`sphx_glr_auto_examples_01_encodings.py` (``01_encodings.py``)
-     - 00:43.668
-     - 0.0
-   * - :ref:`sphx_glr_auto_examples_06_multiple_key_join.py` (``06_multiple_key_join.py``)
-     - 00:25.992
+     - 00:50.208
      - 0.0
    * - :ref:`sphx_glr_auto_examples_10_squashing_scaler.py` (``10_squashing_scaler.py``)
-     - 00:23.241
+     - 00:26.067
      - 0.0
-   * - :ref:`sphx_glr_auto_examples_08_interpolation_join.py` (``08_interpolation_join.py``)
-     - 00:17.769
+   * - :ref:`sphx_glr_auto_examples_06_multiple_key_join.py` (``06_multiple_key_join.py``)
+     - 00:18.808
      - 0.0
    * - :ref:`sphx_glr_auto_examples_04_fuzzy_joining.py` (``04_fuzzy_joining.py``)
-     - 00:11.685
+     - 00:14.507
      - 0.0
-   * - :ref:`sphx_glr_auto_examples_00_getting_started.py` (``00_getting_started.py``)
-     - 00:09.221
+   * - :ref:`sphx_glr_auto_examples_08_interpolation_join.py` (``08_interpolation_join.py``)
+     - 00:14.052
      - 0.0
    * - :ref:`sphx_glr_auto_examples_09_apply_on_cols.py` (``09_apply_on_cols.py``)
-     - 00:08.399
+     - 00:10.269
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_00_getting_started.py` (``00_getting_started.py``)
+     - 00:09.889
      - 0.0
    * - :ref:`sphx_glr_auto_examples_03_datetime_encoder.py` (``03_datetime_encoder.py``)
-     - 00:03.814
+     - 00:04.936
      - 0.0
    * - :ref:`sphx_glr_auto_examples_05_deduplication.py` (``05_deduplication.py``)
-     - 00:01.193
+     - 00:01.280
      - 0.0

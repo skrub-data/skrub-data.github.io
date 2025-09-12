@@ -592,6 +592,9 @@ when applied to categorical columns. <a class="reference external" href="https:/
 was displayed). <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1590">#1590</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>Fixed an error that occurred when using <code class="docutils literal notranslate"><span class="pre">.skb.concat</span></code> with a pandas dataframe
 with column names that aren’t strings. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1594">#1594</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p>DataOp hyperparameter search would raise an error when doing classification
+and using the <code class="docutils literal notranslate"><span class="pre">scoring</span></code> parameter, when the dataop contained no variables.
+Fixed in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1601">#1601</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 </ul>
 </section>
 </section>
