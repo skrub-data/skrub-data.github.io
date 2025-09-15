@@ -2,7 +2,7 @@
   "jupyter-config-data": {
     "appName": "JupyterLite",
     "appUrl": "./lab",
-    "appVersion": "0.6.1",
+    "appVersion": "0.6.4",
     "baseUrl": "./",
     "defaultKernelName": "python",
     "faviconUrl": "./lab/favicon.ico",
@@ -18,7 +18,7 @@
         "name": "jupyterlab-jupytext"
       },
       {
-        "load": "static/remoteEntry.5153b2c003c011c482e3.js",
+        "load": "static/remoteEntry.38ea05461c254e327731.js",
         "mimeExtension": "./mimeExtension",
         "name": "jupyterlab-plotly"
       },
