@@ -542,7 +542,7 @@
 <li class="toctree-l2"><a class="reference internal" href="data_ops/12_multiple_tables.html">Multiples tables: building machine learning pipelines with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/13_choices.html">Hyperparameter tuning with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/14_subsampling.html">Subsampling for faster development</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_ops/15_use_case.html">Usecase: developing locally, and avoiding to repeat code in production</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_ops/15_use_case.html">Use case: developing locally and deploying to production</a></li>
 </ul>
 </details></li>
 </ul>
@@ -611,7 +611,7 @@
 to download the full example code. or to run this example in your browser via JupyterLite or Binder</p>
 </div>
 <section class="sphx-glr-example-title" id="fuzzy-joining-dirty-tables-with-the-joiner">
-<span id="sphx-glr-auto-examples-04-fuzzy-joining-py"></span><h1>Fuzzy joining dirty tables with the Joiner<a class="headerlink" href="#fuzzy-joining-dirty-tables-with-the-joiner" title="Link to this heading">#</a></h1>
+<span id="example-fuzzy-joining"></span><span id="sphx-glr-auto-examples-04-fuzzy-joining-py"></span><h1>Fuzzy joining dirty tables with the Joiner<a class="headerlink" href="#fuzzy-joining-dirty-tables-with-the-joiner" title="Link to this heading">#</a></h1>
 <p>Here we show how to combine data from different sources,
 with a vocabulary not well normalized.</p>
 <p>Joining is difficult: one entry on one side does not have
@@ -633,6 +633,9 @@ machine-learning pipeline. In particular, it enables tuning parameters of
 
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.utils.Bunch.html#sklearn.utils.Bunch" title="sklearn.utils.Bunch" class="sphx-glr-backref-module-sklearn-utils sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">happiness_data</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.datasets.fetch_country_happiness.html#skrub.datasets.fetch_country_happiness" title="skrub.datasets.fetch_country_happiness" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">datasets</span><span class="o">.</span><span class="n">fetch_country_happiness</span></a><span class="p">()</span>
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">happiness_data</span><span class="o">.</span><span class="n">happiness_report</span></a>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Downloading &#39;country_happiness&#39; from https://github.com/skrub-data/skrub-data-files/raw/refs/heads/main/country_happiness.zip (attempt 1/3)
 </pre></div>
 </div>
 <p>Let’s look at the table:</p>
@@ -1544,7 +1547,7 @@ so as to include only precise-enough matches:</p>
 </div>
 </div>
 <br />
-<br /><p>Matches that are not available (or precise enough) are marked as <cite>NaN</cite>.
+<br /><p>Matches that are not available (or precise enough) are marked as <code class="docutils literal notranslate"><span class="pre">NaN</span></code>.
 We will remove them using the <code class="docutils literal notranslate"><span class="pre">drop_unmatched</span></code> parameter:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">augmented_df</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">fuzzy_join</span></a><span class="p">(</span>
     <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="p">,</span>
@@ -1821,7 +1824,7 @@ We evaluate our model using the <cite>R2</cite> score.</p>
 </div>
 <p>We have a satisfying first result: an R² of 0.63!</p>
 <p>Data cleaning varies from dataset to dataset: there are as
-many ways to clean a table as there are errors. <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>
+many ways to clean a table as there are errors. The <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>
 method is generalizable across all datasets.</p>
 <p>Data transformation is also often very costly in both time and resources.
 <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is fast and easy-to-use.</p>
@@ -1886,7 +1889,7 @@ introduced into a grid search:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Best parameters: {&#39;joiner-1__max_dist&#39;: 0.1, &#39;joiner-2__max_dist&#39;: 0.9, &#39;joiner-3__max_dist&#39;: 0.1}
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 12.424 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 12.740 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-04-fuzzy-joining-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/04_fuzzy_joining.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />

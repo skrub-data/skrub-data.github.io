@@ -51,7 +51,7 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not).">
+    <div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains values or choices which may influence its prediction performance, such as hyperparameters (e.g., the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g., RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g., should we join a table to bring additional information or not).">
 
 .. only:: html
 
@@ -68,7 +68,7 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use DataOp.skb.subsample to speed-up interactive construction of a skrub DataOps plan by computing previews on a subsampled version of the original data.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use DataOp.skb.subsample to speed up interactive construction of a skrub DataOps plan by computing previews on a subsampled version of the original data.">
 
 .. only:: html
 
@@ -85,7 +85,7 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Usecase: developing locally, and avoiding to repeat code in production">
+    <div class="sphx-glr-thumbcontainer" tooltip="Use case: developing locally and deploying to production">
 
 .. only:: html
 
@@ -96,7 +96,7 @@ Skrub DataOps
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Usecase: developing locally, and avoiding to repeat code in production</div>
+      <div class="sphx-glr-thumbnail-title">Use case: developing locally and deploying to production</div>
     </div>
 
 

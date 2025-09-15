@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Usecase: developing locally, and avoiding to repeat code in production" />
+<meta property="og:title" content="Use case: developing locally and deploying to production" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/auto_examples/data_ops/15_use_case.html" />
 <meta property="og:site_name" content="skrub" />
@@ -16,7 +16,7 @@
 <meta property="og:image:alt" content="skrub" />
 <meta name="description" content="As a team of data scientists, we are tasked with a project to predict whether an email is potentially malicious (i.e., spam or phishing). We develop and test our models locally, either in a Jupyter..." />
 
-    <title>Usecase: developing locally, and avoiding to repeat code in production &#8212; skrub</title>
+    <title>Use case: developing locally and deploying to production &#8212; skrub</title>
   
   
   
@@ -542,7 +542,7 @@
 <li class="toctree-l2"><a class="reference internal" href="12_multiple_tables.html">Multiples tables: building machine learning pipelines with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="13_choices.html">Hyperparameter tuning with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="14_subsampling.html">Subsampling for faster development</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Usecase: developing locally, and avoiding to repeat code in production</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Use case: developing locally and deploying to production</a></li>
 </ul>
 </details></li>
 </ul>
@@ -591,7 +591,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Skrub DataOps</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Usecase: developing locally, and avoiding to repeat code in production</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Use case: developing locally and deploying to production</span></li>
   </ul>
 </nav>
 </div>
@@ -613,8 +613,8 @@
 <p><a class="reference internal" href="#sphx-glr-download-auto-examples-data-ops-15-use-case-py"><span class="std std-ref">Go to the end</span></a>
 to download the full example code. or to run this example in your browser via JupyterLite or Binder</p>
 </div>
-<section class="sphx-glr-example-title" id="usecase-developing-locally-and-avoiding-to-repeat-code-in-production">
-<span id="sphx-glr-auto-examples-data-ops-15-use-case-py"></span><h1>Usecase: developing locally, and avoiding to repeat code in production<a class="headerlink" href="#usecase-developing-locally-and-avoiding-to-repeat-code-in-production" title="Link to this heading">#</a></h1>
+<section class="sphx-glr-example-title" id="use-case-developing-locally-and-deploying-to-production">
+<span id="sphx-glr-auto-examples-data-ops-15-use-case-py"></span><h1>Use case: developing locally and deploying to production<a class="headerlink" href="#use-case-developing-locally-and-deploying-to-production" title="Link to this heading">#</a></h1>
 <p>As a team of data scientists, we are tasked with a project to predict whether an email
 is potentially malicious (i.e., spam or phishing). We develop and test our models
 locally, either in a Jupyter notebook or within a Python script. Once we are satisfied
@@ -680,7 +680,7 @@ training data in dictionary form. We are going to generate a fully random data s
 </pre></div>
 </div>
 <p>In this use case, the emails to be tested when the model is put in production
-are not contained in a dataframe, but in a json. As a result, our training data
+are not contained in a dataframe, but in a JSON. As a result, our training data
 should also be contained in a list of dictionaries.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a> <span class="o">=</span> <span class="p">[</span>
     <span class="p">{</span>
@@ -702,17 +702,17 @@ should also be contained in a list of dictionaries.</p>
 </section>
 <section id="building-the-dataops-plan">
 <h2>Building the DataOps plan<a class="headerlink" href="#building-the-dataops-plan" title="Link to this heading">#</a></h2>
-<p>Let’s start our DataOps plan by indicating what are the features and the target
-variable.</p>
+<p>Let’s start our DataOps plan by indicating what the features and the target
+variables are.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 
 <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a> <span class="o">=</span> <a href="../../reference/generated/skrub.X.html#skrub.X" title="skrub.X" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">skrub</span><span class="o">.</span><span class="n">X</span></a><span class="p">(</span><a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">)</span>
 <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">=</span> <a href="../../reference/generated/skrub.y.html#skrub.y" title="skrub.y" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">skrub</span><span class="o">.</span><span class="n">y</span></a><span class="p">(</span><a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
 </pre></div>
 </div>
-<p>The variable X for now is a list of dicts. It’s not something that an estimator can
-handle directly.
-Let’s convert it to a pandas DataFrame using <a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.apply_func.html#skrub.DataOp.skb.apply_func" title="skrub.DataOp.skb.apply_func"><code class="xref py py-func docutils literal notranslate"><span class="pre">apply_func()</span></code></a>.</p>
+<p>The variable X is currently a list of dictionaries, which estimators cannot
+handle directly. Let’s convert it to a pandas DataFrame using
+<a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.apply_func.html#skrub.DataOp.skb.apply_func" title="skrub.DataOp.skb.apply_func"><code class="xref py py-func docutils literal notranslate"><span class="pre">apply_func()</span></code></a>.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
 <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a> <span class="o">=</span> <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span></a><span class="p">)</span>
@@ -818,7 +818,7 @@ the variables of the DataOps plan.</p>
 </section>
 <section id="production-phase">
 <h2>Production phase<a class="headerlink" href="#production-phase" title="Link to this heading">#</a></h2>
-<p>In our microservice, we receive a payload in json format.</p>
+<p>In our microservice, we receive a payload in JSON format.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_input</span></a> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">generate_id</span><span class="p">(),</span>
     <span class="s2">&quot;sender&quot;</span><span class="p">:</span> <span class="n">generate_email</span><span class="p">(),</span>
@@ -843,11 +843,11 @@ the variables of the DataOps plan.</p>
 </section>
 <section id="conclusion">
 <h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
-<p>Thanks to the skrub DataOps and learner, we are assured that all the transformations
-and preprocessing done during model development are exactly the same that are done in
-production.
-It becomes easy and straightforward to deploy.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 6.355 seconds)</p>
+<p>Thanks to the skrub DataOps and learner, we ensure that all the transformations
+and preprocessing done during model development are exactly the same as those done in
+production. This makes deployment straightforward and reduces the risk of errors
+when moving from development to production environments.</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 6.198 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-data-ops-15-use-case-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/data_ops/15_use_case.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo1.svg" style="width: 150px;" />

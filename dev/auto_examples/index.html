@@ -542,7 +542,7 @@
 <li class="toctree-l2"><a class="reference internal" href="data_ops/12_multiple_tables.html">Multiples tables: building machine learning pipelines with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/13_choices.html">Hyperparameter tuning with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/14_subsampling.html">Subsampling for faster development</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_ops/15_use_case.html">Usecase: developing locally, and avoiding to repeat code in production</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_ops/15_use_case.html">Use case: developing locally and deploying to production</a></li>
 </ul>
 </details></li>
 </ul>
@@ -604,7 +604,7 @@
                   
   <section id="examples">
 <h1>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h1>
-<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This guide showcases the features of skrub, an open-source package that aims at bridging the gap between tabular data sources and machine-learning models."><img alt="" src="../_images/sphx_glr_00_getting_started_thumb.svg" />
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This guide showcases some of the features of skrub, an open-source package that aims at bridging the gap between tabular data stored in Pandas or Polars dataframes, and machine-learning models."><img alt="" src="../_images/sphx_glr_00_getting_started_thumb.svg" />
 <p><a class="reference internal" href="00_getting_started.html#sphx-glr-auto-examples-00-getting-started-py"><span class="std std-ref">Getting Started</span></a></p>
   <div class="sphx-glr-thumbnail-title">Getting Started</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset."><img alt="" src="../_images/sphx_glr_01_encodings_thumb.png" />
@@ -619,7 +619,7 @@
 </div><div class="sphx-glr-thumbcontainer" tooltip="Here we show how to combine data from different sources, with a vocabulary not well normalized."><img alt="" src="../_images/sphx_glr_04_fuzzy_joining_thumb.png" />
 <p><a class="reference internal" href="04_fuzzy_joining.html#sphx-glr-auto-examples-04-fuzzy-joining-py"><span class="std std-ref">Fuzzy joining dirty tables with the Joiner</span></a></p>
   <div class="sphx-glr-thumbnail-title">Fuzzy joining dirty tables with the Joiner</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Real world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspelling break data analysis steps that require exact matching, such as a GROUP BY operation."><img alt="" src="../_images/sphx_glr_05_deduplication_thumb.png" />
+</div><div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation."><img alt="" src="../_images/sphx_glr_05_deduplication_thumb.png" />
 <p><a class="reference internal" href="05_deduplication.html#sphx-glr-auto-examples-05-deduplication-py"><span class="std std-ref">Deduplicating misspelled categories</span></a></p>
   <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="Joining tables may be difficult if one entry on one side does not have an exact match on the other side."><img alt="" src="../_images/sphx_glr_06_multiple_key_join_thumb.png" />
@@ -648,15 +648,15 @@
 </div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how to build a DataOps plan to handle pre-processing, validation and hyperparameter tuning of a dataset with multiple tables."><img alt="" src="../_images/sphx_glr_12_multiple_tables_thumb.svg" />
 <p><a class="reference internal" href="data_ops/12_multiple_tables.html#sphx-glr-auto-examples-data-ops-12-multiple-tables-py"><span class="std std-ref">Multiples tables: building machine learning pipelines with DataOps</span></a></p>
   <div class="sphx-glr-thumbnail-title">Multiples tables: building machine learning pipelines with DataOps</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not)."><img alt="" src="../_images/sphx_glr_13_choices_thumb.svg" />
+</div><div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains values or choices which may influence its prediction performance, such as hyperparameters (e.g., the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g., RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g., should we join a table to bring additional information or not)."><img alt="" src="../_images/sphx_glr_13_choices_thumb.svg" />
 <p><a class="reference internal" href="data_ops/13_choices.html#sphx-glr-auto-examples-data-ops-13-choices-py"><span class="std std-ref">Hyperparameter tuning with DataOps</span></a></p>
   <div class="sphx-glr-thumbnail-title">Hyperparameter tuning with DataOps</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use DataOp.skb.subsample to speed-up interactive construction of a skrub DataOps plan by computing previews on a subsampled version of the original data."><img alt="" src="../_images/sphx_glr_14_subsampling_thumb.svg" />
+</div><div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use DataOp.skb.subsample to speed up interactive construction of a skrub DataOps plan by computing previews on a subsampled version of the original data."><img alt="" src="../_images/sphx_glr_14_subsampling_thumb.svg" />
 <p><a class="reference internal" href="data_ops/14_subsampling.html#sphx-glr-auto-examples-data-ops-14-subsampling-py"><span class="std std-ref">Subsampling for faster development</span></a></p>
   <div class="sphx-glr-thumbnail-title">Subsampling for faster development</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Usecase: developing locally, and avoiding to repeat code in production"><img alt="" src="../_images/sphx_glr_15_use_case_thumb.svg" />
-<p><a class="reference internal" href="data_ops/15_use_case.html#sphx-glr-auto-examples-data-ops-15-use-case-py"><span class="std std-ref">Usecase: developing locally, and avoiding to repeat code in production</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Usecase: developing locally, and avoiding to repeat code in production</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Use case: developing locally and deploying to production"><img alt="" src="../_images/sphx_glr_15_use_case_thumb.svg" />
+<p><a class="reference internal" href="data_ops/15_use_case.html#sphx-glr-auto-examples-data-ops-15-use-case-py"><span class="std std-ref">Use case: developing locally and deploying to production</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Use case: developing locally and deploying to production</div>
 </div></div><div class="toctree-wrapper compound">
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
