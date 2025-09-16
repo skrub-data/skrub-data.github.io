@@ -607,6 +607,13 @@ and <code class="docutils literal notranslate"><span class="pre">low</span> <spa
 <li><p>DataOp hyperparameter search would raise an error when doing classification
 and using the <code class="docutils literal notranslate"><span class="pre">scoring</span></code> parameter, when the dataop contained no variables.
 Fixed in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1601">#1601</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> would raise errors when containing subclasses of list, tuple
+or dict that cannot be initialized with an instance of the builtin type (such
+as classes created by <code class="docutils literal notranslate"><span class="pre">collections.namedtuple</span></code>), this has been fixed.
+DataOps now only recurse into the builtin collections to evaluate their items
+(not into their subclasses). If you need the items evaluated (ie if they
+contain DataOps or Choices), store them in one of the builtin collections.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1612">#1612</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 </ul>
 </section>
 </section>
