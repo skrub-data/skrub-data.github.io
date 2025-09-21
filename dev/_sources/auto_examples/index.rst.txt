@@ -170,10 +170,10 @@ Examples
 
 .. only:: html
 
-  .. image:: /auto_examples/images/thumb/sphx_glr_09_apply_on_cols_thumb.svg
+  .. image:: /auto_examples/images/thumb/sphx_glr_09_apply_to_cols_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_09_apply_on_cols.py`
+  :ref:`sphx_glr_auto_examples_09_apply_to_cols.py`
 
 .. raw:: html
 
@@ -217,7 +217,7 @@ Examples
    /auto_examples/06_multiple_key_join
    /auto_examples/07_join_aggregation
    /auto_examples/08_interpolation_join
-   /auto_examples/09_apply_on_cols
+   /auto_examples/09_apply_to_cols
    /auto_examples/10_squashing_scaler
 
 
@@ -234,7 +234,7 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how we can use Skrub&#x27;s userguide_data_ops to build a machine learning pipeline that records all the operations involved in pre-processing data and training a model. We will also show how to save the model, load it back, and then use it to make predictions on new, unseen data.">
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how we can use Skrub&#x27;s user_guide_data_ops_index to build a machine learning pipeline that records all the operations involved in pre-processing data and training a model. We will also show how to save the model, load it back, and then use it to make predictions on new, unseen data.">
 
 .. only:: html
 

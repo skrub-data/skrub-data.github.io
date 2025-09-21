@@ -75,7 +75,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Skrub DataOps" href="data_ops/index.html" />
-    <link rel="prev" title="Hands-On with Column Selection and Transformers" href="09_apply_on_cols.html" />
+    <link rel="prev" title="Hands-On with Column Selection and Transformers" href="09_apply_to_cols.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.7.dev0" />
@@ -534,7 +534,7 @@
 <li class="toctree-l1"><a class="reference internal" href="06_multiple_key_join.html">Spatial join for flight data: Joining across multiple columns</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_join_aggregation.html">AggJoiner on a credit fraud dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_interpolation_join.html">Interpolation join: infer missing rows when joining two tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="09_apply_on_cols.html">Hands-On with Column Selection and Transformers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_apply_to_cols.html">Hands-On with Column Selection and Transformers</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">SquashingScaler: Robust numerical preprocessing for neural networks</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -734,9 +734,9 @@ simplicity, we generally recommend using better neural network implementations
 or tree-based models whenever low test errors are desired.</p>
 <p>We test the <a class="reference internal" href="../reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> against the
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> and the
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html#sklearn.preprocessing.QuantileTransformer" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuantileTransformer</span></code></a> from scikit-learn. We put each of
-these together in a pipeline with a TableVectorizer and a simple MLPRegressor. In the
-end, we print the R2 scores of each fold’s validation set in a three-fold
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html#sklearn.preprocessing.QuantileTransformer" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuantileTransformer</span></code></a> from scikit-learn. We put
+each of these together in a pipeline with a TableVectorizer and a simple MLPRegressor.
+In the end, we print the R2 scores of each fold’s validation set in a three-fold
 cross-validation.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
 
@@ -789,10 +789,10 @@ Cross-validation R2 scores for SquashingScaler (higher is better):
 [0.88737156 0.89555145 0.90645875]
 </pre></div>
 </div>
-<p>On the employee salaries dataset, the SquashingScaler performs
-better than StandardScaler and QuantileTransformer on all
+<p>On the employee salaries dataset, the <a class="reference internal" href="../reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> performs
+better than <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> and <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html#sklearn.preprocessing.QuantileTransformer" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuantileTransformer</span></code></a> on all
 cross-validation folds.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 21.858 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 22.390 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-10-squashing-scaler-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/10_squashing_scaler.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
@@ -827,7 +827,7 @@ cross-validation folds.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="09_apply_on_cols.html"
+       href="09_apply_to_cols.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">

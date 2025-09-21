@@ -75,7 +75,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Building a pipeline" href="pipeline.html" />
-    <link rel="prev" title="Example datasets, utilities, and customization" href="../userguide_utils.html" />
+    <link rel="prev" title="Assembling: joining multiple tables" href="../modules/joining_tables/assembling.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.7.dev0" />
@@ -523,7 +523,6 @@
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="pipeline.html">pipeline</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.tabular_pipeline.html">tabular_pipeline</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/skrub.tabular_learner.html">tabular_learner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.TableVectorizer.html">TableVectorizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.DropCols.html">DropCols</a></li>
@@ -738,22 +737,19 @@ classes and functions may not be enough to give full guidelines on their use.</p
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tabular_pipeline</span></code></a></p></td>
 <td><p>Get a simple machine-learning pipeline for tabular data.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.tabular_learner.html#skrub.tabular_learner" title="skrub.tabular_learner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tabular_learner</span></code></a></p></td>
-<td><p>Get a simple machine-learning pipeline for tabular data.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></p></td>
 <td><p>Transform a dataframe to a numeric (vectorized) representation.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SelectCols</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SelectCols</span></code></a></p></td>
 <td><p>Select a subset of a DataFrame's columns.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DropCols</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DropCols</span></code></a></p></td>
 <td><p>Drop a subset of a DataFrame's columns.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></p></td>
 <td><p>Map a transformer to columns in a dataframe.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a></p></td>
 <td><p>Apply a transformer to part of a dataframe.</p></td>
 </tr>
 </tbody>
@@ -1203,12 +1199,12 @@ classes and functions may not be enough to give full guidelines on their use.</p
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../userguide_utils.html"
+       href="../modules/joining_tables/assembling.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Example datasets, utilities, and customization</p>
+        <p class="prev-next-title">Assembling: joining multiple tables</p>
       </div>
     </a>
     <a class="right-next"

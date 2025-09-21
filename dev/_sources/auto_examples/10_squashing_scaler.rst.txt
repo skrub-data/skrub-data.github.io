@@ -224,14 +224,15 @@ or tree-based models whenever low test errors are desired.
 
 We test the :class:`~skrub.SquashingScaler` against the
 :class:`~sklearn.preprocessing.StandardScaler` and the
-:class:`~sklearn.preprocessing.QuantileTransformer` from scikit-learn. We put each of
-these together in a pipeline with a TableVectorizer and a simple MLPRegressor. In the
-end, we print the R2 scores of each fold's validation set in a three-fold
+:class:`~sklearn.preprocessing.QuantileTransformer` from scikit-learn. We put
+each of these together in a pipeline with a TableVectorizer and a simple MLPRegressor.
+In the end, we print the R2 scores of each fold's validation set in a three-fold
 cross-validation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-194
+.. GENERATED FROM PYTHON SOURCE LINES 154-195
 
 .. code-block:: Python
+
 
     import warnings
 
@@ -294,16 +295,16 @@ cross-validation.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 195-198
+.. GENERATED FROM PYTHON SOURCE LINES 196-199
 
-On the employee salaries dataset, the SquashingScaler performs
-better than StandardScaler and QuantileTransformer on all
+On the employee salaries dataset, the |SquashingScaler| performs
+better than |StandardScaler| and |QuantileTransformer| on all
 cross-validation folds.
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 21.858 seconds)
+   **Total running time of the script:** (0 minutes 22.390 seconds)
 
 
 .. _sphx_glr_download_auto_examples_10_squashing_scaler.py:

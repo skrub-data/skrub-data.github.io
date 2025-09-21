@@ -534,7 +534,7 @@
 <li class="toctree-l1"><a class="reference internal" href="06_multiple_key_join.html">Spatial join for flight data: Joining across multiple columns</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_join_aggregation.html">AggJoiner on a credit fraud dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_interpolation_join.html">Interpolation join: infer missing rows when joining two tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="09_apply_on_cols.html">Hands-On with Column Selection and Transformers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_apply_to_cols.html">Hands-On with Column Selection and Transformers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="10_squashing_scaler.html">SquashingScaler: Robust numerical preprocessing for neural networks</a></li>
 </ul>
 <ul class="nav bd-sidenav">
@@ -809,7 +809,7 @@ tabular data.</p>
 <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;test_score&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([0.90535681, 0.88242732, 0.91152429, 0.92348094, 0.92373584])
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([0.90726739, 0.87696924, 0.91294092, 0.92210125, 0.92566553])
 </pre></div>
 </div>
 <p>The estimator returned by <code class="xref py py-obj docutils literal notranslate"><span class="pre">tabular_pipeline</span></code> combines 2 steps:</p>
@@ -2049,41 +2049,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>0.026707</td>
-      <td>-0.022418</td>
-      <td>-0.028366</td>
-      <td>0.002887</td>
+      <td>0.027088</td>
+      <td>0.003561</td>
+      <td>-0.009513</td>
+      <td>-0.005614</td>
       <td>0.0</td>
-      <td>0.397709</td>
-      <td>-0.145893</td>
-      <td>0.179806</td>
-      <td>-0.065339</td>
+      <td>0.397710</td>
+      <td>-0.145889</td>
+      <td>0.179808</td>
+      <td>-0.065341</td>
       <td>0.094767</td>
-      <td>0.093166</td>
-      <td>0.781629</td>
-      <td>0.305328</td>
-      <td>-0.285354</td>
-      <td>-0.127287</td>
-      <td>-0.118571</td>
-      <td>-0.416065</td>
-      <td>-0.052075</td>
-      <td>-0.171977</td>
-      <td>0.202516</td>
-      <td>0.009077</td>
-      <td>-0.117608</td>
-      <td>-0.022878</td>
-      <td>0.089716</td>
-      <td>-0.115800</td>
-      <td>-0.029531</td>
-      <td>0.097591</td>
-      <td>-0.036103</td>
-      <td>-0.015423</td>
-      <td>0.020129</td>
-      <td>-0.028473</td>
-      <td>0.044701</td>
-      <td>-0.097622</td>
-      <td>-0.092713</td>
-      <td>-0.032643</td>
+      <td>0.093163</td>
+      <td>0.781631</td>
+      <td>0.305332</td>
+      <td>-0.285342</td>
+      <td>-0.127322</td>
+      <td>-0.118580</td>
+      <td>-0.416061</td>
+      <td>-0.052072</td>
+      <td>-0.171980</td>
+      <td>0.202525</td>
+      <td>0.009067</td>
+      <td>-0.117620</td>
+      <td>-0.022888</td>
+      <td>0.089738</td>
+      <td>-0.115776</td>
+      <td>-0.029547</td>
+      <td>0.097632</td>
+      <td>-0.035990</td>
+      <td>-0.015336</td>
+      <td>0.020088</td>
+      <td>-0.028669</td>
+      <td>0.044562</td>
+      <td>-0.097563</td>
+      <td>-0.094105</td>
+      <td>0.031685</td>
       <td>1986.0</td>
       <td>9.0</td>
       <td>22.0</td>
@@ -2133,41 +2133,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.065434</td>
-      <td>0.019416</td>
-      <td>0.078494</td>
-      <td>-0.002200</td>
+      <td>-0.064774</td>
+      <td>-0.079714</td>
+      <td>0.115536</td>
+      <td>-0.041640</td>
       <td>0.0</td>
-      <td>0.847248</td>
-      <td>-0.117939</td>
+      <td>0.847251</td>
+      <td>-0.117933</td>
       <td>-0.048592</td>
       <td>-0.110617</td>
-      <td>-0.052886</td>
+      <td>-0.052887</td>
       <td>-0.048625</td>
       <td>-0.107771</td>
       <td>0.008097</td>
-      <td>-0.023598</td>
-      <td>-0.055239</td>
-      <td>-0.056617</td>
-      <td>-0.008619</td>
-      <td>0.056056</td>
-      <td>-0.058611</td>
-      <td>-0.021360</td>
-      <td>-0.002977</td>
-      <td>-0.006429</td>
-      <td>-0.078439</td>
-      <td>-0.147503</td>
-      <td>-0.020214</td>
-      <td>-0.104200</td>
-      <td>0.169538</td>
-      <td>-0.006597</td>
-      <td>-0.069652</td>
-      <td>-0.096014</td>
-      <td>0.660919</td>
-      <td>0.196486</td>
-      <td>0.075367</td>
-      <td>0.076119</td>
-      <td>-0.094871</td>
+      <td>-0.023591</td>
+      <td>-0.055244</td>
+      <td>-0.056616</td>
+      <td>-0.008623</td>
+      <td>0.056053</td>
+      <td>-0.058612</td>
+      <td>-0.021351</td>
+      <td>-0.002979</td>
+      <td>-0.006435</td>
+      <td>-0.078402</td>
+      <td>-0.147524</td>
+      <td>-0.020216</td>
+      <td>-0.104208</td>
+      <td>0.169563</td>
+      <td>-0.006443</td>
+      <td>-0.069692</td>
+      <td>-0.096004</td>
+      <td>0.660773</td>
+      <td>0.196322</td>
+      <td>0.073898</td>
+      <td>0.078402</td>
+      <td>0.099504</td>
       <td>1988.0</td>
       <td>9.0</td>
       <td>12.0</td>
@@ -2217,41 +2217,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.058656</td>
-      <td>0.283964</td>
-      <td>-0.198127</td>
-      <td>0.179737</td>
+      <td>-0.065337</td>
+      <td>-0.241325</td>
+      <td>-0.292278</td>
+      <td>0.130449</td>
       <td>0.0</td>
       <td>0.048005</td>
       <td>0.016050</td>
       <td>0.007036</td>
-      <td>0.087220</td>
-      <td>0.119997</td>
+      <td>0.087219</td>
+      <td>0.120000</td>
       <td>0.058963</td>
-      <td>0.212722</td>
+      <td>0.212729</td>
       <td>-0.234660</td>
-      <td>0.375308</td>
-      <td>0.732440</td>
-      <td>-0.460241</td>
-      <td>0.047650</td>
-      <td>0.059957</td>
-      <td>0.029508</td>
-      <td>0.175559</td>
-      <td>0.031694</td>
-      <td>0.012841</td>
-      <td>-0.017647</td>
-      <td>-0.054951</td>
-      <td>-0.060724</td>
-      <td>-0.086681</td>
-      <td>0.028482</td>
-      <td>0.029236</td>
-      <td>0.005944</td>
-      <td>-0.005329</td>
-      <td>0.060143</td>
-      <td>0.033794</td>
-      <td>-0.045833</td>
-      <td>0.002889</td>
-      <td>-0.122801</td>
+      <td>0.375231</td>
+      <td>0.732496</td>
+      <td>-0.460240</td>
+      <td>0.047670</td>
+      <td>0.059970</td>
+      <td>0.029502</td>
+      <td>0.175532</td>
+      <td>0.031692</td>
+      <td>0.012859</td>
+      <td>-0.017661</td>
+      <td>-0.054933</td>
+      <td>-0.060637</td>
+      <td>-0.086920</td>
+      <td>0.028262</td>
+      <td>0.029712</td>
+      <td>0.006443</td>
+      <td>-0.005039</td>
+      <td>0.060850</td>
+      <td>0.033408</td>
+      <td>-0.044303</td>
+      <td>0.001304</td>
+      <td>0.109068</td>
       <td>1989.0</td>
       <td>11.0</td>
       <td>19.0</td>
@@ -2301,41 +2301,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.050343</td>
-      <td>-0.050530</td>
-      <td>-0.018399</td>
-      <td>0.002065</td>
+      <td>-0.072128</td>
+      <td>0.065600</td>
+      <td>-0.018740</td>
+      <td>0.008481</td>
       <td>0.0</td>
       <td>0.046073</td>
       <td>0.023713</td>
-      <td>0.069390</td>
+      <td>0.069391</td>
       <td>0.038924</td>
       <td>0.057341</td>
-      <td>0.048959</td>
-      <td>0.131009</td>
+      <td>0.048958</td>
+      <td>0.131006</td>
       <td>0.062030</td>
-      <td>0.020838</td>
+      <td>0.020836</td>
       <td>0.018175</td>
-      <td>0.062892</td>
-      <td>-0.017078</td>
-      <td>-0.060753</td>
-      <td>-0.007692</td>
-      <td>-0.025651</td>
-      <td>-0.019876</td>
-      <td>0.116362</td>
-      <td>0.046953</td>
-      <td>-0.089379</td>
-      <td>0.130587</td>
-      <td>0.152320</td>
-      <td>-0.012627</td>
-      <td>0.045906</td>
-      <td>0.176687</td>
-      <td>-0.001628</td>
-      <td>0.075172</td>
-      <td>-0.235995</td>
-      <td>-0.305468</td>
-      <td>0.602585</td>
-      <td>-0.015169</td>
+      <td>0.062888</td>
+      <td>-0.017084</td>
+      <td>-0.060740</td>
+      <td>-0.007676</td>
+      <td>-0.025650</td>
+      <td>-0.019884</td>
+      <td>0.116318</td>
+      <td>0.046793</td>
+      <td>-0.089326</td>
+      <td>0.130415</td>
+      <td>0.152300</td>
+      <td>-0.012459</td>
+      <td>0.045362</td>
+      <td>0.176528</td>
+      <td>-0.001875</td>
+      <td>0.074318</td>
+      <td>-0.235940</td>
+      <td>-0.315423</td>
+      <td>0.592220</td>
+      <td>0.024893</td>
       <td>2014.0</td>
       <td>5.0</td>
       <td>5.0</td>
@@ -2385,41 +2385,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.093492</td>
-      <td>0.010916</td>
-      <td>-0.006548</td>
-      <td>0.055987</td>
+      <td>-0.098099</td>
+      <td>-0.058495</td>
+      <td>-0.015662</td>
+      <td>-0.083619</td>
       <td>0.0</td>
-      <td>0.090343</td>
-      <td>0.024199</td>
-      <td>0.025948</td>
-      <td>0.243114</td>
-      <td>0.389862</td>
+      <td>0.090344</td>
+      <td>0.024198</td>
+      <td>0.025949</td>
+      <td>0.243113</td>
+      <td>0.389864</td>
       <td>-0.063121</td>
-      <td>-0.014230</td>
-      <td>-0.145518</td>
-      <td>-0.033802</td>
-      <td>0.044318</td>
-      <td>0.004481</td>
-      <td>-0.080471</td>
-      <td>0.018236</td>
-      <td>0.122346</td>
-      <td>-0.190556</td>
-      <td>0.062559</td>
-      <td>-0.062272</td>
-      <td>0.050870</td>
-      <td>0.072299</td>
-      <td>-0.091091</td>
-      <td>0.043293</td>
-      <td>0.041124</td>
-      <td>-0.254255</td>
-      <td>-0.040178</td>
-      <td>0.012961</td>
-      <td>-0.138112</td>
-      <td>0.162564</td>
-      <td>0.153941</td>
-      <td>0.175168</td>
-      <td>-0.020312</td>
+      <td>-0.014220</td>
+      <td>-0.145524</td>
+      <td>-0.033801</td>
+      <td>0.044344</td>
+      <td>0.004482</td>
+      <td>-0.080460</td>
+      <td>0.018228</td>
+      <td>0.122347</td>
+      <td>-0.190593</td>
+      <td>0.062551</td>
+      <td>-0.062235</td>
+      <td>0.050810</td>
+      <td>0.072457</td>
+      <td>-0.091219</td>
+      <td>0.043040</td>
+      <td>0.040661</td>
+      <td>-0.253819</td>
+      <td>-0.039999</td>
+      <td>0.014842</td>
+      <td>-0.137000</td>
+      <td>0.161503</td>
+      <td>0.156073</td>
+      <td>0.182659</td>
+      <td>0.029932</td>
       <td>2007.0</td>
       <td>3.0</td>
       <td>5.0</td>
@@ -2553,41 +2553,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.129835</td>
-      <td>0.018216</td>
-      <td>0.207972</td>
-      <td>-0.109871</td>
+      <td>-0.133206</td>
+      <td>-0.053008</td>
+      <td>0.227906</td>
+      <td>-0.081624</td>
       <td>0.0</td>
-      <td>0.049992</td>
+      <td>0.049991</td>
       <td>0.011395</td>
-      <td>0.010624</td>
-      <td>0.089170</td>
-      <td>0.122423</td>
-      <td>0.520384</td>
-      <td>0.270880</td>
-      <td>0.083379</td>
-      <td>-0.199062</td>
-      <td>-0.111069</td>
-      <td>-0.006211</td>
-      <td>0.814812</td>
-      <td>0.236675</td>
-      <td>0.186500</td>
-      <td>-0.159876</td>
-      <td>-0.011217</td>
-      <td>-0.128938</td>
-      <td>0.021931</td>
-      <td>-0.002153</td>
-      <td>-0.085079</td>
-      <td>-0.177381</td>
-      <td>-0.020311</td>
-      <td>0.097449</td>
-      <td>0.086831</td>
-      <td>0.049845</td>
-      <td>-0.008906</td>
-      <td>0.210176</td>
-      <td>-0.177264</td>
-      <td>-0.007717</td>
-      <td>0.038413</td>
+      <td>0.010625</td>
+      <td>0.089169</td>
+      <td>0.122426</td>
+      <td>0.520385</td>
+      <td>0.270875</td>
+      <td>0.083381</td>
+      <td>-0.199053</td>
+      <td>-0.111097</td>
+      <td>-0.006196</td>
+      <td>0.814810</td>
+      <td>0.236669</td>
+      <td>0.186511</td>
+      <td>-0.159866</td>
+      <td>-0.011205</td>
+      <td>-0.128955</td>
+      <td>0.021924</td>
+      <td>-0.002180</td>
+      <td>-0.085287</td>
+      <td>-0.177266</td>
+      <td>-0.020412</td>
+      <td>0.097157</td>
+      <td>0.086718</td>
+      <td>0.049896</td>
+      <td>-0.009163</td>
+      <td>0.210426</td>
+      <td>-0.177093</td>
+      <td>-0.011111</td>
+      <td>-0.035396</td>
       <td>2015.0</td>
       <td>11.0</td>
       <td>3.0</td>
@@ -2637,41 +2637,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.034375</td>
-      <td>0.015408</td>
-      <td>0.101086</td>
-      <td>-0.056261</td>
+      <td>-0.028460</td>
+      <td>-0.040761</td>
+      <td>0.122068</td>
+      <td>-0.049936</td>
       <td>0.0</td>
-      <td>0.062242</td>
-      <td>0.229416</td>
-      <td>0.002451</td>
-      <td>-0.031310</td>
+      <td>0.062241</td>
+      <td>0.229418</td>
+      <td>0.002449</td>
+      <td>-0.031309</td>
       <td>0.035629</td>
-      <td>-0.002898</td>
-      <td>0.007269</td>
-      <td>0.051493</td>
-      <td>0.047165</td>
-      <td>-0.009760</td>
-      <td>0.078437</td>
-      <td>-0.009670</td>
-      <td>-0.130793</td>
-      <td>0.252432</td>
-      <td>0.151848</td>
-      <td>0.030864</td>
-      <td>-0.099151</td>
-      <td>-0.016202</td>
-      <td>-0.001995</td>
-      <td>-0.000078</td>
-      <td>0.017174</td>
-      <td>0.004077</td>
-      <td>0.039437</td>
-      <td>0.022461</td>
-      <td>-0.022945</td>
-      <td>0.010446</td>
-      <td>-0.037645</td>
-      <td>-0.033452</td>
-      <td>0.028068</td>
-      <td>0.004364</td>
+      <td>-0.002897</td>
+      <td>0.007270</td>
+      <td>0.051492</td>
+      <td>0.047166</td>
+      <td>-0.009753</td>
+      <td>0.078443</td>
+      <td>-0.009673</td>
+      <td>-0.130789</td>
+      <td>0.252443</td>
+      <td>0.151824</td>
+      <td>0.030870</td>
+      <td>-0.099145</td>
+      <td>-0.016205</td>
+      <td>-0.001869</td>
+      <td>0.000061</td>
+      <td>0.017330</td>
+      <td>0.004067</td>
+      <td>0.039563</td>
+      <td>0.022276</td>
+      <td>-0.023580</td>
+      <td>0.009816</td>
+      <td>-0.037724</td>
+      <td>-0.035209</td>
+      <td>0.022237</td>
+      <td>0.004523</td>
       <td>1988.0</td>
       <td>11.0</td>
       <td>28.0</td>
@@ -2721,10 +2721,10 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.115739</td>
-      <td>-0.056953</td>
-      <td>0.092396</td>
-      <td>-0.096854</td>
+      <td>-0.105424</td>
+      <td>0.045485</td>
+      <td>0.127507</td>
+      <td>-0.051823</td>
       <td>1.0</td>
       <td>0.007742</td>
       <td>-0.000054</td>
@@ -2732,30 +2732,30 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.020265</td>
       <td>0.042899</td>
       <td>0.003151</td>
-      <td>0.019045</td>
+      <td>0.019046</td>
       <td>-0.006844</td>
-      <td>0.016756</td>
-      <td>0.022607</td>
-      <td>0.005786</td>
-      <td>-0.013210</td>
+      <td>0.016754</td>
+      <td>0.022610</td>
+      <td>0.005788</td>
+      <td>-0.013209</td>
       <td>0.003410</td>
-      <td>0.004963</td>
-      <td>-0.005662</td>
-      <td>0.000366</td>
+      <td>0.004964</td>
+      <td>-0.005659</td>
+      <td>0.000367</td>
       <td>-0.001984</td>
-      <td>0.025239</td>
-      <td>-0.001523</td>
-      <td>0.005143</td>
-      <td>0.019680</td>
-      <td>-0.012069</td>
-      <td>-0.016033</td>
-      <td>0.007365</td>
-      <td>0.008110</td>
-      <td>0.020587</td>
-      <td>0.008736</td>
-      <td>-0.024893</td>
-      <td>-0.029983</td>
-      <td>-0.022189</td>
+      <td>0.025260</td>
+      <td>-0.001509</td>
+      <td>0.005187</td>
+      <td>0.019755</td>
+      <td>-0.012106</td>
+      <td>-0.015913</td>
+      <td>0.007310</td>
+      <td>0.007973</td>
+      <td>0.020455</td>
+      <td>0.008388</td>
+      <td>-0.024279</td>
+      <td>-0.031503</td>
+      <td>0.020539</td>
       <td>2001.0</td>
       <td>4.0</td>
       <td>30.0</td>
@@ -2805,41 +2805,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.087515</td>
-      <td>-0.189336</td>
-      <td>-0.246109</td>
-      <td>0.051883</td>
+      <td>-0.073395</td>
+      <td>0.179112</td>
+      <td>-0.234079</td>
+      <td>0.024207</td>
       <td>0.0</td>
-      <td>0.201069</td>
-      <td>0.112070</td>
-      <td>0.031427</td>
-      <td>0.880804</td>
-      <td>-0.610555</td>
-      <td>0.117354</td>
-      <td>0.099268</td>
+      <td>0.201068</td>
+      <td>0.112069</td>
+      <td>0.031426</td>
+      <td>0.880812</td>
+      <td>-0.610549</td>
+      <td>0.117355</td>
+      <td>0.099273</td>
       <td>-0.098669</td>
-      <td>0.092755</td>
-      <td>-0.056686</td>
-      <td>0.054348</td>
-      <td>-0.050837</td>
-      <td>-0.090569</td>
-      <td>0.032300</td>
-      <td>-0.102005</td>
-      <td>-0.034508</td>
-      <td>-0.037666</td>
-      <td>-0.037283</td>
-      <td>-0.034325</td>
-      <td>-0.078114</td>
-      <td>0.057403</td>
-      <td>0.038997</td>
-      <td>-0.041348</td>
-      <td>0.025214</td>
-      <td>0.003220</td>
-      <td>0.049443</td>
-      <td>0.070825</td>
-      <td>-0.020859</td>
-      <td>-0.021605</td>
-      <td>0.066777</td>
+      <td>0.092762</td>
+      <td>-0.056668</td>
+      <td>0.054338</td>
+      <td>-0.050835</td>
+      <td>-0.090563</td>
+      <td>0.032293</td>
+      <td>-0.102037</td>
+      <td>-0.034513</td>
+      <td>-0.037630</td>
+      <td>-0.037389</td>
+      <td>-0.034267</td>
+      <td>-0.078147</td>
+      <td>0.057032</td>
+      <td>0.039020</td>
+      <td>-0.041513</td>
+      <td>0.025864</td>
+      <td>0.004167</td>
+      <td>0.049979</td>
+      <td>0.071080</td>
+      <td>-0.020850</td>
+      <td>-0.021579</td>
+      <td>-0.066295</td>
       <td>2006.0</td>
       <td>9.0</td>
       <td>5.0</td>
@@ -2889,41 +2889,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.008058</td>
-      <td>-0.049645</td>
-      <td>0.035818</td>
-      <td>-0.062060</td>
+      <td>-0.000062</td>
+      <td>0.050844</td>
+      <td>0.048588</td>
+      <td>-0.095090</td>
       <td>0.0</td>
       <td>0.033906</td>
-      <td>0.010537</td>
-      <td>0.029032</td>
-      <td>0.137319</td>
-      <td>0.229573</td>
+      <td>0.010536</td>
+      <td>0.029033</td>
+      <td>0.137317</td>
+      <td>0.229575</td>
       <td>-0.019879</td>
-      <td>-0.002931</td>
-      <td>-0.060315</td>
-      <td>-0.014830</td>
-      <td>0.025121</td>
-      <td>0.019310</td>
-      <td>-0.073229</td>
-      <td>-0.002616</td>
-      <td>0.095805</td>
-      <td>-0.129285</td>
-      <td>-0.009115</td>
-      <td>-0.018029</td>
-      <td>0.241693</td>
-      <td>-0.029553</td>
-      <td>0.018105</td>
-      <td>-0.028123</td>
-      <td>-0.051305</td>
-      <td>-0.111735</td>
-      <td>-0.009835</td>
-      <td>0.004518</td>
-      <td>0.033936</td>
-      <td>0.033881</td>
-      <td>-0.058402</td>
-      <td>-0.050182</td>
-      <td>-0.018530</td>
+      <td>-0.002935</td>
+      <td>-0.060319</td>
+      <td>-0.014834</td>
+      <td>0.025115</td>
+      <td>0.019305</td>
+      <td>-0.073239</td>
+      <td>-0.002625</td>
+      <td>0.095800</td>
+      <td>-0.129270</td>
+      <td>-0.009118</td>
+      <td>-0.018011</td>
+      <td>0.241789</td>
+      <td>-0.029518</td>
+      <td>0.018045</td>
+      <td>-0.027955</td>
+      <td>-0.051063</td>
+      <td>-0.112166</td>
+      <td>-0.010434</td>
+      <td>0.004364</td>
+      <td>0.033235</td>
+      <td>0.033842</td>
+      <td>-0.059559</td>
+      <td>-0.052622</td>
+      <td>0.024223</td>
       <td>2012.0</td>
       <td>1.0</td>
       <td>30.0</td>
@@ -5387,8 +5387,8 @@ that we can fit, test or cross-validate and that works well on tabular data.</p>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;mean fit time: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s1">&#39;fit_time&#39;</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> seconds&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.914; std: 0.014
-mean fit time: 1.950 seconds
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.911; std: 0.018
+mean fit time: 1.835 seconds
 </pre></div>
 </div>
 </section>
@@ -5437,7 +5437,7 @@ learner is built on top of decision trees, which is the case for the <a class="r
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.911; std: 0.014
-mean fit time: 1.030 seconds
+mean fit time: 0.957 seconds
 </pre></div>
 </div>
 <p>We can see that this new pipeline achieves a similar score but is fitted much faster.
@@ -6633,7 +6633,7 @@ pipeline, which we built using the <a class="reference internal" href="../refere
 <p>We saw that by default, it works well on a heterogeneous dataset.</p>
 <p>To better understand our dataset, and without much effort, we were also able
 to plot the feature importances.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 42.595 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 39.926 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-01-encodings-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/01_encodings.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
