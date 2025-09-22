@@ -619,6 +619,9 @@ DataOps now only recurse into the builtin collections to evaluate their items
 (not into their subclasses). If you need the items evaluated (ie if they
 contain DataOps or Choices), store them in one of the builtin collections.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1612">#1612</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.report" title="skrub.SkrubLearner.report"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.report()</span></code></a> with <code class="docutils literal notranslate"><span class="pre">mode=&quot;fit&quot;</span></code> used to display the dataops
+themselves, rather than their outputs, in the report. This has been fixed in
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1623">#1623</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>Fixed a bug that happened when <code class="docutils literal notranslate"><span class="pre">get_feature_names_out</span></code> was called on instances
 of the <a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1622">#1622</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 </ul>
