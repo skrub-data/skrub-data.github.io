@@ -591,6 +591,12 @@ removed in the next release of skrub.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1546">#1546</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a>.</p></li>
 <li><p>Improved error messages when a DataOp is being sent to dispatched functions.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1607">#1607</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p>The accepted values for the parameter <code class="docutils literal notranslate"><span class="pre">how</span></code> of <a class="reference internal" href="reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.apply()</span></code></a> have
+changed. The new values are <code class="docutils literal notranslate"><span class="pre">&quot;auto&quot;</span></code> (unchanged), <code class="docutils literal notranslate"><span class="pre">&quot;cols&quot;</span></code> to wrap the
+transformer in <a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>, <code class="docutils literal notranslate"><span class="pre">&quot;frame&quot;</span></code> to wrap the transformer in
+<a class="reference internal" href="reference/generated/skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a>, or <code class="docutils literal notranslate"><span class="pre">&quot;no_wrap&quot;</span></code> for no wrapping. The old values are
+deprecated and will result in an error in a future release.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1628">#1628</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 </ul>
 </section>
 <section id="bugfixes">

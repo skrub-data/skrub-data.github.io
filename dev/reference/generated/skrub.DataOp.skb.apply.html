@@ -735,7 +735,7 @@
 <h1>skrub.DataOp.skb.apply<a class="headerlink" href="#skrub-dataop-skb-apply" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.apply">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">all()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">how</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_reject</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unsupervised</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/d295332/skrub/_data_ops/_skrub_namespace.py#L115"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.apply" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">all()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">how</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_reject</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unsupervised</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/d745548/skrub/_data_ops/_skrub_namespace.py#L115"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.apply" title="Link to this definition">#</a></dt>
 <dd><p>Apply a scikit-learn estimator to a dataframe or numpy array.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -750,12 +750,27 @@
 _not_ be applied. The columns that are matched by <code class="docutils literal notranslate"><span class="pre">cols</span></code> AND not
 matched by <code class="docutils literal notranslate"><span class="pre">exclude_cols</span></code> are transformed.</p>
 </dd>
-<dt><strong>how</strong><span class="classifier">“auto”, “columnwise”, “subframe” or “full_frame”, optional</span></dt><dd><p>The mode in which it is applied. In the vast majority of cases the
-default “auto” is appropriate. “columnwise” means a separate clone
-of the transformer is applied to each column. “subframe” means it
-is applied to a subset of the columns, passed as a single
-dataframe. “full_frame” means the whole input dataframe is passed
-directly to the provided <code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p>
+<dt><strong>how</strong><span class="classifier">“auto”, “cols”, “frame” or “no_wrap”, optional</span></dt><dd><p>How the estimator is applied. In most cases the default “auto”
+is appropriate.
+- “cols” means <cite>estimator</cite> is wrapped in a <a class="reference internal" href="skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></p>
+<blockquote>
+<div><p>transformer, which fits a separate clone of <cite>estimator</cite> each
+column in <cite>cols</cite>. <cite>estimator</cite> must be a transformer (have a
+<code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> method).</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>“frame” means <cite>estimator</cite> is wrapped in a <a class="reference internal" href="skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a>
+transformer, which fits a single clone of <cite>estimator</cite> to the
+selected part of the input dataframe. <cite>estimator</cite> must be a
+transformer.</p></li>
+<li><p>“no_wrap” means no wrapping, <cite>estimator</cite> is applied directly to
+the unmodified input.</p></li>
+<li><p>“auto” chooses the wrapping depending on the input and estimator.
+If the input is not a dataframe or the estimator is not a
+transformer, the “no_wrap” strategy is chosen. Otherwise if the
+estimator has a <code class="docutils literal notranslate"><span class="pre">__single_column_transformer__</span></code> attribute,
+“cols” is chosen. Otherwise “frame” is chosen.</p></li>
+</ul>
 </dd>
 <dt><strong>allow_reject</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, optional</span></dt><dd><p>Whether the transformer can refuse to transform columns for which
 it does not apply, in which case they are passed through unchanged.
@@ -789,6 +804,10 @@ predictor.</p>
 <p class="admonition-title">See also</p>
 <dl class="simple">
 <dt><a class="reference internal" href="skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.DataOp.skb.make_learner</span></code></a></dt><dd><p>Get a skrub learner for this DataOp.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.ApplyToCols</span></code></a></dt><dd><p>Transformer that applies a given transformer separately to each selected column.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.ApplyToFrame</span></code></a></dt><dd><p>Transformer that applies a given transformer to part of a dataframe.</p>
 </dd>
 </dl>
 </div>
