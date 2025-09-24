@@ -742,7 +742,7 @@ which we used <a class="reference internal" href="../../../reference/generated/s
 <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code></a>: the first few steps of the
 pipeline are executed until we have a value for <code class="docutils literal notranslate"><span class="pre">X</span></code> and for <code class="docutils literal notranslate"><span class="pre">y</span></code>.
 Then, those
-dataframes are split using the provided splitter function (by default
+dataframes are split using the provided split function (by default
 scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="(in scikit-learn v1.7)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.train_test_split()</span></code></a>).</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
@@ -774,7 +774,7 @@ evaluated, using this data, to fit the rest of the pipeline.</p>
 <span class="go">0.440999149220359</span>
 </pre></div>
 </div>
-<p>It is possible to define a custom splitter function to use instead of
+<p>It is possible to define a custom split function to use instead of
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="(in scikit-learn v1.7)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.train_test_split()</span></code></a>.</p>
 </section>
 
