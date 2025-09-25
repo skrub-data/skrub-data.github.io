@@ -16,7 +16,7 @@ Building a pipeline
 
 
 
-See :ref:`End-to-End pipeline <userguide_tablevectorizer>` for further details. For more flexibility and control to build pipelines, see the :ref:`skrub DataOps <userguide_data_ops>`.
+See :ref:`End-to-End pipeline <user_guide_building_pipeline_index>` for further details. For more flexibility and control to build pipelines, see the :ref:`skrub DataOps <user_guide_data_ops_index>`.
 
 
 
@@ -30,7 +30,6 @@ See :ref:`End-to-End pipeline <userguide_tablevectorizer>` for further details. 
 
 
   tabular_pipeline
-  tabular_learner
   TableVectorizer
   SelectCols
   DropCols

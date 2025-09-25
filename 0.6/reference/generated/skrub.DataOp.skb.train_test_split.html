@@ -52,7 +52,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=2bd037f0"></script>
+    <script src="../../_static/documentation_options.js?v=1c28bd9a"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -62,11 +62,12 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
     <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
+    <link rel="canonical" href="https://skrub-data.org/stable/reference/generated/skrub.DataOp.skb.train_test_split.html" />
     <link rel="icon" href="../../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -75,7 +76,7 @@
     <link rel="prev" title="skrub.DataOp.skb.subsample" href="skrub.DataOp.skb.subsample.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.6.1" />
+  <meta name="docsearch:version" content="0.6.2" />
   </head>
   
   
@@ -524,7 +525,6 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../pipeline.html">pipeline</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="skrub.tabular_pipeline.html">tabular_pipeline</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.tabular_learner.html">tabular_learner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
@@ -735,7 +735,7 @@
 <h1>skrub.DataOp.skb.train_test_split<a class="headerlink" href="#skrub-dataop-skb-train-test-split" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.train_test_split">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">train_test_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">splitter=&lt;function</span> <span class="pre">train_test_split&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**splitter_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/38caedc/skrub/_data_ops/_skrub_namespace.py#L1464"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.train_test_split" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">train_test_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_func=&lt;function</span> <span class="pre">train_test_split&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**split_func_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4b3f947/skrub/_data_ops/_skrub_namespace.py#L1494"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.train_test_split" title="Link to this definition">#</a></dt>
 <dd><p>Split an environment into a training an testing environments.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -748,10 +748,10 @@ DataOp.</p>
 <a class="reference internal" href="skrub.DataOp.skb.subsample.html#skrub.DataOp.skb.subsample" title="skrub.DataOp.skb.subsample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.subsample()</span></code></a>), use a subsample of the data. By
 default subsampling is not applied and all the data is used.</p>
 </dd>
-<dt><strong>splitter</strong><span class="classifier">function, optional</span></dt><dd><p>The function used to split X and y once they have been computed. By
+<dt><strong>split_func</strong><span class="classifier">function, optional</span></dt><dd><p>The function used to split X and y once they have been computed. By
 default, <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="(in scikit-learn v1.7)"><code class="xref py py-func docutils literal notranslate"><span class="pre">train_test_split()</span></code></a> is used.</p>
 </dd>
-<dt><strong>splitter_kwargs</strong></dt><dd><p>Additional named arguments to pass to the splitter.</p>
+<dt><strong>split_func_kwargs</strong></dt><dd><p>Additional named arguments to pass to the splitting function.</p>
 </dd>
 </dl>
 </dd>

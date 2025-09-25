@@ -13,7 +13,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This guide showcases the features of skrub, an open-source package that aims at bridging the gap between tabular data sources and machine-learning models.">
+    <div class="sphx-glr-thumbcontainer" tooltip="This guide showcases some of the features of skrub. Much of skrub revolves around simplifying many of the tasks that are involved in pre-processing raw data into a format that shallow or classic machine-learning models can understand, that is, numerical data.">
 
 .. only:: html
 
@@ -98,7 +98,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Real world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspelling break data analysis steps that require exact matching, such as a GROUP BY operation.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation.">
 
 .. only:: html
 
@@ -115,31 +115,14 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="When the data comprises common entities (cities, companies or famous people), bringing new information assembled from external sources may be the key to improving the analysis.">
-
-.. only:: html
-
-  .. image:: /auto_examples/images/thumb/sphx_glr_06_ken_embeddings_thumb.png
-    :alt:
-
-  :ref:`sphx_glr_auto_examples_06_ken_embeddings.py`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Wikipedia embeddings to enrich the data</div>
-    </div>
-
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="Joining tables may be difficult if one entry on one side does not have an exact match on the other side.">
 
 .. only:: html
 
-  .. image:: /auto_examples/images/thumb/sphx_glr_07_multiple_key_join_thumb.png
+  .. image:: /auto_examples/images/thumb/sphx_glr_06_multiple_key_join_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_07_multiple_key_join.py`
+  :ref:`sphx_glr_auto_examples_06_multiple_key_join.py`
 
 .. raw:: html
 
@@ -153,10 +136,10 @@ Examples
 
 .. only:: html
 
-  .. image:: /auto_examples/images/thumb/sphx_glr_08_join_aggregation_thumb.png
+  .. image:: /auto_examples/images/thumb/sphx_glr_07_join_aggregation_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_08_join_aggregation.py`
+  :ref:`sphx_glr_auto_examples_07_join_aggregation.py`
 
 .. raw:: html
 
@@ -170,10 +153,10 @@ Examples
 
 .. only:: html
 
-  .. image:: /auto_examples/images/thumb/sphx_glr_09_interpolation_join_thumb.png
+  .. image:: /auto_examples/images/thumb/sphx_glr_08_interpolation_join_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_09_interpolation_join.py`
+  :ref:`sphx_glr_auto_examples_08_interpolation_join.py`
 
 .. raw:: html
 
@@ -187,10 +170,10 @@ Examples
 
 .. only:: html
 
-  .. image:: /auto_examples/images/thumb/sphx_glr_10_apply_on_cols_thumb.svg
+  .. image:: /auto_examples/images/thumb/sphx_glr_09_apply_to_cols_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_10_apply_on_cols.py`
+  :ref:`sphx_glr_auto_examples_09_apply_to_cols.py`
 
 .. raw:: html
 
@@ -204,10 +187,10 @@ Examples
 
 .. only:: html
 
-  .. image:: /auto_examples/images/thumb/sphx_glr_11_squashing_scaler_thumb.svg
+  .. image:: /auto_examples/images/thumb/sphx_glr_10_squashing_scaler_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_11_squashing_scaler.py`
+  :ref:`sphx_glr_auto_examples_10_squashing_scaler.py`
 
 .. raw:: html
 
@@ -231,12 +214,11 @@ Examples
    /auto_examples/03_datetime_encoder
    /auto_examples/04_fuzzy_joining
    /auto_examples/05_deduplication
-   /auto_examples/06_ken_embeddings
-   /auto_examples/07_multiple_key_join
-   /auto_examples/08_join_aggregation
-   /auto_examples/09_interpolation_join
-   /auto_examples/10_apply_on_cols
-   /auto_examples/11_squashing_scaler
+   /auto_examples/06_multiple_key_join
+   /auto_examples/07_join_aggregation
+   /auto_examples/08_interpolation_join
+   /auto_examples/09_apply_to_cols
+   /auto_examples/10_squashing_scaler
 
 
 Skrub DataOps
@@ -252,14 +234,14 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how we can use Skrub&#x27;s userguide_data_ops to build a machine learning pipeline that records all the operations involved in pre-processing data and training a model. We will also show how to save the model, load it back, and then use it to make predictions on new, unseen data.">
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how we can use Skrub&#x27;s user_guide_data_ops_index to build a machine learning pipeline that records all the operations involved in pre-processing data and training a model. We will also show how to save the model, load it back, and then use it to make predictions on new, unseen data.">
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_10_data_ops_intro_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_11_data_ops_intro_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_10_data_ops_intro.py`
+  :ref:`sphx_glr_auto_examples_data_ops_11_data_ops_intro.py`
 
 .. raw:: html
 
@@ -273,10 +255,10 @@ Skrub DataOps
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_11_multiple_tables_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_12_multiple_tables_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_11_multiple_tables.py`
+  :ref:`sphx_glr_auto_examples_data_ops_12_multiple_tables.py`
 
 .. raw:: html
 
@@ -286,14 +268,14 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not).">
+    <div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains values or choices which may influence its prediction performance, such as hyperparameters (e.g., the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g., RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g., should we join a table to bring additional information or not).">
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_12_choices_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_13_choices_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_12_choices.py`
+  :ref:`sphx_glr_auto_examples_data_ops_13_choices.py`
 
 .. raw:: html
 
@@ -303,14 +285,14 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use DataOp.skb.subsample to speed-up interactive construction of a skrub DataOps plan by computing previews on a subsampled version of the original data.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use DataOp.skb.subsample to speed up interactive construction of a skrub DataOps plan by computing previews on a subsampled version of the original data.">
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_13_subsampling_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_14_subsampling_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_13_subsampling.py`
+  :ref:`sphx_glr_auto_examples_data_ops_14_subsampling.py`
 
 .. raw:: html
 
@@ -320,18 +302,18 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Usecase: developing locally, and avoiding to repeat code in production">
+    <div class="sphx-glr-thumbcontainer" tooltip="Use case: developing locally and deploying to production">
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_14_use_case_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_15_use_case_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_14_use_case.py`
+  :ref:`sphx_glr_auto_examples_data_ops_15_use_case.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Usecase: developing locally, and avoiding to repeat code in production</div>
+      <div class="sphx-glr-thumbnail-title">Use case: developing locally and deploying to production</div>
     </div>
 
 

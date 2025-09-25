@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.datasets.fetch_credit_fraud.html" />
 <meta property="og:site_name" content="skrub" />
 <meta property="og:description" content="Gallery examples: AggJoiner on a credit fraud dataset Multiples tables: building machine learning pipelines with DataOps" />
-<meta property="og:image" content="https://skrub-data.github.io/stable/_images/sphx_glr_08_join_aggregation_thumb.png" />
+<meta property="og:image" content="https://skrub-data.github.io/stable/_images/sphx_glr_07_join_aggregation_thumb.png" />
 <meta property="og:image:alt" content="" />
 <meta name="description" content="Gallery examples: AggJoiner on a credit fraud dataset Multiples tables: building machine learning pipelines with DataOps" />
 
@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=2bd037f0"></script>
+    <script src="../../_static/documentation_options.js?v=1c28bd9a"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,11 +64,12 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
     <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
+    <link rel="canonical" href="https://skrub-data.org/stable/reference/generated/skrub.datasets.fetch_credit_fraud.html" />
     <link rel="icon" href="../../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -77,7 +78,7 @@
     <link rel="prev" title="fetch_country_happiness" href="skrub.datasets.fetch_country_happiness.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.6.1" />
+  <meta name="docsearch:version" content="0.6.2" />
   </head>
   
   
@@ -526,7 +527,6 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../pipeline.html">pipeline</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="skrub.tabular_pipeline.html">tabular_pipeline</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.tabular_learner.html">tabular_learner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
@@ -737,7 +737,7 @@
 <h1>fetch_credit_fraud<a class="headerlink" href="#fetch-credit-fraud" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_credit_fraud">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_credit_fraud</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/38caedc/skrub/datasets/_fetching.py#L202"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_credit_fraud" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_credit_fraud</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4b3f947/skrub/datasets/_fetching.py#L216"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_credit_fraud" title="Link to this definition">#</a></dt>
 <dd><p>Fetch the credit fraud dataset (classification) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <p>This is an imbalanced binary classification use-case. This dataset consists of
 two tables:</p>
@@ -746,7 +746,8 @@ two tables:</p>
 <li><p>products</p></li>
 </ul>
 <p>Baskets contain at least one product each, so aggregation then joining operations
-are required to build a design matrix.</p>
+are required to build a design matrix.
+Size on disk: 16MB.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
@@ -757,13 +758,19 @@ are required to build a design matrix.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
+<dd class="field-even"><dl>
 <dt><strong>bunch</strong><span class="classifier">sklearn.utils.Bunch</span></dt><dd><p>A dictionary-like object with the following keys:</p>
 <ul class="simple">
-<li><p>baskets : pd.DataFrame, table containing baskets ID and target</p></li>
-<li><p>product : pd.DataFrame, table containing features about products contained in
-baskets</p></li>
-<li><p>metadata : a dictionary containing the name, description, source and target</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">baskets</span></code> : pd.DataFrame, table containing baskets ID and target.</p></li>
+</ul>
+<p>Shape: (92790, 2)
+- <code class="docutils literal notranslate"><span class="pre">product</span></code> : pd.DataFrame, table containing features about products</p>
+<blockquote>
+<div><p>contained in baskets. Shape: (163357, 7)</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name, description, source and
+target</p></li>
 </ul>
 </dd>
 </dl>
@@ -773,11 +780,11 @@ baskets</p></li>
 
 <section id="gallery-examples">
 <h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
-<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Many problems involve tables whose entities have a one-to-many relationship. To simplify aggregate-then-join operations for machine learning, we can include the |AggJoiner| in our pipeline."><img alt="" src="../../_images/sphx_glr_08_join_aggregation_thumb.png" />
-<p><a class="reference internal" href="../../auto_examples/08_join_aggregation.html#sphx-glr-auto-examples-08-join-aggregation-py"><span class="std std-ref">AggJoiner on a credit fraud dataset</span></a></p>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Many problems involve tables whose entities have a one-to-many relationship. To simplify aggregate-then-join operations for machine learning, we can include the |AggJoiner| in our pipeline."><img alt="" src="../../_images/sphx_glr_07_join_aggregation_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/07_join_aggregation.html#sphx-glr-auto-examples-07-join-aggregation-py"><span class="std std-ref">AggJoiner on a credit fraud dataset</span></a></p>
   <div class="sphx-glr-thumbnail-title">AggJoiner on a credit fraud dataset</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how to build a DataOps plan to handle pre-processing, validation and hyperparameter tuning of a dataset with multiple tables."><img alt="" src="../../_images/sphx_glr_11_multiple_tables_thumb.svg" />
-<p><a class="reference internal" href="../../auto_examples/data_ops/11_multiple_tables.html#sphx-glr-auto-examples-data-ops-11-multiple-tables-py"><span class="std std-ref">Multiples tables: building machine learning pipelines with DataOps</span></a></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how to build a DataOps plan to handle pre-processing, validation and hyperparameter tuning of a dataset with multiple tables."><img alt="" src="../../_images/sphx_glr_12_multiple_tables_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/data_ops/12_multiple_tables.html#sphx-glr-auto-examples-data-ops-12-multiple-tables-py"><span class="std std-ref">Multiples tables: building machine learning pipelines with DataOps</span></a></p>
   <div class="sphx-glr-thumbnail-title">Multiples tables: building machine learning pipelines with DataOps</div>
 </div></div></section>
 </section>

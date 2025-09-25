@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="_static/documentation_options.js?v=2bd037f0"></script>
+    <script src="_static/documentation_options.js?v=1c28bd9a"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,20 +64,21 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
     <script src="_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
+    <link rel="canonical" href="https://skrub-data.org/stable/CONTRIBUTING.html" />
     <link rel="icon" href="_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Release process" href="RELEASE_PROCESS.html" />
+    <link rel="next" title="How to write an example for the gallery" href="tutorial_example.html" />
     <link rel="prev" title="About" href="about.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.6.1" />
+  <meta name="docsearch:version" content="0.6.2" />
   </head>
   
   
@@ -583,7 +584,7 @@
                 <article class="bd-article">
                   
   <section id="contributing-to-skrub">
-<h1>Contributing to skrub<a class="headerlink" href="#contributing-to-skrub" title="Link to this heading">#</a></h1>
+<span id="contributing"></span><h1>Contributing to skrub<a class="headerlink" href="#contributing-to-skrub" title="Link to this heading">#</a></h1>
 <p>First off, thanks for taking the time to contribute!</p>
 <p>Below are some guidelines to help you get started.</p>
 <section id="have-a-question">
@@ -642,6 +643,13 @@ closed without a fix.</p></li>
 <li><p>A <strong>code snippet</strong> that reproduces the issue, if applicable.</p></li>
 <li><p><strong>Version information</strong> for Python, skrub, and relevant dependencies (e.g., scikit-learn, numpy, pandas).</p></li>
 </ul>
+</section>
+<section id="how-to-write-an-example">
+<h4>How to write an example?<a class="headerlink" href="#how-to-write-an-example" title="Link to this heading">#</a></h4>
+<p>We highly encourage contributors to add examples to the documentation
+when they add new features, or if they have a use case that is not yet covered
+in the documentation.</p>
+<p>You can find a guide on how to write examples in the <a class="reference internal" href="tutorial_example.html#tutorial-write-example"><span class="std std-ref">example guide</span></a>.</p>
 </section>
 </section>
 <section id="suggesting-enhancements">
@@ -876,7 +884,7 @@ directly modified by the pull request are executed.</p>
 <p>CI is testing all possible configurations supported by skrub, so tests may fail
 with configurations different from what you are developing with. If this is the
 case,  it is possible to run the tests in the environment that is failing by
-using pixi. For example if the env is <code class="docutils literal notranslate"><span class="pre">ci-py309-min-optional-deps</span></code>, it is
+using <a class="reference external" href="https://pixi.sh/latest/">pixi</a>. For example if the env is <code class="docutils literal notranslate"><span class="pre">ci-py309-min-optional-deps</span></code>, it is
 possible to replicate it using the following command:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pixi<span class="w"> </span>run<span class="w"> </span>-e<span class="w"> </span>ci-py309-min-optional-deps<span class="w">  </span>pytest<span class="w"> </span>skrub/tests/path/to/test
 </pre></div>
@@ -923,13 +931,35 @@ specific examples, you can use the following command with a regex pattern:</p>
 </div>
 <p>This is especially helpful when you’re only modifying or checking a few examples.</p>
 <p>It is also possible to build the documentation without running the examples
-by using the following command:</p>
+without running the examples by using the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>html-noplot
 </pre></div>
 </div>
-<p>This command generates the documentation without re-executing the examples, which
-can take a long time. This is useful if you are only modifying the
-documentation itself, such as fixing typos or improving explanations.</p>
+<p>This command generates the documentation without re-executing the examples, which can
+take a long time. This is useful if you are only modifying the documentation itself, such as fixing
+typos or improving explanations.</p>
+<p><strong>Using pixi</strong></p>
+<p>You can download and install pixi from <a class="reference external" href="https://pixi.sh/latest/">here</a>.</p>
+<p>From the repository root:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build documentation without running examples (faster)</span>
+pixi<span class="w"> </span>run<span class="w"> </span>build-doc-quick
+
+<span class="c1"># Build the full documentation, including examples</span>
+pixi<span class="w"> </span>run<span class="w"> </span>build-doc
+
+<span class="c1"># Clean previously built documentation</span>
+pixi<span class="w"> </span>run<span class="w"> </span>clean-doc
+</pre></div>
+</div>
+<p>The documentation will be generated in the <code class="docutils literal notranslate"><span class="pre">doc/_build/html/</span></code> directory.
+You can view it by opening the local <code class="docutils literal notranslate"><span class="pre">doc/_build/html/index.html</span></code> file.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>On Intel-based macOS systems (<code class="docutils literal notranslate"><span class="pre">osx-64</span></code>), some pixi environments may not
+resolve correctly due to missing upstream package builds (e.g., for PyTorch).
+If you encounter issues, you can always fall back to using <code class="docutils literal notranslate"><span class="pre">make</span></code> as
+described above.</p>
+</div>
 </section>
 <section id="editing-the-api-reference-documentation">
 <h2>Editing the API reference documentation<a class="headerlink" href="#editing-the-api-reference-documentation" title="Link to this heading">#</a></h2>
@@ -965,11 +995,11 @@ added, as detailed just above.</p>
       </div>
     </a>
     <a class="right-next"
-       href="RELEASE_PROCESS.html"
+       href="tutorial_example.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Release process</p>
+        <p class="prev-next-title">How to write an example for the gallery</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -997,6 +1027,7 @@ added, as detailed just above.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-can-i-contribute">How can I contribute?</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reporting-bugs">Reporting bugs</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-submit-a-bug-report">How to submit a bug report?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-write-an-example">How to write an example?</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#suggesting-enhancements">Suggesting enhancements</a><ul class="nav section-nav flex-column">

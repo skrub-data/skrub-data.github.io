@@ -52,7 +52,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=2bd037f0"></script>
+    <script src="../../_static/documentation_options.js?v=1c28bd9a"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -62,11 +62,12 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
     <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
+    <link rel="canonical" href="https://skrub-data.org/stable/reference/generated/skrub.datasets.fetch_traffic_violations.html" />
     <link rel="icon" href="../../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -75,7 +76,7 @@
     <link rel="prev" title="fetch_toxicity" href="skrub.datasets.fetch_toxicity.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.6.1" />
+  <meta name="docsearch:version" content="0.6.2" />
   </head>
   
   
@@ -524,7 +525,6 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../pipeline.html">pipeline</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="skrub.tabular_pipeline.html">tabular_pipeline</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.tabular_learner.html">tabular_learner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
@@ -735,13 +735,13 @@
 <h1>fetch_traffic_violations<a class="headerlink" href="#fetch-traffic-violations" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_traffic_violations">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_traffic_violations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/38caedc/skrub/datasets/_fetching.py#L148"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_traffic_violations" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_traffic_violations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4b3f947/skrub/datasets/_fetching.py#L158"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_traffic_violations" title="Link to this definition">#</a></dt>
 <dd><p>Fetches the traffic violations dataset (classification), available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <dl class="simple">
 <dt>Description of the dataset:</dt><dd><p>This dataset contains traffic violation information from all electronic
 traffic violations issued in the Montgomery County, MD. Any information
 that can be used to uniquely identify the vehicle, the vehicle owner or
-the officer issuing the violation will not be published.</p>
+the officer issuing the violation will not be published. Size on disk: 736MB.</p>
 </dd>
 </dl>
 <dl class="field-list simple">
@@ -755,10 +755,12 @@ the officer issuing the violation will not be published.</p>
 <dd class="field-even"><dl class="simple">
 <dt><strong>bunch</strong><span class="classifier">sklearn.utils.Bunch</span></dt><dd><p>A dictionary-like object with the following keys:</p>
 <ul class="simple">
-<li><p>traffic_violations : pd.DataFrame, the dataframe</p></li>
-<li><p>X : pd.DataFrame, features, i.e. the dataframe without the target labels</p></li>
-<li><p>y : pd.DataFrame, target labels</p></li>
-<li><p>metadata : a dictionary containing the name, description, source and target</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">traffic_violations</span></code> : pd.DataFrame, the dataframe. Shape: (1578154, 43)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">X</span></code> : pd.DataFrame, features, i.e. the dataframe without the target
+labels. Shape: (1578154, 42)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">y</span></code> : pd.DataFrame, target labels. Shape: (1578154, 1)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name, description, source and
+target</p></li>
 </ul>
 </dd>
 </dl>

@@ -52,7 +52,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=2bd037f0"></script>
+    <script src="../../_static/documentation_options.js?v=1c28bd9a"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -62,11 +62,12 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
     <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
+    <link rel="canonical" href="https://skrub-data.org/stable/reference/generated/skrub.DataOp.skb.subsample.html" />
     <link rel="icon" href="../../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -75,7 +76,7 @@
     <link rel="prev" title="skrub.DataOp.skb.set_name" href="skrub.DataOp.skb.set_name.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.6.1" />
+  <meta name="docsearch:version" content="0.6.2" />
   </head>
   
   
@@ -524,7 +525,6 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../pipeline.html">pipeline</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="skrub.tabular_pipeline.html">tabular_pipeline</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.tabular_learner.html">tabular_learner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
@@ -735,7 +735,7 @@
 <h1>skrub.DataOp.skb.subsample<a class="headerlink" href="#skrub-dataop-skb-subsample" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.subsample">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">subsample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">how</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'head'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/38caedc/skrub/_data_ops/_skrub_namespace.py#L668"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.subsample" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">subsample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">how</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'head'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4b3f947/skrub/_data_ops/_skrub_namespace.py#L690"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.subsample" title="Link to this definition">#</a></dt>
 <dd><p>Configure subsampling of a dataframe or numpy array.</p>
 <p>Enables faster development by computing the previews on a subsample of
 the available data. Outside of previews, no subsampling takes place by
@@ -822,22 +822,22 @@ constant when sampling across different variables.</p>
 <span class="go">&lt;Apply Ridge&gt;</span>
 <span class="go">Result (on a subsample):</span>
 <span class="go">――――――――――――――――――――――――</span>
-<span class="go">        target</span>
-<span class="go">0   142.866906</span>
-<span class="go">1   130.980765</span>
-<span class="go">2   138.555388</span>
-<span class="go">3   149.703363</span>
-<span class="go">4   136.015214</span>
-<span class="go">5   139.773213</span>
-<span class="go">6   134.110415</span>
-<span class="go">7   129.224783</span>
-<span class="go">8   140.161363</span>
-<span class="go">9   155.272033</span>
-<span class="go">10  139.552110</span>
-<span class="go">11  130.318783</span>
-<span class="go">12  135.956591</span>
-<span class="go">13  142.998060</span>
-<span class="go">14  132.511013</span>
+<span class="go">0     142.866906</span>
+<span class="go">1     130.980765</span>
+<span class="go">2     138.555388</span>
+<span class="go">3     149.703363</span>
+<span class="go">4     136.015214</span>
+<span class="go">5     139.773213</span>
+<span class="go">6     134.110415</span>
+<span class="go">7     129.224783</span>
+<span class="go">8     140.161363</span>
+<span class="go">9     155.272033</span>
+<span class="go">10    139.552110</span>
+<span class="go">11    130.318783</span>
+<span class="go">12    135.956591</span>
+<span class="go">13    142.998060</span>
+<span class="go">14    132.511013</span>
+<span class="go">Name: target, dtype: float64</span>
 </pre></div>
 </div>
 <p>By default, model fitting and hyperparameter search are done on the
@@ -890,7 +890,7 @@ full data.</p>
 <span class="go">(442,)</span>
 </pre></div>
 </div>
-<p>Read more about subsampling in the <a class="reference internal" href="../../userguide_data_ops_ml_pipeline.html#user-guide-subsampling"><span class="std std-ref">User Guide</span></a>.</p>
+<p>Read more about subsampling in the <a class="reference internal" href="../../modules/data_ops/ml_pipeline/subsampling_data.html#user-guide-data-ops-subsampling"><span class="std std-ref">User Guide</span></a>.</p>
 </dd></dl>
 
 </section>

@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.tabular_pipeline.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Hands-On with Column Selection and Transformers Usecase: developing locally, and avoiding to ..." />
+<meta property="og:description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Hands-On with Column Selection and Transformers Use case: developing locally and deploying to..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Hands-On with Column Selection and Transformers Usecase: developing locally, and avoiding to ..." />
+<meta name="description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Hands-On with Column Selection and Transformers Use case: developing locally and deploying to..." />
 
     <title>tabular_pipeline &#8212; skrub</title>
   
@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=2bd037f0"></script>
+    <script src="../../_static/documentation_options.js?v=1c28bd9a"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,20 +64,21 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.6.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
     <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
+    <link rel="canonical" href="https://skrub-data.org/stable/reference/generated/skrub.tabular_pipeline.html" />
     <link rel="icon" href="../../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="tabular_learner" href="skrub.tabular_learner.html" />
+    <link rel="next" title="TableVectorizer" href="skrub.TableVectorizer.html" />
     <link rel="prev" title="Building a pipeline" href="../pipeline.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.6.1" />
+  <meta name="docsearch:version" content="0.6.2" />
   </head>
   
   
@@ -526,7 +527,6 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../pipeline.html">pipeline</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">tabular_pipeline</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.tabular_learner.html">tabular_learner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
@@ -737,7 +737,7 @@
 <h1>tabular_pipeline<a class="headerlink" href="#tabular-pipeline" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.tabular_pipeline">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/38caedc/skrub/_tabular_pipeline.py#L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_pipeline" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4b3f947/skrub/_tabular_pipeline.py#L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_pipeline" title="Link to this definition">#</a></dt>
 <dd><p>Get a simple machine-learning pipeline for tabular data.</p>
 <p>Given either a scikit-learn estimator or one of the special-cased strings
 <code class="docutils literal notranslate"><span class="pre">'regressor'</span></code>, <code class="docutils literal notranslate"><span class="pre">'regression'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classifier'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classification'</span></code>, this
@@ -811,7 +811,7 @@ and <a class="reference external" href="https://scikit-learn.org/stable/modules/
 1.4. Therefore, before this version, a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a> is
 used to impute missing values.</p></li>
 </ul>
-<p>Read more in the <a class="reference internal" href="../../userguide_tablevectorizer.html#userguide-tablevectorizer"><span class="std std-ref">User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../../modules/default_wrangling/tabular_pipeline.html#user-guide-tabular-pipeline"><span class="std std-ref">User Guide</span></a>.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">tabular_pipeline</span>
 </pre></div>
@@ -931,18 +931,18 @@ unnecessary for tree ensembles.</p></li>
 
 <section id="gallery-examples">
 <h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
-<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This guide showcases the features of skrub, an open-source package that aims at bridging the gap between tabular data sources and machine-learning models."><img alt="" src="../../_images/sphx_glr_00_getting_started_thumb.svg" />
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This guide showcases some of the features of skrub. Much of skrub revolves around simplifying many of the tasks that are involved in pre-processing raw data into a format that shallow or classic machine-learning models can understand, that is, numerical data."><img alt="" src="../../_images/sphx_glr_00_getting_started_thumb.svg" />
 <p><a class="reference internal" href="../../auto_examples/00_getting_started.html#sphx-glr-auto-examples-00-getting-started-py"><span class="std std-ref">Getting Started</span></a></p>
   <div class="sphx-glr-thumbnail-title">Getting Started</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset."><img alt="" src="../../_images/sphx_glr_01_encodings_thumb.png" />
 <p><a class="reference internal" href="../../auto_examples/01_encodings.html#sphx-glr-auto-examples-01-encodings-py"><span class="std std-ref">Encoding: from a dataframe to a numerical matrix for machine learning</span></a></p>
   <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="In previous examples, we saw how skrub provides powerful abstractions like TableVectorizer and tabular_pipeline to create pipelines."><img alt="" src="../../_images/sphx_glr_10_apply_on_cols_thumb.svg" />
-<p><a class="reference internal" href="../../auto_examples/10_apply_on_cols.html#sphx-glr-auto-examples-10-apply-on-cols-py"><span class="std std-ref">Hands-On with Column Selection and Transformers</span></a></p>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In previous examples, we saw how skrub provides powerful abstractions like TableVectorizer and tabular_pipeline to create pipelines."><img alt="" src="../../_images/sphx_glr_09_apply_to_cols_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/09_apply_to_cols.html#sphx-glr-auto-examples-09-apply-to-cols-py"><span class="std std-ref">Hands-On with Column Selection and Transformers</span></a></p>
   <div class="sphx-glr-thumbnail-title">Hands-On with Column Selection and Transformers</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Usecase: developing locally, and avoiding to repeat code in production"><img alt="" src="../../_images/sphx_glr_14_use_case_thumb.svg" />
-<p><a class="reference internal" href="../../auto_examples/data_ops/14_use_case.html#sphx-glr-auto-examples-data-ops-14-use-case-py"><span class="std std-ref">Usecase: developing locally, and avoiding to repeat code in production</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Usecase: developing locally, and avoiding to repeat code in production</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Use case: developing locally and deploying to production"><img alt="" src="../../_images/sphx_glr_15_use_case_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/data_ops/15_use_case.html#sphx-glr-auto-examples-data-ops-15-use-case-py"><span class="std std-ref">Use case: developing locally and deploying to production</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Use case: developing locally and deploying to production</div>
 </div></div></section>
 </section>
 
@@ -966,11 +966,11 @@ unnecessary for tree ensembles.</p></li>
       </div>
     </a>
     <a class="right-next"
-       href="skrub.tabular_learner.html"
+       href="skrub.TableVectorizer.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">tabular_learner</p>
+        <p class="prev-next-title">TableVectorizer</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

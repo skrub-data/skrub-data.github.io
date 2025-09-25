@@ -17,14 +17,14 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how we can use Skrub&#x27;s userguide_data_ops to build a machine learning pipeline that records all the operations involved in pre-processing data and training a model. We will also show how to save the model, load it back, and then use it to make predictions on new, unseen data.">
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how we can use Skrub&#x27;s user_guide_data_ops_index to build a machine learning pipeline that records all the operations involved in pre-processing data and training a model. We will also show how to save the model, load it back, and then use it to make predictions on new, unseen data.">
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_10_data_ops_intro_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_11_data_ops_intro_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_10_data_ops_intro.py`
+  :ref:`sphx_glr_auto_examples_data_ops_11_data_ops_intro.py`
 
 .. raw:: html
 
@@ -38,10 +38,10 @@ Skrub DataOps
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_11_multiple_tables_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_12_multiple_tables_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_11_multiple_tables.py`
+  :ref:`sphx_glr_auto_examples_data_ops_12_multiple_tables.py`
 
 .. raw:: html
 
@@ -51,14 +51,14 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains some values or choices which may influence its prediction performance, such as hyperparameters (e.g. the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g. RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g. should we join a table to bring additional information or not).">
+    <div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains values or choices which may influence its prediction performance, such as hyperparameters (e.g., the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g., RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g., should we join a table to bring additional information or not).">
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_12_choices_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_13_choices_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_12_choices.py`
+  :ref:`sphx_glr_auto_examples_data_ops_13_choices.py`
 
 .. raw:: html
 
@@ -68,14 +68,14 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use DataOp.skb.subsample to speed-up interactive construction of a skrub DataOps plan by computing previews on a subsampled version of the original data.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use DataOp.skb.subsample to speed up interactive construction of a skrub DataOps plan by computing previews on a subsampled version of the original data.">
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_13_subsampling_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_14_subsampling_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_13_subsampling.py`
+  :ref:`sphx_glr_auto_examples_data_ops_14_subsampling.py`
 
 .. raw:: html
 
@@ -85,18 +85,18 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Usecase: developing locally, and avoiding to repeat code in production">
+    <div class="sphx-glr-thumbcontainer" tooltip="Use case: developing locally and deploying to production">
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_14_use_case_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_15_use_case_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_14_use_case.py`
+  :ref:`sphx_glr_auto_examples_data_ops_15_use_case.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Usecase: developing locally, and avoiding to repeat code in production</div>
+      <div class="sphx-glr-thumbnail-title">Use case: developing locally and deploying to production</div>
     </div>
 
 
@@ -110,9 +110,9 @@ Skrub DataOps
 .. toctree::
    :hidden:
 
-   /auto_examples/data_ops/10_data_ops_intro
-   /auto_examples/data_ops/11_multiple_tables
-   /auto_examples/data_ops/12_choices
-   /auto_examples/data_ops/13_subsampling
-   /auto_examples/data_ops/14_use_case
+   /auto_examples/data_ops/11_data_ops_intro
+   /auto_examples/data_ops/12_multiple_tables
+   /auto_examples/data_ops/13_choices
+   /auto_examples/data_ops/14_subsampling
+   /auto_examples/data_ops/15_use_case
 
