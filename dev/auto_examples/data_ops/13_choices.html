@@ -637,633 +637,6 @@ value. For example, we can write:</p>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
-<style>#sk-container-id-13 {
-  /* Definition of color scheme common for light and dark mode */
-  --sklearn-color-text: #000;
-  --sklearn-color-text-muted: #666;
-  --sklearn-color-line: gray;
-  /* Definition of color scheme for unfitted estimators */
-  --sklearn-color-unfitted-level-0: #fff5e6;
-  --sklearn-color-unfitted-level-1: #f6e4d2;
-  --sklearn-color-unfitted-level-2: #ffe0b3;
-  --sklearn-color-unfitted-level-3: chocolate;
-  /* Definition of color scheme for fitted estimators */
-  --sklearn-color-fitted-level-0: #f0f8ff;
-  --sklearn-color-fitted-level-1: #d4ebff;
-  --sklearn-color-fitted-level-2: #b3dbfd;
-  --sklearn-color-fitted-level-3: cornflowerblue;
-
-  /* Specific color for light theme */
-  --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
-  --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, white)));
-  --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
-  --sklearn-color-icon: #696969;
-
-  @media (prefers-color-scheme: dark) {
-    /* Redefinition of color scheme for dark theme */
-    --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
-    --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, #111)));
-    --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
-    --sklearn-color-icon: #878787;
-  }
-}
-
-#sk-container-id-13 {
-  color: var(--sklearn-color-text);
-}
-
-#sk-container-id-13 pre {
-  padding: 0;
-}
-
-#sk-container-id-13 input.sk-hidden--visually {
-  border: 0;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-#sk-container-id-13 div.sk-dashed-wrapped {
-  border: 1px dashed var(--sklearn-color-line);
-  margin: 0 0.4em 0.5em 0.4em;
-  box-sizing: border-box;
-  padding-bottom: 0.4em;
-  background-color: var(--sklearn-color-background);
-}
-
-#sk-container-id-13 div.sk-container {
-  /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
-     but bootstrap.min.css set `[hidden] { display: none !important; }`
-     so we also need the `!important` here to be able to override the
-     default hidden behavior on the sphinx rendered scikit-learn.org.
-     See: https://github.com/scikit-learn/scikit-learn/issues/21755 */
-  display: inline-block !important;
-  position: relative;
-}
-
-#sk-container-id-13 div.sk-text-repr-fallback {
-  display: none;
-}
-
-div.sk-parallel-item,
-div.sk-serial,
-div.sk-item {
-  /* draw centered vertical line to link estimators */
-  background-image: linear-gradient(var(--sklearn-color-text-on-default-background), var(--sklearn-color-text-on-default-background));
-  background-size: 2px 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-/* Parallel-specific style estimator block */
-
-#sk-container-id-13 div.sk-parallel-item::after {
-  content: "";
-  width: 100%;
-  border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
-  flex-grow: 1;
-}
-
-#sk-container-id-13 div.sk-parallel {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  background-color: var(--sklearn-color-background);
-  position: relative;
-}
-
-#sk-container-id-13 div.sk-parallel-item {
-  display: flex;
-  flex-direction: column;
-}
-
-#sk-container-id-13 div.sk-parallel-item:first-child::after {
-  align-self: flex-end;
-  width: 50%;
-}
-
-#sk-container-id-13 div.sk-parallel-item:last-child::after {
-  align-self: flex-start;
-  width: 50%;
-}
-
-#sk-container-id-13 div.sk-parallel-item:only-child::after {
-  width: 0;
-}
-
-/* Serial-specific style estimator block */
-
-#sk-container-id-13 div.sk-serial {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--sklearn-color-background);
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
-
-/* Toggleable style: style used for estimator/Pipeline/ColumnTransformer box that is
-clickable and can be expanded/collapsed.
-- Pipeline and ColumnTransformer use this feature and define the default style
-- Estimators will overwrite some part of the style using the `sk-estimator` class
-*/
-
-/* Pipeline and ColumnTransformer style (default) */
-
-#sk-container-id-13 div.sk-toggleable {
-  /* Default theme specific background. It is overwritten whether we have a
-  specific estimator or a Pipeline/ColumnTransformer */
-  background-color: var(--sklearn-color-background);
-}
-
-/* Toggleable label */
-#sk-container-id-13 label.sk-toggleable__label {
-  cursor: pointer;
-  display: flex;
-  width: 100%;
-  margin-bottom: 0;
-  padding: 0.5em;
-  box-sizing: border-box;
-  text-align: center;
-  align-items: start;
-  justify-content: space-between;
-  gap: 0.5em;
-}
-
-#sk-container-id-13 label.sk-toggleable__label .caption {
-  font-size: 0.6rem;
-  font-weight: lighter;
-  color: var(--sklearn-color-text-muted);
-}
-
-#sk-container-id-13 label.sk-toggleable__label-arrow:before {
-  /* Arrow on the left of the label */
-  content: "▸";
-  float: left;
-  margin-right: 0.25em;
-  color: var(--sklearn-color-icon);
-}
-
-#sk-container-id-13 label.sk-toggleable__label-arrow:hover:before {
-  color: var(--sklearn-color-text);
-}
-
-/* Toggleable content - dropdown */
-
-#sk-container-id-13 div.sk-toggleable__content {
-  display: none;
-  text-align: left;
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-0);
-}
-
-#sk-container-id-13 div.sk-toggleable__content.fitted {
-  /* fitted */
-  background-color: var(--sklearn-color-fitted-level-0);
-}
-
-#sk-container-id-13 div.sk-toggleable__content pre {
-  margin: 0.2em;
-  border-radius: 0.25em;
-  color: var(--sklearn-color-text);
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-0);
-}
-
-#sk-container-id-13 div.sk-toggleable__content.fitted pre {
-  /* unfitted */
-  background-color: var(--sklearn-color-fitted-level-0);
-}
-
-#sk-container-id-13 input.sk-toggleable__control:checked~div.sk-toggleable__content {
-  /* Expand drop-down */
-  display: block;
-  width: 100%;
-  overflow: visible;
-}
-
-#sk-container-id-13 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
-  content: "▾";
-}
-
-/* Pipeline/ColumnTransformer-specific style */
-
-#sk-container-id-13 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
-  color: var(--sklearn-color-text);
-  background-color: var(--sklearn-color-unfitted-level-2);
-}
-
-#sk-container-id-13 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
-  background-color: var(--sklearn-color-fitted-level-2);
-}
-
-/* Estimator-specific style */
-
-/* Colorize estimator box */
-#sk-container-id-13 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-2);
-}
-
-#sk-container-id-13 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
-  /* fitted */
-  background-color: var(--sklearn-color-fitted-level-2);
-}
-
-#sk-container-id-13 div.sk-label label.sk-toggleable__label,
-#sk-container-id-13 div.sk-label label {
-  /* The background is the default theme color */
-  color: var(--sklearn-color-text-on-default-background);
-}
-
-/* On hover, darken the color of the background */
-#sk-container-id-13 div.sk-label:hover label.sk-toggleable__label {
-  color: var(--sklearn-color-text);
-  background-color: var(--sklearn-color-unfitted-level-2);
-}
-
-/* Label box, darken color on hover, fitted */
-#sk-container-id-13 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
-  color: var(--sklearn-color-text);
-  background-color: var(--sklearn-color-fitted-level-2);
-}
-
-/* Estimator label */
-
-#sk-container-id-13 div.sk-label label {
-  font-family: monospace;
-  font-weight: bold;
-  display: inline-block;
-  line-height: 1.2em;
-}
-
-#sk-container-id-13 div.sk-label-container {
-  text-align: center;
-}
-
-/* Estimator-specific */
-#sk-container-id-13 div.sk-estimator {
-  font-family: monospace;
-  border: 1px dotted var(--sklearn-color-border-box);
-  border-radius: 0.25em;
-  box-sizing: border-box;
-  margin-bottom: 0.5em;
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-0);
-}
-
-#sk-container-id-13 div.sk-estimator.fitted {
-  /* fitted */
-  background-color: var(--sklearn-color-fitted-level-0);
-}
-
-/* on hover */
-#sk-container-id-13 div.sk-estimator:hover {
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-2);
-}
-
-#sk-container-id-13 div.sk-estimator.fitted:hover {
-  /* fitted */
-  background-color: var(--sklearn-color-fitted-level-2);
-}
-
-/* Specification for estimator info (e.g. "i" and "?") */
-
-/* Common style for "i" and "?" */
-
-.sk-estimator-doc-link,
-a:link.sk-estimator-doc-link,
-a:visited.sk-estimator-doc-link {
-  float: right;
-  font-size: smaller;
-  line-height: 1em;
-  font-family: monospace;
-  background-color: var(--sklearn-color-background);
-  border-radius: 1em;
-  height: 1em;
-  width: 1em;
-  text-decoration: none !important;
-  margin-left: 0.5em;
-  text-align: center;
-  /* unfitted */
-  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
-  color: var(--sklearn-color-unfitted-level-1);
-}
-
-.sk-estimator-doc-link.fitted,
-a:link.sk-estimator-doc-link.fitted,
-a:visited.sk-estimator-doc-link.fitted {
-  /* fitted */
-  border: var(--sklearn-color-fitted-level-1) 1pt solid;
-  color: var(--sklearn-color-fitted-level-1);
-}
-
-/* On hover */
-div.sk-estimator:hover .sk-estimator-doc-link:hover,
-.sk-estimator-doc-link:hover,
-div.sk-label-container:hover .sk-estimator-doc-link:hover,
-.sk-estimator-doc-link:hover {
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-3);
-  color: var(--sklearn-color-background);
-  text-decoration: none;
-}
-
-div.sk-estimator.fitted:hover .sk-estimator-doc-link.fitted:hover,
-.sk-estimator-doc-link.fitted:hover,
-div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
-.sk-estimator-doc-link.fitted:hover {
-  /* fitted */
-  background-color: var(--sklearn-color-fitted-level-3);
-  color: var(--sklearn-color-background);
-  text-decoration: none;
-}
-
-/* Span, style for the box shown on hovering the info icon */
-.sk-estimator-doc-link span {
-  display: none;
-  z-index: 9999;
-  position: relative;
-  font-weight: normal;
-  right: .2ex;
-  padding: .5ex;
-  margin: .5ex;
-  width: min-content;
-  min-width: 20ex;
-  max-width: 50ex;
-  color: var(--sklearn-color-text);
-  box-shadow: 2pt 2pt 4pt #999;
-  /* unfitted */
-  background: var(--sklearn-color-unfitted-level-0);
-  border: .5pt solid var(--sklearn-color-unfitted-level-3);
-}
-
-.sk-estimator-doc-link.fitted span {
-  /* fitted */
-  background: var(--sklearn-color-fitted-level-0);
-  border: var(--sklearn-color-fitted-level-3);
-}
-
-.sk-estimator-doc-link:hover span {
-  display: block;
-}
-
-/* "?"-specific style due to the `<a>` HTML tag */
-
-#sk-container-id-13 a.estimator_doc_link {
-  float: right;
-  font-size: 1rem;
-  line-height: 1em;
-  font-family: monospace;
-  background-color: var(--sklearn-color-background);
-  border-radius: 1rem;
-  height: 1rem;
-  width: 1rem;
-  text-decoration: none;
-  /* unfitted */
-  color: var(--sklearn-color-unfitted-level-1);
-  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
-}
-
-#sk-container-id-13 a.estimator_doc_link.fitted {
-  /* fitted */
-  border: var(--sklearn-color-fitted-level-1) 1pt solid;
-  color: var(--sklearn-color-fitted-level-1);
-}
-
-/* On hover */
-#sk-container-id-13 a.estimator_doc_link:hover {
-  /* unfitted */
-  background-color: var(--sklearn-color-unfitted-level-3);
-  color: var(--sklearn-color-background);
-  text-decoration: none;
-}
-
-#sk-container-id-13 a.estimator_doc_link.fitted:hover {
-  /* fitted */
-  background-color: var(--sklearn-color-fitted-level-3);
-}
-
-.estimator-table summary {
-    padding: .5rem;
-    font-family: monospace;
-    cursor: pointer;
-}
-
-.estimator-table details[open] {
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-    padding-bottom: 0.3rem;
-}
-
-.estimator-table .parameters-table {
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-.estimator-table .parameters-table tr:nth-child(odd) {
-    background-color: #fff;
-}
-
-.estimator-table .parameters-table tr:nth-child(even) {
-    background-color: #f6f6f6;
-}
-
-.estimator-table .parameters-table tr:hover {
-    background-color: #e0e0e0;
-}
-
-.estimator-table table td {
-    border: 1px solid rgba(106, 105, 104, 0.232);
-}
-
-.user-set td {
-    color:rgb(255, 94, 0);
-    text-align: left;
-}
-
-.user-set td.value pre {
-    color:rgb(255, 94, 0) !important;
-    background-color: transparent !important;
-}
-
-.default td {
-    color: black;
-    text-align: left;
-}
-
-.user-set td i,
-.default td i {
-    color: black;
-}
-
-.copy-paste-icon {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDYuNy4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjUgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTIwOCAwTDMzMi4xIDBjMTIuNyAwIDI0LjkgNS4xIDMzLjkgMTQuMWw2Ny45IDY3LjljOSA5IDE0LjEgMjEuMiAxNC4xIDMzLjlMNDQ4IDMzNmMwIDI2LjUtMjEuNSA0OC00OCA0OGwtMTkyIDBjLTI2LjUgMC00OC0yMS41LTQ4LTQ4bDAtMjg4YzAtMjYuNSAyMS41LTQ4IDQ4LTQ4ek00OCAxMjhsODAgMCAwIDY0LTY0IDAgMCAyNTYgMTkyIDAgMC0zMiA2NCAwIDAgNDhjMCAyNi41LTIxLjUgNDgtNDggNDhMNDggNTEyYy0yNi41IDAtNDgtMjEuNS00OC00OEwwIDE3NmMwLTI2LjUgMjEuNS00OCA0OC00OHoiLz48L3N2Zz4=);
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-    background-position: 0;
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    cursor: pointer;
-}
-</style><body><div id="sk-container-id-13" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>RidgeClassifier(alpha=choose_from([0.1, 1.0, 10.0], name=&#x27;α&#x27;))</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-68" type="checkbox" checked><label for="sk-estimator-id-68" class="sk-toggleable__label  sk-toggleable__label-arrow"><div><div>RidgeClassifier</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.7/modules/generated/sklearn.linear_model.RidgeClassifier.html">?<span>Documentation for RidgeClassifier</span></a><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></div></label><div class="sk-toggleable__content " data-param-prefix="">
-        <div class="estimator-table">
-            <details>
-                <summary>Parameters</summary>
-                <table class="parameters-table">
-                  <tbody>
-
-        <tr class="user-set">
-            <td><i class="copy-paste-icon"
-                 onclick="copyToClipboard('alpha',
-                          this.parentElement.nextElementSibling)"
-            ></i></td>
-            <td class="param">alpha&nbsp;</td>
-            <td class="value">choose_from([....0], name=&#x27;α&#x27;)</td>
-        </tr>
-
-
-        <tr class="default">
-            <td><i class="copy-paste-icon"
-                 onclick="copyToClipboard('fit_intercept',
-                          this.parentElement.nextElementSibling)"
-            ></i></td>
-            <td class="param">fit_intercept&nbsp;</td>
-            <td class="value">True</td>
-        </tr>
-
-
-        <tr class="default">
-            <td><i class="copy-paste-icon"
-                 onclick="copyToClipboard('copy_X',
-                          this.parentElement.nextElementSibling)"
-            ></i></td>
-            <td class="param">copy_X&nbsp;</td>
-            <td class="value">True</td>
-        </tr>
-
-
-        <tr class="default">
-            <td><i class="copy-paste-icon"
-                 onclick="copyToClipboard('max_iter',
-                          this.parentElement.nextElementSibling)"
-            ></i></td>
-            <td class="param">max_iter&nbsp;</td>
-            <td class="value">None</td>
-        </tr>
-
-
-        <tr class="default">
-            <td><i class="copy-paste-icon"
-                 onclick="copyToClipboard('tol',
-                          this.parentElement.nextElementSibling)"
-            ></i></td>
-            <td class="param">tol&nbsp;</td>
-            <td class="value">0.0001</td>
-        </tr>
-
-
-        <tr class="default">
-            <td><i class="copy-paste-icon"
-                 onclick="copyToClipboard('class_weight',
-                          this.parentElement.nextElementSibling)"
-            ></i></td>
-            <td class="param">class_weight&nbsp;</td>
-            <td class="value">None</td>
-        </tr>
-
-
-        <tr class="default">
-            <td><i class="copy-paste-icon"
-                 onclick="copyToClipboard('solver',
-                          this.parentElement.nextElementSibling)"
-            ></i></td>
-            <td class="param">solver&nbsp;</td>
-            <td class="value">&#x27;auto&#x27;</td>
-        </tr>
-
-
-        <tr class="default">
-            <td><i class="copy-paste-icon"
-                 onclick="copyToClipboard('positive',
-                          this.parentElement.nextElementSibling)"
-            ></i></td>
-            <td class="param">positive&nbsp;</td>
-            <td class="value">False</td>
-        </tr>
-
-
-        <tr class="default">
-            <td><i class="copy-paste-icon"
-                 onclick="copyToClipboard('random_state',
-                          this.parentElement.nextElementSibling)"
-            ></i></td>
-            <td class="param">random_state&nbsp;</td>
-            <td class="value">None</td>
-        </tr>
-
-                  </tbody>
-                </table>
-            </details>
-        </div>
-    </div></div></div></div></div><script>function copyToClipboard(text, element) {
-    // Get the parameter prefix from the closest toggleable content
-    const toggleableContent = element.closest('.sk-toggleable__content');
-    const paramPrefix = toggleableContent ? toggleableContent.dataset.paramPrefix : '';
-    const fullParamName = paramPrefix ? `${paramPrefix}${text}` : text;
-
-    const originalStyle = element.style;
-    const computedStyle = window.getComputedStyle(element);
-    const originalWidth = computedStyle.width;
-    const originalHTML = element.innerHTML.replace('Copied!', '');
-
-    navigator.clipboard.writeText(fullParamName)
-        .then(() => {
-            element.style.width = originalWidth;
-            element.style.color = 'green';
-            element.innerHTML = "Copied!";
-
-            setTimeout(() => {
-                element.innerHTML = originalHTML;
-                element.style = originalStyle;
-            }, 2000);
-        })
-        .catch(err => {
-            console.error('Failed to copy:', err);
-            element.style.color = 'red';
-            element.innerHTML = "Failed!";
-            setTimeout(() => {
-                element.innerHTML = originalHTML;
-                element.style = originalStyle;
-            }, 2000);
-        });
-    return false;
-}
-
-document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
-    const toggleableContent = element.closest('.sk-toggleable__content');
-    const paramPrefix = toggleableContent ? toggleableContent.dataset.paramPrefix : '';
-    const paramName = element.parentElement.nextElementSibling.textContent.trim();
-    const fullParamName = paramPrefix ? `${paramPrefix}${paramName}` : paramName;
-
-    element.setAttribute('title', fullParamName);
-});
-</script></body>
-</div>
-<br />
-<br /><p>instead of:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier" title="sklearn.linear_model.RidgeClassifier" class="sphx-glr-backref-module-sklearn-linear_model sphx-glr-backref-type-py-class"><span class="n">RidgeClassifier</span></a><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="output_subarea output_html rendered_html output_result">
 <style>#sk-container-id-14 {
   /* Definition of color scheme common for light and dark mode */
   --sklearn-color-text: #000;
@@ -1741,7 +1114,634 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
     height: 14px;
     cursor: pointer;
 }
-</style><body><div id="sk-container-id-14" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>RidgeClassifier()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-69" type="checkbox" checked><label for="sk-estimator-id-69" class="sk-toggleable__label  sk-toggleable__label-arrow"><div><div>RidgeClassifier</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.7/modules/generated/sklearn.linear_model.RidgeClassifier.html">?<span>Documentation for RidgeClassifier</span></a><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></div></label><div class="sk-toggleable__content " data-param-prefix="">
+</style><body><div id="sk-container-id-14" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>RidgeClassifier(alpha=choose_from([0.1, 1.0, 10.0], name=&#x27;α&#x27;))</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-75" type="checkbox" checked><label for="sk-estimator-id-75" class="sk-toggleable__label  sk-toggleable__label-arrow"><div><div>RidgeClassifier</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.7/modules/generated/sklearn.linear_model.RidgeClassifier.html">?<span>Documentation for RidgeClassifier</span></a><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></div></label><div class="sk-toggleable__content " data-param-prefix="">
+        <div class="estimator-table">
+            <details>
+                <summary>Parameters</summary>
+                <table class="parameters-table">
+                  <tbody>
+
+        <tr class="user-set">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('alpha',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">alpha&nbsp;</td>
+            <td class="value">choose_from([....0], name=&#x27;α&#x27;)</td>
+        </tr>
+
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('fit_intercept',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">fit_intercept&nbsp;</td>
+            <td class="value">True</td>
+        </tr>
+
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('copy_X',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">copy_X&nbsp;</td>
+            <td class="value">True</td>
+        </tr>
+
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('max_iter',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">max_iter&nbsp;</td>
+            <td class="value">None</td>
+        </tr>
+
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('tol',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">tol&nbsp;</td>
+            <td class="value">0.0001</td>
+        </tr>
+
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('class_weight',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">class_weight&nbsp;</td>
+            <td class="value">None</td>
+        </tr>
+
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('solver',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">solver&nbsp;</td>
+            <td class="value">&#x27;auto&#x27;</td>
+        </tr>
+
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('positive',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">positive&nbsp;</td>
+            <td class="value">False</td>
+        </tr>
+
+
+        <tr class="default">
+            <td><i class="copy-paste-icon"
+                 onclick="copyToClipboard('random_state',
+                          this.parentElement.nextElementSibling)"
+            ></i></td>
+            <td class="param">random_state&nbsp;</td>
+            <td class="value">None</td>
+        </tr>
+
+                  </tbody>
+                </table>
+            </details>
+        </div>
+    </div></div></div></div></div><script>function copyToClipboard(text, element) {
+    // Get the parameter prefix from the closest toggleable content
+    const toggleableContent = element.closest('.sk-toggleable__content');
+    const paramPrefix = toggleableContent ? toggleableContent.dataset.paramPrefix : '';
+    const fullParamName = paramPrefix ? `${paramPrefix}${text}` : text;
+
+    const originalStyle = element.style;
+    const computedStyle = window.getComputedStyle(element);
+    const originalWidth = computedStyle.width;
+    const originalHTML = element.innerHTML.replace('Copied!', '');
+
+    navigator.clipboard.writeText(fullParamName)
+        .then(() => {
+            element.style.width = originalWidth;
+            element.style.color = 'green';
+            element.innerHTML = "Copied!";
+
+            setTimeout(() => {
+                element.innerHTML = originalHTML;
+                element.style = originalStyle;
+            }, 2000);
+        })
+        .catch(err => {
+            console.error('Failed to copy:', err);
+            element.style.color = 'red';
+            element.innerHTML = "Failed!";
+            setTimeout(() => {
+                element.innerHTML = originalHTML;
+                element.style = originalStyle;
+            }, 2000);
+        });
+    return false;
+}
+
+document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
+    const toggleableContent = element.closest('.sk-toggleable__content');
+    const paramPrefix = toggleableContent ? toggleableContent.dataset.paramPrefix : '';
+    const paramName = element.parentElement.nextElementSibling.textContent.trim();
+    const fullParamName = paramPrefix ? `${paramPrefix}${paramName}` : paramName;
+
+    element.setAttribute('title', fullParamName);
+});
+</script></body>
+</div>
+<br />
+<br /><p>instead of:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeClassifier.html#sklearn.linear_model.RidgeClassifier" title="sklearn.linear_model.RidgeClassifier" class="sphx-glr-backref-module-sklearn-linear_model sphx-glr-backref-type-py-class"><span class="n">RidgeClassifier</span></a><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<style>#sk-container-id-15 {
+  /* Definition of color scheme common for light and dark mode */
+  --sklearn-color-text: #000;
+  --sklearn-color-text-muted: #666;
+  --sklearn-color-line: gray;
+  /* Definition of color scheme for unfitted estimators */
+  --sklearn-color-unfitted-level-0: #fff5e6;
+  --sklearn-color-unfitted-level-1: #f6e4d2;
+  --sklearn-color-unfitted-level-2: #ffe0b3;
+  --sklearn-color-unfitted-level-3: chocolate;
+  /* Definition of color scheme for fitted estimators */
+  --sklearn-color-fitted-level-0: #f0f8ff;
+  --sklearn-color-fitted-level-1: #d4ebff;
+  --sklearn-color-fitted-level-2: #b3dbfd;
+  --sklearn-color-fitted-level-3: cornflowerblue;
+
+  /* Specific color for light theme */
+  --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+  --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, white)));
+  --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+  --sklearn-color-icon: #696969;
+
+  @media (prefers-color-scheme: dark) {
+    /* Redefinition of color scheme for dark theme */
+    --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+    --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, #111)));
+    --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+    --sklearn-color-icon: #878787;
+  }
+}
+
+#sk-container-id-15 {
+  color: var(--sklearn-color-text);
+}
+
+#sk-container-id-15 pre {
+  padding: 0;
+}
+
+#sk-container-id-15 input.sk-hidden--visually {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#sk-container-id-15 div.sk-dashed-wrapped {
+  border: 1px dashed var(--sklearn-color-line);
+  margin: 0 0.4em 0.5em 0.4em;
+  box-sizing: border-box;
+  padding-bottom: 0.4em;
+  background-color: var(--sklearn-color-background);
+}
+
+#sk-container-id-15 div.sk-container {
+  /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
+     but bootstrap.min.css set `[hidden] { display: none !important; }`
+     so we also need the `!important` here to be able to override the
+     default hidden behavior on the sphinx rendered scikit-learn.org.
+     See: https://github.com/scikit-learn/scikit-learn/issues/21755 */
+  display: inline-block !important;
+  position: relative;
+}
+
+#sk-container-id-15 div.sk-text-repr-fallback {
+  display: none;
+}
+
+div.sk-parallel-item,
+div.sk-serial,
+div.sk-item {
+  /* draw centered vertical line to link estimators */
+  background-image: linear-gradient(var(--sklearn-color-text-on-default-background), var(--sklearn-color-text-on-default-background));
+  background-size: 2px 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Parallel-specific style estimator block */
+
+#sk-container-id-15 div.sk-parallel-item::after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
+  flex-grow: 1;
+}
+
+#sk-container-id-15 div.sk-parallel {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: var(--sklearn-color-background);
+  position: relative;
+}
+
+#sk-container-id-15 div.sk-parallel-item {
+  display: flex;
+  flex-direction: column;
+}
+
+#sk-container-id-15 div.sk-parallel-item:first-child::after {
+  align-self: flex-end;
+  width: 50%;
+}
+
+#sk-container-id-15 div.sk-parallel-item:last-child::after {
+  align-self: flex-start;
+  width: 50%;
+}
+
+#sk-container-id-15 div.sk-parallel-item:only-child::after {
+  width: 0;
+}
+
+/* Serial-specific style estimator block */
+
+#sk-container-id-15 div.sk-serial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sklearn-color-background);
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+
+/* Toggleable style: style used for estimator/Pipeline/ColumnTransformer box that is
+clickable and can be expanded/collapsed.
+- Pipeline and ColumnTransformer use this feature and define the default style
+- Estimators will overwrite some part of the style using the `sk-estimator` class
+*/
+
+/* Pipeline and ColumnTransformer style (default) */
+
+#sk-container-id-15 div.sk-toggleable {
+  /* Default theme specific background. It is overwritten whether we have a
+  specific estimator or a Pipeline/ColumnTransformer */
+  background-color: var(--sklearn-color-background);
+}
+
+/* Toggleable label */
+#sk-container-id-15 label.sk-toggleable__label {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0.5em;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+#sk-container-id-15 label.sk-toggleable__label .caption {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  color: var(--sklearn-color-text-muted);
+}
+
+#sk-container-id-15 label.sk-toggleable__label-arrow:before {
+  /* Arrow on the left of the label */
+  content: "▸";
+  float: left;
+  margin-right: 0.25em;
+  color: var(--sklearn-color-icon);
+}
+
+#sk-container-id-15 label.sk-toggleable__label-arrow:hover:before {
+  color: var(--sklearn-color-text);
+}
+
+/* Toggleable content - dropdown */
+
+#sk-container-id-15 div.sk-toggleable__content {
+  display: none;
+  text-align: left;
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-15 div.sk-toggleable__content.fitted {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+#sk-container-id-15 div.sk-toggleable__content pre {
+  margin: 0.2em;
+  border-radius: 0.25em;
+  color: var(--sklearn-color-text);
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-15 div.sk-toggleable__content.fitted pre {
+  /* unfitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+#sk-container-id-15 input.sk-toggleable__control:checked~div.sk-toggleable__content {
+  /* Expand drop-down */
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+
+#sk-container-id-15 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
+  content: "▾";
+}
+
+/* Pipeline/ColumnTransformer-specific style */
+
+#sk-container-id-15 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-15 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Estimator-specific style */
+
+/* Colorize estimator box */
+#sk-container-id-15 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-15 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+#sk-container-id-15 div.sk-label label.sk-toggleable__label,
+#sk-container-id-15 div.sk-label label {
+  /* The background is the default theme color */
+  color: var(--sklearn-color-text-on-default-background);
+}
+
+/* On hover, darken the color of the background */
+#sk-container-id-15 div.sk-label:hover label.sk-toggleable__label {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+/* Label box, darken color on hover, fitted */
+#sk-container-id-15 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Estimator label */
+
+#sk-container-id-15 div.sk-label label {
+  font-family: monospace;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.2em;
+}
+
+#sk-container-id-15 div.sk-label-container {
+  text-align: center;
+}
+
+/* Estimator-specific */
+#sk-container-id-15 div.sk-estimator {
+  font-family: monospace;
+  border: 1px dotted var(--sklearn-color-border-box);
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-15 div.sk-estimator.fitted {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+/* on hover */
+#sk-container-id-15 div.sk-estimator:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-15 div.sk-estimator.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Specification for estimator info (e.g. "i" and "?") */
+
+/* Common style for "i" and "?" */
+
+.sk-estimator-doc-link,
+a:link.sk-estimator-doc-link,
+a:visited.sk-estimator-doc-link {
+  float: right;
+  font-size: smaller;
+  line-height: 1em;
+  font-family: monospace;
+  background-color: var(--sklearn-color-background);
+  border-radius: 1em;
+  height: 1em;
+  width: 1em;
+  text-decoration: none !important;
+  margin-left: 0.5em;
+  text-align: center;
+  /* unfitted */
+  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+  color: var(--sklearn-color-unfitted-level-1);
+}
+
+.sk-estimator-doc-link.fitted,
+a:link.sk-estimator-doc-link.fitted,
+a:visited.sk-estimator-doc-link.fitted {
+  /* fitted */
+  border: var(--sklearn-color-fitted-level-1) 1pt solid;
+  color: var(--sklearn-color-fitted-level-1);
+}
+
+/* On hover */
+div.sk-estimator:hover .sk-estimator-doc-link:hover,
+.sk-estimator-doc-link:hover,
+div.sk-label-container:hover .sk-estimator-doc-link:hover,
+.sk-estimator-doc-link:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+div.sk-estimator.fitted:hover .sk-estimator-doc-link.fitted:hover,
+.sk-estimator-doc-link.fitted:hover,
+div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
+.sk-estimator-doc-link.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+/* Span, style for the box shown on hovering the info icon */
+.sk-estimator-doc-link span {
+  display: none;
+  z-index: 9999;
+  position: relative;
+  font-weight: normal;
+  right: .2ex;
+  padding: .5ex;
+  margin: .5ex;
+  width: min-content;
+  min-width: 20ex;
+  max-width: 50ex;
+  color: var(--sklearn-color-text);
+  box-shadow: 2pt 2pt 4pt #999;
+  /* unfitted */
+  background: var(--sklearn-color-unfitted-level-0);
+  border: .5pt solid var(--sklearn-color-unfitted-level-3);
+}
+
+.sk-estimator-doc-link.fitted span {
+  /* fitted */
+  background: var(--sklearn-color-fitted-level-0);
+  border: var(--sklearn-color-fitted-level-3);
+}
+
+.sk-estimator-doc-link:hover span {
+  display: block;
+}
+
+/* "?"-specific style due to the `<a>` HTML tag */
+
+#sk-container-id-15 a.estimator_doc_link {
+  float: right;
+  font-size: 1rem;
+  line-height: 1em;
+  font-family: monospace;
+  background-color: var(--sklearn-color-background);
+  border-radius: 1rem;
+  height: 1rem;
+  width: 1rem;
+  text-decoration: none;
+  /* unfitted */
+  color: var(--sklearn-color-unfitted-level-1);
+  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+}
+
+#sk-container-id-15 a.estimator_doc_link.fitted {
+  /* fitted */
+  border: var(--sklearn-color-fitted-level-1) 1pt solid;
+  color: var(--sklearn-color-fitted-level-1);
+}
+
+/* On hover */
+#sk-container-id-15 a.estimator_doc_link:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+#sk-container-id-15 a.estimator_doc_link.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-3);
+}
+
+.estimator-table summary {
+    padding: .5rem;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.estimator-table details[open] {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    padding-bottom: 0.3rem;
+}
+
+.estimator-table .parameters-table {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.estimator-table .parameters-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.estimator-table .parameters-table tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+.estimator-table .parameters-table tr:hover {
+    background-color: #e0e0e0;
+}
+
+.estimator-table table td {
+    border: 1px solid rgba(106, 105, 104, 0.232);
+}
+
+.user-set td {
+    color:rgb(255, 94, 0);
+    text-align: left;
+}
+
+.user-set td.value pre {
+    color:rgb(255, 94, 0) !important;
+    background-color: transparent !important;
+}
+
+.default td {
+    color: black;
+    text-align: left;
+}
+
+.user-set td i,
+.default td i {
+    color: black;
+}
+
+.copy-paste-icon {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDYuNy4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjUgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTIwOCAwTDMzMi4xIDBjMTIuNyAwIDI0LjkgNS4xIDMzLjkgMTQuMWw2Ny45IDY3LjljOSA5IDE0LjEgMjEuMiAxNC4xIDMzLjlMNDQ4IDMzNmMwIDI2LjUtMjEuNSA0OC00OCA0OGwtMTkyIDBjLTI2LjUgMC00OC0yMS41LTQ4LTQ4bDAtMjg4YzAtMjYuNSAyMS41LTQ4IDQ4LTQ4ek00OCAxMjhsODAgMCAwIDY0LTY0IDAgMCAyNTYgMTkyIDAgMC0zMiA2NCAwIDAgNDhjMCAyNi41LTIxLjUgNDgtNDggNDhMNDggNTEyYy0yNi41IDAtNDgtMjEuNS00OC00OEwwIDE3NmMwLTI2LjUgMjEuNS00OCA0OC00OHoiLz48L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: 0;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+</style><body><div id="sk-container-id-15" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>RidgeClassifier()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator  sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-76" type="checkbox" checked><label for="sk-estimator-id-76" class="sk-toggleable__label  sk-toggleable__label-arrow"><div><div>RidgeClassifier</div></div><div><a class="sk-estimator-doc-link " rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.7/modules/generated/sklearn.linear_model.RidgeClassifier.html">?<span>Documentation for RidgeClassifier</span></a><span class="sk-estimator-doc-link ">i<span>Not fitted</span></span></div></label><div class="sk-toggleable__content " data-param-prefix="">
         <div class="estimator-table">
             <details>
                 <summary>Parameters</summary>
@@ -1948,8 +1948,8 @@ of <a class="reference internal" href="../../reference/generated/skrub.X.html#sk
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_5a149065-wrapper" hidden>
-    <template id="report_5a149065-template">
+<div id="report_433f83be-wrapper" hidden>
+    <template id="report_433f83be-template">
         <style>
          /*!
 Pure v3.0.0
@@ -3334,7 +3334,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="256bb8e8"
+                id="9183b4ea"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -3364,7 +3364,7 @@ data-spans__-1__-1
 
 
                 <th
-                id="4a550db3"
+                id="dd10c38a"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -3412,7 +3412,7 @@ data-spans__-1__0
 
 
                 <th
-                id="b4261c8a"
+                id="87634923"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3440,7 +3440,7 @@ data-spans__0__-1
 
 
                 <td
-                id="0c978b61"
+                id="652a2cd2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3474,7 +3474,7 @@ data-spans__0__0
 
 
                 <th
-                id="87268ca3"
+                id="a14e7125"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3502,7 +3502,7 @@ data-spans__1__-1
 
 
                 <td
-                id="85928cfa"
+                id="3584638d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3536,7 +3536,7 @@ data-spans__1__0
 
 
                 <th
-                id="e8b4c0be"
+                id="0bf76e67"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3564,7 +3564,7 @@ data-spans__2__-1
 
 
                 <td
-                id="0b1c3cec"
+                id="54e18950"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3598,7 +3598,7 @@ data-spans__2__0
 
 
                 <th
-                id="424a90e8"
+                id="343f459f"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3626,7 +3626,7 @@ data-spans__3__-1
 
 
                 <td
-                id="347482f4"
+                id="42e41aed"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3660,7 +3660,7 @@ data-spans__3__0
 
 
                 <th
-                id="2d82fa43"
+                id="965a6723"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3688,7 +3688,7 @@ data-spans__4__-1
 
 
                 <td
-                id="9ff2bd77"
+                id="095ca5ce"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3752,7 +3752,7 @@ data-spans__4__0
 
 
                 <th
-                id="f8496314"
+                id="38a1ff55"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3780,7 +3780,7 @@ data-spans__5__-1
 
 
                 <td
-                id="00ea320b"
+                id="8a260933"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3814,7 +3814,7 @@ data-spans__5__0
 
 
                 <th
-                id="8985f000"
+                id="7e7ac52e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3842,7 +3842,7 @@ data-spans__6__-1
 
 
                 <td
-                id="22608dbf"
+                id="703a5919"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3880,7 +3880,7 @@ data-spans__6__0
 
 
                 <th
-                id="0dc7be38"
+                id="4a23cefc"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3908,7 +3908,7 @@ data-spans__7__-1
 
 
                 <td
-                id="c308d728"
+                id="2f584490"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3950,7 +3950,7 @@ data-spans__7__0
 
 
                 <th
-                id="07bdcb0e"
+                id="9fa2707b"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3978,7 +3978,7 @@ data-spans__8__-1
 
 
                 <td
-                id="9bde1ae5"
+                id="92668091"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4012,7 +4012,7 @@ data-spans__8__0
 
 
                 <th
-                id="eac6b2bc"
+                id="3e137177"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4040,7 +4040,7 @@ data-spans__9__-1
 
 
                 <td
-                id="ca2e0096"
+                id="499041d5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4593,7 +4593,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_5a149065">
+    <skrub-table-report class="report" id="report_433f83be">
     </skrub-table-report>
 
     <script type="module">
@@ -5691,7 +5691,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_5a149065-wrapper-fallback">
+<div id="report_433f83be-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -5702,8 +5702,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_5a149065-wrapper").removeAttribute("hidden");
- document.getElementById("report_5a149065-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_433f83be-wrapper").removeAttribute("hidden");
+ document.getElementById("report_433f83be-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -5743,8 +5743,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_1b371914-wrapper" hidden>
-    <template id="report_1b371914-template">
+<div id="report_efa7454b-wrapper" hidden>
+    <template id="report_efa7454b-template">
         <style>
          /*!
 Pure v3.0.0
@@ -7129,7 +7129,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="877d5c03"
+                id="96d21aca"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -7159,7 +7159,7 @@ data-spans__-1__-1
 
 
                 <th
-                id="98ae0cb3"
+                id="004aea9c"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -7207,7 +7207,7 @@ data-spans__-1__0
 
 
                 <th
-                id="79f03ca9"
+                id="4b96d66c"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7235,7 +7235,7 @@ data-spans__0__-1
 
 
                 <td
-                id="49f32e9a"
+                id="bd65218b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7269,7 +7269,7 @@ data-spans__0__0
 
 
                 <th
-                id="27ece2d6"
+                id="474e4adf"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7297,7 +7297,7 @@ data-spans__1__-1
 
 
                 <td
-                id="49ea3dc0"
+                id="4610c495"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7331,7 +7331,7 @@ data-spans__1__0
 
 
                 <th
-                id="ca445fd8"
+                id="a0658cef"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7359,7 +7359,7 @@ data-spans__2__-1
 
 
                 <td
-                id="6943f797"
+                id="f053eab9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7393,7 +7393,7 @@ data-spans__2__0
 
 
                 <th
-                id="2708626a"
+                id="7f204733"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7421,7 +7421,7 @@ data-spans__3__-1
 
 
                 <td
-                id="0850445f"
+                id="34571c3e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7455,7 +7455,7 @@ data-spans__3__0
 
 
                 <th
-                id="510a32fe"
+                id="adc73800"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7483,7 +7483,7 @@ data-spans__4__-1
 
 
                 <td
-                id="84348a9b"
+                id="4f78ec29"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7547,7 +7547,7 @@ data-spans__4__0
 
 
                 <th
-                id="ea91defc"
+                id="4f0e5d5d"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7575,7 +7575,7 @@ data-spans__5__-1
 
 
                 <td
-                id="cf8ad0bd"
+                id="2e2e43aa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7609,7 +7609,7 @@ data-spans__5__0
 
 
                 <th
-                id="8ced896f"
+                id="726a2bdf"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7637,7 +7637,7 @@ data-spans__6__-1
 
 
                 <td
-                id="19b8d5fd"
+                id="db0996f6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7671,7 +7671,7 @@ data-spans__6__0
 
 
                 <th
-                id="74ed5607"
+                id="e37f1135"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7699,7 +7699,7 @@ data-spans__7__-1
 
 
                 <td
-                id="49266974"
+                id="cdcae673"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7733,7 +7733,7 @@ data-spans__7__0
 
 
                 <th
-                id="5fe27cbb"
+                id="69274754"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7761,7 +7761,7 @@ data-spans__8__-1
 
 
                 <td
-                id="da0c515e"
+                id="6b4d43a6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7795,7 +7795,7 @@ data-spans__8__0
 
 
                 <th
-                id="0476d88b"
+                id="18d40fb2"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7823,7 +7823,7 @@ data-spans__9__-1
 
 
                 <td
-                id="9410882b"
+                id="4aa518d3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8366,7 +8366,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_1b371914">
+    <skrub-table-report class="report" id="report_efa7454b">
     </skrub-table-report>
 
     <script type="module">
@@ -9464,7 +9464,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_1b371914-wrapper-fallback">
+<div id="report_efa7454b-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -9475,8 +9475,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_1b371914-wrapper").removeAttribute("hidden");
- document.getElementById("report_1b371914-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_efa7454b-wrapper").removeAttribute("hidden");
+ document.getElementById("report_efa7454b-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -9629,7 +9629,7 @@ impact on the score.</p>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha256-Ei4740bWZhaUTQuD6q9yQlgVCMPBz6CZWhevDYPv93A=" crossorigin="anonymous"></script>                <div id="1f5d84e2-a386-4008-8e68-bcc8787074e5" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("1f5d84e2-a386-4008-8e68-bcc8787074e5")) {                    Plotly.newPlot(                        "1f5d84e2-a386-4008-8e68-bcc8787074e5",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkDSIvYsrO4nQOv8UXek+S1AAAAAAAAALkCJ2yGQNfQjQLa1eA2T9SNA0uQWQ7v9H0AAAAAAAAAUQA=="}},{"label":"lr","ticktext":["0.02","0.02","0.03","0.05","0.07","0.11","0.16","0.24","0.35","0.52"],"tickvals":[-4.189664084302747,-3.796791280939163,-3.403918477575579,-3.0110456742119958,-2.6181728708484115,-2.2253000674848282,-1.8324272641212445,-1.4395544607576607,-1.046681657394077,-0.6538088540304932],"values":{"dtype":"f8","bdata":"+wTKg118BsCBnwjpWOL1v7itvIsA7OS\u002f9ccb7mQCB8BvqpWCKvABwGJ67OZrN+m\u002fm1ItKqXdCcBuOT1NN8IQwA=="}},{"label":"score time","ticktext":["0.10","0.12","0.13","0.15","0.16","0.18","0.20","0.21","0.23","0.24"],"tickvals":[0.10158562660217285,0.11731611357794867,0.1330466005537245,0.1487770875295003,0.16450757450527614,0.18023806148105198,0.1959685484568278,0.2116990354326036,0.22742952240837944,0.24316000938415527],"values":{"dtype":"f8","bdata":"0Ni0hIMdyD9TQytkERXHP+fIZ+pM6Mg\u002fAAAAAN4fzz+80lnS7N\u002fHP3bDT102gsY\u002foPiyqYjJxT8AAAAAhAG6Pw=="}},{"label":"fit time","ticktext":["1.00","1.07","1.13","1.20","1.26","1.33","1.40","1.46","1.53","1.59"],"tickvals":[1.0016185283660888,1.067313061820136,1.1330075952741834,1.1987021287282307,1.264396662182278,1.3300911956363253,1.3957857290903728,1.46148026254442,1.5271747959984674,1.5928693294525147],"values":{"dtype":"f8","bdata":"dMGQ6LFQ9z9Tz+7OIqHzPxX57kvbA\u002fc\u002fzczMjGR8+T91AK96urDyP8JZyeIXN\u002fA\u002fCFK3rYdg8j9mZmYmoQbwPw=="}},{"label":"score","ticktext":["0.533","0.540","0.547","0.554","0.561","0.567","0.574","0.581","0.588","0.595"],"tickvals":[0.5329999999999999,0.5398888888888889,0.5467777777777777,0.5536666666666666,0.5605555555555555,0.5674444444444444,0.5743333333333333,0.5812222222222222,0.588111111111111,0.595],"values":{"dtype":"f8","bdata":"CtejcD0K4z9g5dAi2\u002fniP7kehetRuOI\u002fO99PjZdu4j89CtejcD3iP24Sg8DKoeE\u002fGy\u002fdJAaB4T90kxgEVg7hPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"CtejcD0K4z9g5dAi2\u002fniP7kehetRuOI\u002fO99PjZdu4j89CtejcD3iP24Sg8DKoeE\u002fGy\u002fdJAaB4T90kxgEVg7hPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha256-Ei4740bWZhaUTQuD6q9yQlgVCMPBz6CZWhevDYPv93A=" crossorigin="anonymous"></script>                <div id="cad52b9e-6872-4aa8-a91d-cce337a69312" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("cad52b9e-6872-4aa8-a91d-cce337a69312")) {                    Plotly.newPlot(                        "cad52b9e-6872-4aa8-a91d-cce337a69312",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkDSIvYsrO4nQOv8UXek+S1AAAAAAAAALkCJ2yGQNfQjQLa1eA2T9SNA0uQWQ7v9H0AAAAAAAAAUQA=="}},{"label":"lr","ticktext":["0.02","0.02","0.03","0.05","0.07","0.11","0.16","0.24","0.35","0.52"],"tickvals":[-4.189664084302747,-3.796791280939163,-3.403918477575579,-3.0110456742119958,-2.6181728708484115,-2.2253000674848282,-1.8324272641212445,-1.4395544607576607,-1.046681657394077,-0.6538088540304932],"values":{"dtype":"f8","bdata":"+wTKg118BsCBnwjpWOL1v7itvIsA7OS\u002f9ccb7mQCB8BvqpWCKvABwGJ67OZrN+m\u002fm1ItKqXdCcBuOT1NN8IQwA=="}},{"label":"score time","ticktext":["0.102","0.112","0.121","0.131","0.140","0.150","0.159","0.169","0.178","0.188"],"tickvals":[0.10213732719421387,0.11163975397745768,0.12114218076070149,0.1306446075439453,0.1401470343271891,0.14964946111043292,0.15915188789367676,0.16865431467692057,0.1781567414601644,0.1876591682434082],"values":{"dtype":"f8","bdata":"MzMzMzcFyD9LSmCIpXbHP12\u002f2gT\u002f574\u002fhp6Xwq01wz8SZAh5M5\u002fBP629sXAFkME\u002ffjlnjTOzwz8AAAAArCW6Pw=="}},{"label":"fit time","ticktext":["0.80","0.83","0.87","0.91","0.95","0.99","1.03","1.06","1.10","1.14"],"tickvals":[0.7950228691101074,0.8333531432681613,0.8716834174262154,0.9100136915842693,0.9483439657423232,0.9866742399003771,1.025004514058431,1.063334788216485,1.101665062374539,1.1399953365325928],"values":{"dtype":"f8","bdata":"g5r0qN1X8T8wSA0LkBfxPysJNTTQNvA\u002fAAAAwGs98j+2FGqZ3hjsP6U6wN16vO0\u002flzqbDEu76z\u002fNzMzM03DpPw=="}},{"label":"score","ticktext":["0.533","0.540","0.547","0.554","0.561","0.567","0.574","0.581","0.588","0.595"],"tickvals":[0.5329999999999999,0.5398888888888889,0.5467777777777777,0.5536666666666666,0.5605555555555555,0.5674444444444444,0.5743333333333333,0.5812222222222222,0.588111111111111,0.595],"values":{"dtype":"f8","bdata":"CtejcD0K4z9g5dAi2\u002fniP7kehetRuOI\u002fO99PjZdu4j89CtejcD3iP24Sg8DKoeE\u002fGy\u002fdJAaB4T90kxgEVg7hPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"CtejcD0K4z9g5dAi2\u002fniP7kehetRuOI\u002fO99PjZdu4j89CtejcD3iP24Sg8DKoeE\u002fGy\u002fdJAaB4T90kxgEVg7hPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br /><p>Finally, we can retrieve the best learner from the search results, and save it
@@ -9836,8 +9836,8 @@ in words:</p>
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_8c38dd18-wrapper" hidden>
-    <template id="report_8c38dd18-template">
+<div id="report_623cb3df-wrapper" hidden>
+    <template id="report_623cb3df-template">
         <style>
          /*!
 Pure v3.0.0
@@ -11222,7 +11222,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="6eff498c"
+                id="035b433f"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -11252,7 +11252,7 @@ data-spans__-1__-1
 
 
                 <th
-                id="87911d90"
+                id="989b353c"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -11286,7 +11286,7 @@ data-spans__-1__0
 
 
                 <th
-                id="010308a1"
+                id="c2b32dd7"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -11334,7 +11334,7 @@ data-spans__-1__1
 
 
                 <th
-                id="a8288e42"
+                id="ade9cc60"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11362,7 +11362,7 @@ data-spans__0__-1
 
 
                 <td
-                id="f71a1ce2"
+                id="991bb5d9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11392,7 +11392,7 @@ data-spans__0__0
 
 
                 <td
-                id="8ea8367d"
+                id="46f5a86f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11426,7 +11426,7 @@ data-spans__0__1
 
 
                 <th
-                id="be15c432"
+                id="85bcf99f"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11454,7 +11454,7 @@ data-spans__1__-1
 
 
                 <td
-                id="db8089e7"
+                id="fd9ba7f6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11484,7 +11484,7 @@ data-spans__1__0
 
 
                 <td
-                id="9ee4fc6d"
+                id="16b1d560"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11518,7 +11518,7 @@ data-spans__1__1
 
 
                 <th
-                id="c63ea30d"
+                id="57d0bc4e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11546,7 +11546,7 @@ data-spans__2__-1
 
 
                 <td
-                id="cb02c7cc"
+                id="ad126a1c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11576,7 +11576,7 @@ data-spans__2__0
 
 
                 <td
-                id="808d7222"
+                id="acd178e0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11610,7 +11610,7 @@ data-spans__2__1
 
 
                 <th
-                id="8ec70964"
+                id="148725c2"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11638,7 +11638,7 @@ data-spans__3__-1
 
 
                 <td
-                id="177d826e"
+                id="5ca44f35"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11668,7 +11668,7 @@ data-spans__3__0
 
 
                 <td
-                id="147137b0"
+                id="72b6d8ed"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11702,7 +11702,7 @@ data-spans__3__1
 
 
                 <th
-                id="25484542"
+                id="f5749f52"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11730,7 +11730,7 @@ data-spans__4__-1
 
 
                 <td
-                id="3de2c278"
+                id="202d0b80"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11760,7 +11760,7 @@ data-spans__4__0
 
 
                 <td
-                id="b94cb745"
+                id="216c9668"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11834,7 +11834,7 @@ data-spans__4__1
 
 
                 <th
-                id="ead03e9d"
+                id="e8dd5487"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11862,7 +11862,7 @@ data-spans__5__-1
 
 
                 <td
-                id="54998339"
+                id="54a3ae30"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11892,7 +11892,7 @@ data-spans__5__0
 
 
                 <td
-                id="85285049"
+                id="f312e98a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11926,7 +11926,7 @@ data-spans__5__1
 
 
                 <th
-                id="3e0ef73f"
+                id="00f3f61b"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11954,7 +11954,7 @@ data-spans__6__-1
 
 
                 <td
-                id="a741fd30"
+                id="8b56d70c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11988,7 +11988,7 @@ data-spans__6__0
 
 
                 <td
-                id="1bbef97d"
+                id="6d8c0cc4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12022,7 +12022,7 @@ data-spans__6__1
 
 
                 <th
-                id="04fedae4"
+                id="6fd69c11"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12050,7 +12050,7 @@ data-spans__7__-1
 
 
                 <td
-                id="fe65395e"
+                id="184302c8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12088,7 +12088,7 @@ data-spans__7__0
 
 
                 <td
-                id="e1bd30a4"
+                id="ee92bfcc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12122,7 +12122,7 @@ data-spans__7__1
 
 
                 <th
-                id="67a4ea93"
+                id="337714b4"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12150,7 +12150,7 @@ data-spans__8__-1
 
 
                 <td
-                id="b07dcacc"
+                id="318852c3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12180,7 +12180,7 @@ data-spans__8__0
 
 
                 <td
-                id="4c64cebb"
+                id="8e11a853"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12214,7 +12214,7 @@ data-spans__8__1
 
 
                 <th
-                id="9ae1f3a0"
+                id="7a66a161"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12242,7 +12242,7 @@ data-spans__9__-1
 
 
                 <td
-                id="054d0412"
+                id="01cb0647"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12274,7 +12274,7 @@ data-spans__9__0
 
 
                 <td
-                id="3ded7d69"
+                id="9ba08dd6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12945,7 +12945,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_8c38dd18">
+    <skrub-table-report class="report" id="report_623cb3df">
     </skrub-table-report>
 
     <script type="module">
@@ -14043,7 +14043,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_8c38dd18-wrapper-fallback">
+<div id="report_623cb3df-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -14054,8 +14054,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_8c38dd18-wrapper").removeAttribute("hidden");
- document.getElementById("report_8c38dd18-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_623cb3df-wrapper").removeAttribute("hidden");
+ document.getElementById("report_623cb3df-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -14128,8 +14128,8 @@ the number of components.</p>
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_bea8ef19-wrapper" hidden>
-    <template id="report_bea8ef19-template">
+<div id="report_8691db30-wrapper" hidden>
+    <template id="report_8691db30-template">
         <style>
          /*!
 Pure v3.0.0
@@ -15514,7 +15514,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="959767cb"
+                id="1a464972"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -15544,7 +15544,7 @@ data-spans__-1__-1
 
 
                 <th
-                id="6bc3787f"
+                id="d31675db"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15578,7 +15578,7 @@ data-spans__-1__0
 
 
                 <th
-                id="1d086b0e"
+                id="5fa6c52c"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15612,7 +15612,7 @@ data-spans__-1__1
 
 
                 <th
-                id="25e1b0c9"
+                id="9cea82e9"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15646,7 +15646,7 @@ data-spans__-1__2
 
 
                 <th
-                id="4a1a9ea5"
+                id="fcb89b28"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15680,7 +15680,7 @@ data-spans__-1__3
 
 
                 <th
-                id="8253e8a8"
+                id="b0106387"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15714,7 +15714,7 @@ data-spans__-1__4
 
 
                 <th
-                id="d7df32ee"
+                id="a330f860"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15748,7 +15748,7 @@ data-spans__-1__5
 
 
                 <th
-                id="9130e57f"
+                id="76b3ebed"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15782,7 +15782,7 @@ data-spans__-1__6
 
 
                 <th
-                id="f3d5dd81"
+                id="055bc308"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15816,7 +15816,7 @@ data-spans__-1__7
 
 
                 <th
-                id="2b170359"
+                id="cc33872c"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15850,7 +15850,7 @@ data-spans__-1__8
 
 
                 <th
-                id="cd04de01"
+                id="f27ba38b"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15898,7 +15898,7 @@ data-spans__-1__9
 
 
                 <th
-                id="a597c79a"
+                id="6eced5bc"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -15926,7 +15926,7 @@ data-spans__0__-1
 
 
                 <td
-                id="3e7618a7"
+                id="bf40d04a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15956,7 +15956,7 @@ data-spans__0__0
 
 
                 <td
-                id="f603aa3a"
+                id="10de6c06"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -15986,7 +15986,7 @@ data-spans__0__1
 
 
                 <td
-                id="66695548"
+                id="913f3630"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16016,7 +16016,7 @@ data-spans__0__2
 
 
                 <td
-                id="a9fa625c"
+                id="661d2b9c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16046,7 +16046,7 @@ data-spans__0__3
 
 
                 <td
-                id="e11dab8d"
+                id="3daab436"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16076,7 +16076,7 @@ data-spans__0__4
 
 
                 <td
-                id="b67a65d7"
+                id="5b731b7d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16106,7 +16106,7 @@ data-spans__0__5
 
 
                 <td
-                id="4a838517"
+                id="d58ccd23"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16136,7 +16136,7 @@ data-spans__0__6
 
 
                 <td
-                id="973fe729"
+                id="f0a4c401"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16166,7 +16166,7 @@ data-spans__0__7
 
 
                 <td
-                id="bafdb436"
+                id="585895eb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16196,7 +16196,7 @@ data-spans__0__8
 
 
                 <td
-                id="00169d0c"
+                id="1b3b039d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16230,7 +16230,7 @@ data-spans__0__9
 
 
                 <th
-                id="98aca614"
+                id="685b2878"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16258,7 +16258,7 @@ data-spans__1__-1
 
 
                 <td
-                id="600a2a2f"
+                id="824837a9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16288,7 +16288,7 @@ data-spans__1__0
 
 
                 <td
-                id="f027d4b3"
+                id="801d0843"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16318,7 +16318,7 @@ data-spans__1__1
 
 
                 <td
-                id="2f823f0e"
+                id="2a130dba"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16348,7 +16348,7 @@ data-spans__1__2
 
 
                 <td
-                id="40a70902"
+                id="b6b44f83"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16378,7 +16378,7 @@ data-spans__1__3
 
 
                 <td
-                id="b83da84a"
+                id="f7ffa8cf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16408,7 +16408,7 @@ data-spans__1__4
 
 
                 <td
-                id="66902495"
+                id="a6dd69a7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16438,7 +16438,7 @@ data-spans__1__5
 
 
                 <td
-                id="ee07f0d7"
+                id="429bae2f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16468,7 +16468,7 @@ data-spans__1__6
 
 
                 <td
-                id="149e126b"
+                id="f29e7cf6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16498,7 +16498,7 @@ data-spans__1__7
 
 
                 <td
-                id="73d59fc5"
+                id="78692932"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16528,7 +16528,7 @@ data-spans__1__8
 
 
                 <td
-                id="946efda1"
+                id="ef1ee97a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16562,7 +16562,7 @@ data-spans__1__9
 
 
                 <th
-                id="880b1077"
+                id="f41c4e06"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16590,7 +16590,7 @@ data-spans__2__-1
 
 
                 <td
-                id="b71448d2"
+                id="ce0c225f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16620,7 +16620,7 @@ data-spans__2__0
 
 
                 <td
-                id="d76fa9f4"
+                id="87be0751"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16650,7 +16650,7 @@ data-spans__2__1
 
 
                 <td
-                id="e4dcb1b8"
+                id="0dd5134e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16680,7 +16680,7 @@ data-spans__2__2
 
 
                 <td
-                id="c0b4b7b9"
+                id="3cc10d94"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16710,7 +16710,7 @@ data-spans__2__3
 
 
                 <td
-                id="57fa1fef"
+                id="c1d620d1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16740,7 +16740,7 @@ data-spans__2__4
 
 
                 <td
-                id="87e97490"
+                id="7d838019"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16770,7 +16770,7 @@ data-spans__2__5
 
 
                 <td
-                id="be51d1fa"
+                id="f90fe675"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16800,7 +16800,7 @@ data-spans__2__6
 
 
                 <td
-                id="01f935d3"
+                id="b5789605"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16830,7 +16830,7 @@ data-spans__2__7
 
 
                 <td
-                id="16d95729"
+                id="cb9f594b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16860,7 +16860,7 @@ data-spans__2__8
 
 
                 <td
-                id="f1a68bdc"
+                id="ccfdf03a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16894,7 +16894,7 @@ data-spans__2__9
 
 
                 <th
-                id="77f25a7b"
+                id="60637038"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16922,7 +16922,7 @@ data-spans__3__-1
 
 
                 <td
-                id="35f3ada2"
+                id="472c40f5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16952,7 +16952,7 @@ data-spans__3__0
 
 
                 <td
-                id="4868be53"
+                id="e6fd29e7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16982,7 +16982,7 @@ data-spans__3__1
 
 
                 <td
-                id="cb26dd7c"
+                id="4aa409bc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17012,7 +17012,7 @@ data-spans__3__2
 
 
                 <td
-                id="cbbec199"
+                id="4100cf4c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17042,7 +17042,7 @@ data-spans__3__3
 
 
                 <td
-                id="329afd32"
+                id="bf4a7f18"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17072,7 +17072,7 @@ data-spans__3__4
 
 
                 <td
-                id="1fb6cba3"
+                id="3c527716"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17102,7 +17102,7 @@ data-spans__3__5
 
 
                 <td
-                id="94f10c2e"
+                id="e7ce979e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17132,7 +17132,7 @@ data-spans__3__6
 
 
                 <td
-                id="225912b4"
+                id="12754b26"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17162,7 +17162,7 @@ data-spans__3__7
 
 
                 <td
-                id="e2f05c98"
+                id="290dce23"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17192,7 +17192,7 @@ data-spans__3__8
 
 
                 <td
-                id="4d6e4baa"
+                id="785b5a14"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17226,7 +17226,7 @@ data-spans__3__9
 
 
                 <th
-                id="f9e73ee3"
+                id="f4a91d85"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -17254,7 +17254,7 @@ data-spans__4__-1
 
 
                 <td
-                id="cd05e551"
+                id="1d0e213a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17284,7 +17284,7 @@ data-spans__4__0
 
 
                 <td
-                id="416d03e1"
+                id="beca1fe5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17314,7 +17314,7 @@ data-spans__4__1
 
 
                 <td
-                id="69488124"
+                id="290db186"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17344,7 +17344,7 @@ data-spans__4__2
 
 
                 <td
-                id="3a4ffdd8"
+                id="9234bcd0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17374,7 +17374,7 @@ data-spans__4__3
 
 
                 <td
-                id="0c6aec89"
+                id="ea374bbe"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17404,7 +17404,7 @@ data-spans__4__4
 
 
                 <td
-                id="ce7fb82a"
+                id="a835e2c9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17434,7 +17434,7 @@ data-spans__4__5
 
 
                 <td
-                id="e5b050ce"
+                id="2df8be71"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17464,7 +17464,7 @@ data-spans__4__6
 
 
                 <td
-                id="4ebfe2a0"
+                id="0b9a377c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17494,7 +17494,7 @@ data-spans__4__7
 
 
                 <td
-                id="bc78d0fc"
+                id="852436b1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17524,7 +17524,7 @@ data-spans__4__8
 
 
                 <td
-                id="a56d2b20"
+                id="fd749cce"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17678,7 +17678,7 @@ data-spans__4__9
 
 
                 <th
-                id="adfd304e"
+                id="248cda49"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -17706,7 +17706,7 @@ data-spans__5__-1
 
 
                 <td
-                id="c12e8711"
+                id="bc1f5a85"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17736,7 +17736,7 @@ data-spans__5__0
 
 
                 <td
-                id="78eba646"
+                id="92e48ce7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17766,7 +17766,7 @@ data-spans__5__1
 
 
                 <td
-                id="7f276157"
+                id="b5119339"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17796,7 +17796,7 @@ data-spans__5__2
 
 
                 <td
-                id="03a18e8a"
+                id="005e848a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17826,7 +17826,7 @@ data-spans__5__3
 
 
                 <td
-                id="95c16dc0"
+                id="569ea6bb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17856,7 +17856,7 @@ data-spans__5__4
 
 
                 <td
-                id="354bc365"
+                id="17a4f2e8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17886,7 +17886,7 @@ data-spans__5__5
 
 
                 <td
-                id="c554cbf2"
+                id="c5d9b8fe"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17916,7 +17916,7 @@ data-spans__5__6
 
 
                 <td
-                id="5f8ef4c4"
+                id="5856b4ce"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17946,7 +17946,7 @@ data-spans__5__7
 
 
                 <td
-                id="53bc4299"
+                id="cb38489b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17976,7 +17976,7 @@ data-spans__5__8
 
 
                 <td
-                id="a7d67427"
+                id="e4d1aa9c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18010,7 +18010,7 @@ data-spans__5__9
 
 
                 <th
-                id="f9796115"
+                id="cb33014a"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -18038,7 +18038,7 @@ data-spans__6__-1
 
 
                 <td
-                id="588dd04a"
+                id="f8536b22"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18068,7 +18068,7 @@ data-spans__6__0
 
 
                 <td
-                id="3edcd0fc"
+                id="64658fc7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18098,7 +18098,7 @@ data-spans__6__1
 
 
                 <td
-                id="580bf587"
+                id="ee07140a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18128,7 +18128,7 @@ data-spans__6__2
 
 
                 <td
-                id="f617eb51"
+                id="ca1513ef"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18158,7 +18158,7 @@ data-spans__6__3
 
 
                 <td
-                id="9e7458c0"
+                id="cdcd913e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18188,7 +18188,7 @@ data-spans__6__4
 
 
                 <td
-                id="a0a4a8e9"
+                id="e9dffea7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18218,7 +18218,7 @@ data-spans__6__5
 
 
                 <td
-                id="409a402d"
+                id="5311d45d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18248,7 +18248,7 @@ data-spans__6__6
 
 
                 <td
-                id="cf31c56e"
+                id="67146b9b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18278,7 +18278,7 @@ data-spans__6__7
 
 
                 <td
-                id="480883fa"
+                id="d8cb850b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18308,7 +18308,7 @@ data-spans__6__8
 
 
                 <td
-                id="ac995f3a"
+                id="5d776f81"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18342,7 +18342,7 @@ data-spans__6__9
 
 
                 <th
-                id="f03d1626"
+                id="f226c0fa"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -18370,7 +18370,7 @@ data-spans__7__-1
 
 
                 <td
-                id="d93f241f"
+                id="b262d5df"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18400,7 +18400,7 @@ data-spans__7__0
 
 
                 <td
-                id="a3f3e39e"
+                id="bbc4e50b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18430,7 +18430,7 @@ data-spans__7__1
 
 
                 <td
-                id="4d424cbf"
+                id="1d970ad0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18460,7 +18460,7 @@ data-spans__7__2
 
 
                 <td
-                id="49520ae2"
+                id="fb92220b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18490,7 +18490,7 @@ data-spans__7__3
 
 
                 <td
-                id="347bd415"
+                id="04567952"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18520,7 +18520,7 @@ data-spans__7__4
 
 
                 <td
-                id="183d9afd"
+                id="3df34ff8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18550,7 +18550,7 @@ data-spans__7__5
 
 
                 <td
-                id="37d3074e"
+                id="0b069546"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18580,7 +18580,7 @@ data-spans__7__6
 
 
                 <td
-                id="8204bb04"
+                id="a3204b4e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18610,7 +18610,7 @@ data-spans__7__7
 
 
                 <td
-                id="e86256c5"
+                id="9a137338"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18640,7 +18640,7 @@ data-spans__7__8
 
 
                 <td
-                id="187bc889"
+                id="220a8562"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18674,7 +18674,7 @@ data-spans__7__9
 
 
                 <th
-                id="7be4339d"
+                id="bc5584ff"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -18702,7 +18702,7 @@ data-spans__8__-1
 
 
                 <td
-                id="4b504ccf"
+                id="1450c5f4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18732,7 +18732,7 @@ data-spans__8__0
 
 
                 <td
-                id="7798a165"
+                id="794e4c0b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18762,7 +18762,7 @@ data-spans__8__1
 
 
                 <td
-                id="885f24b5"
+                id="64257e3b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18792,7 +18792,7 @@ data-spans__8__2
 
 
                 <td
-                id="b5b81a04"
+                id="b6d3ac0c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18822,7 +18822,7 @@ data-spans__8__3
 
 
                 <td
-                id="7d995838"
+                id="8b547b78"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18852,7 +18852,7 @@ data-spans__8__4
 
 
                 <td
-                id="218993a0"
+                id="71370923"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18882,7 +18882,7 @@ data-spans__8__5
 
 
                 <td
-                id="afee6539"
+                id="2685fb29"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18912,7 +18912,7 @@ data-spans__8__6
 
 
                 <td
-                id="d87a274b"
+                id="467aa252"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18942,7 +18942,7 @@ data-spans__8__7
 
 
                 <td
-                id="677e7b1f"
+                id="cfd702dc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18972,7 +18972,7 @@ data-spans__8__8
 
 
                 <td
-                id="b955be07"
+                id="ffd2e6c5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19006,7 +19006,7 @@ data-spans__8__9
 
 
                 <th
-                id="584f6a39"
+                id="220b6085"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -19034,7 +19034,7 @@ data-spans__9__-1
 
 
                 <td
-                id="24fe0661"
+                id="c9ecb419"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19064,7 +19064,7 @@ data-spans__9__0
 
 
                 <td
-                id="9aacc9df"
+                id="2b34c50b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19094,7 +19094,7 @@ data-spans__9__1
 
 
                 <td
-                id="d7e207ad"
+                id="c6de4d2c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19124,7 +19124,7 @@ data-spans__9__2
 
 
                 <td
-                id="c43b76b0"
+                id="90c80aad"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19154,7 +19154,7 @@ data-spans__9__3
 
 
                 <td
-                id="0bf9ac8c"
+                id="254db42b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19184,7 +19184,7 @@ data-spans__9__4
 
 
                 <td
-                id="74c17f4a"
+                id="204f18b5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19214,7 +19214,7 @@ data-spans__9__5
 
 
                 <td
-                id="a133459d"
+                id="3144d587"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19244,7 +19244,7 @@ data-spans__9__6
 
 
                 <td
-                id="f513b752"
+                id="9e1a0faf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19274,7 +19274,7 @@ data-spans__9__7
 
 
                 <td
-                id="ad447c3d"
+                id="05b4517e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19304,7 +19304,7 @@ data-spans__9__8
 
 
                 <td
-                id="68fb9ee1"
+                id="86bc99fd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -20959,7 +20959,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_bea8ef19">
+    <skrub-table-report class="report" id="report_8691db30">
     </skrub-table-report>
 
     <script type="module">
@@ -22057,7 +22057,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_bea8ef19-wrapper-fallback">
+<div id="report_8691db30-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -22068,8 +22068,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_bea8ef19-wrapper").removeAttribute("hidden");
- document.getElementById("report_bea8ef19-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_8691db30-wrapper").removeAttribute("hidden");
+ document.getElementById("report_8691db30-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -22115,7 +22115,7 @@ hyperparameters of each classifier.</p>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
 <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha256-Ei4740bWZhaUTQuD6q9yQlgVCMPBz6CZWhevDYPv93A=" crossorigin="anonymous"></script>                <div id="f221fe71-7045-4174-af74-74171f145d95" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("f221fe71-7045-4174-af74-74171f145d95")) {                    Plotly.newPlot(                        "f221fe71-7045-4174-af74-74171f145d95",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkDuET9Lx9sXQDF74AGzECZA8ABcLDkEIEB7Z1lGJwQsQMDUbB+h5ytAAAAAAAAAFECI\u002fad49PghQEMw6cJw+yFAAAAAAAAALkDD9sq\u002fjfwXQI+H7z3O2RdA\u002fcmitlfxI0DZDNPRd+cfQFINnfDS8SdAfxtWIpv\u002fJ0A="}},{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwP\u002fSgYzJk4u8\u002fqPe0VDbz7z8AAAAAAADwPwAAAAAAAPA\u002fAAAAAAAA8D\u002fkebWiBvbvPwAAAAAAAPA\u002fAAAAAAAA8D8v4Q1Ow9rvPwAAAAAAAPA\u002fAAAAAAAA8D8="}},{"label":"lr","ticktext":["NaN","0.01","0.02","0.03","0.04","0.06","0.08","0.13","0.19","0.28","0.42"],"tickvals":[-4.842913055511124,-4.481931229268992,-4.080840311222178,-3.6797493931753644,-3.278658475128551,-2.877567557081737,-2.4764766390349235,-2.07538572098811,-1.6742948029412963,-1.2732038848944827,-0.872112966847669],"values":{"dtype":"f8","bdata":"4gO92vpUBMC2KpuZJF8TwPm2xPEKKvm\u002fOevheyYbAsCY5+BzWejrv2L1CYT89RHARiufBxzv87+N3BfGPF8BwNTYrncUvQbAtiqbmSRfE8CM\u002fVmfr1ETwLYqm5kkXxPAM6T8zydVE8CSl7n8p1MTwLYqm5kkXxPAz9qys59TE8A="}},{"label":"\u03b1","ticktext":["NaN","0","0","0","0","1","2","5","11","24","54"],"tickvals":[-3.9772483789581226,-3.253498479969906,-2.449331925538554,-1.6451653711072027,-0.8409988166758513,-0.036832262244499425,0.7673342921868525,1.5715008466182034,2.3756674010495553,3.179833955480907,3.984000509912259],"values":{"dtype":"f8","bdata":"n40dmWfRD8BbHX+NHMcLQEZp2e9Ezw\u002fAwlq8Inq1D8CfjR2ZZ9EPwCLnnNmnow\u002fAfqgS1YufD8CfjR2ZZ9EPwJ+NHZln0Q\u002fAVpDKqDvfD0BrPwJLmR8GwJZKgZlmzwRABiENUf1X\u002fD\u002fzGmQRkvUJwChKkyXWOgZACgKGSM\u002f0C0A="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAADwPwNQ48mlE3E\u002fAAAAAAAAAAAAAAAAAAAAAMFsnX7TzXA\u002fNMNP5iXhUz8AAAAAAAAAAMyAH16o4GM\u002fAAAAAAAA8D8AAAAAAADwPwAAAAAAAPA\u002fbuI0oqHy7z8AAAAAAADwP3mryl+G\u002fu8\u002fAAAAAAAA8D8="}},{"label":"score time","ticktext":["0.10","0.12","0.14","0.16","0.18","0.20","0.22","0.24","0.25","0.27"],"tickvals":[0.10253376960754394,0.12152022785610622,0.14050668610466852,0.1594931443532308,0.17847960260179307,0.19746606085035534,0.21645251909891766,0.23543897734747993,0.2544254355960422,0.2734118938446045],"values":{"dtype":"f8","bdata":"taOqC3oRzD\u002f0+JRJ8qjGP3h\u002f6cDwkdA\u002fURjz\u002fKoNzj8tODTH86nNP5qZmZmUf9E\u002fZpxytKtIwz9YpVEMUanJPyh2IhZbQM4\u002fGxd0Fm6ixD\u002f9J0YeaGm+P+l3WIylors\u002fbsf6I4Phyj8zMzMzpz+6PxkwAHDGTsE\u002fObDyFgRtwj8="}},{"label":"fit time","ticktext":["0.2","0.4","0.5","0.7","0.9","1.0","1.2","1.4","1.5","1.7"],"tickvals":[0.21796741485595703,0.38176413112216523,0.5455608473883735,0.7093575636545817,0.87315427992079,1.036950996186998,1.2007477124532064,1.3645444287194146,1.5283411449856228,1.692137861251831],"values":{"dtype":"f8","bdata":"ZmZmJv8S+z8qik+2AWfkPzmzXmYw3\u002fg\u002fIp4yga77+T9q9QvCXXD1P6B\u002fCHDcdPQ\u002frBp14Lsk7z8Y5E5N5lnxP02EDQtimPE\u002fIla573Wy1z9IUtotKrTSPzMzMzNb5ss\u002fmrxLYTeR3T\u002f7FZL\u002fEqnOP4OcNnLFBNk\u002fbq9HeUe10j8="}},{"label":"score","ticktext":["0.47","0.50","0.54","0.58","0.61","0.65","0.68","0.72","0.76","0.79"],"tickvals":[0.46900000000000003,0.5047777777777778,0.5405555555555556,0.5763333333333334,0.6121111111111112,0.647888888888889,0.6836666666666666,0.7194444444444444,0.7552222222222222,0.791],"values":{"dtype":"f8","bdata":"HVpkO99P6T\u002f2KFyPwvXoPyuHFtnO9+c\u002fVg4tsp3v5z86tMh2vp\u002fiP5LtfD81XuI\u002fQmDl0CLb4T9t5\u002fup8dLhP8L1KFyPwuE\u002fTmIQWDm04D8NAiuHFtnePw0CK4cW2d4\u002fvXSTGARW3j8Sg8DKoUXeP2u8dJMYBN4\u002fa7x0kxgE3j8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"HVpkO99P6T\u002f2KFyPwvXoPyuHFtnO9+c\u002fVg4tsp3v5z86tMh2vp\u002fiP5LtfD81XuI\u002fQmDl0CLb4T9t5\u002fup8dLhP8L1KFyPwuE\u002fTmIQWDm04D8NAiuHFtnePw0CK4cW2d4\u002fvXSTGARW3j8Sg8DKoUXeP2u8dJMYBN4\u002fa7x0kxgE3j8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha256-Ei4740bWZhaUTQuD6q9yQlgVCMPBz6CZWhevDYPv93A=" crossorigin="anonymous"></script>                <div id="90c30943-48de-46d1-b597-cdcb978cff82" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("90c30943-48de-46d1-b597-cdcb978cff82")) {                    Plotly.newPlot(                        "90c30943-48de-46d1-b597-cdcb978cff82",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkDuET9Lx9sXQDF74AGzECZA8ABcLDkEIEB7Z1lGJwQsQMDUbB+h5ytAAAAAAAAAFECI\u002fad49PghQEMw6cJw+yFAAAAAAAAALkDD9sq\u002fjfwXQI+H7z3O2RdA\u002fcmitlfxI0DZDNPRd+cfQFINnfDS8SdAfxtWIpv\u002fJ0A="}},{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwP\u002fSgYzJk4u8\u002fqPe0VDbz7z8AAAAAAADwPwAAAAAAAPA\u002fAAAAAAAA8D\u002fkebWiBvbvPwAAAAAAAPA\u002fAAAAAAAA8D8v4Q1Ow9rvPwAAAAAAAPA\u002fAAAAAAAA8D8="}},{"label":"lr","ticktext":["NaN","0.01","0.02","0.03","0.04","0.06","0.08","0.13","0.19","0.28","0.42"],"tickvals":[-4.842913055511124,-4.481931229268992,-4.080840311222178,-3.6797493931753644,-3.278658475128551,-2.877567557081737,-2.4764766390349235,-2.07538572098811,-1.6742948029412963,-1.2732038848944827,-0.872112966847669],"values":{"dtype":"f8","bdata":"4gO92vpUBMC2KpuZJF8TwPm2xPEKKvm\u002fOevheyYbAsCY5+BzWejrv2L1CYT89RHARiufBxzv87+N3BfGPF8BwNTYrncUvQbAtiqbmSRfE8CM\u002fVmfr1ETwLYqm5kkXxPAM6T8zydVE8CSl7n8p1MTwLYqm5kkXxPAz9qys59TE8A="}},{"label":"\u03b1","ticktext":["NaN","0","0","0","0","1","2","5","11","24","54"],"tickvals":[-3.9772483789581226,-3.253498479969906,-2.449331925538554,-1.6451653711072027,-0.8409988166758513,-0.036832262244499425,0.7673342921868525,1.5715008466182034,2.3756674010495553,3.179833955480907,3.984000509912259],"values":{"dtype":"f8","bdata":"n40dmWfRD8BbHX+NHMcLQEZp2e9Ezw\u002fAwlq8Inq1D8CfjR2ZZ9EPwCLnnNmnow\u002fAfqgS1YufD8CfjR2ZZ9EPwJ+NHZln0Q\u002fAVpDKqDvfD0BrPwJLmR8GwJZKgZlmzwRABiENUf1X\u002fD\u002fzGmQRkvUJwChKkyXWOgZACgKGSM\u002f0C0A="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAADwPwNQ48mlE3E\u002fAAAAAAAAAAAAAAAAAAAAAMFsnX7TzXA\u002fNMNP5iXhUz8AAAAAAAAAAMyAH16o4GM\u002fAAAAAAAA8D8AAAAAAADwPwAAAAAAAPA\u002fbuI0oqHy7z8AAAAAAADwP3mryl+G\u002fu8\u002fAAAAAAAA8D8="}},{"label":"score time","ticktext":["0.09","0.10","0.12","0.13","0.14","0.16","0.17","0.18","0.20","0.21"],"tickvals":[0.09154510498046875,0.10448088116115994,0.11741665734185112,0.1303524335225423,0.1432882097032335,0.1562239858839247,0.16915976206461586,0.18209553824530705,0.19503131442599825,0.20796709060668944],"values":{"dtype":"f8","bdata":"FSMq\u002fy1iwz9YYu79yQfDP+0wJdkhz8M\u002f40zgr2EMxT+6OZAm5EbKP2ZmZmaqnso\u002fvh5a0Cdovz\u002fY2njJawvGP6W8AEylT8g\u002f5KXdnoCfvD9uQ9jpBxTAPwAAAACAb7c\u002fJoqaRkgexT8prPFsPPa3P9WuVGcnubk\u002fTCjoErGOuz8="}},{"label":"fit time","ticktext":["0.2","0.3","0.5","0.6","0.7","0.8","1.0","1.1","1.2","1.4"],"tickvals":[0.1903780460357666,0.32051696247524686,0.45065587891472714,0.5807947953542073,0.7109337117936876,0.8410726282331679,0.971211544672648,1.1013504611121283,1.2314893775516087,1.3616282939910889],"values":{"dtype":"f8","bdata":"AAAAwDrJ9T+CFuFnXxTfP0elTPzKavM\u002fjKpT\u002f+9h8z9t8cxF+xvxP8olhG3EbvE\u002fiCt\u002fB0q16T9upTnnGYDuP\u002f3OO8FRDe4\u002fDNt\u002fegRF1D+Snb04lYLOP83MzMxOXsg\u002f7C3Xomll0z+wXLv3PubJP5FZ0JHu4tI\u002fAlCMQnJi0T8="}},{"label":"score","ticktext":["0.47","0.50","0.54","0.58","0.61","0.65","0.68","0.72","0.76","0.79"],"tickvals":[0.46900000000000003,0.5048888888888889,0.5407777777777778,0.5766666666666667,0.6125555555555555,0.6484444444444445,0.6843333333333333,0.7202222222222223,0.7561111111111112,0.792],"values":{"dtype":"f8","bdata":"8tJNYhBY6T\u002fNzMzMzMzoP4GVQ4ts5+c\u002fLbKd76fG5z86tMh2vp\u002fiP5LtfD81XuI\u002fQmDl0CLb4T9t5\u002fup8dLhP8L1KFyPwuE\u002fTmIQWDm04D8NAiuHFtnePw0CK4cW2d4\u002fvXSTGARW3j8Sg8DKoUXeP2u8dJMYBN4\u002fa7x0kxgE3j8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"8tJNYhBY6T\u002fNzMzMzMzoP4GVQ4ts5+c\u002fLbKd76fG5z86tMh2vp\u002fiP5LtfD81XuI\u002fQmDl0CLb4T9t5\u002fup8dLhP8L1KFyPwuE\u002fTmIQWDm04D8NAiuHFtnePw0CK4cW2d4\u002fvXSTGARW3j8Sg8DKoUXeP2u8dJMYBN4\u002fa7x0kxgE3j8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br /><p>Now that we have a more complex plan, we can draw more conclusions from the
@@ -22133,7 +22133,7 @@ their hyperparameters: they can be used anywhere DataOps are used,
 such as the argument of a <a class="reference internal" href="../../reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> function, or the argument of
 other DataOps’ methods or operators. Additionally, choices can be
 inter-dependent. Find more information in the <a class="reference internal" href="../../modules/data_ops/validation/tuning_validating_data_ops.html#user-guide-data-ops-tuning-validating-dataops"><span class="std std-ref">user guide</span></a>.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 54.079 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 42.134 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-data-ops-13-choices-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/data_ops/13_choices.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo1.svg" style="width: 150px;" />
