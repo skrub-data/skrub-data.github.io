@@ -618,6 +618,7 @@
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.DataOp.skb.make_grid_search.html">skrub.DataOp.skb.make_grid_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.DataOp.skb.make_randomized_search.html">skrub.DataOp.skb.make_randomized_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.DataOp.skb.if_else.html">skrub.DataOp.skb.if_else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.DataOp.skb.iter_cv_splits.html">skrub.DataOp.skb.iter_cv_splits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.DataOp.skb.iter_learners_grid.html">skrub.DataOp.skb.iter_learners_grid</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.DataOp.skb.iter_learners_randomized.html">skrub.DataOp.skb.iter_learners_randomized</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.DataOp.skb.mark_as_X.html">skrub.DataOp.skb.mark_as_X</a></li>
@@ -848,37 +849,40 @@
 <tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.if_else.html#skrub.DataOp.skb.if_else" title="skrub.DataOp.skb.if_else"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.if_else</span></code></a></p></td>
 <td><p>Create a conditional DataOp.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.iter_learners_grid.html#skrub.DataOp.skb.iter_learners_grid" title="skrub.DataOp.skb.iter_learners_grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.iter_learners_grid</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.iter_cv_splits.html#skrub.DataOp.skb.iter_cv_splits" title="skrub.DataOp.skb.iter_cv_splits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.iter_cv_splits</span></code></a></p></td>
+<td><p>Yield splits of an environment into training and testing environments.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.iter_learners_grid.html#skrub.DataOp.skb.iter_learners_grid" title="skrub.DataOp.skb.iter_learners_grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.iter_learners_grid</span></code></a></p></td>
 <td><p>Get learners with different parameter combinations.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.iter_learners_randomized.html#skrub.DataOp.skb.iter_learners_randomized" title="skrub.DataOp.skb.iter_learners_randomized"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.iter_learners_randomized</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.iter_learners_randomized.html#skrub.DataOp.skb.iter_learners_randomized" title="skrub.DataOp.skb.iter_learners_randomized"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.iter_learners_randomized</span></code></a></p></td>
 <td><p>Get learners with different parameter combinations.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.mark_as_X</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.mark_as_X</span></code></a></p></td>
 <td><p>Mark this DataOp as being the <code class="docutils literal notranslate"><span class="pre">X</span></code> table.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.mark_as_y</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.mark_as_y</span></code></a></p></td>
 <td><p>Mark this DataOp as being the <code class="docutils literal notranslate"><span class="pre">y</span></code> table.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.match.html#skrub.DataOp.skb.match" title="skrub.DataOp.skb.match"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.match</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.match.html#skrub.DataOp.skb.match" title="skrub.DataOp.skb.match"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.match</span></code></a></p></td>
 <td><p>Select based on the value of a DataOp.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.preview.html#skrub.DataOp.skb.preview" title="skrub.DataOp.skb.preview"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.preview</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.preview.html#skrub.DataOp.skb.preview" title="skrub.DataOp.skb.preview"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.preview</span></code></a></p></td>
 <td><p>Get the value computed for previews (shown when printing the DataOp).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.select.html#skrub.DataOp.skb.select" title="skrub.DataOp.skb.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.select</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.select.html#skrub.DataOp.skb.select" title="skrub.DataOp.skb.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.select</span></code></a></p></td>
 <td><p>Select a subset of columns.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.set_description.html#skrub.DataOp.skb.set_description" title="skrub.DataOp.skb.set_description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.set_description</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.set_description.html#skrub.DataOp.skb.set_description" title="skrub.DataOp.skb.set_description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.set_description</span></code></a></p></td>
 <td><p>Give a description to this DataOp.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.set_name.html#skrub.DataOp.skb.set_name" title="skrub.DataOp.skb.set_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.set_name</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.set_name.html#skrub.DataOp.skb.set_name" title="skrub.DataOp.skb.set_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.set_name</span></code></a></p></td>
 <td><p>Give a name to this DataOp.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.subsample.html#skrub.DataOp.skb.subsample" title="skrub.DataOp.skb.subsample"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.subsample</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.subsample.html#skrub.DataOp.skb.subsample" title="skrub.DataOp.skb.subsample"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.subsample</span></code></a></p></td>
 <td><p>Configure subsampling of a dataframe or numpy array.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.train_test_split.html#skrub.DataOp.skb.train_test_split" title="skrub.DataOp.skb.train_test_split"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.train_test_split</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DataOp.skb.train_test_split.html#skrub.DataOp.skb.train_test_split" title="skrub.DataOp.skb.train_test_split"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.train_test_split</span></code></a></p></td>
 <td><p>Split an environment into a training an testing environments.</p></td>
 </tr>
 </tbody>

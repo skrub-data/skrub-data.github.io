@@ -622,6 +622,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html">skrub.DataOp.skb.make_grid_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html">skrub.DataOp.skb.make_randomized_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.if_else.html">skrub.DataOp.skb.if_else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_cv_splits.html">skrub.DataOp.skb.iter_cv_splits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_grid.html">skrub.DataOp.skb.iter_learners_grid</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_randomized.html">skrub.DataOp.skb.iter_learners_randomized</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html">skrub.DataOp.skb.mark_as_X</a></li>
@@ -737,7 +738,7 @@
 <h1>Cleaner<a class="headerlink" href="#cleaner" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.Cleaner">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">Cleaner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drop_null_fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_if_constant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_if_unique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetime_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numeric_dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/_table_vectorizer.py#L155"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">Cleaner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drop_null_fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_if_constant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_if_unique</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datetime_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numeric_dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/_table_vectorizer.py#L155"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner" title="Link to this definition">#</a></dt>
 <dd><p>Column-wise consistency checks and sanitization of dtypes, null values and dates.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">Cleaner</span></code> performs some consistency checks and basic preprocessing
 such as detecting null values represented as strings (e.g. <code class="docutils literal notranslate"><span class="pre">'N/A'</span></code>), parsing
@@ -745,7 +746,7 @@ dates, and removing uninformative columns. See the “Notes” section for a ful
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>drop_null_fraction</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=1.0</span></dt><dd><p>Fraction of null above which the column is dropped. If <code class="docutils literal notranslate"><span class="pre">drop_null_fraction</span></code>
+<dt><strong>drop_null_fraction</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=1.0</span></dt><dd><p>Fraction of null above which the column is dropped. If <code class="docutils literal notranslate"><span class="pre">drop_null_fraction</span></code>
 is set to <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, the column is dropped if it contains only
 nulls or NaNs (this is the default behavior). If <code class="docutils literal notranslate"><span class="pre">drop_null_fraction</span></code> is a
 number in <code class="docutils literal notranslate"><span class="pre">[0.0,</span> <span class="pre">1.0)</span></code>, the column is dropped if the fraction of nulls
@@ -753,19 +754,19 @@ is strictly larger than <code class="docutils literal notranslate"><span class="
 <code class="docutils literal notranslate"><span class="pre">None</span></code>, this selection is disabled: no columns are dropped based on the
 number of null values they contain.</p>
 </dd>
-<dt><strong>drop_if_constant</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>If set to true, drop columns that contain a single unique value. Note that
+<dt><strong>drop_if_constant</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>If set to true, drop columns that contain a single unique value. Note that
 missing values are considered as one additional distinct value.</p>
 </dd>
-<dt><strong>drop_if_unique</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>If set to true, drop columns that contain only unique values, i.e., the number
+<dt><strong>drop_if_unique</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>If set to true, drop columns that contain only unique values, i.e., the number
 of unique values is equal to the number of rows in the column. Numeric columns
 are never dropped.</p>
 </dd>
-<dt><strong>datetime_format</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>The format to use when parsing dates. If None, the format is inferred.</p>
+<dt><strong>datetime_format</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>The format to use when parsing dates. If None, the format is inferred.</p>
 </dd>
-<dt><strong>numeric_dtype</strong><span class="classifier">“float32” or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=None</span></dt><dd><p>If set to <code class="docutils literal notranslate"><span class="pre">float32</span></code>, convert numeric columns to <code class="docutils literal notranslate"><span class="pre">np.float32</span></code> dtype. If
+<dt><strong>numeric_dtype</strong><span class="classifier">“float32” or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=None</span></dt><dd><p>If set to <code class="docutils literal notranslate"><span class="pre">float32</span></code>, convert numeric columns to <code class="docutils literal notranslate"><span class="pre">np.float32</span></code> dtype. If
 <code class="docutils literal notranslate"><span class="pre">None</span></code>, numerical dtypes are not modified.</p>
 </dd>
-<dt><strong>n_jobs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=None</span></dt><dd><p>Number of jobs to run in parallel.
+<dt><strong>n_jobs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=None</span></dt><dd><p>Number of jobs to run in parallel.
 <code class="docutils literal notranslate"><span class="pre">None</span></code> means 1 unless in a joblib <code class="docutils literal notranslate"><span class="pre">parallel_backend</span></code> context.
 <code class="docutils literal notranslate"><span class="pre">-1</span></code> means using all processors.</p>
 </dd>
@@ -773,7 +774,7 @@ are never dropped.</p>
 </dd>
 <dt class="field-even">Attributes<span class="colon">:</span></dt>
 <dd class="field-even"><dl>
-<dt><strong>all_processing_steps_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Maps the name of each column to a list of all the processing steps that were
+<dt><strong>all_processing_steps_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Maps the name of each column to a list of all the processing steps that were
 applied to it.</p>
 </dd>
 </dl>
@@ -892,14 +893,14 @@ suitable to those of the column (e.g., <code class="docutils literal notranslate
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Cleaner.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/_table_vectorizer.py#L370"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.fit" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/_table_vectorizer.py#L370"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.fit" title="Link to this definition">#</a></dt>
 <dd><p>Fit transformer.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>X</strong><span class="classifier">dataframe of shape (n_samples, n_features)</span></dt><dd><p>Input data to transform.</p>
 </dd>
-<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v2.3)"><span>array_like</span></a>, shape (n_samples,) or (n_samples, n_outputs) or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>,                 default=None</span></dt><dd><p>Target values for supervised learning (None for unsupervised
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v2.3)"><span>array_like</span></a>, shape (n_samples,) or (n_samples, n_outputs) or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>,                 default=None</span></dt><dd><p>Target values for supervised learning (None for unsupervised
 transformations).</p>
 </dd>
 </dl>
@@ -915,14 +916,14 @@ transformations).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Cleaner.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/_table_vectorizer.py#L311"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/_table_vectorizer.py#L311"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit transformer and transform dataframe.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>X</strong><span class="classifier">dataframe of shape (n_samples, n_features)</span></dt><dd><p>Input data to transform.</p>
 </dd>
-<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v2.3)"><span>array_like</span></a> of shape (n_samples,) or (n_samples, n_outputs) or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>,                 default=None</span></dt><dd><p>Target values for supervised learning (None for unsupervised
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v2.3)"><span>array_like</span></a> of shape (n_samples,) or (n_samples, n_outputs) or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>,                 default=None</span></dt><dd><p>Target values for supervised learning (None for unsupervised
 transformations).</p>
 </dd>
 </dl>
@@ -938,19 +939,19 @@ transformations).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Cleaner.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>deep</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>If True, will return the parameters for this estimator and
+<dt><strong>deep</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>If True, will return the parameters for this estimator and
 contained subobjects that are estimators.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl>
-<dt><strong>params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Parameter names mapped to their values.</p>
+<dt><strong>params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Parameter names mapped to their values.</p>
 </dd>
 </dl>
 </dd>
@@ -959,7 +960,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Cleaner.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/utils/_set_output.py#L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/utils/_set_output.py#L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.7)"><span>Introducing the set_output API</span></a>
 for an example on how to use the API.</p>
@@ -990,7 +991,7 @@ for an example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Cleaner.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L317"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L317"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -999,7 +1000,7 @@ possible to update each component of a nested object.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>**params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Estimator parameters.</p>
+<dt><strong>**params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Estimator parameters.</p>
 </dd>
 </dl>
 </dd>
@@ -1014,7 +1015,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.Cleaner.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/_table_vectorizer.py#L355"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/_table_vectorizer.py#L355"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.Cleaner.transform" title="Link to this definition">#</a></dt>
 <dd><p>Transform dataframe.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>

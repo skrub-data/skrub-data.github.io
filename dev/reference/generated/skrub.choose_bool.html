@@ -620,6 +620,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html">skrub.DataOp.skb.make_grid_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html">skrub.DataOp.skb.make_randomized_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.if_else.html">skrub.DataOp.skb.if_else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_cv_splits.html">skrub.DataOp.skb.iter_cv_splits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_grid.html">skrub.DataOp.skb.iter_learners_grid</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_randomized.html">skrub.DataOp.skb.iter_learners_randomized</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html">skrub.DataOp.skb.mark_as_X</a></li>
@@ -735,7 +736,7 @@
 <h1>choose_bool<a class="headerlink" href="#choose-bool" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.choose_bool">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">choose_bool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/_data_ops/_choosing.py#L559"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.choose_bool" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">choose_bool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/_data_ops/_choosing.py#L559"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.choose_bool" title="Link to this definition">#</a></dt>
 <dd><p>A choice between <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <p>When a learner is fitted <em>without hyperparameter tuning</em>, the outcome of
 this choice is <code class="docutils literal notranslate"><span class="pre">True</span></code>. Pass <code class="docutils literal notranslate"><span class="pre">default=False</span></code> to make <code class="docutils literal notranslate"><span class="pre">False</span></code> the
@@ -743,11 +744,11 @@ default outcome.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>name</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, optional (default=None)</span></dt><dd><p>If not <code class="docutils literal notranslate"><span class="pre">None</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code> is used when displaying search results and
+<dt><strong>name</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, optional (default=None)</span></dt><dd><p>If not <code class="docutils literal notranslate"><span class="pre">None</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code> is used when displaying search results and
 can also be used to override the choice’s value by setting it in the
 environment containing a learner’s inputs.</p>
 </dd>
-<dt><strong>default</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, optional (default=True)</span></dt><dd><p>Choice’s default value when hyperparameter search is not used.</p>
+<dt><strong>default</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, optional (default=True)</span></dt><dd><p>Choice’s default value when hyperparameter search is not used.</p>
 </dd>
 </dl>
 </dd>

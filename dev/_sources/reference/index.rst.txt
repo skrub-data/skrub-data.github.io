@@ -423,6 +423,9 @@ DataOps
   DataOp.skb.if_else
 
 
+  DataOp.skb.iter_cv_splits
+
+
   DataOp.skb.iter_learners_grid
 
 

@@ -622,6 +622,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html">skrub.DataOp.skb.make_grid_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html">skrub.DataOp.skb.make_randomized_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.if_else.html">skrub.DataOp.skb.if_else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_cv_splits.html">skrub.DataOp.skb.iter_cv_splits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_grid.html">skrub.DataOp.skb.iter_learners_grid</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_randomized.html">skrub.DataOp.skb.iter_learners_randomized</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html">skrub.DataOp.skb.mark_as_X</a></li>
@@ -737,7 +738,7 @@
 <h1>var<a class="headerlink" href="#var" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.var">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">var</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NULL</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/_data_ops/_data_ops.py#L864"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.var" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">var</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NULL</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/_data_ops/_data_ops.py#L864"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.var" title="Link to this definition">#</a></dt>
 <dd><p>Create a skrub variable.</p>
 <p>Variables represent inputs to a DataOps plan, and the corresponding learner.
 They can be combined with other variables, constants, operators, function
@@ -746,7 +747,7 @@ calls etc. to build up complex DataOps, which implicitly define the plan.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>name</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The name for this input. It corresponds to a key in the dictionary that
+<dt><strong>name</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The name for this input. It corresponds to a key in the dictionary that
 is passed to the learner’s <code class="docutils literal notranslate"><span class="pre">fit()</span></code> method (see Examples below).
 Names must be unique within a learner and must not start with
 <code class="docutils literal notranslate"><span class="pre">&quot;_skrub_&quot;</span></code></p>

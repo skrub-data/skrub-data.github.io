@@ -622,6 +622,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html">skrub.DataOp.skb.make_grid_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html">skrub.DataOp.skb.make_randomized_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.if_else.html">skrub.DataOp.skb.if_else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_cv_splits.html">skrub.DataOp.skb.iter_cv_splits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_grid.html">skrub.DataOp.skb.iter_learners_grid</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_randomized.html">skrub.DataOp.skb.iter_learners_randomized</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html">skrub.DataOp.skb.mark_as_X</a></li>
@@ -737,7 +738,7 @@
 <h1>ToDatetime<a class="headerlink" href="#todatetime" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.ToDatetime">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">ToDatetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/_to_datetime.py#L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">ToDatetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/_to_datetime.py#L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime" title="Link to this definition">#</a></dt>
 <dd><p>Parse datetimes represented as strings and return <code class="docutils literal notranslate"><span class="pre">Datetime</span></code> columns.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -760,7 +761,7 @@ by the user. Columns that are not strings, dates or datetimes raise an exception
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>format</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, optional, default=None</span></dt><dd><p>Format to use for parsing dates that are stored as strings, e.g.
+<dt><strong>format</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, optional, default=None</span></dt><dd><p>Format to use for parsing dates that are stored as strings, e.g.
 <code class="docutils literal notranslate"><span class="pre">&quot;%Y-%m-%dT%H:%M%S&quot;</span></code>.
 If not specified, the format is inferred from the data when possible.
 When doing so, for dates presented as 01/02/2003, it is usually
@@ -774,7 +775,7 @@ plausible, the USA convention (month first) is chosen.</p>
 </dd>
 <dt class="field-even">Attributes<span class="colon">:</span></dt>
 <dd class="field-even"><dl>
-<dt><strong>format_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Detected format. If the transformer was fitted on a column that already had
+<dt><strong>format_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Detected format. If the transformer was fitted on a column that already had
 a Datetime dtype, the <code class="docutils literal notranslate"><span class="pre">format_</span></code> is None. Otherwise it is the
 format that was detected when parsing the string column. If the parameter
 <code class="docutils literal notranslate"><span class="pre">format</span></code> was provided, it is the only one that the transformer
@@ -784,7 +785,7 @@ equal to <code class="docutils literal notranslate"><span class="pre">format</sp
 <dt><strong>output_dtype_</strong><span class="classifier">data type</span></dt><dd><p>The output dtype, which includes information about the time resolution and
 time zone.</p>
 </dd>
-<dt><strong>output_time_zone_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>The time zone of the transformed column. If the output is time zone naive it
+<dt><strong>output_time_zone_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>The time zone of the transformed column. If the output is time zone naive it
 is <code class="docutils literal notranslate"><span class="pre">None</span></code>; otherwise it is the name of the time zone such as <code class="docutils literal notranslate"><span class="pre">UTC</span></code> or
 <code class="docutils literal notranslate"><span class="pre">Europe/Paris</span></code>.</p>
 </dd>
@@ -1051,7 +1052,7 @@ constructor.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/_apply_to_cols.py#L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.fit" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/_apply_to_cols.py#L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.fit" title="Link to this definition">#</a></dt>
 <dd><p>Fit the transformer.</p>
 <p>Subclasses should implement <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> and <code class="docutils literal notranslate"><span class="pre">transform</span></code>.</p>
 <dl class="field-list">
@@ -1075,14 +1076,14 @@ transform a single column, not a whole dataframe.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/_to_datetime.py#L365"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/_to_datetime.py#L365"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit the encoder and transform a column.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
 <dt><strong>column</strong><span class="classifier">pandas or polars <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.3.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a></span></dt><dd><p>The input to transform.</p>
 </dd>
-<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Ignored.</p>
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Ignored.</p>
 </dd>
 </dl>
 </dd>
@@ -1097,19 +1098,19 @@ transform a single column, not a whole dataframe.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>deep</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>If True, will return the parameters for this estimator and
+<dt><strong>deep</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>If True, will return the parameters for this estimator and
 contained subobjects that are estimators.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl>
-<dt><strong>params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Parameter names mapped to their values.</p>
+<dt><strong>params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Parameter names mapped to their values.</p>
 </dd>
 </dl>
 </dd>
@@ -1118,7 +1119,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L317"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L317"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -1127,7 +1128,7 @@ possible to update each component of a nested object.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>**params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Estimator parameters.</p>
+<dt><strong>**params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Estimator parameters.</p>
 </dd>
 </dl>
 </dd>
@@ -1142,7 +1143,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.set_transform_request">
-<span class="sig-name descname"><span class="pre">set_transform_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/utils/_metadata_requests.py#L1285"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.set_transform_request" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_transform_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/utils/_metadata_requests.py#L1285"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.set_transform_request" title="Link to this definition">#</a></dt>
 <dd><p>Configure whether metadata should be requested to be passed to the <code class="docutils literal notranslate"><span class="pre">transform</span></code> method.</p>
 <p>Note that this method is only relevant when this estimator is used as a
 sub-estimator within a <a class="reference external" href="https://scikit-learn.org/stable/glossary.html#term-meta-estimator" title="(in scikit-learn v1.7)"><span class="xref std std-term">meta-estimator</span></a> and metadata routing is enabled
@@ -1165,7 +1166,7 @@ parameters and not others.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>column</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">True</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">False</span></code></a>, or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>,                     default=sklearn.utils.metadata_routing.UNCHANGED</span></dt><dd><p>Metadata routing for <code class="docutils literal notranslate"><span class="pre">column</span></code> parameter in <code class="docutils literal notranslate"><span class="pre">transform</span></code>.</p>
+<dt><strong>column</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">True</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">False</span></code></a>, or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>,                     default=sklearn.utils.metadata_routing.UNCHANGED</span></dt><dd><p>Metadata routing for <code class="docutils literal notranslate"><span class="pre">column</span></code> parameter in <code class="docutils literal notranslate"><span class="pre">transform</span></code>.</p>
 </dd>
 </dl>
 </dd>
@@ -1180,7 +1181,7 @@ parameters and not others.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ToDatetime.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/_to_datetime.py#L408"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/_to_datetime.py#L408"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ToDatetime.transform" title="Link to this definition">#</a></dt>
 <dd><p>Transform a column.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>

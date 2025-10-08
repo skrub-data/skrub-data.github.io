@@ -620,6 +620,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html">skrub.DataOp.skb.make_grid_search</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">skrub.DataOp.skb.make_randomized_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.if_else.html">skrub.DataOp.skb.if_else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_cv_splits.html">skrub.DataOp.skb.iter_cv_splits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_grid.html">skrub.DataOp.skb.iter_learners_grid</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_randomized.html">skrub.DataOp.skb.iter_learners_randomized</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html">skrub.DataOp.skb.mark_as_X</a></li>
@@ -735,7 +736,7 @@
 <h1>skrub.DataOp.skb.make_randomized_search<a class="headerlink" href="#skrub-dataop-skb-make-randomized-search" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.make_randomized_search">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">make_randomized_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/_data_ops/_skrub_namespace.py#L1698"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.make_randomized_search" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">make_randomized_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/_data_ops/_skrub_namespace.py#L1769"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.make_randomized_search" title="Link to this definition">#</a></dt>
 <dd><p>Find the best parameters with randomized search.</p>
 <p>This function returns a <a class="reference internal" href="skrub.ParamSearch.html#skrub.ParamSearch" title="skrub.ParamSearch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSearch</span></code></a>, an object similar to
 scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomizedSearchCV</span></code></a>, where
@@ -745,11 +746,11 @@ be returned by calling <code class="docutils literal notranslate"><span class="p
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>fitted</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a> (default=False)</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the randomized search is fitted on the data provided when
+<dt><strong>fitted</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a> (default=False)</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the randomized search is fitted on the data provided when
 initializing variables in this DataOp (the data returned by
 <code class="docutils literal notranslate"><span class="pre">.skb.get_data()</span></code>).</p>
 </dd>
-<dt><strong>keep_subsampling</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a> (default=False)</span></dt><dd><p>If True, and if subsampling has been configured (see
+<dt><strong>keep_subsampling</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a> (default=False)</span></dt><dd><p>If True, and if subsampling has been configured (see
 <a class="reference internal" href="skrub.DataOp.skb.subsample.html#skrub.DataOp.skb.subsample" title="skrub.DataOp.skb.subsample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.subsample()</span></code></a>), fit on a subsample of the data. By
 default subsampling is not applied and all the data is used. This
 is only applied for fitting the randomized search when <code class="docutils literal notranslate"><span class="pre">fitted=True</span></code>,
@@ -758,7 +759,7 @@ Therefore it is an error to pass <code class="docutils literal notranslate"><spa
 <code class="docutils literal notranslate"><span class="pre">fitted=False</span></code> (because <code class="docutils literal notranslate"><span class="pre">keep_subsampling=True</span></code> would have no
 effect).</p>
 </dd>
-<dt><strong>kwargs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>All other named arguments are forwarded to
+<dt><strong>kwargs</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>All other named arguments are forwarded to
 <code class="xref py py-class docutils literal notranslate"><span class="pre">RandomizedSearchCV</span></code>.</p>
 </dd>
 </dl>

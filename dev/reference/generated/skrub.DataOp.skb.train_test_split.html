@@ -620,6 +620,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html">skrub.DataOp.skb.make_grid_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html">skrub.DataOp.skb.make_randomized_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.if_else.html">skrub.DataOp.skb.if_else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_cv_splits.html">skrub.DataOp.skb.iter_cv_splits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_grid.html">skrub.DataOp.skb.iter_learners_grid</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_randomized.html">skrub.DataOp.skb.iter_learners_randomized</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html">skrub.DataOp.skb.mark_as_X</a></li>
@@ -735,16 +736,16 @@
 <h1>skrub.DataOp.skb.train_test_split<a class="headerlink" href="#skrub-dataop-skb-train-test-split" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.train_test_split">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">train_test_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_func=&lt;function</span> <span class="pre">train_test_split&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**split_func_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/539be06/skrub/_data_ops/_skrub_namespace.py#L1494"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.train_test_split" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">train_test_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_func=&lt;function</span> <span class="pre">train_test_split&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**split_func_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b0a3c29/skrub/_data_ops/_skrub_namespace.py#L1500"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.train_test_split" title="Link to this definition">#</a></dt>
 <dd><p>Split an environment into a training an testing environments.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>environment</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a>, optional</span></dt><dd><p>The environment (dict mapping variable names to values) containing the
+<dt><strong>environment</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a>, optional</span></dt><dd><p>The environment (dict mapping variable names to values) containing the
 full data. If <code class="docutils literal notranslate"><span class="pre">None</span></code> (the default), the data is retrieved from the
 DataOp.</p>
 </dd>
-<dt><strong>keep_subsampling</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>If True, and if subsampling has been configured (see
+<dt><strong>keep_subsampling</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>If True, and if subsampling has been configured (see
 <a class="reference internal" href="skrub.DataOp.skb.subsample.html#skrub.DataOp.skb.subsample" title="skrub.DataOp.skb.subsample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.subsample()</span></code></a>), use a subsample of the data. By
 default subsampling is not applied and all the data is used.</p>
 </dd>
@@ -757,14 +758,14 @@ default, <a class="reference external" href="https://scikit-learn.org/stable/mod
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></dt><dd><p>The return value is slightly different than scikit-learn’s. Rather than
+<dt><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></dt><dd><p>The return value is slightly different than scikit-learn’s. Rather than
 a tuple, it returns a dictionary with the following keys:</p>
 <ul class="simple">
 <li><p>train: a dictionary containing the training environment</p></li>
 <li><p>test: a dictionary containing the test environment</p></li>
-<li><p>X_train: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_x()</span></code> in
+<li><p>X_train: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_X()</span></code> in
 the train environment</p></li>
-<li><p>X_test: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_x()</span></code> in
+<li><p>X_test: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_X()</span></code> in
 the test environment</p></li>
 <li><p>y_train: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_y()</span></code> in
 the train environment, if there is one (may not be the case for
