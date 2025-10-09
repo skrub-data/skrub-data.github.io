@@ -411,6 +411,9 @@ DataOps
   DataOp.skb.get_data
 
 
+  DataOp.skb.get_vars
+
+
   DataOp.skb.make_learner
 
 

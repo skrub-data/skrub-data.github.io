@@ -73,7 +73,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="skrub.DataOp.skb.make_grid_search" href="skrub.DataOp.skb.make_grid_search.html" />
-    <link rel="prev" title="skrub.DataOp.skb.get_data" href="skrub.DataOp.skb.get_data.html" />
+    <link rel="prev" title="skrub.DataOp.skb.get_vars" href="skrub.DataOp.skb.get_vars.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.7.dev0" />
@@ -616,6 +616,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.freeze_after_fit.html">skrub.DataOp.skb.freeze_after_fit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.full_report.html">skrub.DataOp.skb.full_report</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.get_data.html">skrub.DataOp.skb.get_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.get_vars.html">skrub.DataOp.skb.get_vars</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">skrub.DataOp.skb.make_learner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html">skrub.DataOp.skb.make_grid_search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html">skrub.DataOp.skb.make_randomized_search</a></li>
@@ -736,7 +737,7 @@
 <h1>skrub.DataOp.skb.make_learner<a class="headerlink" href="#skrub-dataop-skb-make-learner" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.make_learner">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">make_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/abec1ff/skrub/_data_ops/_skrub_namespace.py#L1487"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.make_learner" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">make_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c0eb23d/skrub/_data_ops/_skrub_namespace.py#L1573"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.make_learner" title="Link to this definition">#</a></dt>
 <dd><p>Get a skrub learner for this DataOp.</p>
 <p>Returns a <a class="reference internal" href="skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a> with a <code class="docutils literal notranslate"><span class="pre">fit()</span></code> method so it can be fit
 to some training data and then apply it to unseen data by calling
@@ -826,12 +827,12 @@ and the learners they generate.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.DataOp.skb.get_data.html"
+       href="skrub.DataOp.skb.get_vars.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">skrub.DataOp.skb.get_data</p>
+        <p class="prev-next-title">skrub.DataOp.skb.get_vars</p>
       </div>
     </a>
     <a class="right-next"
