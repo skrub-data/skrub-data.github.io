@@ -600,6 +600,12 @@ environments produced by a CV splitter – similar to
 </section>
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> could raise an error while trying to check if Polars
+columns with some dtypes (lists, structs) are sorted. It would not indicate
+Polars columns sorted in descending order. Fixed in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1673">#1673</a> by
+<a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+</ul>
 </section>
 </section>
 <section id="release-0-6-2">
