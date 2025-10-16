@@ -739,7 +739,7 @@
 <h1>tabular_pipeline<a class="headerlink" href="#tabular-pipeline" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.tabular_pipeline">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/bca67c6/skrub/_tabular_pipeline.py#L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_pipeline" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8ad39cd/skrub/_tabular_pipeline.py#L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_pipeline" title="Link to this definition">#</a></dt>
 <dd><p>Get a simple machine-learning pipeline for tabular data.</p>
 <p>Given either a scikit-learn estimator or one of the special-cased strings
 <code class="docutils literal notranslate"><span class="pre">'regressor'</span></code>, <code class="docutils literal notranslate"><span class="pre">'regression'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classifier'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classification'</span></code>, this
@@ -754,6 +754,11 @@ in future releases.</p>
 <div class="versionchanged">
 <p><span class="versionmodified changed">Changed in version 0.6.0: </span>The high cardinality encoder has been changed from
 <a class="reference internal" href="skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> to <a class="reference internal" href="skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a>.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 0.7.0: </span>The <a class="reference internal" href="skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> with <cite>max_absolute_value=5</cite> is now used instead of
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> for centering and scaling
+numerical features when using linear models.</p>
 </div>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -794,7 +799,7 @@ parameters are chosen depending on the provided <code class="docutils literal no
 <li><p>An optional <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a> imputes missing values by their
 mean and adds binary columns that indicate which values were missing. This step is
 only added if the <code class="docutils literal notranslate"><span class="pre">estimator</span></code> cannot handle missing values itself.</p></li>
-<li><p>An optional <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> centers and rescales the
+<li><p>An optional <a class="reference internal" href="skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> centers and rescales the
 data. This step is not added (because it is unnecessary) when the <code class="docutils literal notranslate"><span class="pre">estimator</span></code> is
 a tree ensemble such as random forest or gradient boosting.</p></li>
 <li><p>The last step is the provided <code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p></li>
@@ -871,7 +876,7 @@ estimator:</p>
 <span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
 <span class="go">                TableVectorizer(datetime=DatetimeEncoder(periodic_encoding=&#39;spline&#39;))),</span>
 <span class="go">                (&#39;simpleimputer&#39;, SimpleImputer(add_indicator=True)),</span>
-<span class="go">                (&#39;standardscaler&#39;, StandardScaler()),</span>
+<span class="go">                (&#39;squashingscaler&#39;, SquashingScaler(max_absolute_value=5)),</span>
 <span class="go">                (&#39;logisticregression&#39;, LogisticRegression())])</span>
 </pre></div>
 </div>
@@ -891,7 +896,7 @@ details):</p>
 <span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
 <span class="go">                TableVectorizer(datetime=DatetimeEncoder(periodic_encoding=&#39;spline&#39;))),</span>
 <span class="go">                (&#39;simpleimputer&#39;, SimpleImputer(add_indicator=True)),</span>
-<span class="go">                (&#39;standardscaler&#39;, StandardScaler()),</span>
+<span class="go">                (&#39;squashingscaler&#39;, SquashingScaler(max_absolute_value=5)),</span>
 <span class="go">                (&#39;logisticregression&#39;, LogisticRegression())])</span>
 </pre></div>
 </div>
@@ -902,7 +907,7 @@ well for a wide variety of downstream estimators. The configuration adds
 <code class="docutils literal notranslate"><span class="pre">spline</span></code> periodic features to datetime columns.</p></li>
 <li><p>A <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SimpleImputer</span></code></a>, as the
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a> cannot handle missing values.</p></li>
-<li><p>A <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> for centering and standard scaling
+<li><p>A <a class="reference internal" href="skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> for centering and scaling
 numerical features.</p></li>
 </ul>
 <p>On the other hand, For the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.7)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>
