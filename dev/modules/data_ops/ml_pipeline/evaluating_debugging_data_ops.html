@@ -654,8 +654,10 @@
 <span id="user-guide-data-ops-evaluating-debugging-dataops"></span><h1>Evaluating and debugging the DataOps plan with <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.full_report.html#skrub.DataOp.skb.full_report" title="skrub.DataOp.skb.full_report"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.full_report()</span></code></a><a class="headerlink" href="#evaluating-and-debugging-the-dataops-plan-with-skb-full-report" title="Link to this heading">#</a></h1>
 <p>All operations on DataOps are recorded in a computational graph, which can be
 inspected with <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.full_report.html#skrub.DataOp.skb.full_report" title="skrub.DataOp.skb.full_report"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.full_report()</span></code></a>. This method
-generates a html report that shows the full plan, including all nodes,
-their names, descriptions, and the transformations applied to the data.</p>
+generates a html report that shows the full plan, including all nodes, their names,
+descriptions, and the transformations applied to the data. It is possible to give a
+title to the evaluation report this way:
+<code class="docutils literal notranslate"><span class="pre">my_data_op.skb.full_report(title=&quot;my</span> <span class="pre">title&quot;)</span></code>.</p>
 <p>An example of the report can be found
 <a class="reference external" href="../../../_static/credit_fraud_report/index.html">here</a>.</p>
 <p>For each node in the plan, the report shows:</p>
