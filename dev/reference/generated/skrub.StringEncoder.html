@@ -739,7 +739,7 @@
 <h1>StringEncoder<a class="headerlink" href="#stringencoder" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.StringEncoder">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">StringEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vectorizer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'tfidf'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(3,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/160fefa/skrub/_string_encoder.py#L18"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">StringEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vectorizer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'tfidf'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(3,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_words</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/655f9a3/skrub/_string_encoder.py#L19"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder" title="Link to this definition">#</a></dt>
 <dd><p>Generate a lightweight string encoding of a given column using tf-idf         vectorization and truncated singular value decomposition (SVD).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -866,10 +866,13 @@ scikit-learn <a class="reference external" href="https://scikit-learn.org/stable
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.StringEncoder.get_params" title="skrub.StringEncoder.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
 <td><p>Get parameters for this estimator.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.StringEncoder.set_params" title="skrub.StringEncoder.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.StringEncoder.set_output" title="skrub.StringEncoder.set_output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_output</span></code></a>(*[, transform])</p></td>
+<td><p>Set output container.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.StringEncoder.set_params" title="skrub.StringEncoder.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
 <td><p>Set the parameters of this estimator.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.StringEncoder.transform" title="skrub.StringEncoder.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.StringEncoder.transform" title="skrub.StringEncoder.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X)</p></td>
 <td><p>Transform a column.</p></td>
 </tr>
 </tbody>
@@ -877,7 +880,7 @@ scikit-learn <a class="reference external" href="https://scikit-learn.org/stable
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.StringEncoder.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/160fefa/skrub/_apply_to_cols.py#L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.fit" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/655f9a3/skrub/_apply_to_cols.py#L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.fit" title="Link to this definition">#</a></dt>
 <dd><p>Fit the transformer.</p>
 <p>This default implementation simply calls <code class="docutils literal notranslate"><span class="pre">fit_transform()</span></code> and
 returns <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p>
@@ -905,7 +908,7 @@ transform a single column, not a whole dataframe.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.StringEncoder.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/160fefa/skrub/_string_encoder.py#L141"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/655f9a3/skrub/_string_encoder.py#L142"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit the encoder and transform a column.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -927,7 +930,7 @@ transform a single column, not a whole dataframe.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.StringEncoder.get_feature_names_out">
-<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/160fefa/skrub/_string_encoder.py#L268"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.get_feature_names_out" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/655f9a3/skrub/_string_encoder.py#L269"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.get_feature_names_out" title="Link to this definition">#</a></dt>
 <dd><p>Return a list of features generated by the transformer.</p>
 <p>Each feature has format <code class="docutils literal notranslate"><span class="pre">{input_name}_{n_component}</span></code> where <code class="docutils literal notranslate"><span class="pre">input_name</span></code>
 is the name of the input column, or a default name for the encoder, and
@@ -950,7 +953,7 @@ is the name of the input column, or a default name for the encoder, and
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.StringEncoder.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/160fefa/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/655f9a3/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -970,8 +973,39 @@ contained subobjects that are estimators.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="skrub.StringEncoder.set_output">
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/655f9a3/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/utils/_set_output.py#L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.set_output" title="Link to this definition">#</a></dt>
+<dd><p>Set output container.</p>
+<p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.7)"><span>Introducing the set_output API</span></a>
+for an example on how to use the API.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>transform</strong><span class="classifier">{“default”, “pandas”, “polars”}, default=None</span></dt><dd><p>Configure output of <cite>transform</cite> and <cite>fit_transform</cite>.</p>
+<ul class="simple">
+<li><p><cite>“default”</cite>: Default output format of a transformer</p></li>
+<li><p><cite>“pandas”</cite>: DataFrame output</p></li>
+<li><p><cite>“polars”</cite>: Polars output</p></li>
+<li><p><cite>None</cite>: Transform configuration is unchanged</p></li>
+</ul>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 1.4: </span><cite>“polars”</cite> option was added.</p>
+</div>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">estimator instance</span></dt><dd><p>Estimator instance.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="skrub.StringEncoder.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/160fefa/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L317"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/655f9a3/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L317"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -995,7 +1029,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.StringEncoder.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/160fefa/skrub/_string_encoder.py#L226"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/655f9a3/skrub/_string_encoder.py#L227"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.StringEncoder.transform" title="Link to this definition">#</a></dt>
 <dd><p>Transform a column.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1087,6 +1121,7 @@ possible to update each component of a nested object.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.StringEncoder.fit_transform"><code class="docutils literal notranslate"><span class="pre">StringEncoder.fit_transform()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.StringEncoder.get_feature_names_out"><code class="docutils literal notranslate"><span class="pre">StringEncoder.get_feature_names_out()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.StringEncoder.get_params"><code class="docutils literal notranslate"><span class="pre">StringEncoder.get_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.StringEncoder.set_output"><code class="docutils literal notranslate"><span class="pre">StringEncoder.set_output()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.StringEncoder.set_params"><code class="docutils literal notranslate"><span class="pre">StringEncoder.set_params()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.StringEncoder.transform"><code class="docutils literal notranslate"><span class="pre">StringEncoder.transform()</span></code></a></li>
 </ul>

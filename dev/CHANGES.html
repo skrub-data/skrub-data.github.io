@@ -610,6 +610,9 @@ when linear models are used.
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>Fixed various issues with some transformers by adding <code class="docutils literal notranslate"><span class="pre">get_feature_names_out</span></code>
+to all single column transformers.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1666">#1666</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 <li><p>Issues occurring when <a class="reference internal" href="reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.apply()</span></code></a> was passed a DataOp as the
 estimator have been fixed in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1671">#1671</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> could raise an error while trying to check if Polars

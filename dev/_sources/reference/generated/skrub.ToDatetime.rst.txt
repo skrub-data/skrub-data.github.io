@@ -9,6 +9,6 @@
    :special-members: __call__
    :exclude-members: get_metadata_routing, set_fit_request
 
-.. minigallery:: skrub.ToDatetime skrub.ToDatetime.__init__ skrub.ToDatetime.fit skrub.ToDatetime.fit_transform skrub.ToDatetime.get_metadata_routing skrub.ToDatetime.get_params skrub.ToDatetime.set_fit_request skrub.ToDatetime.set_params skrub.ToDatetime.set_transform_request skrub.ToDatetime.transform 
+.. minigallery:: skrub.ToDatetime skrub.ToDatetime.__init__ skrub.ToDatetime.fit skrub.ToDatetime.fit_transform skrub.ToDatetime.get_feature_names_out skrub.ToDatetime.get_metadata_routing skrub.ToDatetime.get_params skrub.ToDatetime.set_fit_request skrub.ToDatetime.set_params skrub.ToDatetime.set_transform_request skrub.ToDatetime.transform 
    :add-heading: Gallery examples
    :heading-level: -
