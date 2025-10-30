@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**05:38.017** total execution time for 5 files **from auto_examples/data_ops**:
+**06:49.042** total execution time for 5 files **from auto_examples/data_ops**:
 
 .. container::
 
@@ -33,17 +33,17 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_data_ops_12_multiple_tables.py` (``12_multiple_tables.py``)
-     - 04:18.442
+     - 05:13.269
      - 0.0
    * - :ref:`sphx_glr_auto_examples_data_ops_13_choices.py` (``13_choices.py``)
-     - 00:51.767
+     - 01:03.172
      - 0.0
    * - :ref:`sphx_glr_auto_examples_data_ops_14_subsampling.py` (``14_subsampling.py``)
-     - 00:13.003
-     - 0.0
-   * - :ref:`sphx_glr_auto_examples_data_ops_11_data_ops_intro.py` (``11_data_ops_intro.py``)
-     - 00:07.655
+     - 00:16.466
      - 0.0
    * - :ref:`sphx_glr_auto_examples_data_ops_15_use_case.py` (``15_use_case.py``)
-     - 00:07.149
+     - 00:09.635
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_data_ops_11_data_ops_intro.py` (``11_data_ops_intro.py``)
+     - 00:06.500
      - 0.0
