@@ -21,10 +21,10 @@ Skrub DataOps
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_11_data_ops_intro_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1110_data_ops_intro_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_11_data_ops_intro.py`
+  :ref:`sphx_glr_auto_examples_data_ops_1110_data_ops_intro.py`
 
 .. raw:: html
 
@@ -38,10 +38,10 @@ Skrub DataOps
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_12_multiple_tables_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1120_multiple_tables_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_12_multiple_tables.py`
+  :ref:`sphx_glr_auto_examples_data_ops_1120_multiple_tables.py`
 
 .. raw:: html
 
@@ -55,10 +55,10 @@ Skrub DataOps
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_13_choices_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1130_choices_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_13_choices.py`
+  :ref:`sphx_glr_auto_examples_data_ops_1130_choices.py`
 
 .. raw:: html
 
@@ -72,10 +72,10 @@ Skrub DataOps
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_14_subsampling_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1140_subsampling_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_14_subsampling.py`
+  :ref:`sphx_glr_auto_examples_data_ops_1140_subsampling.py`
 
 .. raw:: html
 
@@ -89,10 +89,10 @@ Skrub DataOps
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_15_use_case_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1150_use_case_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_15_use_case.py`
+  :ref:`sphx_glr_auto_examples_data_ops_1150_use_case.py`
 
 .. raw:: html
 
@@ -110,9 +110,9 @@ Skrub DataOps
 .. toctree::
    :hidden:
 
-   /auto_examples/data_ops/11_data_ops_intro
-   /auto_examples/data_ops/12_multiple_tables
-   /auto_examples/data_ops/13_choices
-   /auto_examples/data_ops/14_subsampling
-   /auto_examples/data_ops/15_use_case
+   /auto_examples/data_ops/1110_data_ops_intro
+   /auto_examples/data_ops/1120_multiple_tables
+   /auto_examples/data_ops/1130_choices
+   /auto_examples/data_ops/1140_subsampling
+   /auto_examples/data_ops/1150_use_case
 
