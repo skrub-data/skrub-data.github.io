@@ -1,0 +1,14 @@
+﻿ToFloat
+=======
+
+.. currentmodule:: skrub
+
+.. autoclass:: ToFloat
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.ToFloat skrub.ToFloat.__init__ skrub.ToFloat.fit skrub.ToFloat.fit_transform skrub.ToFloat.get_feature_names_out skrub.ToFloat.get_metadata_routing skrub.ToFloat.get_params skrub.ToFloat.set_fit_request skrub.ToFloat.set_params skrub.ToFloat.set_transform_request skrub.ToFloat.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

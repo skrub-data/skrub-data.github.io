@@ -38,3 +38,4 @@ See :ref:`encoding <user_guide_encoders_index>` for further details.
   DatetimeEncoder
   ToDatetime
   to_datetime
+  ToFloat
