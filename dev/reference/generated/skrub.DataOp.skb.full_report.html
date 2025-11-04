@@ -738,12 +738,20 @@
 <h1>skrub.DataOp.skb.full_report<a class="headerlink" href="#skrub-dataop-skb-full-report" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.full_report">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">full_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/59cba35/skrub/_data_ops/_skrub_namespace.py#L1463"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.full_report" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">full_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f289677/skrub/_data_ops/_skrub_namespace.py#L1463"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.full_report" title="Link to this definition">#</a></dt>
 <dd><p>Generate a full report of the DataOp’s evaluation.</p>
 <p>This creates a report showing the computation graph, and for each
 intermediate computation, some information (the line of code where it
 was defined, the time it took to run, and more) and a display of the
-intermediate result (or error).</p>
+intermediate result (or error). By default, the report is stored in
+a timestamped subdirectory of the skrub data folder.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When this function is invoked reports starting with <code class="docutils literal notranslate"><span class="pre">full_data_op_report_</span></code>
+that are stored in the skrub data folder are automatically deleted after 7 days.
+This is to avoid accumulating too many reports over time. If you want to keep
+specific reports, please specify an output directory.</p>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
@@ -754,7 +762,9 @@ value are used.</p>
 <dt><strong>open</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a> (default=True)</span></dt><dd><p>Whether to open the report in a web browser once computed.</p>
 </dd>
 <dt><strong>output_dir</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a> (default=None)</span></dt><dd><p>Directory where to store the report. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, a timestamped
-subdirectory will be created in the skrub data directory.</p>
+subdirectory will be created in the skrub data directory. Note
+that the reports created with <code class="docutils literal notranslate"><span class="pre">output_dir=None</span></code> are automatically
+deleted after 7 days.</p>
 </dd>
 <dt><strong>overwrite</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a> (default=False)</span></dt><dd><p>What to do if the output directory already exists. If
 <code class="docutils literal notranslate"><span class="pre">overwrite</span></code>, replace it, otherwise raise an exception.</p>

@@ -602,6 +602,8 @@ in the html report.
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>The :meth: <cite>DataOp.skb.full_report</cite> method now deletes reports created with
+<code class="docutils literal notranslate"><span class="pre">output_dir=None</span></code> after 7 days. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1657">#1657</a> by :user: <cite>Simon Dierickx &lt;simon.dierickx&gt;</cite>.</p></li>
 <li><p>The :func: <cite>tabular_pipeline</cite> uses a <a class="reference internal" href="reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> instead of a
 <code class="xref py py-class docutils literal notranslate"><span class="pre">StandardScaler</span></code> for centering and scaling numerical features
 when linear models are used.
