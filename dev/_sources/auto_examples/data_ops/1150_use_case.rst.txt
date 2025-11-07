@@ -377,7 +377,7 @@ when moving from development to production environments.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 4.932 seconds)
+   **Total running time of the script:** (0 minutes 6.688 seconds)
 
 
 .. _sphx_glr_download_auto_examples_data_ops_1150_use_case.py:
