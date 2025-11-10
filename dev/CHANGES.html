@@ -630,6 +630,9 @@ v3.0. <a class="reference external" href="https://github.com/skrub-data/skrub/pu
 <li><p>Fixed the use of <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> and <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> with Polars dataframes
 containing a column with empty string as name.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1722">#1722</a> by <a class="reference external" href="https://github.com/MarieSacksick">Marie Sacksick</a>.</p></li>
+<li><p>Fixed an issue where <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> would fail when computing associations
+for Polars dataframes if PyArrow was not installed.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1742">#1742</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 </ul>
 </section>
 </section>
