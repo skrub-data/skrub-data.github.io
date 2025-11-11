@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/modules/data_ops/validation/nesting_choices_choosing_pipelines.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Choices are not limited to scikit-learn hyperparameters: we can use choices wherever we use DataOps. The choice of the estimator to use, any argument of an DataOp’s method or deferred() function ca..." />
+<meta property="og:description" content="Choices are not limited to scikit-learn hyperparameters: we can use choices wherever we use DataOps. The choice of the estimator to use, any argument of a DataOp’s method or deferred() function cal..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Choices are not limited to scikit-learn hyperparameters: we can use choices wherever we use DataOps. The choice of the estimator to use, any argument of an DataOp’s method or deferred() function ca..." />
+<meta name="description" content="Choices are not limited to scikit-learn hyperparameters: we can use choices wherever we use DataOps. The choice of the estimator to use, any argument of a DataOp’s method or deferred() function cal..." />
 
     <title>Going beyond estimator hyperparameters: nesting choices and choosing pipelines &#8212; skrub</title>
   
@@ -655,7 +655,7 @@
 <span id="user-guide-data-ops-nesting-choices"></span><h1>Going beyond estimator hyperparameters: nesting choices and choosing pipelines<a class="headerlink" href="#going-beyond-estimator-hyperparameters-nesting-choices-and-choosing-pipelines" title="Link to this heading">#</a></h1>
 <p>Choices are not limited to scikit-learn hyperparameters: we can use choices
 wherever we use DataOps. The choice of the estimator to use, any argument of
-an DataOp’s method or <a class="reference internal" href="../../../reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> function call, etc. can be replaced
+a DataOp’s method or <a class="reference internal" href="../../../reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> function call, etc. can be replaced
 with choices. We can also choose between several DataOps to compare
 different pipelines.</p>
 <p>As an example of choices outside of scikit-learn estimators, we can consider
@@ -670,7 +670,7 @@ several ways to perform an aggregation on a pandas DataFrame:</p>
 </pre></div>
 </div>
 <p>We can also choose between several completely different pipelines by turning a
-choice into an DataOp, via its <code class="docutils literal notranslate"><span class="pre">as_data_op</span></code> method (or by using
+choice into a DataOp, via its <code class="docutils literal notranslate"><span class="pre">as_data_op</span></code> method (or by using
 <a class="reference internal" href="../../../reference/generated/skrub.as_data_op.html#skrub.as_data_op" title="skrub.as_data_op"><code class="xref py py-func docutils literal notranslate"><span class="pre">as_data_op()</span></code></a> on any object).</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">RandomForestRegressor</span>
