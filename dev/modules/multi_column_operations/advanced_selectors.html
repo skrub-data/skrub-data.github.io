@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Advanced selectors: filter() and filter_names()" />
+<meta property="og:title" content="filter() and filter_names() to select with user-defined criteria" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/modules/multi_column_operations/advanced_selectors.html" />
 <meta property="og:site_name" content="skrub" />
@@ -16,7 +16,7 @@
 <meta property="og:image:alt" content="skrub" />
 <meta name="description" content="filter() and filter_names() allow selecting columns based on arbitrary user-defined criteria. These are also used to implement many of the other selectors provided in this module. filter() accepts ..." />
 
-    <title>Advanced selectors: filter() and filter_names() &#8212; skrub</title>
+    <title>filter() and filter_names() to select with user-defined criteria &#8212; skrub</title>
   
   
   
@@ -546,12 +546,10 @@
 <li class="toctree-l2"><a class="reference internal" href="multi_column_operations.html">Operating over multiple columns at once</a></li>
 <li class="toctree-l2"><a class="reference internal" href="drop_uninformative.html">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="selectors.html">Skrub Selectors: helpers for selecting columns in a dataframe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="selectors.html">Skrub Selectors, for selecting columns in a dataframe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="type_of_selectors.html">Selecting based on dtype or data properties</a></li>
 
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Advanced selectors: <code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code></a></li>
-
-
+<li class="toctree-l2 current active"><a class="current reference internal" href="#"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code> to select with user-defined criteria</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../data_ops.html">Complex multi-table pipelines with Data Ops</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -634,7 +632,7 @@
     
     <li class="breadcrumb-item"><a href="../../multi_column_operations.html" class="nav-link">Multi-column operations</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Advanced selectors: <code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code> to select with user-defined criteria</span></li>
   </ul>
 </nav>
 </div>
@@ -651,8 +649,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="advanced-selectors-filter-and-filter-names">
-<span id="user-guide-advanced-selectors"></span><h1>Advanced selectors: <a class="reference internal" href="../../reference/generated/skrub.selectors.filter.html#skrub.selectors.filter" title="skrub.selectors.filter"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.selectors.filter_names.html#skrub.selectors.filter_names" title="skrub.selectors.filter_names"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code></a><a class="headerlink" href="#advanced-selectors-filter-and-filter-names" title="Link to this heading">#</a></h1>
+  <section id="filter-and-filter-names-to-select-with-user-defined-criteria">
+<span id="user-guide-advanced-selectors"></span><h1><a class="reference internal" href="../../reference/generated/skrub.selectors.filter.html#skrub.selectors.filter" title="skrub.selectors.filter"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.selectors.filter_names.html#skrub.selectors.filter_names" title="skrub.selectors.filter_names"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code></a> to select with user-defined criteria<a class="headerlink" href="#filter-and-filter-names-to-select-with-user-defined-criteria" title="Link to this heading">#</a></h1>
 <p><a class="reference internal" href="../../reference/generated/skrub.selectors.filter.html#skrub.selectors.filter" title="skrub.selectors.filter"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.selectors.filter_names.html#skrub.selectors.filter_names" title="skrub.selectors.filter_names"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code></a> allow
 selecting columns based on arbitrary user-defined criteria. These are also used to
 implement many of the other selectors provided in this module.</p>
@@ -691,64 +689,8 @@ lambda or local functions and thus ensure the selector is picklable.</p>
 <span class="go">1      420.0     297.0</span>
 </pre></div>
 </div>
-</section>
-<section id="combining-selectors-with-other-skrub-transformers">
-<h1>Combining selectors with other skrub transformers<a class="headerlink" href="#combining-selectors-with-other-skrub-transformers" title="Link to this heading">#</a></h1>
-<p>Skrub transformers are designed to be used in conjunction with other transformers
-that operate on columns to improve their versatility.</p>
-<p>For example, we can drop columns that have more unique values than a certain amount
-by combining <a class="reference internal" href="../../reference/generated/skrub.selectors.cardinality_below.html#skrub.selectors.cardinality_below" title="skrub.selectors.cardinality_below"><code class="xref py py-func docutils literal notranslate"><span class="pre">cardinality_below()</span></code></a> with <a class="reference internal" href="../../reference/generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.DropCols</span></code></a>.
-We first select the columns that have more than 3 unique values, then we invert the
-selector and finally transform the dataframe.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-<span class="gp">... </span><span class="s2">&quot;not a lot&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
-<span class="gp">... </span><span class="s2">&quot;too_many&quot;</span><span class="p">:</span>  <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]})</span>
-</pre></div>
-</div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">DropCols</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">DropCols</span><span class="p">(</span><span class="n">cols</span><span class="o">=~</span><span class="n">s</span><span class="o">.</span><span class="n">cardinality_below</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">   not a lot</span>
-<span class="go">0          1</span>
-<span class="go">1          1</span>
-<span class="go">2          1</span>
-<span class="go">3          2</span>
-<span class="go">4          2</span>
-</pre></div>
-</div>
-<p>Selectors can be used in conjunction with <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> to transform columns
-based on specific requirements.</p>
-<p>Consider the following example:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-<span class="gp">... </span>    <span class="s2">&quot;subject&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Math&quot;</span><span class="p">,</span> <span class="s2">&quot;English&quot;</span><span class="p">,</span> <span class="s2">&quot;History&quot;</span><span class="p">,</span> <span class="s2">&quot;Science&quot;</span><span class="p">,</span> <span class="s2">&quot;Art&quot;</span><span class="p">],</span>
-<span class="gp">... </span>    <span class="s2">&quot;grade&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="gp">... </span><span class="p">}</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
-<span class="go">   subject grade</span>
-<span class="go">0     Math     5</span>
-<span class="go">1  English     4</span>
-<span class="go">2  History     3</span>
-<span class="go">3  Science     4</span>
-<span class="go">4      Art     3</span>
-</pre></div>
-</div>
-<p>We might want to apply the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> only to the numeric column. We can
-do this like this:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToCols</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">())</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">   subject     grade</span>
-<span class="go">0     Math  1.603567</span>
-<span class="go">1  English  0.267261</span>
-<span class="go">2  History -1.069045</span>
-<span class="go">3  Science  0.267261</span>
-<span class="go">4      Art -1.069045</span>
-</pre></div>
-</div>
-</section>
-<section id="custom-criteria-in-filter-example-of-selecting-columns-with-outliers">
-<h1>Custom criteria in <a class="reference internal" href="../../reference/generated/skrub.selectors.filter.html#skrub.selectors.filter" title="skrub.selectors.filter"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code></a>, example of selecting columns with outliers<a class="headerlink" href="#custom-criteria-in-filter-example-of-selecting-columns-with-outliers" title="Link to this heading">#</a></h1>
+<section id="example-of-custom-criteria-in-filter-selecting-columns-with-outliers">
+<h2>Example of custom criteria in <a class="reference internal" href="../../reference/generated/skrub.selectors.filter.html#skrub.selectors.filter" title="skrub.selectors.filter"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code></a>: selecting columns with outliers<a class="headerlink" href="#example-of-custom-criteria-in-filter-selecting-columns-with-outliers" title="Link to this heading">#</a></h2>
 <p>The <a class="reference internal" href="../../reference/generated/skrub.selectors.filter.html#skrub.selectors.filter" title="skrub.selectors.filter"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code></a> selector can be used to select columns based on custom
 criteria. For example, we can define a function that checks if a column contains
 outliers using the Interquartile Range (IQR) method, and then use this function
@@ -781,6 +723,7 @@ and checks if any data points extend further than 2 IQRs of the lower and upper 
 <span class="go">4  100  300</span>
 </pre></div>
 </div>
+</section>
 </section>
 
 
@@ -830,11 +773,8 @@ and checks if any data points extend further than 2 IQRs of the lower and upper 
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Advanced selectors: <code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-selectors-with-other-skrub-transformers">Combining selectors with other skrub transformers</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-criteria-in-filter-example-of-selecting-columns-with-outliers">Custom criteria in <code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code>, example of selecting columns with outliers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-custom-criteria-in-filter-selecting-columns-with-outliers">Example of custom criteria in <code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code>: selecting columns with outliers</a></li>
 </ul>
-
   </nav></div>
 
   <div class="sidebar-secondary-item">

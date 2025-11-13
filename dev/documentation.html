@@ -546,12 +546,10 @@
 <li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/multi_column_operations.html">Operating over multiple columns at once</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/drop_uninformative.html">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/selectors.html">Skrub Selectors: helpers for selecting columns in a dataframe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/selectors.html">Skrub Selectors, for selecting columns in a dataframe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/type_of_selectors.html">Selecting based on dtype or data properties</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/advanced_selectors.html">Advanced selectors: <code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code></a></li>
-
-
+<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/advanced_selectors.html"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code> to select with user-defined criteria</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="data_ops.html">Complex multi-table pipelines with Data Ops</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -855,8 +853,11 @@ pipeline.</p>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/drop_uninformative.html">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/drop_uninformative.html#applying-dropuninformative-only-to-a-subset-of-columns">Applying <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> only to a subset of columns</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/selectors.html">Skrub Selectors: helpers for selecting columns in a dataframe</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/selectors.html">Skrub Selectors, for selecting columns in a dataframe</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules/multi_column_operations/selectors.html#introduction-to-selectors">Introduction to selectors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="modules/multi_column_operations/selectors.html#type-of-selectors">Type of selectors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules/multi_column_operations/selectors.html#combining-selectors">Combining selectors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules/multi_column_operations/selectors.html#using-selectors-with-other-skrub-transformers">Using selectors with other skrub transformers</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/type_of_selectors.html">Selecting based on dtype or data properties</a></li>
@@ -866,9 +867,10 @@ pipeline.</p>
 <li class="toctree-l3"><a class="reference internal" href="modules/multi_column_operations/type_of_selectors.html#selectors-based-on-column-names">Selectors based on column names</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/advanced_selectors.html">Advanced selectors: <code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/advanced_selectors.html#combining-selectors-with-other-skrub-transformers">Combining selectors with other skrub transformers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/advanced_selectors.html#custom-criteria-in-filter-example-of-selecting-columns-with-outliers">Custom criteria in <code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code>, example of selecting columns with outliers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/advanced_selectors.html"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code> to select with user-defined criteria</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules/multi_column_operations/advanced_selectors.html#example-of-custom-criteria-in-filter-selecting-columns-with-outliers">Example of custom criteria in <code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code>: selecting columns with outliers</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="data_ops.html">Complex multi-table pipelines with Data Ops</a><ul>
