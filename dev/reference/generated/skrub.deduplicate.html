@@ -740,7 +740,7 @@
 <h1>deduplicate<a class="headerlink" href="#deduplicate" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.deduplicate">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deduplicate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_clusters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linkage_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'average'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/094211f/skrub/_deduplicate.py#L131"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deduplicate" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deduplicate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_clusters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyzer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linkage_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'average'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/d0a7fc2/skrub/_deduplicate.py#L131"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deduplicate" title="Link to this definition">#</a></dt>
 <dd><p>Deduplicate categorical data by hierarchically clustering similar strings.</p>
 <p>This works best if there are a number of underlying categories that
 sometimes appear in the data with small variations and/or misspellings.</p>
@@ -832,6 +832,35 @@ A deduplicated version of the initial list can easily be created:</p>
 <span class="go">[&#39;black&#39;, &#39;black&#39;, &#39;black&#39;, &#39;black&#39;, &#39;black&#39;, &#39;white&#39;, &#39;white&#39;, &#39;white&#39;, &#39;white&#39;, &#39;white&#39;]</span>
 </pre></div>
 </div>
+<p>It is possible to use the deduplication function to replace values in a DataFrame
+column:
+&gt;&gt;&gt; import pandas as pd
+&gt;&gt;&gt; df = pd.DataFrame({‘color’: duplicated, ‘value’: range(10)})
+&gt;&gt;&gt; df
+color  value
+0  blacs      0
+1  black      1
+2  black      2
+3  black      3
+4  black      4
+5  uhibe      5
+6  white      6
+7  white      7
+8  white      8
+9  white      9
+&gt;&gt;&gt; df[‘deduplicated_color’] = df[‘color’].map(deduplicate_correspondence.to_dict())
+&gt;&gt;&gt; df
+color  value deduplicated_color
+0  blacs      0              black
+1  black      1              black
+2  black      2              black
+3  black      3              black
+4  black      4              black
+5  uhibe      5              white
+6  white      6              white
+7  white      7              white
+8  white      8              white
+9  white      9              white</p>
 </dd></dl>
 
 <section id="gallery-examples">
