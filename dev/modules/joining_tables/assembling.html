@@ -670,7 +670,7 @@ for model deployment.</p></li>
 aggregates the external table first, then joins it on the main table.
 Alternatively, it can aggregate the main table and then join it back onto itself.</p></li>
 <li><p><a class="reference internal" href="../../reference/generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggTarget</span></code></a>: in some settings, one can derive powerful features from
-the target <cite>y</cite> itself. AggTarget aggregates the target without risking data
+the target <code class="docutils literal notranslate"><span class="pre">y</span></code> itself. AggTarget aggregates the target without risking data
 leakage, then joins the result back on the main table, similar to AggJoiner.</p></li>
 <li><p><a class="reference internal" href="../../reference/generated/skrub.MultiAggJoiner.html#skrub.MultiAggJoiner" title="skrub.MultiAggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiAggJoiner</span></code></a>: extension of the <a class="reference internal" href="../../reference/generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a> that joins multiple
 auxiliary tables onto the main table.</p></li>
