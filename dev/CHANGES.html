@@ -641,6 +641,10 @@ for Polars dataframes if PyArrow was not installed.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1742">#1742</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 <li><p>Improve error message when <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> is used without the optional
 transformers dependencies. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1769">#1769</a> by <a class="reference external" href="https://github.com/fxzhou22">Fangxuan Zhou</a>.</p></li>
+<li><p>Accessing <code class="docutils literal notranslate"><span class="pre">.skb.applied_estimator</span></code> on a <a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> after calling
+<code class="docutils literal notranslate"><span class="pre">.skb.set_name()</span></code>, <code class="docutils literal notranslate"><span class="pre">.skb.set_description()</span></code>, <code class="docutils literal notranslate"><span class="pre">.skb.mark_as_X()</span></code> or
+<code class="docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code> used to raise an error, this has been fixed in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1782">#1782</a>
+by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 </ul>
 </section>
 </section>
