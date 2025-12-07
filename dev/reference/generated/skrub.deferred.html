@@ -738,7 +738,7 @@
 <h1>deferred<a class="headerlink" href="#deferred" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.deferred">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deferred</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/f80d7f2/skrub/_data_ops/_data_ops.py#L1568"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deferred" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">deferred</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/4c9846a/skrub/_data_ops/_data_ops.py#L1568"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.deferred" title="Link to this definition">#</a></dt>
 <dd><p>Wrap function calls in a DataOp <a class="reference internal" href="skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a>.</p>
 <p>When this decorator is applied, the resulting function returns DataOps.
 The returned DataOp wraps the call to the original function, and the
@@ -812,6 +812,73 @@ used with the <code class="docutils literal notranslate"><span class="pre">&#64;
 <span class="gp">&gt;&gt;&gt; </span><span class="n">e</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span>
 <span class="go">INFO x = 3</span>
 <span class="go">3</span>
+</pre></div>
+</div>
+<p><strong>Advanced examples</strong></p>
+<p>As we saw in the last example above, the arguments passed to the function,
+if they are DataOps, are evaluated before calling it. This is also the
+case for global variables, default arguments and free variables.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
+<span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">b</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">z</span> <span class="o">=</span> <span class="n">c</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">x</span><span class="si">=}</span><span class="s1">, </span><span class="si">{</span><span class="n">y</span><span class="si">=}</span><span class="s1">, </span><span class="si">{</span><span class="n">z</span><span class="si">=}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span>
+<span class="go">&lt;Call &#39;f&#39;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span>
+<span class="go">x=100, y=20, z=3</span>
+<span class="go">123</span>
+</pre></div>
+</div>
+<p>Another example with a closure:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">make_transformer</span><span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="n">period</span><span class="p">):</span>
+<span class="gp">...</span>
+<span class="gp">... </span>    <span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
+<span class="gp">... </span>    <span class="k">def</span><span class="w"> </span><span class="nf">transform</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="k">if</span> <span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;identity&quot;</span><span class="p">:</span>
+<span class="gp">... </span>            <span class="k">return</span> <span class="n">x</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">]</span>
+<span class="gp">... </span>        <span class="k">assert</span> <span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;trigo&quot;</span><span class="p">,</span> <span class="n">mode</span>
+<span class="gp">... </span>        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="n">period</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="gp">... </span>        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)])</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">transform</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hour</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;hour&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hour_encoding</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">choose_from</span><span class="p">([</span><span class="s2">&quot;identity&quot;</span><span class="p">,</span> <span class="s2">&quot;trigo&quot;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;hour_encoding&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">transformer</span> <span class="o">=</span> <span class="n">make_transformer</span><span class="p">(</span><span class="n">hour_encoding</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">out</span> <span class="o">=</span> <span class="n">transformer</span><span class="p">(</span><span class="n">hour</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The free variable <code class="docutils literal notranslate"><span class="pre">mode</span></code> is evaluated before calling the deferred (inner)
+function so <code class="docutils literal notranslate"><span class="pre">transform</span></code> works as expected:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">out</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;hour&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">4</span><span class="p">)})</span>
+<span class="go">array([[ 0],</span>
+<span class="go">       [ 4],</span>
+<span class="go">       [ 8],</span>
+<span class="go">       [12],</span>
+<span class="go">       [16],</span>
+<span class="go">       [20],</span>
+<span class="go">       [24]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">out</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;hour&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="s2">&quot;hour_encoding&quot;</span><span class="p">:</span> <span class="s2">&quot;trigo&quot;</span><span class="p">})</span>
+<span class="go">array([[ 0.  ,  1.  ],</span>
+<span class="go">       [ 0.87,  0.5 ],</span>
+<span class="go">       [ 0.87, -0.5 ],</span>
+<span class="go">       [ 0.  , -1.  ],</span>
+<span class="go">       [-0.87, -0.5 ],</span>
+<span class="go">       [-0.87,  0.5 ],</span>
+<span class="go">       [-0.  ,  1.  ]])</span>
 </pre></div>
 </div>
 </dd></dl>
