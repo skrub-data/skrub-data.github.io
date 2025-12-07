@@ -24,7 +24,7 @@ Skrub DataOps
   .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1110_data_ops_intro_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_1110_data_ops_intro.py`
+  :doc:`/auto_examples/data_ops/1110_data_ops_intro`
 
 .. raw:: html
 
@@ -41,7 +41,7 @@ Skrub DataOps
   .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1120_multiple_tables_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_1120_multiple_tables.py`
+  :doc:`/auto_examples/data_ops/1120_multiple_tables`
 
 .. raw:: html
 
@@ -58,7 +58,7 @@ Skrub DataOps
   .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1130_choices_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_1130_choices.py`
+  :doc:`/auto_examples/data_ops/1130_choices`
 
 .. raw:: html
 
@@ -75,7 +75,7 @@ Skrub DataOps
   .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1140_subsampling_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_1140_subsampling.py`
+  :doc:`/auto_examples/data_ops/1140_subsampling`
 
 .. raw:: html
 
@@ -92,7 +92,7 @@ Skrub DataOps
   .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1150_use_case_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_1150_use_case.py`
+  :doc:`/auto_examples/data_ops/1150_use_case`
 
 .. raw:: html
 

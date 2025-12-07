@@ -20,7 +20,7 @@ Examples
   .. image:: /auto_examples/images/thumb/sphx_glr_0000_getting_started_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_0000_getting_started.py`
+  :doc:`/auto_examples/0000_getting_started`
 
 .. raw:: html
 
@@ -37,7 +37,7 @@ Examples
   .. image:: /auto_examples/images/thumb/sphx_glr_0010_encodings_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_0010_encodings.py`
+  :doc:`/auto_examples/0010_encodings`
 
 .. raw:: html
 
@@ -54,7 +54,7 @@ Examples
   .. image:: /auto_examples/images/thumb/sphx_glr_0020_text_with_string_encoders_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_0020_text_with_string_encoders.py`
+  :doc:`/auto_examples/0020_text_with_string_encoders`
 
 .. raw:: html
 
@@ -71,7 +71,7 @@ Examples
   .. image:: /auto_examples/images/thumb/sphx_glr_0030_datetime_encoder_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_0030_datetime_encoder.py`
+  :doc:`/auto_examples/0030_datetime_encoder`
 
 .. raw:: html
 
@@ -88,7 +88,7 @@ Examples
   .. image:: /auto_examples/images/thumb/sphx_glr_0040_fuzzy_joining_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_0040_fuzzy_joining.py`
+  :doc:`/auto_examples/0040_fuzzy_joining`
 
 .. raw:: html
 
@@ -105,7 +105,7 @@ Examples
   .. image:: /auto_examples/images/thumb/sphx_glr_0050_deduplication_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_0050_deduplication.py`
+  :doc:`/auto_examples/0050_deduplication`
 
 .. raw:: html
 
@@ -122,7 +122,7 @@ Examples
   .. image:: /auto_examples/images/thumb/sphx_glr_0060_multiple_key_join_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_0060_multiple_key_join.py`
+  :doc:`/auto_examples/0060_multiple_key_join`
 
 .. raw:: html
 
@@ -139,7 +139,7 @@ Examples
   .. image:: /auto_examples/images/thumb/sphx_glr_0070_join_aggregation_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_0070_join_aggregation.py`
+  :doc:`/auto_examples/0070_join_aggregation`
 
 .. raw:: html
 
@@ -156,7 +156,7 @@ Examples
   .. image:: /auto_examples/images/thumb/sphx_glr_0080_interpolation_join_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_0080_interpolation_join.py`
+  :doc:`/auto_examples/0080_interpolation_join`
 
 .. raw:: html
 
@@ -173,7 +173,7 @@ Examples
   .. image:: /auto_examples/images/thumb/sphx_glr_0090_apply_to_cols_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_0090_apply_to_cols.py`
+  :doc:`/auto_examples/0090_apply_to_cols`
 
 .. raw:: html
 
@@ -190,7 +190,7 @@ Examples
   .. image:: /auto_examples/images/thumb/sphx_glr_0100_squashing_scaler_thumb.png
     :alt:
 
-  :ref:`sphx_glr_auto_examples_0100_squashing_scaler.py`
+  :doc:`/auto_examples/0100_squashing_scaler`
 
 .. raw:: html
 
@@ -241,7 +241,7 @@ Skrub DataOps
   .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1110_data_ops_intro_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_1110_data_ops_intro.py`
+  :doc:`/auto_examples/data_ops/1110_data_ops_intro`
 
 .. raw:: html
 
@@ -258,7 +258,7 @@ Skrub DataOps
   .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1120_multiple_tables_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_1120_multiple_tables.py`
+  :doc:`/auto_examples/data_ops/1120_multiple_tables`
 
 .. raw:: html
 
@@ -275,7 +275,7 @@ Skrub DataOps
   .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1130_choices_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_1130_choices.py`
+  :doc:`/auto_examples/data_ops/1130_choices`
 
 .. raw:: html
 
@@ -292,7 +292,7 @@ Skrub DataOps
   .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1140_subsampling_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_1140_subsampling.py`
+  :doc:`/auto_examples/data_ops/1140_subsampling`
 
 .. raw:: html
 
@@ -309,7 +309,7 @@ Skrub DataOps
   .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1150_use_case_thumb.svg
     :alt:
 
-  :ref:`sphx_glr_auto_examples_data_ops_1150_use_case.py`
+  :doc:`/auto_examples/data_ops/1150_use_case`
 
 .. raw:: html
 

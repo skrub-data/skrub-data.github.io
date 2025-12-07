@@ -11,7 +11,7 @@
         :class: sphx-glr-download-link-note
 
         :ref:`Go to the end <sphx_glr_download_auto_examples_0080_interpolation_join.py>`
-        to download the full example code. or to run this example in your browser via JupyterLite or Binder
+        to download the full example code or to run this example in your browser via JupyterLite or Binder.
 
 .. rst-class:: sphx-glr-example-title
 
@@ -368,9 +368,9 @@ to the right side table column names.
           <td>29.7</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>27.655755</td>
-          <td>13.155415</td>
-          <td>-0.065621</td>
+          <td>27.682437</td>
+          <td>10.942222</td>
+          <td>-0.073809</td>
         </tr>
         <tr>
           <th>1</th>
@@ -380,9 +380,9 @@ to the right side table column names.
           <td>33.3</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>30.604060</td>
-          <td>12.491330</td>
-          <td>0.209515</td>
+          <td>30.858564</td>
+          <td>23.391823</td>
+          <td>0.194837</td>
         </tr>
         <tr>
           <th>2</th>
@@ -392,9 +392,9 @@ to the right side table column names.
           <td>43.0</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>34.355106</td>
-          <td>37.894208</td>
-          <td>-0.019409</td>
+          <td>34.698855</td>
+          <td>127.411352</td>
+          <td>-0.068101</td>
         </tr>
         <tr>
           <th>3</th>
@@ -404,9 +404,9 @@ to the right side table column names.
           <td>26.4</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>28.887134</td>
-          <td>20.103574</td>
-          <td>0.383776</td>
+          <td>27.936895</td>
+          <td>29.044260</td>
+          <td>0.272996</td>
         </tr>
         <tr>
           <th>4</th>
@@ -416,9 +416,9 @@ to the right side table column names.
           <td>29.1</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>27.820872</td>
-          <td>6.503868</td>
-          <td>0.118895</td>
+          <td>27.590368</td>
+          <td>14.835653</td>
+          <td>0.109298</td>
         </tr>
       </tbody>
     </table>
@@ -602,7 +602,7 @@ maximum daily temperature.
           <td>MI</td>
           <td>42.212059</td>
           <td>-83.348836</td>
-          <td>1.090839</td>
+          <td>1.295158</td>
         </tr>
         <tr>
           <th>1</th>
@@ -614,7 +614,7 @@ maximum daily temperature.
           <td>PA</td>
           <td>39.871953</td>
           <td>-75.241141</td>
-          <td>11.052082</td>
+          <td>10.475551</td>
         </tr>
         <tr>
           <th>2</th>
@@ -626,7 +626,7 @@ maximum daily temperature.
           <td>IL</td>
           <td>41.979595</td>
           <td>-87.904464</td>
-          <td>4.766002</td>
+          <td>5.084444</td>
         </tr>
         <tr>
           <th>3</th>
@@ -638,7 +638,7 @@ maximum daily temperature.
           <td>KY</td>
           <td>39.046143</td>
           <td>-84.662172</td>
-          <td>14.358985</td>
+          <td>13.899279</td>
         </tr>
         <tr>
           <th>4</th>
@@ -650,7 +650,7 @@ maximum daily temperature.
           <td>TX</td>
           <td>32.895951</td>
           <td>-97.037200</td>
-          <td>16.576364</td>
+          <td>16.120304</td>
         </tr>
       </tbody>
     </table>
@@ -701,11 +701,11 @@ Washington, Minnesota.
 
 
     state
-    AK   -3.916785
-    MT   -0.436147
-    ND    0.505527
-    WA    0.975677
-    MN    1.316834
+    AK   -7.412091
+    MT   -0.046745
+    ND    1.001194
+    WA    1.139635
+    MN    1.659874
     Name: TMAX, dtype: float64
 
 
@@ -731,11 +731,11 @@ Florida, Louisiana.
 
 
     state
-    LA    21.208852
-    FL    24.876270
-    HI    27.390868
-    VI    29.108858
-    PR    29.727447
+    LA    20.950609
+    FL    24.797861
+    HI    27.760899
+    VI    30.302049
+    PR    30.935558
     Name: TMAX, dtype: float64
 
 
@@ -820,7 +820,7 @@ estimators.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 11.770 seconds)
+   **Total running time of the script:** (0 minutes 12.691 seconds)
 
 
 .. _sphx_glr_download_auto_examples_0080_interpolation_join.py:
