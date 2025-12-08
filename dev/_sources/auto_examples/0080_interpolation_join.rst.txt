@@ -368,9 +368,9 @@ to the right side table column names.
           <td>29.7</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>27.081888</td>
-          <td>15.913057</td>
-          <td>0.445859</td>
+          <td>27.960521</td>
+          <td>10.386165</td>
+          <td>0.198010</td>
         </tr>
         <tr>
           <th>1</th>
@@ -380,9 +380,9 @@ to the right side table column names.
           <td>33.3</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>29.744413</td>
-          <td>23.014676</td>
-          <td>0.627862</td>
+          <td>29.927715</td>
+          <td>20.617788</td>
+          <td>0.173571</td>
         </tr>
         <tr>
           <th>2</th>
@@ -392,9 +392,9 @@ to the right side table column names.
           <td>43.0</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>33.038020</td>
-          <td>36.051217</td>
-          <td>0.450440</td>
+          <td>33.921192</td>
+          <td>52.634429</td>
+          <td>-0.001695</td>
         </tr>
         <tr>
           <th>3</th>
@@ -404,9 +404,9 @@ to the right side table column names.
           <td>26.4</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>28.117412</td>
-          <td>23.312522</td>
-          <td>0.825156</td>
+          <td>28.026038</td>
+          <td>30.131254</td>
+          <td>0.510419</td>
         </tr>
         <tr>
           <th>4</th>
@@ -416,9 +416,9 @@ to the right side table column names.
           <td>29.1</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>27.092412</td>
-          <td>14.854335</td>
-          <td>0.557613</td>
+          <td>25.610325</td>
+          <td>19.753181</td>
+          <td>0.232861</td>
         </tr>
       </tbody>
     </table>
@@ -602,7 +602,7 @@ maximum daily temperature.
           <td>MI</td>
           <td>42.212059</td>
           <td>-83.348836</td>
-          <td>2.019012</td>
+          <td>1.115956</td>
         </tr>
         <tr>
           <th>1</th>
@@ -614,7 +614,7 @@ maximum daily temperature.
           <td>PA</td>
           <td>39.871953</td>
           <td>-75.241141</td>
-          <td>11.112132</td>
+          <td>10.499773</td>
         </tr>
         <tr>
           <th>2</th>
@@ -626,7 +626,7 @@ maximum daily temperature.
           <td>IL</td>
           <td>41.979595</td>
           <td>-87.904464</td>
-          <td>4.729574</td>
+          <td>4.453459</td>
         </tr>
         <tr>
           <th>3</th>
@@ -638,7 +638,7 @@ maximum daily temperature.
           <td>KY</td>
           <td>39.046143</td>
           <td>-84.662172</td>
-          <td>14.765219</td>
+          <td>13.704495</td>
         </tr>
         <tr>
           <th>4</th>
@@ -650,7 +650,7 @@ maximum daily temperature.
           <td>TX</td>
           <td>32.895951</td>
           <td>-97.037200</td>
-          <td>15.280371</td>
+          <td>16.603176</td>
         </tr>
       </tbody>
     </table>
@@ -701,11 +701,11 @@ Washington, Minnesota.
 
 
     state
-    AK   -2.760564
-    ND    0.648692
-    MT    0.693509
-    WA    1.200095
-    MN    1.807797
+    AK   -2.576956
+    MT    0.384007
+    ND    0.593399
+    WA    1.149615
+    MN    1.427335
     Name: TMAX, dtype: float64
 
 
@@ -731,11 +731,11 @@ Florida, Louisiana.
 
 
     state
-    LA    21.250346
-    FL    24.918234
-    HI    27.704813
-    VI    29.021859
-    PR    29.805077
+    LA    21.317976
+    FL    24.782788
+    HI    27.725514
+    VI    29.437705
+    PR    29.958700
     Name: TMAX, dtype: float64
 
 
@@ -820,7 +820,7 @@ estimators.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 12.812 seconds)
+   **Total running time of the script:** (0 minutes 15.134 seconds)
 
 
 .. _sphx_glr_download_auto_examples_0080_interpolation_join.py:
