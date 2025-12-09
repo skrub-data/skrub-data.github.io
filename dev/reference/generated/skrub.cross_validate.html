@@ -11,8 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.cross_validate.html" />
 <meta property="og:site_name" content="skrub" />
+<meta property="og:description" content="Gallery examples: Tuning DataOps with Optuna" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
+<meta name="description" content="Gallery examples: Tuning DataOps with Optuna" />
 
     <title>cross_validate &#8212; skrub</title>
   
@@ -641,6 +643,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.applied_estimator.html">skrub.DataOp.skb.applied_estimator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.SkrubLearner.html">SkrubLearner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ParamSearch.html">ParamSearch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.OptunaParamSearch.html">OptunaParamSearch</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../config.html">config</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -738,7 +741,7 @@
 <h1>cross_validate<a class="headerlink" href="#cross-validate" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.cross_validate">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">cross_validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">learner</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3ad86df/skrub/_data_ops/_estimator.py#L569"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.cross_validate" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">cross_validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">learner</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/80103cc/skrub/_data_ops/_estimator.py#L581"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.cross_validate" title="Link to this definition">#</a></dt>
 <dd><p>Cross-validate a learner built from a DataOp.</p>
 <p>This runs cross-validation from a learner that was built from a skrub
 DataOp with <a class="reference internal" href="skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-func docutils literal notranslate"><span class="pre">DataOp.skb.make_learner()</span></code></a>, <a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html#skrub.DataOp.skb.make_grid_search" title="skrub.DataOp.skb.make_grid_search"><code class="xref py py-func docutils literal notranslate"><span class="pre">DataOp.skb.make_grid_search()</span></code></a> or
@@ -806,6 +809,12 @@ default subsampling is not applied and all the data is used.</p>
 </div>
 </dd></dl>
 
+<section id="gallery-examples">
+<h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to use Optuna to tune the hyperparameters of a skrub DataOp. As seen in the previous example, skrub DataOps can contain &quot;choices&quot;, objects created with choose_from, choose_int, choose_float, etc. and we can use hyperparameter search techniques to pick the best outcome for each choice. Performing this search with Optuna allows us to benefit from its many features, such as state-of-the-art search strategies, monitoring and visualization, stopping and resuming searches, and parallel or distributed computation."><img alt="" src="../../_images/sphx_glr_1131_optuna_choices_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/data_ops/1131_optuna_choices.html"><span class="doc">Tuning DataOps with Optuna</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Tuning DataOps with Optuna</div>
+</div></div></section>
 </section>
 
 
@@ -856,6 +865,7 @@ default subsampling is not applied and all the data is used.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.cross_validate"><code class="docutils literal notranslate"><span class="pre">cross_validate()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery-examples">Gallery examples</a></li>
 </ul>
   </nav></div>
 

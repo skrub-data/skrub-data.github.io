@@ -542,6 +542,7 @@
 <li class="toctree-l2"><a class="reference internal" href="data_ops/1110_data_ops_intro.html">Introduction to machine-learning pipelines with skrub DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/1120_multiple_tables.html">Multiples tables: building machine learning pipelines with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/1130_choices.html">Hyperparameter tuning with DataOps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_ops/1131_optuna_choices.html">Tuning DataOps with Optuna</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/1140_subsampling.html">Subsampling for faster development</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/1150_use_case.html">Use case: developing locally and deploying to production</a></li>
 </ul>
@@ -1627,7 +1628,7 @@ Name: count, dtype: int64
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.fit" title="sklearn.pipeline.Pipeline.fit" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-method"><span class="n">pipeline_hgb</span><span class="o">.</span><span class="n">fit</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y_train</span></a><span class="p">)</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_test</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y_test</span></a><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>0.5528
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>0.5872
 </pre></div>
 </div>
 </section>
@@ -1637,7 +1638,7 @@ Name: count, dtype: int64
 on imprecise and multiple-key correspondences.
 This is made easy by skrub’s <a class="reference internal" href="../reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-func docutils literal notranslate"><span class="pre">Joiner()</span></code></a> transformer.</p>
 <p>Our final cross-validated accuracy score is 0.55.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 31.394 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 24.402 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-0060-multiple-key-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/0060_multiple_key_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />

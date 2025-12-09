@@ -285,6 +285,23 @@ Skrub DataOps
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to use Optuna to tune the hyperparameters of a skrub DataOp. As seen in the previous example, skrub DataOps can contain &quot;choices&quot;, objects created with choose_from, choose_int, choose_float, etc. and we can use hyperparameter search techniques to pick the best outcome for each choice. Performing this search with Optuna allows us to benefit from its many features, such as state-of-the-art search strategies, monitoring and visualization, stopping and resuming searches, and parallel or distributed computation.">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1131_optuna_choices_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/data_ops/1131_optuna_choices`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Tuning DataOps with Optuna</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use DataOp.skb.subsample to speed up interactive construction of a skrub DataOps plan by computing previews on a subsampled version of the original data.">
 
 .. only:: html

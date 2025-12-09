@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing Development: New features: DataOp.skb.apply() now allows passing extra named arguments to the estimator’s methods through the parameters fit_kwargs, predict_kwargs etc.#1642 by Jérôme Dockè..." />
+<meta property="og:description" content="Ongoing Development: New features: It is now possible to tune the choices in a DataOp with Optuna. See Tuning DataOps with Optuna for an example.#1661 by Jérôme Dockès., DataOp.skb.apply() now allo..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing Development: New features: DataOp.skb.apply() now allows passing extra named arguments to the estimator’s methods through the parameters fit_kwargs, predict_kwargs etc.#1642 by Jérôme Dockè..." />
+<meta name="description" content="Ongoing Development: New features: It is now possible to tune the choices in a DataOp with Optuna. See Tuning DataOps with Optuna for an example.#1661 by Jérôme Dockès., DataOp.skb.apply() now allo..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -578,6 +578,9 @@
 <section id="new-features">
 <h3>New features<a class="headerlink" href="#new-features" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>It is now possible to tune the choices in a <a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> with <a class="reference external" href="https://optuna.readthedocs.io/en/stable/">Optuna</a>. See
+<a class="reference internal" href="auto_examples/data_ops/1131_optuna_choices.html#example-optuna-choices"><span class="std std-ref">Tuning DataOps with Optuna</span></a> for an example.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1661">#1661</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.apply()</span></code></a> now allows passing extra named arguments to the
 estimator’s methods through the parameters <code class="docutils literal notranslate"><span class="pre">fit_kwargs</span></code>, <code class="docutils literal notranslate"><span class="pre">predict_kwargs</span></code>
 etc. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1642">#1642</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
