@@ -620,6 +620,9 @@ when linear models are used.
 <li><p>Improved the error message raised when a Polars lazyframe is passed to
 <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>, clarifying that <cite>.collect()</cite> must be called first.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1767">#1767</a> by <a class="reference external" href="https://github.com/fatiben2002">Fatima Ben Kadour</a></p></li>
+<li><p>Computing the associations in <cite>TableReport</cite> is now deterministic and can be controlled
+by the new parameter <code class="docutils literal notranslate"><span class="pre">subsampling_seed</span></code> of the global configuration.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1775">#1775</a> by <a class="reference external" href="https://github.com/thomass-dev">Thomas S.</a>.</p></li>
 </ul>
 </section>
 <section id="bugfixes">
