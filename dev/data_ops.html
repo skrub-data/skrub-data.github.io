@@ -651,8 +651,8 @@
 <span id="user-guide-data-ops-index"></span><h1>Complex multi-table pipelines with Data Ops<a class="headerlink" href="#complex-multi-table-pipelines-with-data-ops" title="Link to this heading">#</a></h1>
 <p>Skrub provides an easy way to build complex, flexible machine learning pipelines.
 There are several needs that are not easily addressed with standard scikit-learn
-tools such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a> and
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ColumnTransformer</span></code></a>, and for which the Skrub DataOps offer
+tools such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a> and
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ColumnTransformer</span></code></a>, and for which the Skrub DataOps offer
 a solution:</p>
 <ul class="simple">
 <li><p>Multiple tables: We often have several tables of different shapes (for
@@ -668,7 +668,7 @@ the powerful and familiar APIs of <a class="reference external" href="https://pa
 <li><p>Hyperparameter tuning: Choices of estimators, hyperparameters, and even
 the pipeline architecture can be guided by validation scores. Specifying
 ranges of possible values outside of the pipeline itself (as in
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GridSearchCV</span></code></a>) is difficult in complex
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GridSearchCV</span></code></a>) is difficult in complex
 pipelines.</p></li>
 <li><p>Iterative development: Building a pipeline step by step while inspecting
 intermediate results allows for a short feedback loop and early discovery of

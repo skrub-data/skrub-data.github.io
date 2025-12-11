@@ -58,6 +58,9 @@ Changes
 - Computing the associations in `TableReport` is now deterministic and can be controlled
   by the new parameter ``subsampling_seed`` of the global configuration.
   :pr:`1775` by :user:`Thomas S. <thomass-dev>`.
+- Added ``cast_to_str`` parameter to :class:`Cleaner` to prevent unintended
+  conversion of list/object-like columns to strings unless explicitly enabled.
+  :pr:`1789` by :user:`PilliSiddharth`
 
 Bugfixes
 --------
@@ -92,9 +95,9 @@ Bugfixes
   ``.skb.set_name()``, ``.skb.set_description()``, ``.skb.mark_as_X()`` or
   ``.skb.mark_as_y()`` used to raise an error, this has been fixed in :pr:`1782`
   by :user:`Jérôme Dockès <jeromedockes>`.
-- Added ``cast_to_str`` parameter to :class:`Cleaner` to prevent unintended
-  conversion of list/object-like columns to strings unless explicitly enabled.
-  :pr:`1789` by :user:`PilliSiddharth`
+- Fixed potential issues that could arise in :meth:`ParamSearch.plot_results`
+  when NaN values were present in the crossvalidation results.
+  :pr:`1800` by :user:`Riccardo Cappuzzo <rcap107>`.
 
 Release 0.6.2
 =============
@@ -120,7 +123,14 @@ Changes
   :pr:`1628` by :user:`Jérôme Dockès <jeromedockes>`.
 - The parameter ``splitter`` of :meth:`DataOp.skb.train_test_split` has been
   renamed ``split_func``. :pr:`1630` by :user:`Jérôme Dockès <jeromedockes>`.
-
+- KEN embeddings and all the relevant functions have been removed from skrub.
+  :pr:`1567` by :user:`Riccardo Cappuzzo<rcap107>`.
+- The objects ``tabular_learner`` and ``DropIfTooManyNulls`` were removed. Use
+  :func:`tabular_pipeline` and :class:`DropUninformative` instead.
+  :pr:`1567` by :user:`Riccardo Cappuzzo<rcap107>`.
+- The skrub global configuration now includes a parameter for setting the default
+  verbosity of the :class:`TableReport`.
+  :pr:`1567` by :user:`Riccardo Cappuzzo<rcap107>`.
 
 Bugfixes
 --------

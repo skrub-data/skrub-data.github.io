@@ -658,7 +658,7 @@ are left unchanged (they are not interpolated).
 The <a class="reference internal" href="../../reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> centers and scales the data in such a way that outliers are
 less likely to skew the final result compared to alternative methods.</p>
 <p>Based on the specified <code class="docutils literal notranslate"><span class="pre">quantile_range</span></code> parameter, the scaler employs a scikit-learn
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html#sklearn.preprocessing.RobustScaler" title="(in scikit-learn v1.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RobustScaler</span></code></a> to rescale the values in a way that the quantile range occupies
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html#sklearn.preprocessing.RobustScaler" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RobustScaler</span></code></a> to rescale the values in a way that the quantile range occupies
 interval of length two, centering the median to zero. It therefore ensures that
 inliers are spread to a reasonable range. Afterwards, it uses a smooth clipping
 function to ensure all values (including outliers and infinite values) are in the
