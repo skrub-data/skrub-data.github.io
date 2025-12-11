@@ -84,12 +84,6 @@ The main table: flights dataset
 
 
 
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    Downloading 'flight_delays' from https://github.com/skrub-data/skrub-data-files/raw/refs/heads/main/flight_delays.zip (attempt 1/3)
-
 
 .. raw:: html
 
@@ -829,7 +823,7 @@ tables into one.
           <td>USA</td>
           <td>44.910111</td>
           <td>-67.012694</td>
-          <td>3.411334</td>
+          <td>3.411335</td>
           <td>4.675112</td>
           <td>True</td>
         </tr>
@@ -855,7 +849,7 @@ tables into one.
           <td>USA</td>
           <td>44.910111</td>
           <td>-67.012694</td>
-          <td>3.411334</td>
+          <td>3.411335</td>
           <td>4.675112</td>
           <td>True</td>
         </tr>
@@ -1232,7 +1226,7 @@ The results:
  .. code-block:: none
 
 
-    0.5592
+    0.564
 
 
 
@@ -1250,7 +1244,7 @@ Our final cross-validated accuracy score is 0.55.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 16.808 seconds)
+   **Total running time of the script:** (0 minutes 19.140 seconds)
 
 
 .. _sphx_glr_download_auto_examples_0060_multiple_key_join.py:
