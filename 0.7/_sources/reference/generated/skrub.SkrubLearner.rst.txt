@@ -1,0 +1,14 @@
+﻿SkrubLearner
+============
+
+.. currentmodule:: skrub
+
+.. autoclass:: SkrubLearner
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.SkrubLearner skrub.SkrubLearner.__init__ skrub.SkrubLearner.describe_params skrub.SkrubLearner.find_fitted_estimator skrub.SkrubLearner.get_metadata_routing skrub.SkrubLearner.get_param_grid skrub.SkrubLearner.get_params skrub.SkrubLearner.report skrub.SkrubLearner.set_params skrub.SkrubLearner.truncated_after 
+   :add-heading: Gallery examples
+   :heading-level: -

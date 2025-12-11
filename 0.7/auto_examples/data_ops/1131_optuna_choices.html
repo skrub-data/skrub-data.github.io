@@ -1,0 +1,1125 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Tuning DataOps with Optuna" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/auto_examples/data_ops/1131_optuna_choices.html" />
+<meta property="og:site_name" content="skrub" />
+<meta property="og:description" content="This example shows how to use Optuna to tune the hyperparameters of a skrub DataOp. As seen in the previous example, skrub DataOps can contain “choices”, objects created with choose_from(), choose_..." />
+<meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
+<meta property="og:image:alt" content="skrub" />
+<meta name="description" content="This example shows how to use Optuna to tune the hyperparameters of a skrub DataOp. As seen in the previous example, skrub DataOps can contain “choices”, objects created with choose_from(), choose_..." />
+
+    <title>Tuning DataOps with Optuna &#8212; skrub</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=d2d258e8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=3bbd54d8" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=fe7df9b0"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=fd10adb8"></script>
+    <script src="../../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/data_ops/1131_optuna_choices';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.0';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            true;
+        </script>
+    <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
+    <link rel="canonical" href="https://skrub-data.org/stable/auto_examples/data_ops/1131_optuna_choices.html" />
+    <link rel="icon" href="../../_static/skrub.svg"/>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Subsampling for faster development" href="1140_subsampling.html" />
+    <link rel="prev" title="Hyperparameter tuning with DataOps" href="1130_choices.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.7.0" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/skrub.svg" class="logo__image only-light" alt="skrub - Home"/>
+    <img src="../../_static/skrub.svg" class="logo__image only-dark pst-js-only" alt="skrub - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../install.html">
+    Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../documentation.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../reference/index.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    Examples
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../learning_materials.html">
+    Learning Materials
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../CHANGES.html">
+    Release history
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../development.html">
+    Development
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../CONTRIBUTING.html">
+    Contributing to skrub
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://bsky.app/profile/skrub-data.bsky.social" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-bluesky fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Bluesky</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://x.com/skrub_data" title="X (ex-Twitter)" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">X (ex-Twitter)</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../install.html">
+    Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../documentation.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../reference/index.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../learning_materials.html">
+    Learning Materials
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../CHANGES.html">
+    Release history
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../development.html">
+    Development
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../CONTRIBUTING.html">
+    Contributing to skrub
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://bsky.app/profile/skrub-data.bsky.social" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-bluesky fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Bluesky</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://x.com/skrub_data" title="X (ex-Twitter)" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">X (ex-Twitter)</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../0000_getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0010_encodings.html">Encoding: from a dataframe to a numerical matrix for machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0020_text_with_string_encoders.html">Various string encoders: a sentiment analysis example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0030_datetime_encoder.html">Handling datetime features with the DatetimeEncoder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0040_fuzzy_joining.html">Fuzzy joining dirty tables with the Joiner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0050_deduplication.html">Deduplicating misspelled categories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0060_multiple_key_join.html">Spatial join for flight data: Joining across multiple columns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0070_join_aggregation.html">AggJoiner on a credit fraud dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0080_interpolation_join.html">Interpolation join: infer missing rows when joining two tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0090_apply_to_cols.html">Hands-On with Column Selection and Transformers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0100_squashing_scaler.html">SquashingScaler: Robust numerical preprocessing for neural networks</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Skrub DataOps</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1110_data_ops_intro.html">Introduction to machine-learning pipelines with skrub DataOps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1120_multiple_tables.html">Multiples tables: building machine learning pipelines with DataOps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1130_choices.html">Hyperparameter tuning with DataOps</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Tuning DataOps with Optuna</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1140_subsampling.html">Subsampling for faster development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1150_use_case.html">Use case: developing locally and deploying to production</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Examples</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Skrub DataOps</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Tuning DataOps with Optuna</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="#sphx-glr-download-auto-examples-data-ops-1131-optuna-choices-py"><span class="std std-ref">Go to the end</span></a>
+to download the full example code or to run this example in your browser via JupyterLite or Binder.</p>
+</div>
+<section class="sphx-glr-example-title" id="tuning-dataops-with-optuna">
+<span id="example-optuna-choices"></span><span id="sphx-glr-auto-examples-data-ops-1131-optuna-choices-py"></span><h1>Tuning DataOps with Optuna<a class="headerlink" href="#tuning-dataops-with-optuna" title="Link to this heading">#</a></h1>
+<p>This example shows how to use <a class="reference external" href="https://optuna.readthedocs.io/en/stable/">Optuna</a> to tune the hyperparameters of a
+skrub <a class="reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a>. As seen in the previous example, skrub DataOps can contain
+“choices”, objects created with <a class="reference internal" href="../../reference/generated/skrub.choose_from.html#skrub.choose_from" title="skrub.choose_from"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_from()</span></code></a>, <a class="reference internal" href="../../reference/generated/skrub.choose_int.html#skrub.choose_int" title="skrub.choose_int"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_int()</span></code></a>,
+<a class="reference internal" href="../../reference/generated/skrub.choose_float.html#skrub.choose_float" title="skrub.choose_float"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_float()</span></code></a>, etc. and we can use hyperparameter search techniques to
+pick the best outcome for each choice. Performing this search with Optuna
+allows us to benefit from its many features, such as state-of-the-art search
+strategies, monitoring and visualization, stopping and resuming searches, and
+parallel or distributed computation.</p>
+<p>In order to use Optuna with skrub, the package must be installed first.
+This can be done with pip:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>optuna
+</pre></div>
+</div>
+<section id="a-simple-regressor-and-example-data">
+<h2>A simple regressor and example data.<a class="headerlink" href="#a-simple-regressor-and-example-data" title="Link to this heading">#</a></h2>
+<p>We will fit a regressor containing a few choices on a toy dataset. We
+try 2 regressors: gradient boosting and random forest. They both have
+hyperparameters that we want to tune.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesRegressor.html#sklearn.ensemble.ExtraTreesRegressor" title="sklearn.ensemble.ExtraTreesRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class"><span class="n">ExtraTreesRegressor</span></a>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge" title="sklearn.linear_model.Ridge" class="sphx-glr-backref-module-sklearn-linear_model sphx-glr-backref-type-py-class"><span class="n">Ridge</span></a>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
+
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesRegressor.html#sklearn.ensemble.ExtraTreesRegressor" title="sklearn.ensemble.ExtraTreesRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">extra_tree</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesRegressor.html#sklearn.ensemble.ExtraTreesRegressor" title="sklearn.ensemble.ExtraTreesRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class"><span class="n">ExtraTreesRegressor</span></a><span class="p">(</span>
+    <span class="n">min_samples_leaf</span><span class="o">=</span><a href="../../reference/generated/skrub.choose_int.html#skrub.choose_int" title="skrub.choose_int" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">skrub</span><span class="o">.</span><span class="n">choose_int</span></a><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;min_samples_leaf&quot;</span><span class="p">),</span>
+<span class="p">)</span>
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge" title="sklearn.linear_model.Ridge" class="sphx-glr-backref-module-sklearn-linear_model sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ridge</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge" title="sklearn.linear_model.Ridge" class="sphx-glr-backref-module-sklearn-linear_model sphx-glr-backref-type-py-class"><span class="n">Ridge</span></a><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><a href="../../reference/generated/skrub.choose_float.html#skrub.choose_float" title="skrub.choose_float" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">skrub</span><span class="o">.</span><span class="n">choose_float</span></a><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;α&quot;</span><span class="p">))</span>
+
+<span class="n">regressor</span> <span class="o">=</span> <a href="../../reference/generated/skrub.choose_from.html#skrub.choose_from" title="skrub.choose_from" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">skrub</span><span class="o">.</span><span class="n">choose_from</span></a><span class="p">(</span>
+    <span class="p">{</span><span class="s2">&quot;extra_tree&quot;</span><span class="p">:</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesRegressor.html#sklearn.ensemble.ExtraTreesRegressor" title="sklearn.ensemble.ExtraTreesRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">extra_tree</span></a><span class="p">,</span> <span class="s2">&quot;ridge&quot;</span><span class="p">:</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge" title="sklearn.linear_model.Ridge" class="sphx-glr-backref-module-sklearn-linear_model sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ridge</span></a><span class="p">},</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;regressor&quot;</span>
+<span class="p">)</span>
+<a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">data</span></a> <span class="o">=</span> <a href="../../reference/generated/skrub.var.html#skrub.var" title="skrub.var" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">skrub</span><span class="o">.</span><span class="n">var</span></a><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">)</span>
+<a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a> <span class="o">=</span> <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">data</span><span class="o">.</span><span class="n">drop</span></a><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">&quot;MedHouseVal&quot;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">()</span>
+<a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">=</span> <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">data</span></a><span class="p">[</span><span class="s2">&quot;MedHouseVal&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
+<a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pred</span></a> <span class="o">=</span> <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">regressor</span><span class="p">,</span> <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="o">=</span><a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pred</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_param_grid</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>- regressor: &#39;extra_tree&#39;
+  min_samples_leaf: choose_int(1, 32, log=True, name=&#39;min_samples_leaf&#39;)
+- regressor: &#39;ridge&#39;
+  α: choose_float(0.01, 10.0, log=True, name=&#39;α&#39;)
+</pre></div>
+</div>
+<p>Load data for the example</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html#sklearn.datasets.fetch_california_housing" title="sklearn.datasets.fetch_california_housing" class="sphx-glr-backref-module-sklearn-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_california_housing</span></a>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class"><span class="n">KFold</span></a>
+
+<span class="c1"># (We subsample the dataset by half to make the example run faster)</span>
+<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html#sklearn.datasets.fetch_california_housing" title="sklearn.datasets.fetch_california_housing" class="sphx-glr-backref-module-sklearn-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_california_housing</span></a><span class="p">(</span><span class="n">as_frame</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10_000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># The environment we will use to fit the learners created by our DataOp.</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">env</span></a> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;data&quot;</span><span class="p">:</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="p">}</span>
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class"><span class="n">KFold</span></a><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="selecting-the-best-hyperparameters-with-optuna">
+<h2>Selecting the best hyperparameters with Optuna.<a class="headerlink" href="#selecting-the-best-hyperparameters-with-optuna" title="Link to this heading">#</a></h2>
+<p>The simplest way to use Optuna is to pass <code class="docutils literal notranslate"><span class="pre">backend='optuna'</span></code> to
+<a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_randomized_search()</span></code></a>. It is used very similarly as
+with the default backend
+(<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.model_selection.RandomizedSearchCV</span></code></a>). Additional
+parameters are available to control the Optuna sampler, storage and study
+name, and timeout.
+Note that in order to persist the study and resume it later, the <code class="docutils literal notranslate"><span class="pre">storage</span></code>
+parameter must be set to a valid database URL (e.g., a SQLite file). Refer to
+the User Guide for an example.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../reference/generated/skrub.OptunaParamSearch.html#skrub.OptunaParamSearch" title="skrub.OptunaParamSearch" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">search</span></a> <span class="o">=</span> <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pred</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_randomized_search</span><span class="p">(</span><span class="n">backend</span><span class="o">=</span><span class="s2">&quot;optuna&quot;</span><span class="p">,</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv</span></a><span class="o">=</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv</span></a><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<a href="../../reference/generated/skrub.OptunaParamSearch.html#skrub.OptunaParamSearch" title="skrub.OptunaParamSearch" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">search</span></a><span class="o">.</span><span class="n">fit</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">env</span></a><span class="p">)</span>
+<a href="../../reference/generated/skrub.OptunaParamSearch.html#skrub.OptunaParamSearch.results_" title="skrub.OptunaParamSearch.results_" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-property"><span class="n">search</span><span class="o">.</span><span class="n">results_</span></a>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Running optuna search for study skrub_randomized_search_19659252-79ca-4770-85cd-8e8efc7db0d8 in storage /tmp/tmpkuvzr0n0_skrub_optuna_search_storage/optuna_storage
+[I 2025-12-11 22:22:00,571] A new study created in Journal with name: skrub_randomized_search_19659252-79ca-4770-85cd-8e8efc7db0d8
+[I 2025-12-11 22:22:04,070] Trial 0 finished with value: 0.7652881473233559 and parameters: {&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 6}. Best is trial 0 with value: 0.7652881473233559.
+[I 2025-12-11 22:22:06,436] Trial 1 finished with value: 0.7166275246081899 and parameters: {&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 21}. Best is trial 0 with value: 0.7652881473233559.
+[I 2025-12-11 22:22:07,634] Trial 2 finished with value: 0.5999128192700078 and parameters: {&#39;2:regressor&#39;: &#39;1:ridge&#39;, &#39;1:α&#39;: 2.53257860062555}. Best is trial 0 with value: 0.7652881473233559.
+[I 2025-12-11 22:22:09,236] Trial 3 finished with value: 0.5998983778241221 and parameters: {&#39;2:regressor&#39;: &#39;1:ridge&#39;, &#39;1:α&#39;: 0.4193784471459371}. Best is trial 0 with value: 0.7652881473233559.
+[I 2025-12-11 22:22:18,144] Trial 4 finished with value: 0.794182310175938 and parameters: {&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 1}. Best is trial 4 with value: 0.794182310175938.
+[I 2025-12-11 22:22:22,136] Trial 5 finished with value: 0.7748953283529009 and parameters: {&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 4}. Best is trial 4 with value: 0.794182310175938.
+[I 2025-12-11 22:22:27,796] Trial 6 finished with value: 0.790706770010962 and parameters: {&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 2}. Best is trial 4 with value: 0.794182310175938.
+[I 2025-12-11 22:22:30,705] Trial 7 finished with value: 0.7526033083987798 and parameters: {&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 9}. Best is trial 4 with value: 0.794182310175938.
+[I 2025-12-11 22:22:34,088] Trial 8 finished with value: 0.766132414324147 and parameters: {&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 6}. Best is trial 4 with value: 0.794182310175938.
+[I 2025-12-11 22:22:37,899] Trial 9 finished with value: 0.7759210273415043 and parameters: {&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 4}. Best is trial 4 with value: 0.794182310175938.
+[I 2025-12-11 22:22:37,901] A new study created in memory with name: skrub_randomized_search_19659252-79ca-4770-85cd-8e8efc7db0d8
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>min_samples_leaf</th>
+      <th>α</th>
+      <th>regressor</th>
+      <th>mean_test_score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>extra_tree</td>
+      <td>0.794182</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2.0</td>
+      <td>NaN</td>
+      <td>extra_tree</td>
+      <td>0.790707</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4.0</td>
+      <td>NaN</td>
+      <td>extra_tree</td>
+      <td>0.775921</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4.0</td>
+      <td>NaN</td>
+      <td>extra_tree</td>
+      <td>0.774895</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>extra_tree</td>
+      <td>0.766132</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>extra_tree</td>
+      <td>0.765288</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>9.0</td>
+      <td>NaN</td>
+      <td>extra_tree</td>
+      <td>0.752603</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>21.0</td>
+      <td>NaN</td>
+      <td>extra_tree</td>
+      <td>0.716628</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>NaN</td>
+      <td>2.532579</td>
+      <td>ridge</td>
+      <td>0.599913</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>NaN</td>
+      <td>0.419378</td>
+      <td>ridge</td>
+      <td>0.599898</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<br />
+<br /><p>The usual <code class="docutils literal notranslate"><span class="pre">results_</span></code>, <code class="docutils literal notranslate"><span class="pre">detailed_results_</span></code> and <code class="docutils literal notranslate"><span class="pre">plot_results()</span></code> are
+still available.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../reference/generated/skrub.OptunaParamSearch.html#skrub.OptunaParamSearch.plot_results" title="skrub.OptunaParamSearch.plot_results" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">search</span><span class="o">.</span><span class="n">plot_results</span></a><span class="p">()</span>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="8e963a19-3283-498b-add9-a71a65f008b6" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("8e963a19-3283-498b-add9-a71a65f008b6")) {                    Plotly.newPlot(                        "8e963a19-3283-498b-add9-a71a65f008b6",                        [{"dimensions":[{"label":"min_samples_leaf","ticktext":["NaN","1","2","3","4","5","8","11","15","21"],"tickvals":[-0.3044522437723423,0.0,0.6931471805599453,1.0986122886681098,1.3862943611198906,1.6094379124341003,2.0794415416798357,2.3978952727983707,2.70805020110221,3.044522437723423],"values":{"dtype":"f8","bdata":"EWtZSk6rgL\u002fjZUIeJlTmP+09orLeQvY\u002flcMIWCVr9j8h3toMROr8P1fi5i6B2\u002fw\u002foKFa3kCDAUCxrm+ULlsIQMGLjEMlfNO\u002fwYuMQyV8078="}},{"label":"\u03b1","ticktext":["NaN","0.4","0.5","0.6","0.8","0.9","1.1","1.4","1.7","2.1","2.5"],"tickvals":[-1.0488035060678338,-0.8689815515679169,-0.6691793799013426,-0.46937720823476814,-0.2695750365681937,-0.06977286490161938,0.13002930676495494,0.3298314784315295,0.5296336500981038,0.7294358217646781,0.9292379934312525],"values":{"dtype":"f8","bdata":"Ht1nL+bH8L8e3Wcv5sfwvx7dZy\u002fmx\u002fC\u002fHt1nL+bH8L8e3Wcv5sfwvx7dZy\u002fmx\u002fC\u002f+eDupcHA8L8e3Wcv5sfwv9Cc\u002f1BRvO0\u002fNWYpdp6F678="}},{"label":"regressor","ticktext":["extra_tree","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAANQuc+5ZFFo\u002fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAuPtW3fN9TD8wAwsi\u002fz5SPwAAAAAAAPA\u002fjMPkUa3i7z8="}},{"label":"score time","ticktext":["0.011","0.021","0.031","0.042","0.052","0.062","0.072","0.083","0.093","0.103"],"tickvals":[0.011030197143554688,0.02126116885079278,0.03149214055803087,0.04172311226526896,0.05195408397250705,0.062185055679745145,0.07241602738698323,0.08264699909422132,0.09287797080145942,0.10310894250869751],"values":{"dtype":"f8","bdata":"AAAAAFlluj9d32rZYuCzP36EJ5t0Oa8\u002f6kTroToYsD\u002fMFB6jtqGqP++5GZgnDK8\u002fGdgT78ajrD+9SwZ+cKOlPwAAAAAAl4Y\u002fniYbKcKCiz8="}},{"label":"fit time","ticktext":["0.0","0.2","0.5","0.7","0.9","1.1","1.3","1.6","1.8","2.0"],"tickvals":[0.014483094215393066,0.2355990939670139,0.4567150937186347,0.6778310934702556,0.8989470932218764,1.1200630929734972,1.3411790927251181,1.562295092476739,1.7834110922283597,2.0045270919799805],"values":{"dtype":"f8","bdata":"AAAAgEUJAEAEWC\u002fVaaH0Pyd3HaIXY+s\u002fLQhHAxNt7D9q2nHg1dDnP+hSZ+Cafeg\u002fSe6iytg55D+rX0YyPzfgPwAAAABQqY0\u002fAAAAAFCpjT8="}},{"label":"score","ticktext":["0.60","0.62","0.64","0.66","0.69","0.71","0.73","0.75","0.77","0.79"],"tickvals":[0.5998983778241221,0.6214854814187684,0.6430725850134146,0.6646596886080608,0.6862467922027069,0.7078338957973531,0.7294209993919993,0.7510081029866456,0.7725952065812918,0.794182310175938],"values":{"dtype":"f8","bdata":"ZI4oBfFp6T8yiL1IeE3pP0a8llVY1Og\u002fHSqjSfHL6D\u002f+r\u002f0fKIToP9almJE9feg\u002fpuSNiFMV6D8qYbPYnO7mPy7oZl58MuM\u002fo7I1FV4y4z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"ZI4oBfFp6T8yiL1IeE3pP0a8llVY1Og\u002fHSqjSfHL6D\u002f+r\u002f0fKIToP9almJE9feg\u002fpuSNiFMV6D8qYbPYnO7mPy7oZl58MuM\u002fo7I1FV4y4z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+</div>
+<br />
+<br /><p>The Optuna <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Study</span></code></a> that was used to run the
+hyperparameter search is available in the attribute <code class="docutils literal notranslate"><span class="pre">study_</span></code>:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="optuna.study.study.Study" class="sphx-glr-backref-module-optuna-study-study sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">search</span><span class="o">.</span><span class="n">study_</span></a>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;optuna.study.study.Study object at 0x7fe7f8c695b0&gt;
+</pre></div>
+</div>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.best_params" title="optuna.study.Study.best_params" class="sphx-glr-backref-module-optuna-study sphx-glr-backref-type-py-property"><span class="n">search</span><span class="o">.</span><span class="n">study_</span><span class="o">.</span><span class="n">best_params</span></a>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 1}
+</pre></div>
+</div>
+<p>This allows us to use Optuna’s reporting capabilities provided in
+<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/visualization/">optuna.visualization</a> or
+<a class="reference external" href="https://optuna-dashboard.readthedocs.io/en/latest/getting-started.html">optuna-dashboard</a>.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">optuna</span>
+
+<a href="https://optuna.readthedocs.io/en/stable/reference/visualization/generated/optuna.visualization.plot_slice.html#optuna.visualization.plot_slice" title="optuna.visualization.plot_slice" class="sphx-glr-backref-module-optuna-visualization sphx-glr-backref-type-py-function"><span class="n">optuna</span><span class="o">.</span><span class="n">visualization</span><span class="o">.</span><span class="n">plot_slice</span></a><span class="p">(</span><a href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="optuna.study.study.Study" class="sphx-glr-backref-module-optuna-study-study sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">search</span><span class="o">.</span><span class="n">study_</span></a><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;0:min_samples_leaf&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="8bf05005-01c4-4e03-8e5c-2e829778fe86" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("8bf05005-01c4-4e03-8e5c-2e829778fe86")) {                    Plotly.newPlot(                        "8bf05005-01c4-4e03-8e5c-2e829778fe86",                        [{"marker":{"color":[0,1,4,5,6,7,8,9],"colorbar":{"title":{"text":"Trial"},"x":1.0,"xpad":40},"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"line":{"color":"Grey","width":0.5}},"mode":"markers","name":"Feasible Trial","showlegend":false,"x":[6,21,1,4,2,9,6,4],"y":[0.7652881473233559,0.7166275246081899,0.794182310175938,0.7748953283529009,0.790706770010962,0.7526033083987798,0.766132414324147,0.7759210273415043],"type":"scatter"}],                        {"title":{"text":"Slice Plot"},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"title":{"text":"0:min_samples_leaf"},"type":"log"},"yaxis":{"title":{"text":"Objective Value"}}},                        {"responsive": true}                    )                };            </script>        </div>
+</div>
+<br />
+<br /></section>
+<section id="using-optuna-directly-for-more-advanced-use-cases">
+<h2>Using Optuna directly for more advanced use cases<a class="headerlink" href="#using-optuna-directly-for-more-advanced-use-cases" title="Link to this heading">#</a></h2>
+<p>Often we may want more control over the use of Optuna, or to access
+functionality not available through <a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_randomized_search()</span></code></a>
+such as the ask-and-tell interface, trial pruning, callbacks,
+multi-objective optimization, etc. .</p>
+<p>Directly using Optuna ourselves is also easy, as we will show now. What makes
+this possible is that we can pass an Optuna Trial to
+<a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_learner()</span></code></a> in which case the parameters suggested by the
+trial are used to create the learner.</p>
+<p>We revisit the example above, following the typical Optuna workflow.</p>
+<p>The <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.Study</span></code></a> runs the hyperparameter
+search.</p>
+<p>Its method <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.optimize" title="(in Optuna v4.6.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">optimize</span></code></a> is given an
+<code class="docutils literal notranslate"><span class="pre">objective</span></code> function. The <code class="docutils literal notranslate"><span class="pre">objective</span></code> must accept a
+<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Trial</span></code></a> object (which is produced by the study and picks
+the parameters for a given evaluation of the objective) and return the value
+to maximize (or minimize).</p>
+<p>To use Optuna with a <a class="reference internal" href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a>, we just need to pass the Trial object
+to <a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_learner()</span></code></a>. This creates a <a class="reference internal" href="../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a>
+initialized with the parameters picked by the optuna Trial.</p>
+<p>We can then cross-validate the SkrubLearner, or score it however we prefer,
+and return the score so that the optuna Study can take it into account.</p>
+<p>Here we return a single score (R²), but multi-objective
+optimization is also possible. Please refer to the Optuna documentation for
+more information.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">objective</span><span class="p">(</span><span class="n">trial</span><span class="p">):</span>
+    <span class="n">learner</span> <span class="o">=</span> <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pred</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">(</span><span class="n">choose</span><span class="o">=</span><span class="n">trial</span><span class="p">)</span>
+    <span class="n">cv_results</span> <span class="o">=</span> <a href="../../reference/generated/skrub.cross_validate.html#skrub.cross_validate" title="skrub.cross_validate" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">skrub</span><span class="o">.</span><span class="n">cross_validate</span></a><span class="p">(</span><span class="n">learner</span><span class="p">,</span> <span class="n">environment</span><span class="o">=</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">env</span></a><span class="p">,</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv</span></a><span class="o">=</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html#sklearn.model_selection.KFold" title="sklearn.model_selection.KFold" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">cv</span></a><span class="p">)</span>
+    <span class="k">return</span> <span class="n">cv_results</span><span class="p">[</span><span class="s2">&quot;test_score&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+
+<a href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="optuna.study.study.Study" class="sphx-glr-backref-module-optuna-study-study sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">study</span></a> <span class="o">=</span> <a href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.create_study.html#optuna.create_study" title="optuna.create_study" class="sphx-glr-backref-module-optuna sphx-glr-backref-type-py-function"><span class="n">optuna</span><span class="o">.</span><span class="n">create_study</span></a><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="s2">&quot;maximize&quot;</span><span class="p">)</span>
+<a href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.optimize" title="optuna.study.Study.optimize" class="sphx-glr-backref-module-optuna-study sphx-glr-backref-type-py-method"><span class="n">study</span><span class="o">.</span><span class="n">optimize</span></a><span class="p">(</span><span class="n">objective</span><span class="p">,</span> <span class="n">n_trials</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<a href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.best_params" title="optuna.study.Study.best_params" class="sphx-glr-backref-module-optuna-study sphx-glr-backref-type-py-property"><span class="n">study</span><span class="o">.</span><span class="n">best_params</span></a>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[I 2025-12-11 22:22:41,019] A new study created in memory with name: no-name-f53d1bdb-4add-4fb9-984e-145bcf9ab405
+[I 2025-12-11 22:22:41,317] Trial 0 finished with value: 0.5999194317008708 and parameters: {&#39;2:regressor&#39;: &#39;1:ridge&#39;, &#39;1:α&#39;: 3.6369000053665252}. Best is trial 0 with value: 0.5999194317008708.
+[I 2025-12-11 22:22:41,605] Trial 1 finished with value: 0.5998997665729485 and parameters: {&#39;2:regressor&#39;: &#39;1:ridge&#39;, &#39;1:α&#39;: 0.6082664624078673}. Best is trial 0 with value: 0.5999194317008708.
+[I 2025-12-11 22:22:44,587] Trial 2 finished with value: 0.7543675538031376 and parameters: {&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 8}. Best is trial 2 with value: 0.7543675538031376.
+[I 2025-12-11 22:22:44,882] Trial 3 finished with value: 0.5999217869726455 and parameters: {&#39;2:regressor&#39;: &#39;1:ridge&#39;, &#39;1:α&#39;: 4.057625148517793}. Best is trial 2 with value: 0.7543675538031376.
+[I 2025-12-11 22:22:53,360] Trial 4 finished with value: 0.7931217834262223 and parameters: {&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 1}. Best is trial 4 with value: 0.7931217834262223.
+[I 2025-12-11 22:22:53,622] Trial 5 finished with value: 0.5999079641826593 and parameters: {&#39;2:regressor&#39;: &#39;1:ridge&#39;, &#39;1:α&#39;: 1.7822078537393546}. Best is trial 4 with value: 0.7931217834262223.
+[I 2025-12-11 22:22:53,886] Trial 6 finished with value: 0.5999297003331783 and parameters: {&#39;2:regressor&#39;: &#39;1:ridge&#39;, &#39;1:α&#39;: 5.6072175983763595}. Best is trial 4 with value: 0.7931217834262223.
+[I 2025-12-11 22:22:54,176] Trial 7 finished with value: 0.599912335844857 and parameters: {&#39;2:regressor&#39;: &#39;1:ridge&#39;, &#39;1:α&#39;: 2.455763940595294}. Best is trial 4 with value: 0.7931217834262223.
+[I 2025-12-11 22:22:59,611] Trial 8 finished with value: 0.7886027689298862 and parameters: {&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 2}. Best is trial 4 with value: 0.7931217834262223.
+[I 2025-12-11 22:22:59,878] Trial 9 finished with value: 0.5998953016904454 and parameters: {&#39;2:regressor&#39;: &#39;1:ridge&#39;, &#39;1:α&#39;: 0.010132538390380303}. Best is trial 4 with value: 0.7931217834262223.
+
+{&#39;2:regressor&#39;: &#39;0:extra_tree&#39;, &#39;0:min_samples_leaf&#39;: 1}
+</pre></div>
+</div>
+<p>We can also use Optuna’s visualization capabilities to inspect the study:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://optuna.readthedocs.io/en/stable/reference/visualization/generated/optuna.visualization.plot_optimization_history.html#optuna.visualization.plot_optimization_history" title="optuna.visualization.plot_optimization_history" class="sphx-glr-backref-module-optuna-visualization sphx-glr-backref-type-py-function"><span class="n">optuna</span><span class="o">.</span><span class="n">visualization</span><span class="o">.</span><span class="n">plot_optimization_history</span></a><span class="p">(</span><a href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="optuna.study.study.Study" class="sphx-glr-backref-module-optuna-study-study sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">study</span></a><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="e6f6f9f8-5407-48d6-9f09-2bdda876e95f" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e6f6f9f8-5407-48d6-9f09-2bdda876e95f")) {                    Plotly.newPlot(                        "e6f6f9f8-5407-48d6-9f09-2bdda876e95f",                        [{"mode":"markers","name":"Objective Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.5999194317008708,0.5998997665729485,0.7543675538031376,0.5999217869726455,0.7931217834262223,0.5999079641826593,0.5999297003331783,0.599912335844857,0.7886027689298862,0.5998953016904454],"type":"scatter"},{"mode":"lines","name":"Best Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.5999194317008708,0.5999194317008708,0.7543675538031376,0.7543675538031376,0.7931217834262223,0.7931217834262223,0.7931217834262223,0.7931217834262223,0.7931217834262223,0.7931217834262223],"type":"scatter"},{"marker":{"color":"#cccccc"},"mode":"markers","name":"Infeasible Trial","showlegend":false,"x":[],"y":[],"type":"scatter"}],                        {"title":{"text":"Optimization History Plot"},"xaxis":{"title":{"text":"Trial"}},"yaxis":{"title":{"text":"Objective Value"}},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+</div>
+<br />
+<br /><p>Now we build a learner with the best hyperparameters and fit it on the full
+dataset:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">best_learner</span></a> <span class="o">=</span> <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pred</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">(</span><span class="n">choose</span><span class="o">=</span><a href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.best_trial" title="optuna.study.Study.best_trial" class="sphx-glr-backref-module-optuna-study sphx-glr-backref-type-py-property"><span class="n">study</span><span class="o">.</span><span class="n">best_trial</span></a><span class="p">)</span>
+
+<span class="c1"># This would achieve the same result:</span>
+<span class="c1"># best_learner = pred.skb.make_learner()</span>
+<span class="c1"># best_learner.set_params(**study.best_params)</span>
+
+<a href="../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">best_learner</span></a><span class="o">.</span><span class="n">fit</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">env</span></a><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><a href="../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.describe_params" title="skrub.SkrubLearner.describe_params" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">best_learner</span><span class="o">.</span><span class="n">describe_params</span></a><span class="p">())</span>
+</pre></div>
+</div>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;min_samples_leaf&#39;: 1, &#39;regressor&#39;: &#39;extra_tree&#39;}
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (1 minutes 3.567 seconds)</p>
+<div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-data-ops-1131-optuna-choices-py">
+<div class="binder-badge docutils container">
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.7.0?urlpath=lab/tree/notebooks/auto_examples/data_ops/1131_optuna_choices.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo1.svg" style="width: 150px;" />
+</a>
+</div>
+<div class="lite-badge docutils container">
+<a class="reference external image-reference" href="../../lite/lab/index.html?path=auto_examples/data_ops/1131_optuna_choices.ipynb"><img alt="Launch JupyterLite" src="../../_images/jupyterlite_badge_logo1.svg" style="width: 150px;" />
+</a>
+</div>
+<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/d9597f450d8a248bffa6c799ed7e0f8e/1131_optuna_choices.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">1131_optuna_choices.ipynb</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/4403c39ebd145d6e33059b0ce470188c/1131_optuna_choices.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">1131_optuna_choices.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-zip docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/aef7724f87b27250272c49873a6e2275/1131_optuna_choices.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">zipped:</span> <span class="pre">1131_optuna_choices.zip</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="1130_choices.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Hyperparameter tuning with DataOps</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="1140_subsampling.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Subsampling for faster development</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-simple-regressor-and-example-data">A simple regressor and example data.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-best-hyperparameters-with-optuna">Selecting the best hyperparameters with Optuna.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-optuna-directly-for-more-advanced-use-cases">Using Optuna directly for more advanced use cases</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/auto_examples/data_ops/1131_optuna_choices.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+  <div class="sidebar-secondary-item">
+
+
+  <div class="sphx-glr-sidebar-component">
+    
+      
+        <div class="sphx-glr-sidebar-item sphx-glr-download-python-sidebar" title="1131_optuna_choices.py">
+          <a download href="../../_downloads/4403c39ebd145d6e33059b0ce470188c/1131_optuna_choices.py">
+            <i class="fa-solid fa-download"></i>
+            Download source code
+          </a>
+        </div>
+      
+    
+      
+        <div class="sphx-glr-sidebar-item sphx-glr-download-jupyter-sidebar" title="1131_optuna_choices.ipynb">
+          <a download href="../../_downloads/d9597f450d8a248bffa6c799ed7e0f8e/1131_optuna_choices.ipynb">
+            <i class="fa-solid fa-download"></i>
+            Download Jupyter notebook
+          </a>
+        </div>
+      
+    
+      
+        <div class="sphx-glr-sidebar-item sphx-glr-download-zip-sidebar" title="1131_optuna_choices.zip">
+          <a download href="../../_downloads/aef7724f87b27250272c49873a6e2275/1131_optuna_choices.zip">
+            <i class="fa-solid fa-download"></i>
+            Download zipped
+          </a>
+        </div>
+      
+    
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+
+  <div class="sphx-glr-sidebar-component">
+    
+      
+        <div class="sphx-glr-sidebar-item lite-badge-sidebar">
+          <a href="../../lite/lab/index.html?path=auto_examples/data_ops/1131_optuna_choices.ipynb">
+            <img src="../../_images/jupyterlite_badge_logo1.svg" alt="Launch JupyterLite">
+          </a>
+        </div>
+      
+    
+      
+        <div class="sphx-glr-sidebar-item binder-badge-sidebar">
+          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/0.7.0?urlpath=lab/tree/notebooks/auto_examples/data_ops/1131_optuna_choices.ipynb">
+            <img src="../../_images/binder_badge_logo1.svg" alt="Launch binder">
+          </a>
+        </div>
+      
+    
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2025, the skrub developers.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+﻿var
+===
+
+.. currentmodule:: skrub
+
+.. autofunction:: var
+
+.. minigallery:: skrub.var
+   :add-heading: Gallery examples
+   :heading-level: -

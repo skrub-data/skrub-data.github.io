@@ -1,0 +1,67 @@
+
+:orphan:
+
+.. _sphx_glr_auto_examples_sg_execution_times:
+
+
+Computation times
+=================
+**07:09.318** total execution time for 11 files **from auto_examples**:
+
+.. container::
+
+  .. raw:: html
+
+    <style scoped>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('table.sg-datatable').DataTable({order: [[1, 'desc']]});
+    } );
+    </script>
+
+  .. list-table::
+   :header-rows: 1
+   :class: table table-striped sg-datatable
+
+   * - Example
+     - Time
+     - Mem (MB)
+   * - :ref:`sphx_glr_auto_examples_0020_text_with_string_encoders.py` (``0020_text_with_string_encoders.py``)
+     - 02:50.454
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_0070_join_aggregation.py` (``0070_join_aggregation.py``)
+     - 02:00.260
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_0010_encodings.py` (``0010_encodings.py``)
+     - 00:36.740
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_0100_squashing_scaler.py` (``0100_squashing_scaler.py``)
+     - 00:23.461
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_0060_multiple_key_join.py` (``0060_multiple_key_join.py``)
+     - 00:22.952
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_0080_interpolation_join.py` (``0080_interpolation_join.py``)
+     - 00:19.099
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_0040_fuzzy_joining.py` (``0040_fuzzy_joining.py``)
+     - 00:12.088
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_0090_apply_to_cols.py` (``0090_apply_to_cols.py``)
+     - 00:09.867
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_0000_getting_started.py` (``0000_getting_started.py``)
+     - 00:09.209
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_0030_datetime_encoder.py` (``0030_datetime_encoder.py``)
+     - 00:03.918
+     - 0.0
+   * - :ref:`sphx_glr_auto_examples_0050_deduplication.py` (``0050_deduplication.py``)
+     - 00:01.270
+     - 0.0

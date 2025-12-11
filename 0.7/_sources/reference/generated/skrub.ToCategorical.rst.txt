@@ -1,0 +1,14 @@
+﻿ToCategorical
+=============
+
+.. currentmodule:: skrub
+
+.. autoclass:: ToCategorical
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.ToCategorical skrub.ToCategorical.__init__ skrub.ToCategorical.fit skrub.ToCategorical.fit_transform skrub.ToCategorical.get_feature_names_out skrub.ToCategorical.get_metadata_routing skrub.ToCategorical.get_params skrub.ToCategorical.set_fit_request skrub.ToCategorical.set_params skrub.ToCategorical.set_transform_request skrub.ToCategorical.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,0 +1,357 @@
+:orphan:
+
+Examples
+===========
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+.. thumbnail-parent-div-open
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This guide showcases some of the features of skrub. Much of skrub revolves around simplifying many of the tasks that are involved in pre-processing raw data into a format that shallow or classic machine-learning models can understand, that is, numerical data.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0000_getting_started_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/0000_getting_started`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Getting Started</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0010_encodings_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/0010_encodings`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we explore the performance of string and categorical encoders available in skrub.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0020_text_with_string_encoders_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/0020_text_with_string_encoders`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Various string encoders: a sentiment analysis example</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we illustrate how to better integrate datetime features in machine learning models with the |DatetimeEncoder|.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0030_datetime_encoder_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/0030_datetime_encoder`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Handling datetime features with the DatetimeEncoder</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to combine data from different sources, with a vocabulary not well normalized.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0040_fuzzy_joining_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/0040_fuzzy_joining`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Fuzzy joining dirty tables with the Joiner</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0050_deduplication_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/0050_deduplication`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Joining tables may be difficult if one entry on one side does not have an exact match on the other side.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0060_multiple_key_join_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/0060_multiple_key_join`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Spatial join for flight data: Joining across multiple columns</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Many problems involve tables whose entities have a one-to-many relationship. To simplify aggregate-then-join operations for machine learning, we can include the |AggJoiner| in our pipeline.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0070_join_aggregation_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/0070_join_aggregation`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">AggJoiner on a credit fraud dataset</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="We illustrate the InterpolationJoiner, which is a type of join where values from the second table are inferred with machine-learning, rather than looked up in the table. It is useful when exact matches are not available but we have rows that are close enough to make an educated guess -- in this sense it is a generalization of a fuzzy_join.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0080_interpolation_join_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/0080_interpolation_join`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Interpolation join: infer missing rows when joining two tables</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In previous examples, we saw how skrub provides powerful abstractions like TableVectorizer and tabular_pipeline to create pipelines.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0090_apply_to_cols_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/0090_apply_to_cols`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Hands-On with Column Selection and Transformers</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The following example illustrates the use of the SquashingScaler, a transformer that can rescale and squash numerical features to a range that works well with neural networks and perhaps also other related models. Its basic idea is to rescale the features based on quantile statistics (to be robust to outliers), and then perform a smooth squashing function to limit the outputs to a pre-defined range. This transform has been found to even work well when applied to one-hot encoded features.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0100_squashing_scaler_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/0100_squashing_scaler`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">SquashingScaler: Robust numerical preprocessing for neural networks</div>
+    </div>
+
+
+.. thumbnail-parent-div-close
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/0000_getting_started
+   /auto_examples/0010_encodings
+   /auto_examples/0020_text_with_string_encoders
+   /auto_examples/0030_datetime_encoder
+   /auto_examples/0040_fuzzy_joining
+   /auto_examples/0050_deduplication
+   /auto_examples/0060_multiple_key_join
+   /auto_examples/0070_join_aggregation
+   /auto_examples/0080_interpolation_join
+   /auto_examples/0090_apply_to_cols
+   /auto_examples/0100_squashing_scaler
+
+
+Skrub DataOps
+=================
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+.. thumbnail-parent-div-open
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how we can use Skrub&#x27;s user_guide_data_ops_index to build a machine learning pipeline that records all the operations involved in pre-processing data and training a model. We will also show how to save the model, load it back, and then use it to make predictions on new, unseen data.">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1110_data_ops_intro_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/data_ops/1110_data_ops_intro`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Introduction to machine-learning pipelines with skrub DataOps</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how to build a DataOps plan to handle pre-processing, validation and hyperparameter tuning of a dataset with multiple tables.">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1120_multiple_tables_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/data_ops/1120_multiple_tables`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Multiples tables: building machine learning pipelines with DataOps</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains values or choices which may influence its prediction performance, such as hyperparameters (e.g., the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g., RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g., should we join a table to bring additional information or not).">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1130_choices_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/data_ops/1130_choices`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Hyperparameter tuning with DataOps</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to use Optuna to tune the hyperparameters of a skrub DataOp. As seen in the previous example, skrub DataOps can contain &quot;choices&quot;, objects created with choose_from, choose_int, choose_float, etc. and we can use hyperparameter search techniques to pick the best outcome for each choice. Performing this search with Optuna allows us to benefit from its many features, such as state-of-the-art search strategies, monitoring and visualization, stopping and resuming searches, and parallel or distributed computation.">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1131_optuna_choices_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/data_ops/1131_optuna_choices`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Tuning DataOps with Optuna</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we show how to use DataOp.skb.subsample to speed up interactive construction of a skrub DataOps plan by computing previews on a subsampled version of the original data.">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1140_subsampling_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/data_ops/1140_subsampling`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Subsampling for faster development</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Use case: developing locally and deploying to production">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1150_use_case_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/data_ops/1150_use_case`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Use case: developing locally and deploying to production</div>
+    </div>
+
+
+.. thumbnail-parent-div-close
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+   :includehidden:
+
+
+   /auto_examples/data_ops/index.rst
+
+
+
+.. only:: html
+
+ .. rst-class:: sphx-glr-signature
+
+    `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.github.io>`_

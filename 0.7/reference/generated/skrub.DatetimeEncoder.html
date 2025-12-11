@@ -1,0 +1,1334 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="DatetimeEncoder" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.DatetimeEncoder.html" />
+<meta property="og:site_name" content="skrub" />
+<meta property="og:description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Handling datetime features with the DatetimeEncoder SquashingScaler: Robust numerical preproc..." />
+<meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
+<meta property="og:image:alt" content="skrub" />
+<meta name="description" content="Gallery examples: Getting Started Encoding: from a dataframe to a numerical matrix for machine learning Handling datetime features with the DatetimeEncoder SquashingScaler: Robust numerical preproc..." />
+
+    <title>DatetimeEncoder &#8212; skrub</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=d2d258e8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=3bbd54d8" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=fe7df9b0"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=fd10adb8"></script>
+    <script src="../../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/generated/skrub.DatetimeEncoder';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.0';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            true;
+        </script>
+    <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
+    <link rel="canonical" href="https://skrub-data.org/stable/reference/generated/skrub.DatetimeEncoder.html" />
+    <link rel="icon" href="../../_static/skrub.svg"/>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="ToDatetime" href="skrub.ToDatetime.html" />
+    <link rel="prev" title="ToCategorical" href="skrub.ToCategorical.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.7.0" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/skrub.svg" class="logo__image only-light" alt="skrub - Home"/>
+    <img src="../../_static/skrub.svg" class="logo__image only-dark pst-js-only" alt="skrub - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../install.html">
+    Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../documentation.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../auto_examples/index.html">
+    Examples
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../learning_materials.html">
+    Learning Materials
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../CHANGES.html">
+    Release history
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../development.html">
+    Development
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../CONTRIBUTING.html">
+    Contributing to skrub
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://bsky.app/profile/skrub-data.bsky.social" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-bluesky fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Bluesky</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://x.com/skrub_data" title="X (ex-Twitter)" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">X (ex-Twitter)</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../install.html">
+    Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../documentation.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../auto_examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../learning_materials.html">
+    Learning Materials
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../CHANGES.html">
+    Release history
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../development.html">
+    Development
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../CONTRIBUTING.html">
+    Contributing to skrub
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Discord</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://bsky.app/profile/skrub-data.bsky.social" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-bluesky fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Bluesky</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://x.com/skrub_data" title="X (ex-Twitter)" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">X (ex-Twitter)</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../pipeline.html">pipeline</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.tabular_pipeline.html">tabular_pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToCols.html">ApplyToCols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToFrame.html">ApplyToFrame</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../encoders.html">encoders</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="skrub.StringEncoder.html">StringEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.TextEncoder.html">TextEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.MinHashEncoder.html">MinHashEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.GapEncoder.html">GapEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SimilarityEncoder.html">SimilarityEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ToCategorical.html">ToCategorical</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">DatetimeEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ToDatetime.html">ToDatetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ToFloat.html">ToFloat</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../reporting.html">reporting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.TableReport.html">TableReport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.patch_display.html">patch_display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.unpatch_display.html">unpatch_display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.column_associations.html">column_associations</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../cleaning.html">cleaning</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SquashingScaler.html">SquashingScaler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Cleaner.html">Cleaner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DropUninformative.html">DropUninformative</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Joiner.html">Joiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.AggJoiner.html">AggJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.MultiAggJoiner.html">MultiAggJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.AggTarget.html">AggTarget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.InterpolationJoiner.html">InterpolationJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.fuzzy_join.html">fuzzy_join</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../selectors.html">selectors</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.all.html">all</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.any_date.html">any_date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.boolean.html">boolean</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.glob.html">glob</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.has_nulls.html">has_nulls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.integer.html">integer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.inv.html">inv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.make_selector.html">make_selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.numeric.html">numeric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.regex.html">regex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.select.html">select</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.string.html">string</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data_ops.html">data_ops</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.var.html">var</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.X.html">X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.y.html">y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.as_data_op.html">as_data_op</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.deferred.html">deferred</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.html">DataOp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_bool.html">choose_bool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_float.html">choose_float</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_int.html">choose_int</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_from.html">choose_from</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.optional.html">optional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.cross_validate.html">cross_validate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.eval_mode.html">eval_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.apply.html">skrub.DataOp.skb.apply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.apply_func.html">skrub.DataOp.skb.apply_func</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.clone.html">skrub.DataOp.skb.clone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.concat.html">skrub.DataOp.skb.concat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.cross_validate.html">skrub.DataOp.skb.cross_validate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.describe_defaults.html">skrub.DataOp.skb.describe_defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.describe_param_grid.html">skrub.DataOp.skb.describe_param_grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.describe_steps.html">skrub.DataOp.skb.describe_steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.draw_graph.html">skrub.DataOp.skb.draw_graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.drop.html">skrub.DataOp.skb.drop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.eval.html">skrub.DataOp.skb.eval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.freeze_after_fit.html">skrub.DataOp.skb.freeze_after_fit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.full_report.html">skrub.DataOp.skb.full_report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.get_data.html">skrub.DataOp.skb.get_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.get_vars.html">skrub.DataOp.skb.get_vars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_learner.html">skrub.DataOp.skb.make_learner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html">skrub.DataOp.skb.make_grid_search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html">skrub.DataOp.skb.make_randomized_search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.if_else.html">skrub.DataOp.skb.if_else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_cv_splits.html">skrub.DataOp.skb.iter_cv_splits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_grid.html">skrub.DataOp.skb.iter_learners_grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_randomized.html">skrub.DataOp.skb.iter_learners_randomized</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html">skrub.DataOp.skb.mark_as_X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.mark_as_y.html">skrub.DataOp.skb.mark_as_y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.match.html">skrub.DataOp.skb.match</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.preview.html">skrub.DataOp.skb.preview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.select.html">skrub.DataOp.skb.select</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.set_description.html">skrub.DataOp.skb.set_description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.set_name.html">skrub.DataOp.skb.set_name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.subsample.html">skrub.DataOp.skb.subsample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.train_test_split.html">skrub.DataOp.skb.train_test_split</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.description.html">skrub.DataOp.skb.description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.is_X.html">skrub.DataOp.skb.is_X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.is_y.html">skrub.DataOp.skb.is_y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.name.html">skrub.DataOp.skb.name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.applied_estimator.html">skrub.DataOp.skb.applied_estimator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SkrubLearner.html">SkrubLearner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ParamSearch.html">ParamSearch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.OptunaParamSearch.html">OptunaParamSearch</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../config.html">config</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.get_config.html">get_config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.set_config.html">set_config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.config_context.html">config_context</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../datasets.html">datasets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_bike_sharing.html">fetch_bike_sharing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_country_happiness.html">fetch_country_happiness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_credit_fraud.html">fetch_credit_fraud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_drug_directory.html">fetch_drug_directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_employee_salaries.html">fetch_employee_salaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_flight_delays.html">fetch_flight_delays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_medical_charge.html">fetch_medical_charge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_midwest_survey.html">fetch_midwest_survey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_movielens.html">fetch_movielens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_open_payments.html">fetch_open_payments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_toxicity.html">fetch_toxicity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_traffic_violations.html">fetch_traffic_violations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_videogame_sales.html">fetch_videogame_sales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.get_data_dir.html">get_data_dir</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.make_deduplication_data.html">make_deduplication_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.toy_orders.html">toy_orders</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">API Reference</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../encoders.html" class="nav-link">Encoding a column</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">DatetimeEncoder</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="datetimeencoder">
+<h1>DatetimeEncoder<a class="headerlink" href="#datetimeencoder" title="Link to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="skrub.DatetimeEncoder">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">DatetimeEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hour'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_weekday</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_total_seconds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_day_of_year</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">periodic_encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/345b18d/skrub/_datetime_encoder.py#L96"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder" title="Link to this definition">#</a></dt>
+<dd><p>Extract temporal features such as month, day of the week, … from a datetime column.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code> is a type of single-column transformer. Unlike
+most scikit-learn estimators, its <code class="docutils literal notranslate"><span class="pre">fit</span></code>, <code class="docutils literal notranslate"><span class="pre">transform</span></code> and
+<code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> methods expect a single column (a pandas or
+polars Series) rather than a full dataframe. To apply this
+transformer to one or more columns in a dataframe, use it as a
+parameter in a <code class="docutils literal notranslate"><span class="pre">skrub.ApplyToCols</span></code> or a
+<code class="docutils literal notranslate"><span class="pre">skrub.TableVectorizer</span></code>. To apply to all columns::
+ApplyToCol(DatetimeEncoder())  To apply to selected columns::
+ApplyToCols(DatetimeEncoder(), cols=[‘col_name_1’, ‘col_name_2’])</p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code> converts datetime features to numerical features that
+can be used by learners. It separates each datetime in its parts (year, month,
+day, etc.), and adds new features based on the datetime (weekday, seconds
+from epoch, day of year). Circular or spline-based periodic features may also
+be included.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>resolution</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=”hour”</span></dt><dd><p>If a string, extract up to this resolution. Must be “year”, “month”,
+“day”, “hour”, “minute”, “second”, “microsecond”, or “nanosecond”. For
+example, <code class="docutils literal notranslate"><span class="pre">resolution=&quot;day&quot;</span></code> generates the features “year”, “month”,
+and “day” only. If the input column contains dates with no time
+information, time features (“hour”, “minute”, … ) are never extracted.
+If <code class="docutils literal notranslate"><span class="pre">None</span></code>, the features listed above are not extracted (but day of
+the week and total seconds may still be extracted, see below).</p>
+</dd>
+<dt><strong>add_weekday</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>Extract the day of the week as a numerical feature from 1 (Monday) to 7
+(Sunday).</p>
+</dd>
+<dt><strong>add_total_seconds</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>Add the total number of seconds since the Unix epoch (00:00:00 UTC on 1
+January 1970).</p>
+</dd>
+<dt><strong>add_day_of_year</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>Add the day of year (ordinal day) as an integer in the range 1 to 365 (or
+366 in the case of leap years). January 1st will be day 1, December 31st
+will be day 365 on non-leap years.</p>
+</dd>
+<dt><strong>periodic_encoding</strong><span class="classifier">‘circular’, ‘spline’, or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=None</span></dt><dd><p>Add periodic features with different granularities. Add periodic features
+using either trigonometric (<code class="docutils literal notranslate"><span class="pre">circular</span></code>) or <code class="docutils literal notranslate"><span class="pre">spline</span></code> encoding.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Attributes<span class="colon">:</span></dt>
+<dd class="field-even"><dl>
+<dt><strong>extracted_features_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of strings</span></dt><dd><p>The features that are extracted, a subset of [“year”, …, “nanosecond”,
+“weekday”, “total_seconds”]. If <code class="docutils literal notranslate"><span class="pre">periodic_encoding</span></code> is set to either
+<code class="docutils literal notranslate"><span class="pre">circular</span></code> or <code class="docutils literal notranslate"><span class="pre">spline,</span> <span class="pre">the</span> <span class="pre">extracted</span> <span class="pre">periodic</span> <span class="pre">features</span> <span class="pre">will</span> <span class="pre">also</span> <span class="pre">be</span>
+<span class="pre">added.</span> <span class="pre">Given</span> <span class="pre">a</span> <span class="pre">feature</span> <span class="pre">named</span> <span class="pre">``date</span></code>, new features will be named
+<code class="docutils literal notranslate"><span class="pre">date_year_circular_0</span></code>, <code class="docutils literal notranslate"><span class="pre">date_year_circular_1</span></code> etc.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToDatetime</span></code></a></dt><dd><p>Convert strings to datetimes.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric">Notes</p>
+<p>All extracted features are provided as float32 columns.</p>
+<p>No timezone conversion is performed: if the input column is timezone aware, the
+extracted features will be in the column’s timezone.</p>
+<p>An input column that does not have a Date or Datetime dtype will be
+rejected by raising a <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> exception. See <code class="docutils literal notranslate"><span class="pre">ToDatetime</span></code> for
+converting strings to proper datetimes. <strong>Note:</strong> the <code class="docutils literal notranslate"><span class="pre">TableVectorizer</span></code>
+only sends datetime columns to its <code class="docutils literal notranslate"><span class="pre">datetime_encoder</span></code>. Therefore it is
+always safe to use a <code class="docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code> as the <code class="docutils literal notranslate"><span class="pre">TableVectorizer</span></code>’s
+<code class="docutils literal notranslate"><span class="pre">datetime_encoder</span></code> parameter.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code> uses hardcoded values for generating periodic features.
+The period of each feature is:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">month</span></code>: 12 (month in year)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">day</span></code>: 30 (day in month)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hour</span></code>: 24 (hour in day)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">weekday</span></code>: 7 (day in week)</p></li>
+</ul>
+<p>Additionally, we specify the number of splines for each feature to avoid
+generating too many features:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">month</span></code>: 12</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">day</span></code>: 4</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hour</span></code>: 12</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">weekday</span></code>: 7</p></li>
+</ul>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="p">[</span><span class="s2">&quot;2024-05-13T12:05:36&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;2024-05-15T13:46:02&quot;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;login&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">login</span>
+<span class="go">0   2024-05-13 12:05:36</span>
+<span class="go">1                   NaT</span>
+<span class="go">2   2024-05-15 13:46:02</span>
+<span class="go">Name: login, dtype: datetime64[...]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">DatetimeEncoder</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">DatetimeEncoder</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)</span>
+<span class="go">   login_year  login_month  login_day  login_hour  login_total_seconds</span>
+<span class="go">0      2024.0          5.0       13.0        12.0         1.715602e+09</span>
+<span class="go">1         NaN          NaN        NaN         NaN                  NaN</span>
+<span class="go">2      2024.0          5.0       15.0        13.0         1.715781e+09</span>
+</pre></div>
+</div>
+<p>We can ask for a finer resolution:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="s1">&#39;second&#39;</span><span class="p">,</span> <span class="n">add_total_seconds</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">login</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="go">   login_year  login_month  login_day  login_hour  login_minute  login_second</span>
+<span class="go">0      2024.0          5.0       13.0        12.0           5.0          36.0</span>
+<span class="go">1         NaN          NaN        NaN         NaN           NaN           NaN</span>
+<span class="go">2      2024.0          5.0       15.0        13.0          46.0           2.0</span>
+</pre></div>
+</div>
+<p>We can also ask for the day of the week. The week starts at 1 on Monday and ends
+at 7 on Sunday. This is consistent with the ISO week date system
+(<a class="reference external" href="https://en.wikipedia.org/wiki/ISO_week_date">https://en.wikipedia.org/wiki/ISO_week_date</a>), the standard library
+<code class="docutils literal notranslate"><span class="pre">datetime.isoweekday()</span></code> and polars <code class="docutils literal notranslate"><span class="pre">weekday</span></code>, but not with pandas
+<code class="docutils literal notranslate"><span class="pre">day_of_week</span></code>, which counts days from 0.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%A = %w&#39;</span><span class="p">)</span>
+<span class="go">0       Monday = 1</span>
+<span class="go">1              NaN</span>
+<span class="go">2    Wednesday = 3</span>
+<span class="go">Name: login, dtype: ...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">login</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">day_of_week</span>
+<span class="go">0    0.0</span>
+<span class="go">1    NaN</span>
+<span class="go">2    2.0</span>
+<span class="go">Name: login, dtype: float64</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">add_weekday</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">add_total_seconds</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)</span>
+<span class="go">   login_year  login_month  login_day  login_hour  login_weekday</span>
+<span class="go">0      2024.0          5.0       13.0        12.0            1.0</span>
+<span class="go">1         NaN          NaN        NaN         NaN            NaN</span>
+<span class="go">2      2024.0          5.0       15.0        13.0            3.0</span>
+</pre></div>
+</div>
+<p>When a column contains only dates without time information, the time features
+are discarded, regardless of <code class="docutils literal notranslate"><span class="pre">resolution</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">birthday</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;2024-04-14&#39;</span><span class="p">,</span> <span class="s1">&#39;2024-05-15&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;birthday&#39;</span><span class="p">)</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="s1">&#39;second&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">birthday</span><span class="p">)</span>
+<span class="go">   birthday_year  birthday_month  birthday_day  birthday_total_seconds</span>
+<span class="go">0         2024.0             4.0          14.0            1.713053e+09</span>
+<span class="go">1         2024.0             5.0          15.0            1.715731e+09</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">extracted_features_</span>
+<span class="go">[&#39;year&#39;, &#39;month&#39;, &#39;day&#39;, &#39;total_seconds&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">all_outputs_</span>
+<span class="go">[&#39;birthday_year&#39;, &#39;birthday_month&#39;, &#39;birthday_day&#39;, &#39;birthday_total_seconds&#39;]</span>
+</pre></div>
+</div>
+<p>(The number of seconds since Epoch can still be extracted but not “hour”,
+“minute”, etc.)</p>
+<p>Non-datetime columns are rejected by raising a <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> exception.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;2024-04-14&#39;</span><span class="p">,</span> <span class="s1">&#39;2024-05-15&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;birthday&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">0    2024-04-14</span>
+<span class="go">1    2024-05-15</span>
+<span class="go">Name: birthday, dtype: ...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">DatetimeEncoder</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="w">    </span><span class="o">...</span>
+<span class="gr">skrub._apply_to_cols.RejectColumn</span>: <span class="n">Column &#39;birthday&#39; does not have Date or Datetime dtype.</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a>: can be used for converting strings to datetimes.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToDatetime</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">make_pipeline</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">DatetimeEncoder</span><span class="p">())</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">   birthday_year  birthday_month  birthday_day  birthday_total_seconds</span>
+<span class="go">0         2024.0             4.0          14.0            1.713053e+09</span>
+<span class="go">1         2024.0             5.0          15.0            1.715731e+09</span>
+</pre></div>
+</div>
+<p><strong>Time zones</strong></p>
+<p>If the input column has a time zone, the extracted features are in this timezone.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="p">[</span><span class="s2">&quot;2024-05-13T12:05:36&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;2024-05-15T13:46:02&quot;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;login&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">tz_localize</span><span class="p">(</span><span class="s1">&#39;Europe/Paris&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">DatetimeEncoder</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)[</span><span class="s1">&#39;login_hour&#39;</span><span class="p">]</span>
+<span class="go">0    12.0</span>
+<span class="go">1     NaN</span>
+<span class="go">2    13.0</span>
+<span class="go">Name: login_hour, dtype: float32</span>
+</pre></div>
+</div>
+<p>No special care is taken to convert inputs to <code class="docutils literal notranslate"><span class="pre">transform</span></code> to the same time
+zone as the column the encoder was fitted on. The features are always in the
+time zone of the input.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login_sp</span> <span class="o">=</span> <span class="n">login</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">tz_convert</span><span class="p">(</span><span class="s1">&#39;America/Sao_Paulo&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">login_sp</span>
+<span class="go">0   2024-05-13 07:05:36-03:00</span>
+<span class="go">1                         NaT</span>
+<span class="go">2   2024-05-15 08:46:02-03:00</span>
+<span class="go">Name: login, dtype: datetime64[..., America/Sao_Paulo]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">login_sp</span><span class="p">)[</span><span class="s1">&#39;login_hour&#39;</span><span class="p">]</span>
+<span class="go">0    7.0</span>
+<span class="go">1    NaN</span>
+<span class="go">2    8.0</span>
+<span class="go">Name: login_hour, dtype: float32</span>
+</pre></div>
+</div>
+<p>To ensure datetime columns are in a consistent timezones, use <code class="docutils literal notranslate"><span class="pre">ToDatetime</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">DatetimeEncoder</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)[</span><span class="s1">&#39;login_hour&#39;</span><span class="p">]</span>
+<span class="go">0    12.0</span>
+<span class="go">1     NaN</span>
+<span class="go">2    13.0</span>
+<span class="go">Name: login_hour, dtype: float32</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">login_sp</span><span class="p">)[</span><span class="s1">&#39;login_hour&#39;</span><span class="p">]</span>
+<span class="go">0    12.0</span>
+<span class="go">1     NaN</span>
+<span class="go">2    13.0</span>
+<span class="go">Name: login_hour, dtype: float32</span>
+</pre></div>
+</div>
+<p>Here we can see the input to <code class="docutils literal notranslate"><span class="pre">transform</span></code> has been converted back to the
+timezone used during <code class="docutils literal notranslate"><span class="pre">fit</span></code> and that we get the same result for “hour”.</p>
+<p>The DatetimeEncoder can also create new features based on either trigonometric
+functions or splines by setting <code class="docutils literal notranslate"><span class="pre">periodic_encoder=&quot;circular&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">periodic_encoder=&quot;spline&quot;</span></code>
+respectively.
+(<a class="reference external" href="https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html">https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html</a>).</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">periodic_encoding</span><span class="o">=</span><span class="s2">&quot;circular&quot;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)</span>
+<span class="go">   login_year  ...  login_hour_circular_1</span>
+<span class="go">0      2024.0  ...              -1.000000</span>
+<span class="go">1         NaN  ...                    NaN</span>
+<span class="go">2      2024.0  ...              -0.965926</span>
+</pre></div>
+</div>
+<p>Added features can be explored using <code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.all_outputs_</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">all_outputs_</span>
+<span class="go">[&#39;login_year&#39;, &#39;login_total_seconds&#39;, &#39;login_month_circular_0&#39;, &#39;login_month_circular_1&#39;,</span>
+<span class="go">    &#39;login_day_circular_0&#39;, &#39;login_day_circular_1&#39;, &#39;login_hour_circular_0&#39;, &#39;login_hour_circular_1&#39;]</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.fit" title="skrub.DatetimeEncoder.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(column[, y])</p></td>
+<td><p>Fit the transformer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.fit_transform" title="skrub.DatetimeEncoder.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(column[, y])</p></td>
+<td><p>Fit the encoder and transform a column.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.get_feature_names_out" title="skrub.DatetimeEncoder.get_feature_names_out"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_feature_names_out</span></code></a>([input_features])</p></td>
+<td><p>Get output feature names for transformation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.get_params" title="skrub.DatetimeEncoder.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
+<td><p>Get parameters for this estimator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.set_params" title="skrub.DatetimeEncoder.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
+<td><p>Set the parameters of this estimator.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.set_transform_request" title="skrub.DatetimeEncoder.set_transform_request"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_transform_request</span></code></a>(*[, column])</p></td>
+<td><p>Configure whether metadata should be requested to be passed to the <code class="docutils literal notranslate"><span class="pre">transform</span></code> method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.DatetimeEncoder.transform" title="skrub.DatetimeEncoder.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(column)</p></td>
+<td><p>Transform a column.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.DatetimeEncoder.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/345b18d/skrub/_apply_to_cols.py#L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.fit" title="Link to this definition">#</a></dt>
+<dd><p>Fit the transformer.</p>
+<p>This default implementation simply calls <code class="docutils literal notranslate"><span class="pre">fit_transform()</span></code> and
+returns <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p>
+<p>Subclasses should implement <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> and <code class="docutils literal notranslate"><span class="pre">transform</span></code>.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>column</strong><span class="classifier">a pandas or polars <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.3.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a></span></dt><dd><p>Unlike most scikit-learn transformers, single-column transformers
+transform a single column, not a whole dataframe.</p>
+</dd>
+<dt><strong>y</strong><span class="classifier">column or dataframe</span></dt><dd><p>Prediction targets.</p>
+</dd>
+<dt><strong>**kwargs</strong></dt><dd><p>Extra named arguments are passed to <code class="docutils literal notranslate"><span class="pre">self.fit_transform()</span></code>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>self</dt><dd><p>The fitted transformer.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.DatetimeEncoder.fit_transform">
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/345b18d/skrub/_datetime_encoder.py#L352"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.fit_transform" title="Link to this definition">#</a></dt>
+<dd><p>Fit the encoder and transform a column.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>column</strong><span class="classifier">pandas or polars <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.3.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a> with dtype Date or Datetime</span></dt><dd><p>The input to transform.</p>
+</dd>
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Ignored.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>transformed</strong><span class="classifier">DataFrame</span></dt><dd><p>The extracted features.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.DatetimeEncoder.get_feature_names_out">
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/345b18d/skrub/_datetime_encoder.py#L497"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_feature_names_out" title="Link to this definition">#</a></dt>
+<dd><p>Get output feature names for transformation.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>input_features</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v2.3)"><span>array_like</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=None</span></dt><dd><p>Ignored.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl>
+<dt><strong>feature_names_out</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> objects</span></dt><dd><p>Transformed feature names.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.DatetimeEncoder.get_params">
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/345b18d/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L240"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_params" title="Link to this definition">#</a></dt>
+<dd><p>Get parameters for this estimator.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>deep</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>If True, will return the parameters for this estimator and
+contained subobjects that are estimators.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl>
+<dt><strong>params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Parameter names mapped to their values.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.DatetimeEncoder.set_params">
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/345b18d/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L338"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_params" title="Link to this definition">#</a></dt>
+<dd><p>Set the parameters of this estimator.</p>
+<p>The method works on simple estimators as well as on nested objects
+(such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
+parameters of the form <code class="docutils literal notranslate"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it’s
+possible to update each component of a nested object.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>**params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Estimator parameters.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">estimator instance</span></dt><dd><p>Estimator instance.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.DatetimeEncoder.set_transform_request">
+<span class="sig-name descname"><span class="pre">set_transform_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/345b18d/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1315"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_transform_request" title="Link to this definition">#</a></dt>
+<dd><p>Configure whether metadata should be requested to be passed to the <code class="docutils literal notranslate"><span class="pre">transform</span></code> method.</p>
+<p>Note that this method is only relevant when this estimator is used as a
+sub-estimator within a <a class="reference external" href="https://scikit-learn.org/stable/glossary.html#term-meta-estimator" title="(in scikit-learn v1.8)"><span class="xref std std-term">meta-estimator</span></a> and metadata routing is enabled
+with <code class="docutils literal notranslate"><span class="pre">enable_metadata_routing=True</span></code> (see <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.set_config.html#sklearn.set_config" title="(in scikit-learn v1.8)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.set_config()</span></code></a>).
+Please check the <a class="reference external" href="https://scikit-learn.org/stable/metadata_routing.html#metadata-routing" title="(in scikit-learn v1.8)"><span class="xref std std-ref">User Guide</span></a> on how the routing
+mechanism works.</p>
+<p>The options for each parameter are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>: metadata is requested, and passed to <code class="docutils literal notranslate"><span class="pre">transform</span></code> if provided. The request is ignored if metadata is not provided.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code>: metadata is not requested and the meta-estimator will not pass it to <code class="docutils literal notranslate"><span class="pre">transform</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code>: metadata is not requested, and the meta-estimator will raise an error if the user provides it.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">str</span></code>: metadata should be passed to the meta-estimator with this given alias instead of the original name.</p></li>
+</ul>
+<p>The default (<code class="docutils literal notranslate"><span class="pre">sklearn.utils.metadata_routing.UNCHANGED</span></code>) retains the
+existing request. This allows you to change the request for some
+parameters and not others.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 1.3.</span></p>
+</div>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>column</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">True</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">False</span></code></a>, or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>,                     default=sklearn.utils.metadata_routing.UNCHANGED</span></dt><dd><p>Metadata routing for <code class="docutils literal notranslate"><span class="pre">column</span></code> parameter in <code class="docutils literal notranslate"><span class="pre">transform</span></code>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">object</span></dt><dd><p>The updated object.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.DatetimeEncoder.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/345b18d/skrub/_datetime_encoder.py#L424"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.transform" title="Link to this definition">#</a></dt>
+<dd><p>Transform a column.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>column</strong><span class="classifier">pandas or polars <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.3.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a> with dtype Date or Datetime</span></dt><dd><p>The input to transform.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>transformed</strong><span class="classifier">DataFrame</span></dt><dd><p>The extracted features.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<section id="gallery-examples">
+<h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This guide showcases some of the features of skrub. Much of skrub revolves around simplifying many of the tasks that are involved in pre-processing raw data into a format that shallow or classic machine-learning models can understand, that is, numerical data."><img alt="" src="../../_images/sphx_glr_0000_getting_started_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/0000_getting_started.html"><span class="doc">Getting Started</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Getting Started</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset."><img alt="" src="../../_images/sphx_glr_0010_encodings_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/0010_encodings.html"><span class="doc">Encoding: from a dataframe to a numerical matrix for machine learning</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we illustrate how to better integrate datetime features in machine learning models with the |DatetimeEncoder|."><img alt="" src="../../_images/sphx_glr_0030_datetime_encoder_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/0030_datetime_encoder.html"><span class="doc">Handling datetime features with the DatetimeEncoder</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Handling datetime features with the DatetimeEncoder</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="The following example illustrates the use of the SquashingScaler, a transformer that can rescale and squash numerical features to a range that works well with neural networks and perhaps also other related models. Its basic idea is to rescale the features based on quantile statistics (to be robust to outliers), and then perform a smooth squashing function to limit the outputs to a pre-defined range. This transform has been found to even work well when applied to one-hot encoded features."><img alt="" src="../../_images/sphx_glr_0100_squashing_scaler_thumb.png" />
+<p><a class="reference internal" href="../../auto_examples/0100_squashing_scaler.html"><span class="doc">SquashingScaler: Robust numerical preprocessing for neural networks</span></a></p>
+  <div class="sphx-glr-thumbnail-title">SquashingScaler: Robust numerical preprocessing for neural networks</div>
+</div></div></section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="skrub.ToCategorical.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">ToCategorical</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="skrub.ToDatetime.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">ToDatetime</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.fit"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.fit()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.fit_transform"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.fit_transform()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.get_feature_names_out"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.get_feature_names_out()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.get_params"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.get_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.set_params"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.set_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.set_transform_request"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.set_transform_request()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.DatetimeEncoder.transform"><code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.transform()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery-examples">Gallery examples</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/reference/generated/skrub.DatetimeEncoder.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2018-2023, the dirty_cat developers, 2023-2025, the skrub developers.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
