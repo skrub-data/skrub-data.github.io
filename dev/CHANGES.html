@@ -602,14 +602,14 @@ etc. <a class="reference external" href="https://github.com/skrub-data/skrub/pul
 named dataops, in a <a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a>. This lets us easily know what keys should
 be present in the <code class="docutils literal notranslate"><span class="pre">environment</span></code> dictionary we pass to
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.eval.html#skrub.DataOp.skb.eval" title="skrub.DataOp.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.eval()</span></code></a> or to <code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.fit()</span></code>,
-<code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.predict()</span></code>, etc. .
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.predict()</span></code>, etc.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1646">#1646</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.DataOp.skb.iter_cv_splits.html#skrub.DataOp.skb.iter_cv_splits" title="skrub.DataOp.skb.iter_cv_splits"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.iter_cv_splits()</span></code></a> iterates over the training and testing
 environments produced by a CV splitter – similar to
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.train_test_split.html#skrub.DataOp.skb.train_test_split" title="skrub.DataOp.skb.train_test_split"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.train_test_split()</span></code></a> but for multiple cross-validation splits.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1653">#1653</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
-<li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> now supports <code class="docutils literal notranslate"><span class="pre">np.array</span></code>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1676">#1676</a> by :user: <cite>Nisma Amjad &lt;Nismamjad1&gt;</cite>.</p></li>
-<li><p><a class="reference internal" href="reference/generated/skrub.DataOp.skb.full_report.html#skrub.DataOp.skb.full_report" title="skrub.DataOp.skb.full_report"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.full_report()</span></code></a> now accepts a new parameter, title, that is displayed
+<li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> now supports <code class="docutils literal notranslate"><span class="pre">np.array</span></code>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1676">#1676</a> by <a class="reference external" href="https://github.com/Nismamjad1">Nisma Amjad</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.DataOp.skb.full_report.html#skrub.DataOp.skb.full_report" title="skrub.DataOp.skb.full_report"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.full_report()</span></code></a> now accepts a new parameter, <code class="docutils literal notranslate"><span class="pre">title</span></code>, that is displayed
 in the html report.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1654">#1654</a> by <a class="reference external" href="https://github.com/MarieSacksick">Marie Sacksick</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> now includes the <code class="docutils literal notranslate"><span class="pre">open_tab</span></code> parameter, which lets the
@@ -624,23 +624,23 @@ rendered. <a class="reference external" href="https://github.com/skrub-data/skru
 the minimum supported versions of scikit-learn and requests are 1.4.2 and 2.27.1
 respectively. Support for python 3.14 has been added.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1572">#1572</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
-<li><p>The :meth: <cite>DataOp.skb.full_report</cite> method now deletes reports created with
-<code class="docutils literal notranslate"><span class="pre">output_dir=None</span></code> after 7 days. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1657">#1657</a> by :user: <cite>Simon Dierickx &lt;simon.dierickx&gt;</cite>.</p></li>
-<li><p>The :func: <cite>tabular_pipeline</cite> uses a <a class="reference internal" href="reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> instead of a
+<li><p>The <a class="reference internal" href="reference/generated/skrub.DataOp.skb.full_report.html#skrub.DataOp.skb.full_report" title="skrub.DataOp.skb.full_report"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.full_report()</span></code></a> method now deletes reports created with
+<code class="docutils literal notranslate"><span class="pre">output_dir=None</span></code> after 7 days. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1657">#1657</a> by <a class="reference external" href="https://github.com/simon.dierickx">Simon Dierickx</a>.</p></li>
+<li><p>The <a class="reference internal" href="reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a> uses a <a class="reference internal" href="reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> instead of a
 <code class="xref py py-class docutils literal notranslate"><span class="pre">StandardScaler</span></code> for centering and scaling numerical features
 when linear models are used.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1644">#1644</a> by <a class="reference external" href="https://github.com/dierickxsimon">Simon Dierickx</a></p></li>
-<li><p>The transformer <a class="reference internal" href="reference/generated/skrub.ToFloat.html#skrub.ToFloat" title="skrub.ToFloat"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToFloat</span></code></a>, previously called <cite>ToFloat32</cite>, is now public.
+<li><p>The transformer <a class="reference internal" href="reference/generated/skrub.ToFloat.html#skrub.ToFloat" title="skrub.ToFloat"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToFloat</span></code></a>, previously called <code class="docutils literal notranslate"><span class="pre">ToFloat32</span></code>, is now public.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1687">#1687</a> by <a class="reference external" href="https://github.com/MarieSacksick">Marie Sacksick</a>.</p></li>
 <li><p>Improved the error message raised when a Polars lazyframe is passed to
-<a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>, clarifying that <cite>.collect()</cite> must be called first.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1767">#1767</a> by <a class="reference external" href="https://github.com/fatiben2002">Fatima Ben Kadour</a></p></li>
-<li><p>Computing the associations in <cite>TableReport</cite> is now deterministic and can be controlled
-by the new parameter <code class="docutils literal notranslate"><span class="pre">subsampling_seed</span></code> of the global configuration.
+<a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>, clarifying that <code class="docutils literal notranslate"><span class="pre">.collect()</span></code> must be called first.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1767">#1767</a> by <a class="reference external" href="https://github.com/fatiben2002">Fatima Ben Kadour</a>.</p></li>
+<li><p>Computing the associations in <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> is now deterministic and can
+be controlled by the new parameter <code class="docutils literal notranslate"><span class="pre">subsampling_seed</span></code> of the global configuration.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1775">#1775</a> by <a class="reference external" href="https://github.com/thomass-dev">Thomas S.</a>.</p></li>
 <li><p>Added <code class="docutils literal notranslate"><span class="pre">cast_to_str</span></code> parameter to <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> to prevent unintended
 conversion of list/object-like columns to strings unless explicitly enabled.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1789">#1789</a> by <a class="reference external" href="https://github.com/PilliSiddharth">&#64;PilliSiddharth</a></p></li>
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1789">#1789</a> by <a class="reference external" href="https://github.com/PilliSiddharth">&#64;PilliSiddharth</a>.</p></li>
 </ul>
 </section>
 <section id="id4">
@@ -648,7 +648,7 @@ conversion of list/object-like columns to strings unless explicitly enabled.
 <ul class="simple">
 <li><p>The <a class="reference internal" href="reference/generated/skrub.cross_validate.html#skrub.cross_validate" title="skrub.cross_validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">skrub.cross_validate()</span></code></a> function now raises a specific exception if the wrong variable
 type is passed.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1799">#1799</a> by :user: <cite>Eloi Massoulié&lt;emassoulie&gt;</cite></p></li>
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1799">#1799</a> by <a class="reference external" href="https://github.com/emassoulie">Eloi Massoulié</a></p></li>
 <li><p>Fixed various issues with some transformers by adding <code class="docutils literal notranslate"><span class="pre">get_feature_names_out</span></code>
 to all single column transformers.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1666">#1666</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
@@ -680,7 +680,7 @@ transformers dependencies. <a class="reference external" href="https://github.co
 <code class="docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code> used to raise an error, this has been fixed in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1782">#1782</a>
 by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>Fixed potential issues that could arise in <a class="reference internal" href="reference/generated/skrub.ParamSearch.html#skrub.ParamSearch.plot_results" title="skrub.ParamSearch.plot_results"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ParamSearch.plot_results()</span></code></a>
-when NaN values were present in the crossvalidation results.
+when NaN values were present in the cross-validation results.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1800">#1800</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 </ul>
 </section>
