@@ -557,6 +557,9 @@ Datasets
   datasets.fetch_bike_sharing
 
 
+  datasets.fetch_california_housing
+
+
   datasets.fetch_country_happiness
 
 
