@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing Development: New features: Changes: compute_ngram_distance() has been renamed to_compute_ngram_distance() and is now a private function.#1838 by Siddharth Baleja.. Bugfixes: Release 0.7.1: ..." />
+<meta property="og:description" content="Ongoing Development: New features: Changes: The StringEncoder now exposes the vocabulary parameter from the parent TfidfVectorizer.#1819 by Eloi Massoulié, compute_ngram_distance() has been renamed..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing Development: New features: Changes: compute_ngram_distance() has been renamed to_compute_ngram_distance() and is now a private function.#1838 by Siddharth Baleja.. Bugfixes: Release 0.7.1: ..." />
+<meta name="description" content="Ongoing Development: New features: Changes: The StringEncoder now exposes the vocabulary parameter from the parent TfidfVectorizer.#1819 by Eloi Massoulié, compute_ngram_distance() has been renamed..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -581,6 +581,9 @@
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>The <a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a> now exposes the <code class="docutils literal notranslate"><span class="pre">vocabulary</span></code> parameter from the parent
+<code class="xref py py-class docutils literal notranslate"><span class="pre">TfidfVectorizer</span></code>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1819">#1819</a> by <a class="reference external" href="https://github.com/emassoulie">Eloi Massoulié</a></p></li>
 <li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">compute_ngram_distance()</span></code> has been renamed to <code class="xref py py-func docutils literal notranslate"><span class="pre">_compute_ngram_distance()</span></code> and is now a private function.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1838">#1838</a> by <a class="reference external" href="https://github.com/siddharthbaleja">Siddharth Baleja</a>.</p></li>
 </ul>
