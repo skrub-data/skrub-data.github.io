@@ -736,7 +736,7 @@ column:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;city&quot;</span><span class="p">])</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">skrub._apply_to_cols.RejectColumn</span>: <span class="n">Could not find a datetime format for column &#39;city&#39;.</span>
+<span class="gr">skrub._single_column_transformer.RejectColumn</span>: <span class="n">Could not find a datetime format for column &#39;city&#39;.</span>
 </pre></div>
 </div>
 <p>It is possible to change how rejected columns are handled through the <code class="docutils literal notranslate"><span class="pre">allow_reject</span></code>
