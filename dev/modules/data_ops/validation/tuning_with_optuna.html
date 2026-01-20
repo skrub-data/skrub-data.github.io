@@ -766,12 +766,12 @@ objectives and leverage Optuna’s advanced features, such as the ask-and-tell i
 trial pruning, and multi-objective optimization.</p>
 <p>In this case, rather than running the hyperparameter search through
 <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_randomized_search()</span></code></a>,
-the <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.Study</span></code></a> runs the hyperparameter
+the <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.Study</span></code></a> runs the hyperparameter
 search by defining an objective function that uses a skrub
 learner with hyperparameters suggested by Optuna.</p>
-<p><a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.optimize" title="(in Optuna v4.6.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">optimize</span></code></a> is given an
+<p><a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.optimize" title="(in Optuna v4.7.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">optimize</span></code></a> is given an
 <code class="docutils literal notranslate"><span class="pre">objective</span></code> function. The <code class="docutils literal notranslate"><span class="pre">objective</span></code> must accept a
-<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Trial</span></code></a> object (which is produced by the study and picks
+<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Trial</span></code></a> object (which is produced by the study and picks
 the parameters for a given evaluation of the objective) and return the value
 to maximize (or minimize).</p>
 <p>To use Optuna with a <a class="reference internal" href="../../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a>, we just need to pass the Trial object
@@ -815,7 +815,7 @@ more information.</p>
 </section>
 <section id="parallelism">
 <h2>Parallelism<a class="headerlink" href="#parallelism" title="Link to this heading">#</a></h2>
-<p>Optuna’s <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.optimize" title="(in Optuna v4.6.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">optuna.study.Study.optimize()</span></code></a> uses thread-based parallelism. When
+<p>Optuna’s <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.optimize" title="(in Optuna v4.7.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">optuna.study.Study.optimize()</span></code></a> uses thread-based parallelism. When
 we use <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_randomized_search()</span></code></a> with the Optuna backend, both
 threading and multiprocessing can be used. Skrub will choose based on the joblib
 configuration: if joblib is configured to use processes (the default),
