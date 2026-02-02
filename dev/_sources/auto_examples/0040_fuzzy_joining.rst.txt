@@ -1701,7 +1701,7 @@ introduced into a grid search:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 25.822 seconds)
+   **Total running time of the script:** (0 minutes 27.668 seconds)
 
 **Estimated memory usage:**  494 MB
 
