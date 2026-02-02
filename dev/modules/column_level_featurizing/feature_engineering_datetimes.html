@@ -675,9 +675,9 @@ inferred or user-specified with the <code class="docutils literal notranslate"><
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;2024-05-05T13:17:52&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;2024-05-07T13:17:52&quot;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;when&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
 <span class="go">0    2024-05-05T13:17:52</span>
-<span class="go">1                   None</span>
+<span class="go">1                   ...</span>
 <span class="go">2    2024-05-07T13:17:52</span>
-<span class="go">Name: when, dtype: object</span>
+<span class="go">Name: when, dtype: ...</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToDatetime</span>
@@ -884,7 +884,7 @@ to reduce redundancy:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span>
 <span class="go">Index([&#39;login_year&#39;, &#39;login_month&#39;, &#39;login_day&#39;, &#39;login_hour&#39;,</span>
 <span class="go">       &#39;login_total_seconds&#39;],</span>
-<span class="go">      dtype=&#39;object&#39;)</span>
+<span class="go">      dtype=...)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">periodic_encoding</span><span class="o">=</span><span class="s2">&quot;circular&quot;</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span>
@@ -892,7 +892,7 @@ to reduce redundancy:</p>
 <span class="go">       &#39;login_month_circular_1&#39;, &#39;login_day_circular_0&#39;,</span>
 <span class="go">       &#39;login_day_circular_1&#39;, &#39;login_hour_circular_0&#39;,</span>
 <span class="go">       &#39;login_hour_circular_1&#39;],</span>
-<span class="go">      dtype=&#39;object&#39;)</span>
+<span class="go">      dtype=...)</span>
 </pre></div>
 </div>
 <p>The <a class="reference internal" href="../../reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> uses hardcoded values for generating periodic features.

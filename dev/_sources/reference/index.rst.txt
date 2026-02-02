@@ -575,15 +575,6 @@ Datasets
   datasets.fetch_flight_delays
 
 
-  datasets.fetch_ken_embeddings
-
-
-  datasets.fetch_ken_table_aliases
-
-
-  datasets.fetch_ken_types
-
-
   datasets.fetch_medical_charge
 
 

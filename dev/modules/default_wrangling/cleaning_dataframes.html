@@ -703,8 +703,8 @@ is used as a preprocessing step at the beginning of an ML pipeline.</p>
 <span class="go">  2   3 2024-05-07</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df_clean</span><span class="o">.</span><span class="n">dtypes</span>
 <span class="go">id               int64</span>
-<span class="go">date    datetime64[ns]</span>
-<span class="go">dtype: object</span>
+<span class="go">date    datetime64[...]</span>
+<span class="go">dtype:  ...</span>
 </pre></div>
 </div>
 <p>Note that the <code class="docutils literal notranslate"><span class="pre">&quot;all_missing&quot;</span></code> column has been dropped, and that the <code class="docutils literal notranslate"><span class="pre">&quot;date&quot;</span></code>
@@ -725,11 +725,11 @@ the <code class="docutils literal notranslate"><span class="pre">numeric_dtype</
 <span class="gp">... </span><span class="p">})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
 <span class="go">id    int64</span>
-<span class="go">dtype: object</span>
+<span class="go">dtype: ...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df_cleaned</span> <span class="o">=</span> <span class="n">cleaner</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df_cleaned</span><span class="o">.</span><span class="n">dtypes</span>
 <span class="go">id    float32</span>
-<span class="go">dtype: object</span>
+<span class="go">dtype: ...</span>
 </pre></div>
 </div>
 <p>Setting the dtype to <code class="docutils literal notranslate"><span class="pre">float32</span></code> reduces RAM footprint for most use cases and
