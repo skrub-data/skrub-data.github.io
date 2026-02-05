@@ -72,8 +72,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ToFloat" href="skrub.ToFloat.html" />
-    <link rel="prev" title="ToDatetime" href="skrub.ToDatetime.html" />
+    <link rel="next" title="Joining dataframes" href="../joining.html" />
+    <link rel="prev" title="DropUninformative" href="skrub.DropUninformative.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.8.dev0" />
@@ -518,7 +518,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToFrame.html">ApplyToFrame</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../encoders.html">encoders</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../encoders.html">encoders</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="skrub.StringEncoder.html">StringEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.TextEncoder.html">TextEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.MinHashEncoder.html">MinHashEncoder</a></li>
@@ -527,7 +527,6 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToCategorical.html">ToCategorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DatetimeEncoder.html">DatetimeEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToDatetime.html">ToDatetime</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">to_datetime</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToFloat.html">ToFloat</a></li>
 </ul>
 </details></li>
@@ -538,11 +537,12 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.column_associations.html">column_associations</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../cleaning.html">cleaning</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../cleaning.html">cleaning</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="skrub.SquashingScaler.html">SquashingScaler</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.Cleaner.html">Cleaner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropUninformative.html">DropUninformative</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">to_datetime</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -700,7 +700,7 @@
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">API Reference</a></li>
     
     
-    <li class="breadcrumb-item"><a href="../encoders.html" class="nav-link">Encoding a column</a></li>
+    <li class="breadcrumb-item"><a href="../cleaning.html" class="nav-link">Cleaning a dataframe</a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">to_datetime</span></li>
   </ul>
@@ -723,7 +723,7 @@
 <h1>to_datetime<a class="headerlink" href="#to-datetime" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.to_datetime">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b6914e8/skrub/_to_datetime.py#L467"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.to_datetime" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b311a88/skrub/_to_datetime.py#L467"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.to_datetime" title="Link to this definition">#</a></dt>
 <dd><p>Convert DataFrame or column to Datetime dtype.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -779,20 +779,20 @@ See the reference documentation for format codes:
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.ToDatetime.html"
+       href="skrub.DropUninformative.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">ToDatetime</p>
+        <p class="prev-next-title">DropUninformative</p>
       </div>
     </a>
     <a class="right-next"
-       href="skrub.ToFloat.html"
+       href="../joining.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ToFloat</p>
+        <p class="prev-next-title">Joining dataframes</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

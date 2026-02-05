@@ -102,9 +102,6 @@ Encoding a column
   ToDatetime
 
 
-  to_datetime
-
-
   ToFloat
 
 
@@ -164,6 +161,9 @@ Cleaning a dataframe
 
 
   DropUninformative
+
+
+  to_datetime
 
 
 
