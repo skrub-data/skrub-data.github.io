@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=5a057da9"></script>
+    <script src="../../_static/documentation_options.js?v=6dfdf7c3"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -74,11 +74,11 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Learning Materials" href="../../learning_materials.html" />
+    <link rel="next" title="Using PyTorch (via skorch) in DataOps" href="1160_pytorch.html" />
     <link rel="prev" title="Subsampling for faster development" href="1140_subsampling.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.7.1" />
+  <meta name="docsearch:version" content="0.7.2" />
   </head>
   
   
@@ -212,13 +212,6 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../development.html">
     Development
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -418,13 +411,6 @@
   </a>
 </li>
 
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../CONTRIBUTING.html">
-    Contributing to skrub
-  </a>
-</li>
-
   </ul>
 </nav></div>
           
@@ -545,6 +531,14 @@
 <li class="toctree-l2"><a class="reference internal" href="1131_optuna_choices.html">Tuning DataOps with Optuna</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1140_subsampling.html">Subsampling for faster development</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Use case: developing locally and deploying to production</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1160_pytorch.html">Using PyTorch (via skorch) in DataOps</a></li>
+
+
+
+
+
+
+
 </ul>
 </details></li>
 </ul>
@@ -717,7 +711,7 @@ handle directly. Let’s convert it to a pandas DataFrame using
 <a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.apply_func.html#skrub.DataOp.skb.apply_func" title="skrub.DataOp.skb.apply_func"><code class="xref py py-func docutils literal notranslate"><span class="pre">apply_func()</span></code></a>.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
-<a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a> <span class="o">=</span> <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span></a><span class="p">)</span>
+<a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a> <span class="o">=</span> <a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class"><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span></a><span class="p">)</span>
 </pre></div>
 </div>
 <p>For this example, we will use a strong baseline, with skrub’s
@@ -736,7 +730,7 @@ handle directly. Let’s convert it to a pandas DataFrame using
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 14.1.0 (20251207.0913)
+<!-- Generated by graphviz version 14.1.2 (20260126.1125)
  -->
 <!-- Title: G Pages: 1 -->
 <svg width="214pt" height="173pt"
@@ -849,10 +843,11 @@ the variables of the DataOps plan.</p>
 and preprocessing done during model development are exactly the same as those done in
 production. This makes deployment straightforward and reduces the risk of errors
 when moving from development to production environments.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 6.564 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 8.825 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  618 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-data-ops-1150-use-case-py">
 <div class="binder-badge docutils container">
-<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.7.1?urlpath=lab/tree/notebooks/auto_examples/data_ops/1150_use_case.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo1.svg" style="width: 150px;" />
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.7.2?urlpath=lab/tree/notebooks/auto_examples/data_ops/1150_use_case.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo1.svg" style="width: 150px;" />
 </a>
 </div>
 <div class="lite-badge docutils container">
@@ -893,11 +888,11 @@ when moving from development to production environments.</p>
       </div>
     </a>
     <a class="right-next"
-       href="../../learning_materials.html"
+       href="1160_pytorch.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Learning Materials</p>
+        <p class="prev-next-title">Using PyTorch (via skorch) in DataOps</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -986,7 +981,7 @@ when moving from development to production environments.</p>
     
       
         <div class="sphx-glr-sidebar-item binder-badge-sidebar">
-          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/0.7.1?urlpath=lab/tree/notebooks/auto_examples/data_ops/1150_use_case.ipynb">
+          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/0.7.2?urlpath=lab/tree/notebooks/auto_examples/data_ops/1150_use_case.ipynb">
             <img src="../../_images/binder_badge_logo1.svg" alt="Launch binder">
           </a>
         </div>

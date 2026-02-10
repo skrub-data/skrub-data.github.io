@@ -52,7 +52,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=5a057da9"></script>
+    <script src="../../_static/documentation_options.js?v=6dfdf7c3"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -62,7 +62,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -76,7 +76,7 @@
     <link rel="prev" title="deferred" href="skrub.deferred.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.7.1" />
+  <meta name="docsearch:version" content="0.7.2" />
   </head>
   
   
@@ -210,13 +210,6 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../development.html">
     Development
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -416,13 +409,6 @@
   </a>
 </li>
 
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../CONTRIBUTING.html">
-    Contributing to skrub
-  </a>
-</li>
-
   </ul>
 </nav></div>
           
@@ -541,7 +527,6 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToCategorical.html">ToCategorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DatetimeEncoder.html">DatetimeEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToDatetime.html">ToDatetime</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToFloat.html">ToFloat</a></li>
 </ul>
 </details></li>
@@ -557,6 +542,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.Cleaner.html">Cleaner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropUninformative.html">DropUninformative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -737,7 +723,7 @@
 <h1>DataOp<a class="headerlink" href="#dataop" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.DataOp">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">DataOp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">impl</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c3d53ee/skrub/_data_ops/_data_ops.py#L478"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">DataOp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">impl</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/529555b/skrub/_data_ops/_data_ops.py#L478"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp" title="Link to this definition">#</a></dt>
 <dd><p>Representation of a computation that can be used to build DataOps plans and learners.</p>
 <p>Please refer to the example gallery for an introduction to skrub
 DataOps.</p>

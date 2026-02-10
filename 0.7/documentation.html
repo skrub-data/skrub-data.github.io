@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/documentation.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Skrub is a library that eases machine learning with dataframes, from exploring dataframes to validating a machine-learning pipeline. The TableReport is a powerful data exploration tool, which can b..." />
+<meta property="og:description" content="Skrub is a Python library that facilitates machine learning with tabular data (dataframes, as with pandas and polars) using a scikit-learn–compatible API. Use the sections below to navigate the gui..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Skrub is a library that eases machine learning with dataframes, from exploring dataframes to validating a machine-learning pipeline. The TableReport is a powerful data exploration tool, which can b..." />
+<meta name="description" content="Skrub is a Python library that facilitates machine learning with tabular data (dataframes, as with pandas and polars) using a scikit-learn–compatible API. Use the sections below to navigate the gui..." />
 
     <title>User Guide &#8212; skrub</title>
   
@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="_static/documentation_options.js?v=5a057da9"></script>
+    <script src="_static/documentation_options.js?v=6dfdf7c3"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -78,7 +78,7 @@
     <link rel="prev" title="Install" href="install.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.7.1" />
+  <meta name="docsearch:version" content="0.7.2" />
   </head>
   
   
@@ -212,13 +212,6 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="development.html">
     Development
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -415,13 +408,6 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="development.html">
     Development
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -646,22 +632,11 @@
                   
   <section id="user-guide">
 <span id="id1"></span><h1>User Guide<a class="headerlink" href="#user-guide" title="Link to this heading">#</a></h1>
-<p>Skrub is a library that eases machine learning with dataframes, from exploring
-dataframes to validating a machine-learning pipeline.</p>
-<p>The <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> is a powerful data exploration tool, which can be followed by
-data sanitization and feature engineering tools in the <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> and <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>.
-The <a class="reference internal" href="reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a> combines the two to build a strong baseline for dataframes.</p>
-<p>The skrub <a class="reference internal" href="column_level_featurizing.html#user-guide-encoders-index"><span class="std std-ref">column-level encoders</span></a> can be tweaked by the user for more
-specific needs.
-Various <a class="reference internal" href="default_wrangling.html#user-guide-building-pipeline-index"><span class="std std-ref">multi-column transformers</span></a> and the <a class="reference internal" href="modules/multi_column_operations/selectors.html#user-guide-selectors"><span class="std std-ref">selectors API</span></a>
-provide a high degree of control over which columns should be modified.</p>
-<p>More complex, multi-table scenarios can make use of the skrub <a class="reference internal" href="data_ops.html#user-guide-data-ops-index"><span class="std std-ref">Data Ops</span></a>,
-which enable constructing and validating pipelines that involve
-multiple dataframes and hyperparameter tuning.</p>
-<p>Skrub does not replace pandas or polars. Instead, it
-leverages the dataframe libraries to provide more high-level building blocks that
-perform the data preprocessing steps that are typically needed in a machine learning
-pipeline.</p>
+<p>Skrub is a Python library that facilitates machine learning with tabular data
+(dataframes, as with pandas and polars) using a scikit-learn–compatible API.</p>
+<p>Use the sections below to navigate the guide. For runnable code, see the
+<a class="reference internal" href="auto_examples/index.html"><span class="doc">Example gallery</span></a>. For class and function details, see
+the <a class="reference internal" href="reference/index.html#api-ref"><span class="std std-ref">API Reference</span></a>.</p>
  <script>
  window.addEventListener('DOMContentLoaded', function() {
       (function($) {

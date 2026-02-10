@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../../_static/documentation_options.js?v=5a057da9"></script>
+    <script src="../../../_static/documentation_options.js?v=6dfdf7c3"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -78,7 +78,7 @@
     <link rel="prev" title="Tuning and validating skrub DataOps plans" href="tuning_validating_data_ops.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.7.1" />
+  <meta name="docsearch:version" content="0.7.2" />
   </head>
   
   
@@ -212,13 +212,6 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../../development.html">
     Development
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../../CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -415,13 +408,6 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../development.html">
     Development
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -685,7 +671,7 @@ we obtain by default uses default values for each of the choices. For numeric
 choices it is the middle of the range (unless an explicit default has been
 set when creating the choice), and for <a class="reference internal" href="../../../reference/generated/skrub.choose_from.html#skrub.choose_from" title="skrub.choose_from"><code class="xref py py-func docutils literal notranslate"><span class="pre">choose_from()</span></code></a> it is the first
 option we give it. We can also obtain random choices, or choices suggested by
-an Optuna <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">trial</span></code></a>, by passing the <code class="docutils literal notranslate"><span class="pre">choose</span></code>
+an Optuna <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">trial</span></code></a>, by passing the <code class="docutils literal notranslate"><span class="pre">choose</span></code>
 parameter.</p>
 <p>To get a pipeline that runs an internal cross-validation to select the best
 hyperparameters, we must use <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.make_grid_search.html#skrub.DataOp.skb.make_grid_search" title="skrub.DataOp.skb.make_grid_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_grid_search()</span></code></a> or <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_randomized_search()</span></code></a>. We can also use <a class="reference external" href="https://optuna.readthedocs.io/">Optuna</a> to choose the best hyperparameters as shown

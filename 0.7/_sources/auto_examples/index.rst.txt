@@ -1,7 +1,7 @@
 :orphan:
 
 Examples
-===========
+========
 
 
 
@@ -331,6 +331,23 @@ Skrub DataOps
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">Use case: developing locally and deploying to production</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to wrap a PyTorch model with skorch and plug it into a skrub DataOps plan.">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1160_pytorch_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/data_ops/1160_pytorch`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Using PyTorch (via skorch) in DataOps</div>
     </div>
 
 

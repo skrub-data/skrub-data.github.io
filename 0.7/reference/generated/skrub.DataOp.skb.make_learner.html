@@ -52,7 +52,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=5a057da9"></script>
+    <script src="../../_static/documentation_options.js?v=6dfdf7c3"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -62,7 +62,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -76,7 +76,7 @@
     <link rel="prev" title="skrub.DataOp.skb.get_vars" href="skrub.DataOp.skb.get_vars.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.7.1" />
+  <meta name="docsearch:version" content="0.7.2" />
   </head>
   
   
@@ -210,13 +210,6 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../development.html">
     Development
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -416,13 +409,6 @@
   </a>
 </li>
 
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../CONTRIBUTING.html">
-    Contributing to skrub
-  </a>
-</li>
-
   </ul>
 </nav></div>
           
@@ -541,7 +527,6 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToCategorical.html">ToCategorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DatetimeEncoder.html">DatetimeEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToDatetime.html">ToDatetime</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToFloat.html">ToFloat</a></li>
 </ul>
 </details></li>
@@ -557,6 +542,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.Cleaner.html">Cleaner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropUninformative.html">DropUninformative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -737,7 +723,7 @@
 <h1>skrub.DataOp.skb.make_learner<a class="headerlink" href="#skrub-dataop-skb-make-learner" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.make_learner">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">make_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">choose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c3d53ee/skrub/_data_ops/_skrub_namespace.py#L1600"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.make_learner" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">make_learner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">choose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/529555b/skrub/_data_ops/_skrub_namespace.py#L1600"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.make_learner" title="Link to this definition">#</a></dt>
 <dd><p>Get a skrub learner for this DataOp.</p>
 <p>Returns a <a class="reference internal" href="skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a> with a <code class="docutils literal notranslate"><span class="pre">fit()</span></code> method so it can be fit
 to some training data and then apply it to unseen data by calling
@@ -752,7 +738,7 @@ default this learner uses the default value of each choice. See the
 pick the best value with hyperparameter tuning, use
 <a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_randomized_search()</span></code></a>
 <a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html#skrub.DataOp.skb.make_grid_search" title="skrub.DataOp.skb.make_grid_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_grid_search()</span></code></a> instead, or an Optuna
-<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Study</span></code></a> as shown in this
+<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Study</span></code></a> as shown in this
 <a class="reference internal" href="../../auto_examples/data_ops/1131_optuna_choices.html#example-optuna-choices"><span class="std std-ref">example</span></a>.</p>
 </div>
 <dl class="field-list">
@@ -771,7 +757,7 @@ Therefore it is an error to pass <code class="docutils literal notranslate"><spa
 <code class="docutils literal notranslate"><span class="pre">fitted=False</span></code> (because <code class="docutils literal notranslate"><span class="pre">keep_subsampling=True</span></code> would have no
 effect).</p>
 </dd>
-<dt><strong>choose</strong><span class="classifier">‘default’, ‘random’, ‘random([seed])’ or                  <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.Trial</span></code></a> instance</span></dt><dd><p>How to resolve choices contained in the data_op. The different
+<dt><strong>choose</strong><span class="classifier">‘default’, ‘random’, ‘random([seed])’ or                  <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.Trial</span></code></a> instance</span></dt><dd><p>How to resolve choices contained in the data_op. The different
 options are:</p>
 <ul class="simple">
 <li><p>‘default’: the corresponding parameters of the SkrubLearner are not
@@ -782,8 +768,8 @@ the random seed: for example ‘random(0)’ sets it to 0. ‘random()’
 is the same as ‘random’.</p></li>
 <li><p>an instance of <a class="reference external" href="https://numpy.org/doc/stable/reference/random/legacy.html#numpy.random.RandomState" title="(in NumPy v2.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.random.RandomState</span></code></a>. Same as ‘random’,
 but the provided RandomState is used to sample values.</p></li>
-<li><p>an instance of <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.Trial</span></code></a> or
-<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.FrozenTrial.html#optuna.trial.FrozenTrial" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.FrozenTrial</span></code></a>. It is
+<li><p>an instance of <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.Trial</span></code></a> or
+<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.FrozenTrial.html#optuna.trial.FrozenTrial" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.FrozenTrial</span></code></a>. It is
 used to suggest values for
 the choices.</p></li>
 </ul>
@@ -793,7 +779,7 @@ These options can be combined with external logic to evaluate and
 select the resulting learners, or one of
 <a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html#skrub.DataOp.skb.make_grid_search" title="skrub.DataOp.skb.make_grid_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_grid_search()</span></code></a>,
 <a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_randomized_search()</span></code></a>,
-<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.optimize" title="(in Optuna v4.6.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">optuna.Study.optimize</span></code></a> (as
+<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.optimize" title="(in Optuna v4.7.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">optuna.Study.optimize</span></code></a> (as
 shown in this <a class="reference internal" href="../../auto_examples/data_ops/1131_optuna_choices.html#example-optuna-choices"><span class="std std-ref">example</span></a>) can be used
 to automatically select the best hyperparameters.</p>
 </dd>
@@ -859,7 +845,7 @@ of each choice.</p>
 <span class="go">np.int64(-5)</span>
 </pre></div>
 </div>
-<p>If an <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.Trial</span></code></a> instance is passed
+<p>If an <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.Trial</span></code></a> instance is passed
 instead, the choice outcomes are obtained by calling the trial’s
 <code class="docutils literal notranslate"><span class="pre">suggest_int</span></code>, <code class="docutils literal notranslate"><span class="pre">suggest_float</span></code> or <code class="docutils literal notranslate"><span class="pre">suggest_categorical</span></code> methods.
 This allows easily selecting hyperparameters with optuna.</p>

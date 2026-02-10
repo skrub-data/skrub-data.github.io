@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/modules/data_ops/ml_pipeline/evaluating_debugging_data_ops.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="All operations on DataOps are recorded in a computational graph, which can be inspected with.skb.full_report(). This method generates a html report that shows the full plan, including all nodes, th..." />
+<meta property="og:description" content="All operations on DataOps are recorded in a computational graph, which can be inspected with.skb.full_report(). This method generates an HTML report that shows the full plan, including all nodes, t..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="All operations on DataOps are recorded in a computational graph, which can be inspected with.skb.full_report(). This method generates a html report that shows the full plan, including all nodes, th..." />
+<meta name="description" content="All operations on DataOps are recorded in a computational graph, which can be inspected with.skb.full_report(). This method generates an HTML report that shows the full plan, including all nodes, t..." />
 
     <title>Evaluating and debugging the DataOps plan with .skb.full_report() &#8212; skrub</title>
   
@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../../_static/documentation_options.js?v=5a057da9"></script>
+    <script src="../../../_static/documentation_options.js?v=6dfdf7c3"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -78,7 +78,7 @@
     <link rel="prev" title="Documenting the DataOps plan with node names and descriptions" href="documenting_data_ops_plan.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.7.1" />
+  <meta name="docsearch:version" content="0.7.2" />
   </head>
   
   
@@ -212,13 +212,6 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../../development.html">
     Development
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../../CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -415,13 +408,6 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../development.html">
     Development
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -654,7 +640,7 @@
 <span id="user-guide-data-ops-evaluating-debugging-dataops"></span><h1>Evaluating and debugging the DataOps plan with <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.full_report.html#skrub.DataOp.skb.full_report" title="skrub.DataOp.skb.full_report"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.full_report()</span></code></a><a class="headerlink" href="#evaluating-and-debugging-the-dataops-plan-with-skb-full-report" title="Link to this heading">#</a></h1>
 <p>All operations on DataOps are recorded in a computational graph, which can be
 inspected with <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.full_report.html#skrub.DataOp.skb.full_report" title="skrub.DataOp.skb.full_report"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.full_report()</span></code></a>. This method
-generates a html report that shows the full plan, including all nodes, their names,
+generates an HTML report that shows the full plan, including all nodes, their names,
 descriptions, and the transformations applied to the data. It is possible to give a
 title to the evaluation report this way:
 <code class="docutils literal notranslate"><span class="pre">my_data_op.skb.full_report(title=&quot;my</span> <span class="pre">title&quot;)</span></code>.</p>

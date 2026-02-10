@@ -177,7 +177,7 @@ Let's deduplicate our data:
     Contrivan    Contrivan
     Coqtrivan    Contrivan
     Contriian    Contrivan
-    dtype: object
+    dtype: str
 
 
 
@@ -261,7 +261,7 @@ data returned by |deduplicate|.
     Coqtrivan    Contrivan
     Contriian    Contrivan
     Contaivan    Contrivan
-    dtype: object
+    dtype: str
 
 
 
@@ -272,54 +272,7 @@ and the cluster it was translated to on the right.
 If we want to adapt the translation table, we can
 modify it manually.
 
-.. GENERATED FROM PYTHON SOURCE LINES 152-159
-
-Visualizing string pair-wise distance between names
----------------------------------------------------
-
-Below, we use a heatmap to visualize the pairwise-distance between medication
-names. A darker color means that two medication names are closer together
-(i.e. more similar), a lighter color means a larger distance.
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 159-175
-
-.. code-block:: Python
-
-
-    from scipy.spatial.distance import squareform
-
-    from skrub import compute_ngram_distance
-
-    ngram_distances = compute_ngram_distance(unique_examples)
-    square_distances = squareform(ngram_distances)
-
-    import seaborn as sns
-
-    fig, ax = plt.subplots(figsize=(14, 12))
-    sns.heatmap(
-        square_distances, yticklabels=unique_examples, xticklabels=unique_examples, ax=ax
-    )
-    plt.show()
-
-
-
-
-.. image-sg:: /auto_examples/images/sphx_glr_0050_deduplication_003.png
-   :alt: 0050 deduplication
-   :srcset: /auto_examples/images/sphx_glr_0050_deduplication_003.png
-   :class: sphx-glr-single-img
-
-
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 176-178
-
-We have three clusters appearing - the original medication
-names and their misspellings that form a cluster around them.
-
-.. GENERATED FROM PYTHON SOURCE LINES 180-192
+.. GENERATED FROM PYTHON SOURCE LINES 153-165
 
 Conclusion
 ----------
@@ -337,7 +290,9 @@ or |MinHash|.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 1.281 seconds)
+   **Total running time of the script:** (0 minutes 3.590 seconds)
+
+**Estimated memory usage:**  517 MB
 
 
 .. _sphx_glr_download_auto_examples_0050_deduplication.py:
@@ -349,7 +304,7 @@ or |MinHash|.
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.7.1?urlpath=lab/tree/notebooks/auto_examples/0050_deduplication.ipynb
+        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.7.2?urlpath=lab/tree/notebooks/auto_examples/0050_deduplication.ipynb
         :alt: Launch binder
         :width: 150 px
 

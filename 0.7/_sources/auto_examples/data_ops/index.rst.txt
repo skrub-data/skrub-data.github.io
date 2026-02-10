@@ -117,6 +117,23 @@ Skrub DataOps
     </div>
 
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to wrap a PyTorch model with skorch and plug it into a skrub DataOps plan.">
+
+.. only:: html
+
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1160_pytorch_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/data_ops/1160_pytorch`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Using PyTorch (via skorch) in DataOps</div>
+    </div>
+
+
 .. thumbnail-parent-div-close
 
 .. raw:: html
@@ -133,4 +150,5 @@ Skrub DataOps
    /auto_examples/data_ops/1131_optuna_choices
    /auto_examples/data_ops/1140_subsampling
    /auto_examples/data_ops/1150_use_case
+   /auto_examples/data_ops/1160_pytorch
 

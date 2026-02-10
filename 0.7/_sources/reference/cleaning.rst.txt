@@ -31,3 +31,4 @@ Cleaning a dataframe
   deduplicate
   Cleaner
   DropUninformative
+  to_datetime

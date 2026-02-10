@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.choose_from.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Gallery examples: Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps Tuning DataOps with Optuna" />
+<meta property="og:description" content="Gallery examples: Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps Tuning DataOps with Optuna Using PyTorch (via skorch) in DataOps" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Gallery examples: Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps Tuning DataOps with Optuna" />
+<meta name="description" content="Gallery examples: Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps Tuning DataOps with Optuna Using PyTorch (via skorch) in DataOps" />
 
     <title>choose_from &#8212; skrub</title>
   
@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=5a057da9"></script>
+    <script src="../../_static/documentation_options.js?v=6dfdf7c3"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -78,7 +78,7 @@
     <link rel="prev" title="choose_int" href="skrub.choose_int.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.7.1" />
+  <meta name="docsearch:version" content="0.7.2" />
   </head>
   
   
@@ -212,13 +212,6 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../development.html">
     Development
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -418,13 +411,6 @@
   </a>
 </li>
 
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../CONTRIBUTING.html">
-    Contributing to skrub
-  </a>
-</li>
-
   </ul>
 </nav></div>
           
@@ -543,7 +529,6 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToCategorical.html">ToCategorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DatetimeEncoder.html">DatetimeEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToDatetime.html">ToDatetime</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToFloat.html">ToFloat</a></li>
 </ul>
 </details></li>
@@ -559,6 +544,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.Cleaner.html">Cleaner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropUninformative.html">DropUninformative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -739,7 +725,7 @@
 <h1>choose_from<a class="headerlink" href="#choose-from" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.choose_from">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">choose_from</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outcomes</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c3d53ee/skrub/_data_ops/_choosing.py#L332"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.choose_from" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">choose_from</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outcomes</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/529555b/skrub/_data_ops/_choosing.py#L332"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.choose_from" title="Link to this definition">#</a></dt>
 <dd><p>A choice among several possible outcomes.</p>
 <p>When a learner is used <em>without hyperparameter tuning</em>, the outcome of
 this choice is the first value in the <code class="docutils literal notranslate"><span class="pre">outcomes</span></code> list or dict.</p>
@@ -807,6 +793,9 @@ It is the first outcome in the provided list or dict:</p>
 </div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to use Optuna to tune the hyperparameters of a skrub DataOp. As seen in the previous example, skrub DataOps can contain &quot;choices&quot;, objects created with choose_from, choose_int, choose_float, etc. and we can use hyperparameter search techniques to pick the best outcome for each choice. Performing this search with Optuna allows us to benefit from its many features, such as state-of-the-art search strategies, monitoring and visualization, stopping and resuming searches, and parallel or distributed computation."><img alt="" src="../../_images/sphx_glr_1131_optuna_choices_thumb.svg" />
 <p><a class="reference internal" href="../../auto_examples/data_ops/1131_optuna_choices.html"><span class="doc">Tuning DataOps with Optuna</span></a></p>
   <div class="sphx-glr-thumbnail-title">Tuning DataOps with Optuna</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to wrap a PyTorch model with skorch and plug it into a skrub DataOps plan."><img alt="" src="../../_images/sphx_glr_1160_pytorch_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/data_ops/1160_pytorch.html"><span class="doc">Using PyTorch (via skorch) in DataOps</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Using PyTorch (via skorch) in DataOps</div>
 </div></div></section>
 </section>
 

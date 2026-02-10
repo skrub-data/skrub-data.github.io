@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.ParamSearch.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Gallery examples: Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps" />
+<meta property="og:description" content="Gallery examples: Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps Using PyTorch (via skorch) in DataOps" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Gallery examples: Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps" />
+<meta name="description" content="Gallery examples: Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps Using PyTorch (via skorch) in DataOps" />
 
     <title>ParamSearch &#8212; skrub</title>
   
@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=5a057da9"></script>
+    <script src="../../_static/documentation_options.js?v=6dfdf7c3"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -78,7 +78,7 @@
     <link rel="prev" title="SkrubLearner" href="skrub.SkrubLearner.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.7.1" />
+  <meta name="docsearch:version" content="0.7.2" />
   </head>
   
   
@@ -212,13 +212,6 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../development.html">
     Development
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -418,13 +411,6 @@
   </a>
 </li>
 
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../CONTRIBUTING.html">
-    Contributing to skrub
-  </a>
-</li>
-
   </ul>
 </nav></div>
           
@@ -543,7 +529,6 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToCategorical.html">ToCategorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DatetimeEncoder.html">DatetimeEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToDatetime.html">ToDatetime</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToFloat.html">ToFloat</a></li>
 </ul>
 </details></li>
@@ -559,6 +544,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.Cleaner.html">Cleaner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropUninformative.html">DropUninformative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -739,7 +725,7 @@
 <h1>ParamSearch<a class="headerlink" href="#paramsearch" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.ParamSearch">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">ParamSearch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_op</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c3d53ee/skrub/_data_ops/_estimator.py#L939"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">ParamSearch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_op</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/529555b/skrub/_data_ops/_estimator.py#L939"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch" title="Link to this definition">#</a></dt>
 <dd><p>Learner that evaluates a skrub DataOp with hyperparameter tuning.</p>
 <p>This class is not meant to be instantiated manually, <code class="docutils literal notranslate"><span class="pre">ParamSearch</span></code>
 objects are created by calling <a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html#skrub.DataOp.skb.make_grid_search" title="skrub.DataOp.skb.make_grid_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_grid_search()</span></code></a> or
@@ -788,7 +774,7 @@ score durations.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ParamSearch.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c3d53ee/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L240"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/529555b/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L240"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -809,7 +795,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ParamSearch.plot_results">
-<span class="sig-name descname"><span class="pre">plot_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorscale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bluered'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c3d53ee/skrub/_data_ops/_estimator.py#L881"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch.plot_results" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">plot_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorscale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bluered'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/529555b/skrub/_data_ops/_estimator.py#L881"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch.plot_results" title="Link to this definition">#</a></dt>
 <dd><p>Create a parallel coordinate plot of the cross-validation results.</p>
 <p>Plotly must be installed to use this method.</p>
 <dl class="field-list">
@@ -841,7 +827,7 @@ use of the colorscale’s range.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.ParamSearch.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c3d53ee/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L338"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/529555b/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L338"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ParamSearch.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -873,6 +859,9 @@ possible to update each component of a nested object.</p>
 </div><div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains values or choices which may influence its prediction performance, such as hyperparameters (e.g., the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g., RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g., should we join a table to bring additional information or not)."><img alt="" src="../../_images/sphx_glr_1130_choices_thumb.svg" />
 <p><a class="reference internal" href="../../auto_examples/data_ops/1130_choices.html"><span class="doc">Hyperparameter tuning with DataOps</span></a></p>
   <div class="sphx-glr-thumbnail-title">Hyperparameter tuning with DataOps</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to wrap a PyTorch model with skorch and plug it into a skrub DataOps plan."><img alt="" src="../../_images/sphx_glr_1160_pytorch_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/data_ops/1160_pytorch.html"><span class="doc">Using PyTorch (via skorch) in DataOps</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Using PyTorch (via skorch) in DataOps</div>
 </div></div></section>
 </section>
 

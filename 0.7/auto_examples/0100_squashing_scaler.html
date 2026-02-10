@@ -54,7 +54,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=5a057da9"></script>
+    <script src="../_static/documentation_options.js?v=6dfdf7c3"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -64,7 +64,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -78,7 +78,7 @@
     <link rel="prev" title="Hands-On with Column Selection and Transformers" href="0090_apply_to_cols.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.7.1" />
+  <meta name="docsearch:version" content="0.7.2" />
   </head>
   
   
@@ -212,13 +212,6 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../development.html">
     Development
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -418,13 +411,6 @@
   </a>
 </li>
 
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../CONTRIBUTING.html">
-    Contributing to skrub
-  </a>
-</li>
-
   </ul>
 </nav></div>
           
@@ -545,6 +531,14 @@
 <li class="toctree-l2"><a class="reference internal" href="data_ops/1131_optuna_choices.html">Tuning DataOps with Optuna</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/1140_subsampling.html">Subsampling for faster development</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/1150_use_case.html">Use case: developing locally and deploying to production</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_ops/1160_pytorch.html">Using PyTorch (via skorch) in DataOps</a></li>
+
+
+
+
+
+
+
 </ul>
 </details></li>
 </ul>
@@ -772,7 +766,7 @@ cross-validation.</p>
     <span class="k">with</span> <a href="https://docs.python.org/3/library/warnings.html#warnings.catch_warnings" title="warnings.catch_warnings" class="sphx-glr-backref-module-warnings sphx-glr-backref-type-py-class"><span class="n">warnings</span><span class="o">.</span><span class="n">catch_warnings</span></a><span class="p">():</span>
         <span class="c1"># Ignore warnings about the MLPRegressor not converging</span>
         <a href="https://docs.python.org/3/library/warnings.html#warnings.simplefilter" title="warnings.simplefilter" class="sphx-glr-backref-module-warnings sphx-glr-backref-type-py-function"><span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span></a><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.exceptions.ConvergenceWarning.html#sklearn.exceptions.ConvergenceWarning" title="sklearn.exceptions.ConvergenceWarning" class="sphx-glr-backref-module-sklearn-exceptions sphx-glr-backref-type-py-exception"><span class="n">ConvergenceWarning</span></a><span class="p">)</span>
-        <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="sklearn.model_selection.cross_validate" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_validate</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">data</span><span class="o">.</span><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.core.series.Series" class="sphx-glr-backref-module-pandas-core-series sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">data</span><span class="o">.</span><span class="n">y</span></a><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s2">&quot;r2&quot;</span><span class="p">)</span>
+        <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="sklearn.model_selection.cross_validate" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_validate</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">data</span><span class="o">.</span><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">data</span><span class="o">.</span><span class="n">y</span></a><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s2">&quot;r2&quot;</span><span class="p">)</span>
 
     <span class="nb">print</span><span class="p">(</span>
         <span class="sa">f</span><span class="s2">&quot;Cross-validation R2 scores for </span><span class="si">{</span><a href="../reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">num_transformer</span></a><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2">&quot;</span>
@@ -793,10 +787,11 @@ Cross-validation R2 scores for SquashingScaler (higher is better):
 <p>On the employee salaries dataset, the <a class="reference internal" href="../reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> performs
 better than <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> and <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html#sklearn.preprocessing.QuantileTransformer" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuantileTransformer</span></code></a> on all
 cross-validation folds.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 23.136 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 32.401 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  519 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-0100-squashing-scaler-py">
 <div class="binder-badge docutils container">
-<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.7.1?urlpath=lab/tree/notebooks/auto_examples/0100_squashing_scaler.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/0.7.2?urlpath=lab/tree/notebooks/auto_examples/0100_squashing_scaler.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
 </a>
 </div>
 <div class="lite-badge docutils container">
@@ -928,7 +923,7 @@ cross-validation folds.</p>
     
       
         <div class="sphx-glr-sidebar-item binder-badge-sidebar">
-          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/0.7.1?urlpath=lab/tree/notebooks/auto_examples/0100_squashing_scaler.ipynb">
+          <a href="https://mybinder.org/v2/gh/skrub-data/skrub/0.7.2?urlpath=lab/tree/notebooks/auto_examples/0100_squashing_scaler.ipynb">
             <img src="../_images/binder_badge_logo.svg" alt="Launch binder">
           </a>
         </div>

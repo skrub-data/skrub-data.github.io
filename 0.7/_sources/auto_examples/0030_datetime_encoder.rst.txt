@@ -286,9 +286,9 @@ We convert the dataframe's ``"date"`` column using |ToDatetime|.
 
  .. code-block:: none
 
-    original dtype: object 
+    original dtype: str 
 
-    converted dtype: datetime64[ns]
+    converted dtype: datetime64[us]
 
 
 
@@ -336,7 +336,7 @@ are unimportant here.
     17376   2012-12-31 21:00:00
     17377   2012-12-31 22:00:00
     17378   2012-12-31 23:00:00
-    Name: date, Length: 17379, dtype: datetime64[ns] 
+    Name: date, Length: 17379, dtype: datetime64[us] 
 
     Has been encoded as:
 
@@ -765,7 +765,9 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 5.275 seconds)
+   **Total running time of the script:** (0 minutes 11.271 seconds)
+
+**Estimated memory usage:**  521 MB
 
 
 .. _sphx_glr_download_auto_examples_0030_datetime_encoder.py:
@@ -777,7 +779,7 @@ and transforms datetime columns by default.
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.7.1?urlpath=lab/tree/notebooks/auto_examples/0030_datetime_encoder.ipynb
+        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.7.2?urlpath=lab/tree/notebooks/auto_examples/0030_datetime_encoder.ipynb
         :alt: Launch binder
         :width: 150 px
 

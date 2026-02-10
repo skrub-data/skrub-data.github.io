@@ -52,7 +52,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=5a057da9"></script>
+    <script src="../../_static/documentation_options.js?v=6dfdf7c3"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
@@ -62,7 +62,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.7.2';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -76,7 +76,7 @@
     <link rel="prev" title="skrub.DataOp.skb.make_grid_search" href="skrub.DataOp.skb.make_grid_search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.7.1" />
+  <meta name="docsearch:version" content="0.7.2" />
   </head>
   
   
@@ -210,13 +210,6 @@
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../development.html">
     Development
-  </a>
-</li>
-
-
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../CONTRIBUTING.html">
-    Contributing to skrub
   </a>
 </li>
 
@@ -416,13 +409,6 @@
   </a>
 </li>
 
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../CONTRIBUTING.html">
-    Contributing to skrub
-  </a>
-</li>
-
   </ul>
 </nav></div>
           
@@ -541,7 +527,6 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToCategorical.html">ToCategorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DatetimeEncoder.html">DatetimeEncoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToDatetime.html">ToDatetime</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.ToFloat.html">ToFloat</a></li>
 </ul>
 </details></li>
@@ -557,6 +542,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.Cleaner.html">Cleaner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropUninformative.html">DropUninformative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -737,7 +723,7 @@
 <h1>skrub.DataOp.skb.make_randomized_search<a class="headerlink" href="#skrub-dataop-skb-make-randomized-search" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.make_randomized_search">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">make_randomized_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sklearn'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scoring</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'2*n_jobs'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">nan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_train_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">storage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">study_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sampler</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c3d53ee/skrub/_data_ops/_skrub_namespace.py#L2041"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.make_randomized_search" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">make_randomized_search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">fitted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sklearn'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scoring</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_dispatch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'2*n_jobs'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">nan</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_train_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">storage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">study_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sampler</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/529555b/skrub/_data_ops/_skrub_namespace.py#L2041"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.make_randomized_search" title="Link to this definition">#</a></dt>
 <dd><p>Find the best parameters with randomized search.</p>
 <p>This function returns a <a class="reference internal" href="skrub.ParamSearch.html#skrub.ParamSearch" title="skrub.ParamSearch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamSearch</span></code></a>, an object similar to
 scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomizedSearchCV</span></code></a>, where
@@ -763,7 +749,7 @@ effect).</p>
 <dt><strong>backend</strong><span class="classifier">‘sklearn’ or ‘optuna’ (default=’sklearn’)</span></dt><dd><p>Which library to use for hyperparameter search. The default is
 ‘sklearn’, which uses
 the scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomizedSearchCV</span></code></a>.
-If ‘optuna’, an Optuna <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Study</span></code></a> is used instead
+If ‘optuna’, an Optuna <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Study</span></code></a> is used instead
 and it is possible to choose the sampler and storage.</p>
 </dd>
 <dt><strong>n_iter</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=10</span></dt><dd><p>Number of parameter combinations to try.</p>
@@ -825,7 +811,7 @@ scores on the test set.</p>
 to the usual relational database URLs (e.g.
 <code class="docutils literal notranslate"><span class="pre">'sqlite:///&lt;file_path&gt;'</span></code> ), it can be
 <code class="docutils literal notranslate"><span class="pre">'journal:///&lt;file_path&gt;'</span></code> to use Optuna’s
-<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.storages.JournalStorage.html#optuna.storages.JournalStorage" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">JournalStorage</span></code></a>. See the <a class="reference external" href="https://docs.sqlalchemy.org/en/20/core/engines.html#database-urls">SQLAlchemy
+<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.storages.JournalStorage.html#optuna.storages.JournalStorage" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">JournalStorage</span></code></a>. See the <a class="reference external" href="https://docs.sqlalchemy.org/en/20/core/engines.html#database-urls">SQLAlchemy
 documentation</a>
 for information on how to construct database URLs, which take the
 general form
@@ -836,8 +822,8 @@ study already exists in the provided <code class="docutils literal notranslate">
 is loaded. If None, a random name is generated.</p>
 </dd>
 <dt><strong>sampler</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a> or Optuna sampler, default=None</span></dt><dd><p>The sampler to use when the backend is ‘optuna’. If None, a
-<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.TPESampler.html#optuna.samplers.TPESampler" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TPESampler</span></code></a> is used (the same default as
-<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.create_study.html#optuna.study.create_study" title="(in Optuna v4.6.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_study()</span></code></a>).</p>
+<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.TPESampler.html#optuna.samplers.TPESampler" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TPESampler</span></code></a> is used (the same default as
+<a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.create_study.html#optuna.study.create_study" title="(in Optuna v4.7.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_study()</span></code></a>).</p>
 </dd>
 <dt><strong>timeout</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>, default=None</span></dt><dd><p>Timeout after which no new trials are created. Trials already
 started when reaching the timeout are still completed. If None,
@@ -859,7 +845,7 @@ than processes) regardless of the joblib backend.</p>
 <code class="docutils literal notranslate"><span class="pre">results_</span></code>, <code class="docutils literal notranslate"><span class="pre">plot_results()</span></code>, and <code class="docutils literal notranslate"><span class="pre">best_learner_</span></code>.
 If <code class="docutils literal notranslate"><span class="pre">backend='optuna'</span></code> was used, the returned object is an
 <a class="reference internal" href="skrub.OptunaParamSearch.html#skrub.OptunaParamSearch" title="skrub.OptunaParamSearch"><code class="xref py py-class docutils literal notranslate"><span class="pre">OptunaParamSearch</span></code></a> which additionally has an attribute
-<code class="docutils literal notranslate"><span class="pre">study_</span></code> which is the Optuna <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Study</span></code></a> that
+<code class="docutils literal notranslate"><span class="pre">study_</span></code> which is the Optuna <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Study</span></code></a> that
 performed the hyperparameter optimization.</p>
 </dd>
 </dl>
@@ -870,7 +856,7 @@ performed the hyperparameter optimization.</p>
 <dl class="simple">
 <dt><a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html#skrub.DataOp.skb.make_grid_search" title="skrub.DataOp.skb.make_grid_search"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.DataOp.skb.make_grid_search</span></code></a></dt><dd><p>Find the best parameters with grid search.</p>
 </dd>
-<dt><a class="reference internal" href="skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.DataOp.skb.make_learner</span></code></a></dt><dd><p>Make a <a class="reference internal" href="skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a> without actually searching for the best hyperparameters. The strategy to resolve choices can be use the default value, random, or taking suggestions from an Optuna <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.6.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.trial.Trial</span></code></a>. This allows using Optuna directly, rather than through the <code class="docutils literal notranslate"><span class="pre">make_randomized_search</span></code> interface, for more advanced use cases.</p>
+<dt><a class="reference internal" href="skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.DataOp.skb.make_learner</span></code></a></dt><dd><p>Make a <a class="reference internal" href="skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a> without actually searching for the best hyperparameters. The strategy to resolve choices can be use the default value, random, or taking suggestions from an Optuna <a class="reference external" href="https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial" title="(in Optuna v4.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">optuna.trial.Trial</span></code></a>. This allows using Optuna directly, rather than through the <code class="docutils literal notranslate"><span class="pre">make_randomized_search</span></code> interface, for more advanced use cases.</p>
 </dd>
 </dl>
 </div>
