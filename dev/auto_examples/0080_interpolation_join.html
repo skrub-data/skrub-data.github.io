@@ -882,9 +882,9 @@ to the right side table column names.</p>
       <td>29.7</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>25.862450</td>
-      <td>13.885868</td>
-      <td>-0.019051</td>
+      <td>26.376146</td>
+      <td>14.327316</td>
+      <td>0.037454</td>
     </tr>
     <tr>
       <th>1</th>
@@ -894,9 +894,9 @@ to the right side table column names.</p>
       <td>33.3</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>29.108567</td>
-      <td>20.574347</td>
-      <td>0.128250</td>
+      <td>30.159830</td>
+      <td>17.822834</td>
+      <td>0.218786</td>
     </tr>
     <tr>
       <th>2</th>
@@ -906,9 +906,9 @@ to the right side table column names.</p>
       <td>43.0</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>33.308324</td>
-      <td>25.820881</td>
-      <td>-0.044710</td>
+      <td>33.594542</td>
+      <td>96.161601</td>
+      <td>-0.036895</td>
     </tr>
     <tr>
       <th>3</th>
@@ -918,9 +918,9 @@ to the right side table column names.</p>
       <td>26.4</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>27.407459</td>
-      <td>39.711496</td>
-      <td>0.275419</td>
+      <td>28.362228</td>
+      <td>13.577353</td>
+      <td>0.105098</td>
     </tr>
     <tr>
       <th>4</th>
@@ -930,9 +930,9 @@ to the right side table column names.</p>
       <td>29.1</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>25.856093</td>
-      <td>12.389720</td>
-      <td>0.058656</td>
+      <td>26.270740</td>
+      <td>12.336634</td>
+      <td>0.265214</td>
     </tr>
   </tbody>
 </table>
@@ -945,14 +945,14 @@ to the right side table column names.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 
 <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">join</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sample.html#pandas.DataFrame.sample" title="pandas.DataFrame.sample" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">join</span><span class="o">.</span><span class="n">sample</span></a><span class="p">(</span><span class="mi">2000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure" class="sphx-glr-backref-module-matplotlib-figure sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">fig</span></a><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots" title="matplotlib.pyplot.subplots" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span></a><span class="p">(</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure" class="sphx-glr-backref-module-matplotlib-figure sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">fig</span></a><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">axes</span></a> <span class="o">=</span> <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots" title="matplotlib.pyplot.subplots" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span></a><span class="p">(</span>
     <span class="mi">3</span><span class="p">,</span>
     <span class="mi">1</span><span class="p">,</span>
     <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">),</span>
     <span class="n">gridspec_kw</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;height_ratios&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]},</span>
     <span class="n">layout</span><span class="o">=</span><span class="s2">&quot;compressed&quot;</span><span class="p">,</span>
 <span class="p">)</span>
-<span class="k">for</span> <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes" class="sphx-glr-backref-module-matplotlib-axes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">col</span></a> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="o">.</span><span class="n">ravel</span><span class="p">(),</span> <span class="p">[</span><span class="s2">&quot;TMAX&quot;</span><span class="p">,</span> <span class="s2">&quot;PRCP&quot;</span><span class="p">,</span> <span class="s2">&quot;SNOW&quot;</span><span class="p">]):</span>
+<span class="k">for</span> <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.html#matplotlib.axes.Axes" title="matplotlib.axes.Axes" class="sphx-glr-backref-module-matplotlib-axes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">col</span></a> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">axes</span></a><span class="o">.</span><span class="n">ravel</span><span class="p">(),</span> <span class="p">[</span><span class="s2">&quot;TMAX&quot;</span><span class="p">,</span> <span class="s2">&quot;PRCP&quot;</span><span class="p">,</span> <span class="s2">&quot;SNOW&quot;</span><span class="p">]):</span>
     <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.scatter.html#matplotlib.axes.Axes.scatter" title="matplotlib.axes.Axes.scatter" class="sphx-glr-backref-module-matplotlib-axes sphx-glr-backref-type-py-method"><span class="n">ax</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span>
         <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">join</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">col</span></a><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
         <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">join</span></a><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">col</span></a><span class="si">}</span><span class="s2">_predicted&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
@@ -1052,7 +1052,7 @@ maximum daily temperature.</p>
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>1.152272</td>
+      <td>1.120502</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1064,7 +1064,7 @@ maximum daily temperature.</p>
       <td>PA</td>
       <td>39.871953</td>
       <td>-75.241141</td>
-      <td>10.972870</td>
+      <td>10.589767</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1076,7 +1076,7 @@ maximum daily temperature.</p>
       <td>IL</td>
       <td>41.979595</td>
       <td>-87.904464</td>
-      <td>6.334476</td>
+      <td>4.803738</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1088,7 +1088,7 @@ maximum daily temperature.</p>
       <td>KY</td>
       <td>39.046143</td>
       <td>-84.662172</td>
-      <td>14.928799</td>
+      <td>14.547689</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1100,7 +1100,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>16.891407</td>
+      <td>15.163390</td>
     </tr>
   </tbody>
 </table>
@@ -1121,11 +1121,11 @@ Washington, Minnesota.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -4.262072
-MT    0.902862
-ND    1.152014
-MN    1.414695
-VT    2.386828
+AK   -2.844663
+MT    0.759913
+ND    1.084227
+MN    1.179599
+WA    1.897549
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1135,11 +1135,11 @@ Florida, Louisiana.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AZ    21.405014
-FL    24.514732
-HI    27.608882
-VI    29.576510
-PR    30.285512
+LA    20.966846
+FL    24.845722
+HI    27.584254
+VI    30.475980
+PR    31.168152
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1177,8 +1177,8 @@ would contain, rather than by searching for an actual match. It is a generalizat
 the <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an
 <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor
 estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 24.385 seconds)</p>
-<p><strong>Estimated memory usage:</strong>  1692 MB</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 23.988 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  1830 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-0080-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/0080_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />

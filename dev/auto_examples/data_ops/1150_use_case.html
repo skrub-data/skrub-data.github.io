@@ -692,7 +692,7 @@ should also be contained in a list of dictionaries.</p>
 
 
 <span class="c1"># generate array of 1 and 0 to represent the target variable</span>
-<a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">binomial</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">n_samples</span></a><span class="p">)</span>
+<a href="../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/random/generated/numpy.random.binomial.html#numpy.random.binomial" title="numpy.random.binomial" class="sphx-glr-backref-module-numpy-random sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">binomial</span></a><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">n_samples</span></a><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -829,8 +829,8 @@ the variables of the DataOps plan.</p>
     <a href="../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">loaded_learner</span></a> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 <span class="c1"># ``X_input`` must be passed as a list so that it can be parsed correctly as a dataframe</span>
 <span class="c1"># by Pandas.</span>
-<span class="n">prediction</span> <span class="o">=</span> <a href="../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">loaded_learner</span></a><span class="o">.</span><span class="n">predict</span><span class="p">({</span><span class="s2">&quot;X&quot;</span><span class="p">:</span> <span class="p">[</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_input</span></a><span class="p">]})</span>
-<span class="n">prediction</span>
+<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">prediction</span></a> <span class="o">=</span> <a href="../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">loaded_learner</span></a><span class="o">.</span><span class="n">predict</span><span class="p">({</span><span class="s2">&quot;X&quot;</span><span class="p">:</span> <span class="p">[</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_input</span></a><span class="p">]})</span>
+<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">prediction</span></a>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([1])
@@ -843,8 +843,8 @@ the variables of the DataOps plan.</p>
 and preprocessing done during model development are exactly the same as those done in
 production. This makes deployment straightforward and reduces the risk of errors
 when moving from development to production environments.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 8.954 seconds)</p>
-<p><strong>Estimated memory usage:</strong>  502 MB</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 8.365 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  590 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-data-ops-1150-use-case-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/data_ops/1150_use_case.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo1.svg" style="width: 150px;" />
