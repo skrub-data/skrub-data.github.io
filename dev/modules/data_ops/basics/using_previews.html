@@ -679,6 +679,24 @@ one example dataset.</p>
 </div>
 <p>It is not necessary to provide a value for every variable: it is however advisable
 to do so when possible, as it allows to catch errors early on.</p>
+<section id="disabling-previews-and-eager-checks">
+<h2>Disabling previews and eager checks<a class="headerlink" href="#disabling-previews-and-eager-checks" title="Link to this heading">#</a></h2>
+<p>By default, as soon as a DataOp is defined, some validity checks are performed
+and the preview results are computed eagerly. In very complex DataOps plans
+(100+ nodes), running checks after adding each node can cause a noticeable overhead.
+To avoid this, it is possible to disable eager checks with the <code class="docutils literal notranslate"><span class="pre">&quot;eager_data_ops&quot;</span></code>
+is easily achieved with the <code class="docutils literal notranslate"><span class="pre">&quot;eager_data_ops&quot;</span></code> <a class="reference internal" href="../../configuration_and_utils/customizing_configuration.html#user-guide-configuration-parameters"><span class="std std-ref">configuration</span></a> option.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">skrub</span><span class="o">.</span><span class="n">config_context</span><span class="p">(</span><span class="n">eager_data_ops</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="c1"># no checks are performed when b is defined so no error in the line below:</span>
+<span class="gp">... </span>    <span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="c1"># checks are still performed (once) before the DataOp is actually used so</span>
+<span class="gp">... </span>    <span class="c1"># evaluating the DataOp, using .skb.make_learner() etc _would_ still raise:</span>
+<span class="gp">... </span>    <span class="c1"># b.skb.eval() ## raises ValueError: Choice and node names must be unique.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="c1"># Note there is no preview, even though we provided values for the variables</span>
+<span class="go">&lt;BinOp: add&gt;</span>
+</pre></div>
+</div>
+</section>
 </section>
 
 
@@ -719,6 +737,18 @@ to do so when possible, as it allows to catch errors early on.</p>
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disabling-previews-and-eager-checks">Disabling previews and eager checks</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
   <div role="note" aria-label="source link">

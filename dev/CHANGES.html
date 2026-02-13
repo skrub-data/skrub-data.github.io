@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing Development: New features: Changes: Bugfixes: Release 0.7.2: Changes: The StringEncoder now exposes the vocabulary parameter from the parent TfidfVectorizer.#1819 by Eloi Massoulié, compute..." />
+<meta property="og:description" content="Ongoing Development: New features: The eager_data_ops configuration option has been added. When set to False, no previews are computed and validation is deferred until the DataOp is actually used (..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing Development: New features: Changes: Bugfixes: Release 0.7.2: Changes: The StringEncoder now exposes the vocabulary parameter from the parent TfidfVectorizer.#1819 by Eloi Massoulié, compute..." />
+<meta name="description" content="Ongoing Development: New features: The eager_data_ops configuration option has been added. When set to False, no previews are computed and validation is deferred until the DataOp is actually used (..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -563,6 +563,15 @@
 <h2>Ongoing Development<a class="headerlink" href="#ongoing-development" title="Link to this heading">#</a></h2>
 <section id="new-features">
 <h3>New features<a class="headerlink" href="#new-features" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">eager_data_ops</span></code> <a class="reference internal" href="modules/configuration_and_utils/customizing_configuration.html#user-guide-configuration-parameters"><span class="std std-ref">configuration</span></a> option has been added. When set to
+False, no previews are computed and validation is deferred until the DataOp is
+actually used (e.g. with <code class="docutils literal notranslate"><span class="pre">.skb.eval()</span></code>) rather than as soon as it is
+defined. This can make the definition of complex DataOps with many nodes
+faster (the overhead it removes typically becomes noticeable only in DataOps
+with 50-100 nodes or more). Moreover, the evaluation of large DataOps has also
+become faster. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1890">#1890</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+</ul>
 </section>
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>

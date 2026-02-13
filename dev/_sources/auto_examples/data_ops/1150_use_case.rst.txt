@@ -377,9 +377,9 @@ when moving from development to production environments.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 8.633 seconds)
+   **Total running time of the script:** (0 minutes 7.830 seconds)
 
-**Estimated memory usage:**  603 MB
+**Estimated memory usage:**  599 MB
 
 
 .. _sphx_glr_download_auto_examples_data_ops_1150_use_case.py:
