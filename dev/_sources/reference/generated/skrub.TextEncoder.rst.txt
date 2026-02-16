@@ -9,6 +9,6 @@
    :special-members: __call__
    :exclude-members: get_metadata_routing, set_fit_request
 
-.. minigallery:: skrub.TextEncoder skrub.TextEncoder.__init__ skrub.TextEncoder.fit skrub.TextEncoder.fit_transform skrub.TextEncoder.get_feature_names_out skrub.TextEncoder.get_metadata_routing skrub.TextEncoder.get_params skrub.TextEncoder.set_fit_request skrub.TextEncoder.set_params skrub.TextEncoder.set_transform_request skrub.TextEncoder.transform 
+.. minigallery:: skrub.TextEncoder skrub.TextEncoder.__init__ skrub.TextEncoder.fit skrub.TextEncoder.fit_transform skrub.TextEncoder.get_feature_names_out skrub.TextEncoder.get_metadata_routing skrub.TextEncoder.get_params skrub.TextEncoder.set_fit_request skrub.TextEncoder.set_output skrub.TextEncoder.set_params skrub.TextEncoder.set_transform_request skrub.TextEncoder.transform 
    :add-heading: Gallery examples
    :heading-level: -

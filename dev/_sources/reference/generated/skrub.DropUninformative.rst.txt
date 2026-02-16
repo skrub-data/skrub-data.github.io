@@ -9,6 +9,6 @@
    :special-members: __call__
    :exclude-members: get_metadata_routing, set_fit_request
 
-.. minigallery:: skrub.DropUninformative skrub.DropUninformative.__init__ skrub.DropUninformative.fit skrub.DropUninformative.fit_transform skrub.DropUninformative.get_feature_names_out skrub.DropUninformative.get_metadata_routing skrub.DropUninformative.get_params skrub.DropUninformative.set_fit_request skrub.DropUninformative.set_params skrub.DropUninformative.set_transform_request skrub.DropUninformative.transform 
+.. minigallery:: skrub.DropUninformative skrub.DropUninformative.__init__ skrub.DropUninformative.fit skrub.DropUninformative.fit_transform skrub.DropUninformative.get_feature_names_out skrub.DropUninformative.get_metadata_routing skrub.DropUninformative.get_params skrub.DropUninformative.set_fit_request skrub.DropUninformative.set_output skrub.DropUninformative.set_params skrub.DropUninformative.set_transform_request skrub.DropUninformative.transform 
    :add-heading: Gallery examples
    :heading-level: -

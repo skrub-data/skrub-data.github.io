@@ -9,6 +9,6 @@
    :special-members: __call__
    :exclude-members: get_metadata_routing, set_fit_request
 
-.. minigallery:: skrub.DatetimeEncoder skrub.DatetimeEncoder.__init__ skrub.DatetimeEncoder.fit skrub.DatetimeEncoder.fit_transform skrub.DatetimeEncoder.get_feature_names_out skrub.DatetimeEncoder.get_metadata_routing skrub.DatetimeEncoder.get_params skrub.DatetimeEncoder.set_fit_request skrub.DatetimeEncoder.set_params skrub.DatetimeEncoder.set_transform_request skrub.DatetimeEncoder.transform 
+.. minigallery:: skrub.DatetimeEncoder skrub.DatetimeEncoder.__init__ skrub.DatetimeEncoder.fit skrub.DatetimeEncoder.fit_transform skrub.DatetimeEncoder.get_feature_names_out skrub.DatetimeEncoder.get_metadata_routing skrub.DatetimeEncoder.get_params skrub.DatetimeEncoder.set_fit_request skrub.DatetimeEncoder.set_output skrub.DatetimeEncoder.set_params skrub.DatetimeEncoder.set_transform_request skrub.DatetimeEncoder.transform 
    :add-heading: Gallery examples
    :heading-level: -
