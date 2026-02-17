@@ -1226,7 +1226,7 @@ The results:
  .. code-block:: none
 
 
-    0.5816
+    0.5552
 
 
 
@@ -1244,9 +1244,9 @@ Our final cross-validated accuracy score is 0.55.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 44.728 seconds)
+   **Total running time of the script:** (0 minutes 30.682 seconds)
 
-**Estimated memory usage:**  2427 MB
+**Estimated memory usage:**  2342 MB
 
 
 .. _sphx_glr_download_auto_examples_0060_multiple_key_join.py:
