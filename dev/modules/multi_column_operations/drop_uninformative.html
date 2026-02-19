@@ -696,8 +696,8 @@ accept the same parameters for dropping columns.</p>
 <section id="applying-dropuninformative-only-to-a-subset-of-columns">
 <h1>Applying <a class="reference internal" href="../../reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a> only to a subset of columns<a class="headerlink" href="#applying-dropuninformative-only-to-a-subset-of-columns" title="Link to this heading">#</a></h1>
 <p>You can apply the <a class="reference internal" href="../../reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a> transformer to specific columns using
-<a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToCols</span>
+<a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToEachCol</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
 <span class="gp">... </span><span class="s2">&quot;id_to_drop&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A1&quot;</span><span class="p">,</span> <span class="s2">&quot;A2&quot;</span><span class="p">,</span> <span class="s2">&quot;A3&quot;</span><span class="p">],</span>
 <span class="gp">... </span><span class="s2">&quot;text_to_keep&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="p">]</span>
@@ -717,10 +717,10 @@ accept the same parameters for dropping columns.</p>
 <span class="go">Index: [0, 1, 2]</span>
 </pre></div>
 </div>
-<p>To apply the transformer only to the <code class="docutils literal notranslate"><span class="pre">id_to_drop</span></code> column, use <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">cleaner</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="s2">&quot;id_to_drop&quot;</span><span class="p">)</span>
-<span class="go">ApplyToCols(cols=&#39;id_to_drop&#39;, transformer=Cleaner(drop_if_unique=True))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">cleaner</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="s2">&quot;id_to_drop&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<p>To apply the transformer only to the <code class="docutils literal notranslate"><span class="pre">id_to_drop</span></code> column, use <a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">cleaner</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="s2">&quot;id_to_drop&quot;</span><span class="p">)</span>
+<span class="go">ApplyToEachCol(cols=&#39;id_to_drop&#39;, transformer=Cleaner(drop_if_unique=True))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">cleaner</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="s2">&quot;id_to_drop&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">  text_to_keep</span>
 <span class="go">0          foo</span>
 <span class="go">1          bar</span>
@@ -728,7 +728,7 @@ accept the same parameters for dropping columns.</p>
 </pre></div>
 </div>
 <p>For more advanced filtering operations, refer to the User Guide on
-<a class="reference internal" href="selectors.html#user-guide-selectors"><span class="std std-ref">Skrub Selectors, for selecting columns in a dataframe</span></a> and the <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> documentation for details
+<a class="reference internal" href="selectors.html#user-guide-selectors"><span class="std std-ref">Skrub Selectors, for selecting columns in a dataframe</span></a> and the <a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> documentation for details
 on applying transformers to specific columns.</p>
 </section>
 

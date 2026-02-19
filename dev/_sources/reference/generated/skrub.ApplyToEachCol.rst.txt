@@ -1,0 +1,14 @@
+﻿ApplyToEachCol
+==============
+
+.. currentmodule:: skrub
+
+.. autoclass:: ApplyToEachCol
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.ApplyToEachCol skrub.ApplyToEachCol.__init__ skrub.ApplyToEachCol.fit skrub.ApplyToEachCol.fit_transform skrub.ApplyToEachCol.get_feature_names_out skrub.ApplyToEachCol.get_metadata_routing skrub.ApplyToEachCol.get_params skrub.ApplyToEachCol.set_output skrub.ApplyToEachCol.set_params skrub.ApplyToEachCol.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

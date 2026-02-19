@@ -33,5 +33,5 @@ See :ref:`End-to-End pipeline <user_guide_building_pipeline_index>` for further 
   TableVectorizer
   SelectCols
   DropCols
-  ApplyToCols
-  ApplyToFrame
+  ApplyToEachCol
+  ApplyToSubFrame

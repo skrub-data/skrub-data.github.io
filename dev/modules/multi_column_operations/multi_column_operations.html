@@ -647,11 +647,11 @@ option in all cases. In scikit-learn pipelines, the column selection operation c
 is done with the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.compose.ColumnTransformer</span></code></a>.</p>
 <p>Skrub provides alternative transformers that can achieve the same results:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> maps a transformer to columns in a dataframe, so that all
+<li><p><a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> maps a transformer to columns in a dataframe, so that all
 columns that satisfy a certain condition are transformed, while the others are
 left untouched.</p></li>
-<li><p><a class="reference internal" href="../../reference/generated/skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a> applies a transformer to a collection of columns <em>at once</em>.
-This is different from <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>, which instead transforms each column
+<li><p><a class="reference internal" href="../../reference/generated/skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a> applies a transformer to a collection of columns <em>at once</em>.
+This is different from <a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a>, which instead transforms each column
 one at a time.</p></li>
 <li><p><a class="reference internal" href="../../reference/generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectCols</span></code></a> allows specifying which columns should be kept.</p></li>
 <li><p><a class="reference internal" href="../../reference/generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropCols</span></code></a> allows specifying the columns we want to discard.</p></li>
@@ -663,20 +663,20 @@ for more details.</p>
 <p>All multi-column transformers provided by skrub can take skrub selectors as
 parameters to have more control over the columns that are being transformed.
 Skrub selectors are discussed at length in <a class="reference internal" href="selectors.html#user-guide-selectors"><span class="std std-ref">Skrub Selectors, for selecting columns in a dataframe</span></a>.</p>
-<section id="applying-transformations-to-the-columns-with-applytocols-and-applytoframe">
-<h2>Applying transformations to the columns with <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a><a class="headerlink" href="#applying-transformations-to-the-columns-with-applytocols-and-applytoframe" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> can be used to transform a subset of columns in a dataframe, while
+<section id="applying-transformations-to-the-columns-with-applytoeachcol-and-applytosubframe">
+<h2>Applying transformations to the columns with <a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a><a class="headerlink" href="#applying-transformations-to-the-columns-with-applytoeachcol-and-applytosubframe" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> can be used to transform a subset of columns in a dataframe, while
 leaving the remaining columns unchanged. It simplifies operations such as the
-example above, which can be rewritten with <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> as follows:</p>
+example above, which can be rewritten with <a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> as follows:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub.selectors</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">s</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToCols</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToEachCol</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">OneHotEncoder</span><span class="p">,</span> <span class="n">StandardScaler</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="p">],</span> <span class="s2">&quot;number&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]})</span>
 <span class="gp">&gt;&gt;&gt;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">numeric</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">())</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">string</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">sparse_output</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numeric</span> <span class="o">=</span> <span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">string</span> <span class="o">=</span> <span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">sparse_output</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">numeric</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span>
@@ -686,7 +686,7 @@ example above, which can be rewritten with <a class="reference internal" href=".
 <span class="go">2       0.0       1.0       0.0  1.224745</span>
 </pre></div>
 </div>
-<p><a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> can raise a <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> exception if it cannot handle a specific
+<p><a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> can raise a <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> exception if it cannot handle a specific
 column:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub._to_datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToDatetime</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">birthday</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;29/01/2024&quot;</span><span class="p">],</span> <span class="n">city</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;London&quot;</span><span class="p">]))</span>
@@ -710,7 +710,7 @@ column:</p>
 parameter.
 By default, no special handling is performed and rejections are considered
 to be errors:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">())</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
@@ -722,7 +722,7 @@ control over which columns it should be applied to. For example, whether a
 string column contains dates is only known once we try to parse them.
 Therefore it might be sensible to try to parse all string columns but allow
 the transformer to reject those that, upon inspection, do not contain dates.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">allow_reject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">allow_reject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span> <span class="o">=</span> <span class="n">to_datetime</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span>
 <span class="go">    birthday    city</span>
@@ -738,7 +738,7 @@ datetime column.</p>
 <span class="go">dtype: ...</span>
 </pre></div>
 </div>
-<p><a class="reference internal" href="../../reference/generated/skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a> is instead used in cases where multiple columns should be transformed
+<p><a class="reference internal" href="../../reference/generated/skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a> is instead used in cases where multiple columns should be transformed
 at once. This is the case when the transformer is expecting multiple columns at
 once, e.g., to perform dimensionality reduction:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -753,12 +753,12 @@ once, e.g., to perform dimensionality reduction:</p>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.decomposition</span><span class="w"> </span><span class="kn">import</span> <span class="n">PCA</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToFrame</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToSubFrame</span>
 </pre></div>
 </div>
 <p>Like with the other transformers described here, it is possible to limit the
 transformations to a subset of columns:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span> <span class="o">=</span> <span class="n">ApplyToFrame</span><span class="p">(</span><span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">])</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span> <span class="o">=</span> <span class="n">ApplyToSubFrame</span><span class="p">(</span><span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <span class="go">       c       d  pca0  pca1</span>
 <span class="go">0    0.0     0.0 -2.52  0.67</span>
@@ -767,12 +767,12 @@ transformations to a subset of columns:</p>
 <span class="go">3    0.0  1000.0 -2.49 -0.33</span>
 </pre></div>
 </div>
-<p>By default, <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a> rename the transformed columns, and
+<p>By default, <a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a> rename the transformed columns, and
 remove the original features from the data. It is possible to rename the columns
 by providing a formatting string to the <code class="docutils literal notranslate"><span class="pre">rename_columns</span></code> parameter:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">A</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">10.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">],</span> <span class="n">B</span><span class="o">=</span><span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">100.</span><span class="p">]))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">scaler</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">rename_columns</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">_scaled&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">scaler</span> <span class="o">=</span> <span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">rename_columns</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">_scaled&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">    A_scaled  B_scaled</span>
 <span class="go">0      -1.0      -1.0</span>
@@ -782,7 +782,7 @@ by providing a formatting string to the <code class="docutils literal notranslat
 <p>By setting <code class="docutils literal notranslate"><span class="pre">keep_original=True</span></code>, the starting columns are not dropped from the
 transformed dataframe. The <code class="docutils literal notranslate"><span class="pre">rename_columns</span></code> parameter can be used to avoid
 name collisions:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scaler</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scaler</span> <span class="o">=</span> <span class="n">ApplyToEachCol</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">keep_original</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">rename_columns</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">_scaled&quot;</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -841,7 +841,7 @@ name collisions:</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-transformations-to-the-columns-with-applytocols-and-applytoframe">Applying transformations to the columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-transformations-to-the-columns-with-applytoeachcol-and-applytosubframe">Applying transformations to the columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a></li>
 </ul>
   </nav></div>
 

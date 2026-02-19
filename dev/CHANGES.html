@@ -575,6 +575,11 @@ become faster. <a class="reference external" href="https://github.com/skrub-data
 </section>
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ApplyToCols</span></code> and <code class="docutils literal notranslate"><span class="pre">ApplyToFrame</span></code> have been renamed <a class="reference internal" href="reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a>
+and <a class="reference internal" href="reference/generated/skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a> respectively.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1913">#1913</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+</ul>
 </section>
 <section id="bug-fixes">
 <h3>Bug Fixes<a class="headerlink" href="#bug-fixes" title="Link to this heading">#</a></h3>
@@ -750,8 +755,8 @@ removed in the next release of skrub.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1607">#1607</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 <li><p>The accepted values for the parameter <code class="docutils literal notranslate"><span class="pre">how</span></code> of <a class="reference internal" href="reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.apply()</span></code></a> have
 changed. The new values are <code class="docutils literal notranslate"><span class="pre">&quot;auto&quot;</span></code> (unchanged), <code class="docutils literal notranslate"><span class="pre">&quot;cols&quot;</span></code> to wrap the
-transformer in <a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>, <code class="docutils literal notranslate"><span class="pre">&quot;frame&quot;</span></code> to wrap the transformer in
-<a class="reference internal" href="reference/generated/skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a>, or <code class="docutils literal notranslate"><span class="pre">&quot;no_wrap&quot;</span></code> for no wrapping. The old values are
+transformer in <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;frame&quot;</span></code> to wrap the transformer in
+<code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;no_wrap&quot;</span></code> for no wrapping. The old values are
 deprecated and will result in an error in a future release.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1628">#1628</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>The parameter <code class="docutils literal notranslate"><span class="pre">splitter</span></code> of <a class="reference internal" href="reference/generated/skrub.DataOp.skb.train_test_split.html#skrub.DataOp.skb.train_test_split" title="skrub.DataOp.skb.train_test_split"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.train_test_split()</span></code></a> has been
@@ -831,7 +836,7 @@ now supported directly. It is now
 possible to skip computing column associations and generating plots when the
 number of columns in the dataframe exceeds a user-defined threshold. Columns with
 high cardinality and sorted columns are now highlighted in the report.</p></li>
-<li><p><a class="reference external" href="https://docs.python.org/3/library/selectors.html#module-selectors" title="(in Python v3.14)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">selectors</span></code></a>, <a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> and <a class="reference internal" href="reference/generated/skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a> are now available,
+<li><p><a class="reference external" href="https://docs.python.org/3/library/selectors.html#module-selectors" title="(in Python v3.14)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">selectors</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code> are now available,
 providing utilities for selecting columns to which a transformer should be applied
 in a flexible way. For more details, see the <a class="reference internal" href="modules/multi_column_operations/selectors.html#user-guide-selectors"><span class="std std-ref">User guide</span></a>
 and the <a class="reference internal" href="auto_examples/0090_apply_to_cols.html#sphx-glr-auto-examples-0090-apply-to-cols-py"><span class="std std-ref">example</span></a>.</p></li>
@@ -885,7 +890,7 @@ with neural networks. <a class="reference external" href="https://github.com/skr
 <li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">datasets.toy_order()</span></code> is now available to create a toy dataframe and
 corresponding targets for examples.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1485">#1485</a> by <a class="reference external" href="https://github.com/canag">Antoine Canaguier-Durand</a>.</p></li>
-<li><p><a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> and <a class="reference internal" href="reference/generated/skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a> are now available to apply transformers
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code> are now available to apply transformers
 on a set of columns independently and jointly respectively.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1478">#1478</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a>.</p></li>
 </ul>

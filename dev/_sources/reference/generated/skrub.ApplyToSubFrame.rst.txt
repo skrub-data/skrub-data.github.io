@@ -1,0 +1,14 @@
+﻿ApplyToSubFrame
+===============
+
+.. currentmodule:: skrub
+
+.. autoclass:: ApplyToSubFrame
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.ApplyToSubFrame skrub.ApplyToSubFrame.__init__ skrub.ApplyToSubFrame.fit skrub.ApplyToSubFrame.fit_transform skrub.ApplyToSubFrame.get_feature_names_out skrub.ApplyToSubFrame.get_metadata_routing skrub.ApplyToSubFrame.get_params skrub.ApplyToSubFrame.set_output skrub.ApplyToSubFrame.set_params skrub.ApplyToSubFrame.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

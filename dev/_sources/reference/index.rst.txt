@@ -55,10 +55,10 @@ Building a pipeline
   DropCols
 
 
-  ApplyToCols
+  ApplyToEachCol
 
 
-  ApplyToFrame
+  ApplyToSubFrame
 
 
 

@@ -514,8 +514,8 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToCols.html">ApplyToCols</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToFrame.html">ApplyToFrame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToEachCol.html">ApplyToEachCol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToSubFrame.html">ApplyToSubFrame</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../encoders.html">encoders</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -723,7 +723,7 @@
 <h1>skrub.DataOp.skb.iter_learners_randomized<a class="headerlink" href="#skrub-dataop-skb-iter-learners-randomized" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.iter_learners_randomized">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">iter_learners_randomized</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_iter</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2c2cb64/skrub/_data_ops/_skrub_namespace.py#L2452"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.iter_learners_randomized" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">iter_learners_randomized</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_iter</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/7b14b69/skrub/_data_ops/_skrub_namespace.py#L2452"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.iter_learners_randomized" title="Link to this definition">#</a></dt>
 <dd><p>Get learners with different parameter combinations.</p>
 <p>This generator yields a <a class="reference internal" href="skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a> parametrized for each
 possible combination of choices.</p>

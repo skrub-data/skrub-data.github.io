@@ -516,8 +516,8 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToCols.html">ApplyToCols</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToFrame.html">ApplyToFrame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToEachCol.html">ApplyToEachCol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToSubFrame.html">ApplyToSubFrame</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../encoders.html">encoders</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -725,7 +725,7 @@
 <h1>SkrubLearner<a class="headerlink" href="#skrublearner" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.SkrubLearner">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">SkrubLearner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_op</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2c2cb64/skrub/_data_ops/_estimator.py#L94"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">SkrubLearner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_op</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/7b14b69/skrub/_data_ops/_estimator.py#L94"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner" title="Link to this definition">#</a></dt>
 <dd><p>Learner that evaluates a skrub DataOp.</p>
 <p>This class is not meant to be instantiated manually, <code class="docutils literal notranslate"><span class="pre">SkrubLearner</span></code>
 objects are created by calling <a class="reference internal" href="skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_learner()</span></code></a> on a
@@ -764,7 +764,7 @@ DataOp.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.describe_params">
-<span class="sig-name descname"><span class="pre">describe_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2c2cb64/skrub/_data_ops/_estimator.py#L449"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.describe_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">describe_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/7b14b69/skrub/_data_ops/_estimator.py#L449"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.describe_params" title="Link to this definition">#</a></dt>
 <dd><p>Describe parameters for this learner.</p>
 <p>Returns a human-readable description (in form of a dict) of the
 parameters (outcomes of <cite>choose_*</cite> objects contained in the
@@ -773,7 +773,7 @@ DataOp).</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.find_fitted_estimator">
-<span class="sig-name descname"><span class="pre">find_fitted_estimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2c2cb64/skrub/_data_ops/_estimator.py#L245"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.find_fitted_estimator" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">find_fitted_estimator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/7b14b69/skrub/_data_ops/_estimator.py#L245"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.find_fitted_estimator" title="Link to this definition">#</a></dt>
 <dd><p>Find the scikit-learn estimator that has been fitted in a <code class="docutils literal notranslate"><span class="pre">.skb.apply()</span></code> step.</p>
 <p>This can be useful for example to inspect the fitted attributes of the
 estimator. The <code class="docutils literal notranslate"><span class="pre">apply</span></code> step must have been given a name with
@@ -789,7 +789,7 @@ been fitted.</p>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>scikit-learn estimator</dt><dd><p>The fitted estimator. Depending on the nature of the estimator it
-may be wrapped in a <code class="docutils literal notranslate"><span class="pre">skrub.ApplyToCols</span></code> or <code class="docutils literal notranslate"><span class="pre">skrub.ApplyToFrame</span></code>,
+may be wrapped in a <code class="docutils literal notranslate"><span class="pre">skrub.ApplyToEachCol</span></code> or <code class="docutils literal notranslate"><span class="pre">skrub.ApplyToSubFrame</span></code>,
 see examples below.</p>
 </dd>
 </dl>
@@ -841,7 +841,7 @@ dataframe. In other cases it may be applied without any wrapping. We
 provide examples for those 3 different cases below.</p>
 <p>Case 1: the <code class="docutils literal notranslate"><span class="pre">StringEncoder</span></code> is a skrub single-column transformer: it
 transforms a single column. In the learner it gets wrapped in a
-<a class="reference internal" href="skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> which independently fits a separate instance of the
+<a class="reference internal" href="skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> which independently fits a separate instance of the
 <code class="docutils literal notranslate"><span class="pre">StringEncoder</span></code> to each of the columns it transforms (in this case there is
 only one column, <code class="docutils literal notranslate"><span class="pre">'product'</span></code>). The individual transformers can be found in the
 fitted attribute <code class="docutils literal notranslate"><span class="pre">transformers_</span></code> which maps column names to the corresponding
@@ -853,24 +853,24 @@ fitted transformer.</p>
 <span class="go">{&#39; pe&#39;: 2, &#39;pen&#39;: 12, &#39;en &#39;: 8, &#39; pen&#39;: 3, &#39;pen &#39;: 13, &#39; cu&#39;: 0, &#39;cup&#39;: 6, &#39;up &#39;: 18, &#39; cup&#39;: 1, &#39;cup &#39;: 7, &#39; sp&#39;: 4, &#39;spo&#39;: 16, &#39;poo&#39;: 14, &#39;oon&#39;: 10, &#39;on &#39;: 9, &#39; spo&#39;: 5, &#39;spoo&#39;: 17, &#39;poon&#39;: 15, &#39;oon &#39;: 11}</span>
 </pre></div>
 </div>
-<p>This case (wrapping in <a class="reference internal" href="skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>) happens when the estimator is a skrub
+<p>This case (wrapping in <a class="reference internal" href="skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a>) happens when the estimator is a skrub
 single-column transformer (it has a <code class="docutils literal notranslate"><span class="pre">__single_column_transformer__</span></code>
 attribute), we pass <code class="docutils literal notranslate"><span class="pre">.skb.apply(how='cols')</span></code> or we pass
 <code class="docutils literal notranslate"><span class="pre">.skb.apply(allow_reject=True)</span></code>.</p>
 <p>Case 2: the <code class="docutils literal notranslate"><span class="pre">PCA</span></code> is a regular scikit-learn transformer. In the learner it
-gets wrapped in a <a class="reference internal" href="skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a> which applies it to the subset of columns
+gets wrapped in a <a class="reference internal" href="skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a> which applies it to the subset of columns
 in the dataframe selected by the <code class="docutils literal notranslate"><span class="pre">cols</span></code> argument passed to <code class="docutils literal notranslate"><span class="pre">.skb.apply()</span></code>.
 The fitted <code class="docutils literal notranslate"><span class="pre">PCA</span></code> can be found in the fitted attribute <code class="docutils literal notranslate"><span class="pre">transformer_</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">find_fitted_estimator</span><span class="p">(</span><span class="s1">&#39;pca&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span>
-<span class="go">ApplyToFrame(cols=glob(&#39;date_*&#39;), transformer=PCA(n_components=2))</span>
+<span class="go">ApplyToSubFrame(cols=glob(&#39;date_*&#39;), transformer=PCA(n_components=2))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span><span class="o">.</span><span class="n">transformer_</span>
 <span class="go">PCA(n_components=2)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span><span class="o">.</span><span class="n">transformer_</span><span class="o">.</span><span class="n">mean_</span>
 <span class="go">array([2020.,    4.,    4.], dtype=float32)</span>
 </pre></div>
 </div>
-<p>This case (wrapping in <a class="reference internal" href="skrub.ApplyToFrame.html#skrub.ApplyToFrame" title="skrub.ApplyToFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code></a>) happens when the estimator is a
+<p>This case (wrapping in <a class="reference internal" href="skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a>) happens when the estimator is a
 scikit-learn transformer but not a single-column transformer, or we
 pass <code class="docutils literal notranslate"><span class="pre">.skb.apply(how='frame')</span></code>.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">DummyRegressor</span></code> is a scikit-learn predictor. In the learner it gets
@@ -889,7 +889,7 @@ we pass <code class="docutils literal notranslate"><span class="pre">.skb.apply(
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2c2cb64/skrub/_data_ops/_estimator.py#L208"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/7b14b69/skrub/_data_ops/_estimator.py#L208"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -910,7 +910,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.report">
-<span class="sig-name descname"><span class="pre">report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">full_report_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2c2cb64/skrub/_data_ops/_estimator.py#L125"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.report" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">environment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">full_report_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/7b14b69/skrub/_data_ops/_estimator.py#L125"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.report" title="Link to this definition">#</a></dt>
 <dd><p>Call the method specified by <code class="docutils literal notranslate"><span class="pre">mode</span></code> and return the result and full report.</p>
 <p>See <a class="reference internal" href="skrub.DataOp.skb.full_report.html#skrub.DataOp.skb.full_report" title="skrub.DataOp.skb.full_report"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.full_report()</span></code></a> for more information.</p>
 <dl class="field-list">
@@ -973,7 +973,7 @@ the ‘predict’ method:</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2c2cb64/skrub/_data_ops/_estimator.py#L215"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/7b14b69/skrub/_data_ops/_estimator.py#L215"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -997,7 +997,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SkrubLearner.truncated_after">
-<span class="sig-name descname"><span class="pre">truncated_after</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/2c2cb64/skrub/_data_ops/_estimator.py#L374"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.truncated_after" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">truncated_after</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/7b14b69/skrub/_data_ops/_estimator.py#L374"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SkrubLearner.truncated_after" title="Link to this definition">#</a></dt>
 <dd><p>Extract the part of the learner that leads up to the given step.</p>
 <p>This is similar to slicing a scikit-learn pipeline. It can be useful
 for example to drive the hyperparameter selection with a supervised
@@ -1063,7 +1063,7 @@ scikit-learn estimator that has been fitted inside of a single step.</p>
 <code class="docutils literal notranslate"><span class="pre">TableVectorizer</span></code> that was fitted inside of the <code class="docutils literal notranslate"><span class="pre">&quot;vectorizer&quot;</span></code>
 step:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">find_fitted_estimator</span><span class="p">(</span><span class="s2">&quot;vectorizer&quot;</span><span class="p">)</span>
-<span class="go">ApplyToFrame(transformer=TableVectorizer(datetime=DatetimeEncoder(add_total_seconds=False)))</span>
+<span class="go">ApplyToSubFrame(transformer=TableVectorizer(datetime=DatetimeEncoder(add_total_seconds=False)))</span>
 </pre></div>
 </div>
 </dd></dl>
