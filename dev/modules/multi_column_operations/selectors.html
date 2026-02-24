@@ -748,27 +748,31 @@ name, data type, contents, or according to arbitrary user-provided rules:</p>
 <h2>Combining selectors<a class="headerlink" href="#combining-selectors" title="Link to this heading">#</a></h2>
 <p>The available operators are <code class="docutils literal notranslate"><span class="pre">|</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">^</span></code> with the meaning of usual
 python sets, and <code class="docutils literal notranslate"><span class="pre">~</span></code> to invert a selection:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">height_mm  width_mm</span>
 <span class="go">0      297.0     210.0</span>
 <span class="go">1      420.0     297.0</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">kind  ID</span>
 <span class="go">0   A4   4</span>
 <span class="go">1   A3   3</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">height_mm  width_mm  ID</span>
 <span class="go">0      297.0     210.0   4</span>
 <span class="go">1      420.0     297.0   3</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;height_*&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;height_*&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">height_mm</span>
 <span class="go">0      297.0</span>
 <span class="go">1      420.0</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">)</span> <span class="o">^</span> <span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">())</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">)</span> <span class="o">^</span> <span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">())</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">height_mm  width_mm kind</span>
 <span class="go">0      297.0     210.0   A4</span>
 <span class="go">1      420.0     297.0   A3</span>
@@ -776,8 +780,36 @@ python sets, and <code class="docutils literal notranslate"><span class="pre">~<
 </div>
 <p>The operators respect the usual short-circuit rules. For example, the
 following selector won’t compute the cardinality of non-categorical columns:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">categorical</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">s</span><span class="o">.</span><span class="n">cardinality_below</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">categorical</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">s</span><span class="o">.</span><span class="n">cardinality_below</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="go">(categorical() &amp; cardinality_below(10))</span>
+</pre></div>
+</div>
+</section>
+<section id="visualizing-a-selector">
+<span id="user-guide-selectors-expand"></span><h2>Visualizing a selector<a class="headerlink" href="#visualizing-a-selector" title="Link to this heading">#</a></h2>
+<p>All selectors have the <code class="xref py py-meth docutils literal notranslate"><span class="pre">expand()</span></code> method, which allows dataframe manipulation
+outside of a Skrub workflow: applying it to any dataframe will return the list
+of column names from the dataframe that the selector would keep. This allows selectors
+to be applied on a variety of standard dataframe libraries, and can be particularly
+useful on complicated combinations of selectors. For instance, the following filter
+only keeps columns that do not end in <code class="docutils literal notranslate"><span class="pre">_mm</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">some_selector</span> <span class="o">=</span> <span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;*_mm&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="p">{</span>
+<span class="gp">... </span>        <span class="s2">&quot;height_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">&quot;width_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">188.5</span><span class="p">,</span> <span class="mf">210.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A5&quot;</span><span class="p">,</span> <span class="s2">&quot;A4&quot;</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">&quot;ID&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="p">}</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">some_selector</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="go">[&#39;kind&#39;, &#39;ID&#39;]</span>
+</pre></div>
+</div>
+<p>The <code class="xref py py-meth docutils literal notranslate"><span class="pre">expand_index()</span></code> method also exists: rather than returning a list of column names, it returns the corresponding indices from the input dataframe’s column list:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">some_selector</span><span class="o">.</span><span class="n">expand_index</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="go">[2, 3]</span>
 </pre></div>
 </div>
 </section>
@@ -785,13 +817,14 @@ following selector won’t compute the cardinality of non-categorical columns:</
 <span id="selectors-and-transformer"></span><h2>Using selectors with other skrub transformers<a class="headerlink" href="#using-selectors-with-other-skrub-transformers" title="Link to this heading">#</a></h2>
 <p>Skrub transformers are designed to be used in conjunction with other transformers
 that operate on columns to improve their versatility.</p>
-<p>For example, we can drop columns that have more unique values than a certain amount
-by combining <a class="reference internal" href="../../reference/generated/skrub.selectors.cardinality_below.html#skrub.selectors.cardinality_below" title="skrub.selectors.cardinality_below"><code class="xref py py-func docutils literal notranslate"><span class="pre">cardinality_below()</span></code></a> with <a class="reference internal" href="../../reference/generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.DropCols</span></code></a>.
-We first select the columns that have more than 3 unique values, then we invert the
-selector and finally transform the dataframe.</p>
+<p>For example, it is possible to drop columns that have more unique values than a
+certain amount by combining <a class="reference internal" href="../../reference/generated/skrub.selectors.cardinality_below.html#skrub.selectors.cardinality_below" title="skrub.selectors.cardinality_below"><code class="xref py py-func docutils literal notranslate"><span class="pre">cardinality_below()</span></code></a> with
+<a class="reference internal" href="../../reference/generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.DropCols</span></code></a>.
+To do so, a selector targeting columns that have more than 3 unique values
+is defined, and its inverse is used as a parameter for <a class="reference internal" href="../../reference/generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.DropCols</span></code></a>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
 <span class="gp">... </span><span class="s2">&quot;not a lot&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
-<span class="gp">... </span><span class="s2">&quot;too_many&quot;</span><span class="p">:</span>  <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]})</span>
+<span class="gp">... </span><span class="s2">&quot;too_many&quot;</span><span class="p">:</span>  <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]})</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">DropCols</span>
@@ -888,6 +921,7 @@ do this like this:</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-selectors">Introduction to selectors</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-selectors">Type of selectors</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-selectors">Combining selectors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-a-selector">Visualizing a selector</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-selectors-with-other-skrub-transformers">Using selectors with other skrub transformers</a></li>
 </ul>
   </nav></div>

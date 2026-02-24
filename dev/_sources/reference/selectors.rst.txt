@@ -29,6 +29,7 @@ Contains method to select columns in a dataframe. See the :ref:`selectors <user_
   :template: base.rst
 
 
+  selectors.Selector
   selectors.all
   selectors.any_date
   selectors.boolean

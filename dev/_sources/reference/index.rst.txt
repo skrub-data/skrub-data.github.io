@@ -221,6 +221,9 @@ Selectors
   :template: base.rst
 
 
+  selectors.Selector
+
+
   selectors.all
 
 
