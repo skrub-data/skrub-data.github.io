@@ -55,6 +55,9 @@ Building a pipeline
   DropCols
 
 
+  ApplyToCols
+
+
   ApplyToEachCol
 
 
