@@ -308,9 +308,9 @@ cross-validation folds.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 23.111 seconds)
+   **Total running time of the script:** (0 minutes 23.099 seconds)
 
-**Estimated memory usage:**  506 MB
+**Estimated memory usage:**  559 MB
 
 
 .. _sphx_glr_download_auto_examples_0100_squashing_scaler.py:
