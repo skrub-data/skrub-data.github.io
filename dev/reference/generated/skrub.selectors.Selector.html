@@ -44,7 +44,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=3bbd54d8" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=0004ecb7" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -725,7 +725,7 @@
 <h1>Selector<a class="headerlink" href="#selector" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.selectors.Selector">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">Selector</span></span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/991c347/skrub/selectors/_base.py#L222"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">Selector</span></span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/807f60a/skrub/selectors/_base.py#L222"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector" title="Link to this definition">#</a></dt>
 <dd><p>Generic selector type, that returns set columns when applied.</p>
 <p>This class is not meant to be instantiated manually, <code class="docutils literal notranslate"><span class="pre">Selector</span></code>
 objects are created by calling one of the selector builders such
@@ -744,7 +744,7 @@ as <a class="reference internal" href="skrub.selectors.all.html#skrub.selectors.
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.selectors.Selector.expand">
-<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/991c347/skrub/selectors/_base.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/807f60a/skrub/selectors/_base.py#L233"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand" title="Link to this definition">#</a></dt>
 <dd><p>Lists the column names that the selector would retain if applied to
 the dataframe <code class="docutils literal notranslate"><span class="pre">df</span></code>.</p>
 <dl class="field-list simple">
@@ -783,7 +783,7 @@ the dataframe <code class="docutils literal notranslate"><span class="pre">df</s
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.selectors.Selector.expand_index">
-<span class="sig-name descname"><span class="pre">expand_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/991c347/skrub/selectors/_base.py#L276"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand_index" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">expand_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/807f60a/skrub/selectors/_base.py#L276"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand_index" title="Link to this definition">#</a></dt>
 <dd><p>Lists the indices of dataframe <cite>df</cite>’s columns that the selector
 would retain if applied to <cite>df</cite>.</p>
 <dl class="field-list simple">
@@ -910,23 +910,8 @@ result as <code class="docutils literal notranslate"><span class="pre">sel.trans
   
     <div class="footer-items__start">
       
-        <div class="footer-item">
-
-  <p class="copyright">
-    
-      © Copyright 2018-2023, the dirty_cat developers, 2023-2026, the skrub developers.
-      <br/>
-    
-  </p>
-</div>
-      
-        <div class="footer-item">
-
-  <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
-    <br/>
-  </p>
-</div>
+        <div class="footer-item">Financial support from <a href="https://inria.fr">inria</a> and <a
+href="https://probabl.ai">:probabl.</a></div>
       
     </div>
   
