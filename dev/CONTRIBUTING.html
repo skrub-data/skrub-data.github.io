@@ -899,6 +899,36 @@ to render templates located at <code class="docutils literal notranslate"><span 
 <p>Once you have pushed your commits to your remote repository, you can submit
 a PR by clicking the “Compare &amp; pull request” button on GitHub,
 targeting the skrub repository.</p>
+<section id="updating-the-changelog">
+<h3>Updating the changelog<a class="headerlink" href="#updating-the-changelog" title="Link to this heading">#</a></h3>
+<p>Any user-facing change to the codebase needs to be reported in the changelog,
+found in the <code class="docutils literal notranslate"><span class="pre">CHANGES.rst</span></code> file in the root of the repository. A user-facing
+change is any change to a functionality of skrub that users are expected to interact
+with: for example, adding or removing a parameter, adding a new transformer,
+deprecating a function, etc.</p>
+<p>Changes made in the test suite, or changes made in the
+private parts of the library, should not be reported, unless they bring some benefit
+to the user (such as performance improvements). Normally, changes made to the
+documentation, such as typo or formatting fixes, are not reported either, while
+new examples usually can be added.
+Depending on the nature of the PR, a maintainer may add the “no
+changelog needed” label to skip the corresponding check if a changelog entry isn’t
+relevant.</p>
+<p>Changelog entries need to follow a specific format: the change should be described
+in sufficient detail for users to understand how they may be affected, and the
+entry must list both the PR number and the GitHub username of the author(s) of the
+PR.</p>
+<p>Here is an example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w"> </span>-<span class="w"> </span>:meth:<span class="sb">`</span>DataOp.skb.apply<span class="sb">`</span><span class="w"> </span>now<span class="w"> </span>allows<span class="w"> </span>passing<span class="w"> </span>extra<span class="w"> </span>named<span class="w"> </span>arguments<span class="w"> </span>to<span class="w"> </span>the
+estimator<span class="err">&#39;</span>s<span class="w"> </span>methods<span class="w"> </span>through<span class="w"> </span>the<span class="w"> </span>parameters<span class="w"> </span><span class="sb">``</span>fit_kwargs<span class="sb">``</span>,<span class="w"> </span><span class="sb">``</span>predict_kwargs<span class="sb">``</span>
+etc.<span class="w"> </span>:pr:<span class="sb">`</span><span class="m">1642</span><span class="sb">`</span><span class="w"> </span>by<span class="w"> </span>:user:<span class="sb">`</span>Jérôme<span class="w"> </span>Dockès<span class="w"> </span>&lt;jeromedockes&gt;<span class="sb">`</span>.
+</pre></div>
+</div>
+<p>The PR number is reported with the directive <code class="docutils literal notranslate"><span class="pre">:pr:`NUMBER`</span></code>, and the author
+of the PR uses the directive <code class="docutils literal notranslate"><span class="pre">:user:`AUTHOR</span> <span class="pre">NAME</span> <span class="pre">&lt;GITHUB</span> <span class="pre">HANDLE&gt;`</span></code>.</p>
+<p>Missing changelog entries, or changelog entries that do not follow the format,
+will fail the changelog check in the CI.</p>
+</section>
 <section id="continuous-integration-ci">
 <h3>Continuous Integration (CI)<a class="headerlink" href="#continuous-integration-ci" title="Link to this heading">#</a></h3>
 <p>After creating your PR, CI tools will run proceed to run all the tests on all
@@ -1052,6 +1082,7 @@ merging the PR.</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-your-code">Submitting your code</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#updating-the-changelog">Updating the changelog</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-integration-ci">Continuous Integration (CI)</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">Integration</a></li>
 </ul>
