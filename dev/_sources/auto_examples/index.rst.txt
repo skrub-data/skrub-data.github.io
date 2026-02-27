@@ -255,7 +255,7 @@ Skrub DataOps
 
 .. only:: html
 
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1120_multiple_tables_thumb.svg
+  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1120_multiple_tables_thumb.png
     :alt:
 
   :doc:`/auto_examples/data_ops/1120_multiple_tables`

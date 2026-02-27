@@ -727,7 +727,7 @@
 <h1>fetch_credit_fraud<a class="headerlink" href="#fetch-credit-fraud" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_credit_fraud">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_credit_fraud</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0189e68/skrub/datasets/_fetching.py#L216"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_credit_fraud" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_credit_fraud</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b70540e/skrub/datasets/_fetching.py#L236"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_credit_fraud" title="Link to this definition">#</a></dt>
 <dd><p>Fetch the credit fraud dataset (classification) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <p>This is an imbalanced binary classification use-case. This dataset consists of
 two tables:</p>
@@ -754,13 +754,15 @@ Size on disk: 16MB.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">baskets</span></code> : pd.DataFrame, table containing baskets ID and target.</p></li>
 </ul>
 <p>Shape: (92790, 2)
-- <code class="docutils literal notranslate"><span class="pre">product</span></code> : pd.DataFrame, table containing features about products</p>
+- <code class="docutils literal notranslate"><span class="pre">products</span></code> : pd.DataFrame, table containing features about products</p>
 <blockquote>
 <div><p>contained in baskets. Shape: (163357, 7)</p>
 </div></blockquote>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name, description, source and
 target</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">baskets_path</span></code> : str, the path to the baskets CSV file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">products_path</span></code> : str, the path to the products CSV file</p></li>
 </ul>
 </dd>
 </dl>
@@ -773,7 +775,7 @@ target</p></li>
 <div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Many problems involve tables whose entities have a one-to-many relationship. To simplify aggregate-then-join operations for machine learning, we can include the |AggJoiner| in our pipeline."><img alt="" src="../../_images/sphx_glr_0070_join_aggregation_thumb.png" />
 <p><a class="reference internal" href="../../auto_examples/0070_join_aggregation.html"><span class="doc">AggJoiner on a credit fraud dataset</span></a></p>
   <div class="sphx-glr-thumbnail-title">AggJoiner on a credit fraud dataset</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how to build a DataOps plan to handle pre-processing, validation and hyperparameter tuning of a dataset with multiple tables."><img alt="" src="../../_images/sphx_glr_1120_multiple_tables_thumb.svg" />
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how to build a DataOps plan to handle pre-processing, validation and hyperparameter tuning of a dataset with multiple tables."><img alt="" src="../../_images/sphx_glr_1120_multiple_tables_thumb.png" />
 <p><a class="reference internal" href="../../auto_examples/data_ops/1120_multiple_tables.html"><span class="doc">Multiples tables: building machine learning pipelines with DataOps</span></a></p>
   <div class="sphx-glr-thumbnail-title">Multiples tables: building machine learning pipelines with DataOps</div>
 </div></div></section>

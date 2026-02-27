@@ -229,7 +229,7 @@ each of these together in a pipeline with a TableVectorizer and a simple MLPRegr
 In the end, we print the R2 scores of each fold's validation set in a three-fold
 cross-validation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-195
+.. GENERATED FROM PYTHON SOURCE LINES 154-199
 
 .. code-block:: Python
 
@@ -237,6 +237,7 @@ cross-validation.
     import warnings
 
     import numpy as np
+    import pandas as pd
     from sklearn.compose import TransformedTargetRegressor
     from sklearn.exceptions import ConvergenceWarning
     from sklearn.model_selection import cross_validate
@@ -248,7 +249,10 @@ cross-validation.
     from skrub.datasets import fetch_employee_salaries
 
     np.random.seed(0)
-    data = fetch_employee_salaries()
+    file_path = fetch_employee_salaries().path
+    data = pd.read_csv(file_path)
+    X = data.drop(columns="current_annual_salary")
+    y = data["current_annual_salary"]
 
     for num_transformer in [
         StandardScaler(),
@@ -267,7 +271,7 @@ cross-validation.
         with warnings.catch_warnings():
             # Ignore warnings about the MLPRegressor not converging
             warnings.simplefilter("ignore", category=ConvergenceWarning)
-            scores = cross_validate(pipeline, data.X, data.y, cv=3, scoring="r2")
+            scores = cross_validate(pipeline, X, y, cv=3, scoring="r2")
 
         print(
             f"Cross-validation R2 scores for {num_transformer.__class__.__name__}"
@@ -295,7 +299,7 @@ cross-validation.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 196-199
+.. GENERATED FROM PYTHON SOURCE LINES 200-203
 
 On the employee salaries dataset, the |SquashingScaler| performs
 better than |StandardScaler| and |QuantileTransformer| on all
@@ -304,7 +308,7 @@ cross-validation folds.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 26.372 seconds)
+   **Total running time of the script:** (0 minutes 23.111 seconds)
 
 **Estimated memory usage:**  506 MB
 

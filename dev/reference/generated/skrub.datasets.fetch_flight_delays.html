@@ -727,7 +727,7 @@
 <h1>fetch_flight_delays<a class="headerlink" href="#fetch-flight-delays" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_flight_delays">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_flight_delays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0189e68/skrub/datasets/_fetching.py#L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_flight_delays" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_flight_delays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b70540e/skrub/datasets/_fetching.py#L432"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_flight_delays" title="Link to this definition">#</a></dt>
 <dd><p>Fetch the flight delays dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <p>This is a regression use-case, where the goal is to predict flight delays.
 Size on disk: 657MB.</p>
@@ -756,6 +756,10 @@ provided in <code class="docutils literal notranslate"><span class="pre">station
 can only be matched to the nearest airport based on the latitude and
 longitude. Shape: (124245, 9)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name  of the dataset.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">flights_path</span></code> : str, the path to the flights CSV file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">airports_path</span></code> : str, the path to the airports CSV file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">weather_path</span></code> : str, the path to the weather CSV file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stations_path</span></code> : str, the path to the stations CSV file</p></li>
 </ul>
 </dd>
 </dl>
