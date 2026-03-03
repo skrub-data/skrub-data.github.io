@@ -234,7 +234,7 @@ Skrub DataOps
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how we can use Skrub&#x27;s user_guide_data_ops_index to build a machine learning pipeline that records all the operations involved in pre-processing data and training a model. We will also show how to save the model, load it back, and then use it to make predictions on new, unseen data.">
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows data wrangling for machine learning using Skrub&#x27;s user_guide_data_ops_index.">
 
 .. only:: html
 
@@ -245,7 +245,7 @@ Skrub DataOps
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Introduction to machine-learning pipelines with skrub DataOps</div>
+      <div class="sphx-glr-thumbnail-title">Introduction to wrangling pipelines for machine-learning skrub DataOps</div>
     </div>
 
 
