@@ -63,6 +63,16 @@ pre, code {
     background: #eee;
 }
 
+.is-skipped-message{
+    background: #eee;
+    padding: 0 1em 1em 1em;
+    border: 1px solid black;
+}
+
+.is-skipped-message + * {
+    margin-top: 1em;
+}
+
 .node-creation-stack {
     font-size: 1rem;
 }
@@ -507,7 +517,7 @@ pre, code {
                 <div>
                     
 
-                    <h3>This step used:</h3>
+                    <h3>This step uses:</h3>
                     <ul>
                         
                         <li><a href="node_10.html">10:
@@ -517,7 +527,7 @@ pre, code {
                 </div>
 
                 <div>
-                    <h3>This step was used by:</h3>
+                    <h3>This step is used by:</h3>
                     <ul>
                         
                         <li><a href="node_12.html">12:
@@ -539,19 +549,24 @@ pre, code {
                 
                 <div>
                     <h3>Computation time</h3>
-                    <code>0h 0m 0.00038s</code>
+                    <code>0h 0m 0.00042s</code>
                 </div>
                 
+
                 
 
                 
                 <div>
                     <h2>Output of this step</h2>
-                    <div style="max-height: 30em; max-width: 95%; overflow: auto;">
+
+                    
+                    <div>
+                        <div style="max-height: 30em; max-width: 95%; overflow: auto;">
     <samp>
-        <pre>&lt;pandas.api.typing.DataFrameGroupBy object at 0x7f3be6ce73e0&gt;</pre>
+        <pre>&lt;pandas.api.typing.DataFrameGroupBy object at 0x7f40778cf3e0&gt;</pre>
     </samp>
 </div>
+                    </div>
                 </div>
                 
             </div>
