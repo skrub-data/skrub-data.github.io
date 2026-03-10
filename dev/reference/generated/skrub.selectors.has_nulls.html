@@ -725,7 +725,7 @@
 <h1>has_nulls<a class="headerlink" href="#has-nulls" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.has_nulls">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">has_nulls</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/320d7f7/skrub/selectors/_selectors.py#L506"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.has_nulls" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">has_nulls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proportion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/7f7b50a/skrub/selectors/_selectors.py#L515"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.has_nulls" title="Link to this definition">#</a></dt>
 <dd><p>Select columns that contain at least one null value.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
@@ -734,8 +734,29 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_nulls</span><span class="p">())</span>
 <span class="go">      b     c</span>
 <span class="go">0   0.0     a</span>
-<span class="go">1   NaN     b</span>
+<span class="go">1   ...     b</span>
 <span class="go">2  20.0  ...</span>
+</pre></div>
+</div>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">proportion</span></code> parameter to filter columns by null percentage:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">few_nulls</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="n">many_nulls</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="n">no_nulls</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_nulls</span><span class="p">(</span><span class="n">proportion</span><span class="o">=</span><span class="mf">0.20</span><span class="p">))</span>
+<span class="go">   few_nulls  many_nulls</span>
+<span class="go">0        1.0         1.0</span>
+<span class="go">1        2.0         ...</span>
+<span class="go">2        3.0         ...</span>
+<span class="go">3        ...         ...</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_nulls</span><span class="p">(</span><span class="n">proportion</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="go">many_nulls</span>
+<span class="go">0        1.0</span>
+<span class="go">1        ...</span>
+<span class="go">2        ...</span>
+<span class="go">3        ...</span>
 </pre></div>
 </div>
 </dd></dl>

@@ -533,10 +533,12 @@
 <li class="toctree-l2"><a class="reference internal" href="multi_column_operations.html">Operating over multiple columns at once</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
 
+
 <li class="toctree-l2"><a class="reference internal" href="selectors.html">Skrub Selectors, for selecting columns in a dataframe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="type_of_selectors.html">Selecting based on dtype or data properties</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="advanced_selectors.html"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code> to select with user-defined criteria</a></li>
+
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../data_ops.html">Complex multi-table pipelines with Data Ops</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -694,6 +696,41 @@ accept the same parameters for dropping columns.</p>
 <div class="line"><br /></div>
 </div>
 </section>
+<section id="dropping-columns-with-many-missing-values">
+<h1>Dropping columns with many missing values<a class="headerlink" href="#dropping-columns-with-many-missing-values" title="Link to this heading">#</a></h1>
+<p>Columns with too many missing values may not provide useful information for
+downstream models. The <code class="docutils literal notranslate"><span class="pre">drop_null_fraction</span></code> parameter allows dropping such
+columns when the proportion of missing values exceeds a specified threshold.</p>
+<p>Consider the following dataset:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">DropUninformative</span><span class="p">,</span> <span class="n">ApplyToCols</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<span class="gp">... </span>    <span class="s1">&#39;patient_id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">30.0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">45.0</span><span class="p">,</span> <span class="mf">50.0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">60.0</span><span class="p">,</span> <span class="mf">65.0</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;blood_pressure&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">120</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">150</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;diagnosis&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;flu&#39;</span><span class="p">,</span> <span class="s1">&#39;cold&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;treatment&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;med_A&#39;</span><span class="p">,</span> <span class="s1">&#39;med_B&#39;</span><span class="p">,</span> <span class="s1">&#39;med_C&#39;</span><span class="p">,</span> <span class="s1">&#39;med_D&#39;</span><span class="p">,</span> <span class="s1">&#39;med_E&#39;</span><span class="p">,</span> <span class="s1">&#39;med_F&#39;</span><span class="p">,</span> <span class="s1">&#39;med_G&#39;</span><span class="p">,</span> <span class="s1">&#39;med_H&#39;</span><span class="p">]</span>
+<span class="gp">... </span><span class="p">})</span>
+</pre></div>
+</div>
+<p>We can drop columns with more than 50% missing values:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cleaner</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">DropUninformative</span><span class="p">(</span><span class="n">drop_null_fraction</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaned_df</span> <span class="o">=</span> <span class="n">cleaner</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaned_df</span>
+<span class="go">   patient_id   age treatment</span>
+<span class="go">0           1  25.0     med_A</span>
+<span class="go">1           2  30.0     med_B</span>
+<span class="go">2           3   ...     med_C</span>
+<span class="go">3           4  45.0     med_D</span>
+<span class="go">4           5  50.0     med_E</span>
+<span class="go">5           6   ...     med_F</span>
+<span class="go">6           7  60.0     med_G</span>
+<span class="go">7           8  65.0     med_H</span>
+</pre></div>
+</div>
+</section>
 <section id="applying-dropuninformative-only-to-a-subset-of-columns">
 <h1>Applying <a class="reference internal" href="../../reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a> only to a subset of columns<a class="headerlink" href="#applying-dropuninformative-only-to-a-subset-of-columns" title="Link to this heading">#</a></h1>
 <p>You can apply the <a class="reference internal" href="../../reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a> transformer to specific columns using
@@ -781,6 +818,7 @@ on applying transformers to specific columns.</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dropping-columns-with-many-missing-values">Dropping columns with many missing values</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-dropuninformative-only-to-a-subset-of-columns">Applying <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> only to a subset of columns</a></li>
 </ul>
 
