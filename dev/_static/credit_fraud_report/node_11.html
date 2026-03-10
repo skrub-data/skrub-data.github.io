@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>evaluation report</title>
+    <title>DataOp report</title>
     <style>
      html {
     font-family: sans-serif;
@@ -48,6 +48,10 @@ pre, code {
     padding-top: 24px;
     border-right: 2px solid #ccc;
     flex-shrink: 0;
+}
+
+.fixed-report-title ~ .data_op-node-wrapper > .data_op-node > nav.main-nav {
+    padding-top: 30px;
 }
 
 .node-details {
@@ -106,10 +110,23 @@ pre, code {
 .icon-button {
     position: absolute;
     left: 5px;
-    top: 5px;
+    top: 10px;
     padding: 2px;
     width: 24px;
     height: 24px;
+}
+
+.fixed-report-title {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+    left: 40px;
+    top: 5px;
+    padding: 2px;
+    padding-top: 0;
+    margin: 0;
 }
 
 .error-node polygon {
@@ -128,6 +145,7 @@ pre, code {
         id="toggle-nav"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
 </svg></button>
+    
     <div class="data_op-node-wrapper">
         <div class="data_op-node">
             <nav class="main-nav" data-is-open>
@@ -496,7 +514,6 @@ pre, code {
             <div class="node-details" 
                 >
                 <h1>11: CallMethod &#39;groupby&#39;</h1>
-                
                 <nav class="mini-nav">
                     <ul>
                         <li>
@@ -514,6 +531,7 @@ pre, code {
                         </li>
                     </ul>
                 </nav>
+                
                 <div>
                     
 
@@ -549,7 +567,7 @@ pre, code {
                 
                 <div>
                     <h3>Computation time</h3>
-                    <code>0h 0m 0.00029s</code>
+                    <code>0h 0m 0.00043s</code>
                 </div>
                 
 
@@ -563,7 +581,7 @@ pre, code {
                     <div>
                         <div style="max-height: 30em; max-width: 95%; overflow: auto;">
     <samp>
-        <pre>&lt;pandas.api.typing.DataFrameGroupBy object at 0x7f4ed85b73e0&gt;</pre>
+        <pre>&lt;pandas.api.typing.DataFrameGroupBy object at 0x7f03480b62b0&gt;</pre>
     </samp>
 </div>
                     </div>

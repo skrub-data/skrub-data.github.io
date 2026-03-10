@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>evaluation report</title>
+    <title>DataOp report</title>
     <style>
      html {
     font-family: sans-serif;
@@ -48,6 +48,10 @@ pre, code {
     padding-top: 24px;
     border-right: 2px solid #ccc;
     flex-shrink: 0;
+}
+
+.fixed-report-title ~ .data_op-node-wrapper > .data_op-node > nav.main-nav {
+    padding-top: 30px;
 }
 
 .node-details {
@@ -106,10 +110,23 @@ pre, code {
 .icon-button {
     position: absolute;
     left: 5px;
-    top: 5px;
+    top: 10px;
     padding: 2px;
     width: 24px;
     height: 24px;
+}
+
+.fixed-report-title {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+    left: 40px;
+    top: 5px;
+    padding: 2px;
+    padding-top: 0;
+    margin: 0;
 }
 
 .error-node polygon {
@@ -128,6 +145,7 @@ pre, code {
         id="toggle-nav"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
 </svg></button>
+    
     <div class="data_op-node-wrapper">
         <div class="data_op-node">
             <nav class="main-nav" data-is-open>
@@ -496,7 +514,6 @@ pre, code {
             <div class="node-details" 
                 >
                 <h1>2: GetItem &#39;basket_ID&#39;</h1>
-                
                 <nav class="mini-nav">
                     <ul>
                         <li>
@@ -514,6 +531,7 @@ pre, code {
                         </li>
                     </ul>
                 </nav>
+                
                 <div>
                     
 
@@ -549,7 +567,7 @@ pre, code {
                 
                 <div>
                     <h3>Computation time</h3>
-                    <code>0h 0m 0.00016s</code>
+                    <code>0h 0m 0.00022s</code>
                 </div>
                 
 
@@ -562,8 +580,8 @@ pre, code {
                     
                     <div>
                         
-<div id="report_5ee63719-wrapper" hidden>
-    <template id="report_5ee63719-template">
+<div id="report_03db2893-wrapper" hidden>
+    <template id="report_03db2893-template">
         <style>
          /*!
 Pure v3.0.0
@@ -1956,7 +1974,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
                 
                 
                 <th
-                id="e51cfe91"
+                id="ec9568eb"
                 class="table-cell elided-short "
                 
                 data-role="padding"
@@ -1986,7 +2004,7 @@ data-spans__-1__-1
                 
                 
                 <th
-                id="c8d409bd"
+                id="e97dfacd"
                 class="table-cell elided-short clickable"
                 
                 data-role="columns-level-value"
@@ -2034,7 +2052,7 @@ data-spans__-1__0
                 
                 
                 <th
-                id="dee31ca2"
+                id="e9cb9cff"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2062,7 +2080,7 @@ data-spans__0__-1
                 
                 
                 <td
-                id="df63b954"
+                id="189b0e34"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2096,7 +2114,7 @@ data-spans__0__0
                 
                 
                 <th
-                id="4c7b1606"
+                id="f648cf7b"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2124,7 +2142,7 @@ data-spans__1__-1
                 
                 
                 <td
-                id="50096050"
+                id="e04db5af"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2158,7 +2176,7 @@ data-spans__1__0
                 
                 
                 <th
-                id="b1a95599"
+                id="f2c62a3f"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2186,7 +2204,7 @@ data-spans__2__-1
                 
                 
                 <td
-                id="5af7f830"
+                id="334f7820"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2220,7 +2238,7 @@ data-spans__2__0
                 
                 
                 <th
-                id="29666d2e"
+                id="eb07c3d6"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2248,7 +2266,7 @@ data-spans__3__-1
                 
                 
                 <td
-                id="cdbe70c9"
+                id="bde8e57c"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2282,7 +2300,7 @@ data-spans__3__0
                 
                 
                 <th
-                id="ddc985d4"
+                id="780b68da"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2310,7 +2328,7 @@ data-spans__4__-1
                 
                 
                 <td
-                id="29e4a258"
+                id="b0101ae8"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2374,7 +2392,7 @@ data-spans__4__0
                 
                 
                 <th
-                id="0809bfb6"
+                id="e56cadcb"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2402,7 +2420,7 @@ data-spans__5__-1
                 
                 
                 <td
-                id="65f81852"
+                id="03ba000a"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2436,7 +2454,7 @@ data-spans__5__0
                 
                 
                 <th
-                id="ca1e337d"
+                id="b10fb34c"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2464,7 +2482,7 @@ data-spans__6__-1
                 
                 
                 <td
-                id="4fc0b45b"
+                id="359e34b6"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2498,7 +2516,7 @@ data-spans__6__0
                 
                 
                 <th
-                id="aa89d261"
+                id="d73cb391"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2526,7 +2544,7 @@ data-spans__7__-1
                 
                 
                 <td
-                id="79abdddc"
+                id="6a10ea2b"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2560,7 +2578,7 @@ data-spans__7__0
                 
                 
                 <th
-                id="eb8d5dee"
+                id="7224e697"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2588,7 +2606,7 @@ data-spans__8__-1
                 
                 
                 <td
-                id="62f42ea9"
+                id="91432f24"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -2622,7 +2640,7 @@ data-spans__8__0
                 
                 
                 <th
-                id="e2387dfe"
+                id="97297d27"
                 class="table-cell elided-short clickable"
                 
                 data-role="index-level-value"
@@ -2650,7 +2668,7 @@ data-spans__9__-1
                 
                 
                 <td
-                id="ed23fd24"
+                id="49e81294"
                 class="table-cell elided-short clickable"
                 
                 data-role="dataframe-data"
@@ -3225,7 +3243,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_5ee63719">
+    <skrub-table-report class="report" id="report_03db2893">
     </skrub-table-report>
 
     <script type="module">
@@ -4329,7 +4347,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_5ee63719-wrapper-fallback">
+<div id="report_03db2893-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -4340,8 +4358,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_5ee63719-wrapper").removeAttribute("hidden");
- document.getElementById("report_5ee63719-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_03db2893-wrapper").removeAttribute("hidden");
+ document.getElementById("report_03db2893-wrapper-fallback").setAttribute("hidden", "");
 </script>
                     </div>
                 </div>
