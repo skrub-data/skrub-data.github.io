@@ -612,6 +612,9 @@ single-column transformer. <a class="reference external" href="https://github.co
 and <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1900">#1900</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>Errors raised when a polars LazyFrame is passed where an eager DataFrame is
 expected are now clearer. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1916">#1916</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">CheckInputDataFrame</span></code> no longer collects Polars LazyFrames automatically;
+a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> is now raised instead, consistent with the rest of the library.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1941">#1941</a> by <a class="reference external" href="https://github.com/MuditAtrey">Mudit Atrey</a>.</p></li>
 </ul>
 </section>
 <section id="documentation">
