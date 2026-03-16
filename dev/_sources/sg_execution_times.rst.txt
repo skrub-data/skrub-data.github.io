@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**13:40.322** total execution time for 18 files **from all galleries**:
+**14:22.574** total execution time for 18 files **from all galleries**:
 
 .. container::
 
@@ -32,57 +32,57 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_auto_examples_0020_text_with_string_encoders.py` (``../examples/0020_text_with_string_encoders.py``)
-     - 02:49.179
-     - 1373.4
    * - :ref:`sphx_glr_auto_examples_0070_join_aggregation.py` (``../examples/0070_join_aggregation.py``)
-     - 02:41.115
-     - 692.5
+     - 02:59.833
+     - 741.3
+   * - :ref:`sphx_glr_auto_examples_0020_text_with_string_encoders.py` (``../examples/0020_text_with_string_encoders.py``)
+     - 02:49.285
+     - 1362.7
    * - :ref:`sphx_glr_auto_examples_data_ops_1120_multiple_tables.py` (``../examples/data_ops/1120_multiple_tables.py``)
-     - 02:29.256
-     - 596.2
-   * - :ref:`sphx_glr_auto_examples_data_ops_1131_optuna_choices.py` (``../examples/data_ops/1131_optuna_choices.py``)
-     - 00:58.948
-     - 541.9
+     - 02:45.919
+     - 687.3
    * - :ref:`sphx_glr_auto_examples_0010_encodings.py` (``../examples/0010_encodings.py``)
-     - 00:46.992
-     - 520.7
+     - 00:46.096
+     - 575.9
+   * - :ref:`sphx_glr_auto_examples_data_ops_1131_optuna_choices.py` (``../examples/data_ops/1131_optuna_choices.py``)
+     - 00:45.933
+     - 573.1
    * - :ref:`sphx_glr_auto_examples_0060_multiple_key_join.py` (``../examples/0060_multiple_key_join.py``)
-     - 00:37.047
-     - 2860.0
+     - 00:43.878
+     - 3006.0
    * - :ref:`sphx_glr_auto_examples_0080_interpolation_join.py` (``../examples/0080_interpolation_join.py``)
-     - 00:32.605
-     - 2526.1
+     - 00:39.490
+     - 2619.0
    * - :ref:`sphx_glr_auto_examples_data_ops_1130_choices.py` (``../examples/data_ops/1130_choices.py``)
-     - 00:31.135
-     - 511.3
+     - 00:33.150
+     - 573.1
    * - :ref:`sphx_glr_auto_examples_0100_squashing_scaler.py` (``../examples/0100_squashing_scaler.py``)
-     - 00:22.942
-     - 511.8
+     - 00:23.334
+     - 574.5
    * - :ref:`sphx_glr_auto_examples_0040_fuzzy_joining.py` (``../examples/0040_fuzzy_joining.py``)
-     - 00:22.789
-     - 512.7
+     - 00:22.847
+     - 573.4
    * - :ref:`sphx_glr_auto_examples_data_ops_1160_pytorch.py` (``../examples/data_ops/1160_pytorch.py``)
-     - 00:18.828
-     - 540.1
+     - 00:19.450
+     - 601.7
    * - :ref:`sphx_glr_auto_examples_data_ops_1140_subsampling.py` (``../examples/data_ops/1140_subsampling.py``)
-     - 00:15.254
-     - 538.3
-   * - :ref:`sphx_glr_auto_examples_0090_apply_to_cols.py` (``../examples/0090_apply_to_cols.py``)
-     - 00:12.156
-     - 511.8
+     - 00:16.107
+     - 573.1
    * - :ref:`sphx_glr_auto_examples_0000_getting_started.py` (``../examples/0000_getting_started.py``)
-     - 00:11.841
-     - 513.8
+     - 00:13.351
+     - 573.7
+   * - :ref:`sphx_glr_auto_examples_0090_apply_to_cols.py` (``../examples/0090_apply_to_cols.py``)
+     - 00:13.048
+     - 572.8
    * - :ref:`sphx_glr_auto_examples_data_ops_1110_data_ops_intro.py` (``../examples/data_ops/1110_data_ops_intro.py``)
-     - 00:11.066
-     - 511.5
-   * - :ref:`sphx_glr_auto_examples_0030_datetime_encoder.py` (``../examples/0030_datetime_encoder.py``)
-     - 00:08.322
-     - 516.0
+     - 00:11.565
+     - 573.7
    * - :ref:`sphx_glr_auto_examples_data_ops_1150_use_case.py` (``../examples/data_ops/1150_use_case.py``)
-     - 00:08.144
-     - 605.6
+     - 00:08.298
+     - 648.0
+   * - :ref:`sphx_glr_auto_examples_0030_datetime_encoder.py` (``../examples/0030_datetime_encoder.py``)
+     - 00:08.125
+     - 575.9
    * - :ref:`sphx_glr_auto_examples_0050_deduplication.py` (``../examples/0050_deduplication.py``)
-     - 00:02.704
-     - 511.8
+     - 00:02.864
+     - 573.4

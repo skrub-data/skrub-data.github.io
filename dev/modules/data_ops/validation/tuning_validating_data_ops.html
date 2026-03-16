@@ -557,6 +557,7 @@
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Tuning and validating skrub DataOps plans</a></li>
 
 
+
 <li class="toctree-l2"><a class="reference internal" href="hyperparameter_tuning.html">Using the skrub <code class="docutils literal notranslate"><span class="pre">choose_*</span></code> functions to tune hyperparameters</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="nested_cross_validation.html">Validating hyperparameter search with nested cross-validation</a></li>
@@ -765,6 +766,63 @@ evaluated, using this data, to fit the rest of the pipeline.</p>
 <p>It is possible to define a custom split function to use instead of
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="(in scikit-learn v1.8)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.train_test_split()</span></code></a>.</p>
 </section>
+<section id="passing-additional-arguments-to-the-splitter">
+<h1>Passing additional arguments to the splitter<a class="headerlink" href="#passing-additional-arguments-to-the-splitter" title="Link to this heading">#</a></h1>
+<p>Sometimes we want to pass additional data to the cross-validation splitter.</p>
+<p>For example, if there is a group structure in our data (such as sites,
+hospitals, etc.) and we want the model to generalize to unseen groups, we must
+ensure while evaluating it that each group goes entirely in the train set or the
+test set, but is not divided among the 2. This can be done with
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html#sklearn.model_selection.GroupKFold" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.model_selection.GroupKFold</span></code></a>,
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.LeavePGroupsOut.html#sklearn.model_selection.LeavePGroupsOut" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.model_selection.LeavePGroupsOut</span></code></a>, etc. . The <code class="docutils literal notranslate"><span class="pre">split</span></code> function
+of those objects accepts a <code class="docutils literal notranslate"><span class="pre">groups</span></code> parameter. We can compute the groups
+inside of the DataOp and pass them to <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.mark_as_X()</span></code></a> and they will
+be passed to the splitter.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">toy_products</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
+<span class="go">    description  price            seller     category</span>
+<span class="go">0        mouse     10   supermarket.com  electronics</span>
+<span class="go">1       hammer     15  bestproducts.com        tools</span>
+<span class="go">2     keyboard     20   supermarket.com  electronics</span>
+<span class="go">3      usb key      9  bestproducts.com  electronics</span>
+<span class="go">4      charger     13  bestproducts.com  electronics</span>
+<span class="go">5  screwdriver     12   supermarket.com        tools</span>
+</pre></div>
+</div>
+<p>Suppose we want to assess generalization to new sellers. While splitting for
+cross-validation we must group products by seller. We do it with
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.LeaveOneGroupOut.html#sklearn.model_selection.LeaveOneGroupOut" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.model_selection.LeaveOneGroupOut</span></code></a>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.dummy</span><span class="w"> </span><span class="kn">import</span> <span class="n">DummyClassifier</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">LeaveOneGroupOut</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;df&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">groups</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;seller&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;price&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">cv</span><span class="o">=</span><span class="n">LeaveOneGroupOut</span><span class="p">(),</span> <span class="n">split_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;groups&quot;</span><span class="p">:</span> <span class="n">groups</span><span class="p">}</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;category&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">DummyClassifier</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The train set only contains data from the “supermarket.com” seller.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;X_train&quot;</span><span class="p">]</span>
+<span class="go">    description  price</span>
+<span class="go">0        mouse     10</span>
+<span class="go">2     keyboard     20</span>
+<span class="go">5  screwdriver     12</span>
+</pre></div>
+</div>
+<p>The test set only contains data from the “bestproducts.com” seller.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;X_test&quot;</span><span class="p">]</span>
+<span class="go">  description  price</span>
+<span class="go">1      hammer     15</span>
+<span class="go">3     usb key      9</span>
+<span class="go">4     charger     13</span>
+</pre></div>
+</div>
+</section>
 
 
                 </article>
@@ -816,6 +874,7 @@ evaluated, using this data, to fit the rest of the pipeline.</p>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Tuning and validating skrub DataOps plans</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#improving-the-confidence-in-our-score-through-cross-validation">Improving the confidence in our score through cross-validation</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-the-data-in-train-and-test-sets">Splitting the data in train and test sets</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#passing-additional-arguments-to-the-splitter">Passing additional arguments to the splitter</a></li>
 </ul>
 
   </nav></div>
