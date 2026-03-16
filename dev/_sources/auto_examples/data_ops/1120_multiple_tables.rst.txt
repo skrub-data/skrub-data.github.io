@@ -144,8 +144,8 @@ whether the basket is fraudulent or not.
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_f7481cfd-wrapper" hidden>
-        <template id="report_f7481cfd-template">
+    <div id="report_4c88b8a6-wrapper" hidden>
+        <template id="report_4c88b8a6-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1538,7 +1538,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="09fc70ea"
+                    id="eacaac4b"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1568,7 +1568,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="1447b52b"
+                    id="778c904c"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1602,7 +1602,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="093046d7"
+                    id="c94050aa"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1650,7 +1650,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="376a4b2d"
+                    id="0490000d"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1678,7 +1678,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="9414dcef"
+                    id="d6494305"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1708,7 +1708,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="aa5ef5c0"
+                    id="523573df"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1742,7 +1742,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="e994e090"
+                    id="1f2da16c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1770,7 +1770,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="87b3fe14"
+                    id="108ac7ab"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1800,7 +1800,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="e8f80eac"
+                    id="250c0ece"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1834,7 +1834,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="0bea43e3"
+                    id="d8f5fc8d"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1862,7 +1862,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="9cac1f80"
+                    id="a973fd3c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1892,7 +1892,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="a2cc3715"
+                    id="a391c040"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1926,7 +1926,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="e8a96276"
+                    id="c7532a3c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1954,7 +1954,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="3624b27c"
+                    id="193ef4b6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1984,7 +1984,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="f8c009de"
+                    id="237b86b2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2018,7 +2018,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="472e6a68"
+                    id="4122b150"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2046,7 +2046,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="fc970d9a"
+                    id="401fed0b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2076,7 +2076,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="4d3fc602"
+                    id="26c67718"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2150,7 +2150,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="d6cf609e"
+                    id="6100aa93"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2178,7 +2178,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="f097a78b"
+                    id="44002c59"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2208,7 +2208,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="83e49a55"
+                    id="7eec8b04"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2242,7 +2242,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="b8b507ae"
+                    id="65369dea"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2270,7 +2270,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="1626d94c"
+                    id="90ad06cb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2300,7 +2300,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="354f639f"
+                    id="b3b28181"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2334,7 +2334,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="aa01ee0a"
+                    id="e9bb7340"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2362,7 +2362,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="c264fc91"
+                    id="910b87a6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2392,7 +2392,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="0085f477"
+                    id="b028f341"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2426,7 +2426,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="737f517b"
+                    id="09d692ef"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2454,7 +2454,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="6439f237"
+                    id="b33ad7e6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2484,7 +2484,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="75e207da"
+                    id="814d8cd1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2518,7 +2518,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="b1a00209"
+                    id="26ee5374"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2546,7 +2546,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="181d2058"
+                    id="b051a506"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2576,7 +2576,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="c763ce29"
+                    id="f381d314"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3263,7 +3263,7 @@ whether the basket is fraudulent or not.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_f7481cfd">
+        <skrub-table-report class="report" id="report_4c88b8a6">
         </skrub-table-report>
 
         <script type="module">
@@ -4367,7 +4367,7 @@ whether the basket is fraudulent or not.
         </script>
     </div>
 
-    <div id="report_f7481cfd-wrapper-fallback">
+    <div id="report_4c88b8a6-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -4378,8 +4378,8 @@ whether the basket is fraudulent or not.
     </div>
 
     <script>
-     document.getElementById("report_f7481cfd-wrapper").removeAttribute("hidden");
-     document.getElementById("report_f7481cfd-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_4c88b8a6-wrapper").removeAttribute("hidden");
+     document.getElementById("report_4c88b8a6-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -4456,8 +4456,8 @@ column.
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_122aab2c-wrapper" hidden>
-        <template id="report_122aab2c-template">
+    <div id="report_d3284fff-wrapper" hidden>
+        <template id="report_d3284fff-template">
             <style>
              /*!
     Pure v3.0.0
@@ -5850,7 +5850,7 @@ column.
                 
                 
                     <th
-                    id="0e2fe938"
+                    id="b73fa1c3"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -5880,7 +5880,7 @@ column.
                 
                 
                     <th
-                    id="90ba741b"
+                    id="54a838fa"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -5914,7 +5914,7 @@ column.
                 
                 
                     <th
-                    id="61b05371"
+                    id="0854965f"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -5948,7 +5948,7 @@ column.
                 
                 
                     <th
-                    id="34ccb74a"
+                    id="cfd78170"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -5982,7 +5982,7 @@ column.
                 
                 
                     <th
-                    id="aa7aea48"
+                    id="1d1fb228"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6016,7 +6016,7 @@ column.
                 
                 
                     <th
-                    id="0fea2e27"
+                    id="589dba05"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6050,7 +6050,7 @@ column.
                 
                 
                     <th
-                    id="1f642ad8"
+                    id="154f4fb6"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6084,7 +6084,7 @@ column.
                 
                 
                     <th
-                    id="c9d61598"
+                    id="577d25aa"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6132,7 +6132,7 @@ column.
                 
                 
                     <th
-                    id="2f8a8baf"
+                    id="b499854f"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6160,7 +6160,7 @@ column.
                 
                 
                     <td
-                    id="c5d98f51"
+                    id="efb02563"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6190,7 +6190,7 @@ column.
                 
                 
                     <td
-                    id="7f17b151"
+                    id="757d9e34"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6220,7 +6220,7 @@ column.
                 
                 
                     <td
-                    id="ea924b68"
+                    id="36a2ac3c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6250,7 +6250,7 @@ column.
                 
                 
                     <td
-                    id="c3762a3d"
+                    id="9675c0e3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6280,7 +6280,7 @@ column.
                 
                 
                     <td
-                    id="a30d26ce"
+                    id="9d48cb7b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6310,7 +6310,7 @@ column.
                 
                 
                     <td
-                    id="c7070a90"
+                    id="6b9f91e4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6340,7 +6340,7 @@ column.
                 
                 
                     <td
-                    id="e23071b7"
+                    id="361cb840"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6374,7 +6374,7 @@ column.
                 
                 
                     <th
-                    id="5e5d9fcd"
+                    id="f0082940"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6402,7 +6402,7 @@ column.
                 
                 
                     <td
-                    id="3e5b8abc"
+                    id="27ee818f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6432,7 +6432,7 @@ column.
                 
                 
                     <td
-                    id="57d240e2"
+                    id="a4147601"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6462,7 +6462,7 @@ column.
                 
                 
                     <td
-                    id="c8576b3a"
+                    id="f82d8c12"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6492,7 +6492,7 @@ column.
                 
                 
                     <td
-                    id="dc7be79a"
+                    id="0b70a507"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6522,7 +6522,7 @@ column.
                 
                 
                     <td
-                    id="b6ea31af"
+                    id="92ea3596"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6552,7 +6552,7 @@ column.
                 
                 
                     <td
-                    id="8422addd"
+                    id="eadd1990"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6582,7 +6582,7 @@ column.
                 
                 
                     <td
-                    id="76998c2f"
+                    id="a9fe3c26"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6616,7 +6616,7 @@ column.
                 
                 
                     <th
-                    id="63bbe6b6"
+                    id="c93b1bd0"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6644,7 +6644,7 @@ column.
                 
                 
                     <td
-                    id="7b568e6d"
+                    id="e3396c5c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6674,7 +6674,7 @@ column.
                 
                 
                     <td
-                    id="e6e6ecaf"
+                    id="b9345876"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6704,7 +6704,7 @@ column.
                 
                 
                     <td
-                    id="b3c710c1"
+                    id="62eac707"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6734,7 +6734,7 @@ column.
                 
                 
                     <td
-                    id="177802ae"
+                    id="5eb070c6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6764,7 +6764,7 @@ column.
                 
                 
                     <td
-                    id="d8d21dd3"
+                    id="a925ab58"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6794,7 +6794,7 @@ column.
                 
                 
                     <td
-                    id="0f1700d3"
+                    id="7e7e1234"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6824,7 +6824,7 @@ column.
                 
                 
                     <td
-                    id="a5fea99a"
+                    id="b1c18186"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6858,7 +6858,7 @@ column.
                 
                 
                     <th
-                    id="615986d5"
+                    id="4b45ae75"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6886,7 +6886,7 @@ column.
                 
                 
                     <td
-                    id="506ae086"
+                    id="e0407540"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6916,7 +6916,7 @@ column.
                 
                 
                     <td
-                    id="e97d5992"
+                    id="b79d78c2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6946,7 +6946,7 @@ column.
                 
                 
                     <td
-                    id="66194e97"
+                    id="8d0e9c6a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6976,7 +6976,7 @@ column.
                 
                 
                     <td
-                    id="7379c8b8"
+                    id="22eb5355"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7006,7 +7006,7 @@ column.
                 
                 
                     <td
-                    id="ee53b88b"
+                    id="3e1bd3f8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7036,7 +7036,7 @@ column.
                 
                 
                     <td
-                    id="a730599a"
+                    id="fcf8cb9f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7066,7 +7066,7 @@ column.
                 
                 
                     <td
-                    id="d99e0982"
+                    id="29f79873"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7100,7 +7100,7 @@ column.
                 
                 
                     <th
-                    id="fa2aefbe"
+                    id="02d66d5f"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7128,7 +7128,7 @@ column.
                 
                 
                     <td
-                    id="791e21b9"
+                    id="1b4ba740"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7158,7 +7158,7 @@ column.
                 
                 
                     <td
-                    id="a67e0b89"
+                    id="72096129"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7188,7 +7188,7 @@ column.
                 
                 
                     <td
-                    id="9764f4bd"
+                    id="f701ac76"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7218,7 +7218,7 @@ column.
                 
                 
                     <td
-                    id="1439820d"
+                    id="bbdae357"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7248,7 +7248,7 @@ column.
                 
                 
                     <td
-                    id="e9d1f8d2"
+                    id="c218dc72"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7278,7 +7278,7 @@ column.
                 
                 
                     <td
-                    id="9211d951"
+                    id="6a31d1e8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7308,7 +7308,7 @@ column.
                 
                 
                     <td
-                    id="04b2998c"
+                    id="159ffb7e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7432,7 +7432,7 @@ column.
                 
                 
                     <th
-                    id="4c91dbb6"
+                    id="4fc2f263"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7460,7 +7460,7 @@ column.
                 
                 
                     <td
-                    id="1a67c758"
+                    id="33ce7050"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7490,7 +7490,7 @@ column.
                 
                 
                     <td
-                    id="81549522"
+                    id="6822fa22"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7520,7 +7520,7 @@ column.
                 
                 
                     <td
-                    id="3e9692dd"
+                    id="300454a8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7550,7 +7550,7 @@ column.
                 
                 
                     <td
-                    id="39acf017"
+                    id="5050eddf"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7580,7 +7580,7 @@ column.
                 
                 
                     <td
-                    id="3fb90c88"
+                    id="32b181ca"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7610,7 +7610,7 @@ column.
                 
                 
                     <td
-                    id="2eb22f68"
+                    id="518ad136"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7640,7 +7640,7 @@ column.
                 
                 
                     <td
-                    id="26d9f19f"
+                    id="f8ffe853"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7674,7 +7674,7 @@ column.
                 
                 
                     <th
-                    id="7886815b"
+                    id="d573bd6a"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7702,7 +7702,7 @@ column.
                 
                 
                     <td
-                    id="f0ee7f1a"
+                    id="692f86d3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7732,7 +7732,7 @@ column.
                 
                 
                     <td
-                    id="5c4ec73e"
+                    id="5a31356f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7762,7 +7762,7 @@ column.
                 
                 
                     <td
-                    id="2a77d69a"
+                    id="10c571e1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7792,7 +7792,7 @@ column.
                 
                 
                     <td
-                    id="fae6e3d4"
+                    id="cd5ce0aa"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7822,7 +7822,7 @@ column.
                 
                 
                     <td
-                    id="06856050"
+                    id="27a28013"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7852,7 +7852,7 @@ column.
                 
                 
                     <td
-                    id="151b356d"
+                    id="9b822618"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7882,7 +7882,7 @@ column.
                 
                 
                     <td
-                    id="20b946b3"
+                    id="b387c95d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7916,7 +7916,7 @@ column.
                 
                 
                     <th
-                    id="bbbec8e4"
+                    id="ac6c1b0b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7944,7 +7944,7 @@ column.
                 
                 
                     <td
-                    id="7c01590a"
+                    id="430a43f3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7974,7 +7974,7 @@ column.
                 
                 
                     <td
-                    id="5cf57601"
+                    id="f55dbdae"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8004,7 +8004,7 @@ column.
                 
                 
                     <td
-                    id="e0dc5dba"
+                    id="72de31db"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8034,7 +8034,7 @@ column.
                 
                 
                     <td
-                    id="6168671d"
+                    id="5394c3a4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8064,7 +8064,7 @@ column.
                 
                 
                     <td
-                    id="0b1f6ea8"
+                    id="0162e627"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8094,7 +8094,7 @@ column.
                 
                 
                     <td
-                    id="44ffc9a9"
+                    id="04a32314"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8124,7 +8124,7 @@ column.
                 
                 
                     <td
-                    id="c914327a"
+                    id="b364f095"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8158,7 +8158,7 @@ column.
                 
                 
                     <th
-                    id="95ed0e47"
+                    id="d1d8183b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -8186,7 +8186,7 @@ column.
                 
                 
                     <td
-                    id="2adcf348"
+                    id="f5507363"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8216,7 +8216,7 @@ column.
                 
                 
                     <td
-                    id="d31c4e57"
+                    id="8c61affa"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8246,7 +8246,7 @@ column.
                 
                 
                     <td
-                    id="c029c0d8"
+                    id="64585c0e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8276,7 +8276,7 @@ column.
                 
                 
                     <td
-                    id="a8047384"
+                    id="62da02ca"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8306,7 +8306,7 @@ column.
                 
                 
                     <td
-                    id="d90ac39b"
+                    id="9ebd0c24"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8336,7 +8336,7 @@ column.
                 
                 
                     <td
-                    id="27263aca"
+                    id="73b90336"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8366,7 +8366,7 @@ column.
                 
                 
                     <td
-                    id="409a7e31"
+                    id="f3336d80"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8400,7 +8400,7 @@ column.
                 
                 
                     <th
-                    id="09c6b25c"
+                    id="103f6782"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -8428,7 +8428,7 @@ column.
                 
                 
                     <td
-                    id="3df34c82"
+                    id="c83ba779"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8458,7 +8458,7 @@ column.
                 
                 
                     <td
-                    id="11edb24b"
+                    id="b92d28d4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8488,7 +8488,7 @@ column.
                 
                 
                     <td
-                    id="b42a5437"
+                    id="9227a616"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8518,7 +8518,7 @@ column.
                 
                 
                     <td
-                    id="0b61a168"
+                    id="ef49c1d3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8548,7 +8548,7 @@ column.
                 
                 
                     <td
-                    id="a0a7d726"
+                    id="d7545eb7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8578,7 +8578,7 @@ column.
                 
                 
                     <td
-                    id="b3a61d32"
+                    id="004169fc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8608,7 +8608,7 @@ column.
                 
                 
                     <td
-                    id="ba3cf5c6"
+                    id="a66c7c34"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9799,7 +9799,7 @@ column.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_122aab2c">
+        <skrub-table-report class="report" id="report_d3284fff">
         </skrub-table-report>
 
         <script type="module">
@@ -10903,7 +10903,7 @@ column.
         </script>
     </div>
 
-    <div id="report_122aab2c-wrapper-fallback">
+    <div id="report_d3284fff-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -10914,8 +10914,8 @@ column.
     </div>
 
     <script>
-     document.getElementById("report_122aab2c-wrapper").removeAttribute("hidden");
-     document.getElementById("report_122aab2c-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_d3284fff-wrapper").removeAttribute("hidden");
+     document.getElementById("report_d3284fff-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -11182,8 +11182,8 @@ amount for each kind of product in a basket:
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_0e954a5f-wrapper" hidden>
-        <template id="report_0e954a5f-template">
+    <div id="report_c70eff85-wrapper" hidden>
+        <template id="report_c70eff85-template">
             <style>
              /*!
     Pure v3.0.0
@@ -12576,7 +12576,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="3fc8c4a7"
+                    id="3ece773f"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -12606,7 +12606,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="884b87c1"
+                    id="ebb60cf8"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12640,7 +12640,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="c12cf8d9"
+                    id="56868621"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12674,7 +12674,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="1e0d4166"
+                    id="b78ded24"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12708,7 +12708,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="8a73abb0"
+                    id="ae9b5210"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12742,7 +12742,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="7806f957"
+                    id="7dd47673"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12776,7 +12776,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="5389fa50"
+                    id="15e7389c"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12810,7 +12810,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="2ad20051"
+                    id="5f897fcf"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12844,7 +12844,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="3a25fa51"
+                    id="9d7934e4"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12892,7 +12892,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="910af91c"
+                    id="0a91da45"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -12920,7 +12920,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="96b05869"
+                    id="1ab1d702"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12950,7 +12950,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="1a8b6cd2"
+                    id="c214971a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12980,7 +12980,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="d8201fda"
+                    id="4d0bb06f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13010,7 +13010,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="4a9216ed"
+                    id="30c35ea4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13040,7 +13040,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="909adc0c"
+                    id="4a6df2ec"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13070,7 +13070,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="40b944e1"
+                    id="acce74c1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13100,7 +13100,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="f670f196"
+                    id="976cd476"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13130,7 +13130,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="63adcc99"
+                    id="e91f401b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13164,7 +13164,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="a17a52ce"
+                    id="dd52e228"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -13192,7 +13192,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="42687dcc"
+                    id="1e147eeb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13222,7 +13222,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="af91dec7"
+                    id="9a248b0a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13252,7 +13252,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="e68ce2c5"
+                    id="47d56c18"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13282,7 +13282,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="c5299fc3"
+                    id="496d5b0d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13312,7 +13312,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="38e8a751"
+                    id="9ca3e24d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13342,7 +13342,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="7829fd59"
+                    id="442f9e71"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13372,7 +13372,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="eda92b6f"
+                    id="a0a75abc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13402,7 +13402,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="b5c7f147"
+                    id="4a113d69"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13436,7 +13436,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="173c6418"
+                    id="c2271e04"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -13464,7 +13464,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="420495f5"
+                    id="aa12254d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13494,7 +13494,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="3a989e2b"
+                    id="6efe3e00"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13524,7 +13524,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="3be2fcb1"
+                    id="1310e026"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13554,7 +13554,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="9798e812"
+                    id="207a4555"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13584,7 +13584,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="01636399"
+                    id="80a23ab9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13614,7 +13614,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="f0d3ad43"
+                    id="c89e3a44"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13644,7 +13644,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="62df9d28"
+                    id="c3afe364"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13674,7 +13674,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="cf30d70b"
+                    id="43ab8df7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13708,7 +13708,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="4b5b24c0"
+                    id="89747a56"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -13736,7 +13736,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="e899fbee"
+                    id="f9f535f8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13766,7 +13766,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="03cae4d8"
+                    id="9cbba17f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13796,7 +13796,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="8d0557f9"
+                    id="89c57c5b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13826,7 +13826,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="4d21565d"
+                    id="8fc3ca85"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13856,7 +13856,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="ca4ab1d2"
+                    id="0585d91a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13886,7 +13886,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="69cdb752"
+                    id="da811ae8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13916,7 +13916,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="77d5ddbf"
+                    id="9439aacc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13946,7 +13946,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="b0a5630e"
+                    id="ccb118aa"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13980,7 +13980,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="9e127958"
+                    id="3976bad8"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -14008,7 +14008,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="42c922a0"
+                    id="e8855ecd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14038,7 +14038,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="b3e9ee02"
+                    id="15a44621"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14068,7 +14068,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="b61e25a1"
+                    id="db75dcc5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14098,7 +14098,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="83386ae6"
+                    id="7f1ec008"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14128,7 +14128,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="ca68314d"
+                    id="71c9ee3c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14158,7 +14158,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="8ba61dc8"
+                    id="c571ed9a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14188,7 +14188,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="58a06dd1"
+                    id="caa56166"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14218,7 +14218,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="d4e8b90f"
+                    id="4fbd25b9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14352,7 +14352,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="9d5c756d"
+                    id="0d6c1752"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -14380,7 +14380,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="ee3b99cf"
+                    id="492e9115"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14410,7 +14410,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="bdfdc551"
+                    id="94558a1c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14440,7 +14440,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="dd926176"
+                    id="794fe633"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14470,7 +14470,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="2414dcf5"
+                    id="18bcf503"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14500,7 +14500,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="5c430826"
+                    id="279f33c2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14530,7 +14530,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="e1b751c6"
+                    id="5757b2a6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14560,7 +14560,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="88a54639"
+                    id="c30b6969"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14590,7 +14590,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="9e2114be"
+                    id="624cb8eb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14624,7 +14624,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="0767ca35"
+                    id="15e51546"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -14652,7 +14652,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="2a038cfe"
+                    id="77086807"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14682,7 +14682,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="b6db8924"
+                    id="756b23c3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14712,7 +14712,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="d8f33f72"
+                    id="48ff9001"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14742,7 +14742,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="f71fcda3"
+                    id="19db16fa"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14772,7 +14772,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="c7871875"
+                    id="64abbea7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14802,7 +14802,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="c606e416"
+                    id="c48f4ee6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14832,7 +14832,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="3c56fae2"
+                    id="82a4c142"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14862,7 +14862,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="34c09fba"
+                    id="e4897f7a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14896,7 +14896,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="3b157982"
+                    id="f2664728"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -14924,7 +14924,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="d089c1fc"
+                    id="9f26fe55"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14954,7 +14954,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="6de4bf45"
+                    id="3c4015fd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14984,7 +14984,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="ecca93bd"
+                    id="7400fa0d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15014,7 +15014,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="97894bcb"
+                    id="4efe4bed"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15044,7 +15044,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="95318bee"
+                    id="14ef7e53"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15074,7 +15074,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="04b8bad7"
+                    id="5b644523"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15104,7 +15104,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="8fc612c5"
+                    id="5b8c6d8c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15134,7 +15134,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="c6f596f3"
+                    id="8d07fef9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15168,7 +15168,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="5f054aaf"
+                    id="ed8ba104"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -15196,7 +15196,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="495e7f78"
+                    id="5e5a9d99"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15226,7 +15226,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="021240c3"
+                    id="71abb247"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15256,7 +15256,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="7ab10a24"
+                    id="d4093f79"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15286,7 +15286,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="d7d1ec6a"
+                    id="01850ad3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15316,7 +15316,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="0ac338a0"
+                    id="20ef3e16"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15346,7 +15346,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="1cf1a07d"
+                    id="c1149657"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15376,7 +15376,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="97ca539c"
+                    id="dde1804d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15406,7 +15406,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="bee9ccee"
+                    id="c047a929"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15440,7 +15440,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="b12d849f"
+                    id="043517d7"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -15468,7 +15468,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="61b39eaf"
+                    id="7e5fc8ef"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15498,7 +15498,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="008bcbcc"
+                    id="6ba8d5e5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15528,7 +15528,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="89209947"
+                    id="798c93b9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15558,7 +15558,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="09228e2a"
+                    id="0d590706"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15588,7 +15588,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="3e76c6bb"
+                    id="6d8e9a5c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15618,7 +15618,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="78a0a313"
+                    id="68b86b62"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15648,7 +15648,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="d5ea9a7c"
+                    id="2a875f05"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15678,7 +15678,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="dda259ff"
+                    id="286cf512"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16989,7 +16989,7 @@ amount for each kind of product in a basket:
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_0e954a5f">
+        <skrub-table-report class="report" id="report_c70eff85">
         </skrub-table-report>
 
         <script type="module">
@@ -18093,7 +18093,7 @@ amount for each kind of product in a basket:
         </script>
     </div>
 
-    <div id="report_0e954a5f-wrapper-fallback">
+    <div id="report_c70eff85-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -18104,8 +18104,8 @@ amount for each kind of product in a basket:
     </div>
 
     <script>
-     document.getElementById("report_0e954a5f-wrapper").removeAttribute("hidden");
-     document.getElementById("report_0e954a5f-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_c70eff85-wrapper").removeAttribute("hidden");
+     document.getElementById("report_c70eff85-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -18545,8 +18545,8 @@ add the learning rate as a hyperparameter to tune.
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_58977a25-wrapper" hidden>
-        <template id="report_58977a25-template">
+    <div id="report_83393893-wrapper" hidden>
+        <template id="report_83393893-template">
             <style>
              /*!
     Pure v3.0.0
@@ -19939,7 +19939,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="eee8bd07"
+                    id="f443a0a5"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -19969,7 +19969,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="fd3a18d2"
+                    id="dc68b161"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -20017,7 +20017,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="9aa3da18"
+                    id="9ffd29f6"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20045,7 +20045,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="0a478fca"
+                    id="576b5e0d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20079,7 +20079,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="7f264bbc"
+                    id="adb1f32b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20107,7 +20107,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="4c75c200"
+                    id="3d062f1c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20141,7 +20141,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="54b190f2"
+                    id="172d5be2"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20169,7 +20169,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="0395a6e2"
+                    id="a364dbca"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20203,7 +20203,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="d31170e0"
+                    id="92dd33be"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20231,7 +20231,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="43b22e18"
+                    id="100e247a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20265,7 +20265,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="c3d32d70"
+                    id="dd67523f"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20293,7 +20293,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="5db21d71"
+                    id="d7ec6023"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20357,7 +20357,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="c5f886fb"
+                    id="33673c3c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20385,7 +20385,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="f9336250"
+                    id="f2679d8e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20419,7 +20419,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="54d9032b"
+                    id="aaf16960"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20447,7 +20447,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="cd417296"
+                    id="0645e178"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20481,7 +20481,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="b5ed5c26"
+                    id="12051df9"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20509,7 +20509,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="a79b665f"
+                    id="860b95f1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20543,7 +20543,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="6204fba5"
+                    id="edc35ecf"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20571,7 +20571,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="d5029609"
+                    id="faf827cb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20605,7 +20605,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="97b6b8f4"
+                    id="387e8676"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20633,7 +20633,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="44682729"
+                    id="c62773f1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -21200,7 +21200,7 @@ add the learning rate as a hyperparameter to tune.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_58977a25">
+        <skrub-table-report class="report" id="report_83393893">
         </skrub-table-report>
 
         <script type="module">
@@ -22304,7 +22304,7 @@ add the learning rate as a hyperparameter to tune.
         </script>
     </div>
 
-    <div id="report_58977a25-wrapper-fallback">
+    <div id="report_83393893-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -22315,8 +22315,8 @@ add the learning rate as a hyperparameter to tune.
     </div>
 
     <script>
-     document.getElementById("report_58977a25-wrapper").removeAttribute("hidden");
-     document.getElementById("report_58977a25-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_83393893-wrapper").removeAttribute("hidden");
+     document.getElementById("report_83393893-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -22405,59 +22405,59 @@ our search result and some plotting logic.
       <tbody>
         <tr>
           <th>0</th>
-          <td>12</td>
-          <td>LSA</td>
-          <td>0.052436</td>
-          <td>0.885326</td>
-        </tr>
-        <tr>
-          <th>1</th>
           <td>10</td>
           <td>LSA</td>
           <td>0.067286</td>
-          <td>0.884732</td>
+          <td>0.883781</td>
         </tr>
         <tr>
-          <th>2</th>
-          <td>13</td>
-          <td>MinHash</td>
-          <td>0.086695</td>
-          <td>0.882149</td>
-        </tr>
-        <tr>
-          <th>3</th>
+          <th>1</th>
           <td>9</td>
           <td>LSA</td>
           <td>0.038147</td>
-          <td>0.881264</td>
+          <td>0.882999</td>
         </tr>
         <tr>
-          <th>4</th>
+          <th>2</th>
+          <td>12</td>
+          <td>LSA</td>
+          <td>0.052436</td>
+          <td>0.882657</td>
+        </tr>
+        <tr>
+          <th>3</th>
           <td>15</td>
           <td>MinHash</td>
           <td>0.056148</td>
-          <td>0.879350</td>
+          <td>0.879368</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>13</td>
+          <td>MinHash</td>
+          <td>0.086695</td>
+          <td>0.879206</td>
         </tr>
         <tr>
           <th>5</th>
           <td>15</td>
           <td>LSA</td>
           <td>0.013766</td>
-          <td>0.875499</td>
+          <td>0.874812</td>
         </tr>
         <tr>
           <th>6</th>
           <td>11</td>
           <td>MinHash</td>
           <td>0.446581</td>
-          <td>0.743867</td>
+          <td>0.750568</td>
         </tr>
         <tr>
           <th>7</th>
           <td>13</td>
           <td>LSA</td>
           <td>0.501435</td>
-          <td>0.727845</td>
+          <td>0.729426</td>
         </tr>
       </tbody>
     </table>
@@ -22485,7 +22485,7 @@ We can also display the results of the search in a parallel coordinates plot:
 
     <div class="output_subarea output_html rendered_html output_result">
     <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.4.0.min.js" integrity="sha256-KEmPoupLpFyGMyGAiOsiNDbKDKAvxXAn/W+oQa0ZAfk=" crossorigin="anonymous"></script>                <div id="02e55a24-29ec-4ec4-bb15-27ff386bb1dc" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("02e55a24-29ec-4ec4-bb15-27ff386bb1dc")) {                    Plotly.newPlot(                        "02e55a24-29ec-4ec4-bb15-27ff386bb1dc",                        [{"dimensions":[{"label":"n_components","ticktext":["9","10","11","12","13","14","15"],"tickvals":[9,10,11,12,13,14,15],"values":{"dtype":"f8","bdata":"iIuA5z8JKEDtb6OvKwEkQHGX\u002f1TR9ClAAAAAAAAAIkAAAAAAAAAuQGrbKOYG9i1A0iUhNsgJJkCRM2qj3wYqQA=="}},{"label":"encoder","ticktext":["LSA","MinHash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAABOHgbaKUxnPwAAAAAAAPA\u002fApDca1vWYT\u002fDTis00fTvP1RgjYAzTFk\u002fAAAAAAAA8D8AAAAAAAAAAA=="}},{"label":"learning_rate","ticktext":["0.01","0.02","0.03","0.05","0.07","0.10","0.15","0.23","0.34","0.50"],"tickvals":[-4.285521444367096,-3.8860502958821126,-3.4865791473971295,-3.0871079989121464,-2.687636850427163,-2.2881657019421793,-1.8886945534571962,-1.489223404972213,-1.0897522564872295,-0.690281108002246],"values":{"dtype":"f8","bdata":"I3tPfFGdB8CfXiCuT6MFwLakF0fSjAPAOsx6CwcRCsBqk+1eie4GwBV0x7tfJBHAMoh+z5qc6b9AUv1nyBbmvw=="}},{"label":"score time","ticktext":["1.4","1.5","1.7","1.8","1.9","2.1","2.2","2.3","2.5","2.6"],"tickvals":[1.3814011573791505,1.518632443745931,1.6558637301127117,1.793095016479492,1.930326302846273,2.0675575892130533,2.204788875579834,2.3420201619466146,2.479251448313395,2.616482734680176],"values":{"dtype":"f8","bdata":"43ZZXunEAUA\u002fMkVdlLMDQCvZUNU3lvk\u002fAAAAgI7uBEB1LM7ziej8P9\u002fXxfq16gNAmpmZGTga9j80pwfi1BMAQA=="}},{"label":"fit time","ticktext":["4","5","7","8","9","11","12","13","14","16"],"tickvals":[4.122623300552368,5.40358125368754,6.684539206822713,7.965497159957885,9.246455113093058,10.527413066228231,11.808371019363403,13.089328972498576,14.370286925633748,15.651244878768921],"values":{"dtype":"f8","bdata":"\u002fIe5\u002fa6bK0BRY1hYgJUqQHDz3iWQ1hhAME+o98r0LEDeWTvGzRkgQAAAAPhvTS9AZmZm9pB9EED36cm95KYlQA=="}},{"label":"score","ticktext":["0.73","0.75","0.76","0.78","0.80","0.82","0.83","0.85","0.87","0.89"],"tickvals":[0.7278451035955573,0.7453429909775221,0.762840878359487,0.7803387657414518,0.7978366531234166,0.8153345405053815,0.8328324278873462,0.850330315269311,0.8678282026512759,0.8853260900332407],"values":{"dtype":"f8","bdata":"UqBfYZdU7D\u002fdKQG2uE\u002fsP4Nw+RGROuw\u002fvWiltk8z7D8NMMYioiPsP1Dqqm0WBOw\u002fH9bae8HN5z+Q5I\u002fQgUrnPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"UqBfYZdU7D\u002fdKQG2uE\u002fsP4Nw+RGROuw\u002fvWiltk8z7D8NMMYioiPsP1Dqqm0WBOw\u002fH9bae8HN5z+Q5I\u002fQgUrnPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.4.0.min.js" integrity="sha256-KEmPoupLpFyGMyGAiOsiNDbKDKAvxXAn/W+oQa0ZAfk=" crossorigin="anonymous"></script>                <div id="0ca364ad-95b7-4ca7-8e42-0a6fb88f2c77" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("0ca364ad-95b7-4ca7-8e42-0a6fb88f2c77")) {                    Plotly.newPlot(                        "0ca364ad-95b7-4ca7-8e42-0a6fb88f2c77",                        [{"dimensions":[{"label":"n_components","ticktext":["9","10","11","12","13","14","15"],"tickvals":[9,10,11,12,13,14,15],"values":{"dtype":"f8","bdata":"k4FQ8uz2I0AAAAAAAAAiQBjpI+vc8ydAAAAAAAAALkCVwZUEEPQpQGkXQrgd\u002fi1Ap3PfO0UDJkBZYxCrovIpQA=="}},{"label":"encoder","ticktext":["LSA","MinHash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8D\u002fM9o3iI9rvPyKHvU1S92I\u002fAtWtA7b27z9wVJKAtP5lPw=="}},{"label":"learning_rate","ticktext":["0.01","0.02","0.03","0.05","0.07","0.10","0.15","0.23","0.34","0.50"],"tickvals":[-4.285521444367096,-3.8860502958821126,-3.4865791473971295,-3.0871079989121464,-2.687636850427163,-2.2881657019421793,-1.8886945534571962,-1.489223404972213,-1.0897522564872295,-0.690281108002246],"values":{"dtype":"f8","bdata":"he03OM10BcBow3Wu2A8KwNNtTPRCugfAX8RWAP4bB8Ab\u002fmUxcWwDwBV0x7tfJBHAboO6u1GY6b9AUv1nyBbmvw=="}},{"label":"score time","ticktext":["1.4","1.5","1.6","1.8","1.9","2.0","2.2","2.3","2.5","2.6"],"tickvals":[1.3522577285766602,1.4898343563079834,1.6274109840393067,1.7649876117706298,1.9025642395019533,2.0401408672332764,2.1777174949645994,2.315294122695923,2.4528707504272464,2.5904473781585695],"values":{"dtype":"f8","bdata":"nP7pKJI8AEDTzHHJGoYDQHLfvkbsnwFAVm+Q1zI2+z8AAAAA2aL1P5qZmXk8uQRApbTsAkUO9j\u002fCOmRo1ij8Pw=="}},{"label":"fit time","ticktext":["4.3","5.4","6.6","7.7","8.8","10.0","11.1","12.3","13.4","14.6"],"tickvals":[4.271574640274048,5.41550489531623,6.5594351503584125,7.703365405400594,8.847295660442775,9.991225915484957,11.13515617052714,12.279086425569322,13.423016680611504,14.566946935653686],"values":{"dtype":"f8","bdata":"hZag3ZUVJ0AOn+589IYpQCgi36dBZypAKTnYsgYdHkC7jCRmJR8XQGZmZt5GIi1AmpmZqRcWEUDhvL2B+L0kQA=="}},{"label":"score","ticktext":["0.73","0.75","0.76","0.78","0.80","0.82","0.83","0.85","0.87","0.88"],"tickvals":[0.7294257562023025,0.7465763941370039,0.7637270320717053,0.7808776700064067,0.7980283079411081,0.8151789458758096,0.832329583810511,0.8494802217452124,0.8666308596799138,0.8837814976146152],"values":{"dtype":"f8","bdata":"0BGiIvBH7D\u002flHudeh0HsP2Wx2tq4Puw\u002fNiL10scj7D9yn4qfdCLsP4grcT52\u002fus\u002ffQ8dkacE6D949\u002feudFfnPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"0BGiIvBH7D\u002flHudeh0HsP2Wx2tq4Puw\u002fNiL10scj7D9yn4qfdCLsP4grcT52\u002fus\u002ffQ8dkacE6D949\u002feudFfnPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -22566,9 +22566,9 @@ in-depth tutorial.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (2 minutes 45.919 seconds)
+   **Total running time of the script:** (2 minutes 34.636 seconds)
 
-**Estimated memory usage:**  687 MB
+**Estimated memory usage:**  745 MB
 
 
 .. _sphx_glr_download_auto_examples_data_ops_1120_multiple_tables.py:
