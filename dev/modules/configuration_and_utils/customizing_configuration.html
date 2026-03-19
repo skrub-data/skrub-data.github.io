@@ -646,7 +646,7 @@
 (see the <a class="reference internal" href="../../reference/generated/skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a> documentation for more detail).</p>
 <p>It is possible to change configuration options using the <a class="reference internal" href="../../reference/generated/skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a> function:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_config</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">set_config</span><span class="p">(</span><span class="n">use_table_report</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">set_config</span><span class="p">(</span><span class="n">table_report_verbosity</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>This alters the behavior of skrub in the current script. Each configuration parameter
@@ -667,7 +667,7 @@ are available by using</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">config</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">get_config</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">config</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
-<span class="go">dict_keys([&#39;use_table_report&#39;, &#39;use_table_report_data_ops&#39;, &#39;table_report_verbosity&#39;, &#39;max_plot_columns&#39;, &#39;max_association_columns&#39;, &#39;subsampling_seed&#39;, &#39;enable_subsampling&#39;, &#39;float_precision&#39;, &#39;cardinality_threshold&#39;, &#39;data_dir&#39;, &#39;eager_data_ops&#39;])</span>
+<span class="go">dict_keys([&#39;use_table_report_data_ops&#39;, &#39;table_report_verbosity&#39;, &#39;max_plot_columns&#39;, &#39;max_association_columns&#39;, &#39;subsampling_seed&#39;, &#39;enable_subsampling&#39;, &#39;float_precision&#39;, &#39;cardinality_threshold&#39;, &#39;data_dir&#39;, &#39;eager_data_ops&#39;])</span>
 </pre></div>
 </div>
 <p>These are the parameters currently available in the global configuration:</p>
@@ -687,57 +687,52 @@ are available by using</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">use_table_report</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">SKB_USE_TABLE_REPORT</span></code></p></td>
-<td><p>If set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, the HTML representation of Pandas and Polars dataframes is replaced with the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">use_table_report_data_ops</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">use_table_report_data_ops</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">SKB_USE_TABLE_REPORT_DATA_OPS</span></code></p></td>
 <td><p>Set the HTML representation used for the Data Ops previews. If <code class="docutils literal notranslate"><span class="pre">True</span></code>, use the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>, otherwise use the default Pandas or Polars representation.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">table_report_verbosity</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">table_report_verbosity</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">SKB_TABLE_REPORT_VERBOSITY</span></code></p></td>
 <td><p>Set the verbosity of the <a href="#id1"><span class="problematic" id="id2">:clas:`~skrub.TableReport`</span></a>. If <code class="docutils literal notranslate"><span class="pre">1</span></code>, print on screen the progress by column, if <code class="docutils literal notranslate"><span class="pre">0</span></code> print nothing.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">max_plot_columns</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">max_plot_columns</span></code></p></td>
 <td><p>30</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">SKB_MAX_PLOT_COLUMNS</span></code></p></td>
 <td><p>If a dataframe has more columns than the value set here, the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> will skip generating the plots.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">max_association_columns</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">max_association_columns</span></code></p></td>
 <td><p>30</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">SKB_MAX_ASSOCIATION_COLUMNS</span></code></p></td>
 <td><p>If a dataframe has more columns than the value set here, the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> will skip computing the associations.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">subsampling_seed</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">subsampling_seed</span></code></p></td>
 <td><p>0</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">SKB_SUBSAMPLING_SEED</span></code></p></td>
 <td><p>Set the random seed of subsampling in <a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.subsample.html#skrub.DataOp.skb.subsample" title="skrub.DataOp.skb.subsample"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.DataOp.skb.subsample()</span></code></a>, when <code class="docutils literal notranslate"><span class="pre">how=&quot;random&quot;</span></code> is passed.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">enable_subsampling</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">enable_subsampling</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">&quot;default&quot;</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">SKB_ENABLE_SUBSAMPLING</span></code></p></td>
 <td><p>Control the activation of subsampling in <a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.subsample.html#skrub.DataOp.skb.subsample" title="skrub.DataOp.skb.subsample"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.DataOp.skb.subsample()</span></code></a>. If <code class="docutils literal notranslate"><span class="pre">&quot;default&quot;</span></code>, the behavior of <a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.subsample.html#skrub.DataOp.skb.subsample" title="skrub.DataOp.skb.subsample"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.DataOp.skb.subsample()</span></code></a> is used. If <code class="docutils literal notranslate"><span class="pre">&quot;disable&quot;</span></code>, subsampling is never used, so skb.subsample becomes a no-op. If <code class="docutils literal notranslate"><span class="pre">&quot;force&quot;</span></code>, subsampling is used in all DataOps evaluation modes (eval(), fit_transform, etc.).</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">float_precision</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">float_precision</span></code></p></td>
 <td><p>3</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">SKB_FLOAT_PRECISION</span></code></p></td>
 <td><p>Control the number of significant digits shown when formatting floats. Applies overall precision rather than fixed decimal places.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">cardinality_threshold</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cardinality_threshold</span></code></p></td>
 <td><p>40</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">SKB_CARDINALITY_THRESHOLD</span></code></p></td>
 <td><p>Set the <code class="docutils literal notranslate"><span class="pre">cardinality_threshold</span></code> argument of <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>. Additionally, set the threshold for warning the user about high cardinality features in the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">data_dir</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">data_dir</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">~/skrub_data</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">SKB_DATA_DIRECTORY</span></code></p></td>
 <td><p>Set the default location used by skrub to store datasets and other data, such as the Data Ops reports.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">eager_data_ops</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">eager_data_ops</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">SKB_EAGER_DATA_OPS</span></code></p></td>
 <td><p>Eagerly perform checks on the DataOps as soon they are created, and compute previews if preview data is available. If disabled, those checks are delayed until the DataOp is actually used</p></td>

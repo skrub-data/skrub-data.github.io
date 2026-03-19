@@ -610,14 +610,17 @@ fields contain the paths to the datasets stored in the <code class="docutils lit
 The default <code class="docutils literal notranslate"><span class="pre">skrub_data</span></code> folder can now be set in the skrub configuration and by setting
 the <code class="docutils literal notranslate"><span class="pre">SKB_DATA_DIRECTORY</span></code> environment variable. The environment variable <code class="docutils literal notranslate"><span class="pre">SKRUB_DATA_DIRECTORY</span></code>
 is deprecated and will be removed in a future version of skrub.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1852">#1852</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.
-<code class="xref py py-class docutils literal notranslate"><span class="pre">SingleColumnTransformer</span></code> and associated exception <code class="xref py py-class docutils literal notranslate"><span class="pre">RejectColumn</span></code> (used
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1852">#1852</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">core.SingleColumnTransformer</span></code> and associated exception <code class="xref py py-class docutils literal notranslate"><span class="pre">core.RejectColumn</span></code> (used
 internally by many skrub estimators) have been added to the public API, in the newly-created
-<a href="#id2"><span class="problematic" id="id3">:package:`skrub.core`</span></a> module. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1851">#1851</a> by <a class="reference external" href="https://github.com/emassoulie">Eloi Massoulié</a>.
-- Added the strings <code class="docutils literal notranslate"><span class="pre">&quot;None&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;none&quot;</span></code> to the list of null string values in
+<a href="#id2"><span class="problematic" id="id3">:package:`skrub.core`</span></a> module. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1851">#1851</a> by <a class="reference external" href="https://github.com/emassoulie">Eloi Massoulié</a>.</p></li>
+<li><p>Added the strings <code class="docutils literal notranslate"><span class="pre">&quot;None&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;none&quot;</span></code> to the list of null string values in
 <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a>. Also, exposed the list of null string values that will be set
 to null by the <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> as the parameter <code class="docutils literal notranslate"><span class="pre">null_strings</span></code>.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1952">#1952</a> and <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1954">#1954</a> by <a class="reference external" href="https://github.com/lisaleemcb">Lisa McBride</a>.</p></li>
+<li><p>The configuration parameter “use_table_report” has been removed from the skrub
+configuration. Use <a class="reference internal" href="reference/generated/skrub.patch_display.html#skrub.patch_display" title="skrub.patch_display"><code class="xref py py-meth docutils literal notranslate"><span class="pre">patch_display()</span></code></a> instead.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1973">#1973</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 </ul>
 </section>
 <section id="bug-fixes">
