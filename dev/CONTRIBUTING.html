@@ -844,6 +844,19 @@ run the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>html
 </pre></div>
 </div>
+<p>On Windows, use:</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span>make.bat html
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are working on Windows, building the example <code class="docutils literal notranslate"><span class="pre">1131_optuna_choices</span></code>
+may fail with a permission error when running <code class="docutils literal notranslate"><span class="pre">make.bat</span> <span class="pre">html</span></code>. This is
+because optuna uses symlinks for file locking, which requires admin
+privileges on Windows by default. The rest of the documentation build
+should run without problem, so it is safe to ignore this error if your
+contribution does not touch that particular example.</p>
+</div>
 <p>The documentation will be generated in the <code class="docutils literal notranslate"><span class="pre">_build/html/</span></code> directory
 and are viewable in a web browser, for instance by opening the local
 <code class="docutils literal notranslate"><span class="pre">_build/html/index.html</span></code> file.</p>
@@ -852,10 +865,18 @@ specific examples, you can use the following command with a regex pattern:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>html<span class="w"> </span><span class="nv">EXAMPLES_PATTERN</span><span class="o">=</span>your_regex_goes_here
 </pre></div>
 </div>
+<p>On Windows, use:</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span>make.bat html EXAMPLES_PATTERN=your_regex_goes_here
+</pre></div>
+</div>
 <p>This is especially helpful when you’re only modifying or checking a few examples.</p>
 <p>It is also possible to build the documentation without running the examples
 without running the examples by using the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>html-noplot
+</pre></div>
+</div>
+<p>On Windows, use:</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span>make.bat html-noplot
 </pre></div>
 </div>
 <p>This command generates the documentation without re-executing the examples, which can

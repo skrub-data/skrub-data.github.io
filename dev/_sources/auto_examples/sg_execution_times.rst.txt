@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**07:41.422** total execution time for 11 files **from auto_examples**:
+**10:20.274** total execution time for 11 files **from auto_examples**:
 
 .. container::
 
@@ -33,35 +33,35 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_0020_text_with_string_encoders.py` (``0020_text_with_string_encoders.py``)
-     - 02:34.952
-     - 1367.8
+     - 03:16.381
+     - 1300.7
    * - :ref:`sphx_glr_auto_examples_0070_join_aggregation.py` (``0070_join_aggregation.py``)
-     - 02:05.829
-     - 826.9
+     - 03:09.891
+     - 759.9
    * - :ref:`sphx_glr_auto_examples_0010_encodings.py` (``0010_encodings.py``)
-     - 00:39.675
-     - 584.8
-   * - :ref:`sphx_glr_auto_examples_0060_multiple_key_join.py` (``0060_multiple_key_join.py``)
-     - 00:32.872
-     - 3072.9
+     - 00:47.245
+     - 560.9
    * - :ref:`sphx_glr_auto_examples_0080_interpolation_join.py` (``0080_interpolation_join.py``)
-     - 00:31.961
-     - 2737.0
+     - 00:43.787
+     - 2702.5
+   * - :ref:`sphx_glr_auto_examples_0060_multiple_key_join.py` (``0060_multiple_key_join.py``)
+     - 00:40.111
+     - 2973.8
    * - :ref:`sphx_glr_auto_examples_0100_squashing_scaler.py` (``0100_squashing_scaler.py``)
-     - 00:22.624
-     - 584.9
+     - 00:27.926
+     - 558.4
    * - :ref:`sphx_glr_auto_examples_0040_fuzzy_joining.py` (``0040_fuzzy_joining.py``)
-     - 00:20.770
-     - 591.1
+     - 00:27.675
+     - 556.6
    * - :ref:`sphx_glr_auto_examples_0090_apply_to_cols.py` (``0090_apply_to_cols.py``)
-     - 00:12.026
-     - 582.8
+     - 00:18.380
+     - 556.2
    * - :ref:`sphx_glr_auto_examples_0000_getting_started.py` (``0000_getting_started.py``)
-     - 00:10.880
-     - 583.1
+     - 00:14.190
+     - 556.6
    * - :ref:`sphx_glr_auto_examples_0030_datetime_encoder.py` (``0030_datetime_encoder.py``)
-     - 00:07.371
-     - 585.8
+     - 00:10.877
+     - 559.4
    * - :ref:`sphx_glr_auto_examples_0050_deduplication.py` (``0050_deduplication.py``)
-     - 00:02.462
-     - 583.3
+     - 00:03.811
+     - 557.1
