@@ -639,6 +639,9 @@ dataframe. <a class="reference external" href="https://github.com/skrub-data/skr
 <li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">CheckInputDataFrame</span></code> no longer collects Polars LazyFrames automatically;
 a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> is now raised instead, consistent with the rest of the library.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1941">#1941</a> by <a class="reference external" href="https://github.com/MuditAtrey">Mudit Atrey</a>.</p></li>
+<li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_employee_salaries()</span></code> now correctly writes the train and test
+split CSV files to their respective paths when <code class="docutils literal notranslate"><span class="pre">split</span></code> is specified.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1964">#1964</a> by <a class="reference external" href="https://github.com/MuditAtrey">MuditAtrey</a>.</p></li>
 </ul>
 </section>
 <section id="documentation">
@@ -646,7 +649,7 @@ a <code class="docutils literal notranslate"><span class="pre">TypeError</span><
 <ul class="simple">
 <li><p>Updated gallery examples to load datasets from their file paths using
 <code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code>, following the pattern established in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1852">#1852</a>.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1940">#1940</a> by <a class="reference external" href="https://github.com/MuditAtrey">MuditAtrey</a>.</p></li>
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1940">#1940</a> and <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1964">#1964</a> by <a class="reference external" href="https://github.com/MuditAtrey">MuditAtrey</a>.</p></li>
 </ul>
 </section>
 </section>
