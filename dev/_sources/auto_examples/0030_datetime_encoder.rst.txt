@@ -766,7 +766,7 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 11.850 seconds)
+   **Total running time of the script:** (0 minutes 10.292 seconds)
 
 **Estimated memory usage:**  565 MB
 
