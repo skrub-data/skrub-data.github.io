@@ -31,8 +31,6 @@ See :ref:`End-to-End pipeline <user_guide_building_pipeline_index>` for further 
 
   tabular_pipeline
   TableVectorizer
+  ApplyToCols
   SelectCols
   DropCols
-  ApplyToCols
-  ApplyToEachCol
-  ApplyToSubFrame

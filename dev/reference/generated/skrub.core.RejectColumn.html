@@ -7,16 +7,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="ApplyToSubFrame" />
+<meta property="og:title" content="RejectColumn" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.ApplyToSubFrame.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.core.RejectColumn.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Gallery examples: Hands-On with Column Selection and Transformers" />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Gallery examples: Hands-On with Column Selection and Transformers" />
 
-    <title>ApplyToSubFrame &#8212; skrub</title>
+    <title>RejectColumn &#8212; skrub</title>
   
   
   
@@ -60,7 +58,7 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=fd10adb8"></script>
     <script src="../../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/generated/skrub.ApplyToSubFrame';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/generated/skrub.core.RejectColumn';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
@@ -69,13 +67,13 @@
             true;
         </script>
     <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
-    <link rel="canonical" href="https://skrub-data.org/stable/reference/generated/skrub.ApplyToSubFrame.html" />
+    <link rel="canonical" href="https://skrub-data.org/stable/reference/generated/skrub.core.RejectColumn.html" />
     <link rel="icon" href="../../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Encoding a column" href="../encoders.html" />
-    <link rel="prev" title="ApplyToEachCol" href="skrub.ApplyToEachCol.html" />
+    <link rel="next" title="Configuration" href="../config.html" />
+    <link rel="prev" title="SingleColumnTransformer" href="skrub.core.SingleColumnTransformer.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.8.dev0" />
@@ -511,14 +509,12 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../pipeline.html">pipeline</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../pipeline.html">pipeline</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="skrub.tabular_pipeline.html">tabular_pipeline</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToCols.html">ApplyToCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToCols.html">ApplyToCols</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToEachCol.html">ApplyToEachCol</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">ApplyToSubFrame</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../encoders.html">encoders</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -634,6 +630,11 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.OptunaParamSearch.html">OptunaParamSearch</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../advanced.html">advanced</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="skrub.core.SingleColumnTransformer.html">SingleColumnTransformer</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">RejectColumn</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../config.html">config</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="skrub.get_config.html">get_config</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.set_config.html">set_config</a></li>
@@ -704,9 +705,9 @@
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">API Reference</a></li>
     
     
-    <li class="breadcrumb-item"><a href="../pipeline.html" class="nav-link">Building a pipeline</a></li>
+    <li class="breadcrumb-item"><a href="../advanced.html" class="nav-link">Advanced topics</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">ApplyToSubFrame</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">RejectColumn</span></li>
   </ul>
 </nav>
 </div>
@@ -723,321 +724,89 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="applytosubframe">
-<h1>ApplyToSubFrame<a class="headerlink" href="#applytosubframe" title="Link to this heading">#</a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="skrub.ApplyToSubFrame">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">ApplyToSubFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transformer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">all()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_original</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rename_columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'{}'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/250c503/skrub/_apply_to_sub_frame.py#L14"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ApplyToSubFrame" title="Link to this definition">#</a></dt>
-<dd><p>Apply a transformer to part of a dataframe.</p>
-<p>A subset of the dataframe is selected and passed to the transformer (as a
-single input). This is different from <code class="docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code>, which fits a
-separate clone of the transformer to each selected column independently.
-All columns not listed in <code class="docutils literal notranslate"><span class="pre">cols</span></code> remain unmodified in the output.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">transform</span></code> and <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> methods of <code class="docutils literal notranslate"><span class="pre">transformer</span></code> must
-return dataframes of the same type (polars or pandas) as the input,
-either by default or by supporting the scikit-learn <code class="docutils literal notranslate"><span class="pre">set_output</span></code> API.</p>
-</div>
-<dl class="field-list">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
-<dt><strong>transformer</strong><span class="classifier">scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.TransformerMixin.html#sklearn.base.TransformerMixin" title="(in scikit-learn v1.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Transformer</span></code></a></span></dt><dd><p>The transformer to apply to the selected columns. <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> and
-<code class="docutils literal notranslate"><span class="pre">transform</span></code> must return a DataFrame. The resulting dataframe will
-appear as the last columns of the output dataframe. Unselected columns
-will appear unchanged in the output.</p>
-</dd>
-<dt><strong>cols</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/glossary.html#term-sequence" title="(in Python v3.14)"><span>sequence</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, or skrub selector, optional</span></dt><dd><p>The columns to attempt to transform. Only the selected columns will have
-the transformer applied. Columns outside of this selection are passed
-through unchanged (<code class="docutils literal notranslate"><span class="pre">fit_transform</span></code> is not called on them) and remain
-unmodified in the output. The default is to transform all columns.</p>
-</dd>
-<dt><strong>keep_original</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=False</span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the original columns are preserved in the output. If the
-transformer produces a column with the same name, the transformation
-result is renamed so that both columns can appear in the output. If
-<code class="docutils literal notranslate"><span class="pre">False</span></code>, only the transformer’s output is included in the result, not
-the original columns. In all cases columns not selected by <code class="docutils literal notranslate"><span class="pre">cols</span></code> are
-passed through.</p>
-</dd>
-<dt><strong>rename_columns</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=’{}’</span></dt><dd><p>Format strings applied to all transformation output column names. For
-example pass <code class="docutils literal notranslate"><span class="pre">'transformed_{}'</span></code> to prepend <code class="docutils literal notranslate"><span class="pre">'transformed_'</span></code> to all
-output column names. The default value does not modify the names.
-Renaming is not applied to columns not selected by <code class="docutils literal notranslate"><span class="pre">cols</span></code>.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Attributes<span class="colon">:</span></dt>
-<dd class="field-even"><dl>
-<dt><strong>all_inputs_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>All column names in the input dataframe.</p>
-</dd>
-<dt><strong>used_inputs_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The names of columns that were transformed.</p>
-</dd>
-<dt><strong>all_outputs_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>All column names in the output dataframe.</p>
-</dd>
-<dt><strong>created_outputs_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The names of columns in the output dataframe that were created by the
-fitted transformer.</p>
-</dd>
-<dt><strong>transformer_</strong><span class="classifier"><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.base.TransformerMixin.html#sklearn.base.TransformerMixin" title="(in scikit-learn v1.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Transformer</span></code></a></span></dt><dd><p>The fitted transformer.</p>
-</dd>
-</dl>
-</dd>
-</dl>
+  <section id="rejectcolumn">
+<h1>RejectColumn<a class="headerlink" href="#rejectcolumn" title="Link to this heading">#</a></h1>
+<dl class="py exception">
+<dt class="sig sig-object py" id="skrub.core.RejectColumn">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.core.</span></span><span class="sig-name descname"><span class="pre">RejectColumn</span></span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/6a97b06/skrub/core.py#L"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.core.RejectColumn" title="Link to this definition">#</a></dt>
+<dd><p>Used by single-column transformers to indicate they do not apply to a column.</p>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<p>A <a class="reference internal" href="skrub.core.SingleColumnTransformer.html#skrub.core.SingleColumnTransformer" title="skrub.core.SingleColumnTransformer"><code class="xref py py-class docutils literal notranslate"><span class="pre">SingleColumnTransformer</span></code></a> can raise <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> exceptions
+to indicate it cannot handle a given column.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToDatetime</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="s2">&quot;abcd&quot;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">birthday</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;29/01/2024&quot;</span><span class="p">],</span> <span class="n">city</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;London&quot;</span><span class="p">]))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
-<span class="go">     a     b      c       d</span>
-<span class="go">0  1.0   0.0    0.0     0.0</span>
-<span class="go">1  0.0  10.0    0.0     0.0</span>
-<span class="go">2  0.0   0.0  100.0     0.0</span>
-<span class="go">3  0.0   0.0    0.0  1000.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.decomposition</span><span class="w"> </span><span class="kn">import</span> <span class="n">PCA</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToSubFrame</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToSubFrame</span><span class="p">(</span><span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="go">     pca0   pca1</span>
-<span class="go">0 -249.01 -33.18</span>
-<span class="go">1 -249.04 -33.68</span>
-<span class="go">2 -252.37  66.64</span>
-<span class="go">3  750.42   0.22</span>
+<span class="go">     birthday    city</span>
+<span class="go">0  29/01/2024  London</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
+<span class="go">birthday    ...</span>
+<span class="go">city        ...</span>
+<span class="go">dtype: object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;birthday&quot;</span><span class="p">])</span>
+<span class="go">0   2024-01-29</span>
+<span class="go">Name: birthday, dtype: datetime64[...]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;city&quot;</span><span class="p">])</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="w">    </span><span class="o">...</span>
+<span class="gr">skrub.core.RejectColumn</span>: <span class="n">Could not find a datetime format...</span>
 </pre></div>
 </div>
-<p>We can restrict the transformer to a subset of columns:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span> <span class="o">=</span> <span class="n">ApplyToSubFrame</span><span class="p">(</span><span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="go">       c       d  pca0  pca1</span>
-<span class="go">0    0.0     0.0 -2.52  0.67</span>
-<span class="go">1    0.0     0.0  7.50  0.00</span>
-<span class="go">2  100.0     0.0 -2.49 -0.33</span>
-<span class="go">3    0.0  1000.0 -2.49 -0.33</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span><span class="o">.</span><span class="n">used_inputs_</span>
-<span class="go">[&#39;a&#39;, &#39;b&#39;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span><span class="o">.</span><span class="n">created_outputs_</span>
-<span class="go">[&#39;pca0&#39;, &#39;pca1&#39;]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span><span class="o">.</span><span class="n">transformer_</span>
-<span class="go">PCA(n_components=2)</span>
+<p><code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> exceptions can be used to indicate that a column cannot be
+handled by the current transformer: this may mean that the data is invalid,
+or that the transformer is simply not designed to handle that type of data.
+For example, a <code class="docutils literal notranslate"><span class="pre">ToDatetime</span></code> transformer might raise <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> when it is
+passed a column that does not contain strings, or that contains strings but none
+of them look like dates.</p>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code> relies on these exceptions to decide whether a column should be
+transformed or passed through unchanged.</p>
+<p>How these rejections are handled depends on the <code class="docutils literal notranslate"><span class="pre">allow_reject</span></code> parameter.
+By default, no special handling is performed and rejections are considered
+to be errors:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToCols</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="w">    </span><span class="o">...</span>
+<span class="gr">ValueError</span>: <span class="n">Transformer ToDatetime.fit_transform failed on column &#39;city&#39;...</span>
 </pre></div>
 </div>
-<p>It is possible to rename the output columns:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span> <span class="o">=</span> <span class="n">ApplyToSubFrame</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">],</span> <span class="n">rename_columns</span><span class="o">=</span><span class="s1">&#39;my_tag-</span><span class="si">{}</span><span class="s1">&#39;</span>
-<span class="gp">... </span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="go">       c       d  my_tag-pca0  my_tag-pca1</span>
-<span class="go">0    0.0     0.0        -2.52         0.67</span>
-<span class="go">1    0.0     0.0         7.50         0.00</span>
-<span class="go">2  100.0     0.0        -2.49        -0.33</span>
-<span class="go">3    0.0  1000.0        -2.49        -0.33</span>
+<p>However, setting <code class="docutils literal notranslate"><span class="pre">allow_reject=True</span></code> gives the transformer itself some
+control over which columns it should be applied to. For example, whether a
+string column contains dates is only known once we try to parse them.
+Therefore it might be sensible to try to parse all string columns but allow
+the transformer to reject those that, upon inspection, do not contain dates.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">allow_reject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span> <span class="o">=</span> <span class="n">to_datetime</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span>
+<span class="go">    birthday    city</span>
+<span class="go">0 2024-01-29  London</span>
 </pre></div>
 </div>
-<p>We can also force preserving the original columns in the output:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span> <span class="o">=</span> <span class="n">ApplyToSubFrame</span><span class="p">(</span><span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">],</span> <span class="n">keep_original</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="go">     a     b      c       d  pca0  pca1</span>
-<span class="go">0  1.0   0.0    0.0     0.0 -2.52  0.67</span>
-<span class="go">1  0.0  10.0    0.0     0.0  7.50  0.00</span>
-<span class="go">2  0.0   0.0  100.0     0.0 -2.49 -0.33</span>
-<span class="go">3  0.0   0.0    0.0  1000.0 -2.49 -0.33</span>
+<p>Now the column ‘city’ was rejected but this was not treated as an error;
+‘city’ was passed through unchanged and only ‘birthday’ was converted to a
+datetime column.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span><span class="o">.</span><span class="n">dtypes</span>
+<span class="go">birthday    datetime64[...]</span>
+<span class="go">city                ...</span>
+<span class="go">dtype: object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span><span class="o">.</span><span class="n">transformers_</span>
+<span class="go">{&#39;birthday&#39;: ToDatetime()}</span>
 </pre></div>
 </div>
-<p class="rubric">Methods</p>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.ApplyToSubFrame.fit" title="skrub.ApplyToSubFrame.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X[, y])</p></td>
-<td><p>Fit the transformer on all columns jointly.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.ApplyToSubFrame.fit_transform" title="skrub.ApplyToSubFrame.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(X[, y])</p></td>
-<td><p>Fit the transformer on all columns jointly and transform X.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.ApplyToSubFrame.get_feature_names_out" title="skrub.ApplyToSubFrame.get_feature_names_out"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_feature_names_out</span></code></a>()</p></td>
-<td><p>Get output feature names for transformation.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.ApplyToSubFrame.get_params" title="skrub.ApplyToSubFrame.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
-<td><p>Get parameters for this estimator.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.ApplyToSubFrame.set_output" title="skrub.ApplyToSubFrame.set_output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_output</span></code></a>(*[, transform])</p></td>
-<td><p>Set output container.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.ApplyToSubFrame.set_params" title="skrub.ApplyToSubFrame.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
-<td><p>Set the parameters of this estimator.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.ApplyToSubFrame.transform" title="skrub.ApplyToSubFrame.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X, **kwargs)</p></td>
-<td><p>Transform a dataframe.</p></td>
-</tr>
-</tbody>
-</table>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToDatetime</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;2020-02-02&#39;</span><span class="p">],</span> <span class="n">b</span><span class="o">=</span><span class="p">[</span><span class="mf">12.5</span><span class="p">]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">])</span>
+<span class="go">0   2020-02-02</span>
+<span class="go">Name: a, dtype: datetime64[...]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">])</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="w">    </span><span class="o">...</span>
+<span class="gr">skrub.core.RejectColumn</span>: <span class="n">Column &#39;b&#39; does not contain strings.</span>
+</pre></div>
 </div>
-<dl class="py method">
-<dt class="sig sig-object py" id="skrub.ApplyToSubFrame.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/250c503/skrub/_apply_to_sub_frame.py#L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ApplyToSubFrame.fit" title="Link to this definition">#</a></dt>
-<dd><p>Fit the transformer on all columns jointly.</p>
-<dl class="field-list">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
-<dt><strong>X</strong><span class="classifier">Pandas or Polars DataFrame</span></dt><dd><p>The data to transform.</p>
-</dd>
-<dt><strong>y</strong><span class="classifier">Pandas or Polars <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v3.0.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a> or DataFrame, default=None</span></dt><dd><p>The target data.</p>
-</dd>
-<dt><strong>**kwargs</strong></dt><dd><p>Extra named arguments are passed to the <code class="docutils literal notranslate"><span class="pre">fit_transform()</span></code> method
-of <code class="docutils literal notranslate"><span class="pre">self.transformer</span></code>.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt>ApplyToSubFrame</dt><dd><p>The transformer itself.</p>
-</dd>
-</dl>
-</dd>
-</dl>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="skrub.ApplyToSubFrame.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/250c503/skrub/_apply_to_sub_frame.py#L168"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ApplyToSubFrame.fit_transform" title="Link to this definition">#</a></dt>
-<dd><p>Fit the transformer on all columns jointly and transform X.</p>
-<dl class="field-list">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
-<dt><strong>X</strong><span class="classifier">Pandas or Polars DataFrame</span></dt><dd><p>The data to transform.</p>
-</dd>
-<dt><strong>y</strong><span class="classifier">Pandas or Polars <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v3.0.1)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Series</span></code></a> or DataFrame, default=None</span></dt><dd><p>The target data.</p>
-</dd>
-<dt><strong>**kwargs</strong></dt><dd><p>Extra named arguments are passed to the <code class="docutils literal notranslate"><span class="pre">fit_transform()</span></code> method
-of <code class="docutils literal notranslate"><span class="pre">self.transformer</span></code>.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>result</strong><span class="classifier">Pandas or Polars DataFrame</span></dt><dd><p>The transformed data.</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="skrub.ApplyToSubFrame.get_feature_names_out">
-<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/250c503/skrub/_apply_to_sub_frame.py#L267"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ApplyToSubFrame.get_feature_names_out" title="Link to this definition">#</a></dt>
-<dd><p>Get output feature names for transformation.</p>
-<dl class="field-list">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
-<dt><strong>feature_names_out</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.4)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndarray</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> objects</span></dt><dd><p>Transformed feature names.</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="skrub.ApplyToSubFrame.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/250c503/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L240"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ApplyToSubFrame.get_params" title="Link to this definition">#</a></dt>
-<dd><p>Get parameters for this estimator.</p>
-<dl class="field-list">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
-<dt><strong>deep</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>If True, will return the parameters for this estimator and
-contained subobjects that are estimators.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl>
-<dt><strong>params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Parameter names mapped to their values.</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="skrub.ApplyToSubFrame.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/250c503/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/utils/_set_output.py#L389"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ApplyToSubFrame.set_output" title="Link to this definition">#</a></dt>
-<dd><p>Set output container.</p>
-<p>See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.8)"><span>Introducing the set_output API</span></a>
-for an example on how to use the API.</p>
-<dl class="field-list">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
-<dt><strong>transform</strong><span class="classifier">{“default”, “pandas”, “polars”}, default=None</span></dt><dd><p>Configure output of <cite>transform</cite> and <cite>fit_transform</cite>.</p>
-<ul class="simple">
-<li><p><cite>“default”</cite>: Default output format of a transformer</p></li>
-<li><p><cite>“pandas”</cite>: DataFrame output</p></li>
-<li><p><cite>“polars”</cite>: Polars output</p></li>
-<li><p><cite>None</cite>: Transform configuration is unchanged</p></li>
-</ul>
-<div class="versionadded">
-<p><span class="versionmodified added">Added in version 1.4: </span><cite>“polars”</cite> option was added.</p>
-</div>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>self</strong><span class="classifier">estimator instance</span></dt><dd><p>Estimator instance.</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="skrub.ApplyToSubFrame.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/250c503/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L338"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ApplyToSubFrame.set_params" title="Link to this definition">#</a></dt>
-<dd><p>Set the parameters of this estimator.</p>
-<p>The method works on simple estimators as well as on nested objects
-(such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
-parameters of the form <code class="docutils literal notranslate"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it’s
-possible to update each component of a nested object.</p>
-<dl class="field-list">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl>
-<dt><strong>**params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Estimator parameters.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>self</strong><span class="classifier">estimator instance</span></dt><dd><p>Estimator instance.</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="skrub.ApplyToSubFrame.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/250c503/skrub/_apply_to_sub_frame.py#L228"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.ApplyToSubFrame.transform" title="Link to this definition">#</a></dt>
-<dd><p>Transform a dataframe.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>X</strong><span class="classifier">Pandas or Polars DataFrame</span></dt><dd><p>The column to transform.</p>
-</dd>
-<dt><strong>**kwargs</strong></dt><dd><p>Extra named arguments are passed to the <code class="docutils literal notranslate"><span class="pre">transform()</span></code> method
-of <code class="docutils literal notranslate"><span class="pre">self.transformer_</span></code>.</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>result</strong><span class="classifier">Pandas or Polars DataFrame</span></dt><dd><p>The transformed data.</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<section id="gallery-examples">
-<h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
-<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="In previous examples, we saw how skrub provides powerful abstractions like TableVectorizer and tabular_pipeline to create pipelines."><img alt="" src="../../_images/sphx_glr_0090_apply_to_cols_thumb.svg" />
-<p><a class="reference internal" href="../../auto_examples/0090_apply_to_cols.html"><span class="doc">Hands-On with Column Selection and Transformers</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Hands-On with Column Selection and Transformers</div>
-</div></div></section>
 </section>
 
 
@@ -1051,20 +820,20 @@ of <code class="docutils literal notranslate"><span class="pre">self.transformer
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="skrub.ApplyToEachCol.html"
+       href="skrub.core.SingleColumnTransformer.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">ApplyToEachCol</p>
+        <p class="prev-next-title">SingleColumnTransformer</p>
       </div>
     </a>
     <a class="right-next"
-       href="../encoders.html"
+       href="../config.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Encoding a column</p>
+        <p class="prev-next-title">Configuration</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1087,17 +856,7 @@ of <code class="docutils literal notranslate"><span class="pre">self.transformer
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ApplyToSubFrame"><code class="docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ApplyToSubFrame.fit"><code class="docutils literal notranslate"><span class="pre">ApplyToSubFrame.fit()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ApplyToSubFrame.fit_transform"><code class="docutils literal notranslate"><span class="pre">ApplyToSubFrame.fit_transform()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ApplyToSubFrame.get_feature_names_out"><code class="docutils literal notranslate"><span class="pre">ApplyToSubFrame.get_feature_names_out()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ApplyToSubFrame.get_params"><code class="docutils literal notranslate"><span class="pre">ApplyToSubFrame.get_params()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ApplyToSubFrame.set_output"><code class="docutils literal notranslate"><span class="pre">ApplyToSubFrame.set_output()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ApplyToSubFrame.set_params"><code class="docutils literal notranslate"><span class="pre">ApplyToSubFrame.set_params()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.ApplyToSubFrame.transform"><code class="docutils literal notranslate"><span class="pre">ApplyToSubFrame.transform()</span></code></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery-examples">Gallery examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.core.RejectColumn"><code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code></a></li>
 </ul>
   </nav></div>
 
@@ -1105,7 +864,7 @@ of <code class="docutils literal notranslate"><span class="pre">self.transformer
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/reference/generated/skrub.ApplyToSubFrame.rst.txt"
+      <li><a href="../../_sources/reference/generated/skrub.core.RejectColumn.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

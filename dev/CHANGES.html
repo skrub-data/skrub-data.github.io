@@ -594,15 +594,12 @@ selecting columns that have a fraction of null values above the given threshold.
 <ul class="simple">
 <li><p>Increased the minimum version of polars from 0.20 to 1.5.0.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1897">#1897</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
-<li><p><a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> has been modified so that now it can detect automatically
-whether the provided transformer should be applied independently on each column,
-or on all selected columns as a single dataframe. In most cases, this replaces
-the original <code class="docutils literal notranslate"><span class="pre">ApplyToCols</span></code> and <code class="docutils literal notranslate"><span class="pre">ApplyToFrame</span></code>. As a result, <code class="docutils literal notranslate"><span class="pre">ApplyToCols</span></code>
-and <code class="docutils literal notranslate"><span class="pre">ApplyToFrame</span></code> have been renamed <a class="reference internal" href="reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> and
-<a class="reference internal" href="reference/generated/skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a> respectively.
-The behavior of the old <code class="docutils literal notranslate"><span class="pre">ApplyToCols</span></code> can be replicated by setting the parameter
-<code class="docutils literal notranslate"><span class="pre">how</span></code> to <code class="docutils literal notranslate"><span class="pre">cols</span></code>.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1913">#1913</a> and <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1919">#1919</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ApplyToCols</span></code> and <code class="docutils literal notranslate"><span class="pre">ApplyToFrame</span></code> have been merged into a single class,
+<a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>,that covers the functionality of both the old classes by
+detecting automatically whether the provided transformer should be applied
+independently on each column, or on all selected columns as a single dataframe.
+As a result, <code class="docutils literal notranslate"><span class="pre">ApplyToCols</span></code> and <code class="docutils literal notranslate"><span class="pre">ApplyToFrame</span></code> have been removed.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1913">#1913</a>, <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1919">#1919</a> and <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1962">#1962</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 <li><p>The dataset fetcher functions now include a “path” field for each table in the dataset.
 For example, the dataset “employee_salaries” now has the field <code class="docutils literal notranslate"><span class="pre">employee_salaries_path</span></code>.
 Additionally, datasets that include a single table have the field <code class="docutils literal notranslate"><span class="pre">path</span></code>. These
@@ -611,7 +608,7 @@ The default <code class="docutils literal notranslate"><span class="pre">skrub_d
 the <code class="docutils literal notranslate"><span class="pre">SKB_DATA_DIRECTORY</span></code> environment variable. The environment variable <code class="docutils literal notranslate"><span class="pre">SKRUB_DATA_DIRECTORY</span></code>
 is deprecated and will be removed in a future version of skrub.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1852">#1852</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
-<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">core.SingleColumnTransformer</span></code> and associated exception <code class="xref py py-class docutils literal notranslate"><span class="pre">core.RejectColumn</span></code> (used
+<li><p><a class="reference internal" href="reference/generated/skrub.core.SingleColumnTransformer.html#skrub.core.SingleColumnTransformer" title="skrub.core.SingleColumnTransformer"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.SingleColumnTransformer</span></code></a> and associated exception <a class="reference internal" href="reference/generated/skrub.core.RejectColumn.html#skrub.core.RejectColumn" title="skrub.core.RejectColumn"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.RejectColumn</span></code></a> (used
 internally by many skrub estimators) have been added to the public API, in the newly-created
 <a href="#id2"><span class="problematic" id="id3">:package:`skrub.core`</span></a> module. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1851">#1851</a> by <a class="reference external" href="https://github.com/emassoulie">Eloi Massoulié</a>.</p></li>
 <li><p>Added the strings <code class="docutils literal notranslate"><span class="pre">&quot;None&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;none&quot;</span></code> to the list of null string values in

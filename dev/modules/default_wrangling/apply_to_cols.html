@@ -7,16 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Operating over multiple columns at once" />
+<meta property="og:title" content="Transforming selected columns with ApplyToCols" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/modules/multi_column_operations/multi_column_operations.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/modules/default_wrangling/apply_to_cols.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Very often and for various reasons, transformers must be applied to multiple columns at the same time. For example, all numeric columns in a dataframe may need to be scaled at the same time. While ..." />
+<meta property="og:description" content="Very often and for various reasons, transformers must be applied only to some of the columns in a dataframe. For example, all numeric columns in a dataframe may need to be scaled at the same time, ..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Very often and for various reasons, transformers must be applied to multiple columns at the same time. For example, all numeric columns in a dataframe may need to be scaled at the same time. While ..." />
+<meta name="description" content="Very often and for various reasons, transformers must be applied only to some of the columns in a dataframe. For example, all numeric columns in a dataframe may need to be scaled at the same time, ..." />
 
-    <title>Operating over multiple columns at once &#8212; skrub</title>
+    <title>Transforming selected columns with ApplyToCols &#8212; skrub</title>
   
   
   
@@ -60,7 +60,7 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=fd10adb8"></script>
     <script src="../../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'modules/multi_column_operations/multi_column_operations';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'modules/default_wrangling/apply_to_cols';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
@@ -69,13 +69,13 @@
             true;
         </script>
     <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
-    <link rel="canonical" href="https://skrub-data.org/stable/modules/multi_column_operations/multi_column_operations.html" />
+    <link rel="canonical" href="https://skrub-data.org/stable/modules/default_wrangling/apply_to_cols.html" />
     <link rel="icon" href="../../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Removing unneeded columns with DropUninformative and Cleaner" href="drop_uninformative.html" />
-    <link rel="prev" title="Multi-column operations" href="../../multi_column_operations.html" />
+    <link rel="next" title="Column-level feature extraction" href="../../column_level_featurizing.html" />
+    <link rel="prev" title="Building robust ML baselines with tabular_pipeline()" href="tabular_pipeline.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.8.dev0" />
@@ -516,10 +516,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../tablereport/finding_correlated_columns.html">Finding Correlated Columns in a DataFrame</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../default_wrangling.html">Wrangling data with good defaults</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/cleaning_dataframes.html"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code>: sanitizing a dataframe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/table_vectorizer.html">Transforming a table into an array of numeric features: <code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/tabular_pipeline.html">Building robust ML baselines with <code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../default_wrangling.html">Wrangling data with good defaults</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cleaning_dataframes.html"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code>: sanitizing a dataframe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="table_vectorizer.html">Transforming a table into an array of numeric features: <code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="tabular_pipeline.html">Building robust ML baselines with <code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Transforming selected columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../column_level_featurizing.html">Column-level feature extraction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -529,15 +530,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../column_level_featurizing/advanced_columnwise_operations.html">Advanced columnwise operations</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../multi_column_operations.html">Multi-column operations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Operating over multiple columns at once</a></li>
-<li class="toctree-l2"><a class="reference internal" href="drop_uninformative.html">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../multi_column_operations.html">Multi-column operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/drop_uninformative.html">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
 
 
-<li class="toctree-l2"><a class="reference internal" href="selectors.html">Skrub Selectors, for selecting columns in a dataframe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="type_of_selectors.html">Selecting based on dtype or data properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/selectors.html">Skrub Selectors, for selecting columns in a dataframe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/type_of_selectors.html">Selecting based on dtype or data properties</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="advanced_selectors.html"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code> to select with user-defined criteria</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/advanced_selectors.html"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code> to select with user-defined criteria</a></li>
 
 </ul>
 </details></li>
@@ -621,9 +621,9 @@
     <li class="breadcrumb-item"><a href="../../documentation.html" class="nav-link">User Guide</a></li>
     
     
-    <li class="breadcrumb-item"><a href="../../multi_column_operations.html" class="nav-link">Multi-column operations</a></li>
+    <li class="breadcrumb-item"><a href="../../default_wrangling.html" class="nav-link">Wrangling data with good defaults</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Operating over multiple columns at once</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Transforming selected columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></span></li>
   </ul>
 </nav>
 </div>
@@ -640,81 +640,114 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="operating-over-multiple-columns-at-once">
-<span id="user-guide-multiple-columns"></span><h1>Operating over multiple columns at once<a class="headerlink" href="#operating-over-multiple-columns-at-once" title="Link to this heading">#</a></h1>
-<p>Very often and for various reasons, transformers must be applied to multiple
-columns at the same time. For example, all numeric columns in a dataframe may need
-to be scaled at the same time.
+  <section id="transforming-selected-columns-with-applytocols">
+<span id="user-guide-multiple-columns"></span><h1>Transforming selected columns with <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a><a class="headerlink" href="#transforming-selected-columns-with-applytocols" title="Link to this heading">#</a></h1>
+<p>Very often and for various reasons, transformers must be applied only to some of the
+columns in a dataframe. For example, all numeric columns in a dataframe may need
+to be scaled at the same time, while string columns should be left alone.
 While the heuristics used by the <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> are usually good enough
 to apply the proper transformers to different datatypes, using it may not be an
 option in all cases. In scikit-learn pipelines, the column selection operation can
-is done with the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.compose.ColumnTransformer</span></code></a>.</p>
-<p>Skrub provides alternative transformers that can achieve the same results:</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> maps a transformer to columns in a dataframe, so that all
+be done with the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ColumnTransformer</span></code></a>.</p>
+<p>Skrub provides the <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> transformer to achieve the same results with
+a larger degree of control over which columns are being transformed.
+<a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> maps a transformer to columns in a dataframe, so that all
 columns that satisfy a certain condition are transformed, while the others are
-left untouched.</p></li>
-<li><p><a class="reference internal" href="../../reference/generated/skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a> applies a transformer to a collection of columns <em>at once</em>.
-This is different from <a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a>, which instead transforms each column
-one at a time.</p></li>
-<li><p><a class="reference internal" href="../../reference/generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectCols</span></code></a> allows specifying which columns should be kept.</p></li>
-<li><p><a class="reference internal" href="../../reference/generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropCols</span></code></a> allows specifying the columns we want to discard.</p></li>
-</ul>
-<p><a class="reference internal" href="../../reference/generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectCols</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropCols</span></code></a> can becombined with the skrub DataOps
-to perform complex tasks
-such as feature selection: refer to <a class="reference internal" href="../data_ops/validation/hyperparameter_tuning.html#user-guide-data-ops-feature-selection"><span class="std std-ref">Feature selection with skrub SelectCols and DropCols</span></a>
-for more details.</p>
-<p>All multi-column transformers provided by skrub can take skrub selectors as
-parameters to have more control over the columns that are being transformed.
-Skrub selectors are discussed at length in <a class="reference internal" href="selectors.html#user-guide-selectors"><span class="std std-ref">Skrub Selectors, for selecting columns in a dataframe</span></a>.</p>
-<section id="applying-transformations-to-the-columns-with-applytoeachcol-and-applytosubframe">
-<span id="apply-to-each-col"></span><h2>Applying transformations to the columns with <a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a><a class="headerlink" href="#applying-transformations-to-the-columns-with-applytoeachcol-and-applytosubframe" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> can be used to transform a subset of columns in a dataframe, while
-leaving the remaining columns unchanged. It simplifies operations such as the
-example above, which can be rewritten with <a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> as follows:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub.selectors</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">s</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToEachCol</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">OneHotEncoder</span><span class="p">,</span> <span class="n">StandardScaler</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+left untouched.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If a skrub transformer has a <code class="docutils literal notranslate"><span class="pre">cols</span></code> parameter to specify a column list,
+that can be a selector as well. Selectors give more control over which columns
+are being transformed: they are discussed at length in the
+<a class="reference internal" href="../multi_column_operations/selectors.html#user-guide-selectors"><span class="std std-ref">selectors user guide</span></a>.</p>
+</div>
+<p><a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> can be used to transform a subset of columns in a dataframe, while
+leaving the non-selected columns unchanged. In this example, we want to apply
+an <a href="#id1"><span class="problematic" id="id2">|OrdinalEncoder|</span></a> only on the text column, and a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> on the numeric
+column. Columns that aren’t selected are passed through unchanged, and this allows
+to concatenate <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> transformers with <code class="xref py py-class docutils literal notranslate"><span class="pre">make_pipeline</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="p">],</span> <span class="s2">&quot;number&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]})</span>
-<span class="gp">&gt;&gt;&gt;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">numeric</span> <span class="o">=</span> <span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">())</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">string</span> <span class="o">=</span> <span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">sparse_output</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">())</span>
-<span class="gp">&gt;&gt;&gt;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">numeric</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span>
-<span class="go">   text_bar  text_baz  text_foo    number</span>
-<span class="go">0       0.0       0.0       1.0 -1.224745</span>
-<span class="go">1       1.0       0.0       0.0  0.000000</span>
-<span class="go">2       0.0       1.0       0.0  1.224745</span>
 </pre></div>
 </div>
-<p><a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> can raise a <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> exception if it cannot handle a specific
-column:</p>
+<p>We use the <a class="reference internal" href="../../reference/generated/skrub.selectors.string.html#skrub.selectors.string" title="skrub.selectors.string"><code class="xref py py-meth docutils literal notranslate"><span class="pre">string()</span></code></a> selector to choose only the text column, and <a class="reference internal" href="../../reference/generated/skrub.selectors.numeric.html#skrub.selectors.numeric" title="skrub.selectors.numeric"><code class="xref py py-meth docutils literal notranslate"><span class="pre">numeric()</span></code></a>
+to select only the numeric column:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub.selectors</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">s</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToCols</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">OrdinalEncoder</span><span class="p">,</span> <span class="n">StandardScaler</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numeric</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">string</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">OrdinalEncoder</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>We then concatenate the two with <code class="xref py py-class docutils literal notranslate"><span class="pre">make_pipeline</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">numeric</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span>
+<span class="go">     number  text</span>
+<span class="go">0 -1.224745   2.0</span>
+<span class="go">1  0.000000   0.0</span>
+<span class="go">2  1.224745   1.0</span>
+</pre></div>
+</div>
+<p>If <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> is used with a transformer that inherits from
+<a class="reference internal" href="../../reference/generated/skrub.core.SingleColumnTransformer.html#skrub.core.SingleColumnTransformer" title="skrub.core.SingleColumnTransformer"><code class="xref py py-class docutils literal notranslate"><span class="pre">SingleColumnTransformer</span></code></a>, or one that has the <code class="docutils literal notranslate"><span class="pre">__single_column_transformer__</span></code>
+attribute, then the transformer will be cloned and applied separately to each
+column. Most skrub transformers belong to this category.</p>
+<p>Here we want to apply <a class="reference internal" href="../../reference/generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a> to each of the datetime columns to convert
+them to datetime dtype. <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> automatically detects that <a class="reference internal" href="../../reference/generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a>
+should be applied to each column separately:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub._to_datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToDatetime</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<span class="gp">... </span>    <span class="s1">&#39;date_1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2024-01-15&#39;</span><span class="p">,</span> <span class="s1">&#39;2024-02-20&#39;</span><span class="p">,</span> <span class="s1">&#39;2024-03-10&#39;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;date_2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2023-12-01&#39;</span><span class="p">,</span> <span class="s1">&#39;2024-01-05&#39;</span><span class="p">,</span> <span class="s1">&#39;2024-02-28&#39;</span><span class="p">]</span>
+<span class="gp">... </span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df_enc</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">())</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df_enc</span>
+<span class="go">      date_1     date_2</span>
+<span class="go">0 2024-01-15 2023-12-01</span>
+<span class="go">1 2024-02-20 2024-01-05</span>
+<span class="go">2 2024-03-10 2024-02-28</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df_enc</span><span class="o">.</span><span class="n">dtypes</span>
+<span class="go">date_1    datetime64[...]</span>
+<span class="go">date_2    datetime64[...]</span>
+<span class="go">dtype: ...</span>
+</pre></div>
+</div>
+<p>We can also combine <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> with <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> to only vectorize columns
+specific columns and avoid others, like ID columns:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">TableVectorizer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<span class="gp">... </span>    <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;c1&quot;</span><span class="p">,</span> <span class="s2">&quot;c2&quot;</span><span class="p">,</span> <span class="s2">&quot;c3&quot;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;city&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Paris&#39;</span><span class="p">,</span> <span class="s1">&#39;Rome&#39;</span><span class="p">,</span> <span class="s1">&#39;Madrid&#39;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;date&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;2023-01-15&#39;</span><span class="p">,</span> <span class="s1">&#39;2023-02-20&#39;</span><span class="p">,</span> <span class="s1">&#39;2023-03-10&#39;</span><span class="p">]</span>
+<span class="gp">... </span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">TableVectorizer</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="o">-</span> <span class="s2">&quot;id&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="go">id  city_Madrid  city_Paris  city_Rome  date_year  date_month  date_day  date_total_seconds</span>
+<span class="go">0  c1          0.0         1.0        0.0     2023.0         1.0      15.0        1.673741e+09</span>
+<span class="go">1  c2          0.0         0.0        1.0     2023.0         2.0      20.0        1.676851e+09</span>
+<span class="go">2  c3          1.0         0.0        0.0     2023.0         3.0      10.0        1.678406e+09</span>
+</pre></div>
+</div>
+<p>Note that the column “id” was not encoded and was instead left as-is.</p>
+<section id="dealing-with-columns-that-cannot-be-handled-by-a-transformer">
+<h2>Dealing with columns that cannot be handled by a transformer<a class="headerlink" href="#dealing-with-columns-that-cannot-be-handled-by-a-transformer" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> can allow the underlying encoder to decide which columns it can be applied to.
+For example, if we do not know in advance which columns can be transformed to datetime,
+we can use <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> to map <a class="reference internal" href="../../reference/generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a> to all columns in a dataframe and pass
+<code class="docutils literal notranslate"><span class="pre">allow_reject=True</span></code>. In that case, non-datetime columns.  By default, all columns in
+<code class="docutils literal notranslate"><span class="pre">cols</span></code> must be transformed, and if one of them cannot be transformed an exception
+will be raised and the transformation will fail.</p>
+<p>It is possible to change how rejected columns are handled through the <code class="docutils literal notranslate"><span class="pre">allow_reject</span></code>
+parameter.
+By default, no special handling is performed and rejections are considered
+to be errors:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub._to_datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToDatetime</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">birthday</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;29/01/2024&quot;</span><span class="p">],</span> <span class="n">city</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;London&quot;</span><span class="p">]))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
 <span class="go">    birthday    city</span>
 <span class="go">0  29/01/2024  London</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
-<span class="go">birthday    ...</span>
-<span class="go">city        ...</span>
-<span class="go">dtype: ...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;birthday&quot;</span><span class="p">])</span>
-<span class="go">0   2024-01-29</span>
-<span class="go">Name: birthday, dtype: datetime64[...]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;city&quot;</span><span class="p">])</span>
-<span class="gt">Traceback (most recent call last):</span>
-<span class="w">    </span><span class="o">...</span>
-<span class="gr">skrub.core.RejectColumn</span>: <span class="n">Could not find a datetime format for column &#39;city&#39;.</span>
-</pre></div>
-</div>
-<p>It is possible to change how rejected columns are handled through the <code class="docutils literal notranslate"><span class="pre">allow_reject</span></code>
-parameter.
-By default, no special handling is performed and rejections are considered
-to be errors:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
@@ -722,79 +755,27 @@ to be errors:</p>
 </pre></div>
 </div>
 <p>However, setting <code class="docutils literal notranslate"><span class="pre">allow_reject=True</span></code> gives the transformer itself some
-control over which columns it should be applied to. For example, whether a
-string column contains dates is only known once we try to parse them.
-Therefore it might be sensible to try to parse all string columns but allow
+control over which columns it should be applied to. For example, we can try to
+parse all columns but allow
 the transformer to reject those that, upon inspection, do not contain dates.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">allow_reject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">allow_reject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span> <span class="o">=</span> <span class="n">to_datetime</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span>
 <span class="go">    birthday    city</span>
 <span class="go">0 2024-01-29  London</span>
 </pre></div>
 </div>
-<p>Here, the column ‘city’ was rejected without being treated as an error: it was
-was passed through unchanged and only <code class="docutils literal notranslate"><span class="pre">birthday</span></code> was converted to a
-datetime column.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span><span class="o">.</span><span class="n">dtypes</span>
 <span class="go">birthday    datetime64[...]</span>
 <span class="go">city                ...</span>
 <span class="go">dtype: ...</span>
 </pre></div>
 </div>
-<p><a class="reference internal" href="../../reference/generated/skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a> is instead used in cases where multiple columns should be transformed
-at once. This is the case when the transformer is expecting multiple columns at
-once, e.g., to perform dimensionality reduction:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="s2">&quot;abcd&quot;</span><span class="p">))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
-<span class="go">     a     b      c       d</span>
-<span class="go">0  1.0   0.0    0.0     0.0</span>
-<span class="go">1  0.0  10.0    0.0     0.0</span>
-<span class="go">2  0.0   0.0  100.0     0.0</span>
-<span class="go">3  0.0   0.0    0.0  1000.0</span>
-</pre></div>
-</div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.decomposition</span><span class="w"> </span><span class="kn">import</span> <span class="n">PCA</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToSubFrame</span>
-</pre></div>
-</div>
-<p>Like with the other transformers described here, it is possible to limit the
-transformations to a subset of columns:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span> <span class="o">=</span> <span class="n">ApplyToSubFrame</span><span class="p">(</span><span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="go">       c       d  pca0  pca1</span>
-<span class="go">0    0.0     0.0 -2.52  0.67</span>
-<span class="go">1    0.0     0.0  7.50  0.00</span>
-<span class="go">2  100.0     0.0 -2.49 -0.33</span>
-<span class="go">3    0.0  1000.0 -2.49 -0.33</span>
-</pre></div>
-</div>
-<p>By default, <a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a> rename the transformed columns, and
-remove the original features from the data. It is possible to rename the columns
-by providing a formatting string to the <code class="docutils literal notranslate"><span class="pre">rename_columns</span></code> parameter:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">A</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">10.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">],</span> <span class="n">B</span><span class="o">=</span><span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">100.</span><span class="p">]))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">scaler</span> <span class="o">=</span> <span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">rename_columns</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">_scaled&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">    A_scaled  B_scaled</span>
-<span class="go">0      -1.0      -1.0</span>
-<span class="go">1       1.0       1.0</span>
-</pre></div>
-</div>
-<p>By setting <code class="docutils literal notranslate"><span class="pre">keep_original=True</span></code>, the starting columns are not dropped from the
-transformed dataframe. The <code class="docutils literal notranslate"><span class="pre">rename_columns</span></code> parameter can be used to avoid
-name collisions:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scaler</span> <span class="o">=</span> <span class="n">ApplyToEachCol</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">keep_original</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">rename_columns</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">_scaled&quot;</span>
-<span class="gp">... </span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">        A  A_scaled      B  B_scaled</span>
-<span class="go">0 -10.0      -1.0    0.0      -1.0</span>
-<span class="go">1  10.0       1.0  100.0       1.0</span>
-</pre></div>
-</div>
+</section>
+<section id="advanced-usage-of-applytocols">
+<h2>Advanced usage of <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a><a class="headerlink" href="#advanced-usage-of-applytocols" title="Link to this heading">#</a></h2>
+<p>For more advanced use cases, refer to the examples section of the <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>
+docstring, and to <a class="reference internal" href="../column_level_featurizing/advanced_columnwise_operations.html#user-guide-single-column-transformer"><span class="std std-ref">this user guide section</span></a>.</p>
 </section>
 </section>
 
@@ -809,20 +790,20 @@ name collisions:</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../../multi_column_operations.html"
+       href="tabular_pipeline.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Multi-column operations</p>
+        <p class="prev-next-title">Building robust ML baselines with <code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></p>
       </div>
     </a>
     <a class="right-next"
-       href="drop_uninformative.html"
+       href="../../column_level_featurizing.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></p>
+        <p class="prev-next-title">Column-level feature extraction</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -845,7 +826,8 @@ name collisions:</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-transformations-to-the-columns-with-applytoeachcol-and-applytosubframe">Applying transformations to the columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dealing-with-columns-that-cannot-be-handled-by-a-transformer">Dealing with columns that cannot be handled by a transformer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-usage-of-applytocols">Advanced usage of <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
 </ul>
   </nav></div>
 
@@ -853,7 +835,7 @@ name collisions:</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/modules/multi_column_operations/multi_column_operations.rst.txt"
+      <li><a href="../../_sources/modules/default_wrangling/apply_to_cols.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

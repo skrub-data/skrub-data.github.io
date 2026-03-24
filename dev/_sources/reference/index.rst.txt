@@ -22,6 +22,7 @@ classes and functions may not be enough to give full guidelines on their use.
   joining <joining>
   selectors <selectors>
   data_ops <data_ops>
+  advanced <advanced>
   config <config>
   datasets <datasets>
 
@@ -49,19 +50,13 @@ Building a pipeline
   TableVectorizer
 
 
+  ApplyToCols
+
+
   SelectCols
 
 
   DropCols
-
-
-  ApplyToCols
-
-
-  ApplyToEachCol
-
-
-  ApplyToSubFrame
 
 
 
@@ -515,6 +510,29 @@ DataOps
 
 
   OptunaParamSearch
+
+
+
+
+
+Advanced topics
+---------------
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  core.SingleColumnTransformer
+
+
+  core.RejectColumn
 
 
 

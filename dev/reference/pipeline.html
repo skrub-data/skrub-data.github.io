@@ -510,11 +510,9 @@
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">pipeline</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.tabular_pipeline.html">tabular_pipeline</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.TableVectorizer.html">TableVectorizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.ApplyToCols.html">ApplyToCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.SelectCols.html">SelectCols</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.DropCols.html">DropCols</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/skrub.ApplyToCols.html">ApplyToCols</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/skrub.ApplyToEachCol.html">ApplyToEachCol</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/skrub.ApplyToSubFrame.html">ApplyToSubFrame</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="encoders.html">encoders</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -630,6 +628,11 @@
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.OptunaParamSearch.html">OptunaParamSearch</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="advanced.html">advanced</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.core.SingleColumnTransformer.html">SingleColumnTransformer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.core.RejectColumn.html">RejectColumn</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="config.html">config</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.get_config.html">get_config</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.set_config.html">set_config</a></li>
@@ -727,20 +730,14 @@
 <tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></p></td>
 <td><p>Transform a dataframe to a numeric (vectorized) representation.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SelectCols</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></p></td>
+<td><p>Apply a transformer to selected columns in a dataframe.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SelectCols</span></code></a></p></td>
 <td><p>Select a subset of a DataFrame's columns.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DropCols</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DropCols</span></code></a></p></td>
 <td><p>Drop a subset of a DataFrame's columns.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></p></td>
-<td><p>Apply a transformer to columns in a dataframe.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a></p></td>
-<td><p>Map a transformer to columns in a dataframe.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.ApplyToSubFrame.html#skrub.ApplyToSubFrame" title="skrub.ApplyToSubFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a></p></td>
-<td><p>Apply a transformer to part of a dataframe.</p></td>
 </tr>
 </tbody>
 </table>

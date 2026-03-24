@@ -629,9 +629,9 @@ annual salary, found in column “current_annual_salary”.</p>
 <span class="kn">from</span><span class="w"> </span><span class="nn">skrub.datasets</span><span class="w"> </span><span class="kn">import</span> <a href="../reference/generated/skrub.datasets.fetch_employee_salaries.html#skrub.datasets.fetch_employee_salaries" title="skrub.datasets.fetch_employee_salaries" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_employee_salaries</span></a>
 
 <a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">file_path</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.datasets.fetch_employee_salaries.html#skrub.datasets.fetch_employee_salaries" title="skrub.datasets.fetch_employee_salaries" class="sphx-glr-backref-module-skrub-datasets sphx-glr-backref-type-py-function"><span class="n">fetch_employee_salaries</span></a><span class="p">()</span><span class="o">.</span><span class="n">path</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">employees</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html#pandas.read_csv" title="pandas.read_csv" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-function"><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">file_path</span></a><span class="p">)</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html#pandas.DataFrame.drop" title="pandas.DataFrame.drop" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-method"><span class="n">employees</span><span class="o">.</span><span class="n">drop</span></a><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">&quot;current_annual_salary&quot;</span><span class="p">)</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a> <span class="o">=</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">employees</span></a><span class="p">[</span><span class="s2">&quot;current_annual_salary&quot;</span><span class="p">]</span>
+<span class="n">employees</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">file_path</span></a><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">employees</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">&quot;current_annual_salary&quot;</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">employees</span><span class="p">[</span><span class="s2">&quot;current_annual_salary&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Most machine-learning algorithms work with arrays of numbers. The
@@ -649,11 +649,11 @@ tabular data.</p>
 <span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <a href="../reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">tabular_pipeline</span></a>
 
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">model</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-function"><span class="n">tabular_pipeline</span></a><span class="p">(</span><span class="s2">&quot;regressor&quot;</span><span class="p">)</span>
-<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="sklearn.model_selection.cross_validate" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_validate</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">model</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="sklearn.model_selection.cross_validate" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_validate</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">model</span></a><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;test_score&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([0.90542945, 0.88497274, 0.91322691, 0.91939346, 0.92604161])
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([0.90670591, 0.88051471, 0.91401651, 0.91797916, 0.92338806])
 </pre></div>
 </div>
 <p>The estimator returned by <code class="xref py py-obj docutils literal notranslate"><span class="pre">tabular_pipeline</span></code> combines 2 steps:</p>
@@ -2059,8 +2059,8 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <a href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a>
 
 <a href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a><span class="p">()</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorized_X</span></a> <span class="o">=</span> <a href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer.fit_transform" title="skrub.TableVectorizer.fit_transform" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">)</span>
-<a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorized_X</span></a>
+<span class="n">vectorized_X</span> <span class="o">=</span> <a href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer.fit_transform" title="skrub.TableVectorizer.fit_transform" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-method"><span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span></a><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">vectorized_X</span>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -2209,41 +2209,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>0.033647</td>
-      <td>0.011726</td>
-      <td>-0.031005</td>
-      <td>-0.002795</td>
+      <td>0.038701</td>
+      <td>0.013674</td>
+      <td>-0.012760</td>
+      <td>-0.029972</td>
       <td>0.0</td>
       <td>0.397707</td>
-      <td>-0.145891</td>
-      <td>0.179804</td>
-      <td>-0.065339</td>
-      <td>0.094767</td>
-      <td>0.093169</td>
-      <td>0.781623</td>
-      <td>0.305343</td>
-      <td>-0.285356</td>
-      <td>-0.127274</td>
-      <td>-0.118581</td>
-      <td>-0.416061</td>
-      <td>-0.052083</td>
-      <td>-0.171974</td>
-      <td>0.202528</td>
-      <td>0.009067</td>
-      <td>-0.117618</td>
-      <td>-0.022883</td>
-      <td>0.089717</td>
-      <td>-0.115817</td>
-      <td>-0.029453</td>
-      <td>0.097651</td>
-      <td>-0.036122</td>
-      <td>-0.015367</td>
-      <td>0.020295</td>
-      <td>-0.028604</td>
-      <td>0.044892</td>
-      <td>-0.098239</td>
-      <td>-0.092324</td>
-      <td>0.033930</td>
+      <td>-0.145888</td>
+      <td>0.179806</td>
+      <td>-0.065340</td>
+      <td>0.094766</td>
+      <td>0.093163</td>
+      <td>0.781626</td>
+      <td>0.305335</td>
+      <td>-0.285338</td>
+      <td>-0.127323</td>
+      <td>-0.118578</td>
+      <td>-0.416055</td>
+      <td>-0.052082</td>
+      <td>-0.171977</td>
+      <td>0.202522</td>
+      <td>0.009078</td>
+      <td>-0.117621</td>
+      <td>-0.022893</td>
+      <td>0.089753</td>
+      <td>-0.115859</td>
+      <td>-0.029344</td>
+      <td>0.097645</td>
+      <td>-0.036111</td>
+      <td>-0.015156</td>
+      <td>0.020224</td>
+      <td>-0.028875</td>
+      <td>0.045122</td>
+      <td>-0.097066</td>
+      <td>-0.093524</td>
+      <td>0.034717</td>
       <td>1986.0</td>
       <td>9.0</td>
       <td>22.0</td>
@@ -2293,41 +2293,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.055768</td>
-      <td>-0.075057</td>
-      <td>0.093623</td>
-      <td>-0.070553</td>
+      <td>-0.033679</td>
+      <td>-0.072589</td>
+      <td>0.130534</td>
+      <td>-0.094863</td>
       <td>0.0</td>
-      <td>0.847247</td>
-      <td>-0.117935</td>
-      <td>-0.048593</td>
-      <td>-0.110615</td>
-      <td>-0.052886</td>
-      <td>-0.048625</td>
-      <td>-0.107770</td>
-      <td>0.008095</td>
-      <td>-0.023599</td>
-      <td>-0.055241</td>
-      <td>-0.056617</td>
-      <td>-0.008623</td>
-      <td>0.056053</td>
-      <td>-0.058612</td>
-      <td>-0.021357</td>
-      <td>-0.002974</td>
-      <td>-0.006434</td>
-      <td>-0.078436</td>
-      <td>-0.147525</td>
-      <td>-0.020286</td>
-      <td>-0.104226</td>
-      <td>0.169532</td>
-      <td>-0.006537</td>
-      <td>-0.069846</td>
-      <td>-0.096621</td>
-      <td>0.660865</td>
-      <td>0.196175</td>
-      <td>0.074771</td>
-      <td>0.077344</td>
-      <td>0.102490</td>
+      <td>0.847246</td>
+      <td>-0.117932</td>
+      <td>-0.048590</td>
+      <td>-0.110616</td>
+      <td>-0.052887</td>
+      <td>-0.048624</td>
+      <td>-0.107772</td>
+      <td>0.008096</td>
+      <td>-0.023587</td>
+      <td>-0.055244</td>
+      <td>-0.056611</td>
+      <td>-0.008620</td>
+      <td>0.056051</td>
+      <td>-0.058609</td>
+      <td>-0.021370</td>
+      <td>-0.002965</td>
+      <td>-0.006462</td>
+      <td>-0.078456</td>
+      <td>-0.147398</td>
+      <td>-0.020386</td>
+      <td>-0.103751</td>
+      <td>0.169359</td>
+      <td>-0.006587</td>
+      <td>-0.069364</td>
+      <td>-0.094899</td>
+      <td>0.661077</td>
+      <td>0.195835</td>
+      <td>0.074379</td>
+      <td>0.076273</td>
+      <td>0.098514</td>
       <td>1988.0</td>
       <td>9.0</td>
       <td>12.0</td>
@@ -2377,41 +2377,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.047468</td>
-      <td>-0.247823</td>
-      <td>-0.223813</td>
-      <td>0.131625</td>
+      <td>-0.053755</td>
+      <td>-0.227650</td>
+      <td>-0.318575</td>
+      <td>0.162297</td>
       <td>0.0</td>
       <td>0.048005</td>
-      <td>0.016050</td>
+      <td>0.016051</td>
       <td>0.007036</td>
-      <td>0.087220</td>
-      <td>0.119997</td>
-      <td>0.058964</td>
+      <td>0.087218</td>
+      <td>0.119998</td>
+      <td>0.058963</td>
       <td>0.212727</td>
-      <td>-0.234656</td>
-      <td>0.375342</td>
-      <td>0.732442</td>
-      <td>-0.460235</td>
-      <td>0.047667</td>
-      <td>0.059955</td>
-      <td>0.029500</td>
-      <td>0.175543</td>
-      <td>0.031686</td>
-      <td>0.012854</td>
-      <td>-0.017590</td>
-      <td>-0.054898</td>
-      <td>-0.060618</td>
-      <td>-0.086783</td>
-      <td>0.028325</td>
-      <td>0.029615</td>
-      <td>0.006407</td>
-      <td>-0.005007</td>
-      <td>0.060923</td>
-      <td>0.033400</td>
-      <td>-0.044498</td>
-      <td>0.003434</td>
-      <td>0.112425</td>
+      <td>-0.234663</td>
+      <td>0.375230</td>
+      <td>0.732486</td>
+      <td>-0.460240</td>
+      <td>0.047664</td>
+      <td>0.059954</td>
+      <td>0.029494</td>
+      <td>0.175551</td>
+      <td>0.031700</td>
+      <td>0.012878</td>
+      <td>-0.017646</td>
+      <td>-0.054955</td>
+      <td>-0.060689</td>
+      <td>-0.086943</td>
+      <td>0.028561</td>
+      <td>0.029569</td>
+      <td>0.006699</td>
+      <td>-0.004927</td>
+      <td>0.060836</td>
+      <td>0.033427</td>
+      <td>-0.043466</td>
+      <td>0.001572</td>
+      <td>0.107931</td>
       <td>1989.0</td>
       <td>11.0</td>
       <td>19.0</td>
@@ -2461,41 +2461,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.071592</td>
-      <td>0.055438</td>
-      <td>-0.036535</td>
-      <td>0.001063</td>
+      <td>-0.049533</td>
+      <td>0.059167</td>
+      <td>-0.023747</td>
+      <td>0.003361</td>
       <td>0.0</td>
       <td>0.046073</td>
       <td>0.023713</td>
-      <td>0.069391</td>
-      <td>0.038924</td>
+      <td>0.069390</td>
+      <td>0.038923</td>
       <td>0.057341</td>
-      <td>0.048960</td>
-      <td>0.131003</td>
-      <td>0.062032</td>
-      <td>0.020832</td>
-      <td>0.018163</td>
-      <td>0.062903</td>
-      <td>-0.017076</td>
-      <td>-0.060740</td>
-      <td>-0.007699</td>
-      <td>-0.025649</td>
-      <td>-0.019851</td>
-      <td>0.116397</td>
-      <td>0.046882</td>
-      <td>-0.089334</td>
-      <td>0.130358</td>
-      <td>0.152512</td>
-      <td>-0.012623</td>
-      <td>0.045507</td>
-      <td>0.175223</td>
-      <td>-0.003072</td>
-      <td>0.072095</td>
-      <td>-0.233371</td>
-      <td>-0.304326</td>
-      <td>0.591440</td>
-      <td>0.019440</td>
+      <td>0.048958</td>
+      <td>0.131005</td>
+      <td>0.062030</td>
+      <td>0.020831</td>
+      <td>0.018177</td>
+      <td>0.062889</td>
+      <td>-0.017083</td>
+      <td>-0.060753</td>
+      <td>-0.007679</td>
+      <td>-0.025655</td>
+      <td>-0.019914</td>
+      <td>0.116354</td>
+      <td>0.047127</td>
+      <td>-0.089347</td>
+      <td>0.130681</td>
+      <td>0.152309</td>
+      <td>-0.012640</td>
+      <td>0.045258</td>
+      <td>0.176073</td>
+      <td>-0.001790</td>
+      <td>0.073394</td>
+      <td>-0.234116</td>
+      <td>-0.311506</td>
+      <td>0.599242</td>
+      <td>0.030354</td>
       <td>2014.0</td>
       <td>5.0</td>
       <td>5.0</td>
@@ -2545,41 +2545,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.124626</td>
-      <td>-0.051396</td>
-      <td>-0.037315</td>
-      <td>-0.013525</td>
+      <td>-0.080019</td>
+      <td>-0.061729</td>
+      <td>0.030987</td>
+      <td>-0.035689</td>
       <td>0.0</td>
-      <td>0.090343</td>
+      <td>0.090344</td>
       <td>0.024199</td>
-      <td>0.025949</td>
-      <td>0.243114</td>
+      <td>0.025948</td>
+      <td>0.243111</td>
       <td>0.389862</td>
-      <td>-0.063120</td>
-      <td>-0.014218</td>
-      <td>-0.145524</td>
-      <td>-0.033795</td>
-      <td>0.044334</td>
-      <td>0.004486</td>
-      <td>-0.080445</td>
-      <td>0.018229</td>
-      <td>0.122302</td>
-      <td>-0.190601</td>
-      <td>0.062638</td>
-      <td>-0.062168</td>
-      <td>0.050993</td>
-      <td>0.072720</td>
-      <td>-0.091329</td>
-      <td>0.042939</td>
-      <td>0.040997</td>
-      <td>-0.254004</td>
-      <td>-0.039865</td>
-      <td>0.012764</td>
-      <td>-0.137722</td>
-      <td>0.165744</td>
-      <td>0.159574</td>
-      <td>0.168750</td>
-      <td>0.019689</td>
+      <td>-0.063124</td>
+      <td>-0.014216</td>
+      <td>-0.145515</td>
+      <td>-0.033807</td>
+      <td>0.044327</td>
+      <td>0.004464</td>
+      <td>-0.080470</td>
+      <td>0.018218</td>
+      <td>0.122320</td>
+      <td>-0.190502</td>
+      <td>0.062612</td>
+      <td>-0.062118</td>
+      <td>0.050847</td>
+      <td>0.072245</td>
+      <td>-0.091580</td>
+      <td>0.042842</td>
+      <td>0.041777</td>
+      <td>-0.253453</td>
+      <td>-0.038658</td>
+      <td>0.012162</td>
+      <td>-0.134502</td>
+      <td>0.162306</td>
+      <td>0.156238</td>
+      <td>0.172613</td>
+      <td>0.002547</td>
       <td>2007.0</td>
       <td>3.0</td>
       <td>5.0</td>
@@ -2713,41 +2713,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.134584</td>
-      <td>-0.059396</td>
-      <td>0.165244</td>
-      <td>-0.085994</td>
+      <td>-0.098983</td>
+      <td>-0.036934</td>
+      <td>0.202691</td>
+      <td>-0.169842</td>
       <td>0.0</td>
       <td>0.049991</td>
       <td>0.011396</td>
-      <td>0.010625</td>
-      <td>0.089170</td>
-      <td>0.122420</td>
-      <td>0.520386</td>
-      <td>0.270868</td>
-      <td>0.083391</td>
-      <td>-0.199065</td>
-      <td>-0.111071</td>
-      <td>-0.006209</td>
-      <td>0.814801</td>
-      <td>0.236689</td>
-      <td>0.186502</td>
-      <td>-0.159879</td>
-      <td>-0.011211</td>
-      <td>-0.128942</td>
-      <td>0.021892</td>
-      <td>-0.002210</td>
-      <td>-0.085217</td>
-      <td>-0.177383</td>
-      <td>-0.020358</td>
-      <td>0.097298</td>
-      <td>0.086731</td>
-      <td>0.049812</td>
-      <td>-0.009397</td>
-      <td>0.210945</td>
-      <td>-0.176959</td>
-      <td>-0.009772</td>
-      <td>-0.034626</td>
+      <td>0.010624</td>
+      <td>0.089168</td>
+      <td>0.122425</td>
+      <td>0.520381</td>
+      <td>0.270874</td>
+      <td>0.083381</td>
+      <td>-0.199044</td>
+      <td>-0.111093</td>
+      <td>-0.006203</td>
+      <td>0.814806</td>
+      <td>0.236682</td>
+      <td>0.186505</td>
+      <td>-0.159882</td>
+      <td>-0.011216</td>
+      <td>-0.128968</td>
+      <td>0.021954</td>
+      <td>-0.002124</td>
+      <td>-0.085216</td>
+      <td>-0.177262</td>
+      <td>-0.020258</td>
+      <td>0.097311</td>
+      <td>0.086458</td>
+      <td>0.049518</td>
+      <td>-0.009198</td>
+      <td>0.210774</td>
+      <td>-0.177374</td>
+      <td>-0.010154</td>
+      <td>-0.031229</td>
       <td>2015.0</td>
       <td>11.0</td>
       <td>3.0</td>
@@ -2797,41 +2797,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.031700</td>
-      <td>-0.047484</td>
-      <td>0.089489</td>
-      <td>-0.063719</td>
+      <td>-0.023932</td>
+      <td>-0.039548</td>
+      <td>0.115294</td>
+      <td>-0.065367</td>
       <td>0.0</td>
-      <td>0.062242</td>
-      <td>0.229416</td>
-      <td>0.002450</td>
+      <td>0.062241</td>
+      <td>0.229415</td>
+      <td>0.002449</td>
       <td>-0.031310</td>
       <td>0.035628</td>
-      <td>-0.002897</td>
-      <td>0.007267</td>
-      <td>0.051496</td>
-      <td>0.047159</td>
-      <td>-0.009764</td>
-      <td>0.078442</td>
-      <td>-0.009663</td>
-      <td>-0.130789</td>
-      <td>0.252451</td>
-      <td>0.151831</td>
+      <td>-0.002898</td>
+      <td>0.007270</td>
+      <td>0.051497</td>
+      <td>0.047156</td>
+      <td>-0.009750</td>
+      <td>0.078431</td>
+      <td>-0.009678</td>
+      <td>-0.130786</td>
+      <td>0.252450</td>
+      <td>0.151848</td>
       <td>0.030847</td>
-      <td>-0.099114</td>
-      <td>-0.016194</td>
-      <td>-0.001890</td>
-      <td>0.000216</td>
-      <td>0.017286</td>
-      <td>0.003983</td>
-      <td>0.040029</td>
-      <td>0.022052</td>
-      <td>-0.023331</td>
-      <td>0.010190</td>
-      <td>-0.037820</td>
-      <td>-0.032065</td>
-      <td>0.022660</td>
-      <td>-0.007006</td>
+      <td>-0.099098</td>
+      <td>-0.015964</td>
+      <td>-0.002214</td>
+      <td>0.000475</td>
+      <td>0.016676</td>
+      <td>0.004284</td>
+      <td>0.039672</td>
+      <td>0.021790</td>
+      <td>-0.023848</td>
+      <td>0.010156</td>
+      <td>-0.036857</td>
+      <td>-0.031763</td>
+      <td>0.030889</td>
+      <td>-0.004252</td>
       <td>1988.0</td>
       <td>11.0</td>
       <td>28.0</td>
@@ -2881,41 +2881,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.100156</td>
-      <td>0.028730</td>
-      <td>0.107120</td>
-      <td>-0.082610</td>
+      <td>-0.093274</td>
+      <td>0.043278</td>
+      <td>0.076141</td>
+      <td>-0.048641</td>
       <td>1.0</td>
       <td>0.007742</td>
-      <td>-0.000054</td>
+      <td>-0.000053</td>
       <td>0.042824</td>
       <td>0.020265</td>
       <td>0.042899</td>
       <td>0.003151</td>
       <td>0.019046</td>
       <td>-0.006844</td>
-      <td>0.016757</td>
-      <td>0.022608</td>
+      <td>0.016753</td>
+      <td>0.022609</td>
       <td>0.005786</td>
-      <td>-0.013210</td>
-      <td>0.003406</td>
-      <td>0.004965</td>
-      <td>-0.005654</td>
-      <td>0.000362</td>
-      <td>-0.001978</td>
-      <td>0.025273</td>
-      <td>-0.001473</td>
-      <td>0.005199</td>
-      <td>0.019713</td>
-      <td>-0.012144</td>
-      <td>-0.015931</td>
-      <td>0.007424</td>
-      <td>0.008157</td>
-      <td>0.020864</td>
-      <td>0.008374</td>
-      <td>-0.024130</td>
-      <td>-0.030204</td>
-      <td>0.020793</td>
+      <td>-0.013209</td>
+      <td>0.003410</td>
+      <td>0.004964</td>
+      <td>-0.005656</td>
+      <td>0.000368</td>
+      <td>-0.001981</td>
+      <td>0.025267</td>
+      <td>-0.001539</td>
+      <td>0.005201</td>
+      <td>0.019673</td>
+      <td>-0.012168</td>
+      <td>-0.016003</td>
+      <td>0.007288</td>
+      <td>0.007970</td>
+      <td>0.020492</td>
+      <td>0.008585</td>
+      <td>-0.023652</td>
+      <td>-0.031103</td>
+      <td>0.019044</td>
       <td>2001.0</td>
       <td>4.0</td>
       <td>30.0</td>
@@ -2965,41 +2965,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.076404</td>
-      <td>0.191196</td>
-      <td>-0.211350</td>
-      <td>0.051469</td>
+      <td>-0.155173</td>
+      <td>0.139571</td>
+      <td>-0.199918</td>
+      <td>0.061192</td>
       <td>0.0</td>
       <td>0.201067</td>
-      <td>0.112071</td>
-      <td>0.031430</td>
-      <td>0.880801</td>
-      <td>-0.610554</td>
-      <td>0.117350</td>
-      <td>0.099274</td>
-      <td>-0.098671</td>
-      <td>0.092749</td>
-      <td>-0.056682</td>
-      <td>0.054347</td>
-      <td>-0.050830</td>
-      <td>-0.090565</td>
-      <td>0.032282</td>
-      <td>-0.102032</td>
-      <td>-0.034492</td>
-      <td>-0.037625</td>
-      <td>-0.037327</td>
-      <td>-0.034239</td>
-      <td>-0.078181</td>
-      <td>0.057238</td>
-      <td>0.039105</td>
-      <td>-0.041484</td>
-      <td>0.025320</td>
-      <td>0.003273</td>
-      <td>0.049256</td>
-      <td>0.071858</td>
-      <td>-0.020594</td>
-      <td>-0.024448</td>
-      <td>-0.070985</td>
+      <td>0.112073</td>
+      <td>0.031428</td>
+      <td>0.880805</td>
+      <td>-0.610547</td>
+      <td>0.117354</td>
+      <td>0.099272</td>
+      <td>-0.098670</td>
+      <td>0.092756</td>
+      <td>-0.056670</td>
+      <td>0.054339</td>
+      <td>-0.050837</td>
+      <td>-0.090575</td>
+      <td>0.032277</td>
+      <td>-0.102007</td>
+      <td>-0.034521</td>
+      <td>-0.037576</td>
+      <td>-0.037324</td>
+      <td>-0.034420</td>
+      <td>-0.078094</td>
+      <td>0.056833</td>
+      <td>0.039505</td>
+      <td>-0.041496</td>
+      <td>0.026112</td>
+      <td>0.003916</td>
+      <td>0.049944</td>
+      <td>0.071414</td>
+      <td>-0.022046</td>
+      <td>-0.019576</td>
+      <td>-0.068684</td>
       <td>2006.0</td>
       <td>9.0</td>
       <td>5.0</td>
@@ -3049,41 +3049,41 @@ capabilities of skrub’s <a class="reference internal" href="../reference/gener
       <td>0.0</td>
       <td>0.0</td>
       <td>...</td>
-      <td>-0.006596</td>
-      <td>0.044282</td>
-      <td>0.037683</td>
-      <td>-0.070114</td>
+      <td>-0.015431</td>
+      <td>0.048861</td>
+      <td>0.031009</td>
+      <td>-0.016696</td>
       <td>0.0</td>
       <td>0.033906</td>
       <td>0.010537</td>
       <td>0.029032</td>
-      <td>0.137318</td>
+      <td>0.137316</td>
       <td>0.229573</td>
-      <td>-0.019878</td>
-      <td>-0.002931</td>
-      <td>-0.060317</td>
-      <td>-0.014834</td>
-      <td>0.025122</td>
-      <td>0.019303</td>
-      <td>-0.073240</td>
-      <td>-0.002627</td>
+      <td>-0.019879</td>
+      <td>-0.002934</td>
+      <td>-0.060316</td>
+      <td>-0.014836</td>
+      <td>0.025118</td>
+      <td>0.019306</td>
+      <td>-0.073238</td>
+      <td>-0.002618</td>
       <td>0.095807</td>
-      <td>-0.129269</td>
-      <td>-0.009126</td>
-      <td>-0.018041</td>
-      <td>0.241729</td>
-      <td>-0.029466</td>
-      <td>0.018071</td>
-      <td>-0.028064</td>
-      <td>-0.051183</td>
-      <td>-0.112346</td>
-      <td>-0.010279</td>
-      <td>0.004454</td>
-      <td>0.033804</td>
-      <td>0.033585</td>
-      <td>-0.059325</td>
-      <td>-0.051584</td>
-      <td>0.026197</td>
+      <td>-0.129284</td>
+      <td>-0.009128</td>
+      <td>-0.018038</td>
+      <td>0.241739</td>
+      <td>-0.029562</td>
+      <td>0.018010</td>
+      <td>-0.028085</td>
+      <td>-0.051248</td>
+      <td>-0.112475</td>
+      <td>-0.010446</td>
+      <td>0.004580</td>
+      <td>0.033164</td>
+      <td>0.034342</td>
+      <td>-0.057280</td>
+      <td>-0.051052</td>
+      <td>0.025208</td>
       <td>2012.0</td>
       <td>1.0</td>
       <td>30.0</td>
@@ -3104,7 +3104,7 @@ features. For example, we can see that 3 columns <code class="docutils literal n
 produced numeric features that we can use for machine-learning:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a>
 
-<a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorized_X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">vectorized_X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -5989,7 +5989,7 @@ input column.</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;date_first_hired_year&#39;, &#39;date_first_hired_month&#39;, &#39;date_first_hired_day&#39;, &#39;date_first_hired_total_seconds&#39;]
 </pre></div>
 </div>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorized_X</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span><span class="o">.</span><span class="n">input_to_outputs_</span></a><span class="p">[</span><span class="s2">&quot;date_first_hired&quot;</span><span class="p">]]</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">vectorized_X</span><span class="p">[</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span><span class="o">.</span><span class="n">input_to_outputs_</span></a><span class="p">[</span><span class="s2">&quot;date_first_hired&quot;</span><span class="p">]]</span>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -6120,7 +6120,7 @@ column.</p>
 </pre></div>
 </div>
 <p>But looking closer at our original dataframe, it was encoded as a string.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">[</span><span class="s2">&quot;date_first_hired&quot;</span><span class="p">]</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="p">[</span><span class="s2">&quot;date_first_hired&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>0       09/22/1986
@@ -6173,14 +6173,14 @@ that we can fit, test or cross-validate and that works well on tabular data.</p>
 
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a><span class="p">(</span><a href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class"><span class="n">TableVectorizer</span></a><span class="p">(),</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a><span class="p">())</span>
 
-<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="sklearn.model_selection.cross_validate" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_validate</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="sklearn.model_selection.cross_validate" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_validate</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;test_score&quot;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;R2 score:  mean: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; std: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;mean fit time: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s1">&#39;fit_time&#39;</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> seconds&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.911; std: 0.016
-mean fit time: 2.074 seconds
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.912; std: 0.016
+mean fit time: 2.211 seconds
 </pre></div>
 </div>
 </section>
@@ -6222,14 +6222,14 @@ learner is built on top of decision trees, which is the case for the <a class="r
     <a href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span></a><span class="p">,</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor" class="sphx-glr-backref-module-sklearn-ensemble-_hist_gradient_boosting-gradient_boosting sphx-glr-backref-type-py-class"><span class="n">HistGradientBoostingRegressor</span></a><span class="p">(</span><span class="n">categorical_features</span><span class="o">=</span><span class="s2">&quot;from_dtype&quot;</span><span class="p">)</span>
 <span class="p">)</span>
 
-<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="sklearn.model_selection.cross_validate" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_validate</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="sklearn.model_selection.cross_validate" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_validate</span></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;test_score&quot;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;R2 score:  mean: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">; std: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.std.html#numpy.std" title="numpy.std" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">std</span></a><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">scores</span></a><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;mean fit time: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean" title="numpy.mean" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s1">&#39;fit_time&#39;</span><span class="p">])</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> seconds&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>R2 score:  mean: 0.911; std: 0.014
-mean fit time: 1.034 seconds
+mean fit time: 1.085 seconds
 </pre></div>
 </div>
 <p>We can see that this new pipeline achieves a similar score but is fitted much faster.
@@ -6255,7 +6255,7 @@ instead (which are less subject to biases).</p>
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="sklearn.ensemble.RandomForestRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">regressor</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="sklearn.ensemble.RandomForestRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class"><span class="n">RandomForestRegressor</span></a><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">pipeline</span></a> <span class="o">=</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-function"><span class="n">make_pipeline</span></a><span class="p">(</span><a href="../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer" class="sphx-glr-backref-module-skrub sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">vectorizer</span></a><span class="p">,</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html#sklearn.ensemble.RandomForestRegressor" title="sklearn.ensemble.RandomForestRegressor" class="sphx-glr-backref-module-sklearn-ensemble sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">regressor</span></a><span class="p">)</span>
-<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.fit" title="sklearn.pipeline.Pipeline.fit" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-method"><span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span></a><span class="p">(</span><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.DataFrame" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X</span></a><span class="p">,</span> <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="p">)</span>
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.fit" title="sklearn.pipeline.Pipeline.fit" class="sphx-glr-backref-module-sklearn-pipeline sphx-glr-backref-type-py-method"><span class="n">pipeline</span><span class="o">.</span><span class="n">fit</span></a><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
@@ -7737,7 +7737,7 @@ forceTheme('sk-container-id-10');</script></body>
 
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
 <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.barh.html#matplotlib.pyplot.barh" title="matplotlib.pyplot.barh" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">barh</span></a><span class="p">(</span>
-    <a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html#pandas.Series" title="pandas.Series" class="sphx-glr-backref-module-pandas sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">y</span></a><span class="o">=</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">labels</span></a><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">labels</span></a><span class="p">,</span>
     <span class="n">width</span><span class="o">=</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">avg_importances</span></a><span class="p">[</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">top_indices</span></a><span class="p">],</span>
     <span class="n">xerr</span><span class="o">=</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">std_importances</span></a><span class="p">[</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">top_indices</span></a><span class="p">],</span>
     <span class="n">ecolor</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span>
@@ -7771,7 +7771,7 @@ pipeline, which we built using the <a class="reference internal" href="../refere
 <p>We saw that by default, it works well on a heterogeneous dataset.</p>
 <p>To better understand our dataset, and without much effort, we were also able
 to plot the feature importances.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 50.028 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 51.238 seconds)</p>
 <p><strong>Estimated memory usage:</strong>  569 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-0010-encodings-py">
 <div class="binder-badge docutils container">

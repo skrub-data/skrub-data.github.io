@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/multi_column_operations.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Skrub provides various tools to extend the use of single column transformers to multiple columns. Operating over multiple columns at once- Applying transformations to the columns with ApplyToEachCo..." />
+<meta property="og:description" content="Skrub provides various tools to extend the use of single column transformers to multiple columns. Removing unneeded columns with DropUninformative and Cleaner, Dropping columns with many missing va..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Skrub provides various tools to extend the use of single column transformers to multiple columns. Operating over multiple columns at once- Applying transformations to the columns with ApplyToEachCo..." />
+<meta name="description" content="Skrub provides various tools to extend the use of single column transformers to multiple columns. Removing unneeded columns with DropUninformative and Cleaner, Dropping columns with many missing va..." />
 
     <title>Multi-column operations &#8212; skrub</title>
   
@@ -74,7 +74,7 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Operating over multiple columns at once" href="modules/multi_column_operations/multi_column_operations.html" />
+    <link rel="next" title="Removing unneeded columns with DropUninformative and Cleaner" href="modules/multi_column_operations/drop_uninformative.html" />
     <link rel="prev" title="Advanced columnwise operations" href="modules/column_level_featurizing/advanced_columnwise_operations.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -520,6 +520,7 @@
 <li class="toctree-l2"><a class="reference internal" href="modules/default_wrangling/cleaning_dataframes.html"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code>: sanitizing a dataframe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/default_wrangling/table_vectorizer.html">Transforming a table into an array of numeric features: <code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/default_wrangling/tabular_pipeline.html">Building robust ML baselines with <code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/default_wrangling/apply_to_cols.html">Transforming selected columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="column_level_featurizing.html">Column-level feature extraction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -530,7 +531,6 @@
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Multi-column operations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/multi_column_operations.html">Operating over multiple columns at once</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/drop_uninformative.html">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
 
 
@@ -796,10 +796,6 @@ multiple columns.</p>
 
 </style><div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="modules/multi_column_operations/multi_column_operations.html">Operating over multiple columns at once</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/multi_column_operations.html#applying-transformations-to-the-columns-with-applytoeachcol-and-applytosubframe">Applying transformations to the columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code></a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="modules/multi_column_operations/drop_uninformative.html">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules/multi_column_operations/drop_uninformative.html#dropping-columns-with-many-missing-values">Dropping columns with many missing values</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules/multi_column_operations/drop_uninformative.html#applying-dropuninformative-only-to-a-subset-of-columns">Applying <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> only to a subset of columns</a></li>
@@ -851,11 +847,11 @@ multiple columns.</p>
       </div>
     </a>
     <a class="right-next"
-       href="modules/multi_column_operations/multi_column_operations.html"
+       href="modules/multi_column_operations/drop_uninformative.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Operating over multiple columns at once</p>
+        <p class="prev-next-title">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

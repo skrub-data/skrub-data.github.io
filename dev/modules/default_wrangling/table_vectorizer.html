@@ -520,6 +520,7 @@
 <li class="toctree-l2"><a class="reference internal" href="cleaning_dataframes.html"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code>: sanitizing a dataframe</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Transforming a table into an array of numeric features: <code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="tabular_pipeline.html">Building robust ML baselines with <code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="apply_to_cols.html">Transforming selected columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../column_level_featurizing.html">Column-level feature extraction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -530,7 +531,6 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../multi_column_operations.html">Multi-column operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/multi_column_operations.html">Operating over multiple columns at once</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/drop_uninformative.html">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
 
 
@@ -717,7 +717,7 @@ transformer without any modification, which means that the transformer must be
 able to handle the content of the column on its own.</p>
 <p>If you need to define complex transformers to pass to a single instance of
 <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>, consider using the <a class="reference internal" href="../../data_ops.html#user-guide-data-ops-index"><span class="std std-ref">skrub Data Ops</span></a>,
-<a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a>, or the <a class="reference internal" href="../multi_column_operations/selectors.html#user-guide-selectors"><span class="std std-ref">skrub selectors</span></a> instead, as
+<a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>, or the <a class="reference internal" href="../multi_column_operations/selectors.html#user-guide-selectors"><span class="std std-ref">skrub selectors</span></a> instead, as
 they are more versatile and allow a higher degree
 of control over which operations are applied to which columns.</p>
 <p>The <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> is used in <a class="reference internal" href="../../auto_examples/0010_encodings.html#example-encodings"><span class="std std-ref">Encoding: from a dataframe to a numerical matrix for machine learning</span></a>, while the
@@ -728,7 +728,7 @@ as various examples.</p>
 <p>By default, columns that contain only numeric strings (e.g. <code class="docutils literal notranslate"><span class="pre">[&quot;1&quot;,</span> <span class="pre">&quot;2&quot;,</span> <span class="pre">&quot;3&quot;]</span></code>)
 are parsed as numeric features by the <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>. The recommended way to
 treat such values as categorical (e.g. IDs or codes) is to convert the column
-to pandas’ <code class="docutils literal notranslate"><span class="pre">category</span></code> dtype using <a class="reference internal" href="../../reference/generated/skrub.ToCategorical.html#skrub.ToCategorical" title="skrub.ToCategorical"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToCategorical</span></code></a> with <a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a> before
+to pandas’ <code class="docutils literal notranslate"><span class="pre">category</span></code> dtype using <a class="reference internal" href="../../reference/generated/skrub.ToCategorical.html#skrub.ToCategorical" title="skrub.ToCategorical"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToCategorical</span></code></a> with <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> before
 vectorizing, rather than relying on keeping them as strings.</p>
 <p>Default behavior: numeric strings are parsed as a single numeric column (feature
 names are not one-hot encoded):</p>
@@ -746,16 +746,16 @@ names are not one-hot encoded):</p>
 <span class="go">2  3.0</span>
 </pre></div>
 </div>
-<p>With <a class="reference internal" href="../../reference/generated/skrub.ToCategorical.html#skrub.ToCategorical" title="skrub.ToCategorical"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToCategorical</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.ApplyToEachCol.html#skrub.ApplyToEachCol" title="skrub.ApplyToEachCol"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code></a>, the column is treated as categorical
+<p>With <a class="reference internal" href="../../reference/generated/skrub.ToCategorical.html#skrub.ToCategorical" title="skrub.ToCategorical"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToCategorical</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>, the column is treated as categorical
 and produces one-hot encoded feature names:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToEachCol</span><span class="p">,</span> <span class="n">TableVectorizer</span><span class="p">,</span> <span class="n">ToCategorical</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToCols</span><span class="p">,</span> <span class="n">TableVectorizer</span><span class="p">,</span> <span class="n">ToCategorical</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pipe</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">ApplyToEachCol</span><span class="p">(</span><span class="n">ToCategorical</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;c&quot;</span><span class="p">]),</span>
+<span class="gp">... </span>    <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToCategorical</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;c&quot;</span><span class="p">]),</span>
 <span class="gp">... </span>    <span class="n">TableVectorizer</span><span class="p">(),</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pipe</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">Pipeline(steps=[(&#39;applytoeachcol&#39;, ...),</span>
+<span class="go">Pipeline(steps=[(&#39;applytocols&#39;, ...),</span>
 <span class="go">    (&#39;tablevectorizer&#39;, ...)])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">pipe</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s2">&quot;tablevectorizer&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">())))</span>
 <span class="go">[&#39;c_1&#39;, &#39;c_2&#39;, &#39;c_3&#39;]</span>

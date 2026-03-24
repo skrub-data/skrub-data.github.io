@@ -75,7 +75,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Encoding string and text columns as numeric features" href="modules/column_level_featurizing/feature_engineering_categorical.html" />
-    <link rel="prev" title="Building robust ML baselines with tabular_pipeline()" href="modules/default_wrangling/tabular_pipeline.html" />
+    <link rel="prev" title="Transforming selected columns with ApplyToCols" href="modules/default_wrangling/apply_to_cols.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.8.dev0" />
@@ -520,6 +520,7 @@
 <li class="toctree-l2"><a class="reference internal" href="modules/default_wrangling/cleaning_dataframes.html"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code>: sanitizing a dataframe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/default_wrangling/table_vectorizer.html">Transforming a table into an array of numeric features: <code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/default_wrangling/tabular_pipeline.html">Building robust ML baselines with <code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/default_wrangling/apply_to_cols.html">Transforming selected columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Column-level feature extraction</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -530,7 +531,6 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="multi_column_operations.html">Multi-column operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/multi_column_operations.html">Operating over multiple columns at once</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/multi_column_operations/drop_uninformative.html">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
 
 
@@ -813,8 +813,8 @@ directly by machine learning models.</p>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="modules/column_level_featurizing/robust_scaling.html">Robust scaling of numeric features using <code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules/column_level_featurizing/advanced_columnwise_operations.html">Advanced columnwise operations</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/advanced_columnwise_operations.html#rejection-handling-with-applytocols">Rejection handling with <code class="docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/advanced_columnwise_operations.html#the-single-column-transformer">The single column transformer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/advanced_columnwise_operations.html#rejection-handling-with-applytocols-and-rejectcolumn">Rejection handling with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">core.RejectColumn</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -832,12 +832,12 @@ directly by machine learning models.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="modules/default_wrangling/tabular_pipeline.html"
+       href="modules/default_wrangling/apply_to_cols.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Building robust ML baselines with <code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></p>
+        <p class="prev-next-title">Transforming selected columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></p>
       </div>
     </a>
     <a class="right-next"

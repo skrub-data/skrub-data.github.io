@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/modules/column_level_featurizing/advanced_columnwise_operations.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Rejection handling with ApplyToCols: ApplyToCols allows flexible manipulation of dataframes by automatically applying any of Skrub’s columnwise transformers to multiple columns in any given datafra..." />
+<meta property="og:description" content="The single column transformer: In cases where we want to apply a custom transformation to a series we need the ApplyToCols structure to handle multiple columns, and if this transformation needs to ..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Rejection handling with ApplyToCols: ApplyToCols allows flexible manipulation of dataframes by automatically applying any of Skrub’s columnwise transformers to multiple columns in any given datafra..." />
+<meta name="description" content="The single column transformer: In cases where we want to apply a custom transformation to a series we need the ApplyToCols structure to handle multiple columns, and if this transformation needs to ..." />
 
     <title>Advanced columnwise operations &#8212; skrub</title>
   
@@ -520,6 +520,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../default_wrangling/cleaning_dataframes.html"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code>: sanitizing a dataframe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../default_wrangling/table_vectorizer.html">Transforming a table into an array of numeric features: <code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../default_wrangling/tabular_pipeline.html">Building robust ML baselines with <code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/apply_to_cols.html">Transforming selected columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../column_level_featurizing.html">Column-level feature extraction</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -530,7 +531,6 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../multi_column_operations.html">Multi-column operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/multi_column_operations.html">Operating over multiple columns at once</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/drop_uninformative.html">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
 
 
@@ -641,80 +641,32 @@
                 <article class="bd-article">
                   
   <section id="advanced-columnwise-operations">
-<h1>Advanced columnwise operations<a class="headerlink" href="#advanced-columnwise-operations" title="Link to this heading">#</a></h1>
-<section id="rejection-handling-with-applytocols">
-<h2>Rejection handling with <code class="docutils literal notranslate"><span class="pre">ApplyToCols</span></code><a class="headerlink" href="#rejection-handling-with-applytocols" title="Link to this heading">#</a></h2>
-<p><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code> allows flexible manipulation of dataframes by automatically
-applying any of Skrub’s columnwise transformers to multiple columns in any given dataframe.
-More information can be found on this class’s basic usage on <a class="reference internal" href="../multi_column_operations/multi_column_operations.html#apply-to-each-col"><span class="std std-ref">Applying transformations to the columns with ApplyToEachCol and ApplyToSubFrame</span></a>.</p>
-<p>If the input columns are unable to be transformed, a specific exception exists to indicate
-this: <code class="xref py py-class docutils literal notranslate"><span class="pre">RejectColumn</span></code>. It can be called with a custom user message, to explain the rejection.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToDatetime</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">birthday</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;29/01/2024&quot;</span><span class="p">],</span> <span class="n">city</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;London&quot;</span><span class="p">]))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
-<span class="go">        birthday    city</span>
-<span class="go">0  29/01/2024  London</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
-<span class="go">birthday    ...</span>
-<span class="go">city        ...</span>
-<span class="go">dtype: object</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;birthday&quot;</span><span class="p">])</span>
-<span class="go">0   2024-01-29</span>
-<span class="go">Name: birthday, dtype: datetime64[...]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;city&quot;</span><span class="p">])</span>
-<span class="gt">Traceback (most recent call last):</span>
-<span class="w">    </span><span class="o">...</span>
-<span class="gr">skrub.core.RejectColumn</span>: <span class="n">Could not find a datetime format for column &#39;city&#39;.</span>
-</pre></div>
-</div>
-<p>The <code class="docutils literal notranslate"><span class="pre">allow_reject</span></code> parameter in <code class="docutils literal notranslate"><span class="pre">ApplyToCols</span></code> specifies how to react if such an exception is raised.
-By default, no special handling is performed and rejections are considered to be errors:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToCols</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">())</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="gt">Traceback (most recent call last):</span>
-<span class="w">    </span><span class="o">...</span>
-<span class="gr">ValueError</span>: <span class="n">Transformer ToDatetime.fit_transform failed on column &#39;city&#39;. See above for the full traceback.</span>
-</pre></div>
-</div>
-<p>However, setting <code class="docutils literal notranslate"><span class="pre">allow_reject=True</span></code> gives the transformer itself some
-control over which columns it should be applied to. For example, whether a
-string column contains dates is only known once we try to parse them.
-Therefore it might be sensible to try to parse all string columns but allow
-the transformer to reject those that, upon inspection, do not contain dates.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">allow_reject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span> <span class="o">=</span> <span class="n">to_datetime</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span>
-<span class="go">    birthday    city</span>
-<span class="go">0 2024-01-29  London</span>
-</pre></div>
-</div>
-<p>Now the column ‘city’ was rejected but this was not treated as an error;
-‘city’ was passed through unchanged and only ‘birthday’ was converted to a
-datetime column.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span><span class="o">.</span><span class="n">dtypes</span>
-<span class="go">birthday    datetime64[...]</span>
-<span class="go">city                ...</span>
-<span class="go">dtype: object</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span><span class="o">.</span><span class="n">transformers_</span>
-<span class="go">{&#39;birthday&#39;: ToDatetime()}</span>
-</pre></div>
-</div>
-</section>
+<span id="user-guide-single-column-transformer"></span><h1>Advanced columnwise operations<a class="headerlink" href="#advanced-columnwise-operations" title="Link to this heading">#</a></h1>
 <section id="the-single-column-transformer">
 <h2>The single column transformer<a class="headerlink" href="#the-single-column-transformer" title="Link to this heading">#</a></h2>
-<p>In cases where the user wants to apply a custom transformation to a series and needs the ApplyToCols
-structure to handle multiple columns, or if this transformation needs to be able to reject certain
-columns and communicate this to <code class="docutils literal notranslate"><span class="pre">ApplyToCols</span></code>, it is necessary to create a transformer from scratch
-that is capable of handling this exception.</p>
-<p>Hence the <code class="docutils literal notranslate"><span class="pre">SingleColumnTransformer</span></code> class. It is originally a base class from which many transformers are
-inherited, but it can also be used to create new transformers. As long as the user specifies
-corresponding <code class="docutils literal notranslate"><span class="pre">fit</span></code> and <code class="docutils literal notranslate"><span class="pre">transform</span></code> methods to their custom transformer, it can be passed on like any other.</p>
-<p>For instance, if one wanted to create a custom transformer specialized in parsing zip codes of a certain
-format, that returns <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> with a custom warning on zip code sizes:</p>
+<p>In cases where we want to apply a custom transformation to a series we need the <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>
+structure to handle multiple columns, and if this transformation needs to be able to reject certain
+columns and communicate this to <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>, we must to create a transformer from scratch
+that raises this exception when appropriate: this can be done with the <code class="xref py py-class docutils literal notranslate"><span class="pre">core.SingleColumnTranformer</span></code> class.</p>
+<p>For instance, we might want to create a custom transformer specialized in parsing zip codes:
+in this example, the zip codes need to have the format <code class="docutils literal notranslate"><span class="pre">AB123</span></code>, that is two letters
+followed by three digits.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;sent&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;AB123&quot;</span><span class="p">,</span> <span class="s2">&quot;BD601&quot;</span><span class="p">,</span> <span class="s2">&quot;HS014&quot;</span><span class="p">],</span> <span class="s1">&#39;received&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;AB1C45&quot;</span><span class="p">,</span> <span class="s2">&quot;DU3K93&quot;</span><span class="p">,</span> <span class="s2">&quot;WB9M88&quot;</span><span class="p">]})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
+<span class="go">    sent received</span>
+<span class="go">0  AB123   AB1C45</span>
+<span class="go">1  BD601   DU3K93</span>
+<span class="go">2  HS014   WB9M88</span>
+</pre></div>
+</div>
+<p>We would like to be able to “unpack” the zip code so that we have a column for the
+letters and one for the digits; the transformer should also be able to “reject” a column
+if it does not satisfy the format we specify. A “rejected” column should be passed
+through unchanged, as it cannot be handled by this particular transformer.</p>
+<p>We can therefore define a custom class that inherits from <code class="xref py py-class docutils literal notranslate"><span class="pre">core.SingleColumnTranformer</span></code>
+and that raises <a class="reference internal" href="../../reference/generated/skrub.core.RejectColumn.html#skrub.core.RejectColumn" title="skrub.core.RejectColumn"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.RejectColumn</span></code></a> if a column cannot be handled:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub.core</span><span class="w"> </span><span class="kn">import</span> <span class="n">RejectColumn</span><span class="p">,</span> <span class="n">SingleColumnTransformer</span>
-<span class="gp">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">class</span><span class="w"> </span><span class="nc">ZipcodeParser</span><span class="p">(</span><span class="n">SingleColumnTransformer</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="gp">... </span>        <span class="k">return</span>
@@ -728,21 +680,80 @@ format, that returns <code class="docutils literal notranslate"><span class="pre
 <span class="gp">... </span>            <span class="k">except</span><span class="p">:</span>
 <span class="gp">... </span>                <span class="k">raise</span> <span class="n">RejectColumn</span><span class="p">(</span><span class="s1">&#39;Input zip codes must consist of two letters followed by three numbers.&#39;</span><span class="p">)</span>
 <span class="gp">... </span>            <span class="k">return</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;letters&#39;</span><span class="p">:</span> <span class="n">letters</span><span class="p">,</span> <span class="s1">&#39;numbers&#39;</span><span class="p">:</span> <span class="n">numbers</span><span class="p">}))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;sent&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;AB123&quot;</span><span class="p">,</span> <span class="s2">&quot;BD601&quot;</span><span class="p">,</span> <span class="s2">&quot;HS014&quot;</span><span class="p">],</span> <span class="s1">&#39;received&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;AB1C45&quot;</span><span class="p">,</span> <span class="s2">&quot;DU3K93&quot;</span><span class="p">,</span> <span class="s2">&quot;WB9M88&quot;</span><span class="p">]})</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
-<span class="go">    sent received</span>
-<span class="go">0  AB123   AB1C45</span>
-<span class="go">1  BD601   DU3K93</span>
-<span class="go">2  HS014   WB9M88</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ZipcodeParser</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;sent&quot;</span><span class="p">])</span>
 <span class="go">  letters  numbers</span>
 <span class="go">0      AB      123</span>
 <span class="go">1      BD      601</span>
 <span class="go">2      HS       14</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ZipcodeParser</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;received&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>We can use <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> to apply this transformer to the entire dataframe at once,
+and set <code class="docutils literal notranslate"><span class="pre">allow_reject=True</span></code> to let rejected columns through without changes:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToCols</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ZipcodeParser</span><span class="p">(),</span> <span class="n">allow_reject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="go">letters  numbers received</span>
+<span class="go">0      AB      123   AB1C45</span>
+<span class="go">1      BD      601   DU3K93</span>
+<span class="go">2      HS       14   WB9M88</span>
+</pre></div>
+</div>
+<p>Note how the <code class="docutils literal notranslate"><span class="pre">&quot;received&quot;</span></code> column has been “rejected” and passed through unmodified.</p>
+</section>
+<section id="rejection-handling-with-applytocols-and-rejectcolumn">
+<h2>Rejection handling with <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.core.RejectColumn.html#skrub.core.RejectColumn" title="skrub.core.RejectColumn"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.RejectColumn</span></code></a><a class="headerlink" href="#rejection-handling-with-applytocols-and-rejectcolumn" title="Link to this heading">#</a></h2>
+<p>The combination <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.core.RejectColumn.html#skrub.core.RejectColumn" title="skrub.core.RejectColumn"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.RejectColumn</span></code></a> allows allows flexible manipulation
+and error checking of dataframe. In the previous example, we decided to ignore the
+malformed <code class="docutils literal notranslate"><span class="pre">&quot;received&quot;</span></code> column by setting <code class="docutils literal notranslate"><span class="pre">allow_reject=True</span></code>. If, however,
+we want our transformer to fail if it encounters a column that it cannot parse,
+we can keep the default value of <code class="docutils literal notranslate"><span class="pre">allow_reject=False</span></code>, so that the transform
+fails as soon as a malformed column is encountered:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ZipcodeParser</span><span class="p">())</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">skrub.core.RejectColumn</span>: <span class="n">This transformer only takes zip codes of length 5.</span>
+<span class="gr">ValueError</span>: <span class="n">Transformer ZipcodeParser.fit_transform failed on column &#39;received&#39;. ...</span>
+</pre></div>
+</div>
+<p>Letting rejected columns through can be useful for situations in which we do not
+know the content of a column in advance, like when we are trying to convert to
+datetime columns in a dataframe, without knowing which ones actually contain dates.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToDatetime</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">birthday</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;29/01/2024&quot;</span><span class="p">],</span> <span class="n">city</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;London&quot;</span><span class="p">]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
+<span class="go">        birthday    city</span>
+<span class="go">0  29/01/2024  London</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
+<span class="go">birthday    ...</span>
+<span class="go">city        ...</span>
+<span class="go">dtype: object</span>
+</pre></div>
+</div>
+<p>Converting a datetime column would work:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;birthday&quot;</span><span class="p">])</span>
+<span class="go">0   2024-01-29</span>
+<span class="go">Name: birthday, dtype: datetime64[...]</span>
+</pre></div>
+</div>
+<p>While non-datetimes would raise <a class="reference internal" href="../../reference/generated/skrub.core.RejectColumn.html#skrub.core.RejectColumn" title="skrub.core.RejectColumn"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.RejectColumn</span></code></a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;city&quot;</span><span class="p">])</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="w">    </span><span class="o">...</span>
+<span class="gr">skrub.core.RejectColumn</span>: <span class="n">Could not find a datetime format for column &#39;city&#39;.</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">allow_reject</span></code> parameter in <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> allows to apply the same transformer
+to all columns without having to worry about which columns will actually be converted:
+here, <a href="#id1"><span class="problematic" id="id2">|ToDatetime|</span></a> is applied only to the “birthday” column, while “city” is passed
+through unchanged and no exception is raised.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">allow_reject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span> <span class="o">=</span> <span class="n">to_datetime</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span>
+<span class="go">    birthday    city</span>
+<span class="go">0 2024-01-29  London</span>
+</pre></div>
+</div>
+<p>We can see that the only column that has a transformer is “birthday”:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span><span class="o">.</span><span class="n">transformers_</span>
+<span class="go">{&#39;birthday&#39;: ToDatetime()}</span>
 </pre></div>
 </div>
 </section>
@@ -795,8 +806,8 @@ format, that returns <code class="docutils literal notranslate"><span class="pre
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rejection-handling-with-applytocols">Rejection handling with <code class="docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-single-column-transformer">The single column transformer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rejection-handling-with-applytocols-and-rejectcolumn">Rejection handling with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">core.RejectColumn</span></code></a></li>
 </ul>
   </nav></div>
 
