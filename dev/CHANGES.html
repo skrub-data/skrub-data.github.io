@@ -618,6 +618,12 @@ to null by the <a class="reference internal" href="reference/generated/skrub.Cle
 <li><p>The configuration parameter “use_table_report” has been removed from the skrub
 configuration. Use <a class="reference internal" href="reference/generated/skrub.patch_display.html#skrub.patch_display" title="skrub.patch_display"><code class="xref py py-meth docutils literal notranslate"><span class="pre">patch_display()</span></code></a> instead.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1973">#1973</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p>Updated how the <code class="docutils literal notranslate"><span class="pre">column_filters</span></code> parameter of <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> works.
+It now accepts a dictionary where the key is the display name for the
+dropdown menu, and the value is a filter of the columns that will be displayed.
+Accepts either a list of column indices, a list of column names
+or an instance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">Selector</span></code>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1976">#1976</a> by <a class="reference external" href="https://github.com/lisaleemcb">Lisa McBride</a>.</p></li>
 <li><p>The overplotting of the counts atop the vertical histogram bars in the
 :class:’TableReport’ has been removed due to formatting issues.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1984">#1984</a> by <a class="reference external" href="https://github.com/lisaleemcb">Lisa McBride</a>.</p></li>
