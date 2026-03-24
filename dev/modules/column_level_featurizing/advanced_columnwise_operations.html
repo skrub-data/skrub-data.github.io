@@ -665,7 +665,7 @@ this: <code class="xref py py-class docutils literal notranslate"><span class="p
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;city&quot;</span><span class="p">])</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">skrub._single_column_transformer.RejectColumn</span>: <span class="n">Could not find a datetime format for column &#39;city&#39;.</span>
+<span class="gr">skrub.core.RejectColumn</span>: <span class="n">Could not find a datetime format for column &#39;city&#39;.</span>
 </pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">allow_reject</span></code> parameter in <code class="docutils literal notranslate"><span class="pre">ApplyToCols</span></code> specifies how to react if such an exception is raised.
@@ -742,7 +742,7 @@ format, that returns <code class="docutils literal notranslate"><span class="pre
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ZipcodeParser</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;received&quot;</span><span class="p">])</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">skrub._single_column_transformer.RejectColumn</span>: <span class="n">This transformer only takes zip codes of length 5.</span>
+<span class="gr">skrub.core.RejectColumn</span>: <span class="n">This transformer only takes zip codes of length 5.</span>
 </pre></div>
 </div>
 </section>
