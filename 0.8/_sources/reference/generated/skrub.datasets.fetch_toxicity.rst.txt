@@ -1,0 +1,10 @@
+﻿fetch\_toxicity
+===============
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_toxicity
+
+.. minigallery:: skrub.datasets.fetch_toxicity
+   :add-heading: Gallery examples
+   :heading-level: -

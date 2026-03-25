@@ -1,0 +1,14 @@
+﻿ParamSearch
+===========
+
+.. currentmodule:: skrub
+
+.. autoclass:: ParamSearch
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.ParamSearch skrub.ParamSearch.__init__ skrub.ParamSearch.fit skrub.ParamSearch.get_metadata_routing skrub.ParamSearch.get_params skrub.ParamSearch.plot_results skrub.ParamSearch.set_fit_request skrub.ParamSearch.set_params 
+   :add-heading: Gallery examples
+   :heading-level: -

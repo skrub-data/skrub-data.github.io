@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.set_description
+================================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.set_description

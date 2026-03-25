@@ -1,0 +1,10 @@
+﻿inv
+===
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: inv
+
+.. minigallery:: skrub.selectors.inv
+   :add-heading: Gallery examples
+   :heading-level: -

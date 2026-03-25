@@ -1,0 +1,10 @@
+﻿glob
+====
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: glob
+
+.. minigallery:: skrub.selectors.glob
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,0 +1,10 @@
+﻿choose\_float
+=============
+
+.. currentmodule:: skrub
+
+.. autofunction:: choose_float
+
+.. minigallery:: skrub.choose_float
+   :add-heading: Gallery examples
+   :heading-level: -

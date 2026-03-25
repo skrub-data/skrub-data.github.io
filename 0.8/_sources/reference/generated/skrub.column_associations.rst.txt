@@ -1,0 +1,10 @@
+﻿column\_associations
+====================
+
+.. currentmodule:: skrub
+
+.. autofunction:: column_associations
+
+.. minigallery:: skrub.column_associations
+   :add-heading: Gallery examples
+   :heading-level: -

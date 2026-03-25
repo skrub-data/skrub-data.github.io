@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.get_data
+=========================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.get_data

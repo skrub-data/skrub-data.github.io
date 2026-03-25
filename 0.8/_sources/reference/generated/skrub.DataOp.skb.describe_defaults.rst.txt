@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.describe_defaults
+==================================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.describe_defaults

@@ -1,0 +1,10 @@
+﻿optional
+========
+
+.. currentmodule:: skrub
+
+.. autofunction:: optional
+
+.. minigallery:: skrub.optional
+   :add-heading: Gallery examples
+   :heading-level: -

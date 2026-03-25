@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.subsample
+==========================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.subsample

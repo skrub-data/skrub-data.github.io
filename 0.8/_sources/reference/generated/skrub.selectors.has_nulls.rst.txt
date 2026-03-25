@@ -1,0 +1,10 @@
+﻿has\_nulls
+==========
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: has_nulls
+
+.. minigallery:: skrub.selectors.has_nulls
+   :add-heading: Gallery examples
+   :heading-level: -

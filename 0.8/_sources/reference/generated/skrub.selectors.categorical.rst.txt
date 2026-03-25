@@ -1,0 +1,10 @@
+﻿categorical
+===========
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: categorical
+
+.. minigallery:: skrub.selectors.categorical
+   :add-heading: Gallery examples
+   :heading-level: -

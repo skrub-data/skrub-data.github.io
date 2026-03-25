@@ -1,0 +1,10 @@
+﻿make\_deduplication\_data
+=========================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: make_deduplication_data
+
+.. minigallery:: skrub.datasets.make_deduplication_data
+   :add-heading: Gallery examples
+   :heading-level: -

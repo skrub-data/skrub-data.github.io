@@ -1,0 +1,10 @@
+﻿get\_data\_dir
+==============
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: get_data_dir
+
+.. minigallery:: skrub.datasets.get_data_dir
+   :add-heading: Gallery examples
+   :heading-level: -

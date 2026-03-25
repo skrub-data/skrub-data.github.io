@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.clone
+======================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.clone

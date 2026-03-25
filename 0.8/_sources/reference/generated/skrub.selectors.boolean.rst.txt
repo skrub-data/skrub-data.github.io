@@ -1,0 +1,10 @@
+﻿boolean
+=======
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: boolean
+
+.. minigallery:: skrub.selectors.boolean
+   :add-heading: Gallery examples
+   :heading-level: -

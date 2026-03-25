@@ -1,0 +1,31 @@
+:html_theme.sidebar_secondary.remove:
+
+.. _advanced_ref:
+
+.. title:: advanced
+
+
+.. currentmodule:: skrub
+
+
+Advanced topics
+---------------
+
+
+
+
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :toctree: generated/
+  :template: base.rst
+
+
+  core.SingleColumnTransformer
+  core.RejectColumn

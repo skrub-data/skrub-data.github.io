@@ -1,0 +1,10 @@
+﻿choose\_bool
+============
+
+.. currentmodule:: skrub
+
+.. autofunction:: choose_bool
+
+.. minigallery:: skrub.choose_bool
+   :add-heading: Gallery examples
+   :heading-level: -

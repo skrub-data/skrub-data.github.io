@@ -1,0 +1,10 @@
+﻿deferred
+========
+
+.. currentmodule:: skrub
+
+.. autofunction:: deferred
+
+.. minigallery:: skrub.deferred
+   :add-heading: Gallery examples
+   :heading-level: -

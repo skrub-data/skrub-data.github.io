@@ -1,0 +1,14 @@
+﻿OptunaParamSearch
+=================
+
+.. currentmodule:: skrub
+
+.. autoclass:: OptunaParamSearch
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.OptunaParamSearch skrub.OptunaParamSearch.__init__ skrub.OptunaParamSearch.fit skrub.OptunaParamSearch.get_metadata_routing skrub.OptunaParamSearch.get_params skrub.OptunaParamSearch.plot_results skrub.OptunaParamSearch.set_fit_request skrub.OptunaParamSearch.set_params 
+   :add-heading: Gallery examples
+   :heading-level: -
