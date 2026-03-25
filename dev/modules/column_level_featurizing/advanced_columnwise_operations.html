@@ -742,7 +742,7 @@ datetime columns in a dataframe, without knowing which ones actually contain dat
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">allow_reject</span></code> parameter in <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> allows to apply the same transformer
 to all columns without having to worry about which columns will actually be converted:
-here, <a href="#id1"><span class="problematic" id="id2">|ToDatetime|</span></a> is applied only to the “birthday” column, while “city” is passed
+here, <a class="reference internal" href="../../reference/generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a> is applied only to the “birthday” column, while “city” is passed
 through unchanged and no exception is raised.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">allow_reject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">transformed</span> <span class="o">=</span> <span class="n">to_datetime</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
