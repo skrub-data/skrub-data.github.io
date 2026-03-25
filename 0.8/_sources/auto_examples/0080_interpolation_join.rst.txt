@@ -368,9 +368,9 @@ to the right side table column names.
           <td>29.7</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>26.477453</td>
-          <td>15.104960</td>
-          <td>0.099717</td>
+          <td>26.889147</td>
+          <td>12.872899</td>
+          <td>0.166123</td>
         </tr>
         <tr>
           <th>1</th>
@@ -380,9 +380,9 @@ to the right side table column names.
           <td>33.3</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>30.154452</td>
-          <td>23.540904</td>
-          <td>0.246186</td>
+          <td>30.263974</td>
+          <td>19.932753</td>
+          <td>0.292332</td>
         </tr>
         <tr>
           <th>2</th>
@@ -392,9 +392,9 @@ to the right side table column names.
           <td>43.0</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>33.677300</td>
-          <td>33.265329</td>
-          <td>-0.033026</td>
+          <td>33.272996</td>
+          <td>54.870806</td>
+          <td>0.098370</td>
         </tr>
         <tr>
           <th>3</th>
@@ -404,9 +404,9 @@ to the right side table column names.
           <td>26.4</td>
           <td>0.0</td>
           <td>NaN</td>
-          <td>28.905896</td>
-          <td>23.184805</td>
-          <td>0.168480</td>
+          <td>27.823659</td>
+          <td>26.419183</td>
+          <td>0.464151</td>
         </tr>
         <tr>
           <th>4</th>
@@ -416,9 +416,9 @@ to the right side table column names.
           <td>29.1</td>
           <td>NaN</td>
           <td>NaN</td>
-          <td>26.769931</td>
-          <td>16.924789</td>
-          <td>0.088723</td>
+          <td>26.335586</td>
+          <td>11.362074</td>
+          <td>0.216358</td>
         </tr>
       </tbody>
     </table>
@@ -604,7 +604,7 @@ maximum daily temperature.
           <td>MI</td>
           <td>42.212059</td>
           <td>-83.348836</td>
-          <td>1.436587</td>
+          <td>1.801693</td>
         </tr>
         <tr>
           <th>1</th>
@@ -616,7 +616,7 @@ maximum daily temperature.
           <td>PA</td>
           <td>39.871953</td>
           <td>-75.241141</td>
-          <td>11.326324</td>
+          <td>10.978707</td>
         </tr>
         <tr>
           <th>2</th>
@@ -628,7 +628,7 @@ maximum daily temperature.
           <td>IL</td>
           <td>41.979595</td>
           <td>-87.904464</td>
-          <td>4.555807</td>
+          <td>4.212283</td>
         </tr>
         <tr>
           <th>3</th>
@@ -640,7 +640,7 @@ maximum daily temperature.
           <td>KY</td>
           <td>39.046143</td>
           <td>-84.662172</td>
-          <td>14.519342</td>
+          <td>14.078112</td>
         </tr>
         <tr>
           <th>4</th>
@@ -652,7 +652,7 @@ maximum daily temperature.
           <td>TX</td>
           <td>32.895951</td>
           <td>-97.037200</td>
-          <td>16.526369</td>
+          <td>17.558513</td>
         </tr>
       </tbody>
     </table>
@@ -703,11 +703,11 @@ Washington, Minnesota.
 
 
     state
-    AK   -2.431676
-    MT    0.461154
-    ND    0.903188
-    MN    1.388191
-    WA    1.471754
+    AK   -4.842853
+    MT    0.134116
+    ND    0.955637
+    WA    1.249134
+    MN    1.620360
     Name: TMAX, dtype: float64
 
 
@@ -733,11 +733,11 @@ Florida, Louisiana.
 
 
     state
-    LA    20.944470
-    FL    24.787106
-    HI    27.094027
-    VI    30.142375
-    PR    30.744636
+    LA    21.158096
+    FL    24.976357
+    HI    27.060869
+    VI    30.061267
+    PR    30.552774
     Name: TMAX, dtype: float64
 
 
@@ -822,9 +822,9 @@ estimators.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 46.392 seconds)
+   **Total running time of the script:** (0 minutes 38.474 seconds)
 
-**Estimated memory usage:**  2600 MB
+**Estimated memory usage:**  2562 MB
 
 
 .. _sphx_glr_download_auto_examples_0080_interpolation_join.py:
@@ -836,7 +836,7 @@ estimators.
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/0080_interpolation_join.ipynb
+        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.8.0?urlpath=lab/tree/notebooks/auto_examples/0080_interpolation_join.ipynb
         :alt: Launch binder
         :width: 150 px
 

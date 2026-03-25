@@ -766,9 +766,9 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 11.584 seconds)
+   **Total running time of the script:** (0 minutes 11.410 seconds)
 
-**Estimated memory usage:**  573 MB
+**Estimated memory usage:**  566 MB
 
 
 .. _sphx_glr_download_auto_examples_0030_datetime_encoder.py:
@@ -780,7 +780,7 @@ and transforms datetime columns by default.
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/0030_datetime_encoder.ipynb
+        :target: https://mybinder.org/v2/gh/skrub-data/skrub/0.8.0?urlpath=lab/tree/notebooks/auto_examples/0030_datetime_encoder.ipynb
         :alt: Launch binder
         :width: 150 px
 
