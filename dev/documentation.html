@@ -74,7 +74,7 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Exploring a Dataframe" href="exploring_a_dataframe.html" />
+    <link rel="next" title="Getting Started with skrub" href="auto_tutorials/0000_getting_started.html" />
     <link rel="prev" title="Install" href="install.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -511,6 +511,7 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="auto_tutorials/0000_getting_started.html">Getting Started with skrub</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="exploring_a_dataframe.html">Exploring a Dataframe</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="modules/tablereport/exploring_dataframes_interactively.html">Exploring dataframes interactively with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/tablereport/finding_correlated_columns.html">Finding Correlated Columns in a DataFrame</a></li>
@@ -544,6 +545,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="data_ops.html">Complex multi-table pipelines with Data Ops</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="modules/data_ops/basics/what_are_data_ops.html">Basics of DataOps: the DataOps plan, variables, and learners</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/data_ops/basics/building_data_ops_plan.html">Building a simple DataOps plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_tutorials/1110_data_ops_intro.html">Tutorial: Using Data Ops to build a machine-learning pipeline</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/data_ops/basics/using_previews.html">Using previews for easier development and debugging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/data_ops/basics/direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/data_ops/basics/control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
@@ -639,7 +641,7 @@
 <p>Skrub is a Python library that facilitates machine learning with tabular data
 (dataframes, such as pandas and polars) using a scikit-learn-compatible API.</p>
 <p>Use the sections below to navigate the guide. For a quickstart example,
-try <a class="reference internal" href="auto_examples/0000_getting_started.html#sphx-glr-auto-examples-0000-getting-started-py"><span class="std std-ref">Getting Started</span></a>.
+try <span class="xref std std-ref">Getting Started</span>.
 For runnable code, see the <a class="reference internal" href="auto_examples/index.html"><span class="doc">Example gallery</span></a>.
 For class and function details, see the <a class="reference internal" href="reference/index.html#api-ref"><span class="std std-ref">API Reference</span></a>.</p>
  <script>
@@ -797,6 +799,15 @@ For class and function details, see the <a class="reference internal" href="refe
 
 </style><div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="auto_tutorials/0000_getting_started.html">Getting Started with skrub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="auto_tutorials/0000_getting_started.html#preliminary-exploration-with-the-tablereport">Preliminary exploration with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_tutorials/0000_getting_started.html#sanitizing-data-with-the-cleaner">Sanitizing data with the <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_tutorials/0000_getting_started.html#easily-building-a-strong-baseline-for-tabular-machine-learning">Easily building a strong baseline for tabular machine learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_tutorials/0000_getting_started.html#encoding-any-data-as-numerical-features">Encoding any data as numerical features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_tutorials/0000_getting_started.html#advanced-use-cases">Advanced use cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_tutorials/0000_getting_started.html#next-steps">Next steps</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="exploring_a_dataframe.html">Exploring a Dataframe</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="modules/tablereport/exploring_dataframes_interactively.html">Exploring dataframes interactively with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="modules/tablereport/exploring_dataframes_interactively.html#a-demo-of-the-tablereport">A demo of the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
@@ -873,6 +884,7 @@ For class and function details, see the <a class="reference internal" href="refe
 <li class="toctree-l2"><a class="reference internal" href="data_ops.html#data-ops-basic-concepts">Data Ops basic concepts</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="modules/data_ops/basics/what_are_data_ops.html">Basics of DataOps: the DataOps plan, variables, and learners</a></li>
 <li class="toctree-l3"><a class="reference internal" href="modules/data_ops/basics/building_data_ops_plan.html">Building a simple DataOps plan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="auto_tutorials/1110_data_ops_intro.html">Tutorial: Using Data Ops to build a machine-learning pipeline</a></li>
 <li class="toctree-l3"><a class="reference internal" href="modules/data_ops/basics/using_previews.html">Using previews for easier development and debugging</a></li>
 <li class="toctree-l3"><a class="reference internal" href="modules/data_ops/basics/direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="modules/data_ops/basics/control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
@@ -951,11 +963,11 @@ For class and function details, see the <a class="reference internal" href="refe
       </div>
     </a>
     <a class="right-next"
-       href="exploring_a_dataframe.html"
+       href="auto_tutorials/0000_getting_started.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Exploring a Dataframe</p>
+        <p class="prev-next-title">Getting Started with skrub</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**06:14.132** total execution time for 7 files **from auto_examples/data_ops**:
+**05:23.476** total execution time for 6 files **from auto_examples/data_ops**:
 
 .. container::
 
@@ -33,23 +33,20 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_data_ops_1120_multiple_tables.py` (``1120_multiple_tables.py``)
-     - 03:11.331
-     - 708.0
+     - 02:36.879
+     - 752.6
    * - :ref:`sphx_glr_auto_examples_data_ops_1131_optuna_choices.py` (``1131_optuna_choices.py``)
-     - 01:06.308
-     - 722.2
+     - 01:16.955
+     - 633.7
    * - :ref:`sphx_glr_auto_examples_data_ops_1130_choices.py` (``1130_choices.py``)
-     - 00:43.606
-     - 576.9
+     - 00:36.675
+     - 575.9
    * - :ref:`sphx_glr_auto_examples_data_ops_1160_pytorch.py` (``1160_pytorch.py``)
-     - 00:25.545
-     - 604.6
+     - 00:23.369
+     - 606.9
    * - :ref:`sphx_glr_auto_examples_data_ops_1140_subsampling.py` (``1140_subsampling.py``)
-     - 00:21.570
-     - 616.0
-   * - :ref:`sphx_glr_auto_examples_data_ops_1110_data_ops_intro.py` (``1110_data_ops_intro.py``)
-     - 00:14.529
-     - 577.1
+     - 00:19.496
+     - 605.9
    * - :ref:`sphx_glr_auto_examples_data_ops_1150_use_case.py` (``1150_use_case.py``)
-     - 00:11.244
-     - 673.9
+     - 00:10.103
+     - 668.3

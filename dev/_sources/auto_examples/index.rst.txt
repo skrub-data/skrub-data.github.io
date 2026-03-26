@@ -13,23 +13,6 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This guide showcases some of the features of skrub. Much of skrub revolves around simplifying many of the tasks that are involved in pre-processing raw data into a format that shallow or classic machine-learning models can understand, that is, numerical data.">
-
-.. only:: html
-
-  .. image:: /auto_examples/images/thumb/sphx_glr_0000_getting_started_thumb.svg
-    :alt:
-
-  :doc:`/auto_examples/0000_getting_started`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Getting Started</div>
-    </div>
-
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset.">
 
 .. only:: html
@@ -208,7 +191,6 @@ Examples
 .. toctree::
    :hidden:
 
-   /auto_examples/0000_getting_started
    /auto_examples/0010_encodings
    /auto_examples/0020_text_with_string_encoders
    /auto_examples/0030_datetime_encoder
@@ -231,23 +213,6 @@ Skrub DataOps
     <div class="sphx-glr-thumbnails">
 
 .. thumbnail-parent-div-open
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="This example shows data wrangling for machine learning using Skrub&#x27;s user_guide_data_ops_index.">
-
-.. only:: html
-
-  .. image:: /auto_examples/data_ops/images/thumb/sphx_glr_1110_data_ops_intro_thumb.svg
-    :alt:
-
-  :doc:`/auto_examples/data_ops/1110_data_ops_intro`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Introduction to wrangling pipelines for machine-learning skrub DataOps</div>
-    </div>
-
 
 .. raw:: html
 

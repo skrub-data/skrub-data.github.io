@@ -511,7 +511,6 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="0000_getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0010_encodings.html">Encoding: from a dataframe to a numerical matrix for machine learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0020_text_with_string_encoders.html">Various string encoders: a sentiment analysis example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0030_datetime_encoder.html">Handling datetime features with the DatetimeEncoder</a></li>
@@ -525,7 +524,6 @@
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="data_ops/index.html">Skrub DataOps</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="data_ops/1110_data_ops_intro.html">Introduction to wrangling pipelines for machine-learning skrub DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/1120_multiple_tables.html">Multiples tables: building machine learning pipelines with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/1130_choices.html">Hyperparameter tuning with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_ops/1131_optuna_choices.html">Tuning DataOps with Optuna</a></li>
@@ -882,9 +880,9 @@ to the right side table column names.</p>
       <td>29.7</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>25.366874</td>
-      <td>13.124806</td>
-      <td>0.142823</td>
+      <td>26.883011</td>
+      <td>20.248752</td>
+      <td>0.062243</td>
     </tr>
     <tr>
       <th>1</th>
@@ -894,9 +892,9 @@ to the right side table column names.</p>
       <td>33.3</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>29.146008</td>
-      <td>16.889795</td>
-      <td>0.135876</td>
+      <td>29.631492</td>
+      <td>35.766955</td>
+      <td>0.236862</td>
     </tr>
     <tr>
       <th>2</th>
@@ -906,9 +904,9 @@ to the right side table column names.</p>
       <td>43.0</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>32.835849</td>
-      <td>73.328690</td>
-      <td>0.005279</td>
+      <td>33.661883</td>
+      <td>98.948288</td>
+      <td>-0.001914</td>
     </tr>
     <tr>
       <th>3</th>
@@ -918,9 +916,9 @@ to the right side table column names.</p>
       <td>26.4</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>26.975661</td>
-      <td>21.726215</td>
-      <td>0.248096</td>
+      <td>28.284272</td>
+      <td>32.430676</td>
+      <td>0.462320</td>
     </tr>
     <tr>
       <th>4</th>
@@ -930,9 +928,9 @@ to the right side table column names.</p>
       <td>29.1</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>26.042920</td>
-      <td>7.679240</td>
-      <td>0.212513</td>
+      <td>26.639022</td>
+      <td>10.599173</td>
+      <td>0.062243</td>
     </tr>
   </tbody>
 </table>
@@ -1054,7 +1052,7 @@ maximum daily temperature.</p>
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>0.827050</td>
+      <td>0.803135</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1066,7 +1064,7 @@ maximum daily temperature.</p>
       <td>PA</td>
       <td>39.871953</td>
       <td>-75.241141</td>
-      <td>10.884651</td>
+      <td>10.327951</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1078,7 +1076,7 @@ maximum daily temperature.</p>
       <td>IL</td>
       <td>41.979595</td>
       <td>-87.904464</td>
-      <td>5.197020</td>
+      <td>4.919111</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1090,7 +1088,7 @@ maximum daily temperature.</p>
       <td>KY</td>
       <td>39.046143</td>
       <td>-84.662172</td>
-      <td>13.992107</td>
+      <td>14.427481</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1102,7 +1100,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>15.310276</td>
+      <td>15.200933</td>
     </tr>
   </tbody>
 </table>
@@ -1123,11 +1121,11 @@ Washington, Minnesota.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -5.402537
-MT    0.237862
-ND    0.732824
-WA    1.502835
-MN    1.650422
+AK   -3.292653
+MT   -0.276705
+WA    0.690458
+ND    0.699755
+MN    1.741853
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1137,11 +1135,11 @@ Florida, Louisiana.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-LA    21.138655
-FL    25.052090
-HI    27.584231
-VI    30.515568
-PR    31.174572
+LA    21.143426
+FL    24.810557
+HI    27.478134
+VI    29.814391
+PR    30.166950
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1179,8 +1177,8 @@ would contain, rather than by searching for an actual match. It is a generalizat
 the <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an
 <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor
 estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 45.104 seconds)</p>
-<p><strong>Estimated memory usage:</strong>  2696 MB</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 40.264 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  2659 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-0080-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/0080_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
