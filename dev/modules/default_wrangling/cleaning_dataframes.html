@@ -175,8 +175,15 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../howto.html">
+    How-to’s
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../reference/index.html">
-    API Reference
+    API
   </a>
 </li>
 
@@ -378,8 +385,15 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../howto.html">
+    How-to’s
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../reference/index.html">
-    API Reference
+    API
   </a>
 </li>
 
@@ -514,7 +528,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../auto_tutorials/0000_getting_started.html">Getting Started with skrub</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../exploring_a_dataframe.html">Exploring a Dataframe</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../tablereport/exploring_dataframes_interactively.html">Exploring dataframes interactively with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tablereport/finding_correlated_columns.html">Finding Correlated Columns in a DataFrame</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../default_wrangling.html">Wrangling data with good defaults</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -567,12 +580,6 @@
 
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/exporting_data_ops.html">Exporting the DataOps plan as a learner and reusing it</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/tuning_with_optuna.html">Tuning DataOps with Optuna</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../configuration_and_utils.html">Configuration and dataset utilities</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../configuration_and_utils/customizing_configuration.html">Customizing the global configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../configuration_and_utils/deduplicate_categorical_data.html">Deduplicating categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../configuration_and_utils/fetching_datasets.html">Working with the example datasets provided by skrub</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../joining_dataframes.html">Joining Dataframes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -647,8 +654,11 @@
 <p>Very often, the first steps in preparing a dataframe for further use involve
 understanding the datatypes in the data and changing them into a more suitable format
 (e.g., from string to number or datetime).</p>
-<p>The <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> aids with this by running the following set of transformations on
-each column:</p>
+<p>The <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> aids with this by running common operations on each column, including
+replacing “null-looking” strings (e.g., <code class="docutils literal notranslate"><span class="pre">NULL</span></code>) with actual null values, and
+parsing datetimes and numbers.</p>
+<details class="admonition-all-the-transformations-done-by-the-cleaner admonition">
+<summary class="admonition-title">All the transformations done by the <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></summary>
 <ul class="simple">
 <li><p>Clean null strings: Replace strings typically used to represent missing values
 with a null value suitable for the column under consideration.</p></li>
@@ -669,12 +679,10 @@ that contain text or IDs. Numeric columns are never dropped by <code class="docu
 actual datetimes with the correct dtype. If <code class="docutils literal notranslate"><span class="pre">datetime_format</span></code> is provided,
 it is forwarded to <a class="reference internal" href="../../reference/generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a>. Otherwise, the format is guessed according
 to common datetime formats.</p></li>
-<li><p>Clean categories: If the dtype of the column is detected as “Categorical”,
-process it based on the dataframe library (Pandas or Polars) to ensure
-consistent typing and avoid downstream issues.</p></li>
 <li><p>Convert to strings: Convert columns to strings unless they have a more informative
 dtype, such as numeric, categorical, or datetime.</p></li>
 </ul>
+</details>
 <p>If <code class="docutils literal notranslate"><span class="pre">numeric_dtype</span></code> is set to <code class="docutils literal notranslate"><span class="pre">float32</span></code>, the <code class="docutils literal notranslate"><span class="pre">Cleaner</span></code> will also convert
 numeric columns to <code class="docutils literal notranslate"><span class="pre">np.float32</span></code> dtype, ensuring a consistent representation
 of numbers and missing values. This can be useful if the <code class="docutils literal notranslate"><span class="pre">Cleaner</span></code>

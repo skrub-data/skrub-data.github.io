@@ -7,16 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Finding Correlated Columns in a DataFrame" />
+<meta property="og:title" content="How to export and share the TableReport" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/modules/tablereport/finding_correlated_columns.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/guides/table_report/exporting.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="In addition to TableReport ’s Associations tab, you can compute associations using the column_associations() function, which returns a dataframe containing the associations. Reported metrics includ..." />
+<meta property="og:description" content="The TableReport is generated as a standalone HTML file that includes the report data, the plots, and the Javascript necessary to provide interactivity. If it is generated inside a notebook (Jupyter..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="In addition to TableReport ’s Associations tab, you can compute associations using the column_associations() function, which returns a dataframe containing the associations. Reported metrics includ..." />
+<meta name="description" content="The TableReport is generated as a standalone HTML file that includes the report data, the plots, and the Javascript necessary to provide interactivity. If it is generated inside a notebook (Jupyter..." />
 
-    <title>Finding Correlated Columns in a DataFrame &#8212; skrub</title>
+    <title>How to export and share the TableReport &#8212; skrub</title>
   
   
   
@@ -60,7 +60,7 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=fd10adb8"></script>
     <script src="../../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'modules/tablereport/finding_correlated_columns';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'guides/table_report/exporting';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
@@ -69,13 +69,13 @@
             true;
         </script>
     <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
-    <link rel="canonical" href="https://skrub-data.org/stable/modules/tablereport/finding_correlated_columns.html" />
+    <link rel="canonical" href="https://skrub-data.org/stable/guides/table_report/exporting.html" />
     <link rel="icon" href="../../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Wrangling data with good defaults" href="../../default_wrangling.html" />
-    <link rel="prev" title="Exploring dataframes interactively with the TableReport" href="exploring_dataframes_interactively.html" />
+    <link rel="next" title="Finding Correlated Columns in a DataFrame" href="finding_correlated_columns.html" />
+    <link rel="prev" title="How to tweak the Appearance of the TableReport" href="alter_appearance.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.9.dev0" />
@@ -167,16 +167,23 @@
 </li>
 
 
-<li class="nav-item current active">
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../documentation.html">
     User Guide
   </a>
 </li>
 
 
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../howto.html">
+    How-to’s
+  </a>
+</li>
+
+
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../reference/index.html">
-    API Reference
+    API
   </a>
 </li>
 
@@ -370,16 +377,23 @@
 </li>
 
 
-<li class="nav-item current active">
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../documentation.html">
     User Guide
   </a>
 </li>
 
 
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../howto.html">
+    How-to’s
+  </a>
+</li>
+
+
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../reference/index.html">
-    API Reference
+    API
   </a>
 </li>
 
@@ -511,74 +525,12 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../auto_tutorials/0000_getting_started.html">Getting Started with skrub</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../exploring_a_dataframe.html">Exploring a Dataframe</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="exploring_dataframes_interactively.html">Exploring dataframes interactively with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Finding Correlated Columns in a DataFrame</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../default_wrangling.html">Wrangling data with good defaults</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/cleaning_dataframes.html"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code>: sanitizing a dataframe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/table_vectorizer.html">Transforming a table into an array of numeric features: <code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/tabular_pipeline.html">Building robust ML baselines with <code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/apply_to_cols.html">Transforming selected columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../column_level_featurizing.html">Column-level feature extraction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../column_level_featurizing/feature_engineering_categorical.html">Encoding string and text columns as numeric features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../column_level_featurizing/feature_engineering_datetimes.html">Handling datetimes: parsing from strings and encoding as numbers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../column_level_featurizing/robust_scaling.html">Robust scaling of numeric features using <code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../column_level_featurizing/advanced_columnwise_operations.html">Advanced columnwise operations</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../multi_column_operations.html">Multi-column operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/drop_uninformative.html">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/selectors.html">Skrub Selectors, for selecting columns in a dataframe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/type_of_selectors.html">Selecting based on dtype or data properties</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/advanced_selectors.html"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code> to select with user-defined criteria</a></li>
-
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../data_ops.html">Complex multi-table pipelines with Data Ops</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/what_are_data_ops.html">Basics of DataOps: the DataOps plan, variables, and learners</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/building_data_ops_plan.html">Building a simple DataOps plan</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../auto_tutorials/1110_data_ops_intro.html">Tutorial: Using Data Ops to build a machine-learning pipeline</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/using_previews.html">Using previews for easier development and debugging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/data_ops_vs_alternatives.html">How do skrub Data Ops differ from the alternatives?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/applying_ml_estimators.html">Applying machine-learning estimators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/applying_different_transformers.html">Applying different transformers using skrub selectors and DataOps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/documenting_data_ops_plan.html">Documenting the DataOps plan with node names and descriptions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/evaluating_debugging_data_ops.html">Evaluating and debugging the DataOps plan with <code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.full_report()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/using_part_of_data_ops_plan.html">Using only a part of a DataOps plan</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/subsampling_data.html">Subsampling data for easier development and debugging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/tuning_validating_data_ops.html">Tuning and validating skrub DataOps plans</a></li>
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/hyperparameter_tuning.html">Using the skrub <code class="docutils literal notranslate"><span class="pre">choose_*</span></code> functions to tune hyperparameters</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/nested_cross_validation.html">Validating hyperparameter search with nested cross-validation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/nesting_choices_choosing_pipelines.html">Going beyond estimator hyperparameters: nesting choices and choosing pipelines</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/exporting_data_ops.html">Exporting the DataOps plan as a learner and reusing it</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/tuning_with_optuna.html">Tuning DataOps with Optuna</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../configuration_and_utils.html">Configuration and dataset utilities</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../configuration_and_utils/customizing_configuration.html">Customizing the global configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../configuration_and_utils/deduplicate_categorical_data.html">Deduplicating categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../configuration_and_utils/fetching_datasets.html">Working with the example datasets provided by skrub</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../joining_dataframes.html">Joining Dataframes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../joining_tables/assembling.html">Assembling: joining multiple tables</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="alter_appearance.html">How to tweak the Appearance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">How to export and share the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding_correlated_columns.html">Finding Correlated Columns in a DataFrame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../utilities/customizing_configuration.html">How to configure and customize the default behavior of skrub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../utilities/deduplicate_categorical_data.html">How to deduplicate categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../utilities/fetching_datasets.html">Working with the example datasets provided by skrub</a></li>
 </ul>
 </div>
 </nav></div>
@@ -620,12 +572,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../../documentation.html" class="nav-link">User Guide</a></li>
+    <li class="breadcrumb-item"><a href="../../howto.html" class="nav-link">How-to’s</a></li>
     
-    
-    <li class="breadcrumb-item"><a href="../../exploring_a_dataframe.html" class="nav-link">Exploring a Dataframe</a></li>
-    
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Finding Correlated Columns in a DataFrame</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">How to export and share the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></span></li>
   </ul>
 </nav>
 </div>
@@ -642,18 +591,34 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="finding-correlated-columns-in-a-dataframe">
-<span id="user-guide-table-report-associations"></span><h1>Finding Correlated Columns in a DataFrame<a class="headerlink" href="#finding-correlated-columns-in-a-dataframe" title="Link to this heading">#</a></h1>
-<p>In addition to <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>’s <strong>Associations</strong> tab, you can compute associations
-using the <a class="reference internal" href="../../reference/generated/skrub.column_associations.html#skrub.column_associations" title="skrub.column_associations"><code class="xref py py-func docutils literal notranslate"><span class="pre">column_associations()</span></code></a> function, which returns a dataframe containing the
-associations.</p>
-<p>Reported metrics include <a class="reference external" href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Cramer’s V statistic</a>
-and <a class="reference external" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson’s Correlation Coefficient</a>.
-The result is returned as a dataframe that contains the column name and idx for the
-left and right table and both associations; results are sorted in descending order
-by Cramer’s V association.</p>
-<p>This can be useful to have access to the information used in the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>
-for later use (e.g., to select which columns to drop).</p>
+  <section id="how-to-export-and-share-the-tablereport">
+<span id="user-guide-table-report-sharing"></span><h1>How to export and share the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a><a class="headerlink" href="#how-to-export-and-share-the-tablereport" title="Link to this heading">#</a></h1>
+<p>The <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> is generated as a standalone HTML file that includes the report
+data, the plots, and the Javascript necessary to provide interactivity.</p>
+<p>If it is generated inside a notebook (Jupyter or Marimo), the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> is
+rendered directly inside the cell where it is called. If, instead, it is generated
+by a script, the report will need to be opened by calling <code class="docutils literal notranslate"><span class="pre">.open()</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">TableReport</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Note that calling <code class="docutils literal notranslate"><span class="pre">.open()</span></code> will start a standalone process that hosts the report,
+and a tab will be opened in the default browser. It is not possible to save the
+report from the webpage. The function <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport.write_html" title="skrub.TableReport.write_html"><code class="xref py py-func docutils literal notranslate"><span class="pre">write_html()</span></code></a>
+be used for that:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tr</span> <span class="o">=</span> <span class="n">TableReport</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">tr</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="s2">&quot;my_report.html&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It is also possible to export the raw HTML, or a HTML fragment to embed in a page
+with <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport.html" title="skrub.TableReport.html"><code class="xref py py-func docutils literal notranslate"><span class="pre">html()</span></code></a> and  <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport.html_snippet" title="skrub.TableReport.html_snippet"><code class="xref py py-func docutils literal notranslate"><span class="pre">html_snippet()</span></code></a>
+respectively.</p>
+<p>Finally, it is possible to export the data in JSON format, which allows structured
+access to the data and statistics used to build the report with
+<a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport.json" title="skrub.TableReport.json"><code class="xref py py-func docutils literal notranslate"><span class="pre">json()</span></code></a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tr</span> <span class="o">=</span> <span class="n">TableReport</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">json_data</span> <span class="o">=</span> <span class="n">tr</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
+</div>
 </section>
 
 
@@ -667,20 +632,20 @@ for later use (e.g., to select which columns to drop).</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="exploring_dataframes_interactively.html"
+       href="alter_appearance.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Exploring dataframes interactively with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></p>
+        <p class="prev-next-title">How to tweak the Appearance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></p>
       </div>
     </a>
     <a class="right-next"
-       href="../../default_wrangling.html"
+       href="finding_correlated_columns.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Wrangling data with good defaults</p>
+        <p class="prev-next-title">Finding Correlated Columns in a DataFrame</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -699,7 +664,7 @@ for later use (e.g., to select which columns to drop).</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/modules/tablereport/finding_correlated_columns.rst.txt"
+      <li><a href="../../_sources/guides/table_report/exporting.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

@@ -175,8 +175,15 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../howto.html">
+    How-to’s
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../reference/index.html">
-    API Reference
+    API
   </a>
 </li>
 
@@ -378,8 +385,15 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../howto.html">
+    How-to’s
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../reference/index.html">
-    API Reference
+    API
   </a>
 </li>
 
@@ -514,7 +528,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../auto_tutorials/0000_getting_started.html">Getting Started with skrub</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../exploring_a_dataframe.html">Exploring a Dataframe</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../tablereport/exploring_dataframes_interactively.html">Exploring dataframes interactively with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tablereport/finding_correlated_columns.html">Finding Correlated Columns in a DataFrame</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../default_wrangling.html">Wrangling data with good defaults</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -567,12 +580,6 @@
 
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/exporting_data_ops.html">Exporting the DataOps plan as a learner and reusing it</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/tuning_with_optuna.html">Tuning DataOps with Optuna</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../configuration_and_utils.html">Configuration and dataset utilities</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../configuration_and_utils/customizing_configuration.html">Customizing the global configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../configuration_and_utils/deduplicate_categorical_data.html">Deduplicating categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../configuration_and_utils/fetching_datasets.html">Working with the example datasets provided by skrub</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../joining_dataframes.html">Joining Dataframes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -654,32 +661,6 @@ becomes expensive when the number of distinct values becomes large, while the
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrdinalEncoder</span></code></a> introduces order in features that may not have an inherent ordering.</p>
 <p>To address these shortcomings and generalize to more columns, skrub implements
 four different transformers, each with its own pros and cons.</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="../../reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a>: <strong>the default encoder, strong in most cases</strong>: A strong and quick
-baseline for both short strings with high cardinality and long text. This encoder
-computes the n-gram frequency using tf-idf vectorization, followed by truncated SVD
-(<a class="reference external" href="https://en.wikipedia.org/wiki/Latent_semantic_analysis">Latent Semantic Analysis</a>).
-This is the default encoder used by the <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and the <a class="reference internal" href="../../reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a>.</p></li>
-<li><p><a class="reference internal" href="../../reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a>: <strong>language model-based, strong on text but expensive to run</strong>:
-This encoder encodes string features using pretrained language models from the
-HuggingFace Hub. It is a wrapper around <a class="reference external" href="https://sbert.net/">sentence-transformers</a>
-compatible with the scikit-learn API and usable in pipelines. Best for free-flowing
-text and when columns include context found in the pretrained model (e.g., names of
-cities etc.). Note that this encoder can take a very long time to train, especially
-on large datasets and on CPU. The <a class="reference internal" href="../../reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> has additional dependencies that
-are not included in the standard skrub installation.
-Refer to <a class="reference internal" href="../../install.html#installation-instructions"><span class="std std-ref">Install</span></a> for info on how to prepare the
-environment.</p></li>
-<li><p><a class="reference internal" href="../../reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>: <strong>very fast encoder, but not as effective as the others</strong>:
-This encoder decomposes strings into n-grams, then applies the MinHash method to
-convert them into numeric features. Fast to train, but features may yield worse
-results compared to other methods.</p></li>
-<li><p><a class="reference internal" href="../../reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>: <strong>an interpretable, if slower encoder</strong>: The <a class="reference internal" href="../../reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> estimates
-“latent categories” on the training data by finding common n-grams between strings,
-then encodes the categories as real numbers. It allows access to grouped features
-via <code class="docutils literal notranslate"><span class="pre">.get_feature_names_out()</span></code>, which allows for better interpretability. This
-encoder may require a long time to train.</p></li>
-</ul>
 <p>All encoders work like regular scikit-learn transformers. All encoders
 take a parameter <code class="docutils literal notranslate"><span class="pre">n_components</span></code> to specify how many features should
 be generated for each input feature.</p>
@@ -721,8 +702,34 @@ is available in the documentation of the encoder itself.</p>
 <span class="go">2                                     0.982307                                         0.099680</span>
 </pre></div>
 </div>
-<section id="comparing-the-categorical-encoders-included-in-skrub">
-<h2>Comparing the categorical encoders included in skrub<a class="headerlink" href="#comparing-the-categorical-encoders-included-in-skrub" title="Link to this heading">#</a></h2>
+<section id="choosing-the-right-encoder-for-the-job">
+<h2>Choosing the right encoder for the job<a class="headerlink" href="#choosing-the-right-encoder-for-the-job" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../../reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a>: <strong>the default encoder, strong in most cases</strong>: A strong and quick
+baseline for both short strings with high cardinality and long text. This encoder
+computes the n-gram frequency using tf-idf vectorization, followed by truncated SVD
+(<a class="reference external" href="https://en.wikipedia.org/wiki/Latent_semantic_analysis">Latent Semantic Analysis</a>).
+This is the default encoder used by the <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and the <a class="reference internal" href="../../reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a>.</p></li>
+<li><p><a class="reference internal" href="../../reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a>: <strong>language model-based, strong on text but expensive to run</strong>:
+This encoder encodes string features using pretrained language models from the
+HuggingFace Hub. It is a wrapper around <a class="reference external" href="https://sbert.net/">sentence-transformers</a>
+compatible with the scikit-learn API and usable in pipelines. Best for free-flowing
+text and when columns include context found in the pretrained model (e.g., names of
+cities etc.). Note that this encoder can take a very long time to train, especially
+on large datasets and on CPU. The <a class="reference internal" href="../../reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> has additional dependencies that
+are not included in the standard skrub installation.
+Refer to <a class="reference internal" href="../../install.html#installation-instructions"><span class="std std-ref">Install</span></a> for info on how to prepare the
+environment.</p></li>
+<li><p><a class="reference internal" href="../../reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>: <strong>very fast encoder, but not as effective as the others</strong>:
+This encoder decomposes strings into n-grams, then applies the MinHash method to
+convert them into numeric features. Fast to train, but features usually yield worse
+results compared to other methods.</p></li>
+<li><p><a class="reference internal" href="../../reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a>: <strong>an interpretable, if slower encoder</strong>: The <a class="reference internal" href="../../reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> estimates
+“latent categories” on the training data by finding common n-grams between strings,
+then encodes the categories as real numbers. It allows access to grouped features
+via <code class="docutils literal notranslate"><span class="pre">.get_feature_names_out()</span></code>, which allows for better interpretability. This
+encoder may require a long time to train.</p></li>
+</ul>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 15.0%" />
@@ -821,7 +828,7 @@ The docstrings of each encoder provide additional details on how they work.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-the-categorical-encoders-included-in-skrub">Comparing the categorical encoders included in skrub</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choosing-the-right-encoder-for-the-job">Choosing the right encoder for the job</a></li>
 </ul>
   </nav></div>
 

@@ -7,16 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Deduplicating categorical data with deduplicate()" />
+<meta property="og:title" content="Working with the example datasets provided by skrub" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://skrub-data.github.io/stable/modules/configuration_and_utils/deduplicate_categorical_data.html" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/guides/utilities/fetching_datasets.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="If you have a series or list that contains strings with typos, the deduplicate() function may be used to remove the typos. This is done by creating a mapping between the typo strings and the correc..." />
+<meta property="og:description" content="skrub includes a number of datasets used for running examples. Each dataset can be downloaded using its fetch_* function, provided in the skrub.datasets namespace: Datasets are stored as Bunch obje..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="If you have a series or list that contains strings with typos, the deduplicate() function may be used to remove the typos. This is done by creating a mapping between the typo strings and the correc..." />
+<meta name="description" content="skrub includes a number of datasets used for running examples. Each dataset can be downloaded using its fetch_* function, provided in the skrub.datasets namespace: Datasets are stored as Bunch obje..." />
 
-    <title>Deduplicating categorical data with deduplicate() &#8212; skrub</title>
+    <title>Working with the example datasets provided by skrub &#8212; skrub</title>
   
   
   
@@ -60,7 +60,7 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=fd10adb8"></script>
     <script src="../../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'modules/configuration_and_utils/deduplicate_categorical_data';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'guides/utilities/fetching_datasets';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
@@ -69,13 +69,13 @@
             true;
         </script>
     <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
-    <link rel="canonical" href="https://skrub-data.org/stable/modules/configuration_and_utils/deduplicate_categorical_data.html" />
+    <link rel="canonical" href="https://skrub-data.org/stable/guides/utilities/fetching_datasets.html" />
     <link rel="icon" href="../../_static/skrub.svg"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Working with the example datasets provided by skrub" href="fetching_datasets.html" />
-    <link rel="prev" title="Customizing the global configuration" href="customizing_configuration.html" />
+    <link rel="next" title="API" href="../../reference/index.html" />
+    <link rel="prev" title="How to deduplicate categorical data with deduplicate()" href="deduplicate_categorical_data.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.9.dev0" />
@@ -167,16 +167,23 @@
 </li>
 
 
-<li class="nav-item current active">
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../documentation.html">
     User Guide
   </a>
 </li>
 
 
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../howto.html">
+    How-to’s
+  </a>
+</li>
+
+
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../reference/index.html">
-    API Reference
+    API
   </a>
 </li>
 
@@ -370,16 +377,23 @@
 </li>
 
 
-<li class="nav-item current active">
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../documentation.html">
     User Guide
   </a>
 </li>
 
 
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../howto.html">
+    How-to’s
+  </a>
+</li>
+
+
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../reference/index.html">
-    API Reference
+    API
   </a>
 </li>
 
@@ -511,74 +525,12 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../auto_tutorials/0000_getting_started.html">Getting Started with skrub</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../exploring_a_dataframe.html">Exploring a Dataframe</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../tablereport/exploring_dataframes_interactively.html">Exploring dataframes interactively with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tablereport/finding_correlated_columns.html">Finding Correlated Columns in a DataFrame</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../default_wrangling.html">Wrangling data with good defaults</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/cleaning_dataframes.html"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code>: sanitizing a dataframe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/table_vectorizer.html">Transforming a table into an array of numeric features: <code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/tabular_pipeline.html">Building robust ML baselines with <code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/apply_to_cols.html">Transforming selected columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../column_level_featurizing.html">Column-level feature extraction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../column_level_featurizing/feature_engineering_categorical.html">Encoding string and text columns as numeric features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../column_level_featurizing/feature_engineering_datetimes.html">Handling datetimes: parsing from strings and encoding as numbers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../column_level_featurizing/robust_scaling.html">Robust scaling of numeric features using <code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../column_level_featurizing/advanced_columnwise_operations.html">Advanced columnwise operations</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../multi_column_operations.html">Multi-column operations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/drop_uninformative.html">Removing unneeded columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/selectors.html">Skrub Selectors, for selecting columns in a dataframe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/type_of_selectors.html">Selecting based on dtype or data properties</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../multi_column_operations/advanced_selectors.html"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code> to select with user-defined criteria</a></li>
-
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../data_ops.html">Complex multi-table pipelines with Data Ops</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/what_are_data_ops.html">Basics of DataOps: the DataOps plan, variables, and learners</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/building_data_ops_plan.html">Building a simple DataOps plan</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../auto_tutorials/1110_data_ops_intro.html">Tutorial: Using Data Ops to build a machine-learning pipeline</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/using_previews.html">Using previews for easier development and debugging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/data_ops_vs_alternatives.html">How do skrub Data Ops differ from the alternatives?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/applying_ml_estimators.html">Applying machine-learning estimators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/applying_different_transformers.html">Applying different transformers using skrub selectors and DataOps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/documenting_data_ops_plan.html">Documenting the DataOps plan with node names and descriptions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/evaluating_debugging_data_ops.html">Evaluating and debugging the DataOps plan with <code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.full_report()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/using_part_of_data_ops_plan.html">Using only a part of a DataOps plan</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/ml_pipeline/subsampling_data.html">Subsampling data for easier development and debugging</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/tuning_validating_data_ops.html">Tuning and validating skrub DataOps plans</a></li>
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/hyperparameter_tuning.html">Using the skrub <code class="docutils literal notranslate"><span class="pre">choose_*</span></code> functions to tune hyperparameters</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/nested_cross_validation.html">Validating hyperparameter search with nested cross-validation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/nesting_choices_choosing_pipelines.html">Going beyond estimator hyperparameters: nesting choices and choosing pipelines</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/exporting_data_ops.html">Exporting the DataOps plan as a learner and reusing it</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../data_ops/validation/tuning_with_optuna.html">Tuning DataOps with Optuna</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../configuration_and_utils.html">Configuration and dataset utilities</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="customizing_configuration.html">Customizing the global configuration</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Deduplicating categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="fetching_datasets.html">Working with the example datasets provided by skrub</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../joining_dataframes.html">Joining Dataframes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../joining_tables/assembling.html">Assembling: joining multiple tables</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../table_report/alter_appearance.html">How to tweak the Appearance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../table_report/exporting.html">How to export and share the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../table_report/finding_correlated_columns.html">Finding Correlated Columns in a DataFrame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customizing_configuration.html">How to configure and customize the default behavior of skrub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deduplicate_categorical_data.html">How to deduplicate categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Working with the example datasets provided by skrub</a></li>
 </ul>
 </div>
 </nav></div>
@@ -620,12 +572,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../../documentation.html" class="nav-link">User Guide</a></li>
+    <li class="breadcrumb-item"><a href="../../howto.html" class="nav-link">How-to’s</a></li>
     
-    
-    <li class="breadcrumb-item"><a href="../../configuration_and_utils.html" class="nav-link">Configuration and dataset utilities</a></li>
-    
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Deduplicating categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Working with the example datasets provided by skrub</span></li>
   </ul>
 </nav>
 </div>
@@ -642,105 +591,28 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="deduplicating-categorical-data-with-deduplicate">
-<span id="user-guide-deduplicate"></span><h1>Deduplicating categorical data with <a class="reference internal" href="../../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a><a class="headerlink" href="#deduplicating-categorical-data-with-deduplicate" title="Link to this heading">#</a></h1>
-<p>If you have a series or list that contains strings with typos, the <a class="reference internal" href="../../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a>
-function may be used to remove the typos. This is done by creating a mapping
-between the typo strings and the correct strings.</p>
-<p>Deduplication is done by first computing the n-gram distance between unique
-categories in data, then performing hierarchical clustering on this distance
-matrix, and choosing the most frequent element in each cluster as the
-‘correct’ spelling. This method works best if the true number of
-categories is significantly smaller than the number of observed spellings.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_deduplication_data</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">duplicated</span> <span class="o">=</span> <span class="n">make_deduplication_data</span><span class="p">(</span><span class="n">examples</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">],</span>
-<span class="gp">... </span>                                     <span class="n">entries_per_example</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
-<span class="gp">... </span>                                     <span class="n">prob_mistake_per_letter</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
-<span class="gp">... </span>                                     <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">duplicated</span>
-<span class="go">[&#39;blacs&#39;, &#39;black&#39;, &#39;black&#39;, &#39;black&#39;, &#39;black&#39;, \</span>
-<span class="go">&#39;uhibe&#39;, &#39;white&#39;, &#39;white&#39;, &#39;white&#39;, &#39;white&#39;]</span>
+  <section id="working-with-the-example-datasets-provided-by-skrub">
+<h1>Working with the example datasets provided by skrub<a class="headerlink" href="#working-with-the-example-datasets-provided-by-skrub" title="Link to this heading">#</a></h1>
+<p>skrub includes a number of datasets used for running examples. Each dataset
+can be downloaded using its <code class="docutils literal notranslate"><span class="pre">fetch_*</span></code> function, provided in the <code class="docutils literal notranslate"><span class="pre">skrub.datasets</span></code>
+namespace:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_employee_salaries</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">fetch_employee_salaries</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>To deduplicate the data, we can build a correspondence matrix:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">deduplicate</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">deduplicate_correspondence</span> <span class="o">=</span> <span class="n">deduplicate</span><span class="p">(</span><span class="n">duplicated</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">deduplicate_correspondence</span>
-<span class="go">blacs    black</span>
-<span class="go">black    black</span>
-<span class="go">black    black</span>
-<span class="go">black    black</span>
-<span class="go">black    black</span>
-<span class="go">uhibe    white</span>
-<span class="go">white    white</span>
-<span class="go">white    white</span>
-<span class="go">white    white</span>
-<span class="go">white    white</span>
-<span class="go">dtype: ...</span>
-</pre></div>
-</div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">deduplicated</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">deduplicate_correspondence</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">deduplicated</span>
-<span class="go">[&#39;black&#39;, &#39;black&#39;, &#39;black&#39;, &#39;black&#39;, &#39;black&#39;, \</span>
-<span class="go">&#39;white&#39;, &#39;white&#39;, &#39;white&#39;, &#39;white&#39;, &#39;white&#39;]</span>
-</pre></div>
-</div>
-<p>See the <a class="reference internal" href="../../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> documentation for caveats and more detail.</p>
-<section id="deduplicating-values-in-a-dataframe">
-<h2>Deduplicating values in a dataframe<a class="headerlink" href="#deduplicating-values-in-a-dataframe" title="Link to this heading">#</a></h2>
-<p><a class="reference internal" href="../../reference/generated/skrub.deduplicate.html#skrub.deduplicate" title="skrub.deduplicate"><code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a> can be used to replace values in a dataframe that contains typos.
-This can be done with <code class="docutils literal notranslate"><span class="pre">deduplicate_correspondence</span></code> computed above and the
-<code class="docutils literal notranslate"><span class="pre">map</span></code> function in pandas, or the <code class="docutils literal notranslate"><span class="pre">replace</span></code> function in polars.
-&gt;&gt;&gt; import pandas as pd
-&gt;&gt;&gt; df = pd.DataFrame({‘color’: duplicated, ‘value’: range(10)})
-&gt;&gt;&gt; df
-color  value
-0  blacs      0
-1  black      1
-2  black      2
-3  black      3
-4  black      4
-5  uhibe      5
-6  white      6
-7  white      7
-8  white      8
-9  white      9
-&gt;&gt;&gt; df[‘deduplicated_color’] = df[‘color’].map(deduplicate_correspondence.to_dict())
-&gt;&gt;&gt; df
-color  value deduplicated_color
-0  blacs      0              black
-1  black      1              black
-2  black      2              black
-3  black      3              black
-4  black      4              black
-5  uhibe      5              white
-6  white      6              white
-7  white      7              white
-8  white      8              white
-9  white      9              white</p>
-<p>With polars:
-&gt;&gt;&gt; import polars as pl  # doctest: +SKIP
-&gt;&gt;&gt; df = pl.DataFrame({‘color’: duplicated, ‘value’: range(10)}) # doctest: +SKIP
-&gt;&gt;&gt; df.with_columns(deduplicated_color = pl.col(“color”).replace( # doctest: +SKIP
-…     deduplicate_correspondence.to_dict())
-… )
-shape: (10, 3)
-┌───────┬───────┬────────────────────┐
-│ color ┆ value ┆ deduplicated_color │
-│ —   ┆ —   ┆ —                │
-│ str   ┆ i64   ┆ str                │
-╞═══════╪═══════╪════════════════════╡
-│ blacs ┆ 0     ┆ black              │
-│ black ┆ 1     ┆ black              │
-│ black ┆ 2     ┆ black              │
-│ black ┆ 3     ┆ black              │
-│ black ┆ 4     ┆ black              │
-│ uhibe ┆ 5     ┆ white              │
-│ white ┆ 6     ┆ white              │
-│ white ┆ 7     ┆ white              │
-│ white ┆ 8     ┆ white              │
-│ white ┆ 9     ┆ white              │
-└───────┴───────┴────────────────────┘</p>
+<p>Datasets are stored as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.utils.Bunch.html#sklearn.utils.Bunch" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Bunch</span></code></a> objects, which include a path
+to each table in the dataset, and each table loaded as <code class="docutils literal notranslate"><span class="pre">pd.DataFrame</span></code>. Some
+datasets include an <code class="docutils literal notranslate"><span class="pre">X</span></code> feature matrix, and a <code class="docutils literal notranslate"><span class="pre">y</span></code> target column with type
+<code class="docutils literal notranslate"><span class="pre">pd.DataFrame</span></code>.</p>
+<section id="modifying-the-download-location-of-skrub-datasets">
+<h2>Modifying the download location of <code class="docutils literal notranslate"><span class="pre">skrub</span></code> datasets<a class="headerlink" href="#modifying-the-download-location-of-skrub-datasets" title="Link to this heading">#</a></h2>
+<p>By default, datasets are stored in <code class="docutils literal notranslate"><span class="pre">~/skrub_data</span></code>, where <code class="docutils literal notranslate"><span class="pre">~</span></code> is expanded as
+the (OS dependent) home directory of the user. The function <code class="docutils literal notranslate"><span class="pre">get_data_dir</span></code> shows
+the location that <code class="docutils literal notranslate"><span class="pre">skrub</span></code> uses to store data.</p>
+<p>If needed, it is possible to change this location by modifying the environment
+variable <code class="docutils literal notranslate"><span class="pre">SKRUB_DATA_DIRECTORY</span></code> to an <strong>absolute directory path</strong>.</p>
+<p>See <a class="reference internal" href="customizing_configuration.html#user-guide-configuration-parameters"><span class="std std-ref">How to configure and customize the default behavior of skrub</span></a> for more info on the global skrub
+configuration.</p>
 </section>
 </section>
 
@@ -755,20 +627,20 @@ shape: (10, 3)
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="customizing_configuration.html"
+       href="deduplicate_categorical_data.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Customizing the global configuration</p>
+        <p class="prev-next-title">How to deduplicate categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></p>
       </div>
     </a>
     <a class="right-next"
-       href="fetching_datasets.html"
+       href="../../reference/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Working with the example datasets provided by skrub</p>
+        <p class="prev-next-title">API</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -791,7 +663,7 @@ shape: (10, 3)
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deduplicating-values-in-a-dataframe">Deduplicating values in a dataframe</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modifying-the-download-location-of-skrub-datasets">Modifying the download location of <code class="docutils literal notranslate"><span class="pre">skrub</span></code> datasets</a></li>
 </ul>
   </nav></div>
 
@@ -799,7 +671,7 @@ shape: (10, 3)
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/modules/configuration_and_utils/deduplicate_categorical_data.rst.txt"
+      <li><a href="../../_sources/guides/utilities/fetching_datasets.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

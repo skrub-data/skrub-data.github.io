@@ -175,8 +175,15 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="howto.html">
+    How-to’s
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="reference/index.html">
-    API Reference
+    API
   </a>
 </li>
 
@@ -378,8 +385,15 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="howto.html">
+    How-to’s
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="reference/index.html">
-    API Reference
+    API
   </a>
 </li>
 
@@ -514,7 +528,6 @@
 <li class="toctree-l1"><a class="reference internal" href="auto_tutorials/0000_getting_started.html">Getting Started with skrub</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="exploring_a_dataframe.html">Exploring a Dataframe</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="modules/tablereport/exploring_dataframes_interactively.html">Exploring dataframes interactively with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="modules/tablereport/finding_correlated_columns.html">Finding Correlated Columns in a DataFrame</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="default_wrangling.html">Wrangling data with good defaults</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -567,12 +580,6 @@
 
 <li class="toctree-l2"><a class="reference internal" href="modules/data_ops/validation/exporting_data_ops.html">Exporting the DataOps plan as a learner and reusing it</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/data_ops/validation/tuning_with_optuna.html">Tuning DataOps with Optuna</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="configuration_and_utils.html">Configuration and dataset utilities</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="modules/configuration_and_utils/customizing_configuration.html">Customizing the global configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modules/configuration_and_utils/deduplicate_categorical_data.html">Deduplicating categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="modules/configuration_and_utils/fetching_datasets.html">Working with the example datasets provided by skrub</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="joining_dataframes.html">Joining Dataframes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -641,9 +648,10 @@
 <p>Skrub is a Python library that facilitates machine learning with tabular data
 (dataframes, such as pandas and polars) using a scikit-learn-compatible API.</p>
 <p>Use the sections below to navigate the guide. For a quickstart example,
-try <span class="xref std std-ref">Getting Started</span>.
+try <a class="reference internal" href="auto_tutorials/0000_getting_started.html#sphx-glr-auto-tutorials-0000-getting-started-py"><span class="std std-ref">Getting Started</span></a>.
 For runnable code, see the <a class="reference internal" href="auto_examples/index.html"><span class="doc">Example gallery</span></a>.
-For class and function details, see the <a class="reference internal" href="reference/index.html#api-ref"><span class="std std-ref">API Reference</span></a>.</p>
+For class and function details, see the <a class="reference internal" href="reference/index.html#api-ref"><span class="std std-ref">API Reference</span></a>.
+For common use cases and how to address them, see the <a class="reference internal" href="howto.html#how-to"><span class="std std-ref">How-to guides</span></a>.</p>
  <script>
  window.addEventListener('DOMContentLoaded', function() {
       (function($) {
@@ -813,7 +821,6 @@ For class and function details, see the <a class="reference internal" href="refe
 <li class="toctree-l3"><a class="reference internal" href="modules/tablereport/exploring_dataframes_interactively.html#a-demo-of-the-tablereport">A demo of the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="modules/tablereport/finding_correlated_columns.html">Finding Correlated Columns in a DataFrame</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="default_wrangling.html">Wrangling data with good defaults</a><ul>
@@ -835,7 +842,7 @@ For class and function details, see the <a class="reference internal" href="refe
 </li>
 <li class="toctree-l1"><a class="reference internal" href="column_level_featurizing.html">Column-level feature extraction</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/feature_engineering_categorical.html">Encoding string and text columns as numeric features</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="modules/column_level_featurizing/feature_engineering_categorical.html#comparing-the-categorical-encoders-included-in-skrub">Comparing the categorical encoders included in skrub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules/column_level_featurizing/feature_engineering_categorical.html#choosing-the-right-encoder-for-the-job">Choosing the right encoder for the job</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/feature_engineering_datetimes.html">Handling datetimes: parsing from strings and encoding as numbers</a><ul>
@@ -912,21 +919,6 @@ For class and function details, see the <a class="reference internal" href="refe
 <li class="toctree-l3"><a class="reference internal" href="modules/data_ops/validation/nesting_choices_choosing_pipelines.html#linking-choices-depending-on-other-choices">Linking choices depending on other choices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="modules/data_ops/validation/exporting_data_ops.html">Exporting the DataOps plan as a learner and reusing it</a></li>
 <li class="toctree-l3"><a class="reference internal" href="modules/data_ops/validation/tuning_with_optuna.html">Tuning DataOps with Optuna</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="configuration_and_utils.html">Configuration and dataset utilities</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="modules/configuration_and_utils/customizing_configuration.html">Customizing the global configuration</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="modules/configuration_and_utils/customizing_configuration.html#configuration-parameters">Configuration parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="modules/configuration_and_utils/deduplicate_categorical_data.html">Deduplicating categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="modules/configuration_and_utils/deduplicate_categorical_data.html#deduplicating-values-in-a-dataframe">Deduplicating values in a dataframe</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="modules/configuration_and_utils/fetching_datasets.html">Working with the example datasets provided by skrub</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="modules/configuration_and_utils/fetching_datasets.html#modifying-the-download-location-of-skrub-datasets">Modifying the download location of <code class="docutils literal notranslate"><span class="pre">skrub</span></code> datasets</a></li>
 </ul>
 </li>
 </ul>

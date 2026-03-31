@@ -175,8 +175,15 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../howto.html">
+    How-to’s
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../reference/index.html">
-    API Reference
+    API
   </a>
 </li>
 
@@ -378,8 +385,15 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../howto.html">
+    How-to’s
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../reference/index.html">
-    API Reference
+    API
   </a>
 </li>
 
@@ -514,7 +528,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../auto_tutorials/0000_getting_started.html">Getting Started with skrub</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../exploring_a_dataframe.html">Exploring a Dataframe</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../tablereport/exploring_dataframes_interactively.html">Exploring dataframes interactively with the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../tablereport/finding_correlated_columns.html">Finding Correlated Columns in a DataFrame</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../default_wrangling.html">Wrangling data with good defaults</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -567,12 +580,6 @@
 
 <li class="toctree-l2"><a class="reference internal" href="../validation/exporting_data_ops.html">Exporting the DataOps plan as a learner and reusing it</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../validation/tuning_with_optuna.html">Tuning DataOps with Optuna</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../configuration_and_utils.html">Configuration and dataset utilities</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../configuration_and_utils/customizing_configuration.html">Customizing the global configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../configuration_and_utils/deduplicate_categorical_data.html">Deduplicating categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../configuration_and_utils/fetching_datasets.html">Working with the example datasets provided by skrub</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../joining_dataframes.html">Joining Dataframes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -691,7 +698,7 @@ to do so when possible, as it allows to catch errors early on.</p>
 and the preview results are computed eagerly. In very complex DataOps plans
 (100+ nodes), running checks after adding each node can cause a noticeable overhead.
 To avoid this, it is possible to disable eager checks with the <code class="docutils literal notranslate"><span class="pre">&quot;eager_data_ops&quot;</span></code>
-is easily achieved with the <code class="docutils literal notranslate"><span class="pre">&quot;eager_data_ops&quot;</span></code> <a class="reference internal" href="../../configuration_and_utils/customizing_configuration.html#user-guide-configuration-parameters"><span class="std std-ref">configuration</span></a> option.</p>
+is easily achieved with the <code class="docutils literal notranslate"><span class="pre">&quot;eager_data_ops&quot;</span></code> <a class="reference internal" href="../../../guides/utilities/customizing_configuration.html#user-guide-configuration-parameters"><span class="std std-ref">configuration</span></a> option.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">skrub</span><span class="o">.</span><span class="n">config_context</span><span class="p">(</span><span class="n">eager_data_ops</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="c1"># no checks are performed when b is defined so no error in the line below:</span>
 <span class="gp">... </span>    <span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
