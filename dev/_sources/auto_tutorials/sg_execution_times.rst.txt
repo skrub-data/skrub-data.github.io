@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**00:32.104** total execution time for 2 files **from auto_tutorials**:
+**00:31.242** total execution time for 2 files **from auto_tutorials**:
 
 .. container::
 
@@ -33,8 +33,8 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_tutorials_0000_getting_started.py` (``0000_getting_started.py``)
-     - 00:18.267
-     - 561.1
+     - 00:17.609
+     - 587.5
    * - :ref:`sphx_glr_auto_tutorials_1110_data_ops_intro.py` (``1110_data_ops_intro.py``)
-     - 00:13.837
-     - 583.4
+     - 00:13.633
+     - 604.5
