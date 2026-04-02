@@ -742,39 +742,39 @@
 <h1>fetch_medical_charge<a class="headerlink" href="#fetch-medical-charge" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_medical_charge">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_medical_charge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/aa0f5ba/skrub/datasets/_fetching.py#L83"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_medical_charge" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_medical_charge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/be82c86/skrub/datasets/_fetching.py#L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_medical_charge" title="Link to this definition">#</a></dt>
 <dd><p>Fetches the medical charge dataset (regression), available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <dl class="simple">
-<dt>Description of the dataset:</dt><dd><p>The Inpatient Utilization and Payment Public Use File (Inpatient PUF)
-provides information on inpatient discharges for Medicare
-fee-for-service beneficiaries. The Inpatient PUF includes information
+<dt>Description of the dataset:</dt><dd><p>The dataset provides information on inpatient discharges for Medicare
+fee-for-service beneficiaries. It includes information
 on utilization, payment (total payment and Medicare payment), and
 hospital-specific charges for the more than 3,000 U.S. hospitals that
 receive Medicare Inpatient Prospective Payment System (IPPS) payments.
-The PUF is organized by hospital and Medicare Severity Diagnosis
-Related Group (MS-DRG) and covers Fiscal Year (FY) 2011 through FY 2016.
 Size on disk: 36MB.</p>
 </dd>
 </dl>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>data_home: str or path, default=None</strong></dt><dd><p>The directory where to download and unzip the files.</p>
+<dd class="field-odd"><dl>
+<dt><strong>data_home</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <span class="xref std std-term">path-like</span>, default=None</span></dt><dd><p>The directory where to download and unzip the files.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>bunch</strong><span class="classifier">sklearn.utils.Bunch</span></dt><dd><p>A dictionary-like object with the following keys:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">medical_charge</span></code> : pd.DataFrame, the dataframe. Shape: (163065, 12)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">X</span></code> : pd.DataFrame, features, i.e. the dataframe without the target
-labels. Shape: (163065, 11)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">y</span></code> : pd.DataFrame, target labels. Shape: (163065, 1)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name, description, source and
-target</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">path</span></code> : str, the path to the medical charge CSV file</p></li>
-</ul>
+<dd class="field-even"><dl>
+<dt><strong>bunch</strong><span class="classifier"><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.utils.Bunch.html#sklearn.utils.Bunch" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Bunch</span></code></a></span></dt><dd><p>A dictionary-like object with the following keys:</p>
+<dl class="simple">
+<dt>medical_charge<span class="classifier">DataFrame of shape (163065, 12)</span></dt><dd><p>The dataframe.</p>
+</dd>
+<dt>X<span class="classifier">DataFrame of shape (163065, 11)</span></dt><dd><p>Features, i.e. the dataframe without the target labels.</p>
+</dd>
+<dt>y<span class="classifier">DataFrame of shape (163065, 1)</span></dt><dd><p>Target labels.</p>
+</dd>
+<dt>metadata<span class="classifier">dict</span></dt><dd><p>A dictionary containing the name, description, source and target.</p>
+</dd>
+<dt>path<span class="classifier">str</span></dt><dd><p>The path to the medical charge CSV file.</p>
+</dd>
+</dl>
 </dd>
 </dl>
 </dd>

@@ -744,7 +744,7 @@
 <h1>make_deduplication_data<a class="headerlink" href="#make-deduplication-data" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.make_deduplication_data">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">make_deduplication_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">examples</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entries_per_example</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prob_mistake_per_letter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/aa0f5ba/skrub/datasets/_generating.py#L15"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.make_deduplication_data" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">make_deduplication_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">examples</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entries_per_example</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prob_mistake_per_letter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/be82c86/skrub/datasets/_generating.py#L15"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.make_deduplication_data" title="Link to this definition">#</a></dt>
 <dd><p>Duplicates examples with spelling mistakes.</p>
 <p>Characters are misspelled with probability <cite>prob_mistake_per_letter</cite>.</p>
 <dl class="field-list">
@@ -764,11 +764,23 @@ for reproducible output across multiple function calls.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></dt><dd><p>List of duplicated examples with spelling mistakes</p>
+<dt><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></dt><dd><p>List of duplicated examples with spelling mistakes.</p>
 </dd>
 </dl>
 </dd>
 </dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_deduplication_data</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">make_deduplication_data</span><span class="p">([</span><span class="s2">&quot;string1&quot;</span><span class="p">,</span> <span class="s2">&quot;string2&quot;</span><span class="p">],</span>
+<span class="gp">... </span>                        <span class="n">entries_per_example</span><span class="o">=</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+<span class="gp">... </span>                        <span class="n">random_state</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+<span class="go">[&#39;btrwng1&#39;, &#39;string1&#39;,</span>
+<span class="go">&#39;string1&#39;, &#39;string1&#39;,</span>
+<span class="go">&#39;saoing2&#39;, &#39;string2&#39;,</span>
+<span class="go">&#39;string2&#39;, &#39;string2&#39;,</span>
+<span class="go">&#39;string2&#39;]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <section id="gallery-examples">

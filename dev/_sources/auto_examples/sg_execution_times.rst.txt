@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**08:18.854** total execution time for 10 files **from auto_examples**:
+**09:58.219** total execution time for 10 files **from auto_examples**:
 
 .. container::
 
@@ -32,33 +32,33 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_auto_examples_0020_text_with_string_encoders.py` (``0020_text_with_string_encoders.py``)
-     - 02:55.479
-     - 1373.3
    * - :ref:`sphx_glr_auto_examples_0070_join_aggregation.py` (``0070_join_aggregation.py``)
-     - 02:18.931
-     - 870.7
+     - 03:12.421
+     - 795.1
+   * - :ref:`sphx_glr_auto_examples_0020_text_with_string_encoders.py` (``0020_text_with_string_encoders.py``)
+     - 03:07.674
+     - 1420.8
    * - :ref:`sphx_glr_auto_examples_0010_encodings.py` (``0010_encodings.py``)
-     - 00:45.673
-     - 586.4
+     - 00:51.760
+     - 561.0
    * - :ref:`sphx_glr_auto_examples_0060_multiple_key_join.py` (``0060_multiple_key_join.py``)
-     - 00:35.362
-     - 3050.3
+     - 00:41.380
+     - 3001.8
    * - :ref:`sphx_glr_auto_examples_0080_interpolation_join.py` (``0080_interpolation_join.py``)
-     - 00:31.350
-     - 2697.5
-   * - :ref:`sphx_glr_auto_examples_0100_squashing_scaler.py` (``0100_squashing_scaler.py``)
-     - 00:24.933
-     - 586.2
+     - 00:38.664
+     - 2710.3
    * - :ref:`sphx_glr_auto_examples_0040_fuzzy_joining.py` (``0040_fuzzy_joining.py``)
-     - 00:23.533
-     - 586.2
+     - 00:30.432
+     - 560.8
+   * - :ref:`sphx_glr_auto_examples_0100_squashing_scaler.py` (``0100_squashing_scaler.py``)
+     - 00:25.879
+     - 562.4
    * - :ref:`sphx_glr_auto_examples_0090_apply_to_cols.py` (``0090_apply_to_cols.py``)
-     - 00:12.511
-     - 586.4
+     - 00:14.671
+     - 560.5
    * - :ref:`sphx_glr_auto_examples_0030_datetime_encoder.py` (``0030_datetime_encoder.py``)
-     - 00:08.333
-     - 591.5
+     - 00:11.338
+     - 566.3
    * - :ref:`sphx_glr_auto_examples_0050_deduplication.py` (``0050_deduplication.py``)
-     - 00:02.748
-     - 586.2
+     - 00:04.001
+     - 561.0

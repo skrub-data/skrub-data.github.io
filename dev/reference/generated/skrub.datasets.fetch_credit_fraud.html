@@ -744,7 +744,7 @@
 <h1>fetch_credit_fraud<a class="headerlink" href="#fetch-credit-fraud" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_credit_fraud">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_credit_fraud</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/aa0f5ba/skrub/datasets/_fetching.py#L236"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_credit_fraud" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_credit_fraud</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/be82c86/skrub/datasets/_fetching.py#L251"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_credit_fraud" title="Link to this definition">#</a></dt>
 <dd><p>Fetch the credit fraud dataset (classification).</p>
 <p>Available at <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <p>This is an imbalanced binary classification use-case. This dataset consists of
@@ -759,7 +759,7 @@ Size on disk: 16MB.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>data_home</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or path, default=None</span></dt><dd><p>The directory where to download and unzip the files.</p>
+<dt><strong>data_home</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <span class="xref std std-term">path-like</span>, default=None</span></dt><dd><p>The directory where to download and unzip the files.</p>
 </dd>
 <dt><strong>split</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=”train”</span></dt><dd><p>The split to load. Can be either “train”, “test”, or “all”.</p>
 </dd>
@@ -767,21 +767,19 @@ Size on disk: 16MB.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl>
-<dt><strong>bunch</strong><span class="classifier">sklearn.utils.Bunch</span></dt><dd><p>A dictionary-like object with the following keys:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">baskets</span></code> : pd.DataFrame, table containing baskets ID and target.</p></li>
-</ul>
-<p>Shape: (92790, 2)
-- <code class="docutils literal notranslate"><span class="pre">products</span></code> : pd.DataFrame, table containing features about products</p>
-<blockquote>
-<div><p>contained in baskets. Shape: (163357, 7)</p>
-</div></blockquote>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name, description, source and
-target</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">baskets_path</span></code> : str, the path to the baskets CSV file</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">products_path</span></code> : str, the path to the products CSV file</p></li>
-</ul>
+<dt><strong>bunch</strong><span class="classifier"><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.utils.Bunch.html#sklearn.utils.Bunch" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Bunch</span></code></a></span></dt><dd><p>A dictionary-like object with the following keys:</p>
+<dl class="simple">
+<dt>baskets<span class="classifier">DataFrame of shape (92790, 2)</span></dt><dd><p>Table containing baskets ID and target.</p>
+</dd>
+<dt>products<span class="classifier">DataFrame of shape (163357, 7)</span></dt><dd><p>Table containing features about products contained in baskets</p>
+</dd>
+<dt>metadata<span class="classifier">dict</span></dt><dd><p>A dictionary containing the name, description, source and target.</p>
+</dd>
+<dt>baskets_path<span class="classifier">str</span></dt><dd><p>The path to the baskets CSV file.</p>
+</dd>
+<dt>products_path<span class="classifier">str</span></dt><dd><p>The path to the products CSV file.</p>
+</dd>
+</dl>
 </dd>
 </dl>
 </dd>

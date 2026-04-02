@@ -744,7 +744,7 @@
 <h1>fetch_employee_salaries<a class="headerlink" href="#fetch-employee-salaries" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_employee_salaries">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_employee_salaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/aa0f5ba/skrub/datasets/_fetching.py#L10"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_employee_salaries" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_employee_salaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/be82c86/skrub/datasets/_fetching.py#L10"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_employee_salaries" title="Link to this definition">#</a></dt>
 <dd><p>Fetches the employee salaries dataset (regression), available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <dl class="simple">
 <dt>Description of the dataset:</dt><dd><p>Annual salary information including gross pay and overtime pay for all
@@ -759,32 +759,35 @@ Size on disk: 1.3MB.</p>
 <p>Some environments like Jupyterlite can run into networking issues when
 connecting to a remote server, but OpenML provides CORS headers. To
 download this dataset using OpenML instead of Github or Figshare, run:</p>
-</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_openml</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">fetch_openml</span><span class="p">(</span><span class="n">data_id</span><span class="o">=</span><span class="mi">42125</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>data_home: str or path, default=None</strong></dt><dd><p>The directory where to download and unzip the files.</p>
+<dt><strong>data_home</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <span class="xref std std-term">path-like</span>, default=None</span></dt><dd><p>The directory where to download and unzip the files.</p>
 </dd>
 <dt><strong>split</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=”all”</span></dt><dd><p>The split to load. Can be either “train”, “test”, or “all”.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>bunch</strong><span class="classifier">sklearn.utils.Bunch</span></dt><dd><p>A dictionary-like object with the following keys:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">employee_salaries</span></code> : pd.DataFrame, the dataframe. Shape: (9228, 9)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">X</span></code> : pd.DataFrame, features, i.e. the dataframe without the target
-labels. Shape: (9228, 8)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">y</span></code> : pd.DataFrame, target labels. Shape: (9228, 1)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name, description, source and
-target</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">path</span></code> : str, the path to the employee salaries CSV file</p></li>
-</ul>
+<dd class="field-even"><dl>
+<dt><strong>bunch</strong><span class="classifier"><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.utils.Bunch.html#sklearn.utils.Bunch" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Bunch</span></code></a></span></dt><dd><p>A dictionary-like object with the following keys:</p>
+<dl class="simple">
+<dt>employee_salaries<span class="classifier">DataFrame of shape (9228, 8)</span></dt><dd><p>The dataframe.</p>
+</dd>
+<dt>X<span class="classifier">DataFrame of shape (9228, 7)</span></dt><dd><p>Features, i.e. the dataframe without the target labels.</p>
+</dd>
+<dt>y<span class="classifier">DataFrame of shape (9228, 1)</span></dt><dd><p>Target labels.</p>
+</dd>
+<dt>metadata<span class="classifier">dict</span></dt><dd><p>A dictionary containing the name, description, source and target.</p>
+</dd>
+<dt>path<span class="classifier">str</span></dt><dd><p>The path to the employee salaries CSV file.</p>
+</dd>
+</dl>
 </dd>
 </dl>
 </dd>

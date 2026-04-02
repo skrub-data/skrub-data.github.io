@@ -742,28 +742,33 @@
 <h1>fetch_movielens<a class="headerlink" href="#fetch-movielens" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_movielens">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_movielens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/aa0f5ba/skrub/datasets/_fetching.py#L407"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_movielens" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_movielens</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/be82c86/skrub/datasets/_fetching.py#L435"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_movielens" title="Link to this definition">#</a></dt>
 <dd><p>Fetch the movielens dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <p>This is a regression use-case, where the goal is to predict movie ratings.
 More details are provided in the output’s <code class="docutils literal notranslate"><span class="pre">metadata['description']</span></code>.
 Size on disk: 3.6MB.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>data_home: str or path, default=None</strong></dt><dd><p>The directory where to download and unzip the files.</p>
+<dd class="field-odd"><dl>
+<dt><strong>data_home</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <span class="xref std std-term">path-like</span>, default=None</span></dt><dd><p>The directory where to download and unzip the files.</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt><strong>bunch</strong><span class="classifier">sklearn.utils.Bunch</span></dt><dd><p>A dictionary-like object with the following keys:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">movies</span></code> : pd.DataFrame, movie ID, title and genres. Shape: (9742, 3)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ratings</span></code>: pd.DataFrame, user ID, movie ID, rating. Shape: (100836, 4)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code> : a dictionary containing the name source and description</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">movies_path</span></code> : str, the path to the movies CSV file</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ratings_path</span></code> : str, the path to the ratings CSV file</p></li>
-</ul>
+<dd class="field-even"><dl>
+<dt><strong>bunch</strong><span class="classifier"><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.utils.Bunch.html#sklearn.utils.Bunch" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Bunch</span></code></a></span></dt><dd><p>A dictionary-like object with the following keys:</p>
+<dl class="simple">
+<dt>movies<span class="classifier">DataFrame of shape (9742, 3)</span></dt><dd><p>Dataframe with movie titles and genres.</p>
+</dd>
+<dt>ratings<span class="classifier">DataFrame of shape (100836, 4)</span></dt><dd><p>Dataframe with ratings of movies.</p>
+</dd>
+<dt>metadata<span class="classifier">dict</span></dt><dd><p>A dictionary containing the name source and description.</p>
+</dd>
+<dt>movies_path<span class="classifier">str</span></dt><dd><p>The path to the movies CSV file.</p>
+</dd>
+<dt>ratings_path<span class="classifier">str</span></dt><dd><p>The path to the ratings CSV file.</p>
+</dd>
+</dl>
 </dd>
 </dl>
 </dd>
