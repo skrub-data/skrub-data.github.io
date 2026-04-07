@@ -1697,9 +1697,9 @@ introduced into a grid search:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 21.884 seconds)
+   **Total running time of the script:** (0 minutes 22.007 seconds)
 
-**Estimated memory usage:**  578 MB
+**Estimated memory usage:**  565 MB
 
 
 .. _sphx_glr_download_auto_examples_0040_fuzzy_joining.py:
