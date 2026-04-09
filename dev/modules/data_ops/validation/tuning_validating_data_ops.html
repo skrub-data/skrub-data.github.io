@@ -585,6 +585,7 @@
 
 
 
+
 <li class="toctree-l2"><a class="reference internal" href="hyperparameter_tuning.html">Using the skrub <code class="docutils literal notranslate"><span class="pre">choose_*</span></code> functions to tune hyperparameters</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="nested_cross_validation.html">Validating hyperparameter search with nested cross-validation</a></li>
@@ -801,8 +802,8 @@ inside of the DataOp and pass them to <a class="reference internal" href="../../
 be passed to the splitter.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">toy_products</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
-<span class="go">    description  price            seller     category</span>
-<span class="go">0        mouse     10   supermarket.com  electronics</span>
+<span class="go">   description  price            seller     category</span>
+<span class="go">0       screen    100   supermarket.com  electronics</span>
 <span class="go">1       hammer     15  bestproducts.com        tools</span>
 <span class="go">2     keyboard     20   supermarket.com  electronics</span>
 <span class="go">3      usb key      9  bestproducts.com  electronics</span>
@@ -829,8 +830,8 @@ cross-validation we must group products by seller. We do it with
 </div>
 <p>The train set only contains data from the “supermarket.com” seller.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;X_train&quot;</span><span class="p">]</span>
-<span class="go">    description  price</span>
-<span class="go">0        mouse     10</span>
+<span class="go">   description  price</span>
+<span class="go">0       screen    100</span>
 <span class="go">2     keyboard     20</span>
 <span class="go">5  screwdriver     12</span>
 </pre></div>
@@ -843,6 +844,70 @@ cross-validation we must group products by seller. We do it with
 <span class="go">4     charger     13</span>
 </pre></div>
 </div>
+</section>
+<section id="passing-additional-arguments-to-the-scorer">
+<h1>Passing additional arguments to the scorer<a class="headerlink" href="#passing-additional-arguments-to-the-scorer" title="Link to this heading">#</a></h1>
+<p>Sometimes we have additional information to pass to the scorer such as sample
+weights, group information etc.</p>
+<p>We can control how scoring is performed by using
+<a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a>. It has a <code class="docutils literal notranslate"><span class="pre">scoring</span></code> parameter, which can be
+anything scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="(in scikit-learn v1.8)"><code class="xref py py-func docutils literal notranslate"><span class="pre">cross_validate()</span></code></a> accepts
+for <code class="docutils literal notranslate"><span class="pre">scoring</span></code> such as a metric name, callable scorer, or dict mapping metric
+names to scorers (see the reference documentation of
+<a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a> for details).</p>
+<p>It also accepts a <code class="docutils literal notranslate"><span class="pre">kwargs</span></code> argument, which are passed to the scorer when
+evaluating the learner.</p>
+<p>Importantly, the <code class="docutils literal notranslate"><span class="pre">scoring</span></code> and <code class="docutils literal notranslate"><span class="pre">kwargs</span></code> can be DataOps, which will be
+computed when scoring the learner – so for example, sample weights can be
+computed dynamically.</p>
+<p>Using the same toy dataset as above, suppose we want to give more weight to more
+expensive products:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;price&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">(</span><span class="n">cv</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;category&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">DummyClassifier</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The default score is the (unweighted) accuracy:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">cross_validate</span><span class="p">()</span>
+<span class="go">   fit_time  score_time  test_score</span>
+<span class="go">0  0.003982    0.002405    0.666667</span>
+<span class="go">1  0.002582    0.002169    0.666667</span>
+</pre></div>
+</div>
+<p>We set the scoring to provide the sample weights:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sample_weight</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="s2">&quot;accuracy&quot;</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;sample_weight&quot;</span><span class="p">:</span> <span class="n">sample_weight</span><span class="p">}</span>
+<span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">cross_validate</span><span class="p">()</span>
+<span class="go">   fit_time  score_time  test_accuracy</span>
+<span class="go">0  0.003045    0.003275       0.888889</span>
+<span class="go">1  0.002659    0.003026       0.647059</span>
+</pre></div>
+</div>
+<p>Besides passing extra arguments, <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a> can also be
+useful to control what should be used as the default scoring metric for our
+learner, just as the <code class="docutils literal notranslate"><span class="pre">cv</span></code> parameter of <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.mark_as_X()</span></code></a> defines
+the default cross-validation splitting strategy.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="s1">&#39;neg_log_loss&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">])</span>
+<span class="go">SkrubLearner(data_op=&lt;Scoring &lt;Apply DummyClassifier&gt; (1 scorers)&gt;</span>
+<span class="go">    This DataOp will be scored with:</span>
+<span class="go">      - &#39;neg_log_loss&#39;</span>
+<span class="go">    Use .skb.cross_validate(…) or .skb.make_learner(…).score(…) to compute scores.)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">])</span>
+<span class="go">-0.6365141682948128</span>
+</pre></div>
+</div>
+<p>Note that the score above is negative: it is the negative log loss we passed to
+<code class="docutils literal notranslate"><span class="pre">with_scoring</span></code>, and not the default score (accuracy, which would be positive).</p>
+<p><a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a> only changes how scoring is performed
+(the outputs of <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.cross_validate.html#skrub.DataOp.skb.cross_validate" title="skrub.DataOp.skb.cross_validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.cross_validate()</span></code></a>,
+<a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_randomized_search()</span></code></a>, <a class="reference internal" href="../../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner.score</span></code></a> etc.),
+<strong>not</strong> the actual outputs of the learner (it does _not_ affect the outputs of
+<a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.eval.html#skrub.DataOp.skb.eval" title="skrub.DataOp.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.eval()</span></code></a>, <a class="reference internal" href="../../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner.predict</span></code></a>, etc.)</p>
+<p>This method can be called several times to add scorers that take different
+kwargs. See the reference documentation for details.</p>
 </section>
 
 
@@ -896,6 +961,7 @@ cross-validation we must group products by seller. We do it with
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#improving-the-confidence-in-our-score-through-cross-validation">Improving the confidence in our score through cross-validation</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-the-data-in-train-and-test-sets">Splitting the data in train and test sets</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#passing-additional-arguments-to-the-splitter">Passing additional arguments to the splitter</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#passing-additional-arguments-to-the-scorer">Passing additional arguments to the scorer</a></li>
 </ul>
 
   </nav></div>

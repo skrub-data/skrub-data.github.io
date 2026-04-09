@@ -141,6 +141,7 @@ The ``skb`` accessor exposes all DataOps methods and attributes.
   DataOp.skb.set_name
   DataOp.skb.subsample
   DataOp.skb.train_test_split
+  DataOp.skb.with_scoring
 
 
 

@@ -646,6 +646,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.set_name.html">skrub.DataOp.skb.set_name</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.subsample.html">skrub.DataOp.skb.subsample</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.train_test_split.html">skrub.DataOp.skb.train_test_split</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.with_scoring.html">skrub.DataOp.skb.with_scoring</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.description.html">skrub.DataOp.skb.description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.is_X.html">skrub.DataOp.skb.is_X</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.is_y.html">skrub.DataOp.skb.is_y</a></li>
@@ -754,7 +755,7 @@
 <h1>skrub.DataOp.skb.mark_as_X<a class="headerlink" href="#skrub-dataop-skb-mark-as-x" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.mark_as_X">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">mark_as_X</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b92084f/skrub/_data_ops/_skrub_namespace.py#L2590"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.mark_as_X" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">mark_as_X</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/29aa183/skrub/_data_ops/_skrub_namespace.py#L2591"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.mark_as_X" title="Link to this definition">#</a></dt>
 <dd><p>Mark this DataOp as being the <code class="docutils literal notranslate"><span class="pre">X</span></code> table.</p>
 <p>Returns a copy; the original DataOp is left unchanged.</p>
 <p>This is used for train/test splits and cross-validation.
@@ -864,7 +865,7 @@ the <code class="docutils literal notranslate"><span class="pre">cv</span></code
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">toy_products</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
 <span class="go">   description  price            seller     category</span>
-<span class="go">0        mouse     10   supermarket.com  electronics</span>
+<span class="go">0       screen    100   supermarket.com  electronics</span>
 <span class="go">1       hammer     15  bestproducts.com        tools</span>
 <span class="go">2     keyboard     20   supermarket.com  electronics</span>
 <span class="go">3      usb key      9  bestproducts.com  electronics</span>
@@ -892,7 +893,7 @@ cross-validation we must group products by seller. We do it with
 <p>The train set only contains data from the “supermarket.com” seller.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;X_train&quot;</span><span class="p">]</span>
 <span class="go">   description  price</span>
-<span class="go">0        mouse     10</span>
+<span class="go">0       screen    100</span>
 <span class="go">2     keyboard     20</span>
 <span class="go">5  screwdriver     12</span>
 </pre></div>
