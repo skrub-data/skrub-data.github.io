@@ -764,7 +764,7 @@
 <td><p>Select columns that have a Boolean data type.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.cardinality_below.html#skrub.selectors.cardinality_below" title="skrub.selectors.cardinality_below"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.cardinality_below</span></code></a></p></td>
-<td><p>Select columns whose cardinality (number of unique values) is (strictly) below <code class="docutils literal notranslate"><span class="pre">threshold</span></code>.</p></td>
+<td><p>Select columns whose cardinality (number of unique values) is (strictly)     below <code class="docutils literal notranslate"><span class="pre">threshold</span></code>.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.categorical.html#skrub.selectors.categorical" title="skrub.selectors.categorical"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.categorical</span></code></a></p></td>
 <td><p>Select columns that have a Categorical (or polars Enum) data type.</p></td>
@@ -785,7 +785,7 @@
 <td><p>Select columns by name with Unix shell style 'glob' pattern.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.has_nulls.html#skrub.selectors.has_nulls" title="skrub.selectors.has_nulls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.has_nulls</span></code></a></p></td>
-<td><p>Select columns that contain at least one null value.</p></td>
+<td><p>Select columns that contain at least one null value, or a proportion of null     values above a given threshold.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.integer.html#skrub.selectors.integer" title="skrub.selectors.integer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.integer</span></code></a></p></td>
 <td><p>Select columns that have an integer data type.</p></td>
@@ -803,7 +803,7 @@
 <td><p>Select columns by name with a regular expression.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.select.html#skrub.selectors.select" title="skrub.selectors.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.select</span></code></a></p></td>
-<td><p>Apply a selector to a dataframe and return the resulting dataframe.</p></td>
+<td><p>Apply a selector to a dataframe and return a dataframe with the selected     columns.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.string.html#skrub.selectors.string" title="skrub.selectors.string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.string</span></code></a></p></td>
 <td><p>Select columns that have a String data type.</p></td>

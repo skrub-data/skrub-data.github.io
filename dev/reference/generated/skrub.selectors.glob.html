@@ -757,7 +757,7 @@
 <h1>glob<a class="headerlink" href="#glob" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.glob">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">glob</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8f3e50e/skrub/selectors/_selectors.py#L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.glob" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">glob</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/08bd51b/skrub/selectors/_selectors.py#L27"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.glob" title="Link to this definition">#</a></dt>
 <dd><p>Select columns by name with Unix shell style ‘glob’ pattern.</p>
 <p>pattern is interpreted as described in <code class="docutils literal notranslate"><span class="pre">fnmatch.fnmatchcase</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>*       matches everything
@@ -765,6 +765,13 @@
 [seq]   matches any character in seq
 [!seq]  matches any char not in seq
 </pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.selectors.regex.html#skrub.selectors.regex" title="skrub.selectors.regex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">regex</span></code></a></dt><dd><p>Select columns by name using a regular expression.</p>
+</dd>
+</dl>
 </div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>

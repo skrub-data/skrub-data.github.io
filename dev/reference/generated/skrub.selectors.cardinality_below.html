@@ -757,10 +757,16 @@
 <h1>cardinality_below<a class="headerlink" href="#cardinality-below" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.cardinality_below">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">cardinality_below</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">threshold</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8f3e50e/skrub/selectors/_selectors.py#L463"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.cardinality_below" title="Link to this definition">#</a></dt>
-<dd><p>Select columns whose cardinality (number of unique values) is (strictly)
-below <code class="docutils literal notranslate"><span class="pre">threshold</span></code>.</p>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">cardinality_below</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">threshold</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/08bd51b/skrub/selectors/_selectors.py#L528"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.cardinality_below" title="Link to this definition">#</a></dt>
+<dd><p>Select columns whose cardinality (number of unique values) is (strictly)     below <code class="docutils literal notranslate"><span class="pre">threshold</span></code>.</p>
 <p>Null values do not count in the cardinality.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.selectors.has_nulls.html#skrub.selectors.has_nulls" title="skrub.selectors.has_nulls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">has_nulls</span></code></a></dt><dd><p>Select columns that contain null values.</p>
+</dd>
+</dl>
+</div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -794,6 +800,15 @@ below <code class="docutils literal notranslate"><span class="pre">threshold</sp
 <span class="go">3  &lt;NA&gt;  &lt;NA&gt;     2  &lt;NA&gt;     3</span>
 </pre></div>
 </div>
+<p>Invert the selector to select columns whose cardinality is above the threshold:
+&gt;&gt;&gt; s.select(df, ~s.cardinality_below(3))</p>
+<blockquote>
+<div><p>a3  a3_b  a4</p>
+</div></blockquote>
+<p>0     1     1   1
+1     2     2   2
+2     3     3   3
+3  &lt;NA&gt;     3   4</p>
 </dd></dl>
 
 <section id="gallery-examples">
