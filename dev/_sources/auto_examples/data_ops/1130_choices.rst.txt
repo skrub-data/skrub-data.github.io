@@ -1820,8 +1820,8 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_3862aa75-wrapper" hidden>
-        <template id="report_3862aa75-template">
+    <div id="report_549c4738-wrapper" hidden>
+        <template id="report_549c4738-template">
             <style>
              /*!
     Pure v3.0.0
@@ -3246,7 +3246,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="56960aee"
+                    id="6f1a0c05"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -3276,7 +3276,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="62733ddc"
+                    id="1f524c8d"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -3324,7 +3324,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="40586dea"
+                    id="ae2b4245"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3352,7 +3352,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="05c706e8"
+                    id="be329b3d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3386,7 +3386,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="747cf171"
+                    id="ed6cc50e"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3414,7 +3414,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="4ec56b74"
+                    id="8e9f9cba"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3448,7 +3448,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="ce8db4c7"
+                    id="1b117eca"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3476,7 +3476,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="6bc4e11d"
+                    id="46cf4fff"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3510,7 +3510,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="2afd0109"
+                    id="0e186fbc"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3538,7 +3538,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="0cce3d66"
+                    id="33f8555d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3572,7 +3572,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="0db8aaa8"
+                    id="59b3bee7"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3600,7 +3600,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="2437c582"
+                    id="37495c23"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3664,7 +3664,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="661ece6a"
+                    id="fee3e25f"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3692,7 +3692,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="1a92cf56"
+                    id="0f58ea96"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3726,7 +3726,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="5b159d7d"
+                    id="58aebdb8"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3754,7 +3754,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="0a4f7e2e"
+                    id="6bafad07"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3792,7 +3792,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="e8e3fb4b"
+                    id="ae714a57"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3820,7 +3820,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="e5b1a055"
+                    id="18e259c3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3862,7 +3862,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="3a151b68"
+                    id="44fbfb02"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3890,7 +3890,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="092721f8"
+                    id="6d68aab0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3924,7 +3924,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="55aa6eff"
+                    id="2570496c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3952,7 +3952,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="cb71af36"
+                    id="bddf6e14"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4505,7 +4505,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_3862aa75">
+        <skrub-table-report class="report" id="report_549c4738">
         </skrub-table-report>
 
         <script type="module">
@@ -5609,7 +5609,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
         </script>
     </div>
 
-    <div id="report_3862aa75-wrapper-fallback">
+    <div id="report_549c4738-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -5620,8 +5620,8 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
     </div>
 
     <script>
-     document.getElementById("report_3862aa75-wrapper").removeAttribute("hidden");
-     document.getElementById("report_3862aa75-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_549c4738-wrapper").removeAttribute("hidden");
+     document.getElementById("report_549c4738-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -5673,8 +5673,8 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_91005413-wrapper" hidden>
-        <template id="report_91005413-template">
+    <div id="report_2f9d4893-wrapper" hidden>
+        <template id="report_2f9d4893-template">
             <style>
              /*!
     Pure v3.0.0
@@ -7099,7 +7099,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="5300ff38"
+                    id="dd6948af"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -7129,7 +7129,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="99246d15"
+                    id="366b0eb6"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -7177,7 +7177,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="1a0edc6b"
+                    id="4fb14b67"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7205,7 +7205,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="163d93b9"
+                    id="a95aaed3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7239,7 +7239,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="ca6aa138"
+                    id="608bf84d"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7267,7 +7267,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="ed27427a"
+                    id="bd58c289"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7301,7 +7301,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="528ce5b5"
+                    id="27dcefac"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7329,7 +7329,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="3edbb6b0"
+                    id="0a0bd0e9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7363,7 +7363,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="d071f126"
+                    id="d2d07687"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7391,7 +7391,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="34f120ff"
+                    id="3f58b34f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7425,7 +7425,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="58768c57"
+                    id="e6d1cccc"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7453,7 +7453,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="8c989d33"
+                    id="7f7c74e5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7517,7 +7517,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="75611c6b"
+                    id="72dfac7c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7545,7 +7545,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="09792bf2"
+                    id="22f87119"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7579,7 +7579,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="08de7f4b"
+                    id="618123c9"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7607,7 +7607,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="f5dd19a9"
+                    id="74c633b8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7641,7 +7641,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="3e9686cc"
+                    id="c8776610"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7669,7 +7669,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="78bced29"
+                    id="5e7d24fb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7703,7 +7703,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="ce7c365c"
+                    id="dd8d93fa"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7731,7 +7731,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="0854c587"
+                    id="9b6d1f3c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7765,7 +7765,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <th
-                    id="e3ee5e6f"
+                    id="dd4eef53"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7793,7 +7793,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
                 
                 
                     <td
-                    id="9f6a3774"
+                    id="73b1e8fe"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8336,7 +8336,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_91005413">
+        <skrub-table-report class="report" id="report_2f9d4893">
         </skrub-table-report>
 
         <script type="module">
@@ -9440,7 +9440,7 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
         </script>
     </div>
 
-    <div id="report_91005413-wrapper-fallback">
+    <div id="report_2f9d4893-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -9451,8 +9451,8 @@ We then encode the text with a :class:`~skrub.MinHashEncoder` and fit a
     </div>
 
     <script>
-     document.getElementById("report_91005413-wrapper").removeAttribute("hidden");
-     document.getElementById("report_91005413-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_2f9d4893-wrapper").removeAttribute("hidden");
+     document.getElementById("report_2f9d4893-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -9556,8 +9556,8 @@ when initializing our pipeline's variables.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_58c17ae8-wrapper" hidden>
-        <template id="report_58c17ae8-template">
+    <div id="report_2215b641-wrapper" hidden>
+        <template id="report_2215b641-template">
             <style>
              /*!
     Pure v3.0.0
@@ -11005,7 +11005,7 @@ when initializing our pipeline's variables.
                 
                 
                     <th
-                    id="fb185c5d"
+                    id="d57e7f60"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -11035,7 +11035,7 @@ when initializing our pipeline's variables.
                 
                 
                     <th
-                    id="d92134ef"
+                    id="d268f3b1"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11069,7 +11069,7 @@ when initializing our pipeline's variables.
                 
                 
                     <th
-                    id="bd64ee18"
+                    id="7b6b3054"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11103,7 +11103,7 @@ when initializing our pipeline's variables.
                 
                 
                     <th
-                    id="6119376e"
+                    id="5c4c02c2"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -11151,7 +11151,7 @@ when initializing our pipeline's variables.
                 
                 
                     <th
-                    id="d88306fe"
+                    id="cd9f9f0c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11179,7 +11179,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="57ad3e4c"
+                    id="dc3f0fac"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11209,7 +11209,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="f0536eda"
+                    id="c0a478b4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11239,7 +11239,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="3d31efe6"
+                    id="8e58ab8c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11273,7 +11273,7 @@ when initializing our pipeline's variables.
                 
                 
                     <th
-                    id="6f1b2726"
+                    id="c8ffc60b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11301,7 +11301,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="cc66645a"
+                    id="d9b61fd7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11331,7 +11331,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="d8a3f980"
+                    id="3d104ad6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11361,7 +11361,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="9a594be9"
+                    id="42649b58"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11395,7 +11395,7 @@ when initializing our pipeline's variables.
                 
                 
                     <th
-                    id="011cf68d"
+                    id="c4f04663"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11423,7 +11423,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="71ea2a10"
+                    id="780dc82c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11453,7 +11453,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="3be90b30"
+                    id="cd9d2554"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11483,7 +11483,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="02d0b547"
+                    id="279ac1cf"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11517,7 +11517,7 @@ when initializing our pipeline's variables.
                 
                 
                     <th
-                    id="016d7333"
+                    id="7741bf0f"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11545,7 +11545,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="78f6a3e8"
+                    id="0d16bd7c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11575,7 +11575,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="1c3a287f"
+                    id="2d14f4cb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11605,7 +11605,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="a4d3278f"
+                    id="0670338d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11639,7 +11639,7 @@ when initializing our pipeline's variables.
                 
                 
                     <th
-                    id="7d8d8d8a"
+                    id="2b0c0b25"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11667,7 +11667,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="24a22aaf"
+                    id="2f725f36"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11697,7 +11697,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="28e8e5ae"
+                    id="527a2cc8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11727,7 +11727,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="2ca349ea"
+                    id="411ae34b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11761,7 +11761,7 @@ when initializing our pipeline's variables.
                 
                 
                     <th
-                    id="3ca94d58"
+                    id="c4265a40"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11789,7 +11789,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="0e5f9670"
+                    id="c6e42634"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11819,7 +11819,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="fbcaad62"
+                    id="19e9d46a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11849,7 +11849,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="489ba2eb"
+                    id="e55aa557"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11883,7 +11883,7 @@ when initializing our pipeline's variables.
                 
                 
                     <th
-                    id="47443f78"
+                    id="29938fdd"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11911,7 +11911,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="3feed77a"
+                    id="f6b50eba"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11941,7 +11941,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="ce7fb1a1"
+                    id="da61702c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11971,7 +11971,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="6efcbbda"
+                    id="83d9c279"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12005,7 +12005,7 @@ when initializing our pipeline's variables.
                 
                 
                     <th
-                    id="f7716dda"
+                    id="de069001"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -12033,7 +12033,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="a40ffa79"
+                    id="f502b028"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12063,7 +12063,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="b0a33983"
+                    id="e1b15019"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12093,7 +12093,7 @@ when initializing our pipeline's variables.
                 
                 
                     <td
-                    id="3bc66279"
+                    id="6a0fc1a3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12248,7 +12248,7 @@ when initializing our pipeline's variables.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-04-17T09:07:41.598293</dc:date>
+        <dc:date>2026-04-21T22:41:26.981864</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -12276,12 +12276,12 @@ when initializing our pipeline's variables.
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mf8bbdd472a" d="M 0 0 
+           <path id="mc3c9421cc7" d="M 0 0 
     L 0 6 
     " style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </defs>
           <g>
-           <use xlink:href="#mf8bbdd472a" x="30.244205" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#mc3c9421cc7" x="30.244205" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_1">
@@ -12291,7 +12291,7 @@ when initializing our pipeline's variables.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mf8bbdd472a" x="95.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#mc3c9421cc7" x="95.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_2">
@@ -12301,7 +12301,7 @@ when initializing our pipeline's variables.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mf8bbdd472a" x="161.153295" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#mc3c9421cc7" x="161.153295" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_3">
@@ -12313,12 +12313,12 @@ when initializing our pipeline's variables.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m3d501e1813" d="M 0 0 
+           <path id="m71ec1ffcac" d="M 0 0 
     L -6 0 
     " style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </defs>
           <g>
-           <use xlink:href="#m3d501e1813" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m71ec1ffcac" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_4">
@@ -12328,7 +12328,7 @@ when initializing our pipeline's variables.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m3d501e1813" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m71ec1ffcac" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_5">
@@ -12342,7 +12342,7 @@ when initializing our pipeline's variables.
     L 43.335114 56.342857 
     L 30.244205 56.342857 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_3">
         <path d="M 43.335114 79.2 
@@ -12350,7 +12350,7 @@ when initializing our pipeline's variables.
     L 56.426023 79.2 
     L 43.335114 79.2 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_4">
         <path d="M 56.426023 79.2 
@@ -12358,7 +12358,7 @@ when initializing our pipeline's variables.
     L 69.516932 79.2 
     L 56.426023 79.2 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_5">
         <path d="M 69.516932 79.2 
@@ -12366,7 +12366,7 @@ when initializing our pipeline's variables.
     L 82.607841 56.342857 
     L 69.516932 56.342857 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_6">
         <path d="M 82.607841 79.2 
@@ -12374,7 +12374,7 @@ when initializing our pipeline's variables.
     L 95.69875 79.2 
     L 82.607841 79.2 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_7">
         <path d="M 95.69875 79.2 
@@ -12382,7 +12382,7 @@ when initializing our pipeline's variables.
     L 108.789659 33.485714 
     L 95.69875 33.485714 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_8">
         <path d="M 108.789659 79.2 
@@ -12390,7 +12390,7 @@ when initializing our pipeline's variables.
     L 121.880568 79.2 
     L 108.789659 79.2 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_9">
         <path d="M 121.880568 79.2 
@@ -12398,7 +12398,7 @@ when initializing our pipeline's variables.
     L 134.971477 56.342857 
     L 121.880568 56.342857 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_10">
         <path d="M 134.971477 79.2 
@@ -12406,7 +12406,7 @@ when initializing our pipeline's variables.
     L 148.062386 79.2 
     L 134.971477 79.2 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_11">
         <path d="M 148.062386 79.2 
@@ -12414,7 +12414,7 @@ when initializing our pipeline's variables.
     L 161.153295 10.628571 
     L 148.062386 10.628571 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_12">
         <path d="M 23.69875 79.2 
@@ -12429,7 +12429,7 @@ when initializing our pipeline's variables.
       </g>
      </g>
      <defs>
-      <clipPath id="p3957b4c8bf">
+      <clipPath id="p4ce4c6700e">
        <rect x="23.69875" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -12526,7 +12526,7 @@ when initializing our pipeline's variables.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-04-17T09:07:41.654363</dc:date>
+        <dc:date>2026-04-21T22:41:27.040428</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -12554,12 +12554,12 @@ when initializing our pipeline's variables.
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mc932aa51a2" d="M 0 0 
+           <path id="m22f7698c55" d="M 0 0 
     L 0 6 
     " style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </defs>
           <g>
-           <use xlink:href="#mc932aa51a2" x="26.315874" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m22f7698c55" x="26.315874" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_1">
@@ -12569,7 +12569,7 @@ when initializing our pipeline's variables.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mc932aa51a2" x="78.170324" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m22f7698c55" x="78.170324" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_2">
@@ -12579,7 +12579,7 @@ when initializing our pipeline's variables.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mc932aa51a2" x="130.024775" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m22f7698c55" x="130.024775" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_3">
@@ -12591,12 +12591,12 @@ when initializing our pipeline's variables.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m3513998055" d="M 0 0 
+           <path id="me9ab6e5db3" d="M 0 0 
     L -6 0 
     " style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </defs>
           <g>
-           <use xlink:href="#m3513998055" x="23.69875" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#me9ab6e5db3" x="23.69875" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_4">
@@ -12606,7 +12606,7 @@ when initializing our pipeline's variables.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m3513998055" x="23.69875" y="45.664855" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#me9ab6e5db3" x="23.69875" y="45.664855" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_5">
@@ -12616,7 +12616,7 @@ when initializing our pipeline's variables.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m3513998055" x="23.69875" y="11.379141" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#me9ab6e5db3" x="23.69875" y="11.379141" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_6">
@@ -12630,7 +12630,7 @@ when initializing our pipeline's variables.
     L 43.335113 11.379141 
     L 30.244205 11.379141 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_3">
         <path d="M 43.335113 79.950569 
@@ -12638,7 +12638,7 @@ when initializing our pipeline's variables.
     L 56.426022 62.807712 
     L 43.335113 62.807712 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_4">
         <path d="M 56.426022 79.950569 
@@ -12646,7 +12646,7 @@ when initializing our pipeline's variables.
     L 69.516933 79.950569 
     L 56.426022 79.950569 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_5">
         <path d="M 69.516933 79.950569 
@@ -12654,7 +12654,7 @@ when initializing our pipeline's variables.
     L 82.607842 79.950569 
     L 69.516933 79.950569 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_6">
         <path d="M 82.607842 79.950569 
@@ -12662,7 +12662,7 @@ when initializing our pipeline's variables.
     L 95.698751 62.807712 
     L 82.607842 62.807712 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_7">
         <path d="M 95.698751 79.950569 
@@ -12670,7 +12670,7 @@ when initializing our pipeline's variables.
     L 108.78966 79.950569 
     L 95.698751 79.950569 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_8">
         <path d="M 108.78966 79.950569 
@@ -12678,7 +12678,7 @@ when initializing our pipeline's variables.
     L 121.880569 79.950569 
     L 108.78966 79.950569 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_9">
         <path d="M 121.880569 79.950569 
@@ -12686,7 +12686,7 @@ when initializing our pipeline's variables.
     L 134.971478 79.950569 
     L 121.880569 79.950569 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_10">
         <path d="M 134.971478 79.950569 
@@ -12694,7 +12694,7 @@ when initializing our pipeline's variables.
     L 148.062387 62.807712 
     L 134.971478 62.807712 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_11">
         <path d="M 148.062387 79.950569 
@@ -12702,7 +12702,7 @@ when initializing our pipeline's variables.
     L 161.153295 62.807712 
     L 148.062387 62.807712 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_12">
         <path d="M 23.69875 79.950569 
@@ -12717,7 +12717,7 @@ when initializing our pipeline's variables.
       </g>
      </g>
      <defs>
-      <clipPath id="pd312163828">
+      <clipPath id="p195ccfda79">
        <rect x="23.69875" y="7.950569" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -12814,7 +12814,7 @@ when initializing our pipeline's variables.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-04-17T09:07:41.712747</dc:date>
+        <dc:date>2026-04-21T22:41:27.100721</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -12842,12 +12842,12 @@ when initializing our pipeline's variables.
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mc3a03844f5" d="M 0 0 
+           <path id="maff622ab16" d="M 0 0 
     L 0 6 
     " style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </defs>
           <g>
-           <use xlink:href="#mc3a03844f5" x="45.024271" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#maff622ab16" x="45.024271" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_1">
@@ -12857,7 +12857,7 @@ when initializing our pipeline's variables.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mc3a03844f5" x="87.252985" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#maff622ab16" x="87.252985" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_2">
@@ -12867,7 +12867,7 @@ when initializing our pipeline's variables.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mc3a03844f5" x="129.481699" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#maff622ab16" x="129.481699" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_3">
@@ -12879,12 +12879,12 @@ when initializing our pipeline's variables.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m6c6a8f1abc" d="M 0 0 
+           <path id="m47a7cce002" d="M 0 0 
     L -6 0 
     " style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </defs>
           <g>
-           <use xlink:href="#m6c6a8f1abc" x="23.69875" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m47a7cce002" x="23.69875" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_4">
@@ -12894,7 +12894,7 @@ when initializing our pipeline's variables.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m6c6a8f1abc" x="23.69875" y="45.664855" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m47a7cce002" x="23.69875" y="45.664855" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_5">
@@ -12904,7 +12904,7 @@ when initializing our pipeline's variables.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m6c6a8f1abc" x="23.69875" y="11.379141" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m47a7cce002" x="23.69875" y="11.379141" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_6">
@@ -12918,7 +12918,7 @@ when initializing our pipeline's variables.
     L 43.335139 45.664855 
     L 30.244205 45.664855 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_3">
         <path d="M 43.335139 79.950569 
@@ -12926,7 +12926,7 @@ when initializing our pipeline's variables.
     L 56.426073 79.950569 
     L 43.335139 79.950569 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_4">
         <path d="M 56.426073 79.950569 
@@ -12934,7 +12934,7 @@ when initializing our pipeline's variables.
     L 69.516881 11.379141 
     L 56.426073 11.379141 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_5">
         <path d="M 69.516881 79.950569 
@@ -12942,7 +12942,7 @@ when initializing our pipeline's variables.
     L 82.607816 79.950569 
     L 69.516881 79.950569 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_6">
         <path d="M 82.607816 79.950569 
@@ -12950,7 +12950,7 @@ when initializing our pipeline's variables.
     L 95.69875 79.950569 
     L 82.607816 79.950569 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_7">
         <path d="M 95.69875 79.950569 
@@ -12958,7 +12958,7 @@ when initializing our pipeline's variables.
     L 108.789684 45.664855 
     L 95.69875 45.664855 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_8">
         <path d="M 108.789684 79.950569 
@@ -12966,7 +12966,7 @@ when initializing our pipeline's variables.
     L 121.880619 45.664855 
     L 108.789684 45.664855 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_9">
         <path d="M 121.880619 79.950569 
@@ -12974,7 +12974,7 @@ when initializing our pipeline's variables.
     L 134.971427 79.950569 
     L 121.880619 79.950569 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_10">
         <path d="M 134.971427 79.950569 
@@ -12982,7 +12982,7 @@ when initializing our pipeline's variables.
     L 148.062361 45.664855 
     L 134.971427 45.664855 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_11">
         <path d="M 148.062361 79.950569 
@@ -12990,7 +12990,7 @@ when initializing our pipeline's variables.
     L 161.153295 11.379141 
     L 148.062361 11.379141 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_12">
         <path d="M 23.69875 79.950569 
@@ -13005,7 +13005,7 @@ when initializing our pipeline's variables.
       </g>
      </g>
      <defs>
-      <clipPath id="p2fd7dca198">
+      <clipPath id="pc5a98713d5">
        <rect x="23.69875" y="7.950569" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -13621,7 +13621,7 @@ when initializing our pipeline's variables.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-04-17T09:07:41.598293</dc:date>
+        <dc:date>2026-04-21T22:41:26.981864</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -13649,12 +13649,12 @@ when initializing our pipeline's variables.
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mf8bbdd472a" d="M 0 0 
+           <path id="mc3c9421cc7" d="M 0 0 
     L 0 6 
     " style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </defs>
           <g>
-           <use xlink:href="#mf8bbdd472a" x="30.244205" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#mc3c9421cc7" x="30.244205" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_1">
@@ -13664,7 +13664,7 @@ when initializing our pipeline's variables.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mf8bbdd472a" x="95.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#mc3c9421cc7" x="95.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_2">
@@ -13674,7 +13674,7 @@ when initializing our pipeline's variables.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mf8bbdd472a" x="161.153295" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#mc3c9421cc7" x="161.153295" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_3">
@@ -13686,12 +13686,12 @@ when initializing our pipeline's variables.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m3d501e1813" d="M 0 0 
+           <path id="m71ec1ffcac" d="M 0 0 
     L -6 0 
     " style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </defs>
           <g>
-           <use xlink:href="#m3d501e1813" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m71ec1ffcac" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_4">
@@ -13701,7 +13701,7 @@ when initializing our pipeline's variables.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m3d501e1813" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m71ec1ffcac" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_5">
@@ -13715,7 +13715,7 @@ when initializing our pipeline's variables.
     L 43.335114 56.342857 
     L 30.244205 56.342857 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_3">
         <path d="M 43.335114 79.2 
@@ -13723,7 +13723,7 @@ when initializing our pipeline's variables.
     L 56.426023 79.2 
     L 43.335114 79.2 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_4">
         <path d="M 56.426023 79.2 
@@ -13731,7 +13731,7 @@ when initializing our pipeline's variables.
     L 69.516932 79.2 
     L 56.426023 79.2 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_5">
         <path d="M 69.516932 79.2 
@@ -13739,7 +13739,7 @@ when initializing our pipeline's variables.
     L 82.607841 56.342857 
     L 69.516932 56.342857 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_6">
         <path d="M 82.607841 79.2 
@@ -13747,7 +13747,7 @@ when initializing our pipeline's variables.
     L 95.69875 79.2 
     L 82.607841 79.2 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_7">
         <path d="M 95.69875 79.2 
@@ -13755,7 +13755,7 @@ when initializing our pipeline's variables.
     L 108.789659 33.485714 
     L 95.69875 33.485714 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_8">
         <path d="M 108.789659 79.2 
@@ -13763,7 +13763,7 @@ when initializing our pipeline's variables.
     L 121.880568 79.2 
     L 108.789659 79.2 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_9">
         <path d="M 121.880568 79.2 
@@ -13771,7 +13771,7 @@ when initializing our pipeline's variables.
     L 134.971477 56.342857 
     L 121.880568 56.342857 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_10">
         <path d="M 134.971477 79.2 
@@ -13779,7 +13779,7 @@ when initializing our pipeline's variables.
     L 148.062386 79.2 
     L 134.971477 79.2 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_11">
         <path d="M 148.062386 79.2 
@@ -13787,7 +13787,7 @@ when initializing our pipeline's variables.
     L 161.153295 10.628571 
     L 148.062386 10.628571 
     z
-    " clip-path="url(#p3957b4c8bf)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p4ce4c6700e)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_12">
         <path d="M 23.69875 79.2 
@@ -13802,7 +13802,7 @@ when initializing our pipeline's variables.
       </g>
      </g>
      <defs>
-      <clipPath id="p3957b4c8bf">
+      <clipPath id="p4ce4c6700e">
        <rect x="23.69875" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -13895,7 +13895,7 @@ when initializing our pipeline's variables.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-04-17T09:07:41.654363</dc:date>
+        <dc:date>2026-04-21T22:41:27.040428</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -13923,12 +13923,12 @@ when initializing our pipeline's variables.
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mc932aa51a2" d="M 0 0 
+           <path id="m22f7698c55" d="M 0 0 
     L 0 6 
     " style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </defs>
           <g>
-           <use xlink:href="#mc932aa51a2" x="26.315874" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m22f7698c55" x="26.315874" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_1">
@@ -13938,7 +13938,7 @@ when initializing our pipeline's variables.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mc932aa51a2" x="78.170324" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m22f7698c55" x="78.170324" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_2">
@@ -13948,7 +13948,7 @@ when initializing our pipeline's variables.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mc932aa51a2" x="130.024775" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m22f7698c55" x="130.024775" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_3">
@@ -13960,12 +13960,12 @@ when initializing our pipeline's variables.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m3513998055" d="M 0 0 
+           <path id="me9ab6e5db3" d="M 0 0 
     L -6 0 
     " style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </defs>
           <g>
-           <use xlink:href="#m3513998055" x="23.69875" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#me9ab6e5db3" x="23.69875" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_4">
@@ -13975,7 +13975,7 @@ when initializing our pipeline's variables.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m3513998055" x="23.69875" y="45.664855" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#me9ab6e5db3" x="23.69875" y="45.664855" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_5">
@@ -13985,7 +13985,7 @@ when initializing our pipeline's variables.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m3513998055" x="23.69875" y="11.379141" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#me9ab6e5db3" x="23.69875" y="11.379141" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_6">
@@ -13999,7 +13999,7 @@ when initializing our pipeline's variables.
     L 43.335113 11.379141 
     L 30.244205 11.379141 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_3">
         <path d="M 43.335113 79.950569 
@@ -14007,7 +14007,7 @@ when initializing our pipeline's variables.
     L 56.426022 62.807712 
     L 43.335113 62.807712 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_4">
         <path d="M 56.426022 79.950569 
@@ -14015,7 +14015,7 @@ when initializing our pipeline's variables.
     L 69.516933 79.950569 
     L 56.426022 79.950569 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_5">
         <path d="M 69.516933 79.950569 
@@ -14023,7 +14023,7 @@ when initializing our pipeline's variables.
     L 82.607842 79.950569 
     L 69.516933 79.950569 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_6">
         <path d="M 82.607842 79.950569 
@@ -14031,7 +14031,7 @@ when initializing our pipeline's variables.
     L 95.698751 62.807712 
     L 82.607842 62.807712 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_7">
         <path d="M 95.698751 79.950569 
@@ -14039,7 +14039,7 @@ when initializing our pipeline's variables.
     L 108.78966 79.950569 
     L 95.698751 79.950569 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_8">
         <path d="M 108.78966 79.950569 
@@ -14047,7 +14047,7 @@ when initializing our pipeline's variables.
     L 121.880569 79.950569 
     L 108.78966 79.950569 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_9">
         <path d="M 121.880569 79.950569 
@@ -14055,7 +14055,7 @@ when initializing our pipeline's variables.
     L 134.971478 79.950569 
     L 121.880569 79.950569 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_10">
         <path d="M 134.971478 79.950569 
@@ -14063,7 +14063,7 @@ when initializing our pipeline's variables.
     L 148.062387 62.807712 
     L 134.971478 62.807712 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_11">
         <path d="M 148.062387 79.950569 
@@ -14071,7 +14071,7 @@ when initializing our pipeline's variables.
     L 161.153295 62.807712 
     L 148.062387 62.807712 
     z
-    " clip-path="url(#pd312163828)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#p195ccfda79)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_12">
         <path d="M 23.69875 79.950569 
@@ -14086,7 +14086,7 @@ when initializing our pipeline's variables.
       </g>
      </g>
      <defs>
-      <clipPath id="pd312163828">
+      <clipPath id="p195ccfda79">
        <rect x="23.69875" y="7.950569" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -14179,7 +14179,7 @@ when initializing our pipeline's variables.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-04-17T09:07:41.712747</dc:date>
+        <dc:date>2026-04-21T22:41:27.100721</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -14207,12 +14207,12 @@ when initializing our pipeline's variables.
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mc3a03844f5" d="M 0 0 
+           <path id="maff622ab16" d="M 0 0 
     L 0 6 
     " style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </defs>
           <g>
-           <use xlink:href="#mc3a03844f5" x="45.024271" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#maff622ab16" x="45.024271" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_1">
@@ -14222,7 +14222,7 @@ when initializing our pipeline's variables.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mc3a03844f5" x="87.252985" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#maff622ab16" x="87.252985" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_2">
@@ -14232,7 +14232,7 @@ when initializing our pipeline's variables.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mc3a03844f5" x="129.481699" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#maff622ab16" x="129.481699" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_3">
@@ -14244,12 +14244,12 @@ when initializing our pipeline's variables.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m6c6a8f1abc" d="M 0 0 
+           <path id="m47a7cce002" d="M 0 0 
     L -6 0 
     " style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </defs>
           <g>
-           <use xlink:href="#m6c6a8f1abc" x="23.69875" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m47a7cce002" x="23.69875" y="79.950569" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_4">
@@ -14259,7 +14259,7 @@ when initializing our pipeline's variables.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m6c6a8f1abc" x="23.69875" y="45.664855" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m47a7cce002" x="23.69875" y="45.664855" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_5">
@@ -14269,7 +14269,7 @@ when initializing our pipeline's variables.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m6c6a8f1abc" x="23.69875" y="11.379141" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
+           <use xlink:href="#m47a7cce002" x="23.69875" y="11.379141" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
           </g>
          </g>
          <g id="text_6">
@@ -14283,7 +14283,7 @@ when initializing our pipeline's variables.
     L 43.335139 45.664855 
     L 30.244205 45.664855 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_3">
         <path d="M 43.335139 79.950569 
@@ -14291,7 +14291,7 @@ when initializing our pipeline's variables.
     L 56.426073 79.950569 
     L 43.335139 79.950569 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_4">
         <path d="M 56.426073 79.950569 
@@ -14299,7 +14299,7 @@ when initializing our pipeline's variables.
     L 69.516881 11.379141 
     L 56.426073 11.379141 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_5">
         <path d="M 69.516881 79.950569 
@@ -14307,7 +14307,7 @@ when initializing our pipeline's variables.
     L 82.607816 79.950569 
     L 69.516881 79.950569 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_6">
         <path d="M 82.607816 79.950569 
@@ -14315,7 +14315,7 @@ when initializing our pipeline's variables.
     L 95.69875 79.950569 
     L 82.607816 79.950569 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_7">
         <path d="M 95.69875 79.950569 
@@ -14323,7 +14323,7 @@ when initializing our pipeline's variables.
     L 108.789684 45.664855 
     L 95.69875 45.664855 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_8">
         <path d="M 108.789684 79.950569 
@@ -14331,7 +14331,7 @@ when initializing our pipeline's variables.
     L 121.880619 45.664855 
     L 108.789684 45.664855 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_9">
         <path d="M 121.880619 79.950569 
@@ -14339,7 +14339,7 @@ when initializing our pipeline's variables.
     L 134.971427 79.950569 
     L 121.880619 79.950569 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_10">
         <path d="M 134.971427 79.950569 
@@ -14347,7 +14347,7 @@ when initializing our pipeline's variables.
     L 148.062361 45.664855 
     L 134.971427 45.664855 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_11">
         <path d="M 148.062361 79.950569 
@@ -14355,7 +14355,7 @@ when initializing our pipeline's variables.
     L 161.153295 11.379141 
     L 148.062361 11.379141 
     z
-    " clip-path="url(#p2fd7dca198)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
+    " clip-path="url(#pc5a98713d5)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
        </g>
        <g id="patch_12">
         <path d="M 23.69875 79.950569 
@@ -14370,7 +14370,7 @@ when initializing our pipeline's variables.
       </g>
      </g>
      <defs>
-      <clipPath id="p2fd7dca198">
+      <clipPath id="pc5a98713d5">
        <rect x="23.69875" y="7.950569" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -14475,7 +14475,7 @@ when initializing our pipeline's variables.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_58c17ae8">
+        <skrub-table-report class="report" id="report_2215b641">
         </skrub-table-report>
 
         <script type="module">
@@ -15579,7 +15579,7 @@ when initializing our pipeline's variables.
         </script>
     </div>
 
-    <div id="report_58c17ae8-wrapper-fallback">
+    <div id="report_2215b641-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -15590,8 +15590,8 @@ when initializing our pipeline's variables.
     </div>
 
     <script>
-     document.getElementById("report_58c17ae8-wrapper").removeAttribute("hidden");
-     document.getElementById("report_58c17ae8-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_2215b641-wrapper").removeAttribute("hidden");
+     document.getElementById("report_2215b641-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -15630,7 +15630,7 @@ impact on the score.
 
     <div class="output_subarea output_html rendered_html output_result">
     <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.4.0.min.js" integrity="sha256-KEmPoupLpFyGMyGAiOsiNDbKDKAvxXAn/W+oQa0ZAfk=" crossorigin="anonymous"></script>                <div id="dbf30a47-72e6-410d-9817-b1e7c5f51568" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("dbf30a47-72e6-410d-9817-b1e7c5f51568")) {                    Plotly.newPlot(                        "dbf30a47-72e6-410d-9817-b1e7c5f51568",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkC6OPrB7RcoQAAAAAAAAC5AkwjpBk\u002fuLUBgE9uCAPsjQIvplO5u+yNAe3CAmJT\u002fH0AAAAAAAAAUQA=="}},{"label":"lr","ticktext":["0.02","0.02","0.03","0.05","0.07","0.11","0.16","0.24","0.35","0.52"],"tickvals":[-4.189664084302747,-3.796791280939163,-3.403918477575579,-3.0110456742119958,-2.6181728708484115,-2.2253000674848282,-1.8324272641212445,-1.4395544607576607,-1.046681657394077,-0.6538088540304932],"values":{"dtype":"f8","bdata":"CjrjdA+tBsA9Om3lKeP1v7itvIsA7OS\u002fzRV7rm\u002ftBsB8+PCxR90BwAFtXLsx7+m\u002fYfTIzUwUCsBuOT1NN8IQwA=="}},{"label":"score time","ticktext":["0.086","0.092","0.098","0.104","0.111","0.117","0.123","0.129","0.135","0.141"],"tickvals":[0.08610501289367675,0.09221989313761393,0.0983347733815511,0.10444965362548828,0.11056453386942545,0.11667941411336263,0.1227942943572998,0.12890917460123696,0.13502405484517416,0.14113893508911132],"values":{"dtype":"f8","bdata":"MzMzM9cQwj\u002f63vPUDITBP1MIXvQmcLs\u002fS7SfvVaWwD\u002f3O5YbP\u002f25P6G8N3e1fLw\u002fCzaDDsSOtj9mZmZm+gq2Pw=="}},{"label":"fit time","ticktext":["0.72","0.75","0.78","0.82","0.85","0.88","0.91","0.94","0.98","1.01"],"tickvals":[0.7186046123504639,0.7507468170589872,0.7828890217675103,0.8150312264760335,0.8471734311845568,0.87931563589308,0.9114578406016032,0.9436000453101264,0.9757422500186497,1.0078844547271728],"values":{"dtype":"f8","bdata":"MzMzc0sg8D\u002fJ7\u002fZ2MT\u002fnP0lHFaZJoek\u002flvBzFsUs7T9ReuwG2z\u002fnP0Ph9bpZV+s\u002fJMysAGZT6T+amZkZz\u002f7mPw=="}},{"label":"score","ticktext":["0.533","0.540","0.547","0.554","0.561","0.567","0.574","0.581","0.588","0.595"],"tickvals":[0.5329999999999999,0.5398888888888889,0.5467777777777777,0.5536666666666666,0.5605555555555555,0.5674444444444444,0.5743333333333333,0.5812222222222222,0.588111111111111,0.595],"values":{"dtype":"f8","bdata":"CtejcD0K4z9g5dAi2\u002fniP7kehetRuOI\u002fO99PjZdu4j89CtejcD3iP24Sg8DKoeE\u002fGy\u002fdJAaB4T90kxgEVg7hPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"CtejcD0K4z9g5dAi2\u002fniP7kehetRuOI\u002fO99PjZdu4j89CtejcD3iP24Sg8DKoeE\u002fGy\u002fdJAaB4T90kxgEVg7hPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.4.0.min.js" integrity="sha256-KEmPoupLpFyGMyGAiOsiNDbKDKAvxXAn/W+oQa0ZAfk=" crossorigin="anonymous"></script>                <div id="bc1c74ac-aaf9-4416-82be-37b945258ea4" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("bc1c74ac-aaf9-4416-82be-37b945258ea4")) {                    Plotly.newPlot(                        "bc1c74ac-aaf9-4416-82be-37b945258ea4",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkDSZnlf5\u002fgnQAAAAAAAAC5AAAAAAAAALkDp3jNQjRgkQPNPqtECBiRAykv8TpwSIEAAAAAAAAAUQA=="}},{"label":"lr","ticktext":["0.02","0.02","0.03","0.05","0.07","0.11","0.16","0.24","0.35","0.52"],"tickvals":[-4.189664084302747,-3.796791280939163,-3.403918477575579,-3.0110456742119958,-2.6181728708484115,-2.2253000674848282,-1.8324272641212445,-1.4395544607576607,-1.046681657394077,-0.6538088540304932],"values":{"dtype":"f8","bdata":"68vtNaSdBsAIOTZE8wT2v7itvIsA7OS\u002f6lcLFQ7YBsBYyYAnPv4BwL4ZP39c7em\u002fzMOvSM\u002fuCcBuOT1NN8IQwA=="}},{"label":"score time","ticktext":["0.099","0.106","0.113","0.120","0.126","0.133","0.140","0.147","0.154","0.160"],"tickvals":[0.0991279125213623,0.1059310860104031,0.1127342594994439,0.1195374329884847,0.12634060647752549,0.1331437799665663,0.1399469534556071,0.1467501269446479,0.1535533004336887,0.1603564739227295],"values":{"dtype":"f8","bdata":"mpmZmY+GxD+Jz6vxQSjBP85ALTTlQrw\u002fuRldNEtHwj\u002fPrGk76Ce6PxlFCsubOLo\u002f5rO6Pczsvj9mZmZmcmC5Pw=="}},{"label":"fit time","ticktext":["0.81","0.83","0.86","0.88","0.91","0.94","0.96","0.99","1.01","1.04"],"tickvals":[0.8072581768035889,0.8330077012379965,0.858757225672404,0.8845067501068116,0.9102562745412192,0.9360057989756266,0.9617553234100342,0.9875048478444417,1.0132543722788494,1.0390038967132569],"values":{"dtype":"f8","bdata":"c8Xhj4Fp7D8pUmATeY7qP6UJXU80Y+s\u002fzczMjMKf8D++axKNwybrPx6wAW2cYuw\u002fmpmZGQ\u002fV6T\u002fzeCBZe17qPw=="}},{"label":"score","ticktext":["0.533","0.540","0.547","0.554","0.561","0.567","0.574","0.581","0.588","0.595"],"tickvals":[0.5329999999999999,0.5398888888888889,0.5467777777777777,0.5536666666666666,0.5605555555555555,0.5674444444444444,0.5743333333333333,0.5812222222222222,0.588111111111111,0.595],"values":{"dtype":"f8","bdata":"CtejcD0K4z9g5dAi2\u002fniP7kehetRuOI\u002fO99PjZdu4j89CtejcD3iP24Sg8DKoeE\u002fGy\u002fdJAaB4T90kxgEVg7hPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"CtejcD0K4z9g5dAi2\u002fniP7kehetRuOI\u002fO99PjZdu4j89CtejcD3iP24Sg8DKoeE\u002fGy\u002fdJAaB4T90kxgEVg7hPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -15890,8 +15890,8 @@ in words:
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_96df156d-wrapper" hidden>
-        <template id="report_96df156d-template">
+    <div id="report_68844de3-wrapper" hidden>
+        <template id="report_68844de3-template">
             <style>
              /*!
     Pure v3.0.0
@@ -17316,7 +17316,7 @@ in words:
                 
                 
                     <th
-                    id="74dafc17"
+                    id="84d1d1a2"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -17346,7 +17346,7 @@ in words:
                 
                 
                     <th
-                    id="b6496e69"
+                    id="09731ef5"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -17380,7 +17380,7 @@ in words:
                 
                 
                     <th
-                    id="0e96f0cb"
+                    id="dd6840f5"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -17428,7 +17428,7 @@ in words:
                 
                 
                     <th
-                    id="af50b2b3"
+                    id="890d5ca7"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -17456,7 +17456,7 @@ in words:
                 
                 
                     <td
-                    id="0e6bcef7"
+                    id="b91aa260"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17486,7 +17486,7 @@ in words:
                 
                 
                     <td
-                    id="c88b3830"
+                    id="77bfacdb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17520,7 +17520,7 @@ in words:
                 
                 
                     <th
-                    id="01be8ed6"
+                    id="c86401df"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -17548,7 +17548,7 @@ in words:
                 
                 
                     <td
-                    id="45faaace"
+                    id="cf4444af"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17578,7 +17578,7 @@ in words:
                 
                 
                     <td
-                    id="b9179b2b"
+                    id="0821bce4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17612,7 +17612,7 @@ in words:
                 
                 
                     <th
-                    id="29ea0155"
+                    id="937135ca"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -17640,7 +17640,7 @@ in words:
                 
                 
                     <td
-                    id="add7bb56"
+                    id="0c42c2d9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17670,7 +17670,7 @@ in words:
                 
                 
                     <td
-                    id="633b715f"
+                    id="61847736"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17704,7 +17704,7 @@ in words:
                 
                 
                     <th
-                    id="f4098840"
+                    id="2a39d9cb"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -17732,7 +17732,7 @@ in words:
                 
                 
                     <td
-                    id="e8d30125"
+                    id="70044a81"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17762,7 +17762,7 @@ in words:
                 
                 
                     <td
-                    id="2975c766"
+                    id="486d8b07"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17796,7 +17796,7 @@ in words:
                 
                 
                     <th
-                    id="bf801b48"
+                    id="a93a432a"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -17824,7 +17824,7 @@ in words:
                 
                 
                     <td
-                    id="d1b8d1f1"
+                    id="ad15d071"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17854,7 +17854,7 @@ in words:
                 
                 
                     <td
-                    id="1d9fb071"
+                    id="c6e0f0f7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17928,7 +17928,7 @@ in words:
                 
                 
                     <th
-                    id="a1a006f5"
+                    id="b2cce504"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -17956,7 +17956,7 @@ in words:
                 
                 
                     <td
-                    id="7890d0fb"
+                    id="01574773"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17986,7 +17986,7 @@ in words:
                 
                 
                     <td
-                    id="4feb636c"
+                    id="81ec635c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18020,7 +18020,7 @@ in words:
                 
                 
                     <th
-                    id="eaa85810"
+                    id="4d68a527"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -18048,7 +18048,7 @@ in words:
                 
                 
                     <td
-                    id="c8bff09f"
+                    id="6adc69a6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18082,7 +18082,7 @@ in words:
                 
                 
                     <td
-                    id="17ed4dc0"
+                    id="5b9ae598"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18116,7 +18116,7 @@ in words:
                 
                 
                     <th
-                    id="64673ed9"
+                    id="f9c39c1d"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -18144,7 +18144,7 @@ in words:
                 
                 
                     <td
-                    id="3edd377b"
+                    id="696c7171"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18182,7 +18182,7 @@ in words:
                 
                 
                     <td
-                    id="ced7bf21"
+                    id="94b9da7f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18216,7 +18216,7 @@ in words:
                 
                 
                     <th
-                    id="2eb5e1ae"
+                    id="9ce8d808"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -18244,7 +18244,7 @@ in words:
                 
                 
                     <td
-                    id="9d8e6146"
+                    id="43f1292e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18274,7 +18274,7 @@ in words:
                 
                 
                     <td
-                    id="38afc31b"
+                    id="64b9fedc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18308,7 +18308,7 @@ in words:
                 
                 
                     <th
-                    id="c9ad4723"
+                    id="0694fde9"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -18336,7 +18336,7 @@ in words:
                 
                 
                     <td
-                    id="bd2ad910"
+                    id="6c22fdd8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18368,7 +18368,7 @@ in words:
                 
                 
                     <td
-                    id="392eea4e"
+                    id="33f23549"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -19039,7 +19039,7 @@ in words:
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_96df156d">
+        <skrub-table-report class="report" id="report_68844de3">
         </skrub-table-report>
 
         <script type="module">
@@ -20143,7 +20143,7 @@ in words:
         </script>
     </div>
 
-    <div id="report_96df156d-wrapper-fallback">
+    <div id="report_68844de3-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -20154,8 +20154,8 @@ in words:
     </div>
 
     <script>
-     document.getElementById("report_96df156d-wrapper").removeAttribute("hidden");
-     document.getElementById("report_96df156d-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_68844de3-wrapper").removeAttribute("hidden");
+     document.getElementById("report_68844de3-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -20244,8 +20244,8 @@ the number of components.
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_e9f79a2e-wrapper" hidden>
-        <template id="report_e9f79a2e-template">
+    <div id="report_d45b1a3b-wrapper" hidden>
+        <template id="report_d45b1a3b-template">
             <style>
              /*!
     Pure v3.0.0
@@ -21670,7 +21670,7 @@ the number of components.
                 
                 
                     <th
-                    id="68f78ee0"
+                    id="f81036d3"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -21700,7 +21700,7 @@ the number of components.
                 
                 
                     <th
-                    id="57fc9aa0"
+                    id="f20cd807"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -21734,7 +21734,7 @@ the number of components.
                 
                 
                     <th
-                    id="14861c53"
+                    id="87ddfe33"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -21768,7 +21768,7 @@ the number of components.
                 
                 
                     <th
-                    id="d2055445"
+                    id="de168ec2"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -21802,7 +21802,7 @@ the number of components.
                 
                 
                     <th
-                    id="0d1ac728"
+                    id="cd38b92a"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -21836,7 +21836,7 @@ the number of components.
                 
                 
                     <th
-                    id="be743f7c"
+                    id="a77a7750"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -21870,7 +21870,7 @@ the number of components.
                 
                 
                     <th
-                    id="7c92e2c1"
+                    id="c0a50777"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -21904,7 +21904,7 @@ the number of components.
                 
                 
                     <th
-                    id="08ec64ec"
+                    id="2d592952"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -21938,7 +21938,7 @@ the number of components.
                 
                 
                     <th
-                    id="e128b3b6"
+                    id="b8b8755e"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -21972,7 +21972,7 @@ the number of components.
                 
                 
                     <th
-                    id="75540a6b"
+                    id="251014a7"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -22006,7 +22006,7 @@ the number of components.
                 
                 
                     <th
-                    id="fb2d2d13"
+                    id="9a27e2c2"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -22054,7 +22054,7 @@ the number of components.
                 
                 
                     <th
-                    id="1ec97b80"
+                    id="34964352"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -22082,7 +22082,7 @@ the number of components.
                 
                 
                     <td
-                    id="be8ec10b"
+                    id="1a43e66f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22112,7 +22112,7 @@ the number of components.
                 
                 
                     <td
-                    id="0e0c7660"
+                    id="65046601"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22142,7 +22142,7 @@ the number of components.
                 
                 
                     <td
-                    id="89c7c3b4"
+                    id="b47481b1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22172,7 +22172,7 @@ the number of components.
                 
                 
                     <td
-                    id="381235d4"
+                    id="659e25c5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22202,7 +22202,7 @@ the number of components.
                 
                 
                     <td
-                    id="2c7afdfe"
+                    id="47af97e2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22232,7 +22232,7 @@ the number of components.
                 
                 
                     <td
-                    id="7a54ea87"
+                    id="c0b03e0d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22262,7 +22262,7 @@ the number of components.
                 
                 
                     <td
-                    id="e50b8ce3"
+                    id="3263d509"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22292,7 +22292,7 @@ the number of components.
                 
                 
                     <td
-                    id="3165ae19"
+                    id="fa0f5068"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22322,7 +22322,7 @@ the number of components.
                 
                 
                     <td
-                    id="1c8093b3"
+                    id="1c4ca94d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22352,7 +22352,7 @@ the number of components.
                 
                 
                     <td
-                    id="a8673cb2"
+                    id="37a850a4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22386,7 +22386,7 @@ the number of components.
                 
                 
                     <th
-                    id="350243d6"
+                    id="bd1137c8"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -22414,7 +22414,7 @@ the number of components.
                 
                 
                     <td
-                    id="f2425c26"
+                    id="082ba5b5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22444,7 +22444,7 @@ the number of components.
                 
                 
                     <td
-                    id="eaee69b1"
+                    id="1ae13528"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22474,7 +22474,7 @@ the number of components.
                 
                 
                     <td
-                    id="c12d49aa"
+                    id="96a1ce99"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22504,7 +22504,7 @@ the number of components.
                 
                 
                     <td
-                    id="a6cfcadc"
+                    id="0ecce639"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22534,7 +22534,7 @@ the number of components.
                 
                 
                     <td
-                    id="7bdb7029"
+                    id="4f4e4a02"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22564,7 +22564,7 @@ the number of components.
                 
                 
                     <td
-                    id="d172c8ea"
+                    id="82c33fe3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22594,7 +22594,7 @@ the number of components.
                 
                 
                     <td
-                    id="86a7f7b7"
+                    id="6ae65c50"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22624,7 +22624,7 @@ the number of components.
                 
                 
                     <td
-                    id="cd0991a1"
+                    id="559df823"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22654,7 +22654,7 @@ the number of components.
                 
                 
                     <td
-                    id="a7996aa6"
+                    id="5a35733c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22684,7 +22684,7 @@ the number of components.
                 
                 
                     <td
-                    id="a723665e"
+                    id="69136072"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22718,7 +22718,7 @@ the number of components.
                 
                 
                     <th
-                    id="c7563d4f"
+                    id="f824bc8a"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -22746,7 +22746,7 @@ the number of components.
                 
                 
                     <td
-                    id="d41b8e32"
+                    id="c773b563"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22776,7 +22776,7 @@ the number of components.
                 
                 
                     <td
-                    id="45ba3cb5"
+                    id="b5d2d128"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22806,7 +22806,7 @@ the number of components.
                 
                 
                     <td
-                    id="05ee4203"
+                    id="3f754b14"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22836,7 +22836,7 @@ the number of components.
                 
                 
                     <td
-                    id="a5bb1ac5"
+                    id="c7beaf66"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22866,7 +22866,7 @@ the number of components.
                 
                 
                     <td
-                    id="c7a2a609"
+                    id="4899b2c0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22896,7 +22896,7 @@ the number of components.
                 
                 
                     <td
-                    id="0646f4fe"
+                    id="01c1bbad"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22926,7 +22926,7 @@ the number of components.
                 
                 
                     <td
-                    id="33350cac"
+                    id="6b46116b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22956,7 +22956,7 @@ the number of components.
                 
                 
                     <td
-                    id="10a06d3d"
+                    id="b21e41c9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -22986,7 +22986,7 @@ the number of components.
                 
                 
                     <td
-                    id="69a0bc02"
+                    id="49cff76f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23016,7 +23016,7 @@ the number of components.
                 
                 
                     <td
-                    id="9b9739ca"
+                    id="6239f07f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23050,7 +23050,7 @@ the number of components.
                 
                 
                     <th
-                    id="cd1df713"
+                    id="91e44d49"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -23078,7 +23078,7 @@ the number of components.
                 
                 
                     <td
-                    id="6e2669da"
+                    id="7781faab"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23108,7 +23108,7 @@ the number of components.
                 
                 
                     <td
-                    id="92311e67"
+                    id="9f70b56c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23138,7 +23138,7 @@ the number of components.
                 
                 
                     <td
-                    id="bc7d766f"
+                    id="7e419d25"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23168,7 +23168,7 @@ the number of components.
                 
                 
                     <td
-                    id="87f3f866"
+                    id="65ebe97c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23198,7 +23198,7 @@ the number of components.
                 
                 
                     <td
-                    id="d92986a3"
+                    id="df233b4f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23228,7 +23228,7 @@ the number of components.
                 
                 
                     <td
-                    id="53401d85"
+                    id="ba9958f8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23258,7 +23258,7 @@ the number of components.
                 
                 
                     <td
-                    id="98e1b925"
+                    id="fea821ef"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23288,7 +23288,7 @@ the number of components.
                 
                 
                     <td
-                    id="d9434226"
+                    id="6979b011"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23318,7 +23318,7 @@ the number of components.
                 
                 
                     <td
-                    id="69baa4c9"
+                    id="80abafff"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23348,7 +23348,7 @@ the number of components.
                 
                 
                     <td
-                    id="aa96aeac"
+                    id="a88549b3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23382,7 +23382,7 @@ the number of components.
                 
                 
                     <th
-                    id="842fde84"
+                    id="0c7e2103"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -23410,7 +23410,7 @@ the number of components.
                 
                 
                     <td
-                    id="b636fffb"
+                    id="bc76ba55"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23440,7 +23440,7 @@ the number of components.
                 
                 
                     <td
-                    id="b0657a1a"
+                    id="8955fff6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23470,7 +23470,7 @@ the number of components.
                 
                 
                     <td
-                    id="18c90b89"
+                    id="141b17de"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23500,7 +23500,7 @@ the number of components.
                 
                 
                     <td
-                    id="7348dbd7"
+                    id="0d488d16"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23530,7 +23530,7 @@ the number of components.
                 
                 
                     <td
-                    id="ebed11ca"
+                    id="4970ff89"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23560,7 +23560,7 @@ the number of components.
                 
                 
                     <td
-                    id="026703ab"
+                    id="cec22651"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23590,7 +23590,7 @@ the number of components.
                 
                 
                     <td
-                    id="f0e49b0e"
+                    id="a0464658"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23620,7 +23620,7 @@ the number of components.
                 
                 
                     <td
-                    id="ff2b50ce"
+                    id="4d80c3c6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23650,7 +23650,7 @@ the number of components.
                 
                 
                     <td
-                    id="3d6cabd3"
+                    id="6b965e1e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23680,7 +23680,7 @@ the number of components.
                 
                 
                     <td
-                    id="dbefbe8b"
+                    id="c615b37f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23834,7 +23834,7 @@ the number of components.
                 
                 
                     <th
-                    id="26212bbd"
+                    id="6f5bd688"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -23862,7 +23862,7 @@ the number of components.
                 
                 
                     <td
-                    id="77c28888"
+                    id="09ef4b85"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23892,7 +23892,7 @@ the number of components.
                 
                 
                     <td
-                    id="112796cb"
+                    id="9aff630c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23922,7 +23922,7 @@ the number of components.
                 
                 
                     <td
-                    id="7e6778b4"
+                    id="ee61ae2e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23952,7 +23952,7 @@ the number of components.
                 
                 
                     <td
-                    id="a1737914"
+                    id="ce9cd76d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23982,7 +23982,7 @@ the number of components.
                 
                 
                     <td
-                    id="e7e1af9f"
+                    id="8eac97cd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24012,7 +24012,7 @@ the number of components.
                 
                 
                     <td
-                    id="ff3b128f"
+                    id="96ad8a9c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24042,7 +24042,7 @@ the number of components.
                 
                 
                     <td
-                    id="31fbb8d3"
+                    id="64fc2872"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24072,7 +24072,7 @@ the number of components.
                 
                 
                     <td
-                    id="415dd1ae"
+                    id="c5dc1b25"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24102,7 +24102,7 @@ the number of components.
                 
                 
                     <td
-                    id="4de095e8"
+                    id="508a29ce"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24132,7 +24132,7 @@ the number of components.
                 
                 
                     <td
-                    id="d699b797"
+                    id="4c3b4a37"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24166,7 +24166,7 @@ the number of components.
                 
                 
                     <th
-                    id="3d8f77b5"
+                    id="5d617925"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -24194,7 +24194,7 @@ the number of components.
                 
                 
                     <td
-                    id="6a0de713"
+                    id="fbf8e489"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24224,7 +24224,7 @@ the number of components.
                 
                 
                     <td
-                    id="90e000b9"
+                    id="d97ed4b7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24254,7 +24254,7 @@ the number of components.
                 
                 
                     <td
-                    id="4b68af11"
+                    id="719f1291"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24284,7 +24284,7 @@ the number of components.
                 
                 
                     <td
-                    id="cdbb4328"
+                    id="394fa2bb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24314,7 +24314,7 @@ the number of components.
                 
                 
                     <td
-                    id="6cb5fdf1"
+                    id="bc8dddd7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24344,7 +24344,7 @@ the number of components.
                 
                 
                     <td
-                    id="745364d3"
+                    id="a96e55e2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24374,7 +24374,7 @@ the number of components.
                 
                 
                     <td
-                    id="819cb694"
+                    id="55fc237f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24404,7 +24404,7 @@ the number of components.
                 
                 
                     <td
-                    id="f9fcff5c"
+                    id="0098fce5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24434,7 +24434,7 @@ the number of components.
                 
                 
                     <td
-                    id="6b3ed94a"
+                    id="395a1dc9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24464,7 +24464,7 @@ the number of components.
                 
                 
                     <td
-                    id="58a94926"
+                    id="277c5b8e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24498,7 +24498,7 @@ the number of components.
                 
                 
                     <th
-                    id="f255b4b7"
+                    id="f3b150eb"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -24526,7 +24526,7 @@ the number of components.
                 
                 
                     <td
-                    id="05ee0c30"
+                    id="d0be9e72"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24556,7 +24556,7 @@ the number of components.
                 
                 
                     <td
-                    id="dca7c1d2"
+                    id="2a206c2f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24586,7 +24586,7 @@ the number of components.
                 
                 
                     <td
-                    id="be435f45"
+                    id="2d291db6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24616,7 +24616,7 @@ the number of components.
                 
                 
                     <td
-                    id="6cf1c400"
+                    id="d62451d6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24646,7 +24646,7 @@ the number of components.
                 
                 
                     <td
-                    id="423ca418"
+                    id="11a407c3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24676,7 +24676,7 @@ the number of components.
                 
                 
                     <td
-                    id="745e289c"
+                    id="54334763"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24706,7 +24706,7 @@ the number of components.
                 
                 
                     <td
-                    id="bc7ca7b0"
+                    id="ff892701"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24736,7 +24736,7 @@ the number of components.
                 
                 
                     <td
-                    id="742cbfaa"
+                    id="cc7c002a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24766,7 +24766,7 @@ the number of components.
                 
                 
                     <td
-                    id="d23c5d83"
+                    id="0d336600"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24796,7 +24796,7 @@ the number of components.
                 
                 
                     <td
-                    id="8012e054"
+                    id="426a467d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24830,7 +24830,7 @@ the number of components.
                 
                 
                     <th
-                    id="0b0cb4b9"
+                    id="5177870f"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -24858,7 +24858,7 @@ the number of components.
                 
                 
                     <td
-                    id="10c60f97"
+                    id="46baf206"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24888,7 +24888,7 @@ the number of components.
                 
                 
                     <td
-                    id="bdf7847d"
+                    id="ea7b4a4b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24918,7 +24918,7 @@ the number of components.
                 
                 
                     <td
-                    id="65a52015"
+                    id="a211afad"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24948,7 +24948,7 @@ the number of components.
                 
                 
                     <td
-                    id="7d27e560"
+                    id="cdece76d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24978,7 +24978,7 @@ the number of components.
                 
                 
                     <td
-                    id="71eabbf1"
+                    id="6d7b4c4a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25008,7 +25008,7 @@ the number of components.
                 
                 
                     <td
-                    id="7860873f"
+                    id="87b6b1b4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25038,7 +25038,7 @@ the number of components.
                 
                 
                     <td
-                    id="943f1d6a"
+                    id="b09c48b0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25068,7 +25068,7 @@ the number of components.
                 
                 
                     <td
-                    id="9ae951a5"
+                    id="cb0562cc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25098,7 +25098,7 @@ the number of components.
                 
                 
                     <td
-                    id="9d4e4277"
+                    id="b1a978bc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25128,7 +25128,7 @@ the number of components.
                 
                 
                     <td
-                    id="32603510"
+                    id="ecf711bc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25162,7 +25162,7 @@ the number of components.
                 
                 
                     <th
-                    id="cc0371a1"
+                    id="01bd8991"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -25190,7 +25190,7 @@ the number of components.
                 
                 
                     <td
-                    id="d336a622"
+                    id="420c6f8d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25220,7 +25220,7 @@ the number of components.
                 
                 
                     <td
-                    id="122d61bb"
+                    id="344d40a3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25250,7 +25250,7 @@ the number of components.
                 
                 
                     <td
-                    id="3af93504"
+                    id="0ce36a78"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25280,7 +25280,7 @@ the number of components.
                 
                 
                     <td
-                    id="5aa56e43"
+                    id="b261885f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25310,7 +25310,7 @@ the number of components.
                 
                 
                     <td
-                    id="9b6c36cf"
+                    id="c5c61dab"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25340,7 +25340,7 @@ the number of components.
                 
                 
                     <td
-                    id="e4f1d688"
+                    id="2bca470d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25370,7 +25370,7 @@ the number of components.
                 
                 
                     <td
-                    id="74c60295"
+                    id="4b744631"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25400,7 +25400,7 @@ the number of components.
                 
                 
                     <td
-                    id="d58b184b"
+                    id="e5b70fbc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25430,7 +25430,7 @@ the number of components.
                 
                 
                     <td
-                    id="b26132d2"
+                    id="0a233368"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25460,7 +25460,7 @@ the number of components.
                 
                 
                     <td
-                    id="83c34f81"
+                    id="964e5190"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -27115,7 +27115,7 @@ the number of components.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_e9f79a2e">
+        <skrub-table-report class="report" id="report_d45b1a3b">
         </skrub-table-report>
 
         <script type="module">
@@ -28219,7 +28219,7 @@ the number of components.
         </script>
     </div>
 
-    <div id="report_e9f79a2e-wrapper-fallback">
+    <div id="report_d45b1a3b-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -28230,8 +28230,8 @@ the number of components.
     </div>
 
     <script>
-     document.getElementById("report_e9f79a2e-wrapper").removeAttribute("hidden");
-     document.getElementById("report_e9f79a2e-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_d45b1a3b-wrapper").removeAttribute("hidden");
+     document.getElementById("report_d45b1a3b-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -28306,7 +28306,7 @@ hyperparameters of each classifier.
 
     <div class="output_subarea output_html rendered_html output_result">
     <div>                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.4.0.min.js" integrity="sha256-KEmPoupLpFyGMyGAiOsiNDbKDKAvxXAn/W+oQa0ZAfk=" crossorigin="anonymous"></script>                <div id="c8d1f573-f664-4af7-bfdb-e3df8683bcb6" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("c8d1f573-f664-4af7-bfdb-e3df8683bcb6")) {                    Plotly.newPlot(                        "c8d1f573-f664-4af7-bfdb-e3df8683bcb6",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkArJgB5Wi0YQB4lXE6eAiZArdAitL3pH0DsI0E\u002fzPErQGL7COnl7StAAAAAAAAAFEDq76ffWwMiQFoTh1vC+yFAIYA1ELTxLUAPKXDZ4fwXQCIfGy5W\u002fxdAHYfR9fvyI0CCTeXHbBQgQDeg5RBJEihAOSg4JKv7J0A="}},{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkGlBxzEsZj8AAAAAAADwPwAAAAAAAPA\u002fAAAAAAAA8D+wZFTV5\u002fvvPwAAAAAAAPA\u002fAAAAAAAA8D8AAAAAAADwPwAAAAAAAPA\u002fAAAAAAAA8D8TUXpzdv\u002fvP3ScpZMD8+8\u002fRoY1K7jx7z8="}},{"label":"lr","ticktext":["NaN","0.01","0.02","0.03","0.04","0.06","0.08","0.13","0.19","0.28","0.42"],"tickvals":[-4.842913055511124,-4.481931229268992,-4.080840311222178,-3.6797493931753644,-3.278658475128551,-2.877567557081737,-2.4764766390349235,-2.07538572098811,-1.6742948029412963,-1.2732038848944827,-0.872112966847669],"values":{"dtype":"f8","bdata":"t8QXUMFkBMC2KpuZJF8TwIP15AhHbfm\u002fIqfMaDHVAcCY5+BzWejrv82EE4C5\u002fRHAl53TCt+r87+ykNwGxX0BwM2Po36kuwbAtiqbmSRfE8C2KpuZJF8TwLYqm5kkXxPA2T84bMpOE8DUngkBvlwTwLYqm5kkXxPAmfMZGbtNE8A="}},{"label":"\u03b1","ticktext":["NaN","0","0","0","0","1","2","5","11","24","54"],"tickvals":[-3.9772483789581226,-3.253498479969906,-2.449331925538554,-1.6451653711072027,-0.8409988166758513,-0.036832262244499425,0.7673342921868525,1.5715008466182034,2.3756674010495553,3.179833955480907,3.984000509912259],"values":{"dtype":"f8","bdata":"n40dmWfRD8DGKu0FTPgLQJ+NHZln0Q\u002fAsq6o9kGjD8Dp78ZQ2r8PwJ+NHZln0Q\u002fAn40dmWfRD8CfjR2ZZ9EPwJ+NHZln0Q\u002fAVpDKqDvfD0CCwLsXsBkGwAJpYJsK3wRA\u002fVNXe83P+z9qalnbIU8KwO8P7+LhLAZA+oOJUJWYC0A="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAADwPwAAAAAAAAAAEtGQmH8EZD+Kp+gCUuRqP6BGdlx73kQ\u002fHofobgm9YT+oj1VZEgxTP1mCGUYbLHI\u002fAAAAAAAA8D8AAAAAAADwP\u002fFNLM+01+8\u002fyJCgnyfg7z+yP5LrWuzvP8zQcEpR3u8\u002fLYo2yGLw7z8="}},{"label":"score time","ticktext":["0.071","0.080","0.088","0.097","0.106","0.115","0.123","0.132","0.141","0.149"],"tickvals":[0.07088117599487305,0.07961192660861545,0.08834267722235786,0.09707342783610026,0.10580417844984266,0.11453492906358508,0.12326567967732747,0.1319964302910699,0.1407271809048123,0.1494579315185547],"values":{"dtype":"f8","bdata":"1NjHPq3Gwj8Y6XG70CC7P\u002fETbiWQe8E\u002fn6D22l+ywT+DH9VrZ8nBPwAAAABwIcM\u002frfLw8Jehtz+zyck5XIC+P5G\u002f5FreD8M\u002fzDb8No1wtT\u002feU21wiNu3P8WAJirKKbM\u002fVX+v\u002fw0BuD\u002fNzMzMRCWyP7gwgAelqrc\u002f8Aiixualsz8="}},{"label":"fit time","ticktext":["0.14","0.25","0.36","0.47","0.57","0.68","0.79","0.90","1.00","1.11"],"tickvals":[0.14337096214294434,0.25080156326293945,0.3582321643829346,0.4656627655029296,0.5730933666229248,0.6805239677429199,0.7879545688629149,0.8953851699829101,1.0028157711029053,1.1102463722229003],"values":{"dtype":"f8","bdata":"MzMzs5HD8T9R7lF1IaHZP0VZUGmOfOs\u002flv0H8NO47j9D0LpWsJvoP+MjvTuUvek\u002fz9LAjnCE4D9gkaRAb0zoP6+paZZ+t+Q\u002fiyRwcgpNzD9jsqDj6q3IPwUipRw7hMM\u002fJHv5TztXzT\u002fNzMzM+lnCP76PJot5I8s\u002fxhK70kb5xj8="}},{"label":"score","ticktext":["0.47","0.50","0.54","0.58","0.61","0.65","0.68","0.72","0.75","0.79"],"tickvals":[0.46900000000000003,0.5046666666666667,0.5403333333333333,0.5760000000000001,0.6116666666666667,0.6473333333333333,0.683,0.7186666666666667,0.7543333333333333,0.79],"values":{"dtype":"f8","bdata":"SOF6FK5H6T8ehetRuB7pP3e+nxov3eg\u002fLbKd76fG5z86tMh2vp\u002fiP5LtfD81XuI\u002fQmDl0CLb4T9t5\u002fup8dLhP8L1KFyPwuE\u002fTmIQWDm04D8NAiuHFtnePw0CK4cW2d4\u002fvXSTGARW3j8Sg8DKoUXeP2u8dJMYBN4\u002fa7x0kxgE3j8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"SOF6FK5H6T8ehetRuB7pP3e+nxov3eg\u002fLbKd76fG5z86tMh2vp\u002fiP5LtfD81XuI\u002fQmDl0CLb4T9t5\u002fup8dLhP8L1KFyPwuE\u002fTmIQWDm04D8NAiuHFtnePw0CK4cW2d4\u002fvXSTGARW3j8Sg8DKoUXeP2u8dJMYBN4\u002fa7x0kxgE3j8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.4.0.min.js" integrity="sha256-KEmPoupLpFyGMyGAiOsiNDbKDKAvxXAn/W+oQa0ZAfk=" crossorigin="anonymous"></script>                <div id="658560f7-4f5d-4419-ba8d-e7b47a9d3107" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("658560f7-4f5d-4419-ba8d-e7b47a9d3107")) {                    Plotly.newPlot(                        "658560f7-4f5d-4419-ba8d-e7b47a9d3107",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"v50Dn\u002fwcGEAAAAAAAAAuQP572mIyFyZAvhHCGcz3H0D0sPQbPP4rQDeHBWN9DyxAAAAAAAAAFECBa\u002fZPSg0iQJgMrDni+yFAlROL3sv0LUC+YPOvEBcYQNiQ6Ng1GhhA0CfW8AUYJECEEAdcMxUgQEfbhy8YBihA3qL3JObyJ0A="}},{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAACAmpRXwbUfP9lVuGXRQnE\u002f+J11IyTYRj8AAAAAAADwP399FJ4E4O8\u002fAAAAAAAA8D8AAAAAAADwPwAAAAAAAPA\u002fyDF7aELY7z8AAAAAAADwP+5RE2iO9e8\u002fAAAAAAAA8D8AAAAAAADwP9cazQoE2u8\u002fmeICqfvk7z8="}},{"label":"lr","ticktext":["NaN","0.01","0.02","0.03","0.04","0.06","0.08","0.13","0.19","0.28","0.42"],"tickvals":[-4.842913055511124,-4.481931229268992,-4.080840311222178,-3.6797493931753644,-3.278658475128551,-2.877567557081737,-2.4764766390349235,-2.07538572098811,-1.6742948029412963,-1.2732038848944827,-0.872112966847669],"values":{"dtype":"f8","bdata":"tiqbmSRfE8BV9ZbmsXwEwLn5Sypahvm\u002f8O2iNKPOAcCY5+BzWejrvxs4Ouhy+BHAx5oncZjq87+vG1WSJoEBwI9IbeOUvAbAvNoKQj5aE8C2KpuZJF8TwLYqm5kkXxPAtiqbmSRfE8C2KpuZJF8TwLYqm5kkXxPAtiqbmSRfE8A="}},{"label":"\u03b1","ticktext":["NaN","0","0","0","0","1","2","5","11","24","54"],"tickvals":[-3.9772483789581226,-3.253498479969906,-2.449331925538554,-1.6451653711072027,-0.8409988166758513,-0.036832262244499425,0.7673342921868525,1.5715008466182034,2.3756674010495553,3.179833955480907,3.984000509912259],"values":{"dtype":"f8","bdata":"pCKcqUcCDECfjR2ZZ9EPwJ+NHZln0Q\u002fAn40dmWfRD8AGVzrrwogPwDZ9bwLaqQ\u002fArFqNeUGAD8BkIBWgNcsPwJ+NHZln0Q\u002fAVpDKqDvfD0CR+OyJs2wGwApOGAmQCwVAcYmCzZyK\u002fD9s9OcVc+8JwJQFtebENAZA2KrYaF6qC0A="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACHLRbDpa1xPwAAAAAAAAAA+r\u002fKOw3saz8YgnhXK2ZEPwAAAAAAAAAAAAAAAAAA8D\u002fj1QuKGePvPwAAAAAAAPA\u002fQdXxi4rc7z\u002f8MwK3APPvPwAAAAAAAPA\u002fAAAAAAAA8D8="}},{"label":"score time","ticktext":["0.07","0.08","0.10","0.11","0.12","0.13","0.15","0.16","0.17","0.19"],"tickvals":[0.07136530876159668,0.08403576215108235,0.09670621554056803,0.10937666893005371,0.12204712231953939,0.13471757570902507,0.14738802909851073,0.16005848248799642,0.17272893587748211,0.18539938926696778],"values":{"dtype":"f8","bdata":"VJbicfQswD9R8bb5y\u002ffFP83MzMwqu8c\u002fEEJQE74jwT\u002f54EC6KyPHPxacARJ5ucU\u002ffpZ9eXz4vz+Wh+72TWDBP1ImRW5gs8I\u002fL84\u002fGl8huT9Ch6n0t6W7P0y5vHXaHrQ\u002fwt6j0yumvD8zMzMz\u002f0SyP4aai9iLzLk\u002fhv6VIbIHuz8="}},{"label":"fit time","ticktext":["0.14","0.25","0.36","0.46","0.57","0.67","0.78","0.89","0.99","1.10"],"tickvals":[0.14337100982666015,0.2496926254696316,0.35601424111260305,0.46233585675557454,0.568657472398546,0.6749790880415175,0.7813007036844889,0.8876223193274604,0.9939439349704319,1.1002655506134034],"values":{"dtype":"f8","bdata":"JYe9NtKX3z9wmlwLFeHwP83MzAywmvE\u002fTyethjmq7T9xKOUOW8\u002fsP5sdv+4pTOk\u002ffvvIs9Zg5D8R55MQMWPmPw18nxMcXuM\u002fHar9mp1y0D9p0Y1+Br\u002fMP25SRUsP3Mk\u002feoaocjCs0z8zMzMz+1nCPy6FzS5crtA\u002faB77Tf3Pzz8="}},{"label":"score","ticktext":["0.47","0.50","0.54","0.58","0.61","0.65","0.68","0.72","0.76","0.79"],"tickvals":[0.46900000000000003,0.5047777777777778,0.5405555555555556,0.5763333333333334,0.6121111111111112,0.647888888888889,0.6836666666666666,0.7194444444444444,0.7552222222222222,0.791],"values":{"dtype":"f8","bdata":"HVpkO99P6T\u002fIdr6fGi\u002fpP\u002fhT46WbxOg\u002fAAAAAAAA6D86tMh2vp\u002fiP5LtfD81XuI\u002fQmDl0CLb4T9t5\u002fup8dLhP8L1KFyPwuE\u002fTmIQWDm04D8NAiuHFtnePw0CK4cW2d4\u002fvXSTGARW3j8Sg8DKoUXeP2u8dJMYBN4\u002fa7x0kxgE3j8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"HVpkO99P6T\u002fIdr6fGi\u002fpP\u002fhT46WbxOg\u002fAAAAAAAA6D86tMh2vp\u002fiP5LtfD81XuI\u002fQmDl0CLb4T9t5\u002fup8dLhP8L1KFyPwuE\u002fTmIQWDm04D8NAiuHFtnePw0CK4cW2d4\u002fvXSTGARW3j8Sg8DKoUXeP2u8dJMYBN4\u002fa7x0kxgE3j8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -28337,9 +28337,9 @@ inter-dependent. Find more information in the :ref:`user guide
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 39.173 seconds)
+   **Total running time of the script:** (0 minutes 42.721 seconds)
 
-**Estimated memory usage:**  590 MB
+**Estimated memory usage:**  559 MB
 
 
 .. _sphx_glr_download_auto_examples_data_ops_1130_choices.py:
