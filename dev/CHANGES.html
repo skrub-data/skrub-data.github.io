@@ -599,6 +599,10 @@ display the <a class="reference internal" href="reference/generated/skrub.DataOp
 <li><p>The row indices of training and testing samples are now also included in the
 dictionaries produced by <a class="reference internal" href="reference/generated/skrub.DataOp.skb.iter_cv_splits.html#skrub.DataOp.skb.iter_cv_splits" title="skrub.DataOp.skb.iter_cv_splits"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.iter_cv_splits()</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2012">#2012</a> by
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p>Added a <code class="docutils literal notranslate"><span class="pre">metric</span></code> parameter to <a class="reference internal" href="reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a> to configure
+the nearest-neighbor distance used for matching. The metric can be any value
+supported by <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.NearestNeighbors.html#sklearn.neighbors.NearestNeighbors" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">NearestNeighbors</span></code></a> (see its docstring).
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1861">#1861</a> by <a class="reference external" href="https://github.com/sabasiddique1">Saba Siddique</a>.</p></li>
 </ul>
 </section>
 <section id="bugfixes">
