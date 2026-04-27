@@ -40,6 +40,7 @@ Contains method to select columns in a dataframe. See the :ref:`selectors <user_
   selectors.filter_names
   selectors.float
   selectors.glob
+  selectors.has_dtype
   selectors.has_nulls
   selectors.integer
   selectors.inv

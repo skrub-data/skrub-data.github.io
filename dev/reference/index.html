@@ -589,6 +589,7 @@
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.selectors.float.html">float</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.selectors.glob.html">glob</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.selectors.has_dtype.html">has_dtype</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.selectors.has_nulls.html">has_nulls</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.selectors.integer.html">integer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.selectors.inv.html">inv</a></li>
@@ -914,28 +915,31 @@ classes and functions may not be enough to give full guidelines on their use.</p
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.glob.html#skrub.selectors.glob" title="skrub.selectors.glob"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.glob</span></code></a></p></td>
 <td><p>Select columns by name with Unix shell style 'glob' pattern.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.has_nulls.html#skrub.selectors.has_nulls" title="skrub.selectors.has_nulls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.has_nulls</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.has_dtype.html#skrub.selectors.has_dtype" title="skrub.selectors.has_dtype"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.has_dtype</span></code></a></p></td>
+<td><p>Select columns whose dtype is equal to one of the provided dtypes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.has_nulls.html#skrub.selectors.has_nulls" title="skrub.selectors.has_nulls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.has_nulls</span></code></a></p></td>
 <td><p>Select columns that contain at least one null value, or a proportion of null     values above a given threshold.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.integer.html#skrub.selectors.integer" title="skrub.selectors.integer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.integer</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.integer.html#skrub.selectors.integer" title="skrub.selectors.integer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.integer</span></code></a></p></td>
 <td><p>Select columns that have an integer data type.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.inv.html#skrub.selectors.inv" title="skrub.selectors.inv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.inv</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.inv.html#skrub.selectors.inv" title="skrub.selectors.inv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.inv</span></code></a></p></td>
 <td><p>Invert a selector.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.make_selector.html#skrub.selectors.make_selector" title="skrub.selectors.make_selector"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.make_selector</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.make_selector.html#skrub.selectors.make_selector" title="skrub.selectors.make_selector"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.make_selector</span></code></a></p></td>
 <td><p>Transform a selector, column name or list of column names into a selector.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.numeric.html#skrub.selectors.numeric" title="skrub.selectors.numeric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.numeric</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.numeric.html#skrub.selectors.numeric" title="skrub.selectors.numeric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.numeric</span></code></a></p></td>
 <td><p>Select columns that have a numeric data type.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.regex.html#skrub.selectors.regex" title="skrub.selectors.regex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.regex</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.regex.html#skrub.selectors.regex" title="skrub.selectors.regex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.regex</span></code></a></p></td>
 <td><p>Select columns by name with a regular expression.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.select.html#skrub.selectors.select" title="skrub.selectors.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.select</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.select.html#skrub.selectors.select" title="skrub.selectors.select"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.select</span></code></a></p></td>
 <td><p>Apply a selector to a dataframe and return a dataframe with the selected     columns.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.selectors.string.html#skrub.selectors.string" title="skrub.selectors.string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.string</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.selectors.string.html#skrub.selectors.string" title="skrub.selectors.string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectors.string</span></code></a></p></td>
 <td><p>Select columns that have a String data type.</p></td>
 </tr>
 </tbody>

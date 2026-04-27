@@ -249,6 +249,9 @@ Selectors
   selectors.glob
 
 
+  selectors.has_dtype
+
+
   selectors.has_nulls
 
 
