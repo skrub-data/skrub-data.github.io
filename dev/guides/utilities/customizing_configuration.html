@@ -617,7 +617,7 @@ has an environment variable that can be used to set it permanently.</p>
 <p>Additionally, a <a class="reference internal" href="../../reference/generated/skrub.config_context.html#skrub.config_context" title="skrub.config_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">config_context()</span></code></a> is provided to allow temporarily altering the
 configuration:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">skrub</span><span class="o">.</span><span class="n">config_context</span><span class="p">(</span><span class="n">max_plot_columns</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">skrub</span><span class="o">.</span><span class="n">config_context</span><span class="p">(</span><span class="n">table_report_plots_threshold</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">pass</span>
 </pre></div>
 </div>
@@ -630,7 +630,7 @@ are available by using</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">config</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">get_config</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">config</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
-<span class="go">dict_keys([&#39;use_table_report_data_ops&#39;, &#39;table_report_verbosity&#39;, &#39;max_plot_columns&#39;, &#39;max_association_columns&#39;, &#39;subsampling_seed&#39;, &#39;enable_subsampling&#39;, &#39;float_precision&#39;, &#39;cardinality_threshold&#39;, &#39;data_dir&#39;, &#39;eager_data_ops&#39;, &#39;data_ops_open_graph_dropdown&#39;])</span>
+<span class="go">dict_keys([&#39;use_table_report_data_ops&#39;, &#39;table_report_plots_threshold&#39;, &#39;table_report_associations_threshold&#39;, &#39;table_report_verbosity&#39;, &#39;subsampling_seed&#39;, &#39;enable_subsampling&#39;, &#39;float_precision&#39;, &#39;cardinality_threshold&#39;, &#39;data_dir&#39;, &#39;eager_data_ops&#39;, &#39;data_ops_open_graph_dropdown&#39;])</span>
 </pre></div>
 </div>
 <p>These are the parameters currently available in the global configuration:</p>
@@ -660,15 +660,15 @@ are available by using</p>
 <td><p><code class="docutils literal notranslate"><span class="pre">SKB_TABLE_REPORT_VERBOSITY</span></code></p></td>
 <td><p>Set the verbosity of the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>. If <code class="docutils literal notranslate"><span class="pre">1</span></code>, print on screen the progress by column, if <code class="docutils literal notranslate"><span class="pre">0</span></code> print nothing.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">max_plot_columns</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">table_report_plots_threshold</span></code></p></td>
 <td><p>30</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">SKB_MAX_PLOT_COLUMNS</span></code></p></td>
-<td><p>If a dataframe has more columns than the value set here, the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> will skip generating the plots.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SKB_TABLE_REPORT_PLOTS_THRESHOLD</span></code></p></td>
+<td><p>If a dataframe has more columns than the value set here, the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> will skip generating the distribution plots (when <code class="docutils literal notranslate"><span class="pre">plot_distributions=&quot;auto&quot;</span></code>, the default).</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">max_association_columns</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">table_report_associations_threshold</span></code></p></td>
 <td><p>30</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">SKB_MAX_ASSOCIATION_COLUMNS</span></code></p></td>
-<td><p>If a dataframe has more columns than the value set here, the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> will skip computing the associations.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SKB_TABLE_REPORT_ASSOCIATIONS_THRESHOLD</span></code></p></td>
+<td><p>If a dataframe has more columns than the value set here, the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> will skip computing the associations (when <code class="docutils literal notranslate"><span class="pre">compute_associations=&quot;auto&quot;</span></code>, the default).</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">subsampling_seed</span></code></p></td>
 <td><p>0</p></td>

@@ -596,6 +596,13 @@ display the <a class="reference internal" href="reference/generated/skrub.DataOp
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> now accepts <code class="docutils literal notranslate"><span class="pre">plot_distributions</span></code> and
+<code class="docutils literal notranslate"><span class="pre">compute_associations</span></code> parameters (<code class="docutils literal notranslate"><span class="pre">True</span></code>, <code class="docutils literal notranslate"><span class="pre">False</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;auto&quot;</span></code>)
+to explicitly control whether distribution plots and pairwise associations
+are computed. The threshold parameters controlling the maximum number of
+columns for which these are computed have been renamed to
+<code class="docutils literal notranslate"><span class="pre">plots_threshold</span></code> and <code class="docutils literal notranslate"><span class="pre">associations_threshold</span></code> for clarity.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1907">#1907</a> by <a class="reference external" href="https://github.com/JulietteBgl">JulietteBgl</a>.</p></li>
 <li><p>The row indices of training and testing samples are now also included in the
 dictionaries produced by <a class="reference internal" href="reference/generated/skrub.DataOp.skb.iter_cv_splits.html#skrub.DataOp.skb.iter_cv_splits" title="skrub.DataOp.skb.iter_cv_splits"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.iter_cv_splits()</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2012">#2012</a> by
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
