@@ -681,10 +681,6 @@ this behavior by setting the <code class="docutils literal notranslate"><span cl
 removed. This behavior is controlled by the <code class="docutils literal notranslate"><span class="pre">drop_if_constant</span></code> parameter, which
 is set to <code class="docutils literal notranslate"><span class="pre">False</span></code> by default. Note that missing values are treated as distinct
 values, so constant columns with missing values will not be dropped.</p></li>
-<li><p><strong>Dropping unique string/categorical columns</strong>: Columns where each row has a
-unique value (e.g., alphanumeric IDs) can be dropped. This is controlled by the
-<code class="docutils literal notranslate"><span class="pre">drop_if_unique</span></code> parameter, which is <code class="docutils literal notranslate"><span class="pre">False</span></code> by default. Be cautious when
-enabling this option, as it may remove columns containing free-flowing text.</p></li>
 </ul>
 <p><a class="reference internal" href="../../reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a> is used by both <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a>, and both
 accept the same parameters for dropping columns.</p>
@@ -741,57 +737,29 @@ columns when the proportion of missing values exceeds a specified threshold.</p>
 <span class="gp">... </span><span class="p">})</span>
 </pre></div>
 </div>
-<p>We can drop columns with more than 50% missing values:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cleaner</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">DropUninformative</span><span class="p">(</span><span class="n">drop_null_fraction</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaned_df</span> <span class="o">=</span> <span class="n">cleaner</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaned_df</span>
-<span class="go">   patient_id   age treatment</span>
-<span class="go">0           1  25.0     med_A</span>
-<span class="go">1           2  30.0     med_B</span>
-<span class="go">2           3   ...     med_C</span>
-<span class="go">3           4  45.0     med_D</span>
-<span class="go">4           5  50.0     med_E</span>
-<span class="go">5           6   ...     med_F</span>
-<span class="go">6           7  60.0     med_G</span>
-<span class="go">7           8  65.0     med_H</span>
-</pre></div>
-</div>
 </section>
 <section id="applying-dropuninformative-only-to-a-subset-of-columns">
 <h1>Applying <a class="reference internal" href="../../reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a> only to a subset of columns<a class="headerlink" href="#applying-dropuninformative-only-to-a-subset-of-columns" title="Link to this heading">#</a></h1>
+<p>We can apply the <a class="reference internal" href="../../reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a> transformer to specific columns using
+<a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> and the skrub selectors. In this case, we want to drop columns with
+more than 50% missing values, but only if they have <code class="docutils literal notranslate"><span class="pre">string</span></code> type:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub.selectors</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">s</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaner</span> <span class="o">=</span> <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">DropUninformative</span><span class="p">(</span><span class="n">drop_null_fraction</span><span class="o">=</span><span class="mf">0.5</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaned_df</span> <span class="o">=</span> <span class="n">cleaner</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaned_df</span>
+<span class="go">   patient_id   age  blood_pressure treatment</span>
+<span class="go">0           1  25.0           120.0     med_A</span>
+<span class="go">1           2  30.0             NaN     med_B</span>
+<span class="go">2           3   NaN             NaN     med_C</span>
+<span class="go">3           4  45.0             NaN     med_D</span>
+<span class="go">4           5  50.0           140.0     med_E</span>
+<span class="go">5           6   NaN             NaN     med_F</span>
+<span class="go">6           7  60.0             NaN     med_G</span>
+<span class="go">7           8  65.0           150.0     med_H</span>
+</pre></div>
+</div>
 <p>You can apply the <a class="reference internal" href="../../reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a> transformer to specific columns using
-<a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToCols</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-<span class="gp">... </span><span class="s2">&quot;id_to_drop&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A1&quot;</span><span class="p">,</span> <span class="s2">&quot;A2&quot;</span><span class="p">,</span> <span class="s2">&quot;A3&quot;</span><span class="p">],</span>
-<span class="gp">... </span><span class="s2">&quot;text_to_keep&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="p">]</span>
-<span class="gp">... </span><span class="p">})</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
-<span class="go">  id_to_drop text_to_keep</span>
-<span class="go">0         A1          foo</span>
-<span class="go">1         A2          bar</span>
-<span class="go">2         A3          baz</span>
-</pre></div>
-</div>
-<p>Dropping unique columns in this dataframe results in an empty dataframe:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cleaner</span> <span class="o">=</span> <span class="n">Cleaner</span><span class="p">(</span><span class="n">drop_if_unique</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaner</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">Empty DataFrame</span>
-<span class="go">Columns: []</span>
-<span class="go">Index: [0, 1, 2]</span>
-</pre></div>
-</div>
-<p>To apply the transformer only to the <code class="docutils literal notranslate"><span class="pre">id_to_drop</span></code> column, use <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">cleaner</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="s2">&quot;id_to_drop&quot;</span><span class="p">)</span>
-<span class="go">ApplyToCols(cols=&#39;id_to_drop&#39;, transformer=Cleaner(drop_if_unique=True))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">cleaner</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="s2">&quot;id_to_drop&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">  text_to_keep</span>
-<span class="go">0          foo</span>
-<span class="go">1          bar</span>
-<span class="go">2          baz</span>
-</pre></div>
-</div>
-<p>For more advanced filtering operations, refer to the User Guide on
+For more advanced filtering operations, refer to the User Guide on
 <a class="reference internal" href="selectors.html#user-guide-selectors"><span class="std std-ref">Skrub Selectors, for selecting columns in a dataframe</span></a> and the <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> documentation for details
 on applying transformers to specific columns.</p>
 </section>
