@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.find
+=====================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.find
