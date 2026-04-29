@@ -735,12 +735,13 @@ fails as soon as a malformed column is encountered:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ZipcodeParser</span><span class="p">())</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">ValueError</span>: <span class="n">Transformer ZipcodeParser.fit_transform failed on column &#39;received&#39;. ...</span>
+<span class="gr">skrub.core.RejectColumn</span>: <span class="n">This transformer only takes zip codes of length 5.</span>
+<span class="x">Transformer ZipcodeParser.fit_transform failed on column &#39;received&#39;. See above for the full traceback.</span>
+<span class="x">Letting rejected columns through can be useful for situations in which we do not</span>
+<span class="x">know the content of a column in advance, like when we are trying to convert to</span>
+<span class="x">datetime columns in a dataframe, without knowing which ones actually contain dates.</span>
 </pre></div>
 </div>
-<p>Letting rejected columns through can be useful for situations in which we do not
-know the content of a column in advance, like when we are trying to convert to
-datetime columns in a dataframe, without knowing which ones actually contain dates.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToDatetime</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">birthday</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;29/01/2024&quot;</span><span class="p">],</span> <span class="n">city</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;London&quot;</span><span class="p">]))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>

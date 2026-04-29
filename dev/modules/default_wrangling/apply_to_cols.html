@@ -776,7 +776,8 @@ to be errors:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">ValueError</span>: <span class="n">Transformer ToDatetime.fit_transform failed on column &#39;city&#39;. See above for the full traceback.</span>
+<span class="gr">skrub.core.RejectColumn</span>: <span class="n">Could not find a datetime format for column &#39;city&#39;.</span>
+<span class="x">Transformer ToDatetime.fit_transform failed on column &#39;city&#39;. See above for the full traceback.</span>
 </pre></div>
 </div>
 <p>However, setting <code class="docutils literal notranslate"><span class="pre">allow_reject=True</span></code> gives the transformer itself some
