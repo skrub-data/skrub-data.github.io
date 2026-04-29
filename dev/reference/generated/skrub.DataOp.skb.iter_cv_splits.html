@@ -758,7 +758,7 @@
 <h1>skrub.DataOp.skb.iter_cv_splits<a class="headerlink" href="#skrub-dataop-skb-iter-cv-splits" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.iter_cv_splits">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">iter_cv_splits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3dbd07e/skrub/_data_ops/_skrub_namespace.py#L1908"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.iter_cv_splits" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">iter_cv_splits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/02148cc/skrub/_data_ops/_skrub_namespace.py#L1967"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.iter_cv_splits" title="Link to this definition">#</a></dt>
 <dd><p>Yield splits of an environment into training and testing environments.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -783,14 +783,16 @@ int to specify the number of folds for KFold splitting.</p>
 <ul class="simple">
 <li><p>train: a dictionary containing the training environment</p></li>
 <li><p>test: a dictionary containing the test environment</p></li>
-<li><p>X_train: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_X()</span></code> in
-the train environment</p></li>
-<li><p>X_test: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_X()</span></code> in
-the test environment</p></li>
-<li><p>y_train: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_y()</span></code> in
+<li><p>X_train: the value of the variable marked with
+<a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-func docutils literal notranslate"><span class="pre">mark_as_X()</span></code></a> in the train environment</p></li>
+<li><p>X_test: the value of the variable marked with
+<a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-func docutils literal notranslate"><span class="pre">mark_as_X()</span></code></a> in the test environment</p></li>
+<li><p>y_train: the value of the variable marked with
+<a class="reference internal" href="skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-func docutils literal notranslate"><span class="pre">mark_as_y()</span></code></a> in
 the train environment, if there is one (may not be the case for
 unsupervised learning).</p></li>
-<li><p>y_test: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_y()</span></code> in
+<li><p>y_test: the value of the variable marked with
+<a class="reference internal" href="skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-func docutils literal notranslate"><span class="pre">mark_as_y()</span></code></a> in
 the test environment, if there is one (may not be the case for
 unsupervised learning).</p></li>
 <li><p>row_indices_train: the row indices (in X and y) of the training samples.</p></li>

@@ -758,14 +758,14 @@
 <h1>skrub.DataOp.skb.get_vars<a class="headerlink" href="#skrub-dataop-skb-get-vars" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.get_vars">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">get_vars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_named_ops</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3dbd07e/skrub/_data_ops/_skrub_namespace.py#L1240"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.get_vars" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">get_vars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_named_ops</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/02148cc/skrub/_data_ops/_skrub_namespace.py#L1242"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.get_vars" title="Link to this definition">#</a></dt>
 <dd><p>Get all the variables used in the DataOp.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>all_named_ops</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default = <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">False</span></code></a></span></dt><dd><p>If False, return only actual variables (DataOps created with
-<a class="reference internal" href="skrub.var.html#skrub.var" title="skrub.var"><code class="xref py py-func docutils literal notranslate"><span class="pre">var()</span></code></a>, <a class="reference internal" href="skrub.X.html#skrub.X" title="skrub.X"><code class="xref py py-func docutils literal notranslate"><span class="pre">X()</span></code></a> or <a class="reference internal" href="skrub.y.html#skrub.y" title="skrub.y"><code class="xref py py-func docutils literal notranslate"><span class="pre">y()</span></code></a>). If False, return all
-nodes that have a name (ie for which a value can be passed in the
+<dt><strong>all_named_ops</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default = <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">False</span></code></a></span></dt><dd><p>If <code class="docutils literal notranslate"><span class="pre">False</span></code>, return only actual variables (DataOps created with
+<a class="reference internal" href="skrub.var.html#skrub.var" title="skrub.var"><code class="xref py py-func docutils literal notranslate"><span class="pre">var()</span></code></a>, <a class="reference internal" href="skrub.X.html#skrub.X" title="skrub.X"><code class="xref py py-func docutils literal notranslate"><span class="pre">X()</span></code></a> or <a class="reference internal" href="skrub.y.html#skrub.y" title="skrub.y"><code class="xref py py-func docutils literal notranslate"><span class="pre">y()</span></code></a>). If <code class="docutils literal notranslate"><span class="pre">True</span></code>, return all
+nodes that have a name (i.e., for which a value can be passed in the
 environment).</p>
 </dd>
 </dl>
@@ -777,34 +777,49 @@ environment).</p>
 </dl>
 </dd>
 </dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.DataOp.skb.get_data.html#skrub.DataOp.skb.get_data" title="skrub.DataOp.skb.get_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.get_data</span></code></a></dt><dd><p>Get the values of the variables contained in the DataOp.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.DataOp.skb.set_name.html#skrub.DataOp.skb.set_name" title="skrub.DataOp.skb.set_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataOp.skb.set_name</span></code></a></dt><dd><p>Assign a name to a DataOp.</p>
+</dd>
+</dl>
+</div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">set_name</span><span class="p">(</span><span class="s2">&quot;c&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="n">c</span>
+</pre></div>
+</div>
+<p>We assign a name to a DataOp that is not a variable with
+<a class="reference internal" href="skrub.DataOp.skb.set_name.html#skrub.DataOp.skb.set_name" title="skrub.DataOp.skb.set_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_name()</span></code></a>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">set_name</span><span class="p">(</span><span class="s2">&quot;c&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="n">c</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">d</span>
 <span class="go">&lt;BinOp: add&gt;</span>
 </pre></div>
 </div>
-<p>Our DataOp, <cite>d</cite>, contains 2 variables: “a” and “b”:</p>
+<p>Our DataOp, <code class="docutils literal notranslate"><span class="pre">d</span></code>, contains 2 variables: “a” and “b”:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_vars</span><span class="p">()</span>
 <span class="go">{&#39;a&#39;: &lt;Var &#39;a&#39;&gt;, &#39;b&#39;: &lt;Var &#39;b&#39;&gt;}</span>
 </pre></div>
 </div>
 <p>Those are the keys for which we need to provide values in the
-environment when evaluating <cite>d</cite>:</p>
+environment when evaluating <code class="docutils literal notranslate"><span class="pre">d</span></code>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span> <span class="c1"># (10 + 3) + (10 + 3) = 26</span>
 <span class="go">26</span>
 </pre></div>
 </div>
-<p>In addition, we set a name on the internal node <cite>c</cite>. It is not a
-variable, and normally it is computed as <cite>(a + b)</cite>. But as it has a
-name, we can override its output by passing a value for “c” in the
-environment. When we do, the computation of <cite>c</cite> never happens (nor of
-<cite>a</cite> or <cite>b</cite>, here, because they are only used to compute <cite>c</cite>) – it is
+<p>In addition, we set a name on the internal node <code class="docutils literal notranslate"><span class="pre">c</span></code>. It is not a
+variable, and normally it is computed as <code class="docutils literal notranslate"><span class="pre">(a</span> <span class="pre">+</span> <span class="pre">b)</span></code>. But as it has a
+name, we can override its output by passing a value for <code class="docutils literal notranslate"><span class="pre">c</span></code> in the
+environment. When we do, the computation of <code class="docutils literal notranslate"><span class="pre">c</span></code> never happens (nor of
+<code class="docutils literal notranslate"><span class="pre">a</span></code> or <code class="docutils literal notranslate"><span class="pre">b</span></code>, here, because they are only used to compute <code class="docutils literal notranslate"><span class="pre">c</span></code>) – it is
 bypassed and the provided value is used instead.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">})</span> <span class="c1"># 7 + 7 = 14</span>
 <span class="go">14</span>

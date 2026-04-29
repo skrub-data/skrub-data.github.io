@@ -758,7 +758,7 @@
 <h1>RejectColumn<a class="headerlink" href="#rejectcolumn" title="Link to this heading">#</a></h1>
 <dl class="py exception">
 <dt class="sig sig-object py" id="skrub.core.RejectColumn">
-<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.core.</span></span><span class="sig-name descname"><span class="pre">RejectColumn</span></span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3dbd07e/skrub/core.py#L"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.core.RejectColumn" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.core.</span></span><span class="sig-name descname"><span class="pre">RejectColumn</span></span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/02148cc/skrub/core.py#L"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.core.RejectColumn" title="Link to this definition">#</a></dt>
 <dd><p>Used by single-column transformers to indicate they do not apply to a column.</p>
 <p class="rubric">Examples</p>
 <p>A <a class="reference internal" href="skrub.core.SingleColumnTransformer.html#skrub.core.SingleColumnTransformer" title="skrub.core.SingleColumnTransformer"><code class="xref py py-class docutils literal notranslate"><span class="pre">SingleColumnTransformer</span></code></a> can raise <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> exceptions
@@ -785,11 +785,11 @@ to indicate it cannot handle a given column.</p>
 <p><code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> exceptions can be used to indicate that a column cannot be
 handled by the current transformer: this may mean that the data is invalid,
 or that the transformer is simply not designed to handle that type of data.
-For example, a <code class="docutils literal notranslate"><span class="pre">ToDatetime</span></code> transformer might raise <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code> when it is
-passed a column that does not contain strings, or that contains strings but none
-of them look like dates.</p>
-<p><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code> relies on these exceptions to decide whether a column should be
-transformed or passed through unchanged.</p>
+For example, a <code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code> transformer might raise <code class="docutils literal notranslate"><span class="pre">RejectColumn</span></code>
+when  it is passed a column that does not contain strings, or that contains
+strings but none of them look like dates.</p>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code> relies on these exceptions to decide whether a column
+should be transformed or passed through unchanged.</p>
 <p>How these rejections are handled depends on the <code class="docutils literal notranslate"><span class="pre">allow_reject</span></code> parameter.
 By default, no special handling is performed and rejections are considered
 to be errors:</p>

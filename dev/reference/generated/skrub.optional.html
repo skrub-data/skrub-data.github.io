@@ -758,8 +758,15 @@
 <h1>optional<a class="headerlink" href="#optional" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.optional">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">optional</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3dbd07e/skrub/_data_ops/_choosing.py#L456"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.optional" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">optional</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/02148cc/skrub/_data_ops/_choosing.py#L459"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.optional" title="Link to this definition">#</a></dt>
 <dd><p>A choice between <code class="docutils literal notranslate"><span class="pre">value</span></code> and <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<p>Typically, <code class="docutils literal notranslate"><span class="pre">value</span></code> is an estimator and this choice is passed to
+<a class="reference internal" href="skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.apply()</span></code></a>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">optional</span></code> allows to build a branch in the search space where the <code class="docutils literal notranslate"><span class="pre">value</span></code>
+is a component of the pipeline
+(e.g., a dimensionality reduction step, a feature selection step, etc) which may
+be present or not. When the component is not present, it is represented by <code class="docutils literal notranslate"><span class="pre">None</span></code>.
+This is equivalent to <code class="docutils literal notranslate"><span class="pre">skrub.choose_from([value,</span> <span class="pre">None],</span> <span class="pre">name=name)</span></code>.</p>
 <p>When a learner is fitted <em>without hyperparameter tuning</em>, the outcome of
 this choice is <code class="docutils literal notranslate"><span class="pre">value</span></code>. Pass <code class="docutils literal notranslate"><span class="pre">default=None</span></code> to make <code class="docutils literal notranslate"><span class="pre">None</span></code> the
 default outcome.</p>
@@ -817,6 +824,38 @@ hyperparameter tuning</em>, the default outcome is the provided <code class="doc
 <span class="go">None</span>
 </pre></div>
 </div>
+<p>In practice, <code class="docutils literal notranslate"><span class="pre">optional</span></code> is used with <a class="reference internal" href="skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-func docutils literal notranslate"><span class="pre">DataOp.skb.apply()</span></code></a> to make the
+application of a transformer optional.
+For example, if we want to make the application of PCA optional, we can do:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">toy_products</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.decomposition</span><span class="w"> </span><span class="kn">import</span> <span class="n">PCA</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">products</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;products&quot;</span><span class="p">,</span> <span class="n">toy_products</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vectorized</span> <span class="o">=</span> <span class="n">products</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">TableVectorizer</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reduced</span> <span class="o">=</span> <span class="n">vectorized</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">optional</span><span class="p">(</span><span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;pca&quot;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">reduced</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_param_grid</span><span class="p">())</span>
+<span class="go">- pca: [PCA(n_components=2), None]</span>
+</pre></div>
+</div>
+<p>If we perform a hyperparameter search (for example with
+<a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html#skrub.DataOp.skb.make_grid_search" title="skrub.DataOp.skb.make_grid_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_grid_search()</span></code></a>), both pipelines (with and without a PCA)
+will be considered and the one giving the best predictions will be selected.
+See also
+——–
+choose_bool :</p>
+<blockquote>
+<div><p>Construct a choice between False and True.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>choose_float :</dt><dd><p>Construct a choice of floating-point numbers from a numeric range.</p>
+</dd>
+<dt>choose_from :</dt><dd><p>Construct a choice among several possible outcomes.</p>
+</dd>
+<dt>choose_int :</dt><dd><p>Construct a choice of integers from a numeric range.</p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>

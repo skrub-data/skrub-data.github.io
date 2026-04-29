@@ -758,7 +758,7 @@
 <h1>skrub.DataOp.skb.train_test_split<a class="headerlink" href="#skrub-dataop-skb-train-test-split" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.train_test_split">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">train_test_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">split_func_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3dbd07e/skrub/_data_ops/_skrub_namespace.py#L1814"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.train_test_split" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">train_test_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">environment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_subsampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">split_func_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/02148cc/skrub/_data_ops/_skrub_namespace.py#L1829"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.train_test_split" title="Link to this definition">#</a></dt>
 <dd><p>Split an environment into training and testing environments.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -785,14 +785,16 @@ a tuple, it returns a dictionary with the following keys:</p>
 <ul class="simple">
 <li><p>train: a dictionary containing the training environment</p></li>
 <li><p>test: a dictionary containing the test environment</p></li>
-<li><p>X_train: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_X()</span></code> in
-the train environment</p></li>
-<li><p>X_test: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_X()</span></code> in
-the test environment</p></li>
-<li><p>y_train: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_y()</span></code> in
+<li><p>X_train: the value of the variable marked with
+<a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-func docutils literal notranslate"><span class="pre">mark_as_X()</span></code></a> in the train environment</p></li>
+<li><p>X_test: the value of the variable marked with
+<a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-func docutils literal notranslate"><span class="pre">mark_as_X()</span></code></a> in the test environment</p></li>
+<li><p>y_train: the value of the variable marked with
+<a class="reference internal" href="skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-func docutils literal notranslate"><span class="pre">mark_as_y()</span></code></a> in
 the train environment, if there is one (may not be the case for
 unsupervised learning).</p></li>
-<li><p>y_test: the value of the variable marked with <code class="docutils literal notranslate"><span class="pre">skb.mark_as_y()</span></code> in
+<li><p>y_test: the value of the variable marked with
+<a class="reference internal" href="skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-func docutils literal notranslate"><span class="pre">mark_as_y()</span></code></a> in
 the test environment, if there is one (may not be the case for
 unsupervised learning).</p></li>
 </ul>
@@ -800,21 +802,39 @@ unsupervised learning).</p></li>
 </dl>
 </dd>
 </dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-func docutils literal notranslate"><span class="pre">mark_as_X()</span></code></a></dt><dd><p>Mark a variable as the input features (X) for training and testing. This function can also take a custom splitter.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.DataOp.skb.cross_validate.html#skrub.DataOp.skb.cross_validate" title="skrub.DataOp.skb.cross_validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">cross_validate()</span></code></a></dt><dd><p>Perform cross-validation on a DataOp.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">make_randomized_search()</span></code></a></dt><dd><p>Perform hyperparameter tuning driven by cross-validation scores.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html#skrub.DataOp.skb.make_grid_search" title="skrub.DataOp.skb.make_grid_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">make_grid_search()</span></code></a></dt><dd><p>Perform hyperparameter tuning driven by cross-validation scores.</p>
+</dd>
+</dl>
+</div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.dummy</span><span class="w"> </span><span class="kn">import</span> <span class="n">DummyClassifier</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;orders&quot;</span><span class="p">,</span> <span class="n">skrub</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">toy_orders</span><span class="p">()</span><span class="o">.</span><span class="n">orders</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;orders&quot;</span><span class="p">,</span> <span class="n">skrub</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">toy_orders</span><span class="p">()</span><span class="o">.</span><span class="n">orders</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;delayed&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">()</span>
+<p>We want to predict whether orders are “delayed”:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;delayed&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">orders</span><span class="p">[</span><span class="s2">&quot;delayed&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">delayed</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">TableVectorizer</span><span class="p">())</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="n">DummyClassifier</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span>
 <span class="gp">... </span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">delayed</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<p>We can split the data into a training and test set with
+<code class="docutils literal notranslate"><span class="pre">.skb.train_test_split()</span></code>. It it also possible to specify parameters
+for the splitting function, such as the random state, or the size of the
+test set. These parameters are passed as keyword arguments to
+<code class="docutils literal notranslate"><span class="pre">train_test_split</span></code>, which then passes them to the splitting function.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">delayed</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
 <span class="go">dict_keys([&#39;train&#39;, &#39;test&#39;, &#39;X_train&#39;, &#39;X_test&#39;, &#39;y_train&#39;, &#39;y_test&#39;])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="n">delayed</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
@@ -822,9 +842,31 @@ unsupervised learning).</p></li>
 <span class="go">SkrubLearner(data_op=&lt;Apply DummyClassifier&gt;)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">])</span>
 <span class="go">0.0</span>
+</pre></div>
+</div>
+<p>The test split can then be used to evaluate the learner with any metric,
+for example accuracy:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">accuracy_score</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">predictions</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;y_test&quot;</span><span class="p">],</span> <span class="n">predictions</span><span class="p">)</span>
 <span class="go">0.0</span>
+</pre></div>
+</div>
+<p>If <a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-func docutils literal notranslate"><span class="pre">mark_as_X()</span></code></a> was defined to use a specific
+splitting function, the splitter will be used by <code class="docutils literal notranslate"><span class="pre">train_test_split</span></code>.</p>
+<p>Note that if a <code class="docutils literal notranslate"><span class="pre">cv</span></code> is passed to <code class="docutils literal notranslate"><span class="pre">train_test_split</span></code>, the splitter
+defined in <code class="docutils literal notranslate"><span class="pre">mark_as_X</span></code> is ignored, and the one passed to <code class="docutils literal notranslate"><span class="pre">train_test_split</span></code>
+is used instead.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">LeaveOneOut</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;delayed&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">(</span><span class="n">cv</span><span class="o">=</span><span class="n">LeaveOneOut</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">orders</span><span class="p">[</span><span class="s2">&quot;delayed&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">delayed</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">TableVectorizer</span><span class="p">())</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">DummyClassifier</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">delayed</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;y_test&quot;</span><span class="p">]</span>
+<span class="go">0    False</span>
+<span class="go">Name: delayed, dtype: bool</span>
 </pre></div>
 </div>
 </dd></dl>
