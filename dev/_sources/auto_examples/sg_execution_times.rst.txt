@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**09:08.056** total execution time for 10 files **from auto_examples**:
+**10:39.454** total execution time for 10 files **from auto_examples**:
 
 .. container::
 
@@ -32,33 +32,33 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_auto_examples_0020_text_with_string_encoders.py` (``0020_text_with_string_encoders.py``)
-     - 03:16.659
-     - 1354.4
    * - :ref:`sphx_glr_auto_examples_0070_join_aggregation.py` (``0070_join_aggregation.py``)
-     - 02:13.401
-     - 704.5
+     - 04:09.833
+     - 893.0
+   * - :ref:`sphx_glr_auto_examples_0020_text_with_string_encoders.py` (``0020_text_with_string_encoders.py``)
+     - 03:01.198
+     - 1334.7
    * - :ref:`sphx_glr_auto_examples_0010_encodings.py` (``0010_encodings.py``)
-     - 00:54.396
-     - 564.2
+     - 00:48.654
+     - 561.2
    * - :ref:`sphx_glr_auto_examples_0060_multiple_key_join.py` (``0060_multiple_key_join.py``)
-     - 00:42.056
-     - 3045.9
+     - 00:39.374
+     - 3023.4
    * - :ref:`sphx_glr_auto_examples_0080_interpolation_join.py` (``0080_interpolation_join.py``)
-     - 00:37.839
-     - 2721.6
+     - 00:39.216
+     - 2698.3
    * - :ref:`sphx_glr_auto_examples_0040_fuzzy_joining.py` (``0040_fuzzy_joining.py``)
-     - 00:29.547
-     - 564.4
+     - 00:27.469
+     - 561.5
    * - :ref:`sphx_glr_auto_examples_0100_squashing_scaler.py` (``0100_squashing_scaler.py``)
-     - 00:25.126
-     - 564.8
+     - 00:25.258
+     - 561.5
    * - :ref:`sphx_glr_auto_examples_0090_apply_to_cols.py` (``0090_apply_to_cols.py``)
-     - 00:14.287
-     - 564.1
+     - 00:14.843
+     - 561.1
    * - :ref:`sphx_glr_auto_examples_0030_datetime_encoder.py` (``0030_datetime_encoder.py``)
-     - 00:10.821
-     - 568.2
+     - 00:09.970
+     - 568.3
    * - :ref:`sphx_glr_auto_examples_0050_deduplication.py` (``0050_deduplication.py``)
-     - 00:03.923
-     - 565.0
+     - 00:03.640
+     - 561.6

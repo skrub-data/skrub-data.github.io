@@ -612,6 +612,8 @@ columns for which these are computed have been renamed to
 <li><p>The row indices of training and testing samples are now also included in the
 dictionaries produced by <a class="reference internal" href="reference/generated/skrub.DataOp.skb.iter_cv_splits.html#skrub.DataOp.skb.iter_cv_splits" title="skrub.DataOp.skb.iter_cv_splits"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.iter_cv_splits()</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2012">#2012</a> by
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_toxicity_dataset()</span></code> now returns a shuffled version of the dataset by default.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1892">#1892</a> by user:<cite>Riccardo Cappuzzo &lt;rcap107&gt;</cite>.</p></li>
 <li><p>Added a <code class="docutils literal notranslate"><span class="pre">metric</span></code> parameter to <a class="reference internal" href="reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Joiner</span></code></a> to configure
 the nearest-neighbor distance used for matching. The metric can be any value
 supported by <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.NearestNeighbors.html#sklearn.neighbors.NearestNeighbors" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">NearestNeighbors</span></code></a> (see its docstring).
@@ -740,10 +742,6 @@ a <code class="docutils literal notranslate"><span class="pre">TypeError</span><
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1819">#1819</a> by <a class="reference external" href="https://github.com/emassoulie">Eloi Massoulié</a></p></li>
 <li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">compute_ngram_distance()</span></code> has been renamed to <code class="xref py py-func docutils literal notranslate"><span class="pre">_compute_ngram_distance()</span></code> and is now a private function.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1838">#1838</a> by <a class="reference external" href="https://github.com/siddharthbaleja">Siddharth Baleja</a>.</p></li>
-<li><p>The repository wheel has been made smaller by removing some material that was
-not necessary for using the library. Benchmarks are now available in a separate
-<a class="reference external" href="https://github.com/skrub-data/skrub-benchmarks">repository</a>.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1893">#1893</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 </ul>
 </section>
 <section id="id5">
