@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/guides/utilities/fetching_datasets.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="skrub includes a number of datasets used for running examples. Each dataset can be downloaded using its fetch_* function, provided in the skrub.datasets namespace: Datasets are stored as Bunch obje..." />
+<meta property="og:description" content="Skrub includes a number of datasets used for running examples. Each dataset can be downloaded using its fetch_* function, provided in the skrub.datasets namespace: Datasets are stored as Bunch obje..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="skrub includes a number of datasets used for running examples. Each dataset can be downloaded using its fetch_* function, provided in the skrub.datasets namespace: Datasets are stored as Bunch obje..." />
+<meta name="description" content="Skrub includes a number of datasets used for running examples. Each dataset can be downloaded using its fetch_* function, provided in the skrub.datasets namespace: Datasets are stored as Bunch obje..." />
 
     <title>Working with the example datasets provided by skrub &#8212; skrub</title>
   
@@ -181,7 +181,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../../howto.html">
-    How-to’s
+    How-tos
   </a>
 </li>
 
@@ -391,7 +391,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../../howto.html">
-    How-to’s
+    How-tos
   </a>
 </li>
 
@@ -539,7 +539,7 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../table_report/alter_appearance.html">How to tweak the Appearance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../table_report/exporting.html">How to export and share the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../table_report/finding_correlated_columns.html">Finding Correlated Columns in a DataFrame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../table_report/finding_correlated_columns.html">How to find correlated columns in a datarame</a></li>
 <li class="toctree-l1"><a class="reference internal" href="customizing_configuration.html">How to configure and customize the default behavior of skrub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deduplicate_categorical_data.html">How to deduplicate categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Working with the example datasets provided by skrub</a></li>
@@ -584,7 +584,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../../howto.html" class="nav-link">How-to’s</a></li>
+    <li class="breadcrumb-item"><a href="../../howto.html" class="nav-link">How-tos</a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Working with the example datasets provided by skrub</span></li>
   </ul>
@@ -605,7 +605,7 @@
                   
   <section id="working-with-the-example-datasets-provided-by-skrub">
 <h1>Working with the example datasets provided by skrub<a class="headerlink" href="#working-with-the-example-datasets-provided-by-skrub" title="Link to this heading">#</a></h1>
-<p>skrub includes a number of datasets used for running examples. Each dataset
+<p>Skrub includes a number of datasets used for running examples. Each dataset
 can be downloaded using its <code class="docutils literal notranslate"><span class="pre">fetch_*</span></code> function, provided in the <code class="docutils literal notranslate"><span class="pre">skrub.datasets</span></code>
 namespace:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_employee_salaries</span>
@@ -613,16 +613,27 @@ namespace:</p>
 </pre></div>
 </div>
 <p>Datasets are stored as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.utils.Bunch.html#sklearn.utils.Bunch" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Bunch</span></code></a> objects, which include a path
-to each table in the dataset, and each table loaded as <code class="docutils literal notranslate"><span class="pre">pd.DataFrame</span></code>. Some
-datasets include an <code class="docutils literal notranslate"><span class="pre">X</span></code> feature matrix, and a <code class="docutils literal notranslate"><span class="pre">y</span></code> target column with type
-<code class="docutils literal notranslate"><span class="pre">pd.DataFrame</span></code>.</p>
+to each table in the dataset. Datasets should be loaded using the path:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Some datasets include multiple tables: in this case, <code class="docutils literal notranslate"><span class="pre">path</span></code> isn’t available and
+instead each table should be loaded with its own path:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_credit_fraud</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">fetch_employee_salaries</span><span class="p">()</span>
+<span class="n">baskets</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">baskets_path</span><span class="p">)</span>
+<span class="n">products</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">products_path</span><span class="p">)</span>
+</pre></div>
+</div>
 <section id="modifying-the-download-location-of-skrub-datasets">
 <h2>Modifying the download location of <code class="docutils literal notranslate"><span class="pre">skrub</span></code> datasets<a class="headerlink" href="#modifying-the-download-location-of-skrub-datasets" title="Link to this heading">#</a></h2>
 <p>By default, datasets are stored in <code class="docutils literal notranslate"><span class="pre">~/skrub_data</span></code>, where <code class="docutils literal notranslate"><span class="pre">~</span></code> is expanded as
-the (OS dependent) home directory of the user. The function <code class="docutils literal notranslate"><span class="pre">get_data_dir</span></code> shows
+the (OS dependent) home directory of the user. The function
+<a class="reference internal" href="../../reference/generated/skrub.datasets.get_data_dir.html#skrub.datasets.get_data_dir" title="skrub.datasets.get_data_dir"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_data_dir()</span></code></a> shows
 the location that <code class="docutils literal notranslate"><span class="pre">skrub</span></code> uses to store data.</p>
 <p>If needed, it is possible to change this location by modifying the environment
-variable <code class="docutils literal notranslate"><span class="pre">SKRUB_DATA_DIRECTORY</span></code> to an <strong>absolute directory path</strong>.</p>
+variable <code class="docutils literal notranslate"><span class="pre">SKB_DATA_DIRECTORY</span></code> to an <strong>absolute directory path</strong>.</p>
 <p>See <a class="reference internal" href="customizing_configuration.html#user-guide-configuration-parameters"><span class="std std-ref">How to configure and customize the default behavior of skrub</span></a> for more info on the global skrub
 configuration.</p>
 </section>

@@ -75,7 +75,7 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Finding Correlated Columns in a DataFrame" href="finding_correlated_columns.html" />
+    <link rel="next" title="How to find correlated columns in a datarame" href="finding_correlated_columns.html" />
     <link rel="prev" title="How to tweak the Appearance of the TableReport" href="alter_appearance.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -181,7 +181,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../../howto.html">
-    How-to’s
+    How-tos
   </a>
 </li>
 
@@ -391,7 +391,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../../howto.html">
-    How-to’s
+    How-tos
   </a>
 </li>
 
@@ -539,7 +539,7 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="alter_appearance.html">How to tweak the Appearance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">How to export and share the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="finding_correlated_columns.html">Finding Correlated Columns in a DataFrame</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding_correlated_columns.html">How to find correlated columns in a datarame</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utilities/customizing_configuration.html">How to configure and customize the default behavior of skrub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utilities/deduplicate_categorical_data.html">How to deduplicate categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utilities/fetching_datasets.html">Working with the example datasets provided by skrub</a></li>
@@ -584,7 +584,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../../howto.html" class="nav-link">How-to’s</a></li>
+    <li class="breadcrumb-item"><a href="../../howto.html" class="nav-link">How-tos</a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">How to export and share the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></span></li>
   </ul>
@@ -615,7 +615,7 @@ by a script, the report will need to be opened by calling <code class="docutils 
 </div>
 <p>Note that calling <code class="docutils literal notranslate"><span class="pre">.open()</span></code> will start a standalone process that hosts the report,
 and a tab will be opened in the default browser. It is not possible to save the
-report from the webpage. The function <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport.write_html" title="skrub.TableReport.write_html"><code class="xref py py-func docutils literal notranslate"><span class="pre">write_html()</span></code></a>
+report from the webpage. The function <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport.write_html" title="skrub.TableReport.write_html"><code class="xref py py-func docutils literal notranslate"><span class="pre">write_html()</span></code></a> should
 be used for that:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tr</span> <span class="o">=</span> <span class="n">TableReport</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="n">tr</span><span class="o">.</span><span class="n">write_html</span><span class="p">(</span><span class="s2">&quot;my_report.html&quot;</span><span class="p">)</span>
@@ -628,6 +628,13 @@ respectively.</p>
 access to the data and statistics used to build the report with
 <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport.json" title="skrub.TableReport.json"><code class="xref py py-func docutils literal notranslate"><span class="pre">json()</span></code></a>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tr</span> <span class="o">=</span> <span class="n">TableReport</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">json_data</span> <span class="o">=</span> <span class="n">tr</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Note that this will export all parts of the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>, including the distribution
+plots in SVG format if they have been generated. If you do not need them, plots should be
+disabled directly when generating the table report.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tr</span> <span class="o">=</span> <span class="n">TableReport</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">plot_distributions</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">json_data</span> <span class="o">=</span> <span class="n">tr</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -657,7 +664,7 @@ access to the data and statistics used to build the report with
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Finding Correlated Columns in a DataFrame</p>
+        <p class="prev-next-title">How to find correlated columns in a datarame</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

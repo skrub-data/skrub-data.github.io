@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Finding Correlated Columns in a DataFrame" />
+<meta property="og:title" content="How to find correlated columns in a datarame" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/guides/table_report/finding_correlated_columns.html" />
 <meta property="og:site_name" content="skrub" />
@@ -16,7 +16,7 @@
 <meta property="og:image:alt" content="skrub" />
 <meta name="description" content="In addition to TableReport ’s Associations tab, you can compute associations using the column_associations() function, which returns a dataframe containing the associations. Reported metrics includ..." />
 
-    <title>Finding Correlated Columns in a DataFrame &#8212; skrub</title>
+    <title>How to find correlated columns in a datarame &#8212; skrub</title>
   
   
   
@@ -181,7 +181,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../../howto.html">
-    How-to’s
+    How-tos
   </a>
 </li>
 
@@ -391,7 +391,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../../howto.html">
-    How-to’s
+    How-tos
   </a>
 </li>
 
@@ -539,7 +539,7 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="alter_appearance.html">How to tweak the Appearance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="exporting.html">How to export and share the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Finding Correlated Columns in a DataFrame</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">How to find correlated columns in a datarame</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utilities/customizing_configuration.html">How to configure and customize the default behavior of skrub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utilities/deduplicate_categorical_data.html">How to deduplicate categorical data with <code class="xref py py-func docutils literal notranslate"><span class="pre">deduplicate()</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utilities/fetching_datasets.html">Working with the example datasets provided by skrub</a></li>
@@ -584,9 +584,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../../howto.html" class="nav-link">How-to’s</a></li>
+    <li class="breadcrumb-item"><a href="../../howto.html" class="nav-link">How-tos</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Finding Correlated Columns in a DataFrame</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">How to find correlated columns in a datarame</span></li>
   </ul>
 </nav>
 </div>
@@ -603,8 +603,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="finding-correlated-columns-in-a-dataframe">
-<span id="user-guide-table-report-associations"></span><h1>Finding Correlated Columns in a DataFrame<a class="headerlink" href="#finding-correlated-columns-in-a-dataframe" title="Link to this heading">#</a></h1>
+  <section id="how-to-find-correlated-columns-in-a-datarame">
+<span id="user-guide-table-report-associations"></span><h1>How to find correlated columns in a datarame<a class="headerlink" href="#how-to-find-correlated-columns-in-a-datarame" title="Link to this heading">#</a></h1>
 <p>In addition to <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>’s <strong>Associations</strong> tab, you can compute associations
 using the <a class="reference internal" href="../../reference/generated/skrub.column_associations.html#skrub.column_associations" title="skrub.column_associations"><code class="xref py py-func docutils literal notranslate"><span class="pre">column_associations()</span></code></a> function, which returns a dataframe containing the
 associations.</p>
@@ -615,6 +615,21 @@ left and right table and both associations; results are sorted in descending ord
 by Cramer’s V association.</p>
 <p>This can be useful to have access to the information used in the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>
 for later use (e.g., to select which columns to drop).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">column_associations</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">skrub.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_employee_salaries</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="n">path</span> <span class="o">=</span> <span class="n">fetch_employee_salaries</span><span class="p">()</span><span class="o">.</span><span class="n">path</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+<span class="n">column_associations</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+
+      <span class="n">left_column_name</span>  <span class="n">left_column_idx</span>        <span class="n">right_column_name</span>  <span class="n">right_column_idx</span>  <span class="n">cramer_v</span>  <span class="n">pearson_corr</span>
+<span class="mi">0</span>           <span class="n">department</span>                <span class="mi">1</span>          <span class="n">department_name</span>                 <span class="mi">2</span>  <span class="mf">1.000000</span>           <span class="n">NaN</span>
+<span class="mi">1</span>  <span class="n">assignment_category</span>                <span class="mi">4</span>    <span class="n">current_annual_salary</span>                 <span class="mi">8</span>  <span class="mf">0.635525</span>           <span class="n">NaN</span>
+<span class="mi">2</span>             <span class="n">division</span>                <span class="mi">3</span>      <span class="n">assignment_category</span>                 <span class="mi">4</span>  <span class="mf">0.601097</span>           <span class="n">NaN</span>
+<span class="mi">3</span>  <span class="n">assignment_category</span>                <span class="mi">4</span>  <span class="n">employee_position_title</span>                 <span class="mi">5</span>  <span class="mf">0.496814</span>           <span class="n">NaN</span>
+<span class="mi">4</span>             <span class="n">division</span>                <span class="mi">3</span>  <span class="n">employee_position_title</span>                 <span class="mi">5</span>  <span class="mf">0.416034</span>           <span class="n">NaN</span>
+</pre></div>
+</div>
 </section>
 
 
