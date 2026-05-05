@@ -308,7 +308,7 @@ cross-validation folds.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 29.315 seconds)
+   **Total running time of the script:** (0 minutes 26.359 seconds)
 
 **Estimated memory usage:**  567 MB
 
