@@ -772,16 +772,14 @@
 <span class="go">&lt;AppliedEstimator&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
-<span class="go">ApplyToSubFrame(transformer=TableVectorizer())</span>
+<span class="go">ApplyToCols(transformer=TableVectorizer())</span>
 </pre></div>
 </div>
 <p>Note that in order to restrict transformers to a subset of columns,
-they will be wrapped in a meta-estimator <code class="docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code> or
-<code class="docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code> depending if the transformer is applied to each column
-separately or not. The actual transformer can be retrieved through the
-<code class="docutils literal notranslate"><span class="pre">transformer_</span></code> attribute of <code class="docutils literal notranslate"><span class="pre">ApplyToSubFrame</span></code> or <code class="docutils literal notranslate"><span class="pre">transformers_</span></code>
-attribute of <code class="docutils literal notranslate"><span class="pre">ApplyToEachCol</span></code> (a dictionary mapping column names to the
-corresponding transformer).</p>
+they will be wrapped in a meta-estimator <a class="reference internal" href="skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>. The
+actual transformer can be retrieved through the <code class="docutils literal notranslate"><span class="pre">transformer_</span></code> (or
+<code class="docutils literal notranslate"><span class="pre">transformers_</span></code>, in the case of single-column transformers); see the
+documentation of <a class="reference internal" href="skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> for details.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fitted_vectorizer</span><span class="o">.</span><span class="n">transformer_</span>
 <span class="go">&lt;GetAttr &#39;transformer_&#39;&gt;</span>
 <span class="go">Result:</span>
@@ -807,8 +805,8 @@ corresponding transformer).</p>
 <span class="go">&lt;AppliedEstimator&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
-<span class="go">ApplyToEachCol(cols=(string() - cols(&#39;date&#39;)),</span>
-<span class="go">             transformer=StringEncoder(n_components=2))</span>
+<span class="go">ApplyToCols(cols=(string() - cols(&#39;date&#39;)),</span>
+<span class="go">            transformer=StringEncoder(n_components=2))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fitted_vectorizer</span><span class="o">.</span><span class="n">transformers_</span>
 <span class="go">&lt;GetAttr &#39;transformers_&#39;&gt;</span>
 <span class="go">Result:</span>
