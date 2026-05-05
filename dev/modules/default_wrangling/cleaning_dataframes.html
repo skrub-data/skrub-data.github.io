@@ -680,17 +680,10 @@ parsing datetimes and numbers.</p>
 with a null value suitable for the column under consideration.</p></li>
 <li><p><a class="reference internal" href="../../reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a>: Drop the column if it is considered “uninformative.”
 A column is considered “uninformative” if it contains only missing values
-(<code class="docutils literal notranslate"><span class="pre">drop_null_fraction</span></code>), only a constant value (<code class="docutils literal notranslate"><span class="pre">drop_if_constant</span></code>), or if all
-values are distinct (<code class="docutils literal notranslate"><span class="pre">drop_if_unique</span></code>). By default, the <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> keeps all columns
+(<code class="docutils literal notranslate"><span class="pre">drop_null_fraction</span></code>), or only a constant value (<code class="docutils literal notranslate"><span class="pre">drop_if_constant</span></code>).
+By default, the <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> keeps all columns
 unless they contain only missing values. Refer to <a class="reference internal" href="../multi_column_operations/drop_uninformative.html#user-guide-drop-uninformative"><span class="std std-ref">Removing unneeded columns with DropUninformative and Cleaner</span></a>
 for more detail on this operation.</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Setting <code class="docutils literal notranslate"><span class="pre">drop_if_unique</span></code> to <code class="docutils literal notranslate"><span class="pre">True</span></code> may lead to dropping columns
-that contain text or IDs. Numeric columns are never dropped by <code class="docutils literal notranslate"><span class="pre">drop_if_unique</span></code>.</p>
-</div>
-<ul class="simple">
 <li><p><a class="reference internal" href="../../reference/generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a>: Parse datetimes represented as strings and return them as
 actual datetimes with the correct dtype. If <code class="docutils literal notranslate"><span class="pre">datetime_format</span></code> is provided,
 it is forwarded to <a class="reference internal" href="../../reference/generated/skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a>. Otherwise, the format is guessed according
@@ -699,10 +692,10 @@ to common datetime formats.</p></li>
 dtype, such as numeric, categorical, or datetime.</p></li>
 </ul>
 </details>
-<p>If <code class="docutils literal notranslate"><span class="pre">numeric_dtype</span></code> is set to <code class="docutils literal notranslate"><span class="pre">float32</span></code>, the <code class="docutils literal notranslate"><span class="pre">Cleaner</span></code> will also convert
-numeric columns to <code class="docutils literal notranslate"><span class="pre">np.float32</span></code> dtype, ensuring a consistent representation
-of numbers and missing values. This can be useful if the <code class="docutils literal notranslate"><span class="pre">Cleaner</span></code>
-is used as a preprocessing step at the beginning of an ML pipeline.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">parse_numbers</span></code> is set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, the <code class="docutils literal notranslate"><span class="pre">Cleaner</span></code> will parse
+string columns that contain only numbers and convert them to <code class="docutils literal notranslate"><span class="pre">float32</span></code>.
+If <code class="docutils literal notranslate"><span class="pre">cast_to_float32=True</span></code>, the <code class="docutils literal notranslate"><span class="pre">Cleaner</span></code> will also convert numeric columns
+(e.g. <code class="docutils literal notranslate"><span class="pre">float64</span></code>, <code class="docutils literal notranslate"><span class="pre">int64</span></code>) to <code class="docutils literal notranslate"><span class="pre">float32</span></code>.</p>
 <p>The <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> is a scikit-learn compatible transformer:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">Cleaner</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -725,32 +718,57 @@ is used as a preprocessing step at the beginning of an ML pipeline.</p>
 </div>
 <p>Note that the <code class="docutils literal notranslate"><span class="pre">&quot;all_missing&quot;</span></code> column has been dropped, and that the <code class="docutils literal notranslate"><span class="pre">&quot;date&quot;</span></code>
 column has been correctly parsed as a datetime column.</p>
-<section id="converting-numeric-dtypes-to-float32-with-the-cleaner">
-<h2>Converting numeric dtypes to <code class="docutils literal notranslate"><span class="pre">float32</span></code> with the <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a><a class="headerlink" href="#converting-numeric-dtypes-to-float32-with-the-cleaner" title="Link to this heading">#</a></h2>
-<p>By default, when the <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> encounters numeric dtypes (e.g., <code class="docutils literal notranslate"><span class="pre">int8</span></code>,
-<code class="docutils literal notranslate"><span class="pre">float64</span></code>), it leaves them as-is. In some cases, it may be beneficial to have
-the same numeric dtype for all numeric columns to guarantee compatibility between
-values.</p>
-<p>The <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> allows conversion of numeric features to <code class="docutils literal notranslate"><span class="pre">float32</span></code> by setting
-the <code class="docutils literal notranslate"><span class="pre">numeric_dtype</span></code> parameter:</p>
+<section id="parsing-numeric-looking-strings-with-the-cleaner">
+<h2>Parsing numeric-looking strings with the <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a><a class="headerlink" href="#parsing-numeric-looking-strings-with-the-cleaner" title="Link to this heading">#</a></h2>
+<p>By default, when the <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> encounters a string series that contains only
+numeric-looking values (for example <code class="docutils literal notranslate"><span class="pre">[&quot;1&quot;,</span> <span class="pre">&quot;2&quot;,</span> <span class="pre">&quot;3&quot;]</span></code>), it leaves it
+unchanged.</p>
+<p>The <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> can parse those values by setting <code class="docutils literal notranslate"><span class="pre">parse_numbers=True</span></code>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">Cleaner</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaner</span> <span class="o">=</span> <span class="n">Cleaner</span><span class="p">(</span><span class="n">numeric_dtype</span><span class="o">=</span><span class="s2">&quot;float32&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaner</span> <span class="o">=</span> <span class="n">Cleaner</span><span class="p">(</span><span class="n">parse_numbers</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<span class="gp">... </span>    <span class="s2">&quot;id_as_str&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;3&quot;</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
 <span class="gp">... </span><span class="p">})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
-<span class="go">id    int64</span>
+<span class="go">id_as_str    ...</span>
+<span class="go">id           int64</span>
 <span class="go">dtype: ...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df_cleaned</span> <span class="o">=</span> <span class="n">cleaner</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df_cleaned</span><span class="o">.</span><span class="n">dtypes</span>
-<span class="go">id    float32</span>
+<span class="go">id_as_str    float32</span>
+<span class="go">id           int64</span>
 <span class="go">dtype: ...</span>
 </pre></div>
 </div>
-<p>Setting the dtype to <code class="docutils literal notranslate"><span class="pre">float32</span></code> reduces RAM footprint for most use cases and
-ensures that all missing values have the same representation. This also ensures
-compatibility with scikit-learn transformers.</p>
+<p>Parsed string values are converted to <code class="docutils literal notranslate"><span class="pre">float32</span></code> (not to <code class="docutils literal notranslate"><span class="pre">int64</span></code> or
+<code class="docutils literal notranslate"><span class="pre">float64</span></code>), to keep a consistent numeric representation that is compatible
+with downstream scikit-learn transformers.</p>
+<p>When <code class="docutils literal notranslate"><span class="pre">parse_numbers=False</span></code> (default), both columns keep their original dtypes.</p>
+</section>
+<section id="downcasting-float-dtypes-to-float32-with-the-cleaner">
+<h2>Downcasting float dtypes to <code class="docutils literal notranslate"><span class="pre">float32</span></code> with the <a class="reference internal" href="../../reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a><a class="headerlink" href="#downcasting-float-dtypes-to-float32-with-the-cleaner" title="Link to this heading">#</a></h2>
+<p>By default, floating-point columns (e.g. <code class="docutils literal notranslate"><span class="pre">float64</span></code>) keep their original dtype.
+To downcast numeric columns to <code class="docutils literal notranslate"><span class="pre">float32</span></code>, set
+<code class="docutils literal notranslate"><span class="pre">cast_to_float32=True</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">Cleaner</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaner</span> <span class="o">=</span> <span class="n">Cleaner</span><span class="p">(</span><span class="n">cast_to_float32</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<span class="gp">... </span>    <span class="s2">&quot;f64&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s2">&quot;i64&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+<span class="gp">... </span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
+<span class="go">f64    float64</span>
+<span class="go">i64      int64</span>
+<span class="go">dtype: ...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cleaner</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">dtypes</span>
+<span class="go">f64    float32</span>
+<span class="go">i64    float32</span>
+<span class="go">dtype: ...</span>
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -801,7 +819,8 @@ compatibility with scikit-learn transformers.</p>
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-numeric-dtypes-to-float32-with-the-cleaner">Converting numeric dtypes to <code class="docutils literal notranslate"><span class="pre">float32</span></code> with the <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parsing-numeric-looking-strings-with-the-cleaner">Parsing numeric-looking strings with the <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#downcasting-float-dtypes-to-float32-with-the-cleaner">Downcasting float dtypes to <code class="docutils literal notranslate"><span class="pre">float32</span></code> with the <code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a></li>
 </ul>
   </nav></div>
 
