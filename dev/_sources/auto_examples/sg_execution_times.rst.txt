@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**09:15.694** total execution time for 10 files **from auto_examples**:
+**12:46.891** total execution time for 10 files **from auto_examples**:
 
 .. container::
 
@@ -32,33 +32,33 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_auto_examples_0020_text_with_string_encoders.py` (``0020_text_with_string_encoders.py``)
-     - 03:05.375
-     - 1354.3
    * - :ref:`sphx_glr_auto_examples_0070_join_aggregation.py` (``0070_join_aggregation.py``)
-     - 02:51.463
-     - 896.3
-   * - :ref:`sphx_glr_auto_examples_0010_encodings.py` (``0010_encodings.py``)
-     - 00:48.353
-     - 588.1
+     - 04:33.216
+     - 723.2
+   * - :ref:`sphx_glr_auto_examples_0020_text_with_string_encoders.py` (``0020_text_with_string_encoders.py``)
+     - 03:54.602
+     - 1437.5
    * - :ref:`sphx_glr_auto_examples_0060_multiple_key_join.py` (``0060_multiple_key_join.py``)
-     - 00:38.760
+     - 01:03.893
      - 3039.5
+   * - :ref:`sphx_glr_auto_examples_0010_encodings.py` (``0010_encodings.py``)
+     - 00:49.925
+     - 561.3
    * - :ref:`sphx_glr_auto_examples_0080_interpolation_join.py` (``0080_interpolation_join.py``)
-     - 00:34.555
-     - 2712.2
+     - 00:42.955
+     - 2607.8
    * - :ref:`sphx_glr_auto_examples_0040_fuzzy_joining.py` (``0040_fuzzy_joining.py``)
-     - 00:27.932
-     - 588.4
+     - 00:36.904
+     - 561.5
    * - :ref:`sphx_glr_auto_examples_0100_squashing_scaler.py` (``0100_squashing_scaler.py``)
-     - 00:22.688
-     - 588.4
+     - 00:29.487
+     - 561.5
    * - :ref:`sphx_glr_auto_examples_0090_apply_to_cols.py` (``0090_apply_to_cols.py``)
-     - 00:12.846
-     - 588.1
+     - 00:17.267
+     - 561.2
    * - :ref:`sphx_glr_auto_examples_0030_datetime_encoder.py` (``0030_datetime_encoder.py``)
-     - 00:10.113
-     - 595.4
+     - 00:13.643
+     - 568.5
    * - :ref:`sphx_glr_auto_examples_0050_deduplication.py` (``0050_deduplication.py``)
-     - 00:03.609
-     - 588.5
+     - 00:04.998
+     - 561.5
