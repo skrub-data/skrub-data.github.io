@@ -614,8 +614,8 @@ dictionaries produced by <a class="reference internal" href="reference/generated
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>The <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> now exposes a <code class="docutils literal notranslate"><span class="pre">parse_numbers</span></code> boolean parameter to
 control whether numeric-looking strings (e.g., <code class="docutils literal notranslate"><span class="pre">[&quot;1&quot;,</span> <span class="pre">&quot;2&quot;,</span> <span class="pre">&quot;3&quot;]</span></code>) are parsed
-to <code class="docutils literal notranslate"><span class="pre">np.float32</span></code>, and a <code class="docutils literal notranslate"><span class="pre">cast_to_float</span></code> parameter to downcast numeric
-columns to <code class="docutils literal notranslate"><span class="pre">np.float32</span></code>.
+to <code class="docutils literal notranslate"><span class="pre">float32</span></code>, and a <code class="docutils literal notranslate"><span class="pre">cast_to_float</span></code> parameter to downcast numeric
+columns to <code class="docutils literal notranslate"><span class="pre">float32</span></code>.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1910">#1910</a> by <a class="reference external" href="https://github.com/&lt;Varshith-yadaV&gt;">&#64;&lt;Varshith-yadaV&gt;</a>.</p></li>
 <li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">fetch_toxicity_dataset()</span></code> now returns a shuffled version of the dataset by default.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1892">#1892</a> by user:<cite>Riccardo Cappuzzo &lt;rcap107&gt;</cite>.</p></li>
@@ -627,8 +627,8 @@ supported by <a class="reference external" href="https://scikit-learn.org/stable
 possible to transform the columns selected by <code class="docutils literal notranslate"><span class="pre">cols</span></code> except for an
 explicit subset, mirroring <a class="reference internal" href="reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.apply()</span></code></a>.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2039">#2039</a> by <a class="reference external" href="https://github.com/sabasiddique1">Saba Siddique</a>.</p></li>
-<li><p><a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> now produces better error tracebacks when the wrapped
-transformer fails, in python versions &gt;= 3.11. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1979">#1979</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme
+<li><p>In python versions &gt;= 3.11, <a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> now produces better error
+tracebacks when the wrapped transformer fails, . <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1979">#1979</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme
 Dockès</a>.</p></li>
 <li><p>The parameter <code class="docutils literal notranslate"><span class="pre">how</span></code> of <a class="reference internal" href="reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.apply()</span></code></a> is replaced by a simpler
 Boolean parameter <code class="docutils literal notranslate"><span class="pre">no_wrap</span></code>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2049">#2049</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
@@ -646,6 +646,9 @@ Boolean parameter <code class="docutils literal notranslate"><span class="pre">n
 favor of <code class="docutils literal notranslate"><span class="pre">cast_to_float</span></code> in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1910">#1910</a>.</p></li>
 <li><p>The parameter <code class="docutils literal notranslate"><span class="pre">drop_if_unique</span></code> of <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> and <a class="reference internal" href="reference/generated/skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropUninformative</span></code></a>
 has been deprecated. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2040">#2040</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p>The parameters <code class="docutils literal notranslate"><span class="pre">max_plot_columns</span></code> and <code class="docutils literal notranslate"><span class="pre">max_association_columns</span></code> of the
+<a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> have been deprecated in favor of <code class="docutils literal notranslate"><span class="pre">plot_distributions</span></code>
+and <code class="docutils literal notranslate"><span class="pre">compute_associations</span></code>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1907">#1907</a>.</p></li>
 </ul>
 </section>
 </section>
