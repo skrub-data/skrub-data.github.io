@@ -1,0 +1,10 @@
+﻿tabular\_pipeline
+=================
+
+.. currentmodule:: skrub
+
+.. autofunction:: tabular_pipeline
+
+.. minigallery:: skrub.tabular_pipeline
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,0 +1,10 @@
+﻿cross\_validate
+===============
+
+.. currentmodule:: skrub
+
+.. autofunction:: cross_validate
+
+.. minigallery:: skrub.cross_validate
+   :add-heading: Gallery examples
+   :heading-level: -

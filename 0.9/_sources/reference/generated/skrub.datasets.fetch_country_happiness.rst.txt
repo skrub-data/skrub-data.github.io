@@ -1,0 +1,10 @@
+﻿fetch\_country\_happiness
+=========================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_country_happiness
+
+.. minigallery:: skrub.datasets.fetch_country_happiness
+   :add-heading: Gallery examples
+   :heading-level: -

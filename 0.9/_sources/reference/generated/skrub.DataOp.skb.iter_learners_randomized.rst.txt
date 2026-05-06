@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.iter_learners_randomized
+=========================================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.iter_learners_randomized

@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.select
+=======================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.select

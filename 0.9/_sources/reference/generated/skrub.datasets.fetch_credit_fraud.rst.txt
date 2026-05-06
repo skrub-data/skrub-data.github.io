@@ -1,0 +1,10 @@
+﻿fetch\_credit\_fraud
+====================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_credit_fraud
+
+.. minigallery:: skrub.datasets.fetch_credit_fraud
+   :add-heading: Gallery examples
+   :heading-level: -

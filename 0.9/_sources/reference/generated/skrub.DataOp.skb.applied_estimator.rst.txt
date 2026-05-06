@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.applied_estimator
+==================================
+
+.. currentmodule:: skrub
+
+.. autoaccessorattribute:: DataOp.skb.applied_estimator

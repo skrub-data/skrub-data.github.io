@@ -1,0 +1,10 @@
+﻿fetch\_flight\_delays
+=====================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_flight_delays
+
+.. minigallery:: skrub.datasets.fetch_flight_delays
+   :add-heading: Gallery examples
+   :heading-level: -

@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.name
+=====================
+
+.. currentmodule:: skrub
+
+.. autoaccessorattribute:: DataOp.skb.name

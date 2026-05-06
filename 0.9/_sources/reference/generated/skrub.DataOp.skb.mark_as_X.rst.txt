@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.mark_as_X
+==========================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.mark_as_X

@@ -1,0 +1,10 @@
+﻿cols
+====
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: cols
+
+.. minigallery:: skrub.selectors.cols
+   :add-heading: Gallery examples
+   :heading-level: -
