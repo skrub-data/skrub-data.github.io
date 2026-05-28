@@ -121,30 +121,30 @@ The ``skb`` accessor exposes all DataOps methods and attributes.
   DataOp.skb.draw_graph
   DataOp.skb.drop
   DataOp.skb.eval
+  DataOp.skb.find
+  DataOp.skb.find_X_y
   DataOp.skb.freeze_after_fit
   DataOp.skb.full_report
   DataOp.skb.get_data
-  DataOp.skb.set_data
   DataOp.skb.get_vars
-  DataOp.skb.make_learner
-  DataOp.skb.make_grid_search
-  DataOp.skb.make_randomized_search
   DataOp.skb.if_else
   DataOp.skb.iter_cv_splits
   DataOp.skb.iter_learners_grid
   DataOp.skb.iter_learners_randomized
+  DataOp.skb.make_grid_search
+  DataOp.skb.make_learner
+  DataOp.skb.make_randomized_search
   DataOp.skb.mark_as_X
   DataOp.skb.mark_as_y
   DataOp.skb.match
   DataOp.skb.preview
   DataOp.skb.select
+  DataOp.skb.set_data
   DataOp.skb.set_description
   DataOp.skb.set_name
   DataOp.skb.subsample
   DataOp.skb.train_test_split
   DataOp.skb.with_scoring
-  DataOp.skb.find
-  DataOp.skb.find_X_y
 
 
 
@@ -162,12 +162,12 @@ Accessor attributes.
   :template: autosummary/accessor_attribute.rst
 
 
+  DataOp.skb.applied_estimator
   DataOp.skb.description
+  DataOp.skb.id
   DataOp.skb.is_X
   DataOp.skb.is_y
   DataOp.skb.name
-  DataOp.skb.id
-  DataOp.skb.applied_estimator
 
 
 
