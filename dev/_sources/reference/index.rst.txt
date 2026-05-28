@@ -501,6 +501,9 @@ DataOps
   DataOp.skb.name
 
 
+  DataOp.skb.id
+
+
   DataOp.skb.applied_estimator
 
 
