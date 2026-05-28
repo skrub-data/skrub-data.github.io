@@ -418,6 +418,9 @@ DataOps
   DataOp.skb.get_data
 
 
+  DataOp.skb.set_data
+
+
   DataOp.skb.get_vars
 
 
