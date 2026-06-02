@@ -605,6 +605,13 @@ TableVectorizer has been removed. <a class="reference external" href="https://gi
 </section>
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>A bug in how the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> treated columns
+duration columns in pandas and polars has been fixed. Now, both classes convert
+durations to the total number of seconds (with fractional part). This is done
+by the new transformer <code class="xref py py-class docutils literal notranslate"><span class="pre">DurationToFloat</span></code>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2069">#2069</a> by
+<a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+</ul>
 </section>
 <section id="deprecations">
 <h3>Deprecations<a class="headerlink" href="#deprecations" title="Link to this heading">#</a></h3>
