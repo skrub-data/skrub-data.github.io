@@ -757,7 +757,7 @@ which we used <a class="reference internal" href="../../../reference/generated/s
 pipeline are executed until we have a value for <code class="docutils literal notranslate"><span class="pre">X</span></code> and for <code class="docutils literal notranslate"><span class="pre">y</span></code>.
 Then, those
 dataframes are split using the provided split function (by default
-scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="(in scikit-learn v1.8)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.train_test_split()</span></code></a>).</p>
+scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="(in scikit-learn v1.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.train_test_split()</span></code></a>).</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
 <span class="go">dict_keys([&#39;train&#39;, &#39;test&#39;, &#39;X_train&#39;, &#39;X_test&#39;, &#39;y_train&#39;, &#39;y_test&#39;])</span>
@@ -789,7 +789,7 @@ evaluated, using this data, to fit the rest of the pipeline.</p>
 </pre></div>
 </div>
 <p>It is possible to define a custom split function to use instead of
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="(in scikit-learn v1.8)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.train_test_split()</span></code></a>.</p>
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="(in scikit-learn v1.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.train_test_split()</span></code></a>.</p>
 </section>
 <section id="passing-additional-arguments-to-the-splitter">
 <h1>Passing additional arguments to the splitter<a class="headerlink" href="#passing-additional-arguments-to-the-splitter" title="Link to this heading">#</a></h1>
@@ -798,8 +798,8 @@ evaluated, using this data, to fit the rest of the pipeline.</p>
 hospitals, etc.) and we want the model to generalize to unseen groups, we must
 ensure while evaluating it that each group goes entirely in the train set or the
 test set, but is not divided among the 2. This can be done with
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html#sklearn.model_selection.GroupKFold" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.model_selection.GroupKFold</span></code></a>,
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.LeavePGroupsOut.html#sklearn.model_selection.LeavePGroupsOut" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.model_selection.LeavePGroupsOut</span></code></a>, etc. . The <code class="docutils literal notranslate"><span class="pre">split</span></code> function
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html#sklearn.model_selection.GroupKFold" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.model_selection.GroupKFold</span></code></a>,
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.LeavePGroupsOut.html#sklearn.model_selection.LeavePGroupsOut" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.model_selection.LeavePGroupsOut</span></code></a>, etc. . The <code class="docutils literal notranslate"><span class="pre">split</span></code> function
 of those objects accepts a <code class="docutils literal notranslate"><span class="pre">groups</span></code> parameter. We can compute the groups
 inside of the DataOp and pass them to <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.mark_as_X()</span></code></a> and they will
 be passed to the splitter.</p>
@@ -816,7 +816,7 @@ be passed to the splitter.</p>
 </div>
 <p>Suppose we want to assess generalization to new sellers. While splitting for
 cross-validation we must group products by seller. We do it with
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.LeaveOneGroupOut.html#sklearn.model_selection.LeaveOneGroupOut" title="(in scikit-learn v1.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.model_selection.LeaveOneGroupOut</span></code></a>.</p>
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.LeaveOneGroupOut.html#sklearn.model_selection.LeaveOneGroupOut" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.model_selection.LeaveOneGroupOut</span></code></a>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.dummy</span><span class="w"> </span><span class="kn">import</span> <span class="n">DummyClassifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">LeaveOneGroupOut</span>
 </pre></div>
@@ -854,7 +854,7 @@ cross-validation we must group products by seller. We do it with
 weights, group information etc.</p>
 <p>We can control how scoring is performed by using
 <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a>. It has a <code class="docutils literal notranslate"><span class="pre">scoring</span></code> parameter, which can be
-anything scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="(in scikit-learn v1.8)"><code class="xref py py-func docutils literal notranslate"><span class="pre">cross_validate()</span></code></a> accepts
+anything scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="(in scikit-learn v1.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">cross_validate()</span></code></a> accepts
 for <code class="docutils literal notranslate"><span class="pre">scoring</span></code> such as a metric name, callable scorer, or dict mapping metric
 names to scorers (see the reference documentation of
 <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a> for details).</p>
