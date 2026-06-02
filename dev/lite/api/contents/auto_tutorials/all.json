@@ -2,11 +2,11 @@
   "content": [
     {
       "content": null,
-      "created": "2026-06-02T13:08:32.633912Z",
+      "created": "2026-06-02T14:39:24.838076Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2026-06-02T13:08:28.122643Z",
+      "last_modified": "2026-06-02T14:39:21.393386Z",
       "mimetype": null,
       "name": "0000_getting_started.ipynb",
       "path": "auto_tutorials/0000_getting_started.ipynb",
@@ -16,11 +16,11 @@
     },
     {
       "content": null,
-      "created": "2026-06-02T13:08:32.634338Z",
+      "created": "2026-06-02T14:39:24.838430Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2026-06-02T13:08:28.123397Z",
+      "last_modified": "2026-06-02T14:39:21.394028Z",
       "mimetype": null,
       "name": "1110_data_ops_intro.ipynb",
       "path": "auto_tutorials/1110_data_ops_intro.ipynb",
@@ -29,11 +29,11 @@
       "writable": true
     }
   ],
-  "created": "2026-06-02T13:08:32.634103Z",
+  "created": "2026-06-02T14:39:24.838430Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2026-06-02T13:08:32.634103Z",
+  "last_modified": "2026-06-02T14:39:24.838430Z",
   "mimetype": null,
   "name": "auto_tutorials",
   "path": "auto_tutorials",
