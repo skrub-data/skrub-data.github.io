@@ -8,7 +8,7 @@
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/mwouts/jupytext/tree/main/jupyterlab/packages/jupyterlab-jupytext",
+  "homepage": "https://github.com/mwouts/jupytext/tree/main/jupyterlab/packages/jupyterlab-jupytext-extension",
   "bugs": {
     "url": "https://github.com/mwouts/jupytext/issues"
   },
@@ -64,7 +64,7 @@
       }
     },
     "_build": {
-      "load": "static/remoteEntry.75ef053ae02f40a820e3.js",
+      "load": "static/remoteEntry.715e527eb18a5dc5b6b9.js",
       "extension": "./extension"
     }
   },
@@ -91,6 +91,6 @@
     "@jupyterlab/builder": "^4.4.9",
     "npm-run-all": "^4.1.5",
     "rimraf": "^6.0.1",
-    "typescript": "~5.9.3"
+    "typescript": "~6.0.3"
   }
 }

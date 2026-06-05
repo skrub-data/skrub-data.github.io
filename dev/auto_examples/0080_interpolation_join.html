@@ -35,34 +35,35 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=7f76b32a3354e82990f2" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=0790524f97105ba85085" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=0790524f97105ba85085" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
     <link rel="stylesheet" type="text/css" href="../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
-    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=d2d258e8" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=7821ceae" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
+  <script defer src="../_static/scripts/fontawesome.js?digest=0790524f97105ba85085"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=0790524f97105ba85085" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=0790524f97105ba85085" />
 
     <script src="../_static/documentation_options.js?v=2b916371"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=fd10adb8"></script>
+    <script src="../_static/sg-tags.js?v=d80f6fa4"></script>
     <script src="../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/0080_interpolation_join';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.17.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.18.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.10.dev0';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -97,7 +98,9 @@
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -271,11 +274,18 @@
       
         <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
       
         <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -288,8 +298,7 @@
           
           
           
-          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span></a>
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -300,8 +309,7 @@
           
           
           
-          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">Discord</span></a>
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i><span class="visually-hidden">Discord</span></a>
         </li>
         <li class="nav-item">
           
@@ -312,8 +320,7 @@
           
           
           
-          <a href="https://bsky.app/profile/skrub-data.bsky.social" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-bluesky fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">Bluesky</span></a>
+          <a href="https://bsky.app/profile/skrub-data.bsky.social" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-bluesky fa-lg" aria-hidden="true"></i><span class="visually-hidden">Bluesky</span></a>
         </li>
         <li class="nav-item">
           
@@ -324,8 +331,7 @@
           
           
           
-          <a href="https://x.com/skrub_data" title="X (ex-Twitter)" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">X (ex-Twitter)</span></a>
+          <a href="https://x.com/skrub_data" title="X (ex-Twitter)" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i><span class="visually-hidden">X (ex-Twitter)</span></a>
         </li>
 </ul></div>
       
@@ -462,11 +468,18 @@
         
           <div class="navbar-item">
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
         
           <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -479,8 +492,7 @@
           
           
           
-          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">GitHub</span></a>
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -491,8 +503,7 @@
           
           
           
-          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">Discord</span></a>
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i><span class="visually-hidden">Discord</span></a>
         </li>
         <li class="nav-item">
           
@@ -503,8 +514,7 @@
           
           
           
-          <a href="https://bsky.app/profile/skrub-data.bsky.social" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-bluesky fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">Bluesky</span></a>
+          <a href="https://bsky.app/profile/skrub-data.bsky.social" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-bluesky fa-lg" aria-hidden="true"></i><span class="visually-hidden">Bluesky</span></a>
         </li>
         <li class="nav-item">
           
@@ -515,8 +525,7 @@
           
           
           
-          <a href="https://x.com/skrub_data" title="X (ex-Twitter)" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">X (ex-Twitter)</span></a>
+          <a href="https://x.com/skrub_data" title="X (ex-Twitter)" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i><span class="visually-hidden">X (ex-Twitter)</span></a>
         </li>
 </ul></div>
         
@@ -906,9 +915,9 @@ to the right side table column names.</p>
       <td>29.7</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>26.657978</td>
-      <td>15.097688</td>
-      <td>0.030574</td>
+      <td>26.173389</td>
+      <td>18.056552</td>
+      <td>0.028302</td>
     </tr>
     <tr>
       <th>1</th>
@@ -918,9 +927,9 @@ to the right side table column names.</p>
       <td>33.3</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>30.227063</td>
-      <td>16.845207</td>
-      <td>0.258381</td>
+      <td>30.050563</td>
+      <td>20.594149</td>
+      <td>0.065425</td>
     </tr>
     <tr>
       <th>2</th>
@@ -930,9 +939,9 @@ to the right side table column names.</p>
       <td>43.0</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>34.590586</td>
-      <td>106.031702</td>
-      <td>0.023250</td>
+      <td>33.534083</td>
+      <td>94.683937</td>
+      <td>-0.063256</td>
     </tr>
     <tr>
       <th>3</th>
@@ -942,9 +951,9 @@ to the right side table column names.</p>
       <td>26.4</td>
       <td>0.0</td>
       <td>NaN</td>
-      <td>28.529339</td>
-      <td>33.899601</td>
-      <td>0.496169</td>
+      <td>28.329013</td>
+      <td>36.131023</td>
+      <td>0.308240</td>
     </tr>
     <tr>
       <th>4</th>
@@ -954,9 +963,9 @@ to the right side table column names.</p>
       <td>29.1</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>26.223482</td>
-      <td>23.083283</td>
-      <td>0.096474</td>
+      <td>26.144478</td>
+      <td>20.311630</td>
+      <td>0.050360</td>
     </tr>
   </tbody>
 </table>
@@ -1078,7 +1087,7 @@ maximum daily temperature.</p>
       <td>MI</td>
       <td>42.212059</td>
       <td>-83.348836</td>
-      <td>1.121796</td>
+      <td>2.075531</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1090,7 +1099,7 @@ maximum daily temperature.</p>
       <td>PA</td>
       <td>39.871953</td>
       <td>-75.241141</td>
-      <td>11.619344</td>
+      <td>11.032906</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1102,7 +1111,7 @@ maximum daily temperature.</p>
       <td>IL</td>
       <td>41.979595</td>
       <td>-87.904464</td>
-      <td>5.299848</td>
+      <td>4.130979</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1114,7 +1123,7 @@ maximum daily temperature.</p>
       <td>KY</td>
       <td>39.046143</td>
       <td>-84.662172</td>
-      <td>14.788421</td>
+      <td>14.610503</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1126,7 +1135,7 @@ maximum daily temperature.</p>
       <td>TX</td>
       <td>32.895951</td>
       <td>-97.037200</td>
-      <td>17.645812</td>
+      <td>16.397032</td>
     </tr>
   </tbody>
 </table>
@@ -1147,11 +1156,11 @@ Washington, Minnesota.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-AK   -3.051437
-MT   -0.124425
-ND    0.711665
-MN    1.136757
-WA    1.150858
+AK   -3.150529
+MT    0.393783
+ND    0.657526
+WA    1.365410
+MN    1.484757
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1161,11 +1170,11 @@ Florida, Louisiana.</p>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>state
-LA    21.073885
-FL    24.740591
-HI    27.505853
-VI    28.923172
-PR    29.559352
+LA    21.287433
+FL    24.750960
+HI    27.548913
+VI    29.464434
+PR    30.114139
 Name: TMAX, dtype: float64
 </pre></div>
 </div>
@@ -1203,8 +1212,8 @@ would contain, rather than by searching for an actual match. It is a generalizat
 the <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a>, as <a class="reference internal" href="../reference/generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-func docutils literal notranslate"><span class="pre">fuzzy_join()</span></code></a> is the same thing as an
 <a class="reference internal" href="../reference/generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a> where the estimators are 1-nearest-neighbor
 estimators.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 42.116 seconds)</p>
-<p><strong>Estimated memory usage:</strong>  2731 MB</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 37.128 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  2587 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-0080-interpolation-join-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/0080_interpolation_join.ipynb"><img alt="Launch binder" src="../_images/binder_badge_logo.svg" style="width: 150px;" />
@@ -1367,8 +1376,8 @@ estimators.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=7f76b32a3354e82990f2"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=7f76b32a3354e82990f2"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=0790524f97105ba85085"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=0790524f97105ba85085"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
