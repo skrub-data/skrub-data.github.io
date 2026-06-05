@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: New Features: It is now possible to attach new preview values to the variables in a DataOp with DataOp.skb.set_data().#2081 by Jérôme Dockès., DataOp objects have a new attribu..." />
+<meta property="og:description" content="Ongoing development: New Features: A parameter becomes_default has been added to var(). It allows indicating that the provided preview value should also be treated as a default value for this varia..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: New Features: It is now possible to attach new preview values to the variables in a DataOp with DataOp.skb.set_data().#2081 by Jérôme Dockès., DataOp objects have a new attribu..." />
+<meta name="description" content="Ongoing development: New Features: A parameter becomes_default has been added to var(). It allows indicating that the provided preview value should also be treated as a default value for this varia..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -592,6 +592,11 @@
 <section id="new-features">
 <h3>New Features<a class="headerlink" href="#new-features" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>A parameter <code class="docutils literal notranslate"><span class="pre">becomes_default</span></code> has been added to <a class="reference internal" href="reference/generated/skrub.var.html#skrub.var" title="skrub.var"><code class="xref py py-func docutils literal notranslate"><span class="pre">var()</span></code></a>. It allows
+indicating that the provided preview <code class="docutils literal notranslate"><span class="pre">value</span></code> should also be treated as a
+default value for this variable in all contexts (for example in a
+SkrubLearner’s method like <code class="docutils literal notranslate"><span class="pre">fit</span></code> or <code class="docutils literal notranslate"><span class="pre">predict</span></code>).
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2082">#2082</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>It is now possible to attach new preview values to the variables in a DataOp
 with <a class="reference internal" href="reference/generated/skrub.DataOp.skb.set_data.html#skrub.DataOp.skb.set_data" title="skrub.DataOp.skb.set_data"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.set_data()</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2081">#2081</a> by
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>

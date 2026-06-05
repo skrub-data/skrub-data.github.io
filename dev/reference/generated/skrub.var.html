@@ -771,7 +771,7 @@
 <h1>var<a class="headerlink" href="#var" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.var">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">var</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NULL</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/66cd0e7/skrub/_data_ops/_data_ops.py#L980"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.var" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">var</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">NULL</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">becomes_default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/0e3c5f4/skrub/_data_ops/_data_ops.py#L988"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.var" title="Link to this definition">#</a></dt>
 <dd><p>Create a skrub variable.</p>
 <p>Variables represent inputs to a DataOps plan, and the corresponding learner.
 They can be combined with other variables, constants, operators, function
@@ -789,6 +789,11 @@ Names must be unique within a learner and must not start with
 available, it is used to provide a preview of the learner’s results,
 to detect errors in the learner early, and to provide better help and
 tab-completion in interactive Python shells.</p>
+</dd>
+<dt><strong>becomes_default</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default = <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">False</span></code></a></span></dt><dd><p>If True, the provided <code class="docutils literal notranslate"><span class="pre">value</span></code> is not only used for previews but also
+becomes the default value for this variable when creating a learner
+(for example with <a class="reference internal" href="skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_learner()</span></code></a>). Thus passing this
+variable in the environment is always optional.</p>
 </dd>
 </dl>
 </dd>
@@ -857,7 +862,7 @@ provided:</p>
 <span class="go">5</span>
 </pre></div>
 </div>
-<p>The values are also used as defaults for <code class="docutils literal notranslate"><span class="pre">eval()</span></code>:</p>
+<p>The values are also used for <code class="docutils literal notranslate"><span class="pre">eval()</span></code> when no environment is provided:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
 <span class="go">5</span>
 </pre></div>
@@ -866,6 +871,25 @@ provided:</p>
 using the learner returned by <code class="docutils literal notranslate"><span class="pre">.skb.make_learner()</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">})</span>
 <span class="go">16</span>
+</pre></div>
+</div>
+<p>When passing <code class="docutils literal notranslate"><span class="pre">becomes_default=True</span></code>, the preview value is treated as a
+default value for that variable. It is kept when cloning the DataOp or
+creating a Learner, and is always optional (does not need to be present) in
+the provided environment.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">becomes_default</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">+</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
+<span class="go">{&#39;a&#39;: 0, &#39;b&#39;: 1}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
+<span class="go">{&#39;a&#39;: 0}</span>
+</pre></div>
+</div>
+<p>For the learner ‘b’ is mandatory but ‘a’ is optional and has default value
+0.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">({</span><span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">})</span>
+<span class="go">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">({</span><span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">})</span>
+<span class="go">110</span>
 </pre></div>
 </div>
 <p>Much more information about skrub variables is provided in the examples
