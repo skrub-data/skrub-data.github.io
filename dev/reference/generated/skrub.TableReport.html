@@ -771,7 +771,7 @@
 <h1>TableReport<a class="headerlink" href="#tablereport" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.TableReport">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">TableReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order_by</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_distributions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compute_associations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open_tab</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'table'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_plot_columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_association_columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_reporting/_table_report.py#L98"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">TableReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_rows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order_by</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_distributions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compute_associations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open_tab</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'table'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_plot_columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_association_columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9775cac/skrub/_reporting/_table_report.py#L98"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport" title="Link to this definition">#</a></dt>
 <dd><p>Summarize the contents of a dataframe.</p>
 <p>This class summarizes a dataframe or numpy array, providing information such as
 the type and summary statistics (mean, number of missing values, etc.) for each
@@ -874,7 +874,7 @@ parquet file and generate a report directly in your web browser.</p>
 last expression evaluated in a cell so that it is displayed in the cell’s
 output.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">report</span>
-<span class="go">&lt;TableReport: use .open() to display&gt;</span>
+<span class="go">&lt;TableReport: use .open() or .markdown() to display&gt;</span>
 </pre></div>
 </div>
 <p>(Note that above we only see the string representation, not the report itself,
@@ -882,7 +882,8 @@ because we are not in a notebook.)</p>
 <p>Whether you are using a notebook or not, you can always open the report as a
 full page in a separate browser tab with its <code class="docutils literal notranslate"><span class="pre">open</span></code> method:
 <code class="docutils literal notranslate"><span class="pre">report.open()</span></code>.</p>
-<p>You can also get the HTML report as a string.
+<p>You can also get the HTML report as a string with the <code class="docutils literal notranslate"><span class="pre">html</span></code> method or the
+<code class="docutils literal notranslate"><span class="pre">html_snippet</span></code> method.
 For a full, standalone web page:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">report</span><span class="o">.</span><span class="n">html</span><span class="p">()</span>
 <span class="go">&#39;&lt;!DOCTYPE html&gt;\n&lt;html lang=&quot;en-US&quot;&gt;\n\n&lt;head&gt;\n    &lt;meta charset=&quot;utf-8&quot;...&#39;</span>
@@ -891,6 +892,26 @@ For a full, standalone web page:</p>
 <p>For an HTML fragment that can be inserted into a page:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">report</span><span class="o">.</span><span class="n">html_snippet</span><span class="p">()</span>
 <span class="go">&#39;\n&lt;div id=&quot;report_...-wrapper&quot; hidden&gt;\n    &lt;template id=&quot;report_...&#39;</span>
+</pre></div>
+</div>
+<p>If you want a summary of the report in plain-text format, you can use the
+<code class="docutils literal notranslate"><span class="pre">markdown</span></code> method to get a Markdown string that can be rendered in the
+notebook or used in Markdown documents. The string includes the summary
+statistics for all columns, so it can be quite long for
+dataframes with many columns.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">md</span> <span class="o">=</span> <span class="n">report</span><span class="o">.</span><span class="n">markdown</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">md</span><span class="p">)</span>
+<span class="go"># DataFrame Report...</span>
+</pre></div>
+</div>
+<p>The report can also be obtained in JSON format with <a class="reference internal" href="#skrub.TableReport.json" title="skrub.TableReport.json"><code class="xref py py-meth docutils literal notranslate"><span class="pre">json()</span></code></a>, which can
+be useful for programmatic access to the report data.</p>
+<p>Note that the resulting JSON includes the plots in SVG format, which can be
+quite verbose: plots can be disabled by setting <code class="docutils literal notranslate"><span class="pre">plot_distributions=False</span></code>
+when generating the report:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">j</span> <span class="o">=</span> <span class="n">TableReport</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">plot_distributions</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+<span class="go">{&quot;dataframe_module&quot;: &quot;pandas&quot;, &quot;n_rows&quot;: 2, &quot;n_columns&quot;: 3, &quot;columns&quot;: ...</span>
 </pre></div>
 </div>
 <p>Advanced configuration: you can add custom column filters that will appear
@@ -917,10 +938,13 @@ unique values” will be available in the report, selecting columns “a” and
 <tr class="row-odd"><td><p><a class="reference internal" href="#skrub.TableReport.json" title="skrub.TableReport.json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">json</span></code></a>()</p></td>
 <td><p>Get the report data in JSON format.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#skrub.TableReport.open" title="skrub.TableReport.open"><code class="xref py py-obj docutils literal notranslate"><span class="pre">open</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.TableReport.markdown" title="skrub.TableReport.markdown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">markdown</span></code></a>()</p></td>
+<td><p>Get the report as a Markdown string.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.TableReport.open" title="skrub.TableReport.open"><code class="xref py py-obj docutils literal notranslate"><span class="pre">open</span></code></a>()</p></td>
 <td><p>Open the HTML report in a web browser.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.TableReport.write_html" title="skrub.TableReport.write_html"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write_html</span></code></a>(file)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.TableReport.write_html" title="skrub.TableReport.write_html"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write_html</span></code></a>(file)</p></td>
 <td><p>Store the report into an HTML file.</p></td>
 </tr>
 </tbody>
@@ -928,7 +952,7 @@ unique values” will be available in the report, selecting columns “a” and
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableReport.html">
-<span class="sig-name descname"><span class="pre">html</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_reporting/_table_report.py#L376"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.html" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">html</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9775cac/skrub/_reporting/_table_report.py#L399"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.html" title="Link to this definition">#</a></dt>
 <dd><p>Get the report as a full HTML page.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -942,7 +966,7 @@ unique values” will be available in the report, selecting columns “a” and
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableReport.html_snippet">
-<span class="sig-name descname"><span class="pre">html_snippet</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_reporting/_table_report.py#L392"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.html_snippet" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">html_snippet</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9775cac/skrub/_reporting/_table_report.py#L415"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.html_snippet" title="Link to this definition">#</a></dt>
 <dd><p>Get the report as an HTML fragment that can be inserted in a page.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -956,7 +980,7 @@ unique values” will be available in the report, selecting columns “a” and
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableReport.json">
-<span class="sig-name descname"><span class="pre">json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_reporting/_table_report.py#L408"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.json" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9775cac/skrub/_reporting/_table_report.py#L431"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.json" title="Link to this definition">#</a></dt>
 <dd><p>Get the report data in JSON format.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -969,14 +993,38 @@ unique values” will be available in the report, selecting columns “a” and
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="skrub.TableReport.markdown">
+<span class="sig-name descname"><span class="pre">markdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9775cac/skrub/_reporting/_table_report.py#L443"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.markdown" title="Link to this definition">#</a></dt>
+<dd><p>Get the report as a Markdown string.</p>
+<p>This can be useful for displaying the report in environments that support
+Markdown for formatted text, to include the report in Markdown documents,
+or to get a quick text summary of the report.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The Markdown output can be provided to AI agents, but it does <strong>not</strong>
+perform any truncation or sanitization of the data. Therefore, it should
+not be used with untrusted data or in contexts where the data may be too
+large, as it could lead to performance issues or security risks.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></dt><dd><p>The Markdown report.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableReport.open">
-<span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_reporting/_table_report.py#L465"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.open" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9775cac/skrub/_reporting/_table_report.py#L509"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.open" title="Link to this definition">#</a></dt>
 <dd><p>Open the HTML report in a web browser.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.TableReport.write_html">
-<span class="sig-name descname"><span class="pre">write_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_reporting/_table_report.py#L427"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.write_html" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">write_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9775cac/skrub/_reporting/_table_report.py#L471"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.TableReport.write_html" title="Link to this definition">#</a></dt>
 <dd><p>Store the report into an HTML file.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1061,6 +1109,7 @@ unique values” will be available in the report, selecting columns “a” and
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.TableReport.html"><code class="docutils literal notranslate"><span class="pre">TableReport.html()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.TableReport.html_snippet"><code class="docutils literal notranslate"><span class="pre">TableReport.html_snippet()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.TableReport.json"><code class="docutils literal notranslate"><span class="pre">TableReport.json()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.TableReport.markdown"><code class="docutils literal notranslate"><span class="pre">TableReport.markdown()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.TableReport.open"><code class="docutils literal notranslate"><span class="pre">TableReport.open()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.TableReport.write_html"><code class="docutils literal notranslate"><span class="pre">TableReport.write_html()</span></code></a></li>
 </ul>

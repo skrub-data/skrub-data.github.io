@@ -696,10 +696,24 @@ between columns.</p></li>
 <span class="gp">... </span>    <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span>
 <span class="gp">... </span><span class="p">})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">TableReport</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>  <span class="c1"># from a notebook cell</span>
-<span class="go">&lt;TableReport: use .open() to display&gt;</span>
+<span class="go">&lt;TableReport: use .open() or .markdown() to display&gt;</span>
 </pre></div>
 </div>
 <p>The command <code class="docutils literal notranslate"><span class="pre">TableReport(df).open()</span></code> opens the report in a browser window.</p>
+<p>It is also possible to export the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> in JSON or Markdown format with
+<a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport.json" title="skrub.TableReport.json"><code class="xref py py-meth docutils literal notranslate"><span class="pre">json()</span></code></a>  <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport.markdown" title="skrub.TableReport.markdown"><code class="xref py py-meth docutils literal notranslate"><span class="pre">markdown()</span></code></a> respectively.</p>
+<p>The generated JSON includes the plots in SVG format, which can be
+quite verbose: plots can be disabled by setting <code class="docutils literal notranslate"><span class="pre">plot_distributions=False</span></code>
+when generating the report.
+Similarly, the Markdown string includes information about all columns in the dataframe,
+so it can be quite lengthy for dataframes that include many columns.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The Markdown output can be fed to AI agents to obtain insight in the data,
+but it is <strong>not</strong> sanitized by the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>. Therefore, it should not be
+used with untrusted data or for dataframes that are too large, as it could lead
+to security risks or performance issues.</p>
+</div>
 <section id="a-demo-of-the-tablereport">
 <h2>A demo of the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a><a class="headerlink" href="#a-demo-of-the-tablereport" title="Link to this heading">#</a></h2>
 <p>Pre-computed examples of the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> are available
