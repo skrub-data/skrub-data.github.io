@@ -769,27 +769,27 @@
 <h1>MultiAggJoiner<a class="headerlink" href="#multiaggjoiner" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.MultiAggJoiner">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">MultiAggJoiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aux_tables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operations</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aux_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffixes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/_multi_agg_joiner.py#L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">MultiAggJoiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aux_tables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operations</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aux_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffixes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_multi_agg_joiner.py#L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner" title="Link to this definition">#</a></dt>
 <dd><p>Extension of the <a class="reference internal" href="skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a> to multiple auxiliary tables.</p>
-<p>Apply numerical and categorical aggregation operations on the <cite>cols</cite>
+<p>Apply numerical and categorical aggregation operations on the <code class="docutils literal notranslate"><span class="pre">cols</span></code>
 to aggregate, selected by dtypes. See the list of supported operations
-at the parameter <cite>operations</cite>.</p>
-<p>If <cite>cols</cite> is not provided, <cite>cols</cite> is set to a list of lists.
-For each table in <cite>aux_tables</cite>, the corresponding list will be all columns
-of that table, except the <cite>aux_keys</cite> associated with that table.</p>
-<p>As opposed to the <a class="reference internal" href="skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>, here <cite>aux_tables</cite> is an iterable of tables,
-each of which will be joined on the main table. Therefore <cite>aux_keys</cite> is now
-an iterable of keys, of the same length as <cite>aux_tables</cite>, and each entry
-in <cite>aux_keys</cite> is used to join the corresponding auxiliary table. In the same way,
-each entry in <cite>cols</cite> is an iterable of columns to aggregate in the corresponding
+at the parameter <code class="docutils literal notranslate"><span class="pre">operations</span></code>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">cols</span></code> is not provided, <code class="docutils literal notranslate"><span class="pre">cols</span></code> is set to a list of lists.
+For each table in <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code>, the corresponding list will be all columns
+of that table, except the <code class="docutils literal notranslate"><span class="pre">aux_keys</span></code> associated with that table.</p>
+<p>As opposed to the <a class="reference internal" href="skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>, here <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code> is an iterable of tables,
+each of which will be joined on the main table. Therefore <code class="docutils literal notranslate"><span class="pre">aux_keys</span></code> is now
+an iterable of keys, of the same length as <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code>, and each entry
+in <code class="docutils literal notranslate"><span class="pre">aux_keys</span></code> is used to join the corresponding auxiliary table. In the same way,
+each entry in <code class="docutils literal notranslate"><span class="pre">cols</span></code> is an iterable of columns to aggregate in the corresponding
 auxiliary table. If the keys are the same in the main table and the auxiliary
-tables, the <cite>keys</cite> parameter can be used instead of <cite>main_keys</cite> and <cite>aux_keys</cite>.</p>
+tables, the <code class="docutils literal notranslate"><span class="pre">keys</span></code> parameter can be used instead of <code class="docutils literal notranslate"><span class="pre">main_keys</span></code> and <code class="docutils literal notranslate"><span class="pre">aux_keys</span></code>.</p>
 <p>Therefore if we have a single table, we could either use</p>
 <ul class="simple">
 <li><p>the <a class="reference internal" href="skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a>: <code class="docutils literal notranslate"><span class="pre">AggJoiner(aux_table,</span> <span class="pre">key=&quot;ID&quot;)</span></code></p></li>
 <li><p>or the <a class="reference internal" href="#skrub.MultiAggJoiner" title="skrub.MultiAggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiAggJoiner</span></code></a>: <code class="docutils literal notranslate"><span class="pre">MultiAggJoiner([aux_table],</span> <span class="pre">keys=[[&quot;ID&quot;]])</span></code></p></li>
 </ul>
-<p>Note that for <cite>keys</cite>, <cite>main_keys</cite>, <cite>aux_keys</cite>, <cite>cols</cite> and <cite>operations</cite>,
+<p>Note that for <code class="docutils literal notranslate"><span class="pre">keys</span></code>, <code class="docutils literal notranslate"><span class="pre">main_keys</span></code>, <code class="docutils literal notranslate"><span class="pre">aux_keys</span></code>, <code class="docutils literal notranslate"><span class="pre">cols</span></code> and <code class="docutils literal notranslate"><span class="pre">operations</span></code>,
 an input of the form <code class="docutils literal notranslate"><span class="pre">[[&quot;a&quot;],</span> <span class="pre">[&quot;b&quot;],</span> <span class="pre">[&quot;c&quot;,</span> <span class="pre">&quot;d&quot;]]</span></code> is valid
 while <code class="docutils literal notranslate"><span class="pre">[&quot;a&quot;,</span> <span class="pre">&quot;b&quot;,</span> <span class="pre">[&quot;c&quot;,</span> <span class="pre">&quot;d&quot;]]</span></code> is not.</p>
 <p>Using a column from the first auxiliary table to join the second auxiliary table
@@ -807,49 +807,49 @@ as in <code class="docutils literal notranslate"><span class="pre">aux_tables</s
 be replaced by the input data.</p>
 </dd>
 <dt><strong>operations</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>Aggregation operations to perform on the auxiliary tables.</p>
-<p>Must be an iterable of <cite>operations</cite> for each table in <cite>aux_tables</cite>.
+<p>Must be an iterable of <code class="docutils literal notranslate"><span class="pre">operations</span></code> for each table in <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code>.
 Supported operations are “count”, “mode”, “min”, “max”, “sum”, “median”,
 “mean”, “std”. The operations “sum”, “median”, “mean”, “std” are reserved
 to numeric type columns.</p>
 </dd>
-<dt><strong>keys</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>The column names to use for both <cite>main_keys</cite> and <cite>aux_key</cite> when they
-are the same. Provide either <cite>key</cite> or both <cite>main_keys</cite> and <cite>aux_keys</cite>.
-If entries in <cite>keys</cite> contains multiple columns, we will perform
+<dt><strong>keys</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>The column names to use for both <code class="docutils literal notranslate"><span class="pre">main_keys</span></code> and <code class="docutils literal notranslate"><span class="pre">aux_key</span></code> when they
+are the same. Provide either <code class="docutils literal notranslate"><span class="pre">key</span></code> or both <code class="docutils literal notranslate"><span class="pre">main_keys</span></code> and <code class="docutils literal notranslate"><span class="pre">aux_keys</span></code>.
+If entries in <code class="docutils literal notranslate"><span class="pre">keys</span></code> contains multiple columns, we will perform
 a multi-column join.</p>
-<p>All <cite>keys</cite> must be present in the main and auxiliary tables before fit.
+<p>All <code class="docutils literal notranslate"><span class="pre">keys</span></code> must be present in the main and auxiliary tables before fit.
 It’s not (yet) possible to use columns from the first joined table
 to join the second.</p>
-<p>If not <cite>None</cite>, there must be an iterable of <cite>keys</cite> for each table
-in <cite>aux_tables</cite>.</p>
+<p>If not <code class="docutils literal notranslate"><span class="pre">None</span></code>, there must be an iterable of <code class="docutils literal notranslate"><span class="pre">keys</span></code> for each table
+in <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code>.</p>
 </dd>
 <dt><strong>main_keys</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>Select the columns from the main table to use as keys during
 the join operation.
-If entries in <cite>main_keys</cite> contains multiple columns, we will perform
+If entries in <code class="docutils literal notranslate"><span class="pre">main_keys</span></code> contains multiple columns, we will perform
 a multi-column join.</p>
-<p>If not <cite>None</cite>, there must be an iterable of <cite>main_keys</cite> for each table
-in <cite>aux_tables</cite>.</p>
+<p>If not <code class="docutils literal notranslate"><span class="pre">None</span></code>, there must be an iterable of <code class="docutils literal notranslate"><span class="pre">main_keys</span></code> for each table
+in <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code>.</p>
 </dd>
 <dt><strong>aux_keys</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>Select the columns from the auxiliary dataframes to use as keys during
 the join operation.
-If entries in <cite>aux_keys</cite> contains multiple columns, we will perform
+If entries in <code class="docutils literal notranslate"><span class="pre">aux_keys</span></code> contains multiple columns, we will perform
 a multi-column join.</p>
-<p>All <cite>aux_keys</cite> must be present in respective <cite>aux_tables</cite> before fit.
+<p>All <code class="docutils literal notranslate"><span class="pre">aux_keys</span></code> must be present in respective <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code> before fit.
 It’s not (yet) possible to use columns from the first joined table
 to join the second.</p>
-<p>If not <cite>None</cite>, there must be an iterable of <cite>aux_keys</cite> for each table
-in <cite>aux_tables</cite>.</p>
+<p>If not <code class="docutils literal notranslate"><span class="pre">None</span></code>, there must be an iterable of <code class="docutils literal notranslate"><span class="pre">aux_keys</span></code> for each table
+in <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code>.</p>
 </dd>
 <dt><strong>cols</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>Select the columns from the auxiliary dataframes to use as values during
 the aggregation operations.</p>
-<p>If not <cite>None</cite>, there must be an iterable of <cite>cols</cite> for each table
-in <cite>aux_tables</cite>.</p>
-<p>If set to <cite>None</cite>, <cite>cols</cite> is set to a list of lists. For each table
-in <cite>aux_tables</cite>, the corresponding list will be all columns of that table,
-except the <cite>aux_keys</cite> associated with that table.</p>
+<p>If not <code class="docutils literal notranslate"><span class="pre">None</span></code>, there must be an iterable of <code class="docutils literal notranslate"><span class="pre">cols</span></code> for each table
+in <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code>.</p>
+<p>If set to <code class="docutils literal notranslate"><span class="pre">None</span></code>, <code class="docutils literal notranslate"><span class="pre">cols</span></code> is set to a list of lists. For each table
+in <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code>, the corresponding list will be all columns of that table,
+except the <code class="docutils literal notranslate"><span class="pre">aux_keys</span></code> associated with that table.</p>
 </dd>
-<dt><strong>suffixes</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>Suffixes to append to the <cite>aux_tables</cite>’ column names.
-If set to <cite>None</cite>, the table indexes in <cite>aux_tables</cite> are used,
-e.g. for an aggregation of 2 <cite>aux_tables</cite>, “_0” and “_1” would be appended
+<dt><strong>suffixes</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>Suffixes to append to the <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code>’ column names.
+If set to <code class="docutils literal notranslate"><span class="pre">None</span></code>, the table indexes in <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code> are used,
+e.g. for an aggregation of 2 <code class="docutils literal notranslate"><span class="pre">aux_tables</span></code>, “_0” and “_1” would be appended
 to column names.</p>
 </dd>
 </dl>
@@ -949,14 +949,14 @@ the same results could be obtained by chaining 3 separate <a class="reference in
 <td><p>Set the parameters of this estimator.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.MultiAggJoiner.transform" title="skrub.MultiAggJoiner.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X)</p></td>
-<td><p>Left-join pre-aggregated tables on <cite>X</cite>.</p></td>
+<td><p>Left-join pre-aggregated tables on <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.MultiAggJoiner.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/_multi_agg_joiner.py#L481"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner.fit" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_multi_agg_joiner.py#L481"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner.fit" title="Link to this definition">#</a></dt>
 <dd><p>Aggregate auxiliary tables based on the main keys.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -979,7 +979,7 @@ auxiliary tables.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.MultiAggJoiner.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/_multi_agg_joiner.py#L435"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_multi_agg_joiner.py#L435"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Aggregate auxiliary tables based on the main keys.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1002,7 +1002,7 @@ auxiliary tables.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.MultiAggJoiner.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1023,7 +1023,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.MultiAggJoiner.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/utils/_set_output.py#L392"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/utils/_set_output.py#L392"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>Refer to the <a class="reference external" href="https://scikit-learn.org/stable/modules/df_output_transform.html#df-output-transform" title="(in scikit-learn v1.9)"><span class="xref std std-ref">user guide</span></a> for more details
 and <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.9)"><span>Introducing the set_output API</span></a> for an
@@ -1031,15 +1031,15 @@ example on how to use the API.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>transform</strong><span class="classifier">{“default”, “pandas”, “polars”}, default=None</span></dt><dd><p>Configure output of <cite>transform</cite> and <cite>fit_transform</cite>.</p>
+<dt><strong>transform</strong><span class="classifier">{“default”, “pandas”, “polars”}, default=None</span></dt><dd><p>Configure output of <code class="docutils literal notranslate"><span class="pre">transform</span></code> and <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code>.</p>
 <ul class="simple">
-<li><p><cite>“default”</cite>: Default output format of a transformer</p></li>
-<li><p><cite>“pandas”</cite>: DataFrame output</p></li>
-<li><p><cite>“polars”</cite>: Polars output</p></li>
-<li><p><cite>None</cite>: Transform configuration is unchanged</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;default&quot;</span></code>: Default output format of a transformer</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;pandas&quot;</span></code>: DataFrame output</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;polars&quot;</span></code>: Polars output</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code>: Transform configuration is unchanged</p></li>
 </ul>
 <div class="versionadded">
-<p><span class="versionmodified added">Added in version 1.4: </span><cite>“polars”</cite> option was added.</p>
+<p><span class="versionmodified added">Added in version 1.4: </span><code class="docutils literal notranslate"><span class="pre">&quot;polars&quot;</span></code> option was added.</p>
 </div>
 </dd>
 </dl>
@@ -1055,7 +1055,7 @@ example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.MultiAggJoiner.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -1079,8 +1079,8 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.MultiAggJoiner.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/_multi_agg_joiner.py#L500"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner.transform" title="Link to this definition">#</a></dt>
-<dd><p>Left-join pre-aggregated tables on <cite>X</cite>.</p>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_multi_agg_joiner.py#L500"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.MultiAggJoiner.transform" title="Link to this definition">#</a></dt>
+<dd><p>Left-join pre-aggregated tables on <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">

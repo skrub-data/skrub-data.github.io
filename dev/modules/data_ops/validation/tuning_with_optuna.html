@@ -801,7 +801,7 @@ to maximize (or minimize).</p>
 <p>To use Optuna with a <a class="reference internal" href="../../../reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a>, we just need to pass the Trial object
 to <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_learner()</span></code></a>. This creates a <a class="reference internal" href="../../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a>
 initialized with the parameters picked by the optuna Trial.</p>
-<p>We can then cross-validate the:class:<cite>SkrubLearner</cite>, or score it however we prefer,
+<p>We can then cross-validate the:class:<code class="docutils literal notranslate"><span class="pre">SkrubLearner</span></code>, or score it however we prefer,
 and return the score so that the optuna Study can take it into account.</p>
 <p>Here we return a single score (R²), but multi-objective
 optimization is also possible. Please refer to the Optuna documentation for

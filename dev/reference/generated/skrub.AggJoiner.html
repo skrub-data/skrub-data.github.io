@@ -771,12 +771,12 @@
 <h1>AggJoiner<a class="headerlink" href="#aggjoiner" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.AggJoiner">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">AggJoiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aux_table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operations</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aux_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/_agg_joiner.py#L171"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">AggJoiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aux_table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">operations</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aux_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_agg_joiner.py#L171"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner" title="Link to this definition">#</a></dt>
 <dd><p>Aggregate an auxiliary dataframe before joining it on a base dataframe.</p>
-<p>Apply numerical and categorical aggregation operations on the columns (i.e. <cite>cols</cite>)
-to aggregate. See the list of supported operations at the parameter <cite>operations</cite>.</p>
-<p>If <cite>cols</cite> is not provided, <cite>cols</cite> are all columns from <cite>aux_table</cite>,
-except <cite>aux_key</cite>.</p>
+<p>Apply numerical and categorical aggregation operations on the columns (i.e. <code class="docutils literal notranslate"><span class="pre">cols</span></code>)
+to aggregate. See the list of supported operations at the parameter <code class="docutils literal notranslate"><span class="pre">operations</span></code>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">cols</span></code> is not provided, <code class="docutils literal notranslate"><span class="pre">cols</span></code> are all columns from <code class="docutils literal notranslate"><span class="pre">aux_table</span></code>,
+except <code class="docutils literal notranslate"><span class="pre">aux_key</span></code>.</p>
 <p>Accepts <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v3.0.3)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a> and <code class="xref py py-class docutils literal notranslate"><span class="pre">polars.DataFrame</span></code> inputs.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -790,23 +790,23 @@ self-aggregation on the input data.</p>
 “mean”, “std”. The operations “sum”, “median”, “mean”, “std” are reserved
 to numeric type columns.</p>
 </dd>
-<dt><strong>key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>The column name to use for both <cite>main_key</cite> and <cite>aux_key</cite> when they
-are the same. Provide either <cite>key</cite> or both <cite>main_key</cite> and <cite>aux_key</cite>.
-If <cite>key</cite> is an iterable, we will perform a multi-column join.</p>
+<dt><strong>key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>The column name to use for both <code class="docutils literal notranslate"><span class="pre">main_key</span></code> and <code class="docutils literal notranslate"><span class="pre">aux_key</span></code> when they
+are the same. Provide either <code class="docutils literal notranslate"><span class="pre">key</span></code> or both <code class="docutils literal notranslate"><span class="pre">main_key</span></code> and <code class="docutils literal notranslate"><span class="pre">aux_key</span></code>.
+If <code class="docutils literal notranslate"><span class="pre">key</span></code> is an iterable, we will perform a multi-column join.</p>
 </dd>
 <dt><strong>main_key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>Select the columns from the main table to use as keys during
 the join operation.
-If <cite>main_key</cite> is an iterable, we will perform a multi-column join.</p>
+If <code class="docutils literal notranslate"><span class="pre">main_key</span></code> is an iterable, we will perform a multi-column join.</p>
 </dd>
 <dt><strong>aux_key</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>Select the columns from the auxiliary dataframe to use as keys during
 the join operation.
-If <cite>aux_key</cite> is an iterable, we will perform a multi-column join.</p>
+If <code class="docutils literal notranslate"><span class="pre">aux_key</span></code> is an iterable, we will perform a multi-column join.</p>
 </dd>
 <dt><strong>cols</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/glossary.html#term-iterable" title="(in Python v3.14)"><span>iterable</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=None</span></dt><dd><p>Select the columns from the auxiliary dataframe to use as values during
 the aggregation operations.
-By default, <cite>cols</cite> are all columns from <cite>aux_table</cite>, except <cite>aux_key</cite>.</p>
+By default, <code class="docutils literal notranslate"><span class="pre">cols</span></code> are all columns from <code class="docutils literal notranslate"><span class="pre">aux_table</span></code>, except <code class="docutils literal notranslate"><span class="pre">aux_key</span></code>.</p>
 </dd>
-<dt><strong>suffix</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=””</span></dt><dd><p>Suffix to append to the <cite>aux_table</cite>’s column names. You can use it
+<dt><strong>suffix</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=””</span></dt><dd><p>Suffix to append to the <code class="docutils literal notranslate"><span class="pre">aux_table</span></code>’s column names. You can use it
 to avoid duplicate column names in the join.</p>
 </dd>
 </dl>
@@ -815,7 +815,7 @@ to avoid duplicate column names in the join.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AggTarget</span></code></a></dt><dd><p>Aggregates the target <cite>y</cite> before joining its aggregation on the base dataframe.</p>
+<dt><a class="reference internal" href="skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AggTarget</span></code></a></dt><dd><p>Aggregates the target <code class="docutils literal notranslate"><span class="pre">y</span></code> before joining its aggregation on the base dataframe.</p>
 </dd>
 <dt><a class="reference internal" href="skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Joiner</span></code></a></dt><dd><p>Augments a main table by automatically joining an auxiliary table on it.</p>
 </dd>
@@ -871,14 +871,14 @@ to avoid duplicate column names in the join.</p>
 <td><p>Set the parameters of this estimator.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#skrub.AggJoiner.transform" title="skrub.AggJoiner.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X)</p></td>
-<td><p>Left-join pre-aggregated table on <cite>X</cite>.</p></td>
+<td><p>Left-join pre-aggregated table on <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggJoiner.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/_agg_joiner.py#L339"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.fit" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_agg_joiner.py#L339"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.fit" title="Link to this definition">#</a></dt>
 <dd><p>Aggregate auxiliary table based on the main keys.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -901,7 +901,7 @@ auxiliary table.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggJoiner.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/_agg_joiner.py#L277"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_agg_joiner.py#L277"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Aggregate auxiliary table based on the main keys.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -924,7 +924,7 @@ auxiliary table.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggJoiner.get_feature_names_out">
-<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/_agg_joiner.py#L384"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.get_feature_names_out" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_agg_joiner.py#L384"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.get_feature_names_out" title="Link to this definition">#</a></dt>
 <dd><p>Get output feature names for transformation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -938,7 +938,7 @@ auxiliary table.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggJoiner.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -959,7 +959,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggJoiner.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/utils/_set_output.py#L392"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/utils/_set_output.py#L392"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>Refer to the <a class="reference external" href="https://scikit-learn.org/stable/modules/df_output_transform.html#df-output-transform" title="(in scikit-learn v1.9)"><span class="xref std std-ref">user guide</span></a> for more details
 and <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.9)"><span>Introducing the set_output API</span></a> for an
@@ -967,15 +967,15 @@ example on how to use the API.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>transform</strong><span class="classifier">{“default”, “pandas”, “polars”}, default=None</span></dt><dd><p>Configure output of <cite>transform</cite> and <cite>fit_transform</cite>.</p>
+<dt><strong>transform</strong><span class="classifier">{“default”, “pandas”, “polars”}, default=None</span></dt><dd><p>Configure output of <code class="docutils literal notranslate"><span class="pre">transform</span></code> and <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code>.</p>
 <ul class="simple">
-<li><p><cite>“default”</cite>: Default output format of a transformer</p></li>
-<li><p><cite>“pandas”</cite>: DataFrame output</p></li>
-<li><p><cite>“polars”</cite>: Polars output</p></li>
-<li><p><cite>None</cite>: Transform configuration is unchanged</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;default&quot;</span></code>: Default output format of a transformer</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;pandas&quot;</span></code>: DataFrame output</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;polars&quot;</span></code>: Polars output</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code>: Transform configuration is unchanged</p></li>
 </ul>
 <div class="versionadded">
-<p><span class="versionmodified added">Added in version 1.4: </span><cite>“polars”</cite> option was added.</p>
+<p><span class="versionmodified added">Added in version 1.4: </span><code class="docutils literal notranslate"><span class="pre">&quot;polars&quot;</span></code> option was added.</p>
 </div>
 </dd>
 </dl>
@@ -991,7 +991,7 @@ example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggJoiner.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/../.pixi/envs/doc/lib/python3.13/site-packages/sklearn/base.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -1015,8 +1015,8 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.AggJoiner.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/a0c85b6/skrub/_agg_joiner.py#L358"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.transform" title="Link to this definition">#</a></dt>
-<dd><p>Left-join pre-aggregated table on <cite>X</cite>.</p>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/b59e9d8/skrub/_agg_joiner.py#L358"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.AggJoiner.transform" title="Link to this definition">#</a></dt>
+<dd><p>Left-join pre-aggregated table on <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
