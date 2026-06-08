@@ -564,7 +564,7 @@
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Column-level feature extraction</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/feature_engineering_categorical.html">Encoding string and text columns as numeric features</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/feature_engineering_datetimes.html">Handling datetimes: parsing from strings and encoding as numbers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/robust_scaling.html">Robust scaling of numeric features using <code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/feature_engineering_numerical.html">Parsing and scaling numeric features</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/advanced_columnwise_operations.html">Advanced columnwise operations</a></li>
 </ul>
 </details></li>
@@ -845,7 +845,11 @@ directly by machine learning models.</p>
 <li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/feature_engineering_datetimes.html#encoding-and-feature-engineering-with-datetimeencoder">Encoding and Feature Engineering with <code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="modules/column_level_featurizing/robust_scaling.html">Robust scaling of numeric features using <code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/column_level_featurizing/feature_engineering_numerical.html">Parsing and scaling numeric features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/feature_engineering_numerical.html#converting-heterogeneous-numeric-values-to-uniform-float32">Converting heterogeneous numeric values to uniform float32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/feature_engineering_numerical.html#robust-scaling-of-numeric-features-using-squashingscaler">Robust scaling of numeric features using <code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="modules/column_level_featurizing/advanced_columnwise_operations.html">Advanced columnwise operations</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/advanced_columnwise_operations.html#the-single-column-transformer">The single column transformer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/column_level_featurizing/advanced_columnwise_operations.html#rejection-handling-with-applytocols-and-rejectcolumn">Rejection handling with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">core.RejectColumn</span></code></a></li>

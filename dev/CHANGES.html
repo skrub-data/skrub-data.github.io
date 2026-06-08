@@ -605,6 +605,12 @@ provides an alternative for referring to a node, in the environment passed to
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.eval.html#skrub.DataOp.skb.eval" title="skrub.DataOp.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.eval()</span></code></a>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.predict()</span></code>, etc., or in
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.find.html#skrub.DataOp.skb.find" title="skrub.DataOp.skb.find"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.find()</span></code></a> or <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.truncated_after" title="skrub.SkrubLearner.truncated_after"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.truncated_after()</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2062">#2062</a> by
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ToFloat32</span></code> now allows users to specify <code class="docutils literal notranslate"><span class="pre">decimal</span></code> and <code class="docutils literal notranslate"><span class="pre">thousand</span></code>
+separators to parse numerical columns that use formatting different from the default
+formatting used in Python, such as <code class="docutils literal notranslate"><span class="pre">1'234,5</span></code>.
+Additionally, negative numbers indicated with parentheses can be converted to the
+regular numeric format (<code class="docutils literal notranslate"><span class="pre">(432)</span></code> becomes <code class="docutils literal notranslate"><span class="pre">-432</span></code>). <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1772">#1772</a> by <a class="reference external" href="https://github.com/gabrielapgomezji">Gabriela
+Gómez Jiménez</a>.</p></li>
 </ul>
 </section>
 <section id="id1">
