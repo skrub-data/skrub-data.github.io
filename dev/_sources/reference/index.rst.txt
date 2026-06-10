@@ -59,6 +59,9 @@ Building a pipeline
   DropCols
 
 
+  Drop
+
+
 
 
 

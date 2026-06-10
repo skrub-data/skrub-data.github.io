@@ -1,0 +1,14 @@
+﻿Drop
+====
+
+.. currentmodule:: skrub
+
+.. autoclass:: Drop
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.Drop skrub.Drop.__init__ skrub.Drop.fit skrub.Drop.fit_transform skrub.Drop.get_feature_names_out skrub.Drop.get_metadata_routing skrub.Drop.get_params skrub.Drop.set_fit_request skrub.Drop.set_output skrub.Drop.set_params skrub.Drop.set_transform_request skrub.Drop.transform 
+   :add-heading: Gallery examples
+   :heading-level: -
