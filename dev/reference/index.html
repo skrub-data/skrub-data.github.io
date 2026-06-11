@@ -578,15 +578,6 @@
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.to_datetime.html">to_datetime</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="generated/skrub.Joiner.html">Joiner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/skrub.AggJoiner.html">AggJoiner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/skrub.MultiAggJoiner.html">MultiAggJoiner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/skrub.AggTarget.html">AggTarget</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/skrub.InterpolationJoiner.html">InterpolationJoiner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/skrub.fuzzy_join.html">fuzzy_join</a></li>
-</ul>
-</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="selectors.html">selectors</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.selectors.Selector.html">Selector</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.selectors.all.html">all</a></li>
@@ -679,6 +670,15 @@
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.get_config.html">get_config</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.set_config.html">set_config</a></li>
 <li class="toctree-l2"><a class="reference internal" href="generated/skrub.config_context.html">config_context</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.Joiner.html">Joiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.AggJoiner.html">AggJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.MultiAggJoiner.html">MultiAggJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.AggTarget.html">AggTarget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.InterpolationJoiner.html">InterpolationJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/skrub.fuzzy_join.html">fuzzy_join</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="datasets.html">datasets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -864,32 +864,6 @@ classes and functions may not be enough to give full guidelines on their use.</p
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.to_datetime.html#skrub.to_datetime" title="skrub.to_datetime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_datetime</span></code></a></p></td>
 <td><p>Convert DataFrame or column to Datetime dtype.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="joining-dataframes">
-<h2>Joining dataframes<a class="headerlink" href="#joining-dataframes" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Joiner</span></code></a></p></td>
-<td><p>Augment features in a main table by fuzzy-joining an auxiliary table to it.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AggJoiner</span></code></a></p></td>
-<td><p>Aggregate an auxiliary dataframe before joining it on a base dataframe.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.MultiAggJoiner.html#skrub.MultiAggJoiner" title="skrub.MultiAggJoiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MultiAggJoiner</span></code></a></p></td>
-<td><p>Extension of the <a class="reference internal" href="generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a> to multiple auxiliary tables.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AggTarget</span></code></a></p></td>
-<td><p>Aggregate a target <code class="docutils literal notranslate"><span class="pre">y</span></code> before joining its aggregation on a base dataframe.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a></p></td>
-<td><p>Join with a table augmented by machine-learning predictions.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fuzzy_join</span></code></a></p></td>
-<td><p>Fuzzy (approximate) join.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1198,6 +1172,32 @@ classes and functions may not be enough to give full guidelines on their use.</p
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.config_context.html#skrub.config_context" title="skrub.config_context"><code class="xref py py-obj docutils literal notranslate"><span class="pre">config_context</span></code></a></p></td>
 <td><p>Context manager for global skrub configuration.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="joining-dataframes">
+<h2>Joining dataframes<a class="headerlink" href="#joining-dataframes" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.Joiner.html#skrub.Joiner" title="skrub.Joiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Joiner</span></code></a></p></td>
+<td><p>Augment features in a main table by fuzzy-joining an auxiliary table to it.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AggJoiner</span></code></a></p></td>
+<td><p>Aggregate an auxiliary dataframe before joining it on a base dataframe.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.MultiAggJoiner.html#skrub.MultiAggJoiner" title="skrub.MultiAggJoiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MultiAggJoiner</span></code></a></p></td>
+<td><p>Extension of the <a class="reference internal" href="generated/skrub.AggJoiner.html#skrub.AggJoiner" title="skrub.AggJoiner"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggJoiner</span></code></a> to multiple auxiliary tables.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.AggTarget.html#skrub.AggTarget" title="skrub.AggTarget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AggTarget</span></code></a></p></td>
+<td><p>Aggregate a target <code class="docutils literal notranslate"><span class="pre">y</span></code> before joining its aggregation on a base dataframe.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="generated/skrub.InterpolationJoiner.html#skrub.InterpolationJoiner" title="skrub.InterpolationJoiner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InterpolationJoiner</span></code></a></p></td>
+<td><p>Join with a table augmented by machine-learning predictions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="generated/skrub.fuzzy_join.html#skrub.fuzzy_join" title="skrub.fuzzy_join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fuzzy_join</span></code></a></p></td>
+<td><p>Perform a fuzzy (approximate) join between the left and right tables.</p></td>
 </tr>
 </tbody>
 </table>

@@ -19,11 +19,11 @@ classes and functions may not be enough to give full guidelines on their use.
   encoders <encoders>
   reporting <reporting>
   cleaning <cleaning>
-  joining <joining>
   selectors <selectors>
   data_ops <data_ops>
   advanced <advanced>
   config <config>
+  joining <joining>
   datasets <datasets>
 
 .. currentmodule:: skrub
@@ -165,41 +165,6 @@ Cleaning a dataframe
 
 
   to_datetime
-
-
-
-
-
-Joining dataframes
-------------------
-
-
-
-
-
-
-
-.. autosummary::
-  :nosignatures:
-  :template: base.rst
-
-
-  Joiner
-
-
-  AggJoiner
-
-
-  MultiAggJoiner
-
-
-  AggTarget
-
-
-  InterpolationJoiner
-
-
-  fuzzy_join
 
 
 
@@ -580,6 +545,41 @@ Configuration
 
 
   config_context
+
+
+
+
+
+Joining dataframes
+------------------
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :template: base.rst
+
+
+  Joiner
+
+
+  AggJoiner
+
+
+  MultiAggJoiner
+
+
+  AggTarget
+
+
+  InterpolationJoiner
+
+
+  fuzzy_join
 
 
 
