@@ -1,0 +1,57 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-06-16T12:38:53.118312Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-06-16T12:38:49.150963Z",
+      "mimetype": null,
+      "name": "0010_encodings.ipynb",
+      "path": "auto_examples/01_encoding/0010_encodings.ipynb",
+      "size": 21190,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-06-16T12:38:53.118747Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-06-16T12:38:49.152001Z",
+      "mimetype": null,
+      "name": "0020_text_with_string_encoders.ipynb",
+      "path": "auto_examples/01_encoding/0020_text_with_string_encoders.ipynb",
+      "size": 16793,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-06-16T12:38:53.119122Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-06-16T12:38:49.152843Z",
+      "mimetype": null,
+      "name": "0030_datetime_encoder.ipynb",
+      "path": "auto_examples/01_encoding/0030_datetime_encoder.ipynb",
+      "size": 15974,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2026-06-16T12:38:53.119122Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-06-16T12:38:53.119122Z",
+  "mimetype": null,
+  "name": "01_encoding",
+  "path": "auto_examples/01_encoding",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

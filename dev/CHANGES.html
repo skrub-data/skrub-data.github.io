@@ -626,8 +626,10 @@ Gómez Jiménez</a>.</p></li>
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference internal" href="reference/generated/skrub.choose_from.html#skrub.choose_from" title="skrub.choose_from"><code class="xref py py-meth docutils literal notranslate"><span class="pre">choose_from()</span></code></a> now transparently converts <code class="docutils literal notranslate"><span class="pre">outcomes</span></code> to a list when it is another type of sequence. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2100">#2100</a> by
-<a class="reference external" href="https://github.com/aidbar">aidbar</a>.</p></li>
+<li><p>Grouped Examples into subject-specific sections. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2102">#2102</a> by
+<a class="reference external" href="https://github.com/maureen-githaiga">Maureen Githaiga</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.choose_from.html#skrub.choose_from" title="skrub.choose_from"><code class="xref py py-meth docutils literal notranslate"><span class="pre">choose_from()</span></code></a> now transparently converts <code class="docutils literal notranslate"><span class="pre">outcomes</span></code> to a list when it is
+another type of sequence. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2100">#2100</a> by <a class="reference external" href="https://github.com/aidbar">aidbar</a>.</p></li>
 <li><p>An unnecessary warning that was raised when passing a numpy array to the
 TableVectorizer has been removed. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1908">#1908</a> by
 <a class="reference external" href="https://github.com/sandrineh">Sandrine Henry</a>.</p></li>
@@ -892,7 +894,7 @@ Baum</a>.</p></li>
 <h3>New features<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>It is now possible to tune the choices in a <a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> with <a class="reference external" href="https://optuna.readthedocs.io/en/stable/">Optuna</a>. See
-<a class="reference internal" href="auto_examples/data_ops/1131_optuna_choices.html#example-optuna-choices"><span class="std std-ref">Tuning DataOps with Optuna</span></a> for an example.
+<a class="reference internal" href="auto_examples/02_data_ops/1131_optuna_choices.html#example-optuna-choices"><span class="std std-ref">Tuning DataOps with Optuna</span></a> for an example.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1661">#1661</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.apply()</span></code></a> now allows passing extra named arguments to the
 estimator’s methods through the parameters <code class="docutils literal notranslate"><span class="pre">fit_kwargs</span></code>, <code class="docutils literal notranslate"><span class="pre">predict_kwargs</span></code>
@@ -1085,7 +1087,7 @@ to train and tune machine learning models. Then, the DataOps plans can be export
 as <code class="docutils literal notranslate"><span class="pre">Learners</span></code> (<a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.SkrubLearner</span></code></a>), standalone objects that can be
 used on new data. More detail about the DataOps can be found in the
 <a class="reference internal" href="data_ops.html#user-guide-data-ops-index"><span class="std std-ref">User guide</span></a> and in the
-<a class="reference internal" href="auto_examples/data_ops/index.html#data-ops-examples-ref"><span class="std std-ref">examples</span></a>.</p></li>
+<a class="reference internal" href="auto_examples/02_data_ops/index.html#data-ops-examples-ref"><span class="std std-ref">examples</span></a>.</p></li>
 <li><p>The <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> has been improved with many new features. Series are
 now supported directly. It is now
 possible to skip computing column associations and generating plots when the
@@ -1094,10 +1096,10 @@ high cardinality and sorted columns are now highlighted in the report.</p></li>
 <li><p><a class="reference external" href="https://docs.python.org/3/library/selectors.html#module-selectors" title="(in Python v3.14)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">selectors</span></code></a>, <a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> and <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code> are now available,
 providing utilities for selecting columns to which a transformer should be applied
 in a flexible way. For more details, see the <a class="reference internal" href="modules/multi_column_operations/selectors.html#user-guide-selectors"><span class="std std-ref">User guide</span></a>
-and the <a class="reference internal" href="auto_examples/0090_apply_to_cols.html#sphx-glr-auto-examples-0090-apply-to-cols-py"><span class="std std-ref">example</span></a>.</p></li>
+and the <span class="xref std std-ref">example</span>.</p></li>
 <li><p>The <a class="reference internal" href="reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> has been added: it robustly rescales and smoothly
 clips numeric columns, enabling more robust handling of numeric columns
-with neural networks. See the <a class="reference internal" href="auto_examples/0100_squashing_scaler.html#sphx-glr-auto-examples-0100-squashing-scaler-py"><span class="std std-ref">example</span></a></p></li>
+with neural networks. See the <span class="xref std std-ref">example</span></p></li>
 </ul>
 </section>
 <section id="id19">
@@ -1115,7 +1117,7 @@ figures in the examples) and adding jitter to the parallel coordinate plots,
 <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a> experimented with the DataOps,
 suggested improvements and improved the examples, <a class="reference external" href="https://github.com/gaelvaroquaux">Gaël Varoquaux</a> , <a class="reference external" href="https://github.com/glemaitre">Guillaume Lemaitre</a>, <a class="reference external" href="https://github.com/adrinjalali">Adrin Jalali</a>, <a class="reference external" href="https://github.com/ogrisel">Olivier Grisel</a> and others participated
 through many discussions in defining the requirements and the public API.
-See <a class="reference internal" href="auto_examples/data_ops/index.html#data-ops-examples-ref"><span class="std std-ref">the examples</span></a> for
+See <a class="reference internal" href="auto_examples/02_data_ops/index.html#data-ops-examples-ref"><span class="std std-ref">the examples</span></a> for
 an introduction.</p></li>
 <li><p>The <a class="reference external" href="https://docs.python.org/3/library/selectors.html#module-selectors" title="(in Python v3.14)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">selectors</span></code></a> module provides utilities for selecting columns to which
 a transformer should be applied in a flexible way. The module was created in

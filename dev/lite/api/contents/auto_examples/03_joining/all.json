@@ -1,0 +1,71 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-06-16T12:38:53.122332Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-06-16T12:38:49.158257Z",
+      "mimetype": null,
+      "name": "0040_fuzzy_joining.ipynb",
+      "path": "auto_examples/03_joining/0040_fuzzy_joining.ipynb",
+      "size": 20065,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-06-16T12:38:53.122755Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-06-16T12:38:49.159257Z",
+      "mimetype": null,
+      "name": "0060_multiple_key_join.ipynb",
+      "path": "auto_examples/03_joining/0060_multiple_key_join.ipynb",
+      "size": 10097,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-06-16T12:38:53.123112Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-06-16T12:38:49.160335Z",
+      "mimetype": null,
+      "name": "0070_join_aggregation.ipynb",
+      "path": "auto_examples/03_joining/0070_join_aggregation.ipynb",
+      "size": 16351,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-06-16T12:38:53.123496Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-06-16T12:38:49.161115Z",
+      "mimetype": null,
+      "name": "0080_interpolation_join.ipynb",
+      "path": "auto_examples/03_joining/0080_interpolation_join.ipynb",
+      "size": 13378,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2026-06-16T12:38:53.123496Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-06-16T12:38:53.123496Z",
+  "mimetype": null,
+  "name": "03_joining",
+  "path": "auto_examples/03_joining",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

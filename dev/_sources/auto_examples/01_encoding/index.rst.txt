@@ -1,0 +1,84 @@
+
+
+.. _sphx_glr_auto_examples_01_encoding:
+
+Encoding features
+=================
+
+
+.. raw:: html
+
+  <div id='sg-tag-list' class='sphx-glr-tag-list'></div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+.. thumbnail-parent-div-open
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset.">
+
+.. only:: html
+
+  .. image:: /auto_examples/01_encoding/images/thumb/sphx_glr_0010_encodings_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/01_encoding/0010_encodings`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we explore the performance of string and categorical encoders available in skrub.">
+
+.. only:: html
+
+  .. image:: /auto_examples/01_encoding/images/thumb/sphx_glr_0020_text_with_string_encoders_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/01_encoding/0020_text_with_string_encoders`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Various string encoders: a sentiment analysis example</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example, we illustrate how to better integrate datetime features in machine learning models with the |DatetimeEncoder|.">
+
+.. only:: html
+
+  .. image:: /auto_examples/01_encoding/images/thumb/sphx_glr_0030_datetime_encoder_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/01_encoding/0030_datetime_encoder`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Handling datetime features with the DatetimeEncoder</div>
+    </div>
+
+
+.. thumbnail-parent-div-close
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /auto_examples/01_encoding/0010_encodings
+   /auto_examples/01_encoding/0020_text_with_string_encoders
+   /auto_examples/01_encoding/0030_datetime_encoder
+
