@@ -651,6 +651,10 @@ duration columns in pandas and polars has been fixed. Now, both classes convert
 durations to the total number of seconds (with fractional part). This is done
 by the new transformer <code class="xref py py-class docutils literal notranslate"><span class="pre">DurationToFloat</span></code>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2069">#2069</a> by
 <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p>An error that could arise when running <code class="docutils literal notranslate"><span class="pre">TableReport</span></code> on dataframes containing
+double dollar (<code class="docutils literal notranslate"><span class="pre">$$</span></code>) signs has been fixed.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2154">#2154</a> by <a class="reference external" href="https://github.com/Michenina-Lab">Katerina Michenina</a>,
+<a class="reference external" href="https://github.com/CecilyTS">CecilyTS</a>, <a class="reference external" href="https://github.com/eve2705">Eve Rabin</a>.</p></li>
 </ul>
 </section>
 <section id="deprecations">
