@@ -7,16 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Complex multi-table pipelines with Data Ops" />
+<meta property="og:title" content="Building complete pipelines with DataOps" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/data_ops.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Skrub provides an easy way to build complex, flexible machine learning pipelines. There are several needs that are not easily addressed with standard scikit-learn tools such as Pipeline and ColumnT..." />
+<meta property="og:description" content="A skrub DataOp is a complete machine learning pipeline —from data loading and wrangling to the final prediction— in a single object that can be fitted, tuned, cross-validated, and saved in a file l..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Skrub provides an easy way to build complex, flexible machine learning pipelines. There are several needs that are not easily addressed with standard scikit-learn tools such as Pipeline and ColumnT..." />
+<meta name="description" content="A skrub DataOp is a complete machine learning pipeline —from data loading and wrangling to the final prediction— in a single object that can be fitted, tuned, cross-validated, and saved in a file l..." />
 
-    <title>Complex multi-table pipelines with Data Ops &#8212; skrub</title>
+    <title>Building complete pipelines with DataOps &#8212; skrub</title>
   
   
   
@@ -46,6 +46,7 @@
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=7821ceae" />
   
   <!-- So that users can add custom icons -->
@@ -61,6 +62,7 @@
     <script src="_static/copybutton.js?v=fd10adb8"></script>
     <script src="_static/sg-tags.js?v=d80f6fa4"></script>
     <script src="_static/jupyterlite_sphinx.js?v=96e329c5"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'data_ops';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.18.0';
@@ -579,7 +581,7 @@
 
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Complex multi-table pipelines with Data Ops</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Building complete pipelines with DataOps</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="modules/data_ops/basics/what_are_data_ops.html">Basics of DataOps: the DataOps plan, variables, and learners</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/data_ops/basics/building_data_ops_plan.html">Building a simple DataOps plan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auto_tutorials/1110_data_ops_intro.html">Tutorial: Using Data Ops to build a machine-learning pipeline</a></li>
@@ -654,7 +656,7 @@
     
     <li class="breadcrumb-item"><a href="documentation.html" class="nav-link">User Guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Complex multi-table pipelines with Data Ops</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Building complete pipelines with DataOps</span></li>
   </ul>
 </nav>
 </div>
@@ -671,37 +673,53 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="complex-multi-table-pipelines-with-data-ops">
-<span id="user-guide-data-ops-index"></span><h1>Complex multi-table pipelines with Data Ops<a class="headerlink" href="#complex-multi-table-pipelines-with-data-ops" title="Link to this heading">#</a></h1>
-<p>Skrub provides an easy way to build complex, flexible machine learning pipelines.
-There are several needs that are not easily addressed with standard scikit-learn
-tools such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a> and
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ColumnTransformer</span></code></a>, and for which the skrub DataOps offer
-a solution:</p>
-<ul class="simple">
-<li><p>Multiple tables: We often have several tables of different shapes (for
-example, “Customers”, “Orders”, and “Products” tables) that need to be
-processed and assembled into a design matrix <code class="docutils literal notranslate"><span class="pre">X</span></code>. The target <code class="docutils literal notranslate"><span class="pre">y</span></code> may also
-be the result of some data processing. Standard scikit-learn estimators do not
-support this, as they expect right away a single design matrix <code class="docutils literal notranslate"><span class="pre">X</span></code> and a
-target array <code class="docutils literal notranslate"><span class="pre">y</span></code>, with one row per observation.</p></li>
-<li><p>DataFrame wrangling: Performing typical DataFrame operations such as
-projections, joins, and aggregations should be possible and allow leveraging
-the powerful and familiar APIs of <a class="reference external" href="https://pandas.pydata.org">Pandas</a> or
-<a class="reference external" href="https://docs.pola.rs/">Polars</a>.</p></li>
-<li><p>Hyperparameter tuning: Choices of estimators, hyperparameters, and even
-the pipeline architecture can be guided by validation scores. Specifying
-ranges of possible values outside of the pipeline itself (as in
-<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">GridSearchCV</span></code></a>) is difficult in complex
-pipelines.</p></li>
-<li><p>Iterative development: Building a pipeline step by step while inspecting
-intermediate results allows for a short feedback loop and early discovery of
-errors.</p></li>
-</ul>
-<p>In this section we cover all about the skrub Data Ops, from starting out with a
-simple example, to more advanced concepts like parameter tuning and and pipeline
-validation.</p>
-<section id="data-ops-basic-concepts">
+  <section id="building-complete-pipelines-with-dataops">
+<span id="user-guide-data-ops-index"></span><h1>Building complete pipelines with DataOps<a class="headerlink" href="#building-complete-pipelines-with-dataops" title="Link to this heading">#</a></h1>
+<p>A skrub DataOp is a complete machine learning pipeline —from data loading and
+wrangling to the final prediction— in a single object that can be fitted, tuned,
+cross-validated, and saved in a file like any scikit-learn estimator.</p>
+<p>By integrating the whole data processing, DataOps help to validate pipelines
+while <strong>avoiding data leakage</strong>, to <strong>tune complex modelling choices</strong>, and to keep
+track of important <strong>fitted (learned) state</strong>.</p>
+<p>To solve a machine-learning task we often need to combine multiple operations
+such as loading and filtering data, joining tables and computing aggregations,
+extracting numerical features, and fitting a classifier or regressor.</p>
+<p><strong>Storing state</strong>  Each of those operations may need to be fitted: to learn some
+information from training data and reuse it to apply consistent transformations
+to new data. This is the case for transformers like the
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">StandardScaler</span></code></a> and <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and
+estimators like <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomForestClassifier</span></code></a>.</p>
+<p><strong>Tuning</strong>  Moreover, each processing step may involve decisions that need to be
+tuned (<em>tuning</em> means finding the value that gives the best predictive
+performance), for example: what weather forecast features should I include to
+predict the load on an electric grid? How should I encode a product description
+to help predict the product’s category? What learning rate to set on a
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>?</p>
+<p><strong>Validation</strong>  Finally, the quality of predictions must be evaluated on
+held-out data (with a train/test split or cross-validation), taking care to
+<strong>avoid leakage</strong> of test data into the training set.</p>
+<p>Separating the data wrangling from the fitted estimator prevents correctly
+handling the tasks above. Skrub DataOps help by binding an arbitrary set of
+transformations of any number of inputs in a single estimator. These
+transformations can be easily parametrized with tunable choices. The resulting
+objects have built-in methods for cross-validation and tuning with either Optuna
+or scikit-learn, and for inspecting runs and intermediate results. Once fitted,
+they can be saved in a file, loaded, applied to new data as easily as a single
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header sd-bg-primary sd-bg-text-primary">
+<span class="sd-summary-text">Going beyond the scikit-learn Pipeline</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">To some extent, the DataOps exist for the same reasons as the simpler
+scikit-learn <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.pipeline.Pipeline</span></code></a> used in other parts of this
+documentation. However the Pipeline is too limited for many real-world problems:
+it can only represent a linear sequence of scikit-learn transformers, the design
+matrix and target variables must be constructed and divided into training and
+testing sets outside of the pipeline and the number of rows cannot change, only
+a single table can be handled, hyperparameter choices are difficult to define,
+etc. . Skrub DataOps remove those limitations and add several useful features
+such as interactive previews and integration with Optuna.</p>
+</div>
+</details><section id="data-ops-basic-concepts">
 <h2>Data Ops basic concepts<a class="headerlink" href="#data-ops-basic-concepts" title="Link to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
