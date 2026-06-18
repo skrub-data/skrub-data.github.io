@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**00:15.082** total execution time for 2 files **from auto_examples**:
+**00:14.955** total execution time for 2 files **from auto_examples**:
 
 .. container::
 
@@ -33,8 +33,8 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_auto_examples_0010_apply_to_cols.py` (``0010_apply_to_cols.py``)
-     - 00:12.190
-     - 558.5
+     - 00:11.997
+     - 553.2
    * - :ref:`sphx_glr_auto_examples_0050_deduplication.py` (``0050_deduplication.py``)
-     - 00:02.893
-     - 549.7
+     - 00:02.958
+     - 545.2
