@@ -49,6 +49,23 @@ Examples
     </div>
 
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The following example illustrates the use of the SquashingScaler, a transformer that can rescale and squash numerical features to a range that works well with neural networks and perhaps also other related models. Its basic idea is to rescale the features based on quantile statistics (to be robust to outliers), and then perform a smooth squashing function to limit the outputs to a pre-defined range. This transform has been found to even work well when applied to one-hot encoded features.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0100_squashing_scaler_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/0100_squashing_scaler`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">SquashingScaler: Robust numerical preprocessing for neural networks</div>
+    </div>
+
+
 .. thumbnail-parent-div-close
 
 .. raw:: html
@@ -61,6 +78,7 @@ Examples
 
    /auto_examples/0010_apply_to_cols
    /auto_examples/0050_deduplication
+   /auto_examples/0100_squashing_scaler
 
 Encoding features
 =================
@@ -149,23 +167,6 @@ Skrub DataOps
     <div class="sphx-glr-thumbnails">
 
 .. thumbnail-parent-div-open
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="The following example illustrates the use of the SquashingScaler, a transformer that can rescale and squash numerical features to a range that works well with neural networks and perhaps also other related models. Its basic idea is to rescale the features based on quantile statistics (to be robust to outliers), and then perform a smooth squashing function to limit the outputs to a pre-defined range. This transform has been found to even work well when applied to one-hot encoded features.">
-
-.. only:: html
-
-  .. image:: /auto_examples/02_data_ops/images/thumb/sphx_glr_0100_squashing_scaler_thumb.png
-    :alt:
-
-  :doc:`/auto_examples/02_data_ops/0100_squashing_scaler`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">SquashingScaler: Robust numerical preprocessing for neural networks</div>
-    </div>
-
 
 .. raw:: html
 

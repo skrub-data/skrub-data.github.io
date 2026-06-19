@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/auto_examples/02_data_ops/index.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="SquashingScaler: Robust numerical preprocessing for neural networks Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps Tuning DataOps with Optuna ..." />
-<meta property="og:image" content="https://skrub-data.github.io/stable/_images/sphx_glr_0100_squashing_scaler_thumb.png" />
+<meta property="og:description" content="Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps Tuning DataOps with Optuna Subsampling for faster development Use case: developing locally and ..." />
+<meta property="og:image" content="https://skrub-data.github.io/stable/_images/sphx_glr_1120_multiple_tables_thumb.png" />
 <meta property="og:image:alt" content="" />
-<meta name="description" content="SquashingScaler: Robust numerical preprocessing for neural networks Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps Tuning DataOps with Optuna ..." />
+<meta name="description" content="Multiples tables: building machine learning pipelines with DataOps Hyperparameter tuning with DataOps Tuning DataOps with Optuna Subsampling for faster development Use case: developing locally and ..." />
 
     <title>Skrub DataOps &#8212; skrub</title>
   
@@ -78,7 +78,7 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="SquashingScaler: Robust numerical preprocessing for neural networks" href="0100_squashing_scaler.html" />
+    <link rel="next" title="Multiples tables: building machine learning pipelines with DataOps" href="1120_multiple_tables.html" />
     <link rel="prev" title="Handling datetime features with the DatetimeEncoder" href="../01_encoding/0030_datetime_encoder.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -550,6 +550,7 @@
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../0010_apply_to_cols.html">Hands-On with Column Selection and Transformers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0050_deduplication.html">Deduplicating misspelled categories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0100_squashing_scaler.html">SquashingScaler: Robust numerical preprocessing for neural networks</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../01_encoding/index.html">Encoding features</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -559,7 +560,6 @@
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Skrub DataOps</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="0100_squashing_scaler.html">SquashingScaler: Robust numerical preprocessing for neural networks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1120_multiple_tables.html">Multiples tables: building machine learning pipelines with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1130_choices.html">Hyperparameter tuning with DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1131_optuna_choices.html">Tuning DataOps with Optuna</a></li>
@@ -644,10 +644,7 @@
                   
   <section id="skrub-dataops">
 <span id="data-ops-examples-ref"></span><span id="sphx-glr-auto-examples-02-data-ops"></span><h1>Skrub DataOps<a class="headerlink" href="#skrub-dataops" title="Link to this heading">#</a></h1>
-<div id='sg-tag-list' class='sphx-glr-tag-list'></div><div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="The following example illustrates the use of the SquashingScaler, a transformer that can rescale and squash numerical features to a range that works well with neural networks and perhaps also other related models. Its basic idea is to rescale the features based on quantile statistics (to be robust to outliers), and then perform a smooth squashing function to limit the outputs to a pre-defined range. This transform has been found to even work well when applied to one-hot encoded features."><img alt="" src="../../_images/sphx_glr_0100_squashing_scaler_thumb.png" />
-<p><a class="reference internal" href="0100_squashing_scaler.html"><span class="doc">SquashingScaler: Robust numerical preprocessing for neural networks</span></a></p>
-  <div class="sphx-glr-thumbnail-title">SquashingScaler: Robust numerical preprocessing for neural networks</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how to build a DataOps plan to handle pre-processing, validation and hyperparameter tuning of a dataset with multiple tables."><img alt="" src="../../_images/sphx_glr_1120_multiple_tables_thumb.png" />
+<div id='sg-tag-list' class='sphx-glr-tag-list'></div><div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how to build a DataOps plan to handle pre-processing, validation and hyperparameter tuning of a dataset with multiple tables."><img alt="" src="../../_images/sphx_glr_1120_multiple_tables_thumb.png" />
 <p><a class="reference internal" href="1120_multiple_tables.html"><span class="doc">Multiples tables: building machine learning pipelines with DataOps</span></a></p>
   <div class="sphx-glr-thumbnail-title">Multiples tables: building machine learning pipelines with DataOps</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains values or choices which may influence its prediction performance, such as hyperparameters (e.g., the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g., RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g., should we join a table to bring additional information or not)."><img alt="" src="../../_images/sphx_glr_1130_choices_thumb.svg" />
@@ -689,11 +686,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="0100_squashing_scaler.html"
+       href="1120_multiple_tables.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">SquashingScaler: Robust numerical preprocessing for neural networks</p>
+        <p class="prev-next-title">Multiples tables: building machine learning pipelines with DataOps</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
