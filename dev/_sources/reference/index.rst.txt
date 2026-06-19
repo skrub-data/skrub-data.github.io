@@ -614,6 +614,9 @@ Datasets
   datasets.fetch_drug_directory
 
 
+  datasets.fetch_electricity_forecasting
+
+
   datasets.fetch_employee_salaries
 
 
