@@ -35,8 +35,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=0790524f97105ba85085" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=0790524f97105ba85085" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -50,10 +50,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=7821ceae" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../../_static/scripts/fontawesome.js?digest=0790524f97105ba85085"></script>
+  <script defer src="../../_static/scripts/fontawesome.js?digest=a95f357e85573c9b56d5"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=0790524f97105ba85085" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=0790524f97105ba85085" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5" />
 
     <script src="../../_static/documentation_options.js?v=2b916371"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
@@ -65,7 +65,7 @@
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/generated/skrub.fuzzy_join';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.18.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.19.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.10.dev0';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -775,7 +775,7 @@
 <h1>fuzzy_join<a class="headerlink" href="#fuzzy-join" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.fuzzy_join">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">fuzzy_join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">left_on=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right_on=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix=''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dist=inf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_dist='random_pairs'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">string_encoder=Pipeline(steps=[('functiontransformer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FunctionTransformer(func=functools.partial(&lt;function</span> <span class="pre">fill_nulls&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value='')))</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">('tostr'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ToStr())</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">('hashingvectorizer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">HashingVectorizer(analyzer='char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range=(2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">4)))</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">('tfidftransformer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TfidfTransformer())])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_match_info=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_unmatched=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric='euclidean'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ea22a3b/skrub/_fuzzy_join.py#L13"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.fuzzy_join" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">fuzzy_join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">left_on=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right_on=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix=''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dist=inf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_dist='random_pairs'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">string_encoder=Pipeline(steps=[('functiontransformer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FunctionTransformer(func=functools.partial(&lt;function</span> <span class="pre">fill_nulls&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value='')))</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">('tostr'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ToStr())</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">('hashingvectorizer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">HashingVectorizer(analyzer='char_wb'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram_range=(2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">4)))</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">('tfidftransformer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TfidfTransformer())])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_match_info=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_unmatched=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric='euclidean'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/412e042/skrub/_fuzzy_join.py#L13"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.fuzzy_join" title="Link to this definition">#</a></dt>
 <dd><p>Perform a fuzzy (approximate) join between the left and right tables.</p>
 <p>Rows in the left table are joined to their closest match from the right
 table. The resulting table has the same rows (in the same order) as the
@@ -1038,8 +1038,8 @@ applied.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=0790524f97105ba85085"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=0790524f97105ba85085"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
