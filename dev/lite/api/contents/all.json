@@ -2,11 +2,11 @@
   "content": [
     {
       "content": null,
-      "created": "2026-06-24T09:39:57.541630Z",
+      "created": "2026-06-24T13:39:20.149266Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2026-06-24T09:39:57.541630Z",
+      "last_modified": "2026-06-24T13:39:20.149266Z",
       "mimetype": null,
       "name": "auto_examples",
       "path": "auto_examples",
@@ -16,11 +16,11 @@
     },
     {
       "content": null,
-      "created": "2026-06-24T09:39:57.544116Z",
+      "created": "2026-06-24T13:39:20.152004Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2026-06-24T09:39:57.544116Z",
+      "last_modified": "2026-06-24T13:39:20.152004Z",
       "mimetype": null,
       "name": "auto_tutorials",
       "path": "auto_tutorials",
@@ -29,11 +29,11 @@
       "writable": true
     }
   ],
-  "created": "2026-06-24T09:39:57.543279Z",
+  "created": "2026-06-24T13:39:20.151102Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2026-06-24T09:39:57.543279Z",
+  "last_modified": "2026-06-24T13:39:20.151102Z",
   "mimetype": null,
   "name": "",
   "path": "",

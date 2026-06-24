@@ -148,8 +148,8 @@ whether the basket is fraudulent or not.
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_95c3d93a-wrapper" hidden>
-        <template id="report_95c3d93a-template">
+    <div id="report_8dc4b8b2-wrapper" hidden>
+        <template id="report_8dc4b8b2-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1574,7 +1574,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="ae347ba7"
+                    id="6dcc5ed1"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1604,7 +1604,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="951da494"
+                    id="3effbc07"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1638,7 +1638,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="e87f2998"
+                    id="97af8ffc"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1686,7 +1686,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="c9a4b270"
+                    id="3b22ec57"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1714,7 +1714,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="34e22dd0"
+                    id="2d9bb4ff"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1744,7 +1744,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="d5509d56"
+                    id="e2dfa28b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1778,7 +1778,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="c1282739"
+                    id="257db22c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1806,7 +1806,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="8006952f"
+                    id="f38d3ebf"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1836,7 +1836,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="a048b0d4"
+                    id="21c213a3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1870,7 +1870,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="fd231e03"
+                    id="b221ab8f"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1898,7 +1898,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="90f0bc85"
+                    id="961d3384"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1928,7 +1928,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="a63a08e0"
+                    id="1b157942"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1962,7 +1962,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="e6c0f042"
+                    id="d5928fd4"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1990,7 +1990,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="15e8d4b9"
+                    id="2e0e1ce5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2020,7 +2020,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="39fb409e"
+                    id="6be89e7b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2054,7 +2054,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="dbc6b853"
+                    id="8050f418"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2082,7 +2082,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="8a061bec"
+                    id="bc5e61b5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2112,7 +2112,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="32dc3e75"
+                    id="5dceff20"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2186,7 +2186,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="cd371cd4"
+                    id="9cb980b1"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2214,7 +2214,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="389afb45"
+                    id="047c658c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2244,7 +2244,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="4ebbdb5c"
+                    id="ddb63b18"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2278,7 +2278,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="711eddf0"
+                    id="613bc4cf"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2306,7 +2306,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="7028a590"
+                    id="2b6a7c5a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2336,7 +2336,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="82ff3a6d"
+                    id="c8927ed8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2370,7 +2370,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="d45fa7eb"
+                    id="aa712730"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2398,7 +2398,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="3da46647"
+                    id="a5f507a0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2428,7 +2428,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="1eab4bcf"
+                    id="74322e9f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2462,7 +2462,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="80d44d2e"
+                    id="134ba9b6"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2490,7 +2490,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="67489907"
+                    id="17269c3e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2520,7 +2520,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="0c61972b"
+                    id="53766895"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2554,7 +2554,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <th
-                    id="2b43a62c"
+                    id="6678c9c7"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2582,7 +2582,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="9a9e79cf"
+                    id="4d15079a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2612,7 +2612,7 @@ whether the basket is fraudulent or not.
                 
                 
                     <td
-                    id="4563ce97"
+                    id="3f2b90ff"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3299,7 +3299,7 @@ whether the basket is fraudulent or not.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_95c3d93a">
+        <skrub-table-report class="report" id="report_8dc4b8b2">
         </skrub-table-report>
 
         <script type="module">
@@ -4403,7 +4403,7 @@ whether the basket is fraudulent or not.
         </script>
     </div>
 
-    <div id="report_95c3d93a-wrapper-fallback">
+    <div id="report_8dc4b8b2-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -4414,8 +4414,8 @@ whether the basket is fraudulent or not.
     </div>
 
     <script>
-     document.getElementById("report_95c3d93a-wrapper").removeAttribute("hidden");
-     document.getElementById("report_95c3d93a-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_8dc4b8b2-wrapper").removeAttribute("hidden");
+     document.getElementById("report_8dc4b8b2-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -4492,8 +4492,8 @@ column.
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_90964723-wrapper" hidden>
-        <template id="report_90964723-template">
+    <div id="report_dd47496e-wrapper" hidden>
+        <template id="report_dd47496e-template">
             <style>
              /*!
     Pure v3.0.0
@@ -5918,7 +5918,7 @@ column.
                 
                 
                     <th
-                    id="19065f8a"
+                    id="c7e0ca47"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -5948,7 +5948,7 @@ column.
                 
                 
                     <th
-                    id="68106a37"
+                    id="81dc75cc"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -5982,7 +5982,7 @@ column.
                 
                 
                     <th
-                    id="14b5a78e"
+                    id="daba93b7"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6016,7 +6016,7 @@ column.
                 
                 
                     <th
-                    id="44abef74"
+                    id="499048ba"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6050,7 +6050,7 @@ column.
                 
                 
                     <th
-                    id="caeebd8e"
+                    id="14b1cd7a"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6084,7 +6084,7 @@ column.
                 
                 
                     <th
-                    id="add0c77d"
+                    id="240bf096"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6118,7 +6118,7 @@ column.
                 
                 
                     <th
-                    id="5a042a80"
+                    id="0ef11566"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6152,7 +6152,7 @@ column.
                 
                 
                     <th
-                    id="8d90aa52"
+                    id="84d27163"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -6200,7 +6200,7 @@ column.
                 
                 
                     <th
-                    id="961767f3"
+                    id="558ccd73"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6228,7 +6228,7 @@ column.
                 
                 
                     <td
-                    id="a21a86fe"
+                    id="ddae99cf"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6258,7 +6258,7 @@ column.
                 
                 
                     <td
-                    id="1dd76d5a"
+                    id="e2dc11ec"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6288,7 +6288,7 @@ column.
                 
                 
                     <td
-                    id="c7b95e42"
+                    id="1df1b349"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6318,7 +6318,7 @@ column.
                 
                 
                     <td
-                    id="738a2ca5"
+                    id="3ab318ea"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6348,7 +6348,7 @@ column.
                 
                 
                     <td
-                    id="f3566449"
+                    id="2cd2c0a5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6378,7 +6378,7 @@ column.
                 
                 
                     <td
-                    id="88168f25"
+                    id="cf1cc0b8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6408,7 +6408,7 @@ column.
                 
                 
                     <td
-                    id="5905a3a6"
+                    id="53e8b110"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6442,7 +6442,7 @@ column.
                 
                 
                     <th
-                    id="02aca9a4"
+                    id="d589d551"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6470,7 +6470,7 @@ column.
                 
                 
                     <td
-                    id="3c93f22a"
+                    id="ae98561b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6500,7 +6500,7 @@ column.
                 
                 
                     <td
-                    id="228d3260"
+                    id="e9770556"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6530,7 +6530,7 @@ column.
                 
                 
                     <td
-                    id="27e2d9aa"
+                    id="b4ad7ac9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6560,7 +6560,7 @@ column.
                 
                 
                     <td
-                    id="0b713c91"
+                    id="8aca53c9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6590,7 +6590,7 @@ column.
                 
                 
                     <td
-                    id="a9779341"
+                    id="e1603d00"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6620,7 +6620,7 @@ column.
                 
                 
                     <td
-                    id="444a183a"
+                    id="bc5d42fb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6650,7 +6650,7 @@ column.
                 
                 
                     <td
-                    id="ca53c2c9"
+                    id="5e509fd0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6684,7 +6684,7 @@ column.
                 
                 
                     <th
-                    id="4eb388a5"
+                    id="cc344e89"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6712,7 +6712,7 @@ column.
                 
                 
                     <td
-                    id="f79534db"
+                    id="57ef218a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6742,7 +6742,7 @@ column.
                 
                 
                     <td
-                    id="2194faf6"
+                    id="b55313e5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6772,7 +6772,7 @@ column.
                 
                 
                     <td
-                    id="3fc3a6fc"
+                    id="4f307dd5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6802,7 +6802,7 @@ column.
                 
                 
                     <td
-                    id="e72300d5"
+                    id="7a053df1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6832,7 +6832,7 @@ column.
                 
                 
                     <td
-                    id="d5576a35"
+                    id="46b5a2ab"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6862,7 +6862,7 @@ column.
                 
                 
                     <td
-                    id="95d9baa5"
+                    id="3ede658f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6892,7 +6892,7 @@ column.
                 
                 
                     <td
-                    id="e9ef7389"
+                    id="669ce3ad"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6926,7 +6926,7 @@ column.
                 
                 
                     <th
-                    id="2827d968"
+                    id="d4c96328"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -6954,7 +6954,7 @@ column.
                 
                 
                     <td
-                    id="1fbdd3f8"
+                    id="78aa828c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -6984,7 +6984,7 @@ column.
                 
                 
                     <td
-                    id="d8f7b1cc"
+                    id="48d5bdb0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7014,7 +7014,7 @@ column.
                 
                 
                     <td
-                    id="1e98dd64"
+                    id="97c5e194"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7044,7 +7044,7 @@ column.
                 
                 
                     <td
-                    id="2e050b4b"
+                    id="d8e594dd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7074,7 +7074,7 @@ column.
                 
                 
                     <td
-                    id="90448e13"
+                    id="36ca0f98"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7104,7 +7104,7 @@ column.
                 
                 
                     <td
-                    id="51dd8128"
+                    id="bb3d1af7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7134,7 +7134,7 @@ column.
                 
                 
                     <td
-                    id="bbff0d47"
+                    id="6734d005"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7168,7 +7168,7 @@ column.
                 
                 
                     <th
-                    id="b76e6075"
+                    id="8f9f4200"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7196,7 +7196,7 @@ column.
                 
                 
                     <td
-                    id="5080e93d"
+                    id="8952db59"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7226,7 +7226,7 @@ column.
                 
                 
                     <td
-                    id="2b5f448c"
+                    id="5d37cafa"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7256,7 +7256,7 @@ column.
                 
                 
                     <td
-                    id="f0fe3b31"
+                    id="82cddd18"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7286,7 +7286,7 @@ column.
                 
                 
                     <td
-                    id="ae0f5e1d"
+                    id="55928abf"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7316,7 +7316,7 @@ column.
                 
                 
                     <td
-                    id="0ddc04c0"
+                    id="6ba76910"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7346,7 +7346,7 @@ column.
                 
                 
                     <td
-                    id="8b261690"
+                    id="8160d125"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7376,7 +7376,7 @@ column.
                 
                 
                     <td
-                    id="26d1e529"
+                    id="895d3dcd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7500,7 +7500,7 @@ column.
                 
                 
                     <th
-                    id="bfd152be"
+                    id="74fb05c8"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7528,7 +7528,7 @@ column.
                 
                 
                     <td
-                    id="2cab355d"
+                    id="de16f061"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7558,7 +7558,7 @@ column.
                 
                 
                     <td
-                    id="9bce7465"
+                    id="9ae4e877"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7588,7 +7588,7 @@ column.
                 
                 
                     <td
-                    id="c9a59c3e"
+                    id="cfe85f53"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7618,7 +7618,7 @@ column.
                 
                 
                     <td
-                    id="31d57a17"
+                    id="6ff0403b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7648,7 +7648,7 @@ column.
                 
                 
                     <td
-                    id="2b0a7238"
+                    id="4a1399de"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7678,7 +7678,7 @@ column.
                 
                 
                     <td
-                    id="e48dec82"
+                    id="f03973d1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7708,7 +7708,7 @@ column.
                 
                 
                     <td
-                    id="93f6e80f"
+                    id="c387d6dc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7742,7 +7742,7 @@ column.
                 
                 
                     <th
-                    id="720b9c65"
+                    id="bdac37a6"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -7770,7 +7770,7 @@ column.
                 
                 
                     <td
-                    id="cbcc93d3"
+                    id="91f08506"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7800,7 +7800,7 @@ column.
                 
                 
                     <td
-                    id="d507620e"
+                    id="7d709e04"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7830,7 +7830,7 @@ column.
                 
                 
                     <td
-                    id="ddd0e961"
+                    id="fe543432"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7860,7 +7860,7 @@ column.
                 
                 
                     <td
-                    id="e297b014"
+                    id="247fadef"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7890,7 +7890,7 @@ column.
                 
                 
                     <td
-                    id="7b659ec6"
+                    id="51916c10"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7920,7 +7920,7 @@ column.
                 
                 
                     <td
-                    id="970610b3"
+                    id="52acf428"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7950,7 +7950,7 @@ column.
                 
                 
                     <td
-                    id="1c387fe7"
+                    id="9f0cbd12"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -7984,7 +7984,7 @@ column.
                 
                 
                     <th
-                    id="f07d6869"
+                    id="1eb29292"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -8012,7 +8012,7 @@ column.
                 
                 
                     <td
-                    id="449a8263"
+                    id="fce3ca59"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8042,7 +8042,7 @@ column.
                 
                 
                     <td
-                    id="aa003552"
+                    id="bddb26ea"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8072,7 +8072,7 @@ column.
                 
                 
                     <td
-                    id="597a8b1b"
+                    id="209adf41"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8102,7 +8102,7 @@ column.
                 
                 
                     <td
-                    id="02cff5a2"
+                    id="b8c281e0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8132,7 +8132,7 @@ column.
                 
                 
                     <td
-                    id="b444228c"
+                    id="55f6fe61"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8162,7 +8162,7 @@ column.
                 
                 
                     <td
-                    id="d01cb9e5"
+                    id="bb16853f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8192,7 +8192,7 @@ column.
                 
                 
                     <td
-                    id="8f713333"
+                    id="4263c26d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8226,7 +8226,7 @@ column.
                 
                 
                     <th
-                    id="693bc544"
+                    id="4af44e10"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -8254,7 +8254,7 @@ column.
                 
                 
                     <td
-                    id="a193ba8f"
+                    id="3a6f5ffa"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8284,7 +8284,7 @@ column.
                 
                 
                     <td
-                    id="3c02ff83"
+                    id="d0af28fc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8314,7 +8314,7 @@ column.
                 
                 
                     <td
-                    id="7697a264"
+                    id="8ab39073"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8344,7 +8344,7 @@ column.
                 
                 
                     <td
-                    id="ec167af0"
+                    id="d7aac9ab"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8374,7 +8374,7 @@ column.
                 
                 
                     <td
-                    id="dd0ee4c4"
+                    id="32fe80c6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8404,7 +8404,7 @@ column.
                 
                 
                     <td
-                    id="d355d57b"
+                    id="5cc3899b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8434,7 +8434,7 @@ column.
                 
                 
                     <td
-                    id="2571835d"
+                    id="a8d73b2b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8468,7 +8468,7 @@ column.
                 
                 
                     <th
-                    id="c33f9062"
+                    id="e03cfd31"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -8496,7 +8496,7 @@ column.
                 
                 
                     <td
-                    id="08fea6f1"
+                    id="0faf5888"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8526,7 +8526,7 @@ column.
                 
                 
                     <td
-                    id="14ef2bbc"
+                    id="3d918e56"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8556,7 +8556,7 @@ column.
                 
                 
                     <td
-                    id="6555d22f"
+                    id="2ce44e47"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8586,7 +8586,7 @@ column.
                 
                 
                     <td
-                    id="8620ba81"
+                    id="2ad7ff5a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8616,7 +8616,7 @@ column.
                 
                 
                     <td
-                    id="4091da22"
+                    id="f03528ea"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8646,7 +8646,7 @@ column.
                 
                 
                     <td
-                    id="27d1df72"
+                    id="9e079005"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8676,7 +8676,7 @@ column.
                 
                 
                     <td
-                    id="9df9c1e3"
+                    id="288a19be"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9869,7 +9869,7 @@ column.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_90964723">
+        <skrub-table-report class="report" id="report_dd47496e">
         </skrub-table-report>
 
         <script type="module">
@@ -10973,7 +10973,7 @@ column.
         </script>
     </div>
 
-    <div id="report_90964723-wrapper-fallback">
+    <div id="report_dd47496e-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -10984,8 +10984,8 @@ column.
     </div>
 
     <script>
-     document.getElementById("report_90964723-wrapper").removeAttribute("hidden");
-     document.getElementById("report_90964723-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_dd47496e-wrapper").removeAttribute("hidden");
+     document.getElementById("report_dd47496e-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -11252,8 +11252,8 @@ amount for each kind of product in a basket:
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_185ea7ea-wrapper" hidden>
-        <template id="report_185ea7ea-template">
+    <div id="report_8ada802e-wrapper" hidden>
+        <template id="report_8ada802e-template">
             <style>
              /*!
     Pure v3.0.0
@@ -12678,7 +12678,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="17c63532"
+                    id="46db57bf"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -12708,7 +12708,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="1a418a31"
+                    id="123fb23c"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12742,7 +12742,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="89d0e5a7"
+                    id="7abcf57a"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12776,7 +12776,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="1f6c72ab"
+                    id="3609828e"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12810,7 +12810,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="b887201e"
+                    id="12376fbb"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12844,7 +12844,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="91453e58"
+                    id="6be1f781"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12878,7 +12878,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="d61efaee"
+                    id="7555e73b"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12912,7 +12912,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="269301cd"
+                    id="001bd98d"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12946,7 +12946,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="cb45ebd2"
+                    id="e21e148e"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -12994,7 +12994,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="79dd02a7"
+                    id="2a221792"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -13022,7 +13022,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="bec69a6c"
+                    id="0e739a05"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13052,7 +13052,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="7851a12f"
+                    id="afff6137"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13082,7 +13082,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="0564e743"
+                    id="90d36933"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13112,7 +13112,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="31d27c29"
+                    id="eae67472"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13142,7 +13142,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="763d8e17"
+                    id="0bad8cd8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13172,7 +13172,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="9e6f5e27"
+                    id="3484cdfb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13202,7 +13202,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="6631ed0f"
+                    id="06916d75"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13232,7 +13232,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="f332f8be"
+                    id="27f81b9d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13266,7 +13266,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="0d2853d7"
+                    id="2cb0e352"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -13294,7 +13294,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="a22695c1"
+                    id="552fc90c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13324,7 +13324,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="6e9b2ac5"
+                    id="10d59640"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13354,7 +13354,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="d6d3e133"
+                    id="d46c02ec"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13384,7 +13384,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="62c1e06b"
+                    id="b1f3142a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13414,7 +13414,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="d8000139"
+                    id="d6b1a9ee"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13444,7 +13444,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="fbd38878"
+                    id="dd05760c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13474,7 +13474,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="36ba6257"
+                    id="0f19316c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13504,7 +13504,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="7f4a26fd"
+                    id="12a3a006"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13538,7 +13538,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="2bdd7dee"
+                    id="aefe7793"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -13566,7 +13566,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="1a2ca2e6"
+                    id="6db1ec3a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13596,7 +13596,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="2e239413"
+                    id="6957554d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13626,7 +13626,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="36006012"
+                    id="0f140d15"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13656,7 +13656,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="569c6354"
+                    id="4d99f232"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13686,7 +13686,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="98a22199"
+                    id="ed45ba6d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13716,7 +13716,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="792862d1"
+                    id="d8b194cc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13746,7 +13746,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="1d6861d7"
+                    id="1d8541c9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13776,7 +13776,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="d10a2d4c"
+                    id="73bdb809"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13810,7 +13810,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="776b7ad8"
+                    id="a11b4b38"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -13838,7 +13838,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="07bc0379"
+                    id="67d53585"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13868,7 +13868,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="20dedf00"
+                    id="425b8052"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13898,7 +13898,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="bab43870"
+                    id="31953bed"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13928,7 +13928,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="4d6463f4"
+                    id="c5724dc6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13958,7 +13958,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="3650e041"
+                    id="08ce3319"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13988,7 +13988,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="ec0f4d09"
+                    id="15056439"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14018,7 +14018,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="2a21382d"
+                    id="730118a2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14048,7 +14048,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="e55764c1"
+                    id="b1130dc9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14082,7 +14082,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="ae49ce79"
+                    id="0bb413ea"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -14110,7 +14110,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="30190d4d"
+                    id="72d54a69"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14140,7 +14140,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="537a29bd"
+                    id="9aab1925"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14170,7 +14170,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="3cc2b9f9"
+                    id="cb781caa"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14200,7 +14200,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="23cb69f4"
+                    id="728edc9a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14230,7 +14230,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="065296c6"
+                    id="f64e9eb7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14260,7 +14260,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="2d2593f8"
+                    id="ede2eac6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14290,7 +14290,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="10cd7bdc"
+                    id="87abe35b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14320,7 +14320,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="ef83661c"
+                    id="36a372d4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14454,7 +14454,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="193d97ad"
+                    id="dbee600c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -14482,7 +14482,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="c6d6462a"
+                    id="9d4ed39f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14512,7 +14512,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="46814eb4"
+                    id="f93c4207"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14542,7 +14542,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="09a59407"
+                    id="b6f28d4a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14572,7 +14572,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="b418ba35"
+                    id="d2e73e7b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14602,7 +14602,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="b33d78f9"
+                    id="66859515"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14632,7 +14632,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="61e65ee9"
+                    id="272d88e7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14662,7 +14662,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="fed9c682"
+                    id="f8309805"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14692,7 +14692,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="194569e3"
+                    id="b196fe6d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14726,7 +14726,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="fd014498"
+                    id="5a05625a"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -14754,7 +14754,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="727abc00"
+                    id="b891173a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14784,7 +14784,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="478a05bf"
+                    id="8179f9d1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14814,7 +14814,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="1ed12776"
+                    id="16e0cc8b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14844,7 +14844,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="75be0f76"
+                    id="dc33cb84"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14874,7 +14874,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="298fe0b4"
+                    id="b4d3950b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14904,7 +14904,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="0826ec61"
+                    id="8ccf3086"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14934,7 +14934,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="1025d89c"
+                    id="a24b6afe"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14964,7 +14964,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="7dad6c23"
+                    id="ae0b5790"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14998,7 +14998,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="cb76bb3c"
+                    id="3a2d25b2"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -15026,7 +15026,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="4247c272"
+                    id="1dbb5939"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15056,7 +15056,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="e927b0cb"
+                    id="8b93ba44"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15086,7 +15086,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="e75c9dee"
+                    id="0b0c50f6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15116,7 +15116,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="519fd2c0"
+                    id="2e242930"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15146,7 +15146,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="817de42f"
+                    id="64805717"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15176,7 +15176,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="dbed3359"
+                    id="6af78459"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15206,7 +15206,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="ded63567"
+                    id="ec61dc9a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15236,7 +15236,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="d1d9be30"
+                    id="3445f477"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15270,7 +15270,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="1a3d81e2"
+                    id="220e6b9d"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -15298,7 +15298,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="a3cc3912"
+                    id="f0b0cee9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15328,7 +15328,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="4bd7d824"
+                    id="2e55afe1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15358,7 +15358,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="aa38e30a"
+                    id="e64a73c1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15388,7 +15388,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="212637ea"
+                    id="8239baee"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15418,7 +15418,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="6423b074"
+                    id="3db8de4b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15448,7 +15448,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="89e56632"
+                    id="97fed589"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15478,7 +15478,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="cdb8adcb"
+                    id="2a66a347"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15508,7 +15508,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="7d500452"
+                    id="8a0dbcec"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15542,7 +15542,7 @@ amount for each kind of product in a basket:
                 
                 
                     <th
-                    id="0175bdc3"
+                    id="e37e4c77"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -15570,7 +15570,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="68645ec8"
+                    id="31872bce"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15600,7 +15600,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="a3dc3f26"
+                    id="82006092"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15630,7 +15630,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="e56ee14e"
+                    id="6a793477"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15660,7 +15660,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="e5cabb85"
+                    id="e21d2b20"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15690,7 +15690,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="34887de2"
+                    id="0151524c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15720,7 +15720,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="276d0cfa"
+                    id="fbb33ed7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15750,7 +15750,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="eef09a51"
+                    id="1ad6912b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15780,7 +15780,7 @@ amount for each kind of product in a basket:
                 
                 
                     <td
-                    id="1bd4fc50"
+                    id="4b44f1f7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17095,7 +17095,7 @@ amount for each kind of product in a basket:
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_185ea7ea">
+        <skrub-table-report class="report" id="report_8ada802e">
         </skrub-table-report>
 
         <script type="module">
@@ -18199,7 +18199,7 @@ amount for each kind of product in a basket:
         </script>
     </div>
 
-    <div id="report_185ea7ea-wrapper-fallback">
+    <div id="report_8ada802e-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -18210,8 +18210,8 @@ amount for each kind of product in a basket:
     </div>
 
     <script>
-     document.getElementById("report_185ea7ea-wrapper").removeAttribute("hidden");
-     document.getElementById("report_185ea7ea-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_8ada802e-wrapper").removeAttribute("hidden");
+     document.getElementById("report_8ada802e-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -18651,8 +18651,8 @@ add the learning rate as a hyperparameter to tune.
     </details>
     <strong><samp>Result:</samp></strong>
 
-    <div id="report_1833f029-wrapper" hidden>
-        <template id="report_1833f029-template">
+    <div id="report_d4cd70bb-wrapper" hidden>
+        <template id="report_d4cd70bb-template">
             <style>
              /*!
     Pure v3.0.0
@@ -20077,7 +20077,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="aa442cfe"
+                    id="012da776"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -20107,7 +20107,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="edd5db56"
+                    id="c8d20287"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -20155,7 +20155,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="839777e7"
+                    id="9fde7c06"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20183,7 +20183,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="c1db8b6a"
+                    id="64132089"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20217,7 +20217,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="e544f243"
+                    id="5c27d4ce"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20245,7 +20245,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="c0024b5d"
+                    id="781f6891"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20279,7 +20279,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="7ace7b27"
+                    id="8d443c60"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20307,7 +20307,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="4a1cabab"
+                    id="e14d326d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20341,7 +20341,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="286b2c1e"
+                    id="6a4e160c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20369,7 +20369,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="672634ae"
+                    id="2167b5b7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20403,7 +20403,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="45bbc25f"
+                    id="7e50bafa"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20431,7 +20431,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="3df6470b"
+                    id="a965c6ad"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20495,7 +20495,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="5405992e"
+                    id="229e63af"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20523,7 +20523,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="93fa5a98"
+                    id="6c5b45c4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20557,7 +20557,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="d381dbbd"
+                    id="7c98cf48"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20585,7 +20585,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="4967e9fe"
+                    id="90a3e46a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20619,7 +20619,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="6bf1d542"
+                    id="ab99d41f"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20647,7 +20647,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="4bc9a6bd"
+                    id="0511235c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20681,7 +20681,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="f34a61c4"
+                    id="9f09a5d5"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20709,7 +20709,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="183167dc"
+                    id="88d4348b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -20743,7 +20743,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <th
-                    id="7fb77360"
+                    id="cd5e6342"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -20771,7 +20771,7 @@ add the learning rate as a hyperparameter to tune.
                 
                 
                     <td
-                    id="983987b6"
+                    id="bbcb4c62"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -21338,7 +21338,7 @@ add the learning rate as a hyperparameter to tune.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_1833f029">
+        <skrub-table-report class="report" id="report_d4cd70bb">
         </skrub-table-report>
 
         <script type="module">
@@ -22442,7 +22442,7 @@ add the learning rate as a hyperparameter to tune.
         </script>
     </div>
 
-    <div id="report_1833f029-wrapper-fallback">
+    <div id="report_d4cd70bb-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -22453,8 +22453,8 @@ add the learning rate as a hyperparameter to tune.
     </div>
 
     <script>
-     document.getElementById("report_1833f029-wrapper").removeAttribute("hidden");
-     document.getElementById("report_1833f029-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_d4cd70bb-wrapper").removeAttribute("hidden");
+     document.getElementById("report_d4cd70bb-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     </div>
@@ -22517,8 +22517,8 @@ our search result and some plotting logic.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_d90ab506-wrapper" hidden>
-        <template id="report_d90ab506-template">
+    <div id="report_7bd87ae5-wrapper" hidden>
+        <template id="report_7bd87ae5-template">
             <style>
              /*!
     Pure v3.0.0
@@ -23966,7 +23966,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="b5006e44"
+                    id="fa5be4ac"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -23996,7 +23996,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="e82e3765"
+                    id="26b90719"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -24030,7 +24030,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="99211610"
+                    id="a5b7b816"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -24064,7 +24064,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="08332e0c"
+                    id="4b471b89"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -24098,7 +24098,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="66c7d773"
+                    id="7bbff7c4"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -24146,7 +24146,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="c0cc86cf"
+                    id="03411122"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -24174,7 +24174,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="8c99eaa2"
+                    id="fbb72dca"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24204,7 +24204,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="42f46d5e"
+                    id="5c757648"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24234,7 +24234,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="d7d1f247"
+                    id="c26080ee"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24264,7 +24264,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="a19fe056"
+                    id="a6daf1f2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24285,12 +24285,12 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.8863515228276642"
-                    data-value-str="0.8863515228276642"
+                    data-value-repr="0.8843849726858106"
+                    data-value-str="0.8843849726858106"
                 
                     data-column-idx="3"
                 
-                    >0.886</td>
+                    >0.884</td>
                 
                 </tr>
             
@@ -24298,7 +24298,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="7dd584d3"
+                    id="465b1d53"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -24326,7 +24326,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="2e11b3c0"
+                    id="2e25cde2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24347,16 +24347,16 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="15"
-                    data-value-str="15"
+                    data-value-repr="10"
+                    data-value-str="10"
                 
                     data-column-idx="0"
                 
-                    >15</td>
+                    >10</td>
                 
                 
                     <td
-                    id="ae108ec0"
+                    id="aed89f17"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24377,16 +24377,16 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="&#39;MinHash&#39;"
-                    data-value-str="MinHash"
+                    data-value-repr="&#39;LSA&#39;"
+                    data-value-str="LSA"
                 
                     data-column-idx="1"
                 
-                    >MinHash</td>
+                    >LSA</td>
                 
                 
                     <td
-                    id="31396597"
+                    id="a1e45e34"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24407,16 +24407,16 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.05614844277029357"
-                    data-value-str="0.05614844277029357"
+                    data-value-repr="0.06728592361054951"
+                    data-value-str="0.06728592361054951"
                 
                     data-column-idx="2"
                 
-                    >0.0561</td>
+                    >0.0673</td>
                 
                 
                     <td
-                    id="0ebf5728"
+                    id="f20bfca0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24437,12 +24437,12 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.8861076034469301"
-                    data-value-str="0.8861076034469301"
+                    data-value-repr="0.8827329177204039"
+                    data-value-str="0.8827329177204039"
                 
                     data-column-idx="3"
                 
-                    >0.886</td>
+                    >0.883</td>
                 
                 </tr>
             
@@ -24450,7 +24450,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="c98f449c"
+                    id="2944e22b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -24478,7 +24478,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="cec6ea16"
+                    id="5dc0f35d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24508,7 +24508,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="8d348300"
+                    id="b6810db7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24538,7 +24538,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="c5caafd9"
+                    id="3490f1f5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24568,7 +24568,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="32eeaa37"
+                    id="099bc421"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24589,12 +24589,12 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.8842522517210585"
-                    data-value-str="0.8842522517210585"
+                    data-value-repr="0.8823536848432955"
+                    data-value-str="0.8823536848432955"
                 
                     data-column-idx="3"
                 
-                    >0.884</td>
+                    >0.882</td>
                 
                 </tr>
             
@@ -24602,7 +24602,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="78aae961"
+                    id="838a13bd"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -24630,7 +24630,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="b6b6ee2e"
+                    id="53c8f78c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24651,16 +24651,16 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="10"
-                    data-value-str="10"
+                    data-value-repr="13"
+                    data-value-str="13"
                 
                     data-column-idx="0"
                 
-                    >10</td>
+                    >13</td>
                 
                 
                     <td
-                    id="b6f90cb5"
+                    id="e113141a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24681,16 +24681,16 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="&#39;LSA&#39;"
-                    data-value-str="LSA"
+                    data-value-repr="&#39;MinHash&#39;"
+                    data-value-str="MinHash"
                 
                     data-column-idx="1"
                 
-                    >LSA</td>
+                    >MinHash</td>
                 
                 
                     <td
-                    id="12201b87"
+                    id="29ed7b3d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24711,16 +24711,16 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.06728592361054951"
-                    data-value-str="0.06728592361054951"
+                    data-value-repr="0.08669454942891722"
+                    data-value-str="0.08669454942891722"
                 
                     data-column-idx="2"
                 
-                    >0.0673</td>
+                    >0.0867</td>
                 
                 
                     <td
-                    id="b17aea3c"
+                    id="9fb0aed2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24741,12 +24741,12 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.8823790980853893"
-                    data-value-str="0.8823790980853893"
+                    data-value-repr="0.8796179454313225"
+                    data-value-str="0.8796179454313225"
                 
                     data-column-idx="3"
                 
-                    >0.882</td>
+                    >0.880</td>
                 
                 </tr>
             
@@ -24754,7 +24754,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="a2c52654"
+                    id="53f4e981"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -24782,7 +24782,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="0c747424"
+                    id="646a89d2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24803,16 +24803,16 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="13"
-                    data-value-str="13"
+                    data-value-repr="15"
+                    data-value-str="15"
                 
                     data-column-idx="0"
                 
-                    >13</td>
+                    >15</td>
                 
                 
                     <td
-                    id="0b4433ea"
+                    id="e23af636"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24842,7 +24842,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="fd351035"
+                    id="3c441b2b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24863,16 +24863,16 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.08669454942891722"
-                    data-value-str="0.08669454942891722"
+                    data-value-repr="0.05614844277029357"
+                    data-value-str="0.05614844277029357"
                 
                     data-column-idx="2"
                 
-                    >0.0867</td>
+                    >0.0561</td>
                 
                 
                     <td
-                    id="bf7ad8e5"
+                    id="30842d5b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24893,12 +24893,12 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.8811360130757139"
-                    data-value-str="0.8811360130757139"
+                    data-value-repr="0.8788551864342631"
+                    data-value-str="0.8788551864342631"
                 
                     data-column-idx="3"
                 
-                    >0.881</td>
+                    >0.879</td>
                 
                 </tr>
             
@@ -24906,7 +24906,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="3f74f93e"
+                    id="46e16a7b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -24934,7 +24934,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="2c946715"
+                    id="8395ba8a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24964,7 +24964,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="cb96ebc1"
+                    id="729b82e0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -24994,7 +24994,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="b5904806"
+                    id="2891f603"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25024,7 +25024,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="fda94e93"
+                    id="c47ec9c4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25045,8 +25045,8 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.8763181227496629"
-                    data-value-str="0.8763181227496629"
+                    data-value-repr="0.8756355937519145"
+                    data-value-str="0.8756355937519145"
                 
                     data-column-idx="3"
                 
@@ -25058,7 +25058,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="81accb23"
+                    id="56376272"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -25086,7 +25086,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="d9cac53a"
+                    id="8f470a1c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25116,7 +25116,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="cf419b98"
+                    id="d6a7cb2f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25146,7 +25146,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="92dc0fff"
+                    id="808b51dd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25176,7 +25176,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="f8b55f8b"
+                    id="80ae96b4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25197,12 +25197,12 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.7548762354178535"
-                    data-value-str="0.7548762354178535"
+                    data-value-repr="0.7457005949291824"
+                    data-value-str="0.7457005949291824"
                 
                     data-column-idx="3"
                 
-                    >0.755</td>
+                    >0.746</td>
                 
                 </tr>
             
@@ -25210,7 +25210,7 @@ our search result and some plotting logic.
                 
                 
                     <th
-                    id="d8f6b8a3"
+                    id="de01edd9"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -25238,7 +25238,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="9e4c230e"
+                    id="58857edc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25268,7 +25268,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="e3d25a18"
+                    id="0b8bcaff"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25298,7 +25298,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="21b8cd43"
+                    id="658c8624"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25328,7 +25328,7 @@ our search result and some plotting logic.
                 
                 
                     <td
-                    id="ded273ec"
+                    id="15bd7eba"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -25349,12 +25349,12 @@ our search result and some plotting logic.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.7147929147270633"
-                    data-value-str="0.7147929147270633"
+                    data-value-repr="0.7049030403619916"
+                    data-value-str="0.7049030403619916"
                 
                     data-column-idx="3"
                 
-                    >0.715</td>
+                    >0.705</td>
                 
                 </tr>
             
@@ -25483,7 +25483,7 @@ our search result and some plotting logic.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T09:29:12.258057</dc:date>
+        <dc:date>2026-06-24T13:29:07.559084</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -25513,7 +25513,7 @@ our search result and some plotting logic.
     L 40.198864 45.284542 
     L 27.107955 45.284542 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 40.198864 79.570257 
@@ -25521,7 +25521,7 @@ our search result and some plotting logic.
     L 53.289773 45.284542 
     L 40.198864 45.284542 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 53.289773 79.570257 
@@ -25529,7 +25529,7 @@ our search result and some plotting logic.
     L 66.380682 79.570257 
     L 53.289773 79.570257 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 66.380682 79.570257 
@@ -25537,7 +25537,7 @@ our search result and some plotting logic.
     L 79.471591 45.284542 
     L 66.380682 45.284542 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 79.471591 79.570257 
@@ -25545,7 +25545,7 @@ our search result and some plotting logic.
     L 92.5625 79.570257 
     L 79.471591 79.570257 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 92.5625 79.570257 
@@ -25553,7 +25553,7 @@ our search result and some plotting logic.
     L 105.653409 45.284542 
     L 92.5625 45.284542 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 105.653409 79.570257 
@@ -25561,7 +25561,7 @@ our search result and some plotting logic.
     L 118.744318 10.998828 
     L 105.653409 10.998828 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 118.744318 79.570257 
@@ -25569,7 +25569,7 @@ our search result and some plotting logic.
     L 131.835227 79.570257 
     L 118.744318 79.570257 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 131.835227 79.570257 
@@ -25577,7 +25577,7 @@ our search result and some plotting logic.
     L 144.926136 79.570257 
     L 131.835227 79.570257 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 144.926136 79.570257 
@@ -25585,18 +25585,18 @@ our search result and some plotting logic.
     L 158.017045 10.998828 
     L 144.926136 10.998828 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m00ed366315" d="M 0 0 
+           <path id="ma817b76ae2" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m00ed366315" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#ma817b76ae2" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -25606,7 +25606,7 @@ our search result and some plotting logic.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m00ed366315" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#ma817b76ae2" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -25616,7 +25616,7 @@ our search result and some plotting logic.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m00ed366315" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#ma817b76ae2" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -25628,12 +25628,12 @@ our search result and some plotting logic.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m36139149cc" d="M 0 0 
+           <path id="mbf7de2df21" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m36139149cc" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mbf7de2df21" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -25643,7 +25643,7 @@ our search result and some plotting logic.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m36139149cc" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mbf7de2df21" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -25653,7 +25653,7 @@ our search result and some plotting logic.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m36139149cc" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mbf7de2df21" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -25674,7 +25674,7 @@ our search result and some plotting logic.
       </g>
      </g>
      <defs>
-      <clipPath id="pefa9005f1a">
+      <clipPath id="pc828cf572b">
        <rect x="20.5625" y="7.570257" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -25752,7 +25752,7 @@ our search result and some plotting logic.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T09:29:12.332374</dc:date>
+        <dc:date>2026-06-24T13:29:07.604274</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -25782,7 +25782,7 @@ our search result and some plotting logic.
     L 110.624777 23.054545 
     L 57.139063 23.054545 
     z
-    " clip-path="url(#p7abee8d242)" style="fill: #ee854a"/>
+    " clip-path="url(#p269d2c31ec)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 57.139063 20.145455 
@@ -25790,18 +25790,18 @@ our search result and some plotting logic.
     L 146.28192 8.509091 
     L 57.139063 8.509091 
     z
-    " clip-path="url(#p7abee8d242)" style="fill: #ee854a"/>
+    " clip-path="url(#p269d2c31ec)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m0f5102c6bf" d="M 0 0 
+           <path id="mf24ead9ea9" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m0f5102c6bf" x="57.139063" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf24ead9ea9" x="57.139063" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -25811,7 +25811,7 @@ our search result and some plotting logic.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m0f5102c6bf" x="92.796205" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf24ead9ea9" x="92.796205" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -25821,7 +25821,7 @@ our search result and some plotting logic.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m0f5102c6bf" x="128.453348" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf24ead9ea9" x="128.453348" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -25833,12 +25833,12 @@ our search result and some plotting logic.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m72d8b394e8" d="M 0 0 
+           <path id="m7820f6466c" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m72d8b394e8" x="57.139063" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m7820f6466c" x="57.139063" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -25848,7 +25848,7 @@ our search result and some plotting logic.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m72d8b394e8" x="57.139063" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m7820f6466c" x="57.139063" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -25895,7 +25895,7 @@ our search result and some plotting logic.
       </g>
      </g>
      <defs>
-      <clipPath id="p7abee8d242">
+      <clipPath id="p269d2c31ec">
        <rect x="57.139063" y="7.2" width="93.6" height="28.8"/>
       </clipPath>
      </defs>
@@ -26066,7 +26066,7 @@ our search result and some plotting logic.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T09:29:12.404824</dc:date>
+        <dc:date>2026-06-24T13:29:07.651996</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -26096,7 +26096,7 @@ our search result and some plotting logic.
     L 40.198863 10.998828 
     L 27.107955 10.998828 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 40.198863 79.570257 
@@ -26104,7 +26104,7 @@ our search result and some plotting logic.
     L 53.289772 45.284542 
     L 40.198863 45.284542 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 53.289772 79.570257 
@@ -26112,7 +26112,7 @@ our search result and some plotting logic.
     L 66.380681 79.570257 
     L 53.289772 79.570257 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 66.380681 79.570257 
@@ -26120,7 +26120,7 @@ our search result and some plotting logic.
     L 79.47159 79.570257 
     L 66.380681 79.570257 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 79.47159 79.570257 
@@ -26128,7 +26128,7 @@ our search result and some plotting logic.
     L 92.562504 79.570257 
     L 79.47159 79.570257 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 92.562504 79.570257 
@@ -26136,7 +26136,7 @@ our search result and some plotting logic.
     L 105.653409 79.570257 
     L 92.562504 79.570257 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 105.653409 79.570257 
@@ -26144,7 +26144,7 @@ our search result and some plotting logic.
     L 118.744322 79.570257 
     L 105.653409 79.570257 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 118.744322 79.570257 
@@ -26152,7 +26152,7 @@ our search result and some plotting logic.
     L 131.835227 79.570257 
     L 118.744322 79.570257 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 131.835227 79.570257 
@@ -26160,7 +26160,7 @@ our search result and some plotting logic.
     L 144.926132 62.4274 
     L 131.835227 62.4274 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 144.926132 79.570257 
@@ -26168,18 +26168,18 @@ our search result and some plotting logic.
     L 158.017045 62.4274 
     L 144.926132 62.4274 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="md22ae46e9f" d="M 0 0 
+           <path id="m63efbea229" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#md22ae46e9f" x="23.41251" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m63efbea229" x="23.41251" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -26189,7 +26189,7 @@ our search result and some plotting logic.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#md22ae46e9f" x="77.10023" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m63efbea229" x="77.10023" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -26199,7 +26199,7 @@ our search result and some plotting logic.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#md22ae46e9f" x="130.787949" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m63efbea229" x="130.787949" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -26211,12 +26211,12 @@ our search result and some plotting logic.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="md36a1ece02" d="M 0 0 
+           <path id="m4166177521" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#md36a1ece02" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m4166177521" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -26226,7 +26226,7 @@ our search result and some plotting logic.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#md36a1ece02" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m4166177521" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -26236,7 +26236,7 @@ our search result and some plotting logic.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#md36a1ece02" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m4166177521" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -26257,7 +26257,7 @@ our search result and some plotting logic.
       </g>
      </g>
      <defs>
-      <clipPath id="pbf83bf7f2c">
+      <clipPath id="p5fb2042e29">
        <rect x="20.5625" y="7.570257" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -26316,22 +26316,22 @@ our search result and some plotting logic.
 
                 
                     <dt>Mean ± Std</dt>
-                    <dd>0.846 ±
-                        0.0694
+                    <dd>0.842 ±
+                        0.0728
                     
                     </dd>
                 
                 
                     <dt>Median ± IQR</dt>
-                    <dd>0.882 ±
-                        0.00793
+                    <dd>0.880 ±
+                        0.00672
                     
                     </dd>
 
                     <dt>Min | Max</dt>
                     <dd>
-                        <span class="min-value">0.715</span> |
-                        <span class="max-value">0.886</span>
+                        <span class="min-value">0.705</span> |
+                        <span class="max-value">0.884</span>
                     
                     </dd>
                 
@@ -26354,7 +26354,7 @@ our search result and some plotting logic.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T09:29:12.463160</dc:date>
+        <dc:date>2026-06-24T13:29:07.699347</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -26380,154 +26380,164 @@ our search result and some plotting logic.
        </g>
        <g id="patch_2">
         <path d="M 36.64858 79.2 
-    L 49.739507 79.2 
-    L 49.739507 67.771429 
+    L 49.739502 79.2 
+    L 49.739502 67.771429 
     L 36.64858 67.771429 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
-        <path d="M 49.739507 79.2 
-    L 62.830389 79.2 
-    L 62.830389 79.2 
-    L 49.739507 79.2 
+        <path d="M 49.739502 79.2 
+    L 62.83038 79.2 
+    L 62.83038 79.2 
+    L 49.739502 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
-        <path d="M 62.830389 79.2 
-    L 75.921316 79.2 
-    L 75.921316 67.771429 
-    L 62.830389 67.771429 
+        <path d="M 62.83038 79.2 
+    L 75.921302 79.2 
+    L 75.921302 67.771429 
+    L 62.83038 67.771429 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
-        <path d="M 75.921316 79.2 
-    L 89.012198 79.2 
-    L 89.012198 79.2 
-    L 75.921316 79.2 
+        <path d="M 75.921302 79.2 
+    L 89.012225 79.2 
+    L 89.012225 79.2 
+    L 75.921302 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
-        <path d="M 89.012198 79.2 
-    L 102.103125 79.2 
-    L 102.103125 79.2 
-    L 89.012198 79.2 
+        <path d="M 89.012225 79.2 
+    L 102.103103 79.2 
+    L 102.103103 79.2 
+    L 89.012225 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
-        <path d="M 102.103125 79.2 
-    L 115.194007 79.2 
-    L 115.194007 79.2 
-    L 102.103125 79.2 
+        <path d="M 102.103103 79.2 
+    L 115.194025 79.2 
+    L 115.194025 79.2 
+    L 102.103103 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
-        <path d="M 115.194007 79.2 
-    L 128.284934 79.2 
-    L 128.284934 79.2 
-    L 115.194007 79.2 
+        <path d="M 115.194025 79.2 
+    L 128.284948 79.2 
+    L 128.284948 79.2 
+    L 115.194025 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
-        <path d="M 128.284934 79.2 
-    L 141.375861 79.2 
-    L 141.375861 79.2 
-    L 128.284934 79.2 
+        <path d="M 128.284948 79.2 
+    L 141.375826 79.2 
+    L 141.375826 79.2 
+    L 128.284948 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
-        <path d="M 141.375861 79.2 
-    L 154.466743 79.2 
-    L 154.466743 79.2 
-    L 141.375861 79.2 
+        <path d="M 141.375826 79.2 
+    L 154.466748 79.2 
+    L 154.466748 79.2 
+    L 141.375826 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
-        <path d="M 154.466743 79.2 
+        <path d="M 154.466748 79.2 
     L 167.55767 79.2 
     L 167.55767 10.628571 
-    L 154.466743 10.628571 
+    L 154.466748 10.628571 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mb4722ed15c" d="M 0 0 
+           <path id="m025de860c7" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mb4722ed15c" x="63.513616" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m025de860c7" x="33.07242" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="63.513616" y="93.797656" transform="rotate(-0 63.513616 93.797656)">0.75</text>
+          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="33.07242" y="93.797656" transform="rotate(-0 33.07242 93.797656)">0.70</text>
          </g>
         </g>
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mb4722ed15c" x="101.666491" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m025de860c7" x="69.541021" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="101.666491" y="93.797656" transform="rotate(-0 101.666491 93.797656)">0.80</text>
+          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="69.541021" y="93.797656" transform="rotate(-0 69.541021 93.797656)">0.75</text>
          </g>
         </g>
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mb4722ed15c" x="139.819366" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m025de860c7" x="106.009621" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="139.819366" y="93.797656" transform="rotate(-0 139.819366 93.797656)">0.85</text>
+          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="106.009621" y="93.797656" transform="rotate(-0 106.009621 93.797656)">0.80</text>
+         </g>
+        </g>
+        <g id="xtick_4">
+         <g id="line2d_4">
+          <g>
+           <use xlink:href="#m025de860c7" x="142.478221" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+          </g>
+         </g>
+         <g id="text_4">
+          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="142.478221" y="93.797656" transform="rotate(-0 142.478221 93.797656)">0.85</text>
          </g>
         </g>
        </g>
        <g id="matplotlib.axis_2">
         <g id="ytick_1">
-         <g id="line2d_4">
+         <g id="line2d_5">
           <defs>
-           <path id="mf0b50560b3" d="M 0 0 
+           <path id="m49c8ad3f91" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mf0b50560b3" x="30.103125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m49c8ad3f91" x="30.103125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
-         <g id="text_4">
+         <g id="text_5">
           <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="23.103125" y="82.998828" transform="rotate(-0 23.103125 82.998828)">0.0</text>
          </g>
         </g>
         <g id="ytick_2">
-         <g id="line2d_5">
+         <g id="line2d_6">
           <g>
-           <use xlink:href="#mf0b50560b3" x="30.103125" y="50.628571" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m49c8ad3f91" x="30.103125" y="50.628571" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
-         <g id="text_5">
+         <g id="text_6">
           <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="23.103125" y="54.4274" transform="rotate(-0 23.103125 54.4274)">2.5</text>
          </g>
         </g>
         <g id="ytick_3">
-         <g id="line2d_6">
+         <g id="line2d_7">
           <g>
-           <use xlink:href="#mf0b50560b3" x="30.103125" y="22.057143" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m49c8ad3f91" x="30.103125" y="22.057143" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
-         <g id="text_6">
+         <g id="text_7">
           <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="23.103125" y="25.855971" transform="rotate(-0 23.103125 25.855971)">5.0</text>
          </g>
         </g>
@@ -26545,7 +26555,7 @@ our search result and some plotting logic.
       </g>
      </g>
      <defs>
-      <clipPath id="p7960288cf3">
+      <clipPath id="pb65feb92e5">
        <rect x="30.103125" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -27032,19 +27042,19 @@ our search result and some plotting logic.
                     
 
                     
-                        <td data-value="0.8457767202564169" data-numeric>
-                            0.846</td>
-                        <td data-value="0.06938063504693988" data-numeric>
-                            0.0694</td>
+                        <td data-value="0.841772992019773" data-numeric>
+                            0.842</td>
+                        <td data-value="0.07275947029831789" data-numeric>
+                            0.0728</td>
                     
 
                     
-                        <td data-value="0.7147929147270633" data-numeric>
-                            0.715</td>
-                        <td data-value="0.8823790980853893" data-numeric>
-                            0.882</td>
-                        <td data-value="0.8863515228276642" data-numeric>
-                            0.886</td>
+                        <td data-value="0.7049030403619916" data-numeric>
+                            0.705</td>
+                        <td data-value="0.8796179454313225" data-numeric>
+                            0.880</td>
+                        <td data-value="0.8843849726858106" data-numeric>
+                            0.884</td>
                     
 
                     </tr>
@@ -27191,7 +27201,7 @@ our search result and some plotting logic.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T09:29:12.258057</dc:date>
+        <dc:date>2026-06-24T13:29:07.559084</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -27221,7 +27231,7 @@ our search result and some plotting logic.
     L 40.198864 45.284542 
     L 27.107955 45.284542 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 40.198864 79.570257 
@@ -27229,7 +27239,7 @@ our search result and some plotting logic.
     L 53.289773 45.284542 
     L 40.198864 45.284542 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 53.289773 79.570257 
@@ -27237,7 +27247,7 @@ our search result and some plotting logic.
     L 66.380682 79.570257 
     L 53.289773 79.570257 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 66.380682 79.570257 
@@ -27245,7 +27255,7 @@ our search result and some plotting logic.
     L 79.471591 45.284542 
     L 66.380682 45.284542 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 79.471591 79.570257 
@@ -27253,7 +27263,7 @@ our search result and some plotting logic.
     L 92.5625 79.570257 
     L 79.471591 79.570257 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 92.5625 79.570257 
@@ -27261,7 +27271,7 @@ our search result and some plotting logic.
     L 105.653409 45.284542 
     L 92.5625 45.284542 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 105.653409 79.570257 
@@ -27269,7 +27279,7 @@ our search result and some plotting logic.
     L 118.744318 10.998828 
     L 105.653409 10.998828 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 118.744318 79.570257 
@@ -27277,7 +27287,7 @@ our search result and some plotting logic.
     L 131.835227 79.570257 
     L 118.744318 79.570257 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 131.835227 79.570257 
@@ -27285,7 +27295,7 @@ our search result and some plotting logic.
     L 144.926136 79.570257 
     L 131.835227 79.570257 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 144.926136 79.570257 
@@ -27293,18 +27303,18 @@ our search result and some plotting logic.
     L 158.017045 10.998828 
     L 144.926136 10.998828 
     z
-    " clip-path="url(#pefa9005f1a)" style="fill: #1f77b4"/>
+    " clip-path="url(#pc828cf572b)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m00ed366315" d="M 0 0 
+           <path id="ma817b76ae2" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m00ed366315" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#ma817b76ae2" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -27314,7 +27324,7 @@ our search result and some plotting logic.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m00ed366315" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#ma817b76ae2" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -27324,7 +27334,7 @@ our search result and some plotting logic.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m00ed366315" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#ma817b76ae2" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -27336,12 +27346,12 @@ our search result and some plotting logic.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m36139149cc" d="M 0 0 
+           <path id="mbf7de2df21" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m36139149cc" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mbf7de2df21" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -27351,7 +27361,7 @@ our search result and some plotting logic.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m36139149cc" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mbf7de2df21" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -27361,7 +27371,7 @@ our search result and some plotting logic.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m36139149cc" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mbf7de2df21" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -27382,7 +27392,7 @@ our search result and some plotting logic.
       </g>
      </g>
      <defs>
-      <clipPath id="pefa9005f1a">
+      <clipPath id="pc828cf572b">
        <rect x="20.5625" y="7.570257" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -27456,7 +27466,7 @@ our search result and some plotting logic.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T09:29:12.332374</dc:date>
+        <dc:date>2026-06-24T13:29:07.604274</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -27486,7 +27496,7 @@ our search result and some plotting logic.
     L 110.624777 23.054545 
     L 57.139063 23.054545 
     z
-    " clip-path="url(#p7abee8d242)" style="fill: #ee854a"/>
+    " clip-path="url(#p269d2c31ec)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 57.139063 20.145455 
@@ -27494,18 +27504,18 @@ our search result and some plotting logic.
     L 146.28192 8.509091 
     L 57.139063 8.509091 
     z
-    " clip-path="url(#p7abee8d242)" style="fill: #ee854a"/>
+    " clip-path="url(#p269d2c31ec)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m0f5102c6bf" d="M 0 0 
+           <path id="mf24ead9ea9" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m0f5102c6bf" x="57.139063" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf24ead9ea9" x="57.139063" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -27515,7 +27525,7 @@ our search result and some plotting logic.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m0f5102c6bf" x="92.796205" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf24ead9ea9" x="92.796205" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -27525,7 +27535,7 @@ our search result and some plotting logic.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m0f5102c6bf" x="128.453348" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf24ead9ea9" x="128.453348" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -27537,12 +27547,12 @@ our search result and some plotting logic.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m72d8b394e8" d="M 0 0 
+           <path id="m7820f6466c" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m72d8b394e8" x="57.139063" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m7820f6466c" x="57.139063" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -27552,7 +27562,7 @@ our search result and some plotting logic.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m72d8b394e8" x="57.139063" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m7820f6466c" x="57.139063" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -27599,7 +27609,7 @@ our search result and some plotting logic.
       </g>
      </g>
      <defs>
-      <clipPath id="p7abee8d242">
+      <clipPath id="p269d2c31ec">
        <rect x="57.139063" y="7.2" width="93.6" height="28.8"/>
       </clipPath>
      </defs>
@@ -27766,7 +27776,7 @@ our search result and some plotting logic.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T09:29:12.404824</dc:date>
+        <dc:date>2026-06-24T13:29:07.651996</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -27796,7 +27806,7 @@ our search result and some plotting logic.
     L 40.198863 10.998828 
     L 27.107955 10.998828 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 40.198863 79.570257 
@@ -27804,7 +27814,7 @@ our search result and some plotting logic.
     L 53.289772 45.284542 
     L 40.198863 45.284542 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 53.289772 79.570257 
@@ -27812,7 +27822,7 @@ our search result and some plotting logic.
     L 66.380681 79.570257 
     L 53.289772 79.570257 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 66.380681 79.570257 
@@ -27820,7 +27830,7 @@ our search result and some plotting logic.
     L 79.47159 79.570257 
     L 66.380681 79.570257 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 79.47159 79.570257 
@@ -27828,7 +27838,7 @@ our search result and some plotting logic.
     L 92.562504 79.570257 
     L 79.47159 79.570257 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 92.562504 79.570257 
@@ -27836,7 +27846,7 @@ our search result and some plotting logic.
     L 105.653409 79.570257 
     L 92.562504 79.570257 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 105.653409 79.570257 
@@ -27844,7 +27854,7 @@ our search result and some plotting logic.
     L 118.744322 79.570257 
     L 105.653409 79.570257 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 118.744322 79.570257 
@@ -27852,7 +27862,7 @@ our search result and some plotting logic.
     L 131.835227 79.570257 
     L 118.744322 79.570257 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 131.835227 79.570257 
@@ -27860,7 +27870,7 @@ our search result and some plotting logic.
     L 144.926132 62.4274 
     L 131.835227 62.4274 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 144.926132 79.570257 
@@ -27868,18 +27878,18 @@ our search result and some plotting logic.
     L 158.017045 62.4274 
     L 144.926132 62.4274 
     z
-    " clip-path="url(#pbf83bf7f2c)" style="fill: #1f77b4"/>
+    " clip-path="url(#p5fb2042e29)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="md22ae46e9f" d="M 0 0 
+           <path id="m63efbea229" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#md22ae46e9f" x="23.41251" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m63efbea229" x="23.41251" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -27889,7 +27899,7 @@ our search result and some plotting logic.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#md22ae46e9f" x="77.10023" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m63efbea229" x="77.10023" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -27899,7 +27909,7 @@ our search result and some plotting logic.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#md22ae46e9f" x="130.787949" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m63efbea229" x="130.787949" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -27911,12 +27921,12 @@ our search result and some plotting logic.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="md36a1ece02" d="M 0 0 
+           <path id="m4166177521" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#md36a1ece02" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m4166177521" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -27926,7 +27936,7 @@ our search result and some plotting logic.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#md36a1ece02" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m4166177521" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -27936,7 +27946,7 @@ our search result and some plotting logic.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#md36a1ece02" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m4166177521" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -27957,7 +27967,7 @@ our search result and some plotting logic.
       </g>
      </g>
      <defs>
-      <clipPath id="pbf83bf7f2c">
+      <clipPath id="p5fb2042e29">
        <rect x="20.5625" y="7.570257" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -28012,22 +28022,22 @@ our search result and some plotting logic.
 
                 
                     <dt>Mean ± Std</dt>
-                    <dd>0.846 ±
-                        0.0694
+                    <dd>0.842 ±
+                        0.0728
                     
                     </dd>
                 
                 
                     <dt>Median ± IQR</dt>
-                    <dd>0.882 ±
-                        0.00793
+                    <dd>0.880 ±
+                        0.00672
                     
                     </dd>
 
                     <dt>Min | Max</dt>
                     <dd>
-                        <span class="min-value">0.715</span> |
-                        <span class="max-value">0.886</span>
+                        <span class="min-value">0.705</span> |
+                        <span class="max-value">0.884</span>
                     
                     </dd>
                 
@@ -28050,7 +28060,7 @@ our search result and some plotting logic.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T09:29:12.463160</dc:date>
+        <dc:date>2026-06-24T13:29:07.699347</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -28076,154 +28086,164 @@ our search result and some plotting logic.
        </g>
        <g id="patch_2">
         <path d="M 36.64858 79.2 
-    L 49.739507 79.2 
-    L 49.739507 67.771429 
+    L 49.739502 79.2 
+    L 49.739502 67.771429 
     L 36.64858 67.771429 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
-        <path d="M 49.739507 79.2 
-    L 62.830389 79.2 
-    L 62.830389 79.2 
-    L 49.739507 79.2 
+        <path d="M 49.739502 79.2 
+    L 62.83038 79.2 
+    L 62.83038 79.2 
+    L 49.739502 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
-        <path d="M 62.830389 79.2 
-    L 75.921316 79.2 
-    L 75.921316 67.771429 
-    L 62.830389 67.771429 
+        <path d="M 62.83038 79.2 
+    L 75.921302 79.2 
+    L 75.921302 67.771429 
+    L 62.83038 67.771429 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
-        <path d="M 75.921316 79.2 
-    L 89.012198 79.2 
-    L 89.012198 79.2 
-    L 75.921316 79.2 
+        <path d="M 75.921302 79.2 
+    L 89.012225 79.2 
+    L 89.012225 79.2 
+    L 75.921302 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
-        <path d="M 89.012198 79.2 
-    L 102.103125 79.2 
-    L 102.103125 79.2 
-    L 89.012198 79.2 
+        <path d="M 89.012225 79.2 
+    L 102.103103 79.2 
+    L 102.103103 79.2 
+    L 89.012225 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
-        <path d="M 102.103125 79.2 
-    L 115.194007 79.2 
-    L 115.194007 79.2 
-    L 102.103125 79.2 
+        <path d="M 102.103103 79.2 
+    L 115.194025 79.2 
+    L 115.194025 79.2 
+    L 102.103103 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
-        <path d="M 115.194007 79.2 
-    L 128.284934 79.2 
-    L 128.284934 79.2 
-    L 115.194007 79.2 
+        <path d="M 115.194025 79.2 
+    L 128.284948 79.2 
+    L 128.284948 79.2 
+    L 115.194025 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
-        <path d="M 128.284934 79.2 
-    L 141.375861 79.2 
-    L 141.375861 79.2 
-    L 128.284934 79.2 
+        <path d="M 128.284948 79.2 
+    L 141.375826 79.2 
+    L 141.375826 79.2 
+    L 128.284948 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
-        <path d="M 141.375861 79.2 
-    L 154.466743 79.2 
-    L 154.466743 79.2 
-    L 141.375861 79.2 
+        <path d="M 141.375826 79.2 
+    L 154.466748 79.2 
+    L 154.466748 79.2 
+    L 141.375826 79.2 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
-        <path d="M 154.466743 79.2 
+        <path d="M 154.466748 79.2 
     L 167.55767 79.2 
     L 167.55767 10.628571 
-    L 154.466743 10.628571 
+    L 154.466748 10.628571 
     z
-    " clip-path="url(#p7960288cf3)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb65feb92e5)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mb4722ed15c" d="M 0 0 
+           <path id="m025de860c7" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mb4722ed15c" x="63.513616" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m025de860c7" x="33.07242" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="63.513616" y="93.797656" transform="rotate(-0 63.513616 93.797656)">0.75</text>
+          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="33.07242" y="93.797656" transform="rotate(-0 33.07242 93.797656)">0.70</text>
          </g>
         </g>
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mb4722ed15c" x="101.666491" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m025de860c7" x="69.541021" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="101.666491" y="93.797656" transform="rotate(-0 101.666491 93.797656)">0.80</text>
+          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="69.541021" y="93.797656" transform="rotate(-0 69.541021 93.797656)">0.75</text>
          </g>
         </g>
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mb4722ed15c" x="139.819366" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m025de860c7" x="106.009621" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="139.819366" y="93.797656" transform="rotate(-0 139.819366 93.797656)">0.85</text>
+          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="106.009621" y="93.797656" transform="rotate(-0 106.009621 93.797656)">0.80</text>
+         </g>
+        </g>
+        <g id="xtick_4">
+         <g id="line2d_4">
+          <g>
+           <use xlink:href="#m025de860c7" x="142.478221" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+          </g>
+         </g>
+         <g id="text_4">
+          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="142.478221" y="93.797656" transform="rotate(-0 142.478221 93.797656)">0.85</text>
          </g>
         </g>
        </g>
        <g id="matplotlib.axis_2">
         <g id="ytick_1">
-         <g id="line2d_4">
+         <g id="line2d_5">
           <defs>
-           <path id="mf0b50560b3" d="M 0 0 
+           <path id="m49c8ad3f91" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mf0b50560b3" x="30.103125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m49c8ad3f91" x="30.103125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
-         <g id="text_4">
+         <g id="text_5">
           <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="23.103125" y="82.998828" transform="rotate(-0 23.103125 82.998828)">0.0</text>
          </g>
         </g>
         <g id="ytick_2">
-         <g id="line2d_5">
+         <g id="line2d_6">
           <g>
-           <use xlink:href="#mf0b50560b3" x="30.103125" y="50.628571" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m49c8ad3f91" x="30.103125" y="50.628571" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
-         <g id="text_5">
+         <g id="text_6">
           <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="23.103125" y="54.4274" transform="rotate(-0 23.103125 54.4274)">2.5</text>
          </g>
         </g>
         <g id="ytick_3">
-         <g id="line2d_6">
+         <g id="line2d_7">
           <g>
-           <use xlink:href="#mf0b50560b3" x="30.103125" y="22.057143" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m49c8ad3f91" x="30.103125" y="22.057143" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
-         <g id="text_6">
+         <g id="text_7">
           <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="23.103125" y="25.855971" transform="rotate(-0 23.103125 25.855971)">5.0</text>
          </g>
         </g>
@@ -28241,7 +28261,7 @@ our search result and some plotting logic.
       </g>
      </g>
      <defs>
-      <clipPath id="p7960288cf3">
+      <clipPath id="pb65feb92e5">
        <rect x="30.103125" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -28298,7 +28318,7 @@ our search result and some plotting logic.
                         class="critical">
                         1.00
                     </td>
-                    <td>-0.988</td>
+                    <td>-0.989</td>
                 </tr>
         
                 <tr>
@@ -28331,7 +28351,7 @@ our search result and some plotting logic.
                         class="critical">
                         1.00
                     </td>
-                    <td>0.0122</td>
+                    <td>0.000113</td>
                 </tr>
         
                 <tr>
@@ -28379,7 +28399,7 @@ our search result and some plotting logic.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_d90ab506">
+        <skrub-table-report class="report" id="report_7bd87ae5">
         </skrub-table-report>
 
         <script type="module">
@@ -29483,7 +29503,7 @@ our search result and some plotting logic.
         </script>
     </div>
 
-    <div id="report_d90ab506-wrapper-fallback">
+    <div id="report_7bd87ae5-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -29494,8 +29514,8 @@ our search result and some plotting logic.
     </div>
 
     <script>
-     document.getElementById("report_d90ab506-wrapper").removeAttribute("hidden");
-     document.getElementById("report_d90ab506-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_7bd87ae5-wrapper").removeAttribute("hidden");
+     document.getElementById("report_7bd87ae5-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -29520,7 +29540,7 @@ We can also display the results of the search in a parallel coordinates plot:
 
     <div class="output_subarea output_html rendered_html output_result">
     <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="8d8b0f3a-06ca-4bc0-a009-76d4898abfd2" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("8d8b0f3a-06ca-4bc0-a009-76d4898abfd2")) {                    Plotly.newPlot(                        "8d8b0f3a-06ca-4bc0-a009-76d4898abfd2",                        [{"dimensions":[{"label":"n_components","ticktext":["9","10","11","12","13","14","15"],"tickvals":[9,10,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAAIkAAAAAAAAAuQC3BSZkn\u002fSdAI5lwwDTyI0Dzut3Sgf0pQAAAAAAAAC5A5jkgpq4IJkCkJ\u002fyqNfwpQA=="}},{"label":"encoder","ticktext":["LSA","MinHash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAADwPwAAAAAAAAAAAAAAAAAAAACgvAOlkervP4h4d6j8XWY\u002fKKDFZlbX7z9sM8r7XmRgPw=="}},{"label":"learning_rate","ticktext":["0.01","0.02","0.03","0.05","0.07","0.10","0.15","0.23","0.34","0.50"],"tickvals":[-4.285521444367096,-3.8860502958821126,-3.4865791473971295,-3.0871079989121464,-2.687636850427163,-2.2881657019421793,-1.8886945534571962,-1.489223404972213,-1.0897522564872295,-0.690281108002246],"values":{"dtype":"f8","bdata":"O3zT3nYACsDjpf1\u002fjQgHwF2v3QBLqQfANzIrvM+KBcDJe7YF3XMDwBV0x7tfJBHANLxvSxPw6b9AUv1nyBbmvw=="}},{"label":"score time","ticktext":["1.5","1.7","1.9","2.1","2.2","2.4","2.6","2.8","3.0","3.2"],"tickvals":[1.5260743618011474,1.7067975362141927,1.8875207106272378,2.068243885040283,2.2489670594533284,2.4296902338663733,2.6104134082794186,2.791136582692464,2.971859757105509,3.1525829315185545],"values":{"dtype":"f8","bdata":"xYat9rv8BUCSG9z0UrL\u002fP3VGt9ZvzgdACkgix0GnBUCa2OfIsIsAQGZmZmZ9OAlAMzMz88xq+D+amu6dVXICQA=="}},{"label":"fit time","ticktext":["6","7","8","10","11","13","14","15","17","18"],"tickvals":[5.724035215377808,7.084501706229316,8.444968197080826,9.805434687932333,11.165901178783841,12.52636766963535,13.88683416048686,15.247300651338367,16.607767142189875,17.968233633041383],"values":{"dtype":"f8","bdata":"Dd+Z98naLkCnzTxAQOEiQFJO9KbnWTBACN\u002f3lPBOLkBFIEL5FYwfQM3MzCje9zFAzczMfGnlFkBThZ\u002fDwlAnQA=="}},{"label":"score","ticktext":["0.71","0.73","0.75","0.77","0.79","0.81","0.83","0.85","0.87","0.89"],"tickvals":[0.7147929147270633,0.7338549822937968,0.7529170498605302,0.7719791174272636,0.791041184993997,0.8101032525607305,0.8291653201274639,0.8482273876941973,0.8672894552609307,0.8863515228276642],"values":{"dtype":"f8","bdata":"aL9p3v1c7D\u002f7UzFV\u002flrsP0LN0WDLS+w\u002fU2weF3M87D\u002fbne8mRDLsP+VCw03MCuw\u002fgLb0NPIn6D\u002fCSQVkld\u002fmPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"aL9p3v1c7D\u002f7UzFV\u002flrsP0LN0WDLS+w\u002fU2weF3M87D\u002fbne8mRDLsP+VCw03MCuw\u002fgLb0NPIn6D\u002fCSQVkld\u002fmPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="e8fd1c54-a386-422d-af94-74852d036ae4" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e8fd1c54-a386-422d-af94-74852d036ae4")) {                    Plotly.newPlot(                        "e8fd1c54-a386-422d-af94-74852d036ae4",                        [{"dimensions":[{"label":"n_components","ticktext":["9","10","11","12","13","14","15"],"tickvals":[9,10,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAAIkBLj0T4Yg0kQC3BSZkn\u002fSdAI5lwwDTyKUAAAAAAAAAuQAAAAAAAAC5A5jkgpq4IJkCkJ\u002fyqNfwpQA=="}},{"label":"encoder","ticktext":["LSA","MinHash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8D+gvAOlkervP4h4d6j8XWY\u002fKKDFZlbX7z9sM8r7XmRgPw=="}},{"label":"learning_rate","ticktext":["0.01","0.02","0.03","0.05","0.07","0.10","0.15","0.23","0.34","0.50"],"tickvals":[-4.285521444367096,-3.8860502958821126,-3.4865791473971295,-3.0871079989121464,-2.687636850427163,-2.2881657019421793,-1.8886945534571962,-1.489223404972213,-1.0897522564872295,-0.690281108002246],"values":{"dtype":"f8","bdata":"O3zT3nYACsABdxt79pUFwF2v3QBLqQfAlFG1NMSDA8BOiw6Sf+0GwBV0x7tfJBHANLxvSxPw6b9AUv1nyBbmvw=="}},{"label":"score time","ticktext":["1.2","1.4","1.5","1.6","1.8","1.9","2.0","2.2","2.3","2.4"],"tickvals":[1.2350570678710937,1.3697632312774657,1.504469394683838,1.6391755580902099,1.7738817214965819,1.908587884902954,2.043294048309326,2.1780002117156982,2.3127063751220702,2.447412538528442],"values":{"dtype":"f8","bdata":"ZmZmBk2UA0C9gybMvtQCQCDj0DV54QBAlyo4vxfp+T8Z0ujfWiz9P2X09B9cjAJAMzMzM8vC8z9K7S6hm9H6Pw=="}},{"label":"fit time","ticktext":["4","5","6","8","9","10","11","13","14","15"],"tickvals":[3.97575306892395,5.206000762515598,6.436248456107245,7.666496149698893,8.89674384329054,10.126991536882187,11.357239230473835,12.587486924065484,13.81773461765713,15.047982311248779],"values":{"dtype":"f8","bdata":"Elaxwv7sKUAXW2b8Nm8nQInjV63YTClAwxbg5DcjGkA1q+0S7vIeQDMzMyORGC5AAAAAoFfOD0CKvsMC4OwiQA=="}},{"label":"score","ticktext":["0.70","0.72","0.74","0.76","0.78","0.80","0.82","0.84","0.86","0.88"],"tickvals":[0.7049030403619916,0.7248454772868603,0.7447879142117292,0.7647303511365979,0.7846727880614667,0.8046152249863355,0.8245576619112043,0.8445000988360731,0.8644425357609419,0.8843849726858106],"values":{"dtype":"f8","bdata":"Fk3YtuFM7D8Dx5YaWT\u002fsP4MGfcs9POw\u002fk0WTiNQl7D\u002fu9nTplB\u002fsP7IYzO80Bew\u002fvoN6fsfc5z9GlSbSkI7mPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"Fk3YtuFM7D8Dx5YaWT\u002fsP4MGfcs9POw\u002fk0WTiNQl7D\u002fu9nTplB\u002fsP7IYzO80Bew\u002fvoN6fsfc5z9GlSbSkI7mPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -29601,9 +29621,9 @@ in-depth tutorial.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (3 minutes 14.602 seconds)
+   **Total running time of the script:** (2 minutes 35.410 seconds)
 
-**Estimated memory usage:**  748 MB
+**Estimated memory usage:**  743 MB
 
 
 .. _sphx_glr_download_auto_examples_02_data_ops_1120_multiple_tables.py:
