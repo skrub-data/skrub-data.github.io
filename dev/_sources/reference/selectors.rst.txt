@@ -46,6 +46,7 @@ Contains method to select columns in a dataframe. See the :ref:`selectors <user_
   selectors.inv
   selectors.make_selector
   selectors.numeric
+  selectors.object
   selectors.regex
   selectors.select
   selectors.string

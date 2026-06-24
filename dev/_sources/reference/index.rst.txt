@@ -235,6 +235,9 @@ Selectors
   selectors.numeric
 
 
+  selectors.object
+
+
   selectors.regex
 
 

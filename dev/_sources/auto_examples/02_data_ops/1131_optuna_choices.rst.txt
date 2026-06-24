@@ -149,27 +149,27 @@ the User Guide for an example.
 
  .. code-block:: none
 
-    Running optuna search for study skrub_randomized_search_9de0c3b7-5f0c-498a-a867-428073744ddb in storage /tmp/tmpdwwa4azu_skrub_optuna_search_storage/optuna_storage
-    [I 2026-06-23 14:13:37,769] A new study created in Journal with name: skrub_randomized_search_9de0c3b7-5f0c-498a-a867-428073744ddb
-    [I 2026-06-23 14:13:38,082] Trial 0 finished with value: 0.5998958893326463 and parameters: {'2:regressor': '1:ridge', '1:α': 0.08737056333717456}. Best is trial 0 with value: 0.5998958893326463.
-    [I 2026-06-23 14:13:38,385] Trial 1 finished with value: 0.5998965729709886 and parameters: {'2:regressor': '1:ridge', '1:α': 0.17777676175509427}. Best is trial 1 with value: 0.5998965729709886.
-    [I 2026-06-23 14:13:38,688] Trial 2 finished with value: 0.5998956300607201 and parameters: {'2:regressor': '1:ridge', '1:α': 0.05323908243249831}. Best is trial 1 with value: 0.5998965729709886.
-    [I 2026-06-23 14:13:38,991] Trial 3 finished with value: 0.5998953213503151 and parameters: {'2:regressor': '1:ridge', '1:α': 0.012709575518456051}. Best is trial 1 with value: 0.5998965729709886.
-    [I 2026-06-23 14:13:45,181] Trial 4 finished with value: 0.7884962636867506 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 4 with value: 0.7884962636867506.
-    [I 2026-06-23 14:13:53,795] Trial 5 finished with value: 0.7924408290244589 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 5 with value: 0.7924408290244589.
-    [I 2026-06-23 14:13:54,100] Trial 6 finished with value: 0.5998987110257883 and parameters: {'2:regressor': '1:ridge', '1:α': 0.464456825115831}. Best is trial 5 with value: 0.7924408290244589.
-    [I 2026-06-23 14:13:58,136] Trial 7 finished with value: 0.7590211847388572 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 7}. Best is trial 5 with value: 0.7924408290244589.
-    [I 2026-06-23 14:14:02,901] Trial 8 finished with value: 0.7752832397121472 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 5 with value: 0.7924408290244589.
-    [I 2026-06-23 14:14:09,025] Trial 9 finished with value: 0.788913894808788 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 5 with value: 0.7924408290244589.
-    [I 2026-06-23 14:14:09,027] A new study created in memory with name: skrub_randomized_search_9de0c3b7-5f0c-498a-a867-428073744ddb
+    Running optuna search for study skrub_randomized_search_c0771d8e-6fe4-45bb-b42a-4cfcba5105c6 in storage /tmp/tmpbmch2ofv_skrub_optuna_search_storage/optuna_storage
+    [I 2026-06-24 08:51:52,052] A new study created in Journal with name: skrub_randomized_search_c0771d8e-6fe4-45bb-b42a-4cfcba5105c6
+    [I 2026-06-24 08:51:52,595] Trial 0 finished with value: 0.5998958893326463 and parameters: {'2:regressor': '1:ridge', '1:α': 0.08737056333717456}. Best is trial 0 with value: 0.5998958893326463.
+    [I 2026-06-24 08:51:53,148] Trial 1 finished with value: 0.5998965729709886 and parameters: {'2:regressor': '1:ridge', '1:α': 0.17777676175509427}. Best is trial 1 with value: 0.5998965729709886.
+    [I 2026-06-24 08:51:53,725] Trial 2 finished with value: 0.5998956300607201 and parameters: {'2:regressor': '1:ridge', '1:α': 0.05323908243249831}. Best is trial 1 with value: 0.5998965729709886.
+    [I 2026-06-24 08:51:54,197] Trial 3 finished with value: 0.5998953213503151 and parameters: {'2:regressor': '1:ridge', '1:α': 0.012709575518456051}. Best is trial 1 with value: 0.5998965729709886.
+    [I 2026-06-24 08:52:01,327] Trial 4 finished with value: 0.7884962636867506 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 4 with value: 0.7884962636867506.
+    [I 2026-06-24 08:52:11,960] Trial 5 finished with value: 0.7924408290244589 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 5 with value: 0.7924408290244589.
+    [I 2026-06-24 08:52:12,368] Trial 6 finished with value: 0.5998987110257883 and parameters: {'2:regressor': '1:ridge', '1:α': 0.464456825115831}. Best is trial 5 with value: 0.7924408290244589.
+    [I 2026-06-24 08:52:16,799] Trial 7 finished with value: 0.7590211847388572 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 7}. Best is trial 5 with value: 0.7924408290244589.
+    [I 2026-06-24 08:52:24,255] Trial 8 finished with value: 0.7752832397121472 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 5 with value: 0.7924408290244589.
+    [I 2026-06-24 08:52:30,791] Trial 9 finished with value: 0.788913894808788 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 5 with value: 0.7924408290244589.
+    [I 2026-06-24 08:52:30,793] A new study created in memory with name: skrub_randomized_search_c0771d8e-6fe4-45bb-b42a-4cfcba5105c6
 
 
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_c2703c4c-wrapper" hidden>
-        <template id="report_c2703c4c-template">
+    <div id="report_a3b911a4-wrapper" hidden>
+        <template id="report_a3b911a4-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1617,7 +1617,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="7e43f81e"
+                    id="d6c8cf12"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1647,7 +1647,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="5e089da4"
+                    id="90f5a52f"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1681,7 +1681,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="6206701e"
+                    id="216313d9"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1715,7 +1715,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="cd847b1a"
+                    id="c2af5dae"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1749,7 +1749,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="0a214d05"
+                    id="d2a799a4"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1797,7 +1797,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="65fa493f"
+                    id="3d5cb949"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1825,7 +1825,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="f8ee4c7d"
+                    id="46302ae2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1855,7 +1855,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="9b1abb15"
+                    id="45a3e957"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1885,7 +1885,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="06c4857a"
+                    id="a73d3e5d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1915,7 +1915,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="f06b8d6c"
+                    id="7454caef"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1949,7 +1949,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="120a7c32"
+                    id="2995f825"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1977,7 +1977,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="63de5a45"
+                    id="9960410b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2007,7 +2007,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="c070353d"
+                    id="3b3a38cd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2037,7 +2037,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="d6762ccd"
+                    id="caa10f85"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2067,7 +2067,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="7b8e2d0e"
+                    id="b964f095"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2101,7 +2101,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="f839ec6c"
+                    id="17990ca2"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2129,7 +2129,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="4b9e2661"
+                    id="ace0c4e9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2159,7 +2159,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="086b42db"
+                    id="7df3f4ca"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2189,7 +2189,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="19d010e4"
+                    id="d31a32fb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2219,7 +2219,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="11d7ec63"
+                    id="2849b78d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2253,7 +2253,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="ff83b03d"
+                    id="7208481d"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2281,7 +2281,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="4f037f86"
+                    id="59043ac1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2311,7 +2311,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="76f66d2c"
+                    id="312cba44"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2341,7 +2341,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="ccab853a"
+                    id="440fe068"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2371,7 +2371,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="cc0ed388"
+                    id="c5dae36f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2405,7 +2405,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="62640133"
+                    id="7301ef74"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2433,7 +2433,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="9c7588f7"
+                    id="d7a602a8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2463,7 +2463,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="15b3d0c2"
+                    id="85204fa5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2493,7 +2493,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="b26b1341"
+                    id="22dcd0e4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2523,7 +2523,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="6e9b0827"
+                    id="4d3b21c5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2557,7 +2557,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="e620ece3"
+                    id="d04d3890"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2585,7 +2585,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="45cc506b"
+                    id="e6c0a0ce"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2615,7 +2615,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="d94646e8"
+                    id="92f384c6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2645,7 +2645,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="eaf17f38"
+                    id="84a368dc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2675,7 +2675,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="6df7fe3a"
+                    id="1e09159e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2709,7 +2709,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="ef101c66"
+                    id="2bcc9791"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2737,7 +2737,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="6c5649e9"
+                    id="abe38784"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2767,7 +2767,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="96226221"
+                    id="bbd0e4f5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2797,7 +2797,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="0f4477e3"
+                    id="a550bad0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2827,7 +2827,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="ac9c78a2"
+                    id="e99fd352"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2861,7 +2861,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="32cdfe17"
+                    id="a1027339"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2889,7 +2889,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="884e7d23"
+                    id="3a8db9c7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2919,7 +2919,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="308b04e6"
+                    id="effa9519"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2949,7 +2949,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="2eb67467"
+                    id="540243a0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2979,7 +2979,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="aa7b2da3"
+                    id="94cbe244"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3013,7 +3013,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="a6b5286f"
+                    id="9f36f8d1"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3041,7 +3041,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="bd5c7f85"
+                    id="aabb865e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3071,7 +3071,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="e0816ff0"
+                    id="fd6bebd2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3101,7 +3101,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="066ec3ef"
+                    id="6e0d4c4e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3131,7 +3131,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="4fc064e3"
+                    id="8a9c941f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3165,7 +3165,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="92f0b219"
+                    id="010506f6"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3193,7 +3193,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="3e8ffe72"
+                    id="962a2e1a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3223,7 +3223,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="f8f328b7"
+                    id="cb2c5a49"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3253,7 +3253,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="8181d0a0"
+                    id="c90a63dd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3283,7 +3283,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="86d25372"
+                    id="9f1b17d2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3438,7 +3438,7 @@ the User Guide for an example.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-23T14:14:12.283661</dc:date>
+        <dc:date>2026-06-24T08:52:34.121650</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -3468,7 +3468,7 @@ the User Guide for an example.
     L 40.198864 45.284542 
     L 27.107955 45.284542 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 40.198864 79.570257 
@@ -3476,7 +3476,7 @@ the User Guide for an example.
     L 53.289774 10.998828 
     L 40.198864 10.998828 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 53.289774 79.570257 
@@ -3484,7 +3484,7 @@ the User Guide for an example.
     L 66.380686 79.570257 
     L 53.289774 79.570257 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 66.380686 79.570257 
@@ -3492,7 +3492,7 @@ the User Guide for an example.
     L 79.471593 79.570257 
     L 66.380686 79.570257 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 79.471593 79.570257 
@@ -3500,7 +3500,7 @@ the User Guide for an example.
     L 92.5625 79.570257 
     L 79.471593 79.570257 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 92.5625 79.570257 
@@ -3508,7 +3508,7 @@ the User Guide for an example.
     L 105.653417 45.284542 
     L 92.5625 45.284542 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 105.653417 79.570257 
@@ -3516,7 +3516,7 @@ the User Guide for an example.
     L 118.744324 79.570257 
     L 105.653417 79.570257 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 118.744324 79.570257 
@@ -3524,7 +3524,7 @@ the User Guide for an example.
     L 131.835231 79.570257 
     L 118.744324 79.570257 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 131.835231 79.570257 
@@ -3532,7 +3532,7 @@ the User Guide for an example.
     L 144.926138 79.570257 
     L 131.835231 79.570257 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 144.926138 79.570257 
@@ -3540,18 +3540,18 @@ the User Guide for an example.
     L 158.017045 45.284542 
     L 144.926138 45.284542 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m1c02b37826" d="M 0 0 
+           <path id="m07be134cde" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m1c02b37826" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m07be134cde" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -3561,7 +3561,7 @@ the User Guide for an example.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m1c02b37826" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m07be134cde" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -3571,7 +3571,7 @@ the User Guide for an example.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m1c02b37826" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m07be134cde" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -3583,12 +3583,12 @@ the User Guide for an example.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m8317d616e3" d="M 0 0 
+           <path id="md780fff447" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m8317d616e3" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md780fff447" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -3598,7 +3598,7 @@ the User Guide for an example.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m8317d616e3" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md780fff447" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -3608,7 +3608,7 @@ the User Guide for an example.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m8317d616e3" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md780fff447" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -3629,7 +3629,7 @@ the User Guide for an example.
       </g>
      </g>
      <defs>
-      <clipPath id="p6bf68b1c2e">
+      <clipPath id="p3f3d3bbcc3">
        <rect x="20.5625" y="7.570257" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -3726,7 +3726,7 @@ the User Guide for an example.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-23T14:14:12.331591</dc:date>
+        <dc:date>2026-06-24T08:52:34.173889</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -3756,7 +3756,7 @@ the User Guide for an example.
     L 40.198864 10.998828 
     L 27.107955 10.998828 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 40.198864 79.570257 
@@ -3764,7 +3764,7 @@ the User Guide for an example.
     L 53.289772 45.284542 
     L 40.198864 45.284542 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 53.289772 79.570257 
@@ -3772,7 +3772,7 @@ the User Guide for an example.
     L 66.380683 79.570257 
     L 53.289772 79.570257 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 66.380683 79.570257 
@@ -3780,7 +3780,7 @@ the User Guide for an example.
     L 79.47159 45.284542 
     L 66.380683 45.284542 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 79.47159 79.570257 
@@ -3788,7 +3788,7 @@ the User Guide for an example.
     L 92.562497 79.570257 
     L 79.47159 79.570257 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 92.562497 79.570257 
@@ -3796,7 +3796,7 @@ the User Guide for an example.
     L 105.653417 79.570257 
     L 92.562497 79.570257 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 105.653417 79.570257 
@@ -3804,7 +3804,7 @@ the User Guide for an example.
     L 118.744324 79.570257 
     L 105.653417 79.570257 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 118.744324 79.570257 
@@ -3812,7 +3812,7 @@ the User Guide for an example.
     L 131.835231 79.570257 
     L 118.744324 79.570257 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 131.835231 79.570257 
@@ -3820,7 +3820,7 @@ the User Guide for an example.
     L 144.926138 79.570257 
     L 131.835231 79.570257 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 144.926138 79.570257 
@@ -3828,18 +3828,18 @@ the User Guide for an example.
     L 158.017045 45.284542 
     L 144.926138 45.284542 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m2acc157d7c" d="M 0 0 
+           <path id="m394d9fee62" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m2acc157d7c" x="23.424924" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m394d9fee62" x="23.424924" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -3849,7 +3849,7 @@ the User Guide for an example.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m2acc157d7c" x="81.381709" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m394d9fee62" x="81.381709" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -3859,7 +3859,7 @@ the User Guide for an example.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m2acc157d7c" x="139.338493" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m394d9fee62" x="139.338493" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -3871,12 +3871,12 @@ the User Guide for an example.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m0d77e07811" d="M 0 0 
+           <path id="m9673d28ccb" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m0d77e07811" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9673d28ccb" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -3886,7 +3886,7 @@ the User Guide for an example.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m0d77e07811" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9673d28ccb" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -3896,7 +3896,7 @@ the User Guide for an example.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m0d77e07811" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9673d28ccb" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -3917,7 +3917,7 @@ the User Guide for an example.
       </g>
      </g>
      <defs>
-      <clipPath id="pbc69da6d38">
+      <clipPath id="p2a90c905bd">
        <rect x="20.5625" y="7.570257" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -3995,7 +3995,7 @@ the User Guide for an example.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-23T14:14:12.377504</dc:date>
+        <dc:date>2026-06-24T08:52:34.224743</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -4025,7 +4025,7 @@ the User Guide for an example.
     L 154.516295 23.054545 
     L 65.373437 23.054545 
     z
-    " clip-path="url(#pb17ae89feb)" style="fill: #ee854a"/>
+    " clip-path="url(#pea0b23b5ae)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 65.373437 20.145455 
@@ -4033,18 +4033,18 @@ the User Guide for an example.
     L 154.516295 8.509091 
     L 65.373437 8.509091 
     z
-    " clip-path="url(#pb17ae89feb)" style="fill: #ee854a"/>
+    " clip-path="url(#pea0b23b5ae)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m0d4d6fb4b7" d="M 0 0 
+           <path id="m1a87a9edac" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m0d4d6fb4b7" x="65.373437" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m1a87a9edac" x="65.373437" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -4054,7 +4054,7 @@ the User Guide for an example.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m0d4d6fb4b7" x="101.03058" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m1a87a9edac" x="101.03058" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -4064,7 +4064,7 @@ the User Guide for an example.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m0d4d6fb4b7" x="136.687723" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m1a87a9edac" x="136.687723" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -4076,12 +4076,12 @@ the User Guide for an example.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="mc874eaaf06" d="M 0 0 
+           <path id="maa17b804a0" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mc874eaaf06" x="65.373437" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#maa17b804a0" x="65.373437" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -4091,7 +4091,7 @@ the User Guide for an example.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#mc874eaaf06" x="65.373437" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#maa17b804a0" x="65.373437" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -4138,7 +4138,7 @@ the User Guide for an example.
       </g>
      </g>
      <defs>
-      <clipPath id="pb17ae89feb">
+      <clipPath id="pea0b23b5ae">
        <rect x="65.373437" y="7.2" width="93.6" height="28.8"/>
       </clipPath>
      </defs>
@@ -4309,7 +4309,7 @@ the User Guide for an example.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-23T14:14:12.426881</dc:date>
+        <dc:date>2026-06-24T08:52:34.278063</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -4339,7 +4339,7 @@ the User Guide for an example.
     L 40.198872 10.628571 
     L 27.107955 10.628571 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 40.198872 79.2 
@@ -4347,7 +4347,7 @@ the User Guide for an example.
     L 53.289789 79.2 
     L 40.198872 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 53.289789 79.2 
@@ -4355,7 +4355,7 @@ the User Guide for an example.
     L 66.380666 79.2 
     L 53.289789 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 66.380666 79.2 
@@ -4363,7 +4363,7 @@ the User Guide for an example.
     L 79.471583 79.2 
     L 66.380666 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 79.471583 79.2 
@@ -4371,7 +4371,7 @@ the User Guide for an example.
     L 92.5625 79.2 
     L 79.471583 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 92.5625 79.2 
@@ -4379,7 +4379,7 @@ the User Guide for an example.
     L 105.653417 79.2 
     L 92.5625 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 105.653417 79.2 
@@ -4387,7 +4387,7 @@ the User Guide for an example.
     L 118.744334 79.2 
     L 105.653417 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 118.744334 79.2 
@@ -4395,7 +4395,7 @@ the User Guide for an example.
     L 131.835252 79.2 
     L 118.744334 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 131.835252 79.2 
@@ -4403,7 +4403,7 @@ the User Guide for an example.
     L 144.926128 65.485714 
     L 131.835252 65.485714 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 144.926128 79.2 
@@ -4411,18 +4411,18 @@ the User Guide for an example.
     L 158.017045 24.342857 
     L 144.926128 24.342857 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m0e79b97aff" d="M 0 0 
+           <path id="m3785e90df8" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m0e79b97aff" x="27.17914" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3785e90df8" x="27.17914" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -4432,7 +4432,7 @@ the User Guide for an example.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m0e79b97aff" x="95.16778" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3785e90df8" x="95.16778" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -4442,7 +4442,7 @@ the User Guide for an example.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m0e79b97aff" x="163.156421" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3785e90df8" x="163.156421" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -4454,12 +4454,12 @@ the User Guide for an example.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="me773af16a6" d="M 0 0 
+           <path id="m26453324ad" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#me773af16a6" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m26453324ad" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -4469,7 +4469,7 @@ the User Guide for an example.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#me773af16a6" x="20.5625" y="51.771429" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m26453324ad" x="20.5625" y="51.771429" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -4479,7 +4479,7 @@ the User Guide for an example.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#me773af16a6" x="20.5625" y="24.342857" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m26453324ad" x="20.5625" y="24.342857" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -4500,7 +4500,7 @@ the User Guide for an example.
       </g>
      </g>
      <defs>
-      <clipPath id="p37d360a9dd">
+      <clipPath id="p45d9836095">
        <rect x="20.5625" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -5146,7 +5146,7 @@ the User Guide for an example.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-23T14:14:12.283661</dc:date>
+        <dc:date>2026-06-24T08:52:34.121650</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -5176,7 +5176,7 @@ the User Guide for an example.
     L 40.198864 45.284542 
     L 27.107955 45.284542 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 40.198864 79.570257 
@@ -5184,7 +5184,7 @@ the User Guide for an example.
     L 53.289774 10.998828 
     L 40.198864 10.998828 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 53.289774 79.570257 
@@ -5192,7 +5192,7 @@ the User Guide for an example.
     L 66.380686 79.570257 
     L 53.289774 79.570257 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 66.380686 79.570257 
@@ -5200,7 +5200,7 @@ the User Guide for an example.
     L 79.471593 79.570257 
     L 66.380686 79.570257 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 79.471593 79.570257 
@@ -5208,7 +5208,7 @@ the User Guide for an example.
     L 92.5625 79.570257 
     L 79.471593 79.570257 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 92.5625 79.570257 
@@ -5216,7 +5216,7 @@ the User Guide for an example.
     L 105.653417 45.284542 
     L 92.5625 45.284542 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 105.653417 79.570257 
@@ -5224,7 +5224,7 @@ the User Guide for an example.
     L 118.744324 79.570257 
     L 105.653417 79.570257 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 118.744324 79.570257 
@@ -5232,7 +5232,7 @@ the User Guide for an example.
     L 131.835231 79.570257 
     L 118.744324 79.570257 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 131.835231 79.570257 
@@ -5240,7 +5240,7 @@ the User Guide for an example.
     L 144.926138 79.570257 
     L 131.835231 79.570257 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 144.926138 79.570257 
@@ -5248,18 +5248,18 @@ the User Guide for an example.
     L 158.017045 45.284542 
     L 144.926138 45.284542 
     z
-    " clip-path="url(#p6bf68b1c2e)" style="fill: #1f77b4"/>
+    " clip-path="url(#p3f3d3bbcc3)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m1c02b37826" d="M 0 0 
+           <path id="m07be134cde" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m1c02b37826" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m07be134cde" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -5269,7 +5269,7 @@ the User Guide for an example.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m1c02b37826" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m07be134cde" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -5279,7 +5279,7 @@ the User Guide for an example.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m1c02b37826" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m07be134cde" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -5291,12 +5291,12 @@ the User Guide for an example.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m8317d616e3" d="M 0 0 
+           <path id="md780fff447" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m8317d616e3" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md780fff447" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -5306,7 +5306,7 @@ the User Guide for an example.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m8317d616e3" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md780fff447" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -5316,7 +5316,7 @@ the User Guide for an example.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m8317d616e3" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#md780fff447" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -5337,7 +5337,7 @@ the User Guide for an example.
       </g>
      </g>
      <defs>
-      <clipPath id="p6bf68b1c2e">
+      <clipPath id="p3f3d3bbcc3">
        <rect x="20.5625" y="7.570257" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -5430,7 +5430,7 @@ the User Guide for an example.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-23T14:14:12.331591</dc:date>
+        <dc:date>2026-06-24T08:52:34.173889</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -5460,7 +5460,7 @@ the User Guide for an example.
     L 40.198864 10.998828 
     L 27.107955 10.998828 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 40.198864 79.570257 
@@ -5468,7 +5468,7 @@ the User Guide for an example.
     L 53.289772 45.284542 
     L 40.198864 45.284542 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 53.289772 79.570257 
@@ -5476,7 +5476,7 @@ the User Guide for an example.
     L 66.380683 79.570257 
     L 53.289772 79.570257 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 66.380683 79.570257 
@@ -5484,7 +5484,7 @@ the User Guide for an example.
     L 79.47159 45.284542 
     L 66.380683 45.284542 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 79.47159 79.570257 
@@ -5492,7 +5492,7 @@ the User Guide for an example.
     L 92.562497 79.570257 
     L 79.47159 79.570257 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 92.562497 79.570257 
@@ -5500,7 +5500,7 @@ the User Guide for an example.
     L 105.653417 79.570257 
     L 92.562497 79.570257 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 105.653417 79.570257 
@@ -5508,7 +5508,7 @@ the User Guide for an example.
     L 118.744324 79.570257 
     L 105.653417 79.570257 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 118.744324 79.570257 
@@ -5516,7 +5516,7 @@ the User Guide for an example.
     L 131.835231 79.570257 
     L 118.744324 79.570257 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 131.835231 79.570257 
@@ -5524,7 +5524,7 @@ the User Guide for an example.
     L 144.926138 79.570257 
     L 131.835231 79.570257 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 144.926138 79.570257 
@@ -5532,18 +5532,18 @@ the User Guide for an example.
     L 158.017045 45.284542 
     L 144.926138 45.284542 
     z
-    " clip-path="url(#pbc69da6d38)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2a90c905bd)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m2acc157d7c" d="M 0 0 
+           <path id="m394d9fee62" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m2acc157d7c" x="23.424924" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m394d9fee62" x="23.424924" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -5553,7 +5553,7 @@ the User Guide for an example.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m2acc157d7c" x="81.381709" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m394d9fee62" x="81.381709" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -5563,7 +5563,7 @@ the User Guide for an example.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m2acc157d7c" x="139.338493" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m394d9fee62" x="139.338493" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -5575,12 +5575,12 @@ the User Guide for an example.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m0d77e07811" d="M 0 0 
+           <path id="m9673d28ccb" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m0d77e07811" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9673d28ccb" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -5590,7 +5590,7 @@ the User Guide for an example.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m0d77e07811" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9673d28ccb" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -5600,7 +5600,7 @@ the User Guide for an example.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m0d77e07811" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9673d28ccb" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -5621,7 +5621,7 @@ the User Guide for an example.
       </g>
      </g>
      <defs>
-      <clipPath id="pbc69da6d38">
+      <clipPath id="p2a90c905bd">
        <rect x="20.5625" y="7.570257" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -5695,7 +5695,7 @@ the User Guide for an example.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-23T14:14:12.377504</dc:date>
+        <dc:date>2026-06-24T08:52:34.224743</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -5725,7 +5725,7 @@ the User Guide for an example.
     L 154.516295 23.054545 
     L 65.373437 23.054545 
     z
-    " clip-path="url(#pb17ae89feb)" style="fill: #ee854a"/>
+    " clip-path="url(#pea0b23b5ae)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 65.373437 20.145455 
@@ -5733,18 +5733,18 @@ the User Guide for an example.
     L 154.516295 8.509091 
     L 65.373437 8.509091 
     z
-    " clip-path="url(#pb17ae89feb)" style="fill: #ee854a"/>
+    " clip-path="url(#pea0b23b5ae)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m0d4d6fb4b7" d="M 0 0 
+           <path id="m1a87a9edac" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m0d4d6fb4b7" x="65.373437" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m1a87a9edac" x="65.373437" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -5754,7 +5754,7 @@ the User Guide for an example.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m0d4d6fb4b7" x="101.03058" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m1a87a9edac" x="101.03058" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -5764,7 +5764,7 @@ the User Guide for an example.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m0d4d6fb4b7" x="136.687723" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m1a87a9edac" x="136.687723" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -5776,12 +5776,12 @@ the User Guide for an example.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="mc874eaaf06" d="M 0 0 
+           <path id="maa17b804a0" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mc874eaaf06" x="65.373437" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#maa17b804a0" x="65.373437" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -5791,7 +5791,7 @@ the User Guide for an example.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#mc874eaaf06" x="65.373437" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#maa17b804a0" x="65.373437" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -5838,7 +5838,7 @@ the User Guide for an example.
       </g>
      </g>
      <defs>
-      <clipPath id="pb17ae89feb">
+      <clipPath id="pea0b23b5ae">
        <rect x="65.373437" y="7.2" width="93.6" height="28.8"/>
       </clipPath>
      </defs>
@@ -6005,7 +6005,7 @@ the User Guide for an example.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-23T14:14:12.426881</dc:date>
+        <dc:date>2026-06-24T08:52:34.278063</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -6035,7 +6035,7 @@ the User Guide for an example.
     L 40.198872 10.628571 
     L 27.107955 10.628571 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 40.198872 79.2 
@@ -6043,7 +6043,7 @@ the User Guide for an example.
     L 53.289789 79.2 
     L 40.198872 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 53.289789 79.2 
@@ -6051,7 +6051,7 @@ the User Guide for an example.
     L 66.380666 79.2 
     L 53.289789 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 66.380666 79.2 
@@ -6059,7 +6059,7 @@ the User Guide for an example.
     L 79.471583 79.2 
     L 66.380666 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 79.471583 79.2 
@@ -6067,7 +6067,7 @@ the User Guide for an example.
     L 92.5625 79.2 
     L 79.471583 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 92.5625 79.2 
@@ -6075,7 +6075,7 @@ the User Guide for an example.
     L 105.653417 79.2 
     L 92.5625 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 105.653417 79.2 
@@ -6083,7 +6083,7 @@ the User Guide for an example.
     L 118.744334 79.2 
     L 105.653417 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 118.744334 79.2 
@@ -6091,7 +6091,7 @@ the User Guide for an example.
     L 131.835252 79.2 
     L 118.744334 79.2 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 131.835252 79.2 
@@ -6099,7 +6099,7 @@ the User Guide for an example.
     L 144.926128 65.485714 
     L 131.835252 65.485714 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 144.926128 79.2 
@@ -6107,18 +6107,18 @@ the User Guide for an example.
     L 158.017045 24.342857 
     L 144.926128 24.342857 
     z
-    " clip-path="url(#p37d360a9dd)" style="fill: #1f77b4"/>
+    " clip-path="url(#p45d9836095)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m0e79b97aff" d="M 0 0 
+           <path id="m3785e90df8" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m0e79b97aff" x="27.17914" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3785e90df8" x="27.17914" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -6128,7 +6128,7 @@ the User Guide for an example.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m0e79b97aff" x="95.16778" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3785e90df8" x="95.16778" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -6138,7 +6138,7 @@ the User Guide for an example.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m0e79b97aff" x="163.156421" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3785e90df8" x="163.156421" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -6150,12 +6150,12 @@ the User Guide for an example.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="me773af16a6" d="M 0 0 
+           <path id="m26453324ad" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#me773af16a6" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m26453324ad" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -6165,7 +6165,7 @@ the User Guide for an example.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#me773af16a6" x="20.5625" y="51.771429" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m26453324ad" x="20.5625" y="51.771429" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -6175,7 +6175,7 @@ the User Guide for an example.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#me773af16a6" x="20.5625" y="24.342857" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m26453324ad" x="20.5625" y="24.342857" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -6196,7 +6196,7 @@ the User Guide for an example.
       </g>
      </g>
      <defs>
-      <clipPath id="p37d360a9dd">
+      <clipPath id="p45d9836095">
        <rect x="20.5625" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -6334,7 +6334,7 @@ the User Guide for an example.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_c2703c4c">
+        <skrub-table-report class="report" id="report_a3b911a4">
         </skrub-table-report>
 
         <script type="module">
@@ -7438,7 +7438,7 @@ the User Guide for an example.
         </script>
     </div>
 
-    <div id="report_c2703c4c-wrapper-fallback">
+    <div id="report_a3b911a4-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -7449,8 +7449,8 @@ the User Guide for an example.
     </div>
 
     <script>
-     document.getElementById("report_c2703c4c-wrapper").removeAttribute("hidden");
-     document.getElementById("report_c2703c4c-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_a3b911a4-wrapper").removeAttribute("hidden");
+     document.getElementById("report_a3b911a4-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -7476,7 +7476,7 @@ still available.
 
     <div class="output_subarea output_html rendered_html output_result">
     <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="eca803d8-3431-4c1b-a4ff-21be0feef275" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("eca803d8-3431-4c1b-a4ff-21be0feef275")) {                    Plotly.newPlot(                        "eca803d8-3431-4c1b-a4ff-21be0feef275",                        [{"dimensions":[{"label":"min_samples_leaf","ticktext":["NaN","1","2","3","4","5","6","7"],"tickvals":[-0.19459101490553132,0.0,0.6931471805599453,1.0986122886681098,1.3862943611198906,1.6094379124341003,1.791759469228055,1.9459101490553132],"values":{"dtype":"f8","bdata":"Bv4UqhTcd78rsEv54kTmP789jAvtb+Y\u002fqFIUh01S9j9XWjKuciL\u002fP6yujr5b6Mi\u002frK6OvlvoyL+sro6+W+jIv6yujr5b6Mi\u002frK6OvlvoyL8="}},{"label":"\u03b1","ticktext":["NaN","0.01","0.02","0.03","0.04","0.06","0.09","0.14","0.21","0.31","0.46"],"tickvals":[-4.725250883542699,-4.365399591784898,-3.965564823165118,-3.5657300545453388,-3.1658952859255596,-2.76606051730578,-2.3662257486860003,-1.9663909800662212,-1.566556211446442,-1.1667214428266623,-0.7668866742068832],"values":{"dtype":"f8","bdata":"ENjoKqjmEsAQ2OgqqOYSwBDY6Cqo5hLAENjoKqjmEsAQ2OgqqOYSwNydLuxViui\u002fFGtou9De+78VhPrOenIDwLlkjxbiVQfAIngkk1doEcA="}},{"label":"regressor","ticktext":["extra_tree","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAarY4AsEfbz\u002f0JsdDlVVXPwAAAAAAAPA\u002fHZHd2Snt7z8AAAAAAADwPwAAAAAAAPA\u002fAAAAAAAA8D8="}},{"label":"score time","ticktext":["0.014","0.023","0.033","0.042","0.052","0.061","0.071","0.080","0.090","0.099"],"tickvals":[0.013828039169311523,0.023330622249179415,0.03283320532904731,0.0423357884089152,0.05183837148878309,0.061340954568650984,0.07084353764851888,0.08034612072838676,0.08984870380825466,0.09935128688812256],"values":{"dtype":"f8","bdata":"AAAAABZvuT8rWxvEHuayP3ZGx7+M37I\u002fcnXAZINcrj8GaTV6qfuqP7Z2TGH4U4w\u002fAAAAAOBRjD\u002fllOzlB\u002feMPwAAAADgUYw\u002fAAAAAOBRjD8="}},{"label":"fit time","ticktext":["0.0","0.2","0.5","0.7","0.9","1.1","1.3","1.6","1.8","2.0"],"tickvals":[0.013654470443725586,0.23497356308831108,0.45629265573289657,0.6776117483774821,0.8989308410220676,1.1202499336666532,1.3415690263112385,1.562888118955824,1.7842072116004095,2.005526304244995],"values":{"dtype":"f8","bdata":"AAAAYFELAEBtTjs9bar2P\u002fEH\u002fYMqu\u002fY\u002fDZL4xDhr8T+Ct02wIN\u002fsPwAAAADg9os\u002fAAAAAOD2iz+KoqvTbUSRP7smsfDeTJQ\u002fj340JkrQkT8="}},{"label":"score","ticktext":["0.60","0.62","0.64","0.66","0.69","0.71","0.73","0.75","0.77","0.79"],"tickvals":[0.5998953213503151,0.6212892666474422,0.6426832119445692,0.6640771572416964,0.6854711025388235,0.7068650478359505,0.7282589931330776,0.7496529384302046,0.7710468837273318,0.7924408290244589],"values":{"dtype":"f8","bdata":"EJuV3qxb6T8RCjJayD7pP22wMYRcO+k\u002fUmv2yx7P6D8Llq3L5knoPwqWGMheMuM\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\u002f7iJHrFcy4z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"EJuV3qxb6T8RCjJayD7pP22wMYRcO+k\u002fUmv2yx7P6D8Llq3L5knoPwqWGMheMuM\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\u002f7iJHrFcy4z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="604c1bb6-0f33-409f-baf0-7f883c26b8b0" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("604c1bb6-0f33-409f-baf0-7f883c26b8b0")) {                    Plotly.newPlot(                        "604c1bb6-0f33-409f-baf0-7f883c26b8b0",                        [{"dimensions":[{"label":"min_samples_leaf","ticktext":["NaN","1","2","3","4","5","6","7"],"tickvals":[-0.19459101490553132,0.0,0.6931471805599453,1.0986122886681098,1.3862943611198906,1.6094379124341003,1.791759469228055,1.9459101490553132],"values":{"dtype":"f8","bdata":"Bv4UqhTcd78rsEv54kTmP789jAvtb+Y\u002fqFIUh01S9j9XWjKuciL\u002fP6yujr5b6Mi\u002frK6OvlvoyL+sro6+W+jIv6yujr5b6Mi\u002frK6OvlvoyL8="}},{"label":"\u03b1","ticktext":["NaN","0.01","0.02","0.03","0.04","0.06","0.09","0.14","0.21","0.31","0.46"],"tickvals":[-4.725250883542699,-4.365399591784898,-3.965564823165118,-3.5657300545453388,-3.1658952859255596,-2.76606051730578,-2.3662257486860003,-1.9663909800662212,-1.566556211446442,-1.1667214428266623,-0.7668866742068832],"values":{"dtype":"f8","bdata":"ENjoKqjmEsAQ2OgqqOYSwBDY6Cqo5hLAENjoKqjmEsAQ2OgqqOYSwNydLuxViui\u002fFGtou9De+78VhPrOenIDwLlkjxbiVQfAIngkk1doEcA="}},{"label":"regressor","ticktext":["extra_tree","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAarY4AsEfbz\u002f0JsdDlVVXPwAAAAAAAPA\u002fHZHd2Snt7z8AAAAAAADwPwAAAAAAAPA\u002fAAAAAAAA8D8="}},{"label":"score time","ticktext":["0.018","0.029","0.040","0.051","0.062","0.073","0.085","0.096","0.107","0.118"],"tickvals":[0.017785966396331787,0.02892122666041056,0.040056486924489335,0.051191747188568115,0.06232700745264689,0.07346226771672566,0.08459752798080444,0.09573278824488321,0.10686804850896199,0.11800330877304077],"values":{"dtype":"f8","bdata":"AAAAAHc1vj+KDulTvMuzPwosGCwndLQ\u002f9GlLRM3TsD9xjcCRZIqrP+\u002fuZ48MEJU\u002f1nr40lALlD8AAAAAfDaSP0srpxuFxpY\u002fAAAAAHw2kj8="}},{"label":"fit time","ticktext":["0.0","0.3","0.6","0.8","1.1","1.4","1.7","1.9","2.2","2.5"],"tickvals":[0.018141448497772217,0.29067379898495144,0.5632061494721307,0.8357384999593098,1.108270850446489,1.3808032009336684,1.6533355514208474,1.9258679019080267,2.198400252395206,2.4709326028823853],"values":{"dtype":"f8","bdata":"AAAAUHjEA0DnxfLu33j3P40CrdBOV\u002fk\u002f+Dapqjlx8j\u002fWRnEGYdfuPwAAAACsk5I\u002fAAAAAKyTkj8AAAAArJOSP\u002fK1t6FZwJ0\u002fFtSM2+KjmT8="}},{"label":"score","ticktext":["0.60","0.62","0.64","0.66","0.69","0.71","0.73","0.75","0.77","0.79"],"tickvals":[0.5998953213503151,0.6212892666474422,0.6426832119445692,0.6640771572416964,0.6854711025388235,0.7068650478359505,0.7282589931330776,0.7496529384302046,0.7710468837273318,0.7924408290244589],"values":{"dtype":"f8","bdata":"EJuV3qxb6T8RCjJayD7pP22wMYRcO+k\u002fUmv2yx7P6D8Llq3L5knoPwqWGMheMuM\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\u002f7iJHrFcy4z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"EJuV3qxb6T8RCjJayD7pP22wMYRcO+k\u002fUmv2yx7P6D8Llq3L5knoPwqWGMheMuM\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\u002f7iJHrFcy4z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -7501,7 +7501,7 @@ hyperparameter search is available in the attribute ``study_``:
  .. code-block:: none
 
 
-    <optuna.study.study.Study object at 0x786fb65093a0>
+    <optuna.study.study.Study object at 0x72856c8459a0>
 
 
 
@@ -7549,7 +7549,7 @@ This allows us to use Optuna's reporting capabilities provided in
 
     <div class="output_subarea output_html rendered_html output_result">
     <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="9a03acff-de7e-49e5-8f42-2679ce62b92c" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("9a03acff-de7e-49e5-8f42-2679ce62b92c")) {                    Plotly.newPlot(                        "9a03acff-de7e-49e5-8f42-2679ce62b92c",                        [{"marker":{"color":[4,5,7,8,9],"colorbar":{"title":{"text":"Trial"},"x":1.0,"xpad":40},"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"line":{"color":"Grey","width":0.5}},"mode":"markers","name":"Feasible Trial","showlegend":false,"x":[2,1,7,4,2],"y":[0.7884962636867506,0.7924408290244589,0.7590211847388572,0.7752832397121472,0.788913894808788],"type":"scatter"}],                        {"title":{"text":"Slice Plot"},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"title":{"text":"0:min_samples_leaf"},"type":"log"},"yaxis":{"title":{"text":"Objective Value"}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="4d2783a4-3c99-4ae1-92a5-59cad2944d9c" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("4d2783a4-3c99-4ae1-92a5-59cad2944d9c")) {                    Plotly.newPlot(                        "4d2783a4-3c99-4ae1-92a5-59cad2944d9c",                        [{"marker":{"color":[4,5,7,8,9],"colorbar":{"title":{"text":"Trial"},"x":1.0,"xpad":40},"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"line":{"color":"Grey","width":0.5}},"mode":"markers","name":"Feasible Trial","showlegend":false,"x":[2,1,7,4,2],"y":[0.7884962636867506,0.7924408290244589,0.7590211847388572,0.7752832397121472,0.788913894808788],"type":"scatter"}],                        {"title":{"text":"Slice Plot"},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"title":{"text":"0:min_samples_leaf"},"type":"log"},"yaxis":{"title":{"text":"Objective Value"}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -7615,17 +7615,17 @@ more information.
 
  .. code-block:: none
 
-    [I 2026-06-23 14:14:16,008] A new study created in memory with name: no-name-4c742207-f796-42a4-acea-f8274eeb1b72
-    [I 2026-06-23 14:14:16,296] Trial 0 finished with value: 0.5998978593848869 and parameters: {'2:regressor': '1:ridge', '1:α': 0.3495374460145031}. Best is trial 0 with value: 0.5998978593848869.
-    [I 2026-06-23 14:14:22,440] Trial 1 finished with value: 0.7895968944171157 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 1 with value: 0.7895968944171157.
-    [I 2026-06-23 14:14:26,274] Trial 2 finished with value: 0.7555489637229935 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 8}. Best is trial 1 with value: 0.7895968944171157.
-    [I 2026-06-23 14:14:26,543] Trial 3 finished with value: 0.5998991347465081 and parameters: {'2:regressor': '1:ridge', '1:α': 0.5220002794213989}. Best is trial 1 with value: 0.7895968944171157.
-    [I 2026-06-23 14:14:26,812] Trial 4 finished with value: 0.599899299236609 and parameters: {'2:regressor': '1:ridge', '1:α': 0.5444054639424168}. Best is trial 1 with value: 0.7895968944171157.
-    [I 2026-06-23 14:14:27,082] Trial 5 finished with value: 0.5998956565739451 and parameters: {'2:regressor': '1:ridge', '1:α': 0.05672548719843599}. Best is trial 1 with value: 0.7895968944171157.
-    [I 2026-06-23 14:14:27,352] Trial 6 finished with value: 0.5999386861341576 and parameters: {'2:regressor': '1:ridge', '1:α': 7.737593929749961}. Best is trial 1 with value: 0.7895968944171157.
-    [I 2026-06-23 14:14:31,776] Trial 7 finished with value: 0.7680486475225994 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 5}. Best is trial 1 with value: 0.7895968944171157.
-    [I 2026-06-23 14:14:35,923] Trial 8 finished with value: 0.7651749549962034 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 6}. Best is trial 1 with value: 0.7895968944171157.
-    [I 2026-06-23 14:14:39,164] Trial 9 finished with value: 0.7261283571680806 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 17}. Best is trial 1 with value: 0.7895968944171157.
+    [I 2026-06-24 08:52:38,021] A new study created in memory with name: no-name-9bbc5074-869e-4baa-a088-72733ff7fab3
+    [I 2026-06-24 08:52:38,331] Trial 0 finished with value: 0.5999042244209245 and parameters: {'2:regressor': '1:ridge', '1:α': 1.2334282449806875}. Best is trial 0 with value: 0.5999042244209245.
+    [I 2026-06-24 08:52:38,621] Trial 1 finished with value: 0.5999014953134549 and parameters: {'2:regressor': '1:ridge', '1:α': 0.84719266259082}. Best is trial 0 with value: 0.5999042244209245.
+    [I 2026-06-24 08:52:38,912] Trial 2 finished with value: 0.5998988052938893 and parameters: {'2:regressor': '1:ridge', '1:α': 0.4772376415970309}. Best is trial 0 with value: 0.5999042244209245.
+    [I 2026-06-24 08:52:42,292] Trial 3 finished with value: 0.7299878086466011 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 15}. Best is trial 3 with value: 0.7299878086466011.
+    [I 2026-06-24 08:52:42,583] Trial 4 finished with value: 0.5998988737048329 and parameters: {'2:regressor': '1:ridge', '1:α': 0.48652036554905237}. Best is trial 3 with value: 0.7299878086466011.
+    [I 2026-06-24 08:52:48,999] Trial 5 finished with value: 0.7898683039632726 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 5 with value: 0.7898683039632726.
+    [I 2026-06-24 08:52:49,307] Trial 6 finished with value: 0.5998956337042924 and parameters: {'2:regressor': '1:ridge', '1:α': 0.053718148194744145}. Best is trial 5 with value: 0.7898683039632726.
+    [I 2026-06-24 08:52:49,660] Trial 7 finished with value: 0.5999265059515129 and parameters: {'2:regressor': '1:ridge', '1:α': 4.953387254535132}. Best is trial 5 with value: 0.7898683039632726.
+    [I 2026-06-24 08:52:49,974] Trial 8 finished with value: 0.5998962593133467 and parameters: {'2:regressor': '1:ridge', '1:α': 0.1362236801265965}. Best is trial 5 with value: 0.7898683039632726.
+    [I 2026-06-24 08:52:56,357] Trial 9 finished with value: 0.7818834295278921 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 3}. Best is trial 5 with value: 0.7898683039632726.
 
     {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}
 
@@ -7650,7 +7650,7 @@ We can also use Optuna's visualization capabilities to inspect the study:
 
     <div class="output_subarea output_html rendered_html output_result">
     <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="a32d97ef-a783-4f1e-bb66-6bb2f913a71c" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("a32d97ef-a783-4f1e-bb66-6bb2f913a71c")) {                    Plotly.newPlot(                        "a32d97ef-a783-4f1e-bb66-6bb2f913a71c",                        [{"mode":"markers","name":"Objective Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.5998978593848869,0.7895968944171157,0.7555489637229935,0.5998991347465081,0.599899299236609,0.5998956565739451,0.5999386861341576,0.7680486475225994,0.7651749549962034,0.7261283571680806],"type":"scatter"},{"mode":"lines","name":"Best Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.5998978593848869,0.7895968944171157,0.7895968944171157,0.7895968944171157,0.7895968944171157,0.7895968944171157,0.7895968944171157,0.7895968944171157,0.7895968944171157,0.7895968944171157],"type":"scatter"},{"marker":{"color":"#cccccc"},"mode":"markers","name":"Infeasible Trial","showlegend":false,"x":[],"y":[],"type":"scatter"}],                        {"title":{"text":"Optimization History Plot"},"xaxis":{"title":{"text":"Trial"}},"yaxis":{"title":{"text":"Objective Value"}},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="5440ff00-48cd-45f3-a990-ce295ebf7a2d" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("5440ff00-48cd-45f3-a990-ce295ebf7a2d")) {                    Plotly.newPlot(                        "5440ff00-48cd-45f3-a990-ce295ebf7a2d",                        [{"mode":"markers","name":"Objective Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.5999042244209245,0.5999014953134549,0.5998988052938893,0.7299878086466011,0.5998988737048329,0.7898683039632726,0.5998956337042924,0.5999265059515129,0.5998962593133467,0.7818834295278921],"type":"scatter"},{"mode":"lines","name":"Best Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.5999042244209245,0.5999042244209245,0.5999042244209245,0.7299878086466011,0.7299878086466011,0.7898683039632726,0.7898683039632726,0.7898683039632726,0.7898683039632726,0.7898683039632726],"type":"scatter"},{"marker":{"color":"#cccccc"},"mode":"markers","name":"Infeasible Trial","showlegend":false,"x":[],"y":[],"type":"scatter"}],                        {"title":{"text":"Optimization History Plot"},"xaxis":{"title":{"text":"Trial"}},"yaxis":{"title":{"text":"Objective Value"}},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -7689,9 +7689,9 @@ dataset:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 6.796 seconds)
+   **Total running time of the script:** (1 minutes 10.514 seconds)
 
-**Estimated memory usage:**  658 MB
+**Estimated memory usage:**  657 MB
 
 
 .. _sphx_glr_download_auto_examples_02_data_ops_1131_optuna_choices.py:
