@@ -96,13 +96,19 @@ on the date, time and weather conditions.
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    Downloading 'bike_sharing' from https://github.com/skrub-data/skrub-data-files/raw/refs/heads/main/bike_sharing.zip (attempt 1/3)
+
 
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_61bb5ef8-wrapper" hidden>
-        <template id="report_61bb5ef8-template">
+    <div id="report_d0ce3f4b-wrapper" hidden>
+        <template id="report_d0ce3f4b-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1548,7 +1554,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="2c778cdf"
+                    id="b35e51fc"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1578,7 +1584,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="e597935d"
+                    id="64710329"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1612,7 +1618,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="7ecf5696"
+                    id="0864a05a"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1646,7 +1652,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="c52952a3"
+                    id="53441832"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1680,7 +1686,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="fc512122"
+                    id="31a85285"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1714,7 +1720,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="6fd2b66f"
+                    id="4bd741a1"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1748,7 +1754,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="216d0629"
+                    id="9c348e40"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1796,7 +1802,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="bf1185cf"
+                    id="2a95ffbf"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1824,7 +1830,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="a8784c3f"
+                    id="57ae3794"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1854,7 +1860,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="57fbb459"
+                    id="7e1dbc6b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1884,7 +1890,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="26c64116"
+                    id="28ebd3c8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1914,7 +1920,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="a6801f1b"
+                    id="f3ddbb50"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1944,7 +1950,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="72d8b1cc"
+                    id="a545d06e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1974,7 +1980,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="dec73900"
+                    id="e6e7d94d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2008,7 +2014,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="8f3f9fbf"
+                    id="77d4ad1b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2036,7 +2042,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="3e7188ca"
+                    id="47091176"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2066,7 +2072,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="703f32d7"
+                    id="d5585616"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2096,7 +2102,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="c11cbe3f"
+                    id="6215c700"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2126,7 +2132,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="cfe48485"
+                    id="e7ca723e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2156,7 +2162,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="338ed839"
+                    id="e212d5c5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2186,7 +2192,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="164d119d"
+                    id="6aeaad63"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2220,7 +2226,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="300e23d4"
+                    id="2c2a5bd3"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2248,7 +2254,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="57025650"
+                    id="fd1efde9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2278,7 +2284,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="78cf7d6a"
+                    id="29434155"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2308,7 +2314,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="4a0cffff"
+                    id="1bd48936"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2338,7 +2344,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="6e681cd3"
+                    id="cfa0a1af"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2368,7 +2374,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="3c6a2431"
+                    id="cdffc8f7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2398,7 +2404,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="7728884f"
+                    id="18639980"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2432,7 +2438,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="b997bad3"
+                    id="bdeec847"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2460,7 +2466,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="11deb945"
+                    id="6e142f46"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2490,7 +2496,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="f48a00dd"
+                    id="e146afaa"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2520,7 +2526,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="e314f91f"
+                    id="3df406eb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2550,7 +2556,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="496b4593"
+                    id="bf1afd6d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2580,7 +2586,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="f3963261"
+                    id="468fd224"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2610,7 +2616,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="525f8f4c"
+                    id="8c78fd25"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2644,7 +2650,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="e7f3f5c1"
+                    id="45291d1f"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2672,7 +2678,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="c0f4db48"
+                    id="7de48f15"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2702,7 +2708,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="33f3888d"
+                    id="e62abf91"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2732,7 +2738,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="7cf70a6e"
+                    id="a24b29de"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2762,7 +2768,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="cc6d3413"
+                    id="9d8ac45b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2792,7 +2798,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="329731dd"
+                    id="51e6bf99"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2822,7 +2828,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="f11ef2d6"
+                    id="b22cdfb8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2936,7 +2942,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="1eebc602"
+                    id="f3dc34ff"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2964,7 +2970,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="e2f74c58"
+                    id="96a3cd57"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2994,7 +3000,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="abafbd86"
+                    id="c6f78336"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3024,7 +3030,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="73840aa3"
+                    id="e64d0d04"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3054,7 +3060,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="ab0633e3"
+                    id="52c6a37d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3084,7 +3090,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="faa258e9"
+                    id="5b207b30"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3114,7 +3120,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="baea18bc"
+                    id="15484d91"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3148,7 +3154,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="6ff60e11"
+                    id="af2ae4e6"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3176,7 +3182,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="18ec24b7"
+                    id="ae531c17"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3206,7 +3212,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="c12e5a25"
+                    id="a282d2bf"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3236,7 +3242,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="2aa7f363"
+                    id="bf46ec4f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3266,7 +3272,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="c2825788"
+                    id="f26012ff"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3296,7 +3302,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="f29a15f4"
+                    id="17c56446"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3326,7 +3332,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="2dd37dfe"
+                    id="b99fcce9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3360,7 +3366,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="1d2bb363"
+                    id="9e45e9d1"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3388,7 +3394,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="dc2db234"
+                    id="f10825dd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3418,7 +3424,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="40bff2ca"
+                    id="2f77bee9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3448,7 +3454,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="f0b4bd2a"
+                    id="d4d2bdb0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3478,7 +3484,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="eb586bfe"
+                    id="f86b9bd3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3508,7 +3514,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="f7aa599e"
+                    id="250ef550"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3538,7 +3544,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="bb77402e"
+                    id="993bbac8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3572,7 +3578,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="bed4fa93"
+                    id="29acd8b7"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3600,7 +3606,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="7e61cb26"
+                    id="8593d121"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3630,7 +3636,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="1b49b28e"
+                    id="0ba4b734"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3660,7 +3666,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="b870ac43"
+                    id="6fe74a2a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3690,7 +3696,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="997483c9"
+                    id="5a66f975"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3720,7 +3726,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="cf15596e"
+                    id="7a0a49e1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3750,7 +3756,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="58faef03"
+                    id="5fa1c720"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3784,7 +3790,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="5c4c723a"
+                    id="68bfc3f3"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3812,7 +3818,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="7bdc204b"
+                    id="a5707744"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3842,7 +3848,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="4ab8b95c"
+                    id="bbc36de6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3872,7 +3878,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="e0b6ba36"
+                    id="8f0ca78a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3902,7 +3908,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="df749390"
+                    id="5b8ff4d4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3932,7 +3938,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="135ad9b1"
+                    id="fecf3ec4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3962,7 +3968,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="4703ac2c"
+                    id="1b10b0b6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -4106,7 +4112,7 @@ on the date, time and weather conditions.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:26:27.383646</dc:date>
+        <dc:date>2026-06-29T10:07:35.424686</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -4136,7 +4142,7 @@ on the date, time and weather conditions.
     L 209.549107 149.086214 
     L 120.40625 149.086214 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 120.40625 146.4146 
@@ -4144,7 +4150,7 @@ on the date, time and weather conditions.
     L 209.549107 135.728144 
     L 120.40625 135.728144 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 120.40625 133.056529 
@@ -4152,7 +4158,7 @@ on the date, time and weather conditions.
     L 209.549107 122.370073 
     L 120.40625 122.370073 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 120.40625 119.698459 
@@ -4160,7 +4166,7 @@ on the date, time and weather conditions.
     L 209.549107 109.012003 
     L 120.40625 109.012003 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 120.40625 106.340388 
@@ -4168,7 +4174,7 @@ on the date, time and weather conditions.
     L 209.549107 95.653932 
     L 120.40625 95.653932 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 120.40625 92.982318 
@@ -4176,7 +4182,7 @@ on the date, time and weather conditions.
     L 209.549107 82.295862 
     L 120.40625 82.295862 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 120.40625 79.624247 
@@ -4184,7 +4190,7 @@ on the date, time and weather conditions.
     L 209.549107 68.937791 
     L 120.40625 68.937791 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 120.40625 66.266177 
@@ -4192,7 +4198,7 @@ on the date, time and weather conditions.
     L 209.549107 55.579721 
     L 120.40625 55.579721 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 120.40625 52.908106 
@@ -4200,7 +4206,7 @@ on the date, time and weather conditions.
     L 209.549107 42.22165 
     L 120.40625 42.22165 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 120.40625 39.550036 
@@ -4208,18 +4214,18 @@ on the date, time and weather conditions.
     L 209.549107 28.86358 
     L 120.40625 28.86358 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m2624899d93" d="M 0 0 
+           <path id="m9b2955e505" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m2624899d93" x="120.40625" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9b2955e505" x="120.40625" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -4229,7 +4235,7 @@ on the date, time and weather conditions.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m2624899d93" x="164.977679" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9b2955e505" x="164.977679" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -4239,7 +4245,7 @@ on the date, time and weather conditions.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m2624899d93" x="209.549107" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9b2955e505" x="209.549107" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -4251,12 +4257,12 @@ on the date, time and weather conditions.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="macaaeb2a19" d="M 0 0 
+           <path id="m61193006cb" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -4266,7 +4272,7 @@ on the date, time and weather conditions.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -4276,7 +4282,7 @@ on the date, time and weather conditions.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -4286,7 +4292,7 @@ on the date, time and weather conditions.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -4296,7 +4302,7 @@ on the date, time and weather conditions.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -4306,7 +4312,7 @@ on the date, time and weather conditions.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -4316,7 +4322,7 @@ on the date, time and weather conditions.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -4326,7 +4332,7 @@ on the date, time and weather conditions.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -4336,7 +4342,7 @@ on the date, time and weather conditions.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -4346,7 +4352,7 @@ on the date, time and weather conditions.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -4444,7 +4450,7 @@ on the date, time and weather conditions.
       </g>
      </g>
      <defs>
-      <clipPath id="p82b7f8bfa2">
+      <clipPath id="pd69b3c5780">
        <rect x="120.40625" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -4791,7 +4797,7 @@ on the date, time and weather conditions.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:26:27.462667</dc:date>
+        <dc:date>2026-06-29T10:07:35.517569</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -4821,7 +4827,7 @@ on the date, time and weather conditions.
     L 65.648864 10.628571 
     L 52.557955 10.628571 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 65.648864 79.2 
@@ -4829,7 +4835,7 @@ on the date, time and weather conditions.
     L 78.739773 79.2 
     L 65.648864 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 78.739773 79.2 
@@ -4837,7 +4843,7 @@ on the date, time and weather conditions.
     L 91.830682 79.2 
     L 78.739773 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 91.830682 79.2 
@@ -4845,7 +4851,7 @@ on the date, time and weather conditions.
     L 104.921591 79.2 
     L 91.830682 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 104.921591 79.2 
@@ -4853,7 +4859,7 @@ on the date, time and weather conditions.
     L 118.0125 79.2 
     L 104.921591 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 118.0125 79.2 
@@ -4861,7 +4867,7 @@ on the date, time and weather conditions.
     L 131.103409 79.2 
     L 118.0125 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 131.103409 79.2 
@@ -4869,7 +4875,7 @@ on the date, time and weather conditions.
     L 144.194318 79.2 
     L 131.103409 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 144.194318 79.2 
@@ -4877,7 +4883,7 @@ on the date, time and weather conditions.
     L 157.285227 79.2 
     L 144.194318 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 157.285227 79.2 
@@ -4885,7 +4891,7 @@ on the date, time and weather conditions.
     L 170.376136 79.2 
     L 157.285227 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 170.376136 79.2 
@@ -4893,18 +4899,18 @@ on the date, time and weather conditions.
     L 183.467045 77.168735 
     L 170.376136 77.168735 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mc980a64f0c" d="M 0 0 
+           <path id="m9d7b9f5fa7" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mc980a64f0c" x="52.557955" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d7b9f5fa7" x="52.557955" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -4914,7 +4920,7 @@ on the date, time and weather conditions.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mc980a64f0c" x="118.0125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d7b9f5fa7" x="118.0125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -4924,7 +4930,7 @@ on the date, time and weather conditions.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mc980a64f0c" x="183.467045" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d7b9f5fa7" x="183.467045" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -4936,12 +4942,12 @@ on the date, time and weather conditions.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m867dbf6a18" d="M 0 0 
+           <path id="m234f0fc5d9" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m867dbf6a18" x="46.0125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m234f0fc5d9" x="46.0125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -4951,7 +4957,7 @@ on the date, time and weather conditions.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m867dbf6a18" x="46.0125" y="38.574709" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m234f0fc5d9" x="46.0125" y="38.574709" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -4972,7 +4978,7 @@ on the date, time and weather conditions.
       </g>
      </g>
      <defs>
-      <clipPath id="p09ff9027e7">
+      <clipPath id="p2dac1cf36c">
        <rect x="46.0125" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -5077,7 +5083,7 @@ on the date, time and weather conditions.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:26:27.509461</dc:date>
+        <dc:date>2026-06-29T10:07:35.574291</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -5107,7 +5113,7 @@ on the date, time and weather conditions.
     L 59.286364 76.653061 
     L 46.195455 76.653061 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 59.286364 79.2 
@@ -5115,7 +5121,7 @@ on the date, time and weather conditions.
     L 72.377274 58.454422 
     L 59.286364 58.454422 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 72.377274 79.2 
@@ -5123,7 +5129,7 @@ on the date, time and weather conditions.
     L 85.468187 25.997279 
     L 72.377274 25.997279 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 85.468187 79.2 
@@ -5131,7 +5137,7 @@ on the date, time and weather conditions.
     L 98.559095 15.787755 
     L 85.468187 15.787755 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 98.559095 79.2 
@@ -5139,7 +5145,7 @@ on the date, time and weather conditions.
     L 111.649999 26.236735 
     L 98.559095 26.236735 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 111.649999 79.2 
@@ -5147,7 +5153,7 @@ on the date, time and weather conditions.
     L 124.740914 20.772789 
     L 111.649999 20.772789 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 124.740914 79.2 
@@ -5155,7 +5161,7 @@ on the date, time and weather conditions.
     L 137.831822 10.628571 
     L 124.740914 10.628571 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 137.831822 79.2 
@@ -5163,7 +5169,7 @@ on the date, time and weather conditions.
     L 150.92273 36.185034 
     L 137.831822 36.185034 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 150.92273 79.2 
@@ -5171,7 +5177,7 @@ on the date, time and weather conditions.
     L 164.013638 65.594558 
     L 150.92273 65.594558 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 164.013638 79.2 
@@ -5179,18 +5185,18 @@ on the date, time and weather conditions.
     L 177.104545 77.371429 
     L 164.013638 77.371429 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m756abe7697" d="M 0 0 
+           <path id="m48eeac0e18" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m756abe7697" x="43.523841" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m48eeac0e18" x="43.523841" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -5200,7 +5206,7 @@ on the date, time and weather conditions.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m756abe7697" x="110.314193" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m48eeac0e18" x="110.314193" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -5210,7 +5216,7 @@ on the date, time and weather conditions.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m756abe7697" x="177.104545" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m48eeac0e18" x="177.104545" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -5222,12 +5228,12 @@ on the date, time and weather conditions.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="ma29a1ac11a" d="M 0 0 
+           <path id="m101ce35431" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#ma29a1ac11a" x="39.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m101ce35431" x="39.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -5237,7 +5243,7 @@ on the date, time and weather conditions.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#ma29a1ac11a" x="39.65" y="35.662585" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m101ce35431" x="39.65" y="35.662585" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -5258,7 +5264,7 @@ on the date, time and weather conditions.
       </g>
      </g>
      <defs>
-      <clipPath id="p2d93fb9728">
+      <clipPath id="p1b02f688f5">
        <rect x="39.65" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -5363,7 +5369,7 @@ on the date, time and weather conditions.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:26:27.557305</dc:date>
+        <dc:date>2026-06-29T10:07:35.633991</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -5393,7 +5399,7 @@ on the date, time and weather conditions.
     L 59.286364 78.657467 
     L 46.195455 78.657467 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 59.286364 79.2 
@@ -5401,7 +5407,7 @@ on the date, time and weather conditions.
     L 72.377273 77.902639 
     L 59.286364 77.902639 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 72.377273 79.2 
@@ -5409,7 +5415,7 @@ on the date, time and weather conditions.
     L 85.468183 65.447973 
     L 72.377273 65.447973 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 85.468183 79.2 
@@ -5417,7 +5423,7 @@ on the date, time and weather conditions.
     L 98.559092 41.600118 
     L 85.468183 41.600118 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 98.559092 79.2 
@@ -5425,7 +5431,7 @@ on the date, time and weather conditions.
     L 111.65 16.903081 
     L 98.559092 16.903081 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 111.65 79.2 
@@ -5433,7 +5439,7 @@ on the date, time and weather conditions.
     L 124.740912 12.751526 
     L 111.65 12.751526 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 124.740912 79.2 
@@ -5441,7 +5447,7 @@ on the date, time and weather conditions.
     L 137.831817 13.695061 
     L 124.740912 13.695061 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 137.831817 79.2 
@@ -5449,7 +5455,7 @@ on the date, time and weather conditions.
     L 150.922729 12.822291 
     L 137.831817 12.822291 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 150.922729 79.2 
@@ -5457,7 +5463,7 @@ on the date, time and weather conditions.
     L 164.013641 10.628571 
     L 150.922729 10.628571 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 164.013641 79.2 
@@ -5465,18 +5471,18 @@ on the date, time and weather conditions.
     L 177.104545 51.648769 
     L 164.013641 51.648769 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m78235496e9" d="M 0 0 
+           <path id="m966f7f1dfb" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m78235496e9" x="46.195455" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m966f7f1dfb" x="46.195455" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -5486,7 +5492,7 @@ on the date, time and weather conditions.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m78235496e9" x="111.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m966f7f1dfb" x="111.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -5496,7 +5502,7 @@ on the date, time and weather conditions.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m78235496e9" x="177.104545" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m966f7f1dfb" x="177.104545" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -5508,12 +5514,12 @@ on the date, time and weather conditions.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m623fd57773" d="M 0 0 
+           <path id="m3a6206e190" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m623fd57773" x="39.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3a6206e190" x="39.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -5523,7 +5529,7 @@ on the date, time and weather conditions.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m623fd57773" x="39.65" y="32.023235" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3a6206e190" x="39.65" y="32.023235" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -5544,7 +5550,7 @@ on the date, time and weather conditions.
       </g>
      </g>
      <defs>
-      <clipPath id="p0d35997bdf">
+      <clipPath id="pe8deaafe0e">
        <rect x="39.65" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -5641,7 +5647,7 @@ on the date, time and weather conditions.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:26:27.606932</dc:date>
+        <dc:date>2026-06-29T10:07:35.695542</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -5671,7 +5677,7 @@ on the date, time and weather conditions.
     L 59.286363 56.113403 
     L 46.195455 56.113403 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 59.286363 79.2 
@@ -5679,7 +5685,7 @@ on the date, time and weather conditions.
     L 72.377272 10.628571 
     L 59.286363 10.628571 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 72.377272 79.2 
@@ -5687,7 +5693,7 @@ on the date, time and weather conditions.
     L 85.468178 31.914837 
     L 72.377272 31.914837 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 85.468178 79.2 
@@ -5695,7 +5701,7 @@ on the date, time and weather conditions.
     L 98.559089 53.169333 
     L 85.468178 53.169333 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 98.559089 79.2 
@@ -5703,7 +5709,7 @@ on the date, time and weather conditions.
     L 111.65 67.158963 
     L 98.559089 67.158963 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 111.65 79.2 
@@ -5711,7 +5717,7 @@ on the date, time and weather conditions.
     L 124.740902 74.603861 
     L 111.65 74.603861 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 124.740902 79.2 
@@ -5719,7 +5725,7 @@ on the date, time and weather conditions.
     L 137.831813 77.43144 
     L 124.740902 77.43144 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 137.831813 79.2 
@@ -5727,7 +5733,7 @@ on the date, time and weather conditions.
     L 150.922724 78.691671 
     L 137.831813 78.691671 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 150.922724 79.2 
@@ -5735,7 +5741,7 @@ on the date, time and weather conditions.
     L 164.013635 79.104688 
     L 150.922724 79.104688 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 164.013635 79.2 
@@ -5743,18 +5749,18 @@ on the date, time and weather conditions.
     L 177.104545 79.136459 
     L 164.013635 79.136459 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="me22e1674b2" d="M 0 0 
+           <path id="m01a3f4ffaa" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#me22e1674b2" x="46.195455" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01a3f4ffaa" x="46.195455" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -5764,7 +5770,7 @@ on the date, time and weather conditions.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#me22e1674b2" x="84.666445" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01a3f4ffaa" x="84.666445" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -5774,7 +5780,7 @@ on the date, time and weather conditions.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#me22e1674b2" x="123.137436" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01a3f4ffaa" x="123.137436" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -5784,7 +5790,7 @@ on the date, time and weather conditions.
         <g id="xtick_4">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#me22e1674b2" x="161.608427" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01a3f4ffaa" x="161.608427" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -5796,12 +5802,12 @@ on the date, time and weather conditions.
         <g id="ytick_1">
          <g id="line2d_5">
           <defs>
-           <path id="m58d93cd9ef" d="M 0 0 
+           <path id="m67e0c250c7" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m58d93cd9ef" x="39.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m67e0c250c7" x="39.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -5811,7 +5817,7 @@ on the date, time and weather conditions.
         <g id="ytick_2">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m58d93cd9ef" x="39.65" y="52.724545" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m67e0c250c7" x="39.65" y="52.724545" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -5821,7 +5827,7 @@ on the date, time and weather conditions.
         <g id="ytick_3">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m58d93cd9ef" x="39.65" y="26.24909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m67e0c250c7" x="39.65" y="26.24909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -5842,7 +5848,7 @@ on the date, time and weather conditions.
       </g>
      </g>
      <defs>
-      <clipPath id="p92bcc2a9ee">
+      <clipPath id="pb374d3d824">
        <rect x="39.65" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -5939,7 +5945,7 @@ on the date, time and weather conditions.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:26:27.657673</dc:date>
+        <dc:date>2026-06-29T10:07:35.756973</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -5969,7 +5975,7 @@ on the date, time and weather conditions.
     L 65.648864 10.628571 
     L 52.557955 10.628571 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 65.648864 79.2 
@@ -5977,7 +5983,7 @@ on the date, time and weather conditions.
     L 78.739773 79.2 
     L 65.648864 79.2 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 78.739773 79.2 
@@ -5985,7 +5991,7 @@ on the date, time and weather conditions.
     L 91.830682 79.2 
     L 78.739773 79.2 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 91.830682 79.2 
@@ -5993,7 +5999,7 @@ on the date, time and weather conditions.
     L 104.921591 51.898802 
     L 91.830682 51.898802 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 104.921591 79.2 
@@ -6001,7 +6007,7 @@ on the date, time and weather conditions.
     L 118.0125 79.2 
     L 104.921591 79.2 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 118.0125 79.2 
@@ -6009,7 +6015,7 @@ on the date, time and weather conditions.
     L 131.103409 79.2 
     L 118.0125 79.2 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 131.103409 79.2 
@@ -6017,7 +6023,7 @@ on the date, time and weather conditions.
     L 144.194318 70.674384 
     L 131.103409 70.674384 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 144.194318 79.2 
@@ -6025,7 +6031,7 @@ on the date, time and weather conditions.
     L 157.285227 79.2 
     L 144.194318 79.2 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 157.285227 79.2 
@@ -6033,7 +6039,7 @@ on the date, time and weather conditions.
     L 170.376136 79.2 
     L 157.285227 79.2 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 170.376136 79.2 
@@ -6041,18 +6047,18 @@ on the date, time and weather conditions.
     L 183.467045 79.181975 
     L 170.376136 79.181975 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="me99906bc09" d="M 0 0 
+           <path id="m601ccfb2e1" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#me99906bc09" x="52.557955" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m601ccfb2e1" x="52.557955" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -6062,7 +6068,7 @@ on the date, time and weather conditions.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#me99906bc09" x="96.194318" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m601ccfb2e1" x="96.194318" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -6072,7 +6078,7 @@ on the date, time and weather conditions.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#me99906bc09" x="139.830682" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m601ccfb2e1" x="139.830682" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -6082,7 +6088,7 @@ on the date, time and weather conditions.
         <g id="xtick_4">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#me99906bc09" x="183.467045" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m601ccfb2e1" x="183.467045" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -6094,12 +6100,12 @@ on the date, time and weather conditions.
         <g id="ytick_1">
          <g id="line2d_5">
           <defs>
-           <path id="m36b9f9c64f" d="M 0 0 
+           <path id="m92381d456a" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m36b9f9c64f" x="46.0125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m92381d456a" x="46.0125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -6109,7 +6115,7 @@ on the date, time and weather conditions.
         <g id="ytick_2">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m36b9f9c64f" x="46.0125" y="49.159069" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m92381d456a" x="46.0125" y="49.159069" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -6119,7 +6125,7 @@ on the date, time and weather conditions.
         <g id="ytick_3">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m36b9f9c64f" x="46.0125" y="19.118138" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m92381d456a" x="46.0125" y="19.118138" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -6140,7 +6146,7 @@ on the date, time and weather conditions.
       </g>
      </g>
      <defs>
-      <clipPath id="p89d619e785">
+      <clipPath id="p43d5dc0bfb">
        <rect x="46.0125" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -6845,7 +6851,7 @@ on the date, time and weather conditions.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:26:27.383646</dc:date>
+        <dc:date>2026-06-29T10:07:35.424686</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -6875,7 +6881,7 @@ on the date, time and weather conditions.
     L 209.549107 149.086214 
     L 120.40625 149.086214 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 120.40625 146.4146 
@@ -6883,7 +6889,7 @@ on the date, time and weather conditions.
     L 209.549107 135.728144 
     L 120.40625 135.728144 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 120.40625 133.056529 
@@ -6891,7 +6897,7 @@ on the date, time and weather conditions.
     L 209.549107 122.370073 
     L 120.40625 122.370073 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 120.40625 119.698459 
@@ -6899,7 +6905,7 @@ on the date, time and weather conditions.
     L 209.549107 109.012003 
     L 120.40625 109.012003 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 120.40625 106.340388 
@@ -6907,7 +6913,7 @@ on the date, time and weather conditions.
     L 209.549107 95.653932 
     L 120.40625 95.653932 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 120.40625 92.982318 
@@ -6915,7 +6921,7 @@ on the date, time and weather conditions.
     L 209.549107 82.295862 
     L 120.40625 82.295862 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 120.40625 79.624247 
@@ -6923,7 +6929,7 @@ on the date, time and weather conditions.
     L 209.549107 68.937791 
     L 120.40625 68.937791 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 120.40625 66.266177 
@@ -6931,7 +6937,7 @@ on the date, time and weather conditions.
     L 209.549107 55.579721 
     L 120.40625 55.579721 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 120.40625 52.908106 
@@ -6939,7 +6945,7 @@ on the date, time and weather conditions.
     L 209.549107 42.22165 
     L 120.40625 42.22165 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 120.40625 39.550036 
@@ -6947,18 +6953,18 @@ on the date, time and weather conditions.
     L 209.549107 28.86358 
     L 120.40625 28.86358 
     z
-    " clip-path="url(#p82b7f8bfa2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd69b3c5780)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m2624899d93" d="M 0 0 
+           <path id="m9b2955e505" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m2624899d93" x="120.40625" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9b2955e505" x="120.40625" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -6968,7 +6974,7 @@ on the date, time and weather conditions.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m2624899d93" x="164.977679" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9b2955e505" x="164.977679" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -6978,7 +6984,7 @@ on the date, time and weather conditions.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m2624899d93" x="209.549107" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9b2955e505" x="209.549107" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -6990,12 +6996,12 @@ on the date, time and weather conditions.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="macaaeb2a19" d="M 0 0 
+           <path id="m61193006cb" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -7005,7 +7011,7 @@ on the date, time and weather conditions.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -7015,7 +7021,7 @@ on the date, time and weather conditions.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -7025,7 +7031,7 @@ on the date, time and weather conditions.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -7035,7 +7041,7 @@ on the date, time and weather conditions.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -7045,7 +7051,7 @@ on the date, time and weather conditions.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -7055,7 +7061,7 @@ on the date, time and weather conditions.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -7065,7 +7071,7 @@ on the date, time and weather conditions.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -7075,7 +7081,7 @@ on the date, time and weather conditions.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -7085,7 +7091,7 @@ on the date, time and weather conditions.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#macaaeb2a19" x="120.40625" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m61193006cb" x="120.40625" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -7183,7 +7189,7 @@ on the date, time and weather conditions.
       </g>
      </g>
      <defs>
-      <clipPath id="p82b7f8bfa2">
+      <clipPath id="pd69b3c5780">
        <rect x="120.40625" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -7526,7 +7532,7 @@ on the date, time and weather conditions.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:26:27.462667</dc:date>
+        <dc:date>2026-06-29T10:07:35.517569</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -7556,7 +7562,7 @@ on the date, time and weather conditions.
     L 65.648864 10.628571 
     L 52.557955 10.628571 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 65.648864 79.2 
@@ -7564,7 +7570,7 @@ on the date, time and weather conditions.
     L 78.739773 79.2 
     L 65.648864 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 78.739773 79.2 
@@ -7572,7 +7578,7 @@ on the date, time and weather conditions.
     L 91.830682 79.2 
     L 78.739773 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 91.830682 79.2 
@@ -7580,7 +7586,7 @@ on the date, time and weather conditions.
     L 104.921591 79.2 
     L 91.830682 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 104.921591 79.2 
@@ -7588,7 +7594,7 @@ on the date, time and weather conditions.
     L 118.0125 79.2 
     L 104.921591 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 118.0125 79.2 
@@ -7596,7 +7602,7 @@ on the date, time and weather conditions.
     L 131.103409 79.2 
     L 118.0125 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 131.103409 79.2 
@@ -7604,7 +7610,7 @@ on the date, time and weather conditions.
     L 144.194318 79.2 
     L 131.103409 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 144.194318 79.2 
@@ -7612,7 +7618,7 @@ on the date, time and weather conditions.
     L 157.285227 79.2 
     L 144.194318 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 157.285227 79.2 
@@ -7620,7 +7626,7 @@ on the date, time and weather conditions.
     L 170.376136 79.2 
     L 157.285227 79.2 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 170.376136 79.2 
@@ -7628,18 +7634,18 @@ on the date, time and weather conditions.
     L 183.467045 77.168735 
     L 170.376136 77.168735 
     z
-    " clip-path="url(#p09ff9027e7)" style="fill: #1f77b4"/>
+    " clip-path="url(#p2dac1cf36c)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="mc980a64f0c" d="M 0 0 
+           <path id="m9d7b9f5fa7" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#mc980a64f0c" x="52.557955" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d7b9f5fa7" x="52.557955" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -7649,7 +7655,7 @@ on the date, time and weather conditions.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#mc980a64f0c" x="118.0125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d7b9f5fa7" x="118.0125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -7659,7 +7665,7 @@ on the date, time and weather conditions.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#mc980a64f0c" x="183.467045" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m9d7b9f5fa7" x="183.467045" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -7671,12 +7677,12 @@ on the date, time and weather conditions.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m867dbf6a18" d="M 0 0 
+           <path id="m234f0fc5d9" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m867dbf6a18" x="46.0125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m234f0fc5d9" x="46.0125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -7686,7 +7692,7 @@ on the date, time and weather conditions.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m867dbf6a18" x="46.0125" y="38.574709" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m234f0fc5d9" x="46.0125" y="38.574709" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -7707,7 +7713,7 @@ on the date, time and weather conditions.
       </g>
      </g>
      <defs>
-      <clipPath id="p09ff9027e7">
+      <clipPath id="p2dac1cf36c">
        <rect x="46.0125" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -7808,7 +7814,7 @@ on the date, time and weather conditions.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:26:27.509461</dc:date>
+        <dc:date>2026-06-29T10:07:35.574291</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -7838,7 +7844,7 @@ on the date, time and weather conditions.
     L 59.286364 76.653061 
     L 46.195455 76.653061 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 59.286364 79.2 
@@ -7846,7 +7852,7 @@ on the date, time and weather conditions.
     L 72.377274 58.454422 
     L 59.286364 58.454422 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 72.377274 79.2 
@@ -7854,7 +7860,7 @@ on the date, time and weather conditions.
     L 85.468187 25.997279 
     L 72.377274 25.997279 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 85.468187 79.2 
@@ -7862,7 +7868,7 @@ on the date, time and weather conditions.
     L 98.559095 15.787755 
     L 85.468187 15.787755 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 98.559095 79.2 
@@ -7870,7 +7876,7 @@ on the date, time and weather conditions.
     L 111.649999 26.236735 
     L 98.559095 26.236735 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 111.649999 79.2 
@@ -7878,7 +7884,7 @@ on the date, time and weather conditions.
     L 124.740914 20.772789 
     L 111.649999 20.772789 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 124.740914 79.2 
@@ -7886,7 +7892,7 @@ on the date, time and weather conditions.
     L 137.831822 10.628571 
     L 124.740914 10.628571 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 137.831822 79.2 
@@ -7894,7 +7900,7 @@ on the date, time and weather conditions.
     L 150.92273 36.185034 
     L 137.831822 36.185034 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 150.92273 79.2 
@@ -7902,7 +7908,7 @@ on the date, time and weather conditions.
     L 164.013638 65.594558 
     L 150.92273 65.594558 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 164.013638 79.2 
@@ -7910,18 +7916,18 @@ on the date, time and weather conditions.
     L 177.104545 77.371429 
     L 164.013638 77.371429 
     z
-    " clip-path="url(#p2d93fb9728)" style="fill: #1f77b4"/>
+    " clip-path="url(#p1b02f688f5)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m756abe7697" d="M 0 0 
+           <path id="m48eeac0e18" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m756abe7697" x="43.523841" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m48eeac0e18" x="43.523841" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -7931,7 +7937,7 @@ on the date, time and weather conditions.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m756abe7697" x="110.314193" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m48eeac0e18" x="110.314193" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -7941,7 +7947,7 @@ on the date, time and weather conditions.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m756abe7697" x="177.104545" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m48eeac0e18" x="177.104545" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -7953,12 +7959,12 @@ on the date, time and weather conditions.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="ma29a1ac11a" d="M 0 0 
+           <path id="m101ce35431" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#ma29a1ac11a" x="39.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m101ce35431" x="39.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -7968,7 +7974,7 @@ on the date, time and weather conditions.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#ma29a1ac11a" x="39.65" y="35.662585" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m101ce35431" x="39.65" y="35.662585" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -7989,7 +7995,7 @@ on the date, time and weather conditions.
       </g>
      </g>
      <defs>
-      <clipPath id="p2d93fb9728">
+      <clipPath id="p1b02f688f5">
        <rect x="39.65" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -8090,7 +8096,7 @@ on the date, time and weather conditions.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:26:27.557305</dc:date>
+        <dc:date>2026-06-29T10:07:35.633991</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -8120,7 +8126,7 @@ on the date, time and weather conditions.
     L 59.286364 78.657467 
     L 46.195455 78.657467 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 59.286364 79.2 
@@ -8128,7 +8134,7 @@ on the date, time and weather conditions.
     L 72.377273 77.902639 
     L 59.286364 77.902639 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 72.377273 79.2 
@@ -8136,7 +8142,7 @@ on the date, time and weather conditions.
     L 85.468183 65.447973 
     L 72.377273 65.447973 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 85.468183 79.2 
@@ -8144,7 +8150,7 @@ on the date, time and weather conditions.
     L 98.559092 41.600118 
     L 85.468183 41.600118 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 98.559092 79.2 
@@ -8152,7 +8158,7 @@ on the date, time and weather conditions.
     L 111.65 16.903081 
     L 98.559092 16.903081 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 111.65 79.2 
@@ -8160,7 +8166,7 @@ on the date, time and weather conditions.
     L 124.740912 12.751526 
     L 111.65 12.751526 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 124.740912 79.2 
@@ -8168,7 +8174,7 @@ on the date, time and weather conditions.
     L 137.831817 13.695061 
     L 124.740912 13.695061 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 137.831817 79.2 
@@ -8176,7 +8182,7 @@ on the date, time and weather conditions.
     L 150.922729 12.822291 
     L 137.831817 12.822291 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 150.922729 79.2 
@@ -8184,7 +8190,7 @@ on the date, time and weather conditions.
     L 164.013641 10.628571 
     L 150.922729 10.628571 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 164.013641 79.2 
@@ -8192,18 +8198,18 @@ on the date, time and weather conditions.
     L 177.104545 51.648769 
     L 164.013641 51.648769 
     z
-    " clip-path="url(#p0d35997bdf)" style="fill: #1f77b4"/>
+    " clip-path="url(#pe8deaafe0e)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m78235496e9" d="M 0 0 
+           <path id="m966f7f1dfb" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m78235496e9" x="46.195455" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m966f7f1dfb" x="46.195455" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -8213,7 +8219,7 @@ on the date, time and weather conditions.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m78235496e9" x="111.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m966f7f1dfb" x="111.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -8223,7 +8229,7 @@ on the date, time and weather conditions.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m78235496e9" x="177.104545" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m966f7f1dfb" x="177.104545" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -8235,12 +8241,12 @@ on the date, time and weather conditions.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m623fd57773" d="M 0 0 
+           <path id="m3a6206e190" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m623fd57773" x="39.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3a6206e190" x="39.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -8250,7 +8256,7 @@ on the date, time and weather conditions.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m623fd57773" x="39.65" y="32.023235" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m3a6206e190" x="39.65" y="32.023235" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -8271,7 +8277,7 @@ on the date, time and weather conditions.
       </g>
      </g>
      <defs>
-      <clipPath id="p0d35997bdf">
+      <clipPath id="pe8deaafe0e">
        <rect x="39.65" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -8364,7 +8370,7 @@ on the date, time and weather conditions.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:26:27.606932</dc:date>
+        <dc:date>2026-06-29T10:07:35.695542</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -8394,7 +8400,7 @@ on the date, time and weather conditions.
     L 59.286363 56.113403 
     L 46.195455 56.113403 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 59.286363 79.2 
@@ -8402,7 +8408,7 @@ on the date, time and weather conditions.
     L 72.377272 10.628571 
     L 59.286363 10.628571 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 72.377272 79.2 
@@ -8410,7 +8416,7 @@ on the date, time and weather conditions.
     L 85.468178 31.914837 
     L 72.377272 31.914837 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 85.468178 79.2 
@@ -8418,7 +8424,7 @@ on the date, time and weather conditions.
     L 98.559089 53.169333 
     L 85.468178 53.169333 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 98.559089 79.2 
@@ -8426,7 +8432,7 @@ on the date, time and weather conditions.
     L 111.65 67.158963 
     L 98.559089 67.158963 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 111.65 79.2 
@@ -8434,7 +8440,7 @@ on the date, time and weather conditions.
     L 124.740902 74.603861 
     L 111.65 74.603861 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 124.740902 79.2 
@@ -8442,7 +8448,7 @@ on the date, time and weather conditions.
     L 137.831813 77.43144 
     L 124.740902 77.43144 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 137.831813 79.2 
@@ -8450,7 +8456,7 @@ on the date, time and weather conditions.
     L 150.922724 78.691671 
     L 137.831813 78.691671 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 150.922724 79.2 
@@ -8458,7 +8464,7 @@ on the date, time and weather conditions.
     L 164.013635 79.104688 
     L 150.922724 79.104688 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 164.013635 79.2 
@@ -8466,18 +8472,18 @@ on the date, time and weather conditions.
     L 177.104545 79.136459 
     L 164.013635 79.136459 
     z
-    " clip-path="url(#p92bcc2a9ee)" style="fill: #1f77b4"/>
+    " clip-path="url(#pb374d3d824)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="me22e1674b2" d="M 0 0 
+           <path id="m01a3f4ffaa" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#me22e1674b2" x="46.195455" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01a3f4ffaa" x="46.195455" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -8487,7 +8493,7 @@ on the date, time and weather conditions.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#me22e1674b2" x="84.666445" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01a3f4ffaa" x="84.666445" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -8497,7 +8503,7 @@ on the date, time and weather conditions.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#me22e1674b2" x="123.137436" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01a3f4ffaa" x="123.137436" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -8507,7 +8513,7 @@ on the date, time and weather conditions.
         <g id="xtick_4">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#me22e1674b2" x="161.608427" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m01a3f4ffaa" x="161.608427" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -8519,12 +8525,12 @@ on the date, time and weather conditions.
         <g id="ytick_1">
          <g id="line2d_5">
           <defs>
-           <path id="m58d93cd9ef" d="M 0 0 
+           <path id="m67e0c250c7" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m58d93cd9ef" x="39.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m67e0c250c7" x="39.65" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -8534,7 +8540,7 @@ on the date, time and weather conditions.
         <g id="ytick_2">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m58d93cd9ef" x="39.65" y="52.724545" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m67e0c250c7" x="39.65" y="52.724545" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -8544,7 +8550,7 @@ on the date, time and weather conditions.
         <g id="ytick_3">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m58d93cd9ef" x="39.65" y="26.24909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m67e0c250c7" x="39.65" y="26.24909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -8565,7 +8571,7 @@ on the date, time and weather conditions.
       </g>
      </g>
      <defs>
-      <clipPath id="p92bcc2a9ee">
+      <clipPath id="pb374d3d824">
        <rect x="39.65" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -8658,7 +8664,7 @@ on the date, time and weather conditions.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:26:27.657673</dc:date>
+        <dc:date>2026-06-29T10:07:35.756973</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -8688,7 +8694,7 @@ on the date, time and weather conditions.
     L 65.648864 10.628571 
     L 52.557955 10.628571 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_3">
         <path d="M 65.648864 79.2 
@@ -8696,7 +8702,7 @@ on the date, time and weather conditions.
     L 78.739773 79.2 
     L 65.648864 79.2 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_4">
         <path d="M 78.739773 79.2 
@@ -8704,7 +8710,7 @@ on the date, time and weather conditions.
     L 91.830682 79.2 
     L 78.739773 79.2 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_5">
         <path d="M 91.830682 79.2 
@@ -8712,7 +8718,7 @@ on the date, time and weather conditions.
     L 104.921591 51.898802 
     L 91.830682 51.898802 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_6">
         <path d="M 104.921591 79.2 
@@ -8720,7 +8726,7 @@ on the date, time and weather conditions.
     L 118.0125 79.2 
     L 104.921591 79.2 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_7">
         <path d="M 118.0125 79.2 
@@ -8728,7 +8734,7 @@ on the date, time and weather conditions.
     L 131.103409 79.2 
     L 118.0125 79.2 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_8">
         <path d="M 131.103409 79.2 
@@ -8736,7 +8742,7 @@ on the date, time and weather conditions.
     L 144.194318 70.674384 
     L 131.103409 70.674384 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_9">
         <path d="M 144.194318 79.2 
@@ -8744,7 +8750,7 @@ on the date, time and weather conditions.
     L 157.285227 79.2 
     L 144.194318 79.2 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_10">
         <path d="M 157.285227 79.2 
@@ -8752,7 +8758,7 @@ on the date, time and weather conditions.
     L 170.376136 79.2 
     L 157.285227 79.2 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="patch_11">
         <path d="M 170.376136 79.2 
@@ -8760,18 +8766,18 @@ on the date, time and weather conditions.
     L 183.467045 79.181975 
     L 170.376136 79.181975 
     z
-    " clip-path="url(#p89d619e785)" style="fill: #1f77b4"/>
+    " clip-path="url(#p43d5dc0bfb)" style="fill: #1f77b4"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="me99906bc09" d="M 0 0 
+           <path id="m601ccfb2e1" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#me99906bc09" x="52.557955" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m601ccfb2e1" x="52.557955" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -8781,7 +8787,7 @@ on the date, time and weather conditions.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#me99906bc09" x="96.194318" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m601ccfb2e1" x="96.194318" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -8791,7 +8797,7 @@ on the date, time and weather conditions.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#me99906bc09" x="139.830682" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m601ccfb2e1" x="139.830682" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -8801,7 +8807,7 @@ on the date, time and weather conditions.
         <g id="xtick_4">
          <g id="line2d_4">
           <g>
-           <use xlink:href="#me99906bc09" x="183.467045" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m601ccfb2e1" x="183.467045" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -8813,12 +8819,12 @@ on the date, time and weather conditions.
         <g id="ytick_1">
          <g id="line2d_5">
           <defs>
-           <path id="m36b9f9c64f" d="M 0 0 
+           <path id="m92381d456a" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m36b9f9c64f" x="46.0125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m92381d456a" x="46.0125" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -8828,7 +8834,7 @@ on the date, time and weather conditions.
         <g id="ytick_2">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#m36b9f9c64f" x="46.0125" y="49.159069" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m92381d456a" x="46.0125" y="49.159069" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -8838,7 +8844,7 @@ on the date, time and weather conditions.
         <g id="ytick_3">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#m36b9f9c64f" x="46.0125" y="19.118138" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m92381d456a" x="46.0125" y="19.118138" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -8859,7 +8865,7 @@ on the date, time and weather conditions.
       </g>
      </g>
      <defs>
-      <clipPath id="p89d619e785">
+      <clipPath id="p43d5dc0bfb">
        <rect x="46.0125" y="7.2" width="144" height="72"/>
       </clipPath>
      </defs>
@@ -9082,7 +9088,7 @@ on the date, time and weather conditions.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_61bb5ef8">
+        <skrub-table-report class="report" id="report_d0ce3f4b">
         </skrub-table-report>
 
         <script type="module">
@@ -10186,7 +10192,7 @@ on the date, time and weather conditions.
         </script>
     </div>
 
-    <div id="report_61bb5ef8-wrapper-fallback">
+    <div id="report_d0ce3f4b-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -10197,8 +10203,8 @@ on the date, time and weather conditions.
     </div>
 
     <script>
-     document.getElementById("report_61bb5ef8-wrapper").removeAttribute("hidden");
-     document.getElementById("report_61bb5ef8-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_d0ce3f4b-wrapper").removeAttribute("hidden");
+     document.getElementById("report_d0ce3f4b-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -10736,9 +10742,9 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 10.492 seconds)
+   **Total running time of the script:** (0 minutes 14.608 seconds)
 
-**Estimated memory usage:**  578 MB
+**Estimated memory usage:**  570 MB
 
 
 .. _sphx_glr_download_auto_examples_01_encoding_0030_datetime_encoder.py:

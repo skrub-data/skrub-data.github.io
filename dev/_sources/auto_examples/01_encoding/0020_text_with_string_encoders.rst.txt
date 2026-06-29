@@ -97,6 +97,12 @@ We load the dataset from the path using pandas.
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    Downloading 'toxicity_v1' from https://github.com/skrub-data/skrub-data-files/raw/refs/heads/main/toxicity_v1.zip (attempt 1/3)
+
 
 
 
@@ -122,8 +128,8 @@ useful! Click on any cell below to expand and read the tweet in full.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_6d36ee53-wrapper" hidden>
-        <template id="report_6d36ee53-template">
+    <div id="report_100597b0-wrapper" hidden>
+        <template id="report_100597b0-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1569,7 +1575,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="85960f5e"
+                    id="432ecd9d"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1599,7 +1605,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="365643d4"
+                    id="47363037"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1633,7 +1639,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="6aad2c61"
+                    id="94aca804"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1681,7 +1687,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="c13a589d"
+                    id="e147d7df"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1709,7 +1715,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="433f6171"
+                    id="c43f6c42"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1739,7 +1745,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="6d8f6fc6"
+                    id="c1c16455"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1773,7 +1779,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="3a3ade2b"
+                    id="e44d973d"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1801,7 +1807,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="50d08e39"
+                    id="c57dfb3a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1831,7 +1837,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="a8e2d669"
+                    id="4ccbe48c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1865,7 +1871,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="e560c4bc"
+                    id="0a653468"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1893,7 +1899,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="ddd3eb56"
+                    id="de880c66"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1923,7 +1929,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="6f2dc89c"
+                    id="4fc59c21"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1957,7 +1963,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="1a9b0f16"
+                    id="b0728552"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1985,7 +1991,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="548c1e1b"
+                    id="88d10072"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2015,7 +2021,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="e73f560c"
+                    id="024ce2b8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2049,7 +2055,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="7b4f19ca"
+                    id="1fd38bd2"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2077,7 +2083,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="8c69bee4"
+                    id="8675880c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2107,7 +2113,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="4a105b0e"
+                    id="38d88657"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2181,7 +2187,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="96c4609b"
+                    id="7ced6290"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2209,7 +2215,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="be49c8d3"
+                    id="640f48de"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2239,7 +2245,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="f9aa921a"
+                    id="1e26da66"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2273,7 +2279,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="efb67ffd"
+                    id="39b89406"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2301,7 +2307,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="8b3f6faa"
+                    id="50498e3f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2331,7 +2337,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="cb48ba51"
+                    id="d80769dc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2365,7 +2371,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="1f876819"
+                    id="21cd1959"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2393,7 +2399,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="8c16bbfa"
+                    id="c6a2c836"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2435,7 +2441,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="a6bc0b3c"
+                    id="cc4c77ac"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2469,7 +2475,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="17c1779c"
+                    id="ffb0d7a6"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2497,7 +2503,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="4b7043e4"
+                    id="d087a194"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2527,7 +2533,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="f8cd0049"
+                    id="ffd11714"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2561,7 +2567,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <th
-                    id="5a3c97c4"
+                    id="b34ea208"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2589,7 +2595,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="17611827"
+                    id="e1c34671"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2641,7 +2647,7 @@ useful! Click on any cell below to expand and read the tweet in full.
                 
                 
                     <td
-                    id="60e856e8"
+                    id="4f63f486"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2785,7 +2791,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:23:34.287940</dc:date>
+        <dc:date>2026-06-29T10:03:19.229980</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -2815,7 +2821,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 149.086214 
     L 193.6375 149.086214 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 193.6375 146.4146 
@@ -2823,7 +2829,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 135.728144 
     L 193.6375 135.728144 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 193.6375 133.056529 
@@ -2831,7 +2837,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 122.370073 
     L 193.6375 122.370073 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 193.6375 119.698459 
@@ -2839,7 +2845,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 109.012003 
     L 193.6375 109.012003 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 193.6375 106.340388 
@@ -2847,7 +2853,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 95.653932 
     L 193.6375 95.653932 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 193.6375 92.982318 
@@ -2855,7 +2861,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 82.295862 
     L 193.6375 82.295862 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 193.6375 79.624247 
@@ -2863,7 +2869,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 68.937791 
     L 193.6375 68.937791 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 193.6375 66.266177 
@@ -2871,7 +2877,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 55.579721 
     L 193.6375 55.579721 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 193.6375 52.908106 
@@ -2879,7 +2885,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 42.22165 
     L 193.6375 42.22165 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 193.6375 39.550036 
@@ -2887,18 +2893,18 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 282.780357 28.86358 
     L 193.6375 28.86358 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m4ae49ebadf" d="M 0 0 
+           <path id="mf91cfe20b3" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m4ae49ebadf" x="193.6375" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf91cfe20b3" x="193.6375" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -2908,7 +2914,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m4ae49ebadf" x="238.208929" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf91cfe20b3" x="238.208929" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -2918,7 +2924,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m4ae49ebadf" x="282.780357" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf91cfe20b3" x="282.780357" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -2930,12 +2936,12 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="md57c3fe20d" d="M 0 0 
+           <path id="mc232ca25b7" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -2945,7 +2951,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -2955,7 +2961,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -2965,7 +2971,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -2975,7 +2981,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -2985,7 +2991,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -2995,7 +3001,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -3005,7 +3011,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -3015,7 +3021,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -3025,7 +3031,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -3123,7 +3129,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       </g>
      </g>
      <defs>
-      <clipPath id="p97d8cc1816">
+      <clipPath id="p36784f902f">
        <rect x="193.6375" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -3453,7 +3459,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:23:34.373236</dc:date>
+        <dc:date>2026-06-29T10:03:19.346999</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -3483,7 +3489,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 148.10106 23.054545 
     L 59.314062 23.054545 
     z
-    " clip-path="url(#p20dfeff2a2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd33c13ce9f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 59.314062 20.145455 
@@ -3491,18 +3497,18 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 148.45692 8.509091 
     L 59.314062 8.509091 
     z
-    " clip-path="url(#p20dfeff2a2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd33c13ce9f)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="me388467fdb" d="M 0 0 
+           <path id="m25143369d5" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#me388467fdb" x="59.314062" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m25143369d5" x="59.314062" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -3512,7 +3518,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#me388467fdb" x="94.900033" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m25143369d5" x="94.900033" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -3522,7 +3528,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#me388467fdb" x="130.486004" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m25143369d5" x="130.486004" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -3534,12 +3540,12 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m8d417ffa72" d="M 0 0 
+           <path id="m30fb1842e7" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m8d417ffa72" x="59.314062" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m30fb1842e7" x="59.314062" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -3549,7 +3555,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m8d417ffa72" x="59.314062" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m30fb1842e7" x="59.314062" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -3596,7 +3602,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       </g>
      </g>
      <defs>
-      <clipPath id="p20dfeff2a2">
+      <clipPath id="pd33c13ce9f">
        <rect x="59.314062" y="7.2" width="93.6" height="28.8"/>
       </clipPath>
      </defs>
@@ -4230,7 +4236,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:23:34.287940</dc:date>
+        <dc:date>2026-06-29T10:03:19.229980</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -4260,7 +4266,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 149.086214 
     L 193.6375 149.086214 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 193.6375 146.4146 
@@ -4268,7 +4274,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 135.728144 
     L 193.6375 135.728144 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_4">
         <path d="M 193.6375 133.056529 
@@ -4276,7 +4282,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 122.370073 
     L 193.6375 122.370073 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_5">
         <path d="M 193.6375 119.698459 
@@ -4284,7 +4290,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 109.012003 
     L 193.6375 109.012003 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_6">
         <path d="M 193.6375 106.340388 
@@ -4292,7 +4298,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 95.653932 
     L 193.6375 95.653932 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_7">
         <path d="M 193.6375 92.982318 
@@ -4300,7 +4306,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 82.295862 
     L 193.6375 82.295862 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_8">
         <path d="M 193.6375 79.624247 
@@ -4308,7 +4314,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 68.937791 
     L 193.6375 68.937791 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_9">
         <path d="M 193.6375 66.266177 
@@ -4316,7 +4322,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 55.579721 
     L 193.6375 55.579721 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_10">
         <path d="M 193.6375 52.908106 
@@ -4324,7 +4330,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 238.208929 42.22165 
     L 193.6375 42.22165 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_11">
         <path d="M 193.6375 39.550036 
@@ -4332,18 +4338,18 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 282.780357 28.86358 
     L 193.6375 28.86358 
     z
-    " clip-path="url(#p97d8cc1816)" style="fill: #ee854a"/>
+    " clip-path="url(#p36784f902f)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="m4ae49ebadf" d="M 0 0 
+           <path id="mf91cfe20b3" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m4ae49ebadf" x="193.6375" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf91cfe20b3" x="193.6375" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -4353,7 +4359,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#m4ae49ebadf" x="238.208929" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf91cfe20b3" x="238.208929" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -4363,7 +4369,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#m4ae49ebadf" x="282.780357" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mf91cfe20b3" x="282.780357" y="166.318125" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -4375,12 +4381,12 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="md57c3fe20d" d="M 0 0 
+           <path id="mc232ca25b7" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="154.429442" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -4390,7 +4396,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="141.071372" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -4400,7 +4406,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_3">
          <g id="line2d_6">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="127.713301" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_6">
@@ -4410,7 +4416,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_4">
          <g id="line2d_7">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="114.355231" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_7">
@@ -4420,7 +4426,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_5">
          <g id="line2d_8">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="100.99716" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_8">
@@ -4430,7 +4436,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_6">
          <g id="line2d_9">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="87.63909" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_9">
@@ -4440,7 +4446,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_7">
          <g id="line2d_10">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="74.281019" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_10">
@@ -4450,7 +4456,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_8">
          <g id="line2d_11">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="60.922949" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_11">
@@ -4460,7 +4466,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_9">
          <g id="line2d_12">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="47.564878" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_12">
@@ -4470,7 +4476,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_10">
          <g id="line2d_13">
           <g>
-           <use xlink:href="#md57c3fe20d" x="193.6375" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#mc232ca25b7" x="193.6375" y="34.206808" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_13">
@@ -4568,7 +4574,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       </g>
      </g>
      <defs>
-      <clipPath id="p97d8cc1816">
+      <clipPath id="p36784f902f">
        <rect x="193.6375" y="22.318125" width="93.6" height="144"/>
       </clipPath>
      </defs>
@@ -4894,7 +4900,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
        <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-06-24T13:23:34.373236</dc:date>
+        <dc:date>2026-06-29T10:03:19.346999</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:creator>
          <cc:Agent>
@@ -4924,7 +4930,7 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 148.10106 23.054545 
     L 59.314062 23.054545 
     z
-    " clip-path="url(#p20dfeff2a2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd33c13ce9f)" style="fill: #ee854a"/>
        </g>
        <g id="patch_3">
         <path d="M 59.314062 20.145455 
@@ -4932,18 +4938,18 @@ useful! Click on any cell below to expand and read the tweet in full.
     L 148.45692 8.509091 
     L 59.314062 8.509091 
     z
-    " clip-path="url(#p20dfeff2a2)" style="fill: #ee854a"/>
+    " clip-path="url(#pd33c13ce9f)" style="fill: #ee854a"/>
        </g>
        <g id="matplotlib.axis_1">
         <g id="xtick_1">
          <g id="line2d_1">
           <defs>
-           <path id="me388467fdb" d="M 0 0 
+           <path id="m25143369d5" d="M 0 0 
     L 0 3.5 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#me388467fdb" x="59.314062" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m25143369d5" x="59.314062" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_1">
@@ -4953,7 +4959,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_2">
          <g id="line2d_2">
           <g>
-           <use xlink:href="#me388467fdb" x="94.900033" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m25143369d5" x="94.900033" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_2">
@@ -4963,7 +4969,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="xtick_3">
          <g id="line2d_3">
           <g>
-           <use xlink:href="#me388467fdb" x="130.486004" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m25143369d5" x="130.486004" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_3">
@@ -4975,12 +4981,12 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_1">
          <g id="line2d_4">
           <defs>
-           <path id="m8d417ffa72" d="M 0 0 
+           <path id="m30fb1842e7" d="M 0 0 
     L -3.5 0 
     " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </defs>
           <g>
-           <use xlink:href="#m8d417ffa72" x="59.314062" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m30fb1842e7" x="59.314062" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_4">
@@ -4990,7 +4996,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         <g id="ytick_2">
          <g id="line2d_5">
           <g>
-           <use xlink:href="#m8d417ffa72" x="59.314062" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+           <use xlink:href="#m30fb1842e7" x="59.314062" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
           </g>
          </g>
          <g id="text_5">
@@ -5037,7 +5043,7 @@ useful! Click on any cell below to expand and read the tweet in full.
       </g>
      </g>
      <defs>
-      <clipPath id="p20dfeff2a2">
+      <clipPath id="pd33c13ce9f">
        <rect x="59.314062" y="7.2" width="93.6" height="28.8"/>
       </clipPath>
      </defs>
@@ -5194,7 +5200,7 @@ useful! Click on any cell below to expand and read the tweet in full.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_6d36ee53">
+        <skrub-table-report class="report" id="report_100597b0">
         </skrub-table-report>
 
         <script type="module">
@@ -6298,7 +6304,7 @@ useful! Click on any cell below to expand and read the tweet in full.
         </script>
     </div>
 
-    <div id="report_6d36ee53-wrapper-fallback">
+    <div id="report_100597b0-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -6309,8 +6315,8 @@ useful! Click on any cell below to expand and read the tweet in full.
     </div>
 
     <script>
-     document.getElementById("report_6d36ee53-wrapper").removeAttribute("hidden");
-     document.getElementById("report_6d36ee53-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_100597b0-wrapper").removeAttribute("hidden");
+     document.getElementById("report_100597b0-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -6372,8 +6378,8 @@ to summarize each topic.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_8858972e-wrapper" hidden>
-        <template id="report_8858972e-template">
+    <div id="report_fd88d38b-wrapper" hidden>
+        <template id="report_fd88d38b-template">
             <style>
              /*!
     Pure v3.0.0
@@ -7819,7 +7825,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="3e7e81be"
+                    id="85a299b0"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -7849,7 +7855,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="ab2f0fa3"
+                    id="4d025679"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -7883,7 +7889,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="10eeede8"
+                    id="b4fa3c83"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -7917,7 +7923,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="86dd6f83"
+                    id="57a18e7e"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -7951,7 +7957,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="541d25d0"
+                    id="2a08db6e"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -7985,7 +7991,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="fe4b8123"
+                    id="9b68ab02"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8019,7 +8025,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="48713e4d"
+                    id="1579a107"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8053,7 +8059,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="ff73cda9"
+                    id="2af56196"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8087,7 +8093,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="b92f7044"
+                    id="652f4cdd"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8121,7 +8127,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="fa047927"
+                    id="aef24c6a"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8155,7 +8161,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="06d45f9b"
+                    id="99c7fec1"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8189,7 +8195,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="c9eace3f"
+                    id="db66a5ff"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8223,7 +8229,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="c3d8ea3d"
+                    id="6de3a44f"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8257,7 +8263,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="a5052fd9"
+                    id="750d20bf"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8291,7 +8297,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="534245e6"
+                    id="71cb8821"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8325,7 +8331,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="6215f791"
+                    id="daee6c34"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8359,7 +8365,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="1544fbd2"
+                    id="7985e892"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8393,7 +8399,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="6cc9991f"
+                    id="1a9d34fb"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8427,7 +8433,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="afac27d1"
+                    id="967b5f23"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8461,7 +8467,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="38c11817"
+                    id="fda8914b"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8495,7 +8501,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="116e0d86"
+                    id="e68f7ad3"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8529,7 +8535,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="c5bed3c7"
+                    id="f96061da"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8563,7 +8569,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="69996edf"
+                    id="43f5d54b"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8597,7 +8603,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="cd8c03a1"
+                    id="c90b42fd"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8631,7 +8637,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="4dfe9d2d"
+                    id="6a6134fa"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8665,7 +8671,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="13a88e39"
+                    id="d3e4c496"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8699,7 +8705,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="1554326d"
+                    id="40aa0560"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8733,7 +8739,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="a8621775"
+                    id="a8c423cc"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8767,7 +8773,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="71ab7d3f"
+                    id="be937f9e"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8801,7 +8807,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="e0464123"
+                    id="60a2981d"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8835,7 +8841,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="8aa61725"
+                    id="45b6f73b"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8869,7 +8875,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="1c2ba572"
+                    id="bf067dc0"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -8917,7 +8923,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="f0f063d7"
+                    id="586081a4"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -8945,7 +8951,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="4bc3f585"
+                    id="b3c1cdcd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -8975,7 +8981,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f5e9e12a"
+                    id="f7fae2da"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9005,7 +9011,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f9d23edc"
+                    id="2ca6d3f0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9035,7 +9041,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="1cb85e1e"
+                    id="b5f34a24"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9065,7 +9071,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="0edf4baf"
+                    id="27f30040"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9095,7 +9101,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e46871e3"
+                    id="398815be"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9125,7 +9131,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="fc0a7407"
+                    id="e6b267e0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9155,7 +9161,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="71db96ae"
+                    id="c9ada9f7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9185,7 +9191,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e9059083"
+                    id="3274b6e4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9215,7 +9221,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="35acb0a7"
+                    id="88869293"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9245,7 +9251,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="fafd0458"
+                    id="0958f75d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9275,7 +9281,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="29f61034"
+                    id="a6525b84"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9305,7 +9311,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="7da784e3"
+                    id="f57804e1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9335,7 +9341,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6904342a"
+                    id="f7fb5fd7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9365,7 +9371,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6ce339d0"
+                    id="e5a5af09"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9395,7 +9401,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="469d1f5f"
+                    id="a5e085b6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9425,7 +9431,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="88ec3691"
+                    id="8ed2a109"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9455,7 +9461,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="40f8dedf"
+                    id="ae80d131"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9485,7 +9491,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="b674f502"
+                    id="fb5aa745"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9515,7 +9521,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="2154cfa4"
+                    id="d9b48693"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9545,7 +9551,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="b10048ae"
+                    id="eb19e6d8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9575,7 +9581,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ed3267da"
+                    id="05daac9c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9605,7 +9611,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="90af0b8e"
+                    id="d76f1c05"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9635,7 +9641,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="1e3d7336"
+                    id="c387a0ba"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9665,7 +9671,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f74cfea3"
+                    id="0c126014"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9695,7 +9701,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="9d1706e5"
+                    id="8ff6eb70"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9725,7 +9731,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="7667a669"
+                    id="d521a2ba"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9755,7 +9761,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="003ff5a8"
+                    id="7da575e6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9785,7 +9791,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8ae57bae"
+                    id="82e81325"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9815,7 +9821,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="d6bef725"
+                    id="3b9f4872"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9845,7 +9851,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f5eb2c27"
+                    id="d82d4d66"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9879,7 +9885,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="0de21989"
+                    id="c661b909"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -9907,7 +9913,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6c28ab6c"
+                    id="57a8ed72"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9937,7 +9943,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ca665c0a"
+                    id="1b7a3b72"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9967,7 +9973,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="b64e631b"
+                    id="a5a0a5ea"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -9997,7 +10003,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="fa1945a9"
+                    id="01f6af09"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10027,7 +10033,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6072d751"
+                    id="ec8f3d69"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10057,7 +10063,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8169dc8a"
+                    id="37eb8edc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10087,7 +10093,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="724fe2f8"
+                    id="4d00e152"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10117,7 +10123,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="de9dc84f"
+                    id="406a5e4e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10147,7 +10153,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6b90b50f"
+                    id="f1a34e43"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10177,7 +10183,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="4b8a673b"
+                    id="965e5631"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10207,7 +10213,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c7764b7d"
+                    id="af42806d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10237,7 +10243,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="3b94981c"
+                    id="332c1587"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10267,7 +10273,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ae00f3f2"
+                    id="85945303"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10297,7 +10303,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="14f8b73b"
+                    id="7d69a013"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10327,7 +10333,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="3efa8fc9"
+                    id="0ac9acda"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10357,7 +10363,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6e339430"
+                    id="c754e0d0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10387,7 +10393,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8b826490"
+                    id="9c51623e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10417,7 +10423,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="30e4cbda"
+                    id="f79f067e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10447,7 +10453,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="1f05bd95"
+                    id="c9b558cd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10477,7 +10483,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="22c87d65"
+                    id="56635fb8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10507,7 +10513,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e3903375"
+                    id="79f7524d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10537,7 +10543,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="cb740bec"
+                    id="124f516f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10567,7 +10573,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ea6f03cb"
+                    id="1a76d61b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10597,7 +10603,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="307ecba6"
+                    id="ba21f11c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10627,7 +10633,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="91cb4dbe"
+                    id="2c7eb4ac"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10657,7 +10663,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="82cad646"
+                    id="42de35be"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10687,7 +10693,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="dbe77136"
+                    id="e48367f8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10717,7 +10723,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="b7981118"
+                    id="c5c8453c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10747,7 +10753,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="971ad4b8"
+                    id="209e8491"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10777,7 +10783,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="814a8e0d"
+                    id="8592b674"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10807,7 +10813,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="a299c019"
+                    id="9623efc5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10841,7 +10847,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="3f76cb56"
+                    id="fdc822c8"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -10869,7 +10875,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="b6b248ac"
+                    id="918a8be1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10899,7 +10905,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="7313e3af"
+                    id="1ab1c084"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10929,7 +10935,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="74059657"
+                    id="a394c5c5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10959,7 +10965,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c31993e7"
+                    id="ed265dcc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -10989,7 +10995,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e0d858ad"
+                    id="4e693b7c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11019,7 +11025,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="5277d7a1"
+                    id="07e44a70"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11049,7 +11055,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="5385fff4"
+                    id="560d7ed5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11079,7 +11085,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="261f1f9d"
+                    id="8da0d89b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11109,7 +11115,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f7a60c6b"
+                    id="82b57797"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11139,7 +11145,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="7a895251"
+                    id="85cbd539"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11169,7 +11175,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="a74e8e44"
+                    id="af0428d8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11199,7 +11205,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="3b46e193"
+                    id="2be3a047"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11229,7 +11235,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="16eb4daf"
+                    id="eac1b40e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11259,7 +11265,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="88979135"
+                    id="1887b41d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11289,7 +11295,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="1167e06e"
+                    id="cdf4f911"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11319,7 +11325,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="713c1892"
+                    id="19bc1c7c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11349,7 +11355,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f4d16d13"
+                    id="40207044"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11379,7 +11385,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="5056919a"
+                    id="3e56310c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11409,7 +11415,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="78ed24b0"
+                    id="42bd2c98"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11439,7 +11445,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="5d692b7e"
+                    id="3262af42"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11469,7 +11475,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="aa07abb1"
+                    id="b31326ad"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11499,7 +11505,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="175c1604"
+                    id="8e32c5b6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11529,7 +11535,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="7536197c"
+                    id="4beb60e2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11559,7 +11565,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="3e781b47"
+                    id="f4aadc54"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11589,7 +11595,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c6714cd8"
+                    id="ae2e48ff"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11619,7 +11625,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="105b7d17"
+                    id="e73fd059"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11649,7 +11655,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6c3515f1"
+                    id="4061a6d5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11679,7 +11685,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="1fed4135"
+                    id="ff6b6a6a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11709,7 +11715,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6ecc6083"
+                    id="129a762a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11739,7 +11745,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f381a4e7"
+                    id="fda2a60e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11769,7 +11775,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="aed6aa16"
+                    id="f57973fc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11803,7 +11809,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="b1de31ac"
+                    id="05a8717b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -11831,7 +11837,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6195be93"
+                    id="c1a6f770"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11861,7 +11867,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ed427cef"
+                    id="c7bbd1f9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11891,7 +11897,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ec348a2f"
+                    id="fef193c5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11921,7 +11927,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="bd934194"
+                    id="bd55f5b9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11951,7 +11957,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="1de0aba1"
+                    id="540de1ac"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -11981,7 +11987,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="d603be54"
+                    id="dc39653d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12011,7 +12017,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="a668e900"
+                    id="3045233b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12041,7 +12047,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="86c8ab5e"
+                    id="1754995d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12071,7 +12077,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c2d19735"
+                    id="ccc5f4b5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12101,7 +12107,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="69ebb4f7"
+                    id="0b185a65"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12131,7 +12137,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="3698c6be"
+                    id="cbbf9a15"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12161,7 +12167,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="7be0a0fc"
+                    id="1e73935e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12191,7 +12197,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="9c045efd"
+                    id="5ce46822"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12221,7 +12227,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8002c9e8"
+                    id="364dfc71"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12251,7 +12257,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="22597343"
+                    id="24760b4e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12281,7 +12287,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="69870e57"
+                    id="c15220aa"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12311,7 +12317,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="88277502"
+                    id="a6ba0355"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12341,7 +12347,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="aa1af4b8"
+                    id="7e2a5aae"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12371,7 +12377,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="9ebd2107"
+                    id="a605ade3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12401,7 +12407,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="95c29dd1"
+                    id="3de6fa8d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12431,7 +12437,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="999e6df8"
+                    id="d6dac308"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12461,7 +12467,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="b0818024"
+                    id="0ede2bbf"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12491,7 +12497,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="3abea136"
+                    id="f5813463"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12521,7 +12527,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="bdbfc59e"
+                    id="a0c670ea"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12551,7 +12557,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e41d5802"
+                    id="3fa7a1a5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12581,7 +12587,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="387a7d65"
+                    id="a9477476"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12611,7 +12617,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="567e4424"
+                    id="c83ef559"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12641,7 +12647,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="34bfbc62"
+                    id="e01e3277"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12671,7 +12677,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="bcb8f4c3"
+                    id="0e6dcc8e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12701,7 +12707,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="bb6f4ad9"
+                    id="2cf59222"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12731,7 +12737,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="3437553a"
+                    id="0fc7de04"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12765,7 +12771,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="be2f3312"
+                    id="b606a0a7"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -12793,7 +12799,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e9cb572d"
+                    id="4919b422"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12823,7 +12829,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="92c47b17"
+                    id="e1d22c6f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12853,7 +12859,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="432715fc"
+                    id="64e4b109"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12883,7 +12889,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="56786a3f"
+                    id="cef4de8e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12913,7 +12919,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="73daf7c3"
+                    id="d9ecaa7c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12943,7 +12949,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="9efe5232"
+                    id="c8c1394a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -12973,7 +12979,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e2ba4b84"
+                    id="ba0b5223"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13003,7 +13009,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="4d144982"
+                    id="a40cbff7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13033,7 +13039,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f736995c"
+                    id="1f563773"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13063,7 +13069,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="22086004"
+                    id="3fe248dd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13093,7 +13099,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ed9fe79a"
+                    id="79fad04b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13123,7 +13129,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8babf055"
+                    id="68e10874"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13153,7 +13159,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="60a63f97"
+                    id="fd4a4fb1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13183,7 +13189,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f2bc43c5"
+                    id="0c6421ca"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13213,7 +13219,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e0f295cc"
+                    id="239b2a15"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13243,7 +13249,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c3d09f66"
+                    id="9400c747"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13273,7 +13279,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="cbd09473"
+                    id="042e5fc9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13303,7 +13309,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="41b5b3ea"
+                    id="ac590ba1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13333,7 +13339,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="631820f7"
+                    id="d42c8046"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13363,7 +13369,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c49ef3e1"
+                    id="324dbafb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13393,7 +13399,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f1844b0a"
+                    id="2ca416eb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13423,7 +13429,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="9114200d"
+                    id="d940c657"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13453,7 +13459,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="2ef6786f"
+                    id="5637c8cf"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13483,7 +13489,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="0472625e"
+                    id="44297c98"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13513,7 +13519,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e369e41d"
+                    id="91e15eb5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13543,7 +13549,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="2df67520"
+                    id="04bbc69f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13573,7 +13579,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ba527e8f"
+                    id="5c70c730"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13603,7 +13609,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c0fecd29"
+                    id="af173bdd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13633,7 +13639,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="82951055"
+                    id="d66982de"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13663,7 +13669,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="53e516a5"
+                    id="92a6c1a0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -13693,7 +13699,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="1ead8700"
+                    id="a111eb8b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14057,7 +14063,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="95b4094c"
+                    id="6e1a3e45"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -14085,7 +14091,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="21b993f5"
+                    id="322b3af7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14115,7 +14121,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="7ae04a32"
+                    id="4367d6ff"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14145,7 +14151,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="1ff0d0e4"
+                    id="9b2e7d67"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14175,7 +14181,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e1b09199"
+                    id="b9b79447"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14205,7 +14211,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="cc1a9bb8"
+                    id="d223e320"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14235,7 +14241,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8f4a322a"
+                    id="d7d02f2a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14265,7 +14271,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="17c17e07"
+                    id="63a1ac48"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14295,7 +14301,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="35c4a68b"
+                    id="cb5b6c83"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14325,7 +14331,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="a68a1deb"
+                    id="b3dda33c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14355,7 +14361,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="9d316913"
+                    id="485a5075"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14385,7 +14391,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e07620f1"
+                    id="31cb0861"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14415,7 +14421,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="d5607d65"
+                    id="83cadaec"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14445,7 +14451,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="939e98c7"
+                    id="be91770e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14475,7 +14481,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="18b18c75"
+                    id="5ac8a773"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14505,7 +14511,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="692c3114"
+                    id="059b52d6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14535,7 +14541,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="842e7623"
+                    id="3d0663fe"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14565,7 +14571,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8f0a5dec"
+                    id="fdb315ce"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14595,7 +14601,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c53e298f"
+                    id="5cb3a96f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14625,7 +14631,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ee64fc84"
+                    id="a1f7d0dc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14655,7 +14661,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6a301776"
+                    id="a5ec5e4f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14685,7 +14691,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="00e1d74a"
+                    id="f6249ed7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14715,7 +14721,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="896917b3"
+                    id="b4b487fb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14745,7 +14751,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c58ec75f"
+                    id="5191fad7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14775,7 +14781,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c3468a1d"
+                    id="97fea305"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14805,7 +14811,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="fbbc975c"
+                    id="1ebdd9b0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14835,7 +14841,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f0306c8f"
+                    id="c7726b30"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14865,7 +14871,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="294e8b0b"
+                    id="591626e8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14895,7 +14901,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="9fc35e2a"
+                    id="79c66e7e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14925,7 +14931,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="42ccb2fc"
+                    id="00ce1b56"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14955,7 +14961,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e8571a07"
+                    id="13fccf62"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -14985,7 +14991,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="b1562272"
+                    id="68eac96f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15019,7 +15025,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="c9516034"
+                    id="3b54dd40"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -15047,7 +15053,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="1349b762"
+                    id="573592af"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15077,7 +15083,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="20b45291"
+                    id="5eec4e4c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15107,7 +15113,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="073ac15b"
+                    id="a4158395"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15137,7 +15143,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ddc7476e"
+                    id="633b03b5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15167,7 +15173,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="491ce56d"
+                    id="8324d631"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15197,7 +15203,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e0b6454f"
+                    id="d5a58805"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15227,7 +15233,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="1740da6c"
+                    id="618a3bd5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15257,7 +15263,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="9cce763d"
+                    id="c2a98c97"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15287,7 +15293,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="cd20c093"
+                    id="c3d27677"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15317,7 +15323,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="a19636e2"
+                    id="ea8831d6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15347,7 +15353,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="69d6aad2"
+                    id="4267fc27"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15377,7 +15383,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c227a5e7"
+                    id="10dc429f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15407,7 +15413,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8cb3d4aa"
+                    id="51a88fe6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15437,7 +15443,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="cc945ea3"
+                    id="39763ba6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15467,7 +15473,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="94cc8a4f"
+                    id="b3237454"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15497,7 +15503,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="85a6a219"
+                    id="68575f31"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15527,7 +15533,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c5c49e52"
+                    id="7814c310"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15557,7 +15563,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="3f848200"
+                    id="ebbdddb9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15587,7 +15593,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="2f671aba"
+                    id="706ea7b5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15617,7 +15623,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="a5b7a915"
+                    id="2e851197"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15647,7 +15653,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="b90af304"
+                    id="d641d4ec"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15677,7 +15683,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ef6a9431"
+                    id="990a1187"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15707,7 +15713,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="d3237bd1"
+                    id="941bed88"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15737,7 +15743,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f1378ff6"
+                    id="0e682a4f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15767,7 +15773,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="00dc7855"
+                    id="bb19ed49"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15797,7 +15803,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="97698f16"
+                    id="a8366edd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15827,7 +15833,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="123300ea"
+                    id="4b58be26"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15857,7 +15863,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6f65f0cb"
+                    id="9b398d9d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15887,7 +15893,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="5c3eea36"
+                    id="e56a9cd9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15917,7 +15923,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8fd906ff"
+                    id="f31cb8b4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15947,7 +15953,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="7735c479"
+                    id="9753b9e4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -15981,7 +15987,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="b98afba6"
+                    id="7d564079"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -16009,7 +16015,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="0f6acfb2"
+                    id="6ab2591b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16051,7 +16057,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6cc45ee3"
+                    id="7da4bc34"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16081,7 +16087,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="a503c342"
+                    id="7fe317c0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16111,7 +16117,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="9fe1ca94"
+                    id="2de7b543"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16141,7 +16147,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8f8e89ec"
+                    id="3841b62c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16171,7 +16177,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="0733577d"
+                    id="6d249159"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16201,7 +16207,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="5c9997fa"
+                    id="659d1b27"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16231,7 +16237,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="48370fd3"
+                    id="10d8bfbe"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16261,7 +16267,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="387a4c4f"
+                    id="72ab5395"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16291,7 +16297,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="1f19eb1d"
+                    id="0ea4dcc0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16321,7 +16327,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ba8fe03b"
+                    id="910e00cb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16351,7 +16357,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="26721f66"
+                    id="1fa44e9c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16381,7 +16387,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="7edf9fad"
+                    id="8fbe7d92"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16411,7 +16417,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="03e60978"
+                    id="b1400173"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16441,7 +16447,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="b73d30c3"
+                    id="efc9c2a6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16471,7 +16477,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="943044cf"
+                    id="7939f8cd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16501,7 +16507,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="5e243b2d"
+                    id="5e4d5c07"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16531,7 +16537,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="db30707e"
+                    id="6bce45dc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16561,7 +16567,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="786907fd"
+                    id="53781f2f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16591,7 +16597,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="b81b466b"
+                    id="a8018ddf"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16621,7 +16627,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="84a19f12"
+                    id="bd6c5ff9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16651,7 +16657,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="5932a357"
+                    id="3ebdecf4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16681,7 +16687,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="7a59278f"
+                    id="2f459358"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16711,7 +16717,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="b87a1ef6"
+                    id="ffd99e00"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16741,7 +16747,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c8b9191e"
+                    id="f4230791"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16771,7 +16777,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="3207e8cd"
+                    id="0b7677f5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16801,7 +16807,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="245d824b"
+                    id="128568e6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16831,7 +16837,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="2df1ac09"
+                    id="ca4621e0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16861,7 +16867,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e10ec468"
+                    id="ff071e79"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16891,7 +16897,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e2bcc09b"
+                    id="ad49a8cb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16921,7 +16927,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="3554c680"
+                    id="7dd3b8d1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -16955,7 +16961,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="3bdf86ac"
+                    id="52ee87d7"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -16983,7 +16989,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="95537674"
+                    id="a7ecb627"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17013,7 +17019,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="4424ab33"
+                    id="c22f6e6b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17043,7 +17049,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="bf7e62d0"
+                    id="3b486db7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17073,7 +17079,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="2d927253"
+                    id="15bf3139"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17103,7 +17109,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="100d4b55"
+                    id="8ccc5e6b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17133,7 +17139,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6bf62691"
+                    id="73f50c5d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17163,7 +17169,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="0799b118"
+                    id="faf20cee"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17193,7 +17199,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e10b9421"
+                    id="3171bb25"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17223,7 +17229,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="92c030ec"
+                    id="7fd89cb8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17253,7 +17259,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="df9bb052"
+                    id="7f80f5a9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17283,7 +17289,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="fe07201e"
+                    id="6ac01c30"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17313,7 +17319,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="060c518a"
+                    id="f15b1150"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17343,7 +17349,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="99e0e7c0"
+                    id="f75bbb40"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17373,7 +17379,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ffb49d9c"
+                    id="c92d5c58"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17403,7 +17409,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="120907bd"
+                    id="3ecee1cd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17433,7 +17439,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="d100105a"
+                    id="0236fbc0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17463,7 +17469,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="81420d54"
+                    id="d29f20eb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17493,7 +17499,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="4a600b94"
+                    id="62060ad6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17523,7 +17529,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="48fdcf40"
+                    id="c212668f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17553,7 +17559,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8b9e750c"
+                    id="3898ad78"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17583,7 +17589,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="31113f6a"
+                    id="b13ea550"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17613,7 +17619,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8cf31a82"
+                    id="b877b9d4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17643,7 +17649,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ffb705ad"
+                    id="210b55be"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17673,7 +17679,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="eee159fc"
+                    id="c4b538f3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17703,7 +17709,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c0524888"
+                    id="bf739a30"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17733,7 +17739,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="949e9c10"
+                    id="1e358a10"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17763,7 +17769,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="809ce540"
+                    id="e3479c65"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17793,7 +17799,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="d6119765"
+                    id="ab7c94a1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17823,7 +17829,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="d61fd408"
+                    id="76629641"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17853,7 +17859,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="848db96d"
+                    id="a522309b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17883,7 +17889,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="cc096d66"
+                    id="037f6b0b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17917,7 +17923,7 @@ to summarize each topic.
                 
                 
                     <th
-                    id="f0cc43e1"
+                    id="62517f2b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -17945,7 +17951,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="91e04a32"
+                    id="d17eb77a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -17997,7 +18003,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8fa7f23c"
+                    id="f4ec96f4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18027,7 +18033,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="6702159f"
+                    id="3ee715d1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18057,7 +18063,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="38887c2f"
+                    id="846b2034"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18087,7 +18093,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ac4c89a9"
+                    id="4c2b6fbe"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18117,7 +18123,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="d5831ec8"
+                    id="1d629ad0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18147,7 +18153,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="8754c913"
+                    id="897ea77c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18177,7 +18183,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f83f2a1b"
+                    id="f0c25e1b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18207,7 +18213,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="73538a46"
+                    id="a44bae79"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18237,7 +18243,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="58929c48"
+                    id="9516c632"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18267,7 +18273,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="a109bd16"
+                    id="2e243d56"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18297,7 +18303,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="d2616fbd"
+                    id="878f90df"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18327,7 +18333,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="3bcf84f8"
+                    id="a3bd27a4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18357,7 +18363,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="11c73835"
+                    id="2bee6110"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18387,7 +18393,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="eed7c5e4"
+                    id="ebecd7f4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18417,7 +18423,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="95807edc"
+                    id="402dab5a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18447,7 +18453,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="50fda6b9"
+                    id="ffc92346"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18477,7 +18483,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="adb33f7c"
+                    id="209fde54"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18507,7 +18513,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="a8bc5dc2"
+                    id="b9131ec8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18537,7 +18543,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="5d923a2a"
+                    id="7c6749d4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18567,7 +18573,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ab7f099f"
+                    id="10a9d4e0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18597,7 +18603,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="4ff101ac"
+                    id="29d4ebb1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18627,7 +18633,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="e812edcb"
+                    id="05db9120"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18657,7 +18663,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="ce2be13d"
+                    id="1d3419df"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18687,7 +18693,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="27eb73fb"
+                    id="dfb8d269"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18717,7 +18723,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="c04876f4"
+                    id="cdfd0283"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18747,7 +18753,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="12d9a3f8"
+                    id="6b36ff3b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18777,7 +18783,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="38bd34a7"
+                    id="12f118e6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18807,7 +18813,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="4f8098ba"
+                    id="2178568e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18837,7 +18843,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="f5fb996a"
+                    id="174cf0fe"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -18867,7 +18873,7 @@ to summarize each topic.
                 
                 
                     <td
-                    id="eb277f1d"
+                    id="b5c55fe6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -23210,7 +23216,7 @@ to summarize each topic.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_8858972e">
+        <skrub-table-report class="report" id="report_fd88d38b">
         </skrub-table-report>
 
         <script type="module">
@@ -24314,7 +24320,7 @@ to summarize each topic.
         </script>
     </div>
 
-    <div id="report_8858972e-wrapper-fallback">
+    <div id="report_fd88d38b-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -24325,8 +24331,8 @@ to summarize each topic.
     </div>
 
     <script>
-     document.getElementById("report_8858972e-wrapper").removeAttribute("hidden");
-     document.getElementById("report_8858972e-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_fd88d38b-wrapper").removeAttribute("hidden");
+     document.getElementById("report_fd88d38b-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -24572,11 +24578,11 @@ column in a dataframe. By default, |TextEncoder| uses the e5-small-v2 model.
  .. code-block:: none
 
     Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 7216.63it/s]
-    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 7046.88it/s]
-    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 9167.48it/s]
-    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 9552.48it/s]
-    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 9433.88it/s]
+    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 3387.97it/s]
+    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 5239.74it/s]
+    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 3485.96it/s]
+    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 5906.47it/s]
+    Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]    Loading weights: 100%|██████████| 25/25 [00:00<00:00, 7113.81it/s]
 
 
 
@@ -24729,9 +24735,9 @@ good performance at a fraction of the cost of more complex methods.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (2 minutes 51.858 seconds)
+   **Total running time of the script:** (4 minutes 14.768 seconds)
 
-**Estimated memory usage:**  1397 MB
+**Estimated memory usage:**  1273 MB
 
 
 .. _sphx_glr_download_auto_examples_01_encoding_0020_text_with_string_encoders.py:
