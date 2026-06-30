@@ -600,6 +600,7 @@
 
 
 
+
 <li class="toctree-l2"><a class="reference internal" href="hyperparameter_tuning.html">Using the skrub <code class="docutils literal notranslate"><span class="pre">choose_*</span></code> functions to tune hyperparameters</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="nested_cross_validation.html">Validating hyperparameter search with nested cross-validation</a></li>
@@ -915,13 +916,73 @@ the default cross-validation splitting strategy.</p>
 </div>
 <p>Note that the score above is negative: it is the negative log loss we passed to
 <code class="docutils literal notranslate"><span class="pre">with_scoring</span></code>, and not the default score (accuracy, which would be positive).</p>
+<p>If we also want to recover the default score that would be returned by the
+applied estimator’s <code class="docutils literal notranslate"><span class="pre">score()</span></code> method (what we would get if we did not use
+<a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a>), we can pass <code class="docutils literal notranslate"><span class="pre">None</span></code> as the scorer, and the
+default corresponding key in the result is <code class="docutils literal notranslate"><span class="pre">&quot;score&quot;</span></code> (exactly like in
+<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="(in scikit-learn v1.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">cross_validate()</span></code></a>):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="s1">&#39;roc_auc&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">])</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">])</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="go">{&#39;score&#39;: 0.6666666666666666, &#39;accuracy&#39;: 0.6666666666666666, &#39;roc_auc&#39;: 0.5}</span>
+</pre></div>
+</div>
 <p><a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a> only changes how scoring is performed
 (the outputs of <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.cross_validate.html#skrub.DataOp.skb.cross_validate" title="skrub.DataOp.skb.cross_validate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.cross_validate()</span></code></a>,
 <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.make_randomized_search()</span></code></a>, <a class="reference internal" href="../../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner.score</span></code></a> etc.),
-<strong>not</strong> the actual outputs of the learner (it does _not_ affect the outputs of
+<strong>not</strong> the actual outputs of the learner (it does <em>not</em> affect the outputs of
 <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.eval.html#skrub.DataOp.skb.eval" title="skrub.DataOp.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.eval()</span></code></a>, <a class="reference internal" href="../../../reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner.predict</span></code></a>, etc.)</p>
 <p>This method can be called several times to add scorers that take different
 kwargs. See the reference documentation for details.</p>
+</section>
+<section id="avoiding-computing-predictions-multiple-times">
+<h1>Avoiding computing predictions multiple times<a class="headerlink" href="#avoiding-computing-predictions-multiple-times" title="Link to this heading">#</a></h1>
+<p>This section gives a few tips to avoid recomputing predictions, which is
+particularly important for pipelines for which inference is expensive, such as
+those using the <a class="reference internal" href="../../../reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> or Tabular Foundation Models such as
+<a class="reference external" href="https://tabicl.readthedocs.io/en/latest/">TabICL</a>.</p>
+<p>When <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a> is used, predictions are cached during
+scoring so that if multiple scorers call the same function (e.g. <code class="docutils literal notranslate"><span class="pre">predict()</span></code>
+or <code class="docutils literal notranslate"><span class="pre">predict_proba()</span></code>) the computation runs only once. Moreover, if we also
+need the predictions in addition to the scores (for example to create plots,
+study calibration, etc.) we can pass <code class="docutils literal notranslate"><span class="pre">return_predictions=True</span></code> to the
+learner’s <code class="docutils literal notranslate"><span class="pre">score()</span></code> method.</p>
+<p>Instead of doing the following, which computes the predictions twice:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">predictions</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">])</span> <span class="c1"># used for plotting etc.</span>
+</pre></div>
+</div>
+<p>We can write:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span><span class="p">,</span> <span class="n">predictions</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">],</span> <span class="n">return_predictions</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span>
+<span class="go">{&#39;neg_log_loss&#39;: -0.6365141682948128}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">predictions</span>
+<span class="go">{&#39;predict_proba&#39;: array([[0.66666667, 0.33333333],</span>
+<span class="go">       [0.66666667, 0.33333333],</span>
+<span class="go">       [0.66666667, 0.33333333]])}</span>
+</pre></div>
+</div>
+<p>The returned dictionary contains any predictions of the pipeline that have been
+computed as part of scoring. When <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a> has not been
+used, it will always be empty.</p>
+<p>If we happen to already have the predictions for the data we are scoring on, but
+would like to use the learner’s <code class="docutils literal notranslate"><span class="pre">score</span></code> method to get the scores, we can
+inject the precomputed predictions in the input environment, under the special
+key <code class="docutils literal notranslate"><span class="pre">&quot;_skrub_predictions&quot;</span></code>:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">predict_proba</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]</span> <span class="o">|</span> <span class="p">{</span><span class="s1">&#39;_skrub_predictions&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;predict_proba&#39;</span><span class="p">:</span> <span class="n">predict_proba</span><span class="p">}})</span>
+<span class="go">{&#39;neg_log_loss&#39;: -0.63...}</span>
+</pre></div>
+</div>
+<p>With the above, <code class="docutils literal notranslate"><span class="pre">predict()</span></code> is not called during scoring. As for
+<code class="docutils literal notranslate"><span class="pre">return_predictions</span></code>, this only applies to scorers added with
+<a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a>. If no scorer has been configured
+<code class="docutils literal notranslate"><span class="pre">'_skrub_predictions'</span></code> will be ignored.</p>
 </section>
 
 
@@ -976,6 +1037,7 @@ kwargs. See the reference documentation for details.</p>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#splitting-the-data-in-train-and-test-sets">Splitting the data in train and test sets</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#passing-additional-arguments-to-the-splitter">Passing additional arguments to the splitter</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#passing-additional-arguments-to-the-scorer">Passing additional arguments to the scorer</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#avoiding-computing-predictions-multiple-times">Avoiding computing predictions multiple times</a></li>
 </ul>
 
   </nav></div>

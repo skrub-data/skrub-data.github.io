@@ -649,6 +649,16 @@ TableVectorizer has been removed. <a class="reference external" href="https://gi
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2048">#2048</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 <li><p>The minimum required version of matplotlib has been increased from 3.4.3 to 3.6.1.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2159">#2159</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.score()</span></code> has been enhanced when the DataOp used
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a>. During scoring, predict(), predict_proba()
+etc. are cached to avoid recomputation when multiple scorers are used (or one
+scorer calls them several times). Moreover it is possible to pass
+<code class="docutils literal notranslate"><span class="pre">return_predictions=True</span></code> to also retrieve any predictions that have been
+computed during scoring, in addition to the scores. Finally, in cases where we
+already have the predictions but want the result of score() without
+recomputing them, it is possible to provide them in the environment passed to
+<code class="docutils literal notranslate"><span class="pre">score({...,</span> <span class="pre">&quot;_skrub_predictions&quot;:</span> <span class="pre">{&quot;predict_proba&quot;:</span> <span class="pre">...}})</span></code>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2195">#2195</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.find_fitted_estimator" title="skrub.SkrubLearner.find_fitted_estimator"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.find_fitted_estimator()</span></code></a> now supports searching for the
 apply node by ID or callable predicate as alternatives to the node name.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2194">#2194</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
