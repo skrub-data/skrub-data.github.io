@@ -36,5 +36,6 @@ See :ref:`encoding <user_guide_encoders_index>` for further details.
   SimilarityEncoder
   ToCategorical
   DatetimeEncoder
+  SessionEncoder
   ToDatetime
   ToFloat

@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/auto_examples/index.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Hands-On with Column Selection and Transformers Deduplicating misspelled categories SquashingScaler: Robust numerical preprocessing for neural networks Encoding features: Encoding: from a dataframe..." />
+<meta property="og:description" content="Hands-On with Column Selection and Transformers Deduplicating misspelled categories SquashingScaler: Robust numerical preprocessing for neural networks Sessions in time-based data: Predicting user ..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Hands-On with Column Selection and Transformers Deduplicating misspelled categories SquashingScaler: Robust numerical preprocessing for neural networks Encoding features: Encoding: from a dataframe..." />
+<meta name="description" content="Hands-On with Column Selection and Transformers Deduplicating misspelled categories SquashingScaler: Robust numerical preprocessing for neural networks Sessions in time-based data: Predicting user ..." />
 
     <title>Examples &#8212; skrub</title>
   
@@ -79,7 +79,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Hands-On with Column Selection and Transformers" href="0010_apply_to_cols.html" />
-    <link rel="prev" title="toy_orders" href="../reference/generated/skrub.datasets.toy_orders.html" />
+    <link rel="prev" title="make_retail_events" href="../reference/generated/skrub.datasets.make_retail_events.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.10.dev0" />
@@ -551,6 +551,7 @@
 <li class="toctree-l1"><a class="reference internal" href="0010_apply_to_cols.html">Hands-On with Column Selection and Transformers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0050_deduplication.html">Deduplicating misspelled categories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0100_squashing_scaler.html">SquashingScaler: Robust numerical preprocessing for neural networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0110_session_encoder.html">Sessions in time-based data: Predicting user purchases with the SessionEncoder</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="01_encoding/index.html">Encoding features</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -650,6 +651,9 @@
 </div><div class="sphx-glr-thumbcontainer" tooltip="The following example illustrates the use of the SquashingScaler, a transformer that can rescale and squash numerical features to a range that works well with neural networks and perhaps also other related models. Its basic idea is to rescale the features based on quantile statistics (to be robust to outliers), and then perform a smooth squashing function to limit the outputs to a pre-defined range. This transform has been found to even work well when applied to one-hot encoded features."><img alt="" src="../_images/sphx_glr_0100_squashing_scaler_thumb.png" />
 <p><a class="reference internal" href="0100_squashing_scaler.html"><span class="doc">SquashingScaler: Robust numerical preprocessing for neural networks</span></a></p>
   <div class="sphx-glr-thumbnail-title">SquashingScaler: Robust numerical preprocessing for neural networks</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to use |SessionEncoder| in a scikit-learn pipeline to create session-level features (sessionization) for conversion prediction, that is predicting whether a user session will eventually lead to a purchase."><img alt="" src="../_images/sphx_glr_0110_session_encoder_thumb.svg" />
+<p><a class="reference internal" href="0110_session_encoder.html"><span class="doc">Sessions in time-based data: Predicting user purchases with the SessionEncoder</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Sessions in time-based data: Predicting user purchases with the SessionEncoder</div>
 </div></div><div class="toctree-wrapper compound">
 </div>
 </section>
@@ -716,12 +720,12 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../reference/generated/skrub.datasets.toy_orders.html"
+       href="../reference/generated/skrub.datasets.make_retail_events.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">toy_orders</p>
+        <p class="prev-next-title">make_retail_events</p>
       </div>
     </a>
     <a class="right-next"

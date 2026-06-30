@@ -66,6 +66,23 @@ Examples
     </div>
 
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to use |SessionEncoder| in a scikit-learn pipeline to create session-level features (sessionization) for conversion prediction, that is predicting whether a user session will eventually lead to a purchase.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_0110_session_encoder_thumb.svg
+    :alt:
+
+  :doc:`/auto_examples/0110_session_encoder`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Sessions in time-based data: Predicting user purchases with the SessionEncoder</div>
+    </div>
+
+
 .. thumbnail-parent-div-close
 
 .. raw:: html
@@ -79,6 +96,7 @@ Examples
    /auto_examples/0010_apply_to_cols
    /auto_examples/0050_deduplication
    /auto_examples/0100_squashing_scaler
+   /auto_examples/0110_session_encoder
 
 Encoding features
 =================

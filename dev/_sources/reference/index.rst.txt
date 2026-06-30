@@ -100,6 +100,9 @@ Encoding a column
   DatetimeEncoder
 
 
+  SessionEncoder
+
+
   ToDatetime
 
 
@@ -654,6 +657,15 @@ Datasets
 
 
   datasets.toy_orders
+
+
+  datasets.toy_products
+
+
+  datasets.toy_cities
+
+
+  datasets.make_retail_events
 
 
 

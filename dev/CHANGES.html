@@ -614,6 +614,19 @@ provides an alternative for referring to a node, in the environment passed to
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.eval.html#skrub.DataOp.skb.eval" title="skrub.DataOp.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.eval()</span></code></a>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.predict()</span></code>, etc., or in
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.find.html#skrub.DataOp.skb.find" title="skrub.DataOp.skb.find"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.find()</span></code></a> or <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.truncated_after" title="skrub.SkrubLearner.truncated_after"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.truncated_after()</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2062">#2062</a> by
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p>The <a class="reference internal" href="reference/generated/skrub.SessionEncoder.html#skrub.SessionEncoder" title="skrub.SessionEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionEncoder</span></code></a> is now available. This encoder adds a <code class="docutils literal notranslate"><span class="pre">session_id</span></code>
+column, which groups together events that occur within the given session gap.
+Additionally, it is possible to provide a <code class="docutils literal notranslate"><span class="pre">split_by</span></code> column or list of columns
+(e.g., user ID or (user ID, user device)) to compute sessions for each grouping
+value.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1930">#1930</a> by  <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p>A new synthetic dataset generator for timestamped data and session-based</p></li>
+</ul>
+<blockquote>
+<div><p>operations has been added: <a class="reference internal" href="reference/generated/skrub.datasets.make_retail_events.html#skrub.datasets.make_retail_events" title="skrub.datasets.make_retail_events"><code class="xref py py-meth docutils literal notranslate"><span class="pre">make_retail_events()</span></code></a>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1930">#1930</a> by  <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p>
+</div></blockquote>
+<ul class="simple">
 <li><p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">DropSimilar</span></code> transformer has been added, for removing columns in a
 dataframe that present high correlation with other columns. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2023">#2023</a> by
 <a class="reference external" href="https://github.com/emassoulie">Eloi Massoulié</a>.</p></li>
@@ -718,7 +731,7 @@ by <a class="reference external" href="https://github.com/jeromedockes">Jérôme
 <li><p><a class="reference internal" href="reference/generated/skrub.selectors.has_dtype.html#skrub.selectors.has_dtype" title="skrub.selectors.has_dtype"><code class="xref py py-func docutils literal notranslate"><span class="pre">selectors.has_dtype()</span></code></a> has been added, allowing users to select columns
 by passing the dtype objects they want to match. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2027">#2027</a> by
 <a class="reference external" href="https://github.com/kudos07">kudos07</a>.</p></li>
-<li><p>A new dataframe generator, <code class="xref py py-func docutils literal notranslate"><span class="pre">datasets.toy_cities()</span></code>, has been added for
+<li><p>A new dataframe generator, <a class="reference internal" href="reference/generated/skrub.datasets.toy_cities.html#skrub.datasets.toy_cities" title="skrub.datasets.toy_cities"><code class="xref py py-func docutils literal notranslate"><span class="pre">datasets.toy_cities()</span></code></a>, has been added for
 use cases on dataframes with variable sizes and variable correlation between
 columns. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2042">#2042</a> by <a class="reference external" href="https://github.com/emassoulie">Eloi Massoulié</a>.</p></li>
 <li><p>A new selector function, <code class="xref py py-func docutils literal notranslate"><span class="pre">selectors.drop()</span></code>, has been added to drop columns
