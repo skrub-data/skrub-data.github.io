@@ -33,18 +33,18 @@ examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example shows data how we can use skrub&#x27;s user_guide_data_ops_index for building a machine learning pipeline.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we give a bird&#x27;s eye view of the DataOps workflow on a simple regression task that we saw in an early example &lt;example_encodings&gt;: predicting the salaries of US Government employees.">
 
 .. only:: html
 
-  .. image:: /auto_tutorials/images/thumb/sphx_glr_1110_data_ops_intro_thumb.svg
+  .. image:: /auto_tutorials/images/thumb/sphx_glr_1111_data_ops_quick_tour_thumb.svg
     :alt:
 
-  :doc:`/auto_tutorials/1110_data_ops_intro`
+  :doc:`/auto_tutorials/1111_data_ops_quick_tour`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Tutorial: Using Data Ops to build a machine-learning pipeline</div>
+      <div class="sphx-glr-thumbnail-title">Quick overview of DataOps</div>
     </div>
 
 
@@ -59,7 +59,7 @@ examples
    :hidden:
 
    /auto_tutorials/0000_getting_started
-   /auto_tutorials/1110_data_ops_intro
+   /auto_tutorials/1111_data_ops_quick_tour
 
 
 
