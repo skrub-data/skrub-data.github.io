@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="How to export and share the TableReport" />
+<meta property="og:title" content="How to export and share the TableReport for use by other tools" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/guides/table_report/02_exporting.html" />
 <meta property="og:site_name" content="skrub" />
@@ -16,7 +16,7 @@
 <meta property="og:image:alt" content="skrub" />
 <meta name="description" content="The TableReport is generated as a standalone HTML file that includes the report data, the plots, and the Javascript necessary to provide interactivity. If it is generated inside a notebook (Jupyter..." />
 
-    <title>How to export and share the TableReport &#8212; skrub</title>
+    <title>How to export and share the TableReport for use by other tools &#8212; skrub</title>
   
   
   
@@ -549,7 +549,7 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_alter_appearance.html">How to tweak the Appearance of the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">How to export and share the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">How to export and share the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code> for use by other tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_finding_correlated_columns.html">How to find correlated columns in a dataframe</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_custom_filters.html">How to define custom filters for the TableReport</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utilities/customizing_configuration.html">How to configure and customize the default behavior of skrub</a></li>
@@ -598,7 +598,7 @@
     
     <li class="breadcrumb-item"><a href="../../howto.html" class="nav-link">How-tos</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">How to export and share the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">How to export and share the <code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code> for use by other tools</span></li>
   </ul>
 </nav>
 </div>
@@ -615,8 +615,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="how-to-export-and-share-the-tablereport">
-<span id="user-guide-table-report-sharing"></span><h1>How to export and share the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a><a class="headerlink" href="#how-to-export-and-share-the-tablereport" title="Link to this heading">#</a></h1>
+  <section id="how-to-export-and-share-the-tablereport-for-use-by-other-tools">
+<span id="user-guide-table-report-sharing"></span><h1>How to export and share the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> for use by other tools<a class="headerlink" href="#how-to-export-and-share-the-tablereport-for-use-by-other-tools" title="Link to this heading">#</a></h1>
 <p>The <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> is generated as a standalone HTML file that includes the report
 data, the plots, and the Javascript necessary to provide interactivity.</p>
 <p>If it is generated inside a notebook (Jupyter or Marimo), the <a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> is
@@ -638,7 +638,8 @@ with <a class="reference internal" href="../../reference/generated/skrub.TableRe
 respectively.</p>
 <p>The report can be exported in JSON format, which allows structured
 access to the data and statistics used to build the report with
-<a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport.json" title="skrub.TableReport.json"><code class="xref py py-func docutils literal notranslate"><span class="pre">json()</span></code></a>.</p>
+<a class="reference internal" href="../../reference/generated/skrub.TableReport.html#skrub.TableReport.json" title="skrub.TableReport.json"><code class="xref py py-func docutils literal notranslate"><span class="pre">json()</span></code></a>. The schema of the JSON data is reported in
+<a class="reference internal" href="../../reference/table_report_json_schema.html#table-report-json-schema"><span class="std std-ref">TableReport JSON schema</span></a>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tr</span> <span class="o">=</span> <span class="n">TableReport</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="n">json_data</span> <span class="o">=</span> <span class="n">tr</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 </pre></div>
