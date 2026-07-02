@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/auto_examples/index.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Hands-On with Column Selection and Transformers Deduplicating misspelled categories SquashingScaler: Robust numerical preprocessing for neural networks Sessions in time-based data: Predicting user ..." />
+<meta property="og:description" content="Hands-On with Column Selection and Transformers SquashingScaler: Robust numerical preprocessing for neural networks Sessions in time-based data: Predicting user purchases with the SessionEncoder En..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Hands-On with Column Selection and Transformers Deduplicating misspelled categories SquashingScaler: Robust numerical preprocessing for neural networks Sessions in time-based data: Predicting user ..." />
+<meta name="description" content="Hands-On with Column Selection and Transformers SquashingScaler: Robust numerical preprocessing for neural networks Sessions in time-based data: Predicting user purchases with the SessionEncoder En..." />
 
     <title>Examples &#8212; skrub</title>
   
@@ -549,7 +549,6 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="0010_apply_to_cols.html">Hands-On with Column Selection and Transformers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0050_deduplication.html">Deduplicating misspelled categories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0100_squashing_scaler.html">SquashingScaler: Robust numerical preprocessing for neural networks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="0110_session_encoder.html">Sessions in time-based data: Predicting user purchases with the SessionEncoder</a></li>
 </ul>
@@ -578,6 +577,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="03_joining/index.html">Joining tables with imperfect data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="03_joining/0040_fuzzy_joining.html">Fuzzy joining dirty tables with the Joiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_joining/0050_deduplication.html">Deduplicating misspelled categories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_joining/0060_multiple_key_join.html">Spatial join for flight data: Joining across multiple columns</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_joining/0070_join_aggregation.html">AggJoiner on a credit fraud dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_joining/0080_interpolation_join.html">Interpolation join: infer missing rows when joining two tables</a></li>
@@ -642,12 +642,9 @@
                   
   <section id="examples">
 <h1>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h1>
-<div id='sg-tag-list' class='sphx-glr-tag-list'></div><div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="In previous examples, we saw how skrub provides powerful abstractions like TableVectorizer and tabular_pipeline to create pipelines."><img alt="" src="../_images/sphx_glr_0010_apply_to_cols_thumb.svg" />
+<div id='sg-tag-list' class='sphx-glr-tag-list'></div><div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip=" .. |ApplyToCols| replace:: ApplyToCols .. |StringEncoder| replace:: StringEncoder .. |SelectCols| replace:: SelectCols .. |DropCols| replace:: DropCols .. |TableVectorizer| replace:: TableVectorizer .. |OrdinalEncoder| replace:: OrdinalEncoder .. |PCA| replace:: PCA .. |Pipeline| replace:: Pipeline .. |ColumnTransformer| replace:: ColumnTransformer"><img alt="" src="../_images/sphx_glr_0010_apply_to_cols_thumb.svg" />
 <p><a class="reference internal" href="0010_apply_to_cols.html"><span class="doc">Hands-On with Column Selection and Transformers</span></a></p>
   <div class="sphx-glr-thumbnail-title">Hands-On with Column Selection and Transformers</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation."><img alt="" src="../_images/sphx_glr_0050_deduplication_thumb.png" />
-<p><a class="reference internal" href="0050_deduplication.html"><span class="doc">Deduplicating misspelled categories</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="The following example illustrates the use of the SquashingScaler, a transformer that can rescale and squash numerical features to a range that works well with neural networks and perhaps also other related models. Its basic idea is to rescale the features based on quantile statistics (to be robust to outliers), and then perform a smooth squashing function to limit the outputs to a pre-defined range. This transform has been found to even work well when applied to one-hot encoded features."><img alt="" src="../_images/sphx_glr_0100_squashing_scaler_thumb.png" />
 <p><a class="reference internal" href="0100_squashing_scaler.html"><span class="doc">SquashingScaler: Robust numerical preprocessing for neural networks</span></a></p>
   <div class="sphx-glr-thumbnail-title">SquashingScaler: Robust numerical preprocessing for neural networks</div>
@@ -695,6 +692,9 @@
 <div id='sg-tag-list' class='sphx-glr-tag-list'></div><div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Here we show how to combine data from different sources, with a vocabulary not well normalized."><img alt="" src="../_images/sphx_glr_0040_fuzzy_joining_thumb.png" />
 <p><a class="reference internal" href="03_joining/0040_fuzzy_joining.html"><span class="doc">Fuzzy joining dirty tables with the Joiner</span></a></p>
   <div class="sphx-glr-thumbnail-title">Fuzzy joining dirty tables with the Joiner</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation."><img alt="" src="../_images/sphx_glr_0050_deduplication_thumb.png" />
+<p><a class="reference internal" href="03_joining/0050_deduplication.html"><span class="doc">Deduplicating misspelled categories</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="Joining tables may be difficult if one entry on one side does not have an exact match on the other side."><img alt="" src="../_images/sphx_glr_0060_multiple_key_join_thumb.png" />
 <p><a class="reference internal" href="03_joining/0060_multiple_key_join.html"><span class="doc">Spatial join for flight data: Joining across multiple columns</span></a></p>
   <div class="sphx-glr-thumbnail-title">Spatial join for flight data: Joining across multiple columns</div>

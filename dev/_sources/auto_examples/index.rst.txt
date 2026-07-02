@@ -17,7 +17,7 @@ Examples
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="In previous examples, we saw how skrub provides powerful abstractions like TableVectorizer and tabular_pipeline to create pipelines.">
+    <div class="sphx-glr-thumbcontainer" tooltip=" .. |ApplyToCols| replace:: ApplyToCols .. |StringEncoder| replace:: StringEncoder .. |SelectCols| replace:: SelectCols .. |DropCols| replace:: DropCols .. |TableVectorizer| replace:: TableVectorizer .. |OrdinalEncoder| replace:: OrdinalEncoder .. |PCA| replace:: PCA .. |Pipeline| replace:: Pipeline .. |ColumnTransformer| replace:: ColumnTransformer">
 
 .. only:: html
 
@@ -29,23 +29,6 @@ Examples
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">Hands-On with Column Selection and Transformers</div>
-    </div>
-
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation.">
-
-.. only:: html
-
-  .. image:: /auto_examples/images/thumb/sphx_glr_0050_deduplication_thumb.png
-    :alt:
-
-  :doc:`/auto_examples/0050_deduplication`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
     </div>
 
 
@@ -94,7 +77,6 @@ Examples
    :hidden:
 
    /auto_examples/0010_apply_to_cols
-   /auto_examples/0050_deduplication
    /auto_examples/0100_squashing_scaler
    /auto_examples/0110_session_encoder
 
@@ -323,6 +305,23 @@ Joining tables with imperfect data
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">Fuzzy joining dirty tables with the Joiner</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation.">
+
+.. only:: html
+
+  .. image:: /auto_examples/03_joining/images/thumb/sphx_glr_0050_deduplication_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/03_joining/0050_deduplication`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
     </div>
 
 

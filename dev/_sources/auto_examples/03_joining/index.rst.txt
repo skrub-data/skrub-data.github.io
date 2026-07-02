@@ -36,6 +36,23 @@ Joining tables with imperfect data
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation.">
+
+.. only:: html
+
+  .. image:: /auto_examples/03_joining/images/thumb/sphx_glr_0050_deduplication_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/03_joining/0050_deduplication`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Joining tables may be difficult if one entry on one side does not have an exact match on the other side.">
 
 .. only:: html
@@ -96,6 +113,7 @@ Joining tables with imperfect data
    :hidden:
 
    /auto_examples/03_joining/0040_fuzzy_joining
+   /auto_examples/03_joining/0050_deduplication
    /auto_examples/03_joining/0060_multiple_key_join
    /auto_examples/03_joining/0070_join_aggregation
    /auto_examples/03_joining/0080_interpolation_join
