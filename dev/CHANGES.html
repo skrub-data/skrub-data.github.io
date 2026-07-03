@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: New Features: TableReport.dict() now allows exporting the report data as a Python dictionary.#2188 by m4nn2609-dot., New methods SkrubLearner.get_named_params() and SkrubLearne..." />
+<meta property="og:description" content="Ongoing development: New Features: set_config() and config_context() now accept a table_report_n_rows parameter to globally control the default number of rows displayed in TableReport.#2193 by Mann..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: New Features: TableReport.dict() now allows exporting the report data as a Python dictionary.#2188 by m4nn2609-dot., New methods SkrubLearner.get_named_params() and SkrubLearne..." />
+<meta name="description" content="Ongoing development: New Features: set_config() and config_context() now accept a table_report_n_rows parameter to globally control the default number of rows displayed in TableReport.#2193 by Mann..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -594,7 +594,12 @@
 <section id="new-features">
 <h3>New Features<a class="headerlink" href="#new-features" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport.dict" title="skrub.TableReport.dict"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TableReport.dict()</span></code></a> now allows exporting the report data as a Python dictionary. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2188">#2188</a> by <a class="reference external" href="https://github.com/m4nn2609-dot">m4nn2609-dot</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.config_context.html#skrub.config_context" title="skrub.config_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">config_context()</span></code></a> now accept a
+<code class="docutils literal notranslate"><span class="pre">table_report_n_rows</span></code> parameter to globally control the default number of
+rows displayed in <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2193">#2193</a> by <a class="reference external" href="https://github.com/m4nn2609-dot">Mann</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport.dict" title="skrub.TableReport.dict"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TableReport.dict()</span></code></a> now allows exporting the report data as a Python
+dictionary. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2188">#2188</a> by <a class="reference external" href="https://github.com/m4nn2609-dot">m4nn2609-dot</a>.</p></li>
 <li><p>New methods <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.get_named_params" title="skrub.SkrubLearner.get_named_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.get_named_params()</span></code></a> and
 <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.set_named_params" title="skrub.SkrubLearner.set_named_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.set_named_params()</span></code></a> allow getting and setting the outcomes for
 choices contained in the DataOp, keyed by choice name. It provides a more

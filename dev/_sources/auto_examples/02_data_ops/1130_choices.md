@@ -2230,8 +2230,8 @@ X
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_9d1c2c7c-wrapper" hidden>
-    <template id="report_9d1c2c7c-template">
+<div id="report_f8604ceb-wrapper" hidden>
+    <template id="report_f8604ceb-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -3656,7 +3656,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="efe8b91d"
+                id="c6826257"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -3686,7 +3686,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="e58e66c1"
+                id="543ec1fc"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -3734,7 +3734,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="1d316f6d"
+                id="1a80e75f"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3762,7 +3762,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="986f945f"
+                id="d2a9046a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3796,7 +3796,7 @@ data-spans_\_0_\_0
 
 
                 <th
-                id="82f40455"
+                id="1f81f181"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3824,7 +3824,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="2513be65"
+                id="1ff394e4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3858,7 +3858,7 @@ data-spans_\_1_\_0
 
 
                 <th
-                id="a1921f36"
+                id="853461cd"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3886,7 +3886,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="f44f0f24"
+                id="00175df9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3920,7 +3920,7 @@ data-spans_\_2_\_0
 
 
                 <th
-                id="0a6a694e"
+                id="5fcedea5"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3948,7 +3948,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="8e486021"
+                id="4f767b65"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3982,7 +3982,7 @@ data-spans_\_3_\_0
 
 
                 <th
-                id="5fc29cbb"
+                id="7540bfc8"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4010,7 +4010,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="733ebcdc"
+                id="4b224f39"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4074,7 +4074,7 @@ data-spans_\_4_\_0
 
 
                 <th
-                id="33e16021"
+                id="ff66421e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4102,7 +4102,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="acd879ee"
+                id="a20ebc35"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4136,7 +4136,7 @@ data-spans_\_5_\_0
 
 
                 <th
-                id="cdd4968f"
+                id="978fadf3"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4164,7 +4164,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="517380a0"
+                id="f4b25d77"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4198,7 +4198,7 @@ data-spans_\_6_\_0
 
 
                 <th
-                id="e96199ae"
+                id="f80616d3"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4226,7 +4226,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="93e149d4"
+                id="44dee7ab"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4260,7 +4260,7 @@ data-spans_\_7_\_0
 
 
                 <th
-                id="1a87df39"
+                id="4d49a600"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4288,7 +4288,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="99ab855e"
+                id="1947aee9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4330,7 +4330,7 @@ data-spans_\_8_\_0
 
 
                 <th
-                id="c1296a9e"
+                id="5012d3f8"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -4358,7 +4358,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="e1769dd8"
+                id="667359ea"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -4909,7 +4909,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_9d1c2c7c">
+    <skrub-table-report class="report" id="report_f8604ceb">
     </skrub-table-report>
 
     <script type="module">
@@ -6013,7 +6013,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_9d1c2c7c-wrapper-fallback">
+<div id="report_f8604ceb-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -6024,8 +6024,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_9d1c2c7c-wrapper").removeAttribute("hidden");
- document.getElementById("report_9d1c2c7c-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_f8604ceb-wrapper").removeAttribute("hidden");
+ document.getElementById("report_f8604ceb-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -6068,8 +6068,8 @@ y
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_ac67fc18-wrapper" hidden>
-    <template id="report_ac67fc18-template">
+<div id="report_3450bf2f-wrapper" hidden>
+    <template id="report_3450bf2f-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -7494,7 +7494,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="487010c4"
+                id="ced7e4b4"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -7524,7 +7524,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="3c6d66c3"
+                id="18159628"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -7572,7 +7572,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="176c94aa"
+                id="1f464c63"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7600,7 +7600,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="d5a9da3f"
+                id="894b37b6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7634,7 +7634,7 @@ data-spans_\_0_\_0
 
 
                 <th
-                id="2cbbd211"
+                id="cacacddf"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7662,7 +7662,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="97607018"
+                id="42b3fbbb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7696,7 +7696,7 @@ data-spans_\_1_\_0
 
 
                 <th
-                id="ec78024c"
+                id="50dd6f77"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7724,7 +7724,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="d3b18c6c"
+                id="f5ece7d9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7758,7 +7758,7 @@ data-spans_\_2_\_0
 
 
                 <th
-                id="84f1f4f9"
+                id="6437f10d"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7786,7 +7786,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="7e3f496e"
+                id="1ca212f3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7820,7 +7820,7 @@ data-spans_\_3_\_0
 
 
                 <th
-                id="218c7602"
+                id="788f9f85"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7848,7 +7848,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="fcf47d1b"
+                id="554e481d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7912,7 +7912,7 @@ data-spans_\_4_\_0
 
 
                 <th
-                id="db737efa"
+                id="b88b90d3"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -7940,7 +7940,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="8140f582"
+                id="be8856a8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -7974,7 +7974,7 @@ data-spans_\_5_\_0
 
 
                 <th
-                id="73a8cf79"
+                id="2da3fe4f"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -8002,7 +8002,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="78fd99d4"
+                id="0f8b9dea"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8036,7 +8036,7 @@ data-spans_\_6_\_0
 
 
                 <th
-                id="3e69c265"
+                id="8a52be52"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -8064,7 +8064,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="ef1c2aae"
+                id="773ed5e4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8098,7 +8098,7 @@ data-spans_\_7_\_0
 
 
                 <th
-                id="1a79dc98"
+                id="0c36627e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -8126,7 +8126,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="1a9df36f"
+                id="c7b98c59"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8160,7 +8160,7 @@ data-spans_\_8_\_0
 
 
                 <th
-                id="ddb20efe"
+                id="2ef8a885"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -8188,7 +8188,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="eff22608"
+                id="dfd3de27"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -8731,7 +8731,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_ac67fc18">
+    <skrub-table-report class="report" id="report_3450bf2f">
     </skrub-table-report>
 
     <script type="module">
@@ -9835,7 +9835,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_ac67fc18-wrapper-fallback">
+<div id="report_3450bf2f-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -9846,8 +9846,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_ac67fc18-wrapper").removeAttribute("hidden");
- document.getElementById("report_ac67fc18-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_3450bf2f-wrapper").removeAttribute("hidden");
+ document.getElementById("report_3450bf2f-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -9923,8 +9923,8 @@ search.results_
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_4e58d6ee-wrapper" hidden>
-    <template id="report_4e58d6ee-template">
+<div id="report_4e0dfdde-wrapper" hidden>
+    <template id="report_4e0dfdde-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -11372,7 +11372,7 @@ NOTE: some columns have very strong associations and may be redundant.">
 
 
                 <th
-                id="f30c5815"
+                id="d9d86f90"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -11402,7 +11402,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="70fabd04"
+                id="9afb145a"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -11436,7 +11436,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="53557cb7"
+                id="a3523d68"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -11470,7 +11470,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="eaca70cd"
+                id="b90f978c"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -11518,7 +11518,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="a370f726"
+                id="200a931e"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11546,7 +11546,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="a016aebf"
+                id="02bcac99"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11576,7 +11576,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="dad49166"
+                id="ccf03c9b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11606,7 +11606,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="908088bd"
+                id="83b11a59"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11640,7 +11640,7 @@ data-spans_\_0_\_2
 
 
                 <th
-                id="fb5dcdf6"
+                id="e225622d"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11668,7 +11668,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="b2cd3798"
+                id="7e54cec4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11698,7 +11698,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="eebf0c82"
+                id="2e5c6c92"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11728,7 +11728,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="572bb7fe"
+                id="2d1da77b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11762,7 +11762,7 @@ data-spans_\_1_\_2
 
 
                 <th
-                id="8e6b693f"
+                id="2f711153"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11790,7 +11790,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="2fa7542b"
+                id="d87cdafd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11820,7 +11820,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="ab2248d0"
+                id="9739ec01"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11850,7 +11850,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="507241b6"
+                id="04f65484"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11884,7 +11884,7 @@ data-spans_\_2_\_2
 
 
                 <th
-                id="199bc534"
+                id="9f47d200"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -11912,7 +11912,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="93b481ea"
+                id="639b35f2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11942,7 +11942,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="3bcf7325"
+                id="64d23f7e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -11972,7 +11972,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="2249a043"
+                id="9282628f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12006,7 +12006,7 @@ data-spans_\_3_\_2
 
 
                 <th
-                id="ebd03dbf"
+                id="71f383bd"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12034,7 +12034,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="eb955c95"
+                id="b980d30b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12064,7 +12064,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="97481546"
+                id="6817d128"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12094,7 +12094,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="2e0962e3"
+                id="9f3fe40a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12128,7 +12128,7 @@ data-spans_\_4_\_2
 
 
                 <th
-                id="6fe452f1"
+                id="0e2933a8"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12156,7 +12156,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="8706b569"
+                id="41a9d57b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12186,7 +12186,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="0791781f"
+                id="815cbef3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12216,7 +12216,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="897cfa79"
+                id="5a093f0b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12250,7 +12250,7 @@ data-spans_\_5_\_2
 
 
                 <th
-                id="44547261"
+                id="6a05719b"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12278,7 +12278,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="5bc703c5"
+                id="b9e710af"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12308,7 +12308,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="bff784ed"
+                id="f073e31d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12338,7 +12338,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="00683932"
+                id="c34ff4c6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12372,7 +12372,7 @@ data-spans_\_6_\_2
 
 
                 <th
-                id="29eee0d1"
+                id="0df22626"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -12400,7 +12400,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="63d45344"
+                id="a0df5b47"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12430,7 +12430,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="98ae07ec"
+                id="47df3092"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12460,7 +12460,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="9aae0219"
+                id="f7d137ca"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -12615,7 +12615,7 @@ data-spans_\_7_\_2
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-02T16:18:25.443539</dc:date>
+    <dc:date>2026-07-03T13:45:04.266444</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -12645,7 +12645,7 @@ L 40.198864 79.2
 L 40.198864 56.342857
 L 27.107955 56.342857
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_3">
     <path d="M 40.198864 79.2
@@ -12653,7 +12653,7 @@ L 53.289773 79.2
 L 53.289773 79.2
 L 40.198864 79.2
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_4">
     <path d="M 53.289773 79.2
@@ -12661,7 +12661,7 @@ L 66.380682 79.2
 L 66.380682 79.2
 L 53.289773 79.2
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_5">
     <path d="M 66.380682 79.2
@@ -12669,7 +12669,7 @@ L 79.471591 79.2
 L 79.471591 56.342857
 L 66.380682 56.342857
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_6">
     <path d="M 79.471591 79.2
@@ -12677,7 +12677,7 @@ L 92.5625 79.2
 L 92.5625 79.2
 L 79.471591 79.2
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_7">
     <path d="M 92.5625 79.2
@@ -12685,7 +12685,7 @@ L 105.653409 79.2
 L 105.653409 33.485714
 L 92.5625 33.485714
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_8">
     <path d="M 105.653409 79.2
@@ -12693,7 +12693,7 @@ L 118.744318 79.2
 L 118.744318 79.2
 L 105.653409 79.2
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_9">
     <path d="M 118.744318 79.2
@@ -12701,7 +12701,7 @@ L 131.835227 79.2
 L 131.835227 56.342857
 L 118.744318 56.342857
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_10">
     <path d="M 131.835227 79.2
@@ -12709,7 +12709,7 @@ L 144.926136 79.2
 L 144.926136 79.2
 L 131.835227 79.2
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_11">
     <path d="M 144.926136 79.2
@@ -12717,18 +12717,18 @@ L 158.017045 79.2
 L 158.017045 10.628571
 L 144.926136 10.628571
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m9417decdce" d="M 0 0
+       <path id="m44885770d9" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m9417decdce" x="27.107955" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m44885770d9" x="27.107955" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -12738,7 +12738,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m9417decdce" x="92.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m44885770d9" x="92.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -12748,7 +12748,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m9417decdce" x="158.017045" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m44885770d9" x="158.017045" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -12760,12 +12760,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m2e65768a6c" d="M 0 0
+       <path id="m9baeb778d0" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m2e65768a6c" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m9baeb778d0" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -12775,7 +12775,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m2e65768a6c" x="20.5625" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m9baeb778d0" x="20.5625" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -12796,7 +12796,7 @@ L 164.5625 79.2
   </g>
  </g>
  <defs>
-  <clipPath id="p1e7201a5ef">
+  <clipPath id="p488bf30a7f">
    <rect x="20.5625" y="7.2" width="144" height="72"/>
   </clipPath>
  </defs>
@@ -12893,7 +12893,7 @@ L 164.5625 79.2
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-02T16:18:25.499445</dc:date>
+    <dc:date>2026-07-03T13:45:04.316671</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -12923,7 +12923,7 @@ L 40.198863 79.570257
 L 40.198863 10.998828
 L 27.107955 10.998828
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_3">
     <path d="M 40.198863 79.570257
@@ -12931,7 +12931,7 @@ L 53.289772 79.570257
 L 53.289772 62.4274
 L 40.198863 62.4274
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_4">
     <path d="M 53.289772 79.570257
@@ -12939,7 +12939,7 @@ L 66.380683 79.570257
 L 66.380683 79.570257
 L 53.289772 79.570257
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_5">
     <path d="M 66.380683 79.570257
@@ -12947,7 +12947,7 @@ L 79.471592 79.570257
 L 79.471592 79.570257
 L 66.380683 79.570257
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_6">
     <path d="M 79.471592 79.570257
@@ -12955,7 +12955,7 @@ L 92.562501 79.570257
 L 92.562501 62.4274
 L 79.471592 62.4274
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_7">
     <path d="M 92.562501 79.570257
@@ -12963,7 +12963,7 @@ L 105.65341 79.570257
 L 105.65341 79.570257
 L 92.562501 79.570257
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_8">
     <path d="M 105.65341 79.570257
@@ -12971,7 +12971,7 @@ L 118.744319 79.570257
 L 118.744319 79.570257
 L 105.65341 79.570257
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_9">
     <path d="M 118.744319 79.570257
@@ -12979,7 +12979,7 @@ L 131.835228 79.570257
 L 131.835228 79.570257
 L 118.744319 79.570257
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_10">
     <path d="M 131.835228 79.570257
@@ -12987,7 +12987,7 @@ L 144.926137 79.570257
 L 144.926137 62.4274
 L 131.835228 62.4274
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_11">
     <path d="M 144.926137 79.570257
@@ -12995,18 +12995,18 @@ L 158.017045 79.570257
 L 158.017045 62.4274
 L 144.926137 62.4274
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="mcb843d95dd" d="M 0 0
+       <path id="m997a673fd5" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#mcb843d95dd" x="23.179624" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m997a673fd5" x="23.179624" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -13016,7 +13016,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#mcb843d95dd" x="75.034074" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m997a673fd5" x="75.034074" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -13026,7 +13026,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#mcb843d95dd" x="126.888525" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m997a673fd5" x="126.888525" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -13038,12 +13038,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="mb0d6d46f3a" d="M 0 0
+       <path id="m1d5e840f0d" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#mb0d6d46f3a" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m1d5e840f0d" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -13053,7 +13053,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#mb0d6d46f3a" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m1d5e840f0d" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -13063,7 +13063,7 @@ L -3.5 0
     <g id="ytick_3">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#mb0d6d46f3a" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m1d5e840f0d" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -13084,7 +13084,7 @@ L 164.5625 79.570257
   </g>
  </g>
  <defs>
-  <clipPath id="p0e0512c635">
+  <clipPath id="p72e897ce0a">
    <rect x="20.5625" y="7.570257" width="144" height="72"/>
   </clipPath>
  </defs>
@@ -13181,7 +13181,7 @@ L 164.5625 79.570257
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-02T16:18:25.569379</dc:date>
+    <dc:date>2026-07-03T13:45:04.369129</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -13211,7 +13211,7 @@ L 40.198883 79.570257
 L 40.198883 45.284542
 L 27.107955 45.284542
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_3">
     <path d="M 40.198883 79.570257
@@ -13219,7 +13219,7 @@ L 53.289812 79.570257
 L 53.289812 79.570257
 L 40.198883 79.570257
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_4">
     <path d="M 53.289812 79.570257
@@ -13227,7 +13227,7 @@ L 66.38074 79.570257
 L 66.38074 45.284542
 L 53.289812 45.284542
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_5">
     <path d="M 66.38074 79.570257
@@ -13235,7 +13235,7 @@ L 79.471669 79.570257
 L 79.471669 79.570257
 L 66.38074 79.570257
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_6">
     <path d="M 79.471669 79.570257
@@ -13243,7 +13243,7 @@ L 92.562598 79.570257
 L 92.562598 45.284542
 L 79.471669 45.284542
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_7">
     <path d="M 92.562598 79.570257
@@ -13251,7 +13251,7 @@ L 105.653331 79.570257
 L 105.653331 79.570257
 L 92.562598 79.570257
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_8">
     <path d="M 105.653331 79.570257
@@ -13259,7 +13259,7 @@ L 118.74426 79.570257
 L 118.74426 45.284542
 L 105.653331 45.284542
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_9">
     <path d="M 118.74426 79.570257
@@ -13267,7 +13267,7 @@ L 131.835188 79.570257
 L 131.835188 45.284542
 L 118.74426 45.284542
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_10">
     <path d="M 131.835188 79.570257
@@ -13275,7 +13275,7 @@ L 144.926117 79.570257
 L 144.926117 45.284542
 L 131.835188 45.284542
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_11">
     <path d="M 144.926117 79.570257
@@ -13283,18 +13283,18 @@ L 158.017045 79.570257
 L 158.017045 10.998828
 L 144.926117 10.998828
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m73b5e1d40a" d="M 0 0
+       <path id="md0f37ffcc7" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m73b5e1d40a" x="20.562518" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#md0f37ffcc7" x="20.562518" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -13304,7 +13304,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m73b5e1d40a" x="86.017028" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#md0f37ffcc7" x="86.017028" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -13314,7 +13314,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m73b5e1d40a" x="151.471538" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#md0f37ffcc7" x="151.471538" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -13326,12 +13326,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m2673dc2132" d="M 0 0
+       <path id="m6ce0a63786" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m2673dc2132" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m6ce0a63786" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -13341,7 +13341,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m2673dc2132" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m6ce0a63786" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -13351,7 +13351,7 @@ L -3.5 0
     <g id="ytick_3">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m2673dc2132" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m6ce0a63786" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -13372,7 +13372,7 @@ L 164.5625 79.570257
   </g>
  </g>
  <defs>
-  <clipPath id="p2107bac997">
+  <clipPath id="p7457650065">
    <rect x="20.5625" y="7.570257" width="144" height="72"/>
   </clipPath>
  </defs>
@@ -13988,7 +13988,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-02T16:18:25.443539</dc:date>
+    <dc:date>2026-07-03T13:45:04.266444</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -14018,7 +14018,7 @@ L 40.198864 79.2
 L 40.198864 56.342857
 L 27.107955 56.342857
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_3">
     <path d="M 40.198864 79.2
@@ -14026,7 +14026,7 @@ L 53.289773 79.2
 L 53.289773 79.2
 L 40.198864 79.2
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_4">
     <path d="M 53.289773 79.2
@@ -14034,7 +14034,7 @@ L 66.380682 79.2
 L 66.380682 79.2
 L 53.289773 79.2
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_5">
     <path d="M 66.380682 79.2
@@ -14042,7 +14042,7 @@ L 79.471591 79.2
 L 79.471591 56.342857
 L 66.380682 56.342857
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_6">
     <path d="M 79.471591 79.2
@@ -14050,7 +14050,7 @@ L 92.5625 79.2
 L 92.5625 79.2
 L 79.471591 79.2
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_7">
     <path d="M 92.5625 79.2
@@ -14058,7 +14058,7 @@ L 105.653409 79.2
 L 105.653409 33.485714
 L 92.5625 33.485714
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_8">
     <path d="M 105.653409 79.2
@@ -14066,7 +14066,7 @@ L 118.744318 79.2
 L 118.744318 79.2
 L 105.653409 79.2
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_9">
     <path d="M 118.744318 79.2
@@ -14074,7 +14074,7 @@ L 131.835227 79.2
 L 131.835227 56.342857
 L 118.744318 56.342857
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_10">
     <path d="M 131.835227 79.2
@@ -14082,7 +14082,7 @@ L 144.926136 79.2
 L 144.926136 79.2
 L 131.835227 79.2
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_11">
     <path d="M 144.926136 79.2
@@ -14090,18 +14090,18 @@ L 158.017045 79.2
 L 158.017045 10.628571
 L 144.926136 10.628571
 z
-" clip-path="url(#p1e7201a5ef)" style="fill: #1f77b4"/>
+" clip-path="url(#p488bf30a7f)" style="fill: #1f77b4"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m9417decdce" d="M 0 0
+       <path id="m44885770d9" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m9417decdce" x="27.107955" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m44885770d9" x="27.107955" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -14111,7 +14111,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m9417decdce" x="92.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m44885770d9" x="92.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -14121,7 +14121,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m9417decdce" x="158.017045" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m44885770d9" x="158.017045" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -14133,12 +14133,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m2e65768a6c" d="M 0 0
+       <path id="m9baeb778d0" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m2e65768a6c" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m9baeb778d0" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -14148,7 +14148,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m2e65768a6c" x="20.5625" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m9baeb778d0" x="20.5625" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -14169,7 +14169,7 @@ L 164.5625 79.2
   </g>
  </g>
  <defs>
-  <clipPath id="p1e7201a5ef">
+  <clipPath id="p488bf30a7f">
    <rect x="20.5625" y="7.2" width="144" height="72"/>
   </clipPath>
  </defs>
@@ -14262,7 +14262,7 @@ L 164.5625 79.2
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-02T16:18:25.499445</dc:date>
+    <dc:date>2026-07-03T13:45:04.316671</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -14292,7 +14292,7 @@ L 40.198863 79.570257
 L 40.198863 10.998828
 L 27.107955 10.998828
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_3">
     <path d="M 40.198863 79.570257
@@ -14300,7 +14300,7 @@ L 53.289772 79.570257
 L 53.289772 62.4274
 L 40.198863 62.4274
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_4">
     <path d="M 53.289772 79.570257
@@ -14308,7 +14308,7 @@ L 66.380683 79.570257
 L 66.380683 79.570257
 L 53.289772 79.570257
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_5">
     <path d="M 66.380683 79.570257
@@ -14316,7 +14316,7 @@ L 79.471592 79.570257
 L 79.471592 79.570257
 L 66.380683 79.570257
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_6">
     <path d="M 79.471592 79.570257
@@ -14324,7 +14324,7 @@ L 92.562501 79.570257
 L 92.562501 62.4274
 L 79.471592 62.4274
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_7">
     <path d="M 92.562501 79.570257
@@ -14332,7 +14332,7 @@ L 105.65341 79.570257
 L 105.65341 79.570257
 L 92.562501 79.570257
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_8">
     <path d="M 105.65341 79.570257
@@ -14340,7 +14340,7 @@ L 118.744319 79.570257
 L 118.744319 79.570257
 L 105.65341 79.570257
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_9">
     <path d="M 118.744319 79.570257
@@ -14348,7 +14348,7 @@ L 131.835228 79.570257
 L 131.835228 79.570257
 L 118.744319 79.570257
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_10">
     <path d="M 131.835228 79.570257
@@ -14356,7 +14356,7 @@ L 144.926137 79.570257
 L 144.926137 62.4274
 L 131.835228 62.4274
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_11">
     <path d="M 144.926137 79.570257
@@ -14364,18 +14364,18 @@ L 158.017045 79.570257
 L 158.017045 62.4274
 L 144.926137 62.4274
 z
-" clip-path="url(#p0e0512c635)" style="fill: #1f77b4"/>
+" clip-path="url(#p72e897ce0a)" style="fill: #1f77b4"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="mcb843d95dd" d="M 0 0
+       <path id="m997a673fd5" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#mcb843d95dd" x="23.179624" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m997a673fd5" x="23.179624" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -14385,7 +14385,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#mcb843d95dd" x="75.034074" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m997a673fd5" x="75.034074" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -14395,7 +14395,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#mcb843d95dd" x="126.888525" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m997a673fd5" x="126.888525" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -14407,12 +14407,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="mb0d6d46f3a" d="M 0 0
+       <path id="m1d5e840f0d" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#mb0d6d46f3a" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m1d5e840f0d" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -14422,7 +14422,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#mb0d6d46f3a" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m1d5e840f0d" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -14432,7 +14432,7 @@ L -3.5 0
     <g id="ytick_3">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#mb0d6d46f3a" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m1d5e840f0d" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -14453,7 +14453,7 @@ L 164.5625 79.570257
   </g>
  </g>
  <defs>
-  <clipPath id="p0e0512c635">
+  <clipPath id="p72e897ce0a">
    <rect x="20.5625" y="7.570257" width="144" height="72"/>
   </clipPath>
  </defs>
@@ -14546,7 +14546,7 @@ L 164.5625 79.570257
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-02T16:18:25.569379</dc:date>
+    <dc:date>2026-07-03T13:45:04.369129</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -14576,7 +14576,7 @@ L 40.198883 79.570257
 L 40.198883 45.284542
 L 27.107955 45.284542
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_3">
     <path d="M 40.198883 79.570257
@@ -14584,7 +14584,7 @@ L 53.289812 79.570257
 L 53.289812 79.570257
 L 40.198883 79.570257
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_4">
     <path d="M 53.289812 79.570257
@@ -14592,7 +14592,7 @@ L 66.38074 79.570257
 L 66.38074 45.284542
 L 53.289812 45.284542
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_5">
     <path d="M 66.38074 79.570257
@@ -14600,7 +14600,7 @@ L 79.471669 79.570257
 L 79.471669 79.570257
 L 66.38074 79.570257
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_6">
     <path d="M 79.471669 79.570257
@@ -14608,7 +14608,7 @@ L 92.562598 79.570257
 L 92.562598 45.284542
 L 79.471669 45.284542
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_7">
     <path d="M 92.562598 79.570257
@@ -14616,7 +14616,7 @@ L 105.653331 79.570257
 L 105.653331 79.570257
 L 92.562598 79.570257
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_8">
     <path d="M 105.653331 79.570257
@@ -14624,7 +14624,7 @@ L 118.74426 79.570257
 L 118.74426 45.284542
 L 105.653331 45.284542
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_9">
     <path d="M 118.74426 79.570257
@@ -14632,7 +14632,7 @@ L 131.835188 79.570257
 L 131.835188 45.284542
 L 118.74426 45.284542
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_10">
     <path d="M 131.835188 79.570257
@@ -14640,7 +14640,7 @@ L 144.926117 79.570257
 L 144.926117 45.284542
 L 131.835188 45.284542
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_11">
     <path d="M 144.926117 79.570257
@@ -14648,18 +14648,18 @@ L 158.017045 79.570257
 L 158.017045 10.998828
 L 144.926117 10.998828
 z
-" clip-path="url(#p2107bac997)" style="fill: #1f77b4"/>
+" clip-path="url(#p7457650065)" style="fill: #1f77b4"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m73b5e1d40a" d="M 0 0
+       <path id="md0f37ffcc7" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m73b5e1d40a" x="20.562518" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#md0f37ffcc7" x="20.562518" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -14669,7 +14669,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m73b5e1d40a" x="86.017028" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#md0f37ffcc7" x="86.017028" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -14679,7 +14679,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m73b5e1d40a" x="151.471538" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#md0f37ffcc7" x="151.471538" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -14691,12 +14691,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m2673dc2132" d="M 0 0
+       <path id="m6ce0a63786" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m2673dc2132" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m6ce0a63786" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -14706,7 +14706,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m2673dc2132" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m6ce0a63786" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -14716,7 +14716,7 @@ L -3.5 0
     <g id="ytick_3">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m2673dc2132" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m6ce0a63786" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -14737,7 +14737,7 @@ L 164.5625 79.570257
   </g>
  </g>
  <defs>
-  <clipPath id="p2107bac997">
+  <clipPath id="p7457650065">
    <rect x="20.5625" y="7.570257" width="144" height="72"/>
   </clipPath>
  </defs>
@@ -14843,7 +14843,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_4e58d6ee">
+    <skrub-table-report class="report" id="report_4e0dfdde">
     </skrub-table-report>
 
     <script type="module">
@@ -15947,7 +15947,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_4e58d6ee-wrapper-fallback">
+<div id="report_4e0dfdde-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -15958,8 +15958,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_4e58d6ee-wrapper").removeAttribute("hidden");
- document.getElementById("report_4e58d6ee-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_4e0dfdde-wrapper").removeAttribute("hidden");
+ document.getElementById("report_4e0dfdde-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -15989,7 +15989,7 @@ search.plot_results()
 
 <div class="output_subarea output_html rendered_html output_result">
 <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="eeddfb07-ee4d-445b-bb1c-b7d12d31714a" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("eeddfb07-ee4d-445b-bb1c-b7d12d31714a")) {                    Plotly.newPlot(                        "eeddfb07-ee4d-445b-bb1c-b7d12d31714a",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"PNEOBD0MIEAAAAAAAAAuQBuASB+y8y1AAAAAAAAAFEAHYzG6RhckQAAAAAAAAC5AYUjrm9IVJEBIJZL1XhQoQA=="}},{"label":"lr","ticktext":["0.02","0.02","0.03","0.05","0.07","0.11","0.16","0.24","0.35","0.52"],"tickvals":[-4.189664084302747,-3.796791280939163,-3.403918477575579,-3.0110456742119958,-2.6181728708484115,-2.2253000674848282,-1.8324272641212445,-1.4395544607576607,-1.046681657394077,-0.6538088540304932],"values":{"dtype":"f8","bdata":"xoJdMePfCcC4rbyLAOzkv6DnzNlpwwbAbjk9TTfCEMCfrW2QLAMCwBsFZlxVqQbA068tDcOz6b\\u002fkIToLNM31vw=="}},{"label":"score time","ticktext":["0.082","0.089","0.096","0.102","0.109","0.115","0.122","0.129","0.135","0.142"],"tickvals":[0.08231086730957031,0.08892271783616808,0.09553456836276585,0.1021464188893636,0.10875826941596137,0.11537011994255914,0.1219819704691569,0.12859382099575467,0.13520567152235244,0.1418175220489502],"values":{"dtype":"f8","bdata":"p+BqgsHdvT9X5bVsK8a9P5qZmZkTJ8I\\u002fMzMzM1MStT\\u002fXxTAVAfy+Py5qqrjWS8A\\u002fllfHA9Epuj9V1givBffAPw=="}},{"label":"fit time","ticktext":["0.65","0.67","0.69","0.71","0.74","0.76","0.78","0.80","0.82","0.84"],"tickvals":[0.6539076328277588,0.6742258442772759,0.6945440557267931,0.7148622671763102,0.7351804786258274,0.7554986900753445,0.7758169015248617,0.7961351129743788,0.816453324423896,0.8367715358734131],"values":{"dtype":"f8","bdata":"zYMSByN+5T+5PTUrSYPoP5qZmRnVxuo\\u002fLTXkH8fE5T\\u002fLlRA\\u002fvSbpP+hXWtSeXuo\\u002fLMhmVUKp5z8zMzOzz+zkPw=="}},{"label":"score","ticktext":["0.542","0.546","0.551","0.555","0.560","0.564","0.569","0.573","0.578","0.582"],"tickvals":[0.542,0.5464444444444445,0.550888888888889,0.5553333333333333,0.5597777777777778,0.5642222222222223,0.5686666666666668,0.5731111111111111,0.5775555555555556,0.5820000000000001],"values":{"dtype":"f8","bdata":"OrTIdr6f4j+6SQwCK4fiP2ZmZmZmZuI\\u002f6Pup8dJN4j+TGARWDi3iP5ZDi2zn++E\\u002fmpmZmZmZ4T\\u002fy0k1iEFjhPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"OrTIdr6f4j+6SQwCK4fiP2ZmZmZmZuI\\u002f6Pup8dJN4j+TGARWDi3iP5ZDi2zn++E\\u002fmpmZmZmZ4T\\u002fy0k1iEFjhPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="3d957cee-a7c2-4fdd-92a7-2cf645a65493" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("3d957cee-a7c2-4fdd-92a7-2cf645a65493")) {                    Plotly.newPlot(                        "3d957cee-a7c2-4fdd-92a7-2cf645a65493",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"giF7UxfPH0AAAAAAAAAuQLXNPIld6C1AAAAAAAAAFEBJOwdu\\u002fBgkQAAAAAAAAC5AgN1p+7cXJEC9ErnebxMoQA=="}},{"label":"lr","ticktext":["0.02","0.02","0.03","0.05","0.07","0.11","0.16","0.24","0.35","0.52"],"tickvals":[-4.189664084302747,-3.796791280939163,-3.403918477575579,-3.0110456742119958,-2.6181728708484115,-2.2253000674848282,-1.8324272641212445,-1.4395544607576607,-1.046681657394077,-0.6538088540304932],"values":{"dtype":"f8","bdata":"07Lt6YIDCsC4rbyLAOzkvwlTIEOa+wbAbjk9TTfCEMDMt\\u002fsinAQCwCk5jNNwdgbA24BGzjXr6b\\u002fpXxosJKT1vw=="}},{"label":"score time","ticktext":["0.076","0.084","0.091","0.098","0.106","0.113","0.120","0.127","0.135","0.142"],"tickvals":[0.07647991180419922,0.08374004893832737,0.09100018607245551,0.09826032320658366,0.1055204603407118,0.11278059747483996,0.12004073460896811,0.12730087174309623,0.1345610088772244,0.14182114601135254],"values":{"dtype":"f8","bdata":"bt3YAdL3tz+RwKrsJ+W+P0taQnvB4b4\\u002fAAAAADCUsz92TnzR\\u002fhq7PwAAAAAyJ8I\\u002f2HFUGMbJuj862rLcy4rBPw=="}},{"label":"fit time","ticktext":["0.56","0.59","0.62","0.65","0.68","0.72","0.75","0.78","0.81","0.84"],"tickvals":[0.5622042655944824,0.5927863968743219,0.6233685281541612,0.6539506594340007,0.6845327907138401,0.7151149219936794,0.7456970532735189,0.7762791845533583,0.8068613158331976,0.8374434471130371],"values":{"dtype":"f8","bdata":"e4GXQBsr5D9qsNEoI4XpPw7a97HbR+k\\u002fzczMzJP94T93zxuNMubnPzMzMzNWzOo\\u002fxUQmDuIf6D+LcjxoeFLkPw=="}},{"label":"score","ticktext":["0.542","0.546","0.551","0.555","0.560","0.564","0.569","0.573","0.578","0.582"],"tickvals":[0.542,0.5464444444444445,0.550888888888889,0.5553333333333333,0.5597777777777778,0.5642222222222223,0.5686666666666668,0.5731111111111111,0.5775555555555556,0.5820000000000001],"values":{"dtype":"f8","bdata":"OrTIdr6f4j+6SQwCK4fiP2ZmZmZmZuI\\u002f6Pup8dJN4j+TGARWDi3iP5ZDi2zn++E\\u002fmpmZmZmZ4T\\u002fy0k1iEFjhPw=="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"OrTIdr6f4j+6SQwCK4fiP2ZmZmZmZuI\\u002f6Pup8dJN4j+TGARWDi3iP5ZDi2zn++E\\u002fmpmZmZmZ4T\\u002fy0k1iEFjhPw=="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br />
@@ -16218,8 +16218,8 @@ X.assign(
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_a6696067-wrapper" hidden>
-    <template id="report_a6696067-template">
+<div id="report_1b117395-wrapper" hidden>
+    <template id="report_1b117395-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -17644,7 +17644,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="81350b9d"
+                id="5af548dc"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -17674,7 +17674,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="061ca341"
+                id="eb0dba45"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -17708,7 +17708,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="ad9ffcc4"
+                id="525c222f"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -17756,7 +17756,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="442391df"
+                id="5c059048"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -17784,7 +17784,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="f6f2c428"
+                id="d99533a9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17814,7 +17814,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="91958453"
+                id="c6d7e112"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17848,7 +17848,7 @@ data-spans_\_0_\_1
 
 
                 <th
-                id="d5748de9"
+                id="68d09b46"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -17876,7 +17876,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="650c18e9"
+                id="f5c4702f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17906,7 +17906,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="c1c86e76"
+                id="7ccac321"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17940,7 +17940,7 @@ data-spans_\_1_\_1
 
 
                 <th
-                id="6193d5ed"
+                id="a08dc0a3"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -17968,7 +17968,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="36e036f3"
+                id="db193a4e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17998,7 +17998,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="60c7a32e"
+                id="b80d56c5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18032,7 +18032,7 @@ data-spans_\_2_\_1
 
 
                 <th
-                id="290319d7"
+                id="c896d0aa"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -18060,7 +18060,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="454bb1de"
+                id="e45e760d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18090,7 +18090,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="bd0ab17e"
+                id="02966038"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18124,7 +18124,7 @@ data-spans_\_3_\_1
 
 
                 <th
-                id="b2159ae9"
+                id="1d8f3ff4"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -18152,7 +18152,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="42d8d9ac"
+                id="f7782030"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18182,7 +18182,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="ae6b2a61"
+                id="cf3b5361"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18256,7 +18256,7 @@ data-spans_\_4_\_1
 
 
                 <th
-                id="75a6a017"
+                id="1142f753"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -18284,7 +18284,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="cffbe565"
+                id="09b10281"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18314,7 +18314,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="a9a6359a"
+                id="84198e19"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18348,7 +18348,7 @@ data-spans_\_5_\_1
 
 
                 <th
-                id="58892b21"
+                id="f7af56dd"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -18376,7 +18376,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="84836da3"
+                id="3e4128f5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18406,7 +18406,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="11537987"
+                id="dcab60b4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18440,7 +18440,7 @@ data-spans_\_6_\_1
 
 
                 <th
-                id="af709833"
+                id="d14133b4"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -18468,7 +18468,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="4846665f"
+                id="c1ae3948"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18498,7 +18498,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="2e040913"
+                id="07cfd391"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18532,7 +18532,7 @@ data-spans_\_7_\_1
 
 
                 <th
-                id="2dc74ab5"
+                id="af549a4c"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -18560,7 +18560,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="60bb4836"
+                id="c0a1c8ca"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18598,7 +18598,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="27e78b61"
+                id="95abda6a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18632,7 +18632,7 @@ data-spans_\_8_\_1
 
 
                 <th
-                id="30083414"
+                id="1f51d791"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -18660,7 +18660,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="d670d04b"
+                id="dc82796f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -18690,7 +18690,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="a15ac223"
+                id="cdff5df0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -19363,7 +19363,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_a6696067">
+    <skrub-table-report class="report" id="report_1b117395">
     </skrub-table-report>
 
     <script type="module">
@@ -20467,7 +20467,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_a6696067-wrapper-fallback">
+<div id="report_1b117395-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -20478,8 +20478,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_a6696067-wrapper").removeAttribute("hidden");
- document.getElementById("report_a6696067-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_1b117395-wrapper").removeAttribute("hidden");
+ document.getElementById("report_1b117395-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -20559,8 +20559,8 @@ X.skb.apply(encoder, cols="text")
 </details>
 <strong><samp>Result:</samp></strong>
 
-<div id="report_7c1bdf20-wrapper" hidden>
-    <template id="report_7c1bdf20-template">
+<div id="report_deb53a3b-wrapper" hidden>
+    <template id="report_deb53a3b-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -21985,7 +21985,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="9dc2dd77"
+                id="80dc1aa2"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -22015,7 +22015,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="915940bd"
+                id="ab0164fc"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -22049,7 +22049,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="0216f94d"
+                id="b75d5fc9"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -22083,7 +22083,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="6c99ae82"
+                id="59c7fc01"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -22117,7 +22117,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="25ad3205"
+                id="aae892c1"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -22151,7 +22151,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="156fac84"
+                id="75e92f6f"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -22185,7 +22185,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="d530fadd"
+                id="59bb46ab"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -22219,7 +22219,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="dcc0ccf3"
+                id="4895d988"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -22253,7 +22253,7 @@ data-spans_\_-1_\_6
 
 
                 <th
-                id="c7cff14c"
+                id="98456fdb"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -22287,7 +22287,7 @@ data-spans_\_-1_\_7
 
 
                 <th
-                id="46bb7438"
+                id="e520b6e2"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -22321,7 +22321,7 @@ data-spans_\_-1_\_8
 
 
                 <th
-                id="31748d6d"
+                id="1be1fa5a"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -22369,7 +22369,7 @@ data-spans_\_-1_\_9
 
 
                 <th
-                id="72841e6c"
+                id="377f7a8b"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -22397,7 +22397,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="fc7cf88e"
+                id="69c1b125"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22427,7 +22427,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="a9672428"
+                id="7cc5dc11"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22457,7 +22457,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="995d220a"
+                id="fb05876c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22487,7 +22487,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="ed97bb4b"
+                id="31b04e5b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22517,7 +22517,7 @@ data-spans_\_0_\_3
 
 
                 <td
-                id="1a003b1e"
+                id="881fedb4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22547,7 +22547,7 @@ data-spans_\_0_\_4
 
 
                 <td
-                id="b5f67fd9"
+                id="ccf8ec6a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22577,7 +22577,7 @@ data-spans_\_0_\_5
 
 
                 <td
-                id="a20826ee"
+                id="0859a2a4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22607,7 +22607,7 @@ data-spans_\_0_\_6
 
 
                 <td
-                id="ae912e92"
+                id="51dee498"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22637,7 +22637,7 @@ data-spans_\_0_\_7
 
 
                 <td
-                id="e788152a"
+                id="5ba36843"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22667,7 +22667,7 @@ data-spans_\_0_\_8
 
 
                 <td
-                id="2049fca4"
+                id="1ad5c188"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22701,7 +22701,7 @@ data-spans_\_0_\_9
 
 
                 <th
-                id="846065ce"
+                id="fc0fa414"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -22729,7 +22729,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="2122f815"
+                id="44ee0158"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22759,7 +22759,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="7500b590"
+                id="a343cb97"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22789,7 +22789,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="a2241019"
+                id="8c40d003"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22819,7 +22819,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="52ba2823"
+                id="b2bb3f83"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22849,7 +22849,7 @@ data-spans_\_1_\_3
 
 
                 <td
-                id="cf8684dc"
+                id="9303684b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22879,7 +22879,7 @@ data-spans_\_1_\_4
 
 
                 <td
-                id="a1d2f77c"
+                id="c34920af"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22909,7 +22909,7 @@ data-spans_\_1_\_5
 
 
                 <td
-                id="0028bbe4"
+                id="d4467bad"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22939,7 +22939,7 @@ data-spans_\_1_\_6
 
 
                 <td
-                id="4d030a35"
+                id="3419938e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22969,7 +22969,7 @@ data-spans_\_1_\_7
 
 
                 <td
-                id="8a2f3a0d"
+                id="643f9d1a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -22999,7 +22999,7 @@ data-spans_\_1_\_8
 
 
                 <td
-                id="7d9f7629"
+                id="9c3e500d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23033,7 +23033,7 @@ data-spans_\_1_\_9
 
 
                 <th
-                id="af5e10ae"
+                id="bb319515"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -23061,7 +23061,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="10049fd5"
+                id="401ff913"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23091,7 +23091,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="c4894b57"
+                id="8b2a6d1a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23121,7 +23121,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="fefe6cfd"
+                id="16b37329"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23151,7 +23151,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="a5375438"
+                id="516b9558"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23181,7 +23181,7 @@ data-spans_\_2_\_3
 
 
                 <td
-                id="c79e9438"
+                id="2a6020ab"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23211,7 +23211,7 @@ data-spans_\_2_\_4
 
 
                 <td
-                id="35fc5b56"
+                id="721e1029"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23241,7 +23241,7 @@ data-spans_\_2_\_5
 
 
                 <td
-                id="af800f3f"
+                id="7b403719"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23271,7 +23271,7 @@ data-spans_\_2_\_6
 
 
                 <td
-                id="f8574b7d"
+                id="9931d311"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23301,7 +23301,7 @@ data-spans_\_2_\_7
 
 
                 <td
-                id="b0609727"
+                id="b2cb398b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23331,7 +23331,7 @@ data-spans_\_2_\_8
 
 
                 <td
-                id="3d9b3ab5"
+                id="97727b90"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23365,7 +23365,7 @@ data-spans_\_2_\_9
 
 
                 <th
-                id="1f4b822e"
+                id="b3cf2c4c"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -23393,7 +23393,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="0be5fde8"
+                id="4d1c81c3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23423,7 +23423,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="14b0bc4a"
+                id="b0e5236d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23453,7 +23453,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="cbcfebd9"
+                id="53a6f08b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23483,7 +23483,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="40136d82"
+                id="f2f7fee9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23513,7 +23513,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="0ef6a30a"
+                id="cce1290e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23543,7 +23543,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="a8df46f4"
+                id="e753d94e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23573,7 +23573,7 @@ data-spans_\_3_\_5
 
 
                 <td
-                id="dca32d6f"
+                id="0bd03799"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23603,7 +23603,7 @@ data-spans_\_3_\_6
 
 
                 <td
-                id="8e2bbe40"
+                id="1912344f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23633,7 +23633,7 @@ data-spans_\_3_\_7
 
 
                 <td
-                id="f33b2065"
+                id="9e80c88f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23663,7 +23663,7 @@ data-spans_\_3_\_8
 
 
                 <td
-                id="fc7468b6"
+                id="cbb36964"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23697,7 +23697,7 @@ data-spans_\_3_\_9
 
 
                 <th
-                id="cf884290"
+                id="37d67cc2"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -23725,7 +23725,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="a650d623"
+                id="5c303449"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23755,7 +23755,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="7f2784ce"
+                id="121fdab7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23785,7 +23785,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="6d9ecd40"
+                id="9e24f687"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23815,7 +23815,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="f61cd78d"
+                id="1908bda0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23845,7 +23845,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="28af2380"
+                id="cae31b1b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23875,7 +23875,7 @@ data-spans_\_4_\_4
 
 
                 <td
-                id="ca198e84"
+                id="d62cb0bd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23905,7 +23905,7 @@ data-spans_\_4_\_5
 
 
                 <td
-                id="7a1f47c4"
+                id="3d70c163"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23935,7 +23935,7 @@ data-spans_\_4_\_6
 
 
                 <td
-                id="a4ed29e6"
+                id="48449819"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23965,7 +23965,7 @@ data-spans_\_4_\_7
 
 
                 <td
-                id="197f7df1"
+                id="cfbc21dd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -23995,7 +23995,7 @@ data-spans_\_4_\_8
 
 
                 <td
-                id="11d62cb6"
+                id="6dcb8e4c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24149,7 +24149,7 @@ data-spans_\_4_\_9
 
 
                 <th
-                id="81ea4a58"
+                id="8f23abdf"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -24177,7 +24177,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="e634dc6b"
+                id="08a93318"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24207,7 +24207,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="8fb116c0"
+                id="d87d4192"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24237,7 +24237,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="4a2eafa3"
+                id="d8b62f66"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24267,7 +24267,7 @@ data-spans_\_5_\_2
 
 
                 <td
-                id="bf10d6ad"
+                id="f014722e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24297,7 +24297,7 @@ data-spans_\_5_\_3
 
 
                 <td
-                id="494cf083"
+                id="f916744f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24327,7 +24327,7 @@ data-spans_\_5_\_4
 
 
                 <td
-                id="5ae0192f"
+                id="a15a3b84"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24357,7 +24357,7 @@ data-spans_\_5_\_5
 
 
                 <td
-                id="2182b031"
+                id="c7483736"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24387,7 +24387,7 @@ data-spans_\_5_\_6
 
 
                 <td
-                id="d17042de"
+                id="a12064d1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24417,7 +24417,7 @@ data-spans_\_5_\_7
 
 
                 <td
-                id="76c6dbf1"
+                id="b39718cc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24447,7 +24447,7 @@ data-spans_\_5_\_8
 
 
                 <td
-                id="53e20436"
+                id="04b2cb69"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24481,7 +24481,7 @@ data-spans_\_5_\_9
 
 
                 <th
-                id="023ccab3"
+                id="9ac1d0c2"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -24509,7 +24509,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="908828b1"
+                id="f1b4be0d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24539,7 +24539,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="4600a442"
+                id="10415798"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24569,7 +24569,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="cffce17d"
+                id="9fba98ff"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24599,7 +24599,7 @@ data-spans_\_6_\_2
 
 
                 <td
-                id="568f2442"
+                id="8713858f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24629,7 +24629,7 @@ data-spans_\_6_\_3
 
 
                 <td
-                id="b99450ab"
+                id="814233bf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24659,7 +24659,7 @@ data-spans_\_6_\_4
 
 
                 <td
-                id="5ba68dd3"
+                id="51c827b7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24689,7 +24689,7 @@ data-spans_\_6_\_5
 
 
                 <td
-                id="993c90a1"
+                id="68e775d6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24719,7 +24719,7 @@ data-spans_\_6_\_6
 
 
                 <td
-                id="14dc5dd7"
+                id="7d6ebdc7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24749,7 +24749,7 @@ data-spans_\_6_\_7
 
 
                 <td
-                id="ce3054be"
+                id="efc4ba23"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24779,7 +24779,7 @@ data-spans_\_6_\_8
 
 
                 <td
-                id="24bd3d93"
+                id="a7c63b1a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24813,7 +24813,7 @@ data-spans_\_6_\_9
 
 
                 <th
-                id="aeda3152"
+                id="d253bd37"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -24841,7 +24841,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="cb264571"
+                id="946d5513"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24871,7 +24871,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="5446a854"
+                id="b1d3c6b8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24901,7 +24901,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="508819b1"
+                id="f51353fd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24931,7 +24931,7 @@ data-spans_\_7_\_2
 
 
                 <td
-                id="ae61e222"
+                id="d88442bd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24961,7 +24961,7 @@ data-spans_\_7_\_3
 
 
                 <td
-                id="7bdb18e9"
+                id="d2d24ff0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -24991,7 +24991,7 @@ data-spans_\_7_\_4
 
 
                 <td
-                id="c46af60b"
+                id="cbdaf422"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25021,7 +25021,7 @@ data-spans_\_7_\_5
 
 
                 <td
-                id="e5209678"
+                id="1b4ba112"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25051,7 +25051,7 @@ data-spans_\_7_\_6
 
 
                 <td
-                id="ecda27cd"
+                id="3b9bf8b3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25081,7 +25081,7 @@ data-spans_\_7_\_7
 
 
                 <td
-                id="d6e3beba"
+                id="e601247e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25111,7 +25111,7 @@ data-spans_\_7_\_8
 
 
                 <td
-                id="2e766ce4"
+                id="95f30cb6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25145,7 +25145,7 @@ data-spans_\_7_\_9
 
 
                 <th
-                id="1b5ce9b6"
+                id="e5e6bcd1"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -25173,7 +25173,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="8ed85473"
+                id="cd523a67"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25203,7 +25203,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="2f17bf85"
+                id="103eff33"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25233,7 +25233,7 @@ data-spans_\_8_\_1
 
 
                 <td
-                id="e5ef7692"
+                id="1079fdf1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25263,7 +25263,7 @@ data-spans_\_8_\_2
 
 
                 <td
-                id="ea99c40c"
+                id="e2aaeede"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25293,7 +25293,7 @@ data-spans_\_8_\_3
 
 
                 <td
-                id="818c24f1"
+                id="5024777e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25323,7 +25323,7 @@ data-spans_\_8_\_4
 
 
                 <td
-                id="2a39d808"
+                id="c1e14737"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25353,7 +25353,7 @@ data-spans_\_8_\_5
 
 
                 <td
-                id="2fe4d069"
+                id="7555af60"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25383,7 +25383,7 @@ data-spans_\_8_\_6
 
 
                 <td
-                id="ff16cf38"
+                id="9ec42863"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25413,7 +25413,7 @@ data-spans_\_8_\_7
 
 
                 <td
-                id="050e8828"
+                id="7eb2b4ca"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25443,7 +25443,7 @@ data-spans_\_8_\_8
 
 
                 <td
-                id="52cccad1"
+                id="9edff186"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25477,7 +25477,7 @@ data-spans_\_8_\_9
 
 
                 <th
-                id="6a77a709"
+                id="dee9c941"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -25505,7 +25505,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="fb64b3dc"
+                id="7f65f69b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25535,7 +25535,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="9b323ff4"
+                id="aaf694b2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25565,7 +25565,7 @@ data-spans_\_9_\_1
 
 
                 <td
-                id="ab2a6c17"
+                id="5754eae5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25595,7 +25595,7 @@ data-spans_\_9_\_2
 
 
                 <td
-                id="a6efb210"
+                id="ccdb0c0f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25625,7 +25625,7 @@ data-spans_\_9_\_3
 
 
                 <td
-                id="6f3a6844"
+                id="21351f2c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25655,7 +25655,7 @@ data-spans_\_9_\_4
 
 
                 <td
-                id="07267f65"
+                id="6283f582"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25685,7 +25685,7 @@ data-spans_\_9_\_5
 
 
                 <td
-                id="d197c278"
+                id="78f0bf94"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25715,7 +25715,7 @@ data-spans_\_9_\_6
 
 
                 <td
-                id="c8864e00"
+                id="a60d55ff"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25745,7 +25745,7 @@ data-spans_\_9_\_7
 
 
                 <td
-                id="485b8eca"
+                id="d87cd280"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -25775,7 +25775,7 @@ data-spans_\_9_\_8
 
 
                 <td
-                id="5a8c7edf"
+                id="50af156b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27450,7 +27450,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_7c1bdf20">
+    <skrub-table-report class="report" id="report_deb53a3b">
     </skrub-table-report>
 
     <script type="module">
@@ -28554,7 +28554,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_7c1bdf20-wrapper-fallback">
+<div id="report_deb53a3b-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -28565,8 +28565,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_7c1bdf20-wrapper").removeAttribute("hidden");
- document.getElementById("report_7c1bdf20-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_deb53a3b-wrapper").removeAttribute("hidden");
+ document.getElementById("report_deb53a3b-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 </div>
@@ -28621,7 +28621,7 @@ search.plot_results()
 
 <div class="output_subarea output_html rendered_html output_result">
 <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="fd83f710-de93-4efc-ab34-5d3cd8d05488" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("fd83f710-de93-4efc-ab34-5d3cd8d05488")) {                    Plotly.newPlot(                        "fd83f710-de93-4efc-ab34-5d3cd8d05488",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"sWlNXU\\u002fnF0AAAAAAAAAuQHC6QRDT+CVAcclUmWMFIEBipBP26vorQOCRw3RP9SFA7FOBdhUVLECa5vIs7\\u002fQhQAAAAAAAABRAOpa\\u002f+dbzLUAEsO+wJv8jQLrYinXNzBdAhyplZrMTGEAtzI1HIvwfQKY6NlwA+CdACIgZIt32J0A="}},{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAABxkFnavplwPwAAAAAAAAAAXxGMzRCncj8AAAAAAADwPxB8U7JD4+8\\u002fe\\u002f0+Okbj7z+unLP0aejvPwAAAAAAAPA\\u002fAAAAAAAA8D9Ig5EO1PTvPwAAAAAAAPA\\u002fAAAAAAAA8D8AAAAAAADwPwAAAAAAAPA\\u002fAAAAAAAA8D8="}},{"label":"lr","ticktext":["NaN","0.01","0.02","0.03","0.04","0.06","0.08","0.13","0.19","0.28","0.42"],"tickvals":[-4.842913055511124,-4.481931229268992,-4.080840311222178,-3.6797493931753644,-3.278658475128551,-2.877567557081737,-2.4764766390349235,-2.07538572098811,-1.6742948029412963,-1.2732038848944827,-0.872112966847669],"values":{"dtype":"f8","bdata":"tiqbmSRfE8BEBEsJGVIEwFbSwTYroPm\\u002f3dB1sbnoAcB7JwcXb+YRwM3VvdgL8QbAmOfgc1no678ROzEORXwBwMaJlSEM3vO\\u002fv9TFEItRE8C6U80xsV4TwPnLNP4UUhPAtiqbmSRfE8C+WSjaMlwTwKv32gb5WxPAH9n9QKlYE8A="}},{"label":"\\u03b1","ticktext":["NaN","0","0","0","0","1","2","5","11","24","54"],"tickvals":[-3.9772483789581226,-3.253498479969906,-2.449331925538554,-1.6451653711072027,-0.8409988166758513,-0.036832262244499425,0.7673342921868525,1.5715008466182034,2.3756674010495553,3.179833955480907,3.984000509912259],"values":{"dtype":"f8","bdata":"cIt0UBm2C0CfjR2ZZ9EPwJ+NHZln0Q\\u002fAn40dmWfRD8CfjR2ZZ9EPwO3jEy0oxQ\\u002fAn40dmWfRD8CfjR2ZZ9EPwJ+NHZln0Q\\u002fAVpDKqDvfD0DA0efBJWr8P57AABhTEQbAHqhUQNHuBED5a21HXf8JwCLfgTWQigZAbupnfH7sC0A="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA+iyvHFxCYD8AAAAAAAAAAAAAAAAAAAAA2F3tPkizST8+iFYCCZhuPwAAAAAAAAAAAAAAAAAA8D8AAAAAAADwPyzEgyFF3O8\\u002fAAAAAAAA8D9W758rddvvP64cyivv5+8\\u002fZdaEjFrm7z8="}},{"label":"score time","ticktext":["0.077","0.088","0.099","0.110","0.121","0.132","0.144","0.155","0.166","0.177"],"tickvals":[0.07680082321166992,0.08792992697821723,0.09905903074476453,0.11018813451131185,0.12131723827785915,0.13244634204440647,0.14357544581095377,0.15470454957750107,0.16583365334404837,0.1769627571105957],"values":{"dtype":"f8","bdata":"ZfGg4c\\u002fmtj8c++hGc2XCP2zXS6li38E\\u002fWu9\\u002f19qrwT8zMzMzt6bGP\\u002f3Jy7kuzMA\\u002fhXrKhE1uwT8gah22z3nAPwAAAAA4qbM\\u002fBknXMv7cuj9BPm6h9GG5P+8WRkEVabo\\u002f17I7QwfAtD+RKQmrdGa3P\\u002f0C51Df+LY\\u002f\\u002fu2YvxdgtD8="}},{"label":"fit time","ticktext":["0.16","0.25","0.34","0.44","0.53","0.62","0.72","0.81","0.90","0.99"],"tickvals":[0.15789713859558105,0.25089731216430666,0.34389748573303225,0.43689765930175783,0.5298978328704834,0.622898006439209,0.7158981800079346,0.8088983535766602,0.9018985271453858,0.9948987007141114],"values":{"dtype":"f8","bdata":"dxq1WDbw1j\\u002fNzMzMNdbvPzRl51SiNeo\\u002f8Ceohu7m6j+6LDjDJxPuP7GCjUazY+U\\u002fAEGAUQkF5z9zqwQTFiXoP4y2lWh9QOA\\u002fCBHIjAYt0j\\u002fDwP9Q32HOP6G0NnWa\\u002fcY\\u002fMzMzM\\u002fk1xD9dMMlFF8nEP1Oi3i3sGM8\\u002frNWNmpZmzD8="}},{"label":"score","ticktext":["0.50","0.53","0.56","0.59","0.63","0.66","0.69","0.72","0.75","0.78"],"tickvals":[0.499,0.5305555555555556,0.5621111111111111,0.5936666666666667,0.6252222222222221,0.6567777777777777,0.6883333333333332,0.7198888888888888,0.7514444444444444,0.7829999999999999],"values":{"dtype":"f8","bdata":"dJMYBFYO6T9OYhBYObToP3npJjEIrOg\\u002f\\u002ftR46SYx6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"dJMYBFYO6T9OYhBYObToP3npJjEIrOg\\u002f\\u002ftR46SYx6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="a91dab22-782b-458c-9cc4-ff3a5ec61b8a" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("a91dab22-782b-458c-9cc4-ff3a5ec61b8a")) {                    Plotly.newPlot(                        "a91dab22-782b-458c-9cc4-ff3a5ec61b8a",                        [{"dimensions":[{"label":"N components","ticktext":["5","6","7","8","9","11","12","13","14","15"],"tickvals":[5,6,7,8,9,11,12,13,14,15],"values":{"dtype":"f8","bdata":"cA3B90oeGEAAAAAAAAAuQHIF4KpL9CVAW1T3KvT8H0BNDyZtogMsQF6k7m2u\\u002fiFAbVNbb5kALECK7a8vguwhQAAAAAAAABRAAAAAAAAALkDFXXLhDgIkQIIOAq3I\\u002fxdAnRRpUI0OGED7xb7oKBMgQC+q7NlY\\u002fCdA6zjNAJ79J0A="}},{"label":"encoder","ticktext":["lse","minhash"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAACsIH+UgjthPwAAAAAAAAAAAEAu2v9GFT8AAAAAAADwPwAAAAAAAPA\\u002f2mZazzTk7z81w05HYd\\u002fvPwAAAAAAAPA\\u002f0x6sL5Dg7z9dOXOqafjvPyHpih6U4e8\\u002fdgA6Ygvi7z9XRMryBvrvP3VMB15I2+8\\u002frAT86xrd7z8="}},{"label":"lr","ticktext":["NaN","0.01","0.02","0.03","0.04","0.06","0.08","0.13","0.19","0.28","0.42"],"tickvals":[-4.842913055511124,-4.481931229268992,-4.080840311222178,-3.6797493931753644,-3.278658475128551,-2.877567557081737,-2.4764766390349235,-2.07538572098811,-1.6742948029412963,-1.2732038848944827,-0.872112966847669],"values":{"dtype":"f8","bdata":"tiqbmSRfE8Ac4biwilcEwBg2DZeiaPm\\u002f7CGKiIwYAsA3D2QKn+ARwO3JgsR9\\u002fQbAmOfgc1no678K3I8lmYgBwDjW18WBm\\u002fO\\u002fZiDwuEFPE8C2KpuZJF8TwLYqm5kkXxPA+K+vb+1WE8C2KpuZJF8TwLYqm5kkXxPAxWyFeCRRE8A="}},{"label":"\\u03b1","ticktext":["NaN","0","0","0","0","1","2","5","11","24","54"],"tickvals":[-3.9772483789581226,-3.253498479969906,-2.449331925538554,-1.6451653711072027,-0.8409988166758513,-0.036832262244499425,0.7673342921868525,1.5715008466182034,2.3756674010495553,3.179833955480907,3.984000509912259],"values":{"dtype":"f8","bdata":"324m6xLeC0CfjR2ZZ9EPwGNIkYtYgw\\u002fAn40dmWfRD8D1l+0mkqEPwJ+NHZln0Q\\u002fAfjeEmy24D8BCGQSs34MPwJ+NHZln0Q\\u002fAVpDKqDvfD0BT7E0INMT7P8p+w2pgewbA2heu1hAABUASE1KIRcIJwHL9+kFshQZAO0s5Pe3ZC0A="}},{"label":"classifier","ticktext":["hgb","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAA8D8AAAAAAAAAAGaUykWyum4\\u002fAAAAAAAAAAArxkWyhKZyPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGyGqb3b6lo\\u002fC1AxXSTy7z8AAAAAAADwPwAAAAAAAPA\\u002fcwwqoxb77z\\u002fwt5PE\\u002fenvPwAAAAAAAPA\\u002fAAAAAAAA8D8="}},{"label":"score time","ticktext":["0.06","0.08","0.09","0.10","0.12","0.13","0.14","0.16","0.17","0.18"],"tickvals":[0.06341133117675782,0.07689343558417427,0.09037553999159072,0.10385764439900716,0.11733974880642362,0.13082185321384007,0.14430395762125653,0.15778606202867296,0.17126816643608941,0.18475027084350587],"values":{"dtype":"f8","bdata":"J6EYy312vj+smhGHjs7CPxBghUt9ScI\\u002fcbfZHaUWvj+amZmZ5aXHP8Q4uA9xkcE\\u002fU6qWtD6uxT8kN+0IUHO8P\\u002fUlJi2MErw\\u002f+sT4IBbkuT+bi5znlr26Pw4TGJCza7Y\\u002fmpmZmbk7sD9Rp3pLJC6xP6k\\u002ff94KqLY\\u002fFI5WgM9mtD8="}},{"label":"fit time","ticktext":["0.16","0.25","0.33","0.42","0.51","0.59","0.68","0.77","0.85","0.94"],"tickvals":[0.1587757110595703,0.24577512211269803,0.3327745331658257,0.4197739442189534,0.5067733552720811,0.5937727663252088,0.6807721773783366,0.7677715884314643,0.854770999484592,0.9417704105377197],"values":{"dtype":"f8","bdata":"yVkGfMXt1z8zMzOz+yLuP2zzTgRwK+s\\u002fsjt3sOq+6z9DkbDyPDTqPxCTfvmL6OM\\u002f\\u002fl0cRkD76D\\u002faqmWZVUnmP3y8eTeW\\u002fN4\\u002fjEwu5t2Ozj9H6p2dtcnTP9nntluPPsY\\u002fHFBFcmDHxD8zMzMzw1LEP\\u002fhc\\u002fidsR84\\u002fY+XyAATYyT8="}},{"label":"score","ticktext":["0.50","0.53","0.56","0.59","0.62","0.65","0.68","0.72","0.75","0.78"],"tickvals":[0.499,0.5298888888888889,0.5607777777777778,0.5916666666666667,0.6225555555555555,0.6534444444444445,0.6843333333333333,0.7152222222222222,0.7461111111111112,0.777],"values":{"dtype":"f8","bdata":"d76fGi\\u002fd6D9OYhBYObToP3npJjEIrOg\\u002fUI2XbhKD6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"d76fGi\\u002fd6D9OYhBYObToP3npJjEIrOg\\u002fUI2XbhKD6D+\\u002fnxov3STiP76fGi\\u002fdJOI\\u002farx0kxgE4j\\u002fsUbgehevhP0SLbOf7qeE\\u002fdpMYBFYO4T\\u002fP91PjpZvgPyUGgZVDi+A\\u002fJQaBlUOL4D\\u002fTTWIQWDngP1YOLbKd798\\u002fVg4tsp3v3z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br />
@@ -28647,8 +28647,8 @@ such as the argument of a [`deferred()`](../../reference/generated/skrub.deferre
 other DataOps’ methods or operators. Additionally, choices can be
 inter-dependent. Find more information in the [user guide](../../modules/data_ops/validation/tuning_validating_data_opshtml.md#user-guide-data-ops-tuning-validating-dataops).
 
-**Total running time of the script:** (0 minutes 35.967 seconds)
+**Total running time of the script:** (0 minutes 35.721 seconds)
 
-**Estimated memory usage:**  599 MB
+**Estimated memory usage:**  549 MB
 
 <a id="sphx-glr-download-auto-examples-02-data-ops-1130-choices-py"></a>

@@ -1,6 +1,6 @@
 # TableReport
 
-### *class* skrub.TableReport(dataframe, n_rows=10, order_by=None, title=None, column_filters=None, verbose=None, plot_distributions='auto', compute_associations='auto', open_tab='table', max_plot_columns=None, max_association_columns=None)
+### *class* skrub.TableReport(dataframe, n_rows=None, order_by=None, title=None, column_filters=None, verbose=None, plot_distributions='auto', compute_associations='auto', open_tab='table', max_plot_columns=None, max_association_columns=None)
 
 Summarize the contents of a dataframe.
 
@@ -20,6 +20,9 @@ for programmatic access or for inclusion in documents.
     from the beginning (head) of the dataframe and half from the end
     (tail). Note this is only for display. Summary statistics, histograms
     etc. are computed using the whole dataframe.
+    <br/>
+    The default value `None` uses the global configuration (see
+    [`set_config()`](skrub.set_confightml.md#skrub.set_config)), which then defaults to 10.
 
   **order_by**
   : Deprecated. Column name to use for sorting. Other numerical columns

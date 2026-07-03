@@ -1,6 +1,6 @@
 # set_config
 
-### skrub.set_config(use_table_report_data_ops=None, table_report_plots_threshold=None, table_report_associations_threshold=None, table_report_verbosity=None, subsampling_seed=None, max_plot_columns=None, max_association_columns=None, enable_subsampling=None, float_precision=None, cardinality_threshold=None, data_dir=None, eager_data_ops=None, data_ops_open_graph_dropdown=None)
+### skrub.set_config(use_table_report_data_ops=None, table_report_plots_threshold=None, table_report_associations_threshold=None, table_report_n_rows=None, table_report_verbosity=None, subsampling_seed=None, max_plot_columns=None, max_association_columns=None, enable_subsampling=None, float_precision=None, cardinality_threshold=None, data_dir=None, eager_data_ops=None, data_ops_open_graph_dropdown=None)
 
 Set global skrub configuration.
 
@@ -33,6 +33,13 @@ Set global skrub configuration.
     <br/>
     This configuration can also be set with the
     `SKB_TABLE_REPORT_ASSOCIATIONS_THRESHOLD` environment variable.
+
+  **table_report_n_rows**
+  : Set the default number of rows displayed in [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport)
+    when the `n_rows` parameter is not explicitly passed. Default is 10.
+    <br/>
+    This configuration can also be set with the `SKB_TABLE_REPORT_N_ROWS`
+    environment variable.
 
   **table_report_verbosity**
   : Set the level of verbosity of the [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport).

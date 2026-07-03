@@ -6,7 +6,12 @@
 
 ### New Features
 
-- [`TableReport.dict()`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport.dict) now allows exporting the report data as a Python dictionary. [#2188](https://github.com/skrub-data/skrub/pull/2188) by [m4nn2609-dot](https://github.com/m4nn2609-dot).
+- [`set_config()`](reference/generated/skrub.set_confightml.md#skrub.set_config) and [`config_context()`](reference/generated/skrub.config_contexthtml.md#skrub.config_context) now accept a
+  `table_report_n_rows` parameter to globally control the default number of
+  rows displayed in [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport).
+  [#2193](https://github.com/skrub-data/skrub/pull/2193) by [Mann](https://github.com/m4nn2609-dot).
+- [`TableReport.dict()`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport.dict) now allows exporting the report data as a Python
+  dictionary. [#2188](https://github.com/skrub-data/skrub/pull/2188) by [m4nn2609-dot](https://github.com/m4nn2609-dot).
 - New methods [`SkrubLearner.get_named_params()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.get_named_params) and
   [`SkrubLearner.set_named_params()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.set_named_params) allow getting and setting the outcomes for
   choices contained in the DataOp, keyed by choice name. It provides a more
