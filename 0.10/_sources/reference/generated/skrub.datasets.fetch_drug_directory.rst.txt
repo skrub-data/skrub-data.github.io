@@ -1,0 +1,10 @@
+﻿fetch\_drug\_directory
+======================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: fetch_drug_directory
+
+.. minigallery:: skrub.datasets.fetch_drug_directory
+   :add-heading: Gallery examples
+   :heading-level: -

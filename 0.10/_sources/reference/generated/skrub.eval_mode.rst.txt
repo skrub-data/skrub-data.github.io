@@ -1,0 +1,10 @@
+﻿eval\_mode
+==========
+
+.. currentmodule:: skrub
+
+.. autofunction:: eval_mode
+
+.. minigallery:: skrub.eval_mode
+   :add-heading: Gallery examples
+   :heading-level: -

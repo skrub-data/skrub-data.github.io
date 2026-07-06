@@ -1,0 +1,6 @@
+﻿RejectColumn
+============
+
+.. currentmodule:: skrub.core
+
+.. autoexception:: RejectColumn

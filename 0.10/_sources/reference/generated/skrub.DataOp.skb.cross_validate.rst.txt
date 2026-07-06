@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.cross_validate
+===============================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.cross_validate

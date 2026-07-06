@@ -1,0 +1,10 @@
+﻿as\_data\_op
+============
+
+.. currentmodule:: skrub
+
+.. autofunction:: as_data_op
+
+.. minigallery:: skrub.as_data_op
+   :add-heading: Gallery examples
+   :heading-level: -

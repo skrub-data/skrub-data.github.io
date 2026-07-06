@@ -1,0 +1,10 @@
+﻿toy\_cities
+===========
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: toy_cities
+
+.. minigallery:: skrub.datasets.toy_cities
+   :add-heading: Gallery examples
+   :heading-level: -

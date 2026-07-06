@@ -1,0 +1,10 @@
+﻿make\_retail\_events
+====================
+
+.. currentmodule:: skrub.datasets
+
+.. autofunction:: make_retail_events
+
+.. minigallery:: skrub.datasets.make_retail_events
+   :add-heading: Gallery examples
+   :heading-level: -

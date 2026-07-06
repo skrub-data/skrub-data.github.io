@@ -1,0 +1,14 @@
+﻿InterpolationJoiner
+===================
+
+.. currentmodule:: skrub
+
+.. autoclass:: InterpolationJoiner
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.InterpolationJoiner skrub.InterpolationJoiner.__init__ skrub.InterpolationJoiner.fit skrub.InterpolationJoiner.fit_transform skrub.InterpolationJoiner.get_metadata_routing skrub.InterpolationJoiner.get_params skrub.InterpolationJoiner.set_output skrub.InterpolationJoiner.set_params skrub.InterpolationJoiner.transform 
+   :add-heading: Gallery examples
+   :heading-level: -

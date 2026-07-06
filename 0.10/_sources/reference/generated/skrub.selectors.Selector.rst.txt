@@ -1,0 +1,14 @@
+﻿Selector
+========
+
+.. currentmodule:: skrub.selectors
+
+.. autoclass:: Selector
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.selectors.Selector skrub.selectors.Selector.__init__ skrub.selectors.Selector.expand skrub.selectors.Selector.expand_index 
+   :add-heading: Gallery examples
+   :heading-level: -

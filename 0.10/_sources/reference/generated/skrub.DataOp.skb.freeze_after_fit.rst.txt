@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.freeze_after_fit
+=================================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.freeze_after_fit

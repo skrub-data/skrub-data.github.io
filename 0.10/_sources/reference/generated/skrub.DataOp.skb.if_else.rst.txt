@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.if_else
+========================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.if_else

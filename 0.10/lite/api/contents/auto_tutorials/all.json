@@ -1,0 +1,43 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-07-06T12:29:53.990705Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-06T12:29:49.631120Z",
+      "mimetype": null,
+      "name": "0000_getting_started.ipynb",
+      "path": "auto_tutorials/0000_getting_started.ipynb",
+      "size": 12484,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-06T12:29:53.991127Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-06T12:29:49.632120Z",
+      "mimetype": null,
+      "name": "1111_data_ops_quick_tour.ipynb",
+      "path": "auto_tutorials/1111_data_ops_quick_tour.ipynb",
+      "size": 16023,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2026-07-06T12:29:53.991061Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-07-06T12:29:53.991061Z",
+  "mimetype": null,
+  "name": "auto_tutorials",
+  "path": "auto_tutorials",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

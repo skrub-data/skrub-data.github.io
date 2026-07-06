@@ -1,0 +1,36 @@
+:html_theme.sidebar_secondary.remove:
+
+.. _cleaning_ref:
+
+.. title:: cleaning
+
+
+.. currentmodule:: skrub
+
+
+Cleaning a dataframe
+--------------------
+
+
+
+
+
+
+
+
+
+
+
+.. autosummary::
+  :nosignatures:
+  :toctree: generated/
+  :template: base.rst
+
+
+  SquashingScaler
+  Cleaner
+  DropUninformative
+  DropSimilar
+  DurationToFloat
+  to_datetime
+  deduplicate

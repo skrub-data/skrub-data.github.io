@@ -1,0 +1,10 @@
+﻿make\_selector
+==============
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: make_selector
+
+.. minigallery:: skrub.selectors.make_selector
+   :add-heading: Gallery examples
+   :heading-level: -

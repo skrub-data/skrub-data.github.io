@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.eval
+=====================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.eval

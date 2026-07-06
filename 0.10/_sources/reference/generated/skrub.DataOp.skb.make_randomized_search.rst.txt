@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.make_randomized_search
+=======================================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.make_randomized_search

@@ -1,0 +1,1397 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="SessionEncoder" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://skrub-data.github.io/stable/reference/generated/skrub.SessionEncoder.html" />
+<meta property="og:site_name" content="skrub" />
+<meta property="og:description" content="Gallery examples: Sessions in time-based data: Predicting user purchases with the SessionEncoder" />
+<meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
+<meta property="og:image:alt" content="skrub" />
+<meta name="description" content="Gallery examples: Sessions in time-based data: Predicting user purchases with the SessionEncoder" />
+
+    <title>SessionEncoder &#8212; skrub</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css?v=1277b6f3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=7821ceae" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=a95f357e85573c9b56d5"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5" />
+
+    <script src="../../_static/documentation_options.js?v=82662543"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=fd10adb8"></script>
+    <script src="../../_static/sg-tags.js?v=d80f6fa4"></script>
+    <script src="../../_static/jupyterlite_sphinx.js?v=96e329c5"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/generated/skrub.SessionEncoder';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.19.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.10.0';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            true;
+        </script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../../_static/scripts/sg_plotly_resize.js?v=a751aa24"></script>
+    <link rel="canonical" href="https://skrub-data.org/stable/reference/generated/skrub.SessionEncoder.html" />
+    <link rel="icon" href="../../_static/skrub.svg"/>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="ToDatetime" href="skrub.ToDatetime.html" />
+    <link rel="prev" title="DatetimeEncoder" href="skrub.DatetimeEncoder.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.10.0" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/skrub.svg" class="logo__image only-light" alt="skrub - Home"/>
+    <img src="../../_static/skrub.svg" class="logo__image only-dark pst-js-only" alt="skrub - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../install.html">
+    Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../documentation.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../howto.html">
+    How-tos
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../auto_examples/index.html">
+    Examples
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../learning_materials.html">
+    Learning Materials
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../CHANGES.html">
+    Release history
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../development.html">
+    Development
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i><span class="visually-hidden">Discord</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://bsky.app/profile/skrub-data.bsky.social" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-bluesky fa-lg" aria-hidden="true"></i><span class="visually-hidden">Bluesky</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://x.com/skrub_data" title="X (ex-Twitter)" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i><span class="visually-hidden">X (ex-Twitter)</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../install.html">
+    Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../documentation.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../howto.html">
+    How-tos
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../auto_examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../learning_materials.html">
+    Learning Materials
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../CHANGES.html">
+    Release history
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../development.html">
+    Development
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/skrub-data/skrub/" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/ABaPnm7fDC" title="Discord" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-discord fa-lg" aria-hidden="true"></i><span class="visually-hidden">Discord</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://bsky.app/profile/skrub-data.bsky.social" title="Bluesky" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-bluesky fa-lg" aria-hidden="true"></i><span class="visually-hidden">Bluesky</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://x.com/skrub_data" title="X (ex-Twitter)" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-x-twitter fa-lg" aria-hidden="true"></i><span class="visually-hidden">X (ex-Twitter)</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar"><svg class="pst-icon svg-inline--fa" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../pipeline.html">pipeline</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.tabular_pipeline.html">tabular_pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.TableVectorizer.html">TableVectorizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ApplyToCols.html">ApplyToCols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SelectCols.html">SelectCols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DropCols.html">DropCols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Drop.html">Drop</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../encoders.html">encoders</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="skrub.StringEncoder.html">StringEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.TextEncoder.html">TextEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.MinHashEncoder.html">MinHashEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.GapEncoder.html">GapEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SimilarityEncoder.html">SimilarityEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ToCategorical.html">ToCategorical</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DatetimeEncoder.html">DatetimeEncoder</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">SessionEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ToDatetime.html">ToDatetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ToFloat.html">ToFloat</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../reporting.html">reporting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.TableReport.html">TableReport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.patch_display.html">patch_display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.unpatch_display.html">unpatch_display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.column_associations.html">column_associations</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../cleaning.html">cleaning</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SquashingScaler.html">SquashingScaler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Cleaner.html">Cleaner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DropUninformative.html">DropUninformative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DropSimilar.html">DropSimilar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DurationToFloat.html">DurationToFloat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../selectors.html">selectors</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.Selector.html">Selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.all.html">all</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.any_date.html">any_date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.boolean.html">boolean</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.glob.html">glob</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.has_dtype.html">has_dtype</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.has_nulls.html">has_nulls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.integer.html">integer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.inv.html">inv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.make_selector.html">make_selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.numeric.html">numeric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.object.html">object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.regex.html">regex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.select.html">select</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.string.html">string</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../data_ops.html">data_ops</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.var.html">var</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.X.html">X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.y.html">y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.as_data_op.html">as_data_op</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.deferred.html">deferred</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.html">DataOp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_bool.html">choose_bool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_float.html">choose_float</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_int.html">choose_int</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.choose_from.html">choose_from</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.optional.html">optional</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.cross_validate.html">cross_validate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.eval_mode.html">eval_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.apply.html">skrub.DataOp.skb.apply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.apply_func.html">skrub.DataOp.skb.apply_func</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.clone.html">skrub.DataOp.skb.clone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.concat.html">skrub.DataOp.skb.concat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.cross_validate.html">skrub.DataOp.skb.cross_validate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.describe_defaults.html">skrub.DataOp.skb.describe_defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.describe_param_grid.html">skrub.DataOp.skb.describe_param_grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.describe_steps.html">skrub.DataOp.skb.describe_steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.draw_graph.html">skrub.DataOp.skb.draw_graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.drop.html">skrub.DataOp.skb.drop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.eval.html">skrub.DataOp.skb.eval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.find.html">skrub.DataOp.skb.find</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.find_X_y.html">skrub.DataOp.skb.find_X_y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.freeze_after_fit.html">skrub.DataOp.skb.freeze_after_fit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.full_report.html">skrub.DataOp.skb.full_report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.get_data.html">skrub.DataOp.skb.get_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.get_vars.html">skrub.DataOp.skb.get_vars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.if_else.html">skrub.DataOp.skb.if_else</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_cv_splits.html">skrub.DataOp.skb.iter_cv_splits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_grid.html">skrub.DataOp.skb.iter_learners_grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.iter_learners_randomized.html">skrub.DataOp.skb.iter_learners_randomized</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_grid_search.html">skrub.DataOp.skb.make_grid_search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_learner.html">skrub.DataOp.skb.make_learner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.make_randomized_search.html">skrub.DataOp.skb.make_randomized_search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.mark_as_X.html">skrub.DataOp.skb.mark_as_X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.mark_as_y.html">skrub.DataOp.skb.mark_as_y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.match.html">skrub.DataOp.skb.match</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.preview.html">skrub.DataOp.skb.preview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.select.html">skrub.DataOp.skb.select</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.set_data.html">skrub.DataOp.skb.set_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.set_description.html">skrub.DataOp.skb.set_description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.set_name.html">skrub.DataOp.skb.set_name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.subsample.html">skrub.DataOp.skb.subsample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.train_test_split.html">skrub.DataOp.skb.train_test_split</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.with_scoring.html">skrub.DataOp.skb.with_scoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.applied_estimator.html">skrub.DataOp.skb.applied_estimator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.description.html">skrub.DataOp.skb.description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.id.html">skrub.DataOp.skb.id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.is_X.html">skrub.DataOp.skb.is_X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.is_y.html">skrub.DataOp.skb.is_y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DataOp.skb.name.html">skrub.DataOp.skb.name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.SkrubLearner.html">SkrubLearner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.ParamSearch.html">ParamSearch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.OptunaParamSearch.html">OptunaParamSearch</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../advanced.html">advanced</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.core.SingleColumnTransformer.html">SingleColumnTransformer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.core.RejectColumn.html">RejectColumn</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../config.html">config</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.get_config.html">get_config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.set_config.html">set_config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.config_context.html">config_context</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../joining.html">joining</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.Joiner.html">Joiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.AggJoiner.html">AggJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.MultiAggJoiner.html">MultiAggJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.AggTarget.html">AggTarget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.InterpolationJoiner.html">InterpolationJoiner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.fuzzy_join.html">fuzzy_join</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../datasets.html">datasets</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_bike_sharing.html">fetch_bike_sharing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_california_housing.html">fetch_california_housing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_country_happiness.html">fetch_country_happiness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_credit_fraud.html">fetch_credit_fraud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_drug_directory.html">fetch_drug_directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_electricity_forecasting.html">fetch_electricity_forecasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_employee_salaries.html">fetch_employee_salaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_flight_delays.html">fetch_flight_delays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_medical_charge.html">fetch_medical_charge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_midwest_survey.html">fetch_midwest_survey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_movielens.html">fetch_movielens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_open_payments.html">fetch_open_payments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_toxicity.html">fetch_toxicity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_traffic_violations.html">fetch_traffic_violations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.fetch_videogame_sales.html">fetch_videogame_sales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.get_data_dir.html">get_data_dir</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.make_deduplication_data.html">make_deduplication_data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.toy_orders.html">toy_orders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.toy_products.html">toy_products</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.toy_cities.html">toy_cities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.datasets.make_retail_events.html">make_retail_events</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../table_report_json_schema.html">TableReport JSON schema</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">API</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../encoders.html" class="nav-link">Encoding a column</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">SessionEncoder</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="sessionencoder">
+<h1>SessionEncoder<a class="headerlink" href="#sessionencoder" title="Link to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="skrub.SessionEncoder">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">SessionEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timestamp_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_by</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_gap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1800</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'session_id'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8fe6d35/skrub/_session_encoder.py#L164"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder" title="Link to this definition">#</a></dt>
+<dd><p>Add a session ID column to a dataframe based on time gaps and other columns.</p>
+<p>A session is defined as a sequence of events  where consecutive events are separated
+by at most <code class="docutils literal notranslate"><span class="pre">session_gap</span></code> seconds. Additionally, it is possible to provide a column
+or list of columns that can be used to distinguish between sessions, such
+as user identifiers (specified by the <code class="docutils literal notranslate"><span class="pre">split_by</span></code> column).
+Within each sequence identified by a unique value in the <code class="docutils literal notranslate"><span class="pre">split_by</span></code> column(s),
+a new session is started when the time gap between events exceeds <code class="docutils literal notranslate"><span class="pre">session_gap</span></code>
+seconds.</p>
+<p>The encoder takes care of grouping the data by <code class="docutils literal notranslate"><span class="pre">split_by</span></code> and sorting by
+timestamp column before identifying sessions, and sorting it back to the
+original order at the end, so the original order of events in the input
+dataframe does not matter.</p>
+<p>If a null value is present in the timestamp column or any of the <code class="docutils literal notranslate"><span class="pre">split_by</span></code>
+columns, the corresponding row will be assigned a session ID of -1, and will
+be ignored when computing time intervals.</p>
+<p>All unrelated columns are passed through unchanged.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>timestamp_col</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The name of the column that identifies the time of an event. This column
+is used to determine the start and end of a session. <code class="docutils literal notranslate"><span class="pre">timestamp_col</span></code> must
+be a datetime, and an error will be raised otherwise.
+Sessions are defined within each group of events that have the same value
+in the <code class="docutils literal notranslate"><span class="pre">split_by</span></code> column(s) (or all events if <code class="docutils literal notranslate"><span class="pre">split_by</span></code> is None), and
+the result will be correct no matter the order of the rows in the input
+dataframe.</p>
+</dd>
+<dt><strong>split_by</strong><span class="classifier">optional[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>]], default=None</span></dt><dd><p>The name of the column (typically the user ID), or list of columns, that
+is used to identify independent event sequence (such as the activity of
+different users).
+A session boundary is created when the value in any of these columns
+changes, or when the time gap between events exceeds <code class="docutils literal notranslate"><span class="pre">session_gap</span></code>.
+This is typically a user identifier column, but it can also be used to define
+sessions by other groupings (e.g. user and device type).
+If not provided, sessions are detected based on the time gap between events,
+and all events are considered to belong to the same user (or group).</p>
+</dd>
+<dt><strong>session_gap</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a>, default=1800</span></dt><dd><p>The maximum gap (in seconds) between events in a session. If the gap
+between two events exceeds this value, they are considered to be in
+different sessions. Default is 1800 seconds (30 minutes).</p>
+</dd>
+<dt><strong>suffix</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, default=”session_id”</span></dt><dd><p>The suffix to be added to the name of the created session id column.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Attributes<span class="colon">:</span></dt>
+<dd class="field-even"><dl>
+<dt><strong>all_inputs_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>All column names in the input dataframe.</p>
+</dd>
+<dt><strong>all_outputs_: list of str</strong></dt><dd><p>All column names in the input dataframe plus the new column that identifies
+the session, with name “{timestamp}_{suffix}”.</p>
+</dd>
+<dt><strong>session_id_column_</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>The name of the session ID column that is added to the dataframe. This is
+generated as “{timestamp_col}_{suffix}”, but if this name already exists in
+the input dataframe, a random suffix is added to avoid overwriting it.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>Consider this example where we have a dataframe with user events, and we want
+to identify sessions based on a 30-minute gap between events for each user.
+Users are identified by the value of the column <code class="docutils literal notranslate"><span class="pre">user_id</span></code>.
+Note that the order of the rows in the input dataframe does not matter.</p>
+<p>Sessions are defined by sorting over the <a href="#id1"><span class="problematic" id="id2">``</span></a>split_by``columns (if provided)
+and then by the timestamp.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+<span class="gp">... </span>    <span class="s2">&quot;user_id&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s2">&quot;device_id&quot;</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;desktop&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;desktop&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="p">],</span>
+<span class="gp">... </span>    <span class="s2">&quot;timestamp&quot;</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 10:00:00&quot;</span><span class="p">),</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 10:10:00&quot;</span><span class="p">),</span>  <span class="c1"># 10 min later, same session</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 10:05:00&quot;</span><span class="p">),</span>  <span class="c1"># Different device (sorted),</span>
+<span class="gp">... </span>                                                <span class="c1"># different session</span>
+<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 10:20:00&quot;</span><span class="p">),</span>  <span class="c1"># 15 min later, same session</span>
+<span class="gp">... </span>                                                <span class="c1"># different session</span>
+<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 11:20:00&quot;</span><span class="p">),</span>  <span class="c1"># 60 min later, new session</span>
+<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 10:00:00&quot;</span><span class="p">),</span>  <span class="c1"># Different user</span>
+<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 10:15:00&quot;</span><span class="p">),</span>  <span class="c1"># 15 min later, same session</span>
+<span class="gp">... </span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="s2">&quot;view&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;purchase&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;view&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;add_to_cart&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;checkout&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;view&quot;</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">&quot;wishlist&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="p">],</span>
+<span class="gp">... </span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
+<span class="go">user_id device_id           timestamp       action</span>
+<span class="go">0        1    mobile 2024-01-01 10:00:00         view</span>
+<span class="go">1        1    mobile 2024-01-01 10:10:00     purchase</span>
+<span class="go">2        1   desktop 2024-01-01 10:05:00         view</span>
+<span class="go">3        1   desktop 2024-01-01 10:20:00  add_to_cart</span>
+<span class="go">4        1    mobile 2024-01-01 11:20:00     checkout</span>
+<span class="go">5        2    mobile 2024-01-01 10:00:00         view</span>
+<span class="go">6        2    mobile 2024-01-01 10:15:00     wishlist</span>
+</pre></div>
+</div>
+<p>We use the <code class="docutils literal notranslate"><span class="pre">SessionEncoder</span></code> with default <code class="docutils literal notranslate"><span class="pre">session_gap</span></code> of 30 minutes:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">SessionEncoder</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span> <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span>
+<span class="go">user_id device_id           timestamp       action  timestamp_session_id</span>
+<span class="go">0        1    mobile 2024-01-01 10:00:00         view                     0</span>
+<span class="go">1        1    mobile 2024-01-01 10:10:00     purchase                     0</span>
+<span class="go">2        1   desktop 2024-01-01 10:05:00         view                     0</span>
+<span class="go">3        1   desktop 2024-01-01 10:20:00  add_to_cart                     0</span>
+<span class="go">4        1    mobile 2024-01-01 11:20:00     checkout                     1</span>
+<span class="go">5        2    mobile 2024-01-01 10:00:00         view                     2</span>
+<span class="go">6        2    mobile 2024-01-01 10:15:00     wishlist                     2</span>
+</pre></div>
+</div>
+<p>In this example, grouping by <code class="docutils literal notranslate"><span class="pre">user_id</span></code> results in three separate sessions:</p>
+<ul class="simple">
+<li><p>User 1 has two sessions (session 0 and session 1) because there is a gap of
+60 minutes between their events at 10:20 and 11:20, which exceeds the 30-minute
+threshold. The first four events of user 1 belong to session 0, while the
+last event belongs to session 1.</p></li>
+<li><p>User 2 has one session (session 2) because all their events are within
+30 minutes of the previous one.</p></li>
+</ul>
+<p>You can also identify users by multiple columns. For instance, the same user
+on different devices should have separate sessions.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_multi</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span> <span class="s1">&#39;device_id&#39;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result_multi</span> <span class="o">=</span> <span class="n">encoder_multi</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result_multi</span>
+<span class="go">user_id device_id           timestamp       action  timestamp_session_id</span>
+<span class="go">0        1    mobile 2024-01-01 10:00:00         view                     1</span>
+<span class="go">1        1    mobile 2024-01-01 10:10:00     purchase                     1</span>
+<span class="go">2        1   desktop 2024-01-01 10:05:00         view                     0</span>
+<span class="go">3        1   desktop 2024-01-01 10:20:00  add_to_cart                     0</span>
+<span class="go">4        1    mobile 2024-01-01 11:20:00     checkout                     2</span>
+<span class="go">5        2    mobile 2024-01-01 10:00:00         view                     3</span>
+<span class="go">6        2    mobile 2024-01-01 10:15:00     wishlist                     3</span>
+</pre></div>
+</div>
+<p>In this example:</p>
+<ul class="simple">
+<li><p>User 1 on “desktop” has session 0.</p></li>
+<li><p>User 1 on “mobile” has two sessions, session 1 and session 2, because there
+is a gap of 60 minutes between their events at 10:10 and 11:20, which exceeds
+the 30-minute threshold.</p></li>
+<li><p>User 2 on “mobile” has session 3 (different user).</p></li>
+</ul>
+<p>Note that the value of the session IDs are arbitrary and depend on the order
+of events in the dataframe. The important thing is that events that belong to
+the same session have the same session ID, and events that belong to different
+sessions have different session IDs.</p>
+<p>You can also use <code class="docutils literal notranslate"><span class="pre">SessionEncoder</span></code> without a user identifier column. In this case,
+sessions are separated only by time gaps. This is useful for analyzing a single
+timeseries or events that don’t have a user dimension:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_no_split</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data_no_split</span> <span class="o">=</span> <span class="p">{</span>
+<span class="gp">... </span>    <span class="s1">&#39;timestamp&#39;</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:00:00&#39;</span><span class="p">),</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:10:00&#39;</span><span class="p">),</span>  <span class="c1"># 10 min gap</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:15:00&#39;</span><span class="p">),</span>  <span class="c1"># 5 min gap, still in session</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 11:00:00&#39;</span><span class="p">),</span>  <span class="c1"># 45 min gap, new session</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 11:10:00&#39;</span><span class="p">),</span>  <span class="c1"># 10 min gap, continue session</span>
+<span class="gp">... </span>    <span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;event_type&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;start&#39;</span><span class="p">,</span> <span class="s1">&#39;action&#39;</span><span class="p">,</span> <span class="s1">&#39;action&#39;</span><span class="p">,</span> <span class="s1">&#39;restart&#39;</span><span class="p">,</span> <span class="s1">&#39;action&#39;</span><span class="p">]</span>
+<span class="gp">... </span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df_no_split</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_no_split</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result_no_split</span> <span class="o">=</span> <span class="n">encoder_no_split</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_no_split</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result_no_split</span>
+<span class="go">             timestamp event_type  timestamp_session_id</span>
+<span class="go">0 2024-01-01 10:00:00      start                     0</span>
+<span class="go">1 2024-01-01 10:10:00     action                     0</span>
+<span class="go">2 2024-01-01 10:15:00     action                     0</span>
+<span class="go">3 2024-01-01 11:00:00    restart                     1</span>
+<span class="go">4 2024-01-01 11:10:00     action                     1</span>
+</pre></div>
+</div>
+<p>In this example:</p>
+<ul class="simple">
+<li><p>Events at 10:00, 10:10, and 10:15 form session 0 (all gaps &lt; 30 min).</p></li>
+<li><p>The event at 11:00 starts a new session 1 (45 min gap &gt; 30 min).</p></li>
+<li><p>The event at 11:10 continues session 1 (10 min gap &lt; 30 min).</p></li>
+</ul>
+<p>It is possible to change the duration of the session gap by setting the
+<code class="docutils literal notranslate"><span class="pre">session_gap</span></code> parameter. For example, we can set it to 5 minutes (300 seconds)
+instead of the default 30 minutes, and this will change the session assignments
+accordingly:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_new_gap</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">session_gap</span><span class="o">=</span><span class="mi">300</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result_new_gap</span> <span class="o">=</span> <span class="n">encoder_new_gap</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_no_split</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result_new_gap</span>
+<span class="go">            timestamp event_type  timestamp_session_id</span>
+<span class="go">0 2024-01-01 10:00:00      start                     0</span>
+<span class="go">1 2024-01-01 10:10:00     action                     1</span>
+<span class="go">2 2024-01-01 10:15:00     action                     1</span>
+<span class="go">3 2024-01-01 11:00:00    restart                     2</span>
+<span class="go">4 2024-01-01 11:10:00     action                     3</span>
+</pre></div>
+</div>
+<p>It is also possible to change the suffix that is added at the end of the session
+ID column via the “suffix” parameter. This is useful, for example, if you want
+to add sessions based on different groupings or intervals:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data_multi</span> <span class="o">=</span> <span class="p">{</span>
+<span class="gp">... </span>    <span class="s1">&#39;user_id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;device_id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;mobile&#39;</span><span class="p">,</span> <span class="s1">&#39;mobile&#39;</span><span class="p">,</span> <span class="s1">&#39;desktop&#39;</span><span class="p">,</span> <span class="s1">&#39;desktop&#39;</span><span class="p">,</span> <span class="s1">&#39;mobile&#39;</span><span class="p">,</span> <span class="s1">&#39;mobile&#39;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;timestamp&#39;</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:00:00&#39;</span><span class="p">),</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:10:00&#39;</span><span class="p">),</span>  <span class="c1"># 10 min later, same session</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:05:00&#39;</span><span class="p">),</span>  <span class="c1"># Different device (sorted),</span>
+<span class="gp">... </span>                                                <span class="c1"># different session</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:20:00&#39;</span><span class="p">),</span>  <span class="c1"># 15 min later, same session</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:00:00&#39;</span><span class="p">),</span>  <span class="c1"># Different user</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:15:00&#39;</span><span class="p">),</span>  <span class="c1"># 15 min later, same session</span>
+<span class="gp">... </span>    <span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;action&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;view&#39;</span><span class="p">,</span> <span class="s1">&#39;purchase&#39;</span><span class="p">,</span> <span class="s1">&#39;view&#39;</span><span class="p">,</span> <span class="s1">&#39;checkout&#39;</span><span class="p">,</span> <span class="s1">&#39;login&#39;</span><span class="p">,</span> <span class="s1">&#39;view&#39;</span><span class="p">]</span>
+<span class="gp">... </span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_multi</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_user</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span><span class="s2">&quot;timestamp&quot;</span><span class="p">,</span>
+<span class="gp">... </span><span class="n">split_by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;user_id&quot;</span><span class="p">],</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;user&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_user</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="go">user_id device_id           timestamp    action  timestamp_user</span>
+<span class="go">0        1    mobile 2024-01-01 10:00:00      view                  0</span>
+<span class="go">1        1    mobile 2024-01-01 10:10:00  purchase                  0</span>
+<span class="go">2        1   desktop 2024-01-01 10:05:00      view                  0</span>
+<span class="go">3        1   desktop 2024-01-01 10:20:00  checkout                  0</span>
+<span class="go">4        2    mobile 2024-01-01 10:00:00     login                  1</span>
+<span class="go">5        2    mobile 2024-01-01 10:15:00      view                  1</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_user_device</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span><span class="s2">&quot;timestamp&quot;</span><span class="p">,</span>
+<span class="gp">... </span><span class="n">split_by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;user_id&quot;</span><span class="p">,</span> <span class="s2">&quot;device_id&quot;</span><span class="p">],</span>
+<span class="gp">... </span><span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;user_device&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_user_device</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="go">user_id device_id           timestamp    action  timestamp_user_device</span>
+<span class="go">0        1    mobile 2024-01-01 10:00:00      view                      1</span>
+<span class="go">1        1    mobile 2024-01-01 10:10:00  purchase                      1</span>
+<span class="go">2        1   desktop 2024-01-01 10:05:00      view                      0</span>
+<span class="go">3        1   desktop 2024-01-01 10:20:00  checkout                      0</span>
+<span class="go">4        2    mobile 2024-01-01 10:00:00     login                      2</span>
+<span class="go">5        2    mobile 2024-01-01 10:15:00      view                      2</span>
+</pre></div>
+</div>
+<p>When the timestamp column or any of the split_by columns contains null values,
+those rows will be assigned <strong>session ID -1</strong>, and will be ignored when computing
+time intervals. In some versions of pandas,
+adding nulls to a pandas column of integers will convert it to float, which can
+cause issues with grouping if there are a lot of sessions.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data_with_nulls</span> <span class="o">=</span> <span class="p">{</span>
+<span class="gp">... </span>    <span class="s1">&#39;user_id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>  <span class="c1"># None value in split_by column</span>
+<span class="gp">... </span>    <span class="s1">&#39;timestamp&#39;</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:00:00&#39;</span><span class="p">),</span>
+<span class="gp">... </span>        <span class="kc">None</span><span class="p">,</span>  <span class="c1"># None value in timestamp column</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:10:00&#39;</span><span class="p">),</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:20:00&#39;</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="p">],</span>
+<span class="gp">... </span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df_with_nulls</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_with_nulls</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_with_nulls</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result_with_nulls</span> <span class="o">=</span> <span class="n">encoder_with_nulls</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_with_nulls</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result_with_nulls</span>
+<span class="go">user_id           timestamp  timestamp_session_id</span>
+<span class="go">0      1.0 2024-01-01 10:00:00                     0</span>
+<span class="go">1      1.0                 NaT                    -1</span>
+<span class="go">2      NaN 2024-01-01 10:10:00                    -1</span>
+<span class="go">3      1.0 2024-01-01 10:20:00                     0</span>
+</pre></div>
+</div>
+<p>In this example:</p>
+<ul class="simple">
+<li><p>Row 0 has valid user_id and timestamp, so it gets session ID 0.</p></li>
+<li><p>Row 1 has a null timestamp, so it gets session ID -1.</p></li>
+<li><p>Row 2 has a null user_id, so it gets session ID -1.</p></li>
+<li><p>Row 3 has valid user_id and timestamp, and since there is less than 30 minutes
+between rows 0 and 3 (ignoring row 1 and 2 due to null values), it gets the
+same session ID as row 0.</p></li>
+</ul>
+<p class="rubric">Methods</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.SessionEncoder.fit" title="skrub.SessionEncoder.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(X[, y])</p></td>
+<td><p>Fit the transformer to the data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.SessionEncoder.fit_transform" title="skrub.SessionEncoder.fit_transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit_transform</span></code></a>(X[, y])</p></td>
+<td><p>Fit the transformer to the data and return the transformed dataframe.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.SessionEncoder.get_feature_names_out" title="skrub.SessionEncoder.get_feature_names_out"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_feature_names_out</span></code></a>([input_features])</p></td>
+<td><p>Return the column names of the output of <code class="docutils literal notranslate"><span class="pre">transform</span></code> as a list of strings.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.SessionEncoder.get_params" title="skrub.SessionEncoder.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>([deep])</p></td>
+<td><p>Get parameters for this estimator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.SessionEncoder.set_output" title="skrub.SessionEncoder.set_output"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_output</span></code></a>(*[, transform])</p></td>
+<td><p>Set output container.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skrub.SessionEncoder.set_params" title="skrub.SessionEncoder.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(**params)</p></td>
+<td><p>Set the parameters of this estimator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skrub.SessionEncoder.transform" title="skrub.SessionEncoder.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(X[, y])</p></td>
+<td><p>Transform the data by encoding sessions.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SessionEncoder.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8fe6d35/skrub/_session_encoder.py#L488"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.fit" title="Link to this definition">#</a></dt>
+<dd><p>Fit the transformer to the data.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier">pandas.DataFrame or polars.DataFrame</span></dt><dd><p>The input dataframe.</p>
+</dd>
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Ignored.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">SessionEncoder</span></dt><dd><p>The fitted transformer.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SessionEncoder.fit_transform">
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8fe6d35/skrub/_session_encoder.py#L507"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.fit_transform" title="Link to this definition">#</a></dt>
+<dd><p>Fit the transformer to the data and return the transformed dataframe.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier">pandas.DataFrame or polars.DataFrame</span></dt><dd><p>The input dataframe.</p>
+</dd>
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Ignored.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>pandas.DataFrame or polars.DataFrame</dt><dd><p>The transformed dataframe with session information.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SessionEncoder.get_feature_names_out">
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8fe6d35/skrub/_session_encoder.py#L620"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.get_feature_names_out" title="Link to this definition">#</a></dt>
+<dd><p>Return the column names of the output of <code class="docutils literal notranslate"><span class="pre">transform</span></code> as a list of strings.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>input_features</strong><span class="classifier"><a class="reference external" href="https://numpy.org/doc/stable/glossary.html#term-array_like" title="(in NumPy v2.5)"><span>array_like</span></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a>, default=None</span></dt><dd><p>Ignored.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of strings</dt><dd><p>The column names.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SessionEncoder.get_params">
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8fe6d35/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.get_params" title="Link to this definition">#</a></dt>
+<dd><p>Get parameters for this estimator.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>deep</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>If True, will return the parameters for this estimator and
+contained subobjects that are estimators.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl>
+<dt><strong>params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Parameter names mapped to their values.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SessionEncoder.set_output">
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8fe6d35/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L392"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.set_output" title="Link to this definition">#</a></dt>
+<dd><p>Set output container.</p>
+<p>Refer to the <a class="reference external" href="https://scikit-learn.org/stable/modules/df_output_transform.html#df-output-transform" title="(in scikit-learn v1.9)"><span class="xref std std-ref">user guide</span></a> for more details
+and <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.9)"><span>Introducing the set_output API</span></a> for an
+example on how to use the API.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>transform</strong><span class="classifier">{“default”, “pandas”, “polars”}, default=None</span></dt><dd><p>Configure output of <code class="docutils literal notranslate"><span class="pre">transform</span></code> and <code class="docutils literal notranslate"><span class="pre">fit_transform</span></code>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;default&quot;</span></code>: Default output format of a transformer</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;pandas&quot;</span></code>: DataFrame output</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;polars&quot;</span></code>: Polars output</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code>: Transform configuration is unchanged</p></li>
+</ul>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 1.4: </span><code class="docutils literal notranslate"><span class="pre">&quot;polars&quot;</span></code> option was added.</p>
+</div>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">estimator instance</span></dt><dd><p>Estimator instance.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SessionEncoder.set_params">
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8fe6d35/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.set_params" title="Link to this definition">#</a></dt>
+<dd><p>Set the parameters of this estimator.</p>
+<p>The method works on simple estimators as well as on nested objects
+(such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
+parameters of the form <code class="docutils literal notranslate"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it’s
+possible to update each component of a nested object.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>**params</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">dict</span></code></a></span></dt><dd><p>Estimator parameters.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">estimator instance</span></dt><dd><p>Estimator instance.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="skrub.SessionEncoder.transform">
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8fe6d35/skrub/_session_encoder.py#L537"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.transform" title="Link to this definition">#</a></dt>
+<dd><p>Transform the data by encoding sessions.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>X</strong><span class="classifier">pandas.DataFrame or polars.DataFrame</span></dt><dd><p>The input dataframe.</p>
+</dd>
+<dt><strong>y</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">None</span></code></a></span></dt><dd><p>Ignored.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>pandas.DataFrame or polars.DataFrame</dt><dd><p>The transformed dataframe with session information.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<section id="gallery-examples">
+<h2>Gallery examples<a class="headerlink" href="#gallery-examples" title="Link to this heading">#</a></h2>
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to use |SessionEncoder| in a scikit-learn pipeline to create session-level features (sessionization) for conversion prediction, that is predicting whether a user session will eventually lead to a purchase."><img alt="" src="../../_images/sphx_glr_0110_session_encoder_thumb.svg" />
+<p><a class="reference internal" href="../../auto_examples/0110_session_encoder.html"><span class="doc">Sessions in time-based data: Predicting user purchases with the SessionEncoder</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Sessions in time-based data: Predicting user purchases with the SessionEncoder</div>
+</div></div></section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="skrub.DatetimeEncoder.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">DatetimeEncoder</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="skrub.ToDatetime.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">ToDatetime</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SessionEncoder"><code class="docutils literal notranslate"><span class="pre">SessionEncoder</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SessionEncoder.fit"><code class="docutils literal notranslate"><span class="pre">SessionEncoder.fit()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SessionEncoder.fit_transform"><code class="docutils literal notranslate"><span class="pre">SessionEncoder.fit_transform()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SessionEncoder.get_feature_names_out"><code class="docutils literal notranslate"><span class="pre">SessionEncoder.get_feature_names_out()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SessionEncoder.get_params"><code class="docutils literal notranslate"><span class="pre">SessionEncoder.get_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SessionEncoder.set_output"><code class="docutils literal notranslate"><span class="pre">SessionEncoder.set_output()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SessionEncoder.set_params"><code class="docutils literal notranslate"><span class="pre">SessionEncoder.set_params()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skrub.SessionEncoder.transform"><code class="docutils literal notranslate"><span class="pre">SessionEncoder.transform()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gallery-examples">Gallery examples</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/reference/generated/skrub.SessionEncoder.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">Financial support from <a href="https://inria.fr">inria</a> and <a
+href="https://probabl.ai">:probabl.</a></div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">Part of <a href="https://scikit-learn-central.probabl.ai">scikit-learn
+central</a></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

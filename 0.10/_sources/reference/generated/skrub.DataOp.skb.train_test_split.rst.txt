@@ -1,0 +1,6 @@
+﻿skrub.DataOp.skb.train_test_split
+=================================
+
+.. currentmodule:: skrub
+
+.. autoaccessormethod:: DataOp.skb.train_test_split

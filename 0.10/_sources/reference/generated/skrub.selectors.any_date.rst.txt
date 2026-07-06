@@ -1,0 +1,10 @@
+﻿any\_date
+=========
+
+.. currentmodule:: skrub.selectors
+
+.. autofunction:: any_date
+
+.. minigallery:: skrub.selectors.any_date
+   :add-heading: Gallery examples
+   :heading-level: -
