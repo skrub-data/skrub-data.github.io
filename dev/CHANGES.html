@@ -648,6 +648,11 @@ columns (the bin count and edges, and numbers of low and high outliers). Now
 including the plots. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2164">#2164</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>Added <a class="reference internal" href="reference/generated/skrub.selectors.object.html#skrub.selectors.object" title="skrub.selectors.object"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.selectors.object()</span></code></a> to select columns with the <code class="docutils literal notranslate"><span class="pre">object</span></code>
 (pandas) or <code class="docutils literal notranslate"><span class="pre">pl.Object</span></code> (polars) dtype. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2171">#2171</a> by <a class="reference external" href="https://github.com/omkar-334">Omkar Kabde</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.ParamSearch.html#skrub.ParamSearch.plot_results" title="skrub.ParamSearch.plot_results"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ParamSearch.plot_results()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.OptunaParamSearch.html#skrub.OptunaParamSearch.plot_results" title="skrub.OptunaParamSearch.plot_results"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OptunaParamSearch.plot_results()</span></code></a>
+accept new parameters <code class="docutils literal notranslate"><span class="pre">show_scores</span></code>, <code class="docutils literal notranslate"><span class="pre">show_choices</span></code>, and <code class="docutils literal notranslate"><span class="pre">show_times</span></code> to
+control respectively which scores, choices (params), and times (fit or score
+durations) should be included in the figure. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2202">#2202</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme
+Dockès</a>.</p></li>
 </ul>
 </section>
 <section id="id1">

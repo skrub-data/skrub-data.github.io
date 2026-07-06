@@ -57,6 +57,11 @@
   including the plots. [#2164](https://github.com/skrub-data/skrub/pull/2164) by [Jérôme Dockès](https://github.com/jeromedockes).
 - Added [`skrub.selectors.object()`](reference/generated/skrub.selectors.objecthtml.md#skrub.selectors.object) to select columns with the `object`
   (pandas) or `pl.Object` (polars) dtype. [#2171](https://github.com/skrub-data/skrub/pull/2171) by [Omkar Kabde](https://github.com/omkar-334).
+- [`ParamSearch.plot_results()`](reference/generated/skrub.ParamSearchhtml.md#skrub.ParamSearch.plot_results) and [`OptunaParamSearch.plot_results()`](reference/generated/skrub.OptunaParamSearchhtml.md#skrub.OptunaParamSearch.plot_results)
+  accept new parameters `show_scores`, `show_choices`, and `show_times` to
+  control respectively which scores, choices (params), and times (fit or score
+  durations) should be included in the figure. [#2202](https://github.com/skrub-data/skrub/pull/2202) by [Jérôme
+  Dockès](https://github.com/jeromedockes).
 
 ### Changes
 

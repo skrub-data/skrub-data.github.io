@@ -19,10 +19,10 @@ objects are created by calling [`make_grid_search()`](skrub.DataOp.skb.make_grid
 
 ### Methods
 
-| [`get_params`](#skrub.ParamSearch.get_params)([deep])                          | Get parameters for this estimator.                                 |
-|--------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [`plot_results`](#skrub.ParamSearch.plot_results)(\*[, colorscale, min_score]) | Create a parallel coordinate plot of the cross-validation results. |
-| [`set_params`](#skrub.ParamSearch.set_params)(\*\*params)                      | Set the parameters of this estimator.                              |
+| [`get_params`](#skrub.ParamSearch.get_params)([deep])                               | Get parameters for this estimator.                                 |
+|-------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| [`plot_results`](#skrub.ParamSearch.plot_results)(\*[, colorscale, min_score, ...]) | Create a parallel coordinate plot of the cross-validation results. |
+| [`set_params`](#skrub.ParamSearch.set_params)(\*\*params)                           | Set the parameters of this estimator.                              |
 
 | **fit**   |    |
 |-----------|----|
@@ -52,7 +52,7 @@ Get parameters for this estimator.
 
 <!-- !! processed by numpydoc !! -->
 
-#### plot_results(, colorscale='bluered', min_score=None)
+#### plot_results(, colorscale='bluered', min_score=None, show_scores=None, show_choices=None, show_times=None)
 
 Create a parallel coordinate plot of the cross-validation results.
 
@@ -68,6 +68,23 @@ Plotly must be installed to use this method.
     This is useful when we are only interested in the models that
     perform well, to make the plot less cluttered and to make better
     use of the colorscale’s range.
+
+  **show_scores**
+  : List of score names to show
+    (e.g. “accuracy” in `.skb.with_scoring(["roc_auc", "accuracy"])`).
+    By default all are shown.
+
+  **show_choices**
+  : List of choice names to show
+    (e.g. “alpha” in `choose_float(0.0, 1.0, name="alpha")`).
+    Only choices that were given an explicit name (with the `name`
+    parameter, as above) can be selected by the filter.
+    By default there is no filtering and all choices (even those
+    without names) are shown.
+
+  **show_times**
+  : List of durations to show. Available times are [“fit”, “score”].
+    By default both are shown.
 * **Returns:**
   Plotly [`Figure`](https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure)
 
