@@ -35,7 +35,7 @@ than a threshold, if they contain one unique value, or if all values are unique.
 [`DropCols`](skrub.DropColshtml.md#skrub.DropCols)
 : Dropping cols by name, dtypes, or general skrub selectors.
 
-`DropSimilar`
+[`DropSimilar`](skrub.DropSimilarhtml.md#skrub.DropSimilar)
 : Drops columns too closely correlated to the dataframe’s other columns.
 
 ### Notes

@@ -579,10 +579,12 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../cleaning.html">cleaning</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="skrub.SquashingScaler.html">SquashingScaler</a></li>
-<li class="toctree-l2"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.Cleaner.html">Cleaner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.DropUninformative.html">DropUninformative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DropSimilar.html">DropSimilar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.DurationToFloat.html">DurationToFloat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.to_datetime.html">to_datetime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.deduplicate.html">deduplicate</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../selectors.html">selectors</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -781,7 +783,7 @@
 <h1>make_retail_events<a class="headerlink" href="#make-retail-events" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.make_retail_events">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">make_retail_events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_users</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">200</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_events</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/afe297c/skrub/datasets/_generating.py#L310"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.make_retail_events" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">make_retail_events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_users</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">200</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_events</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/823d0f2/skrub/datasets/_generating.py#L310"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.make_retail_events" title="Link to this definition">#</a></dt>
 <dd><p>Generate a synthetic e-commerce clickstream dataset for classification.</p>
 <p>Each row represents one user interaction event on a retail platform.
 The dataset is designed to showcase <a class="reference internal" href="skrub.SessionEncoder.html#skrub.SessionEncoder" title="skrub.SessionEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionEncoder</span></code></a> (which

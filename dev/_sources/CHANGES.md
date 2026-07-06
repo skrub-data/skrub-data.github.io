@@ -6,15 +6,52 @@
 
 ### New Features
 
-- [`set_config()`](reference/generated/skrub.set_confightml.md#skrub.set_config) and [`config_context()`](reference/generated/skrub.config_contexthtml.md#skrub.config_context) now accept a
-  `table_report_n_rows` parameter to globally control the default number of
-  rows displayed in [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport).
-  [#2193](https://github.com/skrub-data/skrub/pull/2193) by [Mann](https://github.com/m4nn2609-dot).
+**Transformers**:
+
+- The [`SessionEncoder`](reference/generated/skrub.SessionEncoderhtml.md#skrub.SessionEncoder) is now available. This encoder adds a `session_id`
+  column, which groups together events that occur within the given session gap.
+  Additionally, it is possible to provide a `split_by` column or list of columns
+  (e.g., user ID or (user ID, user device)) to compute sessions for each grouping
+  value.
+  [#1930](https://github.com/skrub-data/skrub/pull/1930) by  [Riccardo Cappuzzo](https://github.com/rcap107).
+- The [`DropSimilar`](reference/generated/skrub.DropSimilarhtml.md#skrub.DropSimilar) transformer has been added, for removing columns that
+  present high correlation with other columns in a dataframe . [#2023](https://github.com/skrub-data/skrub/pull/2023) by
+  [Eloi Massoulié](https://github.com/emassoulie).
+- [`ToFloat`](reference/generated/skrub.ToFloathtml.md#skrub.ToFloat) now allows users to specify `decimal` and `thousand`
+  separators to parse numerical columns that use formatting different from the default
+  formatting used in Python, such as `1'234,5`.
+  Additionally, negative numbers indicated with parentheses can be converted to the
+  regular numeric format (`(432)` becomes `-432`). [#1772](https://github.com/skrub-data/skrub/pull/1772) by [Gabriela
+  Gómez Jiménez](https://github.com/gabrielapgomezji).
+- The transformer [`DurationToFloat`](reference/generated/skrub.DurationToFloathtml.md#skrub.DurationToFloat) has been added. [#2069](https://github.com/skrub-data/skrub/pull/2069) by
+  [Riccardo Cappuzzo](https://github.com/rcap107).
+
+**TableReport**:
+
+- [`TableReport.json()`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport.json) now includes histogram data for numeric and datetime
+  columns (the bin count and edges, and numbers of low and high outliers). Now
+  `json()` contains all the information shown in the report HTML rendering,
+  including the plots. The schema of the generated JSON is available at
+  [TableReport JSON schema](reference/table_report_json_schemahtml.md#table-report-json-schema).
+  [#2164](https://github.com/skrub-data/skrub/pull/2164) by [Jérôme Dockès](https://github.com/jeromedockes).
+- The [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) can now be exported in markdown format with
+  [`markdown()`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport.markdown).
+  [#2048](https://github.com/skrub-data/skrub/pull/2048) by [Riccardo Cappuzzo](https://github.com/rcap107).
 - [`TableReport.dict()`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport.dict) now allows exporting the report data as a Python
   dictionary. [#2188](https://github.com/skrub-data/skrub/pull/2188) by [m4nn2609-dot](https://github.com/m4nn2609-dot).
-- New methods [`SkrubLearner.get_named_params()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.get_named_params) and
-  [`SkrubLearner.set_named_params()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.set_named_params) allow getting and setting the outcomes for
-  choices contained in the DataOp, keyed by choice name. It provides a more
+
+**Data Ops**:
+
+- [`ParamSearch.plot_results()`](reference/generated/skrub.ParamSearchhtml.md#skrub.ParamSearch.plot_results) and [`OptunaParamSearch.plot_results()`](reference/generated/skrub.OptunaParamSearchhtml.md#skrub.OptunaParamSearch.plot_results)
+  accept new parameters `show_scores`, `show_choices`, and `show_times` to
+  control respectively which scores, choices (params), and times (fit or score
+  durations) should be included in the figure. [#2202](https://github.com/skrub-data/skrub/pull/2202) by [Jérôme
+  Dockès](https://github.com/jeromedockes).
+- New [`SkrubLearner`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) methods
+  [`SkrubLearner.get_named_params()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.get_named_params) and
+  [`SkrubLearner.set_named_params()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.set_named_params) allow getting and
+  setting the outcomes for
+  choices contained in the DataOp, keyed by choice name. They provide a more
   robust way of transferring selected hyperparameters from one DataOp to a
   different one than [`SkrubLearner.get_params()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.get_params) and
   [`SkrubLearner.set_params()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.set_params).
@@ -27,60 +64,30 @@
 - It is now possible to attach new preview values to the variables in a DataOp
   with [`DataOp.skb.set_data()`](reference/generated/skrub.DataOp.skb.set_datahtml.md#skrub.DataOp.skb.set_data). [#2081](https://github.com/skrub-data/skrub/pull/2081) by
   [Jérôme Dockès](https://github.com/jeromedockes).
-- [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) objects have a new attribute [`DataOp.skb.id`](reference/generated/skrub.DataOp.skb.idhtml.md#skrub.DataOp.skb.id) which
-  provides an alternative for referring to a node, in the environment passed to
+- [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) objects have a new attribute [`DataOp.skb.id`](reference/generated/skrub.DataOp.skb.idhtml.md#skrub.DataOp.skb.id).
+  [`DataOp.skb.id`](reference/generated/skrub.DataOp.skb.idhtml.md#skrub.DataOp.skb.id)
+  provides an alternative for referring to a node in the environment passed to
   [`DataOp.skb.eval()`](reference/generated/skrub.DataOp.skb.evalhtml.md#skrub.DataOp.skb.eval), `SkrubLearner.predict()`, etc., or in
   [`DataOp.skb.find()`](reference/generated/skrub.DataOp.skb.findhtml.md#skrub.DataOp.skb.find) or [`SkrubLearner.truncated_after()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.truncated_after). [#2062](https://github.com/skrub-data/skrub/pull/2062) by
   [Jérôme Dockès](https://github.com/jeromedockes).
-- The [`SessionEncoder`](reference/generated/skrub.SessionEncoderhtml.md#skrub.SessionEncoder) is now available. This encoder adds a `session_id`
-  column, which groups together events that occur within the given session gap.
-  Additionally, it is possible to provide a `split_by` column or list of columns
-  (e.g., user ID or (user ID, user device)) to compute sessions for each grouping
-  value.
-  [#1930](https://github.com/skrub-data/skrub/pull/1930) by  [Riccardo Cappuzzo](https://github.com/rcap107).
-- A new synthetic dataset generator for timestamped data and session-based
 
-> operations has been added: [`make_retail_events()`](reference/generated/skrub.datasets.make_retail_eventshtml.md#skrub.datasets.make_retail_events).
-> [#1930](https://github.com/skrub-data/skrub/pull/1930) by  [Riccardo Cappuzzo](https://github.com/rcap107).
-- The `DropSimilar` transformer has been added, for removing columns in a
-  dataframe that present high correlation with other columns. [#2023](https://github.com/skrub-data/skrub/pull/2023) by
-  [Eloi Massoulié](https://github.com/emassoulie).
-- `ToFloat32` now allows users to specify `decimal` and `thousand`
-  separators to parse numerical columns that use formatting different from the default
-  formatting used in Python, such as `1'234,5`.
-  Additionally, negative numbers indicated with parentheses can be converted to the
-  regular numeric format (`(432)` becomes `-432`). [#1772](https://github.com/skrub-data/skrub/pull/1772) by [Gabriela
-  Gómez Jiménez](https://github.com/gabrielapgomezji).
-- [`TableReport.json()`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport.json) now includes histogram data for numeric and datetime
-  columns (the bin count and edges, and numbers of low and high outliers). Now
-  `json()` contains all the information shown in the report html rendering,
-  including the plots. [#2164](https://github.com/skrub-data/skrub/pull/2164) by [Jérôme Dockès](https://github.com/jeromedockes).
-- Added [`skrub.selectors.object()`](reference/generated/skrub.selectors.objecthtml.md#skrub.selectors.object) to select columns with the `object`
-  (pandas) or `pl.Object` (polars) dtype. [#2171](https://github.com/skrub-data/skrub/pull/2171) by [Omkar Kabde](https://github.com/omkar-334).
-- [`ParamSearch.plot_results()`](reference/generated/skrub.ParamSearchhtml.md#skrub.ParamSearch.plot_results) and [`OptunaParamSearch.plot_results()`](reference/generated/skrub.OptunaParamSearchhtml.md#skrub.OptunaParamSearch.plot_results)
-  accept new parameters `show_scores`, `show_choices`, and `show_times` to
-  control respectively which scores, choices (params), and times (fit or score
-  durations) should be included in the figure. [#2202](https://github.com/skrub-data/skrub/pull/2202) by [Jérôme
-  Dockès](https://github.com/jeromedockes).
+**Misc**:
+
+- A new synthetic dataset generator for timestamped data and session-based
+  operations has been added: [`make_retail_events()`](reference/generated/skrub.datasets.make_retail_eventshtml.md#skrub.datasets.make_retail_events).
+  [#1930](https://github.com/skrub-data/skrub/pull/1930) by  [Riccardo Cappuzzo](https://github.com/rcap107).
+- Added the [`object()`](reference/generated/skrub.selectors.objecthtml.md#skrub.selectors.object) selector to select columns with the
+  `object` (pandas) or `pl.Object` (polars) dtype. [#2171](https://github.com/skrub-data/skrub/pull/2171) by
+  [Omkar Kabde](https://github.com/omkar-334).
+- [`set_config()`](reference/generated/skrub.set_confightml.md#skrub.set_config) and [`config_context()`](reference/generated/skrub.config_contexthtml.md#skrub.config_context) now accept a
+  `table_report_n_rows` parameter to globally control the default number of
+  rows displayed in [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport).
+  [#2193](https://github.com/skrub-data/skrub/pull/2193) by [Mann](https://github.com/m4nn2609-dot).
 
 ### Changes
 
-- Grouped Examples into subject-specific sections. [#2102](https://github.com/skrub-data/skrub/pull/2102) by
-  [Maureen Githaiga](https://github.com/maureen-githaiga).
-- [`choose_from()`](reference/generated/skrub.choose_fromhtml.md#skrub.choose_from) now transparently converts `outcomes` to a list when it is
-  another type of sequence. [#2100](https://github.com/skrub-data/skrub/pull/2100) by [aidbar](https://github.com/aidbar).
-- An unnecessary warning that was raised when passing a numpy array to the
-  TableVectorizer has been removed. [#1908](https://github.com/skrub-data/skrub/pull/1908) by
-  [Sandrine Henry](https://github.com/sandrineh).
-- Improving the association tab error message when only one column is present
-  [#2094](https://github.com/skrub-data/skrub/pull/2094) by [Alicja Kosak](https://github.com/AlicjaKo).
-- Added support for numpy arrays in [`DataOp.skb.concat()`](reference/generated/skrub.DataOp.skb.concathtml.md#skrub.DataOp.skb.concat).
-  [#2096](https://github.com/skrub-data/skrub/pull/2096) by [Ayesha Siddiqua](https://github.com/siddiqua-tamk).
-- The [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) can now be exported in markdown format with `.markdown`.
-  [#2048](https://github.com/skrub-data/skrub/pull/2048) by [Riccardo Cappuzzo](https://github.com/rcap107).
-- The minimum required version of matplotlib has been increased from 3.4.3 to 3.6.1.
-  [#2159](https://github.com/skrub-data/skrub/pull/2159) by [Riccardo Cappuzzo](https://github.com/rcap107).
-- `SkrubLearner.score()` has been enhanced when the DataOp used
+- [`SkrubLearner`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner)’s `SkrubLearner.score()`
+  has been enhanced when the DataOp used
   [`DataOp.skb.with_scoring()`](reference/generated/skrub.DataOp.skb.with_scoringhtml.md#skrub.DataOp.skb.with_scoring). During scoring, predict(), predict_proba()
   etc. are cached to avoid recomputation when multiple scorers are used (or one
   scorer calls them several times). Moreover it is possible to pass
@@ -93,25 +100,39 @@
 - [`SkrubLearner.find_fitted_estimator()`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.find_fitted_estimator) now supports searching for the
   apply node by ID or callable predicate as alternatives to the node name.
   [#2194](https://github.com/skrub-data/skrub/pull/2194) by [Jérôme Dockès](https://github.com/jeromedockes).
+- The minimum required version of matplotlib has been increased from 3.4.3 to 3.6.1.
+  [#2159](https://github.com/skrub-data/skrub/pull/2159) by [Riccardo Cappuzzo](https://github.com/rcap107).
+- Gallery examples have been grouped into subject-specific sections. [#2102](https://github.com/skrub-data/skrub/pull/2102) by
+  [Maureen Githaiga](https://github.com/maureen-githaiga).
+- [`choose_from()`](reference/generated/skrub.choose_fromhtml.md#skrub.choose_from) now transparently converts `outcomes` to a list when it is
+  another type of sequence. [#2100](https://github.com/skrub-data/skrub/pull/2100) by [aidbar](https://github.com/aidbar).
+- An unnecessary warning that was raised when passing a numpy array to the
+  TableVectorizer has been removed. [#1908](https://github.com/skrub-data/skrub/pull/1908) by
+  [Sandrine Henry](https://github.com/sandrineh).
+- The error message displayed in the Associations tab of the [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport)
+  has been improved for reports where only one column is present.
+  [#2094](https://github.com/skrub-data/skrub/pull/2094) by [Alicja Kosak](https://github.com/AlicjaKo).
+- Added support for numpy arrays in [`DataOp.skb.concat()`](reference/generated/skrub.DataOp.skb.concathtml.md#skrub.DataOp.skb.concat).
+  [#2096](https://github.com/skrub-data/skrub/pull/2096) by [Ayesha Siddiqua](https://github.com/siddiqua-tamk).
 
 ### Bugfixes
 
+- A bug in how the [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) and [`Cleaner`](reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) treated columns
+  duration columns in pandas and polars has been fixed. Now, both classes convert
+  durations to the total number of seconds (with fractional part). This is done
+  by the new transformer [`DurationToFloat`](reference/generated/skrub.DurationToFloathtml.md#skrub.DurationToFloat). [#2069](https://github.com/skrub-data/skrub/pull/2069) by
+  [Riccardo Cappuzzo](https://github.com/rcap107).
+- An error that could arise when running [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) on dataframes containing
+  double dollar (`$$`) signs has been fixed.
+  [#2154](https://github.com/skrub-data/skrub/pull/2154) by [Katerina Michenina](https://github.com/Michenina-Lab),
+  [CecilyTS](https://github.com/CecilyTS), [Eve Rabin](https://github.com/eve2705).
 - [`MinHashEncoder`](reference/generated/skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder) with the default `hashing="fast"` now uses every
   n-gram size in `ngram_range` (the upper bound is inclusive, as documented
   and as already done by `hashing="murmur"`). Previously the largest size was
   dropped, so the default `ngram_range=(2, 4)` ignored 4-grams and a
   single-size range such as `(3, 3)` produced the same constant encoding for
   every string. [#2168](https://github.com/skrub-data/skrub/pull/2168) by [José Maia](https://github.com/glitch-ux).
-- A bug in how the [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) and [`Cleaner`](reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) treated columns
-  duration columns in pandas and polars has been fixed. Now, both classes convert
-  durations to the total number of seconds (with fractional part). This is done
-  by the new transformer `DurationToFloat`. [#2069](https://github.com/skrub-data/skrub/pull/2069) by
-  [Riccardo Cappuzzo](https://github.com/rcap107).
-- An error that could arise when running `TableReport` on dataframes containing
-  double dollar (`$$`) signs has been fixed.
-  [#2154](https://github.com/skrub-data/skrub/pull/2154) by [Katerina Michenina](https://github.com/Michenina-Lab),
-  [CecilyTS](https://github.com/CecilyTS), [Eve Rabin](https://github.com/eve2705).
-- An error that happened when running `TableReport` or `column_associations`
+- An error that happened when running [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) or `column_associations`
   on some dataframes with non-string column names has been fixed in [#2179](https://github.com/skrub-data/skrub/pull/2179)
   by [Jérôme Dockès](https://github.com/jeromedockes).
 - An error that could arise in histograms when running [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) on

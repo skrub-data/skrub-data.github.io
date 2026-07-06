@@ -159,16 +159,22 @@ Cleaning a dataframe
   SquashingScaler
 
 
-  deduplicate
-
-
   Cleaner
 
 
   DropUninformative
 
 
+  DropSimilar
+
+
+  DurationToFloat
+
+
   to_datetime
+
+
+  deduplicate
 
 
 

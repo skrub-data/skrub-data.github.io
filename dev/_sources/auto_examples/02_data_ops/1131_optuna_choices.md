@@ -105,25 +105,25 @@ search.results_
 ```
 
 ```none
-Running optuna search for study skrub_randomized_search_e2286f3e-9e71-4506-960e-c8dad55447cd in storage /tmp/tmpxkmibxhp_skrub_optuna_search_storage/optuna_storage
-[I 2026-07-06 10:01:32,996] A new study created in Journal with name: skrub_randomized_search_e2286f3e-9e71-4506-960e-c8dad55447cd
-[I 2026-07-06 10:01:33,439] Trial 0 finished with value: 0.5998958893326463 and parameters: {'2:regressor': '1:ridge', '1:α': 0.08737056333717456}. Best is trial 0 with value: 0.5998958893326463.
-[I 2026-07-06 10:01:33,905] Trial 1 finished with value: 0.5998965729709886 and parameters: {'2:regressor': '1:ridge', '1:α': 0.17777676175509427}. Best is trial 1 with value: 0.5998965729709886.
-[I 2026-07-06 10:01:34,296] Trial 2 finished with value: 0.5998956300607201 and parameters: {'2:regressor': '1:ridge', '1:α': 0.05323908243249831}. Best is trial 1 with value: 0.5998965729709886.
-[I 2026-07-06 10:01:34,692] Trial 3 finished with value: 0.5998953213503151 and parameters: {'2:regressor': '1:ridge', '1:α': 0.012709575518456051}. Best is trial 1 with value: 0.5998965729709886.
-[I 2026-07-06 10:01:41,971] Trial 4 finished with value: 0.7913290174928354 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 4 with value: 0.7913290174928354.
-[I 2026-07-06 10:01:51,779] Trial 5 finished with value: 0.7931359271779979 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 5 with value: 0.7931359271779979.
-[I 2026-07-06 10:01:52,132] Trial 6 finished with value: 0.5998987110257883 and parameters: {'2:regressor': '1:ridge', '1:α': 0.464456825115831}. Best is trial 5 with value: 0.7931359271779979.
-[I 2026-07-06 10:01:56,503] Trial 7 finished with value: 0.7588919833029395 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 7}. Best is trial 5 with value: 0.7931359271779979.
-[I 2026-07-06 10:02:01,563] Trial 8 finished with value: 0.7759552041707828 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 5 with value: 0.7931359271779979.
-[I 2026-07-06 10:02:08,096] Trial 9 finished with value: 0.7894246170474473 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 5 with value: 0.7931359271779979.
-[I 2026-07-06 10:02:08,098] A new study created in memory with name: skrub_randomized_search_e2286f3e-9e71-4506-960e-c8dad55447cd
+Running optuna search for study skrub_randomized_search_49537908-4ece-433e-92f1-23a347ee3ff3 in storage /tmp/tmpje2w04f1_skrub_optuna_search_storage/optuna_storage
+[I 2026-07-06 12:10:04,065] A new study created in Journal with name: skrub_randomized_search_49537908-4ece-433e-92f1-23a347ee3ff3
+[I 2026-07-06 12:10:04,652] Trial 0 finished with value: 0.5998958893326463 and parameters: {'2:regressor': '1:ridge', '1:α': 0.08737056333717456}. Best is trial 0 with value: 0.5998958893326463.
+[I 2026-07-06 12:10:05,016] Trial 1 finished with value: 0.5998965729709886 and parameters: {'2:regressor': '1:ridge', '1:α': 0.17777676175509427}. Best is trial 1 with value: 0.5998965729709886.
+[I 2026-07-06 12:10:05,364] Trial 2 finished with value: 0.5998956300607201 and parameters: {'2:regressor': '1:ridge', '1:α': 0.05323908243249831}. Best is trial 1 with value: 0.5998965729709886.
+[I 2026-07-06 12:10:05,707] Trial 3 finished with value: 0.5998953213503151 and parameters: {'2:regressor': '1:ridge', '1:α': 0.012709575518456051}. Best is trial 1 with value: 0.5998965729709886.
+[I 2026-07-06 12:10:12,221] Trial 4 finished with value: 0.7901294715500632 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 4 with value: 0.7901294715500632.
+[I 2026-07-06 12:10:21,711] Trial 5 finished with value: 0.7934929941988188 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 5 with value: 0.7934929941988188.
+[I 2026-07-06 12:10:22,144] Trial 6 finished with value: 0.5998987110257883 and parameters: {'2:regressor': '1:ridge', '1:α': 0.464456825115831}. Best is trial 5 with value: 0.7934929941988188.
+[I 2026-07-06 12:10:26,984] Trial 7 finished with value: 0.7594650521714429 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 7}. Best is trial 5 with value: 0.7934929941988188.
+[I 2026-07-06 12:10:32,515] Trial 8 finished with value: 0.7755705429333737 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 5 with value: 0.7934929941988188.
+[I 2026-07-06 12:10:39,670] Trial 9 finished with value: 0.7897466013676135 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 5 with value: 0.7934929941988188.
+[I 2026-07-06 12:10:39,673] A new study created in memory with name: skrub_randomized_search_49537908-4ece-433e-92f1-23a347ee3ff3
 ```
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_647e0f32-wrapper" hidden>
-    <template id="report_647e0f32-template">
+<div id="report_84638f14-wrapper" hidden>
+    <template id="report_84638f14-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -1571,7 +1571,7 @@ NOTE: some columns have very strong associations and may be redundant.">
 
 
                 <th
-                id="72271b5c"
+                id="f52ac57b"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -1601,7 +1601,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="cc3fd656"
+                id="90b2221b"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1635,7 +1635,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="4b605508"
+                id="8f45fd03"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1669,7 +1669,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="b489ed92"
+                id="76bc25c0"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1703,7 +1703,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="9d8d150a"
+                id="8956f9b5"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1751,7 +1751,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="b5b1e4ae"
+                id="a4b22c2a"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -1779,7 +1779,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="ef392c90"
+                id="79d80447"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1809,7 +1809,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="923f8a58"
+                id="66342ff1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1839,7 +1839,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="8e4b96c5"
+                id="3dfce9bc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1869,7 +1869,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="e2d43209"
+                id="e83728e8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1890,8 +1890,8 @@ data-spans_\_0_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.7931359271779979"
-                data-value-str="0.7931359271779979"
+                data-value-repr="0.7934929941988188"
+                data-value-str="0.7934929941988188"
 
                 data-column-idx="3"
 
@@ -1903,7 +1903,7 @@ data-spans_\_0_\_3
 
 
                 <th
-                id="f4293a26"
+                id="10b158d1"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -1931,7 +1931,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="6cc8d0d9"
+                id="2c9ae930"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1961,7 +1961,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="b772e091"
+                id="cc7e72e2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1991,7 +1991,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="795d3219"
+                id="569a475e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2021,7 +2021,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="656a8ed7"
+                id="3e1f6472"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2042,12 +2042,12 @@ data-spans_\_1_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.7913290174928354"
-                data-value-str="0.7913290174928354"
+                data-value-repr="0.7901294715500632"
+                data-value-str="0.7901294715500632"
 
                 data-column-idx="3"
 
-                >0.791</td>
+                >0.790</td>
 
             </tr>
 
@@ -2055,7 +2055,7 @@ data-spans_\_1_\_3
 
 
                 <th
-                id="0bbd0f8e"
+                id="42375436"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2083,7 +2083,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="6c85bcc7"
+                id="c69fe60d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2113,7 +2113,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="a98cf136"
+                id="ff99492c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2143,7 +2143,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="49c76335"
+                id="1d65f46e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2173,7 +2173,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="9959a343"
+                id="cef96270"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2194,12 +2194,12 @@ data-spans_\_2_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.7894246170474473"
-                data-value-str="0.7894246170474473"
+                data-value-repr="0.7897466013676135"
+                data-value-str="0.7897466013676135"
 
                 data-column-idx="3"
 
-                >0.789</td>
+                >0.790</td>
 
             </tr>
 
@@ -2207,7 +2207,7 @@ data-spans_\_2_\_3
 
 
                 <th
-                id="1f83fb70"
+                id="dff3e4ec"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2235,7 +2235,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="e2e12434"
+                id="e95b59a5"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2265,7 +2265,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="8882a40a"
+                id="c4e76203"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2295,7 +2295,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="00f07297"
+                id="4e31061d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2325,7 +2325,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="98a9f853"
+                id="b5a38539"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2346,8 +2346,8 @@ data-spans_\_3_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.7759552041707828"
-                data-value-str="0.7759552041707828"
+                data-value-repr="0.7755705429333737"
+                data-value-str="0.7755705429333737"
 
                 data-column-idx="3"
 
@@ -2359,7 +2359,7 @@ data-spans_\_3_\_3
 
 
                 <th
-                id="31ac8abd"
+                id="670cf91f"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2387,7 +2387,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="f1bbb8aa"
+                id="46d9c72a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2417,7 +2417,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="53bcf806"
+                id="00adebd8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2447,7 +2447,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="feefaf26"
+                id="a4536d82"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2477,7 +2477,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="6c2d9b9a"
+                id="d1e3222a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2498,8 +2498,8 @@ data-spans_\_4_\_3
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.7588919833029395"
-                data-value-str="0.7588919833029395"
+                data-value-repr="0.7594650521714429"
+                data-value-str="0.7594650521714429"
 
                 data-column-idx="3"
 
@@ -2511,7 +2511,7 @@ data-spans_\_4_\_3
 
 
                 <th
-                id="86243ae7"
+                id="0060838c"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2539,7 +2539,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="12dbc16d"
+                id="07a71197"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2569,7 +2569,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="cefda7e4"
+                id="1471bf57"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2599,7 +2599,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="b43b8124"
+                id="f3483d42"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2629,7 +2629,7 @@ data-spans_\_5_\_2
 
 
                 <td
-                id="0f65950b"
+                id="e3f4d232"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2663,7 +2663,7 @@ data-spans_\_5_\_3
 
 
                 <th
-                id="dbc1d4a2"
+                id="66bdbb22"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2691,7 +2691,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="b78f02a4"
+                id="258a1d74"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2721,7 +2721,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="0b0f4e01"
+                id="0d5355c4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2751,7 +2751,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="2703e575"
+                id="4a4c529e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2781,7 +2781,7 @@ data-spans_\_6_\_2
 
 
                 <td
-                id="7ccb6417"
+                id="41b00f2f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2815,7 +2815,7 @@ data-spans_\_6_\_3
 
 
                 <th
-                id="ed08bbb6"
+                id="20a184ac"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2843,7 +2843,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="60a6b24d"
+                id="922641ce"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2873,7 +2873,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="5cdcffdf"
+                id="0b74ad7e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2903,7 +2903,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="26f19195"
+                id="a0e45280"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2933,7 +2933,7 @@ data-spans_\_7_\_2
 
 
                 <td
-                id="485c8315"
+                id="75bdc483"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2967,7 +2967,7 @@ data-spans_\_7_\_3
 
 
                 <th
-                id="4e39bce2"
+                id="3f610627"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2995,7 +2995,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="aebe6700"
+                id="f8750e57"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3025,7 +3025,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="be752e09"
+                id="256bbaa9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3055,7 +3055,7 @@ data-spans_\_8_\_1
 
 
                 <td
-                id="a2673ed8"
+                id="30cc6b36"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3085,7 +3085,7 @@ data-spans_\_8_\_2
 
 
                 <td
-                id="a03fc118"
+                id="375de1f7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3119,7 +3119,7 @@ data-spans_\_8_\_3
 
 
                 <th
-                id="1cb3b791"
+                id="bbd1e046"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3147,7 +3147,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="7c7a47c9"
+                id="8c125f1a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3177,7 +3177,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="cf20b3fa"
+                id="691a0562"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3207,7 +3207,7 @@ data-spans_\_9_\_1
 
 
                 <td
-                id="4ee58ca9"
+                id="f58f5802"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3237,7 +3237,7 @@ data-spans_\_9_\_2
 
 
                 <td
-                id="919fbe1e"
+                id="0c0927db"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3392,7 +3392,7 @@ data-spans_\_9_\_3
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T10:02:11.904537</dc:date>
+    <dc:date>2026-07-06T12:10:43.625909</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -3422,7 +3422,7 @@ L 40.198864 79.570257
 L 40.198864 45.284542
 L 27.107955 45.284542
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_3">
     <path d="M 40.198864 79.570257
@@ -3430,7 +3430,7 @@ L 53.289774 79.570257
 L 53.289774 10.998828
 L 40.198864 10.998828
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_4">
     <path d="M 53.289774 79.570257
@@ -3438,7 +3438,7 @@ L 66.380686 79.570257
 L 66.380686 79.570257
 L 53.289774 79.570257
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_5">
     <path d="M 66.380686 79.570257
@@ -3446,7 +3446,7 @@ L 79.471593 79.570257
 L 79.471593 79.570257
 L 66.380686 79.570257
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_6">
     <path d="M 79.471593 79.570257
@@ -3454,7 +3454,7 @@ L 92.5625 79.570257
 L 92.5625 79.570257
 L 79.471593 79.570257
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_7">
     <path d="M 92.5625 79.570257
@@ -3462,7 +3462,7 @@ L 105.653417 79.570257
 L 105.653417 45.284542
 L 92.5625 45.284542
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_8">
     <path d="M 105.653417 79.570257
@@ -3470,7 +3470,7 @@ L 118.744324 79.570257
 L 118.744324 79.570257
 L 105.653417 79.570257
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_9">
     <path d="M 118.744324 79.570257
@@ -3478,7 +3478,7 @@ L 131.835231 79.570257
 L 131.835231 79.570257
 L 118.744324 79.570257
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_10">
     <path d="M 131.835231 79.570257
@@ -3486,7 +3486,7 @@ L 144.926138 79.570257
 L 144.926138 79.570257
 L 131.835231 79.570257
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_11">
     <path d="M 144.926138 79.570257
@@ -3494,18 +3494,18 @@ L 158.017045 79.570257
 L 158.017045 45.284542
 L 144.926138 45.284542
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m725a7e04e8" d="M 0 0
+       <path id="m70b6238b96" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m725a7e04e8" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m70b6238b96" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -3515,7 +3515,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m725a7e04e8" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m70b6238b96" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -3525,7 +3525,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m725a7e04e8" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m70b6238b96" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -3537,12 +3537,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m44ab8d92df" d="M 0 0
+       <path id="mf5d60a1596" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m44ab8d92df" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mf5d60a1596" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -3552,7 +3552,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m44ab8d92df" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mf5d60a1596" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -3562,7 +3562,7 @@ L -3.5 0
     <g id="ytick_3">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m44ab8d92df" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mf5d60a1596" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -3583,7 +3583,7 @@ L 164.5625 79.570257
   </g>
  </g>
  <defs>
-  <clipPath id="pf20be3de6f">
+  <clipPath id="p8f3c384502">
    <rect x="20.5625" y="7.570257" width="144" height="72"/>
   </clipPath>
  </defs>
@@ -3680,7 +3680,7 @@ L 164.5625 79.570257
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T10:02:11.961218</dc:date>
+    <dc:date>2026-07-06T12:10:43.679696</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -3710,7 +3710,7 @@ L 40.198864 79.570257
 L 40.198864 10.998828
 L 27.107955 10.998828
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_3">
     <path d="M 40.198864 79.570257
@@ -3718,7 +3718,7 @@ L 53.289772 79.570257
 L 53.289772 45.284542
 L 40.198864 45.284542
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_4">
     <path d="M 53.289772 79.570257
@@ -3726,7 +3726,7 @@ L 66.380683 79.570257
 L 66.380683 79.570257
 L 53.289772 79.570257
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_5">
     <path d="M 66.380683 79.570257
@@ -3734,7 +3734,7 @@ L 79.47159 79.570257
 L 79.47159 45.284542
 L 66.380683 45.284542
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_6">
     <path d="M 79.47159 79.570257
@@ -3742,7 +3742,7 @@ L 92.562497 79.570257
 L 92.562497 79.570257
 L 79.47159 79.570257
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_7">
     <path d="M 92.562497 79.570257
@@ -3750,7 +3750,7 @@ L 105.653417 79.570257
 L 105.653417 79.570257
 L 92.562497 79.570257
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_8">
     <path d="M 105.653417 79.570257
@@ -3758,7 +3758,7 @@ L 118.744324 79.570257
 L 118.744324 79.570257
 L 105.653417 79.570257
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_9">
     <path d="M 118.744324 79.570257
@@ -3766,7 +3766,7 @@ L 131.835231 79.570257
 L 131.835231 79.570257
 L 118.744324 79.570257
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_10">
     <path d="M 131.835231 79.570257
@@ -3774,7 +3774,7 @@ L 144.926138 79.570257
 L 144.926138 79.570257
 L 131.835231 79.570257
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_11">
     <path d="M 144.926138 79.570257
@@ -3782,18 +3782,18 @@ L 158.017045 79.570257
 L 158.017045 45.284542
 L 144.926138 45.284542
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m4901ae394d" d="M 0 0
+       <path id="m4c320a5732" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m4901ae394d" x="23.424924" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m4c320a5732" x="23.424924" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -3803,7 +3803,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m4901ae394d" x="81.381709" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m4c320a5732" x="81.381709" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -3813,7 +3813,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m4901ae394d" x="139.338493" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m4c320a5732" x="139.338493" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -3825,12 +3825,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m2b594a3617" d="M 0 0
+       <path id="m0036eee10f" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m2b594a3617" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m0036eee10f" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -3840,7 +3840,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m2b594a3617" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m0036eee10f" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -3850,7 +3850,7 @@ L -3.5 0
     <g id="ytick_3">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m2b594a3617" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m0036eee10f" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -3871,7 +3871,7 @@ L 164.5625 79.570257
   </g>
  </g>
  <defs>
-  <clipPath id="p53088fc90b">
+  <clipPath id="p2feb188349">
    <rect x="20.5625" y="7.570257" width="144" height="72"/>
   </clipPath>
  </defs>
@@ -3949,7 +3949,7 @@ L 164.5625 79.570257
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T10:02:12.016896</dc:date>
+    <dc:date>2026-07-06T12:10:43.733515</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -3979,7 +3979,7 @@ L 154.516295 34.690909
 L 154.516295 23.054545
 L 65.373437 23.054545
 z
-" clip-path="url(#p90d9999dd2)" style="fill: #ee854a"/>
+" clip-path="url(#pdc3564a194)" style="fill: #ee854a"/>
    </g>
    <g id="patch_3">
     <path d="M 65.373437 20.145455
@@ -3987,18 +3987,18 @@ L 154.516295 20.145455
 L 154.516295 8.509091
 L 65.373437 8.509091
 z
-" clip-path="url(#p90d9999dd2)" style="fill: #ee854a"/>
+" clip-path="url(#pdc3564a194)" style="fill: #ee854a"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="mccb4122ebd" d="M 0 0
+       <path id="mc4964d9355" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#mccb4122ebd" x="65.373437" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mc4964d9355" x="65.373437" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -4008,7 +4008,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#mccb4122ebd" x="101.03058" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mc4964d9355" x="101.03058" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -4018,7 +4018,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#mccb4122ebd" x="136.687723" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mc4964d9355" x="136.687723" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -4030,12 +4030,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m4ed52a9dae" d="M 0 0
+       <path id="ma4ea8aca42" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m4ed52a9dae" x="65.373437" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#ma4ea8aca42" x="65.373437" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -4045,7 +4045,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m4ed52a9dae" x="65.373437" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#ma4ea8aca42" x="65.373437" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -4092,7 +4092,7 @@ L 158.973438 36
   </g>
  </g>
  <defs>
-  <clipPath id="p90d9999dd2">
+  <clipPath id="pdc3564a194">
    <rect x="65.373437" y="7.2" width="93.6" height="28.8"/>
   </clipPath>
  </defs>
@@ -4258,12 +4258,12 @@ L 158.973438 36
                 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.82em" height="8.62em" viewBox="0 0 177.818601 103.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.80em" height="8.62em" viewBox="0 0 177.568604 103.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T10:02:12.075885</dc:date>
+    <dc:date>2026-07-06T12:10:43.795866</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -4293,7 +4293,7 @@ L 40.198864 79.2
 L 40.198864 10.628571
 L 27.107955 10.628571
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_3">
     <path d="M 40.198864 79.2
@@ -4301,7 +4301,7 @@ L 53.289773 79.2
 L 53.289773 79.2
 L 40.198864 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_4">
     <path d="M 53.289773 79.2
@@ -4309,7 +4309,7 @@ L 66.380682 79.2
 L 66.380682 79.2
 L 53.289773 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_5">
     <path d="M 66.380682 79.2
@@ -4317,7 +4317,7 @@ L 79.471591 79.2
 L 79.471591 79.2
 L 66.380682 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_6">
     <path d="M 79.471591 79.2
@@ -4325,7 +4325,7 @@ L 92.5625 79.2
 L 92.5625 79.2
 L 79.471591 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_7">
     <path d="M 92.5625 79.2
@@ -4333,7 +4333,7 @@ L 105.653409 79.2
 L 105.653409 79.2
 L 92.5625 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_8">
     <path d="M 105.653409 79.2
@@ -4341,7 +4341,7 @@ L 118.744318 79.2
 L 118.744318 79.2
 L 105.653409 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_9">
     <path d="M 118.744318 79.2
@@ -4349,7 +4349,7 @@ L 131.835227 79.2
 L 131.835227 79.2
 L 118.744318 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_10">
     <path d="M 131.835227 79.2
@@ -4357,7 +4357,7 @@ L 144.926136 79.2
 L 144.926136 65.485714
 L 131.835227 65.485714
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_11">
     <path d="M 144.926136 79.2
@@ -4365,42 +4365,42 @@ L 158.017045 79.2
 L 158.017045 24.342857
 L 144.926136 24.342857
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m62852b55e9" d="M 0 0
+       <path id="mc67eff3718" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m62852b55e9" x="27.178884" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mc67eff3718" x="27.178753" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="27.178884" y="93.797656" transform="rotate(-0 27.178884 93.797656)">0.6</text>
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="27.178753" y="93.797656" transform="rotate(-0 27.178753 93.797656)">0.6</text>
      </g>
     </g>
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m62852b55e9" x="94.922961" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mc67eff3718" x="94.797897" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="94.922961" y="93.797656" transform="rotate(-0 94.922961 93.797656)">0.7</text>
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="94.797897" y="93.797656" transform="rotate(-0 94.797897 93.797656)">0.7</text>
      </g>
     </g>
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m62852b55e9" x="162.667039" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mc67eff3718" x="162.417042" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="162.667039" y="93.797656" transform="rotate(-0 162.667039 93.797656)">0.8</text>
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="162.417042" y="93.797656" transform="rotate(-0 162.417042 93.797656)">0.8</text>
      </g>
     </g>
    </g>
@@ -4408,12 +4408,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m1162eef424" d="M 0 0
+       <path id="md1e562f471" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m1162eef424" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#md1e562f471" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -4423,7 +4423,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m1162eef424" x="20.5625" y="51.771429" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#md1e562f471" x="20.5625" y="51.771429" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -4433,7 +4433,7 @@ L -3.5 0
     <g id="ytick_3">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m1162eef424" x="20.5625" y="24.342857" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#md1e562f471" x="20.5625" y="24.342857" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -4454,7 +4454,7 @@ L 164.5625 79.2
   </g>
  </g>
  <defs>
-  <clipPath id="p5cd9c6be97">
+  <clipPath id="paf082d2545">
    <rect x="20.5625" y="7.2" width="144" height="72"/>
   </clipPath>
  </defs>
@@ -4941,9 +4941,9 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="0.6908218873932461" data-numeric>
+                    <td data-value="0.6907886786961771" data-numeric>
                         0.691</td>
-                    <td data-value="0.09632742913140976" data-numeric>
+                    <td data-value="0.0962755638483249" data-numeric>
                         0.0963</td>
 
 
@@ -4952,7 +4952,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
                         0.600</td>
                     <td data-value="0.5998987110257883" data-numeric>
                         0.600</td>
-                    <td data-value="0.7931359271779979" data-numeric>
+                    <td data-value="0.7934929941988188" data-numeric>
                         0.793</td>
 
 
@@ -5100,7 +5100,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T10:02:11.904537</dc:date>
+    <dc:date>2026-07-06T12:10:43.625909</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -5130,7 +5130,7 @@ L 40.198864 79.570257
 L 40.198864 45.284542
 L 27.107955 45.284542
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_3">
     <path d="M 40.198864 79.570257
@@ -5138,7 +5138,7 @@ L 53.289774 79.570257
 L 53.289774 10.998828
 L 40.198864 10.998828
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_4">
     <path d="M 53.289774 79.570257
@@ -5146,7 +5146,7 @@ L 66.380686 79.570257
 L 66.380686 79.570257
 L 53.289774 79.570257
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_5">
     <path d="M 66.380686 79.570257
@@ -5154,7 +5154,7 @@ L 79.471593 79.570257
 L 79.471593 79.570257
 L 66.380686 79.570257
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_6">
     <path d="M 79.471593 79.570257
@@ -5162,7 +5162,7 @@ L 92.5625 79.570257
 L 92.5625 79.570257
 L 79.471593 79.570257
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_7">
     <path d="M 92.5625 79.570257
@@ -5170,7 +5170,7 @@ L 105.653417 79.570257
 L 105.653417 45.284542
 L 92.5625 45.284542
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_8">
     <path d="M 105.653417 79.570257
@@ -5178,7 +5178,7 @@ L 118.744324 79.570257
 L 118.744324 79.570257
 L 105.653417 79.570257
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_9">
     <path d="M 118.744324 79.570257
@@ -5186,7 +5186,7 @@ L 131.835231 79.570257
 L 131.835231 79.570257
 L 118.744324 79.570257
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_10">
     <path d="M 131.835231 79.570257
@@ -5194,7 +5194,7 @@ L 144.926138 79.570257
 L 144.926138 79.570257
 L 131.835231 79.570257
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_11">
     <path d="M 144.926138 79.570257
@@ -5202,18 +5202,18 @@ L 158.017045 79.570257
 L 158.017045 45.284542
 L 144.926138 45.284542
 z
-" clip-path="url(#pf20be3de6f)" style="fill: #1f77b4"/>
+" clip-path="url(#p8f3c384502)" style="fill: #1f77b4"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m725a7e04e8" d="M 0 0
+       <path id="m70b6238b96" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m725a7e04e8" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m70b6238b96" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -5223,7 +5223,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m725a7e04e8" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m70b6238b96" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -5233,7 +5233,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m725a7e04e8" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m70b6238b96" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -5245,12 +5245,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m44ab8d92df" d="M 0 0
+       <path id="mf5d60a1596" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m44ab8d92df" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mf5d60a1596" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -5260,7 +5260,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m44ab8d92df" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mf5d60a1596" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -5270,7 +5270,7 @@ L -3.5 0
     <g id="ytick_3">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m44ab8d92df" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mf5d60a1596" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -5291,7 +5291,7 @@ L 164.5625 79.570257
   </g>
  </g>
  <defs>
-  <clipPath id="pf20be3de6f">
+  <clipPath id="p8f3c384502">
    <rect x="20.5625" y="7.570257" width="144" height="72"/>
   </clipPath>
  </defs>
@@ -5384,7 +5384,7 @@ L 164.5625 79.570257
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T10:02:11.961218</dc:date>
+    <dc:date>2026-07-06T12:10:43.679696</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -5414,7 +5414,7 @@ L 40.198864 79.570257
 L 40.198864 10.998828
 L 27.107955 10.998828
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_3">
     <path d="M 40.198864 79.570257
@@ -5422,7 +5422,7 @@ L 53.289772 79.570257
 L 53.289772 45.284542
 L 40.198864 45.284542
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_4">
     <path d="M 53.289772 79.570257
@@ -5430,7 +5430,7 @@ L 66.380683 79.570257
 L 66.380683 79.570257
 L 53.289772 79.570257
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_5">
     <path d="M 66.380683 79.570257
@@ -5438,7 +5438,7 @@ L 79.47159 79.570257
 L 79.47159 45.284542
 L 66.380683 45.284542
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_6">
     <path d="M 79.47159 79.570257
@@ -5446,7 +5446,7 @@ L 92.562497 79.570257
 L 92.562497 79.570257
 L 79.47159 79.570257
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_7">
     <path d="M 92.562497 79.570257
@@ -5454,7 +5454,7 @@ L 105.653417 79.570257
 L 105.653417 79.570257
 L 92.562497 79.570257
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_8">
     <path d="M 105.653417 79.570257
@@ -5462,7 +5462,7 @@ L 118.744324 79.570257
 L 118.744324 79.570257
 L 105.653417 79.570257
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_9">
     <path d="M 118.744324 79.570257
@@ -5470,7 +5470,7 @@ L 131.835231 79.570257
 L 131.835231 79.570257
 L 118.744324 79.570257
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_10">
     <path d="M 131.835231 79.570257
@@ -5478,7 +5478,7 @@ L 144.926138 79.570257
 L 144.926138 79.570257
 L 131.835231 79.570257
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_11">
     <path d="M 144.926138 79.570257
@@ -5486,18 +5486,18 @@ L 158.017045 79.570257
 L 158.017045 45.284542
 L 144.926138 45.284542
 z
-" clip-path="url(#p53088fc90b)" style="fill: #1f77b4"/>
+" clip-path="url(#p2feb188349)" style="fill: #1f77b4"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m4901ae394d" d="M 0 0
+       <path id="m4c320a5732" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m4901ae394d" x="23.424924" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m4c320a5732" x="23.424924" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -5507,7 +5507,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m4901ae394d" x="81.381709" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m4c320a5732" x="81.381709" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -5517,7 +5517,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m4901ae394d" x="139.338493" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m4c320a5732" x="139.338493" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -5529,12 +5529,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m2b594a3617" d="M 0 0
+       <path id="m0036eee10f" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m2b594a3617" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m0036eee10f" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -5544,7 +5544,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m2b594a3617" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m0036eee10f" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -5554,7 +5554,7 @@ L -3.5 0
     <g id="ytick_3">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m2b594a3617" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#m0036eee10f" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -5575,7 +5575,7 @@ L 164.5625 79.570257
   </g>
  </g>
  <defs>
-  <clipPath id="p53088fc90b">
+  <clipPath id="p2feb188349">
    <rect x="20.5625" y="7.570257" width="144" height="72"/>
   </clipPath>
  </defs>
@@ -5649,7 +5649,7 @@ L 164.5625 79.570257
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T10:02:12.016896</dc:date>
+    <dc:date>2026-07-06T12:10:43.733515</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -5679,7 +5679,7 @@ L 154.516295 34.690909
 L 154.516295 23.054545
 L 65.373437 23.054545
 z
-" clip-path="url(#p90d9999dd2)" style="fill: #ee854a"/>
+" clip-path="url(#pdc3564a194)" style="fill: #ee854a"/>
    </g>
    <g id="patch_3">
     <path d="M 65.373437 20.145455
@@ -5687,18 +5687,18 @@ L 154.516295 20.145455
 L 154.516295 8.509091
 L 65.373437 8.509091
 z
-" clip-path="url(#p90d9999dd2)" style="fill: #ee854a"/>
+" clip-path="url(#pdc3564a194)" style="fill: #ee854a"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="mccb4122ebd" d="M 0 0
+       <path id="mc4964d9355" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#mccb4122ebd" x="65.373437" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mc4964d9355" x="65.373437" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -5708,7 +5708,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#mccb4122ebd" x="101.03058" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mc4964d9355" x="101.03058" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -5718,7 +5718,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#mccb4122ebd" x="136.687723" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mc4964d9355" x="136.687723" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -5730,12 +5730,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m4ed52a9dae" d="M 0 0
+       <path id="ma4ea8aca42" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m4ed52a9dae" x="65.373437" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#ma4ea8aca42" x="65.373437" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -5745,7 +5745,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m4ed52a9dae" x="65.373437" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#ma4ea8aca42" x="65.373437" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -5792,7 +5792,7 @@ L 158.973438 36
   </g>
  </g>
  <defs>
-  <clipPath id="p90d9999dd2">
+  <clipPath id="pdc3564a194">
    <rect x="65.373437" y="7.2" width="93.6" height="28.8"/>
   </clipPath>
  </defs>
@@ -5954,12 +5954,12 @@ L 158.973438 36
                 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.82em" height="8.62em" viewBox="0 0 177.818601 103.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.80em" height="8.62em" viewBox="0 0 177.568604 103.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T10:02:12.075885</dc:date>
+    <dc:date>2026-07-06T12:10:43.795866</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -5989,7 +5989,7 @@ L 40.198864 79.2
 L 40.198864 10.628571
 L 27.107955 10.628571
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_3">
     <path d="M 40.198864 79.2
@@ -5997,7 +5997,7 @@ L 53.289773 79.2
 L 53.289773 79.2
 L 40.198864 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_4">
     <path d="M 53.289773 79.2
@@ -6005,7 +6005,7 @@ L 66.380682 79.2
 L 66.380682 79.2
 L 53.289773 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_5">
     <path d="M 66.380682 79.2
@@ -6013,7 +6013,7 @@ L 79.471591 79.2
 L 79.471591 79.2
 L 66.380682 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_6">
     <path d="M 79.471591 79.2
@@ -6021,7 +6021,7 @@ L 92.5625 79.2
 L 92.5625 79.2
 L 79.471591 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_7">
     <path d="M 92.5625 79.2
@@ -6029,7 +6029,7 @@ L 105.653409 79.2
 L 105.653409 79.2
 L 92.5625 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_8">
     <path d="M 105.653409 79.2
@@ -6037,7 +6037,7 @@ L 118.744318 79.2
 L 118.744318 79.2
 L 105.653409 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_9">
     <path d="M 118.744318 79.2
@@ -6045,7 +6045,7 @@ L 131.835227 79.2
 L 131.835227 79.2
 L 118.744318 79.2
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_10">
     <path d="M 131.835227 79.2
@@ -6053,7 +6053,7 @@ L 144.926136 79.2
 L 144.926136 65.485714
 L 131.835227 65.485714
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="patch_11">
     <path d="M 144.926136 79.2
@@ -6061,42 +6061,42 @@ L 158.017045 79.2
 L 158.017045 24.342857
 L 144.926136 24.342857
 z
-" clip-path="url(#p5cd9c6be97)" style="fill: #1f77b4"/>
+" clip-path="url(#paf082d2545)" style="fill: #1f77b4"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m62852b55e9" d="M 0 0
+       <path id="mc67eff3718" d="M 0 0
 L 0 3.5
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m62852b55e9" x="27.178884" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mc67eff3718" x="27.178753" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="27.178884" y="93.797656" transform="rotate(-0 27.178884 93.797656)">0.6</text>
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="27.178753" y="93.797656" transform="rotate(-0 27.178753 93.797656)">0.6</text>
      </g>
     </g>
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m62852b55e9" x="94.922961" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mc67eff3718" x="94.797897" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="94.922961" y="93.797656" transform="rotate(-0 94.922961 93.797656)">0.7</text>
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="94.797897" y="93.797656" transform="rotate(-0 94.797897 93.797656)">0.7</text>
      </g>
     </g>
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m62852b55e9" x="162.667039" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#mc67eff3718" x="162.417042" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="162.667039" y="93.797656" transform="rotate(-0 162.667039 93.797656)">0.8</text>
+      <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="162.417042" y="93.797656" transform="rotate(-0 162.417042 93.797656)">0.8</text>
      </g>
     </g>
    </g>
@@ -6104,12 +6104,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m1162eef424" d="M 0 0
+       <path id="md1e562f471" d="M 0 0
 L -3.5 0
 " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m1162eef424" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#md1e562f471" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -6119,7 +6119,7 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m1162eef424" x="20.5625" y="51.771429" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#md1e562f471" x="20.5625" y="51.771429" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
@@ -6129,7 +6129,7 @@ L -3.5 0
     <g id="ytick_3">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m1162eef424" x="20.5625" y="24.342857" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
+       <use xlink:href="#md1e562f471" x="20.5625" y="24.342857" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
@@ -6150,7 +6150,7 @@ L 164.5625 79.2
   </g>
  </g>
  <defs>
-  <clipPath id="p5cd9c6be97">
+  <clipPath id="paf082d2545">
    <rect x="20.5625" y="7.2" width="144" height="72"/>
   </clipPath>
  </defs>
@@ -6240,7 +6240,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
                     class="critical">
                     1.00
                 </td>
-                <td>-0.994</td>
+                <td>-0.996</td>
             </tr>
 
             <tr>
@@ -6288,7 +6288,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_647e0f32">
+    <skrub-table-report class="report" id="report_84638f14">
     </skrub-table-report>
 
     <script type="module">
@@ -7392,7 +7392,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_647e0f32-wrapper-fallback">
+<div id="report_84638f14-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -7403,8 +7403,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_647e0f32-wrapper").removeAttribute("hidden");
- document.getElementById("report_647e0f32-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_84638f14-wrapper").removeAttribute("hidden");
+ document.getElementById("report_84638f14-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -7421,7 +7421,7 @@ search.plot_results()
 
 <div class="output_subarea output_html rendered_html output_result">
 <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="3f1ea051-dc99-4825-aefd-71e98ffebdfb" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("3f1ea051-dc99-4825-aefd-71e98ffebdfb")) {                    Plotly.newPlot(                        "3f1ea051-dc99-4825-aefd-71e98ffebdfb",                        [{"dimensions":[{"label":"min_samples_leaf","ticktext":["NaN","1","2","3","4","5","6","7"],"tickvals":[-0.19459101490553132,0.0,0.6931471805599453,1.0986122886681098,1.3862943611198906,1.6094379124341003,1.791759469228055,1.9459101490553132],"values":{"dtype":"f8","bdata":"KCja5uZsgj\\u002fF\\u002fI9zAt3lPwbRF8r2SOY\\u002fAE5Wr5Aw9j9XWjKuciL\\u002fP6yujr5b6Mi\\u002fV0efKLOlyL+sro6+W+jIv6yujr5b6Mi\\u002frK6OvlvoyL8="}},{"label":"\\u03b1","ticktext":["NaN","0.01","0.02","0.03","0.04","0.06","0.09","0.14","0.21","0.31","0.46"],"tickvals":[-4.725250883542699,-4.365399591784898,-3.965564823165118,-3.5657300545453388,-3.1658952859255596,-2.76606051730578,-2.3662257486860003,-1.9663909800662212,-1.566556211446442,-1.1667214428266623,-0.7668866742068832],"values":{"dtype":"f8","bdata":"ENjoKqjmEsAQ2OgqqOYSwBDY6Cqo5hLArHImF3TUEsCO79wd5NUSwNydLuxViui\\u002fov6bn4LA+7\\u002fbMR\\u002fkWpkDwIvp8\\u002fBVbQfAJy9n0R9uEcA="}},{"label":"regressor","ticktext":["extra_tree","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAACiwpu1T+1kPxSJpaQa+Vg\\u002fAAAAAAAAAADAWKegIysdPwAAAAAAAPA\\u002fAAAAAAAA8D+osESohf\\u002fvPwAAAAAAAPA\\u002fAAAAAAAA8D8="}},{"label":"score time","ticktext":["0.016","0.027","0.039","0.050","0.061","0.072","0.084","0.095","0.106","0.117"],"tickvals":[0.016048669815063477,0.027304192384084068,0.03855971495310466,0.049815237522125244,0.061070760091145836,0.07232628266016643,0.08358180522918701,0.09483732779820761,0.1060928503672282,0.11734837293624878],"values":{"dtype":"f8","bdata":"AAAAAIsKvj93gd4qxXe2P3aJ\\u002fjkbDbQ\\u002f1ilVEIv3rz9rOdb7rRGtPwAAAAAQb5A\\u002fgAWVpGZPmT8bc1vBnEeSP9e8S1\\u002fJSJI\\u002fArJx1lvXkT8="}},{"label":"fit time","ticktext":["0.0","0.3","0.5","0.8","1.0","1.3","1.5","1.8","2.0","2.3"],"tickvals":[0.016543328762054443,0.26643652386135525,0.516329718960656,0.7662229140599568,1.0161161091592577,1.2660093042585585,1.5159024993578591,1.76579569445716,2.015688889556461,2.2655820846557617],"values":{"dtype":"f8","bdata":"AAAAgOkfAkDpOcrpetj6P9DV1m3yDvg\\u002fvRtx\\u002fp1o8j+zzWsdkiHvPwAAAAC88JA\\u002faoSQ8WvMlT9qCihN4gubPwAAAAC88JA\\u002fkMFg1RS4lz8="}},{"label":"score","ticktext":["0.60","0.62","0.64","0.66","0.69","0.71","0.73","0.75","0.77","0.79"],"tickvals":[0.5998953213503151,0.6213664997756132,0.6428376782009113,0.6643088566262093,0.6857800350515074,0.7072512134768055,0.7287223919021036,0.7501935703274016,0.7716647487526997,0.7931359271779979],"values":{"dtype":"f8","bdata":"cGOQmF5h6T\\u002fEPVA7kVLpPxgJHGr3Quk\\u002fbWIiAqDU6D9Oci\\u002fX10joPwqWGMheMuM\\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\\u002f7iJHrFcy4z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"cGOQmF5h6T\\u002fEPVA7kVLpPxgJHGr3Quk\\u002fbWIiAqDU6D9Oci\\u002fX10joPwqWGMheMuM\\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\\u002f7iJHrFcy4z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="d1ac9d71-44e3-411b-8bc8-77282e5e7551" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("d1ac9d71-44e3-411b-8bc8-77282e5e7551")) {                    Plotly.newPlot(                        "d1ac9d71-44e3-411b-8bc8-77282e5e7551",                        [{"dimensions":[{"label":"min_samples_leaf","ticktext":["NaN","1","2","3","4","5","6","7"],"tickvals":[-0.19459101490553132,0.0,0.6931471805599453,1.0986122886681098,1.3862943611198906,1.6094379124341003,1.791759469228055,1.9459101490553132],"values":{"dtype":"f8","bdata":"znyKbFQbfr8gWpwnFxzmP3jLMjkvSOY\\u002fYSDAWz5Z9j9XWjKuciL\\u002fP6yujr5b6Mi\\u002fpyWSqLkryL+cB4mmyZTHv6yujr5b6Mi\\u002frK6OvlvoyL8="}},{"label":"\\u03b1","ticktext":["NaN","0.01","0.02","0.03","0.04","0.06","0.09","0.14","0.21","0.31","0.46"],"tickvals":[-4.725250883542699,-4.365399591784898,-3.965564823165118,-3.5657300545453388,-3.1658952859255596,-2.76606051730578,-2.3662257486860003,-1.9663909800662212,-1.566556211446442,-1.1667214428266623,-0.7668866742068832],"values":{"dtype":"f8","bdata":"ENjoKqjmEsABKf9ScdkSwBDY6Cqo5hLAENjoKqjmEsA9pCbv49cSwNydLuxViui\\u002fqke41YPO+79zKCINd2ADwFbmp68EXwfA\\u002f\\u002fMpXS2FEcA="}},{"label":"regressor","ticktext":["extra_tree","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPA\\u002fGwRTPOb+7z8AAAAAAADwP8F3d6Gk5O8\\u002f9hSfGqP\\u002f7z8="}},{"label":"score time","ticktext":["0.016","0.027","0.037","0.048","0.058","0.069","0.079","0.090","0.100","0.111"],"tickvals":[0.016093850135803223,0.026609175735049777,0.03712450133429633,0.047639826933542885,0.05815515253278944,0.068670478132036,0.07918580373128255,0.0897011293305291,0.10021645492977566,0.11073178052902222],"values":{"dtype":"f8","bdata":"AAAAAOtYvD\\u002fYbItOSwu1P+I0tlJir7c\\u002fKJ+HjZwbsD\\u002fPAx9Xv\\u002fWsP\\u002fQna3V0a5M\\u002fghSh+r3ekD+dagpdy3qcPwAAAADoepA\\u002f+OmXhKPkkD8="}},{"label":"fit time","ticktext":["0.0","0.3","0.5","0.7","1.0","1.2","1.5","1.7","2.0","2.2"],"tickvals":[0.01644045114517212,0.25974368386798435,0.5030469165907966,0.7463501493136089,0.9896533820364211,1.2329566147592332,1.4762598474820456,1.7195630802048578,1.96286631292767,2.206169545650482],"values":{"dtype":"f8","bdata":"AAAAODymAUDmT8rYQub3P2EKk3oeWPo\\u002fRnORkkcL9D8rvmiOV1PxP6ya1gjViZM\\u002fAAAAAMTVkD+C5naI7mWYPwAAAADE1ZA\\u002fAAAAAMTVkD8="}},{"label":"score","ticktext":["0.60","0.62","0.64","0.66","0.69","0.71","0.73","0.75","0.77","0.79"],"tickvals":[0.5998953213503151,0.6214061738890377,0.6429170264277604,0.664427878966483,0.6859387315052057,0.7074495840439282,0.7289604365826509,0.7504712891213735,0.7719821416600962,0.7934929941988188],"values":{"dtype":"f8","bdata":"pwx2a0tk6T+fOf2ZvUjpP5gIIKqaRek\\u002fRnm0UHnR6D9BADGniU3oPwqWGMheMuM\\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\\u002f7iJHrFcy4z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"pwx2a0tk6T+fOf2ZvUjpP5gIIKqaRek\\u002fRnm0UHnR6D9BADGniU3oPwqWGMheMuM\\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\\u002f7iJHrFcy4z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br />
@@ -7436,7 +7436,7 @@ search.study_
 ```
 
 ```none
-<optuna.study.study.Study object at 0x7ee9bd853830>
+<optuna.study.study.Study object at 0x73c0057cb8f0>
 ```
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 106-108 -->
@@ -7463,7 +7463,7 @@ optuna.visualization.plot_slice(search.study_, params=["0:min_samples_leaf"])
 
 <div class="output_subarea output_html rendered_html output_result">
 <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="41038426-2661-43fc-aa27-ea5510bf50b5" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("41038426-2661-43fc-aa27-ea5510bf50b5")) {                    Plotly.newPlot(                        "41038426-2661-43fc-aa27-ea5510bf50b5",                        [{"marker":{"color":[4,5,7,8,9],"colorbar":{"title":{"text":"Trial"},"x":1.0,"xpad":40},"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"line":{"color":"Grey","width":0.5}},"mode":"markers","name":"Feasible Trial","showlegend":false,"x":[2,1,7,4,2],"y":[0.7913290174928354,0.7931359271779979,0.7588919833029395,0.7759552041707828,0.7894246170474473],"type":"scatter"}],                        {"title":{"text":"Slice Plot"},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"title":{"text":"0:min_samples_leaf"},"type":"log"},"yaxis":{"title":{"text":"Objective Value"}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="dfeca29d-4917-4054-bed1-775ed0b28a7a" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("dfeca29d-4917-4054-bed1-775ed0b28a7a")) {                    Plotly.newPlot(                        "dfeca29d-4917-4054-bed1-775ed0b28a7a",                        [{"marker":{"color":[4,5,7,8,9],"colorbar":{"title":{"text":"Trial"},"x":1.0,"xpad":40},"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"line":{"color":"Grey","width":0.5}},"mode":"markers","name":"Feasible Trial","showlegend":false,"x":[2,1,7,4,2],"y":[0.7901294715500632,0.7934929941988188,0.7594650521714429,0.7755705429333737,0.7897466013676135],"type":"scatter"}],                        {"title":{"text":"Slice Plot"},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"title":{"text":"0:min_samples_leaf"},"type":"log"},"yaxis":{"title":{"text":"Objective Value"}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br />
@@ -7517,19 +7517,19 @@ study.best_params
 ```
 
 ```none
-[I 2026-07-06 10:02:16,499] A new study created in memory with name: no-name-f3566a95-bbbb-4e0b-a93f-156544657d31
-[I 2026-07-06 10:02:21,381] Trial 0 finished with value: 0.7756832695047662 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 0 with value: 0.7756832695047662.
-[I 2026-07-06 10:02:30,835] Trial 1 finished with value: 0.792758259007482 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 1 with value: 0.792758259007482.
-[I 2026-07-06 10:02:31,127] Trial 2 finished with value: 0.5998958707747277 and parameters: {'2:regressor': '1:ridge', '1:α': 0.08492471122505144}. Best is trial 1 with value: 0.792758259007482.
-[I 2026-07-06 10:02:35,564] Trial 3 finished with value: 0.7539646625686293 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 8}. Best is trial 1 with value: 0.792758259007482.
-[I 2026-07-06 10:02:39,407] Trial 4 finished with value: 0.7377906146352264 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 13}. Best is trial 1 with value: 0.792758259007482.
-[I 2026-07-06 10:02:43,771] Trial 5 finished with value: 0.750402259324839 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 9}. Best is trial 1 with value: 0.792758259007482.
-[I 2026-07-06 10:02:44,080] Trial 6 finished with value: 0.599895449365148 and parameters: {'2:regressor': '1:ridge', '1:α': 0.02950170646802144}. Best is trial 1 with value: 0.792758259007482.
-[I 2026-07-06 10:02:44,393] Trial 7 finished with value: 0.5998974475406866 and parameters: {'2:regressor': '1:ridge', '1:α': 0.2943119019446645}. Best is trial 1 with value: 0.792758259007482.
-[I 2026-07-06 10:02:50,080] Trial 8 finished with value: 0.7817700884784311 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 3}. Best is trial 1 with value: 0.792758259007482.
-[I 2026-07-06 10:02:59,706] Trial 9 finished with value: 0.7930901236991126 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 9 with value: 0.7930901236991126.
+[I 2026-07-06 12:10:47,645] A new study created in memory with name: no-name-662b82ed-ed29-4f43-8530-0bcf54db0e47
+[I 2026-07-06 12:10:50,962] Trial 0 finished with value: 0.718012604169956 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 20}. Best is trial 0 with value: 0.718012604169956.
+[I 2026-07-06 12:10:51,266] Trial 1 finished with value: 0.5999001088077989 and parameters: {'2:regressor': '1:ridge', '1:α': 0.6552266961112652}. Best is trial 0 with value: 0.718012604169956.
+[I 2026-07-06 12:10:51,571] Trial 2 finished with value: 0.5999441280630758 and parameters: {'2:regressor': '1:ridge', '1:α': 9.363192377762196}. Best is trial 0 with value: 0.718012604169956.
+[I 2026-07-06 12:10:51,872] Trial 3 finished with value: 0.5998975486809712 and parameters: {'2:regressor': '1:ridge', '1:α': 0.30785332299789137}. Best is trial 0 with value: 0.718012604169956.
+[I 2026-07-06 12:10:52,193] Trial 4 finished with value: 0.59989538019275 and parameters: {'2:regressor': '1:ridge', '1:α': 0.020425589324808376}. Best is trial 0 with value: 0.718012604169956.
+[I 2026-07-06 12:10:57,307] Trial 5 finished with value: 0.7774162105250707 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 5 with value: 0.7774162105250707.
+[I 2026-07-06 12:11:02,269] Trial 6 finished with value: 0.7765110708007961 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 5 with value: 0.7774162105250707.
+[I 2026-07-06 12:11:05,586] Trial 7 finished with value: 0.7229274589151259 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 20}. Best is trial 5 with value: 0.7774162105250707.
+[I 2026-07-06 12:11:05,911] Trial 8 finished with value: 0.5998984889063341 and parameters: {'2:regressor': '1:ridge', '1:α': 0.434389859806766}. Best is trial 5 with value: 0.7774162105250707.
+[I 2026-07-06 12:11:06,251] Trial 9 finished with value: 0.5998958149339625 and parameters: {'2:regressor': '1:ridge', '1:α': 0.07756777198191254}. Best is trial 5 with value: 0.7774162105250707.
 
-{'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}
+{'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}
 ```
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 171-172 -->
@@ -7543,7 +7543,7 @@ optuna.visualization.plot_optimization_history(study)
 
 <div class="output_subarea output_html rendered_html output_result">
 <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="933849ed-cb8c-4b54-bf30-44fbcecca4c9" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("933849ed-cb8c-4b54-bf30-44fbcecca4c9")) {                    Plotly.newPlot(                        "933849ed-cb8c-4b54-bf30-44fbcecca4c9",                        [{"mode":"markers","name":"Objective Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.7756832695047662,0.792758259007482,0.5998958707747277,0.7539646625686293,0.7377906146352264,0.750402259324839,0.599895449365148,0.5998974475406866,0.7817700884784311,0.7930901236991126],"type":"scatter"},{"mode":"lines","name":"Best Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.7756832695047662,0.792758259007482,0.792758259007482,0.792758259007482,0.792758259007482,0.792758259007482,0.792758259007482,0.792758259007482,0.792758259007482,0.7930901236991126],"type":"scatter"},{"marker":{"color":"#cccccc"},"mode":"markers","name":"Infeasible Trial","showlegend":false,"x":[],"y":[],"type":"scatter"}],                        {"title":{"text":"Optimization History Plot"},"xaxis":{"title":{"text":"Trial"}},"yaxis":{"title":{"text":"Objective Value"}},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="5c67382e-c04c-4c9d-93d3-3dd2f10ac384" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("5c67382e-c04c-4c9d-93d3-3dd2f10ac384")) {                    Plotly.newPlot(                        "5c67382e-c04c-4c9d-93d3-3dd2f10ac384",                        [{"mode":"markers","name":"Objective Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.718012604169956,0.5999001088077989,0.5999441280630758,0.5998975486809712,0.59989538019275,0.7774162105250707,0.7765110708007961,0.7229274589151259,0.5998984889063341,0.5998958149339625],"type":"scatter"},{"mode":"lines","name":"Best Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.718012604169956,0.718012604169956,0.718012604169956,0.718012604169956,0.718012604169956,0.7774162105250707,0.7774162105250707,0.7774162105250707,0.7774162105250707,0.7774162105250707],"type":"scatter"},{"marker":{"color":"#cccccc"},"mode":"markers","name":"Infeasible Trial","showlegend":false,"x":[],"y":[],"type":"scatter"}],                        {"title":{"text":"Optimization History Plot"},"xaxis":{"title":{"text":"Trial"}},"yaxis":{"title":{"text":"Objective Value"}},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br />
@@ -7565,11 +7565,11 @@ print(best_learner.describe_params())
 ```
 
 ```none
-{'min_samples_leaf': 1, 'regressor': 'extra_tree'}
+{'min_samples_leaf': 4, 'regressor': 'extra_tree'}
 ```
 
-**Total running time of the script:** (1 minutes 34.635 seconds)
+**Total running time of the script:** (1 minutes 7.485 seconds)
 
-**Estimated memory usage:**  598 MB
+**Estimated memory usage:**  674 MB
 
 <a id="sphx-glr-download-auto-examples-02-data-ops-1131-optuna-choices-py"></a>

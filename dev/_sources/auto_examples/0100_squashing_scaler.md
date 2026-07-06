@@ -232,8 +232,8 @@ On the employee salaries dataset, the [`SquashingScaler`](../reference/generated
 better than [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler) and [`QuantileTransformer`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html#sklearn.preprocessing.QuantileTransformer) on all
 cross-validation folds.
 
-**Total running time of the script:** (0 minutes 26.741 seconds)
+**Total running time of the script:** (0 minutes 27.501 seconds)
 
-**Estimated memory usage:**  601 MB
+**Estimated memory usage:**  584 MB
 
 <a id="sphx-glr-download-auto-examples-0100-squashing-scaler-py"></a>

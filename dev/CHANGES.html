@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: New Features: set_config() and config_context() now accept a table_report_n_rows parameter to globally control the default number of rows displayed in TableReport.#2193 by Mann..." />
+<meta property="og:description" content="Ongoing development: New Features: Transformers: The SessionEncoder is now available. This encoder adds a session_id column, which groups together events that occur within the given session gap. Ad..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: New Features: set_config() and config_context() now accept a table_report_n_rows parameter to globally control the default number of rows displayed in TableReport.#2193 by Mann..." />
+<meta name="description" content="Ongoing development: New Features: Transformers: The SessionEncoder is now available. This encoder adds a session_id column, which groups together events that occur within the given session gap. Ad..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -593,16 +593,52 @@
 <h2>Ongoing development<a class="headerlink" href="#ongoing-development" title="Link to this heading">#</a></h2>
 <section id="new-features">
 <h3>New Features<a class="headerlink" href="#new-features" title="Link to this heading">#</a></h3>
+<p><strong>Transformers</strong>:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="reference/generated/skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.config_context.html#skrub.config_context" title="skrub.config_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">config_context()</span></code></a> now accept a
-<code class="docutils literal notranslate"><span class="pre">table_report_n_rows</span></code> parameter to globally control the default number of
-rows displayed in <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2193">#2193</a> by <a class="reference external" href="https://github.com/m4nn2609-dot">Mann</a>.</p></li>
+<li><p>The <a class="reference internal" href="reference/generated/skrub.SessionEncoder.html#skrub.SessionEncoder" title="skrub.SessionEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionEncoder</span></code></a> is now available. This encoder adds a <code class="docutils literal notranslate"><span class="pre">session_id</span></code>
+column, which groups together events that occur within the given session gap.
+Additionally, it is possible to provide a <code class="docutils literal notranslate"><span class="pre">split_by</span></code> column or list of columns
+(e.g., user ID or (user ID, user device)) to compute sessions for each grouping
+value.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1930">#1930</a> by  <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p>The <a class="reference internal" href="reference/generated/skrub.DropSimilar.html#skrub.DropSimilar" title="skrub.DropSimilar"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropSimilar</span></code></a> transformer has been added, for removing columns that
+present high correlation with other columns in a dataframe . <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2023">#2023</a> by
+<a class="reference external" href="https://github.com/emassoulie">Eloi Massoulié</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.ToFloat.html#skrub.ToFloat" title="skrub.ToFloat"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToFloat</span></code></a> now allows users to specify <code class="docutils literal notranslate"><span class="pre">decimal</span></code> and <code class="docutils literal notranslate"><span class="pre">thousand</span></code>
+separators to parse numerical columns that use formatting different from the default
+formatting used in Python, such as <code class="docutils literal notranslate"><span class="pre">1'234,5</span></code>.
+Additionally, negative numbers indicated with parentheses can be converted to the
+regular numeric format (<code class="docutils literal notranslate"><span class="pre">(432)</span></code> becomes <code class="docutils literal notranslate"><span class="pre">-432</span></code>). <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1772">#1772</a> by <a class="reference external" href="https://github.com/gabrielapgomezji">Gabriela
+Gómez Jiménez</a>.</p></li>
+<li><p>The transformer <a class="reference internal" href="reference/generated/skrub.DurationToFloat.html#skrub.DurationToFloat" title="skrub.DurationToFloat"><code class="xref py py-class docutils literal notranslate"><span class="pre">DurationToFloat</span></code></a> has been added. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2069">#2069</a> by
+<a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+</ul>
+<p><strong>TableReport</strong>:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport.json" title="skrub.TableReport.json"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TableReport.json()</span></code></a> now includes histogram data for numeric and datetime
+columns (the bin count and edges, and numbers of low and high outliers). Now
+<code class="docutils literal notranslate"><span class="pre">json()</span></code> contains all the information shown in the report HTML rendering,
+including the plots. The schema of the generated JSON is available at
+<a class="reference internal" href="reference/table_report_json_schema.html#table-report-json-schema"><span class="std std-ref">TableReport JSON schema</span></a>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2164">#2164</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p>The <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> can now be exported in markdown format with
+<a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport.markdown" title="skrub.TableReport.markdown"><code class="xref py py-func docutils literal notranslate"><span class="pre">markdown()</span></code></a>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2048">#2048</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport.dict" title="skrub.TableReport.dict"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TableReport.dict()</span></code></a> now allows exporting the report data as a Python
 dictionary. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2188">#2188</a> by <a class="reference external" href="https://github.com/m4nn2609-dot">m4nn2609-dot</a>.</p></li>
-<li><p>New methods <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.get_named_params" title="skrub.SkrubLearner.get_named_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.get_named_params()</span></code></a> and
-<a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.set_named_params" title="skrub.SkrubLearner.set_named_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.set_named_params()</span></code></a> allow getting and setting the outcomes for
-choices contained in the DataOp, keyed by choice name. It provides a more
+</ul>
+<p><strong>Data Ops</strong>:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.ParamSearch.html#skrub.ParamSearch.plot_results" title="skrub.ParamSearch.plot_results"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ParamSearch.plot_results()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.OptunaParamSearch.html#skrub.OptunaParamSearch.plot_results" title="skrub.OptunaParamSearch.plot_results"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OptunaParamSearch.plot_results()</span></code></a>
+accept new parameters <code class="docutils literal notranslate"><span class="pre">show_scores</span></code>, <code class="docutils literal notranslate"><span class="pre">show_choices</span></code>, and <code class="docutils literal notranslate"><span class="pre">show_times</span></code> to
+control respectively which scores, choices (params), and times (fit or score
+durations) should be included in the figure. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2202">#2202</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme
+Dockès</a>.</p></li>
+<li><p>New <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a> methods
+<a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.get_named_params" title="skrub.SkrubLearner.get_named_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.get_named_params()</span></code></a> and
+<a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.set_named_params" title="skrub.SkrubLearner.set_named_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.set_named_params()</span></code></a> allow getting and
+setting the outcomes for
+choices contained in the DataOp, keyed by choice name. They provide a more
 robust way of transferring selected hyperparameters from one DataOp to a
 different one than <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.get_params" title="skrub.SkrubLearner.get_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.get_params()</span></code></a> and
 <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.set_params" title="skrub.SkrubLearner.set_params"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.set_params()</span></code></a>.
@@ -615,65 +651,32 @@ SkrubLearner’s method like <code class="docutils literal notranslate"><span cl
 <li><p>It is now possible to attach new preview values to the variables in a DataOp
 with <a class="reference internal" href="reference/generated/skrub.DataOp.skb.set_data.html#skrub.DataOp.skb.set_data" title="skrub.DataOp.skb.set_data"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.set_data()</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2081">#2081</a> by
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
-<li><p><a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> objects have a new attribute <a class="reference internal" href="reference/generated/skrub.DataOp.skb.id.html#skrub.DataOp.skb.id" title="skrub.DataOp.skb.id"><code class="xref py py-attr docutils literal notranslate"><span class="pre">DataOp.skb.id</span></code></a> which
-provides an alternative for referring to a node, in the environment passed to
+<li><p><a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> objects have a new attribute <a class="reference internal" href="reference/generated/skrub.DataOp.skb.id.html#skrub.DataOp.skb.id" title="skrub.DataOp.skb.id"><code class="xref py py-attr docutils literal notranslate"><span class="pre">DataOp.skb.id</span></code></a>.
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.id.html#skrub.DataOp.skb.id" title="skrub.DataOp.skb.id"><code class="xref py py-attr docutils literal notranslate"><span class="pre">DataOp.skb.id</span></code></a>
+provides an alternative for referring to a node in the environment passed to
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.eval.html#skrub.DataOp.skb.eval" title="skrub.DataOp.skb.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.eval()</span></code></a>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.predict()</span></code>, etc., or in
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.find.html#skrub.DataOp.skb.find" title="skrub.DataOp.skb.find"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.find()</span></code></a> or <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.truncated_after" title="skrub.SkrubLearner.truncated_after"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.truncated_after()</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2062">#2062</a> by
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
-<li><p>The <a class="reference internal" href="reference/generated/skrub.SessionEncoder.html#skrub.SessionEncoder" title="skrub.SessionEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionEncoder</span></code></a> is now available. This encoder adds a <code class="docutils literal notranslate"><span class="pre">session_id</span></code>
-column, which groups together events that occur within the given session gap.
-Additionally, it is possible to provide a <code class="docutils literal notranslate"><span class="pre">split_by</span></code> column or list of columns
-(e.g., user ID or (user ID, user device)) to compute sessions for each grouping
-value.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1930">#1930</a> by  <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
-<li><p>A new synthetic dataset generator for timestamped data and session-based</p></li>
 </ul>
-<blockquote>
-<div><p>operations has been added: <a class="reference internal" href="reference/generated/skrub.datasets.make_retail_events.html#skrub.datasets.make_retail_events" title="skrub.datasets.make_retail_events"><code class="xref py py-meth docutils literal notranslate"><span class="pre">make_retail_events()</span></code></a>.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1930">#1930</a> by  <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p>
-</div></blockquote>
+<p><strong>Misc</strong>:</p>
 <ul class="simple">
-<li><p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">DropSimilar</span></code> transformer has been added, for removing columns in a
-dataframe that present high correlation with other columns. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2023">#2023</a> by
-<a class="reference external" href="https://github.com/emassoulie">Eloi Massoulié</a>.</p></li>
-<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ToFloat32</span></code> now allows users to specify <code class="docutils literal notranslate"><span class="pre">decimal</span></code> and <code class="docutils literal notranslate"><span class="pre">thousand</span></code>
-separators to parse numerical columns that use formatting different from the default
-formatting used in Python, such as <code class="docutils literal notranslate"><span class="pre">1'234,5</span></code>.
-Additionally, negative numbers indicated with parentheses can be converted to the
-regular numeric format (<code class="docutils literal notranslate"><span class="pre">(432)</span></code> becomes <code class="docutils literal notranslate"><span class="pre">-432</span></code>). <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1772">#1772</a> by <a class="reference external" href="https://github.com/gabrielapgomezji">Gabriela
-Gómez Jiménez</a>.</p></li>
-<li><p><a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport.json" title="skrub.TableReport.json"><code class="xref py py-meth docutils literal notranslate"><span class="pre">TableReport.json()</span></code></a> now includes histogram data for numeric and datetime
-columns (the bin count and edges, and numbers of low and high outliers). Now
-<code class="docutils literal notranslate"><span class="pre">json()</span></code> contains all the information shown in the report html rendering,
-including the plots. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2164">#2164</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
-<li><p>Added <a class="reference internal" href="reference/generated/skrub.selectors.object.html#skrub.selectors.object" title="skrub.selectors.object"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.selectors.object()</span></code></a> to select columns with the <code class="docutils literal notranslate"><span class="pre">object</span></code>
-(pandas) or <code class="docutils literal notranslate"><span class="pre">pl.Object</span></code> (polars) dtype. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2171">#2171</a> by <a class="reference external" href="https://github.com/omkar-334">Omkar Kabde</a>.</p></li>
-<li><p><a class="reference internal" href="reference/generated/skrub.ParamSearch.html#skrub.ParamSearch.plot_results" title="skrub.ParamSearch.plot_results"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ParamSearch.plot_results()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.OptunaParamSearch.html#skrub.OptunaParamSearch.plot_results" title="skrub.OptunaParamSearch.plot_results"><code class="xref py py-meth docutils literal notranslate"><span class="pre">OptunaParamSearch.plot_results()</span></code></a>
-accept new parameters <code class="docutils literal notranslate"><span class="pre">show_scores</span></code>, <code class="docutils literal notranslate"><span class="pre">show_choices</span></code>, and <code class="docutils literal notranslate"><span class="pre">show_times</span></code> to
-control respectively which scores, choices (params), and times (fit or score
-durations) should be included in the figure. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2202">#2202</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme
-Dockès</a>.</p></li>
+<li><p>A new synthetic dataset generator for timestamped data and session-based
+operations has been added: <a class="reference internal" href="reference/generated/skrub.datasets.make_retail_events.html#skrub.datasets.make_retail_events" title="skrub.datasets.make_retail_events"><code class="xref py py-meth docutils literal notranslate"><span class="pre">make_retail_events()</span></code></a>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/1930">#1930</a> by  <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p>Added the <a class="reference internal" href="reference/generated/skrub.selectors.object.html#skrub.selectors.object" title="skrub.selectors.object"><code class="xref py py-func docutils literal notranslate"><span class="pre">object()</span></code></a> selector to select columns with the
+<code class="docutils literal notranslate"><span class="pre">object</span></code> (pandas) or <code class="docutils literal notranslate"><span class="pre">pl.Object</span></code> (polars) dtype. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2171">#2171</a> by
+<a class="reference external" href="https://github.com/omkar-334">Omkar Kabde</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.config_context.html#skrub.config_context" title="skrub.config_context"><code class="xref py py-func docutils literal notranslate"><span class="pre">config_context()</span></code></a> now accept a
+<code class="docutils literal notranslate"><span class="pre">table_report_n_rows</span></code> parameter to globally control the default number of
+rows displayed in <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2193">#2193</a> by <a class="reference external" href="https://github.com/m4nn2609-dot">Mann</a>.</p></li>
 </ul>
 </section>
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Grouped Examples into subject-specific sections. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2102">#2102</a> by
-<a class="reference external" href="https://github.com/maureen-githaiga">Maureen Githaiga</a>.</p></li>
-<li><p><a class="reference internal" href="reference/generated/skrub.choose_from.html#skrub.choose_from" title="skrub.choose_from"><code class="xref py py-meth docutils literal notranslate"><span class="pre">choose_from()</span></code></a> now transparently converts <code class="docutils literal notranslate"><span class="pre">outcomes</span></code> to a list when it is
-another type of sequence. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2100">#2100</a> by <a class="reference external" href="https://github.com/aidbar">aidbar</a>.</p></li>
-<li><p>An unnecessary warning that was raised when passing a numpy array to the
-TableVectorizer has been removed. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1908">#1908</a> by
-<a class="reference external" href="https://github.com/sandrineh">Sandrine Henry</a>.</p></li>
-<li><p>Improving the association tab error message when only one column is present
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2094">#2094</a> by <a class="reference external" href="https://github.com/AlicjaKo">Alicja Kosak</a>.</p></li>
-<li><p>Added support for numpy arrays in <a class="reference internal" href="reference/generated/skrub.DataOp.skb.concat.html#skrub.DataOp.skb.concat" title="skrub.DataOp.skb.concat"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.concat()</span></code></a>.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2096">#2096</a> by <a class="reference external" href="https://github.com/siddiqua-tamk">Ayesha Siddiqua</a>.</p></li>
-<li><p>The <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> can now be exported in markdown format with <code class="docutils literal notranslate"><span class="pre">.markdown</span></code>.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2048">#2048</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
-<li><p>The minimum required version of matplotlib has been increased from 3.4.3 to 3.6.1.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2159">#2159</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
-<li><p><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.score()</span></code> has been enhanced when the DataOp used
+<li><p><a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a>’s <code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.score()</span></code>
+has been enhanced when the DataOp used
 <a class="reference internal" href="reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a>. During scoring, predict(), predict_proba()
 etc. are cached to avoid recomputation when multiple scorers are used (or one
 scorer calls them several times). Moreover it is possible to pass
@@ -686,27 +689,41 @@ recomputing them, it is possible to provide them in the environment passed to
 <li><p><a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner.find_fitted_estimator" title="skrub.SkrubLearner.find_fitted_estimator"><code class="xref py py-meth docutils literal notranslate"><span class="pre">SkrubLearner.find_fitted_estimator()</span></code></a> now supports searching for the
 apply node by ID or callable predicate as alternatives to the node name.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2194">#2194</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p>The minimum required version of matplotlib has been increased from 3.4.3 to 3.6.1.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2159">#2159</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p>Gallery examples have been grouped into subject-specific sections. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2102">#2102</a> by
+<a class="reference external" href="https://github.com/maureen-githaiga">Maureen Githaiga</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.choose_from.html#skrub.choose_from" title="skrub.choose_from"><code class="xref py py-meth docutils literal notranslate"><span class="pre">choose_from()</span></code></a> now transparently converts <code class="docutils literal notranslate"><span class="pre">outcomes</span></code> to a list when it is
+another type of sequence. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2100">#2100</a> by <a class="reference external" href="https://github.com/aidbar">aidbar</a>.</p></li>
+<li><p>An unnecessary warning that was raised when passing a numpy array to the
+TableVectorizer has been removed. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1908">#1908</a> by
+<a class="reference external" href="https://github.com/sandrineh">Sandrine Henry</a>.</p></li>
+<li><p>The error message displayed in the Associations tab of the <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>
+has been improved for reports where only one column is present.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2094">#2094</a> by <a class="reference external" href="https://github.com/AlicjaKo">Alicja Kosak</a>.</p></li>
+<li><p>Added support for numpy arrays in <a class="reference internal" href="reference/generated/skrub.DataOp.skb.concat.html#skrub.DataOp.skb.concat" title="skrub.DataOp.skb.concat"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.concat()</span></code></a>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2096">#2096</a> by <a class="reference external" href="https://github.com/siddiqua-tamk">Ayesha Siddiqua</a>.</p></li>
 </ul>
 </section>
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p>A bug in how the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> treated columns
+duration columns in pandas and polars has been fixed. Now, both classes convert
+durations to the total number of seconds (with fractional part). This is done
+by the new transformer <a class="reference internal" href="reference/generated/skrub.DurationToFloat.html#skrub.DurationToFloat" title="skrub.DurationToFloat"><code class="xref py py-class docutils literal notranslate"><span class="pre">DurationToFloat</span></code></a>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2069">#2069</a> by
+<a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+<li><p>An error that could arise when running <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> on dataframes containing
+double dollar (<code class="docutils literal notranslate"><span class="pre">$$</span></code>) signs has been fixed.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2154">#2154</a> by <a class="reference external" href="https://github.com/Michenina-Lab">Katerina Michenina</a>,
+<a class="reference external" href="https://github.com/CecilyTS">CecilyTS</a>, <a class="reference external" href="https://github.com/eve2705">Eve Rabin</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a> with the default <code class="docutils literal notranslate"><span class="pre">hashing=&quot;fast&quot;</span></code> now uses every
 n-gram size in <code class="docutils literal notranslate"><span class="pre">ngram_range</span></code> (the upper bound is inclusive, as documented
 and as already done by <code class="docutils literal notranslate"><span class="pre">hashing=&quot;murmur&quot;</span></code>). Previously the largest size was
 dropped, so the default <code class="docutils literal notranslate"><span class="pre">ngram_range=(2,</span> <span class="pre">4)</span></code> ignored 4-grams and a
 single-size range such as <code class="docutils literal notranslate"><span class="pre">(3,</span> <span class="pre">3)</span></code> produced the same constant encoding for
 every string. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2168">#2168</a> by <a class="reference external" href="https://github.com/glitch-ux">José Maia</a>.</p></li>
-<li><p>A bug in how the <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> treated columns
-duration columns in pandas and polars has been fixed. Now, both classes convert
-durations to the total number of seconds (with fractional part). This is done
-by the new transformer <code class="xref py py-class docutils literal notranslate"><span class="pre">DurationToFloat</span></code>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2069">#2069</a> by
-<a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
-<li><p>An error that could arise when running <code class="docutils literal notranslate"><span class="pre">TableReport</span></code> on dataframes containing
-double dollar (<code class="docutils literal notranslate"><span class="pre">$$</span></code>) signs has been fixed.
-<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2154">#2154</a> by <a class="reference external" href="https://github.com/Michenina-Lab">Katerina Michenina</a>,
-<a class="reference external" href="https://github.com/CecilyTS">CecilyTS</a>, <a class="reference external" href="https://github.com/eve2705">Eve Rabin</a>.</p></li>
-<li><p>An error that happened when running <code class="docutils literal notranslate"><span class="pre">TableReport</span></code> or <code class="docutils literal notranslate"><span class="pre">column_associations</span></code>
+<li><p>An error that happened when running <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> or <code class="docutils literal notranslate"><span class="pre">column_associations</span></code>
 on some dataframes with non-string column names has been fixed in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2179">#2179</a>
 by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 <li><p>An error that could arise in histograms when running <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> on

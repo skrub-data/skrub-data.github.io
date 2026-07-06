@@ -14,7 +14,7 @@ by Cramer’s V association.
 
 This can be useful to have access to the information used in the [`TableReport`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport)
 for later use (e.g., to select which columns to drop). These associations are
-also used by the `DropSimilar` transformer to select which columns should be dropped.
+also used by the [`DropSimilar`](../../reference/generated/skrub.DropSimilarhtml.md#skrub.DropSimilar) transformer to select which columns should be dropped.
 
 ```default
 from skrub import column_associations

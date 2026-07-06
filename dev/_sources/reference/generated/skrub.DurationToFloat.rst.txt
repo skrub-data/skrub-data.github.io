@@ -1,0 +1,14 @@
+﻿DurationToFloat
+===============
+
+.. currentmodule:: skrub
+
+.. autoclass:: DurationToFloat
+   :members:
+   :inherited-members:
+   :special-members: __call__
+   :exclude-members: get_metadata_routing, set_fit_request
+
+.. minigallery:: skrub.DurationToFloat skrub.DurationToFloat.__init__ skrub.DurationToFloat.fit skrub.DurationToFloat.fit_transform skrub.DurationToFloat.get_feature_names_out skrub.DurationToFloat.get_metadata_routing skrub.DurationToFloat.get_params skrub.DurationToFloat.set_fit_request skrub.DurationToFloat.set_output skrub.DurationToFloat.set_params skrub.DurationToFloat.set_transform_request skrub.DurationToFloat.transform 
+   :add-heading: Gallery examples
+   :heading-level: -
