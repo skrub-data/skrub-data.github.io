@@ -6,6 +6,16 @@
 
 ### New Features
 
+### Changes
+
+### Bugfixes
+
+### Deprecations
+
+## Release 0.10.0
+
+### New Features
+
 **Transformers**:
 
 - The [`SessionEncoder`](reference/generated/skrub.SessionEncoderhtml.md#skrub.SessionEncoder) is now available. This encoder adds a `session_id`
