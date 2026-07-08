@@ -2,11 +2,19 @@
 
 ### skrub.to_datetime(data, format=None)
 
-Convert DataFrame or column to Datetime dtype.
+Convert a dataframe or series to Datetime dtype.
+
+This function tries to convert the given dataframe or series from string to datetime,
+by either testing common datetime formats or using the `format` specified
+by the user. Columns that cannot be parsed are returned unchanged.
+
+Note that this transformation is stateless, so it should not be used in a
+pipeline that is fitted on a training set and then applied to a test set.
+Use the [`ToDatetime`](skrub.ToDatetimehtml.md#skrub.ToDatetime) transformer instead.
 
 * **Parameters:**
   **data**
-  : The dataframe or series to transform.
+  : The dataframe or series to convert to Datetime.
 
   **format**
   : Format string to use to parse datetime strings.

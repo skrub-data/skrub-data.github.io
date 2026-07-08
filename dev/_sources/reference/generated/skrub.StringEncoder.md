@@ -2,7 +2,7 @@
 
 ### *class* skrub.StringEncoder(n_components=30, vectorizer='tfidf', ngram_range=(3, 4), analyzer='char_wb', stop_words=None, random_state=None, vocabulary=None)
 
-Encode string features by using tf-idf vectorization and truncated singular     value decomposition (SVD).
+Encode string columns as a numeric array using Latent Semantic Analysis (LSA).
 
 First, apply a tf-idf vectorization of the text, then reduce the dimensionality
 with a truncated SVD with the given number of parameters.
