@@ -8,6 +8,10 @@
 
 ### Changes
 
+- The error message when a key is missing from the environment passed to a
+  [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) or [`SkrubLearner`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) has been improved.
+  [#2211](https://github.com/skrub-data/skrub/pull/2211) by [Jérôme Dockès](https://github.com/jeromedockes).
+
 ### Bugfixes
 
 ### Deprecations
