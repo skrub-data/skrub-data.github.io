@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Release 0.10.0: New Features: Changes: The error message when a key is missing from the environment passed to a DataOp or SkrubLearner has been improved.#2211 by Jérôme Dockès.. Bugfixes: Deprecati..." />
+<meta property="og:description" content="Release 0.10.0: New Features: Changes: The error message when a key is missing from the environment passed to a DataOp or SkrubLearner has been improved.#2211 by Jérôme Dockès., When a cross-valida..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Release 0.10.0: New Features: Changes: The error message when a key is missing from the environment passed to a DataOp or SkrubLearner has been improved.#2211 by Jérôme Dockès.. Bugfixes: Deprecati..." />
+<meta name="description" content="Release 0.10.0: New Features: Changes: The error message when a key is missing from the environment passed to a DataOp or SkrubLearner has been improved.#2211 by Jérôme Dockès., When a cross-valida..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -596,10 +596,24 @@
 </section>
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<ul class="simple">
+<ul>
 <li><p>The error message when a key is missing from the environment passed to a
 <a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> or <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a> has been improved.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2211">#2211</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
+<li><p>When a cross-validation splitter has been passed to
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.mark_as_X()</span></code></a>, it it now possible to select a specific split
+from it when calling <a class="reference internal" href="reference/generated/skrub.DataOp.skb.train_test_split.html#skrub.DataOp.skb.train_test_split" title="skrub.DataOp.skb.train_test_split"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.train_test_split()</span></code></a> by passing
+<code class="docutils literal notranslate"><span class="pre">split_index</span></code>; for example <code class="docutils literal notranslate"><span class="pre">data_op.skb.train_test_split(split_index=3)</span></code>
+to get the third split.</p>
+<p>The split that is returned by default when <code class="docutils literal notranslate"><span class="pre">split_index</span></code> is not specified is
+now the <em>last</em> split produced by the splitter (it was the first before).</p>
+<p>Moreover, the keys <code class="docutils literal notranslate"><span class="pre">row_indices_train</span></code> and <code class="docutils literal notranslate"><span class="pre">row_indices_test</span></code> are added to
+the returned dictionary when using the <code class="docutils literal notranslate"><span class="pre">mark_as_X</span></code> splitter. And the keys
+<code class="docutils literal notranslate"><span class="pre">X</span></code> (and <code class="docutils literal notranslate"><span class="pre">y</span></code> when it exists) are added to the dictionaries returned by
+<a class="reference internal" href="reference/generated/skrub.DataOp.skb.train_test_split.html#skrub.DataOp.skb.train_test_split" title="skrub.DataOp.skb.train_test_split"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.train_test_split()</span></code></a> and <a class="reference internal" href="reference/generated/skrub.DataOp.skb.iter_cv_splits.html#skrub.DataOp.skb.iter_cv_splits" title="skrub.DataOp.skb.iter_cv_splits"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.iter_cv_splits()</span></code></a>,
+containing the full X and y before splitting.</p>
+<p><a class="reference external" href="https://github.com/skrub-data/skrub/pull/2213">#2213</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p>
+</li>
 </ul>
 </section>
 <section id="bugfixes">

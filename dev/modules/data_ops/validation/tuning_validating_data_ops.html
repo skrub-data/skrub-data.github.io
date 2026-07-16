@@ -773,7 +773,7 @@ dataframes are split using the provided split function (by default
 scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="(in scikit-learn v1.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.train_test_split()</span></code></a>).</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
-<span class="go">dict_keys([&#39;train&#39;, &#39;test&#39;, &#39;X_train&#39;, &#39;X_test&#39;, &#39;y_train&#39;, &#39;y_test&#39;])</span>
+<span class="go">dict_keys([&#39;X_train&#39;, &#39;X_test&#39;, &#39;y_train&#39;, &#39;y_test&#39;, &#39;train&#39;, &#39;test&#39;, &#39;X&#39;, &#39;y&#39;])</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">train</span></code> and <code class="docutils literal notranslate"><span class="pre">test</span></code> are the full dictionaries corresponding to the training
@@ -846,18 +846,18 @@ cross-validation we must group products by seller. We do it with
 </div>
 <p>The train set only contains data from the “supermarket.com” seller.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;X_train&quot;</span><span class="p">]</span>
-<span class="go">   description  price</span>
-<span class="go">0       screen    100</span>
-<span class="go">2     keyboard     20</span>
-<span class="go">5  screwdriver     12</span>
-</pre></div>
-</div>
-<p>The test set only contains data from the “bestproducts.com” seller.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;X_test&quot;</span><span class="p">]</span>
 <span class="go">  description  price</span>
 <span class="go">1      hammer     15</span>
 <span class="go">3     usb key      9</span>
 <span class="go">4     charger     13</span>
+</pre></div>
+</div>
+<p>The test set only contains data from the “bestproducts.com” seller.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;X_test&quot;</span><span class="p">]</span>
+<span class="go">   description  price</span>
+<span class="go">0       screen    100</span>
+<span class="go">2     keyboard     20</span>
+<span class="go">5  screwdriver     12</span>
 </pre></div>
 </div>
 </section>

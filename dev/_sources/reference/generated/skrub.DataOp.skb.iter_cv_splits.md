@@ -24,6 +24,12 @@ Yield splits of an environment into training and testing environments.
   : For each split, a dict is produced, containing the following keys:
     - train: a dictionary containing the training environment
     - test: a dictionary containing the test environment
+    - X: the value of the variable marked with
+      [`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) in `environment`, before splitting.
+    - y: the value of the variable marked with
+      [`mark_as_y()`](skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y) in `environment`, before
+      splitting, if there is one (may not be the case for unsupervised
+      learning).
     - X_train: the value of the variable marked with
       [`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) in the train environment
     - X_test: the value of the variable marked with

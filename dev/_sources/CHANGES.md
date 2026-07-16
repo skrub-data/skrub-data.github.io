@@ -11,6 +11,22 @@
 - The error message when a key is missing from the environment passed to a
   [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) or [`SkrubLearner`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) has been improved.
   [#2211](https://github.com/skrub-data/skrub/pull/2211) by [Jérôme Dockès](https://github.com/jeromedockes).
+- When a cross-validation splitter has been passed to
+  [`DataOp.skb.mark_as_X()`](reference/generated/skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X), it it now possible to select a specific split
+  from it when calling [`DataOp.skb.train_test_split()`](reference/generated/skrub.DataOp.skb.train_test_splithtml.md#skrub.DataOp.skb.train_test_split) by passing
+  `split_index`; for example `data_op.skb.train_test_split(split_index=3)`
+  to get the third split.
+
+  The split that is returned by default when `split_index` is not specified is
+  now the *last* split produced by the splitter (it was the first before).
+
+  Moreover, the keys `row_indices_train` and `row_indices_test` are added to
+  the returned dictionary when using the `mark_as_X` splitter. And the keys
+  `X` (and `y` when it exists) are added to the dictionaries returned by
+  [`DataOp.skb.train_test_split()`](reference/generated/skrub.DataOp.skb.train_test_splithtml.md#skrub.DataOp.skb.train_test_split) and [`DataOp.skb.iter_cv_splits()`](reference/generated/skrub.DataOp.skb.iter_cv_splitshtml.md#skrub.DataOp.skb.iter_cv_splits),
+  containing the full X and y before splitting.
+
+  [#2213](https://github.com/skrub-data/skrub/pull/2213) by [Jérôme Dockès](https://github.com/jeromedockes).
 
 ### Bugfixes
 

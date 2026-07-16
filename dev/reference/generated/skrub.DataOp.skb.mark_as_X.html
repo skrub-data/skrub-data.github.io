@@ -781,7 +781,7 @@
 <h1>skrub.DataOp.skb.mark_as_X<a class="headerlink" href="#skrub-dataop-skb-mark-as-x" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.mark_as_X">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">mark_as_X</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c3c11f8/skrub/_data_ops/_skrub_namespace.py#L2820"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.mark_as_X" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">mark_as_X</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/ed8c7e3/skrub/_data_ops/_skrub_namespace.py#L2870"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.mark_as_X" title="Link to this definition">#</a></dt>
 <dd><p>Mark this DataOp as being the <code class="docutils literal notranslate"><span class="pre">X</span></code> table.</p>
 <p>Returns a copy; the original DataOp is left unchanged.</p>
 <p>This is used for train/test splits and cross-validation.
@@ -916,20 +916,20 @@ cross-validation we must group products by seller. We do it with
 <span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>The train set only contains data from the “supermarket.com” seller.</p>
+<p>The train set only contains data from the “bestproducts.com” seller.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;X_train&quot;</span><span class="p">]</span>
-<span class="go">   description  price</span>
-<span class="go">0       screen    100</span>
-<span class="go">2     keyboard     20</span>
-<span class="go">5  screwdriver     12</span>
-</pre></div>
-</div>
-<p>The test set only contains data from the “bestproducts.com” seller.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;X_test&quot;</span><span class="p">]</span>
 <span class="go">  description  price</span>
 <span class="go">1      hammer     15</span>
 <span class="go">3     usb key      9</span>
 <span class="go">4     charger     13</span>
+</pre></div>
+</div>
+<p>The test set only contains data from the “supermarket.com” seller.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;X_test&quot;</span><span class="p">]</span>
+<span class="go">   description  price</span>
+<span class="go">0       screen    100</span>
+<span class="go">2     keyboard     20</span>
+<span class="go">5  screwdriver     12</span>
 </pre></div>
 </div>
 </dd></dl>
