@@ -44,7 +44,7 @@ some malformed inputs may still be converted but yield unexpected values.
 
 ```pycon
 >>> import pandas as pd
->>> from skrub._to_float import ToFloat
+>>> from skrub import ToFloat
 ```
 
 A column that does not contain floats is converted if possible:
