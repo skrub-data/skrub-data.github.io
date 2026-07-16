@@ -289,7 +289,7 @@ and preprocessing done during model development are exactly the same as those do
 production. This makes deployment straightforward and reduces the risk of errors
 when moving from development to production environments.
 
-**Total running time of the script:** (0 minutes 11.635 seconds)
+**Total running time of the script:** (0 minutes 11.074 seconds)
 
 **Estimated memory usage:**  730 MB
 
