@@ -595,6 +595,7 @@
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">cardinality_below</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.drop.html">drop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
@@ -783,16 +784,34 @@
 <h1>cardinality_below<a class="headerlink" href="#cardinality-below" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.cardinality_below">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">cardinality_below</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">threshold</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_selectors.py#L622"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.cardinality_below" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">cardinality_below</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">threshold</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_selectors.py#L755"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.cardinality_below" title="Link to this definition">#</a></dt>
 <dd><p>Select columns whose cardinality (number of unique values) is (strictly)     below <code class="docutils literal notranslate"><span class="pre">threshold</span></code>.</p>
-<p>Null values do not count in the cardinality.</p>
+<p>This selector is useful for identifying low-cardinality (discrete) features for
+categorical encoding or for finding ID-like columns with high cardinality to
+encode them in specific ways.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>threshold</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a></span></dt><dd><p>Columns with fewer than this many unique values are selected.
+Null values do not count in the cardinality.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
 <dt><a class="reference internal" href="skrub.selectors.has_nulls.html#skrub.selectors.has_nulls" title="skrub.selectors.has_nulls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">has_nulls</span></code></a></dt><dd><p>Select columns that contain null values.</p>
 </dd>
+<dt><a class="reference internal" href="skrub.selectors.filter.html#skrub.selectors.filter" title="skrub.selectors.filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter</span></code></a></dt><dd><p>Use for custom cardinality-based selection criteria.</p>
+</dd>
 </dl>
 </div>
+<p class="rubric">Notes</p>
+<p>Missing values do not count as unique values for cardinality. For example,
+a column with values <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">2,</span> <span class="pre">None]</span></code> has a cardinality of 2.</p>
+<p>If unique value counting fails for a column (e.g., due to unsupported data types),
+the column is not selected.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -812,29 +831,35 @@
 <span class="go">1     1     1     1     2     2   2</span>
 <span class="go">2     1     2     2     3     3   3</span>
 <span class="go">3  &lt;NA&gt;  &lt;NA&gt;     2  &lt;NA&gt;     3   4</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">cardinality_below</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Select low-cardinality columns (e.g., below 3 unique values):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">cardinality_below</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 <span class="go">     a1    a2  a2_b</span>
 <span class="go">0     1     1     1</span>
 <span class="go">1     1     1     1</span>
 <span class="go">2     1     2     2</span>
 <span class="go">3  &lt;NA&gt;  &lt;NA&gt;     2</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">cardinality_below</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
-<span class="go">     a1    a2  a2_b    a3  a3_b</span>
-<span class="go">0     1     1     1     1     1</span>
-<span class="go">1     1     1     1     2     2</span>
-<span class="go">2     1     2     2     3     3</span>
-<span class="go">3  &lt;NA&gt;  &lt;NA&gt;     2  &lt;NA&gt;     3</span>
 </pre></div>
 </div>
-<p>Invert the selector to select columns whose cardinality is above the threshold:
-&gt;&gt;&gt; s.select(df, ~s.cardinality_below(3))</p>
-<blockquote>
-<div><p>a3  a3_b  a4</p>
-</div></blockquote>
-<p>0     1     1   1
-1     2     2   2
-2     3     3   3
-3  &lt;NA&gt;     3   4</p>
+<p>Invert to select high-cardinality columns (i.e., exclude low-cardinality):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">cardinality_below</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="go">    a3  a3_b  a4</span>
+<span class="go">0     1     1   1</span>
+<span class="go">1     2     2   2</span>
+<span class="go">2     3     3   3</span>
+<span class="go">3  &lt;NA&gt;     3   4</span>
+</pre></div>
+</div>
+<p>Select numeric features with low cardinality:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">cardinality_below</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">())</span>
+<span class="go">    a1    a2  a2_b    a3  a3_b  a4</span>
+<span class="go">0     1     1     1     1     1   1</span>
+<span class="go">1     1     1     1     2     2   2</span>
+<span class="go">2     1     2     2     3     3   3</span>
+<span class="go">3  &lt;NA&gt;  &lt;NA&gt;     2  &lt;NA&gt;     3   4</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <section id="gallery-examples">

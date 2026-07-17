@@ -593,6 +593,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.drop.html">drop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
@@ -781,14 +782,16 @@
 <h1>boolean<a class="headerlink" href="#boolean" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.boolean">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">boolean</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_selectors.py#L567"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.boolean" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">boolean</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_selectors.py#L691"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.boolean" title="Link to this definition">#</a></dt>
 <dd><p>Select columns that have a Boolean data type.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="skrub.selectors.numeric.html#skrub.selectors.numeric" title="skrub.selectors.numeric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numeric</span></code></a></dt><dd><p>Select all numeric columns (integer and float).</p>
+<dt><a class="reference internal" href="skrub.selectors.numeric.html#skrub.selectors.numeric" title="skrub.selectors.numeric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numeric</span></code></a></dt><dd><p>Select all numeric columns (integer and float, NOT boolean).</p>
 </dd>
 <dt><a class="reference internal" href="skrub.selectors.integer.html#skrub.selectors.integer" title="skrub.selectors.integer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">integer</span></code></a></dt><dd><p>Select integer columns.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.selectors.filter.html#skrub.selectors.filter" title="skrub.selectors.filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter</span></code></a></dt><dd><p>Use for custom data-based selection criteria.</p>
 </dd>
 </dl>
 </div>
@@ -807,17 +810,24 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
 <span class="go">   i64  i8  bool_  Bool_</span>
 <span class="go">0    0   3   True  False</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
-<span class="go">i64        int64</span>
-<span class="go">i8          int8</span>
-<span class="go">bool_       bool</span>
-<span class="go">Bool_    boolean</span>
-<span class="go">dtype: object</span>
 </pre></div>
 </div>
+<p>Select all Boolean columns:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">boolean</span><span class="p">())</span>
 <span class="go">   bool_  Bool_</span>
 <span class="go">0   True  False</span>
+</pre></div>
+</div>
+<p>Combine with numeric() to include both:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">boolean</span><span class="p">()</span> <span class="o">|</span> <span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">())</span>
+<span class="go">   i64  i8  bool_  Bool_</span>
+<span class="go">0    0   3   True  False</span>
+</pre></div>
+</div>
+<p>Note that numeric() alone does NOT include Boolean columns:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">())</span>
+<span class="go">   i64  i8</span>
+<span class="go">0    0   3</span>
 </pre></div>
 </div>
 </dd></dl>

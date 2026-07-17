@@ -4,6 +4,20 @@
 
 Select columns by name.
 
+The selected columns are returned in the order they are listed in `columns`,
+not the order they appear in the dataframe. If any of the requested columns are
+missing from the dataframe, an exception is raised.
+
+#### SEE ALSO
+[`all`](skrub.selectors.allhtml.md#skrub.selectors.all)
+: Select all columns
+
+[`glob`](skrub.selectors.globhtml.md#skrub.selectors.glob)
+: Select columns by UNIX-like name pattern
+
+[`regex`](skrub.selectors.regexhtml.md#skrub.selectors.regex)
+: Select columns by regular expression pattern
+
 ### Examples
 
 ```pycon
@@ -37,7 +51,8 @@ are missing:
 >>> s.select(df, s.cols('width_mm', 'depth_mm'))
 Traceback (most recent call last):
     ...
-ValueError: The following columns are requested for selection but missing from dataframe: ['depth_mm']
+ValueError: The following columns are requested for selection but missing
+from dataframe: ['depth_mm']
 ```
 
 However, no error is raised when this selector is combined with other

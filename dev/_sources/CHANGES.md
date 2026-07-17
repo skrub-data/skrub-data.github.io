@@ -204,7 +204,7 @@
 - A new dataframe generator, [`datasets.toy_cities()`](reference/generated/skrub.datasets.toy_citieshtml.md#skrub.datasets.toy_cities), has been added for
   use cases on dataframes with variable sizes and variable correlation between
   columns. [#2042](https://github.com/skrub-data/skrub/pull/2042) by [Eloi Massoulié](https://github.com/emassoulie).
-- A new selector function, `selectors.drop()`, has been added to drop columns
+- A new selector function, [`selectors.drop()`](reference/generated/skrub.selectors.drophtml.md#skrub.selectors.drop), has been added to drop columns
   from a dataframe using a selector. It mirrors the behavior of [`selectors.select()`](reference/generated/skrub.selectors.selecthtml.md#skrub.selectors.select).
   [#2108](https://github.com/skrub-data/skrub/pull/2108) by [Mary Njoroge](https://github.com/Maryahcee).
 

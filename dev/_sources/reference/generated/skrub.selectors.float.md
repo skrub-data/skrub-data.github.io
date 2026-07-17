@@ -2,14 +2,17 @@
 
 ### skrub.selectors.float()
 
-Select columns that have a floating-point data type.
+Select columns that have a floating-point data type (float32, float64, etc.)
 
 #### SEE ALSO
 [`numeric`](skrub.selectors.numerichtml.md#skrub.selectors.numeric)
-: Select all numeric columns (integer and float).
+: Select all numeric columns (integer and float). Use this to select both integer and floating-point columns together.
 
 [`integer`](skrub.selectors.integerhtml.md#skrub.selectors.integer)
-: Select integer columns.
+: Select integer columns only.
+
+[`boolean`](skrub.selectors.booleanhtml.md#skrub.selectors.boolean)
+: Select Boolean columns.
 
 ### Examples
 
@@ -46,10 +49,20 @@ str_      ...
 dtype: object
 ```
 
+Select all floating-point columns:
+
 ```pycon
 >>> s.select(df, s.float())
    f64  F64  f32
 0  1.1  2.3  3.4
+```
+
+Combine with other selectors:
+
+```pycon
+>>> s.select(df, s.float() | s.integer())
+   f64  F64  f32  i64  I64  i8
+0  1.1  2.3  3.4    2    2   3
 ```
 
 <!-- !! processed by numpydoc !! -->

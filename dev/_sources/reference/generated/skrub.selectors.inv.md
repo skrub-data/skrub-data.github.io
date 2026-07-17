@@ -8,6 +8,20 @@ This selects all columns except those that are matched by the input; it is
 equivalent to `all() - obj` or `~make_selector(obj)`. The argument
 `obj` can be a selector but also a column name or list of column names.
 
+* **Returns:**
+  Selector
+  : A `Selector` that is the inverse of the input selector.
+
+#### SEE ALSO
+[`all`](skrub.selectors.allhtml.md#skrub.selectors.all)
+: Select all columns
+
+### Notes
+
+`inv` is primarily a convenience function. When working with a single
+selector or column name, `~selector` may be more readable. When excluding
+from the full set of columns, `all() - selector` is more explicit.
+
 ### Examples
 
 ```pycon

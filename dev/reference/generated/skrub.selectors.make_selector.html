@@ -593,6 +593,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.drop.html">drop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
@@ -781,20 +782,49 @@
 <h1>make_selector<a class="headerlink" href="#make-selector" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.make_selector">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">make_selector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_base.py#L208"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.make_selector" title="Link to this definition">#</a></dt>
-<dd><p>Transform a selector, column name or list of column names into a selector.</p>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">make_selector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.make_selector" title="Link to this definition">#</a></dt>
+<dd><p>Normalize a selector, column name, or list of names into a <code class="docutils literal notranslate"><span class="pre">Selector</span></code>    object.</p>
+<p>This function converts user input into a consistent selector object:</p>
+<ul class="simple">
+<li><p>Selectors are returned as-is</p></li>
+<li><p>Strings are converted to <code class="docutils literal notranslate"><span class="pre">cols(name)</span></code></p></li>
+<li><p>Lists of strings are converted to <code class="docutils literal notranslate"><span class="pre">cols(*names)</span></code></p></li>
+</ul>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>obj</strong><span class="classifier">selector, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a></span></dt><dd><p>The object to normalize.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>Selector</dt><dd><p>A <code class="docutils literal notranslate"><span class="pre">Selector</span></code> object (or subclass).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.selectors.cols.html#skrub.selectors.cols" title="skrub.selectors.cols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cols</span></code></a></dt><dd><p>Select specific columns by name</p>
+</dd>
+</dl>
+</div>
 <p class="rubric">Examples</p>
+<p>This function is used to normalize user input so that the result is a
+selector compatible with the rest of the API.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
 </pre></div>
 </div>
+<p>Normalize a column name or list of column names:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">make_selector</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">)</span>
 <span class="go">cols(&#39;ID&#39;)</span>
-</pre></div>
-</div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">make_selector</span><span class="p">([</span><span class="s1">&#39;ID&#39;</span><span class="p">,</span> <span class="s1">&#39;kind&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">make_selector</span><span class="p">([</span><span class="s1">&#39;ID&#39;</span><span class="p">,</span> <span class="s1">&#39;kind&#39;</span><span class="p">])</span>
 <span class="go">cols(&#39;ID&#39;, &#39;kind&#39;)</span>
 </pre></div>
 </div>
+<p>A selector is returned unchanged:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">make_selector</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">,</span> <span class="s1">&#39;kind&#39;</span><span class="p">))</span>
 <span class="go">cols(&#39;ID&#39;, &#39;kind&#39;)</span>
 </pre></div>

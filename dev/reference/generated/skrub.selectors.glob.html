@@ -595,6 +595,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.drop.html">drop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
@@ -783,19 +784,30 @@
 <h1>glob<a class="headerlink" href="#glob" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.glob">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">glob</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_selectors.py#L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.glob" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">glob</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pattern</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_selectors.py#L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.glob" title="Link to this definition">#</a></dt>
 <dd><p>Select columns by name with Unix shell style ‘glob’ pattern.</p>
-<p>pattern is interpreted as described in <code class="docutils literal notranslate"><span class="pre">fnmatch.fnmatchcase</span></code>:</p>
+<p>Pattern matching is case-sensitive and interpreted as described in
+<code class="docutils literal notranslate"><span class="pre">fnmatch.fnmatchcase</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>*       matches everything
 ?       matches any single character
 [seq]   matches any character in seq
 [!seq]  matches any char not in seq
 </pre></div>
 </div>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>pattern</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></span></dt><dd><p>A glob pattern to match column names.</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="skrub.selectors.regex.html#skrub.selectors.regex" title="skrub.selectors.regex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">regex</span></code></a></dt><dd><p>Select columns by name using a regular expression.</p>
+<dt><a class="reference internal" href="skrub.selectors.regex.html#skrub.selectors.regex" title="skrub.selectors.regex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">regex</span></code></a></dt><dd><p>Select columns by name using regular expressions. Use this for complex patterns that glob cannot express.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.selectors.filter_names.html#skrub.selectors.filter_names" title="skrub.selectors.filter_names"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_names</span></code></a></dt><dd><p>Select columns based on custom name-based criteria.</p>
 </dd>
 </dl>
 </div>
@@ -810,20 +822,27 @@
 <span class="gp">... </span>        <span class="s2">&quot;ID&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
-<span class="go">   height_mm  width_mm kind  ID</span>
-<span class="go">0      297.0     210.0   A4   4</span>
-<span class="go">1      420.0     297.0   A3   3</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="p">))</span>
-<span class="go">   height_mm  width_mm kind  ID</span>
-<span class="go">0      297.0     210.0   A4   4</span>
-<span class="go">1      420.0     297.0   A3   3</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">))</span>
+<p>Select columns matching a pattern:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">))</span>
 <span class="go">   height_mm  width_mm</span>
 <span class="go">0      297.0     210.0</span>
 <span class="go">1      420.0     297.0</span>
+</pre></div>
+</div>
+<p>Use character classes to match specific patterns:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;[a-z]*_mm&#39;</span><span class="p">))</span>
+<span class="go">   height_mm  width_mm</span>
+<span class="go">0      297.0     210.0</span>
+<span class="go">1      420.0     297.0</span>
+</pre></div>
+</div>
+<p>Combine with other selectors:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">))</span>
+<span class="go">   height_mm  width_mm  ID</span>
+<span class="go">0      297.0     210.0   4</span>
+<span class="go">1      420.0     297.0   3</span>
 </pre></div>
 </div>
 </dd></dl>

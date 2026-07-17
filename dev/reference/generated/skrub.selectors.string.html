@@ -595,6 +595,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.drop.html">drop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
@@ -783,23 +784,32 @@
 <h1>string<a class="headerlink" href="#string" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.string">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">string</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_selectors.py#L457"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.string" title="Link to this definition">#</a></dt>
-<dd><p>Select columns that have a String data type.</p>
-<p>In pandas, object columns containing (only) strings are also selected.</p>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">string</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_selectors.py#L561"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.string" title="Link to this definition">#</a></dt>
+<dd><p>Select columns that have a string data type.</p>
+<p>In pandas, object columns containing strings are also selected.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="skrub.selectors.categorical.html#skrub.selectors.categorical" title="skrub.selectors.categorical"><code class="xref py py-obj docutils literal notranslate"><span class="pre">categorical</span></code></a></dt><dd><p>Select categorical columns.</p>
+<dt><a class="reference internal" href="skrub.selectors.categorical.html#skrub.selectors.categorical" title="skrub.selectors.categorical"><code class="xref py py-obj docutils literal notranslate"><span class="pre">categorical</span></code></a></dt><dd><p>Select categorical columns (explicit categories, not arbitrary strings).</p>
+</dd>
+<dt><a class="reference internal" href="skrub.selectors.object.html#skrub.selectors.object" title="skrub.selectors.object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a></dt><dd><p>Select object dtype columns (broader, may include mixed types).</p>
+</dd>
+<dt><a class="reference internal" href="skrub.selectors.filter.html#skrub.selectors.filter" title="skrub.selectors.filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter</span></code></a></dt><dd><p>Use for custom text-based selection criteria.</p>
 </dd>
 </dl>
 </div>
 <p class="rubric">Notes</p>
-<p>The behavior of string columns may change depending
-on the major version of pandas: before pandas 3.0, string columns would have
-the ‘object’ dtype, and after pandas 3.0 they have the ‘string’ dtype. This
-selector is designed to select string columns in both cases, even if a column
-has both the ‘object’ and ‘string’ dtype. If a column has only the ‘object’
-dtype (e.g., it contains both strings and numbers), then it will not be selected.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The behavior of string columns may change depending on the pandas version:</p>
+<ul class="simple">
+<li><p>Before pandas 3.0: String columns may have the ‘object’ dtype</p></li>
+<li><p>From pandas 3.0 onwards: String columns have only the ‘string’ dtype</p></li>
+</ul>
+<p>This selector handles both cases, selecting string columns regardless of
+pandas version. Object columns containing mixed types (e.g., strings and
+numbers) are not selected.</p>
+</div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -817,24 +827,14 @@ dtype (e.g., it contains both strings and numbers), then it will not be selected
 <span class="go">1             B     10      B           B</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
-<span class="go">object_string         ...</span>
-<span class="go">object             object</span>
-<span class="go">string                ...</span>
-<span class="go">categorical      category</span>
-<span class="go">dtype: object</span>
-</pre></div>
-</div>
-<p>Both the ‘object_string’ and ‘string’ columns are selected, but not the ‘object’
-column. Categorical columns are not selected.</p>
+<p>Select all string columns (note: mixed-type object columns are excluded):</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">())</span>
 <span class="go">object_string string</span>
 <span class="go">0             A      A</span>
 <span class="go">1             B      B</span>
 </pre></div>
 </div>
-<p>To select categorical columns as well, use the bitwise OR operator to combine
-<code class="docutils literal notranslate"><span class="pre">s.string()</span></code> with <a class="reference internal" href="skrub.selectors.categorical.html#skrub.selectors.categorical" title="skrub.selectors.categorical"><code class="xref py py-func docutils literal notranslate"><span class="pre">categorical()</span></code></a>:</p>
+<p>Combine with categorical() to select all text-like columns:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">()</span> <span class="o">|</span> <span class="n">s</span><span class="o">.</span><span class="n">categorical</span><span class="p">())</span>
 <span class="go">object_string string categorical</span>
 <span class="go">0             A      A           A</span>

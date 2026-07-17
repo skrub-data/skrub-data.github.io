@@ -593,6 +593,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.drop.html">drop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">float</a></li>
@@ -781,14 +782,16 @@
 <h1>float<a class="headerlink" href="#float" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.float">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">float</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_selectors.py#L279"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.float" title="Link to this definition">#</a></dt>
-<dd><p>Select columns that have a floating-point data type.</p>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">float</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_selectors.py#L297"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.float" title="Link to this definition">#</a></dt>
+<dd><p>Select columns that have a floating-point data type (float32, float64, etc.)</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="skrub.selectors.numeric.html#skrub.selectors.numeric" title="skrub.selectors.numeric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numeric</span></code></a></dt><dd><p>Select all numeric columns (integer and float).</p>
+<dt><a class="reference internal" href="skrub.selectors.numeric.html#skrub.selectors.numeric" title="skrub.selectors.numeric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numeric</span></code></a></dt><dd><p>Select all numeric columns (integer and float). Use this to select both integer and floating-point columns together.</p>
 </dd>
-<dt><a class="reference internal" href="skrub.selectors.integer.html#skrub.selectors.integer" title="skrub.selectors.integer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">integer</span></code></a></dt><dd><p>Select integer columns.</p>
+<dt><a class="reference internal" href="skrub.selectors.integer.html#skrub.selectors.integer" title="skrub.selectors.integer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">integer</span></code></a></dt><dd><p>Select integer columns only.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.selectors.boolean.html#skrub.selectors.boolean" title="skrub.selectors.boolean"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boolean</span></code></a></dt><dd><p>Select Boolean columns.</p>
 </dd>
 </dl>
 </div>
@@ -825,9 +828,16 @@
 <span class="go">dtype: object</span>
 </pre></div>
 </div>
+<p>Select all floating-point columns:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">float</span><span class="p">())</span>
 <span class="go">   f64  F64  f32</span>
 <span class="go">0  1.1  2.3  3.4</span>
+</pre></div>
+</div>
+<p>Combine with other selectors:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">float</span><span class="p">()</span> <span class="o">|</span> <span class="n">s</span><span class="o">.</span><span class="n">integer</span><span class="p">())</span>
+<span class="go">   f64  F64  f32  i64  I64  i8</span>
+<span class="go">0  1.1  2.3  3.4    2    2   3</span>
 </pre></div>
 </div>
 </dd></dl>

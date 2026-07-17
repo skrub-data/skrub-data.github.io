@@ -593,6 +593,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.drop.html">drop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
@@ -781,13 +782,41 @@
 <h1>has_dtype<a class="headerlink" href="#has-dtype" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.has_dtype">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">has_dtype</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dtypes</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_selectors.py#L335"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.has_dtype" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">has_dtype</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dtypes</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_selectors.py#L363"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.has_dtype" title="Link to this definition">#</a></dt>
 <dd><p>Select columns whose dtype is equal to one of the provided dtypes.</p>
+<p>This is an advanced selector for edge cases where you need to match specific
+dtypes not covered by other selectors. Use this when working with specialized
+or custom dtypes (e.g., pandas ListDtype, polars Object).</p>
+<p>For standard types, prefer the simpler selectors like <a class="reference internal" href="skrub.selectors.numeric.html#skrub.selectors.numeric" title="skrub.selectors.numeric"><code class="xref py py-func docutils literal notranslate"><span class="pre">numeric()</span></code></a>,
+<a class="reference internal" href="skrub.selectors.string.html#skrub.selectors.string" title="skrub.selectors.string"><code class="xref py py-func docutils literal notranslate"><span class="pre">string()</span></code></a>, <a class="reference internal" href="skrub.selectors.categorical.html#skrub.selectors.categorical" title="skrub.selectors.categorical"><code class="xref py py-func docutils literal notranslate"><span class="pre">categorical()</span></code></a>, or <a class="reference internal" href="skrub.selectors.boolean.html#skrub.selectors.boolean" title="skrub.selectors.boolean"><code class="xref py py-func docutils literal notranslate"><span class="pre">boolean()</span></code></a>.</p>
 <p>This selector takes a hands-off approach: skrub does not normalize or infer
 dtypes across dataframe libraries. A column is selected if
 <code class="docutils literal notranslate"><span class="pre">sbd.dtype(column)</span> <span class="pre">==</span> <span class="pre">dtype</span></code> for at least one of the provided <code class="docutils literal notranslate"><span class="pre">dtypes</span></code>.</p>
-<p>The most reliable way to use this selector is to get the dtype from an
-existing column and pass that dtype object directly.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>*dtypes</strong><span class="classifier">dtype objects</span></dt><dd><p>One or more dtype objects to match.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.selectors.numeric.html#skrub.selectors.numeric" title="skrub.selectors.numeric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numeric</span></code></a></dt><dd><p>Select numeric columns.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.selectors.string.html#skrub.selectors.string" title="skrub.selectors.string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></a></dt><dd><p>Select string columns.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.selectors.categorical.html#skrub.selectors.categorical" title="skrub.selectors.categorical"><code class="xref py py-obj docutils literal notranslate"><span class="pre">categorical</span></code></a></dt><dd><p>Select categorical columns.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.selectors.object.html#skrub.selectors.object" title="skrub.selectors.object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">object</span></code></a></dt><dd><p>Select columns with “object” dtype (library specific).</p>
+</dd>
+</dl>
+</div>
+<p class="rubric">Notes</p>
+<p>Some dataframe libraries may accept shorthand values that compare equal to a
+dtype object (e.g., ‘int64’), but this is backend-specific. For robustness,
+pass dtype objects obtained from your dataframe library.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -797,25 +826,42 @@ existing column and pass that dtype object directly.</p>
 <span class="gp">... </span>        <span class="s2">&quot;count&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">items_dtype</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;items&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_dtype</span><span class="p">(</span><span class="n">items_dtype</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Get dtype from an existing column and use it for selection:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_dtype</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;items&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span><span class="p">))</span>
 <span class="go">       items</span>
 <span class="go">0  [A4, A3]</span>
 <span class="go">1      [A5]</span>
 </pre></div>
 </div>
-<p>Several dtypes can be accepted:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">count_dtype</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;count&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
+<p>Match multiple dtypes at once:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">items_dtype</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;items&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">count_dtype</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;count&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_dtype</span><span class="p">(</span><span class="n">items_dtype</span><span class="p">,</span> <span class="n">count_dtype</span><span class="p">))</span>
 <span class="go">       items  count</span>
 <span class="go">0  [A4, A3]      2</span>
 <span class="go">1      [A5]      1</span>
 </pre></div>
 </div>
-<p>Some dataframe libraries may also accept shorthand values that compare
-equal to a dtype object. However, this is backend-specific, so the most
-robust approach is still to pass the dtype obtained from the dataframe
-library itself.</p>
+<p>This also works with complex dtypes such as GeometryDtype in GeoPandas:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">shapely.geometry</span><span class="w"> </span><span class="kn">import</span> <span class="n">Point</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Paris&quot;</span><span class="p">,</span> <span class="s2">&quot;Berlin&quot;</span><span class="p">],</span> <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]},</span>
+<span class="gp">... </span>    <span class="n">geometry</span><span class="o">=</span><span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="mf">2.35</span><span class="p">,</span> <span class="mf">48.86</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mf">13.40</span><span class="p">,</span> <span class="mf">52.52</span><span class="p">)],</span>
+<span class="gp">... </span>    <span class="n">crs</span><span class="o">=</span><span class="s2">&quot;EPSG:4326&quot;</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gdf</span>
+<span class="go">    city  value            geometry</span>
+<span class="go">0   Paris      1  POINT (2.35 48.86)</span>
+<span class="go">1  Berlin      2  POINT (13.4 52.52)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">gdf</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_dtype</span><span class="p">(</span><span class="n">gdf</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">dtype</span><span class="p">))</span>
+<span class="go">            geometry</span>
+<span class="go">0  POINT (2.35 48.86)</span>
+<span class="go">1  POINT (13.4 52.52)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>

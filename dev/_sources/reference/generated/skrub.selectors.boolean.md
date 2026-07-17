@@ -6,10 +6,13 @@ Select columns that have a Boolean data type.
 
 #### SEE ALSO
 [`numeric`](skrub.selectors.numerichtml.md#skrub.selectors.numeric)
-: Select all numeric columns (integer and float).
+: Select all numeric columns (integer and float, NOT boolean).
 
 [`integer`](skrub.selectors.integerhtml.md#skrub.selectors.integer)
 : Select integer columns.
+
+[`filter`](skrub.selectors.filterhtml.md#skrub.selectors.filter)
+: Use for custom data-based selection criteria.
 
 ### Examples
 
@@ -28,18 +31,30 @@ Select columns that have a Boolean data type.
 >>> df
    i64  i8  bool_  Bool_
 0    0   3   True  False
->>> df.dtypes
-i64        int64
-i8          int8
-bool_       bool
-Bool_    boolean
-dtype: object
 ```
+
+Select all Boolean columns:
 
 ```pycon
 >>> s.select(df, s.boolean())
    bool_  Bool_
 0   True  False
+```
+
+Combine with numeric() to include both:
+
+```pycon
+>>> s.select(df, s.boolean() | s.numeric())
+   i64  i8  bool_  Bool_
+0    0   3   True  False
+```
+
+Note that numeric() alone does NOT include Boolean columns:
+
+```pycon
+>>> s.select(df, s.numeric())
+   i64  i8
+0    0   3
 ```
 
 <!-- !! processed by numpydoc !! -->

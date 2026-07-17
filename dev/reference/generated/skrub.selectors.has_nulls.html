@@ -593,6 +593,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.drop.html">drop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
@@ -781,39 +782,64 @@
 <h1>has_nulls<a class="headerlink" href="#has-nulls" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.has_nulls">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">has_nulls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proportion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_selectors.py#L687"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.has_nulls" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">has_nulls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proportion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_selectors.py#L844"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.has_nulls" title="Link to this definition">#</a></dt>
 <dd><p>Select columns that contain at least one null value, or a proportion of null     values above a given threshold.</p>
+<p>Use this selector to identify columns needing imputation or
+with excessive missing data. This is useful for data quality
+checks and preprocessing pipelines.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>proportion</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">float</span></code></a>, optional</span></dt><dd><p>Default 0.0. Select columns where the proportion of null values exceeds
+this threshold (range: 0.0 to 1.0).</p>
+<ul class="simple">
+<li><p>0.0 (default): Selects any column with at least one null value</p></li>
+<li><p>0.5: Selects columns with &gt;50% missing values</p></li>
+<li><p>1.0: Selects columns where all values are null</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
 <dt><a class="reference internal" href="skrub.selectors.cardinality_below.html#skrub.selectors.cardinality_below" title="skrub.selectors.cardinality_below"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cardinality_below</span></code></a></dt><dd><p>Select columns whose cardinality is below a threshold.</p>
 </dd>
-<dt><a class="reference internal" href="skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.DropUninformative</span></code></a></dt><dd><p>Automatically drop columns that are uninformative, including columns with a fraction of null values above a given threshold.</p>
+<dt><a class="reference internal" href="skrub.DropUninformative.html#skrub.DropUninformative" title="skrub.DropUninformative"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.DropUninformative</span></code></a></dt><dd><p>Automatically drop columns that are uninformative, including columns with more null values than a specified threshold.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.Cleaner</span></code></a></dt><dd><p>Parse common null representations (e.g., ‘NA’, ‘missing’) into proper null values, and possibly drop columns with excessive nulls.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.selectors.filter.html#skrub.selectors.filter" title="skrub.selectors.filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter</span></code></a></dt><dd><p>Use for custom null-based selection criteria.</p>
 </dd>
 </dl>
 </div>
+<p class="rubric">Notes</p>
+<p>Null values include NaN, None, NA, etc., depending on the dataframe library.
+Behavior:</p>
+<ul class="simple">
+<li><p>pandas: Recognizes np.nan, None, pd.NA, pd.NaT</p></li>
+<li><p>polars: Recognizes null values, and NaNs are treated as nulls.</p></li>
+</ul>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">b</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">]))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_nulls</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Select all columns with at least one null value:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_nulls</span><span class="p">())</span>
 <span class="go">      b     c</span>
 <span class="go">0   0.0     a</span>
 <span class="go">1   ...     b</span>
-<span class="go">2  20.0  ...</span>
+<span class="go">2  20.0   ...</span>
 </pre></div>
 </div>
-<p>Use the <code class="docutils literal notranslate"><span class="pre">proportion</span></code> parameter to filter columns by null percentage:</p>
+<p>Select columns with &gt;50% missing values:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="n">few_nulls</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="n">many_nulls</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="n">no_nulls</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_nulls</span><span class="p">(</span><span class="n">proportion</span><span class="o">=</span><span class="mf">0.2</span><span class="p">))</span>
-<span class="go">   few_nulls  many_nulls</span>
-<span class="go">0        1.0         1.0</span>
-<span class="go">1        2.0         ...</span>
-<span class="go">2        3.0         ...</span>
-<span class="go">3        ...         ...</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_nulls</span><span class="p">(</span><span class="n">proportion</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>
@@ -822,6 +848,25 @@
 <span class="go">1        ...</span>
 <span class="go">2        ...</span>
 <span class="go">3        ...</span>
+</pre></div>
+</div>
+<p>Invert to select columns with NO null values:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span> <span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">has_nulls</span><span class="p">())</span>
+<span class="go">no_nulls</span>
+<span class="go">0        1</span>
+<span class="go">1        2</span>
+<span class="go">2        3</span>
+<span class="go">3        4</span>
+</pre></div>
+</div>
+<p>Drop columns with &gt;10% missing data:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">DropCols</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">DropCols</span><span class="p">(</span><span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">has_nulls</span><span class="p">(</span><span class="n">proportion</span><span class="o">=</span><span class="mf">0.10</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df2</span><span class="p">)</span>
+<span class="go">no_nulls</span>
+<span class="go">0        1</span>
+<span class="go">1        2</span>
+<span class="go">2        3</span>
+<span class="go">3        4</span>
 </pre></div>
 </div>
 </dd></dl>

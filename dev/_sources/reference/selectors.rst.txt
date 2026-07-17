@@ -36,6 +36,7 @@ Contains method to select columns in a dataframe. See the :ref:`selectors <user_
   selectors.cardinality_below
   selectors.categorical
   selectors.cols
+  selectors.drop
   selectors.filter
   selectors.filter_names
   selectors.float

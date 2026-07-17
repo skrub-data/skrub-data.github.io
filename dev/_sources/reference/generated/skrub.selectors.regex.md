@@ -4,15 +4,27 @@
 
 Select columns by name with a regular expression.
 
-pattern can be a string pattern or a compiled regular expression, and flags
-are regular expression flags as described in the `re` module
-documentation:
+Use this selector for complex name patterns that glob patterns cannot express.
+This is useful for selecting columns with specific naming conventions or
+patterns that glob patterns cannot express, so that regular expressions are
+needed (e.g., columns matching `'^feature_[0-9]+$'`).
+For simple wildcard patterns, consider [`glob()`](skrub.selectors.globhtml.md#skrub.selectors.glob).
 
-[https://docs.python.org/3/library/re.html#flags](https://docs.python.org/3/library/re.html#flags)
+* **Parameters:**
+  **pattern**
+  : A regular expression pattern to match column names. Can be a string pattern
+    or a compiled regular expression object.
+
+  **flags**
+  : Regular expression flags as described in the `re` module documentation:
+    [https://docs.python.org/3/library/re.html#flags](https://docs.python.org/3/library/re.html#flags)
 
 #### SEE ALSO
 [`glob`](skrub.selectors.globhtml.md#skrub.selectors.glob)
-: Select columns by name with a Unix shell-style glob pattern.
+: Select columns by name with Unix shell-style wildcard patterns. Use this for simpler patterns.
+
+[`filter_names`](skrub.selectors.filter_nameshtml.md#skrub.selectors.filter_names)
+: Select columns based on custom name-based criteria.
 
 ### Examples
 
@@ -27,11 +39,9 @@ documentation:
 ...         "ID": [4, 3],
 ...     }
 ... )
->>> df
-   height_mm  width_mm kind  ID
-0      297.0     210.0   A4   4
-1      420.0     297.0   A3   3
 ```
+
+Select columns matching a pattern:
 
 ```pycon
 >>> s.select(df, s.regex('.*_mm'))
@@ -40,27 +50,8 @@ documentation:
 1      420.0     297.0
 ```
 
-A column is selected if `re.match(col_name, pattern, flags)` returns a
-match. Note that it is enough to match at the beginning of the string:
-
-```pycon
->>> s.select(df, s.regex('wid'))
-   width_mm
-0     210.0
-1     297.0
-```
-
-Use ‘$’ to require matching until the end of the column name:
-
-```pycon
->>> s.select(df, s.regex('wid$'))
-Empty DataFrame
-Columns: []
-Index: [0, 1]
-```
-
-Flags are passed to `re.match`; the following are 3 equivalent ways of
-setting re flags (re.IGNORECASE in this example):
+Use regex flags for case-insensitive matching (refer to the regex docs for
+more detail):
 
 ```pycon
 >>> import re
@@ -68,14 +59,15 @@ setting re flags (re.IGNORECASE in this example):
    ID
 0   4
 1   3
->>> s.select(df, s.regex('(?i)id'))
-   ID
-0   4
-1   3
->>> s.select(df, s.regex(re.compile('id', re.I)))
-   ID
-0   4
-1   3
+```
+
+Combine with other selectors:
+
+```pycon
+>>> s.select(df, s.regex('^[a-z]+_mm$') | s.glob('ID'))
+   height_mm  width_mm  ID
+0      297.0     210.0   4
+1      420.0     297.0   3
 ```
 
 <!-- !! processed by numpydoc !! -->

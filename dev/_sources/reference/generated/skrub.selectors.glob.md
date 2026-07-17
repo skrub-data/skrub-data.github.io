@@ -4,7 +4,8 @@
 
 Select columns by name with Unix shell style ‘glob’ pattern.
 
-pattern is interpreted as described in `fnmatch.fnmatchcase`:
+Pattern matching is case-sensitive and interpreted as described in
+`fnmatch.fnmatchcase`:
 
 ```default
 *       matches everything
@@ -13,9 +14,16 @@ pattern is interpreted as described in `fnmatch.fnmatchcase`:
 [!seq]  matches any char not in seq
 ```
 
+* **Parameters:**
+  **pattern**
+  : A glob pattern to match column names.
+
 #### SEE ALSO
 [`regex`](skrub.selectors.regexhtml.md#skrub.selectors.regex)
-: Select columns by name using a regular expression.
+: Select columns by name using regular expressions. Use this for complex patterns that glob cannot express.
+
+[`filter_names`](skrub.selectors.filter_nameshtml.md#skrub.selectors.filter_names)
+: Select columns based on custom name-based criteria.
 
 ### Examples
 
@@ -30,21 +38,33 @@ pattern is interpreted as described in `fnmatch.fnmatchcase`:
 ...         "ID": [4, 3],
 ...     }
 ... )
->>> df
-   height_mm  width_mm kind  ID
-0      297.0     210.0   A4   4
-1      420.0     297.0   A3   3
 ```
 
+Select columns matching a pattern:
+
 ```pycon
->>> s.select(df, s.glob('*'))
-   height_mm  width_mm kind  ID
-0      297.0     210.0   A4   4
-1      420.0     297.0   A3   3
 >>> s.select(df, s.glob('*_mm'))
    height_mm  width_mm
 0      297.0     210.0
 1      420.0     297.0
+```
+
+Use character classes to match specific patterns:
+
+```pycon
+>>> s.select(df, s.glob('[a-z]*_mm'))
+   height_mm  width_mm
+0      297.0     210.0
+1      420.0     297.0
+```
+
+Combine with other selectors:
+
+```pycon
+>>> s.select(df, s.glob('*_mm') | s.glob('ID'))
+   height_mm  width_mm  ID
+0      297.0     210.0   4
+1      420.0     297.0   3
 ```
 
 <!-- !! processed by numpydoc !! -->

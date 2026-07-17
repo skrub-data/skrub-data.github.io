@@ -593,6 +593,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.drop.html">drop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
@@ -781,8 +782,27 @@
 <h1>any_date<a class="headerlink" href="#any-date" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.any_date">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">any_date</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_selectors.py#L380"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.any_date" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">any_date</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_selectors.py#L448"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.any_date" title="Link to this definition">#</a></dt>
 <dd><p>Select columns that have a Date or Datetime data type.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.Cleaner</span></code></a></dt><dd><p>Parse and clean date columns into proper datetime types.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.ToDatetime</span></code></a></dt><dd><p>Convert string columns to datetime types.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.DatetimeEncoder</span></code></a></dt><dd><p>Encode datetime columns into numeric features for machine learning.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric">Notes</p>
+<p>Only datetime columns are selected. Time-only, period, and duration types are
+not selected.
+Selection is based on the column’s dtype: for example string columns containing
+date-like values are not selected.</p>
+<p>Selected columns depend on the dataframe library and its supported dtypes:
+in pandas, this selector selects columns with dtype <code class="docutils literal notranslate"><span class="pre">datetime64[ns]</span></code>,
+while in polars, it selects both <code class="docutils literal notranslate"><span class="pre">Date</span></code> and <code class="docutils literal notranslate"><span class="pre">Datetime</span></code> dtypes.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
@@ -806,13 +826,21 @@
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
 <span class="go">dt           datetime64[...]</span>
 <span class="go">tzdt    datetime64[..., UTC]</span>
-<span class="go">str_                 ...</span>
+<span class="go">str_                     ...</span>
 <span class="go">dtype: object</span>
 </pre></div>
 </div>
+<p>Select all date/datetime columns:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">any_date</span><span class="p">())</span>
-<span class="go">                   dt                      tzdt</span>
+<span class="go">                       dt                      tzdt</span>
 <span class="go">0 2020-03-02 10:30:00 2020-03-02 10:30:00+00:00</span>
+</pre></div>
+</div>
+<p>Note that string columns with date-like values are not selected
+(use filtering for that):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">any_date</span><span class="p">()</span> <span class="o">|</span> <span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">())</span>
+<span class="go">                       dt                      tzdt                 str_</span>
+<span class="go">0 2020-03-02 10:30:00 2020-03-02 10:30:00+00:00  2020-03-02 10:30:00</span>
 </pre></div>
 </div>
 </dd></dl>

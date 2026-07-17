@@ -595,6 +595,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.drop.html">drop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
@@ -783,10 +784,43 @@
 <h1>select<a class="headerlink" href="#select" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.select">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">select</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">selector</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_base.py#L250"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.select" title="Link to this definition">#</a></dt>
-<dd><p>Apply a selector to a dataframe and return a dataframe with the selected     columns.</p>
-<p><code class="docutils literal notranslate"><span class="pre">selector</span></code> can be anything accepted by <code class="docutils literal notranslate"><span class="pre">make_selector</span></code> i.e. a selector,
-column name or list of column names.</p>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">select</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">selector</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_base.py#L317"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.select" title="Link to this definition">#</a></dt>
+<dd><p>Select the columns of a dataframe that are matched by the selector.</p>
+<p>This function returns a new dataframe containing only the columns of <code class="docutils literal notranslate"><span class="pre">df</span></code>
+matched by <code class="docutils literal notranslate"><span class="pre">selector</span></code>.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl>
+<dt><strong>df</strong><span class="classifier">dataframe</span></dt><dd><p>The dataframe to select columns from (pandas or polars).</p>
+</dd>
+<dt><strong>selector</strong><span class="classifier">selector, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a>, or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a></span></dt><dd><p>A selector object, single column name, or list of column names.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>dataframe</dt><dd><p>A new dataframe containing only the columns matched by the selector.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.selectors.drop.html#skrub.selectors.drop" title="skrub.selectors.drop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">drop</span></code></a></dt><dd><p>Return all columns except those matched by a selector</p>
+</dd>
+<dt><a class="reference internal" href="skrub.selectors.Selector.html#skrub.selectors.Selector.expand" title="skrub.selectors.Selector.expand"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Selector.expand</span></code></a></dt><dd><p>Get the column names matched by a selector as a list</p>
+</dd>
+</dl>
+</div>
+<p class="rubric">Notes</p>
+<p><code class="docutils literal notranslate"><span class="pre">select</span></code> is a convenience function that combines two operations:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">selector.expand(df)</span></code> - Get list of matching column names</p></li>
+<li><p>Return the dataframe subset to those columns</p></li>
+</ol>
+<p>If you only need the list of matching column names (without subsetting the
+dataframe), use <code class="docutils literal notranslate"><span class="pre">selector.expand(df)</span></code> directly.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -804,13 +838,10 @@ column name or list of column names.</p>
 <span class="go">1      420.0     297.0   A3   3</span>
 </pre></div>
 </div>
+<p>Select all columns except ‘ID’:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">selector</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="o">-</span> <span class="s1">&#39;ID&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">selector</span>
 <span class="go">(all() - cols(&#39;ID&#39;))</span>
-</pre></div>
-</div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">selector</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">[&#39;height_mm&#39;, &#39;width_mm&#39;, &#39;kind&#39;]</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">selector</span><span class="p">)</span>
@@ -819,11 +850,25 @@ column name or list of column names.</p>
 <span class="go">1      420.0     297.0   A3</span>
 </pre></div>
 </div>
-<p>We can also pass column names directly:</p>
+<p>Pass column names directly:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;kind&#39;</span><span class="p">,</span> <span class="s1">&#39;ID&#39;</span><span class="p">])</span>
 <span class="go">  kind  ID</span>
 <span class="go">0   A4   4</span>
 <span class="go">1   A3   3</span>
+</pre></div>
+</div>
+<p>Select by dtype:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">())</span>
+<span class="go">   height_mm  width_mm  ID</span>
+<span class="go">0      297.0     210.0   4</span>
+<span class="go">1      420.0     297.0   3</span>
+</pre></div>
+</div>
+<p>Combine multiple selectors:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">))</span>
+<span class="go">   height_mm  width_mm</span>
+<span class="go">0      297.0     210.0</span>
+<span class="go">1      420.0     297.0</span>
 </pre></div>
 </div>
 </dd></dl>

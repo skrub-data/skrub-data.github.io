@@ -593,6 +593,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.drop.html">drop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
@@ -781,43 +782,113 @@
 <h1>Selector<a class="headerlink" href="#selector" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.selectors.Selector">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">Selector</span></span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_base.py#L354"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector" title="Link to this definition">#</a></dt>
-<dd><p>Generic selector type, that returns set columns when applied.</p>
-<p>This class is not meant to be instantiated manually, <code class="docutils literal notranslate"><span class="pre">Selector</span></code>
-objects are created by calling one of the selector builders such
-as <a class="reference internal" href="skrub.selectors.all.html#skrub.selectors.all" title="skrub.selectors.all"><code class="xref py py-meth docutils literal notranslate"><span class="pre">skrub.selectors.all()</span></code></a> or <a class="reference internal" href="skrub.selectors.make_selector.html#skrub.selectors.make_selector" title="skrub.selectors.make_selector"><code class="xref py py-meth docutils literal notranslate"><span class="pre">skrub.selectors.make_selector()</span></code></a>.</p>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">Selector</span></span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_base.py#L479"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector" title="Link to this definition">#</a></dt>
+<dd><p>Pattern for matching columns in a dataframe.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">Selector</span></code> is a reusable rule for selecting columns based on various
+criteria (data type, name pattern, content properties, etc.). Selectors
+enable delayed selection: you can define a selection rule before the data
+is available.</p>
+<p><strong>How to use selectors</strong></p>
+<ul class="simple">
+<li><p><strong>Direct selection:</strong> <code class="docutils literal notranslate"><span class="pre">s.select(df,</span> <span class="pre">selector)</span></code> returns a filtered dataframe</p></li>
+<li><p><strong>With</strong> <a class="reference internal" href="skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.ApplyToCols</span></code></a>: <code class="docutils literal notranslate"><span class="pre">ApplyToCols(transformer,</span> <span class="pre">cols=selector)</span></code>
+applies a transformer to selected columns</p></li>
+<li><p><strong>In DataOps:</strong> <code class="docutils literal notranslate"><span class="pre">skrub.X(df).skb.apply(transformer,</span> <span class="pre">cols=selector)</span></code></p></li>
+<li><p><strong>Manual expansion:</strong> <code class="docutils literal notranslate"><span class="pre">selector.expand(df)</span></code> gets column names for manual use</p></li>
+</ul>
+<p><strong>Combining Selectors</strong></p>
+<p>Selectors can be combined with set operators to create complex selection rules:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">s.numeric()</span> <span class="pre">|</span> <span class="pre">s.boolean()</span></code> - numeric OR boolean columns</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">s.all()</span> <span class="pre">-</span> <span class="pre">s.glob('*_id')</span></code> - all columns except those whose name ends with “_id”</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">~s.cardinality_below(10)</span></code> - high-cardinality columns</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This class is not meant to be instantiated manually. Create selectors using
+builder functions such as <a class="reference internal" href="skrub.selectors.all.html#skrub.selectors.all" title="skrub.selectors.all"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.selectors.all()</span></code></a>,
+<a class="reference internal" href="skrub.selectors.cols.html#skrub.selectors.cols" title="skrub.selectors.cols"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.selectors.cols()</span></code></a>, <a class="reference internal" href="skrub.selectors.glob.html#skrub.selectors.glob" title="skrub.selectors.glob"><code class="xref py py-func docutils literal notranslate"><span class="pre">skrub.selectors.glob()</span></code></a>, etc.</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.ApplyToCols</span></code></a></dt><dd><p>Apply a transformer only to some columns, possibly selected by a selector.</p>
+</dd>
+<dt><a class="reference internal" href="skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-obj docutils literal notranslate"><span class="pre">skrub.DataOp.skb.apply</span></code></a></dt><dd><p>Apply a transformer to selected columns in a DataOps workflow.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<span class="gp">... </span>    <span class="s1">&#39;height_mm&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">297.0</span><span class="p">,</span> <span class="mf">420.0</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;width_mm&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;kind&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;A4&#39;</span><span class="p">,</span> <span class="s1">&#39;A3&#39;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">&#39;ID&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+<span class="gp">... </span><span class="p">})</span>
+</pre></div>
+</div>
+<p>Use a selector to get the names of matching columns:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">()</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="go">[&#39;height_mm&#39;, &#39;width_mm&#39;, &#39;ID&#39;]</span>
+</pre></div>
+</div>
+<p>Selectors can be combined to create complex selection rules. For example,
+to select numeric columns but exclude the ‘ID’ column:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">()</span> <span class="o">-</span> <span class="s1">&#39;ID&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="go">[&#39;height_mm&#39;, &#39;width_mm&#39;]</span>
+</pre></div>
+</div>
+<p>Use in data transformations, for example to apply a scaler only to numeric columns:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToCols</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">())</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="go">kind  height_mm  width_mm   ID</span>
+<span class="go">0   A4       -1.0      -1.0  1.0</span>
+<span class="go">1   A3        1.0       1.0 -1.0</span>
+</pre></div>
+</div>
 <p class="rubric">Methods</p>
 <div class="pst-scrollable-table-container"><table class="autosummary longtable table">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#skrub.selectors.Selector.expand" title="skrub.selectors.Selector.expand"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expand</span></code></a>(df)</p></td>
-<td><p>Lists the column names that the selector would retain if applied to         the dataframe <code class="docutils literal notranslate"><span class="pre">df</span></code>.</p></td>
+<td><p>Get the names of columns matched by the selector in a list.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#skrub.selectors.Selector.expand_index" title="skrub.selectors.Selector.expand_index"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expand_index</span></code></a>(df)</p></td>
-<td><p>Lists the indices of dataframe <code class="docutils literal notranslate"><span class="pre">df</span></code>'s columns that the selector         would retain if applied to <code class="docutils literal notranslate"><span class="pre">df</span></code>.</p></td>
+<td><p>Get the indices of columns matched by the selector in a list.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.selectors.Selector.expand">
-<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_base.py#L365"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand" title="Link to this definition">#</a></dt>
-<dd><p>Lists the column names that the selector would retain if applied to         the dataframe <code class="docutils literal notranslate"><span class="pre">df</span></code>.</p>
+<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_base.py#L565"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand" title="Link to this definition">#</a></dt>
+<dd><p>Get the names of columns matched by the selector in a list.</p>
+<p>This method evaluates the selector’s matching criteria against each column
+in the dataframe and returns the names of columns that match. This can be
+useful to extract column names to be used in dataframe operations.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>df</strong><span class="classifier">dataframe</span></dt><dd></dd>
+<dt><strong>df</strong><span class="classifier">dataframe</span></dt><dd><p>A pandas or polars dataframe to evaluate the selector against.</p>
+</dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a></dt><dd><p>The list of <code class="docutils literal notranslate"><span class="pre">df</span></code>’s columns that the item would select.</p>
+<dt><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a></dt><dd><p>The names of columns from <code class="docutils literal notranslate"><span class="pre">df</span></code> that the selector matches.</p>
 </dd>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>In effect, running <code class="docutils literal notranslate"><span class="pre">df[sel.expand(df)]</span></code> should give the exact same result as
-<code class="docutils literal notranslate"><span class="pre">sel.transform(df)</span></code>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#skrub.selectors.Selector.expand_index" title="skrub.selectors.Selector.expand_index"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expand_index</span></code></a></dt><dd><p>Get indices of matching columns instead of names.</p>
+</dd>
+</dl>
+</div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
@@ -834,29 +905,43 @@ as <a class="reference internal" href="skrub.selectors.all.html#skrub.selectors.
 <span class="go">[&#39;kind&#39;, &#39;ID&#39;]</span>
 </pre></div>
 </div>
+<p>Use to select columns in a dataframe:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span><span class="p">[</span><span class="n">some_selector</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">df</span><span class="p">)]</span>
+<span class="go">   kind  ID</span>
+<span class="go">0   A5   5</span>
+<span class="go">1   A4   4</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.selectors.Selector.expand_index">
-<span class="sig-name descname"><span class="pre">expand_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_base.py#L408"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand_index" title="Link to this definition">#</a></dt>
-<dd><p>Lists the indices of dataframe <code class="docutils literal notranslate"><span class="pre">df</span></code>’s columns that the selector         would retain if applied to <code class="docutils literal notranslate"><span class="pre">df</span></code>.</p>
+<span class="sig-name descname"><span class="pre">expand_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_base.py#L617"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand_index" title="Link to this definition">#</a></dt>
+<dd><p>Get the indices of columns matched by the selector in a list.</p>
+<p>This method evaluates the selector against each column and returns the
+positional indices (0, 1, 2, …) of matching columns instead of their names.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>df</strong><span class="classifier">dataframe</span></dt><dd></dd>
+<dt><strong>df</strong><span class="classifier">dataframe</span></dt><dd><p>A pandas or polars dataframe to evaluate the selector against.</p>
+</dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a></dt><dd><p>The list of indices among <code class="docutils literal notranslate"><span class="pre">df</span></code>’s columns that the item would select.</p>
+<dt><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">int</span></code></a></dt><dd><p>The indices (zero-indexed) of columns from <code class="docutils literal notranslate"><span class="pre">df</span></code> that the
+selector matches.</p>
 </dd>
 </dl>
 </dd>
 </dl>
-<p class="rubric">Notes</p>
-<p>In effect, (as with <code class="docutils literal notranslate"><span class="pre">expand</span></code>), if <code class="docutils literal notranslate"><span class="pre">cols</span></code> is the list of columns in <code class="docutils literal notranslate"><span class="pre">df</span></code>,
-running <code class="docutils literal notranslate"><span class="pre">df[cols[i]</span> <span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">sel.expand(df)]</span></code> should give the exact same
-result as <code class="docutils literal notranslate"><span class="pre">sel.transform(df)</span></code>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="#skrub.selectors.Selector.expand" title="skrub.selectors.Selector.expand"><code class="xref py py-obj docutils literal notranslate"><span class="pre">expand</span></code></a></dt><dd><p>Get names of matching columns instead of indices.</p>
+</dd>
+</dl>
+</div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>

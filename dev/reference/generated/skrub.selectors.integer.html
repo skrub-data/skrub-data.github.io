@@ -593,6 +593,7 @@
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cardinality_below.html">cardinality_below</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.categorical.html">categorical</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.cols.html">cols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skrub.selectors.drop.html">drop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter.html">filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.filter_names.html">filter_names</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skrub.selectors.float.html">float</a></li>
@@ -781,15 +782,16 @@
 <h1>integer<a class="headerlink" href="#integer" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.integer">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">integer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/c973236/skrub/selectors/_selectors.py#L218"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.integer" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">integer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/44d7717/skrub/selectors/_selectors.py#L234"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.integer" title="Link to this definition">#</a></dt>
 <dd><p>Select columns that have an integer data type.</p>
-<p>This selects integer columns but not Boolean columns.</p>
+<p>Boolean columns are not matched by this selector, only signed and unsigned
+ints are.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="skrub.selectors.numeric.html#skrub.selectors.numeric" title="skrub.selectors.numeric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numeric</span></code></a></dt><dd><p>Select all numeric columns (integer and float).</p>
+<dt><a class="reference internal" href="skrub.selectors.numeric.html#skrub.selectors.numeric" title="skrub.selectors.numeric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numeric</span></code></a></dt><dd><p>Select all numeric columns (integer and float). Use this to select both integer and floating-point columns together.</p>
 </dd>
-<dt><a class="reference internal" href="skrub.selectors.float.html#skrub.selectors.float" title="skrub.selectors.float"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></dt><dd><p>Select floating-point columns.</p>
+<dt><a class="reference internal" href="skrub.selectors.float.html#skrub.selectors.float" title="skrub.selectors.float"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></dt><dd><p>Select floating-point columns only.</p>
 </dd>
 <dt><a class="reference internal" href="skrub.selectors.boolean.html#skrub.selectors.boolean" title="skrub.selectors.boolean"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boolean</span></code></a></dt><dd><p>Select Boolean columns.</p>
 </dd>
@@ -826,12 +828,13 @@
 <span class="go">dtype: object</span>
 </pre></div>
 </div>
+<p>Select all integer columns:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">integer</span><span class="p">())</span>
 <span class="go">   i64  I64  i8</span>
 <span class="go">0    2    2   3</span>
 </pre></div>
 </div>
-<p>Use s.boolean() to also select Boolean columns:</p>
+<p>Combine with <a class="reference internal" href="skrub.selectors.boolean.html#skrub.selectors.boolean" title="skrub.selectors.boolean"><code class="xref py py-func docutils literal notranslate"><span class="pre">boolean()</span></code></a> to include Boolean columns:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">integer</span><span class="p">()</span> <span class="o">|</span> <span class="n">s</span><span class="o">.</span><span class="n">boolean</span><span class="p">())</span>
 <span class="go">   i64  I64  i8  bool_  Bool_</span>
 <span class="go">0    2    2   3   True   True</span>

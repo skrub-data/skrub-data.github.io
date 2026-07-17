@@ -4,14 +4,18 @@
 
 Select columns that have a numeric data type.
 
-This selects float and integer columns but not Boolean columns.
+Numeric columns include both integer and floating-point types,
+but exclude Boolean columns.
+
+This selector matches both integer and floating-point columns, equivalent to
+`integer() | float()`.
 
 #### SEE ALSO
 [`integer`](skrub.selectors.integerhtml.md#skrub.selectors.integer)
-: Select integer columns.
+: Select integer columns only.
 
 [`float`](skrub.selectors.floathtml.md#skrub.selectors.float)
-: Select floating-point columns.
+: Select floating-point columns only.
 
 [`boolean`](skrub.selectors.booleanhtml.md#skrub.selectors.boolean)
 : Select Boolean columns.
@@ -52,13 +56,15 @@ str_      ...
 dtype: object
 ```
 
+Select all numeric columns:
+
 ```pycon
 >>> s.select(df, s.numeric())
    f64  F64  i64  I64  i8
 0  1.1  2.3    2    2   3
 ```
 
-Use s.boolean() to also select Boolean columns:
+Combine with [`boolean()`](skrub.selectors.booleanhtml.md#skrub.selectors.boolean) to include Boolean columns:
 
 ```pycon
 >>> s.select(df, s.numeric() | s.boolean())

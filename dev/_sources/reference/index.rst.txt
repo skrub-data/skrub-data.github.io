@@ -215,6 +215,9 @@ Selectors
   selectors.cols
 
 
+  selectors.drop
+
+
   selectors.filter
 
 
