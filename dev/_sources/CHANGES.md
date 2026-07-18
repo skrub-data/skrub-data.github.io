@@ -27,6 +27,13 @@
   containing the full X and y before splitting.
 
   [#2213](https://github.com/skrub-data/skrub/pull/2213) by [Jérôme Dockès](https://github.com/jeromedockes).
+- Added support in [`tabular_pipeline()`](reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline) for estimators instantiated from either
+  [`tabicl.TabICLClassifier`](https://tabicl.readthedocs.io/en/stable/api.html#tabicl.TabICLClassifier) or [`tabicl.TabICLRegressor`](https://tabicl.readthedocs.io/en/stable/api.html#tabicl.TabICLRegressor) with recommended
+  default parameters of [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) as the first step, and the estimator
+  as the second step.
+
+  [#2222](https://github.com/skrub-data/skrub/pull/2222) by [Ashwin V. Mohanan](https://github.com/ashwinvis), with guidance from
+  [Jérôme Dockès](https://github.com/jeromedockes).
 
 ### Bugfixes
 
