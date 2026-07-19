@@ -782,7 +782,7 @@
 <h1>Selector<a class="headerlink" href="#selector" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.selectors.Selector">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">Selector</span></span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e02b720/skrub/selectors/_base.py#L479"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">Selector</span></span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/122dee9/skrub/selectors/_base.py#L479"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector" title="Link to this definition">#</a></dt>
 <dd><p>Pattern for matching columns in a dataframe.</p>
 <p>A <code class="docutils literal notranslate"><span class="pre">Selector</span></code> is a reusable rule for selecting columns based on various
 criteria (data type, name pattern, content properties, etc.). Selectors
@@ -863,7 +863,7 @@ to select numeric columns but exclude the ‘ID’ column:</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.selectors.Selector.expand">
-<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e02b720/skrub/selectors/_base.py#L565"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/122dee9/skrub/selectors/_base.py#L565"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand" title="Link to this definition">#</a></dt>
 <dd><p>Get the names of columns matched by the selector in a list.</p>
 <p>This method evaluates the selector’s matching criteria against each column
 in the dataframe and returns the names of columns that match. This can be
@@ -916,7 +916,7 @@ useful to extract column names to be used in dataframe operations.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.selectors.Selector.expand_index">
-<span class="sig-name descname"><span class="pre">expand_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e02b720/skrub/selectors/_base.py#L617"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand_index" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">expand_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/122dee9/skrub/selectors/_base.py#L617"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand_index" title="Link to this definition">#</a></dt>
 <dd><p>Get the indices of columns matched by the selector in a list.</p>
 <p>This method evaluates the selector against each column and returns the
 positional indices (0, 1, 2, …) of matching columns instead of their names.</p>

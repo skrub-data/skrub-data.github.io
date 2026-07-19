@@ -2,7 +2,7 @@
 
 # Release history
 
-## Release 0.10.0
+## Ongoing development
 
 ### New Features
 
