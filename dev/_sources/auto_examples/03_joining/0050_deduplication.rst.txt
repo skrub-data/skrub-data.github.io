@@ -290,9 +290,9 @@ or |MinHash|.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 6.848 seconds)
+   **Total running time of the script:** (0 minutes 4.729 seconds)
 
-**Estimated memory usage:**  606 MB
+**Estimated memory usage:**  580 MB
 
 
 .. _sphx_glr_download_auto_examples_03_joining_0050_deduplication.py:

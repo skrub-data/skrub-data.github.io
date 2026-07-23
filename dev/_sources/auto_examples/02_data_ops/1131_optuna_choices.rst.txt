@@ -155,27 +155,27 @@ the User Guide for an example.
 
  .. code-block:: none
 
-    Running optuna search for study skrub_randomized_search_d97651af-e4e5-4312-8b40-cb681b4c9510 in storage /tmp/tmpl80x3_51_skrub_optuna_search_storage/optuna_storage
-    [I 2026-07-19 13:31:05,342] A new study created in Journal with name: skrub_randomized_search_d97651af-e4e5-4312-8b40-cb681b4c9510
-    [I 2026-07-19 13:31:05,944] Trial 0 finished with value: 0.5998958893326463 and parameters: {'2:regressor': '1:ridge', '1:α': 0.08737056333717456}. Best is trial 0 with value: 0.5998958893326463.
-    [I 2026-07-19 13:31:06,488] Trial 1 finished with value: 0.5998965729709886 and parameters: {'2:regressor': '1:ridge', '1:α': 0.17777676175509427}. Best is trial 1 with value: 0.5998965729709886.
-    [I 2026-07-19 13:31:07,066] Trial 2 finished with value: 0.5998956300607201 and parameters: {'2:regressor': '1:ridge', '1:α': 0.05323908243249831}. Best is trial 1 with value: 0.5998965729709886.
-    [I 2026-07-19 13:31:07,649] Trial 3 finished with value: 0.5998953213503151 and parameters: {'2:regressor': '1:ridge', '1:α': 0.012709575518456051}. Best is trial 1 with value: 0.5998965729709886.
-    [I 2026-07-19 13:31:15,627] Trial 4 finished with value: 0.7913290174928354 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 4 with value: 0.7913290174928354.
-    [I 2026-07-19 13:31:25,632] Trial 5 finished with value: 0.7931359271779979 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 5 with value: 0.7931359271779979.
-    [I 2026-07-19 13:31:26,365] Trial 6 finished with value: 0.5998987110257883 and parameters: {'2:regressor': '1:ridge', '1:α': 0.464456825115831}. Best is trial 5 with value: 0.7931359271779979.
-    [I 2026-07-19 13:31:31,749] Trial 7 finished with value: 0.7588919833029395 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 7}. Best is trial 5 with value: 0.7931359271779979.
-    [I 2026-07-19 13:31:37,831] Trial 8 finished with value: 0.7759552041707828 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 5 with value: 0.7931359271779979.
-    [I 2026-07-19 13:31:45,541] Trial 9 finished with value: 0.7894246170474473 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 5 with value: 0.7931359271779979.
-    [I 2026-07-19 13:31:45,543] A new study created in memory with name: skrub_randomized_search_d97651af-e4e5-4312-8b40-cb681b4c9510
+    Running optuna search for study skrub_randomized_search_0881c6fb-7cdf-443f-9670-242f16c421e2 in storage /tmp/tmpbskmuvlv_skrub_optuna_search_storage/optuna_storage
+    [I 2026-07-23 13:59:11,693] A new study created in Journal with name: skrub_randomized_search_0881c6fb-7cdf-443f-9670-242f16c421e2
+    [I 2026-07-23 13:59:12,015] Trial 0 finished with value: 0.5998958893326463 and parameters: {'2:regressor': '1:ridge', '1:α': 0.08737056333717456}. Best is trial 0 with value: 0.5998958893326463.
+    [I 2026-07-23 13:59:12,419] Trial 1 finished with value: 0.5998965729709886 and parameters: {'2:regressor': '1:ridge', '1:α': 0.17777676175509427}. Best is trial 1 with value: 0.5998965729709886.
+    [I 2026-07-23 13:59:12,783] Trial 2 finished with value: 0.5998956300607201 and parameters: {'2:regressor': '1:ridge', '1:α': 0.05323908243249831}. Best is trial 1 with value: 0.5998965729709886.
+    [I 2026-07-23 13:59:13,103] Trial 3 finished with value: 0.5998953213503151 and parameters: {'2:regressor': '1:ridge', '1:α': 0.012709575518456051}. Best is trial 1 with value: 0.5998965729709886.
+    [I 2026-07-23 13:59:19,527] Trial 4 finished with value: 0.7888174388741622 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 4 with value: 0.7888174388741622.
+    [I 2026-07-23 13:59:28,253] Trial 5 finished with value: 0.7945954431034006 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 5 with value: 0.7945954431034006.
+    [I 2026-07-23 13:59:28,576] Trial 6 finished with value: 0.5998987110257883 and parameters: {'2:regressor': '1:ridge', '1:α': 0.464456825115831}. Best is trial 5 with value: 0.7945954431034006.
+    [I 2026-07-23 13:59:32,618] Trial 7 finished with value: 0.7591941736017085 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 7}. Best is trial 5 with value: 0.7945954431034006.
+    [I 2026-07-23 13:59:37,687] Trial 8 finished with value: 0.774975785802089 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 5 with value: 0.7945954431034006.
+    [I 2026-07-23 13:59:44,035] Trial 9 finished with value: 0.7901858098592387 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 5 with value: 0.7945954431034006.
+    [I 2026-07-23 13:59:44,037] A new study created in memory with name: skrub_randomized_search_0881c6fb-7cdf-443f-9670-242f16c421e2
 
 
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_f82c648f-wrapper" hidden>
-        <template id="report_f82c648f-template">
+    <div id="report_e8f3685f-wrapper" hidden>
+        <template id="report_e8f3685f-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1465,8 +1465,8 @@ the User Guide for an example.
             </style>
             <div id="report"
         
-             
-                  >
+                 data-test-plots-skipped
+                 data-test-associations-skipped >
             
 
             
@@ -1491,30 +1491,10 @@ the User Guide for an example.
                         title="Summary statistics for all columns.">Stats</button>
                 </div>
             
-                <div>
-                    <button type="button" data-target-panel-id="column-summaries-panel"
-                        data-role="tab"  data-test="summaries-tab" class="tab"
-                        title="Plots showing the distributions of all columns">Distributions</button>
-                </div>
-                <div>
-                    <button type="button" data-target-panel-id="column-associations-panel"
-                        data-role="tab"  class="tab" 
-                        data-has-warning  data-test="associations-tab"
-                        title="Show which columns are similar (have a strong association).
-    NOTE: some columns have very strong associations and may be redundant.">
-                        <div class="warning-sign">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
-      <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
-    </svg>
-                        </div>
-                        Associations</button>
-                </div>
-            
             </div>
             <div class="column-filter" data-manager="InvisibleInAssociationsTabPanel">
         <select data-manager="ColumnFilter"
-                data-all-filters-base64="eyJhbGwoKSI6IHsiZGlzcGxheV9uYW1lIjogIkFsbCBjb2x1bW5zIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgM119LCAiaGlnaF9hc3NvY2lhdGlvbiI6IHsiY29sdW1ucyI6IFswLCAxLCAyLCAzXSwgImRpc3BsYXlfbmFtZSI6ICJIaWdoIHNpbWlsYXJpdHkifSwgImhhc19udWxscygwLjApIjogeyJkaXNwbGF5X25hbWUiOiAiV2l0aCBudWxscyIsICJjb2x1bW5zIjogWzAsIDFdfSwgIih+aGFzX251bGxzKDAuMCkpIjogeyJkaXNwbGF5X25hbWUiOiAiV2l0aG91dCBudWxscyIsICJjb2x1bW5zIjogWzIsIDNdfSwgIm51bWVyaWMoKSI6IHsiZGlzcGxheV9uYW1lIjogIk51bWVyaWMiLCAiY29sdW1ucyI6IFswLCAxLCAzXX0sICIofm51bWVyaWMoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tbnVtZXJpYyIsICJjb2x1bW5zIjogWzJdfSwgInN0cmluZygpIjogeyJkaXNwbGF5X25hbWUiOiAiU3RyaW5nIiwgImNvbHVtbnMiOiBbMl19LCAiKH5zdHJpbmcoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tc3RyaW5nIiwgImNvbHVtbnMiOiBbMCwgMSwgM119LCAiY2F0ZWdvcmljYWwoKSI6IHsiZGlzcGxheV9uYW1lIjogIkNhdGVnb3JpY2FsIiwgImNvbHVtbnMiOiBbXX0sICIofmNhdGVnb3JpY2FsKCkpIjogeyJkaXNwbGF5X25hbWUiOiAiTm9uLWNhdGVnb3JpY2FsIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgM119LCAiYW55X2RhdGUoKSI6IHsiZGlzcGxheV9uYW1lIjogIkRhdGV0aW1lIiwgImNvbHVtbnMiOiBbXX0sICIofmFueV9kYXRlKCkpIjogeyJkaXNwbGF5X25hbWUiOiAiTm9uLWRhdGV0aW1lIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgM119fQ=="
+                data-all-filters-base64="eyJhbGwoKSI6IHsiZGlzcGxheV9uYW1lIjogIkFsbCBjb2x1bW5zIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgM119LCAiaGFzX251bGxzKDAuMCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJXaXRoIG51bGxzIiwgImNvbHVtbnMiOiBbMCwgMV19LCAiKH5oYXNfbnVsbHMoMC4wKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJXaXRob3V0IG51bGxzIiwgImNvbHVtbnMiOiBbMiwgM119LCAibnVtZXJpYygpIjogeyJkaXNwbGF5X25hbWUiOiAiTnVtZXJpYyIsICJjb2x1bW5zIjogWzAsIDEsIDNdfSwgIih+bnVtZXJpYygpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1udW1lcmljIiwgImNvbHVtbnMiOiBbMl19LCAic3RyaW5nKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJTdHJpbmciLCAiY29sdW1ucyI6IFsyXX0sICIofnN0cmluZygpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1zdHJpbmciLCAiY29sdW1ucyI6IFswLCAxLCAzXX0sICJjYXRlZ29yaWNhbCgpIjogeyJkaXNwbGF5X25hbWUiOiAiQ2F0ZWdvcmljYWwiLCAiY29sdW1ucyI6IFtdfSwgIih+Y2F0ZWdvcmljYWwoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tY2F0ZWdvcmljYWwiLCAiY29sdW1ucyI6IFswLCAxLCAyLCAzXX0sICJhbnlfZGF0ZSgpIjogeyJkaXNwbGF5X25hbWUiOiAiRGF0ZXRpbWUiLCAiY29sdW1ucyI6IFtdfSwgIih+YW55X2RhdGUoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tZGF0ZXRpbWUiLCAiY29sdW1ucyI6IFswLCAxLCAyLCAzXX19"
                 data-test="column-filter-select"
                 autocomplete="off">
             <optgroup label="Select columns to show:">
@@ -1522,9 +1502,6 @@ the User Guide for an example.
         
             <option value="all()">
                 All columns</option>
-        
-            <option value="high_association">
-                High similarity</option>
         
             <option value="has_nulls(0.0)">
                 With nulls</option>
@@ -1623,7 +1600,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="3ad0e56e"
+                    id="313a6b3e"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1653,7 +1630,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="02dfbe21"
+                    id="f1ca037a"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1687,7 +1664,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="33d1f0ff"
+                    id="3a3f4388"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1721,7 +1698,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="e36ebb29"
+                    id="3fdeef0a"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1755,7 +1732,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="2ced549d"
+                    id="69d8af4e"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1803,7 +1780,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="f3c5e1e1"
+                    id="4a8026f5"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1831,7 +1808,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="b9ac3f50"
+                    id="9e6edeb4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1861,7 +1838,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="06c5954c"
+                    id="8d2365da"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1891,7 +1868,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="c7873e62"
+                    id="54bf3286"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1921,7 +1898,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="126ab57a"
+                    id="2a5991cb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1942,12 +1919,12 @@ the User Guide for an example.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.7931359271779979"
-                    data-value-str="0.7931359271779979"
+                    data-value-repr="0.7945954431034006"
+                    data-value-str="0.7945954431034006"
                 
                     data-column-idx="3"
                 
-                    >0.793</td>
+                    >0.795</td>
                 
                 </tr>
             
@@ -1955,7 +1932,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="96eee082"
+                    id="a803302a"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1983,7 +1960,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="0eb1199d"
+                    id="7d062ee2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2013,7 +1990,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="73609ccb"
+                    id="d8922f32"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2043,7 +2020,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="1d93c5ac"
+                    id="b1fa4f65"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2073,7 +2050,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="ef5256a3"
+                    id="182e2d9d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2094,12 +2071,12 @@ the User Guide for an example.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.7913290174928354"
-                    data-value-str="0.7913290174928354"
+                    data-value-repr="0.7901858098592387"
+                    data-value-str="0.7901858098592387"
                 
                     data-column-idx="3"
                 
-                    >0.791</td>
+                    >0.790</td>
                 
                 </tr>
             
@@ -2107,7 +2084,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="97d84b76"
+                    id="9bb54c99"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2135,7 +2112,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="dcbfd5d5"
+                    id="6294ffd2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2165,7 +2142,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="cd68ef52"
+                    id="19bd3ccf"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2195,7 +2172,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="fa50a104"
+                    id="235b59e2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2225,7 +2202,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="37f2cd44"
+                    id="b5212048"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2246,8 +2223,8 @@ the User Guide for an example.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.7894246170474473"
-                    data-value-str="0.7894246170474473"
+                    data-value-repr="0.7888174388741622"
+                    data-value-str="0.7888174388741622"
                 
                     data-column-idx="3"
                 
@@ -2259,7 +2236,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="b776f2e9"
+                    id="a87c6bc5"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2287,7 +2264,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="68e0ff53"
+                    id="7120c381"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2317,7 +2294,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="b99f617e"
+                    id="e0314431"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2347,7 +2324,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="1a5becc4"
+                    id="f1f82d9f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2377,7 +2354,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="7e3c3530"
+                    id="c617e6d6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2398,12 +2375,12 @@ the User Guide for an example.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.7759552041707828"
-                    data-value-str="0.7759552041707828"
+                    data-value-repr="0.774975785802089"
+                    data-value-str="0.774975785802089"
                 
                     data-column-idx="3"
                 
-                    >0.776</td>
+                    >0.775</td>
                 
                 </tr>
             
@@ -2411,7 +2388,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="9b2972d9"
+                    id="7343929a"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2439,7 +2416,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="588ff373"
+                    id="105b7e33"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2469,7 +2446,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="4e5c6b1e"
+                    id="db816166"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2499,7 +2476,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="ebbd81ad"
+                    id="44033e06"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2529,7 +2506,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="b684c60d"
+                    id="fad1d5af"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2550,8 +2527,8 @@ the User Guide for an example.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.7588919833029395"
-                    data-value-str="0.7588919833029395"
+                    data-value-repr="0.7591941736017085"
+                    data-value-str="0.7591941736017085"
                 
                     data-column-idx="3"
                 
@@ -2563,7 +2540,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="ae34f638"
+                    id="8131050f"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2591,7 +2568,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="d5661103"
+                    id="77c2d952"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2621,7 +2598,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="133b9d55"
+                    id="251ce372"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2651,7 +2628,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="0bb348bf"
+                    id="0097aeb1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2681,7 +2658,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="dc2f08bf"
+                    id="cec07f5c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2715,7 +2692,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="be9bf55f"
+                    id="548b539e"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2743,7 +2720,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="ef14f7b7"
+                    id="c1127d3f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2773,7 +2750,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="93b4b833"
+                    id="deed8356"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2803,7 +2780,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="396c7e98"
+                    id="ef53326d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2833,7 +2810,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="77b4f873"
+                    id="012c9003"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2867,7 +2844,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="040fde01"
+                    id="06ae5ff1"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2895,7 +2872,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="39a441a7"
+                    id="b6bad887"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2925,7 +2902,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="201d20ee"
+                    id="26358c2b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2955,7 +2932,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="b41951fc"
+                    id="85d29ff4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2985,7 +2962,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="5beb8b65"
+                    id="e7a5ed0f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3019,7 +2996,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="78cd3d6c"
+                    id="e6ab4b6c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3047,7 +3024,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="5f5074b8"
+                    id="37a6c512"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3077,7 +3054,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="535e88e2"
+                    id="d68c0380"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3107,7 +3084,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="de805e4a"
+                    id="e8778bf1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3137,7 +3114,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="9bf21184"
+                    id="f432bf1c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3171,7 +3148,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="ea7902fe"
+                    id="4b1a034a"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3199,7 +3176,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="85ebdea5"
+                    id="5b4753d8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3229,7 +3206,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="278b6404"
+                    id="b1741258"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3259,7 +3236,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="32c7ce83"
+                    id="74b90e98"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3289,7 +3266,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="becd872b"
+                    id="4d042cf5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3434,217 +3411,6 @@ the User Guide for an example.
         
 
         
-            <div>
-                <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                    <?xml version="1.0" encoding="utf-8" standalone="no"?>
-    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-      "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.31em" height="8.65em" viewBox="0 0 171.7625 103.770257" xmlns="http://www.w3.org/2000/svg" version="1.1">
-     <metadata>
-      <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-       <cc:Work>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-07-19T13:31:49.927028</dc:date>
-        <dc:format>image/svg+xml</dc:format>
-        <dc:creator>
-         <cc:Agent>
-          <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-         </cc:Agent>
-        </dc:creator>
-       </cc:Work>
-      </rdf:RDF>
-     </metadata>
-     <defs>
-      <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
-     </defs>
-     <g id="figure_1">
-      <g id="axes_1">
-       <g id="patch_1">
-        <path d="M 20.5625 79.570257 
-    L 164.5625 79.570257 
-    L 164.5625 7.570257 
-    L 20.5625 7.570257 
-    L 20.5625 79.570257 
-    z
-    " style="fill: none"/>
-       </g>
-       <g id="patch_2">
-        <path d="M 27.107955 79.570257 
-    L 40.198864 79.570257 
-    L 40.198864 45.284542 
-    L 27.107955 45.284542 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_3">
-        <path d="M 40.198864 79.570257 
-    L 53.289774 79.570257 
-    L 53.289774 10.998828 
-    L 40.198864 10.998828 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_4">
-        <path d="M 53.289774 79.570257 
-    L 66.380686 79.570257 
-    L 66.380686 79.570257 
-    L 53.289774 79.570257 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_5">
-        <path d="M 66.380686 79.570257 
-    L 79.471593 79.570257 
-    L 79.471593 79.570257 
-    L 66.380686 79.570257 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_6">
-        <path d="M 79.471593 79.570257 
-    L 92.5625 79.570257 
-    L 92.5625 79.570257 
-    L 79.471593 79.570257 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_7">
-        <path d="M 92.5625 79.570257 
-    L 105.653417 79.570257 
-    L 105.653417 45.284542 
-    L 92.5625 45.284542 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_8">
-        <path d="M 105.653417 79.570257 
-    L 118.744324 79.570257 
-    L 118.744324 79.570257 
-    L 105.653417 79.570257 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_9">
-        <path d="M 118.744324 79.570257 
-    L 131.835231 79.570257 
-    L 131.835231 79.570257 
-    L 118.744324 79.570257 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_10">
-        <path d="M 131.835231 79.570257 
-    L 144.926138 79.570257 
-    L 144.926138 79.570257 
-    L 131.835231 79.570257 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_11">
-        <path d="M 144.926138 79.570257 
-    L 158.017045 79.570257 
-    L 158.017045 45.284542 
-    L 144.926138 45.284542 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="matplotlib.axis_1">
-        <g id="xtick_1">
-         <g id="line2d_1">
-          <defs>
-           <path id="m201ba838e0" d="M 0 0 
-    L 0 3.5 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#m201ba838e0" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_1">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="48.926136" y="94.167913" transform="rotate(-0 48.926136 94.167913)">2</text>
-         </g>
-        </g>
-        <g id="xtick_2">
-         <g id="line2d_2">
-          <g>
-           <use xlink:href="#m201ba838e0" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_2">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="92.5625" y="94.167913" transform="rotate(-0 92.5625 94.167913)">4</text>
-         </g>
-        </g>
-        <g id="xtick_3">
-         <g id="line2d_3">
-          <g>
-           <use xlink:href="#m201ba838e0" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_3">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="136.198864" y="94.167913" transform="rotate(-0 136.198864 94.167913)">6</text>
-         </g>
-        </g>
-       </g>
-       <g id="matplotlib.axis_2">
-        <g id="ytick_1">
-         <g id="line2d_4">
-          <defs>
-           <path id="ma391580442" d="M 0 0 
-    L -3.5 0 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#ma391580442" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_4">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="83.369085" transform="rotate(-0 13.5625 83.369085)">0</text>
-         </g>
-        </g>
-        <g id="ytick_2">
-         <g id="line2d_5">
-          <g>
-           <use xlink:href="#ma391580442" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_5">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="49.083371" transform="rotate(-0 13.5625 49.083371)">1</text>
-         </g>
-        </g>
-        <g id="ytick_3">
-         <g id="line2d_6">
-          <g>
-           <use xlink:href="#ma391580442" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_6">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="14.797656" transform="rotate(-0 13.5625 14.797656)">2</text>
-         </g>
-        </g>
-       </g>
-       <g id="patch_12">
-        <path d="M 20.5625 79.570257 
-    L 20.5625 7.570257 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-       <g id="patch_13">
-        <path d="M 20.5625 79.570257 
-    L 164.5625 79.570257 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-      </g>
-     </g>
-     <defs>
-      <clipPath id="pef1eb33588">
-       <rect x="20.5625" y="7.570257" width="144" height="72"/>
-      </clipPath>
-     </defs>
-    </svg>
-
-                </div>
-            
-            </div>
-        
         </div>
     </div>
         
@@ -3722,217 +3488,6 @@ the User Guide for an example.
         
 
         
-            <div>
-                <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                    <?xml version="1.0" encoding="utf-8" standalone="no"?>
-    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-      "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.31em" height="8.65em" viewBox="0 0 171.7625 103.770257" xmlns="http://www.w3.org/2000/svg" version="1.1">
-     <metadata>
-      <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-       <cc:Work>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-07-19T13:31:50.035451</dc:date>
-        <dc:format>image/svg+xml</dc:format>
-        <dc:creator>
-         <cc:Agent>
-          <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-         </cc:Agent>
-        </dc:creator>
-       </cc:Work>
-      </rdf:RDF>
-     </metadata>
-     <defs>
-      <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
-     </defs>
-     <g id="figure_1">
-      <g id="axes_1">
-       <g id="patch_1">
-        <path d="M 20.5625 79.570257 
-    L 164.5625 79.570257 
-    L 164.5625 7.570257 
-    L 20.5625 7.570257 
-    L 20.5625 79.570257 
-    z
-    " style="fill: none"/>
-       </g>
-       <g id="patch_2">
-        <path d="M 27.107955 79.570257 
-    L 40.198864 79.570257 
-    L 40.198864 10.998828 
-    L 27.107955 10.998828 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_3">
-        <path d="M 40.198864 79.570257 
-    L 53.289772 79.570257 
-    L 53.289772 45.284542 
-    L 40.198864 45.284542 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_4">
-        <path d="M 53.289772 79.570257 
-    L 66.380683 79.570257 
-    L 66.380683 79.570257 
-    L 53.289772 79.570257 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_5">
-        <path d="M 66.380683 79.570257 
-    L 79.47159 79.570257 
-    L 79.47159 45.284542 
-    L 66.380683 45.284542 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_6">
-        <path d="M 79.47159 79.570257 
-    L 92.562497 79.570257 
-    L 92.562497 79.570257 
-    L 79.47159 79.570257 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_7">
-        <path d="M 92.562497 79.570257 
-    L 105.653417 79.570257 
-    L 105.653417 79.570257 
-    L 92.562497 79.570257 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_8">
-        <path d="M 105.653417 79.570257 
-    L 118.744324 79.570257 
-    L 118.744324 79.570257 
-    L 105.653417 79.570257 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_9">
-        <path d="M 118.744324 79.570257 
-    L 131.835231 79.570257 
-    L 131.835231 79.570257 
-    L 118.744324 79.570257 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_10">
-        <path d="M 131.835231 79.570257 
-    L 144.926138 79.570257 
-    L 144.926138 79.570257 
-    L 131.835231 79.570257 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_11">
-        <path d="M 144.926138 79.570257 
-    L 158.017045 79.570257 
-    L 158.017045 45.284542 
-    L 144.926138 45.284542 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="matplotlib.axis_1">
-        <g id="xtick_1">
-         <g id="line2d_1">
-          <defs>
-           <path id="m98afa79fa3" d="M 0 0 
-    L 0 3.5 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#m98afa79fa3" x="23.424924" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_1">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="23.424924" y="94.167913" transform="rotate(-0 23.424924 94.167913)">0.0</text>
-         </g>
-        </g>
-        <g id="xtick_2">
-         <g id="line2d_2">
-          <g>
-           <use xlink:href="#m98afa79fa3" x="81.381709" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_2">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="81.381709" y="94.167913" transform="rotate(-0 81.381709 94.167913)">0.2</text>
-         </g>
-        </g>
-        <g id="xtick_3">
-         <g id="line2d_3">
-          <g>
-           <use xlink:href="#m98afa79fa3" x="139.338493" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_3">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="139.338493" y="94.167913" transform="rotate(-0 139.338493 94.167913)">0.4</text>
-         </g>
-        </g>
-       </g>
-       <g id="matplotlib.axis_2">
-        <g id="ytick_1">
-         <g id="line2d_4">
-          <defs>
-           <path id="m20d3f82eb7" d="M 0 0 
-    L -3.5 0 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#m20d3f82eb7" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_4">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="83.369085" transform="rotate(-0 13.5625 83.369085)">0</text>
-         </g>
-        </g>
-        <g id="ytick_2">
-         <g id="line2d_5">
-          <g>
-           <use xlink:href="#m20d3f82eb7" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_5">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="49.083371" transform="rotate(-0 13.5625 49.083371)">1</text>
-         </g>
-        </g>
-        <g id="ytick_3">
-         <g id="line2d_6">
-          <g>
-           <use xlink:href="#m20d3f82eb7" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_6">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="14.797656" transform="rotate(-0 13.5625 14.797656)">2</text>
-         </g>
-        </g>
-       </g>
-       <g id="patch_12">
-        <path d="M 20.5625 79.570257 
-    L 20.5625 7.570257 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-       <g id="patch_13">
-        <path d="M 20.5625 79.570257 
-    L 164.5625 79.570257 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-      </g>
-     </g>
-     <defs>
-      <clipPath id="p2c5442f3c8">
-       <rect x="20.5625" y="7.570257" width="144" height="72"/>
-      </clipPath>
-     </defs>
-    </svg>
-
-                </div>
-            
-            </div>
-        
         </div>
     </div>
         
@@ -3991,243 +3546,6 @@ the User Guide for an example.
         
 
         
-            <div>
-                <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                    <?xml version="1.0" encoding="utf-8" standalone="no"?>
-    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-      "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="16.26em" height="5.02em" viewBox="0 0 195.087188 60.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
-     <metadata>
-      <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-       <cc:Work>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-07-19T13:31:50.123010</dc:date>
-        <dc:format>image/svg+xml</dc:format>
-        <dc:creator>
-         <cc:Agent>
-          <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-         </cc:Agent>
-        </dc:creator>
-       </cc:Work>
-      </rdf:RDF>
-     </metadata>
-     <defs>
-      <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
-     </defs>
-     <g id="figure_1">
-      <g id="axes_1">
-       <g id="patch_1">
-        <path d="M 65.373437 36 
-    L 158.973438 36 
-    L 158.973438 7.2 
-    L 65.373437 7.2 
-    L 65.373437 36 
-    z
-    " style="fill: none"/>
-       </g>
-       <g id="patch_2">
-        <path d="M 65.373437 34.690909 
-    L 154.516295 34.690909 
-    L 154.516295 23.054545 
-    L 65.373437 23.054545 
-    z
-    " clip-path="url(#paa5b195abc)" style="fill: #ee854a"/>
-       </g>
-       <g id="patch_3">
-        <path d="M 65.373437 20.145455 
-    L 154.516295 20.145455 
-    L 154.516295 8.509091 
-    L 65.373437 8.509091 
-    z
-    " clip-path="url(#paa5b195abc)" style="fill: #ee854a"/>
-       </g>
-       <g id="matplotlib.axis_1">
-        <g id="xtick_1">
-         <g id="line2d_1">
-          <defs>
-           <path id="mee2c5d1479" d="M 0 0 
-    L 0 3.5 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#mee2c5d1479" x="65.373437" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_1">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="65.373437" y="50.597656" transform="rotate(-0 65.373437 50.597656)">0</text>
-         </g>
-        </g>
-        <g id="xtick_2">
-         <g id="line2d_2">
-          <g>
-           <use xlink:href="#mee2c5d1479" x="101.03058" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_2">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="101.03058" y="50.597656" transform="rotate(-0 101.03058 50.597656)">2</text>
-         </g>
-        </g>
-        <g id="xtick_3">
-         <g id="line2d_3">
-          <g>
-           <use xlink:href="#mee2c5d1479" x="136.687723" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_3">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="136.687723" y="50.597656" transform="rotate(-0 136.687723 50.597656)">4</text>
-         </g>
-        </g>
-       </g>
-       <g id="matplotlib.axis_2">
-        <g id="ytick_1">
-         <g id="line2d_4">
-          <defs>
-           <path id="mcf4f055cea" d="M 0 0 
-    L -3.5 0 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#mcf4f055cea" x="65.373437" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_4">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="58.373437" y="32.671946" transform="rotate(-0 58.373437 32.671946)">ridge</text>
-         </g>
-        </g>
-        <g id="ytick_2">
-         <g id="line2d_5">
-          <g>
-           <use xlink:href="#mcf4f055cea" x="65.373437" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_5">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="58.373437" y="18.126101" transform="rotate(-0 58.373437 18.126101)">extra_tree</text>
-         </g>
-        </g>
-       </g>
-       <g id="patch_4">
-        <path d="M 65.373437 36 
-    L 65.373437 7.2 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-       <g id="patch_5">
-        <path d="M 65.373437 36 
-    L 158.973438 36 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-      </g>
-      <g id="axes_2">
-       <g id="matplotlib.axis_3">
-        <g id="ytick_3">
-         <g id="line2d_6"/>
-         <g id="text_6">
-          <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="162.473438" y="31.91179" transform="rotate(-0 162.473438 31.91179)">50.0%</text>
-         </g>
-        </g>
-        <g id="ytick_4">
-         <g id="line2d_7"/>
-         <g id="text_7">
-          <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="162.473438" y="17.366335" transform="rotate(-0 162.473438 17.366335)">50.0%</text>
-         </g>
-        </g>
-       </g>
-       <g id="patch_6">
-        <path d="M 65.373437 36 
-    L 65.373437 7.2 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-       <g id="patch_7">
-        <path d="M 65.373437 36 
-    L 158.973438 36 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-      </g>
-     </g>
-     <defs>
-      <clipPath id="paa5b195abc">
-       <rect x="65.373437" y="7.2" width="93.6" height="28.8"/>
-      </clipPath>
-     </defs>
-    </svg>
-
-                </div>
-            
-                <details data-test="frequent-values-details">
-                    <summary>Most frequent values</summary>
-                    <div class="shrink">
-                        <div class="copybutton-grid">
-                        
-                        
-                            <div class="box" data-test="frequent-value-0">
-                                <pre id="col_2_in_sample_tab-freq-value-0"
-                                    data-copy-text="&#39;extra_tree&#39;">extra_tree</pre>
-                            
-    <button
-        class="copybutton copybutton-left"
-        data-manager="CopyButton"
-        type="button"
-        data-target-id="col_2_in_sample_tab-freq-value-0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-    </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-    </svg>
-        <div class="copied-message">Copied!</div>
-    </button>
-
-                            </div>
-
-                        
-                        
-                            <div class="box" data-test="frequent-value-1">
-                                <pre id="col_2_in_sample_tab-freq-value-1"
-                                    data-copy-text="&#39;ridge&#39;">ridge</pre>
-                            
-    <button
-        class="copybutton copybutton-left"
-        data-manager="CopyButton"
-        type="button"
-        data-target-id="col_2_in_sample_tab-freq-value-1">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-    </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-    </svg>
-        <div class="copied-message">Copied!</div>
-    </button>
-
-                            </div>
-
-                        
-                            <span class="grid-separator">List:</span>
-                        
-                            <div class="box">
-                                <pre id="col_2_in_sample_tab-freq-value-list"
-                                    data-copy-text="[&#39;extra_tree&#39;, &#39;ridge&#39;]">[&#39;extra_tree&#39;, &#39;ridge&#39;]</pre>
-                            
-    <button
-        class="copybutton copybutton-left"
-        data-manager="CopyButton"
-        type="button"
-        data-target-id="col_2_in_sample_tab-freq-value-list">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-    </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-    </svg>
-        <div class="copied-message">Copied!</div>
-    </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </details>
-            
-            </div>
-        
         </div>
     </div>
         
@@ -4278,21 +3596,21 @@ the User Guide for an example.
                 
                     <dt>Mean ± Std</dt>
                     <dd>0.691 ±
-                        0.0963
+                        0.0962
                     
                     </dd>
                 
                 
                     <dt>Median ± IQR</dt>
                     <dd>0.600 ±
-                        0.190
+                        0.189
                     
                     </dd>
 
                     <dt>Min | Max</dt>
                     <dd>
                         <span class="min-value">0.600</span> |
-                        <span class="max-value">0.793</span>
+                        <span class="max-value">0.795</span>
                     
                     </dd>
                 
@@ -4304,217 +3622,6 @@ the User Guide for an example.
 
         
 
-        
-            <div>
-                <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                    <?xml version="1.0" encoding="utf-8" standalone="no"?>
-    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-      "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.82em" height="8.62em" viewBox="0 0 177.818601 103.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
-     <metadata>
-      <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-       <cc:Work>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-07-19T13:31:50.214643</dc:date>
-        <dc:format>image/svg+xml</dc:format>
-        <dc:creator>
-         <cc:Agent>
-          <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-         </cc:Agent>
-        </dc:creator>
-       </cc:Work>
-      </rdf:RDF>
-     </metadata>
-     <defs>
-      <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
-     </defs>
-     <g id="figure_1">
-      <g id="axes_1">
-       <g id="patch_1">
-        <path d="M 20.5625 79.2 
-    L 164.5625 79.2 
-    L 164.5625 7.2 
-    L 20.5625 7.2 
-    L 20.5625 79.2 
-    z
-    " style="fill: none"/>
-       </g>
-       <g id="patch_2">
-        <path d="M 27.107955 79.2 
-    L 40.198864 79.2 
-    L 40.198864 10.628571 
-    L 27.107955 10.628571 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_3">
-        <path d="M 40.198864 79.2 
-    L 53.289773 79.2 
-    L 53.289773 79.2 
-    L 40.198864 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_4">
-        <path d="M 53.289773 79.2 
-    L 66.380682 79.2 
-    L 66.380682 79.2 
-    L 53.289773 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_5">
-        <path d="M 66.380682 79.2 
-    L 79.471591 79.2 
-    L 79.471591 79.2 
-    L 66.380682 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_6">
-        <path d="M 79.471591 79.2 
-    L 92.5625 79.2 
-    L 92.5625 79.2 
-    L 79.471591 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_7">
-        <path d="M 92.5625 79.2 
-    L 105.653409 79.2 
-    L 105.653409 79.2 
-    L 92.5625 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_8">
-        <path d="M 105.653409 79.2 
-    L 118.744318 79.2 
-    L 118.744318 79.2 
-    L 105.653409 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_9">
-        <path d="M 118.744318 79.2 
-    L 131.835227 79.2 
-    L 131.835227 79.2 
-    L 118.744318 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_10">
-        <path d="M 131.835227 79.2 
-    L 144.926136 79.2 
-    L 144.926136 65.485714 
-    L 131.835227 65.485714 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_11">
-        <path d="M 144.926136 79.2 
-    L 158.017045 79.2 
-    L 158.017045 24.342857 
-    L 144.926136 24.342857 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="matplotlib.axis_1">
-        <g id="xtick_1">
-         <g id="line2d_1">
-          <defs>
-           <path id="m5673962ec6" d="M 0 0 
-    L 0 3.5 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#m5673962ec6" x="27.178884" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_1">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="27.178884" y="93.797656" transform="rotate(-0 27.178884 93.797656)">0.6</text>
-         </g>
-        </g>
-        <g id="xtick_2">
-         <g id="line2d_2">
-          <g>
-           <use xlink:href="#m5673962ec6" x="94.922961" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_2">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="94.922961" y="93.797656" transform="rotate(-0 94.922961 93.797656)">0.7</text>
-         </g>
-        </g>
-        <g id="xtick_3">
-         <g id="line2d_3">
-          <g>
-           <use xlink:href="#m5673962ec6" x="162.667039" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_3">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="162.667039" y="93.797656" transform="rotate(-0 162.667039 93.797656)">0.8</text>
-         </g>
-        </g>
-       </g>
-       <g id="matplotlib.axis_2">
-        <g id="ytick_1">
-         <g id="line2d_4">
-          <defs>
-           <path id="mbdfd2226a4" d="M 0 0 
-    L -3.5 0 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#mbdfd2226a4" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_4">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="82.998828" transform="rotate(-0 13.5625 82.998828)">0</text>
-         </g>
-        </g>
-        <g id="ytick_2">
-         <g id="line2d_5">
-          <g>
-           <use xlink:href="#mbdfd2226a4" x="20.5625" y="51.771429" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_5">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="55.570257" transform="rotate(-0 13.5625 55.570257)">2</text>
-         </g>
-        </g>
-        <g id="ytick_3">
-         <g id="line2d_6">
-          <g>
-           <use xlink:href="#mbdfd2226a4" x="20.5625" y="24.342857" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_6">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="28.141685" transform="rotate(-0 13.5625 28.141685)">4</text>
-         </g>
-        </g>
-       </g>
-       <g id="patch_12">
-        <path d="M 20.5625 79.2 
-    L 20.5625 7.2 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-       <g id="patch_13">
-        <path d="M 20.5625 79.2 
-    L 164.5625 79.2 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-      </g>
-     </g>
-     <defs>
-      <clipPath id="p0509a4c924">
-       <rect x="20.5625" y="7.2" width="144" height="72"/>
-      </clipPath>
-     </defs>
-    </svg>
-
-                </div>
-            
-            </div>
         
         </div>
     </div>
@@ -4993,10 +4100,10 @@ the User Guide for an example.
                     
 
                     
-                        <td data-value="0.6908218873932461" data-numeric>
+                        <td data-value="0.6907250775981059" data-numeric>
                             0.691</td>
-                        <td data-value="0.09632742913140976" data-numeric>
-                            0.0963</td>
+                        <td data-value="0.09622832863774765" data-numeric>
+                            0.0962</td>
                     
 
                     
@@ -5004,8 +4111,8 @@ the User Guide for an example.
                             0.600</td>
                         <td data-value="0.5998987110257883" data-numeric>
                             0.600</td>
-                        <td data-value="0.7931359271779979" data-numeric>
-                            0.793</td>
+                        <td data-value="0.7945954431034006" data-numeric>
+                            0.795</td>
                     
 
                     </tr>
@@ -5030,1308 +4137,6 @@ the User Guide for an example.
     </div>
     </div>
 
-    <div class="tab-panel" id="column-summaries-panel" data-hidden
-         data-test="summaries-panel">
-    
-
-    <article class="wrapper margin-t-s flow" data-show-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
-        data-hide-on="EMPTY_COLUMN_FILTER_SELECTED" >
-        <div class="flex flex-wrap">
-            <div class="box">
-                <pre id="selected-columns-display" data-manager="SelectedColumnsDisplay"></pre>
-            
-    <button
-        class="copybutton copybutton-left"
-        data-manager="CopyButton"
-        type="button"
-        data-target-id="selected-columns-display">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-    </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-    </svg>
-        <div class="copied-message">Copied!</div>
-    </button>
-
-            </div>
-    	<div class="flex flex-wrap toggletip-wrapper column-selection-buttons">
-    	    <div class="toggletip" data-manager="Toggletip">
-    		<button type="button"><span>i</span></button>
-    		<div class="toggletip-info box-shadow">
-    		    To construct a list of column names that you can easily copy-paste
-    		    (in the box), select some columns using the checkboxes next
-    		    to the column names or the "Select all" button.
-    		</div>
-    	    </div>
-    	    <button type="button" data-test="select-all-columns" data-manager="SelectAllVisibleColumns">Select all</button>
-    	    <button type="button" data-test="deselect-all-columns" data-manager="DeselectAllColumns">Deselect all</button>
-    	</div>
-        </div>
-    
-        <div class="horizontal-scroll padding-b-s">
-    	<div class="column-summary-group">
-	    
-	    
-	    
-
-    <div class="card column-summary" id="col_0"
-        data-name-repr="&#39;min_samples_leaf&#39;"
-        data-column-name="min_samples_leaf"
-        data-column-idx="0"
-     
-     
-        data-manager="FilterableColumn "
-    
-    
-        data-role="selectable-column" >
-        <div class="card-header">
-            <h3>
-            
-                <input data-role="select-column-checkbox"
-                    data-manager="SelectColumnCheckBox" type="checkbox">
-            
-                <span class="select-all wrap-long-name">min_samples_leaf</span>
-            </h3>
-            <span>Float64DType</span></div>
-        <div class="column-summary-content wrapper">
-            <div>
-                <dl>
-                    <dt>Null values</dt>
-                   <dd class="warning">5 (50.0%)</dd>
-                
-                
-                    <dt>Unique values</dt>
-                    <dd>
-                        4 (40.0%)
-                    
-                    </dd>
-                
-
-                
-                
-                
-
-                
-                    <dt>Mean ± Std</dt>
-                    <dd>3.20 ±
-                        2.39
-                    
-                    </dd>
-                
-                
-                    <dt>Median ± IQR</dt>
-                    <dd>2.00 ±
-                        2.00
-                    
-                    </dd>
-
-                    <dt>Min | Max</dt>
-                    <dd>
-                        <span class="min-value">1.00</span> |
-                        <span class="max-value">7.00</span>
-                    
-                    </dd>
-                
-                
-
-                
-                </dl>
-            </div>
-
-        
-
-        
-            <div>
-                <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                    <?xml version="1.0" encoding="utf-8" standalone="no"?>
-    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-      "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.31em" height="8.65em" viewBox="0 0 171.7625 103.770257" xmlns="http://www.w3.org/2000/svg" version="1.1">
-     <metadata>
-      <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-       <cc:Work>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-07-19T13:31:49.927028</dc:date>
-        <dc:format>image/svg+xml</dc:format>
-        <dc:creator>
-         <cc:Agent>
-          <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-         </cc:Agent>
-        </dc:creator>
-       </cc:Work>
-      </rdf:RDF>
-     </metadata>
-     <defs>
-      <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
-     </defs>
-     <g id="figure_1">
-      <g id="axes_1">
-       <g id="patch_1">
-        <path d="M 20.5625 79.570257 
-    L 164.5625 79.570257 
-    L 164.5625 7.570257 
-    L 20.5625 7.570257 
-    L 20.5625 79.570257 
-    z
-    " style="fill: none"/>
-       </g>
-       <g id="patch_2">
-        <path d="M 27.107955 79.570257 
-    L 40.198864 79.570257 
-    L 40.198864 45.284542 
-    L 27.107955 45.284542 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_3">
-        <path d="M 40.198864 79.570257 
-    L 53.289774 79.570257 
-    L 53.289774 10.998828 
-    L 40.198864 10.998828 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_4">
-        <path d="M 53.289774 79.570257 
-    L 66.380686 79.570257 
-    L 66.380686 79.570257 
-    L 53.289774 79.570257 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_5">
-        <path d="M 66.380686 79.570257 
-    L 79.471593 79.570257 
-    L 79.471593 79.570257 
-    L 66.380686 79.570257 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_6">
-        <path d="M 79.471593 79.570257 
-    L 92.5625 79.570257 
-    L 92.5625 79.570257 
-    L 79.471593 79.570257 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_7">
-        <path d="M 92.5625 79.570257 
-    L 105.653417 79.570257 
-    L 105.653417 45.284542 
-    L 92.5625 45.284542 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_8">
-        <path d="M 105.653417 79.570257 
-    L 118.744324 79.570257 
-    L 118.744324 79.570257 
-    L 105.653417 79.570257 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_9">
-        <path d="M 118.744324 79.570257 
-    L 131.835231 79.570257 
-    L 131.835231 79.570257 
-    L 118.744324 79.570257 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_10">
-        <path d="M 131.835231 79.570257 
-    L 144.926138 79.570257 
-    L 144.926138 79.570257 
-    L 131.835231 79.570257 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_11">
-        <path d="M 144.926138 79.570257 
-    L 158.017045 79.570257 
-    L 158.017045 45.284542 
-    L 144.926138 45.284542 
-    z
-    " clip-path="url(#pef1eb33588)" style="fill: #1f77b4"/>
-       </g>
-       <g id="matplotlib.axis_1">
-        <g id="xtick_1">
-         <g id="line2d_1">
-          <defs>
-           <path id="m201ba838e0" d="M 0 0 
-    L 0 3.5 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#m201ba838e0" x="48.926136" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_1">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="48.926136" y="94.167913" transform="rotate(-0 48.926136 94.167913)">2</text>
-         </g>
-        </g>
-        <g id="xtick_2">
-         <g id="line2d_2">
-          <g>
-           <use xlink:href="#m201ba838e0" x="92.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_2">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="92.5625" y="94.167913" transform="rotate(-0 92.5625 94.167913)">4</text>
-         </g>
-        </g>
-        <g id="xtick_3">
-         <g id="line2d_3">
-          <g>
-           <use xlink:href="#m201ba838e0" x="136.198864" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_3">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="136.198864" y="94.167913" transform="rotate(-0 136.198864 94.167913)">6</text>
-         </g>
-        </g>
-       </g>
-       <g id="matplotlib.axis_2">
-        <g id="ytick_1">
-         <g id="line2d_4">
-          <defs>
-           <path id="ma391580442" d="M 0 0 
-    L -3.5 0 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#ma391580442" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_4">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="83.369085" transform="rotate(-0 13.5625 83.369085)">0</text>
-         </g>
-        </g>
-        <g id="ytick_2">
-         <g id="line2d_5">
-          <g>
-           <use xlink:href="#ma391580442" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_5">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="49.083371" transform="rotate(-0 13.5625 49.083371)">1</text>
-         </g>
-        </g>
-        <g id="ytick_3">
-         <g id="line2d_6">
-          <g>
-           <use xlink:href="#ma391580442" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_6">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="14.797656" transform="rotate(-0 13.5625 14.797656)">2</text>
-         </g>
-        </g>
-       </g>
-       <g id="patch_12">
-        <path d="M 20.5625 79.570257 
-    L 20.5625 7.570257 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-       <g id="patch_13">
-        <path d="M 20.5625 79.570257 
-    L 164.5625 79.570257 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-      </g>
-     </g>
-     <defs>
-      <clipPath id="pef1eb33588">
-       <rect x="20.5625" y="7.570257" width="144" height="72"/>
-      </clipPath>
-     </defs>
-    </svg>
-
-                </div>
-            
-            </div>
-        
-        </div>
-    </div>
-	    
-	    
-	    
-
-    <div class="card column-summary" id="col_1"
-        data-name-repr="&#39;α&#39;"
-        data-column-name="α"
-        data-column-idx="1"
-     
-     
-        data-manager="FilterableColumn "
-    
-    
-        data-role="selectable-column" >
-        <div class="card-header">
-            <h3>
-            
-                <input data-role="select-column-checkbox"
-                    data-manager="SelectColumnCheckBox" type="checkbox">
-            
-                <span class="select-all wrap-long-name">α</span>
-            </h3>
-            <span>Float64DType</span></div>
-        <div class="column-summary-content wrapper">
-            <div>
-                <dl>
-                    <dt>Null values</dt>
-                   <dd class="warning">5 (50.0%)</dd>
-                
-                
-                    <dt>Unique values</dt>
-                    <dd>
-                        5 (50.0%)
-                    
-                    </dd>
-                
-
-                
-                
-                
-
-                
-                    <dt>Mean ± Std</dt>
-                    <dd>0.159 ±
-                        0.181
-                    
-                    </dd>
-                
-                
-                    <dt>Median ± IQR</dt>
-                    <dd>0.0874 ±
-                        0.125
-                    
-                    </dd>
-
-                    <dt>Min | Max</dt>
-                    <dd>
-                        <span class="min-value">0.0127</span> |
-                        <span class="max-value">0.464</span>
-                    
-                    </dd>
-                
-                
-
-                
-                </dl>
-            </div>
-
-        
-
-        
-            <div>
-                <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                    <?xml version="1.0" encoding="utf-8" standalone="no"?>
-    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-      "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.31em" height="8.65em" viewBox="0 0 171.7625 103.770257" xmlns="http://www.w3.org/2000/svg" version="1.1">
-     <metadata>
-      <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-       <cc:Work>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-07-19T13:31:50.035451</dc:date>
-        <dc:format>image/svg+xml</dc:format>
-        <dc:creator>
-         <cc:Agent>
-          <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-         </cc:Agent>
-        </dc:creator>
-       </cc:Work>
-      </rdf:RDF>
-     </metadata>
-     <defs>
-      <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
-     </defs>
-     <g id="figure_1">
-      <g id="axes_1">
-       <g id="patch_1">
-        <path d="M 20.5625 79.570257 
-    L 164.5625 79.570257 
-    L 164.5625 7.570257 
-    L 20.5625 7.570257 
-    L 20.5625 79.570257 
-    z
-    " style="fill: none"/>
-       </g>
-       <g id="patch_2">
-        <path d="M 27.107955 79.570257 
-    L 40.198864 79.570257 
-    L 40.198864 10.998828 
-    L 27.107955 10.998828 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_3">
-        <path d="M 40.198864 79.570257 
-    L 53.289772 79.570257 
-    L 53.289772 45.284542 
-    L 40.198864 45.284542 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_4">
-        <path d="M 53.289772 79.570257 
-    L 66.380683 79.570257 
-    L 66.380683 79.570257 
-    L 53.289772 79.570257 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_5">
-        <path d="M 66.380683 79.570257 
-    L 79.47159 79.570257 
-    L 79.47159 45.284542 
-    L 66.380683 45.284542 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_6">
-        <path d="M 79.47159 79.570257 
-    L 92.562497 79.570257 
-    L 92.562497 79.570257 
-    L 79.47159 79.570257 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_7">
-        <path d="M 92.562497 79.570257 
-    L 105.653417 79.570257 
-    L 105.653417 79.570257 
-    L 92.562497 79.570257 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_8">
-        <path d="M 105.653417 79.570257 
-    L 118.744324 79.570257 
-    L 118.744324 79.570257 
-    L 105.653417 79.570257 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_9">
-        <path d="M 118.744324 79.570257 
-    L 131.835231 79.570257 
-    L 131.835231 79.570257 
-    L 118.744324 79.570257 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_10">
-        <path d="M 131.835231 79.570257 
-    L 144.926138 79.570257 
-    L 144.926138 79.570257 
-    L 131.835231 79.570257 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_11">
-        <path d="M 144.926138 79.570257 
-    L 158.017045 79.570257 
-    L 158.017045 45.284542 
-    L 144.926138 45.284542 
-    z
-    " clip-path="url(#p2c5442f3c8)" style="fill: #1f77b4"/>
-       </g>
-       <g id="matplotlib.axis_1">
-        <g id="xtick_1">
-         <g id="line2d_1">
-          <defs>
-           <path id="m98afa79fa3" d="M 0 0 
-    L 0 3.5 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#m98afa79fa3" x="23.424924" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_1">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="23.424924" y="94.167913" transform="rotate(-0 23.424924 94.167913)">0.0</text>
-         </g>
-        </g>
-        <g id="xtick_2">
-         <g id="line2d_2">
-          <g>
-           <use xlink:href="#m98afa79fa3" x="81.381709" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_2">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="81.381709" y="94.167913" transform="rotate(-0 81.381709 94.167913)">0.2</text>
-         </g>
-        </g>
-        <g id="xtick_3">
-         <g id="line2d_3">
-          <g>
-           <use xlink:href="#m98afa79fa3" x="139.338493" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_3">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="139.338493" y="94.167913" transform="rotate(-0 139.338493 94.167913)">0.4</text>
-         </g>
-        </g>
-       </g>
-       <g id="matplotlib.axis_2">
-        <g id="ytick_1">
-         <g id="line2d_4">
-          <defs>
-           <path id="m20d3f82eb7" d="M 0 0 
-    L -3.5 0 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#m20d3f82eb7" x="20.5625" y="79.570257" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_4">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="83.369085" transform="rotate(-0 13.5625 83.369085)">0</text>
-         </g>
-        </g>
-        <g id="ytick_2">
-         <g id="line2d_5">
-          <g>
-           <use xlink:href="#m20d3f82eb7" x="20.5625" y="45.284542" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_5">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="49.083371" transform="rotate(-0 13.5625 49.083371)">1</text>
-         </g>
-        </g>
-        <g id="ytick_3">
-         <g id="line2d_6">
-          <g>
-           <use xlink:href="#m20d3f82eb7" x="20.5625" y="10.998828" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_6">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="14.797656" transform="rotate(-0 13.5625 14.797656)">2</text>
-         </g>
-        </g>
-       </g>
-       <g id="patch_12">
-        <path d="M 20.5625 79.570257 
-    L 20.5625 7.570257 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-       <g id="patch_13">
-        <path d="M 20.5625 79.570257 
-    L 164.5625 79.570257 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-      </g>
-     </g>
-     <defs>
-      <clipPath id="p2c5442f3c8">
-       <rect x="20.5625" y="7.570257" width="144" height="72"/>
-      </clipPath>
-     </defs>
-    </svg>
-
-                </div>
-            
-            </div>
-        
-        </div>
-    </div>
-	    
-	    
-	    
-
-    <div class="card column-summary" id="col_2"
-        data-name-repr="&#39;regressor&#39;"
-        data-column-name="regressor"
-        data-column-idx="2"
-     
-     
-        data-manager="FilterableColumn "
-    
-    
-        data-role="selectable-column" >
-        <div class="card-header">
-            <h3>
-            
-                <input data-role="select-column-checkbox"
-                    data-manager="SelectColumnCheckBox" type="checkbox">
-            
-                <span class="select-all wrap-long-name">regressor</span>
-            </h3>
-            <span>StringDtype</span></div>
-        <div class="column-summary-content wrapper">
-            <div>
-                <dl>
-                    <dt>Null values</dt>
-                   <dd class="ok">0 (0.0%)</dd>
-                
-                
-                    <dt>Unique values</dt>
-                    <dd>
-                        2 (20.0%)
-                    
-                    </dd>
-                
-
-                
-                
-                
-
-                
-                
-                
-
-                
-                </dl>
-            </div>
-
-        
-
-        
-            <div>
-                <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                    <?xml version="1.0" encoding="utf-8" standalone="no"?>
-    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-      "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="16.26em" height="5.02em" viewBox="0 0 195.087188 60.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
-     <metadata>
-      <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-       <cc:Work>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-07-19T13:31:50.123010</dc:date>
-        <dc:format>image/svg+xml</dc:format>
-        <dc:creator>
-         <cc:Agent>
-          <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-         </cc:Agent>
-        </dc:creator>
-       </cc:Work>
-      </rdf:RDF>
-     </metadata>
-     <defs>
-      <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
-     </defs>
-     <g id="figure_1">
-      <g id="axes_1">
-       <g id="patch_1">
-        <path d="M 65.373437 36 
-    L 158.973438 36 
-    L 158.973438 7.2 
-    L 65.373437 7.2 
-    L 65.373437 36 
-    z
-    " style="fill: none"/>
-       </g>
-       <g id="patch_2">
-        <path d="M 65.373437 34.690909 
-    L 154.516295 34.690909 
-    L 154.516295 23.054545 
-    L 65.373437 23.054545 
-    z
-    " clip-path="url(#paa5b195abc)" style="fill: #ee854a"/>
-       </g>
-       <g id="patch_3">
-        <path d="M 65.373437 20.145455 
-    L 154.516295 20.145455 
-    L 154.516295 8.509091 
-    L 65.373437 8.509091 
-    z
-    " clip-path="url(#paa5b195abc)" style="fill: #ee854a"/>
-       </g>
-       <g id="matplotlib.axis_1">
-        <g id="xtick_1">
-         <g id="line2d_1">
-          <defs>
-           <path id="mee2c5d1479" d="M 0 0 
-    L 0 3.5 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#mee2c5d1479" x="65.373437" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_1">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="65.373437" y="50.597656" transform="rotate(-0 65.373437 50.597656)">0</text>
-         </g>
-        </g>
-        <g id="xtick_2">
-         <g id="line2d_2">
-          <g>
-           <use xlink:href="#mee2c5d1479" x="101.03058" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_2">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="101.03058" y="50.597656" transform="rotate(-0 101.03058 50.597656)">2</text>
-         </g>
-        </g>
-        <g id="xtick_3">
-         <g id="line2d_3">
-          <g>
-           <use xlink:href="#mee2c5d1479" x="136.687723" y="36" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_3">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="136.687723" y="50.597656" transform="rotate(-0 136.687723 50.597656)">4</text>
-         </g>
-        </g>
-       </g>
-       <g id="matplotlib.axis_2">
-        <g id="ytick_1">
-         <g id="line2d_4">
-          <defs>
-           <path id="mcf4f055cea" d="M 0 0 
-    L -3.5 0 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#mcf4f055cea" x="65.373437" y="28.872727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_4">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="58.373437" y="32.671946" transform="rotate(-0 58.373437 32.671946)">ridge</text>
-         </g>
-        </g>
-        <g id="ytick_2">
-         <g id="line2d_5">
-          <g>
-           <use xlink:href="#mcf4f055cea" x="65.373437" y="14.327273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_5">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="58.373437" y="18.126101" transform="rotate(-0 58.373437 18.126101)">extra_tree</text>
-         </g>
-        </g>
-       </g>
-       <g id="patch_4">
-        <path d="M 65.373437 36 
-    L 65.373437 7.2 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-       <g id="patch_5">
-        <path d="M 65.373437 36 
-    L 158.973438 36 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-      </g>
-      <g id="axes_2">
-       <g id="matplotlib.axis_3">
-        <g id="ytick_3">
-         <g id="line2d_6"/>
-         <g id="text_6">
-          <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="162.473438" y="31.91179" transform="rotate(-0 162.473438 31.91179)">50.0%</text>
-         </g>
-        </g>
-        <g id="ytick_4">
-         <g id="line2d_7"/>
-         <g id="text_7">
-          <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="162.473438" y="17.366335" transform="rotate(-0 162.473438 17.366335)">50.0%</text>
-         </g>
-        </g>
-       </g>
-       <g id="patch_6">
-        <path d="M 65.373437 36 
-    L 65.373437 7.2 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-       <g id="patch_7">
-        <path d="M 65.373437 36 
-    L 158.973438 36 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-      </g>
-     </g>
-     <defs>
-      <clipPath id="paa5b195abc">
-       <rect x="65.373437" y="7.2" width="93.6" height="28.8"/>
-      </clipPath>
-     </defs>
-    </svg>
-
-                </div>
-            
-                <details data-test="frequent-values-details">
-                    <summary>Most frequent values</summary>
-                    <div class="shrink">
-                        <div class="copybutton-grid">
-                        
-                        
-                            <div class="box" data-test="frequent-value-0">
-                                <pre id="col_2-freq-value-0"
-                                    data-copy-text="&#39;extra_tree&#39;">extra_tree</pre>
-                            
-    <button
-        class="copybutton copybutton-left"
-        data-manager="CopyButton"
-        type="button"
-        data-target-id="col_2-freq-value-0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-    </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-    </svg>
-        <div class="copied-message">Copied!</div>
-    </button>
-
-                            </div>
-
-                        
-                        
-                            <div class="box" data-test="frequent-value-1">
-                                <pre id="col_2-freq-value-1"
-                                    data-copy-text="&#39;ridge&#39;">ridge</pre>
-                            
-    <button
-        class="copybutton copybutton-left"
-        data-manager="CopyButton"
-        type="button"
-        data-target-id="col_2-freq-value-1">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-    </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-    </svg>
-        <div class="copied-message">Copied!</div>
-    </button>
-
-                            </div>
-
-                        
-                            <span class="grid-separator">List:</span>
-                        
-                            <div class="box">
-                                <pre id="col_2-freq-value-list"
-                                    data-copy-text="[&#39;extra_tree&#39;, &#39;ridge&#39;]">[&#39;extra_tree&#39;, &#39;ridge&#39;]</pre>
-                            
-    <button
-        class="copybutton copybutton-left"
-        data-manager="CopyButton"
-        type="button"
-        data-target-id="col_2-freq-value-list">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-    </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-    </svg>
-        <div class="copied-message">Copied!</div>
-    </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </details>
-            
-            </div>
-        
-        </div>
-    </div>
-	    
-	    
-	    
-
-    <div class="card column-summary" id="col_3"
-        data-name-repr="&#39;mean_test_score&#39;"
-        data-column-name="mean_test_score"
-        data-column-idx="3"
-     
-     
-        data-manager="FilterableColumn "
-    
-    
-        data-role="selectable-column" >
-        <div class="card-header">
-            <h3>
-            
-                <input data-role="select-column-checkbox"
-                    data-manager="SelectColumnCheckBox" type="checkbox">
-            
-                <span class="select-all wrap-long-name">mean_test_score</span>
-            </h3>
-            <span>Float64DType</span></div>
-        <div class="column-summary-content wrapper">
-            <div>
-                <dl>
-                    <dt>Null values</dt>
-                   <dd class="ok">0 (0.0%)</dd>
-                
-                
-                    <dt>Unique values</dt>
-                    <dd>
-                        10 (100.0%)
-                    
-                    </dd>
-                
-
-                
-                
-                
-
-                
-                    <dt>Mean ± Std</dt>
-                    <dd>0.691 ±
-                        0.0963
-                    
-                    </dd>
-                
-                
-                    <dt>Median ± IQR</dt>
-                    <dd>0.600 ±
-                        0.190
-                    
-                    </dd>
-
-                    <dt>Min | Max</dt>
-                    <dd>
-                        <span class="min-value">0.600</span> |
-                        <span class="max-value">0.793</span>
-                    
-                    </dd>
-                
-                
-
-                
-                </dl>
-            </div>
-
-        
-
-        
-            <div>
-                <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                    <?xml version="1.0" encoding="utf-8" standalone="no"?>
-    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-      "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.82em" height="8.62em" viewBox="0 0 177.818601 103.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
-     <metadata>
-      <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-       <cc:Work>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-        <dc:date>2026-07-19T13:31:50.214643</dc:date>
-        <dc:format>image/svg+xml</dc:format>
-        <dc:creator>
-         <cc:Agent>
-          <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-         </cc:Agent>
-        </dc:creator>
-       </cc:Work>
-      </rdf:RDF>
-     </metadata>
-     <defs>
-      <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
-     </defs>
-     <g id="figure_1">
-      <g id="axes_1">
-       <g id="patch_1">
-        <path d="M 20.5625 79.2 
-    L 164.5625 79.2 
-    L 164.5625 7.2 
-    L 20.5625 7.2 
-    L 20.5625 79.2 
-    z
-    " style="fill: none"/>
-       </g>
-       <g id="patch_2">
-        <path d="M 27.107955 79.2 
-    L 40.198864 79.2 
-    L 40.198864 10.628571 
-    L 27.107955 10.628571 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_3">
-        <path d="M 40.198864 79.2 
-    L 53.289773 79.2 
-    L 53.289773 79.2 
-    L 40.198864 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_4">
-        <path d="M 53.289773 79.2 
-    L 66.380682 79.2 
-    L 66.380682 79.2 
-    L 53.289773 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_5">
-        <path d="M 66.380682 79.2 
-    L 79.471591 79.2 
-    L 79.471591 79.2 
-    L 66.380682 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_6">
-        <path d="M 79.471591 79.2 
-    L 92.5625 79.2 
-    L 92.5625 79.2 
-    L 79.471591 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_7">
-        <path d="M 92.5625 79.2 
-    L 105.653409 79.2 
-    L 105.653409 79.2 
-    L 92.5625 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_8">
-        <path d="M 105.653409 79.2 
-    L 118.744318 79.2 
-    L 118.744318 79.2 
-    L 105.653409 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_9">
-        <path d="M 118.744318 79.2 
-    L 131.835227 79.2 
-    L 131.835227 79.2 
-    L 118.744318 79.2 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_10">
-        <path d="M 131.835227 79.2 
-    L 144.926136 79.2 
-    L 144.926136 65.485714 
-    L 131.835227 65.485714 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="patch_11">
-        <path d="M 144.926136 79.2 
-    L 158.017045 79.2 
-    L 158.017045 24.342857 
-    L 144.926136 24.342857 
-    z
-    " clip-path="url(#p0509a4c924)" style="fill: #1f77b4"/>
-       </g>
-       <g id="matplotlib.axis_1">
-        <g id="xtick_1">
-         <g id="line2d_1">
-          <defs>
-           <path id="m5673962ec6" d="M 0 0 
-    L 0 3.5 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#m5673962ec6" x="27.178884" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_1">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="27.178884" y="93.797656" transform="rotate(-0 27.178884 93.797656)">0.6</text>
-         </g>
-        </g>
-        <g id="xtick_2">
-         <g id="line2d_2">
-          <g>
-           <use xlink:href="#m5673962ec6" x="94.922961" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_2">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="94.922961" y="93.797656" transform="rotate(-0 94.922961 93.797656)">0.7</text>
-         </g>
-        </g>
-        <g id="xtick_3">
-         <g id="line2d_3">
-          <g>
-           <use xlink:href="#m5673962ec6" x="162.667039" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_3">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="162.667039" y="93.797656" transform="rotate(-0 162.667039 93.797656)">0.8</text>
-         </g>
-        </g>
-       </g>
-       <g id="matplotlib.axis_2">
-        <g id="ytick_1">
-         <g id="line2d_4">
-          <defs>
-           <path id="mbdfd2226a4" d="M 0 0 
-    L -3.5 0 
-    " style="stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </defs>
-          <g>
-           <use xlink:href="#mbdfd2226a4" x="20.5625" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_4">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="82.998828" transform="rotate(-0 13.5625 82.998828)">0</text>
-         </g>
-        </g>
-        <g id="ytick_2">
-         <g id="line2d_5">
-          <g>
-           <use xlink:href="#mbdfd2226a4" x="20.5625" y="51.771429" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_5">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="55.570257" transform="rotate(-0 13.5625 55.570257)">2</text>
-         </g>
-        </g>
-        <g id="ytick_3">
-         <g id="line2d_6">
-          <g>
-           <use xlink:href="#mbdfd2226a4" x="20.5625" y="24.342857" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 0.8"/>
-          </g>
-         </g>
-         <g id="text_6">
-          <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="13.5625" y="28.141685" transform="rotate(-0 13.5625 28.141685)">4</text>
-         </g>
-        </g>
-       </g>
-       <g id="patch_12">
-        <path d="M 20.5625 79.2 
-    L 20.5625 7.2 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-       <g id="patch_13">
-        <path d="M 20.5625 79.2 
-    L 164.5625 79.2 
-    " style="fill: none; stroke: var(--color-text-primary); stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-       </g>
-      </g>
-     </g>
-     <defs>
-      <clipPath id="p0509a4c924">
-       <rect x="20.5625" y="7.2" width="144" height="72"/>
-      </clipPath>
-     </defs>
-    </svg>
-
-                </div>
-            
-            </div>
-        
-        </div>
-    </div>
-	    
-    	</div>
-        </div>
-    
-    </article>
-
-    <div data-hidden
-         data-hide-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
-         data-show-on="EMPTY_COLUMN_FILTER_SELECTED"
-         class="text wrapper">
-    <p>
-    No columns match the selected filter: <strong data-manager="ColumnFilterName"></strong>. You can change the column filter in the dropdown menu above.
-    </p>
-    <p>
-        <button type="button"
-                data-manager="ResetColumnFilter"
-                data-test="show-all-columns-button">Show all columns</button>
-    </p>
-    </div>
-    </div>
-    <div class="tab-panel" id="column-associations-panel" data-hidden
-        data-test="associations-panel">
-        <article class="margin-t-s flex-reverse flex-end wrapper gap-l">
-    
-
-        <div class="horizontal-scroll vertical-scroll-table-wrapper">
-        <table class="pure-table pure-table-bordered sticky-header-table">
-            <thead>
-                <tr>
-                    <th scope="col">Column 1</th>
-                    <th scope="col">Column 2</th>
-                    <th scope="col"><a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Cramér's V</a></th>
-                    <th scope="col"><a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson's Correlation</a></th>
-                </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td class="elided">regressor</td>
-                    <td class="elided">mean_test_score</td>
-                    <td
-                    
-                        class="critical">
-                        1.00
-                    </td>
-                    <td></td>
-                </tr>
-        
-                <tr>
-                    <td class="elided">α</td>
-                    <td class="elided">mean_test_score</td>
-                    <td
-                    
-                        class="critical">
-                        1.00
-                    </td>
-                    <td>1.00</td>
-                </tr>
-        
-                <tr>
-                    <td class="elided">α</td>
-                    <td class="elided">regressor</td>
-                    <td
-                    
-                        class="critical">
-                        1.00
-                    </td>
-                    <td></td>
-                </tr>
-        
-                <tr>
-                    <td class="elided">min_samples_leaf</td>
-                    <td class="elided">mean_test_score</td>
-                    <td
-                    
-                        class="critical">
-                        1.00
-                    </td>
-                    <td>-0.994</td>
-                </tr>
-        
-                <tr>
-                    <td class="elided">min_samples_leaf</td>
-                    <td class="elided">regressor</td>
-                    <td
-                    
-                        class="critical">
-                        1.00
-                    </td>
-                    <td></td>
-                </tr>
-        
-                <tr>
-                    <td class="elided">min_samples_leaf</td>
-                    <td class="elided">α</td>
-                    <td
-                        >
-                        0.500
-                    </td>
-                    <td></td>
-                </tr>
-        
-            </tbody>
-        </table>
-        </div>
-
-        <div class="text shrinkable-text">
-            The table below shows the strength of association between the most similar columns in the dataframe.
-            <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Cramér's V</a> statistic is a number between 0 and 1.
-            When it is close to 1 the columns are strongly associated — they contain similar information.
-            In this case, one of them may be redundant and for some models (such as linear models) it might be beneficial to remove it.
-        </div>
-
-    
-
-    </article>
-    </div>
-
 
 
     <div class="report-bottom-border"></div>
@@ -6340,7 +4145,7 @@ the User Guide for an example.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_f82c648f">
+        <skrub-table-report class="report" id="report_e8f3685f">
         </skrub-table-report>
 
         <script type="module">
@@ -7444,7 +5249,7 @@ the User Guide for an example.
         </script>
     </div>
 
-    <div id="report_f82c648f-wrapper-fallback">
+    <div id="report_e8f3685f-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -7455,8 +5260,8 @@ the User Guide for an example.
     </div>
 
     <script>
-     document.getElementById("report_f82c648f-wrapper").removeAttribute("hidden");
-     document.getElementById("report_f82c648f-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_e8f3685f-wrapper").removeAttribute("hidden");
+     document.getElementById("report_e8f3685f-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -7482,7 +5287,7 @@ still available.
 
     <div class="output_subarea output_html rendered_html output_result">
     <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="38119987-37f1-49d6-8675-9cfab236573a" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("38119987-37f1-49d6-8675-9cfab236573a")) {                    Plotly.newPlot(                        "38119987-37f1-49d6-8675-9cfab236573a",                        [{"dimensions":[{"label":"min_samples_leaf","ticktext":["NaN","1","2","3","4","5","6","7"],"tickvals":[-0.19459101490553132,0.0,0.6931471805599453,1.0986122886681098,1.3862943611198906,1.6094379124341003,1.791759469228055,1.9459101490553132],"values":{"dtype":"f8","bdata":"KCja5uZsgj\u002fF\u002fI9zAt3lPwbRF8r2SOY\u002fAE5Wr5Aw9j9XWjKuciL\u002fP6yujr5b6Mi\u002fV0efKLOlyL+sro6+W+jIv6yujr5b6Mi\u002frK6OvlvoyL8="}},{"label":"\u03b1","ticktext":["NaN","0.013","0.019","0.028","0.042","0.063","0.094","0.140","0.209","0.311","0.464"],"tickvals":[-4.725250883542699,-4.365399591784898,-3.965564823165118,-3.5657300545453388,-3.1658952859255596,-2.76606051730578,-2.3662257486860003,-1.9663909800662212,-1.566556211446442,-1.1667214428266623,-0.7668866742068832],"values":{"dtype":"f8","bdata":"ENjoKqjmEsAQ2OgqqOYSwBDY6Cqo5hLArHImF3TUEsCO79wd5NUSwNydLuxViui\u002fov6bn4LA+7\u002fbMR\u002fkWpkDwIvp8\u002fBVbQfAJy9n0R9uEcA="}},{"label":"regressor","ticktext":["extra_tree","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAACiwpu1T+1kPxSJpaQa+Vg\u002fAAAAAAAAAADAWKegIysdPwAAAAAAAPA\u002fAAAAAAAA8D+osESohf\u002fvPwAAAAAAAPA\u002fAAAAAAAA8D8="}},{"label":"score time","ticktext":["0.02","0.04","0.05","0.06","0.07","0.08","0.09","0.10","0.12","0.13"],"tickvals":[0.023585081100463867,0.03511374526553684,0.04664240943060981,0.05817107359568278,0.06969973776075575,0.08122840192582872,0.09275706609090169,0.10428573025597465,0.11581439442104763,0.1273430585861206],"values":{"dtype":"f8","bdata":"AAAAAMdMwD9Vx+JUyNi6P3eIclDymLg\u002fP8W\u002fG3lTtT8C7xdJaQ6yP0X9sr1+fqA\u002fAAAAALAmmD\u002f9neL0XOudP7Le7mcW0pg\u002f+rW0zMwNmT8="}},{"label":"fit time","ticktext":["0.0","0.3","0.5","0.8","1.0","1.3","1.5","1.8","2.0","2.3"],"tickvals":[0.02341538667678833,0.2748573554886712,0.526299324300554,0.7777412931124369,1.0291832619243197,1.2806252307362027,1.5320671995480855,1.7835091683599682,2.034951137171851,2.286393105983734],"values":{"dtype":"f8","bdata":"AAAAeIhKAkB\u002fFtyW4pr8P9wS2ufvNPs\u002f9bv2202c9T9jIlec+1DyPzwxwZnPiJk\u002fWTyL7DJImT\u002fqvppNft6hPwAAAAA0+pc\u002f00c7jY+7oD8="}},{"label":"score","ticktext":["0.60","0.62","0.64","0.66","0.69","0.71","0.73","0.75","0.77","0.79"],"tickvals":[0.5998953213503151,0.6213664997756132,0.6428376782009113,0.6643088566262093,0.6857800350515074,0.7072512134768055,0.7287223919021036,0.7501935703274016,0.7716647487526997,0.7931359271779979],"values":{"dtype":"f8","bdata":"cGOQmF5h6T\u002fEPVA7kVLpPxgJHGr3Quk\u002fbWIiAqDU6D9Oci\u002fX10joPwqWGMheMuM\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\u002f7iJHrFcy4z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"cGOQmF5h6T\u002fEPVA7kVLpPxgJHGr3Quk\u002fbWIiAqDU6D9Oci\u002fX10joPwqWGMheMuM\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\u002f7iJHrFcy4z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="56d5feba-74c5-4b24-8505-8925a23acc53" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("56d5feba-74c5-4b24-8505-8925a23acc53")) {                    Plotly.newPlot(                        "56d5feba-74c5-4b24-8505-8925a23acc53",                        [{"dimensions":[{"label":"min_samples_leaf","ticktext":["NaN","1","2","3","4","5","6","7"],"tickvals":[-0.19459101490553132,0.0,0.6931471805599453,1.0986122886681098,1.3862943611198906,1.6094379124341003,1.791759469228055,1.9459101490553132],"values":{"dtype":"f8","bdata":"TQkH\u002ffI3er+B24hM5HfmP1VvBDuPDeY\u002ftwXe+AUf9j9XWjKuciL\u002fP6yujr5b6Mi\u002frK6OvlvoyL9Yw1FlnivIv6yujr5b6Mi\u002f8x8p1kIeyL8="}},{"label":"\u03b1","ticktext":["NaN","0.013","0.019","0.028","0.042","0.063","0.094","0.140","0.209","0.311","0.464"],"tickvals":[-4.725250883542699,-4.365399591784898,-3.965564823165118,-3.5657300545453388,-3.1658952859255596,-2.76606051730578,-2.3662257486860003,-1.9663909800662212,-1.566556211446442,-1.1667214428266623,-0.7668866742068832],"values":{"dtype":"f8","bdata":"ENjoKqjmEsBVPveKYdkSwEM4gZj55BLAsS4x3fPgEsAQ2OgqqOYSwNydLuxViui\u002fnyDDgxpd+7+ivX1u9KQDwLoZUXPbmgfAnNW1tv1iEcA="}},{"label":"regressor","ticktext":["extra_tree","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAAGPgP13BxmPwAAAAAAAAAAOM6q0qojXz8mvBW\u002fJEVlPwAAAAAAAPA\u002fAAAAAAAA8D\u002fCbnZQVtzvPwAAAAAAAPA\u002fAAAAAAAA8D8="}},{"label":"score time","ticktext":["0.015","0.024","0.033","0.043","0.052","0.062","0.071","0.081","0.090","0.100"],"tickvals":[0.014604508876800537,0.024045454131232366,0.033486399385664195,0.04292734464009603,0.05236828989452786,0.06180923514895969,0.07125018040339152,0.08069112565782335,0.09013207091225518,0.09957301616668701],"values":{"dtype":"f8","bdata":"AAAAAJ59uT\u002fCkl+9gpC0P45NxsSSObM\u002fo5nwyhfRrj9WBfvjIzSrP+loLgLn044\u002f5xf1qqhdlD8AAAAA+OiNP4FkwGW4LY4\u002f+W\u002fXJMObjj8="}},{"label":"fit time","ticktext":["0.0","0.2","0.5","0.7","0.9","1.1","1.3","1.6","1.8","2.0"],"tickvals":[0.014931678771972656,0.23669622341791788,0.4584607680638631,0.6802253127098083,0.9019898573557535,1.1237544020016987,1.345518946647644,1.5672834912935891,1.7890480359395344,2.0108125805854797],"values":{"dtype":"f8","bdata":"AAAA6CQWAEB5CtJurBb3P3KlQYx8hPc\u002f2MI\u002fIit08T\u002f\u002fZpqTeRntPwAAAACAlI4\u002fQnLhW1PzmT\u002fRxrg7NZSYP20GA65+YZQ\u002fAAAAAICUjj8="}},{"label":"score","ticktext":["0.60","0.62","0.64","0.66","0.69","0.71","0.73","0.75","0.77","0.79"],"tickvals":[0.5998953213503151,0.621528668211769,0.643162015073223,0.6647953619346769,0.6864287087961308,0.7080620556575848,0.7296954025190387,0.7513287493804928,0.7729620962419467,0.7945954431034006],"values":{"dtype":"f8","bdata":"YsA1bFNt6T+CemPAM0npPwRUzxH+Pek\u002fq8fmBJrM6D\u002fU212UUUvoPwqWGMheMuM\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\u002f7iJHrFcy4z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"YsA1bFNt6T+CemPAM0npPwRUzxH+Pek\u002fq8fmBJrM6D\u002fU212UUUvoPwqWGMheMuM\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\u002f7iJHrFcy4z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -7507,7 +5312,7 @@ hyperparameter search is available in the attribute ``study_``:
  .. code-block:: none
 
 
-    <optuna.study.study.Study object at 0x7f7893e8e0c0>
+    <optuna.study.study.Study object at 0x7efa0d1f6210>
 
 
 
@@ -7555,7 +5360,7 @@ This allows us to use Optuna's reporting capabilities provided in
 
     <div class="output_subarea output_html rendered_html output_result">
     <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="19d9e09d-bc81-41b3-a951-46a08de8d5f6" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("19d9e09d-bc81-41b3-a951-46a08de8d5f6")) {                    Plotly.newPlot(                        "19d9e09d-bc81-41b3-a951-46a08de8d5f6",                        [{"marker":{"color":[4,5,7,8,9],"colorbar":{"title":{"text":"Trial"},"x":1.0,"xpad":40},"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"line":{"color":"Grey","width":0.5}},"mode":"markers","name":"Feasible Trial","showlegend":false,"x":[2,1,7,4,2],"y":[0.7913290174928354,0.7931359271779979,0.7588919833029395,0.7759552041707828,0.7894246170474473],"type":"scatter"}],                        {"title":{"text":"Slice Plot"},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"title":{"text":"0:min_samples_leaf"},"type":"log"},"yaxis":{"title":{"text":"Objective Value"}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="d46a7cbf-dae3-4d03-8e49-5070a049bf23" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("d46a7cbf-dae3-4d03-8e49-5070a049bf23")) {                    Plotly.newPlot(                        "d46a7cbf-dae3-4d03-8e49-5070a049bf23",                        [{"marker":{"color":[4,5,7,8,9],"colorbar":{"title":{"text":"Trial"},"x":1.0,"xpad":40},"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"line":{"color":"Grey","width":0.5}},"mode":"markers","name":"Feasible Trial","showlegend":false,"x":[2,1,7,4,2],"y":[0.7888174388741622,0.7945954431034006,0.7591941736017085,0.774975785802089,0.7901858098592387],"type":"scatter"}],                        {"title":{"text":"Slice Plot"},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"title":{"text":"0:min_samples_leaf"},"type":"log"},"yaxis":{"title":{"text":"Objective Value"}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -7621,19 +5426,19 @@ more information.
 
  .. code-block:: none
 
-    [I 2026-07-19 13:31:54,836] A new study created in memory with name: no-name-638b3ac4-2d65-43e5-aefc-4290b934ab3b
-    [I 2026-07-19 13:31:55,297] Trial 0 finished with value: 0.5999388670885799 and parameters: {'2:regressor': '1:ridge', '1:α': 7.786410825767287}. Best is trial 0 with value: 0.5999388670885799.
-    [I 2026-07-19 13:32:03,875] Trial 1 finished with value: 0.7901294917437606 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 1 with value: 0.7901294917437606.
-    [I 2026-07-19 13:32:09,810] Trial 2 finished with value: 0.7690723876598411 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 5}. Best is trial 1 with value: 0.7901294917437606.
-    [I 2026-07-19 13:32:20,548] Trial 3 finished with value: 0.7931925130897293 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 3 with value: 0.7931925130897293.
-    [I 2026-07-19 13:32:26,996] Trial 4 finished with value: 0.7822644254872565 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 3}. Best is trial 3 with value: 0.7931925130897293.
-    [I 2026-07-19 13:32:32,335] Trial 5 finished with value: 0.7771007344796793 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 3 with value: 0.7931925130897293.
-    [I 2026-07-19 13:32:35,754] Trial 6 finished with value: 0.7243482679059139 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 18}. Best is trial 3 with value: 0.7931925130897293.
-    [I 2026-07-19 13:32:39,104] Trial 7 finished with value: 0.7258193397727047 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 17}. Best is trial 3 with value: 0.7931925130897293.
-    [I 2026-07-19 13:32:48,223] Trial 8 finished with value: 0.7937623698284726 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 8 with value: 0.7937623698284726.
-    [I 2026-07-19 13:32:53,753] Trial 9 finished with value: 0.7765263647678261 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 8 with value: 0.7937623698284726.
+    [I 2026-07-23 13:59:50,430] A new study created in memory with name: no-name-90a7e563-7ba1-45a5-b86c-f2bf46e9ca0f
+    [I 2026-07-23 13:59:50,734] Trial 0 finished with value: 0.5998953244869772 and parameters: {'2:regressor': '1:ridge', '1:α': 0.013120777211414683}. Best is trial 0 with value: 0.5998953244869772.
+    [I 2026-07-23 13:59:51,029] Trial 1 finished with value: 0.5998957996518721 and parameters: {'2:regressor': '1:ridge', '1:α': 0.07555506597062799}. Best is trial 1 with value: 0.5998957996518721.
+    [I 2026-07-23 13:59:54,362] Trial 2 finished with value: 0.7301595452946915 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 16}. Best is trial 2 with value: 0.7301595452946915.
+    [I 2026-07-23 13:59:59,602] Trial 3 finished with value: 0.7838086759098977 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 3}. Best is trial 3 with value: 0.7838086759098977.
+    [I 2026-07-23 14:00:04,032] Trial 4 finished with value: 0.76974581428233 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 5}. Best is trial 3 with value: 0.7838086759098977.
+    [I 2026-07-23 14:00:08,545] Trial 5 finished with value: 0.7471957783548706 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 10}. Best is trial 3 with value: 0.7838086759098977.
+    [I 2026-07-23 14:00:16,682] Trial 6 finished with value: 0.7895651858142161 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 6 with value: 0.7895651858142161.
+    [I 2026-07-23 14:00:19,982] Trial 7 finished with value: 0.7082618481808999 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 26}. Best is trial 6 with value: 0.7895651858142161.
+    [I 2026-07-23 14:00:20,293] Trial 8 finished with value: 0.5998989375698962 and parameters: {'2:regressor': '1:ridge', '1:α': 0.49519204185550614}. Best is trial 6 with value: 0.7895651858142161.
+    [I 2026-07-23 14:00:24,797] Trial 9 finished with value: 0.7641403550173128 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 6}. Best is trial 6 with value: 0.7895651858142161.
 
-    {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}
+    {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}
 
 
 
@@ -7656,7 +5461,7 @@ We can also use Optuna's visualization capabilities to inspect the study:
 
     <div class="output_subarea output_html rendered_html output_result">
     <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.6.0.min.js" integrity="sha256-QaOVwtVY0T02VaHrr6pnoHLCwayMJp4O5n4YyaE3rJk=" crossorigin="anonymous"></script>                <div id="7206c51b-3215-4c11-b467-d9dee5cbe43c" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("7206c51b-3215-4c11-b467-d9dee5cbe43c")) {                    Plotly.newPlot(                        "7206c51b-3215-4c11-b467-d9dee5cbe43c",                        [{"mode":"markers","name":"Objective Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.5999388670885799,0.7901294917437606,0.7690723876598411,0.7931925130897293,0.7822644254872565,0.7771007344796793,0.7243482679059139,0.7258193397727047,0.7937623698284726,0.7765263647678261],"type":"scatter"},{"mode":"lines","name":"Best Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.5999388670885799,0.7901294917437606,0.7901294917437606,0.7931925130897293,0.7931925130897293,0.7931925130897293,0.7931925130897293,0.7931925130897293,0.7937623698284726,0.7937623698284726],"type":"scatter"},{"marker":{"color":"#cccccc"},"mode":"markers","name":"Infeasible Trial","showlegend":false,"x":[],"y":[],"type":"scatter"}],                        {"title":{"text":"Optimization History Plot"},"xaxis":{"title":{"text":"Trial"}},"yaxis":{"title":{"text":"Objective Value"}},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="b799ad36-f159-422c-a3a1-1fb78070ec01" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("b799ad36-f159-422c-a3a1-1fb78070ec01")) {                    Plotly.newPlot(                        "b799ad36-f159-422c-a3a1-1fb78070ec01",                        [{"mode":"markers","name":"Objective Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.5998953244869772,0.5998957996518721,0.7301595452946915,0.7838086759098977,0.76974581428233,0.7471957783548706,0.7895651858142161,0.7082618481808999,0.5998989375698962,0.7641403550173128],"type":"scatter"},{"mode":"lines","name":"Best Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.5998953244869772,0.5998957996518721,0.7301595452946915,0.7838086759098977,0.7838086759098977,0.7838086759098977,0.7895651858142161,0.7895651858142161,0.7895651858142161,0.7895651858142161],"type":"scatter"},{"marker":{"color":"#cccccc"},"mode":"markers","name":"Infeasible Trial","showlegend":false,"x":[],"y":[],"type":"scatter"}],                        {"title":{"text":"Optimization History Plot"},"xaxis":{"title":{"text":"Trial"}},"yaxis":{"title":{"text":"Objective Value"}},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -7687,7 +5492,7 @@ dataset:
 
  .. code-block:: none
 
-    {'min_samples_leaf': 1, 'regressor': 'extra_tree'}
+    {'min_samples_leaf': 2, 'regressor': 'extra_tree'}
 
 
 
@@ -7695,9 +5500,9 @@ dataset:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 56.609 seconds)
+   **Total running time of the script:** (1 minutes 18.298 seconds)
 
-**Estimated memory usage:**  665 MB
+**Estimated memory usage:**  641 MB
 
 
 .. _sphx_glr_download_auto_examples_02_data_ops_1131_optuna_choices.py:

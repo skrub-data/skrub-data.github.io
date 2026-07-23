@@ -1,6 +1,6 @@
 # patch_display
 
-### skrub.patch_display(pandas=True, polars=True, verbose=1, plot_distributions='auto', compute_associations='auto')
+### skrub.patch_display(pandas=True, polars=True, verbose=1, plot_distributions=False, compute_associations=False)
 
 Replace the default DataFrame HTML displays with `skrub.TableReport`.
 
@@ -26,14 +26,14 @@ It can be undone with `skrub.unpatch_display()`.
   : Whether to plot distributions in [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport).
     - `True`: always generate plots, regardless of column count.
     - `False`: never generate plots.
-    - `"auto"` (default): generate plots only when the number of columns
+    - `"auto"`: generate plots only when the number of columns
     > does not exceed the configured `plots_threshold` (see [`set_config()`](skrub.set_confightml.md#skrub.set_config)).
 
   **compute_associations**
   : Whether to compute associations in [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport).
     - `True`: always compute associations, regardless of column count.
     - `False`: never compute associations.
-    - `"auto"` (default): compute associations only when the number of
+    - `"auto"`: compute associations only when the number of
     > columns does not exceed the configured `associations_threshold`
     > (see [`set_config()`](skrub.set_confightml.md#skrub.set_config)).
 

@@ -8,6 +8,10 @@
 
 ### Changes
 
+- [`patch_display()`](reference/generated/skrub.patch_displayhtml.md#skrub.patch_display) now uses a minimal, faster TableReport without plots or
+  column associations by default. The old behavior can still be achieved by calling
+  `patch_display(plot_distributions="auto", compute_associations="auto")`.
+  [#2103](https://github.com/skrub-data/skrub/pull/2103) by [Naa Ashiorkor Nortey](https://github.com/ashiorkornortey).
 - The error message when a key is missing from the environment passed to a
   [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) or [`SkrubLearner`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) has been improved.
   [#2211](https://github.com/skrub-data/skrub/pull/2211) by [Jérôme Dockès](https://github.com/jeromedockes).

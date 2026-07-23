@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: New Features: Changes: The error message when a key is missing from the environment passed to a DataOp or SkrubLearner has been improved.#2211 by Jérôme Dockès., When a cross-v..." />
+<meta property="og:description" content="Ongoing development: New Features: Changes: patch_display() now uses a minimal, faster TableReport without plots or column associations by default. The old behavior can still be achieved by calling..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: New Features: Changes: The error message when a key is missing from the environment passed to a DataOp or SkrubLearner has been improved.#2211 by Jérôme Dockès., When a cross-v..." />
+<meta name="description" content="Ongoing development: New Features: Changes: patch_display() now uses a minimal, faster TableReport without plots or column associations by default. The old behavior can still be achieved by calling..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -35,8 +35,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=90905a2f556bf617f1a9" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -50,10 +50,10 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=7821ceae" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="_static/scripts/fontawesome.js?digest=a95f357e85573c9b56d5"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=90905a2f556bf617f1a9"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9" />
 
     <script src="_static/documentation_options.js?v=b4d3f7eb"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
@@ -65,7 +65,7 @@
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'CHANGES';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.19.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.20.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.11.dev0';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -597,6 +597,10 @@
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul>
+<li><p><a class="reference internal" href="reference/generated/skrub.patch_display.html#skrub.patch_display" title="skrub.patch_display"><code class="xref py py-func docutils literal notranslate"><span class="pre">patch_display()</span></code></a> now uses a minimal, faster TableReport without plots or
+column associations by default. The old behavior can still be achieved by calling
+<code class="docutils literal notranslate"><span class="pre">patch_display(plot_distributions=&quot;auto&quot;,</span> <span class="pre">compute_associations=&quot;auto&quot;)</span></code>.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2103">#2103</a> by <a class="reference external" href="https://github.com/ashiorkornortey">Naa Ashiorkor Nortey</a>.</p></li>
 <li><p>The error message when a key is missing from the environment passed to a
 <a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> or <a class="reference internal" href="reference/generated/skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a> has been improved.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2211">#2211</a> by <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
@@ -2507,8 +2511,8 @@ stateless fitting with the ngram similarity.</p></li>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=90905a2f556bf617f1a9"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=90905a2f556bf617f1a9"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
