@@ -41,6 +41,9 @@
 
 ### Bugfixes
 
+- [`DropSimilar`](reference/generated/skrub.DropSimilarhtml.md#skrub.DropSimilar) now works with Polars dataframes when PyArrow is not
+  installed by avoiding the unused Pearson’s correlation computation.
+  [#2216](https://github.com/skrub-data/skrub/pull/2216) by [Shreyansh Goyal](https://github.com/ShreyanshGoyal).
 - The parallel coordinate plot created by `ParamSearch.show_results()` could
   have incorrect tick labels in some cases. This has been fixed in [#2215](https://github.com/skrub-data/skrub/pull/2215) by
   [Jérôme Dockès](https://github.com/jeromedockes).

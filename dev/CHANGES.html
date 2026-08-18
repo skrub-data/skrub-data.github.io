@@ -630,6 +630,9 @@ as the second step.</p>
 <section id="bugfixes">
 <h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">#</a></h3>
 <ul class="simple">
+<li><p><a class="reference internal" href="reference/generated/skrub.DropSimilar.html#skrub.DropSimilar" title="skrub.DropSimilar"><code class="xref py py-class docutils literal notranslate"><span class="pre">DropSimilar</span></code></a> now works with Polars dataframes when PyArrow is not
+installed by avoiding the unused Pearson’s correlation computation.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2216">#2216</a> by <a class="reference external" href="https://github.com/ShreyanshGoyal">Shreyansh Goyal</a>.</p></li>
 <li><p>The parallel coordinate plot created by <code class="xref py py-meth docutils literal notranslate"><span class="pre">ParamSearch.show_results()</span></code> could
 have incorrect tick labels in some cases. This has been fixed in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2215">#2215</a> by
 <a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>

@@ -783,16 +783,18 @@
 <h1>column_associations<a class="headerlink" href="#column-associations" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.column_associations">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/70624be/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">column_associations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">compute_pearson</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/9d6ae0f/skrub/_column_associations.py#L16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.column_associations" title="Link to this definition">#</a></dt>
 <dd><p>Get measures of statistical associations between all pairs of columns.</p>
 <p>Reported metrics include Cramer’s V statistic and Pearson’s Correlation
 Coefficient. The result is returned as a dataframe that contains the column
-name and idx for the left and right table and both associations; results
-are sorted in descending order by Cramer’s V association.</p>
-<dl class="field-list simple">
+name and idx for the left and right table and the requested associations;
+results are sorted in descending order by Cramer’s V association.</p>
+<dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
+<dd class="field-odd"><dl>
 <dt><strong>df</strong><span class="classifier">dataframe</span></dt><dd><p>The dataframe whose columns will be compared to each other.</p>
+</dd>
+<dt><strong>compute_pearson</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a>, default=True</span></dt><dd><p>Whether to compute Pearson’s Correlation Coefficient. Currently, computing Pearson correlations for polars DataFrames requires PyArrow to be installed and internally converts the dataframe to pandas.</p>
 </dd>
 </dl>
 </dd>
@@ -806,7 +808,8 @@ are sorted in descending order by Cramer’s V association.</p>
 <p class="rubric">Notes</p>
 <p>The result is returned as a dataframe with columns:</p>
 <p><code class="docutils literal notranslate"><span class="pre">['left_column_name',</span> <span class="pre">'left_column_idx',</span> <span class="pre">'right_column_name',</span>
-<span class="pre">'right_column_idx',</span> <span class="pre">'cramer_v',</span> <span class="pre">'pearson_corr']</span></code></p>
+<span class="pre">'right_column_idx',</span> <span class="pre">'cramer_v',</span> <span class="pre">'pearson_corr']</span></code>.</p>
+<p>When <code class="docutils literal notranslate"><span class="pre">compute_pearson=False</span></code>, the <code class="docutils literal notranslate"><span class="pre">'pearson_corr'</span></code> column is omitted.</p>
 <p>As the function is commutative, each pair of columns appears only once
 (either <code class="docutils literal notranslate"><span class="pre">col_1</span></code>, <code class="docutils literal notranslate"><span class="pre">col_2</span></code> or <code class="docutils literal notranslate"><span class="pre">col_2</span></code>, <code class="docutils literal notranslate"><span class="pre">col_1</span></code> but not both).
 The results are sorted from most associated to least associated.</p>
