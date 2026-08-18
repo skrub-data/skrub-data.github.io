@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -685,8 +685,8 @@
 each step, it is possible to preview the result of a DataOp by passing a value
 along with its name when creating a variable.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># we pass the value 10 in addition to the name</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># we pass the value 10 in addition to the name</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"b"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">c</span>  <span class="c1"># now the display of c includes a preview of the result</span>
 <span class="go">&lt;BinOp: add&gt;</span>
@@ -698,25 +698,25 @@ along with its name when creating a variable.</p>
 <p>Previews are eager computations on the current data, and since they are computed
 immediately they can spot errors early on:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;col&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]})</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>  <span class="c1"># we pass the DataFrame as a value</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"col"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>  <span class="c1"># we pass the DataFrame as a value</span>
 </pre></div>
 </div>
 <p>Next, we use the pandas <code class="docutils literal notranslate"><span class="pre">drop</span></code> column and try to drop a column without
 specifying the axis:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;col&quot;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">"col"</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">RuntimeError</span>: <span class="n">Evaluation of &#39;.drop()&#39; failed.</span>
+<span class="gr">RuntimeError</span>: <span class="n">Evaluation of '.drop()' failed.</span>
 <span class="x">You can see the full traceback above. The error message was:</span>
-<span class="x">KeyError: &quot;[&#39;col&#39;] not found in axis&quot;</span>
+<span class="x">KeyError: "['col'] not found in axis"</span>
 </pre></div>
 </div>
 <p>Note that seeing results for the values we provided does <em>not</em> change the fact
 that we are building a pipeline that we want to reuse, not just computing the
 result for a fixed input. The displayed result is only preview of the output on
 one example dataset.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">"a"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
 <span class="go">5</span>
 </pre></div>
 </div>
@@ -730,20 +730,20 @@ set different ones with <a class="reference internal" href="../../../reference/g
 only an example value to use for previews but a default value for this variable
 in all contexts – then it is always optional to pass a value for it in the
 environment, and if not found the default is used.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'a'</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
-<span class="go">&lt;Var &#39;a&#39;&gt;</span>
+<span class="go">&lt;Var 'a'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
 <span class="go">0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">becomes_default</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'b'</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">becomes_default</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span>
-<span class="go">&lt;Var &#39;b&#39; int&gt;</span>
+<span class="go">&lt;Var 'b' int&gt;</span>
 <span class="go">Result (also the default value):</span>
 <span class="go">――――――――――――――――――――――――――――――――</span>
 <span class="go">1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">})</span> <span class="c1"># the default 1 is used for &#39;b&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">'a'</span><span class="p">:</span> <span class="mi">10</span><span class="p">})</span> <span class="c1"># the default 1 is used for 'b'</span>
 <span class="go">11</span>
 </pre></div>
 </div>
@@ -758,7 +758,7 @@ To avoid this, it is possible to disable eager checks with the <code class="docu
 is easily achieved with the <code class="docutils literal notranslate"><span class="pre">&quot;eager_data_ops&quot;</span></code> <a class="reference internal" href="../../../guides/utilities/customizing_configuration.html#user-guide-configuration-parameters"><span class="std std-ref">configuration</span></a> option.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">skrub</span><span class="o">.</span><span class="n">config_context</span><span class="p">(</span><span class="n">eager_data_ops</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="c1"># no checks are performed when b is defined so no error in the line below:</span>
-<span class="gp">... </span>    <span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'a'</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'a'</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="gp">... </span>    <span class="c1"># checks are still performed (once) before the DataOp is actually used so</span>
 <span class="gp">... </span>    <span class="c1"># evaluating the DataOp, using .skb.make_learner() etc _would_ still raise:</span>
 <span class="gp">... </span>    <span class="c1"># b.skb.eval() ## raises ValueError: Choice and node names must be unique.</span>

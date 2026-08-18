@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>skrub.DataOp.skb.set_data<a class="headerlink" href="#skrub-dataop-skb-set-data" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.set_data">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">set_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_data_ops/_skrub_namespace.py#L1285"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.set_data" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">set_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_data_ops/_skrub_namespace.py#L1285"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.set_data" title="Link to this definition">#</a></dt>
 <dd><p>Get a new DataOp with the provided preview values set on the variables.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -807,8 +807,8 @@ as the preview values for the corresponding variables.</p>
 </div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'a'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'b'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </pre></div>
 </div>
@@ -822,7 +822,7 @@ result available for our DataOp <code class="docutils literal notranslate"><span
 </div>
 <p>As usual, we can evaluate <code class="docutils literal notranslate"><span class="pre">c</span></code>, passing values for the variables it
 contains:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">'a'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
 <span class="go">3</span>
 </pre></div>
 </div>
@@ -830,7 +830,7 @@ contains:</p>
 benefit from preview computations that run whenever we use our DataOp, without
 needing to explicitly call <code class="docutils literal notranslate"><span class="pre">eval</span></code>. We can inject values into the existing
 DataOp.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">set_data</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">set_data</span><span class="p">({</span><span class="s1">'a'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">d</span>
 <span class="go">&lt;BinOp: add&gt;</span>
 <span class="go">Result:</span>
@@ -850,15 +850,15 @@ original one (<code class="docutils literal notranslate"><span class="pre">c</sp
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
 <span class="go">{}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
-<span class="go">{&#39;a&#39;: 1, &#39;b&#39;: 2}</span>
+<span class="go">{'a': 1, 'b': 2}</span>
 </pre></div>
 </div>
 <p>If the DataOp already contained preview values, they are replaced by
 the provided ones. If we pass values for only some of the variables,
 any already-existing values for the other variables are kept:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">e</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">set_data</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">})</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">e</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">set_data</span><span class="p">({</span><span class="s1">'a'</span><span class="p">:</span> <span class="mi">10</span><span class="p">})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">e</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
-<span class="go">{&#39;a&#39;: 10, &#39;b&#39;: 2}</span>
+<span class="go">{'a': 10, 'b': 2}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">e</span>
 <span class="go">&lt;BinOp: add&gt;</span>
 <span class="go">Result:</span>
@@ -878,10 +878,10 @@ any already-existing values for the other variables are kept:</p>
 </div>
 <p>When we call <code class="docutils literal notranslate"><span class="pre">set_data</span></code>, passing keys in <code class="docutils literal notranslate"><span class="pre">data</span></code> that do not have a
 corresponding variable in the DataOp is an error.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">set_data</span><span class="p">({</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">set_data</span><span class="p">({</span><span class="s1">'x'</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">ValueError</span>: <span class="n">The following keys were passed to set_data but have no corresponding variable in the DataOp: [&#39;x&#39;]</span>
+<span class="gr">ValueError</span>: <span class="n">The following keys were passed to set_data but have no corresponding variable in the DataOp: ['x']</span>
 </pre></div>
 </div>
 </dd></dl>

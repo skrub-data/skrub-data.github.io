@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>has_dtype<a class="headerlink" href="#has-dtype" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.has_dtype">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">has_dtype</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dtypes</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/selectors/_selectors.py#L363"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.has_dtype" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">has_dtype</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">dtypes</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/selectors/_selectors.py#L363"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.has_dtype" title="Link to this definition">#</a></dt>
 <dd><p>Select columns whose dtype is equal to one of the provided dtypes.</p>
 <p>This is an advanced selector for edge cases where you need to match specific
 dtypes not covered by other selectors. Use this when working with specialized
@@ -823,22 +823,22 @@ pass dtype objects obtained from your dataframe library.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;items&quot;</span><span class="p">:</span> <span class="p">[[</span><span class="s2">&quot;A4&quot;</span><span class="p">,</span> <span class="s2">&quot;A3&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;A5&quot;</span><span class="p">]],</span>
-<span class="gp">... </span>        <span class="s2">&quot;count&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"items"</span><span class="p">:</span> <span class="p">[[</span><span class="s2">"A4"</span><span class="p">,</span> <span class="s2">"A3"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"A5"</span><span class="p">]],</span>
+<span class="gp">... </span>        <span class="s2">"count"</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Get dtype from an existing column and use it for selection:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_dtype</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;items&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span><span class="p">))</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_dtype</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"items"</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span><span class="p">))</span>
 <span class="go">       items</span>
 <span class="go">0  [A4, A3]</span>
 <span class="go">1      [A5]</span>
 </pre></div>
 </div>
 <p>Match multiple dtypes at once:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">items_dtype</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;items&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">count_dtype</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;count&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">items_dtype</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"items"</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">count_dtype</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"count"</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">has_dtype</span><span class="p">(</span><span class="n">items_dtype</span><span class="p">,</span> <span class="n">count_dtype</span><span class="p">))</span>
 <span class="go">       items  count</span>
 <span class="go">0  [A4, A3]      2</span>
@@ -849,9 +849,9 @@ pass dtype objects obtained from your dataframe library.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">shapely.geometry</span><span class="w"> </span><span class="kn">import</span> <span class="n">Point</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">gdf</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Paris&quot;</span><span class="p">,</span> <span class="s2">&quot;Berlin&quot;</span><span class="p">],</span> <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]},</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">"city"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Paris"</span><span class="p">,</span> <span class="s2">"Berlin"</span><span class="p">],</span> <span class="s2">"value"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]},</span>
 <span class="gp">... </span>    <span class="n">geometry</span><span class="o">=</span><span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="mf">2.35</span><span class="p">,</span> <span class="mf">48.86</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="mf">13.40</span><span class="p">,</span> <span class="mf">52.52</span><span class="p">)],</span>
-<span class="gp">... </span>    <span class="n">crs</span><span class="o">=</span><span class="s2">&quot;EPSG:4326&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">crs</span><span class="o">=</span><span class="s2">"EPSG:4326"</span><span class="p">,</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">gdf</span>
 <span class="go">    city  value            geometry</span>

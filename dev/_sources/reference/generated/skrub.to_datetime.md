@@ -12,6 +12,12 @@ Note that this transformation is stateless, so it should not be used in a
 pipeline that is fitted on a training set and then applied to a test set.
 Use the [`ToDatetime`](skrub.ToDatetimehtml.md#skrub.ToDatetime) transformer instead.
 
+#### CAUTION
+For versions of Pandas <3.0, inferring the format may fail if it includes
+both date and time components, and the digits of the year are the same
+as the digits of the hour and minutes, like `"1959-07-01 19:59:16"`.
+In such cases, the format should be specified explicitly.
+
 * **Parameters:**
   **data**
   : The dataframe or series to convert to Datetime.

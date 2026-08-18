@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -691,7 +691,7 @@ that raises this exception when appropriate: this can be done with the <code cla
 in this example, the zip codes need to have the format <code class="docutils literal notranslate"><span class="pre">AB123</span></code>, that is two letters
 followed by three digits.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;sent&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;AB123&quot;</span><span class="p">,</span> <span class="s2">&quot;BD601&quot;</span><span class="p">,</span> <span class="s2">&quot;HS014&quot;</span><span class="p">],</span> <span class="s1">&#39;received&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;AB1C45&quot;</span><span class="p">,</span> <span class="s2">&quot;DU3K93&quot;</span><span class="p">,</span> <span class="s2">&quot;WB9M88&quot;</span><span class="p">]})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'sent'</span><span class="p">:</span> <span class="p">[</span><span class="s2">"AB123"</span><span class="p">,</span> <span class="s2">"BD601"</span><span class="p">,</span> <span class="s2">"HS014"</span><span class="p">],</span> <span class="s1">'received'</span><span class="p">:</span> <span class="p">[</span><span class="s2">"AB1C45"</span><span class="p">,</span> <span class="s2">"DU3K93"</span><span class="p">,</span> <span class="s2">"WB9M88"</span><span class="p">]})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
 <span class="go">    sent received</span>
 <span class="go">0  AB123   AB1C45</span>
@@ -711,15 +711,15 @@ and that raises <a class="reference internal" href="../../reference/generated/sk
 <span class="gp">... </span>        <span class="k">return</span>
 <span class="gp">... </span>    <span class="k">def</span><span class="w"> </span><span class="nf">fit_transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="gp">... </span>        <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">5</span><span class="p">):</span>
-<span class="gp">... </span>            <span class="k">raise</span> <span class="n">RejectColumn</span><span class="p">(</span><span class="s1">&#39;This transformer only takes zip codes of length 5.&#39;</span><span class="p">)</span>
+<span class="gp">... </span>            <span class="k">raise</span> <span class="n">RejectColumn</span><span class="p">(</span><span class="s1">'This transformer only takes zip codes of length 5.'</span><span class="p">)</span>
 <span class="gp">... </span>        <span class="k">else</span><span class="p">:</span>
 <span class="gp">... </span>            <span class="n">letters</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
 <span class="gp">... </span>            <span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>                <span class="n">numbers</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">:]))</span>
 <span class="gp">... </span>            <span class="k">except</span><span class="p">:</span>
-<span class="gp">... </span>                <span class="k">raise</span> <span class="n">RejectColumn</span><span class="p">(</span><span class="s1">&#39;Input zip codes must consist of two letters followed by three numbers.&#39;</span><span class="p">)</span>
-<span class="gp">... </span>            <span class="k">return</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;letters&#39;</span><span class="p">:</span> <span class="n">letters</span><span class="p">,</span> <span class="s1">&#39;numbers&#39;</span><span class="p">:</span> <span class="n">numbers</span><span class="p">}))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ZipcodeParser</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;sent&quot;</span><span class="p">])</span>
+<span class="gp">... </span>                <span class="k">raise</span> <span class="n">RejectColumn</span><span class="p">(</span><span class="s1">'Input zip codes must consist of two letters followed by three numbers.'</span><span class="p">)</span>
+<span class="gp">... </span>            <span class="k">return</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'letters'</span><span class="p">:</span> <span class="n">letters</span><span class="p">,</span> <span class="s1">'numbers'</span><span class="p">:</span> <span class="n">numbers</span><span class="p">}))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ZipcodeParser</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"sent"</span><span class="p">])</span>
 <span class="go">  letters  numbers</span>
 <span class="go">0      AB      123</span>
 <span class="go">1      BD      601</span>
@@ -750,14 +750,14 @@ fails as soon as a malformed column is encountered:</p>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
 <span class="gr">skrub.core.RejectColumn</span>: <span class="n">This transformer only takes zip codes of length 5.</span>
-<span class="x">Transformer ZipcodeParser.fit_transform failed on column &#39;received&#39;. See above for the full traceback.</span>
+<span class="x">Transformer ZipcodeParser.fit_transform failed on column 'received'. See above for the full traceback.</span>
 <span class="x">Letting rejected columns through can be useful for situations in which we do not</span>
 <span class="x">know the content of a column in advance, like when we are trying to convert to</span>
 <span class="x">datetime columns in a dataframe, without knowing which ones actually contain dates.</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ToDatetime</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">birthday</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;29/01/2024&quot;</span><span class="p">],</span> <span class="n">city</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;London&quot;</span><span class="p">]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">birthday</span><span class="o">=</span><span class="p">[</span><span class="s2">"29/01/2024"</span><span class="p">],</span> <span class="n">city</span><span class="o">=</span><span class="p">[</span><span class="s2">"London"</span><span class="p">]))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
 <span class="go">        birthday    city</span>
 <span class="go">0  29/01/2024  London</span>
@@ -768,16 +768,16 @@ fails as soon as a malformed column is encountered:</p>
 </pre></div>
 </div>
 <p>Converting a datetime column would work:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;birthday&quot;</span><span class="p">])</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"birthday"</span><span class="p">])</span>
 <span class="go">0   2024-01-29</span>
 <span class="go">Name: birthday, dtype: datetime64[...]</span>
 </pre></div>
 </div>
 <p>While non-datetimes would raise <a class="reference internal" href="../../reference/generated/skrub.core.RejectColumn.html#skrub.core.RejectColumn" title="skrub.core.RejectColumn"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.RejectColumn</span></code></a>:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;city&quot;</span><span class="p">])</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ToDatetime</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"city"</span><span class="p">])</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">skrub.core.RejectColumn</span>: <span class="n">Could not find a datetime format for column &#39;city&#39;.</span>
+<span class="gr">skrub.core.RejectColumn</span>: <span class="n">Could not find a datetime format for column 'city'.</span>
 </pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">allow_reject</span></code> parameter in <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> allows to apply the same transformer
@@ -793,7 +793,7 @@ through unchanged and no exception is raised.</p>
 </div>
 <p>We can see that the only column that has a transformer is “birthday”:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_datetime</span><span class="o">.</span><span class="n">transformers_</span>
-<span class="go">{&#39;birthday&#39;: ToDatetime()}</span>
+<span class="go">{'birthday': ToDatetime()}</span>
 </pre></div>
 </div>
 </section>

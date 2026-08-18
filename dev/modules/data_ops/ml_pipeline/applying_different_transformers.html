@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -692,13 +692,13 @@ example with grades.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-<span class="gp">... </span>    <span class="s2">&quot;subject&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Math&quot;</span><span class="p">,</span> <span class="s2">&quot;English&quot;</span><span class="p">,</span> <span class="s2">&quot;History&quot;</span><span class="p">,</span> <span class="s2">&quot;Science&quot;</span><span class="p">,</span> <span class="s2">&quot;Art&quot;</span><span class="p">],</span>
-<span class="gp">... </span>    <span class="s2">&quot;grade&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">]</span>
+<span class="gp">... </span>    <span class="s2">"subject"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Math"</span><span class="p">,</span> <span class="s2">"English"</span><span class="p">,</span> <span class="s2">"History"</span><span class="p">,</span> <span class="s2">"Science"</span><span class="p">,</span> <span class="s2">"Art"</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s2">"grade"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"A"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">]</span>
 <span class="gp">... </span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">grades</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;grades&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">grades</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"grades"</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">grades</span>
-<span class="go">&lt;Var &#39;grades&#39;&gt;</span>
+<span class="go">&lt;Var 'grades'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
 <span class="go">   subject grade</span>
@@ -711,7 +711,7 @@ example with grades.</p>
 </div>
 <p>We encode the subjects with the <a class="reference internal" href="../../../reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">StringEncoder</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">enc_subject</span> <span class="o">=</span> <span class="n">grades</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">cols</span><span class="o">=</span><span class="s2">&quot;subject&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">StringEncoder</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">enc_subject</span> <span class="o">=</span> <span class="n">grades</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">cols</span><span class="o">=</span><span class="s2">"subject"</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">StringEncoder</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 </div>
 <p>For the grades, we define a <a class="reference internal" href="../../../reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> function that maps the strings
@@ -720,11 +720,11 @@ Remember that objects inside deferred functions are regular Python
 objects (more detail in <a class="reference internal" href="../basics/control_flow.html#user-guide-data-ops-control-flow"><span class="std std-ref">Control flow in DataOps: eager and deferred evaluation</span></a>).</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
 <span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">encode_ordered</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
-<span class="gp">... </span>    <span class="n">grade_order</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;A&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
-<span class="gp">... </span>    <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;grade&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">grade_order</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">grade_order</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"A"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="s2">"grade"</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">grade_order</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">enc_grades</span> <span class="o">=</span> <span class="n">grades</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><span class="n">encode_ordered</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">enc_grades</span>
-<span class="go">&lt;Call &#39;encode_ordered&#39;&gt;</span>
+<span class="go">&lt;Call 'encode_ordered'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
 <span class="go">0    3</span>
@@ -739,10 +739,10 @@ objects (more detail in <a class="reference internal" href="../basics/control_fl
 function.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
 <span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">combine</span><span class="p">(</span><span class="n">subjects</span><span class="p">,</span> <span class="n">grades</span><span class="p">):</span>
-<span class="gp">... </span>    <span class="n">subjects</span><span class="p">[</span><span class="s2">&quot;grade&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">grades</span>
+<span class="gp">... </span>    <span class="n">subjects</span><span class="p">[</span><span class="s2">"grade"</span><span class="p">]</span> <span class="o">=</span> <span class="n">grades</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">subjects</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">combine</span><span class="p">(</span><span class="n">enc_subject</span><span class="p">,</span> <span class="n">enc_grades</span><span class="p">)</span>
-<span class="go">&lt;Call &#39;combine&#39;&gt;</span>
+<span class="go">&lt;Call 'combine'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
 <span class="go">      subject_0     subject_1  grade</span>
@@ -761,14 +761,14 @@ with high cardinality, a mathematical operation to columns with nulls, and a
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">orders_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;cup&quot;</span><span class="p">,</span> <span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;fork&quot;</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"item"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"pen"</span><span class="p">,</span> <span class="s2">"cup"</span><span class="p">,</span> <span class="s2">"pen"</span><span class="p">,</span> <span class="s2">"fork"</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"price"</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"qty"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;orders&quot;</span><span class="p">,</span> <span class="n">orders_df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"orders"</span><span class="p">,</span> <span class="n">orders_df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span>
-<span class="go">&lt;Var &#39;orders&#39;&gt;</span>
+<span class="go">&lt;Var 'orders'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
 <span class="go">   item  price  qty</span>

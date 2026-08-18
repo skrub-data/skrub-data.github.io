@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -689,11 +689,11 @@ If the estimator is a linear model (e.g., <code class="docutils literal notransl
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LinearRegression</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">tabular_pipeline</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_pipeline</span><span class="p">(</span><span class="n">LinearRegression</span><span class="p">())</span>
-<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
-<span class="go">                 TableVectorizer(datetime=DatetimeEncoder(periodic_encoding=&#39;spline&#39;))),</span>
-<span class="go">                (&#39;simpleimputer&#39;, SimpleImputer(add_indicator=True)),</span>
-<span class="go">                (&#39;squashingscaler&#39;, SquashingScaler(max_absolute_value=5)),</span>
-<span class="go">                (&#39;linearregression&#39;, LinearRegression())])</span>
+<span class="go">Pipeline(steps=[('tablevectorizer',</span>
+<span class="go">                 TableVectorizer(datetime=DatetimeEncoder(periodic_encoding='spline'))),</span>
+<span class="go">                ('simpleimputer', SimpleImputer(add_indicator=True)),</span>
+<span class="go">                ('squashingscaler', SquashingScaler(max_absolute_value=5)),</span>
+<span class="go">                ('linearregression', LinearRegression())])</span>
 </pre></div>
 </div>
 <p>It is also possible to call the function with the name of the task that must be
@@ -701,10 +701,10 @@ performed (<code class="docutils literal notranslate"><span class="pre">regressi
 build a pipeline that uses a
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>/<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">tabular_pipeline</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_pipeline</span><span class="p">(</span><span class="s2">&quot;regression&quot;</span><span class="p">)</span>
-<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_pipeline</span><span class="p">(</span><span class="s2">"regression"</span><span class="p">)</span>
+<span class="go">Pipeline(steps=[('tablevectorizer',</span>
 <span class="go">                 TableVectorizer(...),</span>
-<span class="go">                (&#39;histgradientboostingregressor&#39;,</span>
+<span class="go">                ('histgradientboostingregressor',</span>
 <span class="go">                 HistGradientBoostingRegressor(...))])</span>
 </pre></div>
 </div>
@@ -785,14 +785,14 @@ estimator:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.feature_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">SelectPercentile</span><span class="p">,</span> <span class="n">f_regression</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">tabular_pipeline</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">base_pipeline</span> <span class="o">=</span> <span class="n">tabular_pipeline</span><span class="p">(</span><span class="s2">&quot;regressor&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">base_pipeline</span> <span class="o">=</span> <span class="n">tabular_pipeline</span><span class="p">(</span><span class="s2">"regressor"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">extended_pipeline</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="o">*</span><span class="p">[</span><span class="n">step</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">step</span> <span class="ow">in</span> <span class="n">base_pipeline</span><span class="o">.</span><span class="n">steps</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]],</span>
 <span class="gp">... </span>    <span class="n">SelectPercentile</span><span class="p">(</span><span class="n">score_func</span><span class="o">=</span><span class="n">f_regression</span><span class="p">,</span> <span class="n">percentile</span><span class="o">=</span><span class="mi">50</span><span class="p">),</span>
 <span class="gp">... </span>    <span class="n">base_pipeline</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="n">name</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">extended_pipeline</span><span class="o">.</span><span class="n">steps</span><span class="p">]</span>
-<span class="go">[&#39;tablevectorizer&#39;, &#39;selectpercentile&#39;, &#39;histgradientboostingregressor&#39;]</span>
+<span class="go">['tablevectorizer', 'selectpercentile', 'histgradientboostingregressor']</span>
 </pre></div>
 </div>
 <p>Here <code class="docutils literal notranslate"><span class="pre">[step[1]</span> <span class="pre">for</span> <span class="pre">step</span> <span class="pre">in</span> <span class="pre">base_pipeline.steps[:-1]]</span></code> extracts the
@@ -815,7 +815,7 @@ the default table preprocessing:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model_pipeline</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">20</span><span class="p">),</span> <span class="n">Ridge</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">full_pipeline</span> <span class="o">=</span> <span class="n">tabular_pipeline</span><span class="p">(</span><span class="n">model_pipeline</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="n">name</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">full_pipeline</span><span class="o">.</span><span class="n">steps</span><span class="p">]</span>
-<span class="go">[&#39;tablevectorizer&#39;, &#39;simpleimputer&#39;, &#39;squashingscaler&#39;, &#39;pipeline&#39;]</span>
+<span class="go">['tablevectorizer', 'simpleimputer', 'squashingscaler', 'pipeline']</span>
 </pre></div>
 </div>
 <p>The user-provided estimator pipeline is appended as a single final step. This

@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>skrub.DataOp.skb.if_else<a class="headerlink" href="#skrub-dataop-skb-if-else" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.if_else">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">if_else</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value_if_true</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_if_false</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_data_ops/_skrub_namespace.py#L548"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.if_else" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">if_else</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value_if_true</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_if_false</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_data_ops/_skrub_namespace.py#L548"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.if_else" title="Link to this definition">#</a></dt>
 <dd><p>Create a conditional DataOp.</p>
 <p>If <code class="docutils literal notranslate"><span class="pre">self</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>, the result will be
 <code class="docutils literal notranslate"><span class="pre">value_if_true</span></code>, otherwise <code class="docutils literal notranslate"><span class="pre">value_if_false</span></code>.</p>
@@ -816,32 +816,32 @@ advantage compared to wrapping the conditional statement in a
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">shuffle_a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;shuffle_a&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'a'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">shuffle_a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'shuffle_a'</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
 <span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">shuffled</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;shuffling&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'shuffling'</span><span class="p">)</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
 <span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;copying&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">'copying'</span><span class="p">)</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">values</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">shuffle_a</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">if_else</span><span class="p">(</span><span class="n">shuffled</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">copy</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">b</span>
-<span class="go">&lt;IfElse &lt;Var &#39;shuffle_a&#39;&gt; ? &lt;Call &#39;shuffled&#39;&gt; : &lt;Call &#39;copy&#39;&gt;&gt;</span>
+<span class="go">&lt;IfElse &lt;Var 'shuffle_a'&gt; ? &lt;Call 'shuffled'&gt; : &lt;Call 'copy'&gt;&gt;</span>
 </pre></div>
 </div>
 <p>Note that only one of the 2 branches is evaluated:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="s1">&#39;shuffle_a&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">'a'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="s1">'shuffle_a'</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
 <span class="go">shuffling</span>
 <span class="go">array([2, 0, 1])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="s1">&#39;shuffle_a&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">'a'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="s1">'shuffle_a'</span><span class="p">:</span> <span class="kc">False</span><span class="p">})</span>
 <span class="go">copying</span>
 <span class="go">array([0, 1, 2])</span>
 </pre></div>

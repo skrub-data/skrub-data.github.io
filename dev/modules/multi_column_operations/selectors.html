@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -699,10 +699,10 @@ dataframes:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;height_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">297.0</span><span class="p">,</span> <span class="mf">420.0</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;width_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A4&quot;</span><span class="p">,</span> <span class="s2">&quot;A3&quot;</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;ID&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"height_mm"</span><span class="p">:</span> <span class="p">[</span><span class="mf">297.0</span><span class="p">,</span> <span class="mf">420.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"width_mm"</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"kind"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"A4"</span><span class="p">,</span> <span class="s2">"A3"</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"ID"</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
 </pre></div>
@@ -710,9 +710,9 @@ dataframes:</p>
 <p><a class="reference internal" href="../../reference/generated/skrub.selectors.cols.html#skrub.selectors.cols" title="skrub.selectors.cols"><code class="xref py py-func docutils literal notranslate"><span class="pre">cols()</span></code></a> is a simple kind of selector which selects a fixed list of
 column names:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">mm_cols</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s1">&#39;height_mm&#39;</span><span class="p">,</span> <span class="s1">&#39;width_mm&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mm_cols</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s1">'height_mm'</span><span class="p">,</span> <span class="s1">'width_mm'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mm_cols</span>
-<span class="go">cols(&#39;height_mm&#39;, &#39;width_mm&#39;)</span>
+<span class="go">cols('height_mm', 'width_mm')</span>
 </pre></div>
 </div>
 <p>Using selectors:</p>
@@ -759,7 +759,7 @@ arguments since it keeps all columns:</p>
 </div>
 <p>Selectors can be combined with operators, for example if we wanted all columns
 except the “mm” columns above:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="o">-</span> <span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s2">&quot;height_mm&quot;</span><span class="p">,</span> <span class="s2">&quot;width_mm&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="o">-</span> <span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s2">"height_mm"</span><span class="p">,</span> <span class="s2">"width_mm"</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">kind  ID</span>
 <span class="go">0   A4   4</span>
 <span class="go">1   A3   3</span>
@@ -772,7 +772,7 @@ name, data type, contents, or according to arbitrary user-provided rules:</p>
 <span class="go">0      297.0     210.0   4</span>
 <span class="go">1      420.0     297.0   3</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'*_mm'</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">height_mm  width_mm</span>
 <span class="go">0      297.0     210.0</span>
 <span class="go">1      420.0     297.0</span>
@@ -791,31 +791,31 @@ name, data type, contents, or according to arbitrary user-provided rules:</p>
 <h2>Combining selectors<a class="headerlink" href="#combining-selectors" title="Link to this heading">#</a></h2>
 <p>The available operators are <code class="docutils literal notranslate"><span class="pre">|</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">^</span></code> with the meaning of usual
 python sets, and <code class="docutils literal notranslate"><span class="pre">~</span></code> to invert a selection:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'*_mm'</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">height_mm  width_mm</span>
 <span class="go">0      297.0     210.0</span>
 <span class="go">1      420.0     297.0</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'*_mm'</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">kind  ID</span>
 <span class="go">0   A4   4</span>
 <span class="go">1   A3   3</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'*_mm'</span><span class="p">)</span> <span class="o">|</span> <span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s1">'ID'</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">height_mm  width_mm  ID</span>
 <span class="go">0      297.0     210.0   4</span>
 <span class="go">1      420.0     297.0   3</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;height_*&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'*_mm'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'height_*'</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">height_mm</span>
 <span class="go">0      297.0</span>
 <span class="go">1      420.0</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">)</span> <span class="o">^</span> <span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">())</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'*_mm'</span><span class="p">)</span> <span class="o">^</span> <span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">())</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">height_mm  width_mm kind</span>
 <span class="go">0      297.0     210.0   A4</span>
 <span class="go">1      420.0     297.0   A3</span>
@@ -836,18 +836,18 @@ of column names from the dataframe that the selector would keep. This allows sel
 to be applied on a variety of standard dataframe libraries, and can be particularly
 useful on complicated combinations of selectors. For instance, the following filter
 only keeps columns that do not end in <code class="docutils literal notranslate"><span class="pre">_mm</span></code>:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">some_selector</span> <span class="o">=</span> <span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;*_mm&quot;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">some_selector</span> <span class="o">=</span> <span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">"*_mm"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;height_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;width_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">188.5</span><span class="p">,</span> <span class="mf">210.0</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A5&quot;</span><span class="p">,</span> <span class="s2">&quot;A4&quot;</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;ID&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"height_mm"</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"width_mm"</span><span class="p">:</span> <span class="p">[</span><span class="mf">188.5</span><span class="p">,</span> <span class="mf">210.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"kind"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"A5"</span><span class="p">,</span> <span class="s2">"A4"</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"ID"</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">some_selector</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">[&#39;kind&#39;, &#39;ID&#39;]</span>
+<span class="go">['kind', 'ID']</span>
 </pre></div>
 </div>
 <p>The <code class="xref py py-meth docutils literal notranslate"><span class="pre">expand_index()</span></code> method also exists: rather than returning a list of column names, it returns the corresponding indices from the input dataframe’s column list:</p>
@@ -866,8 +866,8 @@ certain amount by combining <a class="reference internal" href="../../reference/
 To do so, a selector targeting columns that have more than 3 unique values
 is defined, and its inverse is used as a parameter for <a class="reference internal" href="../../reference/generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.DropCols</span></code></a>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-<span class="gp">... </span><span class="s2">&quot;not a lot&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
-<span class="gp">... </span><span class="s2">&quot;too_many&quot;</span><span class="p">:</span>  <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]})</span>
+<span class="gp">... </span><span class="s2">"not a lot"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+<span class="gp">... </span><span class="s2">"too_many"</span><span class="p">:</span>  <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]})</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">DropCols</span>
@@ -885,8 +885,8 @@ based on specific requirements.</p>
 <p>Consider the following example:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-<span class="gp">... </span>    <span class="s2">&quot;subject&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Math&quot;</span><span class="p">,</span> <span class="s2">&quot;English&quot;</span><span class="p">,</span> <span class="s2">&quot;History&quot;</span><span class="p">,</span> <span class="s2">&quot;Science&quot;</span><span class="p">,</span> <span class="s2">&quot;Art&quot;</span><span class="p">],</span>
-<span class="gp">... </span>    <span class="s2">&quot;grade&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gp">... </span>    <span class="s2">"subject"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Math"</span><span class="p">,</span> <span class="s2">"English"</span><span class="p">,</span> <span class="s2">"History"</span><span class="p">,</span> <span class="s2">"Science"</span><span class="p">,</span> <span class="s2">"Art"</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s2">"grade"</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="gp">... </span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>

@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -720,12 +720,12 @@ it to <a class="reference internal" href="../../reference/generated/skrub.TableV
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">TableVectorizer</span><span class="p">,</span> <span class="n">DatetimeEncoder</span><span class="p">,</span> <span class="n">TextEncoder</span><span class="p">,</span> <span class="n">SquashingScaler</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">datetime_enc</span> <span class="o">=</span> <span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">periodic_encoding</span><span class="o">=</span><span class="s2">&quot;circular&quot;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">datetime_enc</span> <span class="o">=</span> <span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">periodic_encoding</span><span class="o">=</span><span class="s2">"circular"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">text_enc</span> <span class="o">=</span> <span class="n">TextEncoder</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">num_enc</span> <span class="o">=</span> <span class="n">SquashingScaler</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">table_vec</span> <span class="o">=</span> <span class="n">TableVectorizer</span><span class="p">(</span><span class="n">datetime</span><span class="o">=</span><span class="n">datetime_enc</span><span class="p">,</span> <span class="n">high_cardinality</span><span class="o">=</span><span class="n">text_enc</span><span class="p">,</span> <span class="n">numeric</span><span class="o">=</span><span class="n">num_enc</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">table_vec</span>
-<span class="go">TableVectorizer(datetime=DatetimeEncoder(periodic_encoding=&#39;circular&#39;),</span>
+<span class="go">TableVectorizer(datetime=DatetimeEncoder(periodic_encoding='circular'),</span>
 <span class="go">                high_cardinality=TextEncoder(), numeric=SquashingScaler())</span>
 </pre></div>
 </div>
@@ -735,12 +735,12 @@ user-specified transformers that are applied to given columns.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">OrdinalEncoder</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-<span class="gp">... </span>    <span class="s2">&quot;values&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">]</span>
+<span class="gp">... </span>    <span class="s2">"values"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">]</span>
 <span class="gp">... </span><span class="p">})</span>
 </pre></div>
 </div>
 <p>We define the list of column-specific transformers:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">specific_transformers</span><span class="o">=</span><span class="p">[(</span><span class="n">encoder</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;values&quot;</span><span class="p">])]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">specific_transformers</span><span class="o">=</span><span class="p">[(</span><span class="n">encoder</span><span class="p">,</span> <span class="p">[</span><span class="s2">"values"</span><span class="p">])]</span>
 </pre></div>
 </div>
 <p>We can then encode the result:</p>
@@ -773,10 +773,10 @@ vectorizing, rather than relying on keeping them as strings.</p>
 names are not one-hot encoded):</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">TableVectorizer</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;3&quot;</span><span class="p">]})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"c"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"1"</span><span class="p">,</span> <span class="s2">"2"</span><span class="p">,</span> <span class="s2">"3"</span><span class="p">]})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">tv</span> <span class="o">=</span> <span class="n">TableVectorizer</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">tv</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">())))</span>
-<span class="go">[&#39;c&#39;]</span>
+<span class="go">['c']</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">tv</span> <span class="o">=</span> <span class="n">TableVectorizer</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">tv</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">c</span>
@@ -790,14 +790,14 @@ and produces one-hot encoded feature names:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">ApplyToCols</span><span class="p">,</span> <span class="n">TableVectorizer</span><span class="p">,</span> <span class="n">ToCategorical</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pipe</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToCategorical</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;c&quot;</span><span class="p">]),</span>
+<span class="gp">... </span>    <span class="n">ApplyToCols</span><span class="p">(</span><span class="n">ToCategorical</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s2">"c"</span><span class="p">]),</span>
 <span class="gp">... </span>    <span class="n">TableVectorizer</span><span class="p">(),</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pipe</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">Pipeline(steps=[(&#39;applytocols&#39;, ...),</span>
-<span class="go">    (&#39;tablevectorizer&#39;, ...)])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">pipe</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s2">&quot;tablevectorizer&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">())))</span>
-<span class="go">[&#39;c_1&#39;, &#39;c_2&#39;, &#39;c_3&#39;]</span>
+<span class="go">Pipeline(steps=[('applytocols', ...),</span>
+<span class="go">    ('tablevectorizer', ...)])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">pipe</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s2">"tablevectorizer"</span><span class="p">]</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">())))</span>
+<span class="go">['c_1', 'c_2', 'c_3']</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pipe</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">   c_1  c_2  c_3</span>
 <span class="go">0  1.0  0.0  0.0</span>

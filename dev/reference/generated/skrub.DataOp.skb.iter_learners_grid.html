@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>skrub.DataOp.skb.iter_learners_grid<a class="headerlink" href="#skrub-dataop-skb-iter-learners-grid" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.iter_learners_grid">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">iter_learners_grid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_data_ops/_skrub_namespace.py#L2643"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.iter_learners_grid" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">iter_learners_grid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_data_ops/_skrub_namespace.py#L2643"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.iter_learners_grid" title="Link to this definition">#</a></dt>
 <dd><p>Get learners with different parameter combinations.</p>
 <p>This generator yields a <a class="reference internal" href="skrub.SkrubLearner.html#skrub.SkrubLearner" title="skrub.SkrubLearner"><code class="xref py py-class docutils literal notranslate"><span class="pre">SkrubLearner</span></code></a> parametrized for each
 possible combination of choices.</p>
@@ -813,7 +813,7 @@ possible combination of choices.</p>
 <span class="gp">... </span>        <span class="n">preprocessing</span><span class="o">.</span><span class="n">RobustScaler</span><span class="p">(),</span>
 <span class="gp">... </span>        <span class="n">preprocessing</span><span class="o">.</span><span class="n">MaxAbsScaler</span><span class="p">(),</span>
 <span class="gp">... </span>    <span class="p">],</span>
-<span class="gp">... </span>    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;scaler&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">name</span><span class="o">=</span><span class="s2">"scaler"</span><span class="p">,</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">out</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">X</span><span class="p">()</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">scaler</span><span class="p">)</span>
 </pre></div>
@@ -822,30 +822,30 @@ possible combination of choices.</p>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">out</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">iter_learners_grid</span><span class="p">():</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;======================================&quot;</span><span class="p">)</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;params:&quot;</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">describe_params</span><span class="p">())</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;result:&quot;</span><span class="p">)</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">({</span><span class="s2">&quot;X&quot;</span><span class="p">:</span> <span class="n">X</span><span class="p">}))</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"======================================"</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"params:"</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">describe_params</span><span class="p">())</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">"result:"</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">({</span><span class="s2">"X"</span><span class="p">:</span> <span class="n">X</span><span class="p">}))</span>
 <span class="go">======================================</span>
-<span class="go">params: {&#39;scaler&#39;: &#39;MinMaxScaler()&#39;}</span>
+<span class="go">params: {'scaler': 'MinMaxScaler()'}</span>
 <span class="go">result:</span>
 <span class="go">[[0. ]</span>
 <span class="go"> [0.5]</span>
 <span class="go"> [1. ]]</span>
 <span class="go">======================================</span>
-<span class="go">params: {&#39;scaler&#39;: &#39;StandardScaler()&#39;}</span>
+<span class="go">params: {'scaler': 'StandardScaler()'}</span>
 <span class="go">result:</span>
 <span class="go">[[-1.22474487]</span>
 <span class="go"> [ 0.        ]</span>
 <span class="go"> [ 1.22474487]]</span>
 <span class="go">======================================</span>
-<span class="go">params: {&#39;scaler&#39;: &#39;RobustScaler()&#39;}</span>
+<span class="go">params: {'scaler': 'RobustScaler()'}</span>
 <span class="go">result:</span>
 <span class="go">[[-1.]</span>
 <span class="go"> [ 0.]</span>
 <span class="go"> [ 1.]]</span>
 <span class="go">======================================</span>
-<span class="go">params: {&#39;scaler&#39;: &#39;MaxAbsScaler()&#39;}</span>
+<span class="go">params: {'scaler': 'MaxAbsScaler()'}</span>
 <span class="go">result:</span>
 <span class="go">[[-0.4]</span>
 <span class="go"> [ 0.3]</span>

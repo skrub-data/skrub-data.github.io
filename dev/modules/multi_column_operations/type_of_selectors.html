@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -689,10 +689,10 @@ arguments since it keeps all columns:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub.selectors</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">s</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;height_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">297.0</span><span class="p">,</span> <span class="mf">420.0</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;width_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A4&quot;</span><span class="p">,</span> <span class="s2">&quot;A3&quot;</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;ID&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"height_mm"</span><span class="p">:</span> <span class="p">[</span><span class="mf">297.0</span><span class="p">,</span> <span class="mf">420.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"width_mm"</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"kind"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"A4"</span><span class="p">,</span> <span class="s2">"A3"</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"ID"</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">all</span><span class="p">())</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -703,7 +703,7 @@ arguments since it keeps all columns:</p>
 </div>
 <p>Selectors can be combined with operators, for example if we wanted all columns
 except the “mm” columns above:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="o">-</span> <span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s2">&quot;height_mm&quot;</span><span class="p">,</span> <span class="s2">&quot;width_mm&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="o">-</span> <span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s2">"height_mm"</span><span class="p">,</span> <span class="s2">"width_mm"</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">  kind  ID</span>
 <span class="go">0   A4   4</span>
 <span class="go">1   A3   3</span>
@@ -732,7 +732,7 @@ name, data type, contents, or according to arbitrary user-provided rules.</p>
 </div>
 <p>Selectors can work on the column names. For example, to select the columns that
 end with <code class="docutils literal notranslate"><span class="pre">_mm</span></code> we can do:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mm&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'*_mm'</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">   height_mm  width_mm</span>
 <span class="go">0      297.0     210.0</span>
 <span class="go">1      420.0     297.0</span>

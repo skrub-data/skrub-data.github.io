@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -712,7 +712,7 @@ on the same device.</p>
 <p>Once the necessary features are provided, the <a class="reference internal" href="../../reference/generated/skrub.SessionEncoder.html#skrub.SessionEncoder" title="skrub.SessionEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionEncoder</span></code></a>
 returns a dataframe that includes a <code class="docutils literal notranslate"><span class="pre">timestamp_session_id</span></code> column, which is
 composed of a distinct integer ID for each session:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">se</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span><span class="n">timestamp_col</span><span class="o">=</span><span class="s2">&quot;timestamp&quot;</span><span class="p">,</span> <span class="n">split_by</span><span class="o">=</span><span class="s2">&quot;user_id&quot;</span><span class="p">,</span> <span class="n">session_gap</span><span class="o">=</span><span class="mi">30</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">se</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span><span class="n">timestamp_col</span><span class="o">=</span><span class="s2">"timestamp"</span><span class="p">,</span> <span class="n">split_by</span><span class="o">=</span><span class="s2">"user_id"</span><span class="p">,</span> <span class="n">session_gap</span><span class="o">=</span><span class="mi">30</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">res</span> <span class="o">=</span> <span class="n">se</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">res</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <span class="go">     user_id                        timestamp device_type page_category event_type  time_on_page  price_viewed  timestamp_session_id</span>
@@ -737,10 +737,10 @@ otherwise the pipeline should use the skrub <a class="reference internal" href="
 This can help with creating multiple session IDs based on the same timestamp.
 For example, we might want to create sessions based on users, and based on users
 and their device:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">se</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span><span class="n">timestamp_col</span><span class="o">=</span><span class="s2">&quot;timestamp&quot;</span><span class="p">,</span>
-<span class="gp">... </span><span class="n">split_by</span><span class="o">=</span><span class="s2">&quot;user_id&quot;</span><span class="p">,</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">se</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span><span class="n">timestamp_col</span><span class="o">=</span><span class="s2">"timestamp"</span><span class="p">,</span>
+<span class="gp">... </span><span class="n">split_by</span><span class="o">=</span><span class="s2">"user_id"</span><span class="p">,</span>
 <span class="gp">... </span><span class="n">session_gap</span><span class="o">=</span><span class="mi">30</span> <span class="o">*</span> <span class="mi">60</span><span class="p">,</span>
-<span class="gp">... </span><span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;user&quot;</span>
+<span class="gp">... </span><span class="n">suffix</span><span class="o">=</span><span class="s2">"user"</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">res</span> <span class="o">=</span> <span class="n">se</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">res</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -752,10 +752,10 @@ and their device:</p>
 <span class="go">4  user_0149 2024-01-04 10:00:15.882835+00:00  ...         4.44             49</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">se</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span><span class="n">timestamp_col</span><span class="o">=</span><span class="s2">&quot;timestamp&quot;</span><span class="p">,</span>
-<span class="gp">... </span><span class="n">split_by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;user_id&quot;</span><span class="p">,</span> <span class="s2">&quot;device_type&quot;</span><span class="p">],</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">se</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span><span class="n">timestamp_col</span><span class="o">=</span><span class="s2">"timestamp"</span><span class="p">,</span>
+<span class="gp">... </span><span class="n">split_by</span><span class="o">=</span><span class="p">[</span><span class="s2">"user_id"</span><span class="p">,</span> <span class="s2">"device_type"</span><span class="p">],</span>
 <span class="gp">... </span><span class="n">session_gap</span><span class="o">=</span><span class="mi">30</span> <span class="o">*</span> <span class="mi">60</span><span class="p">,</span>
-<span class="gp">... </span><span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;user_device&quot;</span>
+<span class="gp">... </span><span class="n">suffix</span><span class="o">=</span><span class="s2">"user_device"</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">res</span> <span class="o">=</span> <span class="n">se</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">res</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>

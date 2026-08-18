@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -715,29 +715,29 @@ for other search methods.</p>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X_a</span><span class="p">,</span> <span class="n">y_a</span> <span class="o">=</span> <span class="n">make_classification</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="n">X_a</span><span class="p">),</span> <span class="n">skrub</span><span class="o">.</span><span class="n">y</span><span class="p">(</span><span class="n">y_a</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">selector</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_int</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">logistic</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_float</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;C&quot;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">selector</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_int</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">'k'</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">logistic</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_float</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"C"</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hgb</span> <span class="o">=</span> <span class="n">HistGradientBoostingClassifier</span><span class="p">(</span>
-<span class="gp">... </span>   <span class="n">learning_rate</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_float</span><span class="p">(</span><span class="mf">.01</span><span class="p">,</span> <span class="mf">.5</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;learning_rate&quot;</span><span class="p">),</span>
+<span class="gp">... </span>   <span class="n">learning_rate</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_float</span><span class="p">(</span><span class="mf">.01</span><span class="p">,</span> <span class="mf">.5</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"learning_rate"</span><span class="p">),</span>
 <span class="gp">... </span>   <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">choose_from</span><span class="p">(</span>
-<span class="gp">... </span><span class="p">{</span><span class="s2">&quot;logistic&quot;</span><span class="p">:</span> <span class="n">logistic</span><span class="p">,</span> <span class="s2">&quot;hgb&quot;</span><span class="p">:</span> <span class="n">hgb</span><span class="p">,</span> <span class="s2">&quot;dummy&quot;</span><span class="p">:</span> <span class="n">DummyClassifier</span><span class="p">()},</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;classifier&quot;</span>
+<span class="gp">... </span><span class="p">{</span><span class="s2">"logistic"</span><span class="p">:</span> <span class="n">logistic</span><span class="p">,</span> <span class="s2">"hgb"</span><span class="p">:</span> <span class="n">hgb</span><span class="p">,</span> <span class="s2">"dummy"</span><span class="p">:</span> <span class="n">DummyClassifier</span><span class="p">()},</span> <span class="n">name</span><span class="o">=</span><span class="s2">"classifier"</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">selector</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_param_grid</span><span class="p">())</span>
-<span class="go">- k: choose_int(4, 20, log=True, name=&#39;k&#39;)</span>
-<span class="go">  classifier: &#39;logistic&#39;</span>
-<span class="go">  C: choose_float(0.1, 10.0, log=True, name=&#39;C&#39;)</span>
-<span class="go">- k: choose_int(4, 20, log=True, name=&#39;k&#39;)</span>
-<span class="go">  classifier: &#39;hgb&#39;</span>
-<span class="go">  learning_rate: choose_float(0.01, 0.5, log=True, name=&#39;learning_rate&#39;)</span>
-<span class="go">- k: choose_int(4, 20, log=True, name=&#39;k&#39;)</span>
-<span class="go">  classifier: &#39;dummy&#39;</span>
+<span class="go">- k: choose_int(4, 20, log=True, name='k')</span>
+<span class="go">  classifier: 'logistic'</span>
+<span class="go">  C: choose_float(0.1, 10.0, log=True, name='C')</span>
+<span class="go">- k: choose_int(4, 20, log=True, name='k')</span>
+<span class="go">  classifier: 'hgb'</span>
+<span class="go">  learning_rate: choose_float(0.01, 0.5, log=True, name='learning_rate')</span>
+<span class="go">- k: choose_int(4, 20, log=True, name='k')</span>
+<span class="go">  classifier: 'dummy'</span>
 </pre></div>
 </div>
 <p>Now, we can create a randomized search using Optuna as the backend:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_randomized_search</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">backend</span><span class="o">=</span><span class="s2">&quot;optuna&quot;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_randomized_search</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">backend</span><span class="o">=</span><span class="s2">"optuna"</span><span class="p">)</span>
 <span class="go">Running optuna search for study skrub_randomized_search_c4af73b2-45fb-49ca-9f06-092d74aa8118 in storage .../tmpuor7hqjm_skrub_optuna_search_storage/optuna_storage</span>
 </pre></div>
 </div>
@@ -758,7 +758,7 @@ for other search methods.</p>
 </div>
 <p>The best learner and best hyperparameters can be accessed as usual:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">search</span><span class="o">.</span><span class="n">best_learner_</span><span class="o">.</span><span class="n">describe_params</span><span class="p">()</span>
-<span class="go">{&#39;k&#39;: 4, &#39;learning_rate&#39;: 0.01314593370942781, &#39;classifier&#39;: &#39;hgb&#39;}</span>
+<span class="go">{'k': 4, 'learning_rate': 0.01314593370942781, 'classifier': 'hgb'}</span>
 </pre></div>
 </div>
 <p><a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.make_randomized_search.html#skrub.DataOp.skb.make_randomized_search" title="skrub.DataOp.skb.make_randomized_search"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_randomized_search()</span></code></a>
@@ -778,8 +778,8 @@ This can be done by providing the <code class="docutils literal notranslate"><sp
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">search</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_randomized_search</span><span class="p">(</span>
     <span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
     <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-    <span class="n">backend</span><span class="o">=</span><span class="s2">&quot;optuna&quot;</span><span class="p">,</span>
-    <span class="n">storage</span><span class="o">=</span><span class="s2">&quot;sqlite:///optuna_study.db&quot;</span><span class="p">,</span>  <span class="c1"># Use a SQLite database file</span>
+    <span class="n">backend</span><span class="o">=</span><span class="s2">"optuna"</span><span class="p">,</span>
+    <span class="n">storage</span><span class="o">=</span><span class="s2">"sqlite:///optuna_study.db"</span><span class="p">,</span>  <span class="c1"># Use a SQLite database file</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -817,10 +817,10 @@ more information.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">objective</span><span class="p">(</span><span class="n">trial</span><span class="p">):</span>
 <span class="gp">... </span>   <span class="n">learner</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">(</span><span class="n">choose</span><span class="o">=</span><span class="n">trial</span><span class="p">)</span>
 <span class="gp">... </span>   <span class="n">cv_results</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">cross_validate</span><span class="p">(</span><span class="n">learner</span><span class="p">,</span> <span class="n">environment</span><span class="o">=</span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_data</span><span class="p">(),</span> <span class="n">cv</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-<span class="gp">... </span>   <span class="k">return</span> <span class="n">cv_results</span><span class="p">[</span><span class="s2">&quot;test_score&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="gp">... </span>   <span class="k">return</span> <span class="n">cv_results</span><span class="p">[</span><span class="s2">"test_score"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">study</span> <span class="o">=</span> <span class="n">optuna</span><span class="o">.</span><span class="n">create_study</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="s2">&quot;maximize&quot;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">study</span> <span class="o">=</span> <span class="n">optuna</span><span class="o">.</span><span class="n">create_study</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="s2">"maximize"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">study</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="n">objective</span><span class="p">,</span> <span class="n">n_trials</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">best_params</span> <span class="o">=</span> <span class="n">study</span><span class="o">.</span><span class="n">best_params</span>
 </pre></div>
@@ -837,7 +837,7 @@ more information.</p>
 </div>
 <p>Then, we can inspect the parameters as usual:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">best_learner</span><span class="o">.</span><span class="n">describe_params</span><span class="p">()</span>
-<span class="go">{&#39;k&#39;: 12, &#39;learning_rate&#39;: 0.06401143720094754, &#39;classifier&#39;: &#39;hgb&#39;}</span>
+<span class="go">{'k': 12, 'learning_rate': 0.06401143720094754, 'classifier': 'hgb'}</span>
 </pre></div>
 </div>
 <p>You can find a more complete example in <a class="reference internal" href="../../../auto_examples/02_data_ops/1131_optuna_choices.html#example-optuna-choices"><span class="std std-ref">Tuning DataOps with Optuna</span></a>.</p>

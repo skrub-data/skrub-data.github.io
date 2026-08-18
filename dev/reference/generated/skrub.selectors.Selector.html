@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>Selector<a class="headerlink" href="#selector" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.selectors.Selector">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">Selector</span></span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/selectors/_base.py#L479"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">Selector</span></span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/selectors/_base.py#L479"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector" title="Link to this definition">#</a></dt>
 <dd><p>Pattern for matching columns in a dataframe.</p>
 <p>A <code class="docutils literal notranslate"><span class="pre">Selector</span></code> is a reusable rule for selecting columns based on various
 criteria (data type, name pattern, content properties, etc.). Selectors
@@ -823,22 +823,22 @@ builder functions such as <a class="reference internal" href="skrub.selectors.al
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-<span class="gp">... </span>    <span class="s1">&#39;height_mm&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">297.0</span><span class="p">,</span> <span class="mf">420.0</span><span class="p">],</span>
-<span class="gp">... </span>    <span class="s1">&#39;width_mm&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
-<span class="gp">... </span>    <span class="s1">&#39;kind&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;A4&#39;</span><span class="p">,</span> <span class="s1">&#39;A3&#39;</span><span class="p">],</span>
-<span class="gp">... </span>    <span class="s1">&#39;ID&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">'height_mm'</span><span class="p">:</span> <span class="p">[</span><span class="mf">297.0</span><span class="p">,</span> <span class="mf">420.0</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">'width_mm'</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">'kind'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'A4'</span><span class="p">,</span> <span class="s1">'A3'</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">'ID'</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
 <span class="gp">... </span><span class="p">})</span>
 </pre></div>
 </div>
 <p>Use a selector to get the names of matching columns:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">()</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">[&#39;height_mm&#39;, &#39;width_mm&#39;, &#39;ID&#39;]</span>
+<span class="go">['height_mm', 'width_mm', 'ID']</span>
 </pre></div>
 </div>
 <p>Selectors can be combined to create complex selection rules. For example,
 to select numeric columns but exclude the ‘ID’ column:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">()</span> <span class="o">-</span> <span class="s1">&#39;ID&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">[&#39;height_mm&#39;, &#39;width_mm&#39;]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">numeric</span><span class="p">()</span> <span class="o">-</span> <span class="s1">'ID'</span><span class="p">)</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="go">['height_mm', 'width_mm']</span>
 </pre></div>
 </div>
 <p>Use in data transformations, for example to apply a scaler only to numeric columns:</p>
@@ -864,7 +864,7 @@ to select numeric columns but exclude the ‘ID’ column:</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.selectors.Selector.expand">
-<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/selectors/_base.py#L565"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">expand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/selectors/_base.py#L565"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand" title="Link to this definition">#</a></dt>
 <dd><p>Get the names of columns matched by the selector in a list.</p>
 <p>This method evaluates the selector’s matching criteria against each column
 in the dataframe and returns the names of columns that match. This can be
@@ -893,17 +893,17 @@ useful to extract column names to be used in dataframe operations.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">some_selector</span> <span class="o">=</span> <span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;*_mm&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">some_selector</span> <span class="o">=</span> <span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">"*_mm"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;height_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;width_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">188.5</span><span class="p">,</span> <span class="mf">210.0</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A5&quot;</span><span class="p">,</span> <span class="s2">&quot;A4&quot;</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;ID&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"height_mm"</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"width_mm"</span><span class="p">:</span> <span class="p">[</span><span class="mf">188.5</span><span class="p">,</span> <span class="mf">210.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"kind"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"A5"</span><span class="p">,</span> <span class="s2">"A4"</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"ID"</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">some_selector</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="go">[&#39;kind&#39;, &#39;ID&#39;]</span>
+<span class="go">['kind', 'ID']</span>
 </pre></div>
 </div>
 <p>Use to select columns in a dataframe:</p>
@@ -917,7 +917,7 @@ useful to extract column names to be used in dataframe operations.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.selectors.Selector.expand_index">
-<span class="sig-name descname"><span class="pre">expand_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/selectors/_base.py#L617"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand_index" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">expand_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/selectors/_base.py#L617"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.Selector.expand_index" title="Link to this definition">#</a></dt>
 <dd><p>Get the indices of columns matched by the selector in a list.</p>
 <p>This method evaluates the selector against each column and returns the
 positional indices (0, 1, 2, …) of matching columns instead of their names.</p>
@@ -946,13 +946,13 @@ selector matches.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">some_selector</span> <span class="o">=</span> <span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;*_mm&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">some_selector</span> <span class="o">=</span> <span class="o">~</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">"*_mm"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;height_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;width_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">188.5</span><span class="p">,</span> <span class="mf">210.0</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A5&quot;</span><span class="p">,</span> <span class="s2">&quot;A4&quot;</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;ID&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"height_mm"</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"width_mm"</span><span class="p">:</span> <span class="p">[</span><span class="mf">188.5</span><span class="p">,</span> <span class="mf">210.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"kind"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"A5"</span><span class="p">,</span> <span class="s2">"A4"</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"ID"</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">some_selector</span><span class="o">.</span><span class="n">expand_index</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>

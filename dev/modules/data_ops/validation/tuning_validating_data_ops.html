@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -701,18 +701,18 @@ the same way.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">diabetes_df</span> <span class="o">=</span> <span class="n">load_diabetes</span><span class="p">(</span><span class="n">as_frame</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="s2">&quot;frame&quot;</span><span class="p">]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">diabetes_df</span> <span class="o">=</span> <span class="n">load_diabetes</span><span class="p">(</span><span class="n">as_frame</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="s2">"frame"</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>In the original data, all features and the target are in the same dataframe.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="n">diabetes_df</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"data"</span><span class="p">,</span> <span class="n">diabetes_df</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>We build our design matrix by dropping the target. Note we use
 <code class="docutils literal notranslate"><span class="pre">errors=&quot;ignore&quot;</span></code> so that pandas does not raise an error if the column we want
 to drop is already missing. Indeed, when we will need to make actual useful
 predictions on unlabelled data, the “target” column will not be available.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">&quot;target&quot;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">()</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">"target"</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">"ignore"</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>We use <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_X()</span></code></a> to indicate that this
@@ -720,7 +720,7 @@ intermediate result (the dataframe obtained after dropping “target”) is the
 <code class="docutils literal notranslate"><span class="pre">X</span></code> design matrix. This is the dataframe that will be split into a training
 and a testing part when we split our dataset or perform cross-validation.</p>
 <p>Similarly for <code class="docutils literal notranslate"><span class="pre">y</span></code>, we use <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code></a>:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;target&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"target"</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Now we can add our supervised estimator:</p>
@@ -774,7 +774,7 @@ dataframes are split using the provided split function (by default
 scikit-learn’s <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html#sklearn.model_selection.train_test_split" title="(in scikit-learn v1.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.train_test_split()</span></code></a>).</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span><span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
-<span class="go">dict_keys([&#39;X_train&#39;, &#39;X_test&#39;, &#39;y_train&#39;, &#39;y_test&#39;, &#39;train&#39;, &#39;test&#39;, &#39;X&#39;, &#39;y&#39;])</span>
+<span class="go">dict_keys(['X_train', 'X_test', 'y_train', 'y_test', 'train', 'test', 'X', 'y'])</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">train</span></code> and <code class="docutils literal notranslate"><span class="pre">test</span></code> are the full dictionaries corresponding to the training
@@ -784,15 +784,15 @@ dictionaries, for the nodes marked with
 and <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.mark_as_y.html#skrub.DataOp.skb.mark_as_y" title="skrub.DataOp.skb.mark_as_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.mark_as_y()</span></code></a>.</p>
 <p>We can now fit our pipeline on the training data:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">"train"</span><span class="p">])</span>
 <span class="go">SkrubLearner(data_op=&lt;Apply Ridge&gt;)</span>
 </pre></div>
 </div>
 <p>Only the training part of <code class="docutils literal notranslate"><span class="pre">X</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> are used. The subsequent steps are
 evaluated, using this data, to fit the rest of the pipeline.</p>
 <p>And we can obtain predictions on the test part:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">test_pred</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">test_y_true</span> <span class="o">=</span> <span class="n">split</span><span class="p">[</span><span class="s2">&quot;y_test&quot;</span><span class="p">]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">test_pred</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">"test"</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">test_y_true</span> <span class="o">=</span> <span class="n">split</span><span class="p">[</span><span class="s2">"y_test"</span><span class="p">]</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">r2_score</span>
@@ -835,18 +835,18 @@ cross-validation we must group products by seller. We do it with
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">LeaveOneGroupOut</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;df&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">groups</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;seller&quot;</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;price&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">cv</span><span class="o">=</span><span class="n">LeaveOneGroupOut</span><span class="p">(),</span> <span class="n">split_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;groups&quot;</span><span class="p">:</span> <span class="n">groups</span><span class="p">}</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"df"</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">groups</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"seller"</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">"description"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">]]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">cv</span><span class="o">=</span><span class="n">LeaveOneGroupOut</span><span class="p">(),</span> <span class="n">split_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">"groups"</span><span class="p">:</span> <span class="n">groups</span><span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;category&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"category"</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">DummyClassifier</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>The train set only contains data from the “supermarket.com” seller.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;X_train&quot;</span><span class="p">]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">"X_train"</span><span class="p">]</span>
 <span class="go">  description  price</span>
 <span class="go">1      hammer     15</span>
 <span class="go">3     usb key      9</span>
@@ -854,7 +854,7 @@ cross-validation we must group products by seller. We do it with
 </pre></div>
 </div>
 <p>The test set only contains data from the “bestproducts.com” seller.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;X_test&quot;</span><span class="p">]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span><span class="p">[</span><span class="s2">"X_test"</span><span class="p">]</span>
 <span class="go">   description  price</span>
 <span class="go">0       screen    100</span>
 <span class="go">2     keyboard     20</span>
@@ -879,8 +879,8 @@ computed when scoring the learner – so for example, sample weights can be
 computed dynamically.</p>
 <p>Using the same toy dataset as above, suppose we want to give more weight to more
 expensive products:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;price&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">(</span><span class="n">cv</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;category&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">"description"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">]]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">(</span><span class="n">cv</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"category"</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">DummyClassifier</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -892,9 +892,9 @@ expensive products:</p>
 </pre></div>
 </div>
 <p>We set the scoring to provide the sample weights:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sample_weight</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sample_weight</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="s2">&quot;accuracy&quot;</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;sample_weight&quot;</span><span class="p">:</span> <span class="n">sample_weight</span><span class="p">}</span>
+<span class="gp">... </span>    <span class="s2">"accuracy"</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">"sample_weight"</span><span class="p">:</span> <span class="n">sample_weight</span><span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">cross_validate</span><span class="p">()</span>
 <span class="go">   fit_time  score_time  test_accuracy</span>
 <span class="go">0  0.003045    0.003275       0.888889</span>
@@ -906,13 +906,13 @@ useful to control what should be used as the default scoring metric for our
 learner, just as the <code class="docutils literal notranslate"><span class="pre">cv</span></code> parameter of <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.mark_as_X.html#skrub.DataOp.skb.mark_as_X" title="skrub.DataOp.skb.mark_as_X"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.mark_as_X()</span></code></a> defines
 the default cross-validation splitting strategy.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">split</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="s1">&#39;neg_log_loss&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="s1">'neg_log_loss'</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">'train'</span><span class="p">])</span>
 <span class="go">SkrubLearner(data_op=&lt;Scoring &lt;Apply DummyClassifier&gt; (1 scorers)&gt;</span>
 <span class="go">    This DataOp will be scored with:</span>
-<span class="go">      - &#39;neg_log_loss&#39;</span>
+<span class="go">      - 'neg_log_loss'</span>
 <span class="go">    Use .skb.cross_validate(…) or .skb.make_learner(…).score(…) to compute scores.)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">'test'</span><span class="p">])</span>
 <span class="go">-0.6365141682948128</span>
 </pre></div>
 </div>
@@ -925,13 +925,13 @@ default corresponding key in the result is <code class="docutils literal notrans
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="(in scikit-learn v1.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">cross_validate()</span></code></a>):</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span>
 <span class="gp">... </span>    <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
-<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
-<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="s1">&#39;roc_auc&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="s1">'accuracy'</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="s1">'roc_auc'</span><span class="p">)</span>
 <span class="gp">... </span>    <span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
-<span class="gp">... </span>    <span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">])</span>
-<span class="gp">... </span>    <span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">])</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">"train"</span><span class="p">])</span>
+<span class="gp">... </span>    <span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s2">"test"</span><span class="p">])</span>
 <span class="gp">... </span><span class="p">)</span>
-<span class="go">{&#39;score&#39;: 0.6666666666666666, &#39;accuracy&#39;: 0.6666666666666666, &#39;roc_auc&#39;: 0.5}</span>
+<span class="go">{'score': 0.6666666666666666, 'accuracy': 0.6666666666666666, 'roc_auc': 0.5}</span>
 </pre></div>
 </div>
 <p><a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a> only changes how scoring is performed
@@ -955,16 +955,16 @@ need the predictions in addition to the scores (for example to create plots,
 study calibration, etc.) we can pass <code class="docutils literal notranslate"><span class="pre">return_predictions=True</span></code> to the
 learner’s <code class="docutils literal notranslate"><span class="pre">score()</span></code> method.</p>
 <p>Instead of doing the following, which computes the predictions twice:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">predictions</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">])</span> <span class="c1"># used for plotting etc.</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">'test'</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">predictions</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">'test'</span><span class="p">])</span> <span class="c1"># used for plotting etc.</span>
 </pre></div>
 </div>
 <p>We can write:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span><span class="p">,</span> <span class="n">predictions</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">],</span> <span class="n">return_predictions</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span><span class="p">,</span> <span class="n">predictions</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">'test'</span><span class="p">],</span> <span class="n">return_predictions</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span>
-<span class="go">{&#39;neg_log_loss&#39;: -0.6365141682948128}</span>
+<span class="go">{'neg_log_loss': -0.6365141682948128}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">predictions</span>
-<span class="go">{&#39;predict_proba&#39;: array([[0.66666667, 0.33333333],</span>
+<span class="go">{'predict_proba': array([[0.66666667, 0.33333333],</span>
 <span class="go">       [0.66666667, 0.33333333],</span>
 <span class="go">       [0.66666667, 0.33333333]])}</span>
 </pre></div>
@@ -976,9 +976,9 @@ used, it will always be empty.</p>
 would like to use the learner’s <code class="docutils literal notranslate"><span class="pre">score</span></code> method to get the scores, we can
 inject the precomputed predictions in the input environment, under the special
 key <code class="docutils literal notranslate"><span class="pre">&quot;_skrub_predictions&quot;</span></code>:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">predict_proba</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]</span> <span class="o">|</span> <span class="p">{</span><span class="s1">&#39;_skrub_predictions&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;predict_proba&#39;</span><span class="p">:</span> <span class="n">predict_proba</span><span class="p">}})</span>
-<span class="go">{&#39;neg_log_loss&#39;: -0.63...}</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">predict_proba</span> <span class="o">=</span> <span class="n">learner</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">'test'</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">split</span><span class="p">[</span><span class="s1">'test'</span><span class="p">]</span> <span class="o">|</span> <span class="p">{</span><span class="s1">'_skrub_predictions'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'predict_proba'</span><span class="p">:</span> <span class="n">predict_proba</span><span class="p">}})</span>
+<span class="go">{'neg_log_loss': -0.63...}</span>
 </pre></div>
 </div>
 <p>With the above, <code class="docutils literal notranslate"><span class="pre">predict()</span></code> is not called during scoring. As for

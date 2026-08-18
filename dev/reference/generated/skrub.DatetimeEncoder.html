@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -785,7 +785,7 @@
 <h1>DatetimeEncoder<a class="headerlink" href="#datetimeencoder" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">DatetimeEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hour'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_weekday</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_total_seconds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_day_of_year</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">periodic_encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_datetime_encoder.py#L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">DatetimeEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hour'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_weekday</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_total_seconds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_day_of_year</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">periodic_encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_datetime_encoder.py#L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder" title="Link to this definition">#</a></dt>
 <dd><p>Extract temporal features such as month, day of the week, … from a datetime column.</p>
 <details class="admonition-a-note-on-using-single-column-transformations admonition">
 <summary class="admonition-title">A note on using single column transformations </summary>
@@ -795,7 +795,7 @@
 </pre></div>
 </div>
 <p>To apply to selected columns:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">DatetimeEncoder</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;col_name_1&#39;</span><span class="p">,</span> <span class="s1">&#39;col_name_2&#39;</span><span class="p">])</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ApplyToCols</span><span class="p">(</span><span class="n">DatetimeEncoder</span><span class="p">(),</span> <span class="n">cols</span><span class="o">=</span><span class="p">[</span><span class="s1">'col_name_1'</span><span class="p">,</span> <span class="s1">'col_name_2'</span><span class="p">])</span>
 </pre></div>
 </div>
 </details>
@@ -880,7 +880,7 @@ generating too many features:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">login</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
-<span class="gp">... </span>        <span class="p">[</span><span class="s2">&quot;2024-05-13T12:05:36&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;2024-05-15T13:46:02&quot;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;login&quot;</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="p">[</span><span class="s2">"2024-05-13T12:05:36"</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">"2024-05-15T13:46:02"</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">"login"</span><span class="p">)</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">login</span>
 <span class="go">0   2024-05-13 12:05:36</span>
@@ -896,7 +896,7 @@ generating too many features:</p>
 </pre></div>
 </div>
 <p>We can ask for a finer resolution:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="s1">&#39;second&#39;</span><span class="p">,</span> <span class="n">add_total_seconds</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="s1">'second'</span><span class="p">,</span> <span class="n">add_total_seconds</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="n">login</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="go">   login_year  login_month  login_day  login_hour  login_minute  login_second</span>
@@ -912,7 +912,7 @@ the standard library
 <a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime.isoweekday" title="(in Python v3.14)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">datetime.isoweekday()</span></code></a> and polars
 <a class="reference external" href="https://docs.pola.rs/py-polars/html/reference/series/api/polars.Series.dt.weekday.html#polars.Series.dt.weekday" title="(in Polars)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">weekday</span></code></a>, but not with pandas
 <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.dt.day_of_week.html#pandas.Series.dt.day_of_week" title="(in pandas v3.0.5)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">day_of_week</span></code></a>, which counts days from 0.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%A = %w&#39;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'%A = %w'</span><span class="p">)</span>
 <span class="go">0       Monday = 1</span>
 <span class="go">1              NaN</span>
 <span class="go">2    Wednesday = 3</span>
@@ -932,24 +932,24 @@ the standard library
 <p>When a column contains only dates without time information, the time features
 are discarded, regardless of <code class="docutils literal notranslate"><span class="pre">resolution</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">birthday</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;2024-04-14&#39;</span><span class="p">,</span> <span class="s1">&#39;2024-05-15&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;birthday&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">'2024-04-14'</span><span class="p">,</span> <span class="s1">'2024-05-15'</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">'birthday'</span><span class="p">)</span>
 <span class="gp">... </span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="s1">&#39;second&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">resolution</span><span class="o">=</span><span class="s1">'second'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">birthday</span><span class="p">)</span>
 <span class="go">   birthday_year  birthday_month  birthday_day  birthday_total_seconds</span>
 <span class="go">0         2024.0             4.0          14.0            1.713053e+09</span>
 <span class="go">1         2024.0             5.0          15.0            1.715731e+09</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">extracted_features_</span>
-<span class="go">[&#39;year&#39;, &#39;month&#39;, &#39;day&#39;, &#39;total_seconds&#39;]</span>
+<span class="go">['year', 'month', 'day', 'total_seconds']</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">all_outputs_</span>
-<span class="go">[&#39;birthday_year&#39;, &#39;birthday_month&#39;, &#39;birthday_day&#39;, &#39;birthday_total_seconds&#39;]</span>
+<span class="go">['birthday_year', 'birthday_month', 'birthday_day', 'birthday_total_seconds']</span>
 </pre></div>
 </div>
 <p>(The number of seconds since Epoch can still be extracted but not “hour”,
 “minute”, etc.)</p>
 <p>Non-datetime columns are rejected by raising a <a class="reference internal" href="skrub.core.RejectColumn.html#skrub.core.RejectColumn" title="skrub.core.RejectColumn"><code class="xref py py-class docutils literal notranslate"><span class="pre">RejectColumn</span></code></a>
 exception.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;2024-04-14&#39;</span><span class="p">,</span> <span class="s1">&#39;2024-05-15&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;birthday&#39;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">'2024-04-14'</span><span class="p">,</span> <span class="s1">'2024-05-15'</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">'birthday'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
 <span class="go">0    2024-04-14</span>
 <span class="go">1    2024-05-15</span>
@@ -957,7 +957,7 @@ exception.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">DatetimeEncoder</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
-<span class="gr">skrub.core.RejectColumn</span>: <span class="n">Column &#39;birthday&#39; does not have Date or Datetime dtype.</span>
+<span class="gr">skrub.core.RejectColumn</span>: <span class="n">Column 'birthday' does not have Date or Datetime dtype.</span>
 </pre></div>
 </div>
 <p><a class="reference internal" href="skrub.ToDatetime.html#skrub.ToDatetime" title="skrub.ToDatetime"><code class="xref py py-class docutils literal notranslate"><span class="pre">ToDatetime</span></code></a>: can be used for converting strings to datetimes.</p>
@@ -973,10 +973,10 @@ exception.</p>
 <p>If the input column has a time zone, the extracted features are in this time zone.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
-<span class="gp">... </span>        <span class="p">[</span><span class="s2">&quot;2024-05-13T12:05:36&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;2024-05-15T13:46:02&quot;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;login&quot;</span><span class="p">)</span>
-<span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">tz_localize</span><span class="p">(</span><span class="s1">&#39;Europe/Paris&#39;</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="p">[</span><span class="s2">"2024-05-13T12:05:36"</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">"2024-05-15T13:46:02"</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">"login"</span><span class="p">)</span>
+<span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">tz_localize</span><span class="p">(</span><span class="s1">'Europe/Paris'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">DatetimeEncoder</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)[</span><span class="s1">&#39;login_hour&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)[</span><span class="s1">'login_hour'</span><span class="p">]</span>
 <span class="go">0    12.0</span>
 <span class="go">1     NaN</span>
 <span class="go">2    13.0</span>
@@ -986,13 +986,13 @@ exception.</p>
 <p>No special care is taken to convert inputs to <code class="docutils literal notranslate"><span class="pre">transform</span></code> to the same time
 zone as the column the encoder was fitted on. The features are always in the
 time zone of the input.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login_sp</span> <span class="o">=</span> <span class="n">login</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">tz_convert</span><span class="p">(</span><span class="s1">&#39;America/Sao_Paulo&#39;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">login_sp</span> <span class="o">=</span> <span class="n">login</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">tz_convert</span><span class="p">(</span><span class="s1">'America/Sao_Paulo'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">login_sp</span>
 <span class="go">0   2024-05-13 07:05:36-03:00</span>
 <span class="go">1                         NaT</span>
 <span class="go">2   2024-05-15 08:46:02-03:00</span>
 <span class="go">Name: login, dtype: datetime64[..., America/Sao_Paulo]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">login_sp</span><span class="p">)[</span><span class="s1">&#39;login_hour&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">login_sp</span><span class="p">)[</span><span class="s1">'login_hour'</span><span class="p">]</span>
 <span class="go">0    7.0</span>
 <span class="go">1    NaN</span>
 <span class="go">2    8.0</span>
@@ -1001,12 +1001,12 @@ time zone of the input.</p>
 </div>
 <p>To ensure datetime columns are in a consistent timezones, use <code class="docutils literal notranslate"><span class="pre">ToDatetime</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">DatetimeEncoder</span><span class="p">())</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)[</span><span class="s1">&#39;login_hour&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)[</span><span class="s1">'login_hour'</span><span class="p">]</span>
 <span class="go">0    12.0</span>
 <span class="go">1     NaN</span>
 <span class="go">2    13.0</span>
 <span class="go">Name: login_hour, dtype: float32</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">login_sp</span><span class="p">)[</span><span class="s1">&#39;login_hour&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">login_sp</span><span class="p">)[</span><span class="s1">'login_hour'</span><span class="p">]</span>
 <span class="go">0    12.0</span>
 <span class="go">1     NaN</span>
 <span class="go">2    13.0</span>
@@ -1020,7 +1020,7 @@ functions or splines by setting <code class="docutils literal notranslate"><span
 <code class="docutils literal notranslate"><span class="pre">periodic_encoder=&quot;spline&quot;</span></code> respectively.
 See <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html">this example</a>
 in scikit-learn to know more about cyclical feature engineering.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">periodic_encoding</span><span class="o">=</span><span class="s2">&quot;circular&quot;</span><span class="p">))</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">ToDatetime</span><span class="p">(),</span> <span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">periodic_encoding</span><span class="o">=</span><span class="s2">"circular"</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">login</span><span class="p">)</span>
 <span class="go">   login_year  ...  login_hour_circular_1</span>
 <span class="go">0      2024.0  ...              -1.000000</span>
@@ -1030,8 +1030,8 @@ in scikit-learn to know more about cyclical feature engineering.</p>
 </div>
 <p>Added features can be explored using <code class="docutils literal notranslate"><span class="pre">DatetimeEncoder.all_outputs_</span></code>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">all_outputs_</span>
-<span class="go">[&#39;login_year&#39;, &#39;login_total_seconds&#39;, &#39;login_month_circular_0&#39;, &#39;login_month_circular_1&#39;,</span>
-<span class="go">    &#39;login_day_circular_0&#39;, &#39;login_day_circular_1&#39;, &#39;login_hour_circular_0&#39;, &#39;login_hour_circular_1&#39;]</span>
+<span class="go">['login_year', 'login_total_seconds', 'login_month_circular_0', 'login_month_circular_1',</span>
+<span class="go">    'login_day_circular_0', 'login_day_circular_1', 'login_hour_circular_0', 'login_hour_circular_1']</span>
 </pre></div>
 </div>
 <p class="rubric">Methods</p>
@@ -1066,7 +1066,7 @@ in scikit-learn to know more about cyclical feature engineering.</p>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_single_column_transformer.py#L170"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.fit" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_single_column_transformer.py#L170"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.fit" title="Link to this definition">#</a></dt>
 <dd><p>Fit the transformer.</p>
 <p>This default implementation simply calls <code class="docutils literal notranslate"><span class="pre">fit_transform()</span></code> and
 returns <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p>
@@ -1093,7 +1093,7 @@ transform a single column, not a whole dataframe.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_datetime_encoder.py#L360"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_datetime_encoder.py#L360"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit the encoder and transform a column.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1115,7 +1115,7 @@ transform a single column, not a whole dataframe.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.get_feature_names_out">
-<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_datetime_encoder.py#L505"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_feature_names_out" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_datetime_encoder.py#L505"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_feature_names_out" title="Link to this definition">#</a></dt>
 <dd><p>Get output feature names for transformation.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1135,7 +1135,7 @@ transform a single column, not a whole dataframe.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1156,7 +1156,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_single_column_transformer.py#L148"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_single_column_transformer.py#L148"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Default no-op implementation for set_output.</p>
 <p>Skrub transformers already output dataframes of the correct type by
 default so there is usually no need for set_output to do anything.</p>
@@ -1180,7 +1180,7 @@ inheriting from <code class="docutils literal notranslate"><span class="pre">Tra
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -1204,7 +1204,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.set_transform_request">
-<span class="sig-name descname"><span class="pre">set_transform_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1434"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_transform_request" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_transform_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'$UNCHANGED$'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_metadata_requests.py#L1434"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.set_transform_request" title="Link to this definition">#</a></dt>
 <dd><p>Configure whether metadata should be requested to be passed to the <code class="docutils literal notranslate"><span class="pre">transform</span></code> method.</p>
 <p>Note that this method is only relevant when this estimator is used as a
 sub-estimator within a <a class="reference external" href="https://scikit-learn.org/stable/glossary.html#term-meta-estimator" title="(in scikit-learn v1.9)"><span class="xref std std-term">meta-estimator</span></a> and metadata routing is enabled
@@ -1242,7 +1242,7 @@ parameters and not others.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DatetimeEncoder.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_datetime_encoder.py#L432"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_datetime_encoder.py#L432"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DatetimeEncoder.transform" title="Link to this definition">#</a></dt>
 <dd><p>Transform a column.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>

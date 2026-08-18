@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>skrub.DataOp.skb.describe_param_grid<a class="headerlink" href="#skrub-dataop-skb-describe-param-grid" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.describe_param_grid">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">describe_param_grid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_data_ops/_skrub_namespace.py#L1568"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.describe_param_grid" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">describe_param_grid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_data_ops/_skrub_namespace.py#L1568"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.describe_param_grid" title="Link to this definition">#</a></dt>
 <dd><p>Describe the hyper-parameters extracted from choices in the DataOp.</p>
 <p>DataOps can contain choices, ranges of possible values to be tuned
 by hyperparameter search. This function provides a description of the
@@ -816,47 +816,47 @@ DataOp.</p>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dim_reduction</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">choose_from</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;PCA&quot;</span><span class="p">:</span> <span class="n">PCA</span><span class="p">(</span>
+<span class="gp">... </span>        <span class="s2">"PCA"</span><span class="p">:</span> <span class="n">PCA</span><span class="p">(</span>
 <span class="gp">... </span>            <span class="n">n_components</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_int</span><span class="p">(</span>
-<span class="gp">... </span>                <span class="mi">5</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;n_components&quot;</span>
+<span class="gp">... </span>                <span class="mi">5</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"n_components"</span>
 <span class="gp">... </span>            <span class="p">)</span>
 <span class="gp">... </span>        <span class="p">),</span>
-<span class="gp">... </span>        <span class="s2">&quot;SelectKBest&quot;</span><span class="p">:</span> <span class="n">SelectKBest</span><span class="p">(</span>
-<span class="gp">... </span>            <span class="n">k</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_int</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="s2">"SelectKBest"</span><span class="p">:</span> <span class="n">SelectKBest</span><span class="p">(</span>
+<span class="gp">... </span>            <span class="n">k</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_int</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"k"</span><span class="p">)</span>
 <span class="gp">... </span>        <span class="p">),</span>
 <span class="gp">... </span>    <span class="p">},</span>
-<span class="gp">... </span>    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;dim_reduction&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">name</span><span class="o">=</span><span class="s2">"dim_reduction"</span><span class="p">,</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">selected</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">dim_reduction</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">choose_from</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;logreg&quot;</span><span class="p">:</span> <span class="n">LogisticRegression</span><span class="p">(</span>
-<span class="gp">... </span>            <span class="n">C</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_float</span><span class="p">(</span><span class="mf">0.001</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="s2">"logreg"</span><span class="p">:</span> <span class="n">LogisticRegression</span><span class="p">(</span>
+<span class="gp">... </span>            <span class="n">C</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_float</span><span class="p">(</span><span class="mf">0.001</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"C"</span><span class="p">)</span>
 <span class="gp">... </span>        <span class="p">),</span>
-<span class="gp">... </span>        <span class="s2">&quot;rf&quot;</span><span class="p">:</span> <span class="n">RandomForestClassifier</span><span class="p">(</span>
-<span class="gp">... </span>            <span class="n">n_estimators</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_int</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;N 🌴&quot;</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="s2">"rf"</span><span class="p">:</span> <span class="n">RandomForestClassifier</span><span class="p">(</span>
+<span class="gp">... </span>            <span class="n">n_estimators</span><span class="o">=</span><span class="n">skrub</span><span class="o">.</span><span class="n">choose_int</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">"N 🌴"</span><span class="p">)</span>
 <span class="gp">... </span>        <span class="p">),</span>
 <span class="gp">... </span>    <span class="p">},</span>
-<span class="gp">... </span>    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;classifier&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">name</span><span class="o">=</span><span class="s2">"classifier"</span><span class="p">,</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">selected</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">classifier</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">describe_param_grid</span><span class="p">())</span>
-<span class="go">- dim_reduction: &#39;PCA&#39;</span>
-<span class="go">  n_components: choose_int(5, 100, log=True, name=&#39;n_components&#39;)</span>
-<span class="go">  classifier: &#39;logreg&#39;</span>
-<span class="go">  C: choose_float(0.001, 100, log=True, name=&#39;C&#39;)</span>
-<span class="go">- dim_reduction: &#39;PCA&#39;</span>
-<span class="go">  n_components: choose_int(5, 100, log=True, name=&#39;n_components&#39;)</span>
-<span class="go">  classifier: &#39;rf&#39;</span>
-<span class="go">  N 🌴: choose_int(20, 400, name=&#39;N 🌴&#39;)</span>
-<span class="go">- dim_reduction: &#39;SelectKBest&#39;</span>
-<span class="go">  k: choose_int(5, 100, log=True, name=&#39;k&#39;)</span>
-<span class="go">  classifier: &#39;logreg&#39;</span>
-<span class="go">  C: choose_float(0.001, 100, log=True, name=&#39;C&#39;)</span>
-<span class="go">- dim_reduction: &#39;SelectKBest&#39;</span>
-<span class="go">  k: choose_int(5, 100, log=True, name=&#39;k&#39;)</span>
-<span class="go">  classifier: &#39;rf&#39;</span>
-<span class="go">  N 🌴: choose_int(20, 400, name=&#39;N 🌴&#39;)</span>
+<span class="go">- dim_reduction: 'PCA'</span>
+<span class="go">  n_components: choose_int(5, 100, log=True, name='n_components')</span>
+<span class="go">  classifier: 'logreg'</span>
+<span class="go">  C: choose_float(0.001, 100, log=True, name='C')</span>
+<span class="go">- dim_reduction: 'PCA'</span>
+<span class="go">  n_components: choose_int(5, 100, log=True, name='n_components')</span>
+<span class="go">  classifier: 'rf'</span>
+<span class="go">  N 🌴: choose_int(20, 400, name='N 🌴')</span>
+<span class="go">- dim_reduction: 'SelectKBest'</span>
+<span class="go">  k: choose_int(5, 100, log=True, name='k')</span>
+<span class="go">  classifier: 'logreg'</span>
+<span class="go">  C: choose_float(0.001, 100, log=True, name='C')</span>
+<span class="go">- dim_reduction: 'SelectKBest'</span>
+<span class="go">  k: choose_int(5, 100, log=True, name='k')</span>
+<span class="go">  classifier: 'rf'</span>
+<span class="go">  N 🌴: choose_int(20, 400, name='N 🌴')</span>
 </pre></div>
 </div>
 <p>Sampling a configuration for this learner starts by selecting an entry

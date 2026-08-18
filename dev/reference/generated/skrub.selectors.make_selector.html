@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>make_selector<a class="headerlink" href="#make-selector" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.make_selector">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">make_selector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/selectors/_base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.make_selector" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">make_selector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/selectors/_base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.make_selector" title="Link to this definition">#</a></dt>
 <dd><p>Normalize a selector, column name, or list of names into a <code class="docutils literal notranslate"><span class="pre">Selector</span></code>    object.</p>
 <p>This function converts user input into a consistent selector object:</p>
 <ul class="simple">
@@ -819,15 +819,15 @@ selector compatible with the rest of the API.</p>
 </pre></div>
 </div>
 <p>Normalize a column name or list of column names:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">make_selector</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">)</span>
-<span class="go">cols(&#39;ID&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">make_selector</span><span class="p">([</span><span class="s1">&#39;ID&#39;</span><span class="p">,</span> <span class="s1">&#39;kind&#39;</span><span class="p">])</span>
-<span class="go">cols(&#39;ID&#39;, &#39;kind&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">make_selector</span><span class="p">(</span><span class="s1">'ID'</span><span class="p">)</span>
+<span class="go">cols('ID')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">make_selector</span><span class="p">([</span><span class="s1">'ID'</span><span class="p">,</span> <span class="s1">'kind'</span><span class="p">])</span>
+<span class="go">cols('ID', 'kind')</span>
 </pre></div>
 </div>
 <p>A selector is returned unchanged:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">make_selector</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">,</span> <span class="s1">&#39;kind&#39;</span><span class="p">))</span>
-<span class="go">cols(&#39;ID&#39;, &#39;kind&#39;)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">make_selector</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">cols</span><span class="p">(</span><span class="s1">'ID'</span><span class="p">,</span> <span class="s1">'kind'</span><span class="p">))</span>
+<span class="go">cols('ID', 'kind')</span>
 </pre></div>
 </div>
 </dd></dl>

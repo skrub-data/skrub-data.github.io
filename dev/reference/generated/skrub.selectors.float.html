@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>float<a class="headerlink" href="#float" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.float">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">float</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/selectors/_selectors.py#L297"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.float" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">float</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/selectors/_selectors.py#L297"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.float" title="Link to this definition">#</a></dt>
 <dd><p>Select columns that have a floating-point data type (float32, float64, etc.)</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
@@ -804,13 +804,13 @@
 <span class="gp">... </span>    <span class="nb">dict</span><span class="p">(</span>
 <span class="gp">... </span>        <span class="n">f64</span><span class="o">=</span><span class="p">[</span><span class="mf">1.1</span><span class="p">],</span>
 <span class="gp">... </span>        <span class="n">F64</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mf">2.3</span><span class="p">])</span><span class="o">.</span><span class="n">convert_dtypes</span><span class="p">(),</span>
-<span class="gp">... </span>        <span class="n">f32</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="mf">3.4</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float32&#39;</span><span class="p">),</span>
+<span class="gp">... </span>        <span class="n">f32</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="mf">3.4</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">'float32'</span><span class="p">),</span>
 <span class="gp">... </span>        <span class="n">i64</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
 <span class="gp">... </span>        <span class="n">I64</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">convert_dtypes</span><span class="p">(),</span>
 <span class="gp">... </span>        <span class="n">i8</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span>
 <span class="gp">... </span>        <span class="n">bool_</span><span class="o">=</span><span class="p">[</span><span class="kc">True</span><span class="p">],</span>
 <span class="gp">... </span>        <span class="n">Bool_</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="kc">True</span><span class="p">])</span><span class="o">.</span><span class="n">convert_dtypes</span><span class="p">(),</span>
-<span class="gp">... </span>        <span class="n">str_</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;hello&quot;</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="n">str_</span><span class="o">=</span><span class="p">[</span><span class="s2">"hello"</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">)</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>

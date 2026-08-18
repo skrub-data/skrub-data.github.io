@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -785,7 +785,7 @@
 <h1>SessionEncoder<a class="headerlink" href="#sessionencoder" title="Link to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="skrub.SessionEncoder">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">SessionEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timestamp_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_by</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_gap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1800</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'session_id'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_session_encoder.py#L164"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder" title="Link to this definition">#</a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">SessionEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timestamp_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_by</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_gap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1800</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'session_id'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_session_encoder.py#L164"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder" title="Link to this definition">#</a></dt>
 <dd><p>Add a session ID column to a dataframe based on time gaps and other columns.</p>
 <p>A session is defined as a sequence of events  where consecutive events are separated
 by at most <code class="docutils literal notranslate"><span class="pre">session_gap</span></code> seconds. Additionally, it is possible to provide a column
@@ -855,35 +855,35 @@ and then by the timestamp.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-<span class="gp">... </span>    <span class="s2">&quot;user_id&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
-<span class="gp">... </span>    <span class="s2">&quot;device_id&quot;</span><span class="p">:</span> <span class="p">[</span>
-<span class="gp">... </span>        <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
-<span class="gp">... </span>        <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
-<span class="gp">... </span>        <span class="s2">&quot;desktop&quot;</span><span class="p">,</span>
-<span class="gp">... </span>        <span class="s2">&quot;desktop&quot;</span><span class="p">,</span>
-<span class="gp">... </span>        <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
-<span class="gp">... </span>        <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
-<span class="gp">... </span>        <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s2">"user_id"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s2">"device_id"</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="s2">"mobile"</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">"mobile"</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">"desktop"</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">"desktop"</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">"mobile"</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">"mobile"</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">"mobile"</span><span class="p">,</span>
 <span class="gp">... </span>    <span class="p">],</span>
-<span class="gp">... </span>    <span class="s2">&quot;timestamp&quot;</span><span class="p">:</span> <span class="p">[</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 10:00:00&quot;</span><span class="p">),</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 10:10:00&quot;</span><span class="p">),</span>  <span class="c1"># 10 min later, same session</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 10:05:00&quot;</span><span class="p">),</span>  <span class="c1"># Different device (sorted),</span>
+<span class="gp">... </span>    <span class="s2">"timestamp"</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">"2024-01-01 10:00:00"</span><span class="p">),</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">"2024-01-01 10:10:00"</span><span class="p">),</span>  <span class="c1"># 10 min later, same session</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">"2024-01-01 10:05:00"</span><span class="p">),</span>  <span class="c1"># Different device (sorted),</span>
 <span class="gp">... </span>                                                <span class="c1"># different session</span>
-<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 10:20:00&quot;</span><span class="p">),</span>  <span class="c1"># 15 min later, same session</span>
+<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">"2024-01-01 10:20:00"</span><span class="p">),</span>  <span class="c1"># 15 min later, same session</span>
 <span class="gp">... </span>                                                <span class="c1"># different session</span>
-<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 11:20:00&quot;</span><span class="p">),</span>  <span class="c1"># 60 min later, new session</span>
-<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 10:00:00&quot;</span><span class="p">),</span>  <span class="c1"># Different user</span>
-<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;2024-01-01 10:15:00&quot;</span><span class="p">),</span>  <span class="c1"># 15 min later, same session</span>
+<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">"2024-01-01 11:20:00"</span><span class="p">),</span>  <span class="c1"># 60 min later, new session</span>
+<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">"2024-01-01 10:00:00"</span><span class="p">),</span>  <span class="c1"># Different user</span>
+<span class="gp">... </span>    <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">"2024-01-01 10:15:00"</span><span class="p">),</span>  <span class="c1"># 15 min later, same session</span>
 <span class="gp">... </span><span class="p">],</span>
-<span class="gp">... </span>    <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="p">[</span>
-<span class="gp">... </span>        <span class="s2">&quot;view&quot;</span><span class="p">,</span>
-<span class="gp">... </span>        <span class="s2">&quot;purchase&quot;</span><span class="p">,</span>
-<span class="gp">... </span>        <span class="s2">&quot;view&quot;</span><span class="p">,</span>
-<span class="gp">... </span>        <span class="s2">&quot;add_to_cart&quot;</span><span class="p">,</span>
-<span class="gp">... </span>        <span class="s2">&quot;checkout&quot;</span><span class="p">,</span>
-<span class="gp">... </span>        <span class="s2">&quot;view&quot;</span><span class="p">,</span>
-<span class="gp">... </span>        <span class="s2">&quot;wishlist&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s2">"action"</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="s2">"view"</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">"purchase"</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">"view"</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">"add_to_cart"</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">"checkout"</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">"view"</span><span class="p">,</span>
+<span class="gp">... </span>        <span class="s2">"wishlist"</span><span class="p">,</span>
 <span class="gp">... </span>    <span class="p">],</span>
 <span class="gp">... </span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
@@ -901,7 +901,7 @@ and then by the timestamp.</p>
 <p>We use the <code class="docutils literal notranslate"><span class="pre">SessionEncoder</span></code> with default <code class="docutils literal notranslate"><span class="pre">session_gap</span></code> of 30 minutes:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">SessionEncoder</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span> <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span>
+<span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="s1">'user_id'</span><span class="p">,</span> <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">'timestamp'</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result</span>
@@ -927,8 +927,8 @@ last event belongs to session 1.</p></li>
 <p>You can also identify users by multiple columns. For instance, the same user
 on different devices should have separate sessions.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_multi</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span> <span class="s1">&#39;device_id&#39;</span><span class="p">],</span>
-<span class="gp">... </span>    <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="p">[</span><span class="s1">'user_id'</span><span class="p">,</span> <span class="s1">'device_id'</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">'timestamp'</span><span class="p">,</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result_multi</span> <span class="o">=</span> <span class="n">encoder_multi</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result_multi</span>
@@ -959,17 +959,17 @@ sessions are separated only by time gaps. This is useful for analyzing a single
 timeseries or events that don’t have a user dimension:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_no_split</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-<span class="gp">... </span>    <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">'timestamp'</span><span class="p">,</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">data_no_split</span> <span class="o">=</span> <span class="p">{</span>
-<span class="gp">... </span>    <span class="s1">&#39;timestamp&#39;</span><span class="p">:</span> <span class="p">[</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:00:00&#39;</span><span class="p">),</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:10:00&#39;</span><span class="p">),</span>  <span class="c1"># 10 min gap</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:15:00&#39;</span><span class="p">),</span>  <span class="c1"># 5 min gap, still in session</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 11:00:00&#39;</span><span class="p">),</span>  <span class="c1"># 45 min gap, new session</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 11:10:00&#39;</span><span class="p">),</span>  <span class="c1"># 10 min gap, continue session</span>
+<span class="gp">... </span>    <span class="s1">'timestamp'</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 10:00:00'</span><span class="p">),</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 10:10:00'</span><span class="p">),</span>  <span class="c1"># 10 min gap</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 10:15:00'</span><span class="p">),</span>  <span class="c1"># 5 min gap, still in session</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 11:00:00'</span><span class="p">),</span>  <span class="c1"># 45 min gap, new session</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 11:10:00'</span><span class="p">),</span>  <span class="c1"># 10 min gap, continue session</span>
 <span class="gp">... </span>    <span class="p">],</span>
-<span class="gp">... </span>    <span class="s1">&#39;event_type&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;start&#39;</span><span class="p">,</span> <span class="s1">&#39;action&#39;</span><span class="p">,</span> <span class="s1">&#39;action&#39;</span><span class="p">,</span> <span class="s1">&#39;restart&#39;</span><span class="p">,</span> <span class="s1">&#39;action&#39;</span><span class="p">]</span>
+<span class="gp">... </span>    <span class="s1">'event_type'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'start'</span><span class="p">,</span> <span class="s1">'action'</span><span class="p">,</span> <span class="s1">'action'</span><span class="p">,</span> <span class="s1">'restart'</span><span class="p">,</span> <span class="s1">'action'</span><span class="p">]</span>
 <span class="gp">... </span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df_no_split</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_no_split</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result_no_split</span> <span class="o">=</span> <span class="n">encoder_no_split</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_no_split</span><span class="p">)</span>
@@ -994,7 +994,7 @@ instead of the default 30 minutes, and this will change the session assignments
 accordingly:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_new_gap</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-<span class="gp">... </span>    <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">'timestamp'</span><span class="p">,</span>
 <span class="gp">... </span>    <span class="n">session_gap</span><span class="o">=</span><span class="mi">300</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result_new_gap</span> <span class="o">=</span> <span class="n">encoder_new_gap</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_no_split</span><span class="p">)</span>
@@ -1011,22 +1011,22 @@ accordingly:</p>
 ID column via the “suffix” parameter. This is useful, for example, if you want
 to add sessions based on different groupings or intervals:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data_multi</span> <span class="o">=</span> <span class="p">{</span>
-<span class="gp">... </span>    <span class="s1">&#39;user_id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
-<span class="gp">... </span>    <span class="s1">&#39;device_id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;mobile&#39;</span><span class="p">,</span> <span class="s1">&#39;mobile&#39;</span><span class="p">,</span> <span class="s1">&#39;desktop&#39;</span><span class="p">,</span> <span class="s1">&#39;desktop&#39;</span><span class="p">,</span> <span class="s1">&#39;mobile&#39;</span><span class="p">,</span> <span class="s1">&#39;mobile&#39;</span><span class="p">],</span>
-<span class="gp">... </span>    <span class="s1">&#39;timestamp&#39;</span><span class="p">:</span> <span class="p">[</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:00:00&#39;</span><span class="p">),</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:10:00&#39;</span><span class="p">),</span>  <span class="c1"># 10 min later, same session</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:05:00&#39;</span><span class="p">),</span>  <span class="c1"># Different device (sorted),</span>
+<span class="gp">... </span>    <span class="s1">'user_id'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">'device_id'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'mobile'</span><span class="p">,</span> <span class="s1">'mobile'</span><span class="p">,</span> <span class="s1">'desktop'</span><span class="p">,</span> <span class="s1">'desktop'</span><span class="p">,</span> <span class="s1">'mobile'</span><span class="p">,</span> <span class="s1">'mobile'</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s1">'timestamp'</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 10:00:00'</span><span class="p">),</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 10:10:00'</span><span class="p">),</span>  <span class="c1"># 10 min later, same session</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 10:05:00'</span><span class="p">),</span>  <span class="c1"># Different device (sorted),</span>
 <span class="gp">... </span>                                                <span class="c1"># different session</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:20:00&#39;</span><span class="p">),</span>  <span class="c1"># 15 min later, same session</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:00:00&#39;</span><span class="p">),</span>  <span class="c1"># Different user</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:15:00&#39;</span><span class="p">),</span>  <span class="c1"># 15 min later, same session</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 10:20:00'</span><span class="p">),</span>  <span class="c1"># 15 min later, same session</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 10:00:00'</span><span class="p">),</span>  <span class="c1"># Different user</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 10:15:00'</span><span class="p">),</span>  <span class="c1"># 15 min later, same session</span>
 <span class="gp">... </span>    <span class="p">],</span>
-<span class="gp">... </span>    <span class="s1">&#39;action&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;view&#39;</span><span class="p">,</span> <span class="s1">&#39;purchase&#39;</span><span class="p">,</span> <span class="s1">&#39;view&#39;</span><span class="p">,</span> <span class="s1">&#39;checkout&#39;</span><span class="p">,</span> <span class="s1">&#39;login&#39;</span><span class="p">,</span> <span class="s1">&#39;view&#39;</span><span class="p">]</span>
+<span class="gp">... </span>    <span class="s1">'action'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'view'</span><span class="p">,</span> <span class="s1">'purchase'</span><span class="p">,</span> <span class="s1">'view'</span><span class="p">,</span> <span class="s1">'checkout'</span><span class="p">,</span> <span class="s1">'login'</span><span class="p">,</span> <span class="s1">'view'</span><span class="p">]</span>
 <span class="gp">... </span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_multi</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_user</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span><span class="s2">&quot;timestamp&quot;</span><span class="p">,</span>
-<span class="gp">... </span><span class="n">split_by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;user_id&quot;</span><span class="p">],</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;user&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_user</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span><span class="s2">"timestamp"</span><span class="p">,</span>
+<span class="gp">... </span><span class="n">split_by</span><span class="o">=</span><span class="p">[</span><span class="s2">"user_id"</span><span class="p">],</span> <span class="n">suffix</span><span class="o">=</span><span class="s2">"user"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_user</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">user_id device_id           timestamp    action  timestamp_user</span>
 <span class="go">0        1    mobile 2024-01-01 10:00:00      view                  0</span>
@@ -1037,9 +1037,9 @@ to add sessions based on different groupings or intervals:</p>
 <span class="go">5        2    mobile 2024-01-01 10:15:00      view                  1</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_user_device</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span><span class="s2">&quot;timestamp&quot;</span><span class="p">,</span>
-<span class="gp">... </span><span class="n">split_by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;user_id&quot;</span><span class="p">,</span> <span class="s2">&quot;device_id&quot;</span><span class="p">],</span>
-<span class="gp">... </span><span class="n">suffix</span><span class="o">=</span><span class="s2">&quot;user_device&quot;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_user_device</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span><span class="s2">"timestamp"</span><span class="p">,</span>
+<span class="gp">... </span><span class="n">split_by</span><span class="o">=</span><span class="p">[</span><span class="s2">"user_id"</span><span class="p">,</span> <span class="s2">"device_id"</span><span class="p">],</span>
+<span class="gp">... </span><span class="n">suffix</span><span class="o">=</span><span class="s2">"user_device"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_user_device</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="go">user_id device_id           timestamp    action  timestamp_user_device</span>
 <span class="go">0        1    mobile 2024-01-01 10:00:00      view                      1</span>
@@ -1056,18 +1056,18 @@ time intervals. In some versions of pandas,
 adding nulls to a pandas column of integers will convert it to float, which can
 cause issues with grouping if there are a lot of sessions.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data_with_nulls</span> <span class="o">=</span> <span class="p">{</span>
-<span class="gp">... </span>    <span class="s1">&#39;user_id&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>  <span class="c1"># None value in split_by column</span>
-<span class="gp">... </span>    <span class="s1">&#39;timestamp&#39;</span><span class="p">:</span> <span class="p">[</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:00:00&#39;</span><span class="p">),</span>
+<span class="gp">... </span>    <span class="s1">'user_id'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>  <span class="c1"># None value in split_by column</span>
+<span class="gp">... </span>    <span class="s1">'timestamp'</span><span class="p">:</span> <span class="p">[</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 10:00:00'</span><span class="p">),</span>
 <span class="gp">... </span>        <span class="kc">None</span><span class="p">,</span>  <span class="c1"># None value in timestamp column</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:10:00&#39;</span><span class="p">),</span>
-<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">&#39;2024-01-01 10:20:00&#39;</span><span class="p">),</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 10:10:00'</span><span class="p">),</span>
+<span class="gp">... </span>        <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2024-01-01 10:20:00'</span><span class="p">),</span>
 <span class="gp">... </span>    <span class="p">],</span>
 <span class="gp">... </span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df_with_nulls</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_with_nulls</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">encoder_with_nulls</span> <span class="o">=</span> <span class="n">SessionEncoder</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="s1">&#39;user_id&#39;</span><span class="p">,</span>
-<span class="gp">... </span>    <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span>
+<span class="gp">... </span>    <span class="n">split_by</span><span class="o">=</span><span class="s1">'user_id'</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">timestamp_col</span><span class="o">=</span><span class="s1">'timestamp'</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result_with_nulls</span> <span class="o">=</span> <span class="n">encoder_with_nulls</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_with_nulls</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">result_with_nulls</span>
@@ -1116,7 +1116,7 @@ same session ID as row 0.</p></li>
 </div>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SessionEncoder.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_session_encoder.py#L488"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.fit" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_session_encoder.py#L488"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.fit" title="Link to this definition">#</a></dt>
 <dd><p>Fit the transformer to the data.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1138,7 +1138,7 @@ same session ID as row 0.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SessionEncoder.fit_transform">
-<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_session_encoder.py#L507"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.fit_transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">fit_transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_session_encoder.py#L507"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.fit_transform" title="Link to this definition">#</a></dt>
 <dd><p>Fit the transformer to the data and return the transformed dataframe.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1160,7 +1160,7 @@ same session ID as row 0.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SessionEncoder.get_feature_names_out">
-<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_session_encoder.py#L620"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.get_feature_names_out" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_feature_names_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_session_encoder.py#L620"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.get_feature_names_out" title="Link to this definition">#</a></dt>
 <dd><p>Return the column names of the output of <code class="docutils literal notranslate"><span class="pre">transform</span></code> as a list of strings.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1180,7 +1180,7 @@ same session ID as row 0.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SessionEncoder.get_params">
-<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.get_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L248"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.get_params" title="Link to this definition">#</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1201,7 +1201,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SessionEncoder.set_output">
-<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L392"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.set_output" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/utils/_set_output.py#L392"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.set_output" title="Link to this definition">#</a></dt>
 <dd><p>Set output container.</p>
 <p>Refer to the <a class="reference external" href="https://scikit-learn.org/stable/modules/df_output_transform.html#df-output-transform" title="(in scikit-learn v1.9)"><span class="xref std std-ref">user guide</span></a> for more details
 and <a class="reference external" href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_set_output.html#sphx-glr-auto-examples-miscellaneous-plot-set-output-py" title="(in scikit-learn v1.9)"><span>Introducing the set_output API</span></a> for an
@@ -1233,7 +1233,7 @@ example on how to use the API.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SessionEncoder.set_params">
-<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.set_params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">set_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/../.pixi/envs/doc/lib/python3.12/site-packages/sklearn/base.py#L400"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.set_params" title="Link to this definition">#</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="(in scikit-learn v1.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Pipeline</span></code></a>). The latter have
@@ -1257,7 +1257,7 @@ possible to update each component of a nested object.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.SessionEncoder.transform">
-<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_session_encoder.py#L537"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.transform" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_session_encoder.py#L537"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.SessionEncoder.transform" title="Link to this definition">#</a></dt>
 <dd><p>Transform the data by encoding sessions.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>

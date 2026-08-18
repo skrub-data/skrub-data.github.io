@@ -2,7 +2,7 @@
 
 # Computation times
 
-**00:36.208** total execution time for 3 files **from auto_examples**:
+**00:39.901** total execution time for 3 files **from auto_examples**:
 
 <style scoped>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -19,6 +19,6 @@ $(document).ready( function () {
 
 | Example                                                                                                                                                                                  | Time      |   Mem (MB) |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------|
-| [SquashingScaler: Robust numerical preprocessing for neural networks](0100_squashing_scalerhtml.md#sphx-glr-auto-examples-0100-squashing-scaler-py) (`0100_squashing_scaler.py`)         | 00:21.421 |      602.9 |
-| [Sessions in time-based data: Predicting user purchases with the SessionEncoder](0110_session_encoderhtml.md#sphx-glr-auto-examples-0110-session-encoder-py) (`0110_session_encoder.py`) | 00:07.544 |      601.9 |
-| [Hands-On with Column Selection and Transformers](0010_apply_to_colshtml.md#sphx-glr-auto-examples-0010-apply-to-cols-py) (`0010_apply_to_cols.py`)                                      | 00:07.243 |      606   |
+| [SquashingScaler: Robust numerical preprocessing for neural networks](0100_squashing_scalerhtml.md#sphx-glr-auto-examples-0100-squashing-scaler-py) (`0100_squashing_scaler.py`)         | 00:23.027 |      555.4 |
+| [Sessions in time-based data: Predicting user purchases with the SessionEncoder](0110_session_encoderhtml.md#sphx-glr-auto-examples-0110-session-encoder-py) (`0110_session_encoder.py`) | 00:08.921 |      553   |
+| [Hands-On with Column Selection and Transformers](0010_apply_to_colshtml.md#sphx-glr-auto-examples-0010-apply-to-cols-py) (`0010_apply_to_cols.py`)                                      | 00:07.953 |      552.3 |

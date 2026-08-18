@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -785,7 +785,7 @@
 <h1>tabular_pipeline<a class="headerlink" href="#tabular-pipeline" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.tabular_pipeline">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_tabular_pipeline.py#L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_pipeline" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">tabular_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">estimator</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_jobs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_tabular_pipeline.py#L26"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.tabular_pipeline" title="Link to this definition">#</a></dt>
 <dd><p>Get a simple machine-learning pipeline for tabular data.</p>
 <p>Given either a scikit-learn estimator or one of the special-cased strings
 <code class="docutils literal notranslate"><span class="pre">'regressor'</span></code>, <code class="docutils literal notranslate"><span class="pre">'regression'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classifier'</span></code>, <code class="docutils literal notranslate"><span class="pre">'classification'</span></code>, this
@@ -870,22 +870,22 @@ used to impute missing values.</p></li>
 </pre></div>
 </div>
 <p>We can easily get a default pipeline for regression or classification:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_pipeline</span><span class="p">(</span><span class="s1">&#39;regression&#39;</span><span class="p">)</span>
-<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_pipeline</span><span class="p">(</span><span class="s1">'regression'</span><span class="p">)</span>
+<span class="go">Pipeline(steps=[('tablevectorizer',</span>
 <span class="go">                 TableVectorizer(high_cardinality=StringEncoder(),</span>
 <span class="go">                                 low_cardinality=ToCategorical())),</span>
-<span class="go">                (&#39;histgradientboostingregressor&#39;,</span>
-<span class="go">                 HistGradientBoostingRegressor(categorical_features=&#39;from_dtype&#39;))])</span>
+<span class="go">                ('histgradientboostingregressor',</span>
+<span class="go">                 HistGradientBoostingRegressor(categorical_features='from_dtype'))])</span>
 </pre></div>
 </div>
 <p>When requesting a <code class="docutils literal notranslate"><span class="pre">'regression'</span></code>, the last step of the pipeline is set to a
 <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html#sklearn.ensemble.HistGradientBoostingRegressor" title="(in scikit-learn v1.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingRegressor</span></code></a>.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_pipeline</span><span class="p">(</span><span class="s1">&#39;classification&#39;</span><span class="p">)</span>
-<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_pipeline</span><span class="p">(</span><span class="s1">'classification'</span><span class="p">)</span>
+<span class="go">Pipeline(steps=[('tablevectorizer',</span>
 <span class="go">                 TableVectorizer(high_cardinality=StringEncoder(),</span>
 <span class="go">                                 low_cardinality=ToCategorical())),</span>
-<span class="go">                (&#39;histgradientboostingclassifier&#39;,</span>
-<span class="go">                 HistGradientBoostingClassifier(categorical_features=&#39;from_dtype&#39;))])</span>
+<span class="go">                ('histgradientboostingclassifier',</span>
+<span class="go">                 HistGradientBoostingClassifier(categorical_features='from_dtype'))])</span>
 </pre></div>
 </div>
 <p>When requesting a <code class="docutils literal notranslate"><span class="pre">'classification'</span></code>, the last step of the pipeline is set to a
@@ -894,10 +894,10 @@ used to impute missing values.</p></li>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;last_visit&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;2020-01-02&quot;</span><span class="p">,</span> <span class="s2">&quot;2021-04-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2024-12-05&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-08-10&quot;</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;medication&quot;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;metformin&quot;</span><span class="p">,</span> <span class="s2">&quot;paracetamol&quot;</span><span class="p">,</span> <span class="s2">&quot;gliclazide&quot;</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;insulin_prescriptions&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;N/A&quot;</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">17</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;fasting_glucose&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">35</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">137</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"last_visit"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2020-01-02"</span><span class="p">,</span> <span class="s2">"2021-04-01"</span><span class="p">,</span> <span class="s2">"2024-12-05"</span><span class="p">,</span> <span class="s2">"2023-08-10"</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"medication"</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="s2">"metformin"</span><span class="p">,</span> <span class="s2">"paracetamol"</span><span class="p">,</span> <span class="s2">"gliclazide"</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"insulin_prescriptions"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"N/A"</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">17</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"fasting_glucose"</span><span class="p">:</span> <span class="p">[</span><span class="mi">35</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">137</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
@@ -909,7 +909,7 @@ used to impute missing values.</p></li>
 <span class="go">3  2023-08-10   gliclazide                    17              137</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">tabular_pipeline</span><span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">tabular_pipeline</span><span class="p">(</span><span class="s1">'classifier'</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="go">array([0, 0, 0, 0])</span>
 </pre></div>
@@ -919,17 +919,17 @@ estimator:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">tabular_pipeline</span><span class="p">(</span><span class="n">LogisticRegression</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
-<span class="go">                TableVectorizer(datetime=DatetimeEncoder(periodic_encoding=&#39;spline&#39;))),</span>
-<span class="go">                (&#39;simpleimputer&#39;, SimpleImputer(add_indicator=True)),</span>
-<span class="go">                (&#39;squashingscaler&#39;, SquashingScaler(max_absolute_value=5)),</span>
-<span class="go">                (&#39;logisticregression&#39;, LogisticRegression())])</span>
+<span class="go">Pipeline(steps=[('tablevectorizer',</span>
+<span class="go">                TableVectorizer(datetime=DatetimeEncoder(periodic_encoding='spline'))),</span>
+<span class="go">                ('simpleimputer', SimpleImputer(add_indicator=True)),</span>
+<span class="go">                ('squashingscaler', SquashingScaler(max_absolute_value=5)),</span>
+<span class="go">                ('logisticregression', LogisticRegression())])</span>
 </pre></div>
 </div>
 <p>By applying only the first pipeline step we can see the transformed data that is
 sent to the supervised estimator (see the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> documentation for
 details):</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">&#39;tablevectorizer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">'tablevectorizer'</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="go">   last_visit_year  last_visit_month  ...  insulin_prescriptions  fasting_glucose</span>
 <span class="go">0           2020.0               1.0  ...                    NaN             35.0</span>
 <span class="go">1           2021.0               4.0  ...                   13.0            140.0</span>
@@ -939,11 +939,11 @@ details):</p>
 </div>
 <p>The parameters of the <a class="reference internal" href="skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> depend on the provided <code class="docutils literal notranslate"><span class="pre">estimator</span></code>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_pipeline</span><span class="p">(</span><span class="n">LogisticRegression</span><span class="p">())</span>
-<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
-<span class="go">                TableVectorizer(datetime=DatetimeEncoder(periodic_encoding=&#39;spline&#39;))),</span>
-<span class="go">                (&#39;simpleimputer&#39;, SimpleImputer(add_indicator=True)),</span>
-<span class="go">                (&#39;squashingscaler&#39;, SquashingScaler(max_absolute_value=5)),</span>
-<span class="go">                (&#39;logisticregression&#39;, LogisticRegression())])</span>
+<span class="go">Pipeline(steps=[('tablevectorizer',</span>
+<span class="go">                TableVectorizer(datetime=DatetimeEncoder(periodic_encoding='spline'))),</span>
+<span class="go">                ('simpleimputer', SimpleImputer(add_indicator=True)),</span>
+<span class="go">                ('squashingscaler', SquashingScaler(max_absolute_value=5)),</span>
+<span class="go">                ('logisticregression', LogisticRegression())])</span>
 </pre></div>
 </div>
 <p>For a <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="(in scikit-learn v1.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LogisticRegression</span></code></a>, we get:</p>
@@ -958,12 +958,12 @@ numerical features.</p></li>
 </ul>
 <p>On the other hand, For the <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier" title="(in scikit-learn v1.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistGradientBoostingClassifier</span></code></a>
 (generated with the string <code class="docutils literal notranslate"><span class="pre">&quot;classifier&quot;</span></code>):</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_pipeline</span><span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">)</span>
-<span class="go">Pipeline(steps=[(&#39;tablevectorizer&#39;,</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tabular_pipeline</span><span class="p">(</span><span class="s1">'classifier'</span><span class="p">)</span>
+<span class="go">Pipeline(steps=[('tablevectorizer',</span>
 <span class="go">                 TableVectorizer(high_cardinality=StringEncoder(),</span>
 <span class="go">                                 low_cardinality=ToCategorical())),</span>
-<span class="go">                (&#39;histgradientboostingclassifier&#39;,</span>
-<span class="go">                 HistGradientBoostingClassifier(categorical_features=&#39;from_dtype&#39;))])</span>
+<span class="go">                ('histgradientboostingclassifier',</span>
+<span class="go">                 HistGradientBoostingClassifier(categorical_features='from_dtype'))])</span>
 </pre></div>
 </div>
 <ul class="simple">

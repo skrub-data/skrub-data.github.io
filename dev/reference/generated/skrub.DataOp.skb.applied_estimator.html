@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -806,37 +806,37 @@ actual transformer can be retrieved through the <code class="docutils literal no
 <code class="docutils literal notranslate"><span class="pre">transformers_</span></code>, in the case of single-column transformers); see the
 documentation of <a class="reference internal" href="skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> for details.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fitted_vectorizer</span><span class="o">.</span><span class="n">transformer_</span>
-<span class="go">&lt;GetAttr &#39;transformer_&#39;&gt;</span>
+<span class="go">&lt;GetAttr 'transformer_'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
 <span class="go">TableVectorizer()</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fitted_vectorizer</span><span class="o">.</span><span class="n">transformer_</span><span class="o">.</span><span class="n">column_to_kind_</span>
-<span class="go">&lt;GetAttr &#39;column_to_kind_&#39;&gt;</span>
+<span class="go">&lt;GetAttr 'column_to_kind_'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
-<span class="go">{&#39;ID&#39;: &#39;numeric&#39;, &#39;quantity&#39;: &#39;numeric&#39;, &#39;date&#39;: &#39;datetime&#39;, &#39;product&#39;: &#39;low_cardinality&#39;}</span>
+<span class="go">{'ID': 'numeric', 'quantity': 'numeric', 'date': 'datetime', 'product': 'low_cardinality'}</span>
 </pre></div>
 </div>
 <p>Here is an example of an estimator applied column-wise:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders_df</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;describe </span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">orders_df</span><span class="p">[</span><span class="s1">&#39;product&#39;</span><span class="p">]]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders_df</span><span class="p">[</span><span class="s1">'description'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">'describe </span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">'</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">orders_df</span><span class="p">[</span><span class="s1">'product'</span><span class="p">]]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">selectors</span> <span class="k">as</span> <span class="n">s</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">out</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="n">orders_df</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">skrub</span><span class="o">.</span><span class="n">StringEncoder</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">()</span> <span class="o">-</span> <span class="s2">&quot;date&quot;</span>
+<span class="gp">... </span>    <span class="n">skrub</span><span class="o">.</span><span class="n">StringEncoder</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">string</span><span class="p">()</span> <span class="o">-</span> <span class="s2">"date"</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fitted_vectorizer</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">applied_estimator</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fitted_vectorizer</span>
 <span class="go">&lt;AppliedEstimator&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
-<span class="go">ApplyToCols(cols=(string() - cols(&#39;date&#39;)),</span>
+<span class="go">ApplyToCols(cols=(string() - cols('date')),</span>
 <span class="go">            transformer=StringEncoder(n_components=2))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fitted_vectorizer</span><span class="o">.</span><span class="n">transformers_</span>
-<span class="go">&lt;GetAttr &#39;transformers_&#39;&gt;</span>
+<span class="go">&lt;GetAttr 'transformers_'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
-<span class="go">{&#39;product&#39;: StringEncoder(n_components=2), &#39;description&#39;: StringEncoder(n_components=2)}</span>
+<span class="go">{'product': StringEncoder(n_components=2), 'description': StringEncoder(n_components=2)}</span>
 </pre></div>
 </div>
 </dd></dl>

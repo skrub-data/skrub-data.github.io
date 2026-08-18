@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>skrub.DataOp.skb.get_vars<a class="headerlink" href="#skrub-dataop-skb-get-vars" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.get_vars">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">get_vars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_named_ops</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_data_ops/_skrub_namespace.py#L1403"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.get_vars" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">get_vars</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_named_ops</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_data_ops/_skrub_namespace.py#L1403"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.get_vars" title="Link to this definition">#</a></dt>
 <dd><p>Get all the variables used in the DataOp.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -817,13 +817,13 @@ environment).</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"a"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"b"</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>We assign a name to a DataOp that is not a variable with
 <a class="reference internal" href="skrub.DataOp.skb.set_name.html#skrub.DataOp.skb.set_name" title="skrub.DataOp.skb.set_name"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_name()</span></code></a>:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">set_name</span><span class="p">(</span><span class="s2">&quot;c&quot;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">set_name</span><span class="p">(</span><span class="s2">"c"</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="n">c</span>
@@ -833,12 +833,12 @@ environment).</p>
 </div>
 <p>Our DataOp, <code class="docutils literal notranslate"><span class="pre">d</span></code>, contains 2 variables: “a” and “b”:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_vars</span><span class="p">()</span>
-<span class="go">{&#39;a&#39;: &lt;Var &#39;a&#39;&gt;, &#39;b&#39;: &lt;Var &#39;b&#39;&gt;}</span>
+<span class="go">{'a': &lt;Var 'a'&gt;, 'b': &lt;Var 'b'&gt;}</span>
 </pre></div>
 </div>
 <p>Those are the keys for which we need to provide values in the
 environment when evaluating <code class="docutils literal notranslate"><span class="pre">d</span></code>:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span> <span class="c1"># (10 + 3) + (10 + 3) = 26</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">"a"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span> <span class="c1"># (10 + 3) + (10 + 3) = 26</span>
 <span class="go">26</span>
 </pre></div>
 </div>
@@ -848,7 +848,7 @@ name, we can override its output by passing a value for <code class="docutils li
 environment. When we do, the computation of <code class="docutils literal notranslate"><span class="pre">c</span></code> never happens (nor of
 <code class="docutils literal notranslate"><span class="pre">a</span></code> or <code class="docutils literal notranslate"><span class="pre">b</span></code>, here, because they are only used to compute <code class="docutils literal notranslate"><span class="pre">c</span></code>) – it is
 bypassed and the provided value is used instead.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">})</span> <span class="c1"># 7 + 7 = 14</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s2">"c"</span><span class="p">:</span> <span class="mi">7</span><span class="p">})</span> <span class="c1"># 7 + 7 = 14</span>
 <span class="go">14</span>
 </pre></div>
 </div>
@@ -856,7 +856,7 @@ bypassed and the provided value is used instead.</p>
 have a name and can be passed in the environment, we pass
 <code class="docutils literal notranslate"><span class="pre">all_named_ops=True</span></code>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_vars</span><span class="p">(</span><span class="n">all_named_ops</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="go">{&#39;a&#39;: &lt;Var &#39;a&#39;&gt;, &#39;b&#39;: &lt;Var &#39;b&#39;&gt;, &#39;c&#39;: &lt;c | BinOp: add&gt;}</span>
+<span class="go">{'a': &lt;Var 'a'&gt;, 'b': &lt;Var 'b'&gt;, 'c': &lt;c | BinOp: add&gt;}</span>
 </pre></div>
 </div>
 <p>Note <code class="docutils literal notranslate"><span class="pre">get_vars</span></code> can be particularly useful when we have a learner
@@ -864,12 +864,12 @@ have a name and can be passed in the environment, we pass
 should pass to its methods such as <code class="docutils literal notranslate"><span class="pre">fit</span></code> and <code class="docutils literal notranslate"><span class="pre">transform</span></code>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">learner</span><span class="o">.</span><span class="n">data_op</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">get_vars</span><span class="p">()</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-<span class="go">[&#39;a&#39;, &#39;b&#39;]</span>
+<span class="go">['a', 'b']</span>
 </pre></div>
 </div>
 <p>The output above tells us what keys the dict we pass to
 <code class="docutils literal notranslate"><span class="pre">learner.fit()</span></code> should contain:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit</span><span class="p">({</span><span class="s1">'a'</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span>
 <span class="go">SkrubLearner(data_op=&lt;BinOp: add&gt;)</span>
 </pre></div>
 </div>

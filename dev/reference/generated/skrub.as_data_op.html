@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>as_data_op<a class="headerlink" href="#as-data-op" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.as_data_op">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">as_data_op</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_data_ops/_data_ops.py#L1270"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.as_data_op" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">as_data_op</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_data_ops/_data_ops.py#L1270"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.as_data_op" title="Link to this definition">#</a></dt>
 <dd><p>Create a DataOp <a class="reference internal" href="skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> that evaluates to the given value.</p>
 <p>This wraps any object in a DataOp. When the DataOp is evaluated,
 the result is the provided value. This has a similar role as <a class="reference internal" href="skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a>,
@@ -812,21 +812,21 @@ but for any object rather than for functions.</p>
 </div>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">data_source</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;source&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data_source</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'source'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">data_path</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">as_data_op</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;local&quot;</span><span class="p">:</span> <span class="s2">&quot;data.parquet&quot;</span><span class="p">,</span> <span class="s2">&quot;remote&quot;</span><span class="p">:</span> <span class="s2">&quot;remote/data.parquet&quot;</span><span class="p">}</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">"local"</span><span class="p">:</span> <span class="s2">"data.parquet"</span><span class="p">,</span> <span class="s2">"remote"</span><span class="p">:</span> <span class="s2">"remote/data.parquet"</span><span class="p">}</span>
 <span class="gp">... </span><span class="p">)[</span><span class="n">data_source</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">data_path</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">&#39;source&#39;</span><span class="p">:</span> <span class="s1">&#39;remote&#39;</span><span class="p">})</span>
-<span class="go">&#39;remote/data.parquet&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data_path</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">'source'</span><span class="p">:</span> <span class="s1">'remote'</span><span class="p">})</span>
+<span class="go">'remote/data.parquet'</span>
 </pre></div>
 </div>
 <p>Turning the dictionary into a DataOp defers the lookup of
 <code class="docutils literal notranslate"><span class="pre">data_source</span></code> until it has been evaluated when the learner runs.</p>
 <p>The example above is somewhat contrived, but <code class="docutils literal notranslate"><span class="pre">as_data_op</span></code> is often useful
 with choices.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x1</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;x1&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">x2</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">&#39;x2&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">features</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">choose_from</span><span class="p">({</span><span class="s1">&#39;x1&#39;</span><span class="p">:</span> <span class="n">x1</span><span class="p">,</span> <span class="s1">&#39;x2&#39;</span><span class="p">:</span> <span class="n">x2</span><span class="p">},</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;features&#39;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x1</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'x1'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x2</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s1">'x2'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">features</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">choose_from</span><span class="p">({</span><span class="s1">'x1'</span><span class="p">:</span> <span class="n">x1</span><span class="p">,</span> <span class="s1">'x2'</span><span class="p">:</span> <span class="n">x2</span><span class="p">},</span> <span class="n">name</span><span class="o">=</span><span class="s1">'features'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">skrub</span><span class="o">.</span><span class="n">as_data_op</span><span class="p">(</span><span class="n">features</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">TableVectorizer</span><span class="p">())</span>
 <span class="go">&lt;Apply TableVectorizer&gt;</span>
 </pre></div>

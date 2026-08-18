@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>skrub.DataOp.skb.find_X_y<a class="headerlink" href="#skrub-dataop-skb-find-x-y" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.find_X_y">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">find_X_y</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_data_ops/_skrub_namespace.py#L3672"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.find_X_y" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">find_X_y</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_data_ops/_skrub_namespace.py#L3672"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.find_X_y" title="Link to this definition">#</a></dt>
 <dd><p>Find the nodes that have been marked with <code class="docutils literal notranslate"><span class="pre">mark_as_X()</span></code> and <code class="docutils literal notranslate"><span class="pre">mark_as_y()</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -819,14 +819,14 @@
 to evaluate the whole dict as a single DataOp:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Xy</span> <span class="o">=</span> <span class="n">my_data_op</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">find_X_y</span><span class="p">()</span>
 <span class="n">Xy_values</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">as_data_op</span><span class="p">(</span><span class="n">Xy</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="o">...</span><span class="p">})</span>
-<span class="n">X_value</span> <span class="o">=</span> <span class="n">Xy_values</span><span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">]</span>
-<span class="n">y_value</span> <span class="o">=</span> <span class="n">Xy_values</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span>
+<span class="n">X_value</span> <span class="o">=</span> <span class="n">Xy_values</span><span class="p">[</span><span class="s1">'X'</span><span class="p">]</span>
+<span class="n">y_value</span> <span class="o">=</span> <span class="n">Xy_values</span><span class="p">[</span><span class="s1">'y'</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>rather than:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Xy</span> <span class="o">=</span> <span class="n">my_data_op</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">find_X_y</span><span class="p">()</span>
-<span class="n">X_value</span> <span class="o">=</span> <span class="n">Xy</span><span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="o">...</span><span class="p">})</span>
-<span class="n">y_value</span> <span class="o">=</span> <span class="n">Xy</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="o">...</span><span class="p">})</span>
+<span class="n">X_value</span> <span class="o">=</span> <span class="n">Xy</span><span class="p">[</span><span class="s1">'X'</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="o">...</span><span class="p">})</span>
+<span class="n">y_value</span> <span class="o">=</span> <span class="n">Xy</span><span class="p">[</span><span class="s1">'y'</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="o">...</span><span class="p">})</span>
 </pre></div>
 </div>
 <p>Indeed, evaluating each value in the dict separately can result in
@@ -850,28 +850,28 @@ joins, database queries etc.).</p>
 <span class="go">5  screwdriver     12   supermarket.com        tools</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;df&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">groups</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;seller&quot;</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;price&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;category&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"df"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">groups</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"seller"</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">"description"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">]]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"category"</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">DummyClassifier</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X_y</span> <span class="o">=</span> <span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">find_X_y</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X_y</span>
-<span class="go">{&#39;X&#39;: &lt;GetItem [&#39;description&#39;, &#39;price&#39;]&gt;, &#39;y&#39;: &lt;GetItem &#39;category&#39;&gt;}</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">X_y</span><span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="n">X</span>
+<span class="go">{'X': &lt;GetItem ['description', 'price']&gt;, 'y': &lt;GetItem 'category'&gt;}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X_y</span><span class="p">[</span><span class="s1">'X'</span><span class="p">]</span> <span class="ow">is</span> <span class="n">X</span>
 <span class="go">True</span>
 </pre></div>
 </div>
 <p>To compute the values, evaluate the whole dictionary as a single DataOp:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X_y_values</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">as_data_op</span><span class="p">(</span><span class="n">X_y</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">&#39;df&#39;</span><span class="p">:</span> <span class="n">df</span><span class="p">})</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X_y_values</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">as_data_op</span><span class="p">(</span><span class="n">X_y</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">eval</span><span class="p">({</span><span class="s1">'df'</span><span class="p">:</span> <span class="n">df</span><span class="p">})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X_y_values</span>
-<span class="go">{&#39;X&#39;:    description  price</span>
+<span class="go">{'X':    description  price</span>
 <span class="go">0       screen    100</span>
 <span class="go">1       hammer     15</span>
 <span class="go">2     keyboard     20</span>
 <span class="go">3      usb key      9</span>
 <span class="go">4      charger     13</span>
-<span class="go">5  screwdriver     12, &#39;y&#39;: 0    electronics</span>
+<span class="go">5  screwdriver     12, 'y': 0    electronics</span>
 <span class="go">1          tools</span>
 <span class="go">2    electronics</span>
 <span class="go">3    electronics</span>
@@ -885,12 +885,12 @@ will also contain the keys <code class="docutils literal notranslate"><span clas
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">LeaveOneGroupOut</span>
 </pre></div>
 </div>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;price&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">cv</span><span class="o">=</span><span class="n">LeaveOneGroupOut</span><span class="p">(),</span> <span class="n">split_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;groups&quot;</span><span class="p">:</span> <span class="n">groups</span><span class="p">}</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">"description"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">]]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">cv</span><span class="o">=</span><span class="n">LeaveOneGroupOut</span><span class="p">(),</span> <span class="n">split_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">"groups"</span><span class="p">:</span> <span class="n">groups</span><span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">DummyClassifier</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">find_X_y</span><span class="p">()</span>
-<span class="go">{&#39;X&#39;: &lt;X&gt;, &#39;cv&#39;: LeaveOneGroupOut(), &#39;split_kwargs&#39;: {&#39;groups&#39;: &lt;GetItem &#39;seller&#39;&gt;}, &#39;y&#39;: &lt;GetItem &#39;category&#39;&gt;}</span>
+<span class="go">{'X': &lt;X&gt;, 'cv': LeaveOneGroupOut(), 'split_kwargs': {'groups': &lt;GetItem 'seller'&gt;}, 'y': &lt;GetItem 'category'&gt;}</span>
 </pre></div>
 </div>
 </dd></dl>

@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -688,9 +688,9 @@ so that it is possible to use the APIs of the underlying data structures
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">orders_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;cup&quot;</span><span class="p">,</span> <span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;fork&quot;</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"item"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"pen"</span><span class="p">,</span> <span class="s2">"cup"</span><span class="p">,</span> <span class="s2">"pen"</span><span class="p">,</span> <span class="s2">"fork"</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"price"</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"qty"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">orders_df</span>
@@ -703,21 +703,21 @@ so that it is possible to use the APIs of the underlying data structures
 </div>
 <p>We can create a skrub variable to represent that input:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;orders&quot;</span><span class="p">,</span> <span class="n">orders_df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"orders"</span><span class="p">,</span> <span class="n">orders_df</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Because we know that a dataframe will be provided as input to the computation, we
 can manipulate <code class="docutils literal notranslate"><span class="pre">orders</span></code> as if it were a regular dataframe.</p>
 <p>We can access its attributes:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">columns</span>
-<span class="go">&lt;GetAttr &#39;columns&#39;&gt;</span>
+<span class="go">&lt;GetAttr 'columns'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
-<span class="go">Index([&#39;item&#39;, &#39;price&#39;, &#39;qty&#39;], dtype=...)</span>
+<span class="go">Index(['item', 'price', 'qty'], dtype=...)</span>
 </pre></div>
 </div>
 <p>Accessing items, indexing, slicing:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="p">[</span><span class="s2">&quot;item&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="p">[</span><span class="s2">"item"</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
 <span class="go">&lt;GetItem slice(1, None, None)&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
@@ -728,7 +728,7 @@ can manipulate <code class="docutils literal notranslate"><span class="pre">orde
 </pre></div>
 </div>
 <p>We can apply operators:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s2">&quot;qty&quot;</span><span class="p">]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s2">"qty"</span><span class="p">]</span>
 <span class="go">&lt;BinOp: mul&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
@@ -740,8 +740,8 @@ can manipulate <code class="docutils literal notranslate"><span class="pre">orde
 </pre></div>
 </div>
 <p>We can call methods:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">total</span><span class="o">=</span><span class="n">orders</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s2">&quot;qty&quot;</span><span class="p">])</span>
-<span class="go">&lt;CallMethod &#39;assign&#39;&gt;</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">total</span><span class="o">=</span><span class="n">orders</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s2">"qty"</span><span class="p">])</span>
+<span class="go">&lt;CallMethod 'assign'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
 <span class="go">   item  price  qty  total</span>

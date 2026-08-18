@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -692,12 +692,12 @@ immediately.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">orders_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;cup&quot;</span><span class="p">,</span> <span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;fork&quot;</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"item"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"pen"</span><span class="p">,</span> <span class="s2">"cup"</span><span class="p">,</span> <span class="s2">"pen"</span><span class="p">,</span> <span class="s2">"fork"</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"price"</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"qty"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;orders&quot;</span><span class="p">,</span> <span class="n">orders_df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"orders"</span><span class="p">,</span> <span class="n">orders_df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">orders</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
 <span class="gp">... </span>    <span class="k">pass</span>
 <span class="gt">Traceback (most recent call last):</span>
@@ -712,10 +712,10 @@ when we run the computation.</p>
 <p>This remains true even if we have provided a value for <code class="docutils literal notranslate"><span class="pre">orders</span></code> and we can
 see a result for that value:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">columns</span>
-<span class="go">&lt;GetAttr &#39;columns&#39;&gt;</span>
+<span class="go">&lt;GetAttr 'columns'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
-<span class="go">Index([&#39;item&#39;, &#39;price&#39;, &#39;qty&#39;], dtype=...)</span>
+<span class="go">Index(['item', 'price', 'qty'], dtype=...)</span>
 </pre></div>
 </div>
 <p>The “result” we see is an <em>example</em> result that the computation produces for the
@@ -733,11 +733,11 @@ executed when the DataOp is evaluated, and will return the result as a DataOp.</
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
 <span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">with_upper_columns</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="n">new_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
-<span class="gp">... </span>    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">set_axis</span><span class="p">(</span><span class="n">new_columns</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">set_axis</span><span class="p">(</span><span class="n">new_columns</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">with_upper_columns</span><span class="p">(</span><span class="n">orders</span><span class="p">)</span>
-<span class="go">&lt;Call &#39;with_upper_columns&#39;&gt;</span>
+<span class="go">&lt;Call 'with_upper_columns'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
 <span class="go">   ITEM  PRICE  QTY</span>
@@ -761,11 +761,11 @@ applying <code class="docutils literal notranslate"><span class="pre">deferred</
 <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.apply_func.html#skrub.DataOp.skb.apply_func" title="skrub.DataOp.skb.apply_func"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.apply_func()</span></code></a>:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span><span class="w"> </span><span class="nf">with_upper_columns</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="n">new_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
-<span class="gp">... </span>    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">set_axis</span><span class="p">(</span><span class="n">new_columns</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">set_axis</span><span class="p">(</span><span class="n">new_columns</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><span class="n">with_upper_columns</span><span class="p">)</span>
-<span class="go">&lt;Call &#39;with_upper_columns&#39;&gt;</span>
+<span class="go">&lt;Call 'with_upper_columns'&gt;</span>
 <span class="go">Result:</span>
 <span class="go">―――――――</span>
 <span class="go">   ITEM  PRICE  QTY</span>
@@ -784,7 +784,7 @@ supported on DataOps until evaluation.</p>
 value whenever possible. Returning multiple outputs should be avoided unless
 strictly necessary, as it makes downstream usage more complex.</p>
 <p>Instead, keep the result as a single DataOp and index into it:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">test</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">test</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"test"</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
 <span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">process_test_data</span><span class="p">(</span><span class="n">test</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="n">left</span> <span class="o">=</span> <span class="n">test</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -798,7 +798,7 @@ strictly necessary, as it makes downstream usage more complex.</p>
 <p><a class="reference internal" href="../../../reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> is useful not only for our own functions, but also when we
 need to call module-level functions from a library. For example, to delay the
 loading of a CSV file, we could write something like:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">csv_path</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;csv_path&quot;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">csv_path</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"csv_path"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">deferred</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">)(</span><span class="n">csv_path</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -812,12 +812,12 @@ transformation that we apply must not modify its input, but leave it unchanged
 and return a new value.</p>
 <p>Consider the transformers in a scikit-learn pipeline: each computes a new
 result without modifying its input.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">orders</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s1">&#39;qty&#39;</span><span class="p">]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="p">[</span><span class="s1">'total'</span><span class="p">]</span> <span class="o">=</span> <span class="n">orders</span><span class="p">[</span><span class="s1">'price'</span><span class="p">]</span> <span class="o">*</span> <span class="n">orders</span><span class="p">[</span><span class="s1">'qty'</span><span class="p">]</span>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="w">    </span><span class="o">...</span>
 <span class="gr">TypeError</span>: <span class="n">Do not modify a DataOp in-place. Instead, use a function that returns a new value. This is necessary to allow chaining several steps in a sequence of transformations.</span>
 <span class="x">For example if df is a pandas DataFrame:</span>
-<span class="x">df = df.assign(new_col=...) instead of df[&#39;new_col&#39;] = ...</span>
+<span class="x">df = df.assign(new_col=...) instead of df['new_col'] = ...</span>
 </pre></div>
 </div>
 <p>Note the suggestion in the error message: using <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.assign.html#pandas.DataFrame.assign" title="(in pandas v3.0.5)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">pandas.DataFrame.assign()</span></code></a>.

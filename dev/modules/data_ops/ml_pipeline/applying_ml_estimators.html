@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -689,12 +689,12 @@ scikit-learn or skrub to the data. This is done through the
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">skrub</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">orders_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;cup&quot;</span><span class="p">,</span> <span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;fork&quot;</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"item"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"pen"</span><span class="p">,</span> <span class="s2">"cup"</span><span class="p">,</span> <span class="s2">"pen"</span><span class="p">,</span> <span class="s2">"fork"</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"price"</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"qty"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;orders&quot;</span><span class="p">,</span> <span class="n">orders_df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"orders"</span><span class="p">,</span> <span class="n">orders_df</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">skrub</span><span class="o">.</span><span class="n">TableVectorizer</span><span class="p">())</span>
@@ -713,7 +713,7 @@ parameter can also use a skrub <a class="reference internal" href="../../multi_c
 grained control.
 Note that any column that is not selected is passed through unchanged, like below:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vectorized_orders</span> <span class="o">=</span> <span class="n">orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="n">skrub</span><span class="o">.</span><span class="n">StringEncoder</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="s2">&quot;item&quot;</span>
+<span class="gp">... </span>    <span class="n">skrub</span><span class="o">.</span><span class="n">StringEncoder</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span> <span class="n">cols</span><span class="o">=</span><span class="s2">"item"</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">vectorized_orders</span>
 <span class="go">&lt;Apply StringEncoder&gt;</span>
@@ -729,8 +729,8 @@ Note that any column that is not selected is passed through unchanged, like belo
 <p>Then, we can export the transformation as a learner with
 <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.make_learner.html#skrub.DataOp.skb.make_learner" title="skrub.DataOp.skb.make_learner"><code class="xref py py-meth docutils literal notranslate"><span class="pre">.skb.make_learner()</span></code></a></p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="n">vectorized_orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">(</span><span class="n">fitted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">new_orders</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;item&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;fork&quot;</span><span class="p">],</span> <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">2.2</span><span class="p">],</span> <span class="s2">&quot;qty&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">]})</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">&quot;orders&quot;</span><span class="p">:</span> <span class="n">new_orders</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">new_orders</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"item"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"fork"</span><span class="p">],</span> <span class="s2">"price"</span><span class="p">:</span> <span class="p">[</span><span class="mf">2.2</span><span class="p">],</span> <span class="s2">"qty"</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">]})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s2">"orders"</span><span class="p">:</span> <span class="n">new_orders</span><span class="p">})</span>
 <span class="go">         item_0  item_1        item_2  price  qty</span>
 <span class="go">0  5.984116e-09     1.0 -1.323546e-07    2.2    5</span>
 </pre></div>
@@ -739,7 +739,7 @@ Note that any column that is not selected is passed through unchanged, like belo
 be exported without fitting, and then fitted on new data provided as an environment
 dictionary. By default, the learner is returned without fitting.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span> <span class="o">=</span> <span class="n">vectorized_orders</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">make_learner</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit</span><span class="p">({</span><span class="s2">&quot;orders&quot;</span><span class="p">:</span> <span class="n">orders_df</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">learner</span><span class="o">.</span><span class="n">fit</span><span class="p">({</span><span class="s2">"orders"</span><span class="p">:</span> <span class="n">orders_df</span><span class="p">})</span>
 <span class="go">SkrubLearner(data_op=&lt;Apply StringEncoder&gt;)</span>
 </pre></div>
 </div>

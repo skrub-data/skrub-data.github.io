@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>skrub.DataOp.skb.with_scoring<a class="headerlink" href="#skrub-dataop-skb-with-scoring" title="Link to this heading">#</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="skrub.DataOp.skb.with_scoring">
-<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">with_scoring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scoring</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/_data_ops/_skrub_namespace.py#L3116"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.with_scoring" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">DataOp.skb.</span></span><span class="sig-name descname"><span class="pre">with_scoring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scoring</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_data_ops/_skrub_namespace.py#L3116"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.DataOp.skb.with_scoring" title="Link to this definition">#</a></dt>
 <dd><p>Attach a scoring method to this DataOp.</p>
 <p>This records a scikit-learn
 <a class="reference external" href="https://scikit-learn.org/stable/modules/model_evaluation.html#the-scoring-parameter-defining-model-evaluation-rules">scorer</a>
@@ -857,9 +857,9 @@ DataOp construction.</p>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">toy_products</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">&quot;df&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;price&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">(</span><span class="n">cv</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;category&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"df"</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s2">"description"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">]]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_X</span><span class="p">(</span><span class="n">cv</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"category"</span><span class="p">]</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">mark_as_y</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">DummyClassifier</span><span class="p">(),</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -872,9 +872,9 @@ DataOp construction.</p>
 </div>
 <p>But suppose we want to give more importance to the pricier products. We can
 weight the accuracy by the item price:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sample_weight</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sample_weight</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="s2">&quot;accuracy&quot;</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;sample_weight&quot;</span><span class="p">:</span> <span class="n">sample_weight</span><span class="p">}</span>
+<span class="gp">... </span>    <span class="s2">"accuracy"</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">"sample_weight"</span><span class="p">:</span> <span class="n">sample_weight</span><span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">cross_validate</span><span class="p">()</span>
 <span class="go">   fit_time  score_time  test_accuracy</span>
 <span class="go">0  0.003045    0.003275       0.888889</span>
@@ -882,10 +882,10 @@ weight the accuracy by the item price:</p>
 </pre></div>
 </div>
 <p>We can also have both by calling <code class="docutils literal notranslate"><span class="pre">with_scoring</span></code> twice:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="s2">&quot;accuracy&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="s2">&quot;accuracy&quot;</span><span class="p">,</span>
-<span class="gp">... </span>    <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;sample_weight&quot;</span><span class="p">:</span> <span class="n">sample_weight</span><span class="p">},</span>
-<span class="gp">... </span>    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;weighted_accuracy&quot;</span><span class="p">,</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span><span class="s2">"accuracy"</span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="s2">"accuracy"</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">"sample_weight"</span><span class="p">:</span> <span class="n">sample_weight</span><span class="p">},</span>
+<span class="gp">... </span>    <span class="n">name</span><span class="o">=</span><span class="s2">"weighted_accuracy"</span><span class="p">,</span>
 <span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">cross_validate</span><span class="p">()</span>
 <span class="go">   fit_time  score_time  test_accuracy  test_weighted_accuracy</span>
 <span class="go">0  0.002738    0.005733       0.666667                0.888889</span>
@@ -894,9 +894,9 @@ weight the accuracy by the item price:</p>
 </div>
 <p>When we have several scorers that use the same kwargs, we can pass a list
 or dict of metrics, as for <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate" title="(in scikit-learn v1.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">sklearn.model_selection.cross_validate()</span></code></a>:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sample_weight</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sample_weight</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pred</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">with_scoring</span><span class="p">(</span>
-<span class="gp">... </span>    <span class="p">[</span><span class="s2">&quot;accuracy&quot;</span><span class="p">,</span> <span class="s2">&quot;neg_log_loss&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;sample_weight&quot;</span><span class="p">:</span> <span class="n">sample_weight</span><span class="p">}</span>
+<span class="gp">... </span>    <span class="p">[</span><span class="s2">"accuracy"</span><span class="p">,</span> <span class="s2">"neg_log_loss"</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">"sample_weight"</span><span class="p">:</span> <span class="n">sample_weight</span><span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">cross_validate</span><span class="p">()</span>
 <span class="go">   fit_time  score_time  test_accuracy  test_neg_log_loss</span>
 <span class="go">0  0.002694    0.007017       0.888889          -0.482481</span>

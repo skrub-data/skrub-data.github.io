@@ -39,7 +39,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -783,7 +783,7 @@
 <h1>all<a class="headerlink" href="#all" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.selectors.all">
-<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/3914bb9/skrub/selectors/_base.py#L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.all" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.selectors.</span></span><span class="sig-name descname"><span class="pre">all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/selectors/_base.py#L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.selectors.all" title="Link to this definition">#</a></dt>
 <dd><p>Select all columns in a dataframe.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
@@ -799,10 +799,10 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
 <span class="gp">... </span>    <span class="p">{</span>
-<span class="gp">... </span>        <span class="s2">&quot;height_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">297.0</span><span class="p">,</span> <span class="mf">420.0</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;width_mm&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A4&quot;</span><span class="p">,</span> <span class="s2">&quot;A3&quot;</span><span class="p">],</span>
-<span class="gp">... </span>        <span class="s2">&quot;ID&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"height_mm"</span><span class="p">:</span> <span class="p">[</span><span class="mf">297.0</span><span class="p">,</span> <span class="mf">420.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"width_mm"</span><span class="p">:</span> <span class="p">[</span><span class="mf">210.0</span><span class="p">,</span> <span class="mf">297.0</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"kind"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"A4"</span><span class="p">,</span> <span class="s2">"A3"</span><span class="p">],</span>
+<span class="gp">... </span>        <span class="s2">"ID"</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
 <span class="gp">... </span>    <span class="p">}</span>
 <span class="gp">... </span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span>
@@ -819,7 +819,7 @@
 </pre></div>
 </div>
 <p>Use <code class="docutils literal notranslate"><span class="pre">all()</span></code> as a base for excluding columns, for example by name:</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="o">-</span> <span class="s1">&#39;ID&#39;</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="o">-</span> <span class="s1">'ID'</span><span class="p">)</span>
 <span class="go">   height_mm  width_mm kind</span>
 <span class="go">0      297.0     210.0   A4</span>
 <span class="go">1      420.0     297.0   A3</span>
