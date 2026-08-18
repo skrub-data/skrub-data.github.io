@@ -785,12 +785,12 @@
 <h1>patch_display<a class="headerlink" href="#patch-display" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.patch_display">
-<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">patch_display</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pandas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_distributions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compute_associations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/e92206a/skrub/_reporting/_patching.py#L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.patch_display" title="Link to this definition">#</a></dt>
-<dd><p>Replace the default DataFrame HTML displays with <code class="docutils literal notranslate"><span class="pre">skrub.TableReport</span></code>.</p>
+<span class="sig-prename descclassname"><span class="pre">skrub.</span></span><span class="sig-name descname"><span class="pre">patch_display</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pandas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">polars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_distributions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compute_associations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/8b827a0/skrub/_reporting/_patching.py#L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.patch_display" title="Link to this definition">#</a></dt>
+<dd><p>Replace the default DataFrame HTML displays with <a class="reference internal" href="skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.TableReport</span></code></a>.</p>
 <p>This function replaces the HTML displays (what is shown when an object is
 the output of a jupyter notebook cell) of pandas and polars DataFrames
-with a TableReport.</p>
-<p>It can be undone with <code class="docutils literal notranslate"><span class="pre">skrub.unpatch_display()</span></code>.</p>
+with a <a class="reference internal" href="skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>.</p>
+<p>It can be undone with <a class="reference internal" href="skrub.unpatch_display.html#skrub.unpatch_display" title="skrub.unpatch_display"><code class="xref py py-func docutils literal notranslate"><span class="pre">unpatch_display()</span></code></a>.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
@@ -804,23 +804,23 @@ with a TableReport.</p>
 <li><p>verbose = 0 silences the output.</p></li>
 </ul>
 </dd>
-<dt><strong>plot_distributions</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a> or “auto”, default=False</span></dt><dd><p>Whether to plot distributions in <a class="reference internal" href="skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>.
-- <code class="docutils literal notranslate"><span class="pre">True</span></code>: always generate plots, regardless of column count.
-- <code class="docutils literal notranslate"><span class="pre">False</span></code>: never generate plots.
-- <code class="docutils literal notranslate"><span class="pre">&quot;auto&quot;</span></code>: generate plots only when the number of columns</p>
-<blockquote>
-<div><p>does not exceed the configured <code class="docutils literal notranslate"><span class="pre">table_report_plots_threshold</span></code>
-(see <a class="reference internal" href="skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a>).</p>
-</div></blockquote>
+<dt><strong>plot_distributions</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a> or “auto”, default=False</span></dt><dd><p>Whether to plot distributions in <a class="reference internal" href="skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>: always generate plots, regardless of column count.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code>: never generate plots.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;auto&quot;</span></code>: generate plots only when the number of columns
+does not exceed the configured <code class="docutils literal notranslate"><span class="pre">table_report_plots_threshold</span></code>
+(see <a class="reference internal" href="skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a>).</p></li>
+</ul>
 </dd>
-<dt><strong>compute_associations</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a> or “auto”, default=False</span></dt><dd><p>Whether to compute associations in <a class="reference internal" href="skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>.
-- <code class="docutils literal notranslate"><span class="pre">True</span></code>: always compute associations, regardless of column count.
-- <code class="docutils literal notranslate"><span class="pre">False</span></code>: never compute associations.
-- <code class="docutils literal notranslate"><span class="pre">&quot;auto&quot;</span></code>: compute associations only when the number of</p>
-<blockquote>
-<div><p>columns does not exceed the configured <code class="docutils literal notranslate"><span class="pre">table_report_associations_threshold</span></code>
-(see <a class="reference internal" href="skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a>).</p>
-</div></blockquote>
+<dt><strong>compute_associations</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">bool</span></code></a> or “auto”, default=False</span></dt><dd><p>Whether to compute associations in <a class="reference internal" href="skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>: always compute associations, regardless of column count.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code>: never compute associations.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;auto&quot;</span></code>: compute associations only when the number of
+columns does not exceed the configured <code class="docutils literal notranslate"><span class="pre">table_report_associations_threshold</span></code>
+(see <a class="reference internal" href="skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a>).</p></li>
+</ul>
 </dd>
 </dl>
 </dd>
