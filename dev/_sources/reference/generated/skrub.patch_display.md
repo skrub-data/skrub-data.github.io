@@ -27,14 +27,15 @@ It can be undone with `skrub.unpatch_display()`.
     - `True`: always generate plots, regardless of column count.
     - `False`: never generate plots.
     - `"auto"`: generate plots only when the number of columns
-    > does not exceed the configured `plots_threshold` (see [`set_config()`](skrub.set_confightml.md#skrub.set_config)).
+    > does not exceed the configured `table_report_plots_threshold`
+    > (see [`set_config()`](skrub.set_confightml.md#skrub.set_config)).
 
   **compute_associations**
   : Whether to compute associations in [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport).
     - `True`: always compute associations, regardless of column count.
     - `False`: never compute associations.
     - `"auto"`: compute associations only when the number of
-    > columns does not exceed the configured `associations_threshold`
+    > columns does not exceed the configured `table_report_associations_threshold`
     > (see [`set_config()`](skrub.set_confightml.md#skrub.set_config)).
 
 #### SEE ALSO
