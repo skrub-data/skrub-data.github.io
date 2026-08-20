@@ -47,6 +47,9 @@
 - The parallel coordinate plot created by `ParamSearch.show_results()` could
   have incorrect tick labels in some cases. This has been fixed in [#2215](https://github.com/skrub-data/skrub/pull/2215) by
   [Jérôme Dockès](https://github.com/jeromedockes).
+- [`GapEncoder`](reference/generated/skrub.GapEncoderhtml.md#skrub.GapEncoder) with `init="k-means"` raised an error when the input
+  column contained missing values. This has been fixed in [#2238](https://github.com/skrub-data/skrub/pull/2238) by
+  [Achraf Ez](https://github.com/Hrafz).
 
 ### Deprecations
 
