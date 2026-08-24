@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: New Features: Changes: patch_display() now uses a minimal, faster TableReport without plots or column associations by default. The old behavior can still be achieved by calling..." />
+<meta property="og:description" content="Ongoing development: New Features: Changes: TextEncoder ’s verbose parameter is now an int instead of a bool, where verbose=0 silences the progress bar and verbose&gt;=1 shows it. The default is no..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: New Features: Changes: patch_display() now uses a minimal, faster TableReport without plots or column associations by default. The old behavior can still be achieved by calling..." />
+<meta name="description" content="Ongoing development: New Features: Changes: TextEncoder ’s verbose parameter is now an int instead of a bool, where verbose=0 silences the progress bar and verbose&gt;=1 shows it. The default is no..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -597,6 +597,11 @@
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul>
+<li><p><a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a>’s <code class="docutils literal notranslate"><span class="pre">verbose</span></code> parameter is now an <code class="docutils literal notranslate"><span class="pre">int</span></code> instead of a
+<code class="docutils literal notranslate"><span class="pre">bool</span></code>, where <code class="docutils literal notranslate"><span class="pre">verbose=0</span></code> silences the progress bar and
+<code class="docutils literal notranslate"><span class="pre">verbose&gt;=1</span></code> shows it. The default is now <code class="docutils literal notranslate"><span class="pre">0</span></code>. Passing a
+boolean is still accepted.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2249">#2249</a> by <a class="reference external" href="https://github.com/Jayant-kernel">Jayant-kernel</a>.</p></li>
 <li><p><a class="reference internal" href="reference/generated/skrub.patch_display.html#skrub.patch_display" title="skrub.patch_display"><code class="xref py py-func docutils literal notranslate"><span class="pre">patch_display()</span></code></a> now uses a minimal, faster TableReport without plots or
 column associations by default. The old behavior can still be achieved by calling
 <code class="docutils literal notranslate"><span class="pre">patch_display(plot_distributions=&quot;auto&quot;,</span> <span class="pre">compute_associations=&quot;auto&quot;)</span></code>.

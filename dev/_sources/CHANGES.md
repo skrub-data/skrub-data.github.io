@@ -8,6 +8,11 @@
 
 ### Changes
 
+- [`TextEncoder`](reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder)’s `verbose` parameter is now an `int` instead of a
+  `bool`, where `verbose=0` silences the progress bar and
+  `verbose>=1` shows it. The default is now `0`. Passing a
+  boolean is still accepted.
+  [#2249](https://github.com/skrub-data/skrub/pull/2249) by [Jayant-kernel](https://github.com/Jayant-kernel).
 - [`patch_display()`](reference/generated/skrub.patch_displayhtml.md#skrub.patch_display) now uses a minimal, faster TableReport without plots or
   column associations by default. The old behavior can still be achieved by calling
   `patch_display(plot_distributions="auto", compute_associations="auto")`.

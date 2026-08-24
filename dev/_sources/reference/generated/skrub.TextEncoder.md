@@ -1,6 +1,6 @@
 # TextEncoder
 
-### *class* skrub.TextEncoder(model_name='intfloat/e5-small-v2', n_components=30, device=None, batch_size=32, token_env_variable=None, cache_folder=None, store_weights_in_pickle=False, random_state=None, verbose=False)
+### *class* skrub.TextEncoder(model_name='intfloat/e5-small-v2', n_components=30, device=None, batch_size=32, token_env_variable=None, cache_folder=None, store_weights_in_pickle=False, random_state=None, verbose=0)
 
 Encode string features by applying a pretrained language model         downloaded from the HuggingFace Hub.
 
@@ -86,6 +86,8 @@ in the [Install](../../installhtml.md#installation-instructions) guide for more 
   **verbose**
   : Verbose level, controls whether to show a progress bar or not during
     `transform`.
+    - verbose = 0 does not show a progress bar.
+    - verbose >= 1 shows a progress bar.
 * **Attributes:**
   **input_name_**
   : The name of the fitted column, or “text_enc” if the column has no name.
