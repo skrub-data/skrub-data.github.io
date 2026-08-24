@@ -644,6 +644,11 @@ have incorrect tick labels in some cases. This has been fixed in <a class="refer
 <li><p><a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> with <code class="docutils literal notranslate"><span class="pre">init=&quot;k-means&quot;</span></code> raised an error when the input
 column contained missing values. This has been fixed in <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2238">#2238</a> by
 <a class="reference external" href="https://github.com/Hrafz">Achraf Ez</a>.</p></li>
+<li><p><a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> no longer raises <code class="docutils literal notranslate"><span class="pre">UnboundLocalError</span></code> when
+<code class="docutils literal notranslate"><span class="pre">resolution=None</span></code> is combined with <code class="docutils literal notranslate"><span class="pre">periodic_encoding=&quot;circular&quot;</span></code> or
+<code class="docutils literal notranslate"><span class="pre">&quot;spline&quot;</span></code>, and no longer fits an unused <code class="docutils literal notranslate"><span class="pre">weekday</span></code> periodic encoder when
+<code class="docutils literal notranslate"><span class="pre">resolution</span></code> is finer than <code class="docutils literal notranslate"><span class="pre">&quot;hour&quot;</span></code>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2240">#2240</a> by
+<a class="reference external" href="https://github.com/Hrafz">Achraf Ez</a>.</p></li>
 </ul>
 </section>
 <section id="deprecations">

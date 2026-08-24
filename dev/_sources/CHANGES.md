@@ -55,6 +55,11 @@
 - [`GapEncoder`](reference/generated/skrub.GapEncoderhtml.md#skrub.GapEncoder) with `init="k-means"` raised an error when the input
   column contained missing values. This has been fixed in [#2238](https://github.com/skrub-data/skrub/pull/2238) by
   [Achraf Ez](https://github.com/Hrafz).
+- [`DatetimeEncoder`](reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) no longer raises `UnboundLocalError` when
+  `resolution=None` is combined with `periodic_encoding="circular"` or
+  `"spline"`, and no longer fits an unused `weekday` periodic encoder when
+  `resolution` is finer than `"hour"`. [#2240](https://github.com/skrub-data/skrub/pull/2240) by
+  [Achraf Ez](https://github.com/Hrafz).
 
 ### Deprecations
 
