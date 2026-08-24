@@ -60,6 +60,11 @@
   `"spline"`, and no longer fits an unused `weekday` periodic encoder when
   `resolution` is finer than `"hour"`. [#2240](https://github.com/skrub-data/skrub/pull/2240) by
   [Achraf Ez](https://github.com/Hrafz).
+- When `cols` was not provided, [`AggJoiner`](reference/generated/skrub.AggJoinerhtml.md#skrub.AggJoiner) and [`MultiAggJoiner`](reference/generated/skrub.MultiAggJoinerhtml.md#skrub.MultiAggJoiner)
+  selected the columns to aggregate through a Python `set`, so the order of the
+  aggregated output columns varied between runs. They now keep the order in which
+  the columns appear in the auxiliary table. This has been fixed in [#2250](https://github.com/skrub-data/skrub/pull/2250) by
+  [Dylan Pulver](https://github.com/dylanpulver).
 
 ### Deprecations
 
