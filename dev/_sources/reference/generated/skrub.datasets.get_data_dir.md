@@ -14,5 +14,8 @@ where the data is downloaded and stored.
   **data_home**
   : The path to skrub data directory. If `None`, the default path
     is `~/skrub_data`.
+* **Returns:**
+  pathlib.Path
+  : The path to the requested data directory.
 
 <!-- !! processed by numpydoc !! -->

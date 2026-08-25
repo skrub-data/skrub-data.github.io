@@ -29,7 +29,7 @@ metric_1, metric_2, etc: Randomly chosen float values.
   **n_metrics**
   : Number of ‘metrics’ columns added.
 * **Returns:**
-  pandas dataframe
+  pandas Dataframe
   : The randomly-generated dataframe, with `size` rows and
     `5 + n_metrics` columns.
 

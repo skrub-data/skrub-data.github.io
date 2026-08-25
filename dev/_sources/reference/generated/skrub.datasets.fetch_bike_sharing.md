@@ -30,6 +30,16 @@ information. Size on disk: 1.3MB.
     path
     : The path to the bike sharing CSV file.
 
+### Examples
+
+```pycon
+>>> from skrub.datasets import fetch_bike_sharing
+>>> data = fetch_bike_sharing()
+>>> print(data.keys())
+dict_keys(['path', 'bike_sharing', 'bike_sharing_path',
+  'metadata', 'metadata_path', 'X', 'y'])
+```
+
 <!-- !! processed by numpydoc !! -->
 
 ## Gallery examples

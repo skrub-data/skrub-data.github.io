@@ -2,7 +2,7 @@
 
 ### skrub.datasets.fetch_videogame_sales(data_home=None)
 
-Fetch the videogame sales dataset (regression) available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
+Fetch the videogame sales dataset available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
 
 This is a regression use-case, where the single table contains information
 about videogames such as the publisher and platform, and the goal is to
@@ -35,5 +35,15 @@ publication year and splitting by year.
     <br/>
     path
     : The path to the videogame sales CSV file.
+
+### Examples
+
+```pycon
+>>> from skrub.datasets import fetch_videogame_sales
+>>> data = fetch_videogame_sales()
+>>> print(data.keys())
+dict_keys(['path', 'metadata', 'metadata_path',
+  'videogame_sales', 'videogame_sales_path', 'X', 'y'])
+```
 
 <!-- !! processed by numpydoc !! -->

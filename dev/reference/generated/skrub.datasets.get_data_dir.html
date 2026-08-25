@@ -783,7 +783,7 @@
 <h1>get_data_dir<a class="headerlink" href="#get-data-dir" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.get_data_dir">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">get_data_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/abf0147/skrub/datasets/_utils.py#L190"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.get_data_dir" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">get_data_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/371677d/skrub/datasets/_utils.py#L190"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.get_data_dir" title="Link to this definition">#</a></dt>
 <dd><p>Returns the directory in which skrub looks for data.</p>
 <p>This is typically useful for the end-user to check
 where the data is downloaded and stored.</p>
@@ -794,6 +794,12 @@ where the data is downloaded and stored.</p>
 </dd>
 <dt><strong>data_home</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <span class="xref std std-term">path-like</span>, optional</span></dt><dd><p>The path to skrub data directory. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, the default path
 is <code class="docutils literal notranslate"><span class="pre">~/skrub_data</span></code>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>pathlib.Path</dt><dd><p>The path to the requested data directory.</p>
 </dd>
 </dl>
 </dd>

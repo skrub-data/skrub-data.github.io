@@ -785,7 +785,7 @@
 <h1>fetch_bike_sharing<a class="headerlink" href="#fetch-bike-sharing" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_bike_sharing">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_bike_sharing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/abf0147/skrub/datasets/_fetching.py#L406"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_bike_sharing" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_bike_sharing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/371677d/skrub/datasets/_fetching.py#L477"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_bike_sharing" title="Link to this definition">#</a></dt>
 <dd><p>Fetch the bike sharing dataset (regression) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
 <p>This is a regression use-case, where the goal is to predict demand for a
 bike-sharing service. The features are the dates and holiday and weather
@@ -793,7 +793,7 @@ information. Size on disk: 1.3MB.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>data_home</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <span class="xref std std-term">path-like</span>, default=None</span></dt><dd><p>The directory where to download and unzip the files.</p>
+<dt><strong>data_home</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <code class="docutils literal notranslate"><span class="pre">path-like</span></code>, default=None</span></dt><dd><p>The directory where to download and unzip the files.</p>
 </dd>
 </dl>
 </dd>
@@ -816,6 +816,14 @@ information. Size on disk: 1.3MB.</p>
 </dl>
 </dd>
 </dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_bike_sharing</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">fetch_bike_sharing</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="go">dict_keys(['path', 'bike_sharing', 'bike_sharing_path',</span>
+<span class="go">  'metadata', 'metadata_path', 'X', 'y'])</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <section id="gallery-examples">

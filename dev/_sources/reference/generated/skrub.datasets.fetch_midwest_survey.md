@@ -4,8 +4,7 @@
 
 Fetches the midwest survey dataset (classification), available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
 
-Description of the dataset:
-: Survey to know if people self-identify as Midwesterners. Size on disk: 504KB.
+Survey to know if people self-identify as Midwesterners. Size on disk: 504KB.
 
 * **Parameters:**
   **data_home**
@@ -28,5 +27,15 @@ Description of the dataset:
     <br/>
     path
     : The path to the midwest survey CSV file.
+
+### Examples
+
+```pycon
+>>> from skrub.datasets import fetch_midwest_survey
+>>> data = fetch_midwest_survey()
+>>> print(data.keys())
+dict_keys(['path', 'metadata', 'metadata_path', 'midwest_survey',
+  'midwest_survey_path', 'X', 'y'])
+```
 
 <!-- !! processed by numpydoc !! -->

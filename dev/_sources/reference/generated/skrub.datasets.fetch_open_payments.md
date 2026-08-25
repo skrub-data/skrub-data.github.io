@@ -4,9 +4,8 @@
 
 Fetches the open payments dataset (classification), available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
 
-Description of the dataset:
-: Payments given by healthcare manufacturing companies to medical doctors
-  or hospitals. Size on disk: 8.7MB.
+Payments given by healthcare manufacturing companies to medical doctors
+or hospitals. Size on disk: 8.7MB.
 
 * **Parameters:**
   **data_home**
@@ -29,5 +28,15 @@ Description of the dataset:
     <br/>
     path
     : The path to the open payments CSV file.
+
+### Examples
+
+```pycon
+>>> from skrub.datasets import fetch_open_payments
+>>> data = fetch_open_payments()
+>>> print(data.keys())
+dict_keys(['path', 'metadata', 'metadata_path', 'open_payments',
+  'open_payments_path', 'X', 'y'])
+```
 
 <!-- !! processed by numpydoc !! -->

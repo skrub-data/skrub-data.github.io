@@ -783,10 +783,9 @@
 <h1>fetch_electricity_forecasting<a class="headerlink" href="#fetch-electricity-forecasting" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_electricity_forecasting">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_electricity_forecasting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/abf0147/skrub/datasets/_fetching.py#L611"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_electricity_forecasting" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_electricity_forecasting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/371677d/skrub/datasets/_fetching.py#L728"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_electricity_forecasting" title="Link to this definition">#</a></dt>
 <dd><p>Fetches the electricity usage dataset (forecasting), available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
-<dl>
-<dt>Description of the dataset:</dt><dd><p>This dataset was generated from data obtained from the
+<p>This dataset was generated from data obtained from the
 ENTSOE Open Data portal under the open source license (CC-BY 4.0):
 <a class="reference external" href="https://transparencyplatform.zendesk.com/hc/article_attachments/40921869376401">https://transparencyplatform.zendesk.com/hc/article_attachments/40921869376401</a></p>
 <p>and the Open Meteo Historical Weather API:
@@ -800,8 +799,6 @@ weather data for several cities within France.</p>
 <p>It can be downloaded/loaded using the
 sklearn.datasets.fetch_electricity_forecasting function.
 Size on disk: 26MB.</p>
-</dd>
-</dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
@@ -811,19 +808,24 @@ Size on disk: 26MB.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
-<dt><strong>Path</strong><span class="classifier">PosixPath</span></dt><dd><p>The path to the electricity usage CSV files</p>
+<dt><strong>Path</strong><span class="classifier">PosixPath</span></dt><dd><p>The path to the electricity usage CSV file. These include the electricity load
+and weather data for several cities in France.</p>
 </dd>
 </dl>
 </dd>
 </dl>
-<p class="rubric">References</p>
-<div role="list" class="citation-list">
-<div class="citation" id="r7b18656ea904-1" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_electricity_forecasting</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">path</span> <span class="o">=</span> <span class="n">fetch_electricity_forecasting</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">bayonne</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">path</span> <span class="o">/</span> <span class="s2">"weather_bayonne.csv"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">bayonne</span><span class="o">.</span><span class="n">shape</span>
+<span class="go">(38688, 7)</span>
+</pre></div>
+</div>
 <p>For more detailed instructions on how to use this dataset, please refer
 to the example here: <a class="reference external" href="https://github.com/skrub-data/EuroSciPy2025">EuroSciPy2025</a></p>
-</div>
-</div>
 </dd></dl>
 
 </section>

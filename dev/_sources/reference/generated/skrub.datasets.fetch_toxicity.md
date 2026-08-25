@@ -2,14 +2,16 @@
 
 ### skrub.datasets.fetch_toxicity(data_home=None)
 
-Fetch the toxicity dataset (classification) available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
+Fetch the toxicity dataset available at     [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
 
-> This is a balanced binary classification use-case, where the single table
-> consists in only two columns:
+This is a balanced binary classification use-case, where the single table
+consists in only two columns:
+
 - `text`: the text of the comment
 - `is_toxic`: whether or not the comment is toxic
 
-> Size on disk: 220KB.
+Size on disk: 220KB.
+
 * **Parameters:**
   **data_home**
   : The directory where to download and unzip the files.
@@ -31,6 +33,15 @@ Fetch the toxicity dataset (classification) available at         [https://github
     <br/>
     path
     : The path to the toxicity CSV file.
+
+### Examples
+
+```pycon
+>>> from skrub.datasets import fetch_toxicity
+>>> data = fetch_toxicity()
+>>> data.toxicity.shape
+(1000, 2)
+```
 
 <!-- !! processed by numpydoc !! -->
 

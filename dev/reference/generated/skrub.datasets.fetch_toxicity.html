@@ -785,23 +785,19 @@
 <h1>fetch_toxicity<a class="headerlink" href="#fetch-toxicity" title="Link to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="skrub.datasets.fetch_toxicity">
-<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_toxicity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/abf0147/skrub/datasets/_fetching.py#L322"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_toxicity" title="Link to this definition">#</a></dt>
-<dd><p>Fetch the toxicity dataset (classification) available at         <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
-<blockquote>
-<div><p>This is a balanced binary classification use-case, where the single table
+<span class="sig-prename descclassname"><span class="pre">skrub.datasets.</span></span><span class="sig-name descname"><span class="pre">fetch_toxicity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/skrub-data/skrub/blob/371677d/skrub/datasets/_fetching.py#L375"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#skrub.datasets.fetch_toxicity" title="Link to this definition">#</a></dt>
+<dd><p>Fetch the toxicity dataset available at     <a class="github reference external" href="https://github.com/skrub-data/skrub-data-files">skrub-data/skrub-data-files</a></p>
+<p>This is a balanced binary classification use-case, where the single table
 consists in only two columns:</p>
-</div></blockquote>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">text</span></code>: the text of the comment</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">is_toxic</span></code>: whether or not the comment is toxic</p></li>
 </ul>
-<blockquote>
-<div><p>Size on disk: 220KB.</p>
-</div></blockquote>
+<p>Size on disk: 220KB.</p>
 <dl class="field-list">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl>
-<dt><strong>data_home</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <span class="xref std std-term">path-like</span>, default=None</span></dt><dd><p>The directory where to download and unzip the files.</p>
+<dt><strong>data_home</strong><span class="classifier"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="docutils literal notranslate"><span class="pre">str</span></code></a> or <code class="docutils literal notranslate"><span class="pre">path-like</span></code>, default=None</span></dt><dd><p>The directory where to download and unzip the files.</p>
 </dd>
 </dl>
 </dd>
@@ -824,6 +820,13 @@ consists in only two columns:</p>
 </dl>
 </dd>
 </dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_toxicity</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">fetch_toxicity</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span><span class="o">.</span><span class="n">toxicity</span><span class="o">.</span><span class="n">shape</span>
+<span class="go">(1000, 2)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <section id="gallery-examples">

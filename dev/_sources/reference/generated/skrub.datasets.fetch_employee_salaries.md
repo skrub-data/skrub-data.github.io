@@ -4,12 +4,11 @@
 
 Fetches the employee salaries dataset (regression), available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
 
-Description of the dataset:
-: Annual salary information including gross pay and overtime pay for all
-  active, permanent employees of Montgomery County, MD paid in calendar
-  year 2016. This dataset is a copy of [https://www.openml.org/d/42125](https://www.openml.org/d/42125)
-  where some features are dropped to avoid data leaking.
-  Size on disk: 1.3MB.
+Annual salary information including gross pay and overtime pay for all
+active, permanent employees of Montgomery County, MD paid in calendar
+year 2016. This dataset is a copy of [https://www.openml.org/d/42125](https://www.openml.org/d/42125)
+where some features are dropped to avoid data leaking.
+Size on disk: 1.3MB.
 
 #### NOTE
 Some environments like Jupyterlite can run into networking issues when
@@ -45,6 +44,15 @@ df = fetch_openml(data_id=42125)
     <br/>
     path
     : The path to the employee salaries CSV file.
+
+### Examples
+
+```pycon
+>>> from skrub.datasets import fetch_employee_salaries
+>>> data = fetch_employee_salaries()
+>>> data.X.shape
+(9228, 8)
+```
 
 <!-- !! processed by numpydoc !! -->
 

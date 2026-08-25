@@ -2,7 +2,7 @@
 
 ### skrub.datasets.fetch_flight_delays(data_home=None)
 
-Fetch the flight delays dataset (regression) available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
+Fetch the flight delays dataset available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
 
 This is a regression use-case, where the goal is to predict flight delays.
 Size on disk: 657MB.
@@ -49,6 +49,16 @@ Size on disk: 657MB.
     <br/>
     stations_path
     : The path to the stations CSV file.
+
+### Examples
+
+```pycon
+>>> from skrub.datasets import fetch_flight_delays
+>>> data = fetch_flight_delays()
+>>> print(data.keys())
+dict_keys(['airports', 'airports_path', 'flights', 'flights_path', 'metadata',
+  'metadata_path', 'stations', 'stations_path', 'weather', 'weather_path'])
+```
 
 <!-- !! processed by numpydoc !! -->
 

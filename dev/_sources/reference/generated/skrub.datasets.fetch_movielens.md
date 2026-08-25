@@ -2,7 +2,7 @@
 
 ### skrub.datasets.fetch_movielens(data_home=None)
 
-Fetch the movielens dataset (regression) available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
+Fetch the movielens dataset available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
 
 This is a regression use-case, where the goal is to predict movie ratings.
 More details are provided in the output’s `metadata['description']`.
@@ -29,5 +29,15 @@ Size on disk: 3.6MB.
     <br/>
     ratings_path
     : The path to the ratings CSV file.
+
+### Examples
+
+```pycon
+>>> from skrub.datasets import fetch_movielens
+>>> data = fetch_movielens()
+>>> print(data.keys())
+dict_keys(['metadata', 'metadata_path', 'movies',
+  'movies_path', 'ratings', 'ratings_path'])
+```
 
 <!-- !! processed by numpydoc !! -->
