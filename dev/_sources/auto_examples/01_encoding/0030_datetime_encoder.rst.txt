@@ -107,8 +107,8 @@ on the date, time and weather conditions.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_5092d8d1-wrapper" hidden>
-        <template id="report_5092d8d1-template">
+    <div id="report_0e0e2d6d-wrapper" hidden>
+        <template id="report_0e0e2d6d-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1533,7 +1533,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="45a6d1ca"
+                    id="ae3e0461"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1563,7 +1563,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="55f3d7ce"
+                    id="27dba92c"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1597,7 +1597,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="105480a3"
+                    id="bc1be48e"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1631,7 +1631,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="e28b4d09"
+                    id="59750381"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1665,7 +1665,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="25a37c57"
+                    id="926cfc4d"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1699,7 +1699,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="3351508f"
+                    id="608ed1af"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1733,7 +1733,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="064134ec"
+                    id="da047b62"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1781,7 +1781,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="f3a9b6ea"
+                    id="446969ea"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1809,7 +1809,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="d7649222"
+                    id="edd0999a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1839,7 +1839,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="6c7fa43c"
+                    id="21500953"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1869,7 +1869,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="ad45d233"
+                    id="b316429b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1899,7 +1899,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="8f98e888"
+                    id="86139ebc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1929,7 +1929,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="764a0609"
+                    id="0b9618ee"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1959,7 +1959,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="e59e160c"
+                    id="88b85c5f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1993,7 +1993,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="0ee5048c"
+                    id="3024d2de"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2021,7 +2021,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="bfa49acc"
+                    id="5f3a7e78"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2051,7 +2051,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="0e703fe0"
+                    id="c8af3355"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2081,7 +2081,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="1eccf97f"
+                    id="4e92992b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2111,7 +2111,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="4a02ebf8"
+                    id="a87bd621"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2141,7 +2141,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="2dad0d8b"
+                    id="ef8c4ac9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2171,7 +2171,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="450c29f6"
+                    id="32b2caa0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2205,7 +2205,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="bc266f4b"
+                    id="e2db6810"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2233,7 +2233,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="31045b2e"
+                    id="b9495a86"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2263,7 +2263,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="12c890a3"
+                    id="9ff9d653"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2293,7 +2293,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="f78dbcbe"
+                    id="405413f6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2323,7 +2323,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="dc7664db"
+                    id="8c13daf6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2353,7 +2353,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="5e7b1390"
+                    id="498b767d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2383,7 +2383,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="623e1320"
+                    id="26b76b47"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2417,7 +2417,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="9636318c"
+                    id="72375646"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2445,7 +2445,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="79cb9dde"
+                    id="8669d5ef"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2475,7 +2475,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="97c0a41c"
+                    id="3b32fe78"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2505,7 +2505,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="c2118267"
+                    id="a38473a1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2535,7 +2535,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="e8131b97"
+                    id="04a0a571"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2565,7 +2565,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="e38ee20d"
+                    id="a9d585f1"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2595,7 +2595,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="5e6d11ca"
+                    id="208964b2"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2629,7 +2629,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="c84db8ab"
+                    id="4f82255e"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2657,7 +2657,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="c2f55f1d"
+                    id="7bcb967b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2687,7 +2687,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="ba62f7cb"
+                    id="21c3ebb5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2717,7 +2717,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="43b9e0f0"
+                    id="fcee4cea"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2747,7 +2747,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="e6939a9f"
+                    id="39420e93"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2777,7 +2777,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="c96c4763"
+                    id="ea842703"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2807,7 +2807,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="4252fcdc"
+                    id="98a07e2e"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2921,7 +2921,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="fc72eae5"
+                    id="4282a17c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2949,7 +2949,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="2346633a"
+                    id="5efc1cc3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2979,7 +2979,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="ca9680c1"
+                    id="86a2760b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3009,7 +3009,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="e5deae9d"
+                    id="7dd528cd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3039,7 +3039,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="0b516c12"
+                    id="fec61c6b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3069,7 +3069,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="9fec24bb"
+                    id="b19b03a9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3099,7 +3099,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="6c0303d0"
+                    id="d1644917"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3133,7 +3133,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="3a6d697c"
+                    id="e14068c3"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3161,7 +3161,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="b6ad696d"
+                    id="df700340"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3191,7 +3191,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="a0805f6c"
+                    id="37d9c71c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3221,7 +3221,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="d6f68862"
+                    id="1818ec4a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3251,7 +3251,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="332bc48a"
+                    id="7ca060ad"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3281,7 +3281,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="267eae0e"
+                    id="19606ff9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3311,7 +3311,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="66fb809f"
+                    id="ec32b275"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3345,7 +3345,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="df23b2b5"
+                    id="bdefb29c"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3373,7 +3373,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="e855a266"
+                    id="7cbf40bd"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3403,7 +3403,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="1780e256"
+                    id="ce853b4a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3433,7 +3433,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="e1dbd785"
+                    id="decef31c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3463,7 +3463,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="44948209"
+                    id="6504df30"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3493,7 +3493,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="e6ca7c35"
+                    id="12c4ba49"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3523,7 +3523,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="ff4fc872"
+                    id="20b5cbb5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3557,7 +3557,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="0831ef6e"
+                    id="7d68493b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3585,7 +3585,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="4db5224e"
+                    id="a3f994b5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3615,7 +3615,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="cce6040d"
+                    id="2af9de5a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3645,7 +3645,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="a3cb7c6b"
+                    id="70247952"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3675,7 +3675,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="7627cc7b"
+                    id="03b5ccd9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3705,7 +3705,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="9374951e"
+                    id="8a035533"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3735,7 +3735,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="4dacf0f5"
+                    id="2592e6da"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3769,7 +3769,7 @@ on the date, time and weather conditions.
                 
                 
                     <th
-                    id="ab46ea6d"
+                    id="14ce53da"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3797,7 +3797,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="2e28869e"
+                    id="61b520e3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3827,7 +3827,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="939d04cc"
+                    id="f6aa3775"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3857,7 +3857,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="ffdea78c"
+                    id="6bcbc6c8"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3887,7 +3887,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="cf68f51c"
+                    id="0cf829d5"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3917,7 +3917,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="7c7f3f6e"
+                    id="d7a2c397"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3947,7 +3947,7 @@ on the date, time and weather conditions.
                 
                 
                     <td
-                    id="3093ce2c"
+                    id="84946e80"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -5074,7 +5074,7 @@ on the date, time and weather conditions.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_5092d8d1">
+        <skrub-table-report class="report" id="report_0e0e2d6d">
         </skrub-table-report>
 
         <script type="module">
@@ -6178,7 +6178,7 @@ on the date, time and weather conditions.
         </script>
     </div>
 
-    <div id="report_5092d8d1-wrapper-fallback">
+    <div id="report_0e0e2d6d-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -6189,8 +6189,8 @@ on the date, time and weather conditions.
     </div>
 
     <script>
-     document.getElementById("report_5092d8d1-wrapper").removeAttribute("hidden");
-     document.getElementById("report_5092d8d1-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_0e0e2d6d-wrapper").removeAttribute("hidden");
+     document.getElementById("report_0e0e2d6d-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -6728,9 +6728,9 @@ and transforms datetime columns by default.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 11.325 seconds)
+   **Total running time of the script:** (0 minutes 11.847 seconds)
 
-**Estimated memory usage:**  564 MB
+**Estimated memory usage:**  552 MB
 
 
 .. _sphx_glr_download_auto_examples_01_encoding_0030_datetime_encoder.py:
