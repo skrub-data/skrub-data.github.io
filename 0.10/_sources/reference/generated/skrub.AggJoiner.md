@@ -56,7 +56,8 @@ aggregation instead.
   **cols**
   : Select the columns from the auxiliary dataframe to use as values during
     the aggregation operations.
-    By default, `cols` are all columns from `aux_table`, except `aux_key`.
+    By default, `cols` are all columns from `aux_table`, except `aux_key`,
+    in the order in which they appear in `aux_table`.
 
   **suffix**
   : Suffix to append to the `aux_table`’s column names. You can use it

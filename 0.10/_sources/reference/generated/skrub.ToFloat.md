@@ -44,7 +44,7 @@ some malformed inputs may still be converted but yield unexpected values.
 
 ```pycon
 >>> import pandas as pd
->>> from skrub._to_float import ToFloat
+>>> from skrub import ToFloat
 ```
 
 A column that does not contain floats is converted if possible:
@@ -267,8 +267,6 @@ Fit the transformer.
 
 This default implementation simply calls `fit_transform()` and
 returns `self`.
-
-Subclasses should implement `fit_transform` and `transform`.
 
 * **Parameters:**
   **column**

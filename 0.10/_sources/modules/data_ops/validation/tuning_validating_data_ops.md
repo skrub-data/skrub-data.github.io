@@ -116,7 +116,7 @@ scikit-learn’s [`sklearn.model_selection.train_test_split()`](https://scikit-l
 ```pycon
 >>> split = pred.skb.train_test_split(shuffle=False)
 >>> split.keys()
-dict_keys(['train', 'test', 'X_train', 'X_test', 'y_train', 'y_test'])
+dict_keys(['X_train', 'X_test', 'y_train', 'y_test', 'train', 'test', 'X', 'y'])
 ```
 
 `train` and `test` are the full dictionaries corresponding to the training
@@ -205,20 +205,20 @@ The train set only contains data from the “supermarket.com” seller.
 
 ```pycon
 >>> split["X_train"]
-   description  price
-0       screen    100
-2     keyboard     20
-5  screwdriver     12
+  description  price
+1      hammer     15
+3     usb key      9
+4     charger     13
 ```
 
 The test set only contains data from the “bestproducts.com” seller.
 
 ```pycon
 >>> split["X_test"]
-  description  price
-1      hammer     15
-3     usb key      9
-4     charger     13
+   description  price
+0       screen    100
+2     keyboard     20
+5  screwdriver     12
 ```
 
 # Passing additional arguments to the scorer

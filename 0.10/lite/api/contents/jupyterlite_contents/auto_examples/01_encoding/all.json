@@ -1,0 +1,57 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-09-01T09:48:26.870190Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-09-01T09:48:21.596744Z",
+      "mimetype": null,
+      "name": "0010_encodings.ipynb",
+      "path": "jupyterlite_contents/auto_examples/01_encoding/0010_encodings.ipynb",
+      "size": 21190,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-09-01T09:48:26.870603Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-09-01T09:48:21.598191Z",
+      "mimetype": null,
+      "name": "0020_text_with_string_encoders.ipynb",
+      "path": "jupyterlite_contents/auto_examples/01_encoding/0020_text_with_string_encoders.ipynb",
+      "size": 16793,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-09-01T09:48:26.870980Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-09-01T09:48:21.598696Z",
+      "mimetype": null,
+      "name": "0030_datetime_encoder.ipynb",
+      "path": "jupyterlite_contents/auto_examples/01_encoding/0030_datetime_encoder.ipynb",
+      "size": 15974,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2026-09-01T09:48:26.870980Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-09-01T09:48:26.870980Z",
+  "mimetype": null,
+  "name": "01_encoding",
+  "path": "jupyterlite_contents/auto_examples/01_encoding",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

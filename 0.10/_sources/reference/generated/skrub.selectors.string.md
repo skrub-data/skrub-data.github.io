@@ -2,22 +2,31 @@
 
 ### skrub.selectors.string()
 
-Select columns that have a String data type.
+Select columns that have a string data type.
 
-In pandas, object columns containing (only) strings are also selected.
+In pandas, object columns containing strings are also selected.
 
 #### SEE ALSO
 [`categorical`](skrub.selectors.categoricalhtml.md#skrub.selectors.categorical)
-: Select categorical columns.
+: Select categorical columns (explicit categories, not arbitrary strings).
+
+[`object`](skrub.selectors.objecthtml.md#skrub.selectors.object)
+: Select object dtype columns (broader, may include mixed types).
+
+[`filter`](skrub.selectors.filterhtml.md#skrub.selectors.filter)
+: Use for custom text-based selection criteria.
 
 ### Notes
 
-The behavior of string columns may change depending
-on the major version of pandas: before pandas 3.0, string columns would have
-the ‘object’ dtype, and after pandas 3.0 they have the ‘string’ dtype. This
-selector is designed to select string columns in both cases, even if a column
-has both the ‘object’ and ‘string’ dtype. If a column has only the ‘object’
-dtype (e.g., it contains both strings and numbers), then it will not be selected.
+#### WARNING
+The behavior of string columns may change depending on the pandas version:
+
+- Before pandas 3.0: String columns may have the ‘object’ dtype
+- From pandas 3.0 onwards: String columns have only the ‘string’ dtype
+
+This selector handles both cases, selecting string columns regardless of
+pandas version. Object columns containing mixed types (e.g., strings and
+numbers) are not selected.
 
 ### Examples
 
@@ -38,17 +47,7 @@ object_string object string categorical
 1             B     10      B           B
 ```
 
-```pycon
->>> df.dtypes
-object_string         ...
-object             object
-string                ...
-categorical      category
-dtype: object
-```
-
-Both the ‘object_string’ and ‘string’ columns are selected, but not the ‘object’
-column. Categorical columns are not selected.
+Select all string columns (note: mixed-type object columns are excluded):
 
 ```pycon
 >>> s.select(df, s.string())
@@ -57,8 +56,7 @@ object_string string
 1             B      B
 ```
 
-To select categorical columns as well, use the bitwise OR operator to combine
-`s.string()` with [`categorical()`](skrub.selectors.categoricalhtml.md#skrub.selectors.categorical):
+Combine with categorical() to select all text-like columns:
 
 ```pycon
 >>> s.select(df, s.string() | s.categorical())

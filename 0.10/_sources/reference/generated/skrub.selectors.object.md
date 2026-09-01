@@ -4,19 +4,32 @@
 
 Select columns whose dtype is `object` (pandas) or `pl.Object` (polars).
 
+Note that object columns may contain mixed types (e.g., strings and numbers) and are
+broader than string columns. Use this selector when you specifically need
+object-typed columns, and prefer more specific selectors like [`string()`](skrub.selectors.stringhtml.md#skrub.selectors.string)
+or [`categorical()`](skrub.selectors.categoricalhtml.md#skrub.selectors.categorical).
+
 #### SEE ALSO
 [`string`](skrub.selectors.stringhtml.md#skrub.selectors.string)
-: Select columns that have a String data type.
+: Select string columns (preferred for text data). Use this instead of object() for text columns.
+
+[`categorical`](skrub.selectors.categoricalhtml.md#skrub.selectors.categorical)
+: Select categorical columns.
 
 [`has_dtype`](skrub.selectors.has_dtypehtml.md#skrub.selectors.has_dtype)
-: Select columns whose dtype matches one of the provided dtypes.
+: Select columns whose dtype matches specific dtypes.
 
 ### Notes
 
-Before pandas 3.0, columns containing only strings have the `object`
-dtype and are selected. From pandas 3.0 onwards they have the `string`
-dtype and are not. Use [`string()`](skrub.selectors.stringhtml.md#skrub.selectors.string) for
-selecting strings.
+#### WARNING
+The behavior of string columns may change depending on the pandas version:
+
+- Before pandas 3.0: String columns may have the `object` dtype
+- From pandas 3.0 onwards: String columns have only the `string` dtype
+
+This selector selects **all** `object` dtype columns regardless of content,
+including mixed-type columns. For text data, prefer [`string()`](skrub.selectors.stringhtml.md#skrub.selectors.string) which is
+more selective.
 
 ### Examples
 
@@ -37,11 +50,22 @@ string         ...
 dtype: object
 ```
 
+Select object dtype columns (note: can contain mixed types):
+
 ```pycon
 >>> s.select(df, s.object())
   mixed
 0     A
 1    10
+```
+
+Prefer string() for text columns:
+
+```pycon
+>>> s.select(df, s.string())
+  string
+0      A
+1      B
 ```
 
 <!-- !! processed by numpydoc !! -->

@@ -4,13 +4,12 @@
 
 Fetches the medical charge dataset (regression), available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
 
-Description of the dataset:
-: The dataset provides information on inpatient discharges for Medicare
-  fee-for-service beneficiaries. It includes information
-  on utilization, payment (total payment and Medicare payment), and
-  hospital-specific charges for the more than 3,000 U.S. hospitals that
-  receive Medicare Inpatient Prospective Payment System (IPPS) payments.
-  Size on disk: 36MB.
+The dataset provides information on inpatient discharges for Medicare
+fee-for-service beneficiaries. It includes information
+on utilization, payment (total payment and Medicare payment), and
+hospital-specific charges for the more than 3,000 U.S. hospitals that
+receive Medicare Inpatient Prospective Payment System (IPPS) payments.
+Size on disk: 36MB.
 
 * **Parameters:**
   **data_home**
@@ -33,5 +32,15 @@ Description of the dataset:
     <br/>
     path
     : The path to the medical charge CSV file.
+
+### Examples
+
+```pycon
+>>> from skrub.datasets import fetch_medical_charge
+>>> data = fetch_medical_charge()
+>>> print(data.keys())
+dict_keys(['path', 'medical_charge', 'medical_charge_path', 'metadata',
+  'metadata_path', 'X', 'y'])
+```
 
 <!-- !! processed by numpydoc !! -->

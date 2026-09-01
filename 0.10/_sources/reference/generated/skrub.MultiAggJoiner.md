@@ -79,7 +79,8 @@ instead.
     <br/>
     If set to `None`, `cols` is set to a list of lists. For each table
     in `aux_tables`, the corresponding list will be all columns of that table,
-    except the `aux_keys` associated with that table.
+    except the `aux_keys` associated with that table, in the order in which
+    they appear in that table.
 
   **suffixes**
   : Suffixes to append to the `aux_tables`’ column names.

@@ -49,6 +49,12 @@ Datetime dtype (including resolution and time zone). Once the transformer
 is fitted, entries that fail to be converted during subsequent calls to
 `transform` are replaced with nulls.
 
+#### CAUTION
+For versions of Pandas <3.0, inferring the format may fail if it includes
+both date and time components, and the digits of the year are the same
+as the digits of the hour and minutes, like `"1959-07-01 19:59:16"`.
+In such cases, the format should be specified explicitly.
+
 ### Examples
 
 ```pycon
@@ -339,8 +345,6 @@ Fit the transformer.
 
 This default implementation simply calls `fit_transform()` and
 returns `self`.
-
-Subclasses should implement `fit_transform` and `transform`.
 
 * **Parameters:**
   **column**

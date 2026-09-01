@@ -176,8 +176,6 @@ Fit the transformer.
 This default implementation simply calls `fit_transform()` and
 returns `self`.
 
-Subclasses should implement `fit_transform` and `transform`.
-
 * **Parameters:**
   **column**
   : Unlike most scikit-learn transformers, single-column transformers

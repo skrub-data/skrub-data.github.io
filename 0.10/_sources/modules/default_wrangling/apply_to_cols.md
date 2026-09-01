@@ -17,6 +17,11 @@ degree of control over which columns are being transformed.
 columns that satisfy the condition given by the user are transformed, while the
 others are left untouched.
 
+#### TIP
+If a skrub transformer has a `cols` parameter to specify a column list,
+that can be a selector as well. Selectors give more control over which columns
+are being transformed.
+
 [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) can be used to transform a subset of columns in a dataframe, while
 leaving the non-selected columns unchanged. In this example, we want to apply
 an [`OrdinalEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder) only on the text column, and a [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler) on the numeric

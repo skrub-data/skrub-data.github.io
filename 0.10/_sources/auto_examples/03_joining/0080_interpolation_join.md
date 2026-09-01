@@ -85,8 +85,8 @@ main_table.head()
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_8128721b-wrapper" hidden>
-    <template id="report_8128721b-template">
+<div id="report_253ac333-wrapper" hidden>
+    <template id="report_253ac333-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -1376,8 +1376,8 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
         </style>
         <div id="report"
 
-
-              >
+             data-test-plots-skipped
+             data-test-associations-skipped >
 
 
 
@@ -1402,30 +1402,10 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
                     title="Summary statistics for all columns.">Stats</button>
             </div>
 
-            <div>
-                <button type="button" data-target-panel-id="column-summaries-panel"
-                    data-role="tab"  data-test="summaries-tab" class="tab"
-                    title="Plots showing the distributions of all columns">Distributions</button>
-            </div>
-            <div>
-                <button type="button" data-target-panel-id="column-associations-panel"
-                    data-role="tab"  class="tab"
-                    data-has-warning  data-test="associations-tab"
-                    title="Show which columns are similar (have a strong association).
-NOTE: some columns have very strong associations and may be redundant.">
-                    <div class="warning-sign">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
-  <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
-</svg>
-                    </div>
-                    Associations</button>
-            </div>
-
         </div>
         <div class="column-filter" data-manager="InvisibleInAssociationsTabPanel">
     <select data-manager="ColumnFilter"
-            data-all-filters-base64="eyJhbGwoKSI6IHsiZGlzcGxheV9uYW1lIjogIkFsbCBjb2x1bW5zIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgMywgNCwgNV19LCAiaGlnaF9hc3NvY2lhdGlvbiI6IHsiY29sdW1ucyI6IFswLCAxLCAyLCAzLCA0XSwgImRpc3BsYXlfbmFtZSI6ICJIaWdoIHNpbWlsYXJpdHkifSwgImhhc19udWxscygwLjApIjogeyJkaXNwbGF5X25hbWUiOiAiV2l0aCBudWxscyIsICJjb2x1bW5zIjogWzQsIDVdfSwgIih+aGFzX251bGxzKDAuMCkpIjogeyJkaXNwbGF5X25hbWUiOiAiV2l0aG91dCBudWxscyIsICJjb2x1bW5zIjogWzAsIDEsIDIsIDNdfSwgIm51bWVyaWMoKSI6IHsiZGlzcGxheV9uYW1lIjogIk51bWVyaWMiLCAiY29sdW1ucyI6IFswLCAxLCAzLCA0LCA1XX0sICIofm51bWVyaWMoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tbnVtZXJpYyIsICJjb2x1bW5zIjogWzJdfSwgInN0cmluZygpIjogeyJkaXNwbGF5X25hbWUiOiAiU3RyaW5nIiwgImNvbHVtbnMiOiBbXX0sICIofnN0cmluZygpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1zdHJpbmciLCAiY29sdW1ucyI6IFswLCAxLCAyLCAzLCA0LCA1XX0sICJjYXRlZ29yaWNhbCgpIjogeyJkaXNwbGF5X25hbWUiOiAiQ2F0ZWdvcmljYWwiLCAiY29sdW1ucyI6IFtdfSwgIih+Y2F0ZWdvcmljYWwoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tY2F0ZWdvcmljYWwiLCAiY29sdW1ucyI6IFswLCAxLCAyLCAzLCA0LCA1XX0sICJhbnlfZGF0ZSgpIjogeyJkaXNwbGF5X25hbWUiOiAiRGF0ZXRpbWUiLCAiY29sdW1ucyI6IFsyXX0sICIofmFueV9kYXRlKCkpIjogeyJkaXNwbGF5X25hbWUiOiAiTm9uLWRhdGV0aW1lIiwgImNvbHVtbnMiOiBbMCwgMSwgMywgNCwgNV19fQ=="
+            data-all-filters-base64="eyJhbGwoKSI6IHsiZGlzcGxheV9uYW1lIjogIkFsbCBjb2x1bW5zIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgMywgNCwgNV19LCAiaGFzX251bGxzKDAuMCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJXaXRoIG51bGxzIiwgImNvbHVtbnMiOiBbNCwgNV19LCAiKH5oYXNfbnVsbHMoMC4wKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJXaXRob3V0IG51bGxzIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgM119LCAibnVtZXJpYygpIjogeyJkaXNwbGF5X25hbWUiOiAiTnVtZXJpYyIsICJjb2x1bW5zIjogWzAsIDEsIDMsIDQsIDVdfSwgIih+bnVtZXJpYygpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1udW1lcmljIiwgImNvbHVtbnMiOiBbMl19LCAic3RyaW5nKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJTdHJpbmciLCAiY29sdW1ucyI6IFtdfSwgIih+c3RyaW5nKCkpIjogeyJkaXNwbGF5X25hbWUiOiAiTm9uLXN0cmluZyIsICJjb2x1bW5zIjogWzAsIDEsIDIsIDMsIDQsIDVdfSwgImNhdGVnb3JpY2FsKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJDYXRlZ29yaWNhbCIsICJjb2x1bW5zIjogW119LCAiKH5jYXRlZ29yaWNhbCgpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1jYXRlZ29yaWNhbCIsICJjb2x1bW5zIjogWzAsIDEsIDIsIDMsIDQsIDVdfSwgImFueV9kYXRlKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJEYXRldGltZSIsICJjb2x1bW5zIjogWzJdfSwgIih+YW55X2RhdGUoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tZGF0ZXRpbWUiLCAiY29sdW1ucyI6IFswLCAxLCAzLCA0LCA1XX19"
             data-test="column-filter-select"
             autocomplete="off">
         <optgroup label="Select columns to show:">
@@ -1433,9 +1413,6 @@ NOTE: some columns have very strong associations and may be redundant.">
 
         <option value="all()">
             All columns</option>
-
-        <option value="high_association">
-            High similarity</option>
 
         <option value="has_nulls(0.0)">
             With nulls</option>
@@ -1534,7 +1511,7 @@ NOTE: some columns have very strong associations and may be redundant.">
 
 
                 <th
-                id="2b7c4395"
+                id="9bccf7d2"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -1564,7 +1541,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="f3e7c361"
+                id="1cf80800"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1598,7 +1575,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="abcfb21c"
+                id="eb39018e"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1632,7 +1609,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="8beacad8"
+                id="caf514eb"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1666,7 +1643,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="1a4368bd"
+                id="f7888332"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1700,7 +1677,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="52f61460"
+                id="4569e357"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1734,7 +1711,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="d19f6fc2"
+                id="4c7328bc"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1782,7 +1759,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="c54aa231"
+                id="77a1bdaa"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -1810,7 +1787,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="8b7f52ba"
+                id="4666e49a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1840,7 +1817,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="bd5f0dd9"
+                id="e697a688"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1870,7 +1847,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="cea2727f"
+                id="f1a9ae8f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1900,7 +1877,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="d344c2bc"
+                id="57add81b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1930,7 +1907,7 @@ data-spans_\_0_\_3
 
 
                 <td
-                id="4a9f79e4"
+                id="1d302b44"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1960,7 +1937,7 @@ data-spans_\_0_\_4
 
 
                 <td
-                id="22d09792"
+                id="73a5b516"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1994,7 +1971,7 @@ data-spans_\_0_\_5
 
 
                 <th
-                id="a72d6305"
+                id="2e2c8def"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2022,7 +1999,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="c1c5da8f"
+                id="4f6a933a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2052,7 +2029,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="55d840f5"
+                id="79411cfc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2082,7 +2059,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="adac98b7"
+                id="7785fa3a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2112,7 +2089,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="8f60d81e"
+                id="8dccbb8a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2142,7 +2119,7 @@ data-spans_\_1_\_3
 
 
                 <td
-                id="753da2fb"
+                id="cb04b1a0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2172,7 +2149,7 @@ data-spans_\_1_\_4
 
 
                 <td
-                id="2d01be59"
+                id="09eeabf1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2206,7 +2183,7 @@ data-spans_\_1_\_5
 
 
                 <th
-                id="0d3544f1"
+                id="a2c5c899"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2234,7 +2211,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="d9a4b8f9"
+                id="801376aa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2264,7 +2241,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="cd385859"
+                id="b80b99aa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2294,7 +2271,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="d2d9288d"
+                id="bb454e92"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2324,7 +2301,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="f8656d7f"
+                id="31cf2ccd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2354,7 +2331,7 @@ data-spans_\_2_\_3
 
 
                 <td
-                id="0602cf9a"
+                id="6b74d338"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2384,7 +2361,7 @@ data-spans_\_2_\_4
 
 
                 <td
-                id="1746bdb0"
+                id="f91a0c73"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2418,7 +2395,7 @@ data-spans_\_2_\_5
 
 
                 <th
-                id="a557c048"
+                id="6c14bb3b"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2446,7 +2423,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="37af7da4"
+                id="3b69fb38"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2476,7 +2453,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="6844a0c2"
+                id="794081b2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2506,7 +2483,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="eb0092a1"
+                id="33301e74"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2536,7 +2513,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="adddef09"
+                id="d68b8380"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2566,7 +2543,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="7eeeb126"
+                id="7826f43c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2596,7 +2573,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="ffbddb3d"
+                id="4d3aca76"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2630,7 +2607,7 @@ data-spans_\_3_\_5
 
 
                 <th
-                id="96aaa104"
+                id="67c1d1a6"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2658,7 +2635,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="98d8385d"
+                id="9bf0a19f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2688,7 +2665,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="8bce71f2"
+                id="1bc3658c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2718,7 +2695,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="a7dd2df2"
+                id="d88821ed"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2748,7 +2725,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="78f7e2b6"
+                id="efa1e2d8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2778,7 +2755,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="bc93a0af"
+                id="e15ab6a2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2808,7 +2785,7 @@ data-spans_\_4_\_4
 
 
                 <td
-                id="7d51b694"
+                id="156df313"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2953,207 +2930,6 @@ data-spans_\_4_\_5
 
 
 
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.91em" viewBox="0 0 174.89875 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:16.458605</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mc483d7fa25" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mc483d7fa25" x="63.811607" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="63.811607" y="97.057422" transform="rotate(-0 63.811607 97.057422)">25.275</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mc483d7fa25" x="105.769099" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="105.769099" y="97.057422" transform="rotate(-0 105.769099 97.057422)">25.300</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mc483d7fa25" x="147.726591" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="147.726591" y="97.057422" transform="rotate(-0 147.726591 97.057422)">25.325</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m49d1b7619f" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m49d1b7619f" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m49d1b7619f" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.333513 79.2
-L 43.333513 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.333513 79.2
-L 56.426023 79.2
-L 56.426023 79.2
-L 43.333513 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426023 79.2
-L 69.518532 79.2
-L 69.518532 79.2
-L 56.426023 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.518532 79.2
-L 82.607841 79.2
-L 82.607841 79.2
-L 69.518532 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607841 79.2
-L 95.697149 79.2
-L 95.697149 79.2
-L 82.607841 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.697149 79.2
-L 108.789659 79.2
-L 108.789659 79.2
-L 95.697149 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789659 79.2
-L 121.882169 79.2
-L 121.882169 79.2
-L 108.789659 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.882169 79.2
-L 134.971477 79.2
-L 134.971477 79.2
-L 121.882169 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971477 79.2
-L 148.060786 79.2
-L 148.060786 79.2
-L 134.971477 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.060786 79.2
-L 161.153295 79.2
-L 161.153295 33.485714
-L 148.060786 33.485714
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p54c1a1e7e4">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
     </div>
 </div>
 
@@ -3231,207 +3007,6 @@ L 167.69875 79.2
 
 
 
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.91em" viewBox="0 0 174.89875 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:16.507026</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m64528b4493" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m64528b4493" x="61.047726" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="61.047726" y="97.057422" transform="rotate(-0 61.047726 97.057422)">55.40</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m64528b4493" x="103.828509" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="103.828509" y="97.057422" transform="rotate(-0 103.828509 97.057422)">55.45</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m64528b4493" x="146.609292" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="146.609292" y="97.057422" transform="rotate(-0 146.609292 97.057422)">55.50</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m74d2f75cd2" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m74d2f75cd2" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m74d2f75cd2" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.335766 79.2
-L 43.335766 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335766 79.2
-L 56.427328 79.2
-L 56.427328 79.2
-L 43.335766 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.427328 79.2
-L 69.515626 79.2
-L 69.515626 79.2
-L 56.427328 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.515626 79.2
-L 82.607188 79.2
-L 82.607188 79.2
-L 69.515626 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607188 79.2
-L 95.69875 79.2
-L 95.69875 79.2
-L 82.607188 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.2
-L 108.790312 79.2
-L 108.790312 79.2
-L 95.69875 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.790312 79.2
-L 121.881874 79.2
-L 121.881874 79.2
-L 108.790312 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.881874 79.2
-L 134.970172 79.2
-L 134.970172 79.2
-L 121.881874 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.970172 79.2
-L 148.061734 79.2
-L 148.061734 79.2
-L 134.970172 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.061734 79.2
-L 161.153295 79.2
-L 161.153295 33.485714
-L 148.061734 33.485714
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="pecd6287dcc">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
     </div>
 </div>
 
@@ -3496,287 +3071,6 @@ L 167.69875 79.2
 
 
 
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.51em" height="11.41em" viewBox="0 0 186.097305 136.927715" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:16.582228</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 34.897305 79.95014
-L 178.897305 79.95014
-L 178.897305 7.95014
-L 34.897305 7.95014
-L 34.897305 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m77f06cd225" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m77f06cd225" x="47.477576" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(13.10959 127.85913) rotate(-45)">2008-03</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m77f06cd225" x="61.868291" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(27.500305 127.85913) rotate(-45)">2008-04</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m77f06cd225" x="75.79479" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(41.426804 127.85913) rotate(-45)">2008-05</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m77f06cd225" x="90.185506" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(55.81752 127.85913) rotate(-45)">2008-06</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m77f06cd225" x="104.112005" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(69.744019 127.85913) rotate(-45)">2008-07</text>
-     </g>
-    </g>
-    <g id="xtick_6">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m77f06cd225" x="118.502721" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(84.134735 127.85913) rotate(-45)">2008-08</text>
-     </g>
-    </g>
-    <g id="xtick_7">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m77f06cd225" x="132.893436" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(98.52545 127.85913) rotate(-45)">2008-09</text>
-     </g>
-    </g>
-    <g id="xtick_8">
-     <g id="line2d_8">
-      <g>
-       <use xlink:href="#m77f06cd225" x="146.819935" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_8">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(112.451949 127.85913) rotate(-45)">2008-10</text>
-     </g>
-    </g>
-    <g id="xtick_9">
-     <g id="line2d_9">
-      <g>
-       <use xlink:href="#m77f06cd225" x="161.210651" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_9">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(126.842665 127.85913) rotate(-45)">2008-11</text>
-     </g>
-    </g>
-    <g id="xtick_10">
-     <g id="line2d_10">
-      <g>
-       <use xlink:href="#m77f06cd225" x="175.13715" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_10">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(140.769164 127.85913) rotate(-45)">2008-12</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_11">
-      <defs>
-       <path id="mb59fa49214" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mb59fa49214" x="34.897305" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_11">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="25.397305" y="84.12885" transform="rotate(-0 25.397305 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_12">
-      <g>
-       <use xlink:href="#mb59fa49214" x="34.897305" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_12">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="25.397305" y="49.843136" transform="rotate(-0 25.397305 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_13">
-      <g>
-       <use xlink:href="#mb59fa49214" x="34.897305" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_13">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="25.397305" y="15.557422" transform="rotate(-0 25.397305 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 41.442759 79.95014
-L 54.533668 79.95014
-L 54.533668 45.664425
-L 41.442759 45.664425
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 54.533668 79.95014
-L 67.624578 79.95014
-L 67.624578 45.664425
-L 54.533668 45.664425
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 67.624578 79.95014
-L 80.715487 79.95014
-L 80.715487 79.95014
-L 67.624578 79.95014
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 80.715487 79.95014
-L 93.806396 79.95014
-L 93.806396 79.95014
-L 80.715487 79.95014
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 93.806396 79.95014
-L 106.897305 79.95014
-L 106.897305 79.95014
-L 93.806396 79.95014
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 106.897305 79.95014
-L 119.988214 79.95014
-L 119.988214 79.95014
-L 106.897305 79.95014
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 119.988214 79.95014
-L 133.079123 79.95014
-L 133.079123 45.664425
-L 119.988214 45.664425
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 133.079123 79.95014
-L 146.170032 79.95014
-L 146.170032 79.95014
-L 133.079123 79.95014
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 146.170032 79.95014
-L 159.260941 79.95014
-L 159.260941 79.95014
-L 146.170032 79.95014
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 159.260941 79.95014
-L 172.35185 79.95014
-L 172.35185 11.378711
-L 159.260941 11.378711
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 34.897305 79.95014
-L 34.897305 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 34.897305 79.95014
-L 178.897305 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p2bfc45c793">
-   <rect x="34.897305" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
 
     </div>
 </div>
@@ -3854,217 +3148,6 @@ L 178.897305 79.95014
 
 
 
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.97em" viewBox="0 0 174.89875 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:16.642946</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-L 167.69875 7.95014
-L 23.69875 7.95014
-L 23.69875 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mbc55d4c2b0" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mbc55d4c2b0" x="58.63413" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="58.63413" y="97.807561" transform="rotate(-0 58.63413 97.807561)">30</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mbc55d4c2b0" x="98.064578" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="98.064578" y="97.807561" transform="rotate(-0 98.064578 97.807561)">35</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mbc55d4c2b0" x="137.495027" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="137.495027" y="97.807561" transform="rotate(-0 137.495027 97.807561)">40</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m2fa40e42cf" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m2fa40e42cf" x="23.69875" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="84.12885" transform="rotate(-0 14.19875 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m2fa40e42cf" x="23.69875" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="49.843136" transform="rotate(-0 14.19875 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m2fa40e42cf" x="23.69875" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="15.557422" transform="rotate(-0 14.19875 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.95014
-L 43.335112 79.95014
-L 43.335112 45.664425
-L 30.244205 45.664425
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335112 79.95014
-L 56.42602 79.95014
-L 56.42602 11.378711
-L 43.335112 11.378711
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.42602 79.95014
-L 69.516942 79.95014
-L 69.516942 79.95014
-L 56.42602 79.95014
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516942 79.95014
-L 82.60785 79.95014
-L 82.60785 79.95014
-L 69.516942 79.95014
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.60785 79.95014
-L 95.698758 79.95014
-L 95.698758 45.664425
-L 82.60785 45.664425
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.698758 79.95014
-L 108.789665 79.95014
-L 108.789665 79.95014
-L 95.698758 79.95014
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789665 79.95014
-L 121.880573 79.95014
-L 121.880573 79.95014
-L 108.789665 79.95014
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880573 79.95014
-L 134.97148 79.95014
-L 134.97148 79.95014
-L 121.880573 79.95014
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.97148 79.95014
-L 148.062388 79.95014
-L 148.062388 79.95014
-L 134.97148 79.95014
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062388 79.95014
-L 161.153295 79.95014
-L 161.153295 45.664425
-L 148.062388 45.664425
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.95014
-L 23.69875 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p2f1e5beb4a">
-   <rect x="23.69875" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
 
     </div>
 </div>
@@ -4763,1545 +3846,6 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 </div>
 
-<div class="tab-panel" id="column-summaries-panel" data-hidden
-     data-test="summaries-panel">
-
-
-<article class="wrapper margin-t-s flow" data-show-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
-    data-hide-on="EMPTY_COLUMN_FILTER_SELECTED" >
-    <div class="flex flex-wrap">
-        <div class="box">
-            <pre id="selected-columns-display" data-manager="SelectedColumnsDisplay"></pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="selected-columns-display">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-        </div>
-    <div class="flex flex-wrap toggletip-wrapper column-selection-buttons">
-        <div class="toggletip" data-manager="Toggletip">
-            <button type="button"><span>i</span></button>
-            <div class="toggletip-info box-shadow">
-                To construct a list of column names that you can easily copy-paste
-                (in the box), select some columns using the checkboxes next
-                to the column names or the "Select all" button.
-            </div>
-        </div>
-        <button type="button" data-test="select-all-columns" data-manager="SelectAllVisibleColumns">Select all</button>
-        <button type="button" data-test="deselect-all-columns" data-manager="DeselectAllColumns">Deselect all</button>
-    </div>
-    </div>
-
-    <div class="horizontal-scroll padding-b-s">
-    <div class="column-summary-group">
-
-
-
-
-<div class="card column-summary" id="col_0"
-    data-name-repr="&#39;LATITUDE&#39;"
-    data-column-name="LATITUDE"
-    data-column-idx="0"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">LATITUDE</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    2 (40.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>25.3 ±
-                    0.0427
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>25.3 ±
-                    0.0780
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">25.3</span> |
-                    <span class="max-value">25.3</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.91em" viewBox="0 0 174.89875 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:16.458605</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mc483d7fa25" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mc483d7fa25" x="63.811607" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="63.811607" y="97.057422" transform="rotate(-0 63.811607 97.057422)">25.275</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mc483d7fa25" x="105.769099" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="105.769099" y="97.057422" transform="rotate(-0 105.769099 97.057422)">25.300</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mc483d7fa25" x="147.726591" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="147.726591" y="97.057422" transform="rotate(-0 147.726591 97.057422)">25.325</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m49d1b7619f" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m49d1b7619f" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m49d1b7619f" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.333513 79.2
-L 43.333513 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.333513 79.2
-L 56.426023 79.2
-L 56.426023 79.2
-L 43.333513 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426023 79.2
-L 69.518532 79.2
-L 69.518532 79.2
-L 56.426023 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.518532 79.2
-L 82.607841 79.2
-L 82.607841 79.2
-L 69.518532 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607841 79.2
-L 95.697149 79.2
-L 95.697149 79.2
-L 82.607841 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.697149 79.2
-L 108.789659 79.2
-L 108.789659 79.2
-L 95.697149 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789659 79.2
-L 121.882169 79.2
-L 121.882169 79.2
-L 108.789659 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.882169 79.2
-L 134.971477 79.2
-L 134.971477 79.2
-L 121.882169 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971477 79.2
-L 148.060786 79.2
-L 148.060786 79.2
-L 134.971477 79.2
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.060786 79.2
-L 161.153295 79.2
-L 161.153295 33.485714
-L 148.060786 33.485714
-z
-" clip-path="url(#p54c1a1e7e4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p54c1a1e7e4">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_1"
-    data-name-repr="&#39;LONGITUDE&#39;"
-    data-column-name="LONGITUDE"
-    data-column-idx="1"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">LONGITUDE</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    2 (40.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>55.4 ±
-                    0.0838
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>55.4 ±
-                    0.153
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">55.4</span> |
-                    <span class="max-value">55.5</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.91em" viewBox="0 0 174.89875 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:16.507026</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m64528b4493" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m64528b4493" x="61.047726" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="61.047726" y="97.057422" transform="rotate(-0 61.047726 97.057422)">55.40</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m64528b4493" x="103.828509" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="103.828509" y="97.057422" transform="rotate(-0 103.828509 97.057422)">55.45</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m64528b4493" x="146.609292" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="146.609292" y="97.057422" transform="rotate(-0 146.609292 97.057422)">55.50</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m74d2f75cd2" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m74d2f75cd2" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m74d2f75cd2" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.335766 79.2
-L 43.335766 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335766 79.2
-L 56.427328 79.2
-L 56.427328 79.2
-L 43.335766 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.427328 79.2
-L 69.515626 79.2
-L 69.515626 79.2
-L 56.427328 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.515626 79.2
-L 82.607188 79.2
-L 82.607188 79.2
-L 69.515626 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607188 79.2
-L 95.69875 79.2
-L 95.69875 79.2
-L 82.607188 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.2
-L 108.790312 79.2
-L 108.790312 79.2
-L 95.69875 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.790312 79.2
-L 121.881874 79.2
-L 121.881874 79.2
-L 108.790312 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.881874 79.2
-L 134.970172 79.2
-L 134.970172 79.2
-L 121.881874 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.970172 79.2
-L 148.061734 79.2
-L 148.061734 79.2
-L 134.970172 79.2
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.061734 79.2
-L 161.153295 79.2
-L 161.153295 33.485714
-L 148.061734 33.485714
-z
-" clip-path="url(#pecd6287dcc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="pecd6287dcc">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_2"
-    data-name-repr="&#39;YEAR/MONTH/DAY&#39;"
-    data-column-name="YEAR/MONTH/DAY"
-    data-column-idx="2"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">YEAR/MONTH/DAY</span>
-        </h3>
-        <span>DateTime64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">2008-02-17T00:00:00</span> |
-                    <span class="max-value">2008-11-25T00:00:00</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.51em" height="11.41em" viewBox="0 0 186.097305 136.927715" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:16.582228</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 34.897305 79.95014
-L 178.897305 79.95014
-L 178.897305 7.95014
-L 34.897305 7.95014
-L 34.897305 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m77f06cd225" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m77f06cd225" x="47.477576" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(13.10959 127.85913) rotate(-45)">2008-03</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m77f06cd225" x="61.868291" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(27.500305 127.85913) rotate(-45)">2008-04</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m77f06cd225" x="75.79479" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(41.426804 127.85913) rotate(-45)">2008-05</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m77f06cd225" x="90.185506" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(55.81752 127.85913) rotate(-45)">2008-06</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m77f06cd225" x="104.112005" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(69.744019 127.85913) rotate(-45)">2008-07</text>
-     </g>
-    </g>
-    <g id="xtick_6">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m77f06cd225" x="118.502721" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(84.134735 127.85913) rotate(-45)">2008-08</text>
-     </g>
-    </g>
-    <g id="xtick_7">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m77f06cd225" x="132.893436" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(98.52545 127.85913) rotate(-45)">2008-09</text>
-     </g>
-    </g>
-    <g id="xtick_8">
-     <g id="line2d_8">
-      <g>
-       <use xlink:href="#m77f06cd225" x="146.819935" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_8">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(112.451949 127.85913) rotate(-45)">2008-10</text>
-     </g>
-    </g>
-    <g id="xtick_9">
-     <g id="line2d_9">
-      <g>
-       <use xlink:href="#m77f06cd225" x="161.210651" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_9">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(126.842665 127.85913) rotate(-45)">2008-11</text>
-     </g>
-    </g>
-    <g id="xtick_10">
-     <g id="line2d_10">
-      <g>
-       <use xlink:href="#m77f06cd225" x="175.13715" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_10">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(140.769164 127.85913) rotate(-45)">2008-12</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_11">
-      <defs>
-       <path id="mb59fa49214" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mb59fa49214" x="34.897305" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_11">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="25.397305" y="84.12885" transform="rotate(-0 25.397305 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_12">
-      <g>
-       <use xlink:href="#mb59fa49214" x="34.897305" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_12">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="25.397305" y="49.843136" transform="rotate(-0 25.397305 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_13">
-      <g>
-       <use xlink:href="#mb59fa49214" x="34.897305" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_13">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="25.397305" y="15.557422" transform="rotate(-0 25.397305 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 41.442759 79.95014
-L 54.533668 79.95014
-L 54.533668 45.664425
-L 41.442759 45.664425
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 54.533668 79.95014
-L 67.624578 79.95014
-L 67.624578 45.664425
-L 54.533668 45.664425
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 67.624578 79.95014
-L 80.715487 79.95014
-L 80.715487 79.95014
-L 67.624578 79.95014
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 80.715487 79.95014
-L 93.806396 79.95014
-L 93.806396 79.95014
-L 80.715487 79.95014
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 93.806396 79.95014
-L 106.897305 79.95014
-L 106.897305 79.95014
-L 93.806396 79.95014
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 106.897305 79.95014
-L 119.988214 79.95014
-L 119.988214 79.95014
-L 106.897305 79.95014
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 119.988214 79.95014
-L 133.079123 79.95014
-L 133.079123 45.664425
-L 119.988214 45.664425
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 133.079123 79.95014
-L 146.170032 79.95014
-L 146.170032 79.95014
-L 133.079123 79.95014
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 146.170032 79.95014
-L 159.260941 79.95014
-L 159.260941 79.95014
-L 146.170032 79.95014
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 159.260941 79.95014
-L 172.35185 79.95014
-L 172.35185 11.378711
-L 159.260941 11.378711
-z
-" clip-path="url(#p2bfc45c793)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 34.897305 79.95014
-L 34.897305 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 34.897305 79.95014
-L 178.897305 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p2bfc45c793">
-   <rect x="34.897305" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_3"
-    data-name-repr="&#39;TMAX&#39;"
-    data-column-name="TMAX"
-    data-column-idx="3"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">TMAX</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>32.3 ±
-                    6.47
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>29.7 ±
-                    4.20
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">26.4</span> |
-                    <span class="max-value">43.0</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.97em" viewBox="0 0 174.89875 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:16.642946</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-L 167.69875 7.95014
-L 23.69875 7.95014
-L 23.69875 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mbc55d4c2b0" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mbc55d4c2b0" x="58.63413" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="58.63413" y="97.807561" transform="rotate(-0 58.63413 97.807561)">30</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mbc55d4c2b0" x="98.064578" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="98.064578" y="97.807561" transform="rotate(-0 98.064578 97.807561)">35</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mbc55d4c2b0" x="137.495027" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="137.495027" y="97.807561" transform="rotate(-0 137.495027 97.807561)">40</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m2fa40e42cf" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m2fa40e42cf" x="23.69875" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="84.12885" transform="rotate(-0 14.19875 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m2fa40e42cf" x="23.69875" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="49.843136" transform="rotate(-0 14.19875 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m2fa40e42cf" x="23.69875" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="15.557422" transform="rotate(-0 14.19875 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.95014
-L 43.335112 79.95014
-L 43.335112 45.664425
-L 30.244205 45.664425
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335112 79.95014
-L 56.42602 79.95014
-L 56.42602 11.378711
-L 43.335112 11.378711
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.42602 79.95014
-L 69.516942 79.95014
-L 69.516942 79.95014
-L 56.42602 79.95014
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516942 79.95014
-L 82.60785 79.95014
-L 82.60785 79.95014
-L 69.516942 79.95014
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.60785 79.95014
-L 95.698758 79.95014
-L 95.698758 45.664425
-L 82.60785 45.664425
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.698758 79.95014
-L 108.789665 79.95014
-L 108.789665 79.95014
-L 95.698758 79.95014
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789665 79.95014
-L 121.880573 79.95014
-L 121.880573 79.95014
-L 108.789665 79.95014
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880573 79.95014
-L 134.97148 79.95014
-L 134.97148 79.95014
-L 121.880573 79.95014
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.97148 79.95014
-L 148.062388 79.95014
-L 148.062388 79.95014
-L 134.97148 79.95014
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062388 79.95014
-L 161.153295 79.95014
-L 161.153295 45.664425
-L 148.062388 45.664425
-z
-" clip-path="url(#p2f1e5beb4a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.95014
-L 23.69875 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p2f1e5beb4a">
-   <rect x="23.69875" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_4"
-    data-name-repr="&#39;PRCP&#39;"
-    data-column-name="PRCP"
-    data-column-idx="4"
-
-
-    data-manager="FilterableColumn "
-     data-constant-column
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">PRCP</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="warning">3 (60.0%)</dd>
-
-
-
-            </dl>
-        </div>
-
-
-
-        <div class="margin-v-m">
-            <strong>Constant value:</strong>
-            <div class="copybutton-grid">
-                <div class="box">
-                    <pre id="col_4-constant-value"
-                        data-copy-text="nan">nan</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4-constant-value">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                </div>
-            </div>
-        </div>
-
-
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_5"
-    data-name-repr="&#39;SNOW&#39;"
-    data-column-name="SNOW"
-    data-column-idx="5"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">SNOW</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="critical">5 (100.0%)</dd>
-
-
-
-
-
-
-
-
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-    </div>
-</div>
-
-    </div>
-    </div>
-
-</article>
-
-<div data-hidden
-     data-hide-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
-     data-show-on="EMPTY_COLUMN_FILTER_SELECTED"
-     class="text wrapper">
-<p>
-No columns match the selected filter: <strong data-manager="ColumnFilterName"></strong>. You can change the column filter in the dropdown menu above.
-</p>
-<p>
-    <button type="button"
-            data-manager="ResetColumnFilter"
-            data-test="show-all-columns-button">Show all columns</button>
-</p>
-</div>
-</div>
-<div class="tab-panel" id="column-associations-panel" data-hidden
-    data-test="associations-panel">
-    <article class="margin-t-s flex-reverse flex-end wrapper gap-l">
-
-
-    <div class="horizontal-scroll vertical-scroll-table-wrapper">
-    <table class="pure-table pure-table-bordered sticky-header-table">
-        <thead>
-            <tr>
-                <th scope="col">Column 1</th>
-                <th scope="col">Column 2</th>
-                <th scope="col"><a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Cramér's V</a></th>
-                <th scope="col"><a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson's Correlation</a></th>
-            </tr>
-        </thead>
-        <tbody>
-
-            <tr>
-                <td class="elided">TMAX</td>
-                <td class="elided">PRCP</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td class="elided">PRCP</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.113</td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.113</td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">LONGITUDE</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>1.00</td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">PRCP</td>
-                <td
-                    >
-                    0.667
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">PRCP</td>
-                <td
-                    >
-                    0.667
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">TMAX</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">PRCP</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-        </tbody>
-    </table>
-    </div>
-
-    <div class="text shrinkable-text">
-        The table below shows the strength of association between the most similar columns in the dataframe.
-        <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Cramér's V</a> statistic is a number between 0 and 1.
-        When it is close to 1 the columns are strongly associated — they contain similar information.
-        In this case, one of them may be redundant and for some models (such as linear models) it might be beneficial to remove it.
-    </div>
-
-
-
-</article>
-</div>
-
 
 
 <div class="report-bottom-border"></div>
@@ -6310,7 +3854,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_8128721b">
+    <skrub-table-report class="report" id="report_253ac333">
     </skrub-table-report>
 
     <script type="module">
@@ -7414,7 +4958,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_8128721b-wrapper-fallback">
+<div id="report_253ac333-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -7425,8 +4969,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_8128721b-wrapper").removeAttribute("hidden");
- document.getElementById("report_8128721b-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_253ac333-wrapper").removeAttribute("hidden");
+ document.getElementById("report_253ac333-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -7439,8 +4983,8 @@ aux_table.head()
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_73cad6ad-wrapper" hidden>
-    <template id="report_73cad6ad-template">
+<div id="report_ac4f1fcb-wrapper" hidden>
+    <template id="report_ac4f1fcb-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -8730,8 +6274,8 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
         </style>
         <div id="report"
 
-
-              >
+             data-test-plots-skipped
+             data-test-associations-skipped >
 
 
 
@@ -8756,30 +6300,10 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
                     title="Summary statistics for all columns.">Stats</button>
             </div>
 
-            <div>
-                <button type="button" data-target-panel-id="column-summaries-panel"
-                    data-role="tab"  data-test="summaries-tab" class="tab"
-                    title="Plots showing the distributions of all columns">Distributions</button>
-            </div>
-            <div>
-                <button type="button" data-target-panel-id="column-associations-panel"
-                    data-role="tab"  class="tab"
-                    data-has-warning  data-test="associations-tab"
-                    title="Show which columns are similar (have a strong association).
-NOTE: some columns have very strong associations and may be redundant.">
-                    <div class="warning-sign">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
-  <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
-</svg>
-                    </div>
-                    Associations</button>
-            </div>
-
         </div>
         <div class="column-filter" data-manager="InvisibleInAssociationsTabPanel">
     <select data-manager="ColumnFilter"
-            data-all-filters-base64="eyJhbGwoKSI6IHsiZGlzcGxheV9uYW1lIjogIkFsbCBjb2x1bW5zIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgMywgNCwgNV19LCAiaGlnaF9hc3NvY2lhdGlvbiI6IHsiY29sdW1ucyI6IFswLCAxLCAyXSwgImRpc3BsYXlfbmFtZSI6ICJIaWdoIHNpbWlsYXJpdHkifSwgImhhc19udWxscygwLjApIjogeyJkaXNwbGF5X25hbWUiOiAiV2l0aCBudWxscyIsICJjb2x1bW5zIjogWzNdfSwgIih+aGFzX251bGxzKDAuMCkpIjogeyJkaXNwbGF5X25hbWUiOiAiV2l0aG91dCBudWxscyIsICJjb2x1bW5zIjogWzAsIDEsIDIsIDQsIDVdfSwgIm51bWVyaWMoKSI6IHsiZGlzcGxheV9uYW1lIjogIk51bWVyaWMiLCAiY29sdW1ucyI6IFswLCAxLCAzLCA0LCA1XX0sICIofm51bWVyaWMoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tbnVtZXJpYyIsICJjb2x1bW5zIjogWzJdfSwgInN0cmluZygpIjogeyJkaXNwbGF5X25hbWUiOiAiU3RyaW5nIiwgImNvbHVtbnMiOiBbXX0sICIofnN0cmluZygpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1zdHJpbmciLCAiY29sdW1ucyI6IFswLCAxLCAyLCAzLCA0LCA1XX0sICJjYXRlZ29yaWNhbCgpIjogeyJkaXNwbGF5X25hbWUiOiAiQ2F0ZWdvcmljYWwiLCAiY29sdW1ucyI6IFtdfSwgIih+Y2F0ZWdvcmljYWwoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tY2F0ZWdvcmljYWwiLCAiY29sdW1ucyI6IFswLCAxLCAyLCAzLCA0LCA1XX0sICJhbnlfZGF0ZSgpIjogeyJkaXNwbGF5X25hbWUiOiAiRGF0ZXRpbWUiLCAiY29sdW1ucyI6IFsyXX0sICIofmFueV9kYXRlKCkpIjogeyJkaXNwbGF5X25hbWUiOiAiTm9uLWRhdGV0aW1lIiwgImNvbHVtbnMiOiBbMCwgMSwgMywgNCwgNV19fQ=="
+            data-all-filters-base64="eyJhbGwoKSI6IHsiZGlzcGxheV9uYW1lIjogIkFsbCBjb2x1bW5zIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgMywgNCwgNV19LCAiaGFzX251bGxzKDAuMCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJXaXRoIG51bGxzIiwgImNvbHVtbnMiOiBbM119LCAiKH5oYXNfbnVsbHMoMC4wKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJXaXRob3V0IG51bGxzIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgNCwgNV19LCAibnVtZXJpYygpIjogeyJkaXNwbGF5X25hbWUiOiAiTnVtZXJpYyIsICJjb2x1bW5zIjogWzAsIDEsIDMsIDQsIDVdfSwgIih+bnVtZXJpYygpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1udW1lcmljIiwgImNvbHVtbnMiOiBbMl19LCAic3RyaW5nKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJTdHJpbmciLCAiY29sdW1ucyI6IFtdfSwgIih+c3RyaW5nKCkpIjogeyJkaXNwbGF5X25hbWUiOiAiTm9uLXN0cmluZyIsICJjb2x1bW5zIjogWzAsIDEsIDIsIDMsIDQsIDVdfSwgImNhdGVnb3JpY2FsKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJDYXRlZ29yaWNhbCIsICJjb2x1bW5zIjogW119LCAiKH5jYXRlZ29yaWNhbCgpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1jYXRlZ29yaWNhbCIsICJjb2x1bW5zIjogWzAsIDEsIDIsIDMsIDQsIDVdfSwgImFueV9kYXRlKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJEYXRldGltZSIsICJjb2x1bW5zIjogWzJdfSwgIih+YW55X2RhdGUoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tZGF0ZXRpbWUiLCAiY29sdW1ucyI6IFswLCAxLCAzLCA0LCA1XX19"
             data-test="column-filter-select"
             autocomplete="off">
         <optgroup label="Select columns to show:">
@@ -8787,9 +6311,6 @@ NOTE: some columns have very strong associations and may be redundant.">
 
         <option value="all()">
             All columns</option>
-
-        <option value="high_association">
-            High similarity</option>
 
         <option value="has_nulls(0.0)">
             With nulls</option>
@@ -8888,7 +6409,7 @@ NOTE: some columns have very strong associations and may be redundant.">
 
 
                 <th
-                id="8e1ff881"
+                id="fa55c76a"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -8918,7 +6439,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="30854969"
+                id="50b64545"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8952,7 +6473,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="e98f04b5"
+                id="96df3eba"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -8986,7 +6507,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="d1d40061"
+                id="4fed4ffc"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9020,7 +6541,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="8257d940"
+                id="9ca7f8bc"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9054,7 +6575,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="5924bfb9"
+                id="4df7f568"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9088,7 +6609,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="eb199557"
+                id="b9e786de"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -9136,7 +6657,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="5cc99eff"
+                id="cb12eff5"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -9164,7 +6685,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="63cbd726"
+                id="34b0b61d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9194,7 +6715,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="ddf6a413"
+                id="eecf79ef"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9224,7 +6745,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="08d5d42e"
+                id="2dbfefb2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9254,7 +6775,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="162cb372"
+                id="f2dae705"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9284,7 +6805,7 @@ data-spans_\_0_\_3
 
 
                 <td
-                id="021f43c8"
+                id="a9ddc845"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9314,7 +6835,7 @@ data-spans_\_0_\_4
 
 
                 <td
-                id="b27ec5b0"
+                id="c34221e9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9348,7 +6869,7 @@ data-spans_\_0_\_5
 
 
                 <th
-                id="95ede062"
+                id="41d58510"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -9376,7 +6897,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="6c6b3f14"
+                id="bb1d49b3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9406,7 +6927,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="2ca829e8"
+                id="5cef5b35"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9436,7 +6957,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="7cc6550f"
+                id="a9167fd0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9466,7 +6987,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="dd0f683a"
+                id="d3ef2203"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9496,7 +7017,7 @@ data-spans_\_1_\_3
 
 
                 <td
-                id="7d5388cb"
+                id="e2a87083"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9526,7 +7047,7 @@ data-spans_\_1_\_4
 
 
                 <td
-                id="57e564c6"
+                id="782e4014"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9560,7 +7081,7 @@ data-spans_\_1_\_5
 
 
                 <th
-                id="022c2b96"
+                id="b5b07772"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -9588,7 +7109,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="4954a50b"
+                id="72c07633"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9618,7 +7139,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="d249f9d4"
+                id="758444bf"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9648,7 +7169,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="1207e2da"
+                id="9c7d883e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9678,7 +7199,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="d100c8de"
+                id="d17a91e6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9708,7 +7229,7 @@ data-spans_\_2_\_3
 
 
                 <td
-                id="6b616237"
+                id="6df9598b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9738,7 +7259,7 @@ data-spans_\_2_\_4
 
 
                 <td
-                id="9c193e87"
+                id="52b66c35"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9772,7 +7293,7 @@ data-spans_\_2_\_5
 
 
                 <th
-                id="2a2d2bf8"
+                id="358004e0"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -9800,7 +7321,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="18820f77"
+                id="67ee26a8"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9830,7 +7351,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="a361ccec"
+                id="1b1c57cb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9860,7 +7381,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="4d06e9ad"
+                id="aa2e3446"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9890,7 +7411,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="bc522b26"
+                id="1d639a91"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9920,7 +7441,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="380f0368"
+                id="e7952d79"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9950,7 +7471,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="d88ab034"
+                id="2bb6265f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -9984,7 +7505,7 @@ data-spans_\_3_\_5
 
 
                 <th
-                id="7074f449"
+                id="c557f4bc"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -10012,7 +7533,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="da6f18d9"
+                id="daae5198"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10042,7 +7563,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="11201e81"
+                id="35cc800f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10072,7 +7593,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="c43fd4a0"
+                id="cc3ab565"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10102,7 +7623,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="32b62834"
+                id="171c8575"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10132,7 +7653,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="24a68491"
+                id="c7705f2a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10162,7 +7683,7 @@ data-spans_\_4_\_4
 
 
                 <td
-                id="23daac37"
+                id="da313b75"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -10307,207 +7828,6 @@ data-spans_\_4_\_5
 
 
 
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.91em" viewBox="0 0 174.89875 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:18.107853</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mc7dc013fd1" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mc7dc013fd1" x="52.886326" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="52.886326" y="97.057422" transform="rotate(-0 52.886326 97.057422)">40.20</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mc7dc013fd1" x="94.053592" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="94.053592" y="97.057422" transform="rotate(-0 94.053592 97.057422)">40.21</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mc7dc013fd1" x="135.220858" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="135.220858" y="97.057422" transform="rotate(-0 135.220858 97.057422)">40.22</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m34caa1ae9c" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m34caa1ae9c" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m34caa1ae9c" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.341395 79.2
-L 43.341395 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.341395 79.2
-L 56.422882 79.2
-L 56.422882 79.2
-L 43.341395 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.422882 79.2
-L 69.520073 79.2
-L 69.520073 79.2
-L 56.422882 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.520073 79.2
-L 82.601559 79.2
-L 82.601559 79.2
-L 69.520073 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.601559 79.2
-L 95.69875 79.2
-L 95.69875 79.2
-L 82.601559 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.2
-L 108.795941 79.2
-L 108.795941 79.2
-L 95.69875 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.795941 79.2
-L 121.877427 79.2
-L 121.877427 79.2
-L 108.795941 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.877427 79.2
-L 134.974618 79.2
-L 134.974618 79.2
-L 121.877427 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.974618 79.2
-L 148.056105 79.2
-L 148.056105 79.2
-L 134.974618 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.056105 79.2
-L 161.153295 79.2
-L 161.153295 33.485714
-L 148.056105 33.485714
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p715e655485">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
     </div>
 </div>
 
@@ -10585,217 +7905,6 @@ L 167.69875 79.2
 
 
 
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.60em" height="8.91em" viewBox="0 0 175.190259 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:18.167751</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m9248d16011" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m9248d16011" x="37.302356" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="37.302356" y="97.057422" transform="rotate(-0 37.302356 97.057422)">105.10</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m9248d16011" x="74.450042" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="74.450042" y="97.057422" transform="rotate(-0 74.450042 97.057422)">105.15</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m9248d16011" x="111.597729" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="111.597729" y="97.057422" transform="rotate(-0 111.597729 97.057422)">105.20</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m9248d16011" x="148.745415" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="148.745415" y="97.057422" transform="rotate(-0 148.745415 97.057422)">105.25</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_5">
-      <defs>
-       <path id="m6efe164d19" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m6efe164d19" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m6efe164d19" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.337948 79.2
-L 43.337948 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.337948 79.2
-L 56.426023 79.2
-L 56.426023 79.2
-L 43.337948 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426023 79.2
-L 69.514098 79.2
-L 69.514098 79.2
-L 56.426023 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.514098 79.2
-L 82.607841 79.2
-L 82.607841 79.2
-L 69.514098 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607841 79.2
-L 95.701584 79.2
-L 95.701584 79.2
-L 82.607841 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.701584 79.2
-L 108.789659 79.2
-L 108.789659 79.2
-L 95.701584 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789659 79.2
-L 121.877734 79.2
-L 121.877734 79.2
-L 108.789659 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.877734 79.2
-L 134.971477 79.2
-L 134.971477 79.2
-L 121.877734 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971477 79.2
-L 148.065221 79.2
-L 148.065221 79.2
-L 134.971477 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.065221 79.2
-L 161.153295 79.2
-L 161.153295 33.485714
-L 148.065221 33.485714
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p4cdf6f8796">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
     </div>
 </div>
 
@@ -10860,277 +7969,6 @@ L 167.69875 79.2
 
 
 
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.41em" height="11.41em" viewBox="0 0 184.944955 136.927715" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:18.243291</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 33.744955 79.95014
-L 177.744955 79.95014
-L 177.744955 7.95014
-L 33.744955 7.95014
-L 33.744955 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="medd22c686f" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#medd22c686f" x="47.477576" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(13.10959 127.85913) rotate(-45)">2008-04</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#medd22c686f" x="62.878645" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(28.510659 127.85913) rotate(-45)">2008-05</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#medd22c686f" x="78.793084" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(44.425098 127.85913) rotate(-45)">2008-06</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#medd22c686f" x="94.194153" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(59.826167 127.85913) rotate(-45)">2008-07</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#medd22c686f" x="110.108592" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(75.740606 127.85913) rotate(-45)">2008-08</text>
-     </g>
-    </g>
-    <g id="xtick_6">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#medd22c686f" x="126.02303" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(91.655044 127.85913) rotate(-45)">2008-09</text>
-     </g>
-    </g>
-    <g id="xtick_7">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#medd22c686f" x="141.4241" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(107.056114 127.85913) rotate(-45)">2008-10</text>
-     </g>
-    </g>
-    <g id="xtick_8">
-     <g id="line2d_8">
-      <g>
-       <use xlink:href="#medd22c686f" x="157.338538" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_8">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(122.970552 127.85913) rotate(-45)">2008-11</text>
-     </g>
-    </g>
-    <g id="xtick_9">
-     <g id="line2d_9">
-      <g>
-       <use xlink:href="#medd22c686f" x="172.739608" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_9">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(138.371622 127.85913) rotate(-45)">2008-12</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_10">
-      <defs>
-       <path id="m666b530e9c" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m666b530e9c" x="33.744955" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_10">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.244955" y="84.12885" transform="rotate(-0 24.244955 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_11">
-      <g>
-       <use xlink:href="#m666b530e9c" x="33.744955" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_11">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.244955" y="49.843136" transform="rotate(-0 24.244955 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_12">
-      <g>
-       <use xlink:href="#m666b530e9c" x="33.744955" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_12">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.244955" y="15.557422" transform="rotate(-0 24.244955 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 40.29041 79.95014
-L 53.381319 79.95014
-L 53.381319 45.664425
-L 40.29041 45.664425
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 53.381319 79.95014
-L 66.472228 79.95014
-L 66.472228 79.95014
-L 53.381319 79.95014
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 66.472228 79.95014
-L 79.563137 79.95014
-L 79.563137 45.664425
-L 66.472228 45.664425
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 79.563137 79.95014
-L 92.654046 79.95014
-L 92.654046 79.95014
-L 79.563137 79.95014
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 92.654046 79.95014
-L 105.744955 79.95014
-L 105.744955 79.95014
-L 92.654046 79.95014
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 105.744955 79.95014
-L 118.835864 79.95014
-L 118.835864 45.664425
-L 105.744955 45.664425
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 118.835864 79.95014
-L 131.926774 79.95014
-L 131.926774 79.95014
-L 118.835864 79.95014
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 131.926774 79.95014
-L 145.017683 79.95014
-L 145.017683 79.95014
-L 131.926774 79.95014
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 145.017683 79.95014
-L 158.108592 79.95014
-L 158.108592 79.95014
-L 145.017683 79.95014
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 158.108592 79.95014
-L 171.199501 79.95014
-L 171.199501 11.378711
-L 158.108592 11.378711
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 33.744955 79.95014
-L 33.744955 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 33.744955 79.95014
-L 177.744955 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="pac99876174">
-   <rect x="33.744955" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
 
     </div>
 </div>
@@ -11895,1321 +8733,6 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 </div>
 
-<div class="tab-panel" id="column-summaries-panel" data-hidden
-     data-test="summaries-panel">
-
-
-<article class="wrapper margin-t-s flow" data-show-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
-    data-hide-on="EMPTY_COLUMN_FILTER_SELECTED" >
-    <div class="flex flex-wrap">
-        <div class="box">
-            <pre id="selected-columns-display" data-manager="SelectedColumnsDisplay"></pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="selected-columns-display">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-        </div>
-    <div class="flex flex-wrap toggletip-wrapper column-selection-buttons">
-        <div class="toggletip" data-manager="Toggletip">
-            <button type="button"><span>i</span></button>
-            <div class="toggletip-info box-shadow">
-                To construct a list of column names that you can easily copy-paste
-                (in the box), select some columns using the checkboxes next
-                to the column names or the "Select all" button.
-            </div>
-        </div>
-        <button type="button" data-test="select-all-columns" data-manager="SelectAllVisibleColumns">Select all</button>
-        <button type="button" data-test="deselect-all-columns" data-manager="DeselectAllColumns">Deselect all</button>
-    </div>
-    </div>
-
-    <div class="horizontal-scroll padding-b-s">
-    <div class="column-summary-group">
-
-
-
-
-<div class="card column-summary" id="col_0"
-    data-name-repr="&#39;LATITUDE&#39;"
-    data-column-name="LATITUDE"
-    data-column-idx="0"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">LATITUDE</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    2 (40.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>40.2 ±
-                    0.0174
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>40.2 ±
-                    0.0318
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">40.2</span> |
-                    <span class="max-value">40.2</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.91em" viewBox="0 0 174.89875 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:18.107853</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mc7dc013fd1" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mc7dc013fd1" x="52.886326" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="52.886326" y="97.057422" transform="rotate(-0 52.886326 97.057422)">40.20</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mc7dc013fd1" x="94.053592" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="94.053592" y="97.057422" transform="rotate(-0 94.053592 97.057422)">40.21</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mc7dc013fd1" x="135.220858" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="135.220858" y="97.057422" transform="rotate(-0 135.220858 97.057422)">40.22</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m34caa1ae9c" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m34caa1ae9c" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m34caa1ae9c" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.341395 79.2
-L 43.341395 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.341395 79.2
-L 56.422882 79.2
-L 56.422882 79.2
-L 43.341395 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.422882 79.2
-L 69.520073 79.2
-L 69.520073 79.2
-L 56.422882 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.520073 79.2
-L 82.601559 79.2
-L 82.601559 79.2
-L 69.520073 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.601559 79.2
-L 95.69875 79.2
-L 95.69875 79.2
-L 82.601559 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.2
-L 108.795941 79.2
-L 108.795941 79.2
-L 95.69875 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.795941 79.2
-L 121.877427 79.2
-L 121.877427 79.2
-L 108.795941 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.877427 79.2
-L 134.974618 79.2
-L 134.974618 79.2
-L 121.877427 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.974618 79.2
-L 148.056105 79.2
-L 148.056105 79.2
-L 134.974618 79.2
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.056105 79.2
-L 161.153295 79.2
-L 161.153295 33.485714
-L 148.056105 33.485714
-z
-" clip-path="url(#p715e655485)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p715e655485">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_1"
-    data-name-repr="&#39;LONGITUDE&#39;"
-    data-column-name="LONGITUDE"
-    data-column-idx="1"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">LONGITUDE</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    2 (40.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>105. ±
-                    0.0965
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>105. ±
-                    0.176
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">105.</span> |
-                    <span class="max-value">105.</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.60em" height="8.91em" viewBox="0 0 175.190259 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:18.167751</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m9248d16011" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m9248d16011" x="37.302356" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="37.302356" y="97.057422" transform="rotate(-0 37.302356 97.057422)">105.10</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m9248d16011" x="74.450042" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="74.450042" y="97.057422" transform="rotate(-0 74.450042 97.057422)">105.15</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m9248d16011" x="111.597729" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="111.597729" y="97.057422" transform="rotate(-0 111.597729 97.057422)">105.20</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m9248d16011" x="148.745415" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="148.745415" y="97.057422" transform="rotate(-0 148.745415 97.057422)">105.25</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_5">
-      <defs>
-       <path id="m6efe164d19" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m6efe164d19" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m6efe164d19" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.337948 79.2
-L 43.337948 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.337948 79.2
-L 56.426023 79.2
-L 56.426023 79.2
-L 43.337948 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426023 79.2
-L 69.514098 79.2
-L 69.514098 79.2
-L 56.426023 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.514098 79.2
-L 82.607841 79.2
-L 82.607841 79.2
-L 69.514098 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607841 79.2
-L 95.701584 79.2
-L 95.701584 79.2
-L 82.607841 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.701584 79.2
-L 108.789659 79.2
-L 108.789659 79.2
-L 95.701584 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789659 79.2
-L 121.877734 79.2
-L 121.877734 79.2
-L 108.789659 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.877734 79.2
-L 134.971477 79.2
-L 134.971477 79.2
-L 121.877734 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971477 79.2
-L 148.065221 79.2
-L 148.065221 79.2
-L 134.971477 79.2
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.065221 79.2
-L 161.153295 79.2
-L 161.153295 33.485714
-L 148.065221 33.485714
-z
-" clip-path="url(#p4cdf6f8796)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p4cdf6f8796">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_2"
-    data-name-repr="&#39;YEAR/MONTH/DAY&#39;"
-    data-column-name="YEAR/MONTH/DAY"
-    data-column-idx="2"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">YEAR/MONTH/DAY</span>
-        </h3>
-        <span>DateTime64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">2008-03-18T00:00:00</span> |
-                    <span class="max-value">2008-11-28T00:00:00</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.41em" height="11.41em" viewBox="0 0 184.944955 136.927715" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:18.243291</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 33.744955 79.95014
-L 177.744955 79.95014
-L 177.744955 7.95014
-L 33.744955 7.95014
-L 33.744955 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="medd22c686f" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#medd22c686f" x="47.477576" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(13.10959 127.85913) rotate(-45)">2008-04</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#medd22c686f" x="62.878645" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(28.510659 127.85913) rotate(-45)">2008-05</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#medd22c686f" x="78.793084" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(44.425098 127.85913) rotate(-45)">2008-06</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#medd22c686f" x="94.194153" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(59.826167 127.85913) rotate(-45)">2008-07</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#medd22c686f" x="110.108592" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(75.740606 127.85913) rotate(-45)">2008-08</text>
-     </g>
-    </g>
-    <g id="xtick_6">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#medd22c686f" x="126.02303" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(91.655044 127.85913) rotate(-45)">2008-09</text>
-     </g>
-    </g>
-    <g id="xtick_7">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#medd22c686f" x="141.4241" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(107.056114 127.85913) rotate(-45)">2008-10</text>
-     </g>
-    </g>
-    <g id="xtick_8">
-     <g id="line2d_8">
-      <g>
-       <use xlink:href="#medd22c686f" x="157.338538" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_8">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(122.970552 127.85913) rotate(-45)">2008-11</text>
-     </g>
-    </g>
-    <g id="xtick_9">
-     <g id="line2d_9">
-      <g>
-       <use xlink:href="#medd22c686f" x="172.739608" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_9">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(138.371622 127.85913) rotate(-45)">2008-12</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_10">
-      <defs>
-       <path id="m666b530e9c" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m666b530e9c" x="33.744955" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_10">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.244955" y="84.12885" transform="rotate(-0 24.244955 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_11">
-      <g>
-       <use xlink:href="#m666b530e9c" x="33.744955" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_11">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.244955" y="49.843136" transform="rotate(-0 24.244955 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_12">
-      <g>
-       <use xlink:href="#m666b530e9c" x="33.744955" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_12">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.244955" y="15.557422" transform="rotate(-0 24.244955 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 40.29041 79.95014
-L 53.381319 79.95014
-L 53.381319 45.664425
-L 40.29041 45.664425
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 53.381319 79.95014
-L 66.472228 79.95014
-L 66.472228 79.95014
-L 53.381319 79.95014
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 66.472228 79.95014
-L 79.563137 79.95014
-L 79.563137 45.664425
-L 66.472228 45.664425
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 79.563137 79.95014
-L 92.654046 79.95014
-L 92.654046 79.95014
-L 79.563137 79.95014
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 92.654046 79.95014
-L 105.744955 79.95014
-L 105.744955 79.95014
-L 92.654046 79.95014
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 105.744955 79.95014
-L 118.835864 79.95014
-L 118.835864 45.664425
-L 105.744955 45.664425
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 118.835864 79.95014
-L 131.926774 79.95014
-L 131.926774 79.95014
-L 118.835864 79.95014
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 131.926774 79.95014
-L 145.017683 79.95014
-L 145.017683 79.95014
-L 131.926774 79.95014
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 145.017683 79.95014
-L 158.108592 79.95014
-L 158.108592 79.95014
-L 145.017683 79.95014
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 158.108592 79.95014
-L 171.199501 79.95014
-L 171.199501 11.378711
-L 158.108592 11.378711
-z
-" clip-path="url(#pac99876174)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 33.744955 79.95014
-L 33.744955 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 33.744955 79.95014
-L 177.744955 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="pac99876174">
-   <rect x="33.744955" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_3"
-    data-name-repr="&#39;TMAX&#39;"
-    data-column-name="TMAX"
-    data-column-idx="3"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">TMAX</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="critical">5 (100.0%)</dd>
-
-
-
-
-
-
-
-
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_4"
-    data-name-repr="&#39;PRCP&#39;"
-    data-column-name="PRCP"
-    data-column-idx="4"
-
-
-    data-manager="FilterableColumn "
-     data-constant-column
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">PRCP</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-
-            </dl>
-        </div>
-
-
-
-        <div class="margin-v-m">
-            <strong>Constant value:</strong>
-            <div class="copybutton-grid">
-                <div class="box">
-                    <pre id="col_4-constant-value"
-                        data-copy-text="0.0">0.0</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4-constant-value">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                </div>
-            </div>
-        </div>
-
-
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_5"
-    data-name-repr="&#39;SNOW&#39;"
-    data-column-name="SNOW"
-    data-column-idx="5"
-
-
-    data-manager="FilterableColumn "
-     data-constant-column
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">SNOW</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-
-            </dl>
-        </div>
-
-
-
-        <div class="margin-v-m">
-            <strong>Constant value:</strong>
-            <div class="copybutton-grid">
-                <div class="box">
-                    <pre id="col_5-constant-value"
-                        data-copy-text="0.0">0.0</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5-constant-value">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                </div>
-            </div>
-        </div>
-
-
-
-    </div>
-</div>
-
-    </div>
-    </div>
-
-</article>
-
-<div data-hidden
-     data-hide-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
-     data-show-on="EMPTY_COLUMN_FILTER_SELECTED"
-     class="text wrapper">
-<p>
-No columns match the selected filter: <strong data-manager="ColumnFilterName"></strong>. You can change the column filter in the dropdown menu above.
-</p>
-<p>
-    <button type="button"
-            data-manager="ResetColumnFilter"
-            data-test="show-all-columns-button">Show all columns</button>
-</p>
-</div>
-</div>
-<div class="tab-panel" id="column-associations-panel" data-hidden
-    data-test="associations-panel">
-    <article class="margin-t-s flex-reverse flex-end wrapper gap-l">
-
-
-    <div class="horizontal-scroll vertical-scroll-table-wrapper">
-    <table class="pure-table pure-table-bordered sticky-header-table">
-        <thead>
-            <tr>
-                <th scope="col">Column 1</th>
-                <th scope="col">Column 2</th>
-                <th scope="col"><a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Cramér's V</a></th>
-                <th scope="col"><a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson's Correlation</a></th>
-            </tr>
-        </thead>
-        <tbody>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">LONGITUDE</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>1.00</td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">PRCP</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">TMAX</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">TMAX</td>
-                <td class="elided">PRCP</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td class="elided">TMAX</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td class="elided">PRCP</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">PRCP</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">TMAX</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">TMAX</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">PRCP</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-        </tbody>
-    </table>
-    </div>
-
-    <div class="text shrinkable-text">
-        The table below shows the strength of association between the most similar columns in the dataframe.
-        <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Cramér's V</a> statistic is a number between 0 and 1.
-        When it is close to 1 the columns are strongly associated — they contain similar information.
-        In this case, one of them may be redundant and for some models (such as linear models) it might be beneficial to remove it.
-    </div>
-
-
-
-</article>
-</div>
-
 
 
 <div class="report-bottom-border"></div>
@@ -13218,7 +8741,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_73cad6ad">
+    <skrub-table-report class="report" id="report_ac4f1fcb">
     </skrub-table-report>
 
     <script type="module">
@@ -14322,7 +9845,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_73cad6ad-wrapper-fallback">
+<div id="report_ac4f1fcb-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -14333,8 +9856,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_73cad6ad-wrapper").removeAttribute("hidden");
- document.getElementById("report_73cad6ad-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_ac4f1fcb-wrapper").removeAttribute("hidden");
+ document.getElementById("report_ac4f1fcb-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -14363,8 +9886,8 @@ join.head()
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_7efdd39e-wrapper" hidden>
-    <template id="report_7efdd39e-template">
+<div id="report_5fb2bb16-wrapper" hidden>
+    <template id="report_5fb2bb16-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -15654,8 +11177,8 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
         </style>
         <div id="report"
 
-
-              >
+             data-test-plots-skipped
+             data-test-associations-skipped >
 
 
 
@@ -15680,30 +11203,10 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
                     title="Summary statistics for all columns.">Stats</button>
             </div>
 
-            <div>
-                <button type="button" data-target-panel-id="column-summaries-panel"
-                    data-role="tab"  data-test="summaries-tab" class="tab"
-                    title="Plots showing the distributions of all columns">Distributions</button>
-            </div>
-            <div>
-                <button type="button" data-target-panel-id="column-associations-panel"
-                    data-role="tab"  class="tab"
-                    data-has-warning  data-test="associations-tab"
-                    title="Show which columns are similar (have a strong association).
-NOTE: some columns have very strong associations and may be redundant.">
-                    <div class="warning-sign">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
-  <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
-</svg>
-                    </div>
-                    Associations</button>
-            </div>
-
         </div>
         <div class="column-filter" data-manager="InvisibleInAssociationsTabPanel">
     <select data-manager="ColumnFilter"
-            data-all-filters-base64="eyJhbGwoKSI6IHsiZGlzcGxheV9uYW1lIjogIkFsbCBjb2x1bW5zIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgNywgOF19LCAiaGlnaF9hc3NvY2lhdGlvbiI6IHsiY29sdW1ucyI6IFswLCAxLCAyLCAzLCA0LCA2LCA3LCA4XSwgImRpc3BsYXlfbmFtZSI6ICJIaWdoIHNpbWlsYXJpdHkifSwgImhhc19udWxscygwLjApIjogeyJkaXNwbGF5X25hbWUiOiAiV2l0aCBudWxscyIsICJjb2x1bW5zIjogWzQsIDVdfSwgIih+aGFzX251bGxzKDAuMCkpIjogeyJkaXNwbGF5X25hbWUiOiAiV2l0aG91dCBudWxscyIsICJjb2x1bW5zIjogWzAsIDEsIDIsIDMsIDYsIDcsIDhdfSwgIm51bWVyaWMoKSI6IHsiZGlzcGxheV9uYW1lIjogIk51bWVyaWMiLCAiY29sdW1ucyI6IFswLCAxLCAzLCA0LCA1LCA2LCA3LCA4XX0sICIofm51bWVyaWMoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tbnVtZXJpYyIsICJjb2x1bW5zIjogWzJdfSwgInN0cmluZygpIjogeyJkaXNwbGF5X25hbWUiOiAiU3RyaW5nIiwgImNvbHVtbnMiOiBbXX0sICIofnN0cmluZygpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1zdHJpbmciLCAiY29sdW1ucyI6IFswLCAxLCAyLCAzLCA0LCA1LCA2LCA3LCA4XX0sICJjYXRlZ29yaWNhbCgpIjogeyJkaXNwbGF5X25hbWUiOiAiQ2F0ZWdvcmljYWwiLCAiY29sdW1ucyI6IFtdfSwgIih+Y2F0ZWdvcmljYWwoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tY2F0ZWdvcmljYWwiLCAiY29sdW1ucyI6IFswLCAxLCAyLCAzLCA0LCA1LCA2LCA3LCA4XX0sICJhbnlfZGF0ZSgpIjogeyJkaXNwbGF5X25hbWUiOiAiRGF0ZXRpbWUiLCAiY29sdW1ucyI6IFsyXX0sICIofmFueV9kYXRlKCkpIjogeyJkaXNwbGF5X25hbWUiOiAiTm9uLWRhdGV0aW1lIiwgImNvbHVtbnMiOiBbMCwgMSwgMywgNCwgNSwgNiwgNywgOF19fQ=="
+            data-all-filters-base64="eyJhbGwoKSI6IHsiZGlzcGxheV9uYW1lIjogIkFsbCBjb2x1bW5zIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgNywgOF19LCAiaGFzX251bGxzKDAuMCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJXaXRoIG51bGxzIiwgImNvbHVtbnMiOiBbNCwgNV19LCAiKH5oYXNfbnVsbHMoMC4wKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJXaXRob3V0IG51bGxzIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgMywgNiwgNywgOF19LCAibnVtZXJpYygpIjogeyJkaXNwbGF5X25hbWUiOiAiTnVtZXJpYyIsICJjb2x1bW5zIjogWzAsIDEsIDMsIDQsIDUsIDYsIDcsIDhdfSwgIih+bnVtZXJpYygpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1udW1lcmljIiwgImNvbHVtbnMiOiBbMl19LCAic3RyaW5nKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJTdHJpbmciLCAiY29sdW1ucyI6IFtdfSwgIih+c3RyaW5nKCkpIjogeyJkaXNwbGF5X25hbWUiOiAiTm9uLXN0cmluZyIsICJjb2x1bW5zIjogWzAsIDEsIDIsIDMsIDQsIDUsIDYsIDcsIDhdfSwgImNhdGVnb3JpY2FsKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJDYXRlZ29yaWNhbCIsICJjb2x1bW5zIjogW119LCAiKH5jYXRlZ29yaWNhbCgpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1jYXRlZ29yaWNhbCIsICJjb2x1bW5zIjogWzAsIDEsIDIsIDMsIDQsIDUsIDYsIDcsIDhdfSwgImFueV9kYXRlKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJEYXRldGltZSIsICJjb2x1bW5zIjogWzJdfSwgIih+YW55X2RhdGUoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tZGF0ZXRpbWUiLCAiY29sdW1ucyI6IFswLCAxLCAzLCA0LCA1LCA2LCA3LCA4XX19"
             data-test="column-filter-select"
             autocomplete="off">
         <optgroup label="Select columns to show:">
@@ -15711,9 +11214,6 @@ NOTE: some columns have very strong associations and may be redundant.">
 
         <option value="all()">
             All columns</option>
-
-        <option value="high_association">
-            High similarity</option>
 
         <option value="has_nulls(0.0)">
             With nulls</option>
@@ -15812,7 +11312,7 @@ NOTE: some columns have very strong associations and may be redundant.">
 
 
                 <th
-                id="53d305ab"
+                id="79d36b88"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -15842,7 +11342,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="7f37e87a"
+                id="72c90749"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15876,7 +11376,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="5933e860"
+                id="3dd6decf"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15910,7 +11410,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="84b25c33"
+                id="ff0d3e67"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15944,7 +11444,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="30408734"
+                id="3d63abf2"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -15978,7 +11478,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="21bca99c"
+                id="4900c34f"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -16012,7 +11512,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="f699c163"
+                id="cd91ab02"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -16046,7 +11546,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="4030f273"
+                id="7a9afea1"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -16080,7 +11580,7 @@ data-spans_\_-1_\_6
 
 
                 <th
-                id="e6666edc"
+                id="562a5726"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -16114,7 +11614,7 @@ data-spans_\_-1_\_7
 
 
                 <th
-                id="a548e791"
+                id="549c1557"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -16162,7 +11662,7 @@ data-spans_\_-1_\_8
 
 
                 <th
-                id="f6ec109d"
+                id="25c43643"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16190,7 +11690,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="0e3a9d16"
+                id="ebf3f18c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16220,7 +11720,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="2b263db9"
+                id="1379b7e9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16250,7 +11750,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="65a32a84"
+                id="6fb2b592"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16280,7 +11780,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="ce6beea9"
+                id="d805b831"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16310,7 +11810,7 @@ data-spans_\_0_\_3
 
 
                 <td
-                id="cd3ad44f"
+                id="3af7da00"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16340,7 +11840,7 @@ data-spans_\_0_\_4
 
 
                 <td
-                id="6dc0016d"
+                id="9c4c7979"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16370,7 +11870,7 @@ data-spans_\_0_\_5
 
 
                 <td
-                id="d431c8bc"
+                id="1136518a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16391,16 +11891,16 @@ data-spans_\_0_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="25.98639278275451"
-                data-value-str="25.98639278275451"
+                data-value-repr="27.36573430182692"
+                data-value-str="27.36573430182692"
 
                 data-column-idx="6"
 
-                >26.0</td>
+                >27.4</td>
 
 
                 <td
-                id="ec147448"
+                id="cdbfb694"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16421,16 +11921,16 @@ data-spans_\_0_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="17.64091115963792"
-                data-value-str="17.64091115963792"
+                data-value-repr="20.84315334661623"
+                data-value-str="20.84315334661623"
 
                 data-column-idx="7"
 
-                >17.6</td>
+                >20.8</td>
 
 
                 <td
-                id="68053454"
+                id="8350aea7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16451,12 +11951,12 @@ data-spans_\_0_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.10851128274058405"
-                data-value-str="0.10851128274058405"
+                data-value-repr="0.10123470918005671"
+                data-value-str="0.10123470918005671"
 
                 data-column-idx="8"
 
-                >0.109</td>
+                >0.101</td>
 
             </tr>
 
@@ -16464,7 +11964,7 @@ data-spans_\_0_\_8
 
 
                 <th
-                id="5a385c26"
+                id="33c12bf5"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16492,7 +11992,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="0c5fb997"
+                id="6163bf75"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16522,7 +12022,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="8de41d9c"
+                id="917f6f04"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16552,7 +12052,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="09fb7db1"
+                id="5576430a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16582,7 +12082,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="e930623a"
+                id="18474669"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16612,7 +12112,7 @@ data-spans_\_1_\_3
 
 
                 <td
-                id="4ebbc769"
+                id="35cdd1ef"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16642,7 +12142,7 @@ data-spans_\_1_\_4
 
 
                 <td
-                id="8f9a4f94"
+                id="c2b42837"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16672,7 +12172,7 @@ data-spans_\_1_\_5
 
 
                 <td
-                id="4dfd8743"
+                id="3ca569d7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16693,16 +12193,16 @@ data-spans_\_1_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="28.621265520205693"
-                data-value-str="28.621265520205693"
+                data-value-repr="30.20928407221795"
+                data-value-str="30.20928407221795"
 
                 data-column-idx="6"
 
-                >28.6</td>
+                >30.2</td>
 
 
                 <td
-                id="24364641"
+                id="3f65dbd3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16723,16 +12223,16 @@ data-spans_\_1_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="20.834442288593916"
-                data-value-str="20.834442288593916"
+                data-value-repr="25.66539235230859"
+                data-value-str="25.66539235230859"
 
                 data-column-idx="7"
 
-                >20.8</td>
+                >25.7</td>
 
 
                 <td
-                id="f4e9afe0"
+                id="6847fa42"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16753,12 +12253,12 @@ data-spans_\_1_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.09821189047840674"
-                data-value-str="0.09821189047840674"
+                data-value-repr="0.3414040170311077"
+                data-value-str="0.3414040170311077"
 
                 data-column-idx="8"
 
-                >0.0982</td>
+                >0.341</td>
 
             </tr>
 
@@ -16766,7 +12266,7 @@ data-spans_\_1_\_8
 
 
                 <th
-                id="9a134552"
+                id="e62dedd2"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -16794,7 +12294,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="9d77e302"
+                id="5f1e61e0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16824,7 +12324,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="22939ce1"
+                id="61a04cc3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16854,7 +12354,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="61560f59"
+                id="de264341"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16884,7 +12384,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="c38223aa"
+                id="3f01bf2e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16914,7 +12414,7 @@ data-spans_\_2_\_3
 
 
                 <td
-                id="b3ba5c4e"
+                id="97d6b24e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16944,7 +12444,7 @@ data-spans_\_2_\_4
 
 
                 <td
-                id="8aba41dc"
+                id="46bcf41a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16974,7 +12474,7 @@ data-spans_\_2_\_5
 
 
                 <td
-                id="c637ab89"
+                id="bb2d9479"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -16995,16 +12495,16 @@ data-spans_\_2_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="33.30189860939864"
-                data-value-str="33.30189860939864"
+                data-value-repr="33.64318044788382"
+                data-value-str="33.64318044788382"
 
                 data-column-idx="6"
 
-                >33.3</td>
+                >33.6</td>
 
 
                 <td
-                id="e24d575c"
+                id="cb12ddd0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17025,16 +12525,16 @@ data-spans_\_2_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="77.8564741997385"
-                data-value-str="77.8564741997385"
+                data-value-repr="64.31491565031243"
+                data-value-str="64.31491565031243"
 
                 data-column-idx="7"
 
-                >77.9</td>
+                >64.3</td>
 
 
                 <td
-                id="772f353c"
+                id="a294ea05"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17055,12 +12555,12 @@ data-spans_\_2_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.13575517343443216"
-                data-value-str="-0.13575517343443216"
+                data-value-repr="0.09760902635314764"
+                data-value-str="0.09760902635314764"
 
                 data-column-idx="8"
 
-                >-0.136</td>
+                >0.0976</td>
 
             </tr>
 
@@ -17068,7 +12568,7 @@ data-spans_\_2_\_8
 
 
                 <th
-                id="45f712fb"
+                id="ea9d7121"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -17096,7 +12596,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="bda412a2"
+                id="05d4e587"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17126,7 +12626,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="22b48a14"
+                id="0593aecb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17156,7 +12656,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="2f7cec62"
+                id="f9477547"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17186,7 +12686,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="769f449c"
+                id="14eedc08"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17216,7 +12716,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="13a84481"
+                id="b50ef994"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17246,7 +12746,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="6a6c40a4"
+                id="880737c9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17276,7 +12776,7 @@ data-spans_\_3_\_5
 
 
                 <td
-                id="8ac7a4e5"
+                id="7cf90f50"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17297,16 +12797,16 @@ data-spans_\_3_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="27.084197760187674"
-                data-value-str="27.084197760187674"
+                data-value-repr="28.56993958783205"
+                data-value-str="28.56993958783205"
 
                 data-column-idx="6"
 
-                >27.1</td>
+                >28.6</td>
 
 
                 <td
-                id="70ca12df"
+                id="303a9605"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17327,16 +12827,16 @@ data-spans_\_3_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="28.18505044376626"
-                data-value-str="28.18505044376626"
+                data-value-repr="31.22365087936969"
+                data-value-str="31.22365087936969"
 
                 data-column-idx="7"
 
-                >28.2</td>
+                >31.2</td>
 
 
                 <td
-                id="56d79827"
+                id="3de87024"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17357,12 +12857,12 @@ data-spans_\_3_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="-0.1471177841281596"
-                data-value-str="-0.1471177841281596"
+                data-value-repr="-0.07151106178834771"
+                data-value-str="-0.07151106178834771"
 
                 data-column-idx="8"
 
-                >-0.147</td>
+                >-0.0715</td>
 
             </tr>
 
@@ -17370,7 +12870,7 @@ data-spans_\_3_\_8
 
 
                 <th
-                id="9a88a014"
+                id="bad6cd4a"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -17398,7 +12898,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="bd442927"
+                id="d8915ec9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17428,7 +12928,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="79015df6"
+                id="33ff1af9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17458,7 +12958,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="f2fa8b45"
+                id="11ecc157"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17488,7 +12988,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="90d75f0d"
+                id="b9d0199b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17518,7 +13018,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="ff83ddac"
+                id="d6d55229"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17548,7 +13048,7 @@ data-spans_\_4_\_4
 
 
                 <td
-                id="7d4c8699"
+                id="625797a9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17578,7 +13078,7 @@ data-spans_\_4_\_5
 
 
                 <td
-                id="dcc4d97b"
+                id="c2e47182"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17599,16 +13099,16 @@ data-spans_\_4_\_6
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="25.492572702652097"
-                data-value-str="25.492572702652097"
+                data-value-repr="27.194101201487047"
+                data-value-str="27.194101201487047"
 
                 data-column-idx="6"
 
-                >25.5</td>
+                >27.2</td>
 
 
                 <td
-                id="958bfd9c"
+                id="7ee70f3d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17629,16 +13129,16 @@ data-spans_\_4_\_7
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="21.682171986552035"
-                data-value-str="21.682171986552035"
+                data-value-repr="11.392541070529496"
+                data-value-str="11.392541070529496"
 
                 data-column-idx="7"
 
-                >21.7</td>
+                >11.4</td>
 
 
                 <td
-                id="c31dc0b5"
+                id="8cd4e32f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -17659,12 +13159,12 @@ data-spans_\_4_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="0.03322055224639508"
-                data-value-str="0.03322055224639508"
+                data-value-repr="0.14638819695959243"
+                data-value-str="0.14638819695959243"
 
                 data-column-idx="8"
 
-                >0.0332</td>
+                >0.146</td>
 
             </tr>
 
@@ -17783,207 +13283,6 @@ data-spans_\_4_\_8
 
 
 
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.91em" viewBox="0 0 174.89875 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:20.869684</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m1b5916aad4" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m1b5916aad4" x="63.811607" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="63.811607" y="97.057422" transform="rotate(-0 63.811607 97.057422)">25.275</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m1b5916aad4" x="105.769099" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="105.769099" y="97.057422" transform="rotate(-0 105.769099 97.057422)">25.300</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m1b5916aad4" x="147.726591" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="147.726591" y="97.057422" transform="rotate(-0 147.726591 97.057422)">25.325</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="mb8795feea8" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mb8795feea8" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#mb8795feea8" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.333513 79.2
-L 43.333513 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.333513 79.2
-L 56.426023 79.2
-L 56.426023 79.2
-L 43.333513 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426023 79.2
-L 69.518532 79.2
-L 69.518532 79.2
-L 56.426023 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.518532 79.2
-L 82.607841 79.2
-L 82.607841 79.2
-L 69.518532 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607841 79.2
-L 95.697149 79.2
-L 95.697149 79.2
-L 82.607841 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.697149 79.2
-L 108.789659 79.2
-L 108.789659 79.2
-L 95.697149 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789659 79.2
-L 121.882169 79.2
-L 121.882169 79.2
-L 108.789659 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.882169 79.2
-L 134.971477 79.2
-L 134.971477 79.2
-L 121.882169 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971477 79.2
-L 148.060786 79.2
-L 148.060786 79.2
-L 134.971477 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.060786 79.2
-L 161.153295 79.2
-L 161.153295 33.485714
-L 148.060786 33.485714
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p6ba2e7bb4d">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
     </div>
 </div>
 
@@ -18061,207 +13360,6 @@ L 167.69875 79.2
 
 
 
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.91em" viewBox="0 0 174.89875 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:20.916174</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mfa4e041d3b" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mfa4e041d3b" x="61.047726" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="61.047726" y="97.057422" transform="rotate(-0 61.047726 97.057422)">55.40</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mfa4e041d3b" x="103.828509" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="103.828509" y="97.057422" transform="rotate(-0 103.828509 97.057422)">55.45</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mfa4e041d3b" x="146.609292" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="146.609292" y="97.057422" transform="rotate(-0 146.609292 97.057422)">55.50</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m00b3f61058" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m00b3f61058" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m00b3f61058" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.335766 79.2
-L 43.335766 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335766 79.2
-L 56.427328 79.2
-L 56.427328 79.2
-L 43.335766 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.427328 79.2
-L 69.515626 79.2
-L 69.515626 79.2
-L 56.427328 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.515626 79.2
-L 82.607188 79.2
-L 82.607188 79.2
-L 69.515626 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607188 79.2
-L 95.69875 79.2
-L 95.69875 79.2
-L 82.607188 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.2
-L 108.790312 79.2
-L 108.790312 79.2
-L 95.69875 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.790312 79.2
-L 121.881874 79.2
-L 121.881874 79.2
-L 108.790312 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.881874 79.2
-L 134.970172 79.2
-L 134.970172 79.2
-L 121.881874 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.970172 79.2
-L 148.061734 79.2
-L 148.061734 79.2
-L 134.970172 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.061734 79.2
-L 161.153295 79.2
-L 161.153295 33.485714
-L 148.061734 33.485714
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p503825c3d1">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
     </div>
 </div>
 
@@ -18326,287 +13424,6 @@ L 167.69875 79.2
 
 
 
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.51em" height="11.41em" viewBox="0 0 186.097305 136.927715" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:20.987012</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 34.897305 79.95014
-L 178.897305 79.95014
-L 178.897305 7.95014
-L 34.897305 7.95014
-L 34.897305 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m35c3706f47" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m35c3706f47" x="47.477576" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(13.10959 127.85913) rotate(-45)">2008-03</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m35c3706f47" x="61.868291" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(27.500305 127.85913) rotate(-45)">2008-04</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m35c3706f47" x="75.79479" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(41.426804 127.85913) rotate(-45)">2008-05</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m35c3706f47" x="90.185506" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(55.81752 127.85913) rotate(-45)">2008-06</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m35c3706f47" x="104.112005" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(69.744019 127.85913) rotate(-45)">2008-07</text>
-     </g>
-    </g>
-    <g id="xtick_6">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m35c3706f47" x="118.502721" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(84.134735 127.85913) rotate(-45)">2008-08</text>
-     </g>
-    </g>
-    <g id="xtick_7">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m35c3706f47" x="132.893436" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(98.52545 127.85913) rotate(-45)">2008-09</text>
-     </g>
-    </g>
-    <g id="xtick_8">
-     <g id="line2d_8">
-      <g>
-       <use xlink:href="#m35c3706f47" x="146.819935" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_8">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(112.451949 127.85913) rotate(-45)">2008-10</text>
-     </g>
-    </g>
-    <g id="xtick_9">
-     <g id="line2d_9">
-      <g>
-       <use xlink:href="#m35c3706f47" x="161.210651" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_9">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(126.842665 127.85913) rotate(-45)">2008-11</text>
-     </g>
-    </g>
-    <g id="xtick_10">
-     <g id="line2d_10">
-      <g>
-       <use xlink:href="#m35c3706f47" x="175.13715" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_10">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(140.769164 127.85913) rotate(-45)">2008-12</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_11">
-      <defs>
-       <path id="mad3035bbd0" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mad3035bbd0" x="34.897305" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_11">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="25.397305" y="84.12885" transform="rotate(-0 25.397305 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_12">
-      <g>
-       <use xlink:href="#mad3035bbd0" x="34.897305" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_12">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="25.397305" y="49.843136" transform="rotate(-0 25.397305 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_13">
-      <g>
-       <use xlink:href="#mad3035bbd0" x="34.897305" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_13">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="25.397305" y="15.557422" transform="rotate(-0 25.397305 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 41.442759 79.95014
-L 54.533668 79.95014
-L 54.533668 45.664425
-L 41.442759 45.664425
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 54.533668 79.95014
-L 67.624578 79.95014
-L 67.624578 45.664425
-L 54.533668 45.664425
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 67.624578 79.95014
-L 80.715487 79.95014
-L 80.715487 79.95014
-L 67.624578 79.95014
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 80.715487 79.95014
-L 93.806396 79.95014
-L 93.806396 79.95014
-L 80.715487 79.95014
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 93.806396 79.95014
-L 106.897305 79.95014
-L 106.897305 79.95014
-L 93.806396 79.95014
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 106.897305 79.95014
-L 119.988214 79.95014
-L 119.988214 79.95014
-L 106.897305 79.95014
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 119.988214 79.95014
-L 133.079123 79.95014
-L 133.079123 45.664425
-L 119.988214 45.664425
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 133.079123 79.95014
-L 146.170032 79.95014
-L 146.170032 79.95014
-L 133.079123 79.95014
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 146.170032 79.95014
-L 159.260941 79.95014
-L 159.260941 79.95014
-L 146.170032 79.95014
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 159.260941 79.95014
-L 172.35185 79.95014
-L 172.35185 11.378711
-L 159.260941 11.378711
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 34.897305 79.95014
-L 34.897305 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 34.897305 79.95014
-L 178.897305 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p9207043324">
-   <rect x="34.897305" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
 
     </div>
 </div>
@@ -18684,217 +13501,6 @@ L 178.897305 79.95014
 
 
 
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.97em" viewBox="0 0 174.89875 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:21.046109</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-L 167.69875 7.95014
-L 23.69875 7.95014
-L 23.69875 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m93ad6b3b8b" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m93ad6b3b8b" x="58.63413" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="58.63413" y="97.807561" transform="rotate(-0 58.63413 97.807561)">30</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m93ad6b3b8b" x="98.064578" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="98.064578" y="97.807561" transform="rotate(-0 98.064578 97.807561)">35</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m93ad6b3b8b" x="137.495027" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="137.495027" y="97.807561" transform="rotate(-0 137.495027 97.807561)">40</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m5ea0d822da" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m5ea0d822da" x="23.69875" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="84.12885" transform="rotate(-0 14.19875 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m5ea0d822da" x="23.69875" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="49.843136" transform="rotate(-0 14.19875 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m5ea0d822da" x="23.69875" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="15.557422" transform="rotate(-0 14.19875 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.95014
-L 43.335112 79.95014
-L 43.335112 45.664425
-L 30.244205 45.664425
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335112 79.95014
-L 56.42602 79.95014
-L 56.42602 11.378711
-L 43.335112 11.378711
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.42602 79.95014
-L 69.516942 79.95014
-L 69.516942 79.95014
-L 56.42602 79.95014
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516942 79.95014
-L 82.60785 79.95014
-L 82.60785 79.95014
-L 69.516942 79.95014
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.60785 79.95014
-L 95.698758 79.95014
-L 95.698758 45.664425
-L 82.60785 45.664425
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.698758 79.95014
-L 108.789665 79.95014
-L 108.789665 79.95014
-L 95.698758 79.95014
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789665 79.95014
-L 121.880573 79.95014
-L 121.880573 79.95014
-L 108.789665 79.95014
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880573 79.95014
-L 134.97148 79.95014
-L 134.97148 79.95014
-L 121.880573 79.95014
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.97148 79.95014
-L 148.062388 79.95014
-L 148.062388 79.95014
-L 134.97148 79.95014
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062388 79.95014
-L 161.153295 79.95014
-L 161.153295 45.664425
-L 148.062388 45.664425
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.95014
-L 23.69875 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="pd829255c0a">
-   <rect x="23.69875" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
 
     </div>
 </div>
@@ -19066,22 +13672,22 @@ L 167.69875 79.95014
 
 
                 <dt>Mean ± Std</dt>
-                <dd>28.1 ±
-                    3.15
+                <dd>29.4 ±
+                    2.66
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>27.1 ±
-                    2.63
+                <dd>28.6 ±
+                    2.84
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">25.5</span> |
-                    <span class="max-value">33.3</span>
+                    <span class="min-value">27.2</span> |
+                    <span class="max-value">33.6</span>
 
                 </dd>
 
@@ -19093,217 +13699,6 @@ L 167.69875 79.95014
 
 
 
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.97em" viewBox="0 0 174.89875 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:21.102637</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-L 167.69875 7.95014
-L 23.69875 7.95014
-L 23.69875 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mb9bd93f0ef" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mb9bd93f0ef" x="63.895056" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="63.895056" y="97.807561" transform="rotate(-0 63.895056 97.807561)">27.5</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mb9bd93f0ef" x="105.80299" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="105.80299" y="97.807561" transform="rotate(-0 105.80299 97.807561)">30.0</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mb9bd93f0ef" x="147.710924" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="147.710924" y="97.807561" transform="rotate(-0 147.710924 97.807561)">32.5</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="mcb72af4502" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mcb72af4502" x="23.69875" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="84.12885" transform="rotate(-0 14.19875 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#mcb72af4502" x="23.69875" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="49.843136" transform="rotate(-0 14.19875 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#mcb72af4502" x="23.69875" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="15.557422" transform="rotate(-0 14.19875 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.95014
-L 43.335126 79.95014
-L 43.335126 11.378711
-L 30.244205 11.378711
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335126 79.95014
-L 56.426016 79.95014
-L 56.426016 79.95014
-L 43.335126 79.95014
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426016 79.95014
-L 69.516938 79.95014
-L 69.516938 45.664425
-L 56.426016 45.664425
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516938 79.95014
-L 82.607828 79.95014
-L 82.607828 79.95014
-L 69.516938 79.95014
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607828 79.95014
-L 95.69875 79.95014
-L 95.69875 45.664425
-L 82.607828 45.664425
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.95014
-L 108.789672 79.95014
-L 108.789672 79.95014
-L 95.69875 79.95014
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789672 79.95014
-L 121.880562 79.95014
-L 121.880562 79.95014
-L 108.789672 79.95014
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880562 79.95014
-L 134.971484 79.95014
-L 134.971484 79.95014
-L 121.880562 79.95014
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971484 79.95014
-L 148.062374 79.95014
-L 148.062374 79.95014
-L 134.971484 79.95014
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062374 79.95014
-L 161.153295 79.95014
-L 161.153295 45.664425
-L 148.062374 45.664425
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.95014
-L 23.69875 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p2461f98721">
-   <rect x="23.69875" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
 
     </div>
 </div>
@@ -19354,22 +13749,22 @@ L 167.69875 79.95014
 
 
                 <dt>Mean ± Std</dt>
-                <dd>33.2 ±
-                    25.2
+                <dd>30.7 ±
+                    20.2
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>21.7 ±
-                    7.35
+                <dd>25.7 ±
+                    10.4
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">17.6</span> |
-                    <span class="max-value">77.9</span>
+                    <span class="min-value">11.4</span> |
+                    <span class="max-value">64.3</span>
 
                 </dd>
 
@@ -19381,217 +13776,6 @@ L 167.69875 79.95014
 
 
 
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.00em" height="8.91em" viewBox="0 0 180.012083 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:21.152406</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m6caa22bf4d" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m6caa22bf4d" x="35.372882" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="35.372882" y="97.057422" transform="rotate(-0 35.372882 97.057422)">20</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m6caa22bf4d" x="78.853032" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="78.853032" y="97.057422" transform="rotate(-0 78.853032 97.057422)">40</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m6caa22bf4d" x="122.333183" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="122.333183" y="97.057422" transform="rotate(-0 122.333183 97.057422)">60</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m6caa22bf4d" x="165.813333" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="165.813333" y="97.057422" transform="rotate(-0 165.813333 97.057422)">80</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_5">
-      <defs>
-       <path id="m93d126d1b4" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m93d126d1b4" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m93d126d1b4" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.335114 79.2
-L 43.335114 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335114 79.2
-L 56.426024 79.2
-L 56.426024 56.342857
-L 43.335114 56.342857
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426024 79.2
-L 69.516934 79.2
-L 69.516934 79.2
-L 56.426024 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516934 79.2
-L 82.607836 79.2
-L 82.607836 79.2
-L 69.516934 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607836 79.2
-L 95.698754 79.2
-L 95.698754 79.2
-L 82.607836 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.698754 79.2
-L 108.789656 79.2
-L 108.789656 79.2
-L 95.698754 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789656 79.2
-L 121.880566 79.2
-L 121.880566 79.2
-L 108.789656 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880566 79.2
-L 134.971476 79.2
-L 134.971476 79.2
-L 121.880566 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971476 79.2
-L 148.062377 79.2
-L 148.062377 79.2
-L 134.971476 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062377 79.2
-L 161.153295 79.2
-L 161.153295 56.342857
-L 148.062377 56.342857
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p16944db9fc">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
 
     </div>
 </div>
@@ -19642,22 +13826,22 @@ L 167.69875 79.2
 
 
                 <dt>Mean ± Std</dt>
-                <dd>-0.00859 ±
-                    0.125
+                <dd>0.123 ±
+                    0.148
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
-                <dd>0.0332 ±
-                    0.234
+                <dd>0.101 ±
+                    0.0488
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">-0.147</span> |
-                    <span class="max-value">0.109</span>
+                    <span class="min-value">-0.0715</span> |
+                    <span class="max-value">0.341</span>
 
                 </dd>
 
@@ -19669,217 +13853,6 @@ L 167.69875 79.2
 
 
 
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.97em" viewBox="0 0 174.89875 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:21.202917</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-L 167.69875 7.95014
-L 23.69875 7.95014
-L 23.69875 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m8fb9cd643b" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m8fb9cd643b" x="54.373486" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="54.373486" y="97.807561" transform="rotate(-0 54.373486 97.807561)">−0.1</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m8fb9cd643b" x="105.584052" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="105.584052" y="97.807561" transform="rotate(-0 105.584052 97.807561)">0.0</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m8fb9cd643b" x="156.794619" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="156.794619" y="97.807561" transform="rotate(-0 156.794619 97.807561)">0.1</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m297d8abf8b" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m297d8abf8b" x="23.69875" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="84.12885" transform="rotate(-0 14.19875 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m297d8abf8b" x="23.69875" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="49.843136" transform="rotate(-0 14.19875 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m297d8abf8b" x="23.69875" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="15.557422" transform="rotate(-0 14.19875 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.95014
-L 43.335113 79.95014
-L 43.335113 11.378711
-L 30.244205 11.378711
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335113 79.95014
-L 56.426021 79.95014
-L 56.426021 79.95014
-L 43.335113 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426021 79.95014
-L 69.516933 79.95014
-L 69.516933 79.95014
-L 56.426021 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516933 79.95014
-L 82.607842 79.95014
-L 82.607842 79.95014
-L 69.516933 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607842 79.95014
-L 95.69875 79.95014
-L 95.69875 79.95014
-L 82.607842 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.95014
-L 108.789662 79.95014
-L 108.789662 79.95014
-L 95.69875 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789662 79.95014
-L 121.880567 79.95014
-L 121.880567 79.95014
-L 108.789662 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880567 79.95014
-L 134.971479 79.95014
-L 134.971479 45.664425
-L 121.880567 45.664425
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971479 79.95014
-L 148.062391 79.95014
-L 148.062391 79.95014
-L 134.971479 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062391 79.95014
-L 161.153295 79.95014
-L 161.153295 11.378711
-L 148.062391 11.378711
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.95014
-L 23.69875 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p66455c03b1">
-   <rect x="23.69875" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
 
     </div>
 </div>
@@ -20455,19 +14428,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="28.097265475039727" data-numeric>
-                        28.1</td>
-                    <td data-value="3.147590199940265" data-numeric>
-                        3.15</td>
+                    <td data-value="29.396447922249557" data-numeric>
+                        29.4</td>
+                    <td data-value="2.6623619524991535" data-numeric>
+                        2.66</td>
 
 
 
-                    <td data-value="25.492572702652097" data-numeric>
-                        25.5</td>
-                    <td data-value="27.084197760187674" data-numeric>
-                        27.1</td>
-                    <td data-value="33.30189860939864" data-numeric>
-                        33.3</td>
+                    <td data-value="27.194101201487047" data-numeric>
+                        27.2</td>
+                    <td data-value="28.56993958783205" data-numeric>
+                        28.6</td>
+                    <td data-value="33.64318044788382" data-numeric>
+                        33.6</td>
 
 
                 </tr>
@@ -20490,19 +14463,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="33.239810015657724" data-numeric>
-                        33.2</td>
-                    <td data-value="25.23388152871307" data-numeric>
-                        25.2</td>
+                    <td data-value="30.687930659827288" data-numeric>
+                        30.7</td>
+                    <td data-value="20.158860995254226" data-numeric>
+                        20.2</td>
 
 
 
-                    <td data-value="17.64091115963792" data-numeric>
-                        17.6</td>
-                    <td data-value="21.682171986552035" data-numeric>
-                        21.7</td>
-                    <td data-value="77.8564741997385" data-numeric>
-                        77.9</td>
+                    <td data-value="11.392541070529496" data-numeric>
+                        11.4</td>
+                    <td data-value="25.66539235230859" data-numeric>
+                        25.7</td>
+                    <td data-value="64.31491565031243" data-numeric>
+                        64.3</td>
 
 
                 </tr>
@@ -20525,19 +14498,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="-0.008585846419441174" data-numeric>
-                        -0.00859</td>
-                    <td data-value="0.12472810903341552" data-numeric>
-                        0.125</td>
+                    <td data-value="0.12302497754711135" data-numeric>
+                        0.123</td>
+                    <td data-value="0.14764848617425616" data-numeric>
+                        0.148</td>
 
 
 
-                    <td data-value="-0.1471177841281596" data-numeric>
-                        -0.147</td>
-                    <td data-value="0.03322055224639508" data-numeric>
-                        0.0332</td>
-                    <td data-value="0.10851128274058405" data-numeric>
-                        0.109</td>
+                    <td data-value="-0.07151106178834771" data-numeric>
+                        -0.0715</td>
+                    <td data-value="0.10123470918005671" data-numeric>
+                        0.101</td>
+                    <td data-value="0.3414040170311077" data-numeric>
+                        0.341</td>
 
 
                 </tr>
@@ -20562,2625 +14535,6 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 </div>
 
-<div class="tab-panel" id="column-summaries-panel" data-hidden
-     data-test="summaries-panel">
-
-
-<article class="wrapper margin-t-s flow" data-show-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
-    data-hide-on="EMPTY_COLUMN_FILTER_SELECTED" >
-    <div class="flex flex-wrap">
-        <div class="box">
-            <pre id="selected-columns-display" data-manager="SelectedColumnsDisplay"></pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="selected-columns-display">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-        </div>
-    <div class="flex flex-wrap toggletip-wrapper column-selection-buttons">
-        <div class="toggletip" data-manager="Toggletip">
-            <button type="button"><span>i</span></button>
-            <div class="toggletip-info box-shadow">
-                To construct a list of column names that you can easily copy-paste
-                (in the box), select some columns using the checkboxes next
-                to the column names or the "Select all" button.
-            </div>
-        </div>
-        <button type="button" data-test="select-all-columns" data-manager="SelectAllVisibleColumns">Select all</button>
-        <button type="button" data-test="deselect-all-columns" data-manager="DeselectAllColumns">Deselect all</button>
-    </div>
-    </div>
-
-    <div class="horizontal-scroll padding-b-s">
-    <div class="column-summary-group">
-
-
-
-
-<div class="card column-summary" id="col_0"
-    data-name-repr="&#39;LATITUDE&#39;"
-    data-column-name="LATITUDE"
-    data-column-idx="0"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">LATITUDE</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    2 (40.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>25.3 ±
-                    0.0427
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>25.3 ±
-                    0.0780
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">25.3</span> |
-                    <span class="max-value">25.3</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.91em" viewBox="0 0 174.89875 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:20.869684</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m1b5916aad4" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m1b5916aad4" x="63.811607" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="63.811607" y="97.057422" transform="rotate(-0 63.811607 97.057422)">25.275</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m1b5916aad4" x="105.769099" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="105.769099" y="97.057422" transform="rotate(-0 105.769099 97.057422)">25.300</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m1b5916aad4" x="147.726591" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="147.726591" y="97.057422" transform="rotate(-0 147.726591 97.057422)">25.325</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="mb8795feea8" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mb8795feea8" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#mb8795feea8" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.333513 79.2
-L 43.333513 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.333513 79.2
-L 56.426023 79.2
-L 56.426023 79.2
-L 43.333513 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426023 79.2
-L 69.518532 79.2
-L 69.518532 79.2
-L 56.426023 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.518532 79.2
-L 82.607841 79.2
-L 82.607841 79.2
-L 69.518532 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607841 79.2
-L 95.697149 79.2
-L 95.697149 79.2
-L 82.607841 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.697149 79.2
-L 108.789659 79.2
-L 108.789659 79.2
-L 95.697149 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789659 79.2
-L 121.882169 79.2
-L 121.882169 79.2
-L 108.789659 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.882169 79.2
-L 134.971477 79.2
-L 134.971477 79.2
-L 121.882169 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971477 79.2
-L 148.060786 79.2
-L 148.060786 79.2
-L 134.971477 79.2
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.060786 79.2
-L 161.153295 79.2
-L 161.153295 33.485714
-L 148.060786 33.485714
-z
-" clip-path="url(#p6ba2e7bb4d)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p6ba2e7bb4d">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_1"
-    data-name-repr="&#39;LONGITUDE&#39;"
-    data-column-name="LONGITUDE"
-    data-column-idx="1"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">LONGITUDE</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    2 (40.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>55.4 ±
-                    0.0838
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>55.4 ±
-                    0.153
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">55.4</span> |
-                    <span class="max-value">55.5</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.91em" viewBox="0 0 174.89875 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:20.916174</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mfa4e041d3b" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mfa4e041d3b" x="61.047726" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="61.047726" y="97.057422" transform="rotate(-0 61.047726 97.057422)">55.40</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mfa4e041d3b" x="103.828509" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="103.828509" y="97.057422" transform="rotate(-0 103.828509 97.057422)">55.45</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mfa4e041d3b" x="146.609292" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="146.609292" y="97.057422" transform="rotate(-0 146.609292 97.057422)">55.50</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m00b3f61058" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m00b3f61058" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m00b3f61058" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.335766 79.2
-L 43.335766 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335766 79.2
-L 56.427328 79.2
-L 56.427328 79.2
-L 43.335766 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.427328 79.2
-L 69.515626 79.2
-L 69.515626 79.2
-L 56.427328 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.515626 79.2
-L 82.607188 79.2
-L 82.607188 79.2
-L 69.515626 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607188 79.2
-L 95.69875 79.2
-L 95.69875 79.2
-L 82.607188 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.2
-L 108.790312 79.2
-L 108.790312 79.2
-L 95.69875 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.790312 79.2
-L 121.881874 79.2
-L 121.881874 79.2
-L 108.790312 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.881874 79.2
-L 134.970172 79.2
-L 134.970172 79.2
-L 121.881874 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.970172 79.2
-L 148.061734 79.2
-L 148.061734 79.2
-L 134.970172 79.2
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.061734 79.2
-L 161.153295 79.2
-L 161.153295 33.485714
-L 148.061734 33.485714
-z
-" clip-path="url(#p503825c3d1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p503825c3d1">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_2"
-    data-name-repr="&#39;YEAR/MONTH/DAY&#39;"
-    data-column-name="YEAR/MONTH/DAY"
-    data-column-idx="2"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">YEAR/MONTH/DAY</span>
-        </h3>
-        <span>DateTime64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">2008-02-17T00:00:00</span> |
-                    <span class="max-value">2008-11-25T00:00:00</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.51em" height="11.41em" viewBox="0 0 186.097305 136.927715" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:20.987012</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 34.897305 79.95014
-L 178.897305 79.95014
-L 178.897305 7.95014
-L 34.897305 7.95014
-L 34.897305 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m35c3706f47" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m35c3706f47" x="47.477576" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(13.10959 127.85913) rotate(-45)">2008-03</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m35c3706f47" x="61.868291" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(27.500305 127.85913) rotate(-45)">2008-04</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m35c3706f47" x="75.79479" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(41.426804 127.85913) rotate(-45)">2008-05</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m35c3706f47" x="90.185506" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(55.81752 127.85913) rotate(-45)">2008-06</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m35c3706f47" x="104.112005" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(69.744019 127.85913) rotate(-45)">2008-07</text>
-     </g>
-    </g>
-    <g id="xtick_6">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m35c3706f47" x="118.502721" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(84.134735 127.85913) rotate(-45)">2008-08</text>
-     </g>
-    </g>
-    <g id="xtick_7">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m35c3706f47" x="132.893436" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(98.52545 127.85913) rotate(-45)">2008-09</text>
-     </g>
-    </g>
-    <g id="xtick_8">
-     <g id="line2d_8">
-      <g>
-       <use xlink:href="#m35c3706f47" x="146.819935" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_8">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(112.451949 127.85913) rotate(-45)">2008-10</text>
-     </g>
-    </g>
-    <g id="xtick_9">
-     <g id="line2d_9">
-      <g>
-       <use xlink:href="#m35c3706f47" x="161.210651" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_9">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(126.842665 127.85913) rotate(-45)">2008-11</text>
-     </g>
-    </g>
-    <g id="xtick_10">
-     <g id="line2d_10">
-      <g>
-       <use xlink:href="#m35c3706f47" x="175.13715" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_10">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(140.769164 127.85913) rotate(-45)">2008-12</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_11">
-      <defs>
-       <path id="mad3035bbd0" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mad3035bbd0" x="34.897305" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_11">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="25.397305" y="84.12885" transform="rotate(-0 25.397305 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_12">
-      <g>
-       <use xlink:href="#mad3035bbd0" x="34.897305" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_12">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="25.397305" y="49.843136" transform="rotate(-0 25.397305 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_13">
-      <g>
-       <use xlink:href="#mad3035bbd0" x="34.897305" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_13">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="25.397305" y="15.557422" transform="rotate(-0 25.397305 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 41.442759 79.95014
-L 54.533668 79.95014
-L 54.533668 45.664425
-L 41.442759 45.664425
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 54.533668 79.95014
-L 67.624578 79.95014
-L 67.624578 45.664425
-L 54.533668 45.664425
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 67.624578 79.95014
-L 80.715487 79.95014
-L 80.715487 79.95014
-L 67.624578 79.95014
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 80.715487 79.95014
-L 93.806396 79.95014
-L 93.806396 79.95014
-L 80.715487 79.95014
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 93.806396 79.95014
-L 106.897305 79.95014
-L 106.897305 79.95014
-L 93.806396 79.95014
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 106.897305 79.95014
-L 119.988214 79.95014
-L 119.988214 79.95014
-L 106.897305 79.95014
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 119.988214 79.95014
-L 133.079123 79.95014
-L 133.079123 45.664425
-L 119.988214 45.664425
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 133.079123 79.95014
-L 146.170032 79.95014
-L 146.170032 79.95014
-L 133.079123 79.95014
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 146.170032 79.95014
-L 159.260941 79.95014
-L 159.260941 79.95014
-L 146.170032 79.95014
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 159.260941 79.95014
-L 172.35185 79.95014
-L 172.35185 11.378711
-L 159.260941 11.378711
-z
-" clip-path="url(#p9207043324)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 34.897305 79.95014
-L 34.897305 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 34.897305 79.95014
-L 178.897305 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p9207043324">
-   <rect x="34.897305" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_3"
-    data-name-repr="&#39;TMAX&#39;"
-    data-column-name="TMAX"
-    data-column-idx="3"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">TMAX</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>32.3 ±
-                    6.47
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>29.7 ±
-                    4.20
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">26.4</span> |
-                    <span class="max-value">43.0</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.97em" viewBox="0 0 174.89875 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:21.046109</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-L 167.69875 7.95014
-L 23.69875 7.95014
-L 23.69875 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m93ad6b3b8b" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m93ad6b3b8b" x="58.63413" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="58.63413" y="97.807561" transform="rotate(-0 58.63413 97.807561)">30</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m93ad6b3b8b" x="98.064578" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="98.064578" y="97.807561" transform="rotate(-0 98.064578 97.807561)">35</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m93ad6b3b8b" x="137.495027" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="137.495027" y="97.807561" transform="rotate(-0 137.495027 97.807561)">40</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m5ea0d822da" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m5ea0d822da" x="23.69875" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="84.12885" transform="rotate(-0 14.19875 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m5ea0d822da" x="23.69875" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="49.843136" transform="rotate(-0 14.19875 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m5ea0d822da" x="23.69875" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="15.557422" transform="rotate(-0 14.19875 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.95014
-L 43.335112 79.95014
-L 43.335112 45.664425
-L 30.244205 45.664425
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335112 79.95014
-L 56.42602 79.95014
-L 56.42602 11.378711
-L 43.335112 11.378711
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.42602 79.95014
-L 69.516942 79.95014
-L 69.516942 79.95014
-L 56.42602 79.95014
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516942 79.95014
-L 82.60785 79.95014
-L 82.60785 79.95014
-L 69.516942 79.95014
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.60785 79.95014
-L 95.698758 79.95014
-L 95.698758 45.664425
-L 82.60785 45.664425
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.698758 79.95014
-L 108.789665 79.95014
-L 108.789665 79.95014
-L 95.698758 79.95014
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789665 79.95014
-L 121.880573 79.95014
-L 121.880573 79.95014
-L 108.789665 79.95014
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880573 79.95014
-L 134.97148 79.95014
-L 134.97148 79.95014
-L 121.880573 79.95014
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.97148 79.95014
-L 148.062388 79.95014
-L 148.062388 79.95014
-L 134.97148 79.95014
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062388 79.95014
-L 161.153295 79.95014
-L 161.153295 45.664425
-L 148.062388 45.664425
-z
-" clip-path="url(#pd829255c0a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.95014
-L 23.69875 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="pd829255c0a">
-   <rect x="23.69875" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_4"
-    data-name-repr="&#39;PRCP&#39;"
-    data-column-name="PRCP"
-    data-column-idx="4"
-
-
-    data-manager="FilterableColumn "
-     data-constant-column
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">PRCP</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="warning">3 (60.0%)</dd>
-
-
-
-            </dl>
-        </div>
-
-
-
-        <div class="margin-v-m">
-            <strong>Constant value:</strong>
-            <div class="copybutton-grid">
-                <div class="box">
-                    <pre id="col_4-constant-value"
-                        data-copy-text="nan">nan</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4-constant-value">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                </div>
-            </div>
-        </div>
-
-
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_5"
-    data-name-repr="&#39;SNOW&#39;"
-    data-column-name="SNOW"
-    data-column-idx="5"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">SNOW</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="critical">5 (100.0%)</dd>
-
-
-
-
-
-
-
-
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_6"
-    data-name-repr="&#39;TMAX_predicted&#39;"
-    data-column-name="TMAX_predicted"
-    data-column-idx="6"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">TMAX_predicted</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>28.1 ±
-                    3.15
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>27.1 ±
-                    2.63
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">25.5</span> |
-                    <span class="max-value">33.3</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.97em" viewBox="0 0 174.89875 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:21.102637</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-L 167.69875 7.95014
-L 23.69875 7.95014
-L 23.69875 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mb9bd93f0ef" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mb9bd93f0ef" x="63.895056" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="63.895056" y="97.807561" transform="rotate(-0 63.895056 97.807561)">27.5</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mb9bd93f0ef" x="105.80299" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="105.80299" y="97.807561" transform="rotate(-0 105.80299 97.807561)">30.0</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mb9bd93f0ef" x="147.710924" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="147.710924" y="97.807561" transform="rotate(-0 147.710924 97.807561)">32.5</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="mcb72af4502" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mcb72af4502" x="23.69875" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="84.12885" transform="rotate(-0 14.19875 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#mcb72af4502" x="23.69875" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="49.843136" transform="rotate(-0 14.19875 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#mcb72af4502" x="23.69875" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="15.557422" transform="rotate(-0 14.19875 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.95014
-L 43.335126 79.95014
-L 43.335126 11.378711
-L 30.244205 11.378711
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335126 79.95014
-L 56.426016 79.95014
-L 56.426016 79.95014
-L 43.335126 79.95014
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426016 79.95014
-L 69.516938 79.95014
-L 69.516938 45.664425
-L 56.426016 45.664425
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516938 79.95014
-L 82.607828 79.95014
-L 82.607828 79.95014
-L 69.516938 79.95014
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607828 79.95014
-L 95.69875 79.95014
-L 95.69875 45.664425
-L 82.607828 45.664425
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.95014
-L 108.789672 79.95014
-L 108.789672 79.95014
-L 95.69875 79.95014
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789672 79.95014
-L 121.880562 79.95014
-L 121.880562 79.95014
-L 108.789672 79.95014
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880562 79.95014
-L 134.971484 79.95014
-L 134.971484 79.95014
-L 121.880562 79.95014
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971484 79.95014
-L 148.062374 79.95014
-L 148.062374 79.95014
-L 134.971484 79.95014
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062374 79.95014
-L 161.153295 79.95014
-L 161.153295 45.664425
-L 148.062374 45.664425
-z
-" clip-path="url(#p2461f98721)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.95014
-L 23.69875 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p2461f98721">
-   <rect x="23.69875" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_7"
-    data-name-repr="&#39;PRCP_predicted&#39;"
-    data-column-name="PRCP_predicted"
-    data-column-idx="7"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">PRCP_predicted</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>33.2 ±
-                    25.2
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>21.7 ±
-                    7.35
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">17.6</span> |
-                    <span class="max-value">77.9</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.00em" height="8.91em" viewBox="0 0 180.012083 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:21.152406</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-L 167.69875 7.2
-L 23.69875 7.2
-L 23.69875 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m6caa22bf4d" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m6caa22bf4d" x="35.372882" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="35.372882" y="97.057422" transform="rotate(-0 35.372882 97.057422)">20</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m6caa22bf4d" x="78.853032" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="78.853032" y="97.057422" transform="rotate(-0 78.853032 97.057422)">40</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m6caa22bf4d" x="122.333183" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="122.333183" y="97.057422" transform="rotate(-0 122.333183 97.057422)">60</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m6caa22bf4d" x="165.813333" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="165.813333" y="97.057422" transform="rotate(-0 165.813333 97.057422)">80</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_5">
-      <defs>
-       <path id="m93d126d1b4" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m93d126d1b4" x="23.69875" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="83.378711" transform="rotate(-0 14.19875 83.378711)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m93d126d1b4" x="23.69875" y="33.485714" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="37.664425" transform="rotate(-0 14.19875 37.664425)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.2
-L 43.335114 79.2
-L 43.335114 10.628571
-L 30.244205 10.628571
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335114 79.2
-L 56.426024 79.2
-L 56.426024 56.342857
-L 43.335114 56.342857
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426024 79.2
-L 69.516934 79.2
-L 69.516934 79.2
-L 56.426024 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516934 79.2
-L 82.607836 79.2
-L 82.607836 79.2
-L 69.516934 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607836 79.2
-L 95.698754 79.2
-L 95.698754 79.2
-L 82.607836 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.698754 79.2
-L 108.789656 79.2
-L 108.789656 79.2
-L 95.698754 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789656 79.2
-L 121.880566 79.2
-L 121.880566 79.2
-L 108.789656 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880566 79.2
-L 134.971476 79.2
-L 134.971476 79.2
-L 121.880566 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971476 79.2
-L 148.062377 79.2
-L 148.062377 79.2
-L 134.971476 79.2
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062377 79.2
-L 161.153295 79.2
-L 161.153295 56.342857
-L 148.062377 56.342857
-z
-" clip-path="url(#p16944db9fc)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.2
-L 23.69875 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.2
-L 167.69875 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p16944db9fc">
-   <rect x="23.69875" y="7.2" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_8"
-    data-name-repr="&#39;SNOW_predicted&#39;"
-    data-column-name="SNOW_predicted"
-    data-column-idx="8"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">SNOW_predicted</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>-0.00859 ±
-                    0.125
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>0.0332 ±
-                    0.234
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">-0.147</span> |
-                    <span class="max-value">0.109</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.97em" viewBox="0 0 174.89875 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:21.202917</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-L 167.69875 7.95014
-L 23.69875 7.95014
-L 23.69875 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m8fb9cd643b" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m8fb9cd643b" x="54.373486" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="54.373486" y="97.807561" transform="rotate(-0 54.373486 97.807561)">−0.1</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m8fb9cd643b" x="105.584052" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="105.584052" y="97.807561" transform="rotate(-0 105.584052 97.807561)">0.0</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m8fb9cd643b" x="156.794619" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="156.794619" y="97.807561" transform="rotate(-0 156.794619 97.807561)">0.1</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m297d8abf8b" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m297d8abf8b" x="23.69875" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="84.12885" transform="rotate(-0 14.19875 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m297d8abf8b" x="23.69875" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="49.843136" transform="rotate(-0 14.19875 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m297d8abf8b" x="23.69875" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="15.557422" transform="rotate(-0 14.19875 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.95014
-L 43.335113 79.95014
-L 43.335113 11.378711
-L 30.244205 11.378711
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335113 79.95014
-L 56.426021 79.95014
-L 56.426021 79.95014
-L 43.335113 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426021 79.95014
-L 69.516933 79.95014
-L 69.516933 79.95014
-L 56.426021 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516933 79.95014
-L 82.607842 79.95014
-L 82.607842 79.95014
-L 69.516933 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607842 79.95014
-L 95.69875 79.95014
-L 95.69875 79.95014
-L 82.607842 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.95014
-L 108.789662 79.95014
-L 108.789662 79.95014
-L 95.69875 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789662 79.95014
-L 121.880567 79.95014
-L 121.880567 79.95014
-L 108.789662 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880567 79.95014
-L 134.971479 79.95014
-L 134.971479 45.664425
-L 121.880567 45.664425
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971479 79.95014
-L 148.062391 79.95014
-L 148.062391 79.95014
-L 134.971479 79.95014
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062391 79.95014
-L 161.153295 79.95014
-L 161.153295 11.378711
-L 148.062391 11.378711
-z
-" clip-path="url(#p66455c03b1)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.95014
-L 23.69875 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p66455c03b1">
-   <rect x="23.69875" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-    </div>
-    </div>
-
-</article>
-
-<div data-hidden
-     data-hide-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
-     data-show-on="EMPTY_COLUMN_FILTER_SELECTED"
-     class="text wrapper">
-<p>
-No columns match the selected filter: <strong data-manager="ColumnFilterName"></strong>. You can change the column filter in the dropdown menu above.
-</p>
-<p>
-    <button type="button"
-            data-manager="ResetColumnFilter"
-            data-test="show-all-columns-button">Show all columns</button>
-</p>
-</div>
-</div>
-<div class="tab-panel" id="column-associations-panel" data-hidden
-    data-test="associations-panel">
-    <article class="margin-t-s flex-reverse flex-end wrapper gap-l">
-
-
-    <div class="horizontal-scroll vertical-scroll-table-wrapper">
-    <table class="pure-table pure-table-bordered sticky-header-table">
-        <thead>
-            <tr>
-                <th scope="col">Column 1</th>
-                <th scope="col">Column 2</th>
-                <th scope="col"><a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Cramér's V</a></th>
-                <th scope="col"><a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson's Correlation</a></th>
-            </tr>
-        </thead>
-        <tbody>
-
-            <tr>
-                <td class="elided">PRCP_predicted</td>
-                <td class="elided">SNOW_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.684</td>
-            </tr>
-
-            <tr>
-                <td class="elided">TMAX_predicted</td>
-                <td class="elided">SNOW_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.523</td>
-            </tr>
-
-            <tr>
-                <td class="elided">TMAX_predicted</td>
-                <td class="elided">PRCP_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>0.925</td>
-            </tr>
-
-            <tr>
-                <td class="elided">PRCP</td>
-                <td class="elided">PRCP_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">LONGITUDE</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>1.00</td>
-            </tr>
-
-            <tr>
-                <td class="elided">PRCP</td>
-                <td class="elided">SNOW_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">TMAX</td>
-                <td class="elided">SNOW_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.271</td>
-            </tr>
-
-            <tr>
-                <td class="elided">PRCP</td>
-                <td class="elided">TMAX_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">TMAX</td>
-                <td class="elided">PRCP_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>0.877</td>
-            </tr>
-
-            <tr>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td class="elided">SNOW_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">TMAX</td>
-                <td class="elided">PRCP</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">TMAX</td>
-                <td class="elided">TMAX_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>0.934</td>
-            </tr>
-
-            <tr>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td class="elided">PRCP</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td class="elided">TMAX_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td class="elided">PRCP_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">TMAX_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.230</td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">PRCP_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.507</td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">SNOW_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>0.819</td>
-            </tr>
-
-            <tr>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">PRCP_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.507</td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">TMAX_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.230</td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.113</td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">SNOW_predicted</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>0.819</td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.113</td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">PRCP</td>
-                <td
-                    >
-                    0.667
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">PRCP</td>
-                <td
-                    >
-                    0.667
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">SNOW</td>
-                <td class="elided">SNOW_predicted</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">YEAR/MONTH/DAY</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">SNOW</td>
-                <td class="elided">PRCP_predicted</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">PRCP</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">SNOW</td>
-                <td class="elided">TMAX_predicted</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">TMAX</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LONGITUDE</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">LATITUDE</td>
-                <td class="elided">SNOW</td>
-                <td
-                    >
-                    0.00
-                </td>
-                <td></td>
-            </tr>
-
-        </tbody>
-    </table>
-    </div>
-
-    <div class="text shrinkable-text">
-        The table below shows the strength of association between the most similar columns in the dataframe.
-        <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Cramér's V</a> statistic is a number between 0 and 1.
-        When it is close to 1 the columns are strongly associated — they contain similar information.
-        In this case, one of them may be redundant and for some models (such as linear models) it might be beneficial to remove it.
-    </div>
-
-
-
-</article>
-</div>
-
 
 
 <div class="report-bottom-border"></div>
@@ -23189,7 +14543,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_7efdd39e">
+    <skrub-table-report class="report" id="report_5fb2bb16">
     </skrub-table-report>
 
     <script type="module">
@@ -24293,7 +15647,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_7efdd39e-wrapper-fallback">
+<div id="report_5fb2bb16-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -24304,8 +15658,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_7efdd39e-wrapper").removeAttribute("hidden");
- document.getElementById("report_7efdd39e-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_5fb2bb16-wrapper").removeAttribute("hidden");
+ document.getElementById("report_5fb2bb16-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -24403,8 +15757,8 @@ join.head()
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_ddc70042-wrapper" hidden>
-    <template id="report_ddc70042-template">
+<div id="report_0ba4a8a0-wrapper" hidden>
+    <template id="report_0ba4a8a0-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -25694,8 +17048,8 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
         </style>
         <div id="report"
 
-
-              >
+             data-test-plots-skipped
+             data-test-associations-skipped >
 
 
 
@@ -25720,30 +17074,10 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
                     title="Summary statistics for all columns.">Stats</button>
             </div>
 
-            <div>
-                <button type="button" data-target-panel-id="column-summaries-panel"
-                    data-role="tab"  data-test="summaries-tab" class="tab"
-                    title="Plots showing the distributions of all columns">Distributions</button>
-            </div>
-            <div>
-                <button type="button" data-target-panel-id="column-associations-panel"
-                    data-role="tab"  class="tab"
-                    data-has-warning  data-test="associations-tab"
-                    title="Show which columns are similar (have a strong association).
-NOTE: some columns have very strong associations and may be redundant.">
-                    <div class="warning-sign">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
-  <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
-</svg>
-                    </div>
-                    Associations</button>
-            </div>
-
         </div>
         <div class="column-filter" data-manager="InvisibleInAssociationsTabPanel">
     <select data-manager="ColumnFilter"
-            data-all-filters-base64="eyJhbGwoKSI6IHsiZGlzcGxheV9uYW1lIjogIkFsbCBjb2x1bW5zIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgNywgOF19LCAiaGlnaF9hc3NvY2lhdGlvbiI6IHsiY29sdW1ucyI6IFswLCAxLCAyLCAzLCA0LCA1LCA2LCA3LCA4XSwgImRpc3BsYXlfbmFtZSI6ICJIaWdoIHNpbWlsYXJpdHkifSwgImhhc19udWxscygwLjApIjogeyJkaXNwbGF5X25hbWUiOiAiV2l0aCBudWxscyIsICJjb2x1bW5zIjogW119LCAiKH5oYXNfbnVsbHMoMC4wKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJXaXRob3V0IG51bGxzIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgNywgOF19LCAibnVtZXJpYygpIjogeyJkaXNwbGF5X25hbWUiOiAiTnVtZXJpYyIsICJjb2x1bW5zIjogWzIsIDYsIDcsIDhdfSwgIih+bnVtZXJpYygpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1udW1lcmljIiwgImNvbHVtbnMiOiBbMCwgMSwgMywgNCwgNV19LCAic3RyaW5nKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJTdHJpbmciLCAiY29sdW1ucyI6IFsxLCAzLCA0LCA1XX0sICIofnN0cmluZygpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1zdHJpbmciLCAiY29sdW1ucyI6IFswLCAyLCA2LCA3LCA4XX0sICJjYXRlZ29yaWNhbCgpIjogeyJkaXNwbGF5X25hbWUiOiAiQ2F0ZWdvcmljYWwiLCAiY29sdW1ucyI6IFtdfSwgIih+Y2F0ZWdvcmljYWwoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tY2F0ZWdvcmljYWwiLCAiY29sdW1ucyI6IFswLCAxLCAyLCAzLCA0LCA1LCA2LCA3LCA4XX0sICJhbnlfZGF0ZSgpIjogeyJkaXNwbGF5X25hbWUiOiAiRGF0ZXRpbWUiLCAiY29sdW1ucyI6IFswXX0sICIofmFueV9kYXRlKCkpIjogeyJkaXNwbGF5X25hbWUiOiAiTm9uLWRhdGV0aW1lIiwgImNvbHVtbnMiOiBbMSwgMiwgMywgNCwgNSwgNiwgNywgOF19fQ=="
+            data-all-filters-base64="eyJhbGwoKSI6IHsiZGlzcGxheV9uYW1lIjogIkFsbCBjb2x1bW5zIiwgImNvbHVtbnMiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgNywgOF19LCAiaGFzX251bGxzKDAuMCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJXaXRoIG51bGxzIiwgImNvbHVtbnMiOiBbXX0sICIofmhhc19udWxscygwLjApKSI6IHsiZGlzcGxheV9uYW1lIjogIldpdGhvdXQgbnVsbHMiLCAiY29sdW1ucyI6IFswLCAxLCAyLCAzLCA0LCA1LCA2LCA3LCA4XX0sICJudW1lcmljKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOdW1lcmljIiwgImNvbHVtbnMiOiBbMiwgNiwgNywgOF19LCAiKH5udW1lcmljKCkpIjogeyJkaXNwbGF5X25hbWUiOiAiTm9uLW51bWVyaWMiLCAiY29sdW1ucyI6IFswLCAxLCAzLCA0LCA1XX0sICJzdHJpbmcoKSI6IHsiZGlzcGxheV9uYW1lIjogIlN0cmluZyIsICJjb2x1bW5zIjogWzEsIDMsIDQsIDVdfSwgIih+c3RyaW5nKCkpIjogeyJkaXNwbGF5X25hbWUiOiAiTm9uLXN0cmluZyIsICJjb2x1bW5zIjogWzAsIDIsIDYsIDcsIDhdfSwgImNhdGVnb3JpY2FsKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJDYXRlZ29yaWNhbCIsICJjb2x1bW5zIjogW119LCAiKH5jYXRlZ29yaWNhbCgpKSI6IHsiZGlzcGxheV9uYW1lIjogIk5vbi1jYXRlZ29yaWNhbCIsICJjb2x1bW5zIjogWzAsIDEsIDIsIDMsIDQsIDUsIDYsIDcsIDhdfSwgImFueV9kYXRlKCkiOiB7ImRpc3BsYXlfbmFtZSI6ICJEYXRldGltZSIsICJjb2x1bW5zIjogWzBdfSwgIih+YW55X2RhdGUoKSkiOiB7ImRpc3BsYXlfbmFtZSI6ICJOb24tZGF0ZXRpbWUiLCAiY29sdW1ucyI6IFsxLCAyLCAzLCA0LCA1LCA2LCA3LCA4XX19"
             data-test="column-filter-select"
             autocomplete="off">
         <optgroup label="Select columns to show:">
@@ -25751,9 +17085,6 @@ NOTE: some columns have very strong associations and may be redundant.">
 
         <option value="all()">
             All columns</option>
-
-        <option value="high_association">
-            High similarity</option>
 
         <option value="has_nulls(0.0)">
             With nulls</option>
@@ -25852,7 +17183,7 @@ NOTE: some columns have very strong associations and may be redundant.">
 
 
                 <th
-                id="0c0999f0"
+                id="652a108d"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -25882,7 +17213,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="722169a6"
+                id="532bb4e1"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -25916,7 +17247,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="404b8c38"
+                id="6070baf1"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -25950,7 +17281,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="c583f23e"
+                id="dba3841a"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -25984,7 +17315,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="349f3ea1"
+                id="23a071da"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -26018,7 +17349,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="220fa38c"
+                id="9ae451a8"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -26052,7 +17383,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="e524d67c"
+                id="37c1740e"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -26086,7 +17417,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="607670f0"
+                id="9fc5442a"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -26120,7 +17451,7 @@ data-spans_\_-1_\_6
 
 
                 <th
-                id="7e3c29ca"
+                id="c8b7c64a"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -26154,7 +17485,7 @@ data-spans_\_-1_\_7
 
 
                 <th
-                id="f090e16c"
+                id="3b8c116f"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -26202,7 +17533,7 @@ data-spans_\_-1_\_8
 
 
                 <th
-                id="86bc4660"
+                id="d2776a1b"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -26230,7 +17561,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="bfb6a26d"
+                id="c3d567d3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26260,7 +17591,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="6d5a237a"
+                id="b19692f9"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26290,7 +17621,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="953b751c"
+                id="bed9ad68"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26320,7 +17651,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="15e9020f"
+                id="1bf6a2cc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26350,7 +17681,7 @@ data-spans_\_0_\_3
 
 
                 <td
-                id="0d687d2c"
+                id="0f0d4002"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26380,7 +17711,7 @@ data-spans_\_0_\_4
 
 
                 <td
-                id="c1900e9c"
+                id="80b2d439"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26410,7 +17741,7 @@ data-spans_\_0_\_5
 
 
                 <td
-                id="830be3f2"
+                id="73b688c7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26440,7 +17771,7 @@ data-spans_\_0_\_6
 
 
                 <td
-                id="bba8aa91"
+                id="e55f0365"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26470,7 +17801,7 @@ data-spans_\_0_\_7
 
 
                 <td
-                id="ca0b170b"
+                id="7617a9ab"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26491,12 +17822,12 @@ data-spans_\_0_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="1.2070597951575148"
-                data-value-str="1.2070597951575148"
+                data-value-repr="0.865101892915402"
+                data-value-str="0.865101892915402"
 
                 data-column-idx="8"
 
-                >1.21</td>
+                >0.865</td>
 
             </tr>
 
@@ -26504,7 +17835,7 @@ data-spans_\_0_\_8
 
 
                 <th
-                id="14a8648f"
+                id="33a05c15"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -26532,7 +17863,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="f374051c"
+                id="2aae8798"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26562,7 +17893,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="8e62222a"
+                id="3cc0b6fb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26592,7 +17923,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="dae95d14"
+                id="ef2fc274"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26622,7 +17953,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="b1ca439a"
+                id="9c9997f4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26652,7 +17983,7 @@ data-spans_\_1_\_3
 
 
                 <td
-                id="52bcdf5c"
+                id="4e68dc6b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26682,7 +18013,7 @@ data-spans_\_1_\_4
 
 
                 <td
-                id="aad30b7d"
+                id="130a9573"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26712,7 +18043,7 @@ data-spans_\_1_\_5
 
 
                 <td
-                id="fac56e3b"
+                id="ea799ca2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26742,7 +18073,7 @@ data-spans_\_1_\_6
 
 
                 <td
-                id="142b052c"
+                id="004a9871"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26772,7 +18103,7 @@ data-spans_\_1_\_7
 
 
                 <td
-                id="d76eaffb"
+                id="f89953fa"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26793,8 +18124,8 @@ data-spans_\_1_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="11.052599860939388"
-                data-value-str="11.052599860939388"
+                data-value-repr="11.108470045613005"
+                data-value-str="11.108470045613005"
 
                 data-column-idx="8"
 
@@ -26806,7 +18137,7 @@ data-spans_\_1_\_8
 
 
                 <th
-                id="32ae0e8f"
+                id="f64761be"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -26834,7 +18165,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="0b47882c"
+                id="4d1a8d41"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26864,7 +18195,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="4ab21ec6"
+                id="45f066c6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26894,7 +18225,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="29a1f06c"
+                id="86c81f36"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26924,7 +18255,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="240cbbaf"
+                id="1b234bc1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26954,7 +18285,7 @@ data-spans_\_2_\_3
 
 
                 <td
-                id="ac903291"
+                id="a10620cd"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -26984,7 +18315,7 @@ data-spans_\_2_\_4
 
 
                 <td
-                id="2d600322"
+                id="f3234f1a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27014,7 +18345,7 @@ data-spans_\_2_\_5
 
 
                 <td
-                id="a2695b09"
+                id="32609f9c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27044,7 +18375,7 @@ data-spans_\_2_\_6
 
 
                 <td
-                id="a5963205"
+                id="4fedf298"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27074,7 +18405,7 @@ data-spans_\_2_\_7
 
 
                 <td
-                id="d2266c5e"
+                id="c7240b35"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27095,12 +18426,12 @@ data-spans_\_2_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="5.198846214714975"
-                data-value-str="5.198846214714975"
+                data-value-repr="4.44413808895352"
+                data-value-str="4.44413808895352"
 
                 data-column-idx="8"
 
-                >5.20</td>
+                >4.44</td>
 
             </tr>
 
@@ -27108,7 +18439,7 @@ data-spans_\_2_\_8
 
 
                 <th
-                id="43a9a26c"
+                id="38da50d4"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -27136,7 +18467,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="2b22ddc5"
+                id="9509c709"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27166,7 +18497,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="9ad7952c"
+                id="bce14fdb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27196,7 +18527,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="57dfd7a7"
+                id="8dc0f6ba"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27226,7 +18557,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="36dc3019"
+                id="efb65d91"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27256,7 +18587,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="b4b24523"
+                id="e936a2c2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27286,7 +18617,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="f6c3b461"
+                id="31bab756"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27316,7 +18647,7 @@ data-spans_\_3_\_5
 
 
                 <td
-                id="d738e6b3"
+                id="ee95fe3e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27346,7 +18677,7 @@ data-spans_\_3_\_6
 
 
                 <td
-                id="1f56fffb"
+                id="5becb0b4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27376,7 +18707,7 @@ data-spans_\_3_\_7
 
 
                 <td
-                id="67a1a447"
+                id="dfa51323"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27397,8 +18728,8 @@ data-spans_\_3_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="13.868258021338754"
-                data-value-str="13.868258021338754"
+                data-value-repr="13.949461592711398"
+                data-value-str="13.949461592711398"
 
                 data-column-idx="8"
 
@@ -27410,7 +18741,7 @@ data-spans_\_3_\_8
 
 
                 <th
-                id="948bae66"
+                id="9d161858"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -27438,7 +18769,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="711005ae"
+                id="f6ddb69c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27468,7 +18799,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="a441e20c"
+                id="fe83c90c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27498,7 +18829,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="605afd10"
+                id="a17ed430"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27528,7 +18859,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="b032f9be"
+                id="2ebf0d08"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27558,7 +18889,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="5192c643"
+                id="8c6f4c8a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27588,7 +18919,7 @@ data-spans_\_4_\_4
 
 
                 <td
-                id="2ac7608e"
+                id="f2829a7f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27618,7 +18949,7 @@ data-spans_\_4_\_5
 
 
                 <td
-                id="a8e5cc36"
+                id="3a74b11a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27648,7 +18979,7 @@ data-spans_\_4_\_6
 
 
                 <td
-                id="d73ed375"
+                id="71fba58e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27678,7 +19009,7 @@ data-spans_\_4_\_7
 
 
                 <td
-                id="f1a1c507"
+                id="092de13f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -27699,12 +19030,12 @@ data-spans_\_4_\_8
 
                 rowspan="1"
                 colspan="1"
-                data-value-repr="15.535554232188582"
-                data-value-str="15.535554232188582"
+                data-value-repr="18.233899047332372"
+                data-value-str="18.233899047332372"
 
                 data-column-idx="8"
 
-                >15.5</td>
+                >18.2</td>
 
             </tr>
 
@@ -27811,237 +19142,6 @@ data-spans_\_4_\_8
 
 
 
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="16.27em" height="12.47em" viewBox="0 0 195.210399 149.631662" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.046036</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 44.010399 79.95014
-L 188.010399 79.95014
-L 188.010399 7.95014
-L 44.010399 7.95014
-L 44.010399 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m9ad85d8f80" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m9ad85d8f80" x="60.181522" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(13.10959 140.563077) rotate(-45)">2008-02-01</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m9ad85d8f80" x="87.133394" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(40.061461 140.563077) rotate(-45)">2008-02-15</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m9ad85d8f80" x="116.010399" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(68.938467 140.563077) rotate(-45)">2008-03-01</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m9ad85d8f80" x="142.962271" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(95.890338 140.563077) rotate(-45)">2008-03-15</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m9ad85d8f80" x="175.689544" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(128.617611 140.563077) rotate(-45)">2008-04-01</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_6">
-      <defs>
-       <path id="m2d2759d23e" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m2d2759d23e" x="44.010399" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="34.510399" y="84.12885" transform="rotate(-0 34.510399 84.12885)">0.0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m2d2759d23e" x="44.010399" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="34.510399" y="49.843136" transform="rotate(-0 34.510399 49.843136)">0.5</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_8">
-      <g>
-       <use xlink:href="#m2d2759d23e" x="44.010399" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_8">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="34.510399" y="15.557422" transform="rotate(-0 34.510399 15.557422)">1.0</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 50.555854 79.95014
-L 63.646763 79.95014
-L 63.646763 11.378711
-L 50.555854 11.378711
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 63.646763 79.95014
-L 76.737672 79.95014
-L 76.737672 79.95014
-L 63.646763 79.95014
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 76.737672 79.95014
-L 89.828581 79.95014
-L 89.828581 79.95014
-L 76.737672 79.95014
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 89.828581 79.95014
-L 102.91949 79.95014
-L 102.91949 79.95014
-L 89.828581 79.95014
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 102.91949 79.95014
-L 116.010399 79.95014
-L 116.010399 11.378711
-L 102.91949 11.378711
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 116.010399 79.95014
-L 129.101308 79.95014
-L 129.101308 11.378711
-L 116.010399 11.378711
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 129.101308 79.95014
-L 142.192218 79.95014
-L 142.192218 11.378711
-L 129.101308 11.378711
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 142.192218 79.95014
-L 155.283127 79.95014
-L 155.283127 79.95014
-L 142.192218 79.95014
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 155.283127 79.95014
-L 168.374036 79.95014
-L 168.374036 79.95014
-L 155.283127 79.95014
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 168.374036 79.95014
-L 181.464945 79.95014
-L 181.464945 11.378711
-L 168.374036 11.378711
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 44.010399 79.95014
-L 44.010399 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 44.010399 79.95014
-L 188.010399 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p20c3be89b4">
-   <rect x="44.010399" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
     </div>
 </div>
 
@@ -28099,371 +19199,6 @@ L 188.010399 79.95014
 
 
 
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.37em" height="8.91em" viewBox="0 0 172.478594 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.113986</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 42.764844 79.2
-L 136.364844 79.2
-L 136.364844 7.2
-L 42.764844 7.2
-L 42.764844 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m45f364475b" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m45f364475b" x="42.764844" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="42.764844" y="97.057422" transform="rotate(-0 42.764844 97.057422)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m45f364475b" x="131.907701" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="131.907701" y="97.057422" transform="rotate(-0 131.907701 97.057422)">1</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_3">
-      <defs>
-       <path id="m29407596d4" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m29407596d4" x="42.764844" y="70.472727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="74.651438" transform="rotate(-0 33.264844 74.651438)">DFW</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m29407596d4" x="42.764844" y="56.836364" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="61.015075" transform="rotate(-0 33.264844 61.015075)">CVG</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m29407596d4" x="42.764844" y="43.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="47.378711" transform="rotate(-0 33.264844 47.378711)">ORD</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m29407596d4" x="42.764844" y="29.563636" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="33.742347" transform="rotate(-0 33.264844 33.742347)">PHL</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m29407596d4" x="42.764844" y="15.927273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="20.105984" transform="rotate(-0 33.264844 20.105984)">DTW</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 42.764844 75.927273
-L 131.907701 75.927273
-L 131.907701 65.018182
-L 42.764844 65.018182
-z
-" clip-path="url(#p3be2b0a7d1)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 42.764844 62.290909
-L 131.907701 62.290909
-L 131.907701 51.381818
-L 42.764844 51.381818
-z
-" clip-path="url(#p3be2b0a7d1)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 42.764844 48.654545
-L 131.907701 48.654545
-L 131.907701 37.745455
-L 42.764844 37.745455
-z
-" clip-path="url(#p3be2b0a7d1)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 42.764844 35.018182
-L 131.907701 35.018182
-L 131.907701 24.109091
-L 42.764844 24.109091
-z
-" clip-path="url(#p3be2b0a7d1)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 42.764844 21.381818
-L 131.907701 21.381818
-L 131.907701 10.472727
-L 42.764844 10.472727
-z
-" clip-path="url(#p3be2b0a7d1)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 42.764844 79.2
-L 42.764844 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 42.764844 79.2
-L 136.364844 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
-  <g id="axes_2">
-   <g id="matplotlib.axis_3">
-    <g id="ytick_6">
-     <g id="line2d_8"/>
-     <g id="text_8">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="73.51179" transform="rotate(-0 139.864844 73.51179)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_7">
-     <g id="line2d_9"/>
-     <g id="text_9">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="59.875426" transform="rotate(-0 139.864844 59.875426)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_8">
-     <g id="line2d_10"/>
-     <g id="text_10">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="46.239063" transform="rotate(-0 139.864844 46.239063)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_9">
-     <g id="line2d_11"/>
-     <g id="text_11">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="32.602699" transform="rotate(-0 139.864844 32.602699)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_10">
-     <g id="line2d_12"/>
-     <g id="text_12">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="18.966335" transform="rotate(-0 139.864844 18.966335)">20.0%</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_9">
-    <path d="M 42.764844 79.2
-L 42.764844 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 42.764844 79.2
-L 136.364844 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p3be2b0a7d1">
-   <rect x="42.764844" y="7.2" width="93.6" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-            <details data-test="frequent-values-details">
-                <summary>Most frequent values</summary>
-                <div class="shrink">
-                    <div class="copybutton-grid">
-
-
-                        <div class="box" data-test="frequent-value-0">
-                            <pre id="col_1_in_sample_tab-freq-value-0"
-                                data-copy-text="&#39;DTW&#39;">DTW</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_1_in_sample_tab-freq-value-0">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-1">
-                            <pre id="col_1_in_sample_tab-freq-value-1"
-                                data-copy-text="&#39;PHL&#39;">PHL</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_1_in_sample_tab-freq-value-1">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-2">
-                            <pre id="col_1_in_sample_tab-freq-value-2"
-                                data-copy-text="&#39;ORD&#39;">ORD</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_1_in_sample_tab-freq-value-2">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-3">
-                            <pre id="col_1_in_sample_tab-freq-value-3"
-                                data-copy-text="&#39;CVG&#39;">CVG</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_1_in_sample_tab-freq-value-3">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-4">
-                            <pre id="col_1_in_sample_tab-freq-value-4"
-                                data-copy-text="&#39;DFW&#39;">DFW</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_1_in_sample_tab-freq-value-4">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-                        <span class="grid-separator">List:</span>
-
-                        <div class="box">
-                            <pre id="col_1_in_sample_tab-freq-value-list"
-                                data-copy-text="[&#39;DTW&#39;, &#39;PHL&#39;, &#39;ORD&#39;, &#39;CVG&#39;, &#39;DFW&#39;]">[&#39;DTW&#39;, &#39;PHL&#39;, &#39;ORD&#39;, &#39;CVG&#39;, &#39;DFW&#39;]</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_1_in_sample_tab-freq-value-list">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-                    </div>
-                </div>
-            </details>
-
-        </div>
 
     </div>
 </div>
@@ -28542,217 +19277,6 @@ L 136.364844 79.2
 
 
 
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.97em" viewBox="0 0 174.89875 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.171577</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-L 167.69875 7.95014
-L 23.69875 7.95014
-L 23.69875 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mab5191158b" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mab5191158b" x="55.581448" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="55.581448" y="97.807561" transform="rotate(-0 55.581448 97.807561)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mab5191158b" x="97.810187" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="97.810187" y="97.807561" transform="rotate(-0 97.810187 97.807561)">20</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mab5191158b" x="140.038926" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="140.038926" y="97.807561" transform="rotate(-0 140.038926 97.807561)">40</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m512a9c04b8" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m512a9c04b8" x="23.69875" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="84.12885" transform="rotate(-0 14.19875 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m512a9c04b8" x="23.69875" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="49.843136" transform="rotate(-0 14.19875 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m512a9c04b8" x="23.69875" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="15.557422" transform="rotate(-0 14.19875 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.95014
-L 43.335113 79.95014
-L 43.335113 11.378711
-L 30.244205 11.378711
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335113 79.95014
-L 56.426022 79.95014
-L 56.426022 79.95014
-L 43.335113 79.95014
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426022 79.95014
-L 69.516929 79.95014
-L 69.516929 79.95014
-L 56.426022 79.95014
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516929 79.95014
-L 82.607839 79.95014
-L 82.607839 45.664425
-L 69.516929 45.664425
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607839 79.95014
-L 95.69875 79.95014
-L 95.69875 79.95014
-L 82.607839 79.95014
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.95014
-L 108.789653 79.95014
-L 108.789653 79.95014
-L 95.69875 79.95014
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789653 79.95014
-L 121.880563 79.95014
-L 121.880563 79.95014
-L 108.789653 79.95014
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880563 79.95014
-L 134.971474 79.95014
-L 134.971474 45.664425
-L 121.880563 45.664425
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971474 79.95014
-L 148.062385 79.95014
-L 148.062385 79.95014
-L 134.971474 79.95014
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062385 79.95014
-L 161.153295 79.95014
-L 161.153295 45.664425
-L 148.062385 45.664425
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.95014
-L 23.69875 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p66a0eb0753">
-   <rect x="23.69875" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
     </div>
 </div>
 
@@ -28810,371 +19334,6 @@ L 167.69875 79.95014
 
 
 
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.37em" height="8.91em" viewBox="0 0 172.478594 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.231326</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 42.764844 79.2
-L 136.364844 79.2
-L 136.364844 7.2
-L 42.764844 7.2
-L 42.764844 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m78cb2ce656" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m78cb2ce656" x="42.764844" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="42.764844" y="97.057422" transform="rotate(-0 42.764844 97.057422)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m78cb2ce656" x="131.907701" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="131.907701" y="97.057422" transform="rotate(-0 131.907701 97.057422)">1</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_3">
-      <defs>
-       <path id="m398ebbb365" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m398ebbb365" x="42.764844" y="70.472727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="74.651438" transform="rotate(-0 33.264844 74.651438)">DFW</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m398ebbb365" x="42.764844" y="56.836364" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="61.015075" transform="rotate(-0 33.264844 61.015075)">CVG</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m398ebbb365" x="42.764844" y="43.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="47.378711" transform="rotate(-0 33.264844 47.378711)">ORD</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m398ebbb365" x="42.764844" y="29.563636" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="33.742347" transform="rotate(-0 33.264844 33.742347)">PHL</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m398ebbb365" x="42.764844" y="15.927273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="20.105984" transform="rotate(-0 33.264844 20.105984)">DTW</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 42.764844 75.927273
-L 131.907701 75.927273
-L 131.907701 65.018182
-L 42.764844 65.018182
-z
-" clip-path="url(#pea7af57cce)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 42.764844 62.290909
-L 131.907701 62.290909
-L 131.907701 51.381818
-L 42.764844 51.381818
-z
-" clip-path="url(#pea7af57cce)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 42.764844 48.654545
-L 131.907701 48.654545
-L 131.907701 37.745455
-L 42.764844 37.745455
-z
-" clip-path="url(#pea7af57cce)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 42.764844 35.018182
-L 131.907701 35.018182
-L 131.907701 24.109091
-L 42.764844 24.109091
-z
-" clip-path="url(#pea7af57cce)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 42.764844 21.381818
-L 131.907701 21.381818
-L 131.907701 10.472727
-L 42.764844 10.472727
-z
-" clip-path="url(#pea7af57cce)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 42.764844 79.2
-L 42.764844 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 42.764844 79.2
-L 136.364844 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
-  <g id="axes_2">
-   <g id="matplotlib.axis_3">
-    <g id="ytick_6">
-     <g id="line2d_8"/>
-     <g id="text_8">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="73.51179" transform="rotate(-0 139.864844 73.51179)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_7">
-     <g id="line2d_9"/>
-     <g id="text_9">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="59.875426" transform="rotate(-0 139.864844 59.875426)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_8">
-     <g id="line2d_10"/>
-     <g id="text_10">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="46.239063" transform="rotate(-0 139.864844 46.239063)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_9">
-     <g id="line2d_11"/>
-     <g id="text_11">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="32.602699" transform="rotate(-0 139.864844 32.602699)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_10">
-     <g id="line2d_12"/>
-     <g id="text_12">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="18.966335" transform="rotate(-0 139.864844 18.966335)">20.0%</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_9">
-    <path d="M 42.764844 79.2
-L 42.764844 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 42.764844 79.2
-L 136.364844 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="pea7af57cce">
-   <rect x="42.764844" y="7.2" width="93.6" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-            <details data-test="frequent-values-details">
-                <summary>Most frequent values</summary>
-                <div class="shrink">
-                    <div class="copybutton-grid">
-
-
-                        <div class="box" data-test="frequent-value-0">
-                            <pre id="col_3_in_sample_tab-freq-value-0"
-                                data-copy-text="&#39;DTW&#39;">DTW</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_3_in_sample_tab-freq-value-0">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-1">
-                            <pre id="col_3_in_sample_tab-freq-value-1"
-                                data-copy-text="&#39;PHL&#39;">PHL</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_3_in_sample_tab-freq-value-1">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-2">
-                            <pre id="col_3_in_sample_tab-freq-value-2"
-                                data-copy-text="&#39;ORD&#39;">ORD</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_3_in_sample_tab-freq-value-2">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-3">
-                            <pre id="col_3_in_sample_tab-freq-value-3"
-                                data-copy-text="&#39;CVG&#39;">CVG</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_3_in_sample_tab-freq-value-3">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-4">
-                            <pre id="col_3_in_sample_tab-freq-value-4"
-                                data-copy-text="&#39;DFW&#39;">DFW</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_3_in_sample_tab-freq-value-4">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-                        <span class="grid-separator">List:</span>
-
-                        <div class="box">
-                            <pre id="col_3_in_sample_tab-freq-value-list"
-                                data-copy-text="[&#39;DTW&#39;, &#39;PHL&#39;, &#39;ORD&#39;, &#39;CVG&#39;, &#39;DFW&#39;]">[&#39;DTW&#39;, &#39;PHL&#39;, &#39;ORD&#39;, &#39;CVG&#39;, &#39;DFW&#39;]</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_3_in_sample_tab-freq-value-list">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-                    </div>
-                </div>
-            </details>
-
-        </div>
 
     </div>
 </div>
@@ -29234,371 +19393,6 @@ L 136.364844 79.2
 
 
 
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="27.82em" height="8.91em" viewBox="0 0 333.838281 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.302360</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 204.124531 79.2
-L 297.724531 79.2
-L 297.724531 7.2
-L 204.124531 7.2
-L 204.124531 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mff127251a8" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mff127251a8" x="204.124531" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="204.124531" y="97.057422" transform="rotate(-0 204.124531 97.057422)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mff127251a8" x="293.267388" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="293.267388" y="97.057422" transform="rotate(-0 293.267388 97.057422)">1</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_3">
-      <defs>
-       <path id="m029e0afda5" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m029e0afda5" x="204.124531" y="70.472727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="194.624531" y="74.651868" transform="rotate(-0 194.624531 74.651868)">Dallas-Fort Worth Internationa…‎</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m029e0afda5" x="204.124531" y="56.836364" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="194.624531" y="61.015504" transform="rotate(-0 194.624531 61.015504)">Cincinnati Northern Kentucky I…‎</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m029e0afda5" x="204.124531" y="43.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="194.624531" y="47.379141" transform="rotate(-0 194.624531 47.379141)">Chicago O'Hare International</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m029e0afda5" x="204.124531" y="29.563636" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="194.624531" y="33.742777" transform="rotate(-0 194.624531 33.742777)">Philadelphia Intl</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m029e0afda5" x="204.124531" y="15.927273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="194.624531" y="20.106413" transform="rotate(-0 194.624531 20.106413)">Detroit Metropolitan-Wayne Cou…‎</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 204.124531 75.927273
-L 293.267388 75.927273
-L 293.267388 65.018182
-L 204.124531 65.018182
-z
-" clip-path="url(#paea38d45b5)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 204.124531 62.290909
-L 293.267388 62.290909
-L 293.267388 51.381818
-L 204.124531 51.381818
-z
-" clip-path="url(#paea38d45b5)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 204.124531 48.654545
-L 293.267388 48.654545
-L 293.267388 37.745455
-L 204.124531 37.745455
-z
-" clip-path="url(#paea38d45b5)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 204.124531 35.018182
-L 293.267388 35.018182
-L 293.267388 24.109091
-L 204.124531 24.109091
-z
-" clip-path="url(#paea38d45b5)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 204.124531 21.381818
-L 293.267388 21.381818
-L 293.267388 10.472727
-L 204.124531 10.472727
-z
-" clip-path="url(#paea38d45b5)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 204.124531 79.2
-L 204.124531 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 204.124531 79.2
-L 297.724531 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
-  <g id="axes_2">
-   <g id="matplotlib.axis_3">
-    <g id="ytick_6">
-     <g id="line2d_8"/>
-     <g id="text_8">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="301.224531" y="73.51179" transform="rotate(-0 301.224531 73.51179)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_7">
-     <g id="line2d_9"/>
-     <g id="text_9">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="301.224531" y="59.875426" transform="rotate(-0 301.224531 59.875426)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_8">
-     <g id="line2d_10"/>
-     <g id="text_10">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="301.224531" y="46.239063" transform="rotate(-0 301.224531 46.239063)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_9">
-     <g id="line2d_11"/>
-     <g id="text_11">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="301.224531" y="32.602699" transform="rotate(-0 301.224531 32.602699)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_10">
-     <g id="line2d_12"/>
-     <g id="text_12">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="301.224531" y="18.966335" transform="rotate(-0 301.224531 18.966335)">20.0%</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_9">
-    <path d="M 204.124531 79.2
-L 204.124531 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 204.124531 79.2
-L 297.724531 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="paea38d45b5">
-   <rect x="204.124531" y="7.2" width="93.6" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-            <details data-test="frequent-values-details">
-                <summary>Most frequent values</summary>
-                <div class="shrink">
-                    <div class="copybutton-grid">
-
-
-                        <div class="box" data-test="frequent-value-0">
-                            <pre id="col_4_in_sample_tab-freq-value-0"
-                                data-copy-text="&#39;Detroit Metropolitan-Wayne County&#39;">Detroit Metropolitan-Wayne County</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4_in_sample_tab-freq-value-0">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-1">
-                            <pre id="col_4_in_sample_tab-freq-value-1"
-                                data-copy-text="&#39;Philadelphia Intl&#39;">Philadelphia Intl</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4_in_sample_tab-freq-value-1">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-2">
-                            <pre id="col_4_in_sample_tab-freq-value-2"
-                                data-copy-text="&#34;Chicago O&#39;Hare International&#34;">Chicago O&#39;Hare International</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4_in_sample_tab-freq-value-2">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-3">
-                            <pre id="col_4_in_sample_tab-freq-value-3"
-                                data-copy-text="&#39;Cincinnati Northern Kentucky Intl&#39;">Cincinnati Northern Kentucky Intl</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4_in_sample_tab-freq-value-3">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-4">
-                            <pre id="col_4_in_sample_tab-freq-value-4"
-                                data-copy-text="&#39;Dallas-Fort Worth International&#39;">Dallas-Fort Worth International</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4_in_sample_tab-freq-value-4">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-                        <span class="grid-separator">List:</span>
-
-                        <div class="box">
-                            <pre id="col_4_in_sample_tab-freq-value-list"
-                                data-copy-text="[&#39;Detroit Metropolitan-Wayne County&#39;, &#39;Philadelphia Intl&#39;, &#34;Chicago O&#39;Hare International&#34;, &#39;Cincinnati Northern Kentucky Intl&#39;, &#39;Dallas-Fort Worth International&#39;]">[&#39;Detroit Metropolitan-Wayne County&#39;, &#39;Philadelphia Intl&#39;, &#34;Chicago O&#39;Hare International&#34;, &#39;Cincinnati Northern Kentucky Intl&#39;, &#39;Dallas-Fort Worth International&#39;]</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4_in_sample_tab-freq-value-list">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-                    </div>
-                </div>
-            </details>
-
-        </div>
-
     </div>
 </div>
 
@@ -29656,371 +19450,6 @@ L 297.724531 79.2
 
 
 
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="13.39em" height="8.91em" viewBox="0 0 160.667344 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.369584</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 30.953594 79.2
-L 124.553594 79.2
-L 124.553594 7.2
-L 30.953594 7.2
-L 30.953594 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mc85d223356" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mc85d223356" x="30.953594" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="30.953594" y="97.057422" transform="rotate(-0 30.953594 97.057422)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mc85d223356" x="120.096451" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="120.096451" y="97.057422" transform="rotate(-0 120.096451 97.057422)">1</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_3">
-      <defs>
-       <path id="m153a6cff6b" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m153a6cff6b" x="30.953594" y="70.472727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="21.453594" y="74.651438" transform="rotate(-0 21.453594 74.651438)">TX</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m153a6cff6b" x="30.953594" y="56.836364" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="21.453594" y="61.015075" transform="rotate(-0 21.453594 61.015075)">KY</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m153a6cff6b" x="30.953594" y="43.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="21.453594" y="47.378711" transform="rotate(-0 21.453594 47.378711)">IL</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m153a6cff6b" x="30.953594" y="29.563636" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="21.453594" y="33.742347" transform="rotate(-0 21.453594 33.742347)">PA</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m153a6cff6b" x="30.953594" y="15.927273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="21.453594" y="20.105984" transform="rotate(-0 21.453594 20.105984)">MI</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.953594 75.927273
-L 120.096451 75.927273
-L 120.096451 65.018182
-L 30.953594 65.018182
-z
-" clip-path="url(#p226fba65bc)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 30.953594 62.290909
-L 120.096451 62.290909
-L 120.096451 51.381818
-L 30.953594 51.381818
-z
-" clip-path="url(#p226fba65bc)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 30.953594 48.654545
-L 120.096451 48.654545
-L 120.096451 37.745455
-L 30.953594 37.745455
-z
-" clip-path="url(#p226fba65bc)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 30.953594 35.018182
-L 120.096451 35.018182
-L 120.096451 24.109091
-L 30.953594 24.109091
-z
-" clip-path="url(#p226fba65bc)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 30.953594 21.381818
-L 120.096451 21.381818
-L 120.096451 10.472727
-L 30.953594 10.472727
-z
-" clip-path="url(#p226fba65bc)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 30.953594 79.2
-L 30.953594 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 30.953594 79.2
-L 124.553594 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
-  <g id="axes_2">
-   <g id="matplotlib.axis_3">
-    <g id="ytick_6">
-     <g id="line2d_8"/>
-     <g id="text_8">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="128.053594" y="73.51179" transform="rotate(-0 128.053594 73.51179)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_7">
-     <g id="line2d_9"/>
-     <g id="text_9">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="128.053594" y="59.875426" transform="rotate(-0 128.053594 59.875426)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_8">
-     <g id="line2d_10"/>
-     <g id="text_10">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="128.053594" y="46.239063" transform="rotate(-0 128.053594 46.239063)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_9">
-     <g id="line2d_11"/>
-     <g id="text_11">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="128.053594" y="32.602699" transform="rotate(-0 128.053594 32.602699)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_10">
-     <g id="line2d_12"/>
-     <g id="text_12">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="128.053594" y="18.966335" transform="rotate(-0 128.053594 18.966335)">20.0%</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_9">
-    <path d="M 30.953594 79.2
-L 30.953594 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 30.953594 79.2
-L 124.553594 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p226fba65bc">
-   <rect x="30.953594" y="7.2" width="93.6" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-            <details data-test="frequent-values-details">
-                <summary>Most frequent values</summary>
-                <div class="shrink">
-                    <div class="copybutton-grid">
-
-
-                        <div class="box" data-test="frequent-value-0">
-                            <pre id="col_5_in_sample_tab-freq-value-0"
-                                data-copy-text="&#39;MI&#39;">MI</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5_in_sample_tab-freq-value-0">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-1">
-                            <pre id="col_5_in_sample_tab-freq-value-1"
-                                data-copy-text="&#39;PA&#39;">PA</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5_in_sample_tab-freq-value-1">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-2">
-                            <pre id="col_5_in_sample_tab-freq-value-2"
-                                data-copy-text="&#39;IL&#39;">IL</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5_in_sample_tab-freq-value-2">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-3">
-                            <pre id="col_5_in_sample_tab-freq-value-3"
-                                data-copy-text="&#39;KY&#39;">KY</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5_in_sample_tab-freq-value-3">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-4">
-                            <pre id="col_5_in_sample_tab-freq-value-4"
-                                data-copy-text="&#39;TX&#39;">TX</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5_in_sample_tab-freq-value-4">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-                        <span class="grid-separator">List:</span>
-
-                        <div class="box">
-                            <pre id="col_5_in_sample_tab-freq-value-list"
-                                data-copy-text="[&#39;MI&#39;, &#39;PA&#39;, &#39;IL&#39;, &#39;KY&#39;, &#39;TX&#39;]">[&#39;MI&#39;, &#39;PA&#39;, &#39;IL&#39;, &#39;KY&#39;, &#39;TX&#39;]</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5_in_sample_tab-freq-value-list">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-                    </div>
-                </div>
-            </details>
-
-        </div>
 
     </div>
 </div>
@@ -30099,207 +19528,6 @@ L 124.553594 79.2
 
 
 
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.97em" viewBox="0 0 174.89875 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.426011</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-L 167.69875 7.95014
-L 23.69875 7.95014
-L 23.69875 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="ma82378027d" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#ma82378027d" x="59.810115" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="59.810115" y="97.807561" transform="rotate(-0 59.810115 97.807561)">35</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#ma82378027d" x="130.069648" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="130.069648" y="97.807561" transform="rotate(-0 130.069648 97.807561)">40</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_3">
-      <defs>
-       <path id="m8253d73988" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m8253d73988" x="23.69875" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="84.12885" transform="rotate(-0 14.19875 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m8253d73988" x="23.69875" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="49.843136" transform="rotate(-0 14.19875 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m8253d73988" x="23.69875" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="15.557422" transform="rotate(-0 14.19875 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.95014
-L 43.335103 79.95014
-L 43.335103 45.664425
-L 30.244205 45.664425
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335103 79.95014
-L 56.426001 79.95014
-L 56.426001 79.95014
-L 43.335103 79.95014
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426001 79.95014
-L 69.516953 79.95014
-L 69.516953 79.95014
-L 56.426001 79.95014
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516953 79.95014
-L 82.607852 79.95014
-L 82.607852 79.95014
-L 69.516953 79.95014
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607852 79.95014
-L 95.69875 79.95014
-L 95.69875 79.95014
-L 82.607852 79.95014
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.95014
-L 108.789648 79.95014
-L 108.789648 79.95014
-L 95.69875 79.95014
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789648 79.95014
-L 121.880547 79.95014
-L 121.880547 45.664425
-L 108.789648 45.664425
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880547 79.95014
-L 134.971499 79.95014
-L 134.971499 45.664425
-L 121.880547 45.664425
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971499 79.95014
-L 148.062397 79.95014
-L 148.062397 79.95014
-L 134.971499 79.95014
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062397 79.95014
-L 161.153295 79.95014
-L 161.153295 11.378711
-L 148.062397 11.378711
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.95014
-L 23.69875 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p4852bb384a">
-   <rect x="23.69875" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
     </div>
 </div>
 
@@ -30377,207 +19605,6 @@ L 167.69875 79.95014
 
 
 
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.45em" height="8.97em" viewBox="0 0 185.393438 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.474902</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 34.193438 79.95014
-L 178.193438 79.95014
-L 178.193438 7.95014
-L 34.193438 7.95014
-L 34.193438 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mc90f750b39" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mc90f750b39" x="83.004954" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="83.004954" y="97.807561" transform="rotate(-0 83.004954 97.807561)">−90</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mc90f750b39" x="143.065855" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="143.065855" y="97.807561" transform="rotate(-0 143.065855 97.807561)">−80</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_3">
-      <defs>
-       <path id="m03a5bd4ca8" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m03a5bd4ca8" x="34.193438" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.693438" y="84.12885" transform="rotate(-0 24.693438 84.12885)">0.0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m03a5bd4ca8" x="34.193438" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.693438" y="49.843136" transform="rotate(-0 24.693438 49.843136)">0.5</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m03a5bd4ca8" x="34.193438" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.693438" y="15.557422" transform="rotate(-0 24.693438 15.557422)">1.0</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 40.738892 79.95014
-L 53.829787 79.95014
-L 53.829787 11.378711
-L 40.738892 11.378711
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 53.829787 79.95014
-L 66.920729 79.95014
-L 66.920729 79.95014
-L 53.829787 79.95014
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 66.920729 79.95014
-L 80.011624 79.95014
-L 80.011624 79.95014
-L 66.920729 79.95014
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 80.011624 79.95014
-L 93.102519 79.95014
-L 93.102519 79.95014
-L 80.011624 79.95014
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 93.102519 79.95014
-L 106.193415 79.95014
-L 106.193415 11.378711
-L 93.102519 11.378711
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 106.193415 79.95014
-L 119.284356 79.95014
-L 119.284356 11.378711
-L 106.193415 11.378711
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 119.284356 79.95014
-L 132.375251 79.95014
-L 132.375251 11.378711
-L 119.284356 11.378711
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 132.375251 79.95014
-L 145.466146 79.95014
-L 145.466146 79.95014
-L 132.375251 79.95014
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 145.466146 79.95014
-L 158.557088 79.95014
-L 158.557088 79.95014
-L 145.466146 79.95014
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 158.557088 79.95014
-L 171.647983 79.95014
-L 171.647983 11.378711
-L 158.557088 11.378711
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 34.193438 79.95014
-L 34.193438 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 34.193437 79.95014
-L 178.193437 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p6686545493">
-   <rect x="34.193438" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
     </div>
 </div>
 
@@ -30627,22 +19654,22 @@ L 178.193437 79.95014
 
 
                 <dt>Mean ± Std</dt>
-                <dd>9.37 ±
-                    6.02
+                <dd>9.72 ±
+                    7.05
 
                 </dd>
 
 
                 <dt>Median ± IQR</dt>
                 <dd>11.1 ±
-                    8.67
+                    9.51
 
                 </dd>
 
                 <dt>Min | Max</dt>
                 <dd>
-                    <span class="min-value">1.21</span> |
-                    <span class="max-value">15.5</span>
+                    <span class="min-value">0.865</span> |
+                    <span class="max-value">18.2</span>
 
                 </dd>
 
@@ -30654,217 +19681,6 @@ L 178.193437 79.95014
 
 
 
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.45em" height="8.97em" viewBox="0 0 185.393438 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.525645</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 34.193438 79.95014
-L 178.193438 79.95014
-L 178.193438 7.95014
-L 34.193438 7.95014
-L 34.193438 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m647534c677" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m647534c677" x="75.392245" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="75.392245" y="97.807561" transform="rotate(-0 75.392245 97.807561)">5</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m647534c677" x="121.073629" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="121.073629" y="97.807561" transform="rotate(-0 121.073629 97.807561)">10</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m647534c677" x="166.755014" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="166.755014" y="97.807561" transform="rotate(-0 166.755014 97.807561)">15</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m5661f0819a" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m5661f0819a" x="34.193438" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.693438" y="84.12885" transform="rotate(-0 24.693438 84.12885)">0.0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m5661f0819a" x="34.193438" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.693438" y="49.843136" transform="rotate(-0 24.693438 49.843136)">0.5</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m5661f0819a" x="34.193438" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.693438" y="15.557422" transform="rotate(-0 24.693438 15.557422)">1.0</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 40.738892 79.95014
-L 53.829802 79.95014
-L 53.829802 11.378711
-L 40.738892 11.378711
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 53.829802 79.95014
-L 66.920711 79.95014
-L 66.920711 79.95014
-L 53.829802 79.95014
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 66.920711 79.95014
-L 80.01162 79.95014
-L 80.01162 11.378711
-L 66.920711 11.378711
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 80.01162 79.95014
-L 93.102529 79.95014
-L 93.102529 79.95014
-L 80.01162 79.95014
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 93.102529 79.95014
-L 106.193434 79.95014
-L 106.193434 79.95014
-L 93.102529 79.95014
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 106.193434 79.95014
-L 119.284347 79.95014
-L 119.284347 79.95014
-L 106.193434 79.95014
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 119.284347 79.95014
-L 132.375252 79.95014
-L 132.375252 11.378711
-L 119.284347 11.378711
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 132.375252 79.95014
-L 145.466165 79.95014
-L 145.466165 79.95014
-L 132.375252 79.95014
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 145.466165 79.95014
-L 158.557078 79.95014
-L 158.557078 11.378711
-L 145.466165 11.378711
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 158.557078 79.95014
-L 171.647983 79.95014
-L 171.647983 11.378711
-L 158.557078 11.378711
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 34.193438 79.95014
-L 34.193438 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 34.193438 79.95014
-L 178.193437 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p7a2f85d003">
-   <rect x="34.193438" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
 
     </div>
 </div>
@@ -31500,19 +20316,19 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 
 
 
-                    <td data-value="9.372463624867843" data-numeric>
-                        9.37</td>
-                    <td data-value="6.023114079314045" data-numeric>
-                        6.02</td>
+                    <td data-value="9.72021413350514" data-numeric>
+                        9.72</td>
+                    <td data-value="7.0453284270850025" data-numeric>
+                        7.05</td>
 
 
 
-                    <td data-value="1.2070597951575148" data-numeric>
-                        1.21</td>
-                    <td data-value="11.052599860939388" data-numeric>
+                    <td data-value="0.865101892915402" data-numeric>
+                        0.865</td>
+                    <td data-value="11.108470045613005" data-numeric>
                         11.1</td>
-                    <td data-value="15.535554232188582" data-numeric>
-                        15.5</td>
+                    <td data-value="18.233899047332372" data-numeric>
+                        18.2</td>
 
 
                 </tr>
@@ -31537,3580 +20353,6 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 </div>
 
-<div class="tab-panel" id="column-summaries-panel" data-hidden
-     data-test="summaries-panel">
-
-
-<article class="wrapper margin-t-s flow" data-show-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
-    data-hide-on="EMPTY_COLUMN_FILTER_SELECTED" >
-    <div class="flex flex-wrap">
-        <div class="box">
-            <pre id="selected-columns-display" data-manager="SelectedColumnsDisplay"></pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="selected-columns-display">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-        </div>
-    <div class="flex flex-wrap toggletip-wrapper column-selection-buttons">
-        <div class="toggletip" data-manager="Toggletip">
-            <button type="button"><span>i</span></button>
-            <div class="toggletip-info box-shadow">
-                To construct a list of column names that you can easily copy-paste
-                (in the box), select some columns using the checkboxes next
-                to the column names or the "Select all" button.
-            </div>
-        </div>
-        <button type="button" data-test="select-all-columns" data-manager="SelectAllVisibleColumns">Select all</button>
-        <button type="button" data-test="deselect-all-columns" data-manager="DeselectAllColumns">Deselect all</button>
-    </div>
-    </div>
-
-    <div class="horizontal-scroll padding-b-s">
-    <div class="column-summary-group">
-
-
-
-
-<div class="card column-summary" id="col_0"
-    data-name-repr="&#39;Year_Month_DayofMonth&#39;"
-    data-column-name="Year_Month_DayofMonth"
-    data-column-idx="0"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">Year_Month_DayofMonth</span>
-        </h3>
-        <span>DateTime64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">2008-01-27T00:00:00</span> |
-                    <span class="max-value">2008-04-04T00:00:00</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="16.27em" height="12.47em" viewBox="0 0 195.210399 149.631662" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.046036</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 44.010399 79.95014
-L 188.010399 79.95014
-L 188.010399 7.95014
-L 44.010399 7.95014
-L 44.010399 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m9ad85d8f80" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m9ad85d8f80" x="60.181522" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(13.10959 140.563077) rotate(-45)">2008-02-01</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m9ad85d8f80" x="87.133394" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(40.061461 140.563077) rotate(-45)">2008-02-15</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m9ad85d8f80" x="116.010399" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(68.938467 140.563077) rotate(-45)">2008-03-01</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m9ad85d8f80" x="142.962271" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(95.890338 140.563077) rotate(-45)">2008-03-15</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m9ad85d8f80" x="175.689544" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; fill: var(--color-text-primary)" transform="translate(128.617611 140.563077) rotate(-45)">2008-04-01</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_6">
-      <defs>
-       <path id="m2d2759d23e" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m2d2759d23e" x="44.010399" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="34.510399" y="84.12885" transform="rotate(-0 34.510399 84.12885)">0.0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m2d2759d23e" x="44.010399" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="34.510399" y="49.843136" transform="rotate(-0 34.510399 49.843136)">0.5</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_8">
-      <g>
-       <use xlink:href="#m2d2759d23e" x="44.010399" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_8">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="34.510399" y="15.557422" transform="rotate(-0 34.510399 15.557422)">1.0</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 50.555854 79.95014
-L 63.646763 79.95014
-L 63.646763 11.378711
-L 50.555854 11.378711
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 63.646763 79.95014
-L 76.737672 79.95014
-L 76.737672 79.95014
-L 63.646763 79.95014
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 76.737672 79.95014
-L 89.828581 79.95014
-L 89.828581 79.95014
-L 76.737672 79.95014
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 89.828581 79.95014
-L 102.91949 79.95014
-L 102.91949 79.95014
-L 89.828581 79.95014
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 102.91949 79.95014
-L 116.010399 79.95014
-L 116.010399 11.378711
-L 102.91949 11.378711
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 116.010399 79.95014
-L 129.101308 79.95014
-L 129.101308 11.378711
-L 116.010399 11.378711
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 129.101308 79.95014
-L 142.192218 79.95014
-L 142.192218 11.378711
-L 129.101308 11.378711
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 142.192218 79.95014
-L 155.283127 79.95014
-L 155.283127 79.95014
-L 142.192218 79.95014
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 155.283127 79.95014
-L 168.374036 79.95014
-L 168.374036 79.95014
-L 155.283127 79.95014
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 168.374036 79.95014
-L 181.464945 79.95014
-L 181.464945 11.378711
-L 168.374036 11.378711
-z
-" clip-path="url(#p20c3be89b4)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 44.010399 79.95014
-L 44.010399 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 44.010399 79.95014
-L 188.010399 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p20c3be89b4">
-   <rect x="44.010399" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_1"
-    data-name-repr="&#39;Origin&#39;"
-    data-column-name="Origin"
-    data-column-idx="1"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">Origin</span>
-        </h3>
-        <span>StringDtype</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.37em" height="8.91em" viewBox="0 0 172.478594 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.113986</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 42.764844 79.2
-L 136.364844 79.2
-L 136.364844 7.2
-L 42.764844 7.2
-L 42.764844 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m45f364475b" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m45f364475b" x="42.764844" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="42.764844" y="97.057422" transform="rotate(-0 42.764844 97.057422)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m45f364475b" x="131.907701" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="131.907701" y="97.057422" transform="rotate(-0 131.907701 97.057422)">1</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_3">
-      <defs>
-       <path id="m29407596d4" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m29407596d4" x="42.764844" y="70.472727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="74.651438" transform="rotate(-0 33.264844 74.651438)">DFW</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m29407596d4" x="42.764844" y="56.836364" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="61.015075" transform="rotate(-0 33.264844 61.015075)">CVG</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m29407596d4" x="42.764844" y="43.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="47.378711" transform="rotate(-0 33.264844 47.378711)">ORD</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m29407596d4" x="42.764844" y="29.563636" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="33.742347" transform="rotate(-0 33.264844 33.742347)">PHL</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m29407596d4" x="42.764844" y="15.927273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="20.105984" transform="rotate(-0 33.264844 20.105984)">DTW</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 42.764844 75.927273
-L 131.907701 75.927273
-L 131.907701 65.018182
-L 42.764844 65.018182
-z
-" clip-path="url(#p3be2b0a7d1)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 42.764844 62.290909
-L 131.907701 62.290909
-L 131.907701 51.381818
-L 42.764844 51.381818
-z
-" clip-path="url(#p3be2b0a7d1)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 42.764844 48.654545
-L 131.907701 48.654545
-L 131.907701 37.745455
-L 42.764844 37.745455
-z
-" clip-path="url(#p3be2b0a7d1)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 42.764844 35.018182
-L 131.907701 35.018182
-L 131.907701 24.109091
-L 42.764844 24.109091
-z
-" clip-path="url(#p3be2b0a7d1)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 42.764844 21.381818
-L 131.907701 21.381818
-L 131.907701 10.472727
-L 42.764844 10.472727
-z
-" clip-path="url(#p3be2b0a7d1)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 42.764844 79.2
-L 42.764844 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 42.764844 79.2
-L 136.364844 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
-  <g id="axes_2">
-   <g id="matplotlib.axis_3">
-    <g id="ytick_6">
-     <g id="line2d_8"/>
-     <g id="text_8">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="73.51179" transform="rotate(-0 139.864844 73.51179)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_7">
-     <g id="line2d_9"/>
-     <g id="text_9">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="59.875426" transform="rotate(-0 139.864844 59.875426)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_8">
-     <g id="line2d_10"/>
-     <g id="text_10">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="46.239063" transform="rotate(-0 139.864844 46.239063)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_9">
-     <g id="line2d_11"/>
-     <g id="text_11">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="32.602699" transform="rotate(-0 139.864844 32.602699)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_10">
-     <g id="line2d_12"/>
-     <g id="text_12">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="18.966335" transform="rotate(-0 139.864844 18.966335)">20.0%</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_9">
-    <path d="M 42.764844 79.2
-L 42.764844 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 42.764844 79.2
-L 136.364844 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p3be2b0a7d1">
-   <rect x="42.764844" y="7.2" width="93.6" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-            <details data-test="frequent-values-details">
-                <summary>Most frequent values</summary>
-                <div class="shrink">
-                    <div class="copybutton-grid">
-
-
-                        <div class="box" data-test="frequent-value-0">
-                            <pre id="col_1-freq-value-0"
-                                data-copy-text="&#39;DTW&#39;">DTW</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_1-freq-value-0">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-1">
-                            <pre id="col_1-freq-value-1"
-                                data-copy-text="&#39;PHL&#39;">PHL</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_1-freq-value-1">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-2">
-                            <pre id="col_1-freq-value-2"
-                                data-copy-text="&#39;ORD&#39;">ORD</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_1-freq-value-2">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-3">
-                            <pre id="col_1-freq-value-3"
-                                data-copy-text="&#39;CVG&#39;">CVG</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_1-freq-value-3">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-4">
-                            <pre id="col_1-freq-value-4"
-                                data-copy-text="&#39;DFW&#39;">DFW</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_1-freq-value-4">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-                        <span class="grid-separator">List:</span>
-
-                        <div class="box">
-                            <pre id="col_1-freq-value-list"
-                                data-copy-text="[&#39;DTW&#39;, &#39;PHL&#39;, &#39;ORD&#39;, &#39;CVG&#39;, &#39;DFW&#39;]">[&#39;DTW&#39;, &#39;PHL&#39;, &#39;ORD&#39;, &#39;CVG&#39;, &#39;DFW&#39;]</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_1-freq-value-list">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-                    </div>
-                </div>
-            </details>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_2"
-    data-name-repr="&#39;ArrDelay&#39;"
-    data-column-name="ArrDelay"
-    data-column-idx="2"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">ArrDelay</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>14.2 ±
-                    27.5
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>8.00 ±
-                    45.0
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">-12.0</span> |
-                    <span class="max-value">50.0</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.97em" viewBox="0 0 174.89875 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.171577</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-L 167.69875 7.95014
-L 23.69875 7.95014
-L 23.69875 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mab5191158b" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mab5191158b" x="55.581448" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="55.581448" y="97.807561" transform="rotate(-0 55.581448 97.807561)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mab5191158b" x="97.810187" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="97.810187" y="97.807561" transform="rotate(-0 97.810187 97.807561)">20</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mab5191158b" x="140.038926" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="140.038926" y="97.807561" transform="rotate(-0 140.038926 97.807561)">40</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m512a9c04b8" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m512a9c04b8" x="23.69875" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="84.12885" transform="rotate(-0 14.19875 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m512a9c04b8" x="23.69875" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="49.843136" transform="rotate(-0 14.19875 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m512a9c04b8" x="23.69875" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="15.557422" transform="rotate(-0 14.19875 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.95014
-L 43.335113 79.95014
-L 43.335113 11.378711
-L 30.244205 11.378711
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335113 79.95014
-L 56.426022 79.95014
-L 56.426022 79.95014
-L 43.335113 79.95014
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426022 79.95014
-L 69.516929 79.95014
-L 69.516929 79.95014
-L 56.426022 79.95014
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516929 79.95014
-L 82.607839 79.95014
-L 82.607839 45.664425
-L 69.516929 45.664425
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607839 79.95014
-L 95.69875 79.95014
-L 95.69875 79.95014
-L 82.607839 79.95014
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.95014
-L 108.789653 79.95014
-L 108.789653 79.95014
-L 95.69875 79.95014
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789653 79.95014
-L 121.880563 79.95014
-L 121.880563 79.95014
-L 108.789653 79.95014
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880563 79.95014
-L 134.971474 79.95014
-L 134.971474 45.664425
-L 121.880563 45.664425
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971474 79.95014
-L 148.062385 79.95014
-L 148.062385 79.95014
-L 134.971474 79.95014
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062385 79.95014
-L 161.153295 79.95014
-L 161.153295 45.664425
-L 148.062385 45.664425
-z
-" clip-path="url(#p66a0eb0753)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.95014
-L 23.69875 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p66a0eb0753">
-   <rect x="23.69875" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_3"
-    data-name-repr="&#39;iata&#39;"
-    data-column-name="iata"
-    data-column-idx="3"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">iata</span>
-        </h3>
-        <span>StringDtype</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.37em" height="8.91em" viewBox="0 0 172.478594 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.231326</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 42.764844 79.2
-L 136.364844 79.2
-L 136.364844 7.2
-L 42.764844 7.2
-L 42.764844 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m78cb2ce656" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m78cb2ce656" x="42.764844" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="42.764844" y="97.057422" transform="rotate(-0 42.764844 97.057422)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m78cb2ce656" x="131.907701" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="131.907701" y="97.057422" transform="rotate(-0 131.907701 97.057422)">1</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_3">
-      <defs>
-       <path id="m398ebbb365" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m398ebbb365" x="42.764844" y="70.472727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="74.651438" transform="rotate(-0 33.264844 74.651438)">DFW</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m398ebbb365" x="42.764844" y="56.836364" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="61.015075" transform="rotate(-0 33.264844 61.015075)">CVG</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m398ebbb365" x="42.764844" y="43.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="47.378711" transform="rotate(-0 33.264844 47.378711)">ORD</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m398ebbb365" x="42.764844" y="29.563636" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="33.742347" transform="rotate(-0 33.264844 33.742347)">PHL</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m398ebbb365" x="42.764844" y="15.927273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="33.264844" y="20.105984" transform="rotate(-0 33.264844 20.105984)">DTW</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 42.764844 75.927273
-L 131.907701 75.927273
-L 131.907701 65.018182
-L 42.764844 65.018182
-z
-" clip-path="url(#pea7af57cce)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 42.764844 62.290909
-L 131.907701 62.290909
-L 131.907701 51.381818
-L 42.764844 51.381818
-z
-" clip-path="url(#pea7af57cce)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 42.764844 48.654545
-L 131.907701 48.654545
-L 131.907701 37.745455
-L 42.764844 37.745455
-z
-" clip-path="url(#pea7af57cce)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 42.764844 35.018182
-L 131.907701 35.018182
-L 131.907701 24.109091
-L 42.764844 24.109091
-z
-" clip-path="url(#pea7af57cce)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 42.764844 21.381818
-L 131.907701 21.381818
-L 131.907701 10.472727
-L 42.764844 10.472727
-z
-" clip-path="url(#pea7af57cce)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 42.764844 79.2
-L 42.764844 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 42.764844 79.2
-L 136.364844 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
-  <g id="axes_2">
-   <g id="matplotlib.axis_3">
-    <g id="ytick_6">
-     <g id="line2d_8"/>
-     <g id="text_8">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="73.51179" transform="rotate(-0 139.864844 73.51179)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_7">
-     <g id="line2d_9"/>
-     <g id="text_9">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="59.875426" transform="rotate(-0 139.864844 59.875426)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_8">
-     <g id="line2d_10"/>
-     <g id="text_10">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="46.239063" transform="rotate(-0 139.864844 46.239063)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_9">
-     <g id="line2d_11"/>
-     <g id="text_11">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="32.602699" transform="rotate(-0 139.864844 32.602699)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_10">
-     <g id="line2d_12"/>
-     <g id="text_12">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="139.864844" y="18.966335" transform="rotate(-0 139.864844 18.966335)">20.0%</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_9">
-    <path d="M 42.764844 79.2
-L 42.764844 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 42.764844 79.2
-L 136.364844 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="pea7af57cce">
-   <rect x="42.764844" y="7.2" width="93.6" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-            <details data-test="frequent-values-details">
-                <summary>Most frequent values</summary>
-                <div class="shrink">
-                    <div class="copybutton-grid">
-
-
-                        <div class="box" data-test="frequent-value-0">
-                            <pre id="col_3-freq-value-0"
-                                data-copy-text="&#39;DTW&#39;">DTW</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_3-freq-value-0">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-1">
-                            <pre id="col_3-freq-value-1"
-                                data-copy-text="&#39;PHL&#39;">PHL</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_3-freq-value-1">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-2">
-                            <pre id="col_3-freq-value-2"
-                                data-copy-text="&#39;ORD&#39;">ORD</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_3-freq-value-2">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-3">
-                            <pre id="col_3-freq-value-3"
-                                data-copy-text="&#39;CVG&#39;">CVG</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_3-freq-value-3">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-4">
-                            <pre id="col_3-freq-value-4"
-                                data-copy-text="&#39;DFW&#39;">DFW</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_3-freq-value-4">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-                        <span class="grid-separator">List:</span>
-
-                        <div class="box">
-                            <pre id="col_3-freq-value-list"
-                                data-copy-text="[&#39;DTW&#39;, &#39;PHL&#39;, &#39;ORD&#39;, &#39;CVG&#39;, &#39;DFW&#39;]">[&#39;DTW&#39;, &#39;PHL&#39;, &#39;ORD&#39;, &#39;CVG&#39;, &#39;DFW&#39;]</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_3-freq-value-list">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-                    </div>
-                </div>
-            </details>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_4"
-    data-name-repr="&#39;airport&#39;"
-    data-column-name="airport"
-    data-column-idx="4"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">airport</span>
-        </h3>
-        <span>StringDtype</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="27.82em" height="8.91em" viewBox="0 0 333.838281 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.302360</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 204.124531 79.2
-L 297.724531 79.2
-L 297.724531 7.2
-L 204.124531 7.2
-L 204.124531 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mff127251a8" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mff127251a8" x="204.124531" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="204.124531" y="97.057422" transform="rotate(-0 204.124531 97.057422)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mff127251a8" x="293.267388" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="293.267388" y="97.057422" transform="rotate(-0 293.267388 97.057422)">1</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_3">
-      <defs>
-       <path id="m029e0afda5" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m029e0afda5" x="204.124531" y="70.472727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="194.624531" y="74.651868" transform="rotate(-0 194.624531 74.651868)">Dallas-Fort Worth Internationa…‎</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m029e0afda5" x="204.124531" y="56.836364" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="194.624531" y="61.015504" transform="rotate(-0 194.624531 61.015504)">Cincinnati Northern Kentucky I…‎</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m029e0afda5" x="204.124531" y="43.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="194.624531" y="47.379141" transform="rotate(-0 194.624531 47.379141)">Chicago O'Hare International</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m029e0afda5" x="204.124531" y="29.563636" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="194.624531" y="33.742777" transform="rotate(-0 194.624531 33.742777)">Philadelphia Intl</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m029e0afda5" x="204.124531" y="15.927273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="194.624531" y="20.106413" transform="rotate(-0 194.624531 20.106413)">Detroit Metropolitan-Wayne Cou…‎</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 204.124531 75.927273
-L 293.267388 75.927273
-L 293.267388 65.018182
-L 204.124531 65.018182
-z
-" clip-path="url(#paea38d45b5)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 204.124531 62.290909
-L 293.267388 62.290909
-L 293.267388 51.381818
-L 204.124531 51.381818
-z
-" clip-path="url(#paea38d45b5)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 204.124531 48.654545
-L 293.267388 48.654545
-L 293.267388 37.745455
-L 204.124531 37.745455
-z
-" clip-path="url(#paea38d45b5)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 204.124531 35.018182
-L 293.267388 35.018182
-L 293.267388 24.109091
-L 204.124531 24.109091
-z
-" clip-path="url(#paea38d45b5)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 204.124531 21.381818
-L 293.267388 21.381818
-L 293.267388 10.472727
-L 204.124531 10.472727
-z
-" clip-path="url(#paea38d45b5)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 204.124531 79.2
-L 204.124531 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 204.124531 79.2
-L 297.724531 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
-  <g id="axes_2">
-   <g id="matplotlib.axis_3">
-    <g id="ytick_6">
-     <g id="line2d_8"/>
-     <g id="text_8">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="301.224531" y="73.51179" transform="rotate(-0 301.224531 73.51179)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_7">
-     <g id="line2d_9"/>
-     <g id="text_9">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="301.224531" y="59.875426" transform="rotate(-0 301.224531 59.875426)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_8">
-     <g id="line2d_10"/>
-     <g id="text_10">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="301.224531" y="46.239063" transform="rotate(-0 301.224531 46.239063)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_9">
-     <g id="line2d_11"/>
-     <g id="text_11">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="301.224531" y="32.602699" transform="rotate(-0 301.224531 32.602699)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_10">
-     <g id="line2d_12"/>
-     <g id="text_12">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="301.224531" y="18.966335" transform="rotate(-0 301.224531 18.966335)">20.0%</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_9">
-    <path d="M 204.124531 79.2
-L 204.124531 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 204.124531 79.2
-L 297.724531 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="paea38d45b5">
-   <rect x="204.124531" y="7.2" width="93.6" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-            <details data-test="frequent-values-details">
-                <summary>Most frequent values</summary>
-                <div class="shrink">
-                    <div class="copybutton-grid">
-
-
-                        <div class="box" data-test="frequent-value-0">
-                            <pre id="col_4-freq-value-0"
-                                data-copy-text="&#39;Detroit Metropolitan-Wayne County&#39;">Detroit Metropolitan-Wayne County</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4-freq-value-0">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-1">
-                            <pre id="col_4-freq-value-1"
-                                data-copy-text="&#39;Philadelphia Intl&#39;">Philadelphia Intl</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4-freq-value-1">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-2">
-                            <pre id="col_4-freq-value-2"
-                                data-copy-text="&#34;Chicago O&#39;Hare International&#34;">Chicago O&#39;Hare International</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4-freq-value-2">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-3">
-                            <pre id="col_4-freq-value-3"
-                                data-copy-text="&#39;Cincinnati Northern Kentucky Intl&#39;">Cincinnati Northern Kentucky Intl</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4-freq-value-3">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-4">
-                            <pre id="col_4-freq-value-4"
-                                data-copy-text="&#39;Dallas-Fort Worth International&#39;">Dallas-Fort Worth International</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4-freq-value-4">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-                        <span class="grid-separator">List:</span>
-
-                        <div class="box">
-                            <pre id="col_4-freq-value-list"
-                                data-copy-text="[&#39;Detroit Metropolitan-Wayne County&#39;, &#39;Philadelphia Intl&#39;, &#34;Chicago O&#39;Hare International&#34;, &#39;Cincinnati Northern Kentucky Intl&#39;, &#39;Dallas-Fort Worth International&#39;]">[&#39;Detroit Metropolitan-Wayne County&#39;, &#39;Philadelphia Intl&#39;, &#34;Chicago O&#39;Hare International&#34;, &#39;Cincinnati Northern Kentucky Intl&#39;, &#39;Dallas-Fort Worth International&#39;]</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_4-freq-value-list">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-                    </div>
-                </div>
-            </details>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_5"
-    data-name-repr="&#39;state&#39;"
-    data-column-name="state"
-    data-column-idx="5"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">state</span>
-        </h3>
-        <span>StringDtype</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="13.39em" height="8.91em" viewBox="0 0 160.667344 106.9" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.369584</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 30.953594 79.2
-L 124.553594 79.2
-L 124.553594 7.2
-L 30.953594 7.2
-L 30.953594 79.2
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mc85d223356" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mc85d223356" x="30.953594" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="30.953594" y="97.057422" transform="rotate(-0 30.953594 97.057422)">0</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mc85d223356" x="120.096451" y="79.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="120.096451" y="97.057422" transform="rotate(-0 120.096451 97.057422)">1</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_3">
-      <defs>
-       <path id="m153a6cff6b" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m153a6cff6b" x="30.953594" y="70.472727" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="21.453594" y="74.651438" transform="rotate(-0 21.453594 74.651438)">TX</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m153a6cff6b" x="30.953594" y="56.836364" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="21.453594" y="61.015075" transform="rotate(-0 21.453594 61.015075)">KY</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m153a6cff6b" x="30.953594" y="43.2" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="21.453594" y="47.378711" transform="rotate(-0 21.453594 47.378711)">IL</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m153a6cff6b" x="30.953594" y="29.563636" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="21.453594" y="33.742347" transform="rotate(-0 21.453594 33.742347)">PA</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#m153a6cff6b" x="30.953594" y="15.927273" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="21.453594" y="20.105984" transform="rotate(-0 21.453594 20.105984)">MI</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.953594 75.927273
-L 120.096451 75.927273
-L 120.096451 65.018182
-L 30.953594 65.018182
-z
-" clip-path="url(#p226fba65bc)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 30.953594 62.290909
-L 120.096451 62.290909
-L 120.096451 51.381818
-L 30.953594 51.381818
-z
-" clip-path="url(#p226fba65bc)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 30.953594 48.654545
-L 120.096451 48.654545
-L 120.096451 37.745455
-L 30.953594 37.745455
-z
-" clip-path="url(#p226fba65bc)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 30.953594 35.018182
-L 120.096451 35.018182
-L 120.096451 24.109091
-L 30.953594 24.109091
-z
-" clip-path="url(#p226fba65bc)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 30.953594 21.381818
-L 120.096451 21.381818
-L 120.096451 10.472727
-L 30.953594 10.472727
-z
-" clip-path="url(#p226fba65bc)" style="fill: #ee854a; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 30.953594 79.2
-L 30.953594 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 30.953594 79.2
-L 124.553594 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
-  <g id="axes_2">
-   <g id="matplotlib.axis_3">
-    <g id="ytick_6">
-     <g id="line2d_8"/>
-     <g id="text_8">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="128.053594" y="73.51179" transform="rotate(-0 128.053594 73.51179)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_7">
-     <g id="line2d_9"/>
-     <g id="text_9">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="128.053594" y="59.875426" transform="rotate(-0 128.053594 59.875426)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_8">
-     <g id="line2d_10"/>
-     <g id="text_10">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="128.053594" y="46.239063" transform="rotate(-0 128.053594 46.239063)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_9">
-     <g id="line2d_11"/>
-     <g id="text_11">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="128.053594" y="32.602699" transform="rotate(-0 128.053594 32.602699)">20.0%</text>
-     </g>
-    </g>
-    <g id="ytick_10">
-     <g id="line2d_12"/>
-     <g id="text_12">
-      <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: start; fill: var(--color-text-primary)" x="128.053594" y="18.966335" transform="rotate(-0 128.053594 18.966335)">20.0%</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_9">
-    <path d="M 30.953594 79.2
-L 30.953594 7.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 30.953594 79.2
-L 124.553594 79.2
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p226fba65bc">
-   <rect x="30.953594" y="7.2" width="93.6" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-            <details data-test="frequent-values-details">
-                <summary>Most frequent values</summary>
-                <div class="shrink">
-                    <div class="copybutton-grid">
-
-
-                        <div class="box" data-test="frequent-value-0">
-                            <pre id="col_5-freq-value-0"
-                                data-copy-text="&#39;MI&#39;">MI</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5-freq-value-0">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-1">
-                            <pre id="col_5-freq-value-1"
-                                data-copy-text="&#39;PA&#39;">PA</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5-freq-value-1">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-2">
-                            <pre id="col_5-freq-value-2"
-                                data-copy-text="&#39;IL&#39;">IL</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5-freq-value-2">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-3">
-                            <pre id="col_5-freq-value-3"
-                                data-copy-text="&#39;KY&#39;">KY</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5-freq-value-3">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-
-                        <div class="box" data-test="frequent-value-4">
-                            <pre id="col_5-freq-value-4"
-                                data-copy-text="&#39;TX&#39;">TX</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5-freq-value-4">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-
-
-                        <span class="grid-separator">List:</span>
-
-                        <div class="box">
-                            <pre id="col_5-freq-value-list"
-                                data-copy-text="[&#39;MI&#39;, &#39;PA&#39;, &#39;IL&#39;, &#39;KY&#39;, &#39;TX&#39;]">[&#39;MI&#39;, &#39;PA&#39;, &#39;IL&#39;, &#39;KY&#39;, &#39;TX&#39;]</pre>
-
-<button
-    class="copybutton copybutton-left"
-    data-manager="CopyButton"
-    type="button"
-    data-target-id="col_5-freq-value-list">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-</svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
-</svg>
-    <div class="copied-message">Copied!</div>
-</button>
-
-                        </div>
-                    </div>
-                </div>
-            </details>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_6"
-    data-name-repr="&#39;lat&#39;"
-    data-column-name="lat"
-    data-column-idx="6"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">lat</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>39.2 ±
-                    3.78
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>39.9 ±
-                    2.93
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">32.9</span> |
-                    <span class="max-value">42.2</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14.57em" height="8.97em" viewBox="0 0 174.89875 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.426011</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-L 167.69875 7.95014
-L 23.69875 7.95014
-L 23.69875 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="ma82378027d" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#ma82378027d" x="59.810115" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="59.810115" y="97.807561" transform="rotate(-0 59.810115 97.807561)">35</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#ma82378027d" x="130.069648" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="130.069648" y="97.807561" transform="rotate(-0 130.069648 97.807561)">40</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_3">
-      <defs>
-       <path id="m8253d73988" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m8253d73988" x="23.69875" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="84.12885" transform="rotate(-0 14.19875 84.12885)">0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m8253d73988" x="23.69875" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="49.843136" transform="rotate(-0 14.19875 49.843136)">1</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m8253d73988" x="23.69875" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="14.19875" y="15.557422" transform="rotate(-0 14.19875 15.557422)">2</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 30.244205 79.95014
-L 43.335103 79.95014
-L 43.335103 45.664425
-L 30.244205 45.664425
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 43.335103 79.95014
-L 56.426001 79.95014
-L 56.426001 79.95014
-L 43.335103 79.95014
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 56.426001 79.95014
-L 69.516953 79.95014
-L 69.516953 79.95014
-L 56.426001 79.95014
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 69.516953 79.95014
-L 82.607852 79.95014
-L 82.607852 79.95014
-L 69.516953 79.95014
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 82.607852 79.95014
-L 95.69875 79.95014
-L 95.69875 79.95014
-L 82.607852 79.95014
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 95.69875 79.95014
-L 108.789648 79.95014
-L 108.789648 79.95014
-L 95.69875 79.95014
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 108.789648 79.95014
-L 121.880547 79.95014
-L 121.880547 45.664425
-L 108.789648 45.664425
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 121.880547 79.95014
-L 134.971499 79.95014
-L 134.971499 45.664425
-L 121.880547 45.664425
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 134.971499 79.95014
-L 148.062397 79.95014
-L 148.062397 79.95014
-L 134.971499 79.95014
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 148.062397 79.95014
-L 161.153295 79.95014
-L 161.153295 11.378711
-L 148.062397 11.378711
-z
-" clip-path="url(#p4852bb384a)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 23.69875 79.95014
-L 23.69875 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 23.69875 79.95014
-L 167.69875 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p4852bb384a">
-   <rect x="23.69875" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_7"
-    data-name-repr="&#39;long&#39;"
-    data-column-name="long"
-    data-column-idx="7"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">long</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>-85.6 ±
-                    7.90
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>-84.7 ±
-                    4.56
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">-97.0</span> |
-                    <span class="max-value">-75.2</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.45em" height="8.97em" viewBox="0 0 185.393438 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.474902</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 34.193438 79.95014
-L 178.193438 79.95014
-L 178.193438 7.95014
-L 34.193438 7.95014
-L 34.193438 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mc90f750b39" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#mc90f750b39" x="83.004954" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="83.004954" y="97.807561" transform="rotate(-0 83.004954 97.807561)">−90</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mc90f750b39" x="143.065855" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="143.065855" y="97.807561" transform="rotate(-0 143.065855 97.807561)">−80</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_3">
-      <defs>
-       <path id="m03a5bd4ca8" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m03a5bd4ca8" x="34.193438" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.693438" y="84.12885" transform="rotate(-0 24.693438 84.12885)">0.0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#m03a5bd4ca8" x="34.193438" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.693438" y="49.843136" transform="rotate(-0 24.693438 49.843136)">0.5</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m03a5bd4ca8" x="34.193438" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.693438" y="15.557422" transform="rotate(-0 24.693438 15.557422)">1.0</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 40.738892 79.95014
-L 53.829787 79.95014
-L 53.829787 11.378711
-L 40.738892 11.378711
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 53.829787 79.95014
-L 66.920729 79.95014
-L 66.920729 79.95014
-L 53.829787 79.95014
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 66.920729 79.95014
-L 80.011624 79.95014
-L 80.011624 79.95014
-L 66.920729 79.95014
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 80.011624 79.95014
-L 93.102519 79.95014
-L 93.102519 79.95014
-L 80.011624 79.95014
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 93.102519 79.95014
-L 106.193415 79.95014
-L 106.193415 11.378711
-L 93.102519 11.378711
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 106.193415 79.95014
-L 119.284356 79.95014
-L 119.284356 11.378711
-L 106.193415 11.378711
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 119.284356 79.95014
-L 132.375251 79.95014
-L 132.375251 11.378711
-L 119.284356 11.378711
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 132.375251 79.95014
-L 145.466146 79.95014
-L 145.466146 79.95014
-L 132.375251 79.95014
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 145.466146 79.95014
-L 158.557088 79.95014
-L 158.557088 79.95014
-L 145.466146 79.95014
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 158.557088 79.95014
-L 171.647983 79.95014
-L 171.647983 11.378711
-L 158.557088 11.378711
-z
-" clip-path="url(#p6686545493)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 34.193438 79.95014
-L 34.193438 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 34.193437 79.95014
-L 178.193437 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p6686545493">
-   <rect x="34.193438" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div class="card column-summary" id="col_8"
-    data-name-repr="&#39;TMAX&#39;"
-    data-column-name="TMAX"
-    data-column-idx="8"
-
-
-    data-manager="FilterableColumn "
-
-
-    data-role="selectable-column" >
-    <div class="card-header">
-        <h3>
-
-            <input data-role="select-column-checkbox"
-                data-manager="SelectColumnCheckBox" type="checkbox">
-
-            <span class="select-all wrap-long-name">TMAX</span>
-        </h3>
-        <span>Float64DType</span></div>
-    <div class="column-summary-content wrapper">
-        <div>
-            <dl>
-                <dt>Null values</dt>
-               <dd class="ok">0 (0.0%)</dd>
-
-
-                <dt>Unique values</dt>
-                <dd>
-                    5 (100.0%)
-
-                </dd>
-
-
-
-
-
-
-
-                <dt>Mean ± Std</dt>
-                <dd>9.37 ±
-                    6.02
-
-                </dd>
-
-
-                <dt>Median ± IQR</dt>
-                <dd>11.1 ±
-                    8.67
-
-                </dd>
-
-                <dt>Min | Max</dt>
-                <dd>
-                    <span class="min-value">1.21</span> |
-                    <span class="max-value">15.5</span>
-
-                </dd>
-
-
-
-
-            </dl>
-        </div>
-
-
-
-
-        <div>
-            <div class="margin-t-m" data-svg-needs-adjust-viewbox>
-                <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.45em" height="8.97em" viewBox="0 0 185.393438 107.65014" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-07-06T12:25:30.525645</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">\*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="axes_1">
-   <g id="patch_1">
-    <path d="M 34.193438 79.95014
-L 178.193438 79.95014
-L 178.193438 7.95014
-L 34.193438 7.95014
-L 34.193438 79.95014
-z
-" style="fill: none"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="m647534c677" d="M 0 0
-L 0 6
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m647534c677" x="75.392245" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="75.392245" y="97.807561" transform="rotate(-0 75.392245 97.807561)">5</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#m647534c677" x="121.073629" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="121.073629" y="97.807561" transform="rotate(-0 121.073629 97.807561)">10</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#m647534c677" x="166.755014" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: middle; fill: var(--color-text-primary)" x="166.755014" y="97.807561" transform="rotate(-0 166.755014 97.807561)">15</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_4">
-      <defs>
-       <path id="m5661f0819a" d="M 0 0
-L -6 0
-" style="stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </defs>
-      <g>
-       <use xlink:href="#m5661f0819a" x="34.193438" y="79.95014" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.693438" y="84.12885" transform="rotate(-0 24.693438 84.12885)">0.0</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#m5661f0819a" x="34.193438" y="45.664425" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.693438" y="49.843136" transform="rotate(-0 24.693438 49.843136)">0.5</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#m5661f0819a" x="34.193438" y="11.378711" style="fill: var(--color-text-primary); stroke: var(--color-text-primary); stroke-width: 1.25"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 11px; font-family: 'Arial', 'DejaVu Sans', 'Liberation Sans', 'Bitstream Vera Sans', sans-serif; text-anchor: end; fill: var(--color-text-primary)" x="24.693438" y="15.557422" transform="rotate(-0 24.693438 15.557422)">1.0</text>
-     </g>
-    </g>
-   </g>
-   <g id="patch_2">
-    <path d="M 40.738892 79.95014
-L 53.829802 79.95014
-L 53.829802 11.378711
-L 40.738892 11.378711
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 53.829802 79.95014
-L 66.920711 79.95014
-L 66.920711 79.95014
-L 53.829802 79.95014
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 66.920711 79.95014
-L 80.01162 79.95014
-L 80.01162 11.378711
-L 66.920711 11.378711
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 80.01162 79.95014
-L 93.102529 79.95014
-L 93.102529 79.95014
-L 80.01162 79.95014
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 93.102529 79.95014
-L 106.193434 79.95014
-L 106.193434 79.95014
-L 93.102529 79.95014
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 106.193434 79.95014
-L 119.284347 79.95014
-L 119.284347 79.95014
-L 106.193434 79.95014
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 119.284347 79.95014
-L 132.375252 79.95014
-L 132.375252 11.378711
-L 119.284347 11.378711
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 132.375252 79.95014
-L 145.466165 79.95014
-L 145.466165 79.95014
-L 132.375252 79.95014
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 145.466165 79.95014
-L 158.557078 79.95014
-L 158.557078 11.378711
-L 145.466165 11.378711
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 158.557078 79.95014
-L 171.647983 79.95014
-L 171.647983 11.378711
-L 158.557078 11.378711
-z
-" clip-path="url(#p7a2f85d003)" style="fill: #4c72b0; stroke: var(--color-text-primary); stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 34.193438 79.95014
-L 34.193438 7.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 34.193438 79.95014
-L 178.193437 79.95014
-" style="fill: none; stroke: var(--color-text-primary); stroke-width: 1.25; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p7a2f85d003">
-   <rect x="34.193438" y="7.95014" width="144" height="72"/>
-  </clipPath>
- </defs>
-</svg>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-    </div>
-    </div>
-
-</article>
-
-<div data-hidden
-     data-hide-on="NON_EMPTY_COLUMN_FILTER_SELECTED"
-     data-show-on="EMPTY_COLUMN_FILTER_SELECTED"
-     class="text wrapper">
-<p>
-No columns match the selected filter: <strong data-manager="ColumnFilterName"></strong>. You can change the column filter in the dropdown menu above.
-</p>
-<p>
-    <button type="button"
-            data-manager="ResetColumnFilter"
-            data-test="show-all-columns-button">Show all columns</button>
-</p>
-</div>
-</div>
-<div class="tab-panel" id="column-associations-panel" data-hidden
-    data-test="associations-panel">
-    <article class="margin-t-s flex-reverse flex-end wrapper gap-l">
-
-
-    <div class="horizontal-scroll vertical-scroll-table-wrapper">
-    <table class="pure-table pure-table-bordered sticky-header-table">
-        <thead>
-            <tr>
-                <th scope="col">Column 1</th>
-                <th scope="col">Column 2</th>
-                <th scope="col"><a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Cramér's V</a></th>
-                <th scope="col"><a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson's Correlation</a></th>
-            </tr>
-        </thead>
-        <tbody>
-
-            <tr>
-                <td class="elided">long</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.303</td>
-            </tr>
-
-            <tr>
-                <td class="elided">lat</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.820</td>
-            </tr>
-
-            <tr>
-                <td class="elided">lat</td>
-                <td class="elided">long</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>0.665</td>
-            </tr>
-
-            <tr>
-                <td class="elided">state</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">state</td>
-                <td class="elided">long</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">state</td>
-                <td class="elided">lat</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">airport</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">airport</td>
-                <td class="elided">long</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">airport</td>
-                <td class="elided">lat</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">airport</td>
-                <td class="elided">state</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">iata</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">iata</td>
-                <td class="elided">long</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">iata</td>
-                <td class="elided">lat</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">iata</td>
-                <td class="elided">state</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">iata</td>
-                <td class="elided">airport</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">ArrDelay</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.816</td>
-            </tr>
-
-            <tr>
-                <td class="elided">ArrDelay</td>
-                <td class="elided">long</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>-0.0416</td>
-            </tr>
-
-            <tr>
-                <td class="elided">ArrDelay</td>
-                <td class="elided">lat</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td>0.718</td>
-            </tr>
-
-            <tr>
-                <td class="elided">ArrDelay</td>
-                <td class="elided">state</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">ArrDelay</td>
-                <td class="elided">airport</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">ArrDelay</td>
-                <td class="elided">iata</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Origin</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Origin</td>
-                <td class="elided">long</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Origin</td>
-                <td class="elided">lat</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Origin</td>
-                <td class="elided">state</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Origin</td>
-                <td class="elided">airport</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Origin</td>
-                <td class="elided">iata</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Origin</td>
-                <td class="elided">ArrDelay</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Year_Month_DayofMonth</td>
-                <td class="elided">TMAX</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Year_Month_DayofMonth</td>
-                <td class="elided">long</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Year_Month_DayofMonth</td>
-                <td class="elided">lat</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Year_Month_DayofMonth</td>
-                <td class="elided">state</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Year_Month_DayofMonth</td>
-                <td class="elided">airport</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Year_Month_DayofMonth</td>
-                <td class="elided">iata</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Year_Month_DayofMonth</td>
-                <td class="elided">ArrDelay</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td class="elided">Year_Month_DayofMonth</td>
-                <td class="elided">Origin</td>
-                <td
-
-                    class="critical">
-                    1.00
-                </td>
-                <td></td>
-            </tr>
-
-        </tbody>
-    </table>
-    </div>
-
-    <div class="text shrinkable-text">
-        The table below shows the strength of association between the most similar columns in the dataframe.
-        <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Cramér's V</a> statistic is a number between 0 and 1.
-        When it is close to 1 the columns are strongly associated — they contain similar information.
-        In this case, one of them may be redundant and for some models (such as linear models) it might be beneficial to remove it.
-    </div>
-
-
-
-</article>
-</div>
-
 
 
 <div class="report-bottom-border"></div>
@@ -35119,7 +20361,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_ddc70042">
+    <skrub-table-report class="report" id="report_0ba4a8a0">
     </skrub-table-report>
 
     <script type="module">
@@ -36223,7 +21465,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_ddc70042-wrapper-fallback">
+<div id="report_0ba4a8a0-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -36234,8 +21476,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_ddc70042-wrapper").removeAttribute("hidden");
- document.getElementById("report_ddc70042-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_0ba4a8a0-wrapper").removeAttribute("hidden");
+ document.getElementById("report_0ba4a8a0-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -36264,11 +21506,11 @@ state_temperatures.head()
 
 ```none
 state
-AK   -3.891699
-MT    0.320202
-ND    0.851794
-MN    1.386004
-WA    1.426420
+AK   -5.347732
+MT   -0.020090
+ND    0.974464
+WA    1.034620
+MN    1.612931
 Name: TMAX, dtype: float64
 ```
 
@@ -36284,11 +21526,11 @@ state_temperatures.tail()
 
 ```none
 state
-LA    21.220587
-FL    24.854120
-HI    27.535759
-VI    30.320835
-PR    30.906107
+LA    21.115986
+FL    24.734042
+HI    27.380370
+VI    29.477353
+PR    29.972296
 Name: TMAX, dtype: float64
 ```
 
@@ -36341,8 +21583,8 @@ the [`fuzzy_join()`](../../reference/generated/skrub.fuzzy_joinhtml.md#skrub.fuz
 [`InterpolationJoiner`](../../reference/generated/skrub.InterpolationJoinerhtml.md#skrub.InterpolationJoiner) where the estimators are 1-nearest-neighbor
 estimators.
 
-**Total running time of the script:** (0 minutes 41.264 seconds)
+**Total running time of the script:** (0 minutes 44.320 seconds)
 
-**Estimated memory usage:**  2368 MB
+**Estimated memory usage:**  2206 MB
 
 <a id="sphx-glr-download-auto-examples-03-joining-0080-interpolation-join-py"></a>

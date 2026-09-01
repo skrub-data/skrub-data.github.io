@@ -53,6 +53,23 @@ an int as the `default` argument to set the default outcome.
 [`optional`](skrub.optionalhtml.md#skrub.optional)
 : Choose between executing an operation or not.
 
+### Examples
+
+```pycon
+>>> import skrub
+>>> print(skrub.choose_int(0,2).as_data_op().skb.describe_param_grid())
+- choose_int(0, 2): choose_int(0, 2)
+>>> print(skrub.choose_int(0,2).default())
+1
+```
+
+We can set the default to another value:
+
+```pycon
+>>> print(skrub.choose_int(0, 2, default=0).default())
+0
+```
+
 <!-- !! processed by numpydoc !! -->
 
 ## Gallery examples

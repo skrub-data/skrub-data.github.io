@@ -2,7 +2,7 @@
 
 ### skrub.datasets.fetch_country_happiness(data_home=None)
 
-Fetch the happiness index dataset (regression) available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
+Fetch the happiness index dataset available at         [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
 
 This is a regression use-case, where the goal is to predict the happiness
 index. The dataset contains data from the [2022 World Happiness Report](https://worldhappiness.report/), and from [the World Bank open data
@@ -42,6 +42,15 @@ platform](https://data.worldbank.org/). Size on disk: 64KB.
     <br/>
     legal_rights_index_path
     : The path to the legal rights index CSV file.
+
+### Examples
+
+```pycon
+>>> from skrub.datasets import fetch_country_happiness
+>>> data = fetch_country_happiness()
+>>> data.happiness_report.shape
+(146, 12)
+```
 
 <!-- !! processed by numpydoc !! -->
 

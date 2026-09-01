@@ -2,9 +2,8 @@
 
 ### skrub.datasets.fetch_credit_fraud(data_home=None, split='train')
 
-Fetch the credit fraud dataset (classification).
-
-Available at [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
+Fetch the credit fraud dataset. Available
+at [https://github.com/skrub-data/skrub-data-files](https://github.com/skrub-data/skrub-data-files)
 
 This is an imbalanced binary classification use-case. This dataset consists of
 two tables:
@@ -40,6 +39,15 @@ Size on disk: 16MB.
     <br/>
     products_path
     : The path to the products CSV file.
+
+### Examples
+
+```pycon
+>>> from skrub.datasets import fetch_credit_fraud
+>>> data = fetch_credit_fraud()
+>>> data.baskets.shape
+(61241, 2)
+```
 
 <!-- !! processed by numpydoc !! -->
 

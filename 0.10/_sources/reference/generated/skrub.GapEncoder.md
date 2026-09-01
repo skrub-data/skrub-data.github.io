@@ -76,8 +76,8 @@ by raising a `RejectColumn` exception.
 
   **ngram_range**
   : The lower and upper boundaries of the range of n-values for different
-    : n-grams used in the string similarity. All values of `n` such
-      that `min_n <= n <= max_n` will be used.
+    n-grams used in the string similarity. All values of `n` such
+    that `min_n <= n <= max_n` will be used.
 
   **analyzer**
   : Analyzer parameter for the HashingVectorizer / CountVectorizer.

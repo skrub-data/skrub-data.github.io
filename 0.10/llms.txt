@@ -94,6 +94,7 @@
 - [cardinality_below](https://skrub-data.org/stable/_sources/reference/generated/skrub.selectors.cardinality_below.md)
 - [categorical](https://skrub-data.org/stable/_sources/reference/generated/skrub.selectors.categorical.md)
 - [cols](https://skrub-data.org/stable/_sources/reference/generated/skrub.selectors.cols.md)
+- [drop](https://skrub-data.org/stable/_sources/reference/generated/skrub.selectors.drop.md)
 - [filter](https://skrub-data.org/stable/_sources/reference/generated/skrub.selectors.filter.md)
 - [filter_names](https://skrub-data.org/stable/_sources/reference/generated/skrub.selectors.filter_names.md)
 - [float](https://skrub-data.org/stable/_sources/reference/generated/skrub.selectors.float.md)

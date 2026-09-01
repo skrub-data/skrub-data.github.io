@@ -35,13 +35,13 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=cb8930eaaf36d9849b67" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=cb8930eaaf36d9849b67" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Vibur" />
-    <link rel="stylesheet" type="text/css" href="_static/jupyterlite_sphinx.css?v=8ee2c72c" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyterlite_sphinx.css?v=f676e775" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css?v=fd6457a4" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css?v=f4aeca0c" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css?v=2082cf3c" />
@@ -50,12 +50,12 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=7821ceae" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="_static/scripts/fontawesome.js?digest=a95f357e85573c9b56d5"></script>
+  <script defer src="_static/scripts/fontawesome.js?digest=cb8930eaaf36d9849b67"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=cb8930eaaf36d9849b67" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=cb8930eaaf36d9849b67" />
 
-    <script src="_static/documentation_options.js?v=82662543"></script>
+    <script src="_static/documentation_options.js?v=261ea15a"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -65,9 +65,9 @@
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'install';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.19.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.21.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://raw.githubusercontent.com/skrub-data/skrub/main/doc/version.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.10.0';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.10.1';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             true;
         </script>
@@ -82,7 +82,7 @@
     <link rel="prev" title="Home" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.10.0" />
+  <meta name="docsearch:version" content="0.10.1" />
   
     
     <script src="_static/searchtools.js"></script>
@@ -712,7 +712,7 @@ You can set up a virtual environment with Conda, or with python’s <code class=
 </div>
 <p>Then, with the environment activated and at the root of your local copy of skrub,
 install the local package in editable mode with development dependencies:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install -e &quot;.[dev]&quot;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install -e ".[dev]"</span>
 </pre></div>
 </div>
 <p>Enabling pre-commit hooks ensures code style consistency by triggering checks (mainly formatting) every time you run a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>.</p>
@@ -733,7 +733,7 @@ IDE integrations. These revisions are listed in .git-blame-ignore-revs:</p>
 </div>
 <p>Testing should take about 5 minutes.</p>
 <p>If you see some warnings like:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>UserWarning:<span class="w"> </span>Only<span class="w"> </span>pandas<span class="w"> </span>and<span class="w"> </span>polars<span class="w"> </span>DataFrames<span class="w"> </span>are<span class="w"> </span>supported,<span class="w"> </span>but<span class="w"> </span>input<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>Numpy<span class="w"> </span>array.<span class="w"> </span>Please<span class="w"> </span>convert<span class="w"> </span>Numpy<span class="w"> </span>arrays<span class="w"> </span>to<span class="w"> </span>DataFrames<span class="w"> </span>before<span class="w"> </span>passing<span class="w"> </span>them<span class="w"> </span>to<span class="w"> </span>skrub<span class="w"> </span>transformers.<span class="w"> </span>Converting<span class="w"> </span>to<span class="w"> </span>pandas<span class="w"> </span>DataFrame<span class="w"> </span>with<span class="w"> </span>columns<span class="w"> </span><span class="o">[</span><span class="s1">&#39;0&#39;</span>,<span class="w"> </span><span class="s1">&#39;1&#39;</span>,<span class="w"> </span>…<span class="o">]</span>.
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>UserWarning:<span class="w"> </span>Only<span class="w"> </span>pandas<span class="w"> </span>and<span class="w"> </span>polars<span class="w"> </span>DataFrames<span class="w"> </span>are<span class="w"> </span>supported,<span class="w"> </span>but<span class="w"> </span>input<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span>Numpy<span class="w"> </span>array.<span class="w"> </span>Please<span class="w"> </span>convert<span class="w"> </span>Numpy<span class="w"> </span>arrays<span class="w"> </span>to<span class="w"> </span>DataFrames<span class="w"> </span>before<span class="w"> </span>passing<span class="w"> </span>them<span class="w"> </span>to<span class="w"> </span>skrub<span class="w"> </span>transformers.<span class="w"> </span>Converting<span class="w"> </span>to<span class="w"> </span>pandas<span class="w"> </span>DataFrame<span class="w"> </span>with<span class="w"> </span>columns<span class="w"> </span><span class="o">[</span><span class="s1">'0'</span>,<span class="w"> </span><span class="s1">'1'</span>,<span class="w"> </span>…<span class="o">]</span>.
 <span class="w">  </span>warnings.warn<span class="o">(</span>
 </pre></div>
 </div>
@@ -746,7 +746,7 @@ dependencies to use them. The following will install
 <a class="reference external" href="https://pypi.org/project/torch/">torch</a>,
 <a class="reference external" href="https://pypi.org/project/transformers/">transformers</a>,
 and <a class="reference external" href="https://pypi.org/project/sentence-transformers/">sentence-transformers</a>.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[transformers]&quot;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">".[transformers]"</span>
 </pre></div>
 </div>
 <p>Now that you’re set up,
@@ -837,8 +837,8 @@ and start coding!</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5"></script>
-<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=cb8930eaaf36d9849b67"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=cb8930eaaf36d9849b67"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

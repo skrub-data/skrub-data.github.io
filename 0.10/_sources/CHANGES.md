@@ -2,6 +2,70 @@
 
 # Release history
 
+## Release 0.10.1
+
+### Changes
+
+- [`TextEncoder`](reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder)’s `verbose` parameter is now an `int` instead of a
+  `bool`, where `verbose=0` silences the progress bar and
+  `verbose>=1` shows it. The default is now `0`. Passing a
+  boolean is still accepted.
+  [#2249](https://github.com/skrub-data/skrub/pull/2249) by [Jayant-kernel](https://github.com/Jayant-kernel).
+- [`patch_display()`](reference/generated/skrub.patch_displayhtml.md#skrub.patch_display) now uses a minimal, faster TableReport without plots or
+  column associations by default. The old behavior can still be achieved by calling
+  `patch_display(plot_distributions="auto", compute_associations="auto")`.
+  [#2103](https://github.com/skrub-data/skrub/pull/2103) by [Naa Ashiorkor Nortey](https://github.com/ashiorkornortey).
+- The error message when a key is missing from the environment passed to a
+  [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) or [`SkrubLearner`](reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) has been improved.
+  [#2211](https://github.com/skrub-data/skrub/pull/2211) by [Jérôme Dockès](https://github.com/jeromedockes).
+- When a cross-validation splitter has been passed to
+  [`DataOp.skb.mark_as_X()`](reference/generated/skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X), it it now possible to select a specific split
+  from it when calling [`DataOp.skb.train_test_split()`](reference/generated/skrub.DataOp.skb.train_test_splithtml.md#skrub.DataOp.skb.train_test_split) by passing
+  `split_index`; for example `data_op.skb.train_test_split(split_index=3)`
+  to get the third split.
+
+  The split that is returned by default when `split_index` is not specified is
+  now the *last* split produced by the splitter (it was the first before).
+
+  Moreover, the keys `row_indices_train` and `row_indices_test` are added to
+  the returned dictionary when using the `mark_as_X` splitter. And the keys
+  `X` (and `y` when it exists) are added to the dictionaries returned by
+  [`DataOp.skb.train_test_split()`](reference/generated/skrub.DataOp.skb.train_test_splithtml.md#skrub.DataOp.skb.train_test_split) and [`DataOp.skb.iter_cv_splits()`](reference/generated/skrub.DataOp.skb.iter_cv_splitshtml.md#skrub.DataOp.skb.iter_cv_splits),
+  containing the full X and y before splitting.
+
+  [#2213](https://github.com/skrub-data/skrub/pull/2213) by [Jérôme Dockès](https://github.com/jeromedockes).
+- Added support in [`tabular_pipeline()`](reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline) for estimators instantiated from either
+  [`tabicl.TabICLClassifier`](https://tabicl.readthedocs.io/en/stable/api.html#tabicl.TabICLClassifier) or [`tabicl.TabICLRegressor`](https://tabicl.readthedocs.io/en/stable/api.html#tabicl.TabICLRegressor) with recommended
+  default parameters of [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) as the first step, and the estimator
+  as the second step.
+  [#2222](https://github.com/skrub-data/skrub/pull/2222) by [Ashwin V. Mohanan](https://github.com/ashwinvis), with guidance from
+  [Jérôme Dockès](https://github.com/jeromedockes).
+
+### Bugfixes
+
+- [`DropSimilar`](reference/generated/skrub.DropSimilarhtml.md#skrub.DropSimilar) now works with Polars dataframes when PyArrow is not
+  installed by avoiding the unused Pearson’s correlation computation.
+  [#2216](https://github.com/skrub-data/skrub/pull/2216) by [Shreyansh Goyal](https://github.com/ShreyanshGoyal).
+- The parallel coordinate plot created by `ParamSearch.show_results()` could
+  have incorrect tick labels in some cases. This has been fixed in [#2215](https://github.com/skrub-data/skrub/pull/2215) by
+  [Jérôme Dockès](https://github.com/jeromedockes).
+- [`GapEncoder`](reference/generated/skrub.GapEncoderhtml.md#skrub.GapEncoder) with `init="k-means"` raised an error when the input
+  column contained missing values. This has been fixed in [#2238](https://github.com/skrub-data/skrub/pull/2238) by
+  [Achraf Ez](https://github.com/Hrafz).
+- [`DatetimeEncoder`](reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) no longer raises `UnboundLocalError` when
+  `resolution=None` is combined with `periodic_encoding="circular"` or
+  `"spline"`, and no longer fits an unused `weekday` periodic encoder when
+  `resolution` is finer than `"hour"`. [#2240](https://github.com/skrub-data/skrub/pull/2240) by
+  [Achraf Ez](https://github.com/Hrafz).
+- When `cols` was not provided, [`AggJoiner`](reference/generated/skrub.AggJoinerhtml.md#skrub.AggJoiner) and [`MultiAggJoiner`](reference/generated/skrub.MultiAggJoinerhtml.md#skrub.MultiAggJoiner)
+  selected the columns to aggregate through a Python `set`, so the order of the
+  aggregated output columns varied between runs. They now keep the order in which
+  the columns appear in the auxiliary table. This has been fixed in [#2250](https://github.com/skrub-data/skrub/pull/2250) by
+  [Dylan Pulver](https://github.com/dylanpulver).
+- A `cloudpickle` import error that could happen after updating some required
+  dependencies was fixed in [#2261](https://github.com/skrub-data/skrub/pull/2261) by [Jérôme Dockès](https://github.com/jeromedockes)
+  and [Riccardo Cappuzzo](https://github.com/rcap107).
+
 ## Release 0.10.0
 
 ### New Features
@@ -170,7 +234,7 @@
 - A new dataframe generator, [`datasets.toy_cities()`](reference/generated/skrub.datasets.toy_citieshtml.md#skrub.datasets.toy_cities), has been added for
   use cases on dataframes with variable sizes and variable correlation between
   columns. [#2042](https://github.com/skrub-data/skrub/pull/2042) by [Eloi Massoulié](https://github.com/emassoulie).
-- A new selector function, `selectors.drop()`, has been added to drop columns
+- A new selector function, [`selectors.drop()`](reference/generated/skrub.selectors.drophtml.md#skrub.selectors.drop), has been added to drop columns
   from a dataframe using a selector. It mirrors the behavior of [`selectors.select()`](reference/generated/skrub.selectors.selecthtml.md#skrub.selectors.select).
   [#2108](https://github.com/skrub-data/skrub/pull/2108) by [Mary Njoroge](https://github.com/Maryahcee).
 

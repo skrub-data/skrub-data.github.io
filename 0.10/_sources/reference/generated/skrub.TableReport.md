@@ -38,9 +38,9 @@ for programmatic access or for inclusion in documents.
   **column_filters**
   : A dict for adding custom entries to the column filter dropdown menu.
     Each key is the filter named to be displayed in the dropdown menu
-    (e.g. `"first_10"`), and the value is the desired filter. Allowed
-    formats for the filter values are a list of column names,
-    a list of column indices, or a Selector object.
+    (e.g. `"first_10"`), and the value is the desired filter. Filters
+    may be specified as a list of column names, a list of column indices,
+    or a [skrub selectors](../../modules/multi_column_operations/selectorshtml.md#user-guide-selectors) object.
     See the end of the “Examples” section below for details.
 
   **verbose**
@@ -107,9 +107,8 @@ parquet file and generate a report directly in your web browser.
 >>> report = TableReport(df)
 ```
 
-If you are in a Jupyter notebook, to display the report just have it be the
-last expression evaluated in a cell so that it is displayed in the cell’s
-output.
+To display the report in a Jupyter notebook, simply evaluate the last line above
+in a cell.
 
 ```pycon
 >>> report
@@ -179,8 +178,6 @@ display in the report.
 With the code above, in addition to the default filters such as “All
 columns”, “Numeric columns”, etc., the added “my_filter” will be available
 in the report, selecting both columns “a” and “b”.
-Filters may be specified as a list of column names, a list of column indices,
-or one of the [skrub selectors](../../modules/multi_column_operations/selectorshtml.md#user-guide-selectors) objects.
 
 ### Methods
 

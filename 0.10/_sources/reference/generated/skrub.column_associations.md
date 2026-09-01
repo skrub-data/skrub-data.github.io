@@ -1,17 +1,20 @@
 # column_associations
 
-### skrub.column_associations(df)
+### skrub.column_associations(df, , compute_pearson=True)
 
 Get measures of statistical associations between all pairs of columns.
 
 Reported metrics include Cramer’s V statistic and Pearson’s Correlation
 Coefficient. The result is returned as a dataframe that contains the column
-name and idx for the left and right table and both associations; results
-are sorted in descending order by Cramer’s V association.
+name and idx for the left and right table and the requested associations;
+results are sorted in descending order by Cramer’s V association.
 
 * **Parameters:**
   **df**
   : The dataframe whose columns will be compared to each other.
+
+  **compute_pearson**
+  : Whether to compute Pearson’s Correlation Coefficient. Currently, computing Pearson correlations for polars DataFrames requires PyArrow to be installed and internally converts the dataframe to pandas.
 * **Returns:**
   dataframe
   : The computed associations.
@@ -21,7 +24,9 @@ are sorted in descending order by Cramer’s V association.
 The result is returned as a dataframe with columns:
 
 `['left_column_name', 'left_column_idx', 'right_column_name',
-'right_column_idx', 'cramer_v', 'pearson_corr']`
+'right_column_idx', 'cramer_v', 'pearson_corr']`.
+
+When `compute_pearson=False`, the `'pearson_corr'` column is omitted.
 
 As the function is commutative, each pair of columns appears only once
 (either `col_1`, `col_2` or `col_2`, `col_1` but not both).
