@@ -8,6 +8,14 @@
 
 ### Changes
 
+### Bugfixes
+
+### Deprecations
+
+## Release 0.10.1
+
+### Changes
+
 - [`TextEncoder`](reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder)’s `verbose` parameter is now an `int` instead of a
   `bool`, where `verbose=0` silences the progress bar and
   `verbose>=1` shows it. The default is now `0`. Passing a
@@ -65,8 +73,9 @@
   aggregated output columns varied between runs. They now keep the order in which
   the columns appear in the auxiliary table. This has been fixed in [#2250](https://github.com/skrub-data/skrub/pull/2250) by
   [Dylan Pulver](https://github.com/dylanpulver).
-
-### Deprecations
+- A `cloudpickle` import error that could happen after updating some required
+  dependencies was fixed in [#2261](https://github.com/skrub-data/skrub/pull/2261) by [Jérôme Dockès](https://github.com/jeromedockes)
+  and [Riccardo Cappuzzo](https://github.com/rcap107).
 
 ## Release 0.10.0
 
