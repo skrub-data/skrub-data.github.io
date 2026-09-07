@@ -321,7 +321,7 @@ kwargs. See the reference documentation for details.
 
 This section gives a few tips to avoid recomputing predictions, which is
 particularly important for pipelines for which inference is expensive, such as
-those using the [`TextEncoder`](../../../reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder) or Tabular Foundation Models such as
+those using the `LLMEncoder` or Tabular Foundation Models such as
 [TabICL](https://tabicl.readthedocs.io/en/latest/).
 
 When [`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoringhtml.md#skrub.DataOp.skb.with_scoring) is used, predictions are cached during

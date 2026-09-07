@@ -91,7 +91,7 @@ two strings.
 [`GapEncoder`](skrub.GapEncoderhtml.md#skrub.GapEncoder)
 : Encodes dirty categories (strings) by constructing latent topics with continuous encoding.
 
-[`TextEncoder`](skrub.TextEncoderhtml.md#skrub.TextEncoder)
+`LLMEncoder`
 : Encode string columns with a pretrained language model.
 
 [`deduplicate`](skrub.deduplicatehtml.md#skrub.deduplicate)

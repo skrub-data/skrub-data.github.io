@@ -126,7 +126,7 @@ by raising a `RejectColumn` exception.
 [`SimilarityEncoder`](skrub.SimilarityEncoderhtml.md#skrub.SimilarityEncoder)
 : Encode string columns as a numeric array with n-gram string similarity.
 
-[`TextEncoder`](skrub.TextEncoderhtml.md#skrub.TextEncoder)
+`LLMEncoder`
 : Encode string columns with a pretrained language model.
 
 [`StringEncoder`](skrub.StringEncoderhtml.md#skrub.StringEncoder)

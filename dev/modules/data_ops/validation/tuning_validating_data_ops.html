@@ -946,7 +946,7 @@ kwargs. See the reference documentation for details.</p>
 <h1>Avoiding computing predictions multiple times<a class="headerlink" href="#avoiding-computing-predictions-multiple-times" title="Link to this heading">#</a></h1>
 <p>This section gives a few tips to avoid recomputing predictions, which is
 particularly important for pipelines for which inference is expensive, such as
-those using the <a class="reference internal" href="../../../reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> or Tabular Foundation Models such as
+those using the <code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code> or Tabular Foundation Models such as
 <a class="reference external" href="https://tabicl.readthedocs.io/en/latest/">TabICL</a>.</p>
 <p>When <a class="reference internal" href="../../../reference/generated/skrub.DataOp.skb.with_scoring.html#skrub.DataOp.skb.with_scoring" title="skrub.DataOp.skb.with_scoring"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.with_scoring()</span></code></a> is used, predictions are cached during
 scoring so that if multiple scorers call the same function (e.g. <code class="docutils literal notranslate"><span class="pre">predict()</span></code>

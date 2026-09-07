@@ -717,16 +717,16 @@ threshold can be changed by setting the <code class="docutils literal notranslat
 using <a class="reference internal" href="../../reference/generated/skrub.set_config.html#skrub.set_config" title="skrub.set_config"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_config()</span></code></a>.</p>
 <p>To change the encoder or alter default parameters, instantiate an encoder and pass
 it to <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a>.</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">TableVectorizer</span><span class="p">,</span> <span class="n">DatetimeEncoder</span><span class="p">,</span> <span class="n">TextEncoder</span><span class="p">,</span> <span class="n">SquashingScaler</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">skrub</span><span class="w"> </span><span class="kn">import</span> <span class="n">TableVectorizer</span><span class="p">,</span> <span class="n">DatetimeEncoder</span><span class="p">,</span> <span class="n">LLMEncoder</span><span class="p">,</span> <span class="n">SquashingScaler</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">datetime_enc</span> <span class="o">=</span> <span class="n">DatetimeEncoder</span><span class="p">(</span><span class="n">periodic_encoding</span><span class="o">=</span><span class="s2">"circular"</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">text_enc</span> <span class="o">=</span> <span class="n">TextEncoder</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text_enc</span> <span class="o">=</span> <span class="n">LLMEncoder</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">num_enc</span> <span class="o">=</span> <span class="n">SquashingScaler</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">table_vec</span> <span class="o">=</span> <span class="n">TableVectorizer</span><span class="p">(</span><span class="n">datetime</span><span class="o">=</span><span class="n">datetime_enc</span><span class="p">,</span> <span class="n">high_cardinality</span><span class="o">=</span><span class="n">text_enc</span><span class="p">,</span> <span class="n">numeric</span><span class="o">=</span><span class="n">num_enc</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">table_vec</span>
 <span class="go">TableVectorizer(datetime=DatetimeEncoder(periodic_encoding='circular'),</span>
-<span class="go">                high_cardinality=TextEncoder(), numeric=SquashingScaler())</span>
+<span class="go">                high_cardinality=LLMEncoder(), numeric=SquashingScaler())</span>
 </pre></div>
 </div>
 <p>Besides the transformers provided by skrub, the <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> can also take

@@ -47,17 +47,17 @@ To change the encoder or alter default parameters, instantiate an encoder and pa
 it to [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
 
 ```pycon
->>> from skrub import TableVectorizer, DatetimeEncoder, TextEncoder, SquashingScaler
+>>> from skrub import TableVectorizer, DatetimeEncoder, LLMEncoder, SquashingScaler
 ```
 
 ```pycon
 >>> datetime_enc = DatetimeEncoder(periodic_encoding="circular")
->>> text_enc = TextEncoder()
+>>> text_enc = LLMEncoder()
 >>> num_enc = SquashingScaler()
 >>> table_vec = TableVectorizer(datetime=datetime_enc, high_cardinality=text_enc, numeric=num_enc)
 >>> table_vec
 TableVectorizer(datetime=DatetimeEncoder(periodic_encoding='circular'),
-                high_cardinality=TextEncoder(), numeric=SquashingScaler())
+                high_cardinality=LLMEncoder(), numeric=SquashingScaler())
 ```
 
 Besides the transformers provided by skrub, the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) can also take

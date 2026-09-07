@@ -67,7 +67,7 @@ and `tsvd_{component}` if it does not.
 [`GapEncoder`](skrub.GapEncoderhtml.md#skrub.GapEncoder)
 : Encode string columns by constructing latent topics.
 
-[`TextEncoder`](skrub.TextEncoderhtml.md#skrub.TextEncoder)
+`LLMEncoder`
 : Encode string columns using pre-trained language models.
 
 ### Notes

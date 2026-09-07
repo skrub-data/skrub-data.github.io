@@ -6,7 +6,7 @@ It is possible to use skrub selectors to define which columns to apply
 transformers to, and then apply different transformers to different subsets of
 the data.
 
-For example, this can be useful to apply [`TextEncoder`](../../../reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder) to columns
+For example, this can be useful to apply `LLMEncoder` to columns
 that contain free-flowing text, and [`StringEncoder`](../../../reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder) to other string
 columns that contain categorical data such as country names.
 

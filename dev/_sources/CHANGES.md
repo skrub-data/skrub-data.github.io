@@ -12,6 +12,10 @@
 
 ### Deprecations
 
+- The [`TextEncoder`](reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder) has been renamed `LLMEncoder`. It is still available
+  as an alias, but will be removed in a future release. [#2255](https://github.com/skrub-data/skrub/pull/2255) by
+  [Riccardo Cappuzzo](https://github.com/rcap107).
+
 ## Release 0.10.1
 
 ### Changes
@@ -48,7 +52,6 @@
   [`tabicl.TabICLClassifier`](https://tabicl.readthedocs.io/en/stable/api.html#tabicl.TabICLClassifier) or [`tabicl.TabICLRegressor`](https://tabicl.readthedocs.io/en/stable/api.html#tabicl.TabICLRegressor) with recommended
   default parameters of [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) as the first step, and the estimator
   as the second step.
-
   [#2222](https://github.com/skrub-data/skrub/pull/2222) by [Ashwin V. Mohanan](https://github.com/ashwinvis), with guidance from
   [Jérôme Dockès](https://github.com/jeromedockes).
 

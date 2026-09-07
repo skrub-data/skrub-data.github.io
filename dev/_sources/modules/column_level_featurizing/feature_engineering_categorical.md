@@ -71,13 +71,13 @@ is available in the documentation of the encoder itself.
   computes the n-gram frequency using tf-idf vectorization, followed by truncated SVD
   ([Latent Semantic Analysis](https://en.wikipedia.org/wiki/Latent_semantic_analysis)).
   This is the default encoder used by the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) and the [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline).
-- [`TextEncoder`](../../reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder): **language model-based, strong on text but expensive to run**:
+- `LLMEncoder`: **language model-based, strong on text but expensive to run**:
   This encoder encodes string features using pretrained language models from the
   HuggingFace Hub. It is a wrapper around [sentence-transformers](https://sbert.net/)
   compatible with the scikit-learn API and usable in pipelines. Best for free-flowing
   text and when columns include context found in the pretrained model (e.g., names of
   cities etc.). Note that this encoder can take a very long time to train, especially
-  on large datasets and on CPU. The [`TextEncoder`](../../reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder) has additional dependencies that
+  on large datasets and on CPU. The `LLMEncoder` has additional dependencies that
   are not included in the standard skrub installation.
   Refer to [Install](../../installhtml.md#installation-instructions) for info on how to prepare the
   environment.
@@ -94,7 +94,7 @@ is available in the documentation of the encoder itself.
 | Encoder                                                                                        | Training time   | Performance on categorical data   | Performance on text data   | Notes                                               |
 |------------------------------------------------------------------------------------------------|-----------------|-----------------------------------|----------------------------|-----------------------------------------------------|
 | [`StringEncoder`](../../reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder)    | Fast            | Good                              | Good                       |                                                     |
-| [`TextEncoder`](../../reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder)          | Very slow       | Mediocre to good                  | Very good                  | Requires the `transformers` package to be installed |
+| `LLMEncoder`                                                                                   | Very slow       | Mediocre to good                  | Very good                  | Requires the `transformers` package to be installed |
 | [`GapEncoder`](../../reference/generated/skrub.GapEncoderhtml.md#skrub.GapEncoder)             | Slow            | Good                              | Mediocre to good           | Interpretable                                       |
 | [`MinHashEncoder`](../../reference/generated/skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder) | Very fast       | Mediocre to good                  | Mediocre                   |                                                     |
 

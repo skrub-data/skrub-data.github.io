@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: New Features: Changes: Bugfixes: Deprecations: Release 0.10.1: Changes: TextEncoder ’s verbose parameter is now an int instead of a bool, where verbose=0 silences the progress ..." />
+<meta property="og:description" content="Ongoing development: New Features: Changes: Bugfixes: Deprecations: The TextEncoder has been renamed LLMEncoder. It is still available as an alias, but will be removed in a future release.#2255 by ..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: New Features: Changes: Bugfixes: Deprecations: Release 0.10.1: Changes: TextEncoder ’s verbose parameter is now an int instead of a bool, where verbose=0 silences the progress ..." />
+<meta name="description" content="Ongoing development: New Features: Changes: Bugfixes: Deprecations: The TextEncoder has been renamed LLMEncoder. It is still available as an alias, but will be removed in a future release.#2255 by ..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -602,6 +602,11 @@
 </section>
 <section id="deprecations">
 <h3>Deprecations<a class="headerlink" href="#deprecations" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>The <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> has been renamed <code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code>. It is still available
+as an alias, but will be removed in a future release. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2255">#2255</a> by
+<a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
+</ul>
 </section>
 </section>
 <section id="release-0-10-1">
@@ -638,10 +643,9 @@ containing the full X and y before splitting.</p>
 <li><p>Added support in <a class="reference internal" href="reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a> for estimators instantiated from either
 <a class="reference external" href="https://tabicl.readthedocs.io/en/stable/api.html#tabicl.TabICLClassifier" title="(in TabICL)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tabicl.TabICLClassifier</span></code></a> or <a class="reference external" href="https://tabicl.readthedocs.io/en/stable/api.html#tabicl.TabICLRegressor" title="(in TabICL)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tabicl.TabICLRegressor</span></code></a> with recommended
 default parameters of <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> as the first step, and the estimator
-as the second step.</p>
-<p><a class="reference external" href="https://github.com/skrub-data/skrub/pull/2222">#2222</a> by <a class="reference external" href="https://github.com/ashwinvis">Ashwin V. Mohanan</a>, with guidance from
-<a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p>
-</li>
+as the second step.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2222">#2222</a> by <a class="reference external" href="https://github.com/ashwinvis">Ashwin V. Mohanan</a>, with guidance from
+<a class="reference external" href="https://github.com/jeromedockes">Jérôme Dockès</a>.</p></li>
 </ul>
 </section>
 <section id="id3">
