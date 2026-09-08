@@ -24,10 +24,10 @@ ApplyToCols(transformer=TableVectorizer())
 ```
 
 Note that in order to restrict transformers to a subset of columns,
-they will be wrapped in a meta-estimator [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols). The
+they will be wrapped in a meta-estimator [`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols). The
 actual transformer can be retrieved through the `transformer_` (or
 `transformers_`, in the case of single-column transformers); see the
-documentation of [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols) for details.
+documentation of [`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols) for details.
 
 ```pycon
 >>> fitted_vectorizer.transformer_

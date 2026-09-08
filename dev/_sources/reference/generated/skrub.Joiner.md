@@ -93,10 +93,10 @@ will need to refit the transformer.
     numerical vectors.
 
 #### SEE ALSO
-[`AggJoiner`](skrub.AggJoinerhtml.md#skrub.AggJoiner)
+[`AggJoiner`](skrub.AggJoiner.md#skrub.AggJoiner)
 : Aggregate an auxiliary dataframe before joining it on a base dataframe.
 
-[`fuzzy_join`](skrub.fuzzy_joinhtml.md#skrub.fuzzy_join)
+[`fuzzy_join`](skrub.fuzzy_join.md#skrub.fuzzy_join)
 : Join two tables (dataframes) based on approximate column matching. This is the same functionality as provided by the `Joiner` but exposed as a function rather than a transformer.
 
 ### Notes

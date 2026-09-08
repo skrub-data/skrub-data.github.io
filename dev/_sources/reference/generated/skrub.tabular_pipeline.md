@@ -16,10 +16,10 @@ in future releases.
 
 #### Versionchanged
 Changed in version 0.6.0: The high cardinality encoder has been changed from
-[`MinHashEncoder`](skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder) to [`StringEncoder`](skrub.StringEncoderhtml.md#skrub.StringEncoder).
+[`MinHashEncoder`](skrub.MinHashEncoder.md#skrub.MinHashEncoder) to [`StringEncoder`](skrub.StringEncoder.md#skrub.StringEncoder).
 
 #### Versionchanged
-Changed in version 0.7.0: The [`SquashingScaler`](skrub.SquashingScalerhtml.md#skrub.SquashingScaler) with `max_absolute_value=5` is now used instead of
+Changed in version 0.7.0: The [`SquashingScaler`](skrub.SquashingScaler.md#skrub.SquashingScaler) with `max_absolute_value=5` is now used instead of
 [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler) for centering and scaling
 numerical features when using linear models.
 
@@ -37,7 +37,7 @@ numerical features when using linear models.
     - a scikit-learn estimator: the provided estimator is used as the final step.
 
   **n_jobs**
-  : Number of jobs to run in parallel in the [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer) step. `None`
+  : Number of jobs to run in parallel in the [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer) step. `None`
     means 1 unless in a joblib `parallel_backend` context. `-1` means using all
     processors.
 * **Returns:**
@@ -50,17 +50,17 @@ numerical features when using linear models.
 `tabular_pipeline` returns a scikit-learn [`Pipeline`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline) with
 several steps:
 
-- A [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer) transforms the tabular data into numeric features. Its
+- A [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer) transforms the tabular data into numeric features. Its
   parameters are chosen depending on the provided `estimator`.
 - An optional [`SimpleImputer`](https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer) imputes missing values by their
   mean and adds binary columns that indicate which values were missing. This step is
   only added if the `estimator` cannot handle missing values itself.
-- An optional [`SquashingScaler`](skrub.SquashingScalerhtml.md#skrub.SquashingScaler) centers and rescales the
+- An optional [`SquashingScaler`](skrub.SquashingScaler.md#skrub.SquashingScaler) centers and rescales the
   data. This step is not added (because it is unnecessary) when the `estimator` is
   a tree ensemble such as random forest or gradient boosting.
 - The last step is the provided `estimator`.
 
-The parameter values for the [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer) might differ depending on the
+The parameter values for the [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer) might differ depending on the
 version of scikit-learn:
 
 - support for categorical features in
@@ -74,7 +74,7 @@ version of scikit-learn:
   1.4. Therefore, before this version, a [`SimpleImputer`](https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer) is
   used to impute missing values.
 
-Read more in the [User Guide](../../modules/default_wrangling/tabular_pipelinehtml.md#user-guide-tabular-pipeline).
+Read more in the [User Guide](../../modules/default_wrangling/tabular_pipeline.md#user-guide-tabular-pipeline).
 
 ### Examples
 
@@ -150,7 +150,7 @@ Pipeline(steps=[('tablevectorizer',
 ```
 
 By applying only the first pipeline step we can see the transformed data that is
-sent to the supervised estimator (see the [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer) documentation for
+sent to the supervised estimator (see the [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer) documentation for
 details):
 
 ```pycon
@@ -162,7 +162,7 @@ details):
 3           2023.0               8.0  ...                   17.0            137.0
 ```
 
-The parameters of the [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer) depend on the provided `estimator`.
+The parameters of the [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer) depend on the provided `estimator`.
 
 ```pycon
 >>> tabular_pipeline(LogisticRegression())
@@ -175,12 +175,12 @@ Pipeline(steps=[('tablevectorizer',
 
 For a [`LogisticRegression`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression), we get:
 
-- a default configuration of the [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer) which is intended to work
+- a default configuration of the [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer) which is intended to work
   well for a wide variety of downstream estimators. The configuration adds
   `spline` periodic features to datetime columns.
 - A [`SimpleImputer`](https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer), as the
   [`LogisticRegression`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression) cannot handle missing values.
-- A [`SquashingScaler`](skrub.SquashingScalerhtml.md#skrub.SquashingScaler) for centering and scaling
+- A [`SquashingScaler`](skrub.SquashingScaler.md#skrub.SquashingScaler) for centering and scaling
   numerical features.
 
 On the other hand, For the [`HistGradientBoostingClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier)
@@ -195,12 +195,12 @@ Pipeline(steps=[('tablevectorizer',
                  HistGradientBoostingClassifier(categorical_features='from_dtype'))])
 ```
 
-- A [`StringEncoder`](skrub.StringEncoderhtml.md#skrub.StringEncoder) is used as the `high_cardinality` encoder. This encoder
+- A [`StringEncoder`](skrub.StringEncoder.md#skrub.StringEncoder) is used as the `high_cardinality` encoder. This encoder
   strikes a good balance between quality and performance in most situations.
 - The `low_cardinality` does not one-hot encode features. The
   [`HistGradientBoostingClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier) has built-in support for
   categorical data which is more efficient than one-hot encoding. Therefore the
-  selected encoder, [`ToCategorical`](skrub.ToCategoricalhtml.md#skrub.ToCategorical), simply makes sure that those features have
+  selected encoder, [`ToCategorical`](skrub.ToCategorical.md#skrub.ToCategorical), simply makes sure that those features have
   a categorical dtype so that the
   [`HistGradientBoostingClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html#sklearn.ensemble.HistGradientBoostingClassifier) recognizes them as such.
 - There is no spline encoding of datetimes.

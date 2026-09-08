@@ -603,7 +603,7 @@
 <section id="deprecations">
 <h3>Deprecations<a class="headerlink" href="#deprecations" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>The <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> has been renamed <code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code>. It is still available
+<li><p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code> has been renamed <a class="reference internal" href="reference/generated/skrub.LLMEncoder.html#skrub.LLMEncoder" title="skrub.LLMEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code></a>. It is still available
 as an alias, but will be removed in a future release. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2255">#2255</a> by
 <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 </ul>
@@ -614,7 +614,7 @@ as an alias, but will be removed in a future release. <a class="reference extern
 <section id="id2">
 <h3>Changes<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <ul>
-<li><p><a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a>’s <code class="docutils literal notranslate"><span class="pre">verbose</span></code> parameter is now an <code class="docutils literal notranslate"><span class="pre">int</span></code> instead of a
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code>’s <code class="docutils literal notranslate"><span class="pre">verbose</span></code> parameter is now an <code class="docutils literal notranslate"><span class="pre">int</span></code> instead of a
 <code class="docutils literal notranslate"><span class="pre">bool</span></code>, where <code class="docutils literal notranslate"><span class="pre">verbose=0</span></code> silences the progress bar and
 <code class="docutils literal notranslate"><span class="pre">verbose&gt;=1</span></code> shows it. The default is now <code class="docutils literal notranslate"><span class="pre">0</span></code>. Passing a
 boolean is still accepted.
@@ -790,6 +790,11 @@ has been improved for reports where only one column is present.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2094">#2094</a> by <a class="reference external" href="https://github.com/AlicjaKo">Alicja Kosak</a>.</p></li>
 <li><p>Added support for numpy arrays in <a class="reference internal" href="reference/generated/skrub.DataOp.skb.concat.html#skrub.DataOp.skb.concat" title="skrub.DataOp.skb.concat"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DataOp.skb.concat()</span></code></a>.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/2096">#2096</a> by <a class="reference external" href="https://github.com/siddiqua-tamk">Ayesha Siddiqua</a>.</p></li>
+<li><p>The package build has been updated to include the user guide and examples with
+the package, so that it is now possible to access it directly from the wheel
+rather than having to rely on the online docs. Docs and examples are now stored
+in <code class="docutils literal notranslate"><span class="pre">skrub/_docs</span></code>, rather than in the root of the repository.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2173">#2173</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 </ul>
 </section>
 <section id="id6">
@@ -1149,7 +1154,7 @@ contained escape characters or were spanning multiple lines.
 <li><p>Added <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_feature_names_out()</span></code> to <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> for consistency with the
 <a class="reference internal" href="reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and other transformers. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1762">#1762</a> by
 <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
-<li><p>Improve error message when <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> is used without the optional
+<li><p>Improve error message when <code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code> is used without the optional
 transformers dependencies. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1769">#1769</a> by <a class="reference external" href="https://github.com/fxzhou22">Fangxuan Zhou</a>.</p></li>
 <li><p>Accessing <code class="docutils literal notranslate"><span class="pre">.skb.applied_estimator</span></code> on a <a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> after calling
 <code class="docutils literal notranslate"><span class="pre">.skb.set_name()</span></code>, <code class="docutils literal notranslate"><span class="pre">.skb.set_description()</span></code>, <code class="docutils literal notranslate"><span class="pre">.skb.mark_as_X()</span></code> or
@@ -1265,7 +1270,7 @@ high cardinality and sorted columns are now highlighted in the report.</p></li>
 <li><p><a class="reference external" href="https://docs.python.org/3/library/selectors.html#module-selectors" title="(in Python v3.14)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">selectors</span></code></a>, <a class="reference internal" href="reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a> and <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToFrame</span></code> are now available,
 providing utilities for selecting columns to which a transformer should be applied
 in a flexible way. For more details, see the <a class="reference internal" href="modules/multi_column_operations/selectors.html#user-guide-selectors"><span class="std std-ref">User guide</span></a>
-and the <span class="xref std std-ref">example</span>.</p></li>
+and the <a class="reference internal" href="auto_examples/0010_apply_to_cols.html#sphx-glr-auto-examples-0010-apply-to-cols-py"><span class="std std-ref">example</span></a>.</p></li>
 <li><p>The <a class="reference internal" href="reference/generated/skrub.SquashingScaler.html#skrub.SquashingScaler" title="skrub.SquashingScaler"><code class="xref py py-class docutils literal notranslate"><span class="pre">SquashingScaler</span></code></a> has been added: it robustly rescales and smoothly
 clips numeric columns, enabling more robust handling of numeric columns
 with neural networks. See the <a class="reference internal" href="auto_examples/0100_squashing_scaler.html#sphx-glr-auto-examples-0100-squashing-scaler-py"><span class="std std-ref">example</span></a></p></li>
@@ -1343,7 +1348,7 @@ or <a class="reference external" href="https://scikit-learn.org/stable/modules/g
 exceeds the specified value. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1304">#1304</a> by <a class="reference external" href="https://github.com/victoris93">Victoria Shevchenko</a>.</p></li>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">packaging</span></code> dependency was removed.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1307">#1307</a> by <a class="reference external" href="https://github.com/jovan-stojanovic">Jovan Stojanovic</a></p></li>
-<li><p><a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a>, <a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a> and <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> now compute the
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code>, <a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a> and <a class="reference internal" href="reference/generated/skrub.GapEncoder.html#skrub.GapEncoder" title="skrub.GapEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">GapEncoder</span></code></a> now compute the
 total standard deviation norm during training, which is a global constant, and
 normalize the vector outputs by performing element-wise division on all entries.
 <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1274">#1274</a> by <a class="reference external" href="https://github.com/Vincent-Maladiere">Vincent Maladiere</a>.</p></li>
@@ -1358,7 +1363,7 @@ parameter for specifying the format to use when parsing datetime columns.
 <li><p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">SimpleCleaner</span></code> has been removed. use <a class="reference internal" href="reference/generated/skrub.Cleaner.html#skrub.Cleaner" title="skrub.Cleaner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Cleaner</span></code></a> instead. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1370">#1370</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 <li><p>The periodic encoding for the <code class="docutils literal notranslate"><span class="pre">day_in_year</span></code> has been removed from the <a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> as it was
 redundant. The feature itself is still added if the flag is set to <code class="docutils literal notranslate"><span class="pre">True</span></code>. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1396">#1396</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
-<li><p>The naming scheme used for the features generated by <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a>, <a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a>, <a class="reference internal" href="reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>,
+<li><p>The naming scheme used for the features generated by <code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code>, <a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a>, <a class="reference internal" href="reference/generated/skrub.MinHashEncoder.html#skrub.MinHashEncoder" title="skrub.MinHashEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">MinHashEncoder</span></code></a>,
 <a class="reference internal" href="reference/generated/skrub.DatetimeEncoder.html#skrub.DatetimeEncoder" title="skrub.DatetimeEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">DatetimeEncoder</span></code></a> has been standardized. Now features generated by all encoders have indices in the range
 <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">n_components-1]</span></code>, rather than <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">n_components]</span></code>. Additionally, columns with empty name are assigned a default
 name that depends on the encoder used. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1405">#1405</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
@@ -1373,7 +1378,7 @@ name that depends on the encoder used. <a class="reference external" href="https
 <section id="id27">
 <h3>Bugfixes<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Fixed a bug that caused the <a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a> and <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> to raise an exception if the
+<li><p>Fixed a bug that caused the <a class="reference internal" href="reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a> and <code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code> to raise an exception if the
 input column was a Categorical datatype. <a class="reference external" href="https://github.com/skrub-data/skrub/pull/1401">#1401</a> by <a class="reference external" href="https://github.com/rcap107">Riccardo Cappuzzo</a>.</p></li>
 </ul>
 </section>
@@ -1535,7 +1540,7 @@ computations. <a class="reference external" href="https://github.com/skrub-data/
 <section id="id40">
 <h3>Highlights<a class="headerlink" href="#id40" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>The <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> can extract embeddings from a string column with  a deep
+<li><p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code> can extract embeddings from a string column with  a deep
 learning language model (possibly downloaded from the HuggingFace Hub).</p></li>
 <li><p>Several improvements to the <a class="reference internal" href="reference/generated/skrub.TableReport.html#skrub.TableReport" title="skrub.TableReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableReport</span></code></a> such as better support for
 other scripts than the latin alphabet in the bar plot labels, smaller report
@@ -1548,7 +1553,7 @@ null values above a user-chosen threshold.</p></li>
 <section id="id41">
 <h3>New features<a class="headerlink" href="#id41" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>The <a class="reference internal" href="reference/generated/skrub.TextEncoder.html#skrub.TextEncoder" title="skrub.TextEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code></a> is now available to encode string columns with
+<li><p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">TextEncoder</span></code> is now available to encode string columns with
 diverse entries.
 It allows the representation of table entries as embeddings computed by a deep
 learning language model. The weights of this model can be fetched locally

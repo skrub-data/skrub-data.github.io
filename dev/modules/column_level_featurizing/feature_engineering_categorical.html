@@ -561,7 +561,7 @@
 
 
 
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/apply_to_cols.html">Transforming selected columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/apply_to_cols.html">Transforming only some columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../column_level_featurizing.html">Column-level feature extraction</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -587,6 +587,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../auto_tutorials/1111_data_ops_quick_tour.html">Quick overview of DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/what_are_data_ops.html">Basics of DataOps: the DataOps plan, variables, and learners</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/building_data_ops_plan.html">Building a simple DataOps plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../auto_tutorials/1111_data_ops_quick_tour.html">Quick overview of DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/using_previews.html">Using previews for easier development and debugging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
@@ -740,13 +741,13 @@ baseline for both short strings with high cardinality and long text. This encode
 computes the n-gram frequency using tf-idf vectorization, followed by truncated SVD
 (<a class="reference external" href="https://en.wikipedia.org/wiki/Latent_semantic_analysis">Latent Semantic Analysis</a>).
 This is the default encoder used by the <a class="reference internal" href="../../reference/generated/skrub.TableVectorizer.html#skrub.TableVectorizer" title="skrub.TableVectorizer"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableVectorizer</span></code></a> and the <a class="reference internal" href="../../reference/generated/skrub.tabular_pipeline.html#skrub.tabular_pipeline" title="skrub.tabular_pipeline"><code class="xref py py-func docutils literal notranslate"><span class="pre">tabular_pipeline()</span></code></a>.</p></li>
-<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code>: <strong>language model-based, strong on text but expensive to run</strong>:
+<li><p><a class="reference internal" href="../../reference/generated/skrub.LLMEncoder.html#skrub.LLMEncoder" title="skrub.LLMEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code></a>: <strong>language model-based, strong on text but expensive to run</strong>:
 This encoder encodes string features using pretrained language models from the
 HuggingFace Hub. It is a wrapper around <a class="reference external" href="https://sbert.net/">sentence-transformers</a>
 compatible with the scikit-learn API and usable in pipelines. Best for free-flowing
 text and when columns include context found in the pretrained model (e.g., names of
 cities etc.). Note that this encoder can take a very long time to train, especially
-on large datasets and on CPU. The <code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code> has additional dependencies that
+on large datasets and on CPU. The <a class="reference internal" href="../../reference/generated/skrub.LLMEncoder.html#skrub.LLMEncoder" title="skrub.LLMEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code></a> has additional dependencies that
 are not included in the standard skrub installation.
 Refer to <a class="reference internal" href="../../install.html#installation-instructions"><span class="std std-ref">Install</span></a> for info on how to prepare the
 environment.</p></li>
@@ -783,7 +784,7 @@ encoder may require a long time to train.</p></li>
 <td><p>Good</p></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/generated/skrub.LLMEncoder.html#skrub.LLMEncoder" title="skrub.LLMEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code></a></p></td>
 <td><p>Very slow</p></td>
 <td><p>Mediocre to good</p></td>
 <td><p>Very good</p></td>

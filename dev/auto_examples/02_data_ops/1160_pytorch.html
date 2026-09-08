@@ -550,6 +550,7 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../0010_apply_to_cols.html">Hands-On with Column Selection and Transformers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0050_deduplication.html">Deduplicating misspelled categories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0100_squashing_scaler.html">SquashingScaler: Robust numerical preprocessing for neural networks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../0110_session_encoder.html">Sessions in time-based data: Predicting user purchases with the SessionEncoder</a></li>
 </ul>
@@ -735,7 +736,7 @@ in the plan and will be automatically applied during prediction.</p>
 <!-- node_0 -->
 <g id="node_0" class="node">
 
-<g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 41, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X = skrub.X(X)">
+<g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 41, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X = skrub.X(X)">
 <polygon fill="#c6d5f0" stroke="black" points="115.89,-277.34 57.87,-277.34 57.87,-255.95 115.89,-255.95 115.89,-277.34"/>
 <polygon fill="none" stroke="black" points="119.89,-281.34 53.87,-281.34 53.87,-251.95 119.89,-251.95 119.89,-281.34"/>
 <text xml:space="preserve" text-anchor="middle" x="86.88" y="-263.52" font-family="sans-serif" font-size="10.00">X: Var &#39;X&#39;</text>
@@ -745,7 +746,7 @@ in the plan and will be automatically applied during prediction.</p>
 <!-- node_1 -->
 <g id="node_1" class="node">
 
-<g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 66, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;max_value = X.max().skb.freeze_after_fit()">
+<g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 66, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;max_value = X.max().skb.freeze_after_fit()">
 <polygon fill="none" stroke="black" points="97.77,-222.95 0,-222.95 0,-201.56 97.77,-201.56 97.77,-222.95"/>
 <text xml:space="preserve" text-anchor="middle" x="48.88" y="-209.13" font-family="sans-serif" font-size="10.00">CallMethod &#39;max&#39;</text>
 </a>
@@ -760,7 +761,7 @@ in the plan and will be automatically applied during prediction.</p>
 <!-- node_3 -->
 <g id="node_3" class="node">
 
-<g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 67, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_scaled = X / max_value">
+<g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 67, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_scaled = X / max_value">
 <polygon fill="none" stroke="black" points="128.52,-122.17 47.25,-122.17 47.25,-100.78 128.52,-100.78 128.52,-122.17"/>
 <text xml:space="preserve" text-anchor="middle" x="87.88" y="-108.35" font-family="sans-serif" font-size="10.00">BinOp: truediv</text>
 </a>
@@ -775,7 +776,7 @@ in the plan and will be automatically applied during prediction.</p>
 <!-- node_2 -->
 <g id="node_2" class="node">
 
-<g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 66, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;max_value = X.max().skb.freeze_after_fit()">
+<g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 66, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;max_value = X.max().skb.freeze_after_fit()">
 <polygon fill="none" stroke="black" points="93.39,-172.56 14.38,-172.56 14.38,-151.17 93.39,-151.17 93.39,-172.56"/>
 <text xml:space="preserve" text-anchor="middle" x="53.88" y="-158.74" font-family="sans-serif" font-size="10.00">FreezeAfterFit</text>
 </a>
@@ -796,7 +797,7 @@ in the plan and will be automatically applied during prediction.</p>
 <!-- node_4 -->
 <g id="node_4" class="node">
 
-<g id="a_node_4"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 68, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_reshaped = X_scaled.reshape(&#45;1, 1, 8, 8).astype(&quot;float32&quot;)">
+<g id="a_node_4"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 68, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_reshaped = X_scaled.reshape(&#45;1, 1, 8, 8).astype(&quot;float32&quot;)">
 <polygon fill="none" stroke="black" points="145.39,-71.78 30.37,-71.78 30.37,-50.39 145.39,-50.39 145.39,-71.78"/>
 <text xml:space="preserve" text-anchor="middle" x="87.88" y="-57.96" font-family="sans-serif" font-size="10.00">CallMethod &#39;reshape&#39;</text>
 </a>
@@ -811,7 +812,7 @@ in the plan and will be automatically applied during prediction.</p>
 <!-- node_5 -->
 <g id="node_5" class="node">
 
-<g id="a_node_5"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 68, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_reshaped = X_scaled.reshape(&#45;1, 1, 8, 8).astype(&quot;float32&quot;)">
+<g id="a_node_5"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 68, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_reshaped = X_scaled.reshape(&#45;1, 1, 8, 8).astype(&quot;float32&quot;)">
 <polygon fill="none" stroke="black" points="142.39,-21.39 33.37,-21.39 33.37,0 142.39,0 142.39,-21.39"/>
 <text xml:space="preserve" text-anchor="middle" x="87.88" y="-7.57" font-family="sans-serif" font-size="10.00">CallMethod &#39;astype&#39;</text>
 </a>
@@ -926,7 +927,7 @@ and apply the model to the preprocessed X and y.</p>
 <!-- node_0 -->
 <g id="node_0" class="node">
 
-<g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 41, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X = skrub.X(X)">
+<g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 41, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X = skrub.X(X)">
 <polygon fill="#c6d5f0" stroke="black" points="115.89,-335.73 57.87,-335.73 57.87,-314.34 115.89,-314.34 115.89,-335.73"/>
 <polygon fill="none" stroke="black" points="119.89,-339.73 53.87,-339.73 53.87,-310.34 119.89,-310.34 119.89,-339.73"/>
 <text xml:space="preserve" text-anchor="middle" x="86.88" y="-321.91" font-family="sans-serif" font-size="10.00">X: Var &#39;X&#39;</text>
@@ -936,7 +937,7 @@ and apply the model to the preprocessed X and y.</p>
 <!-- node_1 -->
 <g id="node_1" class="node">
 
-<g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 66, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;max_value = X.max().skb.freeze_after_fit()">
+<g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 66, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;max_value = X.max().skb.freeze_after_fit()">
 <polygon fill="none" stroke="black" points="97.77,-281.34 0,-281.34 0,-259.95 97.77,-259.95 97.77,-281.34"/>
 <text xml:space="preserve" text-anchor="middle" x="48.88" y="-267.52" font-family="sans-serif" font-size="10.00">CallMethod &#39;max&#39;</text>
 </a>
@@ -951,7 +952,7 @@ and apply the model to the preprocessed X and y.</p>
 <!-- node_3 -->
 <g id="node_3" class="node">
 
-<g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 67, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_scaled = X / max_value">
+<g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 67, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_scaled = X / max_value">
 <polygon fill="none" stroke="black" points="128.52,-180.56 47.25,-180.56 47.25,-159.17 128.52,-159.17 128.52,-180.56"/>
 <text xml:space="preserve" text-anchor="middle" x="87.88" y="-166.74" font-family="sans-serif" font-size="10.00">BinOp: truediv</text>
 </a>
@@ -966,7 +967,7 @@ and apply the model to the preprocessed X and y.</p>
 <!-- node_2 -->
 <g id="node_2" class="node">
 
-<g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 66, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;max_value = X.max().skb.freeze_after_fit()">
+<g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 66, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;max_value = X.max().skb.freeze_after_fit()">
 <polygon fill="none" stroke="black" points="93.39,-230.95 14.38,-230.95 14.38,-209.56 93.39,-209.56 93.39,-230.95"/>
 <text xml:space="preserve" text-anchor="middle" x="53.88" y="-217.13" font-family="sans-serif" font-size="10.00">FreezeAfterFit</text>
 </a>
@@ -987,7 +988,7 @@ and apply the model to the preprocessed X and y.</p>
 <!-- node_4 -->
 <g id="node_4" class="node">
 
-<g id="a_node_4"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 68, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_reshaped = X_scaled.reshape(&#45;1, 1, 8, 8).astype(&quot;float32&quot;)">
+<g id="a_node_4"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 68, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_reshaped = X_scaled.reshape(&#45;1, 1, 8, 8).astype(&quot;float32&quot;)">
 <polygon fill="none" stroke="black" points="145.39,-126.17 30.37,-126.17 30.37,-104.78 145.39,-104.78 145.39,-126.17"/>
 <text xml:space="preserve" text-anchor="middle" x="87.88" y="-112.35" font-family="sans-serif" font-size="10.00">CallMethod &#39;reshape&#39;</text>
 </a>
@@ -1002,7 +1003,7 @@ and apply the model to the preprocessed X and y.</p>
 <!-- node_5 -->
 <g id="node_5" class="node">
 
-<g id="a_node_5"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 68, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_reshaped = X_scaled.reshape(&#45;1, 1, 8, 8).astype(&quot;float32&quot;)">
+<g id="a_node_5"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 68, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X_reshaped = X_scaled.reshape(&#45;1, 1, 8, 8).astype(&quot;float32&quot;)">
 <polygon fill="none" stroke="black" points="142.39,-71.78 33.37,-71.78 33.37,-50.39 142.39,-50.39 142.39,-71.78"/>
 <text xml:space="preserve" text-anchor="middle" x="87.88" y="-57.96" font-family="sans-serif" font-size="10.00">CallMethod &#39;astype&#39;</text>
 </a>
@@ -1017,7 +1018,7 @@ and apply the model to the preprocessed X and y.</p>
 <!-- node_8 -->
 <g id="node_8" class="node">
 
-<g id="a_node_8"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 157, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;predictor = X_reshaped.skb.apply(net, y=y_int)">
+<g id="a_node_8"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 157, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;predictor = X_reshaped.skb.apply(net, y=y_int)">
 <polygon fill="none" stroke="black" points="219.27,-21.39 82.5,-21.39 82.5,0 219.27,0 219.27,-21.39"/>
 <text xml:space="preserve" text-anchor="middle" x="150.88" y="-7.57" font-family="sans-serif" font-size="10.00">Apply NeuralNetClassifier</text>
 </a>
@@ -1032,7 +1033,7 @@ and apply the model to the preprocessed X and y.</p>
 <!-- node_6 -->
 <g id="node_6" class="node">
 
-<g id="a_node_6"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 42, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;y = skrub.y(y)">
+<g id="a_node_6"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 42, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;y = skrub.y(y)">
 <polygon fill="#fad9c6" stroke="black" points="242.77,-126.17 187,-126.17 187,-104.78 242.77,-104.78 242.77,-126.17"/>
 <polygon fill="none" stroke="black" points="246.77,-130.17 183,-130.17 183,-100.78 246.77,-100.78 246.77,-130.17"/>
 <text xml:space="preserve" text-anchor="middle" x="214.88" y="-112.35" font-family="sans-serif" font-size="10.00">y: Var &#39;y&#39;</text>
@@ -1042,7 +1043,7 @@ and apply the model to the preprocessed X and y.</p>
 <!-- node_7 -->
 <g id="node_7" class="node">
 
-<g id="a_node_7"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1160_pytorch.py&quot;, line 156, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;y_int = y.astype(&quot;int64&quot;)">
+<g id="a_node_7"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1160_pytorch.py&quot;, line 156, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;y_int = y.astype(&quot;int64&quot;)">
 <polygon fill="none" stroke="black" points="269.39,-71.78 160.38,-71.78 160.38,-50.39 269.39,-50.39 269.39,-71.78"/>
 <text xml:space="preserve" text-anchor="middle" x="214.88" y="-57.96" font-family="sans-serif" font-size="10.00">CallMethod &#39;astype&#39;</text>
 </a>
@@ -1081,18 +1082,18 @@ tuning on our DataOps plan.</p>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Search results:
  max_epochs  conv_channels  hidden_units  mean_test_score
-         15             16            16         0.973848
-         15             16            32         0.972728
-         10             16            32         0.971617
-         15              8            32         0.964942
-         10              8            32         0.956032
-         10             16            16         0.952133
-         15              8            16         0.927086
-         10              8            16         0.912066
-         10              8             8         0.845273
-         15             16             8         0.841907
-         15              8             8         0.736338
-         10             16             8         0.619665
+         15             16            32         0.978848
+         10             16            32         0.968832
+         15             16            16         0.968271
+         15              8            32         0.963269
+         15              8            16         0.948806
+         10              8            32         0.944349
+         10              8            16         0.933770
+         15              8             8         0.909824
+         10             16            16         0.899870
+         10             16             8         0.822418
+         10              8             8         0.787480
+         15             16             8         0.747446
 </pre></div>
 </div>
 <p>Let’s take a better look at the well-performing models by looking
@@ -1104,7 +1105,7 @@ score &gt;= 0.94 to focus on the top-performing configurations.</p>
 </div>
 <div class="output_subarea output_html rendered_html output_result">
 <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="5a83eb5e-6258-4d3d-bbc5-d940d30aa978" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("5a83eb5e-6258-4d3d-bbc5-d940d30aa978")) {                    Plotly.newPlot(                        "5a83eb5e-6258-4d3d-bbc5-d940d30aa978",                        [{"dimensions":[{"label":"max_epochs","ticktext":["10","11","12","13","14","15"],"tickvals":[10,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkC8yCOhbfYtQAAAAAAAACRAAAAAAAAALkAAAAAAAAAkQAAAAAAAACRA"}},{"label":"conv_channels","ticktext":["8","9","10","11","12","13","14","15","16"],"tickvals":[8,9,10,11,12,13,14,15,16],"values":{"dtype":"f8","bdata":"AAAAAAAAMEB8B1uSDfEvQHdSPyTh7S9AAAAAAAAAIED\u002fhx62fAEgQAAAAAAAADBA"}},{"label":"hidden_units","ticktext":["16","18","20","21","23","25","27","28","30","32"],"tickvals":[16,18,20,21,23,25,27,28,30,32],"values":{"dtype":"f8","bdata":"AAAAAAAAMEAAAAAAAABAQDrWuGLx\u002fT9AAAAAAAAAQECpyWVCs\u002fw\u002fQOzcyPc7ETBA"}},{"label":"score time","ticktext":["0.0169","0.0176","0.0182","0.0188","0.0194","0.0200","0.0206","0.0213","0.0219","0.0225"],"tickvals":[0.016949832439422607,0.017566157711876765,0.01818248298433092,0.018798808256785076,0.01941513352923923,0.020031458801693387,0.02064778407414754,0.0212641093466017,0.021880434619055852,0.02249675989151001],"values":{"dtype":"f8","bdata":"M9Snfg2vkj90FH\u002fN12GUPwqYo6ZN9JU\u002fAAAAAExbkT+mjtca3bOTPwAAAABkCZc\u002f"}},{"label":"fit time","ticktext":["0.61","0.65","0.70","0.75","0.79","0.84","0.89","0.93","0.98","1.03"],"tickvals":[0.6062454581260681,0.6529065701696608,0.6995676822132535,0.7462287942568461,0.7928899063004388,0.8395510183440315,0.886212130387624,0.9328732424312167,0.9795343544748094,1.026195466518402],"values":{"dtype":"f8","bdata":"AAAA8Etr8D9ICVD+UjLwP6n\u002fiiKgkuY\u002fV2ApAaSb7D8AAADgXGbjP8WM5FUZ++U\u002f"}},{"label":"score","ticktext":["0.952","0.955","0.957","0.959","0.962","0.964","0.967","0.969","0.971","0.974"],"tickvals":[0.952133135362534,0.9545459044790893,0.9569586735956446,0.9593714427121999,0.9617842118287552,0.9641969809453106,0.9666097500618659,0.9690225191784212,0.9714352882949765,0.9738480574115318],"values":{"dtype":"f8","bdata":"kGG7ZsMp7z8UuokRlyDvP7VsTeZ8F+8\u002fYULuuM3g7j+2RUpC0JfuP6Q9uujfd+4\u002f"}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"kGG7ZsMp7z8UuokRlyDvP7VsTeZ8F+8\u002fYULuuM3g7j+2RUpC0JfuP6Q9uujfd+4\u002f"},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="82b92661-86c1-4314-b366-a4236f0a2791" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("82b92661-86c1-4314-b366-a4236f0a2791")) {                    Plotly.newPlot(                        "82b92661-86c1-4314-b366-a4236f0a2791",                        [{"dimensions":[{"label":"max_epochs","ticktext":["10","11","12","13","14","15"],"tickvals":[10,11,12,13,14,15],"values":{"dtype":"f8","bdata":"AAAAAAAALkAAAAAAAAAkQAAAAAAAAC5AMwfr4zX1LUDRPQK\u002fpvktQAAAAAAAACRA"}},{"label":"conv_channels","ticktext":["8","9","10","11","12","13","14","15","16"],"tickvals":[8,9,10,11,12,13,14,15,16],"values":{"dtype":"f8","bdata":"AAAAAAAAMEAAAAAAAAAwQE\u002fxND6U\u002fC9AAAAAAAAAIEAAAAAAAAAgQAAAAAAAACBA"}},{"label":"hidden_units","ticktext":["16","18","20","21","23","25","27","28","30","32"],"tickvals":[16,18,20,21,23,25,27,28,30,32],"values":{"dtype":"f8","bdata":"AAAAAAAAQECQkTG\u002ftvU\u002fQAAAAAAAADBAAAAAAAAAQEAAAAAAAAAwQAAAAAAAAEBA"}},{"label":"score time","ticktext":["0.0163","0.0170","0.0177","0.0184","0.0191","0.0199","0.0206","0.0213","0.0220","0.0227"],"tickvals":[0.016322731971740723,0.01702840460671319,0.017734077241685655,0.018439749876658123,0.019145422511630587,0.019851095146603055,0.020556767781575523,0.021262440416547988,0.021968113051520452,0.02267378568649292],"values":{"dtype":"f8","bdata":"YYurX59zkj80PsKw4MuWP86\u002fi4xp4ZU\u002fAAAAAMw3lz+wBg75uBKUPwAAAADotpA\u002f"}},{"label":"fit time","ticktext":["0.63","0.67","0.72","0.77","0.82","0.86","0.91","0.96","1.00","1.05"],"tickvals":[0.6275205612182617,0.6746303902732002,0.7217402193281386,0.7688500483830769,0.8159598774380155,0.8630697064929538,0.9101795355478922,0.9572893646028307,1.0043991936577692,1.0515090227127075],"values":{"dtype":"f8","bdata":"IAe7x3yf7z+kfHY9NkHpPwAAACD70vA\u002f0Wu5XSNs7D8xu4a\u002fb3LrPwAAAACmFOQ\u002f"}},{"label":"score","ticktext":["0.944","0.948","0.952","0.956","0.960","0.964","0.967","0.971","0.975","0.979"],"tickvals":[0.944349170997278,0.9481823805988617,0.9520155902004455,0.9558487998020293,0.959682009403613,0.9635152190051968,0.9673484286067805,0.9711816382083643,0.9750148478099481,0.9788480574115318],"values":{"dtype":"f8","bdata":"ub1KKblS7z9U8IjoqwDvPwJNzHEU\u002fO4\u002fh7KtfhnT7j9VcWtgnlzuP0QErsAbOO4\u002f"}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"ub1KKblS7z9U8IjoqwDvPwJNzHEU\u002fO4\u002fh7KtfhnT7j9VcWtgnlzuP0QErsAbOO4\u002f"},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
 </div>
 <br />
 <br /></section>
@@ -1143,8 +1144,8 @@ in DataOps plans.</p></li>
 for more sophisticated hyperparameter search strategies with skrub DataOps.</p></li>
 </ul>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 24.452 seconds)</p>
-<p><strong>Estimated memory usage:</strong>  556 MB</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 26.112 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  545 MB</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-02-data-ops-1160-pytorch-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/skrub-data/skrub/main?urlpath=lab/tree/notebooks/auto_examples/02_data_ops/1160_pytorch.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo2.svg" style="width: 150px;" />

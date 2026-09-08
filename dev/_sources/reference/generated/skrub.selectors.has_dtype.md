@@ -8,8 +8,8 @@ This is an advanced selector for edge cases where you need to match specific
 dtypes not covered by other selectors. Use this when working with specialized
 or custom dtypes (e.g., pandas ListDtype, polars Object).
 
-For standard types, prefer the simpler selectors like [`numeric()`](skrub.selectors.numerichtml.md#skrub.selectors.numeric),
-[`string()`](skrub.selectors.stringhtml.md#skrub.selectors.string), [`categorical()`](skrub.selectors.categoricalhtml.md#skrub.selectors.categorical), or [`boolean()`](skrub.selectors.booleanhtml.md#skrub.selectors.boolean).
+For standard types, prefer the simpler selectors like [`numeric()`](skrub.selectors.numeric.md#skrub.selectors.numeric),
+[`string()`](skrub.selectors.string.md#skrub.selectors.string), [`categorical()`](skrub.selectors.categorical.md#skrub.selectors.categorical), or [`boolean()`](skrub.selectors.boolean.md#skrub.selectors.boolean).
 
 This selector takes a hands-off approach: skrub does not normalize or infer
 dtypes across dataframe libraries. A column is selected if
@@ -20,16 +20,16 @@ dtypes across dataframe libraries. A column is selected if
   : One or more dtype objects to match.
 
 #### SEE ALSO
-[`numeric`](skrub.selectors.numerichtml.md#skrub.selectors.numeric)
+[`numeric`](skrub.selectors.numeric.md#skrub.selectors.numeric)
 : Select numeric columns.
 
-[`string`](skrub.selectors.stringhtml.md#skrub.selectors.string)
+[`string`](skrub.selectors.string.md#skrub.selectors.string)
 : Select string columns.
 
-[`categorical`](skrub.selectors.categoricalhtml.md#skrub.selectors.categorical)
+[`categorical`](skrub.selectors.categorical.md#skrub.selectors.categorical)
 : Select categorical columns.
 
-[`object`](skrub.selectors.objecthtml.md#skrub.selectors.object)
+[`object`](skrub.selectors.object.md#skrub.selectors.object)
 : Select columns with “object” dtype (library specific).
 
 ### Notes

@@ -29,10 +29,10 @@ Accepts [`pandas.DataFrame`](http://pandas.pydata.org/pandas-docs/stable/referen
     results in duplicates columns.
 
 #### SEE ALSO
-[`AggJoiner`](skrub.AggJoinerhtml.md#skrub.AggJoiner)
+[`AggJoiner`](skrub.AggJoiner.md#skrub.AggJoiner)
 : Aggregates auxiliary dataframes before joining them on the base dataframe.
 
-[`Joiner`](skrub.Joinerhtml.md#skrub.Joiner)
+[`Joiner`](skrub.Joiner.md#skrub.Joiner)
 : Augments a main table by automatically joining multiple auxiliary tables on it.
 
 ### Examples

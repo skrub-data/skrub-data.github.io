@@ -4,7 +4,7 @@
 
 Selectors can filter columns based on different conditions.
 
-[`all()`](../../reference/generated/skrub.selectors.allhtml.md#skrub.selectors.all) is a simple selector, especially useful for default
+[`all()`](../../reference/generated/skrub.selectors.all.md#skrub.selectors.all) is a simple selector, especially useful for default
 arguments since it keeps all columns:
 
 ```pycon
@@ -45,7 +45,7 @@ name, data type, contents, or according to arbitrary user-provided rules.
 1      420.0     297.0   3
 ```
 
-Selectors can be inverted with `~`, or [`inv()`](../../reference/generated/skrub.selectors.invhtml.md#skrub.selectors.inv):
+Selectors can be inverted with `~`, or [`inv()`](../../reference/generated/skrub.selectors.inv.md#skrub.selectors.inv):
 
 ```pycon
 >>> SelectCols(~s.numeric()).fit_transform(df)
@@ -80,26 +80,26 @@ they examine:
 
 ## Selectors based on column data types
 
-- [`numeric()`](../../reference/generated/skrub.selectors.numerichtml.md#skrub.selectors.numeric): Select columns with numeric data types (float and integer)
-- [`integer()`](../../reference/generated/skrub.selectors.integerhtml.md#skrub.selectors.integer): Select columns with integer data types
-- [`float()`](../../reference/generated/skrub.selectors.floathtml.md#skrub.selectors.float): Select columns with floating-point data types
-- [`has_dtype()`](../../reference/generated/skrub.selectors.has_dtypehtml.md#skrub.selectors.has_dtype): Select columns whose dtype exactly matches one of the provided dtypes
-- [`any_date()`](../../reference/generated/skrub.selectors.any_datehtml.md#skrub.selectors.any_date): Select columns with date or datetime data types
-- [`categorical()`](../../reference/generated/skrub.selectors.categoricalhtml.md#skrub.selectors.categorical): Select columns with categorical data types
-- [`string()`](../../reference/generated/skrub.selectors.stringhtml.md#skrub.selectors.string): Select columns with string data types
-- [`object()`](../../reference/generated/skrub.selectors.objecthtml.md#skrub.selectors.object): Select columns with the `object` (pandas) or `pl.Object` (polars) dtype
-- [`boolean()`](../../reference/generated/skrub.selectors.booleanhtml.md#skrub.selectors.boolean): Select columns with boolean data types
+- [`numeric()`](../../reference/generated/skrub.selectors.numeric.md#skrub.selectors.numeric): Select columns with numeric data types (float and integer)
+- [`integer()`](../../reference/generated/skrub.selectors.integer.md#skrub.selectors.integer): Select columns with integer data types
+- [`float()`](../../reference/generated/skrub.selectors.float.md#skrub.selectors.float): Select columns with floating-point data types
+- [`has_dtype()`](../../reference/generated/skrub.selectors.has_dtype.md#skrub.selectors.has_dtype): Select columns whose dtype exactly matches one of the provided dtypes
+- [`any_date()`](../../reference/generated/skrub.selectors.any_date.md#skrub.selectors.any_date): Select columns with date or datetime data types
+- [`categorical()`](../../reference/generated/skrub.selectors.categorical.md#skrub.selectors.categorical): Select columns with categorical data types
+- [`string()`](../../reference/generated/skrub.selectors.string.md#skrub.selectors.string): Select columns with string data types
+- [`object()`](../../reference/generated/skrub.selectors.object.md#skrub.selectors.object): Select columns with the `object` (pandas) or `pl.Object` (polars) dtype
+- [`boolean()`](../../reference/generated/skrub.selectors.boolean.md#skrub.selectors.boolean): Select columns with boolean data types
 
 ## Selectors based on column content and properties
 
-- [`cardinality_below()`](../../reference/generated/skrub.selectors.cardinality_belowhtml.md#skrub.selectors.cardinality_below): Select columns with fewer unique
+- [`cardinality_below()`](../../reference/generated/skrub.selectors.cardinality_below.md#skrub.selectors.cardinality_below): Select columns with fewer unique
   values than a threshold
-- [`has_nulls()`](../../reference/generated/skrub.selectors.has_nullshtml.md#skrub.selectors.has_nulls): Select columns that contain at least one
+- [`has_nulls()`](../../reference/generated/skrub.selectors.has_nulls.md#skrub.selectors.has_nulls): Select columns that contain at least one
   null value
 
 ## Selectors based on column names
 
-- [`cols()`](../../reference/generated/skrub.selectors.colshtml.md#skrub.selectors.cols): Select columns explicitly by name
-- [`glob()`](../../reference/generated/skrub.selectors.globhtml.md#skrub.selectors.glob): Select columns by name using Unix shell-style
+- [`cols()`](../../reference/generated/skrub.selectors.cols.md#skrub.selectors.cols): Select columns explicitly by name
+- [`glob()`](../../reference/generated/skrub.selectors.glob.md#skrub.selectors.glob): Select columns by name using Unix shell-style
   pattern matching
-- [`regex()`](../../reference/generated/skrub.selectors.regexhtml.md#skrub.selectors.regex): Select columns by name using regular expressions
+- [`regex()`](../../reference/generated/skrub.selectors.regex.md#skrub.selectors.regex): Select columns by name using regular expressions

@@ -6,17 +6,17 @@ Select columns whose dtype is `object` (pandas) or `pl.Object` (polars).
 
 Note that object columns may contain mixed types (e.g., strings and numbers) and are
 broader than string columns. Use this selector when you specifically need
-object-typed columns, and prefer more specific selectors like [`string()`](skrub.selectors.stringhtml.md#skrub.selectors.string)
-or [`categorical()`](skrub.selectors.categoricalhtml.md#skrub.selectors.categorical).
+object-typed columns, and prefer more specific selectors like [`string()`](skrub.selectors.string.md#skrub.selectors.string)
+or [`categorical()`](skrub.selectors.categorical.md#skrub.selectors.categorical).
 
 #### SEE ALSO
-[`string`](skrub.selectors.stringhtml.md#skrub.selectors.string)
+[`string`](skrub.selectors.string.md#skrub.selectors.string)
 : Select string columns (preferred for text data). Use this instead of object() for text columns.
 
-[`categorical`](skrub.selectors.categoricalhtml.md#skrub.selectors.categorical)
+[`categorical`](skrub.selectors.categorical.md#skrub.selectors.categorical)
 : Select categorical columns.
 
-[`has_dtype`](skrub.selectors.has_dtypehtml.md#skrub.selectors.has_dtype)
+[`has_dtype`](skrub.selectors.has_dtype.md#skrub.selectors.has_dtype)
 : Select columns whose dtype matches specific dtypes.
 
 ### Notes
@@ -28,7 +28,7 @@ The behavior of string columns may change depending on the pandas version:
 - From pandas 3.0 onwards: String columns have only the `string` dtype
 
 This selector selects **all** `object` dtype columns regardless of content,
-including mixed-type columns. For text data, prefer [`string()`](skrub.selectors.stringhtml.md#skrub.selectors.string) which is
+including mixed-type columns. For text data, prefer [`string()`](skrub.selectors.string.md#skrub.selectors.string) which is
 more selective.
 
 ### Examples

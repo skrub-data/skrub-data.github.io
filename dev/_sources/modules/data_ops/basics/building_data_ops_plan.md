@@ -33,8 +33,8 @@ to their values.
 ```
 
 As shown above, the special `.skb` attribute allows to interact with the DataOp
-object itself, and [`.skb.eval()`](../../../reference/generated/skrub.DataOp.skb.evalhtml.md#skrub.DataOp.skb.eval) evaluates the DataOp plan.
-By default, [`.skb.eval()`](../../../reference/generated/skrub.DataOp.skb.evalhtml.md#skrub.DataOp.skb.eval) uses the values passed in the
+object itself, and [`.skb.eval()`](../../../reference/generated/skrub.DataOp.skb.eval.md#skrub.DataOp.skb.eval) evaluates the DataOp plan.
+By default, [`.skb.eval()`](../../../reference/generated/skrub.DataOp.skb.eval.md#skrub.DataOp.skb.eval) uses the values passed in the
 variable definitions, but it can also take an explicit environment
 dictionary as an argument.
 
@@ -100,5 +100,5 @@ By working only on Data Ops we ensure that all the operations done on the data
 are added correctly to the computational graph, which then allows the resulting
 learner to execute all steps as intended.
 
-See [Quick overview of DataOps](../../../auto_tutorials/1111_data_ops_quick_tourhtml.md#sphx-glr-auto-tutorials-1111-data-ops-quick-tour-py) for an introductory
+See [Quick overview of DataOps](../../../auto_tutorials/1111_data_ops_quick_tour.md#sphx-glr-auto-tutorials-1111-data-ops-quick-tour-py) for an introductory
 example on how to use skrub DataOps on a single dataframe.

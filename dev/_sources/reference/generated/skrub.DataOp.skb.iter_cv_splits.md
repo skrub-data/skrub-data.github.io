@@ -12,7 +12,7 @@ Yield splits of an environment into training and testing environments.
 
   **keep_subsampling**
   : If True, and if subsampling has been configured (see
-    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample)), use a subsample of the data. By
+    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample)), use a subsample of the data. By
     default subsampling is not applied and all the data is used.
 
   **cv**
@@ -25,21 +25,21 @@ Yield splits of an environment into training and testing environments.
     - train: a dictionary containing the training environment
     - test: a dictionary containing the test environment
     - X: the value of the variable marked with
-      [`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) in `environment`, before splitting.
+      [`mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X) in `environment`, before splitting.
     - y: the value of the variable marked with
-      [`mark_as_y()`](skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y) in `environment`, before
+      [`mark_as_y()`](skrub.DataOp.skb.mark_as_y.md#skrub.DataOp.skb.mark_as_y) in `environment`, before
       splitting, if there is one (may not be the case for unsupervised
       learning).
     - X_train: the value of the variable marked with
-      [`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) in the train environment
+      [`mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X) in the train environment
     - X_test: the value of the variable marked with
-      [`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) in the test environment
+      [`mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X) in the test environment
     - y_train: the value of the variable marked with
-      [`mark_as_y()`](skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y) in
+      [`mark_as_y()`](skrub.DataOp.skb.mark_as_y.md#skrub.DataOp.skb.mark_as_y) in
       the train environment, if there is one (may not be the case for
       unsupervised learning).
     - y_test: the value of the variable marked with
-      [`mark_as_y()`](skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y) in
+      [`mark_as_y()`](skrub.DataOp.skb.mark_as_y.md#skrub.DataOp.skb.mark_as_y) in
       the test environment, if there is one (may not be the case for
       unsupervised learning).
     - row_indices_train: the row indices (in X and y) of the training samples.

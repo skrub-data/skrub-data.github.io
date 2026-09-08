@@ -22,16 +22,16 @@ default outcome.
     learner.
 
 #### SEE ALSO
-[`choose_float`](skrub.choose_floathtml.md#skrub.choose_float)
+[`choose_float`](skrub.choose_float.md#skrub.choose_float)
 : Construct a choice of floating-point numbers from a numeric range.
 
-[`choose_from`](skrub.choose_fromhtml.md#skrub.choose_from)
+[`choose_from`](skrub.choose_from.md#skrub.choose_from)
 : Construct a choice among several possible outcomes.
 
-[`choose_int`](skrub.choose_inthtml.md#skrub.choose_int)
+[`choose_int`](skrub.choose_int.md#skrub.choose_int)
 : Construct a choice of integers from a numeric range.
 
-[`optional`](skrub.optionalhtml.md#skrub.optional)
+[`optional`](skrub.optional.md#skrub.optional)
 : Choose between executing an operation or not.
 
 ### Examples

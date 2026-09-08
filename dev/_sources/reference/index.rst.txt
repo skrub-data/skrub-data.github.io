@@ -83,7 +83,7 @@ Encoding a column
   StringEncoder
 
 
-  TextEncoder
+  LLMEncoder
 
 
   MinHashEncoder

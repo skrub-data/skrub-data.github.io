@@ -30,7 +30,7 @@ See :ref:`encoding <user_guide_encoders_index>` for further details.
 
 
   StringEncoder
-  TextEncoder
+  LLMEncoder
   MinHashEncoder
   GapEncoder
   SimilarityEncoder

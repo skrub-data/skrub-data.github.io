@@ -44,5 +44,6 @@ Characters are misspelled with probability `prob_mistake_per_letter`.
 
 <div class="sphx-glr-thumbnails">
 <!-- thumbnail-parent-div-open --><div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation.">  <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation.">  <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
 </div>
 <!-- thumbnail-parent-div-close --></div>

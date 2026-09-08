@@ -20,7 +20,7 @@ in the DataOp are used.
 
   **keep_subsampling**
   : If True, and if subsampling has been configured (see
-    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample)), use a subsample of the data. By
+    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample)), use a subsample of the data. By
     default subsampling is not applied and all the data is used.
 * **Returns:**
   result
@@ -28,7 +28,7 @@ in the DataOp are used.
     learner’s `fit_transform` on the provided data.
 
 #### SEE ALSO
-[`DataOp.skb.preview`](skrub.DataOp.skb.previewhtml.md#skrub.DataOp.skb.preview)
+[`DataOp.skb.preview`](skrub.DataOp.skb.preview.md#skrub.DataOp.skb.preview)
 : Access the preview of the result on the variables initial values, with subsampling. Faster than `eval` but does not allow passing new data and always applies subsampling.
 
 ### Examples

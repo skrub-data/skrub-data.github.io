@@ -9,7 +9,7 @@ Set global skrub configuration.
   : The type of HTML representation used for the dataframes preview in skrub
     DataOps. If `None`, falls back to the current configuration, which is `True`
     by default.
-    - If `True`, [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport) will be used.
+    - If `True`, [`TableReport`](skrub.TableReport.md#skrub.TableReport) will be used.
     - If `False`, the original Pandas or Polars dataframe display will be
       used.
     <br/>
@@ -18,7 +18,7 @@ Set global skrub configuration.
 
   **table_report_plots_threshold**
   : Maximum number of columns for which distribution plots are generated
-    in [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport) when `plot_distributions="auto"`
+    in [`TableReport`](skrub.TableReport.md#skrub.TableReport) when `plot_distributions="auto"`
     (the default). Dataframes with more columns will skip plots.
     Default is 30.
     <br/>
@@ -27,7 +27,7 @@ Set global skrub configuration.
 
   **table_report_associations_threshold**
   : Maximum number of columns for which associations are computed
-    in [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport) when `compute_associations="auto"`
+    in [`TableReport`](skrub.TableReport.md#skrub.TableReport) when `compute_associations="auto"`
     (the default). Dataframes with more columns will skip associations.
     Default is 30.
     <br/>
@@ -35,32 +35,32 @@ Set global skrub configuration.
     `SKB_TABLE_REPORT_ASSOCIATIONS_THRESHOLD` environment variable.
 
   **table_report_n_rows**
-  : Set the default number of rows displayed in [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport)
+  : Set the default number of rows displayed in [`TableReport`](skrub.TableReport.md#skrub.TableReport)
     when the `n_rows` parameter is not explicitly passed. Default is 10.
     <br/>
     This configuration can also be set with the `SKB_TABLE_REPORT_N_ROWS`
     environment variable.
 
   **table_report_verbosity**
-  : Set the level of verbosity of the [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport).
+  : Set the level of verbosity of the [`TableReport`](skrub.TableReport.md#skrub.TableReport).
     Default is 1 (print the progress bar). Refer to the `TableReport`
     documentation for more details.
 
   **subsampling_seed**
   : Set the random seed of subsampling in skrub DataOps
-    [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample), when `how="random"` is passed.
+    [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample), when `how="random"` is passed.
     <br/>
     This configuration can also be set with the `SKB_SUBSAMPLING_SEED` environment
     variable.
 
   **enable_subsampling**
   : Control the activation of subsampling in skrub DataOps
-    [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample). Default is `"default"`.
-    - If `"default"`, the behavior of [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample) is used.
+    [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample). Default is `"default"`.
+    - If `"default"`, the behavior of [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample) is used.
     - If `"disable"`, subsampling is never used, so `skb.subsample` becomes a
       no-op.
     - If `"force"`, subsampling is used in all DataOps evaluation modes
-      ([`eval()`](skrub.DataOp.skb.evalhtml.md#skrub.DataOp.skb.eval), fit_transform, etc.).
+      ([`eval()`](skrub.DataOp.skb.eval.md#skrub.DataOp.skb.eval), fit_transform, etc.).
     <br/>
     This configuration can also be set with the `SKB_ENABLE_SUBSAMPLING`
     environment variable.
@@ -73,7 +73,7 @@ Set global skrub configuration.
     environment variable.
 
   **cardinality_threshold**
-  : Set the `cardinality_threshold` argument of [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
+  : Set the `cardinality_threshold` argument of [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer).
     Control the threshold value used to warn user if they have
     high cardinality columns in there dataset.
     <br/>
@@ -118,10 +118,10 @@ Set global skrub configuration.
     `SKB_DATA_OPS_OPEN_GRAPH_DROPDOWN` environment variable.
 
 #### SEE ALSO
-[`get_config`](skrub.get_confightml.md#skrub.get_config)
+[`get_config`](skrub.get_config.md#skrub.get_config)
 : Retrieve current values for global configuration.
 
-[`config_context`](skrub.config_contexthtml.md#skrub.config_context)
+[`config_context`](skrub.config_context.md#skrub.config_context)
 : Context manager for global skrub configuration.
 
 ### Examples

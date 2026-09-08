@@ -15,7 +15,7 @@ scikit-learn cross-validation.
 
   **keep_subsampling**
   : If True, and if subsampling has been configured (see
-    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample)), use a subsample of the data. By
+    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample)), use a subsample of the data. By
     default subsampling is not applied and all the data is used.
 
   **kwargs**
@@ -28,13 +28,13 @@ scikit-learn cross-validation.
   : Cross-validation results.
 
 #### SEE ALSO
-[`DataOp.skb.train_test_split()`](skrub.DataOp.skb.train_test_splithtml.md#skrub.DataOp.skb.train_test_split)
+[`DataOp.skb.train_test_split()`](skrub.DataOp.skb.train_test_split.md#skrub.DataOp.skb.train_test_split)
 : Prepare training and testing sets for a DataOp.
 
-[`DataOp.skb.make_randomized_search()`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search)
+[`DataOp.skb.make_randomized_search()`](skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search)
 : Perform hyperparameter tuning driven by cross-validation scores.
 
-[`DataOp.skb.make_grid_search()`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search)
+[`DataOp.skb.make_grid_search()`](skrub.DataOp.skb.make_grid_search.md#skrub.DataOp.skb.make_grid_search)
 : Perform hyperparameter tuning driven by cross-validation scores.
 
 ### Examples

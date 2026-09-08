@@ -2,7 +2,7 @@
 
 # Computation times
 
-**04:29.867** total execution time for 3 files **from auto_examples/01_encoding**:
+**04:47.772** total execution time for 3 files **from auto_examples/01_encoding**:
 
 <style scoped>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -17,8 +17,8 @@ $(document).ready( function () {
 } );
 </script>
 
-| Example                                                                                                                                                                                                   | Time      |   Mem (MB) |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------|
-| [Various string encoders: a sentiment analysis example](0020_text_with_string_encodershtml.md#sphx-glr-auto-examples-01-encoding-0020-text-with-string-encoders-py) (`0020_text_with_string_encoders.py`) | 03:24.723 |     1454.7 |
-| [Encoding: from a dataframe to a numerical matrix for machine learning](0010_encodingshtml.md#sphx-glr-auto-examples-01-encoding-0010-encodings-py) (`0010_encodings.py`)                                 | 00:53.264 |      547.2 |
-| [Handling datetime features with the DatetimeEncoder](0030_datetime_encoderhtml.md#sphx-glr-auto-examples-01-encoding-0030-datetime-encoder-py) (`0030_datetime_encoder.py`)                              | 00:11.880 |      547.3 |
+| Example                                                                                                                                                                                               | Time      |   Mem (MB) |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------|
+| [Various string encoders: a sentiment analysis example](0020_text_with_string_encoders.md#sphx-glr-auto-examples-01-encoding-0020-text-with-string-encoders-py) (`0020_text_with_string_encoders.py`) | 03:38.660 |     1330.3 |
+| [Encoding: from a dataframe to a numerical matrix for machine learning](0010_encodings.md#sphx-glr-auto-examples-01-encoding-0010-encodings-py) (`0010_encodings.py`)                                 | 00:54.164 |      535   |
+| [Handling datetime features with the DatetimeEncoder](0030_datetime_encoder.md#sphx-glr-auto-examples-01-encoding-0030-datetime-encoder-py) (`0030_datetime_encoder.py`)                              | 00:14.948 |      534.3 |

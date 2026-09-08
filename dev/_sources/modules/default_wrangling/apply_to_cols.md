@@ -1,39 +1,39 @@
 <a id="user-guide-multiple-columns"></a>
 
-# Transforming selected columns with [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols)
+# Transforming only some columns with [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols)
 
 Very often and for various reasons, transformers must be applied only to some of the
 columns in a dataframe. For example, all numeric columns in a dataframe may need
 to be scaled at the same time, while string columns should be left alone.
-While the heuristics used by the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) are usually good enough
+While the heuristics used by the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) are usually good enough
 to apply the proper transformers to different datatypes, using it may not be an
-option in all cases. In scikit-learn pipelines, the column selection operation can
-be done with the [`ColumnTransformer`](https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer).
+option in all cases.
 
-Skrub provides the [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) transformer and the
-[selectors](../multi_column_operations/selectorshtml.md#user-guide-selectors) to achieve the same results with a larger
-degree of control over which columns are being transformed.
-[`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) maps a transformer to columns in a dataframe, so that all
-columns that satisfy the condition given by the user are transformed, while the
-others are left untouched.
+[`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) (optionally paired with the `skrub.selectors`) allows to transform specific
+columns with a large degree of control: [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) maps a transformer to columns
+in a dataframe, so that all columns that satisfy a certain condition are transformed,
+while the others are left untouched. [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) and the `skrub.selectors` are similar
+to scikit-learn’s [`ColumnTransformer`](https://scikit-learn.org/stable/modules/generated/sklearn.compose.ColumnTransformer.html#sklearn.compose.ColumnTransformer).
 
-#### TIP
+## Using selectors to choose or exclude columns
+
 If a skrub transformer has a `cols` parameter to specify a column list,
 that can be a selector as well. Selectors give more control over which columns
-are being transformed.
+are being transformed: they are discussed at length in the
+[selectors user guide](../multi_column_operations/selectors.md#user-guide-selectors).
 
-[`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) can be used to transform a subset of columns in a dataframe, while
+[`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) can be used to transform a subset of columns in a dataframe, while
 leaving the non-selected columns unchanged. In this example, we want to apply
 an [`OrdinalEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder) only on the text column, and a [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler) on the numeric
 column. Columns that aren’t selected are passed through unchanged, and this allows
-to concatenate [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) transformers with `make_pipeline`.
+to concatenate [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) transformers with `make_pipeline`.
 
 ```pycon
 >>> import pandas as pd
 >>> df = pd.DataFrame({"text": ["foo", "bar", "baz"], "number": [1, 2, 3]})
 ```
 
-We use the [`string()`](../../reference/generated/skrub.selectors.stringhtml.md#skrub.selectors.string) selector to choose only the text column, and [`numeric()`](../../reference/generated/skrub.selectors.numerichtml.md#skrub.selectors.numeric)
+We use the [`string()`](../../reference/generated/skrub.selectors.string.md#skrub.selectors.string) selector to choose only the text column, and [`numeric()`](../../reference/generated/skrub.selectors.numeric.md#skrub.selectors.numeric)
 to select only the numeric column:
 
 ```pycon
@@ -57,13 +57,13 @@ We then concatenate the two with `make_pipeline`:
 2  1.224745   1.0
 ```
 
-If [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) is used with a transformer that inherits from
-[`SingleColumnTransformer`](../../reference/generated/skrub.core.SingleColumnTransformerhtml.md#skrub.core.SingleColumnTransformer), or one that has the `__single_column_transformer__`
+If [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) is used with a transformer that inherits from
+[`SingleColumnTransformer`](../../reference/generated/skrub.core.SingleColumnTransformer.md#skrub.core.SingleColumnTransformer), or one that has the `__single_column_transformer__`
 attribute, then the transformer will be cloned and applied separately to each
 column. Most skrub transformers belong to this category.
 
-Here we want to apply [`ToDatetime`](../../reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime) to each of the datetime columns to convert
-them to datetime dtype. [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) automatically detects that [`ToDatetime`](../../reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime)
+Here we want to apply [`ToDatetime`](../../reference/generated/skrub.ToDatetime.md#skrub.ToDatetime) to each of the datetime columns to convert
+them to datetime dtype. [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) automatically detects that [`ToDatetime`](../../reference/generated/skrub.ToDatetime.md#skrub.ToDatetime)
 should be applied to each column separately:
 
 ```pycon
@@ -84,7 +84,7 @@ date_2    datetime64[...]
 dtype: ...
 ```
 
-We can also combine [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) with [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) to only vectorize columns
+We can also combine [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) with [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) to only vectorize columns
 specific columns and avoid others, like ID columns:
 
 ```pycon
@@ -103,11 +103,11 @@ id  city_Madrid  city_Paris  city_Rome  date_year  date_month  date_day  date_to
 
 Note that the column “id” was not encoded and was instead left as-is.
 
-## Dealing with columns that cannot be handled by a transformer
+## Rejecting columns that cannot be handled by a transformer
 
-[`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) can allow the underlying encoder to decide which columns it can be applied to.
+[`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) can allow the underlying encoder to decide which columns it can be applied to.
 For example, if we do not know in advance which columns can be transformed to datetime,
-we can use [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) to map [`ToDatetime`](../../reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime) to all columns in a dataframe and pass
+we can use [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) to map [`ToDatetime`](../../reference/generated/skrub.ToDatetime.md#skrub.ToDatetime) to all columns in a dataframe and pass
 `allow_reject=True`. In that case, non-datetime columns.  By default, all columns in
 `cols` must be transformed, and if one of them cannot be transformed an exception
 will be raised and the transformation will fail.
@@ -151,7 +151,7 @@ city                ...
 dtype: ...
 ```
 
-## Advanced usage of [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols)
+## Advanced usage of [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols)
 
-For more advanced use cases, refer to the examples section of the [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols)
-docstring, and to [this user guide section](../column_level_featurizing/advanced_columnwise_operationshtml.md#user-guide-single-column-transformer).
+For more advanced use cases, refer to the examples section of the [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols)
+docstring, and to [this user guide section](../column_level_featurizing/advanced_columnwise_operations.md#user-guide-single-column-transformer).

@@ -20,10 +20,10 @@ all columns except those matched by the selector.
     of remaining columns.
 
 #### SEE ALSO
-[`select`](skrub.selectors.selecthtml.md#skrub.selectors.select)
+[`select`](skrub.selectors.select.md#skrub.selectors.select)
 : Return only the columns matched by a selector
 
-[`inv`](skrub.selectors.invhtml.md#skrub.selectors.inv)
+[`inv`](skrub.selectors.inv.md#skrub.selectors.inv)
 : Create an inverted selector matching all columns except those from the input
 
 ### Notes

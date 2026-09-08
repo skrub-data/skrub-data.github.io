@@ -8,13 +8,13 @@ Boolean columns are not matched by this selector, only signed and unsigned
 ints are.
 
 #### SEE ALSO
-[`numeric`](skrub.selectors.numerichtml.md#skrub.selectors.numeric)
+[`numeric`](skrub.selectors.numeric.md#skrub.selectors.numeric)
 : Select all numeric columns (integer and float). Use this to select both integer and floating-point columns together.
 
-[`float`](skrub.selectors.floathtml.md#skrub.selectors.float)
+[`float`](skrub.selectors.float.md#skrub.selectors.float)
 : Select floating-point columns only.
 
-[`boolean`](skrub.selectors.booleanhtml.md#skrub.selectors.boolean)
+[`boolean`](skrub.selectors.boolean.md#skrub.selectors.boolean)
 : Select Boolean columns.
 
 ### Examples
@@ -58,7 +58,7 @@ Select all integer columns:
 0    2    2   3
 ```
 
-Combine with [`boolean()`](skrub.selectors.booleanhtml.md#skrub.selectors.boolean) to include Boolean columns:
+Combine with [`boolean()`](skrub.selectors.boolean.md#skrub.selectors.boolean) to include Boolean columns:
 
 ```pycon
 >>> s.select(df, s.integer() | s.boolean())

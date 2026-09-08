@@ -1,8 +1,8 @@
 <a id="user-guide-deduplicate"></a>
 
-# How to deduplicate categorical data with [`deduplicate()`](../../reference/generated/skrub.deduplicatehtml.md#skrub.deduplicate)
+# How to deduplicate categorical data with [`deduplicate()`](../../reference/generated/skrub.deduplicate.md#skrub.deduplicate)
 
-If you have a series or list that contains strings with typos, the [`deduplicate()`](../../reference/generated/skrub.deduplicatehtml.md#skrub.deduplicate)
+If you have a series or list that contains strings with typos, the [`deduplicate()`](../../reference/generated/skrub.deduplicate.md#skrub.deduplicate)
 function may be used to remove the typos. This is done by creating a mapping
 between the typo strings and the correct strings.
 
@@ -43,11 +43,11 @@ dtype: ...
 'white', 'white', 'white', 'white', 'white']
 ```
 
-See the [`deduplicate()`](../../reference/generated/skrub.deduplicatehtml.md#skrub.deduplicate) documentation for caveats and more detail.
+See the [`deduplicate()`](../../reference/generated/skrub.deduplicate.md#skrub.deduplicate) documentation for caveats and more detail.
 
 ## Deduplicating values in a dataframe
 
-[`deduplicate()`](../../reference/generated/skrub.deduplicatehtml.md#skrub.deduplicate) can be used to replace values in a dataframe that contains typos.
+[`deduplicate()`](../../reference/generated/skrub.deduplicate.md#skrub.deduplicate) can be used to replace values in a dataframe that contains typos.
 This can be done with `deduplicate_correspondence` computed above and the
 `map` function in pandas, or the `replace` function in polars.
 

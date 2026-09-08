@@ -8,7 +8,7 @@
 
 # SquashingScaler: Robust numerical preprocessing for neural networks
 
-The following example illustrates the use of the [`SquashingScaler`](../reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler), a
+The following example illustrates the use of the [`SquashingScaler`](../reference/generated/skrub.SquashingScaler.md#skrub.SquashingScaler), a
 transformer that can rescale and squash numerical features to a range that works well
 with neural networks and perhaps also other related models. Its basic idea is to
 rescale the features based on quantile statistics (to be robust to outliers), and then
@@ -24,7 +24,7 @@ performance of a simple neural network.
 
 ## Plotting the effect of different scalers
 
-First, let’s import the [`SquashingScaler`](../reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler), as well as the usual scikit-learn
+First, let’s import the [`SquashingScaler`](../reference/generated/skrub.SquashingScaler.md#skrub.SquashingScaler), as well as the usual scikit-learn
 [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler) and [`RobustScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html#sklearn.preprocessing.RobustScaler).
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 32-39 -->
@@ -149,7 +149,7 @@ employee salaries.
 The dataset contains numerical features, categorical features, text features,
 and dates.
 These features are first converted to numerical features using
-[`TableVectorizer`](../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer). Since the encoded features are not normalized,
+[`TableVectorizer`](../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer). Since the encoded features are not normalized,
 we apply a numerical transformation to them.
 
 Finally, we fit a simple neural network and compare the R2 scores obtained with
@@ -161,7 +161,7 @@ or tree-based models whenever low test errors are desired.
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 148-154 -->
 
-We test the [`SquashingScaler`](../reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler) against the
+We test the [`SquashingScaler`](../reference/generated/skrub.SquashingScaler.md#skrub.SquashingScaler) against the
 [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler) and the
 [`QuantileTransformer`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html#sklearn.preprocessing.QuantileTransformer) from scikit-learn. We put
 each of these together in a pipeline with a TableVectorizer and a simple MLPRegressor.
@@ -228,12 +228,12 @@ Cross-validation R2 scores for SquashingScaler (higher is better):
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 200-203 -->
 
-On the employee salaries dataset, the [`SquashingScaler`](../reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler) performs
+On the employee salaries dataset, the [`SquashingScaler`](../reference/generated/skrub.SquashingScaler.md#skrub.SquashingScaler) performs
 better than [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler) and [`QuantileTransformer`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html#sklearn.preprocessing.QuantileTransformer) on all
 cross-validation folds.
 
-**Total running time of the script:** (0 minutes 28.067 seconds)
+**Total running time of the script:** (0 minutes 26.453 seconds)
 
-**Estimated memory usage:**  548 MB
+**Estimated memory usage:**  536 MB
 
 <a id="sphx-glr-download-auto-examples-0100-squashing-scaler-py"></a>

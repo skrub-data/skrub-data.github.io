@@ -26,8 +26,8 @@ is the main advantage compared to placing the selection inside a
   The value corresponding to the matching key or the default
 
 #### SEE ALSO
-[`skrub.deferred`](skrub.deferredhtml.md#skrub.deferred)
-: Wrap function calls in a [`DataOp`](skrub.DataOphtml.md#skrub.DataOp).
+[`skrub.deferred`](skrub.deferred.md#skrub.deferred)
+: Wrap function calls in a [`DataOp`](skrub.DataOp.md#skrub.DataOp).
 
 ### Examples
 

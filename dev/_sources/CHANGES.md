@@ -12,7 +12,7 @@
 
 ### Deprecations
 
-- The [`TextEncoder`](reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder) has been renamed `LLMEncoder`. It is still available
+- The `TextEncoder` has been renamed [`LLMEncoder`](reference/generated/skrub.LLMEncoderhtml.md#skrub.LLMEncoder). It is still available
   as an alias, but will be removed in a future release. [#2255](https://github.com/skrub-data/skrub/pull/2255) by
   [Riccardo Cappuzzo](https://github.com/rcap107).
 
@@ -20,7 +20,7 @@
 
 ### Changes
 
-- [`TextEncoder`](reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder)’s `verbose` parameter is now an `int` instead of a
+- `TextEncoder`’s `verbose` parameter is now an `int` instead of a
   `bool`, where `verbose=0` silences the progress bar and
   `verbose>=1` shows it. The default is now `0`. Passing a
   boolean is still accepted.
@@ -192,6 +192,11 @@
   [#2094](https://github.com/skrub-data/skrub/pull/2094) by [Alicja Kosak](https://github.com/AlicjaKo).
 - Added support for numpy arrays in [`DataOp.skb.concat()`](reference/generated/skrub.DataOp.skb.concathtml.md#skrub.DataOp.skb.concat).
   [#2096](https://github.com/skrub-data/skrub/pull/2096) by [Ayesha Siddiqua](https://github.com/siddiqua-tamk).
+- The package build has been updated to include the user guide and examples with
+  the package, so that it is now possible to access it directly from the wheel
+  rather than having to rely on the online docs. Docs and examples are now stored
+  in `skrub/_docs`, rather than in the root of the repository.
+  [#2173](https://github.com/skrub-data/skrub/pull/2173) by [Riccardo Cappuzzo](https://github.com/rcap107).
 
 ### Bugfixes
 
@@ -514,7 +519,7 @@
 - Added `get_feature_names_out()` to [`Cleaner`](reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) for consistency with the
   [`TableVectorizer`](reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) and other transformers. [#1762](https://github.com/skrub-data/skrub/pull/1762) by
   [Riccardo Cappuzzo](https://github.com/rcap107).
-- Improve error message when [`TextEncoder`](reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder) is used without the optional
+- Improve error message when `TextEncoder` is used without the optional
   transformers dependencies. [#1769](https://github.com/skrub-data/skrub/pull/1769) by [Fangxuan Zhou](https://github.com/fxzhou22).
 - Accessing `.skb.applied_estimator` on a [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) after calling
   `.skb.set_name()`, `.skb.set_description()`, `.skb.mark_as_X()` or
@@ -617,7 +622,7 @@
 - [`selectors`](https://docs.python.org/3/library/selectors.html#module-selectors), [`ApplyToCols`](reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) and `ApplyToFrame` are now available,
   providing utilities for selecting columns to which a transformer should be applied
   in a flexible way. For more details, see the [User guide](modules/multi_column_operations/selectorshtml.md#user-guide-selectors)
-  and the example.
+  and the [example](auto_examples/0010_apply_to_colshtml.md#sphx-glr-auto-examples-0010-apply-to-cols-py).
 - The [`SquashingScaler`](reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler) has been added: it robustly rescales and smoothly
   clips numeric columns, enabling more robust handling of numeric columns
   with neural networks. See the [example](auto_examples/0100_squashing_scalerhtml.md#sphx-glr-auto-examples-0100-squashing-scaler-py)
@@ -690,7 +695,7 @@ The default high cardinality encoder for both [`TableVectorizer`](reference/gene
   exceeds the specified value. [#1304](https://github.com/skrub-data/skrub/pull/1304) by [Victoria Shevchenko](https://github.com/victoris93).
 - The `packaging` dependency was removed.
   [#1307](https://github.com/skrub-data/skrub/pull/1307) by [Jovan Stojanovic](https://github.com/jovan-stojanovic)
-- [`TextEncoder`](reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder), [`StringEncoder`](reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder) and [`GapEncoder`](reference/generated/skrub.GapEncoderhtml.md#skrub.GapEncoder) now compute the
+- `TextEncoder`, [`StringEncoder`](reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder) and [`GapEncoder`](reference/generated/skrub.GapEncoderhtml.md#skrub.GapEncoder) now compute the
   total standard deviation norm during training, which is a global constant, and
   normalize the vector outputs by performing element-wise division on all entries.
   [#1274](https://github.com/skrub-data/skrub/pull/1274) by [Vincent Maladiere](https://github.com/Vincent-Maladiere).
@@ -705,7 +710,7 @@ The default high cardinality encoder for both [`TableVectorizer`](reference/gene
 - The `SimpleCleaner` has been removed. use [`Cleaner`](reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) instead. [#1370](https://github.com/skrub-data/skrub/pull/1370) by [Riccardo Cappuzzo](https://github.com/rcap107).
 - The periodic encoding for the `day_in_year` has been removed from the [`DatetimeEncoder`](reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) as it was
   redundant. The feature itself is still added if the flag is set to `True`. [#1396](https://github.com/skrub-data/skrub/pull/1396) by [Riccardo Cappuzzo](https://github.com/rcap107).
-- The naming scheme used for the features generated by [`TextEncoder`](reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder), [`StringEncoder`](reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder), [`MinHashEncoder`](reference/generated/skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder),
+- The naming scheme used for the features generated by `TextEncoder`, [`StringEncoder`](reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder), [`MinHashEncoder`](reference/generated/skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder),
   [`DatetimeEncoder`](reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) has been standardized. Now features generated by all encoders have indices in the range
   `[0, n_components-1]`, rather than `[1, n_components]`. Additionally, columns with empty name are assigned a default
   name that depends on the encoder used. [#1405](https://github.com/skrub-data/skrub/pull/1405) by [Riccardo Cappuzzo](https://github.com/rcap107).
@@ -718,7 +723,7 @@ The default high cardinality encoder for both [`TableVectorizer`](reference/gene
 
 ### Bugfixes
 
-- Fixed a bug that caused the [`StringEncoder`](reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder) and [`TextEncoder`](reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder) to raise an exception if the
+- Fixed a bug that caused the [`StringEncoder`](reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder) and `TextEncoder` to raise an exception if the
   input column was a Categorical datatype. [#1401](https://github.com/skrub-data/skrub/pull/1401) by [Riccardo Cappuzzo](https://github.com/rcap107).
 
 ### Documentation
@@ -850,7 +855,7 @@ website have been made. Contributors include [Vincent Maladiere](https://github.
 
 ### Highlights
 
-* The [`TextEncoder`](reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder) can extract embeddings from a string column with  a deep
+* The `TextEncoder` can extract embeddings from a string column with  a deep
   learning language model (possibly downloaded from the HuggingFace Hub).
 * Several improvements to the [`TableReport`](reference/generated/skrub.TableReporthtml.md#skrub.TableReport) such as better support for
   other scripts than the latin alphabet in the bar plot labels, smaller report
@@ -861,7 +866,7 @@ website have been made. Contributors include [Vincent Maladiere](https://github.
 
 ### New features
 
-* The [`TextEncoder`](reference/generated/skrub.TextEncoderhtml.md#skrub.TextEncoder) is now available to encode string columns with
+* The `TextEncoder` is now available to encode string columns with
   diverse entries.
   It allows the representation of table entries as embeddings computed by a deep
   learning language model. The weights of this model can be fetched locally

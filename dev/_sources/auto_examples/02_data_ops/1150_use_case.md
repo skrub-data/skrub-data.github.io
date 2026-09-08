@@ -24,7 +24,7 @@ microservice will accept an email’s data as a JSON payload and return a score 
 To avoid rewriting the entire data pipeline when moving from model validation to
 production deployment, which is both error-prone and inefficient, we prefer to load an
 object that encapsulates the same processing pipeline used during model development.
-This is where the [`SkrubLearner`](../../reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) can help.
+This is where the [`SkrubLearner`](../../reference/generated/skrub.SkrubLearner.md#skrub.SkrubLearner) can help.
 
 Adopting this workflow also has the benefit of forcing us to clearly define the type
 of data that will be available at the input of the microservice. It helps ensure we
@@ -133,7 +133,7 @@ y = skrub.y(y)
 
 The variable X is currently a list of dictionaries, which estimators cannot
 handle directly. Let’s convert it to a pandas DataFrame using
-[`apply_func()`](../../reference/generated/skrub.DataOp.skb.apply_funchtml.md#skrub.DataOp.skb.apply_func).
+[`apply_func()`](../../reference/generated/skrub.DataOp.skb.apply_func.md#skrub.DataOp.skb.apply_func).
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 113-117 -->
 ```Python
@@ -145,7 +145,7 @@ df = X.skb.apply_func(pd.DataFrame)
 <!-- GENERATED FROM PYTHON SOURCE LINES 118-120 -->
 
 For this example, we will use a strong baseline, with skrub’s
-[`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline).
+[`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline).
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 120-129 -->
 ```Python
@@ -174,7 +174,7 @@ predictions.skb.draw_graph()
 <!-- node_0 -->
 <g id="node_0" class="node">
 
-<g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1150_use_case.py&quot;, line 106, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X = skrub.X(X)">
+<g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1150_use_case.py&quot;, line 106, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X = skrub.X(X)">
 <polygon fill="#c6d5f0" stroke="black" points="75.64,-134.17 17.62,-134.17 17.62,-112.78 75.64,-112.78 75.64,-134.17"/>
 <polygon fill="none" stroke="black" points="79.64,-138.17 13.62,-138.17 13.62,-108.78 79.64,-108.78 79.64,-138.17"/>
 <text xml:space="preserve" text-anchor="middle" x="46.63" y="-120.35" font-family="sans-serif" font-size="10.00">X: Var &#39;X&#39;</text>
@@ -184,7 +184,7 @@ predictions.skb.draw_graph()
 <!-- node_1 -->
 <g id="node_1" class="node">
 
-<g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1150_use_case.py&quot;, line 115, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;df = X.skb.apply_func(pd.DataFrame)">
+<g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1150_use_case.py&quot;, line 115, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;df = X.skb.apply_func(pd.DataFrame)">
 <polygon fill="none" stroke="black" points="93.27,-75.78 0,-75.78 0,-54.39 93.27,-54.39 93.27,-75.78"/>
 <text xml:space="preserve" text-anchor="middle" x="46.63" y="-61.96" font-family="sans-serif" font-size="10.00">Call &#39;DataFrame&#39;</text>
 </a>
@@ -199,7 +199,7 @@ predictions.skb.draw_graph()
 <!-- node_3 -->
 <g id="node_3" class="node">
 
-<g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1150_use_case.py&quot;, line 124, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;predictions = df.skb.apply(tab_pipeline, y=y)">
+<g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1150_use_case.py&quot;, line 124, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;predictions = df.skb.apply(tab_pipeline, y=y)">
 <polygon fill="none" stroke="black" points="135.27,-21.39 54,-21.39 54,0 135.27,0 135.27,-21.39"/>
 <text xml:space="preserve" text-anchor="middle" x="94.63" y="-7.57" font-family="sans-serif" font-size="10.00">Apply Pipeline</text>
 </a>
@@ -214,7 +214,7 @@ predictions.skb.draw_graph()
 <!-- node_2 -->
 <g id="node_2" class="node">
 
-<g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1150_use_case.py&quot;, line 107, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;y = skrub.y(y)">
+<g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1150_use_case.py&quot;, line 107, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;y = skrub.y(y)">
 <polygon fill="#fad9c6" stroke="black" points="171.52,-75.78 115.75,-75.78 115.75,-54.39 171.52,-54.39 171.52,-75.78"/>
 <polygon fill="none" stroke="black" points="175.52,-79.78 111.75,-79.78 111.75,-50.39 175.52,-50.39 175.52,-79.78"/>
 <text xml:space="preserve" text-anchor="middle" x="143.63" y="-61.96" font-family="sans-serif" font-size="10.00">y: Var &#39;y&#39;</text>
@@ -237,7 +237,7 @@ predictions.skb.draw_graph()
 
 To end the explorative work, we need to build the learner, fit it, and save it to a
 file.
-Passing `fitted=True` to the [`make_learner()`](../../reference/generated/skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner)
+Passing `fitted=True` to the [`make_learner()`](../../reference/generated/skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner)
 function makes it so that the learner is fitted on the data that has been passed to
 the variables of the DataOps plan.
 
@@ -289,8 +289,8 @@ and preprocessing done during model development are exactly the same as those do
 production. This makes deployment straightforward and reduces the risk of errors
 when moving from development to production environments.
 
-**Total running time of the script:** (0 minutes 10.685 seconds)
+**Total running time of the script:** (0 minutes 10.501 seconds)
 
-**Estimated memory usage:**  668 MB
+**Estimated memory usage:**  655 MB
 
 <a id="sphx-glr-download-auto-examples-02-data-ops-1150-use-case-py"></a>

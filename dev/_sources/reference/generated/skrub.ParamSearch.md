@@ -5,8 +5,8 @@
 Learner that evaluates a skrub DataOp with hyperparameter tuning.
 
 This class is not meant to be instantiated manually, `ParamSearch`
-objects are created by calling [`make_grid_search()`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search) or
-[`make_randomized_search()`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search) on a DataOp.
+objects are created by calling [`make_grid_search()`](skrub.DataOp.skb.make_grid_search.md#skrub.DataOp.skb.make_grid_search) or
+[`make_randomized_search()`](skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search) on a DataOp.
 
 * **Attributes:**
   **classes_**

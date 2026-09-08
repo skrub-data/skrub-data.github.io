@@ -120,19 +120,19 @@ by raising a `RejectColumn` exception.
   : Column names of the data the Gap was fitted on.
 
 #### SEE ALSO
-[`MinHashEncoder`](skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder)
+[`MinHashEncoder`](skrub.MinHashEncoder.md#skrub.MinHashEncoder)
 : Encode string columns as a numeric array with the minhash method.
 
-[`SimilarityEncoder`](skrub.SimilarityEncoderhtml.md#skrub.SimilarityEncoder)
+[`SimilarityEncoder`](skrub.SimilarityEncoder.md#skrub.SimilarityEncoder)
 : Encode string columns as a numeric array with n-gram string similarity.
 
-`LLMEncoder`
+[`LLMEncoder`](skrub.LLMEncoder.md#skrub.LLMEncoder)
 : Encode string columns with a pretrained language model.
 
-[`StringEncoder`](skrub.StringEncoderhtml.md#skrub.StringEncoder)
+[`StringEncoder`](skrub.StringEncoder.md#skrub.StringEncoder)
 : Fast n-gram encoding of string columns.
 
-[`deduplicate`](skrub.deduplicatehtml.md#skrub.deduplicate)
+[`deduplicate`](skrub.deduplicate.md#skrub.deduplicate)
 : Deduplicate data by hierarchically clustering similar strings.
 
 ### References
@@ -363,7 +363,8 @@ Return the encoded vectors (activations) `H` of input strings in `X`.
 ## Gallery examples
 
 <div class="sphx-glr-thumbnails">
-<!-- thumbnail-parent-div-open --><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset.">  <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
+<!-- thumbnail-parent-div-open --><div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation.">  <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset.">  <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we explore the performance of string and categorical encoders available in skrub.">  <div class="sphx-glr-thumbnail-title">Various string encoders: a sentiment analysis example</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation.">  <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
 </div>

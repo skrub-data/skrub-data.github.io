@@ -10,10 +10,10 @@ Get the value computed for previews (shown when printing the DataOp).
     variables.
 
 #### SEE ALSO
-[`DataOp.skb.subsample`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample)
+[`DataOp.skb.subsample`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample)
 : Specify how to subsample an intermediate result when computing previews.
 
-[`DataOp.skb.eval`](skrub.DataOp.skb.evalhtml.md#skrub.DataOp.skb.eval)
+[`DataOp.skb.eval`](skrub.DataOp.skb.eval.md#skrub.DataOp.skb.eval)
 : Evaluate the DataOp. Unlike `preview`, we can pass new data rather than using the values that variables were initialized with, but results are not cached, and no subsampling takes place by default.
 
 ### Examples

@@ -11,7 +11,7 @@ mark relevant parts of the learner.
 
 Moreover, the evaluation of this step can be bypassed and the result
 provided directly by providing a value for this name to
-[`eval()`](skrub.DataOp.skb.evalhtml.md#skrub.DataOp.skb.eval), `.transform()`,
+[`eval()`](skrub.DataOp.skb.eval.md#skrub.DataOp.skb.eval), `.transform()`,
 `.predict()` etc. (see examples)
 
 * **Parameters:**

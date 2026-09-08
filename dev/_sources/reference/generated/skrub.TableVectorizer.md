@@ -27,19 +27,19 @@ features are encoded differently depending on their cardinality.
   **high_cardinality**
   : The transformer for string or categorical columns with at least
     `cardinality_threshold` unique values. The default is a
-    [`StringEncoder`](skrub.StringEncoderhtml.md#skrub.StringEncoder) with 30 components (30 output columns for each
+    [`StringEncoder`](skrub.StringEncoder.md#skrub.StringEncoder) with 30 components (30 output columns for each
     input).
     <br/>
     #### Versionchanged
     Changed in version 0.6.0: The default `high_cardinality` encoder has been changed from
-    [`GapEncoder`](skrub.GapEncoderhtml.md#skrub.GapEncoder) to [`StringEncoder`](skrub.StringEncoderhtml.md#skrub.StringEncoder).
+    [`GapEncoder`](skrub.GapEncoder.md#skrub.GapEncoder) to [`StringEncoder`](skrub.StringEncoder.md#skrub.StringEncoder).
 
   **numeric**
   : The transformer for numeric columns (floats, ints, booleans).
 
   **datetime**
   : The transformer for date and datetime columns. By default, we use a
-    [`DatetimeEncoder`](skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder).
+    [`DatetimeEncoder`](skrub.DatetimeEncoder.md#skrub.DatetimeEncoder).
 
   **specific_transformers**
   : Override the categories above for the given columns and force using the
@@ -47,9 +47,9 @@ features are encoded differently depending on their cardinality.
     the TableVectorizer; the columns are passed to the transformer without
     any modification. A column is not allowed to appear twice in
     `specific_transformers`.
-    Consider wrapping the `TableVectorizer` in  [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols)
+    Consider wrapping the `TableVectorizer` in  [`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols)
     to select or exclude specific columns from the processing. Alternatively,
-    the [skrub Data Ops](../../data_opshtml.md#user-guide-data-ops-index) allows for more complex
+    the [skrub Data Ops](../../data_ops.md#user-guide-data-ops-index) allow for more complex
     pre-processing.
 
   **drop_null_fraction**
@@ -115,7 +115,7 @@ features are encoded differently depending on their cardinality.
   : Maps the name of each column to a list of all the processing steps that were
     applied to it. Those steps may include some pre-processing transformations such
     as converting strings to datetimes or numbers, the main transformer (e.g. the
-    [`DatetimeEncoder`](skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder)), and a post-processing step casting the main
+    [`DatetimeEncoder`](skrub.DatetimeEncoder.md#skrub.DatetimeEncoder)), and a post-processing step casting the main
     transformer’s output to [`numpy.float32`](https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float32). See the “Examples” section below
     for details.
 
@@ -130,16 +130,16 @@ features are encoded differently depending on their cardinality.
   : The names of the output columns.
 
 #### SEE ALSO
-[`tabular_pipeline`](skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline)
+[`tabular_pipeline`](skrub.tabular_pipeline.md#skrub.tabular_pipeline)
 : A function that accepts a scikit-learn estimator and creates a pipeline combining a `TableVectorizer`, optional missing value imputation and the provided estimator.
 
-[`Cleaner`](skrub.Cleanerhtml.md#skrub.Cleaner)
+[`Cleaner`](skrub.Cleaner.md#skrub.Cleaner)
 : Preprocesses each column of a dataframe with consistency checks and sanitization, e.g., of null values or dates.
 
-[`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols)
+[`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols)
 : Apply a given transformer to each column in a selection of columns. Combine this transformer with the skrub selectors to select columns based on advanced rules.
 
-[`DropUninformative`](skrub.DropUninformativehtml.md#skrub.DropUninformative)
+[`DropUninformative`](skrub.DropUninformative.md#skrub.DropUninformative)
 : Drop columns that are considered uninformative, e.g., containing only null values or a single unique value.
 
 ### Notes
@@ -157,7 +157,7 @@ The TableVectorizer applies a different transformation to each of several kinds 
   that it is not possible to assign a distinct representation to each: the dimension
   would be too large and there would be too few examples of each category.
   Representations designed for text, such as topic modelling
-  ([`GapEncoder`](skrub.GapEncoderhtml.md#skrub.GapEncoder)) or locality-sensitive hashing
+  ([`GapEncoder`](skrub.GapEncoder.md#skrub.GapEncoder)) or locality-sensitive hashing
   (`MinHash`) are more appropriate.
 
 #### NOTE

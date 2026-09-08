@@ -4,7 +4,7 @@
 
 Get a skrub learner for this DataOp.
 
-Returns a [`SkrubLearner`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) with a `fit()` method so it can be fit
+Returns a [`SkrubLearner`](skrub.SkrubLearner.md#skrub.SkrubLearner) with a `fit()` method so it can be fit
 to some training data and then apply it to unseen data by calling
 `transform()` or `predict()`. Unlike scikit-learn estimators, skrub
 learners accept a dictionary of inputs rather than `X` and `y` arguments.
@@ -15,10 +15,10 @@ default this learner uses the default value of each choice. See the
 `choose` parameter for other options (random or from an
 [Optuna](https://optuna.readthedocs.io/en/stable/) trial). To actually
 pick the best value with hyperparameter tuning, use
-[`DataOp.skb.make_randomized_search()`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search)
-[`DataOp.skb.make_grid_search()`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search) instead, or an Optuna
+[`DataOp.skb.make_randomized_search()`](skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search)
+[`DataOp.skb.make_grid_search()`](skrub.DataOp.skb.make_grid_search.md#skrub.DataOp.skb.make_grid_search) instead, or an Optuna
 [`Study`](https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study) as shown in this
-[example](../../auto_examples/02_data_ops/1131_optuna_choiceshtml.md#example-optuna-choices).
+[example](../../auto_examples/02_data_ops/1131_optuna_choices.md#example-optuna-choices).
 
 * **Parameters:**
   **fitted**
@@ -28,7 +28,7 @@ pick the best value with hyperparameter tuning, use
 
   **keep_subsampling**
   : If True, and if subsampling has been configured (see
-    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample)), fit on a subsample of the data. By
+    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample)), fit on a subsample of the data. By
     default subsampling is not applied and all the data is used. This
     is only applied for fitting the estimator when `fitted=True`,
     subsequent use of the estimator is not affected by subsampling.
@@ -56,10 +56,10 @@ pick the best value with hyperparameter tuning, use
     an evaluation criterion, as this function creates a single learner.
     These options can be combined with external logic to evaluate and
     select the resulting learners, or one of
-    [`DataOp.skb.make_grid_search()`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search),
-    [`DataOp.skb.make_randomized_search()`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search),
+    [`DataOp.skb.make_grid_search()`](skrub.DataOp.skb.make_grid_search.md#skrub.DataOp.skb.make_grid_search),
+    [`DataOp.skb.make_randomized_search()`](skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search),
     [`optuna.Study.optimize`](https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.optimize) (as
-    shown in this [example](../../auto_examples/02_data_ops/1131_optuna_choiceshtml.md#example-optuna-choices)) can be used
+    shown in this [example](../../auto_examples/02_data_ops/1131_optuna_choices.md#example-optuna-choices)) can be used
     to automatically select the best hyperparameters.
 * **Returns:**
   learner

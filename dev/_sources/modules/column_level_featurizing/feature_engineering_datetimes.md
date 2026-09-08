@@ -10,17 +10,17 @@ In such cases, parsing columns that contain timestamps or dates so that they are
 treated as datetime objects allows to make use of advanced functionalities available
 in the standard Python library, Pandas and Polars.
 
-Skrub provides objects that help with parsing such data ([`ToDatetime`](../../reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime)), as well
-as the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder), a datetime-specific encoder that feature engineers
+Skrub provides objects that help with parsing such data ([`ToDatetime`](../../reference/generated/skrub.ToDatetime.md#skrub.ToDatetime)), as well
+as the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder), a datetime-specific encoder that feature engineers
 datetime columns.
 
-## Parsing Datetime Strings with [`ToDatetime`](../../reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime)
+## Parsing Datetime Strings with [`ToDatetime`](../../reference/generated/skrub.ToDatetime.md#skrub.ToDatetime)
 
 Skrub provides helpers to parse datetime string columns automatically:
 
-- The [`ToDatetime`](../../reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime) transformer learns a mapping between columns and their formats.
+- The [`ToDatetime`](../../reference/generated/skrub.ToDatetime.md#skrub.ToDatetime) transformer learns a mapping between columns and their formats.
   It then applies this mapping during the transform step.
-- The [`to_datetime()`](../../reference/generated/skrub.to_datetimehtml.md#skrub.to_datetime) function applies the [`ToDatetime`](../../reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime) transformer to all columns
+- The [`to_datetime()`](../../reference/generated/skrub.to_datetime.md#skrub.to_datetime) function applies the [`ToDatetime`](../../reference/generated/skrub.ToDatetime.md#skrub.ToDatetime) transformer to all columns
   in the dataframe, and tries to parse them as datetimes. The format can be
   inferred or user-specified with the `format` argument.
 
@@ -59,7 +59,7 @@ dtype('<M8[...]')
 True
 ```
 
-Once [`ToDatetime`](../../reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime) was successfully fitted, `transform` will always try to
+Once [`ToDatetime`](../../reference/generated/skrub.ToDatetime.md#skrub.ToDatetime) was successfully fitted, `transform` will always try to
 parse datetimes with the same format and output the same `dtype`. Entries that
 fail to be converted result in a null value:
 
@@ -177,7 +177,7 @@ dtype: datetime64[...]
 
 ### Caveats when dealing with month first/day first conventions
 
-When parsing strings in one of the formats above, [`ToDatetime`](../../reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime) tries to guess
+When parsing strings in one of the formats above, [`ToDatetime`](../../reference/generated/skrub.ToDatetime.md#skrub.ToDatetime) tries to guess
 if the month comes first (USA convention) or the day (rest of the world) from
 the data.
 
@@ -215,15 +215,15 @@ dtype: datetime64[...]
 
 <a id="user-guide-datetime-encoder"></a>
 
-## Encoding and Feature Engineering with [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder)
+## Encoding and Feature Engineering with [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder)
 
 Once datetime columns have been parsed, they can be encoded as numeric features with
-the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder), by extracting temporal features (year, month, day,
+the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder), by extracting temporal features (year, month, day,
 hour, etc.). No timezone conversion is done; the timezone
-in the feature is retained. The [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) rejects non-datetime columns,
-so it should only be applied after conversion using [`ToDatetime`](../../reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime).
+in the feature is retained. The [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) rejects non-datetime columns,
+so it should only be applied after conversion using [`ToDatetime`](../../reference/generated/skrub.ToDatetime.md#skrub.ToDatetime).
 If the input column is timezone aware, the extracted features will be in the column’s
-timezone; this is normally the case when the datetime column has been encoded with [`ToDatetime`](../../reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime).
+timezone; this is normally the case when the datetime column has been encoded with [`ToDatetime`](../../reference/generated/skrub.ToDatetime.md#skrub.ToDatetime).
 
 ```pycon
 >>> import pandas as pd
@@ -247,7 +247,7 @@ login_year  login_month  login_day  login_hour  login_total_seconds
 2      2024.0          5.0       15.0        13.0         1.715781e+09
 ```
 
-Additionally, the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) can include the following features:
+Additionally, the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) can include the following features:
 
 - Number of seconds from epoch (`add_total_seconds`, `True` by default)
 - Day of the week (`add_weekday`)
@@ -277,7 +277,7 @@ Index(['login_year', 'login_total_seconds', 'login_month_circular_0',
       dtype=...)
 ```
 
-The [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) uses hardcoded values for generating periodic features.
+The [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) uses hardcoded values for generating periodic features.
 The period of each feature is:
 
 - `month`: 12 (month in year)

@@ -4,20 +4,20 @@
 
 Get learners with different parameter combinations.
 
-This generator yields a [`SkrubLearner`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) parametrized for each
+This generator yields a [`SkrubLearner`](skrub.SkrubLearner.md#skrub.SkrubLearner) parametrized for each
 possible combination of choices.
 
 The choice outcomes used in each learner can be inspected with
-[`SkrubLearner.describe_params()`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.describe_params).
+[`SkrubLearner.describe_params()`](skrub.SkrubLearner.md#skrub.SkrubLearner.describe_params).
 
 #### SEE ALSO
-[`DataOp.skb.iter_learners_randomized`](skrub.DataOp.skb.iter_learners_randomizedhtml.md#skrub.DataOp.skb.iter_learners_randomized)
-: Similar function but for random sampling of the parameter space. Must be used when the DataOp contains some numeric ranges built with [`choose_float()`](skrub.choose_floathtml.md#skrub.choose_float) or [`choose_int()`](skrub.choose_inthtml.md#skrub.choose_int) with `n_steps=None`.
+[`DataOp.skb.iter_learners_randomized`](skrub.DataOp.skb.iter_learners_randomized.md#skrub.DataOp.skb.iter_learners_randomized)
+: Similar function but for random sampling of the parameter space. Must be used when the DataOp contains some numeric ranges built with [`choose_float()`](skrub.choose_float.md#skrub.choose_float) or [`choose_int()`](skrub.choose_int.md#skrub.choose_int) with `n_steps=None`.
 
-[`DataOp.skb.make_grid_search`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search)
+[`DataOp.skb.make_grid_search`](skrub.DataOp.skb.make_grid_search.md#skrub.DataOp.skb.make_grid_search)
 : Learner with built-in exhaustive exploration of the parameter grid to select the best one.
 
-[`DataOp.skb.make_randomized_search`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search)
+[`DataOp.skb.make_randomized_search`](skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search)
 : Learner with built-in randomized exploration of the parameter grid to select the best one.
 
 ### Examples

@@ -561,7 +561,7 @@
 
 
 
-<li class="toctree-l2"><a class="reference internal" href="../../default_wrangling/apply_to_cols.html">Transforming selected columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../default_wrangling/apply_to_cols.html">Transforming only some columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../column_level_featurizing.html">Column-level feature extraction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -587,6 +587,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../auto_tutorials/1111_data_ops_quick_tour.html">Quick overview of DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../basics/what_are_data_ops.html">Basics of DataOps: the DataOps plan, variables, and learners</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../basics/building_data_ops_plan.html">Building a simple DataOps plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../auto_tutorials/1111_data_ops_quick_tour.html">Quick overview of DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../basics/using_previews.html">Using previews for easier development and debugging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../basics/direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../basics/control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
@@ -684,7 +685,7 @@
 <p>It is possible to use skrub selectors to define which columns to apply
 transformers to, and then apply different transformers to different subsets of
 the data.</p>
-<p>For example, this can be useful to apply <code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code> to columns
+<p>For example, this can be useful to apply <a class="reference internal" href="../../../reference/generated/skrub.LLMEncoder.html#skrub.LLMEncoder" title="skrub.LLMEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">LLMEncoder</span></code></a> to columns
 that contain free-flowing text, and <a class="reference internal" href="../../../reference/generated/skrub.StringEncoder.html#skrub.StringEncoder" title="skrub.StringEncoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">StringEncoder</span></code></a> to other string
 columns that contain categorical data such as country names.</p>
 <p>Or, a string column may need to be encoded in an ordered way, like in the following

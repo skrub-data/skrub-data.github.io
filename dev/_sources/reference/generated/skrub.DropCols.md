@@ -13,13 +13,13 @@ Accepts [`pandas.DataFrame`](http://pandas.pydata.org/pandas-docs/stable/referen
   **cols**
   : The columns to drop, or a selector. A single column name can be passed as a
     `str`: `"col_name"` is the same as `["col_name"]`. See the
-    [selectors](../../modules/multi_column_operations/selectorshtml.md#user-guide-selectors) user guide for more info on selectors.
+    [selectors](../../modules/multi_column_operations/selectors.md#user-guide-selectors) user guide for more info on selectors.
 
 #### SEE ALSO
-[`SelectCols`](skrub.SelectColshtml.md#skrub.SelectCols)
+[`SelectCols`](skrub.SelectCols.md#skrub.SelectCols)
 : Selecting cols by name, dtypes, or general skrub selectors.
 
-[`Cleaner`](skrub.Cleanerhtml.md#skrub.Cleaner)
+[`Cleaner`](skrub.Cleaner.md#skrub.Cleaner)
 : Can be used to drop columns with too many nulls (or NaNs).
 
 ### Examples

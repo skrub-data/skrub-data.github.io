@@ -17,7 +17,7 @@ If `self` evaluates to `True`, the result will be
   Conditional DataOp
 
 #### SEE ALSO
-[`skrub.DataOp.skb.match`](skrub.DataOp.skb.matchhtml.md#skrub.DataOp.skb.match)
+[`skrub.DataOp.skb.match`](skrub.DataOp.skb.match.md#skrub.DataOp.skb.match)
 : Select based on the value of a DataOp.
 
 ### Notes

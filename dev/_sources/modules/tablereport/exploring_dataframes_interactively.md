@@ -1,8 +1,8 @@
 <a id="user-guide-table-report-start"></a>
 
-# Exploring dataframes interactively with the [`TableReport`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport)
+# Exploring dataframes interactively with the [`TableReport`](../../reference/generated/skrub.TableReport.md#skrub.TableReport)
 
-The [`TableReport`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport) gives a high-level overview of a Dataframe or Series, suitable for
+The [`TableReport`](../../reference/generated/skrub.TableReport.md#skrub.TableReport) gives a high-level overview of a Dataframe or Series, suitable for
 quick exploratory analysis. The report shows the first
 and last 5 rows of the dataframe (decided by the `n_rows` parameter), as well
 as additional information in other tabs.
@@ -14,7 +14,7 @@ as additional information in other tabs.
   between columns.
 - Built-in filters allow selection of columns by dtype and other conditions.
 
-The [`TableReport`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport) of a table can be generated as follows:
+The [`TableReport`](../../reference/generated/skrub.TableReport.md#skrub.TableReport) of a table can be generated as follows:
 
 ```pycon
 >>> from skrub import TableReport
@@ -29,8 +29,8 @@ The [`TableReport`](../../reference/generated/skrub.TableReporthtml.md#skrub.Tab
 
 The command `TableReport(df).open()` opens the report in a browser window.
 
-It is also possible to export the [`TableReport`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport) in JSON or Markdown format with
-[`json()`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport.json)  [`markdown()`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport.markdown) respectively.
+It is also possible to export the [`TableReport`](../../reference/generated/skrub.TableReport.md#skrub.TableReport) in JSON or Markdown format with
+[`json()`](../../reference/generated/skrub.TableReport.md#skrub.TableReport.json)  [`markdown()`](../../reference/generated/skrub.TableReport.md#skrub.TableReport.markdown) respectively.
 
 The generated JSON includes the plots in SVG format, which can be
 quite verbose: plots can be disabled by setting `plot_distributions=False`
@@ -40,13 +40,13 @@ so it can be quite lengthy for dataframes that include many columns.
 
 #### WARNING
 The Markdown output can be fed to AI agents to obtain insight in the data,
-but it is **not** sanitized by the [`TableReport`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport). Therefore, it should not be
+but it is **not** sanitized by the [`TableReport`](../../reference/generated/skrub.TableReport.md#skrub.TableReport). Therefore, it should not be
 used with untrusted data or for dataframes that are too large, as it could lead
 to security risks or performance issues.
 
-## A demo of the [`TableReport`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport)
+## A demo of the [`TableReport`](../../reference/generated/skrub.TableReport.md#skrub.TableReport)
 
-Pre-computed examples of the [`TableReport`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport) are available
+Pre-computed examples of the [`TableReport`](../../reference/generated/skrub.TableReport.md#skrub.TableReport) are available
 [here](https://skrub-data.org/skrub-reports/examples/index.html), and you can
 try it out on your data [here](https://skrub-data.org/skrub-reports/index.html).
 

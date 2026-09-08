@@ -1,7 +1,7 @@
 # How to define custom filters for the TableReport
 
-It is possible to define custom filters for the [`TableReport`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport) using either column
-names, or [skrub selectors](../../modules/multi_column_operations/selectorshtml.md#user-guide-selectors).
+It is possible to define custom filters for the [`TableReport`](../../reference/generated/skrub.TableReport.md#skrub.TableReport) using either column
+names, or [skrub selectors](../../modules/multi_column_operations/selectors.md#user-guide-selectors).
 
 By defining a custom filter, it becomes easier to show and work directly on a given
 subset of columns.

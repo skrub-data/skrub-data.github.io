@@ -6,7 +6,7 @@ Get an independent clone of the DataOp.
 
 * **Parameters:**
   **drop_values**
-  : Whether to drop the initial values passed to [`skrub.var()`](skrub.varhtml.md#skrub.var).
+  : Whether to drop the initial values passed to [`skrub.var()`](skrub.var.md#skrub.var).
     This is convenient for example to serialize DataOps without
     creating large files.
 * **Returns:**
@@ -16,7 +16,7 @@ Get an independent clone of the DataOp.
     variables’ values.
 
 #### SEE ALSO
-[`DataOp.skb.set_data`](skrub.DataOp.skb.set_datahtml.md#skrub.DataOp.skb.set_data)
+[`DataOp.skb.set_data`](skrub.DataOp.skb.set_data.md#skrub.DataOp.skb.set_data)
 : Set the initial (preview) values for variables contained in the DataOp.
 
 ### Examples

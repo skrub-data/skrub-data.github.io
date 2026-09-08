@@ -2,18 +2,18 @@
 
 ### *class* skrub.MultiAggJoiner(aux_tables, operations, , keys=None, main_keys=None, aux_keys=None, cols=None, suffixes=None)
 
-Extension of the [`AggJoiner`](skrub.AggJoinerhtml.md#skrub.AggJoiner) to multiple auxiliary tables.
+Extension of the [`AggJoiner`](skrub.AggJoiner.md#skrub.AggJoiner) to multiple auxiliary tables.
 
 Apply numerical and categorical aggregation operations on the `cols`
 to aggregate, selected by dtypes. See the list of supported operations
 at the parameter `operations`.
-As opposed to the [`AggJoiner`](skrub.AggJoinerhtml.md#skrub.AggJoiner), here `aux_tables` is an iterable of tables,
+As opposed to the [`AggJoiner`](skrub.AggJoiner.md#skrub.AggJoiner), here `aux_tables` is an iterable of tables,
 each of which will be joined on the main table.
 
 #### WARNING
 The auxiliary table is stored in memory as part of the state of the transformer,
 which can lead to high memory usage if the auxiliary table is large.
-Consider using the [skrub Data Ops](../../data_opshtml.md#user-guide-data-ops-index) and
+Consider using the [skrub Data Ops](../../data_ops.md#user-guide-data-ops-index) and
 a standard dataframe library (Pandas or Polars) to perform the aggregation
 instead.
 
@@ -89,7 +89,7 @@ instead.
     to column names.
 
 #### SEE ALSO
-[`AggJoiner`](skrub.AggJoinerhtml.md#skrub.AggJoiner)
+[`AggJoiner`](skrub.AggJoiner.md#skrub.AggJoiner)
 : Aggregate an auxiliary dataframe before joining it on a base dataframe.
 
 ### Notes
@@ -98,7 +98,7 @@ If `cols` is not provided, `cols` is set to a list of lists.
 For each table in `aux_tables`, the corresponding list will be all columns
 of that table, except the `aux_keys` associated with that table.
 
-As opposed to the [`AggJoiner`](skrub.AggJoinerhtml.md#skrub.AggJoiner), here `aux_tables` is an iterable of tables,
+As opposed to the [`AggJoiner`](skrub.AggJoiner.md#skrub.AggJoiner), here `aux_tables` is an iterable of tables,
 each of which will be joined on the main table. Therefore `aux_keys` is now
 an iterable of keys, of the same length as `aux_tables`, and each entry
 in `aux_keys` is used to join the corresponding auxiliary table. In the same way,
@@ -108,7 +108,7 @@ tables, the `keys` parameter can be used instead of `main_keys` and `aux_keys`.
 
 Therefore if we have a single table, we could either use
 
-- the [`AggJoiner`](skrub.AggJoinerhtml.md#skrub.AggJoiner): `AggJoiner(aux_table, key="ID")`
+- the [`AggJoiner`](skrub.AggJoiner.md#skrub.AggJoiner): `AggJoiner(aux_table, key="ID")`
 - or the [`MultiAggJoiner`](#skrub.MultiAggJoiner): `MultiAggJoiner([aux_table], keys=[["ID"]])`
 
 Note that for `keys`, `main_keys`, `aux_keys`, `cols` and `operations`,
@@ -160,7 +160,7 @@ Accepts [`pandas.DataFrame`](http://pandas.pydata.org/pandas-docs/stable/referen
 ```
 
 The [`MultiAggJoiner`](#skrub.MultiAggJoiner) makes it convenient to aggregate multiple tables, but
-the same results could be obtained by chaining 3 separate [`AggJoiner`](skrub.AggJoinerhtml.md#skrub.AggJoiner):
+the same results could be obtained by chaining 3 separate [`AggJoiner`](skrub.AggJoiner.md#skrub.AggJoiner):
 
 ```pycon
 >>> from skrub import AggJoiner

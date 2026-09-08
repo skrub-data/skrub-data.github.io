@@ -30,7 +30,7 @@ pip install skrub -U
 
 **Deep learning dependencies**
 
-Deep-learning based encoders like `LLMEncoder` require installing optional
+Deep-learning based encoders like [`LLMEncoder`](reference/generated/skrub.LLMEncoderhtml.md#skrub.LLMEncoder) require installing optional
 dependencies to use them. The following will install
 [torch](https://pypi.org/project/torch/),
 [transformers](https://pypi.org/project/transformers/),
@@ -51,7 +51,7 @@ conda install -c conda-forge skrub
 
 **Deep learning dependencies**
 
-Deep-learning based encoders like `LLMEncoder` require installing optional
+Deep-learning based encoders like [`LLMEncoder`](reference/generated/skrub.LLMEncoderhtml.md#skrub.LLMEncoder) require installing optional
 dependencies to use them. The following will install
 [torch](https://anaconda.org/pytorch/pytorch),
 [transformers](https://anaconda.org/conda-forge/transformers),
@@ -72,7 +72,7 @@ mamba install -c conda-forge skrub
 
 **Deep learning dependencies**
 
-Deep-learning based encoders like `LLMEncoder` require installing optional
+Deep-learning based encoders like [`LLMEncoder`](reference/generated/skrub.LLMEncoderhtml.md#skrub.LLMEncoder) require installing optional
 dependencies to use them. The following will install
 [torch](https://anaconda.org/pytorch/pytorch),
 [transformers](https://anaconda.org/conda-forge/transformers),
@@ -192,7 +192,7 @@ After that, your environment is ready for development!
 
 **Deep learning dependencies**
 
-Deep-learning based encoders like `LLMEncoder` require installing optional
+Deep-learning based encoders like [`LLMEncoder`](reference/generated/skrub.LLMEncoderhtml.md#skrub.LLMEncoder) require installing optional
 dependencies to use them. The following will install
 [torch](https://pypi.org/project/torch/),
 [transformers](https://pypi.org/project/transformers/),

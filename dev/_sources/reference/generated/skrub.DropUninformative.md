@@ -29,13 +29,13 @@ than a threshold, if they contain one unique value, or if all values are unique.
     future version.
 
 #### SEE ALSO
-[`Cleaner`](skrub.Cleanerhtml.md#skrub.Cleaner)
+[`Cleaner`](skrub.Cleaner.md#skrub.Cleaner)
 : A full-frame transformer (as opposed to single column) that can drop columns with missing values.
 
-[`DropCols`](skrub.DropColshtml.md#skrub.DropCols)
+[`DropCols`](skrub.DropCols.md#skrub.DropCols)
 : Dropping cols by name, dtypes, or general skrub selectors.
 
-[`DropSimilar`](skrub.DropSimilarhtml.md#skrub.DropSimilar)
+[`DropSimilar`](skrub.DropSimilar.md#skrub.DropSimilar)
 : Drops columns too closely correlated to the dataframe’s other columns.
 
 ### Notes

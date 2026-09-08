@@ -32,12 +32,12 @@ and do not offer capabilities for scheduling runs or provisioning resources and
 environments. Instead, they are a generalization of scikit-learn pipelines, which
 can still be used within an orchestrator.
 
-## Skrub DataOps and other skrub objects, like [`tabular_pipeline()`](../../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline)
+## Skrub DataOps and other skrub objects, like [`tabular_pipeline()`](../../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline)
 
 Skrub DataOps are built to maximize flexibility in the construction of complex
 pre-processing and machine learning pipelines. On the other hand, the main intent
-of skrub objects such as [`tabular_pipeline()`](../../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline) and
-[`TableVectorizer`](../../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) is to provide interfaces that for common
+of skrub objects such as [`tabular_pipeline()`](../../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline) and
+[`TableVectorizer`](../../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) is to provide interfaces that for common
 pre-processing tasks, and simple and robust baselines for
 machine learning. As a result, these objects are more opinionated and
 less flexible than DataOps.
@@ -49,7 +49,7 @@ transformers to improve their flexibility, particularly in multi-table scenarios
 
 Yes, skrub DataOps are designed to be “transparent”, so that any method used by
 the underlying data structures (e.g., Pandas or Polars) can be accessed directly:
-check [DataOps allow direct access to methods of the underlying data](direct_access_methodshtml.md#user-guide-direct-access-ref) for more details.
+check [DataOps allow direct access to methods of the underlying data](direct_access_methods.md#user-guide-direct-access-ref) for more details.
 All DataOps-specific operations are available through the `.skb` attribute,
 which provides access to the DataOps namespace. Other library-specific methods
 are available directly from the DataOp object, as if it were a regular object

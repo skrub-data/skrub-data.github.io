@@ -1,12 +1,12 @@
 <a id="user-guide-cleaning-dataframes"></a>
 
-# [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner): sanitizing a dataframe
+# [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner): sanitizing a dataframe
 
 Very often, the first steps in preparing a dataframe for further use involve
 understanding the datatypes in the data and changing them into a more suitable format
 (e.g., from string to number or datetime).
 
-The [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) aids with this by running common operations on each column, including
+The [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner) aids with this by running common operations on each column, including
 replacing “null-looking” strings (e.g., `NULL`) with actual null values, and
 parsing datetimes and numbers.
 
@@ -15,7 +15,7 @@ string columns that contain only numbers and convert them to `float32`.
 If `cast_to_float32=True`, the `Cleaner` will also convert numeric columns
 (e.g. `float64`, `int64`) to `float32`.
 
-The [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) is a scikit-learn compatible transformer:
+The [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner) is a scikit-learn compatible transformer:
 
 ```pycon
 >>> from skrub import Cleaner
@@ -40,13 +40,13 @@ dtype:  ...
 Note that the `"all_missing"` column has been dropped, and that the `"date"`
 column has been correctly parsed as a datetime column.
 
-## Parsing numeric-looking strings with the [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner)
+## Parsing numeric-looking strings with the [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner)
 
-By default, when the [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) encounters a string series that contains only
+By default, when the [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner) encounters a string series that contains only
 numeric-looking values (for example `["1", "2", "3"]`), it leaves it
 unchanged.
 
-The [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) can parse those values by setting `parse_numbers=True`:
+The [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner) can parse those values by setting `parse_numbers=True`:
 
 ```pycon
 >>> from skrub import Cleaner
@@ -73,7 +73,7 @@ with downstream scikit-learn transformers.
 
 When `parse_numbers=False` (default), both columns keep their original dtypes.
 
-## Downcasting float dtypes to `float32` with the [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner)
+## Downcasting float dtypes to `float32` with the [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner)
 
 By default, floating-point columns (e.g. `float64`) keep their original dtype.
 To downcast numeric columns to `float32`, set

@@ -7,19 +7,19 @@ Find the nodes that have been marked with `mark_as_X()` and `mark_as_y()`.
 * **Returns:**
   [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)
   : A dictionary containing the following keys (all are optional):
-    - “X”, if a node has been marked with [`DataOp.skb.mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X).
-    - “y”, if a node has been marked with [`DataOp.skb.mark_as_y()`](skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y).
+    - “X”, if a node has been marked with [`DataOp.skb.mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X).
+    - “y”, if a node has been marked with [`DataOp.skb.mark_as_y()`](skrub.DataOp.skb.mark_as_y.md#skrub.DataOp.skb.mark_as_y).
     - Additionally, if a `cv` has been passed to
-      [`DataOp.skb.mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X), the parameters that were passed to
+      [`DataOp.skb.mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X), the parameters that were passed to
       `mark_as_X`:
       - “cv”
       - “split_kwargs”
 
 #### SEE ALSO
-[`DataOp.skb.find`](skrub.DataOp.skb.findhtml.md#skrub.DataOp.skb.find)
+[`DataOp.skb.find`](skrub.DataOp.skb.find.md#skrub.DataOp.skb.find)
 : Find a node by name or by an arbitrary predicate.
 
-[`SkrubLearner.truncated_after`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.truncated_after)
+[`SkrubLearner.truncated_after`](skrub.SkrubLearner.md#skrub.SkrubLearner.truncated_after)
 : Truncate the (possibly fitted) SkrubLearner after the specified node.
 
 ### Notes
@@ -100,7 +100,7 @@ To compute the values, evaluate the whole dictionary as a single DataOp:
 Name: category, dtype: str}
 ```
 
-When a `cv` object was passed to [`DataOp.skb.mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X), the result
+When a `cv` object was passed to [`DataOp.skb.mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X), the result
 will also contain the keys `"cv"` and `"split_kwargs"`:
 
 ```pycon

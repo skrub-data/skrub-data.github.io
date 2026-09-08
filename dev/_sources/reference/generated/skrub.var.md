@@ -26,7 +26,7 @@ See the example gallery for more information about skrub DataOps.
   **becomes_default**
   : If True, the provided `value` is not only used for previews but also
     becomes the default value for this variable when creating a learner
-    (for example with [`DataOp.skb.make_learner()`](skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner)). Thus passing this
+    (for example with [`DataOp.skb.make_learner()`](skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner)). Thus passing this
     variable in the environment is always optional.
 * **Returns:**
   A skrub variable
@@ -35,10 +35,10 @@ See the example gallery for more information about skrub DataOps.
   : If the provided value is a skrub DataOp or a skrub choose_\* function.
 
 #### SEE ALSO
-[`skrub.X`](skrub.Xhtml.md#skrub.X)
+[`skrub.X`](skrub.X.md#skrub.X)
 : Create a skrub variable and mark it as being `X`.
 
-[`skrub.y`](skrub.yhtml.md#skrub.y)
+[`skrub.y`](skrub.y.md#skrub.y)
 : Create a skrub variable and mark it as being `y`.
 
 ### Examples

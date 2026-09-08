@@ -3,8 +3,8 @@
 # Documenting the DataOps plan with node names and descriptions
 
 We can improve the readability of the DataOps plan by giving names and descriptions
-to the nodes in the plan. This is done with [`.skb.set_name()`](../../../reference/generated/skrub.DataOp.skb.set_namehtml.md#skrub.DataOp.skb.set_name)
-and [`.skb.set_description()`](../../../reference/generated/skrub.DataOp.skb.set_descriptionhtml.md#skrub.DataOp.skb.set_description).
+to the nodes in the plan. This is done with [`.skb.set_name()`](../../../reference/generated/skrub.DataOp.skb.set_name.md#skrub.DataOp.skb.set_name)
+and [`.skb.set_description()`](../../../reference/generated/skrub.DataOp.skb.set_description.md#skrub.DataOp.skb.set_description).
 
 ```pycon
 >>> import skrub
@@ -39,4 +39,4 @@ Result:
 -10
 ```
 
-More info can be found in section [Using only a part of a DataOps plan](using_part_of_data_ops_planhtml.md#user-guide-data-ops-truncating-dataplan).
+More info can be found in section [Using only a part of a DataOps plan](using_part_of_data_ops_plan.md#user-guide-data-ops-truncating-dataplan).

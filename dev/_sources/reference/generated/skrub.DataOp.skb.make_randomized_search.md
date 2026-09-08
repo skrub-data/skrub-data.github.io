@@ -4,7 +4,7 @@
 
 Find the best parameters with randomized search.
 
-This function returns a [`ParamSearch`](skrub.ParamSearchhtml.md#skrub.ParamSearch), an object similar to
+This function returns a [`ParamSearch`](skrub.ParamSearch.md#skrub.ParamSearch), an object similar to
 scikit-learn’s [`RandomizedSearchCV`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html#sklearn.model_selection.RandomizedSearchCV), where
 the main difference is `fit()` and `predict()` accept a
 dictionary of inputs rather than `X` and `y`. The best learner is stored
@@ -18,7 +18,7 @@ in the attribute `.best_learner_`.
 
   **keep_subsampling**
   : If True, and if subsampling has been configured (see
-    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample)), fit on a subsample of the data. By
+    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample)), fit on a subsample of the data. By
     default subsampling is not applied and all the data is used. This
     is only applied for fitting the randomized search when `fitted=True`,
     subsequent use of the randomized search is not affected by subsampling.
@@ -132,16 +132,16 @@ in the attribute `.best_learner_`.
     `fit`, `predict`, attributes of interest are
     `results_`, `plot_results()`, and `best_learner_`.
     If `backend='optuna'` was used, the returned object is an
-    [`OptunaParamSearch`](skrub.OptunaParamSearchhtml.md#skrub.OptunaParamSearch) which additionally has an attribute
+    [`OptunaParamSearch`](skrub.OptunaParamSearch.md#skrub.OptunaParamSearch) which additionally has an attribute
     `study_` which is the Optuna [`Study`](https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study) that
     performed the hyperparameter optimization.
 
 #### SEE ALSO
-[`skrub.DataOp.skb.make_grid_search`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search)
+[`skrub.DataOp.skb.make_grid_search`](skrub.DataOp.skb.make_grid_search.md#skrub.DataOp.skb.make_grid_search)
 : Find the best parameters with grid search.
 
-[`skrub.DataOp.skb.make_learner`](skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner)
-: Make a [`SkrubLearner`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) without actually searching for the best hyperparameters. The strategy to resolve choices can be use the default value, random, or taking suggestions from an Optuna [`optuna.trial.Trial`](https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial). This allows using Optuna directly, rather than through the `make_randomized_search` interface, for more advanced use cases.
+[`skrub.DataOp.skb.make_learner`](skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner)
+: Make a [`SkrubLearner`](skrub.SkrubLearner.md#skrub.SkrubLearner) without actually searching for the best hyperparameters. The strategy to resolve choices can be use the default value, random, or taking suggestions from an Optuna [`optuna.trial.Trial`](https://optuna.readthedocs.io/en/stable/reference/generated/optuna.trial.Trial.html#optuna.trial.Trial). This allows using Optuna directly, rather than through the `make_randomized_search` interface, for more advanced use cases.
 
 ### Examples
 

@@ -8,7 +8,7 @@ Use this selector for complex name patterns that glob patterns cannot express.
 This is useful for selecting columns with specific naming conventions or
 patterns that glob patterns cannot express, so that regular expressions are
 needed (e.g., columns matching `'^feature_[0-9]+$'`).
-For simple wildcard patterns, consider [`glob()`](skrub.selectors.globhtml.md#skrub.selectors.glob).
+For simple wildcard patterns, consider [`glob()`](skrub.selectors.glob.md#skrub.selectors.glob).
 
 * **Parameters:**
   **pattern**
@@ -20,10 +20,10 @@ For simple wildcard patterns, consider [`glob()`](skrub.selectors.globhtml.md#sk
     [https://docs.python.org/3/library/re.html#flags](https://docs.python.org/3/library/re.html#flags)
 
 #### SEE ALSO
-[`glob`](skrub.selectors.globhtml.md#skrub.selectors.glob)
+[`glob`](skrub.selectors.glob.md#skrub.selectors.glob)
 : Select columns by name with Unix shell-style wildcard patterns. Use this for simpler patterns.
 
-[`filter_names`](skrub.selectors.filter_nameshtml.md#skrub.selectors.filter_names)
+[`filter_names`](skrub.selectors.filter_names.md#skrub.selectors.filter_names)
 : Select columns based on custom name-based criteria.
 
 ### Examples

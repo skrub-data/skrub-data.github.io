@@ -40,7 +40,7 @@ dates, and removing uninformative columns. See the “Notes” section for a ful
   **parse_numbers**
   : Whether to parse strings that represent numeric values.
     - `False`: no numeric parsing is attempted.
-    - `True`: apply [`ToFloat`](skrub.ToFloathtml.md#skrub.ToFloat) to string columns. String columns
+    - `True`: apply [`ToFloat`](skrub.ToFloat.md#skrub.ToFloat) to string columns. String columns
       whose non-missing values can all be parsed as numbers are converted to
       `float32`.
 
@@ -78,16 +78,16 @@ dates, and removing uninformative columns. See the “Notes” section for a ful
   : Column names of the output of `transform`.
 
 #### SEE ALSO
-[`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer)
+[`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer)
 : Process columns of a dataframe and convert them to a numeric (vectorized) representation.
 
-[`ToFloat`](skrub.ToFloathtml.md#skrub.ToFloat)
+[`ToFloat`](skrub.ToFloat.md#skrub.ToFloat)
 : Convert numeric columns to `np.float32`, to have consistent numeric types and representation of missing values. More informative columns (e.g., categorical or datetime) are not converted.
 
-[`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols)
+[`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols)
 : Apply a given transformer to each column in a selection of columns. Useful to complement the default heuristics of the `Cleaner`.
 
-[`DropUninformative`](skrub.DropUninformativehtml.md#skrub.DropUninformative)
+[`DropUninformative`](skrub.DropUninformative.md#skrub.DropUninformative)
 : Drop columns that are considered uninformative, e.g., containing only null values or a single unique value.
 
 ### Notes
@@ -96,20 +96,20 @@ The `Cleaner` performs the following set of transformations on each column:
 
 - `CleanNullStrings()`: replace strings used to represent missing values
   with NA markers.
-- [`DropUninformative`](skrub.DropUninformativehtml.md#skrub.DropUninformative): drop the column if it is considered to be
+- [`DropUninformative`](skrub.DropUninformative.md#skrub.DropUninformative): drop the column if it is considered to be
   “uninformative”. A column is considered to be “uninformative” if it contains
   only missing values (`drop_null_fraction`) or only a constant value
   (`drop_if_constant`).
   By default, the `Cleaner` keeps all columns, unless they contain only
   missing values.
-- [`ToDatetime`](skrub.ToDatetimehtml.md#skrub.ToDatetime): parse datetimes represented as strings and return them as
+- [`ToDatetime`](skrub.ToDatetime.md#skrub.ToDatetime): parse datetimes represented as strings and return them as
   actual datetimes with the correct dtype. If `datetime_format` is provided,
-  it is forwarded to [`ToDatetime`](skrub.ToDatetimehtml.md#skrub.ToDatetime). Otherwise, the format is inferred.
-- [`ToFloat`](skrub.ToFloathtml.md#skrub.ToFloat):
-  - if `parse_numbers=True`, apply [`ToFloat`](skrub.ToFloathtml.md#skrub.ToFloat) on string columns,
+  it is forwarded to [`ToDatetime`](skrub.ToDatetime.md#skrub.ToDatetime). Otherwise, the format is inferred.
+- [`ToFloat`](skrub.ToFloat.md#skrub.ToFloat):
+  - if `parse_numbers=True`, apply [`ToFloat`](skrub.ToFloat.md#skrub.ToFloat) on string columns,
     converting strings whose non-missing values can all be parsed as numbers
     to `float32`;
-  - if `cast_to_float32=True`, apply [`ToFloat`](skrub.ToFloathtml.md#skrub.ToFloat) on numeric
+  - if `cast_to_float32=True`, apply [`ToFloat`](skrub.ToFloat.md#skrub.ToFloat) on numeric
     columns to cast them to `float32`.
 - `CleanCategories()`: process categorical columns depending on the dataframe
   library (Pandas or Polars) to force consistent typing and avoid issues downstream.
@@ -178,7 +178,7 @@ dtype: object
 ```
 
 Columns can be excluded from processing by combining the `Cleaner` with
-[`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols). For example, to exclude the datetime column from
+[`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols). For example, to exclude the datetime column from
 processing and keep it as a string, we can do:
 
 ```pycon

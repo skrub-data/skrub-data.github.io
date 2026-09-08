@@ -89,7 +89,7 @@ rescaling the distances.
   : The joined tables.
 
 #### SEE ALSO
-[`Joiner`](skrub.Joinerhtml.md#skrub.Joiner)
+[`Joiner`](skrub.Joiner.md#skrub.Joiner)
 : Same as fuzzy_join but as a scikit-learn transformer.
 
 (`left_on` and `right_on`) are vectorized, i.e. represented by vectors of

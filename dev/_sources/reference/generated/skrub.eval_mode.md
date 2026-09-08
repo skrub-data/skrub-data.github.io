@@ -7,7 +7,7 @@ Return the mode in which the DataOp is currently being evaluated.
 This can be:
 
 - ‘preview’: when the previews are being eagerly computed when the
-  DataOp is defined or when we call [`DataOp.skb.eval()`](skrub.DataOp.skb.evalhtml.md#skrub.DataOp.skb.eval) without
+  DataOp is defined or when we call [`DataOp.skb.eval()`](skrub.DataOp.skb.eval.md#skrub.DataOp.skb.eval) without
   arguments.
 - otherwise, the method we called on the learner such as `'predict'`
   or `'fit_transform'`.

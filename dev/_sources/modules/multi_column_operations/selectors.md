@@ -11,7 +11,7 @@ Selectors have two main benefits:
   selectors with operators. A range of useful selectors is provided by this module.
 - Delayed selection: passing a selection rule which will evaluated later on a dataframe
   that is not yet available. For example, without selectors, it is not possible to
-  instantiate a [`SelectCols`](../../reference/generated/skrub.SelectColshtml.md#skrub.SelectCols) that selects all columns except those with
+  instantiate a [`SelectCols`](../../reference/generated/skrub.SelectCols.md#skrub.SelectCols) that selects all columns except those with
   the suffix ‘ID’ if the data on which it will be fitted is not yet available.
 
 ## Introduction to selectors
@@ -31,7 +31,7 @@ dataframes:
 ... )
 ```
 
-[`cols()`](../../reference/generated/skrub.selectors.colshtml.md#skrub.selectors.cols) is a simple kind of selector which selects a fixed list of
+[`cols()`](../../reference/generated/skrub.selectors.cols.md#skrub.selectors.cols) is a simple kind of selector which selects a fixed list of
 column names:
 
 ```default
@@ -43,7 +43,7 @@ cols('height_mm', 'width_mm')
 
 Using selectors:
 
-* **select function**: the above selector can be passed to the [`select()`](../../reference/generated/skrub.selectors.selecthtml.md#skrub.selectors.select) function:
+* **select function**: the above selector can be passed to the [`select()`](../../reference/generated/skrub.selectors.select.md#skrub.selectors.select) function:
   ```default
   >>> s.select(df, mm_cols)
   height_mm  width_mm
@@ -51,12 +51,12 @@ Using selectors:
   1      420.0     297.0
   ```
 * **transformers**: various transformers in skrub use selectors to select and transform columns
-  in a scikit-learn pipeline: [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols),
-  [`DropCols`](../../reference/generated/skrub.DropColshtml.md#skrub.DropCols), [`SelectCols`](../../reference/generated/skrub.SelectColshtml.md#skrub.SelectCols), as
+  in a scikit-learn pipeline: [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols),
+  [`DropCols`](../../reference/generated/skrub.DropCols.md#skrub.DropCols), [`SelectCols`](../../reference/generated/skrub.SelectCols.md#skrub.SelectCols), as
   [detailed below](#selectors-and-transformer).
 * **DataOps** selectors can be passed to
-  [skrub DataOps](../../data_opshtml.md#user-guide-data-ops-index) when applying an
-  estimator with the [`skrub.DataOp.skb.apply()`](../../reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply) function:
+  [skrub DataOps](../../data_ops.md#user-guide-data-ops-index) when applying an
+  estimator with the [`skrub.DataOp.skb.apply()`](../../reference/generated/skrub.DataOp.skb.apply.md#skrub.DataOp.skb.apply) function:
   ```default
   >>> import skrub
   >>> from sklearn.preprocessing import StandardScaler
@@ -71,7 +71,7 @@ Using selectors:
 
 ## Type of selectors
 
-[`all()`](../../reference/generated/skrub.selectors.allhtml.md#skrub.selectors.all) is another simple selector, especially useful for default
+[`all()`](../../reference/generated/skrub.selectors.all.md#skrub.selectors.all) is another simple selector, especially useful for default
 arguments since it keeps all columns:
 
 ```default
@@ -108,11 +108,11 @@ height_mm  width_mm
 ```
 
 #### SEE ALSO
-* [Selecting based on dtype or data properties](type_of_selectorshtml.md#selectors-details) explains more the various selectors
-* [Selectors](../../reference/selectorshtml.md#selectors-ref) gives the exhaustive list of selectors
-* [filter() and filter_names() to select with user-defined criteria](advanced_selectorshtml.md#user-guide-advanced-selectors)
+* [Selecting based on dtype or data properties](type_of_selectors.md#selectors-details) explains more the various selectors
+* [Selectors](../../reference/selectors.md#selectors-ref) gives the exhaustive list of selectors
+* [filter() and filter_names() to select with user-defined criteria](advanced_selectors.md#user-guide-advanced-selectors)
 
-## Combining selectors
+## Selectors can be combined with the set operators
 
 The available operators are `|`, `&`, `-`, `^` with the meaning of usual
 python sets, and `~` to invert a selection:
@@ -162,7 +162,7 @@ following selector won’t compute the cardinality of non-categorical columns:
 
 <a id="user-guide-selectors-expand"></a>
 
-## Visualizing a selector
+## Using selectors with dataframe libraries
 
 All selectors have the `expand()` method, which allows dataframe manipulation
 outside of a skrub workflow: applying it to any dataframe will return the list
@@ -197,14 +197,16 @@ The `expand_index()` method also exists: rather than returning a list of column 
 
 ## Using selectors with other skrub transformers
 
-Skrub transformers are designed to be used in conjunction with other transformers
-that operate on columns to improve their versatility.
+Skrub selectors are designed to be used in conjunction with [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols),
+[`skrub.SelectCols`](../../reference/generated/skrub.SelectCols.md#skrub.SelectCols), and [`skrub.DropCols`](../../reference/generated/skrub.DropCols.md#skrub.DropCols), as well as
+[`apply()`](../../reference/generated/skrub.DataOp.skb.apply.md#skrub.DataOp.skb.apply) to improve their versatility in how they modify
+columns.
 
 For example, it is possible to drop columns that have more unique values than a
-certain amount by combining [`cardinality_below()`](../../reference/generated/skrub.selectors.cardinality_belowhtml.md#skrub.selectors.cardinality_below) with
-[`skrub.DropCols`](../../reference/generated/skrub.DropColshtml.md#skrub.DropCols).
+certain amount by combining [`cardinality_below()`](../../reference/generated/skrub.selectors.cardinality_below.md#skrub.selectors.cardinality_below) with
+[`skrub.DropCols`](../../reference/generated/skrub.DropCols.md#skrub.DropCols).
 To do so, a selector targeting columns that have more than 3 unique values
-is defined, and its inverse is used as a parameter for [`skrub.DropCols`](../../reference/generated/skrub.DropColshtml.md#skrub.DropCols):
+is defined, and its inverse is used as a parameter for [`skrub.DropCols`](../../reference/generated/skrub.DropCols.md#skrub.DropCols):
 
 ```pycon
 >>> df = pd.DataFrame({
@@ -223,7 +225,7 @@ is defined, and its inverse is used as a parameter for [`skrub.DropCols`](../../
 4          2
 ```
 
-Selectors can be used in conjunction with [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) to transform columns
+Selectors can be used in conjunction with [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) to transform columns
 based on specific requirements.
 
 Consider the following example:

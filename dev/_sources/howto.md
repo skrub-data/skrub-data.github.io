@@ -167,7 +167,7 @@ it 'style' --> <script>
 </style>
 
 * [How to tweak the Appearance of the `TableReport`](guides/table_report/01_alter_appearancehtml.md)
-* [How to export and share the `TableReport` for use by other tools](guides/table_report/02_exportinghtml.md)
+* [How to export and share the `TableReport`](guides/table_report/02_exportinghtml.md)
 * [How to find correlated columns in a dataframe](guides/table_report/03_finding_correlated_columnshtml.md)
 * [How to define custom filters for the TableReport](guides/table_report/04_custom_filtershtml.md)
 * [How to configure and customize the default behavior of skrub](guides/utilities/customizing_configurationhtml.md)

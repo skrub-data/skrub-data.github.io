@@ -27,7 +27,7 @@ is a dictionary of variables rather than a single design matrix
 ```
 
 The learner can be fitted as it is exported by setting `fitted=True` when
-creating it with [`.skb.make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner).
+creating it with [`.skb.make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner).
 This will fit the learner on the data used for previews when the variables are defined
 (`orders_df` in the case above):
 
@@ -67,5 +67,5 @@ or in a different environment:
 SkrubLearner(data_op=<Apply TableVectorizer>)
 ```
 
-See [Use case: developing locally and deploying to production](../../../auto_examples/02_data_ops/1150_use_casehtml.md#sphx-glr-auto-examples-02-data-ops-1150-use-case-py) for an example of how
+See [Use case: developing locally and deploying to production](../../../auto_examples/02_data_ops/1150_use_case.md#sphx-glr-auto-examples-02-data-ops-1150-use-case-py) for an example of how
 to use the learner in a microservice.

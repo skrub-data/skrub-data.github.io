@@ -14,10 +14,10 @@ Common issues include:
 - Negative numbers encoded inside parentheses (`(1,234.56)`)
 - String columns that contain mostly numeric values, but with occasional invalid entries
 
-To provide consistent numeric behavior, skrub includes the [`ToFloat`](../../reference/generated/skrub.ToFloathtml.md#skrub.ToFloat) transformer,
+To provide consistent numeric behavior, skrub includes the [`ToFloat`](../../reference/generated/skrub.ToFloat.md#skrub.ToFloat) transformer,
 which standardizes all numeric-like columns to `float32` and handles a wide
 range of real-world formatting issues automatically. Columns that cannot be parsed
-are rejected with a [`RejectColumn`](../../reference/generated/skrub.core.RejectColumnhtml.md#skrub.core.RejectColumn) exception.
+are rejected with a [`RejectColumn`](../../reference/generated/skrub.core.RejectColumn.md#skrub.core.RejectColumn) exception.
 
 Converting numbers to `float32` has the advantage of reducing memory pressure,
 while retaining most of the information for training models.
@@ -69,12 +69,12 @@ Name: neg, dtype: float32
 
 <a id="user-guide-squashing-scaler"></a>
 
-## Robust scaling of numeric features using [`SquashingScaler`](../../reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler)
+## Robust scaling of numeric features using [`SquashingScaler`](../../reference/generated/skrub.SquashingScaler.md#skrub.SquashingScaler)
 
-The [`SquashingScaler`](../../reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler) is a robust scaler for numeric features, particularly
+The [`SquashingScaler`](../../reference/generated/skrub.SquashingScaler.md#skrub.SquashingScaler) is a robust scaler for numeric features, particularly
 useful when features include outliers (such as infinite values); missing values
 are left unchanged (they are not interpolated).
-The [`SquashingScaler`](../../reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler) centers and scales the data in such a way that outliers are
+The [`SquashingScaler`](../../reference/generated/skrub.SquashingScaler.md#skrub.SquashingScaler) centers and scales the data in such a way that outliers are
 less likely to skew the final result compared to alternative methods.
 
 Based on the specified `quantile_range` parameter, the scaler employs a scikit-learn
@@ -103,6 +103,6 @@ array([[ 3.        ],
 ```
 
 More information about the theory behind the scaler is available in the
-[`SquashingScaler`](../../reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler) documentation, while this
-[working example](../../auto_examples/0100_squashing_scalerhtml.md#sphx-glr-auto-examples-0100-squashing-scaler-py) compares
+[`SquashingScaler`](../../reference/generated/skrub.SquashingScaler.md#skrub.SquashingScaler) documentation, while this
+[working example](../../auto_examples/0100_squashing_scaler.md#sphx-glr-auto-examples-0100-squashing-scaler-py) compares
 different scalers when used on data that include outliers.

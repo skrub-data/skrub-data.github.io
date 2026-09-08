@@ -16,9 +16,9 @@ refer to the examples gallery for more information.
 
 * **Parameters:**
   **value**
-  : The value passed to [`skrub.var()`](skrub.varhtml.md#skrub.var), which is used for previews of the
+  : The value passed to [`skrub.var()`](skrub.var.md#skrub.var), which is used for previews of the
     learner’s outputs, cross-validation etc. as described in the
-    documentation for [`skrub.var()`](skrub.varhtml.md#skrub.var) and the examples gallery.
+    documentation for [`skrub.var()`](skrub.var.md#skrub.var) and the examples gallery.
 * **Returns:**
   A skrub variable
 * **Raises:**
@@ -26,13 +26,13 @@ refer to the examples gallery for more information.
   : If the provided value is a skrub DataOp or a skrub choose_\* function.
 
 #### SEE ALSO
-[`skrub.y`](skrub.yhtml.md#skrub.y)
+[`skrub.y`](skrub.y.md#skrub.y)
 : Create a skrub variable and mark it as being `y`.
 
-[`skrub.var`](skrub.varhtml.md#skrub.var)
+[`skrub.var`](skrub.var.md#skrub.var)
 : Create a skrub variable.
 
-[`skrub.DataOp.skb.mark_as_X`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X)
+[`skrub.DataOp.skb.mark_as_X`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X)
 : Mark this DataOp as being the `X` table.
 
 ### Examples

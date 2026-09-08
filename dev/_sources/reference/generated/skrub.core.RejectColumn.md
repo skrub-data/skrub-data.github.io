@@ -6,7 +6,7 @@ Used by single-column transformers to indicate they do not apply to a column.
 
 ### Examples
 
-A [`SingleColumnTransformer`](skrub.core.SingleColumnTransformerhtml.md#skrub.core.SingleColumnTransformer) can raise `RejectColumn` exceptions
+A [`SingleColumnTransformer`](skrub.core.SingleColumnTransformer.md#skrub.core.SingleColumnTransformer) can raise `RejectColumn` exceptions
 to indicate it cannot handle a given column.
 
 ```pycon

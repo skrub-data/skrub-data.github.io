@@ -23,16 +23,16 @@ this choice is the first value in the `outcomes` list or dict.
     DataOps plan.
 
 #### SEE ALSO
-[`choose_bool`](skrub.choose_boolhtml.md#skrub.choose_bool)
+[`choose_bool`](skrub.choose_bool.md#skrub.choose_bool)
 : Construct a choice between False and True.
 
-[`choose_float`](skrub.choose_floathtml.md#skrub.choose_float)
+[`choose_float`](skrub.choose_float.md#skrub.choose_float)
 : Construct a choice of floating-point numbers from a numeric range.
 
-[`choose_int`](skrub.choose_inthtml.md#skrub.choose_int)
+[`choose_int`](skrub.choose_int.md#skrub.choose_int)
 : Construct a choice of integers from a numeric range.
 
-[`optional`](skrub.optionalhtml.md#skrub.optional)
+[`optional`](skrub.optional.md#skrub.optional)
 : Choose between executing an operation or not.
 
 ### Examples

@@ -52,13 +52,13 @@ Depending on the use case, this assumption may not always hold true.
   : The deduplicated data.
 
 #### SEE ALSO
-[`GapEncoder`](skrub.GapEncoderhtml.md#skrub.GapEncoder)
+[`GapEncoder`](skrub.GapEncoder.md#skrub.GapEncoder)
 : Encodes dirty categories (strings) by constructing latent topics with continuous encoding.
 
-[`MinHashEncoder`](skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder)
+[`MinHashEncoder`](skrub.MinHashEncoder.md#skrub.MinHashEncoder)
 : Encode string columns as a numeric array with the minhash method.
 
-[`SimilarityEncoder`](skrub.SimilarityEncoderhtml.md#skrub.SimilarityEncoder)
+[`SimilarityEncoder`](skrub.SimilarityEncoder.md#skrub.SimilarityEncoder)
 : Encode string columns as a numeric array with n-gram string similarity.
 
 ### Notes
@@ -149,5 +149,6 @@ color  value deduplicated_color
 
 <div class="sphx-glr-thumbnails">
 <!-- thumbnail-parent-div-open --><div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation.">  <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation.">  <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
 </div>
 <!-- thumbnail-parent-div-close --></div>

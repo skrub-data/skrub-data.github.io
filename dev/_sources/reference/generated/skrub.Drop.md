@@ -6,7 +6,7 @@ Drop the selected DataFrame’s column unconditionally.
 
 The other columns are kept in their original order. A `ValueError` is raised if
 any of the provided column names are not in the dataframe.
-This transformer is different from [`DropCols`](skrub.DropColshtml.md#skrub.DropCols) in that it is designed
+This transformer is different from [`DropCols`](skrub.DropCols.md#skrub.DropCols) in that it is designed
 to be used with other transformers, for example to remove all columns with a
 given type from a transformation.
 
@@ -14,16 +14,16 @@ given type from a transformation.
   **cols**
   : The columns to drop, or a selector. A single column name can be passed as a
     `str`: `"col_name"` is the same as `["col_name"]`. See the
-    [selectors](../../modules/multi_column_operations/selectorshtml.md#user-guide-selectors) user guide for more info on selectors.
+    [selectors](../../modules/multi_column_operations/selectors.md#user-guide-selectors) user guide for more info on selectors.
 
 #### SEE ALSO
-[`DropCols`](skrub.DropColshtml.md#skrub.DropCols)
+[`DropCols`](skrub.DropCols.md#skrub.DropCols)
 : drop columns by name, or skrub selectors.
 
-[`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols)
+[`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols)
 : Can be used to Apply a transformer to selected columns in a dataframe.
 
-[`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer)
+[`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer)
 : Transform a dataframe to a numeric (vectorized) representation.
 
 ### Examples

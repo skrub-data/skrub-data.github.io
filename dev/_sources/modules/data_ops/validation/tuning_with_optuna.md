@@ -7,9 +7,9 @@ tools to monitor and visualize the optimization process.
 
 There are two main ways of using Optuna with skrub DataOps: either by using
 Optuna as a `backend` in the
-[`make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search)
+[`make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search)
 method, or by creating an Optuna study directly and using it to pick values for
-skrub choices when calling [`DataOp.skb.make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner).
+skrub choices when calling [`DataOp.skb.make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner).
 
 #### NOTE
 To use Optuna with skrub, you need to have Optuna installed in your Python
@@ -22,7 +22,7 @@ pip install optuna
 ## Using Optuna as a backend for randomized search
 
 The easiest way to use Optuna with skrub is to use it as a backend for
-[`make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search). This allows us to leverage Optuna’s advanced
+[`make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search). This allows us to leverage Optuna’s advanced
 sampling algorithms and features while keeping same the familiar interface as
 for other search methods.
 
@@ -92,13 +92,13 @@ The best learner and best hyperparameters can be accessed as usual:
 {'k': 4, 'learning_rate': 0.01314593370942781, 'classifier': 'hgb'}
 ```
 
-[`make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search)
+[`make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search)
 accepts `sampler` and `timeout` parameters to customize the Optuna study.
 Optuna studies feature a wide range of additional parameters, which can be accessed
 by using Optuna directly with skrub learners, as shown in the next section.
 
 A more complete example that includes more advanced usage is available in
-[Tuning DataOps with Optuna](../../../auto_examples/02_data_ops/1131_optuna_choiceshtml.md#example-optuna-choices).
+[Tuning DataOps with Optuna](../../../auto_examples/02_data_ops/1131_optuna_choices.md#example-optuna-choices).
 
 ## Setting a storage for the Optuna study
 
@@ -106,7 +106,7 @@ When using Optuna as a backend for hyperparameter search, it is possible to
 specify a storage option to persist the study and its results. This allows us to
 resume the search later or analyze the results after the search is complete.
 This can be done by providing the `storage` parameter to
-[`make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search).
+[`make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search).
 
 ```python
 search = pred.skb.make_randomized_search(
@@ -129,7 +129,7 @@ objectives and leverage Optuna’s advanced features, such as the ask-and-tell i
 trial pruning, and multi-objective optimization.
 
 In this case, rather than running the hyperparameter search through
-[`make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search),
+[`make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search),
 the [`optuna.Study`](https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study) runs the hyperparameter
 search by defining an objective function that uses a skrub
 learner with hyperparameters suggested by Optuna.
@@ -140,8 +140,8 @@ learner with hyperparameters suggested by Optuna.
 the parameters for a given evaluation of the objective) and return the value
 to maximize (or minimize).
 
-To use Optuna with a [`DataOp`](../../../reference/generated/skrub.DataOphtml.md#skrub.DataOp), we just need to pass the Trial object
-to [`DataOp.skb.make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner). This creates a [`SkrubLearner`](../../../reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner)
+To use Optuna with a [`DataOp`](../../../reference/generated/skrub.DataOp.md#skrub.DataOp), we just need to pass the Trial object
+to [`DataOp.skb.make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner). This creates a [`SkrubLearner`](../../../reference/generated/skrub.SkrubLearner.md#skrub.SkrubLearner)
 initialized with the parameters picked by the optuna Trial.
 
 We can then cross-validate the:class:`SkrubLearner`, or score it however we prefer,
@@ -189,12 +189,12 @@ Then, we can inspect the parameters as usual:
 {'k': 12, 'learning_rate': 0.06401143720094754, 'classifier': 'hgb'}
 ```
 
-You can find a more complete example in [Tuning DataOps with Optuna](../../../auto_examples/02_data_ops/1131_optuna_choiceshtml.md#example-optuna-choices).
+You can find a more complete example in [Tuning DataOps with Optuna](../../../auto_examples/02_data_ops/1131_optuna_choices.md#example-optuna-choices).
 
 ## Parallelism
 
 Optuna’s [`optuna.study.Study.optimize()`](https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.Study.html#optuna.study.Study.optimize) uses thread-based parallelism. When
-we use [`DataOp.skb.make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search) with the Optuna backend, both
+we use [`DataOp.skb.make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search) with the Optuna backend, both
 threading and multiprocessing can be used. Skrub will choose based on the joblib
 configuration: if joblib is configured to use processes (the default),
 parallelization is done with joblib, and if joblib is configured to use the

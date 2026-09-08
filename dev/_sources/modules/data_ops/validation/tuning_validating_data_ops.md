@@ -47,12 +47,12 @@ predictions on unlabelled data, the “target” column will not be available.
 >>> X = data.drop(columns="target", errors="ignore").skb.mark_as_X()
 ```
 
-We use [`.skb.mark_as_X()`](../../../reference/generated/skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) to indicate that this
+We use [`.skb.mark_as_X()`](../../../reference/generated/skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X) to indicate that this
 intermediate result (the dataframe obtained after dropping “target”) is the
 `X` design matrix. This is the dataframe that will be split into a training
 and a testing part when we split our dataset or perform cross-validation.
 
-Similarly for `y`, we use [`.skb.mark_as_y()`](../../../reference/generated/skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y):
+Similarly for `y`, we use [`.skb.mark_as_y()`](../../../reference/generated/skrub.DataOp.skb.mark_as_y.md#skrub.DataOp.skb.mark_as_y):
 
 ```pycon
 >>> y = data["target"].skb.mark_as_y()
@@ -88,7 +88,7 @@ is able to split the dataset and perform cross-validation.
 
 We can increase our confidence in our score by using cross-validation instead of
 a single split. The same mechanism is used but we now fit and evaluate the model
-on several splits. This is done with [`.skb.cross_validate()`](../../../reference/generated/skrub.DataOp.skb.cross_validatehtml.md#skrub.DataOp.skb.cross_validate).
+on several splits. This is done with [`.skb.cross_validate()`](../../../reference/generated/skrub.DataOp.skb.cross_validate.md#skrub.DataOp.skb.cross_validate).
 
 ```pycon
 >>> pred.skb.cross_validate()
@@ -104,10 +104,10 @@ on several splits. This is done with [`.skb.cross_validate()`](../../../referenc
 
 # Splitting the data in train and test sets
 
-We can use [`.skb.train_test_split()`](../../../reference/generated/skrub.DataOp.skb.train_test_splithtml.md#skrub.DataOp.skb.train_test_split) to
+We can use [`.skb.train_test_split()`](../../../reference/generated/skrub.DataOp.skb.train_test_split.md#skrub.DataOp.skb.train_test_split) to
 perform a single train-test split. skrub first evaluates the DataOps on
-which we used [`.skb.mark_as_X()`](../../../reference/generated/skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) and
-[`.skb.mark_as_y()`](../../../reference/generated/skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y): the first few steps of the
+which we used [`.skb.mark_as_X()`](../../../reference/generated/skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X) and
+[`.skb.mark_as_y()`](../../../reference/generated/skrub.DataOp.skb.mark_as_y.md#skrub.DataOp.skb.mark_as_y): the first few steps of the
 pipeline are executed until we have a value for `X` and for `y`.
 Then, those
 dataframes are split using the provided split function (by default
@@ -122,8 +122,8 @@ dict_keys(['X_train', 'X_test', 'y_train', 'y_test', 'train', 'test', 'X', 'y'])
 `train` and `test` are the full dictionaries corresponding to the training
 and testing data. The corresponding `X` and `y` are the values, in those
 dictionaries, for the nodes marked with
-[`.skb.mark_as_X()`](../../../reference/generated/skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X)
-and [`.skb.mark_as_y()`](../../../reference/generated/skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y).
+[`.skb.mark_as_X()`](../../../reference/generated/skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X)
+and [`.skb.mark_as_y()`](../../../reference/generated/skrub.DataOp.skb.mark_as_y.md#skrub.DataOp.skb.mark_as_y).
 
 We can now fit our pipeline on the training data:
 
@@ -166,7 +166,7 @@ test set, but is not divided among the 2. This can be done with
 [`sklearn.model_selection.GroupKFold`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupKFold.html#sklearn.model_selection.GroupKFold),
 [`sklearn.model_selection.LeavePGroupsOut`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.LeavePGroupsOut.html#sklearn.model_selection.LeavePGroupsOut), etc. . The `split` function
 of those objects accepts a `groups` parameter. We can compute the groups
-inside of the DataOp and pass them to [`DataOp.skb.mark_as_X()`](../../../reference/generated/skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) and they will
+inside of the DataOp and pass them to [`DataOp.skb.mark_as_X()`](../../../reference/generated/skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X) and they will
 be passed to the splitter.
 
 ```pycon
@@ -227,11 +227,11 @@ Sometimes we have additional information to pass to the scorer such as sample
 weights, group information etc.
 
 We can control how scoring is performed by using
-[`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoringhtml.md#skrub.DataOp.skb.with_scoring). It has a `scoring` parameter, which can be
+[`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoring.md#skrub.DataOp.skb.with_scoring). It has a `scoring` parameter, which can be
 anything scikit-learn’s [`cross_validate()`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate) accepts
 for `scoring` such as a metric name, callable scorer, or dict mapping metric
 names to scorers (see the reference documentation of
-[`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoringhtml.md#skrub.DataOp.skb.with_scoring) for details).
+[`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoring.md#skrub.DataOp.skb.with_scoring) for details).
 
 It also accepts a `kwargs` argument, which are passed to the scorer when
 evaluating the learner.
@@ -270,9 +270,9 @@ We set the scoring to provide the sample weights:
 1  0.002659    0.003026       0.647059
 ```
 
-Besides passing extra arguments, [`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoringhtml.md#skrub.DataOp.skb.with_scoring) can also be
+Besides passing extra arguments, [`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoring.md#skrub.DataOp.skb.with_scoring) can also be
 useful to control what should be used as the default scoring metric for our
-learner, just as the `cv` parameter of [`DataOp.skb.mark_as_X()`](../../../reference/generated/skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) defines
+learner, just as the `cv` parameter of [`DataOp.skb.mark_as_X()`](../../../reference/generated/skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X) defines
 the default cross-validation splitting strategy.
 
 ```pycon
@@ -292,7 +292,7 @@ Note that the score above is negative: it is the negative log loss we passed to
 
 If we also want to recover the default score that would be returned by the
 applied estimator’s `score()` method (what we would get if we did not use
-[`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoringhtml.md#skrub.DataOp.skb.with_scoring)), we can pass `None` as the scorer, and the
+[`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoring.md#skrub.DataOp.skb.with_scoring)), we can pass `None` as the scorer, and the
 default corresponding key in the result is `"score"` (exactly like in
 [`cross_validate()`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate)):
 
@@ -308,11 +308,11 @@ default corresponding key in the result is `"score"` (exactly like in
 {'score': 0.6666666666666666, 'accuracy': 0.6666666666666666, 'roc_auc': 0.5}
 ```
 
-[`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoringhtml.md#skrub.DataOp.skb.with_scoring) only changes how scoring is performed
-(the outputs of [`DataOp.skb.cross_validate()`](../../../reference/generated/skrub.DataOp.skb.cross_validatehtml.md#skrub.DataOp.skb.cross_validate),
-[`DataOp.skb.make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search), [`SkrubLearner.score`](../../../reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) etc.),
+[`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoring.md#skrub.DataOp.skb.with_scoring) only changes how scoring is performed
+(the outputs of [`DataOp.skb.cross_validate()`](../../../reference/generated/skrub.DataOp.skb.cross_validate.md#skrub.DataOp.skb.cross_validate),
+[`DataOp.skb.make_randomized_search()`](../../../reference/generated/skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search), [`SkrubLearner.score`](../../../reference/generated/skrub.SkrubLearner.md#skrub.SkrubLearner) etc.),
 **not** the actual outputs of the learner (it does *not* affect the outputs of
-[`DataOp.skb.eval()`](../../../reference/generated/skrub.DataOp.skb.evalhtml.md#skrub.DataOp.skb.eval), [`SkrubLearner.predict`](../../../reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner), etc.)
+[`DataOp.skb.eval()`](../../../reference/generated/skrub.DataOp.skb.eval.md#skrub.DataOp.skb.eval), [`SkrubLearner.predict`](../../../reference/generated/skrub.SkrubLearner.md#skrub.SkrubLearner), etc.)
 
 This method can be called several times to add scorers that take different
 kwargs. See the reference documentation for details.
@@ -321,10 +321,10 @@ kwargs. See the reference documentation for details.
 
 This section gives a few tips to avoid recomputing predictions, which is
 particularly important for pipelines for which inference is expensive, such as
-those using the `LLMEncoder` or Tabular Foundation Models such as
+those using the [`LLMEncoder`](../../../reference/generated/skrub.LLMEncoder.md#skrub.LLMEncoder) or Tabular Foundation Models such as
 [TabICL](https://tabicl.readthedocs.io/en/latest/).
 
-When [`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoringhtml.md#skrub.DataOp.skb.with_scoring) is used, predictions are cached during
+When [`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoring.md#skrub.DataOp.skb.with_scoring) is used, predictions are cached during
 scoring so that if multiple scorers call the same function (e.g. `predict()`
 or `predict_proba()`) the computation runs only once. Moreover, if we also
 need the predictions in addition to the scores (for example to create plots,
@@ -351,7 +351,7 @@ We can write:
 ```
 
 The returned dictionary contains any predictions of the pipeline that have been
-computed as part of scoring. When [`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoringhtml.md#skrub.DataOp.skb.with_scoring) has not been
+computed as part of scoring. When [`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoring.md#skrub.DataOp.skb.with_scoring) has not been
 used, it will always be empty.
 
 If we happen to already have the predictions for the data we are scoring on, but
@@ -367,5 +367,5 @@ key `"_skrub_predictions"`:
 
 With the above, `predict()` is not called during scoring. As for
 `return_predictions`, this only applies to scorers added with
-[`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoringhtml.md#skrub.DataOp.skb.with_scoring). If no scorer has been configured
+[`DataOp.skb.with_scoring()`](../../../reference/generated/skrub.DataOp.skb.with_scoring.md#skrub.DataOp.skb.with_scoring). If no scorer has been configured
 `'_skrub_predictions'` will be ignored.

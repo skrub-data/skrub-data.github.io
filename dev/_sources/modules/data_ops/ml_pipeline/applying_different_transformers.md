@@ -6,8 +6,8 @@ It is possible to use skrub selectors to define which columns to apply
 transformers to, and then apply different transformers to different subsets of
 the data.
 
-For example, this can be useful to apply `LLMEncoder` to columns
-that contain free-flowing text, and [`StringEncoder`](../../../reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder) to other string
+For example, this can be useful to apply [`LLMEncoder`](../../../reference/generated/skrub.LLMEncoder.md#skrub.LLMEncoder) to columns
+that contain free-flowing text, and [`StringEncoder`](../../../reference/generated/skrub.StringEncoder.md#skrub.StringEncoder) to other string
 columns that contain categorical data such as country names.
 
 Or, a string column may need to be encoded in an ordered way, like in the following
@@ -34,17 +34,17 @@ Result:
 4      Art     B
 ```
 
-We encode the subjects with the [`StringEncoder`](../../../reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder):
+We encode the subjects with the [`StringEncoder`](../../../reference/generated/skrub.StringEncoder.md#skrub.StringEncoder):
 
 ```pycon
 >>> from skrub import StringEncoder
 >>> enc_subject = grades.skb.select(cols="subject").skb.apply(StringEncoder(n_components=2))
 ```
 
-For the grades, we define a [`deferred()`](../../../reference/generated/skrub.deferredhtml.md#skrub.deferred) function that maps the strings
+For the grades, we define a [`deferred()`](../../../reference/generated/skrub.deferred.md#skrub.deferred) function that maps the strings
 to the order we want.
 Remember that objects inside deferred functions are regular Python
-objects (more detail in [Control flow in DataOps: eager and deferred evaluation](../basics/control_flowhtml.md#user-guide-data-ops-control-flow)).
+objects (more detail in [Control flow in DataOps: eager and deferred evaluation](../basics/control_flow.md#user-guide-data-ops-control-flow)).
 
 ```pycon
 >>> @skrub.deferred
@@ -84,10 +84,10 @@ Result:
 4 -5.441046e-01  4.167525e-09      2
 ```
 
-In the next example, we apply a [`StringEncoder`](../../../reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder) to columns
+In the next example, we apply a [`StringEncoder`](../../../reference/generated/skrub.StringEncoder.md#skrub.StringEncoder) to columns
 with high cardinality, a mathematical operation to columns with nulls, and a
-[`TableVectorizer`](../../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) to all other columns. We use the skrub
-[selectors](../../../reference/selectorshtml.md#selectors-ref) to select the columns based on our requirements.
+[`TableVectorizer`](../../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) to all other columns. We use the skrub
+[selectors](../../../reference/selectors.md#selectors-ref) to select the columns based on our requirements.
 
 ```pycon
 >>> import pandas as pd
@@ -164,5 +164,5 @@ to obtain the final result:
 ```
 
 More info on advanced column selection and manipulation be found in
-[Skrub Selectors, for selecting columns in a dataframe](../../multi_column_operations/selectorshtml.md#user-guide-selectors) and example
-[Hands-On with Column Selection and Transformers](../../../auto_examples/0010_apply_to_colshtml.md#sphx-glr-auto-examples-0010-apply-to-cols-py).
+[Skrub Selectors, for selecting columns in a dataframe](../../multi_column_operations/selectors.md#user-guide-selectors) and example
+[Hands-On with Column Selection and Transformers](../../../auto_examples/0010_apply_to_cols.md#sphx-glr-auto-examples-0010-apply-to-cols-py).

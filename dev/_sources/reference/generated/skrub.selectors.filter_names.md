@@ -26,13 +26,13 @@ should be selected and False otherwise.
     `predicate(name, *args, **kwargs)` returns `True`.
 
 #### SEE ALSO
-[`filter`](skrub.selectors.filterhtml.md#skrub.selectors.filter)
+[`filter`](skrub.selectors.filter.md#skrub.selectors.filter)
 : Select columns based on their content or properties
 
-[`glob`](skrub.selectors.globhtml.md#skrub.selectors.glob)
+[`glob`](skrub.selectors.glob.md#skrub.selectors.glob)
 : Select columns by wildcard pattern matching
 
-[`regex`](skrub.selectors.regexhtml.md#skrub.selectors.regex)
+[`regex`](skrub.selectors.regex.md#skrub.selectors.regex)
 : Select columns by regular expression pattern matching
 
 ### Notes

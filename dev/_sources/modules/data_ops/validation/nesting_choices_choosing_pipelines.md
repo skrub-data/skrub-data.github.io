@@ -4,7 +4,7 @@
 
 Choices are not limited to scikit-learn hyperparameters: we can use choices
 wherever we use DataOps. The choice of the estimator to use, any argument of
-a DataOp’s method or [`deferred()`](../../../reference/generated/skrub.deferredhtml.md#skrub.deferred) function call, etc. can be replaced
+a DataOp’s method or [`deferred()`](../../../reference/generated/skrub.deferred.md#skrub.deferred) function call, etc. can be replaced
 with choices. We can also choose between several DataOps to compare
 different pipelines.
 
@@ -23,7 +23,7 @@ several ways to perform an aggregation on a pandas DataFrame:
 
 We can also choose between several completely different pipelines by turning a
 choice into a DataOp, via its `as_data_op` method (or by using
-[`as_data_op()`](../../../reference/generated/skrub.as_data_ophtml.md#skrub.as_data_op) on any object).
+[`as_data_op()`](../../../reference/generated/skrub.as_data_op.md#skrub.as_data_op) on any object).
 
 ```pycon
 >>> from sklearn.preprocessing import StandardScaler
@@ -61,8 +61,8 @@ in its hyperparameters.
 
 # Linking choices depending on other choices
 
-Choices can depend on another choice made with [`choose_from()`](../../../reference/generated/skrub.choose_fromhtml.md#skrub.choose_from),
-[`choose_bool()`](../../../reference/generated/skrub.choose_boolhtml.md#skrub.choose_bool) or [`optional()`](../../../reference/generated/skrub.optionalhtml.md#skrub.optional) through those objects’ `.match()`
+Choices can depend on another choice made with [`choose_from()`](../../../reference/generated/skrub.choose_from.md#skrub.choose_from),
+[`choose_bool()`](../../../reference/generated/skrub.choose_bool.md#skrub.choose_bool) or [`optional()`](../../../reference/generated/skrub.optional.md#skrub.optional) through those objects’ `.match()`
 method.
 
 Suppose we want to use either ridge regression, random forest or gradient
@@ -111,6 +111,6 @@ Note that only relevant choices are included in each subgrid. For example, when
 the estimator is `'random forest'`, the subgrid contains several options for
 imputation but not for scaling.
 
-In addition to `match`, choices created with [`choose_bool()`](../../../reference/generated/skrub.choose_boolhtml.md#skrub.choose_bool) have an
+In addition to `match`, choices created with [`choose_bool()`](../../../reference/generated/skrub.choose_bool.md#skrub.choose_bool) have an
 `if_else()` method which is a convenience helper equivalent to
 `match({True: ..., False: ...})`.

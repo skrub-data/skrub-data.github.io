@@ -16,7 +16,7 @@ such “bursts” of activity by a user can often help with building features th
 greater predictive power than raw individual events, such as number of sessions or
 average session duration.
 
-The [`SessionEncoder`](../../reference/generated/skrub.SessionEncoderhtml.md#skrub.SessionEncoder) addresses this problem by detecting sessions based on
+The [`SessionEncoder`](../../reference/generated/skrub.SessionEncoder.md#skrub.SessionEncoder) addresses this problem by detecting sessions based on
 a timestamp column, other session-related columns (e.g., user and device) that should be
 used to distinguish between sessions, and a `session_gap`. Session-related columns
 – identified by the `split_by` parameter – allow to split sessions based on
@@ -34,7 +34,7 @@ A session is then defined as a sequence of events that share the same value in t
 >>> X, y = events.X, events.y
 ```
 
-Once the necessary features are provided, the [`SessionEncoder`](../../reference/generated/skrub.SessionEncoderhtml.md#skrub.SessionEncoder)
+Once the necessary features are provided, the [`SessionEncoder`](../../reference/generated/skrub.SessionEncoder.md#skrub.SessionEncoder)
 returns a dataframe that includes a `timestamp_session_id` column, which is
 composed of a distinct integer ID for each session:
 
@@ -58,10 +58,10 @@ Caution! Aggregation can introduce data leakage. Records should only be aggregat
 within the training set at training time, and the test set at predict time. To
 ensure this is the case, any code that performs aggregation can be wrapped in a
 scikit-learn [`BaseEstimator`](https://scikit-learn.org/stable/modules/generated/sklearn.base.BaseEstimator.html#sklearn.base.BaseEstimator) (as shown in the
-[SessionEncoder example](../../auto_examples/0110_session_encoderhtml.md#sphx-glr-auto-examples-0110-session-encoder-py)),
-otherwise the pipeline should use the skrub [Data Ops framework](../data_ops/basics/building_data_ops_planhtml.md#user-guide-data-ops-plan).
+[SessionEncoder example](../../auto_examples/0110_session_encoder.md#sphx-glr-auto-examples-0110-session-encoder-py)),
+otherwise the pipeline should use the skrub [Data Ops framework](../data_ops/basics/building_data_ops_plan.md#user-guide-data-ops-plan).
 
-The [`SessionEncoder`](../../reference/generated/skrub.SessionEncoderhtml.md#skrub.SessionEncoder) includes the `suffix` parameter (by default
+The [`SessionEncoder`](../../reference/generated/skrub.SessionEncoder.md#skrub.SessionEncoder) includes the `suffix` parameter (by default
 `suffix="session_id"`) to specify what the name of the new column should be.
 This can help with creating multiple session IDs based on the same timestamp.
 For example, we might want to create sessions based on users, and based on users
@@ -99,6 +99,6 @@ and their device:
 4  user_0149 2024-01-04 10:00:15.882835+00:00  ...         4.44                    59
 ```
 
-The [`SessionEncoder`](../../reference/generated/skrub.SessionEncoderhtml.md#skrub.SessionEncoder) has additional features that are detailed in the relevant docstring.
-You can also find a working [example](../../auto_examples/0110_session_encoderhtml.md#sphx-glr-auto-examples-0110-session-encoder-py)
+The [`SessionEncoder`](../../reference/generated/skrub.SessionEncoder.md#skrub.SessionEncoder) has additional features that are detailed in the relevant docstring.
+You can also find a working [example](../../auto_examples/0110_session_encoder.md#sphx-glr-auto-examples-0110-session-encoder-py)
 in the gallery.

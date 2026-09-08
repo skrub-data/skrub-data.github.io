@@ -31,11 +31,11 @@ products = pd.read_csv(data.products_path)
 
 By default, datasets are stored in `~/skrub_data`, where `~` is expanded as
 the (OS dependent) home directory of the user. The function
-[`get_data_dir()`](../../reference/generated/skrub.datasets.get_data_dirhtml.md#skrub.datasets.get_data_dir) shows
+[`get_data_dir()`](../../reference/generated/skrub.datasets.get_data_dir.md#skrub.datasets.get_data_dir) shows
 the location that `skrub` uses to store data.
 
 If needed, it is possible to change this location by modifying the environment
 variable `SKB_DATA_DIRECTORY` to an **absolute directory path**.
 
-See [How to configure and customize the default behavior of skrub](customizing_configurationhtml.md#user-guide-configuration-parameters) for more info on the global skrub
+See [How to configure and customize the default behavior of skrub](customizing_configuration.md#user-guide-configuration-parameters) for more info on the global skrub
 configuration.

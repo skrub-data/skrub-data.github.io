@@ -5,10 +5,10 @@
 Select all columns in a dataframe.
 
 #### SEE ALSO
-[`inv`](skrub.selectors.invhtml.md#skrub.selectors.inv)
+[`inv`](skrub.selectors.inv.md#skrub.selectors.inv)
 : Invert a selector
 
-[`cols`](skrub.selectors.colshtml.md#skrub.selectors.cols)
+[`cols`](skrub.selectors.cols.md#skrub.selectors.cols)
 : Select columns by exact name
 
 ### Examples

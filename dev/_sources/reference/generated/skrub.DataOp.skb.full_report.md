@@ -50,13 +50,13 @@ to keep specific reports, please specify an output directory.
     `'report_path'`.
 
 #### SEE ALSO
-[`SkrubLearner.report()`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.report)
-: Generate a report for a call to any of the methods of the [`SkrubLearner`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner) such as `transform()`, `predict()`, `predict_proba()` etc.
+[`SkrubLearner.report()`](skrub.SkrubLearner.md#skrub.SkrubLearner.report)
+: Generate a report for a call to any of the methods of the [`SkrubLearner`](skrub.SkrubLearner.md#skrub.SkrubLearner) such as `transform()`, `predict()`, `predict_proba()` etc.
 
 ### Notes
 
 The learner is run doing a `fit_transform`. To get a report for other
-methods (e.g. `predict`, see [`SkrubLearner.report()`](skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.report)). If
+methods (e.g. `predict`, see [`SkrubLearner.report()`](skrub.SkrubLearner.md#skrub.SkrubLearner.report)). If
 `environment` is provided, it is used as the bindings for the
 variables in the DataOp, and otherwise, the `value` attributes of the
 variables are used.

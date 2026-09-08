@@ -7,11 +7,11 @@ Apply a transformer to selected columns in a dataframe.
 This transformer applies the given transformer to all the selected columns in
 the input dataframe; non-selected columns are passed through without modification.
 By default, all selected columns are passed to the same transformer; if the
-transformer is a [`SingleColumnTransformer`](skrub.core.SingleColumnTransformerhtml.md#skrub.core.SingleColumnTransformer), a
+transformer is a [`SingleColumnTransformer`](skrub.core.SingleColumnTransformer.md#skrub.core.SingleColumnTransformer), a
 separate clone of the transformer is created for each selected column and
 fitted to that column independently.
 
-Refer to the documentation of [`SingleColumnTransformer`](skrub.core.SingleColumnTransformerhtml.md#skrub.core.SingleColumnTransformer) for more
+Refer to the documentation of [`SingleColumnTransformer`](skrub.core.SingleColumnTransformer.md#skrub.core.SingleColumnTransformer) for more
 details on single-column transformers and how to create them.
 
 * **Parameters:**
@@ -33,7 +33,7 @@ details on single-column transformers and how to create them.
   : Whether to allow refusing to transform columns for which the provided
     transformer is not suited, for example rejecting non-datetime columns if
     transformer is a DatetimeEncoder. Only relevant if the transformer is a
-    [`SingleColumnTransformer`](skrub.core.SingleColumnTransformerhtml.md#skrub.core.SingleColumnTransformer). Rejected columns are passed through
+    [`SingleColumnTransformer`](skrub.core.SingleColumnTransformer.md#skrub.core.SingleColumnTransformer). Rejected columns are passed through
     unchanged.
 
   **keep_original**
@@ -56,7 +56,7 @@ details on single-column transformers and how to create them.
     `None` means 1 unless in a joblib `parallel_backend` context.
     `-1` means using all processors.
     Note that this parameter is only used when the transformer
-    is a [`SingleColumnTransformer`](skrub.core.SingleColumnTransformerhtml.md#skrub.core.SingleColumnTransformer).
+    is a [`SingleColumnTransformer`](skrub.core.SingleColumnTransformer.md#skrub.core.SingleColumnTransformer).
 * **Attributes:**
   **all_inputs_**
   : All column names in the input dataframe.
@@ -74,34 +74,34 @@ details on single-column transformers and how to create them.
   **transformers_**
   : Maps the name of each column that was transformed to the corresponding
     fitted transformer. Only available when the transformer is a
-    [`SingleColumnTransformer`](skrub.core.SingleColumnTransformerhtml.md#skrub.core.SingleColumnTransformer).
+    [`SingleColumnTransformer`](skrub.core.SingleColumnTransformer.md#skrub.core.SingleColumnTransformer).
 
   **input_to_outputs_**
   : Maps the name of each column that was transformed to the list of the
     resulting columns’ names in the output. Only available when the
-    transformer is a [`SingleColumnTransformer`](skrub.core.SingleColumnTransformerhtml.md#skrub.core.SingleColumnTransformer).
+    transformer is a [`SingleColumnTransformer`](skrub.core.SingleColumnTransformer.md#skrub.core.SingleColumnTransformer).
 
   **output_to_input_**
   : Maps the name of each column in the transformed output to the name of
     the input column from which it was derived. Only available when the
-    transformer is a [`SingleColumnTransformer`](skrub.core.SingleColumnTransformerhtml.md#skrub.core.SingleColumnTransformer).
+    transformer is a [`SingleColumnTransformer`](skrub.core.SingleColumnTransformer.md#skrub.core.SingleColumnTransformer).
 
   **transformer_**
   : The fitted transformer. Only available when the transformer is **not** a
-    [`SingleColumnTransformer`](skrub.core.SingleColumnTransformerhtml.md#skrub.core.SingleColumnTransformer).
+    [`SingleColumnTransformer`](skrub.core.SingleColumnTransformer.md#skrub.core.SingleColumnTransformer).
 
 #### SEE ALSO
-[`SingleColumnTransformer`](skrub.core.SingleColumnTransformerhtml.md#skrub.core.SingleColumnTransformer)
-: Base class for single-column transformers, which allows to define custom logic to be applied to each column independently, and to indicate that a column cannot be transformed by raising [`RejectColumn`](skrub.core.RejectColumnhtml.md#skrub.core.RejectColumn) exceptions.
+[`SingleColumnTransformer`](skrub.core.SingleColumnTransformer.md#skrub.core.SingleColumnTransformer)
+: Base class for single-column transformers, which allows to define custom logic to be applied to each column independently, and to indicate that a column cannot be transformed by raising [`RejectColumn`](skrub.core.RejectColumn.md#skrub.core.RejectColumn) exceptions.
 
 ### Notes
 
 All columns not selected by `cols` or matched by `exclude_cols` remain
 unmodified in the output. Moreover, if `allow_reject` is `True` and
 the transformers’
-`fit_transform` raises a [`RejectColumn`](skrub.core.RejectColumnhtml.md#skrub.core.RejectColumn) exception for a particular
+`fit_transform` raises a [`RejectColumn`](skrub.core.RejectColumn.md#skrub.core.RejectColumn) exception for a particular
 column, that column is passed through unchanged. If `allow_reject` is
-`False`, [`RejectColumn`](skrub.core.RejectColumnhtml.md#skrub.core.RejectColumn) exceptions are propagated, like other errors
+`False`, [`RejectColumn`](skrub.core.RejectColumn.md#skrub.core.RejectColumn) exceptions are propagated, like other errors
 raised by the transformer.
 
 ### Examples
@@ -124,7 +124,7 @@ Consider the following dataframe:
 1  10.0   0.0  20   Rome 2024-05-15 13:46:02
 ```
 
-We can apply a [`StringEncoder`](skrub.StringEncoderhtml.md#skrub.StringEncoder) to the string column “city” by selecting
+We can apply a [`StringEncoder`](skrub.StringEncoder.md#skrub.StringEncoder) to the string column “city” by selecting
 it with the `cols` parameter:
 
 ```pycon
@@ -158,7 +158,7 @@ Note that the columns “city” and “D” were not modified since they were n
 selected.
 
 We can also rely on the skrub selectors to select the columns. For example,
-we can use [`numeric()`](skrub.selectors.numerichtml.md#skrub.selectors.numeric) to select all numeric columns:
+we can use [`numeric()`](skrub.selectors.numeric.md#skrub.selectors.numeric) to select all numeric columns:
 
 ```pycon
 >>> from skrub import selectors as s
@@ -183,7 +183,7 @@ to scale numeric columns, but exclude an integer ID, we can do:
 ```
 
 It is possible to set `allow_reject=True` to allow the transformer to reject
-columns it cannot handle. For example, the [`DatetimeEncoder`](skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) cannot handle
+columns it cannot handle. For example, the [`DatetimeEncoder`](skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) cannot handle
 columns that do not have datetime as their dtype. We can still apply it to
 all the columns by setting `allow_reject=True`; in this case, the rejected
 columns are passed through unchanged:
@@ -209,9 +209,9 @@ skrub.core.RejectColumn: Column 'A' does not have Date or Datetime dtype.
 Transformer DatetimeEncoder.fit_transform failed on column 'A'. See above for the full traceback.
 ```
 
-It is often useful to wrap a [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer) or [`Cleaner`](skrub.Cleanerhtml.md#skrub.Cleaner) in
+It is often useful to wrap a [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer) or [`Cleaner`](skrub.Cleaner.md#skrub.Cleaner) in
 `ApplyToCols` to select or exclude columns based on patterns. For example,
-to apply a [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer) to all columns except those ending with “_id”,
+to apply a [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer) to all columns except those ending with “_id”,
 we can do:
 
 ```pycon

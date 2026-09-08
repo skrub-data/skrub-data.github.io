@@ -5,11 +5,11 @@
 Base class for single-column transformers.
 
 Such transformers are applied independently to each column by
-[`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols); see the docstring of [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols)
+[`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols); see the docstring of [`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols)
 for more information.
 
 Single-column transformers are not required to inherit from this class in
-order to work with [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols), however doing so avoids some
+order to work with [`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols), however doing so avoids some
 boilerplate:
 
 - The required `__single_column_transformer__` attribute is set.

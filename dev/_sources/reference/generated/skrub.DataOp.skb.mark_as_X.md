@@ -39,22 +39,22 @@ arguments for the splitter. Those will be evaluated at the same time as
   must be split for cross-validation).
 
 #### SEE ALSO
-[`DataOp.skb.mark_as_y()`](skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y)
+[`DataOp.skb.mark_as_y()`](skrub.DataOp.skb.mark_as_y.md#skrub.DataOp.skb.mark_as_y)
 : The equivalent of this function for the targets: mark a node as being the `y` table.
 
-[`skrub.X()`](skrub.Xhtml.md#skrub.X)
+[`skrub.X()`](skrub.X.md#skrub.X)
 : `skrub.X(value)` can be used as a shorthand for `skrub.var('X', value).skb.mark_as_X()`.
 
-[`DataOp.skb.train_test_split()`](skrub.DataOp.skb.train_test_splithtml.md#skrub.DataOp.skb.train_test_split)
+[`DataOp.skb.train_test_split()`](skrub.DataOp.skb.train_test_split.md#skrub.DataOp.skb.train_test_split)
 : Prepare training and testing sets for a DataOp.
 
-[`DataOp.skb.cross_validate()`](skrub.DataOp.skb.cross_validatehtml.md#skrub.DataOp.skb.cross_validate)
+[`DataOp.skb.cross_validate()`](skrub.DataOp.skb.cross_validate.md#skrub.DataOp.skb.cross_validate)
 : Perform cross-validation on a DataOp.
 
-[`DataOp.skb.make_randomized_search()`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search)
+[`DataOp.skb.make_randomized_search()`](skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search)
 : Perform hyperparameter tuning driven by cross-validation scores.
 
-[`DataOp.skb.make_grid_search()`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search)
+[`DataOp.skb.make_grid_search()`](skrub.DataOp.skb.make_grid_search.md#skrub.DataOp.skb.make_grid_search)
 : Perform hyperparameter tuning driven by cross-validation scores.
 
 ### Notes

@@ -9,10 +9,10 @@ Collect the values of the variables contained in the DataOp.
   : Variables for which no value was given do not appear in the result.
 
 #### SEE ALSO
-[`DataOp.skb.get_vars`](skrub.DataOp.skb.get_varshtml.md#skrub.DataOp.skb.get_vars)
+[`DataOp.skb.get_vars`](skrub.DataOp.skb.get_vars.md#skrub.DataOp.skb.get_vars)
 : Obtain the variables (the `skrub.var()` objects) themselves.
 
-[`DataOp.skb.set_data`](skrub.DataOp.skb.set_datahtml.md#skrub.DataOp.skb.set_data)
+[`DataOp.skb.set_data`](skrub.DataOp.skb.set_data.md#skrub.DataOp.skb.set_data)
 : Set new values for the variables.
 
 ### Examples

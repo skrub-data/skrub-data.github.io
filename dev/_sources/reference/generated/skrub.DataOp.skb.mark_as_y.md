@@ -5,7 +5,7 @@
 Mark this DataOp as being the `y` table.
 
 This is used for cross-validation and hyperparameter selection: operations
-done before [`skb.mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) and [`skb.mark_as_y()`](#skrub.DataOp.skb.mark_as_y) are executed
+done before [`skb.mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X) and [`skb.mark_as_y()`](#skrub.DataOp.skb.mark_as_y) are executed
 on the entire data and cannot benefit from hyperparameter tuning.
 Returns a copy; the original DataOp is left unchanged.
 
@@ -13,7 +13,7 @@ Returns a copy; the original DataOp is left unchanged.
   The input DataOp, which has been marked as being `y`
 
 #### SEE ALSO
-[`skrub.y()`](skrub.yhtml.md#skrub.y)
+[`skrub.y()`](skrub.y.md#skrub.y)
 : `skrub.y(value)` can be used as a shorthand for `skrub.var('y', value).skb.mark_as_y()`.
 
 ### Notes

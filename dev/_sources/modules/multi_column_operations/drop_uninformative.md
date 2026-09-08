@@ -1,11 +1,11 @@
 <a id="user-guide-drop-uninformative"></a>
 
-# Removing unneeded columns with [`DropUninformative`](../../reference/generated/skrub.DropUninformativehtml.md#skrub.DropUninformative) and [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner)
+# Removing unneeded columns with [`DropUninformative`](../../reference/generated/skrub.DropUninformative.md#skrub.DropUninformative) and [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner)
 
 Data tables often include columns that do not provide meaningful information.
 These columns increase computational cost and may reduce downstream performance.
 
-The [`DropUninformative`](../../reference/generated/skrub.DropUninformativehtml.md#skrub.DropUninformative) transformer removes features that are deemed “uninformative”
+The [`DropUninformative`](../../reference/generated/skrub.DropUninformative.md#skrub.DropUninformative) transformer removes features that are deemed “uninformative”
 using various heuristics. These heuristics include:
 
 - **Dropping columns with excessive missing values**: Columns are dropped if the
@@ -18,7 +18,7 @@ using various heuristics. These heuristics include:
   is set to `False` by default. Note that missing values are treated as distinct
   values, so constant columns with missing values will not be dropped.
 
-[`DropUninformative`](../../reference/generated/skrub.DropUninformativehtml.md#skrub.DropUninformative) is used by both [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) and [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner), and both
+[`DropUninformative`](../../reference/generated/skrub.DropUninformative.md#skrub.DropUninformative) is used by both [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) and [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner), and both
 accept the same parameters for dropping columns.
 
 Consider the following example:
@@ -80,10 +80,10 @@ Consider the following dataset:
 ... })
 ```
 
-# Applying [`DropUninformative`](../../reference/generated/skrub.DropUninformativehtml.md#skrub.DropUninformative) only to a subset of columns
+# Applying [`DropUninformative`](../../reference/generated/skrub.DropUninformative.md#skrub.DropUninformative) only to a subset of columns
 
-We can apply the [`DropUninformative`](../../reference/generated/skrub.DropUninformativehtml.md#skrub.DropUninformative) transformer to specific columns using
-[`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) and the skrub selectors. In this case, we want to drop columns with
+We can apply the [`DropUninformative`](../../reference/generated/skrub.DropUninformative.md#skrub.DropUninformative) transformer to specific columns using
+[`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) and the skrub selectors. In this case, we want to drop columns with
 more than 50% missing values, but only if they have `string` type:
 
 ```pycon
@@ -102,7 +102,7 @@ more than 50% missing values, but only if they have `string` type:
 7           8  65.0           150.0     med_H
 ```
 
-You can apply the [`DropUninformative`](../../reference/generated/skrub.DropUninformativehtml.md#skrub.DropUninformative) transformer to specific columns using
+You can apply the [`DropUninformative`](../../reference/generated/skrub.DropUninformative.md#skrub.DropUninformative) transformer to specific columns using
 For more advanced filtering operations, refer to the User Guide on
-[Skrub Selectors, for selecting columns in a dataframe](selectorshtml.md#user-guide-selectors) and the [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) documentation for details
+[Skrub Selectors, for selecting columns in a dataframe](selectors.md#user-guide-selectors) and the [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) documentation for details
 on applying transformers to specific columns.

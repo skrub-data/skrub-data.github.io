@@ -1,50 +1,50 @@
 <a id="user-guide-table-vectorizer"></a>
 
-# Transforming a table into an array of numeric features: [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer)
+# Transforming a table into an array of numeric features: [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer)
 
 In tabular machine learning pipelines, practitioners often convert categorical
 features to numeric features using various encodings ([`OneHotEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder), [`OrdinalEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder),
 etc.).
 
-The objective of the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) is to take any dataframe as input, and
+The objective of the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) is to take any dataframe as input, and
 produce as output a feature-engineered version of the dataframe.
 
-Initially, the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) parses the data type of each column and maps each
+Initially, the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) parses the data type of each column and maps each
 column to an encoder, in order to produce numeric features for machine learning
 models.
 
-Parsing is handled internally by running a [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) on the input data.
+Parsing is handled internally by running a [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner) on the input data.
 Note that in this  case numeric values are always converted to `float32`
-(whereas the default [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) behavior is to keep the original datatype): this
+(whereas the default [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner) behavior is to keep the original datatype): this
 is to ensure that the numeric dtype (including that of the missing values) is
 consistent for the downstream methods. For most applications, `float32` has a
 sufficient precision, and reduces the memory footprint of the resulting features.
 
-The same parameters used for the [`Cleaner`](../../reference/generated/skrub.Cleanerhtml.md#skrub.Cleaner) can also be set when creating the
-[`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer): this includes parameters for [`DropUninformative`](../../reference/generated/skrub.DropUninformativehtml.md#skrub.DropUninformative)
+The same parameters used for the [`Cleaner`](../../reference/generated/skrub.Cleaner.md#skrub.Cleaner) can also be set when creating the
+[`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer): this includes parameters for [`DropUninformative`](../../reference/generated/skrub.DropUninformative.md#skrub.DropUninformative)
 (`drop_null_fraction` etc.), and a `datetime_format` parameter for the
 datetime parsing step.
 
-After detecting the datatypes, the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) maps columns to one of
+After detecting the datatypes, the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) maps columns to one of
 four groups depending either on the datatype, and the number of unique values
 for categorical/string columns
 
-The default transformers used by the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) for each column category
+The default transformers used by the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) for each column category
 are the following:
 
-- **High-cardinality categorical columns**: [`StringEncoder`](../../reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder)
+- **High-cardinality categorical columns**: [`StringEncoder`](../../reference/generated/skrub.StringEncoder.md#skrub.StringEncoder)
 - **Low-cardinality categorical columns**: scikit-learn [`OneHotEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder)
 - **Numeric columns**: “passthrough” (no transformation)
-- **Datetime columns**: [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder)
+- **Datetime columns**: [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder)
 
 **High cardinality** categorical columns are those with more than 40 unique values,
 while all other categorical columns are considered **low cardinality**: the
 threshold can be changed by setting the `cardinality_threshold` parameter of
-[`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer), or by changing the configuration parameter with the same name
-using [`set_config()`](../../reference/generated/skrub.set_confightml.md#skrub.set_config).
+[`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer), or by changing the configuration parameter with the same name
+using [`set_config()`](../../reference/generated/skrub.set_config.md#skrub.set_config).
 
 To change the encoder or alter default parameters, instantiate an encoder and pass
-it to [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
+it to [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer).
 
 ```pycon
 >>> from skrub import TableVectorizer, DatetimeEncoder, LLMEncoder, SquashingScaler
@@ -60,7 +60,7 @@ TableVectorizer(datetime=DatetimeEncoder(periodic_encoding='circular'),
                 high_cardinality=LLMEncoder(), numeric=SquashingScaler())
 ```
 
-Besides the transformers provided by skrub, the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) can also take
+Besides the transformers provided by skrub, the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) can also take
 user-specified transformers that are applied to given columns.
 
 ```pycon
@@ -93,21 +93,21 @@ transformer without any modification, which means that the transformer must be
 able to handle the content of the column on its own.
 
 If you need to define complex transformers to pass to a single instance of
-[`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer), consider using the [skrub Data Ops](../../data_opshtml.md#user-guide-data-ops-index),
-[`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols), or the [skrub selectors](../multi_column_operations/selectorshtml.md#user-guide-selectors) instead, as
+[`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer), consider using the [skrub Data Ops](../../data_ops.md#user-guide-data-ops-index),
+[`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols), or the [skrub selectors](../multi_column_operations/selectors.md#user-guide-selectors) instead, as
 they are more versatile and allow a higher degree
 of control over which operations are applied to which columns.
 
-The [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) is used in [Encoding: from a dataframe to a numerical matrix for machine learning](../../auto_examples/01_encoding/0010_encodingshtml.md#example-encodings), while the
+The [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) is used in [Encoding: from a dataframe to a numerical matrix for machine learning](../../auto_examples/01_encoding/0010_encodings.md#example-encodings), while the
 docstring of the class provides more details on the parameters and usage, as well
 as various examples.
 
 ## Numeric strings and categorical encoding
 
 By default, columns that contain only numeric strings (e.g. `["1", "2", "3"]`)
-are parsed as numeric features by the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer). The recommended way to
+are parsed as numeric features by the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer). The recommended way to
 treat such values as categorical (e.g. IDs or codes) is to convert the column
-to pandas’ `category` dtype using [`ToCategorical`](../../reference/generated/skrub.ToCategoricalhtml.md#skrub.ToCategorical) with [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols) before
+to pandas’ `category` dtype using [`ToCategorical`](../../reference/generated/skrub.ToCategorical.md#skrub.ToCategorical) with [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols) before
 vectorizing, rather than relying on keeping them as strings.
 
 Default behavior: numeric strings are parsed as a single numeric column (feature
@@ -128,7 +128,7 @@ c
 2  3.0
 ```
 
-With [`ToCategorical`](../../reference/generated/skrub.ToCategoricalhtml.md#skrub.ToCategorical) and [`ApplyToCols`](../../reference/generated/skrub.ApplyToColshtml.md#skrub.ApplyToCols), the column is treated as categorical
+With [`ToCategorical`](../../reference/generated/skrub.ToCategorical.md#skrub.ToCategorical) and [`ApplyToCols`](../../reference/generated/skrub.ApplyToCols.md#skrub.ApplyToCols), the column is treated as categorical
 and produces one-hot encoded feature names:
 
 ```pycon

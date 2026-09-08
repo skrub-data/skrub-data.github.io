@@ -41,16 +41,16 @@ a float as the `default` argument to set the default outcome.
     learner.
 
 #### SEE ALSO
-[`choose_bool`](skrub.choose_boolhtml.md#skrub.choose_bool)
+[`choose_bool`](skrub.choose_bool.md#skrub.choose_bool)
 : Construct a choice between False and True.
 
-[`choose_int`](skrub.choose_inthtml.md#skrub.choose_int)
+[`choose_int`](skrub.choose_int.md#skrub.choose_int)
 : Construct a choice of integers from a numeric range.
 
-[`choose_from`](skrub.choose_fromhtml.md#skrub.choose_from)
+[`choose_from`](skrub.choose_from.md#skrub.choose_from)
 : Construct a choice among several possible outcomes.
 
-[`optional`](skrub.optionalhtml.md#skrub.optional)
+[`optional`](skrub.optional.md#skrub.optional)
 : Choose between executing an operation or not.
 
 ### Examples

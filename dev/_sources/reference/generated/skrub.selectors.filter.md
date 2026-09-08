@@ -29,7 +29,7 @@ single predicate.
   : A `Filter` selector that matches columns where `predicate` returns `True`.
 
 #### SEE ALSO
-[`filter_names`](skrub.selectors.filter_nameshtml.md#skrub.selectors.filter_names)
+[`filter_names`](skrub.selectors.filter_names.md#skrub.selectors.filter_names)
 : Select columns based only on their name (not content)
 
 ### Notes
@@ -58,8 +58,8 @@ prefix = 'test'
 s.filter(lambda col: str(col.name).startswith(prefix))
 ```
 
-For name-based selection, consider using [`filter_names()`](skrub.selectors.filter_nameshtml.md#skrub.selectors.filter_names), [`glob()`](skrub.selectors.globhtml.md#skrub.selectors.glob),
-or [`regex()`](skrub.selectors.regexhtml.md#skrub.selectors.regex) instead of `filter` for simpler selection.
+For name-based selection, consider using [`filter_names()`](skrub.selectors.filter_names.md#skrub.selectors.filter_names), [`glob()`](skrub.selectors.glob.md#skrub.selectors.glob),
+or [`regex()`](skrub.selectors.regex.md#skrub.selectors.regex) instead of `filter` for simpler selection.
 
 ### Examples
 

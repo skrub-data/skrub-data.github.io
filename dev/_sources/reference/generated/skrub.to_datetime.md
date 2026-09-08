@@ -10,7 +10,7 @@ by the user. Columns that cannot be parsed are returned unchanged.
 
 Note that this transformation is stateless, so it should not be used in a
 pipeline that is fitted on a training set and then applied to a test set.
-Use the [`ToDatetime`](skrub.ToDatetimehtml.md#skrub.ToDatetime) transformer instead.
+Use the [`ToDatetime`](skrub.ToDatetime.md#skrub.ToDatetime) transformer instead.
 
 #### CAUTION
 For versions of Pandas <3.0, inferring the format may fail if it includes
@@ -31,7 +31,7 @@ In such cases, the format should be specified explicitly.
   : The input transformed to Datetime.
 
 #### SEE ALSO
-[`ToDatetime`](skrub.ToDatetimehtml.md#skrub.ToDatetime)
+[`ToDatetime`](skrub.ToDatetime.md#skrub.ToDatetime)
 : Parse datetimes represented as strings and return Datetime columns.
 
 ### Examples

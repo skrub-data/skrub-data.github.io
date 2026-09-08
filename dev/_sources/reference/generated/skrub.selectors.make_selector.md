@@ -18,7 +18,7 @@ This function converts user input into a consistent selector object:
   : A `Selector` object (or subclass).
 
 #### SEE ALSO
-[`cols`](skrub.selectors.colshtml.md#skrub.selectors.cols)
+[`cols`](skrub.selectors.cols.md#skrub.selectors.cols)
 : Select specific columns by name
 
 ### Examples

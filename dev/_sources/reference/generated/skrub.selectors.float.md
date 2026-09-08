@@ -5,13 +5,13 @@
 Select columns that have a floating-point data type (float32, float64, etc.)
 
 #### SEE ALSO
-[`numeric`](skrub.selectors.numerichtml.md#skrub.selectors.numeric)
+[`numeric`](skrub.selectors.numeric.md#skrub.selectors.numeric)
 : Select all numeric columns (integer and float). Use this to select both integer and floating-point columns together.
 
-[`integer`](skrub.selectors.integerhtml.md#skrub.selectors.integer)
+[`integer`](skrub.selectors.integer.md#skrub.selectors.integer)
 : Select integer columns only.
 
-[`boolean`](skrub.selectors.booleanhtml.md#skrub.selectors.boolean)
+[`boolean`](skrub.selectors.boolean.md#skrub.selectors.boolean)
 : Select Boolean columns.
 
 ### Examples

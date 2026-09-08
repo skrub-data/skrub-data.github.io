@@ -21,7 +21,7 @@ means that if the auxiliary table is modified after fitting, the changes will
 not be reflected in the transformed output. If you need to update the
 auxiliary table, you will need to refit the transformer.
 
-Consider using the [skrub Data Ops](../../data_opshtml.md#user-guide-data-ops-index)
+Consider using the [skrub Data Ops](../../data_ops.md#user-guide-data-ops-index)
 and a standard dataframe library (Pandas or Polars) to perform the
 aggregation instead.
 
@@ -64,13 +64,13 @@ aggregation instead.
     to avoid duplicate column names in the join.
 
 #### SEE ALSO
-[`AggTarget`](skrub.AggTargethtml.md#skrub.AggTarget)
+[`AggTarget`](skrub.AggTarget.md#skrub.AggTarget)
 : Aggregates the target `y` before joining its aggregation on the base dataframe.
 
-[`Joiner`](skrub.Joinerhtml.md#skrub.Joiner)
+[`Joiner`](skrub.Joiner.md#skrub.Joiner)
 : Augments a main table by automatically joining an auxiliary table on it.
 
-[`MultiAggJoiner`](skrub.MultiAggJoinerhtml.md#skrub.MultiAggJoiner)
+[`MultiAggJoiner`](skrub.MultiAggJoiner.md#skrub.MultiAggJoiner)
 : Extension of the AggJoiner to multiple auxiliary tables.
 
 ### Examples

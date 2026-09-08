@@ -12,14 +12,14 @@ Split an environment into training and testing environments.
 
   **keep_subsampling**
   : If True, and if subsampling has been configured (see
-    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample)), use a subsample of the data. By
+    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample)), use a subsample of the data. By
     default subsampling is not applied and all the data is used.
 
   **split_func**
   : The function used to split X and y once they have been computed. If
     `split_func` is not provided,
     - If a cross-validation splitter has been set with
-      [`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X), that splitter is used.
+      [`mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X), that splitter is used.
       In this case the only accepted kwarg in `split_func_kwargs` is
       `'split_index'`, which indicates which split to use. By default
       `'split_index'` is -1, i.e. the last split is used.
@@ -34,7 +34,7 @@ Split an environment into training and testing environments.
 
   **split_func_kwargs**
   : Additional named arguments to pass to the splitting function. When
-    relying on the splitter passed to [`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X),
+    relying on the splitter passed to [`mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X),
     the only accepted kwarg is `'split_index'` which indicates which
     split to use.
     Kwargs for the `split()` method itself should be passed to
@@ -46,25 +46,25 @@ Split an environment into training and testing environments.
     - train: a dictionary containing the training environment
     - test: a dictionary containing the test environment
     - X: the value of the variable marked with
-      [`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) in `environment`, before splitting.
+      [`mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X) in `environment`, before splitting.
     - y: the value of the variable marked with
-      [`mark_as_y()`](skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y) in `environment`, before
+      [`mark_as_y()`](skrub.DataOp.skb.mark_as_y.md#skrub.DataOp.skb.mark_as_y) in `environment`, before
       splitting, if there is one (may not be the case for unsupervised
       learning).
     - X_train: the value of the variable marked with
-      [`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) in the train environment
+      [`mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X) in the train environment
     - X_test: the value of the variable marked with
-      [`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) in the test environment
+      [`mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X) in the test environment
     - y_train: the value of the variable marked with
-      [`mark_as_y()`](skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y) in
+      [`mark_as_y()`](skrub.DataOp.skb.mark_as_y.md#skrub.DataOp.skb.mark_as_y) in
       the train environment, if there is one (may not be the case for
       unsupervised learning).
     - y_test: the value of the variable marked with
-      [`mark_as_y()`](skrub.DataOp.skb.mark_as_yhtml.md#skrub.DataOp.skb.mark_as_y) in
+      [`mark_as_y()`](skrub.DataOp.skb.mark_as_y.md#skrub.DataOp.skb.mark_as_y) in
       the test environment, if there is one (may not be the case for
       unsupervised learning).
     <br/>
-    If relying on the splitter passed to [`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X),
+    If relying on the splitter passed to [`mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X),
     the following keys are added:
     - row_indices_train: the row indices (in X and y) of the training samples.
     - row_indices_test: the row indices (in X and y) of the testing samples.
@@ -74,16 +74,16 @@ Split an environment into training and testing environments.
     X_train, X_test, etc. data, not the indices.
 
 #### SEE ALSO
-[`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X)
+[`mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X)
 : Mark a variable as the input features (X) for training and testing. This function can also take a custom splitter.
 
-[`cross_validate()`](skrub.DataOp.skb.cross_validatehtml.md#skrub.DataOp.skb.cross_validate)
+[`cross_validate()`](skrub.DataOp.skb.cross_validate.md#skrub.DataOp.skb.cross_validate)
 : Perform cross-validation on a DataOp.
 
-[`make_randomized_search()`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search)
+[`make_randomized_search()`](skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search)
 : Perform hyperparameter tuning driven by cross-validation scores.
 
-[`make_grid_search()`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search)
+[`make_grid_search()`](skrub.DataOp.skb.make_grid_search.md#skrub.DataOp.skb.make_grid_search)
 : Perform hyperparameter tuning driven by cross-validation scores.
 
 ### Examples
@@ -131,7 +131,7 @@ for example accuracy:
 0.0
 ```
 
-If [`mark_as_X()`](skrub.DataOp.skb.mark_as_Xhtml.md#skrub.DataOp.skb.mark_as_X) was defined to use a specific
+If [`mark_as_X()`](skrub.DataOp.skb.mark_as_X.md#skrub.DataOp.skb.mark_as_X) was defined to use a specific
 cross-validation splitter, that splitter will be used by `train_test_split`,
 which will return a split produced by the splitter. By default it is
 the last; that can be controlled by passing `split_index`.

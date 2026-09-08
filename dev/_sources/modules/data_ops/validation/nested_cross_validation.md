@@ -33,9 +33,9 @@ ParamSearch(data_op=<Apply Ridge>,
 0.4922874902029253
 ```
 
-For nested cross-validation we use [`skrub.cross_validate()`](../../../reference/generated/skrub.cross_validatehtml.md#skrub.cross_validate), which accepts a
+For nested cross-validation we use [`skrub.cross_validate()`](../../../reference/generated/skrub.cross_validate.md#skrub.cross_validate), which accepts a
 `pipeline` parameter (as opposed to
-[`.skb.cross_validate()`](../../../reference/generated/skrub.DataOp.skb.cross_validatehtml.md#skrub.DataOp.skb.cross_validate)
+[`.skb.cross_validate()`](../../../reference/generated/skrub.DataOp.skb.cross_validate.md#skrub.DataOp.skb.cross_validate)
 which always uses the default hyperparameters):
 
 ```pycon

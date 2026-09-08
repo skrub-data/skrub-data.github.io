@@ -13,7 +13,7 @@ equivalent to `all() - obj` or `~make_selector(obj)`. The argument
   : A `Selector` that is the inverse of the input selector.
 
 #### SEE ALSO
-[`all`](skrub.selectors.allhtml.md#skrub.selectors.all)
+[`all`](skrub.selectors.all.md#skrub.selectors.all)
 : Select all columns
 
 ### Notes

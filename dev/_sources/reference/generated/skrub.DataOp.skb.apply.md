@@ -20,11 +20,11 @@ Apply an estimator that follows the scikit-learn API to a dataframe or numpy arr
     matched by `exclude_cols` are transformed.
 
   **no_wrap**
-  : Disable wrapping of transformers in [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols).
+  : Disable wrapping of transformers in [`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols).
     <br/>
     By default, when `estimator` is a transformer and the input is a
     DataFrame, the transformer is wrapped in an instance of
-    [`ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols), which allows applying it to part of the
+    [`ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols), which allows applying it to part of the
     dataframe only through the `cols` and `allow_reject`
     parameters. Passing `no_wrap=True` disables this wrapping in all
     cases. When `no_wrap` is True, `cols` and `allow_reject`
@@ -58,12 +58,12 @@ Apply an estimator that follows the scikit-learn API to a dataframe or numpy arr
   : Whether the transformer can refuse to transform columns for which
     it does not apply, in which case they are passed through unchanged.
     This can be useful to avoid specifying exactly which columns should
-    be transformed. For example if we apply [`ToDatetime()`](skrub.ToDatetimehtml.md#skrub.ToDatetime)
+    be transformed. For example if we apply [`ToDatetime()`](skrub.ToDatetime.md#skrub.ToDatetime)
     to all columns with `allow_reject=True`, string columns that can be
     parsed as dates will be converted and all other columns will be
     passed through. If we use `allow_reject=False` (the default), an
     error would be raised if the dataframe contains columns for which
-    [`ToDatetime()`](skrub.ToDatetimehtml.md#skrub.ToDatetime) does not apply (eg a column of numbers).
+    [`ToDatetime()`](skrub.ToDatetime.md#skrub.ToDatetime) does not apply (eg a column of numbers).
 
   **unsupervised**
   : Use this to indicate that `y` is required for scoring but not
@@ -109,10 +109,10 @@ Apply an estimator that follows the scikit-learn API to a dataframe or numpy arr
     predictor.
 
 #### SEE ALSO
-[`skrub.DataOp.skb.make_learner`](skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner)
+[`skrub.DataOp.skb.make_learner`](skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner)
 : Get a skrub learner for this DataOp.
 
-[`skrub.ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols)
+[`skrub.ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols)
 : Transformer that applies a given estimator to selected columns of a dataframe.
 
 ### Examples

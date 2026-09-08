@@ -5,7 +5,7 @@
 A choice between `value` and `None`.
 
 Typically, `value` is an estimator and this choice is passed to
-[`DataOp.skb.apply()`](skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply).
+[`DataOp.skb.apply()`](skrub.DataOp.skb.apply.md#skrub.DataOp.skb.apply).
 
 `optional` allows to build a branch in the search space where the `value`
 is a component of the pipeline
@@ -75,7 +75,7 @@ This can be overridden by passing `default=None`:
 None
 ```
 
-In practice, `optional` is used with [`DataOp.skb.apply()`](skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply) to make the
+In practice, `optional` is used with [`DataOp.skb.apply()`](skrub.DataOp.skb.apply.md#skrub.DataOp.skb.apply) to make the
 application of a transformer optional.
 For example, if we want to make the application of PCA optional, we can do:
 
@@ -94,7 +94,7 @@ For example, if we want to make the application of PCA optional, we can do:
 ```
 
 If we perform a hyperparameter search (for example with
-[`DataOp.skb.make_grid_search()`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search)), both pipelines (with and without a PCA)
+[`DataOp.skb.make_grid_search()`](skrub.DataOp.skb.make_grid_search.md#skrub.DataOp.skb.make_grid_search)), both pipelines (with and without a PCA)
 will be considered and the one giving the best predictions will be selected.
 See also
 ——–

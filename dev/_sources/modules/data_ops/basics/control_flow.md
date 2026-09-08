@@ -3,8 +3,8 @@
 # Control flow in DataOps: eager and deferred evaluation
 
 DataOps represent computations that have not been executed yet, and will
-only be triggered when we call [`.skb.eval()`](../../../reference/generated/skrub.DataOp.skb.evalhtml.md#skrub.DataOp.skb.eval), or when we
-create the pipeline with [`.skb.make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner) and
+only be triggered when we call [`.skb.eval()`](../../../reference/generated/skrub.DataOp.skb.eval.md#skrub.DataOp.skb.eval), or when we
+create the pipeline with [`.skb.make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner) and
 call one of its methods such as `fit()`.
 
 This means we cannot use standard Python control flow statements such as `if`,
@@ -55,7 +55,7 @@ Therefore, we must delay the execution of the `for` statement until the computat
 actually runs and `orders.columns` has been evaluated.
 
 We can achieve this by defining a function that contains the control flow logic
-we need, and decorating it with [`deferred()`](../../../reference/generated/skrub.deferredhtml.md#skrub.deferred). This decorator defers the execution
+we need, and decorating it with [`deferred()`](../../../reference/generated/skrub.deferred.md#skrub.deferred). This decorator defers the execution
 of the function: when we call it, it does not run immediately. Instead, it returns
 a skrub DataOp that wraps the function call. The original function is only
 executed when the DataOp is evaluated, and will return the result as a DataOp.
@@ -85,14 +85,14 @@ the code inside a deferred function is completely equivalent to eager code, so
 it is possible to use any Python control flow statement inside it, as well as
 act on the data as if it were a regular DataFrame.
 
-Within a function decorated with [`deferred()`](../../../reference/generated/skrub.deferredhtml.md#skrub.deferred), objects are evaluated eagerly,
+Within a function decorated with [`deferred()`](../../../reference/generated/skrub.deferred.md#skrub.deferred), objects are evaluated eagerly,
 so it is possible to use standard Python control flow statements such as
 `if`, `for`, and it is possible to treat the inputs as if they were
 regular objects (e.g., a Pandas DataFrame or Series).
 
 When the first argument to our function is a skrub DataOp, rather than
 applying `deferred` and calling the function as shown above we can use
-[`.skb.apply_func()`](../../../reference/generated/skrub.DataOp.skb.apply_funchtml.md#skrub.DataOp.skb.apply_func):
+[`.skb.apply_func()`](../../../reference/generated/skrub.DataOp.skb.apply_func.md#skrub.DataOp.skb.apply_func):
 
 ```pycon
 >>> def with_upper_columns(df):
@@ -136,7 +136,7 @@ Instead, keep the result as a single DataOp and index into it:
 >>> right = res[1]
 ```
 
-[`deferred()`](../../../reference/generated/skrub.deferredhtml.md#skrub.deferred) is useful not only for our own functions, but also when we
+[`deferred()`](../../../reference/generated/skrub.deferred.md#skrub.deferred) is useful not only for our own functions, but also when we
 need to call module-level functions from a library. For example, to delay the
 loading of a CSV file, we could write something like:
 
@@ -170,10 +170,10 @@ df = df.assign(new_col=...) instead of df['new_col'] = ...
 
 Note the suggestion in the error message: using [`pandas.DataFrame.assign()`](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.assign.html#pandas.DataFrame.assign).
 When we do need assignments or in-place transformations, we can put them in a
-[`deferred()`](../../../reference/generated/skrub.deferredhtml.md#skrub.deferred) function. But we should make a (shallow) copy of the inputs and
+[`deferred()`](../../../reference/generated/skrub.deferred.md#skrub.deferred) function. But we should make a (shallow) copy of the inputs and
 return a new value.
 
-Finally, there are other situations where using [`deferred()`](../../../reference/generated/skrub.deferredhtml.md#skrub.deferred) can be helpful:
+Finally, there are other situations where using [`deferred()`](../../../reference/generated/skrub.deferred.md#skrub.deferred) can be helpful:
 
 - When we have many nodes in our graph and want to collapse a sequence of steps into
   a single function call that appears as a single node.
@@ -184,9 +184,9 @@ Finally, there are other situations where using [`deferred()`](../../../referenc
 
 ### Examples
 
-- See sphx_glr_auto_examples_data_ops_1111_data_ops_quick_tour.py for an introductory
+- See [Quick overview of DataOps](../../../auto_tutorials/1111_data_ops_quick_tour.md#sphx-glr-auto-tutorials-1111-data-ops-quick-tour-py) for an introductory
   example on how to use skrub DataOps on a single dataframe.
-- See [Multiples tables: building machine learning pipelines with DataOps](../../../auto_examples/02_data_ops/1120_multiple_tableshtml.md#sphx-glr-auto-examples-02-data-ops-1120-multiple-tables-py) for an example
+- See [Multiples tables: building machine learning pipelines with DataOps](../../../auto_examples/02_data_ops/1120_multiple_tables.md#sphx-glr-auto-examples-02-data-ops-1120-multiple-tables-py) for an example
   of how skrub DataOps can be used to process multiple tables using dataframe APIs.
-- See [Hyperparameter tuning with DataOps](../../../auto_examples/02_data_ops/1130_choiceshtml.md#sphx-glr-auto-examples-02-data-ops-1130-choices-py) for an example of
+- See [Hyperparameter tuning with DataOps](../../../auto_examples/02_data_ops/1130_choices.md#sphx-glr-auto-examples-02-data-ops-1130-choices-py) for an example of
   hyper-parameter tuning using skrub DataOps.

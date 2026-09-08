@@ -12,7 +12,7 @@ is available.
 **How to use selectors**
 
 - **Direct selection:** `s.select(df, selector)` returns a filtered dataframe
-- **With** [`skrub.ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols): `ApplyToCols(transformer, cols=selector)`
+- **With** [`skrub.ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols): `ApplyToCols(transformer, cols=selector)`
   applies a transformer to selected columns
 - **In DataOps:** `skrub.X(df).skb.apply(transformer, cols=selector)`
 - **Manual expansion:** `selector.expand(df)` gets column names for manual use
@@ -27,14 +27,14 @@ Selectors can be combined with set operators to create complex selection rules:
 
 #### NOTE
 This class is not meant to be instantiated manually. Create selectors using
-builder functions such as [`skrub.selectors.all()`](skrub.selectors.allhtml.md#skrub.selectors.all),
-[`skrub.selectors.cols()`](skrub.selectors.colshtml.md#skrub.selectors.cols), [`skrub.selectors.glob()`](skrub.selectors.globhtml.md#skrub.selectors.glob), etc.
+builder functions such as [`skrub.selectors.all()`](skrub.selectors.all.md#skrub.selectors.all),
+[`skrub.selectors.cols()`](skrub.selectors.cols.md#skrub.selectors.cols), [`skrub.selectors.glob()`](skrub.selectors.glob.md#skrub.selectors.glob), etc.
 
 #### SEE ALSO
-[`skrub.ApplyToCols`](skrub.ApplyToColshtml.md#skrub.ApplyToCols)
+[`skrub.ApplyToCols`](skrub.ApplyToCols.md#skrub.ApplyToCols)
 : Apply a transformer only to some columns, possibly selected by a selector.
 
-[`skrub.DataOp.skb.apply`](skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply)
+[`skrub.DataOp.skb.apply`](skrub.DataOp.skb.apply.md#skrub.DataOp.skb.apply)
 : Apply a transformer to selected columns in a DataOps workflow.
 
 ### Examples

@@ -9,13 +9,13 @@ not the order they appear in the dataframe. If any of the requested columns are
 missing from the dataframe, an exception is raised.
 
 #### SEE ALSO
-[`all`](skrub.selectors.allhtml.md#skrub.selectors.all)
+[`all`](skrub.selectors.all.md#skrub.selectors.all)
 : Select all columns
 
-[`glob`](skrub.selectors.globhtml.md#skrub.selectors.glob)
+[`glob`](skrub.selectors.glob.md#skrub.selectors.glob)
 : Select columns by UNIX-like name pattern
 
-[`regex`](skrub.selectors.regexhtml.md#skrub.selectors.regex)
+[`regex`](skrub.selectors.regex.md#skrub.selectors.regex)
 : Select columns by regular expression pattern
 
 ### Examples

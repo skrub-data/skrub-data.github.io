@@ -22,7 +22,7 @@ default but it can be turned on with the `keep_subsampling` parameter
   : The subsampled dataframe, column or numpy array.
 
 #### SEE ALSO
-[`DataOp.skb.preview`](skrub.DataOp.skb.previewhtml.md#skrub.DataOp.skb.preview)
+[`DataOp.skb.preview`](skrub.DataOp.skb.preview.md#skrub.DataOp.skb.preview)
 : Access a preview of the result on the subsampled data.
 
 ### Notes
@@ -32,10 +32,10 @@ has been configured, subsampling actually only takes place in some
 specific situations:
 
 - When computing the previews (results displayed when printing a
-  DataOp and the output of [`DataOp.skb.preview()`](skrub.DataOp.skb.previewhtml.md#skrub.DataOp.skb.preview)).
+  DataOp and the output of [`DataOp.skb.preview()`](skrub.DataOp.skb.preview.md#skrub.DataOp.skb.preview)).
 - When it is explicitly requested by passing `keep_subsampling=True` to one
   of the functions that expose that parameter such as
-  [`DataOp.skb.make_randomized_search()`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search) or [`cross_validate()`](skrub.cross_validatehtml.md#skrub.cross_validate).
+  [`DataOp.skb.make_randomized_search()`](skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search) or [`cross_validate()`](skrub.cross_validate.md#skrub.cross_validate).
 
 When subsampling has not been configured (`subsample` has not
 been called anywhere in the DataOp plan), no subsampling is ever done.
@@ -170,6 +170,6 @@ Result:
 (442,)
 ```
 
-Read more about subsampling in the [User Guide](../../modules/data_ops/ml_pipeline/subsampling_datahtml.md#user-guide-data-ops-subsampling).
+Read more about subsampling in the [User Guide](../../modules/data_ops/ml_pipeline/subsampling_data.md#user-guide-data-ops-subsampling).
 
 <!-- !! processed by numpydoc !! -->

@@ -19,10 +19,10 @@ Pattern matching is case-sensitive and interpreted as described in
   : A glob pattern to match column names.
 
 #### SEE ALSO
-[`regex`](skrub.selectors.regexhtml.md#skrub.selectors.regex)
+[`regex`](skrub.selectors.regex.md#skrub.selectors.regex)
 : Select columns by name using regular expressions. Use this for complex patterns that glob cannot express.
 
-[`filter_names`](skrub.selectors.filter_nameshtml.md#skrub.selectors.filter_names)
+[`filter_names`](skrub.selectors.filter_names.md#skrub.selectors.filter_names)
 : Select columns based on custom name-based criteria.
 
 ### Examples

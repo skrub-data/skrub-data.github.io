@@ -52,12 +52,12 @@ one example dataset.
 It is not necessary to provide a value for every variable: it is however advisable
 to do so when possible, as it allows to catch errors early on.
 
-Note: you can obtain the preview values with [`DataOp.skb.get_data()`](../../../reference/generated/skrub.DataOp.skb.get_datahtml.md#skrub.DataOp.skb.get_data), and
-set different ones with [`DataOp.skb.set_data()`](../../../reference/generated/skrub.DataOp.skb.set_datahtml.md#skrub.DataOp.skb.set_data).
+Note: you can obtain the preview values with [`DataOp.skb.get_data()`](../../../reference/generated/skrub.DataOp.skb.get_data.md#skrub.DataOp.skb.get_data), and
+set different ones with [`DataOp.skb.set_data()`](../../../reference/generated/skrub.DataOp.skb.set_data.md#skrub.DataOp.skb.set_data).
 
 ## Defining a default value for a variable
 
-If we pass `becomes_default=True` to [`var()`](../../../reference/generated/skrub.varhtml.md#skrub.var), the provided `value` is not
+If we pass `becomes_default=True` to [`var()`](../../../reference/generated/skrub.var.md#skrub.var), the provided `value` is not
 only an example value to use for previews but a default value for this variable
 in all contexts – then it is always optional to pass a value for it in the
 environment, and if not found the default is used.
@@ -80,7 +80,7 @@ Result (also the default value):
 11
 ```
 
-See the documentation of [`var()`](../../../reference/generated/skrub.varhtml.md#skrub.var) for details.
+See the documentation of [`var()`](../../../reference/generated/skrub.var.md#skrub.var) for details.
 
 ## Disabling previews and eager checks
 
@@ -88,7 +88,7 @@ By default, as soon as a DataOp is defined, some validity checks are performed
 and the preview results are computed eagerly. In very complex DataOps plans
 (100+ nodes), running checks after adding each node can cause a noticeable overhead.
 To avoid this, it is possible to disable eager checks with the `"eager_data_ops"`
-is easily achieved with the `"eager_data_ops"` [configuration](../../../guides/utilities/customizing_configurationhtml.md#user-guide-configuration-parameters) option.
+is easily achieved with the `"eager_data_ops"` [configuration](../../../guides/utilities/customizing_configuration.md#user-guide-configuration-parameters) option.
 
 ```pycon
 >>> with skrub.config_context(eager_data_ops=False):

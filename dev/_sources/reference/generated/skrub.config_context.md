@@ -8,7 +8,7 @@ Context manager for global skrub configuration.
   **use_table_report_data_ops**
   : The type of HTML representation used for the dataframes preview in skrub
     DataOps. Default is `True`.
-    - If `True`, [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport) will be used.
+    - If `True`, [`TableReport`](skrub.TableReport.md#skrub.TableReport) will be used.
     - If `False`, the original Pandas or Polars dataframe display will be
       used.
     <br/>
@@ -16,14 +16,14 @@ Context manager for global skrub configuration.
     environment variable.
 
   **table_report_n_rows**
-  : Set the default number of rows displayed in [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport)
+  : Set the default number of rows displayed in [`TableReport`](skrub.TableReport.md#skrub.TableReport)
     when the `n_rows` parameter is not explicitly passed. Default is 10.
     <br/>
     This configuration can also be set with the `SKB_TABLE_REPORT_N_ROWS`
     environment variable.
 
   **table_report_verbosity**
-  : Set the level of verbosity of the [`TableReport`](skrub.TableReporthtml.md#skrub.TableReport).
+  : Set the level of verbosity of the [`TableReport`](skrub.TableReport.md#skrub.TableReport).
     Default is 0 (no verbosity). Refer to the `TableReport` documentation for
     more details.
 
@@ -48,15 +48,15 @@ Context manager for global skrub configuration.
 
   **subsampling_seed**
   : Set the random seed of subsampling in skrub DataOps
-    [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample), when `how="random"` is passed.
+    [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample), when `how="random"` is passed.
     <br/>
     This configuration can also be set with the `SKB_SUBSAMPLING_SEED` environment
     variable.
 
   **enable_subsampling**
   : Control the activation of subsampling in skrub DataOps
-    [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample). Default is `"default"`.
-    - If `"default"`, the behavior of [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample) is used.
+    [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample). Default is `"default"`.
+    - If `"default"`, the behavior of [`skrub.DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample) is used.
     - If `"disable"`, subsampling is never used, so `skb.subsample` becomes a
       no-op.
     - If `"force"`, subsampling is used in all DataOps evaluation modes
@@ -73,7 +73,7 @@ Context manager for global skrub configuration.
     environment variable.
 
   **cardinality_threshold**
-  : Set the `cardinality_threshold` argument of [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
+  : Set the `cardinality_threshold` argument of [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer).
     Control the threshold value used to warn user if they have
     high cardinality columns in their dataset.
     <br/>
@@ -120,10 +120,10 @@ Context manager for global skrub configuration.
   None.
 
 #### SEE ALSO
-[`get_config`](skrub.get_confightml.md#skrub.get_config)
+[`get_config`](skrub.get_config.md#skrub.get_config)
 : Retrieve current values for global configuration.
 
-[`set_config`](skrub.set_confightml.md#skrub.set_config)
+[`set_config`](skrub.set_config.md#skrub.set_config)
 : Set global skrub configuration.
 
 ### Examples

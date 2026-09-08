@@ -5,8 +5,8 @@
 Cross-validate a learner built from a DataOp.
 
 This runs cross-validation from a learner that was built from a skrub
-DataOp with [`make_learner()`](skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner), [`make_grid_search()`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search)
-or [`make_randomized_search()`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search).
+DataOp with [`make_learner()`](skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner), [`make_grid_search()`](skrub.DataOp.skb.make_grid_search.md#skrub.DataOp.skb.make_grid_search)
+or [`make_randomized_search()`](skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search).
 
 It is useful to run nested cross-validation of a grid search or randomized
 search.
@@ -20,7 +20,7 @@ search.
 
   **keep_subsampling**
   : If True, and if subsampling has been configured (see
-    [`subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample)), use a subsample of the data. By
+    [`subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample)), use a subsample of the data. By
     default subsampling is not applied and all the data is used.
 
   **cv**
@@ -42,13 +42,13 @@ search.
 [`sklearn.model_selection.cross_validate()`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html#sklearn.model_selection.cross_validate)
 : Evaluate metric(s) by cross-validation and also record fit/score times.
 
-[`make_learner()`](skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner)
+[`make_learner()`](skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner)
 : Get a skrub learner for this DataOp.
 
-[`make_grid_search()`](skrub.DataOp.skb.make_grid_searchhtml.md#skrub.DataOp.skb.make_grid_search)
+[`make_grid_search()`](skrub.DataOp.skb.make_grid_search.md#skrub.DataOp.skb.make_grid_search)
 : Find the best parameters with grid search.
 
-[`make_randomized_search()`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search)
+[`make_randomized_search()`](skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search)
 : Find the best parameters with grid search.
 
 ### Examples

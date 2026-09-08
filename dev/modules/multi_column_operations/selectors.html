@@ -561,7 +561,7 @@
 
 
 
-<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/apply_to_cols.html">Transforming selected columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../default_wrangling/apply_to_cols.html">Transforming only some columns with <code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../column_level_featurizing.html">Column-level feature extraction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -587,6 +587,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../auto_tutorials/1111_data_ops_quick_tour.html">Quick overview of DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/what_are_data_ops.html">Basics of DataOps: the DataOps plan, variables, and learners</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/building_data_ops_plan.html">Building a simple DataOps plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../auto_tutorials/1111_data_ops_quick_tour.html">Quick overview of DataOps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/using_previews.html">Using previews for easier development and debugging</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/direct_access_methods.html">DataOps allow direct access to methods of the underlying data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data_ops/basics/control_flow.html">Control flow in DataOps: eager and deferred evaluation</a></li>
@@ -787,8 +788,8 @@ name, data type, contents, or according to arbitrary user-provided rules:</p>
 </ul>
 </div>
 </section>
-<section id="combining-selectors">
-<h2>Combining selectors<a class="headerlink" href="#combining-selectors" title="Link to this heading">#</a></h2>
+<section id="selectors-can-be-combined-with-the-set-operators">
+<h2>Selectors can be combined with the set operators<a class="headerlink" href="#selectors-can-be-combined-with-the-set-operators" title="Link to this heading">#</a></h2>
 <p>The available operators are <code class="docutils literal notranslate"><span class="pre">|</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">^</span></code> with the meaning of usual
 python sets, and <code class="docutils literal notranslate"><span class="pre">~</span></code> to invert a selection:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">SelectCols</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">'*_mm'</span><span class="p">))</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -828,8 +829,8 @@ following selector won’t compute the cardinality of non-categorical columns:</
 </pre></div>
 </div>
 </section>
-<section id="visualizing-a-selector">
-<span id="user-guide-selectors-expand"></span><h2>Visualizing a selector<a class="headerlink" href="#visualizing-a-selector" title="Link to this heading">#</a></h2>
+<section id="using-selectors-with-dataframe-libraries">
+<span id="user-guide-selectors-expand"></span><h2>Using selectors with dataframe libraries<a class="headerlink" href="#using-selectors-with-dataframe-libraries" title="Link to this heading">#</a></h2>
 <p>All selectors have the <code class="xref py py-meth docutils literal notranslate"><span class="pre">expand()</span></code> method, which allows dataframe manipulation
 outside of a skrub workflow: applying it to any dataframe will return the list
 of column names from the dataframe that the selector would keep. This allows selectors
@@ -858,8 +859,10 @@ only keeps columns that do not end in <code class="docutils literal notranslate"
 </section>
 <section id="using-selectors-with-other-skrub-transformers">
 <span id="selectors-and-transformer"></span><h2>Using selectors with other skrub transformers<a class="headerlink" href="#using-selectors-with-other-skrub-transformers" title="Link to this heading">#</a></h2>
-<p>Skrub transformers are designed to be used in conjunction with other transformers
-that operate on columns to improve their versatility.</p>
+<p>Skrub selectors are designed to be used in conjunction with <a class="reference internal" href="../../reference/generated/skrub.ApplyToCols.html#skrub.ApplyToCols" title="skrub.ApplyToCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">ApplyToCols</span></code></a>,
+<a class="reference internal" href="../../reference/generated/skrub.SelectCols.html#skrub.SelectCols" title="skrub.SelectCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.SelectCols</span></code></a>, and <a class="reference internal" href="../../reference/generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.DropCols</span></code></a>, as well as
+<a class="reference internal" href="../../reference/generated/skrub.DataOp.skb.apply.html#skrub.DataOp.skb.apply" title="skrub.DataOp.skb.apply"><code class="xref py py-func docutils literal notranslate"><span class="pre">apply()</span></code></a> to improve their versatility in how they modify
+columns.</p>
 <p>For example, it is possible to drop columns that have more unique values than a
 certain amount by combining <a class="reference internal" href="../../reference/generated/skrub.selectors.cardinality_below.html#skrub.selectors.cardinality_below" title="skrub.selectors.cardinality_below"><code class="xref py py-func docutils literal notranslate"><span class="pre">cardinality_below()</span></code></a> with
 <a class="reference internal" href="../../reference/generated/skrub.DropCols.html#skrub.DropCols" title="skrub.DropCols"><code class="xref py py-class docutils literal notranslate"><span class="pre">skrub.DropCols</span></code></a>.
@@ -963,8 +966,8 @@ do this like this:</p>
     <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-selectors">Introduction to selectors</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type-of-selectors">Type of selectors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-selectors">Combining selectors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-a-selector">Visualizing a selector</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selectors-can-be-combined-with-the-set-operators">Selectors can be combined with the set operators</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-selectors-with-dataframe-libraries">Using selectors with dataframe libraries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-selectors-with-other-skrub-transformers">Using selectors with other skrub transformers</a></li>
 </ul>
   </nav></div>

@@ -4,7 +4,7 @@
 
 Find the best parameters with grid search.
 
-This function returns a [`ParamSearch`](skrub.ParamSearchhtml.md#skrub.ParamSearch), an object similar to
+This function returns a [`ParamSearch`](skrub.ParamSearch.md#skrub.ParamSearch), an object similar to
 scikit-learn’s [`GridSearchCV`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV), where
 the main difference is that `fit()` and `predict()` accept a
 dictionary of inputs rather than `X` and `y`. The best learner can
@@ -18,7 +18,7 @@ be returned by calling `.best_learner_`.
 
   **keep_subsampling**
   : If True, and if subsampling has been configured (see
-    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsamplehtml.md#skrub.DataOp.skb.subsample)), fit on a subsample of the data. By
+    [`DataOp.skb.subsample()`](skrub.DataOp.skb.subsample.md#skrub.DataOp.skb.subsample)), fit on a subsample of the data. By
     default subsampling is not applied and all the data is used. This
     is only applied for fitting the grid search when `fitted=True`,
     subsequent use of the grid search is not affected by subsampling.
@@ -37,7 +37,7 @@ be returned by calling `.best_learner_`.
   `results_`, `plot_results()`, and `best_learner_`.
 
 #### SEE ALSO
-[`skrub.DataOp.skb.make_randomized_search`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search)
+[`skrub.DataOp.skb.make_randomized_search`](skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search)
 : Find the best parameters with randomized search.
 
 ### Examples

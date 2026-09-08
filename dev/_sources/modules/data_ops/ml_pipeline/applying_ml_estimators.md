@@ -5,7 +5,7 @@
 In addition to working directly with the API provided by the underlying data,
 DataOps can also be used to apply machine-learning estimators from
 scikit-learn or skrub to the data. This is done through the
-[`.skb.apply()`](../../../reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply) method:
+[`.skb.apply()`](../../../reference/generated/skrub.DataOp.skb.apply.md#skrub.DataOp.skb.apply) method:
 
 ```pycon
 >>> import pandas as pd
@@ -33,7 +33,7 @@ Result:
 ```
 
 It is also possible to apply a transformer to a subset of the columns. The `cols`
-parameter can also use a skrub [selector](../../multi_column_operations/selectorshtml.md#user-guide-selectors) for finer
+parameter can also use a skrub [selector](../../multi_column_operations/selectors.md#user-guide-selectors) for finer
 grained control.
 Note that any column that is not selected is passed through unchanged, like below:
 
@@ -53,7 +53,7 @@ Result:
 ```
 
 Then, we can export the transformation as a learner with
-[`.skb.make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner)
+[`.skb.make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner)
 
 ```pycon
 >>> learner = vectorized_orders.skb.make_learner(fitted=True)

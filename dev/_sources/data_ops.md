@@ -63,6 +63,10 @@ example:
 
 * [Basics of DataOps: the DataOps plan, variables, and learners](modules/data_ops/basics/what_are_data_opshtml.md)
 * [Building a simple DataOps plan](modules/data_ops/basics/building_data_ops_planhtml.md)
+* [Quick overview of DataOps](auto_tutorials/1111_data_ops_quick_tourhtml.md)
+  * [A first simple pipeline](auto_tutorials/1111_data_ops_quick_tourhtml.md#a-first-simple-pipeline)
+  * [Cross-validation](auto_tutorials/1111_data_ops_quick_tourhtml.md#cross-validation)
+  * [Tuning arbitrary choices](auto_tutorials/1111_data_ops_quick_tourhtml.md#tuning-arbitrary-choices)
 * [Using previews for easier development and debugging](modules/data_ops/basics/using_previewshtml.md)
   * [Defining a default value for a variable](modules/data_ops/basics/using_previewshtml.md#defining-a-default-value-for-a-variable)
   * [Disabling previews and eager checks](modules/data_ops/basics/using_previewshtml.md#disabling-previews-and-eager-checks)

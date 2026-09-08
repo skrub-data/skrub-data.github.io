@@ -16,7 +16,7 @@ Such misspellings break data analysis steps that require
 exact matching, such as a `GROUP BY` operation.
 
 Merging multiple variants of the same category is known as
-*deduplication*. It is implemented in skrub with the [`deduplicate()`](../../reference/generated/skrub.deduplicatehtml.md#skrub.deduplicate) function.
+*deduplication*. It is implemented in skrub with the [`deduplicate()`](../../reference/generated/skrub.deduplicate.md#skrub.deduplicate) function.
 
 Deduplication relies on *unsupervised learning*. It finds structures in
 the data without providing a-priori known and explicit labels/categories.
@@ -87,7 +87,7 @@ the three original medications (“Contrivan”, “Genericon” and “Zipholan
 are the most common ones, but there are many spelling mistakes or
 slight variations of the original names.
 
-The idea behind [`deduplicate()`](../../reference/generated/skrub.deduplicatehtml.md#skrub.deduplicate) is to use the fact that
+The idea behind [`deduplicate()`](../../reference/generated/skrub.deduplicate.md#skrub.deduplicate) is to use the fact that
 the string distance of misspelled medications will be
 closest to their original (most frequent) medication name
 - and therefore form clusters.
@@ -96,7 +96,7 @@ closest to their original (most frequent) medication name
 
 ## Deduplication: suggest corrections of misspelled names
 
-The [`deduplicate()`](../../reference/generated/skrub.deduplicatehtml.md#skrub.deduplicate) function uses clustering based on
+The [`deduplicate()`](../../reference/generated/skrub.deduplicate.md#skrub.deduplicate) function uses clustering based on
 string similarities to group duplicated names.
 
 Let’s deduplicate our data:
@@ -126,7 +126,7 @@ And that’s it! We now have the deduplicated data.
 > ##### Note:
 > 
 > The number of clusters will need some adjustment depending on the data.
-> If no fixed number of clusters is given, [`deduplicate()`](../../reference/generated/skrub.deduplicatehtml.md#skrub.deduplicate) tries to set it
+> If no fixed number of clusters is given, [`deduplicate()`](../../reference/generated/skrub.deduplicate.md#skrub.deduplicate) tries to set it
 > automatically via the
 > [silhouette score](https://scikit-learn.org/stable/modules/clustering.html#silhouette-coefficient).
 <!-- GENERATED FROM PYTHON SOURCE LINES 115-116 -->
@@ -155,7 +155,7 @@ clusters (3) and groups the spelling mistakes.
 In practice, the translation/deduplication will often be imperfect
 and require some tweaks.
 In this case, we can construct and update a translation table based on the
-data returned by [`deduplicate()`](../../reference/generated/skrub.deduplicatehtml.md#skrub.deduplicate).
+data returned by [`deduplicate()`](../../reference/generated/skrub.deduplicate.md#skrub.deduplicate).
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 136-145 -->
 ```Python
@@ -188,18 +188,18 @@ modify it manually.
 
 ## Conclusion
 
-In this example, we have seen how to use the [`deduplicate()`](../../reference/generated/skrub.deduplicatehtml.md#skrub.deduplicate) function to
+In this example, we have seen how to use the [`deduplicate()`](../../reference/generated/skrub.deduplicate.md#skrub.deduplicate) function to
 automatically detect and correct misspelled category names.
 
 Note that deduplication is especially useful when we either
 know our ground truth (e.g. the original medication names),
 or when the similarity across strings does not
 carry useful information for our machine learning task.
-Otherwise, we prefer using encoding methods such as [`GapEncoder`](../../reference/generated/skrub.GapEncoderhtml.md#skrub.GapEncoder)
-or [`MinHashEncoder`](../../reference/generated/skrub.MinHashEncoderhtml.md#skrub.MinHashEncoder).
+Otherwise, we prefer using encoding methods such as [`GapEncoder`](../../reference/generated/skrub.GapEncoder.md#skrub.GapEncoder)
+or [`MinHashEncoder`](../../reference/generated/skrub.MinHashEncoder.md#skrub.MinHashEncoder).
 
-**Total running time of the script:** (0 minutes 5.165 seconds)
+**Total running time of the script:** (0 minutes 5.380 seconds)
 
-**Estimated memory usage:**  544 MB
+**Estimated memory usage:**  531 MB
 
 <a id="sphx-glr-download-auto-examples-03-joining-0050-deduplication-py"></a>

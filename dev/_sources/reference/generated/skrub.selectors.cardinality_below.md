@@ -14,10 +14,10 @@ encode them in specific ways.
     Null values do not count in the cardinality.
 
 #### SEE ALSO
-[`has_nulls`](skrub.selectors.has_nullshtml.md#skrub.selectors.has_nulls)
+[`has_nulls`](skrub.selectors.has_nulls.md#skrub.selectors.has_nulls)
 : Select columns that contain null values.
 
-[`filter`](skrub.selectors.filterhtml.md#skrub.selectors.filter)
+[`filter`](skrub.selectors.filter.md#skrub.selectors.filter)
 : Use for custom cardinality-based selection criteria.
 
 ### Notes

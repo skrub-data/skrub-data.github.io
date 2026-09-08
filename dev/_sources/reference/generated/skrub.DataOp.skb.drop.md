@@ -5,7 +5,7 @@
 Drop some columns.
 
 `cols` can be a column name, a list of column names, or a
-[skrub selector](../selectorshtml.md#selectors-ref). Importantly, the exact list of
+[skrub selector](../selectors.md#selectors-ref). Importantly, the exact list of
 columns that match `.skb.drop` is stored during `fit` and then this
 same list of columns is dropped during `transform`.
 

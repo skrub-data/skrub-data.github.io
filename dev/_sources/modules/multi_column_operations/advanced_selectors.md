@@ -1,12 +1,12 @@
 <a id="user-guide-advanced-selectors"></a>
 
-# [`filter()`](../../reference/generated/skrub.selectors.filterhtml.md#skrub.selectors.filter) and [`filter_names()`](../../reference/generated/skrub.selectors.filter_nameshtml.md#skrub.selectors.filter_names) to select with user-defined criteria
+# [`filter()`](../../reference/generated/skrub.selectors.filter.md#skrub.selectors.filter) and [`filter_names()`](../../reference/generated/skrub.selectors.filter_names.md#skrub.selectors.filter_names) to select with user-defined criteria
 
-[`filter()`](../../reference/generated/skrub.selectors.filterhtml.md#skrub.selectors.filter) and [`filter_names()`](../../reference/generated/skrub.selectors.filter_nameshtml.md#skrub.selectors.filter_names) allow
+[`filter()`](../../reference/generated/skrub.selectors.filter.md#skrub.selectors.filter) and [`filter_names()`](../../reference/generated/skrub.selectors.filter_names.md#skrub.selectors.filter_names) allow
 selecting columns based on arbitrary user-defined criteria. These are also used to
 implement many of the other selectors provided in this module.
 
-[`filter()`](../../reference/generated/skrub.selectors.filterhtml.md#skrub.selectors.filter) accepts a function which will be called on a column
+[`filter()`](../../reference/generated/skrub.selectors.filter.md#skrub.selectors.filter) accepts a function which will be called on a column
 (i.e., a Pandas or polars Series). This function, called a predicate, must return
 `True` if the column should be selected.
 
@@ -27,7 +27,7 @@ implement many of the other selectors provided in this module.
 1   A3
 ```
 
-[`filter_names()`](../../reference/generated/skrub.selectors.filter_nameshtml.md#skrub.selectors.filter_names) accepts a predicate that is passed the column name,
+[`filter_names()`](../../reference/generated/skrub.selectors.filter_names.md#skrub.selectors.filter_names) accepts a predicate that is passed the column name,
 instead of the column.
 
 ```pycon
@@ -47,12 +47,12 @@ lambda or local functions and thus ensure the selector is picklable.
 1      420.0     297.0
 ```
 
-## Example of custom criteria in [`filter()`](../../reference/generated/skrub.selectors.filterhtml.md#skrub.selectors.filter): selecting columns with outliers
+## Example of custom criteria in [`filter()`](../../reference/generated/skrub.selectors.filter.md#skrub.selectors.filter): selecting columns with outliers
 
-The [`filter()`](../../reference/generated/skrub.selectors.filterhtml.md#skrub.selectors.filter) selector can be used to select columns based on custom
+The [`filter()`](../../reference/generated/skrub.selectors.filter.md#skrub.selectors.filter) selector can be used to select columns based on custom
 criteria. For example, we can define a function that checks if a column contains
 outliers using the Interquartile Range (IQR) method, and then use this function
-with [`filter()`](../../reference/generated/skrub.selectors.filterhtml.md#skrub.selectors.filter) to select such columns.
+with [`filter()`](../../reference/generated/skrub.selectors.filter.md#skrub.selectors.filter) to select such columns.
 
 Specifically, we define a function that computes the IQR (Inter Quartile Range) of a column
 and checks if any data points extend further than 2 IQRs of the lower and upper quartile.
@@ -87,14 +87,14 @@ and checks if any data points extend further than 2 IQRs of the lower and upper 
 
 # Select columns with null values
 
-Selectors [`has_nulls()`](../../reference/generated/skrub.selectors.has_nullshtml.md#skrub.selectors.has_nulls) and [Removing unneeded columns with DropUninformative and Cleaner](drop_uninformativehtml.md#user-guide-drop-uninformative) can be used to get information
-about columns with null values. The selector [`has_nulls()`](../../reference/generated/skrub.selectors.has_nullshtml.md#skrub.selectors.has_nulls) selects columns that contain
+Selectors [`has_nulls()`](../../reference/generated/skrub.selectors.has_nulls.md#skrub.selectors.has_nulls) and [Removing unneeded columns with DropUninformative and Cleaner](drop_uninformative.md#user-guide-drop-uninformative) can be used to get information
+about columns with null values. The selector [`has_nulls()`](../../reference/generated/skrub.selectors.has_nulls.md#skrub.selectors.has_nulls) selects columns that contain
 null values and it accepts an optional `proportion` parameter that allows **selecting** columns
 based on the proportion of null values they contain.
 
-## Example: Selecting columns by null percentage with [`has_nulls()`](../../reference/generated/skrub.selectors.has_nullshtml.md#skrub.selectors.has_nulls)
+## Example: Selecting columns by null percentage with [`has_nulls()`](../../reference/generated/skrub.selectors.has_nulls.md#skrub.selectors.has_nulls)
 
-The [`has_nulls()`](../../reference/generated/skrub.selectors.has_nullshtml.md#skrub.selectors.has_nulls) selector can filter columns based on their proportion of missing values.
+The [`has_nulls()`](../../reference/generated/skrub.selectors.has_nulls.md#skrub.selectors.has_nulls) selector can filter columns based on their proportion of missing values.
 This is useful for identifying columns that may need imputation or further investigation.
 
 ```pycon

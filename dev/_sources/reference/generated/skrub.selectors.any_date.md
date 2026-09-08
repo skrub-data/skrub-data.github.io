@@ -5,13 +5,13 @@
 Select columns that have a Date or Datetime data type.
 
 #### SEE ALSO
-[`skrub.Cleaner`](skrub.Cleanerhtml.md#skrub.Cleaner)
+[`skrub.Cleaner`](skrub.Cleaner.md#skrub.Cleaner)
 : Parse and clean date columns into proper datetime types.
 
-[`skrub.ToDatetime`](skrub.ToDatetimehtml.md#skrub.ToDatetime)
+[`skrub.ToDatetime`](skrub.ToDatetime.md#skrub.ToDatetime)
 : Convert string columns to datetime types.
 
-[`skrub.DatetimeEncoder`](skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder)
+[`skrub.DatetimeEncoder`](skrub.DatetimeEncoder.md#skrub.DatetimeEncoder)
 : Encode datetime columns into numeric features for machine learning.
 
 ### Notes

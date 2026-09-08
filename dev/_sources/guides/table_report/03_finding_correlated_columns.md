@@ -2,8 +2,8 @@
 
 # How to find correlated columns in a dataframe
 
-In addition to [`TableReport`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport)’s **Associations** tab, you can compute associations
-using the [`column_associations()`](../../reference/generated/skrub.column_associationshtml.md#skrub.column_associations) function, which returns a dataframe containing the
+In addition to [`TableReport`](../../reference/generated/skrub.TableReport.md#skrub.TableReport)’s **Associations** tab, you can compute associations
+using the [`column_associations()`](../../reference/generated/skrub.column_associations.md#skrub.column_associations) function, which returns a dataframe containing the
 associations.
 
 Reported metrics include [Cramer’s V statistic](https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V)
@@ -12,9 +12,9 @@ The result is returned as a dataframe that contains the column name and idx for 
 left and the right table, and both associations; results are sorted in descending order
 by Cramer’s V association.
 
-This can be useful to have access to the information used in the [`TableReport`](../../reference/generated/skrub.TableReporthtml.md#skrub.TableReport)
+This can be useful to have access to the information used in the [`TableReport`](../../reference/generated/skrub.TableReport.md#skrub.TableReport)
 for later use (e.g., to select which columns to drop). These associations are
-also used by the [`DropSimilar`](../../reference/generated/skrub.DropSimilarhtml.md#skrub.DropSimilar) transformer to select which columns should be dropped.
+also used by the [`DropSimilar`](../../reference/generated/skrub.DropSimilar.md#skrub.DropSimilar) transformer to select which columns should be dropped.
 
 ```default
 from skrub import column_associations

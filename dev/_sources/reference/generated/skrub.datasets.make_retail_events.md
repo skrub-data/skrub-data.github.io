@@ -5,9 +5,9 @@
 Generate a synthetic e-commerce clickstream dataset for classification.
 
 Each row represents one user interaction event on a retail platform.
-The dataset is designed to showcase [`SessionEncoder`](skrub.SessionEncoderhtml.md#skrub.SessionEncoder) (which
+The dataset is designed to showcase [`SessionEncoder`](skrub.SessionEncoder.md#skrub.SessionEncoder) (which
 groups events into sessions using `user_id` and `timestamp`),
-[`DatetimeEncoder`](skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) (which extracts hour-of-day, day-of-week,
+[`DatetimeEncoder`](skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) (which extracts hour-of-day, day-of-week,
 etc. from `timestamp`), one-hot encoding of categorical features, and
 scaling of numerical features.
 

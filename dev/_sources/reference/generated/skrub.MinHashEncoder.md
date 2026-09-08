@@ -58,16 +58,16 @@ morphological similarities between strings.
   : Names of features seen during [fit](https://scikit-learn.org/stable/glossary.html#term-fit).
 
 #### SEE ALSO
-[`GapEncoder`](skrub.GapEncoderhtml.md#skrub.GapEncoder)
+[`GapEncoder`](skrub.GapEncoder.md#skrub.GapEncoder)
 : Encodes dirty categories (strings) by constructing latent topics with continuous encoding.
 
-[`SimilarityEncoder`](skrub.SimilarityEncoderhtml.md#skrub.SimilarityEncoder)
+[`SimilarityEncoder`](skrub.SimilarityEncoder.md#skrub.SimilarityEncoder)
 : Encode string columns as a numeric array with n-gram string similarity.
 
-[`StringEncoder`](skrub.StringEncoderhtml.md#skrub.StringEncoder)
+[`StringEncoder`](skrub.StringEncoder.md#skrub.StringEncoder)
 : Fast n-gram encoding of string columns.
 
-[`deduplicate`](skrub.deduplicatehtml.md#skrub.deduplicate)
+[`deduplicate`](skrub.deduplicate.md#skrub.deduplicate)
 : Deduplicate data by hierarchically clustering similar strings.
 
 ### References
@@ -245,7 +245,8 @@ Transform `X` using specified encoding scheme.
 ## Gallery examples
 
 <div class="sphx-glr-thumbnails">
-<!-- thumbnail-parent-div-open --><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset.">  <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
+<!-- thumbnail-parent-div-open --><div class="sphx-glr-thumbcontainer" tooltip="Real-world datasets often come with misspellings, for instance in manually inputted categorical variables. Such misspellings break data analysis steps that require exact matching, such as a GROUP BY operation.">  <div class="sphx-glr-thumbnail-title">Deduplicating misspelled categories</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="This example shows how to transform a rich dataframe with columns of various types into a numerical matrix on which machine-learning algorithms can be applied. We study the case of predicting wages using the employee salaries dataset.">  <div class="sphx-glr-thumbnail-title">Encoding: from a dataframe to a numerical matrix for machine learning</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we explore the performance of string and categorical encoders available in skrub.">  <div class="sphx-glr-thumbnail-title">Various string encoders: a sentiment analysis example</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how to build a DataOps plan to handle pre-processing, validation and hyperparameter tuning of a dataset with multiple tables.">  <div class="sphx-glr-thumbnail-title">Multiples tables: building machine learning pipelines with DataOps</div>
 </div><div class="sphx-glr-thumbcontainer" tooltip="A machine-learning pipeline typically contains values or choices which may influence its prediction performance, such as hyperparameters (e.g., the regularization parameter alpha of a RidgeClassifier, the learning_rate of a HistGradientBoostingClassifier), which estimator to use (e.g., RidgeClassifier or HistGradientBoostingClassifier), or which steps to include (e.g., should we join a table to bring additional information or not).">  <div class="sphx-glr-thumbnail-title">Hyperparameter tuning with DataOps</div>

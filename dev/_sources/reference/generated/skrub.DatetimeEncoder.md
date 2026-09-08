@@ -47,7 +47,7 @@ be included.
     `date_month_spline_00`, `date_month_spline_01` etc., accordingly.
 
 #### SEE ALSO
-[`ToDatetime`](skrub.ToDatetimehtml.md#skrub.ToDatetime)
+[`ToDatetime`](skrub.ToDatetime.md#skrub.ToDatetime)
 : Convert strings to datetimes.
 
 ### Notes
@@ -58,11 +58,11 @@ No timezone conversion is performed: if the input column is timezone aware, the
 extracted features will be in the column’s timezone.
 
 An input column that does not have a Date or Datetime dtype will be
-rejected by raising a [`RejectColumn`](skrub.core.RejectColumnhtml.md#skrub.core.RejectColumn) exception. See `ToDatetime` for
+rejected by raising a [`RejectColumn`](skrub.core.RejectColumn.md#skrub.core.RejectColumn) exception. See `ToDatetime` for
 converting strings to proper datetimes.
-**Note:** the [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer) only sends datetime columns to its
+**Note:** the [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer) only sends datetime columns to its
 `datetime_encoder`. Therefore it is always safe to use a `DatetimeEncoder` as
-the [`TableVectorizer`](skrub.TableVectorizerhtml.md#skrub.TableVectorizer)’s `datetime_encoder` parameter.
+the [`TableVectorizer`](skrub.TableVectorizer.md#skrub.TableVectorizer)’s `datetime_encoder` parameter.
 
 The `DatetimeEncoder` uses hardcoded values for generating periodic features.
 The period of each feature is:
@@ -160,7 +160,7 @@ are discarded, regardless of `resolution`.
 (The number of seconds since Epoch can still be extracted but not “hour”,
 “minute”, etc.)
 
-Non-datetime columns are rejected by raising a [`RejectColumn`](skrub.core.RejectColumnhtml.md#skrub.core.RejectColumn)
+Non-datetime columns are rejected by raising a [`RejectColumn`](skrub.core.RejectColumn.md#skrub.core.RejectColumn)
 exception.
 
 ```pycon
@@ -175,7 +175,7 @@ Traceback (most recent call last):
 skrub.core.RejectColumn: Column 'birthday' does not have Date or Datetime dtype.
 ```
 
-[`ToDatetime`](skrub.ToDatetimehtml.md#skrub.ToDatetime): can be used for converting strings to datetimes.
+[`ToDatetime`](skrub.ToDatetime.md#skrub.ToDatetime): can be used for converting strings to datetimes.
 
 ```pycon
 >>> from skrub import ToDatetime

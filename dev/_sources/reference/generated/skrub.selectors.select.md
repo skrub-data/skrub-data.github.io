@@ -18,10 +18,10 @@ matched by `selector`.
   : A new dataframe containing only the columns matched by the selector.
 
 #### SEE ALSO
-[`drop`](skrub.selectors.drophtml.md#skrub.selectors.drop)
+[`drop`](skrub.selectors.drop.md#skrub.selectors.drop)
 : Return all columns except those matched by a selector
 
-[`Selector.expand`](skrub.selectors.Selectorhtml.md#skrub.selectors.Selector.expand)
+[`Selector.expand`](skrub.selectors.Selector.md#skrub.selectors.Selector.expand)
 : Get the column names matched by a selector as a list
 
 ### Notes

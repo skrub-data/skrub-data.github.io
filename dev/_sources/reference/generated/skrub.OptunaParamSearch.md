@@ -6,7 +6,7 @@ Learner that evaluates a skrub DataOp with hyperparameter tuning.
 
 This class is not meant to be instantiated manually, `OptunaParamSearch`
 objects are created by calling
-[`.skb.make_randomized_search(backend='optuna')`](skrub.DataOp.skb.make_randomized_searchhtml.md#skrub.DataOp.skb.make_randomized_search) on a [`DataOp`](skrub.DataOphtml.md#skrub.DataOp).
+[`.skb.make_randomized_search(backend='optuna')`](skrub.DataOp.skb.make_randomized_search.md#skrub.DataOp.skb.make_randomized_search) on a [`DataOp`](skrub.DataOp.md#skrub.DataOp).
 
 Attributes of interest are `best_learner_`, `best_score_`,
 `results_`, `detailed_results_`, and `study_` (the Optuna study used

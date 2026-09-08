@@ -238,7 +238,7 @@ For this example, we will use a strong baseline, with skrub's
     <!-- node_0 -->
     <g id="node_0" class="node">
 
-    <g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1150_use_case.py&quot;, line 106, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X = skrub.X(X)">
+    <g id="a_node_0"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1150_use_case.py&quot;, line 106, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;X = skrub.X(X)">
     <polygon fill="#c6d5f0" stroke="black" points="75.64,-134.17 17.62,-134.17 17.62,-112.78 75.64,-112.78 75.64,-134.17"/>
     <polygon fill="none" stroke="black" points="79.64,-138.17 13.62,-138.17 13.62,-108.78 79.64,-108.78 79.64,-138.17"/>
     <text xml:space="preserve" text-anchor="middle" x="46.63" y="-120.35" font-family="sans-serif" font-size="10.00">X: Var &#39;X&#39;</text>
@@ -248,7 +248,7 @@ For this example, we will use a strong baseline, with skrub's
     <!-- node_1 -->
     <g id="node_1" class="node">
 
-    <g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1150_use_case.py&quot;, line 115, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;df = X.skb.apply_func(pd.DataFrame)">
+    <g id="a_node_1"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1150_use_case.py&quot;, line 115, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;df = X.skb.apply_func(pd.DataFrame)">
     <polygon fill="none" stroke="black" points="93.27,-75.78 0,-75.78 0,-54.39 93.27,-54.39 93.27,-75.78"/>
     <text xml:space="preserve" text-anchor="middle" x="46.63" y="-61.96" font-family="sans-serif" font-size="10.00">Call &#39;DataFrame&#39;</text>
     </a>
@@ -263,7 +263,7 @@ For this example, we will use a strong baseline, with skrub's
     <!-- node_3 -->
     <g id="node_3" class="node">
 
-    <g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1150_use_case.py&quot;, line 124, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;predictions = df.skb.apply(tab_pipeline, y=y)">
+    <g id="a_node_3"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1150_use_case.py&quot;, line 124, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;predictions = df.skb.apply(tab_pipeline, y=y)">
     <polygon fill="none" stroke="black" points="135.27,-21.39 54,-21.39 54,0 135.27,0 135.27,-21.39"/>
     <text xml:space="preserve" text-anchor="middle" x="94.63" y="-7.57" font-family="sans-serif" font-size="10.00">Apply Pipeline</text>
     </a>
@@ -278,7 +278,7 @@ For this example, we will use a strong baseline, with skrub's
     <!-- node_2 -->
     <g id="node_2" class="node">
 
-    <g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/examples/02_data_ops/1150_use_case.py&quot;, line 107, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;y = skrub.y(y)">
+    <g id="a_node_2"><a xlink:title=" &#160;&#160;&#160;&#160;&#160;File &quot;/home/circleci/project/skrub/_docs/examples/02_data_ops/1150_use_case.py&quot;, line 107, in &lt;module&gt;&#10; &#160;&#160;&#160;&#160;&#160;&#160;&#160;y = skrub.y(y)">
     <polygon fill="#fad9c6" stroke="black" points="171.52,-75.78 115.75,-75.78 115.75,-54.39 171.52,-54.39 171.52,-75.78"/>
     <polygon fill="none" stroke="black" points="175.52,-79.78 111.75,-79.78 111.75,-50.39 175.52,-50.39 175.52,-79.78"/>
     <text xml:space="preserve" text-anchor="middle" x="143.63" y="-61.96" font-family="sans-serif" font-size="10.00">y: Var &#39;y&#39;</text>
@@ -377,9 +377,9 @@ when moving from development to production environments.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 10.685 seconds)
+   **Total running time of the script:** (0 minutes 10.501 seconds)
 
-**Estimated memory usage:**  668 MB
+**Estimated memory usage:**  655 MB
 
 
 .. _sphx_glr_download_auto_examples_02_data_ops_1150_use_case.py:

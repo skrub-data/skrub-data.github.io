@@ -10,13 +10,13 @@ Get a new DataOp with the provided preview values set on the variables.
     as the preview values for the corresponding variables.
 
 #### SEE ALSO
-[`DataOp.skb.get_data`](skrub.DataOp.skb.get_datahtml.md#skrub.DataOp.skb.get_data)
+[`DataOp.skb.get_data`](skrub.DataOp.skb.get_data.md#skrub.DataOp.skb.get_data)
 : Obtain the preview values currently set on the variables.
 
-[`DataOp.skb.get_vars`](skrub.DataOp.skb.get_varshtml.md#skrub.DataOp.skb.get_vars)
+[`DataOp.skb.get_vars`](skrub.DataOp.skb.get_vars.md#skrub.DataOp.skb.get_vars)
 : Obtain the variables (the `skrub.var()` objects) themselves.
 
-[`DataOp.skb.clone`](skrub.DataOp.skb.clonehtml.md#skrub.DataOp.skb.clone)
+[`DataOp.skb.clone`](skrub.DataOp.skb.clone.md#skrub.DataOp.skb.clone)
 : Obtain an independent clone of the DataOp, which does not contain any computed preview results. The parameter `drop_values` controls whether the values set on variables (if any) should be kept.
 
 ### Examples
@@ -94,7 +94,7 @@ Result:
 ```
 
 If we want to drop the values attached to variables we can use
-[`DataOp.skb.clone()`](skrub.DataOp.skb.clonehtml.md#skrub.DataOp.skb.clone). By default it drops values (we can pass
+[`DataOp.skb.clone()`](skrub.DataOp.skb.clone.md#skrub.DataOp.skb.clone). By default it drops values (we can pass
 `drop_values=False` to prevent that).
 
 ```pycon

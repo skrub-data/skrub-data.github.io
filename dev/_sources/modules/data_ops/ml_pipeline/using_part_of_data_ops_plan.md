@@ -2,15 +2,15 @@
 
 # Using only a part of a DataOps plan
 
-Besides documenting a DataOps plan, the [`.skb.set_name()`](../../../reference/generated/skrub.DataOp.skb.set_namehtml.md#skrub.DataOp.skb.set_name)
+Besides documenting a DataOps plan, the [`.skb.set_name()`](../../../reference/generated/skrub.DataOp.skb.set_name.md#skrub.DataOp.skb.set_name)
 has additional functions. By setting a name, we can:
 
 - Bypass the computation of that node and override its result by passing it as a
   key in the `environment` argument.
 - Truncate the computational graph after this node to obtain the intermediate result with
-  [`SkrubLearner.truncated_after()`](../../../reference/generated/skrub.SkrubLearnerhtml.md#skrub.SkrubLearner.truncated_after).
+  [`SkrubLearner.truncated_after()`](../../../reference/generated/skrub.SkrubLearner.md#skrub.SkrubLearner.truncated_after).
 - Retrieve that node and inspect the estimator that was fitted in it, if the
-  node was created with [`.skb.apply()`](../../../reference/generated/skrub.DataOp.skb.applyhtml.md#skrub.DataOp.skb.apply).
+  node was created with [`.skb.apply()`](../../../reference/generated/skrub.DataOp.skb.apply.md#skrub.DataOp.skb.apply).
 
 Here is a toy example with 4 steps:
 

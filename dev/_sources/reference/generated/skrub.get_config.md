@@ -2,17 +2,17 @@
 
 ### skrub.get_config()
 
-Retrieve current values for configuration set by [`set_config()`](skrub.set_confightml.md#skrub.set_config).
+Retrieve current values for configuration set by [`set_config()`](skrub.set_config.md#skrub.set_config).
 
 * **Returns:**
   **config**
-  : Keys are parameter names that can be passed to [`set_config()`](skrub.set_confightml.md#skrub.set_config).
+  : Keys are parameter names that can be passed to [`set_config()`](skrub.set_config.md#skrub.set_config).
 
 #### SEE ALSO
-[`config_context`](skrub.config_contexthtml.md#skrub.config_context)
+[`config_context`](skrub.config_context.md#skrub.config_context)
 : Context manager for global skrub configuration.
 
-[`set_config`](skrub.set_confightml.md#skrub.set_config)
+[`set_config`](skrub.set_config.md#skrub.set_config)
 : Set global skrub configuration.
 
 ### Examples

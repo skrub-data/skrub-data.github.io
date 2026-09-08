@@ -11,13 +11,13 @@ This selector matches both integer and floating-point columns, equivalent to
 `integer() | float()`.
 
 #### SEE ALSO
-[`integer`](skrub.selectors.integerhtml.md#skrub.selectors.integer)
+[`integer`](skrub.selectors.integer.md#skrub.selectors.integer)
 : Select integer columns only.
 
-[`float`](skrub.selectors.floathtml.md#skrub.selectors.float)
+[`float`](skrub.selectors.float.md#skrub.selectors.float)
 : Select floating-point columns only.
 
-[`boolean`](skrub.selectors.booleanhtml.md#skrub.selectors.boolean)
+[`boolean`](skrub.selectors.boolean.md#skrub.selectors.boolean)
 : Select Boolean columns.
 
 ### Examples
@@ -64,7 +64,7 @@ Select all numeric columns:
 0  1.1  2.3    2    2   3
 ```
 
-Combine with [`boolean()`](skrub.selectors.booleanhtml.md#skrub.selectors.boolean) to include Boolean columns:
+Combine with [`boolean()`](skrub.selectors.boolean.md#skrub.selectors.boolean) to include Boolean columns:
 
 ```pycon
 >>> s.select(df, s.numeric() | s.boolean())

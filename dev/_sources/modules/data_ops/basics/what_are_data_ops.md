@@ -14,7 +14,7 @@ not part of the DataOps namespace is instead applied to the underlying data: thi
 allows, for example, to make use of Pandas or Polars methods if the DataOp is
 encapsulating a DataFrame or Series.
 
-The entry point of any DataOps plan is [`var`](../../../reference/generated/skrub.varhtml.md#skrub.var),
+The entry point of any DataOps plan is [`var`](../../../reference/generated/skrub.var.md#skrub.var),
 a **variable**: a variable is an input to
 our machine learning pipeline, such as a table of data, a target array, or more
 generic data such as paths to files, or timestamps.
@@ -24,7 +24,7 @@ complex DataOps plans. The plan is constructed implicitly as we apply these
 operations, rather than by specifying an explicit list of transformations.
 
 At any point in the DataOps plan, we can export the resulting computation graph
-as a **learner** with [`make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learnerhtml.md#skrub.DataOp.skb.make_learner). A learner is a
+as a **learner** with [`make_learner()`](../../../reference/generated/skrub.DataOp.skb.make_learner.md#skrub.DataOp.skb.make_learner). A learner is a
 special object akin to a scikit-learn estimator, but that takes as input a
 dictionary of variables rather than a single design matrix `X` and a target array
 `y`.

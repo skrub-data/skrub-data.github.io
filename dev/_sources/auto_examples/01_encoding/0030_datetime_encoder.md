@@ -11,12 +11,12 @@
 # Handling datetime features with the DatetimeEncoder
 
 In this example, we illustrate how to better integrate datetime features
-in machine learning models with the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder).
+in machine learning models with the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder).
 
 This encoder breaks down passed datetime features into relevant numerical
 features, such as the month, the day of the week, the hour of the day, etc.
 
-It is used by default in the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
+It is used by default in the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer).
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 49-55 -->
 
@@ -50,8 +50,8 @@ Downloading 'bike_sharing' from https://github.com/skrub-data/skrub-data-files/r
 
 <div class="output_subarea output_html rendered_html output_result">
 
-<div id="report_9c507aae-wrapper" hidden>
-    <template id="report_9c507aae-template">
+<div id="report_e0250af1-wrapper" hidden>
+    <template id="report_e0250af1-template">
         <style>
          /\*!
 Pure v3.0.0
@@ -1476,7 +1476,7 @@ button.tab[data-has-warning]:not(:hover):not([data-is-selected]) {
 
 
                 <th
-                id="06c44c11"
+                id="d322586d"
                 class="table-cell elided-short "
 
                 data-role="padding"
@@ -1506,7 +1506,7 @@ data-spans_\_-1_\_-1
 
 
                 <th
-                id="df1578af"
+                id="e8c02a63"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1540,7 +1540,7 @@ data-spans_\_-1_\_0
 
 
                 <th
-                id="556bf915"
+                id="e64147ea"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1574,7 +1574,7 @@ data-spans_\_-1_\_1
 
 
                 <th
-                id="07948e12"
+                id="8edb7239"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1608,7 +1608,7 @@ data-spans_\_-1_\_2
 
 
                 <th
-                id="03c1cc36"
+                id="2bd3ac0d"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1642,7 +1642,7 @@ data-spans_\_-1_\_3
 
 
                 <th
-                id="a5f142aa"
+                id="d819e902"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1676,7 +1676,7 @@ data-spans_\_-1_\_4
 
 
                 <th
-                id="6f41f1e8"
+                id="0c5deedf"
                 class="table-cell elided-short clickable"
 
                 data-role="columns-level-value"
@@ -1724,7 +1724,7 @@ data-spans_\_-1_\_5
 
 
                 <th
-                id="f7e5bf04"
+                id="7fd6dccc"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -1752,7 +1752,7 @@ data-spans_\_0_\_-1
 
 
                 <td
-                id="5cb61014"
+                id="11a566a6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1782,7 +1782,7 @@ data-spans_\_0_\_0
 
 
                 <td
-                id="abefc022"
+                id="42f8b7e4"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1812,7 +1812,7 @@ data-spans_\_0_\_1
 
 
                 <td
-                id="1e5ab86d"
+                id="a5ceb874"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1842,7 +1842,7 @@ data-spans_\_0_\_2
 
 
                 <td
-                id="99a762fb"
+                id="f6b5c852"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1872,7 +1872,7 @@ data-spans_\_0_\_3
 
 
                 <td
-                id="851df057"
+                id="e2679e8d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1902,7 +1902,7 @@ data-spans_\_0_\_4
 
 
                 <td
-                id="4d04c4ce"
+                id="52514b47"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1936,7 +1936,7 @@ data-spans_\_0_\_5
 
 
                 <th
-                id="52f80ad9"
+                id="bb5e351a"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -1964,7 +1964,7 @@ data-spans_\_1_\_-1
 
 
                 <td
-                id="53dd9d41"
+                id="9f7df98a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -1994,7 +1994,7 @@ data-spans_\_1_\_0
 
 
                 <td
-                id="68672cde"
+                id="ab176979"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2024,7 +2024,7 @@ data-spans_\_1_\_1
 
 
                 <td
-                id="b4616d9a"
+                id="161379d6"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2054,7 +2054,7 @@ data-spans_\_1_\_2
 
 
                 <td
-                id="af18445c"
+                id="3aad159f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2084,7 +2084,7 @@ data-spans_\_1_\_3
 
 
                 <td
-                id="869f8a01"
+                id="8ce7625a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2114,7 +2114,7 @@ data-spans_\_1_\_4
 
 
                 <td
-                id="87520123"
+                id="32be8482"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2148,7 +2148,7 @@ data-spans_\_1_\_5
 
 
                 <th
-                id="0d4e1b85"
+                id="c3536d64"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2176,7 +2176,7 @@ data-spans_\_2_\_-1
 
 
                 <td
-                id="af19e997"
+                id="744594ce"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2206,7 +2206,7 @@ data-spans_\_2_\_0
 
 
                 <td
-                id="55792a79"
+                id="044097ed"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2236,7 +2236,7 @@ data-spans_\_2_\_1
 
 
                 <td
-                id="22875388"
+                id="fd63c926"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2266,7 +2266,7 @@ data-spans_\_2_\_2
 
 
                 <td
-                id="0bbf6922"
+                id="a104e2eb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2296,7 +2296,7 @@ data-spans_\_2_\_3
 
 
                 <td
-                id="5bc68dfc"
+                id="0aa9d232"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2326,7 +2326,7 @@ data-spans_\_2_\_4
 
 
                 <td
-                id="f218ccb5"
+                id="ccfaf441"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2360,7 +2360,7 @@ data-spans_\_2_\_5
 
 
                 <th
-                id="28859a31"
+                id="fd5be282"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2388,7 +2388,7 @@ data-spans_\_3_\_-1
 
 
                 <td
-                id="23aa8e56"
+                id="1fd29ec1"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2418,7 +2418,7 @@ data-spans_\_3_\_0
 
 
                 <td
-                id="2dd83bf1"
+                id="45176157"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2448,7 +2448,7 @@ data-spans_\_3_\_1
 
 
                 <td
-                id="f20f8dfd"
+                id="7f70c26a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2478,7 +2478,7 @@ data-spans_\_3_\_2
 
 
                 <td
-                id="8e1dd43f"
+                id="7b500d36"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2508,7 +2508,7 @@ data-spans_\_3_\_3
 
 
                 <td
-                id="96b96b03"
+                id="d73eff7c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2538,7 +2538,7 @@ data-spans_\_3_\_4
 
 
                 <td
-                id="698560aa"
+                id="ad82f065"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2572,7 +2572,7 @@ data-spans_\_3_\_5
 
 
                 <th
-                id="92d6e122"
+                id="fcb127ae"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2600,7 +2600,7 @@ data-spans_\_4_\_-1
 
 
                 <td
-                id="2c0be2c6"
+                id="4305292a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2630,7 +2630,7 @@ data-spans_\_4_\_0
 
 
                 <td
-                id="bf562471"
+                id="5189b1fc"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2660,7 +2660,7 @@ data-spans_\_4_\_1
 
 
                 <td
-                id="f85e37d7"
+                id="51813a5c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2690,7 +2690,7 @@ data-spans_\_4_\_2
 
 
                 <td
-                id="929c8751"
+                id="65178660"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2720,7 +2720,7 @@ data-spans_\_4_\_3
 
 
                 <td
-                id="32a94d62"
+                id="04b5cb23"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2750,7 +2750,7 @@ data-spans_\_4_\_4
 
 
                 <td
-                id="a6af8c68"
+                id="cb0ce459"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2864,7 +2864,7 @@ data-spans_\_4_\_5
 
 
                 <th
-                id="7356dba4"
+                id="b647d742"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -2892,7 +2892,7 @@ data-spans_\_5_\_-1
 
 
                 <td
-                id="2c1ecd96"
+                id="83b3d8fb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2922,7 +2922,7 @@ data-spans_\_5_\_0
 
 
                 <td
-                id="e681c2ea"
+                id="bef58426"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2952,7 +2952,7 @@ data-spans_\_5_\_1
 
 
                 <td
-                id="f5613f5f"
+                id="34e7fb4d"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -2982,7 +2982,7 @@ data-spans_\_5_\_2
 
 
                 <td
-                id="a785ea4b"
+                id="af51acf0"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3012,7 +3012,7 @@ data-spans_\_5_\_3
 
 
                 <td
-                id="f49aaafb"
+                id="871c0722"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3042,7 +3042,7 @@ data-spans_\_5_\_4
 
 
                 <td
-                id="c32c8437"
+                id="ee1350ea"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3076,7 +3076,7 @@ data-spans_\_5_\_5
 
 
                 <th
-                id="ea08bdae"
+                id="17c7dd7f"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3104,7 +3104,7 @@ data-spans_\_6_\_-1
 
 
                 <td
-                id="089a08f5"
+                id="74f4c441"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3134,7 +3134,7 @@ data-spans_\_6_\_0
 
 
                 <td
-                id="772d3266"
+                id="89573212"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3164,7 +3164,7 @@ data-spans_\_6_\_1
 
 
                 <td
-                id="11b517c2"
+                id="b7010cb2"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3194,7 +3194,7 @@ data-spans_\_6_\_2
 
 
                 <td
-                id="9981ed03"
+                id="2473964a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3224,7 +3224,7 @@ data-spans_\_6_\_3
 
 
                 <td
-                id="ba90888b"
+                id="fae3a11e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3254,7 +3254,7 @@ data-spans_\_6_\_4
 
 
                 <td
-                id="123a6371"
+                id="f9566222"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3288,7 +3288,7 @@ data-spans_\_6_\_5
 
 
                 <th
-                id="3a945731"
+                id="4b678587"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3316,7 +3316,7 @@ data-spans_\_7_\_-1
 
 
                 <td
-                id="ee744ffb"
+                id="17fbd878"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3346,7 +3346,7 @@ data-spans_\_7_\_0
 
 
                 <td
-                id="623ce248"
+                id="d5343437"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3376,7 +3376,7 @@ data-spans_\_7_\_1
 
 
                 <td
-                id="c1adc4ad"
+                id="c23c4e7b"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3406,7 +3406,7 @@ data-spans_\_7_\_2
 
 
                 <td
-                id="d2dc6928"
+                id="52b77782"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3436,7 +3436,7 @@ data-spans_\_7_\_3
 
 
                 <td
-                id="bf69e6c5"
+                id="dad28b43"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3466,7 +3466,7 @@ data-spans_\_7_\_4
 
 
                 <td
-                id="b49bdd3f"
+                id="78b37b28"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3500,7 +3500,7 @@ data-spans_\_7_\_5
 
 
                 <th
-                id="b5a24ccd"
+                id="137aac46"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3528,7 +3528,7 @@ data-spans_\_8_\_-1
 
 
                 <td
-                id="eb2e1602"
+                id="8d657eb3"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3558,7 +3558,7 @@ data-spans_\_8_\_0
 
 
                 <td
-                id="78c9c6cc"
+                id="818e996a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3588,7 +3588,7 @@ data-spans_\_8_\_1
 
 
                 <td
-                id="1ccf3694"
+                id="54d53aeb"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3618,7 +3618,7 @@ data-spans_\_8_\_2
 
 
                 <td
-                id="a77112e1"
+                id="5a54451e"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3648,7 +3648,7 @@ data-spans_\_8_\_3
 
 
                 <td
-                id="55719390"
+                id="04f1f758"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3678,7 +3678,7 @@ data-spans_\_8_\_4
 
 
                 <td
-                id="e82bec31"
+                id="bf3fa06a"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3712,7 +3712,7 @@ data-spans_\_8_\_5
 
 
                 <th
-                id="d478a949"
+                id="82a7ff18"
                 class="table-cell elided-short clickable"
 
                 data-role="index-level-value"
@@ -3740,7 +3740,7 @@ data-spans_\_9_\_-1
 
 
                 <td
-                id="80fa2375"
+                id="81a4175f"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3770,7 +3770,7 @@ data-spans_\_9_\_0
 
 
                 <td
-                id="7443865e"
+                id="2b44189c"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3800,7 +3800,7 @@ data-spans_\_9_\_1
 
 
                 <td
-                id="c2fdfc44"
+                id="6f9c14d7"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3830,7 +3830,7 @@ data-spans_\_9_\_2
 
 
                 <td
-                id="968b9e04"
+                id="e34d2539"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3860,7 +3860,7 @@ data-spans_\_9_\_3
 
 
                 <td
-                id="018087d8"
+                id="ccafe8ec"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -3890,7 +3890,7 @@ data-spans_\_9_\_4
 
 
                 <td
-                id="a8873d0b"
+                id="b64dd604"
                 class="table-cell elided-short clickable"
 
                 data-role="dataframe-data"
@@ -5017,7 +5017,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
         </div>
     </template>
 
-    <skrub-table-report class="report" id="report_9c507aae">
+    <skrub-table-report class="report" id="report_e0250af1">
     </skrub-table-report>
 
     <script type="module">
@@ -6121,7 +6121,7 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
     </script>
 </div>
 
-<div id="report_9c507aae-wrapper-fallback">
+<div id="report_e0250af1-wrapper-fallback">
     <h2>Please enable javascript</h2>
     <p>
         The skrub table reports need javascript to display correctly. If you are
@@ -6132,8 +6132,8 @@ No columns match the selected filter: <strong data-manager="ColumnFilterName"></
 </div>
 
 <script>
- document.getElementById("report_9c507aae-wrapper").removeAttribute("hidden");
- document.getElementById("report_9c507aae-wrapper-fallback").setAttribute("hidden", "");
+ document.getElementById("report_e0250af1-wrapper").removeAttribute("hidden");
+ document.getElementById("report_e0250af1-wrapper-fallback").setAttribute("hidden", "");
 </script>
 </div>
 <br />
@@ -6160,7 +6160,7 @@ Name: cnt, Length: 17379, dtype: int64
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 75-76 -->
 
-We convert the dataframe’s `"date"` column using [`ToDatetime`](../../reference/generated/skrub.ToDatetimehtml.md#skrub.ToDatetime).
+We convert the dataframe’s `"date"` column using [`ToDatetime`](../../reference/generated/skrub.ToDatetime.md#skrub.ToDatetime).
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 76-83 -->
 ```Python
@@ -6181,9 +6181,9 @@ converted dtype: datetime64[us]
 
 ### Encoding the features
 
-We now encode this column with a [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder).
+We now encode this column with a [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder).
 
-During the instantiation of the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder), we specify that we want
+During the instantiation of the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder), we specify that we want
 don’t want to extract features with a resolution finer than hours. This is
 because we don’t want to extract minutes, seconds and lower units, as they
 are unimportant here.
@@ -6240,10 +6240,10 @@ week and total seconds since Epoch information.
 
 ### One-liner with the TableVectorizer
 
-As mentioned earlier, the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) makes use of the
-[`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) by default. Note that `X["date"]` is still
+As mentioned earlier, the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) makes use of the
+[`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) by default. Note that `X["date"]` is still
 a string, but will be automatically transformed into a datetime in the
-[`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer).
+[`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer).
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 114-120 -->
 ```Python
@@ -6261,7 +6261,7 @@ array(['date_year', 'date_month', 'date_day', 'date_hour',
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 121-125 -->
 
-If we want to customize the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) inside the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer),
+If we want to customize the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) inside the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer),
 we can replace its default parameter with a new, custom instance.
 
 Here, for example, we want it to extract the day of the week:
@@ -6284,8 +6284,8 @@ array(['date_year', 'date_month', 'date_day', 'date_hour',
 For more information on how to customize the |TableVectorizer|, see
 :ref:`sphx_glr_auto_examples_0010_dirty_categories.py`. -->
 
-Inspecting the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) further, we can check that the
-[`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) is used on the correct column(s).
+Inspecting the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) further, we can check that the
+[`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) is used on the correct column(s).
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 137-139 -->
 ```Python
@@ -6305,7 +6305,7 @@ pprint(table_vec_weekday.transformers_)
 
 ### Feature engineering for linear models
 
-The [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) can generate additional periodic features. These are
+The [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) can generate additional periodic features. These are
 particularly useful for linear models. This is controlled by the
 `periodic encoding` parameter which can be either  `circular` or `spline`,
 for trigonometric functions or B-Splines respectively. In this example, we use
@@ -6325,9 +6325,9 @@ table_vec_periodic = TableVectorizer(
 
 ## Prediction with datetime features
 
-For prediction tasks, we recommend using the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) inside a
+For prediction tasks, we recommend using the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) inside a
 pipeline, combined with a model that can use the features extracted by the
-[`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder).
+[`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder).
 Here we’ll use a [`RidgeCV`](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeCV.html#sklearn.linear_model.RidgeCV) model as our learner. We also fill null values with
 [`SimpleImputer`](https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer) and then rescale numeric features with [`StandardScaler`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler).
 To test the effect of different datetime encodings on the linear model, we train
@@ -6486,10 +6486,10 @@ plt.show()
 
 ## Feature importances
 
-Using the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) allows us to better understand how the date
+Using the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) allows us to better understand how the date
 impacts the bike sharing demand. To this aim, we can use the function
 [`permutation_importance()`](https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html#sklearn.inspection.permutation_importance) to shuffle the features
-created by the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) and measure their importance by observing
+created by the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) and measure their importance by observing
 how the model changes its prediction.
 
 <!-- GENERATED FROM PYTHON SOURCE LINES 316-343 -->
@@ -6531,13 +6531,13 @@ temperature, the month, and the humidity are more important than others.
 
 ## Conclusion
 
-In this example, we saw how to use the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) to create
+In this example, we saw how to use the [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) to create
 features from a datetime column.
-Also check out the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer), which automatically recognizes
+Also check out the [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer), which automatically recognizes
 and transforms datetime columns by default.
 
-**Total running time of the script:** (0 minutes 11.880 seconds)
+**Total running time of the script:** (0 minutes 14.948 seconds)
 
-**Estimated memory usage:**  547 MB
+**Estimated memory usage:**  534 MB
 
 <a id="sphx-glr-download-auto-examples-01-encoding-0030-datetime-encoder-py"></a>

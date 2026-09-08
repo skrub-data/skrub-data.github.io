@@ -5,13 +5,13 @@
 Select columns that have a Boolean data type.
 
 #### SEE ALSO
-[`numeric`](skrub.selectors.numerichtml.md#skrub.selectors.numeric)
+[`numeric`](skrub.selectors.numeric.md#skrub.selectors.numeric)
 : Select all numeric columns (integer and float, NOT boolean).
 
-[`integer`](skrub.selectors.integerhtml.md#skrub.selectors.integer)
+[`integer`](skrub.selectors.integer.md#skrub.selectors.integer)
 : Select integer columns.
 
-[`filter`](skrub.selectors.filterhtml.md#skrub.selectors.filter)
+[`filter`](skrub.selectors.filter.md#skrub.selectors.filter)
 : Use for custom data-based selection criteria.
 
 ### Examples

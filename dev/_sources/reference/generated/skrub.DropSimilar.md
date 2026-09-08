@@ -30,10 +30,10 @@ the given threshold, one of the two columns is dropped.
     listing association scores between every pair of columns.
 
 #### SEE ALSO
-[`DropUninformative`](skrub.DropUninformativehtml.md#skrub.DropUninformative)
+[`DropUninformative`](skrub.DropUninformative.md#skrub.DropUninformative)
 : Drops a single column if certain criteria indicate that it contains little to no information (amount of nulls, of distinct values…)
 
-[`Cleaner`](skrub.Cleanerhtml.md#skrub.Cleaner)
+[`Cleaner`](skrub.Cleaner.md#skrub.Cleaner)
 : Runs several checks to sanitize a dataframe, including converting columns to standard formats or dropping certain columns.
 
 ### Examples

@@ -1,12 +1,12 @@
 <a id="user-guide-tabular-pipeline"></a>
 
-# Building robust ML baselines with [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline)
+# Building robust ML baselines with [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline)
 
-The [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline) is a function that, given a scikit-learn estimator,
-returns a full scikit-learn [`Pipeline`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline) that contains a [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer)
+The [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline) is a function that, given a scikit-learn estimator,
+returns a full scikit-learn [`Pipeline`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline) that contains a [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer)
 followed by the given estimator.
 If the estimator is a linear model (e.g., `Ridge`, `LogisticRegression`),
-[`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline) adds a [`SquashingScaler`](../../reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler) and a [`SimpleImputer`](https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer) to the pipeline.
+[`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline) adds a [`SquashingScaler`](../../reference/generated/skrub.SquashingScaler.md#skrub.SquashingScaler) and a [`SimpleImputer`](https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer) to the pipeline.
 
 ```pycon
 >>> from sklearn.linear_model import LinearRegression
@@ -33,36 +33,36 @@ Pipeline(steps=[('tablevectorizer',
                  HistGradientBoostingRegressor(...))])
 ```
 
-The pipeline prepared by [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline) is a strong first baseline for most
+The pipeline prepared by [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline) is a strong first baseline for most
 problems, but may not beat properly tuned ad-hoc pipelines.
 
-#### Parameter values choice of [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) when using  the [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline) function
+#### Parameter values choice of [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) when using  the [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline) function
 
-| Parameter                | `RandomForest` models                                                                                                                                | `HistGradientBoosting` models                                                                     | Linear models and others                                                                                                                          |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Low-cardinality encoder  | [`OrdinalEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder) | Native support                                                                                    | [`OneHotEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder) |
-| High-cardinality encoder | [`StringEncoder`](../../reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder)                                                          | [`StringEncoder`](../../reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder)       | [`StringEncoder`](../../reference/generated/skrub.StringEncoderhtml.md#skrub.StringEncoder)                                                       |
-| Numeric preprocessor     | No processing                                                                                                                                        | No processing                                                                                     | [`SquashingScaler`](../../reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler)                                                 |
-| Date preprocessor        | [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder)                                                    | [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) | [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoderhtml.md#skrub.DatetimeEncoder) with spline encoding                            |
-| Missing value strategy   | Native support                                                                                                                                       | Native support                                                                                    | [`SimpleImputer`](https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer)               |
+| Parameter                | `RandomForest` models                                                                                                                                | `HistGradientBoosting` models                                                                 | Linear models and others                                                                                                                          |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| Low-cardinality encoder  | [`OrdinalEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OrdinalEncoder.html#sklearn.preprocessing.OrdinalEncoder) | Native support                                                                                | [`OneHotEncoder`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder) |
+| High-cardinality encoder | [`StringEncoder`](../../reference/generated/skrub.StringEncoder.md#skrub.StringEncoder)                                                              | [`StringEncoder`](../../reference/generated/skrub.StringEncoder.md#skrub.StringEncoder)       | [`StringEncoder`](../../reference/generated/skrub.StringEncoder.md#skrub.StringEncoder)                                                           |
+| Numeric preprocessor     | No processing                                                                                                                                        | No processing                                                                                 | [`SquashingScaler`](../../reference/generated/skrub.SquashingScaler.md#skrub.SquashingScaler)                                                     |
+| Date preprocessor        | [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder)                                                        | [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) | [`DatetimeEncoder`](../../reference/generated/skrub.DatetimeEncoder.md#skrub.DatetimeEncoder) with spline encoding                                |
+| Missing value strategy   | Native support                                                                                                                                       | Native support                                                                                | [`SimpleImputer`](https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer)               |
 
 # The logic used by the tabular pipeline is quite simple
 
-The logic that is used by the [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline) is in fact quite simple, so
+The logic that is used by the [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline) is in fact quite simple, so
 users do not lose much if they decide to write their own pipeline instead.
 In practice it does only three things:
 
-- It chooses a [`TableVectorizer`](../../reference/generated/skrub.TableVectorizerhtml.md#skrub.TableVectorizer) configuration from the estimator type. For
+- It chooses a [`TableVectorizer`](../../reference/generated/skrub.TableVectorizer.md#skrub.TableVectorizer) configuration from the estimator type. For
   example, linear models get spline datetime features, while histogram gradient
   boosting models with `categorical_features="from_dtype"` get
   `low_cardinality=ToCategorical()`.
 - It inserts a [`SimpleImputer`](https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer) when the estimator cannot handle missing values.
-- It inserts a [`SquashingScaler`](../../reference/generated/skrub.SquashingScalerhtml.md#skrub.SquashingScaler) for estimators that benefit from scaling, and
+- It inserts a [`SquashingScaler`](../../reference/generated/skrub.SquashingScaler.md#skrub.SquashingScaler) for estimators that benefit from scaling, and
   skips it for tree ensembles.
 
 If your use case needs more control, writing the full pipeline yourself is
 usually straightforward and gives you access to the exact same building blocks.
-See the source of [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline) for the exact logic.
+See the source of [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline) for the exact logic.
 
 # Extending the pipeline with the `.steps` attribute
 
@@ -98,7 +98,7 @@ from scratch.
 
 # Using a pipeline as the estimator
 
-The estimator passed to [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipelinehtml.md#skrub.tabular_pipeline) can itself be a [`Pipeline`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline). This is
+The estimator passed to [`tabular_pipeline()`](../../reference/generated/skrub.tabular_pipeline.md#skrub.tabular_pipeline) can itself be a [`Pipeline`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline). This is
 often the simplest way to add estimator-specific postprocessing while keeping
 the default table preprocessing:
 

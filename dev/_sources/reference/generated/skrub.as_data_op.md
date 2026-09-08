@@ -2,10 +2,10 @@
 
 ### skrub.as_data_op(value)
 
-Create a DataOp [`DataOp`](skrub.DataOphtml.md#skrub.DataOp) that evaluates to the given value.
+Create a DataOp [`DataOp`](skrub.DataOp.md#skrub.DataOp) that evaluates to the given value.
 
 This wraps any object in a DataOp. When the DataOp is evaluated,
-the result is the provided value. This has a similar role as [`deferred()`](skrub.deferredhtml.md#skrub.deferred),
+the result is the provided value. This has a similar role as [`deferred()`](skrub.deferred.md#skrub.deferred),
 but for any object rather than for functions.
 
 * **Parameters:**
@@ -15,10 +15,10 @@ but for any object rather than for functions.
   a DataOp that evaluates to the given value
 
 #### SEE ALSO
-[`deferred`](skrub.deferredhtml.md#skrub.deferred)
+[`deferred`](skrub.deferred.md#skrub.deferred)
 : Wrap function calls in a DataOp.
 
-[`DataOp`](skrub.DataOphtml.md#skrub.DataOp)
+[`DataOp`](skrub.DataOp.md#skrub.DataOp)
 : Representation of a computation that can be used to build ML estimators.
 
 ### Examples

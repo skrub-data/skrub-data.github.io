@@ -17,16 +17,16 @@ checks and preprocessing pipelines.
     - 1.0: Selects columns where all values are null
 
 #### SEE ALSO
-[`cardinality_below`](skrub.selectors.cardinality_belowhtml.md#skrub.selectors.cardinality_below)
+[`cardinality_below`](skrub.selectors.cardinality_below.md#skrub.selectors.cardinality_below)
 : Select columns whose cardinality is below a threshold.
 
-[`skrub.DropUninformative`](skrub.DropUninformativehtml.md#skrub.DropUninformative)
+[`skrub.DropUninformative`](skrub.DropUninformative.md#skrub.DropUninformative)
 : Automatically drop columns that are uninformative, including columns with more null values than a specified threshold.
 
-[`skrub.Cleaner`](skrub.Cleanerhtml.md#skrub.Cleaner)
+[`skrub.Cleaner`](skrub.Cleaner.md#skrub.Cleaner)
 : Parse common null representations (e.g., ‘NA’, ‘missing’) into proper null values, and possibly drop columns with excessive nulls.
 
-[`filter`](skrub.selectors.filterhtml.md#skrub.selectors.filter)
+[`filter`](skrub.selectors.filter.md#skrub.selectors.filter)
 : Use for custom null-based selection criteria.
 
 ### Notes

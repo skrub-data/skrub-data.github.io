@@ -7,13 +7,13 @@ Select columns that have a string data type.
 In pandas, object columns containing strings are also selected.
 
 #### SEE ALSO
-[`categorical`](skrub.selectors.categoricalhtml.md#skrub.selectors.categorical)
+[`categorical`](skrub.selectors.categorical.md#skrub.selectors.categorical)
 : Select categorical columns (explicit categories, not arbitrary strings).
 
-[`object`](skrub.selectors.objecthtml.md#skrub.selectors.object)
+[`object`](skrub.selectors.object.md#skrub.selectors.object)
 : Select object dtype columns (broader, may include mixed types).
 
-[`filter`](skrub.selectors.filterhtml.md#skrub.selectors.filter)
+[`filter`](skrub.selectors.filter.md#skrub.selectors.filter)
 : Use for custom text-based selection criteria.
 
 ### Notes

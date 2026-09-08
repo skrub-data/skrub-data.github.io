@@ -7,7 +7,7 @@ Give a description to this DataOp.
 Returns a modified copy.
 
 The description can help document our learner. It is displayed in the
-execution report and can be retrieved from the [`DataOp.skb.description`](skrub.DataOp.skb.descriptionhtml.md#skrub.DataOp.skb.description)
+execution report and can be retrieved from the [`DataOp.skb.description`](skrub.DataOp.skb.description.md#skrub.DataOp.skb.description)
 attribute.
 
 * **Parameters:**
