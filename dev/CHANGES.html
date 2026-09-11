@@ -11,10 +11,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skrub-data.github.io/stable/CHANGES.html" />
 <meta property="og:site_name" content="skrub" />
-<meta property="og:description" content="Ongoing development: New Features: Changes: Bugfixes: Deprecations: The TextEncoder has been renamed LLMEncoder. It is still available as an alias, but will be removed in a future release.#2255 by ..." />
+<meta property="og:description" content="Ongoing development: New Features: It is now possible to unpack a DataOp that evaluates to an iterable (of known size), for example first, second = data_op. Each target becomes a DataOp that extrac..." />
 <meta property="og:image" content="https://skrub-data.github.io/stable/_static/skrub.svg" />
 <meta property="og:image:alt" content="skrub" />
-<meta name="description" content="Ongoing development: New Features: Changes: Bugfixes: Deprecations: The TextEncoder has been renamed LLMEncoder. It is still available as an alias, but will be removed in a future release.#2255 by ..." />
+<meta name="description" content="Ongoing development: New Features: It is now possible to unpack a DataOp that evaluates to an iterable (of known size), for example first, second = data_op. Each target becomes a DataOp that extrac..." />
 
     <title>Release history &#8212; skrub</title>
   
@@ -594,6 +594,12 @@
 <h2>Ongoing development<a class="headerlink" href="#ongoing-development" title="Link to this heading">#</a></h2>
 <section id="new-features">
 <h3>New Features<a class="headerlink" href="#new-features" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>It is now possible to unpack a <a class="reference internal" href="reference/generated/skrub.DataOp.html#skrub.DataOp" title="skrub.DataOp"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataOp</span></code></a> that evaluates to an iterable
+(of known size), for example <code class="docutils literal notranslate"><span class="pre">first,</span> <span class="pre">second</span> <span class="pre">=</span> <span class="pre">data_op</span></code>. Each target becomes
+a DataOp that extracts one of the items.
+<a class="reference external" href="https://github.com/skrub-data/skrub/pull/2243">#2243</a> by <a class="reference external" href="https://github.com/e-strauss">Elias Strauss</a>.</p></li>
+</ul>
 </section>
 <section id="id1">
 <h3>Changes<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>

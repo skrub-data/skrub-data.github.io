@@ -155,27 +155,27 @@ the User Guide for an example.
 
  .. code-block:: none
 
-    Running optuna search for study skrub_randomized_search_413aed6f-28c2-4e08-a039-0b76812b0417 in storage /tmp/tmppd0joz6j_skrub_optuna_search_storage/optuna_storage
-    [I 2026-09-10 11:15:27,361] A new study created in Journal with name: skrub_randomized_search_413aed6f-28c2-4e08-a039-0b76812b0417
-    [I 2026-09-10 11:15:27,792] Trial 0 finished with value: 0.5998958893326463 and parameters: {'2:regressor': '1:ridge', '1:α': 0.08737056333717456}. Best is trial 0 with value: 0.5998958893326463.
-    [I 2026-09-10 11:15:28,181] Trial 1 finished with value: 0.5998965729709886 and parameters: {'2:regressor': '1:ridge', '1:α': 0.17777676175509427}. Best is trial 1 with value: 0.5998965729709886.
-    [I 2026-09-10 11:15:28,591] Trial 2 finished with value: 0.5998956300607201 and parameters: {'2:regressor': '1:ridge', '1:α': 0.05323908243249831}. Best is trial 1 with value: 0.5998965729709886.
-    [I 2026-09-10 11:15:28,950] Trial 3 finished with value: 0.5998953213503151 and parameters: {'2:regressor': '1:ridge', '1:α': 0.012709575518456051}. Best is trial 1 with value: 0.5998965729709886.
-    [I 2026-09-10 11:15:36,234] Trial 4 finished with value: 0.7876693811022939 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 4 with value: 0.7876693811022939.
-    [I 2026-09-10 11:15:45,767] Trial 5 finished with value: 0.7945063446676569 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 5 with value: 0.7945063446676569.
-    [I 2026-09-10 11:15:46,111] Trial 6 finished with value: 0.5998987110257883 and parameters: {'2:regressor': '1:ridge', '1:α': 0.464456825115831}. Best is trial 5 with value: 0.7945063446676569.
-    [I 2026-09-10 11:15:50,919] Trial 7 finished with value: 0.7598835966657862 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 7}. Best is trial 5 with value: 0.7945063446676569.
-    [I 2026-09-10 11:15:56,169] Trial 8 finished with value: 0.7764069765237012 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 5 with value: 0.7945063446676569.
-    [I 2026-09-10 11:16:02,825] Trial 9 finished with value: 0.7904854577976114 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 5 with value: 0.7945063446676569.
-    [I 2026-09-10 11:16:02,827] A new study created in memory with name: skrub_randomized_search_413aed6f-28c2-4e08-a039-0b76812b0417
+    Running optuna search for study skrub_randomized_search_7b164291-1b65-4fd8-951a-9b70bd30f6aa in storage /tmp/tmply5dt0pk_skrub_optuna_search_storage/optuna_storage
+    [I 2026-09-11 16:09:48,908] A new study created in Journal with name: skrub_randomized_search_7b164291-1b65-4fd8-951a-9b70bd30f6aa
+    [I 2026-09-11 16:09:49,288] Trial 0 finished with value: 0.5998958893326463 and parameters: {'2:regressor': '1:ridge', '1:α': 0.08737056333717456}. Best is trial 0 with value: 0.5998958893326463.
+    [I 2026-09-11 16:09:49,646] Trial 1 finished with value: 0.5998965729709886 and parameters: {'2:regressor': '1:ridge', '1:α': 0.17777676175509427}. Best is trial 1 with value: 0.5998965729709886.
+    [I 2026-09-11 16:09:50,024] Trial 2 finished with value: 0.5998956300607201 and parameters: {'2:regressor': '1:ridge', '1:α': 0.05323908243249831}. Best is trial 1 with value: 0.5998965729709886.
+    [I 2026-09-11 16:09:50,404] Trial 3 finished with value: 0.5998953213503151 and parameters: {'2:regressor': '1:ridge', '1:α': 0.012709575518456051}. Best is trial 1 with value: 0.5998965729709886.
+    [I 2026-09-11 16:09:57,240] Trial 4 finished with value: 0.7880807633013067 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 4 with value: 0.7880807633013067.
+    [I 2026-09-11 16:10:06,542] Trial 5 finished with value: 0.7940304087945861 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 5 with value: 0.7940304087945861.
+    [I 2026-09-11 16:10:06,926] Trial 6 finished with value: 0.5998987110257883 and parameters: {'2:regressor': '1:ridge', '1:α': 0.464456825115831}. Best is trial 5 with value: 0.7940304087945861.
+    [I 2026-09-11 16:10:11,208] Trial 7 finished with value: 0.7595189353237548 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 7}. Best is trial 5 with value: 0.7940304087945861.
+    [I 2026-09-11 16:10:16,025] Trial 8 finished with value: 0.7757025988427282 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 5 with value: 0.7940304087945861.
+    [I 2026-09-11 16:10:22,300] Trial 9 finished with value: 0.7895055782574925 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 5 with value: 0.7940304087945861.
+    [I 2026-09-11 16:10:22,301] A new study created in memory with name: skrub_randomized_search_7b164291-1b65-4fd8-951a-9b70bd30f6aa
 
 
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <div id="report_ef3f394d-wrapper" hidden>
-        <template id="report_ef3f394d-template">
+    <div id="report_7c92ceca-wrapper" hidden>
+        <template id="report_7c92ceca-template">
             <style>
              /*!
     Pure v3.0.0
@@ -1600,7 +1600,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="3e25a5e6"
+                    id="ec3839d2"
                     class="table-cell elided-short "
                 
                     data-role="padding"
@@ -1630,7 +1630,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="d1a06356"
+                    id="56ef817d"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1664,7 +1664,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="ac57742b"
+                    id="448c380d"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1698,7 +1698,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="01455832"
+                    id="796cddcf"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1732,7 +1732,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="efa02770"
+                    id="fd8208b0"
                     class="table-cell elided-short clickable"
                 
                     data-role="columns-level-value"
@@ -1780,7 +1780,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="6005c786"
+                    id="e1ca27c6"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1808,7 +1808,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="fac38a2a"
+                    id="768f84a4"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1838,7 +1838,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="69a10480"
+                    id="95f8595f"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1868,7 +1868,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="38d26c7c"
+                    id="ea034a6a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1898,7 +1898,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="ca1b4906"
+                    id="4803169b"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1919,12 +1919,12 @@ the User Guide for an example.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.7945063446676569"
-                    data-value-str="0.7945063446676569"
+                    data-value-repr="0.7940304087945861"
+                    data-value-str="0.7940304087945861"
                 
                     data-column-idx="3"
                 
-                    >0.795</td>
+                    >0.794</td>
                 
                 </tr>
             
@@ -1932,7 +1932,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="5bc80695"
+                    id="5c2ddfee"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -1960,7 +1960,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="48edc19d"
+                    id="b5298be6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -1990,7 +1990,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="5631373a"
+                    id="290a2848"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2020,7 +2020,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="3166ad48"
+                    id="ddba916d"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2050,7 +2050,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="1ac6f48e"
+                    id="0b1bdbfb"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2071,8 +2071,8 @@ the User Guide for an example.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.7904854577976114"
-                    data-value-str="0.7904854577976114"
+                    data-value-repr="0.7895055782574925"
+                    data-value-str="0.7895055782574925"
                 
                     data-column-idx="3"
                 
@@ -2084,7 +2084,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="5e69f5cc"
+                    id="ba612395"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2112,7 +2112,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="e3e1b74c"
+                    id="35afaa45"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2142,7 +2142,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="3d51b996"
+                    id="53fa70ea"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2172,7 +2172,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="031307e6"
+                    id="c22ad7e7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2202,7 +2202,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="1540fb63"
+                    id="5e736537"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2223,8 +2223,8 @@ the User Guide for an example.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.7876693811022939"
-                    data-value-str="0.7876693811022939"
+                    data-value-repr="0.7880807633013067"
+                    data-value-str="0.7880807633013067"
                 
                     data-column-idx="3"
                 
@@ -2236,7 +2236,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="0a96b55a"
+                    id="4d090cbd"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2264,7 +2264,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="3b9870fb"
+                    id="aef3b7af"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2294,7 +2294,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="465a0b0f"
+                    id="f8f0f917"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2324,7 +2324,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="5ee9a786"
+                    id="d09d6f81"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2354,7 +2354,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="84317594"
+                    id="9c7ec191"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2375,8 +2375,8 @@ the User Guide for an example.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.7764069765237012"
-                    data-value-str="0.7764069765237012"
+                    data-value-repr="0.7757025988427282"
+                    data-value-str="0.7757025988427282"
                 
                     data-column-idx="3"
                 
@@ -2388,7 +2388,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="811fe009"
+                    id="0409cf56"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2416,7 +2416,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="418e63eb"
+                    id="1e8d1bca"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2446,7 +2446,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="461b6135"
+                    id="f46ff01c"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2476,7 +2476,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="c7490a7d"
+                    id="afc61016"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2506,7 +2506,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="2960ef6e"
+                    id="305b0df0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2527,8 +2527,8 @@ the User Guide for an example.
 
                     rowspan="1"
                     colspan="1"
-                    data-value-repr="0.7598835966657862"
-                    data-value-str="0.7598835966657862"
+                    data-value-repr="0.7595189353237548"
+                    data-value-str="0.7595189353237548"
                 
                     data-column-idx="3"
                 
@@ -2540,7 +2540,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="34027d56"
+                    id="7eb92c1b"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2568,7 +2568,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="b72a7123"
+                    id="e26ed9e3"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2598,7 +2598,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="446db432"
+                    id="fcefdc76"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2628,7 +2628,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="2e431323"
+                    id="be0805f9"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2658,7 +2658,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="3d8d2669"
+                    id="c5711384"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2692,7 +2692,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="0a0e775c"
+                    id="49eea620"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2720,7 +2720,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="9d88dbf6"
+                    id="62303302"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2750,7 +2750,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="41cded33"
+                    id="f2dd9458"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2780,7 +2780,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="5b84fdc2"
+                    id="e07c6c3a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2810,7 +2810,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="f14fa1f0"
+                    id="ce4da789"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2844,7 +2844,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="209b7db0"
+                    id="46386f45"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -2872,7 +2872,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="9ce8d3ea"
+                    id="2e2733f7"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2902,7 +2902,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="6c5803df"
+                    id="26c2529a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2932,7 +2932,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="d28ffa9c"
+                    id="47b451df"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2962,7 +2962,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="deb61abf"
+                    id="3eab86fe"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -2996,7 +2996,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="edf7c47f"
+                    id="c9129cae"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3024,7 +3024,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="14b66fd6"
+                    id="bc37fb60"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3054,7 +3054,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="3e31a4b1"
+                    id="b94fcf6a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3084,7 +3084,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="682a6370"
+                    id="637ca21a"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3114,7 +3114,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="88f264ea"
+                    id="213e2db6"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3148,7 +3148,7 @@ the User Guide for an example.
                 
                 
                     <th
-                    id="0f91ac9c"
+                    id="1b5e3216"
                     class="table-cell elided-short clickable"
                 
                     data-role="index-level-value"
@@ -3176,7 +3176,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="1a9cfc35"
+                    id="133f3797"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3206,7 +3206,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="2ed12010"
+                    id="0c0e39d0"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3236,7 +3236,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="6e144fb5"
+                    id="ee9a4baa"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3266,7 +3266,7 @@ the User Guide for an example.
                 
                 
                     <td
-                    id="26cadd23"
+                    id="b92916fc"
                     class="table-cell elided-short clickable"
                 
                     data-role="dataframe-data"
@@ -3596,7 +3596,7 @@ the User Guide for an example.
                 
                     <dt>Mean ± Std</dt>
                     <dd>0.691 ±
-                        0.0963
+                        0.0961
                     
                     </dd>
                 
@@ -3610,7 +3610,7 @@ the User Guide for an example.
                     <dt>Min | Max</dt>
                     <dd>
                         <span class="min-value">0.600</span> |
-                        <span class="max-value">0.795</span>
+                        <span class="max-value">0.794</span>
                     
                     </dd>
                 
@@ -4100,10 +4100,10 @@ the User Guide for an example.
                     
 
                     
-                        <td data-value="0.6908433881497509" data-numeric>
+                        <td data-value="0.6906320409260327" data-numeric>
                             0.691</td>
-                        <td data-value="0.09631790657433284" data-numeric>
-                            0.0963</td>
+                        <td data-value="0.09609637317747273" data-numeric>
+                            0.0961</td>
                     
 
                     
@@ -4111,8 +4111,8 @@ the User Guide for an example.
                             0.600</td>
                         <td data-value="0.5998987110257883" data-numeric>
                             0.600</td>
-                        <td data-value="0.7945063446676569" data-numeric>
-                            0.795</td>
+                        <td data-value="0.7940304087945861" data-numeric>
+                            0.794</td>
                     
 
                     </tr>
@@ -4145,7 +4145,7 @@ the User Guide for an example.
             </div>
         </template>
 
-        <skrub-table-report class="report" id="report_ef3f394d">
+        <skrub-table-report class="report" id="report_7c92ceca">
         </skrub-table-report>
 
         <script type="module">
@@ -5249,7 +5249,7 @@ the User Guide for an example.
         </script>
     </div>
 
-    <div id="report_ef3f394d-wrapper-fallback">
+    <div id="report_7c92ceca-wrapper-fallback">
         <h2>Please enable javascript</h2>
         <p>
             The skrub table reports need javascript to display correctly. If you are
@@ -5260,8 +5260,8 @@ the User Guide for an example.
     </div>
 
     <script>
-     document.getElementById("report_ef3f394d-wrapper").removeAttribute("hidden");
-     document.getElementById("report_ef3f394d-wrapper-fallback").setAttribute("hidden", "");
+     document.getElementById("report_7c92ceca-wrapper").removeAttribute("hidden");
+     document.getElementById("report_7c92ceca-wrapper-fallback").setAttribute("hidden", "");
     </script>
     </div>
     <br />
@@ -5287,7 +5287,7 @@ still available.
 
     <div class="output_subarea output_html rendered_html output_result">
     <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="e97c182b-3a6e-4b09-b006-959b8487fbfb" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e97c182b-3a6e-4b09-b006-959b8487fbfb")) {                    Plotly.newPlot(                        "e97c182b-3a6e-4b09-b006-959b8487fbfb",                        [{"dimensions":[{"label":"min_samples_leaf","ticktext":["NaN","1","2","3","4","5","6","7"],"tickvals":[-0.19459101490553132,0.0,0.6931471805599453,1.0986122886681098,1.3862943611198906,1.6094379124341003,1.791759469228055,1.9459101490553132],"values":{"dtype":"f8","bdata":"wI2LdHN8ND+DXP2keF7mP4o\u002fgY1N2uU\u002fDLqOhTwv9j9XWjKuciL\u002fP6yujr5b6Mi\u002frK6OvlvoyL+sro6+W+jIv6yujr5b6Mi\u002frK6OvlvoyL8="}},{"label":"\u03b1","ticktext":["NaN","0.013","0.019","0.028","0.042","0.063","0.094","0.140","0.209","0.311","0.464"],"tickvals":[-4.725250883542699,-4.365399591784898,-3.965564823165118,-3.5657300545453388,-3.1658952859255596,-2.76606051730578,-2.3662257486860003,-1.9663909800662212,-1.566556211446442,-1.1667214428266623,-0.7668866742068832],"values":{"dtype":"f8","bdata":"ENjoKqjmEsDwuckJ6uMSwChK9r824BLAWykq6aXYEsAQ2OgqqOYSwNydLuxViui\u002fv7kltz6O+7\u002fnNV\u002f1GIwDwAjweNLsfwfAPLqBX8RqEcA="}},{"label":"regressor","ticktext":["extra_tree","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAA4TaGroxxZPwAAAAAAAAAAyI\u002fRpJ99UT9aIBbL8WJnPwAAAAAAAPA\u002fAAAAAAAA8D+rpHVZfPbvPwAAAAAAAPA\u002fZ2DQiCTq7z8="}},{"label":"score time","ticktext":["0.016","0.026","0.036","0.046","0.055","0.065","0.075","0.085","0.095","0.105"],"tickvals":[0.01579272747039795,0.025714953740437828,0.035637180010477706,0.04555940628051758,0.05548163255055746,0.06540385882059734,0.07532608509063721,0.08524831136067709,0.09517053763071696,0.10509276390075684],"values":{"dtype":"f8","bdata":"AAAAAFznuj\u002fSg1j0wL20P4LbGuoUQ7U\u002f7APKPetAsT8Bi+scyDSvPwAAAAD4K5A\u002fv0KkzSkJkT8PqyRh8V+RP0f0j4alS5Q\u002fH81JOC+okD8="}},{"label":"fit time","ticktext":["0.0","0.3","0.5","0.8","1.0","1.2","1.5","1.7","2.0","2.2"],"tickvals":[0.0175551176071167,0.2621302074856228,0.506705297364129,0.751280387242635,0.9958554771211412,1.2404305669996474,1.4850056568781533,1.7295807467566595,1.9741558366351657,2.218730926513672],"values":{"dtype":"f8","bdata":"AAAAAPa\u002fAUDhJqYxslj4Px8YJoI0E\u002fs\u002fqaKOSjcQ8z+U\u002fyMQwjTxPwAAAAD4+ZE\u002f2fvhFCFWlj+t60jr9\u002fecPxuLZQ34TZs\u002fJ46eL\u002fiulD8="}},{"label":"score","ticktext":["0.60","0.62","0.64","0.66","0.69","0.71","0.73","0.75","0.77","0.79"],"tickvals":[0.5998953213503151,0.6215187683855753,0.6431422154208355,0.6647656624560957,0.6863891094913559,0.7080125565266161,0.7296360035618763,0.7512594505971365,0.7728828976323967,0.7945063446676569],"values":{"dtype":"f8","bdata":"pfzZkZhs6T\u002fdiaYoqEvpPyCj\u002fGqWNOk\u002f9MaRcVPY6D\u002f2SI5n91DoPwqWGMheMuM\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\u002f7iJHrFcy4z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"pfzZkZhs6T\u002fdiaYoqEvpPyCj\u002fGqWNOk\u002f9MaRcVPY6D\u002f2SI5n91DoPwqWGMheMuM\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\u002f7iJHrFcy4z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="2d51eaec-a0f9-43a5-b1f4-ed7a43692a31" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("2d51eaec-a0f9-43a5-b1f4-ed7a43692a31")) {                    Plotly.newPlot(                        "2d51eaec-a0f9-43a5-b1f4-ed7a43692a31",                        [{"dimensions":[{"label":"min_samples_leaf","ticktext":["NaN","1","2","3","4","5","6","7"],"tickvals":[-0.19459101490553132,0.0,0.6931471805599453,1.0986122886681098,1.3862943611198906,1.6094379124341003,1.791759469228055,1.9459101490553132],"values":{"dtype":"f8","bdata":"3hwy5ykCeb9YvgHnfCnmP2tDGTbqK+Y\u002fZZTC3gMZ9j9XWjKuciL\u002fP6yujr5b6Mi\u002f+9Y08wvgyL+sro6+W+jIv6yujr5b6Mi\u002fR9xQgmU2yL8="}},{"label":"\u03b1","ticktext":["NaN","0.013","0.019","0.028","0.042","0.063","0.094","0.140","0.209","0.311","0.464"],"tickvals":[-4.725250883542699,-4.365399591784898,-3.965564823165118,-3.5657300545453388,-3.1658952859255596,-2.76606051730578,-2.3662257486860003,-1.9663909800662212,-1.566556211446442,-1.1667214428266623,-0.7668866742068832],"values":{"dtype":"f8","bdata":"ENjoKqjmEsCmcIByjeESwBDY6Cqo5hLAdIqlPM3bEsAQ2OgqqOYSwNydLuxViui\u002f4qHZv6La+79EHytrL14DwBgxHElsgwfAhK2G+15jEcA="}},{"label":"regressor","ticktext":["extra_tree","ridge"],"tickvals":[0,1],"values":{"dtype":"f8","bdata":"AAAAAAAAAAASpc5fMVRjP25xpNzTJGE\u002fIPquAnYUXz8AAAAAAAAAAAAAAAAAAPA\u002fAAAAAAAA8D8AAAAAAADwP\u002fdT576f\u002f+8\u002fwRM9D03s7z8="}},{"label":"score time","ticktext":["0.014","0.024","0.034","0.044","0.054","0.064","0.074","0.084","0.094","0.104"],"tickvals":[0.014189720153808594,0.024128284719255235,0.034066849284701876,0.044005413850148514,0.05394397841559516,0.0638825429810418,0.07382110754648843,0.08375967211193508,0.09369823667738172,0.10363680124282837],"values":{"dtype":"f8","bdata":"AAAAAPGHuj\u002fw8hYOFOiyP0g0CJNderQ\u002fS4fTdPbprT+Zbj5dYPWrPwAAAACAD40\u002fMmdX91LrkT9pOZqqTGORPz4bOYzXp44\u002fQrQgWrBqkj8="}},{"label":"fit time","ticktext":["0.0","0.3","0.5","0.7","1.0","1.2","1.4","1.7","1.9","2.1"],"tickvals":[0.014785826206207275,0.2517997953626845,0.48881376451916164,0.7258277336756388,0.962841702832116,1.199855671988593,1.4368696411450703,1.6738836103015475,1.9108975794580247,2.147911548614502],"values":{"dtype":"f8","bdata":"AAAAQOwuAUAegBlWn9v2P1VzljcG3vg\u002fvw7\u002f9q948T9FKnmTjsfuPwAAAAAISI4\u002fI3qpo6m\u002fjj8oxHdbbpyRP57KT+YpUpM\u002fgHlF+V8PmD8="}},{"label":"score","ticktext":["0.60","0.62","0.64","0.66","0.69","0.71","0.73","0.75","0.77","0.79"],"tickvals":[0.5998953213503151,0.6214658866219007,0.6430364518934865,0.6646070171650721,0.6861775824366577,0.7077481477082435,0.7293187129798291,0.7508892782514147,0.7724598435230005,0.7940304087945861],"values":{"dtype":"f8","bdata":"Gay5dbJo6T8WBNQzoUPpP+qLHyb1N+k\u002fiHSuQY7S6D+EEH2n+k3oPwqWGMheMuM\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\u002f7iJHrFcy4z8="}}],"labelangle":15,"labelside":"top","line":{"color":{"dtype":"f8","bdata":"Gay5dbJo6T8WBNQzoUPpP+qLHyb1N+k\u002fiHSuQY7S6D+EEH2n+k3oPwqWGMheMuM\u002fbJI8TFoy4z+cCDbdWDLjP7D4A1JYMuM\u002f7iJHrFcy4z8="},"colorbar":{"title":{"text":"score"}},"colorscale":[[0.0,"rgb(0,0,255)"],[1.0,"rgb(255,0,0)"]],"showscale":true},"type":"parcoords"}],                        {"font":{"size":18},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -5312,7 +5312,7 @@ hyperparameter search is available in the attribute ``study_``:
  .. code-block:: none
 
 
-    <optuna.study.study.Study object at 0x7c7c81d9e480>
+    <optuna.study.study.Study object at 0x7d961813d9d0>
 
 
 
@@ -5360,7 +5360,7 @@ This allows us to use Optuna's reporting capabilities provided in
 
     <div class="output_subarea output_html rendered_html output_result">
     <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="35350da0-e097-4fc8-a919-b3d3aa1b5eb0" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("35350da0-e097-4fc8-a919-b3d3aa1b5eb0")) {                    Plotly.newPlot(                        "35350da0-e097-4fc8-a919-b3d3aa1b5eb0",                        [{"marker":{"color":[4,5,7,8,9],"colorbar":{"title":{"text":"Trial"},"x":1.0,"xpad":40},"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"line":{"color":"Grey","width":0.5}},"mode":"markers","name":"Feasible Trial","showlegend":false,"x":[2,1,7,4,2],"y":[0.7876693811022939,0.7945063446676569,0.7598835966657862,0.7764069765237012,0.7904854577976114],"type":"scatter"}],                        {"title":{"text":"Slice Plot"},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"title":{"text":"0:min_samples_leaf"},"type":"log"},"yaxis":{"title":{"text":"Objective Value"}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="d8b9a731-43e5-466a-bc8c-5e8a7d74a9d3" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("d8b9a731-43e5-466a-bc8c-5e8a7d74a9d3")) {                    Plotly.newPlot(                        "d8b9a731-43e5-466a-bc8c-5e8a7d74a9d3",                        [{"marker":{"color":[4,5,7,8,9],"colorbar":{"title":{"text":"Trial"},"x":1.0,"xpad":40},"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"line":{"color":"Grey","width":0.5}},"mode":"markers","name":"Feasible Trial","showlegend":false,"x":[2,1,7,4,2],"y":[0.7880807633013067,0.7940304087945861,0.7595189353237548,0.7757025988427282,0.7895055782574925],"type":"scatter"}],                        {"title":{"text":"Slice Plot"},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"title":{"text":"0:min_samples_leaf"},"type":"log"},"yaxis":{"title":{"text":"Objective Value"}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -5426,17 +5426,17 @@ more information.
 
  .. code-block:: none
 
-    [I 2026-09-10 11:16:10,813] A new study created in memory with name: no-name-26c5bdc4-ae47-4ab2-9c6f-fc64b75b6052
-    [I 2026-09-10 11:16:11,145] Trial 0 finished with value: 0.5998954634353948 and parameters: {'2:regressor': '1:ridge', '1:α': 0.031348597811409244}. Best is trial 0 with value: 0.5998954634353948.
-    [I 2026-09-10 11:16:21,535] Trial 1 finished with value: 0.7932576703372486 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 1 with value: 0.7932576703372486.
-    [I 2026-09-10 11:16:26,575] Trial 2 finished with value: 0.7773381371764743 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 1 with value: 0.7932576703372486.
-    [I 2026-09-10 11:16:26,878] Trial 3 finished with value: 0.5998956947586264 and parameters: {'2:regressor': '1:ridge', '1:α': 0.061748206343857234}. Best is trial 1 with value: 0.7932576703372486.
-    [I 2026-09-10 11:16:33,449] Trial 4 finished with value: 0.7904530060911392 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 2}. Best is trial 1 with value: 0.7932576703372486.
-    [I 2026-09-10 11:16:33,733] Trial 5 finished with value: 0.5999000419133731 and parameters: {'2:regressor': '1:ridge', '1:α': 0.6460346846357254}. Best is trial 1 with value: 0.7932576703372486.
-    [I 2026-09-10 11:16:34,020] Trial 6 finished with value: 0.5999009549662768 and parameters: {'2:regressor': '1:ridge', '1:α': 0.7720492337967285}. Best is trial 1 with value: 0.7932576703372486.
-    [I 2026-09-10 11:16:34,308] Trial 7 finished with value: 0.5998977157428649 and parameters: {'2:regressor': '1:ridge', '1:α': 0.33025046183837625}. Best is trial 1 with value: 0.7932576703372486.
-    [I 2026-09-10 11:16:34,594] Trial 8 finished with value: 0.5999245274324821 and parameters: {'2:regressor': '1:ridge', '1:α': 4.568534862789506}. Best is trial 1 with value: 0.7932576703372486.
-    [I 2026-09-10 11:16:37,615] Trial 9 finished with value: 0.6988183868601401 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 31}. Best is trial 1 with value: 0.7932576703372486.
+    [I 2026-09-11 16:10:29,249] A new study created in memory with name: no-name-43e451f4-b9b2-4efb-a682-d9f072eadab5
+    [I 2026-09-11 16:10:33,492] Trial 0 finished with value: 0.7611429582545464 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 7}. Best is trial 0 with value: 0.7611429582545464.
+    [I 2026-09-11 16:10:42,843] Trial 1 finished with value: 0.7925025034623817 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 1 with value: 0.7925025034623817.
+    [I 2026-09-11 16:10:46,722] Trial 2 finished with value: 0.7464500035291917 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 10}. Best is trial 1 with value: 0.7925025034623817.
+    [I 2026-09-11 16:10:47,010] Trial 3 finished with value: 0.5999168108688369 and parameters: {'2:regressor': '1:ridge', '1:α': 3.186549388630279}. Best is trial 1 with value: 0.7925025034623817.
+    [I 2026-09-11 16:10:47,293] Trial 4 finished with value: 0.5998954816258633 and parameters: {'2:regressor': '1:ridge', '1:α': 0.033736685992371396}. Best is trial 1 with value: 0.7925025034623817.
+    [I 2026-09-11 16:10:47,584] Trial 5 finished with value: 0.5998963427305227 and parameters: {'2:regressor': '1:ridge', '1:α': 0.1472623942072446}. Best is trial 1 with value: 0.7925025034623817.
+    [I 2026-09-11 16:10:56,400] Trial 6 finished with value: 0.7951314871133439 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}. Best is trial 6 with value: 0.7951314871133439.
+    [I 2026-09-11 16:10:59,370] Trial 7 finished with value: 0.7091644015212817 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 26}. Best is trial 6 with value: 0.7951314871133439.
+    [I 2026-09-11 16:11:04,143] Trial 8 finished with value: 0.7759857264358434 and parameters: {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 4}. Best is trial 6 with value: 0.7951314871133439.
+    [I 2026-09-11 16:11:04,410] Trial 9 finished with value: 0.5999387469568607 and parameters: {'2:regressor': '1:ridge', '1:α': 7.753969292201705}. Best is trial 6 with value: 0.7951314871133439.
 
     {'2:regressor': '0:extra_tree', '0:min_samples_leaf': 1}
 
@@ -5461,7 +5461,7 @@ We can also use Optuna's visualization capabilities to inspect the study:
 
     <div class="output_subarea output_html rendered_html output_result">
     <div style="height:100%; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="213fe69c-e520-4ab0-90c8-d9103281d372" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("213fe69c-e520-4ab0-90c8-d9103281d372")) {                    Plotly.newPlot(                        "213fe69c-e520-4ab0-90c8-d9103281d372",                        [{"mode":"markers","name":"Objective Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.5998954634353948,0.7932576703372486,0.7773381371764743,0.5998956947586264,0.7904530060911392,0.5999000419133731,0.5999009549662768,0.5998977157428649,0.5999245274324821,0.6988183868601401],"type":"scatter"},{"mode":"lines","name":"Best Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.5998954634353948,0.7932576703372486,0.7932576703372486,0.7932576703372486,0.7932576703372486,0.7932576703372486,0.7932576703372486,0.7932576703372486,0.7932576703372486,0.7932576703372486],"type":"scatter"},{"marker":{"color":"#cccccc"},"mode":"markers","name":"Infeasible Trial","showlegend":false,"x":[],"y":[],"type":"scatter"}],                        {"title":{"text":"Optimization History Plot"},"xaxis":{"title":{"text":"Trial"}},"yaxis":{"title":{"text":"Objective Value"}},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
+            <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.7.0.min.js" integrity="sha256-jvTGqxNp8AGWEcvNLVuKr+8j5dGe9Yw51LQkmDH+IYA=" crossorigin="anonymous"></script>                <div id="fb39d3bf-b641-4cf7-b306-0420c83fccb6" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("fb39d3bf-b641-4cf7-b306-0420c83fccb6")) {                    Plotly.newPlot(                        "fb39d3bf-b641-4cf7-b306-0420c83fccb6",                        [{"mode":"markers","name":"Objective Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.7611429582545464,0.7925025034623817,0.7464500035291917,0.5999168108688369,0.5998954816258633,0.5998963427305227,0.7951314871133439,0.7091644015212817,0.7759857264358434,0.5999387469568607],"type":"scatter"},{"mode":"lines","name":"Best Value","x":[0,1,2,3,4,5,6,7,8,9],"y":[0.7611429582545464,0.7925025034623817,0.7925025034623817,0.7925025034623817,0.7925025034623817,0.7925025034623817,0.7951314871133439,0.7951314871133439,0.7951314871133439,0.7951314871133439],"type":"scatter"},{"marker":{"color":"#cccccc"},"mode":"markers","name":"Infeasible Trial","showlegend":false,"x":[],"y":[],"type":"scatter"}],                        {"title":{"text":"Optimization History Plot"},"xaxis":{"title":{"text":"Trial"}},"yaxis":{"title":{"text":"Objective Value"}},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
     <br />
     <br />
@@ -5500,9 +5500,9 @@ dataset:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 17.378 seconds)
+   **Total running time of the script:** (1 minutes 21.919 seconds)
 
-**Estimated memory usage:**  711 MB
+**Estimated memory usage:**  716 MB
 
 
 .. _sphx_glr_download_auto_examples_02_data_ops_1131_optuna_choices.py:

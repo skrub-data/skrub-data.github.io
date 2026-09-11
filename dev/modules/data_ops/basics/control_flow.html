@@ -779,22 +779,29 @@ applying <code class="docutils literal notranslate"><span class="pre">deferred</
 </div>
 <section id="unpacking-multiple-outputs-from-deferred-functions">
 <h2>Unpacking multiple outputs from deferred functions<a class="headerlink" href="#unpacking-multiple-outputs-from-deferred-functions" title="Link to this heading">#</a></h2>
-<p>When a deferred function returns more than one value, you cannot unpack the
-result directly because unpacking iterates over the result. Iteration is not
-supported on DataOps until evaluation.</p>
-<p>In general, it is recommended that deferred functions return a single
-value whenever possible. Returning multiple outputs should be avoided unless
-strictly necessary, as it makes downstream usage more complex.</p>
-<p>Instead, keep the result as a single DataOp and index into it:</p>
+<p>When a deferred function returns more than one value, we can unpack the result
+as usual:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">test</span> <span class="o">=</span> <span class="n">skrub</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="s2">"test"</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nd">@skrub</span><span class="o">.</span><span class="n">deferred</span>
 <span class="gp">... </span><span class="k">def</span><span class="w"> </span><span class="nf">process_test_data</span><span class="p">(</span><span class="n">test</span><span class="p">):</span>
-<span class="gp">... </span>    <span class="n">left</span> <span class="o">=</span> <span class="n">test</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="gp">... </span>    <span class="n">right</span> <span class="o">=</span> <span class="n">test</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="gp">... </span>    <span class="k">return</span> <span class="n">left</span><span class="p">,</span> <span class="n">right</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">res</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">skb</span><span class="o">.</span><span class="n">apply_func</span><span class="p">(</span><span class="n">process_test_data</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">left</span> <span class="o">=</span> <span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">right</span> <span class="o">=</span> <span class="n">res</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">test</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">test</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="n">process_test_data</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">left</span>
+<span class="go">&lt;GetItem 0&gt;</span>
+<span class="go">Result:</span>
+<span class="go">―――――――</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+<p>Each target becomes a DataOp that extracts one of the values, once the
+computation runs. To do so, skrub needs to know how many values we are
+unpacking: it finds out by inspecting the bytecode of the assignment. This
+works on CPython, but it is not guaranteed by the language, and it does not
+cover starred targets such as <code class="docutils literal notranslate"><span class="pre">first,</span> <span class="pre">*rest</span> <span class="pre">=</span> <span class="pre">...</span></code> (the number of values is
+not known in that case). When in doubt, we can always keep the result as a
+single DataOp and index into it, which is equivalent and always works:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">res</span> <span class="o">=</span> <span class="n">process_test_data</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">res</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
 <p><a class="reference internal" href="../../../reference/generated/skrub.deferred.html#skrub.deferred" title="skrub.deferred"><code class="xref py py-func docutils literal notranslate"><span class="pre">deferred()</span></code></a> is useful not only for our own functions, but also when we

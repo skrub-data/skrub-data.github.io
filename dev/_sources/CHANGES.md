@@ -6,6 +6,11 @@
 
 ### New Features
 
+- It is now possible to unpack a [`DataOp`](reference/generated/skrub.DataOphtml.md#skrub.DataOp) that evaluates to an iterable
+  (of known size), for example `first, second = data_op`. Each target becomes
+  a DataOp that extracts one of the items.
+  [#2243](https://github.com/skrub-data/skrub/pull/2243) by [Elias Strauss](https://github.com/e-strauss).
+
 ### Changes
 
 ### Bugfixes
